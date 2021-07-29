@@ -63,6 +63,8 @@ namespace Nacro
 	AFortAthenaAircraft* Aircraft;
 	PVOID GarbageCollection;
 	UFortWeaponItemDefinition* PickupWEP;
+	UFortAmmoItemDefinition* PickupAMMO;
+	UFortTrapItemDefinition* PickupTRAP;
 	UHUD_PickupItemWidget_C* PickupHUD;
 	FGuid PickupGUID;
 	FGuid LatestPickup;
@@ -129,7 +131,7 @@ namespace Nacro
 		{
 			if (Pawn && !Controller->IsInAircraft() && !Pawn->IsSkydiving())
 			{
-				if (GetAsyncKeyState(VK_SHIFT) & 0x8000)
+				if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && !Pawn->CurrentWeapon->bIsReloadingWeapon && !Pawn->CurrentWeapon->bIsTargeting)
 				{
 					Pawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
 				}
@@ -171,21 +173,22 @@ namespace Nacro
 		Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
 		Controller->Possess(Pawn);
 
-		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart M_Med_Soldier_Head_01_ATH.M_Med_Soldier_Head_01_ATH"));
-		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart M_Med_Soldier_01_Base_ATH.M_Med_Soldier_01_Base_ATH"));
+		//Enable infinite ammo and godmode in advance
+		CheatManager->ToggleInfiniteAmmo();
+		CheatManager->God();
+
+		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Head1.F_Med_Head1"));
+		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Soldier_01.F_Med_Soldier_01"));
 
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
 		PlayerState->OnRep_CharacterParts();
-
-		PlayerState->TeamIndex = EFortTeam::Monster;
-		PlayerState->OnRep_TeamIndex();
-
 
 		GameState = static_cast<AFortGameStateAthena*>(GEngine->GameViewport->World->GameState);
 		reinterpret_cast<BrushStructObject*>(reinterpret_cast<uintptr_t>(GEngine->GameViewport->World->GameState) + 0x1438)->MapTexture = SDK::UObject::FindObject<SDK::UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
 
 		Pick = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
 		PickGuid = { 0,0,0,0 };
+
 		Pawn->EquipWeaponDefinition(Pick, PickGuid);
 
 		Controller->ServerReadyToStartMatch();
@@ -229,10 +232,6 @@ namespace Nacro
 				}
 			}
 		}
-		if (Function->GetName().find("OnBeginSearch") != std::string::npos)
-		{
-
-		}
 		if (Function->GetName().find("ReadyToStartMatch") != std::string::npos && !IsInitialized)
 		{
 			InGame();
@@ -240,6 +239,7 @@ namespace Nacro
 		if (Function->GetName().find("Search") != std::string::npos && IsInGame)
 		{
 			std::cout << Function->GetFullName() << std::endl;
+			//Controller->ServerAttemptInteract
 		}
 		if (Function->GetName().find("search") != std::string::npos && IsInGame)
 		{
@@ -261,7 +261,12 @@ namespace Nacro
 		}
 		if (Function->GetName().find("OnAboutToEnterBackpack") != std::string::npos)
 		{
-			Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(PickupDEF), PickupGUID);
+			if (PickupDEF.find("Ammo") == std::string::npos && PickupDEF.find("TID") == std::string::npos) {
+				Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(PickupDEF), PickupGUID);
+			}
+
+			/*Controller->QuickBars->ServerAddItemInternal(PickupGUID, EFortQuickBars::Primary, 1);
+			Controller->QuickBars->ServerActivateSlotInternal(EFortQuickBars::Primary, 1, 0, true);*/
 		}
 		if (Function->GetName().find("CheatScript") != std::string::npos)
 		{
@@ -277,22 +282,60 @@ namespace Nacro
 				{
 
 					const auto arg = StringConvert.erase(0, StringConvert.find(" ") + 1);
+
 					if (!arg.empty())
 					{
 						PickupNum++;
 						std::string objPickup = "FortPickupAthena Athena_Terrain.Athena_Terrain.PersistentLevel.FortPickupAthena_";
 						objPickup.append(std::to_string(PickupNum));
 
+						PickupWEP = nullptr;
+						PickupAMMO = nullptr;
+						PickupTRAP = nullptr;
+
+						std::string pickupType;
+
 						Controller->CheatManager->Summon(TEXT("FortPickupAthena"));
-						PickupWEP = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponRangedItemDefinition " + arg + "." + arg);
+
+						//ordered for how likely they probably are to be spawned: weapon, then trap, then melee, then ammo
+						
+						PickupWEP = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponRangedItemDefinition " + arg + "." + arg); //RANGED
+						pickupType = "Weapon";
+
+						if (PickupWEP == nullptr) {
+							PickupTRAP = UObject::FindObject<UFortTrapItemDefinition>("FortTrapItemDefinition " + arg + "." + arg); //TRAPS
+							pickupType = "Trap";
+
+							if (PickupTRAP == nullptr) {
+								PickupWEP = UObject::FindObject<UFortWeaponMeleeItemDefinition>("FortWeaponMeleeItemDefinition " + arg + "." + arg); //MELEE
+								pickupType = "Weapon";
+
+								if (PickupWEP == nullptr) {
+									PickupAMMO = UObject::FindObject<UFortAmmoItemDefinition>("FortAmmoItemDefinition " + arg + "." + arg); //AMMO
+									pickupType = "Ammo";
+								}
+							}
+						}
+
 						auto Pickup = static_cast<AFortPickupAthena*>(UObject::FindObject<AFortPickupAthena>(objPickup));
 						Pickup->K2_SetActorLocation(Pawn->K2_GetActorLocation(), false, true, new FHitResult);
 						Pickup->TossPickup(Pawn->K2_GetActorLocation(), nullptr, 1, false);
-						Pickup->PrimaryPickupItemEntry.ItemDefinition = PickupWEP;
+
+						if (pickupType == "Weapon") {
+							Pickup->PrimaryPickupItemEntry.ItemDefinition = PickupWEP;
+						}
+						else if (pickupType == "Ammo") {
+							Pickup->PrimaryPickupItemEntry.ItemDefinition = PickupAMMO;
+						}
+						else if (pickupType == "Trap") {
+							Pickup->PrimaryPickupItemEntry.ItemDefinition = PickupTRAP;
+						}
+
 						Pickup->PrimaryPickupItemEntry.Count = 1;
 						Pickup->OnRep_PrimaryPickupItemEntry();
 					}
 				}
+
 				if (StartsWith(StringConvert, "equip"))
 				{
 
@@ -300,7 +343,7 @@ namespace Nacro
 
 					if (!arg.empty())
 					{
-						Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(arg), FGuid{ rand(),rand(),rand(),rand() });
+						Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponRangedItemDefinition " + arg + "." + arg), FGuid{rand() % 9999, rand() % 9999, rand() % 9999, rand() % 9999});
 					}
 				}
 			}
