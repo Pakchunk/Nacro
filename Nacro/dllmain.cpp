@@ -183,6 +183,9 @@ namespace Nacro
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
 		PlayerState->OnRep_CharacterParts();
 
+		PlayerState->TeamIndex = EFortTeam::HumanPvP_Team1;
+		PlayerState->OnRep_TeamIndex();
+
 		GameState = static_cast<AFortGameStateAthena*>(GEngine->GameViewport->World->GameState);
 		reinterpret_cast<BrushStructObject*>(reinterpret_cast<uintptr_t>(GEngine->GameViewport->World->GameState) + 0x1438)->MapTexture = SDK::UObject::FindObject<SDK::UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
 
