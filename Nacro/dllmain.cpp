@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+
 
 #include "SDK.hpp"
 #include "Memory.h"
@@ -20,11 +22,6 @@ bool StartsWith(std::string String, std::string StartsWithStr)
 	else
 		return false;
 }
-
-/*bool StartsWithToLower(std::string String, std::string StartsWithStr)
-{
-	
-}*/
 
 using namespace SDK;
 
@@ -51,27 +48,27 @@ bool UWidget::IsVisible()
 
 namespace Nacro
 {
-	// SDK/ENGINE POINTERS
+	// Engine Ptrs
 	UWorld** World;
 	UEngine* GEngine;
+	UGameplayStatics* GameplayStatics;
+
+	// SDK Ptrs
 	AFortPlayerPawnAthena* Pawn;
 	AFortPlayerControllerAthena* Controller;
 	AFortGameModeAthena* GameMode;
 	AFortPlayerStateAthena* PlayerState;
-	UFortCheatManager* CheatManager;
+	AFortGameStateAthena* GameState;
 	ULocalPlayer* LocalPlayer;
-	AFortAthenaAircraft* Aircraft;
+
+	// Miscellaneous
 	PVOID GarbageCollection;
 	UFortWeaponItemDefinition* PickupWEP;
 	UHUD_PickupItemWidget_C* PickupHUD;
 	FGuid PickupGUID;
-	FGuid LatestPickup;
-	UKismetSystemLibrary* KismetSystem;
-	UGameplayStatics* GameplayStatics;
 
-	AFortGameStateAthena* GameState;
+	UAnimMontage* DeathMontage;
 	
-
 	FGuid PickGuid;
 	UFortWeaponItemDefinition* Pick;
 
@@ -79,12 +76,10 @@ namespace Nacro
 	bool IsInitialized = false;
 	bool IsInGame = false;
 	bool PickupHudFound = false;
+	bool IsControlled = true;
 	bool PickupNoticed;
-	bool test;
 	int PickupNum = 0;
 	std::string PickupDEF;
-	std::string LatestPickupDef;
-	bool ee;
 
 	void InitializeGame()
 	{
@@ -116,7 +111,7 @@ namespace Nacro
 		LocalPlayer->ViewportClient->ViewportConsole = pConsole;
 	}
 
-	SDK::TArray<SDK::AActor*> FindActor(SDK::UClass* Class)
+	auto FindActor(SDK::UClass* Class)
 	{
 		SDK::TArray<SDK::AActor*> Actor;
 		GameplayStatics->STATIC_GetAllActorsOfClass(GEngine->GameViewport->World, Class, &Actor);
@@ -129,7 +124,7 @@ namespace Nacro
 		{
 			if (Pawn && !Controller->IsInAircraft() && !Pawn->IsSkydiving())
 			{
-				if (GetAsyncKeyState(VK_SHIFT) & 0x8000)
+				if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && !Pawn->CurrentWeapon->bIsReloadingWeapon && !Pawn->CurrentWeapon->bIsTargeting)
 				{
 					Pawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
 				}
@@ -145,6 +140,19 @@ namespace Nacro
 						Pawn->Jump();
 					}
 				}
+
+				if (!Pawn->IsControlled() && IsControlled)
+				{
+					IsControlled = false;
+					Pawn->PlayAnimMontage(DeathMontage, 1, "");
+					Controller->CheatManager->Summon(TEXT("BP_VictoryDrone_C"));
+					auto BPDrone = FindActor(ABP_VictoryDrone_C::StaticClass())[0];
+					BPDrone->K2_SetActorLocationAndRotation(Pawn->K2_GetActorLocation(), FRotator{ 0,0,0 }, true, true, new FHitResult);
+					Sleep(2000);
+					Pawn->K2_DestroyActor();
+					BPDrone->K2_DestroyActor();
+					ExitThread(0);
+				}
 			}
 
 			Sleep(1000 / 60);
@@ -155,38 +163,37 @@ namespace Nacro
 	{
 		IsInitialized = true;
 
-		KismetSystem = UObject::FindObject<UKismetSystemLibrary>("KismetSystemLibrary Engine.Default__KismetSystemLibrary");
+		GameMode = static_cast<AFortGameModeAthena*>(GEngine->GameViewport->World->AuthorityGameMode);
 
-		auto objCheatManager = UObject::FindObject<UFortCheatManager>("FortCheatManager Athena_Terrain.Athena_Terrain.PersistentLevel.Athena_PlayerController_C_1.FortCheatManager_1");
-		CheatManager = static_cast<UFortCheatManager*>(objCheatManager);
-
-		auto objGameMode = UObject::FindObject<AAthena_GameMode_C>("Athena_GameMode_C Athena_Terrain.Athena_Terrain.PersistentLevel.Athena_GameMode_C_1");
-		GameMode = static_cast<AFortGameModeAthena*>(objGameMode);
-
-		auto objController = UObject::FindObject<AAthena_PlayerController_C>("Athena_PlayerController_C Athena_Terrain.Athena_Terrain.PersistentLevel.Athena_PlayerController_C_1");
-		Controller = static_cast<AFortPlayerControllerAthena*>(objController);
+		Controller = static_cast<AFortPlayerControllerAthena*>(GEngine->GameViewport->GameInstance->LocalPlayers[0]->PlayerController);
 
 		Controller->CheatManager->Summon(TEXT("PlayerPawn_Athena_C"));
 		auto actorPawn = FindActor(SDK::APlayerPawn_Athena_C::StaticClass())[0];
 		Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
 		Controller->Possess(Pawn);
+		
+		//Enable infinite ammo and godmode in advance
+		static_cast<UFortCheatManager*>(Controller->CheatManager)->ToggleInfiniteAmmo();
+		Controller->CheatManager->God();
 
-		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart M_Med_Soldier_Head_01_ATH.M_Med_Soldier_Head_01_ATH"));
-		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart M_Med_Soldier_01_Base_ATH.M_Med_Soldier_01_Base_ATH"));
+		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Head1.F_Med_Head1"));
+		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Soldier_01.F_Med_Soldier_01"));
 
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
 		PlayerState->OnRep_CharacterParts();
 
-		PlayerState->TeamIndex = EFortTeam::Monster;
+		PlayerState->TeamIndex = EFortTeam::HumanPvP_Team1;
 		PlayerState->OnRep_TeamIndex();
-
 
 		GameState = static_cast<AFortGameStateAthena*>(GEngine->GameViewport->World->GameState);
 		reinterpret_cast<BrushStructObject*>(reinterpret_cast<uintptr_t>(GEngine->GameViewport->World->GameState) + 0x1438)->MapTexture = SDK::UObject::FindObject<SDK::UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
 
 		Pick = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
-		PickGuid = { 0,0,0,0 };
-		Pawn->EquipWeaponDefinition(Pick, PickGuid);
+		Pawn->EquipWeaponDefinition(Pick, PickGuid = { 0,0,0,0 });
+
+		DeathMontage = UObject::FindObject<UAnimMontage>("AnimMontage PlayerDeath_Athena.PlayerDeath_Athena");
+
+		Controller->Role = ENetRole::ROLE_Authority;
 
 		Controller->ServerReadyToStartMatch();
 		GameMode->StartMatch();
@@ -194,7 +201,6 @@ namespace Nacro
 		CreateThread(0, 0, UpdatePawn, 0, 0, 0);
 
 		GarbageCollection = (PBYTE)(uintptr_t)GetModuleHandle(NULL) + 0x137D380;
-
 		MH_CreateHook(static_cast<LPVOID>(GarbageCollection), CollectGarbageInternalHook, reinterpret_cast<LPVOID*>(&CollectGarbageInternal));
 		MH_EnableHook(static_cast<LPVOID>(GarbageCollection));
 	}
@@ -229,54 +235,88 @@ namespace Nacro
 				}
 			}
 		}
-		if (Function->GetName().find("OnBeginSearch") != std::string::npos)
-		{
-
-		}
 		if (Function->GetName().find("ReadyToStartMatch") != std::string::npos && !IsInitialized)
 		{
 			InGame();
 		}
-		if (Function->GetName().find("Search") != std::string::npos && IsInGame)
-		{
-			std::cout << Function->GetFullName() << std::endl;
-		}
-		if (Function->GetName().find("search") != std::string::npos && IsInGame)
-		{
-			std::cout << Function->GetFullName() << std::endl;
-		}
 		if (Function->GetName().find("LoadingScreenDropped") != std::string::npos && !IsInGame)
 		{
 			IsInGame = true;
+			GameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
 		}
-		if (Function->GetName().find("AttemptAircraftJump") != std::string::npos && IsInitialized && IsInGame)
+		if (Function->GetName().find("AttemptAircraftJump") != std::string::npos && IsInitialized && IsInGame || Function->GetName().find("AircraftExitedDropZone") != std::string::npos && IsInitialized && IsInGame)
 		{
-			Controller->CheatManager->Summon(TEXT("PlayerPawn_Athena_C"));
-			auto actorPawn = FindActor(SDK::APlayerPawn_Athena_C::StaticClass())[0];
-			Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
-			Pawn->K2_SetActorRotation(FRotator{ 0,Pawn->K2_GetActorRotation().Yaw,0 }, false);
-			Controller->Possess(Pawn);
-			Pawn->EquipWeaponDefinition(Pick, PickGuid);
-			PlayerState->OnRep_CharacterParts();
+			if (Controller->IsInAircraft())
+			{
+				Controller->CheatManager->Summon(TEXT("PlayerPawn_Athena_C"));
+				auto actorPawn = FindActor(SDK::APlayerPawn_Athena_C::StaticClass())[0];
+				Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
+				Pawn->K2_SetActorRotation(FRotator{ 0,Pawn->K2_GetActorRotation().Yaw,0 }, false);
+				Controller->Possess(Pawn);
+				Pawn->EquipWeaponDefinition(Pick, PickGuid);
+				PlayerState->OnRep_CharacterParts();
+			}
 		}
 		if (Function->GetName().find("OnAboutToEnterBackpack") != std::string::npos)
 		{
 			Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(PickupDEF), PickupGUID);
+			//Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
+			//Pawn->CurrentWeapon->ReloadAnimation = nullptr;
 		}
-		if (Function->GetName().find("CheatScript") != std::string::npos)
+		if (Function->GetName().find("CheatScript") != std::string::npos && IsInGame)
 		{
-			auto ScriptName = static_cast<SDK::UCheatManager_CheatScript_Params*>(Params)->ScriptName;
-			if (ScriptName.IsValid())
+			if (static_cast<SDK::UCheatManager_CheatScript_Params*>(Params)->ScriptName.IsValid())
 			{
-				auto StringConvert = ScriptName.ToString();
-				if (StringConvert == "ready") // Only use on a map which you have to summon the pawn yourself
+				auto ScriptStr = static_cast<SDK::UCheatManager_CheatScript_Params*>(Params)->ScriptName.ToString();
+
+				if (ScriptStr == "dumpobjects")
 				{
-					InGame();
+					try
+					{
+						remove("Objects_Dump.txt");
+					}
+					catch (...) { }
+
+					std::ofstream txt("Objects_Dump.txt");
+					for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+					{
+						auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+
+						if (Objects != nullptr)
+							txt << Objects->GetFullName() << "\n";
+					}
+					MessageBoxA(nullptr, "Successfully dumped all objects to Objects_Dump.txt.", "Success!", MB_OK);
+					txt.close();
 				}
-				if (StartsWith(StringConvert, "pickup"))
+				if (ScriptStr == "dumpwids")
+				{
+					try
+					{
+						remove("WIDs_Dump.txt");
+					}
+					catch (...) {}
+
+					std::ofstream txt("WIDs_Dump.txt");
+					for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+					{
+						auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+
+						if (Objects != nullptr)
+						{
+							if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") !=std::string::npos || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortBuildingItemDefinition ") != std::string::npos)
+								if (Objects->GetFullName().find("Default__FortBuildingItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponMeleeItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponRangedItemDefinition") != std::string::npos)
+									continue;
+								else
+									txt << Objects->GetName() << "\n";
+						}
+					}
+					MessageBoxA(nullptr, "Successfully dumped all Weapon IDs to WIDs_Dump.txt.", "Success!", MB_OK);
+					txt.close();
+				}
+				if (StartsWith(ScriptStr, "pickup"))
 				{
 
-					const auto arg = StringConvert.erase(0, StringConvert.find(" ") + 1);
+					const auto arg = ScriptStr.erase(0, ScriptStr.find(" ") + 1);
 					if (!arg.empty())
 					{
 						PickupNum++;
@@ -284,7 +324,19 @@ namespace Nacro
 						objPickup.append(std::to_string(PickupNum));
 
 						Controller->CheatManager->Summon(TEXT("FortPickupAthena"));
-						PickupWEP = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponRangedItemDefinition " + arg + "." + arg);
+						for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+						{
+							auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+
+							if (Objects != nullptr)
+							{
+								if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
+								{
+									PickupWEP = static_cast<UFortWeaponItemDefinition*>(Objects);
+								}
+
+							}
+						}
 						auto Pickup = static_cast<AFortPickupAthena*>(UObject::FindObject<AFortPickupAthena>(objPickup));
 						Pickup->K2_SetActorLocation(Pawn->K2_GetActorLocation(), false, true, new FHitResult);
 						Pickup->TossPickup(Pawn->K2_GetActorLocation(), nullptr, 1, false);
@@ -293,14 +345,34 @@ namespace Nacro
 						Pickup->OnRep_PrimaryPickupItemEntry();
 					}
 				}
-				if (StartsWith(StringConvert, "equip"))
+				if (StartsWith(ScriptStr, "equip"))
 				{
-
-					const auto arg = StringConvert.erase(0, StringConvert.find(" ") + 1);
+					const auto arg = ScriptStr.erase(0, ScriptStr.find(" ") + 1);
 
 					if (!arg.empty())
 					{
-						Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(arg), FGuid{ rand(),rand(),rand(),rand() });
+						if (arg == "WID_Harvest_Pickaxe_Athena_C_T01")
+						{
+							Pawn->EquipWeaponDefinition(Pick, PickGuid);
+						}
+						else
+						{
+							for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+							{
+								auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+
+								if (Objects != nullptr)
+								{
+									if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
+									{
+										Pawn->EquipWeaponDefinition(static_cast<UFortWeaponItemDefinition*>(Objects), FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
+										//Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
+										//Pawn->CurrentWeapon->ReloadAnimation = nullptr;
+									}
+
+								}
+							}
+						}
 					}
 				}
 			}

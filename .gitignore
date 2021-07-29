@@ -1,0 +1,4 @@
+Release/*
+Debug/*
+!/Libraries/Release/*
+!/Libraries/Debug/*
