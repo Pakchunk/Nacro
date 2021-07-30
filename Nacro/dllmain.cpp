@@ -1,17 +1,19 @@
 #include <iostream>
 #include <fstream>
-
+#include <algorithm>
 
 #include "SDK.hpp"
 #include "Memory.h"
 #include "MinHook/MinHook.h"
+
 #pragma comment(lib, "MinHook/libMinHook.x64.lib")
+
+#define AllocateConsole
 
 
 PVOID(*CollectGarbageInternal)(uint32_t, bool) = nullptr;
 PVOID CollectGarbageInternalHook(uint32_t KeepFlags, bool bPerformFullPurge)
 {
-
 	return NULL;
 }
 
@@ -23,6 +25,24 @@ bool StartsWith(std::string String, std::string StartsWithStr)
 		return false;
 }
 
+bool StartsWithToLower(std::string String, std::string StartsWithStr)
+{
+	std::transform(String.begin(), String.end(), String.begin(), tolower);
+
+	if (String.find(StartsWithStr) == 0)
+		return true;
+	else
+		return false;
+}
+
+std::string ToLower(std::string Str)
+{
+	transform(Str.begin(), Str.end(), Str.begin(), tolower);
+	return Str;
+}
+
+
+
 using namespace SDK;
 
 struct BrushStructObject
@@ -30,36 +50,21 @@ struct BrushStructObject
 	unsigned char GoTo[0x48];
 	class SDK::UObject* MapTexture;
 };
-bool UWidget::IsVisible()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function UMG.Widget.IsVisible");
-
-	UWidget_IsVisible_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
 
 namespace Nacro
 {
 	// Engine Ptrs
 	UWorld** World;
 	UEngine* GEngine;
+	ULocalPlayer* LocalPlayer;
 	UGameplayStatics* GameplayStatics;
 
-	// SDK Ptrs
+	// Game Ptrs
 	AFortPlayerPawnAthena* Pawn;
 	AFortPlayerControllerAthena* Controller;
 	AFortGameModeAthena* GameMode;
 	AFortPlayerStateAthena* PlayerState;
 	AFortGameStateAthena* GameState;
-	ULocalPlayer* LocalPlayer;
 
 	// Miscellaneous
 	PVOID GarbageCollection;
@@ -76,10 +81,19 @@ namespace Nacro
 	bool IsInitialized = false;
 	bool IsInGame = false;
 	bool PickupHudFound = false;
+	bool InstantReload = false;
 	bool IsControlled = true;
 	bool PickupNoticed;
+	bool HasJumped = false;
 	int PickupNum = 0;
 	std::string PickupDEF;
+
+	auto FindActor(SDK::UClass* Class)
+	{
+		SDK::TArray<SDK::AActor*> Actor;
+		GameplayStatics->STATIC_GetAllActorsOfClass(GEngine->GameViewport->World, Class, &Actor);
+		return Actor;
+	}
 
 	void InitializeGame()
 	{
@@ -90,17 +104,17 @@ namespace Nacro
 		FName::GNames = *reinterpret_cast<SDK::TNameEntryArray**>((PBYTE)ModuleBaseAddr + 0x66587C8);
 		UObject::GObjects = reinterpret_cast<SDK::FUObjectArray*>((PBYTE)ModuleBaseAddr + 0x6661380);
 
-		auto OwnerPatch = Memory::FindPattern("\xC0\x0F\x84\x3C\x02\x00\x00\x0F\x2F\xF7\x0F\x86\xF5\x00\x00\x00", "xxxxxxxxxxxxxxxx");
-		if (OwnerPatch)
+		auto AbilityPatch = Memory::FindPattern("\xC0\x0F\x84\x3C\x02\x00\x00\x0F\x2F\xF7\x0F\x86\xF5\x00\x00\x00", "xxxxxxxxxxxxxxxx");
+		if (AbilityPatch)
 		{
 			DWORD dwProtection;
-			VirtualProtect(OwnerPatch, 16, PAGE_EXECUTE_READWRITE, &dwProtection);
+			VirtualProtect(AbilityPatch, 16, PAGE_EXECUTE_READWRITE, &dwProtection);
 
-			reinterpret_cast<uint8_t*>(OwnerPatch)[2] = 0x85;
-			reinterpret_cast<uint8_t*>(OwnerPatch)[11] = 0x8D;
+			reinterpret_cast<uint8_t*>(AbilityPatch)[2] = 0x85;
+			reinterpret_cast<uint8_t*>(AbilityPatch)[11] = 0x8D;
 
 			DWORD dwTemp;
-			VirtualProtect(OwnerPatch, 16, dwProtection, &dwTemp);
+			VirtualProtect(AbilityPatch, 16, dwProtection, &dwTemp);
 		}
 
 		GameplayStatics = SDK::UObject::FindObject<SDK::UGameplayStatics>("GameplayStatics Engine.Default__GameplayStatics");
@@ -111,34 +125,56 @@ namespace Nacro
 		LocalPlayer->ViewportClient->ViewportConsole = pConsole;
 	}
 
-	auto FindActor(SDK::UClass* Class)
-	{
-		SDK::TArray<SDK::AActor*> Actor;
-		GameplayStatics->STATIC_GetAllActorsOfClass(GEngine->GameViewport->World, Class, &Actor);
-		return Actor;
-	}
-
 	DWORD UpdatePawn(LPVOID lpParam)
 	{
 		while (true)
 		{
-			if (Pawn && !Controller->IsInAircraft() && !Pawn->IsSkydiving())
+			if (Pawn != nullptr && !Controller->IsInAircraft() && !Pawn->IsSkydiving())
 			{
-				if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && !Pawn->CurrentWeapon->bIsReloadingWeapon && !Pawn->CurrentWeapon->bIsTargeting)
+				if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && Pawn->CurrentWeapon && !Pawn->CurrentWeapon->bIsReloadingWeapon && !Pawn->CurrentWeapon->bIsTargeting)
 				{
-					Pawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
+						Pawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
 				}
 				else
 				{
-					Pawn->CurrentMovementStyle = EFortMovementStyle::Running;
+						Pawn->CurrentMovementStyle = EFortMovementStyle::Running;
+				}
+
+				if (GetAsyncKeyState(0x53) & 0x8000)
+				{
+					if (Pawn->CurrentMovementStyle != EFortMovementStyle::Running)
+					{
+						Pawn->CurrentMovementStyle = EFortMovementStyle::Running;
+					}
 				}
 
 				if (GetAsyncKeyState(VK_SPACE) & 0x8000)
 				{
-					if (!Pawn->IsJumpProvidingForce())
+					if (!HasJumped)
 					{
-						Pawn->Jump();
+						HasJumped = true;
+						if (Pawn->bIsCrouched)
+						{
+							Pawn->UnCrouch(true);
+						}
+						else
+						{
+							if (!Pawn->IsJumpProvidingForce())
+							{
+								Pawn->Jump();
+							}
+						}
 					}
+				}
+				else
+				{
+					if (HasJumped)
+						HasJumped = false;
+				}
+
+				if (Pawn->CurrentWeapon && Pawn->CurrentWeapon->bIsTargeting)
+				{
+					Pawn->CurrentMovementStyle = EFortMovementStyle::Walking;
 				}
 
 				if (!Pawn->IsControlled() && IsControlled)
@@ -176,8 +212,9 @@ namespace Nacro
 		static_cast<UFortCheatManager*>(Controller->CheatManager)->ToggleInfiniteAmmo();
 		Controller->CheatManager->God();
 
-		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Head1.F_Med_Head1"));
-		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Soldier_01.F_Med_Soldier_01"));
+		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_MED_BLK_Red_Head_01_ATH.F_MED_BLK_Red_Head_01_ATH"));
+		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Soldier_TV12_ATH.F_Med_Soldier_TV12_ATH"));
+		// screw a proper skin system :middle_finger:
 
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
 		PlayerState->OnRep_CharacterParts();
@@ -255,13 +292,17 @@ namespace Nacro
 				Controller->Possess(Pawn);
 				Pawn->EquipWeaponDefinition(Pick, PickGuid);
 				PlayerState->OnRep_CharacterParts();
+				Controller->CheatManager->God();
 			}
 		}
 		if (Function->GetName().find("OnAboutToEnterBackpack") != std::string::npos)
 		{
 			Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(PickupDEF), PickupGUID);
-			//Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
-			//Pawn->CurrentWeapon->ReloadAnimation = nullptr;
+			if (InstantReload)
+			{
+				Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
+				Pawn->CurrentWeapon->ReloadAnimation = nullptr;
+			}
 		}
 		if (Function->GetName().find("CheatScript") != std::string::npos && IsInGame)
 		{
@@ -269,7 +310,30 @@ namespace Nacro
 			{
 				auto ScriptStr = static_cast<SDK::UCheatManager_CheatScript_Params*>(Params)->ScriptName.ToString();
 
-				if (ScriptStr == "dumpobjects")
+				if (ToLower(ScriptStr) == "help")
+				{
+					GameMode->Say(L"World:\ncheatscript pickup <AnyWID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <AnyWID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.");
+				}
+				if (ToLower(ScriptStr) == "win")
+				{
+					Controller->ClientNotifyWon();
+					Controller->PlayWinEffects();
+				}
+				if (ToLower(ScriptStr) == "toggleinstantreload")
+				{
+					InstantReload = !InstantReload;
+					if (InstantReload)
+					{
+						Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
+						Pawn->CurrentWeapon->ReloadAnimation = nullptr;
+					}
+					
+					if (!InstantReload)
+					{
+						Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(Pawn->CurrentWeapon->WeaponData->GetFullName()), FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
+					}
+				}
+				if (ToLower(ScriptStr) == "dumpobjects")
 				{
 					try
 					{
@@ -288,7 +352,7 @@ namespace Nacro
 					MessageBoxA(nullptr, "Successfully dumped all objects to Objects_Dump.txt.", "Success!", MB_OK);
 					txt.close();
 				}
-				if (ScriptStr == "dumpwids")
+				if (ToLower(ScriptStr) == "dumpwids")
 				{
 					try
 					{
@@ -313,10 +377,10 @@ namespace Nacro
 					MessageBoxA(nullptr, "Successfully dumped all Weapon IDs to WIDs_Dump.txt.", "Success!", MB_OK);
 					txt.close();
 				}
-				if (StartsWith(ScriptStr, "pickup"))
+				if (StartsWithToLower(ScriptStr, "pickup"))
 				{
-
 					const auto arg = ScriptStr.erase(0, ScriptStr.find(" ") + 1);
+
 					if (!arg.empty())
 					{
 						PickupNum++;
@@ -345,7 +409,7 @@ namespace Nacro
 						Pickup->OnRep_PrimaryPickupItemEntry();
 					}
 				}
-				if (StartsWith(ScriptStr, "equip"))
+				if (StartsWithToLower(ScriptStr, "equip"))
 				{
 					const auto arg = ScriptStr.erase(0, ScriptStr.find(" ") + 1);
 
@@ -366,8 +430,11 @@ namespace Nacro
 									if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
 									{
 										Pawn->EquipWeaponDefinition(static_cast<UFortWeaponItemDefinition*>(Objects), FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
-										//Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
-										//Pawn->CurrentWeapon->ReloadAnimation = nullptr;
+										if (InstantReload)
+										{
+											Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
+											Pawn->CurrentWeapon->ReloadAnimation = nullptr;
+										}
 									}
 
 								}
@@ -402,12 +469,15 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 	{
 	case DLL_PROCESS_ATTACH:
 	{
+#ifdef AllocateConsole
 		AllocConsole();
 		ShowWindow(GetConsoleWindow(), SW_SHOW);
 		FILE* fp;
 		freopen_s(&fp, "CONOIN$", "r", stdin);
 		freopen_s(&fp, "CONOUT$", "w", stdout);
 		freopen_s(&fp, "CONOUT$", "w", stderr);
+#endif // AllocateConsole
+
 		CreateThread(0, 0, Nacro::Main, 0, 0, 0);
 		break;
 	}

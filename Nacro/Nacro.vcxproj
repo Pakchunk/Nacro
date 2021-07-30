@@ -159,6 +159,7 @@
     <ClCompile Include="SDK\FN_Engine_functions.cpp" />
     <ClCompile Include="SDK\FN_FortniteGame_functions.cpp" />
     <ClCompile Include="SDK\FN_HUD-PickupItemWidget_functions.cpp" />
+    <ClCompile Include="SDK\FN_UMG_functions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Memory.h" />
