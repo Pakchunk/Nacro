@@ -17,14 +17,6 @@ PVOID CollectGarbageInternalHook(uint32_t KeepFlags, bool bPerformFullPurge)
 	return NULL;
 }
 
-bool StartsWith(std::string String, std::string StartsWithStr)
-{
-	if (String.find(StartsWithStr) == 0)
-		return true;
-	else
-		return false;
-}
-
 bool StartsWithToLower(std::string String, std::string StartsWithStr)
 {
 	std::transform(String.begin(), String.end(), String.begin(), tolower);
@@ -41,14 +33,12 @@ std::string ToLower(std::string Str)
 	return Str;
 }
 
-
-
 using namespace SDK;
 
 struct BrushStructObject
 {
 	unsigned char GoTo[0x48];
-	class SDK::UObject* MapTexture;
+	class UObject* MapTexture;
 };
 
 namespace Nacro
@@ -83,14 +73,15 @@ namespace Nacro
 	bool PickupHudFound = false;
 	bool InstantReload = false;
 	bool IsControlled = true;
+	bool IsFlying = false;
 	bool PickupNoticed;
 	bool HasJumped = false;
 	int PickupNum = 0;
 	std::string PickupDEF;
 
-	auto FindActor(SDK::UClass* Class)
+	auto FindActor(UClass* Class)
 	{
-		SDK::TArray<SDK::AActor*> Actor;
+		TArray<AActor*> Actor;
 		GameplayStatics->STATIC_GetAllActorsOfClass(GEngine->GameViewport->World, Class, &Actor);
 		return Actor;
 	}
@@ -99,10 +90,10 @@ namespace Nacro
 	{
 		uintptr_t ModuleBaseAddr = (uintptr_t)GetModuleHandle(NULL);
 
-		GEngine = *reinterpret_cast<SDK::UEngine**>(ModuleBaseAddr + 0x674AB20);
-		World = reinterpret_cast<SDK::UWorld**>(ModuleBaseAddr + 0x674CD00);
-		FName::GNames = *reinterpret_cast<SDK::TNameEntryArray**>((PBYTE)ModuleBaseAddr + 0x66587C8);
-		UObject::GObjects = reinterpret_cast<SDK::FUObjectArray*>((PBYTE)ModuleBaseAddr + 0x6661380);
+		GEngine = *reinterpret_cast<UEngine**>(ModuleBaseAddr + 0x674AB20);
+		World = reinterpret_cast<UWorld**>(ModuleBaseAddr + 0x674CD00);
+		FName::GNames = *reinterpret_cast<TNameEntryArray**>((PBYTE)ModuleBaseAddr + 0x66587C8);
+		UObject::GObjects = reinterpret_cast<FUObjectArray*>((PBYTE)ModuleBaseAddr + 0x6661380);
 
 		auto AbilityPatch = Memory::FindPattern("\xC0\x0F\x84\x3C\x02\x00\x00\x0F\x2F\xF7\x0F\x86\xF5\x00\x00\x00", "xxxxxxxxxxxxxxxx");
 		if (AbilityPatch)
@@ -117,10 +108,10 @@ namespace Nacro
 			VirtualProtect(AbilityPatch, 16, dwProtection, &dwTemp);
 		}
 
-		GameplayStatics = SDK::UObject::FindObject<SDK::UGameplayStatics>("GameplayStatics Engine.Default__GameplayStatics");
+		GameplayStatics = UObject::FindObject<UGameplayStatics>("GameplayStatics Engine.Default__GameplayStatics");
 		auto objLocalPlayer = UObject::FindObject<UFortLocalPlayer>("FortLocalPlayer Transient.FortEngine_1.FortLocalPlayer_1");
 		LocalPlayer = reinterpret_cast<ULocalPlayer*>(objLocalPlayer);
-		auto pConsole = SDK::UConsole::StaticClass()->CreateDefaultObject<SDK::UConsole>();
+		auto pConsole = UConsole::StaticClass()->CreateDefaultObject<UConsole>();
 		pConsole->Outer = LocalPlayer->ViewportClient;
 		LocalPlayer->ViewportClient->ViewportConsole = pConsole;
 	}
@@ -204,7 +195,7 @@ namespace Nacro
 		Controller = static_cast<AFortPlayerControllerAthena*>(GEngine->GameViewport->GameInstance->LocalPlayers[0]->PlayerController);
 
 		Controller->CheatManager->Summon(TEXT("PlayerPawn_Athena_C"));
-		auto actorPawn = FindActor(SDK::APlayerPawn_Athena_C::StaticClass())[0];
+		auto actorPawn = FindActor(APlayerPawn_Athena_C::StaticClass())[0];
 		Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
 		Controller->Possess(Pawn);
 		
@@ -223,7 +214,7 @@ namespace Nacro
 		PlayerState->OnRep_TeamIndex();
 
 		GameState = static_cast<AFortGameStateAthena*>(GEngine->GameViewport->World->GameState);
-		reinterpret_cast<BrushStructObject*>(reinterpret_cast<uintptr_t>(GEngine->GameViewport->World->GameState) + 0x1438)->MapTexture = SDK::UObject::FindObject<SDK::UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
+		reinterpret_cast<BrushStructObject*>(reinterpret_cast<uintptr_t>(GEngine->GameViewport->World->GameState) + 0x1438)->MapTexture = UObject::FindObject<UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
 
 		Pick = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
 		Pawn->EquipWeaponDefinition(Pick, PickGuid = { 0,0,0,0 });
@@ -254,7 +245,6 @@ namespace Nacro
 			PickupHudFound = true;
 			auto UI = UObject::FindObject<UWidget>("HUD-PickupItemWidget_C Transient.FortEngine_1.FortGameInstance_1.InteractionIndicator_C_1.WidgetTree_1.HUD-PickupItemWidget");
 			PickupHUD = static_cast<UHUD_PickupItemWidget_C*>(UI);
-			//std::cout << UI->PickupItem->GetItemDefinitionBP()->GetFullName() << std::endl;
 		}
 		if (Function->GetName().find("Tick") != std::string::npos && IsInGame)
 		{
@@ -286,7 +276,7 @@ namespace Nacro
 			if (Controller->IsInAircraft())
 			{
 				Controller->CheatManager->Summon(TEXT("PlayerPawn_Athena_C"));
-				auto actorPawn = FindActor(SDK::APlayerPawn_Athena_C::StaticClass())[0];
+				auto actorPawn = FindActor(APlayerPawn_Athena_C::StaticClass())[0];
 				Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
 				Pawn->K2_SetActorRotation(FRotator{ 0,Pawn->K2_GetActorRotation().Yaw,0 }, false);
 				Controller->Possess(Pawn);
@@ -306,13 +296,27 @@ namespace Nacro
 		}
 		if (Function->GetName().find("CheatScript") != std::string::npos && IsInGame)
 		{
-			if (static_cast<SDK::UCheatManager_CheatScript_Params*>(Params)->ScriptName.IsValid())
+			if (static_cast<UCheatManager_CheatScript_Params*>(Params)->ScriptName.IsValid())
 			{
-				auto ScriptStr = static_cast<SDK::UCheatManager_CheatScript_Params*>(Params)->ScriptName.ToString();
+				auto ScriptStr = static_cast<UCheatManager_CheatScript_Params*>(Params)->ScriptName.ToString();
 
 				if (ToLower(ScriptStr) == "help")
 				{
-					GameMode->Say(L"World:\ncheatscript pickup <AnyWID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <AnyWID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.");
+					GameMode->Say(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript fly: Toggles flight movement mode.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.");
+				}
+				if (ToLower(ScriptStr) == "fly")
+				{
+					IsFlying = !IsFlying;
+
+					if (IsFlying)
+					{
+						Pawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
+					}
+
+					if (!IsFlying)
+					{
+						Pawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Walking;
+					}
 				}
 				if (ToLower(ScriptStr) == "win")
 				{
@@ -335,12 +339,6 @@ namespace Nacro
 				}
 				if (ToLower(ScriptStr) == "dumpobjects")
 				{
-					try
-					{
-						remove("Objects_Dump.txt");
-					}
-					catch (...) { }
-
 					std::ofstream txt("Objects_Dump.txt");
 					for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
 					{
@@ -354,12 +352,6 @@ namespace Nacro
 				}
 				if (ToLower(ScriptStr) == "dumpwids")
 				{
-					try
-					{
-						remove("WIDs_Dump.txt");
-					}
-					catch (...) {}
-
 					std::ofstream txt("WIDs_Dump.txt");
 					for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
 					{
@@ -367,7 +359,7 @@ namespace Nacro
 
 						if (Objects != nullptr)
 						{
-							if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") !=std::string::npos || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortBuildingItemDefinition ") != std::string::npos)
+							if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortBuildingItemDefinition ") != std::string::npos)
 								if (Objects->GetFullName().find("Default__FortBuildingItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponMeleeItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponRangedItemDefinition") != std::string::npos)
 									continue;
 								else
@@ -384,7 +376,7 @@ namespace Nacro
 					if (!arg.empty())
 					{
 						PickupNum++;
-						std::string objPickup = "FortPickupAthena Athena_Terrain.Athena_Terrain.PersistentLevel.FortPickupAthena_";
+						std::string objPickup = "FortPickupAthena " + GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() + "." + GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() + ".PersistentLevel.FortPickupAthena_";
 						objPickup.append(std::to_string(PickupNum));
 
 						Controller->CheatManager->Summon(TEXT("FortPickupAthena"));
