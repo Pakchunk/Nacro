@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
+#include <chrono>
 
 #include "SDK.hpp"
 #include "Memory.h"
@@ -45,7 +46,7 @@ namespace Nacro
 {
 	// Engine Ptrs
 	UWorld** World;
-	UEngine* GEngine;
+	UFortEngine* GEngine;
 	ULocalPlayer* LocalPlayer;
 	UGameplayStatics* GameplayStatics;
 
@@ -90,7 +91,7 @@ namespace Nacro
 	{
 		uintptr_t ModuleBaseAddr = (uintptr_t)GetModuleHandle(NULL);
 
-		GEngine = *reinterpret_cast<UEngine**>(ModuleBaseAddr + 0x674AB20);
+		GEngine = *reinterpret_cast<UFortEngine**>(ModuleBaseAddr + 0x674AB20);
 		World = reinterpret_cast<UWorld**>(ModuleBaseAddr + 0x674CD00);
 		FName::GNames = *reinterpret_cast<TNameEntryArray**>((PBYTE)ModuleBaseAddr + 0x66587C8);
 		UObject::GObjects = reinterpret_cast<FUObjectArray*>((PBYTE)ModuleBaseAddr + 0x6661380);
@@ -109,8 +110,8 @@ namespace Nacro
 		}
 
 		GameplayStatics = UObject::FindObject<UGameplayStatics>("GameplayStatics Engine.Default__GameplayStatics");
-		auto objLocalPlayer = UObject::FindObject<UFortLocalPlayer>("FortLocalPlayer Transient.FortEngine_1.FortLocalPlayer_1");
-		LocalPlayer = reinterpret_cast<ULocalPlayer*>(objLocalPlayer);
+		
+		LocalPlayer = reinterpret_cast<ULocalPlayer*>(GEngine->GameInstance->LocalPlayers[0]);
 		auto pConsole = UConsole::StaticClass()->CreateDefaultObject<UConsole>();
 		pConsole->Outer = LocalPlayer->ViewportClient;
 		LocalPlayer->ViewportClient->ViewportConsole = pConsole;
@@ -243,7 +244,7 @@ namespace Nacro
 		if (Object->GetName().find("PickupItemWidget") != std::string::npos && !PickupHudFound)
 		{
 			PickupHudFound = true;
-			auto UI = UObject::FindObject<UWidget>("HUD-PickupItemWidget_C Transient.FortEngine_1.FortGameInstance_1.InteractionIndicator_C_1.WidgetTree_1.HUD-PickupItemWidget");
+			auto UI = UObject::FindObject<UWidget>("HUD-PickupItemWidget_C Transient.FortEngine_0.FortGameInstance_0.InteractionIndicator_C_0.WidgetTree_0.HUD-PickupItemWidget");
 			PickupHUD = static_cast<UHUD_PickupItemWidget_C*>(UI);
 		}
 		if (Function->GetName().find("Tick") != std::string::npos && IsInGame)
@@ -446,11 +447,11 @@ namespace Nacro
 
 		InitializeGame();
 		MH_Initialize();
-
+		
 		auto ProcessEventAddr = (PBYTE)ModuleBaseAddr + 0x13D86E0;
 		MH_CreateHook(static_cast<LPVOID>(ProcessEventAddr), ProcessEventHook, reinterpret_cast<LPVOID*>(&ProcessEvent));
 		MH_EnableHook(static_cast<LPVOID>(ProcessEventAddr));
-
+		
 		return NULL;
 	}
 }

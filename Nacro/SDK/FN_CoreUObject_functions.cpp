@@ -29,22 +29,46 @@ std::string UObject::GetName() const
 	return name.substr(pos + 1);
 }
 
+typedef void(__fastcall* fGetFullName)(const SDK::UObject*, SDK::FString*, SDK::UObject*);
+fGetFullName GetObjectFullName = reinterpret_cast<fGetFullName>(reinterpret_cast<uintptr_t>(GetModuleHandle(0)) + 0x13D1D40);
+
 std::string UObject::GetFullName() const
 {
-	std::string name;
+	if (this == nullptr)
+		return "";
 
-	if (Class != nullptr)
+	FString outName;
+	GetObjectFullName(this, &outName, nullptr);
+
+	std::string name = outName.ToString();
+
+	size_t delFirst = 0;
+	for (size_t pos = 0; pos < name.size(); pos++)
 	{
-		std::string temp;
-		for (auto p = Outer; p; p = p->Outer)
+		if (name[pos] == '/')
 		{
-			temp = p->GetName() + "." + temp;
+			delFirst = pos;
+			break;
 		}
+	}
+	if (delFirst != name.size() - 1)
+	{
+		size_t delSecond = 0;
+		for (size_t pos = name.size() - 1; pos >= 0; pos--)
+		{
+			if (name[pos] == '/')
+			{
+				delSecond = pos;
+				break;
+			}
+		}
+		size_t eraseLength = delSecond - (delFirst - 1);
+		name.erase(delFirst, eraseLength);
+	}
 
-		name = Class->GetName();
-		name += " ";
-		name += temp;
-		name += GetName();
+	if (name.find(":") != std::string::npos)
+	{
+		name.replace(name.find(":"), 1, ".");
 	}
 
 	return name;

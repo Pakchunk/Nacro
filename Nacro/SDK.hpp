@@ -5,6 +5,8 @@
 #include <set>
 #include <locale>
 #include <string>
+#include <Windows.h>
+#include <iostream>
 
 #include "SDK/FN_Basic.hpp"
 
