@@ -200,9 +200,8 @@ namespace Nacro
 		Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
 		Controller->Possess(Pawn);
 		
-		//Enable infinite ammo and godmode in advance
+		//Enable infinite ammo in advance
 		static_cast<UFortCheatManager*>(Controller->CheatManager)->ToggleInfiniteAmmo();
-		Controller->CheatManager->God();
 
 		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_MED_BLK_Red_Head_01_ATH.F_MED_BLK_Red_Head_01_ATH"));
 		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Soldier_TV12_ATH.F_Med_Soldier_TV12_ATH"));
@@ -390,6 +389,7 @@ namespace Nacro
 								if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
 								{
 									PickupWEP = static_cast<UFortWeaponItemDefinition*>(Objects);
+									break;
 								}
 
 							}
@@ -428,6 +428,7 @@ namespace Nacro
 											Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
 											Pawn->CurrentWeapon->ReloadAnimation = nullptr;
 										}
+										break;
 									}
 
 								}
