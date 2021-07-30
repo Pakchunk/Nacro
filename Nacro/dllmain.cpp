@@ -123,6 +123,7 @@ namespace Nacro
 		{
 			if (Pawn != nullptr && !Controller->IsInAircraft() && !Pawn->IsSkydiving())
 			{
+				//check to make sure the player is holding a weapon, not targeting or reloading, and pressing shift + w (otherwise sprinting sideways happens)
 				if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && Pawn->CurrentWeapon && !Pawn->CurrentWeapon->bIsReloadingWeapon && !Pawn->CurrentWeapon->bIsTargeting)
 				{
 						Pawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
@@ -132,6 +133,7 @@ namespace Nacro
 						Pawn->CurrentMovementStyle = EFortMovementStyle::Running;
 				}
 
+				//really funky solution for sprinting without moving forwards
 				if (GetAsyncKeyState(0x53) & 0x8000)
 				{
 					if (Pawn->CurrentMovementStyle != EFortMovementStyle::Running)
@@ -164,19 +166,26 @@ namespace Nacro
 						HasJumped = false;
 				}
 
+				//slow down player when targeting
 				if (Pawn->CurrentWeapon && Pawn->CurrentWeapon->bIsTargeting)
 				{
 					Pawn->CurrentMovementStyle = EFortMovementStyle::Walking;
 				}
 
+				//this happens on death
 				if (!Pawn->IsControlled() && IsControlled)
 				{
 					IsControlled = false;
+					//play the animation
 					Pawn->PlayAnimMontage(DeathMontage, 1, "");
+					//spawn and find the drone
 					Controller->CheatManager->Summon(TEXT("BP_VictoryDrone_C"));
 					auto BPDrone = FindActor(ABP_VictoryDrone_C::StaticClass())[0];
+					//set its position to the players
 					BPDrone->K2_SetActorLocationAndRotation(Pawn->K2_GetActorLocation(), FRotator{ 0,0,0 }, true, true, new FHitResult);
+					//wait a couple seconds
 					Sleep(2000);
+					//destroy both of the actors and exit the thread
 					Pawn->K2_DestroyActor();
 					BPDrone->K2_DestroyActor();
 					ExitThread(0);
@@ -195,6 +204,7 @@ namespace Nacro
 
 		Controller = static_cast<AFortPlayerControllerAthena*>(GEngine->GameViewport->GameInstance->LocalPlayers[0]->PlayerController);
 
+		//spawn find and possess the playerpawn
 		Controller->CheatManager->Summon(TEXT("PlayerPawn_Athena_C"));
 		auto actorPawn = FindActor(APlayerPawn_Athena_C::StaticClass())[0];
 		Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
@@ -203,6 +213,12 @@ namespace Nacro
 		//Enable infinite ammo in advance
 		static_cast<UFortCheatManager*>(Controller->CheatManager)->ToggleInfiniteAmmo();
 
+		//pause storm
+		UKismetSystemLibrary* kismetPtr = reinterpret_cast<UKismetSystemLibrary*>(UKismetSystemLibrary::StaticClass());
+
+		kismetPtr->STATIC_ExecuteConsoleCommand(*World, L"PauseSafeZone", nullptr);
+
+		//set character parts
 		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_MED_BLK_Red_Head_01_ATH.F_MED_BLK_Red_Head_01_ATH"));
 		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Soldier_TV12_ATH.F_Med_Soldier_TV12_ATH"));
 		// screw a proper skin system :middle_finger:
@@ -210,12 +226,14 @@ namespace Nacro
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
 		PlayerState->OnRep_CharacterParts();
 
+		//set the players team index -- this shows the health in the top left and allows for markers to be placed
 		PlayerState->TeamIndex = EFortTeam::HumanPvP_Team1;
 		PlayerState->OnRep_TeamIndex();
 
 		GameState = static_cast<AFortGameStateAthena*>(GEngine->GameViewport->World->GameState);
 		reinterpret_cast<BrushStructObject*>(reinterpret_cast<uintptr_t>(GEngine->GameViewport->World->GameState) + 0x1438)->MapTexture = UObject::FindObject<UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
 
+		//equip the pickaxe
 		Pick = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
 		Pawn->EquipWeaponDefinition(Pick, PickGuid = { 0,0,0,0 });
 
@@ -223,10 +241,9 @@ namespace Nacro
 
 		Controller->Role = ENetRole::ROLE_Authority;
 
+		//drop loading screen
 		Controller->ServerReadyToStartMatch();
 		GameMode->StartMatch();
-
-		CreateThread(0, 0, UpdatePawn, 0, 0, 0);
 
 		GarbageCollection = (PBYTE)(uintptr_t)GetModuleHandle(NULL) + 0x137D380;
 		MH_CreateHook(static_cast<LPVOID>(GarbageCollection), CollectGarbageInternalHook, reinterpret_cast<LPVOID*>(&CollectGarbageInternal));
@@ -236,10 +253,12 @@ namespace Nacro
 	PVOID(*ProcessEvent)(UObject*, UFunction*, PVOID) = nullptr;
 	PVOID ProcessEventHook(UObject* Object, UFunction* Function, PVOID Params)
 	{
+		//when play button is pressed
 		if (Function->GetName().find("BP_PlayButton") != std::string::npos)
 		{
 			GameplayStatics->STATIC_OpenLevel(GEngine->GameViewport->World, "Athena_Terrain", true, L"");
 		}
+		//any function coming from the pickup widget
 		if (Object->GetName().find("PickupItemWidget") != std::string::npos && !PickupHudFound)
 		{
 			PickupHudFound = true;
@@ -270,21 +289,28 @@ namespace Nacro
 		{
 			IsInGame = true;
 			GameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
+
+			CreateThread(0, 0, UpdatePawn, 0, 0, 0);
 		}
+		//when the player jumps or the bus timer runs out
 		if (Function->GetName().find("AttemptAircraftJump") != std::string::npos && IsInitialized && IsInGame || Function->GetName().find("AircraftExitedDropZone") != std::string::npos && IsInitialized && IsInGame)
 		{
 			if (Controller->IsInAircraft())
 			{
+				//spawn and find the playerpawn
 				Controller->CheatManager->Summon(TEXT("PlayerPawn_Athena_C"));
 				auto actorPawn = FindActor(APlayerPawn_Athena_C::StaticClass())[0];
 				Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
+				//set its rotation right
 				Pawn->K2_SetActorRotation(FRotator{ 0,Pawn->K2_GetActorRotation().Yaw,0 }, false);
+				//possess
 				Controller->Possess(Pawn);
+				//equip the pickaxe again
 				Pawn->EquipWeaponDefinition(Pick, PickGuid);
 				PlayerState->OnRep_CharacterParts();
-				Controller->CheatManager->God();
 			}
 		}
+		//called when picking something up
 		if (Function->GetName().find("OnAboutToEnterBackpack") != std::string::npos)
 		{
 			Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(PickupDEF), PickupGUID);
@@ -294,12 +320,13 @@ namespace Nacro
 				Pawn->CurrentWeapon->ReloadAnimation = nullptr;
 			}
 		}
+		//cheatscripts
 		if (Function->GetName().find("CheatScript") != std::string::npos && IsInGame)
 		{
 			if (static_cast<UCheatManager_CheatScript_Params*>(Params)->ScriptName.IsValid())
 			{
 				auto ScriptStr = static_cast<UCheatManager_CheatScript_Params*>(Params)->ScriptName.ToString();
-
+				
 				if (ToLower(ScriptStr) == "help")
 				{
 					GameMode->Say(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript fly: Toggles flight movement mode.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.");
@@ -334,6 +361,7 @@ namespace Nacro
 					
 					if (!InstantReload)
 					{
+						//re-equip if turning it off -- this resets the reload animation
 						Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(Pawn->CurrentWeapon->WeaponData->GetFullName()), FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
 					}
 				}
@@ -375,28 +403,38 @@ namespace Nacro
 
 					if (!arg.empty())
 					{
+						//up the pickup number for findobject
 						PickupNum++;
 						std::string objPickup = "FortPickupAthena " + GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() + "." + GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() + ".PersistentLevel.FortPickupAthena_";
 						objPickup.append(std::to_string(PickupNum));
 
+						//summon
 						Controller->CheatManager->Summon(TEXT("FortPickupAthena"));
+						//run through all gameobjects
 						for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
 						{
 							auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
 
 							if (Objects != nullptr)
 							{
+								//if this returns true we've found our weapon
 								if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
 								{
+									//set to the wid
 									PickupWEP = static_cast<UFortWeaponItemDefinition*>(Objects);
+									//we dont need to run through EVERY other object after this so we can break out of the loop
 									break;
 								}
 
 							}
 						}
+						//find the pickup
 						auto Pickup = static_cast<AFortPickupAthena*>(UObject::FindObject<AFortPickupAthena>(objPickup));
+						//set its location to the players
 						Pickup->K2_SetActorLocation(Pawn->K2_GetActorLocation(), false, true, new FHitResult);
+						//toss it
 						Pickup->TossPickup(Pawn->K2_GetActorLocation(), nullptr, 1, false);
+						//set the item definition and count
 						Pickup->PrimaryPickupItemEntry.ItemDefinition = PickupWEP;
 						Pickup->PrimaryPickupItemEntry.Count = 1;
 						Pickup->OnRep_PrimaryPickupItemEntry();
@@ -408,20 +446,24 @@ namespace Nacro
 
 					if (!arg.empty())
 					{
+						//we already have a variable for the pickaxe saved so we dont need to findobject it
 						if (arg == "WID_Harvest_Pickaxe_Athena_C_T01")
 						{
 							Pawn->EquipWeaponDefinition(Pick, PickGuid);
 						}
 						else
 						{
+							//go through all gameobjects
 							for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
 							{
 								auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
 
 								if (Objects != nullptr)
 								{
+									//if we've found it
 									if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
 									{
+										//equip it
 										Pawn->EquipWeaponDefinition(static_cast<UFortWeaponItemDefinition*>(Objects), FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
 										if (InstantReload)
 										{
