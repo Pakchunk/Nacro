@@ -56,6 +56,7 @@ namespace Nacro
 	AFortGameModeAthena* GameMode;
 	AFortPlayerStateAthena* PlayerState;
 	AFortGameStateAthena* GameState;
+	AFortQuickBars* FortQB;
 
 	// Miscellaneous
 	PVOID GarbageCollection;
@@ -79,6 +80,7 @@ namespace Nacro
 	bool HasJumped = false;
 	int PickupNum = 0;
 	std::string PickupDEF;
+	std::string WorldName;
 
 	auto FindActor(UClass* Class)
 	{
@@ -237,6 +239,8 @@ namespace Nacro
 		Pick = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
 		Pawn->EquipWeaponDefinition(Pick, PickGuid = { 0,0,0,0 });
 
+		WorldName = GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString();
+
 		DeathMontage = UObject::FindObject<UAnimMontage>("AnimMontage PlayerDeath_Athena.PlayerDeath_Athena");
 
 		Controller->Role = ENetRole::ROLE_Authority;
@@ -313,7 +317,9 @@ namespace Nacro
 		//called when picking something up
 		if (Function->GetName().find("OnAboutToEnterBackpack") != std::string::npos)
 		{
-			Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(PickupDEF), PickupGUID);
+			if (PickupDEF.find("Weapon") != std::string::npos) {
+				Pawn->EquipWeaponDefinition(UObject::FindObject<UFortWeaponItemDefinition>(PickupDEF), PickupGUID);
+			}
 			if (InstantReload)
 			{
 				Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
@@ -403,7 +409,7 @@ namespace Nacro
 
 					if (!arg.empty())
 					{
-						std::string objPickup = "FortPickupAthena " + GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() + "." + GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() + ".PersistentLevel.FortPickupAthena_";
+						std::string objPickup = "FortPickupAthena " + WorldName + "." + WorldName + ".PersistentLevel.FortPickupAthena_";
 						objPickup.append(std::to_string(PickupNum));
 						//increment the pickup number for findobject
 						PickupNum++;
