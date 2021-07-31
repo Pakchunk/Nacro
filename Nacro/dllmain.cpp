@@ -65,7 +65,7 @@ namespace Nacro
 	FGuid PickupGUID;
 
 	UAnimMontage* DeathMontage;
-	
+
 	FGuid PickGuid;
 	UFortWeaponItemDefinition* Pick;
 
@@ -111,8 +111,8 @@ namespace Nacro
 			VirtualProtect(AbilityPatch, 16, dwProtection, &dwTemp);
 		}
 
-		GameplayStatics = UObject::FindObject<UGameplayStatics>("GameplayStatics Engine.Default__GameplayStatics");
-		
+		GameplayStatics = reinterpret_cast<UGameplayStatics*>(UGameplayStatics::StaticClass());
+
 		LocalPlayer = reinterpret_cast<ULocalPlayer*>(GEngine->GameInstance->LocalPlayers[0]);
 		auto pConsole = UConsole::StaticClass()->CreateDefaultObject<UConsole>();
 		pConsole->Outer = LocalPlayer->ViewportClient;
@@ -123,78 +123,53 @@ namespace Nacro
 	{
 		while (true)
 		{
-			if (Pawn != nullptr && !Controller->IsInAircraft() && !Pawn->IsSkydiving())
+			if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && !Controller->IsInAircraft() && !Pawn->IsSkydiving() && Pawn->CurrentWeapon && !Pawn->CurrentWeapon->bIsReloadingWeapon && !Pawn->CurrentWeapon->bIsTargeting)
 			{
-				//check to make sure the player is holding a weapon, not targeting or reloading, and pressing shift + w (otherwise sprinting sideways happens)
-				if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && Pawn->CurrentWeapon && !Pawn->CurrentWeapon->bIsReloadingWeapon && !Pawn->CurrentWeapon->bIsTargeting)
-				{
-						Pawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
-				}
-				else
-				{
-						Pawn->CurrentMovementStyle = EFortMovementStyle::Running;
-				}
+				Pawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
+			}
+			else
+			{
+				Pawn->CurrentMovementStyle = EFortMovementStyle::Running;
+			}
 
-				//really funky solution for sprinting without moving forwards
-				if (GetAsyncKeyState(0x53) & 0x8000)
+			if (GetAsyncKeyState(0x53) & 0x8000)
+			{
+				if (Pawn->CurrentMovementStyle != EFortMovementStyle::Running)
 				{
-					if (Pawn->CurrentMovementStyle != EFortMovementStyle::Running)
-					{
-						Pawn->CurrentMovementStyle = EFortMovementStyle::Running;
-					}
-				}
-
-				if (GetAsyncKeyState(VK_SPACE) & 0x8000)
-				{
-					if (!HasJumped)
-					{
-						HasJumped = true;
-						if (Pawn->bIsCrouched)
-						{
-							Pawn->UnCrouch(true);
-						}
-						else
-						{
-							if (!Pawn->IsJumpProvidingForce())
-							{
-								Pawn->Jump();
-							}
-						}
-					}
-				}
-				else
-				{
-					if (HasJumped)
-						HasJumped = false;
-				}
-
-				//slow down player when targeting
-				if (Pawn->CurrentWeapon && Pawn->CurrentWeapon->bIsTargeting)
-				{
-					Pawn->CurrentMovementStyle = EFortMovementStyle::Walking;
-				}
-
-				//this happens on death
-				if (!Pawn->IsControlled() && IsControlled)
-				{
-					IsControlled = false;
-					//play the animation
-					Pawn->PlayAnimMontage(DeathMontage, 1, "");
-					//spawn and find the drone
-					Controller->CheatManager->Summon(TEXT("BP_VictoryDrone_C"));
-					auto BPDrone = FindActor(ABP_VictoryDrone_C::StaticClass())[0];
-					//set its position to the players
-					BPDrone->K2_SetActorLocationAndRotation(Pawn->K2_GetActorLocation(), FRotator{ 0,0,0 }, true, true, new FHitResult);
-					//wait a couple seconds
-					Sleep(2000);
-					//destroy both of the actors and exit the thread
-					Pawn->K2_DestroyActor();
-					BPDrone->K2_DestroyActor();
-					ExitThread(0);
+					Pawn->CurrentMovementStyle = EFortMovementStyle::Running;
 				}
 			}
 
-			Sleep(1000 / 60);
+			if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Controller->IsInAircraft())
+			{
+				if (!HasJumped)
+				{
+					HasJumped = true;
+					if (Pawn->bIsCrouched)
+					{
+						Pawn->UnCrouch(true);
+					}
+					else
+					{
+						if (!Pawn->IsJumpProvidingForce())
+						{
+							Pawn->Jump();
+						}
+					}
+				}
+			}
+			else
+			{
+				if (HasJumped)
+					HasJumped = false;
+			}
+
+			if (Pawn->CurrentWeapon && Pawn->CurrentWeapon->bIsTargeting)
+			{
+				Pawn->CurrentMovementStyle = EFortMovementStyle::Walking;
+			}
+
+			Sleep(1000 / 30);
 		}
 	}
 
@@ -211,14 +186,12 @@ namespace Nacro
 		auto actorPawn = FindActor(APlayerPawn_Athena_C::StaticClass())[0];
 		Pawn = static_cast<AFortPlayerPawnAthena*>(actorPawn);
 		Controller->Possess(Pawn);
-		
+
 		//Enable infinite ammo in advance
 		static_cast<UFortCheatManager*>(Controller->CheatManager)->ToggleInfiniteAmmo();
 
 		//pause storm
-		UKismetSystemLibrary* kismetPtr = reinterpret_cast<UKismetSystemLibrary*>(UKismetSystemLibrary::StaticClass());
-
-		kismetPtr->STATIC_ExecuteConsoleCommand(*World, L"PauseSafeZone", nullptr);
+		reinterpret_cast<UKismetSystemLibrary*>(UKismetSystemLibrary::StaticClass())->STATIC_ExecuteConsoleCommand(*World, L"PauseSafeZone", nullptr);
 
 		//set character parts
 		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_MED_BLK_Red_Head_01_ATH.F_MED_BLK_Red_Head_01_ATH"));
@@ -326,13 +299,29 @@ namespace Nacro
 				Pawn->CurrentWeapon->ReloadAnimation = nullptr;
 			}
 		}
+		// when player dies
+		if (Function->GetName().find("ClientOnPawnDied") != std::string::npos && IsInGame)
+		{
+			// play death montage (in other word, animation)
+			Pawn->PlayAnimMontage(DeathMontage, 0.7, "");
+			Controller->CheatManager->Summon(TEXT("BP_VictoryDrone_C"));
+			auto BPDrone = static_cast<ABP_VictoryDrone_C*>(FindActor(ABP_VictoryDrone_C::StaticClass())[0]);
+			BPDrone->K2_SetActorLocationAndRotation(Pawn->K2_GetActorLocation(), FRotator{ 0,0,0 }, true, true, new FHitResult);
+		}
+		// when the victory drone animation ends
+		if (Function->GetFullName().find("Function BP_VictoryDrone.BP_VictoryDrone_C.OnSpawnOutAnimEnded") != std::string::npos && IsInGame)
+		{
+			// destroy pawn and victory drone
+			FindActor(ABP_VictoryDrone_C::StaticClass())[0]->K2_DestroyActor();
+			Pawn->K2_DestroyActor();
+		}
 		//cheatscripts
 		if (Function->GetName().find("CheatScript") != std::string::npos && IsInGame)
 		{
 			if (static_cast<UCheatManager_CheatScript_Params*>(Params)->ScriptName.IsValid())
 			{
 				auto ScriptStr = static_cast<UCheatManager_CheatScript_Params*>(Params)->ScriptName.ToString();
-				
+
 				if (ToLower(ScriptStr) == "help")
 				{
 					GameMode->Say(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript fly: Toggles flight movement mode.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.");
@@ -364,7 +353,7 @@ namespace Nacro
 						Pawn->CurrentWeapon->WeaponReloadMontage = nullptr;
 						Pawn->CurrentWeapon->ReloadAnimation = nullptr;
 					}
-					
+
 					if (!InstantReload)
 					{
 						//re-equip if turning it off -- this resets the reload animation
@@ -496,11 +485,11 @@ namespace Nacro
 
 		InitializeGame();
 		MH_Initialize();
-		
+
 		auto ProcessEventAddr = (PBYTE)ModuleBaseAddr + 0x13D86E0;
 		MH_CreateHook(static_cast<LPVOID>(ProcessEventAddr), ProcessEventHook, reinterpret_cast<LPVOID*>(&ProcessEvent));
 		MH_EnableHook(static_cast<LPVOID>(ProcessEventAddr));
-		
+
 		return NULL;
 	}
 }
@@ -532,4 +521,3 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 
 	return TRUE;
 }
-
