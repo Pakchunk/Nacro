@@ -403,10 +403,10 @@ namespace Nacro
 
 					if (!arg.empty())
 					{
-						//up the pickup number for findobject
-						PickupNum++;
 						std::string objPickup = "FortPickupAthena " + GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() + "." + GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() + ".PersistentLevel.FortPickupAthena_";
 						objPickup.append(std::to_string(PickupNum));
+						//increment the pickup number for findobject
+						PickupNum++;
 
 						//summon
 						Controller->CheatManager->Summon(TEXT("FortPickupAthena"));
