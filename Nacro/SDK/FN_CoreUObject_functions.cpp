@@ -42,34 +42,17 @@ std::string UObject::GetFullName() const
 
 	std::string name = outName.ToString();
 
-	size_t delFirst = 0;
-	for (size_t pos = 0; pos < name.size(); pos++)
-	{
-		if (name[pos] == '/')
-		{
-			delFirst = pos;
-			break;
-		}
-	}
-	if (delFirst != name.size() - 1)
-	{
-		size_t delSecond = 0;
-		for (size_t pos = name.size() - 1; pos >= 0; pos--)
-		{
-			if (name[pos] == '/')
-			{
-				delSecond = pos;
-				break;
-			}
-		}
-		size_t eraseLength = delSecond - (delFirst - 1);
-		name.erase(delFirst, eraseLength);
-	}
+
+	size_t first = name.find_first_of("/");
+	size_t second = name.find_last_of("/");
+
+	size_t eraseLength = second - first;
+
+	if (name.length() > eraseLength)
+		name.erase(first, eraseLength + 1);
 
 	if (name.find(":") != std::string::npos)
-	{
 		name.replace(name.find(":"), 1, ".");
-	}
 
 	return name;
 }
