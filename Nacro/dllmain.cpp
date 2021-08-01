@@ -12,6 +12,20 @@
 #define AllocateConsole
 
 
+typedef SDK::UObject* (__fastcall* _StaticLoadObject_Internal)
+(
+	SDK::UClass* Class,
+	SDK::UObject* InOuter,
+	SDK::FString          Name,
+	SDK::FString          FileName,
+	uint32_t              LoadFlags,
+	SDK::UPackageMap* Sandbox,
+	bool                  bAllowObjectReconcilation,
+	PVOID                 InSerializerContext
+	);
+
+_StaticLoadObject_Internal StaticLoadObject_Internal = reinterpret_cast<_StaticLoadObject_Internal>(0x13E0180);
+
 PVOID(*CollectGarbageInternal)(uint32_t, bool) = nullptr;
 PVOID CollectGarbageInternalHook(uint32_t KeepFlags, bool bPerformFullPurge)
 {
@@ -133,7 +147,7 @@ namespace Nacro
 				}
 			}
 
-			if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Controller->IsInAircraft())
+			if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Controller->IsInAircraft() && !Pawn->IsSkydiving())
 			{
 				if (!HasJumped)
 				{
@@ -148,6 +162,17 @@ namespace Nacro
 						{
 							Pawn->Jump();
 						}
+					}
+				}
+			}
+			else if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Controller->IsInAircraft() && Pawn->IsSkydiving() && !Pawn->IsParachuteForcedOpen()) {
+				if (!HasJumped) {
+					HasJumped = true;
+					if (!Pawn->IsParachuteOpen()) {
+						Pawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 2U);
+					}
+					else {
+						Pawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 3U);
 					}
 				}
 			}
@@ -204,8 +229,6 @@ namespace Nacro
 		Pick = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
 		Pawn->EquipWeaponDefinition(Pick, PickGuid = { 0,0,0,0 });
 		ItemsMap.insert_or_assign("WID_Harvest_Pickaxe_Athena_C_T01", Pick);
-
-		DeathMontage = UObject::FindObject<UAnimMontage>("AnimMontage PlayerDeath_Athena.PlayerDeath_Athena");
 
 		Controller->Role = ENetRole::ROLE_Authority;
 
