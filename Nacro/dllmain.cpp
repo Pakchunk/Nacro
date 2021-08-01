@@ -405,6 +405,7 @@ namespace Nacro
 
 					if (!arg.empty())
 					{
+						PickupWEP = nullptr;
 						bool ShouldCheck;
 
 						for (auto it = ItemsMap.begin(); it != ItemsMap.end(); ++it)
@@ -441,6 +442,11 @@ namespace Nacro
 
 								}
 							}
+						}
+
+						if (PickupWEP == nullptr) {
+							std::cout << "Item definition wasnt found! Aborting...\n";
+							return NULL;
 						}
 
 						FTransform Transform; /**/ FQuat Quat;
