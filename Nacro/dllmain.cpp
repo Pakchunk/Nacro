@@ -87,6 +87,10 @@ namespace Nacro
 	bool IsFlying = false;
 	bool HasJumped = false;
 
+	//Character part names
+	std::string charPartHead;
+	std::string charPartBody;
+
 	std::map<std::string, UFortWeaponItemDefinition*> ItemsMap;
 
 	auto FindActor(UClass* Class)
@@ -208,8 +212,8 @@ namespace Nacro
 		static_cast<UFortCheatManager*>(Controller->CheatManager)->ToggleInfiniteAmmo();
 
 		//set character parts
-		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_MED_BLK_Red_Head_01_ATH.F_MED_BLK_Red_Head_01_ATH"));
-		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Soldier_TV12_ATH.F_Med_Soldier_TV12_ATH"));
+		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>(charPartHead));
+		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>(charPartBody));
 		// screw a proper skin system :middle_finger:
 
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
@@ -270,6 +274,37 @@ namespace Nacro
 		//when play button is pressed
 		if (Function->GetName().find("BP_PlayButton") != std::string::npos)
 		{
+			//get all objects
+			for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+			{
+				//current object
+				auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+
+				if (Objects != nullptr)
+				{
+					//if this returns true we've found a character part
+					if (Objects->GetFullName().find("CustomCharacterPart") != std::string::npos && Objects->GetFullName().find("ATH") != std::string::npos /*athena only*/)
+					{
+						//These are always loaded and we dont want to use these unless we dont find any others
+						if (Objects->GetFullName().find("F_MED_BLK_Red_Head_01_ATH") != std::string::npos || Objects->GetFullName().find("F_Med_Soldier_TV12_ATH") != std::string::npos)
+							continue;
+						else {
+							//all head cps naturally have head in the name
+							if (Objects->GetFullName().find("Head") != std::string::npos)
+								charPartHead = Objects->GetFullName();
+							else
+								charPartBody = Objects->GetFullName();
+						}
+					}
+				}
+			}
+
+			//if either of these return blank then either something went wrong or the CPs we're looking for are these ones:
+			if (charPartHead == "" || charPartBody == "") {
+				charPartHead = "CustomCharacterPart F_MED_BLK_Red_Head_01_ATH.F_MED_BLK_Red_Head_01_ATH";
+				charPartBody = "CustomCharacterPart F_Med_Soldier_TV12_ATH.F_Med_Soldier_TV12_ATH";
+			}
+
 			GameplayStatics->STATIC_OpenLevel(GEngine->GameViewport->World, "Athena_Terrain", true, L"");
 		}
 
@@ -631,7 +666,7 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 		freopen_s(&fp, "CONOUT$", "w", stderr);
 #endif // AllocateConsole
 
-		std::cout << "Welcome to Nacro!\nMade with <3 by ozne, absoluteSpacehead, and Fischsalat." << std::endl;
+		std::cout << "Welcome to Nacro!\nMade with <3 by ozne, absoluteSpacehead, and Fischsalat.\n";
 		CreateThread(0, 0, Nacro::Main, 0, 0, 0);
 		break;
 	}
