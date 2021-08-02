@@ -60,7 +60,6 @@ struct BrushStructObject
 namespace Nacro
 {
 	// Engine Ptrs
-	UWorld** World;
 	UFortEngine* GEngine;
 	ULocalPlayer* LocalPlayer;
 	UGameplayStatics* GameplayStatics;
@@ -507,9 +506,7 @@ namespace Nacro
 						}
 
 						if (PickupWEP == nullptr) 
-						{
 							return NULL;
-						}
 
 						FTransform Transform; /**/ FQuat Quat;
 						Quat.W = 1.0f; /**/ Quat.X = Pawn->K2_GetActorLocation().X; /**/ Quat.Y = Pawn->K2_GetActorLocation().Y; /**/ Quat.Z = Pawn->K2_GetActorLocation().Z;
