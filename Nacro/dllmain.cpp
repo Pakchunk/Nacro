@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <algorithm>
 #include <map>
 
@@ -101,7 +102,6 @@ namespace Nacro
 		uintptr_t ModuleBaseAddr = (uintptr_t)GetModuleHandle(NULL);
 
 		GEngine = *reinterpret_cast<UFortEngine**>(ModuleBaseAddr + 0x674AB20);
-		World = reinterpret_cast<UWorld**>(ModuleBaseAddr + 0x674CD00);
 		FName::GNames = *reinterpret_cast<TNameEntryArray**>((PBYTE)ModuleBaseAddr + 0x66587C8);
 		UObject::GObjects = reinterpret_cast<FUObjectArray*>((PBYTE)ModuleBaseAddr + 0x6661380);
 
@@ -216,19 +216,41 @@ namespace Nacro
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
 		PlayerState->OnRep_CharacterParts();
 
+
 		//set the players team index -- this shows the health in the top left and allows for markers to be placed
 		PlayerState->TeamIndex = EFortTeam::HumanPvP_Team1;
 		PlayerState->OnRep_TeamIndex();
 
+		for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+		{
+			auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+
+			if (Objects != nullptr)
+			{
+				if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortBuildingItemDefinition ") != std::string::npos)
+					if (Objects->GetFullName().find("Default__FortBuildingItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponMeleeItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponRangedItemDefinition") != std::string::npos)
+						continue;
+					else
+					{ 
+						// Loads the weapons in to memory in a special map for direct access later on.
+						// Also equips it breifly just to speed up equipping it later on.
+						ItemsMap.insert_or_assign(Objects->GetName(), static_cast<UFortWeaponItemDefinition*>(Objects));
+						Pawn->EquipWeaponDefinition(static_cast<UFortWeaponItemDefinition*>(Objects), FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
+					}
+			}
+		}
+
 		GameState = static_cast<AFortGameStateAthena*>(GEngine->GameViewport->World->GameState);
 		// set minimap!
-		// explanation: we add the gamestate to our offset to retreieve the variable we want (which is the map texture) and we set it that way
+		// explanation: we add our offset to the gamestate to retreieve access the variable we want (which is the map texture) and we set it that way
 		reinterpret_cast<BrushStructObject*>(reinterpret_cast<uintptr_t>(GEngine->GameViewport->World->GameState) + 0x1438)->MapTexture = UObject::FindObject<UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
 
 		//equip the pickaxe
 		Pick = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
 		Pawn->EquipWeaponDefinition(Pick, PickGuid = { 0,0,0,0 });
 		ItemsMap.insert_or_assign("WID_Harvest_Pickaxe_Athena_C_T01", Pick);
+
+		DeathMontage = UObject::FindObject<UAnimMontage>("AnimMontage PlayerDeath_Athena.PlayerDeath_Athena");
 
 		Controller->Role = ENetRole::ROLE_Authority;
 
@@ -269,6 +291,7 @@ namespace Nacro
 		{
 			IsInGame = true;
 			GameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
+			Controller->CheatManager->DestroyAll(ATiered_Athena_FloorLoot_01_C::StaticClass());
 			CreateThread(0, 0, UpdatePawn, 0, 0, 0);
 		}
 
@@ -346,7 +369,7 @@ namespace Nacro
 
 				if (ToLower(ScriptStr) == "help")
 				{
-					GameMode->Say(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript fly: Toggles flight movement mode.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.");
+					GameMode->Say(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript fly: Toggles flight movement mode.\ncheatscript setgravity <float>: Sets the gravity scale to the requested float value.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.");
 				}
 				if (ToLower(ScriptStr) == "fly")
 				{
@@ -361,6 +384,21 @@ namespace Nacro
 					{
 						Pawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Walking;
 					}
+				}
+				if (StartsWithToLower(ScriptStr, "setgravity"))
+				{
+					const auto arg = ScriptStr.erase(0, ScriptStr.find(" ") + 1);
+					if (arg.empty())
+					{
+						Pawn->CharacterMovement->GravityScale = 1;
+						return NULL;
+					}
+
+					std::stringstream StrStr(arg);
+					float GravityFloat;
+
+					StrStr >> GravityFloat;
+					Pawn->CharacterMovement->GravityScale = GravityFloat;
 				}
 				if (ToLower(ScriptStr) == "win")
 				{
@@ -454,6 +492,7 @@ namespace Nacro
 								if (Objects != nullptr)
 								{
 									//if this returns true we've found our weapon
+									// tho this is kinda a bad way to do it
 									if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
 									{
 										std::cout << Objects->GetName() << std::endl;
@@ -467,8 +506,8 @@ namespace Nacro
 							}
 						}
 
-						if (PickupWEP == nullptr) {
-							std::cout << "Item definition wasnt found! Aborting...\n";
+						if (PickupWEP == nullptr) 
+						{
 							return NULL;
 						}
 
@@ -595,6 +634,7 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 		freopen_s(&fp, "CONOUT$", "w", stderr);
 #endif // AllocateConsole
 
+		std::cout << "Welcome to Nacro!\nMade with <3 by ozne, absoluteSpacehead, and Fischsalat." << std::endl;
 		CreateThread(0, 0, Nacro::Main, 0, 0, 0);
 		break;
 	}
