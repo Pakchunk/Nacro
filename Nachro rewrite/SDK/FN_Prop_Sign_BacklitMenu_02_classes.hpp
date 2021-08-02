@@ -1,0 +1,38 @@
+#pragma once
+
+// Fortnite (1.8) SDK
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+//Classes
+//---------------------------------------------------------------------------
+
+// BlueprintGeneratedClass Prop_Sign_BacklitMenu_02.Prop_Sign_BacklitMenu_02_C
+// 0x000C (0x10E0 - 0x10D4)
+class AProp_Sign_BacklitMenu_02_C : public AParent_BuildingPropActor_C
+{
+public:
+	unsigned char                                      UnknownData00[0x4];                                       // 0x10D4(0x0004) MISSED OFFSET
+	class UPointLightComponent*                        PointLight;                                               // 0x10D8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Prop_Sign_BacklitMenu_02.Prop_Sign_BacklitMenu_02_C");
+		return ptr;
+	}
+
+
+	void UserConstructionScript();
+};
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
