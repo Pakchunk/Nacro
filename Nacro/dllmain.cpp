@@ -241,6 +241,14 @@ namespace Nacro
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
 		PlayerState->OnRep_CharacterParts();
 
+		if (PlayerState->CharacterParts[0] == nullptr || PlayerState->CharacterParts[1] == nullptr)
+		{
+			Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_MED_BLK_Red_Head_01_ATH.F_MED_BLK_Red_Head_01_ATH"));
+			Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart F_Med_Soldier_TV12_ATH.F_Med_Soldier_TV12_ATH"));
+			PlayerState->OnRep_CharacterParts();
+		}
+
+
 
 		//set the players team index -- this shows the health in the top left and allows for markers to be placed
 		PlayerState->TeamIndex = EFortTeam::HumanPvP_Team1;
@@ -276,8 +284,6 @@ namespace Nacro
 		ItemsMap.insert_or_assign("WID_Harvest_Pickaxe_Athena_C_T01", Pick);
 
 		DeathMontage = UObject::FindObject<UAnimMontage>("AnimMontage PlayerDeath_Athena.PlayerDeath_Athena");
-		// also load the actual animation into memory to eliminate the freeze on death
-		Pawn->PlayAnimMontage(DeathMontage, 3, "");
 
 		Controller->Role = ENetRole::ROLE_Authority;
 
@@ -310,16 +316,11 @@ namespace Nacro
 					//if this returns true we've found a character part
 					if (Objects->GetFullName().find("CustomCharacterPart") != NPOS && Objects->GetFullName().find("ATH") != NPOS /*athena only*/)
 					{
-						//These are always loaded and we dont want to use these unless we dont find any others
-						if (Objects->GetFullName().find("F_Med_Head1.F_Med_Head1") != NPOS || Objects->GetFullName().find("F_Med_Soldier_01.F_Med_Soldier_01") != NPOS || Objects->GetFullName().find("NoBackpack.NoBackpack") != NPOS)
-							continue;
-						else {
-							//all head cps naturally have head in the name
-							if (Objects->GetFullName().find("Head") != NPOS)
-								charPartHead = static_cast<UCustomCharacterPart*>(Objects);
-							else
-								charPartBody = static_cast<UCustomCharacterPart*>(Objects);
-						}
+						//all head cps naturally have head in the name
+						if (Objects->GetFullName().find("Head") != NPOS)
+							charPartHead = static_cast<UCustomCharacterPart*>(Objects);
+						else
+							charPartBody = static_cast<UCustomCharacterPart*>(Objects);
 					}
 				}
 			}
@@ -417,7 +418,7 @@ namespace Nacro
 
 		if (Function->GetFullName().find("BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature") != NPOS && IsInGame)
 		{
-			Controller->SwitchLevel(L"Frontend?game=Frontend");
+			Controller->SwitchLevel(L"Frontend?game=frontend");
 			MH_DisableHook(CollectGarbageInternalHook);
 			IsInLobby = true;
 			IsInitialized = false;
