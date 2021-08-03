@@ -262,12 +262,14 @@ namespace Player
 		{
 			if (AthenaPawn->IsSkydiving() && !PlayerController->IsInAircraft())
 			{
-				if (!bHasJumped) {
+				if (!bHasJumped) 
+				{
 					if (!AthenaPawn->IsParachuteOpen())
 						AthenaPawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 2U);
 
 					else if (AthenaPawn->IsParachuteOpen() && !AthenaPawn->IsParachuteForcedOpen())
 						AthenaPawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 3U);
+
 					bHasJumped = true;
 				}
 			}
@@ -289,7 +291,8 @@ namespace Player
 				}
 			}
 		}
-		else {
+		else 
+		{
 			if (bHasJumped)
 				bHasJumped = false;
 		}

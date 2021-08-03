@@ -39,8 +39,6 @@ namespace CheatScript
 
 		if (!bInstantReload)
 		{
-			//re-equip if turning it off -- this resets the reload animation
-
 			for (auto it = ItemsMap.begin(); it != ItemsMap.end(); ++it)
 			{
 				if (it->first == AthenaPawn->CurrentWeapon->WeaponData->GetName())
@@ -84,18 +82,17 @@ namespace CheatScript
 					{
 						auto curObject = GObjects->ObjObjects.GetByIndex(i);
 
-						if (curObject != nullptr)
+						if (curObject == nullptr)
+							continue;
+						
+						//if this returns true we've found our weapon
+						if (curObject->GetFullName().find(arg + "." + arg) != std::string::npos)
 						{
-							//if this returns true we've found our weapon
-							if (curObject->GetFullName().find(arg + "." + arg) != std::string::npos)
-							{
-								std::cout << curObject->GetName() << std::endl;
-								PickupWeapon = static_cast<UFortWeaponItemDefinition*>(curObject);
-								ItemsMap.insert_or_assign(curObject->GetName(), PickupWeapon);
-								//we dont need to run through EVERY other object after this so we can break out of the loop
-								break;
-							}
+							std::cout << curObject->GetName() << std::endl;
+							PickupWeapon = static_cast<UFortWeaponItemDefinition*>(curObject);
+							ItemsMap.insert_or_assign(curObject->GetName(), PickupWeapon);
 
+							break;
 						}
 					}
 				}

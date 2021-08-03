@@ -75,7 +75,7 @@ bool ReInitVariables()
 		return true;
 }
 
-void CommitAbilityPatch()
+void CommitAbilityPatch() // Credits to Polaris
 {
 	uintptr_t AbilityPatch = Utils::FindPattern("C0 0F 84 3C 02 00 00 0F 2F F7 0F 86 F5 00 00 00");
 	if (AbilityPatch)
