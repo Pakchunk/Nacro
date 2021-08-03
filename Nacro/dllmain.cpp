@@ -11,6 +11,8 @@
 #pragma comment(lib, "MinHook/libMinHook.x64.lib")
 
 #define AllocateConsole
+#define NPOS std::string::npos
+
 
 
 typedef SDK::UObject* (__fastcall* _StaticLoadObject_Internal)
@@ -75,6 +77,7 @@ namespace Nacro
 	PVOID GarbageCollection;
 	UFortWeaponItemDefinition* PickupWEP;
 
+	AActor* VictoryDrone;
 	UAnimMontage* DeathMontage;
 
 	FGuid PickGuid;
@@ -86,10 +89,11 @@ namespace Nacro
 	bool InstantReload = false;
 	bool IsFlying = false;
 	bool HasJumped = false;
+	bool IsInLobby = false;
 
 	//Character part names
-	std::string charPartHead;
-	std::string charPartBody;
+	UCustomCharacterPart* charPartHead;
+	UCustomCharacterPart* charPartBody;
 
 	std::map<std::string, UFortWeaponItemDefinition*> ItemsMap;
 
@@ -97,6 +101,18 @@ namespace Nacro
 	{
 		TArray<AActor*> Actor;
 		GameplayStatics->STATIC_GetAllActorsOfClass(GEngine->GameViewport->World, Class, &Actor);
+		return Actor;
+	}
+	auto SpawnActor(UClass* ActorClass, FVector Location, FRotator Rotation)
+	{
+		FQuat Quat;
+		FTransform Transform;
+		Quat.W = 0; /**/ Quat.X = Rotation.Pitch; /**/ Quat.Y = Rotation.Roll; /**/ Quat.Z = Rotation.Yaw;
+		Transform.Rotation = Quat; /**/ Transform.Scale3D = FVector{ 1,1,1 }; /**/ Transform.Translation = Location;
+
+		auto Actor = GameplayStatics->STATIC_BeginSpawningActorFromClass(GEngine->GameViewport->World, ActorClass, Transform, false, nullptr);
+		GameplayStatics->STATIC_FinishSpawningActor(Actor, Transform);
+
 		return Actor;
 	}
 
@@ -190,8 +206,15 @@ namespace Nacro
 				Pawn->CurrentMovementStyle = EFortMovementStyle::Walking;
 			}
 
+			if (IsInLobby)
+			{
+				break;
+			}
+
 			Sleep(1000 / 30);
 		}
+
+		ExitThread(0);
 	}
 
 	void InGame()
@@ -212,9 +235,8 @@ namespace Nacro
 		static_cast<UFortCheatManager*>(Controller->CheatManager)->ToggleInfiniteAmmo();
 
 		//set character parts
-		Pawn->ServerChoosePart(EFortCustomPartType::Head, UObject::FindObject<UCustomCharacterPart>(charPartHead));
-		Pawn->ServerChoosePart(EFortCustomPartType::Body, UObject::FindObject<UCustomCharacterPart>(charPartBody));
-		// screw a proper skin system :middle_finger:
+		Pawn->ServerChoosePart(EFortCustomPartType::Head, charPartHead);
+		Pawn->ServerChoosePart(EFortCustomPartType::Body, charPartBody);
 
 		PlayerState = static_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
 		PlayerState->OnRep_CharacterParts();
@@ -230,8 +252,8 @@ namespace Nacro
 
 			if (Objects != nullptr)
 			{
-				if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortBuildingItemDefinition ") != std::string::npos)
-					if (Objects->GetFullName().find("Default__FortBuildingItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponMeleeItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponRangedItemDefinition") != std::string::npos)
+				if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") != NPOS || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != NPOS || Objects->GetFullName().find("FortBuildingItemDefinition ") != NPOS)
+					if (Objects->GetFullName().find("Default__FortBuildingItemDefinition") != NPOS || Objects->GetFullName().find("Default__FortWeaponMeleeItemDefinition") != NPOS || Objects->GetFullName().find("Default__FortWeaponRangedItemDefinition") != NPOS)
 						continue;
 					else
 					{ 
@@ -254,6 +276,8 @@ namespace Nacro
 		ItemsMap.insert_or_assign("WID_Harvest_Pickaxe_Athena_C_T01", Pick);
 
 		DeathMontage = UObject::FindObject<UAnimMontage>("AnimMontage PlayerDeath_Athena.PlayerDeath_Athena");
+		// also load the actual animation into memory to eliminate the freeze on death
+		Pawn->PlayAnimMontage(DeathMontage, 3, "");
 
 		Controller->Role = ENetRole::ROLE_Authority;
 
@@ -272,8 +296,9 @@ namespace Nacro
 		// Frontend
 
 		//when play button is pressed
-		if (Function->GetName().find("BP_PlayButton") != std::string::npos)
+		if (Function->GetName().find("BP_PlayButton") != NPOS)
 		{
+			GameplayStatics->STATIC_OpenLevel(GEngine->GameViewport->World, "Athena_Terrain", true, L"");
 			//get all objects
 			for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
 			{
@@ -283,54 +308,52 @@ namespace Nacro
 				if (Objects != nullptr)
 				{
 					//if this returns true we've found a character part
-					if (Objects->GetFullName().find("CustomCharacterPart") != std::string::npos && Objects->GetFullName().find("ATH") != std::string::npos /*athena only*/)
+					if (Objects->GetFullName().find("CustomCharacterPart") != NPOS && Objects->GetFullName().find("ATH") != NPOS /*athena only*/)
 					{
 						//These are always loaded and we dont want to use these unless we dont find any others
-						if (Objects->GetFullName().find("F_MED_BLK_Red_Head_01_ATH") != std::string::npos || Objects->GetFullName().find("F_Med_Soldier_TV12_ATH") != std::string::npos)
+						if (Objects->GetFullName().find("F_Med_Head1.F_Med_Head1") != NPOS || Objects->GetFullName().find("F_Med_Soldier_01.F_Med_Soldier_01") != NPOS || Objects->GetFullName().find("NoBackpack.NoBackpack") != NPOS)
 							continue;
 						else {
 							//all head cps naturally have head in the name
-							if (Objects->GetFullName().find("Head") != std::string::npos)
-								charPartHead = Objects->GetFullName();
+							if (Objects->GetFullName().find("Head") != NPOS)
+								charPartHead = static_cast<UCustomCharacterPart*>(Objects);
 							else
-								charPartBody = Objects->GetFullName();
+								charPartBody = static_cast<UCustomCharacterPart*>(Objects);
 						}
 					}
 				}
 			}
-
-			//if either of these return blank then either something went wrong or the CPs we're looking for are these ones:
-			if (charPartHead == "" || charPartBody == "") {
-				charPartHead = "CustomCharacterPart F_MED_BLK_Red_Head_01_ATH.F_MED_BLK_Red_Head_01_ATH";
-				charPartBody = "CustomCharacterPart F_Med_Soldier_TV12_ATH.F_Med_Soldier_TV12_ATH";
-			}
-
-			GameplayStatics->STATIC_OpenLevel(GEngine->GameViewport->World, "Athena_Terrain", true, L"");
 		}
 
 		// Frontend
 
-		//~
-		//~
-		//~
+		//~//
+		//~//
+		//~//
 
 		// In-Game
 
-		if (Function->GetName().find("ReadyToStartMatch") != std::string::npos && !IsInitialized)
+		if (Function->GetName().find("ReadyToStartMatch") != NPOS && !IsInitialized && !IsInLobby)
 		{
 			InGame();
 		}
 
-		if (Function->GetName().find("LoadingScreenDropped") != std::string::npos && !IsInGame)
+		if (Function->GetName().find("LoadingScreenDropped") != NPOS && !IsInGame)
 		{
-			IsInGame = true;
-			GameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
-			Controller->CheatManager->DestroyAll(ATiered_Athena_FloorLoot_01_C::StaticClass());
-			CreateThread(0, 0, UpdatePawn, 0, 0, 0);
+			if (GameplayStatics->STATIC_GetCurrentLevelName(GEngine->GameViewport->World, false).ToString() == "Frontend")
+			{
+				IsInLobby = false;
+			}
+			else
+			{
+				IsInGame = true;
+				GameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
+				CreateThread(0, 0, UpdatePawn, 0, 0, 0);
+			}
 		}
 
 		//when the player jumps or the bus timer runs out
-		if (Function->GetName().find("AttemptAircraftJump") != std::string::npos && IsInitialized && IsInGame || Function->GetName().find("AircraftExitedDropZone") != std::string::npos && IsInitialized && IsInGame)
+		if (Function->GetName().find("AttemptAircraftJump") != NPOS && IsInitialized && IsInGame || Function->GetName().find("AircraftExitedDropZone") != NPOS && IsInitialized && IsInGame)
 		{
 			if (Controller->IsInAircraft())
 			{
@@ -348,7 +371,7 @@ namespace Nacro
 			}
 		}
 
-		if (Function->GetName().find("ServerHandlePickup") != std::string::npos && IsInGame)
+		if (Function->GetName().find("ServerHandlePickup") != NPOS && IsInGame)
 		{
 			auto Param = static_cast<AFortPlayerPawn_ServerHandlePickup_Params*>(Params);
 
@@ -377,25 +400,38 @@ namespace Nacro
 		}
 
 		// when player dies
-		if (Function->GetName().find("ClientOnPawnDied") != std::string::npos && IsInGame)
+		if (Function->GetName().find("ClientOnPawnDied") != NPOS && IsInGame)
 		{
 			// play death montage (in other word, animation)
 			Pawn->PlayAnimMontage(DeathMontage, 0.7, "");
-			Controller->CheatManager->Summon(TEXT("BP_VictoryDrone_C"));
-			auto BPDrone = static_cast<ABP_VictoryDrone_C*>(FindActor(ABP_VictoryDrone_C::StaticClass())[0]);
-			BPDrone->K2_SetActorLocationAndRotation(Pawn->K2_GetActorLocation(), FRotator{ 0,0,0 }, true, true, new FHitResult);
+			VictoryDrone = SpawnActor(ABP_VictoryDrone_C::StaticClass(), Pawn->K2_GetActorLocation(), FRotator{ 0,0,0 });
 		}
 
 		// when the victory drone animation ends
-		if (Function->GetFullName().find("Function BP_VictoryDrone.BP_VictoryDrone_C.OnSpawnOutAnimEnded") != std::string::npos && IsInGame)
+		if (Function->GetFullName().find("Function BP_VictoryDrone.BP_VictoryDrone_C.OnSpawnOutAnimEnded") != NPOS && IsInGame)
 		{
 			// destroy pawn and victory drone
-			FindActor(ABP_VictoryDrone_C::StaticClass())[0]->K2_DestroyActor();
+			VictoryDrone->K2_DestroyActor();
 			Pawn->K2_DestroyActor();
 		}
 
+		if (Function->GetFullName().find("BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature") != NPOS && IsInGame)
+		{
+			Controller->SwitchLevel(L"Frontend?game=Frontend");
+			MH_DisableHook(CollectGarbageInternalHook);
+			IsInLobby = true;
+			IsInitialized = false;
+			IsInGame = false;
+			InstantReload = false;
+			IsFlying = false;
+			HasJumped = false;
+			ItemsMap.clear();
+
+			return NULL;
+		}
+
 		//cheatscripts
-		if (Function->GetName().find("CheatScript") != std::string::npos && IsInGame)
+		if (Function->GetName().find("CheatScript") != NPOS && IsInGame)
 		{
 			if (static_cast<UCheatManager_CheatScript_Params*>(Params)->ScriptName.IsValid())
 			{
@@ -484,8 +520,8 @@ namespace Nacro
 
 						if (Objects != nullptr)
 						{
-							if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != std::string::npos || Objects->GetFullName().find("FortBuildingItemDefinition ") != std::string::npos)
-								if (Objects->GetFullName().find("Default__FortBuildingItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponMeleeItemDefinition") != std::string::npos || Objects->GetFullName().find("Default__FortWeaponRangedItemDefinition") != std::string::npos)
+							if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") != NPOS || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != NPOS || Objects->GetFullName().find("FortBuildingItemDefinition ") != NPOS)
+								if (Objects->GetFullName().find("Default__FortBuildingItemDefinition") != NPOS || Objects->GetFullName().find("Default__FortWeaponMeleeItemDefinition") != NPOS || Objects->GetFullName().find("Default__FortWeaponRangedItemDefinition") != NPOS)
 									continue;
 								else
 									txt << Objects->GetName() << "\n";
@@ -527,7 +563,7 @@ namespace Nacro
 								{
 									//if this returns true we've found our weapon
 									// tho this is kinda a bad way to do it
-									if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
+									if (Objects->GetFullName().find(arg + "." + arg) != NPOS)
 									{
 										std::cout << Objects->GetName() << std::endl;
 										PickupWEP = static_cast<UFortWeaponItemDefinition*>(Objects);
@@ -543,12 +579,8 @@ namespace Nacro
 						if (PickupWEP == nullptr) 
 							return NULL;
 
-						FTransform Transform; /**/ FQuat Quat;
-						Quat.W = 1.0f; /**/ Quat.X = Pawn->K2_GetActorLocation().X; /**/ Quat.Y = Pawn->K2_GetActorLocation().Y; /**/ Quat.Z = Pawn->K2_GetActorLocation().Z;
-						Transform.Rotation = Quat; /**/ Transform.Scale3D = FVector{ 1,1,1 }; /**/ Transform.Translation = Pawn->K2_GetActorLocation();
 
-						auto Pickup = static_cast<AFortPickupAthena*>(GameplayStatics->STATIC_BeginSpawningActorFromClass(GEngine->GameViewport->World, AFortPickupAthena::StaticClass(), Transform, false, Pawn));
-						GameplayStatics->STATIC_FinishSpawningActor(Pickup, Transform);
+						auto Pickup = static_cast<AFortPickupAthena*>(SpawnActor(AFortPickupAthena::StaticClass(), Pawn->K2_GetActorLocation(), FRotator{ 0,0,0 }));
 
 						//set its location to the players
 						Pickup->K2_SetActorLocation(Pawn->K2_GetActorLocation(), false, true, new FHitResult);
@@ -604,7 +636,7 @@ namespace Nacro
 								if (Objects != nullptr)
 								{
 									//if we've found it
-									if (Objects->GetFullName().find(arg + "." + arg) != std::string::npos)
+									if (Objects->GetFullName().find(arg + "." + arg) != NPOS)
 									{
 										if (!Objects->IsA(UFortWeaponItemDefinition::StaticClass()))
 										{
