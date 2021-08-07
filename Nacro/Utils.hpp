@@ -24,8 +24,8 @@ public:
 
 	inline static void ThrowErrorExit(LPCSTR sErrorMessage)
 	{
-		MessageBoxA(nullptr, sErrorMessage, "Fatal Error! || Nacro", MB_ICONERROR);
 		CreateThread(0, 0, SleepExit, 0, 0, 0);
+		MessageBoxA(nullptr, sErrorMessage, "Fatal Error! || Nacro", MB_ICONERROR);
 	}
 
 	inline static void ThrowError(LPCSTR sErrorMessage)
