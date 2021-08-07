@@ -9,9 +9,6 @@
 
 namespace Cheats
 {
-	bool bIsFlying = false;
-	bool bInstantReload = false;
-
 	inline bool HandleCheats(std::string Parameters)
 	{
 		if (Utils::ToLower(Parameters) == "help")
@@ -24,12 +21,12 @@ namespace Cheats
 
 		if (Utils::ToLower(Parameters) == "fly")
 		{
-			bIsFlying = !bIsFlying;
+			Globals::bIsFlying = !Globals::bIsFlying;
 
-			if (bIsFlying)
+			if (Globals::bIsFlying)
 				Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
 
-			if (!bIsFlying)
+			if (!Globals::bIsFlying)
 				Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Walking;
 
 			return true;
@@ -55,9 +52,6 @@ namespace Cheats
 
 			StrStr >> GravityFloat;
 			Globals::AthenaPawn->CharacterMovement->GravityScale = GravityFloat;
-			Globals::AthenaPawn->CharacterMovement->MaxCustomMovementSpeed = GravityFloat;
-			Globals::AthenaPawn->CharacterMovement->Acceleration = FVector{ GravityFloat,GravityFloat,GravityFloat };
-			Globals::AthenaPawn->CharacterMovement->MaxWalkSpeed = GravityFloat;
 
 			return true;
 		}
@@ -72,15 +66,15 @@ namespace Cheats
 
 		if (Utils::ToLower(Parameters) == "toggleinstantreload")
 		{
-			bInstantReload = !bInstantReload;
+			Globals::bInstantReload = !Globals::bInstantReload;
 
-			if (bInstantReload)
+			if (Globals::bInstantReload)
 			{
 				Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
 				Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
 			}
 
-			if (!bInstantReload)
+			if (!Globals::bInstantReload)
 			{
 				for (auto it = Globals::ItemsMap.begin(); it != Globals::ItemsMap.end(); ++it)
 				{
@@ -91,6 +85,8 @@ namespace Cheats
 					}
 				}
 			}
+
+			return true;
 		}
 
 		if (Utils::StartsWithToLower(Parameters, "pickup"))
@@ -169,11 +165,6 @@ namespace Cheats
 						}
 
 						Player::Equip(it->second, FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
-						if (bInstantReload)
-						{
-							Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
-							Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
-						}
 						ShouldCheck = false;
 						break;
 					}
@@ -200,11 +191,6 @@ namespace Cheats
 								}
 
 								Player::Equip(static_cast<UFortWeaponItemDefinition*>(Objects), FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
-								if (bInstantReload)
-								{
-									Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
-									Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
-								}
 								Globals::ItemsMap.insert_or_assign(Objects->GetName(), static_cast<UFortWeaponItemDefinition*>(Objects));
 								break;
 							}

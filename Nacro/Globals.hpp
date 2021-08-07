@@ -13,7 +13,9 @@ namespace Globals
 	bool bIsInitialized;
 	bool bIsInGame;
 	bool bHasJumped;
-	bool bIsOnceOrMore = false;
+	bool bIsOnceOrMore;
+	bool bIsFlying = false;
+	bool bInstantReload = false;
 
 	UFortEngine* GEngine;
 	UGameplayStatics* GameplayStatics;
@@ -39,6 +41,7 @@ namespace Globals
 	inline void InitGlobalsFrontend()
 	{
 		bIsInLobby = true;
+		bIsOnceOrMore = false;
 
 		uintptr_t ModuleBaseAddr = (uintptr_t)GetModuleHandle(NULL);
 		GEngine = *reinterpret_cast<UFortEngine**>(Utils::Offset<uintptr_t**>(Offsets::GEngineOffset));
@@ -56,7 +59,6 @@ namespace Globals
 
 	inline void InitGlobalsAthena()
 	{
-		bIsInLobby = false;
 		AthenaGameMode = static_cast<AFortGameModeAthena*>(Globals::GEngine->GameViewport->World->AuthorityGameMode);
 		AthenaGameState = static_cast<AFortGameStateAthena*>(Globals::AthenaGameMode->GameState);
 		AthenaController = static_cast<AFortPlayerControllerAthena*>(Globals::GEngine->GameInstance->LocalPlayers[0]->PlayerController);

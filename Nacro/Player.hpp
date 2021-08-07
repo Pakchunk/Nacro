@@ -52,6 +52,12 @@ namespace Player
 	inline void Equip(UFortWeaponItemDefinition* Item, FGuid Guid)
 	{
 		Globals::AthenaPawn->EquipWeaponDefinition(Item, Guid);
+
+		if (Globals::bInstantReload)
+		{
+			Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
+			Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
+		}
 	}
 
 	DWORD UpdatePawn(LPVOID lpParam)

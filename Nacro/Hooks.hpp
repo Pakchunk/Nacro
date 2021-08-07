@@ -109,8 +109,8 @@ namespace Hooks
 			Globals::bIsInLobby = true;
 			Globals::bIsInitialized = false;
 			Globals::bIsInGame = false;
-			Cheats::bInstantReload = false;
-			Cheats::bIsFlying = false;
+			Globals::bInstantReload = false;
+			Globals::bIsFlying = false;
 			Globals::bHasJumped = false;
 			Globals::ItemsMap.clear();
 		}
