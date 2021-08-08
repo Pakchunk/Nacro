@@ -20,6 +20,9 @@ DWORD MainThread(LPVOID)
     Hooks::CreateHooks();
 	Utils::PatchAbilities();
 
+	static_cast<AFortGameModeFrontEnd*>(Globals::GEngine->GameViewport->World->AuthorityGameMode)->Say
+	(L"Welcome to Nacro!\nCreated by ozne, Fischsalat, and absoluteSpacehead.");
+
     return NULL;
 }
 
@@ -29,7 +32,7 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 	{
 	case DLL_PROCESS_ATTACH:
 	{
-		Utils::CreateConsoleWindow();
+		//Utils::CreateConsoleWindow();
 		CreateThread(0, 0, MainThread, 0, 0, 0);
 		break;
 	}

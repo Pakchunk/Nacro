@@ -213,7 +213,7 @@ namespace Cheats
 				if (Objects != nullptr)
 					txt << Objects->GetFullName() << "\n";
 			}
-			MessageBoxA(nullptr, "Successfully dumped all objects to Objects_Dump.txt.", "Success!", MB_OK);
+			MessageBoxA(nullptr, "Successfully dumped all objects to Objects_Dump.txt.", "Success!", MB_ICONINFORMATION);
 			txt.close();
 
 			return true;
@@ -235,7 +235,7 @@ namespace Cheats
 							txt << Objects->GetName() << "\n";
 				}
 			}
-			MessageBoxA(nullptr, "Successfully dumped all Weapon IDs to WIDs_Dump.txt.", "Success!", MB_OK);
+			MessageBoxA(nullptr, "Successfully dumped all Weapon IDs to WIDs_Dump.txt.", "Success!", MB_ICONINFORMATION);
 			txt.close();
 
 			return true;
@@ -251,7 +251,7 @@ namespace Cheats
 				if (currentName != nullptr)
 					txt << currentName->GetAnsiName() << "\n";
 			}
-			MessageBoxA(nullptr, "Successfully dumped all names to Names_Dump.txt.", "Success!", MB_OK);
+			MessageBoxA(nullptr, "Successfully dumped all names to Names_Dump.txt.", "Success!", MB_ICONINFORMATION);
 			txt.close();
 
 			return true;
