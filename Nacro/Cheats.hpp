@@ -14,7 +14,7 @@ namespace Cheats
 		if (Utils::ToLower(Parameters) == "help")
 		{
 			Globals::AthenaGameMode->Say
-			(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript fly: Toggles flight movement mode.\ncheatscript setgravity <float>: Sets the gravity scale to the requested float value.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.");
+			(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript fly: Toggles flight movement mode.\ncheatscript setgravity <float>: Sets the gravity scale to the requested float value.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.\ncheatscript dumpnames: Dumps all GNames into \\FortniteGame\\Binaries\\Win64\\Names_Dump.txt.");
 
 			return true;
 		}
@@ -236,6 +236,22 @@ namespace Cheats
 				}
 			}
 			MessageBoxA(nullptr, "Successfully dumped all Weapon IDs to WIDs_Dump.txt.", "Success!", MB_OK);
+			txt.close();
+
+			return true;
+		}
+
+		if (Utils::ToLower(Parameters) == "dumpnames")
+		{
+			std::ofstream txt("Names_Dump.txt");
+			for (int i = 0; i < FName::GNames->Num(); ++i)
+			{
+				auto currentName = (*FName::GNames)[i];
+
+				if (currentName != nullptr)
+					txt << currentName->GetAnsiName() << "\n";
+			}
+			MessageBoxA(nullptr, "Successfully dumped all names to Names_Dump.txt.", "Success!", MB_OK);
 			txt.close();
 
 			return true;
