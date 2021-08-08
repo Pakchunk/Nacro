@@ -257,8 +257,6 @@ namespace Cheats
 			return true;
 		}
 
-		// TODO: add names dump cheat
-
 		return false;
 	}
 }
