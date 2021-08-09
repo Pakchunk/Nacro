@@ -257,6 +257,20 @@ namespace Cheats
 			return true;
 		}
 
+		if (Utils::ToLower(Parameters) == "ghost")
+		{
+			/*if (Globals::bIsGhost)
+			{
+				// idk how to unghost
+			}
+			else {
+				//Globals::AthenaPawn->ClientCheatGhost();
+				//static_cast<UFortCheatManager*>(Globals::AthenaController->CheatManager)->Ghost();
+			} */
+			static_cast<UFortCheatManager*>(Globals::AthenaController->CheatManager)->Ghost();
+			return true;
+		}
+
 		return false;
 	}
 }
