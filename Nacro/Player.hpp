@@ -92,7 +92,14 @@ namespace Player
 					}
 					else
 					{
-						if (!Globals::AthenaPawn->IsJumpProvidingForce())
+						if (!Globals::bInfiniteJump)
+						{
+							if (!Globals::AthenaPawn->IsJumpProvidingForce())
+							{
+								Globals::AthenaPawn->Jump();
+							}
+						}
+						if (Globals::bInfiniteJump)
 						{
 							Globals::AthenaPawn->Jump();
 						}

@@ -1,11 +1,11 @@
 #pragma once
 
-#include "SDK.hpp"
-#include "Utils.hpp"
-#include "World.hpp"
-#include "Globals.hpp"
 #include <sstream>
 #include <fstream>
+#include "SDK.hpp"
+#include "Utils.hpp"
+
+#define NPOS std::string::npos
 
 namespace Cheats
 {
@@ -14,20 +14,15 @@ namespace Cheats
 		if (Utils::ToLower(Parameters) == "help")
 		{
 			Globals::AthenaGameMode->Say
-			(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript fly: Toggles flight movement mode.\ncheatscript setgravity <float>: Sets the gravity scale to the requested float value.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.\ncheatscript dumpnames: Dumps all GNames into \\FortniteGame\\Binaries\\Win64\\Names_Dump.txt.");
+			(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript setgravity <float>: Sets the gravity scale to the requested float value.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.\ncheatscript dumpnames: Dumps all GNames into \\FortniteGame\\Binaries\\Win64\\Names_Dump.txt.");
 
 			return true;
 		}
 
 		if (Utils::ToLower(Parameters) == "fly")
 		{
-			Globals::bIsFlying = !Globals::bIsFlying;
-
-			if (Globals::bIsFlying)
-				Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
-
-			if (!Globals::bIsFlying)
-				Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Walking;
+			Globals::AthenaGameMode->Say
+			(L"No need to use this CheatScript anymore! You can use the engine commands like \'fly\', \'walk\', and \'ghost\' now!");
 
 			return true;
 		}
@@ -40,7 +35,7 @@ namespace Cheats
 				return true;
 			}
 
-			const auto arg = Parameters.erase(0, Parameters.find(" ") + 1);
+			const auto& arg = Parameters.erase(0, Parameters.find(" ") + 1);
 			if (arg.empty())
 			{
 				Globals::AthenaPawn->CharacterMovement->GravityScale = 1;
@@ -54,6 +49,11 @@ namespace Cheats
 			Globals::AthenaPawn->CharacterMovement->GravityScale = GravityFloat;
 
 			return true;
+		}
+
+		if (Utils::ToLower(Parameters) == "toggleinfinitejump")
+		{
+			Globals::bInfiniteJump = !Globals::bInfiniteJump;
 		}
 
 		if (Utils::ToLower(Parameters) == "win")
@@ -91,12 +91,12 @@ namespace Cheats
 
 		if (Utils::StartsWithToLower(Parameters, "pickup"))
 		{
-			const auto arg = Parameters.erase(0, Parameters.find(" ") + 1);
+			const auto& arg = Parameters.erase(0, Parameters.find(" ") + 1);
 
 			if (!arg.empty())
 			{
 				Globals::PickupItem = nullptr;
-				bool ShouldCheck;
+				bool ShouldCheck{};
 
 				for (auto it = Globals::ItemsMap.begin(); it != Globals::ItemsMap.end(); ++it)
 				{
@@ -145,14 +145,14 @@ namespace Cheats
 
 			return true;
 		}
-		
+
 		if (Utils::StartsWithToLower(Parameters, "equip"))
 		{
-			const auto arg = Parameters.erase(0, Parameters.find(" ") + 1);
+			const auto& arg = Parameters.erase(0, Parameters.find(" ") + 1);
 
 			if (!arg.empty())
 			{
-				bool ShouldCheck;
+				bool ShouldCheck{};
 
 				for (auto it = Globals::ItemsMap.begin(); it != Globals::ItemsMap.end(); ++it)
 				{
@@ -164,7 +164,7 @@ namespace Cheats
 							return NULL;
 						}
 
-						Player::Equip(it->second, FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
+						Player::Equip(it->second, FGuid{ rand() % 9999, rand() % 9999, rand() % 9999, rand() % 9999 });
 						ShouldCheck = false;
 						break;
 					}

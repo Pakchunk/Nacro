@@ -5,8 +5,6 @@
 #include <set>
 #include <locale>
 #include <string>
-#include <Windows.h>
-#include <iostream>
 
 #include "SDK/FN_Basic.hpp"
 
@@ -1266,11 +1264,8 @@
 #include "SDK/FN_S_StoreFront_Glass_L_parameters.hpp"
 #include "SDK/FN_S_StoreFront_Wall_A2_structs.hpp"
 #include "SDK/FN_S_StoreFront_Wall_A2_classes.hpp"
-#include "SDK/FN_S_StoreFront_Wall_A2_parameters.hpp"
-#include "SDK/FN_S_BuildingTrim_D_structs.hpp"
 #include "SDK/FN_S_BuildingTrim_D_classes.hpp"
 #include "SDK/FN_S_BuildingTrim_D_parameters.hpp"
-#include "SDK/FN_Commerce_StoreShelves_03_structs.hpp"
 #include "SDK/FN_Commerce_StoreShelves_03_classes.hpp"
 #include "SDK/FN_Commerce_StoreShelves_03_parameters.hpp"
 #include "SDK/FN_SM_Boardwalk_Stair34_structs.hpp"

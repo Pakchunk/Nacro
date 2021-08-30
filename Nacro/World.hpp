@@ -1,7 +1,10 @@
 #pragma once
 
-#include "Globals.hpp"
 #include "SDK.hpp"
+#include "Globals.hpp"
+#include "Player.hpp"
+
+#define NPOS std::string::npos
 
 namespace World
 {
@@ -15,12 +18,17 @@ namespace World
 	{
 		FQuat Quat;
 		FTransform Transform;
-		Quat.W = 0; /**/ Quat.X = Rotation.Pitch; /**/ Quat.Y = Rotation.Roll; /**/ Quat.Z = Rotation.Yaw;
-		Transform.Rotation = Quat; /**/ Transform.Scale3D = FVector{ 1,1,1 }; /**/ Transform.Translation = Location;
+		Quat.W = 0;
+		Quat.X = Rotation.Pitch;
+		Quat.Y = Rotation.Roll;
+		Quat.Z = Rotation.Yaw;
+
+		Transform.Rotation = Quat;
+		Transform.Scale3D = FVector{ 1,1,1 };
+		Transform.Translation = Location;
 
 		auto Actor = Globals::GameplayStatics->STATIC_BeginSpawningActorFromClass(Globals::GEngine->GameViewport->World, ActorClass, Transform, false, nullptr);
 		Globals::GameplayStatics->STATIC_FinishSpawningActor(Actor, Transform);
-
 		return Actor;
 	}
 

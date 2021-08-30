@@ -5,6 +5,7 @@
 #endif
 
 #include "../SDK.hpp"
+#include <Windows.h>
 
 namespace SDK
 {

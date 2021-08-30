@@ -1,10 +1,9 @@
 #pragma once
 
 #include <map>
-#include "SDK.hpp"
-#include "Utils.hpp"
 #include "Offsets.hpp"
-#include "Hooks.hpp"
+#include "Utils.hpp"
+#include "SDK.hpp"
 using namespace SDK;
 
 namespace Globals
@@ -14,8 +13,8 @@ namespace Globals
 	bool bIsInGame;
 	bool bHasJumped;
 	bool bIsOnceOrMore;
-	bool bIsFlying = false;
 	bool bInstantReload = false;
+	bool bInfiniteJump = false;
 
 	UFortEngine* GEngine;
 	UGameplayStatics* GameplayStatics;

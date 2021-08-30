@@ -1,31 +1,30 @@
 #pragma once
 
-#include "SDK.hpp"
-#include "Offsets.hpp"
-#include "Globals.hpp"
-#include "Player.hpp"
-#include "Utils.hpp"
-#include "Cheats.hpp"
-#include "World.hpp"
-
 #include "MinHook/MinHook.h"
 #pragma comment(lib, "MinHook/libMinHook.x64.lib")
 
+
+#include "SDK.hpp"
+#include "Player.hpp"
+#include "World.hpp"
+#include "Cheats.hpp"
+
 #define NPOS std::string::npos
+using namespace SDK;
 
 typedef PVOID(__fastcall* fOriginalPE)(void*, void*, void*);
 static fOriginalPE OriginalPE = *Utils::Offset<fOriginalPE>(Offsets::ProcessEventOffset);
 
-typedef void(__fastcall* CollectGarbage_Internal)(int32_t KeepFlags, bool bPerfromefullPurge);
+typedef void(__fastcall* CollectGarbage_Internal)(int32_t KeepFlags, bool bPerformFullPurge);
 static CollectGarbage_Internal OriginalGC = *Utils::Offset<CollectGarbage_Internal>(Offsets::CGInternalOffset);
 
 namespace Hooks
 {
 	void CreateHooks();
-	void* PEHook(UObject* Object, UFunction* Function, void* Parameters);
-	void* CGHook(int32_t KeepFlags, bool bPerfromefullPurge);
+	void* PEHook(UObject* Object, SDK::UFunction* Function, void* Parameters);
+	void* CGHook(int32_t KeepFlags, bool bPerformFullPurge);
 
-	void* PEHook(UObject* Object, UFunction* Function, void* Parameters)
+	void* PEHook(UObject* Object, SDK::UFunction* Function, void* Parameters)
 	{
 		std::string FullFuncName = Function->GetFullName();
 		std::string FuncName = Function->GetName();
@@ -59,6 +58,10 @@ namespace Hooks
 		{
 			Globals::bIsInGame = true;
 			Globals::AthenaGameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
+			Globals::AthenaController->bHasClientFinishedLoading = true;
+			Globals::AthenaController->ServerSetClientHasFinishedLoading(true);
+			Globals::AthenaController->bHasServerFinishedLoading = true;
+			Globals::AthenaController->OnRep_bHasServerFinishedLoading();
 		}
 
 		if (FuncName.find("AttemptAircraftJump") != NPOS && Globals::bIsInGame || FuncName.find("AircraftExitedDropZone") != NPOS && Globals::bIsInGame)
@@ -102,17 +105,32 @@ namespace Hooks
 			Globals::AthenaPawn->K2_DestroyActor();
 		}
 
-		if (FuncName.find("BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature") != NPOS && Globals::bIsInGame)
+		if (FullFuncName.find("Function Engine.CheatManager.Walk") != NPOS && Globals::bIsInGame)
 		{
-			Globals::AthenaController->SwitchLevel(L"Frontend?game=Frontend");
+			Globals::AthenaPawn->SetActorEnableCollision(true);
+			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Walking;
+		}
+
+		if (FullFuncName.find("Function Engine.CheatManager.Fly") != NPOS && Globals::bIsInGame)
+		{
+			Globals::AthenaPawn->SetActorEnableCollision(true);
+			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
+		}
+
+		if (FullFuncName.find("Function Engine.CheatManager.Ghost") != NPOS && Globals::bIsInGame)
+		{
+			Globals::AthenaPawn->SetActorEnableCollision(false);
+			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
+		}
+
+		if (FuncName.find("ServerReturnToMainMenu") != NPOS && Globals::bIsInGame)
+		{
 			MH_DisableHook(CGHook);
 			Globals::bIsInLobby = true;
 			Globals::bIsInitialized = false;
 			Globals::bIsInGame = false;
 			Globals::bInstantReload = false;
-			Globals::bIsFlying = false;
 			Globals::bHasJumped = false;
-			Globals::ItemsMap.clear();
 		}
 
 		if (FuncName.find("CheatScript") != NPOS)
@@ -120,15 +138,15 @@ namespace Hooks
 			if (static_cast<UCheatManager_CheatScript_Params*>(Parameters)->ScriptName.IsValid() && Globals::bIsInGame)
 			{
 				if (!Cheats::HandleCheats(static_cast<UCheatManager_CheatScript_Params*>(Parameters)->ScriptName.ToString()))
-						Globals::AthenaGameMode->Say
-						(L"CheatScript not recognized, please use \'cheatscript help\' for a list of available CheatScript commands.");
+					Globals::AthenaGameMode->Say
+					(L"CheatScript not recognized, please use \'cheatscript help\' for a list of available CheatScript commands.");
 			}
 		}
 
 		return OriginalPE(Object, Function, Parameters);
 	}
 
-	void* CGHook(int32_t KeepFlags, bool bPerfromefullPurge)
+	void* CGHook(int32_t KeepFlags, bool bPerformFullPurge)
 	{
 		return NULL;
 	}

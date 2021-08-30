@@ -17,13 +17,13 @@ DWORD MainThread(LPVOID)
 		Utils::ThrowErrorExit("Nacro only supports Fortnite 1.7.2, please make sure you have launched the correct build.");
 
 	Globals::InitGlobalsFrontend();
-    Hooks::CreateHooks();
+	Hooks::CreateHooks();
 	Utils::PatchAbilities();
 
 	static_cast<AFortGameModeFrontEnd*>(Globals::GEngine->GameViewport->World->AuthorityGameMode)->Say
 	(L"Welcome to Nacro!\nCreated by ozne, Fischsalat, and absoluteSpacehead.");
 
-    return NULL;
+	return NULL;
 }
 
 BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
@@ -32,7 +32,7 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 	{
 	case DLL_PROCESS_ATTACH:
 	{
-		//Utils::CreateConsoleWindow();
+		Utils::CreateConsoleWindow();
 		CreateThread(0, 0, MainThread, 0, 0, 0);
 		break;
 	}
