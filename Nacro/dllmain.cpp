@@ -32,7 +32,7 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 	{
 	case DLL_PROCESS_ATTACH:
 	{
-		Utils::CreateConsoleWindow();
+		//Utils::CreateConsoleWindow();
 		CreateThread(0, 0, MainThread, 0, 0, 0);
 		break;
 	}

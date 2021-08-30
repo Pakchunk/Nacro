@@ -35,7 +35,7 @@ namespace Cheats
 				return true;
 			}
 
-			const auto& arg = Parameters.erase(0, Parameters.find(" ") + 1);
+			const auto &arg = Parameters.erase(0, Parameters.find(" ") + 1);
 			if (arg.empty())
 			{
 				Globals::AthenaPawn->CharacterMovement->GravityScale = 1;
@@ -91,7 +91,7 @@ namespace Cheats
 
 		if (Utils::StartsWithToLower(Parameters, "pickup"))
 		{
-			const auto& arg = Parameters.erase(0, Parameters.find(" ") + 1);
+			const auto &arg = Parameters.erase(0, Parameters.find(" ") + 1);
 
 			if (!arg.empty())
 			{
@@ -148,7 +148,7 @@ namespace Cheats
 
 		if (Utils::StartsWithToLower(Parameters, "equip"))
 		{
-			const auto& arg = Parameters.erase(0, Parameters.find(" ") + 1);
+			const auto &arg = Parameters.erase(0, Parameters.find(" ") + 1);
 
 			if (!arg.empty())
 			{
