@@ -24,6 +24,8 @@ namespace Player
 		}
 	}
 
+	static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpec * (*)(UAbilitySystemComponent*, FGameplayAbilitySpec*, FGameplayAbilitySpec*)>(uintptr_t(GetModuleHandle(0) + Offsets::GiveAbilityOffset));
+
 	inline void SpawnPlayer()
 	{
 		Globals::AthenaController->CheatManager->Summon(L"PlayerPawn_Athena_C");
@@ -64,7 +66,7 @@ namespace Player
 	{
 		while (true)
 		{
-			if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
+			if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState(0x57) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
 			{
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
 			}
@@ -73,12 +75,11 @@ namespace Player
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
 			}
 
-			if (GetAsyncKeyState(0x53) & 0x8000)
+			//if not holding W, this gives us SLIGHTLY improved sprinting...
+			//this will not be needed if we get abilities. maybe soon?
+			if (!(GetAsyncKeyState(0x57) & 0x8000) && Globals::AthenaPawn->CurrentMovementStyle == EFortMovementStyle::Sprinting)
 			{
-				if (Globals::AthenaPawn->CurrentMovementStyle != EFortMovementStyle::Running)
-				{
-					Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
-				}
+				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
 			}
 
 			if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving())

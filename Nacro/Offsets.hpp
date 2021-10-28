@@ -4,7 +4,7 @@
 
 namespace Offsets
 {
-	uintptr_t GEngineOffset 			=	0x674AB20;		//Gloabal Engine*
+	uintptr_t GEngineOffset 			=	0x674AB20;		//Global Engine*
 	uintptr_t GWorldOffset				=	0x674CD00;		//Global World*
 	uintptr_t GNamesOffset 				=	0x66587C8;		//Global NameArray*
 	uintptr_t GUObjectArrayOffset 		=	0x6661380;		//Global ObjectArray-Class*
@@ -15,4 +15,5 @@ namespace Offsets
 	uintptr_t SpawnActorOffset 			=	0x137DBC0;		//UWorld::SpawnActor()
 	uintptr_t PlainNameStringOffset 	=	0x12F0FC0;		//FNameEntry::GetPlainNameString()
 	uintptr_t CGInternalOffset			=	0x137D380;		//CollectGarbageInternal()
+	uintptr_t GiveAbilityOffset			=	0x3D50A60;		//GiveAbility()
 };
