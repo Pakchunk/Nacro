@@ -75,13 +75,6 @@ namespace Player
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
 			}
 
-			//if not holding W, this gives us SLIGHTLY improved sprinting...
-			//this will not be needed if we get abilities. maybe soon?
-			if (!(GetAsyncKeyState(0x57) & 0x8000) && Globals::AthenaPawn->CurrentMovementStyle == EFortMovementStyle::Sprinting)
-			{
-				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
-			}
-
 			if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving())
 			{
 				if (!Globals::bHasJumped)
