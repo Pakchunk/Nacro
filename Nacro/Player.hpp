@@ -5,6 +5,7 @@
 
 namespace Player
 {
+	//We call this in frontend to get the characterparts currently on our player. This sets the variables in Globals, so we can apply them ingame.
 	inline void GrabCharacterParts()
 	{
 		for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
@@ -24,6 +25,7 @@ namespace Player
 		}
 	}
 
+	//We use the offset to call the function.
 	static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpec * (*)(UAbilitySystemComponent*, FGameplayAbilitySpec*, FGameplayAbilitySpec*)>(uintptr_t(GetModuleHandle(0) + Offsets::GiveAbilityOffset));
 
 	inline void SpawnPlayer()
@@ -45,6 +47,7 @@ namespace Player
 		Globals::AthenaPlayerState->OnRep_CharacterParts();
 	}
 
+	//This lets us use markers and shows our health in the top left.
 	inline void SetTeamIndex(EFortTeam Team)
 	{
 		Globals::AthenaPlayerState->TeamIndex = Team;
@@ -57,6 +60,9 @@ namespace Player
 
 		if (Globals::bInstantReload)
 		{
+			Globals::WeaponReloadMontage = Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage;
+			Globals::ReloadAnimation = Globals::AthenaPawn->CurrentWeapon->ReloadAnimation;
+
 			Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
 			Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
 		}
@@ -66,17 +72,15 @@ namespace Player
 	{
 		while (true)
 		{
+			//If we are holding shift and W, and we are on the ground, and we are holding a weapon, and we aren't reloading or aiming...
 			if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState(0x57) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
-			{
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
-			}
 			else
-			{
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
-			}
 
 			if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving())
 			{
+				//We use this variable to avoid jump/glider spam.
 				if (!Globals::bHasJumped)
 				{
 					Globals::bHasJumped = true;
@@ -101,31 +105,25 @@ namespace Player
 				}
 			}
 			else if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && Globals::AthenaPawn->IsSkydiving() && !Globals::AthenaPawn->IsParachuteForcedOpen()) {
-				if (!Globals::bHasJumped) {
+				if (!Globals::bHasJumped)
+				{
 					Globals::bHasJumped = true;
-					if (!Globals::AthenaPawn->IsParachuteOpen()) {
-						Globals::AthenaPawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 2U);
-					}
-					else {
-						Globals::AthenaPawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 3U);
-					}
+					if (!Globals::AthenaPawn->IsParachuteOpen())
+						Globals::AthenaPawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 2U); //gliding
+					else
+						Globals::AthenaPawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 3U); //skydiving
 				}
 			}
 			else
-			{
 				if (Globals::bHasJumped)
 					Globals::bHasJumped = false;
-			}
 
+			//When aiming, the player should use a different movementstyle. Without this, it plays regular running animations, which just looks wrong.
 			if (Globals::AthenaPawn->CurrentWeapon && Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
-			{
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Walking;
-			}
 
 			if (Globals::bIsInLobby)
-			{
 				break;
-			}
 
 			Sleep(1000 / 30);
 		}

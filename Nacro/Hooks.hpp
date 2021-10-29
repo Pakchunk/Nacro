@@ -39,17 +39,26 @@ namespace Hooks
 		if (FuncName.find("ReadyToStartMatch") != NPOS && !Globals::bIsInitialized && !Globals::bIsInLobby)
 		{
 			Globals::InitGlobalsAthena();
+
 			Player::SpawnPlayer();
 			Globals::AthenaController->Possess(Globals::AthenaPawn);
+
 			World::LoadItems();
 			Player::Equip(Globals::Pickaxe, FGuid{ 0,0,0,0 });
+
 			World::SetupMiniMap();
+
 			Player::ChooseParts(Globals::charPartHead, Globals::charPartBody);
 			Player::ShowParts();
+
 			Globals::DeathMontage = UObject::FindObject<UAnimMontage>("AnimMontage PlayerDeath_Athena.PlayerDeath_Athena");
+
 			Player::SetTeamIndex(EFortTeam::HumanPvP_Team1);
+
 			static_cast<UFortCheatManager*>(Globals::AthenaController->CheatManager)->ToggleInfiniteAmmo();
+
 			World::StartMatch();
+
 			CreateThread(0, 0, Player::UpdatePawn, 0, 0, 0);
 			CreateHooks();
 		}
@@ -58,8 +67,10 @@ namespace Hooks
 		{
 			Globals::bIsInGame = true;
 			Globals::AthenaGameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
+
 			Globals::AthenaController->bHasClientFinishedLoading = true;
 			Globals::AthenaController->ServerSetClientHasFinishedLoading(true);
+
 			Globals::AthenaController->bHasServerFinishedLoading = true;
 			Globals::AthenaController->OnRep_bHasServerFinishedLoading();
 		}
@@ -71,6 +82,7 @@ namespace Hooks
 				Player::SpawnPlayer();
 				Globals::AthenaPawn->K2_SetActorRotation(FRotator{ 0,Globals::AthenaPawn->K2_GetActorRotation().Yaw,0 }, false);
 				Globals::AthenaController->Possess(Globals::AthenaPawn);
+
 				Player::Equip(Globals::Pickaxe, FGuid{ 0,0,0,0 });
 				Player::ShowParts();
 			}
@@ -91,6 +103,15 @@ namespace Hooks
 							Player::Equip(it->second, FGuid{ rand() % 9999, rand() % 9999, rand() % 9999, rand() % 9999 });
 					}
 				}
+
+			if (Globals::bInstantReload)
+			{
+				Globals::WeaponReloadMontage = Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage;
+				Globals::ReloadAnimation = Globals::AthenaPawn->CurrentWeapon->ReloadAnimation;
+
+				Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
+				Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
+			}
 		}
 
 		if (FuncName.find("ClientOnPawnDied") != NPOS && Globals::bIsInGame)

@@ -11,11 +11,15 @@ namespace Cheats
 {
 	inline bool HandleCheats(std::string Parameters)
 	{
+		//We cant just set Parameters to Utils::ToLower(Parameters) before the ifs, since that breaks things like pickups by making the argument also all lowercase (trust me i tried)
+
 		if (Utils::ToLower(Parameters) == "help")
 		{
+			//We just dump a bunch of things into the console
 			Globals::AthenaGameMode->Say
 			(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript win: Plays win effects.\ncheatscript setgravity <float>: Sets the gravity scale to the requested float value.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.\ncheatscript dumpnames: Dumps all GNames into \\FortniteGame\\Binaries\\Win64\\Names_Dump.txt.");
 
+			//We use this return value in Hooks.hpp, to see if we put in a valid cheatscript (and if not, tell the user)
 			return true;
 		}
 
@@ -29,7 +33,8 @@ namespace Cheats
 
 		if (Utils::StartsWithToLower(Parameters, "setgravity"))
 		{
-			if (Utils::ToLower(Parameters) == "setgravity")
+			//If there is no number given, then we just reset gravity to normal
+			if (Parameters == "setgravity")
 			{
 				Globals::AthenaPawn->CharacterMovement->GravityScale = 1;
 				return true;
@@ -66,24 +71,24 @@ namespace Cheats
 
 		if (Utils::ToLower(Parameters) == "toggleinstantreload")
 		{
+			//Toggle our variable
 			Globals::bInstantReload = !Globals::bInstantReload;
 
+			//After the toggle, we check if its true:
 			if (Globals::bInstantReload)
 			{
+				//Set our variables in Globals to avoid re-equipping our weapon
+				Globals::WeaponReloadMontage = Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage;
+				Globals::ReloadAnimation = Globals::AthenaPawn->CurrentWeapon->ReloadAnimation;
+				//If it is, just set the animation to nullptr
 				Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
 				Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
 			}
-
-			if (!Globals::bInstantReload)
+			else
 			{
-				for (auto it = Globals::ItemsMap.begin(); it != Globals::ItemsMap.end(); ++it)
-				{
-					if (it->first == Globals::AthenaPawn->CurrentWeapon->WeaponData->GetName())
-					{
-						Player::Equip(it->second, FGuid{ rand() % 9999,rand() % 9999,rand() % 9999,rand() % 9999 });
-						break;
-					}
-				}
+				//Reset our weapon's montages using the variables in Globals
+				Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = Globals::WeaponReloadMontage;
+				Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = Globals::ReloadAnimation;
 			}
 
 			return true;
@@ -98,16 +103,20 @@ namespace Cheats
 				Globals::PickupItem = nullptr;
 				bool ShouldCheck{};
 
+				//Run through the entire map
 				for (auto it = Globals::ItemsMap.begin(); it != Globals::ItemsMap.end(); ++it)
 				{
+					//it->first will be a string with the items name in it. We use this to see if we found it.
 					if (it->first == arg)
 					{
+						//Then, we use it->second, which contains the item definition itself, to get the item.
 						Globals::PickupItem = it->second;
 						ShouldCheck = false;
 						break;
 					}
 					else
 					{
+						//If we dont find anything in the map, then we have to run through all objects to find what we are looking for.
 						ShouldCheck = true;
 					}
 				}
@@ -120,10 +129,14 @@ namespace Cheats
 
 						if (Objects != nullptr)
 						{
+							//Our items full name will be WID.WID, for example: WID_Assault_AutoHigh_Athena_SR_Ore_T03.WID_Assault_AutoHigh_Athena_SR_Ore_T03
+							//So if we find this, we know we have our item.
 							if (Objects->GetFullName().find(arg + "." + arg) != NPOS)
 							{
 								Globals::PickupItem = static_cast<UFortWeaponItemDefinition*>(Objects);
+								//We then add the item to the map, so we don't need to do this again.
 								Globals::ItemsMap.insert_or_assign(Objects->GetName(), Globals::PickupItem);
+								//Once we've found our object, we dont need to go through the rest of the objects, so we can just break out of the loop.
 								break;
 							}
 
@@ -134,7 +147,7 @@ namespace Cheats
 				if (Globals::PickupItem == nullptr)
 					return NULL;
 
-
+				//Spawn and set up our pickup
 				auto Pickup = static_cast<AFortPickupAthena*>(World::SpawnActor(AFortPickupAthena::StaticClass(), Globals::AthenaPawn->K2_GetActorLocation(), FRotator{ 0,0,0 }));
 				Pickup->K2_SetActorLocation(Globals::AthenaPawn->K2_GetActorLocation(), false, true, new FHitResult);
 				Pickup->TossPickup(Globals::AthenaPawn->K2_GetActorLocation(), nullptr, 1, false);

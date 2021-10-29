@@ -34,6 +34,9 @@ namespace Globals
 	UAnimMontage* DeathMontage;
 	AActor* VictoryDrone;
 
+	UAnimMontage* WeaponReloadMontage;
+	UAnimMontage* ReloadAnimation;
+
 	std::map<std::string, UFortWeaponItemDefinition*> ItemsMap;
 
 
