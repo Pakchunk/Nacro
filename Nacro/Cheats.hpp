@@ -34,7 +34,7 @@ namespace Cheats
 		if (Utils::StartsWithToLower(Parameters, "setgravity"))
 		{
 			//If there is no number given, then we just reset gravity to normal
-			if (Parameters == "setgravity")
+			if (Utils::ToLower(Parameters) == "setgravity")
 			{
 				Globals::AthenaPawn->CharacterMovement->GravityScale = 1;
 				return true;
