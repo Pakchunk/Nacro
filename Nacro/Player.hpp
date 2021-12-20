@@ -20,6 +20,10 @@ namespace Player
 						Globals::charPartHead = static_cast<UCustomCharacterPart*>(Objects);
 					else
 						Globals::charPartBody = static_cast<UCustomCharacterPart*>(Objects);
+
+					//We found both of them, break
+					if (Globals::charPartBody && Globals::charPartHead)
+						break;
 				}
 			}
 		}
@@ -97,14 +101,15 @@ namespace Player
 								Globals::AthenaPawn->Jump();
 							}
 						}
-						if (Globals::bInfiniteJump)
+						else
 						{
 							Globals::AthenaPawn->Jump();
 						}
 					}
 				}
 			}
-			else if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && Globals::AthenaPawn->IsSkydiving() && !Globals::AthenaPawn->IsParachuteForcedOpen()) {
+			else if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && Globals::AthenaPawn->IsSkydiving() && !Globals::AthenaPawn->IsParachuteForcedOpen())
+			{
 				if (!Globals::bHasJumped)
 				{
 					Globals::bHasJumped = true;
