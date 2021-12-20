@@ -20,10 +20,6 @@ namespace Player
 						Globals::charPartHead = static_cast<UCustomCharacterPart*>(Objects);
 					else
 						Globals::charPartBody = static_cast<UCustomCharacterPart*>(Objects);
-
-					//We found both of them, break
-					if (Globals::charPartBody && Globals::charPartHead)
-						break;
 				}
 			}
 		}
