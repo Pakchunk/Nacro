@@ -14,6 +14,7 @@ namespace World
 		class UObject* MapTexture;
 	};
 
+	//Spawn a new actor and return it
 	inline AActor* SpawnActor(UClass* ActorClass, FVector Location, FRotator Rotation)
 	{
 		FQuat Quat;
@@ -32,6 +33,7 @@ namespace World
 		return Actor;
 	}
 
+	//Place all loaded items into the map, and equip it for faster future equipping
 	inline void LoadItems()
 	{
 		if (!Globals::bIsOnceOrMore)
@@ -57,12 +59,14 @@ namespace World
 		}
 	}
 
+	//Set the minimap texture
 	inline void SetupMiniMap()
 	{
 		reinterpret_cast<BrushStructObject*>(reinterpret_cast<uintptr_t>(Globals::GEngine->GameViewport->World->GameState) + 0x1438)->MapTexture =
 			UObject::FindObject<UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
 	}
 
+	//Call the functions to start the match
 	inline void StartMatch()
 	{
 		Globals::AthenaController->ServerReadyToStartMatch();

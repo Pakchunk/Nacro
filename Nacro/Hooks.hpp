@@ -31,7 +31,8 @@ namespace Hooks
 
 		if (FuncName.find("BP_PlayButton") != NPOS)
 		{
-			Player::GrabCharacterParts();
+			Globals::charPartBody = Player::GrabCharacterPart(EFortCustomPartType::Body);
+			Globals::charPartHead = Player::GrabCharacterPart(EFortCustomPartType::Head);
 			Globals::GameplayStatics->STATIC_OpenLevel(Globals::GEngine->GameViewport->World, "Athena_Terrain", true, L"");
 			Globals::bIsInLobby = false;
 		}

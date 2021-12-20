@@ -5,9 +5,12 @@
 
 namespace Player
 {
-	//We call this in frontend to get the characterparts currently on our player. This sets the variables in Globals, so we can apply them ingame.
-	inline void GrabCharacterParts()
+	//Find loaded Athena CharacterPart of given type, and return it
+	inline UCustomCharacterPart* GrabCharacterPart(EFortCustomPartType PartType)
 	{
+		//Using this to give the same result as the old method
+		UCustomCharacterPart* CharacterPart = nullptr;
+
 		for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
 		{
 			auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
@@ -16,18 +19,21 @@ namespace Player
 			{
 				if (Objects->GetFullName().find("CustomCharacterPart") != NPOS && Objects->GetFullName().find("ATH") != NPOS)
 				{
-					if (Objects->GetFullName().find("Head") != NPOS)
-						Globals::charPartHead = static_cast<UCustomCharacterPart*>(Objects);
-					else
-						Globals::charPartBody = static_cast<UCustomCharacterPart*>(Objects);
+					if (Objects->GetFullName().find("Head") != NPOS && PartType == EFortCustomPartType::Head)
+						CharacterPart = static_cast<UCustomCharacterPart*>(Objects);
+					else if (PartType == EFortCustomPartType::Body)
+						CharacterPart = static_cast<UCustomCharacterPart*>(Objects);
 				}
 			}
 		}
+
+		return CharacterPart;
 	}
 
-	//Thanks Fischsalat for this and the offset itself :)
 	static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpec * (*)(UAbilitySystemComponent*, FGameplayAbilitySpec*, FGameplayAbilitySpec*)>(uintptr_t(GetModuleHandle(0) + Offsets::GiveAbilityOffset));
+	//i only have the most basic understanding of what the fuck this means so im probably doing well here
 
+	//Spawn a new Athena pawn and set our pawn to it
 	inline void SpawnPlayer()
 	{
 		Globals::AthenaController->CheatManager->Summon(L"PlayerPawn_Athena_C");
@@ -36,24 +42,27 @@ namespace Player
 		Globals::AthenaPawn = static_cast<AFortPlayerPawnAthena*>(outActors[0]);
 	}
 
+	//Set our player's CharacterParts
 	inline void ChooseParts(UCustomCharacterPart* InHead, UCustomCharacterPart* InBody)
 	{
 		Globals::AthenaPawn->ServerChoosePart(EFortCustomPartType::Head, InHead);
 		Globals::AthenaPawn->ServerChoosePart(EFortCustomPartType::Body, InBody);
 	}
 
+	//Show CharacterParts on our player
 	inline void ShowParts()
 	{
 		Globals::AthenaPlayerState->OnRep_CharacterParts();
 	}
 
-	//This lets us use markers and shows our health in the top left.
+	//Sets team index, allowing for markers and health in top left
 	inline void SetTeamIndex(EFortTeam Team)
 	{
 		Globals::AthenaPlayerState->TeamIndex = Team;
 		Globals::AthenaPlayerState->OnRep_TeamIndex();
 	}
 
+	//Equip given item definition
 	inline void Equip(UFortWeaponItemDefinition* Item, FGuid Guid)
 	{
 		Globals::AthenaPawn->EquipWeaponDefinition(Item, Guid);
@@ -72,7 +81,7 @@ namespace Player
 	{
 		while (true)
 		{
-			//If we are holding shift and W, and we are on the ground, and we are holding a weapon, and we aren't reloading or aiming...
+			//quite possibly the most dumbass shit ive ever had to put in an if
 			if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState(0x57) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
 			else
