@@ -25,7 +25,7 @@ namespace Player
 		}
 	}
 
-	//We use the offset to call the function.
+	//Thanks Fischsalat for this and the offset itself :)
 	static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpec * (*)(UAbilitySystemComponent*, FGameplayAbilitySpec*, FGameplayAbilitySpec*)>(uintptr_t(GetModuleHandle(0) + Offsets::GiveAbilityOffset));
 
 	inline void SpawnPlayer()
