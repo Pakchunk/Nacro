@@ -145,7 +145,10 @@ namespace Cheats
 				}
 
 				if (Globals::PickupItem == nullptr)
-					return NULL;
+				{
+					Globals::AthenaGameMode->Say(L"ItemDefinition not found!");
+					return true; //We don't want the generic cheatscript not found message
+				}
 
 				//Spawn and set up our pickup
 				auto Pickup = static_cast<AFortPickupAthena*>(World::SpawnActor(AFortPickupAthena::StaticClass(), Globals::AthenaPawn->K2_GetActorLocation(), FRotator{ 0,0,0 }));

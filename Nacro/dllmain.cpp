@@ -32,7 +32,7 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 	{
 	case DLL_PROCESS_ATTACH:
 	{
-		//Uncomment to add console window (useful for std::cout, general logging, etc)
+		//Uncomment to show console window (useful for std::cout, general logging, etc)
 		//Utils::CreateConsoleWindow();
 		CreateThread(0, 0, MainThread, 0, 0, 0);
 		break;

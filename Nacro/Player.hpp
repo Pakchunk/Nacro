@@ -6,7 +6,7 @@
 namespace Player
 {
 	//Find loaded CharacterPart of given type and name, and return it
-	inline UCustomCharacterPart* GrabCharacterPart(EFortCustomPartType PartType, bool Athena, const char* Name = "")
+	inline UCustomCharacterPart* GrabCharacterPart(EFortCustomPartType PartType, bool Athena = true, const char* Name = "")
 	{
 		//Using this to give the same result as the old method
 		UCustomCharacterPart* CharacterPart = nullptr;
@@ -20,6 +20,7 @@ namespace Player
 				if (Objects->GetFullName().find("CustomCharacterPart") != NPOS)
 				{
 					//Not looking for Athena CPs and one is found OR looking for Athena CPs and a non-Athena CP is found
+					//This is mostly just for if we're looking for *any* CPs, which in regular use we are
 					if ((!Athena && Objects->GetFullName().find("ATH") != NPOS) || (Athena && Objects->GetFullName().find("ATH") == NPOS))
 						continue;
 
