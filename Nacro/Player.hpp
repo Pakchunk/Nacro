@@ -6,7 +6,7 @@
 namespace Player
 {
 	//Find loaded CharacterPart of given type and name, and return it
-	inline UCustomCharacterPart* GrabCharacterPart(EFortCustomPartType PartType, bool Athena = true, const char* Name = "")
+	inline UCustomCharacterPart* GrabCharacterPart(EFortCustomPartType PartType, bool Athena = true)
 	{
 		//Using this to give the same result as the old method
 		UCustomCharacterPart* CharacterPart = nullptr;
@@ -24,13 +24,10 @@ namespace Player
 					if ((!Athena && Objects->GetFullName().find("ATH") != NPOS) || (Athena && Objects->GetFullName().find("ATH") == NPOS))
 						continue;
 
-					if (Objects->GetFullName().find(Name) != NPOS)
-					{
-						if (Objects->GetFullName().find("Head") != NPOS && PartType == EFortCustomPartType::Head)
-							CharacterPart = static_cast<UCustomCharacterPart*>(Objects);
-						else if (PartType == EFortCustomPartType::Body)
-							CharacterPart = static_cast<UCustomCharacterPart*>(Objects);
-					}
+					if (Objects->GetFullName().find("Head") != NPOS && PartType == EFortCustomPartType::Head)
+						CharacterPart = static_cast<UCustomCharacterPart*>(Objects);
+					else if (PartType == EFortCustomPartType::Body)
+						CharacterPart = static_cast<UCustomCharacterPart*>(Objects);
 				}
 			}
 		}
