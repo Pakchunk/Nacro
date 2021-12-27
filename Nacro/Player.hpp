@@ -5,34 +5,24 @@
 
 namespace Player
 {
-	//Find loaded CharacterPart of given type and name, and return it
-	inline UCustomCharacterPart* GrabCharacterPart(EFortCustomPartType PartType, bool Athena = true)
+	//We call this in frontend to get the characterparts currently on our player. This sets the variables in Globals, so we can apply them ingame.
+	inline void GrabCharacterParts()
 	{
-		//Using this to give the same result as the old method
-		UCustomCharacterPart* CharacterPart = nullptr;
-
 		for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
 		{
 			auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
 
 			if (Objects != nullptr)
 			{
-				if (Objects->GetFullName().find("CustomCharacterPart") != NPOS)
+				if (Objects->GetFullName().find("CustomCharacterPart") != NPOS && Objects->GetFullName().find("ATH") != NPOS)
 				{
-					//Not looking for Athena CPs and one is found OR looking for Athena CPs and a non-Athena CP is found
-					//This is mostly just for if we're looking for *any* CPs, which in regular use we are
-					if ((!Athena && Objects->GetFullName().find("ATH") != NPOS) || (Athena && Objects->GetFullName().find("ATH") == NPOS))
-						continue;
-
-					if (Objects->GetFullName().find("Head") != NPOS && PartType == EFortCustomPartType::Head)
-						CharacterPart = static_cast<UCustomCharacterPart*>(Objects);
-					else if (PartType == EFortCustomPartType::Body)
-						CharacterPart = static_cast<UCustomCharacterPart*>(Objects);
+					if (Objects->GetFullName().find("Head") != NPOS)
+						Globals::charPartHead = static_cast<UCustomCharacterPart*>(Objects);
+					else
+						Globals::charPartBody = static_cast<UCustomCharacterPart*>(Objects);
 				}
 			}
 		}
-
-		return CharacterPart;
 	}
 
 	static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpec * (*)(UAbilitySystemComponent*, FGameplayAbilitySpec*, FGameplayAbilitySpec*)>(uintptr_t(GetModuleHandle(0) + Offsets::GiveAbilityOffset));
