@@ -219,6 +219,25 @@ namespace Cheats
 			return true;
 		}
 
+		if (Utils::ToLower(Parameters) == "tryability")
+		{
+			FGameplayAbilitySpec* AbilitySpec = new FGameplayAbilitySpec();
+
+			for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+			{
+				auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+
+				if (Objects->GetFullName().find("Default__FortGameplayAbility_Sprint") != NPOS)
+				{
+					AbilitySpec->Ability = static_cast<UGameplayAbility*>(Objects);
+					AbilitySpec->Level = 1;
+					AbilitySpec->InputID = 0;
+
+					Player::GiveAbility(Globals::AthenaPawn->AbilitySystemComponent, AbilitySpec, nullptr);
+				}
+			}
+		}
+
 		if (Utils::ToLower(Parameters) == "dumpobjects")
 		{
 			std::ofstream txt("Objects_Dump.txt");

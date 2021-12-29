@@ -77,10 +77,10 @@ namespace Player
 		while (true)
 		{
 			//quite possibly the most dumbass shit ive ever had to put in an if
-			if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState(0x57) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
+			/*if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState(0x57) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
 			else
-				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
+				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;*/
 
 			if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving())
 			{
