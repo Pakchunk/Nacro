@@ -219,23 +219,33 @@ namespace Cheats
 			return true;
 		}
 
-		if (Utils::ToLower(Parameters) == "tryability")
+		if (Utils::ToLower(Parameters) == "jill")
 		{
-			FGameplayAbilitySpec* AbilitySpec = new FGameplayAbilitySpec();
+			if (!Globals::JillMesh)
+				Globals::JillMesh = UObject::FindObject<USkeletalMesh>("SkeletalMesh F_SML_Starter_Epic.F_SML_Starter_Epic");
 
-			for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+			if (Globals::JillMesh)
 			{
-				auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
-
-				if (Objects->GetFullName().find("Default__FortGameplayAbility_Sprint") != NPOS)
+				if (!Globals::JillMode)
 				{
-					AbilitySpec->Ability = static_cast<UGameplayAbility*>(Objects);
-					AbilitySpec->Level = 1;
-					AbilitySpec->InputID = 0;
-
-					Player::GiveAbility(Globals::AthenaPawn->AbilitySystemComponent, AbilitySpec, nullptr);
+					Player::ChooseParts(nullptr, nullptr);
+					Globals::AthenaPawn->Mesh->SetSkeletalMesh(Globals::JillMesh, true);
 				}
+				else
+				{
+					Globals::AthenaPawn->Mesh->SetSkeletalMesh(nullptr, true);
+					Player::ChooseParts(Globals::charPartHead, Globals::charPartBody);
+				}
+
+				Globals::JillMode = !Globals::JillMode;
+				Player::ShowParts();
 			}
+			else
+			{
+				Globals::AthenaGameMode->Say(L"Jill mesh not found!");
+			}
+
+			return true;
 		}
 
 		if (Utils::ToLower(Parameters) == "dumpobjects")

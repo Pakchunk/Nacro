@@ -25,7 +25,7 @@ namespace Player
 		}
 	}
 
-	static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpec * (*)(UAbilitySystemComponent*, FGameplayAbilitySpec*, FGameplayAbilitySpec*)>(uintptr_t(GetModuleHandle(0) + Offsets::GiveAbilityOffset));
+	static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpecHandle(*)(UAbilitySystemComponent* ThisPtr, FGameplayAbilitySpec* InSpec)>(uintptr_t(GetModuleHandle(0)) + Offsets::GiveAbilityOffset);
 	//i only have the most basic understanding of what the fuck this means so im probably doing well here
 
 	//Spawn a new Athena pawn and set our pawn to it

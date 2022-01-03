@@ -13,9 +13,13 @@ namespace Globals
 	bool bIsInGame;
 	bool bHasJumped;
 	bool bIsOnceOrMore;
+
+	//cheatscripts
 	bool bInstantReload = false;
 	bool bInfiniteJump = false;
+	bool JillMode;
 
+	//global shit
 	UFortEngine* GEngine;
 	UGameplayStatics* GameplayStatics;
 	UFortLocalPlayer* LocalPlayer;
@@ -25,17 +29,24 @@ namespace Globals
 	AFortPlayerPawnAthena* AthenaPawn;
 	AFortPlayerStateAthena* AthenaPlayerState;
 
+	//weapons
 	UFortWeaponItemDefinition* Pickaxe;
 	UFortWeaponItemDefinition* PickupItem;
 
+	//grabbing characterparts
 	UCustomCharacterPart* charPartHead;
 	UCustomCharacterPart* charPartBody;
 
+	//death animation
 	UAnimMontage* DeathMontage;
 	AActor* VictoryDrone;
 
+	//cheatscript instantreload
 	UAnimMontage* WeaponReloadMontage;
 	UAnimMontage* ReloadAnimation;
+
+	//cheatscript jill
+	USkeletalMesh* JillMesh;
 
 	std::map<std::string, UFortWeaponItemDefinition*> ItemsMap;
 
