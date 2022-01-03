@@ -86,6 +86,10 @@ namespace Hooks
 				Globals::AthenaController->Possess(Globals::AthenaPawn);
 
 				Player::Equip(Globals::Pickaxe, FGuid{ 0,0,0,0 });
+
+				if (Globals::JillMode)
+					Globals::AthenaPawn->Mesh->SetSkeletalMesh(Globals::JillMesh, true);
+
 				Player::ShowParts();
 			}
 		}
