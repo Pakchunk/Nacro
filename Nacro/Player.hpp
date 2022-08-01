@@ -72,60 +72,12 @@ namespace Player
 		}
 	}
 
+	//left here in case we need it, but i doubt it will ever get used again
 	DWORD UpdatePawn(LPVOID lpParam)
 	{
 		while (true)
 		{
-			//quite possibly the most dumbass shit ive ever had to put in an if
-			/*if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState(0x57) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
-				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
-			else
-				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
-
-			if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving())
-			{
-				//We use this variable to avoid jump/glider spam.
-				if (!Globals::bHasJumped)
-				{
-					Globals::bHasJumped = true;
-					if (Globals::AthenaPawn->bIsCrouched)
-					{
-						Globals::AthenaPawn->UnCrouch(true);
-					}
-					else
-					{
-						if (!Globals::bInfiniteJump)
-						{
-							if (!Globals::AthenaPawn->IsJumpProvidingForce())
-							{
-								Globals::AthenaPawn->Jump();
-							}
-						}
-						else
-						{
-							Globals::AthenaPawn->Jump();
-						}
-					}
-				}
-			}
-			else if (GetAsyncKeyState(VK_SPACE) & 0x8000 && !Globals::AthenaController->IsInAircraft() && Globals::AthenaPawn->IsSkydiving() && !Globals::AthenaPawn->IsParachuteForcedOpen())
-			{
-				if (!Globals::bHasJumped)
-				{
-					Globals::bHasJumped = true;
-					if (!Globals::AthenaPawn->IsParachuteOpen())
-						Globals::AthenaPawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 2U); //gliding
-					else
-						Globals::AthenaPawn->CharacterMovement->SetMovementMode(EMovementMode::MOVE_Custom, 3U); //skydiving
-				}
-			}
-			else
-				if (Globals::bHasJumped)
-					Globals::bHasJumped = false;
-
-			//When aiming, the player should use a different movementstyle. Without this, it plays regular running animations, which just looks wrong.
-			if (Globals::AthenaPawn->CurrentWeapon && Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
-				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Walking;*/
+			
 
 			if (Globals::bIsInLobby)
 				break;

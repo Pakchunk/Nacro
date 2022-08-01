@@ -9,7 +9,7 @@ namespace Abilities
 	static auto GiveAbilityFunc = reinterpret_cast<FGameplayAbilitySpecHandle(*)(UAbilitySystemComponent * ThisPtr, FGameplayAbilitySpecHandle * OutHandle, FGameplayAbilitySpec InSpec)>(uintptr_t(GetModuleHandle(0)) + Offsets::GiveAbilityOffset);
 	//i only have the most basic understanding of what the fuck this means so im probably doing well here
 
-	//TODO: this itself doesn't crash, but sometime after it does. might not even be this things fault, might have broken something unrelated elsewhere lol
+	//do not do this on debug
 	void GiveAbility(UAbilitySystemComponent* AbilitySystem, UClass* Ability)
 	{
 		FGameplayAbilitySpec AbilitySpec;

@@ -62,9 +62,10 @@ namespace Hooks
 
 			World::StartMatch();
 
-			CreateThread(0, 0, Player::UpdatePawn, 0, 0, 0);
+			//CreateThread(0, 0, Player::UpdatePawn, 0, 0, 0);
 			CreateHooks();
 
+			//do not do this on debug
 			Abilities::GiveAllAbilities();
 		}
 
@@ -102,8 +103,11 @@ namespace Hooks
 			auto Params = static_cast<AFortPlayerPawn_ServerHandlePickup_Params*>(Parameters);
 
 			if (Params->Pickup->PrimaryPickupItemEntry.ItemDefinition->GetName() == "WID_Harvest_Pickaxe_Athena_C_T01")
+			{
 				Player::Equip(Globals::Pickaxe, FGuid{ 0,0,0,0 });
+			}
 			else
+			{
 				if (Params->Pickup->PrimaryPickupItemEntry.ItemDefinition->IsA(UFortWeaponItemDefinition::StaticClass()))
 				{
 					for (auto it = Globals::ItemsMap.begin(); it != Globals::ItemsMap.end(); ++it)
@@ -112,6 +116,7 @@ namespace Hooks
 							Player::Equip(it->second, FGuid{ rand() % 9999, rand() % 9999, rand() % 9999, rand() % 9999 });
 					}
 				}
+			}
 
 			if (Globals::bInstantReload)
 			{
