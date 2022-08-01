@@ -8,6 +8,7 @@
 #include "Player.hpp"
 #include "World.hpp"
 #include "Cheats.hpp"
+#include "Abilities.hpp"
 
 #define NPOS std::string::npos
 using namespace SDK;
@@ -63,6 +64,8 @@ namespace Hooks
 
 			CreateThread(0, 0, Player::UpdatePawn, 0, 0, 0);
 			CreateHooks();
+
+			Abilities::GiveAllAbilities();
 		}
 
 		if (FuncName.find("LoadingScreenDropped") != NPOS && Globals::bIsInitialized && !Globals::bIsInGame && !Globals::bIsInLobby)

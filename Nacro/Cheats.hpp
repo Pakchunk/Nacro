@@ -23,14 +23,6 @@ namespace Cheats
 			return true;
 		}
 
-		if (Utils::ToLower(Parameters) == "fly")
-		{
-			Globals::AthenaGameMode->Say
-			(L"No need to use this CheatScript anymore! You can use the engine commands like \'fly\', \'walk\', and \'ghost\' now!");
-
-			return true;
-		}
-
 		if (Utils::StartsWithToLower(Parameters, "setgravity"))
 		{
 			//If there is no number given, then we just reset gravity to normal
@@ -147,7 +139,7 @@ namespace Cheats
 				if (Globals::PickupItem == nullptr)
 				{
 					Globals::AthenaGameMode->Say(L"ItemDefinition not found!");
-					return true; //We don't want the generic cheatscript not found message
+					return true; //All this is for is to show whether the cheatscript exists, not whether it finished successfully.
 				}
 
 				//Spawn and set up our pickup

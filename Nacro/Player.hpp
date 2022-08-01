@@ -21,12 +21,12 @@ namespace Player
 					else
 						Globals::charPartBody = static_cast<UCustomCharacterPart*>(Objects);
 				}
+
+				if (Globals::charPartHead && Globals::charPartBody)
+					break;
 			}
 		}
 	}
-
-	static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpecHandle(*)(UAbilitySystemComponent* ThisPtr, FGameplayAbilitySpec* InSpec)>(uintptr_t(GetModuleHandle(0)) + Offsets::GiveAbilityOffset);
-	//i only have the most basic understanding of what the fuck this means so im probably doing well here
 
 	//Spawn a new Athena pawn and set our pawn to it
 	inline void SpawnPlayer()
@@ -77,7 +77,7 @@ namespace Player
 		while (true)
 		{
 			//quite possibly the most dumbass shit ive ever had to put in an if
-			if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState(0x57) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
+			/*if (GetAsyncKeyState(VK_SHIFT) & 0x8000 && GetAsyncKeyState(0x57) & 0x8000 && !Globals::AthenaController->IsInAircraft() && !Globals::AthenaPawn->IsSkydiving() && Globals::AthenaPawn->CurrentWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsReloadingWeapon && !Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Sprinting;
 			else
 				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Running;
@@ -125,7 +125,7 @@ namespace Player
 
 			//When aiming, the player should use a different movementstyle. Without this, it plays regular running animations, which just looks wrong.
 			if (Globals::AthenaPawn->CurrentWeapon && Globals::AthenaPawn->CurrentWeapon->bIsTargeting)
-				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Walking;
+				Globals::AthenaPawn->CurrentMovementStyle = EFortMovementStyle::Walking;*/
 
 			if (Globals::bIsInLobby)
 				break;

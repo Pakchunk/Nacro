@@ -44,6 +44,9 @@
     <ClInclude Include="Memory.hpp">
       <Filter>Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="Abilities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -59,6 +62,9 @@
       <Filter>SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\FN_Engine_functions.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\FN_GameplayAbilities_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
   </ItemGroup>
