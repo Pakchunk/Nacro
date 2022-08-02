@@ -65,8 +65,9 @@ namespace Hooks
 			//CreateThread(0, 0, Player::UpdatePawn, 0, 0, 0);
 			CreateHooks();
 
-			//do not do this on debug
+#ifndef DEBUG
 			Abilities::GiveAllAbilities();
+#endif
 		}
 
 		if (FuncName.find("LoadingScreenDropped") != NPOS && Globals::bIsInitialized && !Globals::bIsInGame && !Globals::bIsInLobby)
