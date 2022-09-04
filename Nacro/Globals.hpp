@@ -4,6 +4,8 @@
 #include "Offsets.hpp"
 #include "Utils.hpp"
 #include "SDK.hpp"
+#include <vector>
+#include <unordered_set>
 using namespace SDK;
 
 namespace Globals
@@ -13,6 +15,7 @@ namespace Globals
 	bool bIsInGame;
 	bool bHasJumped;
 	bool bIsOnceOrMore;
+	bool EnabledChestLooting = true;
 
 	//cheatscripts
 	bool bInstantReload = false;
@@ -49,6 +52,9 @@ namespace Globals
 	USkeletalMesh* JillMesh;
 
 	std::map<std::string, UFortWeaponItemDefinition*> ItemsMap;
+
+	std::vector<UFortItemDefinition*> Weapons;
+	std::vector<UFortItemDefinition*> Consumables;
 
 
 	inline void InitGlobalsFrontend()

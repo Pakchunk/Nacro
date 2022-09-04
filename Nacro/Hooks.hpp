@@ -169,6 +169,38 @@ namespace Hooks
 			Globals::bHasJumped = false;
 		}
 
+		if (FuncName.find("ServerAttemptInteract") != NPOS && Globals::bIsInGame)
+		{
+			//MessageBoxA(nullptr, "ServerAttemptInteract called!!", "Success!", MB_ICONINFORMATION);	
+			//from raider
+			auto Params = (AFortPlayerController_ServerAttemptInteract_Params*)Parameters;
+		    auto ReceivingActor = Params->ReceivingActor;
+			auto Container = (ABuildingContainer*)Params->ReceivingActor;
+
+			if (true)
+			{
+
+			}
+			Container->bAlreadySearched = true;
+			Container->OnRep_bAlreadySearched();
+
+			auto WeaponPickup = static_cast<AFortPickupAthena*>(World::SpawnActor(AFortPickupAthena::StaticClass(), Globals::AthenaPawn->K2_GetActorLocation(), FRotator{ 0,0,0 }));
+			WeaponPickup->K2_SetActorLocation(Container->K2_GetActorLocation(), false, true, new FHitResult);
+			WeaponPickup->TossPickup(Globals::AthenaPawn->K2_GetActorLocation(), nullptr, 1, false);
+			WeaponPickup->PrimaryPickupItemEntry.ItemDefinition = Looting::GetRandomWeapon();
+			WeaponPickup->PrimaryPickupItemEntry.Count = 1;
+			WeaponPickup->OnRep_PrimaryPickupItemEntry();
+
+			auto ConsumablePickup = static_cast<AFortPickupAthena*>(World::SpawnActor(AFortPickupAthena::StaticClass(), Globals::AthenaPawn->K2_GetActorLocation(), FRotator{ 0,0,0 }));
+			ConsumablePickup->K2_SetActorLocation(Container->K2_GetActorLocation(), false, true, new FHitResult);
+			ConsumablePickup->TossPickup(Globals::AthenaPawn->K2_GetActorLocation(), nullptr, 1, false);
+			ConsumablePickup->PrimaryPickupItemEntry.ItemDefinition = Looting::GetRandomConsumable();
+			ConsumablePickup->PrimaryPickupItemEntry.Count = 1;
+			ConsumablePickup->OnRep_PrimaryPickupItemEntry();
+
+			std::cout << Looting::GetRandomConsumable();
+		}
+
 		if (FuncName.find("CheatScript") != NPOS)
 		{
 			if (static_cast<UCheatManager_CheatScript_Params*>(Parameters)->ScriptName.IsValid() && Globals::bIsInGame)
@@ -204,5 +236,8 @@ namespace Hooks
 			MH_CreateHook(reinterpret_cast<LPVOID>(CGAddress), CGHook, reinterpret_cast<LPVOID*>(&OriginalGC));
 			MH_EnableHook(reinterpret_cast<LPVOID>(CGAddress));
 		}
+
+		Looting::Init();
+		std::cout << "Initializing looting!...";
 	}
 }

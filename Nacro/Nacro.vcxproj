@@ -144,7 +144,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
@@ -169,6 +169,7 @@
     <ClInclude Include="Cheats.hpp" />
     <ClInclude Include="Globals.hpp" />
     <ClInclude Include="Hooks.hpp" />
+    <ClInclude Include="Looting.hpp" />
     <ClInclude Include="Memory.hpp" />
     <ClInclude Include="Offsets.hpp" />
     <ClInclude Include="Player.hpp" />

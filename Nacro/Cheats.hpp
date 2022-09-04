@@ -4,6 +4,7 @@
 #include <fstream>
 #include "SDK.hpp"
 #include "Utils.hpp"
+#include "Looting.hpp"
 
 #define NPOS std::string::npos
 
@@ -290,6 +291,22 @@ namespace Cheats
 			}
 			MessageBoxA(nullptr, "Successfully dumped all names to Names_Dump.txt.", "Success!", MB_ICONINFORMATION);
 			txt.close();
+
+			return true;
+		}
+
+		if (Utils::ToLower(Parameters) == "enablelooting")
+		{
+			if (!Globals::EnabledChestLooting)
+			{
+				Globals::EnabledChestLooting = true;
+				Globals::AthenaGameMode->Say(L"Chest Looting Enabled!");
+			}
+			else if (Globals::EnabledChestLooting)
+			{
+				Globals::EnabledChestLooting = false;
+				Globals::AthenaGameMode->Say(L"Chest Looting Disabled!");
+			}
 
 			return true;
 		}
