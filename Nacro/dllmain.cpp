@@ -18,8 +18,6 @@ DWORD MainThread(LPVOID)
 
 	Globals::InitGlobalsFrontend();
 	Hooks::CreateHooks();
-	//Will full remove when we get inventory since it won't be needed then
-	//Utils::PatchAbilities();
 
 	static_cast<AFortGameModeFrontEnd*>(Globals::GEngine->GameViewport->World->AuthorityGameMode)->Say
 	(L"Welcome to Nacro!\nCreated by ozne, Fischsalat, and absoluteSpacehead.");
@@ -31,17 +29,13 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 {
 	switch (dwReason)
 	{
-	case DLL_PROCESS_ATTACH:
-	{
-		Utils::CreateConsoleWindow();
-		CreateThread(0, 0, MainThread, 0, 0, 0);
-		break;
-	}
-	case DLL_PROCESS_DETACH:
-	{
-		FreeLibraryAndExitThread(hModule, 0);
-		break;
-	}
+		case DLL_PROCESS_ATTACH:
+			Utils::CreateConsoleWindow();
+			CreateThread(0, 0, MainThread, 0, 0, 0);
+			break;
+		case DLL_PROCESS_DETACH:
+			FreeLibraryAndExitThread(hModule, 0);
+			break;
 	}
 
 	return TRUE;

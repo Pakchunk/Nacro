@@ -32,7 +32,7 @@ namespace Hooks
 
 		if (FuncName.find("BP_PlayButton") != NPOS)
 		{
-			//Get CharacterParts
+			// Get CharacterParts before heading ingame
 			Player::GrabCharacterParts();
 
 			Globals::GameplayStatics->STATIC_OpenLevel(Globals::GEngine->GameViewport->World, "Athena_Terrain", true, L"");

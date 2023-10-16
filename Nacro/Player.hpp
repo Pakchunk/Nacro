@@ -5,7 +5,7 @@
 
 namespace Player
 {
-	//We call this in frontend to get the characterparts currently on our player. This sets the variables in Globals, so we can apply them ingame.
+	// Grab loaded CharacterParts. This sets the global CharacterPart variables.
 	inline void GrabCharacterParts()
 	{
 		for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
@@ -28,7 +28,7 @@ namespace Player
 		}
 	}
 
-	//Spawn a new Athena pawn and set our pawn to it
+	// Spawn a new Athena pawn. This sets our global pawn.
 	inline void SpawnPlayer()
 	{
 		Globals::AthenaController->CheatManager->Summon(L"PlayerPawn_Athena_C");
@@ -37,27 +37,24 @@ namespace Player
 		Globals::AthenaPawn = static_cast<AFortPlayerPawnAthena*>(outActors[0]);
 	}
 
-	//Set our player's CharacterParts
 	inline void ChooseParts(UCustomCharacterPart* InHead, UCustomCharacterPart* InBody)
 	{
 		Globals::AthenaPawn->ServerChoosePart(EFortCustomPartType::Head, InHead);
 		Globals::AthenaPawn->ServerChoosePart(EFortCustomPartType::Body, InBody);
 	}
 
-	//Show CharacterParts on our player
 	inline void ShowParts()
 	{
 		Globals::AthenaPlayerState->OnRep_CharacterParts();
 	}
 
-	//Sets team index, allowing for markers and health in top left
+	// Required for markers and team health bars.
 	inline void SetTeamIndex(EFortTeam Team)
 	{
 		Globals::AthenaPlayerState->TeamIndex = Team;
 		Globals::AthenaPlayerState->OnRep_TeamIndex();
 	}
 
-	//Equip given item definition
 	inline void Equip(UFortWeaponItemDefinition* Item, FGuid Guid)
 	{
 		Globals::AthenaPawn->EquipWeaponDefinition(Item, Guid);
@@ -72,7 +69,7 @@ namespace Player
 		}
 	}
 
-	//left here in case we need it, but i doubt it will ever get used again
+	// Unused, left here just in case.
 	DWORD UpdatePawn(LPVOID lpParam)
 	{
 		while (true)
