@@ -47,10 +47,9 @@ namespace Globals
 		bIsInLobby = true;
 		bIsOnceOrMore = false;
 
-		uintptr_t ModuleBaseAddr = (uintptr_t)GetModuleHandle(NULL);
-		GEngine = *reinterpret_cast<UFortEngine**>(Utils::Offset<uintptr_t**>(Offsets::GEngineOffset));
-		FName::GNames = *reinterpret_cast<TNameEntryArray**>(Utils::Offset<uintptr_t**>(Offsets::GNamesOffset));
-		UObject::GObjects = reinterpret_cast<FUObjectArray*>(Utils::Offset<uintptr_t*>(Offsets::GUObjectArrayOffset));
+		GEngine = *Utils::Offset<UFortEngine*>(Offsets::GEngineOffset);
+		FName::GNames = *Utils::Offset<TNameEntryArray*>(Offsets::GNamesOffset);
+		UObject::GObjects = Utils::Offset<FUObjectArray>(Offsets::GUObjectArrayOffset);
 
 		LocalPlayer = reinterpret_cast<UFortLocalPlayer*>(GEngine->GameInstance->LocalPlayers[0]);
 		GameplayStatics = reinterpret_cast<UGameplayStatics*>(UGameplayStatics::StaticClass());
