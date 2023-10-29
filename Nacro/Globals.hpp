@@ -24,6 +24,7 @@ namespace Globals
 
 	UFortEngine* GEngine;
 	UGameplayStatics* GameplayStatics;
+	int* GHandle;
 	UFortLocalPlayer* LocalPlayer;
 	AFortGameModeAthena* AthenaGameMode;
 	AFortGameStateAthena* AthenaGameState;
@@ -50,6 +51,8 @@ namespace Globals
 		GEngine = *Utils::Offset<UFortEngine*>(Offsets::GEngineOffset);
 		FName::GNames = *Utils::Offset<TNameEntryArray*>(Offsets::GNamesOffset);
 		UObject::GObjects = Utils::Offset<FUObjectArray>(Offsets::GUObjectArrayOffset);
+
+		GHandle = Utils::Offset<int>(Offsets::GHandleOffset);
 
 		LocalPlayer = reinterpret_cast<UFortLocalPlayer*>(GEngine->GameInstance->LocalPlayers[0]);
 		GameplayStatics = reinterpret_cast<UGameplayStatics*>(UGameplayStatics::StaticClass());

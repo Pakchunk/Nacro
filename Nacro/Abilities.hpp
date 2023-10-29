@@ -10,7 +10,7 @@ namespace Abilities
 	{
 		FGameplayAbilitySpec AbilitySpec;
 		AbilitySpec.Ability = static_cast<UGameplayAbility*>(Ability->CreateDefaultObject());
-		AbilitySpec.Handle.Handle = rand();
+		AbilitySpec.Handle.Handle = (*Globals::GHandle)++;
 		AbilitySpec.InputID = -1;
 		AbilitySpec.Level = -1;
 		AbilitySpec.SourceObject = nullptr;

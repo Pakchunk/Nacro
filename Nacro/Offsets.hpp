@@ -16,4 +16,5 @@ namespace Offsets
 	uintptr_t PlainNameStringOffset 	=	0x12F0FC0;		// FNameEntry::GetPlainNameString()
 	uintptr_t CGInternalOffset			=	0x137D380;		// CollectGarbageInternal()
 	uintptr_t GiveAbilityOffset			=	0x3D50A60;		// GiveAbility()
+	uintptr_t GHandleOffset				=	0x50512BC;		// Global Handle
 };
