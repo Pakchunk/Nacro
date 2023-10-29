@@ -5,8 +5,15 @@ Our Discord server: https://discord.gg/fcusXHDVdb
 
 ---
 
+# Known issues
+- Abilities crash when GC shows up
+
+---
+
 # Open source
 Nacro was created to be open sourced, for learners, contributors and those just interested. We are also open to any constructive criticism, feel free to make a pull request if you notice sloppy code or if you have any additions!
+
+Active development of Nacro has been stopped for a long time. Very few updates from the original developers will appear, but users are always welcome to make a pull request.
 
 ---
 
