@@ -16,7 +16,7 @@ using namespace SDK;
 typedef PVOID(__fastcall* fOriginalPE)(void*, void*, void*);
 static fOriginalPE OriginalPE = *Utils::Offset<fOriginalPE>(Offsets::ProcessEventOffset);
 
-typedef void(__fastcall* CollectGarbage_Internal)(int32_t KeepFlags, bool bPerformFullPurge);
+typedef PVOID(__fastcall* CollectGarbage_Internal)(int32_t KeepFlags, bool bPerformFullPurge);
 static CollectGarbage_Internal OriginalGC = *Utils::Offset<CollectGarbage_Internal>(Offsets::CGInternalOffset);
 
 namespace Hooks
