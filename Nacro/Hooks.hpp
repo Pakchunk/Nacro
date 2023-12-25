@@ -182,7 +182,7 @@ namespace Hooks
 
 	void* CGHook(int32_t KeepFlags, bool bPerformFullPurge)
 	{
-		return NULL;
+		return OriginalGC(KeepFlags, bPerformFullPurge);
 	}
 
 	inline void CreateHooks()

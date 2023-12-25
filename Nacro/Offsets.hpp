@@ -14,7 +14,7 @@ namespace Offsets
 	uintptr_t SLO_IOffset 				=	0x13E0180;		// StaticLoadObject_Internal()
 	uintptr_t SpawnActorOffset 			=	0x137DBC0;		// UWorld::SpawnActor()
 	uintptr_t PlainNameStringOffset 	=	0x12F0FC0;		// FNameEntry::GetPlainNameString()
-	uintptr_t CGInternalOffset			=	0x137D380;		// CollectGarbageInternal()
+	uintptr_t CGInternalOffset			=	0x137DBC0;		// CollectGarbageInternal()
 	uintptr_t GiveAbilityOffset			=	0x3D50A60;		// GiveAbility()
 	uintptr_t GHandleOffset				=	0x50512BC;		// Global Handle
 };
