@@ -9,7 +9,7 @@ namespace Abilities
 	void GiveAbility(UAbilitySystemComponent* AbilitySystem, UClass* Ability)
 	{
 		FGameplayAbilitySpec AbilitySpec;
-		AbilitySpec.Ability = static_cast<UGameplayAbility*>(Ability->CreateDefaultObject());
+		AbilitySpec.Ability = static_cast<UGameplayAbility*>(Ability->DefaultObject);
 		AbilitySpec.Handle.Handle = (*Globals::GHandle)++;
 		AbilitySpec.InputID = -1;
 		AbilitySpec.Level = -1;

@@ -28,8 +28,8 @@ namespace World
 		Transform.Scale3D = FVector{ 1,1,1 };
 		Transform.Translation = Location;
 
-		auto Actor = Globals::GameplayStatics->STATIC_BeginSpawningActorFromClass(Globals::GEngine->GameViewport->World, ActorClass, Transform, false, nullptr);
-		Globals::GameplayStatics->STATIC_FinishSpawningActor(Actor, Transform);
+		auto Actor = UGameplayStatics::BeginSpawningActorFromClass(Globals::GEngine->GameViewport->World, ActorClass, Transform, false, nullptr);
+		UGameplayStatics::FinishSpawningActor(Actor, Transform);
 		return Actor;
 	}
 
@@ -40,9 +40,9 @@ namespace World
 		{
 			Globals::Pickaxe = UObject::FindObject<UFortWeaponItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
 
-			for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+			for (int i = 0; i < UObject::GObjects->Num(); ++i)
 			{
-				auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+				auto Objects = UObject::GObjects->GetByIndex(i);
 
 				if (Objects != nullptr)
 				{

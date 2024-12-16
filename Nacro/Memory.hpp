@@ -41,4 +41,12 @@ public:
 
 		return result;
 	}
+	static void SwapVTableEntry(void** Table, int Idx, void* NewFunction)
+	{
+		DWORD dwProtection, dwTemp;
+
+		VirtualProtect(&Table[Idx], 8, PAGE_EXECUTE_READWRITE, &dwProtection);
+		Table[Idx] = NewFunction;
+		VirtualProtect(&Table[Idx], 8, dwProtection, &dwTemp);
+	}
 };

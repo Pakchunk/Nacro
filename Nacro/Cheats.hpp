@@ -14,7 +14,14 @@ namespace Cheats
 		if (Utils::ToLower(Parameters) == "help")
 		{
 			Globals::AthenaGameMode->Say
-			(L"World:\ncheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\nPlayer:\ncheatscript equip <Any WID>: Equips the requested weapon.\n\nFun:\ncheatscript jill: Toggles your playermodel to Jill.\ncheatscript win: Plays win effects.\ncheatscript setgravity <float>: Sets the gravity scale to the requested float value.\ncheatscript toggleinstantreload: Toggles instant reload.\ncheatscript dumpwids: Dumps all item definitions to \\FortniteGame\\Binaries\\Win64\\WIDs_Dump.txt.\n\nDevelopment:\ncheatscript dumpobjects: Dumps all GObjects into \\FortniteGame\\Binaries\\Win64\\Objects_Dump.txt.\ncheatscript dumpnames: Dumps all GNames into \\FortniteGame\\Binaries\\Win64\\Names_Dump.txt.");
+			(	L"World:\n"
+				"cheatscript pickup <Any WID>: Spawns the requested weapon at your location as a pickup.\n\n"
+				"Player:\n"
+				"cheatscript equip <Any WID>: Equips the requested weapon.\n\n"
+				"Fun:\ncheatscript jill: Toggles your playermodel to Jill.\n"
+				"cheatscript win: Plays win effects.\n"
+				"cheatscript setgravity <float>: Sets the gravity scale to the requested float value.\n"
+				"cheatscript toggleinstantreload: Toggles instant reload.");
 
 			// We use this return value in Hooks.hpp to see if we put in a valid cheatscript (and if not, tell the user)
 			return true;
@@ -101,9 +108,9 @@ namespace Cheats
 
 				if (ShouldCheck)
 				{
-					for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+					for (int i = 0; i < UObject::GObjects->Num(); ++i)
 					{
-						auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+						auto Objects = UObject::GObjects->GetByIndex(i);
 
 						if (Objects != nullptr)
 						{
@@ -132,8 +139,8 @@ namespace Cheats
 
 				// Spawn and set up our pickup
 				auto Pickup = static_cast<AFortPickupAthena*>(World::SpawnActor(AFortPickupAthena::StaticClass(), Globals::AthenaPawn->K2_GetActorLocation(), FRotator{ 0,0,0 }));
-				Pickup->K2_SetActorLocation(Globals::AthenaPawn->K2_GetActorLocation(), false, true, new FHitResult);
-				Pickup->TossPickup(Globals::AthenaPawn->K2_GetActorLocation(), nullptr, 1, false);
+				Pickup->K2_SetActorLocation(Globals::AthenaPawn->K2_GetActorLocation(), false, new FHitResult(), true);
+				Pickup->TossPickup(Globals::AthenaPawn->K2_GetActorLocation(), nullptr, 1);
 				Pickup->PrimaryPickupItemEntry.ItemDefinition = Globals::PickupItem;
 				Pickup->PrimaryPickupItemEntry.Count = 1;
 				Pickup->OnRep_PrimaryPickupItemEntry();
@@ -166,9 +173,9 @@ namespace Cheats
 
 				if (ShouldCheck)
 				{
-					for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+					for (int i = 0; i < UObject::GObjects->Num(); ++i)
 					{
-						auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+						auto Objects = UObject::GObjects->GetByIndex(i);
 
 						if (Objects != nullptr)
 						{
@@ -200,7 +207,7 @@ namespace Cheats
 
 			if (Globals::JillMesh)
 			{
-				if (!Globals::JillMode)
+				if (!Globals::bJillMode)
 				{
 					Player::ChooseParts(nullptr, nullptr);
 					Globals::AthenaPawn->Mesh->SetSkeletalMesh(Globals::JillMesh, true);
@@ -211,73 +218,13 @@ namespace Cheats
 					Player::ChooseParts(Globals::charPartHead, Globals::charPartBody);
 				}
 
-				Globals::JillMode = !Globals::JillMode;
+				Globals::bJillMode = !Globals::bJillMode;
 				Player::ShowParts();
 			}
 			else
 			{
 				Globals::AthenaGameMode->Say(L"Jill mesh not found!");
 			}
-
-			return true;
-		}
-
-		if (Utils::ToLower(Parameters) == "dumpobjects")
-		{
-			std::ofstream txt("Objects_Dump.txt");
-
-			for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
-			{
-				auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
-
-				if (Objects != nullptr)
-					txt << Objects->GetFullName() << "\n";
-			}
-
-			MessageBoxA(nullptr, "Successfully dumped all objects to Objects_Dump.txt.", "Success!", MB_ICONINFORMATION);
-			txt.close();
-
-			return true;
-		}
-
-		if (Utils::ToLower(Parameters) == "dumpwids")
-		{
-			std::ofstream txt("WIDs_Dump.txt");
-
-			for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
-			{
-				auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
-
-				if (Objects != nullptr)
-				{
-					if (Objects->GetFullName().find("FortWeaponRangedItemDefinition ") != NPOS || Objects->GetFullName().find("FortWeaponMeleeItemDefinition ") != NPOS || Objects->GetFullName().find("FortBuildingItemDefinition ") != NPOS)
-						if (Objects->GetFullName().find("Default__FortBuildingItemDefinition") != NPOS || Objects->GetFullName().find("Default__FortWeaponMeleeItemDefinition") != NPOS || Objects->GetFullName().find("Default__FortWeaponRangedItemDefinition") != NPOS)
-							continue;
-						else
-							txt << Objects->GetName() << "\n";
-				}
-			}
-
-			MessageBoxA(nullptr, "Successfully dumped all Weapon IDs to WIDs_Dump.txt.", "Success!", MB_ICONINFORMATION);
-			txt.close();
-
-			return true;
-		}
-
-		if (Utils::ToLower(Parameters) == "dumpnames")
-		{
-			std::ofstream txt("Names_Dump.txt");
-
-			for (int i = 0; i < FName::GNames->Num(); ++i)
-			{
-				auto currentName = (*FName::GNames)[i];
-
-				if (currentName != nullptr)
-					txt << currentName->GetAnsiName() << "\n";
-			}
-
-			MessageBoxA(nullptr, "Successfully dumped all names to Names_Dump.txt.", "Success!", MB_ICONINFORMATION);
-			txt.close();
 
 			return true;
 		}

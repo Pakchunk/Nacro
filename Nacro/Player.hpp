@@ -8,9 +8,9 @@ namespace Player
 	// Grab loaded CharacterParts. This sets the global CharacterPart variables.
 	inline void GrabCharacterParts()
 	{
-		for (int i = 0; i < UObject::GetGlobalObjects().Num(); ++i)
+		for (int i = 0; i < UObject::GObjects->Num(); ++i)
 		{
-			auto Objects = UObject::GetGlobalObjects().GetByIndex(i);
+			auto Objects = UObject::GObjects->GetByIndex(i);
 
 			if (Objects != nullptr)
 			{
@@ -33,7 +33,7 @@ namespace Player
 	{
 		Globals::AthenaController->CheatManager->Summon(L"PlayerPawn_Athena_C");
 		SDK::TArray<AActor*> outActors;
-		Globals::GameplayStatics->STATIC_GetAllActorsOfClass(Globals::GEngine->GameViewport->World, SDK::APlayerPawn_Athena_C::StaticClass(), &outActors);
+		UGameplayStatics::GetAllActorsOfClass(Globals::GEngine->GameViewport->World, SDK::APlayerPawn_Athena_C::StaticClass(), &outActors);
 		Globals::AthenaPawn = static_cast<AFortPlayerPawnAthena*>(outActors[0]);
 	}
 
@@ -67,21 +67,5 @@ namespace Player
 			Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
 			Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
 		}
-	}
-
-	// Unused, left here just in case.
-	DWORD UpdatePawn(LPVOID lpParam)
-	{
-		while (true)
-		{
-			
-
-			if (Globals::bIsInLobby)
-				break;
-
-			Sleep(1000 / 30);
-		}
-
-		ExitThread(0);
 	}
 };

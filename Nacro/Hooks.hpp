@@ -3,8 +3,9 @@
 #include "MinHook/MinHook.h"
 #pragma comment(lib, "MinHook/libMinHook.x64.lib")
 
-
 #include "SDK.hpp"
+#include "SDK/FortniteGame_parameters.hpp"
+#include "Offsets.hpp"
 #include "Player.hpp"
 #include "World.hpp"
 #include "Cheats.hpp"
@@ -13,33 +14,150 @@
 #define NPOS std::string::npos
 using namespace SDK;
 
-typedef PVOID(__fastcall* fOriginalPE)(void*, void*, void*);
-static fOriginalPE OriginalPE = *Utils::Offset<fOriginalPE>(Offsets::ProcessEventOffset);
-
-typedef PVOID(__fastcall* CollectGarbage_Internal)(int32_t KeepFlags, bool bPerformFullPurge);
-static CollectGarbage_Internal OriginalGC = *Utils::Offset<CollectGarbage_Internal>(Offsets::CGInternalOffset);
-
 namespace Hooks
 {
-	void CreateHooks();
-	void* PEHook(UObject* Object, SDK::UFunction* Function, void* Parameters);
-	void* CGHook(int32_t KeepFlags, bool bPerformFullPurge);
-
-	void* PEHook(UObject* Object, SDK::UFunction* Function, void* Parameters)
+	void* CheatScriptHook(UCheatManager* thisref, FString ScriptName)
 	{
-		std::string FullFuncName = Function->GetFullName();
-		std::string FuncName = Function->GetName();
-
-		if (FuncName.find("BP_PlayButton") != NPOS)
+		if (ScriptName.IsValid() && Globals::bIsInGame)
 		{
-			// Get CharacterParts before heading ingame
-			Player::GrabCharacterParts();
-
-			Globals::GameplayStatics->STATIC_OpenLevel(Globals::GEngine->GameViewport->World, "Athena_Terrain", true, L"");
-			Globals::bIsInLobby = false;
+			if (!Cheats::HandleCheats(ScriptName.ToString()))
+				Globals::AthenaGameMode->Say
+				(L"CheatScript not recognized, please use \'cheatscript help\' for a list of available CheatScript commands.");
 		}
 
-		if (FuncName.find("ReadyToStartMatch") != NPOS && !Globals::bIsInitialized && !Globals::bIsInLobby)
+		return NULL;
+	}
+
+	void WalkHook(UObject* Context, FFrame& TheStack, void* Result)
+	{
+		if (Globals::bIsInGame)
+		{
+			Globals::AthenaPawn->SetActorEnableCollision(true);
+			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Walking;
+		}
+	}
+
+	void FlyHook(UObject* Context, FFrame& TheStack, void* Result)
+	{
+		if (Globals::bIsInGame)
+		{
+			Globals::AthenaPawn->SetActorEnableCollision(true);
+			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
+		}
+	}
+
+	void GhostHook(UObject* Context, FFrame& TheStack, void* Result)
+	{
+		if (Globals::bIsInGame)
+		{
+			Globals::AthenaPawn->SetActorEnableCollision(false);
+			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
+		}
+	}
+
+	void ServerReturnToMainMenuHook(AFortPlayerControllerAthena* thisref)
+	{
+		if (Globals::bIsInGame)
+		{
+			Globals::bIsInLobby = true;
+			Globals::bIsInitialized = false;
+			Globals::bIsInGame = false;
+			Globals::bInstantReload = false;
+			Globals::bJillMode = false;
+		}
+
+		reinterpret_cast<AFortPlayerController*>(thisref)->ServerReturnToMainMenu();
+	}
+
+	void (*ServerHandlePickupOriginal)(AFortPlayerPawn* thisref, AFortPickup* Pickup, float InFlyTime, FVector InStartDirection, bool bPlayPickupSound);
+
+	void ServerHandlePickupHook(AFortPlayerPawn* thisref, AFortPickup* Pickup, float InFlyTime, FVector InStartDirection, bool bPlayPickupSound)
+	{
+		if (Pickup->PrimaryPickupItemEntry.ItemDefinition->GetName() == "WID_Harvest_Pickaxe_Athena_C_T01")
+		{
+			Player::Equip(Globals::Pickaxe, FGuid{ 0,0,0,0 });
+		}
+		else
+		{
+			if (Pickup->PrimaryPickupItemEntry.ItemDefinition->IsA(UFortWeaponItemDefinition::StaticClass()))
+			{
+				for (auto it = Globals::ItemsMap.begin(); it != Globals::ItemsMap.end(); ++it)
+				{
+					if (it->first == Pickup->PrimaryPickupItemEntry.ItemDefinition->GetName())
+						Player::Equip(it->second, FGuid{ rand() % 9999, rand() % 9999, rand() % 9999, rand() % 9999 });
+				}
+			}
+		}
+
+		if (Globals::bInstantReload)
+		{
+			Globals::WeaponReloadMontage = Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage;
+			Globals::ReloadAnimation = Globals::AthenaPawn->CurrentWeapon->ReloadAnimation;
+
+			Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
+			Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
+		}
+
+		ServerHandlePickupOriginal(thisref, Pickup, InFlyTime, InStartDirection, bPlayPickupSound);
+	}
+
+	void OnServerAttemptAircraftJumpAircraftExitedDropZone()
+	{
+		if (Globals::AthenaController->IsInAircraft())
+		{
+			Player::SpawnPlayer();
+			Globals::AthenaPawn->K2_SetActorRotation(FRotator{ 0,Globals::AthenaPawn->K2_GetActorRotation().Yaw,0 }, false);
+			Globals::AthenaController->Possess(Globals::AthenaPawn);
+
+			Player::Equip(Globals::Pickaxe, FGuid{ 0,0,0,0 });
+
+			if (Globals::bJillMode)
+				Globals::AthenaPawn->Mesh->SetSkeletalMesh(Globals::JillMesh, true);
+
+			Player::ShowParts();
+		}
+	}
+
+	void (*ServerAttemptAircraftJumpOriginal)(AFortPlayerControllerAthena* thisref, FRotator ClientRotation);
+	
+	void ServerAttemptAircraftJumpHook(AFortPlayerControllerAthena* thisref, FRotator ClientRotation)
+	{
+		OnServerAttemptAircraftJumpAircraftExitedDropZone();
+		ServerAttemptAircraftJumpOriginal(thisref, ClientRotation);
+	}
+
+	void (*OnAircraftExitedDropZoneOriginal)(AFortGameModeAthena* thisref);
+
+	void OnAircraftExitedDropZoneHook(AFortGameModeAthena* thisref)
+	{
+		OnServerAttemptAircraftJumpAircraftExitedDropZone();
+		OnAircraftExitedDropZoneOriginal(thisref);
+	}
+
+	void (*ServerLoadingScreenDroppedOriginal)(AFortPlayerController* thisref);
+
+	void ServerLoadingScreenDroppedHook(AFortPlayerController* thisref)
+	{
+		if (Globals::bIsInitialized && !Globals::bIsInGame && !Globals::bIsInLobby)
+		{
+			Globals::bIsInGame = true;
+			Globals::AthenaGameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
+
+			Globals::AthenaController->bHasClientFinishedLoading = true;
+			Globals::AthenaController->ServerSetClientHasFinishedLoading(true);
+
+			Globals::AthenaController->bHasServerFinishedLoading = true;
+			Globals::AthenaController->OnRep_bHasServerFinishedLoading();
+		}
+
+		ServerLoadingScreenDroppedOriginal(thisref);
+	}
+
+	void (*ReadyToStartMatchOriginal)(AGameMode* thisref);
+
+	void ReadyToStartMatchHook(AGameMode* thisref)
+	{
+		if (!Globals::bIsInitialized && !Globals::bIsInLobby)
 		{
 			Globals::InitGlobalsAthena();
 
@@ -61,128 +179,31 @@ namespace Hooks
 			static_cast<UFortCheatManager*>(Globals::AthenaController->CheatManager)->ToggleInfiniteAmmo();
 
 			World::StartMatch();
-
-			//CreateThread(0, 0, Player::UpdatePawn, 0, 0, 0);
+			
 			CreateHooks();
 
-			Abilities::GiveAllAbilities();
+			Abilities::GiveAllAbilities();			
 		}
 
-		if (FuncName.find("LoadingScreenDropped") != NPOS && Globals::bIsInitialized && !Globals::bIsInGame && !Globals::bIsInLobby)
-		{
-			Globals::bIsInGame = true;
-			Globals::AthenaGameState->FortTimeOfDayManager->TimeOfDay = rand() % 25;
-
-			Globals::AthenaController->bHasClientFinishedLoading = true;
-			Globals::AthenaController->ServerSetClientHasFinishedLoading(true);
-
-			Globals::AthenaController->bHasServerFinishedLoading = true;
-			Globals::AthenaController->OnRep_bHasServerFinishedLoading();
-		}
-
-		if (FuncName.find("AttemptAircraftJump") != NPOS && Globals::bIsInGame || FuncName.find("AircraftExitedDropZone") != NPOS && Globals::bIsInGame)
-		{
-			if (Globals::AthenaController->IsInAircraft())
-			{
-				Player::SpawnPlayer();
-				Globals::AthenaPawn->K2_SetActorRotation(FRotator{ 0,Globals::AthenaPawn->K2_GetActorRotation().Yaw,0 }, false);
-				Globals::AthenaController->Possess(Globals::AthenaPawn);
-
-				Player::Equip(Globals::Pickaxe, FGuid{ 0,0,0,0 });
-
-				if (Globals::JillMode)
-					Globals::AthenaPawn->Mesh->SetSkeletalMesh(Globals::JillMesh, true);
-
-				Player::ShowParts();
-			}
-		}
-
-		if (FuncName.find("ServerHandlePickup") != NPOS && Globals::bIsInGame)
-		{
-			auto Params = static_cast<AFortPlayerPawn_ServerHandlePickup_Params*>(Parameters);
-
-			if (Params->Pickup->PrimaryPickupItemEntry.ItemDefinition->GetName() == "WID_Harvest_Pickaxe_Athena_C_T01")
-			{
-				Player::Equip(Globals::Pickaxe, FGuid{ 0,0,0,0 });
-			}
-			else
-			{
-				if (Params->Pickup->PrimaryPickupItemEntry.ItemDefinition->IsA(UFortWeaponItemDefinition::StaticClass()))
-				{
-					for (auto it = Globals::ItemsMap.begin(); it != Globals::ItemsMap.end(); ++it)
-					{
-						if (it->first == Params->Pickup->PrimaryPickupItemEntry.ItemDefinition->GetName())
-							Player::Equip(it->second, FGuid{ rand() % 9999, rand() % 9999, rand() % 9999, rand() % 9999 });
-					}
-				}
-			}
-
-			if (Globals::bInstantReload)
-			{
-				Globals::WeaponReloadMontage = Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage;
-				Globals::ReloadAnimation = Globals::AthenaPawn->CurrentWeapon->ReloadAnimation;
-
-				Globals::AthenaPawn->CurrentWeapon->WeaponReloadMontage = nullptr;
-				Globals::AthenaPawn->CurrentWeapon->ReloadAnimation = nullptr;
-			}
-		}
-
-		if (FuncName.find("ClientOnPawnDied") != NPOS && Globals::bIsInGame)
-		{
-			Globals::AthenaPawn->PlayAnimMontage(Globals::DeathMontage, 0.7, "");
-			Globals::VictoryDrone = World::SpawnActor(ABP_VictoryDrone_C::StaticClass(), Globals::AthenaPawn->K2_GetActorLocation(), FRotator{ 0,0,0 });
-		}
-
-		if (FullFuncName.find("Function BP_VictoryDrone.BP_VictoryDrone_C.OnSpawnOutAnimEnded") != NPOS && Globals::bIsInGame)
-		{
-			Globals::VictoryDrone->K2_DestroyActor();
-			Globals::AthenaPawn->K2_DestroyActor();
-		}
-
-		if (FullFuncName.find("Function Engine.CheatManager.Walk") != NPOS && Globals::bIsInGame)
-		{
-			Globals::AthenaPawn->SetActorEnableCollision(true);
-			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Walking;
-		}
-
-		if (FullFuncName.find("Function Engine.CheatManager.Fly") != NPOS && Globals::bIsInGame)
-		{
-			Globals::AthenaPawn->SetActorEnableCollision(true);
-			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
-		}
-
-		if (FullFuncName.find("Function Engine.CheatManager.Ghost") != NPOS && Globals::bIsInGame)
-		{
-			Globals::AthenaPawn->SetActorEnableCollision(false);
-			Globals::AthenaPawn->CharacterMovement->MovementMode = EMovementMode::MOVE_Flying;
-		}
-
-		if (FuncName.find("ServerReturnToMainMenu") != NPOS && Globals::bIsInGame)
-		{
-			MH_DisableHook(CGHook);
-			Globals::bIsInLobby = true;
-			Globals::bIsInitialized = false;
-			Globals::bIsInGame = false;
-			Globals::bInstantReload = false;
-			Globals::bHasJumped = false;
-		}
-
-		if (FuncName.find("CheatScript") != NPOS)
-		{
-			if (static_cast<UCheatManager_CheatScript_Params*>(Parameters)->ScriptName.IsValid() && Globals::bIsInGame)
-			{
-				if (!Cheats::HandleCheats(static_cast<UCheatManager_CheatScript_Params*>(Parameters)->ScriptName.ToString()))
-					Globals::AthenaGameMode->Say
-					(L"CheatScript not recognized, please use \'cheatscript help\' for a list of available CheatScript commands.");
-			}
-		}
-
-		return OriginalPE(Object, Function, Parameters);
+		ReadyToStartMatchOriginal(thisref);
 	}
 
-	void* CGHook(int32_t KeepFlags, bool bPerformFullPurge)
+	void OnPlayButtonPressedHook()
 	{
-		return OriginalGC(KeepFlags, bPerformFullPurge);
+		// Get CharacterParts before heading ingame
+		Player::GrabCharacterParts();
+
+		UGameplayStatics::OpenLevel(Globals::GEngine->GameViewport->World, UKismetStringLibrary::Conv_StringToName(L"Athena_Terrain"), true, L"");
+		Globals::bIsInLobby = false;
+	}
+
+	// blehh im lazy
+	inline void CreateHook(uintptr_t Offset, void* Detour, void* Original)
+	{
+		LPVOID asLPVOID = reinterpret_cast<LPVOID>(Utils::Offset<uintptr_t>(Offset));
+
+		MH_CreateHook(asLPVOID, Detour, reinterpret_cast<LPVOID*>(&Original));
+		MH_EnableHook(asLPVOID);
 	}
 
 	inline void CreateHooks()
@@ -191,16 +212,34 @@ namespace Hooks
 		{
 			MH_Initialize();
 
-			uintptr_t* PEAddress = Utils::Offset<uintptr_t>(Offsets::ProcessEventOffset);
-			MH_CreateHook(reinterpret_cast<LPVOID>(PEAddress), PEHook, reinterpret_cast<LPVOID*>(&OriginalPE));
-			MH_EnableHook(reinterpret_cast<LPVOID>(PEAddress));
-		}
+			CreateHook(Offsets::CheatScriptOffset, CheatScriptHook, NULL);
 
-		if (Globals::bIsInitialized && !Globals::bIsInLobby)
-		{
-			uintptr_t* CGAddress = Utils::Offset<uintptr_t>(Offsets::CGInternalOffset);
-			MH_CreateHook(reinterpret_cast<LPVOID>(CGAddress), CGHook, reinterpret_cast<LPVOID*>(&OriginalGC));
-			MH_EnableHook(reinterpret_cast<LPVOID>(CGAddress));
+			UClass* CheatManagerClass = UCheatManager::StaticClass();
+			CheatManagerClass->GetFunction("CheatManager", "Ghost")->ExecFunction = GhostHook;
+			CheatManagerClass->GetFunction("CheatManager", "Fly")->ExecFunction = FlyHook;
+			CheatManagerClass->GetFunction("CheatManager", "Walk")->ExecFunction = WalkHook;
+
+			void** FortPlayerControllerAthenaVTable = (void**)AFortPlayerControllerAthena::GetDefaultObj()->VTable;
+			Memory::SwapVTableEntry(FortPlayerControllerAthenaVTable, 0x22E, ServerReturnToMainMenuHook);
+			ServerAttemptAircraftJumpOriginal = decltype(ServerAttemptAircraftJumpOriginal)(FortPlayerControllerAthenaVTable[0x30E]);
+			Memory::SwapVTableEntry(FortPlayerControllerAthenaVTable, 0x30E, ServerAttemptAircraftJumpHook);
+
+			void** FortPlayerPawnVTable = (void**)AFortPlayerPawn::GetDefaultObj()->VTable;
+			ServerHandlePickupOriginal = decltype(ServerHandlePickupOriginal)(FortPlayerPawnVTable[0x179]);
+			Memory::SwapVTableEntry(FortPlayerPawnVTable, 0x179, ServerHandlePickupHook);
+
+			OnAircraftExitedDropZoneOriginal = Utils::Offset<void(AFortGameModeAthena*)>(Offsets::OnAircraftExitedDropZoneOffset);
+			CreateHook(Offsets::OnAircraftExitedDropZoneOffset, OnAircraftExitedDropZoneHook, NULL);
+
+			void** FortPlayerControllerVTable = (void**)AFortPlayerController::StaticClass()->VTable;
+			ServerLoadingScreenDroppedOriginal = decltype(ServerLoadingScreenDroppedOriginal)(FortPlayerControllerVTable[0x234]);
+			Memory::SwapVTableEntry(FortPlayerControllerVTable, 0x234, ServerLoadingScreenDroppedHook);
+
+			void** GameModeVTable = (void**)AGameMode::StaticClass()->VTable;
+			ReadyToStartMatchOriginal = decltype(ReadyToStartMatchOriginal)(GameModeVTable[0xF7]);
+			Memory::SwapVTableEntry(GameModeVTable, 0xF7, ReadyToStartMatchHook);
+
+			CreateHook(Offsets::OnPlayButtonPressedOffset, OnPlayButtonPressedHook, NULL);
 		}
 	}
 }
