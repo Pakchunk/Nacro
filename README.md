@@ -6,7 +6,7 @@ Our Discord server: https://discord.gg/fcusXHDVdb
 ---
 
 # Known issues
-- Abilities crash when GC shows up
+- this shit wont even compile yo the sdk is FUCKED
 
 ---
 
