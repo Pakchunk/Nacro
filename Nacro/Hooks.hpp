@@ -4,7 +4,6 @@
 #pragma comment(lib, "MinHook/libMinHook.x64.lib")
 
 #include "SDK.hpp"
-#include "SDK/FortniteGame_parameters.hpp"
 #include "Offsets.hpp"
 #include "Player.hpp"
 #include "World.hpp"
@@ -16,6 +15,9 @@ using namespace SDK;
 
 namespace Hooks
 {
+	// could split this into .h / .cpp but i dont care enough to
+	void CreateHooks();
+
 	void* CheatScriptHook(UCheatManager* thisref, FString ScriptName)
 	{
 		if (ScriptName.IsValid() && Globals::bIsInGame)
