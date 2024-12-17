@@ -324,6 +324,12 @@ static_assert(sizeof(UClass) == 0x000250, "Wrong size on UClass");
 static_assert(offsetof(UClass, CastFlags) == 0x0000B8, "Member 'UClass::CastFlags' has a wrong offset!");
 static_assert(offsetof(UClass, DefaultObject) == 0x000100, "Member 'UClass::DefaultObject' has a wrong offset!");
 
+struct FFrame
+{
+	char pad[0x34];
+	uint8* Locals;
+};
+
 // Class CoreUObject.Function
 // 0x0030 (0x00B8 - 0x0088)
 class UFunction : public UStruct

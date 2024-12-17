@@ -239,19 +239,6 @@ enum class ELifetimeCondition : uint8
 	COND_Max                                 = 14,
 };
 
-struct FOutParmRec
-{
-	UProperty* Property;
-	uint8* PropAddr;
-	FOutParmRec* NextOutParm;
-};
-
-struct FFrame
-{
-	char pad[0x34];
-	uint8* Locals;
-};
-
 // ScriptStruct CoreUObject.Vector
 // 0x11821300 (0x11821300 - 0x0000)
 #pragma pack(push, 0x1)
