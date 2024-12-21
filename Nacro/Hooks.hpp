@@ -214,7 +214,7 @@ namespace Hooks
 		if (Globals::bIsInLobby && !Globals::bIsInitialized)
 		{
 			std::cout << "attempting mh initialize\n";
-			MH_Initialize();
+			std::cout << MH_Initialize() << "\n";
 			std::cout << "mh initialize OK\n";
 
 			std::cout << "attempting cheatscript hook\n";
