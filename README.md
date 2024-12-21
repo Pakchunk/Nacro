@@ -6,7 +6,7 @@ Our Discord server: https://discord.gg/fcusXHDVdb
 ---
 
 # Known issues
-- gets thru dllmain, shits itself seemingly before doing anything in mainthread
+- minhook is cooked
 
 ---
 
