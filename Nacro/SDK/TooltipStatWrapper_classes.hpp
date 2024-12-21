@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "TooltipStat_structs.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
+#include "TooltipStat_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TooltipStatWrapper.TooltipStatWrapper_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x02A8 - 0x0230)
 class UTooltipStatWrapper_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         Container_HBox;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 PreviewHighlight_Image;                            // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTooltipStatWidget_C*                   Stat_Widget;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -50,8 +50,8 @@ public:
 		return GetDefaultObjImpl<UTooltipStatWrapper_C>();
 	}
 };
-static_assert(alignof(UTooltipStatWrapper_C) == 0x322CBBB8, "Wrong alignment on UTooltipStatWrapper_C");
-static_assert(sizeof(UTooltipStatWrapper_C) == 0x322CBBB8, "Wrong size on UTooltipStatWrapper_C");
+static_assert(alignof(UTooltipStatWrapper_C) == 0x000008, "Wrong alignment on UTooltipStatWrapper_C");
+static_assert(sizeof(UTooltipStatWrapper_C) == 0x0002A8, "Wrong size on UTooltipStatWrapper_C");
 static_assert(offsetof(UTooltipStatWrapper_C, UberGraphFrame) == 0x000230, "Member 'UTooltipStatWrapper_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTooltipStatWrapper_C, Container_HBox) == 0x000238, "Member 'UTooltipStatWrapper_C::Container_HBox' has a wrong offset!");
 static_assert(offsetof(UTooltipStatWrapper_C, PreviewHighlight_Image) == 0x000240, "Member 'UTooltipStatWrapper_C::PreviewHighlight_Image' has a wrong offset!");

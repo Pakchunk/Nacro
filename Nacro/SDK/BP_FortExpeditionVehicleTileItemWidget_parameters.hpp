@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnVehicleSelected__DelegateSignature
-// 0x0078 (0x0078 - 0x0000)
-struct alignas(0x78) BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature final
 {
 public:
 	class FName                                   SquadId_0;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature) == 0x000078, "Wrong alignment on BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature");
-static_assert(sizeof(BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature) == 0x000078, "Wrong size on BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature");
+static_assert(alignof(BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature) == 0x000008, "Wrong alignment on BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature");
+static_assert(sizeof(BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature) == 0x000008, "Wrong size on BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature");
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature, SquadId_0) == 0x000000, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature::SquadId_0' has a wrong offset!");
 
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget
@@ -61,16 +61,16 @@ static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_SetData, InData)
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_SetData, OwningList) == 0x000008, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_SetData::OwningList' has a wrong offset!");
 
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Icon
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0370 (0x0370 - 0x0000)
 struct BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon final
 {
 public:
 	class FName                                   SquadId_0;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortHomebaseUIContext*                 CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMultiSizeBrush                    CallFunc_GetSquadIcon_ReturnValue;                 // 0x0010(0x11827900)()
+	struct FFortMultiSizeBrush                    CallFunc_GetSquadIcon_ReturnValue;                 // 0x0010(0x0360)()
 };
-static_assert(alignof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon) == 0x11821780, "Wrong alignment on BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon");
-static_assert(sizeof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon) == 0x11821780, "Wrong size on BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon");
+static_assert(alignof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon) == 0x000008, "Wrong alignment on BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon");
+static_assert(sizeof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon) == 0x000370, "Wrong size on BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon");
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon, SquadId_0) == 0x000000, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon::SquadId_0' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon, CallFunc_GetSquadIcon_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_Set_Icon::CallFunc_GetSquadIcon_ReturnValue' has a wrong offset!");
@@ -98,17 +98,17 @@ static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Rating, Call
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Rating, CallFunc_FTrunc_ReturnValue) == 0x000020, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_Set_Rating::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Name
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct BP_FortExpeditionVehicleTileItemWidget_C_Set_Name final
 {
 public:
 	class FName                                   SquadId_0;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x0010(0x11821D80)()
+	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x0010(0x0088)()
 	bool                                          CallFunc_TryGetHomebaseSquadData_ReturnValue;      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Name) == 0x11821780, "Wrong alignment on BP_FortExpeditionVehicleTileItemWidget_C_Set_Name");
-static_assert(sizeof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Name) == 0x11821780, "Wrong size on BP_FortExpeditionVehicleTileItemWidget_C_Set_Name");
+static_assert(alignof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Name) == 0x000008, "Wrong alignment on BP_FortExpeditionVehicleTileItemWidget_C_Set_Name");
+static_assert(sizeof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Name) == 0x0000A0, "Wrong size on BP_FortExpeditionVehicleTileItemWidget_C_Set_Name");
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Name, SquadId_0) == 0x000000, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_Set_Name::SquadId_0' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Name, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_Set_Name::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionVehicleTileItemWidget_C_Set_Name, CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad) == 0x000010, "Member 'BP_FortExpeditionVehicleTileItemWidget_C_Set_Name::CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad' has a wrong offset!");

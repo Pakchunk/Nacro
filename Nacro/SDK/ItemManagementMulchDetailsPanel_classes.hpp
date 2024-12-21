@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0290 - 0x0250)
 class UItemManagementMulchDetailsPanel_C final : public UFortItemManagementMulchDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      DoneButton;                                        // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       MulchPromptText;                                   // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           MulchResourceBox;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementMulchDetailsPanel_C>();
 	}
 };
-static_assert(alignof(UItemManagementMulchDetailsPanel_C) == 0x322CBBB8, "Wrong alignment on UItemManagementMulchDetailsPanel_C");
-static_assert(sizeof(UItemManagementMulchDetailsPanel_C) == 0x322CBBB8, "Wrong size on UItemManagementMulchDetailsPanel_C");
+static_assert(alignof(UItemManagementMulchDetailsPanel_C) == 0x000008, "Wrong alignment on UItemManagementMulchDetailsPanel_C");
+static_assert(sizeof(UItemManagementMulchDetailsPanel_C) == 0x000290, "Wrong size on UItemManagementMulchDetailsPanel_C");
 static_assert(offsetof(UItemManagementMulchDetailsPanel_C, UberGraphFrame) == 0x000250, "Member 'UItemManagementMulchDetailsPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementMulchDetailsPanel_C, DoneButton) == 0x000258, "Member 'UItemManagementMulchDetailsPanel_C::DoneButton' has a wrong offset!");
 static_assert(offsetof(UItemManagementMulchDetailsPanel_C, MulchPromptText) == 0x000260, "Member 'UItemManagementMulchDetailsPanel_C::MulchPromptText' has a wrong offset!");

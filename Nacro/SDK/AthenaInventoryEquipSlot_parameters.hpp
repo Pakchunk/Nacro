@@ -19,18 +19,18 @@ namespace SDK::Params
 {
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnEquipRequested__DelegateSignature
-// 0x0098 (0x0098 - 0x0000)
-struct alignas(0x98) AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature final
 {
 public:
 	int32                                         SlotIndex_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature) == 0x000098, "Wrong alignment on AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature) == 0x000098, "Wrong size on AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature");
+static_assert(alignof(AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature");
+static_assert(sizeof(AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature, SlotIndex_0) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature::SlotIndex_0' has a wrong offset!");
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.ExecuteUbergraph_AthenaInventoryEquipSlot
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot final
 {
 public:
@@ -42,12 +42,12 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue2;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EFortQuickBars QuickbarIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0030(0x11827900)(NoDestructor)
+	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0030(0x0008)(NoDestructor)
 	bool                                          K2Node_ComponentBoundEvent_bUsingGamepad;          // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSelected_Selected;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x003C(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x003C(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDragDropOperation*                     CallFunc_GetDragDroppingContent_ReturnValue;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -60,8 +60,8 @@ public:
 	EFortQuickBars                                K2Node_CustomEvent_QuickbarIndex;                  // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot) == 0x11827900, "Wrong alignment on AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot) == 0x11827900, "Wrong size on AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot");
+static_assert(alignof(AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot) == 0x000008, "Wrong alignment on AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot");
+static_assert(sizeof(AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot) == 0x0000A0, "Wrong size on AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot, EntryPoint) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot, Temp_byte_Variable) == 0x000004, "Member 'AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -96,15 +96,15 @@ static_assert(sizeof(AthenaInventoryEquipSlot_C_OnQuickbarContentsChanged_Event_
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnQuickbarContentsChanged_Event_0, QuickbarIndex) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_OnQuickbarContentsChanged_Event_0::QuickbarIndex' has a wrong offset!");
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AthenaInventoryEquipSlot_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryEquipSlot_C_Tick) == 0x11827900, "Wrong alignment on AthenaInventoryEquipSlot_C_Tick");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_Tick) == 0x11827900, "Wrong size on AthenaInventoryEquipSlot_C_Tick");
+static_assert(alignof(AthenaInventoryEquipSlot_C_Tick) == 0x000004, "Wrong alignment on AthenaInventoryEquipSlot_C_Tick");
+static_assert(sizeof(AthenaInventoryEquipSlot_C_Tick) == 0x000038, "Wrong size on AthenaInventoryEquipSlot_C_Tick");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaInventoryEquipSlot_C_Tick::InDeltaTime' has a wrong offset!");
 
@@ -120,14 +120,14 @@ static_assert(sizeof(AthenaInventoryEquipSlot_C_BndEvt__InputActionWidget_K2Node
 static_assert(offsetof(AthenaInventoryEquipSlot_C_BndEvt__InputActionWidget_K2Node_ComponentBoundEvent_6_OnInputMethodChanged__DelegateSignature, bUsingGamepad) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_BndEvt__InputActionWidget_K2Node_ComponentBoundEvent_6_OnInputMethodChanged__DelegateSignature::bUsingGamepad' has a wrong offset!");
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnFocusLost
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct AthenaInventoryEquipSlot_C_OnFocusLost final
 {
 public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x11827900)(Parm, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(Parm, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryEquipSlot_C_OnFocusLost) == 0x11827900, "Wrong alignment on AthenaInventoryEquipSlot_C_OnFocusLost");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_OnFocusLost) == 0x11827900, "Wrong size on AthenaInventoryEquipSlot_C_OnFocusLost");
+static_assert(alignof(AthenaInventoryEquipSlot_C_OnFocusLost) == 0x000004, "Wrong alignment on AthenaInventoryEquipSlot_C_OnFocusLost");
+static_assert(sizeof(AthenaInventoryEquipSlot_C_OnFocusLost) == 0x000008, "Wrong size on AthenaInventoryEquipSlot_C_OnFocusLost");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_OnFocusLost::InFocusEvent' has a wrong offset!");
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.RefreshItem
@@ -146,12 +146,13 @@ static_assert(offsetof(AthenaInventoryEquipSlot_C_RefreshItem, CallFunc_GetQuick
 static_assert(offsetof(AthenaInventoryEquipSlot_C_RefreshItem, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'AthenaInventoryEquipSlot_C_RefreshItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnDrop
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct AthenaInventoryEquipSlot_C_OnDrop final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(Parm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(Parm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -161,8 +162,8 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DropItemOnQuickBar_ReturnValue;           // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryEquipSlot_C_OnDrop) == 0x11829280, "Wrong alignment on AthenaInventoryEquipSlot_C_OnDrop");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_OnDrop) == 0x11829280, "Wrong size on AthenaInventoryEquipSlot_C_OnDrop");
+static_assert(alignof(AthenaInventoryEquipSlot_C_OnDrop) == 0x000008, "Wrong alignment on AthenaInventoryEquipSlot_C_OnDrop");
+static_assert(sizeof(AthenaInventoryEquipSlot_C_OnDrop) == 0x0000E0, "Wrong size on AthenaInventoryEquipSlot_C_OnDrop");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnDrop, MyGeometry) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_OnDrop::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnDrop, PointerEvent) == 0x000038, "Member 'AthenaInventoryEquipSlot_C_OnDrop::PointerEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnDrop, Operation) == 0x0000B0, "Member 'AthenaInventoryEquipSlot_C_OnDrop::Operation' has a wrong offset!");
@@ -173,20 +174,21 @@ static_assert(offsetof(AthenaInventoryEquipSlot_C_OnDrop, CallFunc_GetContext_Re
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnDrop, CallFunc_DropItemOnQuickBar_ReturnValue) == 0x0000D8, "Member 'AthenaInventoryEquipSlot_C_OnDrop::CallFunc_DropItemOnQuickBar_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnMouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x02E8 (0x02E8 - 0x0000)
 struct AthenaInventoryEquipSlot_C_OnMouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0168(0x11827900)()
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0220(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0168(0x00B8)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0220(0x00B8)()
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryEquipSlot_C_OnMouseButtonDown) == 0x11829280, "Wrong alignment on AthenaInventoryEquipSlot_C_OnMouseButtonDown");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_OnMouseButtonDown) == 0x11829280, "Wrong size on AthenaInventoryEquipSlot_C_OnMouseButtonDown");
+static_assert(alignof(AthenaInventoryEquipSlot_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on AthenaInventoryEquipSlot_C_OnMouseButtonDown");
+static_assert(sizeof(AthenaInventoryEquipSlot_C_OnMouseButtonDown) == 0x0002E8, "Wrong size on AthenaInventoryEquipSlot_C_OnMouseButtonDown");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'AthenaInventoryEquipSlot_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'AthenaInventoryEquipSlot_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
@@ -196,20 +198,21 @@ static_assert(offsetof(AthenaInventoryEquipSlot_C_OnMouseButtonDown, CallFunc_Ge
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnMouseButtonDown, CallFunc_IsUsingGamepad_ReturnValue) == 0x0002E0, "Member 'AthenaInventoryEquipSlot_C_OnMouseButtonDown::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnDragDetected
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct AthenaInventoryEquipSlot_C_OnDragDetected final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaInventoryDragDrop_C*             CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaInventoryDragVisual_C*           CallFunc_Create_ReturnValue;                       // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryEquipSlot_C_OnDragDetected) == 0x11829280, "Wrong alignment on AthenaInventoryEquipSlot_C_OnDragDetected");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_OnDragDetected) == 0x11829280, "Wrong size on AthenaInventoryEquipSlot_C_OnDragDetected");
+static_assert(alignof(AthenaInventoryEquipSlot_C_OnDragDetected) == 0x000008, "Wrong alignment on AthenaInventoryEquipSlot_C_OnDragDetected");
+static_assert(sizeof(AthenaInventoryEquipSlot_C_OnDragDetected) == 0x0000D8, "Wrong size on AthenaInventoryEquipSlot_C_OnDragDetected");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_OnDragDetected::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'AthenaInventoryEquipSlot_C_OnDragDetected::PointerEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnDragDetected, Operation) == 0x0000B0, "Member 'AthenaInventoryEquipSlot_C_OnDragDetected::Operation' has a wrong offset!");
@@ -238,17 +241,18 @@ static_assert(offsetof(AthenaInventoryEquipSlot_C_SetSelected, Temp_byte_Variabl
 static_assert(offsetof(AthenaInventoryEquipSlot_C_SetSelected, K2Node_Select_Default) == 0x000004, "Member 'AthenaInventoryEquipSlot_C_SetSelected::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnFocusReceived
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct AthenaInventoryEquipSlot_C_OnFocusReceived final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x11827900)(Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x0008)(Parm, NoDestructor)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(AthenaInventoryEquipSlot_C_OnFocusReceived) == 0x11827900, "Wrong alignment on AthenaInventoryEquipSlot_C_OnFocusReceived");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_OnFocusReceived) == 0x11827900, "Wrong size on AthenaInventoryEquipSlot_C_OnFocusReceived");
+static_assert(alignof(AthenaInventoryEquipSlot_C_OnFocusReceived) == 0x000008, "Wrong alignment on AthenaInventoryEquipSlot_C_OnFocusReceived");
+static_assert(sizeof(AthenaInventoryEquipSlot_C_OnFocusReceived) == 0x0001B0, "Wrong size on AthenaInventoryEquipSlot_C_OnFocusReceived");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_OnFocusReceived::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnFocusReceived, InFocusEvent) == 0x000034, "Member 'AthenaInventoryEquipSlot_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryEquipSlot_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'AthenaInventoryEquipSlot_C_OnFocusReceived::ReturnValue' has a wrong offset!");

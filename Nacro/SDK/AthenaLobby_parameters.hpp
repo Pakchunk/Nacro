@@ -117,14 +117,14 @@ static_assert(sizeof(AthenaLobby_C_BndEvt__ButtonTMPTEST_K2Node_ComponentBoundEv
 static_assert(offsetof(AthenaLobby_C_BndEvt__ButtonTMPTEST_K2Node_ComponentBoundEvent_198_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaLobby_C_BndEvt__ButtonTMPTEST_K2Node_ComponentBoundEvent_198_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnEndCursorOverPlayer
-// 0x03A1 (0x03A1 - 0x0000)
-struct alignas(0x3A1) AthenaLobby_C_OnEndCursorOverPlayer final
+// 0x0004 (0x0004 - 0x0000)
+struct AthenaLobby_C_OnEndCursorOverPlayer final
 {
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobby_C_OnEndCursorOverPlayer) == 0x0003A1, "Wrong alignment on AthenaLobby_C_OnEndCursorOverPlayer");
-static_assert(sizeof(AthenaLobby_C_OnEndCursorOverPlayer) == 0x0003A1, "Wrong size on AthenaLobby_C_OnEndCursorOverPlayer");
+static_assert(alignof(AthenaLobby_C_OnEndCursorOverPlayer) == 0x000004, "Wrong alignment on AthenaLobby_C_OnEndCursorOverPlayer");
+static_assert(sizeof(AthenaLobby_C_OnEndCursorOverPlayer) == 0x000004, "Wrong size on AthenaLobby_C_OnEndCursorOverPlayer");
 static_assert(offsetof(AthenaLobby_C_OnEndCursorOverPlayer, PlayerIndex) == 0x000000, "Member 'AthenaLobby_C_OnEndCursorOverPlayer::PlayerIndex' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature
@@ -141,58 +141,58 @@ static_assert(offsetof(AthenaLobby_C_BndEvt__SwitcherDetails_K2Node_ComponentBou
 static_assert(offsetof(AthenaLobby_C_BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'AthenaLobby_C_BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.DialogResult_156754AE468EF93DCA2009A412591BA7
-// 0x0014 (0x0014 - 0x0000)
-struct alignas(0x14) AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7 final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7) == 0x000014, "Wrong alignment on AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7");
-static_assert(sizeof(AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7) == 0x000014, "Wrong size on AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7");
+static_assert(alignof(AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7) == 0x000008, "Wrong alignment on AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7");
+static_assert(sizeof(AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7) == 0x000010, "Wrong size on AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7");
 static_assert(offsetof(AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7, Result) == 0x000000, "Member 'AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7::Result' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7, ResultName) == 0x000008, "Member 'AthenaLobby_C_DialogResult_156754AE468EF93DCA2009A412591BA7::ResultName' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnTeamMemberAdded
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0198 (0x0198 - 0x0000)
 struct AthenaLobby_C_OnTeamMemberAdded final
 {
 public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x0190)(Parm)
 	bool                                          CallFunc_IsActivated_ReturnValue;                  // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobby_C_OnTeamMemberAdded) == 0x11821780, "Wrong alignment on AthenaLobby_C_OnTeamMemberAdded");
-static_assert(sizeof(AthenaLobby_C_OnTeamMemberAdded) == 0x11821780, "Wrong size on AthenaLobby_C_OnTeamMemberAdded");
+static_assert(alignof(AthenaLobby_C_OnTeamMemberAdded) == 0x000008, "Wrong alignment on AthenaLobby_C_OnTeamMemberAdded");
+static_assert(sizeof(AthenaLobby_C_OnTeamMemberAdded) == 0x000198, "Wrong size on AthenaLobby_C_OnTeamMemberAdded");
 static_assert(offsetof(AthenaLobby_C_OnTeamMemberAdded, TeamMemberInfo) == 0x000000, "Member 'AthenaLobby_C_OnTeamMemberAdded::TeamMemberInfo' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnTeamMemberAdded, CallFunc_IsActivated_ReturnValue) == 0x000190, "Member 'AthenaLobby_C_OnTeamMemberAdded::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnTeamMemberRemoved
-// 0x0007 (0x0007 - 0x0000)
-struct alignas(0x07) AthenaLobby_C_OnTeamMemberRemoved final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaLobby_C_OnTeamMemberRemoved final
 {
 public:
 	int32                                         EmptySlot;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsActivated_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobby_C_OnTeamMemberRemoved) == 0x000007, "Wrong alignment on AthenaLobby_C_OnTeamMemberRemoved");
-static_assert(sizeof(AthenaLobby_C_OnTeamMemberRemoved) == 0x000007, "Wrong size on AthenaLobby_C_OnTeamMemberRemoved");
+static_assert(alignof(AthenaLobby_C_OnTeamMemberRemoved) == 0x000004, "Wrong alignment on AthenaLobby_C_OnTeamMemberRemoved");
+static_assert(sizeof(AthenaLobby_C_OnTeamMemberRemoved) == 0x000008, "Wrong size on AthenaLobby_C_OnTeamMemberRemoved");
 static_assert(offsetof(AthenaLobby_C_OnTeamMemberRemoved, EmptySlot) == 0x000000, "Member 'AthenaLobby_C_OnTeamMemberRemoved::EmptySlot' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnTeamMemberRemoved, CallFunc_IsActivated_ReturnValue) == 0x000004, "Member 'AthenaLobby_C_OnTeamMemberRemoved::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnTeamMemberStateChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct AthenaLobby_C_OnTeamMemberStateChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(AthenaLobby_C_OnTeamMemberStateChanged) == 0x11821780, "Wrong alignment on AthenaLobby_C_OnTeamMemberStateChanged");
-static_assert(sizeof(AthenaLobby_C_OnTeamMemberStateChanged) == 0x11821780, "Wrong size on AthenaLobby_C_OnTeamMemberStateChanged");
+static_assert(alignof(AthenaLobby_C_OnTeamMemberStateChanged) == 0x000008, "Wrong alignment on AthenaLobby_C_OnTeamMemberStateChanged");
+static_assert(sizeof(AthenaLobby_C_OnTeamMemberStateChanged) == 0x000190, "Wrong size on AthenaLobby_C_OnTeamMemberStateChanged");
 static_assert(offsetof(AthenaLobby_C_OnTeamMemberStateChanged, TeamMemberInfo) == 0x000000, "Member 'AthenaLobby_C_OnTeamMemberStateChanged::TeamMemberInfo' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.RefreshPlayerHeroes
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct AthenaLobby_C_RefreshPlayerHeroes final
 {
 public:
@@ -202,7 +202,7 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x0018(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x0018(0x0190)()
 	class UFortHero*                              K2Node_DynamicCast_AsFort_Hero;                    // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -213,8 +213,8 @@ public:
 	TArray<struct FFortTeamMemberInfo>            CallFunc_GetTeamMembers_TeamMembers;               // 0x01D0(0x0010)(ZeroConstructor, ReferenceParm)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobby_C_RefreshPlayerHeroes) == 0x11821780, "Wrong alignment on AthenaLobby_C_RefreshPlayerHeroes");
-static_assert(sizeof(AthenaLobby_C_RefreshPlayerHeroes) == 0x11821780, "Wrong size on AthenaLobby_C_RefreshPlayerHeroes");
+static_assert(alignof(AthenaLobby_C_RefreshPlayerHeroes) == 0x000008, "Wrong alignment on AthenaLobby_C_RefreshPlayerHeroes");
+static_assert(sizeof(AthenaLobby_C_RefreshPlayerHeroes) == 0x0001E8, "Wrong size on AthenaLobby_C_RefreshPlayerHeroes");
 static_assert(offsetof(AthenaLobby_C_RefreshPlayerHeroes, Index_0) == 0x000000, "Member 'AthenaLobby_C_RefreshPlayerHeroes::Index_0' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_RefreshPlayerHeroes, Temp_int_Variable) == 0x000004, "Member 'AthenaLobby_C_RefreshPlayerHeroes::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_RefreshPlayerHeroes, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobby_C_RefreshPlayerHeroes::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -230,36 +230,36 @@ static_assert(offsetof(AthenaLobby_C_RefreshPlayerHeroes, CallFunc_GetTeamMember
 static_assert(offsetof(AthenaLobby_C_RefreshPlayerHeroes, CallFunc_GetContext_ReturnValue3) == 0x0001E0, "Member 'AthenaLobby_C_RefreshPlayerHeroes::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnInputCancel
-// 0x0011 (0x0011 - 0x0000)
-struct alignas(0x11) AthenaLobby_C_OnInputCancel final
+// 0x0002 (0x0002 - 0x0000)
+struct AthenaLobby_C_OnInputCancel final
 {
 public:
 	bool                                          bCommited;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobby_C_OnInputCancel) == 0x000011, "Wrong alignment on AthenaLobby_C_OnInputCancel");
-static_assert(sizeof(AthenaLobby_C_OnInputCancel) == 0x000011, "Wrong size on AthenaLobby_C_OnInputCancel");
+static_assert(alignof(AthenaLobby_C_OnInputCancel) == 0x000001, "Wrong alignment on AthenaLobby_C_OnInputCancel");
+static_assert(sizeof(AthenaLobby_C_OnInputCancel) == 0x000002, "Wrong size on AthenaLobby_C_OnInputCancel");
 static_assert(offsetof(AthenaLobby_C_OnInputCancel, bCommited) == 0x000000, "Member 'AthenaLobby_C_OnInputCancel::bCommited' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnInputCancel, CallFunc_IsVisible_ReturnValue) == 0x000001, "Member 'AthenaLobby_C_OnInputCancel::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.Focus
-// 0x0011 (0x0011 - 0x0000)
-struct alignas(0x11) AthenaLobby_C_Focus final
+// 0x0018 (0x0018 - 0x0000)
+struct AthenaLobby_C_Focus final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobby_C_Focus) == 0x000011, "Wrong alignment on AthenaLobby_C_Focus");
-static_assert(sizeof(AthenaLobby_C_Focus) == 0x000011, "Wrong size on AthenaLobby_C_Focus");
+static_assert(alignof(AthenaLobby_C_Focus) == 0x000008, "Wrong alignment on AthenaLobby_C_Focus");
+static_assert(sizeof(AthenaLobby_C_Focus) == 0x000018, "Wrong size on AthenaLobby_C_Focus");
 static_assert(offsetof(AthenaLobby_C_Focus, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'AthenaLobby_C_Focus::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_Focus, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobby_C_Focus::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_Focus, CallFunc_IsVisible_ReturnValue) == 0x000010, "Member 'AthenaLobby_C_Focus::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.InitializeContextEvents
-// 0x00D0 (0x00D0 - 0x0000)
-struct alignas(0x1A) AthenaLobby_C_InitializeContextEvents final
+// 0x00B8 (0x00B8 - 0x0000)
+struct AthenaLobby_C_InitializeContextEvents final
 {
 public:
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
@@ -278,8 +278,8 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue5;                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue6;                  // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobby_C_InitializeContextEvents) == 0x00001A, "Wrong alignment on AthenaLobby_C_InitializeContextEvents");
-static_assert(sizeof(AthenaLobby_C_InitializeContextEvents) == 0x0000D0, "Wrong size on AthenaLobby_C_InitializeContextEvents");
+static_assert(alignof(AthenaLobby_C_InitializeContextEvents) == 0x000008, "Wrong alignment on AthenaLobby_C_InitializeContextEvents");
+static_assert(sizeof(AthenaLobby_C_InitializeContextEvents) == 0x0000B8, "Wrong size on AthenaLobby_C_InitializeContextEvents");
 static_assert(offsetof(AthenaLobby_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaLobby_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'AthenaLobby_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate3) == 0x000020, "Member 'AthenaLobby_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
@@ -371,23 +371,24 @@ static_assert(sizeof(AthenaLobby_C_ShouldAddScroll) == 0x000001, "Wrong size on 
 static_assert(offsetof(AthenaLobby_C_ShouldAddScroll, bShouldAdd) == 0x000000, "Member 'AthenaLobby_C_ShouldAddScroll::bShouldAdd' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnMouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0248 (0x0248 - 0x0000)
 struct AthenaLobby_C_OnMouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
 	bool                                          CallFunc_ShouldAddCancel_bShouldAdd;               // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0170(0x11821D80)(HasGetValueTypeHash)
+	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0170(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_OnInputCancel_bCommited;                  // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_18A[0x6];                                      // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0190(0x11827900)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0190(0x00B8)()
 };
-static_assert(alignof(AthenaLobby_C_OnMouseButtonDown) == 0x11829280, "Wrong alignment on AthenaLobby_C_OnMouseButtonDown");
-static_assert(sizeof(AthenaLobby_C_OnMouseButtonDown) == 0x11829280, "Wrong size on AthenaLobby_C_OnMouseButtonDown");
+static_assert(alignof(AthenaLobby_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on AthenaLobby_C_OnMouseButtonDown");
+static_assert(sizeof(AthenaLobby_C_OnMouseButtonDown) == 0x000248, "Wrong size on AthenaLobby_C_OnMouseButtonDown");
 static_assert(offsetof(AthenaLobby_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'AthenaLobby_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'AthenaLobby_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'AthenaLobby_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
@@ -411,14 +412,14 @@ static_assert(offsetof(AthenaLobby_C_OnLobbyDisconnected, CallFunc_GetContext_Re
 static_assert(offsetof(AthenaLobby_C_OnLobbyDisconnected, CallFunc_IsVisible_ReturnValue) == 0x000008, "Member 'AthenaLobby_C_OnLobbyDisconnected::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnLobbyEmptyPlayerClicked
-// 0x0061 (0x0061 - 0x0000)
-struct alignas(0x61) AthenaLobby_C_OnLobbyEmptyPlayerClicked final
+// 0x0004 (0x0004 - 0x0000)
+struct AthenaLobby_C_OnLobbyEmptyPlayerClicked final
 {
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobby_C_OnLobbyEmptyPlayerClicked) == 0x000061, "Wrong alignment on AthenaLobby_C_OnLobbyEmptyPlayerClicked");
-static_assert(sizeof(AthenaLobby_C_OnLobbyEmptyPlayerClicked) == 0x000061, "Wrong size on AthenaLobby_C_OnLobbyEmptyPlayerClicked");
+static_assert(alignof(AthenaLobby_C_OnLobbyEmptyPlayerClicked) == 0x000004, "Wrong alignment on AthenaLobby_C_OnLobbyEmptyPlayerClicked");
+static_assert(sizeof(AthenaLobby_C_OnLobbyEmptyPlayerClicked) == 0x000004, "Wrong size on AthenaLobby_C_OnLobbyEmptyPlayerClicked");
 static_assert(offsetof(AthenaLobby_C_OnLobbyEmptyPlayerClicked, PlayerIndex) == 0x000000, "Member 'AthenaLobby_C_OnLobbyEmptyPlayerClicked::PlayerIndex' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnLobbyPlayerGadgetsClicked
@@ -433,22 +434,22 @@ static_assert(sizeof(AthenaLobby_C_OnLobbyPlayerGadgetsClicked) == 0x000004, "Wr
 static_assert(offsetof(AthenaLobby_C_OnLobbyPlayerGadgetsClicked, PlayerIndex) == 0x000000, "Member 'AthenaLobby_C_OnLobbyPlayerGadgetsClicked::PlayerIndex' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnLobbyPlayerPadHovered
-// 0xBA0C (0xBA0C - 0x0000)
-struct alignas(0xBA0C) AthenaLobby_C_OnLobbyPlayerPadHovered final
+// 0x0010 (0x0010 - 0x0000)
+struct AthenaLobby_C_OnLobbyPlayerPadHovered final
 {
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobby_C_OnLobbyPlayerPadHovered) == 0x00BA0C, "Wrong alignment on AthenaLobby_C_OnLobbyPlayerPadHovered");
-static_assert(sizeof(AthenaLobby_C_OnLobbyPlayerPadHovered) == 0x00BA0C, "Wrong size on AthenaLobby_C_OnLobbyPlayerPadHovered");
+static_assert(alignof(AthenaLobby_C_OnLobbyPlayerPadHovered) == 0x000008, "Wrong alignment on AthenaLobby_C_OnLobbyPlayerPadHovered");
+static_assert(sizeof(AthenaLobby_C_OnLobbyPlayerPadHovered) == 0x000010, "Wrong size on AthenaLobby_C_OnLobbyPlayerPadHovered");
 static_assert(offsetof(AthenaLobby_C_OnLobbyPlayerPadHovered, PlayerIndex) == 0x000000, "Member 'AthenaLobby_C_OnLobbyPlayerPadHovered::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnLobbyPlayerPadHovered, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobby_C_OnLobbyPlayerPadHovered::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnLobbyPlayerPadUnhovered
-// 0x0066 (0x0066 - 0x0000)
-struct alignas(0x66) AthenaLobby_C_OnLobbyPlayerPadUnhovered final
+// 0x0018 (0x0018 - 0x0000)
+struct AthenaLobby_C_OnLobbyPlayerPadUnhovered final
 {
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -456,23 +457,23 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobby_C_OnLobbyPlayerPadUnhovered) == 0x000066, "Wrong alignment on AthenaLobby_C_OnLobbyPlayerPadUnhovered");
-static_assert(sizeof(AthenaLobby_C_OnLobbyPlayerPadUnhovered) == 0x000066, "Wrong size on AthenaLobby_C_OnLobbyPlayerPadUnhovered");
+static_assert(alignof(AthenaLobby_C_OnLobbyPlayerPadUnhovered) == 0x000008, "Wrong alignment on AthenaLobby_C_OnLobbyPlayerPadUnhovered");
+static_assert(sizeof(AthenaLobby_C_OnLobbyPlayerPadUnhovered) == 0x000018, "Wrong size on AthenaLobby_C_OnLobbyPlayerPadUnhovered");
 static_assert(offsetof(AthenaLobby_C_OnLobbyPlayerPadUnhovered, PlayerIndex) == 0x000000, "Member 'AthenaLobby_C_OnLobbyPlayerPadUnhovered::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnLobbyPlayerPadUnhovered, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobby_C_OnLobbyPlayerPadUnhovered::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnLobbyPlayerPadUnhovered, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000010, "Member 'AthenaLobby_C_OnLobbyPlayerPadUnhovered::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.InitializeInput
-// 0x0148 (0x0148 - 0x0000)
-struct alignas(0x148) AthenaLobby_C_InitializeInput final
+// 0x0030 (0x0030 - 0x0000)
+struct alignas(0x08) AthenaLobby_C_InitializeInput final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate3;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaLobby_C_InitializeInput) == 0x000148, "Wrong alignment on AthenaLobby_C_InitializeInput");
-static_assert(sizeof(AthenaLobby_C_InitializeInput) == 0x000148, "Wrong size on AthenaLobby_C_InitializeInput");
+static_assert(alignof(AthenaLobby_C_InitializeInput) == 0x000008, "Wrong alignment on AthenaLobby_C_InitializeInput");
+static_assert(sizeof(AthenaLobby_C_InitializeInput) == 0x000030, "Wrong size on AthenaLobby_C_InitializeInput");
 static_assert(offsetof(AthenaLobby_C_InitializeInput, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaLobby_C_InitializeInput::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_InitializeInput, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'AthenaLobby_C_InitializeInput::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_InitializeInput, K2Node_CreateDelegate_OutputDelegate3) == 0x000020, "Member 'AthenaLobby_C_InitializeInput::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
@@ -588,22 +589,22 @@ static_assert(offsetof(AthenaLobby_C_CanNavigatePlayers, CallFunc_IsVisible_Retu
 static_assert(offsetof(AthenaLobby_C_CanNavigatePlayers, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'AthenaLobby_C_CanNavigatePlayers::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.OnSelect
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01C0 (0x01C0 - 0x0000)
 struct AthenaLobby_C_OnSelect final
 {
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPartyFinder_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x0010(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x0010(0x0190)()
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUIManager_C*                           K2Node_DynamicCast_AsUIManager;                    // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobby_C_OnSelect) == 0x11821780, "Wrong alignment on AthenaLobby_C_OnSelect");
-static_assert(sizeof(AthenaLobby_C_OnSelect) == 0x11821780, "Wrong size on AthenaLobby_C_OnSelect");
+static_assert(alignof(AthenaLobby_C_OnSelect) == 0x000008, "Wrong alignment on AthenaLobby_C_OnSelect");
+static_assert(sizeof(AthenaLobby_C_OnSelect) == 0x0001C0, "Wrong size on AthenaLobby_C_OnSelect");
 static_assert(offsetof(AthenaLobby_C_OnSelect, PlayerIndex) == 0x000000, "Member 'AthenaLobby_C_OnSelect::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnSelect, CallFunc_Create_ReturnValue) == 0x000008, "Member 'AthenaLobby_C_OnSelect::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_OnSelect, CallFunc_Array_Get_Item) == 0x000010, "Member 'AthenaLobby_C_OnSelect::CallFunc_Array_Get_Item' has a wrong offset!");
@@ -614,7 +615,7 @@ static_assert(offsetof(AthenaLobby_C_OnSelect, K2Node_DynamicCast_bSuccess) == 0
 static_assert(offsetof(AthenaLobby_C_OnSelect, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001B9, "Member 'AthenaLobby_C_OnSelect::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobby.AthenaLobby_C.IsLocalPlayer
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0338 (0x0338 - 0x0000)
 struct AthenaLobby_C_IsLocalPlayer final
 {
 public:
@@ -622,12 +623,12 @@ public:
 	bool                                          IsLocalPlayer_0;                                   // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x0010(0x11827900)()
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x01A0(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x0010(0x0190)()
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x01A0(0x0190)()
 	bool                                          CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobby_C_IsLocalPlayer) == 0x11821780, "Wrong alignment on AthenaLobby_C_IsLocalPlayer");
-static_assert(sizeof(AthenaLobby_C_IsLocalPlayer) == 0x11821780, "Wrong size on AthenaLobby_C_IsLocalPlayer");
+static_assert(alignof(AthenaLobby_C_IsLocalPlayer) == 0x000008, "Wrong alignment on AthenaLobby_C_IsLocalPlayer");
+static_assert(sizeof(AthenaLobby_C_IsLocalPlayer) == 0x000338, "Wrong size on AthenaLobby_C_IsLocalPlayer");
 static_assert(offsetof(AthenaLobby_C_IsLocalPlayer, PlayerIndex) == 0x000000, "Member 'AthenaLobby_C_IsLocalPlayer::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_IsLocalPlayer, IsLocalPlayer_0) == 0x000004, "Member 'AthenaLobby_C_IsLocalPlayer::IsLocalPlayer_0' has a wrong offset!");
 static_assert(offsetof(AthenaLobby_C_IsLocalPlayer, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobby_C_IsLocalPlayer::CallFunc_GetContext_ReturnValue' has a wrong offset!");

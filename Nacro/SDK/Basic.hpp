@@ -464,6 +464,10 @@ template<typename UEType>
 class TWeakObjectPtr : public FWeakObjectPtr
 {
 public:
+	explicit TWeakObjectPtr(UEType*)
+	{
+	}
+	
 	UEType* Get() const
 	{
 		return static_cast<UEType*>(FWeakObjectPtr::Get());
@@ -473,6 +477,11 @@ public:
 	{
 		return static_cast<UEType*>(FWeakObjectPtr::Get());
 	}
+
+	TWeakObjectPtr() = default;
+	TWeakObjectPtr(const TWeakObjectPtr&) = default;
+	TWeakObjectPtr& operator=(const TWeakObjectPtr&) = default;
+	~TWeakObjectPtr() = default;
 };
 
 // Predefined struct FUniqueObjectGuid
@@ -545,6 +554,19 @@ static_assert(offsetof(FSoftObjectPath, AssetLongPathname) == 0x000000, "Member 
 
 class FSoftObjectPtr : public TPersistentObjectPtr<FakeSoftObjectPtr::FSoftObjectPath>
 {
+public:
+	UObject* LoadAsync()
+	{
+		typedef UObject* (__fastcall* tLoadAsync)(void*);
+		static tLoadAsync LoadAsync = nullptr;
+
+		if (!LoadAsync)
+		{
+			LoadAsync = (tLoadAsync)reinterpret_cast<void*>(InSDKUtils::GetImageBase() + 0x35CC50);
+		}
+
+		return LoadAsync((void*)this);
+	}
 };
 
 template<typename UEType>
@@ -584,6 +606,16 @@ public:
 	void*                                         InterfacePointer;                                  // 0x0008(0x0008)(NOT AUTO-GENERATED PROPERTY)
 
 public:
+	void SetInterface(void* Interface)
+	{
+		InterfacePointer = Interface;
+	}
+
+	void SetObject(class UObject* InObject)
+	{
+		ObjectPointer = InObject;
+	}
+	
 	class UObject* GetObjectRef() const
 	{
 		return ObjectPointer;

@@ -58,11 +58,11 @@ static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndi
 static_assert(offsetof(BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator, CallFunc_GetContext_ReturnValue3) == 0x0000A8, "Member 'BuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct BuildingInfoIndicator_C_UpdateBuildingInfo final
 {
 public:
-	struct FFortFocusedBuildingInfo               NewBuildingInfo;                                   // 0x0000(0x11821780)(Parm, OutParm, ReferenceParm)
+	struct FFortFocusedBuildingInfo               NewBuildingInfo;                                   // 0x0000(0x0050)(Parm, OutParm, ReferenceParm)
 	EFortBuildingInteraction                      Temp_byte_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -77,8 +77,8 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingInfoIndicator_C_UpdateBuildingInfo) == 0x11821780, "Wrong alignment on BuildingInfoIndicator_C_UpdateBuildingInfo");
-static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingInfo) == 0x11821780, "Wrong size on BuildingInfoIndicator_C_UpdateBuildingInfo");
+static_assert(alignof(BuildingInfoIndicator_C_UpdateBuildingInfo) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_UpdateBuildingInfo");
+static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingInfo) == 0x000060, "Wrong size on BuildingInfoIndicator_C_UpdateBuildingInfo");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, NewBuildingInfo) == 0x000000, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::NewBuildingInfo' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable) == 0x000050, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, Temp_byte_Variable2) == 0x000051, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::Temp_byte_Variable2' has a wrong offset!");
@@ -95,8 +95,8 @@ static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, K2Node_Select
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo, K2Node_Select2_Default) == 0x00005C, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo::K2Node_Select2_Default' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandleBuildingFocused
-// 0x65006B (0x65006B - 0x0000)
-struct alignas(0x65006B) BuildingInfoIndicator_C_HandleBuildingFocused final
+// 0x0010 (0x0010 - 0x0000)
+struct BuildingInfoIndicator_C_HandleBuildingFocused final
 {
 public:
 	class ABuildingActor*                         FocusedBuilding;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -106,8 +106,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingInfoIndicator_C_HandleBuildingFocused) == 0x65006B, "Wrong alignment on BuildingInfoIndicator_C_HandleBuildingFocused");
-static_assert(sizeof(BuildingInfoIndicator_C_HandleBuildingFocused) == 0x65006B, "Wrong size on BuildingInfoIndicator_C_HandleBuildingFocused");
+static_assert(alignof(BuildingInfoIndicator_C_HandleBuildingFocused) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_HandleBuildingFocused");
+static_assert(sizeof(BuildingInfoIndicator_C_HandleBuildingFocused) == 0x000010, "Wrong size on BuildingInfoIndicator_C_HandleBuildingFocused");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingFocused, FocusedBuilding) == 0x000000, "Member 'BuildingInfoIndicator_C_HandleBuildingFocused::FocusedBuilding' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingFocused, Temp_bool_Variable) == 0x000008, "Member 'BuildingInfoIndicator_C_HandleBuildingFocused::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingFocused, Temp_byte_Variable) == 0x000009, "Member 'BuildingInfoIndicator_C_HandleBuildingFocused::Temp_byte_Variable' has a wrong offset!");
@@ -116,21 +116,21 @@ static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingFocused, CallFunc_I
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingFocused, K2Node_Select_Default) == 0x00000C, "Member 'BuildingInfoIndicator_C_HandleBuildingFocused::K2Node_Select_Default' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandleBuildingHealthChanged
-// 0x42A9EA80 (0x42A9EA80 - 0x0000)
-struct alignas(0x42A9EA80) BuildingInfoIndicator_C_HandleBuildingHealthChanged final
+// 0x0018 (0x0018 - 0x0000)
+struct BuildingInfoIndicator_C_HandleBuildingHealthChanged final
 {
 public:
 	float                                         Health;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0008(0x0008)(NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingInfoIndicator_C_HandleBuildingHealthChanged) == 0x42A9EA80, "Wrong alignment on BuildingInfoIndicator_C_HandleBuildingHealthChanged");
-static_assert(sizeof(BuildingInfoIndicator_C_HandleBuildingHealthChanged) == 0x42A9EA80, "Wrong size on BuildingInfoIndicator_C_HandleBuildingHealthChanged");
+static_assert(alignof(BuildingInfoIndicator_C_HandleBuildingHealthChanged) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_HandleBuildingHealthChanged");
+static_assert(sizeof(BuildingInfoIndicator_C_HandleBuildingHealthChanged) == 0x000018, "Wrong size on BuildingInfoIndicator_C_HandleBuildingHealthChanged");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, Health) == 0x000000, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::Health' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_HandleBuildingHealthChanged, CallFunc_K2_SetTimer_ReturnValue) == 0x000008, "Member 'BuildingInfoIndicator_C_HandleBuildingHealthChanged::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
@@ -153,8 +153,8 @@ static_assert(offsetof(BuildingInfoIndicator_C_HandleTrapDurabilityChanged, Curr
 static_assert(offsetof(BuildingInfoIndicator_C_HandleTrapDurabilityChanged, MaxDurability) == 0x000004, "Member 'BuildingInfoIndicator_C_HandleTrapDurabilityChanged::MaxDurability' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.Update Keybinds
-// 0x69006F (0x69006F - 0x0000)
-struct alignas(0x69006F) BuildingInfoIndicator_C_Update_Keybinds final
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) BuildingInfoIndicator_C_Update_Keybinds final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -165,8 +165,8 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuildingInfoIndicator_C_Update_Keybinds) == 0x69006F, "Wrong alignment on BuildingInfoIndicator_C_Update_Keybinds");
-static_assert(sizeof(BuildingInfoIndicator_C_Update_Keybinds) == 0x69006F, "Wrong size on BuildingInfoIndicator_C_Update_Keybinds");
+static_assert(alignof(BuildingInfoIndicator_C_Update_Keybinds) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_Update_Keybinds");
+static_assert(sizeof(BuildingInfoIndicator_C_Update_Keybinds) == 0x000028, "Wrong size on BuildingInfoIndicator_C_Update_Keybinds");
 static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, Temp_bool_Variable) == 0x000000, "Member 'BuildingInfoIndicator_C_Update_Keybinds::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, Temp_name_Variable) == 0x000008, "Member 'BuildingInfoIndicator_C_Update_Keybinds::Temp_name_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_Update_Keybinds, Temp_name_Variable2) == 0x000010, "Member 'BuildingInfoIndicator_C_Update_Keybinds::Temp_name_Variable2' has a wrong offset!");
@@ -205,16 +205,16 @@ static_assert(offsetof(BuildingInfoIndicator_C_HandlePlayerTargetingChanged, K2N
 static_assert(offsetof(BuildingInfoIndicator_C_HandlePlayerTargetingChanged, K2Node_Select_Default) == 0x000029, "Member 'BuildingInfoIndicator_C_HandlePlayerTargetingChanged::K2Node_Select_Default' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingRepairCost
-// 0x690074 (0x690074 - 0x0000)
-struct alignas(0x690074) BuildingInfoIndicator_C_UpdateBuildingRepairCost final
+// 0x0020 (0x0020 - 0x0000)
+struct BuildingInfoIndicator_C_UpdateBuildingRepairCost final
 {
 public:
 	int32                                         NewInteractionCost;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
-static_assert(alignof(BuildingInfoIndicator_C_UpdateBuildingRepairCost) == 0x690074, "Wrong alignment on BuildingInfoIndicator_C_UpdateBuildingRepairCost");
-static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingRepairCost) == 0x690074, "Wrong size on BuildingInfoIndicator_C_UpdateBuildingRepairCost");
+static_assert(alignof(BuildingInfoIndicator_C_UpdateBuildingRepairCost) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_UpdateBuildingRepairCost");
+static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingRepairCost) == 0x000020, "Wrong size on BuildingInfoIndicator_C_UpdateBuildingRepairCost");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingRepairCost, NewInteractionCost) == 0x000000, "Member 'BuildingInfoIndicator_C_UpdateBuildingRepairCost::NewInteractionCost' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingRepairCost, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'BuildingInfoIndicator_C_UpdateBuildingRepairCost::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
@@ -234,7 +234,7 @@ static_assert(offsetof(BuildingInfoIndicator_C_IsCurrentBuildingBeingRepaired, C
 static_assert(offsetof(BuildingInfoIndicator_C_IsCurrentBuildingBeingRepaired, CallFunc_BooleanAND_ReturnValue) == 0x000002, "Member 'BuildingInfoIndicator_C_IsCurrentBuildingBeingRepaired::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingInfo_InteractionWidgets
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0318 (0x0318 - 0x0000)
 struct BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets final
 {
 public:
@@ -278,11 +278,11 @@ public:
 	EFortBuildingInteraction                      Temp_byte_Variable10;                              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortResourceItemDefinition*            CallFunc_GetResourceItemDefinition_ReturnValue;    // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0068(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0068(0x0090)()
 	int32                                         CallFunc_GetResourceCount_ReturnValue;             // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0100(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0100(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABuildingSMActor*                       K2Node_DynamicCast_AsBuilding_SMActor;             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -315,16 +315,16 @@ public:
 	bool                                          CallFunc_IsPlayerBuilt_ReturnValue;                // 0x0146(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable5;                               // 0x0147(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue3;                  // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0150(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0150(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortQuickBars                                CallFunc_GetQuickbarFocus_OutQuickBar;             // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_161[0x3];                                      // 0x0161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetQuickbarFocus_OutSlot;                 // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetQuickbarFocus_OutSecondarySlot;        // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot;  // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select5_Default;                            // 0x0170(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select5_Default;                            // 0x0170(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0188(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0188(0x0028)()
 	ESlateVisibility                              Temp_byte_Variable15;                              // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable16;                              // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable6;                               // 0x01B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -335,10 +335,10 @@ public:
 	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetTrapAttachTypeName_ReturnValue;        // 0x01C8(0x0018)()
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x01E0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01F8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01F8(0x0040)(HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select7_Default;                            // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0240(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0250(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0250(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0290(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x02A8(0x0010)(ZeroConstructor, ReferenceParm)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue5;                  // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -359,8 +359,8 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue5;                   // 0x0313(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue8;                  // 0x0314(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets) == 0x322CBBB8, "Wrong alignment on BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets");
-static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets) == 0x322CBBB8, "Wrong size on BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets");
+static_assert(alignof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets) == 0x000008, "Wrong alignment on BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets");
+static_assert(sizeof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets) == 0x000318, "Wrong size on BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, Interactable) == 0x000000, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::Interactable' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, CanBePlayerEdited) == 0x000001, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::CanBePlayerEdited' has a wrong offset!");
 static_assert(offsetof(BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets, IsAnyTrapAttached) == 0x000002, "Member 'BuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets::IsAnyTrapAttached' has a wrong offset!");

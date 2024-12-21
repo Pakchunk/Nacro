@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PowerWidget.PowerWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0098 (0x02F8 - 0x0260)
 class UPowerWidget_C final : public UFortPlayerTrackerBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 BarBG;                                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHomebaseRatingBar_C*                   HomebaseRatingBar;                                 // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_Power;                                       // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -37,8 +37,8 @@ public:
 	bool                                          ShowProgress;                                      // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CurrentRating;                                     // 0x02AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CParty;                                            // 0x02B0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CSolo;                                             // 0x02C0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CParty;                                            // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CSolo;                                             // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_LocalPlayerProfileModal_C*          LocalPlayerWidget;                                 // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   Power_Increased;                                   // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          Previously_Had_Teammates;                          // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -68,8 +68,8 @@ public:
 		return GetDefaultObjImpl<UPowerWidget_C>();
 	}
 };
-static_assert(alignof(UPowerWidget_C) == 0x322CBBB8, "Wrong alignment on UPowerWidget_C");
-static_assert(sizeof(UPowerWidget_C) == 0x322CBBB8, "Wrong size on UPowerWidget_C");
+static_assert(alignof(UPowerWidget_C) == 0x000008, "Wrong alignment on UPowerWidget_C");
+static_assert(sizeof(UPowerWidget_C) == 0x0002F8, "Wrong size on UPowerWidget_C");
 static_assert(offsetof(UPowerWidget_C, UberGraphFrame) == 0x000260, "Member 'UPowerWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPowerWidget_C, BarBG) == 0x000268, "Member 'UPowerWidget_C::BarBG' has a wrong offset!");
 static_assert(offsetof(UPowerWidget_C, HomebaseRatingBar) == 0x000270, "Member 'UPowerWidget_C::HomebaseRatingBar' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MicIndicator.MicIndicator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0290 - 0x0260)
 class UMicIndicator_C final : public UFortMicIndicatorWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UOverlay*                               Zero1MinusNotSpeaking;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               Zero2MinusSpeaking;                                // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               Zero3MinusMuted;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UMicIndicator_C>();
 	}
 };
-static_assert(alignof(UMicIndicator_C) == 0x322CBBB8, "Wrong alignment on UMicIndicator_C");
-static_assert(sizeof(UMicIndicator_C) == 0x322CBBB8, "Wrong size on UMicIndicator_C");
+static_assert(alignof(UMicIndicator_C) == 0x000008, "Wrong alignment on UMicIndicator_C");
+static_assert(sizeof(UMicIndicator_C) == 0x000290, "Wrong size on UMicIndicator_C");
 static_assert(offsetof(UMicIndicator_C, UberGraphFrame) == 0x000260, "Member 'UMicIndicator_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMicIndicator_C, Zero1MinusNotSpeaking) == 0x000268, "Member 'UMicIndicator_C::Zero1MinusNotSpeaking' has a wrong offset!");
 static_assert(offsetof(UMicIndicator_C, Zero2MinusSpeaking) == 0x000270, "Member 'UMicIndicator_C::Zero2MinusSpeaking' has a wrong offset!");

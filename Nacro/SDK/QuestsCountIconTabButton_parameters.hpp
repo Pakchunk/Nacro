@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.ExecuteUbergraph_QuestsCountIconTabButton
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton final
 {
 public:
@@ -28,7 +28,7 @@ public:
 	bool                                          CallFunc_GetSelected_ReturnValue2;                 // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue2;       // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0008(0x1182E980)(ConstParm)
+	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0008(0x00A8)(ConstParm)
 	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue3;       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue4;       // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -45,8 +45,8 @@ public:
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton) == 0x1182E980, "Wrong alignment on QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton");
-static_assert(sizeof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton) == 0x1182E980, "Wrong size on QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton");
+static_assert(alignof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton");
+static_assert(sizeof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton) == 0x0000F8, "Wrong size on QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton");
 static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, EntryPoint) == 0x000000, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_GetSelected_ReturnValue) == 0x000004, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_GetSelected_ReturnValue2) == 0x000005, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_GetSelected_ReturnValue2' has a wrong offset!");
@@ -68,14 +68,14 @@ static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIc
 static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_IsValid_ReturnValue) == 0x0000F0, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.SetTabLabelInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct QuestsCountIconTabButton_C_SetTabLabelInfo final
 {
 public:
-	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_SetTabLabelInfo) == 0x1182E980, "Wrong alignment on QuestsCountIconTabButton_C_SetTabLabelInfo");
-static_assert(sizeof(QuestsCountIconTabButton_C_SetTabLabelInfo) == 0x1182E980, "Wrong size on QuestsCountIconTabButton_C_SetTabLabelInfo");
+static_assert(alignof(QuestsCountIconTabButton_C_SetTabLabelInfo) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_SetTabLabelInfo");
+static_assert(sizeof(QuestsCountIconTabButton_C_SetTabLabelInfo) == 0x0000A8, "Wrong size on QuestsCountIconTabButton_C_SetTabLabelInfo");
 static_assert(offsetof(QuestsCountIconTabButton_C_SetTabLabelInfo, TabLabelInfo) == 0x000000, "Member 'QuestsCountIconTabButton_C_SetTabLabelInfo::TabLabelInfo' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.PreConstruct
@@ -113,14 +113,14 @@ static_assert(offsetof(QuestsCountIconTabButton_C_Set_Text, CallFunc_BooleanAND_
 static_assert(offsetof(QuestsCountIconTabButton_C_Set_Text, CallFunc_Create_Basic_Tooltip_Output) == 0x000030, "Member 'QuestsCountIconTabButton_C_Set_Text::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Set Icon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct QuestsCountIconTabButton_C_Set_Icon final
 {
 public:
-	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x322CBBB8)(Parm)
+	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0090)(Parm)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_Set_Icon) == 0x11827900, "Wrong alignment on QuestsCountIconTabButton_C_Set_Icon");
-static_assert(sizeof(QuestsCountIconTabButton_C_Set_Icon) == 0x11827900, "Wrong size on QuestsCountIconTabButton_C_Set_Icon");
+static_assert(alignof(QuestsCountIconTabButton_C_Set_Icon) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_Set_Icon");
+static_assert(sizeof(QuestsCountIconTabButton_C_Set_Icon) == 0x000090, "Wrong size on QuestsCountIconTabButton_C_Set_Icon");
 static_assert(offsetof(QuestsCountIconTabButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'QuestsCountIconTabButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.SetTutorialBorderStyle

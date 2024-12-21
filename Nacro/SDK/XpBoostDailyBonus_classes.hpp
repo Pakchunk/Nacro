@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBoostDailyBonus.XpBoostDailyBonus_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0250 - 0x0230)
 class UXpBoostDailyBonus_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       Boost;                                             // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortSZAwareImage*                      BoostIcon;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          IsBoosted;                                         // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UXpBoostDailyBonus_C>();
 	}
 };
-static_assert(alignof(UXpBoostDailyBonus_C) == 0x322CBBB8, "Wrong alignment on UXpBoostDailyBonus_C");
-static_assert(sizeof(UXpBoostDailyBonus_C) == 0x322CBBB8, "Wrong size on UXpBoostDailyBonus_C");
+static_assert(alignof(UXpBoostDailyBonus_C) == 0x000008, "Wrong alignment on UXpBoostDailyBonus_C");
+static_assert(sizeof(UXpBoostDailyBonus_C) == 0x000250, "Wrong size on UXpBoostDailyBonus_C");
 static_assert(offsetof(UXpBoostDailyBonus_C, UberGraphFrame) == 0x000230, "Member 'UXpBoostDailyBonus_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UXpBoostDailyBonus_C, Boost) == 0x000238, "Member 'UXpBoostDailyBonus_C::Boost' has a wrong offset!");
 static_assert(offsetof(UXpBoostDailyBonus_C, BoostIcon) == 0x000240, "Member 'UXpBoostDailyBonus_C::BoostIcon' has a wrong offset!");

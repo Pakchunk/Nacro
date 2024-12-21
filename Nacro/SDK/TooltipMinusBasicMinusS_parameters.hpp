@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.ExecuteUbergraph_Tooltip-Basic-S
-// 0x1290 (0x1290 - 0x0000)
-struct alignas(0x1290) TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS final
+// 0x0020 (0x0020 - 0x0000)
+struct TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select5_Default;                            // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS) == 0x001290, "Wrong alignment on TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS");
-static_assert(sizeof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS) == 0x001290, "Wrong size on TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS");
+static_assert(alignof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS) == 0x000004, "Wrong alignment on TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS");
+static_assert(sizeof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS) == 0x000020, "Wrong size on TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS");
 static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, EntryPoint) == 0x000000, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_bool_Variable) == 0x000004, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS, Temp_byte_Variable) == 0x000005, "Member 'TooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS::Temp_byte_Variable' has a wrong offset!");
@@ -105,15 +105,15 @@ static_assert(sizeof(TooltipMinusBasicMinusS_C_Get_Header_Text) == 0x000018, "Wr
 static_assert(offsetof(TooltipMinusBasicMinusS_C_Get_Header_Text, ReturnValue) == 0x000000, "Member 'TooltipMinusBasicMinusS_C_Get_Header_Text::ReturnValue' has a wrong offset!");
 
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Icon Brush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct TooltipMinusBasicMinusS_C_Get_Icon_Brush final
 {
 public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm)
-	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x322CBBB8)()
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm)
+	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x0090)()
 };
-static_assert(alignof(TooltipMinusBasicMinusS_C_Get_Icon_Brush) == 0x11827900, "Wrong alignment on TooltipMinusBasicMinusS_C_Get_Icon_Brush");
-static_assert(sizeof(TooltipMinusBasicMinusS_C_Get_Icon_Brush) == 0x11827900, "Wrong size on TooltipMinusBasicMinusS_C_Get_Icon_Brush");
+static_assert(alignof(TooltipMinusBasicMinusS_C_Get_Icon_Brush) == 0x000008, "Wrong alignment on TooltipMinusBasicMinusS_C_Get_Icon_Brush");
+static_assert(sizeof(TooltipMinusBasicMinusS_C_Get_Icon_Brush) == 0x000120, "Wrong size on TooltipMinusBasicMinusS_C_Get_Icon_Brush");
 static_assert(offsetof(TooltipMinusBasicMinusS_C_Get_Icon_Brush, ReturnValue) == 0x000000, "Member 'TooltipMinusBasicMinusS_C_Get_Icon_Brush::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TooltipMinusBasicMinusS_C_Get_Icon_Brush, CallFunc_MakeBrushFromAsset_ReturnValue) == 0x000090, "Member 'TooltipMinusBasicMinusS_C_Get_Icon_Brush::CallFunc_MakeBrushFromAsset_ReturnValue' has a wrong offset!");
 

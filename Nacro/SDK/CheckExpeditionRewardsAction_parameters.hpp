@@ -20,13 +20,13 @@ namespace SDK::Params
 {
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.ExecuteUbergraph_CheckExpeditionRewardsAction
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortScriptedActionParams              K2Node_Event_Params;                               // 0x0008(0x1182EB00)(ConstParm, NoDestructor)
+	struct FFortScriptedActionParams              K2Node_Event_Params;                               // 0x0008(0x0030)(ConstParm, NoDestructor)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -35,10 +35,10 @@ public:
 	bool                                          CallFunc_Is_FrontEndRewards_Running_bRunning;      // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0060(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0060(0x0008)(NoDestructor)
 };
-static_assert(alignof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction) == 0x11821D80, "Wrong alignment on CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction) == 0x11821D80, "Wrong size on CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction");
+static_assert(alignof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction) == 0x000068, "Wrong size on CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction, EntryPoint) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction, K2Node_Event_Params) == 0x000008, "Member 'CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction::K2Node_Event_Params' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000038, "Member 'CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
@@ -51,14 +51,14 @@ static_assert(offsetof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpe
 static_assert(offsetof(CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000060, "Member 'CheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Execute
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct CheckExpeditionRewardsAction_C_Execute final
 {
 public:
-	struct FFortScriptedActionParams              Params_0;                                          // 0x0000(0x1182EB00)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortScriptedActionParams              Params_0;                                          // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(CheckExpeditionRewardsAction_C_Execute) == 0x11821780, "Wrong alignment on CheckExpeditionRewardsAction_C_Execute");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_Execute) == 0x11821780, "Wrong size on CheckExpeditionRewardsAction_C_Execute");
+static_assert(alignof(CheckExpeditionRewardsAction_C_Execute) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_Execute");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_Execute) == 0x000030, "Wrong size on CheckExpeditionRewardsAction_C_Execute");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Execute, Params_0) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_Execute::Params_0' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.CompleteRewardsAction
@@ -92,7 +92,7 @@ static_assert(offsetof(CheckExpeditionRewardsAction_C_GetCompletedQuests, CallFu
 static_assert(offsetof(CheckExpeditionRewardsAction_C_GetCompletedQuests, CallFunc_GetCompletedQuests_OutCompletedQuests) == 0x000020, "Member 'CheckExpeditionRewardsAction_C_GetCompletedQuests::CallFunc_GetCompletedQuests_OutCompletedQuests' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.PopulateCompletedQuests
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct CheckExpeditionRewardsAction_C_PopulateCompletedQuests final
 {
 public:
@@ -118,15 +118,15 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable2;                    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item2;                          // 0x0080(0x11821D80)(NoDestructor)
+	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item2;                          // 0x0080(0x0010)(NoDestructor)
 	class UFortQuestItem*                         K2Node_DynamicCast_AsFort_Quest_Item;              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisibleToUser_ReturnValue;              // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests) == 0x11821D80, "Wrong alignment on CheckExpeditionRewardsAction_C_PopulateCompletedQuests");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests) == 0x11821D80, "Wrong size on CheckExpeditionRewardsAction_C_PopulateCompletedQuests");
+static_assert(alignof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_PopulateCompletedQuests");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests) == 0x0000A8, "Wrong size on CheckExpeditionRewardsAction_C_PopulateCompletedQuests");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests, TempCompletedQuests) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_PopulateCompletedQuests::TempCompletedQuests' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests, TempNewQuests) == 0x000010, "Member 'CheckExpeditionRewardsAction_C_PopulateCompletedQuests::TempNewQuests' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'CheckExpeditionRewardsAction_C_PopulateCompletedQuests::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -151,8 +151,8 @@ static_assert(offsetof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests, C
 static_assert(offsetof(CheckExpeditionRewardsAction_C_PopulateCompletedQuests, CallFunc_IsVisibleToUser_ReturnValue) == 0x0000A0, "Member 'CheckExpeditionRewardsAction_C_PopulateCompletedQuests::CallFunc_IsVisibleToUser_ReturnValue' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.OpenFrontEndRewards
-// 0x005A (0x005A - 0x0000)
-struct alignas(0x1E) CheckExpeditionRewardsAction_C_OpenFrontEndRewards final
+// 0x0060 (0x0060 - 0x0000)
+struct CheckExpeditionRewardsAction_C_OpenFrontEndRewards final
 {
 public:
 	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -167,8 +167,8 @@ public:
 	class UFrontEndRewards_Widget_C*              K2Node_DynamicCast_AsFront_End_Rewards_Widget;     // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards) == 0x00001E, "Wrong alignment on CheckExpeditionRewardsAction_C_OpenFrontEndRewards");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards) == 0x00005A, "Wrong size on CheckExpeditionRewardsAction_C_OpenFrontEndRewards");
+static_assert(alignof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_OpenFrontEndRewards");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards) == 0x000060, "Wrong size on CheckExpeditionRewardsAction_C_OpenFrontEndRewards");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards, RewardsWidget) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_OpenFrontEndRewards::RewardsWidget' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'CheckExpeditionRewardsAction_C_OpenFrontEndRewards::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'CheckExpeditionRewardsAction_C_OpenFrontEndRewards::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
@@ -181,7 +181,7 @@ static_assert(offsetof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards, K2Nod
 static_assert(offsetof(CheckExpeditionRewardsAction_C_OpenFrontEndRewards, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'CheckExpeditionRewardsAction_C_OpenFrontEndRewards::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.PopulateExpeditionRewards
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct CheckExpeditionRewardsAction_C_PopulateExpeditionRewards final
 {
 public:
@@ -189,7 +189,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerController*                  CallFunc_Find_First_Valid_Player_Controller_FoundPC1; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimespan                              CallFunc_GetPlayerControllerUtcNowMcpOffset_ReturnValue; // 0x0020(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_GetPlayerControllerUtcNowMcpOffset_ReturnValue; // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -211,8 +211,8 @@ public:
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CheckExpeditionRewardsAction_C_PopulateExpeditionRewards) == 0x11821300, "Wrong alignment on CheckExpeditionRewardsAction_C_PopulateExpeditionRewards");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_PopulateExpeditionRewards) == 0x11821300, "Wrong size on CheckExpeditionRewardsAction_C_PopulateExpeditionRewards");
+static_assert(alignof(CheckExpeditionRewardsAction_C_PopulateExpeditionRewards) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_PopulateExpeditionRewards");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_PopulateExpeditionRewards) == 0x000088, "Wrong size on CheckExpeditionRewardsAction_C_PopulateExpeditionRewards");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_PopulateExpeditionRewards, CompletedExpeditions) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_PopulateExpeditionRewards::CompletedExpeditions' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_PopulateExpeditionRewards, Temp_int_Array_Index_Variable) == 0x000010, "Member 'CheckExpeditionRewardsAction_C_PopulateExpeditionRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_PopulateExpeditionRewards, CallFunc_Find_First_Valid_Player_Controller_FoundPC1) == 0x000018, "Member 'CheckExpeditionRewardsAction_C_PopulateExpeditionRewards::CallFunc_Find_First_Valid_Player_Controller_FoundPC1' has a wrong offset!");
@@ -266,19 +266,19 @@ static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeArray_Ar
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Clear, K2Node_MakeStruct_FrontEndRewards_Definition) == 0x000040, "Member 'CheckExpeditionRewardsAction_C_Clear::K2Node_MakeStruct_FrontEndRewards_Definition' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.HandleRewardsClaimError
-// 0x0038 (0x0038 - 0x0000)
-struct alignas(0x38) CheckExpeditionRewardsAction_C_HandleRewardsClaimError final
+// 0x0008 (0x0008 - 0x0000)
+struct CheckExpeditionRewardsAction_C_HandleRewardsClaimError final
 {
 public:
 	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CheckExpeditionRewardsAction_C_HandleRewardsClaimError) == 0x000038, "Wrong alignment on CheckExpeditionRewardsAction_C_HandleRewardsClaimError");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_HandleRewardsClaimError) == 0x000038, "Wrong size on CheckExpeditionRewardsAction_C_HandleRewardsClaimError");
+static_assert(alignof(CheckExpeditionRewardsAction_C_HandleRewardsClaimError) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_HandleRewardsClaimError");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_HandleRewardsClaimError) == 0x000008, "Wrong size on CheckExpeditionRewardsAction_C_HandleRewardsClaimError");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_HandleRewardsClaimError, RewardsWidget) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_HandleRewardsClaimError::RewardsWidget' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Is FrontEndRewards Running
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running final
+// 0x0028 (0x0028 - 0x0000)
+struct CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running final
 {
 public:
 	bool                                          bRunning;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -288,8 +288,8 @@ public:
 	class UFrontEndRewards_Widget_C*              K2Node_DynamicCast_AsFront_End_Rewards_Widget;     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running) == 0x0000E4, "Wrong alignment on CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running) == 0x0000E4, "Wrong size on CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running");
+static_assert(alignof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running) == 0x000028, "Wrong size on CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running, bRunning) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running::bRunning' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running, CallFunc_GetCachedWidget_ReturnValue) == 0x000010, "Member 'CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
@@ -297,8 +297,8 @@ static_assert(offsetof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'CheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Find First Valid Player Controller
-// 0x054E (0x054E - 0x0000)
-struct alignas(0x54E) CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller final
+// 0x0048 (0x0048 - 0x0000)
+struct CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller final
 {
 public:
 	class AFortPlayerController*                  FoundPC1;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -318,8 +318,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller) == 0x00054E, "Wrong alignment on CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller");
-static_assert(sizeof(CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller) == 0x00054E, "Wrong size on CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller");
+static_assert(alignof(CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller) == 0x000008, "Wrong alignment on CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller");
+static_assert(sizeof(CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller) == 0x000048, "Wrong size on CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller, FoundPC1) == 0x000000, "Member 'CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller::FoundPC1' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller, FoundPC) == 0x000008, "Member 'CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller::FoundPC' has a wrong offset!");
 static_assert(offsetof(CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'CheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");

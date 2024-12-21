@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-MediumButton-Disabled.TextStyle-MediumButton-Disabled_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusMediumButtonMinusDisabled_C final : public UTextStyleMinusMediumButton_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusMediumButtonMinusDisabled_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusMediumButtonMinusDisabled_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusMediumButtonMinusDisabled_C");
-static_assert(sizeof(UTextStyleMinusMediumButtonMinusDisabled_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusMediumButtonMinusDisabled_C");
+static_assert(alignof(UTextStyleMinusMediumButtonMinusDisabled_C) == 0x000008, "Wrong alignment on UTextStyleMinusMediumButtonMinusDisabled_C");
+static_assert(sizeof(UTextStyleMinusMediumButtonMinusDisabled_C) == 0x0000D0, "Wrong size on UTextStyleMinusMediumButtonMinusDisabled_C");
 
 }
 

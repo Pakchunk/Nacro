@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UItemManagementFocusSwitcher_C final : public UCommonUserWidget
 {
 public:
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementFocusSwitcher_C>();
 	}
 };
-static_assert(alignof(UItemManagementFocusSwitcher_C) == 0x322CBBB8, "Wrong alignment on UItemManagementFocusSwitcher_C");
-static_assert(sizeof(UItemManagementFocusSwitcher_C) == 0x322CBBB8, "Wrong size on UItemManagementFocusSwitcher_C");
+static_assert(alignof(UItemManagementFocusSwitcher_C) == 0x000008, "Wrong alignment on UItemManagementFocusSwitcher_C");
+static_assert(sizeof(UItemManagementFocusSwitcher_C) == 0x000258, "Wrong size on UItemManagementFocusSwitcher_C");
 static_assert(offsetof(UItemManagementFocusSwitcher_C, IconTabButton) == 0x000238, "Member 'UItemManagementFocusSwitcher_C::IconTabButton' has a wrong offset!");
 static_assert(offsetof(UItemManagementFocusSwitcher_C, TileViewA) == 0x000240, "Member 'UItemManagementFocusSwitcher_C::TileViewA' has a wrong offset!");
 static_assert(offsetof(UItemManagementFocusSwitcher_C, TileViewB) == 0x000248, "Member 'UItemManagementFocusSwitcher_C::TileViewB' has a wrong offset!");

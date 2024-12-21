@@ -61,12 +61,12 @@ enum class EParticleKey : uint8
 };
 
 // ScriptStruct MovieSceneTracks.MovieScene3DPathSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieScene3DPathSectionTemplate final : public FMovieSceneEvalTemplate
+// 0x0088 (0x00A0 - 0x0018)
+struct FMovieScene3DPathSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FGuid                                  PathGuid;                                          // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRichCurve                             TimingCurve;                                       // 0x0028(0x11828B00)(NativeAccessSpecifierPublic)
+	struct FGuid                                  PathGuid;                                          // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRichCurve                             TimingCurve;                                       // 0x0028(0x0070)(NativeAccessSpecifierPublic)
 	EMovieScene3DPathSection_Axis                 FrontAxisEnum;                                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMovieScene3DPathSection_Axis                 UpAxisEnum;                                        // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -75,145 +75,150 @@ public:
 	uint8                                         bForceUpright : 1;                                 // 0x009C(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieScene3DPathSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieScene3DPathSectionTemplate");
-static_assert(sizeof(FMovieScene3DPathSectionTemplate) == 0x11828C80, "Wrong size on FMovieScene3DPathSectionTemplate");
+static_assert(alignof(FMovieScene3DPathSectionTemplate) == 0x000008, "Wrong alignment on FMovieScene3DPathSectionTemplate");
+static_assert(sizeof(FMovieScene3DPathSectionTemplate) == 0x0000A0, "Wrong size on FMovieScene3DPathSectionTemplate");
 static_assert(offsetof(FMovieScene3DPathSectionTemplate, PathGuid) == 0x000018, "Member 'FMovieScene3DPathSectionTemplate::PathGuid' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DPathSectionTemplate, TimingCurve) == 0x000028, "Member 'FMovieScene3DPathSectionTemplate::TimingCurve' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DPathSectionTemplate, FrontAxisEnum) == 0x000098, "Member 'FMovieScene3DPathSectionTemplate::FrontAxisEnum' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DPathSectionTemplate, UpAxisEnum) == 0x000099, "Member 'FMovieScene3DPathSectionTemplate::UpAxisEnum' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneEventParameters
-// 0x11828C80 (0x11828C80 - 0x0000)
-struct alignas(0x11828C80) FMovieSceneEventParameters final
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) FMovieSceneEventParameters final
 {
 public:
 	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneEventParameters) == 0x11828C80, "Wrong alignment on FMovieSceneEventParameters");
-static_assert(sizeof(FMovieSceneEventParameters) == 0x11828C80, "Wrong size on FMovieSceneEventParameters");
+static_assert(alignof(FMovieSceneEventParameters) == 0x000008, "Wrong alignment on FMovieSceneEventParameters");
+static_assert(sizeof(FMovieSceneEventParameters) == 0x000018, "Wrong size on FMovieSceneEventParameters");
 
 // ScriptStruct MovieSceneTracks.EventPayload
-// 0x11828C80 (0x11828C80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FEventPayload final
 {
 public:
 	class FName                                   EventName;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMovieSceneEventParameters             Parameters;                                        // 0x0008(0x11828C80)(Edit, NativeAccessSpecifierPublic)
+	struct FMovieSceneEventParameters             Parameters;                                        // 0x0008(0x0018)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FEventPayload) == 0x11828C80, "Wrong alignment on FEventPayload");
-static_assert(sizeof(FEventPayload) == 0x11828C80, "Wrong size on FEventPayload");
+static_assert(alignof(FEventPayload) == 0x000008, "Wrong alignment on FEventPayload");
+static_assert(sizeof(FEventPayload) == 0x000020, "Wrong size on FEventPayload");
 static_assert(offsetof(FEventPayload, EventName) == 0x000000, "Member 'FEventPayload::EventName' has a wrong offset!");
 static_assert(offsetof(FEventPayload, Parameters) == 0x000008, "Member 'FEventPayload::Parameters' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneEventSectionData
-// 0x11828C80 (0x11828C80 - 0x0000)
-struct alignas(0x11828C80) FMovieSceneEventSectionData final
+// 0x0020 (0x0020 - 0x0000)
+struct FMovieSceneEventSectionData final
 {
 public:
 	TArray<float>                                 KeyTimes;                                          // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FEventPayload>                  KeyValues;                                         // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneEventSectionData) == 0x11828C80, "Wrong alignment on FMovieSceneEventSectionData");
-static_assert(sizeof(FMovieSceneEventSectionData) == 0x11828C80, "Wrong size on FMovieSceneEventSectionData");
+static_assert(alignof(FMovieSceneEventSectionData) == 0x000008, "Wrong alignment on FMovieSceneEventSectionData");
+static_assert(sizeof(FMovieSceneEventSectionData) == 0x000020, "Wrong size on FMovieSceneEventSectionData");
 static_assert(offsetof(FMovieSceneEventSectionData, KeyTimes) == 0x000000, "Member 'FMovieSceneEventSectionData::KeyTimes' has a wrong offset!");
 static_assert(offsetof(FMovieSceneEventSectionData, KeyValues) == 0x000010, "Member 'FMovieSceneEventSectionData::KeyValues' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieScene3DLocationKeyStruct
-// 0x6F00 (0x11828C80 - 0x11821D80)
-struct alignas(0x11828C80) FMovieScene3DLocationKeyStruct final : public FMovieSceneKeyStruct
+// 0x0028 (0x0030 - 0x0008)
+struct FMovieScene3DLocationKeyStruct final : public FMovieSceneKeyStruct
 {
 public:
-	struct FVector                                Location;                                          // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0008(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x1C];                                      // 0x0014(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieScene3DLocationKeyStruct) == 0x11828C80, "Wrong alignment on FMovieScene3DLocationKeyStruct");
-static_assert(sizeof(FMovieScene3DLocationKeyStruct) == 0x11828C80, "Wrong size on FMovieScene3DLocationKeyStruct");
+static_assert(alignof(FMovieScene3DLocationKeyStruct) == 0x000008, "Wrong alignment on FMovieScene3DLocationKeyStruct");
+static_assert(sizeof(FMovieScene3DLocationKeyStruct) == 0x000030, "Wrong size on FMovieScene3DLocationKeyStruct");
 static_assert(offsetof(FMovieScene3DLocationKeyStruct, Location) == 0x000008, "Member 'FMovieScene3DLocationKeyStruct::Location' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieScene3DTransformKeyStruct
-// 0x6F00 (0x11828C80 - 0x11821D80)
-struct alignas(0x11828C80) FMovieScene3DTransformKeyStruct final : public FMovieSceneKeyStruct
+// 0x0070 (0x0078 - 0x0008)
+struct FMovieScene3DTransformKeyStruct final : public FMovieSceneKeyStruct
 {
 public:
-	struct FVector                                Location;                                          // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               Rotation;                                          // 0x0014(0x11821300)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                Scale;                                             // 0x0020(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0008(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               Rotation;                                          // 0x0014(0x000C)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                Scale;                                             // 0x0020(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4C];                                      // 0x002C(0x004C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieScene3DTransformKeyStruct) == 0x11828C80, "Wrong alignment on FMovieScene3DTransformKeyStruct");
-static_assert(sizeof(FMovieScene3DTransformKeyStruct) == 0x11828C80, "Wrong size on FMovieScene3DTransformKeyStruct");
+static_assert(alignof(FMovieScene3DTransformKeyStruct) == 0x000008, "Wrong alignment on FMovieScene3DTransformKeyStruct");
+static_assert(sizeof(FMovieScene3DTransformKeyStruct) == 0x000078, "Wrong size on FMovieScene3DTransformKeyStruct");
 static_assert(offsetof(FMovieScene3DTransformKeyStruct, Location) == 0x000008, "Member 'FMovieScene3DTransformKeyStruct::Location' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DTransformKeyStruct, Rotation) == 0x000014, "Member 'FMovieScene3DTransformKeyStruct::Rotation' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DTransformKeyStruct, Scale) == 0x000020, "Member 'FMovieScene3DTransformKeyStruct::Scale' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieScene3DScaleKeyStruct
-// 0x6F00 (0x11828C80 - 0x11821D80)
-struct alignas(0x11828C80) FMovieScene3DScaleKeyStruct final : public FMovieSceneKeyStruct
+// 0x0028 (0x0030 - 0x0008)
+struct FMovieScene3DScaleKeyStruct final : public FMovieSceneKeyStruct
 {
 public:
-	struct FVector                                Scale;                                             // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Scale;                                             // 0x0008(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x1C];                                      // 0x0014(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieScene3DScaleKeyStruct) == 0x11828C80, "Wrong alignment on FMovieScene3DScaleKeyStruct");
-static_assert(sizeof(FMovieScene3DScaleKeyStruct) == 0x11828C80, "Wrong size on FMovieScene3DScaleKeyStruct");
+static_assert(alignof(FMovieScene3DScaleKeyStruct) == 0x000008, "Wrong alignment on FMovieScene3DScaleKeyStruct");
+static_assert(sizeof(FMovieScene3DScaleKeyStruct) == 0x000030, "Wrong size on FMovieScene3DScaleKeyStruct");
 static_assert(offsetof(FMovieScene3DScaleKeyStruct, Scale) == 0x000008, "Member 'FMovieScene3DScaleKeyStruct::Scale' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneColorKeyStruct
-// 0x6F00 (0x11828C80 - 0x11821D80)
-struct alignas(0x11828C80) FMovieSceneColorKeyStruct final : public FMovieSceneKeyStruct
+// 0x0050 (0x0058 - 0x0008)
+struct FMovieSceneColorKeyStruct final : public FMovieSceneKeyStruct
 {
 public:
-	struct FLinearColor                           Color;                                             // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18[0x40];                                      // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneColorKeyStruct) == 0x11828C80, "Wrong alignment on FMovieSceneColorKeyStruct");
-static_assert(sizeof(FMovieSceneColorKeyStruct) == 0x11828C80, "Wrong size on FMovieSceneColorKeyStruct");
+static_assert(alignof(FMovieSceneColorKeyStruct) == 0x000008, "Wrong alignment on FMovieSceneColorKeyStruct");
+static_assert(sizeof(FMovieSceneColorKeyStruct) == 0x000058, "Wrong size on FMovieSceneColorKeyStruct");
 static_assert(offsetof(FMovieSceneColorKeyStruct, Color) == 0x000008, "Member 'FMovieSceneColorKeyStruct::Color' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneFadeSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneFadeSectionTemplate final : public FMovieSceneEvalTemplate
+// 0x0088 (0x00A0 - 0x0018)
+struct FMovieSceneFadeSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FRichCurve                             FadeCurve;                                         // 0x0018(0x11828B00)(NativeAccessSpecifierPrivate)
-	struct FLinearColor                           FadeColor;                                         // 0x0088(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FRichCurve                             FadeCurve;                                         // 0x0018(0x0070)(NativeAccessSpecifierPrivate)
+	struct FLinearColor                           FadeColor;                                         // 0x0088(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bFadeAudio : 1;                                    // 0x0098(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneFadeSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneFadeSectionTemplate");
-static_assert(sizeof(FMovieSceneFadeSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneFadeSectionTemplate");
+static_assert(alignof(FMovieSceneFadeSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneFadeSectionTemplate");
+static_assert(sizeof(FMovieSceneFadeSectionTemplate) == 0x0000A0, "Wrong size on FMovieSceneFadeSectionTemplate");
 static_assert(offsetof(FMovieSceneFadeSectionTemplate, FadeCurve) == 0x000018, "Member 'FMovieSceneFadeSectionTemplate::FadeCurve' has a wrong offset!");
 static_assert(offsetof(FMovieSceneFadeSectionTemplate, FadeColor) == 0x000088, "Member 'FMovieSceneFadeSectionTemplate::FadeColor' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieScene3DRotationKeyStruct
-// 0x6F00 (0x11828C80 - 0x11821D80)
-struct alignas(0x11828C80) FMovieScene3DRotationKeyStruct final : public FMovieSceneKeyStruct
+// 0x0028 (0x0030 - 0x0008)
+struct FMovieScene3DRotationKeyStruct final : public FMovieSceneKeyStruct
 {
 public:
-	struct FRotator                               Rotation;                                          // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRotator                               Rotation;                                          // 0x0008(0x000C)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x1C];                                      // 0x0014(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieScene3DRotationKeyStruct) == 0x11828C80, "Wrong alignment on FMovieScene3DRotationKeyStruct");
-static_assert(sizeof(FMovieScene3DRotationKeyStruct) == 0x11828C80, "Wrong size on FMovieScene3DRotationKeyStruct");
+static_assert(alignof(FMovieScene3DRotationKeyStruct) == 0x000008, "Wrong alignment on FMovieScene3DRotationKeyStruct");
+static_assert(sizeof(FMovieScene3DRotationKeyStruct) == 0x000030, "Wrong size on FMovieScene3DRotationKeyStruct");
 static_assert(offsetof(FMovieScene3DRotationKeyStruct, Rotation) == 0x000008, "Member 'FMovieScene3DRotationKeyStruct::Rotation' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneLevelVisibilitySharedTrack
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneLevelVisibilitySharedTrack final : public FMovieSceneEvalTemplate
+// 0x0000 (0x0018 - 0x0018)
+struct FMovieSceneLevelVisibilitySharedTrack final : public FMovieSceneEvalTemplate
 {
 };
-static_assert(alignof(FMovieSceneLevelVisibilitySharedTrack) == 0x11828C80, "Wrong alignment on FMovieSceneLevelVisibilitySharedTrack");
-static_assert(sizeof(FMovieSceneLevelVisibilitySharedTrack) == 0x11828C80, "Wrong size on FMovieSceneLevelVisibilitySharedTrack");
+static_assert(alignof(FMovieSceneLevelVisibilitySharedTrack) == 0x000008, "Wrong alignment on FMovieSceneLevelVisibilitySharedTrack");
+static_assert(sizeof(FMovieSceneLevelVisibilitySharedTrack) == 0x000018, "Wrong size on FMovieSceneLevelVisibilitySharedTrack");
 
 // ScriptStruct MovieSceneTracks.MovieSceneSpawnSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0070 (0x0088 - 0x0018)
 struct FMovieSceneSpawnSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FIntegralCurve                         Curve;                                             // 0x0018(0x11828C80)(NativeAccessSpecifierPrivate)
+	struct FIntegralCurve                         Curve;                                             // 0x0018(0x0070)(NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneSpawnSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneSpawnSectionTemplate");
-static_assert(sizeof(FMovieSceneSpawnSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneSpawnSectionTemplate");
+static_assert(alignof(FMovieSceneSpawnSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneSpawnSectionTemplate");
+static_assert(sizeof(FMovieSceneSpawnSectionTemplate) == 0x000088, "Wrong size on FMovieSceneSpawnSectionTemplate");
 static_assert(offsetof(FMovieSceneSpawnSectionTemplate, Curve) == 0x000018, "Member 'FMovieSceneSpawnSectionTemplate::Curve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneCameraAnimSectionData
-// 0x11828C80 (0x11828C80 - 0x0000)
-struct alignas(0x11828C80) FMovieSceneCameraAnimSectionData final
+// 0x0020 (0x0020 - 0x0000)
+struct FMovieSceneCameraAnimSectionData final
 {
 public:
 	class UCameraAnim*                            CameraAnim;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -224,8 +229,8 @@ public:
 	bool                                          bLooping;                                          // 0x0018(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneCameraAnimSectionData) == 0x11828C80, "Wrong alignment on FMovieSceneCameraAnimSectionData");
-static_assert(sizeof(FMovieSceneCameraAnimSectionData) == 0x11828C80, "Wrong size on FMovieSceneCameraAnimSectionData");
+static_assert(alignof(FMovieSceneCameraAnimSectionData) == 0x000008, "Wrong alignment on FMovieSceneCameraAnimSectionData");
+static_assert(sizeof(FMovieSceneCameraAnimSectionData) == 0x000020, "Wrong size on FMovieSceneCameraAnimSectionData");
 static_assert(offsetof(FMovieSceneCameraAnimSectionData, CameraAnim) == 0x000000, "Member 'FMovieSceneCameraAnimSectionData::CameraAnim' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCameraAnimSectionData, PlayRate) == 0x000008, "Member 'FMovieSceneCameraAnimSectionData::PlayRate' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCameraAnimSectionData, PlayScale) == 0x00000C, "Member 'FMovieSceneCameraAnimSectionData::PlayScale' has a wrong offset!");
@@ -234,62 +239,63 @@ static_assert(offsetof(FMovieSceneCameraAnimSectionData, BlendOutTime) == 0x0000
 static_assert(offsetof(FMovieSceneCameraAnimSectionData, bLooping) == 0x000018, "Member 'FMovieSceneCameraAnimSectionData::bLooping' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneParticleSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0070 (0x0088 - 0x0018)
 struct FMovieSceneParticleSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FIntegralCurve                         ParticleKeys;                                      // 0x0018(0x11828C80)(NativeAccessSpecifierPublic)
+	struct FIntegralCurve                         ParticleKeys;                                      // 0x0018(0x0070)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneParticleSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneParticleSectionTemplate");
-static_assert(sizeof(FMovieSceneParticleSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneParticleSectionTemplate");
+static_assert(alignof(FMovieSceneParticleSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneParticleSectionTemplate");
+static_assert(sizeof(FMovieSceneParticleSectionTemplate) == 0x000088, "Wrong size on FMovieSceneParticleSectionTemplate");
 static_assert(offsetof(FMovieSceneParticleSectionTemplate, ParticleKeys) == 0x000018, "Member 'FMovieSceneParticleSectionTemplate::ParticleKeys' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionData
-// 0x11828C80 (0x11828C80 - 0x0000)
-struct alignas(0x11828C80) FMovieSceneCameraShakeSectionData final
+// 0x0020 (0x0020 - 0x0000)
+struct FMovieSceneCameraShakeSectionData final
 {
 public:
 	TSubclassOf<class UCameraShake>               ShakeClass;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PlayScale;                                         // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECameraAnimPlaySpace                          PlaySpace;                                         // 0x000C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               UserDefinedPlaySpace;                              // 0x0010(0x11821300)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRotator                               UserDefinedPlaySpace;                              // 0x0010(0x000C)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneCameraShakeSectionData) == 0x11828C80, "Wrong alignment on FMovieSceneCameraShakeSectionData");
-static_assert(sizeof(FMovieSceneCameraShakeSectionData) == 0x11828C80, "Wrong size on FMovieSceneCameraShakeSectionData");
+static_assert(alignof(FMovieSceneCameraShakeSectionData) == 0x000008, "Wrong alignment on FMovieSceneCameraShakeSectionData");
+static_assert(sizeof(FMovieSceneCameraShakeSectionData) == 0x000020, "Wrong size on FMovieSceneCameraShakeSectionData");
 static_assert(offsetof(FMovieSceneCameraShakeSectionData, ShakeClass) == 0x000000, "Member 'FMovieSceneCameraShakeSectionData::ShakeClass' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCameraShakeSectionData, PlayScale) == 0x000008, "Member 'FMovieSceneCameraShakeSectionData::PlayScale' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCameraShakeSectionData, PlaySpace) == 0x00000C, "Member 'FMovieSceneCameraShakeSectionData::PlaySpace' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCameraShakeSectionData, UserDefinedPlaySpace) == 0x000010, "Member 'FMovieSceneCameraShakeSectionData::UserDefinedPlaySpace' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneIntegerPropertySectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0090 (0x00A8 - 0x0018)
 struct FMovieSceneIntegerPropertySectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x11828B00)(Protected, NativeAccessSpecifierProtected)
-	struct FIntegralCurve                         IntegerCurve;                                      // 0x0038(0x11828C80)(Protected, NativeAccessSpecifierProtected)
+	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x0020)(Protected, NativeAccessSpecifierProtected)
+	struct FIntegralCurve                         IntegerCurve;                                      // 0x0038(0x0070)(Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMovieSceneIntegerPropertySectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneIntegerPropertySectionTemplate");
-static_assert(sizeof(FMovieSceneIntegerPropertySectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneIntegerPropertySectionTemplate");
+static_assert(alignof(FMovieSceneIntegerPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneIntegerPropertySectionTemplate");
+static_assert(sizeof(FMovieSceneIntegerPropertySectionTemplate) == 0x0000A8, "Wrong size on FMovieSceneIntegerPropertySectionTemplate");
 static_assert(offsetof(FMovieSceneIntegerPropertySectionTemplate, PropertyData) == 0x000018, "Member 'FMovieSceneIntegerPropertySectionTemplate::PropertyData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneIntegerPropertySectionTemplate, IntegerCurve) == 0x000038, "Member 'FMovieSceneIntegerPropertySectionTemplate::IntegerCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.ColorParameterNameAndCurves
-// 0x11828C80 (0x11828C80 - 0x0000)
-struct alignas(0x11828C80) FColorParameterNameAndCurves final
+// 0x01D0 (0x01D0 - 0x0000)
+struct FColorParameterNameAndCurves final
 {
 public:
 	class FName                                   ParameterName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Index;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRichCurve                             RedCurve;                                          // 0x0010(0x11828B00)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             GreenCurve;                                        // 0x0080(0x11828B00)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             BlueCurve;                                         // 0x00F0(0x11828B00)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             AlphaCurve;                                        // 0x0160(0x11828B00)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             RedCurve;                                          // 0x0010(0x0070)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             GreenCurve;                                        // 0x0080(0x0070)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             BlueCurve;                                         // 0x00F0(0x0070)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             AlphaCurve;                                        // 0x0160(0x0070)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FColorParameterNameAndCurves) == 0x11828C80, "Wrong alignment on FColorParameterNameAndCurves");
-static_assert(sizeof(FColorParameterNameAndCurves) == 0x11828C80, "Wrong size on FColorParameterNameAndCurves");
+static_assert(alignof(FColorParameterNameAndCurves) == 0x000008, "Wrong alignment on FColorParameterNameAndCurves");
+static_assert(sizeof(FColorParameterNameAndCurves) == 0x0001D0, "Wrong size on FColorParameterNameAndCurves");
 static_assert(offsetof(FColorParameterNameAndCurves, ParameterName) == 0x000000, "Member 'FColorParameterNameAndCurves::ParameterName' has a wrong offset!");
 static_assert(offsetof(FColorParameterNameAndCurves, Index) == 0x000008, "Member 'FColorParameterNameAndCurves::Index' has a wrong offset!");
 static_assert(offsetof(FColorParameterNameAndCurves, RedCurve) == 0x000010, "Member 'FColorParameterNameAndCurves::RedCurve' has a wrong offset!");
@@ -298,19 +304,19 @@ static_assert(offsetof(FColorParameterNameAndCurves, BlueCurve) == 0x0000F0, "Me
 static_assert(offsetof(FColorParameterNameAndCurves, AlphaCurve) == 0x000160, "Member 'FColorParameterNameAndCurves::AlphaCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.VectorParameterNameAndCurves
-// 0x11828C80 (0x11828C80 - 0x0000)
-struct alignas(0x11828C80) FVectorParameterNameAndCurves final
+// 0x0160 (0x0160 - 0x0000)
+struct FVectorParameterNameAndCurves final
 {
 public:
 	class FName                                   ParameterName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Index;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRichCurve                             XCurve;                                            // 0x0010(0x11828B00)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             YCurve;                                            // 0x0080(0x11828B00)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             ZCurve;                                            // 0x00F0(0x11828B00)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             XCurve;                                            // 0x0010(0x0070)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             YCurve;                                            // 0x0080(0x0070)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             ZCurve;                                            // 0x00F0(0x0070)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FVectorParameterNameAndCurves) == 0x11828C80, "Wrong alignment on FVectorParameterNameAndCurves");
-static_assert(sizeof(FVectorParameterNameAndCurves) == 0x11828C80, "Wrong size on FVectorParameterNameAndCurves");
+static_assert(alignof(FVectorParameterNameAndCurves) == 0x000008, "Wrong alignment on FVectorParameterNameAndCurves");
+static_assert(sizeof(FVectorParameterNameAndCurves) == 0x000160, "Wrong size on FVectorParameterNameAndCurves");
 static_assert(offsetof(FVectorParameterNameAndCurves, ParameterName) == 0x000000, "Member 'FVectorParameterNameAndCurves::ParameterName' has a wrong offset!");
 static_assert(offsetof(FVectorParameterNameAndCurves, Index) == 0x000008, "Member 'FVectorParameterNameAndCurves::Index' has a wrong offset!");
 static_assert(offsetof(FVectorParameterNameAndCurves, XCurve) == 0x000010, "Member 'FVectorParameterNameAndCurves::XCurve' has a wrong offset!");
@@ -318,25 +324,24 @@ static_assert(offsetof(FVectorParameterNameAndCurves, YCurve) == 0x000080, "Memb
 static_assert(offsetof(FVectorParameterNameAndCurves, ZCurve) == 0x0000F0, "Member 'FVectorParameterNameAndCurves::ZCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.ScalarParameterNameAndCurve
-// 0x11828C80 (0x11828C80 - 0x0000)
-struct alignas(0x11828C80) FScalarParameterNameAndCurve final
+// 0x0080 (0x0080 - 0x0000)
+struct FScalarParameterNameAndCurve final
 {
 public:
 	class FName                                   ParameterName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Index;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRichCurve                             ParameterCurve;                                    // 0x0010(0x11828B00)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             ParameterCurve;                                    // 0x0010(0x0070)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FScalarParameterNameAndCurve) == 0x11828C80, "Wrong alignment on FScalarParameterNameAndCurve");
-static_assert(sizeof(FScalarParameterNameAndCurve) == 0x11828C80, "Wrong size on FScalarParameterNameAndCurve");
+static_assert(alignof(FScalarParameterNameAndCurve) == 0x000008, "Wrong alignment on FScalarParameterNameAndCurve");
+static_assert(sizeof(FScalarParameterNameAndCurve) == 0x000080, "Wrong size on FScalarParameterNameAndCurve");
 static_assert(offsetof(FScalarParameterNameAndCurve, ParameterName) == 0x000000, "Member 'FScalarParameterNameAndCurve::ParameterName' has a wrong offset!");
 static_assert(offsetof(FScalarParameterNameAndCurve, Index) == 0x000008, "Member 'FScalarParameterNameAndCurve::Index' has a wrong offset!");
 static_assert(offsetof(FScalarParameterNameAndCurve, ParameterCurve) == 0x000010, "Member 'FScalarParameterNameAndCurve::ParameterCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationParams
-// 0x11828C80 (0x11828C80 - 0x0000)
-#pragma pack(push, 0x1)
-struct alignas(0x11828C80) FMovieSceneSkeletalAnimationParams
+// 0x0090 (0x0090 - 0x0000)
+struct FMovieSceneSkeletalAnimationParams
 {
 public:
 	class UAnimSequenceBase*                      Animation;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -346,11 +351,10 @@ public:
 	uint8                                         bReverse : 1;                                      // 0x0014(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   SlotName;                                          // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRichCurve                             Weight;                                            // 0x0020(0x11828B00)(Edit, NativeAccessSpecifierPublic)
+	struct FRichCurve                             Weight;                                            // 0x0020(0x0070)(Edit, NativeAccessSpecifierPublic)
 };
-#pragma pack(pop)
-static_assert(alignof(FMovieSceneSkeletalAnimationParams) == 0x11828C80, "Wrong alignment on FMovieSceneSkeletalAnimationParams");
-static_assert(sizeof(FMovieSceneSkeletalAnimationParams) == 0x11828C80, "Wrong size on FMovieSceneSkeletalAnimationParams");
+static_assert(alignof(FMovieSceneSkeletalAnimationParams) == 0x000008, "Wrong alignment on FMovieSceneSkeletalAnimationParams");
+static_assert(sizeof(FMovieSceneSkeletalAnimationParams) == 0x000090, "Wrong size on FMovieSceneSkeletalAnimationParams");
 static_assert(offsetof(FMovieSceneSkeletalAnimationParams, Animation) == 0x000000, "Member 'FMovieSceneSkeletalAnimationParams::Animation' has a wrong offset!");
 static_assert(offsetof(FMovieSceneSkeletalAnimationParams, StartOffset) == 0x000008, "Member 'FMovieSceneSkeletalAnimationParams::StartOffset' has a wrong offset!");
 static_assert(offsetof(FMovieSceneSkeletalAnimationParams, EndOffset) == 0x00000C, "Member 'FMovieSceneSkeletalAnimationParams::EndOffset' has a wrong offset!");
@@ -359,152 +363,152 @@ static_assert(offsetof(FMovieSceneSkeletalAnimationParams, SlotName) == 0x000018
 static_assert(offsetof(FMovieSceneSkeletalAnimationParams, Weight) == 0x000020, "Member 'FMovieSceneSkeletalAnimationParams::Weight' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneVectorKeyStructBase
-// 0x6F00 (0x11828C80 - 0x11821D80)
-#pragma pack(push, 0x1)
-struct alignas(0x11828C80) FMovieSceneVectorKeyStructBase : public FMovieSceneKeyStruct
+// 0x0040 (0x0048 - 0x0008)
+struct FMovieSceneVectorKeyStructBase : public FMovieSceneKeyStruct
 {
+public:
+	uint8                                         Pad_8[0x40];                                       // 0x0008(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-#pragma pack(pop)
-static_assert(alignof(FMovieSceneVectorKeyStructBase) == 0x11828C80, "Wrong alignment on FMovieSceneVectorKeyStructBase");
-static_assert(sizeof(FMovieSceneVectorKeyStructBase) == 0x11828C80, "Wrong size on FMovieSceneVectorKeyStructBase");
+static_assert(alignof(FMovieSceneVectorKeyStructBase) == 0x000008, "Wrong alignment on FMovieSceneVectorKeyStructBase");
+static_assert(sizeof(FMovieSceneVectorKeyStructBase) == 0x000048, "Wrong size on FMovieSceneVectorKeyStructBase");
 
 // ScriptStruct MovieSceneTracks.MovieSceneVector4KeyStruct
-// 0x0000 (0x11828C80 - 0x11828C80)
+// 0x0018 (0x0060 - 0x0048)
 struct FMovieSceneVector4KeyStruct final : public FMovieSceneVectorKeyStructBase
 {
 public:
 	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector4                               Vector;                                            // 0x0050(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector4                               Vector;                                            // 0x0050(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneVector4KeyStruct) == 0x11828C80, "Wrong alignment on FMovieSceneVector4KeyStruct");
-static_assert(sizeof(FMovieSceneVector4KeyStruct) == 0x11828C80, "Wrong size on FMovieSceneVector4KeyStruct");
+static_assert(alignof(FMovieSceneVector4KeyStruct) == 0x000010, "Wrong alignment on FMovieSceneVector4KeyStruct");
+static_assert(sizeof(FMovieSceneVector4KeyStruct) == 0x000060, "Wrong size on FMovieSceneVector4KeyStruct");
 static_assert(offsetof(FMovieSceneVector4KeyStruct, Vector) == 0x000050, "Member 'FMovieSceneVector4KeyStruct::Vector' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneVectorKeyStruct
-// 0x0000 (0x11828C80 - 0x11828C80)
+// 0x0010 (0x0058 - 0x0048)
 struct FMovieSceneVectorKeyStruct final : public FMovieSceneVectorKeyStructBase
 {
 public:
-	struct FVector                                Vector;                                            // 0x0048(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Vector;                                            // 0x0048(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneVectorKeyStruct) == 0x11828C80, "Wrong alignment on FMovieSceneVectorKeyStruct");
-static_assert(sizeof(FMovieSceneVectorKeyStruct) == 0x11828C80, "Wrong size on FMovieSceneVectorKeyStruct");
+static_assert(alignof(FMovieSceneVectorKeyStruct) == 0x000008, "Wrong alignment on FMovieSceneVectorKeyStruct");
+static_assert(sizeof(FMovieSceneVectorKeyStruct) == 0x000058, "Wrong size on FMovieSceneVectorKeyStruct");
 static_assert(offsetof(FMovieSceneVectorKeyStruct, Vector) == 0x000048, "Member 'FMovieSceneVectorKeyStruct::Vector' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneVector2DKeyStruct
-// 0x0000 (0x11828C80 - 0x11828C80)
+// 0x0008 (0x0050 - 0x0048)
 struct FMovieSceneVector2DKeyStruct final : public FMovieSceneVectorKeyStructBase
 {
 public:
-	struct FVector2D                              Vector;                                            // 0x0048(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Vector;                                            // 0x0048(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneVector2DKeyStruct) == 0x11828C80, "Wrong alignment on FMovieSceneVector2DKeyStruct");
-static_assert(sizeof(FMovieSceneVector2DKeyStruct) == 0x11828C80, "Wrong size on FMovieSceneVector2DKeyStruct");
+static_assert(alignof(FMovieSceneVector2DKeyStruct) == 0x000008, "Wrong alignment on FMovieSceneVector2DKeyStruct");
+static_assert(sizeof(FMovieSceneVector2DKeyStruct) == 0x000050, "Wrong size on FMovieSceneVector2DKeyStruct");
 static_assert(offsetof(FMovieSceneVector2DKeyStruct, Vector) == 0x000048, "Member 'FMovieSceneVector2DKeyStruct::Vector' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneParameterSectionTemplate
-// 0x0000 (0x11828980 - 0x11828980)
-#pragma pack(push, 0x1)
-struct alignas(0x11828980) FMovieSceneParameterSectionTemplate : public FMovieSceneEvalTemplate
+// 0x0030 (0x0048 - 0x0018)
+struct FMovieSceneParameterSectionTemplate : public FMovieSceneEvalTemplate
 {
 public:
 	TArray<struct FScalarParameterNameAndCurve>   Scalars;                                           // 0x0018(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<struct FVectorParameterNameAndCurves>  Vectors;                                           // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<struct FColorParameterNameAndCurves>   Colors;                                            // 0x0038(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 };
-#pragma pack(pop)
-static_assert(alignof(FMovieSceneParameterSectionTemplate) == 0x11828980, "Wrong alignment on FMovieSceneParameterSectionTemplate");
-static_assert(sizeof(FMovieSceneParameterSectionTemplate) == 0x11828980, "Wrong size on FMovieSceneParameterSectionTemplate");
+static_assert(alignof(FMovieSceneParameterSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneParameterSectionTemplate");
+static_assert(sizeof(FMovieSceneParameterSectionTemplate) == 0x000048, "Wrong size on FMovieSceneParameterSectionTemplate");
 static_assert(offsetof(FMovieSceneParameterSectionTemplate, Scalars) == 0x000018, "Member 'FMovieSceneParameterSectionTemplate::Scalars' has a wrong offset!");
 static_assert(offsetof(FMovieSceneParameterSectionTemplate, Vectors) == 0x000028, "Member 'FMovieSceneParameterSectionTemplate::Vectors' has a wrong offset!");
 static_assert(offsetof(FMovieSceneParameterSectionTemplate, Colors) == 0x000038, "Member 'FMovieSceneParameterSectionTemplate::Colors' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneComponentMaterialSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneComponentMaterialSectionTemplate final : public FMovieSceneParameterSectionTemplate
+// 0x0008 (0x0050 - 0x0048)
+struct FMovieSceneComponentMaterialSectionTemplate final : public FMovieSceneParameterSectionTemplate
 {
 public:
 	int32                                         MaterialIndex;                                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneComponentMaterialSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneComponentMaterialSectionTemplate");
-static_assert(sizeof(FMovieSceneComponentMaterialSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneComponentMaterialSectionTemplate");
+static_assert(alignof(FMovieSceneComponentMaterialSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneComponentMaterialSectionTemplate");
+static_assert(sizeof(FMovieSceneComponentMaterialSectionTemplate) == 0x000050, "Wrong size on FMovieSceneComponentMaterialSectionTemplate");
 static_assert(offsetof(FMovieSceneComponentMaterialSectionTemplate, MaterialIndex) == 0x000048, "Member 'FMovieSceneComponentMaterialSectionTemplate::MaterialIndex' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneEventSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0028 (0x0040 - 0x0018)
 struct FMovieSceneEventSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieSceneEventSectionData            EventData;                                         // 0x0018(0x11828C80)(NativeAccessSpecifierPublic)
+	struct FMovieSceneEventSectionData            EventData;                                         // 0x0018(0x0020)(NativeAccessSpecifierPublic)
 	uint8                                         bFireEventsWhenForwards : 1;                       // 0x0038(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bFireEventsWhenBackwards : 1;                      // 0x0038(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneEventSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneEventSectionTemplate");
-static_assert(sizeof(FMovieSceneEventSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneEventSectionTemplate");
+static_assert(alignof(FMovieSceneEventSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneEventSectionTemplate");
+static_assert(sizeof(FMovieSceneEventSectionTemplate) == 0x000040, "Wrong size on FMovieSceneEventSectionTemplate");
 static_assert(offsetof(FMovieSceneEventSectionTemplate, EventData) == 0x000018, "Member 'FMovieSceneEventSectionTemplate::EventData' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieScene3DAttachSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieScene3DAttachSectionTemplate final : public FMovieSceneEvalTemplate
+// 0x0020 (0x0038 - 0x0018)
+struct FMovieScene3DAttachSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FGuid                                  AttachGuid;                                        // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  AttachGuid;                                        // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   AttachSocketName;                                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   AttachComponentName;                               // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieScene3DAttachSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieScene3DAttachSectionTemplate");
-static_assert(sizeof(FMovieScene3DAttachSectionTemplate) == 0x11828C80, "Wrong size on FMovieScene3DAttachSectionTemplate");
+static_assert(alignof(FMovieScene3DAttachSectionTemplate) == 0x000008, "Wrong alignment on FMovieScene3DAttachSectionTemplate");
+static_assert(sizeof(FMovieScene3DAttachSectionTemplate) == 0x000038, "Wrong size on FMovieScene3DAttachSectionTemplate");
 static_assert(offsetof(FMovieScene3DAttachSectionTemplate, AttachGuid) == 0x000018, "Member 'FMovieScene3DAttachSectionTemplate::AttachGuid' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DAttachSectionTemplate, AttachSocketName) == 0x000028, "Member 'FMovieScene3DAttachSectionTemplate::AttachSocketName' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DAttachSectionTemplate, AttachComponentName) == 0x000030, "Member 'FMovieScene3DAttachSectionTemplate::AttachComponentName' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieScene3DTransformSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieScene3DTransformSectionTemplate final : public FMovieSceneEvalTemplate
+// 0x03F0 (0x0408 - 0x0018)
+struct FMovieScene3DTransformSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FRichCurve                             TranslationCurve[0x3];                             // 0x0018(0x11828B00)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             RotationCurve[0x3];                                // 0x0168(0x11828B00)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             ScaleCurve[0x3];                                   // 0x02B8(0x11828B00)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             TranslationCurve[0x3];                             // 0x0018(0x0070)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             RotationCurve[0x3];                                // 0x0168(0x0070)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             ScaleCurve[0x3];                                   // 0x02B8(0x0070)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieScene3DTransformSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieScene3DTransformSectionTemplate");
-static_assert(sizeof(FMovieScene3DTransformSectionTemplate) == 0x11828C80, "Wrong size on FMovieScene3DTransformSectionTemplate");
+static_assert(alignof(FMovieScene3DTransformSectionTemplate) == 0x000008, "Wrong alignment on FMovieScene3DTransformSectionTemplate");
+static_assert(sizeof(FMovieScene3DTransformSectionTemplate) == 0x000408, "Wrong size on FMovieScene3DTransformSectionTemplate");
 static_assert(offsetof(FMovieScene3DTransformSectionTemplate, TranslationCurve) == 0x000018, "Member 'FMovieScene3DTransformSectionTemplate::TranslationCurve' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DTransformSectionTemplate, RotationCurve) == 0x000168, "Member 'FMovieScene3DTransformSectionTemplate::RotationCurve' has a wrong offset!");
 static_assert(offsetof(FMovieScene3DTransformSectionTemplate, ScaleCurve) == 0x0002B8, "Member 'FMovieScene3DTransformSectionTemplate::ScaleCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneActorReferenceSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x00A0 (0x00B8 - 0x0018)
 struct FMovieSceneActorReferenceSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x11828B00)(NativeAccessSpecifierPrivate)
-	struct FIntegralCurve                         ActorGuidIndexCurve;                               // 0x0038(0x11828C80)(NativeAccessSpecifierPrivate)
+	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x0020)(NativeAccessSpecifierPrivate)
+	struct FIntegralCurve                         ActorGuidIndexCurve;                               // 0x0038(0x0070)(NativeAccessSpecifierPrivate)
 	TArray<struct FGuid>                          ActorGuids;                                        // 0x00A8(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneActorReferenceSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneActorReferenceSectionTemplate");
-static_assert(sizeof(FMovieSceneActorReferenceSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneActorReferenceSectionTemplate");
+static_assert(alignof(FMovieSceneActorReferenceSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneActorReferenceSectionTemplate");
+static_assert(sizeof(FMovieSceneActorReferenceSectionTemplate) == 0x0000B8, "Wrong size on FMovieSceneActorReferenceSectionTemplate");
 static_assert(offsetof(FMovieSceneActorReferenceSectionTemplate, PropertyData) == 0x000018, "Member 'FMovieSceneActorReferenceSectionTemplate::PropertyData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneActorReferenceSectionTemplate, ActorGuidIndexCurve) == 0x000038, "Member 'FMovieSceneActorReferenceSectionTemplate::ActorGuidIndexCurve' has a wrong offset!");
 static_assert(offsetof(FMovieSceneActorReferenceSectionTemplate, ActorGuids) == 0x0000A8, "Member 'FMovieSceneActorReferenceSectionTemplate::ActorGuids' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneAudioSectionTemplateData
-// 0x11828C80 (0x11828C80 - 0x0000)
-struct alignas(0x11828C80) FMovieSceneAudioSectionTemplateData final
+// 0x0108 (0x0108 - 0x0000)
+struct FMovieSceneAudioSectionTemplateData final
 {
 public:
 	class USoundBase*                             Sound;                                             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AudioStartOffset;                                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFloatRange                            AudioRange;                                        // 0x000C(0x11821300)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRichCurve                             AudioPitchMultiplierCurve;                         // 0x0020(0x11828B00)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             AudioVolumeCurve;                                  // 0x0090(0x11828B00)(NativeAccessSpecifierPublic)
+	struct FFloatRange                            AudioRange;                                        // 0x000C(0x0010)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRichCurve                             AudioPitchMultiplierCurve;                         // 0x0020(0x0070)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             AudioVolumeCurve;                                  // 0x0090(0x0070)(NativeAccessSpecifierPublic)
 	int32                                         RowIndex;                                          // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneAudioSectionTemplateData) == 0x11828C80, "Wrong alignment on FMovieSceneAudioSectionTemplateData");
-static_assert(sizeof(FMovieSceneAudioSectionTemplateData) == 0x11828C80, "Wrong size on FMovieSceneAudioSectionTemplateData");
+static_assert(alignof(FMovieSceneAudioSectionTemplateData) == 0x000008, "Wrong alignment on FMovieSceneAudioSectionTemplateData");
+static_assert(sizeof(FMovieSceneAudioSectionTemplateData) == 0x000108, "Wrong size on FMovieSceneAudioSectionTemplateData");
 static_assert(offsetof(FMovieSceneAudioSectionTemplateData, Sound) == 0x000000, "Member 'FMovieSceneAudioSectionTemplateData::Sound' has a wrong offset!");
 static_assert(offsetof(FMovieSceneAudioSectionTemplateData, AudioStartOffset) == 0x000008, "Member 'FMovieSceneAudioSectionTemplateData::AudioStartOffset' has a wrong offset!");
 static_assert(offsetof(FMovieSceneAudioSectionTemplateData, AudioRange) == 0x00000C, "Member 'FMovieSceneAudioSectionTemplateData::AudioRange' has a wrong offset!");
@@ -513,246 +517,242 @@ static_assert(offsetof(FMovieSceneAudioSectionTemplateData, AudioVolumeCurve) ==
 static_assert(offsetof(FMovieSceneAudioSectionTemplateData, RowIndex) == 0x000100, "Member 'FMovieSceneAudioSectionTemplateData::RowIndex' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneAudioSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0108 (0x0120 - 0x0018)
 struct FMovieSceneAudioSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieSceneAudioSectionTemplateData    AudioData;                                         // 0x0018(0x11828C80)(NativeAccessSpecifierPublic)
+	struct FMovieSceneAudioSectionTemplateData    AudioData;                                         // 0x0018(0x0108)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneAudioSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneAudioSectionTemplate");
-static_assert(sizeof(FMovieSceneAudioSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneAudioSectionTemplate");
+static_assert(alignof(FMovieSceneAudioSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneAudioSectionTemplate");
+static_assert(sizeof(FMovieSceneAudioSectionTemplate) == 0x000120, "Wrong size on FMovieSceneAudioSectionTemplate");
 static_assert(offsetof(FMovieSceneAudioSectionTemplate, AudioData) == 0x000018, "Member 'FMovieSceneAudioSectionTemplate::AudioData' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneBoolPropertySectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-#pragma pack(push, 0x1)
-struct alignas(0x11828C80) FMovieSceneBoolPropertySectionTemplate : public FMovieSceneEvalTemplate
+// 0x0090 (0x00A8 - 0x0018)
+struct FMovieSceneBoolPropertySectionTemplate : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x11828B00)(Protected, NativeAccessSpecifierProtected)
-	struct FIntegralCurve                         BoolCurve;                                         // 0x0038(0x11828C80)(Protected, NativeAccessSpecifierProtected)
+	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x0020)(Protected, NativeAccessSpecifierProtected)
+	struct FIntegralCurve                         BoolCurve;                                         // 0x0038(0x0070)(Protected, NativeAccessSpecifierProtected)
 };
-#pragma pack(pop)
-static_assert(alignof(FMovieSceneBoolPropertySectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneBoolPropertySectionTemplate");
-static_assert(sizeof(FMovieSceneBoolPropertySectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneBoolPropertySectionTemplate");
+static_assert(alignof(FMovieSceneBoolPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneBoolPropertySectionTemplate");
+static_assert(sizeof(FMovieSceneBoolPropertySectionTemplate) == 0x0000A8, "Wrong size on FMovieSceneBoolPropertySectionTemplate");
 static_assert(offsetof(FMovieSceneBoolPropertySectionTemplate, PropertyData) == 0x000018, "Member 'FMovieSceneBoolPropertySectionTemplate::PropertyData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneBoolPropertySectionTemplate, BoolCurve) == 0x000038, "Member 'FMovieSceneBoolPropertySectionTemplate::BoolCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneAdditiveCameraAnimationTrackTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneAdditiveCameraAnimationTrackTemplate final : public FMovieSceneEvalTemplate
+// 0x0000 (0x0018 - 0x0018)
+struct FMovieSceneAdditiveCameraAnimationTrackTemplate final : public FMovieSceneEvalTemplate
 {
 };
-static_assert(alignof(FMovieSceneAdditiveCameraAnimationTrackTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneAdditiveCameraAnimationTrackTemplate");
-static_assert(sizeof(FMovieSceneAdditiveCameraAnimationTrackTemplate) == 0x11828C80, "Wrong size on FMovieSceneAdditiveCameraAnimationTrackTemplate");
+static_assert(alignof(FMovieSceneAdditiveCameraAnimationTrackTemplate) == 0x000008, "Wrong alignment on FMovieSceneAdditiveCameraAnimationTrackTemplate");
+static_assert(sizeof(FMovieSceneAdditiveCameraAnimationTrackTemplate) == 0x000018, "Wrong size on FMovieSceneAdditiveCameraAnimationTrackTemplate");
 
 // ScriptStruct MovieSceneTracks.MovieSceneAdditiveCameraAnimationTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-#pragma pack(push, 0x1)
-struct alignas(0x11828C80) FMovieSceneAdditiveCameraAnimationTemplate : public FMovieSceneEvalTemplate
+// 0x0000 (0x0018 - 0x0018)
+struct FMovieSceneAdditiveCameraAnimationTemplate : public FMovieSceneEvalTemplate
 {
 };
-#pragma pack(pop)
-static_assert(alignof(FMovieSceneAdditiveCameraAnimationTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneAdditiveCameraAnimationTemplate");
-static_assert(sizeof(FMovieSceneAdditiveCameraAnimationTemplate) == 0x11828C80, "Wrong size on FMovieSceneAdditiveCameraAnimationTemplate");
+static_assert(alignof(FMovieSceneAdditiveCameraAnimationTemplate) == 0x000008, "Wrong alignment on FMovieSceneAdditiveCameraAnimationTemplate");
+static_assert(sizeof(FMovieSceneAdditiveCameraAnimationTemplate) == 0x000018, "Wrong size on FMovieSceneAdditiveCameraAnimationTemplate");
 
 // ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionTemplate
-// 0x0000 (0x11828C80 - 0x11828C80)
+// 0x0028 (0x0040 - 0x0018)
 struct FMovieSceneCameraShakeSectionTemplate final : public FMovieSceneAdditiveCameraAnimationTemplate
 {
 public:
-	struct FMovieSceneCameraShakeSectionData      SourceData;                                        // 0x0018(0x11828C80)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FMovieSceneCameraShakeSectionData      SourceData;                                        // 0x0018(0x0020)(NoDestructor, NativeAccessSpecifierPrivate)
 	float                                         SectionStartTime;                                  // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneCameraShakeSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneCameraShakeSectionTemplate");
-static_assert(sizeof(FMovieSceneCameraShakeSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneCameraShakeSectionTemplate");
+static_assert(alignof(FMovieSceneCameraShakeSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneCameraShakeSectionTemplate");
+static_assert(sizeof(FMovieSceneCameraShakeSectionTemplate) == 0x000040, "Wrong size on FMovieSceneCameraShakeSectionTemplate");
 static_assert(offsetof(FMovieSceneCameraShakeSectionTemplate, SourceData) == 0x000018, "Member 'FMovieSceneCameraShakeSectionTemplate::SourceData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCameraShakeSectionTemplate, SectionStartTime) == 0x000038, "Member 'FMovieSceneCameraShakeSectionTemplate::SectionStartTime' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneSlomoSectionTemplate
-// 0x0900 (0x11829280 - 0x11828980)
-struct alignas(0x11829280) FMovieSceneSlomoSectionTemplate final : public FMovieSceneEvalTemplate
+// 0x0070 (0x0088 - 0x0018)
+struct FMovieSceneSlomoSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FRichCurve                             SlomoCurve;                                        // 0x0018(0x11828B00)(NativeAccessSpecifierPrivate)
+	struct FRichCurve                             SlomoCurve;                                        // 0x0018(0x0070)(NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneSlomoSectionTemplate) == 0x11829280, "Wrong alignment on FMovieSceneSlomoSectionTemplate");
-static_assert(sizeof(FMovieSceneSlomoSectionTemplate) == 0x11829280, "Wrong size on FMovieSceneSlomoSectionTemplate");
+static_assert(alignof(FMovieSceneSlomoSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneSlomoSectionTemplate");
+static_assert(sizeof(FMovieSceneSlomoSectionTemplate) == 0x000088, "Wrong size on FMovieSceneSlomoSectionTemplate");
 static_assert(offsetof(FMovieSceneSlomoSectionTemplate, SlomoCurve) == 0x000018, "Member 'FMovieSceneSlomoSectionTemplate::SlomoCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneCameraAnimSectionTemplate
-// 0x0000 (0x11828C80 - 0x11828C80)
+// 0x0028 (0x0040 - 0x0018)
 struct FMovieSceneCameraAnimSectionTemplate final : public FMovieSceneAdditiveCameraAnimationTemplate
 {
 public:
-	struct FMovieSceneCameraAnimSectionData       SourceData;                                        // 0x0018(0x11828C80)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FMovieSceneCameraAnimSectionData       SourceData;                                        // 0x0018(0x0020)(NoDestructor, NativeAccessSpecifierPrivate)
 	float                                         SectionStartTime;                                  // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneCameraAnimSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneCameraAnimSectionTemplate");
-static_assert(sizeof(FMovieSceneCameraAnimSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneCameraAnimSectionTemplate");
+static_assert(alignof(FMovieSceneCameraAnimSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneCameraAnimSectionTemplate");
+static_assert(sizeof(FMovieSceneCameraAnimSectionTemplate) == 0x000040, "Wrong size on FMovieSceneCameraAnimSectionTemplate");
 static_assert(offsetof(FMovieSceneCameraAnimSectionTemplate, SourceData) == 0x000018, "Member 'FMovieSceneCameraAnimSectionTemplate::SourceData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCameraAnimSectionTemplate, SectionStartTime) == 0x000038, "Member 'FMovieSceneCameraAnimSectionTemplate::SectionStartTime' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneCameraCutSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneCameraCutSectionTemplate final : public FMovieSceneEvalTemplate
+// 0x0010 (0x0028 - 0x0018)
+struct FMovieSceneCameraCutSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FGuid                                  CameraGuid;                                        // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  CameraGuid;                                        // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneCameraCutSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneCameraCutSectionTemplate");
-static_assert(sizeof(FMovieSceneCameraCutSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneCameraCutSectionTemplate");
+static_assert(alignof(FMovieSceneCameraCutSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneCameraCutSectionTemplate");
+static_assert(sizeof(FMovieSceneCameraCutSectionTemplate) == 0x000028, "Wrong size on FMovieSceneCameraCutSectionTemplate");
 static_assert(offsetof(FMovieSceneCameraCutSectionTemplate, CameraGuid) == 0x000018, "Member 'FMovieSceneCameraCutSectionTemplate::CameraGuid' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneColorSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneColorSectionTemplate final : public FMovieSceneEvalTemplate
+// 0x01D8 (0x01F0 - 0x0018)
+struct FMovieSceneColorSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
 	class FName                                   PropertyName;                                      // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PropertyPath;                                      // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRichCurve                             Curves[0x4];                                       // 0x0030(0x11828B00)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             Curves[0x4];                                       // 0x0030(0x0070)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneColorSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneColorSectionTemplate");
-static_assert(sizeof(FMovieSceneColorSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneColorSectionTemplate");
+static_assert(alignof(FMovieSceneColorSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneColorSectionTemplate");
+static_assert(sizeof(FMovieSceneColorSectionTemplate) == 0x0001F0, "Wrong size on FMovieSceneColorSectionTemplate");
 static_assert(offsetof(FMovieSceneColorSectionTemplate, PropertyName) == 0x000018, "Member 'FMovieSceneColorSectionTemplate::PropertyName' has a wrong offset!");
 static_assert(offsetof(FMovieSceneColorSectionTemplate, PropertyPath) == 0x000020, "Member 'FMovieSceneColorSectionTemplate::PropertyPath' has a wrong offset!");
 static_assert(offsetof(FMovieSceneColorSectionTemplate, Curves) == 0x000030, "Member 'FMovieSceneColorSectionTemplate::Curves' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneLevelVisibilitySectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneLevelVisibilitySectionTemplate final : public FMovieSceneEvalTemplate
+// 0x0018 (0x0030 - 0x0018)
+struct FMovieSceneLevelVisibilitySectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
 	ELevelVisibility                              Visibility;                                        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           LevelNames;                                        // 0x0020(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FMovieSceneLevelVisibilitySectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneLevelVisibilitySectionTemplate");
-static_assert(sizeof(FMovieSceneLevelVisibilitySectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneLevelVisibilitySectionTemplate");
+static_assert(alignof(FMovieSceneLevelVisibilitySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneLevelVisibilitySectionTemplate");
+static_assert(sizeof(FMovieSceneLevelVisibilitySectionTemplate) == 0x000030, "Wrong size on FMovieSceneLevelVisibilitySectionTemplate");
 static_assert(offsetof(FMovieSceneLevelVisibilitySectionTemplate, Visibility) == 0x000018, "Member 'FMovieSceneLevelVisibilitySectionTemplate::Visibility' has a wrong offset!");
 static_assert(offsetof(FMovieSceneLevelVisibilitySectionTemplate, LevelNames) == 0x000020, "Member 'FMovieSceneLevelVisibilitySectionTemplate::LevelNames' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneParticleParameterSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneParticleParameterSectionTemplate final : public FMovieSceneParameterSectionTemplate
+// 0x0000 (0x0048 - 0x0048)
+struct FMovieSceneParticleParameterSectionTemplate final : public FMovieSceneParameterSectionTemplate
 {
 };
-static_assert(alignof(FMovieSceneParticleParameterSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneParticleParameterSectionTemplate");
-static_assert(sizeof(FMovieSceneParticleParameterSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneParticleParameterSectionTemplate");
+static_assert(alignof(FMovieSceneParticleParameterSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneParticleParameterSectionTemplate");
+static_assert(sizeof(FMovieSceneParticleParameterSectionTemplate) == 0x000048, "Wrong size on FMovieSceneParticleParameterSectionTemplate");
 
 // ScriptStruct MovieSceneTracks.MovieSceneVectorPropertySectionTemplate
-// 0x0180 (0x11828B00 - 0x11828980)
+// 0x01E8 (0x0200 - 0x0018)
 struct FMovieSceneVectorPropertySectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x11828B00)(Protected, NativeAccessSpecifierProtected)
-	struct FRichCurve                             ComponentCurves[0x4];                              // 0x0038(0x11828B00)(Protected, NativeAccessSpecifierProtected)
+	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x0020)(Protected, NativeAccessSpecifierProtected)
+	struct FRichCurve                             ComponentCurves[0x4];                              // 0x0038(0x0070)(Protected, NativeAccessSpecifierProtected)
 	int32                                         NumChannelsUsed;                                   // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneVectorPropertySectionTemplate) == 0x11828B00, "Wrong alignment on FMovieSceneVectorPropertySectionTemplate");
-static_assert(sizeof(FMovieSceneVectorPropertySectionTemplate) == 0x11828B00, "Wrong size on FMovieSceneVectorPropertySectionTemplate");
+static_assert(alignof(FMovieSceneVectorPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneVectorPropertySectionTemplate");
+static_assert(sizeof(FMovieSceneVectorPropertySectionTemplate) == 0x000200, "Wrong size on FMovieSceneVectorPropertySectionTemplate");
 static_assert(offsetof(FMovieSceneVectorPropertySectionTemplate, PropertyData) == 0x000018, "Member 'FMovieSceneVectorPropertySectionTemplate::PropertyData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneVectorPropertySectionTemplate, ComponentCurves) == 0x000038, "Member 'FMovieSceneVectorPropertySectionTemplate::ComponentCurves' has a wrong offset!");
 static_assert(offsetof(FMovieSceneVectorPropertySectionTemplate, NumChannelsUsed) == 0x0001F8, "Member 'FMovieSceneVectorPropertySectionTemplate::NumChannelsUsed' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneStringPropertySectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0098 (0x00B0 - 0x0018)
 struct FMovieSceneStringPropertySectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x11828B00)(Protected, NativeAccessSpecifierProtected)
-	struct FStringCurve                           StringCurve;                                       // 0x0038(0x11828C80)(Protected, NativeAccessSpecifierProtected)
+	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x0020)(Protected, NativeAccessSpecifierProtected)
+	struct FStringCurve                           StringCurve;                                       // 0x0038(0x0078)(Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMovieSceneStringPropertySectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneStringPropertySectionTemplate");
-static_assert(sizeof(FMovieSceneStringPropertySectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneStringPropertySectionTemplate");
+static_assert(alignof(FMovieSceneStringPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneStringPropertySectionTemplate");
+static_assert(sizeof(FMovieSceneStringPropertySectionTemplate) == 0x0000B0, "Wrong size on FMovieSceneStringPropertySectionTemplate");
 static_assert(offsetof(FMovieSceneStringPropertySectionTemplate, PropertyData) == 0x000018, "Member 'FMovieSceneStringPropertySectionTemplate::PropertyData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneStringPropertySectionTemplate, StringCurve) == 0x000038, "Member 'FMovieSceneStringPropertySectionTemplate::StringCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneEnumPropertySectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0090 (0x00A8 - 0x0018)
 struct FMovieSceneEnumPropertySectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x11828B00)(Protected, NativeAccessSpecifierProtected)
-	struct FIntegralCurve                         EnumCurve;                                         // 0x0038(0x11828C80)(Protected, NativeAccessSpecifierProtected)
+	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x0020)(Protected, NativeAccessSpecifierProtected)
+	struct FIntegralCurve                         EnumCurve;                                         // 0x0038(0x0070)(Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMovieSceneEnumPropertySectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneEnumPropertySectionTemplate");
-static_assert(sizeof(FMovieSceneEnumPropertySectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneEnumPropertySectionTemplate");
+static_assert(alignof(FMovieSceneEnumPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneEnumPropertySectionTemplate");
+static_assert(sizeof(FMovieSceneEnumPropertySectionTemplate) == 0x0000A8, "Wrong size on FMovieSceneEnumPropertySectionTemplate");
 static_assert(offsetof(FMovieSceneEnumPropertySectionTemplate, PropertyData) == 0x000018, "Member 'FMovieSceneEnumPropertySectionTemplate::PropertyData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneEnumPropertySectionTemplate, EnumCurve) == 0x000038, "Member 'FMovieSceneEnumPropertySectionTemplate::EnumCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneBytePropertySectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0090 (0x00A8 - 0x0018)
 struct FMovieSceneBytePropertySectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x11828B00)(Protected, NativeAccessSpecifierProtected)
-	struct FIntegralCurve                         ByteCurve;                                         // 0x0038(0x11828C80)(Protected, NativeAccessSpecifierProtected)
+	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x0020)(Protected, NativeAccessSpecifierProtected)
+	struct FIntegralCurve                         ByteCurve;                                         // 0x0038(0x0070)(Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMovieSceneBytePropertySectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneBytePropertySectionTemplate");
-static_assert(sizeof(FMovieSceneBytePropertySectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneBytePropertySectionTemplate");
+static_assert(alignof(FMovieSceneBytePropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneBytePropertySectionTemplate");
+static_assert(sizeof(FMovieSceneBytePropertySectionTemplate) == 0x0000A8, "Wrong size on FMovieSceneBytePropertySectionTemplate");
 static_assert(offsetof(FMovieSceneBytePropertySectionTemplate, PropertyData) == 0x000018, "Member 'FMovieSceneBytePropertySectionTemplate::PropertyData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneBytePropertySectionTemplate, ByteCurve) == 0x000038, "Member 'FMovieSceneBytePropertySectionTemplate::ByteCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneFloatPropertySectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneFloatPropertySectionTemplate final : public FMovieSceneEvalTemplate
+// 0x0090 (0x00A8 - 0x0018)
+struct FMovieSceneFloatPropertySectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x11828B00)(Protected, NativeAccessSpecifierProtected)
-	struct FRichCurve                             FloatCurve;                                        // 0x0038(0x11828B00)(Protected, NativeAccessSpecifierProtected)
+	struct FMovieScenePropertySectionData         PropertyData;                                      // 0x0018(0x0020)(Protected, NativeAccessSpecifierProtected)
+	struct FRichCurve                             FloatCurve;                                        // 0x0038(0x0070)(Protected, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FMovieSceneFloatPropertySectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneFloatPropertySectionTemplate");
-static_assert(sizeof(FMovieSceneFloatPropertySectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneFloatPropertySectionTemplate");
+static_assert(alignof(FMovieSceneFloatPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneFloatPropertySectionTemplate");
+static_assert(sizeof(FMovieSceneFloatPropertySectionTemplate) == 0x0000A8, "Wrong size on FMovieSceneFloatPropertySectionTemplate");
 static_assert(offsetof(FMovieSceneFloatPropertySectionTemplate, PropertyData) == 0x000018, "Member 'FMovieSceneFloatPropertySectionTemplate::PropertyData' has a wrong offset!");
 static_assert(offsetof(FMovieSceneFloatPropertySectionTemplate, FloatCurve) == 0x000038, "Member 'FMovieSceneFloatPropertySectionTemplate::FloatCurve' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSharedTrack
-// 0x0300 (0x11828C80 - 0x11828980)
-struct alignas(0x11828C80) FMovieSceneSkeletalAnimationSharedTrack final : public FMovieSceneEvalTemplate
+// 0x0000 (0x0018 - 0x0018)
+struct FMovieSceneSkeletalAnimationSharedTrack final : public FMovieSceneEvalTemplate
 {
 };
-static_assert(alignof(FMovieSceneSkeletalAnimationSharedTrack) == 0x11828C80, "Wrong alignment on FMovieSceneSkeletalAnimationSharedTrack");
-static_assert(sizeof(FMovieSceneSkeletalAnimationSharedTrack) == 0x11828C80, "Wrong size on FMovieSceneSkeletalAnimationSharedTrack");
+static_assert(alignof(FMovieSceneSkeletalAnimationSharedTrack) == 0x000008, "Wrong alignment on FMovieSceneSkeletalAnimationSharedTrack");
+static_assert(sizeof(FMovieSceneSkeletalAnimationSharedTrack) == 0x000018, "Wrong size on FMovieSceneSkeletalAnimationSharedTrack");
 
 // ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParameters
-// 0x0000 (0x11828C80 - 0x11828C80)
+// 0x0008 (0x0098 - 0x0090)
 struct FMovieSceneSkeletalAnimationSectionTemplateParameters final : public FMovieSceneSkeletalAnimationParams
 {
 public:
 	float                                         SectionStartTime;                                  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SectionEndTime;                                    // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneSkeletalAnimationSectionTemplateParameters) == 0x11828C80, "Wrong alignment on FMovieSceneSkeletalAnimationSectionTemplateParameters");
-static_assert(sizeof(FMovieSceneSkeletalAnimationSectionTemplateParameters) == 0x11828C80, "Wrong size on FMovieSceneSkeletalAnimationSectionTemplateParameters");
+static_assert(alignof(FMovieSceneSkeletalAnimationSectionTemplateParameters) == 0x000008, "Wrong alignment on FMovieSceneSkeletalAnimationSectionTemplateParameters");
+static_assert(sizeof(FMovieSceneSkeletalAnimationSectionTemplateParameters) == 0x000098, "Wrong size on FMovieSceneSkeletalAnimationSectionTemplateParameters");
 static_assert(offsetof(FMovieSceneSkeletalAnimationSectionTemplateParameters, SectionStartTime) == 0x000090, "Member 'FMovieSceneSkeletalAnimationSectionTemplateParameters::SectionStartTime' has a wrong offset!");
 static_assert(offsetof(FMovieSceneSkeletalAnimationSectionTemplateParameters, SectionEndTime) == 0x000094, "Member 'FMovieSceneSkeletalAnimationSectionTemplateParameters::SectionEndTime' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplate
-// 0x0300 (0x11828C80 - 0x11828980)
+// 0x0098 (0x00B0 - 0x0018)
 struct FMovieSceneSkeletalAnimationSectionTemplate final : public FMovieSceneEvalTemplate
 {
 public:
-	struct FMovieSceneSkeletalAnimationSectionTemplateParameters Params;                                            // 0x0018(0x11828C80)(NativeAccessSpecifierPublic)
+	struct FMovieSceneSkeletalAnimationSectionTemplateParameters Params;                                            // 0x0018(0x0098)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMovieSceneSkeletalAnimationSectionTemplate) == 0x11828C80, "Wrong alignment on FMovieSceneSkeletalAnimationSectionTemplate");
-static_assert(sizeof(FMovieSceneSkeletalAnimationSectionTemplate) == 0x11828C80, "Wrong size on FMovieSceneSkeletalAnimationSectionTemplate");
+static_assert(alignof(FMovieSceneSkeletalAnimationSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneSkeletalAnimationSectionTemplate");
+static_assert(sizeof(FMovieSceneSkeletalAnimationSectionTemplate) == 0x0000B0, "Wrong size on FMovieSceneSkeletalAnimationSectionTemplate");
 static_assert(offsetof(FMovieSceneSkeletalAnimationSectionTemplate, Params) == 0x000018, "Member 'FMovieSceneSkeletalAnimationSectionTemplate::Params' has a wrong offset!");
 
 // ScriptStruct MovieSceneTracks.MovieSceneVisibilitySectionTemplate
-// 0x0600 (0x11829280 - 0x11828C80)
-struct alignas(0x11829280) FMovieSceneVisibilitySectionTemplate final : public FMovieSceneBoolPropertySectionTemplate
+// 0x0008 (0x00B0 - 0x00A8)
+struct FMovieSceneVisibilitySectionTemplate final : public FMovieSceneBoolPropertySectionTemplate
 {
 public:
 	bool                                          bTemporarilyHiddenInGame;                          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneVisibilitySectionTemplate) == 0x11829280, "Wrong alignment on FMovieSceneVisibilitySectionTemplate");
-static_assert(sizeof(FMovieSceneVisibilitySectionTemplate) == 0x11829280, "Wrong size on FMovieSceneVisibilitySectionTemplate");
+static_assert(alignof(FMovieSceneVisibilitySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneVisibilitySectionTemplate");
+static_assert(sizeof(FMovieSceneVisibilitySectionTemplate) == 0x0000B0, "Wrong size on FMovieSceneVisibilitySectionTemplate");
 static_assert(offsetof(FMovieSceneVisibilitySectionTemplate, bTemporarilyHiddenInGame) == 0x0000A8, "Member 'FMovieSceneVisibilitySectionTemplate::bTemporarilyHiddenInGame' has a wrong offset!");
 
 }

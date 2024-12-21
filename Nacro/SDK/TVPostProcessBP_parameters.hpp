@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function TVPostProcessBP.TVPostProcessBP_C.ExecuteUbergraph_TVPostProcessBP
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x05E0 (0x05E0 - 0x0000)
 struct TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP final
 {
 public:
@@ -32,7 +32,7 @@ public:
 	float                                         CallFunc_Lerp_ReturnValue7;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIDataConfigurationContext*        CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPostProcessSettings                   CallFunc_GetFrontEndFFSettings_ReturnValue;        // 0x0030(0x11821D80)()
+	struct FPostProcessSettings                   CallFunc_GetFrontEndFFSettings_ReturnValue;        // 0x0030(0x04C0)()
 	float                                         CallFunc_GetScalarParameterValue_ReturnValue;      // 0x04F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x04F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetScalarParameterValue_ReturnValue2;     // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -97,8 +97,8 @@ public:
 	bool                                          Temp_bool_Has_Been_Initd_Variable2;                // 0x05D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable2;                      // 0x05D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP) == 0x11821D80, "Wrong alignment on TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP");
-static_assert(sizeof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP) == 0x11821D80, "Wrong size on TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP");
+static_assert(alignof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP) == 0x000010, "Wrong alignment on TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP");
+static_assert(sizeof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP) == 0x0005E0, "Wrong size on TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP");
 static_assert(offsetof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP, EntryPoint) == 0x000000, "Member 'TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP, CallFunc_Lerp_ReturnValue) == 0x000004, "Member 'TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP, CallFunc_Lerp_ReturnValue2) == 0x000008, "Member 'TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP::CallFunc_Lerp_ReturnValue2' has a wrong offset!");
@@ -169,29 +169,29 @@ static_assert(offsetof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP, Temp_
 static_assert(offsetof(TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP, Temp_bool_IsClosed_Variable2) == 0x0005D1, "Member 'TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP::Temp_bool_IsClosed_Variable2' has a wrong offset!");
 
 // Function TVPostProcessBP.TVPostProcessBP_C.ReceiveTick
-// 0x0011 (0x0011 - 0x0000)
-struct alignas(0x11) TVPostProcessBP_C_ReceiveTick final
+// 0x0004 (0x0004 - 0x0000)
+struct TVPostProcessBP_C_ReceiveTick final
 {
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TVPostProcessBP_C_ReceiveTick) == 0x000011, "Wrong alignment on TVPostProcessBP_C_ReceiveTick");
-static_assert(sizeof(TVPostProcessBP_C_ReceiveTick) == 0x000011, "Wrong size on TVPostProcessBP_C_ReceiveTick");
+static_assert(alignof(TVPostProcessBP_C_ReceiveTick) == 0x000004, "Wrong alignment on TVPostProcessBP_C_ReceiveTick");
+static_assert(sizeof(TVPostProcessBP_C_ReceiveTick) == 0x000004, "Wrong size on TVPostProcessBP_C_ReceiveTick");
 static_assert(offsetof(TVPostProcessBP_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'TVPostProcessBP_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function TVPostProcessBP.TVPostProcessBP_C.SequenceFinished
-// 0x44004F (0x44004F - 0x0000)
-struct alignas(0x44004F) TVPostProcessBP_C_SequenceFinished final
+// 0x0010 (0x0010 - 0x0000)
+struct TVPostProcessBP_C_SequenceFinished final
 {
 public:
 	class FString                                 SequenceName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TVPostProcessBP_C_SequenceFinished) == 0x44004F, "Wrong alignment on TVPostProcessBP_C_SequenceFinished");
-static_assert(sizeof(TVPostProcessBP_C_SequenceFinished) == 0x44004F, "Wrong size on TVPostProcessBP_C_SequenceFinished");
+static_assert(alignof(TVPostProcessBP_C_SequenceFinished) == 0x000008, "Wrong alignment on TVPostProcessBP_C_SequenceFinished");
+static_assert(sizeof(TVPostProcessBP_C_SequenceFinished) == 0x000010, "Wrong size on TVPostProcessBP_C_SequenceFinished");
 static_assert(offsetof(TVPostProcessBP_C_SequenceFinished, SequenceName) == 0x000000, "Member 'TVPostProcessBP_C_SequenceFinished::SequenceName' has a wrong offset!");
 
 // Function TVPostProcessBP.TVPostProcessBP_C.RandomizeTheColor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct TVPostProcessBP_C_RandomizeTheColor final
 {
 public:
@@ -201,7 +201,7 @@ public:
 	float                                         MaxColorPerChannelValue;                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Control_replacement_alpha;                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0014(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_R;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B;                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -218,8 +218,8 @@ public:
 	int32                                         CallFunc_FFloor_ReturnValue;                       // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TVPostProcessBP_C_RandomizeTheColor) == 0x11821300, "Wrong alignment on TVPostProcessBP_C_RandomizeTheColor");
-static_assert(sizeof(TVPostProcessBP_C_RandomizeTheColor) == 0x11821300, "Wrong size on TVPostProcessBP_C_RandomizeTheColor");
+static_assert(alignof(TVPostProcessBP_C_RandomizeTheColor) == 0x000004, "Wrong alignment on TVPostProcessBP_C_RandomizeTheColor");
+static_assert(sizeof(TVPostProcessBP_C_RandomizeTheColor) == 0x000060, "Wrong size on TVPostProcessBP_C_RandomizeTheColor");
 static_assert(offsetof(TVPostProcessBP_C_RandomizeTheColor, Use_Bluescreen) == 0x000000, "Member 'TVPostProcessBP_C_RandomizeTheColor::Use_Bluescreen' has a wrong offset!");
 static_assert(offsetof(TVPostProcessBP_C_RandomizeTheColor, Probablility_modulator) == 0x000004, "Member 'TVPostProcessBP_C_RandomizeTheColor::Probablility_modulator' has a wrong offset!");
 static_assert(offsetof(TVPostProcessBP_C_RandomizeTheColor, Use_Flat_Blue) == 0x000008, "Member 'TVPostProcessBP_C_RandomizeTheColor::Use_Flat_Blue' has a wrong offset!");

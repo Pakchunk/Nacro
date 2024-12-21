@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransform.ItemTransform_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B0 (0x0490 - 0x03E0)
 class UItemTransform_C final : public UFortItemTransform
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UItemTransformKeyScreen_C*              KeyScreen;                                         // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_1;                                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemTransformSlotScreen_C*             SlotScreen;                                        // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -31,14 +31,14 @@ public:
 	TArray<class UFortItem*>                      SelectedSacrificeItems;                            // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	int32                                         SacrificePoints;                                   // 0x0420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentTier;                                       // 0x0424(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0428(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    SelectKeyInputAction;                              // 0x0438(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    TransformInputAction;                              // 0x0448(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    SelectItemInputAction;                             // 0x0458(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    InspectItemInputAction;                            // 0x0468(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0428(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    SelectKeyInputAction;                              // 0x0438(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    TransformInputAction;                              // 0x0448(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    SelectItemInputAction;                             // 0x0458(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InspectItemInputAction;                            // 0x0468(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          IsItemPickerOpen;                                  // 0x0478(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_479[0x7];                                      // 0x0479(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    ClosePickerInputAction;                            // 0x0480(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ClosePickerInputAction;                            // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_ItemTransform(int32 EntryPoint);
@@ -88,8 +88,8 @@ public:
 		return GetDefaultObjImpl<UItemTransform_C>();
 	}
 };
-static_assert(alignof(UItemTransform_C) == 0x322CBBB8, "Wrong alignment on UItemTransform_C");
-static_assert(sizeof(UItemTransform_C) == 0x322CBBB8, "Wrong size on UItemTransform_C");
+static_assert(alignof(UItemTransform_C) == 0x000008, "Wrong alignment on UItemTransform_C");
+static_assert(sizeof(UItemTransform_C) == 0x000490, "Wrong size on UItemTransform_C");
 static_assert(offsetof(UItemTransform_C, UberGraphFrame) == 0x0003E0, "Member 'UItemTransform_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransform_C, KeyScreen) == 0x0003E8, "Member 'UItemTransform_C::KeyScreen' has a wrong offset!");
 static_assert(offsetof(UItemTransform_C, SafeZone_1) == 0x0003F0, "Member 'UItemTransform_C::SafeZone_1' has a wrong offset!");

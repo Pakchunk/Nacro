@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ProjectileHuskRanged.ProjectileHuskRanged_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0030 (0x0828 - 0x07F8)
 class AProjectileHuskRanged_C final : public AFortProjectileBase
 {
 public:
 	uint8                                         Pad_7F8[0x8];                                      // 0x07F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0800(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0800(0x0008)(Transient, DuplicateTransient)
 	class UAudioComponent*                        Ranged_Projectile_Sound;                           // 0x0808(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               ProjectileParticleSystem;                          // 0x0810(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 GoalActor;                                         // 0x0818(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<AProjectileHuskRanged_C>();
 	}
 };
-static_assert(alignof(AProjectileHuskRanged_C) == 0x1182A000, "Wrong alignment on AProjectileHuskRanged_C");
-static_assert(sizeof(AProjectileHuskRanged_C) == 0x1182A000, "Wrong size on AProjectileHuskRanged_C");
+static_assert(alignof(AProjectileHuskRanged_C) == 0x000008, "Wrong alignment on AProjectileHuskRanged_C");
+static_assert(sizeof(AProjectileHuskRanged_C) == 0x000828, "Wrong size on AProjectileHuskRanged_C");
 static_assert(offsetof(AProjectileHuskRanged_C, UberGraphFrame) == 0x000800, "Member 'AProjectileHuskRanged_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AProjectileHuskRanged_C, Ranged_Projectile_Sound) == 0x000808, "Member 'AProjectileHuskRanged_C::Ranged_Projectile_Sound' has a wrong offset!");
 static_assert(offsetof(AProjectileHuskRanged_C, ProjectileParticleSystem) == 0x000810, "Member 'AProjectileHuskRanged_C::ProjectileParticleSystem' has a wrong offset!");

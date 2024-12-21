@@ -221,7 +221,7 @@ static_assert(offsetof(MissionTrackerSubEntry_C_HanldeObjectiveVisiblityOverride
 
 // Function MissionTrackerSubEntry.MissionTrackerSubEntry_C.ShowObjectiveWidget
 // 0x0020 (0x0020 - 0x0000)
-struct MissionTrackerSubEntry_C_ShowObjectiveWidget final
+struct alignas(0x08) MissionTrackerSubEntry_C_ShowObjectiveWidget final
 {
 public:
 	bool                                          bIsAlreadyVisible;                                 // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -235,7 +235,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionTrackerSubEntry_C_ShowObjectiveWidget) == 0x000004, "Wrong alignment on MissionTrackerSubEntry_C_ShowObjectiveWidget");
+static_assert(alignof(MissionTrackerSubEntry_C_ShowObjectiveWidget) == 0x000008, "Wrong alignment on MissionTrackerSubEntry_C_ShowObjectiveWidget");
 static_assert(sizeof(MissionTrackerSubEntry_C_ShowObjectiveWidget) == 0x000020, "Wrong size on MissionTrackerSubEntry_C_ShowObjectiveWidget");
 static_assert(offsetof(MissionTrackerSubEntry_C_ShowObjectiveWidget, bIsAlreadyVisible) == 0x000000, "Member 'MissionTrackerSubEntry_C_ShowObjectiveWidget::bIsAlreadyVisible' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_ShowObjectiveWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000001, "Member 'MissionTrackerSubEntry_C_ShowObjectiveWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
@@ -248,7 +248,7 @@ static_assert(offsetof(MissionTrackerSubEntry_C_ShowObjectiveWidget, CallFunc_Bo
 static_assert(offsetof(MissionTrackerSubEntry_C_ShowObjectiveWidget, CallFunc_IsVisible_ReturnValue) == 0x00001D, "Member 'MissionTrackerSubEntry_C_ShowObjectiveWidget::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
 
 // Function MissionTrackerSubEntry.MissionTrackerSubEntry_C.Update
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01D8 (0x01D8 - 0x0000)
 struct MissionTrackerSubEntry_C_Update final
 {
 public:
@@ -256,16 +256,16 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetObjectiveBulletIcon_BulletIcon;        // 0x0018(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetObjectiveBulletIcon_BulletIcon;        // 0x0018(0x0090)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00B0(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00B0(0x0090)()
 	bool                                          Temp_bool_Variable;                                // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0148(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0148(0x0090)()
 };
-static_assert(alignof(MissionTrackerSubEntry_C_Update) == 0x11827900, "Wrong alignment on MissionTrackerSubEntry_C_Update");
-static_assert(sizeof(MissionTrackerSubEntry_C_Update) == 0x11827900, "Wrong size on MissionTrackerSubEntry_C_Update");
+static_assert(alignof(MissionTrackerSubEntry_C_Update) == 0x000008, "Wrong alignment on MissionTrackerSubEntry_C_Update");
+static_assert(sizeof(MissionTrackerSubEntry_C_Update) == 0x0001D8, "Wrong size on MissionTrackerSubEntry_C_Update");
 static_assert(offsetof(MissionTrackerSubEntry_C_Update, K2Node_DynamicCast_AsMission_Objective_Widget_Provider_Interface) == 0x000000, "Member 'MissionTrackerSubEntry_C_Update::K2Node_DynamicCast_AsMission_Objective_Widget_Provider_Interface' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_Update, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'MissionTrackerSubEntry_C_Update::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_Update, CallFunc_DoesImplementInterface_ReturnValue) == 0x000011, "Member 'MissionTrackerSubEntry_C_Update::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
@@ -276,24 +276,24 @@ static_assert(offsetof(MissionTrackerSubEntry_C_Update, Temp_bool_Variable) == 0
 static_assert(offsetof(MissionTrackerSubEntry_C_Update, K2Node_Select_Default) == 0x000148, "Member 'MissionTrackerSubEntry_C_Update::K2Node_Select_Default' has a wrong offset!");
 
 // Function MissionTrackerSubEntry.MissionTrackerSubEntry_C.HandleMissionUIEvent
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct MissionTrackerSubEntry_C_HandleMissionUIEvent final
 {
 public:
 	class AFortMissionState*                      MissionElement;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  EventTags;                                         // 0x0008(0x11821C00)(Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                  EventTags;                                         // 0x0008(0x0020)(Parm, OutParm, ReferenceParm)
 	class AFortObjectiveBase*                     K2Node_DynamicCast_AsFort_Objective_Base;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FGameplayTag>                   K2Node_MakeArray_Array;                            // 0x0038(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  CallFunc_MakeGameplayTagContainerFromArray_ReturnValue; // 0x0050(0x11821C00)()
+	struct FGameplayTagContainer                  CallFunc_MakeGameplayTagContainerFromArray_ReturnValue; // 0x0050(0x0020)()
 	bool                                          CallFunc_HasAllTags_ReturnValue;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionTrackerSubEntry_C_HandleMissionUIEvent) == 0x11821C00, "Wrong alignment on MissionTrackerSubEntry_C_HandleMissionUIEvent");
-static_assert(sizeof(MissionTrackerSubEntry_C_HandleMissionUIEvent) == 0x11821C00, "Wrong size on MissionTrackerSubEntry_C_HandleMissionUIEvent");
+static_assert(alignof(MissionTrackerSubEntry_C_HandleMissionUIEvent) == 0x000008, "Wrong alignment on MissionTrackerSubEntry_C_HandleMissionUIEvent");
+static_assert(sizeof(MissionTrackerSubEntry_C_HandleMissionUIEvent) == 0x000078, "Wrong size on MissionTrackerSubEntry_C_HandleMissionUIEvent");
 static_assert(offsetof(MissionTrackerSubEntry_C_HandleMissionUIEvent, MissionElement) == 0x000000, "Member 'MissionTrackerSubEntry_C_HandleMissionUIEvent::MissionElement' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_HandleMissionUIEvent, EventTags) == 0x000008, "Member 'MissionTrackerSubEntry_C_HandleMissionUIEvent::EventTags' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_HandleMissionUIEvent, K2Node_DynamicCast_AsFort_Objective_Base) == 0x000028, "Member 'MissionTrackerSubEntry_C_HandleMissionUIEvent::K2Node_DynamicCast_AsFort_Objective_Base' has a wrong offset!");
@@ -305,14 +305,15 @@ static_assert(offsetof(MissionTrackerSubEntry_C_HandleMissionUIEvent, CallFunc_H
 static_assert(offsetof(MissionTrackerSubEntry_C_HandleMissionUIEvent, CallFunc_BooleanAND_ReturnValue) == 0x000071, "Member 'MissionTrackerSubEntry_C_HandleMissionUIEvent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function MissionTrackerSubEntry.MissionTrackerSubEntry_C.CreateCompletionAnnouncement
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct MissionTrackerSubEntry_C_CreateCompletionAnnouncement final
 {
 public:
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortClientAnnouncementData_Basic      K2Node_MakeStruct_FortClientAnnouncementData_Basic; // 0x0008(0x1182E980)()
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0100(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FFortClientAnnouncementData_Basic      K2Node_MakeStruct_FortClientAnnouncementData_Basic; // 0x0008(0x00F0)()
+	uint8                                         Pad_F8[0x8];                                       // 0x00F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0100(0x0030)(IsPlainOldData, NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -321,8 +322,8 @@ public:
 	TArray<class AFortPlayerController*>          K2Node_MakeArray_Array;                            // 0x0150(0x0010)(ZeroConstructor, ReferenceParm)
 	class AFortClientAnnouncement_Basic*          CallFunc_FinishSpawningActor_ReturnValue;          // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement) == 0x1182E980, "Wrong alignment on MissionTrackerSubEntry_C_CreateCompletionAnnouncement");
-static_assert(sizeof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement) == 0x1182E980, "Wrong size on MissionTrackerSubEntry_C_CreateCompletionAnnouncement");
+static_assert(alignof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement) == 0x000010, "Wrong alignment on MissionTrackerSubEntry_C_CreateCompletionAnnouncement");
+static_assert(sizeof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement) == 0x000170, "Wrong size on MissionTrackerSubEntry_C_CreateCompletionAnnouncement");
 static_assert(offsetof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement, CallFunc_IsVisible_ReturnValue) == 0x000000, "Member 'MissionTrackerSubEntry_C_CreateCompletionAnnouncement::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement, K2Node_MakeStruct_FortClientAnnouncementData_Basic) == 0x000008, "Member 'MissionTrackerSubEntry_C_CreateCompletionAnnouncement::K2Node_MakeStruct_FortClientAnnouncementData_Basic' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement, CallFunc_MakeTransform_ReturnValue) == 0x000100, "Member 'MissionTrackerSubEntry_C_CreateCompletionAnnouncement::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
@@ -334,8 +335,8 @@ static_assert(offsetof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement, K2
 static_assert(offsetof(MissionTrackerSubEntry_C_CreateCompletionAnnouncement, CallFunc_FinishSpawningActor_ReturnValue) == 0x000160, "Member 'MissionTrackerSubEntry_C_CreateCompletionAnnouncement::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function MissionTrackerSubEntry.MissionTrackerSubEntry_C.GetHeightEstimate
-// 0x0505 (0x0505 - 0x0000)
-struct alignas(0x505) MissionTrackerSubEntry_C_GetHeightEstimate final
+// 0x0040 (0x0040 - 0x0000)
+struct MissionTrackerSubEntry_C_GetHeightEstimate final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -352,8 +353,8 @@ public:
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionTrackerSubEntry_C_GetHeightEstimate) == 0x000505, "Wrong alignment on MissionTrackerSubEntry_C_GetHeightEstimate");
-static_assert(sizeof(MissionTrackerSubEntry_C_GetHeightEstimate) == 0x000505, "Wrong size on MissionTrackerSubEntry_C_GetHeightEstimate");
+static_assert(alignof(MissionTrackerSubEntry_C_GetHeightEstimate) == 0x000008, "Wrong alignment on MissionTrackerSubEntry_C_GetHeightEstimate");
+static_assert(sizeof(MissionTrackerSubEntry_C_GetHeightEstimate) == 0x000040, "Wrong size on MissionTrackerSubEntry_C_GetHeightEstimate");
 static_assert(offsetof(MissionTrackerSubEntry_C_GetHeightEstimate, ReturnValue) == 0x000000, "Member 'MissionTrackerSubEntry_C_GetHeightEstimate::ReturnValue' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_GetHeightEstimate, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'MissionTrackerSubEntry_C_GetHeightEstimate::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MissionTrackerSubEntry_C_GetHeightEstimate, CallFunc_DoesImplementInterface_ReturnValue) == 0x000010, "Member 'MissionTrackerSubEntry_C_GetHeightEstimate::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");

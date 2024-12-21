@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BasicInteractionWidget.BasicInteractionWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UBasicInteractionWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       TextDescription;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   Description;                                       // 0x0248(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UBasicInteractionWidget_C>();
 	}
 };
-static_assert(alignof(UBasicInteractionWidget_C) == 0x322CBBB8, "Wrong alignment on UBasicInteractionWidget_C");
-static_assert(sizeof(UBasicInteractionWidget_C) == 0x322CBBB8, "Wrong size on UBasicInteractionWidget_C");
+static_assert(alignof(UBasicInteractionWidget_C) == 0x000008, "Wrong alignment on UBasicInteractionWidget_C");
+static_assert(sizeof(UBasicInteractionWidget_C) == 0x000260, "Wrong size on UBasicInteractionWidget_C");
 static_assert(offsetof(UBasicInteractionWidget_C, UberGraphFrame) == 0x000238, "Member 'UBasicInteractionWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBasicInteractionWidget_C, TextDescription) == 0x000240, "Member 'UBasicInteractionWidget_C::TextDescription' has a wrong offset!");
 static_assert(offsetof(UBasicInteractionWidget_C, Description) == 0x000248, "Member 'UBasicInteractionWidget_C::Description' has a wrong offset!");

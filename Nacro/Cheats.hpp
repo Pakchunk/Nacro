@@ -42,11 +42,6 @@ namespace Cheats
 			return true;
 		}
 
-		if (Utils::ToLower(Parameters) == "toggleinfinitejump")
-		{
-			Globals::bInfiniteJump = !Globals::bInfiniteJump;
-		}
-
 		if (Utils::ToLower(Parameters) == "win")
 		{
 			Globals::AthenaController->ClientNotifyWon();

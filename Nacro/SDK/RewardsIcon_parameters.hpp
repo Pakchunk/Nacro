@@ -43,14 +43,14 @@ static_assert(sizeof(RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignatur
 static_assert(offsetof(RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature, Icon) == 0x000000, "Member 'RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature::Icon' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.OnMaterializeAnimationFinished__DelegateSignature
-// 0x43005F (0x43005F - 0x0000)
-struct alignas(0x43005F) RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature final
 {
 public:
 	class URewardsIcon_C*                         Icon;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature) == 0x43005F, "Wrong alignment on RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature");
-static_assert(sizeof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature) == 0x43005F, "Wrong size on RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature");
+static_assert(alignof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature) == 0x000008, "Wrong alignment on RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature");
+static_assert(sizeof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature) == 0x000008, "Wrong size on RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature");
 static_assert(offsetof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature, Icon) == 0x000000, "Member 'RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature::Icon' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.ExecuteUbergraph_RewardsIcon
@@ -99,31 +99,31 @@ static_assert(sizeof(RewardsIcon_C_PreConstruct) == 0x000001, "Wrong size on Rew
 static_assert(offsetof(RewardsIcon_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'RewardsIcon_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.PlayHideAnimation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct RewardsIcon_C_PlayHideAnimation final
 {
 public:
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0000(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardsIcon_C_PlayHideAnimation) == 0x11821300, "Wrong alignment on RewardsIcon_C_PlayHideAnimation");
-static_assert(sizeof(RewardsIcon_C_PlayHideAnimation) == 0x11821300, "Wrong size on RewardsIcon_C_PlayHideAnimation");
+static_assert(alignof(RewardsIcon_C_PlayHideAnimation) == 0x000004, "Wrong alignment on RewardsIcon_C_PlayHideAnimation");
+static_assert(sizeof(RewardsIcon_C_PlayHideAnimation) == 0x000014, "Wrong size on RewardsIcon_C_PlayHideAnimation");
 static_assert(offsetof(RewardsIcon_C_PlayHideAnimation, K2Node_MakeStruct_LinearColor) == 0x000000, "Member 'RewardsIcon_C_PlayHideAnimation::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_PlayHideAnimation, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000010, "Member 'RewardsIcon_C_PlayHideAnimation::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.PopulateFromReward
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct RewardsIcon_C_PopulateFromReward final
 {
 public:
 	class UFortRewardNotificationData*            InRewardItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           TintColor;                                         // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           TintColor;                                         // 0x0008(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_PopulateFromRandomLootLevel_Texture;      // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardsIcon_C_PopulateFromReward) == 0x11821300, "Wrong alignment on RewardsIcon_C_PopulateFromReward");
-static_assert(sizeof(RewardsIcon_C_PopulateFromReward) == 0x11821300, "Wrong size on RewardsIcon_C_PopulateFromReward");
+static_assert(alignof(RewardsIcon_C_PopulateFromReward) == 0x000008, "Wrong alignment on RewardsIcon_C_PopulateFromReward");
+static_assert(sizeof(RewardsIcon_C_PopulateFromReward) == 0x000028, "Wrong size on RewardsIcon_C_PopulateFromReward");
 static_assert(offsetof(RewardsIcon_C_PopulateFromReward, InRewardItem) == 0x000000, "Member 'RewardsIcon_C_PopulateFromReward::InRewardItem' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_PopulateFromReward, TintColor) == 0x000008, "Member 'RewardsIcon_C_PopulateFromReward::TintColor' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_PopulateFromReward, CallFunc_PopulateFromRandomLootLevel_Texture) == 0x000018, "Member 'RewardsIcon_C_PopulateFromReward::CallFunc_PopulateFromRandomLootLevel_Texture' has a wrong offset!");
@@ -142,7 +142,7 @@ static_assert(sizeof(RewardsIcon_C_HandleSlideAnimationFinished) == 0x000004, "W
 static_assert(offsetof(RewardsIcon_C_HandleSlideAnimationFinished, TranslatedDist) == 0x000000, "Member 'RewardsIcon_C_HandleSlideAnimationFinished::TranslatedDist' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.TickSlideAnimation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct RewardsIcon_C_TickSlideAnimation final
 {
 public:
@@ -155,10 +155,10 @@ public:
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Ease_ReturnValue;                         // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsIcon_C_TickSlideAnimation) == 0x11821300, "Wrong alignment on RewardsIcon_C_TickSlideAnimation");
-static_assert(sizeof(RewardsIcon_C_TickSlideAnimation) == 0x11821300, "Wrong size on RewardsIcon_C_TickSlideAnimation");
+static_assert(alignof(RewardsIcon_C_TickSlideAnimation) == 0x000004, "Wrong alignment on RewardsIcon_C_TickSlideAnimation");
+static_assert(sizeof(RewardsIcon_C_TickSlideAnimation) == 0x000028, "Wrong size on RewardsIcon_C_TickSlideAnimation");
 static_assert(offsetof(RewardsIcon_C_TickSlideAnimation, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000000, "Member 'RewardsIcon_C_TickSlideAnimation::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_TickSlideAnimation, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000004, "Member 'RewardsIcon_C_TickSlideAnimation::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_TickSlideAnimation, CallFunc_BreakVector2D_X) == 0x000008, "Member 'RewardsIcon_C_TickSlideAnimation::CallFunc_BreakVector2D_X' has a wrong offset!");
@@ -170,7 +170,7 @@ static_assert(offsetof(RewardsIcon_C_TickSlideAnimation, CallFunc_Ease_ReturnVal
 static_assert(offsetof(RewardsIcon_C_TickSlideAnimation, CallFunc_MakeVector2D_ReturnValue) == 0x000020, "Member 'RewardsIcon_C_TickSlideAnimation::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.PlaySlideAnimation
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct RewardsIcon_C_PlaySlideAnimation final
 {
 public:
@@ -179,11 +179,11 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsIcon_C_PlaySlideAnimation) == 0x11821D80, "Wrong alignment on RewardsIcon_C_PlaySlideAnimation");
-static_assert(sizeof(RewardsIcon_C_PlaySlideAnimation) == 0x11821D80, "Wrong size on RewardsIcon_C_PlaySlideAnimation");
+static_assert(alignof(RewardsIcon_C_PlaySlideAnimation) == 0x000008, "Wrong alignment on RewardsIcon_C_PlaySlideAnimation");
+static_assert(sizeof(RewardsIcon_C_PlaySlideAnimation) == 0x000030, "Wrong size on RewardsIcon_C_PlaySlideAnimation");
 static_assert(offsetof(RewardsIcon_C_PlaySlideAnimation, TargetTranslation) == 0x000000, "Member 'RewardsIcon_C_PlaySlideAnimation::TargetTranslation' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_PlaySlideAnimation, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'RewardsIcon_C_PlaySlideAnimation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_PlaySlideAnimation, CallFunc_BreakVector2D_X) == 0x000018, "Member 'RewardsIcon_C_PlaySlideAnimation::CallFunc_BreakVector2D_X' has a wrong offset!");
@@ -294,25 +294,26 @@ static_assert(sizeof(RewardsIcon_C_RandomizeDesignView) == 0x000008, "Wrong size
 static_assert(offsetof(RewardsIcon_C_RandomizeDesignView, CallFunc_PopulateFromRandomLootLevel_Texture) == 0x000000, "Member 'RewardsIcon_C_RandomizeDesignView::CallFunc_PopulateFromRandomLootLevel_Texture' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.On_ImageIcon_MouseButtonDown_0
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0220 (0x0220 - 0x0000)
 struct RewardsIcon_C_On_ImageIcon_MouseButtonDown_0 final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x00B8)()
 };
-static_assert(alignof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0) == 0x11829280, "Wrong alignment on RewardsIcon_C_On_ImageIcon_MouseButtonDown_0");
-static_assert(sizeof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0) == 0x11829280, "Wrong size on RewardsIcon_C_On_ImageIcon_MouseButtonDown_0");
+static_assert(alignof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0) == 0x000008, "Wrong alignment on RewardsIcon_C_On_ImageIcon_MouseButtonDown_0");
+static_assert(sizeof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0) == 0x000220, "Wrong size on RewardsIcon_C_On_ImageIcon_MouseButtonDown_0");
 static_assert(offsetof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0, MyGeometry) == 0x000000, "Member 'RewardsIcon_C_On_ImageIcon_MouseButtonDown_0::MyGeometry' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0, MouseEvent) == 0x000038, "Member 'RewardsIcon_C_On_ImageIcon_MouseButtonDown_0::MouseEvent' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0, ReturnValue) == 0x0000B0, "Member 'RewardsIcon_C_On_ImageIcon_MouseButtonDown_0::ReturnValue' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_On_ImageIcon_MouseButtonDown_0, CallFunc_Handled_ReturnValue) == 0x000168, "Member 'RewardsIcon_C_On_ImageIcon_MouseButtonDown_0::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.Play Hide Animation Sound
-// 0x0A00 (0x0A00 - 0x0000)
-struct alignas(0xA00) RewardsIcon_C_Play_Hide_Animation_Sound final
+// 0x0040 (0x0040 - 0x0000)
+struct RewardsIcon_C_Play_Hide_Animation_Sound final
 {
 public:
 	EFrontEndRewardType                           Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -325,8 +326,8 @@ public:
 	class USoundBase*                             Temp_object_Variable6;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsIcon_C_Play_Hide_Animation_Sound) == 0x000A00, "Wrong alignment on RewardsIcon_C_Play_Hide_Animation_Sound");
-static_assert(sizeof(RewardsIcon_C_Play_Hide_Animation_Sound) == 0x000A00, "Wrong size on RewardsIcon_C_Play_Hide_Animation_Sound");
+static_assert(alignof(RewardsIcon_C_Play_Hide_Animation_Sound) == 0x000008, "Wrong alignment on RewardsIcon_C_Play_Hide_Animation_Sound");
+static_assert(sizeof(RewardsIcon_C_Play_Hide_Animation_Sound) == 0x000040, "Wrong size on RewardsIcon_C_Play_Hide_Animation_Sound");
 static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_byte_Variable) == 0x000000, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable) == 0x000008, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(RewardsIcon_C_Play_Hide_Animation_Sound, Temp_object_Variable2) == 0x000010, "Member 'RewardsIcon_C_Play_Hide_Animation_Sound::Temp_object_Variable2' has a wrong offset!");

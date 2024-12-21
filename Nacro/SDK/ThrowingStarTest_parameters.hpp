@@ -19,35 +19,35 @@ namespace SDK::Params
 {
 
 // Function ThrowingStarTest.ThrowingStarTest_C.OnExecute
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct ThrowingStarTest_C_OnExecute final
 {
 public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_GetHitResult_ReturnValue;                 // 0x00C8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_GetHitResult_ReturnValue;                 // 0x00C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_152[0x2];                                      // 0x0152(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0158(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0164(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0170(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x017C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0158(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0164(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0170(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x017C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x01B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x01BC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x01B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x01BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThrowingStarTest_C_OnExecute) == 0x11821D80, "Wrong alignment on ThrowingStarTest_C_OnExecute");
-static_assert(sizeof(ThrowingStarTest_C_OnExecute) == 0x11821D80, "Wrong size on ThrowingStarTest_C_OnExecute");
+static_assert(alignof(ThrowingStarTest_C_OnExecute) == 0x000008, "Wrong alignment on ThrowingStarTest_C_OnExecute");
+static_assert(sizeof(ThrowingStarTest_C_OnExecute) == 0x0001D0, "Wrong size on ThrowingStarTest_C_OnExecute");
 static_assert(offsetof(ThrowingStarTest_C_OnExecute, MyTarget) == 0x000000, "Member 'ThrowingStarTest_C_OnExecute::MyTarget' has a wrong offset!");
 static_assert(offsetof(ThrowingStarTest_C_OnExecute, Parameters) == 0x000008, "Member 'ThrowingStarTest_C_OnExecute::Parameters' has a wrong offset!");
 static_assert(offsetof(ThrowingStarTest_C_OnExecute, ReturnValue) == 0x0000C0, "Member 'ThrowingStarTest_C_OnExecute::ReturnValue' has a wrong offset!");

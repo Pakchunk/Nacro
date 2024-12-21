@@ -19,17 +19,16 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_GenericStunned.GAB_GenericStunned_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
-#pragma pack(push, 0x1)
-class alignas(0x1182EB00) UGAB_GenericStunned_C : public UFortGameplayAbility
+// 0x0030 (0x0A70 - 0x0A40)
+class UGAB_GenericStunned_C : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
 	class UClass*                                 StunActiveEffect;                                  // 0x0A48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            ActiveStun;                                        // 0x0A50(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            ActiveStun;                                        // 0x0A50(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 RestoreControlResistEffect;                        // 0x0A58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 GE_ImpactImmunity;                                 // 0x0A60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            ActiveImpactImmunity;                              // 0x0A68(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            ActiveImpactImmunity;                              // 0x0A68(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_GAB_GenericStunned(int32 EntryPoint);
@@ -46,9 +45,8 @@ public:
 		return GetDefaultObjImpl<UGAB_GenericStunned_C>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UGAB_GenericStunned_C) == 0x1182EB00, "Wrong alignment on UGAB_GenericStunned_C");
-static_assert(sizeof(UGAB_GenericStunned_C) == 0x1182EB00, "Wrong size on UGAB_GenericStunned_C");
+static_assert(alignof(UGAB_GenericStunned_C) == 0x000008, "Wrong alignment on UGAB_GenericStunned_C");
+static_assert(sizeof(UGAB_GenericStunned_C) == 0x000A70, "Wrong size on UGAB_GenericStunned_C");
 static_assert(offsetof(UGAB_GenericStunned_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_GenericStunned_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UGAB_GenericStunned_C, StunActiveEffect) == 0x000A48, "Member 'UGAB_GenericStunned_C::StunActiveEffect' has a wrong offset!");
 static_assert(offsetof(UGAB_GenericStunned_C, ActiveStun) == 0x000A50, "Member 'UGAB_GenericStunned_C::ActiveStun' has a wrong offset!");

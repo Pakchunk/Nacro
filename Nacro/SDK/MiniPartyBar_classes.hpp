@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MiniPartyBar.MiniPartyBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0290 - 0x0238)
 class UMiniPartyBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ButtonLocalPlayer;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 LineSeparator;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMiniPartyMember_C*                     LocalPlayer;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -55,8 +55,8 @@ public:
 		return GetDefaultObjImpl<UMiniPartyBar_C>();
 	}
 };
-static_assert(alignof(UMiniPartyBar_C) == 0x322CBBB8, "Wrong alignment on UMiniPartyBar_C");
-static_assert(sizeof(UMiniPartyBar_C) == 0x322CBBB8, "Wrong size on UMiniPartyBar_C");
+static_assert(alignof(UMiniPartyBar_C) == 0x000008, "Wrong alignment on UMiniPartyBar_C");
+static_assert(sizeof(UMiniPartyBar_C) == 0x000290, "Wrong size on UMiniPartyBar_C");
 static_assert(offsetof(UMiniPartyBar_C, UberGraphFrame) == 0x000238, "Member 'UMiniPartyBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMiniPartyBar_C, ButtonLocalPlayer) == 0x000240, "Member 'UMiniPartyBar_C::ButtonLocalPlayer' has a wrong offset!");
 static_assert(offsetof(UMiniPartyBar_C, LineSeparator) == 0x000248, "Member 'UMiniPartyBar_C::LineSeparator' has a wrong offset!");

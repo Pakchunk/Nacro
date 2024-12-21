@@ -19,8 +19,8 @@ namespace SDK::Params
 {
 
 // Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.ExecuteUbergraph_SimpleSquadSlotButton
-// 0x008C (0x008C - 0x0000)
-struct alignas(0x46) SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton final
+// 0x0088 (0x0088 - 0x0000)
+struct SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,8 +50,8 @@ public:
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton) == 0x000046, "Wrong alignment on SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton");
-static_assert(sizeof(SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton) == 0x00008C, "Wrong size on SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton");
+static_assert(alignof(SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton) == 0x000008, "Wrong alignment on SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton");
+static_assert(sizeof(SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton) == 0x000088, "Wrong size on SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton");
 static_assert(offsetof(SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton, EntryPoint) == 0x000000, "Member 'SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton, Temp_bool_Variable) == 0x000004, "Member 'SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton, Temp_byte_Variable) == 0x000005, "Member 'SimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton::Temp_byte_Variable' has a wrong offset!");
@@ -173,20 +173,20 @@ static_assert(offsetof(SimpleSquadSlotButton_C_IsSlotEmpty, CallFunc_GetItemInSq
 static_assert(offsetof(SimpleSquadSlotButton_C_IsSlotEmpty, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'SimpleSquadSlotButton_C_IsSlotEmpty::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Update SubType Icon Glow
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct SimpleSquadSlotButton_C_Update_SubType_Icon_Glow final
 {
 public:
 	bool                                          GlowIcon;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x322CBBB8)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0030(0x322CBBB8)()
-	struct FSlateColor                            K2Node_Select_Default;                             // 0x0058(0x322CBBB8)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0080(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0030(0x0028)()
+	struct FSlateColor                            K2Node_Select_Default;                             // 0x0058(0x0028)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0080(0x0090)()
 };
-static_assert(alignof(SimpleSquadSlotButton_C_Update_SubType_Icon_Glow) == 0x322CBBB8, "Wrong alignment on SimpleSquadSlotButton_C_Update_SubType_Icon_Glow");
-static_assert(sizeof(SimpleSquadSlotButton_C_Update_SubType_Icon_Glow) == 0x322CBBB8, "Wrong size on SimpleSquadSlotButton_C_Update_SubType_Icon_Glow");
+static_assert(alignof(SimpleSquadSlotButton_C_Update_SubType_Icon_Glow) == 0x000008, "Wrong alignment on SimpleSquadSlotButton_C_Update_SubType_Icon_Glow");
+static_assert(sizeof(SimpleSquadSlotButton_C_Update_SubType_Icon_Glow) == 0x000110, "Wrong size on SimpleSquadSlotButton_C_Update_SubType_Icon_Glow");
 static_assert(offsetof(SimpleSquadSlotButton_C_Update_SubType_Icon_Glow, GlowIcon) == 0x000000, "Member 'SimpleSquadSlotButton_C_Update_SubType_Icon_Glow::GlowIcon' has a wrong offset!");
 static_assert(offsetof(SimpleSquadSlotButton_C_Update_SubType_Icon_Glow, Temp_bool_Variable) == 0x000001, "Member 'SimpleSquadSlotButton_C_Update_SubType_Icon_Glow::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SimpleSquadSlotButton_C_Update_SubType_Icon_Glow, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'SimpleSquadSlotButton_C_Update_SubType_Icon_Glow::K2Node_MakeStruct_SlateColor' has a wrong offset!");

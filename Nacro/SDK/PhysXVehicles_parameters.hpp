@@ -69,14 +69,14 @@ static_assert(sizeof(WheeledVehicleMovementComponent_SetAvoidanceGroup) == 0x000
 static_assert(offsetof(WheeledVehicleMovementComponent_SetAvoidanceGroup, GroupFlags) == 0x000000, "Member 'WheeledVehicleMovementComponent_SetAvoidanceGroup::GroupFlags' has a wrong offset!");
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct WheeledVehicleMovementComponent_SetAvoidanceGroupMask final
 {
 public:
-	struct FNavAvoidanceMask                      GroupMask;                                         // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                      GroupMask;                                         // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WheeledVehicleMovementComponent_SetAvoidanceGroupMask) == 0x11821D80, "Wrong alignment on WheeledVehicleMovementComponent_SetAvoidanceGroupMask");
-static_assert(sizeof(WheeledVehicleMovementComponent_SetAvoidanceGroupMask) == 0x11821D80, "Wrong size on WheeledVehicleMovementComponent_SetAvoidanceGroupMask");
+static_assert(alignof(WheeledVehicleMovementComponent_SetAvoidanceGroupMask) == 0x000004, "Wrong alignment on WheeledVehicleMovementComponent_SetAvoidanceGroupMask");
+static_assert(sizeof(WheeledVehicleMovementComponent_SetAvoidanceGroupMask) == 0x000004, "Wrong size on WheeledVehicleMovementComponent_SetAvoidanceGroupMask");
 static_assert(offsetof(WheeledVehicleMovementComponent_SetAvoidanceGroupMask, GroupMask) == 0x000000, "Member 'WheeledVehicleMovementComponent_SetAvoidanceGroupMask::GroupMask' has a wrong offset!");
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
@@ -124,14 +124,14 @@ static_assert(sizeof(WheeledVehicleMovementComponent_SetGroupsToAvoid) == 0x0000
 static_assert(offsetof(WheeledVehicleMovementComponent_SetGroupsToAvoid, GroupFlags) == 0x000000, "Member 'WheeledVehicleMovementComponent_SetGroupsToAvoid::GroupFlags' has a wrong offset!");
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct WheeledVehicleMovementComponent_SetGroupsToAvoidMask final
 {
 public:
-	struct FNavAvoidanceMask                      GroupMask;                                         // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                      GroupMask;                                         // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WheeledVehicleMovementComponent_SetGroupsToAvoidMask) == 0x11821D80, "Wrong alignment on WheeledVehicleMovementComponent_SetGroupsToAvoidMask");
-static_assert(sizeof(WheeledVehicleMovementComponent_SetGroupsToAvoidMask) == 0x11821D80, "Wrong size on WheeledVehicleMovementComponent_SetGroupsToAvoidMask");
+static_assert(alignof(WheeledVehicleMovementComponent_SetGroupsToAvoidMask) == 0x000004, "Wrong alignment on WheeledVehicleMovementComponent_SetGroupsToAvoidMask");
+static_assert(sizeof(WheeledVehicleMovementComponent_SetGroupsToAvoidMask) == 0x000004, "Wrong size on WheeledVehicleMovementComponent_SetGroupsToAvoidMask");
 static_assert(offsetof(WheeledVehicleMovementComponent_SetGroupsToAvoidMask, GroupMask) == 0x000000, "Member 'WheeledVehicleMovementComponent_SetGroupsToAvoidMask::GroupMask' has a wrong offset!");
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
@@ -146,14 +146,14 @@ static_assert(sizeof(WheeledVehicleMovementComponent_SetGroupsToIgnore) == 0x000
 static_assert(offsetof(WheeledVehicleMovementComponent_SetGroupsToIgnore, GroupFlags) == 0x000000, "Member 'WheeledVehicleMovementComponent_SetGroupsToIgnore::GroupFlags' has a wrong offset!");
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct WheeledVehicleMovementComponent_SetGroupsToIgnoreMask final
 {
 public:
-	struct FNavAvoidanceMask                      GroupMask;                                         // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                      GroupMask;                                         // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(WheeledVehicleMovementComponent_SetGroupsToIgnoreMask) == 0x11821D80, "Wrong alignment on WheeledVehicleMovementComponent_SetGroupsToIgnoreMask");
-static_assert(sizeof(WheeledVehicleMovementComponent_SetGroupsToIgnoreMask) == 0x11821D80, "Wrong size on WheeledVehicleMovementComponent_SetGroupsToIgnoreMask");
+static_assert(alignof(WheeledVehicleMovementComponent_SetGroupsToIgnoreMask) == 0x000004, "Wrong alignment on WheeledVehicleMovementComponent_SetGroupsToIgnoreMask");
+static_assert(sizeof(WheeledVehicleMovementComponent_SetGroupsToIgnoreMask) == 0x000004, "Wrong size on WheeledVehicleMovementComponent_SetGroupsToIgnoreMask");
 static_assert(offsetof(WheeledVehicleMovementComponent_SetGroupsToIgnoreMask, GroupMask) == 0x000000, "Member 'WheeledVehicleMovementComponent_SetGroupsToIgnoreMask::GroupMask' has a wrong offset!");
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput

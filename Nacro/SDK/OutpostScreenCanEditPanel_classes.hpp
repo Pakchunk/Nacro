@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0290 - 0x0240)
 class UOutpostScreenCanEditPanel_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      MasterSwitchButton;                                // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       NoTeammates_TextBlock;                             // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOutpostScreenCanEditRow_C*             OutpostScreenCanEditRow_0;                         // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UOutpostScreenCanEditPanel_C>();
 	}
 };
-static_assert(alignof(UOutpostScreenCanEditPanel_C) == 0x322CBBB8, "Wrong alignment on UOutpostScreenCanEditPanel_C");
-static_assert(sizeof(UOutpostScreenCanEditPanel_C) == 0x322CBBB8, "Wrong size on UOutpostScreenCanEditPanel_C");
+static_assert(alignof(UOutpostScreenCanEditPanel_C) == 0x000008, "Wrong alignment on UOutpostScreenCanEditPanel_C");
+static_assert(sizeof(UOutpostScreenCanEditPanel_C) == 0x000290, "Wrong size on UOutpostScreenCanEditPanel_C");
 static_assert(offsetof(UOutpostScreenCanEditPanel_C, UberGraphFrame) == 0x000240, "Member 'UOutpostScreenCanEditPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenCanEditPanel_C, MasterSwitchButton) == 0x000248, "Member 'UOutpostScreenCanEditPanel_C::MasterSwitchButton' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenCanEditPanel_C, NoTeammates_TextBlock) == 0x000250, "Member 'UOutpostScreenCanEditPanel_C::NoTeammates_TextBlock' has a wrong offset!");

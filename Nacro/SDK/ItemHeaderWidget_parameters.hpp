@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.ExecuteUbergraph_ItemHeaderWidget
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget final
 {
 public:
@@ -55,9 +55,9 @@ public:
 	bool                                          Temp_bool_Variable2;                               // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AA[0x6];                                       // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x00B0(0x11821780)()
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0130(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0140(0x322CBBB8)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x00B0(0x0080)()
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0130(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0140(0x0028)()
 	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable3;                               // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable4;                               // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -74,8 +74,8 @@ public:
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget) == 0x322CBBB8, "Wrong alignment on ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget");
-static_assert(sizeof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget) == 0x322CBBB8, "Wrong size on ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget");
+static_assert(alignof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget) == 0x000008, "Wrong alignment on ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget");
+static_assert(sizeof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget) == 0x000180, "Wrong size on ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget");
 static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, EntryPoint) == 0x000000, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000020, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
@@ -143,17 +143,17 @@ static_assert(offsetof(ItemHeaderWidget_C_UpdatePowerRatingComparison, CallFunc_
 static_assert(offsetof(ItemHeaderWidget_C_UpdatePowerRatingComparison, CallFunc_GetRating_ReturnValue) == 0x000004, "Member 'ItemHeaderWidget_C_UpdatePowerRatingComparison::CallFunc_GetRating_ReturnValue' has a wrong offset!");
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.UpdateHeaderColor
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct ItemHeaderWidget_C_UpdateHeaderColor final
 {
 public:
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0010(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0010(0x0080)()
 };
-static_assert(alignof(ItemHeaderWidget_C_UpdateHeaderColor) == 0x11821780, "Wrong alignment on ItemHeaderWidget_C_UpdateHeaderColor");
-static_assert(sizeof(ItemHeaderWidget_C_UpdateHeaderColor) == 0x11821780, "Wrong size on ItemHeaderWidget_C_UpdateHeaderColor");
+static_assert(alignof(ItemHeaderWidget_C_UpdateHeaderColor) == 0x000008, "Wrong alignment on ItemHeaderWidget_C_UpdateHeaderColor");
+static_assert(sizeof(ItemHeaderWidget_C_UpdateHeaderColor) == 0x000090, "Wrong size on ItemHeaderWidget_C_UpdateHeaderColor");
 static_assert(offsetof(ItemHeaderWidget_C_UpdateHeaderColor, CallFunc_GetRarity_ReturnValue) == 0x000000, "Member 'ItemHeaderWidget_C_UpdateHeaderColor::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemHeaderWidget_C_UpdateHeaderColor, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'ItemHeaderWidget_C_UpdateHeaderColor::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemHeaderWidget_C_UpdateHeaderColor, CallFunc_BPGetRarityData_ReturnValue) == 0x000010, "Member 'ItemHeaderWidget_C_UpdateHeaderColor::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");

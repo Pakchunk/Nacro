@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_W1_QuarterWallS.PBWA_W1_QuarterWallS_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0010 (0x10C0 - 0x10B0)
 class APBWA_W1_QuarterWallS_C final : public ABuildingWall
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x10B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x10B0(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_PBWA_W1_QuarterWallS(int32 EntryPoint);
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<APBWA_W1_QuarterWallS_C>();
 	}
 };
-static_assert(alignof(APBWA_W1_QuarterWallS_C) == 0x1182A000, "Wrong alignment on APBWA_W1_QuarterWallS_C");
-static_assert(sizeof(APBWA_W1_QuarterWallS_C) == 0x1182A000, "Wrong size on APBWA_W1_QuarterWallS_C");
+static_assert(alignof(APBWA_W1_QuarterWallS_C) == 0x000010, "Wrong alignment on APBWA_W1_QuarterWallS_C");
+static_assert(sizeof(APBWA_W1_QuarterWallS_C) == 0x0010C0, "Wrong size on APBWA_W1_QuarterWallS_C");
 static_assert(offsetof(APBWA_W1_QuarterWallS_C, UberGraphFrame) == 0x0010B0, "Member 'APBWA_W1_QuarterWallS_C::UberGraphFrame' has a wrong offset!");
 
 }

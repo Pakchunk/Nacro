@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function InterfacePlayerPawn.InterfacePlayerPawn_C.Melee_Effect_Color
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct InterfacePlayerPawn_C_Melee_Effect_Color final
 {
 public:
-	struct FVector                                Melee_Color_Set;                                   // 0x0000(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Melee_Color_Set;                                   // 0x0000(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InterfacePlayerPawn_C_Melee_Effect_Color) == 0x11821300, "Wrong alignment on InterfacePlayerPawn_C_Melee_Effect_Color");
-static_assert(sizeof(InterfacePlayerPawn_C_Melee_Effect_Color) == 0x11821300, "Wrong size on InterfacePlayerPawn_C_Melee_Effect_Color");
+static_assert(alignof(InterfacePlayerPawn_C_Melee_Effect_Color) == 0x000004, "Wrong alignment on InterfacePlayerPawn_C_Melee_Effect_Color");
+static_assert(sizeof(InterfacePlayerPawn_C_Melee_Effect_Color) == 0x00000C, "Wrong size on InterfacePlayerPawn_C_Melee_Effect_Color");
 static_assert(offsetof(InterfacePlayerPawn_C_Melee_Effect_Color, Melee_Color_Set) == 0x000000, "Member 'InterfacePlayerPawn_C_Melee_Effect_Color::Melee_Color_Set' has a wrong offset!");
 
 }

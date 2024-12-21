@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaInventoryDragVisual.AthenaInventoryDragVisual_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0260 - 0x0240)
 class UAthenaInventoryDragVisual_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UFortMultiSizeItemCard*                 ItemWidget;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItem*                              Item;                                              // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	EFortItemCardSize                             ItemCardSize;                                      // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UAthenaInventoryDragVisual_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryDragVisual_C) == 0x322CBBB8, "Wrong alignment on UAthenaInventoryDragVisual_C");
-static_assert(sizeof(UAthenaInventoryDragVisual_C) == 0x322CBBB8, "Wrong size on UAthenaInventoryDragVisual_C");
+static_assert(alignof(UAthenaInventoryDragVisual_C) == 0x000008, "Wrong alignment on UAthenaInventoryDragVisual_C");
+static_assert(sizeof(UAthenaInventoryDragVisual_C) == 0x000260, "Wrong size on UAthenaInventoryDragVisual_C");
 static_assert(offsetof(UAthenaInventoryDragVisual_C, UberGraphFrame) == 0x000240, "Member 'UAthenaInventoryDragVisual_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryDragVisual_C, ItemWidget) == 0x000248, "Member 'UAthenaInventoryDragVisual_C::ItemWidget' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryDragVisual_C, Item) == 0x000250, "Member 'UAthenaInventoryDragVisual_C::Item' has a wrong offset!");

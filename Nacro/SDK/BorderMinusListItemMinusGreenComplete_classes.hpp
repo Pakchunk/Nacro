@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-ListItem-GreenComplete.Border-ListItem-GreenComplete_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusListItemMinusGreenComplete_C final : public UBorderMinusTabMMinusSolid_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusListItemMinusGreenComplete_C>();
 	}
 };
-static_assert(alignof(UBorderMinusListItemMinusGreenComplete_C) == 0x11827900, "Wrong alignment on UBorderMinusListItemMinusGreenComplete_C");
-static_assert(sizeof(UBorderMinusListItemMinusGreenComplete_C) == 0x11827900, "Wrong size on UBorderMinusListItemMinusGreenComplete_C");
+static_assert(alignof(UBorderMinusListItemMinusGreenComplete_C) == 0x000008, "Wrong alignment on UBorderMinusListItemMinusGreenComplete_C");
+static_assert(sizeof(UBorderMinusListItemMinusGreenComplete_C) == 0x0000B8, "Wrong size on UBorderMinusListItemMinusGreenComplete_C");
 
 }
 

@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DailyRewardsCurrent.DailyRewardsCurrent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x02A8 - 0x0248)
 class UDailyRewardsCurrent_C final : public UFortDailyRewardsItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Flare_Backing;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortMultiSizeItemCard*                 FortItemCard;                                      // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageRarityFlare;                                  // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UDailyRewardsCurrent_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsCurrent_C) == 0x322CBBB8, "Wrong alignment on UDailyRewardsCurrent_C");
-static_assert(sizeof(UDailyRewardsCurrent_C) == 0x322CBBB8, "Wrong size on UDailyRewardsCurrent_C");
+static_assert(alignof(UDailyRewardsCurrent_C) == 0x000008, "Wrong alignment on UDailyRewardsCurrent_C");
+static_assert(sizeof(UDailyRewardsCurrent_C) == 0x0002A8, "Wrong size on UDailyRewardsCurrent_C");
 static_assert(offsetof(UDailyRewardsCurrent_C, UberGraphFrame) == 0x000248, "Member 'UDailyRewardsCurrent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsCurrent_C, Flare_Backing) == 0x000250, "Member 'UDailyRewardsCurrent_C::Flare_Backing' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsCurrent_C, FortItemCard) == 0x000258, "Member 'UDailyRewardsCurrent_C::FortItemCard' has a wrong offset!");

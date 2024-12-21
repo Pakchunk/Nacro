@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B0 (0x02E8 - 0x0238)
 class UTeamScoreToPlayerXPRewardWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_1;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageBarFrame;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                NumericTextXPAmount;                               // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -40,7 +40,7 @@ public:
 	int32                                         LastLevelSeen;                                     // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        LevelUpSound;                                      // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUIXpInfo                          XPinfo;                                            // 0x02B0(0x1182E980)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortUIXpInfo                          XPinfo;                                            // 0x02B0(0x002C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bConstructing;                                     // 0x02DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2DD[0x3];                                      // 0x02DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIScoreReport*                     ScoreReport;                                       // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UTeamScoreToPlayerXPRewardWidget_C>();
 	}
 };
-static_assert(alignof(UTeamScoreToPlayerXPRewardWidget_C) == 0x322CBBB8, "Wrong alignment on UTeamScoreToPlayerXPRewardWidget_C");
-static_assert(sizeof(UTeamScoreToPlayerXPRewardWidget_C) == 0x322CBBB8, "Wrong size on UTeamScoreToPlayerXPRewardWidget_C");
+static_assert(alignof(UTeamScoreToPlayerXPRewardWidget_C) == 0x000008, "Wrong alignment on UTeamScoreToPlayerXPRewardWidget_C");
+static_assert(sizeof(UTeamScoreToPlayerXPRewardWidget_C) == 0x0002E8, "Wrong size on UTeamScoreToPlayerXPRewardWidget_C");
 static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, UberGraphFrame) == 0x000238, "Member 'UTeamScoreToPlayerXPRewardWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, Image_1) == 0x000240, "Member 'UTeamScoreToPlayerXPRewardWidget_C::Image_1' has a wrong offset!");
 static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, ImageBarFrame) == 0x000248, "Member 'UTeamScoreToPlayerXPRewardWidget_C::ImageBarFrame' has a wrong offset!");

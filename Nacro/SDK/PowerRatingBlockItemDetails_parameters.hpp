@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingValue
-// 0x0543 (0x0543 - 0x0000)
-struct alignas(0x543) PowerRatingBlockItemDetails_C_SetPowerRatingValue final
+// 0x0010 (0x0010 - 0x0000)
+struct PowerRatingBlockItemDetails_C_SetPowerRatingValue final
 {
 public:
 	int32                                         PowerRating;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -27,16 +27,16 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingValue) == 0x000543, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingValue");
-static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingValue) == 0x000543, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingValue");
+static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingValue) == 0x000004, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingValue");
+static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingValue) == 0x000010, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingValue");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValue, PowerRating) == 0x000000, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValue::PowerRating' has a wrong offset!");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValue, InterpolationDuration) == 0x000004, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValue::InterpolationDuration' has a wrong offset!");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValue, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000008, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValue::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValue, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00000C, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValue::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingFromItem
-// 0x2E004C (0x2E004C - 0x0000)
-struct alignas(0x2E004C) PowerRatingBlockItemDetails_C_SetPowerRatingFromItem final
+// 0x0018 (0x0018 - 0x0000)
+struct PowerRatingBlockItemDetails_C_SetPowerRatingFromItem final
 {
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,22 +44,22 @@ public:
 	int32                                         CallFunc_GetRating_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem) == 0x2E004C, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingFromItem");
-static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem) == 0x2E004C, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingFromItem");
+static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem) == 0x000008, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingFromItem");
+static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem) == 0x000018, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingFromItem");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem, Item) == 0x000000, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingFromItem::Item' has a wrong offset!");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem, InterpolationDuration) == 0x000008, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingFromItem::InterpolationDuration' has a wrong offset!");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem, CallFunc_GetRating_ReturnValue) == 0x00000C, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingFromItem::CallFunc_GetRating_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingFromItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingValueForComparison
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison final
+// 0x0004 (0x0004 - 0x0000)
+struct PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison final
 {
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison) == 0x0000E4, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison");
-static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison) == 0x0000E4, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison");
+static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison) == 0x000004, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison");
+static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison) == 0x000004, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison");
 static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison, Value) == 0x000000, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison::Value' has a wrong offset!");
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.UpdateComparison

@@ -15,27 +15,27 @@ namespace SDK::Params
 {
 
 // Function LeaderboardThrobber.LeaderboardThrobber_C.ExecuteUbergraph_LeaderboardThrobber
-// 0x0162 (0x0162 - 0x0000)
-struct alignas(0x162) LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber final
+// 0x0008 (0x0008 - 0x0000)
+struct LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber) == 0x000162, "Wrong alignment on LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber");
-static_assert(sizeof(LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber) == 0x000162, "Wrong size on LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber");
+static_assert(alignof(LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber) == 0x000004, "Wrong alignment on LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber");
+static_assert(sizeof(LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber) == 0x000008, "Wrong size on LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber");
 static_assert(offsetof(LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber, EntryPoint) == 0x000000, "Member 'LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber::EntryPoint' has a wrong offset!");
 static_assert(offsetof(LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber, K2Node_Event_IsDesignTime) == 0x000004, "Member 'LeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function LeaderboardThrobber.LeaderboardThrobber_C.PreConstruct
-// 0x05A6 (0x05A6 - 0x0000)
-struct alignas(0x5A6) LeaderboardThrobber_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct LeaderboardThrobber_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaderboardThrobber_C_PreConstruct) == 0x0005A6, "Wrong alignment on LeaderboardThrobber_C_PreConstruct");
-static_assert(sizeof(LeaderboardThrobber_C_PreConstruct) == 0x0005A6, "Wrong size on LeaderboardThrobber_C_PreConstruct");
+static_assert(alignof(LeaderboardThrobber_C_PreConstruct) == 0x000001, "Wrong alignment on LeaderboardThrobber_C_PreConstruct");
+static_assert(sizeof(LeaderboardThrobber_C_PreConstruct) == 0x000001, "Wrong size on LeaderboardThrobber_C_PreConstruct");
 static_assert(offsetof(LeaderboardThrobber_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LeaderboardThrobber_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }

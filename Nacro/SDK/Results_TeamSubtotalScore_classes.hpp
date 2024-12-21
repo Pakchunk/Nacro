@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_TeamSubtotalScore.Results_TeamSubtotalScore_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UResults_TeamSubtotalScore_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageBackground;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                TextScore;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EFortUIScoreType                              ScoreType;                                         // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UResults_TeamSubtotalScore_C>();
 	}
 };
-static_assert(alignof(UResults_TeamSubtotalScore_C) == 0x322CBBB8, "Wrong alignment on UResults_TeamSubtotalScore_C");
-static_assert(sizeof(UResults_TeamSubtotalScore_C) == 0x322CBBB8, "Wrong size on UResults_TeamSubtotalScore_C");
+static_assert(alignof(UResults_TeamSubtotalScore_C) == 0x000008, "Wrong alignment on UResults_TeamSubtotalScore_C");
+static_assert(sizeof(UResults_TeamSubtotalScore_C) == 0x000258, "Wrong size on UResults_TeamSubtotalScore_C");
 static_assert(offsetof(UResults_TeamSubtotalScore_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeamSubtotalScore_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_TeamSubtotalScore_C, ImageBackground) == 0x000240, "Member 'UResults_TeamSubtotalScore_C::ImageBackground' has a wrong offset!");
 static_assert(offsetof(UResults_TeamSubtotalScore_C, TextScore) == 0x000248, "Member 'UResults_TeamSubtotalScore_C::TextScore' has a wrong offset!");

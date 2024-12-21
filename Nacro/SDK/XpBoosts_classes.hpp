@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBoosts.XpBoosts_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C0 (0x02F8 - 0x0238)
 class UXpBoosts_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UXpBoostRow_C*                          Ally0Boost;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UXpBoostRow_C*                          Ally1Boost;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UXpBoostRow_C*                          Ally2Boost;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -41,7 +41,7 @@ public:
 	int32                                         Total_Boost_Amount;                                // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2BC[0x4];                                      // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UXpBoostRow_C*>                  Party_Members;                                     // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FUniqueNetIdRepl                       Player_To_Boost;                                   // 0x02D0(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       Player_To_Boost;                                   // 0x02D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<bool>                                  RowsBoosted;                                       // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
@@ -70,8 +70,8 @@ public:
 		return GetDefaultObjImpl<UXpBoosts_C>();
 	}
 };
-static_assert(alignof(UXpBoosts_C) == 0x322CBBB8, "Wrong alignment on UXpBoosts_C");
-static_assert(sizeof(UXpBoosts_C) == 0x322CBBB8, "Wrong size on UXpBoosts_C");
+static_assert(alignof(UXpBoosts_C) == 0x000008, "Wrong alignment on UXpBoosts_C");
+static_assert(sizeof(UXpBoosts_C) == 0x0002F8, "Wrong size on UXpBoosts_C");
 static_assert(offsetof(UXpBoosts_C, UberGraphFrame) == 0x000238, "Member 'UXpBoosts_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UXpBoosts_C, Ally0Boost) == 0x000240, "Member 'UXpBoosts_C::Ally0Boost' has a wrong offset!");
 static_assert(offsetof(UXpBoosts_C, Ally1Boost) == 0x000248, "Member 'UXpBoosts_C::Ally1Boost' has a wrong offset!");

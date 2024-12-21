@@ -330,48 +330,46 @@ static_assert(offsetof(SubgameSelectScreen_C_SafeSetSubGame, CallFunc_CanPlay_De
 static_assert(offsetof(SubgameSelectScreen_C_SafeSetSubGame, CallFunc_CanPlay_ReturnValue) == 0x000030, "Member 'SubgameSelectScreen_C_SafeSetSubGame::CallFunc_CanPlay_ReturnValue' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.ToggleTimer
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct SubgameSelectScreen_C_ToggleTimer final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 };
-static_assert(alignof(SubgameSelectScreen_C_ToggleTimer) == 0x11821D80, "Wrong alignment on SubgameSelectScreen_C_ToggleTimer");
-static_assert(sizeof(SubgameSelectScreen_C_ToggleTimer) == 0x11821D80, "Wrong size on SubgameSelectScreen_C_ToggleTimer");
+static_assert(alignof(SubgameSelectScreen_C_ToggleTimer) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_ToggleTimer");
+static_assert(sizeof(SubgameSelectScreen_C_ToggleTimer) == 0x000020, "Wrong size on SubgameSelectScreen_C_ToggleTimer");
 static_assert(offsetof(SubgameSelectScreen_C_ToggleTimer, Enabled) == 0x000000, "Member 'SubgameSelectScreen_C_ToggleTimer::Enabled' has a wrong offset!");
 static_assert(offsetof(SubgameSelectScreen_C_ToggleTimer, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'SubgameSelectScreen_C_ToggleTimer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(SubgameSelectScreen_C_ToggleTimer, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'SubgameSelectScreen_C_ToggleTimer::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.ResetKeyArtForMainMenu
-// 0x003E (0x003E - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct SubgameSelectScreen_C_ResetKeyArtForMainMenu final
 {
 public:
-	struct FSubGameSelectRotatorItems             CallFunc_Array_Get_Item;                           // 0x0000(0x001F)(HasGetValueTypeHash)
-	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FSubGameSelectRotatorItems             CallFunc_Array_Get_Item;                           // 0x0000(0x0020)(HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_ResetKeyArtForMainMenu) == 0x00001F, "Wrong alignment on SubgameSelectScreen_C_ResetKeyArtForMainMenu");
-static_assert(sizeof(SubgameSelectScreen_C_ResetKeyArtForMainMenu) == 0x00003E, "Wrong size on SubgameSelectScreen_C_ResetKeyArtForMainMenu");
+static_assert(alignof(SubgameSelectScreen_C_ResetKeyArtForMainMenu) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_ResetKeyArtForMainMenu");
+static_assert(sizeof(SubgameSelectScreen_C_ResetKeyArtForMainMenu) == 0x000020, "Wrong size on SubgameSelectScreen_C_ResetKeyArtForMainMenu");
 static_assert(offsetof(SubgameSelectScreen_C_ResetKeyArtForMainMenu, CallFunc_Array_Get_Item) == 0x000000, "Member 'SubgameSelectScreen_C_ResetKeyArtForMainMenu::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.AdvanceRotator
-// 0x003E (0x003E - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct SubgameSelectScreen_C_AdvanceRotator final
 {
 public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSubGameSelectRotatorItems             CallFunc_Array_Get_Item;                           // 0x0008(0x001F)(HasGetValueTypeHash)
-	uint8                                         Pad_27[0x1];                                       // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSubGameSelectRotatorItems             CallFunc_Array_Get_Item;                           // 0x0008(0x0020)(HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_AdvanceRotator) == 0x00001F, "Wrong alignment on SubgameSelectScreen_C_AdvanceRotator");
-static_assert(sizeof(SubgameSelectScreen_C_AdvanceRotator) == 0x00003E, "Wrong size on SubgameSelectScreen_C_AdvanceRotator");
+static_assert(alignof(SubgameSelectScreen_C_AdvanceRotator) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_AdvanceRotator");
+static_assert(sizeof(SubgameSelectScreen_C_AdvanceRotator) == 0x000030, "Wrong size on SubgameSelectScreen_C_AdvanceRotator");
 static_assert(offsetof(SubgameSelectScreen_C_AdvanceRotator, CallFunc_Array_Length_ReturnValue) == 0x000000, "Member 'SubgameSelectScreen_C_AdvanceRotator::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SubgameSelectScreen_C_AdvanceRotator, CallFunc_Array_Get_Item) == 0x000008, "Member 'SubgameSelectScreen_C_AdvanceRotator::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(SubgameSelectScreen_C_AdvanceRotator, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'SubgameSelectScreen_C_AdvanceRotator::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");

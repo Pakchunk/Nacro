@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNS_GM_OnDeathExplosion.GCNS_GM_OnDeathExplosion_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0070 - 0x0070)
 class UGCNS_GM_OnDeathExplosion_C final : public UFortGameplayCueNotify_Simple
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGCNS_GM_OnDeathExplosion_C>();
 	}
 };
-static_assert(alignof(UGCNS_GM_OnDeathExplosion_C) == 0x11821D80, "Wrong alignment on UGCNS_GM_OnDeathExplosion_C");
-static_assert(sizeof(UGCNS_GM_OnDeathExplosion_C) == 0x11821D80, "Wrong size on UGCNS_GM_OnDeathExplosion_C");
+static_assert(alignof(UGCNS_GM_OnDeathExplosion_C) == 0x000008, "Wrong alignment on UGCNS_GM_OnDeathExplosion_C");
+static_assert(sizeof(UGCNS_GM_OnDeathExplosion_C) == 0x000070, "Wrong size on UGCNS_GM_OnDeathExplosion_C");
 
 }
 

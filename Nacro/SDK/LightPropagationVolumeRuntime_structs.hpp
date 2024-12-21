@@ -15,8 +15,8 @@ namespace SDK
 {
 
 // ScriptStruct LightPropagationVolumeRuntime.LightPropagationVolumeSettings
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct alignas(0x11821C00) FLightPropagationVolumeSettings final
+// 0x0038 (0x0038 - 0x0000)
+struct FLightPropagationVolumeSettings final
 {
 public:
 	uint8                                         bOverride_LPVIntensity : 1;                        // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -47,8 +47,8 @@ public:
 	float                                         LPVDiffuseOcclusionIntensity;                      // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LPVSpecularOcclusionIntensity;                     // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLightPropagationVolumeSettings) == 0x11821C00, "Wrong alignment on FLightPropagationVolumeSettings");
-static_assert(sizeof(FLightPropagationVolumeSettings) == 0x11821C00, "Wrong size on FLightPropagationVolumeSettings");
+static_assert(alignof(FLightPropagationVolumeSettings) == 0x000004, "Wrong alignment on FLightPropagationVolumeSettings");
+static_assert(sizeof(FLightPropagationVolumeSettings) == 0x000038, "Wrong size on FLightPropagationVolumeSettings");
 static_assert(offsetof(FLightPropagationVolumeSettings, LPVIntensity) == 0x000004, "Member 'FLightPropagationVolumeSettings::LPVIntensity' has a wrong offset!");
 static_assert(offsetof(FLightPropagationVolumeSettings, LPVVplInjectionBias) == 0x000008, "Member 'FLightPropagationVolumeSettings::LPVVplInjectionBias' has a wrong offset!");
 static_assert(offsetof(FLightPropagationVolumeSettings, LPVSize) == 0x00000C, "Member 'FLightPropagationVolumeSettings::LPVSize' has a wrong offset!");

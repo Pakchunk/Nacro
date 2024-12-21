@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function CollectionBookSectionRewardWidget.CollectionBookSectionRewardWidget_C.ExecuteUbergraph_CollectionBookSectionRewardWidget
-// 0x007B (0x007B - 0x0000)
-struct alignas(0x7B) CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget final
+// 0x0010 (0x0010 - 0x0000)
+struct CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -27,22 +27,22 @@ public:
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget) == 0x00007B, "Wrong alignment on CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget");
-static_assert(sizeof(CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget) == 0x00007B, "Wrong size on CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget");
+static_assert(alignof(CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget) == 0x000008, "Wrong alignment on CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget");
+static_assert(sizeof(CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget) == 0x000010, "Wrong size on CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget");
 static_assert(offsetof(CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget, EntryPoint) == 0x000000, "Member 'CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget, K2Node_Event_NewStatus) == 0x000004, "Member 'CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget::K2Node_Event_NewStatus' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget, Temp_byte_Variable) == 0x000005, "Member 'CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget, K2Node_Select_Default) == 0x000008, "Member 'CollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget::K2Node_Select_Default' has a wrong offset!");
 
 // Function CollectionBookSectionRewardWidget.CollectionBookSectionRewardWidget_C.OnRewardStatusChanged
-// 0x002B (0x002B - 0x0000)
-struct alignas(0x2B) CollectionBookSectionRewardWidget_C_OnRewardStatusChanged final
+// 0x0001 (0x0001 - 0x0000)
+struct CollectionBookSectionRewardWidget_C_OnRewardStatusChanged final
 {
 public:
 	ECollectionBookRewardStatus                   NewStatus;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookSectionRewardWidget_C_OnRewardStatusChanged) == 0x00002B, "Wrong alignment on CollectionBookSectionRewardWidget_C_OnRewardStatusChanged");
-static_assert(sizeof(CollectionBookSectionRewardWidget_C_OnRewardStatusChanged) == 0x00002B, "Wrong size on CollectionBookSectionRewardWidget_C_OnRewardStatusChanged");
+static_assert(alignof(CollectionBookSectionRewardWidget_C_OnRewardStatusChanged) == 0x000001, "Wrong alignment on CollectionBookSectionRewardWidget_C_OnRewardStatusChanged");
+static_assert(sizeof(CollectionBookSectionRewardWidget_C_OnRewardStatusChanged) == 0x000001, "Wrong size on CollectionBookSectionRewardWidget_C_OnRewardStatusChanged");
 static_assert(offsetof(CollectionBookSectionRewardWidget_C_OnRewardStatusChanged, NewStatus) == 0x000000, "Member 'CollectionBookSectionRewardWidget_C_OnRewardStatusChanged::NewStatus' has a wrong offset!");
 
 }

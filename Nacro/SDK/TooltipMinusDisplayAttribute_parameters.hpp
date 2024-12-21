@@ -20,20 +20,20 @@ namespace SDK::Params
 {
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.ExecuteUbergraph_Tooltip-DisplayAttribute
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_SetDisplayAttribute_DeltaAttribute;       // 0x0008(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_SetDisplayAttribute_DeltaAttribute;       // 0x0008(0x0070)()
 	bool                                          CallFunc_SetDisplayAttribute_ReturnValue;          // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_Delta;                                // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetToolTipWidget_ReturnValue;             // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute) == 0x11821C00, "Wrong alignment on TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute");
-static_assert(sizeof(TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute) == 0x11821C00, "Wrong size on TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute");
+static_assert(alignof(TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute) == 0x000008, "Wrong alignment on TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute");
+static_assert(sizeof(TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute) == 0x000088, "Wrong size on TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute, EntryPoint) == 0x000000, "Member 'TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute, CallFunc_SetDisplayAttribute_DeltaAttribute) == 0x000008, "Member 'TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute::CallFunc_SetDisplayAttribute_DeltaAttribute' has a wrong offset!");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute, CallFunc_SetDisplayAttribute_ReturnValue) == 0x000078, "Member 'TooltipMinusDisplayAttribute_C_ExecuteUbergraph_TooltipMinusDisplayAttribute::CallFunc_SetDisplayAttribute_ReturnValue' has a wrong offset!");
@@ -52,7 +52,7 @@ static_assert(sizeof(TooltipMinusDisplayAttribute_C_ValueChanged) == 0x000004, "
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_ValueChanged, Delta) == 0x000000, "Member 'TooltipMinusDisplayAttribute_C_ValueChanged::Delta' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.Update
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0138 (0x0138 - 0x0000)
 struct TooltipMinusDisplayAttribute_C_Update final
 {
 public:
@@ -71,29 +71,30 @@ public:
 	EFortBuffState                                Temp_byte_Variable8;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortStatValueDisplayType                     Temp_byte_Variable9;                               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0020(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0020(0x0070)()
 	float                                         Temp_float_Variable5;                              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable6;                              // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x009C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x009C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable7;                              // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable8;                              // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortComparisonType                           Temp_byte_Variable10;                              // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select3_Default;                            // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00BC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00BC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select4_Default;                            // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x00D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select5_Default;                            // 0x00E0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00F0(0x322CBBB8)()
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x00D0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select5_Default;                            // 0x00E0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00F0(0x0028)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select6_Default;                            // 0x011C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select6_Default;                            // 0x011C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select7_Default;                            // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipMinusDisplayAttribute_C_Update) == 0x322CBBB8, "Wrong alignment on TooltipMinusDisplayAttribute_C_Update");
-static_assert(sizeof(TooltipMinusDisplayAttribute_C_Update) == 0x322CBBB8, "Wrong size on TooltipMinusDisplayAttribute_C_Update");
+static_assert(alignof(TooltipMinusDisplayAttribute_C_Update) == 0x000008, "Wrong alignment on TooltipMinusDisplayAttribute_C_Update");
+static_assert(sizeof(TooltipMinusDisplayAttribute_C_Update) == 0x000138, "Wrong size on TooltipMinusDisplayAttribute_C_Update");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_Update, Temp_byte_Variable) == 0x000000, "Member 'TooltipMinusDisplayAttribute_C_Update::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_Update, Temp_byte_Variable2) == 0x000001, "Member 'TooltipMinusDisplayAttribute_C_Update::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_Update, Temp_byte_Variable3) == 0x000002, "Member 'TooltipMinusDisplayAttribute_C_Update::Temp_byte_Variable3' has a wrong offset!");
@@ -127,41 +128,41 @@ static_assert(offsetof(TooltipMinusDisplayAttribute_C_Update, K2Node_Select6_Def
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_Update, K2Node_Select7_Default) == 0x000130, "Member 'TooltipMinusDisplayAttribute_C_Update::K2Node_Select7_Default' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.Update Base & Buff Colors
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors final
 {
 public:
-	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x0000(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors) == 0x11821300, "Wrong alignment on TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors");
-static_assert(sizeof(TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors) == 0x11821300, "Wrong size on TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors");
+static_assert(alignof(TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors) == 0x000004, "Wrong alignment on TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors");
+static_assert(sizeof(TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors) == 0x000020, "Wrong size on TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors, CallFunc_Get_Base___Buff_Colors_Base) == 0x000000, "Member 'TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors::CallFunc_Get_Base___Buff_Colors_Base' has a wrong offset!");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors, CallFunc_Get_Base___Buff_Colors_Buff) == 0x000010, "Member 'TooltipMinusDisplayAttribute_C_Update_Base___Buff_Colors::CallFunc_Get_Base___Buff_Colors_Buff' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.UpdateValueText
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct TooltipMinusDisplayAttribute_C_UpdateValueText final
 {
 public:
-	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0000(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0000(0x0070)()
 };
-static_assert(alignof(TooltipMinusDisplayAttribute_C_UpdateValueText) == 0x11821C00, "Wrong alignment on TooltipMinusDisplayAttribute_C_UpdateValueText");
-static_assert(sizeof(TooltipMinusDisplayAttribute_C_UpdateValueText) == 0x11821C00, "Wrong size on TooltipMinusDisplayAttribute_C_UpdateValueText");
+static_assert(alignof(TooltipMinusDisplayAttribute_C_UpdateValueText) == 0x000008, "Wrong alignment on TooltipMinusDisplayAttribute_C_UpdateValueText");
+static_assert(sizeof(TooltipMinusDisplayAttribute_C_UpdateValueText) == 0x000070, "Wrong size on TooltipMinusDisplayAttribute_C_UpdateValueText");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_UpdateValueText, CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute) == 0x000000, "Member 'TooltipMinusDisplayAttribute_C_UpdateValueText::CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.GetToolTipWidget
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct TooltipMinusDisplayAttribute_C_GetToolTipWidget final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0008(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0008(0x0070)()
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipMinusDisplayAttribute_C_GetToolTipWidget) == 0x11821C00, "Wrong alignment on TooltipMinusDisplayAttribute_C_GetToolTipWidget");
-static_assert(sizeof(TooltipMinusDisplayAttribute_C_GetToolTipWidget) == 0x11821C00, "Wrong size on TooltipMinusDisplayAttribute_C_GetToolTipWidget");
+static_assert(alignof(TooltipMinusDisplayAttribute_C_GetToolTipWidget) == 0x000008, "Wrong alignment on TooltipMinusDisplayAttribute_C_GetToolTipWidget");
+static_assert(sizeof(TooltipMinusDisplayAttribute_C_GetToolTipWidget) == 0x000088, "Wrong size on TooltipMinusDisplayAttribute_C_GetToolTipWidget");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_GetToolTipWidget, ReturnValue) == 0x000000, "Member 'TooltipMinusDisplayAttribute_C_GetToolTipWidget::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_GetToolTipWidget, CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute) == 0x000008, "Member 'TooltipMinusDisplayAttribute_C_GetToolTipWidget::CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute' has a wrong offset!");
 static_assert(offsetof(TooltipMinusDisplayAttribute_C_GetToolTipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000078, "Member 'TooltipMinusDisplayAttribute_C_GetToolTipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");

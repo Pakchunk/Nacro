@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformResultModal.ItemTransformResultModal_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x0450 - 0x03E0)
 class UItemTransformResultModal_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ContinueButton;                                    // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      InspectButton;                                     // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemDetailsWidget_C*                   ItemDetailsWidget;                                 // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -55,8 +55,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformResultModal_C>();
 	}
 };
-static_assert(alignof(UItemTransformResultModal_C) == 0x322CBBB8, "Wrong alignment on UItemTransformResultModal_C");
-static_assert(sizeof(UItemTransformResultModal_C) == 0x322CBBB8, "Wrong size on UItemTransformResultModal_C");
+static_assert(alignof(UItemTransformResultModal_C) == 0x000008, "Wrong alignment on UItemTransformResultModal_C");
+static_assert(sizeof(UItemTransformResultModal_C) == 0x000450, "Wrong size on UItemTransformResultModal_C");
 static_assert(offsetof(UItemTransformResultModal_C, UberGraphFrame) == 0x0003E0, "Member 'UItemTransformResultModal_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransformResultModal_C, ContinueButton) == 0x0003E8, "Member 'UItemTransformResultModal_C::ContinueButton' has a wrong offset!");
 static_assert(offsetof(UItemTransformResultModal_C, InspectButton) == 0x0003F0, "Member 'UItemTransformResultModal_C::InspectButton' has a wrong offset!");

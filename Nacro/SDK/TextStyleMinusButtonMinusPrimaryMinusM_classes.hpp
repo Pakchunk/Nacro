@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Button-Primary-M.TextStyle-Button-Primary-M_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusButtonMinusPrimaryMinusM_C final : public UCommonTextStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusButtonMinusPrimaryMinusM_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusButtonMinusPrimaryMinusM_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusButtonMinusPrimaryMinusM_C");
-static_assert(sizeof(UTextStyleMinusButtonMinusPrimaryMinusM_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusButtonMinusPrimaryMinusM_C");
+static_assert(alignof(UTextStyleMinusButtonMinusPrimaryMinusM_C) == 0x000008, "Wrong alignment on UTextStyleMinusButtonMinusPrimaryMinusM_C");
+static_assert(sizeof(UTextStyleMinusButtonMinusPrimaryMinusM_C) == 0x0000D0, "Wrong size on UTextStyleMinusButtonMinusPrimaryMinusM_C");
 
 }
 

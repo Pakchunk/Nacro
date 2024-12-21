@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function Combined_Horde.Combined_Horde_C.ExecuteUbergraph_Combined_Horde
-// 0x007F (0x007F - 0x0000)
-struct alignas(0x7F) Combined_Horde_C_ExecuteUbergraph_Combined_Horde final
+// 0x0018 (0x0018 - 0x0000)
+struct Combined_Horde_C_ExecuteUbergraph_Combined_Horde final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,8 +24,8 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Combined_Horde_C_ExecuteUbergraph_Combined_Horde) == 0x00007F, "Wrong alignment on Combined_Horde_C_ExecuteUbergraph_Combined_Horde");
-static_assert(sizeof(Combined_Horde_C_ExecuteUbergraph_Combined_Horde) == 0x00007F, "Wrong size on Combined_Horde_C_ExecuteUbergraph_Combined_Horde");
+static_assert(alignof(Combined_Horde_C_ExecuteUbergraph_Combined_Horde) == 0x000008, "Wrong alignment on Combined_Horde_C_ExecuteUbergraph_Combined_Horde");
+static_assert(sizeof(Combined_Horde_C_ExecuteUbergraph_Combined_Horde) == 0x000018, "Wrong size on Combined_Horde_C_ExecuteUbergraph_Combined_Horde");
 static_assert(offsetof(Combined_Horde_C_ExecuteUbergraph_Combined_Horde, EntryPoint) == 0x000000, "Member 'Combined_Horde_C_ExecuteUbergraph_Combined_Horde::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Combined_Horde_C_ExecuteUbergraph_Combined_Horde, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'Combined_Horde_C_ExecuteUbergraph_Combined_Horde::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Combined_Horde_C_ExecuteUbergraph_Combined_Horde, K2Node_Event_IsDesignTime) == 0x000010, "Member 'Combined_Horde_C_ExecuteUbergraph_Combined_Horde::K2Node_Event_IsDesignTime' has a wrong offset!");

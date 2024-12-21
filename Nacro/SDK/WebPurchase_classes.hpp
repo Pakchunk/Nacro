@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WebPurchase.WebPurchase_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0408 - 0x03E0)
 class UWebPurchase_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UCircularThrobber*                      Throbber;                                          // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                WebContent;                                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BackAction;                                        // 0x03F8(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    BackAction;                                        // 0x03F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_WebPurchase(int32 EntryPoint);
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UWebPurchase_C>();
 	}
 };
-static_assert(alignof(UWebPurchase_C) == 0x322CBBB8, "Wrong alignment on UWebPurchase_C");
-static_assert(sizeof(UWebPurchase_C) == 0x322CBBB8, "Wrong size on UWebPurchase_C");
+static_assert(alignof(UWebPurchase_C) == 0x000008, "Wrong alignment on UWebPurchase_C");
+static_assert(sizeof(UWebPurchase_C) == 0x000408, "Wrong size on UWebPurchase_C");
 static_assert(offsetof(UWebPurchase_C, UberGraphFrame) == 0x0003E0, "Member 'UWebPurchase_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWebPurchase_C, Throbber) == 0x0003E8, "Member 'UWebPurchase_C::Throbber' has a wrong offset!");
 static_assert(offsetof(UWebPurchase_C, WebContent) == 0x0003F0, "Member 'UWebPurchase_C::WebContent' has a wrong offset!");

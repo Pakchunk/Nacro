@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // UserDefinedStruct ItemTextureSet.ItemTextureSet
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0A28 (0x0A28 - 0x0000)
 struct FItemTextureSet final
 {
 public:
 	EItemDisplayStyle                             Style_21_0D38ED0D4F46097BD1353E930AE51488;         // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMultiSizeBrush                    Bezel_32_21DC2A9C4E30B0D304AD4685FDFDA26D;         // 0x0008(0x11827900)(Edit, BlueprintVisible)
-	struct FFortMultiSizeBrush                    Shadow_33_514BE8E24563A9CF138144960776C114;        // 0x0368(0x11827900)(Edit, BlueprintVisible)
-	struct FFortMultiSizeBrush                    Chamfer_31_AD4B992A4499C810B0AA9F8AFD86EFAB;       // 0x06C8(0x11827900)(Edit, BlueprintVisible)
+	struct FFortMultiSizeBrush                    Bezel_32_21DC2A9C4E30B0D304AD4685FDFDA26D;         // 0x0008(0x0360)(Edit, BlueprintVisible)
+	struct FFortMultiSizeBrush                    Shadow_33_514BE8E24563A9CF138144960776C114;        // 0x0368(0x0360)(Edit, BlueprintVisible)
+	struct FFortMultiSizeBrush                    Chamfer_31_AD4B992A4499C810B0AA9F8AFD86EFAB;       // 0x06C8(0x0360)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FItemTextureSet) == 0x11821780, "Wrong alignment on FItemTextureSet");
-static_assert(sizeof(FItemTextureSet) == 0x11821780, "Wrong size on FItemTextureSet");
+static_assert(alignof(FItemTextureSet) == 0x000008, "Wrong alignment on FItemTextureSet");
+static_assert(sizeof(FItemTextureSet) == 0x000A28, "Wrong size on FItemTextureSet");
 static_assert(offsetof(FItemTextureSet, Style_21_0D38ED0D4F46097BD1353E930AE51488) == 0x000000, "Member 'FItemTextureSet::Style_21_0D38ED0D4F46097BD1353E930AE51488' has a wrong offset!");
 static_assert(offsetof(FItemTextureSet, Bezel_32_21DC2A9C4E30B0D304AD4685FDFDA26D) == 0x000008, "Member 'FItemTextureSet::Bezel_32_21DC2A9C4E30B0D304AD4685FDFDA26D' has a wrong offset!");
 static_assert(offsetof(FItemTextureSet, Shadow_33_514BE8E24563A9CF138144960776C114) == 0x000368, "Member 'FItemTextureSet::Shadow_33_514BE8E24563A9CF138144960776C114' has a wrong offset!");

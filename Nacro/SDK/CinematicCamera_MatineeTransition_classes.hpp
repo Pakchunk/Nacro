@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CinematicCamera_MatineeTransition.CinematicCamera_MatineeTransition_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0050 - 0x0050)
 class UCinematicCamera_MatineeTransition_C final : public UFortCinematicCamera
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UCinematicCamera_MatineeTransition_C>();
 	}
 };
-static_assert(alignof(UCinematicCamera_MatineeTransition_C) == 0x11821D80, "Wrong alignment on UCinematicCamera_MatineeTransition_C");
-static_assert(sizeof(UCinematicCamera_MatineeTransition_C) == 0x11821D80, "Wrong size on UCinematicCamera_MatineeTransition_C");
+static_assert(alignof(UCinematicCamera_MatineeTransition_C) == 0x000008, "Wrong alignment on UCinematicCamera_MatineeTransition_C");
+static_assert(sizeof(UCinematicCamera_MatineeTransition_C) == 0x000050, "Wrong size on UCinematicCamera_MatineeTransition_C");
 
 }
 

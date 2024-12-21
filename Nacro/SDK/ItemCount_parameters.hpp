@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function ItemCount.ItemCount_C.ExecuteUbergraph_ItemCount
-// 0x003A (0x003A - 0x0000)
-struct alignas(0x3A) ItemCount_C_ExecuteUbergraph_ItemCount final
+// 0x0010 (0x0010 - 0x0000)
+struct ItemCount_C_ExecuteUbergraph_ItemCount final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,8 +32,8 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCount_C_ExecuteUbergraph_ItemCount) == 0x00003A, "Wrong alignment on ItemCount_C_ExecuteUbergraph_ItemCount");
-static_assert(sizeof(ItemCount_C_ExecuteUbergraph_ItemCount) == 0x00003A, "Wrong size on ItemCount_C_ExecuteUbergraph_ItemCount");
+static_assert(alignof(ItemCount_C_ExecuteUbergraph_ItemCount) == 0x000004, "Wrong alignment on ItemCount_C_ExecuteUbergraph_ItemCount");
+static_assert(sizeof(ItemCount_C_ExecuteUbergraph_ItemCount) == 0x000010, "Wrong size on ItemCount_C_ExecuteUbergraph_ItemCount");
 static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, EntryPoint) == 0x000000, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, K2Node_Event_IsDesignTime) == 0x000004, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");

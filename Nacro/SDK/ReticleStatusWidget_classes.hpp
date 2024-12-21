@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ReticleStatusWidget.ReticleStatusWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0278 - 0x0260)
 class UReticleStatusWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       ReticleStatusText;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                         StatusDisplayDuration;                             // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UReticleStatusWidget_C>();
 	}
 };
-static_assert(alignof(UReticleStatusWidget_C) == 0x322CBBB8, "Wrong alignment on UReticleStatusWidget_C");
-static_assert(sizeof(UReticleStatusWidget_C) == 0x322CBBB8, "Wrong size on UReticleStatusWidget_C");
+static_assert(alignof(UReticleStatusWidget_C) == 0x000008, "Wrong alignment on UReticleStatusWidget_C");
+static_assert(sizeof(UReticleStatusWidget_C) == 0x000278, "Wrong size on UReticleStatusWidget_C");
 static_assert(offsetof(UReticleStatusWidget_C, UberGraphFrame) == 0x000260, "Member 'UReticleStatusWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UReticleStatusWidget_C, ReticleStatusText) == 0x000268, "Member 'UReticleStatusWidget_C::ReticleStatusText' has a wrong offset!");
 static_assert(offsetof(UReticleStatusWidget_C, StatusDisplayDuration) == 0x000270, "Member 'UReticleStatusWidget_C::StatusDisplayDuration' has a wrong offset!");

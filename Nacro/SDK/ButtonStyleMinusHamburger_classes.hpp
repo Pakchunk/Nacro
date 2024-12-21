@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-Hamburger.ButtonStyle-Hamburger_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusHamburger_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusHamburger_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusHamburger_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusHamburger_C");
-static_assert(sizeof(UButtonStyleMinusHamburger_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusHamburger_C");
+static_assert(alignof(UButtonStyleMinusHamburger_C) == 0x000008, "Wrong alignment on UButtonStyleMinusHamburger_C");
+static_assert(sizeof(UButtonStyleMinusHamburger_C) == 0x000530, "Wrong size on UButtonStyleMinusHamburger_C");
 
 }
 

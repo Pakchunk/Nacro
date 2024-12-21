@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PickupMessageItem.PickupMessageItem_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x02D8 - 0x0280)
 class UPickupMessageItem_C final : public UFortUIMessageItemWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Disappear;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Appear;                                            // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               _Size_Box__Message_Size;                           // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UPickupMessageItem_C>();
 	}
 };
-static_assert(alignof(UPickupMessageItem_C) == 0x322CBBB8, "Wrong alignment on UPickupMessageItem_C");
-static_assert(sizeof(UPickupMessageItem_C) == 0x322CBBB8, "Wrong size on UPickupMessageItem_C");
+static_assert(alignof(UPickupMessageItem_C) == 0x000008, "Wrong alignment on UPickupMessageItem_C");
+static_assert(sizeof(UPickupMessageItem_C) == 0x0002D8, "Wrong size on UPickupMessageItem_C");
 static_assert(offsetof(UPickupMessageItem_C, UberGraphFrame) == 0x000280, "Member 'UPickupMessageItem_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPickupMessageItem_C, Disappear) == 0x000288, "Member 'UPickupMessageItem_C::Disappear' has a wrong offset!");
 static_assert(offsetof(UPickupMessageItem_C, Appear) == 0x000290, "Member 'UPickupMessageItem_C::Appear' has a wrong offset!");

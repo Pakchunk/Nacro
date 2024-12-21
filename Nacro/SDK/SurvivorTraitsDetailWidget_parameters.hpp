@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function SurvivorTraitsDetailWidget.SurvivorTraitsDetailWidget_C.ExecuteUbergraph_SurvivorTraitsDetailWidget
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0790 (0x0790 - 0x0000)
 struct SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget final
 {
 public:
@@ -34,13 +34,13 @@ public:
 	class FText                                   CallFunc_TryGetCategory_OutCategoryDisplayName;    // 0x0010(0x0018)()
 	bool                                          CallFunc_TryGetCategory_OutHasIcon;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMultiSizeBrush                    CallFunc_TryGetCategory_OutCategoryIconBrush;      // 0x0030(0x11827900)()
+	struct FFortMultiSizeBrush                    CallFunc_TryGetCategory_OutCategoryIconBrush;      // 0x0030(0x0360)()
 	bool                                          CallFunc_TryGetCategory_ReturnValue;               // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_TryGetCategory_OutCategoryDisplayName2;   // 0x0398(0x0018)()
 	bool                                          CallFunc_TryGetCategory_OutHasIcon2;               // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3B1[0x7];                                      // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMultiSizeBrush                    CallFunc_TryGetCategory_OutCategoryIconBrush2;     // 0x03B8(0x11827900)()
+	struct FFortMultiSizeBrush                    CallFunc_TryGetCategory_OutCategoryIconBrush2;     // 0x03B8(0x0360)()
 	bool                                          CallFunc_TryGetCategory_ReturnValue2;              // 0x0718(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0719(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x071A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -63,8 +63,8 @@ public:
 	bool                                          Temp_bool_Variable4;                               // 0x078C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x078D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget) == 0x11821780, "Wrong alignment on SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget");
-static_assert(sizeof(SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget) == 0x11821780, "Wrong size on SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget");
+static_assert(alignof(SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget) == 0x000008, "Wrong alignment on SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget");
+static_assert(sizeof(SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget) == 0x000790, "Wrong size on SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget");
 static_assert(offsetof(SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget, EntryPoint) == 0x000000, "Member 'SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget, Temp_bool_Variable) == 0x000004, "Member 'SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget, Temp_byte_Variable) == 0x000005, "Member 'SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget::Temp_byte_Variable' has a wrong offset!");

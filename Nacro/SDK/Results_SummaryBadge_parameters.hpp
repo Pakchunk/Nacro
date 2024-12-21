@@ -51,27 +51,27 @@ static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBa
 static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, CallFunc_Conv_StringToText_ReturnValue) == 0x000090, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function Results_SummaryBadge.Results_SummaryBadge_C.PreConstruct
-// 0xAC17 (0xAC17 - 0x0000)
-struct alignas(0xAC17) Results_SummaryBadge_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct Results_SummaryBadge_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_SummaryBadge_C_PreConstruct) == 0x00AC17, "Wrong alignment on Results_SummaryBadge_C_PreConstruct");
-static_assert(sizeof(Results_SummaryBadge_C_PreConstruct) == 0x00AC17, "Wrong size on Results_SummaryBadge_C_PreConstruct");
+static_assert(alignof(Results_SummaryBadge_C_PreConstruct) == 0x000001, "Wrong alignment on Results_SummaryBadge_C_PreConstruct");
+static_assert(sizeof(Results_SummaryBadge_C_PreConstruct) == 0x000001, "Wrong size on Results_SummaryBadge_C_PreConstruct");
 static_assert(offsetof(Results_SummaryBadge_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_SummaryBadge_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_SummaryBadge.Results_SummaryBadge_C.Initialize
-// 0x730061 (0x730061 - 0x0000)
-struct alignas(0x730061) Results_SummaryBadge_C_Initialize final
+// 0x0028 (0x0028 - 0x0000)
+struct Results_SummaryBadge_C_Initialize final
 {
 public:
 	class UFortItem*                              BadgeItem;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0008(0x0018)()
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_SummaryBadge_C_Initialize) == 0x730061, "Wrong alignment on Results_SummaryBadge_C_Initialize");
-static_assert(sizeof(Results_SummaryBadge_C_Initialize) == 0x730061, "Wrong size on Results_SummaryBadge_C_Initialize");
+static_assert(alignof(Results_SummaryBadge_C_Initialize) == 0x000008, "Wrong alignment on Results_SummaryBadge_C_Initialize");
+static_assert(sizeof(Results_SummaryBadge_C_Initialize) == 0x000028, "Wrong size on Results_SummaryBadge_C_Initialize");
 static_assert(offsetof(Results_SummaryBadge_C_Initialize, BadgeItem) == 0x000000, "Member 'Results_SummaryBadge_C_Initialize::BadgeItem' has a wrong offset!");
 static_assert(offsetof(Results_SummaryBadge_C_Initialize, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'Results_SummaryBadge_C_Initialize::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_SummaryBadge_C_Initialize, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000020, "Member 'Results_SummaryBadge_C_Initialize::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");

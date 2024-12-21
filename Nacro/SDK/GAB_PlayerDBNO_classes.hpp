@@ -20,16 +20,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_PlayerDBNO.GAB_PlayerDBNO_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x00E8 (0x0B28 - 0x0A40)
 class UGAB_PlayerDBNO_C final : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
 	class UAnimMontage*                           DeathMontage;                                      // 0x0A48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DeathHitDirection;                                 // 0x0A50(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             DeathHitResult;                                    // 0x0A60(0x11827600)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0AE8(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  GameplayStatusAfflicted;                           // 0x0B08(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FVector                                DeathHitDirection;                                 // 0x0A50(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A5C[0x4];                                      // 0x0A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             DeathHitResult;                                    // 0x0A60(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0AE8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  GameplayStatusAfflicted;                           // 0x0B08(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_GAB_PlayerDBNO(int32 EntryPoint);
@@ -50,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UGAB_PlayerDBNO_C>();
 	}
 };
-static_assert(alignof(UGAB_PlayerDBNO_C) == 0x1182EB00, "Wrong alignment on UGAB_PlayerDBNO_C");
-static_assert(sizeof(UGAB_PlayerDBNO_C) == 0x1182EB00, "Wrong size on UGAB_PlayerDBNO_C");
+static_assert(alignof(UGAB_PlayerDBNO_C) == 0x000008, "Wrong alignment on UGAB_PlayerDBNO_C");
+static_assert(sizeof(UGAB_PlayerDBNO_C) == 0x000B28, "Wrong size on UGAB_PlayerDBNO_C");
 static_assert(offsetof(UGAB_PlayerDBNO_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_PlayerDBNO_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UGAB_PlayerDBNO_C, DeathMontage) == 0x000A48, "Member 'UGAB_PlayerDBNO_C::DeathMontage' has a wrong offset!");
 static_assert(offsetof(UGAB_PlayerDBNO_C, DeathHitDirection) == 0x000A50, "Member 'UGAB_PlayerDBNO_C::DeathHitDirection' has a wrong offset!");

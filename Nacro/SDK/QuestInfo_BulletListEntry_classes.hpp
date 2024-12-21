@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UQuestInfo_BulletListEntry_C final : public UCommonUserWidget
 {
 public:
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UQuestInfo_BulletListEntry_C>();
 	}
 };
-static_assert(alignof(UQuestInfo_BulletListEntry_C) == 0x322CBBB8, "Wrong alignment on UQuestInfo_BulletListEntry_C");
-static_assert(sizeof(UQuestInfo_BulletListEntry_C) == 0x322CBBB8, "Wrong size on UQuestInfo_BulletListEntry_C");
+static_assert(alignof(UQuestInfo_BulletListEntry_C) == 0x000008, "Wrong alignment on UQuestInfo_BulletListEntry_C");
+static_assert(sizeof(UQuestInfo_BulletListEntry_C) == 0x000258, "Wrong size on UQuestInfo_BulletListEntry_C");
 static_assert(offsetof(UQuestInfo_BulletListEntry_C, ImageBorder) == 0x000238, "Member 'UQuestInfo_BulletListEntry_C::ImageBorder' has a wrong offset!");
 static_assert(offsetof(UQuestInfo_BulletListEntry_C, ImageEntryIcon) == 0x000240, "Member 'UQuestInfo_BulletListEntry_C::ImageEntryIcon' has a wrong offset!");
 static_assert(offsetof(UQuestInfo_BulletListEntry_C, SizeBoxIcon) == 0x000248, "Member 'UQuestInfo_BulletListEntry_C::SizeBoxIcon' has a wrong offset!");

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "TooltipStat_structs.hpp"
 #include "UMG_structs.hpp"
+#include "TooltipStat_structs.hpp"
 
 
 namespace SDK::Params
@@ -85,14 +85,15 @@ static_assert(offsetof(TooltipMinusBasicMultiLineMinusS_C_ExecuteUbergraph_Toolt
 static_assert(offsetof(TooltipMinusBasicMultiLineMinusS_C_ExecuteUbergraph_TooltipMinusBasicMultiLineMinusS, K2Node_Select5_Default) == 0x000022, "Member 'TooltipMinusBasicMultiLineMinusS_C_ExecuteUbergraph_TooltipMinusBasicMultiLineMinusS::K2Node_Select5_Default' has a wrong offset!");
 
 // Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Get Body Text
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x000C(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x000C(0x0010)(NoDestructor)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTooltipStatWidget_C*                   CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x0030(0x0018)()
@@ -103,8 +104,8 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text) == 0x322CBBB8, "Wrong alignment on TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text");
-static_assert(sizeof(TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text) == 0x322CBBB8, "Wrong size on TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text");
+static_assert(alignof(TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text) == 0x000008, "Wrong alignment on TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text");
+static_assert(sizeof(TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text) == 0x000098, "Wrong size on TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text");
 static_assert(offsetof(TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text, Temp_int_Array_Index_Variable) == 0x000000, "Member 'TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TooltipMinusBasicMultiLineMinusS_C_Get_Body_Text::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -129,15 +130,15 @@ static_assert(sizeof(TooltipMinusBasicMultiLineMinusS_C_Get_Header_Text) == 0x00
 static_assert(offsetof(TooltipMinusBasicMultiLineMinusS_C_Get_Header_Text, ReturnValue) == 0x000000, "Member 'TooltipMinusBasicMultiLineMinusS_C_Get_Header_Text::ReturnValue' has a wrong offset!");
 
 // Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Get Icon Brush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush final
 {
 public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm)
-	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x322CBBB8)()
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm)
+	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x0090)()
 };
-static_assert(alignof(TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush) == 0x11827900, "Wrong alignment on TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush");
-static_assert(sizeof(TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush) == 0x11827900, "Wrong size on TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush");
+static_assert(alignof(TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush) == 0x000008, "Wrong alignment on TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush");
+static_assert(sizeof(TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush) == 0x000120, "Wrong size on TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush");
 static_assert(offsetof(TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush, ReturnValue) == 0x000000, "Member 'TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush, CallFunc_MakeBrushFromAsset_ReturnValue) == 0x000090, "Member 'TooltipMinusBasicMultiLineMinusS_C_Get_Icon_Brush::CallFunc_MakeBrushFromAsset_ReturnValue' has a wrong offset!");
 

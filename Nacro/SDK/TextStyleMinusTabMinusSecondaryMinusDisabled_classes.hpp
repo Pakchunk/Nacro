@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Tab-Secondary-Disabled.TextStyle-Tab-Secondary-Disabled_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusTabMinusSecondaryMinusDisabled_C final : public UCommonTextStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusTabMinusSecondaryMinusDisabled_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusTabMinusSecondaryMinusDisabled_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusTabMinusSecondaryMinusDisabled_C");
-static_assert(sizeof(UTextStyleMinusTabMinusSecondaryMinusDisabled_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusTabMinusSecondaryMinusDisabled_C");
+static_assert(alignof(UTextStyleMinusTabMinusSecondaryMinusDisabled_C) == 0x000008, "Wrong alignment on UTextStyleMinusTabMinusSecondaryMinusDisabled_C");
+static_assert(sizeof(UTextStyleMinusTabMinusSecondaryMinusDisabled_C) == 0x0000D0, "Wrong size on UTextStyleMinusTabMinusSecondaryMinusDisabled_C");
 
 }
 

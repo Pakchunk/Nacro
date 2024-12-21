@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DoorMetaObstacle.DoorMetaObstacle_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x00C0 - 0x00C0)
 class UDoorMetaObstacle_C final : public UNavAreaMeta_SwitchByAgent
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UDoorMetaObstacle_C>();
 	}
 };
-static_assert(alignof(UDoorMetaObstacle_C) == 0x11821D80, "Wrong alignment on UDoorMetaObstacle_C");
-static_assert(sizeof(UDoorMetaObstacle_C) == 0x11821D80, "Wrong size on UDoorMetaObstacle_C");
+static_assert(alignof(UDoorMetaObstacle_C) == 0x000008, "Wrong alignment on UDoorMetaObstacle_C");
+static_assert(sizeof(UDoorMetaObstacle_C) == 0x0000C0, "Wrong size on UDoorMetaObstacle_C");
 
 }
 

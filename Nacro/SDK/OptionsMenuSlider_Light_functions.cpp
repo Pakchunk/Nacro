@@ -207,15 +207,15 @@ void UOptionsMenuSlider_Light_C::Update_Slider(const class FText& Slider_Text, f
 }
 
 
-// Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Center on Widget
+// Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Center On Widget
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenuSlider_Light_C::Center_on_Widget()
+void UOptionsMenuSlider_Light_C::Center_On_Widget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSlider_Light_C", "Center on Widget");
+		Func = Class->GetFunction("OptionsMenuSlider_Light_C", "Center On Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

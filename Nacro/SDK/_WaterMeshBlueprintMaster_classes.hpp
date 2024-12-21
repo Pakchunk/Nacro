@@ -10,21 +10,20 @@
 
 #include "Basic.hpp"
 
+#include "ListOfWaterComponentsThatTheCharactersInteractingWithByIndex_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ListOfWaterComponentsThatTheCharactersInteractingWithByIndex_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C
-// 0x0000 (0x11821D80 - 0x11821D80)
-#pragma pack(push, 0x1)
-class alignas(0x11821D80) A_WaterMeshBlueprintMaster_C : public AActor
+// 0x00C8 (0x0450 - 0x0388)
+class A_WaterMeshBlueprintMaster_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class UStaticMeshComponent*                   CollisionMesh1;                                    // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CollisionMesh2;                                    // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CollisionMesh4;                                    // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -85,9 +84,8 @@ public:
 		return GetDefaultObjImpl<A_WaterMeshBlueprintMaster_C>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(A_WaterMeshBlueprintMaster_C) == 0x11821D80, "Wrong alignment on A_WaterMeshBlueprintMaster_C");
-static_assert(sizeof(A_WaterMeshBlueprintMaster_C) == 0x11821D80, "Wrong size on A_WaterMeshBlueprintMaster_C");
+static_assert(alignof(A_WaterMeshBlueprintMaster_C) == 0x000008, "Wrong alignment on A_WaterMeshBlueprintMaster_C");
+static_assert(sizeof(A_WaterMeshBlueprintMaster_C) == 0x000450, "Wrong size on A_WaterMeshBlueprintMaster_C");
 static_assert(offsetof(A_WaterMeshBlueprintMaster_C, UberGraphFrame) == 0x000388, "Member 'A_WaterMeshBlueprintMaster_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(A_WaterMeshBlueprintMaster_C, CollisionMesh1) == 0x000390, "Member 'A_WaterMeshBlueprintMaster_C::CollisionMesh1' has a wrong offset!");
 static_assert(offsetof(A_WaterMeshBlueprintMaster_C, CollisionMesh2) == 0x000398, "Member 'A_WaterMeshBlueprintMaster_C::CollisionMesh2' has a wrong offset!");

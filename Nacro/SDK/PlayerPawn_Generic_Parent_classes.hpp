@@ -19,12 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
-#pragma pack(push, 0x1)
-class alignas(0x1182EB00) APlayerPawn_Generic_Parent_C : public AFortPlayerPawn
+// 0x00C0 (0x1740 - 0x1680)
+class APlayerPawn_Generic_Parent_C : public AFortPlayerPawn
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1680(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1680(0x0008)(Transient, DuplicateTransient)
 	TArray<class UMaterialInterface*>             Default_Weapon_Materials;                          // 0x1688(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>       PawnBackpackMaterials;                             // 0x1698(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>       PawnHatMaterials;                                  // 0x16A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -56,9 +55,8 @@ public:
 		return GetDefaultObjImpl<APlayerPawn_Generic_Parent_C>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(APlayerPawn_Generic_Parent_C) == 0x1182EB00, "Wrong alignment on APlayerPawn_Generic_Parent_C");
-static_assert(sizeof(APlayerPawn_Generic_Parent_C) == 0x1182EB00, "Wrong size on APlayerPawn_Generic_Parent_C");
+static_assert(alignof(APlayerPawn_Generic_Parent_C) == 0x000010, "Wrong alignment on APlayerPawn_Generic_Parent_C");
+static_assert(sizeof(APlayerPawn_Generic_Parent_C) == 0x001740, "Wrong size on APlayerPawn_Generic_Parent_C");
 static_assert(offsetof(APlayerPawn_Generic_Parent_C, UberGraphFrame) == 0x001680, "Member 'APlayerPawn_Generic_Parent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_Parent_C, Default_Weapon_Materials) == 0x001688, "Member 'APlayerPawn_Generic_Parent_C::Default_Weapon_Materials' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnBackpackMaterials) == 0x001698, "Member 'APlayerPawn_Generic_Parent_C::PawnBackpackMaterials' has a wrong offset!");

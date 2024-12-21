@@ -17,11 +17,11 @@ namespace SDK::Params
 {
 
 // Function TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C.SetPlayer
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct TeamMemberBluGloIndicator_C_SetPlayer final
 {
 public:
-	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,14 +35,14 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0060(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0060(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(TeamMemberBluGloIndicator_C_SetPlayer) == 0x11821780, "Wrong alignment on TeamMemberBluGloIndicator_C_SetPlayer");
-static_assert(sizeof(TeamMemberBluGloIndicator_C_SetPlayer) == 0x11821780, "Wrong size on TeamMemberBluGloIndicator_C_SetPlayer");
+static_assert(alignof(TeamMemberBluGloIndicator_C_SetPlayer) == 0x000008, "Wrong alignment on TeamMemberBluGloIndicator_C_SetPlayer");
+static_assert(sizeof(TeamMemberBluGloIndicator_C_SetPlayer) == 0x000090, "Wrong size on TeamMemberBluGloIndicator_C_SetPlayer");
 static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, PlayerNetId) == 0x000000, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::PlayerNetId' has a wrong offset!");
 static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, Temp_int_Array_Index_Variable) == 0x000018, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::Temp_int_Loop_Counter_Variable' has a wrong offset!");

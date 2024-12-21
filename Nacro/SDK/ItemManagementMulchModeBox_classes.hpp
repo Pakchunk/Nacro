@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementMulchModeBox.ItemManagementMulchModeBox_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0440 - 0x0430)
 class UItemManagementMulchModeBox_C final : public UFortItemMulchModeActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
 	class UItemWindow_C*                          Recycle_Info_Window;                               // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementMulchModeBox_C>();
 	}
 };
-static_assert(alignof(UItemManagementMulchModeBox_C) == 0x322CBBB8, "Wrong alignment on UItemManagementMulchModeBox_C");
-static_assert(sizeof(UItemManagementMulchModeBox_C) == 0x322CBBB8, "Wrong size on UItemManagementMulchModeBox_C");
+static_assert(alignof(UItemManagementMulchModeBox_C) == 0x000008, "Wrong alignment on UItemManagementMulchModeBox_C");
+static_assert(sizeof(UItemManagementMulchModeBox_C) == 0x000440, "Wrong size on UItemManagementMulchModeBox_C");
 static_assert(offsetof(UItemManagementMulchModeBox_C, UberGraphFrame) == 0x000430, "Member 'UItemManagementMulchModeBox_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementMulchModeBox_C, Recycle_Info_Window) == 0x000438, "Member 'UItemManagementMulchModeBox_C::Recycle_Info_Window' has a wrong offset!");
 

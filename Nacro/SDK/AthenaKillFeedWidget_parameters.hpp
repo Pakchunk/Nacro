@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function AthenaKillFeedWidget.AthenaKillFeedWidget_C.ExecuteUbergraph_AthenaKillFeedWidget
-// 0x410064 (0x410064 - 0x0000)
-struct alignas(0x410064) AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget final
+// 0x0030 (0x0030 - 0x0000)
+struct AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -27,8 +27,8 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget) == 0x410064, "Wrong alignment on AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget");
-static_assert(sizeof(AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget) == 0x410064, "Wrong size on AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget");
+static_assert(alignof(AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget) == 0x000008, "Wrong alignment on AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget");
+static_assert(sizeof(AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget) == 0x000030, "Wrong size on AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget");
 static_assert(offsetof(AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget, EntryPoint) == 0x000000, "Member 'AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000010, "Member 'AthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");

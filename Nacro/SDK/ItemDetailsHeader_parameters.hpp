@@ -19,8 +19,8 @@ namespace SDK::Params
 {
 
 // Function ItemDetailsHeader.ItemDetailsHeader_C.ExecuteUbergraph_ItemDetailsHeader
-// 0x00D8 (0x00D8 - 0x0000)
-struct alignas(0xD8) ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader final
+// 0x0020 (0x0020 - 0x0000)
+struct ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -30,8 +30,8 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader) == 0x0000D8, "Wrong alignment on ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader");
-static_assert(sizeof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader) == 0x0000D8, "Wrong size on ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader");
+static_assert(alignof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader) == 0x000008, "Wrong alignment on ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader");
+static_assert(sizeof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader) == 0x000020, "Wrong size on ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader");
 static_assert(offsetof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader, EntryPoint) == 0x000000, "Member 'ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader, K2Node_Event_IsDesignTime) == 0x000010, "Member 'ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader::K2Node_Event_IsDesignTime' has a wrong offset!");
@@ -49,7 +49,7 @@ static_assert(sizeof(ItemDetailsHeader_C_PreConstruct) == 0x000001, "Wrong size 
 static_assert(offsetof(ItemDetailsHeader_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemDetailsHeader_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemDetailsHeader.ItemDetailsHeader_C.UpdateItemsForWidgets
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct ItemDetailsHeader_C_UpdateItemsForWidgets final
 {
 public:
@@ -62,7 +62,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0028(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0028(0x0080)()
 	TArray<EFortItemType>                         K2Node_MakeArray_Array2;                           // 0x00A8(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	class UFortItemDefinition*                    CallFunc_GetSchematicCraftingResultBP_ReturnValue2; // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemTier                                 CallFunc_GetTier_ReturnValue;                      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -73,7 +73,7 @@ public:
 	int32                                         CallFunc_Convert_Tier_To_Integer_Numeric_Tier;     // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00DC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00DC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x00ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x00EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -91,8 +91,8 @@ public:
 	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemDetailsHeader_C_UpdateItemsForWidgets) == 0x11821780, "Wrong alignment on ItemDetailsHeader_C_UpdateItemsForWidgets");
-static_assert(sizeof(ItemDetailsHeader_C_UpdateItemsForWidgets) == 0x11821780, "Wrong size on ItemDetailsHeader_C_UpdateItemsForWidgets");
+static_assert(alignof(ItemDetailsHeader_C_UpdateItemsForWidgets) == 0x000008, "Wrong alignment on ItemDetailsHeader_C_UpdateItemsForWidgets");
+static_assert(sizeof(ItemDetailsHeader_C_UpdateItemsForWidgets) == 0x000108, "Wrong size on ItemDetailsHeader_C_UpdateItemsForWidgets");
 static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, K2Node_MakeArray_Array) == 0x000000, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetSchematicResultType_ReturnValue) == 0x000010, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetSchematicResultType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetSchematicCraftingResultBP_ReturnValue) == 0x000018, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetSchematicCraftingResultBP_ReturnValue' has a wrong offset!");

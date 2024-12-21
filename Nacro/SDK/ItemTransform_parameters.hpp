@@ -119,7 +119,7 @@ static_assert(offsetof(ItemTransform_C_OpenItemTransform, CallFunc_GetContext_Re
 
 // Function ItemTransform.ItemTransform_C.SetupActionHandlers
 // 0x0060 (0x0060 - 0x0000)
-struct ItemTransform_C_SetupActionHandlers final
+struct alignas(0x08) ItemTransform_C_SetupActionHandlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
@@ -129,7 +129,7 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate6;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_SetupActionHandlers) == 0x000004, "Wrong alignment on ItemTransform_C_SetupActionHandlers");
+static_assert(alignof(ItemTransform_C_SetupActionHandlers) == 0x000008, "Wrong alignment on ItemTransform_C_SetupActionHandlers");
 static_assert(sizeof(ItemTransform_C_SetupActionHandlers) == 0x000060, "Wrong size on ItemTransform_C_SetupActionHandlers");
 static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -348,14 +348,14 @@ static_assert(sizeof(ItemTransform_C_UpdateTransformAction) == 0x000001, "Wrong 
 static_assert(offsetof(ItemTransform_C_UpdateTransformAction, TransformActive) == 0x000000, "Member 'ItemTransform_C_UpdateTransformAction::TransformActive' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleClosePicker
-// 0x65004E (0x65004E - 0x0000)
-struct alignas(0x65004E) ItemTransform_C_HandleClosePicker final
+// 0x0001 (0x0001 - 0x0000)
+struct ItemTransform_C_HandleClosePicker final
 {
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_HandleClosePicker) == 0x65004E, "Wrong alignment on ItemTransform_C_HandleClosePicker");
-static_assert(sizeof(ItemTransform_C_HandleClosePicker) == 0x65004E, "Wrong size on ItemTransform_C_HandleClosePicker");
+static_assert(alignof(ItemTransform_C_HandleClosePicker) == 0x000001, "Wrong alignment on ItemTransform_C_HandleClosePicker");
+static_assert(sizeof(ItemTransform_C_HandleClosePicker) == 0x000001, "Wrong size on ItemTransform_C_HandleClosePicker");
 static_assert(offsetof(ItemTransform_C_HandleClosePicker, PassThrough) == 0x000000, "Member 'ItemTransform_C_HandleClosePicker::PassThrough' has a wrong offset!");
 
 }

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border_HUD_Line_Vert.Border_HUD_Line_Vert_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorder_HUD_Line_Vert_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorder_HUD_Line_Vert_C>();
 	}
 };
-static_assert(alignof(UBorder_HUD_Line_Vert_C) == 0x11827900, "Wrong alignment on UBorder_HUD_Line_Vert_C");
-static_assert(sizeof(UBorder_HUD_Line_Vert_C) == 0x11827900, "Wrong size on UBorder_HUD_Line_Vert_C");
+static_assert(alignof(UBorder_HUD_Line_Vert_C) == 0x000008, "Wrong alignment on UBorder_HUD_Line_Vert_C");
+static_assert(sizeof(UBorder_HUD_Line_Vert_C) == 0x0000B8, "Wrong size on UBorder_HUD_Line_Vert_C");
 
 }
 

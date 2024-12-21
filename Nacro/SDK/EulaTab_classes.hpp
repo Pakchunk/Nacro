@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass EulaTab.EulaTab_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UEulaTab_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UFortRichTextBlock*                     FortRichTextBlock_0;                               // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             ScrollBox_4;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UEulaTab_C>();
 	}
 };
-static_assert(alignof(UEulaTab_C) == 0x322CBBB8, "Wrong alignment on UEulaTab_C");
-static_assert(sizeof(UEulaTab_C) == 0x322CBBB8, "Wrong size on UEulaTab_C");
+static_assert(alignof(UEulaTab_C) == 0x000008, "Wrong alignment on UEulaTab_C");
+static_assert(sizeof(UEulaTab_C) == 0x000250, "Wrong size on UEulaTab_C");
 static_assert(offsetof(UEulaTab_C, UberGraphFrame) == 0x000238, "Member 'UEulaTab_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UEulaTab_C, FortRichTextBlock_0) == 0x000240, "Member 'UEulaTab_C::FortRichTextBlock_0' has a wrong offset!");
 static_assert(offsetof(UEulaTab_C, ScrollBox_4) == 0x000248, "Member 'UEulaTab_C::ScrollBox_4' has a wrong offset!");

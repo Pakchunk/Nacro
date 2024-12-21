@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PerkTierWidgetNew.PerkTierWidgetNew_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x02B8 - 0x0288)
 class UPerkTierWidgetNew_C final : public UFortPerkTierWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           PerkList;                                          // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPerkWidget_C*                          PerkWidget;                                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPerkWidget_C*                          PerkWidget_0;                                      // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UPerkTierWidgetNew_C>();
 	}
 };
-static_assert(alignof(UPerkTierWidgetNew_C) == 0x322CBBB8, "Wrong alignment on UPerkTierWidgetNew_C");
-static_assert(sizeof(UPerkTierWidgetNew_C) == 0x322CBBB8, "Wrong size on UPerkTierWidgetNew_C");
+static_assert(alignof(UPerkTierWidgetNew_C) == 0x000008, "Wrong alignment on UPerkTierWidgetNew_C");
+static_assert(sizeof(UPerkTierWidgetNew_C) == 0x0002B8, "Wrong size on UPerkTierWidgetNew_C");
 static_assert(offsetof(UPerkTierWidgetNew_C, UberGraphFrame) == 0x000288, "Member 'UPerkTierWidgetNew_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPerkTierWidgetNew_C, PerkList) == 0x000290, "Member 'UPerkTierWidgetNew_C::PerkList' has a wrong offset!");
 static_assert(offsetof(UPerkTierWidgetNew_C, PerkWidget) == 0x000298, "Member 'UPerkTierWidgetNew_C::PerkWidget' has a wrong offset!");

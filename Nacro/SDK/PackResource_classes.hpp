@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PackResource.PackResource_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UPackResource_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageResourceIcon;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                NumericTextCount;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EFortResourceType                             ResourceType;                                      // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UPackResource_C>();
 	}
 };
-static_assert(alignof(UPackResource_C) == 0x322CBBB8, "Wrong alignment on UPackResource_C");
-static_assert(sizeof(UPackResource_C) == 0x322CBBB8, "Wrong size on UPackResource_C");
+static_assert(alignof(UPackResource_C) == 0x000008, "Wrong alignment on UPackResource_C");
+static_assert(sizeof(UPackResource_C) == 0x000258, "Wrong size on UPackResource_C");
 static_assert(offsetof(UPackResource_C, UberGraphFrame) == 0x000238, "Member 'UPackResource_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPackResource_C, ImageResourceIcon) == 0x000240, "Member 'UPackResource_C::ImageResourceIcon' has a wrong offset!");
 static_assert(offsetof(UPackResource_C, NumericTextCount) == 0x000248, "Member 'UPackResource_C::NumericTextCount' has a wrong offset!");

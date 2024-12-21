@@ -85,17 +85,17 @@ static_assert(sizeof(FrontEndRewards_Expedition_C_PopulateFromExpedition) == 0x0
 static_assert(offsetof(FrontEndRewards_Expedition_C_PopulateFromExpedition, Item) == 0x000000, "Member 'FrontEndRewards_Expedition_C_PopulateFromExpedition::Item' has a wrong offset!");
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.SetBrushFromExpedition
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x03B0 (0x03B0 - 0x0000)
 struct FrontEndRewards_Expedition_C_SetBrushFromExpedition final
 {
 public:
 	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue; // 0x0008(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FFortTagUIData                         CallFunc_GetUIDataForTag_OutData;                  // 0x0010(0x1182E980)()
+	struct FGameplayTag                           CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue; // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FFortTagUIData                         CallFunc_GetUIDataForTag_OutData;                  // 0x0010(0x0398)()
 	bool                                          CallFunc_GetUIDataForTag_ReturnValue;              // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Expedition_C_SetBrushFromExpedition) == 0x1182E980, "Wrong alignment on FrontEndRewards_Expedition_C_SetBrushFromExpedition");
-static_assert(sizeof(FrontEndRewards_Expedition_C_SetBrushFromExpedition) == 0x1182E980, "Wrong size on FrontEndRewards_Expedition_C_SetBrushFromExpedition");
+static_assert(alignof(FrontEndRewards_Expedition_C_SetBrushFromExpedition) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_SetBrushFromExpedition");
+static_assert(sizeof(FrontEndRewards_Expedition_C_SetBrushFromExpedition) == 0x0003B0, "Wrong size on FrontEndRewards_Expedition_C_SetBrushFromExpedition");
 static_assert(offsetof(FrontEndRewards_Expedition_C_SetBrushFromExpedition, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'FrontEndRewards_Expedition_C_SetBrushFromExpedition::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Expedition_C_SetBrushFromExpedition, CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Expedition_C_SetBrushFromExpedition::CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Expedition_C_SetBrushFromExpedition, CallFunc_GetUIDataForTag_OutData) == 0x000010, "Member 'FrontEndRewards_Expedition_C_SetBrushFromExpedition::CallFunc_GetUIDataForTag_OutData' has a wrong offset!");

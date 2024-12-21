@@ -20,22 +20,23 @@ namespace SDK::Params
 {
 
 // Function ItemCooldownMeter.ItemCooldownMeter_C.Update
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct ItemCooldownMeter_C_Update final
 {
 public:
 	EFortBrushSize                                Brush_Size;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_Get_Item_Icon_Size_Icon_Size;             // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateFontInfo                         CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue; // 0x0010(0x11827900)(ConstParm, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Get_Item_Icon_Size_Icon_Size;             // 0x0004(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateFontInfo                         CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue; // 0x0010(0x0068)(ConstParm, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue; // 0x0080(0x322CBBB8)(ConstParm, NoDestructor)
+	struct FMargin                                CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue; // 0x0080(0x0010)(ConstParm, NoDestructor)
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0098(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0098(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemCooldownMeter_C_Update) == 0x322CBBB8, "Wrong alignment on ItemCooldownMeter_C_Update");
-static_assert(sizeof(ItemCooldownMeter_C_Update) == 0x322CBBB8, "Wrong size on ItemCooldownMeter_C_Update");
+static_assert(alignof(ItemCooldownMeter_C_Update) == 0x000008, "Wrong alignment on ItemCooldownMeter_C_Update");
+static_assert(sizeof(ItemCooldownMeter_C_Update) == 0x0000A0, "Wrong size on ItemCooldownMeter_C_Update");
 static_assert(offsetof(ItemCooldownMeter_C_Update, Brush_Size) == 0x000000, "Member 'ItemCooldownMeter_C_Update::Brush_Size' has a wrong offset!");
 static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_Get_Item_Icon_Size_Icon_Size) == 0x000004, "Member 'ItemCooldownMeter_C_Update::CallFunc_Get_Item_Icon_Size_Icon_Size' has a wrong offset!");
 static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue) == 0x000010, "Member 'ItemCooldownMeter_C_Update::CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue' has a wrong offset!");
@@ -46,11 +47,11 @@ static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_SlotAsOverlaySlot_Re
 static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_FromSeconds_ReturnValue) == 0x000098, "Member 'ItemCooldownMeter_C_Update::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
 
 // Function ItemCooldownMeter.ItemCooldownMeter_C.Set Cooldown
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct ItemCooldownMeter_C_Set_Cooldown final
 {
 public:
-	struct FTimespan                              Time_Left;                                         // 0x0000(0x11821300)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              Time_Left;                                         // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_BreakTimespan_Days;                       // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -86,8 +87,8 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x012E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x012F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCooldownMeter_C_Set_Cooldown) == 0x11821300, "Wrong alignment on ItemCooldownMeter_C_Set_Cooldown");
-static_assert(sizeof(ItemCooldownMeter_C_Set_Cooldown) == 0x11821300, "Wrong size on ItemCooldownMeter_C_Set_Cooldown");
+static_assert(alignof(ItemCooldownMeter_C_Set_Cooldown) == 0x000008, "Wrong alignment on ItemCooldownMeter_C_Set_Cooldown");
+static_assert(sizeof(ItemCooldownMeter_C_Set_Cooldown) == 0x000130, "Wrong size on ItemCooldownMeter_C_Set_Cooldown");
 static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, Time_Left) == 0x000000, "Member 'ItemCooldownMeter_C_Set_Cooldown::Time_Left' has a wrong offset!");
 static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, Temp_byte_Variable) == 0x000008, "Member 'ItemCooldownMeter_C_Set_Cooldown::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_BreakTimespan_Days) == 0x00000C, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_BreakTimespan_Days' has a wrong offset!");

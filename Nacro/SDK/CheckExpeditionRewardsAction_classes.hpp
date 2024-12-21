@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0068 (0x0450 - 0x03E8)
 class ACheckExpeditionRewardsAction_C final : public AFortScriptedAction
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FFrontEndRewards_Definition            RewardsDefinition;                                 // 0x03F8(0x0048)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          ShowRewardsWidget;                                 // 0x0440(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -57,8 +57,8 @@ public:
 		return GetDefaultObjImpl<ACheckExpeditionRewardsAction_C>();
 	}
 };
-static_assert(alignof(ACheckExpeditionRewardsAction_C) == 0x11821D80, "Wrong alignment on ACheckExpeditionRewardsAction_C");
-static_assert(sizeof(ACheckExpeditionRewardsAction_C) == 0x11821D80, "Wrong size on ACheckExpeditionRewardsAction_C");
+static_assert(alignof(ACheckExpeditionRewardsAction_C) == 0x000008, "Wrong alignment on ACheckExpeditionRewardsAction_C");
+static_assert(sizeof(ACheckExpeditionRewardsAction_C) == 0x000450, "Wrong size on ACheckExpeditionRewardsAction_C");
 static_assert(offsetof(ACheckExpeditionRewardsAction_C, UberGraphFrame) == 0x0003E8, "Member 'ACheckExpeditionRewardsAction_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ACheckExpeditionRewardsAction_C, DefaultSceneRoot) == 0x0003F0, "Member 'ACheckExpeditionRewardsAction_C::DefaultSceneRoot' has a wrong offset!");
 static_assert(offsetof(ACheckExpeditionRewardsAction_C, RewardsDefinition) == 0x0003F8, "Member 'ACheckExpeditionRewardsAction_C::RewardsDefinition' has a wrong offset!");

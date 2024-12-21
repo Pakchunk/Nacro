@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_PlayerHealthDamage_CameraLensEffect.B_PlayerHealthDamage_CameraLensEffect_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0010 (0x0450 - 0x0440)
 #pragma pack(push, 0x1)
-class alignas(0x11821D80) AB_PlayerHealthDamage_CameraLensEffect_C : public AEmitterCameraLensEffectBase
+class alignas(0x10) AB_PlayerHealthDamage_CameraLensEffect_C : public AEmitterCameraLensEffectBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect(int32 EntryPoint);
@@ -41,8 +41,8 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(AB_PlayerHealthDamage_CameraLensEffect_C) == 0x11821D80, "Wrong alignment on AB_PlayerHealthDamage_CameraLensEffect_C");
-static_assert(sizeof(AB_PlayerHealthDamage_CameraLensEffect_C) == 0x11821D80, "Wrong size on AB_PlayerHealthDamage_CameraLensEffect_C");
+static_assert(alignof(AB_PlayerHealthDamage_CameraLensEffect_C) == 0x000010, "Wrong alignment on AB_PlayerHealthDamage_CameraLensEffect_C");
+static_assert(sizeof(AB_PlayerHealthDamage_CameraLensEffect_C) == 0x000450, "Wrong size on AB_PlayerHealthDamage_CameraLensEffect_C");
 static_assert(offsetof(AB_PlayerHealthDamage_CameraLensEffect_C, UberGraphFrame) == 0x000440, "Member 'AB_PlayerHealthDamage_CameraLensEffect_C::UberGraphFrame' has a wrong offset!");
 
 }

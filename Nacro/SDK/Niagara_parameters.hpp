@@ -18,20 +18,20 @@ namespace SDK::Params
 {
 
 // Function Niagara.NiagaraFunctionLibrary.SpawnEffectAtLocation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct NiagaraFunctionLibrary_SpawnEffectAtLocation final
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UNiagaraEffect*                         EffectTemplate;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               Rotation;                                          // 0x001C(0x11821300)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               Rotation;                                          // 0x001C(0x000C)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bAutoDestroy;                                      // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      ReturnValue;                                       // 0x0030(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NiagaraFunctionLibrary_SpawnEffectAtLocation) == 0x11821300, "Wrong alignment on NiagaraFunctionLibrary_SpawnEffectAtLocation");
-static_assert(sizeof(NiagaraFunctionLibrary_SpawnEffectAtLocation) == 0x11821300, "Wrong size on NiagaraFunctionLibrary_SpawnEffectAtLocation");
+static_assert(alignof(NiagaraFunctionLibrary_SpawnEffectAtLocation) == 0x000008, "Wrong alignment on NiagaraFunctionLibrary_SpawnEffectAtLocation");
+static_assert(sizeof(NiagaraFunctionLibrary_SpawnEffectAtLocation) == 0x000038, "Wrong size on NiagaraFunctionLibrary_SpawnEffectAtLocation");
 static_assert(offsetof(NiagaraFunctionLibrary_SpawnEffectAtLocation, WorldContextObject) == 0x000000, "Member 'NiagaraFunctionLibrary_SpawnEffectAtLocation::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(NiagaraFunctionLibrary_SpawnEffectAtLocation, EffectTemplate) == 0x000008, "Member 'NiagaraFunctionLibrary_SpawnEffectAtLocation::EffectTemplate' has a wrong offset!");
 static_assert(offsetof(NiagaraFunctionLibrary_SpawnEffectAtLocation, Location) == 0x000010, "Member 'NiagaraFunctionLibrary_SpawnEffectAtLocation::Location' has a wrong offset!");
@@ -40,22 +40,22 @@ static_assert(offsetof(NiagaraFunctionLibrary_SpawnEffectAtLocation, bAutoDestro
 static_assert(offsetof(NiagaraFunctionLibrary_SpawnEffectAtLocation, ReturnValue) == 0x000030, "Member 'NiagaraFunctionLibrary_SpawnEffectAtLocation::ReturnValue' has a wrong offset!");
 
 // Function Niagara.NiagaraFunctionLibrary.SpawnEffectAttached
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct NiagaraFunctionLibrary_SpawnEffectAttached final
 {
 public:
 	class UNiagaraEffect*                         EffectTemplate;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USceneComponent*                        AttachToComponent;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   AttachPointName;                                   // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0018(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               Rotation;                                          // 0x0024(0x11821300)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0018(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               Rotation;                                          // 0x0024(0x000C)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	EAttachLocation                               LocationType;                                      // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAutoDestroy;                                      // 0x0031(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      ReturnValue;                                       // 0x0038(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(NiagaraFunctionLibrary_SpawnEffectAttached) == 0x11821300, "Wrong alignment on NiagaraFunctionLibrary_SpawnEffectAttached");
-static_assert(sizeof(NiagaraFunctionLibrary_SpawnEffectAttached) == 0x11821300, "Wrong size on NiagaraFunctionLibrary_SpawnEffectAttached");
+static_assert(alignof(NiagaraFunctionLibrary_SpawnEffectAttached) == 0x000008, "Wrong alignment on NiagaraFunctionLibrary_SpawnEffectAttached");
+static_assert(sizeof(NiagaraFunctionLibrary_SpawnEffectAttached) == 0x000040, "Wrong size on NiagaraFunctionLibrary_SpawnEffectAttached");
 static_assert(offsetof(NiagaraFunctionLibrary_SpawnEffectAttached, EffectTemplate) == 0x000000, "Member 'NiagaraFunctionLibrary_SpawnEffectAttached::EffectTemplate' has a wrong offset!");
 static_assert(offsetof(NiagaraFunctionLibrary_SpawnEffectAttached, AttachToComponent) == 0x000008, "Member 'NiagaraFunctionLibrary_SpawnEffectAttached::AttachToComponent' has a wrong offset!");
 static_assert(offsetof(NiagaraFunctionLibrary_SpawnEffectAttached, AttachPointName) == 0x000010, "Member 'NiagaraFunctionLibrary_SpawnEffectAttached::AttachPointName' has a wrong offset!");

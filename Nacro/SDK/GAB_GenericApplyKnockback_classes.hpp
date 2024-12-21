@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x00E0 (0x0B20 - 0x0A40)
 class UGAB_GenericApplyKnockback_C : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
 	class UClass*                                 GE_TransferKnockback;                              // 0x0A48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 GE_KnockbackActive;                                // 0x0A50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         KnockbackPropagationThreshold;                     // 0x0A58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,17 +44,18 @@ public:
 	bool                                          DebugNumbers;                                      // 0x0AB1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DebugForceKnockbackValues;                         // 0x0AB2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bOrientToImpulse;                                  // 0x0AB3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FActiveGameplayEffectHandle            ActiveKnockback;                                   // 0x0AB4(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                OrientDirection;                                   // 0x0ABC(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HitDirection;                                      // 0x0AC8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ImpulseDirectionVelocityOrRotation;                // 0x0AD4(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DebugLastLocation;                                 // 0x0AE0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TC_NPCStatusLockedInPlace;                         // 0x0AF0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            ActiveKnockback;                                   // 0x0AB4(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                OrientDirection;                                   // 0x0ABC(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HitDirection;                                      // 0x0AC8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ImpulseDirectionVelocityOrRotation;                // 0x0AD4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DebugLastLocation;                                 // 0x0AE0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AEC[0x4];                                      // 0x0AEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           TC_NPCStatusLockedInPlace;                         // 0x0AF0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         LockedInPlaceKnockbackAngle;                       // 0x0AF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LockedInPlaceKnockbackMagnitude;                   // 0x0AFC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 GE_RestoreControlResistance;                       // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 GE_ImpactImmunity;                                 // 0x0B08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            ActiveImpactImmunity;                              // 0x0B10(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            ActiveImpactImmunity;                              // 0x0B10(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          bHasImpactImmunity;                                // 0x0B18(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -97,8 +98,8 @@ public:
 		return GetDefaultObjImpl<UGAB_GenericApplyKnockback_C>();
 	}
 };
-static_assert(alignof(UGAB_GenericApplyKnockback_C) == 0x1182EB00, "Wrong alignment on UGAB_GenericApplyKnockback_C");
-static_assert(sizeof(UGAB_GenericApplyKnockback_C) == 0x1182EB00, "Wrong size on UGAB_GenericApplyKnockback_C");
+static_assert(alignof(UGAB_GenericApplyKnockback_C) == 0x000008, "Wrong alignment on UGAB_GenericApplyKnockback_C");
+static_assert(sizeof(UGAB_GenericApplyKnockback_C) == 0x000B20, "Wrong size on UGAB_GenericApplyKnockback_C");
 static_assert(offsetof(UGAB_GenericApplyKnockback_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_GenericApplyKnockback_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UGAB_GenericApplyKnockback_C, GE_TransferKnockback) == 0x000A48, "Member 'UGAB_GenericApplyKnockback_C::GE_TransferKnockback' has a wrong offset!");
 static_assert(offsetof(UGAB_GenericApplyKnockback_C, GE_KnockbackActive) == 0x000A50, "Member 'UGAB_GenericApplyKnockback_C::GE_KnockbackActive' has a wrong offset!");

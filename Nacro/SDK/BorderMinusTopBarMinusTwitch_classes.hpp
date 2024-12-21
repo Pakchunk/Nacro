@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-TopBar-Twitch.Border-TopBar-Twitch_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusTopBarMinusTwitch_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusTopBarMinusTwitch_C>();
 	}
 };
-static_assert(alignof(UBorderMinusTopBarMinusTwitch_C) == 0x11827900, "Wrong alignment on UBorderMinusTopBarMinusTwitch_C");
-static_assert(sizeof(UBorderMinusTopBarMinusTwitch_C) == 0x11827900, "Wrong size on UBorderMinusTopBarMinusTwitch_C");
+static_assert(alignof(UBorderMinusTopBarMinusTwitch_C) == 0x000008, "Wrong alignment on UBorderMinusTopBarMinusTwitch_C");
+static_assert(sizeof(UBorderMinusTopBarMinusTwitch_C) == 0x0000B8, "Wrong size on UBorderMinusTopBarMinusTwitch_C");
 
 }
 

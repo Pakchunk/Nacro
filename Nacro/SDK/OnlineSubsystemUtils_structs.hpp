@@ -63,50 +63,50 @@ enum class EClientRequestType : uint8
 };
 
 // ScriptStruct OnlineSubsystemUtils.BlueprintSessionResult
-// 0x53FBA (0x53FBA - 0x0000)
-struct alignas(0x53FBA) FBlueprintSessionResult final
+// 0x00B8 (0x00B8 - 0x0000)
+struct alignas(0x08) FBlueprintSessionResult final
 {
 public:
 	uint8                                         Pad_0[0xB8];                                       // 0x0000(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBlueprintSessionResult) == 0x053FBA, "Wrong alignment on FBlueprintSessionResult");
-static_assert(sizeof(FBlueprintSessionResult) == 0x053FBA, "Wrong size on FBlueprintSessionResult");
+static_assert(alignof(FBlueprintSessionResult) == 0x000008, "Wrong alignment on FBlueprintSessionResult");
+static_assert(sizeof(FBlueprintSessionResult) == 0x0000B8, "Wrong size on FBlueprintSessionResult");
 
 // ScriptStruct OnlineSubsystemUtils.PlayerReservation
-// 0x11826100 (0x11826100 - 0x0000)
-struct alignas(0x11826100) FPlayerReservation final
+// 0x0030 (0x0030 - 0x0000)
+struct FPlayerReservation final
 {
 public:
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0000(0x11821780)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0000(0x0018)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ValidationStr;                                     // 0x0018(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ElapsedTime;                                       // 0x0028(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPlayerReservation) == 0x11826100, "Wrong alignment on FPlayerReservation");
-static_assert(sizeof(FPlayerReservation) == 0x11826100, "Wrong size on FPlayerReservation");
+static_assert(alignof(FPlayerReservation) == 0x000008, "Wrong alignment on FPlayerReservation");
+static_assert(sizeof(FPlayerReservation) == 0x000030, "Wrong size on FPlayerReservation");
 static_assert(offsetof(FPlayerReservation, UniqueId) == 0x000000, "Member 'FPlayerReservation::UniqueId' has a wrong offset!");
 static_assert(offsetof(FPlayerReservation, ValidationStr) == 0x000018, "Member 'FPlayerReservation::ValidationStr' has a wrong offset!");
 static_assert(offsetof(FPlayerReservation, ElapsedTime) == 0x000028, "Member 'FPlayerReservation::ElapsedTime' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystemUtils.PartyReservation
-// 0x11825B00 (0x11825B00 - 0x0000)
-struct alignas(0x11825B00) FPartyReservation final
+// 0x0030 (0x0030 - 0x0000)
+struct FPartyReservation final
 {
 public:
 	int32                                         TeamNum;                                           // 0x0000(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       PartyLeader;                                       // 0x0008(0x11821780)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       PartyLeader;                                       // 0x0008(0x0018)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPlayerReservation>             PartyMembers;                                      // 0x0020(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPartyReservation) == 0x11825B00, "Wrong alignment on FPartyReservation");
-static_assert(sizeof(FPartyReservation) == 0x11825B00, "Wrong size on FPartyReservation");
+static_assert(alignof(FPartyReservation) == 0x000008, "Wrong alignment on FPartyReservation");
+static_assert(sizeof(FPartyReservation) == 0x000030, "Wrong size on FPartyReservation");
 static_assert(offsetof(FPartyReservation, TeamNum) == 0x000000, "Member 'FPartyReservation::TeamNum' has a wrong offset!");
 static_assert(offsetof(FPartyReservation, PartyLeader) == 0x000008, "Member 'FPartyReservation::PartyLeader' has a wrong offset!");
 static_assert(offsetof(FPartyReservation, PartyMembers) == 0x000020, "Member 'FPartyReservation::PartyMembers' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystemUtils.PIELoginSettingsInternal
-// 0x11826100 (0x11826100 - 0x0000)
-struct alignas(0x11826100) FPIELoginSettingsInternal final
+// 0x0040 (0x0040 - 0x0000)
+struct FPIELoginSettingsInternal final
 {
 public:
 	class FString                                 ID;                                                // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -114,8 +114,8 @@ public:
 	class FString                                 Type;                                              // 0x0020(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 TokenBytes;                                        // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPIELoginSettingsInternal) == 0x11826100, "Wrong alignment on FPIELoginSettingsInternal");
-static_assert(sizeof(FPIELoginSettingsInternal) == 0x11826100, "Wrong size on FPIELoginSettingsInternal");
+static_assert(alignof(FPIELoginSettingsInternal) == 0x000008, "Wrong alignment on FPIELoginSettingsInternal");
+static_assert(sizeof(FPIELoginSettingsInternal) == 0x000040, "Wrong size on FPIELoginSettingsInternal");
 static_assert(offsetof(FPIELoginSettingsInternal, ID) == 0x000000, "Member 'FPIELoginSettingsInternal::ID' has a wrong offset!");
 static_assert(offsetof(FPIELoginSettingsInternal, Token) == 0x000010, "Member 'FPIELoginSettingsInternal::Token' has a wrong offset!");
 static_assert(offsetof(FPIELoginSettingsInternal, Type) == 0x000020, "Member 'FPIELoginSettingsInternal::Type' has a wrong offset!");

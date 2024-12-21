@@ -108,12 +108,12 @@ static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K
 
 // Function HorizontalTabList.HorizontalTabList_C.CustomEvent_0
 // 0x0008 (0x0008 - 0x0000)
-struct HorizontalTabList_C_CustomEvent_0 final
+struct alignas(0x08) HorizontalTabList_C_CustomEvent_0 final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HorizontalTabList_C_CustomEvent_0) == 0x000004, "Wrong alignment on HorizontalTabList_C_CustomEvent_0");
+static_assert(alignof(HorizontalTabList_C_CustomEvent_0) == 0x000008, "Wrong alignment on HorizontalTabList_C_CustomEvent_0");
 static_assert(sizeof(HorizontalTabList_C_CustomEvent_0) == 0x000008, "Wrong size on HorizontalTabList_C_CustomEvent_0");
 static_assert(offsetof(HorizontalTabList_C_CustomEvent_0, TabId) == 0x000000, "Member 'HorizontalTabList_C_CustomEvent_0::TabId' has a wrong offset!");
 
@@ -153,15 +153,15 @@ static_assert(sizeof(HorizontalTabList_C_Handle_OnInputMethodChanged) == 0x00000
 static_assert(offsetof(HorizontalTabList_C_Handle_OnInputMethodChanged, bUsingGamepad) == 0x000000, "Member 'HorizontalTabList_C_Handle_OnInputMethodChanged::bUsingGamepad' has a wrong offset!");
 
 // Function HorizontalTabList.HorizontalTabList_C.ChangeInputBindings
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct HorizontalTabList_C_ChangeInputBindings final
 {
 public:
-	struct FDataTableRowHandle                    NextBinding;                                       // 0x0000(0x1182EB00)(Parm, NoDestructor)
-	struct FDataTableRowHandle                    PreviousBinding;                                   // 0x0010(0x1182EB00)(Parm, NoDestructor)
+	struct FDataTableRowHandle                    NextBinding;                                       // 0x0000(0x0010)(Parm, NoDestructor)
+	struct FDataTableRowHandle                    PreviousBinding;                                   // 0x0010(0x0010)(Parm, NoDestructor)
 };
-static_assert(alignof(HorizontalTabList_C_ChangeInputBindings) == 0x1182EB00, "Wrong alignment on HorizontalTabList_C_ChangeInputBindings");
-static_assert(sizeof(HorizontalTabList_C_ChangeInputBindings) == 0x1182EB00, "Wrong size on HorizontalTabList_C_ChangeInputBindings");
+static_assert(alignof(HorizontalTabList_C_ChangeInputBindings) == 0x000008, "Wrong alignment on HorizontalTabList_C_ChangeInputBindings");
+static_assert(sizeof(HorizontalTabList_C_ChangeInputBindings) == 0x000020, "Wrong size on HorizontalTabList_C_ChangeInputBindings");
 static_assert(offsetof(HorizontalTabList_C_ChangeInputBindings, NextBinding) == 0x000000, "Member 'HorizontalTabList_C_ChangeInputBindings::NextBinding' has a wrong offset!");
 static_assert(offsetof(HorizontalTabList_C_ChangeInputBindings, PreviousBinding) == 0x000010, "Member 'HorizontalTabList_C_ChangeInputBindings::PreviousBinding' has a wrong offset!");
 

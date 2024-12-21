@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TalkingHeadWidget.TalkingHeadWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0288 - 0x0260)
 class UTalkingHeadWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 TalkingHeadIcon;                                   // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextName;                                          // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextSubtitles;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UTalkingHeadWidget_C>();
 	}
 };
-static_assert(alignof(UTalkingHeadWidget_C) == 0x322CBBB8, "Wrong alignment on UTalkingHeadWidget_C");
-static_assert(sizeof(UTalkingHeadWidget_C) == 0x322CBBB8, "Wrong size on UTalkingHeadWidget_C");
+static_assert(alignof(UTalkingHeadWidget_C) == 0x000008, "Wrong alignment on UTalkingHeadWidget_C");
+static_assert(sizeof(UTalkingHeadWidget_C) == 0x000288, "Wrong size on UTalkingHeadWidget_C");
 static_assert(offsetof(UTalkingHeadWidget_C, UberGraphFrame) == 0x000260, "Member 'UTalkingHeadWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTalkingHeadWidget_C, TalkingHeadIcon) == 0x000268, "Member 'UTalkingHeadWidget_C::TalkingHeadIcon' has a wrong offset!");
 static_assert(offsetof(UTalkingHeadWidget_C, TextName) == 0x000270, "Member 'UTalkingHeadWidget_C::TextName' has a wrong offset!");

@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function BP_VictoryDrone.BP_VictoryDrone_C.SpawnOutAnimEndedDispatcher__DelegateSignature
-// 0x720075 (0x720075 - 0x0000)
-struct alignas(0x720075) BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature final
 {
 public:
 	class ABP_VictoryDrone_C*                     Drone;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature) == 0x720075, "Wrong alignment on BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature");
-static_assert(sizeof(BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature) == 0x720075, "Wrong size on BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature");
+static_assert(alignof(BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature) == 0x000008, "Wrong alignment on BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature");
+static_assert(sizeof(BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature) == 0x000008, "Wrong size on BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature");
 static_assert(offsetof(BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature, Drone) == 0x000000, "Member 'BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature::Drone' has a wrong offset!");
 
 // Function BP_VictoryDrone.BP_VictoryDrone_C.ExecuteUbergraph_BP_VictoryDrone

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
 #include "HeroCoreStat_structs.hpp"
+#include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -30,22 +30,22 @@ static_assert(sizeof(TooltipMinusCoreStat_C_ExecuteUbergraph_TooltipMinusCoreSta
 static_assert(offsetof(TooltipMinusCoreStat_C_ExecuteUbergraph_TooltipMinusCoreStat, EntryPoint) == 0x000000, "Member 'TooltipMinusCoreStat_C_ExecuteUbergraph_TooltipMinusCoreStat::EntryPoint' has a wrong offset!");
 
 // Function Tooltip-CoreStat.Tooltip-CoreStat_C.Update
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0508 (0x0508 - 0x0000)
 struct TooltipMinusCoreStat_C_Update final
 {
 public:
-	struct FHeroCoreStat                          Data_0;                                            // 0x0000(0x11821C00)(Parm, HasGetValueTypeHash)
+	struct FHeroCoreStat                          Data_0;                                            // 0x0000(0x03B0)(Parm, HasGetValueTypeHash)
 	float                                         Value_0;                                           // 0x03B0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3B4[0x4];                                      // 0x03B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x03B8(0x322CBBB8)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0448(0x11821D80)(HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x03B8(0x0090)(ConstParm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0448(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0488(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x04A0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x04A0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x04E0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x04F0(0x0018)()
 };
-static_assert(alignof(TooltipMinusCoreStat_C_Update) == 0x11827900, "Wrong alignment on TooltipMinusCoreStat_C_Update");
-static_assert(sizeof(TooltipMinusCoreStat_C_Update) == 0x11827900, "Wrong size on TooltipMinusCoreStat_C_Update");
+static_assert(alignof(TooltipMinusCoreStat_C_Update) == 0x000008, "Wrong alignment on TooltipMinusCoreStat_C_Update");
+static_assert(sizeof(TooltipMinusCoreStat_C_Update) == 0x000508, "Wrong size on TooltipMinusCoreStat_C_Update");
 static_assert(offsetof(TooltipMinusCoreStat_C_Update, Data_0) == 0x000000, "Member 'TooltipMinusCoreStat_C_Update::Data_0' has a wrong offset!");
 static_assert(offsetof(TooltipMinusCoreStat_C_Update, Value_0) == 0x0003B0, "Member 'TooltipMinusCoreStat_C_Update::Value_0' has a wrong offset!");
 static_assert(offsetof(TooltipMinusCoreStat_C_Update, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x0003B8, "Member 'TooltipMinusCoreStat_C_Update::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ProgressWidget.ProgressWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0268 - 0x0238)
 class UProgressWidget_C final : public UCommonUserWidget
 {
 public:
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UProgressWidget_C>();
 	}
 };
-static_assert(alignof(UProgressWidget_C) == 0x322CBBB8, "Wrong alignment on UProgressWidget_C");
-static_assert(sizeof(UProgressWidget_C) == 0x322CBBB8, "Wrong size on UProgressWidget_C");
+static_assert(alignof(UProgressWidget_C) == 0x000008, "Wrong alignment on UProgressWidget_C");
+static_assert(sizeof(UProgressWidget_C) == 0x000268, "Wrong size on UProgressWidget_C");
 static_assert(offsetof(UProgressWidget_C, Description) == 0x000238, "Member 'UProgressWidget_C::Description' has a wrong offset!");
 static_assert(offsetof(UProgressWidget_C, MainIcon) == 0x000240, "Member 'UProgressWidget_C::MainIcon' has a wrong offset!");
 static_assert(offsetof(UProgressWidget_C, ProgressSizeBox) == 0x000248, "Member 'UProgressWidget_C::ProgressSizeBox' has a wrong offset!");

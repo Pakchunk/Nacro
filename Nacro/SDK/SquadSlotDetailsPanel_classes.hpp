@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadSlotDetailsPanel.SquadSlotDetailsPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x0310 - 0x0298)
 class USquadSlotDetailsPanel_C final : public UFortSquadSlotDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           LockedSlotDetailsPanel;                            // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       PreviewEmptySlotTextBlock;                         // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       SelectionHintTextBlock;                            // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<USquadSlotDetailsPanel_C>();
 	}
 };
-static_assert(alignof(USquadSlotDetailsPanel_C) == 0x322CBBB8, "Wrong alignment on USquadSlotDetailsPanel_C");
-static_assert(sizeof(USquadSlotDetailsPanel_C) == 0x322CBBB8, "Wrong size on USquadSlotDetailsPanel_C");
+static_assert(alignof(USquadSlotDetailsPanel_C) == 0x000008, "Wrong alignment on USquadSlotDetailsPanel_C");
+static_assert(sizeof(USquadSlotDetailsPanel_C) == 0x000310, "Wrong size on USquadSlotDetailsPanel_C");
 static_assert(offsetof(USquadSlotDetailsPanel_C, UberGraphFrame) == 0x000298, "Member 'USquadSlotDetailsPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USquadSlotDetailsPanel_C, LockedSlotDetailsPanel) == 0x0002A0, "Member 'USquadSlotDetailsPanel_C::LockedSlotDetailsPanel' has a wrong offset!");
 static_assert(offsetof(USquadSlotDetailsPanel_C, PreviewEmptySlotTextBlock) == 0x0002A8, "Member 'USquadSlotDetailsPanel_C::PreviewEmptySlotTextBlock' has a wrong offset!");

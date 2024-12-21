@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MonolithicItemDetailsHostPanel.MonolithicItemDetailsHostPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x02F8 - 0x02A8)
 class UMonolithicItemDetailsHostPanel_C final : public UFortItemManagementItemDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(Transient, DuplicateTransient)
 	class UItemDetailsHeader_C*                   HeaderWidget;                                      // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemAlterationsListDetailWidget_C*     ItemAlterationsListDetailWidget;                   // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemAttributesDetailWidget_C*          ItemAttributesDetailWidget;                        // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UMonolithicItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UMonolithicItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong alignment on UMonolithicItemDetailsHostPanel_C");
-static_assert(sizeof(UMonolithicItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong size on UMonolithicItemDetailsHostPanel_C");
+static_assert(alignof(UMonolithicItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UMonolithicItemDetailsHostPanel_C");
+static_assert(sizeof(UMonolithicItemDetailsHostPanel_C) == 0x0002F8, "Wrong size on UMonolithicItemDetailsHostPanel_C");
 static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, UberGraphFrame) == 0x0002A8, "Member 'UMonolithicItemDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, HeaderWidget) == 0x0002B0, "Member 'UMonolithicItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
 static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, ItemAlterationsListDetailWidget) == 0x0002B8, "Member 'UMonolithicItemDetailsHostPanel_C::ItemAlterationsListDetailWidget' has a wrong offset!");

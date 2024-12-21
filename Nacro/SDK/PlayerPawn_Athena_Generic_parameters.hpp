@@ -20,994 +20,9 @@
 namespace SDK::Params
 {
 
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Melee_Effect_Color
-// 0x11821300 (0x11821300 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_Melee_Effect_Color final
-{
-public:
-	struct FVector                                Melee_Color_Set;                                   // 0x0000(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_Melee_Effect_Color) == 0x11821300, "Wrong alignment on PlayerPawn_Athena_Generic_C_Melee_Effect_Color");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_Melee_Effect_Color) == 0x11821300, "Wrong size on PlayerPawn_Athena_Generic_C_Melee_Effect_Color");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Melee_Effect_Color, Melee_Color_Set) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Melee_Effect_Color::Melee_Color_Set' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Are the wind and water RTT passes enabled
-// 0x30005F (0x30005F - 0x0000)
-struct alignas(0x30005F) PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled final
-{
-public:
-	bool                                          NewParam;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetScalarParameterValue_ReturnValue;      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled) == 0x30005F, "Wrong alignment on PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled) == 0x30005F, "Wrong size on PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled, NewParam) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled::NewParam' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled, CallFunc_GetScalarParameterValue_ReturnValue) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetAdrenalineRushVisibility
-// 0x11821300 (0x11821300 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility final
-{
-public:
-	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FTransform                             Temp_struct_Variable2;                             // 0x0040(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue2;                // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0xC];                                       // 0x0084(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable3;                             // 0x0090(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue3;                // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x00D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D6[0x2];                                       // 0x00D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility) == 0x11821300, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility) == 0x11821300, "Wrong size on PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Visible) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Visible' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_struct_Variable) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_struct_Variable2) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_AddComponent_ReturnValue2) == 0x000078, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_AddComponent_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_int_Array_Index_Variable) == 0x000080, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_struct_Variable3) == 0x000090, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_AddComponent_ReturnValue3) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_AddComponent_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_Array_Length_ReturnValue) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_IsValid_ReturnValue) == 0x0000D4, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_IsValid_ReturnValue2) == 0x0000D5, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_int_Loop_Counter_Variable) == 0x0000D8, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_Less_IntInt_ReturnValue) == 0x0000DC, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_Add_IntInt_ReturnValue) == 0x0000E0, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnRep_On_Player_Built_Floor
-// 0x11822200 (0x11822200 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor final
-{
-public:
-	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0000(0x11822200)()
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor) == 0x11822200, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor) == 0x11822200, "Wrong size on PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor, K2Node_MakeStruct_GameplayEventData) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Setup FX Mesh Duplicates
-// 0x0173 (0x0173 - 0x0000)
-struct alignas(0x35) PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates final
-{
-public:
-	class UMaterialInterface*                     Material_to_Apply;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInstanceDynamic*>       Charm_MID_Array;                                   // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	class USkeletalMeshComponent*                 Charm_Mesh;                                        // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInstanceDynamic*>       Head_MID_Array;                                    // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	class USkeletalMeshComponent*                 Head_Mesh;                                         // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInstanceDynamic*>       Body_MID_Array;                                    // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	class USkeletalMeshComponent*                 Body_Mesh;                                         // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Translucent_Sort_Order;                            // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Transfer_Material_Parameters;                      // 0x0054(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue6;                     // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue7;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue2;             // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue8;                     // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue9;                     // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue3;             // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue3; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue4; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue5; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue5;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue6; // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue6;                   // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue10;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue11;                    // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable2;                               // 0x00D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue2;  // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue13;                    // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable3;                               // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E3[0x5];                                       // 0x00E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue3;  // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable2;                                // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue14;                    // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue15;                    // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue4;             // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable3;                                // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue5;             // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Min_ReturnValue2;                         // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select2_Default;                            // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_Array_Get_Item2;                          // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue6;             // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_Array_Get_Item3;                          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Min_ReturnValue3;                         // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select3_Default;                            // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue3;            // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates) == 0x000035, "Wrong alignment on PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates) == 0x000173, "Wrong size on PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Material_to_Apply) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Material_to_Apply' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Charm_MID_Array) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Charm_MID_Array' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Charm_Mesh) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Charm_Mesh' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Head_MID_Array) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Head_MID_Array' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Head_Mesh) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Head_Mesh' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Body_MID_Array) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Body_MID_Array' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Body_Mesh) == 0x000048, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Body_Mesh' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Translucent_Sort_Order) == 0x000050, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Translucent_Sort_Order' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Transfer_Material_Parameters) == 0x000054, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Transfer_Material_Parameters' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_BooleanOR_ReturnValue) == 0x000055, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_BooleanOR_ReturnValue2) == 0x000056, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_BooleanOR_ReturnValue3) == 0x000057, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue2) == 0x000059, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue) == 0x00005C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue3) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue4) == 0x000061, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue5) == 0x000062, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue6) == 0x000063, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue7) == 0x000064, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue2) == 0x000068, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue8) == 0x00006C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue9) == 0x00006D, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue3) == 0x000078, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue) == 0x00007C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000080, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue3) == 0x000088, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue2) == 0x000090, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue3) == 0x000094, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue4) == 0x000098, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue5) == 0x0000A0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue4) == 0x0000A8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue5) == 0x0000AC, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue6) == 0x0000B0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue6) == 0x0000B8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_int_Variable) == 0x0000BC, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Add_IntInt_ReturnValue) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue10) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_bool_Variable) == 0x0000D1, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue11) == 0x0000D2, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_bool_Variable2) == 0x0000D3, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_GetSkeletalMeshForPartType_ReturnValue2) == 0x0000D8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_GetSkeletalMeshForPartType_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue12) == 0x0000E0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue13) == 0x0000E1, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_bool_Variable3) == 0x0000E2, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_GetSkeletalMeshForPartType_ReturnValue3) == 0x0000E8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_GetSkeletalMeshForPartType_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_int_Variable2) == 0x0000F0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue14) == 0x0000F4, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Add_IntInt_ReturnValue2) == 0x0000F8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue15) == 0x0000FC, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue15' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue4) == 0x000100, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Min_ReturnValue) == 0x000104, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Min_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, K2Node_Select_Default) == 0x000108, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_int_Variable3) == 0x00010C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_int_Variable3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue5) == 0x000110, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Get_Item) == 0x000118, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Min_ReturnValue2) == 0x000120, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Min_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, K2Node_Select2_Default) == 0x000124, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000128, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Get_Item2) == 0x000130, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000138, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Add_IntInt_ReturnValue3) == 0x00013C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue6) == 0x000140, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Get_Item3) == 0x000148, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Min_ReturnValue3) == 0x000150, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Min_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, K2Node_Select3_Default) == 0x000154, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_LessEqual_IntInt_ReturnValue3) == 0x000158, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_LessEqual_IntInt_ReturnValue3' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Create and Duplicate Effect Poseable Skeletal Mesh
-// 0x11821D80 (0x11821D80 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh final
-{
-public:
-	EFortCustomPartType                           BodyType;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Material_to_Apply;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInstanceDynamic*>       Empty_MID_Array;                                   // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	int32                                         TranslucentSortPriority;                           // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPoseableMeshComponent*                 PoseableMesh;                                      // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
-	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item2;                          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable2;                                // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A6[0x2];                                       // 0x00A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        K2Node_Select_Default;                             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x00B0(0x11821300)(IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00E8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FTransform                             Temp_struct_Variable;                              // 0x0170(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable2;                               // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPoseableMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkinnedMeshComponent*                  K2Node_Select2_Default;                            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh) == 0x11821D80, "Wrong alignment on PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh) == 0x11821D80, "Wrong size on PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, BodyType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::BodyType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Material_to_Apply) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Material_to_Apply' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Empty_MID_Array) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Empty_MID_Array' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, TranslucentSortPriority) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::TranslucentSortPriority' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, PoseableMesh) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::PoseableMesh' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Array_LastIndex_ReturnValue) == 0x000034, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Array_Add_ReturnValue) == 0x000044, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000048, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x000050, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_BooleanOR_ReturnValue) == 0x000058, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_GetMaterials_ReturnValue) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_GetNumMaterials_ReturnValue) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_GetNumMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_IsValid_ReturnValue2) == 0x000074, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Subtract_IntInt_ReturnValue) == 0x000078, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00007C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_IsValid_ReturnValue3) == 0x00007D, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_int_Variable) == 0x000080, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Array_Get_Item) == 0x000088, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Array_Get_Item2) == 0x000090, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000098, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Add_IntInt_ReturnValue) == 0x00009C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_int_Variable2) == 0x0000A0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_bool_Variable) == 0x0000A4, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x0000A5, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, K2Node_Select_Default) == 0x0000A8, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_GetRelativeTransform_ReturnValue) == 0x0000B0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_GetRelativeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Add_IntInt_ReturnValue2) == 0x0000E0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0000E8, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_struct_Variable) == 0x000170, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_bool_Variable2) == 0x0001A0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_AddComponent_ReturnValue) == 0x0001A8, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, K2Node_Select2_Default) == 0x0001B0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::K2Node_Select2_Default' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ToggleShieldVisibility
-// 0x11821300 (0x11821300 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_ToggleShieldVisibility final
-{
-public:
-	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FTransform                             Temp_struct_Variable2;                             // 0x0030(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue2;                // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             Temp_struct_Variable3;                             // 0x0070(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue3;                // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility) == 0x11821300, "Wrong alignment on PlayerPawn_Athena_Generic_C_ToggleShieldVisibility");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility) == 0x11821300, "Wrong size on PlayerPawn_Athena_Generic_C_ToggleShieldVisibility");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, Temp_struct_Variable) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, Temp_struct_Variable2) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_AddComponent_ReturnValue) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_AddComponent_ReturnValue2) == 0x000068, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_AddComponent_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, Temp_struct_Variable3) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_AddComponent_ReturnValue3) == 0x0000A0, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_AddComponent_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_IsValid_ReturnValue2) == 0x0000A9, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_BooleanOR_ReturnValue) == 0x0000AA, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_BooleanOR_ReturnValue2) == 0x0000AB, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_BooleanOR_ReturnValue3) == 0x0000AC, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SlaveAMeshToTheBody
-// 0x11821D80 (0x11821D80 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody final
-{
-public:
-	class USkeletalMeshComponent*                 Mesh_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 Master;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkinnedMeshComponent*                  MasterToUse;                                       // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetAttachSocketName_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        CallFunc_GetAttachParent_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_32[0xE];                                       // 0x0032(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0040(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0070(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody) == 0x11821D80, "Wrong alignment on PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody) == 0x11821D80, "Wrong size on PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, Mesh_0) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::Mesh_0' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, Master) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::Master' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, MasterToUse) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::MasterToUse' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_GetAttachSocketName_ReturnValue) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_GetAttachSocketName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_GetAttachParent_ReturnValue) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_GetAttachParent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_GetRelativeTransform_ReturnValue) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_GetRelativeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetShieldMids_InternalLoop
-// 0x0040 (0x0040 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop final
-{
-public:
-	float                                         Highlight_Cracks;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Set_Highlight_Cracks;                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Push;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Set_Push;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInstanceDynamic*>       NewParam1;                                         // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop) == 0x000040, "Wrong size on PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Highlight_Cracks) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Highlight_Cracks' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Set_Highlight_Cracks) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Set_Highlight_Cracks' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Push) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Push' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Set_Push) == 0x00000C, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Set_Push' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, NewParam1) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::NewParam1' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, CallFunc_Array_Length_ReturnValue) == 0x000024, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Temp_int_Array_Index_Variable) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, CallFunc_Array_Get_Item) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::CallFunc_Array_Get_Item' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetShieldMids
-// 0x001F (0x001F - 0x0000)
-struct alignas(0x1F) PlayerPawn_Athena_Generic_C_SetShieldMids final
-{
-public:
-	float                                         Highlight_Cracks;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Set_Highlight_Cracks;                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Push;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Set_Push;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_SetShieldMids) == 0x00001F, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetShieldMids");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetShieldMids) == 0x00001F, "Wrong size on PlayerPawn_Athena_Generic_C_SetShieldMids");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids, Highlight_Cracks) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids::Highlight_Cracks' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids, Set_Highlight_Cracks) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids::Set_Highlight_Cracks' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids, Push) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids::Push' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids, Set_Push) == 0x00000C, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids::Set_Push' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.FindShieldOpacity
-// 0x0078 (0x0078 - 0x0000)
-struct alignas(0x78) PlayerPawn_Athena_Generic_C_FindShieldOpacity final
-{
-public:
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable2;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable3;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable3;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item2;                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item3;                          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue2;                        // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue3;                        // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_FindShieldOpacity) == 0x000078, "Wrong alignment on PlayerPawn_Athena_Generic_C_FindShieldOpacity");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_FindShieldOpacity) == 0x000078, "Wrong size on PlayerPawn_Athena_Generic_C_FindShieldOpacity");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Array_Index_Variable) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Array_Index_Variable2) == 0x00000C, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Loop_Counter_Variable2) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Add_IntInt_ReturnValue2) == 0x000014, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Array_Index_Variable3) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Array_Index_Variable3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Get_Item) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Loop_Counter_Variable3) == 0x00002C, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Loop_Counter_Variable3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Get_Item2) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Length_ReturnValue2) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Less_IntInt_ReturnValue2) == 0x00003D, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Add_IntInt_ReturnValue3) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Get_Item3) == 0x000048, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Length_ReturnValue3) == 0x000050, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Less_IntInt_ReturnValue3) == 0x000054, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Less_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_FMax_ReturnValue) == 0x000058, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_FMax_ReturnValue2) == 0x00005C, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_FMax_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_FMax_ReturnValue3) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_FMax_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000064, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Create and Duplicate Effect Skeletal Meshes Parent
-// 0x11821D80 (0x11821D80 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent final
-{
-public:
-	EFortCustomPartType                           BodyType;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 DuplicatedSkeletalMeshComponent;                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Material_to_Apply;                                 // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInstanceDynamic*>       Empty_MID_Array;                                   // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	int32                                         TranslucentSortPriority;                           // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
-	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_76[0x2];                                       // 0x0076(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class USceneComponent*                        K2Node_Select_Default;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0080(0x11821300)(IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00B8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FTransform                             Temp_struct_Variable;                              // 0x0140(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable2;                               // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 K2Node_Select2_Default;                            // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable2;                                // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item2;                          // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent) == 0x11821D80, "Wrong alignment on PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent) == 0x11821D80, "Wrong size on PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, BodyType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::BodyType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, DuplicatedSkeletalMeshComponent) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::DuplicatedSkeletalMeshComponent' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Material_to_Apply) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Material_to_Apply' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Empty_MID_Array) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Empty_MID_Array' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, TranslucentSortPriority) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::TranslucentSortPriority' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Array_LastIndex_ReturnValue) == 0x00002C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Array_Add_ReturnValue) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_K2_AttachToComponent_ReturnValue) == 0x00003C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_IsValid_ReturnValue) == 0x00003D, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00003E, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x00003F, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_BooleanOR_ReturnValue) == 0x000048, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_GetMaterials_ReturnValue) == 0x000050, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_GetNumMaterials_ReturnValue) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_GetNumMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_IsValid_ReturnValue2) == 0x000064, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Subtract_IntInt_ReturnValue) == 0x000068, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00006C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_IsValid_ReturnValue3) == 0x00006D, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_int_Variable) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_bool_Variable) == 0x000074, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000075, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, K2Node_Select_Default) == 0x000078, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_GetRelativeTransform_ReturnValue) == 0x000080, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_GetRelativeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Add_IntInt_ReturnValue) == 0x0000B0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0000B8, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_struct_Variable) == 0x000140, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_bool_Variable2) == 0x000170, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_AddComponent_ReturnValue) == 0x000178, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, K2Node_Select2_Default) == 0x000180, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_int_Variable2) == 0x000188, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Add_IntInt_ReturnValue2) == 0x00018C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Array_Get_Item) == 0x000190, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Array_Get_Item2) == 0x000198, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x0001A0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.UserConstructionScript
-// 0x0010 (0x0010 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_UserConstructionScript final
-{
-public:
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue2;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_UserConstructionScript) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_UserConstructionScript");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_UserConstructionScript) == 0x000010, "Wrong size on PlayerPawn_Athena_Generic_C_UserConstructionScript");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_UserConstructionScript, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_UserConstructionScript::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue2) == 0x000009, "Member 'PlayerPawn_Athena_Generic_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue2' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDamagePlayEffects
-// 0x11821D80 (0x11821D80 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_OnDamagePlayEffects final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x11821C00)(Parm)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects) == 0x11821D80, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnDamagePlayEffects");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects) == 0x11821D80, "Wrong size on PlayerPawn_Athena_Generic_C_OnDamagePlayEffects");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, Damage) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, DamageTags) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, Momentum) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, HitInfo) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, InstigatedBy) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, DamageCauser) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::EffectContext' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnLanded
-// 0x11821D80 (0x11821D80 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_OnLanded final
-{
-public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_OnLanded) == 0x11821D80, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnLanded");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnLanded) == 0x11821D80, "Wrong size on PlayerPawn_Athena_Generic_C_OnLanded");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnLanded, Hit) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnLanded::Hit' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDeathPlayEffects
-// 0x11821D80 (0x11821D80 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_OnDeathPlayEffects final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x11821C00)(Parm)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects) == 0x11821D80, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnDeathPlayEffects");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects) == 0x11821D80, "Wrong size on PlayerPawn_Athena_Generic_C_OnDeathPlayEffects");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, HitInfo) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnWeaponEquipped
-// 0x0010 (0x0010 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_OnWeaponEquipped final
-{
-public:
-	class AFortWeapon*                            NewWeapon;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortWeapon*                            PrevWeapon;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_OnWeaponEquipped) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnWeaponEquipped");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnWeaponEquipped) == 0x000010, "Wrong size on PlayerPawn_Athena_Generic_C_OnWeaponEquipped");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnWeaponEquipped, NewWeapon) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnWeaponEquipped::NewWeapon' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnWeaponEquipped, PrevWeapon) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_OnWeaponEquipped::PrevWeapon' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_ReceiveTick) == 0x000004, "Wrong alignment on PlayerPawn_Athena_Generic_C_ReceiveTick");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_ReceiveTick) == 0x000004, "Wrong size on PlayerPawn_Athena_Generic_C_ReceiveTick");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetFirstPersonCamera
-// 0x0047 (0x0047 - 0x0000)
-struct alignas(0x47) PlayerPawn_Athena_Generic_C_SetFirstPersonCamera final
-{
-public:
-	bool                                          bNewUseFirstPersonCamera;                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_SetFirstPersonCamera) == 0x000047, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetFirstPersonCamera");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetFirstPersonCamera) == 0x000047, "Wrong size on PlayerPawn_Athena_Generic_C_SetFirstPersonCamera");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetFirstPersonCamera, bNewUseFirstPersonCamera) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetFirstPersonCamera::bNewUseFirstPersonCamera' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.GravitySphere
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.InternalSetFirstPersonCamera
-// 0x00BE (0x00BE - 0x0000)
-struct alignas(0xBE) PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera final
-{
-public:
-	bool                                          NewUseFirstPersonCamera;                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera) == 0x0000BE, "Wrong alignment on PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera) == 0x0000BE, "Wrong size on PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera, NewUseFirstPersonCamera) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera::NewUseFirstPersonCamera' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.DBNOResurrect
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnBaseChanged
-// 0x0008 (0x0008 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_OnBaseChanged final
-{
-public:
-	class AActor*                                 NewBase;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_OnBaseChanged) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnBaseChanged");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnBaseChanged) == 0x000008, "Wrong size on PlayerPawn_Athena_Generic_C_OnBaseChanged");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnBaseChanged, NewBase) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnBaseChanged::NewBase' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ReceivePossessed
-// 0x0008 (0x0008 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_ReceivePossessed final
-{
-public:
-	class AController*                            NewController;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_ReceivePossessed) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_ReceivePossessed");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_ReceivePossessed) == 0x000008, "Wrong size on PlayerPawn_Athena_Generic_C_ReceivePossessed");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ReceivePossessed, NewController) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ReceivePossessed::NewController' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ClientBindWeaponSwap
-// 0x0010 (0x0010 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap final
-{
-public:
-	class AFortWeapon*                            NewWeapon;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortWeapon*                            PrevWeapon;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap) == 0x000010, "Wrong size on PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap, NewWeapon) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap::NewWeapon' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap, PrevWeapon) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap::PrevWeapon' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.BindWeaponSwap
-// 0x0004 (0x0004 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_BindWeaponSwap final
-{
-public:
-	float                                         InDuration;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_BindWeaponSwap) == 0x000004, "Wrong alignment on PlayerPawn_Athena_Generic_C_BindWeaponSwap");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_BindWeaponSwap) == 0x000004, "Wrong size on PlayerPawn_Athena_Generic_C_BindWeaponSwap");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_BindWeaponSwap, InDuration) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_BindWeaponSwap::InDuration' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.MultiSwapWeapon
-// 0x0240 (0x0240 - 0x0000)
-struct alignas(0x240) PlayerPawn_Athena_Generic_C_MultiSwapWeapon final
-{
-public:
-	class AFortWeapon*                            New;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortWeapon*                            Prev;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_MultiSwapWeapon) == 0x000240, "Wrong alignment on PlayerPawn_Athena_Generic_C_MultiSwapWeapon");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_MultiSwapWeapon) == 0x000240, "Wrong size on PlayerPawn_Athena_Generic_C_MultiSwapWeapon");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_MultiSwapWeapon, New) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_MultiSwapWeapon::New' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_MultiSwapWeapon, Prev) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_MultiSwapWeapon::Prev' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.MultiEndSwap
-// 0x0008 (0x0008 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_MultiEndSwap final
-{
-public:
-	class AFortWeapon*                            CurrentWeapon_0;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_MultiEndSwap) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_MultiEndSwap");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_MultiEndSwap) == 0x000008, "Wrong size on PlayerPawn_Athena_Generic_C_MultiEndSwap");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_MultiEndSwap, CurrentWeapon_0) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_MultiEndSwap::CurrentWeapon_0' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDeathServer
-// 0x11821D80 (0x11821D80 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_OnDeathServer final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AController*                            InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x11821C00)(Parm)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_OnDeathServer) == 0x11821D80, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnDeathServer");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnDeathServer) == 0x11821D80, "Wrong size on PlayerPawn_Athena_Generic_C_OnDeathServer");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, Damage) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::Damage' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, DamageTags) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::DamageTags' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, Momentum) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::Momentum' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, HitInfo) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::HitInfo' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, InstigatedBy) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, DamageCauser) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::EffectContext' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetupAnimTrails
-// 0x023C (0x023C - 0x0000)
-struct alignas(0x23C) PlayerPawn_Athena_Generic_C_SetupAnimTrails final
-{
-public:
-	class UParticleSystem*                        Particle_System_Reference;                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   First_Socket_Name;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Second_Socket_Name;                                // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Width;                                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_SetupAnimTrails) == 0x00023C, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetupAnimTrails");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetupAnimTrails) == 0x00023C, "Wrong size on PlayerPawn_Athena_Generic_C_SetupAnimTrails");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetupAnimTrails, Particle_System_Reference) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetupAnimTrails::Particle_System_Reference' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetupAnimTrails, First_Socket_Name) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_SetupAnimTrails::First_Socket_Name' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetupAnimTrails, Second_Socket_Name) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_SetupAnimTrails::Second_Socket_Name' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetupAnimTrails, Width) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_SetupAnimTrails::Width' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsCE
-// 0x0046 (0x0046 - 0x0000)
-struct alignas(0x46) PlayerPawn_Athena_Generic_C_AnimTrailsCE final
-{
-public:
-	bool                                          Active;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_AnimTrailsCE) == 0x000046, "Wrong alignment on PlayerPawn_Athena_Generic_C_AnimTrailsCE");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_AnimTrailsCE) == 0x000046, "Wrong size on PlayerPawn_Athena_Generic_C_AnimTrailsCE");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_AnimTrailsCE, Active) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_AnimTrailsCE::Active' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.CharacterDestroyed
-// 0x007D (0x007D - 0x0000)
-struct alignas(0x7D) PlayerPawn_Athena_Generic_C_CharacterDestroyed final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_CharacterDestroyed) == 0x00007D, "Wrong alignment on PlayerPawn_Athena_Generic_C_CharacterDestroyed");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_CharacterDestroyed) == 0x00007D, "Wrong size on PlayerPawn_Athena_Generic_C_CharacterDestroyed");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_CharacterDestroyed, DestroyedActor) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_CharacterDestroyed::DestroyedActor' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Generic.AdrenalineRush.PeriodicHeal
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Generic.AdrenalineRush.DirectHeal
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Damage.Shielded
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.Destroyed
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.FullyCharged
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.Reapplied
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied) == 0x11821C00, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied) == 0x11821C00, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied::Parameters' has a wrong offset!");
-
 // Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ExecuteUbergraph_PlayerPawn_Athena_Generic
-// 0x1198DB70 (0x1198DB70 - 0x0000)
-struct alignas(0x1198DB70) PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic final
+// 0x1B90 (0x1B90 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1017,31 +32,31 @@ public:
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0010(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue2;          // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0044(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0044(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Are_the_wind_and_water_RTT_passes_enabled_NewParam; // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetVelocity_ReturnValue2;                 // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue2;                 // 0x0058(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X2;                           // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y2;                           // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z2;                           // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue3;          // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0074(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0074(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue4;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue2;             // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvas*                                CallFunc_BeginDrawCanvasToRenderTarget_Canvas;     // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size;       // 0x0090(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context;    // 0x0098(0x11821D80)(NoDestructor)
+	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size;       // 0x0090(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context;    // 0x0098(0x0010)(NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable2;                                // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1233,38 +248,40 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue9;           // 0x0379(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_37A[0x2];                                      // 0x037A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_Damage3;                              // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  K2Node_Event_DamageTags3;                          // 0x0380(0x11821C00)(ConstParm)
-	struct FVector                                K2Node_Event_Momentum3;                            // 0x03A0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_HitInfo3;                             // 0x03B0(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  K2Node_Event_DamageTags3;                          // 0x0380(0x0020)(ConstParm)
+	struct FVector                                K2Node_Event_Momentum3;                            // 0x03A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AC[0x4];                                      // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_HitInfo3;                             // 0x03B0(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPawn*                              K2Node_Event_InstigatedBy3;                        // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_DamageCauser3;                        // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext3;                       // 0x0448(0x11821C00)()
-	struct FHitResult                             K2Node_Event_Hit;                                  // 0x0460(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext3;                       // 0x0448(0x0018)()
+	struct FHitResult                             K2Node_Event_Hit;                                  // 0x0460(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x04E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x04E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4EA[0x2];                                      // 0x04EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x04EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x04F0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x04FC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0508(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0514(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x04F0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x04FC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0508(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0514(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0538(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0544(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0548(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0554(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0560(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0548(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0554(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0560(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_Damage2;                              // 0x056C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  K2Node_Event_DamageTags2;                          // 0x0570(0x11821C00)(ConstParm)
-	struct FVector                                K2Node_Event_Momentum2;                            // 0x0590(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_HitInfo2;                             // 0x05A0(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  K2Node_Event_DamageTags2;                          // 0x0570(0x0020)(ConstParm)
+	struct FVector                                K2Node_Event_Momentum2;                            // 0x0590(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59C[0x4];                                      // 0x059C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_HitInfo2;                             // 0x05A0(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPawn*                              K2Node_Event_InstigatedBy2;                        // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_DamageCauser2;                        // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext2;                       // 0x0638(0x11821C00)()
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0650(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext2;                       // 0x0638(0x0018)()
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0650(0x000C)(IsPlainOldData, NoDestructor)
 	int32                                         Temp_int_Variable5;                                // 0x065C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue10;          // 0x0660(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_661[0x7];                                      // 0x0661(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1278,21 +295,21 @@ public:
 	class AFortWeapon*                            K2Node_Event_PrevWeapon;                           // 0x0688(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0690(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0694(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0698(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue3;                 // 0x06A4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0698(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue3;                 // 0x06A4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X3;                           // 0x06B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y3;                           // 0x06B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z3;                           // 0x06B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x06BC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x06BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x06CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType10;               // 0x06CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6CE[0x2];                                      // 0x06CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters10;              // 0x06D0(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters10;              // 0x06D0(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0788(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType9;                // 0x0789(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_78A[0x6];                                      // 0x078A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters9;               // 0x0790(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters9;               // 0x0790(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x0848(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue11;          // 0x0849(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_84A[0x2];                                      // 0x084A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1320,7 +337,7 @@ public:
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0898(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType8;                // 0x08A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8A1[0x7];                                      // 0x08A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters8;               // 0x08A8(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters8;               // 0x08A8(0x00B8)(ContainsInstancedReference)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0960(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess7;                      // 0x0968(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum3_CmpSuccess;                     // 0x0969(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1332,16 +349,16 @@ public:
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x0974(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType7;                // 0x0978(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_979[0x7];                                      // 0x0979(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters7;               // 0x0980(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters7;               // 0x0980(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum4_CmpSuccess;                     // 0x0A38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A39[0x3];                                      // 0x0A39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue2;                // 0x0A3C(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue2;                // 0x0A3C(0x000C)(IsPlainOldData, NoDestructor)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0A48(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A4C[0x4];                                      // 0x0A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0A50(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue4;                  // 0x0A58(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue5;                  // 0x0A64(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x0A70(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue4;                  // 0x0A58(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue5;                  // 0x0A64(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x0A70(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsWeaponHolstered_ReturnValue;            // 0x0A7C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0A7D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A7E[0x2];                                      // 0x0A7E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1354,16 +371,16 @@ public:
 	class AController*                            K2Node_Event_NewController;                        // 0x0A98(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0AA0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AA8[0x8];                                      // 0x0AA8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0AB0(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0AB0(0x0030)(IsPlainOldData, NoDestructor)
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0AE0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0AF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AF1[0x3];                                      // 0x0AF1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0AF4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0B00(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0B0C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_ComposeRotators_ReturnValue;              // 0x0B18(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0B24(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0B30(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0AF4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0B00(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0B0C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_ComposeRotators_ReturnValue;              // 0x0B18(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0B24(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0B30(0x0030)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue43;                    // 0x0B60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B61[0x7];                                      // 0x0B61(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x0B68(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1376,7 +393,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue46;                    // 0x0B90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B91[0x7];                                      // 0x0B91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue2;               // 0x0B98(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue4;                 // 0x0BA0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue4;                 // 0x0BA0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BAC[0x4];                                      // 0x0BAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller2;      // 0x0BB0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess9;                      // 0x0BB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_BB9[0x3];                                      // 0x0BB9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1420,12 +438,13 @@ public:
 	bool                                          Temp_bool_Variable3;                               // 0x0C61(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C62[0x2];                                      // 0x0C62(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_Damage;                               // 0x0C64(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  K2Node_Event_DamageTags;                           // 0x0C68(0x11821C00)(ConstParm)
-	struct FVector                                K2Node_Event_Momentum;                             // 0x0C88(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_HitInfo;                              // 0x0C98(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  K2Node_Event_DamageTags;                           // 0x0C68(0x0020)(ConstParm)
+	struct FVector                                K2Node_Event_Momentum;                             // 0x0C88(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C94[0x4];                                      // 0x0C94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_HitInfo;                              // 0x0C98(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AController*                            K2Node_Event_InstigatedBy;                         // 0x0D20(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_DamageCauser;                         // 0x0D28(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x0D30(0x11821C00)()
+	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x0D30(0x0018)()
 	class AController*                            CallFunc_GetController_ReturnValue3;               // 0x0D48(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0D50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D51[0x7];                                      // 0x0D51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1466,7 +485,7 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue9;            // 0x0DD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_DD1[0x3];                                      // 0x0DD1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue11;                 // 0x0DD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0DD8(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0DD8(0x0008)(NoDestructor)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue6; // 0x0DE0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTextureRenderTarget2D*                 CallFunc_CreateRenderTarget2D_ReturnValue;         // 0x0DE8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue7; // 0x0DF0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1484,32 +503,32 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0E28(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0E2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E2D[0x3];                                      // 0x0E2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0E30(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult2;      // 0x0EB8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult3;      // 0x0F40(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult4;      // 0x0FC8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0E30(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult2;      // 0x0EB8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult3;      // 0x0F40(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult4;      // 0x0FC8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                         Temp_int_Loop_Counter_Variable3;                   // 0x1050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x1054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1055[0x3];                                     // 0x1055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue12;                 // 0x1058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue5;                 // 0x105C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x1068(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue5;                 // 0x105C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x1068(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X5;                           // 0x1074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y5;                           // 0x1078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z5;                           // 0x107C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x1080(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_MakeVector_ReturnValue6;                  // 0x108C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult5;      // 0x1098(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue3;                // 0x1120(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x1080(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_MakeVector_ReturnValue6;                  // 0x108C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult5;      // 0x1098(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue3;                // 0x1120(0x000C)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue57;                    // 0x112C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue58;                    // 0x112D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_112E[0x2];                                     // 0x112E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x1130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x1138(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x1144(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue3;            // 0x1150(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue6;                 // 0x115C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x1168(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x1138(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x1144(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue3;            // 0x1150(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue6;                 // 0x115C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x1168(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_VectorVector_ReturnValue;      // 0x1174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1175[0x3];                                     // 0x1175(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable10;                               // 0x1178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1527,10 +546,10 @@ public:
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue3;        // 0x11A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType6;                // 0x11B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11B1[0x7];                                     // 0x11B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters6;               // 0x11B8(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters6;               // 0x11B8(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType5;                // 0x1270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1271[0x7];                                     // 0x1271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters5;               // 0x1278(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters5;               // 0x1278(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum5_CmpSuccess;                     // 0x1330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum6_CmpSuccess;                     // 0x1331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1332[0x6];                                     // 0x1332(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1567,7 +586,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess16;                     // 0x13C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue3;         // 0x13C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_13CA[0x6];                                     // 0x13CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x13D0(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x13D0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x1458(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable6;                               // 0x145C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_145D[0x3];                                     // 0x145D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1640,34 +659,36 @@ public:
 	uint8                                         Pad_1555[0x3];                                     // 0x1555(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue2;         // 0x1558(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x1560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x1568(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x1568(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1574[0x4];                                     // 0x1574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue3;         // 0x1578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue4;         // 0x1580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x1588(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x1598(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x1598(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x1620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1621[0x7];                                     // 0x1621(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult6;      // 0x1628(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult6;      // 0x1628(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit2;             // 0x16B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap2;          // 0x16B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_16B2[0x2];                                     // 0x16B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time2;                     // 0x16B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location2;                 // 0x16B8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint2;              // 0x16C4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal2;                   // 0x16D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal2;             // 0x16DC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location2;                 // 0x16B8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint2;              // 0x16C4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal2;                   // 0x16D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal2;             // 0x16DC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat2;                  // 0x16E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor2;                 // 0x16F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent2;             // 0x16F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_BreakHitResult_HitBoneName2;              // 0x1700(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_HitItem2;                  // 0x1708(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_FaceIndex2;                // 0x170C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart2;               // 0x1710(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd2;                 // 0x171C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x1728(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart2;               // 0x1710(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd2;                 // 0x171C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x1728(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue2;                        // 0x1734(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue2;        // 0x1738(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x1748(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue2;        // 0x1738(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1744[0x4];                                     // 0x1744(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x1748(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Temp_bool_Has_Been_Initd_Variable9;                // 0x17D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_17D1[0x7];                                     // 0x17D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x17D8(0x0010)(ZeroConstructor, NoDestructor)
@@ -1675,23 +696,23 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue3;          // 0x17F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType4;                // 0x17F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_17F9[0x7];                                     // 0x17F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters4;               // 0x1800(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters4;               // 0x1800(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType3;                // 0x18B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_18B9[0x7];                                     // 0x18B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters3;               // 0x18C0(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters3;               // 0x18C0(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum7_CmpSuccess;                     // 0x1978(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType2;                // 0x1979(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_197A[0x6];                                     // 0x197A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x1980(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x1980(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType;                 // 0x1A38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1A39[0x7];                                     // 0x1A39(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x1A40(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x1A40(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum8_CmpSuccess;                     // 0x1AF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum9_CmpSuccess;                     // 0x1AF9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1AFA[0x6];                                     // 0x1AFA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x1B00(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)> K2Node_CreateDelegate_OutputDelegate3;             // 0x1B10(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x1B20(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x1B20(0x0008)(NoDestructor)
 	EDynamicForceFeedbackAction                   Temp_byte_Variable;                                // 0x1B28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B29[0x3];                                     // 0x1B29(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable14;                               // 0x1B2C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1722,8 +743,8 @@ public:
 	uint8                                         Pad_1B89[0x3];                                     // 0x1B89(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x1B8C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic) == 0x1198DB70, "Wrong alignment on PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic");
-static_assert(sizeof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic) == 0x1198DB70, "Wrong size on PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic");
+static_assert(alignof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic) == 0x000010, "Wrong alignment on PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic) == 0x001B90, "Wrong size on PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic");
 static_assert(offsetof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic, EntryPoint) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic, Temp_bool_Variable) == 0x000005, "Member 'PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic::Temp_bool_Variable' has a wrong offset!");
@@ -2300,6 +1321,994 @@ static_assert(offsetof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_A
 static_assert(offsetof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic, CallFunc_Add_FloatFloat_ReturnValue2) == 0x001B84, "Member 'PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic, Temp_bool_Variable9) == 0x001B88, "Member 'PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic::Temp_bool_Variable9' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic, CallFunc_Add_FloatFloat_ReturnValue3) == 0x001B8C, "Member 'PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.Reapplied
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.FullyCharged
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.Destroyed
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Damage.Shielded
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Generic.AdrenalineRush.DirectHeal
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Generic.AdrenalineRush.PeriodicHeal
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.CharacterDestroyed
+// 0x0008 (0x0008 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_CharacterDestroyed final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_CharacterDestroyed) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_CharacterDestroyed");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_CharacterDestroyed) == 0x000008, "Wrong size on PlayerPawn_Athena_Generic_C_CharacterDestroyed");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_CharacterDestroyed, DestroyedActor) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_CharacterDestroyed::DestroyedActor' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsCE
+// 0x0001 (0x0001 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_AnimTrailsCE final
+{
+public:
+	bool                                          Active;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_AnimTrailsCE) == 0x000001, "Wrong alignment on PlayerPawn_Athena_Generic_C_AnimTrailsCE");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_AnimTrailsCE) == 0x000001, "Wrong size on PlayerPawn_Athena_Generic_C_AnimTrailsCE");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_AnimTrailsCE, Active) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_AnimTrailsCE::Active' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetupAnimTrails
+// 0x0020 (0x0020 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_SetupAnimTrails final
+{
+public:
+	class UParticleSystem*                        Particle_System_Reference;                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   First_Socket_Name;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Second_Socket_Name;                                // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Width;                                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_SetupAnimTrails) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetupAnimTrails");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetupAnimTrails) == 0x000020, "Wrong size on PlayerPawn_Athena_Generic_C_SetupAnimTrails");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetupAnimTrails, Particle_System_Reference) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetupAnimTrails::Particle_System_Reference' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetupAnimTrails, First_Socket_Name) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_SetupAnimTrails::First_Socket_Name' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetupAnimTrails, Second_Socket_Name) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_SetupAnimTrails::Second_Socket_Name' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetupAnimTrails, Width) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_SetupAnimTrails::Width' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDeathServer
+// 0x00E8 (0x00E8 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_OnDeathServer final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AController*                            InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_OnDeathServer) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnDeathServer");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnDeathServer) == 0x0000E8, "Wrong size on PlayerPawn_Athena_Generic_C_OnDeathServer");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, Damage) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::Damage' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, DamageTags) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::DamageTags' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, Momentum) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::Momentum' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, HitInfo) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::HitInfo' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, InstigatedBy) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, DamageCauser) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::DamageCauser' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathServer, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_OnDeathServer::EffectContext' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.MultiEndSwap
+// 0x0008 (0x0008 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_MultiEndSwap final
+{
+public:
+	class AFortWeapon*                            CurrentWeapon_0;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_MultiEndSwap) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_MultiEndSwap");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_MultiEndSwap) == 0x000008, "Wrong size on PlayerPawn_Athena_Generic_C_MultiEndSwap");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_MultiEndSwap, CurrentWeapon_0) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_MultiEndSwap::CurrentWeapon_0' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.MultiSwapWeapon
+// 0x0010 (0x0010 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_MultiSwapWeapon final
+{
+public:
+	class AFortWeapon*                            New;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortWeapon*                            Prev;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_MultiSwapWeapon) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_MultiSwapWeapon");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_MultiSwapWeapon) == 0x000010, "Wrong size on PlayerPawn_Athena_Generic_C_MultiSwapWeapon");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_MultiSwapWeapon, New) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_MultiSwapWeapon::New' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_MultiSwapWeapon, Prev) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_MultiSwapWeapon::Prev' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.BindWeaponSwap
+// 0x0004 (0x0004 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_BindWeaponSwap final
+{
+public:
+	float                                         InDuration;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_BindWeaponSwap) == 0x000004, "Wrong alignment on PlayerPawn_Athena_Generic_C_BindWeaponSwap");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_BindWeaponSwap) == 0x000004, "Wrong size on PlayerPawn_Athena_Generic_C_BindWeaponSwap");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_BindWeaponSwap, InDuration) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_BindWeaponSwap::InDuration' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ClientBindWeaponSwap
+// 0x0010 (0x0010 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap final
+{
+public:
+	class AFortWeapon*                            NewWeapon;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortWeapon*                            PrevWeapon;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap) == 0x000010, "Wrong size on PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap, NewWeapon) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap::NewWeapon' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap, PrevWeapon) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_ClientBindWeaponSwap::PrevWeapon' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ReceivePossessed
+// 0x0008 (0x0008 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_ReceivePossessed final
+{
+public:
+	class AController*                            NewController;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_ReceivePossessed) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_ReceivePossessed");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_ReceivePossessed) == 0x000008, "Wrong size on PlayerPawn_Athena_Generic_C_ReceivePossessed");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ReceivePossessed, NewController) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ReceivePossessed::NewController' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnBaseChanged
+// 0x0008 (0x0008 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_OnBaseChanged final
+{
+public:
+	class AActor*                                 NewBase;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_OnBaseChanged) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnBaseChanged");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnBaseChanged) == 0x000008, "Wrong size on PlayerPawn_Athena_Generic_C_OnBaseChanged");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnBaseChanged, NewBase) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnBaseChanged::NewBase' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.DBNOResurrect
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.InternalSetFirstPersonCamera
+// 0x0001 (0x0001 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera final
+{
+public:
+	bool                                          NewUseFirstPersonCamera;                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera) == 0x000001, "Wrong alignment on PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera) == 0x000001, "Wrong size on PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera, NewUseFirstPersonCamera) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera::NewUseFirstPersonCamera' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.GravitySphere
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetFirstPersonCamera
+// 0x0001 (0x0001 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_SetFirstPersonCamera final
+{
+public:
+	bool                                          bNewUseFirstPersonCamera;                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_SetFirstPersonCamera) == 0x000001, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetFirstPersonCamera");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetFirstPersonCamera) == 0x000001, "Wrong size on PlayerPawn_Athena_Generic_C_SetFirstPersonCamera");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetFirstPersonCamera, bNewUseFirstPersonCamera) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetFirstPersonCamera::bNewUseFirstPersonCamera' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x0000C0, "Wrong size on PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, EventType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_ReceiveTick) == 0x000004, "Wrong alignment on PlayerPawn_Athena_Generic_C_ReceiveTick");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_ReceiveTick) == 0x000004, "Wrong size on PlayerPawn_Athena_Generic_C_ReceiveTick");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnWeaponEquipped
+// 0x0010 (0x0010 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_OnWeaponEquipped final
+{
+public:
+	class AFortWeapon*                            NewWeapon;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortWeapon*                            PrevWeapon;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_OnWeaponEquipped) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnWeaponEquipped");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnWeaponEquipped) == 0x000010, "Wrong size on PlayerPawn_Athena_Generic_C_OnWeaponEquipped");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnWeaponEquipped, NewWeapon) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnWeaponEquipped::NewWeapon' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnWeaponEquipped, PrevWeapon) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_OnWeaponEquipped::PrevWeapon' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDeathPlayEffects
+// 0x00E8 (0x00E8 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_OnDeathPlayEffects final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnDeathPlayEffects");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on PlayerPawn_Athena_Generic_C_OnDeathPlayEffects");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::Damage' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, HitInfo) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnLanded
+// 0x0088 (0x0088 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_OnLanded final
+{
+public:
+	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_OnLanded) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnLanded");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnLanded) == 0x000088, "Wrong size on PlayerPawn_Athena_Generic_C_OnLanded");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnLanded, Hit) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnLanded::Hit' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDamagePlayEffects
+// 0x00E8 (0x00E8 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_OnDamagePlayEffects final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnDamagePlayEffects");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects) == 0x0000E8, "Wrong size on PlayerPawn_Athena_Generic_C_OnDamagePlayEffects");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, Damage) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::Damage' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, DamageTags) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::DamageTags' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, Momentum) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::Momentum' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, HitInfo) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::HitInfo' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, InstigatedBy) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, DamageCauser) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::DamageCauser' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnDamagePlayEffects, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_OnDamagePlayEffects::EffectContext' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.UserConstructionScript
+// 0x0010 (0x0010 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_UserConstructionScript final
+{
+public:
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue2;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_UserConstructionScript) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_UserConstructionScript");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_UserConstructionScript) == 0x000010, "Wrong size on PlayerPawn_Athena_Generic_C_UserConstructionScript");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_UserConstructionScript, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_UserConstructionScript::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue2) == 0x000009, "Member 'PlayerPawn_Athena_Generic_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue2' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Create and Duplicate Effect Skeletal Meshes Parent
+// 0x01B0 (0x01B0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent final
+{
+public:
+	EFortCustomPartType                           BodyType;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 DuplicatedSkeletalMeshComponent;                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Material_to_Apply;                                 // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       Empty_MID_Array;                                   // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	int32                                         TranslucentSortPriority;                           // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_76[0x2];                                       // 0x0076(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        K2Node_Select_Default;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0080(0x0030)(IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0140(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 K2Node_Select2_Default;                            // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item2;                          // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent) == 0x000010, "Wrong alignment on PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent) == 0x0001B0, "Wrong size on PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, BodyType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::BodyType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, DuplicatedSkeletalMeshComponent) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::DuplicatedSkeletalMeshComponent' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Material_to_Apply) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Material_to_Apply' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Empty_MID_Array) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Empty_MID_Array' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, TranslucentSortPriority) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::TranslucentSortPriority' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Array_LastIndex_ReturnValue) == 0x00002C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Array_Add_ReturnValue) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_K2_AttachToComponent_ReturnValue) == 0x00003C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_IsValid_ReturnValue) == 0x00003D, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00003E, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x00003F, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_BooleanOR_ReturnValue) == 0x000048, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_GetMaterials_ReturnValue) == 0x000050, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_GetNumMaterials_ReturnValue) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_GetNumMaterials_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_IsValid_ReturnValue2) == 0x000064, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Subtract_IntInt_ReturnValue) == 0x000068, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00006C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_IsValid_ReturnValue3) == 0x00006D, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_int_Variable) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_bool_Variable) == 0x000074, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000075, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, K2Node_Select_Default) == 0x000078, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_GetRelativeTransform_ReturnValue) == 0x000080, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_GetRelativeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Add_IntInt_ReturnValue) == 0x0000B0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0000B8, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_struct_Variable) == 0x000140, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_bool_Variable2) == 0x000170, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_AddComponent_ReturnValue) == 0x000178, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, K2Node_Select2_Default) == 0x000180, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, Temp_int_Variable2) == 0x000188, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Add_IntInt_ReturnValue2) == 0x00018C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Array_Get_Item) == 0x000190, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_Array_Get_Item2) == 0x000198, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x0001A0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.FindShieldOpacity
+// 0x0068 (0x0068 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_FindShieldOpacity final
+{
+public:
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable2;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable3;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable3;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item2;                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item3;                          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue2;                        // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue3;                        // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_FindShieldOpacity) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_FindShieldOpacity");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_FindShieldOpacity) == 0x000068, "Wrong size on PlayerPawn_Athena_Generic_C_FindShieldOpacity");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Array_Index_Variable) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Array_Index_Variable2) == 0x00000C, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Array_Index_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Loop_Counter_Variable2) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Add_IntInt_ReturnValue2) == 0x000014, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Array_Index_Variable3) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Array_Index_Variable3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Get_Item) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, Temp_int_Loop_Counter_Variable3) == 0x00002C, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::Temp_int_Loop_Counter_Variable3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Get_Item2) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Length_ReturnValue2) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Less_IntInt_ReturnValue2) == 0x00003D, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Add_IntInt_ReturnValue3) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Get_Item3) == 0x000048, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Array_Length_ReturnValue3) == 0x000050, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Less_IntInt_ReturnValue3) == 0x000054, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Less_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_FMax_ReturnValue) == 0x000058, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_FMax_ReturnValue2) == 0x00005C, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_FMax_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_FMax_ReturnValue3) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_FMax_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_FindShieldOpacity, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000064, "Member 'PlayerPawn_Athena_Generic_C_FindShieldOpacity::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetShieldMids
+// 0x0010 (0x0010 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_SetShieldMids final
+{
+public:
+	float                                         Highlight_Cracks;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Set_Highlight_Cracks;                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Push;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Set_Push;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_SetShieldMids) == 0x000004, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetShieldMids");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetShieldMids) == 0x000010, "Wrong size on PlayerPawn_Athena_Generic_C_SetShieldMids");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids, Highlight_Cracks) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids::Highlight_Cracks' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids, Set_Highlight_Cracks) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids::Set_Highlight_Cracks' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids, Push) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids::Push' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids, Set_Push) == 0x00000C, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids::Set_Push' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetShieldMids_InternalLoop
+// 0x0040 (0x0040 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop final
+{
+public:
+	float                                         Highlight_Cracks;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Set_Highlight_Cracks;                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Push;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Set_Push;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInstanceDynamic*>       NewParam1;                                         // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop) == 0x000040, "Wrong size on PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Highlight_Cracks) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Highlight_Cracks' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Set_Highlight_Cracks) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Set_Highlight_Cracks' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Push) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Push' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Set_Push) == 0x00000C, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Set_Push' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, NewParam1) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::NewParam1' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, CallFunc_Array_Length_ReturnValue) == 0x000024, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, Temp_int_Array_Index_Variable) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop, CallFunc_Array_Get_Item) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop::CallFunc_Array_Get_Item' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SlaveAMeshToTheBody
+// 0x0100 (0x0100 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody final
+{
+public:
+	class USkeletalMeshComponent*                 Mesh_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 Master;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkinnedMeshComponent*                  MasterToUse;                                       // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetAttachSocketName_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CallFunc_GetAttachParent_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32[0xE];                                       // 0x0032(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0070(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody) == 0x000010, "Wrong alignment on PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody) == 0x000100, "Wrong size on PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, Mesh_0) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::Mesh_0' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, Master) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::Master' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, MasterToUse) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::MasterToUse' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_GetAttachSocketName_ReturnValue) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_GetAttachSocketName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_GetAttachParent_ReturnValue) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_GetAttachParent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_GetRelativeTransform_ReturnValue) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_GetRelativeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ToggleShieldVisibility
+// 0x00B0 (0x00B0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_ToggleShieldVisibility final
+{
+public:
+	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable2;                             // 0x0030(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue2;                // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Temp_struct_Variable3;                             // 0x0070(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue3;                // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility) == 0x000010, "Wrong alignment on PlayerPawn_Athena_Generic_C_ToggleShieldVisibility");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility) == 0x0000B0, "Wrong size on PlayerPawn_Athena_Generic_C_ToggleShieldVisibility");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, Temp_struct_Variable) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, Temp_struct_Variable2) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::Temp_struct_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_AddComponent_ReturnValue) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_AddComponent_ReturnValue2) == 0x000068, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_AddComponent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, Temp_struct_Variable3) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::Temp_struct_Variable3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_AddComponent_ReturnValue3) == 0x0000A0, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_AddComponent_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_IsValid_ReturnValue2) == 0x0000A9, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_BooleanOR_ReturnValue) == 0x0000AA, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_BooleanOR_ReturnValue2) == 0x0000AB, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_ToggleShieldVisibility, CallFunc_BooleanOR_ReturnValue3) == 0x0000AC, "Member 'PlayerPawn_Athena_Generic_C_ToggleShieldVisibility::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Create and Duplicate Effect Poseable Skeletal Mesh
+// 0x01C0 (0x01C0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh final
+{
+public:
+	EFortCustomPartType                           BodyType;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Material_to_Apply;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       Empty_MID_Array;                                   // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	int32                                         TranslucentSortPriority;                           // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPoseableMeshComponent*                 PoseableMesh;                                      // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item2;                          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A6[0x2];                                       // 0x00A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        K2Node_Select_Default;                             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x00B0(0x0030)(IsPlainOldData, NoDestructor)
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00E8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0170(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPoseableMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkinnedMeshComponent*                  K2Node_Select2_Default;                            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh) == 0x000010, "Wrong alignment on PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh) == 0x0001C0, "Wrong size on PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, BodyType) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::BodyType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Material_to_Apply) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Material_to_Apply' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Empty_MID_Array) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Empty_MID_Array' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, TranslucentSortPriority) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::TranslucentSortPriority' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, PoseableMesh) == 0x000028, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::PoseableMesh' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Array_LastIndex_ReturnValue) == 0x000034, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Array_Add_ReturnValue) == 0x000044, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000048, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x000050, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_BooleanOR_ReturnValue) == 0x000058, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_GetMaterials_ReturnValue) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_GetNumMaterials_ReturnValue) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_GetNumMaterials_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_IsValid_ReturnValue2) == 0x000074, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Subtract_IntInt_ReturnValue) == 0x000078, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00007C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_IsValid_ReturnValue3) == 0x00007D, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_int_Variable) == 0x000080, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Array_Get_Item) == 0x000088, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Array_Get_Item2) == 0x000090, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000098, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Add_IntInt_ReturnValue) == 0x00009C, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_int_Variable2) == 0x0000A0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_bool_Variable) == 0x0000A4, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x0000A5, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, K2Node_Select_Default) == 0x0000A8, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_GetRelativeTransform_ReturnValue) == 0x0000B0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_GetRelativeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_Add_IntInt_ReturnValue2) == 0x0000E0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0000E8, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_struct_Variable) == 0x000170, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, Temp_bool_Variable2) == 0x0001A0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, CallFunc_AddComponent_ReturnValue) == 0x0001A8, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh, K2Node_Select2_Default) == 0x0001B0, "Member 'PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh::K2Node_Select2_Default' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Setup FX Mesh Duplicates
+// 0x0160 (0x0160 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates final
+{
+public:
+	class UMaterialInterface*                     Material_to_Apply;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       Charm_MID_Array;                                   // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	class USkeletalMeshComponent*                 Charm_Mesh;                                        // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       Head_MID_Array;                                    // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	class USkeletalMeshComponent*                 Head_Mesh;                                         // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInstanceDynamic*>       Body_MID_Array;                                    // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	class USkeletalMeshComponent*                 Body_Mesh;                                         // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Translucent_Sort_Order;                            // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Transfer_Material_Parameters;                      // 0x0054(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue6;                     // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue7;                     // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue2;             // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue8;                     // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue9;                     // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue3;             // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue3; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue4; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue5; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue5;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue6; // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue6;                   // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue;   // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue10;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue11;                    // 0x00D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable2;                               // 0x00D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue2;  // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue12;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue13;                    // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable3;                               // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E3[0x5];                                       // 0x00E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetSkeletalMeshForPartType_ReturnValue3;  // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable2;                                // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue14;                    // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue15;                    // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue4;             // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable3;                                // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue5;             // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue2;                         // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select2_Default;                            // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_Array_Get_Item2;                          // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue6;             // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_144[0x4];                                      // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_Array_Get_Item3;                          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue3;                         // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select3_Default;                            // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue3;            // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates) == 0x000160, "Wrong size on PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Material_to_Apply) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Material_to_Apply' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Charm_MID_Array) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Charm_MID_Array' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Charm_Mesh) == 0x000018, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Charm_Mesh' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Head_MID_Array) == 0x000020, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Head_MID_Array' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Head_Mesh) == 0x000030, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Head_Mesh' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Body_MID_Array) == 0x000038, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Body_MID_Array' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Body_Mesh) == 0x000048, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Body_Mesh' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Translucent_Sort_Order) == 0x000050, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Translucent_Sort_Order' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Transfer_Material_Parameters) == 0x000054, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Transfer_Material_Parameters' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_BooleanOR_ReturnValue) == 0x000055, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_BooleanOR_ReturnValue2) == 0x000056, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_BooleanOR_ReturnValue3) == 0x000057, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue2) == 0x000059, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue) == 0x00005C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue3) == 0x000060, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue4) == 0x000061, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue5) == 0x000062, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue6) == 0x000063, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue7) == 0x000064, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue7' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue2) == 0x000068, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue8) == 0x00006C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue8' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue9) == 0x00006D, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue9' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue3) == 0x000078, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue) == 0x00007C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000080, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue3) == 0x000088, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue2) == 0x000090, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue3) == 0x000094, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue4) == 0x000098, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue5) == 0x0000A0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue4) == 0x0000A8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue5) == 0x0000AC, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_CreateDynamicMaterialInstance_ReturnValue6) == 0x0000B0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_CreateDynamicMaterialInstance_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Add_ReturnValue6) == 0x0000B8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Add_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_int_Variable) == 0x0000BC, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Add_IntInt_ReturnValue) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_GetSkeletalMeshForPartType_ReturnValue) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_GetSkeletalMeshForPartType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue10) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue10' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_bool_Variable) == 0x0000D1, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue11) == 0x0000D2, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue11' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_bool_Variable2) == 0x0000D3, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_GetSkeletalMeshForPartType_ReturnValue2) == 0x0000D8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_GetSkeletalMeshForPartType_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue12) == 0x0000E0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue13) == 0x0000E1, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue13' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_bool_Variable3) == 0x0000E2, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_GetSkeletalMeshForPartType_ReturnValue3) == 0x0000E8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_GetSkeletalMeshForPartType_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_int_Variable2) == 0x0000F0, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_int_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue14) == 0x0000F4, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue14' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Add_IntInt_ReturnValue2) == 0x0000F8, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_IsValid_ReturnValue15) == 0x0000FC, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_IsValid_ReturnValue15' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue4) == 0x000100, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Min_ReturnValue) == 0x000104, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Min_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, K2Node_Select_Default) == 0x000108, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, Temp_int_Variable3) == 0x00010C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::Temp_int_Variable3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue5) == 0x000110, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue5' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Get_Item) == 0x000118, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Min_ReturnValue2) == 0x000120, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Min_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, K2Node_Select2_Default) == 0x000124, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000128, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Get_Item2) == 0x000130, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Get_Item2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000138, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Add_IntInt_ReturnValue3) == 0x00013C, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_LastIndex_ReturnValue6) == 0x000140, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_LastIndex_ReturnValue6' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Array_Get_Item3) == 0x000148, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Array_Get_Item3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_Min_ReturnValue3) == 0x000150, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_Min_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, K2Node_Select3_Default) == 0x000154, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates, CallFunc_LessEqual_IntInt_ReturnValue3) == 0x000158, "Member 'PlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates::CallFunc_LessEqual_IntInt_ReturnValue3' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnRep_On_Player_Built_Floor
+// 0x00A8 (0x00A8 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor final
+{
+public:
+	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0000(0x00A8)()
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor) == 0x000008, "Wrong alignment on PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor) == 0x0000A8, "Wrong size on PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor, K2Node_MakeStruct_GameplayEventData) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetAdrenalineRushVisibility
+// 0x00F0 (0x00F0 - 0x0000)
+struct PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility final
+{
+public:
+	bool                                          Visible;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable2;                             // 0x0040(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue2;                // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0xC];                                       // 0x0084(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Temp_struct_Variable3;                             // 0x0090(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue3;                // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x00D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D6[0x2];                                       // 0x00D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility) == 0x000010, "Wrong alignment on PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility) == 0x0000F0, "Wrong size on PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Visible) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Visible' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_struct_Variable) == 0x000010, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_struct_Variable2) == 0x000040, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_struct_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_AddComponent_ReturnValue2) == 0x000078, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_AddComponent_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_int_Array_Index_Variable) == 0x000080, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_struct_Variable3) == 0x000090, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_struct_Variable3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_AddComponent_ReturnValue3) == 0x0000C0, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_AddComponent_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_Array_Length_ReturnValue) == 0x0000D0, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_IsValid_ReturnValue) == 0x0000D4, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_IsValid_ReturnValue2) == 0x0000D5, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, Temp_int_Loop_Counter_Variable) == 0x0000D8, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_Less_IntInt_ReturnValue) == 0x0000DC, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility, CallFunc_Add_IntInt_ReturnValue) == 0x0000E0, "Member 'PlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Are the wind and water RTT passes enabled
+// 0x000C (0x000C - 0x0000)
+struct PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled final
+{
+public:
+	bool                                          NewParam;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetScalarParameterValue_ReturnValue;      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled) == 0x000004, "Wrong alignment on PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled) == 0x00000C, "Wrong size on PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled, NewParam) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled::NewParam' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled, CallFunc_GetScalarParameterValue_ReturnValue) == 0x000004, "Member 'PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000008, "Member 'PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Melee_Effect_Color
+// 0x000C (0x000C - 0x0000)
+struct PlayerPawn_Athena_Generic_C_Melee_Effect_Color final
+{
+public:
+	struct FVector                                Melee_Color_Set;                                   // 0x0000(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_Generic_C_Melee_Effect_Color) == 0x000004, "Wrong alignment on PlayerPawn_Athena_Generic_C_Melee_Effect_Color");
+static_assert(sizeof(PlayerPawn_Athena_Generic_C_Melee_Effect_Color) == 0x00000C, "Wrong size on PlayerPawn_Athena_Generic_C_Melee_Effect_Color");
+static_assert(offsetof(PlayerPawn_Athena_Generic_C_Melee_Effect_Color, Melee_Color_Set) == 0x000000, "Member 'PlayerPawn_Athena_Generic_C_Melee_Effect_Color::Melee_Color_Set' has a wrong offset!");
 
 }
 

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabInputOptions.TabInputOptions_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x02D0 - 0x0280)
 class UTabInputOptions_C final : public UFortInputOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          OverlayBorder;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Currently_Selected_Input;                          // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Is_Currently_Primary;                              // 0x0294(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -60,8 +60,8 @@ public:
 		return GetDefaultObjImpl<UTabInputOptions_C>();
 	}
 };
-static_assert(alignof(UTabInputOptions_C) == 0x322CBBB8, "Wrong alignment on UTabInputOptions_C");
-static_assert(sizeof(UTabInputOptions_C) == 0x322CBBB8, "Wrong size on UTabInputOptions_C");
+static_assert(alignof(UTabInputOptions_C) == 0x000008, "Wrong alignment on UTabInputOptions_C");
+static_assert(sizeof(UTabInputOptions_C) == 0x0002D0, "Wrong size on UTabInputOptions_C");
 static_assert(offsetof(UTabInputOptions_C, UberGraphFrame) == 0x000280, "Member 'UTabInputOptions_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTabInputOptions_C, OverlayBorder) == 0x000288, "Member 'UTabInputOptions_C::OverlayBorder' has a wrong offset!");
 static_assert(offsetof(UTabInputOptions_C, Currently_Selected_Input) == 0x000290, "Member 'UTabInputOptions_C::Currently_Selected_Input' has a wrong offset!");

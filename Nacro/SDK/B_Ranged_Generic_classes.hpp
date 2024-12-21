@@ -12,9 +12,9 @@
 
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "En_ShellTypes_01_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
+#include "En_ShellTypes_01_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -22,12 +22,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_Ranged_Generic.B_Ranged_Generic_C
-// 0x0000 (0x11821D80 - 0x11821D80)
-#pragma pack(push, 0x1)
-class alignas(0x11821D80) AB_Ranged_Generic_C : public AFortWeaponRanged
+// 0x0148 (0x0DE8 - 0x0CA0)
+class AB_Ranged_Generic_C final : public AFortWeaponRanged
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0CA0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0CA0(0x0008)(Transient, DuplicateTransient)
 	class UParticleSystemComponent*               Reload_Empty_;                                     // 0x0CA8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UPostProcessComponent*                  SecondDownScopePostProcess;                        // 0x0CB0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Shells_empty_;                                     // 0x0CB8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -60,11 +59,11 @@ public:
 	En_ShellTypes_01                              ShellTypeSelect;                                   // 0x0D50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D51[0x3];                                      // 0x0D51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Shells_Spawn_Rate_Scale;                           // 0x0D54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ShellsRotationRate;                                // 0x0D58(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Shells_Velocity;                                   // 0x0D64(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Shells_Gravity;                                    // 0x0D70(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ShellsRotationRate;                                // 0x0D58(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Shells_Velocity;                                   // 0x0D64(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Shells_Gravity;                                    // 0x0D70(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Shells_Lifetime;                                   // 0x0D7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Shells_Size;                                       // 0x0D80(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Shells_Size;                                       // 0x0D80(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Shells_Time_Dilation;                              // 0x0D8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Target_Scope_Vignette_Blur_Screen_Percentage;      // 0x0D90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Scope_Camera_Offset_Amount;                        // 0x0D94(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -83,7 +82,7 @@ public:
 	class USoundBase*                             Sound_ScopeZoomIn;                                 // 0x0DB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Sound_ScopeZoomOut;                                // 0x0DB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Alteration_Ambient_PS;                             // 0x0DC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  ReticleHUDElementTags;                             // 0x0DC8(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  ReticleHUDElementTags;                             // 0x0DC8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_B_Ranged_Generic(int32 EntryPoint);
@@ -130,9 +129,8 @@ public:
 		return GetDefaultObjImpl<AB_Ranged_Generic_C>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(AB_Ranged_Generic_C) == 0x11821D80, "Wrong alignment on AB_Ranged_Generic_C");
-static_assert(sizeof(AB_Ranged_Generic_C) == 0x11821D80, "Wrong size on AB_Ranged_Generic_C");
+static_assert(alignof(AB_Ranged_Generic_C) == 0x000008, "Wrong alignment on AB_Ranged_Generic_C");
+static_assert(sizeof(AB_Ranged_Generic_C) == 0x000DE8, "Wrong size on AB_Ranged_Generic_C");
 static_assert(offsetof(AB_Ranged_Generic_C, UberGraphFrame) == 0x000CA0, "Member 'AB_Ranged_Generic_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AB_Ranged_Generic_C, Reload_Empty_) == 0x000CA8, "Member 'AB_Ranged_Generic_C::Reload_Empty_' has a wrong offset!");
 static_assert(offsetof(AB_Ranged_Generic_C, SecondDownScopePostProcess) == 0x000CB0, "Member 'AB_Ranged_Generic_C::SecondDownScopePostProcess' has a wrong offset!");

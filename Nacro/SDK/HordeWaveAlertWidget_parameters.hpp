@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.ExecuteUbergraph_HordeWaveAlertWidget
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0280 (0x0280 - 0x0000)
 struct HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget final
 {
 public:
@@ -33,8 +33,8 @@ public:
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0058(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x0070(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0088(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0088(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0108(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0118(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0128(0x0018)()
@@ -45,7 +45,7 @@ public:
 	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortItemInstanceQuantityPair>  K2Node_CustomEvent_Rewards;                        // 0x0180(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TDelegate<void(int32 Wave, TArray<struct FFortItemInstanceQuantityPair>& Rewards)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0190(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x01A0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x01A0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFortItemInstanceQuantityPair>  K2Node_CustomEvent_Items;                          // 0x01E0(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x01F0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0200(0x0018)()
@@ -57,8 +57,8 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate9;             // 0x0268(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget) == 0x11821D80, "Wrong alignment on HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget");
-static_assert(sizeof(HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget) == 0x11821D80, "Wrong size on HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget");
+static_assert(alignof(HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget) == 0x000008, "Wrong alignment on HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget");
+static_assert(sizeof(HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget) == 0x000280, "Wrong size on HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget");
 static_assert(offsetof(HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget, EntryPoint) == 0x000000, "Member 'HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget, K2Node_CustomEvent_LevelText) == 0x000018, "Member 'HordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget::K2Node_CustomEvent_LevelText' has a wrong offset!");
@@ -102,14 +102,14 @@ static_assert(sizeof(HordeWaveAlertWidget_C_OnWaveModifiersAdded) == 0x000010, "
 static_assert(offsetof(HordeWaveAlertWidget_C_OnWaveModifiersAdded, Modifiers) == 0x000000, "Member 'HordeWaveAlertWidget_C_OnWaveModifiersAdded::Modifiers' has a wrong offset!");
 
 // Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnHordeTierInitialized_Event_0
-// 0x0066 (0x0066 - 0x0000)
-struct alignas(0x66) HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0 final
+// 0x0010 (0x0010 - 0x0000)
+struct HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0 final
 {
 public:
 	TArray<struct FFortItemInstanceQuantityPair>  Items;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0) == 0x000066, "Wrong alignment on HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0");
-static_assert(sizeof(HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0) == 0x000066, "Wrong size on HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0");
+static_assert(alignof(HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0) == 0x000008, "Wrong alignment on HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0");
+static_assert(sizeof(HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0) == 0x000010, "Wrong size on HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0");
 static_assert(offsetof(HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0, Items) == 0x000000, "Member 'HordeWaveAlertWidget_C_OnHordeTierInitialized_Event_0::Items' has a wrong offset!");
 
 // Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnWaveCompleted

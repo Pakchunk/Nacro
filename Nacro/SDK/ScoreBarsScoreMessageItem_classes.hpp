@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x02C8 - 0x0280)
 class UScoreBarsScoreMessageItem_C final : public UFortUIMessageItemWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Disappear;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       StackBump;                                         // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Appear;                                            // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UScoreBarsScoreMessageItem_C>();
 	}
 };
-static_assert(alignof(UScoreBarsScoreMessageItem_C) == 0x322CBBB8, "Wrong alignment on UScoreBarsScoreMessageItem_C");
-static_assert(sizeof(UScoreBarsScoreMessageItem_C) == 0x322CBBB8, "Wrong size on UScoreBarsScoreMessageItem_C");
+static_assert(alignof(UScoreBarsScoreMessageItem_C) == 0x000008, "Wrong alignment on UScoreBarsScoreMessageItem_C");
+static_assert(sizeof(UScoreBarsScoreMessageItem_C) == 0x0002C8, "Wrong size on UScoreBarsScoreMessageItem_C");
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, UberGraphFrame) == 0x000280, "Member 'UScoreBarsScoreMessageItem_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, Disappear) == 0x000288, "Member 'UScoreBarsScoreMessageItem_C::Disappear' has a wrong offset!");
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, StackBump) == 0x000290, "Member 'UScoreBarsScoreMessageItem_C::StackBump' has a wrong offset!");

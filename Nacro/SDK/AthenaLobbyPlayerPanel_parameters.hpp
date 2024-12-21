@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.SetTeamMemberInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct AthenaLobbyPlayerPanel_C_SetTeamMemberInfo final
 {
 public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(AthenaLobbyPlayerPanel_C_SetTeamMemberInfo) == 0x11821780, "Wrong alignment on AthenaLobbyPlayerPanel_C_SetTeamMemberInfo");
-static_assert(sizeof(AthenaLobbyPlayerPanel_C_SetTeamMemberInfo) == 0x11821780, "Wrong size on AthenaLobbyPlayerPanel_C_SetTeamMemberInfo");
+static_assert(alignof(AthenaLobbyPlayerPanel_C_SetTeamMemberInfo) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanel_C_SetTeamMemberInfo");
+static_assert(sizeof(AthenaLobbyPlayerPanel_C_SetTeamMemberInfo) == 0x000190, "Wrong size on AthenaLobbyPlayerPanel_C_SetTeamMemberInfo");
 static_assert(offsetof(AthenaLobbyPlayerPanel_C_SetTeamMemberInfo, TeamMemberInfo_0) == 0x000000, "Member 'AthenaLobbyPlayerPanel_C_SetTeamMemberInfo::TeamMemberInfo_0' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.Focus
@@ -56,15 +56,15 @@ static_assert(offsetof(AthenaLobbyPlayerPanel_C_InitializeContextEvents, CallFun
 static_assert(offsetof(AthenaLobbyPlayerPanel_C_InitializeContextEvents, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000018, "Member 'AthenaLobbyPlayerPanel_C_InitializeContextEvents::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnTeamMemberStateChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0198 (0x0198 - 0x0000)
 struct AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0000(0x0190)(Parm)
 	bool                                          CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged) == 0x11821780, "Wrong alignment on AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged");
-static_assert(sizeof(AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged) == 0x11821780, "Wrong size on AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged");
+static_assert(alignof(AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged");
+static_assert(sizeof(AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged) == 0x000198, "Wrong size on AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged");
 static_assert(offsetof(AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged, TeamMemberInfo_0) == 0x000000, "Member 'AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged::TeamMemberInfo_0' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged, CallFunc_AreUniqueIDsIdentical_ReturnValue) == 0x000190, "Member 'AthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged::CallFunc_AreUniqueIDsIdentical_ReturnValue' has a wrong offset!");
 

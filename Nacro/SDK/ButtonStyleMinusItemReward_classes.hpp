@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-ItemReward.ButtonStyle-ItemReward_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusItemReward_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusItemReward_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusItemReward_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusItemReward_C");
-static_assert(sizeof(UButtonStyleMinusItemReward_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusItemReward_C");
+static_assert(alignof(UButtonStyleMinusItemReward_C) == 0x000008, "Wrong alignment on UButtonStyleMinusItemReward_C");
+static_assert(sizeof(UButtonStyleMinusItemReward_C) == 0x000530, "Wrong size on UButtonStyleMinusItemReward_C");
 
 }
 

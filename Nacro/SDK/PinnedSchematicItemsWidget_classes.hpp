@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0280 - 0x0260)
 class UPinnedSchematicItemsWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UPinnedSchematicItemWidget_C*           PinnedSchematicItem0;                              // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPinnedSchematicItemWidget_C*           PinnedSchematicItem1;                              // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBoxPinnedList;                             // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UPinnedSchematicItemsWidget_C>();
 	}
 };
-static_assert(alignof(UPinnedSchematicItemsWidget_C) == 0x322CBBB8, "Wrong alignment on UPinnedSchematicItemsWidget_C");
-static_assert(sizeof(UPinnedSchematicItemsWidget_C) == 0x322CBBB8, "Wrong size on UPinnedSchematicItemsWidget_C");
+static_assert(alignof(UPinnedSchematicItemsWidget_C) == 0x000008, "Wrong alignment on UPinnedSchematicItemsWidget_C");
+static_assert(sizeof(UPinnedSchematicItemsWidget_C) == 0x000280, "Wrong size on UPinnedSchematicItemsWidget_C");
 static_assert(offsetof(UPinnedSchematicItemsWidget_C, UberGraphFrame) == 0x000260, "Member 'UPinnedSchematicItemsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPinnedSchematicItemsWidget_C, PinnedSchematicItem0) == 0x000268, "Member 'UPinnedSchematicItemsWidget_C::PinnedSchematicItem0' has a wrong offset!");
 static_assert(offsetof(UPinnedSchematicItemsWidget_C, PinnedSchematicItem1) == 0x000270, "Member 'UPinnedSchematicItemsWidget_C::PinnedSchematicItem1' has a wrong offset!");

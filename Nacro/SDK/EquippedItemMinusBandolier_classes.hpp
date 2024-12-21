@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass EquippedItem-Bandolier.EquippedItem-Bandolier_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UEquippedItemMinusBandolier_C final : public UCommonUserWidget
 {
 public:
@@ -39,8 +39,8 @@ public:
 		return GetDefaultObjImpl<UEquippedItemMinusBandolier_C>();
 	}
 };
-static_assert(alignof(UEquippedItemMinusBandolier_C) == 0x322CBBB8, "Wrong alignment on UEquippedItemMinusBandolier_C");
-static_assert(sizeof(UEquippedItemMinusBandolier_C) == 0x322CBBB8, "Wrong size on UEquippedItemMinusBandolier_C");
+static_assert(alignof(UEquippedItemMinusBandolier_C) == 0x000008, "Wrong alignment on UEquippedItemMinusBandolier_C");
+static_assert(sizeof(UEquippedItemMinusBandolier_C) == 0x000250, "Wrong size on UEquippedItemMinusBandolier_C");
 static_assert(offsetof(UEquippedItemMinusBandolier_C, _Image__Current) == 0x000238, "Member 'UEquippedItemMinusBandolier_C::_Image__Current' has a wrong offset!");
 static_assert(offsetof(UEquippedItemMinusBandolier_C, _Image__Max) == 0x000240, "Member 'UEquippedItemMinusBandolier_C::_Image__Max' has a wrong offset!");
 static_assert(offsetof(UEquippedItemMinusBandolier_C, MaxDisplayCapacity) == 0x000248, "Member 'UEquippedItemMinusBandolier_C::MaxDisplayCapacity' has a wrong offset!");

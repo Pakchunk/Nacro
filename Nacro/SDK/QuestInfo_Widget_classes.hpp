@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestInfo_Widget.QuestInfo_Widget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0278 - 0x0238)
 class UQuestInfo_Widget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageQuestIcon;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UQuestInfo_BulletList_C*                ObjectiveList;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UQuestInfo_BulletList_C*                RewardList;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UQuestInfo_Widget_C>();
 	}
 };
-static_assert(alignof(UQuestInfo_Widget_C) == 0x322CBBB8, "Wrong alignment on UQuestInfo_Widget_C");
-static_assert(sizeof(UQuestInfo_Widget_C) == 0x322CBBB8, "Wrong size on UQuestInfo_Widget_C");
+static_assert(alignof(UQuestInfo_Widget_C) == 0x000008, "Wrong alignment on UQuestInfo_Widget_C");
+static_assert(sizeof(UQuestInfo_Widget_C) == 0x000278, "Wrong size on UQuestInfo_Widget_C");
 static_assert(offsetof(UQuestInfo_Widget_C, UberGraphFrame) == 0x000238, "Member 'UQuestInfo_Widget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestInfo_Widget_C, ImageQuestIcon) == 0x000240, "Member 'UQuestInfo_Widget_C::ImageQuestIcon' has a wrong offset!");
 static_assert(offsetof(UQuestInfo_Widget_C, ObjectiveList) == 0x000248, "Member 'UQuestInfo_Widget_C::ObjectiveList' has a wrong offset!");

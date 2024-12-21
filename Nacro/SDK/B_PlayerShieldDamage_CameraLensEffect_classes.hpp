@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_PlayerShieldDamage_CameraLensEffect.B_PlayerShieldDamage_CameraLensEffect_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0450 - 0x0450)
 class AB_PlayerShieldDamage_CameraLensEffect_C final : public AB_PlayerHealthDamage_CameraLensEffect_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_B_PlayerShieldDamage_CameraLensEffect_C; // 0x0448(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_B_PlayerShieldDamage_CameraLensEffect_C; // 0x0448(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 		return GetDefaultObjImpl<AB_PlayerShieldDamage_CameraLensEffect_C>();
 	}
 };
-static_assert(alignof(AB_PlayerShieldDamage_CameraLensEffect_C) == 0x11821D80, "Wrong alignment on AB_PlayerShieldDamage_CameraLensEffect_C");
-static_assert(sizeof(AB_PlayerShieldDamage_CameraLensEffect_C) == 0x11821D80, "Wrong size on AB_PlayerShieldDamage_CameraLensEffect_C");
+static_assert(alignof(AB_PlayerShieldDamage_CameraLensEffect_C) == 0x000010, "Wrong alignment on AB_PlayerShieldDamage_CameraLensEffect_C");
+static_assert(sizeof(AB_PlayerShieldDamage_CameraLensEffect_C) == 0x000450, "Wrong size on AB_PlayerShieldDamage_CameraLensEffect_C");
 static_assert(offsetof(AB_PlayerShieldDamage_CameraLensEffect_C, UberGraphFrame_B_PlayerShieldDamage_CameraLensEffect_C) == 0x000448, "Member 'AB_PlayerShieldDamage_CameraLensEffect_C::UberGraphFrame_B_PlayerShieldDamage_CameraLensEffect_C' has a wrong offset!");
 
 }

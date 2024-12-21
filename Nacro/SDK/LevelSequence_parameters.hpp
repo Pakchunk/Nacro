@@ -17,74 +17,74 @@ namespace SDK::Params
 {
 
 // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
-// 0x11828980 (0x11828980 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct LevelSequencePlayer_CreateLevelSequencePlayer final
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULevelSequence*                         LevelSequence;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMovieSceneSequencePlaybackSettings    Settings;                                          // 0x0010(0x11828980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMovieSceneSequencePlaybackSettings    Settings;                                          // 0x0010(0x0028)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class ULevelSequencePlayer*                   ReturnValue;                                       // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSequencePlayer_CreateLevelSequencePlayer) == 0x11828980, "Wrong alignment on LevelSequencePlayer_CreateLevelSequencePlayer");
-static_assert(sizeof(LevelSequencePlayer_CreateLevelSequencePlayer) == 0x11828980, "Wrong size on LevelSequencePlayer_CreateLevelSequencePlayer");
+static_assert(alignof(LevelSequencePlayer_CreateLevelSequencePlayer) == 0x000008, "Wrong alignment on LevelSequencePlayer_CreateLevelSequencePlayer");
+static_assert(sizeof(LevelSequencePlayer_CreateLevelSequencePlayer) == 0x000040, "Wrong size on LevelSequencePlayer_CreateLevelSequencePlayer");
 static_assert(offsetof(LevelSequencePlayer_CreateLevelSequencePlayer, WorldContextObject) == 0x000000, "Member 'LevelSequencePlayer_CreateLevelSequencePlayer::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(LevelSequencePlayer_CreateLevelSequencePlayer, LevelSequence) == 0x000008, "Member 'LevelSequencePlayer_CreateLevelSequencePlayer::LevelSequence' has a wrong offset!");
 static_assert(offsetof(LevelSequencePlayer_CreateLevelSequencePlayer, Settings) == 0x000010, "Member 'LevelSequencePlayer_CreateLevelSequencePlayer::Settings' has a wrong offset!");
 static_assert(offsetof(LevelSequencePlayer_CreateLevelSequencePlayer, ReturnValue) == 0x000038, "Member 'LevelSequencePlayer_CreateLevelSequencePlayer::ReturnValue' has a wrong offset!");
 
 // Function LevelSequence.LevelSequenceActor.AddBinding
-// 0x11828980 (0x11828980 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct LevelSequenceActor_AddBinding final
 {
 public:
-	struct FMovieSceneObjectBindingPtr            Binding;                                           // 0x0000(0x11828980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMovieSceneObjectBindingPtr            Binding;                                           // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class AActor*                                 Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowBindingsFromAsset;                           // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LevelSequenceActor_AddBinding) == 0x11828980, "Wrong alignment on LevelSequenceActor_AddBinding");
-static_assert(sizeof(LevelSequenceActor_AddBinding) == 0x11828980, "Wrong size on LevelSequenceActor_AddBinding");
+static_assert(alignof(LevelSequenceActor_AddBinding) == 0x000008, "Wrong alignment on LevelSequenceActor_AddBinding");
+static_assert(sizeof(LevelSequenceActor_AddBinding) == 0x000020, "Wrong size on LevelSequenceActor_AddBinding");
 static_assert(offsetof(LevelSequenceActor_AddBinding, Binding) == 0x000000, "Member 'LevelSequenceActor_AddBinding::Binding' has a wrong offset!");
 static_assert(offsetof(LevelSequenceActor_AddBinding, Actor) == 0x000010, "Member 'LevelSequenceActor_AddBinding::Actor' has a wrong offset!");
 static_assert(offsetof(LevelSequenceActor_AddBinding, bAllowBindingsFromAsset) == 0x000018, "Member 'LevelSequenceActor_AddBinding::bAllowBindingsFromAsset' has a wrong offset!");
 
 // Function LevelSequence.LevelSequenceActor.RemoveBinding
-// 0x11828980 (0x11828980 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct LevelSequenceActor_RemoveBinding final
 {
 public:
-	struct FMovieSceneObjectBindingPtr            Binding;                                           // 0x0000(0x11828980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMovieSceneObjectBindingPtr            Binding;                                           // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class AActor*                                 Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSequenceActor_RemoveBinding) == 0x11828980, "Wrong alignment on LevelSequenceActor_RemoveBinding");
-static_assert(sizeof(LevelSequenceActor_RemoveBinding) == 0x11828980, "Wrong size on LevelSequenceActor_RemoveBinding");
+static_assert(alignof(LevelSequenceActor_RemoveBinding) == 0x000008, "Wrong alignment on LevelSequenceActor_RemoveBinding");
+static_assert(sizeof(LevelSequenceActor_RemoveBinding) == 0x000018, "Wrong size on LevelSequenceActor_RemoveBinding");
 static_assert(offsetof(LevelSequenceActor_RemoveBinding, Binding) == 0x000000, "Member 'LevelSequenceActor_RemoveBinding::Binding' has a wrong offset!");
 static_assert(offsetof(LevelSequenceActor_RemoveBinding, Actor) == 0x000010, "Member 'LevelSequenceActor_RemoveBinding::Actor' has a wrong offset!");
 
 // Function LevelSequence.LevelSequenceActor.ResetBinding
-// 0x11828980 (0x11828980 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct LevelSequenceActor_ResetBinding final
 {
 public:
-	struct FMovieSceneObjectBindingPtr            Binding;                                           // 0x0000(0x11828980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMovieSceneObjectBindingPtr            Binding;                                           // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSequenceActor_ResetBinding) == 0x11828980, "Wrong alignment on LevelSequenceActor_ResetBinding");
-static_assert(sizeof(LevelSequenceActor_ResetBinding) == 0x11828980, "Wrong size on LevelSequenceActor_ResetBinding");
+static_assert(alignof(LevelSequenceActor_ResetBinding) == 0x000004, "Wrong alignment on LevelSequenceActor_ResetBinding");
+static_assert(sizeof(LevelSequenceActor_ResetBinding) == 0x000010, "Wrong size on LevelSequenceActor_ResetBinding");
 static_assert(offsetof(LevelSequenceActor_ResetBinding, Binding) == 0x000000, "Member 'LevelSequenceActor_ResetBinding::Binding' has a wrong offset!");
 
 // Function LevelSequence.LevelSequenceActor.SetBinding
-// 0x11828980 (0x11828980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct LevelSequenceActor_SetBinding final
 {
 public:
-	struct FMovieSceneObjectBindingPtr            Binding;                                           // 0x0000(0x11828980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMovieSceneObjectBindingPtr            Binding;                                           // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<class AActor*>                         Actors;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bAllowBindingsFromAsset;                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(LevelSequenceActor_SetBinding) == 0x11828980, "Wrong alignment on LevelSequenceActor_SetBinding");
-static_assert(sizeof(LevelSequenceActor_SetBinding) == 0x11828980, "Wrong size on LevelSequenceActor_SetBinding");
+static_assert(alignof(LevelSequenceActor_SetBinding) == 0x000008, "Wrong alignment on LevelSequenceActor_SetBinding");
+static_assert(sizeof(LevelSequenceActor_SetBinding) == 0x000028, "Wrong size on LevelSequenceActor_SetBinding");
 static_assert(offsetof(LevelSequenceActor_SetBinding, Binding) == 0x000000, "Member 'LevelSequenceActor_SetBinding::Binding' has a wrong offset!");
 static_assert(offsetof(LevelSequenceActor_SetBinding, Actors) == 0x000010, "Member 'LevelSequenceActor_SetBinding::Actors' has a wrong offset!");
 static_assert(offsetof(LevelSequenceActor_SetBinding, bAllowBindingsFromAsset) == 0x000020, "Member 'LevelSequenceActor_SetBinding::bAllowBindingsFromAsset' has a wrong offset!");

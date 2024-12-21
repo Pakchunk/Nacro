@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionListItem.BP_FortExpeditionListItem_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0910 - 0x08B8)
 class UBP_FortExpeditionListItem_C final : public UFortExpeditionListItemWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B8(0x0008)(Transient, DuplicateTransient)
 	class UBasicRatingWidget_C*                   BasicRatingWidget;                                 // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_FortExpeditionExpiresWidget_C*      BP_FortExpeditionExpiresWidget;                    // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_FortExpeditionReturnsWidget_C*      BP_FortExpeditionReturnsWidget;                    // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -67,8 +67,8 @@ public:
 		return GetDefaultObjImpl<UBP_FortExpeditionListItem_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionListItem_C) == 0x322CBBB8, "Wrong alignment on UBP_FortExpeditionListItem_C");
-static_assert(sizeof(UBP_FortExpeditionListItem_C) == 0x322CBBB8, "Wrong size on UBP_FortExpeditionListItem_C");
+static_assert(alignof(UBP_FortExpeditionListItem_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionListItem_C");
+static_assert(sizeof(UBP_FortExpeditionListItem_C) == 0x000910, "Wrong size on UBP_FortExpeditionListItem_C");
 static_assert(offsetof(UBP_FortExpeditionListItem_C, UberGraphFrame) == 0x0008B8, "Member 'UBP_FortExpeditionListItem_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionListItem_C, BasicRatingWidget) == 0x0008C0, "Member 'UBP_FortExpeditionListItem_C::BasicRatingWidget' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionListItem_C, BP_FortExpeditionExpiresWidget) == 0x0008C8, "Member 'UBP_FortExpeditionListItem_C::BP_FortExpeditionExpiresWidget' has a wrong offset!");

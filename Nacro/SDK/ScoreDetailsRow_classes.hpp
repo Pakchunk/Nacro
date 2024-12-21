@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ScoreDetailsRow.ScoreDetailsRow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0288 - 0x0238)
 class UScoreDetailsRow_C final : public UCommonUserWidget
 {
 public:
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UScoreDetailsRow_C>();
 	}
 };
-static_assert(alignof(UScoreDetailsRow_C) == 0x322CBBB8, "Wrong alignment on UScoreDetailsRow_C");
-static_assert(sizeof(UScoreDetailsRow_C) == 0x322CBBB8, "Wrong size on UScoreDetailsRow_C");
+static_assert(alignof(UScoreDetailsRow_C) == 0x000008, "Wrong alignment on UScoreDetailsRow_C");
+static_assert(sizeof(UScoreDetailsRow_C) == 0x000288, "Wrong size on UScoreDetailsRow_C");
 static_assert(offsetof(UScoreDetailsRow_C, BuildingScoreText) == 0x000238, "Member 'UScoreDetailsRow_C::BuildingScoreText' has a wrong offset!");
 static_assert(offsetof(UScoreDetailsRow_C, CombatScoreText) == 0x000240, "Member 'UScoreDetailsRow_C::CombatScoreText' has a wrong offset!");
 static_assert(offsetof(UScoreDetailsRow_C, PlayerNameText) == 0x000248, "Member 'UScoreDetailsRow_C::PlayerNameText' has a wrong offset!");

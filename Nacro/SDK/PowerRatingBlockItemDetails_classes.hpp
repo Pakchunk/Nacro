@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UPowerRatingBlockItemDetails_C final : public UCommonUserWidget
 {
 public:
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UPowerRatingBlockItemDetails_C>();
 	}
 };
-static_assert(alignof(UPowerRatingBlockItemDetails_C) == 0x322CBBB8, "Wrong alignment on UPowerRatingBlockItemDetails_C");
-static_assert(sizeof(UPowerRatingBlockItemDetails_C) == 0x322CBBB8, "Wrong size on UPowerRatingBlockItemDetails_C");
+static_assert(alignof(UPowerRatingBlockItemDetails_C) == 0x000008, "Wrong alignment on UPowerRatingBlockItemDetails_C");
+static_assert(sizeof(UPowerRatingBlockItemDetails_C) == 0x000250, "Wrong size on UPowerRatingBlockItemDetails_C");
 static_assert(offsetof(UPowerRatingBlockItemDetails_C, PowerRatingIconImage) == 0x000238, "Member 'UPowerRatingBlockItemDetails_C::PowerRatingIconImage' has a wrong offset!");
 static_assert(offsetof(UPowerRatingBlockItemDetails_C, PowerRatingText) == 0x000240, "Member 'UPowerRatingBlockItemDetails_C::PowerRatingText' has a wrong offset!");
 static_assert(offsetof(UPowerRatingBlockItemDetails_C, IsComparing) == 0x000248, "Member 'UPowerRatingBlockItemDetails_C::IsComparing' has a wrong offset!");

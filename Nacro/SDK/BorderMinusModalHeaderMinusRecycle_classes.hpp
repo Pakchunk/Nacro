@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-ModalHeader-Recycle.Border-ModalHeader-Recycle_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusModalHeaderMinusRecycle_C final : public UBorderMinusModalHeader_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusModalHeaderMinusRecycle_C>();
 	}
 };
-static_assert(alignof(UBorderMinusModalHeaderMinusRecycle_C) == 0x11827900, "Wrong alignment on UBorderMinusModalHeaderMinusRecycle_C");
-static_assert(sizeof(UBorderMinusModalHeaderMinusRecycle_C) == 0x11827900, "Wrong size on UBorderMinusModalHeaderMinusRecycle_C");
+static_assert(alignof(UBorderMinusModalHeaderMinusRecycle_C) == 0x000008, "Wrong alignment on UBorderMinusModalHeaderMinusRecycle_C");
+static_assert(sizeof(UBorderMinusModalHeaderMinusRecycle_C) == 0x0000B8, "Wrong size on UBorderMinusModalHeaderMinusRecycle_C");
 
 }
 

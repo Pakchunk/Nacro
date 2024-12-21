@@ -21,12 +21,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PartyFinder.PartyFinder_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0128 (0x0530 - 0x0408)
 class UPartyFinder_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CloseButton;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      IgnoreButton;                                      // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_1;                                           // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -38,7 +38,7 @@ public:
 	class UCommonTreeView*                        SocialTreeView;                                    // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ViewProfileButton;                                 // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonVisibilityWidget*                ViewProfileVisibility;                             // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            LeaveConfirmationIcon;                             // 0x0470(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            LeaveConfirmationIcon;                             // 0x0470(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   LeaveConfirmationTitle;                            // 0x0500(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   LeaveConfirmationDescription;                      // 0x0518(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
@@ -77,8 +77,8 @@ public:
 		return GetDefaultObjImpl<UPartyFinder_C>();
 	}
 };
-static_assert(alignof(UPartyFinder_C) == 0x322CBBB8, "Wrong alignment on UPartyFinder_C");
-static_assert(sizeof(UPartyFinder_C) == 0x322CBBB8, "Wrong size on UPartyFinder_C");
+static_assert(alignof(UPartyFinder_C) == 0x000008, "Wrong alignment on UPartyFinder_C");
+static_assert(sizeof(UPartyFinder_C) == 0x000530, "Wrong size on UPartyFinder_C");
 static_assert(offsetof(UPartyFinder_C, UberGraphFrame) == 0x000410, "Member 'UPartyFinder_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPartyFinder_C, CloseButton) == 0x000418, "Member 'UPartyFinder_C::CloseButton' has a wrong offset!");
 static_assert(offsetof(UPartyFinder_C, IgnoreButton) == 0x000420, "Member 'UPartyFinder_C::IgnoreButton' has a wrong offset!");

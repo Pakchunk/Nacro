@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionModifierItem.MissionModifierItem_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0278 - 0x0240)
 class UMissionModifierItem_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class USizeBox*                               IconSizeBox;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ModifierIcon;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               WidgetSizeBox;                                     // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UMissionModifierItem_C>();
 	}
 };
-static_assert(alignof(UMissionModifierItem_C) == 0x322CBBB8, "Wrong alignment on UMissionModifierItem_C");
-static_assert(sizeof(UMissionModifierItem_C) == 0x322CBBB8, "Wrong size on UMissionModifierItem_C");
+static_assert(alignof(UMissionModifierItem_C) == 0x000008, "Wrong alignment on UMissionModifierItem_C");
+static_assert(sizeof(UMissionModifierItem_C) == 0x000278, "Wrong size on UMissionModifierItem_C");
 static_assert(offsetof(UMissionModifierItem_C, UberGraphFrame) == 0x000240, "Member 'UMissionModifierItem_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionModifierItem_C, IconSizeBox) == 0x000248, "Member 'UMissionModifierItem_C::IconSizeBox' has a wrong offset!");
 static_assert(offsetof(UMissionModifierItem_C, ModifierIcon) == 0x000250, "Member 'UMissionModifierItem_C::ModifierIcon' has a wrong offset!");

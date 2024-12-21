@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SoulSuckCameraShake.SoulSuckCameraShake_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0160 - 0x0160)
 class USoulSuckCameraShake_C final : public UCameraShake
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USoulSuckCameraShake_C>();
 	}
 };
-static_assert(alignof(USoulSuckCameraShake_C) == 0x11821D80, "Wrong alignment on USoulSuckCameraShake_C");
-static_assert(sizeof(USoulSuckCameraShake_C) == 0x11821D80, "Wrong size on USoulSuckCameraShake_C");
+static_assert(alignof(USoulSuckCameraShake_C) == 0x000008, "Wrong alignment on USoulSuckCameraShake_C");
+static_assert(sizeof(USoulSuckCameraShake_C) == 0x000160, "Wrong size on USoulSuckCameraShake_C");
 
 }
 

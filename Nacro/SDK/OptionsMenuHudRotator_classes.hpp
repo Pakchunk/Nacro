@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OptionsMenuHudRotator.OptionsMenuHudRotator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0290 - 0x0238)
 class UOptionsMenuHudRotator_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       DisplayText;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextRotator_C*                         TextRotator;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         SelectedIndex;                                     // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,7 +31,7 @@ public:
 	class FText                                   HoverText;                                         // 0x0258(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	UMulticastDelegateProperty_                   Selection_Changed;                                 // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UCommonTextBlock*                       Tab_Tooltip_Text;                                  // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Gameplay_Tag;                                      // 0x0288(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Gameplay_Tag;                                      // 0x0288(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void Selection_Changed__DelegateSignature(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag_0);
@@ -51,7 +51,7 @@ public:
 	void OnReleaseToPool();
 	void OnAcquireFromPool();
 	void Update_Row_Selector(int32 Currently_Selected);
-	void Center_on_Widget();
+	void Center_On_Widget();
 	void Update_Options(TArray<class FText>& NewParam);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 
@@ -70,8 +70,8 @@ public:
 		return GetDefaultObjImpl<UOptionsMenuHudRotator_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuHudRotator_C) == 0x322CBBB8, "Wrong alignment on UOptionsMenuHudRotator_C");
-static_assert(sizeof(UOptionsMenuHudRotator_C) == 0x322CBBB8, "Wrong size on UOptionsMenuHudRotator_C");
+static_assert(alignof(UOptionsMenuHudRotator_C) == 0x000008, "Wrong alignment on UOptionsMenuHudRotator_C");
+static_assert(sizeof(UOptionsMenuHudRotator_C) == 0x000290, "Wrong size on UOptionsMenuHudRotator_C");
 static_assert(offsetof(UOptionsMenuHudRotator_C, UberGraphFrame) == 0x000238, "Member 'UOptionsMenuHudRotator_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuHudRotator_C, DisplayText) == 0x000240, "Member 'UOptionsMenuHudRotator_C::DisplayText' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuHudRotator_C, TextRotator) == 0x000248, "Member 'UOptionsMenuHudRotator_C::TextRotator' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DuplicateResOutMesh.DuplicateResOutMesh_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0138 (0x04C0 - 0x0388)
 class ADuplicateResOutMesh_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         CharacterSpawnInTimeline_FirstPassComplete_2AB89084476E64255664E9B2D45E14C1; // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CharacterSpawnInTimeline_LightIntensity_2AB89084476E64255664E9B2D45E14C1; // 0x039C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,7 +38,8 @@ public:
 	float                                         NewVar_0;                                          // 0x03C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C4[0x4];                                      // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInstanceDynamic*>       MIDArray;                                          // 0x03C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FVector                                World_location_for_the_dissolve_location;          // 0x03D8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                World_location_for_the_dissolve_location;          // 0x03D8(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               Current_MID;                                       // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Head_Space;                                        // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Leg_Space;                                         // 0x03F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,7 +49,7 @@ public:
 	float                                         FirstPassComplete;                                 // 0x0408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class USkeletalMeshComponent*>         ExternalSkeletalMeshComponent;                     // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn)
-	struct FTransform                             Box_Local_Transform;                               // 0x0420(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FTransform                             Box_Local_Transform;                               // 0x0420(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         Timeline_Play_Length;                              // 0x0450(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          TeleportOut_;                                      // 0x0454(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_455[0x3];                                      // 0x0455(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -89,8 +90,8 @@ public:
 		return GetDefaultObjImpl<ADuplicateResOutMesh_C>();
 	}
 };
-static_assert(alignof(ADuplicateResOutMesh_C) == 0x11821D80, "Wrong alignment on ADuplicateResOutMesh_C");
-static_assert(sizeof(ADuplicateResOutMesh_C) == 0x11821D80, "Wrong size on ADuplicateResOutMesh_C");
+static_assert(alignof(ADuplicateResOutMesh_C) == 0x000010, "Wrong alignment on ADuplicateResOutMesh_C");
+static_assert(sizeof(ADuplicateResOutMesh_C) == 0x0004C0, "Wrong size on ADuplicateResOutMesh_C");
 static_assert(offsetof(ADuplicateResOutMesh_C, UberGraphFrame) == 0x000388, "Member 'ADuplicateResOutMesh_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ADuplicateResOutMesh_C, DefaultSceneRoot) == 0x000390, "Member 'ADuplicateResOutMesh_C::DefaultSceneRoot' has a wrong offset!");
 static_assert(offsetof(ADuplicateResOutMesh_C, CharacterSpawnInTimeline_FirstPassComplete_2AB89084476E64255664E9B2D45E14C1) == 0x000398, "Member 'ADuplicateResOutMesh_C::CharacterSpawnInTimeline_FirstPassComplete_2AB89084476E64255664E9B2D45E14C1' has a wrong offset!");

@@ -17,31 +17,31 @@ namespace SDK::Params
 {
 
 // Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortConversationSentence              K2Node_Event_FinishingSentence;                    // 0x0008(0x11821780)()
+	struct FFortConversationSentence              K2Node_Event_FinishingSentence;                    // 0x0008(0x00B0)()
 	int32                                         K2Node_Event_FinishingSentenceSentenceIndex;       // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation) == 0x11821780, "Wrong alignment on Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation");
-static_assert(sizeof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation) == 0x11821780, "Wrong size on Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation");
+static_assert(alignof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation) == 0x000008, "Wrong alignment on Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation");
+static_assert(sizeof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation) == 0x0000C0, "Wrong size on Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation");
 static_assert(offsetof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation, EntryPoint) == 0x000000, "Member 'Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation, K2Node_Event_FinishingSentence) == 0x000008, "Member 'Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation::K2Node_Event_FinishingSentence' has a wrong offset!");
 static_assert(offsetof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation, K2Node_Event_FinishingSentenceSentenceIndex) == 0x0000B8, "Member 'Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation::K2Node_Event_FinishingSentenceSentenceIndex' has a wrong offset!");
 
 // Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.OnConversationFinished
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct Announce_Gen_Quest_Conversation_C_OnConversationFinished final
 {
 public:
-	struct FFortConversationSentence              FinishingSentence;                                 // 0x0000(0x11821780)(Parm)
+	struct FFortConversationSentence              FinishingSentence;                                 // 0x0000(0x00B0)(Parm)
 	int32                                         FinishingSentenceSentenceIndex;                    // 0x00B0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_Gen_Quest_Conversation_C_OnConversationFinished) == 0x11821780, "Wrong alignment on Announce_Gen_Quest_Conversation_C_OnConversationFinished");
-static_assert(sizeof(Announce_Gen_Quest_Conversation_C_OnConversationFinished) == 0x11821780, "Wrong size on Announce_Gen_Quest_Conversation_C_OnConversationFinished");
+static_assert(alignof(Announce_Gen_Quest_Conversation_C_OnConversationFinished) == 0x000008, "Wrong alignment on Announce_Gen_Quest_Conversation_C_OnConversationFinished");
+static_assert(sizeof(Announce_Gen_Quest_Conversation_C_OnConversationFinished) == 0x0000B8, "Wrong size on Announce_Gen_Quest_Conversation_C_OnConversationFinished");
 static_assert(offsetof(Announce_Gen_Quest_Conversation_C_OnConversationFinished, FinishingSentence) == 0x000000, "Member 'Announce_Gen_Quest_Conversation_C_OnConversationFinished::FinishingSentence' has a wrong offset!");
 static_assert(offsetof(Announce_Gen_Quest_Conversation_C_OnConversationFinished, FinishingSentenceSentenceIndex) == 0x0000B0, "Member 'Announce_Gen_Quest_Conversation_C_OnConversationFinished::FinishingSentenceSentenceIndex' has a wrong offset!");
 

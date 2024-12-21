@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformResultInfo.ItemTransformResultInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D0 (0x0308 - 0x0238)
 class UItemTransformResultInfo_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonNumericTextBlock*                CurrentSacrificePointsText;                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemTransformRequiredItems_C*          ItemTransformRequiredItems;                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemTransformResultItems_C*            ItemTransformResultItems;                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -75,8 +75,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformResultInfo_C>();
 	}
 };
-static_assert(alignof(UItemTransformResultInfo_C) == 0x322CBBB8, "Wrong alignment on UItemTransformResultInfo_C");
-static_assert(sizeof(UItemTransformResultInfo_C) == 0x322CBBB8, "Wrong size on UItemTransformResultInfo_C");
+static_assert(alignof(UItemTransformResultInfo_C) == 0x000008, "Wrong alignment on UItemTransformResultInfo_C");
+static_assert(sizeof(UItemTransformResultInfo_C) == 0x000308, "Wrong size on UItemTransformResultInfo_C");
 static_assert(offsetof(UItemTransformResultInfo_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformResultInfo_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransformResultInfo_C, CurrentSacrificePointsText) == 0x000240, "Member 'UItemTransformResultInfo_C::CurrentSacrificePointsText' has a wrong offset!");
 static_assert(offsetof(UItemTransformResultInfo_C, ItemTransformRequiredItems) == 0x000248, "Member 'UItemTransformResultInfo_C::ItemTransformRequiredItems' has a wrong offset!");

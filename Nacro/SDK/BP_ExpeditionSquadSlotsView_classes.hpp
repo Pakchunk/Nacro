@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0300 - 0x02C0)
 class UBP_ExpeditionSquadSlotsView_C final : public UFortSquadSlotsView
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(Transient, DuplicateTransient)
 	class USquadSlotGroup_C*                      SubordinatesSquadSlotGroup;                        // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   OnSquadSlotSelected;                               // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bShowHeader;                                       // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UBP_ExpeditionSquadSlotsView_C>();
 	}
 };
-static_assert(alignof(UBP_ExpeditionSquadSlotsView_C) == 0x322CBBB8, "Wrong alignment on UBP_ExpeditionSquadSlotsView_C");
-static_assert(sizeof(UBP_ExpeditionSquadSlotsView_C) == 0x322CBBB8, "Wrong size on UBP_ExpeditionSquadSlotsView_C");
+static_assert(alignof(UBP_ExpeditionSquadSlotsView_C) == 0x000008, "Wrong alignment on UBP_ExpeditionSquadSlotsView_C");
+static_assert(sizeof(UBP_ExpeditionSquadSlotsView_C) == 0x000300, "Wrong size on UBP_ExpeditionSquadSlotsView_C");
 static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, UberGraphFrame) == 0x0002C0, "Member 'UBP_ExpeditionSquadSlotsView_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, SubordinatesSquadSlotGroup) == 0x0002C8, "Member 'UBP_ExpeditionSquadSlotsView_C::SubordinatesSquadSlotGroup' has a wrong offset!");
 static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, OnSquadSlotSelected) == 0x0002D0, "Member 'UBP_ExpeditionSquadSlotsView_C::OnSquadSlotSelected' has a wrong offset!");

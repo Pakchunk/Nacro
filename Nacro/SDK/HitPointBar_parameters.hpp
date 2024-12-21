@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "ProgressBarType_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function HitPointBar.HitPointBar_C.ExecuteUbergraph_HitPointBar
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct HitPointBar_C_ExecuteUbergraph_HitPointBar final
 {
 public:
@@ -46,11 +46,11 @@ public:
 	float                                         CallFunc_GetShield_ReturnValue;                    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetMaxShield_ReturnValue;                 // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0080(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0080(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_ExecuteUbergraph_HitPointBar) == 0x11827900, "Wrong alignment on HitPointBar_C_ExecuteUbergraph_HitPointBar");
-static_assert(sizeof(HitPointBar_C_ExecuteUbergraph_HitPointBar) == 0x11827900, "Wrong size on HitPointBar_C_ExecuteUbergraph_HitPointBar");
+static_assert(alignof(HitPointBar_C_ExecuteUbergraph_HitPointBar) == 0x000008, "Wrong alignment on HitPointBar_C_ExecuteUbergraph_HitPointBar");
+static_assert(sizeof(HitPointBar_C_ExecuteUbergraph_HitPointBar) == 0x0000B8, "Wrong size on HitPointBar_C_ExecuteUbergraph_HitPointBar");
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, EntryPoint) == 0x000000, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_SwitchEnum_CmpSuccess) == 0x000018, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
@@ -73,46 +73,46 @@ static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Event_
 static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Event_InDeltaTime) == 0x0000B4, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_Event_InDeltaTime' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct HitPointBar_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Tick) == 0x11827900, "Wrong alignment on HitPointBar_C_Tick");
-static_assert(sizeof(HitPointBar_C_Tick) == 0x11827900, "Wrong size on HitPointBar_C_Tick");
+static_assert(alignof(HitPointBar_C_Tick) == 0x000004, "Wrong alignment on HitPointBar_C_Tick");
+static_assert(sizeof(HitPointBar_C_Tick) == 0x000038, "Wrong size on HitPointBar_C_Tick");
 static_assert(offsetof(HitPointBar_C_Tick, MyGeometry) == 0x000000, "Member 'HitPointBar_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Tick, InDeltaTime) == 0x000034, "Member 'HitPointBar_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.PreConstruct
-// 0x6F004A (0x6F004A - 0x0000)
-struct alignas(0x6F004A) HitPointBar_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct HitPointBar_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HitPointBar_C_PreConstruct) == 0x6F004A, "Wrong alignment on HitPointBar_C_PreConstruct");
-static_assert(sizeof(HitPointBar_C_PreConstruct) == 0x6F004A, "Wrong size on HitPointBar_C_PreConstruct");
+static_assert(alignof(HitPointBar_C_PreConstruct) == 0x000001, "Wrong alignment on HitPointBar_C_PreConstruct");
+static_assert(sizeof(HitPointBar_C_PreConstruct) == 0x000001, "Wrong size on HitPointBar_C_PreConstruct");
 static_assert(offsetof(HitPointBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HitPointBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.UpdateMaxValue
-// 0x500065 (0x500065 - 0x0000)
-struct alignas(0x500065) HitPointBar_C_UpdateMaxValue final
+// 0x0020 (0x0020 - 0x0000)
+struct HitPointBar_C_UpdateMaxValue final
 {
 public:
 	float                                         Max;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0008(0x0018)()
 };
-static_assert(alignof(HitPointBar_C_UpdateMaxValue) == 0x500065, "Wrong alignment on HitPointBar_C_UpdateMaxValue");
-static_assert(sizeof(HitPointBar_C_UpdateMaxValue) == 0x500065, "Wrong size on HitPointBar_C_UpdateMaxValue");
+static_assert(alignof(HitPointBar_C_UpdateMaxValue) == 0x000008, "Wrong alignment on HitPointBar_C_UpdateMaxValue");
+static_assert(sizeof(HitPointBar_C_UpdateMaxValue) == 0x000020, "Wrong size on HitPointBar_C_UpdateMaxValue");
 static_assert(offsetof(HitPointBar_C_UpdateMaxValue, Max) == 0x000000, "Member 'HitPointBar_C_UpdateMaxValue::Max' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_UpdateMaxValue, CallFunc_Conv_FloatToText_ReturnValue) == 0x000008, "Member 'HitPointBar_C_UpdateMaxValue::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.UpdateCurrentValue
-// 0x0033 (0x0033 - 0x0000)
-struct alignas(0x33) HitPointBar_C_UpdateCurrentValue final
+// 0x0028 (0x0028 - 0x0000)
+struct HitPointBar_C_UpdateCurrentValue final
 {
 public:
 	float                                         Current;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -123,8 +123,8 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0010(0x0018)()
 };
-static_assert(alignof(HitPointBar_C_UpdateCurrentValue) == 0x000033, "Wrong alignment on HitPointBar_C_UpdateCurrentValue");
-static_assert(sizeof(HitPointBar_C_UpdateCurrentValue) == 0x000033, "Wrong size on HitPointBar_C_UpdateCurrentValue");
+static_assert(alignof(HitPointBar_C_UpdateCurrentValue) == 0x000008, "Wrong alignment on HitPointBar_C_UpdateCurrentValue");
+static_assert(sizeof(HitPointBar_C_UpdateCurrentValue) == 0x000028, "Wrong size on HitPointBar_C_UpdateCurrentValue");
 static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, Current) == 0x000000, "Member 'HitPointBar_C_UpdateCurrentValue::Current' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, Reason) == 0x000004, "Member 'HitPointBar_C_UpdateCurrentValue::Reason' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'HitPointBar_C_UpdateCurrentValue::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
@@ -132,7 +132,7 @@ static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, CallFunc_FMax_ReturnVal
 static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, CallFunc_Conv_FloatToText_ReturnValue) == 0x000010, "Member 'HitPointBar_C_UpdateCurrentValue::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Update Fill Bar
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct HitPointBar_C_Update_Fill_Bar final
 {
 public:
@@ -156,10 +156,10 @@ public:
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Update_Fill_Bar) == 0x11821300, "Wrong alignment on HitPointBar_C_Update_Fill_Bar");
-static_assert(sizeof(HitPointBar_C_Update_Fill_Bar) == 0x11821300, "Wrong size on HitPointBar_C_Update_Fill_Bar");
+static_assert(alignof(HitPointBar_C_Update_Fill_Bar) == 0x000008, "Wrong alignment on HitPointBar_C_Update_Fill_Bar");
+static_assert(sizeof(HitPointBar_C_Update_Fill_Bar) == 0x000058, "Wrong size on HitPointBar_C_Update_Fill_Bar");
 static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, Temp_float_Variable) == 0x000000, "Member 'HitPointBar_C_Update_Fill_Bar::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Blueprint_GetSizeX_ReturnValue) == 0x000004, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Blueprint_GetSizeX_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
@@ -191,7 +191,7 @@ static_assert(sizeof(HitPointBar_C_UpdateCurrentValueWithoutReason) == 0x000004,
 static_assert(offsetof(HitPointBar_C_UpdateCurrentValueWithoutReason, Current) == 0x000000, "Member 'HitPointBar_C_UpdateCurrentValueWithoutReason::Current' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Initialize Bar
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01E0 (0x01E0 - 0x0000)
 struct HitPointBar_C_Initialize_Bar final
 {
 public:
@@ -202,35 +202,36 @@ public:
 	class UClass*                                 Temp_class_Variable3;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable2;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0034(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0044(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0024(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0034(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0044(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable3;                               // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable4;                             // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable5;                             // 0x0068(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable6;                             // 0x0078(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable4;                             // 0x0058(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable5;                             // 0x0068(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable6;                             // 0x0078(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable4;                               // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable7;                             // 0x008C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable8;                             // 0x009C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable9;                             // 0x00AC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00BC(0x322CBBB8)(NoDestructor)
+	struct FLinearColor                           Temp_struct_Variable7;                             // 0x008C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable8;                             // 0x009C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable9;                             // 0x00AC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00BC(0x0010)(NoDestructor)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable2;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable3;                             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable5;                               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable10;                            // 0x00F4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable11;                            // 0x0104(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable12;                            // 0x0114(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable10;                            // 0x00F4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable11;                            // 0x0104(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable12;                            // 0x0114(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable6;                               // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable13;                            // 0x0128(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable14;                            // 0x0138(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable13;                            // 0x0128(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable14;                            // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable15;                            // 0x0150(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable15;                            // 0x0150(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable7;                               // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -238,16 +239,16 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Blueprint_GetSizeY_ReturnValue;           // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0180(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0180(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_Select2_Default;                            // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             K2Node_Select3_Default;                            // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select4_Default;                            // 0x01A0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select5_Default;                            // 0x01B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select6_Default;                            // 0x01C0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select7_Default;                            // 0x01D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select4_Default;                            // 0x01A0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select5_Default;                            // 0x01B0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select6_Default;                            // 0x01C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select7_Default;                            // 0x01D0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Initialize_Bar) == 0x322CBBB8, "Wrong alignment on HitPointBar_C_Initialize_Bar");
-static_assert(sizeof(HitPointBar_C_Initialize_Bar) == 0x322CBBB8, "Wrong size on HitPointBar_C_Initialize_Bar");
+static_assert(alignof(HitPointBar_C_Initialize_Bar) == 0x000008, "Wrong alignment on HitPointBar_C_Initialize_Bar");
+static_assert(sizeof(HitPointBar_C_Initialize_Bar) == 0x0001E0, "Wrong size on HitPointBar_C_Initialize_Bar");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable) == 0x000000, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable) == 0x000008, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable2) == 0x000010, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable2' has a wrong offset!");
@@ -306,16 +307,16 @@ static_assert(offsetof(HitPointBar_C_Update_Delta_Bar, CallFunc_FMax_ReturnValue
 static_assert(offsetof(HitPointBar_C_Update_Delta_Bar, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000004, "Member 'HitPointBar_C_Update_Delta_Bar::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Update
-// 0x0068 (0x0068 - 0x0000)
-struct alignas(0x68) HitPointBar_C_Update final
+// 0x0008 (0x0008 - 0x0000)
+struct HitPointBar_C_Update final
 {
 public:
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Update) == 0x000068, "Wrong alignment on HitPointBar_C_Update");
-static_assert(sizeof(HitPointBar_C_Update) == 0x000068, "Wrong size on HitPointBar_C_Update");
+static_assert(alignof(HitPointBar_C_Update) == 0x000004, "Wrong alignment on HitPointBar_C_Update");
+static_assert(sizeof(HitPointBar_C_Update) == 0x000008, "Wrong size on HitPointBar_C_Update");
 static_assert(offsetof(HitPointBar_C_Update, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000000, "Member 'HitPointBar_C_Update::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HitPointBar_C_Update, CallFunc_Lerp_ReturnValue) == 0x000004, "Member 'HitPointBar_C_Update::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 

@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function PurchaseFlow.PurchaseFlowJSBridge.RECEIPT
-// 0x1182FE80 (0x1182FE80 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct PurchaseFlowJSBridge_RECEIPT final
 {
 public:
-	struct FPurchaseFlowReceiptParam              RECEIPT_0;                                         // 0x0000(0x1182FE80)(Parm, NativeAccessSpecifierPublic)
+	struct FPurchaseFlowReceiptParam              RECEIPT_0;                                         // 0x0000(0x0030)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PurchaseFlowJSBridge_RECEIPT) == 0x1182FE80, "Wrong alignment on PurchaseFlowJSBridge_RECEIPT");
-static_assert(sizeof(PurchaseFlowJSBridge_RECEIPT) == 0x1182FE80, "Wrong size on PurchaseFlowJSBridge_RECEIPT");
+static_assert(alignof(PurchaseFlowJSBridge_RECEIPT) == 0x000008, "Wrong alignment on PurchaseFlowJSBridge_RECEIPT");
+static_assert(sizeof(PurchaseFlowJSBridge_RECEIPT) == 0x000030, "Wrong size on PurchaseFlowJSBridge_RECEIPT");
 static_assert(offsetof(PurchaseFlowJSBridge_RECEIPT, RECEIPT_0) == 0x000000, "Member 'PurchaseFlowJSBridge_RECEIPT::RECEIPT_0' has a wrong offset!");
 
 // Function PurchaseFlow.PurchaseFlowJSBridge.RequestClose

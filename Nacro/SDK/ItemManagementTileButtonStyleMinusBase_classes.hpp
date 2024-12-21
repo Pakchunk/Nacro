@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ItemManagementTileButtonStyle-Base.ItemManagementTileButtonStyle-Base_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UItemManagementTileButtonStyleMinusBase_C : public UButtonStyleMinusBase_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementTileButtonStyleMinusBase_C>();
 	}
 };
-static_assert(alignof(UItemManagementTileButtonStyleMinusBase_C) == 0x322CBBB8, "Wrong alignment on UItemManagementTileButtonStyleMinusBase_C");
-static_assert(sizeof(UItemManagementTileButtonStyleMinusBase_C) == 0x322CBBB8, "Wrong size on UItemManagementTileButtonStyleMinusBase_C");
+static_assert(alignof(UItemManagementTileButtonStyleMinusBase_C) == 0x000008, "Wrong alignment on UItemManagementTileButtonStyleMinusBase_C");
+static_assert(sizeof(UItemManagementTileButtonStyleMinusBase_C) == 0x000530, "Wrong size on UItemManagementTileButtonStyleMinusBase_C");
 
 }
 

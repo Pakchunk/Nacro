@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function Announcement_QuestUpdate.Announcement_QuestUpdate_C.ExecuteUbergraph_Announcement_QuestUpdate
-// 0x02C6 (0x02C6 - 0x0000)
-struct alignas(0x2C6) Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate final
+// 0x0038 (0x0038 - 0x0000)
+struct Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -28,8 +28,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_OnReceiveQuestUpdate_Success;             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate) == 0x0002C6, "Wrong alignment on Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate");
-static_assert(sizeof(Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate) == 0x0002C6, "Wrong size on Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate");
+static_assert(alignof(Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate) == 0x000008, "Wrong alignment on Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate");
+static_assert(sizeof(Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate) == 0x000038, "Wrong size on Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate");
 static_assert(offsetof(Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate, EntryPoint) == 0x000000, "Member 'Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate, K2Node_CustomEvent_UpdateWidget) == 0x000008, "Member 'Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate::K2Node_CustomEvent_UpdateWidget' has a wrong offset!");
 static_assert(offsetof(Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Announcement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");

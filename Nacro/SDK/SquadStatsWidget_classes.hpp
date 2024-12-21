@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadStatsWidget.SquadStatsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00F8 (0x0368 - 0x0270)
 class USquadStatsWidget_C final : public UFortSquadStatsWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          BasicStatsBorder;                                  // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderFortitude;                                   // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderOffense;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -84,8 +84,8 @@ public:
 		return GetDefaultObjImpl<USquadStatsWidget_C>();
 	}
 };
-static_assert(alignof(USquadStatsWidget_C) == 0x322CBBB8, "Wrong alignment on USquadStatsWidget_C");
-static_assert(sizeof(USquadStatsWidget_C) == 0x322CBBB8, "Wrong size on USquadStatsWidget_C");
+static_assert(alignof(USquadStatsWidget_C) == 0x000008, "Wrong alignment on USquadStatsWidget_C");
+static_assert(sizeof(USquadStatsWidget_C) == 0x000368, "Wrong size on USquadStatsWidget_C");
 static_assert(offsetof(USquadStatsWidget_C, UberGraphFrame) == 0x000270, "Member 'USquadStatsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USquadStatsWidget_C, BasicStatsBorder) == 0x000278, "Member 'USquadStatsWidget_C::BasicStatsBorder' has a wrong offset!");
 static_assert(offsetof(USquadStatsWidget_C, BorderFortitude) == 0x000280, "Member 'USquadStatsWidget_C::BorderFortitude' has a wrong offset!");

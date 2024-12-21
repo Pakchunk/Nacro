@@ -19,16 +19,16 @@ namespace SDK::Params
 {
 
 // Function AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C.ExecuteUbergraph_AthenaInventoryFortItemTileButton
-// 0x0342 (0x0342 - 0x0000)
-struct alignas(0x342) AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton final
+// 0x0010 (0x0010 - 0x0000)
+struct AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_EquipSlot;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              K2Node_CustomEvent_Item;                           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton) == 0x000342, "Wrong alignment on AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton");
-static_assert(sizeof(AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton) == 0x000342, "Wrong size on AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton");
+static_assert(alignof(AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton) == 0x000008, "Wrong alignment on AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton");
+static_assert(sizeof(AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton) == 0x000010, "Wrong size on AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton, EntryPoint) == 0x000000, "Member 'AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton, K2Node_Event_EquipSlot) == 0x000004, "Member 'AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton::K2Node_Event_EquipSlot' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton, K2Node_CustomEvent_Item) == 0x000008, "Member 'AthenaInventoryFortItemTileButton_C_ExecuteUbergraph_AthenaInventoryFortItemTileButton::K2Node_CustomEvent_Item' has a wrong offset!");
@@ -45,34 +45,35 @@ static_assert(sizeof(AthenaInventoryFortItemTileButton_C_OnInventoryItemSelected
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnInventoryItemSelected_Event_0, Item_0) == 0x000000, "Member 'AthenaInventoryFortItemTileButton_C_OnInventoryItemSelected_Event_0::Item_0' has a wrong offset!");
 
 // Function AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C.HandleEquipSlotChanged
-// 0x008F (0x008F - 0x0000)
-struct alignas(0x8F) AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged final
+// 0x0004 (0x0004 - 0x0000)
+struct AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged final
 {
 public:
 	int32                                         EquipSlot;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged) == 0x00008F, "Wrong alignment on AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged");
-static_assert(sizeof(AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged) == 0x00008F, "Wrong size on AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged");
+static_assert(alignof(AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged) == 0x000004, "Wrong alignment on AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged");
+static_assert(sizeof(AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged) == 0x000004, "Wrong size on AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged, EquipSlot) == 0x000000, "Member 'AthenaInventoryFortItemTileButton_C_HandleEquipSlotChanged::EquipSlot' has a wrong offset!");
 
 // Function AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C.OnDragDetected
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct AthenaInventoryFortItemTileButton_C_OnDragDetected final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaInventoryDragDrop_C*             CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FInputEvent                            CallFunc_GetInputEventFromPointerEvent_ReturnValue; // 0x00C0(0x11827900)()
+	struct FInputEvent                            CallFunc_GetInputEventFromPointerEvent_ReturnValue; // 0x00C0(0x0020)()
 	bool                                          CallFunc_InputEvent_IsShiftDown_ReturnValue;       // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortItemCardSize                             CallFunc_GetCardSize_ReturnValue;                  // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E2[0x6];                                       // 0x00E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaInventoryDragVisual_C*           CallFunc_Create_ReturnValue;                       // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryFortItemTileButton_C_OnDragDetected) == 0x11829280, "Wrong alignment on AthenaInventoryFortItemTileButton_C_OnDragDetected");
-static_assert(sizeof(AthenaInventoryFortItemTileButton_C_OnDragDetected) == 0x11829280, "Wrong size on AthenaInventoryFortItemTileButton_C_OnDragDetected");
+static_assert(alignof(AthenaInventoryFortItemTileButton_C_OnDragDetected) == 0x000008, "Wrong alignment on AthenaInventoryFortItemTileButton_C_OnDragDetected");
+static_assert(sizeof(AthenaInventoryFortItemTileButton_C_OnDragDetected) == 0x0000F8, "Wrong size on AthenaInventoryFortItemTileButton_C_OnDragDetected");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'AthenaInventoryFortItemTileButton_C_OnDragDetected::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'AthenaInventoryFortItemTileButton_C_OnDragDetected::PointerEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnDragDetected, Operation) == 0x0000B0, "Member 'AthenaInventoryFortItemTileButton_C_OnDragDetected::Operation' has a wrong offset!");
@@ -150,23 +151,24 @@ static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidg
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility, K2Node_Select_Default) == 0x00002C, "Member 'AthenaInventoryFortItemTileButton_C_UpdateInteractionWidgetVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C.On_ItemWidgetHolder_MouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x03A0 (0x03A0 - 0x0000)
 struct AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0168(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0168(0x00B8)()
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_DetectDrag_ReturnValue;                   // 0x0228(0x11827900)()
+	struct FEventReply                            CallFunc_DetectDrag_ReturnValue;                   // 0x0228(0x00B8)()
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x02E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2E2[0x6];                                      // 0x02E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue2;                   // 0x02E8(0x11827900)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue2;                   // 0x02E8(0x00B8)()
 };
-static_assert(alignof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown) == 0x11829280, "Wrong alignment on AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown");
-static_assert(sizeof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown) == 0x11829280, "Wrong size on AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown");
+static_assert(alignof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown) == 0x000008, "Wrong alignment on AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown");
+static_assert(sizeof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown) == 0x0003A0, "Wrong size on AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, MyGeometry) == 0x000000, "Member 'AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, MouseEvent) == 0x000038, "Member 'AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, ReturnValue) == 0x0000B0, "Member 'AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::ReturnValue' has a wrong offset!");
@@ -178,29 +180,31 @@ static_assert(offsetof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_M
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, CallFunc_Unhandled_ReturnValue2) == 0x0002E8, "Member 'AthenaInventoryFortItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::CallFunc_Unhandled_ReturnValue2' has a wrong offset!");
 
 // Function AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C.OnFocusReceived
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct AthenaInventoryFortItemTileButton_C_OnFocusReceived final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x11827900)(Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x00F8(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x0008)(Parm, NoDestructor)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x00F8(0x00B8)()
 };
-static_assert(alignof(AthenaInventoryFortItemTileButton_C_OnFocusReceived) == 0x11827900, "Wrong alignment on AthenaInventoryFortItemTileButton_C_OnFocusReceived");
-static_assert(sizeof(AthenaInventoryFortItemTileButton_C_OnFocusReceived) == 0x11827900, "Wrong size on AthenaInventoryFortItemTileButton_C_OnFocusReceived");
+static_assert(alignof(AthenaInventoryFortItemTileButton_C_OnFocusReceived) == 0x000008, "Wrong alignment on AthenaInventoryFortItemTileButton_C_OnFocusReceived");
+static_assert(sizeof(AthenaInventoryFortItemTileButton_C_OnFocusReceived) == 0x0001B0, "Wrong size on AthenaInventoryFortItemTileButton_C_OnFocusReceived");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'AthenaInventoryFortItemTileButton_C_OnFocusReceived::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnFocusReceived, InFocusEvent) == 0x000034, "Member 'AthenaInventoryFortItemTileButton_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'AthenaInventoryFortItemTileButton_C_OnFocusReceived::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnFocusReceived, CallFunc_Unhandled_ReturnValue) == 0x0000F8, "Member 'AthenaInventoryFortItemTileButton_C_OnFocusReceived::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C.OnDrop
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct AthenaInventoryFortItemTileButton_C_OnDrop final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(Parm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(Parm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          ValidDrop;                                         // 0x00B9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -208,8 +212,8 @@ public:
 	class UFortItem*                              K2Node_DynamicCast_AsFort_Item;                    // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryFortItemTileButton_C_OnDrop) == 0x11829280, "Wrong alignment on AthenaInventoryFortItemTileButton_C_OnDrop");
-static_assert(sizeof(AthenaInventoryFortItemTileButton_C_OnDrop) == 0x11829280, "Wrong size on AthenaInventoryFortItemTileButton_C_OnDrop");
+static_assert(alignof(AthenaInventoryFortItemTileButton_C_OnDrop) == 0x000008, "Wrong alignment on AthenaInventoryFortItemTileButton_C_OnDrop");
+static_assert(sizeof(AthenaInventoryFortItemTileButton_C_OnDrop) == 0x0000D0, "Wrong size on AthenaInventoryFortItemTileButton_C_OnDrop");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnDrop, MyGeometry) == 0x000000, "Member 'AthenaInventoryFortItemTileButton_C_OnDrop::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnDrop, PointerEvent) == 0x000038, "Member 'AthenaInventoryFortItemTileButton_C_OnDrop::PointerEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryFortItemTileButton_C_OnDrop, Operation) == 0x0000B0, "Member 'AthenaInventoryFortItemTileButton_C_OnDrop::Operation' has a wrong offset!");

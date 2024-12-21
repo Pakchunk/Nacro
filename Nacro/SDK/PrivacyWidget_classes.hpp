@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PrivacyWidget.PrivacyWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0120 (0x0580 - 0x0460)
 class UPrivacyWidget_C final : public UFortPrivacyBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0460(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0460(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       AllowFriendsOfFriendsText;                         // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      Apply;                                             // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          Border_ReadOnlyMode;                               // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -76,8 +76,8 @@ public:
 		return GetDefaultObjImpl<UPrivacyWidget_C>();
 	}
 };
-static_assert(alignof(UPrivacyWidget_C) == 0x322CBBB8, "Wrong alignment on UPrivacyWidget_C");
-static_assert(sizeof(UPrivacyWidget_C) == 0x322CBBB8, "Wrong size on UPrivacyWidget_C");
+static_assert(alignof(UPrivacyWidget_C) == 0x000008, "Wrong alignment on UPrivacyWidget_C");
+static_assert(sizeof(UPrivacyWidget_C) == 0x000580, "Wrong size on UPrivacyWidget_C");
 static_assert(offsetof(UPrivacyWidget_C, UberGraphFrame) == 0x000460, "Member 'UPrivacyWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPrivacyWidget_C, AllowFriendsOfFriendsText) == 0x000468, "Member 'UPrivacyWidget_C::AllowFriendsOfFriendsText' has a wrong offset!");
 static_assert(offsetof(UPrivacyWidget_C, Apply) == 0x000470, "Member 'UPrivacyWidget_C::Apply' has a wrong offset!");

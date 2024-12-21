@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OutpostScreenCanEditRow.OutpostScreenCanEditRow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0260 - 0x0240)
 class UOutpostScreenCanEditRow_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CanEditButton;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AFortPlayerStateOutpost*                Player;                                            // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerStateOutpost*                OutpostOwner;                                      // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UOutpostScreenCanEditRow_C>();
 	}
 };
-static_assert(alignof(UOutpostScreenCanEditRow_C) == 0x322CBBB8, "Wrong alignment on UOutpostScreenCanEditRow_C");
-static_assert(sizeof(UOutpostScreenCanEditRow_C) == 0x322CBBB8, "Wrong size on UOutpostScreenCanEditRow_C");
+static_assert(alignof(UOutpostScreenCanEditRow_C) == 0x000008, "Wrong alignment on UOutpostScreenCanEditRow_C");
+static_assert(sizeof(UOutpostScreenCanEditRow_C) == 0x000260, "Wrong size on UOutpostScreenCanEditRow_C");
 static_assert(offsetof(UOutpostScreenCanEditRow_C, UberGraphFrame) == 0x000240, "Member 'UOutpostScreenCanEditRow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenCanEditRow_C, CanEditButton) == 0x000248, "Member 'UOutpostScreenCanEditRow_C::CanEditButton' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenCanEditRow_C, Player) == 0x000250, "Member 'UOutpostScreenCanEditRow_C::Player' has a wrong offset!");

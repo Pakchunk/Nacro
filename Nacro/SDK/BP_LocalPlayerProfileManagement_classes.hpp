@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02A8 - 0x0238)
 class UBP_LocalPlayerProfileManagement_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CloseProfileButton;                                // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPlayerBanner_C*                        HomebaseBanner;                                    // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       HomebaseName;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -63,8 +63,8 @@ public:
 		return GetDefaultObjImpl<UBP_LocalPlayerProfileManagement_C>();
 	}
 };
-static_assert(alignof(UBP_LocalPlayerProfileManagement_C) == 0x322CBBB8, "Wrong alignment on UBP_LocalPlayerProfileManagement_C");
-static_assert(sizeof(UBP_LocalPlayerProfileManagement_C) == 0x322CBBB8, "Wrong size on UBP_LocalPlayerProfileManagement_C");
+static_assert(alignof(UBP_LocalPlayerProfileManagement_C) == 0x000008, "Wrong alignment on UBP_LocalPlayerProfileManagement_C");
+static_assert(sizeof(UBP_LocalPlayerProfileManagement_C) == 0x0002A8, "Wrong size on UBP_LocalPlayerProfileManagement_C");
 static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, UberGraphFrame) == 0x000238, "Member 'UBP_LocalPlayerProfileManagement_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, CloseProfileButton) == 0x000240, "Member 'UBP_LocalPlayerProfileManagement_C::CloseProfileButton' has a wrong offset!");
 static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomebaseBanner) == 0x000248, "Member 'UBP_LocalPlayerProfileManagement_C::HomebaseBanner' has a wrong offset!");

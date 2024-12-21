@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "DynamicQuestUpdateInfo_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "DynamicQuestUpdateInfo_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestUpdateEntry.QuestUpdateEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02A8 - 0x0238)
 class UQuestUpdateEntry_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Disappear;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Appear;                                            // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           ObjectivesBox;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,7 +35,7 @@ public:
 	TArray<struct FDynamicQuestUpdateInfo>        QuestUpdates;                                      // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	float                                         UpdateTweenTime;                                   // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PostUpdatesDelay;                                  // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           PostUpdatesDelayTimerHandle;                       // 0x0298(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           PostUpdatesDelayTimerHandle;                       // 0x0298(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bIsAppearAnimationFinished;                        // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bConfigureAsAnnouncement;                          // 0x02A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
@@ -70,8 +70,8 @@ public:
 		return GetDefaultObjImpl<UQuestUpdateEntry_C>();
 	}
 };
-static_assert(alignof(UQuestUpdateEntry_C) == 0x322CBBB8, "Wrong alignment on UQuestUpdateEntry_C");
-static_assert(sizeof(UQuestUpdateEntry_C) == 0x322CBBB8, "Wrong size on UQuestUpdateEntry_C");
+static_assert(alignof(UQuestUpdateEntry_C) == 0x000008, "Wrong alignment on UQuestUpdateEntry_C");
+static_assert(sizeof(UQuestUpdateEntry_C) == 0x0002A8, "Wrong size on UQuestUpdateEntry_C");
 static_assert(offsetof(UQuestUpdateEntry_C, UberGraphFrame) == 0x000238, "Member 'UQuestUpdateEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestUpdateEntry_C, Disappear) == 0x000240, "Member 'UQuestUpdateEntry_C::Disappear' has a wrong offset!");
 static_assert(offsetof(UQuestUpdateEntry_C, Appear) == 0x000248, "Member 'UQuestUpdateEntry_C::Appear' has a wrong offset!");

@@ -141,7 +141,7 @@ static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificeInfo, CallFunc_I
 static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificeInfo, CallFunc_CalculateCurrentSacrificePoints_TotalSacrificePoints) == 0x000014, "Member 'ItemTransformResultInfo_C_UpdateSacrificeInfo::CallFunc_CalculateCurrentSacrificePoints_TotalSacrificePoints' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.CalculateCurrentSacrificePoints
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct ItemTransformResultInfo_C_CalculateCurrentSacrificePoints final
 {
 public:
@@ -158,13 +158,13 @@ public:
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransmogSacrifice                     CallFunc_GetTransmogSacrificeDataFromItemDefintion_OutTransmogData; // 0x0038(0x11821780)()
+	struct FTransmogSacrifice                     CallFunc_GetTransmogSacrificeDataFromItemDefintion_OutTransmogData; // 0x0038(0x0010)()
 	bool                                          CallFunc_GetTransmogSacrificeDataFromItemDefintion_ReturnValue; // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints) == 0x11821780, "Wrong alignment on ItemTransformResultInfo_C_CalculateCurrentSacrificePoints");
-static_assert(sizeof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints) == 0x11821780, "Wrong size on ItemTransformResultInfo_C_CalculateCurrentSacrificePoints");
+static_assert(alignof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_CalculateCurrentSacrificePoints");
+static_assert(sizeof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints) == 0x000050, "Wrong size on ItemTransformResultInfo_C_CalculateCurrentSacrificePoints");
 static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, TotalSacrificePoints) == 0x000000, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::TotalSacrificePoints' has a wrong offset!");
 static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, TotalPoints) == 0x000004, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::TotalPoints' has a wrong offset!");
 static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, Temp_int_Array_Index_Variable) == 0x000008, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -181,8 +181,8 @@ static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints
 static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_Add_IntInt_ReturnValue2) == 0x00004C, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.UpdateTierProgressPercentage
-// 0x017C (0x017C - 0x0000)
-struct ItemTransformResultInfo_C_UpdateTierProgressPercentage final
+// 0x0180 (0x0180 - 0x0000)
+struct alignas(0x08) ItemTransformResultInfo_C_UpdateTierProgressPercentage final
 {
 public:
 	float                                         CalculatedPercent;                                 // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -248,8 +248,8 @@ public:
 	int32                                         CallFunc_GetPointsForTier_Points5;                 // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue2;             // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_UpdateTierProgressPercentage) == 0x000004, "Wrong alignment on ItemTransformResultInfo_C_UpdateTierProgressPercentage");
-static_assert(sizeof(ItemTransformResultInfo_C_UpdateTierProgressPercentage) == 0x00017C, "Wrong size on ItemTransformResultInfo_C_UpdateTierProgressPercentage");
+static_assert(alignof(ItemTransformResultInfo_C_UpdateTierProgressPercentage) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_UpdateTierProgressPercentage");
+static_assert(sizeof(ItemTransformResultInfo_C_UpdateTierProgressPercentage) == 0x000180, "Wrong size on ItemTransformResultInfo_C_UpdateTierProgressPercentage");
 static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CalculatedPercent) == 0x000000, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CalculatedPercent' has a wrong offset!");
 static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, AdjustedNextPoints) == 0x000004, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::AdjustedNextPoints' has a wrong offset!");
 static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, AdjustedCurrentPoints) == 0x000008, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::AdjustedCurrentPoints' has a wrong offset!");

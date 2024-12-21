@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.ExecuteUbergraph_GAB_GenericApplyKnockback
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x05D8 (0x05D8 - 0x0000)
 struct GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback final
 {
 public:
@@ -38,7 +38,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate11;            // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate12;            // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortAbilitySystemComponent*            CallFunc_GetActivatingAbilityComponent_ReturnValue; // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue; // 0x00D0(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue; // 0x00D0(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_DA[0x6];                                       // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -48,7 +48,7 @@ public:
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue;            // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RemoveActiveGameplayEffect_ReturnValue;   // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0104(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0104(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue2;           // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue3;           // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFalling_ReturnValue;                    // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -58,8 +58,8 @@ public:
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue5;           // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue6;           // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAbilityTask_PlayMontageAndWait*        CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue; // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0158(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0164(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0158(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0164(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilityTask_PlayMontageAndWait*        CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue2; // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -71,20 +71,22 @@ public:
 	float                                         CallFunc_BreakVector_Y;                            // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate15;            // 0x0198(0x0010)(ZeroConstructor, NoDestructor)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x01B4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_CustomEvent_Hit2;                           // 0x01C0(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue2;        // 0x0248(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x01B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_CustomEvent_Hit2;                           // 0x01C0(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue2;        // 0x0248(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_SelfActor;                      // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_CustomEvent_OtherActor;                     // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_NormalImpulse;                  // 0x0268(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_CustomEvent_Hit;                            // 0x0278(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromHitResult_ReturnValue; // 0x0300(0x11821C00)()
+	struct FVector                                K2Node_CustomEvent_NormalImpulse;                  // 0x0268(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_CustomEvent_Hit;                            // 0x0278(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromHitResult_ReturnValue; // 0x0300(0x0020)()
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x0328(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue7;                     // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_339[0x3];                                      // 0x0339(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x033C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x033C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x034C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_34D[0x3];                                      // 0x034D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -106,7 +108,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x03D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x03DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3DB[0x1];                                      // 0x03DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue2; // 0x03DC(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue2; // 0x03DC(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x03E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3E5[0x3];                                      // 0x03E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue11;          // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -120,33 +122,37 @@ public:
 	class UFortAbilitySystemComponent*            CallFunc_GetActivatingAbilityComponent_ReturnValue3; // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue10;                    // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_431[0x3];                                      // 0x0431(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue3; // 0x0434(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue3; // 0x0434(0x0008)(NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue12;          // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue3;                 // 0x0449(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x044A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsServer_ReturnValue2;                    // 0x044B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue4; // 0x044C(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue4; // 0x044C(0x0008)(NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_454[0x4];                                      // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue13;          // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate22;            // 0x0460(0x0010)(ZeroConstructor, NoDestructor)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0470(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x047C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue2;                 // 0x0488(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0470(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x047C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue2;                 // 0x0488(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X2;                           // 0x0494(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y2;                           // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z2;                           // 0x049C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x04A0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x04A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AC[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue14;          // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue2;                      // 0x04B8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x04C4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue2;                      // 0x04B8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x04C4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue2;                       // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x04D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4D5[0x3];                                      // 0x04D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x04D8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x04E8(0x11821D80)(NoDestructor)
+	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x04D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E4[0x4];                                      // 0x04E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x04E8(0x0008)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate23;            // 0x04F0(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0500(0x11822200)(ConstParm)
-	struct FVector                                CallFunc_GetImpulseData_ImpulseDirection;          // 0x05A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0500(0x00A8)(ConstParm)
+	struct FVector                                CallFunc_GetImpulseData_ImpulseDirection;          // 0x05A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetImpulseData_KnockbackMagnitude;        // 0x05B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetImpulseData_KnockbackZAngle;           // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue3;                       // 0x05BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -154,10 +160,10 @@ public:
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue2;       // 0x05C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5C5[0x3];                                      // 0x05C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue2;                 // 0x05C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_SelectVector_ReturnValue2;                // 0x05CC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_SelectVector_ReturnValue2;                // 0x05CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback) == 0x11822200, "Wrong alignment on GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback");
-static_assert(sizeof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback) == 0x11822200, "Wrong size on GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback");
+static_assert(alignof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback) == 0x000008, "Wrong alignment on GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback");
+static_assert(sizeof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback) == 0x0005D8, "Wrong size on GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback, EntryPoint) == 0x000000, "Member 'GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -275,42 +281,43 @@ static_assert(offsetof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericA
 static_assert(offsetof(GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback, CallFunc_SelectVector_ReturnValue2) == 0x0005CC, "Member 'GAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback::CallFunc_SelectVector_ReturnValue2' has a wrong offset!");
 
 // Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.K2_ActivateAbilityFromEvent
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent final
 {
 public:
-	struct FGameplayEventData                     EventData;                                         // 0x0000(0x11822200)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent) == 0x11822200, "Wrong alignment on GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent) == 0x11822200, "Wrong size on GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent");
+static_assert(alignof(GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent");
+static_assert(sizeof(GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnHitPawn
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct GAB_GenericApplyKnockback_C_OnHitPawn final
 {
 public:
 	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                NormalImpulse;                                     // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             Hit;                                               // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(GAB_GenericApplyKnockback_C_OnHitPawn) == 0x11821D80, "Wrong alignment on GAB_GenericApplyKnockback_C_OnHitPawn");
-static_assert(sizeof(GAB_GenericApplyKnockback_C_OnHitPawn) == 0x11821D80, "Wrong size on GAB_GenericApplyKnockback_C_OnHitPawn");
+static_assert(alignof(GAB_GenericApplyKnockback_C_OnHitPawn) == 0x000008, "Wrong alignment on GAB_GenericApplyKnockback_C_OnHitPawn");
+static_assert(sizeof(GAB_GenericApplyKnockback_C_OnHitPawn) == 0x0000A8, "Wrong size on GAB_GenericApplyKnockback_C_OnHitPawn");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_OnHitPawn, SelfActor) == 0x000000, "Member 'GAB_GenericApplyKnockback_C_OnHitPawn::SelfActor' has a wrong offset!");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_OnHitPawn, OtherActor) == 0x000008, "Member 'GAB_GenericApplyKnockback_C_OnHitPawn::OtherActor' has a wrong offset!");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_OnHitPawn, NormalImpulse) == 0x000010, "Member 'GAB_GenericApplyKnockback_C_OnHitPawn::NormalImpulse' has a wrong offset!");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_OnHitPawn, Hit) == 0x000020, "Member 'GAB_GenericApplyKnockback_C_OnHitPawn::Hit' has a wrong offset!");
 
 // Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnPawnLanded
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct GAB_GenericApplyKnockback_C_OnPawnLanded final
 {
 public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(GAB_GenericApplyKnockback_C_OnPawnLanded) == 0x11821D80, "Wrong alignment on GAB_GenericApplyKnockback_C_OnPawnLanded");
-static_assert(sizeof(GAB_GenericApplyKnockback_C_OnPawnLanded) == 0x11821D80, "Wrong size on GAB_GenericApplyKnockback_C_OnPawnLanded");
+static_assert(alignof(GAB_GenericApplyKnockback_C_OnPawnLanded) == 0x000008, "Wrong alignment on GAB_GenericApplyKnockback_C_OnPawnLanded");
+static_assert(sizeof(GAB_GenericApplyKnockback_C_OnPawnLanded) == 0x000088, "Wrong size on GAB_GenericApplyKnockback_C_OnPawnLanded");
 static_assert(offsetof(GAB_GenericApplyKnockback_C_OnPawnLanded, Hit) == 0x000000, "Member 'GAB_GenericApplyKnockback_C_OnPawnLanded::Hit' has a wrong offset!");
 
 }

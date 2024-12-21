@@ -62,15 +62,15 @@ static_assert(offsetof(BP_FortExpeditionListItem_C_ExecuteUbergraph_BP_FortExped
 static_assert(offsetof(BP_FortExpeditionListItem_C_ExecuteUbergraph_BP_FortExpeditionListItem, CallFunc_IsValid_ReturnValue3) == 0x00003E, "Member 'BP_FortExpeditionListItem_C_ExecuteUbergraph_BP_FortExpeditionListItem::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
 
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature
-// 0x0A8A (0x0A8A - 0x0000)
-struct alignas(0xA8A) BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature final
+// 0x0010 (0x0010 - 0x0000)
+struct BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature final
 {
 public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature) == 0x000A8A, "Wrong alignment on BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature) == 0x000A8A, "Wrong size on BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature");
+static_assert(alignof(BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature");
+static_assert(sizeof(BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature");
 static_assert(offsetof(BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'BP_FortExpeditionListItem_C_BndEvt__InProgressSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
@@ -88,7 +88,7 @@ static_assert(offsetof(BP_FortExpeditionListItem_C_SetData, InData) == 0x000000,
 static_assert(offsetof(BP_FortExpeditionListItem_C_SetData, OwningList) == 0x000008, "Member 'BP_FortExpeditionListItem_C_SetData::OwningList' has a wrong offset!");
 
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.Setup Base Item Data
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct BP_FortExpeditionListItem_C_Setup_Base_Item_Data final
 {
 public:
@@ -96,14 +96,14 @@ public:
 	class UFortExpeditionItemDefinition*          CallFunc_Get_Expedition_Item_Definition_Item_Def;  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_FromMinutes_ReturnValue;                  // 0x0018(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_FromMinutes_ReturnValue;                  // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetTimespanAsText_ReturnValue;            // 0x0020(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0078(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0088(0x0018)()
 };
-static_assert(alignof(BP_FortExpeditionListItem_C_Setup_Base_Item_Data) == 0x11821D80, "Wrong alignment on BP_FortExpeditionListItem_C_Setup_Base_Item_Data");
-static_assert(sizeof(BP_FortExpeditionListItem_C_Setup_Base_Item_Data) == 0x11821D80, "Wrong size on BP_FortExpeditionListItem_C_Setup_Base_Item_Data");
+static_assert(alignof(BP_FortExpeditionListItem_C_Setup_Base_Item_Data) == 0x000008, "Wrong alignment on BP_FortExpeditionListItem_C_Setup_Base_Item_Data");
+static_assert(sizeof(BP_FortExpeditionListItem_C_Setup_Base_Item_Data) == 0x0000A0, "Wrong size on BP_FortExpeditionListItem_C_Setup_Base_Item_Data");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Setup_Base_Item_Data, Expedition) == 0x000000, "Member 'BP_FortExpeditionListItem_C_Setup_Base_Item_Data::Expedition' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Setup_Base_Item_Data, CallFunc_Get_Expedition_Item_Definition_Item_Def) == 0x000008, "Member 'BP_FortExpeditionListItem_C_Setup_Base_Item_Data::CallFunc_Get_Expedition_Item_Definition_Item_Def' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Setup_Base_Item_Data, CallFunc_Less_FloatFloat_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionListItem_C_Setup_Base_Item_Data::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
@@ -127,8 +127,8 @@ static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Name, Item_0) == 0x000000
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Name, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionListItem_C_Set_Name::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.Get Expedition Item Definition
-// 0x07BA (0x07BA - 0x0000)
-struct alignas(0x7BA) BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition final
+// 0x0028 (0x0028 - 0x0000)
+struct BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition final
 {
 public:
 	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -137,8 +137,8 @@ public:
 	class UFortExpeditionItemDefinition*          K2Node_DynamicCast_AsFort_Expedition_Item_Definition; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition) == 0x0007BA, "Wrong alignment on BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition");
-static_assert(sizeof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition) == 0x0007BA, "Wrong size on BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition");
+static_assert(alignof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition) == 0x000008, "Wrong alignment on BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition");
+static_assert(sizeof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition) == 0x000028, "Wrong size on BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition, Item_0) == 0x000000, "Member 'BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition::Item_0' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition, Item_Def) == 0x000008, "Member 'BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition::Item_Def' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
@@ -146,7 +146,7 @@ static_assert(offsetof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definitio
 static_assert(offsetof(BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_FortExpeditionListItem_C_Get_Expedition_Item_Definition::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.Set Rewards
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct BP_FortExpeditionListItem_C_Set_Rewards final
 {
 public:
@@ -159,7 +159,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0038(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0038(0x0090)()
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -169,8 +169,8 @@ public:
 	class UBP_SimpleItemWidget_C*                 CallFunc_Create_ReturnValue;                       // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortExpeditionListItem_C_Set_Rewards) == 0x11827900, "Wrong alignment on BP_FortExpeditionListItem_C_Set_Rewards");
-static_assert(sizeof(BP_FortExpeditionListItem_C_Set_Rewards) == 0x11827900, "Wrong size on BP_FortExpeditionListItem_C_Set_Rewards");
+static_assert(alignof(BP_FortExpeditionListItem_C_Set_Rewards) == 0x000008, "Wrong alignment on BP_FortExpeditionListItem_C_Set_Rewards");
+static_assert(sizeof(BP_FortExpeditionListItem_C_Set_Rewards) == 0x0000F0, "Wrong size on BP_FortExpeditionListItem_C_Set_Rewards");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Rewards, Item_0) == 0x000000, "Member 'BP_FortExpeditionListItem_C_Set_Rewards::Item_0' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Rewards, Temp_int_Array_Index_Variable) == 0x000008, "Member 'BP_FortExpeditionListItem_C_Set_Rewards::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Rewards, CallFunc_Get_Expedition_Item_Definition_Item_Def) == 0x000010, "Member 'BP_FortExpeditionListItem_C_Set_Rewards::CallFunc_Get_Expedition_Item_Definition_Item_Def' has a wrong offset!");
@@ -202,17 +202,17 @@ static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Rating, CallFunc_GetTarge
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Rating, CallFunc_FTrunc_ReturnValue) == 0x00000C, "Member 'BP_FortExpeditionListItem_C_Set_Rating::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.Set Rarity
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct BP_FortExpeditionListItem_C_Set_Rarity final
 {
 public:
 	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0010(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0010(0x0080)()
 };
-static_assert(alignof(BP_FortExpeditionListItem_C_Set_Rarity) == 0x11821780, "Wrong alignment on BP_FortExpeditionListItem_C_Set_Rarity");
-static_assert(sizeof(BP_FortExpeditionListItem_C_Set_Rarity) == 0x11821780, "Wrong size on BP_FortExpeditionListItem_C_Set_Rarity");
+static_assert(alignof(BP_FortExpeditionListItem_C_Set_Rarity) == 0x000008, "Wrong alignment on BP_FortExpeditionListItem_C_Set_Rarity");
+static_assert(sizeof(BP_FortExpeditionListItem_C_Set_Rarity) == 0x000090, "Wrong size on BP_FortExpeditionListItem_C_Set_Rarity");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Rarity, Item_0) == 0x000000, "Member 'BP_FortExpeditionListItem_C_Set_Rarity::Item_0' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Rarity, CallFunc_GetRarity_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionListItem_C_Set_Rarity::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Rarity, CallFunc_BPGetRarityData_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionListItem_C_Set_Rarity::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
@@ -262,18 +262,18 @@ static_assert(sizeof(BP_FortExpeditionListItem_C_Set_Expedition_Returns_Data) ==
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Expedition_Returns_Data, InputPin) == 0x000000, "Member 'BP_FortExpeditionListItem_C_Set_Expedition_Returns_Data::InputPin' has a wrong offset!");
 
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.Set Vehicle Icon
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x03B8 (0x03B8 - 0x0000)
 struct BP_FortExpeditionListItem_C_Set_Vehicle_Icon final
 {
 public:
 	const class UFortExpeditionItem*              Expedition;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue; // 0x0010(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FFortTagUIData                         CallFunc_GetUIDataForTag_OutData;                  // 0x0018(0x1182E980)()
+	struct FGameplayTag                           CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue; // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FFortTagUIData                         CallFunc_GetUIDataForTag_OutData;                  // 0x0018(0x0398)()
 	bool                                          CallFunc_GetUIDataForTag_ReturnValue;              // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortExpeditionListItem_C_Set_Vehicle_Icon) == 0x1182E980, "Wrong alignment on BP_FortExpeditionListItem_C_Set_Vehicle_Icon");
-static_assert(sizeof(BP_FortExpeditionListItem_C_Set_Vehicle_Icon) == 0x1182E980, "Wrong size on BP_FortExpeditionListItem_C_Set_Vehicle_Icon");
+static_assert(alignof(BP_FortExpeditionListItem_C_Set_Vehicle_Icon) == 0x000008, "Wrong alignment on BP_FortExpeditionListItem_C_Set_Vehicle_Icon");
+static_assert(sizeof(BP_FortExpeditionListItem_C_Set_Vehicle_Icon) == 0x0003B8, "Wrong size on BP_FortExpeditionListItem_C_Set_Vehicle_Icon");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Vehicle_Icon, Expedition) == 0x000000, "Member 'BP_FortExpeditionListItem_C_Set_Vehicle_Icon::Expedition' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Vehicle_Icon, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionListItem_C_Set_Vehicle_Icon::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionListItem_C_Set_Vehicle_Icon, CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionListItem_C_Set_Vehicle_Icon::CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue' has a wrong offset!");

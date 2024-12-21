@@ -17,22 +17,22 @@ namespace SDK::Params
 {
 
 // Function GA_DefaultPlayer_HarvestBuffSwitch.GA_DefaultPlayer_HarvestBuffSwitch_C.ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x01B8 (0x01B8 - 0x0000)
 struct GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0008(0x11822200)(ConstParm)
-	struct FGameplayAbilityActorInfo              CallFunc_GetActorInfo_ReturnValue;                 // 0x00B0(0x11821C00)(ContainsInstancedReference)
+	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0008(0x00A8)(ConstParm)
+	struct FGameplayAbilityActorInfo              CallFunc_GetActorInfo_ReturnValue;                 // 0x00B0(0x0040)(ContainsInstancedReference)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0110(0x11821C00)()
+	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0110(0x0020)()
 	class AFortWeapon*                            K2Node_DynamicCast_AsFort_Weapon;                  // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -43,7 +43,8 @@ public:
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput; // 0x0168(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue2;  // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue; // 0x017C(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue; // 0x017C(0x0008)(NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput; // 0x0188(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue3;  // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -51,8 +52,8 @@ public:
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput; // 0x01A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue4;  // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch) == 0x11822200, "Wrong alignment on GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch");
-static_assert(sizeof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch) == 0x11822200, "Wrong size on GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch");
+static_assert(alignof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch) == 0x000008, "Wrong alignment on GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch");
+static_assert(sizeof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch) == 0x0001B8, "Wrong size on GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch");
 static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, EntryPoint) == 0x000000, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_K2_CommitAbility_ReturnValue) == 0x000004, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, K2Node_Event_EventData) == 0x000008, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::K2Node_Event_EventData' has a wrong offset!");
@@ -77,14 +78,14 @@ static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_
 static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_ReturnValue4) == 0x0001B0, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_ReturnValue4' has a wrong offset!");
 
 // Function GA_DefaultPlayer_HarvestBuffSwitch.GA_DefaultPlayer_HarvestBuffSwitch_C.K2_ActivateAbilityFromEvent
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent final
 {
 public:
-	struct FGameplayEventData                     EventData;                                         // 0x0000(0x11822200)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent) == 0x11822200, "Wrong alignment on GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent) == 0x11822200, "Wrong size on GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent");
+static_assert(alignof(GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent");
+static_assert(sizeof(GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent");
 static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 }

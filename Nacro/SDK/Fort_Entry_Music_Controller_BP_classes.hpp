@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0068 (0x03F0 - 0x0388)
 class AFort_Entry_Music_Controller_BP_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class UAudioComponent*                        MenuMusic_B;                                       // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        MenuMusic_A;                                       // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Hexmap_Music;                                      // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -70,8 +70,8 @@ public:
 		return GetDefaultObjImpl<AFort_Entry_Music_Controller_BP_C>();
 	}
 };
-static_assert(alignof(AFort_Entry_Music_Controller_BP_C) == 0x11821D80, "Wrong alignment on AFort_Entry_Music_Controller_BP_C");
-static_assert(sizeof(AFort_Entry_Music_Controller_BP_C) == 0x11821D80, "Wrong size on AFort_Entry_Music_Controller_BP_C");
+static_assert(alignof(AFort_Entry_Music_Controller_BP_C) == 0x000008, "Wrong alignment on AFort_Entry_Music_Controller_BP_C");
+static_assert(sizeof(AFort_Entry_Music_Controller_BP_C) == 0x0003F0, "Wrong size on AFort_Entry_Music_Controller_BP_C");
 static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, UberGraphFrame) == 0x000388, "Member 'AFort_Entry_Music_Controller_BP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, MenuMusic_B) == 0x000390, "Member 'AFort_Entry_Music_Controller_BP_C::MenuMusic_B' has a wrong offset!");
 static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, MenuMusic_A) == 0x000398, "Member 'AFort_Entry_Music_Controller_BP_C::MenuMusic_A' has a wrong offset!");

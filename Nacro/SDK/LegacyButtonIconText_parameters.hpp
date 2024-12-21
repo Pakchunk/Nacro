@@ -32,19 +32,20 @@ static_assert(sizeof(LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSi
 static_assert(offsetof(LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature, Is_Hovered) == 0x000000, "Member 'LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature::Is_Hovered' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.ExecuteUbergraph_LegacyButtonIconText
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x11827900)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0040(0x11829280)(ConstParm)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00B8(0x11829280)(ConstParm)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0034)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0040(0x0078)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00B8(0x0078)(ConstParm)
 };
-static_assert(alignof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText) == 0x11829280, "Wrong alignment on LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText");
-static_assert(sizeof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText) == 0x11829280, "Wrong size on LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText");
+static_assert(alignof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText");
+static_assert(sizeof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText) == 0x000130, "Wrong size on LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText");
 static_assert(offsetof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText, EntryPoint) == 0x000000, "Member 'LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText::EntryPoint' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText, K2Node_Event_IsDesignTime) == 0x000004, "Member 'LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText, K2Node_Event_MyGeometry) == 0x000008, "Member 'LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText::K2Node_Event_MyGeometry' has a wrong offset!");
@@ -52,26 +53,27 @@ static_assert(offsetof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconT
 static_assert(offsetof(LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText, K2Node_Event_MouseEvent) == 0x0000B8, "Member 'LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText::K2Node_Event_MouseEvent' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.OnMouseLeave
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct LegacyButtonIconText_C_OnMouseLeave final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LegacyButtonIconText_C_OnMouseLeave) == 0x11829280, "Wrong alignment on LegacyButtonIconText_C_OnMouseLeave");
-static_assert(sizeof(LegacyButtonIconText_C_OnMouseLeave) == 0x11829280, "Wrong size on LegacyButtonIconText_C_OnMouseLeave");
+static_assert(alignof(LegacyButtonIconText_C_OnMouseLeave) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_OnMouseLeave");
+static_assert(sizeof(LegacyButtonIconText_C_OnMouseLeave) == 0x000078, "Wrong size on LegacyButtonIconText_C_OnMouseLeave");
 static_assert(offsetof(LegacyButtonIconText_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'LegacyButtonIconText_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.OnMouseEnter
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct LegacyButtonIconText_C_OnMouseEnter final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LegacyButtonIconText_C_OnMouseEnter) == 0x11829280, "Wrong alignment on LegacyButtonIconText_C_OnMouseEnter");
-static_assert(sizeof(LegacyButtonIconText_C_OnMouseEnter) == 0x11829280, "Wrong size on LegacyButtonIconText_C_OnMouseEnter");
+static_assert(alignof(LegacyButtonIconText_C_OnMouseEnter) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_OnMouseEnter");
+static_assert(sizeof(LegacyButtonIconText_C_OnMouseEnter) == 0x0000B0, "Wrong size on LegacyButtonIconText_C_OnMouseEnter");
 static_assert(offsetof(LegacyButtonIconText_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'LegacyButtonIconText_C_OnMouseEnter::MyGeometry' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'LegacyButtonIconText_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
@@ -87,7 +89,7 @@ static_assert(sizeof(LegacyButtonIconText_C_PreConstruct) == 0x000001, "Wrong si
 static_assert(offsetof(LegacyButtonIconText_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LegacyButtonIconText_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.Set Text
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct LegacyButtonIconText_C_Set_Text final
 {
 public:
@@ -99,11 +101,11 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         CallFunc_GetCurrentFont_ReturnValue;               // 0x0020(0x11827900)(ConstParm, HasGetValueTypeHash)
+	struct FSlateFontInfo                         CallFunc_GetCurrentFont_ReturnValue;               // 0x0020(0x0068)(ConstParm, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyButtonIconText_C_Set_Text) == 0x11827900, "Wrong alignment on LegacyButtonIconText_C_Set_Text");
-static_assert(sizeof(LegacyButtonIconText_C_Set_Text) == 0x11827900, "Wrong size on LegacyButtonIconText_C_Set_Text");
+static_assert(alignof(LegacyButtonIconText_C_Set_Text) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_Set_Text");
+static_assert(sizeof(LegacyButtonIconText_C_Set_Text) == 0x000090, "Wrong size on LegacyButtonIconText_C_Set_Text");
 static_assert(offsetof(LegacyButtonIconText_C_Set_Text, InText) == 0x000000, "Member 'LegacyButtonIconText_C_Set_Text::InText' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Set_Text, RefreshPadding) == 0x000018, "Member 'LegacyButtonIconText_C_Set_Text::RefreshPadding' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Set_Text, CallFunc_TextIsEmpty_ReturnValue) == 0x000019, "Member 'LegacyButtonIconText_C_Set_Text::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
@@ -115,11 +117,11 @@ static_assert(offsetof(LegacyButtonIconText_C_Set_Text, CallFunc_GetCurrentFont_
 static_assert(offsetof(LegacyButtonIconText_C_Set_Text, K2Node_Select_Default) == 0x000088, "Member 'LegacyButtonIconText_C_Set_Text::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.Set Icon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct LegacyButtonIconText_C_Set_Icon final
 {
 public:
-	struct FSlateBrush                            InBrush;                                           // 0x0000(0x322CBBB8)(Parm)
+	struct FSlateBrush                            InBrush;                                           // 0x0000(0x0090)(Parm)
 	bool                                          RefreshPadding;                                    // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -127,8 +129,8 @@ public:
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyButtonIconText_C_Set_Icon) == 0x11827900, "Wrong alignment on LegacyButtonIconText_C_Set_Icon");
-static_assert(sizeof(LegacyButtonIconText_C_Set_Icon) == 0x11827900, "Wrong size on LegacyButtonIconText_C_Set_Icon");
+static_assert(alignof(LegacyButtonIconText_C_Set_Icon) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_Set_Icon");
+static_assert(sizeof(LegacyButtonIconText_C_Set_Icon) == 0x000098, "Wrong size on LegacyButtonIconText_C_Set_Icon");
 static_assert(offsetof(LegacyButtonIconText_C_Set_Icon, InBrush) == 0x000000, "Member 'LegacyButtonIconText_C_Set_Icon::InBrush' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Set_Icon, RefreshPadding) == 0x000090, "Member 'LegacyButtonIconText_C_Set_Icon::RefreshPadding' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Set_Icon, Temp_bool_Variable) == 0x000091, "Member 'LegacyButtonIconText_C_Set_Icon::Temp_bool_Variable' has a wrong offset!");
@@ -138,36 +140,38 @@ static_assert(offsetof(LegacyButtonIconText_C_Set_Icon, CallFunc_NotEqual_ByteBy
 static_assert(offsetof(LegacyButtonIconText_C_Set_Icon, K2Node_Select_Default) == 0x000095, "Member 'LegacyButtonIconText_C_Set_Icon::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.Update Padding
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct LegacyButtonIconText_C_Update_Padding final
 {
 public:
-	struct FMargin                                Margin;                                            // 0x0000(0x322CBBB8)(Edit, NoDestructor)
+	struct FMargin                                Margin;                                            // 0x0000(0x0010)(Edit, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0024(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0024(0x0010)(NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USizeBoxSlot*                           K2Node_DynamicCast_AsSize_Box_Slot;                // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x0044(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x0044(0x0010)(NoDestructor)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot2;         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin3;                         // 0x0064(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin3;                         // 0x0064(0x0010)(NoDestructor)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortButtonStyle*                       CallFunc_GetStyle_ReturnValue;                     // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin4;                         // 0x008C(0x322CBBB8)(NoDestructor)
-	struct FMargin                                CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue; // 0x009C(0x322CBBB8)(ConstParm, NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin4;                         // 0x008C(0x0010)(NoDestructor)
+	struct FMargin                                CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue; // 0x009C(0x0010)(ConstParm, NoDestructor)
 };
-static_assert(alignof(LegacyButtonIconText_C_Update_Padding) == 0x322CBBB8, "Wrong alignment on LegacyButtonIconText_C_Update_Padding");
-static_assert(sizeof(LegacyButtonIconText_C_Update_Padding) == 0x322CBBB8, "Wrong size on LegacyButtonIconText_C_Update_Padding");
+static_assert(alignof(LegacyButtonIconText_C_Update_Padding) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_Update_Padding");
+static_assert(sizeof(LegacyButtonIconText_C_Update_Padding) == 0x0000B0, "Wrong size on LegacyButtonIconText_C_Update_Padding");
 static_assert(offsetof(LegacyButtonIconText_C_Update_Padding, Margin) == 0x000000, "Member 'LegacyButtonIconText_C_Update_Padding::Margin' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Update_Padding, Temp_bool_Variable) == 0x000010, "Member 'LegacyButtonIconText_C_Update_Padding::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Update_Padding, Temp_float_Variable) == 0x000014, "Member 'LegacyButtonIconText_C_Update_Padding::Temp_float_Variable' has a wrong offset!");
@@ -188,45 +192,45 @@ static_assert(offsetof(LegacyButtonIconText_C_Update_Padding, K2Node_MakeStruct_
 static_assert(offsetof(LegacyButtonIconText_C_Update_Padding, CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue) == 0x00009C, "Member 'LegacyButtonIconText_C_Update_Padding::CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.Get Secondary Color
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0390 (0x0390 - 0x0000)
 struct LegacyButtonIconText_C_Get_Secondary_Color final
 {
 public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortStateStyle                        CallFunc_GetCurrentStateStyle_ReturnValue;         // 0x0010(0x1182E980)(ConstParm)
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortStateStyle                        CallFunc_GetCurrentStateStyle_ReturnValue;         // 0x0010(0x0380)(ConstParm)
 };
-static_assert(alignof(LegacyButtonIconText_C_Get_Secondary_Color) == 0x1182E980, "Wrong alignment on LegacyButtonIconText_C_Get_Secondary_Color");
-static_assert(sizeof(LegacyButtonIconText_C_Get_Secondary_Color) == 0x1182E980, "Wrong size on LegacyButtonIconText_C_Get_Secondary_Color");
+static_assert(alignof(LegacyButtonIconText_C_Get_Secondary_Color) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_Get_Secondary_Color");
+static_assert(sizeof(LegacyButtonIconText_C_Get_Secondary_Color) == 0x000390, "Wrong size on LegacyButtonIconText_C_Get_Secondary_Color");
 static_assert(offsetof(LegacyButtonIconText_C_Get_Secondary_Color, ReturnValue) == 0x000000, "Member 'LegacyButtonIconText_C_Get_Secondary_Color::ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Get_Secondary_Color, CallFunc_GetCurrentStateStyle_ReturnValue) == 0x000010, "Member 'LegacyButtonIconText_C_Get_Secondary_Color::CallFunc_GetCurrentStateStyle_ReturnValue' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.Get Primary Color
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x03D0 (0x03D0 - 0x0000)
 struct LegacyButtonIconText_C_Get_Primary_Color final
 {
 public:
-	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm)
-	struct FFortStateStyle                        CallFunc_GetCurrentStateStyle_ReturnValue;         // 0x0028(0x1182E980)(ConstParm)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x03A8(0x322CBBB8)()
+	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm)
+	struct FFortStateStyle                        CallFunc_GetCurrentStateStyle_ReturnValue;         // 0x0028(0x0380)(ConstParm)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x03A8(0x0028)()
 };
-static_assert(alignof(LegacyButtonIconText_C_Get_Primary_Color) == 0x322CBBB8, "Wrong alignment on LegacyButtonIconText_C_Get_Primary_Color");
-static_assert(sizeof(LegacyButtonIconText_C_Get_Primary_Color) == 0x322CBBB8, "Wrong size on LegacyButtonIconText_C_Get_Primary_Color");
+static_assert(alignof(LegacyButtonIconText_C_Get_Primary_Color) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_Get_Primary_Color");
+static_assert(sizeof(LegacyButtonIconText_C_Get_Primary_Color) == 0x0003D0, "Wrong size on LegacyButtonIconText_C_Get_Primary_Color");
 static_assert(offsetof(LegacyButtonIconText_C_Get_Primary_Color, ReturnValue) == 0x000000, "Member 'LegacyButtonIconText_C_Get_Primary_Color::ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Get_Primary_Color, CallFunc_GetCurrentStateStyle_ReturnValue) == 0x000028, "Member 'LegacyButtonIconText_C_Get_Primary_Color::CallFunc_GetCurrentStateStyle_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Get_Primary_Color, K2Node_MakeStruct_SlateColor) == 0x0003A8, "Member 'LegacyButtonIconText_C_Get_Primary_Color::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.Update Size Box
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct LegacyButtonIconText_C_Update_Size_Box final
 {
 public:
 	class UFortButtonStyle*                       CallFunc_GetStyle_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0008(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0008(0x0090)(ConstParm)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyButtonIconText_C_Update_Size_Box) == 0x11827900, "Wrong alignment on LegacyButtonIconText_C_Update_Size_Box");
-static_assert(sizeof(LegacyButtonIconText_C_Update_Size_Box) == 0x11827900, "Wrong size on LegacyButtonIconText_C_Update_Size_Box");
+static_assert(alignof(LegacyButtonIconText_C_Update_Size_Box) == 0x000008, "Wrong alignment on LegacyButtonIconText_C_Update_Size_Box");
+static_assert(sizeof(LegacyButtonIconText_C_Update_Size_Box) == 0x0000A0, "Wrong size on LegacyButtonIconText_C_Update_Size_Box");
 static_assert(offsetof(LegacyButtonIconText_C_Update_Size_Box, CallFunc_GetStyle_ReturnValue) == 0x000000, "Member 'LegacyButtonIconText_C_Update_Size_Box::CallFunc_GetStyle_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Update_Size_Box, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x000008, "Member 'LegacyButtonIconText_C_Update_Size_Box::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyButtonIconText_C_Update_Size_Box, CallFunc_BreakVector2D_X) == 0x000098, "Member 'LegacyButtonIconText_C_Update_Size_Box::CallFunc_BreakVector2D_X' has a wrong offset!");

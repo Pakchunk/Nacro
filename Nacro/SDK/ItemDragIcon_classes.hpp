@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemDragIcon.ItemDragIcon_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0258 - 0x0240)
 class UItemDragIcon_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 IconImage;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTexture2D*                             IconTexture;                                       // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UItemDragIcon_C>();
 	}
 };
-static_assert(alignof(UItemDragIcon_C) == 0x322CBBB8, "Wrong alignment on UItemDragIcon_C");
-static_assert(sizeof(UItemDragIcon_C) == 0x322CBBB8, "Wrong size on UItemDragIcon_C");
+static_assert(alignof(UItemDragIcon_C) == 0x000008, "Wrong alignment on UItemDragIcon_C");
+static_assert(sizeof(UItemDragIcon_C) == 0x000258, "Wrong size on UItemDragIcon_C");
 static_assert(offsetof(UItemDragIcon_C, UberGraphFrame) == 0x000240, "Member 'UItemDragIcon_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemDragIcon_C, IconImage) == 0x000248, "Member 'UItemDragIcon_C::IconImage' has a wrong offset!");
 static_assert(offsetof(UItemDragIcon_C, IconTexture) == 0x000250, "Member 'UItemDragIcon_C::IconTexture' has a wrong offset!");

@@ -38,7 +38,7 @@ static_assert(offsetof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggr
 static_assert(offsetof(ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'ResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function ResourceAggregationWidget.ResourceAggregationWidget_C.HandleDamagedResourceObject
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct ResourceAggregationWidget_C_HandleDamagedResourceObject final
 {
 public:
@@ -51,15 +51,15 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              LocalPotentialResource;                            // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABuildingSMActor*                       LocalDamagedResourceObject;                        // 0x0020(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0028(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0028(0x0008)(NoDestructor)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0030(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0098(0x0018)()
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ResourceAggregationWidget_C_HandleDamagedResourceObject) == 0x11821D80, "Wrong alignment on ResourceAggregationWidget_C_HandleDamagedResourceObject");
-static_assert(sizeof(ResourceAggregationWidget_C_HandleDamagedResourceObject) == 0x11821D80, "Wrong size on ResourceAggregationWidget_C_HandleDamagedResourceObject");
+static_assert(alignof(ResourceAggregationWidget_C_HandleDamagedResourceObject) == 0x000008, "Wrong alignment on ResourceAggregationWidget_C_HandleDamagedResourceObject");
+static_assert(sizeof(ResourceAggregationWidget_C_HandleDamagedResourceObject) == 0x0000B8, "Wrong size on ResourceAggregationWidget_C_HandleDamagedResourceObject");
 static_assert(offsetof(ResourceAggregationWidget_C_HandleDamagedResourceObject, DamagedResourceObject) == 0x000000, "Member 'ResourceAggregationWidget_C_HandleDamagedResourceObject::DamagedResourceObject' has a wrong offset!");
 static_assert(offsetof(ResourceAggregationWidget_C_HandleDamagedResourceObject, PotentialResource) == 0x000008, "Member 'ResourceAggregationWidget_C_HandleDamagedResourceObject::PotentialResource' has a wrong offset!");
 static_assert(offsetof(ResourceAggregationWidget_C_HandleDamagedResourceObject, Destroyed) == 0x000010, "Member 'ResourceAggregationWidget_C_HandleDamagedResourceObject::Destroyed' has a wrong offset!");
@@ -76,7 +76,7 @@ static_assert(offsetof(ResourceAggregationWidget_C_HandleDamagedResourceObject, 
 static_assert(offsetof(ResourceAggregationWidget_C_HandleDamagedResourceObject, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0000B0, "Member 'ResourceAggregationWidget_C_HandleDamagedResourceObject::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function ResourceAggregationWidget.ResourceAggregationWidget_C.ResetSourceOfResource
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct ResourceAggregationWidget_C_ResetSourceOfResource final
 {
 public:
@@ -84,10 +84,10 @@ public:
 	class UFortItem*                              InPotentialResource;                               // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0018(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0018(0x0090)()
 };
-static_assert(alignof(ResourceAggregationWidget_C_ResetSourceOfResource) == 0x11827900, "Wrong alignment on ResourceAggregationWidget_C_ResetSourceOfResource");
-static_assert(sizeof(ResourceAggregationWidget_C_ResetSourceOfResource) == 0x11827900, "Wrong size on ResourceAggregationWidget_C_ResetSourceOfResource");
+static_assert(alignof(ResourceAggregationWidget_C_ResetSourceOfResource) == 0x000008, "Wrong alignment on ResourceAggregationWidget_C_ResetSourceOfResource");
+static_assert(sizeof(ResourceAggregationWidget_C_ResetSourceOfResource) == 0x0000A8, "Wrong size on ResourceAggregationWidget_C_ResetSourceOfResource");
 static_assert(offsetof(ResourceAggregationWidget_C_ResetSourceOfResource, InResourceObject) == 0x000000, "Member 'ResourceAggregationWidget_C_ResetSourceOfResource::InResourceObject' has a wrong offset!");
 static_assert(offsetof(ResourceAggregationWidget_C_ResetSourceOfResource, InPotentialResource) == 0x000008, "Member 'ResourceAggregationWidget_C_ResetSourceOfResource::InPotentialResource' has a wrong offset!");
 static_assert(offsetof(ResourceAggregationWidget_C_ResetSourceOfResource, CallFunc_GetNumInStack_ReturnValue) == 0x000010, "Member 'ResourceAggregationWidget_C_ResetSourceOfResource::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");

@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FriendCodeConsole.FriendCodeConsole_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x08D8 - 0x08A0)
 class UFriendCodeConsole_C final : public UFriendCodeEntryBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
 	class UEditableTextBox*                       CodeDetailsText;                                   // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       CodeDisplayText;                                   // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFriendCode                            FriendCode;                                        // 0x08B8(0x11827900)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFriendCode                            FriendCode;                                        // 0x08B8(0x0020)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_FriendCodeConsole(int32 EntryPoint);
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UFriendCodeConsole_C>();
 	}
 };
-static_assert(alignof(UFriendCodeConsole_C) == 0x322CBBB8, "Wrong alignment on UFriendCodeConsole_C");
-static_assert(sizeof(UFriendCodeConsole_C) == 0x322CBBB8, "Wrong size on UFriendCodeConsole_C");
+static_assert(alignof(UFriendCodeConsole_C) == 0x000008, "Wrong alignment on UFriendCodeConsole_C");
+static_assert(sizeof(UFriendCodeConsole_C) == 0x0008D8, "Wrong size on UFriendCodeConsole_C");
 static_assert(offsetof(UFriendCodeConsole_C, UberGraphFrame) == 0x0008A0, "Member 'UFriendCodeConsole_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFriendCodeConsole_C, CodeDetailsText) == 0x0008A8, "Member 'UFriendCodeConsole_C::CodeDetailsText' has a wrong offset!");
 static_assert(offsetof(UFriendCodeConsole_C, CodeDisplayText) == 0x0008B0, "Member 'UFriendCodeConsole_C::CodeDisplayText' has a wrong offset!");

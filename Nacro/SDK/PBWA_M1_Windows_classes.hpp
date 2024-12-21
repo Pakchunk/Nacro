@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_M1_Windows.PBWA_M1_Windows_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0000 (0x10B0 - 0x10B0)
 class APBWA_M1_Windows_C final : public ABuildingWall
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<APBWA_M1_Windows_C>();
 	}
 };
-static_assert(alignof(APBWA_M1_Windows_C) == 0x1182A000, "Wrong alignment on APBWA_M1_Windows_C");
-static_assert(sizeof(APBWA_M1_Windows_C) == 0x1182A000, "Wrong size on APBWA_M1_Windows_C");
+static_assert(alignof(APBWA_M1_Windows_C) == 0x000010, "Wrong alignment on APBWA_M1_Windows_C");
+static_assert(sizeof(APBWA_M1_Windows_C) == 0x0010B0, "Wrong size on APBWA_M1_Windows_C");
 
 }
 

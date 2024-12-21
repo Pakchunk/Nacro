@@ -20,8 +20,8 @@ namespace SDK::Params
 {
 
 // Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.PopulateRewards
-// 0x270A (0x270A - 0x0000)
-struct alignas(0x270A) RewardsChoiceButtonWidget_C_PopulateRewards final
+// 0x0030 (0x0030 - 0x0000)
+struct RewardsChoiceButtonWidget_C_PopulateRewards final
 {
 public:
 	class URewardsWidget_C*                       Owner_0;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -30,29 +30,30 @@ public:
 	TArray<struct FFortItemInstanceQuantityPair>  Rewards;                                           // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FFortItemInstanceQuantityPair>  EmptyArray;                                        // 0x0020(0x0010)(Edit, ZeroConstructor)
 };
-static_assert(alignof(RewardsChoiceButtonWidget_C_PopulateRewards) == 0x00270A, "Wrong alignment on RewardsChoiceButtonWidget_C_PopulateRewards");
-static_assert(sizeof(RewardsChoiceButtonWidget_C_PopulateRewards) == 0x00270A, "Wrong size on RewardsChoiceButtonWidget_C_PopulateRewards");
+static_assert(alignof(RewardsChoiceButtonWidget_C_PopulateRewards) == 0x000008, "Wrong alignment on RewardsChoiceButtonWidget_C_PopulateRewards");
+static_assert(sizeof(RewardsChoiceButtonWidget_C_PopulateRewards) == 0x000030, "Wrong size on RewardsChoiceButtonWidget_C_PopulateRewards");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_PopulateRewards, Owner_0) == 0x000000, "Member 'RewardsChoiceButtonWidget_C_PopulateRewards::Owner_0' has a wrong offset!");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_PopulateRewards, RewardIndex_0) == 0x000008, "Member 'RewardsChoiceButtonWidget_C_PopulateRewards::RewardIndex_0' has a wrong offset!");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_PopulateRewards, Rewards) == 0x000010, "Member 'RewardsChoiceButtonWidget_C_PopulateRewards::Rewards' has a wrong offset!");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_PopulateRewards, EmptyArray) == 0x000020, "Member 'RewardsChoiceButtonWidget_C_PopulateRewards::EmptyArray' has a wrong offset!");
 
 // Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.OnPreviewMouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x02E0 (0x02E0 - 0x0000)
 struct RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0168(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0168(0x00B8)()
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_222[0x6];                                      // 0x0222(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0228(0x11827900)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0228(0x00B8)()
 };
-static_assert(alignof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown) == 0x11829280, "Wrong alignment on RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown");
-static_assert(sizeof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown) == 0x11829280, "Wrong size on RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown");
+static_assert(alignof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown) == 0x000008, "Wrong alignment on RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown");
+static_assert(sizeof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown) == 0x0002E0, "Wrong size on RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown, MyGeometry) == 0x000000, "Member 'RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown, MouseEvent) == 0x000038, "Member 'RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown::ReturnValue' has a wrong offset!");
@@ -62,17 +63,17 @@ static_assert(offsetof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown, Cal
 static_assert(offsetof(RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000228, "Member 'RewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.SetHighlight
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0024 (0x0024 - 0x0000)
 struct RewardsChoiceButtonWidget_C_SetHighlight final
 {
 public:
 	bool                                          EnableHighlight;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0004(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x0014(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsChoiceButtonWidget_C_SetHighlight) == 0x11821300, "Wrong alignment on RewardsChoiceButtonWidget_C_SetHighlight");
-static_assert(sizeof(RewardsChoiceButtonWidget_C_SetHighlight) == 0x11821300, "Wrong size on RewardsChoiceButtonWidget_C_SetHighlight");
+static_assert(alignof(RewardsChoiceButtonWidget_C_SetHighlight) == 0x000004, "Wrong alignment on RewardsChoiceButtonWidget_C_SetHighlight");
+static_assert(sizeof(RewardsChoiceButtonWidget_C_SetHighlight) == 0x000024, "Wrong size on RewardsChoiceButtonWidget_C_SetHighlight");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_SetHighlight, EnableHighlight) == 0x000000, "Member 'RewardsChoiceButtonWidget_C_SetHighlight::EnableHighlight' has a wrong offset!");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_SetHighlight, K2Node_MakeStruct_LinearColor) == 0x000004, "Member 'RewardsChoiceButtonWidget_C_SetHighlight::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(RewardsChoiceButtonWidget_C_SetHighlight, K2Node_MakeStruct_LinearColor2) == 0x000014, "Member 'RewardsChoiceButtonWidget_C_SetHighlight::K2Node_MakeStruct_LinearColor2' has a wrong offset!");

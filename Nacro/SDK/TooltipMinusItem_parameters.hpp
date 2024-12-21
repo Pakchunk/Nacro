@@ -30,34 +30,34 @@ static_assert(sizeof(TooltipMinusItem_C_ExecuteUbergraph_TooltipMinusItem) == 0x
 static_assert(offsetof(TooltipMinusItem_C_ExecuteUbergraph_TooltipMinusItem, EntryPoint) == 0x000000, "Member 'TooltipMinusItem_C_ExecuteUbergraph_TooltipMinusItem::EntryPoint' has a wrong offset!");
 
 // Function Tooltip-Item.Tooltip-Item_C.Get Icon Brush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct TooltipMinusItem_C_Get_Icon_Brush final
 {
 public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm)
-	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x322CBBB8)()
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm)
+	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x0090)()
 };
-static_assert(alignof(TooltipMinusItem_C_Get_Icon_Brush) == 0x11827900, "Wrong alignment on TooltipMinusItem_C_Get_Icon_Brush");
-static_assert(sizeof(TooltipMinusItem_C_Get_Icon_Brush) == 0x11827900, "Wrong size on TooltipMinusItem_C_Get_Icon_Brush");
+static_assert(alignof(TooltipMinusItem_C_Get_Icon_Brush) == 0x000008, "Wrong alignment on TooltipMinusItem_C_Get_Icon_Brush");
+static_assert(sizeof(TooltipMinusItem_C_Get_Icon_Brush) == 0x000120, "Wrong size on TooltipMinusItem_C_Get_Icon_Brush");
 static_assert(offsetof(TooltipMinusItem_C_Get_Icon_Brush, ReturnValue) == 0x000000, "Member 'TooltipMinusItem_C_Get_Icon_Brush::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TooltipMinusItem_C_Get_Icon_Brush, CallFunc_MakeBrushFromAsset_ReturnValue) == 0x000090, "Member 'TooltipMinusItem_C_Get_Icon_Brush::CallFunc_MakeBrushFromAsset_ReturnValue' has a wrong offset!");
 
 // Function Tooltip-Item.Tooltip-Item_C.Get Theme Color [Normal]
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct TooltipMinusItem_C_Get_Theme_Color__Normal_ final
 {
 public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipMinusItem_C_Get_Theme_Color__Normal_) == 0x11821300, "Wrong alignment on TooltipMinusItem_C_Get_Theme_Color__Normal_");
-static_assert(sizeof(TooltipMinusItem_C_Get_Theme_Color__Normal_) == 0x11821300, "Wrong size on TooltipMinusItem_C_Get_Theme_Color__Normal_");
+static_assert(alignof(TooltipMinusItem_C_Get_Theme_Color__Normal_) == 0x000004, "Wrong alignment on TooltipMinusItem_C_Get_Theme_Color__Normal_");
+static_assert(sizeof(TooltipMinusItem_C_Get_Theme_Color__Normal_) == 0x000020, "Wrong size on TooltipMinusItem_C_Get_Theme_Color__Normal_");
 static_assert(offsetof(TooltipMinusItem_C_Get_Theme_Color__Normal_, ReturnValue) == 0x000000, "Member 'TooltipMinusItem_C_Get_Theme_Color__Normal_::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TooltipMinusItem_C_Get_Theme_Color__Normal_, CallFunc_Get_Theme_Color_Theme_Color) == 0x000010, "Member 'TooltipMinusItem_C_Get_Theme_Color__Normal_::CallFunc_Get_Theme_Color_Theme_Color' has a wrong offset!");
 
 // Function Tooltip-Item.Tooltip-Item_C.Get Tooltip Header Visibility
-// 0x041F (0x041F - 0x0000)
-struct alignas(0x41F) TooltipMinusItem_C_Get_Tooltip_Header_Visibility final
+// 0x000A (0x000A - 0x0000)
+struct TooltipMinusItem_C_Get_Tooltip_Header_Visibility final
 {
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
@@ -71,8 +71,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TooltipMinusItem_C_Get_Tooltip_Header_Visibility) == 0x00041F, "Wrong alignment on TooltipMinusItem_C_Get_Tooltip_Header_Visibility");
-static_assert(sizeof(TooltipMinusItem_C_Get_Tooltip_Header_Visibility) == 0x00041F, "Wrong size on TooltipMinusItem_C_Get_Tooltip_Header_Visibility");
+static_assert(alignof(TooltipMinusItem_C_Get_Tooltip_Header_Visibility) == 0x000001, "Wrong alignment on TooltipMinusItem_C_Get_Tooltip_Header_Visibility");
+static_assert(sizeof(TooltipMinusItem_C_Get_Tooltip_Header_Visibility) == 0x00000A, "Wrong size on TooltipMinusItem_C_Get_Tooltip_Header_Visibility");
 static_assert(offsetof(TooltipMinusItem_C_Get_Tooltip_Header_Visibility, ReturnValue) == 0x000000, "Member 'TooltipMinusItem_C_Get_Tooltip_Header_Visibility::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TooltipMinusItem_C_Get_Tooltip_Header_Visibility, Temp_byte_Variable) == 0x000001, "Member 'TooltipMinusItem_C_Get_Tooltip_Header_Visibility::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(TooltipMinusItem_C_Get_Tooltip_Header_Visibility, Temp_byte_Variable2) == 0x000002, "Member 'TooltipMinusItem_C_Get_Tooltip_Header_Visibility::Temp_byte_Variable2' has a wrong offset!");

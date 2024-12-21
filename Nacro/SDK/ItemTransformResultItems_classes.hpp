@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformResultItems.ItemTransformResultItems_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A0 (0x02D8 - 0x0238)
 class UItemTransformResultItems_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           ResultsList;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  ResultsSwitcher;                                   // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemIcon*                          RewardHeroXPIcon;                                  // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,7 +42,7 @@ public:
 	class UHorizontalBox*                         RewardWorkerXPInfo;                                // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                RewardWorkerXPQuantity;                            // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       RewardWorkerXPText;                                // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FLinearColor                           TextColor;                                         // 0x02C8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           TextColor;                                         // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_ItemTransformResultItems(int32 EntryPoint);
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformResultItems_C>();
 	}
 };
-static_assert(alignof(UItemTransformResultItems_C) == 0x322CBBB8, "Wrong alignment on UItemTransformResultItems_C");
-static_assert(sizeof(UItemTransformResultItems_C) == 0x322CBBB8, "Wrong size on UItemTransformResultItems_C");
+static_assert(alignof(UItemTransformResultItems_C) == 0x000008, "Wrong alignment on UItemTransformResultItems_C");
+static_assert(sizeof(UItemTransformResultItems_C) == 0x0002D8, "Wrong size on UItemTransformResultItems_C");
 static_assert(offsetof(UItemTransformResultItems_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformResultItems_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransformResultItems_C, ResultsList) == 0x000240, "Member 'UItemTransformResultItems_C::ResultsList' has a wrong offset!");
 static_assert(offsetof(UItemTransformResultItems_C, ResultsSwitcher) == 0x000248, "Member 'UItemTransformResultItems_C::ResultsSwitcher' has a wrong offset!");

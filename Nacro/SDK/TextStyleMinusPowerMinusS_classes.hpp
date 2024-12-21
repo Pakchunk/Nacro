@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Power-S.TextStyle-Power-S_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-class UTextStyleMinusPowerMinusS_C final : public UTextStyleMinusPageTitle_C
+// 0x0000 (0x00D0 - 0x00D0)
+class UTextStyleMinusPowerMinusS_C : public UTextStyleMinusPageTitle_C
 {
 public:
 	static class UClass* StaticClass()
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusPowerMinusS_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusPowerMinusS_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusPowerMinusS_C");
-static_assert(sizeof(UTextStyleMinusPowerMinusS_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusPowerMinusS_C");
+static_assert(alignof(UTextStyleMinusPowerMinusS_C) == 0x000008, "Wrong alignment on UTextStyleMinusPowerMinusS_C");
+static_assert(sizeof(UTextStyleMinusPowerMinusS_C) == 0x0000D0, "Wrong size on UTextStyleMinusPowerMinusS_C");
 
 }
 

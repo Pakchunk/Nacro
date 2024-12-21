@@ -46,8 +46,8 @@ static_assert(sizeof(QuestObjectiveEntry_C_SetData) == 0x000008, "Wrong size on 
 static_assert(offsetof(QuestObjectiveEntry_C_SetData, InData) == 0x000000, "Member 'QuestObjectiveEntry_C_SetData::InData' has a wrong offset!");
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.UpdateProgress
-// 0x730073 (0x730073 - 0x0000)
-struct alignas(0x730073) QuestObjectiveEntry_C_UpdateProgress final
+// 0x0018 (0x0018 - 0x0000)
+struct QuestObjectiveEntry_C_UpdateProgress final
 {
 public:
 	class UFortQuestObjectiveInfo*                Objective;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -58,8 +58,8 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestObjectiveEntry_C_UpdateProgress) == 0x730073, "Wrong alignment on QuestObjectiveEntry_C_UpdateProgress");
-static_assert(sizeof(QuestObjectiveEntry_C_UpdateProgress) == 0x730073, "Wrong size on QuestObjectiveEntry_C_UpdateProgress");
+static_assert(alignof(QuestObjectiveEntry_C_UpdateProgress) == 0x000008, "Wrong alignment on QuestObjectiveEntry_C_UpdateProgress");
+static_assert(sizeof(QuestObjectiveEntry_C_UpdateProgress) == 0x000018, "Wrong size on QuestObjectiveEntry_C_UpdateProgress");
 static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, Objective) == 0x000000, "Member 'QuestObjectiveEntry_C_UpdateProgress::Objective' has a wrong offset!");
 static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, AchievedCount) == 0x000008, "Member 'QuestObjectiveEntry_C_UpdateProgress::AchievedCount' has a wrong offset!");
 static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, Temp_byte_Variable) == 0x00000C, "Member 'QuestObjectiveEntry_C_UpdateProgress::Temp_byte_Variable' has a wrong offset!");
@@ -69,8 +69,8 @@ static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, Temp_bool_Variable)
 static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, K2Node_Select_Default) == 0x000010, "Member 'QuestObjectiveEntry_C_UpdateProgress::K2Node_Select_Default' has a wrong offset!");
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.Update
-// 0x460065 (0x460065 - 0x0000)
-struct alignas(0x460065) QuestObjectiveEntry_C_Update final
+// 0x00B8 (0x00B8 - 0x0000)
+struct QuestObjectiveEntry_C_Update final
 {
 public:
 	class UFortQuestObjectiveInfo*                Objective;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -103,8 +103,8 @@ public:
 	class FText                                   CallFunc_GetCombinedDescription_OutDescription2;   // 0x0098(0x0018)()
 	bool                                          CallFunc_GetCombinedDescription_ReturnValue2;      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestObjectiveEntry_C_Update) == 0x460065, "Wrong alignment on QuestObjectiveEntry_C_Update");
-static_assert(sizeof(QuestObjectiveEntry_C_Update) == 0x460065, "Wrong size on QuestObjectiveEntry_C_Update");
+static_assert(alignof(QuestObjectiveEntry_C_Update) == 0x000008, "Wrong alignment on QuestObjectiveEntry_C_Update");
+static_assert(sizeof(QuestObjectiveEntry_C_Update) == 0x0000B8, "Wrong size on QuestObjectiveEntry_C_Update");
 static_assert(offsetof(QuestObjectiveEntry_C_Update, Objective) == 0x000000, "Member 'QuestObjectiveEntry_C_Update::Objective' has a wrong offset!");
 static_assert(offsetof(QuestObjectiveEntry_C_Update, AchievedCount) == 0x000008, "Member 'QuestObjectiveEntry_C_Update::AchievedCount' has a wrong offset!");
 static_assert(offsetof(QuestObjectiveEntry_C_Update, Temp_byte_Variable) == 0x00000C, "Member 'QuestObjectiveEntry_C_Update::Temp_byte_Variable' has a wrong offset!");

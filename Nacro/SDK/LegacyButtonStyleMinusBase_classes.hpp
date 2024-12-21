@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LegacyButtonStyle-Base.LegacyButtonStyle-Base_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x1C08 - 0x1C08)
 class ULegacyButtonStyleMinusBase_C : public UFortButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<ULegacyButtonStyleMinusBase_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonStyleMinusBase_C) == 0x1182E980, "Wrong alignment on ULegacyButtonStyleMinusBase_C");
-static_assert(sizeof(ULegacyButtonStyleMinusBase_C) == 0x1182E980, "Wrong size on ULegacyButtonStyleMinusBase_C");
+static_assert(alignof(ULegacyButtonStyleMinusBase_C) == 0x000008, "Wrong alignment on ULegacyButtonStyleMinusBase_C");
+static_assert(sizeof(ULegacyButtonStyleMinusBase_C) == 0x001C08, "Wrong size on ULegacyButtonStyleMinusBase_C");
 
 }
 

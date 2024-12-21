@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PerksList.PerksList_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00E8 (0x0398 - 0x02B0)
 class UPerksList_C final : public UFortPerksWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          BorderLockedL;                                     // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderLockedR;                                     // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderUnlockedL;                                   // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -60,8 +60,8 @@ public:
 	bool                                          bFirstPerkCompleteR;                               // 0x036E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bFirstLockPerkCompleteR;                           // 0x036F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	int32                                         SecondColumnSplitCount;                            // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FMargin                                RowPadding;                                        // 0x0374(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
-	struct FMargin                                Description_Padding;                               // 0x0384(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                RowPadding;                                        // 0x0374(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                Description_Padding;                               // 0x0384(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	bool                                          bUseLargeFormatNameOnly;                           // 0x0394(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bShowActiveAbilitiesOnly;                          // 0x0395(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bEnableMouseTooltips;                              // 0x0396(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -85,8 +85,8 @@ public:
 		return GetDefaultObjImpl<UPerksList_C>();
 	}
 };
-static_assert(alignof(UPerksList_C) == 0x322CBBB8, "Wrong alignment on UPerksList_C");
-static_assert(sizeof(UPerksList_C) == 0x322CBBB8, "Wrong size on UPerksList_C");
+static_assert(alignof(UPerksList_C) == 0x000008, "Wrong alignment on UPerksList_C");
+static_assert(sizeof(UPerksList_C) == 0x000398, "Wrong size on UPerksList_C");
 static_assert(offsetof(UPerksList_C, UberGraphFrame) == 0x0002B0, "Member 'UPerksList_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPerksList_C, BorderLockedL) == 0x0002B8, "Member 'UPerksList_C::BorderLockedL' has a wrong offset!");
 static_assert(offsetof(UPerksList_C, BorderLockedR) == 0x0002C0, "Member 'UPerksList_C::BorderLockedR' has a wrong offset!");

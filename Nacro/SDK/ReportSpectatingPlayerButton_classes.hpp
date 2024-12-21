@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0240 - 0x0230)
 class UReportSpectatingPlayerButton_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      IconTextButton;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UReportSpectatingPlayerButton_C>();
 	}
 };
-static_assert(alignof(UReportSpectatingPlayerButton_C) == 0x322CBBB8, "Wrong alignment on UReportSpectatingPlayerButton_C");
-static_assert(sizeof(UReportSpectatingPlayerButton_C) == 0x322CBBB8, "Wrong size on UReportSpectatingPlayerButton_C");
+static_assert(alignof(UReportSpectatingPlayerButton_C) == 0x000008, "Wrong alignment on UReportSpectatingPlayerButton_C");
+static_assert(sizeof(UReportSpectatingPlayerButton_C) == 0x000240, "Wrong size on UReportSpectatingPlayerButton_C");
 static_assert(offsetof(UReportSpectatingPlayerButton_C, UberGraphFrame) == 0x000230, "Member 'UReportSpectatingPlayerButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UReportSpectatingPlayerButton_C, IconTextButton) == 0x000238, "Member 'UReportSpectatingPlayerButton_C::IconTextButton' has a wrong offset!");
 

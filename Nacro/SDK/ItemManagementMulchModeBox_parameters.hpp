@@ -18,14 +18,14 @@ namespace SDK::Params
 {
 
 // Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.ExecuteUbergraph_ItemManagementMulchModeBox
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool bCursorModeEnabled)>      K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0018(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0018(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UItemWindow_C*                          CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UItemManagementMulchDetailsPanel_C*     K2Node_DynamicCast_AsItem_Management_Mulch_Details_Panel; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,14 +37,14 @@ public:
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0088(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0088(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox) == 0x1182EB00, "Wrong alignment on ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox");
-static_assert(sizeof(ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox) == 0x1182EB00, "Wrong size on ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox");
+static_assert(alignof(ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox) == 0x000008, "Wrong alignment on ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox");
+static_assert(sizeof(ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox) == 0x0000C0, "Wrong size on ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox");
 static_assert(offsetof(ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox, EntryPoint) == 0x000000, "Member 'ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox, K2Node_MakeStruct_DataTableRowHandle) == 0x000018, "Member 'ItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
@@ -93,8 +93,8 @@ static_assert(offsetof(ItemManagementMulchModeBox_C_HandleInfo, CallFunc_GetItem
 static_assert(offsetof(ItemManagementMulchModeBox_C_HandleInfo, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000030, "Member 'ItemManagementMulchModeBox_C_HandleInfo::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleMulchListChanged
-// 0x6F0054 (0x6F0054 - 0x0000)
-struct alignas(0x6F0054) ItemManagementMulchModeBox_C_HandleMulchListChanged final
+// 0x0020 (0x0020 - 0x0000)
+struct ItemManagementMulchModeBox_C_HandleMulchListChanged final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -106,8 +106,8 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             K2Node_Select_Default;                             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementMulchModeBox_C_HandleMulchListChanged) == 0x6F0054, "Wrong alignment on ItemManagementMulchModeBox_C_HandleMulchListChanged");
-static_assert(sizeof(ItemManagementMulchModeBox_C_HandleMulchListChanged) == 0x6F0054, "Wrong size on ItemManagementMulchModeBox_C_HandleMulchListChanged");
+static_assert(alignof(ItemManagementMulchModeBox_C_HandleMulchListChanged) == 0x000008, "Wrong alignment on ItemManagementMulchModeBox_C_HandleMulchListChanged");
+static_assert(sizeof(ItemManagementMulchModeBox_C_HandleMulchListChanged) == 0x000020, "Wrong size on ItemManagementMulchModeBox_C_HandleMulchListChanged");
 static_assert(offsetof(ItemManagementMulchModeBox_C_HandleMulchListChanged, Temp_bool_Variable) == 0x000000, "Member 'ItemManagementMulchModeBox_C_HandleMulchListChanged::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementMulchModeBox_C_HandleMulchListChanged, Temp_byte_Variable) == 0x000001, "Member 'ItemManagementMulchModeBox_C_HandleMulchListChanged::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementMulchModeBox_C_HandleMulchListChanged, Temp_byte_Variable2) == 0x000002, "Member 'ItemManagementMulchModeBox_C_HandleMulchListChanged::Temp_byte_Variable2' has a wrong offset!");

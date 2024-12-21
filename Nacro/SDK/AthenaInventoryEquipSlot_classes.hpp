@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0290 - 0x0240)
 class UAthenaInventoryEquipSlot_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 DropTarget;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 EmptyImage;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               InputActionOverlay;                                // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<UAthenaInventoryEquipSlot_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryEquipSlot_C) == 0x322CBBB8, "Wrong alignment on UAthenaInventoryEquipSlot_C");
-static_assert(sizeof(UAthenaInventoryEquipSlot_C) == 0x322CBBB8, "Wrong size on UAthenaInventoryEquipSlot_C");
+static_assert(alignof(UAthenaInventoryEquipSlot_C) == 0x000008, "Wrong alignment on UAthenaInventoryEquipSlot_C");
+static_assert(sizeof(UAthenaInventoryEquipSlot_C) == 0x000290, "Wrong size on UAthenaInventoryEquipSlot_C");
 static_assert(offsetof(UAthenaInventoryEquipSlot_C, UberGraphFrame) == 0x000240, "Member 'UAthenaInventoryEquipSlot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryEquipSlot_C, DropTarget) == 0x000248, "Member 'UAthenaInventoryEquipSlot_C::DropTarget' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryEquipSlot_C, EmptyImage) == 0x000250, "Member 'UAthenaInventoryEquipSlot_C::EmptyImage' has a wrong offset!");

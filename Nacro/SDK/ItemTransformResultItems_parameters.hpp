@@ -19,30 +19,30 @@ namespace SDK::Params
 {
 
 // Function ItemTransformResultItems.ItemTransformResultItems_C.ExecuteUbergraph_ItemTransformResultItems
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems) == 0x322CBBB8, "Wrong alignment on ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems");
-static_assert(sizeof(ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems) == 0x322CBBB8, "Wrong size on ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems");
+static_assert(alignof(ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems) == 0x000008, "Wrong alignment on ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems");
+static_assert(sizeof(ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems) == 0x000038, "Wrong size on ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems");
 static_assert(offsetof(ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems, EntryPoint) == 0x000000, "Member 'ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems, K2Node_Event_IsDesignTime) == 0x000030, "Member 'ItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function ItemTransformResultItems.ItemTransformResultItems_C.PreConstruct
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ItemTransformResultItems_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct ItemTransformResultItems_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformResultItems_C_PreConstruct) == 0x0000E4, "Wrong alignment on ItemTransformResultItems_C_PreConstruct");
-static_assert(sizeof(ItemTransformResultItems_C_PreConstruct) == 0x0000E4, "Wrong size on ItemTransformResultItems_C_PreConstruct");
+static_assert(alignof(ItemTransformResultItems_C_PreConstruct) == 0x000001, "Wrong alignment on ItemTransformResultItems_C_PreConstruct");
+static_assert(sizeof(ItemTransformResultItems_C_PreConstruct) == 0x000001, "Wrong size on ItemTransformResultItems_C_PreConstruct");
 static_assert(offsetof(ItemTransformResultItems_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemTransformResultItems_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemTransformResultItems.ItemTransformResultItems_C.UpdateItems
@@ -160,7 +160,7 @@ static_assert(offsetof(ItemTransformResultItems_C_CalculateRecycleXP, CallFunc_L
 static_assert(offsetof(ItemTransformResultItems_C_CalculateRecycleXP, CallFunc_Add_IntInt_ReturnValue4) == 0x00005C, "Member 'ItemTransformResultItems_C_CalculateRecycleXP::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
 
 // Function ItemTransformResultItems.ItemTransformResultItems_C.UpdateMainReward
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01F8 (0x01F8 - 0x0000)
 struct ItemTransformResultItems_C_UpdateMainReward final
 {
 public:
@@ -171,22 +171,22 @@ public:
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F[0x1];                                        // 0x000F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0018(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0018(0x0080)()
 	class UFortConversionControlItemDefinition*   K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetRewardName_ReturnValue;                // 0x00A8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00C0(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0100(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00C0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0100(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0140(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0150(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0168(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0168(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x01A8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x01B8(0x0018)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x01D0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x01D0(0x0028)()
 };
-static_assert(alignof(ItemTransformResultItems_C_UpdateMainReward) == 0x322CBBB8, "Wrong alignment on ItemTransformResultItems_C_UpdateMainReward");
-static_assert(sizeof(ItemTransformResultItems_C_UpdateMainReward) == 0x322CBBB8, "Wrong size on ItemTransformResultItems_C_UpdateMainReward");
+static_assert(alignof(ItemTransformResultItems_C_UpdateMainReward) == 0x000008, "Wrong alignment on ItemTransformResultItems_C_UpdateMainReward");
+static_assert(sizeof(ItemTransformResultItems_C_UpdateMainReward) == 0x0001F8, "Wrong size on ItemTransformResultItems_C_UpdateMainReward");
 static_assert(offsetof(ItemTransformResultItems_C_UpdateMainReward, Item) == 0x000000, "Member 'ItemTransformResultItems_C_UpdateMainReward::Item' has a wrong offset!");
 static_assert(offsetof(ItemTransformResultItems_C_UpdateMainReward, CurrentTier) == 0x000008, "Member 'ItemTransformResultItems_C_UpdateMainReward::CurrentTier' has a wrong offset!");
 static_assert(offsetof(ItemTransformResultItems_C_UpdateMainReward, CallFunc_Conv_IntToByte_ReturnValue) == 0x00000C, "Member 'ItemTransformResultItems_C_UpdateMainReward::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");

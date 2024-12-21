@@ -18,26 +18,26 @@ namespace SDK::Params
 {
 
 // Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.ExecuteUbergraph_PlayerPawn_Generic_Parent
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0xB];                                        // 0x0005(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPostProcessComponent*                  CallFunc_AddComponent_ReturnValue;                 // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType2;                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x0058(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x0058(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType;                 // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x0118(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x0118(0x00B8)(ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent) == 0x11821C00, "Wrong alignment on PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent");
-static_assert(sizeof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent) == 0x11821C00, "Wrong size on PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent");
+static_assert(alignof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent) == 0x000010, "Wrong alignment on PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent");
+static_assert(sizeof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent) == 0x0001D0, "Wrong size on PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent, EntryPoint) == 0x000000, "Member 'PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent, Temp_struct_Variable) == 0x000010, "Member 'PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent::Temp_struct_Variable' has a wrong offset!");
@@ -49,53 +49,53 @@ static_assert(offsetof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_G
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent, K2Node_GameplayCueEvent_Parameters) == 0x000118, "Member 'PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent::K2Node_GameplayCueEvent_Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.GameplayCue.Teleport.In
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In) == 0x11821C00, "Wrong alignment on PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In");
-static_assert(sizeof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In) == 0x11821C00, "Wrong size on PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In");
+static_assert(alignof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In) == 0x000008, "Wrong alignment on PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In");
+static_assert(sizeof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In) == 0x0000C0, "Wrong size on PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In, EventType) == 0x000000, "Member 'PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In, Parameters) == 0x000008, "Member 'PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.GameplayCue.Teleport.Out
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out) == 0x11821C00, "Wrong alignment on PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out");
-static_assert(sizeof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out) == 0x11821C00, "Wrong size on PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out");
+static_assert(alignof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out) == 0x000008, "Wrong alignment on PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out");
+static_assert(sizeof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out) == 0x0000C0, "Wrong size on PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out, EventType) == 0x000000, "Member 'PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out, Parameters) == 0x000008, "Member 'PlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.Teleport
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct PlayerPawn_Generic_Parent_C_Teleport final
 {
 public:
-	struct FGameplayCueParameters                 GameplayCueParameters;                             // 0x0000(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 GameplayCueParameters;                             // 0x0000(0x00B8)(Parm, ContainsInstancedReference)
 	bool                                          TeleportOut_;                                      // 0x00B8(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Default_PlayLength;                                // 0x00BC(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C2[0xE];                                       // 0x00C2(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00D0(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00D0(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADuplicateResOutMesh_C*                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerPawn_Generic_Parent_C_Teleport) == 0x11821C00, "Wrong alignment on PlayerPawn_Generic_Parent_C_Teleport");
-static_assert(sizeof(PlayerPawn_Generic_Parent_C_Teleport) == 0x11821C00, "Wrong size on PlayerPawn_Generic_Parent_C_Teleport");
+static_assert(alignof(PlayerPawn_Generic_Parent_C_Teleport) == 0x000010, "Wrong alignment on PlayerPawn_Generic_Parent_C_Teleport");
+static_assert(sizeof(PlayerPawn_Generic_Parent_C_Teleport) == 0x000120, "Wrong size on PlayerPawn_Generic_Parent_C_Teleport");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_Teleport, GameplayCueParameters) == 0x000000, "Member 'PlayerPawn_Generic_Parent_C_Teleport::GameplayCueParameters' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_Teleport, TeleportOut_) == 0x0000B8, "Member 'PlayerPawn_Generic_Parent_C_Teleport::TeleportOut_' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Generic_Parent_C_Teleport, Default_PlayLength) == 0x0000BC, "Member 'PlayerPawn_Generic_Parent_C_Teleport::Default_PlayLength' has a wrong offset!");

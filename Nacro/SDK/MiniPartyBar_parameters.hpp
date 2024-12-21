@@ -105,8 +105,8 @@ static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, CallFunc_A
 static_assert(offsetof(MiniPartyBar_C_HandlePartybarUIFeatureChanged, CallFunc_BooleanAND_ReturnValue) == 0x000012, "Member 'MiniPartyBar_C_HandlePartybarUIFeatureChanged::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function MiniPartyBar.MiniPartyBar_C.Get Banners Tooltip Widget
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) MiniPartyBar_C_Get_Banners_Tooltip_Widget final
+// 0x0058 (0x0058 - 0x0000)
+struct MiniPartyBar_C_Get_Banners_Tooltip_Widget final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -117,8 +117,8 @@ public:
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MiniPartyBar_C_Get_Banners_Tooltip_Widget) == 0x0000E4, "Wrong alignment on MiniPartyBar_C_Get_Banners_Tooltip_Widget");
-static_assert(sizeof(MiniPartyBar_C_Get_Banners_Tooltip_Widget) == 0x0000E4, "Wrong size on MiniPartyBar_C_Get_Banners_Tooltip_Widget");
+static_assert(alignof(MiniPartyBar_C_Get_Banners_Tooltip_Widget) == 0x000008, "Wrong alignment on MiniPartyBar_C_Get_Banners_Tooltip_Widget");
+static_assert(sizeof(MiniPartyBar_C_Get_Banners_Tooltip_Widget) == 0x000058, "Wrong size on MiniPartyBar_C_Get_Banners_Tooltip_Widget");
 static_assert(offsetof(MiniPartyBar_C_Get_Banners_Tooltip_Widget, ReturnValue) == 0x000000, "Member 'MiniPartyBar_C_Get_Banners_Tooltip_Widget::ReturnValue' has a wrong offset!");
 static_assert(offsetof(MiniPartyBar_C_Get_Banners_Tooltip_Widget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MiniPartyBar_C_Get_Banners_Tooltip_Widget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MiniPartyBar_C_Get_Banners_Tooltip_Widget, CallFunc_MakeLiteralText_ReturnValue) == 0x000010, "Member 'MiniPartyBar_C_Get_Banners_Tooltip_Widget::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");

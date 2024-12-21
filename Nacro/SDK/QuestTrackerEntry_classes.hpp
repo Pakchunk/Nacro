@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestTrackerEntry.QuestTrackerEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x02A8 - 0x0298)
 class UQuestTrackerEntry_C final : public UFortQuestTrackerEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 SeparatorLine;                                     // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UQuestTrackerEntry_C>();
 	}
 };
-static_assert(alignof(UQuestTrackerEntry_C) == 0x322CBBB8, "Wrong alignment on UQuestTrackerEntry_C");
-static_assert(sizeof(UQuestTrackerEntry_C) == 0x322CBBB8, "Wrong size on UQuestTrackerEntry_C");
+static_assert(alignof(UQuestTrackerEntry_C) == 0x000008, "Wrong alignment on UQuestTrackerEntry_C");
+static_assert(sizeof(UQuestTrackerEntry_C) == 0x0002A8, "Wrong size on UQuestTrackerEntry_C");
 static_assert(offsetof(UQuestTrackerEntry_C, UberGraphFrame) == 0x000298, "Member 'UQuestTrackerEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestTrackerEntry_C, SeparatorLine) == 0x0002A0, "Member 'UQuestTrackerEntry_C::SeparatorLine' has a wrong offset!");
 

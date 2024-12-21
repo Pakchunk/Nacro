@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function MtxStoreRoot.MtxStoreRoot_C.ExecuteUbergraph_MtxStoreRoot
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot final
+// 0x0030 (0x0030 - 0x0000)
+struct MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -28,8 +28,8 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bSuccess;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot) == 0x0000E4, "Wrong alignment on MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot");
-static_assert(sizeof(MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot) == 0x0000E4, "Wrong size on MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot");
+static_assert(alignof(MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot) == 0x000008, "Wrong alignment on MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot");
+static_assert(sizeof(MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot) == 0x000030, "Wrong size on MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot");
 static_assert(offsetof(MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot, EntryPoint) == 0x000000, "Member 'MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot, CallFunc_ExitCurrencyStore_ReturnValue) == 0x000010, "Member 'MtxStoreRoot_C_ExecuteUbergraph_MtxStoreRoot::CallFunc_ExitCurrencyStore_ReturnValue' has a wrong offset!");
@@ -60,16 +60,16 @@ static_assert(sizeof(MtxStoreRoot_C_BndEvt__CancelButton_K2Node_ComponentBoundEv
 static_assert(offsetof(MtxStoreRoot_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_215_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MtxStoreRoot_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_215_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MtxStoreRoot.MtxStoreRoot_C.ClosePopup
-// 0x05C0 (0x05C0 - 0x0000)
-struct alignas(0x5C0) MtxStoreRoot_C_ClosePopup final
+// 0x0018 (0x0018 - 0x0000)
+struct MtxStoreRoot_C_ClosePopup final
 {
 public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ExitCurrencyStore_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MtxStoreRoot_C_ClosePopup) == 0x0005C0, "Wrong alignment on MtxStoreRoot_C_ClosePopup");
-static_assert(sizeof(MtxStoreRoot_C_ClosePopup) == 0x0005C0, "Wrong size on MtxStoreRoot_C_ClosePopup");
+static_assert(alignof(MtxStoreRoot_C_ClosePopup) == 0x000008, "Wrong alignment on MtxStoreRoot_C_ClosePopup");
+static_assert(sizeof(MtxStoreRoot_C_ClosePopup) == 0x000018, "Wrong size on MtxStoreRoot_C_ClosePopup");
 static_assert(offsetof(MtxStoreRoot_C_ClosePopup, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'MtxStoreRoot_C_ClosePopup::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MtxStoreRoot_C_ClosePopup, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MtxStoreRoot_C_ClosePopup::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MtxStoreRoot_C_ClosePopup, CallFunc_ExitCurrencyStore_ReturnValue) == 0x000010, "Member 'MtxStoreRoot_C_ClosePopup::CallFunc_ExitCurrencyStore_ReturnValue' has a wrong offset!");

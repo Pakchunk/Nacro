@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SurvivorTraitsDetailWidget.SurvivorTraitsDetailWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x02A8 - 0x0270)
 class USurvivorTraitsDetailWidget_C final : public UFortItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class USizeBox*                               ParentSizeBox;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          SecondaryBorder;                                   // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCategoryIndicator*             SecondaryCategoryIndicator;                        // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<USurvivorTraitsDetailWidget_C>();
 	}
 };
-static_assert(alignof(USurvivorTraitsDetailWidget_C) == 0x322CBBB8, "Wrong alignment on USurvivorTraitsDetailWidget_C");
-static_assert(sizeof(USurvivorTraitsDetailWidget_C) == 0x322CBBB8, "Wrong size on USurvivorTraitsDetailWidget_C");
+static_assert(alignof(USurvivorTraitsDetailWidget_C) == 0x000008, "Wrong alignment on USurvivorTraitsDetailWidget_C");
+static_assert(sizeof(USurvivorTraitsDetailWidget_C) == 0x0002A8, "Wrong size on USurvivorTraitsDetailWidget_C");
 static_assert(offsetof(USurvivorTraitsDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'USurvivorTraitsDetailWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USurvivorTraitsDetailWidget_C, ParentSizeBox) == 0x000278, "Member 'USurvivorTraitsDetailWidget_C::ParentSizeBox' has a wrong offset!");
 static_assert(offsetof(USurvivorTraitsDetailWidget_C, SecondaryBorder) == 0x000280, "Member 'USurvivorTraitsDetailWidget_C::SecondaryBorder' has a wrong offset!");

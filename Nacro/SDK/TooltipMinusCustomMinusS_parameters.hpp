@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function Tooltip-Custom-S.Tooltip-Custom-S_C.ExecuteUbergraph_Tooltip-Custom-S
-// 0x670069 (0x670069 - 0x0000)
-struct alignas(0x670069) TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS final
+// 0x0028 (0x0028 - 0x0000)
+struct TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS) == 0x670069, "Wrong alignment on TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS");
-static_assert(sizeof(TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS) == 0x670069, "Wrong size on TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS");
+static_assert(alignof(TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS) == 0x000008, "Wrong alignment on TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS");
+static_assert(sizeof(TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS) == 0x000028, "Wrong size on TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS");
 static_assert(offsetof(TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS, EntryPoint) == 0x000000, "Member 'TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS, Temp_bool_Variable) == 0x000004, "Member 'TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS, Temp_byte_Variable) == 0x000005, "Member 'TooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS::Temp_byte_Variable' has a wrong offset!");
@@ -95,15 +95,15 @@ static_assert(sizeof(TooltipMinusCustomMinusS_C_Get_Header_Text) == 0x000018, "W
 static_assert(offsetof(TooltipMinusCustomMinusS_C_Get_Header_Text, ReturnValue) == 0x000000, "Member 'TooltipMinusCustomMinusS_C_Get_Header_Text::ReturnValue' has a wrong offset!");
 
 // Function Tooltip-Custom-S.Tooltip-Custom-S_C.Get Icon Brush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct TooltipMinusCustomMinusS_C_Get_Icon_Brush final
 {
 public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm)
-	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x322CBBB8)()
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm)
+	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x0090)()
 };
-static_assert(alignof(TooltipMinusCustomMinusS_C_Get_Icon_Brush) == 0x11827900, "Wrong alignment on TooltipMinusCustomMinusS_C_Get_Icon_Brush");
-static_assert(sizeof(TooltipMinusCustomMinusS_C_Get_Icon_Brush) == 0x11827900, "Wrong size on TooltipMinusCustomMinusS_C_Get_Icon_Brush");
+static_assert(alignof(TooltipMinusCustomMinusS_C_Get_Icon_Brush) == 0x000008, "Wrong alignment on TooltipMinusCustomMinusS_C_Get_Icon_Brush");
+static_assert(sizeof(TooltipMinusCustomMinusS_C_Get_Icon_Brush) == 0x000120, "Wrong size on TooltipMinusCustomMinusS_C_Get_Icon_Brush");
 static_assert(offsetof(TooltipMinusCustomMinusS_C_Get_Icon_Brush, ReturnValue) == 0x000000, "Member 'TooltipMinusCustomMinusS_C_Get_Icon_Brush::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TooltipMinusCustomMinusS_C_Get_Icon_Brush, CallFunc_MakeBrushFromAsset_ReturnValue) == 0x000090, "Member 'TooltipMinusCustomMinusS_C_Get_Icon_Brush::CallFunc_MakeBrushFromAsset_ReturnValue' has a wrong offset!");
 

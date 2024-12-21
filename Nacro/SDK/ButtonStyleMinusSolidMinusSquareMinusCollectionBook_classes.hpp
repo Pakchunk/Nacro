@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-Solid-Square-CollectionBook.ButtonStyle-Solid-Square-CollectionBook_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C");
-static_assert(sizeof(UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C");
+static_assert(alignof(UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C) == 0x000008, "Wrong alignment on UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C");
+static_assert(sizeof(UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C) == 0x000530, "Wrong size on UButtonStyleMinusSolidMinusSquareMinusCollectionBook_C");
 
 }
 

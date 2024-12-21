@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SkillTreeGroupBG-H-Wide.SkillTreeGroupBG-H-Wide_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class USkillTreeGroupBGMinusHMinusWide_C final : public USkillTreeGroupBGMinusH_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USkillTreeGroupBGMinusHMinusWide_C>();
 	}
 };
-static_assert(alignof(USkillTreeGroupBGMinusHMinusWide_C) == 0x322CBBB8, "Wrong alignment on USkillTreeGroupBGMinusHMinusWide_C");
-static_assert(sizeof(USkillTreeGroupBGMinusHMinusWide_C) == 0x322CBBB8, "Wrong size on USkillTreeGroupBGMinusHMinusWide_C");
+static_assert(alignof(USkillTreeGroupBGMinusHMinusWide_C) == 0x000008, "Wrong alignment on USkillTreeGroupBGMinusHMinusWide_C");
+static_assert(sizeof(USkillTreeGroupBGMinusHMinusWide_C) == 0x000530, "Wrong size on USkillTreeGroupBGMinusHMinusWide_C");
 
 }
 

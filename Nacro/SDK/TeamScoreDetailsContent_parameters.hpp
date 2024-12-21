@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.ExecuteUbergraph_TeamScoreDetailsContent
-// 0x0751 (0x0751 - 0x0000)
-struct alignas(0x751) TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent final
+// 0x0040 (0x0040 - 0x0000)
+struct TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,8 +31,8 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent) == 0x000751, "Wrong alignment on TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent");
-static_assert(sizeof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent) == 0x000751, "Wrong size on TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent");
+static_assert(alignof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent) == 0x000008, "Wrong alignment on TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent");
+static_assert(sizeof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent) == 0x000040, "Wrong size on TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent");
 static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, EntryPoint) == 0x000000, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, Temp_int_Variable) == 0x000010, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::Temp_int_Variable' has a wrong offset!");

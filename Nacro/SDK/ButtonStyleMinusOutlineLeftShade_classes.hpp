@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-OutlineLeftShade.ButtonStyle-OutlineLeftShade_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusOutlineLeftShade_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusOutlineLeftShade_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusOutlineLeftShade_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusOutlineLeftShade_C");
-static_assert(sizeof(UButtonStyleMinusOutlineLeftShade_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusOutlineLeftShade_C");
+static_assert(alignof(UButtonStyleMinusOutlineLeftShade_C) == 0x000008, "Wrong alignment on UButtonStyleMinusOutlineLeftShade_C");
+static_assert(sizeof(UButtonStyleMinusOutlineLeftShade_C) == 0x000530, "Wrong size on UButtonStyleMinusOutlineLeftShade_C");
 
 }
 

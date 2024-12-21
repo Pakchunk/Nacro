@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function InteractionIndicator.InteractionIndicator_C.ExecuteUbergraph_InteractionIndicator
-// 0x04BA (0x04BA - 0x0000)
-struct alignas(0x4BA) InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator final
+// 0x0050 (0x0050 - 0x0000)
+struct InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,8 +31,8 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue3;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator) == 0x0004BA, "Wrong alignment on InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator");
-static_assert(sizeof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator) == 0x0004BA, "Wrong size on InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator");
+static_assert(alignof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator) == 0x000008, "Wrong alignment on InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator");
+static_assert(sizeof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator) == 0x000050, "Wrong size on InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator");
 static_assert(offsetof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator, EntryPoint) == 0x000000, "Member 'InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator::EntryPoint' has a wrong offset!");
 static_assert(offsetof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -42,8 +42,8 @@ static_assert(offsetof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndica
 static_assert(offsetof(InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator, K2Node_CreateDelegate_OutputDelegate3) == 0x000040, "Member 'InteractionIndicator_C_ExecuteUbergraph_InteractionIndicator::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function InteractionIndicator.InteractionIndicator_C.HandleInteractionChanged
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) InteractionIndicator_C_HandleInteractionChanged final
+// 0x0030 (0x0030 - 0x0000)
+struct InteractionIndicator_C_HandleInteractionChanged final
 {
 public:
 	class UFortInteractContextInfo*               Interaction;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 	bool                                          CallFunc_PickedUp_ReturnValue;                     // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(InteractionIndicator_C_HandleInteractionChanged) == 0x10461A40, "Wrong alignment on InteractionIndicator_C_HandleInteractionChanged");
-static_assert(sizeof(InteractionIndicator_C_HandleInteractionChanged) == 0x10461A40, "Wrong size on InteractionIndicator_C_HandleInteractionChanged");
+static_assert(alignof(InteractionIndicator_C_HandleInteractionChanged) == 0x000008, "Wrong alignment on InteractionIndicator_C_HandleInteractionChanged");
+static_assert(sizeof(InteractionIndicator_C_HandleInteractionChanged) == 0x000030, "Wrong size on InteractionIndicator_C_HandleInteractionChanged");
 static_assert(offsetof(InteractionIndicator_C_HandleInteractionChanged, Interaction) == 0x000000, "Member 'InteractionIndicator_C_HandleInteractionChanged::Interaction' has a wrong offset!");
 static_assert(offsetof(InteractionIndicator_C_HandleInteractionChanged, ValidInteraction) == 0x000008, "Member 'InteractionIndicator_C_HandleInteractionChanged::ValidInteraction' has a wrong offset!");
 static_assert(offsetof(InteractionIndicator_C_HandleInteractionChanged, Temp_byte_Variable) == 0x000009, "Member 'InteractionIndicator_C_HandleInteractionChanged::Temp_byte_Variable' has a wrong offset!");
@@ -114,8 +114,8 @@ static_assert(offsetof(InteractionIndicator_C_ShowPickupWidget, Temp_bool_Variab
 static_assert(offsetof(InteractionIndicator_C_ShowPickupWidget, K2Node_Select2_Default) == 0x00004F, "Member 'InteractionIndicator_C_ShowPickupWidget::K2Node_Select2_Default' has a wrong offset!");
 
 // Function InteractionIndicator.InteractionIndicator_C.ShowBasicInteractionWidget
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) InteractionIndicator_C_ShowBasicInteractionWidget final
+// 0x0007 (0x0007 - 0x0000)
+struct InteractionIndicator_C_ShowBasicInteractionWidget final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -126,8 +126,8 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue2;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortKeybindForcedHoldStatus                  K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(InteractionIndicator_C_ShowBasicInteractionWidget) == 0x540065, "Wrong alignment on InteractionIndicator_C_ShowBasicInteractionWidget");
-static_assert(sizeof(InteractionIndicator_C_ShowBasicInteractionWidget) == 0x540065, "Wrong size on InteractionIndicator_C_ShowBasicInteractionWidget");
+static_assert(alignof(InteractionIndicator_C_ShowBasicInteractionWidget) == 0x000001, "Wrong alignment on InteractionIndicator_C_ShowBasicInteractionWidget");
+static_assert(sizeof(InteractionIndicator_C_ShowBasicInteractionWidget) == 0x000007, "Wrong size on InteractionIndicator_C_ShowBasicInteractionWidget");
 static_assert(offsetof(InteractionIndicator_C_ShowBasicInteractionWidget, Temp_bool_Variable) == 0x000000, "Member 'InteractionIndicator_C_ShowBasicInteractionWidget::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(InteractionIndicator_C_ShowBasicInteractionWidget, Temp_byte_Variable) == 0x000001, "Member 'InteractionIndicator_C_ShowBasicInteractionWidget::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(InteractionIndicator_C_ShowBasicInteractionWidget, Temp_byte_Variable2) == 0x000002, "Member 'InteractionIndicator_C_ShowBasicInteractionWidget::Temp_byte_Variable2' has a wrong offset!");
@@ -150,14 +150,14 @@ static_assert(offsetof(InteractionIndicator_C_HandleInteractionUpdated, Interact
 static_assert(offsetof(InteractionIndicator_C_HandleInteractionUpdated, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'InteractionIndicator_C_HandleInteractionUpdated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function InteractionIndicator.InteractionIndicator_C.ShowDefenderBeaconWidget
-// 0x003C (0x003C - 0x0000)
-struct alignas(0x3C) InteractionIndicator_C_ShowDefenderBeaconWidget final
+// 0x0008 (0x0008 - 0x0000)
+struct InteractionIndicator_C_ShowDefenderBeaconWidget final
 {
 public:
 	class ABuildingTrapDefender*                  BuildingTrap;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InteractionIndicator_C_ShowDefenderBeaconWidget) == 0x00003C, "Wrong alignment on InteractionIndicator_C_ShowDefenderBeaconWidget");
-static_assert(sizeof(InteractionIndicator_C_ShowDefenderBeaconWidget) == 0x00003C, "Wrong size on InteractionIndicator_C_ShowDefenderBeaconWidget");
+static_assert(alignof(InteractionIndicator_C_ShowDefenderBeaconWidget) == 0x000008, "Wrong alignment on InteractionIndicator_C_ShowDefenderBeaconWidget");
+static_assert(sizeof(InteractionIndicator_C_ShowDefenderBeaconWidget) == 0x000008, "Wrong size on InteractionIndicator_C_ShowDefenderBeaconWidget");
 static_assert(offsetof(InteractionIndicator_C_ShowDefenderBeaconWidget, BuildingTrap) == 0x000000, "Member 'InteractionIndicator_C_ShowDefenderBeaconWidget::BuildingTrap' has a wrong offset!");
 
 }

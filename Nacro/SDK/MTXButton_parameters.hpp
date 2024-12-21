@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function MTXButton.MTXButton_C.ExecuteUbergraph_MTXButton
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct MTXButton_C_ExecuteUbergraph_MTXButton final
 {
 public:
@@ -30,9 +30,11 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool bUsingGamepad)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFortPrivateAccountInfo                K2Node_CustomEvent_NewInfo;                        // 0x0030(0x11821780)(NoDestructor)
+	struct FFortPrivateAccountInfo                K2Node_CustomEvent_NewInfo;                        // 0x0030(0x0014)(NoDestructor)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue3;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPrivateAccountInfo                CallFunc_GetLocalAccountInfo_Result;               // 0x0050(0x11821780)(NoDestructor)
+	struct FFortPrivateAccountInfo                CallFunc_GetLocalAccountInfo_Result;               // 0x0050(0x0014)(NoDestructor)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -41,8 +43,8 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MTXButton_C_ExecuteUbergraph_MTXButton) == 0x11821780, "Wrong alignment on MTXButton_C_ExecuteUbergraph_MTXButton");
-static_assert(sizeof(MTXButton_C_ExecuteUbergraph_MTXButton) == 0x11821780, "Wrong size on MTXButton_C_ExecuteUbergraph_MTXButton");
+static_assert(alignof(MTXButton_C_ExecuteUbergraph_MTXButton) == 0x000008, "Wrong alignment on MTXButton_C_ExecuteUbergraph_MTXButton");
+static_assert(sizeof(MTXButton_C_ExecuteUbergraph_MTXButton) == 0x000098, "Wrong size on MTXButton_C_ExecuteUbergraph_MTXButton");
 static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, EntryPoint) == 0x000000, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
@@ -81,26 +83,26 @@ static_assert(sizeof(MTXButton_C_BndEvt__VBucksButton_K2Node_ComponentBoundEvent
 static_assert(offsetof(MTXButton_C_BndEvt__VBucksButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button_0) == 0x000000, "Member 'MTXButton_C_BndEvt__VBucksButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button_0' has a wrong offset!");
 
 // Function MTXButton.MTXButton_C.HandleLocalAccountInfoChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct MTXButton_C_HandleLocalAccountInfoChanged final
 {
 public:
-	struct FFortPrivateAccountInfo                NewInfo;                                           // 0x0000(0x11821780)(Parm, NoDestructor)
+	struct FFortPrivateAccountInfo                NewInfo;                                           // 0x0000(0x0014)(Parm, NoDestructor)
 };
-static_assert(alignof(MTXButton_C_HandleLocalAccountInfoChanged) == 0x11821780, "Wrong alignment on MTXButton_C_HandleLocalAccountInfoChanged");
-static_assert(sizeof(MTXButton_C_HandleLocalAccountInfoChanged) == 0x11821780, "Wrong size on MTXButton_C_HandleLocalAccountInfoChanged");
+static_assert(alignof(MTXButton_C_HandleLocalAccountInfoChanged) == 0x000004, "Wrong alignment on MTXButton_C_HandleLocalAccountInfoChanged");
+static_assert(sizeof(MTXButton_C_HandleLocalAccountInfoChanged) == 0x000014, "Wrong size on MTXButton_C_HandleLocalAccountInfoChanged");
 static_assert(offsetof(MTXButton_C_HandleLocalAccountInfoChanged, NewInfo) == 0x000000, "Member 'MTXButton_C_HandleLocalAccountInfoChanged::NewInfo' has a wrong offset!");
 
 // Function MTXButton.MTXButton_C.UpdateAmount
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct MTXButton_C_UpdateAmount final
 {
 public:
-	struct FFortPrivateAccountInfo                FortPrivateAccountInfo;                            // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortPrivateAccountInfo                FortPrivateAccountInfo;                            // 0x0000(0x0014)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MTXButton_C_UpdateAmount) == 0x11821780, "Wrong alignment on MTXButton_C_UpdateAmount");
-static_assert(sizeof(MTXButton_C_UpdateAmount) == 0x11821780, "Wrong size on MTXButton_C_UpdateAmount");
+static_assert(alignof(MTXButton_C_UpdateAmount) == 0x000004, "Wrong alignment on MTXButton_C_UpdateAmount");
+static_assert(sizeof(MTXButton_C_UpdateAmount) == 0x000018, "Wrong size on MTXButton_C_UpdateAmount");
 static_assert(offsetof(MTXButton_C_UpdateAmount, FortPrivateAccountInfo) == 0x000000, "Member 'MTXButton_C_UpdateAmount::FortPrivateAccountInfo' has a wrong offset!");
 static_assert(offsetof(MTXButton_C_UpdateAmount, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000014, "Member 'MTXButton_C_UpdateAmount::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 

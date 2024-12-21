@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BasicRatingWidget.BasicRatingWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0288 - 0x0238)
 class UBasicRatingWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       Plus;                                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          RatingBorder;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 RatingImage;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -34,7 +34,7 @@ public:
 	class UClass*                                 BorderStyle;                                       // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          BorderVisible;                                     // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           RatingImageColor;                                  // 0x0274(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           RatingImageColor;                                  // 0x0274(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBrushSize                                ImageSize;                                         // 0x0284(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowPlus;                                          // 0x0285(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -57,8 +57,8 @@ public:
 		return GetDefaultObjImpl<UBasicRatingWidget_C>();
 	}
 };
-static_assert(alignof(UBasicRatingWidget_C) == 0x322CBBB8, "Wrong alignment on UBasicRatingWidget_C");
-static_assert(sizeof(UBasicRatingWidget_C) == 0x322CBBB8, "Wrong size on UBasicRatingWidget_C");
+static_assert(alignof(UBasicRatingWidget_C) == 0x000008, "Wrong alignment on UBasicRatingWidget_C");
+static_assert(sizeof(UBasicRatingWidget_C) == 0x000288, "Wrong size on UBasicRatingWidget_C");
 static_assert(offsetof(UBasicRatingWidget_C, UberGraphFrame) == 0x000238, "Member 'UBasicRatingWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBasicRatingWidget_C, Plus) == 0x000240, "Member 'UBasicRatingWidget_C::Plus' has a wrong offset!");
 static_assert(offsetof(UBasicRatingWidget_C, RatingBorder) == 0x000248, "Member 'UBasicRatingWidget_C::RatingBorder' has a wrong offset!");

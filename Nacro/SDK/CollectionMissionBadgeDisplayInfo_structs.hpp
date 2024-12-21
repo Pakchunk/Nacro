@@ -18,16 +18,16 @@ namespace SDK
 {
 
 // UserDefinedStruct CollectionMissionBadgeDisplayInfo.CollectionMissionBadgeDisplayInfo
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FCollectionMissionBadgeDisplayInfo final
 {
 public:
 	struct FCollectionBounds                      Bounds_14_295D6CA74FA0EC30A7015AB9010ADFD6;        // 0x0000(0x0008)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FGameplayTag                           BadgeTag_23_3FF135D54FFE66A5594ED095D3BA7681;      // 0x0008(0x11821D80)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           BadgeTag_23_3FF135D54FFE66A5594ED095D3BA7681;      // 0x0008(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	class UFortBadgeItemDefinition*               BadgeItemDefinition_27_4EC70F514FAD538A8A68D7AD278D14FF; // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FCollectionMissionBadgeDisplayInfo) == 0x11821D80, "Wrong alignment on FCollectionMissionBadgeDisplayInfo");
-static_assert(sizeof(FCollectionMissionBadgeDisplayInfo) == 0x11821D80, "Wrong size on FCollectionMissionBadgeDisplayInfo");
+static_assert(alignof(FCollectionMissionBadgeDisplayInfo) == 0x000008, "Wrong alignment on FCollectionMissionBadgeDisplayInfo");
+static_assert(sizeof(FCollectionMissionBadgeDisplayInfo) == 0x000018, "Wrong size on FCollectionMissionBadgeDisplayInfo");
 static_assert(offsetof(FCollectionMissionBadgeDisplayInfo, Bounds_14_295D6CA74FA0EC30A7015AB9010ADFD6) == 0x000000, "Member 'FCollectionMissionBadgeDisplayInfo::Bounds_14_295D6CA74FA0EC30A7015AB9010ADFD6' has a wrong offset!");
 static_assert(offsetof(FCollectionMissionBadgeDisplayInfo, BadgeTag_23_3FF135D54FFE66A5594ED095D3BA7681) == 0x000008, "Member 'FCollectionMissionBadgeDisplayInfo::BadgeTag_23_3FF135D54FFE66A5594ED095D3BA7681' has a wrong offset!");
 static_assert(offsetof(FCollectionMissionBadgeDisplayInfo, BadgeItemDefinition_27_4EC70F514FAD538A8A68D7AD278D14FF) == 0x000010, "Member 'FCollectionMissionBadgeDisplayInfo::BadgeItemDefinition_27_4EC70F514FAD538A8A68D7AD278D14FF' has a wrong offset!");

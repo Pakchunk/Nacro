@@ -20,8 +20,8 @@ namespace SDK::Params
 {
 
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.ExecuteUbergraph_StoreMain_MTXOffer
-// 0x00C3 (0x00C3 - 0x0000)
-struct alignas(0xC3) StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer final
+// 0x0028 (0x0028 - 0x0000)
+struct StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,8 +33,8 @@ public:
 	EFortMtxStoreOfferType                        CallFunc_GetStoreOfferType_ReturnValue2;           // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer) == 0x0000C3, "Wrong alignment on StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer");
-static_assert(sizeof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer) == 0x0000C3, "Wrong size on StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer");
+static_assert(alignof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer) == 0x000008, "Wrong alignment on StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer");
+static_assert(sizeof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer) == 0x000028, "Wrong size on StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer");
 static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, EntryPoint) == 0x000000, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::EntryPoint' has a wrong offset!");
 static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, K2Node_CustomEvent_Button) == 0x000008, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::K2Node_CustomEvent_Button' has a wrong offset!");
 static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -55,7 +55,7 @@ static_assert(sizeof(StoreMain_MTXOffer_C_OnClick) == 0x000008, "Wrong size on S
 static_assert(offsetof(StoreMain_MTXOffer_C_OnClick, Button) == 0x000000, "Member 'StoreMain_MTXOffer_C_OnClick::Button' has a wrong offset!");
 
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.InitOffer
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct StoreMain_MTXOffer_C_InitOffer final
 {
 public:
@@ -78,10 +78,10 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMtxGradient                       CallFunc_GetGradient_ReturnValue;                  // 0x0080(0x1182E980)(NoDestructor)
+	struct FFortMtxGradient                       CallFunc_GetGradient_ReturnValue;                  // 0x0080(0x0020)(NoDestructor)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetBackground_ReturnValue;                // 0x00A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetTileImage_ReturnValue;                 // 0x00B8(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_GetBackground_ReturnValue;                // 0x00A8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_GetTileImage_ReturnValue;                 // 0x00B8(0x0090)()
 	class FText                                   CallFunc_GetName_ReturnValue;                      // 0x0148(0x0018)()
 	int32                                         CallFunc_GetBonusQuantity_ReturnValue2;            // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -96,8 +96,8 @@ public:
 	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select2_Default;                            // 0x01F0(0x0018)()
 };
-static_assert(alignof(StoreMain_MTXOffer_C_InitOffer) == 0x1182E980, "Wrong alignment on StoreMain_MTXOffer_C_InitOffer");
-static_assert(sizeof(StoreMain_MTXOffer_C_InitOffer) == 0x1182E980, "Wrong size on StoreMain_MTXOffer_C_InitOffer");
+static_assert(alignof(StoreMain_MTXOffer_C_InitOffer) == 0x000008, "Wrong alignment on StoreMain_MTXOffer_C_InitOffer");
+static_assert(sizeof(StoreMain_MTXOffer_C_InitOffer) == 0x000208, "Wrong size on StoreMain_MTXOffer_C_InitOffer");
 static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, SalePrice) == 0x000000, "Member 'StoreMain_MTXOffer_C_InitOffer::SalePrice' has a wrong offset!");
 static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, bIsOnSale) == 0x000018, "Member 'StoreMain_MTXOffer_C_InitOffer::bIsOnSale' has a wrong offset!");
 static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, LocalSalePrice) == 0x000020, "Member 'StoreMain_MTXOffer_C_InitOffer::LocalSalePrice' has a wrong offset!");
@@ -130,16 +130,16 @@ static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetSalePrice_Ret
 static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, K2Node_Select2_Default) == 0x0001F0, "Member 'StoreMain_MTXOffer_C_InitOffer::K2Node_Select2_Default' has a wrong offset!");
 
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.ShowDetails
-// 0x730061 (0x730061 - 0x0000)
-struct alignas(0x730061) StoreMain_MTXOffer_C_ShowDetails final
+// 0x0018 (0x0018 - 0x0000)
+struct StoreMain_MTXOffer_C_ShowDetails final
 {
 public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStoreMain_OfferDetails_C*              CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_MTXOffer_C_ShowDetails) == 0x730061, "Wrong alignment on StoreMain_MTXOffer_C_ShowDetails");
-static_assert(sizeof(StoreMain_MTXOffer_C_ShowDetails) == 0x730061, "Wrong size on StoreMain_MTXOffer_C_ShowDetails");
+static_assert(alignof(StoreMain_MTXOffer_C_ShowDetails) == 0x000008, "Wrong alignment on StoreMain_MTXOffer_C_ShowDetails");
+static_assert(sizeof(StoreMain_MTXOffer_C_ShowDetails) == 0x000018, "Wrong size on StoreMain_MTXOffer_C_ShowDetails");
 static_assert(offsetof(StoreMain_MTXOffer_C_ShowDetails, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'StoreMain_MTXOffer_C_ShowDetails::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StoreMain_MTXOffer_C_ShowDetails, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'StoreMain_MTXOffer_C_ShowDetails::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StoreMain_MTXOffer_C_ShowDetails, CallFunc_Create_ReturnValue) == 0x000010, "Member 'StoreMain_MTXOffer_C_ShowDetails::CallFunc_Create_ReturnValue' has a wrong offset!");

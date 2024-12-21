@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x02C0 - 0x0238)
 class UZoneDayCompletion_ScoreBlock_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonNumericTextBlock*                NumericTextScore;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBoxRoot;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         CurrentValue;                                      // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,8 +68,8 @@ public:
 		return GetDefaultObjImpl<UZoneDayCompletion_ScoreBlock_C>();
 	}
 };
-static_assert(alignof(UZoneDayCompletion_ScoreBlock_C) == 0x322CBBB8, "Wrong alignment on UZoneDayCompletion_ScoreBlock_C");
-static_assert(sizeof(UZoneDayCompletion_ScoreBlock_C) == 0x322CBBB8, "Wrong size on UZoneDayCompletion_ScoreBlock_C");
+static_assert(alignof(UZoneDayCompletion_ScoreBlock_C) == 0x000008, "Wrong alignment on UZoneDayCompletion_ScoreBlock_C");
+static_assert(sizeof(UZoneDayCompletion_ScoreBlock_C) == 0x0002C0, "Wrong size on UZoneDayCompletion_ScoreBlock_C");
 static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, UberGraphFrame) == 0x000238, "Member 'UZoneDayCompletion_ScoreBlock_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, NumericTextScore) == 0x000240, "Member 'UZoneDayCompletion_ScoreBlock_C::NumericTextScore' has a wrong offset!");
 static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SizeBoxRoot) == 0x000248, "Member 'UZoneDayCompletion_ScoreBlock_C::SizeBoxRoot' has a wrong offset!");

@@ -20,9 +20,12 @@ namespace SDK
 {
 
 // Class Qos.QosBeaconClient
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0068 (0x04A0 - 0x0438)
 class AQosBeaconClient final : public AOnlineBeaconClient
 {
+public:
+	uint8                                         Pad_438[0x68];                                     // 0x0438(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void ClientQosResponse(EQosResponseType Response);
 	void ServerQosRequest(const class FString& InSessionId);
@@ -37,13 +40,16 @@ public:
 		return GetDefaultObjImpl<AQosBeaconClient>();
 	}
 };
-static_assert(alignof(AQosBeaconClient) == 0x11821D80, "Wrong alignment on AQosBeaconClient");
-static_assert(sizeof(AQosBeaconClient) == 0x11821D80, "Wrong size on AQosBeaconClient");
+static_assert(alignof(AQosBeaconClient) == 0x000008, "Wrong alignment on AQosBeaconClient");
+static_assert(sizeof(AQosBeaconClient) == 0x0004A0, "Wrong size on AQosBeaconClient");
 
 // Class Qos.QosBeaconHost
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0010 (0x03C0 - 0x03B0)
 class AQosBeaconHost final : public AOnlineBeaconHostObject
 {
+public:
+	uint8                                         Pad_3B0[0x10];                                     // 0x03B0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -54,11 +60,11 @@ public:
 		return GetDefaultObjImpl<AQosBeaconHost>();
 	}
 };
-static_assert(alignof(AQosBeaconHost) == 0x11821D80, "Wrong alignment on AQosBeaconHost");
-static_assert(sizeof(AQosBeaconHost) == 0x11821D80, "Wrong size on AQosBeaconHost");
+static_assert(alignof(AQosBeaconHost) == 0x000008, "Wrong alignment on AQosBeaconHost");
+static_assert(sizeof(AQosBeaconHost) == 0x0003C0, "Wrong size on AQosBeaconHost");
 
 // Class Qos.QosRegionManager
-// 0x118212D8 (0x11821300 - 0x0028)
+// 0x0080 (0x00A8 - 0x0028)
 class UQosRegionManager final : public UObject
 {
 public:
@@ -68,7 +74,7 @@ public:
 	float                                         PingTimeout;                                       // 0x0030(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FQosDatacenterInfo>             Datacenters;                                       // 0x0038(0x0010)(ZeroConstructor, Config, NativeAccessSpecifierPrivate)
-	struct FDateTime                              LastCheckTimestamp;                                // 0x0048(0x11821300)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FDateTime                              LastCheckTimestamp;                                // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UQosEvaluator*                          Evaluator;                                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EQosCompletionResult                          QosEvalResult;                                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -89,8 +95,8 @@ public:
 		return GetDefaultObjImpl<UQosRegionManager>();
 	}
 };
-static_assert(alignof(UQosRegionManager) == 0x11821300, "Wrong alignment on UQosRegionManager");
-static_assert(sizeof(UQosRegionManager) == 0x11821300, "Wrong size on UQosRegionManager");
+static_assert(alignof(UQosRegionManager) == 0x000008, "Wrong alignment on UQosRegionManager");
+static_assert(sizeof(UQosRegionManager) == 0x0000A8, "Wrong size on UQosRegionManager");
 static_assert(offsetof(UQosRegionManager, bUseOldQosServers) == 0x000028, "Member 'UQosRegionManager::bUseOldQosServers' has a wrong offset!");
 static_assert(offsetof(UQosRegionManager, NumTestsPerRegion) == 0x00002C, "Member 'UQosRegionManager::NumTestsPerRegion' has a wrong offset!");
 static_assert(offsetof(UQosRegionManager, PingTimeout) == 0x000030, "Member 'UQosRegionManager::PingTimeout' has a wrong offset!");
@@ -104,11 +110,12 @@ static_assert(offsetof(UQosRegionManager, bRegionForcedViaCommandline) == 0x0000
 static_assert(offsetof(UQosRegionManager, SelectedRegionId) == 0x000088, "Member 'UQosRegionManager::SelectedRegionId' has a wrong offset!");
 
 // Class Qos.QosEvaluator
-// 0x11825C58 (0x11825C80 - 0x0028)
+// 0x00F8 (0x0120 - 0x0028)
 class UQosEvaluator final : public UObject
 {
 public:
-	struct FQosSearchPass                         CurrentSearchPass;                                 // 0x0028(0x11825C80)(NoDestructor, NativeAccessSpecifierPrivate)
+	struct FQosSearchPass                         CurrentSearchPass;                                 // 0x0028(0x0008)(NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_30[0xA8];                                      // 0x0030(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ControllerId;                                      // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bInProgress;                                       // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bCancelOperation;                                  // 0x00DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -126,8 +133,8 @@ public:
 		return GetDefaultObjImpl<UQosEvaluator>();
 	}
 };
-static_assert(alignof(UQosEvaluator) == 0x11825C80, "Wrong alignment on UQosEvaluator");
-static_assert(sizeof(UQosEvaluator) == 0x11825C80, "Wrong size on UQosEvaluator");
+static_assert(alignof(UQosEvaluator) == 0x000008, "Wrong alignment on UQosEvaluator");
+static_assert(sizeof(UQosEvaluator) == 0x000120, "Wrong size on UQosEvaluator");
 static_assert(offsetof(UQosEvaluator, CurrentSearchPass) == 0x000028, "Member 'UQosEvaluator::CurrentSearchPass' has a wrong offset!");
 static_assert(offsetof(UQosEvaluator, ControllerId) == 0x0000D8, "Member 'UQosEvaluator::ControllerId' has a wrong offset!");
 static_assert(offsetof(UQosEvaluator, bInProgress) == 0x0000DC, "Member 'UQosEvaluator::bInProgress' has a wrong offset!");

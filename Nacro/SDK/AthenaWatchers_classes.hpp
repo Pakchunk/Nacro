@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaWatchers.AthenaWatchers_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0268 - 0x0260)
 class UAthenaWatchers_C final : public UFortHUDElementWidget
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UAthenaWatchers_C>();
 	}
 };
-static_assert(alignof(UAthenaWatchers_C) == 0x322CBBB8, "Wrong alignment on UAthenaWatchers_C");
-static_assert(sizeof(UAthenaWatchers_C) == 0x322CBBB8, "Wrong size on UAthenaWatchers_C");
+static_assert(alignof(UAthenaWatchers_C) == 0x000008, "Wrong alignment on UAthenaWatchers_C");
+static_assert(sizeof(UAthenaWatchers_C) == 0x000268, "Wrong size on UAthenaWatchers_C");
 static_assert(offsetof(UAthenaWatchers_C, Image_50) == 0x000260, "Member 'UAthenaWatchers_C::Image_50' has a wrong offset!");
 
 }

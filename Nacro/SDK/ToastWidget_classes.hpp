@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ToastWidget.ToastWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x02A0 - 0x0238)
 class UToastWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Outro;                                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Intro;                                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Description;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,7 +35,7 @@ public:
 	float                                         AnimationFinishedDelay;                            // 0x0280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OnFinishedToast;                                   // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FTimerHandle                           AnimationDelayTimer;                               // 0x0298(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           AnimationDelayTimer;                               // 0x0298(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void OnFinishedToast__DelegateSignature();
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UToastWidget_C>();
 	}
 };
-static_assert(alignof(UToastWidget_C) == 0x322CBBB8, "Wrong alignment on UToastWidget_C");
-static_assert(sizeof(UToastWidget_C) == 0x322CBBB8, "Wrong size on UToastWidget_C");
+static_assert(alignof(UToastWidget_C) == 0x000008, "Wrong alignment on UToastWidget_C");
+static_assert(sizeof(UToastWidget_C) == 0x0002A0, "Wrong size on UToastWidget_C");
 static_assert(offsetof(UToastWidget_C, UberGraphFrame) == 0x000238, "Member 'UToastWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UToastWidget_C, Outro) == 0x000240, "Member 'UToastWidget_C::Outro' has a wrong offset!");
 static_assert(offsetof(UToastWidget_C, Intro) == 0x000248, "Member 'UToastWidget_C::Intro' has a wrong offset!");

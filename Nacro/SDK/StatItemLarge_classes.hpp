@@ -21,18 +21,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StatItemLarge.StatItemLarge_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D0 (0x0400 - 0x0330)
 class UStatItemLarge_C final : public UFortAttributeListItem_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Icon;                                              // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Name_0;                                            // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                Value;                                             // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USoundCue*                              SoundCueValueUp;                                   // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundCue*                              SoundCueValueDown;                                 // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            IconBrush;                                         // 0x0360(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FLinearColor                           IconColor;                                         // 0x03F0(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FSlateBrush                            IconBrush;                                         // 0x0360(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FLinearColor                           IconColor;                                         // 0x03F0(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_StatItemLarge(int32 EntryPoint);
@@ -57,8 +57,8 @@ public:
 		return GetDefaultObjImpl<UStatItemLarge_C>();
 	}
 };
-static_assert(alignof(UStatItemLarge_C) == 0x322CBBB8, "Wrong alignment on UStatItemLarge_C");
-static_assert(sizeof(UStatItemLarge_C) == 0x322CBBB8, "Wrong size on UStatItemLarge_C");
+static_assert(alignof(UStatItemLarge_C) == 0x000008, "Wrong alignment on UStatItemLarge_C");
+static_assert(sizeof(UStatItemLarge_C) == 0x000400, "Wrong size on UStatItemLarge_C");
 static_assert(offsetof(UStatItemLarge_C, UberGraphFrame) == 0x000330, "Member 'UStatItemLarge_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStatItemLarge_C, Icon) == 0x000338, "Member 'UStatItemLarge_C::Icon' has a wrong offset!");
 static_assert(offsetof(UStatItemLarge_C, Name_0) == 0x000340, "Member 'UStatItemLarge_C::Name_0' has a wrong offset!");

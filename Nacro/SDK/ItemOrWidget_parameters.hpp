@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function ItemOrWidget.ItemOrWidget_C.ExecuteUbergraph_ItemOrWidget
-// 0x54006E (0x54006E - 0x0000)
-struct alignas(0x54006E) ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget final
+// 0x0004 (0x0004 - 0x0000)
+struct ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget) == 0x54006E, "Wrong alignment on ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget");
-static_assert(sizeof(ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget) == 0x54006E, "Wrong size on ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget");
+static_assert(alignof(ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget) == 0x000004, "Wrong alignment on ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget");
+static_assert(sizeof(ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget) == 0x000004, "Wrong size on ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget");
 static_assert(offsetof(ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget, EntryPoint) == 0x000000, "Member 'ItemOrWidget_C_ExecuteUbergraph_ItemOrWidget::EntryPoint' has a wrong offset!");
 
 }

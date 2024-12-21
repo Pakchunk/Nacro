@@ -35,18 +35,18 @@ static_assert(offsetof(Results_BonusXpType_C_ExecuteUbergraph_Results_BonusXpTyp
 static_assert(offsetof(Results_BonusXpType_C_ExecuteUbergraph_Results_BonusXpType, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x000010, "Member 'Results_BonusXpType_C_ExecuteUbergraph_Results_BonusXpType::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
 
 // Function Results_BonusXpType.Results_BonusXpType_C.PreConstruct
-// 0x0049 (0x0049 - 0x0000)
-struct alignas(0x49) Results_BonusXpType_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct Results_BonusXpType_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_BonusXpType_C_PreConstruct) == 0x000049, "Wrong alignment on Results_BonusXpType_C_PreConstruct");
-static_assert(sizeof(Results_BonusXpType_C_PreConstruct) == 0x000049, "Wrong size on Results_BonusXpType_C_PreConstruct");
+static_assert(alignof(Results_BonusXpType_C_PreConstruct) == 0x000001, "Wrong alignment on Results_BonusXpType_C_PreConstruct");
+static_assert(sizeof(Results_BonusXpType_C_PreConstruct) == 0x000001, "Wrong size on Results_BonusXpType_C_PreConstruct");
 static_assert(offsetof(Results_BonusXpType_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_BonusXpType_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_BonusXpType.Results_BonusXpType_C.setInformation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct Results_BonusXpType_C_SetInformation final
 {
 public:
@@ -59,15 +59,15 @@ public:
 	int32                                         XPAmount;                                          // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Bonus_Type;                                        // 0x004C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           TypeBackground;                                    // 0x0050(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           TypeBackground;                                    // 0x0050(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   TypeText;                                          // 0x0060(0x0018)(Edit)
-	struct FVector2D                              TypeScale;                                         // 0x0078(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              TypeScale;                                         // 0x0078(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0088(0x0018)()
 };
-static_assert(alignof(Results_BonusXpType_C_SetInformation) == 0x11821300, "Wrong alignment on Results_BonusXpType_C_SetInformation");
-static_assert(sizeof(Results_BonusXpType_C_SetInformation) == 0x11821300, "Wrong size on Results_BonusXpType_C_SetInformation");
+static_assert(alignof(Results_BonusXpType_C_SetInformation) == 0x000008, "Wrong alignment on Results_BonusXpType_C_SetInformation");
+static_assert(sizeof(Results_BonusXpType_C_SetInformation) == 0x0000A0, "Wrong size on Results_BonusXpType_C_SetInformation");
 static_assert(offsetof(Results_BonusXpType_C_SetInformation, InXPAmount) == 0x000000, "Member 'Results_BonusXpType_C_SetInformation::InXPAmount' has a wrong offset!");
 static_assert(offsetof(Results_BonusXpType_C_SetInformation, PlayerName) == 0x000008, "Member 'Results_BonusXpType_C_SetInformation::PlayerName' has a wrong offset!");
 static_assert(offsetof(Results_BonusXpType_C_SetInformation, InType) == 0x000020, "Member 'Results_BonusXpType_C_SetInformation::InType' has a wrong offset!");

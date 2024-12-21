@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass News.News_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0428 - 0x03E0)
 class UNews_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CloseButton;                                       // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             DescriptionScroll;                                 // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULightbox_C*                            Lightbox;                                          // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UNews_C>();
 	}
 };
-static_assert(alignof(UNews_C) == 0x322CBBB8, "Wrong alignment on UNews_C");
-static_assert(sizeof(UNews_C) == 0x322CBBB8, "Wrong size on UNews_C");
+static_assert(alignof(UNews_C) == 0x000008, "Wrong alignment on UNews_C");
+static_assert(sizeof(UNews_C) == 0x000428, "Wrong size on UNews_C");
 static_assert(offsetof(UNews_C, UberGraphFrame) == 0x0003E0, "Member 'UNews_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UNews_C, CloseButton) == 0x0003E8, "Member 'UNews_C::CloseButton' has a wrong offset!");
 static_assert(offsetof(UNews_C, DescriptionScroll) == 0x0003F0, "Member 'UNews_C::DescriptionScroll' has a wrong offset!");

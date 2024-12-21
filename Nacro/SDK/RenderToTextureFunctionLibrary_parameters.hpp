@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function RenderToTextureFunctionLibrary.RenderToTextureFunctionLibrary_C.Array to HLSL Int Array
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0598 (0x0598 - 0x0000)
 struct RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array final
 {
 public:
@@ -84,7 +84,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue2;           // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1ED[0x3];                                      // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue13;              // 0x01F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Array_Get_Item2;                          // 0x0200(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Array_Get_Item2;                          // 0x0200(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable3;                    // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -93,7 +93,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue3;           // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0238(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Array_Get_Item3;                          // 0x0248(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Array_Get_Item3;                          // 0x0248(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_R;                             // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G;                             // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B;                             // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -129,7 +129,7 @@ public:
 	bool                                          Temp_bool_Variable3;                               // 0x03EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue4;           // 0x03ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3EE[0x2];                                      // 0x03EE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Array_Get_Item4;                          // 0x03F0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Array_Get_Item4;                          // 0x03F0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0404(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -159,8 +159,8 @@ public:
 	class FString                                 K2Node_Select3_Default;                            // 0x0578(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 K2Node_Select4_Default;                            // 0x0588(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array) == 0x11821300, "Wrong alignment on RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array");
-static_assert(sizeof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array) == 0x11821300, "Wrong size on RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array");
+static_assert(alignof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array) == 0x000008, "Wrong alignment on RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array");
+static_assert(sizeof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array) == 0x000598, "Wrong size on RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Type) == 0x000000, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Type' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Variable_Name) == 0x000008, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Variable_Name' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Int) == 0x000018, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Int' has a wrong offset!");
@@ -284,30 +284,30 @@ static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array,
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, K2Node_Select4_Default) == 0x000588, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::K2Node_Select4_Default' has a wrong offset!");
 
 // Function RenderToTextureFunctionLibrary.RenderToTextureFunctionLibrary_C.Set Canvas Material Scale and Position
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position final
 {
 public:
-	struct FVector2D                              Size;                                              // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Position;                                          // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Size;                                              // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Position;                                          // 0x0008(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Scale;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Screen_Position;                                   // 0x0020(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Screen_Size;                                       // 0x0028(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Screen_Position;                                   // 0x0020(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Screen_Size;                                       // 0x0028(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x003C(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Subtract_Vector2DFloat_ReturnValue;       // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue2;      // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue2;       // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue3;      // 0x0064(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x006C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue;        // 0x0078(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0080(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Subtract_Vector2DFloat_ReturnValue;       // 0x0048(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue2;      // 0x0050(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue2;       // 0x0058(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue3;      // 0x0064(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x006C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue;        // 0x0078(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0080(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position) == 0x11821300, "Wrong alignment on RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position");
-static_assert(sizeof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position) == 0x11821300, "Wrong size on RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position");
+static_assert(alignof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position) == 0x000008, "Wrong alignment on RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position");
+static_assert(sizeof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position) == 0x000088, "Wrong size on RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, Size) == 0x000000, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::Size' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, Position) == 0x000008, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::Position' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, Scale) == 0x000010, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::Scale' has a wrong offset!");

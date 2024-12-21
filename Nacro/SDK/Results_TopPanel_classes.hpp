@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_TopPanel.Results_TopPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x0290 - 0x0230)
 class UResults_TopPanel_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_9;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_10;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UResults_TopPanel_C>();
 	}
 };
-static_assert(alignof(UResults_TopPanel_C) == 0x322CBBB8, "Wrong alignment on UResults_TopPanel_C");
-static_assert(sizeof(UResults_TopPanel_C) == 0x322CBBB8, "Wrong size on UResults_TopPanel_C");
+static_assert(alignof(UResults_TopPanel_C) == 0x000008, "Wrong alignment on UResults_TopPanel_C");
+static_assert(sizeof(UResults_TopPanel_C) == 0x000290, "Wrong size on UResults_TopPanel_C");
 static_assert(offsetof(UResults_TopPanel_C, UberGraphFrame) == 0x000230, "Member 'UResults_TopPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_TopPanel_C, Anim_Intro) == 0x000238, "Member 'UResults_TopPanel_C::Anim_Intro' has a wrong offset!");
 static_assert(offsetof(UResults_TopPanel_C, Image_9) == 0x000240, "Member 'UResults_TopPanel_C::Image_9' has a wrong offset!");

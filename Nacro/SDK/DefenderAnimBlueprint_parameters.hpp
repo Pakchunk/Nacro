@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function DefenderAnimBlueprint.DefenderAnimBlueprint_C.ExecuteUbergraph_DefenderAnimBlueprint
-// 0x00BC (0x00BC - 0x0000)
-struct alignas(0x5E) DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint final
+// 0x0064 (0x0064 - 0x0000)
+struct DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue7;         // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue7;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint) == 0x00005E, "Wrong alignment on DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint");
-static_assert(sizeof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint) == 0x0000BC, "Wrong size on DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint");
+static_assert(alignof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint) == 0x000004, "Wrong alignment on DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint");
+static_assert(sizeof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint) == 0x000064, "Wrong size on DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint");
 static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, EntryPoint) == 0x000000, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::EntryPoint' has a wrong offset!");
 static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Not_PreBool_ReturnValue2) == 0x000005, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");

@@ -18,19 +18,19 @@ namespace SDK::Params
 {
 
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.ExecuteUbergraph_OutpostScreenCanEditPanel
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0390 (0x0390 - 0x0000)
 struct OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTeamMemberInfo                    K2Node_CustomEvent_PlayerInfo;                     // 0x0008(0x11827900)(ConstParm)
+	struct FFortTeamMemberInfo                    K2Node_CustomEvent_PlayerInfo;                     // 0x0008(0x0190)(ConstParm)
 	TDelegate<void(struct FFortTeamMemberInfo& PlayerInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0198(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortBaseButton*                        K2Node_ComponentBoundEvent_Button2;                // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_Selected2;              // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate2;             // 0x01B8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFortTeamMemberInfo                    K2Node_CustomEvent_NewTeamMemberInfo;              // 0x01C8(0x11827900)()
+	struct FFortTeamMemberInfo                    K2Node_CustomEvent_NewTeamMemberInfo;              // 0x01C8(0x0190)()
 	int32                                         K2Node_CustomEvent_PlayerIndex;                    // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_35C[0x4];                                      // 0x035C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0360(0x0010)(ZeroConstructor, NoDestructor)
@@ -40,8 +40,8 @@ public:
 	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel) == 0x11821780, "Wrong alignment on OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel");
-static_assert(sizeof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel) == 0x11821780, "Wrong size on OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel");
+static_assert(alignof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel) == 0x000008, "Wrong alignment on OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel");
+static_assert(sizeof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel) == 0x000390, "Wrong size on OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel, EntryPoint) == 0x000000, "Member 'OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel::EntryPoint' has a wrong offset!");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel, K2Node_CustomEvent_PlayerInfo) == 0x000008, "Member 'OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel::K2Node_CustomEvent_PlayerInfo' has a wrong offset!");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000198, "Member 'OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -57,14 +57,14 @@ static_assert(offsetof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScree
 static_assert(offsetof(OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000388, "Member 'OutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
 
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.PartyUpdated
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct OutpostScreenCanEditPanel_C_PartyUpdated final
 {
 public:
-	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x0190)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OutpostScreenCanEditPanel_C_PartyUpdated) == 0x11821780, "Wrong alignment on OutpostScreenCanEditPanel_C_PartyUpdated");
-static_assert(sizeof(OutpostScreenCanEditPanel_C_PartyUpdated) == 0x11821780, "Wrong size on OutpostScreenCanEditPanel_C_PartyUpdated");
+static_assert(alignof(OutpostScreenCanEditPanel_C_PartyUpdated) == 0x000008, "Wrong alignment on OutpostScreenCanEditPanel_C_PartyUpdated");
+static_assert(sizeof(OutpostScreenCanEditPanel_C_PartyUpdated) == 0x000190, "Wrong size on OutpostScreenCanEditPanel_C_PartyUpdated");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_PartyUpdated, PlayerInfo) == 0x000000, "Member 'OutpostScreenCanEditPanel_C_PartyUpdated::PlayerInfo' has a wrong offset!");
 
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_71_CommonSelectedStateChanged__DelegateSignature
@@ -92,26 +92,26 @@ static_assert(sizeof(OutpostScreenCanEditPanel_C_HandleRemoved) == 0x000004, "Wr
 static_assert(offsetof(OutpostScreenCanEditPanel_C_HandleRemoved, PlayerIndex) == 0x000000, "Member 'OutpostScreenCanEditPanel_C_HandleRemoved::PlayerIndex' has a wrong offset!");
 
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.HandleJoined
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct OutpostScreenCanEditPanel_C_HandleJoined final
 {
 public:
-	struct FFortTeamMemberInfo                    NewTeamMemberInfo;                                 // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    NewTeamMemberInfo;                                 // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(OutpostScreenCanEditPanel_C_HandleJoined) == 0x11821780, "Wrong alignment on OutpostScreenCanEditPanel_C_HandleJoined");
-static_assert(sizeof(OutpostScreenCanEditPanel_C_HandleJoined) == 0x11821780, "Wrong size on OutpostScreenCanEditPanel_C_HandleJoined");
+static_assert(alignof(OutpostScreenCanEditPanel_C_HandleJoined) == 0x000008, "Wrong alignment on OutpostScreenCanEditPanel_C_HandleJoined");
+static_assert(sizeof(OutpostScreenCanEditPanel_C_HandleJoined) == 0x000190, "Wrong size on OutpostScreenCanEditPanel_C_HandleJoined");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_HandleJoined, NewTeamMemberInfo) == 0x000000, "Member 'OutpostScreenCanEditPanel_C_HandleJoined::NewTeamMemberInfo' has a wrong offset!");
 
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature
-// 0x750048 (0x750048 - 0x0000)
-struct alignas(0x750048) OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature final
+// 0x0010 (0x0010 - 0x0000)
+struct OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature final
 {
 public:
 	class UFortBaseButton*                        Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Selected;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature) == 0x750048, "Wrong alignment on OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature");
-static_assert(sizeof(OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature) == 0x750048, "Wrong size on OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature");
+static_assert(alignof(OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature");
+static_assert(sizeof(OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature) == 0x000010, "Wrong size on OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature, Button) == 0x000000, "Member 'OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature::Button' has a wrong offset!");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature, Selected) == 0x000008, "Member 'OutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature::Selected' has a wrong offset!");
 
@@ -183,8 +183,8 @@ static_assert(offsetof(OutpostScreenCanEditPanel_C_Init, CallFunc_BooleanAND_Ret
 static_assert(offsetof(OutpostScreenCanEditPanel_C_Init, K2Node_Select_Default) == 0x000084, "Member 'OutpostScreenCanEditPanel_C_Init::K2Node_Select_Default' has a wrong offset!");
 
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.SetMasterSwitch
-// 0x00F9 (0x00F9 - 0x0000)
-struct alignas(0xF9) OutpostScreenCanEditPanel_C_SetMasterSwitch final
+// 0x0058 (0x0058 - 0x0000)
+struct OutpostScreenCanEditPanel_C_SetMasterSwitch final
 {
 public:
 	bool                                          bCanEdit;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -206,8 +206,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OutpostScreenCanEditPanel_C_SetMasterSwitch) == 0x0000F9, "Wrong alignment on OutpostScreenCanEditPanel_C_SetMasterSwitch");
-static_assert(sizeof(OutpostScreenCanEditPanel_C_SetMasterSwitch) == 0x0000F9, "Wrong size on OutpostScreenCanEditPanel_C_SetMasterSwitch");
+static_assert(alignof(OutpostScreenCanEditPanel_C_SetMasterSwitch) == 0x000008, "Wrong alignment on OutpostScreenCanEditPanel_C_SetMasterSwitch");
+static_assert(sizeof(OutpostScreenCanEditPanel_C_SetMasterSwitch) == 0x000058, "Wrong size on OutpostScreenCanEditPanel_C_SetMasterSwitch");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_SetMasterSwitch, bCanEdit) == 0x000000, "Member 'OutpostScreenCanEditPanel_C_SetMasterSwitch::bCanEdit' has a wrong offset!");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_SetMasterSwitch, LocalPlayerState) == 0x000008, "Member 'OutpostScreenCanEditPanel_C_SetMasterSwitch::LocalPlayerState' has a wrong offset!");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_SetMasterSwitch, LocalCanEdit) == 0x000010, "Member 'OutpostScreenCanEditPanel_C_SetMasterSwitch::LocalCanEdit' has a wrong offset!");
@@ -225,7 +225,7 @@ static_assert(offsetof(OutpostScreenCanEditPanel_C_SetMasterSwitch, CallFunc_Boo
 
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.CenterWidget
 // 0x0028 (0x0028 - 0x0000)
-struct alignas(0x0A) OutpostScreenCanEditPanel_C_CenterWidget final
+struct OutpostScreenCanEditPanel_C_CenterWidget final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -235,7 +235,7 @@ public:
 	class UOutpostScreenCanEditRow_C*             K2Node_DynamicCast_AsOutpost_Screen_Can_Edit_Row;  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OutpostScreenCanEditPanel_C_CenterWidget) == 0x00000A, "Wrong alignment on OutpostScreenCanEditPanel_C_CenterWidget");
+static_assert(alignof(OutpostScreenCanEditPanel_C_CenterWidget) == 0x000008, "Wrong alignment on OutpostScreenCanEditPanel_C_CenterWidget");
 static_assert(sizeof(OutpostScreenCanEditPanel_C_CenterWidget) == 0x000028, "Wrong size on OutpostScreenCanEditPanel_C_CenterWidget");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_CenterWidget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OutpostScreenCanEditPanel_C_CenterWidget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OutpostScreenCanEditPanel_C_CenterWidget, CallFunc_IsVisible_ReturnValue) == 0x000008, "Member 'OutpostScreenCanEditPanel_C_CenterWidget::CallFunc_IsVisible_ReturnValue' has a wrong offset!");

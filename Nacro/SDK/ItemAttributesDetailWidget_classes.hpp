@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemAttributesDetailWidget.ItemAttributesDetailWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0280 - 0x0270)
 class UItemAttributesDetailWidget_C final : public UFortItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class UStatsListWidget_C*                     StatsListWidget;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UItemAttributesDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemAttributesDetailWidget_C) == 0x322CBBB8, "Wrong alignment on UItemAttributesDetailWidget_C");
-static_assert(sizeof(UItemAttributesDetailWidget_C) == 0x322CBBB8, "Wrong size on UItemAttributesDetailWidget_C");
+static_assert(alignof(UItemAttributesDetailWidget_C) == 0x000008, "Wrong alignment on UItemAttributesDetailWidget_C");
+static_assert(sizeof(UItemAttributesDetailWidget_C) == 0x000280, "Wrong size on UItemAttributesDetailWidget_C");
 static_assert(offsetof(UItemAttributesDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemAttributesDetailWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemAttributesDetailWidget_C, StatsListWidget) == 0x000278, "Member 'UItemAttributesDetailWidget_C::StatsListWidget' has a wrong offset!");
 

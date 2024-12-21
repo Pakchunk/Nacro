@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SkillTreeGroupColors_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SkillTreeGroups_structs.hpp"
-#include "SkillTreeGroupColors_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
@@ -20,14 +20,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass NodeBackground.NodeBackground_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x0918 - 0x08A0)
 class UNodeBackground_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
 	ESkillTreeGroups                              Group;                                             // 0x08A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8A9[0x3];                                      // 0x08A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSkillTreeGroupColors                  GroupColors;                                       // 0x08AC(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FSkillTreeGroupColors                  GroupColors;                                       // 0x08AC(0x0054)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          Horizontal;                                        // 0x0900(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_901[0x7];                                      // 0x0901(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 VerticalStyle;                                     // 0x0908(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UNodeBackground_C>();
 	}
 };
-static_assert(alignof(UNodeBackground_C) == 0x322CBBB8, "Wrong alignment on UNodeBackground_C");
-static_assert(sizeof(UNodeBackground_C) == 0x322CBBB8, "Wrong size on UNodeBackground_C");
+static_assert(alignof(UNodeBackground_C) == 0x000008, "Wrong alignment on UNodeBackground_C");
+static_assert(sizeof(UNodeBackground_C) == 0x000918, "Wrong size on UNodeBackground_C");
 static_assert(offsetof(UNodeBackground_C, UberGraphFrame) == 0x0008A0, "Member 'UNodeBackground_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UNodeBackground_C, Group) == 0x0008A8, "Member 'UNodeBackground_C::Group' has a wrong offset!");
 static_assert(offsetof(UNodeBackground_C, GroupColors) == 0x0008AC, "Member 'UNodeBackground_C::GroupColors' has a wrong offset!");

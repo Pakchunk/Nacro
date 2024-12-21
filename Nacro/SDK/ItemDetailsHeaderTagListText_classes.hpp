@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0288 - 0x0270)
 class UItemDetailsHeaderTagListText_C final : public UFortItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       TagListTextBlock;                                  // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          Show_New_System;                                   // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UItemDetailsHeaderTagListText_C>();
 	}
 };
-static_assert(alignof(UItemDetailsHeaderTagListText_C) == 0x322CBBB8, "Wrong alignment on UItemDetailsHeaderTagListText_C");
-static_assert(sizeof(UItemDetailsHeaderTagListText_C) == 0x322CBBB8, "Wrong size on UItemDetailsHeaderTagListText_C");
+static_assert(alignof(UItemDetailsHeaderTagListText_C) == 0x000008, "Wrong alignment on UItemDetailsHeaderTagListText_C");
+static_assert(sizeof(UItemDetailsHeaderTagListText_C) == 0x000288, "Wrong size on UItemDetailsHeaderTagListText_C");
 static_assert(offsetof(UItemDetailsHeaderTagListText_C, UberGraphFrame) == 0x000270, "Member 'UItemDetailsHeaderTagListText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemDetailsHeaderTagListText_C, TagListTextBlock) == 0x000278, "Member 'UItemDetailsHeaderTagListText_C::TagListTextBlock' has a wrong offset!");
 static_assert(offsetof(UItemDetailsHeaderTagListText_C, Show_New_System) == 0x000280, "Member 'UItemDetailsHeaderTagListText_C::Show_New_System' has a wrong offset!");

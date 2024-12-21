@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Base-ToolTip-Body.TextStyle-Base-ToolTip-Body_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusBaseMinusToolTipMinusBody_C final : public UTextStyleMinusBaseMinusSMinusBMinusBlue_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusBaseMinusToolTipMinusBody_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusBaseMinusToolTipMinusBody_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusBaseMinusToolTipMinusBody_C");
-static_assert(sizeof(UTextStyleMinusBaseMinusToolTipMinusBody_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusBaseMinusToolTipMinusBody_C");
+static_assert(alignof(UTextStyleMinusBaseMinusToolTipMinusBody_C) == 0x000008, "Wrong alignment on UTextStyleMinusBaseMinusToolTipMinusBody_C");
+static_assert(sizeof(UTextStyleMinusBaseMinusToolTipMinusBody_C) == 0x0000D0, "Wrong size on UTextStyleMinusBaseMinusToolTipMinusBody_C");
 
 }
 

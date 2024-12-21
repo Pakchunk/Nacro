@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0060 (0x0448 - 0x03E8)
 class ACheckFrontEndRewardsAction_C final : public AFortScriptedAction
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FFrontEndRewards_Definition            RewardsDefinition;                                 // 0x03F8(0x0048)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          ShowRewardsWidget;                                 // 0x0440(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<ACheckFrontEndRewardsAction_C>();
 	}
 };
-static_assert(alignof(ACheckFrontEndRewardsAction_C) == 0x11821D80, "Wrong alignment on ACheckFrontEndRewardsAction_C");
-static_assert(sizeof(ACheckFrontEndRewardsAction_C) == 0x11821D80, "Wrong size on ACheckFrontEndRewardsAction_C");
+static_assert(alignof(ACheckFrontEndRewardsAction_C) == 0x000008, "Wrong alignment on ACheckFrontEndRewardsAction_C");
+static_assert(sizeof(ACheckFrontEndRewardsAction_C) == 0x000448, "Wrong size on ACheckFrontEndRewardsAction_C");
 static_assert(offsetof(ACheckFrontEndRewardsAction_C, UberGraphFrame) == 0x0003E8, "Member 'ACheckFrontEndRewardsAction_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ACheckFrontEndRewardsAction_C, DefaultSceneRoot) == 0x0003F0, "Member 'ACheckFrontEndRewardsAction_C::DefaultSceneRoot' has a wrong offset!");
 static_assert(offsetof(ACheckFrontEndRewardsAction_C, RewardsDefinition) == 0x0003F8, "Member 'ACheckFrontEndRewardsAction_C::RewardsDefinition' has a wrong offset!");

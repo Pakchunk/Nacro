@@ -14,20 +14,20 @@
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "PlayerPawn_Generic_Parent_classes.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerPawn_Generic.PlayerPawn_Generic_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x04F0 (0x1C30 - 0x1740)
 #pragma pack(push, 0x1)
-class alignas(0x1182EB00) APlayerPawn_Generic_C : public APlayerPawn_Generic_Parent_C
+class alignas(0x10) APlayerPawn_Generic_C : public APlayerPawn_Generic_Parent_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Generic_C;               // 0x1740(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Generic_C;               // 0x1740(0x0008)(Transient, DuplicateTransient)
 	class UParticleSystemComponent*               Effect_Player_Run_Land;                            // 0x1748(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Effect_Player_Walk_Land;                           // 0x1750(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               PlayerPush_WindVector;                             // 0x1758(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -80,20 +80,20 @@ public:
 	float                                         Run_Particle_Activate_Speed;                       // 0x1864(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Walk_Dust_Activate_Speed;                          // 0x1868(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Walk_Particle_Reset_Speed;                         // 0x186C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PreviousVelocityVector;                            // 0x1870(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PreviousVelocityVector;                            // 0x1870(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanSpawnRunKickupFX_;                              // 0x187C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CanSpawnWalkKickupFX_;                             // 0x187D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CanSpawnDustLandFX_;                               // 0x187E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsInWater;                                         // 0x187F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               RunWalkParticleRotation;                           // 0x1880(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FRotator                               RunWalkParticleRotation;                           // 0x1880(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsNinjaInShadowStance_;                            // 0x188C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_188D[0x3];                                     // 0x188D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  GameplayTagsForHitByHuskMeleeSound;                // 0x1890(0x11821C00)(Edit, BlueprintVisible)
+	struct FGameplayTagContainer                  GameplayTagsForHitByHuskMeleeSound;                // 0x1890(0x0020)(Edit, BlueprintVisible)
 	class UMaterialInterface*                     Adrenaline_Material;                               // 0x18B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>       AdrenalineRush_HeadAnimatingMIDS;                  // 0x18B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>       AdrenalineRush_BodyAnimatingMIDS;                  // 0x18C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FLinearColor                           Adrenaline_Rush_Color_Outer_Direct;                // 0x18D8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Adrenaline_Rush_Color_Inner_Direct;                // 0x18E8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Adrenaline_Rush_Color_Outer_Direct;                // 0x18D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Adrenaline_Rush_Color_Inner_Direct;                // 0x18E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Adrenaline_Rush_WPO_Offset;                        // 0x18F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_18FC[0x4];                                     // 0x18FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               P_AdrenalineRushSparklesRunning;                   // 0x1900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -125,7 +125,7 @@ public:
 	bool                                          ShieldVisible_FullHealth;                          // 0x1987(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         Fully_Regened_Shield_health_Opacity;               // 0x1988(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_198C[0x4];                                     // 0x198C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_GameplayCueDamageShielded;                      // 0x1990(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_GameplayCueDamageShielded;                      // 0x1990(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          LatestDamageIsShieldDamage;                        // 0x19B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19B1[0x3];                                     // 0x19B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Damage_Taken;                                      // 0x19B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -146,9 +146,9 @@ public:
 	class USoundBase*                             DBNOResurrectSound;                                // 0x1A08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          On_Player_Built_Floor;                             // 0x1A10(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
 	uint8                                         Pad_1A11[0x7];                                     // 0x1A11(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           Event_NeedRoadsActive;                             // 0x1A18(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Event_NeedRoadsDeactive;                           // 0x1A20(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_WhereWereGoingWeNeedRoads;                      // 0x1A28(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                           Event_NeedRoadsActive;                             // 0x1A18(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Event_NeedRoadsDeactive;                           // 0x1A20(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_WhereWereGoingWeNeedRoads;                      // 0x1A28(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UParticleSystem*                        Effect_Player_LandedDust;                          // 0x1A48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               P_GravitySphere_LeftFoot;                          // 0x1A50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>       TempArray;                                         // 0x1A58(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -171,8 +171,9 @@ public:
 	uint8                                         Pad_1AF1[0x3];                                     // 0x1AF1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Time_when_you_ll_be_able_to_splash_again;          // 0x1AF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class A_WaterMeshBlueprintMaster_C*           CurrentWaterMeshActor;                             // 0x1AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             WaterTraceHitLocation;                             // 0x1B00(0x11827600)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                StableVelocityVector;                              // 0x1B88(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             WaterTraceHitLocation;                             // 0x1B00(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                StableVelocityVector;                              // 0x1B88(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B94[0x4];                                     // 0x1B94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        PlayerRunTemplate_Ground;                          // 0x1B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        PlayerWalkTemplate_Ground;                         // 0x1BA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        PlayerRunTemplate_Water;                           // 0x1BA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -181,9 +182,9 @@ public:
 	float                                         DefaultShieldOpacity;                              // 0x1BC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1BC4[0x4];                                     // 0x1BC4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               AnimTrailsPS_Ref;                                  // 0x1BC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Adrenaline_Rush_Color_Outer_Periodic;              // 0x1BD0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Adrenaline_Rush_Color_Outer_Periodic;              // 0x1BD0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     WeaponMaterialOverride;                            // 0x1BE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Adrenaline_Rush_Color_Inner_Periodic;              // 0x1BE8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Adrenaline_Rush_Color_Inner_Periodic;              // 0x1BE8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          TickWaterLevel;                                    // 0x1BF8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1BF9[0x7];                                     // 0x1BF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 WetnessDepthTexture;                               // 0x1C00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -281,8 +282,8 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APlayerPawn_Generic_C) == 0x1182EB00, "Wrong alignment on APlayerPawn_Generic_C");
-static_assert(sizeof(APlayerPawn_Generic_C) == 0x1182EB00, "Wrong size on APlayerPawn_Generic_C");
+static_assert(alignof(APlayerPawn_Generic_C) == 0x000010, "Wrong alignment on APlayerPawn_Generic_C");
+static_assert(sizeof(APlayerPawn_Generic_C) == 0x001C30, "Wrong size on APlayerPawn_Generic_C");
 static_assert(offsetof(APlayerPawn_Generic_C, UberGraphFrame_PlayerPawn_Generic_C) == 0x001740, "Member 'APlayerPawn_Generic_C::UberGraphFrame_PlayerPawn_Generic_C' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Run_Land) == 0x001748, "Member 'APlayerPawn_Generic_C::Effect_Player_Run_Land' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Walk_Land) == 0x001750, "Member 'APlayerPawn_Generic_C::Effect_Player_Walk_Land' has a wrong offset!");

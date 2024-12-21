@@ -19,37 +19,37 @@ namespace SDK::Params
 {
 
 // Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.ExecuteUbergraph_Announcement_ZoneModifiers
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x0038(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x0038(0x0008)(NoDestructor)
 	class AFortClientAnnouncement*                K2Node_Event_Announcement;                         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortClientAnnouncement_ZoneModifiers*  K2Node_DynamicCast_AsFort_Client_Announcement_Zone_Modifiers; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortClientAnnouncementData_Conversation K2Node_MakeStruct_FortClientAnnouncementData_Conversation; // 0x0058(0x1182E980)(NoDestructor)
+	struct FFortClientAnnouncementData_Conversation K2Node_MakeStruct_FortClientAnnouncementData_Conversation; // 0x0058(0x0010)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue3;         // 0x0080(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue3;         // 0x0080(0x0008)(NoDestructor)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AFortPlayerController*>          K2Node_MakeArray_Array;                            // 0x0098(0x0010)(ZeroConstructor, ReferenceParm)
 	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00B0(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00B0(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortClientAnnouncement_Conversation*   CallFunc_FinishSpawningActor_ReturnValue;          // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers) == 0x11821D80, "Wrong alignment on Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers");
-static_assert(sizeof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers) == 0x11821D80, "Wrong size on Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers");
+static_assert(alignof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers) == 0x000010, "Wrong alignment on Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers");
+static_assert(sizeof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers) == 0x0000F0, "Wrong size on Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers");
 static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, EntryPoint) == 0x000000, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");

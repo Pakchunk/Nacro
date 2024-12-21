@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function DailyRewards.DailyRewards_C.ExecuteUbergraph_DailyRewards
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct DailyRewards_C_ExecuteUbergraph_DailyRewards final
 {
 public:
@@ -37,7 +37,7 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortItemInstanceQuantityPair>  K2Node_Event_Loot;                                 // 0x0020(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0030(0x11821D80)(NoDestructor)
+	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0030(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -50,8 +50,8 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DailyRewards_C_ExecuteUbergraph_DailyRewards) == 0x11821D80, "Wrong alignment on DailyRewards_C_ExecuteUbergraph_DailyRewards");
-static_assert(sizeof(DailyRewards_C_ExecuteUbergraph_DailyRewards) == 0x11821D80, "Wrong size on DailyRewards_C_ExecuteUbergraph_DailyRewards");
+static_assert(alignof(DailyRewards_C_ExecuteUbergraph_DailyRewards) == 0x000008, "Wrong alignment on DailyRewards_C_ExecuteUbergraph_DailyRewards");
+static_assert(sizeof(DailyRewards_C_ExecuteUbergraph_DailyRewards) == 0x000068, "Wrong size on DailyRewards_C_ExecuteUbergraph_DailyRewards");
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, EntryPoint) == 0x000000, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::EntryPoint' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, Temp_byte_Variable) == 0x000004, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_ExecuteUbergraph_DailyRewards, Temp_byte_Variable2) == 0x000005, "Member 'DailyRewards_C_ExecuteUbergraph_DailyRewards::Temp_byte_Variable2' has a wrong offset!");
@@ -95,13 +95,13 @@ static_assert(sizeof(DailyRewards_C_PreConstruct) == 0x000001, "Wrong size on Da
 static_assert(offsetof(DailyRewards_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'DailyRewards_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function DailyRewards.DailyRewards_C.Setup Daily Rewards
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct DailyRewards_C_Setup_Daily_Rewards final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0004(0x11829280)(NoDestructor)
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize2;                 // 0x000C(0x11829280)(NoDestructor)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0004(0x0008)(NoDestructor)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize2;                 // 0x000C(0x0008)(NoDestructor)
 	EInputActionState                             Temp_byte_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             Temp_byte_Variable2;                               // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -134,11 +134,11 @@ public:
 	EInputActionState                             Temp_byte_Variable4;                               // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B2[0x2];                                       // 0x00B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDailyRewardsData                  CallFunc_TryGetDailyRewardsData_OutDailyRewardsData; // 0x00B8(0x1182E980)()
+	struct FFortDailyRewardsData                  CallFunc_TryGetDailyRewardsData_OutDailyRewardsData; // 0x00B8(0x0018)()
 	bool                                          CallFunc_TryGetDailyRewardsData_ReturnValue;       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDailyRewardsScheduleData          CallFunc_Array_Get_Item;                           // 0x00D8(0x1182E980)()
+	struct FFortDailyRewardsScheduleData          CallFunc_Array_Get_Item;                           // 0x00D8(0x0098)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_175[0x3];                                      // 0x0175(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -154,15 +154,15 @@ public:
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue3;             // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item2;                          // 0x0198(0x1182E980)(NoDestructor)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01A8(0x11821D80)(HasGetValueTypeHash)
+	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item2;                          // 0x0198(0x0010)(NoDestructor)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01A8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01E8(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0200(0x0018)()
 };
-static_assert(alignof(DailyRewards_C_Setup_Daily_Rewards) == 0x1182E980, "Wrong alignment on DailyRewards_C_Setup_Daily_Rewards");
-static_assert(sizeof(DailyRewards_C_Setup_Daily_Rewards) == 0x1182E980, "Wrong size on DailyRewards_C_Setup_Daily_Rewards");
+static_assert(alignof(DailyRewards_C_Setup_Daily_Rewards) == 0x000008, "Wrong alignment on DailyRewards_C_Setup_Daily_Rewards");
+static_assert(sizeof(DailyRewards_C_Setup_Daily_Rewards) == 0x000218, "Wrong size on DailyRewards_C_Setup_Daily_Rewards");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, Temp_int_Array_Index_Variable) == 0x000000, "Member 'DailyRewards_C_Setup_Daily_Rewards::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_MakeStruct_SlateChildSize) == 0x000004, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_Setup_Daily_Rewards, K2Node_MakeStruct_SlateChildSize2) == 0x00000C, "Member 'DailyRewards_C_Setup_Daily_Rewards::K2Node_MakeStruct_SlateChildSize2' has a wrong offset!");
@@ -233,13 +233,13 @@ static_assert(offsetof(DailyRewards_C_PopPanelWhileInGame, CallFunc_GetInputMana
 
 // Function DailyRewards.DailyRewards_C.Set Input Action Handlers
 // 0x0020 (0x0020 - 0x0000)
-struct DailyRewards_C_Set_Input_Action_Handlers final
+struct alignas(0x08) DailyRewards_C_Set_Input_Action_Handlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(DailyRewards_C_Set_Input_Action_Handlers) == 0x000004, "Wrong alignment on DailyRewards_C_Set_Input_Action_Handlers");
+static_assert(alignof(DailyRewards_C_Set_Input_Action_Handlers) == 0x000008, "Wrong alignment on DailyRewards_C_Set_Input_Action_Handlers");
 static_assert(sizeof(DailyRewards_C_Set_Input_Action_Handlers) == 0x000020, "Wrong size on DailyRewards_C_Set_Input_Action_Handlers");
 static_assert(offsetof(DailyRewards_C_Set_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'DailyRewards_C_Set_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(DailyRewards_C_Set_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'DailyRewards_C_Set_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -268,14 +268,14 @@ static_assert(offsetof(DailyRewards_C_Handle_Close, CallFunc_IsInZone_ReturnValu
 static_assert(offsetof(DailyRewards_C_Handle_Close, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000028, "Member 'DailyRewards_C_Handle_Close::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function DailyRewards.DailyRewards_C.Handle Collect
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) DailyRewards_C_Handle_Collect final
+// 0x0001 (0x0001 - 0x0000)
+struct DailyRewards_C_Handle_Collect final
 {
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DailyRewards_C_Handle_Collect) == 0x0000E4, "Wrong alignment on DailyRewards_C_Handle_Collect");
-static_assert(sizeof(DailyRewards_C_Handle_Collect) == 0x0000E4, "Wrong size on DailyRewards_C_Handle_Collect");
+static_assert(alignof(DailyRewards_C_Handle_Collect) == 0x000001, "Wrong alignment on DailyRewards_C_Handle_Collect");
+static_assert(sizeof(DailyRewards_C_Handle_Collect) == 0x000001, "Wrong size on DailyRewards_C_Handle_Collect");
 static_assert(offsetof(DailyRewards_C_Handle_Collect, PassThrough) == 0x000000, "Member 'DailyRewards_C_Handle_Collect::PassThrough' has a wrong offset!");
 
 }

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x02B8 - 0x0260)
 class UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C final : public UFortItemQuantityListEntryBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          Border;                                            // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCountTextBlock*                ItemCountHave;                                     // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCountTextBlock*                ItemCountNeed;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C>();
 	}
 };
-static_assert(alignof(UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C) == 0x322CBBB8, "Wrong alignment on UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C");
-static_assert(sizeof(UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C) == 0x322CBBB8, "Wrong size on UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C");
+static_assert(alignof(UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C) == 0x000008, "Wrong alignment on UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C");
+static_assert(sizeof(UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C) == 0x0002B8, "Wrong size on UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C");
 static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C, UberGraphFrame) == 0x000260, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C, Border) == 0x000268, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::Border' has a wrong offset!");
 static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C, ItemCountHave) == 0x000270, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ItemCountHave' has a wrong offset!");

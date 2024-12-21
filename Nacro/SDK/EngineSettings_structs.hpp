@@ -35,29 +35,29 @@ enum class ETwoPlayerSplitScreenType : uint8
 };
 
 // ScriptStruct EngineSettings.AutoCompleteCommand
-// 0x1182A000 (0x1182A000 - 0x0000)
-struct alignas(0x1182A000) FAutoCompleteCommand final
+// 0x0028 (0x0028 - 0x0000)
+struct FAutoCompleteCommand final
 {
 public:
 	class FString                                 Command;                                           // 0x0000(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Desc;                                              // 0x0010(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_20[0x8];                                       // 0x0020(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAutoCompleteCommand) == 0x1182A000, "Wrong alignment on FAutoCompleteCommand");
-static_assert(sizeof(FAutoCompleteCommand) == 0x1182A000, "Wrong size on FAutoCompleteCommand");
+static_assert(alignof(FAutoCompleteCommand) == 0x000008, "Wrong alignment on FAutoCompleteCommand");
+static_assert(sizeof(FAutoCompleteCommand) == 0x000028, "Wrong size on FAutoCompleteCommand");
 static_assert(offsetof(FAutoCompleteCommand, Command) == 0x000000, "Member 'FAutoCompleteCommand::Command' has a wrong offset!");
 static_assert(offsetof(FAutoCompleteCommand, Desc) == 0x000010, "Member 'FAutoCompleteCommand::Desc' has a wrong offset!");
 
 // ScriptStruct EngineSettings.GameModeName
-// 0x1182A000 (0x1182A000 - 0x0000)
-struct alignas(0x1182A000) FGameModeName final
+// 0x0020 (0x0020 - 0x0000)
+struct FGameModeName final
 {
 public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FStringClassReference                  GameMode;                                          // 0x0010(0x11821300)(Edit, NativeAccessSpecifierPublic)
+	struct FStringClassReference                  GameMode;                                          // 0x0010(0x0010)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGameModeName) == 0x1182A000, "Wrong alignment on FGameModeName");
-static_assert(sizeof(FGameModeName) == 0x1182A000, "Wrong size on FGameModeName");
+static_assert(alignof(FGameModeName) == 0x000008, "Wrong alignment on FGameModeName");
+static_assert(sizeof(FGameModeName) == 0x000020, "Wrong size on FGameModeName");
 static_assert(offsetof(FGameModeName, Name) == 0x000000, "Member 'FGameModeName::Name' has a wrong offset!");
 static_assert(offsetof(FGameModeName, GameMode) == 0x000010, "Member 'FGameModeName::GameMode' has a wrong offset!");
 

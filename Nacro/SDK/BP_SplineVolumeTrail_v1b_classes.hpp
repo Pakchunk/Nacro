@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "En_SplineForwardAxes_01_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "En_SplineForwardAxes_01_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0230 (0x05B8 - 0x0388)
 class ABP_SplineVolumeTrail_v1b_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class UArrowComponent*                        DebugArrow;                                        // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            DebugRotateTimeline__Direction_A8B473E74A53FB0F346216B4D4D23AC9; // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -67,15 +67,15 @@ public:
 	class UCurveFloat*                            RotationOverLife;                                  // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          DebugMode;                                         // 0x0490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_491[0x3];                                      // 0x0491(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                DebugPositionOffset;                               // 0x0494(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FRotator                               DebugRotationRate;                                 // 0x04A0(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FVector                                DebugPositionOffset;                               // 0x0494(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FRotator                               DebugRotationRate;                                 // 0x04A0(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	float                                         DebugTickDelta;                                    // 0x04AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DebugPreviousTickTimestamp;                        // 0x04B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4B4[0x4];                                      // 0x04B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           Spline_System_Duration_Event_Handle;               // 0x04B8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           Spline_System_Duration_Event_Handle;               // 0x04B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          Use_Tick_Interval_LODs;                            // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           Tick_Interval_Event_Handle;                        // 0x04C8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           Tick_Interval_Event_Handle;                        // 0x04C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         Tick_Interval_LOD_Check_Rate;                      // 0x04D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 Tick_Interval_LOD_Distances;                       // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn)
@@ -85,11 +85,11 @@ public:
 	uint8                                         Pad_4FD[0x3];                                      // 0x04FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Recently_Rendered_Check_Rate;                      // 0x0500(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_504[0x4];                                      // 0x0504(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           Recently_Rendered_Event_Handle;                    // 0x0508(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           Recently_Rendered_Event_Handle;                    // 0x0508(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          RecentlyRendered;                                  // 0x0510(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_511[0x3];                                      // 0x0511(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Recently_Rendered_Tolerance;                       // 0x0514(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FVector                                SplineDefaultUpVector;                             // 0x0518(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FVector                                SplineDefaultUpVector;                             // 0x0518(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          SplineDefaultUpVectorInWorldSpace;                 // 0x0524(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	En_SplineForwardAxes_01                       SplineMeshForwardAxis;                             // 0x0525(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          CeaseAndDetachSplineUponCompletion;                // 0x0526(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -101,7 +101,7 @@ public:
 	uint8                                         Pad_541[0x7];                                      // 0x0541(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CurveBakeMID;                                      // 0x0548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FVector2D                              RenderTextureResolution;                           // 0x0558(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FVector2D                              RenderTextureResolution;                           // 0x0558(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TArray<class UCurveLinearColor*>              LinearColorCurvesToBake;                           // 0x0560(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn)
 	bool                                          WriteBakedCurveDataToDisk;                         // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_571[0x7];                                      // 0x0571(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -160,8 +160,8 @@ public:
 		return GetDefaultObjImpl<ABP_SplineVolumeTrail_v1b_C>();
 	}
 };
-static_assert(alignof(ABP_SplineVolumeTrail_v1b_C) == 0x11821D80, "Wrong alignment on ABP_SplineVolumeTrail_v1b_C");
-static_assert(sizeof(ABP_SplineVolumeTrail_v1b_C) == 0x11821D80, "Wrong size on ABP_SplineVolumeTrail_v1b_C");
+static_assert(alignof(ABP_SplineVolumeTrail_v1b_C) == 0x000008, "Wrong alignment on ABP_SplineVolumeTrail_v1b_C");
+static_assert(sizeof(ABP_SplineVolumeTrail_v1b_C) == 0x0005B8, "Wrong size on ABP_SplineVolumeTrail_v1b_C");
 static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, UberGraphFrame) == 0x000388, "Member 'ABP_SplineVolumeTrail_v1b_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugArrow) == 0x000390, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugArrow' has a wrong offset!");
 static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DefaultSceneRoot) == 0x000398, "Member 'ABP_SplineVolumeTrail_v1b_C::DefaultSceneRoot' has a wrong offset!");

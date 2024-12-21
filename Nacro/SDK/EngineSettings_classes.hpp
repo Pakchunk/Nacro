@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // Class EngineSettings.ConsoleSettings
-// 0x118212D8 (0x11821300 - 0x0028)
+// 0x0048 (0x0070 - 0x0028)
 class UConsoleSettings final : public UObject
 {
 public:
@@ -30,11 +30,12 @@ public:
 	float                                         BackgroundOpacityPercentage;                       // 0x0050(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOrderTopToBottom;                                 // 0x0054(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FColor                                 InputColor;                                        // 0x0058(0x11821300)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 HistoryColor;                                      // 0x005C(0x11821300)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 AutoCompleteCommandColor;                          // 0x0060(0x11821300)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 AutoCompleteCVarColor;                             // 0x0064(0x11821300)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 AutoCompleteFadedColor;                            // 0x0068(0x11821300)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 InputColor;                                        // 0x0058(0x0004)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 HistoryColor;                                      // 0x005C(0x0004)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 AutoCompleteCommandColor;                          // 0x0060(0x0004)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 AutoCompleteCVarColor;                             // 0x0064(0x0004)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 AutoCompleteFadedColor;                            // 0x0068(0x0004)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -46,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UConsoleSettings>();
 	}
 };
-static_assert(alignof(UConsoleSettings) == 0x11821300, "Wrong alignment on UConsoleSettings");
-static_assert(sizeof(UConsoleSettings) == 0x11821300, "Wrong size on UConsoleSettings");
+static_assert(alignof(UConsoleSettings) == 0x000008, "Wrong alignment on UConsoleSettings");
+static_assert(sizeof(UConsoleSettings) == 0x000070, "Wrong size on UConsoleSettings");
 static_assert(offsetof(UConsoleSettings, MaxScrollbackSize) == 0x000028, "Member 'UConsoleSettings::MaxScrollbackSize' has a wrong offset!");
 static_assert(offsetof(UConsoleSettings, ManualAutoCompleteList) == 0x000030, "Member 'UConsoleSettings::ManualAutoCompleteList' has a wrong offset!");
 static_assert(offsetof(UConsoleSettings, AutoCompleteMapPaths) == 0x000040, "Member 'UConsoleSettings::AutoCompleteMapPaths' has a wrong offset!");
@@ -60,23 +61,23 @@ static_assert(offsetof(UConsoleSettings, AutoCompleteCVarColor) == 0x000064, "Me
 static_assert(offsetof(UConsoleSettings, AutoCompleteFadedColor) == 0x000068, "Member 'UConsoleSettings::AutoCompleteFadedColor' has a wrong offset!");
 
 // Class EngineSettings.GameMapsSettings
-// 0x118212D8 (0x11821300 - 0x0028)
+// 0x00A8 (0x00D0 - 0x0028)
 class UGameMapsSettings final : public UObject
 {
 public:
-	struct FStringAssetReference                  EditorStartupMap;                                  // 0x0028(0x11821300)(Edit, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FStringAssetReference                  EditorStartupMap;                                  // 0x0028(0x0010)(Edit, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LocalMapOptions;                                   // 0x0038(0x0010)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FStringAssetReference                  TransitionMap;                                     // 0x0048(0x11821300)(Edit, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FStringAssetReference                  TransitionMap;                                     // 0x0048(0x0010)(Edit, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseSplitscreen;                                   // 0x0058(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETwoPlayerSplitScreenType                     TwoPlayerSplitscreenLayout;                        // 0x0059(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EThreePlayerSplitScreenType                   ThreePlayerSplitscreenLayout;                      // 0x005A(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOffsetPlayerGamepadIds;                           // 0x005B(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStringClassReference                  GameInstanceClass;                                 // 0x0060(0x11821300)(Edit, Config, NoClear, NativeAccessSpecifierPublic)
-	struct FStringAssetReference                  GameDefaultMap;                                    // 0x0070(0x11821300)(Edit, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FStringAssetReference                  ServerDefaultMap;                                  // 0x0080(0x11821300)(Edit, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FStringClassReference                  GlobalDefaultGameMode;                             // 0x0090(0x11821300)(Edit, Config, NoClear, NativeAccessSpecifierPrivate)
-	struct FStringClassReference                  GlobalDefaultServerGameMode;                       // 0x00A0(0x11821300)(Edit, Config, AdvancedDisplay, NativeAccessSpecifierPrivate)
+	struct FStringClassReference                  GameInstanceClass;                                 // 0x0060(0x0010)(Edit, Config, NoClear, NativeAccessSpecifierPublic)
+	struct FStringAssetReference                  GameDefaultMap;                                    // 0x0070(0x0010)(Edit, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FStringAssetReference                  ServerDefaultMap;                                  // 0x0080(0x0010)(Edit, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FStringClassReference                  GlobalDefaultGameMode;                             // 0x0090(0x0010)(Edit, Config, NoClear, NativeAccessSpecifierPrivate)
+	struct FStringClassReference                  GlobalDefaultServerGameMode;                       // 0x00A0(0x0010)(Edit, Config, AdvancedDisplay, NativeAccessSpecifierPrivate)
 	TArray<struct FGameModeName>                  GameModeMapPrefixes;                               // 0x00B0(0x0010)(Edit, ZeroConstructor, Config, AdvancedDisplay, NativeAccessSpecifierPrivate)
 	TArray<struct FGameModeName>                  GameModeClassAliases;                              // 0x00C0(0x0010)(Edit, ZeroConstructor, Config, AdvancedDisplay, NativeAccessSpecifierPrivate)
 
@@ -90,8 +91,8 @@ public:
 		return GetDefaultObjImpl<UGameMapsSettings>();
 	}
 };
-static_assert(alignof(UGameMapsSettings) == 0x11821300, "Wrong alignment on UGameMapsSettings");
-static_assert(sizeof(UGameMapsSettings) == 0x11821300, "Wrong size on UGameMapsSettings");
+static_assert(alignof(UGameMapsSettings) == 0x000008, "Wrong alignment on UGameMapsSettings");
+static_assert(sizeof(UGameMapsSettings) == 0x0000D0, "Wrong size on UGameMapsSettings");
 static_assert(offsetof(UGameMapsSettings, EditorStartupMap) == 0x000028, "Member 'UGameMapsSettings::EditorStartupMap' has a wrong offset!");
 static_assert(offsetof(UGameMapsSettings, LocalMapOptions) == 0x000038, "Member 'UGameMapsSettings::LocalMapOptions' has a wrong offset!");
 static_assert(offsetof(UGameMapsSettings, TransitionMap) == 0x000048, "Member 'UGameMapsSettings::TransitionMap' has a wrong offset!");
@@ -192,7 +193,7 @@ static_assert(alignof(UGeneralEngineSettings) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UGeneralEngineSettings) == 0x000028, "Wrong size on UGeneralEngineSettings");
 
 // Class EngineSettings.GeneralProjectSettings
-// 0x118212D8 (0x11821300 - 0x0028)
+// 0x00E8 (0x0110 - 0x0028)
 class UGeneralProjectSettings final : public UObject
 {
 public:
@@ -203,7 +204,7 @@ public:
 	class FString                                 Homepage;                                          // 0x0068(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LicensingTerms;                                    // 0x0078(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PrivacyPolicy;                                     // 0x0088(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuid                                  ProjectID;                                         // 0x0098(0x11821300)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  ProjectID;                                         // 0x0098(0x0010)(Edit, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ProjectName;                                       // 0x00A8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ProjectVersion;                                    // 0x00B8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 SupportContact;                                    // 0x00C8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -228,8 +229,8 @@ public:
 		return GetDefaultObjImpl<UGeneralProjectSettings>();
 	}
 };
-static_assert(alignof(UGeneralProjectSettings) == 0x11821300, "Wrong alignment on UGeneralProjectSettings");
-static_assert(sizeof(UGeneralProjectSettings) == 0x11821300, "Wrong size on UGeneralProjectSettings");
+static_assert(alignof(UGeneralProjectSettings) == 0x000008, "Wrong alignment on UGeneralProjectSettings");
+static_assert(sizeof(UGeneralProjectSettings) == 0x000110, "Wrong size on UGeneralProjectSettings");
 static_assert(offsetof(UGeneralProjectSettings, CompanyName) == 0x000028, "Member 'UGeneralProjectSettings::CompanyName' has a wrong offset!");
 static_assert(offsetof(UGeneralProjectSettings, CompanyDistinguishedName) == 0x000038, "Member 'UGeneralProjectSettings::CompanyDistinguishedName' has a wrong offset!");
 static_assert(offsetof(UGeneralProjectSettings, CopyrightNotice) == 0x000048, "Member 'UGeneralProjectSettings::CopyrightNotice' has a wrong offset!");

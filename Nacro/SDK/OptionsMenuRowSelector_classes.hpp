@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OptionsMenuRowSelector.OptionsMenuRowSelector_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0288 - 0x0230)
 class UOptionsMenuRowSelector_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       RowSelectorText;                                   // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         SelectorButtonsBox;                                // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   Selector_Button_Selected;                          // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -55,8 +55,8 @@ public:
 		return GetDefaultObjImpl<UOptionsMenuRowSelector_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuRowSelector_C) == 0x322CBBB8, "Wrong alignment on UOptionsMenuRowSelector_C");
-static_assert(sizeof(UOptionsMenuRowSelector_C) == 0x322CBBB8, "Wrong size on UOptionsMenuRowSelector_C");
+static_assert(alignof(UOptionsMenuRowSelector_C) == 0x000008, "Wrong alignment on UOptionsMenuRowSelector_C");
+static_assert(sizeof(UOptionsMenuRowSelector_C) == 0x000288, "Wrong size on UOptionsMenuRowSelector_C");
 static_assert(offsetof(UOptionsMenuRowSelector_C, UberGraphFrame) == 0x000230, "Member 'UOptionsMenuRowSelector_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuRowSelector_C, RowSelectorText) == 0x000238, "Member 'UOptionsMenuRowSelector_C::RowSelectorText' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuRowSelector_C, SelectorButtonsBox) == 0x000240, "Member 'UOptionsMenuRowSelector_C::SelectorButtonsBox' has a wrong offset!");

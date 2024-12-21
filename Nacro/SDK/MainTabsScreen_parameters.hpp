@@ -67,26 +67,26 @@ static_assert(offsetof(MainTabsScreen_C_ExecuteUbergraph_MainTabsScreen, K2Node_
 static_assert(offsetof(MainTabsScreen_C_ExecuteUbergraph_MainTabsScreen, K2Node_Event_TabButton) == 0x000098, "Member 'MainTabsScreen_C_ExecuteUbergraph_MainTabsScreen::K2Node_Event_TabButton' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.HandleMainTabCreated
-// 0x5F0077 (0x5F0077 - 0x0000)
-struct alignas(0x5F0077) MainTabsScreen_C_HandleMainTabCreated final
+// 0x0010 (0x0010 - 0x0000)
+struct MainTabsScreen_C_HandleMainTabCreated final
 {
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainTabsScreen_C_HandleMainTabCreated) == 0x5F0077, "Wrong alignment on MainTabsScreen_C_HandleMainTabCreated");
-static_assert(sizeof(MainTabsScreen_C_HandleMainTabCreated) == 0x5F0077, "Wrong size on MainTabsScreen_C_HandleMainTabCreated");
+static_assert(alignof(MainTabsScreen_C_HandleMainTabCreated) == 0x000008, "Wrong alignment on MainTabsScreen_C_HandleMainTabCreated");
+static_assert(sizeof(MainTabsScreen_C_HandleMainTabCreated) == 0x000010, "Wrong size on MainTabsScreen_C_HandleMainTabCreated");
 static_assert(offsetof(MainTabsScreen_C_HandleMainTabCreated, TabNameID) == 0x000000, "Member 'MainTabsScreen_C_HandleMainTabCreated::TabNameID' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_HandleMainTabCreated, TabButton) == 0x000008, "Member 'MainTabsScreen_C_HandleMainTabCreated::TabButton' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.HandleMainTabSelected
 // 0x0008 (0x0008 - 0x0000)
-struct MainTabsScreen_C_HandleMainTabSelected final
+struct alignas(0x08) MainTabsScreen_C_HandleMainTabSelected final
 {
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainTabsScreen_C_HandleMainTabSelected) == 0x000004, "Wrong alignment on MainTabsScreen_C_HandleMainTabSelected");
+static_assert(alignof(MainTabsScreen_C_HandleMainTabSelected) == 0x000008, "Wrong alignment on MainTabsScreen_C_HandleMainTabSelected");
 static_assert(sizeof(MainTabsScreen_C_HandleMainTabSelected) == 0x000008, "Wrong size on MainTabsScreen_C_HandleMainTabSelected");
 static_assert(offsetof(MainTabsScreen_C_HandleMainTabSelected, TabNameID) == 0x000000, "Member 'MainTabsScreen_C_HandleMainTabSelected::TabNameID' has a wrong offset!");
 
@@ -115,8 +115,8 @@ static_assert(offsetof(MainTabsScreen_C_CustomEvent, TabId) == 0x000000, "Member
 static_assert(offsetof(MainTabsScreen_C_CustomEvent, TabButton) == 0x000008, "Member 'MainTabsScreen_C_CustomEvent::TabButton' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.HandleTabCreated
-// 0x460065 (0x460065 - 0x0000)
-struct alignas(0x460065) MainTabsScreen_C_HandleTabCreated final
+// 0x0060 (0x0060 - 0x0000)
+struct MainTabsScreen_C_HandleTabCreated final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -133,8 +133,8 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0048(0x0018)()
 };
-static_assert(alignof(MainTabsScreen_C_HandleTabCreated) == 0x460065, "Wrong alignment on MainTabsScreen_C_HandleTabCreated");
-static_assert(sizeof(MainTabsScreen_C_HandleTabCreated) == 0x460065, "Wrong size on MainTabsScreen_C_HandleTabCreated");
+static_assert(alignof(MainTabsScreen_C_HandleTabCreated) == 0x000008, "Wrong alignment on MainTabsScreen_C_HandleTabCreated");
+static_assert(sizeof(MainTabsScreen_C_HandleTabCreated) == 0x000060, "Wrong size on MainTabsScreen_C_HandleTabCreated");
 static_assert(offsetof(MainTabsScreen_C_HandleTabCreated, TabId) == 0x000000, "Member 'MainTabsScreen_C_HandleTabCreated::TabId' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_HandleTabCreated, TabButton) == 0x000008, "Member 'MainTabsScreen_C_HandleTabCreated::TabButton' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_HandleTabCreated, LocalTab) == 0x000010, "Member 'MainTabsScreen_C_HandleTabCreated::LocalTab' has a wrong offset!");
@@ -147,21 +147,21 @@ static_assert(offsetof(MainTabsScreen_C_HandleTabCreated, K2Node_DynamicCast_bSu
 static_assert(offsetof(MainTabsScreen_C_HandleTabCreated, CallFunc_TextToUpper_ReturnValue) == 0x000048, "Member 'MainTabsScreen_C_HandleTabCreated::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.HandleTabSelected
-// 0x00B2 (0x00B2 - 0x0000)
-struct alignas(0xB2) MainTabsScreen_C_HandleTabSelected final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) MainTabsScreen_C_HandleTabSelected final
 {
 public:
 	class FName                                   TabName;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_GetActiveTab_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainTabsScreen_C_HandleTabSelected) == 0x0000B2, "Wrong alignment on MainTabsScreen_C_HandleTabSelected");
-static_assert(sizeof(MainTabsScreen_C_HandleTabSelected) == 0x0000B2, "Wrong size on MainTabsScreen_C_HandleTabSelected");
+static_assert(alignof(MainTabsScreen_C_HandleTabSelected) == 0x000008, "Wrong alignment on MainTabsScreen_C_HandleTabSelected");
+static_assert(sizeof(MainTabsScreen_C_HandleTabSelected) == 0x000010, "Wrong size on MainTabsScreen_C_HandleTabSelected");
 static_assert(offsetof(MainTabsScreen_C_HandleTabSelected, TabName) == 0x000000, "Member 'MainTabsScreen_C_HandleTabSelected::TabName' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_HandleTabSelected, CallFunc_GetActiveTab_ReturnValue) == 0x000008, "Member 'MainTabsScreen_C_HandleTabSelected::CallFunc_GetActiveTab_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Update Squad Tab Button Bang
-// 0x010A (0x010A - 0x0000)
-struct alignas(0x10A) MainTabsScreen_C_Update_Squad_Tab_Button_Bang final
+// 0x0080 (0x0080 - 0x0000)
+struct MainTabsScreen_C_Update_Squad_Tab_Button_Bang final
 {
 public:
 	class FName                                   Tab;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -195,8 +195,8 @@ public:
 	class UIconTabButton_C*                       K2Node_DynamicCast_AsIcon_Tab_Button;              // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Update_Squad_Tab_Button_Bang) == 0x00010A, "Wrong alignment on MainTabsScreen_C_Update_Squad_Tab_Button_Bang");
-static_assert(sizeof(MainTabsScreen_C_Update_Squad_Tab_Button_Bang) == 0x00010A, "Wrong size on MainTabsScreen_C_Update_Squad_Tab_Button_Bang");
+static_assert(alignof(MainTabsScreen_C_Update_Squad_Tab_Button_Bang) == 0x000008, "Wrong alignment on MainTabsScreen_C_Update_Squad_Tab_Button_Bang");
+static_assert(sizeof(MainTabsScreen_C_Update_Squad_Tab_Button_Bang) == 0x000080, "Wrong size on MainTabsScreen_C_Update_Squad_Tab_Button_Bang");
 static_assert(offsetof(MainTabsScreen_C_Update_Squad_Tab_Button_Bang, Tab) == 0x000000, "Member 'MainTabsScreen_C_Update_Squad_Tab_Button_Bang::Tab' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Update_Squad_Tab_Button_Bang, CurrentTabId) == 0x000008, "Member 'MainTabsScreen_C_Update_Squad_Tab_Button_Bang::CurrentTabId' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Update_Squad_Tab_Button_Bang, EmptyTabId) == 0x000010, "Member 'MainTabsScreen_C_Update_Squad_Tab_Button_Bang::EmptyTabId' has a wrong offset!");
@@ -268,14 +268,14 @@ static_assert(offsetof(MainTabsScreen_C_Update_Hero_Tab_Button_Bang, K2Node_Dyna
 static_assert(offsetof(MainTabsScreen_C_Update_Hero_Tab_Button_Bang, K2Node_DynamicCast_bSuccess3) == 0x000060, "Member 'MainTabsScreen_C_Update_Hero_Tab_Button_Bang::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Update Tab Button Bangs
-// 0x00A6 (0x00A6 - 0x0000)
-struct alignas(0xA6) MainTabsScreen_C_Update_Tab_Button_Bangs final
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) MainTabsScreen_C_Update_Tab_Button_Bangs final
 {
 public:
 	class FName                                   InTab;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainTabsScreen_C_Update_Tab_Button_Bangs) == 0x0000A6, "Wrong alignment on MainTabsScreen_C_Update_Tab_Button_Bangs");
-static_assert(sizeof(MainTabsScreen_C_Update_Tab_Button_Bangs) == 0x0000A6, "Wrong size on MainTabsScreen_C_Update_Tab_Button_Bangs");
+static_assert(alignof(MainTabsScreen_C_Update_Tab_Button_Bangs) == 0x000008, "Wrong alignment on MainTabsScreen_C_Update_Tab_Button_Bangs");
+static_assert(sizeof(MainTabsScreen_C_Update_Tab_Button_Bangs) == 0x000008, "Wrong size on MainTabsScreen_C_Update_Tab_Button_Bangs");
 static_assert(offsetof(MainTabsScreen_C_Update_Tab_Button_Bangs, InTab) == 0x000000, "Member 'MainTabsScreen_C_Update_Tab_Button_Bangs::InTab' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Update Quest Tab Button Bang
@@ -412,25 +412,25 @@ static_assert(offsetof(MainTabsScreen_C_Update_Armory_Tab_Button_Bang, K2Node_Dy
 static_assert(offsetof(MainTabsScreen_C_Update_Armory_Tab_Button_Bang, K2Node_DynamicCast_bSuccess2) == 0x000040, "Member 'MainTabsScreen_C_Update_Armory_Tab_Button_Bang::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Get Item from Transform Seen State
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct MainTabsScreen_C_Get_Item_from_Transform_Seen_State final
 {
 public:
 	class UFortAccountItem*                       TransformKey;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAccountItem*                       OutItem;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  CatalystTags;                                      // 0x0010(0x11821C00)(Edit)
+	struct FGameplayTagContainer                  CatalystTags;                                      // 0x0010(0x0020)(Edit)
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortConversionControlItemDefinition*   K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition; // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  CallFunc_GetRequiredCatalysts_ReturnValue;         // 0x0048(0x11821C00)()
+	struct FGameplayTagContainer                  CallFunc_GetRequiredCatalysts_ReturnValue;         // 0x0048(0x0020)()
 	class AFortPlayerController*                  CallFunc_Get_FortPC_FortPC;                        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortHomebaseNodeItem*                  CallFunc_GetHomebaseNodeItemForTagContainer_ReturnValue; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumGameplayTagsInContainer_ReturnValue; // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State) == 0x11821C00, "Wrong alignment on MainTabsScreen_C_Get_Item_from_Transform_Seen_State");
-static_assert(sizeof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State) == 0x11821C00, "Wrong size on MainTabsScreen_C_Get_Item_from_Transform_Seen_State");
+static_assert(alignof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State) == 0x000008, "Wrong alignment on MainTabsScreen_C_Get_Item_from_Transform_Seen_State");
+static_assert(sizeof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State) == 0x000080, "Wrong size on MainTabsScreen_C_Get_Item_from_Transform_Seen_State");
 static_assert(offsetof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State, TransformKey) == 0x000000, "Member 'MainTabsScreen_C_Get_Item_from_Transform_Seen_State::TransformKey' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State, OutItem) == 0x000008, "Member 'MainTabsScreen_C_Get_Item_from_Transform_Seen_State::OutItem' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State, CatalystTags) == 0x000010, "Member 'MainTabsScreen_C_Get_Item_from_Transform_Seen_State::CatalystTags' has a wrong offset!");
@@ -444,8 +444,8 @@ static_assert(offsetof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State, Call
 static_assert(offsetof(MainTabsScreen_C_Get_Item_from_Transform_Seen_State, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00007C, "Member 'MainTabsScreen_C_Get_Item_from_Transform_Seen_State::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Get FortPC
-// 0x00A3 (0x00A3 - 0x0000)
-struct alignas(0xA3) MainTabsScreen_C_Get_FortPC final
+// 0x0020 (0x0020 - 0x0000)
+struct MainTabsScreen_C_Get_FortPC final
 {
 public:
 	class AFortPlayerController*                  FortPC;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -453,16 +453,16 @@ public:
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Get_FortPC) == 0x0000A3, "Wrong alignment on MainTabsScreen_C_Get_FortPC");
-static_assert(sizeof(MainTabsScreen_C_Get_FortPC) == 0x0000A3, "Wrong size on MainTabsScreen_C_Get_FortPC");
+static_assert(alignof(MainTabsScreen_C_Get_FortPC) == 0x000008, "Wrong alignment on MainTabsScreen_C_Get_FortPC");
+static_assert(sizeof(MainTabsScreen_C_Get_FortPC) == 0x000020, "Wrong size on MainTabsScreen_C_Get_FortPC");
 static_assert(offsetof(MainTabsScreen_C_Get_FortPC, FortPC) == 0x000000, "Member 'MainTabsScreen_C_Get_FortPC::FortPC' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Get_FortPC, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MainTabsScreen_C_Get_FortPC::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Get_FortPC, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'MainTabsScreen_C_Get_FortPC::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Get_FortPC, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MainTabsScreen_C_Get_FortPC::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Are Any Transform Keys Unseen
-// 0x0054 (0x0054 - 0x0000)
-struct alignas(0x0E) MainTabsScreen_C_Are_Any_Transform_Keys_Unseen final
+// 0x0050 (0x0050 - 0x0000)
+struct MainTabsScreen_C_Are_Any_Transform_Keys_Unseen final
 {
 public:
 	bool                                          Unseen;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -487,8 +487,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Are_Any_Transform_Keys_Unseen) == 0x00000E, "Wrong alignment on MainTabsScreen_C_Are_Any_Transform_Keys_Unseen");
-static_assert(sizeof(MainTabsScreen_C_Are_Any_Transform_Keys_Unseen) == 0x000054, "Wrong size on MainTabsScreen_C_Are_Any_Transform_Keys_Unseen");
+static_assert(alignof(MainTabsScreen_C_Are_Any_Transform_Keys_Unseen) == 0x000008, "Wrong alignment on MainTabsScreen_C_Are_Any_Transform_Keys_Unseen");
+static_assert(sizeof(MainTabsScreen_C_Are_Any_Transform_Keys_Unseen) == 0x000050, "Wrong size on MainTabsScreen_C_Are_Any_Transform_Keys_Unseen");
 static_assert(offsetof(MainTabsScreen_C_Are_Any_Transform_Keys_Unseen, Unseen) == 0x000000, "Member 'MainTabsScreen_C_Are_Any_Transform_Keys_Unseen::Unseen' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Are_Any_Transform_Keys_Unseen, LocalUnseen) == 0x000001, "Member 'MainTabsScreen_C_Are_Any_Transform_Keys_Unseen::LocalUnseen' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Are_Any_Transform_Keys_Unseen, Temp_bool_True_if_break_was_hit_Variable) == 0x000002, "Member 'MainTabsScreen_C_Are_Any_Transform_Keys_Unseen::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
@@ -698,7 +698,7 @@ static_assert(offsetof(MainTabsScreen_C_Update_Skills_Tab_Button_Bang, K2Node_Dy
 static_assert(offsetof(MainTabsScreen_C_Update_Skills_Tab_Button_Bang, K2Node_DynamicCast_bSuccess2) == 0x000078, "Member 'MainTabsScreen_C_Update_Skills_Tab_Button_Bang::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Are Any Nodes Available For Purchase
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase final
 {
 public:
@@ -715,7 +715,7 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseNodePage                      CallFunc_TryGetHomebaseNodePageData_OutHomebaseNodePage; // 0x0030(0x11821780)()
+	struct FHomebaseNodePage                      CallFunc_TryGetHomebaseNodePageData_OutHomebaseNodePage; // 0x0030(0x0060)()
 	bool                                          CallFunc_TryGetHomebaseNodePageData_ReturnValue;   // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -723,7 +723,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A2[0x2];                                       // 0x00A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseNodeState                     CallFunc_TryGetHomebaseNodeState_OutNodeState;     // 0x00A4(0x11821780)(NoDestructor)
+	struct FHomebaseNodeState                     CallFunc_TryGetHomebaseNodeState_OutNodeState;     // 0x00A4(0x0008)(NoDestructor)
 	bool                                          CallFunc_TryGetHomebaseNodeState_ReturnValue;      // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -731,8 +731,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue4;                  // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue5;                  // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase) == 0x11821780, "Wrong alignment on MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase");
-static_assert(sizeof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase) == 0x11821780, "Wrong size on MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase");
+static_assert(alignof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase) == 0x000008, "Wrong alignment on MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase");
+static_assert(sizeof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase) == 0x0000B8, "Wrong size on MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase");
 static_assert(offsetof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase, NodePageId) == 0x000000, "Member 'MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase::NodePageId' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase, ReturnValue) == 0x000008, "Member 'MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase::ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase, NodeAvailable) == 0x000009, "Member 'MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase::NodeAvailable' has a wrong offset!");
@@ -757,7 +757,7 @@ static_assert(offsetof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase, Ca
 static_assert(offsetof(MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase, CallFunc_BooleanAND_ReturnValue5) == 0x0000B1, "Member 'MainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase::CallFunc_BooleanAND_ReturnValue5' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Determine Unclaimed Resources at Threshold
-// 0x52535 (0x52535 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold final
 {
 public:
@@ -772,7 +772,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortItemQuantityPair                  CallFunc_GetResourceCollectorRewardsEstimate_OutEstimate; // 0x0028(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_GetResourceCollectorRewardsEstimate_OutEstimate; // 0x0028(0x0028)()
 	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue2;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetResourceCollectorRateInfo_RatePerSecond; // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -785,8 +785,8 @@ public:
 	class UFortCollectedResourceItem*             CallFunc_Array_Get_Item;                           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold) == 0x052535, "Wrong alignment on MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold");
-static_assert(sizeof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold) == 0x052535, "Wrong size on MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold");
+static_assert(alignof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold) == 0x000008, "Wrong alignment on MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold");
+static_assert(sizeof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold) == 0x000098, "Wrong size on MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold");
 static_assert(offsetof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold, Result) == 0x000000, "Member 'MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold::Result' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold, UnclaimedResearchMax) == 0x000004, "Member 'MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold::UnclaimedResearchMax' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold, UnclaimedResearch) == 0x000008, "Member 'MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold::UnclaimedResearch' has a wrong offset!");
@@ -808,61 +808,61 @@ static_assert(offsetof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Thresho
 static_assert(offsetof(MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold, CallFunc_Greater_IntInt_ReturnValue) == 0x000090, "Member 'MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Toggle Unclaimed Research Timer
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct MainTabsScreen_C_Toggle_Unclaimed_Research_Timer final
 {
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Toggle_Unclaimed_Research_Timer) == 0x11821D80, "Wrong alignment on MainTabsScreen_C_Toggle_Unclaimed_Research_Timer");
-static_assert(sizeof(MainTabsScreen_C_Toggle_Unclaimed_Research_Timer) == 0x11821D80, "Wrong size on MainTabsScreen_C_Toggle_Unclaimed_Research_Timer");
+static_assert(alignof(MainTabsScreen_C_Toggle_Unclaimed_Research_Timer) == 0x000008, "Wrong alignment on MainTabsScreen_C_Toggle_Unclaimed_Research_Timer");
+static_assert(sizeof(MainTabsScreen_C_Toggle_Unclaimed_Research_Timer) == 0x000020, "Wrong size on MainTabsScreen_C_Toggle_Unclaimed_Research_Timer");
 static_assert(offsetof(MainTabsScreen_C_Toggle_Unclaimed_Research_Timer, Enable) == 0x000000, "Member 'MainTabsScreen_C_Toggle_Unclaimed_Research_Timer::Enable' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Toggle_Unclaimed_Research_Timer, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MainTabsScreen_C_Toggle_Unclaimed_Research_Timer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Toggle_Unclaimed_Research_Timer, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'MainTabsScreen_C_Toggle_Unclaimed_Research_Timer::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Handle Unclaimed Resources Updated
-// 0x2DEB46C0 (0x2DEB46C0 - 0x0000)
-struct alignas(0x2DEB46C0) MainTabsScreen_C_Handle_Unclaimed_Resources_Updated final
+// 0x0001 (0x0001 - 0x0000)
+struct MainTabsScreen_C_Handle_Unclaimed_Resources_Updated final
 {
 public:
 	bool                                          CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result; // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Handle_Unclaimed_Resources_Updated) == 0x2DEB46C0, "Wrong alignment on MainTabsScreen_C_Handle_Unclaimed_Resources_Updated");
-static_assert(sizeof(MainTabsScreen_C_Handle_Unclaimed_Resources_Updated) == 0x2DEB46C0, "Wrong size on MainTabsScreen_C_Handle_Unclaimed_Resources_Updated");
+static_assert(alignof(MainTabsScreen_C_Handle_Unclaimed_Resources_Updated) == 0x000001, "Wrong alignment on MainTabsScreen_C_Handle_Unclaimed_Resources_Updated");
+static_assert(sizeof(MainTabsScreen_C_Handle_Unclaimed_Resources_Updated) == 0x000001, "Wrong size on MainTabsScreen_C_Handle_Unclaimed_Resources_Updated");
 static_assert(offsetof(MainTabsScreen_C_Handle_Unclaimed_Resources_Updated, CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result) == 0x000000, "Member 'MainTabsScreen_C_Handle_Unclaimed_Resources_Updated::CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.HandleMtxStore
 // 0x0008 (0x0008 - 0x0000)
-struct MainTabsScreen_C_HandleMtxStore final
+struct alignas(0x08) MainTabsScreen_C_HandleMtxStore final
 {
 public:
 	class FName                                   Tab_Id;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainTabsScreen_C_HandleMtxStore) == 0x000004, "Wrong alignment on MainTabsScreen_C_HandleMtxStore");
+static_assert(alignof(MainTabsScreen_C_HandleMtxStore) == 0x000008, "Wrong alignment on MainTabsScreen_C_HandleMtxStore");
 static_assert(sizeof(MainTabsScreen_C_HandleMtxStore) == 0x000008, "Wrong size on MainTabsScreen_C_HandleMtxStore");
 static_assert(offsetof(MainTabsScreen_C_HandleMtxStore, Tab_Id) == 0x000000, "Member 'MainTabsScreen_C_HandleMtxStore::Tab_Id' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.HandleCardPackStore
-// 0x000C (0x000C - 0x0000)
-struct MainTabsScreen_C_HandleCardPackStore final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) MainTabsScreen_C_HandleCardPackStore final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue2;         // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_HandleCardPackStore) == 0x000004, "Wrong alignment on MainTabsScreen_C_HandleCardPackStore");
-static_assert(sizeof(MainTabsScreen_C_HandleCardPackStore) == 0x00000C, "Wrong size on MainTabsScreen_C_HandleCardPackStore");
+static_assert(alignof(MainTabsScreen_C_HandleCardPackStore) == 0x000008, "Wrong alignment on MainTabsScreen_C_HandleCardPackStore");
+static_assert(sizeof(MainTabsScreen_C_HandleCardPackStore) == 0x000010, "Wrong size on MainTabsScreen_C_HandleCardPackStore");
 static_assert(offsetof(MainTabsScreen_C_HandleCardPackStore, TabId) == 0x000000, "Member 'MainTabsScreen_C_HandleCardPackStore::TabId' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_HandleCardPackStore, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000008, "Member 'MainTabsScreen_C_HandleCardPackStore::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_HandleCardPackStore, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x000009, "Member 'MainTabsScreen_C_HandleCardPackStore::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Is Transform Feature Unlocked
-// 0x0015 (0x0015 - 0x0000)
-struct alignas(0x15) MainTabsScreen_C_Is_Transform_Feature_Unlocked final
+// 0x0018 (0x0018 - 0x0000)
+struct MainTabsScreen_C_Is_Transform_Feature_Unlocked final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
@@ -872,8 +872,8 @@ public:
 	bool                                          CallFunc_HasGameplayTagContainer_ReturnValue2;     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Is_Transform_Feature_Unlocked) == 0x000015, "Wrong alignment on MainTabsScreen_C_Is_Transform_Feature_Unlocked");
-static_assert(sizeof(MainTabsScreen_C_Is_Transform_Feature_Unlocked) == 0x000015, "Wrong size on MainTabsScreen_C_Is_Transform_Feature_Unlocked");
+static_assert(alignof(MainTabsScreen_C_Is_Transform_Feature_Unlocked) == 0x000008, "Wrong alignment on MainTabsScreen_C_Is_Transform_Feature_Unlocked");
+static_assert(sizeof(MainTabsScreen_C_Is_Transform_Feature_Unlocked) == 0x000018, "Wrong size on MainTabsScreen_C_Is_Transform_Feature_Unlocked");
 static_assert(offsetof(MainTabsScreen_C_Is_Transform_Feature_Unlocked, ReturnValue) == 0x000000, "Member 'MainTabsScreen_C_Is_Transform_Feature_Unlocked::ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Is_Transform_Feature_Unlocked, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MainTabsScreen_C_Is_Transform_Feature_Unlocked::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Is_Transform_Feature_Unlocked, CallFunc_HasGameplayTagContainer_ReturnValue) == 0x000010, "Member 'MainTabsScreen_C_Is_Transform_Feature_Unlocked::CallFunc_HasGameplayTagContainer_ReturnValue' has a wrong offset!");
@@ -881,12 +881,12 @@ static_assert(offsetof(MainTabsScreen_C_Is_Transform_Feature_Unlocked, CallFunc_
 static_assert(offsetof(MainTabsScreen_C_Is_Transform_Feature_Unlocked, CallFunc_BooleanOR_ReturnValue) == 0x000012, "Member 'MainTabsScreen_C_Is_Transform_Feature_Unlocked::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Get Valid Offers
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x02C0 (0x02C0 - 0x0000)
 struct MainTabsScreen_C_Get_Valid_Offers final
 {
 public:
 	TArray<struct FCardPackOffer>                 Offers;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor)
-	struct FCardPackOffer                         TempOffer;                                         // 0x0010(0x1182E980)(Edit)
+	struct FCardPackOffer                         TempOffer;                                         // 0x0010(0x0090)(Edit)
 	TArray<struct FCardPackOffer>                 UpgradeOffers;                                     // 0x00A0(0x0010)(Edit, ZeroConstructor)
 	TArray<struct FCardPackOffer>                 SharedDisplayOffers;                               // 0x00B0(0x0010)(Edit, ZeroConstructor)
 	TArray<struct FCardPackOffer>                 StandardOffers;                                    // 0x00C0(0x0010)(Edit, ZeroConstructor)
@@ -894,10 +894,10 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCardPackOffer                         CallFunc_CheckHighestPriorityOffer_outPriorityOffer; // 0x00E0(0x1182E980)()
+	struct FCardPackOffer                         CallFunc_CheckHighestPriorityOffer_outPriorityOffer; // 0x00E0(0x0090)()
 	bool                                          CallFunc_CheckHighestPriorityOffer_FoundOffer;     // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCardPackOffer                         CallFunc_CheckHighestPriorityOffer_outPriorityOffer2; // 0x0178(0x1182E980)()
+	struct FCardPackOffer                         CallFunc_CheckHighestPriorityOffer_outPriorityOffer2; // 0x0178(0x0090)()
 	bool                                          CallFunc_CheckHighestPriorityOffer_FoundOffer2;    // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetMetaBoolOnOffer_ReturnValue;           // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetMetaBoolOnOffer_ReturnValue2;          // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -908,11 +908,11 @@ public:
 	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FCardPackOffer                         CallFunc_Array_Get_Item;                           // 0x0228(0x1182E980)()
+	struct FCardPackOffer                         CallFunc_Array_Get_Item;                           // 0x0228(0x0090)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Get_Valid_Offers) == 0x1182E980, "Wrong alignment on MainTabsScreen_C_Get_Valid_Offers");
-static_assert(sizeof(MainTabsScreen_C_Get_Valid_Offers) == 0x1182E980, "Wrong size on MainTabsScreen_C_Get_Valid_Offers");
+static_assert(alignof(MainTabsScreen_C_Get_Valid_Offers) == 0x000008, "Wrong alignment on MainTabsScreen_C_Get_Valid_Offers");
+static_assert(sizeof(MainTabsScreen_C_Get_Valid_Offers) == 0x0002C0, "Wrong size on MainTabsScreen_C_Get_Valid_Offers");
 static_assert(offsetof(MainTabsScreen_C_Get_Valid_Offers, Offers) == 0x000000, "Member 'MainTabsScreen_C_Get_Valid_Offers::Offers' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Get_Valid_Offers, TempOffer) == 0x000010, "Member 'MainTabsScreen_C_Get_Valid_Offers::TempOffer' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Get_Valid_Offers, UpgradeOffers) == 0x0000A0, "Member 'MainTabsScreen_C_Get_Valid_Offers::UpgradeOffers' has a wrong offset!");
@@ -936,21 +936,21 @@ static_assert(offsetof(MainTabsScreen_C_Get_Valid_Offers, CallFunc_Array_Get_Ite
 static_assert(offsetof(MainTabsScreen_C_Get_Valid_Offers, CallFunc_Less_IntInt_ReturnValue) == 0x0002B8, "Member 'MainTabsScreen_C_Get_Valid_Offers::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.CheckHighestPriorityOffer
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01F0 (0x01F0 - 0x0000)
 struct MainTabsScreen_C_CheckHighestPriorityOffer final
 {
 public:
 	TArray<struct FCardPackOffer>                 InOfferArray;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FCardPackOffer                         OutPriorityOffer;                                  // 0x0010(0x1182E980)(Parm, OutParm)
+	struct FCardPackOffer                         OutPriorityOffer;                                  // 0x0010(0x0090)(Parm, OutParm)
 	bool                                          FoundOffer;                                        // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          OfferFound;                                        // 0x00A1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCardPackOffer                         PriorityOffer;                                     // 0x00A8(0x1182E980)(Edit)
+	struct FCardPackOffer                         PriorityOffer;                                     // 0x00A8(0x0090)(Edit)
 	int32                                         HighestDisplayPriority;                            // 0x0138(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FCardPackOffer                         CallFunc_Array_Get_Item;                           // 0x0148(0x1182E980)()
+	struct FCardPackOffer                         CallFunc_Array_Get_Item;                           // 0x0148(0x0090)()
 	EStoreOfferCosts                              CallFunc_GetCustomStoreOfferCost_OutCustomStoreOfferCost; // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CheckDisplayCriteria_bPassedDisplayCriteria; // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1DA[0x2];                                      // 0x01DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -960,8 +960,8 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_CheckHighestPriorityOffer) == 0x1182E980, "Wrong alignment on MainTabsScreen_C_CheckHighestPriorityOffer");
-static_assert(sizeof(MainTabsScreen_C_CheckHighestPriorityOffer) == 0x1182E980, "Wrong size on MainTabsScreen_C_CheckHighestPriorityOffer");
+static_assert(alignof(MainTabsScreen_C_CheckHighestPriorityOffer) == 0x000008, "Wrong alignment on MainTabsScreen_C_CheckHighestPriorityOffer");
+static_assert(sizeof(MainTabsScreen_C_CheckHighestPriorityOffer) == 0x0001F0, "Wrong size on MainTabsScreen_C_CheckHighestPriorityOffer");
 static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, InOfferArray) == 0x000000, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::InOfferArray' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, OutPriorityOffer) == 0x000010, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::OutPriorityOffer' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, FoundOffer) == 0x0000A0, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::FoundOffer' has a wrong offset!");
@@ -980,11 +980,11 @@ static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, CallFunc_Add_
 static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, CallFunc_Greater_IntInt_ReturnValue) == 0x0001E8, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.GetCustomStoreOfferCost
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct MainTabsScreen_C_GetCustomStoreOfferCost final
 {
 public:
-	struct FCardPackOffer                         InCardPackOffer;                                   // 0x0000(0x1182E980)(Parm)
+	struct FCardPackOffer                         InCardPackOffer;                                   // 0x0000(0x0090)(Parm)
 	EStoreOfferCosts                              OutCustomStoreOfferCost;                           // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EStoreOfferCosts                              CustomStoreOfferCost;                              // 0x0091(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -993,8 +993,8 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue4;     // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_GetCustomStoreOfferCost) == 0x1182E980, "Wrong alignment on MainTabsScreen_C_GetCustomStoreOfferCost");
-static_assert(sizeof(MainTabsScreen_C_GetCustomStoreOfferCost) == 0x1182E980, "Wrong size on MainTabsScreen_C_GetCustomStoreOfferCost");
+static_assert(alignof(MainTabsScreen_C_GetCustomStoreOfferCost) == 0x000008, "Wrong alignment on MainTabsScreen_C_GetCustomStoreOfferCost");
+static_assert(sizeof(MainTabsScreen_C_GetCustomStoreOfferCost) == 0x000098, "Wrong size on MainTabsScreen_C_GetCustomStoreOfferCost");
 static_assert(offsetof(MainTabsScreen_C_GetCustomStoreOfferCost, InCardPackOffer) == 0x000000, "Member 'MainTabsScreen_C_GetCustomStoreOfferCost::InCardPackOffer' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_GetCustomStoreOfferCost, OutCustomStoreOfferCost) == 0x000090, "Member 'MainTabsScreen_C_GetCustomStoreOfferCost::OutCustomStoreOfferCost' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_GetCustomStoreOfferCost, CustomStoreOfferCost) == 0x000091, "Member 'MainTabsScreen_C_GetCustomStoreOfferCost::CustomStoreOfferCost' has a wrong offset!");
@@ -1005,13 +1005,13 @@ static_assert(offsetof(MainTabsScreen_C_GetCustomStoreOfferCost, CallFunc_EqualE
 static_assert(offsetof(MainTabsScreen_C_GetCustomStoreOfferCost, CallFunc_Greater_IntInt_ReturnValue) == 0x000096, "Member 'MainTabsScreen_C_GetCustomStoreOfferCost::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.CheckDisplayCriteria
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct MainTabsScreen_C_CheckDisplayCriteria final
 {
 public:
 	EStoreOfferCosts                              InCustomStoreOfferCost;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCardPackOffer                         InCardPackOffer;                                   // 0x0008(0x1182E980)(Parm)
+	struct FCardPackOffer                         InCardPackOffer;                                   // 0x0008(0x0090)(Parm)
 	bool                                          bPassedDisplayCriteria;                            // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CurrencyBalance;                                   // 0x009C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1020,14 +1020,15 @@ public:
 	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPrivateAccountInfo                CallFunc_GetLocalAccountInfo_Result;               // 0x00B8(0x11821780)(NoDestructor)
+	struct FFortPrivateAccountInfo                CallFunc_GetLocalAccountInfo_Result;               // 0x00B8(0x0014)(NoDestructor)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAccountItem*                       CallFunc_GetAccountItemWithDefinition_ReturnValue; // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainTabsScreen_C_CheckDisplayCriteria) == 0x1182E980, "Wrong alignment on MainTabsScreen_C_CheckDisplayCriteria");
-static_assert(sizeof(MainTabsScreen_C_CheckDisplayCriteria) == 0x1182E980, "Wrong size on MainTabsScreen_C_CheckDisplayCriteria");
+static_assert(alignof(MainTabsScreen_C_CheckDisplayCriteria) == 0x000008, "Wrong alignment on MainTabsScreen_C_CheckDisplayCriteria");
+static_assert(sizeof(MainTabsScreen_C_CheckDisplayCriteria) == 0x0000E0, "Wrong size on MainTabsScreen_C_CheckDisplayCriteria");
 static_assert(offsetof(MainTabsScreen_C_CheckDisplayCriteria, InCustomStoreOfferCost) == 0x000000, "Member 'MainTabsScreen_C_CheckDisplayCriteria::InCustomStoreOfferCost' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_CheckDisplayCriteria, InCardPackOffer) == 0x000008, "Member 'MainTabsScreen_C_CheckDisplayCriteria::InCardPackOffer' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_CheckDisplayCriteria, bPassedDisplayCriteria) == 0x000098, "Member 'MainTabsScreen_C_CheckDisplayCriteria::bPassedDisplayCriteria' has a wrong offset!");
@@ -1042,7 +1043,7 @@ static_assert(offsetof(MainTabsScreen_C_CheckDisplayCriteria, CallFunc_IsValid_R
 static_assert(offsetof(MainTabsScreen_C_CheckDisplayCriteria, CallFunc_GetNumInStack_ReturnValue) == 0x0000DC, "Member 'MainTabsScreen_C_CheckDisplayCriteria::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
 
 // Function MainTabsScreen.MainTabsScreen_C.Determine If Any non-MTX offers are purchasable
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable final
 {
 public:
@@ -1057,7 +1058,7 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCardPackOffer>                 CallFunc_Get_Valid_Offers_Offers;                  // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FCardPackOffer                         CallFunc_Array_Get_Item;                           // 0x0030(0x1182E980)()
+	struct FCardPackOffer                         CallFunc_Array_Get_Item;                           // 0x0030(0x0090)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1069,8 +1070,8 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable) == 0x1182E980, "Wrong alignment on MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable");
-static_assert(sizeof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable) == 0x1182E980, "Wrong size on MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable");
+static_assert(alignof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable) == 0x000008, "Wrong alignment on MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable");
+static_assert(sizeof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable) == 0x0000D8, "Wrong size on MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable");
 static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, ShowBang) == 0x000000, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::ShowBang' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, bShowBang) == 0x000001, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::bShowBang' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, Temp_int_Array_Index_Variable) == 0x000004, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::Temp_int_Array_Index_Variable' has a wrong offset!");

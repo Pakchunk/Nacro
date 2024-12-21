@@ -73,8 +73,8 @@ enum class ESimulationOverlap : uint8
 };
 
 // ScriptStruct Foliage.FoliageVertexColorChannelMask
-// 0x11826700 (0x11826700 - 0x0000)
-struct alignas(0x11826700) FFoliageVertexColorChannelMask final
+// 0x000C (0x000C - 0x0000)
+struct FFoliageVertexColorChannelMask final
 {
 public:
 	uint8                                         UseMask : 1;                                       // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -83,26 +83,27 @@ public:
 	uint8                                         InvertMask : 1;                                    // 0x0008(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FFoliageVertexColorChannelMask) == 0x11826700, "Wrong alignment on FFoliageVertexColorChannelMask");
-static_assert(sizeof(FFoliageVertexColorChannelMask) == 0x11826700, "Wrong size on FFoliageVertexColorChannelMask");
+static_assert(alignof(FFoliageVertexColorChannelMask) == 0x000004, "Wrong alignment on FFoliageVertexColorChannelMask");
+static_assert(sizeof(FFoliageVertexColorChannelMask) == 0x00000C, "Wrong size on FFoliageVertexColorChannelMask");
 static_assert(offsetof(FFoliageVertexColorChannelMask, MaskThreshold) == 0x000004, "Member 'FFoliageVertexColorChannelMask::MaskThreshold' has a wrong offset!");
 
 // ScriptStruct Foliage.ProceduralFoliageInstance
-// 0x11828680 (0x11828680 - 0x0000)
-struct alignas(0x11828680) FProceduralFoliageInstance final
+// 0x0060 (0x0060 - 0x0000)
+struct FProceduralFoliageInstance final
 {
 public:
-	struct FVector                                Location;                                          // 0x0000(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FQuat                                  Rotation;                                          // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                Normal;                                            // 0x0020(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0000(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FQuat                                  Rotation;                                          // 0x0010(0x0010)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                Normal;                                            // 0x0020(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Age;                                               // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Scale;                                             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFoliageType_InstancedStaticMesh*       Type;                                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_40[0x20];                                      // 0x0040(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProceduralFoliageInstance) == 0x11828680, "Wrong alignment on FProceduralFoliageInstance");
-static_assert(sizeof(FProceduralFoliageInstance) == 0x11828680, "Wrong size on FProceduralFoliageInstance");
+static_assert(alignof(FProceduralFoliageInstance) == 0x000010, "Wrong alignment on FProceduralFoliageInstance");
+static_assert(sizeof(FProceduralFoliageInstance) == 0x000060, "Wrong size on FProceduralFoliageInstance");
 static_assert(offsetof(FProceduralFoliageInstance, Location) == 0x000000, "Member 'FProceduralFoliageInstance::Location' has a wrong offset!");
 static_assert(offsetof(FProceduralFoliageInstance, Rotation) == 0x000010, "Member 'FProceduralFoliageInstance::Rotation' has a wrong offset!");
 static_assert(offsetof(FProceduralFoliageInstance, Normal) == 0x000020, "Member 'FProceduralFoliageInstance::Normal' has a wrong offset!");
@@ -111,8 +112,8 @@ static_assert(offsetof(FProceduralFoliageInstance, Scale) == 0x000030, "Member '
 static_assert(offsetof(FProceduralFoliageInstance, Type) == 0x000038, "Member 'FProceduralFoliageInstance::Type' has a wrong offset!");
 
 // ScriptStruct Foliage.FoliageTypeObject
-// 0x11828680 (0x11828680 - 0x0000)
-struct alignas(0x11828680) FFoliageTypeObject final
+// 0x0020 (0x0020 - 0x0000)
+struct FFoliageTypeObject final
 {
 public:
 	class UObject*                                FoliageTypeObject;                                 // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -121,8 +122,8 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UFoliageType_InstancedStaticMesh> Type;                                              // 0x0018(0x0008)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FFoliageTypeObject) == 0x11828680, "Wrong alignment on FFoliageTypeObject");
-static_assert(sizeof(FFoliageTypeObject) == 0x11828680, "Wrong size on FFoliageTypeObject");
+static_assert(alignof(FFoliageTypeObject) == 0x000008, "Wrong alignment on FFoliageTypeObject");
+static_assert(sizeof(FFoliageTypeObject) == 0x000020, "Wrong size on FFoliageTypeObject");
 static_assert(offsetof(FFoliageTypeObject, FoliageTypeObject) == 0x000000, "Member 'FFoliageTypeObject::FoliageTypeObject' has a wrong offset!");
 static_assert(offsetof(FFoliageTypeObject, TypeInstance) == 0x000008, "Member 'FFoliageTypeObject::TypeInstance' has a wrong offset!");
 static_assert(offsetof(FFoliageTypeObject, bIsAsset) == 0x000010, "Member 'FFoliageTypeObject::bIsAsset' has a wrong offset!");

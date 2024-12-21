@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function Item_TierStar.Item_TierStar_C.ExecuteUbergraph_Item_TierStar
-// 0x009F (0x009F - 0x0000)
-struct alignas(0x9F) Item_TierStar_C_ExecuteUbergraph_Item_TierStar final
+// 0x0004 (0x0004 - 0x0000)
+struct Item_TierStar_C_ExecuteUbergraph_Item_TierStar final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Item_TierStar_C_ExecuteUbergraph_Item_TierStar) == 0x00009F, "Wrong alignment on Item_TierStar_C_ExecuteUbergraph_Item_TierStar");
-static_assert(sizeof(Item_TierStar_C_ExecuteUbergraph_Item_TierStar) == 0x00009F, "Wrong size on Item_TierStar_C_ExecuteUbergraph_Item_TierStar");
+static_assert(alignof(Item_TierStar_C_ExecuteUbergraph_Item_TierStar) == 0x000004, "Wrong alignment on Item_TierStar_C_ExecuteUbergraph_Item_TierStar");
+static_assert(sizeof(Item_TierStar_C_ExecuteUbergraph_Item_TierStar) == 0x000004, "Wrong size on Item_TierStar_C_ExecuteUbergraph_Item_TierStar");
 static_assert(offsetof(Item_TierStar_C_ExecuteUbergraph_Item_TierStar, EntryPoint) == 0x000000, "Member 'Item_TierStar_C_ExecuteUbergraph_Item_TierStar::EntryPoint' has a wrong offset!");
 
 }

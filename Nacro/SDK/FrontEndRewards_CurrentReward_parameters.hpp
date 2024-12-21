@@ -19,21 +19,21 @@ namespace SDK::Params
 {
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.ExecuteUbergraph_FrontEndRewards_CurrentReward
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward) == 0x11821D80, "Wrong alignment on FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward");
-static_assert(sizeof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward) == 0x11821D80, "Wrong size on FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward");
+static_assert(alignof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward) == 0x000008, "Wrong alignment on FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward");
+static_assert(sizeof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward) == 0x000058, "Wrong size on FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, EntryPoint) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
@@ -100,15 +100,15 @@ static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, CallFunc_Subt
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, CallFunc_FInterpEaseInOut_ReturnValue) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_UpdateFade::CallFunc_FInterpEaseInOut_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.SkipOpenAnimation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct FrontEndRewards_CurrentReward_C_SkipOpenAnimation final
 {
 public:
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0000(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_CurrentReward_C_SkipOpenAnimation) == 0x11821300, "Wrong alignment on FrontEndRewards_CurrentReward_C_SkipOpenAnimation");
-static_assert(sizeof(FrontEndRewards_CurrentReward_C_SkipOpenAnimation) == 0x11821300, "Wrong size on FrontEndRewards_CurrentReward_C_SkipOpenAnimation");
+static_assert(alignof(FrontEndRewards_CurrentReward_C_SkipOpenAnimation) == 0x000004, "Wrong alignment on FrontEndRewards_CurrentReward_C_SkipOpenAnimation");
+static_assert(sizeof(FrontEndRewards_CurrentReward_C_SkipOpenAnimation) == 0x000014, "Wrong size on FrontEndRewards_CurrentReward_C_SkipOpenAnimation");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_SkipOpenAnimation, K2Node_MakeStruct_LinearColor) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_SkipOpenAnimation::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_SkipOpenAnimation, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000010, "Member 'FrontEndRewards_CurrentReward_C_SkipOpenAnimation::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
@@ -125,12 +125,12 @@ static_assert(offsetof(FrontEndRewards_CurrentReward_C_PlayFadeOutAnimation, Cal
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.StopBounceAnimation
 // 0x0010 (0x0010 - 0x0000)
-struct FrontEndRewards_CurrentReward_C_StopBounceAnimation final
+struct alignas(0x08) FrontEndRewards_CurrentReward_C_StopBounceAnimation final
 {
 public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_CurrentReward_C_StopBounceAnimation) == 0x000004, "Wrong alignment on FrontEndRewards_CurrentReward_C_StopBounceAnimation");
+static_assert(alignof(FrontEndRewards_CurrentReward_C_StopBounceAnimation) == 0x000008, "Wrong alignment on FrontEndRewards_CurrentReward_C_StopBounceAnimation");
 static_assert(sizeof(FrontEndRewards_CurrentReward_C_StopBounceAnimation) == 0x000010, "Wrong size on FrontEndRewards_CurrentReward_C_StopBounceAnimation");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_StopBounceAnimation, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_StopBounceAnimation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
@@ -226,15 +226,15 @@ static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound, K2Node_Select_Default) == 0x000038, "Member 'FrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound::K2Node_Select_Default' has a wrong offset!");
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Reset Canvas Panel Slot Alignment and Anchors
-// 0x0131 (0x0131 - 0x0000)
-struct alignas(0x131) FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors final
+// 0x0010 (0x0010 - 0x0000)
+struct FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors final
 {
 public:
 	class UCanvasPanelSlot*                       K2Node_DynamicCast_AsCanvas_Panel_Slot;            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors) == 0x000131, "Wrong alignment on FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors");
-static_assert(sizeof(FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors) == 0x000131, "Wrong size on FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors");
+static_assert(alignof(FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors) == 0x000008, "Wrong alignment on FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors");
+static_assert(sizeof(FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors) == 0x000010, "Wrong size on FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors, K2Node_DynamicCast_AsCanvas_Panel_Slot) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors::K2Node_DynamicCast_AsCanvas_Panel_Slot' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'FrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 

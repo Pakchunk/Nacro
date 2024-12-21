@@ -22,12 +22,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ConfirmationWindow.ConfirmationWindow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0298 (0x06A0 - 0x0408)
 class UConfirmationWindow_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         ButtonBox;                                         // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  ContentSwitcher;                                   // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Description;                                       // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -43,19 +43,20 @@ public:
 	class UCommonTextBlock*                       Title;                                             // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 WaitThrobber;                                      // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	uint8                                         Pad_488[0x8];                                      // 0x0488(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription_NUI             ConfirmationDescription;                           // 0x0490(0x1182E980)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FFortDialogDescription_NUI             ConfirmationDescription;                           // 0x0490(0x0180)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UIconTextButton_C*>              ConfirmButtons;                                    // 0x0610(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class UIconTextButton_C*                      DeclineButton;                                     // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                           ResultNames;                                       // 0x0628(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                          bShowingConfirmation;                              // 0x0638(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_639[0x3];                                      // 0x0639(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                ButtonBoxPadding;                                  // 0x063C(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FMargin                                ButtonBoxPadding_VerticalBox;                      // 0x064C(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FMargin                                ButtonBoxPadding;                                  // 0x063C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FMargin                                ButtonBoxPadding_VerticalBox;                      // 0x064C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	uint8                                         Pad_65C[0x4];                                      // 0x065C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FText>                           HoverTexts;                                        // 0x0660(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FLinearColor                           ButtonIconColor;                                   // 0x0670(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ButtonIconColor;                                   // 0x0670(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   WaitThrobberColorParamName;                        // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           WaitThrobberColor;                                 // 0x0688(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDialogExternalLatentActionHandle  WaitingForLatentActionHandle;                      // 0x0698(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FLinearColor                           WaitThrobberColor;                                 // 0x0688(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortDialogExternalLatentActionHandle  WaitingForLatentActionHandle;                      // 0x0698(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bShowLightBoxAnims;                                // 0x069C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bShouldTriggerCameraModeOnClose;                   // 0x069D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -108,8 +109,8 @@ public:
 		return GetDefaultObjImpl<UConfirmationWindow_C>();
 	}
 };
-static_assert(alignof(UConfirmationWindow_C) == 0x322CBBB8, "Wrong alignment on UConfirmationWindow_C");
-static_assert(sizeof(UConfirmationWindow_C) == 0x322CBBB8, "Wrong size on UConfirmationWindow_C");
+static_assert(alignof(UConfirmationWindow_C) == 0x000010, "Wrong alignment on UConfirmationWindow_C");
+static_assert(sizeof(UConfirmationWindow_C) == 0x0006A0, "Wrong size on UConfirmationWindow_C");
 static_assert(offsetof(UConfirmationWindow_C, UberGraphFrame) == 0x000410, "Member 'UConfirmationWindow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UConfirmationWindow_C, ButtonBox) == 0x000418, "Member 'UConfirmationWindow_C::ButtonBox' has a wrong offset!");
 static_assert(offsetof(UConfirmationWindow_C, ContentSwitcher) == 0x000420, "Member 'UConfirmationWindow_C::ContentSwitcher' has a wrong offset!");

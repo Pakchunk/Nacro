@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // Class SignificanceManager.SignificanceManager
-// 0x118212D8 (0x11821300 - 0x0028)
+// 0x00C8 (0x00F0 - 0x0028)
 class USignificanceManager : public UObject
 {
 public:
 	uint8                                         Pad_28[0xB8];                                      // 0x0028(0x00B8)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FStringClassReference                  SignificanceManagerClassName;                      // 0x00E0(0x11821300)(Edit, Config, GlobalConfig, NoClear, NativeAccessSpecifierPrivate)
+	struct FStringClassReference                  SignificanceManagerClassName;                      // 0x00E0(0x0010)(Edit, Config, GlobalConfig, NoClear, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -35,8 +35,8 @@ public:
 		return GetDefaultObjImpl<USignificanceManager>();
 	}
 };
-static_assert(alignof(USignificanceManager) == 0x11821300, "Wrong alignment on USignificanceManager");
-static_assert(sizeof(USignificanceManager) == 0x11821300, "Wrong size on USignificanceManager");
+static_assert(alignof(USignificanceManager) == 0x000008, "Wrong alignment on USignificanceManager");
+static_assert(sizeof(USignificanceManager) == 0x0000F0, "Wrong size on USignificanceManager");
 static_assert(offsetof(USignificanceManager, SignificanceManagerClassName) == 0x0000E0, "Member 'USignificanceManager::SignificanceManagerClassName' has a wrong offset!");
 
 }

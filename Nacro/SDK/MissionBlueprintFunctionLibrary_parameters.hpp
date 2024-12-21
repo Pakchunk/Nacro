@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "Struct_SurvivorScriptedAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
-#include "EnumEventWorldItemDrop_structs.hpp"
 #include "SurvivorBadgeTypes_structs.hpp"
+#include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Struct_SurvivorScriptedAbilities_structs.hpp"
+#include "EnumEventWorldItemDrop_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -24,8 +24,8 @@ namespace SDK::Params
 {
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.RegisterUI UpdatesWithDamageEvents
-// 0x31002D (0x31002D - 0x0000)
-struct alignas(0x31002D) MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents final
+// 0x0058 (0x0058 - 0x0000)
+struct MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents final
 {
 public:
 	class AActor*                                 ActorToRegisterWith;                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -39,8 +39,8 @@ public:
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents) == 0x31002D, "Wrong alignment on MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents) == 0x31002D, "Wrong size on MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents) == 0x000058, "Wrong size on MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents, ActorToRegisterWith) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents::ActorToRegisterWith' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents, MissionState) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents::MissionState' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents, __WorldContext) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents::__WorldContext' has a wrong offset!");
@@ -52,8 +52,8 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithD
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents, K2Node_DynamicCast_bSuccess2) == 0x000050, "Member 'MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.UnRegisterUI UpdatesWithDamageEvents
-// 0x02CC (0x02CC - 0x0000)
-struct alignas(0x2CC) MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents final
+// 0x0058 (0x0058 - 0x0000)
+struct MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents final
 {
 public:
 	class AActor*                                 ActorToUnRegisterWith;                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -67,8 +67,8 @@ public:
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents) == 0x0002CC, "Wrong alignment on MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents) == 0x0002CC, "Wrong size on MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents) == 0x000058, "Wrong size on MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents, ActorToUnRegisterWith) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents::ActorToUnRegisterWith' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents, MissionState) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents::MissionState' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents, __WorldContext) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents::__WorldContext' has a wrong offset!");
@@ -80,14 +80,14 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWit
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents, K2Node_DynamicCast_bSuccess2) == 0x000050, "Member 'MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GetObjectiveBadgeIconBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush final
 {
 public:
 	class AFortObjectiveBase*                     Objective;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           RewardTag;                                         // 0x0008(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           RewardTag;                                         // 0x0008(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            IconBrush;                                         // 0x0018(0x322CBBB8)(Parm, OutParm)
+	struct FSlateBrush                            IconBrush;                                         // 0x0018(0x0090)(Parm, OutParm)
 	class UFortBadgeItemDefinition*               BadgeItem;                                         // 0x00A8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -104,15 +104,15 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetSmallPreviewImageBrush_ReturnValue;    // 0x00F0(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetSmallPreviewImageBrush_ReturnValue;    // 0x00F0(0x0090)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush) == 0x11827900, "Wrong alignment on MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush) == 0x11827900, "Wrong size on MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush) == 0x000190, "Wrong size on MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush, Objective) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush::Objective' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush, RewardTag) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush::RewardTag' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush, __WorldContext) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush::__WorldContext' has a wrong offset!");
@@ -210,13 +210,13 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_HighlightQuestActor, Ca
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_HighlightQuestActor, CallFunc_FTrunc_ReturnValue2) == 0x00004C, "Member 'MissionBlueprintFunctionLibrary_C_HighlightQuestActor::CallFunc_FTrunc_ReturnValue2' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.QuestObjectiveCountAchieved
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved final
 {
 public:
 	class AFortPlayerController*                  PlayerControllerReference;                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestItemDefinition*               Quest_Item_Reference;                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ObjectiveStatHandle;                               // 0x0010(0x1182EB00)(Parm, NoDestructor)
+	struct FDataTableRowHandle                    ObjectiveStatHandle;                               // 0x0010(0x0010)(Parm, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Quest_Count_Achieved;                              // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Quest_Count_Required;                              // 0x002C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -229,8 +229,8 @@ public:
 	class UFortQuestObjectiveInfo*                CallFunc_GetObjectiveInfo_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved) == 0x1182EB00, "Wrong alignment on MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved) == 0x1182EB00, "Wrong size on MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved) == 0x000058, "Wrong size on MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved, PlayerControllerReference) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved::PlayerControllerReference' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved, Quest_Item_Reference) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved::Quest_Item_Reference' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved, ObjectiveStatHandle) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved::ObjectiveStatHandle' has a wrong offset!");
@@ -349,18 +349,18 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_ListPlayersWhoNeedQuest
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_ListPlayersWhoNeedQuest, CallFunc_Array_AddUnique_ReturnValue) == 0x000084, "Member 'MissionBlueprintFunctionLibrary_C_ListPlayersWhoNeedQuest::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.NPC_DroneStartRescue
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue final
 {
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Instigator;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_SurvivorScriptedAbilities      SurvivorAbilityStruct;                             // 0x0018(0x11821D80)(Edit, HasGetValueTypeHash)
-	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0060(0x11822200)()
+	struct FStruct_SurvivorScriptedAbilities      SurvivorAbilityStruct;                             // 0x0018(0x0048)(Edit, HasGetValueTypeHash)
+	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0060(0x00A8)()
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue) == 0x11822200, "Wrong alignment on MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue) == 0x11822200, "Wrong size on MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue) == 0x000108, "Wrong size on MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue, Actor) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue::Actor' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue, Instigator) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue::Instigator' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue, __WorldContext) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue::__WorldContext' has a wrong offset!");
@@ -368,18 +368,18 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue, S
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue, K2Node_MakeStruct_GameplayEventData) == 0x000060, "Member 'MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.NPC_DroneStopRescue
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue final
 {
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Instigator;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FStruct_SurvivorScriptedAbilities      SurvivorAbilityStruct;                             // 0x0018(0x11821D80)(Edit, HasGetValueTypeHash)
-	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0060(0x11822200)()
+	struct FStruct_SurvivorScriptedAbilities      SurvivorAbilityStruct;                             // 0x0018(0x0048)(Edit, HasGetValueTypeHash)
+	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0060(0x00A8)()
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue) == 0x11822200, "Wrong alignment on MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue) == 0x11822200, "Wrong size on MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue) == 0x000108, "Wrong size on MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue, Actor) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue::Actor' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue, Instigator) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue::Instigator' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue, __WorldContext) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue::__WorldContext' has a wrong offset!");
@@ -387,16 +387,16 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue, Su
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue, K2Node_MakeStruct_GameplayEventData) == 0x000060, "Member 'MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.FlashObjectiveUI
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_FlashObjectiveUI final
 {
 public:
 	class AFortObjectiveBase*                     Objective_Reference;                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  CallFunc_MakeLiteralGameplayTagContainer_ReturnValue; // 0x0010(0x11821C00)()
+	struct FGameplayTagContainer                  CallFunc_MakeLiteralGameplayTagContainer_ReturnValue; // 0x0010(0x0020)()
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_FlashObjectiveUI) == 0x11821C00, "Wrong alignment on MissionBlueprintFunctionLibrary_C_FlashObjectiveUI");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_FlashObjectiveUI) == 0x11821C00, "Wrong size on MissionBlueprintFunctionLibrary_C_FlashObjectiveUI");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_FlashObjectiveUI) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_FlashObjectiveUI");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_FlashObjectiveUI) == 0x000030, "Wrong size on MissionBlueprintFunctionLibrary_C_FlashObjectiveUI");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_FlashObjectiveUI, Objective_Reference) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_FlashObjectiveUI::Objective_Reference' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_FlashObjectiveUI, __WorldContext) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_FlashObjectiveUI::__WorldContext' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_FlashObjectiveUI, CallFunc_MakeLiteralGameplayTagContainer_ReturnValue) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_FlashObjectiveUI::CallFunc_MakeLiteralGameplayTagContainer_ReturnValue' has a wrong offset!");
@@ -479,13 +479,13 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_DropChance, CallFunc_Ra
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_DropChance, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000020, "Member 'MissionBlueprintFunctionLibrary_C_DropChance::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GiveQuestUpdateToPlayers
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers final
 {
 public:
 	class UFortQuestItemDefinition*               Quest_Reference;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Quest_Objective_Backend_Name;                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ObjectiveStatEvent;                                // 0x0010(0x1182EB00)(Parm, NoDestructor)
+	struct FDataTableRowHandle                    ObjectiveStatEvent;                                // 0x0010(0x0010)(Parm, NoDestructor)
 	TArray<class AFortPlayerController*>          PlayerControllersForUpdate;                        // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -503,8 +503,8 @@ public:
 	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers) == 0x1182EB00, "Wrong alignment on MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers) == 0x1182EB00, "Wrong size on MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers) == 0x000070, "Wrong size on MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers, Quest_Reference) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers::Quest_Reference' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers, Quest_Objective_Backend_Name) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers::Quest_Objective_Backend_Name' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers, ObjectiveStatEvent) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers::ObjectiveStatEvent' has a wrong offset!");
@@ -575,21 +575,21 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_AnyPawnNearActor, CallF
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_AnyPawnNearActor, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000080, "Member 'MissionBlueprintFunctionLibrary_C_AnyPawnNearActor::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.Random_360_VectorInRange
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange final
 {
 public:
 	float                                         MinDistance;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MaxDistance;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Random_Vector_Result_;                             // 0x0010(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Random_Vector_Result_;                             // 0x0010(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0024(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange) == 0x11821300, "Wrong alignment on MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange) == 0x11821300, "Wrong size on MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange) == 0x000040, "Wrong size on MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange, MinDistance) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange::MinDistance' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange, MaxDistance) == 0x000004, "Member 'MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange::MaxDistance' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange, __WorldContext) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange::__WorldContext' has a wrong offset!");
@@ -685,16 +685,16 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GrantSurvivorBadge, K2N
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GrantSurvivorBadge, CallFunc_GetDisplayName_ReturnValue) == 0x0000C0, "Member 'MissionBlueprintFunctionLibrary_C_GrantSurvivorBadge::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.BasicBuildingItemDrop
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop final
 {
 public:
 	EnumEventWorldItemDrop                        Item_Drop_Level;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                LootDropLocation;                                  // 0x0004(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LootDropLocation;                                  // 0x0004(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ItemsToSpawnPerRoll;                               // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                SpawnVector;                                       // 0x001C(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SpawnVector;                                       // 0x001C(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -718,11 +718,12 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue4;              // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue5;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x007C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x007C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue6;              // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPickup*                            CallFunc_K2_SpawnPickupInWorld_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0098(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0098(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPickup*                            CallFunc_K2_SpawnPickupInWorld_ReturnValue2;       // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X3;                           // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y3;                           // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -736,11 +737,12 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue7;              // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue8;              // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue9;              // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x00D8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x00D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPickup*                            CallFunc_K2_SpawnPickupInWorld_ReturnValue3;       // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop) == 0x11821300, "Wrong alignment on MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop) == 0x11821300, "Wrong size on MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop) == 0x0000F0, "Wrong size on MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop, Item_Drop_Level) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop::Item_Drop_Level' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop, LootDropLocation) == 0x000004, "Member 'MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop::LootDropLocation' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop, __WorldContext) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop::__WorldContext' has a wrong offset!");
@@ -881,19 +883,19 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuest
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuest, CallFunc_HasCompletedObjectiveWithName_ReturnValue) == 0x000041, "Member 'MissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuest::CallFunc_HasCompletedObjectiveWithName_ReturnValue' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.DistanceBetweenTwoVectors
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors final
 {
 public:
-	struct FVector                                Vector1;                                           // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Vector2;                                           // 0x000C(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Vector1;                                           // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Vector2;                                           // 0x000C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Distance;                                          // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0024(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors) == 0x11821300, "Wrong alignment on MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors) == 0x11821300, "Wrong size on MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors) == 0x000038, "Wrong size on MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors, Vector1) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors::Vector1' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors, Vector2) == 0x00000C, "Member 'MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors::Vector2' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors, __WorldContext) == 0x000018, "Member 'MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors::__WorldContext' has a wrong offset!");
@@ -961,12 +963,12 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GetCurrentDifficulty, K
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GetCurrentDifficulty, CallFunc_GetGameDifficulty_ReturnValue) == 0x000024, "Member 'MissionBlueprintFunctionLibrary_C_GetCurrentDifficulty::CallFunc_GetGameDifficulty_ReturnValue' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.PointLocationsBetweenTwoVectors
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors final
 {
 public:
-	struct FVector                                Vector_1;                                          // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Vector_2;                                          // 0x000C(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Vector_1;                                          // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Vector_2;                                          // 0x000C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         HowManyPoints;                                     // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -975,23 +977,23 @@ public:
 	bool                                          WasSuccessful;                                     // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        ResultVectorArray;                                 // 0x0040(0x0010)(Edit, ZeroConstructor)
-	struct FVector                                DifferenceVector;                                  // 0x0050(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DifferenceVector;                                  // 0x0050(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0060(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorInt_ReturnValue;             // 0x006C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0060(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorInt_ReturnValue;             // 0x006C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue2;         // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorInt_ReturnValue;           // 0x0088(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0094(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorInt_ReturnValue;           // 0x0088(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0094(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors) == 0x11821300, "Wrong alignment on MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors) == 0x11821300, "Wrong size on MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors) == 0x0000A8, "Wrong size on MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors, Vector_1) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors::Vector_1' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors, Vector_2) == 0x00000C, "Member 'MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors::Vector_2' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors, HowManyPoints) == 0x000018, "Member 'MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors::HowManyPoints' has a wrong offset!");
@@ -1014,8 +1016,8 @@ static_assert(offsetof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTw
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000A4, "Member 'MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GetContributingControllersNearActor
-// 0x04E6 (0x04E6 - 0x0000)
-struct alignas(0x4E6) MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor final
+// 0x0098 (0x0098 - 0x0000)
+struct MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor final
 {
 public:
 	float                                         Distance;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1045,8 +1047,8 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor) == 0x0004E6, "Wrong alignment on MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor");
-static_assert(sizeof(MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor) == 0x0004E6, "Wrong size on MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor");
+static_assert(alignof(MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor) == 0x000008, "Wrong alignment on MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor");
+static_assert(sizeof(MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor) == 0x000098, "Wrong size on MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor, Distance) == 0x000000, "Member 'MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor::Distance' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor, Actor) == 0x000008, "Member 'MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor::Actor' has a wrong offset!");
 static_assert(offsetof(MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor, __WorldContext) == 0x000010, "Member 'MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor::__WorldContext' has a wrong offset!");

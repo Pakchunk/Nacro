@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "EFortUIThemeColor_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "FortniteGame_structs.hpp"
 #include "EFortUITheme_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
-#include "EFortUIThemeColor_structs.hpp"
 
 
 namespace SDK

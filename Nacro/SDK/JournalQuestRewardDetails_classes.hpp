@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass JournalQuestRewardDetails.JournalQuestRewardDetails_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0258 - 0x0240)
 class UJournalQuestRewardDetails_C final : public UFortJournalQuestDetails
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UPerkDivider_C*                         PerkDivider;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UQuestVerticalRewardInfo_C*             QuestVerticalRewardInfo;                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UJournalQuestRewardDetails_C>();
 	}
 };
-static_assert(alignof(UJournalQuestRewardDetails_C) == 0x322CBBB8, "Wrong alignment on UJournalQuestRewardDetails_C");
-static_assert(sizeof(UJournalQuestRewardDetails_C) == 0x322CBBB8, "Wrong size on UJournalQuestRewardDetails_C");
+static_assert(alignof(UJournalQuestRewardDetails_C) == 0x000008, "Wrong alignment on UJournalQuestRewardDetails_C");
+static_assert(sizeof(UJournalQuestRewardDetails_C) == 0x000258, "Wrong size on UJournalQuestRewardDetails_C");
 static_assert(offsetof(UJournalQuestRewardDetails_C, UberGraphFrame) == 0x000240, "Member 'UJournalQuestRewardDetails_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UJournalQuestRewardDetails_C, PerkDivider) == 0x000248, "Member 'UJournalQuestRewardDetails_C::PerkDivider' has a wrong offset!");
 static_assert(offsetof(UJournalQuestRewardDetails_C, QuestVerticalRewardInfo) == 0x000250, "Member 'UJournalQuestRewardDetails_C::QuestVerticalRewardInfo' has a wrong offset!");

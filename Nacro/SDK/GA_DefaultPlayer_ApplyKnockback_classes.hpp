@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_ApplyKnockback.GA_DefaultPlayer_ApplyKnockback_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0000 (0x0B20 - 0x0B20)
 class UGA_DefaultPlayer_ApplyKnockback_C final : public UGAB_GenericApplyKnockback_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGA_DefaultPlayer_ApplyKnockback_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_ApplyKnockback_C) == 0x1182EB00, "Wrong alignment on UGA_DefaultPlayer_ApplyKnockback_C");
-static_assert(sizeof(UGA_DefaultPlayer_ApplyKnockback_C) == 0x1182EB00, "Wrong size on UGA_DefaultPlayer_ApplyKnockback_C");
+static_assert(alignof(UGA_DefaultPlayer_ApplyKnockback_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_ApplyKnockback_C");
+static_assert(sizeof(UGA_DefaultPlayer_ApplyKnockback_C) == 0x000B20, "Wrong size on UGA_DefaultPlayer_ApplyKnockback_C");
 
 }
 

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RotatorSelector.RotatorSelector_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0288 - 0x0238)
 class URotatorSelector_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       DisplayText;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextRotator_C*                         TextRotator;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         SelectedIndex;                                     // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -40,7 +40,7 @@ public:
 	void Construct();
 	void Update_Row_Selector(int32 Currently_Selected);
 	void Initialize(const class FText& Display_Text, TArray<class FText>& Options, const class FText& Hover_Text, class UCommonTextBlock* Tab_Tooltip);
-	void Center_on_Widget();
+	void Center_On_Widget();
 	void Update_Options(TArray<class FText>& NewParam);
 
 public:
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<URotatorSelector_C>();
 	}
 };
-static_assert(alignof(URotatorSelector_C) == 0x322CBBB8, "Wrong alignment on URotatorSelector_C");
-static_assert(sizeof(URotatorSelector_C) == 0x322CBBB8, "Wrong size on URotatorSelector_C");
+static_assert(alignof(URotatorSelector_C) == 0x000008, "Wrong alignment on URotatorSelector_C");
+static_assert(sizeof(URotatorSelector_C) == 0x000288, "Wrong size on URotatorSelector_C");
 static_assert(offsetof(URotatorSelector_C, UberGraphFrame) == 0x000238, "Member 'URotatorSelector_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URotatorSelector_C, DisplayText) == 0x000240, "Member 'URotatorSelector_C::DisplayText' has a wrong offset!");
 static_assert(offsetof(URotatorSelector_C, TextRotator) == 0x000248, "Member 'URotatorSelector_C::TextRotator' has a wrong offset!");

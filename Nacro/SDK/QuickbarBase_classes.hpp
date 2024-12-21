@@ -19,12 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuickbarBase.QuickbarBase_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UQuickbarBase_C : public UFortHUDElementWidget
+// 0x0028 (0x0288 - 0x0260)
+class UQuickbarBase_C : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	EFortQuickBars                                MyQuickbarIndex;                                   // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_269[0x3];                                      // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         FocusedSlot;                                       // 0x026C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,9 +58,8 @@ public:
 		return GetDefaultObjImpl<UQuickbarBase_C>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UQuickbarBase_C) == 0x322CBBB8, "Wrong alignment on UQuickbarBase_C");
-static_assert(sizeof(UQuickbarBase_C) == 0x322CBBB8, "Wrong size on UQuickbarBase_C");
+static_assert(alignof(UQuickbarBase_C) == 0x000008, "Wrong alignment on UQuickbarBase_C");
+static_assert(sizeof(UQuickbarBase_C) == 0x000288, "Wrong size on UQuickbarBase_C");
 static_assert(offsetof(UQuickbarBase_C, UberGraphFrame) == 0x000260, "Member 'UQuickbarBase_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuickbarBase_C, MyQuickbarIndex) == 0x000268, "Member 'UQuickbarBase_C::MyQuickbarIndex' has a wrong offset!");
 static_assert(offsetof(UQuickbarBase_C, FocusedSlot) == 0x00026C, "Member 'UQuickbarBase_C::FocusedSlot' has a wrong offset!");

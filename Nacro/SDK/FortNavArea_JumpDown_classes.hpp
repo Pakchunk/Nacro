@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FortNavArea_JumpDown.FortNavArea_JumpDown_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0048 - 0x0048)
 class UFortNavArea_JumpDown_C final : public UFortNavArea
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UFortNavArea_JumpDown_C>();
 	}
 };
-static_assert(alignof(UFortNavArea_JumpDown_C) == 0x11821D80, "Wrong alignment on UFortNavArea_JumpDown_C");
-static_assert(sizeof(UFortNavArea_JumpDown_C) == 0x11821D80, "Wrong size on UFortNavArea_JumpDown_C");
+static_assert(alignof(UFortNavArea_JumpDown_C) == 0x000008, "Wrong alignment on UFortNavArea_JumpDown_C");
+static_assert(sizeof(UFortNavArea_JumpDown_C) == 0x000048, "Wrong size on UFortNavArea_JumpDown_C");
 
 }
 

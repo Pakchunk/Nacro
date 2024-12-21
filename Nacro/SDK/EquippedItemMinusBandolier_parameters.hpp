@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function EquippedItem-Bandolier.EquippedItem-Bandolier_C.UpdateCurrent
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct EquippedItemMinusBandolier_C_UpdateCurrent final
 {
 public:
@@ -29,11 +29,11 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0028(0x322CBBB8)()
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0028(0x0090)()
 };
-static_assert(alignof(EquippedItemMinusBandolier_C_UpdateCurrent) == 0x11827900, "Wrong alignment on EquippedItemMinusBandolier_C_UpdateCurrent");
-static_assert(sizeof(EquippedItemMinusBandolier_C_UpdateCurrent) == 0x11827900, "Wrong size on EquippedItemMinusBandolier_C_UpdateCurrent");
+static_assert(alignof(EquippedItemMinusBandolier_C_UpdateCurrent) == 0x000008, "Wrong alignment on EquippedItemMinusBandolier_C_UpdateCurrent");
+static_assert(sizeof(EquippedItemMinusBandolier_C_UpdateCurrent) == 0x0000B8, "Wrong size on EquippedItemMinusBandolier_C_UpdateCurrent");
 static_assert(offsetof(EquippedItemMinusBandolier_C_UpdateCurrent, Current) == 0x000000, "Member 'EquippedItemMinusBandolier_C_UpdateCurrent::Current' has a wrong offset!");
 static_assert(offsetof(EquippedItemMinusBandolier_C_UpdateCurrent, AmmoData) == 0x000008, "Member 'EquippedItemMinusBandolier_C_UpdateCurrent::AmmoData' has a wrong offset!");
 static_assert(offsetof(EquippedItemMinusBandolier_C_UpdateCurrent, CallFunc_Clamp_ReturnValue) == 0x000010, "Member 'EquippedItemMinusBandolier_C_UpdateCurrent::CallFunc_Clamp_ReturnValue' has a wrong offset!");
@@ -44,8 +44,8 @@ static_assert(offsetof(EquippedItemMinusBandolier_C_UpdateCurrent, CallFunc_Make
 static_assert(offsetof(EquippedItemMinusBandolier_C_UpdateCurrent, K2Node_MakeStruct_SlateBrush) == 0x000028, "Member 'EquippedItemMinusBandolier_C_UpdateCurrent::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 
 // Function EquippedItem-Bandolier.EquippedItem-Bandolier_C.UpdateCapacity
-// 0x2DEEE380 (0x2DEEE380 - 0x0000)
-struct alignas(0x2DEEE380) EquippedItemMinusBandolier_C_UpdateCapacity final
+// 0x00B8 (0x00B8 - 0x0000)
+struct EquippedItemMinusBandolier_C_UpdateCapacity final
 {
 public:
 	int32                                         Capacity;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -55,11 +55,11 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0028(0x322CBBB8)()
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0028(0x0090)()
 };
-static_assert(alignof(EquippedItemMinusBandolier_C_UpdateCapacity) == 0x2DEEE380, "Wrong alignment on EquippedItemMinusBandolier_C_UpdateCapacity");
-static_assert(sizeof(EquippedItemMinusBandolier_C_UpdateCapacity) == 0x2DEEE380, "Wrong size on EquippedItemMinusBandolier_C_UpdateCapacity");
+static_assert(alignof(EquippedItemMinusBandolier_C_UpdateCapacity) == 0x000008, "Wrong alignment on EquippedItemMinusBandolier_C_UpdateCapacity");
+static_assert(sizeof(EquippedItemMinusBandolier_C_UpdateCapacity) == 0x0000B8, "Wrong size on EquippedItemMinusBandolier_C_UpdateCapacity");
 static_assert(offsetof(EquippedItemMinusBandolier_C_UpdateCapacity, Capacity) == 0x000000, "Member 'EquippedItemMinusBandolier_C_UpdateCapacity::Capacity' has a wrong offset!");
 static_assert(offsetof(EquippedItemMinusBandolier_C_UpdateCapacity, AmmoData) == 0x000008, "Member 'EquippedItemMinusBandolier_C_UpdateCapacity::AmmoData' has a wrong offset!");
 static_assert(offsetof(EquippedItemMinusBandolier_C_UpdateCapacity, CallFunc_Clamp_ReturnValue) == 0x000010, "Member 'EquippedItemMinusBandolier_C_UpdateCapacity::CallFunc_Clamp_ReturnValue' has a wrong offset!");

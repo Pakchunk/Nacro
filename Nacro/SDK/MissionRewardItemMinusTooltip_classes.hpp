@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionRewardItem-Tooltip.MissionRewardItem-Tooltip_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0268 - 0x0230)
 class UMissionRewardItemMinusTooltip_C final : public UUserWidget
 {
 public:
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UMissionRewardItemMinusTooltip_C>();
 	}
 };
-static_assert(alignof(UMissionRewardItemMinusTooltip_C) == 0x322CBBB8, "Wrong alignment on UMissionRewardItemMinusTooltip_C");
-static_assert(sizeof(UMissionRewardItemMinusTooltip_C) == 0x322CBBB8, "Wrong size on UMissionRewardItemMinusTooltip_C");
+static_assert(alignof(UMissionRewardItemMinusTooltip_C) == 0x000008, "Wrong alignment on UMissionRewardItemMinusTooltip_C");
+static_assert(sizeof(UMissionRewardItemMinusTooltip_C) == 0x000268, "Wrong size on UMissionRewardItemMinusTooltip_C");
 static_assert(offsetof(UMissionRewardItemMinusTooltip_C, Border) == 0x000230, "Member 'UMissionRewardItemMinusTooltip_C::Border' has a wrong offset!");
 static_assert(offsetof(UMissionRewardItemMinusTooltip_C, Icon) == 0x000238, "Member 'UMissionRewardItemMinusTooltip_C::Icon' has a wrong offset!");
 static_assert(offsetof(UMissionRewardItemMinusTooltip_C, TextField) == 0x000240, "Member 'UMissionRewardItemMinusTooltip_C::TextField' has a wrong offset!");

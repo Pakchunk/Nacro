@@ -146,14 +146,14 @@ static_assert(sizeof(Feedback_RateExperience_C_OnStarButtonClicked) == 0x000008,
 static_assert(offsetof(Feedback_RateExperience_C_OnStarButtonClicked, Button_Clicked) == 0x000000, "Member 'Feedback_RateExperience_C_OnStarButtonClicked::Button_Clicked' has a wrong offset!");
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.OnClientPartyStateChanged
-// 0x6A0100 (0x6A0100 - 0x0000)
-struct alignas(0x6A0100) Feedback_RateExperience_C_OnClientPartyStateChanged final
+// 0x0001 (0x0001 - 0x0000)
+struct Feedback_RateExperience_C_OnClientPartyStateChanged final
 {
 public:
 	EFortPartyState                               PartyState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Feedback_RateExperience_C_OnClientPartyStateChanged) == 0x6A0100, "Wrong alignment on Feedback_RateExperience_C_OnClientPartyStateChanged");
-static_assert(sizeof(Feedback_RateExperience_C_OnClientPartyStateChanged) == 0x6A0100, "Wrong size on Feedback_RateExperience_C_OnClientPartyStateChanged");
+static_assert(alignof(Feedback_RateExperience_C_OnClientPartyStateChanged) == 0x000001, "Wrong alignment on Feedback_RateExperience_C_OnClientPartyStateChanged");
+static_assert(sizeof(Feedback_RateExperience_C_OnClientPartyStateChanged) == 0x000001, "Wrong size on Feedback_RateExperience_C_OnClientPartyStateChanged");
 static_assert(offsetof(Feedback_RateExperience_C_OnClientPartyStateChanged, PartyState) == 0x000000, "Member 'Feedback_RateExperience_C_OnClientPartyStateChanged::PartyState' has a wrong offset!");
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.BndEvt__1Star_K2Node_ComponentBoundEvent_944_On Mouse Hovered Changed__DelegateSignature
@@ -168,14 +168,14 @@ static_assert(sizeof(Feedback_RateExperience_C_BndEvt__1Star_K2Node_ComponentBou
 static_assert(offsetof(Feedback_RateExperience_C_BndEvt__1Star_K2Node_ComponentBoundEvent_944_On_Mouse_Hovered_Changed__DelegateSignature, Is_Hovered) == 0x000000, "Member 'Feedback_RateExperience_C_BndEvt__1Star_K2Node_ComponentBoundEvent_944_On_Mouse_Hovered_Changed__DelegateSignature::Is_Hovered' has a wrong offset!");
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.BndEvt__2Star_K2Node_ComponentBoundEvent_925_On Mouse Hovered Changed__DelegateSignature
-// 0x0041 (0x0041 - 0x0000)
-struct alignas(0x41) Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature final
+// 0x0001 (0x0001 - 0x0000)
+struct Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature final
 {
 public:
 	bool                                          Is_Hovered;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature) == 0x000041, "Wrong alignment on Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature");
-static_assert(sizeof(Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature) == 0x000041, "Wrong size on Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature");
+static_assert(alignof(Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature) == 0x000001, "Wrong alignment on Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature");
+static_assert(sizeof(Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature) == 0x000001, "Wrong size on Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature");
 static_assert(offsetof(Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature, Is_Hovered) == 0x000000, "Member 'Feedback_RateExperience_C_BndEvt__2Star_K2Node_ComponentBoundEvent_925_On_Mouse_Hovered_Changed__DelegateSignature::Is_Hovered' has a wrong offset!");
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.BndEvt__3Star_K2Node_ComponentBoundEvent_907_On Mouse Hovered Changed__DelegateSignature
@@ -223,14 +223,14 @@ static_assert(sizeof(Feedback_RateExperience_C_BndEvt__SendButton_K2Node_Compone
 static_assert(offsetof(Feedback_RateExperience_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_RateExperience_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
-// 0x0475 (0x0475 - 0x0000)
-struct alignas(0x475) Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000475, "Wrong alignment on Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000475, "Wrong size on Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_RateExperience_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.SetStarCount
@@ -260,8 +260,8 @@ static_assert(offsetof(Feedback_RateExperience_C_SetStarCount, CallFunc_Array_Le
 static_assert(offsetof(Feedback_RateExperience_C_SetStarCount, CallFunc_Less_IntInt_ReturnValue2) == 0x000024, "Member 'Feedback_RateExperience_C_SetStarCount::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.SetupStarButtons
-// 0x6A0100 (0x6A0100 - 0x0000)
-struct alignas(0x6A0100) Feedback_RateExperience_C_SetupStarButtons final
+// 0x0040 (0x0040 - 0x0000)
+struct Feedback_RateExperience_C_SetupStarButtons final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -275,8 +275,8 @@ public:
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ULegacyButtonIconText_C*>        K2Node_MakeArray_Array;                            // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(Feedback_RateExperience_C_SetupStarButtons) == 0x6A0100, "Wrong alignment on Feedback_RateExperience_C_SetupStarButtons");
-static_assert(sizeof(Feedback_RateExperience_C_SetupStarButtons) == 0x6A0100, "Wrong size on Feedback_RateExperience_C_SetupStarButtons");
+static_assert(alignof(Feedback_RateExperience_C_SetupStarButtons) == 0x000008, "Wrong alignment on Feedback_RateExperience_C_SetupStarButtons");
+static_assert(sizeof(Feedback_RateExperience_C_SetupStarButtons) == 0x000040, "Wrong size on Feedback_RateExperience_C_SetupStarButtons");
 static_assert(offsetof(Feedback_RateExperience_C_SetupStarButtons, Temp_int_Array_Index_Variable) == 0x000000, "Member 'Feedback_RateExperience_C_SetupStarButtons::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(Feedback_RateExperience_C_SetupStarButtons, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Feedback_RateExperience_C_SetupStarButtons::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(Feedback_RateExperience_C_SetupStarButtons, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Feedback_RateExperience_C_SetupStarButtons::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -287,7 +287,7 @@ static_assert(offsetof(Feedback_RateExperience_C_SetupStarButtons, CallFunc_Less
 static_assert(offsetof(Feedback_RateExperience_C_SetupStarButtons, K2Node_MakeArray_Array) == 0x000030, "Member 'Feedback_RateExperience_C_SetupStarButtons::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.SendAnalyticsEvent
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct Feedback_RateExperience_C_SendAnalyticsEvent final
 {
 public:
@@ -298,14 +298,14 @@ public:
 	class FString                                 Temp_string_Variable2;                             // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0040(0x0018)()
-	struct FGameSummaryInfo                       CallFunc_GetLastGameSummaryInfo_ReturnValue;       // 0x0058(0x1182E980)()
-	struct FGameSummaryInfo                       CallFunc_GetLastGameSummaryInfo_ReturnValue2;      // 0x0070(0x1182E980)()
+	struct FGameSummaryInfo                       CallFunc_GetLastGameSummaryInfo_ReturnValue;       // 0x0058(0x0018)()
+	struct FGameSummaryInfo                       CallFunc_GetLastGameSummaryInfo_ReturnValue2;      // 0x0070(0x0018)()
 	class FText                                   CallFunc_GetText_ReturnValue2;                     // 0x0088(0x0018)()
 	class FString                                 K2Node_Select_Default;                             // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_RateExperience_C_SendAnalyticsEvent) == 0x1182E980, "Wrong alignment on Feedback_RateExperience_C_SendAnalyticsEvent");
-static_assert(sizeof(Feedback_RateExperience_C_SendAnalyticsEvent) == 0x1182E980, "Wrong size on Feedback_RateExperience_C_SendAnalyticsEvent");
+static_assert(alignof(Feedback_RateExperience_C_SendAnalyticsEvent) == 0x000008, "Wrong alignment on Feedback_RateExperience_C_SendAnalyticsEvent");
+static_assert(sizeof(Feedback_RateExperience_C_SendAnalyticsEvent) == 0x0000C0, "Wrong size on Feedback_RateExperience_C_SendAnalyticsEvent");
 static_assert(offsetof(Feedback_RateExperience_C_SendAnalyticsEvent, FeedbackSentBy) == 0x000000, "Member 'Feedback_RateExperience_C_SendAnalyticsEvent::FeedbackSentBy' has a wrong offset!");
 static_assert(offsetof(Feedback_RateExperience_C_SendAnalyticsEvent, Temp_bool_Variable) == 0x000010, "Member 'Feedback_RateExperience_C_SendAnalyticsEvent::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Feedback_RateExperience_C_SendAnalyticsEvent, Temp_string_Variable) == 0x000018, "Member 'Feedback_RateExperience_C_SendAnalyticsEvent::Temp_string_Variable' has a wrong offset!");

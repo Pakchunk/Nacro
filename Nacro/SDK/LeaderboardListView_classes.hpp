@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LeaderboardListView.LeaderboardListView_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class ULeaderboardListView_C final : public UCommonUserWidget
 {
 public:
@@ -36,8 +36,8 @@ public:
 		return GetDefaultObjImpl<ULeaderboardListView_C>();
 	}
 };
-static_assert(alignof(ULeaderboardListView_C) == 0x322CBBB8, "Wrong alignment on ULeaderboardListView_C");
-static_assert(sizeof(ULeaderboardListView_C) == 0x322CBBB8, "Wrong size on ULeaderboardListView_C");
+static_assert(alignof(ULeaderboardListView_C) == 0x000008, "Wrong alignment on ULeaderboardListView_C");
+static_assert(sizeof(ULeaderboardListView_C) == 0x000240, "Wrong size on ULeaderboardListView_C");
 static_assert(offsetof(ULeaderboardListView_C, List) == 0x000238, "Member 'ULeaderboardListView_C::List' has a wrong offset!");
 
 }

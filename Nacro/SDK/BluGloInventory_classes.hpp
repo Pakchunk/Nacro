@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BluGloInventory.BluGloInventory_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UBluGloInventory_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonNumericTextBlock*                BluGloInventoryTotal;                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemDefinition*                    TutorialBluGloItemDefinition;                      // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentBluGloTotal;                                // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UBluGloInventory_C>();
 	}
 };
-static_assert(alignof(UBluGloInventory_C) == 0x322CBBB8, "Wrong alignment on UBluGloInventory_C");
-static_assert(sizeof(UBluGloInventory_C) == 0x322CBBB8, "Wrong size on UBluGloInventory_C");
+static_assert(alignof(UBluGloInventory_C) == 0x000008, "Wrong alignment on UBluGloInventory_C");
+static_assert(sizeof(UBluGloInventory_C) == 0x000258, "Wrong size on UBluGloInventory_C");
 static_assert(offsetof(UBluGloInventory_C, UberGraphFrame) == 0x000238, "Member 'UBluGloInventory_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBluGloInventory_C, BluGloInventoryTotal) == 0x000240, "Member 'UBluGloInventory_C::BluGloInventoryTotal' has a wrong offset!");
 static_assert(offsetof(UBluGloInventory_C, TutorialBluGloItemDefinition) == 0x000248, "Member 'UBluGloInventory_C::TutorialBluGloItemDefinition' has a wrong offset!");

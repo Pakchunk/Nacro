@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBarXpText.XpBarXpText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0268 - 0x0230)
 class UXpBarXpText_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       CurrentXP;                                         // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemIcon*                          FortItemIcon_51;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UXpBar_C*                               XpBar;                                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UXpBarXpText_C>();
 	}
 };
-static_assert(alignof(UXpBarXpText_C) == 0x322CBBB8, "Wrong alignment on UXpBarXpText_C");
-static_assert(sizeof(UXpBarXpText_C) == 0x322CBBB8, "Wrong size on UXpBarXpText_C");
+static_assert(alignof(UXpBarXpText_C) == 0x000008, "Wrong alignment on UXpBarXpText_C");
+static_assert(sizeof(UXpBarXpText_C) == 0x000268, "Wrong size on UXpBarXpText_C");
 static_assert(offsetof(UXpBarXpText_C, UberGraphFrame) == 0x000230, "Member 'UXpBarXpText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UXpBarXpText_C, CurrentXP) == 0x000238, "Member 'UXpBarXpText_C::CurrentXP' has a wrong offset!");
 static_assert(offsetof(UXpBarXpText_C, FortItemIcon_51) == 0x000240, "Member 'UXpBarXpText_C::FortItemIcon_51' has a wrong offset!");

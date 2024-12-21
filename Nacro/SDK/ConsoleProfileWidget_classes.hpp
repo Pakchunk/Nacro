@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ConsoleProfileWidget.ConsoleProfileWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0240 - 0x0230)
 class UConsoleProfileWidget_C final : public UUserWidget
 {
 public:
@@ -37,8 +37,8 @@ public:
 		return GetDefaultObjImpl<UConsoleProfileWidget_C>();
 	}
 };
-static_assert(alignof(UConsoleProfileWidget_C) == 0x322CBBB8, "Wrong alignment on UConsoleProfileWidget_C");
-static_assert(sizeof(UConsoleProfileWidget_C) == 0x322CBBB8, "Wrong size on UConsoleProfileWidget_C");
+static_assert(alignof(UConsoleProfileWidget_C) == 0x000008, "Wrong alignment on UConsoleProfileWidget_C");
+static_assert(sizeof(UConsoleProfileWidget_C) == 0x000240, "Wrong size on UConsoleProfileWidget_C");
 static_assert(offsetof(UConsoleProfileWidget_C, DisplayName) == 0x000230, "Member 'UConsoleProfileWidget_C::DisplayName' has a wrong offset!");
 static_assert(offsetof(UConsoleProfileWidget_C, Prefix) == 0x000238, "Member 'UConsoleProfileWidget_C::Prefix' has a wrong offset!");
 

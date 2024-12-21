@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.ExecuteUbergraph_CollectionBookSectionPanel
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel final
+// 0x0040 (0x0040 - 0x0000)
+struct CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -26,8 +26,8 @@ public:
 	TDelegate<void(class UFortItem* SelectedItem, bool EnableItemActions, bool IsPlaceholderItem)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	const class UFortCollectionBookSection*       K2Node_Event_Section;                              // 0x0038(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel) == 0x0000E4, "Wrong alignment on CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel");
-static_assert(sizeof(CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel) == 0x0000E4, "Wrong size on CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel");
+static_assert(alignof(CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel) == 0x000008, "Wrong alignment on CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel");
+static_assert(sizeof(CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel) == 0x000040, "Wrong size on CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel");
 static_assert(offsetof(CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel, EntryPoint) == 0x000000, "Member 'CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'CollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -70,8 +70,8 @@ static_assert(offsetof(CollectionBookSectionPanel_C_OnSlotItemConfirm, ItemToSlo
 static_assert(offsetof(CollectionBookSectionPanel_C_OnSlotItemConfirm, CallFunc_TryCommitSelectedItem_ReturnValue) == 0x000008, "Member 'CollectionBookSectionPanel_C_OnSlotItemConfirm::CallFunc_TryCommitSelectedItem_ReturnValue' has a wrong offset!");
 
 // Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.OnInspectItem
-// 0x6E006F (0x6E006F - 0x0000)
-struct alignas(0x6E006F) CollectionBookSectionPanel_C_OnInspectItem final
+// 0x0020 (0x0020 - 0x0000)
+struct CollectionBookSectionPanel_C_OnInspectItem final
 {
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -82,8 +82,8 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookSectionPanel_C_OnInspectItem) == 0x6E006F, "Wrong alignment on CollectionBookSectionPanel_C_OnInspectItem");
-static_assert(sizeof(CollectionBookSectionPanel_C_OnInspectItem) == 0x6E006F, "Wrong size on CollectionBookSectionPanel_C_OnInspectItem");
+static_assert(alignof(CollectionBookSectionPanel_C_OnInspectItem) == 0x000008, "Wrong alignment on CollectionBookSectionPanel_C_OnInspectItem");
+static_assert(sizeof(CollectionBookSectionPanel_C_OnInspectItem) == 0x000020, "Wrong size on CollectionBookSectionPanel_C_OnInspectItem");
 static_assert(offsetof(CollectionBookSectionPanel_C_OnInspectItem, Item) == 0x000000, "Member 'CollectionBookSectionPanel_C_OnInspectItem::Item' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionPanel_C_OnInspectItem, AllowItemModifications) == 0x000008, "Member 'CollectionBookSectionPanel_C_OnInspectItem::AllowItemModifications' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionPanel_C_OnInspectItem, IsTemporaryItem) == 0x000009, "Member 'CollectionBookSectionPanel_C_OnInspectItem::IsTemporaryItem' has a wrong offset!");

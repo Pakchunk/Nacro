@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PinnedSchematicItemWidget.PinnedSchematicItemWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class UPinnedSchematicItemWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UFortMultiSizeItemCard*                 FortItemCard_XXSSchematicItemCard;                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         IngredientBox;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextItemName;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UPinnedSchematicItemWidget_C>();
 	}
 };
-static_assert(alignof(UPinnedSchematicItemWidget_C) == 0x322CBBB8, "Wrong alignment on UPinnedSchematicItemWidget_C");
-static_assert(sizeof(UPinnedSchematicItemWidget_C) == 0x322CBBB8, "Wrong size on UPinnedSchematicItemWidget_C");
+static_assert(alignof(UPinnedSchematicItemWidget_C) == 0x000008, "Wrong alignment on UPinnedSchematicItemWidget_C");
+static_assert(sizeof(UPinnedSchematicItemWidget_C) == 0x000270, "Wrong size on UPinnedSchematicItemWidget_C");
 static_assert(offsetof(UPinnedSchematicItemWidget_C, UberGraphFrame) == 0x000238, "Member 'UPinnedSchematicItemWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPinnedSchematicItemWidget_C, FortItemCard_XXSSchematicItemCard) == 0x000240, "Member 'UPinnedSchematicItemWidget_C::FortItemCard_XXSSchematicItemCard' has a wrong offset!");
 static_assert(offsetof(UPinnedSchematicItemWidget_C, IngredientBox) == 0x000248, "Member 'UPinnedSchematicItemWidget_C::IngredientBox' has a wrong offset!");

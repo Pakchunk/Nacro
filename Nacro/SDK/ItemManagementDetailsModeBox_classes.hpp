@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x04A8 - 0x0430)
 class UItemManagementDetailsModeBox_C final : public UFortItemDetailsModeActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
 	class UCommonWidgetSwitcher*                  DetailPanelOverrideSwitcher;                       // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalTabList_C*                   DetailPanelTabListMinusMB;                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalTabList_C*                   DetailPanelTabListMinusMS;                         // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -106,8 +106,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementDetailsModeBox_C>();
 	}
 };
-static_assert(alignof(UItemManagementDetailsModeBox_C) == 0x322CBBB8, "Wrong alignment on UItemManagementDetailsModeBox_C");
-static_assert(sizeof(UItemManagementDetailsModeBox_C) == 0x322CBBB8, "Wrong size on UItemManagementDetailsModeBox_C");
+static_assert(alignof(UItemManagementDetailsModeBox_C) == 0x000008, "Wrong alignment on UItemManagementDetailsModeBox_C");
+static_assert(sizeof(UItemManagementDetailsModeBox_C) == 0x0004A8, "Wrong size on UItemManagementDetailsModeBox_C");
 static_assert(offsetof(UItemManagementDetailsModeBox_C, UberGraphFrame) == 0x000430, "Member 'UItemManagementDetailsModeBox_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelOverrideSwitcher) == 0x000438, "Member 'UItemManagementDetailsModeBox_C::DetailPanelOverrideSwitcher' has a wrong offset!");
 static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabListMinusMB) == 0x000440, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabListMinusMB' has a wrong offset!");

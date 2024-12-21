@@ -139,20 +139,20 @@ static_assert(offsetof(ItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2No
 
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.DialogResult_58BF1F8B4DC97D1C2902828F65095294
 // 0x0010 (0x0010 - 0x0000)
-struct ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294 final
+struct alignas(0x08) ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294) == 0x000004, "Wrong alignment on ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294");
+static_assert(alignof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294) == 0x000008, "Wrong alignment on ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294");
 static_assert(sizeof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294) == 0x000010, "Wrong size on ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294");
 static_assert(offsetof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294, Result) == 0x000000, "Member 'ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294::Result' has a wrong offset!");
 static_assert(offsetof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294, ResultName) == 0x000008, "Member 'ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294::ResultName' has a wrong offset!");
 
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.GetWarningText
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct ItemManagementMulchDetailsPanel_C_GetWarningText final
 {
 public:
@@ -170,13 +170,13 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetRecyclingWarningText_ReturnValue;      // 0x0060(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0078(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00B8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0078(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00B8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
 };
-static_assert(alignof(ItemManagementMulchDetailsPanel_C_GetWarningText) == 0x11821D80, "Wrong alignment on ItemManagementMulchDetailsPanel_C_GetWarningText");
-static_assert(sizeof(ItemManagementMulchDetailsPanel_C_GetWarningText) == 0x11821D80, "Wrong size on ItemManagementMulchDetailsPanel_C_GetWarningText");
+static_assert(alignof(ItemManagementMulchDetailsPanel_C_GetWarningText) == 0x000008, "Wrong alignment on ItemManagementMulchDetailsPanel_C_GetWarningText");
+static_assert(sizeof(ItemManagementMulchDetailsPanel_C_GetWarningText) == 0x000120, "Wrong size on ItemManagementMulchDetailsPanel_C_GetWarningText");
 static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, Warnings) == 0x000000, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::Warnings' has a wrong offset!");
 static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, HasAnimateItems) == 0x000010, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::HasAnimateItems' has a wrong offset!");
 static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, WarningText) == 0x000018, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::WarningText' has a wrong offset!");

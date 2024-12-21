@@ -18,32 +18,32 @@ namespace SDK::Params
 {
 
 // Function TabInputOptions.TabInputOptions_C.Enable Overlay__DelegateSignature
-// 0x0027 (0x0027 - 0x0000)
-struct alignas(0x27) TabInputOptions_C_Enable_Overlay__DelegateSignature final
+// 0x0020 (0x0020 - 0x0000)
+struct TabInputOptions_C_Enable_Overlay__DelegateSignature final
 {
 public:
 	bool                                          Accept_Input;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Overlay_Text;                                      // 0x0008(0x0018)(Parm)
 };
-static_assert(alignof(TabInputOptions_C_Enable_Overlay__DelegateSignature) == 0x000027, "Wrong alignment on TabInputOptions_C_Enable_Overlay__DelegateSignature");
-static_assert(sizeof(TabInputOptions_C_Enable_Overlay__DelegateSignature) == 0x000027, "Wrong size on TabInputOptions_C_Enable_Overlay__DelegateSignature");
+static_assert(alignof(TabInputOptions_C_Enable_Overlay__DelegateSignature) == 0x000008, "Wrong alignment on TabInputOptions_C_Enable_Overlay__DelegateSignature");
+static_assert(sizeof(TabInputOptions_C_Enable_Overlay__DelegateSignature) == 0x000020, "Wrong size on TabInputOptions_C_Enable_Overlay__DelegateSignature");
 static_assert(offsetof(TabInputOptions_C_Enable_Overlay__DelegateSignature, Accept_Input) == 0x000000, "Member 'TabInputOptions_C_Enable_Overlay__DelegateSignature::Accept_Input' has a wrong offset!");
 static_assert(offsetof(TabInputOptions_C_Enable_Overlay__DelegateSignature, Overlay_Text) == 0x000008, "Member 'TabInputOptions_C_Enable_Overlay__DelegateSignature::Overlay_Text' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.Gamepad Changed__DelegateSignature
-// 0x0068 (0x0068 - 0x0000)
-struct alignas(0x68) TabInputOptions_C_Gamepad_Changed__DelegateSignature final
+// 0x0001 (0x0001 - 0x0000)
+struct TabInputOptions_C_Gamepad_Changed__DelegateSignature final
 {
 public:
 	bool                                          Gamepad_Enabled;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabInputOptions_C_Gamepad_Changed__DelegateSignature) == 0x000068, "Wrong alignment on TabInputOptions_C_Gamepad_Changed__DelegateSignature");
-static_assert(sizeof(TabInputOptions_C_Gamepad_Changed__DelegateSignature) == 0x000068, "Wrong size on TabInputOptions_C_Gamepad_Changed__DelegateSignature");
+static_assert(alignof(TabInputOptions_C_Gamepad_Changed__DelegateSignature) == 0x000001, "Wrong alignment on TabInputOptions_C_Gamepad_Changed__DelegateSignature");
+static_assert(sizeof(TabInputOptions_C_Gamepad_Changed__DelegateSignature) == 0x000001, "Wrong size on TabInputOptions_C_Gamepad_Changed__DelegateSignature");
 static_assert(offsetof(TabInputOptions_C_Gamepad_Changed__DelegateSignature, Gamepad_Enabled) == 0x000000, "Member 'TabInputOptions_C_Gamepad_Changed__DelegateSignature::Gamepad_Enabled' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.ExecuteUbergraph_TabInputOptions
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct TabInputOptions_C_ExecuteUbergraph_TabInputOptions final
 {
 public:
@@ -82,11 +82,11 @@ public:
 	int32                                         K2Node_CustomEvent_Number_in_List;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_MakeStruct_Key;                             // 0x00A0(0x11821D80)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_MakeStruct_Key;                             // 0x00A0(0x0018)(HasGetValueTypeHash)
 	TDelegate<void(int32 Number_in_List, bool Is_Primary_Button)> K2Node_CreateDelegate_OutputDelegate2;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions) == 0x11821D80, "Wrong alignment on TabInputOptions_C_ExecuteUbergraph_TabInputOptions");
-static_assert(sizeof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions) == 0x11821D80, "Wrong size on TabInputOptions_C_ExecuteUbergraph_TabInputOptions");
+static_assert(alignof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions) == 0x000008, "Wrong alignment on TabInputOptions_C_ExecuteUbergraph_TabInputOptions");
+static_assert(sizeof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions) == 0x0000C8, "Wrong size on TabInputOptions_C_ExecuteUbergraph_TabInputOptions");
 static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, EntryPoint) == 0x000000, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, Temp_byte_Variable) == 0x000004, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -164,15 +164,15 @@ static_assert(offsetof(TabInputOptions_C_Input_Clicked, Number_in_List) == 0x000
 static_assert(offsetof(TabInputOptions_C_Input_Clicked, Is_Primary_Button) == 0x000004, "Member 'TabInputOptions_C_Input_Clicked::Is_Primary_Button' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.Overlay Key Pressed
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct TabInputOptions_C_Overlay_Key_Pressed final
 {
 public:
-	struct FKey                                   NewKey;                                            // 0x0000(0x11821D80)(Parm, HasGetValueTypeHash)
+	struct FKey                                   NewKey;                                            // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabInputOptions_C_Overlay_Key_Pressed) == 0x11821D80, "Wrong alignment on TabInputOptions_C_Overlay_Key_Pressed");
-static_assert(sizeof(TabInputOptions_C_Overlay_Key_Pressed) == 0x11821D80, "Wrong size on TabInputOptions_C_Overlay_Key_Pressed");
+static_assert(alignof(TabInputOptions_C_Overlay_Key_Pressed) == 0x000008, "Wrong alignment on TabInputOptions_C_Overlay_Key_Pressed");
+static_assert(sizeof(TabInputOptions_C_Overlay_Key_Pressed) == 0x000020, "Wrong size on TabInputOptions_C_Overlay_Key_Pressed");
 static_assert(offsetof(TabInputOptions_C_Overlay_Key_Pressed, NewKey) == 0x000000, "Member 'TabInputOptions_C_Overlay_Key_Pressed::NewKey' has a wrong offset!");
 static_assert(offsetof(TabInputOptions_C_Overlay_Key_Pressed, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000018, "Member 'TabInputOptions_C_Overlay_Key_Pressed::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
 

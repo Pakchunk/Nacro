@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionOverviewObjective.MissionOverviewObjective_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0280 - 0x0238)
 class UMissionOverviewObjective_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       Description;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Heading;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   HeadingText;                                       // 0x0250(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UMissionOverviewObjective_C>();
 	}
 };
-static_assert(alignof(UMissionOverviewObjective_C) == 0x322CBBB8, "Wrong alignment on UMissionOverviewObjective_C");
-static_assert(sizeof(UMissionOverviewObjective_C) == 0x322CBBB8, "Wrong size on UMissionOverviewObjective_C");
+static_assert(alignof(UMissionOverviewObjective_C) == 0x000008, "Wrong alignment on UMissionOverviewObjective_C");
+static_assert(sizeof(UMissionOverviewObjective_C) == 0x000280, "Wrong size on UMissionOverviewObjective_C");
 static_assert(offsetof(UMissionOverviewObjective_C, UberGraphFrame) == 0x000238, "Member 'UMissionOverviewObjective_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionOverviewObjective_C, Description) == 0x000240, "Member 'UMissionOverviewObjective_C::Description' has a wrong offset!");
 static_assert(offsetof(UMissionOverviewObjective_C, Heading) == 0x000248, "Member 'UMissionOverviewObjective_C::Heading' has a wrong offset!");

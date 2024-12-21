@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x08E8 - 0x08B0)
 class UBP_FortExpeditionVehicleTileItemWidget_C final : public UFortExpeditionVehicleTileItemWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
 	class UBasicRatingWidget_C*                   BasicRatingWidget;                                 // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Name_0;                                            // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 VehicleIcon;                                       // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UBP_FortExpeditionVehicleTileItemWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionVehicleTileItemWidget_C) == 0x322CBBB8, "Wrong alignment on UBP_FortExpeditionVehicleTileItemWidget_C");
-static_assert(sizeof(UBP_FortExpeditionVehicleTileItemWidget_C) == 0x322CBBB8, "Wrong size on UBP_FortExpeditionVehicleTileItemWidget_C");
+static_assert(alignof(UBP_FortExpeditionVehicleTileItemWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionVehicleTileItemWidget_C");
+static_assert(sizeof(UBP_FortExpeditionVehicleTileItemWidget_C) == 0x0008E8, "Wrong size on UBP_FortExpeditionVehicleTileItemWidget_C");
 static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, UberGraphFrame) == 0x0008B0, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, BasicRatingWidget) == 0x0008B8, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::BasicRatingWidget' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, Name_0) == 0x0008C0, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::Name_0' has a wrong offset!");

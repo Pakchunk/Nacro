@@ -79,19 +79,19 @@ static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Dyna
 static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.PreConstruct
-// 0x0044 (0x0044 - 0x0000)
-struct alignas(0x44) QuickbarSlot_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarSlot_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_PreConstruct) == 0x000044, "Wrong alignment on QuickbarSlot_C_PreConstruct");
-static_assert(sizeof(QuickbarSlot_C_PreConstruct) == 0x000044, "Wrong size on QuickbarSlot_C_PreConstruct");
+static_assert(alignof(QuickbarSlot_C_PreConstruct) == 0x000001, "Wrong alignment on QuickbarSlot_C_PreConstruct");
+static_assert(sizeof(QuickbarSlot_C_PreConstruct) == 0x000001, "Wrong size on QuickbarSlot_C_PreConstruct");
 static_assert(offsetof(QuickbarSlot_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'QuickbarSlot_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.SetSelected
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) QuickbarSlot_C_SetSelected final
+// 0x0028 (0x0028 - 0x0000)
+struct QuickbarSlot_C_SetSelected final
 {
 public:
 	bool                                          Selected_0;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -115,8 +115,8 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarSlot_C_SetSelected) == 0x0000E4, "Wrong alignment on QuickbarSlot_C_SetSelected");
-static_assert(sizeof(QuickbarSlot_C_SetSelected) == 0x0000E4, "Wrong size on QuickbarSlot_C_SetSelected");
+static_assert(alignof(QuickbarSlot_C_SetSelected) == 0x000008, "Wrong alignment on QuickbarSlot_C_SetSelected");
+static_assert(sizeof(QuickbarSlot_C_SetSelected) == 0x000028, "Wrong size on QuickbarSlot_C_SetSelected");
 static_assert(offsetof(QuickbarSlot_C_SetSelected, Selected_0) == 0x000000, "Member 'QuickbarSlot_C_SetSelected::Selected_0' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable) == 0x000001, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable2) == 0x000002, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable2' has a wrong offset!");
@@ -137,14 +137,14 @@ static_assert(offsetof(QuickbarSlot_C_SetSelected, K2Node_Select3_Default) == 0x
 static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_GetEndTime_ReturnValue) == 0x000020, "Member 'QuickbarSlot_C_SetSelected::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.Minimize
-// 0x651972A0 (0x651972A0 - 0x0000)
-struct alignas(0x651972A0) QuickbarSlot_C_Minimize final
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarSlot_C_Minimize final
 {
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_Minimize) == 0x651972A0, "Wrong alignment on QuickbarSlot_C_Minimize");
-static_assert(sizeof(QuickbarSlot_C_Minimize) == 0x651972A0, "Wrong size on QuickbarSlot_C_Minimize");
+static_assert(alignof(QuickbarSlot_C_Minimize) == 0x000001, "Wrong alignment on QuickbarSlot_C_Minimize");
+static_assert(sizeof(QuickbarSlot_C_Minimize) == 0x000001, "Wrong size on QuickbarSlot_C_Minimize");
 static_assert(offsetof(QuickbarSlot_C_Minimize, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'QuickbarSlot_C_Minimize::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.Maximize
@@ -159,19 +159,19 @@ static_assert(sizeof(QuickbarSlot_C_Maximize) == 0x000001, "Wrong size on Quickb
 static_assert(offsetof(QuickbarSlot_C_Maximize, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'QuickbarSlot_C_Maximize::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.Resize
-// 0x0054 (0x0054 - 0x0000)
-struct alignas(0x54) QuickbarSlot_C_Resize final
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarSlot_C_Resize final
 {
 public:
 	EFortBrushSize                                Brush_Size;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarSlot_C_Resize) == 0x000054, "Wrong alignment on QuickbarSlot_C_Resize");
-static_assert(sizeof(QuickbarSlot_C_Resize) == 0x000054, "Wrong size on QuickbarSlot_C_Resize");
+static_assert(alignof(QuickbarSlot_C_Resize) == 0x000001, "Wrong alignment on QuickbarSlot_C_Resize");
+static_assert(sizeof(QuickbarSlot_C_Resize) == 0x000001, "Wrong size on QuickbarSlot_C_Resize");
 static_assert(offsetof(QuickbarSlot_C_Resize, Brush_Size) == 0x000000, "Member 'QuickbarSlot_C_Resize::Brush_Size' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.UpdateKeyBindingText
-// 0x0048 (0x0048 - 0x0000)
-struct alignas(0x48) QuickbarSlot_C_UpdateKeyBindingText final
+// 0x0038 (0x0038 - 0x0000)
+struct QuickbarSlot_C_UpdateKeyBindingText final
 {
 public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -192,8 +192,8 @@ public:
 	class FName                                   CallFunc_GetKeyBindingAction_KeyBindingAction2;    // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_UpdateKeyBindingText) == 0x000048, "Wrong alignment on QuickbarSlot_C_UpdateKeyBindingText");
-static_assert(sizeof(QuickbarSlot_C_UpdateKeyBindingText) == 0x000048, "Wrong size on QuickbarSlot_C_UpdateKeyBindingText");
+static_assert(alignof(QuickbarSlot_C_UpdateKeyBindingText) == 0x000008, "Wrong alignment on QuickbarSlot_C_UpdateKeyBindingText");
+static_assert(sizeof(QuickbarSlot_C_UpdateKeyBindingText) == 0x000038, "Wrong size on QuickbarSlot_C_UpdateKeyBindingText");
 static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, Temp_byte_Variable) == 0x000000, "Member 'QuickbarSlot_C_UpdateKeyBindingText::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, Temp_byte_Variable2) == 0x000001, "Member 'QuickbarSlot_C_UpdateKeyBindingText::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -305,15 +305,15 @@ static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_Boole
 static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, K2Node_SwitchEnum2_CmpSuccess) == 0x000058, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.InitializeCooldowns
-// 0x4D0077 (0x4D0077 - 0x0000)
-struct alignas(0x4D0077) QuickbarSlot_C_InitializeCooldowns final
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) QuickbarSlot_C_InitializeCooldowns final
 {
 public:
 	TDelegate<void(EFortItemCooldownType CooldownType)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(EFortItemCooldownType CooldownType)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_InitializeCooldowns) == 0x4D0077, "Wrong alignment on QuickbarSlot_C_InitializeCooldowns");
-static_assert(sizeof(QuickbarSlot_C_InitializeCooldowns) == 0x4D0077, "Wrong size on QuickbarSlot_C_InitializeCooldowns");
+static_assert(alignof(QuickbarSlot_C_InitializeCooldowns) == 0x000008, "Wrong alignment on QuickbarSlot_C_InitializeCooldowns");
+static_assert(sizeof(QuickbarSlot_C_InitializeCooldowns) == 0x000020, "Wrong size on QuickbarSlot_C_InitializeCooldowns");
 static_assert(offsetof(QuickbarSlot_C_InitializeCooldowns, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'QuickbarSlot_C_InitializeCooldowns::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_InitializeCooldowns, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'QuickbarSlot_C_InitializeCooldowns::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
@@ -344,8 +344,8 @@ static_assert(offsetof(QuickbarSlot_C_OnCooldownStopped, CooldownType) == 0x0000
 static_assert(offsetof(QuickbarSlot_C_OnCooldownStopped, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'QuickbarSlot_C_OnCooldownStopped::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.UpdateItemCardsVisibility
-// 0x720042 (0x720042 - 0x0000)
-struct alignas(0x720042) QuickbarSlot_C_UpdateItemCardsVisibility final
+// 0x000A (0x000A - 0x0000)
+struct QuickbarSlot_C_UpdateItemCardsVisibility final
 {
 public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -359,8 +359,8 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_UpdateItemCardsVisibility) == 0x720042, "Wrong alignment on QuickbarSlot_C_UpdateItemCardsVisibility");
-static_assert(sizeof(QuickbarSlot_C_UpdateItemCardsVisibility) == 0x720042, "Wrong size on QuickbarSlot_C_UpdateItemCardsVisibility");
+static_assert(alignof(QuickbarSlot_C_UpdateItemCardsVisibility) == 0x000001, "Wrong alignment on QuickbarSlot_C_UpdateItemCardsVisibility");
+static_assert(sizeof(QuickbarSlot_C_UpdateItemCardsVisibility) == 0x00000A, "Wrong size on QuickbarSlot_C_UpdateItemCardsVisibility");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_byte_Variable) == 0x000000, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_bool_Variable) == 0x000001, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_byte_Variable2) == 0x000002, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_byte_Variable2' has a wrong offset!");
@@ -373,8 +373,8 @@ static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, K2Node_Select_D
 static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, K2Node_Select2_Default) == 0x000009, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::K2Node_Select2_Default' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.GetKeyBindingAction
-// 0x0034 (0x0034 - 0x0000)
-struct alignas(0x34) QuickbarSlot_C_GetKeyBindingAction final
+// 0x0028 (0x0028 - 0x0000)
+struct QuickbarSlot_C_GetKeyBindingAction final
 {
 public:
 	class FName                                   KeyBindingAction;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -385,8 +385,8 @@ public:
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_GetKeyBindingAction_Gamepad_KeyBindingAction; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarSlot_C_GetKeyBindingAction) == 0x000034, "Wrong alignment on QuickbarSlot_C_GetKeyBindingAction");
-static_assert(sizeof(QuickbarSlot_C_GetKeyBindingAction) == 0x000034, "Wrong size on QuickbarSlot_C_GetKeyBindingAction");
+static_assert(alignof(QuickbarSlot_C_GetKeyBindingAction) == 0x000008, "Wrong alignment on QuickbarSlot_C_GetKeyBindingAction");
+static_assert(sizeof(QuickbarSlot_C_GetKeyBindingAction) == 0x000028, "Wrong size on QuickbarSlot_C_GetKeyBindingAction");
 static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, KeyBindingAction) == 0x000000, "Member 'QuickbarSlot_C_GetKeyBindingAction::KeyBindingAction' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuickbarSlot_C_GetKeyBindingAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action) == 0x000010, "Member 'QuickbarSlot_C_GetKeyBindingAction::CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action' has a wrong offset!");

@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemCount.ItemCount_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02A8 - 0x0238)
 class UItemCount_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          Border;                                            // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCountTextBlock*                CountText;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       DisplayName;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<UItemCount_C>();
 	}
 };
-static_assert(alignof(UItemCount_C) == 0x322CBBB8, "Wrong alignment on UItemCount_C");
-static_assert(sizeof(UItemCount_C) == 0x322CBBB8, "Wrong size on UItemCount_C");
+static_assert(alignof(UItemCount_C) == 0x000008, "Wrong alignment on UItemCount_C");
+static_assert(sizeof(UItemCount_C) == 0x0002A8, "Wrong size on UItemCount_C");
 static_assert(offsetof(UItemCount_C, UberGraphFrame) == 0x000238, "Member 'UItemCount_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemCount_C, Border) == 0x000240, "Member 'UItemCount_C::Border' has a wrong offset!");
 static_assert(offsetof(UItemCount_C, CountText) == 0x000248, "Member 'UItemCount_C::CountText' has a wrong offset!");

@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D8 (0x0350 - 0x0278)
 class UBP_LocalPlayerBannerEditor_C final : public UFortPlayerProfileBannerEditor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ApplyButton;                                       // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       CategoryText;                                      // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      CloseEditorButton;                                 // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,7 +52,7 @@ public:
 	class FName                                   TempChosenIcon;                                    // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   TempChosenColor;                                   // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonGroup*                     ButtonGroup;                                       // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           UpdateBangTimerHandle;                             // 0x0348(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           UpdateBangTimerHandle;                             // 0x0348(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId);
@@ -121,8 +121,8 @@ public:
 		return GetDefaultObjImpl<UBP_LocalPlayerBannerEditor_C>();
 	}
 };
-static_assert(alignof(UBP_LocalPlayerBannerEditor_C) == 0x322CBBB8, "Wrong alignment on UBP_LocalPlayerBannerEditor_C");
-static_assert(sizeof(UBP_LocalPlayerBannerEditor_C) == 0x322CBBB8, "Wrong size on UBP_LocalPlayerBannerEditor_C");
+static_assert(alignof(UBP_LocalPlayerBannerEditor_C) == 0x000008, "Wrong alignment on UBP_LocalPlayerBannerEditor_C");
+static_assert(sizeof(UBP_LocalPlayerBannerEditor_C) == 0x000350, "Wrong size on UBP_LocalPlayerBannerEditor_C");
 static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, UberGraphFrame) == 0x000278, "Member 'UBP_LocalPlayerBannerEditor_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, ApplyButton) == 0x000280, "Member 'UBP_LocalPlayerBannerEditor_C::ApplyButton' has a wrong offset!");
 static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, CategoryText) == 0x000288, "Member 'UBP_LocalPlayerBannerEditor_C::CategoryText' has a wrong offset!");

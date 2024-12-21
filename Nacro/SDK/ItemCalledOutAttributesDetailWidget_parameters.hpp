@@ -60,7 +60,7 @@ static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_ExecuteUbergraph_It
 static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_ExecuteUbergraph_ItemCalledOutAttributesDetailWidget, K2Node_Select2_Default) == 0x000031, "Member 'ItemCalledOutAttributesDetailWidget_C_ExecuteUbergraph_ItemCalledOutAttributesDetailWidget::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.GetDisplayAttributesToCallOut
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut final
 {
 public:
@@ -78,16 +78,16 @@ public:
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0088(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0088(0x0018)(HasGetValueTypeHash)
 	class UFortTooltipContext*                    CallFunc_SpawnTooltipContextWithNetID_ReturnValue; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           CallFunc_Array_Get_Item;                           // 0x00A8(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           CallFunc_Array_Get_Item;                           // 0x00A8(0x0008)(NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x00C8(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x00C8(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetSchematicCraftingResultBP_ReturnValue; // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -99,8 +99,8 @@ public:
 	EFortItemType                                 K2Node_Select_Default;                             // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut) == 0x11821D80, "Wrong alignment on ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut");
-static_assert(sizeof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut) == 0x11821D80, "Wrong size on ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut");
+static_assert(alignof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut) == 0x000008, "Wrong alignment on ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut");
+static_assert(sizeof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut) == 0x000158, "Wrong size on ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut");
 static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut, Attributes) == 0x000000, "Member 'ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut::Attributes' has a wrong offset!");
 static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut, Tokens) == 0x000010, "Member 'ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut::Tokens' has a wrong offset!");
 static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut, Results) == 0x000020, "Member 'ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut::Results' has a wrong offset!");
@@ -131,7 +131,7 @@ static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttribute
 static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut, K2Node_SwitchEnum_CmpSuccess) == 0x000151, "Member 'ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.UpdateStats
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct ItemCalledOutAttributesDetailWidget_C_UpdateStats final
 {
 public:
@@ -151,14 +151,14 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetDisplayAttributesToCallOut_Attributes; // 0x0038(0x0010)(ZeroConstructor, ReferenceParm)
 	class UStatsListItemWIdget_C*                 CallFunc_Create_ReturnValue;                       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_Array_Get_Item2;                          // 0x0050(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_Array_Get_Item2;                          // 0x0050(0x0070)()
 	class UWrapBoxSlot*                           CallFunc_AddChildWrapBox_ReturnValue;              // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCalledOutAttributesDetailWidget_C_UpdateStats) == 0x11821C00, "Wrong alignment on ItemCalledOutAttributesDetailWidget_C_UpdateStats");
-static_assert(sizeof(ItemCalledOutAttributesDetailWidget_C_UpdateStats) == 0x11821C00, "Wrong size on ItemCalledOutAttributesDetailWidget_C_UpdateStats");
+static_assert(alignof(ItemCalledOutAttributesDetailWidget_C_UpdateStats) == 0x000008, "Wrong alignment on ItemCalledOutAttributesDetailWidget_C_UpdateStats");
+static_assert(sizeof(ItemCalledOutAttributesDetailWidget_C_UpdateStats) == 0x0000D8, "Wrong size on ItemCalledOutAttributesDetailWidget_C_UpdateStats");
 static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_UpdateStats, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'ItemCalledOutAttributesDetailWidget_C_UpdateStats::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_UpdateStats, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'ItemCalledOutAttributesDetailWidget_C_UpdateStats::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemCalledOutAttributesDetailWidget_C_UpdateStats, Temp_int_Array_Index_Variable) == 0x000008, "Member 'ItemCalledOutAttributesDetailWidget_C_UpdateStats::Temp_int_Array_Index_Variable' has a wrong offset!");

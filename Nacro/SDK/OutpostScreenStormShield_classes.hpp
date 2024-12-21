@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OutpostScreenStormShield.OutpostScreenStormShield_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0420 - 0x03E0)
 class UOutpostScreenStormShield_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalTabList_C*                   ContentOrPermissionsTab;                           // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  ShieldToContentSwitcher;                           // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AFortOutpostBuilding*                   OutpostCoreBuilding;                               // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UOutpostScreenStormShield_C>();
 	}
 };
-static_assert(alignof(UOutpostScreenStormShield_C) == 0x322CBBB8, "Wrong alignment on UOutpostScreenStormShield_C");
-static_assert(sizeof(UOutpostScreenStormShield_C) == 0x322CBBB8, "Wrong size on UOutpostScreenStormShield_C");
+static_assert(alignof(UOutpostScreenStormShield_C) == 0x000008, "Wrong alignment on UOutpostScreenStormShield_C");
+static_assert(sizeof(UOutpostScreenStormShield_C) == 0x000420, "Wrong size on UOutpostScreenStormShield_C");
 static_assert(offsetof(UOutpostScreenStormShield_C, UberGraphFrame) == 0x0003E0, "Member 'UOutpostScreenStormShield_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenStormShield_C, ContentOrPermissionsTab) == 0x0003E8, "Member 'UOutpostScreenStormShield_C::ContentOrPermissionsTab' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenStormShield_C, ShieldToContentSwitcher) == 0x0003F0, "Member 'UOutpostScreenStormShield_C::ShieldToContentSwitcher' has a wrong offset!");

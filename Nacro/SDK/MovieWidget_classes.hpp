@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MovieWidget.MovieWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0288 - 0x0258)
 class UMovieWidget_C final : public UFortMovieWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Video_Image;                                       // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScaleBox*                              Video_ScaleBox;                                    // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ShouldLoop;                                        // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UMovieWidget_C>();
 	}
 };
-static_assert(alignof(UMovieWidget_C) == 0x322CBBB8, "Wrong alignment on UMovieWidget_C");
-static_assert(sizeof(UMovieWidget_C) == 0x322CBBB8, "Wrong size on UMovieWidget_C");
+static_assert(alignof(UMovieWidget_C) == 0x000008, "Wrong alignment on UMovieWidget_C");
+static_assert(sizeof(UMovieWidget_C) == 0x000288, "Wrong size on UMovieWidget_C");
 static_assert(offsetof(UMovieWidget_C, UberGraphFrame) == 0x000258, "Member 'UMovieWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMovieWidget_C, Video_Image) == 0x000260, "Member 'UMovieWidget_C::Video_Image' has a wrong offset!");
 static_assert(offsetof(UMovieWidget_C, Video_ScaleBox) == 0x000268, "Member 'UMovieWidget_C::Video_ScaleBox' has a wrong offset!");

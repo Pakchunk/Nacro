@@ -41,21 +41,21 @@ static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_Create
 static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_CreateDelegate_OutputDelegate3) == 0x000038, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function ZoneDetails.ZoneDetails_C.Update
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0470 (0x0470 - 0x0000)
 struct ZoneDetails_C_Update final
 {
 public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0008(0x1182E980)()
+	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0008(0x03B8)()
 	bool                                          CallFunc_GetCurrentBasicMissionInfo_ReturnValue;   // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x03C8(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0408(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x03C8(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0408(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0448(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0458(0x0018)()
 };
-static_assert(alignof(ZoneDetails_C_Update) == 0x1182E980, "Wrong alignment on ZoneDetails_C_Update");
-static_assert(sizeof(ZoneDetails_C_Update) == 0x1182E980, "Wrong size on ZoneDetails_C_Update");
+static_assert(alignof(ZoneDetails_C_Update) == 0x000008, "Wrong alignment on ZoneDetails_C_Update");
+static_assert(sizeof(ZoneDetails_C_Update) == 0x000470, "Wrong size on ZoneDetails_C_Update");
 static_assert(offsetof(ZoneDetails_C_Update, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ZoneDetails_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ZoneDetails_C_Update, CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo) == 0x000008, "Member 'ZoneDetails_C_Update::CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo' has a wrong offset!");
 static_assert(offsetof(ZoneDetails_C_Update, CallFunc_GetCurrentBasicMissionInfo_ReturnValue) == 0x0003C0, "Member 'ZoneDetails_C_Update::CallFunc_GetCurrentBasicMissionInfo_ReturnValue' has a wrong offset!");

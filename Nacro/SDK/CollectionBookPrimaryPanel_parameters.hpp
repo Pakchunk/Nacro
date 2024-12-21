@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C.ExecuteUbergraph_CollectionBookPrimaryPanel
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel final
+// 0x0028 (0x0028 - 0x0000)
+struct CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -26,8 +26,8 @@ public:
 	class UHelpWidget_C*                          K2Node_DynamicCast_AsHelp_Widget;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel) == 0x0000E4, "Wrong alignment on CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel");
-static_assert(sizeof(CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel) == 0x0000E4, "Wrong size on CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel");
+static_assert(alignof(CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel) == 0x000008, "Wrong alignment on CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel");
+static_assert(sizeof(CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel) == 0x000028, "Wrong size on CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel");
 static_assert(offsetof(CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel, EntryPoint) == 0x000000, "Member 'CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel, CallFunc_GetCachedWidget_ReturnValue) == 0x000010, "Member 'CollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");

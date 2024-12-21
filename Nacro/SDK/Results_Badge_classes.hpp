@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_Badge.Results_Badge_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x02B0 - 0x0238)
 class UResults_Badge_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_Reset;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Convert;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -64,8 +64,8 @@ public:
 		return GetDefaultObjImpl<UResults_Badge_C>();
 	}
 };
-static_assert(alignof(UResults_Badge_C) == 0x322CBBB8, "Wrong alignment on UResults_Badge_C");
-static_assert(sizeof(UResults_Badge_C) == 0x322CBBB8, "Wrong size on UResults_Badge_C");
+static_assert(alignof(UResults_Badge_C) == 0x000008, "Wrong alignment on UResults_Badge_C");
+static_assert(sizeof(UResults_Badge_C) == 0x0002B0, "Wrong size on UResults_Badge_C");
 static_assert(offsetof(UResults_Badge_C, UberGraphFrame) == 0x000238, "Member 'UResults_Badge_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_Badge_C, Anim_Reset) == 0x000240, "Member 'UResults_Badge_C::Anim_Reset' has a wrong offset!");
 static_assert(offsetof(UResults_Badge_C, Anim_Convert) == 0x000248, "Member 'UResults_Badge_C::Anim_Convert' has a wrong offset!");

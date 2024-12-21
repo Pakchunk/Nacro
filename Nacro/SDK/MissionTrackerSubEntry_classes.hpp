@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionTrackerSubEntry.MissionTrackerSubEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01A0 (0x0410 - 0x0270)
 class UMissionTrackerSubEntry_C final : public UFortMissionTrackerSubEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       NewObjectiveCreation;                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       DrawAttentionAnimation;                            // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       CompletionFlashAnimation;                          // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,8 +39,8 @@ public:
 	class UImage*                                 Questionmark;                                      // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AFortObjectiveBase*                     ObjectiveActor;                                    // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   WidgetVisibilityChanged;                           // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FSlateBrush                            DefaultBulletBrush;                                // 0x02F0(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            DefaultNonHUDBulletBrush;                          // 0x0380(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            DefaultBulletBrush;                                // 0x02F0(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            DefaultNonHUDBulletBrush;                          // 0x0380(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void WidgetVisibilityChanged__DelegateSignature();
@@ -74,8 +74,8 @@ public:
 		return GetDefaultObjImpl<UMissionTrackerSubEntry_C>();
 	}
 };
-static_assert(alignof(UMissionTrackerSubEntry_C) == 0x322CBBB8, "Wrong alignment on UMissionTrackerSubEntry_C");
-static_assert(sizeof(UMissionTrackerSubEntry_C) == 0x322CBBB8, "Wrong size on UMissionTrackerSubEntry_C");
+static_assert(alignof(UMissionTrackerSubEntry_C) == 0x000008, "Wrong alignment on UMissionTrackerSubEntry_C");
+static_assert(sizeof(UMissionTrackerSubEntry_C) == 0x000410, "Wrong size on UMissionTrackerSubEntry_C");
 static_assert(offsetof(UMissionTrackerSubEntry_C, UberGraphFrame) == 0x000270, "Member 'UMissionTrackerSubEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionTrackerSubEntry_C, NewObjectiveCreation) == 0x000278, "Member 'UMissionTrackerSubEntry_C::NewObjectiveCreation' has a wrong offset!");
 static_assert(offsetof(UMissionTrackerSubEntry_C, DrawAttentionAnimation) == 0x000280, "Member 'UMissionTrackerSubEntry_C::DrawAttentionAnimation' has a wrong offset!");

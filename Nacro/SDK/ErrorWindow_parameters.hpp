@@ -33,14 +33,14 @@ static_assert(offsetof(ErrorWindow_C_ExecuteUbergraph_ErrorWindow, K2Node_Compon
 static_assert(offsetof(ErrorWindow_C_ExecuteUbergraph_ErrorWindow, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'ErrorWindow_C_ExecuteUbergraph_ErrorWindow::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature
-// 0x0078 (0x0078 - 0x0000)
-struct alignas(0x78) ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature) == 0x000078, "Wrong alignment on ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature) == 0x000078, "Wrong size on ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature
@@ -55,11 +55,11 @@ static_assert(sizeof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundE
 static_assert(offsetof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.AddError
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct ErrorWindow_C_AddError final
 {
 public:
-	struct FFortErrorInfo                         ErrorInfo;                                         // 0x0000(0x1182E980)(Parm, OutParm, ReferenceParm)
+	struct FFortErrorInfo                         ErrorInfo;                                         // 0x0000(0x0080)(Parm, OutParm, ReferenceParm)
 	bool                                          First_Error;                                       // 0x0080(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UErrorEntry_C*                          ErrorEntry;                                        // 0x0088(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,8 +74,8 @@ public:
 	class UErrorEntry_C*                          K2Node_DynamicCast_AsError_Entry;                  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ErrorWindow_C_AddError) == 0x1182E980, "Wrong alignment on ErrorWindow_C_AddError");
-static_assert(sizeof(ErrorWindow_C_AddError) == 0x1182E980, "Wrong size on ErrorWindow_C_AddError");
+static_assert(alignof(ErrorWindow_C_AddError) == 0x000010, "Wrong alignment on ErrorWindow_C_AddError");
+static_assert(sizeof(ErrorWindow_C_AddError) == 0x0000D0, "Wrong size on ErrorWindow_C_AddError");
 static_assert(offsetof(ErrorWindow_C_AddError, ErrorInfo) == 0x000000, "Member 'ErrorWindow_C_AddError::ErrorInfo' has a wrong offset!");
 static_assert(offsetof(ErrorWindow_C_AddError, First_Error) == 0x000080, "Member 'ErrorWindow_C_AddError::First_Error' has a wrong offset!");
 static_assert(offsetof(ErrorWindow_C_AddError, ErrorEntry) == 0x000088, "Member 'ErrorWindow_C_AddError::ErrorEntry' has a wrong offset!");

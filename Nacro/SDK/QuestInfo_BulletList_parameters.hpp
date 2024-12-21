@@ -30,14 +30,14 @@ static_assert(offsetof(QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletL
 static_assert(offsetof(QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList, K2Node_Event_IsDesignTime) == 0x000004, "Member 'QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.PreConstruct
-// 0x0038 (0x0038 - 0x0000)
-struct alignas(0x38) QuestInfo_BulletList_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct QuestInfo_BulletList_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_BulletList_C_PreConstruct) == 0x000038, "Wrong alignment on QuestInfo_BulletList_C_PreConstruct");
-static_assert(sizeof(QuestInfo_BulletList_C_PreConstruct) == 0x000038, "Wrong size on QuestInfo_BulletList_C_PreConstruct");
+static_assert(alignof(QuestInfo_BulletList_C_PreConstruct) == 0x000001, "Wrong alignment on QuestInfo_BulletList_C_PreConstruct");
+static_assert(sizeof(QuestInfo_BulletList_C_PreConstruct) == 0x000001, "Wrong size on QuestInfo_BulletList_C_PreConstruct");
 static_assert(offsetof(QuestInfo_BulletList_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'QuestInfo_BulletList_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.AddEntry
@@ -77,12 +77,12 @@ static_assert(offsetof(QuestInfo_BulletList_C_InitDesignView, CallFunc_LessEqual
 static_assert(offsetof(QuestInfo_BulletList_C_InitDesignView, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'QuestInfo_BulletList_C_InitDesignView::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.AddEntryWithBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct QuestInfo_BulletList_C_AddEntryWithBrush final
 {
 public:
 	class FText                                   EntryText;                                         // 0x0000(0x0018)(Parm)
-	struct FSlateBrush                            EntryIconBrush;                                    // 0x0018(0x322CBBB8)(Parm)
+	struct FSlateBrush                            EntryIconBrush;                                    // 0x0018(0x0090)(Parm)
 	class UQuestInfo_BulletListEntry_C*           NewEntry;                                          // 0x00A8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UQuestInfo_BulletListEntry_C*           CallFunc_Create_ReturnValue;                       // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -90,8 +90,8 @@ public:
 	uint8                                         Pad_BD[0x3];                                       // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestInfo_BulletList_C_AddEntryWithBrush) == 0x11827900, "Wrong alignment on QuestInfo_BulletList_C_AddEntryWithBrush");
-static_assert(sizeof(QuestInfo_BulletList_C_AddEntryWithBrush) == 0x11827900, "Wrong size on QuestInfo_BulletList_C_AddEntryWithBrush");
+static_assert(alignof(QuestInfo_BulletList_C_AddEntryWithBrush) == 0x000008, "Wrong alignment on QuestInfo_BulletList_C_AddEntryWithBrush");
+static_assert(sizeof(QuestInfo_BulletList_C_AddEntryWithBrush) == 0x0000C8, "Wrong size on QuestInfo_BulletList_C_AddEntryWithBrush");
 static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, EntryText) == 0x000000, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::EntryText' has a wrong offset!");
 static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, EntryIconBrush) == 0x000018, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::EntryIconBrush' has a wrong offset!");
 static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, NewEntry) == 0x0000A8, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::NewEntry' has a wrong offset!");

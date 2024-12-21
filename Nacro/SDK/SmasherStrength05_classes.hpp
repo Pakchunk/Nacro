@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SmasherStrength05.SmasherStrength05_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0000 (0x0060 - 0x0060)
 class USmasherStrength05_C final : public UFortNavAreaAutomatic
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USmasherStrength05_C>();
 	}
 };
-static_assert(alignof(USmasherStrength05_C) == 0x1182A000, "Wrong alignment on USmasherStrength05_C");
-static_assert(sizeof(USmasherStrength05_C) == 0x1182A000, "Wrong size on USmasherStrength05_C");
+static_assert(alignof(USmasherStrength05_C) == 0x000008, "Wrong alignment on USmasherStrength05_C");
+static_assert(sizeof(USmasherStrength05_C) == 0x000060, "Wrong size on USmasherStrength05_C");
 
 }
 

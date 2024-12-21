@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LegalInfo.LegalInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0448 - 0x0408)
 class ULegalInfo_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CloseButton;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalTabList_C*                   LegalOptions;                                      // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<ULegalInfo_C>();
 	}
 };
-static_assert(alignof(ULegalInfo_C) == 0x322CBBB8, "Wrong alignment on ULegalInfo_C");
-static_assert(sizeof(ULegalInfo_C) == 0x322CBBB8, "Wrong size on ULegalInfo_C");
+static_assert(alignof(ULegalInfo_C) == 0x000008, "Wrong alignment on ULegalInfo_C");
+static_assert(sizeof(ULegalInfo_C) == 0x000448, "Wrong size on ULegalInfo_C");
 static_assert(offsetof(ULegalInfo_C, UberGraphFrame) == 0x000410, "Member 'ULegalInfo_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULegalInfo_C, CloseButton) == 0x000418, "Member 'ULegalInfo_C::CloseButton' has a wrong offset!");
 static_assert(offsetof(ULegalInfo_C, CommonWidgetSwitcher_0) == 0x000420, "Member 'ULegalInfo_C::CommonWidgetSwitcher_0' has a wrong offset!");

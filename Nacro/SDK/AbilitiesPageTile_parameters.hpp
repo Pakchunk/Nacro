@@ -36,18 +36,18 @@ static_assert(offsetof(AbilitiesPageTile_C_ExecuteUbergraph_AbilitiesPageTile, C
 static_assert(offsetof(AbilitiesPageTile_C_ExecuteUbergraph_AbilitiesPageTile, K2Node_CustomEvent_bUsingGamepad) == 0x000020, "Member 'AbilitiesPageTile_C_ExecuteUbergraph_AbilitiesPageTile::K2Node_CustomEvent_bUsingGamepad' has a wrong offset!");
 
 // Function AbilitiesPageTile.AbilitiesPageTile_C.HandleInputMethodChanged
-// 0x430061 (0x430061 - 0x0000)
-struct alignas(0x430061) AbilitiesPageTile_C_HandleInputMethodChanged final
+// 0x0001 (0x0001 - 0x0000)
+struct AbilitiesPageTile_C_HandleInputMethodChanged final
 {
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AbilitiesPageTile_C_HandleInputMethodChanged) == 0x430061, "Wrong alignment on AbilitiesPageTile_C_HandleInputMethodChanged");
-static_assert(sizeof(AbilitiesPageTile_C_HandleInputMethodChanged) == 0x430061, "Wrong size on AbilitiesPageTile_C_HandleInputMethodChanged");
+static_assert(alignof(AbilitiesPageTile_C_HandleInputMethodChanged) == 0x000001, "Wrong alignment on AbilitiesPageTile_C_HandleInputMethodChanged");
+static_assert(sizeof(AbilitiesPageTile_C_HandleInputMethodChanged) == 0x000001, "Wrong size on AbilitiesPageTile_C_HandleInputMethodChanged");
 static_assert(offsetof(AbilitiesPageTile_C_HandleInputMethodChanged, bUsingGamepad) == 0x000000, "Member 'AbilitiesPageTile_C_HandleInputMethodChanged::bUsingGamepad' has a wrong offset!");
 
 // Function AbilitiesPageTile.AbilitiesPageTile_C.SetAbilityItemInfo
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct AbilitiesPageTile_C_SetAbilityItemInfo final
 {
 public:
@@ -59,10 +59,10 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0050(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0050(0x0090)()
 };
-static_assert(alignof(AbilitiesPageTile_C_SetAbilityItemInfo) == 0x11827900, "Wrong alignment on AbilitiesPageTile_C_SetAbilityItemInfo");
-static_assert(sizeof(AbilitiesPageTile_C_SetAbilityItemInfo) == 0x11827900, "Wrong size on AbilitiesPageTile_C_SetAbilityItemInfo");
+static_assert(alignof(AbilitiesPageTile_C_SetAbilityItemInfo) == 0x000008, "Wrong alignment on AbilitiesPageTile_C_SetAbilityItemInfo");
+static_assert(sizeof(AbilitiesPageTile_C_SetAbilityItemInfo) == 0x0000E0, "Wrong size on AbilitiesPageTile_C_SetAbilityItemInfo");
 static_assert(offsetof(AbilitiesPageTile_C_SetAbilityItemInfo, SlottedAbilityItem) == 0x000000, "Member 'AbilitiesPageTile_C_SetAbilityItemInfo::SlottedAbilityItem' has a wrong offset!");
 static_assert(offsetof(AbilitiesPageTile_C_SetAbilityItemInfo, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'AbilitiesPageTile_C_SetAbilityItemInfo::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilitiesPageTile_C_SetAbilityItemInfo, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000020, "Member 'AbilitiesPageTile_C_SetAbilityItemInfo::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
@@ -95,19 +95,19 @@ static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_IsValid_Re
 static_assert(offsetof(AbilitiesPageTile_C_UpdateKeyBinding, CallFunc_IsUsingGamepad_ReturnValue) == 0x000013, "Member 'AbilitiesPageTile_C_UpdateKeyBinding::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPageTile.AbilitiesPageTile_C.SetAbilityPerkInfo
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0160 (0x0160 - 0x0000)
 struct AbilitiesPageTile_C_SetAbilityPerkInfo final
 {
 public:
-	struct FFortUIPerk                            AbilityPerk;                                       // 0x0000(0x1182E980)(Parm)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0088(0x322CBBB8)()
+	struct FFortUIPerk                            AbilityPerk;                                       // 0x0000(0x0088)(Parm)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0088(0x0028)()
 	TArray<class UFortGadgetItemDefinition*>      CallFunc_BP_GetGadgets_GadgetItemDefinitions;      // 0x00B0(0x0010)(ZeroConstructor, ReferenceParm)
 	class UFortGadgetItemDefinition*              CallFunc_Array_Get_Item;                           // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x00C8(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x00C8(0x0090)()
 	class UFortAbilityKit*                        CallFunc_GetGrantedAbilityKit_ReturnValue;         // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AbilitiesPageTile_C_SetAbilityPerkInfo) == 0x322CBBB8, "Wrong alignment on AbilitiesPageTile_C_SetAbilityPerkInfo");
-static_assert(sizeof(AbilitiesPageTile_C_SetAbilityPerkInfo) == 0x322CBBB8, "Wrong size on AbilitiesPageTile_C_SetAbilityPerkInfo");
+static_assert(alignof(AbilitiesPageTile_C_SetAbilityPerkInfo) == 0x000008, "Wrong alignment on AbilitiesPageTile_C_SetAbilityPerkInfo");
+static_assert(sizeof(AbilitiesPageTile_C_SetAbilityPerkInfo) == 0x000160, "Wrong size on AbilitiesPageTile_C_SetAbilityPerkInfo");
 static_assert(offsetof(AbilitiesPageTile_C_SetAbilityPerkInfo, AbilityPerk) == 0x000000, "Member 'AbilitiesPageTile_C_SetAbilityPerkInfo::AbilityPerk' has a wrong offset!");
 static_assert(offsetof(AbilitiesPageTile_C_SetAbilityPerkInfo, K2Node_MakeStruct_SlateColor) == 0x000088, "Member 'AbilitiesPageTile_C_SetAbilityPerkInfo::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(AbilitiesPageTile_C_SetAbilityPerkInfo, CallFunc_BP_GetGadgets_GadgetItemDefinitions) == 0x0000B0, "Member 'AbilitiesPageTile_C_SetAbilityPerkInfo::CallFunc_BP_GetGadgets_GadgetItemDefinitions' has a wrong offset!");

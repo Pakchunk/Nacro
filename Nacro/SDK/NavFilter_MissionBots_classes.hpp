@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NavFilter_MissionBots.NavFilter_MissionBots_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0048 - 0x0048)
 class UNavFilter_MissionBots_C final : public UNavigationQueryFilter
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UNavFilter_MissionBots_C>();
 	}
 };
-static_assert(alignof(UNavFilter_MissionBots_C) == 0x11821D80, "Wrong alignment on UNavFilter_MissionBots_C");
-static_assert(sizeof(UNavFilter_MissionBots_C) == 0x11821D80, "Wrong size on UNavFilter_MissionBots_C");
+static_assert(alignof(UNavFilter_MissionBots_C) == 0x000008, "Wrong alignment on UNavFilter_MissionBots_C");
+static_assert(sizeof(UNavFilter_MissionBots_C) == 0x000048, "Wrong size on UNavFilter_MissionBots_C");
 
 }
 

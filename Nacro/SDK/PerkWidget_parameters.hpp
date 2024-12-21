@@ -10,33 +10,33 @@
 
 #include "Basic.hpp"
 
+#include "TooltipStat_structs.hpp"
 #include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "TooltipStat_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function PerkWidget.PerkWidget_C.ExecuteUbergraph_PerkWidget
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct PerkWidget_C_ExecuteUbergraph_PerkWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasAbility_ReturnValue;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0008(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0008(0x0090)()
 	bool                                          CallFunc_ShouldFadePerk_Result;                    // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x009C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x009C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidget_C_ExecuteUbergraph_PerkWidget) == 0x11827900, "Wrong alignment on PerkWidget_C_ExecuteUbergraph_PerkWidget");
-static_assert(sizeof(PerkWidget_C_ExecuteUbergraph_PerkWidget) == 0x11827900, "Wrong size on PerkWidget_C_ExecuteUbergraph_PerkWidget");
+static_assert(alignof(PerkWidget_C_ExecuteUbergraph_PerkWidget) == 0x000008, "Wrong alignment on PerkWidget_C_ExecuteUbergraph_PerkWidget");
+static_assert(sizeof(PerkWidget_C_ExecuteUbergraph_PerkWidget) == 0x0000B0, "Wrong size on PerkWidget_C_ExecuteUbergraph_PerkWidget");
 static_assert(offsetof(PerkWidget_C_ExecuteUbergraph_PerkWidget, EntryPoint) == 0x000000, "Member 'PerkWidget_C_ExecuteUbergraph_PerkWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_ExecuteUbergraph_PerkWidget, CallFunc_HasAbility_ReturnValue) == 0x000004, "Member 'PerkWidget_C_ExecuteUbergraph_PerkWidget::CallFunc_HasAbility_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_ExecuteUbergraph_PerkWidget, K2Node_MakeStruct_SlateBrush) == 0x000008, "Member 'PerkWidget_C_ExecuteUbergraph_PerkWidget::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
@@ -45,33 +45,33 @@ static_assert(offsetof(PerkWidget_C_ExecuteUbergraph_PerkWidget, K2Node_MakeStru
 static_assert(offsetof(PerkWidget_C_ExecuteUbergraph_PerkWidget, K2Node_Event_IsDesignTime) == 0x0000AC, "Member 'PerkWidget_C_ExecuteUbergraph_PerkWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.PreConstruct
-// 0x0078 (0x0078 - 0x0000)
-struct alignas(0x78) PerkWidget_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct PerkWidget_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidget_C_PreConstruct) == 0x000078, "Wrong alignment on PerkWidget_C_PreConstruct");
-static_assert(sizeof(PerkWidget_C_PreConstruct) == 0x000078, "Wrong size on PerkWidget_C_PreConstruct");
+static_assert(alignof(PerkWidget_C_PreConstruct) == 0x000001, "Wrong alignment on PerkWidget_C_PreConstruct");
+static_assert(sizeof(PerkWidget_C_PreConstruct) == 0x000001, "Wrong size on PerkWidget_C_PreConstruct");
 static_assert(offsetof(PerkWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'PerkWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.InitializeBasicPerk
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0260 (0x0260 - 0x0000)
 struct PerkWidget_C_InitializeBasicPerk final
 {
 public:
-	struct FLinearColor                           CallFunc_GetHighlightColor_Color;                  // 0x0000(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_NoResourceBrush_ReturnValue;              // 0x0010(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_GetHighlightColor_Color;                  // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_NoResourceBrush_ReturnValue;              // 0x0010(0x0090)()
 	bool                                          Temp_bool_Variable;                                // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetIcon_Brush;                            // 0x00A8(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetIcon_Brush;                            // 0x00A8(0x0090)()
 	bool                                          CallFunc_GetIcon_ReturnValue;                      // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0140(0x322CBBB8)()
-	struct FSlateBrush                            CallFunc_ResizeBrush_NewParam;                     // 0x01D0(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0140(0x0090)()
+	struct FSlateBrush                            CallFunc_ResizeBrush_NewParam;                     // 0x01D0(0x0090)()
 };
-static_assert(alignof(PerkWidget_C_InitializeBasicPerk) == 0x11827900, "Wrong alignment on PerkWidget_C_InitializeBasicPerk");
-static_assert(sizeof(PerkWidget_C_InitializeBasicPerk) == 0x11827900, "Wrong size on PerkWidget_C_InitializeBasicPerk");
+static_assert(alignof(PerkWidget_C_InitializeBasicPerk) == 0x000008, "Wrong alignment on PerkWidget_C_InitializeBasicPerk");
+static_assert(sizeof(PerkWidget_C_InitializeBasicPerk) == 0x000260, "Wrong size on PerkWidget_C_InitializeBasicPerk");
 static_assert(offsetof(PerkWidget_C_InitializeBasicPerk, CallFunc_GetHighlightColor_Color) == 0x000000, "Member 'PerkWidget_C_InitializeBasicPerk::CallFunc_GetHighlightColor_Color' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_InitializeBasicPerk, CallFunc_NoResourceBrush_ReturnValue) == 0x000010, "Member 'PerkWidget_C_InitializeBasicPerk::CallFunc_NoResourceBrush_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_InitializeBasicPerk, Temp_bool_Variable) == 0x0000A0, "Member 'PerkWidget_C_InitializeBasicPerk::Temp_bool_Variable' has a wrong offset!");
@@ -81,7 +81,7 @@ static_assert(offsetof(PerkWidget_C_InitializeBasicPerk, K2Node_Select_Default) 
 static_assert(offsetof(PerkWidget_C_InitializeBasicPerk, CallFunc_ResizeBrush_NewParam) == 0x0001D0, "Member 'PerkWidget_C_InitializeBasicPerk::CallFunc_ResizeBrush_NewParam' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.InitializeAbilityPerk
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0268 (0x0268 - 0x0000)
 struct PerkWidget_C_InitializeAbilityPerk final
 {
 public:
@@ -89,20 +89,21 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3[0x1];                                        // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetHighlightColor_Color;                  // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0018(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_GetHighlightColor_Color;                  // 0x0004(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0018(0x0090)()
 	bool                                          CallFunc_IsPerkHighlighted_ReturnValue;            // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AB[0x5];                                       // 0x00AB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetIcon_Brush;                            // 0x00B0(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetIcon_Brush;                            // 0x00B0(0x0090)()
 	bool                                          CallFunc_GetIcon_ReturnValue;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_Select2_Default;                            // 0x0148(0x322CBBB8)()
-	struct FSlateBrush                            CallFunc_ResizeBrush_NewParam;                     // 0x01D8(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_Select2_Default;                            // 0x0148(0x0090)()
+	struct FSlateBrush                            CallFunc_ResizeBrush_NewParam;                     // 0x01D8(0x0090)()
 };
-static_assert(alignof(PerkWidget_C_InitializeAbilityPerk) == 0x11827900, "Wrong alignment on PerkWidget_C_InitializeAbilityPerk");
-static_assert(sizeof(PerkWidget_C_InitializeAbilityPerk) == 0x11827900, "Wrong size on PerkWidget_C_InitializeAbilityPerk");
+static_assert(alignof(PerkWidget_C_InitializeAbilityPerk) == 0x000008, "Wrong alignment on PerkWidget_C_InitializeAbilityPerk");
+static_assert(sizeof(PerkWidget_C_InitializeAbilityPerk) == 0x000268, "Wrong size on PerkWidget_C_InitializeAbilityPerk");
 static_assert(offsetof(PerkWidget_C_InitializeAbilityPerk, Temp_bool_Variable) == 0x000000, "Member 'PerkWidget_C_InitializeAbilityPerk::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_InitializeAbilityPerk, Temp_byte_Variable) == 0x000001, "Member 'PerkWidget_C_InitializeAbilityPerk::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_InitializeAbilityPerk, Temp_byte_Variable2) == 0x000002, "Member 'PerkWidget_C_InitializeAbilityPerk::Temp_byte_Variable2' has a wrong offset!");
@@ -117,11 +118,11 @@ static_assert(offsetof(PerkWidget_C_InitializeAbilityPerk, K2Node_Select2_Defaul
 static_assert(offsetof(PerkWidget_C_InitializeAbilityPerk, CallFunc_ResizeBrush_NewParam) == 0x0001D8, "Member 'PerkWidget_C_InitializeAbilityPerk::CallFunc_ResizeBrush_NewParam' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.GetTierAbilityBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct PerkWidget_C_GetTierAbilityBrush final
 {
 public:
-	struct FSlateBrush                            SlateBrush;                                        // 0x0000(0x322CBBB8)(Parm, OutParm)
+	struct FSlateBrush                            SlateBrush;                                        // 0x0000(0x0090)(Parm, OutParm)
 	EFortItemTier                                 Temp_byte_Variable;                                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Temp_object_Variable;                              // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -138,10 +139,10 @@ public:
 	EFortItemTier                                 CallFunc_GetPerkTier_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Select_Default;                             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0100(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0100(0x0090)()
 };
-static_assert(alignof(PerkWidget_C_GetTierAbilityBrush) == 0x11827900, "Wrong alignment on PerkWidget_C_GetTierAbilityBrush");
-static_assert(sizeof(PerkWidget_C_GetTierAbilityBrush) == 0x11827900, "Wrong size on PerkWidget_C_GetTierAbilityBrush");
+static_assert(alignof(PerkWidget_C_GetTierAbilityBrush) == 0x000008, "Wrong alignment on PerkWidget_C_GetTierAbilityBrush");
+static_assert(sizeof(PerkWidget_C_GetTierAbilityBrush) == 0x000190, "Wrong size on PerkWidget_C_GetTierAbilityBrush");
 static_assert(offsetof(PerkWidget_C_GetTierAbilityBrush, SlateBrush) == 0x000000, "Member 'PerkWidget_C_GetTierAbilityBrush::SlateBrush' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_GetTierAbilityBrush, Temp_byte_Variable) == 0x000090, "Member 'PerkWidget_C_GetTierAbilityBrush::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_GetTierAbilityBrush, Temp_object_Variable) == 0x000098, "Member 'PerkWidget_C_GetTierAbilityBrush::Temp_object_Variable' has a wrong offset!");
@@ -160,21 +161,21 @@ static_assert(offsetof(PerkWidget_C_GetTierAbilityBrush, K2Node_Select_Default) 
 static_assert(offsetof(PerkWidget_C_GetTierAbilityBrush, K2Node_MakeStruct_SlateBrush) == 0x000100, "Member 'PerkWidget_C_GetTierAbilityBrush::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.GetHighlightColor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct PerkWidget_C_GetHighlightColor final
 {
 public:
-	struct FLinearColor                           Color;                                             // 0x0000(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Buff_Color_Color;                     // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0014(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Buff_Color_Color;                     // 0x0024(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPerkHighlighted_ReturnValue;            // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0038(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0038(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerkWidget_C_GetHighlightColor) == 0x11821300, "Wrong alignment on PerkWidget_C_GetHighlightColor");
-static_assert(sizeof(PerkWidget_C_GetHighlightColor) == 0x11821300, "Wrong size on PerkWidget_C_GetHighlightColor");
+static_assert(alignof(PerkWidget_C_GetHighlightColor) == 0x000004, "Wrong alignment on PerkWidget_C_GetHighlightColor");
+static_assert(sizeof(PerkWidget_C_GetHighlightColor) == 0x000048, "Wrong size on PerkWidget_C_GetHighlightColor");
 static_assert(offsetof(PerkWidget_C_GetHighlightColor, Color) == 0x000000, "Member 'PerkWidget_C_GetHighlightColor::Color' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_GetHighlightColor, Temp_bool_Variable) == 0x000010, "Member 'PerkWidget_C_GetHighlightColor::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_GetHighlightColor, Temp_struct_Variable) == 0x000014, "Member 'PerkWidget_C_GetHighlightColor::Temp_struct_Variable' has a wrong offset!");
@@ -183,8 +184,8 @@ static_assert(offsetof(PerkWidget_C_GetHighlightColor, CallFunc_IsPerkHighlighte
 static_assert(offsetof(PerkWidget_C_GetHighlightColor, K2Node_Select_Default) == 0x000038, "Member 'PerkWidget_C_GetHighlightColor::K2Node_Select_Default' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.ShouldFadePerk
-// 0x610075 (0x610075 - 0x0000)
-struct alignas(0x610075) PerkWidget_C_ShouldFadePerk final
+// 0x0006 (0x0006 - 0x0000)
+struct PerkWidget_C_ShouldFadePerk final
 {
 public:
 	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -194,8 +195,8 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidget_C_ShouldFadePerk) == 0x610075, "Wrong alignment on PerkWidget_C_ShouldFadePerk");
-static_assert(sizeof(PerkWidget_C_ShouldFadePerk) == 0x610075, "Wrong size on PerkWidget_C_ShouldFadePerk");
+static_assert(alignof(PerkWidget_C_ShouldFadePerk) == 0x000001, "Wrong alignment on PerkWidget_C_ShouldFadePerk");
+static_assert(sizeof(PerkWidget_C_ShouldFadePerk) == 0x000006, "Wrong size on PerkWidget_C_ShouldFadePerk");
 static_assert(offsetof(PerkWidget_C_ShouldFadePerk, Result) == 0x000000, "Member 'PerkWidget_C_ShouldFadePerk::Result' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_ShouldFadePerk, CallFunc_IsPerkHighlighted_ReturnValue) == 0x000001, "Member 'PerkWidget_C_ShouldFadePerk::CallFunc_IsPerkHighlighted_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_ShouldFadePerk, CallFunc_IsPerkUnlocked_ReturnValue) == 0x000002, "Member 'PerkWidget_C_ShouldFadePerk::CallFunc_IsPerkUnlocked_ReturnValue' has a wrong offset!");
@@ -221,7 +222,7 @@ static_assert(offsetof(PerkWidget_C_InitializeTextOnlyPerk, CallFunc_Create_Retu
 static_assert(offsetof(PerkWidget_C_InitializeTextOnlyPerk, CallFunc_AddChild_ReturnValue) == 0x000048, "Member 'PerkWidget_C_InitializeTextOnlyPerk::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.InitializeHeroBonusIcon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct PerkWidget_C_InitializeHeroBonusIcon final
 {
 public:
@@ -234,11 +235,11 @@ public:
 	EFortSupportBonusType                         CallFunc_GetSupportBonusType_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0030(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0030(0x0090)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidget_C_InitializeHeroBonusIcon) == 0x11827900, "Wrong alignment on PerkWidget_C_InitializeHeroBonusIcon");
-static_assert(sizeof(PerkWidget_C_InitializeHeroBonusIcon) == 0x11827900, "Wrong size on PerkWidget_C_InitializeHeroBonusIcon");
+static_assert(alignof(PerkWidget_C_InitializeHeroBonusIcon) == 0x000008, "Wrong alignment on PerkWidget_C_InitializeHeroBonusIcon");
+static_assert(sizeof(PerkWidget_C_InitializeHeroBonusIcon) == 0x0000C8, "Wrong size on PerkWidget_C_InitializeHeroBonusIcon");
 static_assert(offsetof(PerkWidget_C_InitializeHeroBonusIcon, SupportPerkType) == 0x000000, "Member 'PerkWidget_C_InitializeHeroBonusIcon::SupportPerkType' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_InitializeHeroBonusIcon, Temp_byte_Variable) == 0x000001, "Member 'PerkWidget_C_InitializeHeroBonusIcon::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_InitializeHeroBonusIcon, Temp_object_Variable) == 0x000008, "Member 'PerkWidget_C_InitializeHeroBonusIcon::Temp_object_Variable' has a wrong offset!");
@@ -250,20 +251,20 @@ static_assert(offsetof(PerkWidget_C_InitializeHeroBonusIcon, K2Node_MakeStruct_S
 static_assert(offsetof(PerkWidget_C_InitializeHeroBonusIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C0, "Member 'PerkWidget_C_InitializeHeroBonusIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.SetupBadge
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct PerkWidget_C_SetupBadge final
 {
 public:
 	EFortSupportBonusType                         SupportPerkType;                                   // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetTierAbilityBrush_SlateBrush;           // 0x0008(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetTierAbilityBrush_SlateBrush;           // 0x0008(0x0090)()
 	bool                                          CallFunc_IsTierPerk_ReturnValue;                   // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetRequiredLevel_ReturnValue;             // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00A0(0x0018)()
 };
-static_assert(alignof(PerkWidget_C_SetupBadge) == 0x11827900, "Wrong alignment on PerkWidget_C_SetupBadge");
-static_assert(sizeof(PerkWidget_C_SetupBadge) == 0x11827900, "Wrong size on PerkWidget_C_SetupBadge");
+static_assert(alignof(PerkWidget_C_SetupBadge) == 0x000008, "Wrong alignment on PerkWidget_C_SetupBadge");
+static_assert(sizeof(PerkWidget_C_SetupBadge) == 0x0000B8, "Wrong size on PerkWidget_C_SetupBadge");
 static_assert(offsetof(PerkWidget_C_SetupBadge, SupportPerkType) == 0x000000, "Member 'PerkWidget_C_SetupBadge::SupportPerkType' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_SetupBadge, CallFunc_GetTierAbilityBrush_SlateBrush) == 0x000008, "Member 'PerkWidget_C_SetupBadge::CallFunc_GetTierAbilityBrush_SlateBrush' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_SetupBadge, CallFunc_IsTierPerk_ReturnValue) == 0x000098, "Member 'PerkWidget_C_SetupBadge::CallFunc_IsTierPerk_ReturnValue' has a wrong offset!");
@@ -271,7 +272,7 @@ static_assert(offsetof(PerkWidget_C_SetupBadge, CallFunc_GetRequiredLevel_Return
 static_assert(offsetof(PerkWidget_C_SetupBadge, CallFunc_Conv_IntToText_ReturnValue) == 0x0000A0, "Member 'PerkWidget_C_SetupBadge::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.GetPerkStat
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0258 (0x0258 - 0x0000)
 struct PerkWidget_C_GetPerkStat final
 {
 public:
@@ -282,25 +283,25 @@ public:
 	class FText                                   CallFunc_GetTooltipTitle_ReturnValue;              // 0x0040(0x0018)()
 	bool                                          CallFunc_IsTierPerk_ReturnValue;                   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_GetTooltipTitle_ReturnValue2;             // 0x00A0(0x0018)()
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C0(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_GetTierText_ReturnValue;                  // 0x0100(0x0018)()
 	int32                                         CallFunc_GetRequiredLevel_ReturnValue;             // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0120(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0120(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0160(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0178(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0188(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0188(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01C8(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x01E0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x01F0(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0208(0x0018)()
 	struct FTooltipStat                           K2Node_MakeStruct_TooltipStat;                     // 0x0220(0x0038)(HasGetValueTypeHash)
 };
-static_assert(alignof(PerkWidget_C_GetPerkStat) == 0x11821D80, "Wrong alignment on PerkWidget_C_GetPerkStat");
-static_assert(sizeof(PerkWidget_C_GetPerkStat) == 0x11821D80, "Wrong size on PerkWidget_C_GetPerkStat");
+static_assert(alignof(PerkWidget_C_GetPerkStat) == 0x000008, "Wrong alignment on PerkWidget_C_GetPerkStat");
+static_assert(sizeof(PerkWidget_C_GetPerkStat) == 0x000258, "Wrong size on PerkWidget_C_GetPerkStat");
 static_assert(offsetof(PerkWidget_C_GetPerkStat, TooltipStat) == 0x000000, "Member 'PerkWidget_C_GetPerkStat::TooltipStat' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_GetPerkStat, Temp_bool_Variable) == 0x000038, "Member 'PerkWidget_C_GetPerkStat::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_GetPerkStat, CallFunc_GetPerkTier_ReturnValue) == 0x000039, "Member 'PerkWidget_C_GetPerkStat::CallFunc_GetPerkTier_ReturnValue' has a wrong offset!");
@@ -323,16 +324,16 @@ static_assert(offsetof(PerkWidget_C_GetPerkStat, K2Node_Select_Default) == 0x000
 static_assert(offsetof(PerkWidget_C_GetPerkStat, K2Node_MakeStruct_TooltipStat) == 0x000220, "Member 'PerkWidget_C_GetPerkStat::K2Node_MakeStruct_TooltipStat' has a wrong offset!");
 
 // Function PerkWidget.PerkWidget_C.HighlightBadge
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct PerkWidget_C_HighlightBadge final
 {
 public:
-	struct FLinearColor                           CallFunc_GetHighlightColor_Color;                  // 0x0000(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetHighlightColor_Color2;                 // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_GetHighlightColor_Color;                  // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetHighlightColor_Color2;                 // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x0028)()
 };
-static_assert(alignof(PerkWidget_C_HighlightBadge) == 0x322CBBB8, "Wrong alignment on PerkWidget_C_HighlightBadge");
-static_assert(sizeof(PerkWidget_C_HighlightBadge) == 0x322CBBB8, "Wrong size on PerkWidget_C_HighlightBadge");
+static_assert(alignof(PerkWidget_C_HighlightBadge) == 0x000008, "Wrong alignment on PerkWidget_C_HighlightBadge");
+static_assert(sizeof(PerkWidget_C_HighlightBadge) == 0x000048, "Wrong size on PerkWidget_C_HighlightBadge");
 static_assert(offsetof(PerkWidget_C_HighlightBadge, CallFunc_GetHighlightColor_Color) == 0x000000, "Member 'PerkWidget_C_HighlightBadge::CallFunc_GetHighlightColor_Color' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_HighlightBadge, CallFunc_GetHighlightColor_Color2) == 0x000010, "Member 'PerkWidget_C_HighlightBadge::CallFunc_GetHighlightColor_Color2' has a wrong offset!");
 static_assert(offsetof(PerkWidget_C_HighlightBadge, K2Node_MakeStruct_SlateColor) == 0x000020, "Member 'PerkWidget_C_HighlightBadge::K2Node_MakeStruct_SlateColor' has a wrong offset!");

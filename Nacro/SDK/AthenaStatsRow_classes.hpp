@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaStatsRow.AthenaStatsRow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0278 - 0x0238)
 class UAthenaStatsRow_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       Name_0;                                            // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Value;                                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   StatName;                                          // 0x0250(0x0018)(Edit, BlueprintVisible)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UAthenaStatsRow_C>();
 	}
 };
-static_assert(alignof(UAthenaStatsRow_C) == 0x322CBBB8, "Wrong alignment on UAthenaStatsRow_C");
-static_assert(sizeof(UAthenaStatsRow_C) == 0x322CBBB8, "Wrong size on UAthenaStatsRow_C");
+static_assert(alignof(UAthenaStatsRow_C) == 0x000008, "Wrong alignment on UAthenaStatsRow_C");
+static_assert(sizeof(UAthenaStatsRow_C) == 0x000278, "Wrong size on UAthenaStatsRow_C");
 static_assert(offsetof(UAthenaStatsRow_C, UberGraphFrame) == 0x000238, "Member 'UAthenaStatsRow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaStatsRow_C, Name_0) == 0x000240, "Member 'UAthenaStatsRow_C::Name_0' has a wrong offset!");
 static_assert(offsetof(UAthenaStatsRow_C, Value) == 0x000248, "Member 'UAthenaStatsRow_C::Value' has a wrong offset!");

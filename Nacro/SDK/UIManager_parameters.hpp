@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function UIManager.UIManager_C.ExecuteUbergraph_UIManager
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0260 (0x0260 - 0x0000)
 struct UIManager_C_ExecuteUbergraph_UIManager final
 {
 public:
@@ -35,12 +35,12 @@ public:
 	bool                                          K2Node_Event_bDisplay;                             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortUIState                                  CallFunc__BPGetCurrentUIState_ReturnValue;         // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortErrorInfo                         K2Node_Event_Info;                                 // 0x0020(0x1182E980)(ConstParm)
+	struct FFortErrorInfo                         K2Node_Event_Info;                                 // 0x0020(0x0080)(ConstParm)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetCanCache_ReturnValue;                  // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A3[0xD];                                       // 0x00A3(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription_NUI             K2Node_Event_Description;                          // 0x00B0(0x1182E980)(ConstParm, ContainsInstancedReference)
+	struct FFortDialogDescription_NUI             K2Node_Event_Description;                          // 0x00B0(0x0180)(ConstParm, ContainsInstancedReference)
 	class UFortUIStateWidget_NUI*                 K2Node_Event_StateWidget;                          // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	const class UCommonActivatablePanel*          K2Node_Event_Panel2;                               // 0x0238(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,8 +50,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(UIManager_C_ExecuteUbergraph_UIManager) == 0x1182E980, "Wrong alignment on UIManager_C_ExecuteUbergraph_UIManager");
-static_assert(sizeof(UIManager_C_ExecuteUbergraph_UIManager) == 0x1182E980, "Wrong size on UIManager_C_ExecuteUbergraph_UIManager");
+static_assert(alignof(UIManager_C_ExecuteUbergraph_UIManager) == 0x000010, "Wrong alignment on UIManager_C_ExecuteUbergraph_UIManager");
+static_assert(sizeof(UIManager_C_ExecuteUbergraph_UIManager) == 0x000260, "Wrong size on UIManager_C_ExecuteUbergraph_UIManager");
 static_assert(offsetof(UIManager_C_ExecuteUbergraph_UIManager, EntryPoint) == 0x000000, "Member 'UIManager_C_ExecuteUbergraph_UIManager::EntryPoint' has a wrong offset!");
 static_assert(offsetof(UIManager_C_ExecuteUbergraph_UIManager, Temp_byte_Variable) == 0x000004, "Member 'UIManager_C_ExecuteUbergraph_UIManager::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(UIManager_C_ExecuteUbergraph_UIManager, CallFunc_GetChildrenCount_ReturnValue) == 0x000008, "Member 'UIManager_C_ExecuteUbergraph_UIManager::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
@@ -108,25 +108,25 @@ static_assert(sizeof(UIManager_C_UpdateStateWidgetContent) == 0x000008, "Wrong s
 static_assert(offsetof(UIManager_C_UpdateStateWidgetContent, StateWidget) == 0x000000, "Member 'UIManager_C_UpdateStateWidgetContent::StateWidget' has a wrong offset!");
 
 // Function UIManager.UIManager_C.OnShowConfirmation_NUI
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct UIManager_C_OnShowConfirmation_NUI final
 {
 public:
-	struct FFortDialogDescription_NUI             Description;                                       // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	struct FFortDialogDescription_NUI             Description;                                       // 0x0000(0x0180)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(UIManager_C_OnShowConfirmation_NUI) == 0x1182E980, "Wrong alignment on UIManager_C_OnShowConfirmation_NUI");
-static_assert(sizeof(UIManager_C_OnShowConfirmation_NUI) == 0x1182E980, "Wrong size on UIManager_C_OnShowConfirmation_NUI");
+static_assert(alignof(UIManager_C_OnShowConfirmation_NUI) == 0x000010, "Wrong alignment on UIManager_C_OnShowConfirmation_NUI");
+static_assert(sizeof(UIManager_C_OnShowConfirmation_NUI) == 0x000180, "Wrong size on UIManager_C_OnShowConfirmation_NUI");
 static_assert(offsetof(UIManager_C_OnShowConfirmation_NUI, Description) == 0x000000, "Member 'UIManager_C_OnShowConfirmation_NUI::Description' has a wrong offset!");
 
 // Function UIManager.UIManager_C.DisplayErrorDialog
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct UIManager_C_DisplayErrorDialog final
 {
 public:
-	struct FFortErrorInfo                         Info;                                              // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortErrorInfo                         Info;                                              // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(UIManager_C_DisplayErrorDialog) == 0x1182E980, "Wrong alignment on UIManager_C_DisplayErrorDialog");
-static_assert(sizeof(UIManager_C_DisplayErrorDialog) == 0x1182E980, "Wrong size on UIManager_C_DisplayErrorDialog");
+static_assert(alignof(UIManager_C_DisplayErrorDialog) == 0x000010, "Wrong alignment on UIManager_C_DisplayErrorDialog");
+static_assert(sizeof(UIManager_C_DisplayErrorDialog) == 0x000080, "Wrong size on UIManager_C_DisplayErrorDialog");
 static_assert(offsetof(UIManager_C_DisplayErrorDialog, Info) == 0x000000, "Member 'UIManager_C_DisplayErrorDialog::Info' has a wrong offset!");
 
 // Function UIManager.UIManager_C.DisplayStateContent
@@ -246,7 +246,7 @@ static_assert(offsetof(UIManager_C_HandleDeactivatedPanelConfirmationLayer, Call
 static_assert(offsetof(UIManager_C_HandleDeactivatedPanelConfirmationLayer, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'UIManager_C_HandleDeactivatedPanelConfirmationLayer::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UIManager.UIManager_C.ShowNextConfirmation
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01C0 (0x01C0 - 0x0000)
 struct UIManager_C_ShowNextConfirmation final
 {
 public:
@@ -255,12 +255,12 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription_NUI             CallFunc_Array_Get_Item;                           // 0x0030(0x1182E980)(ContainsInstancedReference)
+	struct FFortDialogDescription_NUI             CallFunc_Array_Get_Item;                           // 0x0030(0x0180)(ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x01B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(UIManager_C_ShowNextConfirmation) == 0x1182E980, "Wrong alignment on UIManager_C_ShowNextConfirmation");
-static_assert(sizeof(UIManager_C_ShowNextConfirmation) == 0x1182E980, "Wrong size on UIManager_C_ShowNextConfirmation");
+static_assert(alignof(UIManager_C_ShowNextConfirmation) == 0x000010, "Wrong alignment on UIManager_C_ShowNextConfirmation");
+static_assert(sizeof(UIManager_C_ShowNextConfirmation) == 0x0001C0, "Wrong size on UIManager_C_ShowNextConfirmation");
 static_assert(offsetof(UIManager_C_ShowNextConfirmation, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'UIManager_C_ShowNextConfirmation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(UIManager_C_ShowNextConfirmation, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'UIManager_C_ShowNextConfirmation::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UIManager_C_ShowNextConfirmation, CallFunc_AddChild_ReturnValue) == 0x000018, "Member 'UIManager_C_ShowNextConfirmation::CallFunc_AddChild_ReturnValue' has a wrong offset!");
@@ -270,11 +270,11 @@ static_assert(offsetof(UIManager_C_ShowNextConfirmation, CallFunc_Array_Length_R
 static_assert(offsetof(UIManager_C_ShowNextConfirmation, CallFunc_Greater_IntInt_ReturnValue) == 0x0001B4, "Member 'UIManager_C_ShowNextConfirmation::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UIManager.UIManager_C.QueueConfirmation
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct UIManager_C_QueueConfirmation final
 {
 public:
-	struct FFortDialogDescription_NUI             ConfirmationDescription;                           // 0x0000(0x1182E980)(Parm, ContainsInstancedReference)
+	struct FFortDialogDescription_NUI             ConfirmationDescription;                           // 0x0000(0x0180)(Parm, ContainsInstancedReference)
 	bool                                          CallFunc_IsStateContentChildShowing_ReturnValue;   // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -283,8 +283,8 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(UIManager_C_QueueConfirmation) == 0x1182E980, "Wrong alignment on UIManager_C_QueueConfirmation");
-static_assert(sizeof(UIManager_C_QueueConfirmation) == 0x1182E980, "Wrong size on UIManager_C_QueueConfirmation");
+static_assert(alignof(UIManager_C_QueueConfirmation) == 0x000010, "Wrong alignment on UIManager_C_QueueConfirmation");
+static_assert(sizeof(UIManager_C_QueueConfirmation) == 0x0001A0, "Wrong size on UIManager_C_QueueConfirmation");
 static_assert(offsetof(UIManager_C_QueueConfirmation, ConfirmationDescription) == 0x000000, "Member 'UIManager_C_QueueConfirmation::ConfirmationDescription' has a wrong offset!");
 static_assert(offsetof(UIManager_C_QueueConfirmation, CallFunc_IsStateContentChildShowing_ReturnValue) == 0x000180, "Member 'UIManager_C_QueueConfirmation::CallFunc_IsStateContentChildShowing_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UIManager_C_QueueConfirmation, CallFunc_Array_Length_ReturnValue) == 0x000184, "Member 'UIManager_C_QueueConfirmation::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
@@ -375,17 +375,17 @@ static_assert(offsetof(UIManager_C_HandleDeactivatedPanelModalLayer, Deactivated
 static_assert(offsetof(UIManager_C_HandleDeactivatedPanelModalLayer, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'UIManager_C_HandleDeactivatedPanelModalLayer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function UIManager.UIManager_C.ShowErrorInErrorWindow
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct UIManager_C_ShowErrorInErrorWindow final
 {
 public:
-	struct FFortErrorInfo                         ErrorInfo;                                         // 0x0000(0x1182E980)(Parm)
+	struct FFortErrorInfo                         ErrorInfo;                                         // 0x0000(0x0080)(Parm)
 	TDelegate<void(class UCommonActivatablePanel* Panel)> K2Node_CreateDelegate_OutputDelegate;              // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasChild_ReturnValue;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(UIManager_C_ShowErrorInErrorWindow) == 0x1182E980, "Wrong alignment on UIManager_C_ShowErrorInErrorWindow");
-static_assert(sizeof(UIManager_C_ShowErrorInErrorWindow) == 0x1182E980, "Wrong size on UIManager_C_ShowErrorInErrorWindow");
+static_assert(alignof(UIManager_C_ShowErrorInErrorWindow) == 0x000010, "Wrong alignment on UIManager_C_ShowErrorInErrorWindow");
+static_assert(sizeof(UIManager_C_ShowErrorInErrorWindow) == 0x0000A0, "Wrong size on UIManager_C_ShowErrorInErrorWindow");
 static_assert(offsetof(UIManager_C_ShowErrorInErrorWindow, ErrorInfo) == 0x000000, "Member 'UIManager_C_ShowErrorInErrorWindow::ErrorInfo' has a wrong offset!");
 static_assert(offsetof(UIManager_C_ShowErrorInErrorWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000080, "Member 'UIManager_C_ShowErrorInErrorWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(UIManager_C_ShowErrorInErrorWindow, CallFunc_AddChild_ReturnValue) == 0x000090, "Member 'UIManager_C_ShowErrorInErrorWindow::CallFunc_AddChild_ReturnValue' has a wrong offset!");
@@ -448,19 +448,19 @@ static_assert(offsetof(UIManager_C_IsConsole, CallFunc_EqualEqual_StrStr_ReturnV
 static_assert(offsetof(UIManager_C_IsConsole, CallFunc_BooleanOR_ReturnValue) == 0x00001A, "Member 'UIManager_C_IsConsole::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function UIManager.UIManager_C.OnEndLatentWaitForConfirmationDialog
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct UIManager_C_OnEndLatentWaitForConfirmationDialog final
 {
 public:
-	struct FFortDialogExternalLatentActionHandle  WaitingDialogHandle;                               // 0x0000(0x11821780)(Parm, OutParm, ReferenceParm, NoDestructor)
-	struct FFortDialogExternalLatentActionHandle  CallFunc_GetLatentActionWaitHandle_LatentActionHandle; // 0x0004(0x11821780)(NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  WaitingDialogHandle;                               // 0x0000(0x0004)(Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  CallFunc_GetLatentActionWaitHandle_LatentActionHandle; // 0x0004(0x0004)(NoDestructor)
 	bool                                          CallFunc_EqualEqual_FFortDialogWaitingForLatentActionHandle_ReturnValue; // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLatentActionHandleValid_ReturnValue;    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(UIManager_C_OnEndLatentWaitForConfirmationDialog) == 0x11821780, "Wrong alignment on UIManager_C_OnEndLatentWaitForConfirmationDialog");
-static_assert(sizeof(UIManager_C_OnEndLatentWaitForConfirmationDialog) == 0x11821780, "Wrong size on UIManager_C_OnEndLatentWaitForConfirmationDialog");
+static_assert(alignof(UIManager_C_OnEndLatentWaitForConfirmationDialog) == 0x000004, "Wrong alignment on UIManager_C_OnEndLatentWaitForConfirmationDialog");
+static_assert(sizeof(UIManager_C_OnEndLatentWaitForConfirmationDialog) == 0x00000C, "Wrong size on UIManager_C_OnEndLatentWaitForConfirmationDialog");
 static_assert(offsetof(UIManager_C_OnEndLatentWaitForConfirmationDialog, WaitingDialogHandle) == 0x000000, "Member 'UIManager_C_OnEndLatentWaitForConfirmationDialog::WaitingDialogHandle' has a wrong offset!");
 static_assert(offsetof(UIManager_C_OnEndLatentWaitForConfirmationDialog, CallFunc_GetLatentActionWaitHandle_LatentActionHandle) == 0x000004, "Member 'UIManager_C_OnEndLatentWaitForConfirmationDialog::CallFunc_GetLatentActionWaitHandle_LatentActionHandle' has a wrong offset!");
 static_assert(offsetof(UIManager_C_OnEndLatentWaitForConfirmationDialog, CallFunc_EqualEqual_FFortDialogWaitingForLatentActionHandle_ReturnValue) == 0x000008, "Member 'UIManager_C_OnEndLatentWaitForConfirmationDialog::CallFunc_EqualEqual_FFortDialogWaitingForLatentActionHandle_ReturnValue' has a wrong offset!");
@@ -469,8 +469,8 @@ static_assert(offsetof(UIManager_C_OnEndLatentWaitForConfirmationDialog, CallFun
 static_assert(offsetof(UIManager_C_OnEndLatentWaitForConfirmationDialog, CallFunc_BooleanAND_ReturnValue2) == 0x00000B, "Member 'UIManager_C_OnEndLatentWaitForConfirmationDialog::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 
 // Function UIManager.UIManager_C.HandleControllerConnectionChanged
-// 0x0024 (0x0024 - 0x0000)
-struct alignas(0x24) UIManager_C_HandleControllerConnectionChanged final
+// 0x0020 (0x0020 - 0x0000)
+struct UIManager_C_HandleControllerConnectionChanged final
 {
 public:
 	bool                                          bConnected;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -479,8 +479,8 @@ public:
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UIManager_C_HandleControllerConnectionChanged) == 0x000024, "Wrong alignment on UIManager_C_HandleControllerConnectionChanged");
-static_assert(sizeof(UIManager_C_HandleControllerConnectionChanged) == 0x000024, "Wrong size on UIManager_C_HandleControllerConnectionChanged");
+static_assert(alignof(UIManager_C_HandleControllerConnectionChanged) == 0x000008, "Wrong alignment on UIManager_C_HandleControllerConnectionChanged");
+static_assert(sizeof(UIManager_C_HandleControllerConnectionChanged) == 0x000020, "Wrong size on UIManager_C_HandleControllerConnectionChanged");
 static_assert(offsetof(UIManager_C_HandleControllerConnectionChanged, bConnected) == 0x000000, "Member 'UIManager_C_HandleControllerConnectionChanged::bConnected' has a wrong offset!");
 static_assert(offsetof(UIManager_C_HandleControllerConnectionChanged, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'UIManager_C_HandleControllerConnectionChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UIManager_C_HandleControllerConnectionChanged, CallFunc_GetInputManager_ReturnValue) == 0x000010, "Member 'UIManager_C_HandleControllerConnectionChanged::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");

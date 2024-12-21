@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x02A0 - 0x0240)
 class USchematicTooltipCraftingIngredient_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UBorder*                                BorderPanel_B;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderTooltip_A;                                   // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageIcon_A;                                       // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -32,7 +32,7 @@ public:
 	class UTextBlock*                             TextAmount_A;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextAmount_B;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBox_831;                                   // 0x0280(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSchematicRequirement                  Ingredient;                                        // 0x0288(0x11821780)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
+	struct FSchematicRequirement                  Ingredient;                                        // 0x0288(0x0010)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
 	bool                                          PanelMode;                                         // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<USchematicTooltipCraftingIngredient_C>();
 	}
 };
-static_assert(alignof(USchematicTooltipCraftingIngredient_C) == 0x322CBBB8, "Wrong alignment on USchematicTooltipCraftingIngredient_C");
-static_assert(sizeof(USchematicTooltipCraftingIngredient_C) == 0x322CBBB8, "Wrong size on USchematicTooltipCraftingIngredient_C");
+static_assert(alignof(USchematicTooltipCraftingIngredient_C) == 0x000008, "Wrong alignment on USchematicTooltipCraftingIngredient_C");
+static_assert(sizeof(USchematicTooltipCraftingIngredient_C) == 0x0002A0, "Wrong size on USchematicTooltipCraftingIngredient_C");
 static_assert(offsetof(USchematicTooltipCraftingIngredient_C, UberGraphFrame) == 0x000240, "Member 'USchematicTooltipCraftingIngredient_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USchematicTooltipCraftingIngredient_C, BorderPanel_B) == 0x000248, "Member 'USchematicTooltipCraftingIngredient_C::BorderPanel_B' has a wrong offset!");
 static_assert(offsetof(USchematicTooltipCraftingIngredient_C, BorderTooltip_A) == 0x000250, "Member 'USchematicTooltipCraftingIngredient_C::BorderTooltip_A' has a wrong offset!");

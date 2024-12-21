@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.ExecuteUbergraph_GAB_PlayerDBNOResurrect
-// 0x11827600 (0x11827600 - 0x0000)
+// 0x0590 (0x0590 - 0x0000)
 struct GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect final
 {
 public:
@@ -29,51 +29,52 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x0028(0x11821C00)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x0048(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0050(0x11821C00)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x0070(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x0028(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0050(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x0070(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGameplayTag                           Temp_struct_Variable;                              // 0x0088(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable2;                             // 0x0090(0x11821C00)()
+	struct FGameplayTag                           Temp_struct_Variable;                              // 0x0088(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable2;                             // 0x0090(0x0020)()
 	int32                                         CallFunc_GetDataCountFromTargetData_ReturnValue;   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAbilityTask_WaitTargetSelection*   CallFunc_WaitTargetSelection_ReturnValue;          // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData5;                    // 0x00C8(0x11821C00)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag5;                // 0x00E8(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData5;                    // 0x00C8(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag5;                // 0x00E8(0x0008)(NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0100(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable3;                             // 0x0110(0x11821C00)()
-	struct FGameplayTag                           Temp_struct_Variable4;                             // 0x0130(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0138(0x11822200)(ConstParm)
+	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable3;                             // 0x0110(0x0020)()
+	struct FGameplayTag                           Temp_struct_Variable4;                             // 0x0130(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0138(0x00A8)(ConstParm)
 	class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue; // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortGameplayEffectContainerSpec       CallFunc_MakeGameplayEffectContainerSpec_ReturnValue; // 0x01E8(0x11821C00)()
+	struct FFortGameplayEffectContainerSpec       CallFunc_MakeGameplayEffectContainerSpec_ReturnValue; // 0x01E8(0x0080)()
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortAbilityTargetSelection            CallFunc_Array_Get_Item;                           // 0x0270(0x11821780)()
-	struct FGameplayAbilityActorInfo              CallFunc_GetActorInfo_ReturnValue;                 // 0x02D0(0x11821C00)(ContainsInstancedReference)
+	struct FFortAbilityTargetSelection            CallFunc_Array_Get_Item;                           // 0x0270(0x0060)()
+	struct FGameplayAbilityActorInfo              CallFunc_GetActorInfo_ReturnValue;                 // 0x02D0(0x0040)(ContainsInstancedReference)
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_319[0x3];                                      // 0x0319(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x031C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x031C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x0334(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector_NetQuantize10                  K2Node_MakeStruct_Vector_NetQuantize10;            // 0x0340(0x11821D80)(NoDestructor)
-	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x034C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x0334(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector_NetQuantize10                  K2Node_MakeStruct_Vector_NetQuantize10;            // 0x0340(0x000C)(NoDestructor)
+	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x034C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X2;                           // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y2;                           // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z2;                           // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0364(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector_NetQuantizeNormal              K2Node_MakeStruct_Vector_NetQuantizeNormal;        // 0x0368(0x11827600)(NoDestructor)
+	struct FVector_NetQuantizeNormal              K2Node_MakeStruct_Vector_NetQuantizeNormal;        // 0x0368(0x000C)(NoDestructor)
+	uint8                                         Pad_374[0x4];                                      // 0x0374(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         CallFunc_GetActorsFromTargetData_ReturnValue;      // 0x0378(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FGameplayCueParameters                 K2Node_MakeStruct_GameplayCueParameters;           // 0x0388(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_MakeStruct_GameplayCueParameters;           // 0x0388(0x00B8)(ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0444(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_445[0x3];                                      // 0x0445(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -83,9 +84,10 @@ public:
 	uint8                                         Pad_452[0x2];                                      // 0x0452(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0454(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0460(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData3;                    // 0x0470(0x11821C00)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag3;                // 0x0490(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0460(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_46C[0x4];                                      // 0x046C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData3;                    // 0x0470(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag3;                // 0x0490(0x0008)(NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_49C[0x4];                                      // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_Array_Get_Item3;                          // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -96,22 +98,23 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x04B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4BA[0x6];                                      // 0x04BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue2;   // 0x04C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x04C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x04D4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x04E0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x04EC(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x04C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x04D4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x04E0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x04EC(0x0008)(NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4F4[0x4];                                      // 0x04F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue;            // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate5;             // 0x0500(0x0010)(ZeroConstructor, NoDestructor)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0510(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x051C(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData4;                    // 0x0528(0x11821C00)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag4;                // 0x0548(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0550(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0510(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x051C(0x000C)(IsPlainOldData, NoDestructor)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData4;                    // 0x0528(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag4;                // 0x0548(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0550(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect) == 0x11827600, "Wrong alignment on GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect) == 0x11827600, "Wrong size on GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect");
+static_assert(alignof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect) == 0x000010, "Wrong alignment on GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect");
+static_assert(sizeof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect) == 0x000590, "Wrong size on GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, EntryPoint) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -188,78 +191,78 @@ static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNO
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_FinishSpawningActor_ReturnValue) == 0x000588, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.K2_ActivateAbilityFromEvent
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent final
 {
 public:
-	struct FGameplayEventData                     EventData;                                         // 0x0000(0x11822200)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent) == 0x11822200, "Wrong alignment on GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent) == 0x11822200, "Wrong size on GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent");
+static_assert(alignof(GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent");
+static_assert(sizeof(GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6 final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x11821D80, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x11821D80, "Wrong size on GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
+static_assert(alignof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
+static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6::TargetData' has a wrong offset!");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6::ApplicationTag' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6 final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x11821D80, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x11821D80, "Wrong size on GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
+static_assert(alignof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
+static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6::TargetData' has a wrong offset!");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6::ApplicationTag' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Triggered_0B41E4DC44D3371D619734A714E9FE50
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50 final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50) == 0x11821D80, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50) == 0x11821D80, "Wrong size on GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50");
+static_assert(alignof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50");
+static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50::TargetData' has a wrong offset!");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50::ApplicationTag' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Cancelled_0B41E4DC44D3371D619734A714E9FE50
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50 final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50) == 0x11821D80, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50) == 0x11821D80, "Wrong size on GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50");
+static_assert(alignof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50");
+static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50::TargetData' has a wrong offset!");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50::ApplicationTag' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Completed_0B41E4DC44D3371D619734A714E9FE50
-// 0x62ECD560 (0x62ECD560 - 0x0000)
-struct alignas(0x62ECD560) GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50 final
+// 0x0028 (0x0028 - 0x0000)
+struct GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50 final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50) == 0x62ECD560, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50) == 0x62ECD560, "Wrong size on GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50");
+static_assert(alignof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50");
+static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50::TargetData' has a wrong offset!");
 static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50::ApplicationTag' has a wrong offset!");
 

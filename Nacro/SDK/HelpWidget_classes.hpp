@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HelpWidget.HelpWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0118 (0x04F8 - 0x03E0)
 class UHelpWidget_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Arrow1Image;                                       // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Arrow2Image;                                       // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ButtonClose;                                       // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -65,8 +65,8 @@ public:
 		return GetDefaultObjImpl<UHelpWidget_C>();
 	}
 };
-static_assert(alignof(UHelpWidget_C) == 0x322CBBB8, "Wrong alignment on UHelpWidget_C");
-static_assert(sizeof(UHelpWidget_C) == 0x322CBBB8, "Wrong size on UHelpWidget_C");
+static_assert(alignof(UHelpWidget_C) == 0x000008, "Wrong alignment on UHelpWidget_C");
+static_assert(sizeof(UHelpWidget_C) == 0x0004F8, "Wrong size on UHelpWidget_C");
 static_assert(offsetof(UHelpWidget_C, UberGraphFrame) == 0x0003E0, "Member 'UHelpWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHelpWidget_C, Arrow1Image) == 0x0003E8, "Member 'UHelpWidget_C::Arrow1Image' has a wrong offset!");
 static_assert(offsetof(UHelpWidget_C, Arrow2Image) == 0x0003F0, "Member 'UHelpWidget_C::Arrow2Image' has a wrong offset!");

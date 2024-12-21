@@ -219,8 +219,8 @@ static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highl
 static_assert(offsetof(HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State, K2Node_DynamicCast_bSuccess7) == 0x000068, "Member 'HeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State::K2Node_DynamicCast_bSuccess7' has a wrong offset!");
 
 // Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.UpdateSquadSlotInfoPanel
-// 0x65A6E200 (0x65A6E200 - 0x0000)
-struct alignas(0x65A6E200) HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel final
+// 0x0100 (0x0100 - 0x0000)
+struct HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel final
 {
 public:
 	int32                                         SquadSlotIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -238,8 +238,8 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue8;             // 0x00D0(0x0018)()
 	class FText                                   K2Node_Select2_Default;                            // 0x00E8(0x0018)()
 };
-static_assert(alignof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel) == 0x65A6E200, "Wrong alignment on HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel");
-static_assert(sizeof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel) == 0x65A6E200, "Wrong size on HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel");
+static_assert(alignof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel) == 0x000008, "Wrong alignment on HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel");
+static_assert(sizeof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel) == 0x000100, "Wrong size on HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel");
 static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, SquadSlotIndex) == 0x000000, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::SquadSlotIndex' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, Temp_int_Variable) == 0x000004, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel, Temp_int_Variable2) == 0x000008, "Member 'HeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel::Temp_int_Variable2' has a wrong offset!");

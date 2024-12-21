@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StoreMain_OfferDetailsAttribute.StoreMain_OfferDetailsAttribute_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0288 - 0x0238)
 class UStoreMain_OfferDetailsAttribute_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_0;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Name_0;                                            // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Value;                                             // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UStoreMain_OfferDetailsAttribute_C>();
 	}
 };
-static_assert(alignof(UStoreMain_OfferDetailsAttribute_C) == 0x322CBBB8, "Wrong alignment on UStoreMain_OfferDetailsAttribute_C");
-static_assert(sizeof(UStoreMain_OfferDetailsAttribute_C) == 0x322CBBB8, "Wrong size on UStoreMain_OfferDetailsAttribute_C");
+static_assert(alignof(UStoreMain_OfferDetailsAttribute_C) == 0x000008, "Wrong alignment on UStoreMain_OfferDetailsAttribute_C");
+static_assert(sizeof(UStoreMain_OfferDetailsAttribute_C) == 0x000288, "Wrong size on UStoreMain_OfferDetailsAttribute_C");
 static_assert(offsetof(UStoreMain_OfferDetailsAttribute_C, UberGraphFrame) == 0x000238, "Member 'UStoreMain_OfferDetailsAttribute_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStoreMain_OfferDetailsAttribute_C, Image_0) == 0x000240, "Member 'UStoreMain_OfferDetailsAttribute_C::Image_0' has a wrong offset!");
 static_assert(offsetof(UStoreMain_OfferDetailsAttribute_C, Name_0) == 0x000248, "Member 'UStoreMain_OfferDetailsAttribute_C::Name_0' has a wrong offset!");

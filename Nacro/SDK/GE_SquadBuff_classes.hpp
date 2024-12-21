@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_SquadBuff.GE_SquadBuff_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x0660 - 0x0660)
 class UGE_SquadBuff_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_SquadBuff_C>();
 	}
 };
-static_assert(alignof(UGE_SquadBuff_C) == 0x1182E980, "Wrong alignment on UGE_SquadBuff_C");
-static_assert(sizeof(UGE_SquadBuff_C) == 0x1182E980, "Wrong size on UGE_SquadBuff_C");
+static_assert(alignof(UGE_SquadBuff_C) == 0x000010, "Wrong alignment on UGE_SquadBuff_C");
+static_assert(sizeof(UGE_SquadBuff_C) == 0x000660, "Wrong size on UGE_SquadBuff_C");
 
 }
 

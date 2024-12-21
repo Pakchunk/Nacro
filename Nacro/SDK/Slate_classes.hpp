@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // Class Slate.ButtonWidgetStyle
-// 0x118278D0 (0x11827900 - 0x0030)
+// 0x02A8 (0x02D8 - 0x0030)
 class UButtonWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FButtonStyle                           ButtonStyle;                                       // 0x0030(0x322CBBB8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           ButtonStyle;                                       // 0x0030(0x02A8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -35,16 +35,16 @@ public:
 		return GetDefaultObjImpl<UButtonWidgetStyle>();
 	}
 };
-static_assert(alignof(UButtonWidgetStyle) == 0x11827900, "Wrong alignment on UButtonWidgetStyle");
-static_assert(sizeof(UButtonWidgetStyle) == 0x11827900, "Wrong size on UButtonWidgetStyle");
+static_assert(alignof(UButtonWidgetStyle) == 0x000008, "Wrong alignment on UButtonWidgetStyle");
+static_assert(sizeof(UButtonWidgetStyle) == 0x0002D8, "Wrong size on UButtonWidgetStyle");
 static_assert(offsetof(UButtonWidgetStyle, ButtonStyle) == 0x000030, "Member 'UButtonWidgetStyle::ButtonStyle' has a wrong offset!");
 
 // Class Slate.CheckBoxWidgetStyle
-// 0x11828050 (0x11828080 - 0x0030)
+// 0x05E0 (0x0610 - 0x0030)
 class UCheckBoxWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FCheckBoxStyle                         CheckBoxStyle;                                     // 0x0030(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FCheckBoxStyle                         CheckBoxStyle;                                     // 0x0030(0x05E0)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -56,16 +56,16 @@ public:
 		return GetDefaultObjImpl<UCheckBoxWidgetStyle>();
 	}
 };
-static_assert(alignof(UCheckBoxWidgetStyle) == 0x11828080, "Wrong alignment on UCheckBoxWidgetStyle");
-static_assert(sizeof(UCheckBoxWidgetStyle) == 0x11828080, "Wrong size on UCheckBoxWidgetStyle");
+static_assert(alignof(UCheckBoxWidgetStyle) == 0x000008, "Wrong alignment on UCheckBoxWidgetStyle");
+static_assert(sizeof(UCheckBoxWidgetStyle) == 0x000610, "Wrong size on UCheckBoxWidgetStyle");
 static_assert(offsetof(UCheckBoxWidgetStyle, CheckBoxStyle) == 0x000030, "Member 'UCheckBoxWidgetStyle::CheckBoxStyle' has a wrong offset!");
 
 // Class Slate.ComboBoxWidgetStyle
-// 0x118278D0 (0x11827900 - 0x0030)
+// 0x0428 (0x0458 - 0x0030)
 class UComboBoxWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FComboBoxStyle                         ComboBoxStyle;                                     // 0x0030(0x11829280)(Edit, NativeAccessSpecifierPublic)
+	struct FComboBoxStyle                         ComboBoxStyle;                                     // 0x0030(0x0428)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -77,16 +77,16 @@ public:
 		return GetDefaultObjImpl<UComboBoxWidgetStyle>();
 	}
 };
-static_assert(alignof(UComboBoxWidgetStyle) == 0x11827900, "Wrong alignment on UComboBoxWidgetStyle");
-static_assert(sizeof(UComboBoxWidgetStyle) == 0x11827900, "Wrong size on UComboBoxWidgetStyle");
+static_assert(alignof(UComboBoxWidgetStyle) == 0x000008, "Wrong alignment on UComboBoxWidgetStyle");
+static_assert(sizeof(UComboBoxWidgetStyle) == 0x000458, "Wrong size on UComboBoxWidgetStyle");
 static_assert(offsetof(UComboBoxWidgetStyle, ComboBoxStyle) == 0x000030, "Member 'UComboBoxWidgetStyle::ComboBoxStyle' has a wrong offset!");
 
 // Class Slate.ComboButtonWidgetStyle
-// 0x11829250 (0x11829280 - 0x0030)
+// 0x03E0 (0x0410 - 0x0030)
 class UComboButtonWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FComboButtonStyle                      ComboButtonStyle;                                  // 0x0030(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FComboButtonStyle                      ComboButtonStyle;                                  // 0x0030(0x03E0)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -98,16 +98,16 @@ public:
 		return GetDefaultObjImpl<UComboButtonWidgetStyle>();
 	}
 };
-static_assert(alignof(UComboButtonWidgetStyle) == 0x11829280, "Wrong alignment on UComboButtonWidgetStyle");
-static_assert(sizeof(UComboButtonWidgetStyle) == 0x11829280, "Wrong size on UComboButtonWidgetStyle");
+static_assert(alignof(UComboButtonWidgetStyle) == 0x000008, "Wrong alignment on UComboButtonWidgetStyle");
+static_assert(sizeof(UComboButtonWidgetStyle) == 0x000410, "Wrong size on UComboButtonWidgetStyle");
 static_assert(offsetof(UComboButtonWidgetStyle, ComboButtonStyle) == 0x000030, "Member 'UComboButtonWidgetStyle::ComboButtonStyle' has a wrong offset!");
 
 // Class Slate.EditableTextBoxWidgetStyle
-// 0x118278D0 (0x11827900 - 0x0030)
+// 0x0870 (0x08A0 - 0x0030)
 class UEditableTextBoxWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FEditableTextBoxStyle                  EditableTextBoxStyle;                              // 0x0030(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FEditableTextBoxStyle                  EditableTextBoxStyle;                              // 0x0030(0x0870)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -119,16 +119,16 @@ public:
 		return GetDefaultObjImpl<UEditableTextBoxWidgetStyle>();
 	}
 };
-static_assert(alignof(UEditableTextBoxWidgetStyle) == 0x11827900, "Wrong alignment on UEditableTextBoxWidgetStyle");
-static_assert(sizeof(UEditableTextBoxWidgetStyle) == 0x11827900, "Wrong size on UEditableTextBoxWidgetStyle");
+static_assert(alignof(UEditableTextBoxWidgetStyle) == 0x000008, "Wrong alignment on UEditableTextBoxWidgetStyle");
+static_assert(sizeof(UEditableTextBoxWidgetStyle) == 0x0008A0, "Wrong size on UEditableTextBoxWidgetStyle");
 static_assert(offsetof(UEditableTextBoxWidgetStyle, EditableTextBoxStyle) == 0x000030, "Member 'UEditableTextBoxWidgetStyle::EditableTextBoxStyle' has a wrong offset!");
 
 // Class Slate.EditableTextWidgetStyle
-// 0x11827BD0 (0x11827C00 - 0x0030)
+// 0x0248 (0x0278 - 0x0030)
 class UEditableTextWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FEditableTextStyle                     EditableTextStyle;                                 // 0x0030(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FEditableTextStyle                     EditableTextStyle;                                 // 0x0030(0x0248)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -140,16 +140,16 @@ public:
 		return GetDefaultObjImpl<UEditableTextWidgetStyle>();
 	}
 };
-static_assert(alignof(UEditableTextWidgetStyle) == 0x11827C00, "Wrong alignment on UEditableTextWidgetStyle");
-static_assert(sizeof(UEditableTextWidgetStyle) == 0x11827C00, "Wrong size on UEditableTextWidgetStyle");
+static_assert(alignof(UEditableTextWidgetStyle) == 0x000008, "Wrong alignment on UEditableTextWidgetStyle");
+static_assert(sizeof(UEditableTextWidgetStyle) == 0x000278, "Wrong size on UEditableTextWidgetStyle");
 static_assert(offsetof(UEditableTextWidgetStyle, EditableTextStyle) == 0x000030, "Member 'UEditableTextWidgetStyle::EditableTextStyle' has a wrong offset!");
 
 // Class Slate.ProgressWidgetStyle
-// 0x118278D0 (0x11827900 - 0x0030)
+// 0x01B8 (0x01E8 - 0x0030)
 class UProgressWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FProgressBarStyle                      ProgressBarStyle;                                  // 0x0030(0x11827900)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FProgressBarStyle                      ProgressBarStyle;                                  // 0x0030(0x01B8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -161,16 +161,16 @@ public:
 		return GetDefaultObjImpl<UProgressWidgetStyle>();
 	}
 };
-static_assert(alignof(UProgressWidgetStyle) == 0x11827900, "Wrong alignment on UProgressWidgetStyle");
-static_assert(sizeof(UProgressWidgetStyle) == 0x11827900, "Wrong size on UProgressWidgetStyle");
+static_assert(alignof(UProgressWidgetStyle) == 0x000008, "Wrong alignment on UProgressWidgetStyle");
+static_assert(sizeof(UProgressWidgetStyle) == 0x0001E8, "Wrong size on UProgressWidgetStyle");
 static_assert(offsetof(UProgressWidgetStyle, ProgressBarStyle) == 0x000030, "Member 'UProgressWidgetStyle::ProgressBarStyle' has a wrong offset!");
 
 // Class Slate.ScrollBarWidgetStyle
-// 0x118278D0 (0x11827900 - 0x0030)
+// 0x0518 (0x0548 - 0x0030)
 class UScrollBarWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FScrollBarStyle                        ScrollBarStyle;                                    // 0x0030(0x11827900)(Edit, NativeAccessSpecifierPublic)
+	struct FScrollBarStyle                        ScrollBarStyle;                                    // 0x0030(0x0518)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -182,16 +182,16 @@ public:
 		return GetDefaultObjImpl<UScrollBarWidgetStyle>();
 	}
 };
-static_assert(alignof(UScrollBarWidgetStyle) == 0x11827900, "Wrong alignment on UScrollBarWidgetStyle");
-static_assert(sizeof(UScrollBarWidgetStyle) == 0x11827900, "Wrong size on UScrollBarWidgetStyle");
+static_assert(alignof(UScrollBarWidgetStyle) == 0x000008, "Wrong alignment on UScrollBarWidgetStyle");
+static_assert(sizeof(UScrollBarWidgetStyle) == 0x000548, "Wrong size on UScrollBarWidgetStyle");
 static_assert(offsetof(UScrollBarWidgetStyle, ScrollBarStyle) == 0x000030, "Member 'UScrollBarWidgetStyle::ScrollBarStyle' has a wrong offset!");
 
 // Class Slate.ScrollBoxWidgetStyle
-// 0x118278D0 (0x11827900 - 0x0030)
+// 0x0248 (0x0278 - 0x0030)
 class UScrollBoxWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FScrollBoxStyle                        ScrollBoxStyle;                                    // 0x0030(0x11827900)(Edit, NativeAccessSpecifierPublic)
+	struct FScrollBoxStyle                        ScrollBoxStyle;                                    // 0x0030(0x0248)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -203,8 +203,8 @@ public:
 		return GetDefaultObjImpl<UScrollBoxWidgetStyle>();
 	}
 };
-static_assert(alignof(UScrollBoxWidgetStyle) == 0x11827900, "Wrong alignment on UScrollBoxWidgetStyle");
-static_assert(sizeof(UScrollBoxWidgetStyle) == 0x11827900, "Wrong size on UScrollBoxWidgetStyle");
+static_assert(alignof(UScrollBoxWidgetStyle) == 0x000008, "Wrong alignment on UScrollBoxWidgetStyle");
+static_assert(sizeof(UScrollBoxWidgetStyle) == 0x000278, "Wrong size on UScrollBoxWidgetStyle");
 static_assert(offsetof(UScrollBoxWidgetStyle, ScrollBoxStyle) == 0x000030, "Member 'UScrollBoxWidgetStyle::ScrollBoxStyle' has a wrong offset!");
 
 // Class Slate.SlateSettings
@@ -230,11 +230,11 @@ static_assert(sizeof(USlateSettings) == 0x000030, "Wrong size on USlateSettings"
 static_assert(offsetof(USlateSettings, bExplicitCanvasChildZOrder) == 0x000028, "Member 'USlateSettings::bExplicitCanvasChildZOrder' has a wrong offset!");
 
 // Class Slate.SpinBoxWidgetStyle
-// 0x11821ED0 (0x11821F00 - 0x0030)
+// 0x0310 (0x0340 - 0x0030)
 class USpinBoxWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FSpinBoxStyle                          SpinBoxStyle;                                      // 0x0030(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FSpinBoxStyle                          SpinBoxStyle;                                      // 0x0030(0x0310)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -246,16 +246,16 @@ public:
 		return GetDefaultObjImpl<USpinBoxWidgetStyle>();
 	}
 };
-static_assert(alignof(USpinBoxWidgetStyle) == 0x11821F00, "Wrong alignment on USpinBoxWidgetStyle");
-static_assert(sizeof(USpinBoxWidgetStyle) == 0x11821F00, "Wrong size on USpinBoxWidgetStyle");
+static_assert(alignof(USpinBoxWidgetStyle) == 0x000008, "Wrong alignment on USpinBoxWidgetStyle");
+static_assert(sizeof(USpinBoxWidgetStyle) == 0x000340, "Wrong size on USpinBoxWidgetStyle");
 static_assert(offsetof(USpinBoxWidgetStyle, SpinBoxStyle) == 0x000030, "Member 'USpinBoxWidgetStyle::SpinBoxStyle' has a wrong offset!");
 
 // Class Slate.TextBlockWidgetStyle
-// 0x536FE (0x5372E - 0x0030)
+// 0x0208 (0x0238 - 0x0030)
 class UTextBlockWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FTextBlockStyle                        TextBlockStyle;                                    // 0x0030(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FTextBlockStyle                        TextBlockStyle;                                    // 0x0030(0x0208)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -267,8 +267,8 @@ public:
 		return GetDefaultObjImpl<UTextBlockWidgetStyle>();
 	}
 };
-static_assert(alignof(UTextBlockWidgetStyle) == 0x05372E, "Wrong alignment on UTextBlockWidgetStyle");
-static_assert(sizeof(UTextBlockWidgetStyle) == 0x05372E, "Wrong size on UTextBlockWidgetStyle");
+static_assert(alignof(UTextBlockWidgetStyle) == 0x000008, "Wrong alignment on UTextBlockWidgetStyle");
+static_assert(sizeof(UTextBlockWidgetStyle) == 0x000238, "Wrong size on UTextBlockWidgetStyle");
 static_assert(offsetof(UTextBlockWidgetStyle, TextBlockStyle) == 0x000030, "Member 'UTextBlockWidgetStyle::TextBlockStyle' has a wrong offset!");
 
 }

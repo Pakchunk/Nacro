@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B8 (0x02E8 - 0x0230)
 class UFrontEndRewards_CurrentReward_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       AnimIdleBounce;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimOpenReward;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimDropReward;                                    // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,13 +39,13 @@ public:
 	UMulticastDelegateProperty_                   OnOpenAnimationFinished;                           // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                         CountTimeStart;                                    // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	float                                         CountTime;                                         // 0x02B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CountTimer;                                        // 0x02B8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           CountTimer;                                        // 0x02B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         FadeDuration;                                      // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsFadingOut;                                       // 0x02C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2C5[0x3];                                      // 0x02C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         FinalScale;                                        // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              FinalAlignment;                                    // 0x02CC(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               FinalAnchors;                                      // 0x02D4(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FVector2D                              FinalAlignment;                                    // 0x02CC(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               FinalAnchors;                                      // 0x02D4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void OnDropAnimationFinished__DelegateSignature();
@@ -82,8 +82,8 @@ public:
 		return GetDefaultObjImpl<UFrontEndRewards_CurrentReward_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_CurrentReward_C) == 0x322CBBB8, "Wrong alignment on UFrontEndRewards_CurrentReward_C");
-static_assert(sizeof(UFrontEndRewards_CurrentReward_C) == 0x322CBBB8, "Wrong size on UFrontEndRewards_CurrentReward_C");
+static_assert(alignof(UFrontEndRewards_CurrentReward_C) == 0x000008, "Wrong alignment on UFrontEndRewards_CurrentReward_C");
+static_assert(sizeof(UFrontEndRewards_CurrentReward_C) == 0x0002E8, "Wrong size on UFrontEndRewards_CurrentReward_C");
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, UberGraphFrame) == 0x000230, "Member 'UFrontEndRewards_CurrentReward_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimIdleBounce) == 0x000238, "Member 'UFrontEndRewards_CurrentReward_C::AnimIdleBounce' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimOpenReward) == 0x000240, "Member 'UFrontEndRewards_CurrentReward_C::AnimOpenReward' has a wrong offset!");

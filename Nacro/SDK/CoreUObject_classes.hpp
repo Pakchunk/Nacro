@@ -30,7 +30,7 @@ public:
 
 public:
 	static class UObject* FindObjectFastImpl(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None);
-	static class UObject* FindObjectImpl(const std::string& FullName, EClassCastFlags RequiredType = EClassCastFlags::None);
+	static class UObject* FindObjectImpl(const std::string& FullName, EClassCastFlags RequiredType = EClassCastFlags::None, bool bExact = true);
 
 	std::string GetFullName() const;
 	std::string GetName() const;
@@ -52,9 +52,9 @@ public:
 	}
 	
 	template<typename UEType = UObject>
-	static UEType* FindObject(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None)
+	static UEType* FindObject(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None, bool bExact = true)
 	{
-		return static_cast<UEType*>(FindObjectImpl(Name, RequiredType));
+		return static_cast<UEType*>(FindObjectImpl(Name, RequiredType, bExact));
 	}
 	template<typename UEType = UObject>
 	static UEType* FindObjectFast(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None)
@@ -66,8 +66,21 @@ public:
 	{
 		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(const UObject*, class UFunction*, void*)>(this, Offsets::ProcessEventIdx), this, Function, Parms);
 	}
+
+	void* GetInterfaceAddress(UObject* OuterClass)
+	{
+		typedef void* (__fastcall* tGetInterfaceAddress)(UObject*, UObject*);
+		static tGetInterfaceAddress GetInterfaceAddress = nullptr;
+
+		if (!GetInterfaceAddress)
+		{
+			GetInterfaceAddress = (tGetInterfaceAddress)reinterpret_cast<void*>(InSDKUtils::GetImageBase() + 0xDFC510);
+		}
+
+		return GetInterfaceAddress(this, OuterClass);
+	}
 };
-static_assert(alignof(UObject) == 0x000001, "Wrong alignment on UObject");
+static_assert(alignof(UObject) == 0x000008, "Wrong alignment on UObject");
 static_assert(sizeof(UObject) == 0x000028, "Wrong size on UObject");
 static_assert(offsetof(UObject, VTable) == 0x000000, "Member 'UObject::VTable' has a wrong offset!");
 static_assert(offsetof(UObject, Flags) == 0x000008, "Member 'UObject::Flags' has a wrong offset!");
@@ -105,6 +118,11 @@ public:
 	uint8                                         Pad_28[0xB8];                                      // 0x0028(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
+	/*bool WriteObject(FArchive* Ar, UObject* InOuter, FNetworkGUID NetGUID, FString ObjName)
+	{
+		typedef bool(__fastcall* tWriteObject)(UPackageMap*, void*, UObject*, FNetworkGUID, FString);
+		return reinterpret_cast<tWriteObject>(static_cast<bool**>(this->VTable)[0x47])(this, Ar, InOuter, NetGUID, ObjName);
+	}*/
 	static class UClass* StaticClass()
 	{
 		return StaticClassImpl<"PackageMap">();
@@ -125,8 +143,8 @@ public:
 	class UStruct*                                Super;                                             // 0x0030(0x0008)(NOT AUTO-GENERATED PROPERTY)
 	class UField*                                 Children;                                          // 0x0038(0x0008)(NOT AUTO-GENERATED PROPERTY)
 	int32                                         Size;                                              // 0x0040(0x0004)(NOT AUTO-GENERATED PROPERTY)
-	uint8                                         Pad_44[0x11C];                                     // 0x0044(0x011C)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MinAlignemnt;                                      // 0x0160(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         MinAlignemnt;                                      // 0x0044(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_48[0x40];                                      // 0x0048(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool IsSubclassOf(const UStruct* Base) const;
@@ -146,7 +164,7 @@ static_assert(sizeof(UStruct) == 0x000088, "Wrong size on UStruct");
 static_assert(offsetof(UStruct, Super) == 0x000030, "Member 'UStruct::Super' has a wrong offset!");
 static_assert(offsetof(UStruct, Children) == 0x000038, "Member 'UStruct::Children' has a wrong offset!");
 static_assert(offsetof(UStruct, Size) == 0x000040, "Member 'UStruct::Size' has a wrong offset!");
-static_assert(offsetof(UStruct, MinAlignemnt) == 0x000160, "Member 'UStruct::MinAlignemnt' has a wrong offset!");
+static_assert(offsetof(UStruct, MinAlignemnt) == 0x000044, "Member 'UStruct::MinAlignemnt' has a wrong offset!");
 
 // Class CoreUObject.ScriptStruct
 // 0x0010 (0x0098 - 0x0088)
@@ -324,12 +342,81 @@ static_assert(sizeof(UClass) == 0x000250, "Wrong size on UClass");
 static_assert(offsetof(UClass, CastFlags) == 0x0000B8, "Member 'UClass::CastFlags' has a wrong offset!");
 static_assert(offsetof(UClass, DefaultObject) == 0x000100, "Member 'UClass::DefaultObject' has a wrong offset!");
 
-struct FFrame
+struct FOutParmRec
 {
-	char pad[0x34];
-	uint8* Locals;
+	UProperty* Property;
+	uint8* PropAddr;
+	FOutParmRec* NextOutParm;
 };
 
+struct FFrame
+{
+	char PadOne[0x10];
+	UFunction* Node;
+	UObject* Object;
+	uint8* Code; // 0x20
+	uint8* Locals; // 0x28
+
+	UProperty* MostRecentProperty; // 0x30
+	uint8* MostRecentPropertyAddress; // 0x38
+	
+	char PadTwo[0x30];
+	//void* FlowStack; // TAllocatedSizeArray did not exist in 4.16. At all.
+	
+	FFrame* PreviousFrame;
+
+	FOutParmRec* OutParms;
+
+	UField* PropertyChainForCompiledIn;
+
+	UFunction* CurrentNativeFunction;
+
+	bool bArrayContextFailed;
+private:
+	void Step(UObject* Context, void* const Z_Param__Result)
+	{
+		typedef void(__fastcall* tStep)(FFrame*, UObject*, void*);
+		static tStep Step = nullptr;
+
+		if (!Step)
+		{
+			Step = (tStep)(uintptr_t(GetModuleHandleA(0)) + 0x13E0650);
+		}
+
+		return Step(this, Context, Z_Param__Result);
+	}
+
+	void StepExplicitProperty(void* const Result, UProperty* Property)
+	{
+		typedef void(__fastcall* tStepExplicitProperty)(FFrame*, void*, UProperty*);
+		static tStepExplicitProperty StepExplicitProperty = nullptr;
+
+		if (!StepExplicitProperty)
+		{
+			StepExplicitProperty = (tStepExplicitProperty)(uintptr_t(GetModuleHandleA(0)) + 0x13E0680);
+		}
+
+		return StepExplicitProperty(this, Result, Property);
+	}
+
+public:
+	template<class TProperty>
+	void StepCompiledIn(void* const Result)
+	{
+		if (Code)
+		{
+			Step(Object, Result);
+		}
+		else
+		{
+			TProperty* Property = (TProperty*)PropertyChainForCompiledIn;
+			PropertyChainForCompiledIn = Property->Next;
+
+			StepExplicitProperty(Result, Property);
+		}
+	}
+};
+	
 // Class CoreUObject.Function
 // 0x0030 (0x00B8 - 0x0088)
 class UFunction : public UStruct

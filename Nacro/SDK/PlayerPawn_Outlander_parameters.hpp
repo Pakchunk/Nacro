@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.ExecuteUbergraph_PlayerPawn_Outlander
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x11E0 (0x11E0 - 0x0000)
 struct PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander final
 {
 public:
@@ -53,7 +53,7 @@ public:
 	class FName                                   Temp_name_Variable;                                // 0x0060(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UGameUserSettings*                      CallFunc_GetGameUserSettings_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetVisualEffectQuality_ReturnValue;       // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Temp_struct_Variable;                              // 0x0074(0x11821300)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Temp_struct_Variable;                              // 0x0074(0x000C)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameUserSettings*                      CallFunc_GetGameUserSettings_ReturnValue2;         // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -69,21 +69,21 @@ public:
 	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable4;                    // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Temp_struct_Variable2;                             // 0x00B4(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FRotator                               Temp_struct_Variable2;                             // 0x00B4(0x000C)(ConstParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        K2Node_Select2_Default;                            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x00D0(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x00D0(0x0030)(IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType13;               // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters13;              // 0x0108(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters13;              // 0x0108(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType12;               // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters12;              // 0x01D8(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters12;              // 0x01D8(0x00B8)(ContainsInstancedReference)
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0290(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x02A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -105,15 +105,15 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue6;                  // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType11;               // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters11;              // 0x0308(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters11;              // 0x0308(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType10;               // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters10;              // 0x03C8(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters10;              // 0x03C8(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum3_CmpSuccess;                     // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum4_CmpSuccess;                     // 0x0481(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType9;                // 0x0482(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_483[0x5];                                      // 0x0483(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters9;               // 0x0488(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters9;               // 0x0488(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum5_CmpSuccess;                     // 0x0540(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0541(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_542[0x6];                                      // 0x0542(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -124,7 +124,7 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue5;          // 0x0568(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue6;          // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue7;          // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_CustomEvent_VSpawnColor;                    // 0x0580(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_CustomEvent_VSpawnColor;                    // 0x0580(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_Activate;                       // 0x0590(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_591[0x7];                                      // 0x0591(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue2;        // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -143,10 +143,10 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x05DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType8;                // 0x05DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5DE[0x2];                                      // 0x05DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters8;               // 0x05E0(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters8;               // 0x05E0(0x00B8)(ContainsInstancedReference)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType7;                // 0x0698(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_699[0x7];                                      // 0x0699(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters7;               // 0x06A0(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters7;               // 0x06A0(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum6_CmpSuccess;                     // 0x0758(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum7_CmpSuccess;                     // 0x0759(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_75A[0x6];                                      // 0x075A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -159,13 +159,13 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0788(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType6;                // 0x0789(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_78A[0x6];                                      // 0x078A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters6;               // 0x0790(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters6;               // 0x0790(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum8_CmpSuccess;                     // 0x0848(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_849[0x7];                                      // 0x0849(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue8;          // 0x0850(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0858(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_859[0x7];                                      // 0x0859(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0860(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0860(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x08E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue2;        // 0x08E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue6;                     // 0x08EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -186,36 +186,37 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue10;         // 0x0930(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_Damage;                               // 0x0938(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_93C[0x4];                                      // 0x093C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  K2Node_Event_DamageTags;                           // 0x0940(0x11821C00)(ConstParm)
-	struct FVector                                K2Node_Event_Momentum;                             // 0x0960(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_HitInfo;                              // 0x0970(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  K2Node_Event_DamageTags;                           // 0x0940(0x0020)(ConstParm)
+	struct FVector                                K2Node_Event_Momentum;                             // 0x0960(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_96C[0x4];                                      // 0x096C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_HitInfo;                              // 0x0970(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPawn*                              K2Node_Event_InstigatedBy;                         // 0x09F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_DamageCauser;                         // 0x0A00(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x0A08(0x11821C00)()
+	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x0A08(0x0018)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0A20(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0A24(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType5;                // 0x0A28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A29[0x7];                                      // 0x0A29(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters5;               // 0x0A30(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters5;               // 0x0A30(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum9_CmpSuccess;                     // 0x0AE8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AE9[0x3];                                      // 0x0AE9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0AEC(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0AEC(0x000C)(IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType4;                // 0x0AF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AF9[0x7];                                      // 0x0AF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters4;               // 0x0B00(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters4;               // 0x0B00(0x00B8)(ContainsInstancedReference)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0BB8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue5;        // 0x0BC0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x0BC8(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0BD4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x0BC8(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0BD4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x0BE0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue6;        // 0x0BE8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0BF0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0BF0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0BFC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0C00(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0C04(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType3;                // 0x0C08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C09[0x7];                                      // 0x0C09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters3;               // 0x0C10(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters3;               // 0x0C10(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum10_CmpSuccess;                    // 0x0CC8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_CC9[0x7];                                      // 0x0CC9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0CD0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -229,7 +230,7 @@ public:
 	int32                                         CallFunc_GetVisualEffectQuality_ReturnValue3;      // 0x0D00(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType2;                // 0x0D04(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D05[0x3];                                      // 0x0D05(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x0D08(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x0D08(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchInteger3_CmpSuccess;                  // 0x0DC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum11_CmpSuccess;                    // 0x0DC1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_DC2[0x6];                                      // 0x0DC2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -239,21 +240,21 @@ public:
 	bool                                          CallFunc_IsLocalPlayerController_ReturnValue2;     // 0x0DD9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType;                 // 0x0DDA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_DDB[0x5];                                      // 0x0DDB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x0DE0(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x0DE0(0x00B8)(ContainsInstancedReference)
 	class AController*                            CallFunc_GetController_ReturnValue5;               // 0x0E98(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum12_CmpSuccess;                    // 0x0EA0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_EA1[0x7];                                      // 0x0EA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller5;      // 0x0EA8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0EB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_EB1[0x3];                                      // 0x0EB1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0EB4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0EB4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable3;                                // 0x0EC0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue3;            // 0x0EC4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_EC5[0x3];                                      // 0x0EC5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue7;                  // 0x0EC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue4;           // 0x0ECC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_ECD[0x3];                                      // 0x0ECD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0ED0(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0ED0(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0F00(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_On;                             // 0x0F08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F09[0x7];                                      // 0x0F09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -283,7 +284,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item5;                          // 0x0F70(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue5;         // 0x0F78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F79[0x7];                                      // 0x0F79(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable3;                             // 0x0F80(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable3;                             // 0x0F80(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue6;         // 0x0FB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_FB1[0x7];                                      // 0x0FB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPostProcessComponent*                  CallFunc_AddComponent_ReturnValue;                 // 0x0FB8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -293,8 +294,8 @@ public:
 	class USceneComponent*                        K2Node_Select4_Default;                            // 0x0FC8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue2;         // 0x0FD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_FD1[0xF];                                      // 0x0FD1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue2;        // 0x0FE0(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult2;  // 0x1010(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue2;        // 0x0FE0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult2;  // 0x1010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UAnimMontage*                           K2Node_CustomEvent_MontageName;                    // 0x1098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class USceneComponent*>                CallFunc_GetChildrenComponents_Children;           // 0x10A0(0x0010)(ZeroConstructor, ReferenceParm)
 	class USceneComponent*                        CallFunc_Array_Get_Item6;                          // 0x10B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -324,13 +325,14 @@ public:
 	class UFortnite_M_Avg_Player_MenusScreen_AnimBP_C* K2Node_DynamicCast_AsFortnite_M_Avg_Player_Menus_Screen_Anim_BP; // 0x1120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess8;                      // 0x1128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1129[0x3];                                     // 0x1129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x112C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x112C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue7;        // 0x1138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X2;                           // 0x1140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y2;                           // 0x1144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z2;                           // 0x1148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x114C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x1150(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x1150(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_115C[0x4];                                     // 0x115C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue8;        // 0x1160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable4;                                // 0x1168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_116C[0x4];                                     // 0x116C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -360,8 +362,8 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue3;           // 0x11D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue4;           // 0x11D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander) == 0x11821D80, "Wrong alignment on PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander");
-static_assert(sizeof(PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander) == 0x11821D80, "Wrong size on PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander");
+static_assert(alignof(PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander) == 0x000010, "Wrong alignment on PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander");
+static_assert(sizeof(PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander) == 0x0011E0, "Wrong size on PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander");
 static_assert(offsetof(PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander, EntryPoint) == 0x000000, "Member 'PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander, Temp_bool_Variable) == 0x000004, "Member 'PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander, CallFunc_IsDedicatedServer_ReturnValue) == 0x000005, "Member 'PlayerPawn_Outlander_C_ExecuteUbergraph_PlayerPawn_Outlander::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
@@ -694,91 +696,92 @@ static_assert(sizeof(PlayerPawn_Outlander_C_SetTeleportEffects) == 0x000001, "Wr
 static_assert(offsetof(PlayerPawn_Outlander_C_SetTeleportEffects, On) == 0x000000, "Member 'PlayerPawn_Outlander_C_SetTeleportEffects::On' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Abilities.Activation.Outlander.AntiMaterialChargeImpact
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Abilities.Activation.Outlander.AntiMaterialChargeChargeUp
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Abilities.Activation.Outlander.AntiMaterialChargeThruster
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Abilities.Activation.Outlander.AntiMaterialCharge
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Outlander.KnockKnock
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Outlander_KnockKnock::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.OnDamagePlayEffects
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct PlayerPawn_Outlander_C_OnDamagePlayEffects final
 {
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x11821C00)(Parm)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_OnDamagePlayEffects) == 0x11821D80, "Wrong alignment on PlayerPawn_Outlander_C_OnDamagePlayEffects");
-static_assert(sizeof(PlayerPawn_Outlander_C_OnDamagePlayEffects) == 0x11821D80, "Wrong size on PlayerPawn_Outlander_C_OnDamagePlayEffects");
+static_assert(alignof(PlayerPawn_Outlander_C_OnDamagePlayEffects) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_OnDamagePlayEffects");
+static_assert(sizeof(PlayerPawn_Outlander_C_OnDamagePlayEffects) == 0x0000E8, "Wrong size on PlayerPawn_Outlander_C_OnDamagePlayEffects");
 static_assert(offsetof(PlayerPawn_Outlander_C_OnDamagePlayEffects, Damage) == 0x000000, "Member 'PlayerPawn_Outlander_C_OnDamagePlayEffects::Damage' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_OnDamagePlayEffects, DamageTags) == 0x000008, "Member 'PlayerPawn_Outlander_C_OnDamagePlayEffects::DamageTags' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_OnDamagePlayEffects, Momentum) == 0x000028, "Member 'PlayerPawn_Outlander_C_OnDamagePlayEffects::Momentum' has a wrong offset!");
@@ -788,99 +791,99 @@ static_assert(offsetof(PlayerPawn_Outlander_C_OnDamagePlayEffects, DamageCauser)
 static_assert(offsetof(PlayerPawn_Outlander_C_OnDamagePlayEffects, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Outlander_C_OnDamagePlayEffects::EffectContext' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Outlander.Phaseshift.AppliedFX
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Outlander_Phaseshift_AppliedFX::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.WithinReachOfTreasure
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct PlayerPawn_Outlander_C_WithinReachOfTreasure final
 {
 public:
-	struct FLinearColor                           VSpawnColor;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           VSpawnColor;                                       // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Activate;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_WithinReachOfTreasure) == 0x11821300, "Wrong alignment on PlayerPawn_Outlander_C_WithinReachOfTreasure");
-static_assert(sizeof(PlayerPawn_Outlander_C_WithinReachOfTreasure) == 0x11821300, "Wrong size on PlayerPawn_Outlander_C_WithinReachOfTreasure");
+static_assert(alignof(PlayerPawn_Outlander_C_WithinReachOfTreasure) == 0x000004, "Wrong alignment on PlayerPawn_Outlander_C_WithinReachOfTreasure");
+static_assert(sizeof(PlayerPawn_Outlander_C_WithinReachOfTreasure) == 0x000014, "Wrong size on PlayerPawn_Outlander_C_WithinReachOfTreasure");
 static_assert(offsetof(PlayerPawn_Outlander_C_WithinReachOfTreasure, VSpawnColor) == 0x000000, "Member 'PlayerPawn_Outlander_C_WithinReachOfTreasure::VSpawnColor' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_WithinReachOfTreasure, Activate) == 0x000010, "Member 'PlayerPawn_Outlander_C_WithinReachOfTreasure::Activate' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Explorer.Fragment.Specialty.PickupFX
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Specialty_PickupFX::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Explorer.Fragment.Defense.PickupFX
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Defense_PickupFX::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Explorer.Fragment.Offense.PickupFX
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment_Offense_PickupFX::Parameters' has a wrong offset!");
 
@@ -896,30 +899,30 @@ static_assert(sizeof(PlayerPawn_Outlander_C_ReceivePossessed) == 0x000008, "Wron
 static_assert(offsetof(PlayerPawn_Outlander_C_ReceivePossessed, NewController) == 0x000000, "Member 'PlayerPawn_Outlander_C_ReceivePossessed::NewController' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Outlander.InTheZone.FX
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Outlander_InTheZone_FX::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.GameplayCue.Explorer.Fragment
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment) == 0x11821C00, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment");
-static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment) == 0x11821C00, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment");
+static_assert(alignof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment");
+static_assert(sizeof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment) == 0x0000C0, "Wrong size on PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment, EventType) == 0x000000, "Member 'PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment::EventType' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment, Parameters) == 0x000008, "Member 'PlayerPawn_Outlander_C_GameplayCue_Explorer_Fragment::Parameters' has a wrong offset!");
 
@@ -935,14 +938,14 @@ static_assert(sizeof(PlayerPawn_Outlander_C_UserConstructionScript) == 0x000001,
 static_assert(offsetof(PlayerPawn_Outlander_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000000, "Member 'PlayerPawn_Outlander_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.OnRep_OnPlayerBuiltFloor
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor final
 {
 public:
-	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0000(0x11822200)()
+	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0000(0x00A8)()
 };
-static_assert(alignof(PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor) == 0x11822200, "Wrong alignment on PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor");
-static_assert(sizeof(PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor) == 0x11822200, "Wrong size on PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor");
+static_assert(alignof(PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor) == 0x000008, "Wrong alignment on PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor");
+static_assert(sizeof(PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor) == 0x0000A8, "Wrong size on PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor");
 static_assert(offsetof(PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor, K2Node_MakeStruct_GameplayEventData) == 0x000000, "Member 'PlayerPawn_Outlander_C_OnRep_OnPlayerBuiltFloor::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.StopTeleportSplinesIfValid

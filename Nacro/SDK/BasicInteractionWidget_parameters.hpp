@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function BasicInteractionWidget.BasicInteractionWidget_C.ExecuteUbergraph_BasicInteractionWidget
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget final
+// 0x0004 (0x0004 - 0x0000)
+struct BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget) == 0x540065, "Wrong alignment on BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget");
-static_assert(sizeof(BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget) == 0x540065, "Wrong size on BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget");
+static_assert(alignof(BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget) == 0x000004, "Wrong alignment on BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget");
+static_assert(sizeof(BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget) == 0x000004, "Wrong size on BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget");
 static_assert(offsetof(BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget, EntryPoint) == 0x000000, "Member 'BasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget::EntryPoint' has a wrong offset!");
 
 // Function BasicInteractionWidget.BasicInteractionWidget_C.UpdateDescription

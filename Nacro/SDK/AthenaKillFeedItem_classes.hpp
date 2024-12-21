@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaKillFeedItem.AthenaKillFeedItem_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0270 - 0x0260)
 class UAthenaKillFeedItem_C final : public UFortHUDElementWidget
 {
 public:
@@ -37,8 +37,8 @@ public:
 		return GetDefaultObjImpl<UAthenaKillFeedItem_C>();
 	}
 };
-static_assert(alignof(UAthenaKillFeedItem_C) == 0x322CBBB8, "Wrong alignment on UAthenaKillFeedItem_C");
-static_assert(sizeof(UAthenaKillFeedItem_C) == 0x322CBBB8, "Wrong size on UAthenaKillFeedItem_C");
+static_assert(alignof(UAthenaKillFeedItem_C) == 0x000008, "Wrong alignment on UAthenaKillFeedItem_C");
+static_assert(sizeof(UAthenaKillFeedItem_C) == 0x000270, "Wrong size on UAthenaKillFeedItem_C");
 static_assert(offsetof(UAthenaKillFeedItem_C, KIllText) == 0x000260, "Member 'UAthenaKillFeedItem_C::KIllText' has a wrong offset!");
 static_assert(offsetof(UAthenaKillFeedItem_C, GameState) == 0x000268, "Member 'UAthenaKillFeedItem_C::GameState' has a wrong offset!");
 

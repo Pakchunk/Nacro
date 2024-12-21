@@ -21,14 +21,14 @@ namespace SDK::Params
 {
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnRewardsClaimed__DelegateSignature
-// 0x650073 (0x650073 - 0x0000)
-struct alignas(0x650073) FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature final
 {
 public:
 	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature) == 0x650073, "Wrong alignment on FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature");
-static_assert(sizeof(FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature) == 0x650073, "Wrong size on FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature");
+static_assert(alignof(FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature");
+static_assert(sizeof(FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature) == 0x000008, "Wrong size on FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature");
 static_assert(offsetof(FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature, RewardsWidget) == 0x000000, "Member 'FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature::RewardsWidget' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnRewardsClaimError__DelegateSignature
@@ -43,8 +43,8 @@ static_assert(sizeof(FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSigna
 static_assert(offsetof(FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature, RewardsWidget) == 0x000000, "Member 'FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature::RewardsWidget' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.ExecuteUbergraph_FrontEndRewards_Widget
-// 0x054F (0x054F - 0x0000)
-struct alignas(0x54F) FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget final
+// 0x00A0 (0x00A0 - 0x0000)
+struct FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -73,8 +73,8 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue8;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget) == 0x00054F, "Wrong alignment on FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget");
-static_assert(sizeof(FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget) == 0x00054F, "Wrong size on FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget");
+static_assert(alignof(FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget");
+static_assert(sizeof(FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget) == 0x0000A0, "Wrong size on FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget");
 static_assert(offsetof(FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget, EntryPoint) == 0x000000, "Member 'FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget, CallFunc_IsValid_ReturnValue2) == 0x000005, "Member 'FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
@@ -248,7 +248,7 @@ static_assert(offsetof(FrontEndRewards_Widget_C_BindEvents, K2Node_CreateDelegat
 static_assert(offsetof(FrontEndRewards_Widget_C_BindEvents, K2Node_CreateDelegate_OutputDelegate15) == 0x000130, "Member 'FrontEndRewards_Widget_C_BindEvents::K2Node_CreateDelegate_OutputDelegate15' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.AdjustCurrentRewardPadding
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FrontEndRewards_Widget_C_AdjustCurrentRewardPadding final
 {
 public:
@@ -258,10 +258,10 @@ public:
 	class UOverlaySlot*                           K2Node_DynamicCast_AsOverlay_Slot2;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x001C(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x001C(0x0010)(NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_AdjustCurrentRewardPadding) == 0x322CBBB8, "Wrong alignment on FrontEndRewards_Widget_C_AdjustCurrentRewardPadding");
-static_assert(sizeof(FrontEndRewards_Widget_C_AdjustCurrentRewardPadding) == 0x322CBBB8, "Wrong size on FrontEndRewards_Widget_C_AdjustCurrentRewardPadding");
+static_assert(alignof(FrontEndRewards_Widget_C_AdjustCurrentRewardPadding) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_AdjustCurrentRewardPadding");
+static_assert(sizeof(FrontEndRewards_Widget_C_AdjustCurrentRewardPadding) == 0x000030, "Wrong size on FrontEndRewards_Widget_C_AdjustCurrentRewardPadding");
 static_assert(offsetof(FrontEndRewards_Widget_C_AdjustCurrentRewardPadding, K2Node_DynamicCast_AsOverlay_Slot) == 0x000000, "Member 'FrontEndRewards_Widget_C_AdjustCurrentRewardPadding::K2Node_DynamicCast_AsOverlay_Slot' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_AdjustCurrentRewardPadding, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'FrontEndRewards_Widget_C_AdjustCurrentRewardPadding::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_AdjustCurrentRewardPadding, K2Node_DynamicCast_AsOverlay_Slot2) == 0x000010, "Member 'FrontEndRewards_Widget_C_AdjustCurrentRewardPadding::K2Node_DynamicCast_AsOverlay_Slot2' has a wrong offset!");
@@ -332,7 +332,7 @@ struct FrontEndRewards_Widget_C_InitInitialRewards final
 public:
 	struct FFrontEndRewards_Definition            Definition;                                        // 0x0000(0x0048)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_InitInitialRewards) == 0x000001, "Wrong alignment on FrontEndRewards_Widget_C_InitInitialRewards");
+static_assert(alignof(FrontEndRewards_Widget_C_InitInitialRewards) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_InitInitialRewards");
 static_assert(sizeof(FrontEndRewards_Widget_C_InitInitialRewards) == 0x000048, "Wrong size on FrontEndRewards_Widget_C_InitInitialRewards");
 static_assert(offsetof(FrontEndRewards_Widget_C_InitInitialRewards, Definition) == 0x000000, "Member 'FrontEndRewards_Widget_C_InitInitialRewards::Definition' has a wrong offset!");
 
@@ -429,7 +429,7 @@ static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemList, CallFun
 static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemList, CallFunc_Array_Add_ReturnValue) == 0x000068, "Member 'FrontEndRewards_Widget_C_CreateCardsFromItemList::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.CreateCardsFromItemQuantityList
-// 0x52535 (0x52535 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList final
 {
 public:
@@ -441,7 +441,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0050(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0050(0x0028)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -451,8 +451,8 @@ public:
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList) == 0x052535, "Wrong alignment on FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList");
-static_assert(sizeof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList) == 0x052535, "Wrong size on FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList");
+static_assert(alignof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList");
+static_assert(sizeof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList) == 0x0000B0, "Wrong size on FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList");
 static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList, Items) == 0x000000, "Member 'FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList::Items' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList, Cards) == 0x000010, "Member 'FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList::Cards' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList, ItemInventoryTypeList) == 0x000020, "Member 'FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList::ItemInventoryTypeList' has a wrong offset!");
@@ -470,7 +470,7 @@ static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList,
 static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList, CallFunc_Array_Add_ReturnValue) == 0x0000A8, "Member 'FrontEndRewards_Widget_C_CreateCardsFromItemQuantityList::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.CreateCardsFromItemInstanceQuantityList
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList final
 {
 public:
@@ -480,7 +480,7 @@ public:
 	TArray<class UFortItem*>                      FortItemList;                                      // 0x0030(0x0010)(Edit, ZeroConstructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0048(0x11821D80)(NoDestructor)
+	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0048(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -494,8 +494,8 @@ public:
 	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class URewards_ItemCard_C*>            CallFunc_CreateCardsFromItemList_Cards;            // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList) == 0x11821D80, "Wrong alignment on FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList");
-static_assert(sizeof(FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList) == 0x11821D80, "Wrong size on FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList");
+static_assert(alignof(FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList");
+static_assert(sizeof(FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList) == 0x000098, "Wrong size on FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList");
 static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList, Items) == 0x000000, "Member 'FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList::Items' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList, Cards) == 0x000010, "Member 'FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList::Cards' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList, ItemInventoryTypeList) == 0x000020, "Member 'FrontEndRewards_Widget_C_CreateCardsFromItemInstanceQuantityList::ItemInventoryTypeList' has a wrong offset!");
@@ -561,7 +561,7 @@ static_assert(offsetof(FrontEndRewards_Widget_C_PopulateQuestRewards, CallFunc_G
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateQuestRewards, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'FrontEndRewards_Widget_C_PopulateQuestRewards::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.PopulateNewQuest
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FrontEndRewards_Widget_C_PopulateNewQuest final
 {
 public:
@@ -570,12 +570,12 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0078(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0088(0x0018)()
 };
-static_assert(alignof(FrontEndRewards_Widget_C_PopulateNewQuest) == 0x11821D80, "Wrong alignment on FrontEndRewards_Widget_C_PopulateNewQuest");
-static_assert(sizeof(FrontEndRewards_Widget_C_PopulateNewQuest) == 0x11821D80, "Wrong size on FrontEndRewards_Widget_C_PopulateNewQuest");
+static_assert(alignof(FrontEndRewards_Widget_C_PopulateNewQuest) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_PopulateNewQuest");
+static_assert(sizeof(FrontEndRewards_Widget_C_PopulateNewQuest) == 0x0000A0, "Wrong size on FrontEndRewards_Widget_C_PopulateNewQuest");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateNewQuest, K2Node_DynamicCast_AsFort_Reward_Epic_Quest_Data) == 0x000000, "Member 'FrontEndRewards_Widget_C_PopulateNewQuest::K2Node_DynamicCast_AsFort_Reward_Epic_Quest_Data' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateNewQuest, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'FrontEndRewards_Widget_C_PopulateNewQuest::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateNewQuest, CallFunc_GetDisplayName_ReturnValue) == 0x000010, "Member 'FrontEndRewards_Widget_C_PopulateNewQuest::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
@@ -585,7 +585,7 @@ static_assert(offsetof(FrontEndRewards_Widget_C_PopulateNewQuest, K2Node_MakeArr
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateNewQuest, CallFunc_Format_ReturnValue) == 0x000088, "Member 'FrontEndRewards_Widget_C_PopulateNewQuest::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.PopulateExpedition
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FrontEndRewards_Widget_C_PopulateExpedition final
 {
 public:
@@ -594,12 +594,12 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0078(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0088(0x0018)()
 };
-static_assert(alignof(FrontEndRewards_Widget_C_PopulateExpedition) == 0x11821D80, "Wrong alignment on FrontEndRewards_Widget_C_PopulateExpedition");
-static_assert(sizeof(FrontEndRewards_Widget_C_PopulateExpedition) == 0x11821D80, "Wrong size on FrontEndRewards_Widget_C_PopulateExpedition");
+static_assert(alignof(FrontEndRewards_Widget_C_PopulateExpedition) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_PopulateExpedition");
+static_assert(sizeof(FrontEndRewards_Widget_C_PopulateExpedition) == 0x0000A0, "Wrong size on FrontEndRewards_Widget_C_PopulateExpedition");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateExpedition, K2Node_DynamicCast_AsFort_Reward_Expedition_Data) == 0x000000, "Member 'FrontEndRewards_Widget_C_PopulateExpedition::K2Node_DynamicCast_AsFort_Reward_Expedition_Data' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateExpedition, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'FrontEndRewards_Widget_C_PopulateExpedition::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateExpedition, CallFunc_GetDisplayName_ReturnValue) == 0x000010, "Member 'FrontEndRewards_Widget_C_PopulateExpedition::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
@@ -609,7 +609,7 @@ static_assert(offsetof(FrontEndRewards_Widget_C_PopulateExpedition, K2Node_MakeA
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateExpedition, CallFunc_Format_ReturnValue) == 0x000088, "Member 'FrontEndRewards_Widget_C_PopulateExpedition::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.PopulateCollectionBookRewards
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FrontEndRewards_Widget_C_PopulateCollectionBookRewards final
 {
 public:
@@ -623,17 +623,17 @@ public:
 	bool                                          CallFunc_HasSelectableRewards_ReturnValue;         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortSelectableRewardOption            CallFunc_Array_Get_Item;                           // 0x0030(0x11821780)()
+	struct FFortSelectableRewardOption            CallFunc_Array_Get_Item;                           // 0x0030(0x0010)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item2;                          // 0x0048(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item2;                          // 0x0048(0x0028)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class URewards_ItemCard_C*>            CallFunc_CreateCardsFromItemQuantityList_Cards;    // 0x0078(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_PopulateCollectionBookRewards) == 0x11821780, "Wrong alignment on FrontEndRewards_Widget_C_PopulateCollectionBookRewards");
-static_assert(sizeof(FrontEndRewards_Widget_C_PopulateCollectionBookRewards) == 0x11821780, "Wrong size on FrontEndRewards_Widget_C_PopulateCollectionBookRewards");
+static_assert(alignof(FrontEndRewards_Widget_C_PopulateCollectionBookRewards) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_PopulateCollectionBookRewards");
+static_assert(sizeof(FrontEndRewards_Widget_C_PopulateCollectionBookRewards) == 0x000090, "Wrong size on FrontEndRewards_Widget_C_PopulateCollectionBookRewards");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateCollectionBookRewards, TempCollectionBookRewards) == 0x000000, "Member 'FrontEndRewards_Widget_C_PopulateCollectionBookRewards::TempCollectionBookRewards' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateCollectionBookRewards, Temp_int_Array_Index_Variable) == 0x000010, "Member 'FrontEndRewards_Widget_C_PopulateCollectionBookRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateCollectionBookRewards, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'FrontEndRewards_Widget_C_PopulateCollectionBookRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -724,25 +724,25 @@ static_assert(offsetof(FrontEndRewards_Widget_C_HandleOnQuestRewardsClaimed, Rew
 static_assert(offsetof(FrontEndRewards_Widget_C_HandleOnQuestRewardsClaimed, CallFunc_CreateCardsFromItemInstanceQuantityList_Cards) == 0x000018, "Member 'FrontEndRewards_Widget_C_HandleOnQuestRewardsClaimed::CallFunc_CreateCardsFromItemInstanceQuantityList_Cards' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.HandleOnCollectionBookRewardsClaimed
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed final
 {
 public:
-	struct FFortCollectionBookRewards             RewardRequested;                                   // 0x0000(0x11821780)(Parm)
+	struct FFortCollectionBookRewards             RewardRequested;                                   // 0x0000(0x0070)(Parm)
 	bool                                          Success;                                           // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortItemInstanceQuantityPair>  ActualRewards;                                     // 0x0078(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class URewards_ItemCard_C*>            CallFunc_CreateCardsFromItemInstanceQuantityList_Cards; // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed) == 0x11821780, "Wrong alignment on FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed");
-static_assert(sizeof(FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed) == 0x11821780, "Wrong size on FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed");
+static_assert(alignof(FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed");
+static_assert(sizeof(FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed) == 0x000098, "Wrong size on FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed");
 static_assert(offsetof(FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed, RewardRequested) == 0x000000, "Member 'FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed::RewardRequested' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed, Success) == 0x000070, "Member 'FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed::Success' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed, ActualRewards) == 0x000078, "Member 'FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed::ActualRewards' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed, CallFunc_CreateCardsFromItemInstanceQuantityList_Cards) == 0x000088, "Member 'FrontEndRewards_Widget_C_HandleOnCollectionBookRewardsClaimed::CallFunc_CreateCardsFromItemInstanceQuantityList_Cards' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.PopulateListRewardsWidgetFromCardList
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList final
 {
 public:
@@ -752,12 +752,12 @@ public:
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
 };
-static_assert(alignof(FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList) == 0x11821D80, "Wrong alignment on FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList");
-static_assert(sizeof(FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList) == 0x11821D80, "Wrong size on FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList");
+static_assert(alignof(FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList");
+static_assert(sizeof(FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList) == 0x0000A8, "Wrong size on FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList, Cards) == 0x000000, "Member 'FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList::Cards' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'FrontEndRewards_Widget_C_PopulateListRewardsWidgetFromCardList::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
@@ -894,14 +894,14 @@ static_assert(offsetof(FrontEndRewards_Widget_C_PopulateVO, CallFunc_GetClaimCon
 static_assert(offsetof(FrontEndRewards_Widget_C_PopulateVO, CallFunc_GetIntroConversation_ReturnValue) == 0x000038, "Member 'FrontEndRewards_Widget_C_PopulateVO::CallFunc_GetIntroConversation_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.SkipPopAnimation
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x001C (0x001C - 0x0000)
 struct FrontEndRewards_Widget_C_SkipPopAnimation final
 {
 public:
-	struct FWidgetTransform                       K2Node_MakeStruct_WidgetTransform;                 // 0x0000(0x11827900)(NoDestructor)
+	struct FWidgetTransform                       K2Node_MakeStruct_WidgetTransform;                 // 0x0000(0x001C)(NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_SkipPopAnimation) == 0x11827900, "Wrong alignment on FrontEndRewards_Widget_C_SkipPopAnimation");
-static_assert(sizeof(FrontEndRewards_Widget_C_SkipPopAnimation) == 0x11827900, "Wrong size on FrontEndRewards_Widget_C_SkipPopAnimation");
+static_assert(alignof(FrontEndRewards_Widget_C_SkipPopAnimation) == 0x000004, "Wrong alignment on FrontEndRewards_Widget_C_SkipPopAnimation");
+static_assert(sizeof(FrontEndRewards_Widget_C_SkipPopAnimation) == 0x00001C, "Wrong size on FrontEndRewards_Widget_C_SkipPopAnimation");
 static_assert(offsetof(FrontEndRewards_Widget_C_SkipPopAnimation, K2Node_MakeStruct_WidgetTransform) == 0x000000, "Member 'FrontEndRewards_Widget_C_SkipPopAnimation::K2Node_MakeStruct_WidgetTransform' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.InitAdditionalRewards
@@ -911,12 +911,12 @@ struct FrontEndRewards_Widget_C_InitAdditionalRewards final
 public:
 	struct FFrontEndRewards_Definition            Definition;                                        // 0x0000(0x0048)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Widget_C_InitAdditionalRewards) == 0x000001, "Wrong alignment on FrontEndRewards_Widget_C_InitAdditionalRewards");
+static_assert(alignof(FrontEndRewards_Widget_C_InitAdditionalRewards) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_InitAdditionalRewards");
 static_assert(sizeof(FrontEndRewards_Widget_C_InitAdditionalRewards) == 0x000048, "Wrong size on FrontEndRewards_Widget_C_InitAdditionalRewards");
 static_assert(offsetof(FrontEndRewards_Widget_C_InitAdditionalRewards, Definition) == 0x000000, "Member 'FrontEndRewards_Widget_C_InitAdditionalRewards::Definition' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.InitializeRewardsData
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct FrontEndRewards_Widget_C_InitializeRewardsData final
 {
 public:
@@ -942,10 +942,10 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable3;                    // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortCollectionBookRewards             CallFunc_Array_Get_Item3;                          // 0x0098(0x11821780)()
+	struct FFortCollectionBookRewards             CallFunc_Array_Get_Item3;                          // 0x0098(0x0070)()
 };
-static_assert(alignof(FrontEndRewards_Widget_C_InitializeRewardsData) == 0x11821780, "Wrong alignment on FrontEndRewards_Widget_C_InitializeRewardsData");
-static_assert(sizeof(FrontEndRewards_Widget_C_InitializeRewardsData) == 0x11821780, "Wrong size on FrontEndRewards_Widget_C_InitializeRewardsData");
+static_assert(alignof(FrontEndRewards_Widget_C_InitializeRewardsData) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_InitializeRewardsData");
+static_assert(sizeof(FrontEndRewards_Widget_C_InitializeRewardsData) == 0x000108, "Wrong size on FrontEndRewards_Widget_C_InitializeRewardsData");
 static_assert(offsetof(FrontEndRewards_Widget_C_InitializeRewardsData, FrontEndRewards_Definition) == 0x000000, "Member 'FrontEndRewards_Widget_C_InitializeRewardsData::FrontEndRewards_Definition' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_InitializeRewardsData, Temp_int_Loop_Counter_Variable) == 0x000048, "Member 'FrontEndRewards_Widget_C_InitializeRewardsData::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_InitializeRewardsData, CallFunc_Add_IntInt_ReturnValue) == 0x00004C, "Member 'FrontEndRewards_Widget_C_InitializeRewardsData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -1032,19 +1032,19 @@ static_assert(offsetof(FrontEndRewards_Widget_C_SafePop, CallFunc_GetUIManagerWi
 static_assert(offsetof(FrontEndRewards_Widget_C_SafePop, CallFunc_IsActivated_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Widget_C_SafePop::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.DebugPrintChoiceReward
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FrontEndRewards_Widget_C_DebugPrintChoiceReward final
 {
 public:
 	const class UObject*                          Object;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
 };
-static_assert(alignof(FrontEndRewards_Widget_C_DebugPrintChoiceReward) == 0x11821D80, "Wrong alignment on FrontEndRewards_Widget_C_DebugPrintChoiceReward");
-static_assert(sizeof(FrontEndRewards_Widget_C_DebugPrintChoiceReward) == 0x11821D80, "Wrong size on FrontEndRewards_Widget_C_DebugPrintChoiceReward");
+static_assert(alignof(FrontEndRewards_Widget_C_DebugPrintChoiceReward) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_DebugPrintChoiceReward");
+static_assert(sizeof(FrontEndRewards_Widget_C_DebugPrintChoiceReward) == 0x000098, "Wrong size on FrontEndRewards_Widget_C_DebugPrintChoiceReward");
 static_assert(offsetof(FrontEndRewards_Widget_C_DebugPrintChoiceReward, Object) == 0x000000, "Member 'FrontEndRewards_Widget_C_DebugPrintChoiceReward::Object' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_DebugPrintChoiceReward, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Widget_C_DebugPrintChoiceReward::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Widget_C_DebugPrintChoiceReward, CallFunc_Conv_StringToText_ReturnValue) == 0x000018, "Member 'FrontEndRewards_Widget_C_DebugPrintChoiceReward::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");

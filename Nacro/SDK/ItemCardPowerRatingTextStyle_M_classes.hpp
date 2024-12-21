@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ItemCardPowerRatingTextStyle_M.ItemCardPowerRatingTextStyle_M_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UItemCardPowerRatingTextStyle_M_C final : public UCommonTextStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UItemCardPowerRatingTextStyle_M_C>();
 	}
 };
-static_assert(alignof(UItemCardPowerRatingTextStyle_M_C) == 0x322CBBB8, "Wrong alignment on UItemCardPowerRatingTextStyle_M_C");
-static_assert(sizeof(UItemCardPowerRatingTextStyle_M_C) == 0x322CBBB8, "Wrong size on UItemCardPowerRatingTextStyle_M_C");
+static_assert(alignof(UItemCardPowerRatingTextStyle_M_C) == 0x000008, "Wrong alignment on UItemCardPowerRatingTextStyle_M_C");
+static_assert(sizeof(UItemCardPowerRatingTextStyle_M_C) == 0x0000D0, "Wrong size on UItemCardPowerRatingTextStyle_M_C");
 
 }
 

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x02C0 - 0x0298)
 class UAthenaTeamMemberIndicator_C final : public UAthenaTeamMemberIndicatorBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
 	class UAthenaTeamMemberDBNOState_C*           DBNOIndicator;                                     // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             PlayerName;                                        // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AFortPlayerStateAthena*                 Player_State;                                      // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UAthenaTeamMemberIndicator_C>();
 	}
 };
-static_assert(alignof(UAthenaTeamMemberIndicator_C) == 0x322CBBB8, "Wrong alignment on UAthenaTeamMemberIndicator_C");
-static_assert(sizeof(UAthenaTeamMemberIndicator_C) == 0x322CBBB8, "Wrong size on UAthenaTeamMemberIndicator_C");
+static_assert(alignof(UAthenaTeamMemberIndicator_C) == 0x000008, "Wrong alignment on UAthenaTeamMemberIndicator_C");
+static_assert(sizeof(UAthenaTeamMemberIndicator_C) == 0x0002C0, "Wrong size on UAthenaTeamMemberIndicator_C");
 static_assert(offsetof(UAthenaTeamMemberIndicator_C, UberGraphFrame) == 0x000298, "Member 'UAthenaTeamMemberIndicator_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaTeamMemberIndicator_C, DBNOIndicator) == 0x0002A0, "Member 'UAthenaTeamMemberIndicator_C::DBNOIndicator' has a wrong offset!");
 static_assert(offsetof(UAthenaTeamMemberIndicator_C, PlayerName) == 0x0002A8, "Member 'UAthenaTeamMemberIndicator_C::PlayerName' has a wrong offset!");

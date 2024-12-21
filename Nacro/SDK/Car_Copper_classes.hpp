@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Car_Copper.Car_Copper_C
-// 0x0000 (0x1182A000 - 0x1182A000)
-class ACar_Copper_C : public ABuildingProp
+// 0x01D0 (0x11A0 - 0x0FD0)
+class ACar_Copper_C final : public ABuildingProp
 {
 public:
 	uint8                                         Pad_FC8[0x8];                                      // 0x0FC8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0FD0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0FD0(0x0008)(Transient, DuplicateTransient)
 	float                                         Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9; // 0x0FD8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9; // 0x0FDC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_FDD[0x3];                                      // 0x0FDD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -39,8 +39,8 @@ public:
 	class UTimelineComponent*                     Timeline_0;                                        // 0x1000(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          OverallAlarmCycleFinished;                         // 0x1008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1009[0x3];                                     // 0x1009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           InitialEmissiveMultiplier;                         // 0x100C(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           InitialEmissiveMultiplier2;                        // 0x101C(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           InitialEmissiveMultiplier;                         // 0x100C(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           InitialEmissiveMultiplier2;                        // 0x101C(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AlarmLightCounter;                                 // 0x102C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SoundIsRetriggerable;                              // 0x1030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CurrentFlashAnimationCycleFinished;                // 0x1031(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -66,8 +66,8 @@ public:
 	bool                                          RandomlyDisableSomeCarAlarms;                      // 0x1083(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         PercentageChanceOfCarAlarmsBeingDisabled;          // 0x1084(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPointLightComponent*                   HLight1;                                           // 0x1088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HLight1SocketLocation;                             // 0x1090(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HLight2SocketLocation;                             // 0x109C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HLight1SocketLocation;                             // 0x1090(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HLight2SocketLocation;                             // 0x109C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>       AnimatingMIDArray;                                 // 0x10A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class UAudioComponent*                        AudibleAlarmSound;                                 // 0x10B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseCarBounce;                                      // 0x10C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -94,15 +94,15 @@ public:
 	uint8                                         Pad_1126[0x2];                                     // 0x1126(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class USpotLightComponent*                    HLight2;                                           // 0x1128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HeadLightLightBrightness;                          // 0x1130(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TLight1SocketLocation;                             // 0x1134(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TLight2SocketLocation;                             // 0x1140(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Bounce_Offset;                                     // 0x114C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Hlight2_Minus_impact_bounce_light_location;        // 0x1158(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Tlight2_Minus_impact_bounce_light_location;        // 0x1164(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TLight1SocketLocation;                             // 0x1134(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TLight2SocketLocation;                             // 0x1140(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Bounce_Offset;                                     // 0x114C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Hlight2_Minus_impact_bounce_light_location;        // 0x1158(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Tlight2_Minus_impact_bounce_light_location;        // 0x1164(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Car_Currently_Bouncing_From_Jump;                  // 0x1170(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1171[0x3];                                     // 0x1171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Hlight1_Minus_impact_bounce_light_location;        // 0x1174(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Tlight1_Minus_impact_bounce_light_location;        // 0x1180(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Hlight1_Minus_impact_bounce_light_location;        // 0x1174(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Tlight1_Minus_impact_bounce_light_location;        // 0x1180(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Randomly_start_with_some_cars_lights_on;           // 0x118C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_118D[0x3];                                     // 0x118D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Percentage_chance_of_lights_being_left_off;        // 0x1190(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -151,8 +151,8 @@ public:
 		return GetDefaultObjImpl<ACar_Copper_C>();
 	}
 };
-static_assert(alignof(ACar_Copper_C) == 0x1182A000, "Wrong alignment on ACar_Copper_C");
-static_assert(sizeof(ACar_Copper_C) == 0x1182A000, "Wrong size on ACar_Copper_C");
+static_assert(alignof(ACar_Copper_C) == 0x000010, "Wrong alignment on ACar_Copper_C");
+static_assert(sizeof(ACar_Copper_C) == 0x0011A0, "Wrong size on ACar_Copper_C");
 static_assert(offsetof(ACar_Copper_C, UberGraphFrame) == 0x000FD0, "Member 'ACar_Copper_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ACar_Copper_C, Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9) == 0x000FD8, "Member 'ACar_Copper_C::Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9' has a wrong offset!");
 static_assert(offsetof(ACar_Copper_C, Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9) == 0x000FDC, "Member 'ACar_Copper_C::Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9' has a wrong offset!");

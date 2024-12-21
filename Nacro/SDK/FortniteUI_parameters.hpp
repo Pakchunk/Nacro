@@ -39,17 +39,17 @@ static_assert(sizeof(AthenaHUDContext_HandleLocalPlayerDBNOStateChanged) == 0x00
 static_assert(offsetof(AthenaHUDContext_HandleLocalPlayerDBNOStateChanged, bIsDBNO) == 0x000000, "Member 'AthenaHUDContext_HandleLocalPlayerDBNOStateChanged::bIsDBNO' has a wrong offset!");
 
 // Function FortniteUI.AthenaHUDContext.HandleUIGameplayCue
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct AthenaHUDContext_HandleUIGameplayCue final
 {
 public:
 	class FName                                   CueName;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGameplayCueEvent                             EventType;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AthenaHUDContext_HandleUIGameplayCue) == 0x11821C00, "Wrong alignment on AthenaHUDContext_HandleUIGameplayCue");
-static_assert(sizeof(AthenaHUDContext_HandleUIGameplayCue) == 0x11821C00, "Wrong size on AthenaHUDContext_HandleUIGameplayCue");
+static_assert(alignof(AthenaHUDContext_HandleUIGameplayCue) == 0x000008, "Wrong alignment on AthenaHUDContext_HandleUIGameplayCue");
+static_assert(sizeof(AthenaHUDContext_HandleUIGameplayCue) == 0x0000C8, "Wrong size on AthenaHUDContext_HandleUIGameplayCue");
 static_assert(offsetof(AthenaHUDContext_HandleUIGameplayCue, CueName) == 0x000000, "Member 'AthenaHUDContext_HandleUIGameplayCue::CueName' has a wrong offset!");
 static_assert(offsetof(AthenaHUDContext_HandleUIGameplayCue, EventType) == 0x000008, "Member 'AthenaHUDContext_HandleUIGameplayCue::EventType' has a wrong offset!");
 static_assert(offsetof(AthenaHUDContext_HandleUIGameplayCue, Parameters) == 0x000010, "Member 'AthenaHUDContext_HandleUIGameplayCue::Parameters' has a wrong offset!");
@@ -124,14 +124,14 @@ static_assert(offsetof(FortNodeCanvas_PanToNode, NodeID) == 0x000000, "Member 'F
 static_assert(offsetof(FortNodeCanvas_PanToNode, PanSpeed) == 0x000008, "Member 'FortNodeCanvas_PanToNode::PanSpeed' has a wrong offset!");
 
 // Function FortniteUI.FortHUDElementWidget.HandleOnHUDElementVisibilityChanged
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortHUDElementWidget_HandleOnHUDElementVisibilityChanged final
 {
 public:
-	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHUDElementWidget_HandleOnHUDElementVisibilityChanged) == 0x11821C00, "Wrong alignment on FortHUDElementWidget_HandleOnHUDElementVisibilityChanged");
-static_assert(sizeof(FortHUDElementWidget_HandleOnHUDElementVisibilityChanged) == 0x11821C00, "Wrong size on FortHUDElementWidget_HandleOnHUDElementVisibilityChanged");
+static_assert(alignof(FortHUDElementWidget_HandleOnHUDElementVisibilityChanged) == 0x000008, "Wrong alignment on FortHUDElementWidget_HandleOnHUDElementVisibilityChanged");
+static_assert(sizeof(FortHUDElementWidget_HandleOnHUDElementVisibilityChanged) == 0x000020, "Wrong size on FortHUDElementWidget_HandleOnHUDElementVisibilityChanged");
 static_assert(offsetof(FortHUDElementWidget_HandleOnHUDElementVisibilityChanged, HiddenHUDElementTags) == 0x000000, "Member 'FortHUDElementWidget_HandleOnHUDElementVisibilityChanged::HiddenHUDElementTags' has a wrong offset!");
 
 // Function FortniteUI.FortBangWrapper.SetBangVisibility
@@ -146,46 +146,46 @@ static_assert(sizeof(FortBangWrapper_SetBangVisibility) == 0x000001, "Wrong size
 static_assert(offsetof(FortBangWrapper_SetBangVisibility, InVisible) == 0x000000, "Member 'FortBangWrapper_SetBangVisibility::InVisible' has a wrong offset!");
 
 // Function FortniteUI.FortTabButtonInterface.SetTabLabelInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct FortTabButtonInterface_SetTabLabelInfo final
 {
 public:
-	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortTabButtonInterface_SetTabLabelInfo) == 0x1182E980, "Wrong alignment on FortTabButtonInterface_SetTabLabelInfo");
-static_assert(sizeof(FortTabButtonInterface_SetTabLabelInfo) == 0x1182E980, "Wrong size on FortTabButtonInterface_SetTabLabelInfo");
+static_assert(alignof(FortTabButtonInterface_SetTabLabelInfo) == 0x000008, "Wrong alignment on FortTabButtonInterface_SetTabLabelInfo");
+static_assert(sizeof(FortTabButtonInterface_SetTabLabelInfo) == 0x0000A8, "Wrong size on FortTabButtonInterface_SetTabLabelInfo");
 static_assert(offsetof(FortTabButtonInterface_SetTabLabelInfo, TabLabelInfo) == 0x000000, "Member 'FortTabButtonInterface_SetTabLabelInfo::TabLabelInfo' has a wrong offset!");
 
 // Function FortniteUI.FortTabListWidgetBase.GetPreregisteredTabInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct FortTabListWidgetBase_GetPreregisteredTabInfo final
 {
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortTabListRegistrationInfo           OutTabInfo;                                        // 0x0008(0x1182E980)(Parm, OutParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortTabListRegistrationInfo           OutTabInfo;                                        // 0x0008(0x00D0)(Parm, OutParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00D8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortTabListWidgetBase_GetPreregisteredTabInfo) == 0x1182E980, "Wrong alignment on FortTabListWidgetBase_GetPreregisteredTabInfo");
-static_assert(sizeof(FortTabListWidgetBase_GetPreregisteredTabInfo) == 0x1182E980, "Wrong size on FortTabListWidgetBase_GetPreregisteredTabInfo");
+static_assert(alignof(FortTabListWidgetBase_GetPreregisteredTabInfo) == 0x000008, "Wrong alignment on FortTabListWidgetBase_GetPreregisteredTabInfo");
+static_assert(sizeof(FortTabListWidgetBase_GetPreregisteredTabInfo) == 0x0000E0, "Wrong size on FortTabListWidgetBase_GetPreregisteredTabInfo");
 static_assert(offsetof(FortTabListWidgetBase_GetPreregisteredTabInfo, TabNameID) == 0x000000, "Member 'FortTabListWidgetBase_GetPreregisteredTabInfo::TabNameID' has a wrong offset!");
 static_assert(offsetof(FortTabListWidgetBase_GetPreregisteredTabInfo, OutTabInfo) == 0x000008, "Member 'FortTabListWidgetBase_GetPreregisteredTabInfo::OutTabInfo' has a wrong offset!");
 static_assert(offsetof(FortTabListWidgetBase_GetPreregisteredTabInfo, ReturnValue) == 0x0000D8, "Member 'FortTabListWidgetBase_GetPreregisteredTabInfo::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortTabListWidgetBase.RegisterFortTab
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct FortTabListWidgetBase_RegisterFortTab final
 {
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class UCommonButton>              TabButtonType;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortTabButtonLabelInfo                LabelInfo;                                         // 0x0010(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortTabButtonLabelInfo                LabelInfo;                                         // 0x0010(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UWidget*                                ContentWidget;                                     // 0x00B8(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortTabListWidgetBase_RegisterFortTab) == 0x1182E980, "Wrong alignment on FortTabListWidgetBase_RegisterFortTab");
-static_assert(sizeof(FortTabListWidgetBase_RegisterFortTab) == 0x1182E980, "Wrong size on FortTabListWidgetBase_RegisterFortTab");
+static_assert(alignof(FortTabListWidgetBase_RegisterFortTab) == 0x000008, "Wrong alignment on FortTabListWidgetBase_RegisterFortTab");
+static_assert(sizeof(FortTabListWidgetBase_RegisterFortTab) == 0x0000C8, "Wrong size on FortTabListWidgetBase_RegisterFortTab");
 static_assert(offsetof(FortTabListWidgetBase_RegisterFortTab, TabNameID) == 0x000000, "Member 'FortTabListWidgetBase_RegisterFortTab::TabNameID' has a wrong offset!");
 static_assert(offsetof(FortTabListWidgetBase_RegisterFortTab, TabButtonType) == 0x000008, "Member 'FortTabListWidgetBase_RegisterFortTab::TabButtonType' has a wrong offset!");
 static_assert(offsetof(FortTabListWidgetBase_RegisterFortTab, LabelInfo) == 0x000010, "Member 'FortTabListWidgetBase_RegisterFortTab::LabelInfo' has a wrong offset!");
@@ -193,25 +193,25 @@ static_assert(offsetof(FortTabListWidgetBase_RegisterFortTab, ContentWidget) == 
 static_assert(offsetof(FortTabListWidgetBase_RegisterFortTab, ReturnValue) == 0x0000C0, "Member 'FortTabListWidgetBase_RegisterFortTab::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortTabListWidgetBase.SetNextTabInputActionData
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortTabListWidgetBase_SetNextTabInputActionData final
 {
 public:
-	struct FDataTableRowHandle                    NextData;                                          // 0x0000(0x1182EB00)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                    NextData;                                          // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortTabListWidgetBase_SetNextTabInputActionData) == 0x1182EB00, "Wrong alignment on FortTabListWidgetBase_SetNextTabInputActionData");
-static_assert(sizeof(FortTabListWidgetBase_SetNextTabInputActionData) == 0x1182EB00, "Wrong size on FortTabListWidgetBase_SetNextTabInputActionData");
+static_assert(alignof(FortTabListWidgetBase_SetNextTabInputActionData) == 0x000008, "Wrong alignment on FortTabListWidgetBase_SetNextTabInputActionData");
+static_assert(sizeof(FortTabListWidgetBase_SetNextTabInputActionData) == 0x000010, "Wrong size on FortTabListWidgetBase_SetNextTabInputActionData");
 static_assert(offsetof(FortTabListWidgetBase_SetNextTabInputActionData, NextData) == 0x000000, "Member 'FortTabListWidgetBase_SetNextTabInputActionData::NextData' has a wrong offset!");
 
 // Function FortniteUI.FortTabListWidgetBase.SetPreviousTabInputActionData
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortTabListWidgetBase_SetPreviousTabInputActionData final
 {
 public:
-	struct FDataTableRowHandle                    PreviousData;                                      // 0x0000(0x1182EB00)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                    PreviousData;                                      // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortTabListWidgetBase_SetPreviousTabInputActionData) == 0x1182EB00, "Wrong alignment on FortTabListWidgetBase_SetPreviousTabInputActionData");
-static_assert(sizeof(FortTabListWidgetBase_SetPreviousTabInputActionData) == 0x1182EB00, "Wrong size on FortTabListWidgetBase_SetPreviousTabInputActionData");
+static_assert(alignof(FortTabListWidgetBase_SetPreviousTabInputActionData) == 0x000008, "Wrong alignment on FortTabListWidgetBase_SetPreviousTabInputActionData");
+static_assert(sizeof(FortTabListWidgetBase_SetPreviousTabInputActionData) == 0x000010, "Wrong size on FortTabListWidgetBase_SetPreviousTabInputActionData");
 static_assert(offsetof(FortTabListWidgetBase_SetPreviousTabInputActionData, PreviousData) == 0x000000, "Member 'FortTabListWidgetBase_SetPreviousTabInputActionData::PreviousData' has a wrong offset!");
 
 // Function FortniteUI.FortTabListWidgetBase.IsFirstTabActive
@@ -442,26 +442,26 @@ static_assert(offsetof(AthenaLeaderboardScreenBase_OnUpdateLeaderboardListUI, Lo
 static_assert(offsetof(AthenaLeaderboardScreenBase_OnUpdateLeaderboardListUI, ErrorStr) == 0x000010, "Member 'AthenaLeaderboardScreenBase_OnUpdateLeaderboardListUI::ErrorStr' has a wrong offset!");
 
 // Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateListHeader
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct AthenaLeaderboardScreenBase_OnUpdateListHeader final
 {
 public:
-	struct FAthenaPlaylistLeaderboardData         PlaylistTabData;                                   // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FAthenaPlaylistLeaderboardData         PlaylistTabData;                                   // 0x0000(0x0048)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AthenaLeaderboardScreenBase_OnUpdateListHeader) == 0x1182E980, "Wrong alignment on AthenaLeaderboardScreenBase_OnUpdateListHeader");
-static_assert(sizeof(AthenaLeaderboardScreenBase_OnUpdateListHeader) == 0x1182E980, "Wrong size on AthenaLeaderboardScreenBase_OnUpdateListHeader");
+static_assert(alignof(AthenaLeaderboardScreenBase_OnUpdateListHeader) == 0x000008, "Wrong alignment on AthenaLeaderboardScreenBase_OnUpdateListHeader");
+static_assert(sizeof(AthenaLeaderboardScreenBase_OnUpdateListHeader) == 0x000048, "Wrong size on AthenaLeaderboardScreenBase_OnUpdateListHeader");
 static_assert(offsetof(AthenaLeaderboardScreenBase_OnUpdateListHeader, PlaylistTabData) == 0x000000, "Member 'AthenaLeaderboardScreenBase_OnUpdateListHeader::PlaylistTabData' has a wrong offset!");
 
 // Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateTabButtonText
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct AthenaLeaderboardScreenBase_OnUpdateTabButtonText final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAthenaPlaylistLeaderboardData         PlaylistTabData;                                   // 0x0008(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FAthenaPlaylistLeaderboardData         PlaylistTabData;                                   // 0x0008(0x0048)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AthenaLeaderboardScreenBase_OnUpdateTabButtonText) == 0x1182E980, "Wrong alignment on AthenaLeaderboardScreenBase_OnUpdateTabButtonText");
-static_assert(sizeof(AthenaLeaderboardScreenBase_OnUpdateTabButtonText) == 0x1182E980, "Wrong size on AthenaLeaderboardScreenBase_OnUpdateTabButtonText");
+static_assert(alignof(AthenaLeaderboardScreenBase_OnUpdateTabButtonText) == 0x000008, "Wrong alignment on AthenaLeaderboardScreenBase_OnUpdateTabButtonText");
+static_assert(sizeof(AthenaLeaderboardScreenBase_OnUpdateTabButtonText) == 0x000050, "Wrong size on AthenaLeaderboardScreenBase_OnUpdateTabButtonText");
 static_assert(offsetof(AthenaLeaderboardScreenBase_OnUpdateTabButtonText, Button) == 0x000000, "Member 'AthenaLeaderboardScreenBase_OnUpdateTabButtonText::Button' has a wrong offset!");
 static_assert(offsetof(AthenaLeaderboardScreenBase_OnUpdateTabButtonText, PlaylistTabData) == 0x000008, "Member 'AthenaLeaderboardScreenBase_OnUpdateTabButtonText::PlaylistTabData' has a wrong offset!");
 
@@ -488,15 +488,15 @@ static_assert(sizeof(AthenaMatchReadyDesktopPopup_UserDismissedDialog) == 0x0000
 static_assert(offsetof(AthenaMatchReadyDesktopPopup_UserDismissedDialog, bBringToFront) == 0x000000, "Member 'AthenaMatchReadyDesktopPopup_UserDismissedDialog::bBringToFront' has a wrong offset!");
 
 // Function FortniteUI.AthenaStatsScreenBase.FormatStatValueAsElapsedTime
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct AthenaStatsScreenBase_FormatStatValueAsElapsedTime final
 {
 public:
-	struct FTimespan                              ValueAsTimespan;                                   // 0x0000(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              ValueAsTimespan;                                   // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AthenaStatsScreenBase_FormatStatValueAsElapsedTime) == 0x11821300, "Wrong alignment on AthenaStatsScreenBase_FormatStatValueAsElapsedTime");
-static_assert(sizeof(AthenaStatsScreenBase_FormatStatValueAsElapsedTime) == 0x11821300, "Wrong size on AthenaStatsScreenBase_FormatStatValueAsElapsedTime");
+static_assert(alignof(AthenaStatsScreenBase_FormatStatValueAsElapsedTime) == 0x000008, "Wrong alignment on AthenaStatsScreenBase_FormatStatValueAsElapsedTime");
+static_assert(sizeof(AthenaStatsScreenBase_FormatStatValueAsElapsedTime) == 0x000020, "Wrong size on AthenaStatsScreenBase_FormatStatValueAsElapsedTime");
 static_assert(offsetof(AthenaStatsScreenBase_FormatStatValueAsElapsedTime, ValueAsTimespan) == 0x000000, "Member 'AthenaStatsScreenBase_FormatStatValueAsElapsedTime::ValueAsTimespan' has a wrong offset!");
 static_assert(offsetof(AthenaStatsScreenBase_FormatStatValueAsElapsedTime, ReturnValue) == 0x000008, "Member 'AthenaStatsScreenBase_FormatStatValueAsElapsedTime::ReturnValue' has a wrong offset!");
 
@@ -594,17 +594,17 @@ static_assert(sizeof(AthenaStatsScreenBase_GetWinsTag) == 0x000010, "Wrong size 
 static_assert(offsetof(AthenaStatsScreenBase_GetWinsTag, ReturnValue) == 0x000000, "Member 'AthenaStatsScreenBase_GetWinsTag::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortAbilitySystemContext.RegisterForAttributeChanged
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct FortAbilitySystemContext_RegisterForAttributeChanged final
 {
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAbilitySystemComponent*                ASC;                                               // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayAttribute                     Attribute;                                         // 0x0010(0x11821C00)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     Attribute;                                         // 0x0010(0x0020)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void()>                             Callback;                                          // 0x0030(0x0010)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAbilitySystemContext_RegisterForAttributeChanged) == 0x11821C00, "Wrong alignment on FortAbilitySystemContext_RegisterForAttributeChanged");
-static_assert(sizeof(FortAbilitySystemContext_RegisterForAttributeChanged) == 0x11821C00, "Wrong size on FortAbilitySystemContext_RegisterForAttributeChanged");
+static_assert(alignof(FortAbilitySystemContext_RegisterForAttributeChanged) == 0x000008, "Wrong alignment on FortAbilitySystemContext_RegisterForAttributeChanged");
+static_assert(sizeof(FortAbilitySystemContext_RegisterForAttributeChanged) == 0x000040, "Wrong size on FortAbilitySystemContext_RegisterForAttributeChanged");
 static_assert(offsetof(FortAbilitySystemContext_RegisterForAttributeChanged, Widget) == 0x000000, "Member 'FortAbilitySystemContext_RegisterForAttributeChanged::Widget' has a wrong offset!");
 static_assert(offsetof(FortAbilitySystemContext_RegisterForAttributeChanged, ASC) == 0x000008, "Member 'FortAbilitySystemContext_RegisterForAttributeChanged::ASC' has a wrong offset!");
 static_assert(offsetof(FortAbilitySystemContext_RegisterForAttributeChanged, Attribute) == 0x000010, "Member 'FortAbilitySystemContext_RegisterForAttributeChanged::Attribute' has a wrong offset!");
@@ -1010,8 +1010,8 @@ static_assert(sizeof(FortItemGroupSlotWidget_HandleItemPickerSelectionCommittedI
 static_assert(offsetof(FortItemGroupSlotWidget_HandleItemPickerSelectionCommittedInternal, SelectedItem) == 0x000000, "Member 'FortItemGroupSlotWidget_HandleItemPickerSelectionCommittedInternal::SelectedItem' has a wrong offset!");
 
 // Function FortniteUI.FortItemGroupSlotWidget.HandlePreviewStateChanged
-// 0x0060 (0x0060 - 0x0000)
-struct alignas(0x30) FortItemGroupSlotWidget_HandlePreviewStateChanged final
+// 0x0058 (0x0058 - 0x0000)
+struct FortItemGroupSlotWidget_HandlePreviewStateChanged final
 {
 public:
 	bool                                          IsSquadSlotAffectedByPreview;                      // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1021,8 +1021,8 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<struct FGameplayAttribute, float>        PreviewAttributeBonusValues;                       // 0x0008(0x0050)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemGroupSlotWidget_HandlePreviewStateChanged) == 0x000030, "Wrong alignment on FortItemGroupSlotWidget_HandlePreviewStateChanged");
-static_assert(sizeof(FortItemGroupSlotWidget_HandlePreviewStateChanged) == 0x000060, "Wrong size on FortItemGroupSlotWidget_HandlePreviewStateChanged");
+static_assert(alignof(FortItemGroupSlotWidget_HandlePreviewStateChanged) == 0x000008, "Wrong alignment on FortItemGroupSlotWidget_HandlePreviewStateChanged");
+static_assert(sizeof(FortItemGroupSlotWidget_HandlePreviewStateChanged) == 0x000058, "Wrong size on FortItemGroupSlotWidget_HandlePreviewStateChanged");
 static_assert(offsetof(FortItemGroupSlotWidget_HandlePreviewStateChanged, IsSquadSlotAffectedByPreview) == 0x000000, "Member 'FortItemGroupSlotWidget_HandlePreviewStateChanged::IsSquadSlotAffectedByPreview' has a wrong offset!");
 static_assert(offsetof(FortItemGroupSlotWidget_HandlePreviewStateChanged, IsBeingReplacedOrRelocated) == 0x000001, "Member 'FortItemGroupSlotWidget_HandlePreviewStateChanged::IsBeingReplacedOrRelocated' has a wrong offset!");
 static_assert(offsetof(FortItemGroupSlotWidget_HandlePreviewStateChanged, WouldHavePersonalitySynergy) == 0x000002, "Member 'FortItemGroupSlotWidget_HandlePreviewStateChanged::WouldHavePersonalitySynergy' has a wrong offset!");
@@ -1146,30 +1146,30 @@ static_assert(sizeof(FortItemGroupSlotWidget_IsManagerSlot) == 0x000001, "Wrong 
 static_assert(offsetof(FortItemGroupSlotWidget_IsManagerSlot, ReturnValue) == 0x000000, "Member 'FortItemGroupSlotWidget_IsManagerSlot::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortItemGroupSlotWidget.TryGetSquad
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortItemGroupSlotWidget_TryGetSquad final
 {
 public:
-	struct FHomebaseSquad                         OutSquad;                                          // 0x0000(0x11821D80)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseSquad                         OutSquad;                                          // 0x0000(0x0088)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortItemGroupSlotWidget_TryGetSquad) == 0x11821780, "Wrong alignment on FortItemGroupSlotWidget_TryGetSquad");
-static_assert(sizeof(FortItemGroupSlotWidget_TryGetSquad) == 0x11821780, "Wrong size on FortItemGroupSlotWidget_TryGetSquad");
+static_assert(alignof(FortItemGroupSlotWidget_TryGetSquad) == 0x000008, "Wrong alignment on FortItemGroupSlotWidget_TryGetSquad");
+static_assert(sizeof(FortItemGroupSlotWidget_TryGetSquad) == 0x000090, "Wrong size on FortItemGroupSlotWidget_TryGetSquad");
 static_assert(offsetof(FortItemGroupSlotWidget_TryGetSquad, OutSquad) == 0x000000, "Member 'FortItemGroupSlotWidget_TryGetSquad::OutSquad' has a wrong offset!");
 static_assert(offsetof(FortItemGroupSlotWidget_TryGetSquad, ReturnValue) == 0x000088, "Member 'FortItemGroupSlotWidget_TryGetSquad::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortItemGroupSlotWidget.TryGetSquadSlot
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct FortItemGroupSlotWidget_TryGetSquadSlot final
 {
 public:
-	struct FHomebaseSquadSlot                     OutSquadSlot;                                      // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseSquadSlot                     OutSquadSlot;                                      // 0x0000(0x0060)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortItemGroupSlotWidget_TryGetSquadSlot) == 0x1182E980, "Wrong alignment on FortItemGroupSlotWidget_TryGetSquadSlot");
-static_assert(sizeof(FortItemGroupSlotWidget_TryGetSquadSlot) == 0x1182E980, "Wrong size on FortItemGroupSlotWidget_TryGetSquadSlot");
+static_assert(alignof(FortItemGroupSlotWidget_TryGetSquadSlot) == 0x000008, "Wrong alignment on FortItemGroupSlotWidget_TryGetSquadSlot");
+static_assert(sizeof(FortItemGroupSlotWidget_TryGetSquadSlot) == 0x000068, "Wrong size on FortItemGroupSlotWidget_TryGetSquadSlot");
 static_assert(offsetof(FortItemGroupSlotWidget_TryGetSquadSlot, OutSquadSlot) == 0x000000, "Member 'FortItemGroupSlotWidget_TryGetSquadSlot::OutSquadSlot' has a wrong offset!");
 static_assert(offsetof(FortItemGroupSlotWidget_TryGetSquadSlot, ReturnValue) == 0x000060, "Member 'FortItemGroupSlotWidget_TryGetSquadSlot::ReturnValue' has a wrong offset!");
 
@@ -1185,14 +1185,14 @@ static_assert(sizeof(FortMtxOfferDetailsBase_UpdateMtxOffer) == 0x000008, "Wrong
 static_assert(offsetof(FortMtxOfferDetailsBase_UpdateMtxOffer, MtxOfferWidget) == 0x000000, "Member 'FortMtxOfferDetailsBase_UpdateMtxOffer::MtxOfferWidget' has a wrong offset!");
 
 // Function FortniteUI.FortMtxOfferDetailsBase.GetBackground
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortMtxOfferDetailsBase_GetBackground final
 {
 public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMtxOfferDetailsBase_GetBackground) == 0x11821300, "Wrong alignment on FortMtxOfferDetailsBase_GetBackground");
-static_assert(sizeof(FortMtxOfferDetailsBase_GetBackground) == 0x11821300, "Wrong size on FortMtxOfferDetailsBase_GetBackground");
+static_assert(alignof(FortMtxOfferDetailsBase_GetBackground) == 0x000004, "Wrong alignment on FortMtxOfferDetailsBase_GetBackground");
+static_assert(sizeof(FortMtxOfferDetailsBase_GetBackground) == 0x000010, "Wrong size on FortMtxOfferDetailsBase_GetBackground");
 static_assert(offsetof(FortMtxOfferDetailsBase_GetBackground, ReturnValue) == 0x000000, "Member 'FortMtxOfferDetailsBase_GetBackground::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxOfferDetailsBase.GetBaseQuantity
@@ -1240,25 +1240,25 @@ static_assert(sizeof(FortMtxOfferDetailsBase_GetDetailsAttributes) == 0x000010, 
 static_assert(offsetof(FortMtxOfferDetailsBase_GetDetailsAttributes, ReturnValue) == 0x000000, "Member 'FortMtxOfferDetailsBase_GetDetailsAttributes::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxOfferDetailsBase.GetDetailsImage
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortMtxOfferDetailsBase_GetDetailsImage final
 {
 public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMtxOfferDetailsBase_GetDetailsImage) == 0x11827900, "Wrong alignment on FortMtxOfferDetailsBase_GetDetailsImage");
-static_assert(sizeof(FortMtxOfferDetailsBase_GetDetailsImage) == 0x11827900, "Wrong size on FortMtxOfferDetailsBase_GetDetailsImage");
+static_assert(alignof(FortMtxOfferDetailsBase_GetDetailsImage) == 0x000008, "Wrong alignment on FortMtxOfferDetailsBase_GetDetailsImage");
+static_assert(sizeof(FortMtxOfferDetailsBase_GetDetailsImage) == 0x000090, "Wrong size on FortMtxOfferDetailsBase_GetDetailsImage");
 static_assert(offsetof(FortMtxOfferDetailsBase_GetDetailsImage, ReturnValue) == 0x000000, "Member 'FortMtxOfferDetailsBase_GetDetailsImage::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxOfferDetailsBase.GetGradient
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortMtxOfferDetailsBase_GetGradient final
 {
 public:
-	struct FFortMtxGradient                       ReturnValue;                                       // 0x0000(0x1182E980)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortMtxGradient                       ReturnValue;                                       // 0x0000(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMtxOfferDetailsBase_GetGradient) == 0x1182E980, "Wrong alignment on FortMtxOfferDetailsBase_GetGradient");
-static_assert(sizeof(FortMtxOfferDetailsBase_GetGradient) == 0x1182E980, "Wrong size on FortMtxOfferDetailsBase_GetGradient");
+static_assert(alignof(FortMtxOfferDetailsBase_GetGradient) == 0x000004, "Wrong alignment on FortMtxOfferDetailsBase_GetGradient");
+static_assert(sizeof(FortMtxOfferDetailsBase_GetGradient) == 0x000020, "Wrong size on FortMtxOfferDetailsBase_GetGradient");
 static_assert(offsetof(FortMtxOfferDetailsBase_GetGradient, ReturnValue) == 0x000000, "Member 'FortMtxOfferDetailsBase_GetGradient::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxOfferDetailsBase.GetName
@@ -1320,14 +1320,14 @@ static_assert(sizeof(FortMtxOfferDetailsBase_GetStoreOfferType) == 0x000001, "Wr
 static_assert(offsetof(FortMtxOfferDetailsBase_GetStoreOfferType, ReturnValue) == 0x000000, "Member 'FortMtxOfferDetailsBase_GetStoreOfferType::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxOfferDetailsBase.GetTileImage
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortMtxOfferDetailsBase_GetTileImage final
 {
 public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMtxOfferDetailsBase_GetTileImage) == 0x11827900, "Wrong alignment on FortMtxOfferDetailsBase_GetTileImage");
-static_assert(sizeof(FortMtxOfferDetailsBase_GetTileImage) == 0x11827900, "Wrong size on FortMtxOfferDetailsBase_GetTileImage");
+static_assert(alignof(FortMtxOfferDetailsBase_GetTileImage) == 0x000008, "Wrong alignment on FortMtxOfferDetailsBase_GetTileImage");
+static_assert(sizeof(FortMtxOfferDetailsBase_GetTileImage) == 0x000090, "Wrong size on FortMtxOfferDetailsBase_GetTileImage");
 static_assert(offsetof(FortMtxOfferDetailsBase_GetTileImage, ReturnValue) == 0x000000, "Member 'FortMtxOfferDetailsBase_GetTileImage::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontendInventoryFilterFunctionLibrary.ToText
@@ -1669,16 +1669,16 @@ static_assert(sizeof(FortSquadManagementScreenBase_GetIdOfSquadToManageBP) == 0x
 static_assert(offsetof(FortSquadManagementScreenBase_GetIdOfSquadToManageBP, ReturnValue) == 0x000000, "Member 'FortSquadManagementScreenBase_GetIdOfSquadToManageBP::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSquadManagementScreenBase.TryGetStaticSquadDataBP
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortSquadManagementScreenBase_TryGetStaticSquadDataBP final
 {
 public:
-	struct FHomebaseSquad                         OutSquadData;                                      // 0x0000(0x11821D80)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseSquad                         OutSquadData;                                      // 0x0000(0x0088)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSquadManagementScreenBase_TryGetStaticSquadDataBP) == 0x11821780, "Wrong alignment on FortSquadManagementScreenBase_TryGetStaticSquadDataBP");
-static_assert(sizeof(FortSquadManagementScreenBase_TryGetStaticSquadDataBP) == 0x11821780, "Wrong size on FortSquadManagementScreenBase_TryGetStaticSquadDataBP");
+static_assert(alignof(FortSquadManagementScreenBase_TryGetStaticSquadDataBP) == 0x000008, "Wrong alignment on FortSquadManagementScreenBase_TryGetStaticSquadDataBP");
+static_assert(sizeof(FortSquadManagementScreenBase_TryGetStaticSquadDataBP) == 0x000090, "Wrong size on FortSquadManagementScreenBase_TryGetStaticSquadDataBP");
 static_assert(offsetof(FortSquadManagementScreenBase_TryGetStaticSquadDataBP, OutSquadData) == 0x000000, "Member 'FortSquadManagementScreenBase_TryGetStaticSquadDataBP::OutSquadData' has a wrong offset!");
 static_assert(offsetof(FortSquadManagementScreenBase_TryGetStaticSquadDataBP, ReturnValue) == 0x000088, "Member 'FortSquadManagementScreenBase_TryGetStaticSquadDataBP::ReturnValue' has a wrong offset!");
 
@@ -1705,16 +1705,16 @@ static_assert(sizeof(FortSquadSelectorButton_GetIdOfSquadToManageBP) == 0x000008
 static_assert(offsetof(FortSquadSelectorButton_GetIdOfSquadToManageBP, ReturnValue) == 0x000000, "Member 'FortSquadSelectorButton_GetIdOfSquadToManageBP::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSquadSelectorButton.TryGetStaticSquadDataBP
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortSquadSelectorButton_TryGetStaticSquadDataBP final
 {
 public:
-	struct FHomebaseSquad                         OutSquadData;                                      // 0x0000(0x11821D80)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseSquad                         OutSquadData;                                      // 0x0000(0x0088)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSquadSelectorButton_TryGetStaticSquadDataBP) == 0x11821780, "Wrong alignment on FortSquadSelectorButton_TryGetStaticSquadDataBP");
-static_assert(sizeof(FortSquadSelectorButton_TryGetStaticSquadDataBP) == 0x11821780, "Wrong size on FortSquadSelectorButton_TryGetStaticSquadDataBP");
+static_assert(alignof(FortSquadSelectorButton_TryGetStaticSquadDataBP) == 0x000008, "Wrong alignment on FortSquadSelectorButton_TryGetStaticSquadDataBP");
+static_assert(sizeof(FortSquadSelectorButton_TryGetStaticSquadDataBP) == 0x000090, "Wrong size on FortSquadSelectorButton_TryGetStaticSquadDataBP");
 static_assert(offsetof(FortSquadSelectorButton_TryGetStaticSquadDataBP, OutSquadData) == 0x000000, "Member 'FortSquadSelectorButton_TryGetStaticSquadDataBP::OutSquadData' has a wrong offset!");
 static_assert(offsetof(FortSquadSelectorButton_TryGetStaticSquadDataBP, ReturnValue) == 0x000088, "Member 'FortSquadSelectorButton_TryGetStaticSquadDataBP::ReturnValue' has a wrong offset!");
 
@@ -1767,25 +1767,25 @@ static_assert(offsetof(FortActorCanvas_AddActorIndicator, Indicator) == 0x000000
 static_assert(offsetof(FortActorCanvas_AddActorIndicator, ReturnValue) == 0x000008, "Member 'FortActorCanvas_AddActorIndicator::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortActorCanvas.OnHUDElementVisibilityChanged
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortActorCanvas_OnHUDElementVisibilityChanged final
 {
 public:
-	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortActorCanvas_OnHUDElementVisibilityChanged) == 0x11821C00, "Wrong alignment on FortActorCanvas_OnHUDElementVisibilityChanged");
-static_assert(sizeof(FortActorCanvas_OnHUDElementVisibilityChanged) == 0x11821C00, "Wrong size on FortActorCanvas_OnHUDElementVisibilityChanged");
+static_assert(alignof(FortActorCanvas_OnHUDElementVisibilityChanged) == 0x000008, "Wrong alignment on FortActorCanvas_OnHUDElementVisibilityChanged");
+static_assert(sizeof(FortActorCanvas_OnHUDElementVisibilityChanged) == 0x000020, "Wrong size on FortActorCanvas_OnHUDElementVisibilityChanged");
 static_assert(offsetof(FortActorCanvas_OnHUDElementVisibilityChanged, HiddenHUDElementTags) == 0x000000, "Member 'FortActorCanvas_OnHUDElementVisibilityChanged::HiddenHUDElementTags' has a wrong offset!");
 
 // Function FortniteUI.FortActorCanvasSlot.SetCanAutoRemove
-// 0x2DF20700 (0x2DF20700 - 0x0000)
-struct alignas(0x2DF20700) FortActorCanvasSlot_SetCanAutoRemove final
+// 0x0001 (0x0001 - 0x0000)
+struct FortActorCanvasSlot_SetCanAutoRemove final
 {
 public:
 	bool                                          bAllowAutoRemove;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortActorCanvasSlot_SetCanAutoRemove) == 0x2DF20700, "Wrong alignment on FortActorCanvasSlot_SetCanAutoRemove");
-static_assert(sizeof(FortActorCanvasSlot_SetCanAutoRemove) == 0x2DF20700, "Wrong size on FortActorCanvasSlot_SetCanAutoRemove");
+static_assert(alignof(FortActorCanvasSlot_SetCanAutoRemove) == 0x000001, "Wrong alignment on FortActorCanvasSlot_SetCanAutoRemove");
+static_assert(sizeof(FortActorCanvasSlot_SetCanAutoRemove) == 0x000001, "Wrong size on FortActorCanvasSlot_SetCanAutoRemove");
 static_assert(offsetof(FortActorCanvasSlot_SetCanAutoRemove, bAllowAutoRemove) == 0x000000, "Member 'FortActorCanvasSlot_SetCanAutoRemove::bAllowAutoRemove' has a wrong offset!");
 
 // Function FortniteUI.FortActorCanvasSlot.SetHorizontalAlignment
@@ -1811,14 +1811,14 @@ static_assert(sizeof(FortActorCanvasSlot_SetVerticalAlignment) == 0x000001, "Wro
 static_assert(offsetof(FortActorCanvasSlot_SetVerticalAlignment, InVerticalAlignment) == 0x000000, "Member 'FortActorCanvasSlot_SetVerticalAlignment::InVerticalAlignment' has a wrong offset!");
 
 // Function FortniteUI.FortAlterationsWidget_NUI.OnGenerateAlteration
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortAlterationsWidget_NUI_OnGenerateAlteration final
 {
 public:
-	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0000(0x1182E980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0000(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAlterationsWidget_NUI_OnGenerateAlteration) == 0x1182E980, "Wrong alignment on FortAlterationsWidget_NUI_OnGenerateAlteration");
-static_assert(sizeof(FortAlterationsWidget_NUI_OnGenerateAlteration) == 0x1182E980, "Wrong size on FortAlterationsWidget_NUI_OnGenerateAlteration");
+static_assert(alignof(FortAlterationsWidget_NUI_OnGenerateAlteration) == 0x000008, "Wrong alignment on FortAlterationsWidget_NUI_OnGenerateAlteration");
+static_assert(sizeof(FortAlterationsWidget_NUI_OnGenerateAlteration) == 0x000018, "Wrong size on FortAlterationsWidget_NUI_OnGenerateAlteration");
 static_assert(offsetof(FortAlterationsWidget_NUI_OnGenerateAlteration, AlterationInfo) == 0x000000, "Member 'FortAlterationsWidget_NUI_OnGenerateAlteration::AlterationInfo' has a wrong offset!");
 
 // Function FortniteUI.FortAlterationsWidget_NUI.SetItem
@@ -1948,12 +1948,12 @@ static_assert(offsetof(FortAsyncAction_SetUIState_SetUIState, DesiredState) == 0
 static_assert(offsetof(FortAsyncAction_SetUIState_SetUIState, ReturnValue) == 0x000010, "Member 'FortAsyncAction_SetUIState_SetUIState::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortAsyncAction_ShowAdvancedLatentConfirmation_NUI.ShowAdvancedLatentActionConfirmation
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation final
 {
 public:
 	class UObject*                                InWorldContextObject;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Icon;                                              // 0x0008(0x322CBBB8)(Parm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Icon;                                              // 0x0008(0x0090)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   Title;                                             // 0x0098(0x0018)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   MESSAGE;                                           // 0x00B0(0x0018)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FConfirmationDialogAction>      ConfirmButtonInputActions;                         // 0x00C8(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -1962,8 +1962,8 @@ public:
 	class UWidget*                                LeftAdditionalContent;                             // 0x00E8(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI* ReturnValue;                                       // 0x00F0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation) == 0x11827900, "Wrong alignment on FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation");
-static_assert(sizeof(FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation) == 0x11827900, "Wrong size on FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation");
+static_assert(alignof(FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation) == 0x000008, "Wrong alignment on FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation");
+static_assert(sizeof(FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation) == 0x0000F8, "Wrong size on FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation");
 static_assert(offsetof(FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation, InWorldContextObject) == 0x000000, "Member 'FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation::InWorldContextObject' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation, Icon) == 0x000008, "Member 'FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation::Icon' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation, Title) == 0x000098, "Member 'FortAsyncAction_ShowAdvancedLatentConfirmation_NUI_ShowAdvancedLatentActionConfirmation::Title' has a wrong offset!");
@@ -2001,12 +2001,12 @@ static_assert(offsetof(FortAsyncAction_ShowConfirmation_ShowConfirmationDialog, 
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_ShowConfirmationDialog, ReturnValue) == 0x000078, "Member 'FortAsyncAction_ShowConfirmation_ShowConfirmationDialog::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortAsyncAction_ShowConfirmation_NUI.ShowConfirmationDialog_NUI
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI final
 {
 public:
 	class UObject*                                InWorldContextObject;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Icon;                                              // 0x0008(0x322CBBB8)(Parm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Icon;                                              // 0x0008(0x0090)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   Title;                                             // 0x0098(0x0018)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   MESSAGE;                                           // 0x00B0(0x0018)(Parm, NativeAccessSpecifierPublic)
 	TArray<struct FConfirmationDialogAction>      ConfirmButtonInputActions;                         // 0x00C8(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -2015,8 +2015,8 @@ public:
 	class UWidget*                                LeftAdditionalContent;                             // 0x00E8(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortAsyncAction_ShowConfirmation_NUI*  ReturnValue;                                       // 0x00F0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI) == 0x11827900, "Wrong alignment on FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI");
-static_assert(sizeof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI) == 0x11827900, "Wrong size on FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI");
+static_assert(alignof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI) == 0x000008, "Wrong alignment on FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI");
+static_assert(sizeof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI) == 0x0000F8, "Wrong size on FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI, InWorldContextObject) == 0x000000, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI::InWorldContextObject' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI, Icon) == 0x000008, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI::Icon' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI, Title) == 0x000098, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI::Title' has a wrong offset!");
@@ -2028,12 +2028,12 @@ static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDial
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI, ReturnValue) == 0x0000F0, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowConfirmationDialog_NUI::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortAsyncAction_ShowConfirmation_NUI.ShowSimpleConfirmationDialog_CustomInput
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput final
 {
 public:
 	class UObject*                                InWorldContextObject;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Icon;                                              // 0x0008(0x322CBBB8)(Parm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Icon;                                              // 0x0008(0x0090)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   Title;                                             // 0x0098(0x0018)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   MESSAGE;                                           // 0x00B0(0x0018)(Parm, NativeAccessSpecifierPublic)
 	class FName                                   ConfirmAction;                                     // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2042,8 +2042,8 @@ public:
 	class UWidget*                                LeftAdditionalContent;                             // 0x00E0(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortAsyncAction_ShowConfirmation_NUI*  ReturnValue;                                       // 0x00E8(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput) == 0x11827900, "Wrong alignment on FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput");
-static_assert(sizeof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput) == 0x11827900, "Wrong size on FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput");
+static_assert(alignof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput) == 0x000008, "Wrong alignment on FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput");
+static_assert(sizeof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput) == 0x0000F0, "Wrong size on FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput, InWorldContextObject) == 0x000000, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput::InWorldContextObject' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput, Icon) == 0x000008, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput::Icon' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput, Title) == 0x000098, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput::Title' has a wrong offset!");
@@ -2055,12 +2055,12 @@ static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmati
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput, ReturnValue) == 0x0000E8, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_CustomInput::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortAsyncAction_ShowConfirmation_NUI.ShowSimpleConfirmationDialog_NUI
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI final
 {
 public:
 	class UObject*                                InWorldContextObject;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Icon;                                              // 0x0008(0x322CBBB8)(Parm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Icon;                                              // 0x0008(0x0090)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   Title;                                             // 0x0098(0x0018)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   MESSAGE;                                           // 0x00B0(0x0018)(Parm, NativeAccessSpecifierPublic)
 	bool                                          bShowConfirm;                                      // 0x00C8(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2070,8 +2070,8 @@ public:
 	class UWidget*                                LeftAdditionalContent;                             // 0x00D8(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortAsyncAction_ShowConfirmation_NUI*  ReturnValue;                                       // 0x00E0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI) == 0x11827900, "Wrong alignment on FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI");
-static_assert(sizeof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI) == 0x11827900, "Wrong size on FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI");
+static_assert(alignof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI) == 0x000008, "Wrong alignment on FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI");
+static_assert(sizeof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI) == 0x0000E8, "Wrong size on FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI, InWorldContextObject) == 0x000000, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI::InWorldContextObject' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI, Icon) == 0x000008, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI::Icon' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI, Title) == 0x000098, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI::Title' has a wrong offset!");
@@ -2083,18 +2083,18 @@ static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmati
 static_assert(offsetof(FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI, ReturnValue) == 0x0000E0, "Member 'FortAsyncAction_ShowConfirmation_NUI_ShowSimpleConfirmationDialog_NUI::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortAsyncAction_ShowPartyDialog.ShowPartyLeaderManageDialog
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog final
 {
 public:
 	class UObject*                                InWorldContextObject;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0008(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0008(0x0190)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class ULocalPlayer*                           LocalPlayer_0;                                     // 0x0198(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UUserWidget*                            LeftAdditionalContent;                             // 0x01A0(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortAsyncAction_ShowPartyDialog*       ReturnValue;                                       // 0x01A8(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog) == 0x11821780, "Wrong alignment on FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog");
-static_assert(sizeof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog) == 0x11821780, "Wrong size on FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog");
+static_assert(alignof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog) == 0x000008, "Wrong alignment on FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog");
+static_assert(sizeof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog) == 0x0001B0, "Wrong size on FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog");
 static_assert(offsetof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog, InWorldContextObject) == 0x000000, "Member 'FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog::InWorldContextObject' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog, TeamMemberInfo_0) == 0x000008, "Member 'FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog::TeamMemberInfo_0' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog, LocalPlayer_0) == 0x000198, "Member 'FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog::LocalPlayer_0' has a wrong offset!");
@@ -2102,18 +2102,18 @@ static_assert(offsetof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDial
 static_assert(offsetof(FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog, ReturnValue) == 0x0001A8, "Member 'FortAsyncAction_ShowPartyDialog_ShowPartyLeaderManageDialog::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortAsyncAction_ShowPartyDialog.ShowPartyMemberManageDialog
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog final
 {
 public:
 	class UObject*                                InWorldContextObject;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0008(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0008(0x0190)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class ULocalPlayer*                           LocalPlayer_0;                                     // 0x0198(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UUserWidget*                            LeftAdditionalContent;                             // 0x01A0(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortAsyncAction_ShowPartyDialog*       ReturnValue;                                       // 0x01A8(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog) == 0x11821780, "Wrong alignment on FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog");
-static_assert(sizeof(FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog) == 0x11821780, "Wrong size on FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog");
+static_assert(alignof(FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog) == 0x000008, "Wrong alignment on FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog");
+static_assert(sizeof(FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog) == 0x0001B0, "Wrong size on FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog");
 static_assert(offsetof(FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog, InWorldContextObject) == 0x000000, "Member 'FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog::InWorldContextObject' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog, TeamMemberInfo_0) == 0x000008, "Member 'FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog::TeamMemberInfo_0' has a wrong offset!");
 static_assert(offsetof(FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog, LocalPlayer_0) == 0x000198, "Member 'FortAsyncAction_ShowPartyDialog_ShowPartyMemberManageDialog::LocalPlayer_0' has a wrong offset!");
@@ -2287,16 +2287,16 @@ static_assert(sizeof(FortBaseCanvasNode_GetCosts) == 0x000010, "Wrong size on Fo
 static_assert(offsetof(FortBaseCanvasNode_GetCosts, ReturnValue) == 0x000000, "Member 'FortBaseCanvasNode_GetCosts::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortBaseCanvasNode.GetNodeDataCopy
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct FortBaseCanvasNode_GetNodeDataCopy final
 {
 public:
-	struct FHomebaseNode                          Node;                                              // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseNode                          Node;                                              // 0x0000(0x00C0)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortBaseCanvasNode_GetNodeDataCopy) == 0x1182E980, "Wrong alignment on FortBaseCanvasNode_GetNodeDataCopy");
-static_assert(sizeof(FortBaseCanvasNode_GetNodeDataCopy) == 0x1182E980, "Wrong size on FortBaseCanvasNode_GetNodeDataCopy");
+static_assert(alignof(FortBaseCanvasNode_GetNodeDataCopy) == 0x000008, "Wrong alignment on FortBaseCanvasNode_GetNodeDataCopy");
+static_assert(sizeof(FortBaseCanvasNode_GetNodeDataCopy) == 0x0000C8, "Wrong size on FortBaseCanvasNode_GetNodeDataCopy");
 static_assert(offsetof(FortBaseCanvasNode_GetNodeDataCopy, Node) == 0x000000, "Member 'FortBaseCanvasNode_GetNodeDataCopy::Node' has a wrong offset!");
 static_assert(offsetof(FortBaseCanvasNode_GetNodeDataCopy, ReturnValue) == 0x0000C0, "Member 'FortBaseCanvasNode_GetNodeDataCopy::ReturnValue' has a wrong offset!");
 
@@ -2312,16 +2312,16 @@ static_assert(sizeof(FortBaseCanvasNode_GetNodeID) == 0x000008, "Wrong size on F
 static_assert(offsetof(FortBaseCanvasNode_GetNodeID, ReturnValue) == 0x000000, "Member 'FortBaseCanvasNode_GetNodeID::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortBaseCanvasNode.GetNodeStyleDataCopy
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x06D8 (0x06D8 - 0x0000)
 struct FortBaseCanvasNode_GetNodeStyleDataCopy final
 {
 public:
-	struct FFortNodeStyleData                     Style;                                             // 0x0000(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortNodeStyleData                     Style;                                             // 0x0000(0x06D0)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x06D0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6D1[0x7];                                      // 0x06D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortBaseCanvasNode_GetNodeStyleDataCopy) == 0x11821780, "Wrong alignment on FortBaseCanvasNode_GetNodeStyleDataCopy");
-static_assert(sizeof(FortBaseCanvasNode_GetNodeStyleDataCopy) == 0x11821780, "Wrong size on FortBaseCanvasNode_GetNodeStyleDataCopy");
+static_assert(alignof(FortBaseCanvasNode_GetNodeStyleDataCopy) == 0x000008, "Wrong alignment on FortBaseCanvasNode_GetNodeStyleDataCopy");
+static_assert(sizeof(FortBaseCanvasNode_GetNodeStyleDataCopy) == 0x0006D8, "Wrong size on FortBaseCanvasNode_GetNodeStyleDataCopy");
 static_assert(offsetof(FortBaseCanvasNode_GetNodeStyleDataCopy, Style) == 0x000000, "Member 'FortBaseCanvasNode_GetNodeStyleDataCopy::Style' has a wrong offset!");
 static_assert(offsetof(FortBaseCanvasNode_GetNodeStyleDataCopy, ReturnValue) == 0x0006D0, "Member 'FortBaseCanvasNode_GetNodeStyleDataCopy::ReturnValue' has a wrong offset!");
 
@@ -2552,18 +2552,18 @@ static_assert(offsetof(FortGlobalUIContext_GetMessageManager, bCreatedNew) == 0x
 static_assert(offsetof(FortGlobalUIContext_GetMessageManager, ReturnValue) == 0x000010, "Member 'FortGlobalUIContext_GetMessageManager::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.GetNextNotification
-// 0x11824600 (0x11824600 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct FortGlobalUIContext_GetNextNotification final
 {
 public:
 	EFortNotificationQueueType                    NotificationQueueType;                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription                 NotificationDescription;                           // 0x0010(0x11827900)(Parm, OutParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription                 NotificationDescription;                           // 0x0010(0x0170)(Parm, OutParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0180(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_181[0xF];                                      // 0x0181(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortGlobalUIContext_GetNextNotification) == 0x11824600, "Wrong alignment on FortGlobalUIContext_GetNextNotification");
-static_assert(sizeof(FortGlobalUIContext_GetNextNotification) == 0x11824600, "Wrong size on FortGlobalUIContext_GetNextNotification");
+static_assert(alignof(FortGlobalUIContext_GetNextNotification) == 0x000010, "Wrong alignment on FortGlobalUIContext_GetNextNotification");
+static_assert(sizeof(FortGlobalUIContext_GetNextNotification) == 0x000190, "Wrong size on FortGlobalUIContext_GetNextNotification");
 static_assert(offsetof(FortGlobalUIContext_GetNextNotification, NotificationQueueType) == 0x000000, "Member 'FortGlobalUIContext_GetNextNotification::NotificationQueueType' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_GetNextNotification, NotificationDescription) == 0x000010, "Member 'FortGlobalUIContext_GetNextNotification::NotificationDescription' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_GetNextNotification, ReturnValue) == 0x000180, "Member 'FortGlobalUIContext_GetNextNotification::ReturnValue' has a wrong offset!");
@@ -2685,31 +2685,32 @@ static_assert(sizeof(FortGlobalUIContext_OnLocalPlayerControllerConnectionChange
 static_assert(offsetof(FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature, bConnected) == 0x000000, "Member 'FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature::bConnected' has a wrong offset!");
 
 // DelegateFunction FortniteUI.FortGlobalUIContext.OnQueryFortBackendVersionDelegate__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature final
 {
 public:
-	struct FFortBackendVersion                    FortBackendVersion;                                // 0x0000(0x11821780)(Parm, NativeAccessSpecifierPublic)
+	struct FFortBackendVersion                    FortBackendVersion;                                // 0x0000(0x0098)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature) == 0x11821780, "Wrong alignment on FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature");
-static_assert(sizeof(FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature) == 0x11821780, "Wrong size on FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature");
+static_assert(alignof(FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature");
+static_assert(sizeof(FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature) == 0x000098, "Wrong size on FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature");
 static_assert(offsetof(FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature, FortBackendVersion) == 0x000000, "Member 'FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature::FortBackendVersion' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.ProcessConfirmationResult
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct FortGlobalUIContext_ProcessConfirmationResult final
 {
 public:
 	EFortDialogResult                             InResult;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   InResultName;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortDialogDescription_NUI             ConfirmationDescription;                           // 0x0010(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription_NUI             ConfirmationDescription;                           // 0x0010(0x0180)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          bWaitingForLatentAction;                           // 0x0190(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogExternalLatentActionHandle  WaitingDialogHandle;                               // 0x0194(0x11821780)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortDialogExternalLatentActionHandle  WaitingDialogHandle;                               // 0x0194(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_198[0x8];                                      // 0x0198(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortGlobalUIContext_ProcessConfirmationResult) == 0x1182E980, "Wrong alignment on FortGlobalUIContext_ProcessConfirmationResult");
-static_assert(sizeof(FortGlobalUIContext_ProcessConfirmationResult) == 0x1182E980, "Wrong size on FortGlobalUIContext_ProcessConfirmationResult");
+static_assert(alignof(FortGlobalUIContext_ProcessConfirmationResult) == 0x000010, "Wrong alignment on FortGlobalUIContext_ProcessConfirmationResult");
+static_assert(sizeof(FortGlobalUIContext_ProcessConfirmationResult) == 0x0001A0, "Wrong size on FortGlobalUIContext_ProcessConfirmationResult");
 static_assert(offsetof(FortGlobalUIContext_ProcessConfirmationResult, InResult) == 0x000000, "Member 'FortGlobalUIContext_ProcessConfirmationResult::InResult' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_ProcessConfirmationResult, InResultName) == 0x000008, "Member 'FortGlobalUIContext_ProcessConfirmationResult::InResultName' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_ProcessConfirmationResult, ConfirmationDescription) == 0x000010, "Member 'FortGlobalUIContext_ProcessConfirmationResult::ConfirmationDescription' has a wrong offset!");
@@ -2717,16 +2718,16 @@ static_assert(offsetof(FortGlobalUIContext_ProcessConfirmationResult, bWaitingFo
 static_assert(offsetof(FortGlobalUIContext_ProcessConfirmationResult, WaitingDialogHandle) == 0x000194, "Member 'FortGlobalUIContext_ProcessConfirmationResult::WaitingDialogHandle' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.ProcessNotificationResult
-// 0x11824600 (0x11824600 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct FortGlobalUIContext_ProcessNotificationResult final
 {
 public:
 	EFortDialogResult                             InResult;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription                 NotificationDescription;                           // 0x0010(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription                 NotificationDescription;                           // 0x0010(0x0170)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGlobalUIContext_ProcessNotificationResult) == 0x11824600, "Wrong alignment on FortGlobalUIContext_ProcessNotificationResult");
-static_assert(sizeof(FortGlobalUIContext_ProcessNotificationResult) == 0x11824600, "Wrong size on FortGlobalUIContext_ProcessNotificationResult");
+static_assert(alignof(FortGlobalUIContext_ProcessNotificationResult) == 0x000010, "Wrong alignment on FortGlobalUIContext_ProcessNotificationResult");
+static_assert(sizeof(FortGlobalUIContext_ProcessNotificationResult) == 0x000180, "Wrong size on FortGlobalUIContext_ProcessNotificationResult");
 static_assert(offsetof(FortGlobalUIContext_ProcessNotificationResult, InResult) == 0x000000, "Member 'FortGlobalUIContext_ProcessNotificationResult::InResult' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_ProcessNotificationResult, NotificationDescription) == 0x000010, "Member 'FortGlobalUIContext_ProcessNotificationResult::NotificationDescription' has a wrong offset!");
 
@@ -2767,16 +2768,16 @@ static_assert(offsetof(FortGlobalUIContext_RegisterToReceiveNotifications, Notif
 static_assert(offsetof(FortGlobalUIContext_RegisterToReceiveNotifications, InOnNotificationAvailable) == 0x000008, "Member 'FortGlobalUIContext_RegisterToReceiveNotifications::InOnNotificationAvailable' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.RemoveNotification
-// 0x11824600 (0x11824600 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct FortGlobalUIContext_RemoveNotification final
 {
 public:
 	EFortNotificationQueueType                    NotificationQueueType;                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription                 NotificationDescription;                           // 0x0010(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription                 NotificationDescription;                           // 0x0010(0x0170)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGlobalUIContext_RemoveNotification) == 0x11824600, "Wrong alignment on FortGlobalUIContext_RemoveNotification");
-static_assert(sizeof(FortGlobalUIContext_RemoveNotification) == 0x11824600, "Wrong size on FortGlobalUIContext_RemoveNotification");
+static_assert(alignof(FortGlobalUIContext_RemoveNotification) == 0x000010, "Wrong alignment on FortGlobalUIContext_RemoveNotification");
+static_assert(sizeof(FortGlobalUIContext_RemoveNotification) == 0x000180, "Wrong size on FortGlobalUIContext_RemoveNotification");
 static_assert(offsetof(FortGlobalUIContext_RemoveNotification, NotificationQueueType) == 0x000000, "Member 'FortGlobalUIContext_RemoveNotification::NotificationQueueType' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_RemoveNotification, NotificationDescription) == 0x000010, "Member 'FortGlobalUIContext_RemoveNotification::NotificationDescription' has a wrong offset!");
 
@@ -2941,14 +2942,14 @@ static_assert(sizeof(FortGlobalUIContext_UnregisterScriptedAction) == 0x000008, 
 static_assert(offsetof(FortGlobalUIContext_UnregisterScriptedAction, ScriptedAction) == 0x000000, "Member 'FortGlobalUIContext_UnregisterScriptedAction::ScriptedAction' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.UnregisterToReceiveNotifications
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x28) FortGlobalUIContext_UnregisterToReceiveNotifications final
+// 0x0001 (0x0001 - 0x0000)
+struct FortGlobalUIContext_UnregisterToReceiveNotifications final
 {
 public:
 	EFortNotificationQueueType                    NotificationQueueType;                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGlobalUIContext_UnregisterToReceiveNotifications) == 0x000028, "Wrong alignment on FortGlobalUIContext_UnregisterToReceiveNotifications");
-static_assert(sizeof(FortGlobalUIContext_UnregisterToReceiveNotifications) == 0x000028, "Wrong size on FortGlobalUIContext_UnregisterToReceiveNotifications");
+static_assert(alignof(FortGlobalUIContext_UnregisterToReceiveNotifications) == 0x000001, "Wrong alignment on FortGlobalUIContext_UnregisterToReceiveNotifications");
+static_assert(sizeof(FortGlobalUIContext_UnregisterToReceiveNotifications) == 0x000001, "Wrong size on FortGlobalUIContext_UnregisterToReceiveNotifications");
 static_assert(offsetof(FortGlobalUIContext_UnregisterToReceiveNotifications, NotificationQueueType) == 0x000000, "Member 'FortGlobalUIContext_UnregisterToReceiveNotifications::NotificationQueueType' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.AllowLogout
@@ -3105,17 +3106,17 @@ static_assert(sizeof(FortGlobalUIContext_GetFeedbackTitle) == 0x000018, "Wrong s
 static_assert(offsetof(FortGlobalUIContext_GetFeedbackTitle, ReturnValue) == 0x000000, "Member 'FortGlobalUIContext_GetFeedbackTitle::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.GetInputDetailsForAction
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortGlobalUIContext_GetInputDetailsForAction final
 {
 public:
 	class FName                                   Action;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortInputActionDetails                InputActionDetails;                                // 0x0008(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortInputActionDetails                InputActionDetails;                                // 0x0008(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortGlobalUIContext_GetInputDetailsForAction) == 0x1182E980, "Wrong alignment on FortGlobalUIContext_GetInputDetailsForAction");
-static_assert(sizeof(FortGlobalUIContext_GetInputDetailsForAction) == 0x1182E980, "Wrong size on FortGlobalUIContext_GetInputDetailsForAction");
+static_assert(alignof(FortGlobalUIContext_GetInputDetailsForAction) == 0x000008, "Wrong alignment on FortGlobalUIContext_GetInputDetailsForAction");
+static_assert(sizeof(FortGlobalUIContext_GetInputDetailsForAction) == 0x000030, "Wrong size on FortGlobalUIContext_GetInputDetailsForAction");
 static_assert(offsetof(FortGlobalUIContext_GetInputDetailsForAction, Action) == 0x000000, "Member 'FortGlobalUIContext_GetInputDetailsForAction::Action' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_GetInputDetailsForAction, InputActionDetails) == 0x000008, "Member 'FortGlobalUIContext_GetInputDetailsForAction::InputActionDetails' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_GetInputDetailsForAction, ReturnValue) == 0x000028, "Member 'FortGlobalUIContext_GetInputDetailsForAction::ReturnValue' has a wrong offset!");
@@ -3135,15 +3136,15 @@ static_assert(offsetof(FortGlobalUIContext_GetInputPriority, Priority) == 0x0000
 static_assert(offsetof(FortGlobalUIContext_GetInputPriority, ReturnValue) == 0x000004, "Member 'FortGlobalUIContext_GetInputPriority::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.GetKeyForAction
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortGlobalUIContext_GetKeyForAction final
 {
 public:
 	class FName                                   Action;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   ReturnValue;                                       // 0x0008(0x11821D80)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGlobalUIContext_GetKeyForAction) == 0x11821D80, "Wrong alignment on FortGlobalUIContext_GetKeyForAction");
-static_assert(sizeof(FortGlobalUIContext_GetKeyForAction) == 0x11821D80, "Wrong size on FortGlobalUIContext_GetKeyForAction");
+static_assert(alignof(FortGlobalUIContext_GetKeyForAction) == 0x000008, "Wrong alignment on FortGlobalUIContext_GetKeyForAction");
+static_assert(sizeof(FortGlobalUIContext_GetKeyForAction) == 0x000020, "Wrong size on FortGlobalUIContext_GetKeyForAction");
 static_assert(offsetof(FortGlobalUIContext_GetKeyForAction, Action) == 0x000000, "Member 'FortGlobalUIContext_GetKeyForAction::Action' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_GetKeyForAction, ReturnValue) == 0x000008, "Member 'FortGlobalUIContext_GetKeyForAction::ReturnValue' has a wrong offset!");
 
@@ -3166,25 +3167,25 @@ static_assert(offsetof(FortGlobalUIContext_GetKeyTextForAction, bUseAbbreviatedT
 static_assert(offsetof(FortGlobalUIContext_GetKeyTextForAction, ReturnValue) == 0x000028, "Member 'FortGlobalUIContext_GetKeyTextForAction::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.GetLastGameSummaryInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortGlobalUIContext_GetLastGameSummaryInfo final
 {
 public:
-	struct FGameSummaryInfo                       ReturnValue;                                       // 0x0000(0x1182E980)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FGameSummaryInfo                       ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGlobalUIContext_GetLastGameSummaryInfo) == 0x1182E980, "Wrong alignment on FortGlobalUIContext_GetLastGameSummaryInfo");
-static_assert(sizeof(FortGlobalUIContext_GetLastGameSummaryInfo) == 0x1182E980, "Wrong size on FortGlobalUIContext_GetLastGameSummaryInfo");
+static_assert(alignof(FortGlobalUIContext_GetLastGameSummaryInfo) == 0x000008, "Wrong alignment on FortGlobalUIContext_GetLastGameSummaryInfo");
+static_assert(sizeof(FortGlobalUIContext_GetLastGameSummaryInfo) == 0x000018, "Wrong size on FortGlobalUIContext_GetLastGameSummaryInfo");
 static_assert(offsetof(FortGlobalUIContext_GetLastGameSummaryInfo, ReturnValue) == 0x000000, "Member 'FortGlobalUIContext_GetLastGameSummaryInfo::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.GetLastMissionInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct FortGlobalUIContext_GetLastMissionInfo final
 {
 public:
-	struct FFortLastMissionInfo                   LastMissionInfo;                                   // 0x0000(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortLastMissionInfo                   LastMissionInfo;                                   // 0x0000(0x0048)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGlobalUIContext_GetLastMissionInfo) == 0x11821780, "Wrong alignment on FortGlobalUIContext_GetLastMissionInfo");
-static_assert(sizeof(FortGlobalUIContext_GetLastMissionInfo) == 0x11821780, "Wrong size on FortGlobalUIContext_GetLastMissionInfo");
+static_assert(alignof(FortGlobalUIContext_GetLastMissionInfo) == 0x000008, "Wrong alignment on FortGlobalUIContext_GetLastMissionInfo");
+static_assert(sizeof(FortGlobalUIContext_GetLastMissionInfo) == 0x000048, "Wrong size on FortGlobalUIContext_GetLastMissionInfo");
 static_assert(offsetof(FortGlobalUIContext_GetLastMissionInfo, LastMissionInfo) == 0x000000, "Member 'FortGlobalUIContext_GetLastMissionInfo::LastMissionInfo' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.GetPlatformDisplayName
@@ -3243,16 +3244,16 @@ static_assert(sizeof(FortGlobalUIContext_HasAccesstoMultipleSubGames) == 0x00000
 static_assert(offsetof(FortGlobalUIContext_HasAccesstoMultipleSubGames, ReturnValue) == 0x000000, "Member 'FortGlobalUIContext_HasAccesstoMultipleSubGames::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.HasCompletedOnboardingObjective
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortGlobalUIContext_HasCompletedOnboardingObjective final
 {
 public:
-	struct FDataTableRowHandle                    Objective;                                         // 0x0000(0x1182EB00)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                    Objective;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortGlobalUIContext_HasCompletedOnboardingObjective) == 0x1182EB00, "Wrong alignment on FortGlobalUIContext_HasCompletedOnboardingObjective");
-static_assert(sizeof(FortGlobalUIContext_HasCompletedOnboardingObjective) == 0x1182EB00, "Wrong size on FortGlobalUIContext_HasCompletedOnboardingObjective");
+static_assert(alignof(FortGlobalUIContext_HasCompletedOnboardingObjective) == 0x000008, "Wrong alignment on FortGlobalUIContext_HasCompletedOnboardingObjective");
+static_assert(sizeof(FortGlobalUIContext_HasCompletedOnboardingObjective) == 0x000018, "Wrong size on FortGlobalUIContext_HasCompletedOnboardingObjective");
 static_assert(offsetof(FortGlobalUIContext_HasCompletedOnboardingObjective, Objective) == 0x000000, "Member 'FortGlobalUIContext_HasCompletedOnboardingObjective::Objective' has a wrong offset!");
 static_assert(offsetof(FortGlobalUIContext_HasCompletedOnboardingObjective, ReturnValue) == 0x000010, "Member 'FortGlobalUIContext_HasCompletedOnboardingObjective::ReturnValue' has a wrong offset!");
 
@@ -3411,38 +3412,38 @@ static_assert(sizeof(FortAthenaTabsScreenBase_HandleFeatureNavigateRequest) == 0
 static_assert(offsetof(FortAthenaTabsScreenBase_HandleFeatureNavigateRequest, Feature) == 0x000000, "Member 'FortAthenaTabsScreenBase_HandleFeatureNavigateRequest::Feature' has a wrong offset!");
 
 // Function FortniteUI.FortAthenaTabsScreenBase.HandleFeatureStateChanged
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x18) FortAthenaTabsScreenBase_HandleFeatureStateChanged final
+// 0x0002 (0x0002 - 0x0000)
+struct FortAthenaTabsScreenBase_HandleFeatureStateChanged final
 {
 public:
 	EFortUIFeature                                ChangedFeature;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortUIFeatureState                           NewState;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAthenaTabsScreenBase_HandleFeatureStateChanged) == 0x000018, "Wrong alignment on FortAthenaTabsScreenBase_HandleFeatureStateChanged");
-static_assert(sizeof(FortAthenaTabsScreenBase_HandleFeatureStateChanged) == 0x000018, "Wrong size on FortAthenaTabsScreenBase_HandleFeatureStateChanged");
+static_assert(alignof(FortAthenaTabsScreenBase_HandleFeatureStateChanged) == 0x000001, "Wrong alignment on FortAthenaTabsScreenBase_HandleFeatureStateChanged");
+static_assert(sizeof(FortAthenaTabsScreenBase_HandleFeatureStateChanged) == 0x000002, "Wrong size on FortAthenaTabsScreenBase_HandleFeatureStateChanged");
 static_assert(offsetof(FortAthenaTabsScreenBase_HandleFeatureStateChanged, ChangedFeature) == 0x000000, "Member 'FortAthenaTabsScreenBase_HandleFeatureStateChanged::ChangedFeature' has a wrong offset!");
 static_assert(offsetof(FortAthenaTabsScreenBase_HandleFeatureStateChanged, NewState) == 0x000001, "Member 'FortAthenaTabsScreenBase_HandleFeatureStateChanged::NewState' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem_NUI.SetDisplayAttribute
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_NUI_SetDisplayAttribute final
 {
 public:
-	struct FFortDisplayAttribute                  InDisplayAttribute;                                // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  InDisplayAttribute;                                // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_NUI_SetDisplayAttribute) == 0x11821C00, "Wrong alignment on FortAttributeListItem_NUI_SetDisplayAttribute");
-static_assert(sizeof(FortAttributeListItem_NUI_SetDisplayAttribute) == 0x11821C00, "Wrong size on FortAttributeListItem_NUI_SetDisplayAttribute");
+static_assert(alignof(FortAttributeListItem_NUI_SetDisplayAttribute) == 0x000008, "Wrong alignment on FortAttributeListItem_NUI_SetDisplayAttribute");
+static_assert(sizeof(FortAttributeListItem_NUI_SetDisplayAttribute) == 0x000070, "Wrong size on FortAttributeListItem_NUI_SetDisplayAttribute");
 static_assert(offsetof(FortAttributeListItem_NUI_SetDisplayAttribute, InDisplayAttribute) == 0x000000, "Member 'FortAttributeListItem_NUI_SetDisplayAttribute::InDisplayAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem_NUI.SetPreviewAttribute
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_NUI_SetPreviewAttribute final
 {
 public:
-	struct FFortDisplayAttribute                  InPreviewAttribute;                                // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  InPreviewAttribute;                                // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_NUI_SetPreviewAttribute) == 0x11821C00, "Wrong alignment on FortAttributeListItem_NUI_SetPreviewAttribute");
-static_assert(sizeof(FortAttributeListItem_NUI_SetPreviewAttribute) == 0x11821C00, "Wrong size on FortAttributeListItem_NUI_SetPreviewAttribute");
+static_assert(alignof(FortAttributeListItem_NUI_SetPreviewAttribute) == 0x000008, "Wrong alignment on FortAttributeListItem_NUI_SetPreviewAttribute");
+static_assert(sizeof(FortAttributeListItem_NUI_SetPreviewAttribute) == 0x000070, "Wrong size on FortAttributeListItem_NUI_SetPreviewAttribute");
 static_assert(offsetof(FortAttributeListItem_NUI_SetPreviewAttribute, InPreviewAttribute) == 0x000000, "Member 'FortAttributeListItem_NUI_SetPreviewAttribute::InPreviewAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem_NUI.ValueChanged
@@ -3457,36 +3458,36 @@ static_assert(sizeof(FortAttributeListItem_NUI_ValueChanged) == 0x000004, "Wrong
 static_assert(offsetof(FortAttributeListItem_NUI_ValueChanged, Delta) == 0x000000, "Member 'FortAttributeListItem_NUI_ValueChanged::Delta' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem_NUI.GetCurrentAttributeCopy
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_NUI_GetCurrentAttributeCopy final
 {
 public:
-	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0000(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0000(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_NUI_GetCurrentAttributeCopy) == 0x11821C00, "Wrong alignment on FortAttributeListItem_NUI_GetCurrentAttributeCopy");
-static_assert(sizeof(FortAttributeListItem_NUI_GetCurrentAttributeCopy) == 0x11821C00, "Wrong size on FortAttributeListItem_NUI_GetCurrentAttributeCopy");
+static_assert(alignof(FortAttributeListItem_NUI_GetCurrentAttributeCopy) == 0x000008, "Wrong alignment on FortAttributeListItem_NUI_GetCurrentAttributeCopy");
+static_assert(sizeof(FortAttributeListItem_NUI_GetCurrentAttributeCopy) == 0x000070, "Wrong size on FortAttributeListItem_NUI_GetCurrentAttributeCopy");
 static_assert(offsetof(FortAttributeListItem_NUI_GetCurrentAttributeCopy, OutDisplayAttribute) == 0x000000, "Member 'FortAttributeListItem_NUI_GetCurrentAttributeCopy::OutDisplayAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem_NUI.GetDisplayAttributeCopy
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_NUI_GetDisplayAttributeCopy final
 {
 public:
-	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0000(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0000(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_NUI_GetDisplayAttributeCopy) == 0x11821C00, "Wrong alignment on FortAttributeListItem_NUI_GetDisplayAttributeCopy");
-static_assert(sizeof(FortAttributeListItem_NUI_GetDisplayAttributeCopy) == 0x11821C00, "Wrong size on FortAttributeListItem_NUI_GetDisplayAttributeCopy");
+static_assert(alignof(FortAttributeListItem_NUI_GetDisplayAttributeCopy) == 0x000008, "Wrong alignment on FortAttributeListItem_NUI_GetDisplayAttributeCopy");
+static_assert(sizeof(FortAttributeListItem_NUI_GetDisplayAttributeCopy) == 0x000070, "Wrong size on FortAttributeListItem_NUI_GetDisplayAttributeCopy");
 static_assert(offsetof(FortAttributeListItem_NUI_GetDisplayAttributeCopy, OutDisplayAttribute) == 0x000000, "Member 'FortAttributeListItem_NUI_GetDisplayAttributeCopy::OutDisplayAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem_NUI.GetDisplayPreviewCopy
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_NUI_GetDisplayPreviewCopy final
 {
 public:
-	struct FFortDisplayAttribute                  OutPreviewAttribute;                               // 0x0000(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  OutPreviewAttribute;                               // 0x0000(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_NUI_GetDisplayPreviewCopy) == 0x11821C00, "Wrong alignment on FortAttributeListItem_NUI_GetDisplayPreviewCopy");
-static_assert(sizeof(FortAttributeListItem_NUI_GetDisplayPreviewCopy) == 0x11821C00, "Wrong size on FortAttributeListItem_NUI_GetDisplayPreviewCopy");
+static_assert(alignof(FortAttributeListItem_NUI_GetDisplayPreviewCopy) == 0x000008, "Wrong alignment on FortAttributeListItem_NUI_GetDisplayPreviewCopy");
+static_assert(sizeof(FortAttributeListItem_NUI_GetDisplayPreviewCopy) == 0x000070, "Wrong size on FortAttributeListItem_NUI_GetDisplayPreviewCopy");
 static_assert(offsetof(FortAttributeListItem_NUI_GetDisplayPreviewCopy, OutPreviewAttribute) == 0x000000, "Member 'FortAttributeListItem_NUI_GetDisplayPreviewCopy::OutPreviewAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeList_NUI.OnAddShownAttributeListItem
@@ -3537,30 +3538,30 @@ static_assert(sizeof(FortAttributeList_NUI_SetPreviewData) == 0x000010, "Wrong s
 static_assert(offsetof(FortAttributeList_NUI_SetPreviewData, Data) == 0x000000, "Member 'FortAttributeList_NUI_SetPreviewData::Data' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem.SetDisplayAttribute
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct FortAttributeListItem_SetDisplayAttribute final
 {
 public:
-	struct FFortDisplayAttribute                  InDisplayAttribute;                                // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FFortDisplayAttribute                  DeltaAttribute;                                    // 0x0070(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  InDisplayAttribute;                                // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  DeltaAttribute;                                    // 0x0070(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00E0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortAttributeListItem_SetDisplayAttribute) == 0x11821C00, "Wrong alignment on FortAttributeListItem_SetDisplayAttribute");
-static_assert(sizeof(FortAttributeListItem_SetDisplayAttribute) == 0x11821C00, "Wrong size on FortAttributeListItem_SetDisplayAttribute");
+static_assert(alignof(FortAttributeListItem_SetDisplayAttribute) == 0x000008, "Wrong alignment on FortAttributeListItem_SetDisplayAttribute");
+static_assert(sizeof(FortAttributeListItem_SetDisplayAttribute) == 0x0000E8, "Wrong size on FortAttributeListItem_SetDisplayAttribute");
 static_assert(offsetof(FortAttributeListItem_SetDisplayAttribute, InDisplayAttribute) == 0x000000, "Member 'FortAttributeListItem_SetDisplayAttribute::InDisplayAttribute' has a wrong offset!");
 static_assert(offsetof(FortAttributeListItem_SetDisplayAttribute, DeltaAttribute) == 0x000070, "Member 'FortAttributeListItem_SetDisplayAttribute::DeltaAttribute' has a wrong offset!");
 static_assert(offsetof(FortAttributeListItem_SetDisplayAttribute, ReturnValue) == 0x0000E0, "Member 'FortAttributeListItem_SetDisplayAttribute::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem.SetPreviewAttribute
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_SetPreviewAttribute final
 {
 public:
-	struct FFortDisplayAttribute                  InPreviewAttribute;                                // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  InPreviewAttribute;                                // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_SetPreviewAttribute) == 0x11821C00, "Wrong alignment on FortAttributeListItem_SetPreviewAttribute");
-static_assert(sizeof(FortAttributeListItem_SetPreviewAttribute) == 0x11821C00, "Wrong size on FortAttributeListItem_SetPreviewAttribute");
+static_assert(alignof(FortAttributeListItem_SetPreviewAttribute) == 0x000008, "Wrong alignment on FortAttributeListItem_SetPreviewAttribute");
+static_assert(sizeof(FortAttributeListItem_SetPreviewAttribute) == 0x000070, "Wrong size on FortAttributeListItem_SetPreviewAttribute");
 static_assert(offsetof(FortAttributeListItem_SetPreviewAttribute, InPreviewAttribute) == 0x000000, "Member 'FortAttributeListItem_SetPreviewAttribute::InPreviewAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem.ValueChanged
@@ -3575,36 +3576,36 @@ static_assert(sizeof(FortAttributeListItem_ValueChanged) == 0x000004, "Wrong siz
 static_assert(offsetof(FortAttributeListItem_ValueChanged, Delta) == 0x000000, "Member 'FortAttributeListItem_ValueChanged::Delta' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem.GetCurrentAttributeCopy
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_GetCurrentAttributeCopy final
 {
 public:
-	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0000(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0000(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_GetCurrentAttributeCopy) == 0x11821C00, "Wrong alignment on FortAttributeListItem_GetCurrentAttributeCopy");
-static_assert(sizeof(FortAttributeListItem_GetCurrentAttributeCopy) == 0x11821C00, "Wrong size on FortAttributeListItem_GetCurrentAttributeCopy");
+static_assert(alignof(FortAttributeListItem_GetCurrentAttributeCopy) == 0x000008, "Wrong alignment on FortAttributeListItem_GetCurrentAttributeCopy");
+static_assert(sizeof(FortAttributeListItem_GetCurrentAttributeCopy) == 0x000070, "Wrong size on FortAttributeListItem_GetCurrentAttributeCopy");
 static_assert(offsetof(FortAttributeListItem_GetCurrentAttributeCopy, OutDisplayAttribute) == 0x000000, "Member 'FortAttributeListItem_GetCurrentAttributeCopy::OutDisplayAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem.GetDisplayAttributeCopy
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_GetDisplayAttributeCopy final
 {
 public:
-	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0000(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0000(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_GetDisplayAttributeCopy) == 0x11821C00, "Wrong alignment on FortAttributeListItem_GetDisplayAttributeCopy");
-static_assert(sizeof(FortAttributeListItem_GetDisplayAttributeCopy) == 0x11821C00, "Wrong size on FortAttributeListItem_GetDisplayAttributeCopy");
+static_assert(alignof(FortAttributeListItem_GetDisplayAttributeCopy) == 0x000008, "Wrong alignment on FortAttributeListItem_GetDisplayAttributeCopy");
+static_assert(sizeof(FortAttributeListItem_GetDisplayAttributeCopy) == 0x000070, "Wrong size on FortAttributeListItem_GetDisplayAttributeCopy");
 static_assert(offsetof(FortAttributeListItem_GetDisplayAttributeCopy, OutDisplayAttribute) == 0x000000, "Member 'FortAttributeListItem_GetDisplayAttributeCopy::OutDisplayAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeListItem.GetDisplayPreviewCopy
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortAttributeListItem_GetDisplayPreviewCopy final
 {
 public:
-	struct FFortDisplayAttribute                  OutPreviewAttribute;                               // 0x0000(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  OutPreviewAttribute;                               // 0x0000(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAttributeListItem_GetDisplayPreviewCopy) == 0x11821C00, "Wrong alignment on FortAttributeListItem_GetDisplayPreviewCopy");
-static_assert(sizeof(FortAttributeListItem_GetDisplayPreviewCopy) == 0x11821C00, "Wrong size on FortAttributeListItem_GetDisplayPreviewCopy");
+static_assert(alignof(FortAttributeListItem_GetDisplayPreviewCopy) == 0x000008, "Wrong alignment on FortAttributeListItem_GetDisplayPreviewCopy");
+static_assert(sizeof(FortAttributeListItem_GetDisplayPreviewCopy) == 0x000070, "Wrong size on FortAttributeListItem_GetDisplayPreviewCopy");
 static_assert(offsetof(FortAttributeListItem_GetDisplayPreviewCopy, OutPreviewAttribute) == 0x000000, "Member 'FortAttributeListItem_GetDisplayPreviewCopy::OutPreviewAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortBangWrapper_NUI.OnBangStateChanged
@@ -3694,92 +3695,92 @@ static_assert(sizeof(FortBorderStyleList_GetBorderStyles) == 0x000010, "Wrong si
 static_assert(offsetof(FortBorderStyleList_GetBorderStyles, ReturnValue) == 0x000000, "Member 'FortBorderStyleList_GetBorderStyles::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortButtonStyle.GetBrushBySizeFromMultiSizeBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x03F8 (0x03F8 - 0x0000)
 struct FortButtonStyle_GetBrushBySizeFromMultiSizeBrush final
 {
 public:
-	struct FFortMultiSizeBrush                    MultiSizeBrush;                                    // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    MultiSizeBrush;                                    // 0x0000(0x0360)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EFortBrushSize                                Size;                                              // 0x0360(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_361[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            ReturnValue;                                       // 0x0368(0x322CBBB8)(ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ReturnValue;                                       // 0x0368(0x0090)(ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortButtonStyle_GetBrushBySizeFromMultiSizeBrush) == 0x11827900, "Wrong alignment on FortButtonStyle_GetBrushBySizeFromMultiSizeBrush");
-static_assert(sizeof(FortButtonStyle_GetBrushBySizeFromMultiSizeBrush) == 0x11827900, "Wrong size on FortButtonStyle_GetBrushBySizeFromMultiSizeBrush");
+static_assert(alignof(FortButtonStyle_GetBrushBySizeFromMultiSizeBrush) == 0x000008, "Wrong alignment on FortButtonStyle_GetBrushBySizeFromMultiSizeBrush");
+static_assert(sizeof(FortButtonStyle_GetBrushBySizeFromMultiSizeBrush) == 0x0003F8, "Wrong size on FortButtonStyle_GetBrushBySizeFromMultiSizeBrush");
 static_assert(offsetof(FortButtonStyle_GetBrushBySizeFromMultiSizeBrush, MultiSizeBrush) == 0x000000, "Member 'FortButtonStyle_GetBrushBySizeFromMultiSizeBrush::MultiSizeBrush' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetBrushBySizeFromMultiSizeBrush, Size) == 0x000360, "Member 'FortButtonStyle_GetBrushBySizeFromMultiSizeBrush::Size' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetBrushBySizeFromMultiSizeBrush, ReturnValue) == 0x000368, "Member 'FortButtonStyle_GetBrushBySizeFromMultiSizeBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortButtonStyle.GetFontBySizeFromMultiSizeFont
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x02E0 (0x02E0 - 0x0000)
 struct FortButtonStyle_GetFontBySizeFromMultiSizeFont final
 {
 public:
-	struct FFortMultiSizeFont                     MultiSizeFont;                                     // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeFont                     MultiSizeFont;                                     // 0x0000(0x0270)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EFortBrushSize                                Size;                                              // 0x0270(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         ReturnValue;                                       // 0x0278(0x11827900)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         ReturnValue;                                       // 0x0278(0x0068)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortButtonStyle_GetFontBySizeFromMultiSizeFont) == 0x11827900, "Wrong alignment on FortButtonStyle_GetFontBySizeFromMultiSizeFont");
-static_assert(sizeof(FortButtonStyle_GetFontBySizeFromMultiSizeFont) == 0x11827900, "Wrong size on FortButtonStyle_GetFontBySizeFromMultiSizeFont");
+static_assert(alignof(FortButtonStyle_GetFontBySizeFromMultiSizeFont) == 0x000008, "Wrong alignment on FortButtonStyle_GetFontBySizeFromMultiSizeFont");
+static_assert(sizeof(FortButtonStyle_GetFontBySizeFromMultiSizeFont) == 0x0002E0, "Wrong size on FortButtonStyle_GetFontBySizeFromMultiSizeFont");
 static_assert(offsetof(FortButtonStyle_GetFontBySizeFromMultiSizeFont, MultiSizeFont) == 0x000000, "Member 'FortButtonStyle_GetFontBySizeFromMultiSizeFont::MultiSizeFont' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetFontBySizeFromMultiSizeFont, Size) == 0x000270, "Member 'FortButtonStyle_GetFontBySizeFromMultiSizeFont::Size' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetFontBySizeFromMultiSizeFont, ReturnValue) == 0x000278, "Member 'FortButtonStyle_GetFontBySizeFromMultiSizeFont::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortButtonStyle.GetMarginBySizeFromMultiSizeMargin
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0074 (0x0074 - 0x0000)
 struct FortButtonStyle_GetMarginBySizeFromMultiSizeMargin final
 {
 public:
-	struct FFortMultiSizeMargin                   MultiSizeMargin;                                   // 0x0000(0x322CBBB8)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeMargin                   MultiSizeMargin;                                   // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	EFortBrushSize                                Size;                                              // 0x0060(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                ReturnValue;                                       // 0x0064(0x322CBBB8)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ReturnValue;                                       // 0x0064(0x0010)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortButtonStyle_GetMarginBySizeFromMultiSizeMargin) == 0x322CBBB8, "Wrong alignment on FortButtonStyle_GetMarginBySizeFromMultiSizeMargin");
-static_assert(sizeof(FortButtonStyle_GetMarginBySizeFromMultiSizeMargin) == 0x322CBBB8, "Wrong size on FortButtonStyle_GetMarginBySizeFromMultiSizeMargin");
+static_assert(alignof(FortButtonStyle_GetMarginBySizeFromMultiSizeMargin) == 0x000004, "Wrong alignment on FortButtonStyle_GetMarginBySizeFromMultiSizeMargin");
+static_assert(sizeof(FortButtonStyle_GetMarginBySizeFromMultiSizeMargin) == 0x000074, "Wrong size on FortButtonStyle_GetMarginBySizeFromMultiSizeMargin");
 static_assert(offsetof(FortButtonStyle_GetMarginBySizeFromMultiSizeMargin, MultiSizeMargin) == 0x000000, "Member 'FortButtonStyle_GetMarginBySizeFromMultiSizeMargin::MultiSizeMargin' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetMarginBySizeFromMultiSizeMargin, Size) == 0x000060, "Member 'FortButtonStyle_GetMarginBySizeFromMultiSizeMargin::Size' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetMarginBySizeFromMultiSizeMargin, ReturnValue) == 0x000064, "Member 'FortButtonStyle_GetMarginBySizeFromMultiSizeMargin::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortButtonStyle.GetButtonPaddingBySize
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct FortButtonStyle_GetButtonPaddingBySize final
 {
 public:
 	EFortBrushSize                                Size;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                ReturnValue;                                       // 0x0004(0x322CBBB8)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ReturnValue;                                       // 0x0004(0x0010)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortButtonStyle_GetButtonPaddingBySize) == 0x322CBBB8, "Wrong alignment on FortButtonStyle_GetButtonPaddingBySize");
-static_assert(sizeof(FortButtonStyle_GetButtonPaddingBySize) == 0x322CBBB8, "Wrong size on FortButtonStyle_GetButtonPaddingBySize");
+static_assert(alignof(FortButtonStyle_GetButtonPaddingBySize) == 0x000004, "Wrong alignment on FortButtonStyle_GetButtonPaddingBySize");
+static_assert(sizeof(FortButtonStyle_GetButtonPaddingBySize) == 0x000014, "Wrong size on FortButtonStyle_GetButtonPaddingBySize");
 static_assert(offsetof(FortButtonStyle_GetButtonPaddingBySize, Size) == 0x000000, "Member 'FortButtonStyle_GetButtonPaddingBySize::Size' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetButtonPaddingBySize, ReturnValue) == 0x000004, "Member 'FortButtonStyle_GetButtonPaddingBySize::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortButtonStyle.GetCustomPaddingBySize
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct FortButtonStyle_GetCustomPaddingBySize final
 {
 public:
 	EFortBrushSize                                Size;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                ReturnValue;                                       // 0x0004(0x322CBBB8)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ReturnValue;                                       // 0x0004(0x0010)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortButtonStyle_GetCustomPaddingBySize) == 0x322CBBB8, "Wrong alignment on FortButtonStyle_GetCustomPaddingBySize");
-static_assert(sizeof(FortButtonStyle_GetCustomPaddingBySize) == 0x322CBBB8, "Wrong size on FortButtonStyle_GetCustomPaddingBySize");
+static_assert(alignof(FortButtonStyle_GetCustomPaddingBySize) == 0x000004, "Wrong alignment on FortButtonStyle_GetCustomPaddingBySize");
+static_assert(sizeof(FortButtonStyle_GetCustomPaddingBySize) == 0x000014, "Wrong size on FortButtonStyle_GetCustomPaddingBySize");
 static_assert(offsetof(FortButtonStyle_GetCustomPaddingBySize, Size) == 0x000000, "Member 'FortButtonStyle_GetCustomPaddingBySize::Size' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetCustomPaddingBySize, ReturnValue) == 0x000004, "Member 'FortButtonStyle_GetCustomPaddingBySize::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortButtonStyle.GetFontBySize
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortButtonStyle_GetFontBySize final
 {
 public:
 	EFortBrushSize                                Size;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         ReturnValue;                                       // 0x0008(0x11827900)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         ReturnValue;                                       // 0x0008(0x0068)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortButtonStyle_GetFontBySize) == 0x11827900, "Wrong alignment on FortButtonStyle_GetFontBySize");
-static_assert(sizeof(FortButtonStyle_GetFontBySize) == 0x11827900, "Wrong size on FortButtonStyle_GetFontBySize");
+static_assert(alignof(FortButtonStyle_GetFontBySize) == 0x000008, "Wrong alignment on FortButtonStyle_GetFontBySize");
+static_assert(sizeof(FortButtonStyle_GetFontBySize) == 0x000070, "Wrong size on FortButtonStyle_GetFontBySize");
 static_assert(offsetof(FortButtonStyle_GetFontBySize, Size) == 0x000000, "Member 'FortButtonStyle_GetFontBySize::Size' has a wrong offset!");
 static_assert(offsetof(FortButtonStyle_GetFontBySize, ReturnValue) == 0x000008, "Member 'FortButtonStyle_GetFontBySize::ReturnValue' has a wrong offset!");
 
@@ -3883,47 +3884,47 @@ static_assert(sizeof(FortBaseButton_SetStyle) == 0x000008, "Wrong size on FortBa
 static_assert(offsetof(FortBaseButton_SetStyle, InStyle) == 0x000000, "Member 'FortBaseButton_SetStyle::InStyle' has a wrong offset!");
 
 // Function FortniteUI.FortBaseButton.GetCurrentButtonPadding
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortBaseButton_GetCurrentButtonPadding final
 {
 public:
-	struct FMargin                                ReturnValue;                                       // 0x0000(0x322CBBB8)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortBaseButton_GetCurrentButtonPadding) == 0x322CBBB8, "Wrong alignment on FortBaseButton_GetCurrentButtonPadding");
-static_assert(sizeof(FortBaseButton_GetCurrentButtonPadding) == 0x322CBBB8, "Wrong size on FortBaseButton_GetCurrentButtonPadding");
+static_assert(alignof(FortBaseButton_GetCurrentButtonPadding) == 0x000004, "Wrong alignment on FortBaseButton_GetCurrentButtonPadding");
+static_assert(sizeof(FortBaseButton_GetCurrentButtonPadding) == 0x000010, "Wrong size on FortBaseButton_GetCurrentButtonPadding");
 static_assert(offsetof(FortBaseButton_GetCurrentButtonPadding, ReturnValue) == 0x000000, "Member 'FortBaseButton_GetCurrentButtonPadding::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortBaseButton.GetCurrentCustomPadding
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortBaseButton_GetCurrentCustomPadding final
 {
 public:
-	struct FMargin                                ReturnValue;                                       // 0x0000(0x322CBBB8)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortBaseButton_GetCurrentCustomPadding) == 0x322CBBB8, "Wrong alignment on FortBaseButton_GetCurrentCustomPadding");
-static_assert(sizeof(FortBaseButton_GetCurrentCustomPadding) == 0x322CBBB8, "Wrong size on FortBaseButton_GetCurrentCustomPadding");
+static_assert(alignof(FortBaseButton_GetCurrentCustomPadding) == 0x000004, "Wrong alignment on FortBaseButton_GetCurrentCustomPadding");
+static_assert(sizeof(FortBaseButton_GetCurrentCustomPadding) == 0x000010, "Wrong size on FortBaseButton_GetCurrentCustomPadding");
 static_assert(offsetof(FortBaseButton_GetCurrentCustomPadding, ReturnValue) == 0x000000, "Member 'FortBaseButton_GetCurrentCustomPadding::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortBaseButton.GetCurrentFont
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct FortBaseButton_GetCurrentFont final
 {
 public:
-	struct FSlateFontInfo                         ReturnValue;                                       // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         ReturnValue;                                       // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortBaseButton_GetCurrentFont) == 0x11827900, "Wrong alignment on FortBaseButton_GetCurrentFont");
-static_assert(sizeof(FortBaseButton_GetCurrentFont) == 0x11827900, "Wrong size on FortBaseButton_GetCurrentFont");
+static_assert(alignof(FortBaseButton_GetCurrentFont) == 0x000008, "Wrong alignment on FortBaseButton_GetCurrentFont");
+static_assert(sizeof(FortBaseButton_GetCurrentFont) == 0x000068, "Wrong size on FortBaseButton_GetCurrentFont");
 static_assert(offsetof(FortBaseButton_GetCurrentFont, ReturnValue) == 0x000000, "Member 'FortBaseButton_GetCurrentFont::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortBaseButton.GetCurrentStateStyle
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0380 (0x0380 - 0x0000)
 struct FortBaseButton_GetCurrentStateStyle final
 {
 public:
-	struct FFortStateStyle                        ReturnValue;                                       // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FFortStateStyle                        ReturnValue;                                       // 0x0000(0x0380)(ConstParm, Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortBaseButton_GetCurrentStateStyle) == 0x1182E980, "Wrong alignment on FortBaseButton_GetCurrentStateStyle");
-static_assert(sizeof(FortBaseButton_GetCurrentStateStyle) == 0x1182E980, "Wrong size on FortBaseButton_GetCurrentStateStyle");
+static_assert(alignof(FortBaseButton_GetCurrentStateStyle) == 0x000008, "Wrong alignment on FortBaseButton_GetCurrentStateStyle");
+static_assert(sizeof(FortBaseButton_GetCurrentStateStyle) == 0x000380, "Wrong size on FortBaseButton_GetCurrentStateStyle");
 static_assert(offsetof(FortBaseButton_GetCurrentStateStyle, ReturnValue) == 0x000000, "Member 'FortBaseButton_GetCurrentStateStyle::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortBaseButton.GetSelected
@@ -3949,14 +3950,14 @@ static_assert(sizeof(FortBaseButton_GetStyle) == 0x000008, "Wrong size on FortBa
 static_assert(offsetof(FortBaseButton_GetStyle, ReturnValue) == 0x000000, "Member 'FortBaseButton_GetStyle::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortChatWidget.SetControllerActionBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortChatWidget_SetControllerActionBrush final
 {
 public:
-	struct FSlateBrush                            SlateBrush;                                        // 0x0000(0x322CBBB8)(Parm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SlateBrush;                                        // 0x0000(0x0090)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortChatWidget_SetControllerActionBrush) == 0x11827900, "Wrong alignment on FortChatWidget_SetControllerActionBrush");
-static_assert(sizeof(FortChatWidget_SetControllerActionBrush) == 0x11827900, "Wrong size on FortChatWidget_SetControllerActionBrush");
+static_assert(alignof(FortChatWidget_SetControllerActionBrush) == 0x000008, "Wrong alignment on FortChatWidget_SetControllerActionBrush");
+static_assert(sizeof(FortChatWidget_SetControllerActionBrush) == 0x000090, "Wrong size on FortChatWidget_SetControllerActionBrush");
 static_assert(offsetof(FortChatWidget_SetControllerActionBrush, SlateBrush) == 0x000000, "Member 'FortChatWidget_SetControllerActionBrush::SlateBrush' has a wrong offset!");
 
 // Function FortniteUI.FortCheatMenuFactory.AddGrantCheatMenu
@@ -4008,14 +4009,14 @@ static_assert(sizeof(FortCollectionBookGenericRewardWidget_SetCurrentItemToDispl
 static_assert(offsetof(FortCollectionBookGenericRewardWidget_SetCurrentItemToDisplay, ItemToDisplay) == 0x000000, "Member 'FortCollectionBookGenericRewardWidget_SetCurrentItemToDisplay::ItemToDisplay' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookGenericRewardWidget.SetRewards
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortCollectionBookGenericRewardWidget_SetRewards final
 {
 public:
-	struct FFortRewardInfo                        Rewards;                                           // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortRewardInfo                        Rewards;                                           // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortCollectionBookGenericRewardWidget_SetRewards) == 0x11821780, "Wrong alignment on FortCollectionBookGenericRewardWidget_SetRewards");
-static_assert(sizeof(FortCollectionBookGenericRewardWidget_SetRewards) == 0x11821780, "Wrong size on FortCollectionBookGenericRewardWidget_SetRewards");
+static_assert(alignof(FortCollectionBookGenericRewardWidget_SetRewards) == 0x000008, "Wrong alignment on FortCollectionBookGenericRewardWidget_SetRewards");
+static_assert(sizeof(FortCollectionBookGenericRewardWidget_SetRewards) == 0x000030, "Wrong size on FortCollectionBookGenericRewardWidget_SetRewards");
 static_assert(offsetof(FortCollectionBookGenericRewardWidget_SetRewards, Rewards) == 0x000000, "Member 'FortCollectionBookGenericRewardWidget_SetRewards::Rewards' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookGenericRewardWidget.SetRewardStatus
@@ -4098,14 +4099,14 @@ static_assert(offsetof(FortItemCardBase_PortBrushSize, BrushSize) == 0x000000, "
 static_assert(offsetof(FortItemCardBase_PortBrushSize, ReturnValue) == 0x000001, "Member 'FortItemCardBase_PortBrushSize::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortRewardInfoButton.SetItemInstanceQuantityPair
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortRewardInfoButton_SetItemInstanceQuantityPair final
 {
 public:
-	struct FFortItemInstanceQuantityPair          ItemQuantityPair;                                  // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemInstanceQuantityPair          ItemQuantityPair;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortRewardInfoButton_SetItemInstanceQuantityPair) == 0x11821D80, "Wrong alignment on FortRewardInfoButton_SetItemInstanceQuantityPair");
-static_assert(sizeof(FortRewardInfoButton_SetItemInstanceQuantityPair) == 0x11821D80, "Wrong size on FortRewardInfoButton_SetItemInstanceQuantityPair");
+static_assert(alignof(FortRewardInfoButton_SetItemInstanceQuantityPair) == 0x000008, "Wrong alignment on FortRewardInfoButton_SetItemInstanceQuantityPair");
+static_assert(sizeof(FortRewardInfoButton_SetItemInstanceQuantityPair) == 0x000010, "Wrong size on FortRewardInfoButton_SetItemInstanceQuantityPair");
 static_assert(offsetof(FortRewardInfoButton_SetItemInstanceQuantityPair, ItemQuantityPair) == 0x000000, "Member 'FortRewardInfoButton_SetItemInstanceQuantityPair::ItemQuantityPair' has a wrong offset!");
 
 // Function FortniteUI.FortRewardInfoButton.SetShowDescription
@@ -4164,14 +4165,14 @@ static_assert(sizeof(FortRewardInfoWidget_SetButtonGroup) == 0x000008, "Wrong si
 static_assert(offsetof(FortRewardInfoWidget_SetButtonGroup, InButtonGroup) == 0x000000, "Member 'FortRewardInfoWidget_SetButtonGroup::InButtonGroup' has a wrong offset!");
 
 // Function FortniteUI.FortRewardInfoWidget.SetReward
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortRewardInfoWidget_SetReward final
 {
 public:
-	struct FFortRewardInfo                        RewardsIn;                                         // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortRewardInfo                        RewardsIn;                                         // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortRewardInfoWidget_SetReward) == 0x11821780, "Wrong alignment on FortRewardInfoWidget_SetReward");
-static_assert(sizeof(FortRewardInfoWidget_SetReward) == 0x11821780, "Wrong size on FortRewardInfoWidget_SetReward");
+static_assert(alignof(FortRewardInfoWidget_SetReward) == 0x000008, "Wrong alignment on FortRewardInfoWidget_SetReward");
+static_assert(sizeof(FortRewardInfoWidget_SetReward) == 0x000030, "Wrong size on FortRewardInfoWidget_SetReward");
 static_assert(offsetof(FortRewardInfoWidget_SetReward, RewardsIn) == 0x000000, "Member 'FortRewardInfoWidget_SetReward::RewardsIn' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookSectionCompletionRewardWidget.HandleRewardDetailsModalWidgetDeactivated
@@ -4513,14 +4514,14 @@ static_assert(offsetof(FortCollectionBookProgressWidget_OnSlottedItemOperationCo
 static_assert(offsetof(FortCollectionBookProgressWidget_OnSlottedItemOperationComplete, SlotId) == 0x000008, "Member 'FortCollectionBookProgressWidget_OnSlottedItemOperationComplete::SlotId' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasSlot.SetPosition
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FortSkillTreeCanvasSlot_SetPosition final
 {
 public:
-	struct FVector2D                              InPosition;                                        // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSkillTreeCanvasSlot_SetPosition) == 0x11821300, "Wrong alignment on FortSkillTreeCanvasSlot_SetPosition");
-static_assert(sizeof(FortSkillTreeCanvasSlot_SetPosition) == 0x11821300, "Wrong size on FortSkillTreeCanvasSlot_SetPosition");
+static_assert(alignof(FortSkillTreeCanvasSlot_SetPosition) == 0x000004, "Wrong alignment on FortSkillTreeCanvasSlot_SetPosition");
+static_assert(sizeof(FortSkillTreeCanvasSlot_SetPosition) == 0x000008, "Wrong size on FortSkillTreeCanvasSlot_SetPosition");
 static_assert(offsetof(FortSkillTreeCanvasSlot_SetPosition, InPosition) == 0x000000, "Member 'FortSkillTreeCanvasSlot_SetPosition::InPosition' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasSlot.SetZOrder
@@ -4535,25 +4536,25 @@ static_assert(sizeof(FortSkillTreeCanvasSlot_SetZOrder) == 0x000004, "Wrong size
 static_assert(offsetof(FortSkillTreeCanvasSlot_SetZOrder, InZOrder) == 0x000000, "Member 'FortSkillTreeCanvasSlot_SetZOrder::InZOrder' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasSlot.GetBasePosition
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FortSkillTreeCanvasSlot_GetBasePosition final
 {
 public:
-	struct FVector2D                              ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSkillTreeCanvasSlot_GetBasePosition) == 0x11821300, "Wrong alignment on FortSkillTreeCanvasSlot_GetBasePosition");
-static_assert(sizeof(FortSkillTreeCanvasSlot_GetBasePosition) == 0x11821300, "Wrong size on FortSkillTreeCanvasSlot_GetBasePosition");
+static_assert(alignof(FortSkillTreeCanvasSlot_GetBasePosition) == 0x000004, "Wrong alignment on FortSkillTreeCanvasSlot_GetBasePosition");
+static_assert(sizeof(FortSkillTreeCanvasSlot_GetBasePosition) == 0x000008, "Wrong size on FortSkillTreeCanvasSlot_GetBasePosition");
 static_assert(offsetof(FortSkillTreeCanvasSlot_GetBasePosition, ReturnValue) == 0x000000, "Member 'FortSkillTreeCanvasSlot_GetBasePosition::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasSlot.GetPosition
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FortSkillTreeCanvasSlot_GetPosition final
 {
 public:
-	struct FVector2D                              ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSkillTreeCanvasSlot_GetPosition) == 0x11821300, "Wrong alignment on FortSkillTreeCanvasSlot_GetPosition");
-static_assert(sizeof(FortSkillTreeCanvasSlot_GetPosition) == 0x11821300, "Wrong size on FortSkillTreeCanvasSlot_GetPosition");
+static_assert(alignof(FortSkillTreeCanvasSlot_GetPosition) == 0x000004, "Wrong alignment on FortSkillTreeCanvasSlot_GetPosition");
+static_assert(sizeof(FortSkillTreeCanvasSlot_GetPosition) == 0x000008, "Wrong size on FortSkillTreeCanvasSlot_GetPosition");
 static_assert(offsetof(FortSkillTreeCanvasSlot_GetPosition, ReturnValue) == 0x000000, "Member 'FortSkillTreeCanvasSlot_GetPosition::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasSlot.GetZOrder
@@ -4590,14 +4591,14 @@ static_assert(sizeof(FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEv
 static_assert(offsetof(FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature, DisplayedItem) == 0x000000, "Member 'FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature::DisplayedItem' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookRewardCardWidget.SetRewards
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortCollectionBookRewardCardWidget_SetRewards final
 {
 public:
-	struct FFortRewardInfo                        Rewards;                                           // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortRewardInfo                        Rewards;                                           // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortCollectionBookRewardCardWidget_SetRewards) == 0x11821780, "Wrong alignment on FortCollectionBookRewardCardWidget_SetRewards");
-static_assert(sizeof(FortCollectionBookRewardCardWidget_SetRewards) == 0x11821780, "Wrong size on FortCollectionBookRewardCardWidget_SetRewards");
+static_assert(alignof(FortCollectionBookRewardCardWidget_SetRewards) == 0x000008, "Wrong alignment on FortCollectionBookRewardCardWidget_SetRewards");
+static_assert(sizeof(FortCollectionBookRewardCardWidget_SetRewards) == 0x000030, "Wrong size on FortCollectionBookRewardCardWidget_SetRewards");
 static_assert(offsetof(FortCollectionBookRewardCardWidget_SetRewards, Rewards) == 0x000000, "Member 'FortCollectionBookRewardCardWidget_SetRewards::Rewards' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookRewardCardWidget.HasRewards
@@ -4612,16 +4613,16 @@ static_assert(sizeof(FortCollectionBookRewardCardWidget_HasRewards) == 0x000001,
 static_assert(offsetof(FortCollectionBookRewardCardWidget_HasRewards, ReturnValue) == 0x000000, "Member 'FortCollectionBookRewardCardWidget_HasRewards::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxStoreRootBase.GetStoreOfferType
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct FortMtxStoreRootBase_GetStoreOfferType final
 {
 public:
-	struct FMtxPackage                            Package;                                           // 0x0000(0x11821780)(Parm, NativeAccessSpecifierPublic)
+	struct FMtxPackage                            Package;                                           // 0x0000(0x00A0)(Parm, NativeAccessSpecifierPublic)
 	EFortMtxStoreOfferType                        ReturnValue;                                       // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortMtxStoreRootBase_GetStoreOfferType) == 0x11821780, "Wrong alignment on FortMtxStoreRootBase_GetStoreOfferType");
-static_assert(sizeof(FortMtxStoreRootBase_GetStoreOfferType) == 0x11821780, "Wrong size on FortMtxStoreRootBase_GetStoreOfferType");
+static_assert(alignof(FortMtxStoreRootBase_GetStoreOfferType) == 0x000008, "Wrong alignment on FortMtxStoreRootBase_GetStoreOfferType");
+static_assert(sizeof(FortMtxStoreRootBase_GetStoreOfferType) == 0x0000A8, "Wrong size on FortMtxStoreRootBase_GetStoreOfferType");
 static_assert(offsetof(FortMtxStoreRootBase_GetStoreOfferType, Package) == 0x000000, "Member 'FortMtxStoreRootBase_GetStoreOfferType::Package' has a wrong offset!");
 static_assert(offsetof(FortMtxStoreRootBase_GetStoreOfferType, ReturnValue) == 0x0000A0, "Member 'FortMtxStoreRootBase_GetStoreOfferType::ReturnValue' has a wrong offset!");
 
@@ -4798,16 +4799,17 @@ static_assert(offsetof(FortCollectionBookSectionPanel_OnSlotItemComplete, Slotte
 static_assert(offsetof(FortCollectionBookSectionPanel_OnSlotItemComplete, SlotId) == 0x000008, "Member 'FortCollectionBookSectionPanel_OnSlotItemComplete::SlotId' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookSectionPanel.OnSlotItemConfirmationCompleted
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted final
 {
 public:
 	class UFortItem*                              SelectedItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   SlotId;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0010(0x11821780)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0010(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted) == 0x11821780, "Wrong alignment on FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted");
-static_assert(sizeof(FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted) == 0x11821780, "Wrong size on FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted");
+static_assert(alignof(FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted) == 0x000008, "Wrong alignment on FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted");
+static_assert(sizeof(FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted) == 0x000018, "Wrong size on FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted");
 static_assert(offsetof(FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted, SelectedItem) == 0x000000, "Member 'FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted::SelectedItem' has a wrong offset!");
 static_assert(offsetof(FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted, SlotId) == 0x000008, "Member 'FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted::SlotId' has a wrong offset!");
 static_assert(offsetof(FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted, LatentActionHandle) == 0x000010, "Member 'FortCollectionBookSectionPanel_OnSlotItemConfirmationCompleted::LatentActionHandle' has a wrong offset!");
@@ -4883,16 +4885,16 @@ static_assert(sizeof(FortSkillTreePageWidget_PlayOutroTransitionBP) == 0x000001,
 static_assert(offsetof(FortSkillTreePageWidget_PlayOutroTransitionBP, AnimSpeed) == 0x000000, "Member 'FortSkillTreePageWidget_PlayOutroTransitionBP::AnimSpeed' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreePageWidget.TryGetStaticSkillTreePageData
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct FortSkillTreePageWidget_TryGetStaticSkillTreePageData final
 {
 public:
-	struct FHomebaseNodePage                      OutStaticData;                                     // 0x0000(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseNodePage                      OutStaticData;                                     // 0x0000(0x0060)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreePageWidget_TryGetStaticSkillTreePageData) == 0x11821780, "Wrong alignment on FortSkillTreePageWidget_TryGetStaticSkillTreePageData");
-static_assert(sizeof(FortSkillTreePageWidget_TryGetStaticSkillTreePageData) == 0x11821780, "Wrong size on FortSkillTreePageWidget_TryGetStaticSkillTreePageData");
+static_assert(alignof(FortSkillTreePageWidget_TryGetStaticSkillTreePageData) == 0x000008, "Wrong alignment on FortSkillTreePageWidget_TryGetStaticSkillTreePageData");
+static_assert(sizeof(FortSkillTreePageWidget_TryGetStaticSkillTreePageData) == 0x000068, "Wrong size on FortSkillTreePageWidget_TryGetStaticSkillTreePageData");
 static_assert(offsetof(FortSkillTreePageWidget_TryGetStaticSkillTreePageData, OutStaticData) == 0x000000, "Member 'FortSkillTreePageWidget_TryGetStaticSkillTreePageData::OutStaticData' has a wrong offset!");
 static_assert(offsetof(FortSkillTreePageWidget_TryGetStaticSkillTreePageData, ReturnValue) == 0x000060, "Member 'FortSkillTreePageWidget_TryGetStaticSkillTreePageData::ReturnValue' has a wrong offset!");
 
@@ -4979,25 +4981,25 @@ static_assert(sizeof(FortMultiSizeImage_SetBrushSize) == 0x000001, "Wrong size o
 static_assert(offsetof(FortMultiSizeImage_SetBrushSize, BrushSize_0) == 0x000000, "Member 'FortMultiSizeImage_SetBrushSize::BrushSize_0' has a wrong offset!");
 
 // Function FortniteUI.FortMultiSizeImage.SetColorAndOpacity
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortMultiSizeImage_SetColorAndOpacity final
 {
 public:
-	struct FLinearColor                           Color;                                             // 0x0000(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMultiSizeImage_SetColorAndOpacity) == 0x11821300, "Wrong alignment on FortMultiSizeImage_SetColorAndOpacity");
-static_assert(sizeof(FortMultiSizeImage_SetColorAndOpacity) == 0x11821300, "Wrong size on FortMultiSizeImage_SetColorAndOpacity");
+static_assert(alignof(FortMultiSizeImage_SetColorAndOpacity) == 0x000004, "Wrong alignment on FortMultiSizeImage_SetColorAndOpacity");
+static_assert(sizeof(FortMultiSizeImage_SetColorAndOpacity) == 0x000010, "Wrong size on FortMultiSizeImage_SetColorAndOpacity");
 static_assert(offsetof(FortMultiSizeImage_SetColorAndOpacity, Color) == 0x000000, "Member 'FortMultiSizeImage_SetColorAndOpacity::Color' has a wrong offset!");
 
 // Function FortniteUI.FortMultiSizeImage.SetMultiSizeBrush
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0360 (0x0360 - 0x0000)
 struct FortMultiSizeImage_SetMultiSizeBrush final
 {
 public:
-	struct FFortMultiSizeBrush                    MultiSizeBrush_0;                                  // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    MultiSizeBrush_0;                                  // 0x0000(0x0360)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMultiSizeImage_SetMultiSizeBrush) == 0x11821780, "Wrong alignment on FortMultiSizeImage_SetMultiSizeBrush");
-static_assert(sizeof(FortMultiSizeImage_SetMultiSizeBrush) == 0x11821780, "Wrong size on FortMultiSizeImage_SetMultiSizeBrush");
+static_assert(alignof(FortMultiSizeImage_SetMultiSizeBrush) == 0x000008, "Wrong alignment on FortMultiSizeImage_SetMultiSizeBrush");
+static_assert(sizeof(FortMultiSizeImage_SetMultiSizeBrush) == 0x000360, "Wrong size on FortMultiSizeImage_SetMultiSizeBrush");
 static_assert(offsetof(FortMultiSizeImage_SetMultiSizeBrush, MultiSizeBrush_0) == 0x000000, "Member 'FortMultiSizeImage_SetMultiSizeBrush::MultiSizeBrush_0' has a wrong offset!");
 
 // Function FortniteUI.FortSimpleItemConditionIconIndicator.SetItemToRepresent
@@ -5056,18 +5058,18 @@ static_assert(sizeof(FortDailyRewards_ClaimResultReceived) == 0x000010, "Wrong s
 static_assert(offsetof(FortDailyRewards_ClaimResultReceived, Loot) == 0x000000, "Member 'FortDailyRewards_ClaimResultReceived::Loot' has a wrong offset!");
 
 // Function FortniteUI.FortDailyRewards.TryGetDailyRewardsData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortDailyRewards_TryGetDailyRewardsData final
 {
 public:
-	struct FFortDailyRewardsData                  OutDailyRewardsData;                               // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortDailyRewardsData                  OutDailyRewardsData;                               // 0x0000(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	int32                                         ItemCardsPerSchedule;                              // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MinEpicRewards;                                    // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortDailyRewards_TryGetDailyRewardsData) == 0x1182E980, "Wrong alignment on FortDailyRewards_TryGetDailyRewardsData");
-static_assert(sizeof(FortDailyRewards_TryGetDailyRewardsData) == 0x1182E980, "Wrong size on FortDailyRewards_TryGetDailyRewardsData");
+static_assert(alignof(FortDailyRewards_TryGetDailyRewardsData) == 0x000008, "Wrong alignment on FortDailyRewards_TryGetDailyRewardsData");
+static_assert(sizeof(FortDailyRewards_TryGetDailyRewardsData) == 0x000028, "Wrong size on FortDailyRewards_TryGetDailyRewardsData");
 static_assert(offsetof(FortDailyRewards_TryGetDailyRewardsData, OutDailyRewardsData) == 0x000000, "Member 'FortDailyRewards_TryGetDailyRewardsData::OutDailyRewardsData' has a wrong offset!");
 static_assert(offsetof(FortDailyRewards_TryGetDailyRewardsData, ItemCardsPerSchedule) == 0x000018, "Member 'FortDailyRewards_TryGetDailyRewardsData::ItemCardsPerSchedule' has a wrong offset!");
 static_assert(offsetof(FortDailyRewards_TryGetDailyRewardsData, MinEpicRewards) == 0x00001C, "Member 'FortDailyRewards_TryGetDailyRewardsData::MinEpicRewards' has a wrong offset!");
@@ -5248,17 +5250,17 @@ static_assert(sizeof(FortOptionsTab_IsXboxPlatform) == 0x000001, "Wrong size on 
 static_assert(offsetof(FortOptionsTab_IsXboxPlatform, ReturnValue) == 0x000000, "Member 'FortOptionsTab_IsXboxPlatform::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInputOptions.ChangeBinding
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortInputOptions_ChangeBinding final
 {
 public:
 	bool                                          IsPrimarySlot;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Input;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FKey                                   NewKey;                                            // 0x0008(0x11821D80)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   NewKey;                                            // 0x0008(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortInputOptions_ChangeBinding) == 0x11821D80, "Wrong alignment on FortInputOptions_ChangeBinding");
-static_assert(sizeof(FortInputOptions_ChangeBinding) == 0x11821D80, "Wrong size on FortInputOptions_ChangeBinding");
+static_assert(alignof(FortInputOptions_ChangeBinding) == 0x000008, "Wrong alignment on FortInputOptions_ChangeBinding");
+static_assert(sizeof(FortInputOptions_ChangeBinding) == 0x000020, "Wrong size on FortInputOptions_ChangeBinding");
 static_assert(offsetof(FortInputOptions_ChangeBinding, IsPrimarySlot) == 0x000000, "Member 'FortInputOptions_ChangeBinding::IsPrimarySlot' has a wrong offset!");
 static_assert(offsetof(FortInputOptions_ChangeBinding, Input) == 0x000004, "Member 'FortInputOptions_ChangeBinding::Input' has a wrong offset!");
 static_assert(offsetof(FortInputOptions_ChangeBinding, NewKey) == 0x000008, "Member 'FortInputOptions_ChangeBinding::NewKey' has a wrong offset!");
@@ -5710,17 +5712,17 @@ static_assert(offsetof(FortExpeditionUtilities_AreAnyExpeditionsComplete, Widget
 static_assert(offsetof(FortExpeditionUtilities_AreAnyExpeditionsComplete, ReturnValue) == 0x000008, "Member 'FortExpeditionUtilities_AreAnyExpeditionsComplete::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortExpeditionUtilities.AreExpeditionsUnlocked
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortExpeditionUtilities_AreExpeditionsUnlocked final
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0008(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortExpeditionUtilities_AreExpeditionsUnlocked) == 0x11821780, "Wrong alignment on FortExpeditionUtilities_AreExpeditionsUnlocked");
-static_assert(sizeof(FortExpeditionUtilities_AreExpeditionsUnlocked) == 0x11821780, "Wrong size on FortExpeditionUtilities_AreExpeditionsUnlocked");
+static_assert(alignof(FortExpeditionUtilities_AreExpeditionsUnlocked) == 0x000008, "Wrong alignment on FortExpeditionUtilities_AreExpeditionsUnlocked");
+static_assert(sizeof(FortExpeditionUtilities_AreExpeditionsUnlocked) == 0x000028, "Wrong size on FortExpeditionUtilities_AreExpeditionsUnlocked");
 static_assert(offsetof(FortExpeditionUtilities_AreExpeditionsUnlocked, WorldContextObject) == 0x000000, "Member 'FortExpeditionUtilities_AreExpeditionsUnlocked::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(FortExpeditionUtilities_AreExpeditionsUnlocked, UniqueId) == 0x000008, "Member 'FortExpeditionUtilities_AreExpeditionsUnlocked::UniqueId' has a wrong offset!");
 static_assert(offsetof(FortExpeditionUtilities_AreExpeditionsUnlocked, ReturnValue) == 0x000020, "Member 'FortExpeditionUtilities_AreExpeditionsUnlocked::ReturnValue' has a wrong offset!");
@@ -5806,18 +5808,18 @@ static_assert(offsetof(FortExpeditionUtilities_GetExpeditionSquadPower, SquadId)
 static_assert(offsetof(FortExpeditionUtilities_GetExpeditionSquadPower, ReturnValue) == 0x000010, "Member 'FortExpeditionUtilities_GetExpeditionSquadPower::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortExpeditionUtilities.GetExpeditionSquadsThatMatchRequirements
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements final
 {
 public:
-	struct FGameplayTagContainer                  RequirementTags;                                   // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  RequirementTags;                                   // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class AFortPlayerController*                  FortPC;                                            // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FName>                           OutExpeditionSquadIds;                             // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements) == 0x11821C00, "Wrong alignment on FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements");
-static_assert(sizeof(FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements) == 0x11821C00, "Wrong size on FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements");
+static_assert(alignof(FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements) == 0x000008, "Wrong alignment on FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements");
+static_assert(sizeof(FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements) == 0x000040, "Wrong size on FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements");
 static_assert(offsetof(FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements, RequirementTags) == 0x000000, "Member 'FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements::RequirementTags' has a wrong offset!");
 static_assert(offsetof(FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements, FortPC) == 0x000020, "Member 'FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements::FortPC' has a wrong offset!");
 static_assert(offsetof(FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements, OutExpeditionSquadIds) == 0x000028, "Member 'FortExpeditionUtilities_GetExpeditionSquadsThatMatchRequirements::OutExpeditionSquadIds' has a wrong offset!");
@@ -5864,31 +5866,31 @@ static_assert(offsetof(FortExpeditionUtilities_GetTotalExpeditionVehiclesAvailab
 static_assert(offsetof(FortExpeditionUtilities_GetTotalExpeditionVehiclesAvailable, OutAirVehiclesAvailable) == 0x000024, "Member 'FortExpeditionUtilities_GetTotalExpeditionVehiclesAvailable::OutAirVehiclesAvailable' has a wrong offset!");
 
 // Function FortniteUI.FortExpeditionUtilities.GetVehicleTagFromSquadId
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortExpeditionUtilities_GetVehicleTagFromSquadId final
 {
 public:
 	class FName                                   SquadId;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           OutFoundVehicleTag;                                // 0x0008(0x11821D80)(Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           OutFoundVehicleTag;                                // 0x0008(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortExpeditionUtilities_GetVehicleTagFromSquadId) == 0x11821D80, "Wrong alignment on FortExpeditionUtilities_GetVehicleTagFromSquadId");
-static_assert(sizeof(FortExpeditionUtilities_GetVehicleTagFromSquadId) == 0x11821D80, "Wrong size on FortExpeditionUtilities_GetVehicleTagFromSquadId");
+static_assert(alignof(FortExpeditionUtilities_GetVehicleTagFromSquadId) == 0x000008, "Wrong alignment on FortExpeditionUtilities_GetVehicleTagFromSquadId");
+static_assert(sizeof(FortExpeditionUtilities_GetVehicleTagFromSquadId) == 0x000018, "Wrong size on FortExpeditionUtilities_GetVehicleTagFromSquadId");
 static_assert(offsetof(FortExpeditionUtilities_GetVehicleTagFromSquadId, SquadId) == 0x000000, "Member 'FortExpeditionUtilities_GetVehicleTagFromSquadId::SquadId' has a wrong offset!");
 static_assert(offsetof(FortExpeditionUtilities_GetVehicleTagFromSquadId, OutFoundVehicleTag) == 0x000008, "Member 'FortExpeditionUtilities_GetVehicleTagFromSquadId::OutFoundVehicleTag' has a wrong offset!");
 static_assert(offsetof(FortExpeditionUtilities_GetVehicleTagFromSquadId, ReturnValue) == 0x000010, "Member 'FortExpeditionUtilities_GetVehicleTagFromSquadId::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortExpeditionUtilities.GetVehicleTagRequiredForExpedition
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortExpeditionUtilities_GetVehicleTagRequiredForExpedition final
 {
 public:
 	const class UFortExpeditionItem*              Expedition;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           ReturnValue;                                       // 0x0008(0x11821D80)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortExpeditionUtilities_GetVehicleTagRequiredForExpedition) == 0x11821D80, "Wrong alignment on FortExpeditionUtilities_GetVehicleTagRequiredForExpedition");
-static_assert(sizeof(FortExpeditionUtilities_GetVehicleTagRequiredForExpedition) == 0x11821D80, "Wrong size on FortExpeditionUtilities_GetVehicleTagRequiredForExpedition");
+static_assert(alignof(FortExpeditionUtilities_GetVehicleTagRequiredForExpedition) == 0x000008, "Wrong alignment on FortExpeditionUtilities_GetVehicleTagRequiredForExpedition");
+static_assert(sizeof(FortExpeditionUtilities_GetVehicleTagRequiredForExpedition) == 0x000010, "Wrong size on FortExpeditionUtilities_GetVehicleTagRequiredForExpedition");
 static_assert(offsetof(FortExpeditionUtilities_GetVehicleTagRequiredForExpedition, Expedition) == 0x000000, "Member 'FortExpeditionUtilities_GetVehicleTagRequiredForExpedition::Expedition' has a wrong offset!");
 static_assert(offsetof(FortExpeditionUtilities_GetVehicleTagRequiredForExpedition, ReturnValue) == 0x000008, "Member 'FortExpeditionUtilities_GetVehicleTagRequiredForExpedition::ReturnValue' has a wrong offset!");
 
@@ -5958,14 +5960,14 @@ static_assert(sizeof(FortSkillTreeCanvasEntityInterface_PlayIntroTransitionBP) =
 static_assert(offsetof(FortSkillTreeCanvasEntityInterface_PlayIntroTransitionBP, AnimSpeed) == 0x000000, "Member 'FortSkillTreeCanvasEntityInterface_PlayIntroTransitionBP::AnimSpeed' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasEntityInterface.PlayOutroTransitionBP
-// 0x0378 (0x0378 - 0x0000)
-struct alignas(0x378) FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP final
+// 0x0001 (0x0001 - 0x0000)
+struct FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP final
 {
 public:
 	EFortAnimSpeed                                AnimSpeed;                                         // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP) == 0x000378, "Wrong alignment on FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP");
-static_assert(sizeof(FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP) == 0x000378, "Wrong size on FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP");
+static_assert(alignof(FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP) == 0x000001, "Wrong alignment on FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP");
+static_assert(sizeof(FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP) == 0x000001, "Wrong size on FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP");
 static_assert(offsetof(FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP, AnimSpeed) == 0x000000, "Member 'FortSkillTreeCanvasEntityInterface_PlayOutroTransitionBP::AnimSpeed' has a wrong offset!");
 
 // Function FortniteUI.FortPartyTreeItemBase.ExpansionChanged
@@ -5980,44 +5982,44 @@ static_assert(sizeof(FortPartyTreeItemBase_ExpansionChanged) == 0x000001, "Wrong
 static_assert(offsetof(FortPartyTreeItemBase_ExpansionChanged, bExpanded) == 0x000000, "Member 'FortPartyTreeItemBase_ExpansionChanged::bExpanded' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasNode.TryGetNodeDisplayData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0370 (0x0370 - 0x0000)
 struct FortSkillTreeCanvasNode_TryGetNodeDisplayData final
 {
 public:
-	struct FFortSkillTreeNodeDisplayData          OutDisplayData;                                    // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortSkillTreeNodeDisplayData          OutDisplayData;                                    // 0x0000(0x0368)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0368(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_369[0x7];                                      // 0x0369(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreeCanvasNode_TryGetNodeDisplayData) == 0x1182E980, "Wrong alignment on FortSkillTreeCanvasNode_TryGetNodeDisplayData");
-static_assert(sizeof(FortSkillTreeCanvasNode_TryGetNodeDisplayData) == 0x1182E980, "Wrong size on FortSkillTreeCanvasNode_TryGetNodeDisplayData");
+static_assert(alignof(FortSkillTreeCanvasNode_TryGetNodeDisplayData) == 0x000008, "Wrong alignment on FortSkillTreeCanvasNode_TryGetNodeDisplayData");
+static_assert(sizeof(FortSkillTreeCanvasNode_TryGetNodeDisplayData) == 0x000370, "Wrong size on FortSkillTreeCanvasNode_TryGetNodeDisplayData");
 static_assert(offsetof(FortSkillTreeCanvasNode_TryGetNodeDisplayData, OutDisplayData) == 0x000000, "Member 'FortSkillTreeCanvasNode_TryGetNodeDisplayData::OutDisplayData' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeCanvasNode_TryGetNodeDisplayData, ReturnValue) == 0x000368, "Member 'FortSkillTreeCanvasNode_TryGetNodeDisplayData::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasNode.TryGetSkillTreeNodeState
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct FortSkillTreeCanvasNode_TryGetSkillTreeNodeState final
 {
 public:
-	struct FHomebaseNodeState                     OutNodeState;                                      // 0x0000(0x11821780)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FHomebaseNodeState                     OutNodeState;                                      // 0x0000(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreeCanvasNode_TryGetSkillTreeNodeState) == 0x11821780, "Wrong alignment on FortSkillTreeCanvasNode_TryGetSkillTreeNodeState");
-static_assert(sizeof(FortSkillTreeCanvasNode_TryGetSkillTreeNodeState) == 0x11821780, "Wrong size on FortSkillTreeCanvasNode_TryGetSkillTreeNodeState");
+static_assert(alignof(FortSkillTreeCanvasNode_TryGetSkillTreeNodeState) == 0x000004, "Wrong alignment on FortSkillTreeCanvasNode_TryGetSkillTreeNodeState");
+static_assert(sizeof(FortSkillTreeCanvasNode_TryGetSkillTreeNodeState) == 0x00000C, "Wrong size on FortSkillTreeCanvasNode_TryGetSkillTreeNodeState");
 static_assert(offsetof(FortSkillTreeCanvasNode_TryGetSkillTreeNodeState, OutNodeState) == 0x000000, "Member 'FortSkillTreeCanvasNode_TryGetSkillTreeNodeState::OutNodeState' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeCanvasNode_TryGetSkillTreeNodeState, ReturnValue) == 0x000008, "Member 'FortSkillTreeCanvasNode_TryGetSkillTreeNodeState::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeCanvasNode.TryGetStaticSkillTreeNodeData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData final
 {
 public:
-	struct FHomebaseNode                          OutNodeData;                                       // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseNode                          OutNodeData;                                       // 0x0000(0x00C0)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData) == 0x1182E980, "Wrong alignment on FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData");
-static_assert(sizeof(FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData) == 0x1182E980, "Wrong size on FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData");
+static_assert(alignof(FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData) == 0x000008, "Wrong alignment on FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData");
+static_assert(sizeof(FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData) == 0x0000C8, "Wrong size on FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData");
 static_assert(offsetof(FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData, OutNodeData) == 0x000000, "Member 'FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData::OutNodeData' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData, ReturnValue) == 0x0000C0, "Member 'FortSkillTreeCanvasNode_TryGetStaticSkillTreeNodeData::ReturnValue' has a wrong offset!");
 
@@ -6094,18 +6096,18 @@ static_assert(offsetof(FortKeybindWidget_StopHoldProgress, HoldActionName) == 0x
 static_assert(offsetof(FortKeybindWidget_StopHoldProgress, bCompletedSuccessfully) == 0x000008, "Member 'FortKeybindWidget_StopHoldProgress::bCompletedSuccessfully' has a wrong offset!");
 
 // Function FortniteUI.FortKeybindWidget.GetBrushForKey
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FortKeybindWidget_GetBrushForKey final
 {
 public:
 	EFortBrushSize                                BrushSize;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Brush;                                             // 0x0008(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Brush;                                             // 0x0008(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortKeybindWidget_GetBrushForKey) == 0x11827900, "Wrong alignment on FortKeybindWidget_GetBrushForKey");
-static_assert(sizeof(FortKeybindWidget_GetBrushForKey) == 0x11827900, "Wrong size on FortKeybindWidget_GetBrushForKey");
+static_assert(alignof(FortKeybindWidget_GetBrushForKey) == 0x000008, "Wrong alignment on FortKeybindWidget_GetBrushForKey");
+static_assert(sizeof(FortKeybindWidget_GetBrushForKey) == 0x0000A0, "Wrong size on FortKeybindWidget_GetBrushForKey");
 static_assert(offsetof(FortKeybindWidget_GetBrushForKey, BrushSize) == 0x000000, "Member 'FortKeybindWidget_GetBrushForKey::BrushSize' has a wrong offset!");
 static_assert(offsetof(FortKeybindWidget_GetBrushForKey, Brush) == 0x000008, "Member 'FortKeybindWidget_GetBrushForKey::Brush' has a wrong offset!");
 static_assert(offsetof(FortKeybindWidget_GetBrushForKey, ReturnValue) == 0x000098, "Member 'FortKeybindWidget_GetBrushForKey::ReturnValue' has a wrong offset!");
@@ -6287,42 +6289,42 @@ static_assert(sizeof(FortSkillTreeViewer_GetSelectedNodeId) == 0x000008, "Wrong 
 static_assert(offsetof(FortSkillTreeViewer_GetSelectedNodeId, ReturnValue) == 0x000000, "Member 'FortSkillTreeViewer_GetSelectedNodeId::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeViewer.GetViewParameters
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct FortSkillTreeViewer_GetViewParameters final
 {
 public:
-	struct FVector2D                              OutPanOffset;                                      // 0x0000(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              OutPanOffset;                                      // 0x0000(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OutZoomLevel;                                      // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSkillTreeViewer_GetViewParameters) == 0x11821300, "Wrong alignment on FortSkillTreeViewer_GetViewParameters");
-static_assert(sizeof(FortSkillTreeViewer_GetViewParameters) == 0x11821300, "Wrong size on FortSkillTreeViewer_GetViewParameters");
+static_assert(alignof(FortSkillTreeViewer_GetViewParameters) == 0x000004, "Wrong alignment on FortSkillTreeViewer_GetViewParameters");
+static_assert(sizeof(FortSkillTreeViewer_GetViewParameters) == 0x00000C, "Wrong size on FortSkillTreeViewer_GetViewParameters");
 static_assert(offsetof(FortSkillTreeViewer_GetViewParameters, OutPanOffset) == 0x000000, "Member 'FortSkillTreeViewer_GetViewParameters::OutPanOffset' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeViewer_GetViewParameters, OutZoomLevel) == 0x000008, "Member 'FortSkillTreeViewer_GetViewParameters::OutZoomLevel' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeViewer.TryGetSkillTreePageStaticData
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct FortSkillTreeViewer_TryGetSkillTreePageStaticData final
 {
 public:
-	struct FHomebaseNodePage                      OutData;                                           // 0x0000(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseNodePage                      OutData;                                           // 0x0000(0x0060)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreeViewer_TryGetSkillTreePageStaticData) == 0x11821780, "Wrong alignment on FortSkillTreeViewer_TryGetSkillTreePageStaticData");
-static_assert(sizeof(FortSkillTreeViewer_TryGetSkillTreePageStaticData) == 0x11821780, "Wrong size on FortSkillTreeViewer_TryGetSkillTreePageStaticData");
+static_assert(alignof(FortSkillTreeViewer_TryGetSkillTreePageStaticData) == 0x000008, "Wrong alignment on FortSkillTreeViewer_TryGetSkillTreePageStaticData");
+static_assert(sizeof(FortSkillTreeViewer_TryGetSkillTreePageStaticData) == 0x000068, "Wrong size on FortSkillTreeViewer_TryGetSkillTreePageStaticData");
 static_assert(offsetof(FortSkillTreeViewer_TryGetSkillTreePageStaticData, OutData) == 0x000000, "Member 'FortSkillTreeViewer_TryGetSkillTreePageStaticData::OutData' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeViewer_TryGetSkillTreePageStaticData, ReturnValue) == 0x000060, "Member 'FortSkillTreeViewer_TryGetSkillTreePageStaticData::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIDataConfiguration.GetDefenderSubtypeIconMultiSizeBrushByTag
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag final
 {
 public:
-	struct FGameplayTag                           DefenderSubtypeTag;                                // 0x0000(0x11821D80)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           DefenderSubtypeTag;                                // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortMultiSizeBrushAsset*               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag) == 0x11821D80, "Wrong alignment on FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag");
-static_assert(sizeof(FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag) == 0x11821D80, "Wrong size on FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag");
+static_assert(alignof(FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag) == 0x000008, "Wrong alignment on FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag");
+static_assert(sizeof(FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag) == 0x000010, "Wrong size on FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag");
 static_assert(offsetof(FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag, DefenderSubtypeTag) == 0x000000, "Member 'FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag::DefenderSubtypeTag' has a wrong offset!");
 static_assert(offsetof(FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag, ReturnValue) == 0x000008, "Member 'FortUIDataConfiguration_GetDefenderSubtypeIconMultiSizeBrushByTag::ReturnValue' has a wrong offset!");
 
@@ -6575,16 +6577,16 @@ static_assert(sizeof(FortFrontEndContext_GetActiveTile) == 0x000008, "Wrong size
 static_assert(offsetof(FortFrontEndContext_GetActiveTile, ReturnValue) == 0x000000, "Member 'FortFrontEndContext_GetActiveTile::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetActiveTileMissionDetails
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct FortFrontEndContext_GetActiveTileMissionDetails final
 {
 public:
-	struct FFortMissionDetails                    MissionDetails;                                    // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortMissionDetails                    MissionDetails;                                    // 0x0000(0x0160)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0160(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortFrontEndContext_GetActiveTileMissionDetails) == 0x1182E980, "Wrong alignment on FortFrontEndContext_GetActiveTileMissionDetails");
-static_assert(sizeof(FortFrontEndContext_GetActiveTileMissionDetails) == 0x1182E980, "Wrong size on FortFrontEndContext_GetActiveTileMissionDetails");
+static_assert(alignof(FortFrontEndContext_GetActiveTileMissionDetails) == 0x000008, "Wrong alignment on FortFrontEndContext_GetActiveTileMissionDetails");
+static_assert(sizeof(FortFrontEndContext_GetActiveTileMissionDetails) == 0x000168, "Wrong size on FortFrontEndContext_GetActiveTileMissionDetails");
 static_assert(offsetof(FortFrontEndContext_GetActiveTileMissionDetails, MissionDetails) == 0x000000, "Member 'FortFrontEndContext_GetActiveTileMissionDetails::MissionDetails' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetActiveTileMissionDetails, ReturnValue) == 0x000160, "Member 'FortFrontEndContext_GetActiveTileMissionDetails::ReturnValue' has a wrong offset!");
 
@@ -6603,46 +6605,46 @@ static_assert(offsetof(FortFrontEndContext_GetAllTheaterData, OutAllTheaterData)
 static_assert(offsetof(FortFrontEndContext_GetAllTheaterData, ReturnValue) == 0x000010, "Member 'FortFrontEndContext_GetAllTheaterData::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetAttributeDescription
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct FortFrontEndContext_GetAttributeDescription final
 {
 public:
-	struct FFortAttributeInfo                     InAttribute;                                       // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  InRequiredTags;                                    // 0x0078(0x11821C00)(Parm, NativeAccessSpecifierPublic)
+	struct FFortAttributeInfo                     InAttribute;                                       // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  InRequiredTags;                                    // 0x0078(0x0020)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   ReturnValue;                                       // 0x0098(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortFrontEndContext_GetAttributeDescription) == 0x11821C00, "Wrong alignment on FortFrontEndContext_GetAttributeDescription");
-static_assert(sizeof(FortFrontEndContext_GetAttributeDescription) == 0x11821C00, "Wrong size on FortFrontEndContext_GetAttributeDescription");
+static_assert(alignof(FortFrontEndContext_GetAttributeDescription) == 0x000008, "Wrong alignment on FortFrontEndContext_GetAttributeDescription");
+static_assert(sizeof(FortFrontEndContext_GetAttributeDescription) == 0x0000B0, "Wrong size on FortFrontEndContext_GetAttributeDescription");
 static_assert(offsetof(FortFrontEndContext_GetAttributeDescription, InAttribute) == 0x000000, "Member 'FortFrontEndContext_GetAttributeDescription::InAttribute' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetAttributeDescription, InRequiredTags) == 0x000078, "Member 'FortFrontEndContext_GetAttributeDescription::InRequiredTags' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetAttributeDescription, ReturnValue) == 0x000098, "Member 'FortFrontEndContext_GetAttributeDescription::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetAttributeDisplayName
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct FortFrontEndContext_GetAttributeDisplayName final
 {
 public:
-	struct FFortAttributeInfo                     InAttribute;                                       // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  InRequiredTags;                                    // 0x0078(0x11821C00)(Parm, NativeAccessSpecifierPublic)
+	struct FFortAttributeInfo                     InAttribute;                                       // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  InRequiredTags;                                    // 0x0078(0x0020)(Parm, NativeAccessSpecifierPublic)
 	class FText                                   ReturnValue;                                       // 0x0098(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortFrontEndContext_GetAttributeDisplayName) == 0x11821C00, "Wrong alignment on FortFrontEndContext_GetAttributeDisplayName");
-static_assert(sizeof(FortFrontEndContext_GetAttributeDisplayName) == 0x11821C00, "Wrong size on FortFrontEndContext_GetAttributeDisplayName");
+static_assert(alignof(FortFrontEndContext_GetAttributeDisplayName) == 0x000008, "Wrong alignment on FortFrontEndContext_GetAttributeDisplayName");
+static_assert(sizeof(FortFrontEndContext_GetAttributeDisplayName) == 0x0000B0, "Wrong size on FortFrontEndContext_GetAttributeDisplayName");
 static_assert(offsetof(FortFrontEndContext_GetAttributeDisplayName, InAttribute) == 0x000000, "Member 'FortFrontEndContext_GetAttributeDisplayName::InAttribute' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetAttributeDisplayName, InRequiredTags) == 0x000078, "Member 'FortFrontEndContext_GetAttributeDisplayName::InRequiredTags' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetAttributeDisplayName, ReturnValue) == 0x000098, "Member 'FortFrontEndContext_GetAttributeDisplayName::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetAttributeIcon
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x03F8 (0x03F8 - 0x0000)
 struct FortFrontEndContext_GetAttributeIcon final
 {
 public:
-	struct FFortAttributeInfo                     InAttribute;                                       // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  InRequiredTags;                                    // 0x0078(0x11821C00)(Parm, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeBrush                    ReturnValue;                                       // 0x0098(0x11827900)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FFortAttributeInfo                     InAttribute;                                       // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  InRequiredTags;                                    // 0x0078(0x0020)(Parm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    ReturnValue;                                       // 0x0098(0x0360)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortFrontEndContext_GetAttributeIcon) == 0x11821C00, "Wrong alignment on FortFrontEndContext_GetAttributeIcon");
-static_assert(sizeof(FortFrontEndContext_GetAttributeIcon) == 0x11821C00, "Wrong size on FortFrontEndContext_GetAttributeIcon");
+static_assert(alignof(FortFrontEndContext_GetAttributeIcon) == 0x000008, "Wrong alignment on FortFrontEndContext_GetAttributeIcon");
+static_assert(sizeof(FortFrontEndContext_GetAttributeIcon) == 0x0003F8, "Wrong size on FortFrontEndContext_GetAttributeIcon");
 static_assert(offsetof(FortFrontEndContext_GetAttributeIcon, InAttribute) == 0x000000, "Member 'FortFrontEndContext_GetAttributeIcon::InAttribute' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetAttributeIcon, InRequiredTags) == 0x000078, "Member 'FortFrontEndContext_GetAttributeIcon::InRequiredTags' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetAttributeIcon, ReturnValue) == 0x000098, "Member 'FortFrontEndContext_GetAttributeIcon::ReturnValue' has a wrong offset!");
@@ -6775,29 +6777,29 @@ static_assert(offsetof(FortFrontEndContext_GetHarvestingToolForLevel, InHarvesti
 static_assert(offsetof(FortFrontEndContext_GetHarvestingToolForLevel, ReturnValue) == 0x000008, "Member 'FortFrontEndContext_GetHarvestingToolForLevel::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetItemFromItemQuantityPair
-// 0x52535 (0x52535 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortFrontEndContext_GetItemFromItemQuantityPair final
 {
 public:
-	struct FFortItemQuantityPair                  InPair;                                            // 0x0000(0x52535)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemQuantityPair                  InPair;                                            // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UFortItemDefinition*                    ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortFrontEndContext_GetItemFromItemQuantityPair) == 0x052535, "Wrong alignment on FortFrontEndContext_GetItemFromItemQuantityPair");
-static_assert(sizeof(FortFrontEndContext_GetItemFromItemQuantityPair) == 0x052535, "Wrong size on FortFrontEndContext_GetItemFromItemQuantityPair");
+static_assert(alignof(FortFrontEndContext_GetItemFromItemQuantityPair) == 0x000008, "Wrong alignment on FortFrontEndContext_GetItemFromItemQuantityPair");
+static_assert(sizeof(FortFrontEndContext_GetItemFromItemQuantityPair) == 0x000030, "Wrong size on FortFrontEndContext_GetItemFromItemQuantityPair");
 static_assert(offsetof(FortFrontEndContext_GetItemFromItemQuantityPair, InPair) == 0x000000, "Member 'FortFrontEndContext_GetItemFromItemQuantityPair::InPair' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetItemFromItemQuantityPair, ReturnValue) == 0x000028, "Member 'FortFrontEndContext_GetItemFromItemQuantityPair::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetMaxAvailableDifficulty
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct FortFrontEndContext_GetMaxAvailableDifficulty final
 {
 public:
 	bool                                          bIncludeMissionAlertTiles;                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameDifficultyInfo                    ReturnValue;                                       // 0x0008(0x11821780)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FGameDifficultyInfo                    ReturnValue;                                       // 0x0008(0x0080)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortFrontEndContext_GetMaxAvailableDifficulty) == 0x11821780, "Wrong alignment on FortFrontEndContext_GetMaxAvailableDifficulty");
-static_assert(sizeof(FortFrontEndContext_GetMaxAvailableDifficulty) == 0x11821780, "Wrong size on FortFrontEndContext_GetMaxAvailableDifficulty");
+static_assert(alignof(FortFrontEndContext_GetMaxAvailableDifficulty) == 0x000008, "Wrong alignment on FortFrontEndContext_GetMaxAvailableDifficulty");
+static_assert(sizeof(FortFrontEndContext_GetMaxAvailableDifficulty) == 0x000088, "Wrong size on FortFrontEndContext_GetMaxAvailableDifficulty");
 static_assert(offsetof(FortFrontEndContext_GetMaxAvailableDifficulty, bIncludeMissionAlertTiles) == 0x000000, "Member 'FortFrontEndContext_GetMaxAvailableDifficulty::bIncludeMissionAlertTiles' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetMaxAvailableDifficulty, ReturnValue) == 0x000008, "Member 'FortFrontEndContext_GetMaxAvailableDifficulty::ReturnValue' has a wrong offset!");
 
@@ -6895,15 +6897,15 @@ static_assert(sizeof(FortFrontEndContext_GetRecommendedTeamDifficulties) == 0x00
 static_assert(offsetof(FortFrontEndContext_GetRecommendedTeamDifficulties, ReturnValue) == 0x000000, "Member 'FortFrontEndContext_GetRecommendedTeamDifficulties::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetRequirementText
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct FortFrontEndContext_GetRequirementText final
 {
 public:
-	struct FFortRequirementsInfo                  InRequirements;                                    // 0x0000(0x1182EB00)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortRequirementsInfo                  InRequirements;                                    // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	class FText                                   ReturnValue;                                       // 0x0040(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortFrontEndContext_GetRequirementText) == 0x11821780, "Wrong alignment on FortFrontEndContext_GetRequirementText");
-static_assert(sizeof(FortFrontEndContext_GetRequirementText) == 0x11821780, "Wrong size on FortFrontEndContext_GetRequirementText");
+static_assert(alignof(FortFrontEndContext_GetRequirementText) == 0x000008, "Wrong alignment on FortFrontEndContext_GetRequirementText");
+static_assert(sizeof(FortFrontEndContext_GetRequirementText) == 0x000058, "Wrong size on FortFrontEndContext_GetRequirementText");
 static_assert(offsetof(FortFrontEndContext_GetRequirementText, InRequirements) == 0x000000, "Member 'FortFrontEndContext_GetRequirementText::InRequirements' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetRequirementText, ReturnValue) == 0x000040, "Member 'FortFrontEndContext_GetRequirementText::ReturnValue' has a wrong offset!");
 
@@ -6919,16 +6921,16 @@ static_assert(sizeof(FortFrontEndContext_GetReturnToFrontendBehavior) == 0x00000
 static_assert(offsetof(FortFrontEndContext_GetReturnToFrontendBehavior, ReturnValue) == 0x000000, "Member 'FortFrontEndContext_GetReturnToFrontendBehavior::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetSelectedTheaterData
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0548 (0x0548 - 0x0000)
 struct FortFrontEndContext_GetSelectedTheaterData final
 {
 public:
-	struct FFortTheaterMapData                    OutTheaterData;                                    // 0x0000(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortTheaterMapData                    OutTheaterData;                                    // 0x0000(0x0540)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0540(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_541[0x7];                                      // 0x0541(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortFrontEndContext_GetSelectedTheaterData) == 0x11821780, "Wrong alignment on FortFrontEndContext_GetSelectedTheaterData");
-static_assert(sizeof(FortFrontEndContext_GetSelectedTheaterData) == 0x11821780, "Wrong size on FortFrontEndContext_GetSelectedTheaterData");
+static_assert(alignof(FortFrontEndContext_GetSelectedTheaterData) == 0x000008, "Wrong alignment on FortFrontEndContext_GetSelectedTheaterData");
+static_assert(sizeof(FortFrontEndContext_GetSelectedTheaterData) == 0x000548, "Wrong size on FortFrontEndContext_GetSelectedTheaterData");
 static_assert(offsetof(FortFrontEndContext_GetSelectedTheaterData, OutTheaterData) == 0x000000, "Member 'FortFrontEndContext_GetSelectedTheaterData::OutTheaterData' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetSelectedTheaterData, ReturnValue) == 0x000540, "Member 'FortFrontEndContext_GetSelectedTheaterData::ReturnValue' has a wrong offset!");
 
@@ -6944,17 +6946,17 @@ static_assert(sizeof(FortFrontEndContext_GetSelectedTheaterId) == 0x000010, "Wro
 static_assert(offsetof(FortFrontEndContext_GetSelectedTheaterId, ReturnValue) == 0x000000, "Member 'FortFrontEndContext_GetSelectedTheaterId::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetTheaterData
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0558 (0x0558 - 0x0000)
 struct FortFrontEndContext_GetTheaterData final
 {
 public:
 	class FString                                 TheaterId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortTheaterMapData                    OutTheaterData;                                    // 0x0010(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortTheaterMapData                    OutTheaterData;                                    // 0x0010(0x0540)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0550(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_551[0x7];                                      // 0x0551(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortFrontEndContext_GetTheaterData) == 0x11821780, "Wrong alignment on FortFrontEndContext_GetTheaterData");
-static_assert(sizeof(FortFrontEndContext_GetTheaterData) == 0x11821780, "Wrong size on FortFrontEndContext_GetTheaterData");
+static_assert(alignof(FortFrontEndContext_GetTheaterData) == 0x000008, "Wrong alignment on FortFrontEndContext_GetTheaterData");
+static_assert(sizeof(FortFrontEndContext_GetTheaterData) == 0x000558, "Wrong size on FortFrontEndContext_GetTheaterData");
 static_assert(offsetof(FortFrontEndContext_GetTheaterData, TheaterId) == 0x000000, "Member 'FortFrontEndContext_GetTheaterData::TheaterId' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetTheaterData, OutTheaterData) == 0x000010, "Member 'FortFrontEndContext_GetTheaterData::OutTheaterData' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetTheaterData, ReturnValue) == 0x000550, "Member 'FortFrontEndContext_GetTheaterData::ReturnValue' has a wrong offset!");
@@ -7001,17 +7003,17 @@ static_assert(offsetof(FortFrontEndContext_GetTheaterType, TheaterId) == 0x00000
 static_assert(offsetof(FortFrontEndContext_GetTheaterType, ReturnValue) == 0x000010, "Member 'FortFrontEndContext_GetTheaterType::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.GetTileMissionDetails
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct FortFrontEndContext_GetTileMissionDetails final
 {
 public:
 	const class AFortTheaterMapTile*              Tile;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortMissionDetails                    MissionDetails;                                    // 0x0008(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortMissionDetails                    MissionDetails;                                    // 0x0008(0x0160)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0168(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortFrontEndContext_GetTileMissionDetails) == 0x1182E980, "Wrong alignment on FortFrontEndContext_GetTileMissionDetails");
-static_assert(sizeof(FortFrontEndContext_GetTileMissionDetails) == 0x1182E980, "Wrong size on FortFrontEndContext_GetTileMissionDetails");
+static_assert(alignof(FortFrontEndContext_GetTileMissionDetails) == 0x000008, "Wrong alignment on FortFrontEndContext_GetTileMissionDetails");
+static_assert(sizeof(FortFrontEndContext_GetTileMissionDetails) == 0x000170, "Wrong size on FortFrontEndContext_GetTileMissionDetails");
 static_assert(offsetof(FortFrontEndContext_GetTileMissionDetails, Tile) == 0x000000, "Member 'FortFrontEndContext_GetTileMissionDetails::Tile' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetTileMissionDetails, MissionDetails) == 0x000008, "Member 'FortFrontEndContext_GetTileMissionDetails::MissionDetails' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_GetTileMissionDetails, ReturnValue) == 0x000168, "Member 'FortFrontEndContext_GetTileMissionDetails::ReturnValue' has a wrong offset!");
@@ -7050,17 +7052,17 @@ static_assert(sizeof(FortFrontEndContext_ShouldShowLoginMessage) == 0x000001, "W
 static_assert(offsetof(FortFrontEndContext_ShouldShowLoginMessage, ReturnValue) == 0x000000, "Member 'FortFrontEndContext_ShouldShowLoginMessage::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortFrontEndContext.TryGetAttributeInfo
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FortFrontEndContext_TryGetAttributeInfo final
 {
 public:
-	struct FGameplayAttribute                     GameplayAttribute;                                 // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortAttributeInfo                     OutAttribute;                                      // 0x0020(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     GameplayAttribute;                                 // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortAttributeInfo                     OutAttribute;                                      // 0x0020(0x0078)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortFrontEndContext_TryGetAttributeInfo) == 0x11821C00, "Wrong alignment on FortFrontEndContext_TryGetAttributeInfo");
-static_assert(sizeof(FortFrontEndContext_TryGetAttributeInfo) == 0x11821C00, "Wrong size on FortFrontEndContext_TryGetAttributeInfo");
+static_assert(alignof(FortFrontEndContext_TryGetAttributeInfo) == 0x000008, "Wrong alignment on FortFrontEndContext_TryGetAttributeInfo");
+static_assert(sizeof(FortFrontEndContext_TryGetAttributeInfo) == 0x0000A0, "Wrong size on FortFrontEndContext_TryGetAttributeInfo");
 static_assert(offsetof(FortFrontEndContext_TryGetAttributeInfo, GameplayAttribute) == 0x000000, "Member 'FortFrontEndContext_TryGetAttributeInfo::GameplayAttribute' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_TryGetAttributeInfo, OutAttribute) == 0x000020, "Member 'FortFrontEndContext_TryGetAttributeInfo::OutAttribute' has a wrong offset!");
 static_assert(offsetof(FortFrontEndContext_TryGetAttributeInfo, ReturnValue) == 0x000098, "Member 'FortFrontEndContext_TryGetAttributeInfo::ReturnValue' has a wrong offset!");
@@ -7156,14 +7158,14 @@ static_assert(sizeof(FortGridWidgetBase_SetTileHeight) == 0x000004, "Wrong size 
 static_assert(offsetof(FortGridWidgetBase_SetTileHeight, Height) == 0x000000, "Member 'FortGridWidgetBase_SetTileHeight::Height' has a wrong offset!");
 
 // Function FortniteUI.FortGridWidgetBase.SetTilePadding
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortGridWidgetBase_SetTilePadding final
 {
 public:
-	struct FMargin                                Padding;                                           // 0x0000(0x322CBBB8)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                Padding;                                           // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGridWidgetBase_SetTilePadding) == 0x322CBBB8, "Wrong alignment on FortGridWidgetBase_SetTilePadding");
-static_assert(sizeof(FortGridWidgetBase_SetTilePadding) == 0x322CBBB8, "Wrong size on FortGridWidgetBase_SetTilePadding");
+static_assert(alignof(FortGridWidgetBase_SetTilePadding) == 0x000004, "Wrong alignment on FortGridWidgetBase_SetTilePadding");
+static_assert(sizeof(FortGridWidgetBase_SetTilePadding) == 0x000010, "Wrong size on FortGridWidgetBase_SetTilePadding");
 static_assert(offsetof(FortGridWidgetBase_SetTilePadding, Padding) == 0x000000, "Member 'FortGridWidgetBase_SetTilePadding::Padding' has a wrong offset!");
 
 // Function FortniteUI.FortGridWidgetBase.SetTilesAcross
@@ -7333,29 +7335,29 @@ static_assert(sizeof(FortHeroManagementContext_GetDisplayStats) == 0x000010, "Wr
 static_assert(offsetof(FortHeroManagementContext_GetDisplayStats, Stats) == 0x000000, "Member 'FortHeroManagementContext_GetDisplayStats::Stats' has a wrong offset!");
 
 // Function FortniteUI.FortHeroManagementContext.GetHeroData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortHeroManagementContext_GetHeroData final
 {
 public:
-	struct FHeroUIData                            HeroData;                                          // 0x0000(0x1182E980)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FHeroUIData                            HeroData;                                          // 0x0000(0x0020)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortHeroManagementContext_GetHeroData) == 0x1182E980, "Wrong alignment on FortHeroManagementContext_GetHeroData");
-static_assert(sizeof(FortHeroManagementContext_GetHeroData) == 0x1182E980, "Wrong size on FortHeroManagementContext_GetHeroData");
+static_assert(alignof(FortHeroManagementContext_GetHeroData) == 0x000008, "Wrong alignment on FortHeroManagementContext_GetHeroData");
+static_assert(sizeof(FortHeroManagementContext_GetHeroData) == 0x000028, "Wrong size on FortHeroManagementContext_GetHeroData");
 static_assert(offsetof(FortHeroManagementContext_GetHeroData, HeroData) == 0x000000, "Member 'FortHeroManagementContext_GetHeroData::HeroData' has a wrong offset!");
 static_assert(offsetof(FortHeroManagementContext_GetHeroData, ReturnValue) == 0x000020, "Member 'FortHeroManagementContext_GetHeroData::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHeroManagementContext.GetHeroDataFromID
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortHeroManagementContext_GetHeroDataFromID final
 {
 public:
 	class FString                                 HeroId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHeroUIData                            ReturnValue;                                       // 0x0010(0x1182E980)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FHeroUIData                            ReturnValue;                                       // 0x0010(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHeroManagementContext_GetHeroDataFromID) == 0x1182E980, "Wrong alignment on FortHeroManagementContext_GetHeroDataFromID");
-static_assert(sizeof(FortHeroManagementContext_GetHeroDataFromID) == 0x1182E980, "Wrong size on FortHeroManagementContext_GetHeroDataFromID");
+static_assert(alignof(FortHeroManagementContext_GetHeroDataFromID) == 0x000008, "Wrong alignment on FortHeroManagementContext_GetHeroDataFromID");
+static_assert(sizeof(FortHeroManagementContext_GetHeroDataFromID) == 0x000030, "Wrong size on FortHeroManagementContext_GetHeroDataFromID");
 static_assert(offsetof(FortHeroManagementContext_GetHeroDataFromID, HeroId) == 0x000000, "Member 'FortHeroManagementContext_GetHeroDataFromID::HeroId' has a wrong offset!");
 static_assert(offsetof(FortHeroManagementContext_GetHeroDataFromID, ReturnValue) == 0x000010, "Member 'FortHeroManagementContext_GetHeroDataFromID::ReturnValue' has a wrong offset!");
 
@@ -7682,34 +7684,34 @@ static_assert(sizeof(FortHeroManagementContext_GetAllHeroIDs) == 0x000010, "Wron
 static_assert(offsetof(FortHeroManagementContext_GetAllHeroIDs, ReturnValue) == 0x000000, "Member 'FortHeroManagementContext_GetAllHeroIDs::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHeroManagementContext.GetAttributeValue
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortHeroManagementContext_GetAttributeValue final
 {
 public:
-	struct FGameplayAttribute                     Attribute;                                         // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     Attribute;                                         // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseProxy;                                         // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHeroManagementContext_GetAttributeValue) == 0x11821C00, "Wrong alignment on FortHeroManagementContext_GetAttributeValue");
-static_assert(sizeof(FortHeroManagementContext_GetAttributeValue) == 0x11821C00, "Wrong size on FortHeroManagementContext_GetAttributeValue");
+static_assert(alignof(FortHeroManagementContext_GetAttributeValue) == 0x000008, "Wrong alignment on FortHeroManagementContext_GetAttributeValue");
+static_assert(sizeof(FortHeroManagementContext_GetAttributeValue) == 0x000028, "Wrong size on FortHeroManagementContext_GetAttributeValue");
 static_assert(offsetof(FortHeroManagementContext_GetAttributeValue, Attribute) == 0x000000, "Member 'FortHeroManagementContext_GetAttributeValue::Attribute' has a wrong offset!");
 static_assert(offsetof(FortHeroManagementContext_GetAttributeValue, bUseProxy) == 0x000020, "Member 'FortHeroManagementContext_GetAttributeValue::bUseProxy' has a wrong offset!");
 static_assert(offsetof(FortHeroManagementContext_GetAttributeValue, ReturnValue) == 0x000024, "Member 'FortHeroManagementContext_GetAttributeValue::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHeroManagementContext.GetAttributeValueFromID
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct FortHeroManagementContext_GetAttributeValueFromID final
 {
 public:
 	class FString                                 HeroId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayAttribute                     Attribute;                                         // 0x0010(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     Attribute;                                         // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseProxy;                                         // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0034(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHeroManagementContext_GetAttributeValueFromID) == 0x11821C00, "Wrong alignment on FortHeroManagementContext_GetAttributeValueFromID");
-static_assert(sizeof(FortHeroManagementContext_GetAttributeValueFromID) == 0x11821C00, "Wrong size on FortHeroManagementContext_GetAttributeValueFromID");
+static_assert(alignof(FortHeroManagementContext_GetAttributeValueFromID) == 0x000008, "Wrong alignment on FortHeroManagementContext_GetAttributeValueFromID");
+static_assert(sizeof(FortHeroManagementContext_GetAttributeValueFromID) == 0x000038, "Wrong size on FortHeroManagementContext_GetAttributeValueFromID");
 static_assert(offsetof(FortHeroManagementContext_GetAttributeValueFromID, HeroId) == 0x000000, "Member 'FortHeroManagementContext_GetAttributeValueFromID::HeroId' has a wrong offset!");
 static_assert(offsetof(FortHeroManagementContext_GetAttributeValueFromID, Attribute) == 0x000010, "Member 'FortHeroManagementContext_GetAttributeValueFromID::Attribute' has a wrong offset!");
 static_assert(offsetof(FortHeroManagementContext_GetAttributeValueFromID, bUseProxy) == 0x000030, "Member 'FortHeroManagementContext_GetAttributeValueFromID::bUseProxy' has a wrong offset!");
@@ -7829,16 +7831,16 @@ static_assert(offsetof(FortHeroManagementContext_GetNumUnspentAbilityPoints, Num
 static_assert(offsetof(FortHeroManagementContext_GetNumUnspentAbilityPoints, ReturnValue) == 0x000004, "Member 'FortHeroManagementContext_GetNumUnspentAbilityPoints::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHeroManagementContext.GetNumUnspentAbilityPointsFromID
-// 0x6175FF80 (0x6175FF80 - 0x0000)
-struct alignas(0x6175FF80) FortHeroManagementContext_GetNumUnspentAbilityPointsFromID final
+// 0x0018 (0x0018 - 0x0000)
+struct FortHeroManagementContext_GetNumUnspentAbilityPointsFromID final
 {
 public:
 	class FString                                 HeroId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortHeroManagementContext_GetNumUnspentAbilityPointsFromID) == 0x6175FF80, "Wrong alignment on FortHeroManagementContext_GetNumUnspentAbilityPointsFromID");
-static_assert(sizeof(FortHeroManagementContext_GetNumUnspentAbilityPointsFromID) == 0x6175FF80, "Wrong size on FortHeroManagementContext_GetNumUnspentAbilityPointsFromID");
+static_assert(alignof(FortHeroManagementContext_GetNumUnspentAbilityPointsFromID) == 0x000008, "Wrong alignment on FortHeroManagementContext_GetNumUnspentAbilityPointsFromID");
+static_assert(sizeof(FortHeroManagementContext_GetNumUnspentAbilityPointsFromID) == 0x000018, "Wrong size on FortHeroManagementContext_GetNumUnspentAbilityPointsFromID");
 static_assert(offsetof(FortHeroManagementContext_GetNumUnspentAbilityPointsFromID, HeroId) == 0x000000, "Member 'FortHeroManagementContext_GetNumUnspentAbilityPointsFromID::HeroId' has a wrong offset!");
 static_assert(offsetof(FortHeroManagementContext_GetNumUnspentAbilityPointsFromID, ReturnValue) == 0x000010, "Member 'FortHeroManagementContext_GetNumUnspentAbilityPointsFromID::ReturnValue' has a wrong offset!");
 
@@ -8010,33 +8012,33 @@ static_assert(sizeof(FortHeroSupportPerkWidget_IsPerkUnlocked) == 0x000001, "Wro
 static_assert(offsetof(FortHeroSupportPerkWidget_IsPerkUnlocked, ReturnValue) == 0x000000, "Member 'FortHeroSupportPerkWidget_IsPerkUnlocked::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortRewardNotificationData.GetIconBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortRewardNotificationData_GetIconBrush final
 {
 public:
-	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0091(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortRewardNotificationData_GetIconBrush) == 0x11827900, "Wrong alignment on FortRewardNotificationData_GetIconBrush");
-static_assert(sizeof(FortRewardNotificationData_GetIconBrush) == 0x11827900, "Wrong size on FortRewardNotificationData_GetIconBrush");
+static_assert(alignof(FortRewardNotificationData_GetIconBrush) == 0x000008, "Wrong alignment on FortRewardNotificationData_GetIconBrush");
+static_assert(sizeof(FortRewardNotificationData_GetIconBrush) == 0x000098, "Wrong size on FortRewardNotificationData_GetIconBrush");
 static_assert(offsetof(FortRewardNotificationData_GetIconBrush, IconBrush) == 0x000000, "Member 'FortRewardNotificationData_GetIconBrush::IconBrush' has a wrong offset!");
 static_assert(offsetof(FortRewardNotificationData_GetIconBrush, BrushSize) == 0x000090, "Member 'FortRewardNotificationData_GetIconBrush::BrushSize' has a wrong offset!");
 static_assert(offsetof(FortRewardNotificationData_GetIconBrush, ReturnValue) == 0x000091, "Member 'FortRewardNotificationData_GetIconBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortRewardEpicQuestData.GetIconBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortRewardEpicQuestData_GetIconBrush final
 {
 public:
-	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0091(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortRewardEpicQuestData_GetIconBrush) == 0x11827900, "Wrong alignment on FortRewardEpicQuestData_GetIconBrush");
-static_assert(sizeof(FortRewardEpicQuestData_GetIconBrush) == 0x11827900, "Wrong size on FortRewardEpicQuestData_GetIconBrush");
+static_assert(alignof(FortRewardEpicQuestData_GetIconBrush) == 0x000008, "Wrong alignment on FortRewardEpicQuestData_GetIconBrush");
+static_assert(sizeof(FortRewardEpicQuestData_GetIconBrush) == 0x000098, "Wrong size on FortRewardEpicQuestData_GetIconBrush");
 static_assert(offsetof(FortRewardEpicQuestData_GetIconBrush, IconBrush) == 0x000000, "Member 'FortRewardEpicQuestData_GetIconBrush::IconBrush' has a wrong offset!");
 static_assert(offsetof(FortRewardEpicQuestData_GetIconBrush, BrushSize) == 0x000090, "Member 'FortRewardEpicQuestData_GetIconBrush::BrushSize' has a wrong offset!");
 static_assert(offsetof(FortRewardEpicQuestData_GetIconBrush, ReturnValue) == 0x000091, "Member 'FortRewardEpicQuestData_GetIconBrush::ReturnValue' has a wrong offset!");
@@ -8107,31 +8109,31 @@ static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForSquad
 static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForSquadSlot, ReturnValue) == 0x000018, "Member 'FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForSquadSlot::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseNodeItemUtilities.GetHomebaseNodeItemForTagContainer
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer final
 {
 public:
 	class AFortPlayerController*                  FortPC;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  Tags;                                              // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  Tags;                                              // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UFortHomebaseNodeItem*                  ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer) == 0x11821C00, "Wrong alignment on FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer");
-static_assert(sizeof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer) == 0x11821C00, "Wrong size on FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer");
+static_assert(alignof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer) == 0x000008, "Wrong alignment on FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer");
+static_assert(sizeof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer) == 0x000030, "Wrong size on FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer, FortPC) == 0x000000, "Member 'FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer::FortPC' has a wrong offset!");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer, Tags) == 0x000008, "Member 'FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer::Tags' has a wrong offset!");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer, ReturnValue) == 0x000028, "Member 'FortHomebaseNodeItemUtilities_GetHomebaseNodeItemForTagContainer::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseNodeItemUtilities.GetHomebaseNodeItemNameForTagContainer
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer final
 {
 public:
 	class AFortPlayerController*                  FortPC;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  Tags;                                              // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  Tags;                                              // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FName                                   ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer) == 0x11821C00, "Wrong alignment on FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer");
-static_assert(sizeof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer) == 0x11821C00, "Wrong size on FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer");
+static_assert(alignof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer) == 0x000008, "Wrong alignment on FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer");
+static_assert(sizeof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer) == 0x000030, "Wrong size on FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer, FortPC) == 0x000000, "Member 'FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer::FortPC' has a wrong offset!");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer, Tags) == 0x000008, "Member 'FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer::Tags' has a wrong offset!");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer, ReturnValue) == 0x000028, "Member 'FortHomebaseNodeItemUtilities_GetHomebaseNodeItemNameForTagContainer::ReturnValue' has a wrong offset!");
@@ -8161,17 +8163,17 @@ static_assert(sizeof(FortHomebaseNodeItemUtilities_GetHomebaseNodePageNames) == 
 static_assert(offsetof(FortHomebaseNodeItemUtilities_GetHomebaseNodePageNames, NodePages) == 0x000000, "Member 'FortHomebaseNodeItemUtilities_GetHomebaseNodePageNames::NodePages' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseNodeItemUtilities.IsHomebaseNodeItemUnseenForTagContainer
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer final
 {
 public:
 	class AFortPlayerController*                  FortPC;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  Tags;                                              // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  Tags;                                              // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer) == 0x11821C00, "Wrong alignment on FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer");
-static_assert(sizeof(FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer) == 0x11821C00, "Wrong size on FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer");
+static_assert(alignof(FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer) == 0x000008, "Wrong alignment on FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer");
+static_assert(sizeof(FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer) == 0x000030, "Wrong size on FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer, FortPC) == 0x000000, "Member 'FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer::FortPC' has a wrong offset!");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer, Tags) == 0x000008, "Member 'FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer::Tags' has a wrong offset!");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer, ReturnValue) == 0x000028, "Member 'FortHomebaseNodeItemUtilities_IsHomebaseNodeItemUnseenForTagContainer::ReturnValue' has a wrong offset!");
@@ -8195,18 +8197,18 @@ static_assert(offsetof(FortHomebaseNodeItemUtilities_IsSquadSlotUnseen, SquadSlo
 static_assert(offsetof(FortHomebaseNodeItemUtilities_IsSquadSlotUnseen, ReturnValue) == 0x000014, "Member 'FortHomebaseNodeItemUtilities_IsSquadSlotUnseen::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseNodeItemUtilities.TryGetHomebaseNodeState
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState final
 {
 public:
 	const class UWidget*                          Widget;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   NodeID;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHomebaseNodeState                     OutNodeState;                                      // 0x0010(0x11821780)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FHomebaseNodeState                     OutNodeState;                                      // 0x0010(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState) == 0x11821780, "Wrong alignment on FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState");
-static_assert(sizeof(FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState) == 0x11821780, "Wrong size on FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState");
+static_assert(alignof(FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState) == 0x000008, "Wrong alignment on FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState");
+static_assert(sizeof(FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState) == 0x000020, "Wrong size on FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState, Widget) == 0x000000, "Member 'FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState::Widget' has a wrong offset!");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState, NodeID) == 0x000008, "Member 'FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState::NodeID' has a wrong offset!");
 static_assert(offsetof(FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState, OutNodeState) == 0x000010, "Member 'FortHomebaseNodeItemUtilities_TryGetHomebaseNodeState::OutNodeState' has a wrong offset!");
@@ -8452,14 +8454,14 @@ static_assert(offsetof(FortHomebaseUIContext_GetNodeTagBonusesForDisplay, OutGra
 static_assert(offsetof(FortHomebaseUIContext_GetNodeTagBonusesForDisplay, ReturnValue) == 0x000018, "Member 'FortHomebaseUIContext_GetNodeTagBonusesForDisplay::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseUIContext.GetQuestNodeColour
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortHomebaseUIContext_GetQuestNodeColour final
 {
 public:
-	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHomebaseUIContext_GetQuestNodeColour) == 0x322CBBB8, "Wrong alignment on FortHomebaseUIContext_GetQuestNodeColour");
-static_assert(sizeof(FortHomebaseUIContext_GetQuestNodeColour) == 0x322CBBB8, "Wrong size on FortHomebaseUIContext_GetQuestNodeColour");
+static_assert(alignof(FortHomebaseUIContext_GetQuestNodeColour) == 0x000008, "Wrong alignment on FortHomebaseUIContext_GetQuestNodeColour");
+static_assert(sizeof(FortHomebaseUIContext_GetQuestNodeColour) == 0x000028, "Wrong size on FortHomebaseUIContext_GetQuestNodeColour");
 static_assert(offsetof(FortHomebaseUIContext_GetQuestNodeColour, ReturnValue) == 0x000000, "Member 'FortHomebaseUIContext_GetQuestNodeColour::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseUIContext.GetRootSkillTreeNodeId
@@ -8485,28 +8487,28 @@ static_assert(sizeof(FortHomebaseUIContext_GetRootSkillTreePageId) == 0x000008, 
 static_assert(offsetof(FortHomebaseUIContext_GetRootSkillTreePageId, ReturnValue) == 0x000000, "Member 'FortHomebaseUIContext_GetRootSkillTreePageId::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseUIContext.GetSquadIcon
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0368 (0x0368 - 0x0000)
 struct FortHomebaseUIContext_GetSquadIcon final
 {
 public:
 	class FName                                   SquadId;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeBrush                    ReturnValue;                                       // 0x0008(0x11827900)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    ReturnValue;                                       // 0x0008(0x0360)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHomebaseUIContext_GetSquadIcon) == 0x11821780, "Wrong alignment on FortHomebaseUIContext_GetSquadIcon");
-static_assert(sizeof(FortHomebaseUIContext_GetSquadIcon) == 0x11821780, "Wrong size on FortHomebaseUIContext_GetSquadIcon");
+static_assert(alignof(FortHomebaseUIContext_GetSquadIcon) == 0x000008, "Wrong alignment on FortHomebaseUIContext_GetSquadIcon");
+static_assert(sizeof(FortHomebaseUIContext_GetSquadIcon) == 0x000368, "Wrong size on FortHomebaseUIContext_GetSquadIcon");
 static_assert(offsetof(FortHomebaseUIContext_GetSquadIcon, SquadId) == 0x000000, "Member 'FortHomebaseUIContext_GetSquadIcon::SquadId' has a wrong offset!");
 static_assert(offsetof(FortHomebaseUIContext_GetSquadIcon, ReturnValue) == 0x000008, "Member 'FortHomebaseUIContext_GetSquadIcon::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseUIContext.GetWorkerSetBonusEffectModifiers
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers final
 {
 public:
-	struct FGameplayTag                           SetBonusTag;                                       // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           SetBonusTag;                                       // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FFortAttributeModifierDisplayData> OutModifiers;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers) == 0x11821D80, "Wrong alignment on FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers");
-static_assert(sizeof(FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers) == 0x11821D80, "Wrong size on FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers");
+static_assert(alignof(FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers) == 0x000008, "Wrong alignment on FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers");
+static_assert(sizeof(FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers) == 0x000018, "Wrong size on FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers");
 static_assert(offsetof(FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers, SetBonusTag) == 0x000000, "Member 'FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers::SetBonusTag' has a wrong offset!");
 static_assert(offsetof(FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers, OutModifiers) == 0x000008, "Member 'FortHomebaseUIContext_GetWorkerSetBonusEffectModifiers::OutModifiers' has a wrong offset!");
 
@@ -8635,27 +8637,27 @@ static_assert(offsetof(FortHUDContext_ForwardOnWeaponEquipped, NewWeapon) == 0x0
 static_assert(offsetof(FortHUDContext_ForwardOnWeaponEquipped, PrevWeapon) == 0x000008, "Member 'FortHUDContext_ForwardOnWeaponEquipped::PrevWeapon' has a wrong offset!");
 
 // Function FortniteUI.FortHUDContext.GetKillerVisualInfoFromDeathReport
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct FortHUDContext_GetKillerVisualInfoFromDeathReport final
 {
 public:
-	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FFortKillerVisualInfo                  ReturnValue;                                       // 0x0050(0x1182E980)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortKillerVisualInfo                  ReturnValue;                                       // 0x0050(0x00A8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHUDContext_GetKillerVisualInfoFromDeathReport) == 0x1182E980, "Wrong alignment on FortHUDContext_GetKillerVisualInfoFromDeathReport");
-static_assert(sizeof(FortHUDContext_GetKillerVisualInfoFromDeathReport) == 0x1182E980, "Wrong size on FortHUDContext_GetKillerVisualInfoFromDeathReport");
+static_assert(alignof(FortHUDContext_GetKillerVisualInfoFromDeathReport) == 0x000008, "Wrong alignment on FortHUDContext_GetKillerVisualInfoFromDeathReport");
+static_assert(sizeof(FortHUDContext_GetKillerVisualInfoFromDeathReport) == 0x0000F8, "Wrong size on FortHUDContext_GetKillerVisualInfoFromDeathReport");
 static_assert(offsetof(FortHUDContext_GetKillerVisualInfoFromDeathReport, DeathReport) == 0x000000, "Member 'FortHUDContext_GetKillerVisualInfoFromDeathReport::DeathReport' has a wrong offset!");
 static_assert(offsetof(FortHUDContext_GetKillerVisualInfoFromDeathReport, ReturnValue) == 0x000050, "Member 'FortHUDContext_GetKillerVisualInfoFromDeathReport::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHUDContext.HandleLocalPawnDied
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct FortHUDContext_HandleLocalPawnDied final
 {
 public:
-	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortHUDContext_HandleLocalPawnDied) == 0x11821780, "Wrong alignment on FortHUDContext_HandleLocalPawnDied");
-static_assert(sizeof(FortHUDContext_HandleLocalPawnDied) == 0x11821780, "Wrong size on FortHUDContext_HandleLocalPawnDied");
+static_assert(alignof(FortHUDContext_HandleLocalPawnDied) == 0x000008, "Wrong alignment on FortHUDContext_HandleLocalPawnDied");
+static_assert(sizeof(FortHUDContext_HandleLocalPawnDied) == 0x000050, "Wrong size on FortHUDContext_HandleLocalPawnDied");
 static_assert(offsetof(FortHUDContext_HandleLocalPawnDied, DeathReport) == 0x000000, "Member 'FortHUDContext_HandleLocalPawnDied::DeathReport' has a wrong offset!");
 
 // Function FortniteUI.FortHUDContext.RemovePointOfInterest
@@ -8692,16 +8694,16 @@ static_assert(sizeof(FortHUDContext_SetCursorModeLocked) == 0x000001, "Wrong siz
 static_assert(offsetof(FortHUDContext_SetCursorModeLocked, bLocked) == 0x000000, "Member 'FortHUDContext_SetCursorModeLocked::bLocked' has a wrong offset!");
 
 // Function FortniteUI.FortHUDContext.SetHUDElementVisibility
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortHUDContext_SetHUDElementVisibility final
 {
 public:
-	struct FGameplayTagContainer                  HUDElementTags;                                    // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  HUDElementTags;                                    // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bHideElements;                                     // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortHUDContext_SetHUDElementVisibility) == 0x11821C00, "Wrong alignment on FortHUDContext_SetHUDElementVisibility");
-static_assert(sizeof(FortHUDContext_SetHUDElementVisibility) == 0x11821C00, "Wrong size on FortHUDContext_SetHUDElementVisibility");
+static_assert(alignof(FortHUDContext_SetHUDElementVisibility) == 0x000008, "Wrong alignment on FortHUDContext_SetHUDElementVisibility");
+static_assert(sizeof(FortHUDContext_SetHUDElementVisibility) == 0x000028, "Wrong size on FortHUDContext_SetHUDElementVisibility");
 static_assert(offsetof(FortHUDContext_SetHUDElementVisibility, HUDElementTags) == 0x000000, "Member 'FortHUDContext_SetHUDElementVisibility::HUDElementTags' has a wrong offset!");
 static_assert(offsetof(FortHUDContext_SetHUDElementVisibility, bHideElements) == 0x000020, "Member 'FortHUDContext_SetHUDElementVisibility::bHideElements' has a wrong offset!");
 
@@ -8728,16 +8730,16 @@ static_assert(sizeof(FortHUDContext_SetIndicatorsState) == 0x000001, "Wrong size
 static_assert(offsetof(FortHUDContext_SetIndicatorsState, NewState) == 0x000000, "Member 'FortHUDContext_SetIndicatorsState::NewState' has a wrong offset!");
 
 // Function FortniteUI.FortHUDContext.AreHUDElementsVisible
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortHUDContext_AreHUDElementsVisible final
 {
 public:
-	struct FGameplayTagContainer                  HUDElementTags;                                    // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  HUDElementTags;                                    // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortHUDContext_AreHUDElementsVisible) == 0x11821C00, "Wrong alignment on FortHUDContext_AreHUDElementsVisible");
-static_assert(sizeof(FortHUDContext_AreHUDElementsVisible) == 0x11821C00, "Wrong size on FortHUDContext_AreHUDElementsVisible");
+static_assert(alignof(FortHUDContext_AreHUDElementsVisible) == 0x000008, "Wrong alignment on FortHUDContext_AreHUDElementsVisible");
+static_assert(sizeof(FortHUDContext_AreHUDElementsVisible) == 0x000028, "Wrong size on FortHUDContext_AreHUDElementsVisible");
 static_assert(offsetof(FortHUDContext_AreHUDElementsVisible, HUDElementTags) == 0x000000, "Member 'FortHUDContext_AreHUDElementsVisible::HUDElementTags' has a wrong offset!");
 static_assert(offsetof(FortHUDContext_AreHUDElementsVisible, ReturnValue) == 0x000020, "Member 'FortHUDContext_AreHUDElementsVisible::ReturnValue' has a wrong offset!");
 
@@ -8764,16 +8766,16 @@ static_assert(sizeof(FortHUDContext_GetBluGloManager) == 0x000008, "Wrong size o
 static_assert(offsetof(FortHUDContext_GetBluGloManager, ReturnValue) == 0x000000, "Member 'FortHUDContext_GetBluGloManager::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHUDContext.GetCurrentBasicMissionInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x03C0 (0x03C0 - 0x0000)
 struct FortHUDContext_GetCurrentBasicMissionInfo final
 {
 public:
-	struct FFortBasicMissionInfo                  BasicMissionInfo;                                  // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortBasicMissionInfo                  BasicMissionInfo;                                  // 0x0000(0x03B8)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x03B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3B9[0x7];                                      // 0x03B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortHUDContext_GetCurrentBasicMissionInfo) == 0x1182E980, "Wrong alignment on FortHUDContext_GetCurrentBasicMissionInfo");
-static_assert(sizeof(FortHUDContext_GetCurrentBasicMissionInfo) == 0x1182E980, "Wrong size on FortHUDContext_GetCurrentBasicMissionInfo");
+static_assert(alignof(FortHUDContext_GetCurrentBasicMissionInfo) == 0x000008, "Wrong alignment on FortHUDContext_GetCurrentBasicMissionInfo");
+static_assert(sizeof(FortHUDContext_GetCurrentBasicMissionInfo) == 0x0003C0, "Wrong size on FortHUDContext_GetCurrentBasicMissionInfo");
 static_assert(offsetof(FortHUDContext_GetCurrentBasicMissionInfo, BasicMissionInfo) == 0x000000, "Member 'FortHUDContext_GetCurrentBasicMissionInfo::BasicMissionInfo' has a wrong offset!");
 static_assert(offsetof(FortHUDContext_GetCurrentBasicMissionInfo, ReturnValue) == 0x0003B8, "Member 'FortHUDContext_GetCurrentBasicMissionInfo::ReturnValue' has a wrong offset!");
 
@@ -8800,16 +8802,16 @@ static_assert(sizeof(FortHUDContext_GetEarnedBadges) == 0x000010, "Wrong size on
 static_assert(offsetof(FortHUDContext_GetEarnedBadges, ReturnValue) == 0x000000, "Member 'FortHUDContext_GetEarnedBadges::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortHUDContext.GetFocusedBuildingInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct FortHUDContext_GetFocusedBuildingInfo final
 {
 public:
-	struct FFortFocusedBuildingInfo               OutBuildingInfo;                                   // 0x0000(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortFocusedBuildingInfo               OutBuildingInfo;                                   // 0x0000(0x0050)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortHUDContext_GetFocusedBuildingInfo) == 0x11821780, "Wrong alignment on FortHUDContext_GetFocusedBuildingInfo");
-static_assert(sizeof(FortHUDContext_GetFocusedBuildingInfo) == 0x11821780, "Wrong size on FortHUDContext_GetFocusedBuildingInfo");
+static_assert(alignof(FortHUDContext_GetFocusedBuildingInfo) == 0x000008, "Wrong alignment on FortHUDContext_GetFocusedBuildingInfo");
+static_assert(sizeof(FortHUDContext_GetFocusedBuildingInfo) == 0x000058, "Wrong size on FortHUDContext_GetFocusedBuildingInfo");
 static_assert(offsetof(FortHUDContext_GetFocusedBuildingInfo, OutBuildingInfo) == 0x000000, "Member 'FortHUDContext_GetFocusedBuildingInfo::OutBuildingInfo' has a wrong offset!");
 static_assert(offsetof(FortHUDContext_GetFocusedBuildingInfo, ReturnValue) == 0x000050, "Member 'FortHUDContext_GetFocusedBuildingInfo::ReturnValue' has a wrong offset!");
 
@@ -9048,14 +9050,14 @@ static_assert(sizeof(FortRewardNotificationSubWidget_IsPrimaryActionHidden) == 0
 static_assert(offsetof(FortRewardNotificationSubWidget_IsPrimaryActionHidden, bHidden) == 0x000000, "Member 'FortRewardNotificationSubWidget_IsPrimaryActionHidden::bHidden' has a wrong offset!");
 
 // Function FortniteUI.FortRewardNotificationSubWidget.RemoveInputActionHandler
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortRewardNotificationSubWidget_RemoveInputActionHandler final
 {
 public:
-	struct FDataTableRowHandle                    InputActionRow;                                    // 0x0000(0x1182EB00)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                    InputActionRow;                                    // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortRewardNotificationSubWidget_RemoveInputActionHandler) == 0x1182EB00, "Wrong alignment on FortRewardNotificationSubWidget_RemoveInputActionHandler");
-static_assert(sizeof(FortRewardNotificationSubWidget_RemoveInputActionHandler) == 0x1182EB00, "Wrong size on FortRewardNotificationSubWidget_RemoveInputActionHandler");
+static_assert(alignof(FortRewardNotificationSubWidget_RemoveInputActionHandler) == 0x000008, "Wrong alignment on FortRewardNotificationSubWidget_RemoveInputActionHandler");
+static_assert(sizeof(FortRewardNotificationSubWidget_RemoveInputActionHandler) == 0x000010, "Wrong size on FortRewardNotificationSubWidget_RemoveInputActionHandler");
 static_assert(offsetof(FortRewardNotificationSubWidget_RemoveInputActionHandler, InputActionRow) == 0x000000, "Member 'FortRewardNotificationSubWidget_RemoveInputActionHandler::InputActionRow' has a wrong offset!");
 
 // Function FortniteUI.FortRewardNotificationSubWidget.SetInputActionHandlerState
@@ -9336,32 +9338,32 @@ static_assert(sizeof(FortHUDTargetUnderReticleWidget_HandleOnHUDTargetUnderRetic
 static_assert(offsetof(FortHUDTargetUnderReticleWidget_HandleOnHUDTargetUnderReticle, NewTarget) == 0x000000, "Member 'FortHUDTargetUnderReticleWidget_HandleOnHUDTargetUnderReticle::NewTarget' has a wrong offset!");
 
 // Function FortniteUI.FortRewardQuestData.GetIconBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortRewardQuestData_GetIconBrush final
 {
 public:
-	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0091(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortRewardQuestData_GetIconBrush) == 0x11827900, "Wrong alignment on FortRewardQuestData_GetIconBrush");
-static_assert(sizeof(FortRewardQuestData_GetIconBrush) == 0x11827900, "Wrong size on FortRewardQuestData_GetIconBrush");
+static_assert(alignof(FortRewardQuestData_GetIconBrush) == 0x000008, "Wrong alignment on FortRewardQuestData_GetIconBrush");
+static_assert(sizeof(FortRewardQuestData_GetIconBrush) == 0x000098, "Wrong size on FortRewardQuestData_GetIconBrush");
 static_assert(offsetof(FortRewardQuestData_GetIconBrush, IconBrush) == 0x000000, "Member 'FortRewardQuestData_GetIconBrush::IconBrush' has a wrong offset!");
 static_assert(offsetof(FortRewardQuestData_GetIconBrush, BrushSize) == 0x000090, "Member 'FortRewardQuestData_GetIconBrush::BrushSize' has a wrong offset!");
 static_assert(offsetof(FortRewardQuestData_GetIconBrush, ReturnValue) == 0x000091, "Member 'FortRewardQuestData_GetIconBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortActionHandlerPanel.OnHandleAction
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct FortActionHandlerPanel_OnHandleAction final
 {
 public:
-	struct FEventReply                            Result;                                            // 0x0000(0x11827900)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FEventReply                            Result;                                            // 0x0000(0x00B8)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          bPassThrough;                                      // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortActionHandlerPanel_OnHandleAction) == 0x11827900, "Wrong alignment on FortActionHandlerPanel_OnHandleAction");
-static_assert(sizeof(FortActionHandlerPanel_OnHandleAction) == 0x11827900, "Wrong size on FortActionHandlerPanel_OnHandleAction");
+static_assert(alignof(FortActionHandlerPanel_OnHandleAction) == 0x000008, "Wrong alignment on FortActionHandlerPanel_OnHandleAction");
+static_assert(sizeof(FortActionHandlerPanel_OnHandleAction) == 0x0000C0, "Wrong size on FortActionHandlerPanel_OnHandleAction");
 static_assert(offsetof(FortActionHandlerPanel_OnHandleAction, Result) == 0x000000, "Member 'FortActionHandlerPanel_OnHandleAction::Result' has a wrong offset!");
 static_assert(offsetof(FortActionHandlerPanel_OnHandleAction, bPassThrough) == 0x0000B8, "Member 'FortActionHandlerPanel_OnHandleAction::bPassThrough' has a wrong offset!");
 
@@ -9463,16 +9465,16 @@ static_assert(offsetof(FortVaultWidget_SetCachedSortType, InSortType) == 0x00000
 static_assert(offsetof(FortVaultWidget_SetCachedSortType, InContentSubType) == 0x000001, "Member 'FortVaultWidget_SetCachedSortType::InContentSubType' has a wrong offset!");
 
 // Function FortniteUI.FortVaultWidget.ToggleItemRecycling
-// 0x0038 (0x0038 - 0x0000)
-struct alignas(0x38) FortVaultWidget_ToggleItemRecycling final
+// 0x0010 (0x0010 - 0x0000)
+struct FortVaultWidget_ToggleItemRecycling final
 {
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortVaultWidget_ToggleItemRecycling) == 0x000038, "Wrong alignment on FortVaultWidget_ToggleItemRecycling");
-static_assert(sizeof(FortVaultWidget_ToggleItemRecycling) == 0x000038, "Wrong size on FortVaultWidget_ToggleItemRecycling");
+static_assert(alignof(FortVaultWidget_ToggleItemRecycling) == 0x000008, "Wrong alignment on FortVaultWidget_ToggleItemRecycling");
+static_assert(sizeof(FortVaultWidget_ToggleItemRecycling) == 0x000010, "Wrong size on FortVaultWidget_ToggleItemRecycling");
 static_assert(offsetof(FortVaultWidget_ToggleItemRecycling, Item) == 0x000000, "Member 'FortVaultWidget_ToggleItemRecycling::Item' has a wrong offset!");
 static_assert(offsetof(FortVaultWidget_ToggleItemRecycling, ReturnValue) == 0x000008, "Member 'FortVaultWidget_ToggleItemRecycling::ReturnValue' has a wrong offset!");
 
@@ -9490,15 +9492,15 @@ static_assert(offsetof(FortVaultWidget_GetCachedSortType, InContentSubType) == 0
 static_assert(offsetof(FortVaultWidget_GetCachedSortType, ReturnValue) == 0x000001, "Member 'FortVaultWidget_GetCachedSortType::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortVaultWidget.GetItemList
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortVaultWidget_GetItemList final
 {
 public:
 	TArray<class UFortAccountItem*>               OutItemList;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FVaultContentDetails                   Details;                                           // 0x0010(0x11821780)(Parm, NativeAccessSpecifierPublic)
+	struct FVaultContentDetails                   Details;                                           // 0x0010(0x0018)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortVaultWidget_GetItemList) == 0x11821780, "Wrong alignment on FortVaultWidget_GetItemList");
-static_assert(sizeof(FortVaultWidget_GetItemList) == 0x11821780, "Wrong size on FortVaultWidget_GetItemList");
+static_assert(alignof(FortVaultWidget_GetItemList) == 0x000008, "Wrong alignment on FortVaultWidget_GetItemList");
+static_assert(sizeof(FortVaultWidget_GetItemList) == 0x000028, "Wrong size on FortVaultWidget_GetItemList");
 static_assert(offsetof(FortVaultWidget_GetItemList, OutItemList) == 0x000000, "Member 'FortVaultWidget_GetItemList::OutItemList' has a wrong offset!");
 static_assert(offsetof(FortVaultWidget_GetItemList, Details) == 0x000010, "Member 'FortVaultWidget_GetItemList::Details' has a wrong offset!");
 
@@ -9638,25 +9640,25 @@ static_assert(sizeof(FortItemCategoryIndicator_SetOrdinalOfCategoryToRepresent) 
 static_assert(offsetof(FortItemCategoryIndicator_SetOrdinalOfCategoryToRepresent, ItemCategoryOrdinal) == 0x000000, "Member 'FortItemCategoryIndicator_SetOrdinalOfCategoryToRepresent::ItemCategoryOrdinal' has a wrong offset!");
 
 // Function FortniteUI.FortSquadLandingPageDefenderSummary.HandleAddDefenderSquadDetailsBP
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP final
 {
 public:
-	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x1182E980)(Parm, NativeAccessSpecifierPublic)
+	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x0030)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP) == 0x1182E980, "Wrong alignment on FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP");
-static_assert(sizeof(FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP) == 0x1182E980, "Wrong size on FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP");
+static_assert(alignof(FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP) == 0x000008, "Wrong alignment on FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP");
+static_assert(sizeof(FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP) == 0x000030, "Wrong size on FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP");
 static_assert(offsetof(FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP, DefenderSummaryInfo) == 0x000000, "Member 'FortSquadLandingPageDefenderSummary_HandleAddDefenderSquadDetailsBP::DefenderSummaryInfo' has a wrong offset!");
 
 // Function FortniteUI.FortSquadLandingPageDefenderSummary.HandleAddLockedDefenderSquadDetailsBP
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP final
 {
 public:
-	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x1182E980)(Parm, NativeAccessSpecifierPublic)
+	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x0030)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP) == 0x1182E980, "Wrong alignment on FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP");
-static_assert(sizeof(FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP) == 0x1182E980, "Wrong size on FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP");
+static_assert(alignof(FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP) == 0x000008, "Wrong alignment on FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP");
+static_assert(sizeof(FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP) == 0x000030, "Wrong size on FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP");
 static_assert(offsetof(FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP, DefenderSummaryInfo) == 0x000000, "Member 'FortSquadLandingPageDefenderSummary_HandleAddLockedDefenderSquadDetailsBP::DefenderSummaryInfo' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.AreAnyItemsAnimate
@@ -9805,17 +9807,17 @@ static_assert(offsetof(FortInventoryContext_GetUserFriendlyTags, Item) == 0x0000
 static_assert(offsetof(FortInventoryContext_GetUserFriendlyTags, ReturnValue) == 0x000008, "Member 'FortInventoryContext_GetUserFriendlyTags::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.MakeItemQuantityPair
-// 0x52535 (0x52535 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct FortInventoryContext_MakeItemQuantityPair final
 {
 public:
 	const class UFortItemDefinition*              ItemDefinition;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ItemQuantity;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  ReturnValue;                                       // 0x0010(0x52535)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FFortItemQuantityPair                  ReturnValue;                                       // 0x0010(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortInventoryContext_MakeItemQuantityPair) == 0x052535, "Wrong alignment on FortInventoryContext_MakeItemQuantityPair");
-static_assert(sizeof(FortInventoryContext_MakeItemQuantityPair) == 0x052535, "Wrong size on FortInventoryContext_MakeItemQuantityPair");
+static_assert(alignof(FortInventoryContext_MakeItemQuantityPair) == 0x000008, "Wrong alignment on FortInventoryContext_MakeItemQuantityPair");
+static_assert(sizeof(FortInventoryContext_MakeItemQuantityPair) == 0x000038, "Wrong size on FortInventoryContext_MakeItemQuantityPair");
 static_assert(offsetof(FortInventoryContext_MakeItemQuantityPair, ItemDefinition) == 0x000000, "Member 'FortInventoryContext_MakeItemQuantityPair::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_MakeItemQuantityPair, ItemQuantity) == 0x000008, "Member 'FortInventoryContext_MakeItemQuantityPair::ItemQuantity' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_MakeItemQuantityPair, ReturnValue) == 0x000010, "Member 'FortInventoryContext_MakeItemQuantityPair::ReturnValue' has a wrong offset!");
@@ -9910,18 +9912,19 @@ static_assert(offsetof(FortInventoryContext_DropItem, ItemBeingDropped) == 0x000
 static_assert(offsetof(FortInventoryContext_DropItem, Quantity) == 0x000008, "Member 'FortInventoryContext_DropItem::Quantity' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.DropItemOnPlayerOrWorld
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct FortInventoryContext_DropItemOnPlayerOrWorld final
 {
 public:
 	const class UFortWorldItem*                   ItemBeingDropped;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AFortPlayerState*                       InDestinationPlayer;                               // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidget*                                OwnerWidget;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0018(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FGeometry                              InGeometry;                                        // 0x0090(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0018(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGeometry                              InGeometry;                                        // 0x0090(0x0034)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortInventoryContext_DropItemOnPlayerOrWorld) == 0x11829280, "Wrong alignment on FortInventoryContext_DropItemOnPlayerOrWorld");
-static_assert(sizeof(FortInventoryContext_DropItemOnPlayerOrWorld) == 0x11829280, "Wrong size on FortInventoryContext_DropItemOnPlayerOrWorld");
+static_assert(alignof(FortInventoryContext_DropItemOnPlayerOrWorld) == 0x000008, "Wrong alignment on FortInventoryContext_DropItemOnPlayerOrWorld");
+static_assert(sizeof(FortInventoryContext_DropItemOnPlayerOrWorld) == 0x0000C8, "Wrong size on FortInventoryContext_DropItemOnPlayerOrWorld");
 static_assert(offsetof(FortInventoryContext_DropItemOnPlayerOrWorld, ItemBeingDropped) == 0x000000, "Member 'FortInventoryContext_DropItemOnPlayerOrWorld::ItemBeingDropped' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_DropItemOnPlayerOrWorld, InDestinationPlayer) == 0x000008, "Member 'FortInventoryContext_DropItemOnPlayerOrWorld::InDestinationPlayer' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_DropItemOnPlayerOrWorld, OwnerWidget) == 0x000010, "Member 'FortInventoryContext_DropItemOnPlayerOrWorld::OwnerWidget' has a wrong offset!");
@@ -9985,19 +9988,19 @@ static_assert(offsetof(FortInventoryContext_GetConversionRecipesFromItemDefintio
 static_assert(offsetof(FortInventoryContext_GetConversionRecipesFromItemDefintion, ReturnValue) == 0x000008, "Member 'FortInventoryContext_GetConversionRecipesFromItemDefintion::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.GetGameplayTagByIndex
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct FortInventoryContext_GetGameplayTagByIndex final
 {
 public:
-	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x11821C00)(Parm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x0020)(Parm, NativeAccessSpecifierPublic)
 	int32                                         Index_0;                                           // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           Result;                                            // 0x0028(0x11821D80)(Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           Result;                                            // 0x0028(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortInventoryContext_GetGameplayTagByIndex) == 0x11821D80, "Wrong alignment on FortInventoryContext_GetGameplayTagByIndex");
-static_assert(sizeof(FortInventoryContext_GetGameplayTagByIndex) == 0x11821D80, "Wrong size on FortInventoryContext_GetGameplayTagByIndex");
+static_assert(alignof(FortInventoryContext_GetGameplayTagByIndex) == 0x000008, "Wrong alignment on FortInventoryContext_GetGameplayTagByIndex");
+static_assert(sizeof(FortInventoryContext_GetGameplayTagByIndex) == 0x000038, "Wrong size on FortInventoryContext_GetGameplayTagByIndex");
 static_assert(offsetof(FortInventoryContext_GetGameplayTagByIndex, GameplayTagContainer) == 0x000000, "Member 'FortInventoryContext_GetGameplayTagByIndex::GameplayTagContainer' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_GetGameplayTagByIndex, Index_0) == 0x000020, "Member 'FortInventoryContext_GetGameplayTagByIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_GetGameplayTagByIndex, Result) == 0x000028, "Member 'FortInventoryContext_GetGameplayTagByIndex::Result' has a wrong offset!");
@@ -10153,17 +10156,17 @@ static_assert(offsetof(FortInventoryContext_CanRecycle, OutRestrictionReasons) =
 static_assert(offsetof(FortInventoryContext_CanRecycle, ReturnValue) == 0x000018, "Member 'FortInventoryContext_CanRecycle::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.DoesItemMatchFilter
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortInventoryContext_DoesItemMatchFilter final
 {
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortItemListFilter                    FilterSettings;                                    // 0x0008(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemListFilter                    FilterSettings;                                    // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortInventoryContext_DoesItemMatchFilter) == 0x1182E980, "Wrong alignment on FortInventoryContext_DoesItemMatchFilter");
-static_assert(sizeof(FortInventoryContext_DoesItemMatchFilter) == 0x1182E980, "Wrong size on FortInventoryContext_DoesItemMatchFilter");
+static_assert(alignof(FortInventoryContext_DoesItemMatchFilter) == 0x000008, "Wrong alignment on FortInventoryContext_DoesItemMatchFilter");
+static_assert(sizeof(FortInventoryContext_DoesItemMatchFilter) == 0x000028, "Wrong size on FortInventoryContext_DoesItemMatchFilter");
 static_assert(offsetof(FortInventoryContext_DoesItemMatchFilter, Item) == 0x000000, "Member 'FortInventoryContext_DoesItemMatchFilter::Item' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_DoesItemMatchFilter, FilterSettings) == 0x000008, "Member 'FortInventoryContext_DoesItemMatchFilter::FilterSettings' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_DoesItemMatchFilter, ReturnValue) == 0x000020, "Member 'FortInventoryContext_DoesItemMatchFilter::ReturnValue' has a wrong offset!");
@@ -10462,15 +10465,15 @@ static_assert(offsetof(FortInventoryContext_GetResourceItemDefinition, ResourceT
 static_assert(offsetof(FortInventoryContext_GetResourceItemDefinition, ReturnValue) == 0x000008, "Member 'FortInventoryContext_GetResourceItemDefinition::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.GetSchematicItemList
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortInventoryContext_GetSchematicItemList final
 {
 public:
 	TArray<class UFortSchematicItem*>             Items;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FFortItemListFilter                    FilterSettings;                                    // 0x0010(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemListFilter                    FilterSettings;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortInventoryContext_GetSchematicItemList) == 0x1182E980, "Wrong alignment on FortInventoryContext_GetSchematicItemList");
-static_assert(sizeof(FortInventoryContext_GetSchematicItemList) == 0x1182E980, "Wrong size on FortInventoryContext_GetSchematicItemList");
+static_assert(alignof(FortInventoryContext_GetSchematicItemList) == 0x000008, "Wrong alignment on FortInventoryContext_GetSchematicItemList");
+static_assert(sizeof(FortInventoryContext_GetSchematicItemList) == 0x000028, "Wrong size on FortInventoryContext_GetSchematicItemList");
 static_assert(offsetof(FortInventoryContext_GetSchematicItemList, Items) == 0x000000, "Member 'FortInventoryContext_GetSchematicItemList::Items' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_GetSchematicItemList, FilterSettings) == 0x000010, "Member 'FortInventoryContext_GetSchematicItemList::FilterSettings' has a wrong offset!");
 
@@ -10538,17 +10541,17 @@ static_assert(offsetof(FortInventoryContext_GetTotalItemQuantityByDefinition, It
 static_assert(offsetof(FortInventoryContext_GetTotalItemQuantityByDefinition, ReturnValue) == 0x000008, "Member 'FortInventoryContext_GetTotalItemQuantityByDefinition::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.GetTransmogSacrificeDataFromItemDefintion
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion final
 {
 public:
 	const class UFortItemDefinition*              ItemDefinition;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTransmogSacrifice                     OutTransmogData;                                   // 0x0008(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FTransmogSacrifice                     OutTransmogData;                                   // 0x0008(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion) == 0x11821780, "Wrong alignment on FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion");
-static_assert(sizeof(FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion) == 0x11821780, "Wrong size on FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion");
+static_assert(alignof(FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion) == 0x000008, "Wrong alignment on FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion");
+static_assert(sizeof(FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion) == 0x000020, "Wrong size on FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion");
 static_assert(offsetof(FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion, ItemDefinition) == 0x000000, "Member 'FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion, OutTransmogData) == 0x000008, "Member 'FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion::OutTransmogData' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion, ReturnValue) == 0x000018, "Member 'FortInventoryContext_GetTransmogSacrificeDataFromItemDefintion::ReturnValue' has a wrong offset!");
@@ -10600,28 +10603,28 @@ static_assert(sizeof(FortInventoryContext_GetVoucherResourceItemDefinition) == 0
 static_assert(offsetof(FortInventoryContext_GetVoucherResourceItemDefinition, ReturnValue) == 0x000000, "Member 'FortInventoryContext_GetVoucherResourceItemDefinition::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.GetWorldItemList
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortInventoryContext_GetWorldItemList final
 {
 public:
 	TArray<class UFortWorldItem*>                 Items;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FFortItemListFilter                    FilterSettings;                                    // 0x0010(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemListFilter                    FilterSettings;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortInventoryContext_GetWorldItemList) == 0x1182E980, "Wrong alignment on FortInventoryContext_GetWorldItemList");
-static_assert(sizeof(FortInventoryContext_GetWorldItemList) == 0x1182E980, "Wrong size on FortInventoryContext_GetWorldItemList");
+static_assert(alignof(FortInventoryContext_GetWorldItemList) == 0x000008, "Wrong alignment on FortInventoryContext_GetWorldItemList");
+static_assert(sizeof(FortInventoryContext_GetWorldItemList) == 0x000028, "Wrong size on FortInventoryContext_GetWorldItemList");
 static_assert(offsetof(FortInventoryContext_GetWorldItemList, Items) == 0x000000, "Member 'FortInventoryContext_GetWorldItemList::Items' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_GetWorldItemList, FilterSettings) == 0x000010, "Member 'FortInventoryContext_GetWorldItemList::FilterSettings' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.GetWorldItemListForDeployableBaseThePlayerIsIn
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn final
 {
 public:
 	TArray<class UFortWorldItem*>                 Items;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FFortItemListFilter                    FilterSettings;                                    // 0x0010(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemListFilter                    FilterSettings;                                    // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn) == 0x1182E980, "Wrong alignment on FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn");
-static_assert(sizeof(FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn) == 0x1182E980, "Wrong size on FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn");
+static_assert(alignof(FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn) == 0x000008, "Wrong alignment on FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn");
+static_assert(sizeof(FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn) == 0x000028, "Wrong size on FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn");
 static_assert(offsetof(FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn, Items) == 0x000000, "Member 'FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn::Items' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn, FilterSettings) == 0x000010, "Member 'FortInventoryContext_GetWorldItemListForDeployableBaseThePlayerIsIn::FilterSettings' has a wrong offset!");
 
@@ -10640,30 +10643,30 @@ static_assert(offsetof(FortInventoryContext_HasEvolutions, Item) == 0x000000, "M
 static_assert(offsetof(FortInventoryContext_HasEvolutions, ReturnValue) == 0x000008, "Member 'FortInventoryContext_HasEvolutions::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.HasGameplayTagContainer
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortInventoryContext_HasGameplayTagContainer final
 {
 public:
-	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x11821C00)(Parm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x0020)(Parm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortInventoryContext_HasGameplayTagContainer) == 0x11821C00, "Wrong alignment on FortInventoryContext_HasGameplayTagContainer");
-static_assert(sizeof(FortInventoryContext_HasGameplayTagContainer) == 0x11821C00, "Wrong size on FortInventoryContext_HasGameplayTagContainer");
+static_assert(alignof(FortInventoryContext_HasGameplayTagContainer) == 0x000008, "Wrong alignment on FortInventoryContext_HasGameplayTagContainer");
+static_assert(sizeof(FortInventoryContext_HasGameplayTagContainer) == 0x000028, "Wrong size on FortInventoryContext_HasGameplayTagContainer");
 static_assert(offsetof(FortInventoryContext_HasGameplayTagContainer, GameplayTagContainer) == 0x000000, "Member 'FortInventoryContext_HasGameplayTagContainer::GameplayTagContainer' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_HasGameplayTagContainer, ReturnValue) == 0x000020, "Member 'FortInventoryContext_HasGameplayTagContainer::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.HasGameplayTagContainerExact
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortInventoryContext_HasGameplayTagContainerExact final
 {
 public:
-	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x11821C00)(Parm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x0020)(Parm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortInventoryContext_HasGameplayTagContainerExact) == 0x11821C00, "Wrong alignment on FortInventoryContext_HasGameplayTagContainerExact");
-static_assert(sizeof(FortInventoryContext_HasGameplayTagContainerExact) == 0x11821C00, "Wrong size on FortInventoryContext_HasGameplayTagContainerExact");
+static_assert(alignof(FortInventoryContext_HasGameplayTagContainerExact) == 0x000008, "Wrong alignment on FortInventoryContext_HasGameplayTagContainerExact");
+static_assert(sizeof(FortInventoryContext_HasGameplayTagContainerExact) == 0x000028, "Wrong size on FortInventoryContext_HasGameplayTagContainerExact");
 static_assert(offsetof(FortInventoryContext_HasGameplayTagContainerExact, GameplayTagContainer) == 0x000000, "Member 'FortInventoryContext_HasGameplayTagContainerExact::GameplayTagContainer' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_HasGameplayTagContainerExact, ReturnValue) == 0x000020, "Member 'FortInventoryContext_HasGameplayTagContainerExact::ReturnValue' has a wrong offset!");
 
@@ -10756,8 +10759,8 @@ static_assert(offsetof(FortInventoryContext_SortAccountItemArrayForTransmog, Vau
 static_assert(offsetof(FortInventoryContext_SortAccountItemArrayForTransmog, SortedItems) == 0x000010, "Member 'FortInventoryContext_SortAccountItemArrayForTransmog::SortedItems' has a wrong offset!");
 
 // Function FortniteUI.FortInventoryContext.WillQuickBarAcceptItem
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x20) FortInventoryContext_WillQuickBarAcceptItem final
+// 0x0018 (0x0018 - 0x0000)
+struct FortInventoryContext_WillQuickBarAcceptItem final
 {
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10767,8 +10770,8 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortInventoryContext_WillQuickBarAcceptItem) == 0x000020, "Wrong alignment on FortInventoryContext_WillQuickBarAcceptItem");
-static_assert(sizeof(FortInventoryContext_WillQuickBarAcceptItem) == 0x000020, "Wrong size on FortInventoryContext_WillQuickBarAcceptItem");
+static_assert(alignof(FortInventoryContext_WillQuickBarAcceptItem) == 0x000008, "Wrong alignment on FortInventoryContext_WillQuickBarAcceptItem");
+static_assert(sizeof(FortInventoryContext_WillQuickBarAcceptItem) == 0x000018, "Wrong size on FortInventoryContext_WillQuickBarAcceptItem");
 static_assert(offsetof(FortInventoryContext_WillQuickBarAcceptItem, Item) == 0x000000, "Member 'FortInventoryContext_WillQuickBarAcceptItem::Item' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_WillQuickBarAcceptItem, InQuickBar) == 0x000008, "Member 'FortInventoryContext_WillQuickBarAcceptItem::InQuickBar' has a wrong offset!");
 static_assert(offsetof(FortInventoryContext_WillQuickBarAcceptItem, Slot) == 0x00000C, "Member 'FortInventoryContext_WillQuickBarAcceptItem::Slot' has a wrong offset!");
@@ -11082,7 +11085,7 @@ static_assert(sizeof(FortItemWidget_IsSlotted) == 0x000001, "Wrong size on FortI
 static_assert(offsetof(FortItemWidget_IsSlotted, ReturnValue) == 0x000000, "Member 'FortItemWidget_IsSlotted::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortItemCardUtilities.GetCardDimensions
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct FortItemCardUtilities_GetCardDimensions final
 {
 public:
@@ -11090,10 +11093,10 @@ public:
 	EFortItemCardSize                             CardSize;                                          // 0x0001(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsReward;                                          // 0x0002(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          UseNewItemCardSizes;                               // 0x0003(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              ReturnValue;                                       // 0x0004(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ReturnValue;                                       // 0x0004(0x0008)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemCardUtilities_GetCardDimensions) == 0x11821300, "Wrong alignment on FortItemCardUtilities_GetCardDimensions");
-static_assert(sizeof(FortItemCardUtilities_GetCardDimensions) == 0x11821300, "Wrong size on FortItemCardUtilities_GetCardDimensions");
+static_assert(alignof(FortItemCardUtilities_GetCardDimensions) == 0x000004, "Wrong alignment on FortItemCardUtilities_GetCardDimensions");
+static_assert(sizeof(FortItemCardUtilities_GetCardDimensions) == 0x00000C, "Wrong size on FortItemCardUtilities_GetCardDimensions");
 static_assert(offsetof(FortItemCardUtilities_GetCardDimensions, ItemType) == 0x000000, "Member 'FortItemCardUtilities_GetCardDimensions::ItemType' has a wrong offset!");
 static_assert(offsetof(FortItemCardUtilities_GetCardDimensions, CardSize) == 0x000001, "Member 'FortItemCardUtilities_GetCardDimensions::CardSize' has a wrong offset!");
 static_assert(offsetof(FortItemCardUtilities_GetCardDimensions, IsReward) == 0x000002, "Member 'FortItemCardUtilities_GetCardDimensions::IsReward' has a wrong offset!");
@@ -11231,18 +11234,18 @@ static_assert(sizeof(FortItemCountTextBlock_SetOverrideValue) == 0x000004, "Wron
 static_assert(offsetof(FortItemCountTextBlock_SetOverrideValue, InOverrideValue) == 0x000000, "Member 'FortItemCountTextBlock_SetOverrideValue::InOverrideValue' has a wrong offset!");
 
 // Function FortniteUI.FortSquadSlotsView.CreateAndAddSquadSlotButton
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct FortSquadSlotsView_CreateAndAddSquadSlotButton final
 {
 public:
 	int32                                         SquadSlotIndex;                                    // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquadSlot                     SquadSlotDefinition;                               // 0x0008(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FHomebaseSquadSlot                     SquadSlotDefinition;                               // 0x0008(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UWidget*                                OutSquadSlotButtonHost;                            // 0x0068(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortSquadSlotSelectorButton*           ReturnValue;                                       // 0x0070(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadSlotsView_CreateAndAddSquadSlotButton) == 0x1182E980, "Wrong alignment on FortSquadSlotsView_CreateAndAddSquadSlotButton");
-static_assert(sizeof(FortSquadSlotsView_CreateAndAddSquadSlotButton) == 0x1182E980, "Wrong size on FortSquadSlotsView_CreateAndAddSquadSlotButton");
+static_assert(alignof(FortSquadSlotsView_CreateAndAddSquadSlotButton) == 0x000008, "Wrong alignment on FortSquadSlotsView_CreateAndAddSquadSlotButton");
+static_assert(sizeof(FortSquadSlotsView_CreateAndAddSquadSlotButton) == 0x000078, "Wrong size on FortSquadSlotsView_CreateAndAddSquadSlotButton");
 static_assert(offsetof(FortSquadSlotsView_CreateAndAddSquadSlotButton, SquadSlotIndex) == 0x000000, "Member 'FortSquadSlotsView_CreateAndAddSquadSlotButton::SquadSlotIndex' has a wrong offset!");
 static_assert(offsetof(FortSquadSlotsView_CreateAndAddSquadSlotButton, SquadSlotDefinition) == 0x000008, "Member 'FortSquadSlotsView_CreateAndAddSquadSlotButton::SquadSlotDefinition' has a wrong offset!");
 static_assert(offsetof(FortSquadSlotsView_CreateAndAddSquadSlotButton, OutSquadSlotButtonHost) == 0x000068, "Member 'FortSquadSlotsView_CreateAndAddSquadSlotButton::OutSquadSlotButtonHost' has a wrong offset!");
@@ -11379,16 +11382,16 @@ static_assert(sizeof(FortSquadSlotsView_GetIndexOfSelectedSquadSlot) == 0x000004
 static_assert(offsetof(FortSquadSlotsView_GetIndexOfSelectedSquadSlot, ReturnValue) == 0x000000, "Member 'FortSquadSlotsView_GetIndexOfSelectedSquadSlot::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSquadSlotsView.TryGetStaticSquadDataBP
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortSquadSlotsView_TryGetStaticSquadDataBP final
 {
 public:
-	struct FHomebaseSquad                         OutSquadData;                                      // 0x0000(0x11821D80)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseSquad                         OutSquadData;                                      // 0x0000(0x0088)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSquadSlotsView_TryGetStaticSquadDataBP) == 0x11821780, "Wrong alignment on FortSquadSlotsView_TryGetStaticSquadDataBP");
-static_assert(sizeof(FortSquadSlotsView_TryGetStaticSquadDataBP) == 0x11821780, "Wrong size on FortSquadSlotsView_TryGetStaticSquadDataBP");
+static_assert(alignof(FortSquadSlotsView_TryGetStaticSquadDataBP) == 0x000008, "Wrong alignment on FortSquadSlotsView_TryGetStaticSquadDataBP");
+static_assert(sizeof(FortSquadSlotsView_TryGetStaticSquadDataBP) == 0x000090, "Wrong size on FortSquadSlotsView_TryGetStaticSquadDataBP");
 static_assert(offsetof(FortSquadSlotsView_TryGetStaticSquadDataBP, OutSquadData) == 0x000000, "Member 'FortSquadSlotsView_TryGetStaticSquadDataBP::OutSquadData' has a wrong offset!");
 static_assert(offsetof(FortSquadSlotsView_TryGetStaticSquadDataBP, ReturnValue) == 0x000088, "Member 'FortSquadSlotsView_TryGetStaticSquadDataBP::ReturnValue' has a wrong offset!");
 
@@ -11489,14 +11492,14 @@ static_assert(sizeof(FortSquadSlotItemDetailElementWidget_IsSquadSlotLockedBP) =
 static_assert(offsetof(FortSquadSlotItemDetailElementWidget_IsSquadSlotLockedBP, ReturnValue) == 0x000000, "Member 'FortSquadSlotItemDetailElementWidget_IsSquadSlotLockedBP::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSquadLandingPageDefenderSquadDetailsLocked.SetDefenderSquadInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo final
 {
 public:
-	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo) == 0x1182E980, "Wrong alignment on FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo");
-static_assert(sizeof(FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo) == 0x1182E980, "Wrong size on FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo");
+static_assert(alignof(FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo) == 0x000008, "Wrong alignment on FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo");
+static_assert(sizeof(FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo) == 0x000030, "Wrong size on FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo");
 static_assert(offsetof(FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo, DefenderSummaryInfo) == 0x000000, "Member 'FortSquadLandingPageDefenderSquadDetailsLocked_SetDefenderSquadInfo::DefenderSummaryInfo' has a wrong offset!");
 
 // Function FortniteUI.FortSquadSlotItemDetailsHostPanel.SetIdOfSquadSlotToManageBP
@@ -11807,14 +11810,14 @@ static_assert(sizeof(FortItemIcon_SetBrushSize) == 0x000001, "Wrong size on Fort
 static_assert(offsetof(FortItemIcon_SetBrushSize, InBrushSize) == 0x000000, "Member 'FortItemIcon_SetBrushSize::InBrushSize' has a wrong offset!");
 
 // Function FortniteUI.FortItemIcon.SetColorAndOpacity
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortItemIcon_SetColorAndOpacity final
 {
 public:
-	struct FLinearColor                           InColorAndOpacity;                                 // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           InColorAndOpacity;                                 // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemIcon_SetColorAndOpacity) == 0x11821300, "Wrong alignment on FortItemIcon_SetColorAndOpacity");
-static_assert(sizeof(FortItemIcon_SetColorAndOpacity) == 0x11821300, "Wrong size on FortItemIcon_SetColorAndOpacity");
+static_assert(alignof(FortItemIcon_SetColorAndOpacity) == 0x000004, "Wrong alignment on FortItemIcon_SetColorAndOpacity");
+static_assert(sizeof(FortItemIcon_SetColorAndOpacity) == 0x000010, "Wrong size on FortItemIcon_SetColorAndOpacity");
 static_assert(offsetof(FortItemIcon_SetColorAndOpacity, InColorAndOpacity) == 0x000000, "Member 'FortItemIcon_SetColorAndOpacity::InColorAndOpacity' has a wrong offset!");
 
 // Function FortniteUI.FortItemIcon.SetItemDefinition
@@ -11840,14 +11843,14 @@ static_assert(sizeof(FortItemIcon_SetOpacity) == 0x000004, "Wrong size on FortIt
 static_assert(offsetof(FortItemIcon_SetOpacity, InOpacity) == 0x000000, "Member 'FortItemIcon_SetOpacity::InOpacity' has a wrong offset!");
 
 // Function FortniteUI.FortItemIcon.SetShadowColorAndOpacity
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortItemIcon_SetShadowColorAndOpacity final
 {
 public:
-	struct FLinearColor                           InColorAndOpacity;                                 // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           InColorAndOpacity;                                 // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemIcon_SetShadowColorAndOpacity) == 0x11821300, "Wrong alignment on FortItemIcon_SetShadowColorAndOpacity");
-static_assert(sizeof(FortItemIcon_SetShadowColorAndOpacity) == 0x11821300, "Wrong size on FortItemIcon_SetShadowColorAndOpacity");
+static_assert(alignof(FortItemIcon_SetShadowColorAndOpacity) == 0x000004, "Wrong alignment on FortItemIcon_SetShadowColorAndOpacity");
+static_assert(sizeof(FortItemIcon_SetShadowColorAndOpacity) == 0x000010, "Wrong size on FortItemIcon_SetShadowColorAndOpacity");
 static_assert(offsetof(FortItemIcon_SetShadowColorAndOpacity, InColorAndOpacity) == 0x000000, "Member 'FortItemIcon_SetShadowColorAndOpacity::InColorAndOpacity' has a wrong offset!");
 
 // Function FortniteUI.FortSurvivorSquadStatMatchesBase.AddStatMatch
@@ -11895,16 +11898,16 @@ static_assert(sizeof(FortSurvivorSquadStatMatchesBase_GetIdOfSquadToManageBP) ==
 static_assert(offsetof(FortSurvivorSquadStatMatchesBase_GetIdOfSquadToManageBP, ReturnValue) == 0x000000, "Member 'FortSurvivorSquadStatMatchesBase_GetIdOfSquadToManageBP::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSurvivorSquadStatMatchesBase.TryGetStaticSquadDataBP
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP final
 {
 public:
-	struct FHomebaseSquad                         OutSquadData;                                      // 0x0000(0x11821D80)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseSquad                         OutSquadData;                                      // 0x0000(0x0088)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP) == 0x11821780, "Wrong alignment on FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP");
-static_assert(sizeof(FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP) == 0x11821780, "Wrong size on FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP");
+static_assert(alignof(FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP) == 0x000008, "Wrong alignment on FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP");
+static_assert(sizeof(FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP) == 0x000090, "Wrong size on FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP");
 static_assert(offsetof(FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP, OutSquadData) == 0x000000, "Member 'FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP::OutSquadData' has a wrong offset!");
 static_assert(offsetof(FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP, ReturnValue) == 0x000088, "Member 'FortSurvivorSquadStatMatchesBase_TryGetStaticSquadDataBP::ReturnValue' has a wrong offset!");
 
@@ -12269,41 +12272,43 @@ static_assert(sizeof(FortItemPickerBase_GetSelectedItem) == 0x000008, "Wrong siz
 static_assert(offsetof(FortItemPickerBase_GetSelectedItem, ReturnValue) == 0x000000, "Member 'FortItemPickerBase_GetSelectedItem::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSurvivorSquadSummaryStatItem.SetAttributeModifierAccumulation
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation final
 {
 public:
-	struct FFortAttributeModifierAccumulation     Accumulation;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortAttributeModifierAccumulation     Accumulation;                                      // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation) == 0x1182E980, "Wrong alignment on FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation");
-static_assert(sizeof(FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation) == 0x1182E980, "Wrong size on FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation");
+static_assert(alignof(FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation) == 0x000008, "Wrong alignment on FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation");
+static_assert(sizeof(FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation) == 0x000030, "Wrong size on FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation");
 static_assert(offsetof(FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation, Accumulation) == 0x000000, "Member 'FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation::Accumulation' has a wrong offset!");
 
 // DelegateFunction FortniteUI.FortCollectionBookPicker.OnSlotItemConfirmed__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature final
 {
 public:
 	class UFortItem*                              ItemToSlot;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   SlotId;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0010(0x11821780)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0010(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature) == 0x11821780, "Wrong alignment on FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature");
-static_assert(sizeof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature) == 0x11821780, "Wrong size on FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature");
+static_assert(alignof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature) == 0x000008, "Wrong alignment on FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature");
+static_assert(sizeof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature) == 0x000018, "Wrong size on FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature");
 static_assert(offsetof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature, ItemToSlot) == 0x000000, "Member 'FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature::ItemToSlot' has a wrong offset!");
 static_assert(offsetof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature, SlotId) == 0x000008, "Member 'FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature::SlotId' has a wrong offset!");
 static_assert(offsetof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature, LatentActionHandle) == 0x000010, "Member 'FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature::LatentActionHandle' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookPicker.SlotItemConfirmationComplete
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortCollectionBookPicker_SlotItemConfirmationComplete final
 {
 public:
 	class UFortItem*                              CommittedItem;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0008(0x11821780)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0008(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortCollectionBookPicker_SlotItemConfirmationComplete) == 0x11821780, "Wrong alignment on FortCollectionBookPicker_SlotItemConfirmationComplete");
-static_assert(sizeof(FortCollectionBookPicker_SlotItemConfirmationComplete) == 0x11821780, "Wrong size on FortCollectionBookPicker_SlotItemConfirmationComplete");
+static_assert(alignof(FortCollectionBookPicker_SlotItemConfirmationComplete) == 0x000008, "Wrong alignment on FortCollectionBookPicker_SlotItemConfirmationComplete");
+static_assert(sizeof(FortCollectionBookPicker_SlotItemConfirmationComplete) == 0x000010, "Wrong size on FortCollectionBookPicker_SlotItemConfirmationComplete");
 static_assert(offsetof(FortCollectionBookPicker_SlotItemConfirmationComplete, CommittedItem) == 0x000000, "Member 'FortCollectionBookPicker_SlotItemConfirmationComplete::CommittedItem' has a wrong offset!");
 static_assert(offsetof(FortCollectionBookPicker_SlotItemConfirmationComplete, LatentActionHandle) == 0x000008, "Member 'FortCollectionBookPicker_SlotItemConfirmationComplete::LatentActionHandle' has a wrong offset!");
 
@@ -12536,39 +12541,39 @@ static_assert(offsetof(FortStoreContext_GetAccountItems, AccountItemDefinitions)
 static_assert(offsetof(FortStoreContext_GetAccountItems, AccountItems) == 0x000010, "Member 'FortStoreContext_GetAccountItems::AccountItems' has a wrong offset!");
 
 // Function FortniteUI.FortStoreContext.GetRarityColor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct FortStoreContext_GetRarityColor final
 {
 public:
 	EFortRarity                                   Rarity;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ReturnValue;                                       // 0x0004(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ReturnValue;                                       // 0x0004(0x0010)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortStoreContext_GetRarityColor) == 0x11821300, "Wrong alignment on FortStoreContext_GetRarityColor");
-static_assert(sizeof(FortStoreContext_GetRarityColor) == 0x11821300, "Wrong size on FortStoreContext_GetRarityColor");
+static_assert(alignof(FortStoreContext_GetRarityColor) == 0x000004, "Wrong alignment on FortStoreContext_GetRarityColor");
+static_assert(sizeof(FortStoreContext_GetRarityColor) == 0x000014, "Wrong size on FortStoreContext_GetRarityColor");
 static_assert(offsetof(FortStoreContext_GetRarityColor, Rarity) == 0x000000, "Member 'FortStoreContext_GetRarityColor::Rarity' has a wrong offset!");
 static_assert(offsetof(FortStoreContext_GetRarityColor, ReturnValue) == 0x000004, "Member 'FortStoreContext_GetRarityColor::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortStoreContext.GetTimeUntilDailyLimitReset
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FortStoreContext_GetTimeUntilDailyLimitReset final
 {
 public:
-	struct FTimespan                              ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortStoreContext_GetTimeUntilDailyLimitReset) == 0x11821300, "Wrong alignment on FortStoreContext_GetTimeUntilDailyLimitReset");
-static_assert(sizeof(FortStoreContext_GetTimeUntilDailyLimitReset) == 0x11821300, "Wrong size on FortStoreContext_GetTimeUntilDailyLimitReset");
+static_assert(alignof(FortStoreContext_GetTimeUntilDailyLimitReset) == 0x000008, "Wrong alignment on FortStoreContext_GetTimeUntilDailyLimitReset");
+static_assert(sizeof(FortStoreContext_GetTimeUntilDailyLimitReset) == 0x000008, "Wrong size on FortStoreContext_GetTimeUntilDailyLimitReset");
 static_assert(offsetof(FortStoreContext_GetTimeUntilDailyLimitReset, ReturnValue) == 0x000000, "Member 'FortStoreContext_GetTimeUntilDailyLimitReset::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortStoreContext.GetTimeUntilMarketplaceRefresh
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FortStoreContext_GetTimeUntilMarketplaceRefresh final
 {
 public:
-	struct FTimespan                              ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortStoreContext_GetTimeUntilMarketplaceRefresh) == 0x11821300, "Wrong alignment on FortStoreContext_GetTimeUntilMarketplaceRefresh");
-static_assert(sizeof(FortStoreContext_GetTimeUntilMarketplaceRefresh) == 0x11821300, "Wrong size on FortStoreContext_GetTimeUntilMarketplaceRefresh");
+static_assert(alignof(FortStoreContext_GetTimeUntilMarketplaceRefresh) == 0x000008, "Wrong alignment on FortStoreContext_GetTimeUntilMarketplaceRefresh");
+static_assert(sizeof(FortStoreContext_GetTimeUntilMarketplaceRefresh) == 0x000008, "Wrong size on FortStoreContext_GetTimeUntilMarketplaceRefresh");
 static_assert(offsetof(FortStoreContext_GetTimeUntilMarketplaceRefresh, ReturnValue) == 0x000000, "Member 'FortStoreContext_GetTimeUntilMarketplaceRefresh::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortStoreContext.MakeChoice
@@ -12586,17 +12591,17 @@ static_assert(offsetof(FortStoreContext_MakeChoice, ChoiceIdx) == 0x000000, "Mem
 static_assert(offsetof(FortStoreContext_MakeChoice, ReturnValue) == 0x000004, "Member 'FortStoreContext_MakeChoice::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortStoreContext.MakePurchase
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortStoreContext_MakePurchase final
 {
 public:
-	struct FCardPackOffer                         Offer;                                             // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FCardPackOffer                         Offer;                                             // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         Quantity;                                          // 0x0090(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECardPackPurchaseError                        ReturnValue;                                       // 0x0094(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortStoreContext_MakePurchase) == 0x1182E980, "Wrong alignment on FortStoreContext_MakePurchase");
-static_assert(sizeof(FortStoreContext_MakePurchase) == 0x1182E980, "Wrong size on FortStoreContext_MakePurchase");
+static_assert(alignof(FortStoreContext_MakePurchase) == 0x000008, "Wrong alignment on FortStoreContext_MakePurchase");
+static_assert(sizeof(FortStoreContext_MakePurchase) == 0x000098, "Wrong size on FortStoreContext_MakePurchase");
 static_assert(offsetof(FortStoreContext_MakePurchase, Offer) == 0x000000, "Member 'FortStoreContext_MakePurchase::Offer' has a wrong offset!");
 static_assert(offsetof(FortStoreContext_MakePurchase, Quantity) == 0x000090, "Member 'FortStoreContext_MakePurchase::Quantity' has a wrong offset!");
 static_assert(offsetof(FortStoreContext_MakePurchase, ReturnValue) == 0x000094, "Member 'FortStoreContext_MakePurchase::ReturnValue' has a wrong offset!");
@@ -12629,18 +12634,18 @@ static_assert(offsetof(FortStoreContext_FireInteractionAnalyticsEvent, Interacti
 static_assert(offsetof(FortStoreContext_FireInteractionAnalyticsEvent, Details) == 0x000010, "Member 'FortStoreContext_FireInteractionAnalyticsEvent::Details' has a wrong offset!");
 
 // Function FortniteUI.FortStoreContext.GetCard
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortStoreContext_GetCard final
 {
 public:
 	int32                                         CardIdx;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FCard                                  ResultOut;                                         // 0x0008(0x1182E980)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCard                                  ResultOut;                                         // 0x0008(0x0018)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortStoreContext_GetCard) == 0x1182E980, "Wrong alignment on FortStoreContext_GetCard");
-static_assert(sizeof(FortStoreContext_GetCard) == 0x1182E980, "Wrong size on FortStoreContext_GetCard");
+static_assert(alignof(FortStoreContext_GetCard) == 0x000008, "Wrong alignment on FortStoreContext_GetCard");
+static_assert(sizeof(FortStoreContext_GetCard) == 0x000028, "Wrong size on FortStoreContext_GetCard");
 static_assert(offsetof(FortStoreContext_GetCard, CardIdx) == 0x000000, "Member 'FortStoreContext_GetCard::CardIdx' has a wrong offset!");
 static_assert(offsetof(FortStoreContext_GetCard, ResultOut) == 0x000008, "Member 'FortStoreContext_GetCard::ResultOut' has a wrong offset!");
 static_assert(offsetof(FortStoreContext_GetCard, ReturnValue) == 0x000020, "Member 'FortStoreContext_GetCard::ReturnValue' has a wrong offset!");
@@ -12817,19 +12822,19 @@ static_assert(sizeof(FortPickerContext_GetNumPickerOptions) == 0x000004, "Wrong 
 static_assert(offsetof(FortPickerContext_GetNumPickerOptions, ReturnValue) == 0x000000, "Member 'FortPickerContext_GetNumPickerOptions::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortPickerContext.GetRadialPickerOptionImageAndLabel
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct FortPickerContext_GetRadialPickerOptionImageAndLabel final
 {
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Label;                                             // 0x0008(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            Brush;                                             // 0x0020(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Brush;                                             // 0x0020(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          bOptionEnabled;                                    // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortPickerContext_GetRadialPickerOptionImageAndLabel) == 0x11827900, "Wrong alignment on FortPickerContext_GetRadialPickerOptionImageAndLabel");
-static_assert(sizeof(FortPickerContext_GetRadialPickerOptionImageAndLabel) == 0x11827900, "Wrong size on FortPickerContext_GetRadialPickerOptionImageAndLabel");
+static_assert(alignof(FortPickerContext_GetRadialPickerOptionImageAndLabel) == 0x000008, "Wrong alignment on FortPickerContext_GetRadialPickerOptionImageAndLabel");
+static_assert(sizeof(FortPickerContext_GetRadialPickerOptionImageAndLabel) == 0x0000B8, "Wrong size on FortPickerContext_GetRadialPickerOptionImageAndLabel");
 static_assert(offsetof(FortPickerContext_GetRadialPickerOptionImageAndLabel, Index_0) == 0x000000, "Member 'FortPickerContext_GetRadialPickerOptionImageAndLabel::Index_0' has a wrong offset!");
 static_assert(offsetof(FortPickerContext_GetRadialPickerOptionImageAndLabel, Label) == 0x000008, "Member 'FortPickerContext_GetRadialPickerOptionImageAndLabel::Label' has a wrong offset!");
 static_assert(offsetof(FortPickerContext_GetRadialPickerOptionImageAndLabel, Brush) == 0x000020, "Member 'FortPickerContext_GetRadialPickerOptionImageAndLabel::Brush' has a wrong offset!");
@@ -12853,14 +12858,14 @@ static_assert(offsetof(FortPickerContext_GetRadialPickerOptionItem, Item) == 0x0
 static_assert(offsetof(FortPickerContext_GetRadialPickerOptionItem, bOptionEnabled) == 0x000010, "Member 'FortPickerContext_GetRadialPickerOptionItem::bOptionEnabled' has a wrong offset!");
 
 // Function FortniteUI.FortPickerContext.UseLeftThumbstick
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x18) FortPickerContext_UseLeftThumbstick final
+// 0x0001 (0x0001 - 0x0000)
+struct FortPickerContext_UseLeftThumbstick final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPickerContext_UseLeftThumbstick) == 0x000018, "Wrong alignment on FortPickerContext_UseLeftThumbstick");
-static_assert(sizeof(FortPickerContext_UseLeftThumbstick) == 0x000018, "Wrong size on FortPickerContext_UseLeftThumbstick");
+static_assert(alignof(FortPickerContext_UseLeftThumbstick) == 0x000001, "Wrong alignment on FortPickerContext_UseLeftThumbstick");
+static_assert(sizeof(FortPickerContext_UseLeftThumbstick) == 0x000001, "Wrong size on FortPickerContext_UseLeftThumbstick");
 static_assert(offsetof(FortPickerContext_UseLeftThumbstick, ReturnValue) == 0x000000, "Member 'FortPickerContext_UseLeftThumbstick::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListEntryBase.HandleDifferentItemOrQuantitySetBP
@@ -12875,42 +12880,42 @@ static_assert(sizeof(FortItemQuantityListEntryBase_HandleDifferentItemOrQuantity
 static_assert(offsetof(FortItemQuantityListEntryBase_HandleDifferentItemOrQuantitySetBP, IsBeingReset) == 0x000000, "Member 'FortItemQuantityListEntryBase_HandleDifferentItemOrQuantitySetBP::IsBeingReset' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListEntryBase.SetItemDefinitionAndQuantity
-// 0x52535 (0x52535 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity final
 {
 public:
-	struct FFortItemQuantityPair                  ItemQuantityPair;                                  // 0x0000(0x52535)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemQuantityPair                  ItemQuantityPair;                                  // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ShouldTreatAsReset;                                // 0x0028(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity) == 0x052535, "Wrong alignment on FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity");
-static_assert(sizeof(FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity) == 0x052535, "Wrong size on FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity");
+static_assert(alignof(FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity) == 0x000008, "Wrong alignment on FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity");
+static_assert(sizeof(FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity) == 0x000030, "Wrong size on FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity");
 static_assert(offsetof(FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity, ItemQuantityPair) == 0x000000, "Member 'FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity::ItemQuantityPair' has a wrong offset!");
 static_assert(offsetof(FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity, ShouldTreatAsReset) == 0x000028, "Member 'FortItemQuantityListEntryBase_SetItemDefinitionAndQuantity::ShouldTreatAsReset' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListEntryBase.SetItemInstanceAndQuantity
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortItemQuantityListEntryBase_SetItemInstanceAndQuantity final
 {
 public:
-	struct FFortItemInstanceQuantityPair          ItemQuantityPair;                                  // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemInstanceQuantityPair          ItemQuantityPair;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ShouldTreatAsReset;                                // 0x0010(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortItemQuantityListEntryBase_SetItemInstanceAndQuantity) == 0x11821D80, "Wrong alignment on FortItemQuantityListEntryBase_SetItemInstanceAndQuantity");
-static_assert(sizeof(FortItemQuantityListEntryBase_SetItemInstanceAndQuantity) == 0x11821D80, "Wrong size on FortItemQuantityListEntryBase_SetItemInstanceAndQuantity");
+static_assert(alignof(FortItemQuantityListEntryBase_SetItemInstanceAndQuantity) == 0x000008, "Wrong alignment on FortItemQuantityListEntryBase_SetItemInstanceAndQuantity");
+static_assert(sizeof(FortItemQuantityListEntryBase_SetItemInstanceAndQuantity) == 0x000018, "Wrong size on FortItemQuantityListEntryBase_SetItemInstanceAndQuantity");
 static_assert(offsetof(FortItemQuantityListEntryBase_SetItemInstanceAndQuantity, ItemQuantityPair) == 0x000000, "Member 'FortItemQuantityListEntryBase_SetItemInstanceAndQuantity::ItemQuantityPair' has a wrong offset!");
 static_assert(offsetof(FortItemQuantityListEntryBase_SetItemInstanceAndQuantity, ShouldTreatAsReset) == 0x000010, "Member 'FortItemQuantityListEntryBase_SetItemInstanceAndQuantity::ShouldTreatAsReset' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListEntryBase.SetPreviewData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct FortItemQuantityListEntryBase_SetPreviewData final
 {
 public:
-	struct FFortItemEntryPreviewData              PreviewData;                                       // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemEntryPreviewData              PreviewData;                                       // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemQuantityListEntryBase_SetPreviewData) == 0x1182E980, "Wrong alignment on FortItemQuantityListEntryBase_SetPreviewData");
-static_assert(sizeof(FortItemQuantityListEntryBase_SetPreviewData) == 0x1182E980, "Wrong size on FortItemQuantityListEntryBase_SetPreviewData");
+static_assert(alignof(FortItemQuantityListEntryBase_SetPreviewData) == 0x000004, "Wrong alignment on FortItemQuantityListEntryBase_SetPreviewData");
+static_assert(sizeof(FortItemQuantityListEntryBase_SetPreviewData) == 0x000004, "Wrong size on FortItemQuantityListEntryBase_SetPreviewData");
 static_assert(offsetof(FortItemQuantityListEntryBase_SetPreviewData, PreviewData) == 0x000000, "Member 'FortItemQuantityListEntryBase_SetPreviewData::PreviewData' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListEntryBase.GetItemDefinition
@@ -12936,14 +12941,14 @@ static_assert(sizeof(FortItemQuantityListEntryBase_GetItemInstance) == 0x000008,
 static_assert(offsetof(FortItemQuantityListEntryBase_GetItemInstance, ReturnValue) == 0x000000, "Member 'FortItemQuantityListEntryBase_GetItemInstance::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListEntryBase.GetPreviewData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct FortItemQuantityListEntryBase_GetPreviewData final
 {
 public:
-	struct FFortItemEntryPreviewData              OutPreviewData;                                    // 0x0000(0x1182E980)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemEntryPreviewData              OutPreviewData;                                    // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemQuantityListEntryBase_GetPreviewData) == 0x1182E980, "Wrong alignment on FortItemQuantityListEntryBase_GetPreviewData");
-static_assert(sizeof(FortItemQuantityListEntryBase_GetPreviewData) == 0x1182E980, "Wrong size on FortItemQuantityListEntryBase_GetPreviewData");
+static_assert(alignof(FortItemQuantityListEntryBase_GetPreviewData) == 0x000004, "Wrong alignment on FortItemQuantityListEntryBase_GetPreviewData");
+static_assert(sizeof(FortItemQuantityListEntryBase_GetPreviewData) == 0x000004, "Wrong size on FortItemQuantityListEntryBase_GetPreviewData");
 static_assert(offsetof(FortItemQuantityListEntryBase_GetPreviewData, OutPreviewData) == 0x000000, "Member 'FortItemQuantityListEntryBase_GetPreviewData::OutPreviewData' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListEntryBase.IsBeingPreviewed
@@ -13008,14 +13013,14 @@ static_assert(offsetof(FortItemQuantityListBase_SetItemInstancesAndQuantities, I
 static_assert(offsetof(FortItemQuantityListBase_SetItemInstancesAndQuantities, ShouldResetWidgets) == 0x000010, "Member 'FortItemQuantityListBase_SetItemInstancesAndQuantities::ShouldResetWidgets' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListBase.SetItemToCompareDefinitionsAndQuantities
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x18) FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities final
+// 0x0010 (0x0010 - 0x0000)
+struct FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities final
 {
 public:
 	TArray<struct FFortItemQuantityPair>          ItemToCompareQuantityPairs;                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities) == 0x000018, "Wrong alignment on FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities");
-static_assert(sizeof(FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities) == 0x000018, "Wrong size on FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities");
+static_assert(alignof(FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities) == 0x000008, "Wrong alignment on FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities");
+static_assert(sizeof(FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities) == 0x000010, "Wrong size on FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities");
 static_assert(offsetof(FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities, ItemToCompareQuantityPairs) == 0x000000, "Member 'FortItemQuantityListBase_SetItemToCompareDefinitionsAndQuantities::ItemToCompareQuantityPairs' has a wrong offset!");
 
 // Function FortniteUI.FortItemQuantityListBase.IsEmptyList
@@ -13030,109 +13035,109 @@ static_assert(sizeof(FortItemQuantityListBase_IsEmptyList) == 0x000001, "Wrong s
 static_assert(offsetof(FortItemQuantityListBase_IsEmptyList, ReturnValue) == 0x000000, "Member 'FortItemQuantityListBase_IsEmptyList::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIBlueprintFunctionLibrary.GetItemDefinitionSmallPreviewImageBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush final
 {
 public:
 	const class UFortItemDefinition*              ItemDefinition;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            ReturnValue;                                       // 0x0010(0x322CBBB8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ReturnValue;                                       // 0x0010(0x0090)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush) == 0x11827900, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush");
-static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush) == 0x11827900, "Wrong size on FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush");
+static_assert(alignof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush) == 0x000008, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush");
+static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush) == 0x0000A0, "Wrong size on FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush, ItemDefinition) == 0x000000, "Member 'FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush, BrushSize) == 0x000008, "Member 'FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush::BrushSize' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush, ReturnValue) == 0x000010, "Member 'FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIBlueprintFunctionLibrary.GetItemDefinitionSmallPreviewImageMultiSizeBrush
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0368 (0x0368 - 0x0000)
 struct FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush final
 {
 public:
 	const class UFortItemDefinition*              ItemDefinition;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeBrush                    ReturnValue;                                       // 0x0008(0x11827900)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    ReturnValue;                                       // 0x0008(0x0360)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush) == 0x11821780, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush");
-static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush) == 0x11821780, "Wrong size on FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush");
+static_assert(alignof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush) == 0x000008, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush");
+static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush) == 0x000368, "Wrong size on FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush, ItemDefinition) == 0x000000, "Member 'FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush, ReturnValue) == 0x000008, "Member 'FortUIBlueprintFunctionLibrary_GetItemDefinitionSmallPreviewImageMultiSizeBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIBlueprintFunctionLibrary.GetItemSmallPreviewImageBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush final
 {
 public:
 	const class UFortItem*                        Item;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            ReturnValue;                                       // 0x0010(0x322CBBB8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ReturnValue;                                       // 0x0010(0x0090)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush) == 0x11827900, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush");
-static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush) == 0x11827900, "Wrong size on FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush");
+static_assert(alignof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush) == 0x000008, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush");
+static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush) == 0x0000A0, "Wrong size on FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush, Item) == 0x000000, "Member 'FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush::Item' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush, BrushSize) == 0x000008, "Member 'FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush::BrushSize' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush, ReturnValue) == 0x000010, "Member 'FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIBlueprintFunctionLibrary.GetItemSmallPreviewImageMultiSizeBrush
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0368 (0x0368 - 0x0000)
 struct FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush final
 {
 public:
 	const class UFortItem*                        Item;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeBrush                    ReturnValue;                                       // 0x0008(0x11827900)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    ReturnValue;                                       // 0x0008(0x0360)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush) == 0x11821780, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush");
-static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush) == 0x11821780, "Wrong size on FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush");
+static_assert(alignof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush) == 0x000008, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush");
+static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush) == 0x000368, "Wrong size on FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush, Item) == 0x000000, "Member 'FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush::Item' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush, ReturnValue) == 0x000008, "Member 'FortUIBlueprintFunctionLibrary_GetItemSmallPreviewImageMultiSizeBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIBlueprintFunctionLibrary.GetMetaBoolOnOffer
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer final
 {
 public:
-	struct FCardPackOffer                         Offer;                                             // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FCardPackOffer                         Offer;                                             // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 Key;                                               // 0x0090(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDefaultValue;                                     // 0x00A0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00A1(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer) == 0x1182E980, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer");
-static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer) == 0x1182E980, "Wrong size on FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer");
+static_assert(alignof(FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer) == 0x000008, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer");
+static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer) == 0x0000A8, "Wrong size on FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer, Offer) == 0x000000, "Member 'FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer::Offer' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer, Key) == 0x000090, "Member 'FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer::Key' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer, bDefaultValue) == 0x0000A0, "Member 'FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer::bDefaultValue' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer, ReturnValue) == 0x0000A1, "Member 'FortUIBlueprintFunctionLibrary_GetMetaBoolOnOffer::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIBlueprintFunctionLibrary.GetMetaIntOnOffer
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer final
 {
 public:
-	struct FCardPackOffer                         Offer;                                             // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FCardPackOffer                         Offer;                                             // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 Key;                                               // 0x0090(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         DefaultValue;                                      // 0x00A0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x00A4(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer) == 0x1182E980, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer");
-static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer) == 0x1182E980, "Wrong size on FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer");
+static_assert(alignof(FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer) == 0x000008, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer");
+static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer) == 0x0000A8, "Wrong size on FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer, Offer) == 0x000000, "Member 'FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer::Offer' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer, Key) == 0x000090, "Member 'FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer::Key' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer, DefaultValue) == 0x0000A0, "Member 'FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer::DefaultValue' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer, ReturnValue) == 0x0000A4, "Member 'FortUIBlueprintFunctionLibrary_GetMetaIntOnOffer::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIBlueprintFunctionLibrary.GetMetaStringOnOffer
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer final
 {
 public:
-	struct FCardPackOffer                         Offer;                                             // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FCardPackOffer                         Offer;                                             // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 Key;                                               // 0x0090(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x00A0(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer) == 0x1182E980, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer");
-static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer) == 0x1182E980, "Wrong size on FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer");
+static_assert(alignof(FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer) == 0x000008, "Wrong alignment on FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer");
+static_assert(sizeof(FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer) == 0x0000B0, "Wrong size on FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer, Offer) == 0x000000, "Member 'FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer::Offer' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer, Key) == 0x000090, "Member 'FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer::Key' has a wrong offset!");
 static_assert(offsetof(FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer, ReturnValue) == 0x0000A0, "Member 'FortUIBlueprintFunctionLibrary_GetMetaStringOnOffer::ReturnValue' has a wrong offset!");
@@ -13171,36 +13176,36 @@ static_assert(sizeof(FortItemRatingIndicator_SetItemViewContext) == 0x000010, "W
 static_assert(offsetof(FortItemRatingIndicator_SetItemViewContext, ItemViewContext) == 0x000000, "Member 'FortItemRatingIndicator_SetItemViewContext::ItemViewContext' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.HandleOnLocalPlayerInfoUpdated
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated final
 {
 public:
-	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated) == 0x11821780, "Wrong alignment on FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated");
-static_assert(sizeof(FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated) == 0x11821780, "Wrong size on FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated");
+static_assert(alignof(FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated) == 0x000008, "Wrong alignment on FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated");
+static_assert(sizeof(FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated) == 0x000190, "Wrong size on FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated");
 static_assert(offsetof(FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated, NewInfo) == 0x000000, "Member 'FortPlayerTrackerBase_HandleOnLocalPlayerInfoUpdated::NewInfo' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.HandleOnPlayerIdUpdated
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortPlayerTrackerBase_HandleOnPlayerIdUpdated final
 {
 public:
-	struct FUniqueNetIdRepl                       NewInfo;                                           // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       NewInfo;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPlayerTrackerBase_HandleOnPlayerIdUpdated) == 0x11821780, "Wrong alignment on FortPlayerTrackerBase_HandleOnPlayerIdUpdated");
-static_assert(sizeof(FortPlayerTrackerBase_HandleOnPlayerIdUpdated) == 0x11821780, "Wrong size on FortPlayerTrackerBase_HandleOnPlayerIdUpdated");
+static_assert(alignof(FortPlayerTrackerBase_HandleOnPlayerIdUpdated) == 0x000008, "Wrong alignment on FortPlayerTrackerBase_HandleOnPlayerIdUpdated");
+static_assert(sizeof(FortPlayerTrackerBase_HandleOnPlayerIdUpdated) == 0x000018, "Wrong size on FortPlayerTrackerBase_HandleOnPlayerIdUpdated");
 static_assert(offsetof(FortPlayerTrackerBase_HandleOnPlayerIdUpdated, NewInfo) == 0x000000, "Member 'FortPlayerTrackerBase_HandleOnPlayerIdUpdated::NewInfo' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.HandleTeamMemberAdded
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct FortPlayerTrackerBase_HandleTeamMemberAdded final
 {
 public:
-	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x11827900)(Parm, NativeAccessSpecifierPublic)
+	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPlayerTrackerBase_HandleTeamMemberAdded) == 0x11821780, "Wrong alignment on FortPlayerTrackerBase_HandleTeamMemberAdded");
-static_assert(sizeof(FortPlayerTrackerBase_HandleTeamMemberAdded) == 0x11821780, "Wrong size on FortPlayerTrackerBase_HandleTeamMemberAdded");
+static_assert(alignof(FortPlayerTrackerBase_HandleTeamMemberAdded) == 0x000008, "Wrong alignment on FortPlayerTrackerBase_HandleTeamMemberAdded");
+static_assert(sizeof(FortPlayerTrackerBase_HandleTeamMemberAdded) == 0x000190, "Wrong size on FortPlayerTrackerBase_HandleTeamMemberAdded");
 static_assert(offsetof(FortPlayerTrackerBase_HandleTeamMemberAdded, NewInfo) == 0x000000, "Member 'FortPlayerTrackerBase_HandleTeamMemberAdded::NewInfo' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.HandleTeamMemberRemoved
@@ -13215,36 +13220,36 @@ static_assert(sizeof(FortPlayerTrackerBase_HandleTeamMemberRemoved) == 0x000004,
 static_assert(offsetof(FortPlayerTrackerBase_HandleTeamMemberRemoved, RemovedIndex) == 0x000000, "Member 'FortPlayerTrackerBase_HandleTeamMemberRemoved::RemovedIndex' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.HandleTeamMemberStateChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct FortPlayerTrackerBase_HandleTeamMemberStateChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x11827900)(Parm, NativeAccessSpecifierPublic)
+	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPlayerTrackerBase_HandleTeamMemberStateChanged) == 0x11821780, "Wrong alignment on FortPlayerTrackerBase_HandleTeamMemberStateChanged");
-static_assert(sizeof(FortPlayerTrackerBase_HandleTeamMemberStateChanged) == 0x11821780, "Wrong size on FortPlayerTrackerBase_HandleTeamMemberStateChanged");
+static_assert(alignof(FortPlayerTrackerBase_HandleTeamMemberStateChanged) == 0x000008, "Wrong alignment on FortPlayerTrackerBase_HandleTeamMemberStateChanged");
+static_assert(sizeof(FortPlayerTrackerBase_HandleTeamMemberStateChanged) == 0x000190, "Wrong size on FortPlayerTrackerBase_HandleTeamMemberStateChanged");
 static_assert(offsetof(FortPlayerTrackerBase_HandleTeamMemberStateChanged, NewInfo) == 0x000000, "Member 'FortPlayerTrackerBase_HandleTeamMemberStateChanged::NewInfo' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.HandleTeamMemberStateChangedId
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct FortPlayerTrackerBase_HandleTeamMemberStateChangedId final
 {
 public:
-	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x11827900)(Parm, NativeAccessSpecifierPublic)
+	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPlayerTrackerBase_HandleTeamMemberStateChangedId) == 0x11821780, "Wrong alignment on FortPlayerTrackerBase_HandleTeamMemberStateChangedId");
-static_assert(sizeof(FortPlayerTrackerBase_HandleTeamMemberStateChangedId) == 0x11821780, "Wrong size on FortPlayerTrackerBase_HandleTeamMemberStateChangedId");
+static_assert(alignof(FortPlayerTrackerBase_HandleTeamMemberStateChangedId) == 0x000008, "Wrong alignment on FortPlayerTrackerBase_HandleTeamMemberStateChangedId");
+static_assert(sizeof(FortPlayerTrackerBase_HandleTeamMemberStateChangedId) == 0x000190, "Wrong size on FortPlayerTrackerBase_HandleTeamMemberStateChangedId");
 static_assert(offsetof(FortPlayerTrackerBase_HandleTeamMemberStateChangedId, NewInfo) == 0x000000, "Member 'FortPlayerTrackerBase_HandleTeamMemberStateChangedId::NewInfo' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.OnPlayerInfoChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct FortPlayerTrackerBase_OnPlayerInfoChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x11827900)(Parm, NativeAccessSpecifierPublic)
+	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPlayerTrackerBase_OnPlayerInfoChanged) == 0x11821780, "Wrong alignment on FortPlayerTrackerBase_OnPlayerInfoChanged");
-static_assert(sizeof(FortPlayerTrackerBase_OnPlayerInfoChanged) == 0x11821780, "Wrong size on FortPlayerTrackerBase_OnPlayerInfoChanged");
+static_assert(alignof(FortPlayerTrackerBase_OnPlayerInfoChanged) == 0x000008, "Wrong alignment on FortPlayerTrackerBase_OnPlayerInfoChanged");
+static_assert(sizeof(FortPlayerTrackerBase_OnPlayerInfoChanged) == 0x000190, "Wrong size on FortPlayerTrackerBase_OnPlayerInfoChanged");
 static_assert(offsetof(FortPlayerTrackerBase_OnPlayerInfoChanged, NewInfo) == 0x000000, "Member 'FortPlayerTrackerBase_OnPlayerInfoChanged::NewInfo' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.SetTeamMember
@@ -13259,25 +13264,25 @@ static_assert(sizeof(FortPlayerTrackerBase_SetTeamMember) == 0x000004, "Wrong si
 static_assert(offsetof(FortPlayerTrackerBase_SetTeamMember, InPlayerIndex) == 0x000000, "Member 'FortPlayerTrackerBase_SetTeamMember::InPlayerIndex' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.SetUniqueId
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortPlayerTrackerBase_SetUniqueId final
 {
 public:
-	struct FUniqueNetIdRepl                       InUniqueId;                                        // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       InUniqueId;                                        // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPlayerTrackerBase_SetUniqueId) == 0x11821780, "Wrong alignment on FortPlayerTrackerBase_SetUniqueId");
-static_assert(sizeof(FortPlayerTrackerBase_SetUniqueId) == 0x11821780, "Wrong size on FortPlayerTrackerBase_SetUniqueId");
+static_assert(alignof(FortPlayerTrackerBase_SetUniqueId) == 0x000008, "Wrong alignment on FortPlayerTrackerBase_SetUniqueId");
+static_assert(sizeof(FortPlayerTrackerBase_SetUniqueId) == 0x000018, "Wrong size on FortPlayerTrackerBase_SetUniqueId");
 static_assert(offsetof(FortPlayerTrackerBase_SetUniqueId, InUniqueId) == 0x000000, "Member 'FortPlayerTrackerBase_SetUniqueId::InUniqueId' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.SetUniqueIdInternal
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortPlayerTrackerBase_SetUniqueIdInternal final
 {
 public:
-	struct FUniqueNetIdRepl                       InUniqueId;                                        // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       InUniqueId;                                        // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPlayerTrackerBase_SetUniqueIdInternal) == 0x11821780, "Wrong alignment on FortPlayerTrackerBase_SetUniqueIdInternal");
-static_assert(sizeof(FortPlayerTrackerBase_SetUniqueIdInternal) == 0x11821780, "Wrong size on FortPlayerTrackerBase_SetUniqueIdInternal");
+static_assert(alignof(FortPlayerTrackerBase_SetUniqueIdInternal) == 0x000008, "Wrong alignment on FortPlayerTrackerBase_SetUniqueIdInternal");
+static_assert(sizeof(FortPlayerTrackerBase_SetUniqueIdInternal) == 0x000018, "Wrong size on FortPlayerTrackerBase_SetUniqueIdInternal");
 static_assert(offsetof(FortPlayerTrackerBase_SetUniqueIdInternal, InUniqueId) == 0x000000, "Member 'FortPlayerTrackerBase_SetUniqueIdInternal::InUniqueId' has a wrong offset!");
 
 // Function FortniteUI.FortPlayerTrackerBase.GetFortitude
@@ -13489,27 +13494,27 @@ static_assert(sizeof(FortItemManagementItemTileButton_GetItemManagementMode) == 
 static_assert(offsetof(FortItemManagementItemTileButton_GetItemManagementMode, ReturnValue) == 0x000000, "Member 'FortItemManagementItemTileButton_GetItemManagementMode::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortPerkTierWidget_NUI.OnGeneratePerk
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortPerkTierWidget_NUI_OnGeneratePerk final
 {
 public:
-	struct FFortUIPerk                            Perk;                                              // 0x0000(0x1182E980)(Parm, NativeAccessSpecifierPublic)
+	struct FFortUIPerk                            Perk;                                              // 0x0000(0x0088)(Parm, NativeAccessSpecifierPublic)
 	class UFortPerkWidget_NUI*                    PerkWidget;                                        // 0x0088(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPerkTierWidget_NUI_OnGeneratePerk) == 0x1182E980, "Wrong alignment on FortPerkTierWidget_NUI_OnGeneratePerk");
-static_assert(sizeof(FortPerkTierWidget_NUI_OnGeneratePerk) == 0x1182E980, "Wrong size on FortPerkTierWidget_NUI_OnGeneratePerk");
+static_assert(alignof(FortPerkTierWidget_NUI_OnGeneratePerk) == 0x000008, "Wrong alignment on FortPerkTierWidget_NUI_OnGeneratePerk");
+static_assert(sizeof(FortPerkTierWidget_NUI_OnGeneratePerk) == 0x000090, "Wrong size on FortPerkTierWidget_NUI_OnGeneratePerk");
 static_assert(offsetof(FortPerkTierWidget_NUI_OnGeneratePerk, Perk) == 0x000000, "Member 'FortPerkTierWidget_NUI_OnGeneratePerk::Perk' has a wrong offset!");
 static_assert(offsetof(FortPerkTierWidget_NUI_OnGeneratePerk, PerkWidget) == 0x000088, "Member 'FortPerkTierWidget_NUI_OnGeneratePerk::PerkWidget' has a wrong offset!");
 
 // Function FortniteUI.FortSquadSlotItemPickerTileButton.HandleItemSlottedToDifferentSquad
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad final
 {
 public:
-	struct FHomebaseSquadSlotId                   SquadSlotId;                                       // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHomebaseSquadSlotId                   SquadSlotId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad) == 0x11821780, "Wrong alignment on FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad");
-static_assert(sizeof(FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad) == 0x11821780, "Wrong size on FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad");
+static_assert(alignof(FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad) == 0x000008, "Wrong alignment on FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad");
+static_assert(sizeof(FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad) == 0x000010, "Wrong size on FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad");
 static_assert(offsetof(FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad, SquadSlotId) == 0x000000, "Member 'FortSquadSlotItemPickerTileButton_HandleItemSlottedToDifferentSquad::SquadSlotId' has a wrong offset!");
 
 // Function FortniteUI.FortSquadSlotItemPickerTileButton.GetSlottingRestrictionReasons
@@ -13601,16 +13606,16 @@ static_assert(sizeof(FortTutorialContext_UnhideTutorialCallout) == 0x000008, "Wr
 static_assert(offsetof(FortTutorialContext_UnhideTutorialCallout, WidgetName) == 0x000000, "Member 'FortTutorialContext_UnhideTutorialCallout::WidgetName' has a wrong offset!");
 
 // Function FortniteUI.FortTutorialContext.UpdateTutorialAnnouncement
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0148 (0x0148 - 0x0000)
 struct FortTutorialContext_UpdateTutorialAnnouncement final
 {
 public:
-	struct FFortClientAnnouncementData_Tutorial   AnnouncementData;                                  // 0x0000(0x322CBBB8)(Parm, NativeAccessSpecifierPublic)
+	struct FFortClientAnnouncementData_Tutorial   AnnouncementData;                                  // 0x0000(0x0140)(Parm, NativeAccessSpecifierPublic)
 	bool                                          bShow;                                             // 0x0140(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortTutorialContext_UpdateTutorialAnnouncement) == 0x11821780, "Wrong alignment on FortTutorialContext_UpdateTutorialAnnouncement");
-static_assert(sizeof(FortTutorialContext_UpdateTutorialAnnouncement) == 0x11821780, "Wrong size on FortTutorialContext_UpdateTutorialAnnouncement");
+static_assert(alignof(FortTutorialContext_UpdateTutorialAnnouncement) == 0x000008, "Wrong alignment on FortTutorialContext_UpdateTutorialAnnouncement");
+static_assert(sizeof(FortTutorialContext_UpdateTutorialAnnouncement) == 0x000148, "Wrong size on FortTutorialContext_UpdateTutorialAnnouncement");
 static_assert(offsetof(FortTutorialContext_UpdateTutorialAnnouncement, AnnouncementData) == 0x000000, "Member 'FortTutorialContext_UpdateTutorialAnnouncement::AnnouncementData' has a wrong offset!");
 static_assert(offsetof(FortTutorialContext_UpdateTutorialAnnouncement, bShow) == 0x000140, "Member 'FortTutorialContext_UpdateTutorialAnnouncement::bShow' has a wrong offset!");
 
@@ -13724,14 +13729,14 @@ static_assert(offsetof(FortUIManagerWidget_NUI_CreateNotification, UINotificatio
 static_assert(offsetof(FortUIManagerWidget_NUI_CreateNotification, ReturnValue) == 0x000008, "Member 'FortUIManagerWidget_NUI_CreateNotification::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.DisplayErrorDialog
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct FortUIManagerWidget_NUI_DisplayErrorDialog final
 {
 public:
-	struct FFortErrorInfo                         Info;                                              // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortErrorInfo                         Info;                                              // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_NUI_DisplayErrorDialog) == 0x1182E980, "Wrong alignment on FortUIManagerWidget_NUI_DisplayErrorDialog");
-static_assert(sizeof(FortUIManagerWidget_NUI_DisplayErrorDialog) == 0x1182E980, "Wrong size on FortUIManagerWidget_NUI_DisplayErrorDialog");
+static_assert(alignof(FortUIManagerWidget_NUI_DisplayErrorDialog) == 0x000010, "Wrong alignment on FortUIManagerWidget_NUI_DisplayErrorDialog");
+static_assert(sizeof(FortUIManagerWidget_NUI_DisplayErrorDialog) == 0x000080, "Wrong size on FortUIManagerWidget_NUI_DisplayErrorDialog");
 static_assert(offsetof(FortUIManagerWidget_NUI_DisplayErrorDialog, Info) == 0x000000, "Member 'FortUIManagerWidget_NUI_DisplayErrorDialog::Info' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.DisplayStateContent
@@ -13777,14 +13782,14 @@ static_assert(offsetof(FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSign
 static_assert(offsetof(FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature, DisplayPreference) == 0x000038, "Member 'FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature::DisplayPreference' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.OnEndLatentWaitForConfirmationDialog
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog final
 {
 public:
-	struct FFortDialogExternalLatentActionHandle  WaitingDialogHandle;                               // 0x0000(0x11821780)(Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortDialogExternalLatentActionHandle  WaitingDialogHandle;                               // 0x0000(0x0004)(Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog) == 0x11821780, "Wrong alignment on FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog");
-static_assert(sizeof(FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog) == 0x11821780, "Wrong size on FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog");
+static_assert(alignof(FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog) == 0x000004, "Wrong alignment on FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog");
+static_assert(sizeof(FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog) == 0x000004, "Wrong size on FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog");
 static_assert(offsetof(FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog, WaitingDialogHandle) == 0x000000, "Member 'FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog::WaitingDialogHandle' has a wrong offset!");
 
 // DelegateFunction FortniteUI.FortUIManagerWidget_NUI.OnShouldBlockSubtitlePortraitChanged__DelegateSignature
@@ -13799,25 +13804,25 @@ static_assert(sizeof(FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChange
 static_assert(offsetof(FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature, bShouldBlockSubtitlePortrait) == 0x000000, "Member 'FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature::bShouldBlockSubtitlePortrait' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.OnShowConfirmation
-// 0x11824600 (0x11824600 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct FortUIManagerWidget_NUI_OnShowConfirmation final
 {
 public:
-	struct FFortDialogDescription                 Description;                                       // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription                 Description;                                       // 0x0000(0x0170)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_NUI_OnShowConfirmation) == 0x11824600, "Wrong alignment on FortUIManagerWidget_NUI_OnShowConfirmation");
-static_assert(sizeof(FortUIManagerWidget_NUI_OnShowConfirmation) == 0x11824600, "Wrong size on FortUIManagerWidget_NUI_OnShowConfirmation");
+static_assert(alignof(FortUIManagerWidget_NUI_OnShowConfirmation) == 0x000010, "Wrong alignment on FortUIManagerWidget_NUI_OnShowConfirmation");
+static_assert(sizeof(FortUIManagerWidget_NUI_OnShowConfirmation) == 0x000170, "Wrong size on FortUIManagerWidget_NUI_OnShowConfirmation");
 static_assert(offsetof(FortUIManagerWidget_NUI_OnShowConfirmation, Description) == 0x000000, "Member 'FortUIManagerWidget_NUI_OnShowConfirmation::Description' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.OnShowConfirmation_NUI
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct FortUIManagerWidget_NUI_OnShowConfirmation_NUI final
 {
 public:
-	struct FFortDialogDescription_NUI             Description;                                       // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription_NUI             Description;                                       // 0x0000(0x0180)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_NUI_OnShowConfirmation_NUI) == 0x1182E980, "Wrong alignment on FortUIManagerWidget_NUI_OnShowConfirmation_NUI");
-static_assert(sizeof(FortUIManagerWidget_NUI_OnShowConfirmation_NUI) == 0x1182E980, "Wrong size on FortUIManagerWidget_NUI_OnShowConfirmation_NUI");
+static_assert(alignof(FortUIManagerWidget_NUI_OnShowConfirmation_NUI) == 0x000010, "Wrong alignment on FortUIManagerWidget_NUI_OnShowConfirmation_NUI");
+static_assert(sizeof(FortUIManagerWidget_NUI_OnShowConfirmation_NUI) == 0x000180, "Wrong size on FortUIManagerWidget_NUI_OnShowConfirmation_NUI");
 static_assert(offsetof(FortUIManagerWidget_NUI_OnShowConfirmation_NUI, Description) == 0x000000, "Member 'FortUIManagerWidget_NUI_OnShowConfirmation_NUI::Description' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.PopActivatablePanelInModalLayer
@@ -13903,14 +13908,14 @@ static_assert(sizeof(FortUIManagerWidget_NUI_UnregisterStateTrigger) == 0x000008
 static_assert(offsetof(FortUIManagerWidget_NUI_UnregisterStateTrigger, TriggerToRemove) == 0x000000, "Member 'FortUIManagerWidget_NUI_UnregisterStateTrigger::TriggerToRemove' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.UpdateStateWidgetContent
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x18) FortUIManagerWidget_NUI_UpdateStateWidgetContent final
+// 0x0008 (0x0008 - 0x0000)
+struct FortUIManagerWidget_NUI_UpdateStateWidgetContent final
 {
 public:
 	class UFortUIStateWidget_NUI*                 StateWidget;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_NUI_UpdateStateWidgetContent) == 0x000018, "Wrong alignment on FortUIManagerWidget_NUI_UpdateStateWidgetContent");
-static_assert(sizeof(FortUIManagerWidget_NUI_UpdateStateWidgetContent) == 0x000018, "Wrong size on FortUIManagerWidget_NUI_UpdateStateWidgetContent");
+static_assert(alignof(FortUIManagerWidget_NUI_UpdateStateWidgetContent) == 0x000008, "Wrong alignment on FortUIManagerWidget_NUI_UpdateStateWidgetContent");
+static_assert(sizeof(FortUIManagerWidget_NUI_UpdateStateWidgetContent) == 0x000008, "Wrong size on FortUIManagerWidget_NUI_UpdateStateWidgetContent");
 static_assert(offsetof(FortUIManagerWidget_NUI_UpdateStateWidgetContent, StateWidget) == 0x000000, "Member 'FortUIManagerWidget_NUI_UpdateStateWidgetContent::StateWidget' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI._BPGetCurrentUIState
@@ -14009,26 +14014,26 @@ static_assert(sizeof(FortItemTileView_HandleItemWidgetCreated) == 0x000008, "Wro
 static_assert(offsetof(FortItemTileView_HandleItemWidgetCreated, Widget) == 0x000000, "Member 'FortItemTileView_HandleItemWidgetCreated::Widget' has a wrong offset!");
 
 // Function FortniteUI.FortItemTileView.SetFilter
-// 0x53EFC (0x53EFC - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct FortItemTileView_SetFilter final
 {
 public:
-	struct FFortItemFilterDefinition              Filter_0;                                          // 0x0000(0x53EFC)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemFilterDefinition              Filter_0;                                          // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemTileView_SetFilter) == 0x053EFC, "Wrong alignment on FortItemTileView_SetFilter");
-static_assert(sizeof(FortItemTileView_SetFilter) == 0x053EFC, "Wrong size on FortItemTileView_SetFilter");
+static_assert(alignof(FortItemTileView_SetFilter) == 0x000010, "Wrong alignment on FortItemTileView_SetFilter");
+static_assert(sizeof(FortItemTileView_SetFilter) == 0x000060, "Wrong size on FortItemTileView_SetFilter");
 static_assert(offsetof(FortItemTileView_SetFilter, Filter_0) == 0x000000, "Member 'FortItemTileView_SetFilter::Filter_0' has a wrong offset!");
 
 // Function FortniteUI.FortItemTileView.SetFilterAndSorter
-// 0x53F37 (0x53F37 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct FortItemTileView_SetFilterAndSorter final
 {
 public:
-	struct FFortItemFilterDefinition              Filter_0;                                          // 0x0000(0x53EFC)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FFortItemSorterDefinition              Sorter_0;                                          // 0x0060(0x53F37)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemFilterDefinition              Filter_0;                                          // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemSorterDefinition              Sorter_0;                                          // 0x0060(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemTileView_SetFilterAndSorter) == 0x053F37, "Wrong alignment on FortItemTileView_SetFilterAndSorter");
-static_assert(sizeof(FortItemTileView_SetFilterAndSorter) == 0x053F37, "Wrong size on FortItemTileView_SetFilterAndSorter");
+static_assert(alignof(FortItemTileView_SetFilterAndSorter) == 0x000010, "Wrong alignment on FortItemTileView_SetFilterAndSorter");
+static_assert(sizeof(FortItemTileView_SetFilterAndSorter) == 0x0000B0, "Wrong size on FortItemTileView_SetFilterAndSorter");
 static_assert(offsetof(FortItemTileView_SetFilterAndSorter, Filter_0) == 0x000000, "Member 'FortItemTileView_SetFilterAndSorter::Filter_0' has a wrong offset!");
 static_assert(offsetof(FortItemTileView_SetFilterAndSorter, Sorter_0) == 0x000060, "Member 'FortItemTileView_SetFilterAndSorter::Sorter_0' has a wrong offset!");
 
@@ -14044,14 +14049,14 @@ static_assert(sizeof(FortItemTileView_SetItemViewContext) == 0x000010, "Wrong si
 static_assert(offsetof(FortItemTileView_SetItemViewContext, ItemViewContext_0) == 0x000000, "Member 'FortItemTileView_SetItemViewContext::ItemViewContext_0' has a wrong offset!");
 
 // Function FortniteUI.FortItemTileView.SetSorter
-// 0x53F37 (0x53F37 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct FortItemTileView_SetSorter final
 {
 public:
-	struct FFortItemSorterDefinition              Sorter_0;                                          // 0x0000(0x53F37)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortItemSorterDefinition              Sorter_0;                                          // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortItemTileView_SetSorter) == 0x053F37, "Wrong alignment on FortItemTileView_SetSorter");
-static_assert(sizeof(FortItemTileView_SetSorter) == 0x053F37, "Wrong size on FortItemTileView_SetSorter");
+static_assert(alignof(FortItemTileView_SetSorter) == 0x000010, "Wrong alignment on FortItemTileView_SetSorter");
+static_assert(sizeof(FortItemTileView_SetSorter) == 0x000050, "Wrong size on FortItemTileView_SetSorter");
 static_assert(offsetof(FortItemTileView_SetSorter, Sorter_0) == 0x000000, "Member 'FortItemTileView_SetSorter::Sorter_0' has a wrong offset!");
 
 // Function FortniteUI.FortTierIndicator.SetBrushSize
@@ -14176,14 +14181,14 @@ static_assert(sizeof(FortJournalQuestDetails_CanPlayQuest) == 0x000001, "Wrong s
 static_assert(offsetof(FortJournalQuestDetails_CanPlayQuest, ReturnValue) == 0x000000, "Member 'FortJournalQuestDetails_CanPlayQuest::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortJournalQuestDetails.GetActiveMissionTileType
-// 0x113C7E00 (0x113C7E00 - 0x0000)
-struct alignas(0x113C7E00) FortJournalQuestDetails_GetActiveMissionTileType final
+// 0x0001 (0x0001 - 0x0000)
+struct FortJournalQuestDetails_GetActiveMissionTileType final
 {
 public:
 	EFortTheaterMapTileType                       ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortJournalQuestDetails_GetActiveMissionTileType) == 0x113C7E00, "Wrong alignment on FortJournalQuestDetails_GetActiveMissionTileType");
-static_assert(sizeof(FortJournalQuestDetails_GetActiveMissionTileType) == 0x113C7E00, "Wrong size on FortJournalQuestDetails_GetActiveMissionTileType");
+static_assert(alignof(FortJournalQuestDetails_GetActiveMissionTileType) == 0x000001, "Wrong alignment on FortJournalQuestDetails_GetActiveMissionTileType");
+static_assert(sizeof(FortJournalQuestDetails_GetActiveMissionTileType) == 0x000001, "Wrong size on FortJournalQuestDetails_GetActiveMissionTileType");
 static_assert(offsetof(FortJournalQuestDetails_GetActiveMissionTileType, ReturnValue) == 0x000000, "Member 'FortJournalQuestDetails_GetActiveMissionTileType::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortJournalQuestDetails.GetFutureObjectives
@@ -14337,15 +14342,16 @@ static_assert(sizeof(FortUIStateWidget_NUI_PopContentWidget) == 0x000008, "Wrong
 static_assert(offsetof(FortUIStateWidget_NUI_PopContentWidget, ReturnValue) == 0x000000, "Member 'FortUIStateWidget_NUI_PopContentWidget::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIStateWidget_NUI.PopContentWidgetInternal
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortUIStateWidget_NUI_PopContentWidgetInternal final
 {
 public:
-	struct FContentPushState                      State;                                             // 0x0000(0x1182E980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FContentPushState                      State;                                             // 0x0000(0x0003)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIStateWidget_NUI_PopContentWidgetInternal) == 0x1182E980, "Wrong alignment on FortUIStateWidget_NUI_PopContentWidgetInternal");
-static_assert(sizeof(FortUIStateWidget_NUI_PopContentWidgetInternal) == 0x1182E980, "Wrong size on FortUIStateWidget_NUI_PopContentWidgetInternal");
+static_assert(alignof(FortUIStateWidget_NUI_PopContentWidgetInternal) == 0x000008, "Wrong alignment on FortUIStateWidget_NUI_PopContentWidgetInternal");
+static_assert(sizeof(FortUIStateWidget_NUI_PopContentWidgetInternal) == 0x000010, "Wrong size on FortUIStateWidget_NUI_PopContentWidgetInternal");
 static_assert(offsetof(FortUIStateWidget_NUI_PopContentWidgetInternal, State) == 0x000000, "Member 'FortUIStateWidget_NUI_PopContentWidgetInternal::State' has a wrong offset!");
 static_assert(offsetof(FortUIStateWidget_NUI_PopContentWidgetInternal, ReturnValue) == 0x000008, "Member 'FortUIStateWidget_NUI_PopContentWidgetInternal::ReturnValue' has a wrong offset!");
 
@@ -14379,15 +14385,16 @@ static_assert(offsetof(FortUIStateWidget_NUI_PushContentWidgetAdvanced, bHideFoo
 static_assert(offsetof(FortUIStateWidget_NUI_PushContentWidgetAdvanced, bHideChatWidget) == 0x00000A, "Member 'FortUIStateWidget_NUI_PushContentWidgetAdvanced::bHideChatWidget' has a wrong offset!");
 
 // Function FortniteUI.FortUIStateWidget_NUI.PushContentWidgetInternal
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortUIStateWidget_NUI_PushContentWidgetInternal final
 {
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FContentPushState                      State;                                             // 0x0008(0x1182E980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FContentPushState                      State;                                             // 0x0008(0x0003)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortUIStateWidget_NUI_PushContentWidgetInternal) == 0x1182E980, "Wrong alignment on FortUIStateWidget_NUI_PushContentWidgetInternal");
-static_assert(sizeof(FortUIStateWidget_NUI_PushContentWidgetInternal) == 0x1182E980, "Wrong size on FortUIStateWidget_NUI_PushContentWidgetInternal");
+static_assert(alignof(FortUIStateWidget_NUI_PushContentWidgetInternal) == 0x000008, "Wrong alignment on FortUIStateWidget_NUI_PushContentWidgetInternal");
+static_assert(sizeof(FortUIStateWidget_NUI_PushContentWidgetInternal) == 0x000010, "Wrong size on FortUIStateWidget_NUI_PushContentWidgetInternal");
 static_assert(offsetof(FortUIStateWidget_NUI_PushContentWidgetInternal, Widget) == 0x000000, "Member 'FortUIStateWidget_NUI_PushContentWidgetInternal::Widget' has a wrong offset!");
 static_assert(offsetof(FortUIStateWidget_NUI_PushContentWidgetInternal, State) == 0x000008, "Member 'FortUIStateWidget_NUI_PushContentWidgetInternal::State' has a wrong offset!");
 
@@ -14952,29 +14959,29 @@ static_assert(sizeof(FortAlterationWidget_IsAlterationUnlocked) == 0x000001, "Wr
 static_assert(offsetof(FortAlterationWidget_IsAlterationUnlocked, ReturnValue) == 0x000000, "Member 'FortAlterationWidget_IsAlterationUnlocked::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMaterialProgressBar.SetBackgroundColor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortMaterialProgressBar_SetBackgroundColor final
 {
 public:
-	struct FLinearColor                           Color;                                             // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMaterialProgressBar_SetBackgroundColor) == 0x11821300, "Wrong alignment on FortMaterialProgressBar_SetBackgroundColor");
-static_assert(sizeof(FortMaterialProgressBar_SetBackgroundColor) == 0x11821300, "Wrong size on FortMaterialProgressBar_SetBackgroundColor");
+static_assert(alignof(FortMaterialProgressBar_SetBackgroundColor) == 0x000004, "Wrong alignment on FortMaterialProgressBar_SetBackgroundColor");
+static_assert(sizeof(FortMaterialProgressBar_SetBackgroundColor) == 0x000010, "Wrong size on FortMaterialProgressBar_SetBackgroundColor");
 static_assert(offsetof(FortMaterialProgressBar_SetBackgroundColor, Color) == 0x000000, "Member 'FortMaterialProgressBar_SetBackgroundColor::Color' has a wrong offset!");
 
 // Function FortniteUI.FortMaterialProgressBar.SetProgressBarSectionColor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortMaterialProgressBar_SetProgressBarSectionColor final
 {
 public:
 	EFortMaterialProgressBarSection               BarSection;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Color;                                             // 0x0004(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Color;                                             // 0x0004(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortMaterialProgressBarSectionColorNumber    ColorNumber;                                       // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortMaterialProgressBar_SetProgressBarSectionColor) == 0x11821300, "Wrong alignment on FortMaterialProgressBar_SetProgressBarSectionColor");
-static_assert(sizeof(FortMaterialProgressBar_SetProgressBarSectionColor) == 0x11821300, "Wrong size on FortMaterialProgressBar_SetProgressBarSectionColor");
+static_assert(alignof(FortMaterialProgressBar_SetProgressBarSectionColor) == 0x000004, "Wrong alignment on FortMaterialProgressBar_SetProgressBarSectionColor");
+static_assert(sizeof(FortMaterialProgressBar_SetProgressBarSectionColor) == 0x000018, "Wrong size on FortMaterialProgressBar_SetProgressBarSectionColor");
 static_assert(offsetof(FortMaterialProgressBar_SetProgressBarSectionColor, BarSection) == 0x000000, "Member 'FortMaterialProgressBar_SetProgressBarSectionColor::BarSection' has a wrong offset!");
 static_assert(offsetof(FortMaterialProgressBar_SetProgressBarSectionColor, Color) == 0x000004, "Member 'FortMaterialProgressBar_SetProgressBarSectionColor::Color' has a wrong offset!");
 static_assert(offsetof(FortMaterialProgressBar_SetProgressBarSectionColor, ColorNumber) == 0x000014, "Member 'FortMaterialProgressBar_SetProgressBarSectionColor::ColorNumber' has a wrong offset!");
@@ -15016,14 +15023,14 @@ static_assert(sizeof(FortConfirmationWindow_ProcessResult) == 0x000001, "Wrong s
 static_assert(offsetof(FortConfirmationWindow_ProcessResult, DialogResult) == 0x000000, "Member 'FortConfirmationWindow_ProcessResult::DialogResult' has a wrong offset!");
 
 // Function FortniteUI.FortConfirmationWindow.ShowConfirmation
-// 0x11824600 (0x11824600 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct FortConfirmationWindow_ShowConfirmation final
 {
 public:
-	struct FFortDialogDescription                 Description;                                       // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription                 Description;                                       // 0x0000(0x0170)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortConfirmationWindow_ShowConfirmation) == 0x11824600, "Wrong alignment on FortConfirmationWindow_ShowConfirmation");
-static_assert(sizeof(FortConfirmationWindow_ShowConfirmation) == 0x11824600, "Wrong size on FortConfirmationWindow_ShowConfirmation");
+static_assert(alignof(FortConfirmationWindow_ShowConfirmation) == 0x000010, "Wrong alignment on FortConfirmationWindow_ShowConfirmation");
+static_assert(sizeof(FortConfirmationWindow_ShowConfirmation) == 0x000170, "Wrong size on FortConfirmationWindow_ShowConfirmation");
 static_assert(offsetof(FortConfirmationWindow_ShowConfirmation, Description) == 0x000000, "Member 'FortConfirmationWindow_ShowConfirmation::Description' has a wrong offset!");
 
 // Function FortniteUI.FortMicIndicatorWidget.OnPlayerMicAvailable
@@ -15060,14 +15067,14 @@ static_assert(sizeof(FortMicIndicatorWidget_OnPlayerTalkingChanged) == 0x000001,
 static_assert(offsetof(FortMicIndicatorWidget_OnPlayerTalkingChanged, bIsTalking) == 0x000000, "Member 'FortMicIndicatorWidget_OnPlayerTalkingChanged::bIsTalking' has a wrong offset!");
 
 // Function FortniteUI.FortMicIndicatorWidget.SetPlayerUniqueId
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortMicIndicatorWidget_SetPlayerUniqueId final
 {
 public:
-	struct FUniqueNetIdRepl                       InPlayerUniqueId;                                  // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       InPlayerUniqueId;                                  // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMicIndicatorWidget_SetPlayerUniqueId) == 0x11821780, "Wrong alignment on FortMicIndicatorWidget_SetPlayerUniqueId");
-static_assert(sizeof(FortMicIndicatorWidget_SetPlayerUniqueId) == 0x11821780, "Wrong size on FortMicIndicatorWidget_SetPlayerUniqueId");
+static_assert(alignof(FortMicIndicatorWidget_SetPlayerUniqueId) == 0x000008, "Wrong alignment on FortMicIndicatorWidget_SetPlayerUniqueId");
+static_assert(sizeof(FortMicIndicatorWidget_SetPlayerUniqueId) == 0x000018, "Wrong size on FortMicIndicatorWidget_SetPlayerUniqueId");
 static_assert(offsetof(FortMicIndicatorWidget_SetPlayerUniqueId, InPlayerUniqueId) == 0x000000, "Member 'FortMicIndicatorWidget_SetPlayerUniqueId::InPlayerUniqueId' has a wrong offset!");
 
 // Function FortniteUI.FortMissionSelect.NavigateMissionTiles
@@ -15084,14 +15091,14 @@ static_assert(offsetof(FortMissionSelect_NavigateMissionTiles, Direction) == 0x0
 static_assert(offsetof(FortMissionSelect_NavigateMissionTiles, ReturnValue) == 0x000001, "Member 'FortMissionSelect_NavigateMissionTiles::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxStoreOfferBase.GetBackground
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortMtxStoreOfferBase_GetBackground final
 {
 public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMtxStoreOfferBase_GetBackground) == 0x11821300, "Wrong alignment on FortMtxStoreOfferBase_GetBackground");
-static_assert(sizeof(FortMtxStoreOfferBase_GetBackground) == 0x11821300, "Wrong size on FortMtxStoreOfferBase_GetBackground");
+static_assert(alignof(FortMtxStoreOfferBase_GetBackground) == 0x000004, "Wrong alignment on FortMtxStoreOfferBase_GetBackground");
+static_assert(sizeof(FortMtxStoreOfferBase_GetBackground) == 0x000010, "Wrong size on FortMtxStoreOfferBase_GetBackground");
 static_assert(offsetof(FortMtxStoreOfferBase_GetBackground, ReturnValue) == 0x000000, "Member 'FortMtxStoreOfferBase_GetBackground::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxStoreOfferBase.GetBaseQuantity
@@ -15139,25 +15146,25 @@ static_assert(sizeof(FortMtxStoreOfferBase_GetDetailsAttributes) == 0x000010, "W
 static_assert(offsetof(FortMtxStoreOfferBase_GetDetailsAttributes, ReturnValue) == 0x000000, "Member 'FortMtxStoreOfferBase_GetDetailsAttributes::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxStoreOfferBase.GetDetailsImage
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortMtxStoreOfferBase_GetDetailsImage final
 {
 public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMtxStoreOfferBase_GetDetailsImage) == 0x11827900, "Wrong alignment on FortMtxStoreOfferBase_GetDetailsImage");
-static_assert(sizeof(FortMtxStoreOfferBase_GetDetailsImage) == 0x11827900, "Wrong size on FortMtxStoreOfferBase_GetDetailsImage");
+static_assert(alignof(FortMtxStoreOfferBase_GetDetailsImage) == 0x000008, "Wrong alignment on FortMtxStoreOfferBase_GetDetailsImage");
+static_assert(sizeof(FortMtxStoreOfferBase_GetDetailsImage) == 0x000090, "Wrong size on FortMtxStoreOfferBase_GetDetailsImage");
 static_assert(offsetof(FortMtxStoreOfferBase_GetDetailsImage, ReturnValue) == 0x000000, "Member 'FortMtxStoreOfferBase_GetDetailsImage::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxStoreOfferBase.GetGradient
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortMtxStoreOfferBase_GetGradient final
 {
 public:
-	struct FFortMtxGradient                       ReturnValue;                                       // 0x0000(0x1182E980)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortMtxGradient                       ReturnValue;                                       // 0x0000(0x0020)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMtxStoreOfferBase_GetGradient) == 0x1182E980, "Wrong alignment on FortMtxStoreOfferBase_GetGradient");
-static_assert(sizeof(FortMtxStoreOfferBase_GetGradient) == 0x1182E980, "Wrong size on FortMtxStoreOfferBase_GetGradient");
+static_assert(alignof(FortMtxStoreOfferBase_GetGradient) == 0x000004, "Wrong alignment on FortMtxStoreOfferBase_GetGradient");
+static_assert(sizeof(FortMtxStoreOfferBase_GetGradient) == 0x000020, "Wrong size on FortMtxStoreOfferBase_GetGradient");
 static_assert(offsetof(FortMtxStoreOfferBase_GetGradient, ReturnValue) == 0x000000, "Member 'FortMtxStoreOfferBase_GetGradient::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxStoreOfferBase.GetName
@@ -15219,14 +15226,14 @@ static_assert(sizeof(FortMtxStoreOfferBase_GetStoreOfferType) == 0x000001, "Wron
 static_assert(offsetof(FortMtxStoreOfferBase_GetStoreOfferType, ReturnValue) == 0x000000, "Member 'FortMtxStoreOfferBase_GetStoreOfferType::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortMtxStoreOfferBase.GetTileImage
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortMtxStoreOfferBase_GetTileImage final
 {
 public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x322CBBB8)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMtxStoreOfferBase_GetTileImage) == 0x11827900, "Wrong alignment on FortMtxStoreOfferBase_GetTileImage");
-static_assert(sizeof(FortMtxStoreOfferBase_GetTileImage) == 0x11827900, "Wrong size on FortMtxStoreOfferBase_GetTileImage");
+static_assert(alignof(FortMtxStoreOfferBase_GetTileImage) == 0x000008, "Wrong alignment on FortMtxStoreOfferBase_GetTileImage");
+static_assert(sizeof(FortMtxStoreOfferBase_GetTileImage) == 0x000090, "Wrong size on FortMtxStoreOfferBase_GetTileImage");
 static_assert(offsetof(FortMtxStoreOfferBase_GetTileImage, ReturnValue) == 0x000000, "Member 'FortMtxStoreOfferBase_GetTileImage::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortNumericTextBlock.DirectlySet
@@ -15621,14 +15628,14 @@ static_assert(sizeof(FortGameOptions_GetForceFeedbackState) == 0x000001, "Wrong 
 static_assert(offsetof(FortGameOptions_GetForceFeedbackState, ReturnValue) == 0x000000, "Member 'FortGameOptions_GetForceFeedbackState::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGameOptions.GetGamepadLookSensitivityValue
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FortGameOptions_GetGamepadLookSensitivityValue final
 {
 public:
-	struct FVector2D                              ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortGameOptions_GetGamepadLookSensitivityValue) == 0x11821300, "Wrong alignment on FortGameOptions_GetGamepadLookSensitivityValue");
-static_assert(sizeof(FortGameOptions_GetGamepadLookSensitivityValue) == 0x11821300, "Wrong size on FortGameOptions_GetGamepadLookSensitivityValue");
+static_assert(alignof(FortGameOptions_GetGamepadLookSensitivityValue) == 0x000004, "Wrong alignment on FortGameOptions_GetGamepadLookSensitivityValue");
+static_assert(sizeof(FortGameOptions_GetGamepadLookSensitivityValue) == 0x000008, "Wrong size on FortGameOptions_GetGamepadLookSensitivityValue");
 static_assert(offsetof(FortGameOptions_GetGamepadLookSensitivityValue, ReturnValue) == 0x000000, "Member 'FortGameOptions_GetGamepadLookSensitivityValue::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGameOptions.GetGammaSettings
@@ -15643,16 +15650,16 @@ static_assert(sizeof(FortGameOptions_GetGammaSettings) == 0x000004, "Wrong size 
 static_assert(offsetof(FortGameOptions_GetGammaSettings, ReturnValue) == 0x000000, "Member 'FortGameOptions_GetGammaSettings::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortGameOptions.GetHUDSettings
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortGameOptions_GetHUDSettings final
 {
 public:
-	struct FGameplayTag                           HUDMapping;                                        // 0x0000(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           HUDMapping;                                        // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortGameOptions_GetHUDSettings) == 0x11821D80, "Wrong alignment on FortGameOptions_GetHUDSettings");
-static_assert(sizeof(FortGameOptions_GetHUDSettings) == 0x11821D80, "Wrong size on FortGameOptions_GetHUDSettings");
+static_assert(alignof(FortGameOptions_GetHUDSettings) == 0x000008, "Wrong alignment on FortGameOptions_GetHUDSettings");
+static_assert(sizeof(FortGameOptions_GetHUDSettings) == 0x000010, "Wrong size on FortGameOptions_GetHUDSettings");
 static_assert(offsetof(FortGameOptions_GetHUDSettings, HUDMapping) == 0x000000, "Member 'FortGameOptions_GetHUDSettings::HUDMapping' has a wrong offset!");
 static_assert(offsetof(FortGameOptions_GetHUDSettings, ReturnValue) == 0x000008, "Member 'FortGameOptions_GetHUDSettings::ReturnValue' has a wrong offset!");
 
@@ -15745,16 +15752,16 @@ static_assert(sizeof(FortGameOptions_UpdateGammaSettings) == 0x000004, "Wrong si
 static_assert(offsetof(FortGameOptions_UpdateGammaSettings, GammaValue) == 0x000000, "Member 'FortGameOptions_UpdateGammaSettings::GammaValue' has a wrong offset!");
 
 // Function FortniteUI.FortGameOptions.UpdateHUDSettings
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct FortGameOptions_UpdateHUDSettings final
 {
 public:
-	struct FGameplayTag                           HUDMapping;                                        // 0x0000(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           HUDMapping;                                        // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          NewVisibility;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortGameOptions_UpdateHUDSettings) == 0x11821D80, "Wrong alignment on FortGameOptions_UpdateHUDSettings");
-static_assert(sizeof(FortGameOptions_UpdateHUDSettings) == 0x11821D80, "Wrong size on FortGameOptions_UpdateHUDSettings");
+static_assert(alignof(FortGameOptions_UpdateHUDSettings) == 0x000008, "Wrong alignment on FortGameOptions_UpdateHUDSettings");
+static_assert(sizeof(FortGameOptions_UpdateHUDSettings) == 0x000010, "Wrong size on FortGameOptions_UpdateHUDSettings");
 static_assert(offsetof(FortGameOptions_UpdateHUDSettings, HUDMapping) == 0x000000, "Member 'FortGameOptions_UpdateHUDSettings::HUDMapping' has a wrong offset!");
 static_assert(offsetof(FortGameOptions_UpdateHUDSettings, NewVisibility) == 0x000008, "Member 'FortGameOptions_UpdateHUDSettings::NewVisibility' has a wrong offset!");
 
@@ -16147,16 +16154,16 @@ static_assert(sizeof(FortPerkWidget_NUI_GetCombinedTooltipDescription) == 0x0000
 static_assert(offsetof(FortPerkWidget_NUI_GetCombinedTooltipDescription, ReturnValue) == 0x000000, "Member 'FortPerkWidget_NUI_GetCombinedTooltipDescription::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortPerkWidget_NUI.GetIcon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortPerkWidget_NUI_GetIcon final
 {
 public:
-	struct FSlateBrush                            Brush;                                             // 0x0000(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Brush;                                             // 0x0000(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortPerkWidget_NUI_GetIcon) == 0x11827900, "Wrong alignment on FortPerkWidget_NUI_GetIcon");
-static_assert(sizeof(FortPerkWidget_NUI_GetIcon) == 0x11827900, "Wrong size on FortPerkWidget_NUI_GetIcon");
+static_assert(alignof(FortPerkWidget_NUI_GetIcon) == 0x000008, "Wrong alignment on FortPerkWidget_NUI_GetIcon");
+static_assert(sizeof(FortPerkWidget_NUI_GetIcon) == 0x000098, "Wrong size on FortPerkWidget_NUI_GetIcon");
 static_assert(offsetof(FortPerkWidget_NUI_GetIcon, Brush) == 0x000000, "Member 'FortPerkWidget_NUI_GetIcon::Brush' has a wrong offset!");
 static_assert(offsetof(FortPerkWidget_NUI_GetIcon, ReturnValue) == 0x000090, "Member 'FortPerkWidget_NUI_GetIcon::ReturnValue' has a wrong offset!");
 
@@ -16271,28 +16278,28 @@ static_assert(sizeof(FortPerkWidget_NUI_IsTierPerk) == 0x000001, "Wrong size on 
 static_assert(offsetof(FortPerkWidget_NUI_IsTierPerk, ReturnValue) == 0x000000, "Member 'FortPerkWidget_NUI_IsTierPerk::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortPerksWidget_NUI.OnGeneratePerk
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortPerksWidget_NUI_OnGeneratePerk final
 {
 public:
-	struct FFortUIPerk                            FortPerk;                                          // 0x0000(0x1182E980)(Parm, NativeAccessSpecifierPublic)
+	struct FFortUIPerk                            FortPerk;                                          // 0x0000(0x0088)(Parm, NativeAccessSpecifierPublic)
 	class UFortPerkWidget_NUI*                    PerkWidget;                                        // 0x0088(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPerksWidget_NUI_OnGeneratePerk) == 0x1182E980, "Wrong alignment on FortPerksWidget_NUI_OnGeneratePerk");
-static_assert(sizeof(FortPerksWidget_NUI_OnGeneratePerk) == 0x1182E980, "Wrong size on FortPerksWidget_NUI_OnGeneratePerk");
+static_assert(alignof(FortPerksWidget_NUI_OnGeneratePerk) == 0x000008, "Wrong alignment on FortPerksWidget_NUI_OnGeneratePerk");
+static_assert(sizeof(FortPerksWidget_NUI_OnGeneratePerk) == 0x000090, "Wrong size on FortPerksWidget_NUI_OnGeneratePerk");
 static_assert(offsetof(FortPerksWidget_NUI_OnGeneratePerk, FortPerk) == 0x000000, "Member 'FortPerksWidget_NUI_OnGeneratePerk::FortPerk' has a wrong offset!");
 static_assert(offsetof(FortPerksWidget_NUI_OnGeneratePerk, PerkWidget) == 0x000088, "Member 'FortPerksWidget_NUI_OnGeneratePerk::PerkWidget' has a wrong offset!");
 
 // Function FortniteUI.FortPerksWidget_NUI.OnGeneratePerkTier
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortPerksWidget_NUI_OnGeneratePerkTier final
 {
 public:
-	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0000(0x1182E980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0000(0x0020)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class UFortPerkTierWidget_NUI*                PerkTierWidget;                                    // 0x0020(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPerksWidget_NUI_OnGeneratePerkTier) == 0x1182E980, "Wrong alignment on FortPerksWidget_NUI_OnGeneratePerkTier");
-static_assert(sizeof(FortPerksWidget_NUI_OnGeneratePerkTier) == 0x1182E980, "Wrong size on FortPerksWidget_NUI_OnGeneratePerkTier");
+static_assert(alignof(FortPerksWidget_NUI_OnGeneratePerkTier) == 0x000008, "Wrong alignment on FortPerksWidget_NUI_OnGeneratePerkTier");
+static_assert(sizeof(FortPerksWidget_NUI_OnGeneratePerkTier) == 0x000028, "Wrong size on FortPerksWidget_NUI_OnGeneratePerkTier");
 static_assert(offsetof(FortPerksWidget_NUI_OnGeneratePerkTier, FortPerkTier) == 0x000000, "Member 'FortPerksWidget_NUI_OnGeneratePerkTier::FortPerkTier' has a wrong offset!");
 static_assert(offsetof(FortPerksWidget_NUI_OnGeneratePerkTier, PerkTierWidget) == 0x000020, "Member 'FortPerksWidget_NUI_OnGeneratePerkTier::PerkTierWidget' has a wrong offset!");
 
@@ -16347,16 +16354,16 @@ static_assert(sizeof(FortPrivacyBase_HandleAllowFriendsButtonClicked) == 0x00000
 static_assert(offsetof(FortPrivacyBase_HandleAllowFriendsButtonClicked, SelectedPrivacyButton) == 0x000000, "Member 'FortPrivacyBase_HandleAllowFriendsButtonClicked::SelectedPrivacyButton' has a wrong offset!");
 
 // Function FortniteUI.FortPrivacyBase.HandlePrivacyButtonSelected
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x18) FortPrivacyBase_HandlePrivacyButtonSelected final
+// 0x0010 (0x0010 - 0x0000)
+struct FortPrivacyBase_HandlePrivacyButtonSelected final
 {
 public:
 	class UCommonButton*                          SelectedPrivacyButton;                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortPrivacyBase_HandlePrivacyButtonSelected) == 0x000018, "Wrong alignment on FortPrivacyBase_HandlePrivacyButtonSelected");
-static_assert(sizeof(FortPrivacyBase_HandlePrivacyButtonSelected) == 0x000018, "Wrong size on FortPrivacyBase_HandlePrivacyButtonSelected");
+static_assert(alignof(FortPrivacyBase_HandlePrivacyButtonSelected) == 0x000008, "Wrong alignment on FortPrivacyBase_HandlePrivacyButtonSelected");
+static_assert(sizeof(FortPrivacyBase_HandlePrivacyButtonSelected) == 0x000010, "Wrong size on FortPrivacyBase_HandlePrivacyButtonSelected");
 static_assert(offsetof(FortPrivacyBase_HandlePrivacyButtonSelected, SelectedPrivacyButton) == 0x000000, "Member 'FortPrivacyBase_HandlePrivacyButtonSelected::SelectedPrivacyButton' has a wrong offset!");
 static_assert(offsetof(FortPrivacyBase_HandlePrivacyButtonSelected, ButtonIndex) == 0x000008, "Member 'FortPrivacyBase_HandlePrivacyButtonSelected::ButtonIndex' has a wrong offset!");
 
@@ -16465,15 +16472,15 @@ static_assert(sizeof(FortResultsWidget_GetTotalMissionPointsEarned) == 0x000004,
 static_assert(offsetof(FortResultsWidget_GetTotalMissionPointsEarned, ReturnValue) == 0x000000, "Member 'FortResultsWidget_GetTotalMissionPointsEarned::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortResultsWidget.SendEndOfRoundFriendInviteAnalytic
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortResultsWidget_SendEndOfRoundFriendInviteAnalytic final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 TargetPlayerName;                                  // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortResultsWidget_SendEndOfRoundFriendInviteAnalytic) == 0x11821780, "Wrong alignment on FortResultsWidget_SendEndOfRoundFriendInviteAnalytic");
-static_assert(sizeof(FortResultsWidget_SendEndOfRoundFriendInviteAnalytic) == 0x11821780, "Wrong size on FortResultsWidget_SendEndOfRoundFriendInviteAnalytic");
+static_assert(alignof(FortResultsWidget_SendEndOfRoundFriendInviteAnalytic) == 0x000008, "Wrong alignment on FortResultsWidget_SendEndOfRoundFriendInviteAnalytic");
+static_assert(sizeof(FortResultsWidget_SendEndOfRoundFriendInviteAnalytic) == 0x000028, "Wrong size on FortResultsWidget_SendEndOfRoundFriendInviteAnalytic");
 static_assert(offsetof(FortResultsWidget_SendEndOfRoundFriendInviteAnalytic, TargetId) == 0x000000, "Member 'FortResultsWidget_SendEndOfRoundFriendInviteAnalytic::TargetId' has a wrong offset!");
 static_assert(offsetof(FortResultsWidget_SendEndOfRoundFriendInviteAnalytic, TargetPlayerName) == 0x000018, "Member 'FortResultsWidget_SendEndOfRoundFriendInviteAnalytic::TargetPlayerName' has a wrong offset!");
 
@@ -16494,15 +16501,15 @@ static_assert(offsetof(FortResultsWidget_SendEndOfRoundScreenAnalytic, Skipped) 
 static_assert(offsetof(FortResultsWidget_SendEndOfRoundScreenAnalytic, TimeSpent) == 0x000014, "Member 'FortResultsWidget_SendEndOfRoundScreenAnalytic::TimeSpent' has a wrong offset!");
 
 // Function FortniteUI.FortResultsWidget.SendEndOfRoundUpVoteAnalytic
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct FortResultsWidget_SendEndOfRoundUpVoteAnalytic final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 TargetPlayerName;                                  // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortResultsWidget_SendEndOfRoundUpVoteAnalytic) == 0x11821780, "Wrong alignment on FortResultsWidget_SendEndOfRoundUpVoteAnalytic");
-static_assert(sizeof(FortResultsWidget_SendEndOfRoundUpVoteAnalytic) == 0x11821780, "Wrong size on FortResultsWidget_SendEndOfRoundUpVoteAnalytic");
+static_assert(alignof(FortResultsWidget_SendEndOfRoundUpVoteAnalytic) == 0x000008, "Wrong alignment on FortResultsWidget_SendEndOfRoundUpVoteAnalytic");
+static_assert(sizeof(FortResultsWidget_SendEndOfRoundUpVoteAnalytic) == 0x000028, "Wrong size on FortResultsWidget_SendEndOfRoundUpVoteAnalytic");
 static_assert(offsetof(FortResultsWidget_SendEndOfRoundUpVoteAnalytic, TargetId) == 0x000000, "Member 'FortResultsWidget_SendEndOfRoundUpVoteAnalytic::TargetId' has a wrong offset!");
 static_assert(offsetof(FortResultsWidget_SendEndOfRoundUpVoteAnalytic, TargetPlayerName) == 0x000018, "Member 'FortResultsWidget_SendEndOfRoundUpVoteAnalytic::TargetPlayerName' has a wrong offset!");
 
@@ -16529,46 +16536,46 @@ static_assert(sizeof(FortResultsWidget_IsDataFinalized) == 0x000001, "Wrong size
 static_assert(offsetof(FortResultsWidget_IsDataFinalized, ReturnValue) == 0x000000, "Member 'FortResultsWidget_IsDataFinalized::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortRewardCollectionBookData.GetIconBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortRewardCollectionBookData_GetIconBrush final
 {
 public:
-	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0091(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortRewardCollectionBookData_GetIconBrush) == 0x11827900, "Wrong alignment on FortRewardCollectionBookData_GetIconBrush");
-static_assert(sizeof(FortRewardCollectionBookData_GetIconBrush) == 0x11827900, "Wrong size on FortRewardCollectionBookData_GetIconBrush");
+static_assert(alignof(FortRewardCollectionBookData_GetIconBrush) == 0x000008, "Wrong alignment on FortRewardCollectionBookData_GetIconBrush");
+static_assert(sizeof(FortRewardCollectionBookData_GetIconBrush) == 0x000098, "Wrong size on FortRewardCollectionBookData_GetIconBrush");
 static_assert(offsetof(FortRewardCollectionBookData_GetIconBrush, IconBrush) == 0x000000, "Member 'FortRewardCollectionBookData_GetIconBrush::IconBrush' has a wrong offset!");
 static_assert(offsetof(FortRewardCollectionBookData_GetIconBrush, BrushSize) == 0x000090, "Member 'FortRewardCollectionBookData_GetIconBrush::BrushSize' has a wrong offset!");
 static_assert(offsetof(FortRewardCollectionBookData_GetIconBrush, ReturnValue) == 0x000091, "Member 'FortRewardCollectionBookData_GetIconBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortRewardExpeditionData.GetIconBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortRewardExpeditionData_GetIconBrush final
 {
 public:
-	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            IconBrush;                                         // 0x0000(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0091(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortRewardExpeditionData_GetIconBrush) == 0x11827900, "Wrong alignment on FortRewardExpeditionData_GetIconBrush");
-static_assert(sizeof(FortRewardExpeditionData_GetIconBrush) == 0x11827900, "Wrong size on FortRewardExpeditionData_GetIconBrush");
+static_assert(alignof(FortRewardExpeditionData_GetIconBrush) == 0x000008, "Wrong alignment on FortRewardExpeditionData_GetIconBrush");
+static_assert(sizeof(FortRewardExpeditionData_GetIconBrush) == 0x000098, "Wrong size on FortRewardExpeditionData_GetIconBrush");
 static_assert(offsetof(FortRewardExpeditionData_GetIconBrush, IconBrush) == 0x000000, "Member 'FortRewardExpeditionData_GetIconBrush::IconBrush' has a wrong offset!");
 static_assert(offsetof(FortRewardExpeditionData_GetIconBrush, BrushSize) == 0x000090, "Member 'FortRewardExpeditionData_GetIconBrush::BrushSize' has a wrong offset!");
 static_assert(offsetof(FortRewardExpeditionData_GetIconBrush, ReturnValue) == 0x000091, "Member 'FortRewardExpeditionData_GetIconBrush::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortRewardNotificationWidget.AddCollectionBookData
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortRewardNotificationWidget_AddCollectionBookData final
 {
 public:
-	struct FFortCollectionBookRewards             CollectionBookRewards;                             // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortCollectionBookRewards             CollectionBookRewards;                             // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortRewardNotificationWidget_AddCollectionBookData) == 0x11821780, "Wrong alignment on FortRewardNotificationWidget_AddCollectionBookData");
-static_assert(sizeof(FortRewardNotificationWidget_AddCollectionBookData) == 0x11821780, "Wrong size on FortRewardNotificationWidget_AddCollectionBookData");
+static_assert(alignof(FortRewardNotificationWidget_AddCollectionBookData) == 0x000008, "Wrong alignment on FortRewardNotificationWidget_AddCollectionBookData");
+static_assert(sizeof(FortRewardNotificationWidget_AddCollectionBookData) == 0x000070, "Wrong size on FortRewardNotificationWidget_AddCollectionBookData");
 static_assert(offsetof(FortRewardNotificationWidget_AddCollectionBookData, CollectionBookRewards) == 0x000000, "Member 'FortRewardNotificationWidget_AddCollectionBookData::CollectionBookRewards' has a wrong offset!");
 
 // Function FortniteUI.FortRewardNotificationWidget.AddEpicQuestData
@@ -16671,16 +16678,16 @@ static_assert(sizeof(FortRewardNotificationWidget_SetPrimaryActionText) == 0x000
 static_assert(offsetof(FortRewardNotificationWidget_SetPrimaryActionText, Text) == 0x000000, "Member 'FortRewardNotificationWidget_SetPrimaryActionText::Text' has a wrong offset!");
 
 // Function FortniteUI.FortRewardConversationWidget.GetDataFromSentence
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct FortRewardConversationWidget_GetDataFromSentence final
 {
 public:
-	struct FFortConversationSentence              Sentence;                                          // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortConversationSentence              Sentence;                                          // 0x0000(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FText                                   Text;                                              // 0x00B0(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	class UTexture2D*                             TalkingHeadTexture;                                // 0x00C8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortRewardConversationWidget_GetDataFromSentence) == 0x11821780, "Wrong alignment on FortRewardConversationWidget_GetDataFromSentence");
-static_assert(sizeof(FortRewardConversationWidget_GetDataFromSentence) == 0x11821780, "Wrong size on FortRewardConversationWidget_GetDataFromSentence");
+static_assert(alignof(FortRewardConversationWidget_GetDataFromSentence) == 0x000008, "Wrong alignment on FortRewardConversationWidget_GetDataFromSentence");
+static_assert(sizeof(FortRewardConversationWidget_GetDataFromSentence) == 0x0000D0, "Wrong size on FortRewardConversationWidget_GetDataFromSentence");
 static_assert(offsetof(FortRewardConversationWidget_GetDataFromSentence, Sentence) == 0x000000, "Member 'FortRewardConversationWidget_GetDataFromSentence::Sentence' has a wrong offset!");
 static_assert(offsetof(FortRewardConversationWidget_GetDataFromSentence, Text) == 0x0000B0, "Member 'FortRewardConversationWidget_GetDataFromSentence::Text' has a wrong offset!");
 static_assert(offsetof(FortRewardConversationWidget_GetDataFromSentence, TalkingHeadTexture) == 0x0000C8, "Member 'FortRewardConversationWidget_GetDataFromSentence::TalkingHeadTexture' has a wrong offset!");
@@ -16700,16 +16707,16 @@ static_assert(offsetof(FortRewardConversationWidget_IsValidConversation, Convers
 static_assert(offsetof(FortRewardConversationWidget_IsValidConversation, ReturnValue) == 0x000008, "Member 'FortRewardConversationWidget_IsValidConversation::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortRewardNewQuestWidget.GetDataFromSentence
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct FortRewardNewQuestWidget_GetDataFromSentence final
 {
 public:
-	struct FFortConversationSentence              Sentence;                                          // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortConversationSentence              Sentence;                                          // 0x0000(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FText                                   Text;                                              // 0x00B0(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	class UTexture2D*                             TalkingHeadTexture;                                // 0x00C8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortRewardNewQuestWidget_GetDataFromSentence) == 0x11821780, "Wrong alignment on FortRewardNewQuestWidget_GetDataFromSentence");
-static_assert(sizeof(FortRewardNewQuestWidget_GetDataFromSentence) == 0x11821780, "Wrong size on FortRewardNewQuestWidget_GetDataFromSentence");
+static_assert(alignof(FortRewardNewQuestWidget_GetDataFromSentence) == 0x000008, "Wrong alignment on FortRewardNewQuestWidget_GetDataFromSentence");
+static_assert(sizeof(FortRewardNewQuestWidget_GetDataFromSentence) == 0x0000D0, "Wrong size on FortRewardNewQuestWidget_GetDataFromSentence");
 static_assert(offsetof(FortRewardNewQuestWidget_GetDataFromSentence, Sentence) == 0x000000, "Member 'FortRewardNewQuestWidget_GetDataFromSentence::Sentence' has a wrong offset!");
 static_assert(offsetof(FortRewardNewQuestWidget_GetDataFromSentence, Text) == 0x0000B0, "Member 'FortRewardNewQuestWidget_GetDataFromSentence::Text' has a wrong offset!");
 static_assert(offsetof(FortRewardNewQuestWidget_GetDataFromSentence, TalkingHeadTexture) == 0x0000C8, "Member 'FortRewardNewQuestWidget_GetDataFromSentence::TalkingHeadTexture' has a wrong offset!");
@@ -16776,32 +16783,32 @@ static_assert(sizeof(FortSkillTreePageSelectorButton_IsSkillTreePageLocked) == 0
 static_assert(offsetof(FortSkillTreePageSelectorButton_IsSkillTreePageLocked, ReturnValue) == 0x000000, "Member 'FortSkillTreePageSelectorButton_IsSkillTreePageLocked::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreePageSelectorButton.TryGetSkillTreeNodeState
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState final
 {
 public:
 	class FName                                   NodeID;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHomebaseNodeState                     OutNodeState;                                      // 0x0008(0x11821780)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FHomebaseNodeState                     OutNodeState;                                      // 0x0008(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState) == 0x11821780, "Wrong alignment on FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState");
-static_assert(sizeof(FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState) == 0x11821780, "Wrong size on FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState");
+static_assert(alignof(FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState) == 0x000004, "Wrong alignment on FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState");
+static_assert(sizeof(FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState) == 0x000018, "Wrong size on FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState");
 static_assert(offsetof(FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState, NodeID) == 0x000000, "Member 'FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState::NodeID' has a wrong offset!");
 static_assert(offsetof(FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState, OutNodeState) == 0x000008, "Member 'FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState::OutNodeState' has a wrong offset!");
 static_assert(offsetof(FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState, ReturnValue) == 0x000010, "Member 'FortSkillTreePageSelectorButton_TryGetSkillTreeNodeState::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreePageSelectorButton.TryGetStaticSkillTreePageData
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData final
 {
 public:
-	struct FHomebaseNodePage                      OutStaticData;                                     // 0x0000(0x11821780)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseNodePage                      OutStaticData;                                     // 0x0000(0x0060)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData) == 0x11821780, "Wrong alignment on FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData");
-static_assert(sizeof(FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData) == 0x11821780, "Wrong size on FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData");
+static_assert(alignof(FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData) == 0x000008, "Wrong alignment on FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData");
+static_assert(sizeof(FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData) == 0x000068, "Wrong size on FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData");
 static_assert(offsetof(FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData, OutStaticData) == 0x000000, "Member 'FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData::OutStaticData' has a wrong offset!");
 static_assert(offsetof(FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData, ReturnValue) == 0x000060, "Member 'FortSkillTreePageSelectorButton_TryGetStaticSkillTreePageData::ReturnValue' has a wrong offset!");
 
@@ -16828,51 +16835,51 @@ static_assert(sizeof(FortSkillTreeNodeDetailsPanel_HasSkillTreeNodeToRepresent) 
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_HasSkillTreeNodeToRepresent, ReturnValue) == 0x000000, "Member 'FortSkillTreeNodeDetailsPanel_HasSkillTreeNodeToRepresent::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeNodeDetailsPanel.TryGetNodeDisplayData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0430 (0x0430 - 0x0000)
 struct FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData final
 {
 public:
-	struct FHomebaseNode                          HomebaseNode;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FFortSkillTreeNodeDisplayData          OutDisplayData;                                    // 0x00C0(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseNode                          HomebaseNode;                                      // 0x0000(0x00C0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortSkillTreeNodeDisplayData          OutDisplayData;                                    // 0x00C0(0x0368)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0428(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_429[0x7];                                      // 0x0429(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData) == 0x1182E980, "Wrong alignment on FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData");
-static_assert(sizeof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData) == 0x1182E980, "Wrong size on FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData");
+static_assert(alignof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData) == 0x000008, "Wrong alignment on FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData");
+static_assert(sizeof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData) == 0x000430, "Wrong size on FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData, HomebaseNode) == 0x000000, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData::HomebaseNode' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData, OutDisplayData) == 0x0000C0, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData::OutDisplayData' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData, ReturnValue) == 0x000428, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayData::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeNodeDetailsPanel.TryGetNodeDisplayDataFromID
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0378 (0x0378 - 0x0000)
 struct FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID final
 {
 public:
 	class FName                                   HomeBaseNodeID;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortSkillTreeNodeDisplayData          OutDisplayData;                                    // 0x0008(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortSkillTreeNodeDisplayData          OutDisplayData;                                    // 0x0008(0x0368)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0370(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID) == 0x1182E980, "Wrong alignment on FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID");
-static_assert(sizeof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID) == 0x1182E980, "Wrong size on FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID");
+static_assert(alignof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID) == 0x000008, "Wrong alignment on FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID");
+static_assert(sizeof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID) == 0x000378, "Wrong size on FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID, HomeBaseNodeID) == 0x000000, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID::HomeBaseNodeID' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID, OutDisplayData) == 0x000008, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID::OutDisplayData' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID, ReturnValue) == 0x000370, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeDisplayDataFromID::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeNodeDetailsPanel.TryGetNodeSquadAttributeData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0458 (0x0458 - 0x0000)
 struct FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData final
 {
 public:
-	struct FHomebaseNode                          HomebaseNode;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FHomebaseNode                          HomebaseNode;                                      // 0x0000(0x00C0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FText                                   Name_0;                                            // 0x00C0(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	class FText                                   Description;                                       // 0x00D8(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeBrush                    Brush;                                             // 0x00F0(0x11827900)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    Brush;                                             // 0x00F0(0x0360)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0450(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData) == 0x1182E980, "Wrong alignment on FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData");
-static_assert(sizeof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData) == 0x1182E980, "Wrong size on FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData");
+static_assert(alignof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData) == 0x000008, "Wrong alignment on FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData");
+static_assert(sizeof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData) == 0x000458, "Wrong size on FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData, HomebaseNode) == 0x000000, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData::HomebaseNode' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData, Name_0) == 0x0000C0, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData::Name_0' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData, Description) == 0x0000D8, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData::Description' has a wrong offset!");
@@ -16880,16 +16887,16 @@ static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeDat
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData, ReturnValue) == 0x000450, "Member 'FortSkillTreeNodeDetailsPanel_TryGetNodeSquadAttributeData::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSkillTreeNodeDetailsPanel.TryGetSkillTreeNodeState
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState final
 {
 public:
-	struct FHomebaseNodeState                     OutNodeState;                                      // 0x0000(0x11821780)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FHomebaseNodeState                     OutNodeState;                                      // 0x0000(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState) == 0x11821780, "Wrong alignment on FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState");
-static_assert(sizeof(FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState) == 0x11821780, "Wrong size on FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState");
+static_assert(alignof(FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState) == 0x000004, "Wrong alignment on FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState");
+static_assert(sizeof(FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState) == 0x00000C, "Wrong size on FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState, OutNodeState) == 0x000000, "Member 'FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState::OutNodeState' has a wrong offset!");
 static_assert(offsetof(FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState, ReturnValue) == 0x000008, "Member 'FortSkillTreeNodeDetailsPanel_TryGetSkillTreeNodeState::ReturnValue' has a wrong offset!");
 
@@ -16919,49 +16926,49 @@ static_assert(offsetof(FortSquadLandingPageDefenderSquadDetails_HandleAddDefende
 static_assert(offsetof(FortSquadLandingPageDefenderSquadDetails_HandleAddDefenderSquadMemberBP, Index_0) == 0x000008, "Member 'FortSquadLandingPageDefenderSquadDetails_HandleAddDefenderSquadMemberBP::Index_0' has a wrong offset!");
 
 // Function FortniteUI.FortSquadLandingPageDefenderSquadDetails.HandleDefenderSquadInfoSetBP
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP final
 {
 public:
-	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP) == 0x1182E980, "Wrong alignment on FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP");
-static_assert(sizeof(FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP) == 0x1182E980, "Wrong size on FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP");
+static_assert(alignof(FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP) == 0x000008, "Wrong alignment on FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP");
+static_assert(sizeof(FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP) == 0x000030, "Wrong size on FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP");
 static_assert(offsetof(FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP, DefenderSummaryInfo) == 0x000000, "Member 'FortSquadLandingPageDefenderSquadDetails_HandleDefenderSquadInfoSetBP::DefenderSummaryInfo' has a wrong offset!");
 
 // Function FortniteUI.FortSquadLandingPageDefenderSquadDetails.SetDefenderSquadInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo final
 {
 public:
-	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortLandingPageDefenderSummaryInfo    DefenderSummaryInfo;                               // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo) == 0x1182E980, "Wrong alignment on FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo");
-static_assert(sizeof(FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo) == 0x1182E980, "Wrong size on FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo");
+static_assert(alignof(FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo) == 0x000008, "Wrong alignment on FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo");
+static_assert(sizeof(FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo) == 0x000030, "Wrong size on FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo");
 static_assert(offsetof(FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo, DefenderSummaryInfo) == 0x000000, "Member 'FortSquadLandingPageDefenderSquadDetails_SetDefenderSquadInfo::DefenderSummaryInfo' has a wrong offset!");
 
 // Function FortniteUI.FortSquadLandingPageSurvivorSummary.HandleAddSetBonusSummaryLineItemBP
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP final
 {
 public:
-	struct FFortAttributeModifierAccumulation     AttributeModifierAccumulation;                     // 0x0000(0x1182E980)(Parm, NativeAccessSpecifierPublic)
+	struct FFortAttributeModifierAccumulation     AttributeModifierAccumulation;                     // 0x0000(0x0030)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP) == 0x1182E980, "Wrong alignment on FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP");
-static_assert(sizeof(FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP) == 0x1182E980, "Wrong size on FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP");
+static_assert(alignof(FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP) == 0x000008, "Wrong alignment on FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP");
+static_assert(sizeof(FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP) == 0x000030, "Wrong size on FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP");
 static_assert(offsetof(FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP, AttributeModifierAccumulation) == 0x000000, "Member 'FortSquadLandingPageSurvivorSummary_HandleAddSetBonusSummaryLineItemBP::AttributeModifierAccumulation' has a wrong offset!");
 
 // Function FortniteUI.FortSurvivorSquadSelectorButton.TryGetPersonalityMatches
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0378 (0x0378 - 0x0000)
 struct FortSurvivorSquadSelectorButton_TryGetPersonalityMatches final
 {
 public:
-	struct FFortSurvivorSquadSelectorButtonPersonalityMatches OutPersonalityMatches;                             // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortSurvivorSquadSelectorButtonPersonalityMatches OutPersonalityMatches;                             // 0x0000(0x0370)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0370(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSurvivorSquadSelectorButton_TryGetPersonalityMatches) == 0x1182E980, "Wrong alignment on FortSurvivorSquadSelectorButton_TryGetPersonalityMatches");
-static_assert(sizeof(FortSurvivorSquadSelectorButton_TryGetPersonalityMatches) == 0x1182E980, "Wrong size on FortSurvivorSquadSelectorButton_TryGetPersonalityMatches");
+static_assert(alignof(FortSurvivorSquadSelectorButton_TryGetPersonalityMatches) == 0x000008, "Wrong alignment on FortSurvivorSquadSelectorButton_TryGetPersonalityMatches");
+static_assert(sizeof(FortSurvivorSquadSelectorButton_TryGetPersonalityMatches) == 0x000378, "Wrong size on FortSurvivorSquadSelectorButton_TryGetPersonalityMatches");
 static_assert(offsetof(FortSurvivorSquadSelectorButton_TryGetPersonalityMatches, OutPersonalityMatches) == 0x000000, "Member 'FortSurvivorSquadSelectorButton_TryGetPersonalityMatches::OutPersonalityMatches' has a wrong offset!");
 static_assert(offsetof(FortSurvivorSquadSelectorButton_TryGetPersonalityMatches, ReturnValue) == 0x000370, "Member 'FortSurvivorSquadSelectorButton_TryGetPersonalityMatches::ReturnValue' has a wrong offset!");
 
@@ -16980,16 +16987,16 @@ static_assert(offsetof(FortSurvivorSquadSelectorButton_TryGetSquadMembers, OutSq
 static_assert(offsetof(FortSurvivorSquadSelectorButton_TryGetSquadMembers, ReturnValue) == 0x000010, "Member 'FortSurvivorSquadSelectorButton_TryGetSquadMembers::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSurvivorSquadSelectorButton.TryGetSummaryStats
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct FortSurvivorSquadSelectorButton_TryGetSummaryStats final
 {
 public:
-	struct FFortSurvivorSquadSelectorButtonSummaryStats OutSummaryStats;                                   // 0x0000(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortSurvivorSquadSelectorButtonSummaryStats OutSummaryStats;                                   // 0x0000(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortSurvivorSquadSelectorButton_TryGetSummaryStats) == 0x1182E980, "Wrong alignment on FortSurvivorSquadSelectorButton_TryGetSummaryStats");
-static_assert(sizeof(FortSurvivorSquadSelectorButton_TryGetSummaryStats) == 0x1182E980, "Wrong size on FortSurvivorSquadSelectorButton_TryGetSummaryStats");
+static_assert(alignof(FortSurvivorSquadSelectorButton_TryGetSummaryStats) == 0x000008, "Wrong alignment on FortSurvivorSquadSelectorButton_TryGetSummaryStats");
+static_assert(sizeof(FortSurvivorSquadSelectorButton_TryGetSummaryStats) == 0x000078, "Wrong size on FortSurvivorSquadSelectorButton_TryGetSummaryStats");
 static_assert(offsetof(FortSurvivorSquadSelectorButton_TryGetSummaryStats, OutSummaryStats) == 0x000000, "Member 'FortSurvivorSquadSelectorButton_TryGetSummaryStats::OutSummaryStats' has a wrong offset!");
 static_assert(offsetof(FortSurvivorSquadSelectorButton_TryGetSummaryStats, ReturnValue) == 0x000070, "Member 'FortSurvivorSquadSelectorButton_TryGetSummaryStats::ReturnValue' has a wrong offset!");
 
@@ -17107,16 +17114,16 @@ static_assert(sizeof(FortSquadSlotWidget_IsSquadSlotLockedBP) == 0x000001, "Wron
 static_assert(offsetof(FortSquadSlotWidget_IsSquadSlotLockedBP, ReturnValue) == 0x000000, "Member 'FortSquadSlotWidget_IsSquadSlotLockedBP::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortPerkWidget.GetIcon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct FortPerkWidget_GetIcon final
 {
 public:
-	struct FSlateBrush                            Brush;                                             // 0x0000(0x322CBBB8)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            Brush;                                             // 0x0000(0x0090)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortPerkWidget_GetIcon) == 0x11827900, "Wrong alignment on FortPerkWidget_GetIcon");
-static_assert(sizeof(FortPerkWidget_GetIcon) == 0x11827900, "Wrong size on FortPerkWidget_GetIcon");
+static_assert(alignof(FortPerkWidget_GetIcon) == 0x000008, "Wrong alignment on FortPerkWidget_GetIcon");
+static_assert(sizeof(FortPerkWidget_GetIcon) == 0x000098, "Wrong size on FortPerkWidget_GetIcon");
 static_assert(offsetof(FortPerkWidget_GetIcon, Brush) == 0x000000, "Member 'FortPerkWidget_GetIcon::Brush' has a wrong offset!");
 static_assert(offsetof(FortPerkWidget_GetIcon, ReturnValue) == 0x000090, "Member 'FortPerkWidget_GetIcon::ReturnValue' has a wrong offset!");
 
@@ -17220,36 +17227,36 @@ static_assert(sizeof(FortPerkWidget_IsTierPerk) == 0x000001, "Wrong size on Fort
 static_assert(offsetof(FortPerkWidget_IsTierPerk, ReturnValue) == 0x000000, "Member 'FortPerkWidget_IsTierPerk::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortSurvivorSquadStatMatchBase.OnStatMatchUpdated
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x03A0 (0x03A0 - 0x0000)
 struct FortSurvivorSquadStatMatchBase_OnStatMatchUpdated final
 {
 public:
-	struct FFortUISurvivorSquadStatMatch          UpdatedMatch;                                      // 0x0000(0x1182E980)(Parm, NativeAccessSpecifierPublic)
+	struct FFortUISurvivorSquadStatMatch          UpdatedMatch;                                      // 0x0000(0x03A0)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSurvivorSquadStatMatchBase_OnStatMatchUpdated) == 0x1182E980, "Wrong alignment on FortSurvivorSquadStatMatchBase_OnStatMatchUpdated");
-static_assert(sizeof(FortSurvivorSquadStatMatchBase_OnStatMatchUpdated) == 0x1182E980, "Wrong size on FortSurvivorSquadStatMatchBase_OnStatMatchUpdated");
+static_assert(alignof(FortSurvivorSquadStatMatchBase_OnStatMatchUpdated) == 0x000008, "Wrong alignment on FortSurvivorSquadStatMatchBase_OnStatMatchUpdated");
+static_assert(sizeof(FortSurvivorSquadStatMatchBase_OnStatMatchUpdated) == 0x0003A0, "Wrong size on FortSurvivorSquadStatMatchBase_OnStatMatchUpdated");
 static_assert(offsetof(FortSurvivorSquadStatMatchBase_OnStatMatchUpdated, UpdatedMatch) == 0x000000, "Member 'FortSurvivorSquadStatMatchBase_OnStatMatchUpdated::UpdatedMatch' has a wrong offset!");
 
 // Function FortniteUI.FortSquadStatsWidgetBase.GetLocalPlayerId
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortSquadStatsWidgetBase_GetLocalPlayerId final
 {
 public:
-	struct FUniqueNetIdRepl                       ReturnValue;                                       // 0x0000(0x11821780)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortSquadStatsWidgetBase_GetLocalPlayerId) == 0x11821780, "Wrong alignment on FortSquadStatsWidgetBase_GetLocalPlayerId");
-static_assert(sizeof(FortSquadStatsWidgetBase_GetLocalPlayerId) == 0x11821780, "Wrong size on FortSquadStatsWidgetBase_GetLocalPlayerId");
+static_assert(alignof(FortSquadStatsWidgetBase_GetLocalPlayerId) == 0x000008, "Wrong alignment on FortSquadStatsWidgetBase_GetLocalPlayerId");
+static_assert(sizeof(FortSquadStatsWidgetBase_GetLocalPlayerId) == 0x000018, "Wrong size on FortSquadStatsWidgetBase_GetLocalPlayerId");
 static_assert(offsetof(FortSquadStatsWidgetBase_GetLocalPlayerId, ReturnValue) == 0x000000, "Member 'FortSquadStatsWidgetBase_GetLocalPlayerId::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortStatIcon.SetAttribute
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortStatIcon_SetAttribute final
 {
 public:
-	struct FGameplayAttribute                     InAttribute;                                       // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     InAttribute;                                       // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortStatIcon_SetAttribute) == 0x11821C00, "Wrong alignment on FortStatIcon_SetAttribute");
-static_assert(sizeof(FortStatIcon_SetAttribute) == 0x11821C00, "Wrong size on FortStatIcon_SetAttribute");
+static_assert(alignof(FortStatIcon_SetAttribute) == 0x000008, "Wrong alignment on FortStatIcon_SetAttribute");
+static_assert(sizeof(FortStatIcon_SetAttribute) == 0x000020, "Wrong size on FortStatIcon_SetAttribute");
 static_assert(offsetof(FortStatIcon_SetAttribute, InAttribute) == 0x000000, "Member 'FortStatIcon_SetAttribute::InAttribute' has a wrong offset!");
 
 // Function FortniteUI.FortStoreSummary.SetCards
@@ -17420,19 +17427,19 @@ static_assert(offsetof(FortTooltipUIContext_GetTooltipAttributes, Object) == 0x0
 static_assert(offsetof(FortTooltipUIContext_GetTooltipAttributes, ReturnValue) == 0x000008, "Member 'FortTooltipUIContext_GetTooltipAttributes::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortTooltipUIContext.GetTooltipStat
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortTooltipUIContext_GetTooltipStat final
 {
 public:
 	const class UObject*                          Object;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortTooltipContext*                    TooltipContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTag                           Token;                                             // 0x0010(0x11821D80)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0018(0x11821C00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           Token;                                             // 0x0010(0x0008)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0018(0x0070)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortTooltipUIContext_GetTooltipStat) == 0x11821D80, "Wrong alignment on FortTooltipUIContext_GetTooltipStat");
-static_assert(sizeof(FortTooltipUIContext_GetTooltipStat) == 0x11821D80, "Wrong size on FortTooltipUIContext_GetTooltipStat");
+static_assert(alignof(FortTooltipUIContext_GetTooltipStat) == 0x000008, "Wrong alignment on FortTooltipUIContext_GetTooltipStat");
+static_assert(sizeof(FortTooltipUIContext_GetTooltipStat) == 0x000090, "Wrong size on FortTooltipUIContext_GetTooltipStat");
 static_assert(offsetof(FortTooltipUIContext_GetTooltipStat, Object) == 0x000000, "Member 'FortTooltipUIContext_GetTooltipStat::Object' has a wrong offset!");
 static_assert(offsetof(FortTooltipUIContext_GetTooltipStat, TooltipContext) == 0x000008, "Member 'FortTooltipUIContext_GetTooltipStat::TooltipContext' has a wrong offset!");
 static_assert(offsetof(FortTooltipUIContext_GetTooltipStat, Token) == 0x000010, "Member 'FortTooltipUIContext_GetTooltipStat::Token' has a wrong offset!");
@@ -17470,35 +17477,35 @@ static_assert(offsetof(FortTooltipUIContext_GetUpgradeStats, TooltipContext) == 
 static_assert(offsetof(FortTooltipUIContext_GetUpgradeStats, ReturnValue) == 0x000010, "Member 'FortTooltipUIContext_GetUpgradeStats::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortTooltipUIContext.GetDisplayNameAndMultiBrushForTag
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0388 (0x0388 - 0x0000)
 struct FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag final
 {
 public:
-	struct FGameplayTag                           Tag;                                               // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           Tag;                                               // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   OutDisplayName;                                    // 0x0008(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeBrush                    OutBrush;                                          // 0x0020(0x11827900)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    OutBrush;                                          // 0x0020(0x0360)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0380(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag) == 0x11821D80, "Wrong alignment on FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag");
-static_assert(sizeof(FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag) == 0x11821D80, "Wrong size on FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag");
+static_assert(alignof(FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag) == 0x000008, "Wrong alignment on FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag");
+static_assert(sizeof(FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag) == 0x000388, "Wrong size on FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag");
 static_assert(offsetof(FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag, Tag) == 0x000000, "Member 'FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag::Tag' has a wrong offset!");
 static_assert(offsetof(FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag, OutDisplayName) == 0x000008, "Member 'FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag::OutDisplayName' has a wrong offset!");
 static_assert(offsetof(FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag, OutBrush) == 0x000020, "Member 'FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag::OutBrush' has a wrong offset!");
 static_assert(offsetof(FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag, ReturnValue) == 0x000380, "Member 'FortTooltipUIContext_GetDisplayNameAndMultiBrushForTag::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortTooltipUIContext.GetUIDataForTag
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x03A8 (0x03A8 - 0x0000)
 struct FortTooltipUIContext_GetUIDataForTag final
 {
 public:
-	struct FGameplayTag                           Tag;                                               // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortTagUIData                         OutData;                                           // 0x0008(0x1182E980)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           Tag;                                               // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortTagUIData                         OutData;                                           // 0x0008(0x0398)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x03A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3A1[0x7];                                      // 0x03A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortTooltipUIContext_GetUIDataForTag) == 0x1182E980, "Wrong alignment on FortTooltipUIContext_GetUIDataForTag");
-static_assert(sizeof(FortTooltipUIContext_GetUIDataForTag) == 0x1182E980, "Wrong size on FortTooltipUIContext_GetUIDataForTag");
+static_assert(alignof(FortTooltipUIContext_GetUIDataForTag) == 0x000008, "Wrong alignment on FortTooltipUIContext_GetUIDataForTag");
+static_assert(sizeof(FortTooltipUIContext_GetUIDataForTag) == 0x0003A8, "Wrong size on FortTooltipUIContext_GetUIDataForTag");
 static_assert(offsetof(FortTooltipUIContext_GetUIDataForTag, Tag) == 0x000000, "Member 'FortTooltipUIContext_GetUIDataForTag::Tag' has a wrong offset!");
 static_assert(offsetof(FortTooltipUIContext_GetUIDataForTag, OutData) == 0x000008, "Member 'FortTooltipUIContext_GetUIDataForTag::OutData' has a wrong offset!");
 static_assert(offsetof(FortTooltipUIContext_GetUIDataForTag, ReturnValue) == 0x0003A0, "Member 'FortTooltipUIContext_GetUIDataForTag::ReturnValue' has a wrong offset!");
@@ -17619,14 +17626,14 @@ static_assert(sizeof(FortUIDataConfigurationContext_AreSocialFeaturesEnabled) ==
 static_assert(offsetof(FortUIDataConfigurationContext_AreSocialFeaturesEnabled, ReturnValue) == 0x000000, "Member 'FortUIDataConfigurationContext_AreSocialFeaturesEnabled::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIDataConfigurationContext.GetFrontEndFFSettings
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x04C0 (0x04C0 - 0x0000)
 struct FortUIDataConfigurationContext_GetFrontEndFFSettings final
 {
 public:
-	struct FPostProcessSettings                   ReturnValue;                                       // 0x0000(0x11821D80)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FPostProcessSettings                   ReturnValue;                                       // 0x0000(0x04C0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIDataConfigurationContext_GetFrontEndFFSettings) == 0x11821D80, "Wrong alignment on FortUIDataConfigurationContext_GetFrontEndFFSettings");
-static_assert(sizeof(FortUIDataConfigurationContext_GetFrontEndFFSettings) == 0x11821D80, "Wrong size on FortUIDataConfigurationContext_GetFrontEndFFSettings");
+static_assert(alignof(FortUIDataConfigurationContext_GetFrontEndFFSettings) == 0x000010, "Wrong alignment on FortUIDataConfigurationContext_GetFrontEndFFSettings");
+static_assert(sizeof(FortUIDataConfigurationContext_GetFrontEndFFSettings) == 0x0004C0, "Wrong size on FortUIDataConfigurationContext_GetFrontEndFFSettings");
 static_assert(offsetof(FortUIDataConfigurationContext_GetFrontEndFFSettings, ReturnValue) == 0x000000, "Member 'FortUIDataConfigurationContext_GetFrontEndFFSettings::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIDataConfigurationContext.IsChatEnabled
@@ -17772,16 +17779,16 @@ static_assert(sizeof(FortUIScoreReport_GetPlayerCount) == 0x000004, "Wrong size 
 static_assert(offsetof(FortUIScoreReport_GetPlayerCount, ReturnValue) == 0x000000, "Member 'FortUIScoreReport_GetPlayerCount::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIScoreReport.GetPlayerIDFromScoreReportIndex
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortUIScoreReport_GetPlayerIDFromScoreReportIndex final
 {
 public:
 	int32                                         ScoreReportIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       OutUniqueNetIdRepl;                                // 0x0008(0x11821780)(Parm, OutParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       OutUniqueNetIdRepl;                                // 0x0008(0x0018)(Parm, OutParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIScoreReport_GetPlayerIDFromScoreReportIndex) == 0x11821780, "Wrong alignment on FortUIScoreReport_GetPlayerIDFromScoreReportIndex");
-static_assert(sizeof(FortUIScoreReport_GetPlayerIDFromScoreReportIndex) == 0x11821780, "Wrong size on FortUIScoreReport_GetPlayerIDFromScoreReportIndex");
+static_assert(alignof(FortUIScoreReport_GetPlayerIDFromScoreReportIndex) == 0x000008, "Wrong alignment on FortUIScoreReport_GetPlayerIDFromScoreReportIndex");
+static_assert(sizeof(FortUIScoreReport_GetPlayerIDFromScoreReportIndex) == 0x000020, "Wrong size on FortUIScoreReport_GetPlayerIDFromScoreReportIndex");
 static_assert(offsetof(FortUIScoreReport_GetPlayerIDFromScoreReportIndex, ScoreReportIndex) == 0x000000, "Member 'FortUIScoreReport_GetPlayerIDFromScoreReportIndex::ScoreReportIndex' has a wrong offset!");
 static_assert(offsetof(FortUIScoreReport_GetPlayerIDFromScoreReportIndex, OutUniqueNetIdRepl) == 0x000008, "Member 'FortUIScoreReport_GetPlayerIDFromScoreReportIndex::OutUniqueNetIdRepl' has a wrong offset!");
 
@@ -17816,16 +17823,16 @@ static_assert(offsetof(FortUIScoreReport_GetPlayerScore, ScoreType) == 0x000004,
 static_assert(offsetof(FortUIScoreReport_GetPlayerScore, ReturnValue) == 0x000008, "Member 'FortUIScoreReport_GetPlayerScore::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIScoreReport.GetScoreReportIndex
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortUIScoreReport_GetScoreReportIndex final
 {
 public:
-	struct FUniqueNetIdRepl                       PlayerID;                                          // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       PlayerID;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortUIScoreReport_GetScoreReportIndex) == 0x11821780, "Wrong alignment on FortUIScoreReport_GetScoreReportIndex");
-static_assert(sizeof(FortUIScoreReport_GetScoreReportIndex) == 0x11821780, "Wrong size on FortUIScoreReport_GetScoreReportIndex");
+static_assert(alignof(FortUIScoreReport_GetScoreReportIndex) == 0x000008, "Wrong alignment on FortUIScoreReport_GetScoreReportIndex");
+static_assert(sizeof(FortUIScoreReport_GetScoreReportIndex) == 0x000020, "Wrong size on FortUIScoreReport_GetScoreReportIndex");
 static_assert(offsetof(FortUIScoreReport_GetScoreReportIndex, PlayerID) == 0x000000, "Member 'FortUIScoreReport_GetScoreReportIndex::PlayerID' has a wrong offset!");
 static_assert(offsetof(FortUIScoreReport_GetScoreReportIndex, ReturnValue) == 0x000018, "Member 'FortUIScoreReport_GetScoreReportIndex::ReturnValue' has a wrong offset!");
 
@@ -17855,17 +17862,17 @@ static_assert(offsetof(FortUIScoreReport_GetTeamScore, ScoreType) == 0x000000, "
 static_assert(offsetof(FortUIScoreReport_GetTeamScore, ReturnValue) == 0x000004, "Member 'FortUIScoreReport_GetTeamScore::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIScoreReport.GetXpInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0034 (0x0034 - 0x0000)
 struct FortUIScoreReport_GetXpInfo final
 {
 public:
 	int32                                         ScoreReportIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortUIXpInfo                          OutXpInfo;                                         // 0x0004(0x1182E980)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortUIXpInfo                          OutXpInfo;                                         // 0x0004(0x002C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortUIScoreReport_GetXpInfo) == 0x1182E980, "Wrong alignment on FortUIScoreReport_GetXpInfo");
-static_assert(sizeof(FortUIScoreReport_GetXpInfo) == 0x1182E980, "Wrong size on FortUIScoreReport_GetXpInfo");
+static_assert(alignof(FortUIScoreReport_GetXpInfo) == 0x000004, "Wrong alignment on FortUIScoreReport_GetXpInfo");
+static_assert(sizeof(FortUIScoreReport_GetXpInfo) == 0x000034, "Wrong size on FortUIScoreReport_GetXpInfo");
 static_assert(offsetof(FortUIScoreReport_GetXpInfo, ScoreReportIndex) == 0x000000, "Member 'FortUIScoreReport_GetXpInfo::ScoreReportIndex' has a wrong offset!");
 static_assert(offsetof(FortUIScoreReport_GetXpInfo, OutXpInfo) == 0x000004, "Member 'FortUIScoreReport_GetXpInfo::OutXpInfo' has a wrong offset!");
 static_assert(offsetof(FortUIScoreReport_GetXpInfo, ReturnValue) == 0x000030, "Member 'FortUIScoreReport_GetXpInfo::ReturnValue' has a wrong offset!");
@@ -17898,14 +17905,14 @@ static_assert(offsetof(FortUIScoreReport_IsLocalPlayer, ScoreReportIndex) == 0x0
 static_assert(offsetof(FortUIScoreReport_IsLocalPlayer, ReturnValue) == 0x000004, "Member 'FortUIScoreReport_IsLocalPlayer::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortErrorDialog.DisplayError
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct FortErrorDialog_DisplayError final
 {
 public:
-	struct FFortErrorInfo                         ErrorInfo_0;                                       // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortErrorInfo                         ErrorInfo_0;                                       // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortErrorDialog_DisplayError) == 0x1182E980, "Wrong alignment on FortErrorDialog_DisplayError");
-static_assert(sizeof(FortErrorDialog_DisplayError) == 0x1182E980, "Wrong size on FortErrorDialog_DisplayError");
+static_assert(alignof(FortErrorDialog_DisplayError) == 0x000010, "Wrong alignment on FortErrorDialog_DisplayError");
+static_assert(sizeof(FortErrorDialog_DisplayError) == 0x000080, "Wrong size on FortErrorDialog_DisplayError");
 static_assert(offsetof(FortErrorDialog_DisplayError, ErrorInfo_0) == 0x000000, "Member 'FortErrorDialog_DisplayError::ErrorInfo_0' has a wrong offset!");
 
 // Function FortniteUI.FortErrorDialog.OnRebuildDialog
@@ -17953,14 +17960,14 @@ static_assert(sizeof(FortUIStateWidget_OnExitState) == 0x000001, "Wrong size on 
 static_assert(offsetof(FortUIStateWidget_OnExitState, NextUIState) == 0x000000, "Member 'FortUIStateWidget_OnExitState::NextUIState' has a wrong offset!");
 
 // Function FortniteUI.FortAlterationsWidget.OnGenerateAlteration
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FortAlterationsWidget_OnGenerateAlteration final
 {
 public:
-	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0000(0x1182E980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0000(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortAlterationsWidget_OnGenerateAlteration) == 0x1182E980, "Wrong alignment on FortAlterationsWidget_OnGenerateAlteration");
-static_assert(sizeof(FortAlterationsWidget_OnGenerateAlteration) == 0x1182E980, "Wrong size on FortAlterationsWidget_OnGenerateAlteration");
+static_assert(alignof(FortAlterationsWidget_OnGenerateAlteration) == 0x000008, "Wrong alignment on FortAlterationsWidget_OnGenerateAlteration");
+static_assert(sizeof(FortAlterationsWidget_OnGenerateAlteration) == 0x000018, "Wrong size on FortAlterationsWidget_OnGenerateAlteration");
 static_assert(offsetof(FortAlterationsWidget_OnGenerateAlteration, AlterationInfo) == 0x000000, "Member 'FortAlterationsWidget_OnGenerateAlteration::AlterationInfo' has a wrong offset!");
 
 // Function FortniteUI.FortAttributeList.SetData
@@ -18273,16 +18280,16 @@ static_assert(sizeof(FortItemGroupWidget_GetTotalAttributeBonuses) == 0x000010, 
 static_assert(offsetof(FortItemGroupWidget_GetTotalAttributeBonuses, OutModifiers) == 0x000000, "Member 'FortItemGroupWidget_GetTotalAttributeBonuses::OutModifiers' has a wrong offset!");
 
 // Function FortniteUI.FortItemGroupWidget.TryGetSquad
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct FortItemGroupWidget_TryGetSquad final
 {
 public:
-	struct FHomebaseSquad                         OutSquad;                                          // 0x0000(0x11821D80)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FHomebaseSquad                         OutSquad;                                          // 0x0000(0x0088)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0088(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortItemGroupWidget_TryGetSquad) == 0x11821780, "Wrong alignment on FortItemGroupWidget_TryGetSquad");
-static_assert(sizeof(FortItemGroupWidget_TryGetSquad) == 0x11821780, "Wrong size on FortItemGroupWidget_TryGetSquad");
+static_assert(alignof(FortItemGroupWidget_TryGetSquad) == 0x000008, "Wrong alignment on FortItemGroupWidget_TryGetSquad");
+static_assert(sizeof(FortItemGroupWidget_TryGetSquad) == 0x000090, "Wrong size on FortItemGroupWidget_TryGetSquad");
 static_assert(offsetof(FortItemGroupWidget_TryGetSquad, OutSquad) == 0x000000, "Member 'FortItemGroupWidget_TryGetSquad::OutSquad' has a wrong offset!");
 static_assert(offsetof(FortItemGroupWidget_TryGetSquad, ReturnValue) == 0x000088, "Member 'FortItemGroupWidget_TryGetSquad::ReturnValue' has a wrong offset!");
 
@@ -18395,8 +18402,8 @@ static_assert(sizeof(FortNodeGraphHost_SetBackgroundMaterial) == 0x000008, "Wron
 static_assert(offsetof(FortNodeGraphHost_SetBackgroundMaterial, InBackgroundMaterial) == 0x000000, "Member 'FortNodeGraphHost_SetBackgroundMaterial::InBackgroundMaterial' has a wrong offset!");
 
 // Function FortniteUI.FortNodeGraphHost.ShowPage
-// 0x0030 (0x0030 - 0x0000)
-struct alignas(0x18) FortNodeGraphHost_ShowPage final
+// 0x0020 (0x0020 - 0x0000)
+struct FortNodeGraphHost_ShowPage final
 {
 public:
 	class FName                                   NodePageId;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -18406,8 +18413,8 @@ public:
 	bool                                          bOnlyPanIfNew;                                     // 0x0019(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortNodeGraphHost_ShowPage) == 0x000018, "Wrong alignment on FortNodeGraphHost_ShowPage");
-static_assert(sizeof(FortNodeGraphHost_ShowPage) == 0x000030, "Wrong size on FortNodeGraphHost_ShowPage");
+static_assert(alignof(FortNodeGraphHost_ShowPage) == 0x000004, "Wrong alignment on FortNodeGraphHost_ShowPage");
+static_assert(sizeof(FortNodeGraphHost_ShowPage) == 0x000020, "Wrong size on FortNodeGraphHost_ShowPage");
 static_assert(offsetof(FortNodeGraphHost_ShowPage, NodePageId) == 0x000000, "Member 'FortNodeGraphHost_ShowPage::NodePageId' has a wrong offset!");
 static_assert(offsetof(FortNodeGraphHost_ShowPage, SourceNodeId) == 0x000008, "Member 'FortNodeGraphHost_ShowPage::SourceNodeId' has a wrong offset!");
 static_assert(offsetof(FortNodeGraphHost_ShowPage, DestinationNodeId) == 0x000010, "Member 'FortNodeGraphHost_ShowPage::DestinationNodeId' has a wrong offset!");
@@ -18494,14 +18501,14 @@ static_assert(sizeof(FortNodeGraphHost_IsEarlyGame) == 0x000001, "Wrong size on 
 static_assert(offsetof(FortNodeGraphHost_IsEarlyGame, ReturnValue) == 0x000000, "Member 'FortNodeGraphHost_IsEarlyGame::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortNodePrerequisitesWidget.GenerateNodePrerequisite
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0710 (0x0710 - 0x0000)
 struct FortNodePrerequisitesWidget_GenerateNodePrerequisite final
 {
 public:
-	struct FFortUINodePrerequisite                NodePrerequisite;                                  // 0x0000(0x1182E980)(Parm, NativeAccessSpecifierPublic)
+	struct FFortUINodePrerequisite                NodePrerequisite;                                  // 0x0000(0x0710)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortNodePrerequisitesWidget_GenerateNodePrerequisite) == 0x1182E980, "Wrong alignment on FortNodePrerequisitesWidget_GenerateNodePrerequisite");
-static_assert(sizeof(FortNodePrerequisitesWidget_GenerateNodePrerequisite) == 0x1182E980, "Wrong size on FortNodePrerequisitesWidget_GenerateNodePrerequisite");
+static_assert(alignof(FortNodePrerequisitesWidget_GenerateNodePrerequisite) == 0x000008, "Wrong alignment on FortNodePrerequisitesWidget_GenerateNodePrerequisite");
+static_assert(sizeof(FortNodePrerequisitesWidget_GenerateNodePrerequisite) == 0x000710, "Wrong size on FortNodePrerequisitesWidget_GenerateNodePrerequisite");
 static_assert(offsetof(FortNodePrerequisitesWidget_GenerateNodePrerequisite, NodePrerequisite) == 0x000000, "Member 'FortNodePrerequisitesWidget_GenerateNodePrerequisite::NodePrerequisite' has a wrong offset!");
 
 // Function FortniteUI.FortNodePrerequisitesWidget.GenerateNodePrerequisiteConnector
@@ -18527,25 +18534,25 @@ static_assert(sizeof(FortNodePrerequisitesWidget_ProcessNodePrequisites) == 0x00
 static_assert(offsetof(FortNodePrerequisitesWidget_ProcessNodePrequisites, NodeID) == 0x000000, "Member 'FortNodePrerequisitesWidget_ProcessNodePrequisites::NodeID' has a wrong offset!");
 
 // Function FortniteUI.FortPerksWidget.OnGeneratePerkTier
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortPerksWidget_OnGeneratePerkTier final
 {
 public:
-	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0000(0x1182E980)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0000(0x0020)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPerksWidget_OnGeneratePerkTier) == 0x1182E980, "Wrong alignment on FortPerksWidget_OnGeneratePerkTier");
-static_assert(sizeof(FortPerksWidget_OnGeneratePerkTier) == 0x1182E980, "Wrong size on FortPerksWidget_OnGeneratePerkTier");
+static_assert(alignof(FortPerksWidget_OnGeneratePerkTier) == 0x000008, "Wrong alignment on FortPerksWidget_OnGeneratePerkTier");
+static_assert(sizeof(FortPerksWidget_OnGeneratePerkTier) == 0x000020, "Wrong size on FortPerksWidget_OnGeneratePerkTier");
 static_assert(offsetof(FortPerksWidget_OnGeneratePerkTier, FortPerkTier) == 0x000000, "Member 'FortPerksWidget_OnGeneratePerkTier::FortPerkTier' has a wrong offset!");
 
 // Function FortniteUI.FortPerkTierWidget.OnGeneratePerk
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct FortPerkTierWidget_OnGeneratePerk final
 {
 public:
-	struct FFortUIPerk                            Perk;                                              // 0x0000(0x1182E980)(Parm, NativeAccessSpecifierPublic)
+	struct FFortUIPerk                            Perk;                                              // 0x0000(0x0088)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortPerkTierWidget_OnGeneratePerk) == 0x1182E980, "Wrong alignment on FortPerkTierWidget_OnGeneratePerk");
-static_assert(sizeof(FortPerkTierWidget_OnGeneratePerk) == 0x1182E980, "Wrong size on FortPerkTierWidget_OnGeneratePerk");
+static_assert(alignof(FortPerkTierWidget_OnGeneratePerk) == 0x000008, "Wrong alignment on FortPerkTierWidget_OnGeneratePerk");
+static_assert(sizeof(FortPerkTierWidget_OnGeneratePerk) == 0x000088, "Wrong size on FortPerkTierWidget_OnGeneratePerk");
 static_assert(offsetof(FortPerkTierWidget_OnGeneratePerk, Perk) == 0x000000, "Member 'FortPerkTierWidget_OnGeneratePerk::Perk' has a wrong offset!");
 
 // Function FortniteUI.FortSocialItemWidget.SetSocialItem
@@ -18629,14 +18636,14 @@ static_assert(offsetof(FortUIManagerWidget_CreateNotification, UINotificationCla
 static_assert(offsetof(FortUIManagerWidget_CreateNotification, ReturnValue) == 0x000008, "Member 'FortUIManagerWidget_CreateNotification::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget.DisplayErrorDialog
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct FortUIManagerWidget_DisplayErrorDialog final
 {
 public:
-	struct FFortErrorInfo                         Info;                                              // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FFortErrorInfo                         Info;                                              // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_DisplayErrorDialog) == 0x1182E980, "Wrong alignment on FortUIManagerWidget_DisplayErrorDialog");
-static_assert(sizeof(FortUIManagerWidget_DisplayErrorDialog) == 0x1182E980, "Wrong size on FortUIManagerWidget_DisplayErrorDialog");
+static_assert(alignof(FortUIManagerWidget_DisplayErrorDialog) == 0x000010, "Wrong alignment on FortUIManagerWidget_DisplayErrorDialog");
+static_assert(sizeof(FortUIManagerWidget_DisplayErrorDialog) == 0x000080, "Wrong size on FortUIManagerWidget_DisplayErrorDialog");
 static_assert(offsetof(FortUIManagerWidget_DisplayErrorDialog, Info) == 0x000000, "Member 'FortUIManagerWidget_DisplayErrorDialog::Info' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget.DisplayStateContent
@@ -18669,25 +18676,25 @@ static_assert(offsetof(FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignatur
 static_assert(offsetof(FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature, DisplayPreference) == 0x000038, "Member 'FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature::DisplayPreference' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget.OnShowConfirmation
-// 0x11824600 (0x11824600 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct FortUIManagerWidget_OnShowConfirmation final
 {
 public:
-	struct FFortDialogDescription                 Description;                                       // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription                 Description;                                       // 0x0000(0x0170)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_OnShowConfirmation) == 0x11824600, "Wrong alignment on FortUIManagerWidget_OnShowConfirmation");
-static_assert(sizeof(FortUIManagerWidget_OnShowConfirmation) == 0x11824600, "Wrong size on FortUIManagerWidget_OnShowConfirmation");
+static_assert(alignof(FortUIManagerWidget_OnShowConfirmation) == 0x000010, "Wrong alignment on FortUIManagerWidget_OnShowConfirmation");
+static_assert(sizeof(FortUIManagerWidget_OnShowConfirmation) == 0x000170, "Wrong size on FortUIManagerWidget_OnShowConfirmation");
 static_assert(offsetof(FortUIManagerWidget_OnShowConfirmation, Description) == 0x000000, "Member 'FortUIManagerWidget_OnShowConfirmation::Description' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget.OnShowConfirmation_NUI
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct FortUIManagerWidget_OnShowConfirmation_NUI final
 {
 public:
-	struct FFortDialogDescription_NUI             Description;                                       // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FFortDialogDescription_NUI             Description;                                       // 0x0000(0x0180)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_OnShowConfirmation_NUI) == 0x1182E980, "Wrong alignment on FortUIManagerWidget_OnShowConfirmation_NUI");
-static_assert(sizeof(FortUIManagerWidget_OnShowConfirmation_NUI) == 0x1182E980, "Wrong size on FortUIManagerWidget_OnShowConfirmation_NUI");
+static_assert(alignof(FortUIManagerWidget_OnShowConfirmation_NUI) == 0x000010, "Wrong alignment on FortUIManagerWidget_OnShowConfirmation_NUI");
+static_assert(sizeof(FortUIManagerWidget_OnShowConfirmation_NUI) == 0x000180, "Wrong size on FortUIManagerWidget_OnShowConfirmation_NUI");
 static_assert(offsetof(FortUIManagerWidget_OnShowConfirmation_NUI, Description) == 0x000000, "Member 'FortUIManagerWidget_OnShowConfirmation_NUI::Description' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget.QueueActionPanelIntoModalLayer
@@ -18773,14 +18780,14 @@ static_assert(sizeof(FortUIManagerWidget_UpdateStateWidgetContent) == 0x000008, 
 static_assert(offsetof(FortUIManagerWidget_UpdateStateWidgetContent, StateWidget) == 0x000000, "Member 'FortUIManagerWidget_UpdateStateWidgetContent::StateWidget' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget._BPGetCurrentUIState
-// 0x53D3F (0x53D3F - 0x0000)
-struct alignas(0x53D3F) FortUIManagerWidget__BPGetCurrentUIState final
+// 0x0001 (0x0001 - 0x0000)
+struct FortUIManagerWidget__BPGetCurrentUIState final
 {
 public:
 	EFortUIState                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget__BPGetCurrentUIState) == 0x053D3F, "Wrong alignment on FortUIManagerWidget__BPGetCurrentUIState");
-static_assert(sizeof(FortUIManagerWidget__BPGetCurrentUIState) == 0x053D3F, "Wrong size on FortUIManagerWidget__BPGetCurrentUIState");
+static_assert(alignof(FortUIManagerWidget__BPGetCurrentUIState) == 0x000001, "Wrong alignment on FortUIManagerWidget__BPGetCurrentUIState");
+static_assert(sizeof(FortUIManagerWidget__BPGetCurrentUIState) == 0x000001, "Wrong size on FortUIManagerWidget__BPGetCurrentUIState");
 static_assert(offsetof(FortUIManagerWidget__BPGetCurrentUIState, ReturnValue) == 0x000000, "Member 'FortUIManagerWidget__BPGetCurrentUIState::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget.GetCurrentUIStateWidget
@@ -18817,25 +18824,25 @@ static_assert(sizeof(FortUIManagerWidget_IsStateContentDisplayed) == 0x000001, "
 static_assert(offsetof(FortUIManagerWidget_IsStateContentDisplayed, ReturnValue) == 0x000000, "Member 'FortUIManagerWidget_IsStateContentDisplayed::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUserChoiceWidget.SetChoices
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FortUserChoiceWidget_SetChoices final
 {
 public:
-	struct FChoiceData                            ChoiceItems;                                       // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FChoiceData                            ChoiceItems;                                       // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUserChoiceWidget_SetChoices) == 0x11821780, "Wrong alignment on FortUserChoiceWidget_SetChoices");
-static_assert(sizeof(FortUserChoiceWidget_SetChoices) == 0x11821780, "Wrong size on FortUserChoiceWidget_SetChoices");
+static_assert(alignof(FortUserChoiceWidget_SetChoices) == 0x000008, "Wrong alignment on FortUserChoiceWidget_SetChoices");
+static_assert(sizeof(FortUserChoiceWidget_SetChoices) == 0x000030, "Wrong size on FortUserChoiceWidget_SetChoices");
 static_assert(offsetof(FortUserChoiceWidget_SetChoices, ChoiceItems) == 0x000000, "Member 'FortUserChoiceWidget_SetChoices::ChoiceItems' has a wrong offset!");
 
 // Function FortniteUI.FortWorkerSetBonusIcon.SetGameplayTag
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FortWorkerSetBonusIcon_SetGameplayTag final
 {
 public:
-	struct FGameplayTag                           InGameplayTag;                                     // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           InGameplayTag;                                     // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortWorkerSetBonusIcon_SetGameplayTag) == 0x11821D80, "Wrong alignment on FortWorkerSetBonusIcon_SetGameplayTag");
-static_assert(sizeof(FortWorkerSetBonusIcon_SetGameplayTag) == 0x11821D80, "Wrong size on FortWorkerSetBonusIcon_SetGameplayTag");
+static_assert(alignof(FortWorkerSetBonusIcon_SetGameplayTag) == 0x000008, "Wrong alignment on FortWorkerSetBonusIcon_SetGameplayTag");
+static_assert(sizeof(FortWorkerSetBonusIcon_SetGameplayTag) == 0x000008, "Wrong size on FortWorkerSetBonusIcon_SetGameplayTag");
 static_assert(offsetof(FortWorkerSetBonusIcon_SetGameplayTag, InGameplayTag) == 0x000000, "Member 'FortWorkerSetBonusIcon_SetGameplayTag::InGameplayTag' has a wrong offset!");
 
 // Function FortniteUI.UINavigationManager.GetDisplayName
@@ -19019,14 +19026,14 @@ static_assert(offsetof(FortUINavigationManager_NavigateToNodePage, PageId) == 0x
 static_assert(offsetof(FortUINavigationManager_NavigateToNodePage, NodeID) == 0x000008, "Member 'FortUINavigationManager_NavigateToNodePage::NodeID' has a wrong offset!");
 
 // Function FortniteUI.FortUINavigationManager.NavigateToNodePageByGameplayTagContainer
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct FortUINavigationManager_NavigateToNodePageByGameplayTagContainer final
 {
 public:
-	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x11821C00)(Parm, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  GameplayTagContainer;                              // 0x0000(0x0020)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUINavigationManager_NavigateToNodePageByGameplayTagContainer) == 0x11821C00, "Wrong alignment on FortUINavigationManager_NavigateToNodePageByGameplayTagContainer");
-static_assert(sizeof(FortUINavigationManager_NavigateToNodePageByGameplayTagContainer) == 0x11821C00, "Wrong size on FortUINavigationManager_NavigateToNodePageByGameplayTagContainer");
+static_assert(alignof(FortUINavigationManager_NavigateToNodePageByGameplayTagContainer) == 0x000008, "Wrong alignment on FortUINavigationManager_NavigateToNodePageByGameplayTagContainer");
+static_assert(sizeof(FortUINavigationManager_NavigateToNodePageByGameplayTagContainer) == 0x000020, "Wrong size on FortUINavigationManager_NavigateToNodePageByGameplayTagContainer");
 static_assert(offsetof(FortUINavigationManager_NavigateToNodePageByGameplayTagContainer, GameplayTagContainer) == 0x000000, "Member 'FortUINavigationManager_NavigateToNodePageByGameplayTagContainer::GameplayTagContainer' has a wrong offset!");
 
 // Function FortniteUI.FortUINavigationManager.NavigateToQuestObjective
@@ -19133,16 +19140,16 @@ static_assert(sizeof(FortUINavigationManager_SetScrollWidget) == 0x000008, "Wron
 static_assert(offsetof(FortUINavigationManager_SetScrollWidget, Widget) == 0x000000, "Member 'FortUINavigationManager_SetScrollWidget::Widget' has a wrong offset!");
 
 // Function FortniteUI.FortUINavigationManager.TryGetPendingNavigationOp
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct FortUINavigationManager_TryGetPendingNavigationOp final
 {
 public:
-	struct FFortUINavigationOperation             NavigationOp;                                      // 0x0000(0x1182E980)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortUINavigationOperation             NavigationOp;                                      // 0x0000(0x0038)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FortUINavigationManager_TryGetPendingNavigationOp) == 0x1182E980, "Wrong alignment on FortUINavigationManager_TryGetPendingNavigationOp");
-static_assert(sizeof(FortUINavigationManager_TryGetPendingNavigationOp) == 0x1182E980, "Wrong size on FortUINavigationManager_TryGetPendingNavigationOp");
+static_assert(alignof(FortUINavigationManager_TryGetPendingNavigationOp) == 0x000008, "Wrong alignment on FortUINavigationManager_TryGetPendingNavigationOp");
+static_assert(sizeof(FortUINavigationManager_TryGetPendingNavigationOp) == 0x000040, "Wrong size on FortUINavigationManager_TryGetPendingNavigationOp");
 static_assert(offsetof(FortUINavigationManager_TryGetPendingNavigationOp, NavigationOp) == 0x000000, "Member 'FortUINavigationManager_TryGetPendingNavigationOp::NavigationOp' has a wrong offset!");
 static_assert(offsetof(FortUINavigationManager_TryGetPendingNavigationOp, ReturnValue) == 0x000038, "Member 'FortUINavigationManager_TryGetPendingNavigationOp::ReturnValue' has a wrong offset!");
 

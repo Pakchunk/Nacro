@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LegacyButtonStyle-Emphasis.LegacyButtonStyle-Emphasis_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x1C08 - 0x1C08)
 class ULegacyButtonStyleMinusEmphasis_C final : public ULegacyButtonStyleMinusDefault_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<ULegacyButtonStyleMinusEmphasis_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonStyleMinusEmphasis_C) == 0x1182E980, "Wrong alignment on ULegacyButtonStyleMinusEmphasis_C");
-static_assert(sizeof(ULegacyButtonStyleMinusEmphasis_C) == 0x1182E980, "Wrong size on ULegacyButtonStyleMinusEmphasis_C");
+static_assert(alignof(ULegacyButtonStyleMinusEmphasis_C) == 0x000008, "Wrong alignment on ULegacyButtonStyleMinusEmphasis_C");
+static_assert(sizeof(ULegacyButtonStyleMinusEmphasis_C) == 0x001C08, "Wrong size on ULegacyButtonStyleMinusEmphasis_C");
 
 }
 

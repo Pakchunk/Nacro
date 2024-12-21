@@ -31,14 +31,14 @@ static_assert(offsetof(T3_Horde_C_ExecuteUbergraph_T3_Horde, CallFunc_GetDynamic
 static_assert(offsetof(T3_Horde_C_ExecuteUbergraph_T3_Horde, K2Node_Event_IsDesignTime) == 0x000010, "Member 'T3_Horde_C_ExecuteUbergraph_T3_Horde::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function T3_Horde.T3_Horde_C.PreConstruct
-// 0x0D8C (0x0D8C - 0x0000)
-struct alignas(0xD8C) T3_Horde_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct T3_Horde_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(T3_Horde_C_PreConstruct) == 0x000D8C, "Wrong alignment on T3_Horde_C_PreConstruct");
-static_assert(sizeof(T3_Horde_C_PreConstruct) == 0x000D8C, "Wrong size on T3_Horde_C_PreConstruct");
+static_assert(alignof(T3_Horde_C_PreConstruct) == 0x000001, "Wrong alignment on T3_Horde_C_PreConstruct");
+static_assert(sizeof(T3_Horde_C_PreConstruct) == 0x000001, "Wrong size on T3_Horde_C_PreConstruct");
 static_assert(offsetof(T3_Horde_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'T3_Horde_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }

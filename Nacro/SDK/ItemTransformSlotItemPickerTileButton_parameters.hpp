@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C.ExecuteUbergraph_ItemTransformSlotItemPickerTileButton
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton final
 {
 public:
@@ -33,14 +33,14 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransmogSacrifice                     CallFunc_GetTransmogSacrificeDataFromItemDefintion_OutTransmogData; // 0x0040(0x11821780)()
+	struct FTransmogSacrifice                     CallFunc_GetTransmogSacrificeDataFromItemDefintion_OutTransmogData; // 0x0040(0x0010)()
 	bool                                          CallFunc_GetTransmogSacrificeDataFromItemDefintion_ReturnValue; // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select_Default;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton) == 0x11821780, "Wrong alignment on ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton");
-static_assert(sizeof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton) == 0x11821780, "Wrong size on ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton");
+static_assert(alignof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton) == 0x000008, "Wrong alignment on ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton");
+static_assert(sizeof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton) == 0x000060, "Wrong size on ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton");
 static_assert(offsetof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton, EntryPoint) == 0x000000, "Member 'ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton, K2Node_Event_InData) == 0x000008, "Member 'ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton::K2Node_Event_InData' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton, K2Node_Event_OwningList) == 0x000010, "Member 'ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton::K2Node_Event_OwningList' has a wrong offset!");
@@ -56,15 +56,15 @@ static_assert(offsetof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_
 static_assert(offsetof(ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton, K2Node_Select_Default) == 0x000058, "Member 'ItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C.SetData
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ItemTransformSlotItemPickerTileButton_C_SetData final
+// 0x0010 (0x0010 - 0x0000)
+struct ItemTransformSlotItemPickerTileButton_C_SetData final
 {
 public:
 	class UObject*                                InData;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonListView*                        OwningList;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformSlotItemPickerTileButton_C_SetData) == 0x0000E4, "Wrong alignment on ItemTransformSlotItemPickerTileButton_C_SetData");
-static_assert(sizeof(ItemTransformSlotItemPickerTileButton_C_SetData) == 0x0000E4, "Wrong size on ItemTransformSlotItemPickerTileButton_C_SetData");
+static_assert(alignof(ItemTransformSlotItemPickerTileButton_C_SetData) == 0x000008, "Wrong alignment on ItemTransformSlotItemPickerTileButton_C_SetData");
+static_assert(sizeof(ItemTransformSlotItemPickerTileButton_C_SetData) == 0x000010, "Wrong size on ItemTransformSlotItemPickerTileButton_C_SetData");
 static_assert(offsetof(ItemTransformSlotItemPickerTileButton_C_SetData, InData) == 0x000000, "Member 'ItemTransformSlotItemPickerTileButton_C_SetData::InData' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotItemPickerTileButton_C_SetData, OwningList) == 0x000008, "Member 'ItemTransformSlotItemPickerTileButton_C_SetData::OwningList' has a wrong offset!");
 

@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBoostRow.XpBoostRow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x0290 - 0x0230)
 class UXpBoostRow_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       Boost;                                             // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BoostIcon;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      GiveXPButton;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,7 +35,7 @@ public:
 	bool                                          HasPartyMember;                                    // 0x0262(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_263[0x5];                                      // 0x0263(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   Give_Boost_Clicked;                                // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FUniqueNetIdRepl                       Player_Id;                                         // 0x0278(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       Player_Id;                                         // 0x0278(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void Give_Boost_Clicked__DelegateSignature(const struct FUniqueNetIdRepl& Player_To_Boost);
@@ -60,8 +60,8 @@ public:
 		return GetDefaultObjImpl<UXpBoostRow_C>();
 	}
 };
-static_assert(alignof(UXpBoostRow_C) == 0x322CBBB8, "Wrong alignment on UXpBoostRow_C");
-static_assert(sizeof(UXpBoostRow_C) == 0x322CBBB8, "Wrong size on UXpBoostRow_C");
+static_assert(alignof(UXpBoostRow_C) == 0x000008, "Wrong alignment on UXpBoostRow_C");
+static_assert(sizeof(UXpBoostRow_C) == 0x000290, "Wrong size on UXpBoostRow_C");
 static_assert(offsetof(UXpBoostRow_C, UberGraphFrame) == 0x000230, "Member 'UXpBoostRow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UXpBoostRow_C, Boost) == 0x000238, "Member 'UXpBoostRow_C::Boost' has a wrong offset!");
 static_assert(offsetof(UXpBoostRow_C, BoostIcon) == 0x000240, "Member 'UXpBoostRow_C::BoostIcon' has a wrong offset!");

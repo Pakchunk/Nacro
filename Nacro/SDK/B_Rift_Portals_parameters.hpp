@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function B_Rift_Portals.B_Rift_Portals_C.ExecuteUbergraph_B_Rift_Portals
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x02C8 (0x02C8 - 0x0000)
 struct B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals final
 {
 public:
@@ -28,16 +28,17 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0014(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0014(0x000C)(IsPlainOldData, NoDestructor)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue3;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0024(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0034(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0034(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDecalComponent*                        CallFunc_SpawnDecalAtLocation_ReturnValue;         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_AddWorldRotation_SweepHitResult;       // 0x0058(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x00E0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_AddWorldRotation_SweepHitResult;       // 0x0058(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x00E0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,7 +53,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_132[0x2];                                      // 0x0132(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0138(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue2;                        // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue2;        // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,13 +86,13 @@ public:
 	float                                         K2Node_Select_Default;                             // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue4;           // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x01C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x01D4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x01E0(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0268(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x01C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x01D4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x01E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0268(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue5;        // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue6;        // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x027C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x027C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x028C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_28D[0x3];                                      // 0x028D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Lerp_ReturnValue3;                        // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,8 +111,8 @@ public:
 	uint8                                         Pad_2C2[0x2];                                      // 0x02C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals) == 0x11821D80, "Wrong alignment on B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals");
-static_assert(sizeof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals) == 0x11821D80, "Wrong size on B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals");
+static_assert(alignof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals) == 0x000008, "Wrong alignment on B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals");
+static_assert(sizeof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals) == 0x0002C8, "Wrong size on B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, EntryPoint) == 0x000000, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::EntryPoint' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue) == 0x000004, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_Event_EndPlayReason) == 0x000008, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_Event_EndPlayReason' has a wrong offset!");
@@ -211,7 +212,7 @@ static_assert(sizeof(B_Rift_Portals_C_ReceiveEndPlay) == 0x000001, "Wrong size o
 static_assert(offsetof(B_Rift_Portals_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'B_Rift_Portals_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
 
 // Function B_Rift_Portals.B_Rift_Portals_C.UserConstructionScript
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct B_Rift_Portals_C_UserConstructionScript final
 {
 public:
@@ -232,29 +233,29 @@ public:
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue3;          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0044(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0044(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X2;                         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y2;                         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X3;                           // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y3;                           // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z3;                           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue4;          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0068(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0068(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue5;          // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0078(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0078(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X3;                         // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y3;                         // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0088(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0088(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue6;          // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X4;                         // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y4;                         // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X5;                         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y5;                         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00AC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00AC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue7;          // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x00BC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x00BC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue8;          // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x00D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x00D0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X6;                         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y6;                         // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X4;                           // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -267,10 +268,10 @@ public:
 	float                                         CallFunc_RandomFloatInRange_ReturnValue10;         // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLightColor_ReturnValue;                // 0x0110(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLightColor_ReturnValue;                // 0x0110(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Rift_Portals_C_UserConstructionScript) == 0x11821300, "Wrong alignment on B_Rift_Portals_C_UserConstructionScript");
-static_assert(sizeof(B_Rift_Portals_C_UserConstructionScript) == 0x11821300, "Wrong size on B_Rift_Portals_C_UserConstructionScript");
+static_assert(alignof(B_Rift_Portals_C_UserConstructionScript) == 0x000008, "Wrong alignment on B_Rift_Portals_C_UserConstructionScript");
+static_assert(sizeof(B_Rift_Portals_C_UserConstructionScript) == 0x000120, "Wrong size on B_Rift_Portals_C_UserConstructionScript");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_GetGameUserSettings_ReturnValue) == 0x000008, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_GetVisualEffectQuality_ReturnValue) == 0x000010, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_GetVisualEffectQuality_ReturnValue' has a wrong offset!");

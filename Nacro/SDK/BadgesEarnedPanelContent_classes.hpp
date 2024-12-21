@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BadgesEarnedPanelContent.BadgesEarnedPanelContent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class UBadgesEarnedPanelContent_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           EarnedBadges;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_1;                                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UBadgesEarnedPanelContent_C>();
 	}
 };
-static_assert(alignof(UBadgesEarnedPanelContent_C) == 0x322CBBB8, "Wrong alignment on UBadgesEarnedPanelContent_C");
-static_assert(sizeof(UBadgesEarnedPanelContent_C) == 0x322CBBB8, "Wrong size on UBadgesEarnedPanelContent_C");
+static_assert(alignof(UBadgesEarnedPanelContent_C) == 0x000008, "Wrong alignment on UBadgesEarnedPanelContent_C");
+static_assert(sizeof(UBadgesEarnedPanelContent_C) == 0x000270, "Wrong size on UBadgesEarnedPanelContent_C");
 static_assert(offsetof(UBadgesEarnedPanelContent_C, UberGraphFrame) == 0x000238, "Member 'UBadgesEarnedPanelContent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBadgesEarnedPanelContent_C, EarnedBadges) == 0x000240, "Member 'UBadgesEarnedPanelContent_C::EarnedBadges' has a wrong offset!");
 static_assert(offsetof(UBadgesEarnedPanelContent_C, Image_0) == 0x000248, "Member 'UBadgesEarnedPanelContent_C::Image_0' has a wrong offset!");

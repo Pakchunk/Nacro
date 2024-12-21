@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Feedback.Feedback_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A0 (0x0540 - 0x04A0)
 class UFeedback_C final : public UFortGameFeedbackBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      BugButton;                                         // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      CancelButton;                                      // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      CommentButton;                                     // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -66,8 +66,8 @@ public:
 		return GetDefaultObjImpl<UFeedback_C>();
 	}
 };
-static_assert(alignof(UFeedback_C) == 0x322CBBB8, "Wrong alignment on UFeedback_C");
-static_assert(sizeof(UFeedback_C) == 0x322CBBB8, "Wrong size on UFeedback_C");
+static_assert(alignof(UFeedback_C) == 0x000008, "Wrong alignment on UFeedback_C");
+static_assert(sizeof(UFeedback_C) == 0x000540, "Wrong size on UFeedback_C");
 static_assert(offsetof(UFeedback_C, UberGraphFrame) == 0x0004A0, "Member 'UFeedback_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFeedback_C, BugButton) == 0x0004A8, "Member 'UFeedback_C::BugButton' has a wrong offset!");
 static_assert(offsetof(UFeedback_C, CancelButton) == 0x0004B0, "Member 'UFeedback_C::CancelButton' has a wrong offset!");

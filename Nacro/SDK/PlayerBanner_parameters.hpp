@@ -19,21 +19,21 @@ namespace SDK::Params
 {
 
 // Function PlayerBanner.PlayerBanner_C.ExecuteUbergraph_PlayerBanner
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct PlayerBanner_C_ExecuteUbergraph_PlayerBanner final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_UniqueNetIdRepl_ReturnValue;      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTeamMemberInfo                    K2Node_CustomEvent_TeamMemberInfo;                 // 0x0008(0x11827900)()
+	struct FFortTeamMemberInfo                    K2Node_CustomEvent_TeamMemberInfo;                 // 0x0008(0x0190)()
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetBannerImage_Success;                   // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x019A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x019B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerBanner_C_ExecuteUbergraph_PlayerBanner) == 0x11821780, "Wrong alignment on PlayerBanner_C_ExecuteUbergraph_PlayerBanner");
-static_assert(sizeof(PlayerBanner_C_ExecuteUbergraph_PlayerBanner) == 0x11821780, "Wrong size on PlayerBanner_C_ExecuteUbergraph_PlayerBanner");
+static_assert(alignof(PlayerBanner_C_ExecuteUbergraph_PlayerBanner) == 0x000008, "Wrong alignment on PlayerBanner_C_ExecuteUbergraph_PlayerBanner");
+static_assert(sizeof(PlayerBanner_C_ExecuteUbergraph_PlayerBanner) == 0x0001A0, "Wrong size on PlayerBanner_C_ExecuteUbergraph_PlayerBanner");
 static_assert(offsetof(PlayerBanner_C_ExecuteUbergraph_PlayerBanner, EntryPoint) == 0x000000, "Member 'PlayerBanner_C_ExecuteUbergraph_PlayerBanner::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PlayerBanner_C_ExecuteUbergraph_PlayerBanner, CallFunc_IsValid_UniqueNetIdRepl_ReturnValue) == 0x000004, "Member 'PlayerBanner_C_ExecuteUbergraph_PlayerBanner::CallFunc_IsValid_UniqueNetIdRepl_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PlayerBanner_C_ExecuteUbergraph_PlayerBanner, K2Node_CustomEvent_TeamMemberInfo) == 0x000008, "Member 'PlayerBanner_C_ExecuteUbergraph_PlayerBanner::K2Node_CustomEvent_TeamMemberInfo' has a wrong offset!");
@@ -54,29 +54,29 @@ static_assert(sizeof(PlayerBanner_C_PreConstruct) == 0x000001, "Wrong size on Pl
 static_assert(offsetof(PlayerBanner_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'PlayerBanner_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function PlayerBanner.PlayerBanner_C.OnTeamMemberStateChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct PlayerBanner_C_OnTeamMemberStateChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(PlayerBanner_C_OnTeamMemberStateChanged) == 0x11821780, "Wrong alignment on PlayerBanner_C_OnTeamMemberStateChanged");
-static_assert(sizeof(PlayerBanner_C_OnTeamMemberStateChanged) == 0x11821780, "Wrong size on PlayerBanner_C_OnTeamMemberStateChanged");
+static_assert(alignof(PlayerBanner_C_OnTeamMemberStateChanged) == 0x000008, "Wrong alignment on PlayerBanner_C_OnTeamMemberStateChanged");
+static_assert(sizeof(PlayerBanner_C_OnTeamMemberStateChanged) == 0x000190, "Wrong size on PlayerBanner_C_OnTeamMemberStateChanged");
 static_assert(offsetof(PlayerBanner_C_OnTeamMemberStateChanged, TeamMemberInfo) == 0x000000, "Member 'PlayerBanner_C_OnTeamMemberStateChanged::TeamMemberInfo' has a wrong offset!");
 
 // Function PlayerBanner.PlayerBanner_C.SetBannerImage
-// 0x52245 (0x52245 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct PlayerBanner_C_SetBannerImage final
 {
 public:
-	struct FFortHomeBaseInfo                      Image_info;                                        // 0x0000(0x52245)(Parm)
+	struct FFortHomeBaseInfo                      Image_info;                                        // 0x0000(0x0040)(Parm)
 	bool                                          Success;                                           // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue2;           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerBanner_C_SetBannerImage) == 0x052245, "Wrong alignment on PlayerBanner_C_SetBannerImage");
-static_assert(sizeof(PlayerBanner_C_SetBannerImage) == 0x052245, "Wrong size on PlayerBanner_C_SetBannerImage");
+static_assert(alignof(PlayerBanner_C_SetBannerImage) == 0x000008, "Wrong alignment on PlayerBanner_C_SetBannerImage");
+static_assert(sizeof(PlayerBanner_C_SetBannerImage) == 0x000058, "Wrong size on PlayerBanner_C_SetBannerImage");
 static_assert(offsetof(PlayerBanner_C_SetBannerImage, Image_info) == 0x000000, "Member 'PlayerBanner_C_SetBannerImage::Image_info' has a wrong offset!");
 static_assert(offsetof(PlayerBanner_C_SetBannerImage, Success) == 0x000040, "Member 'PlayerBanner_C_SetBannerImage::Success' has a wrong offset!");
 static_assert(offsetof(PlayerBanner_C_SetBannerImage, CallFunc_Conv_StringToName_ReturnValue) == 0x000048, "Member 'PlayerBanner_C_SetBannerImage::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
@@ -113,7 +113,7 @@ static_assert(offsetof(PlayerBanner_C_SetBannerIconId, CallFunc_GetBannerMID_Ban
 static_assert(offsetof(PlayerBanner_C_SetBannerIconId, CallFunc_NotEqual_NameName_ReturnValue2) == 0x000088, "Member 'PlayerBanner_C_SetBannerIconId::CallFunc_NotEqual_NameName_ReturnValue2' has a wrong offset!");
 
 // Function PlayerBanner.PlayerBanner_C.SetBannerColorId
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct PlayerBanner_C_SetBannerColorId final
 {
 public:
@@ -121,14 +121,15 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetBannerMID_BannerMID;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseBannerColor                   CallFunc_GetBannerColorFromRowName_ReturnValue;    // 0x0014(0x11821780)(NoDestructor)
+	struct FHomebaseBannerColor                   CallFunc_GetBannerColorFromRowName_ReturnValue;    // 0x0014(0x0020)(NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetBannerMID_BannerMID2;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetSecondaryColor_ReturnValue;            // 0x0040(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetPrimaryColor_ReturnValue;              // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetSecondaryColor_ReturnValue;            // 0x0040(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetPrimaryColor_ReturnValue;              // 0x0050(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_NameName_ReturnValue2;           // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerBanner_C_SetBannerColorId) == 0x11821780, "Wrong alignment on PlayerBanner_C_SetBannerColorId");
-static_assert(sizeof(PlayerBanner_C_SetBannerColorId) == 0x11821780, "Wrong size on PlayerBanner_C_SetBannerColorId");
+static_assert(alignof(PlayerBanner_C_SetBannerColorId) == 0x000008, "Wrong alignment on PlayerBanner_C_SetBannerColorId");
+static_assert(sizeof(PlayerBanner_C_SetBannerColorId) == 0x000068, "Wrong size on PlayerBanner_C_SetBannerColorId");
 static_assert(offsetof(PlayerBanner_C_SetBannerColorId, InBannerColorId) == 0x000000, "Member 'PlayerBanner_C_SetBannerColorId::InBannerColorId' has a wrong offset!");
 static_assert(offsetof(PlayerBanner_C_SetBannerColorId, CallFunc_GetBannerMID_BannerMID) == 0x000008, "Member 'PlayerBanner_C_SetBannerColorId::CallFunc_GetBannerMID_BannerMID' has a wrong offset!");
 static_assert(offsetof(PlayerBanner_C_SetBannerColorId, CallFunc_NotEqual_NameName_ReturnValue) == 0x000010, "Member 'PlayerBanner_C_SetBannerColorId::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
@@ -139,11 +140,11 @@ static_assert(offsetof(PlayerBanner_C_SetBannerColorId, CallFunc_GetPrimaryColor
 static_assert(offsetof(PlayerBanner_C_SetBannerColorId, CallFunc_NotEqual_NameName_ReturnValue2) == 0x000060, "Member 'PlayerBanner_C_SetBannerColorId::CallFunc_NotEqual_NameName_ReturnValue2' has a wrong offset!");
 
 // Function PlayerBanner.PlayerBanner_C.SetBannerOwner
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct PlayerBanner_C_SetBannerOwner final
 {
 public:
-	struct FUniqueNetIdRepl                       OwnerId;                                           // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       OwnerId;                                           // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_UniqueNetIdRepl_ReturnValue;      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -151,11 +152,11 @@ public:
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortHomeBaseInfo                      CallFunc_GetHomeBaseInfoForPlayer_Result;          // 0x0058(0x52245)()
+	struct FFortHomeBaseInfo                      CallFunc_GetHomeBaseInfoForPlayer_Result;          // 0x0058(0x0040)()
 	bool                                          CallFunc_SetBannerImage_Success;                   // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerBanner_C_SetBannerOwner) == 0x11821780, "Wrong alignment on PlayerBanner_C_SetBannerOwner");
-static_assert(sizeof(PlayerBanner_C_SetBannerOwner) == 0x11821780, "Wrong size on PlayerBanner_C_SetBannerOwner");
+static_assert(alignof(PlayerBanner_C_SetBannerOwner) == 0x000008, "Wrong alignment on PlayerBanner_C_SetBannerOwner");
+static_assert(sizeof(PlayerBanner_C_SetBannerOwner) == 0x0000A0, "Wrong size on PlayerBanner_C_SetBannerOwner");
 static_assert(offsetof(PlayerBanner_C_SetBannerOwner, OwnerId) == 0x000000, "Member 'PlayerBanner_C_SetBannerOwner::OwnerId' has a wrong offset!");
 static_assert(offsetof(PlayerBanner_C_SetBannerOwner, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'PlayerBanner_C_SetBannerOwner::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(PlayerBanner_C_SetBannerOwner, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'PlayerBanner_C_SetBannerOwner::CallFunc_GetContext_ReturnValue' has a wrong offset!");

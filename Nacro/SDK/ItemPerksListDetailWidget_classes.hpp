@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemPerksListDetailWidget.ItemPerksListDetailWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0288 - 0x0270)
 class UItemPerksListDetailWidget_C final : public UFortItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class UPerksList_C*                           PerksList;                                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ShowActiveAbilitiesOnly;                           // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UItemPerksListDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemPerksListDetailWidget_C) == 0x322CBBB8, "Wrong alignment on UItemPerksListDetailWidget_C");
-static_assert(sizeof(UItemPerksListDetailWidget_C) == 0x322CBBB8, "Wrong size on UItemPerksListDetailWidget_C");
+static_assert(alignof(UItemPerksListDetailWidget_C) == 0x000008, "Wrong alignment on UItemPerksListDetailWidget_C");
+static_assert(sizeof(UItemPerksListDetailWidget_C) == 0x000288, "Wrong size on UItemPerksListDetailWidget_C");
 static_assert(offsetof(UItemPerksListDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemPerksListDetailWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemPerksListDetailWidget_C, PerksList) == 0x000278, "Member 'UItemPerksListDetailWidget_C::PerksList' has a wrong offset!");
 static_assert(offsetof(UItemPerksListDetailWidget_C, ShowActiveAbilitiesOnly) == 0x000280, "Member 'UItemPerksListDetailWidget_C::ShowActiveAbilitiesOnly' has a wrong offset!");

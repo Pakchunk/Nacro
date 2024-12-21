@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotItemPicker.ItemTransformSlotItemPicker_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x02A0 - 0x02A0)
 class UItemTransformSlotItemPicker_C final : public UFortTransformSlotItemPicker
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformSlotItemPicker_C>();
 	}
 };
-static_assert(alignof(UItemTransformSlotItemPicker_C) == 0x322CBBB8, "Wrong alignment on UItemTransformSlotItemPicker_C");
-static_assert(sizeof(UItemTransformSlotItemPicker_C) == 0x322CBBB8, "Wrong size on UItemTransformSlotItemPicker_C");
+static_assert(alignof(UItemTransformSlotItemPicker_C) == 0x000008, "Wrong alignment on UItemTransformSlotItemPicker_C");
+static_assert(sizeof(UItemTransformSlotItemPicker_C) == 0x0002A0, "Wrong size on UItemTransformSlotItemPicker_C");
 
 }
 

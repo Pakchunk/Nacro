@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.ExecuteUbergraph_Interaction_DefenderBeacon
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon final
+// 0x00B8 (0x00B8 - 0x0000)
+struct Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 	class AFortWeapon*                            K2Node_CustomEvent_OldWeapon;                      // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)> K2Node_CreateDelegate_OutputDelegate3;             // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon) == 0x10461A40, "Wrong alignment on Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon");
-static_assert(sizeof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon) == 0x10461A40, "Wrong size on Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon");
+static_assert(alignof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon) == 0x000008, "Wrong alignment on Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon");
+static_assert(sizeof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon) == 0x0000B8, "Wrong size on Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon");
 static_assert(offsetof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon, EntryPoint) == 0x000000, "Member 'Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
@@ -82,34 +82,34 @@ static_assert(offsetof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction
 static_assert(offsetof(Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon, K2Node_CreateDelegate_OutputDelegate3) == 0x0000A8, "Member 'Interaction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.OnDefenderEquippedWeapon
-// 0x009E (0x009E - 0x0000)
-struct alignas(0x9E) Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon final
+// 0x0010 (0x0010 - 0x0000)
+struct Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon final
 {
 public:
 	class AFortWeapon*                            NewWeapon;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortWeapon*                            OldWeapon;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon) == 0x00009E, "Wrong alignment on Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon");
-static_assert(sizeof(Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon) == 0x00009E, "Wrong size on Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon");
+static_assert(alignof(Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon) == 0x000008, "Wrong alignment on Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon");
+static_assert(sizeof(Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon) == 0x000010, "Wrong size on Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon");
 static_assert(offsetof(Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon, NewWeapon) == 0x000000, "Member 'Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon::NewWeapon' has a wrong offset!");
 static_assert(offsetof(Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon, OldWeapon) == 0x000008, "Member 'Interaction_DefenderBeacon_C_OnDefenderEquippedWeapon::OldWeapon' has a wrong offset!");
 
 // Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.DisplayWeaponType
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct Interaction_DefenderBeacon_C_DisplayWeaponType final
 {
 public:
 	class AFortAIPawn*                            LocalDefenderPawn;                                 // 0x0000(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TagMelee;                                          // 0x0008(0x11821D80)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TagPistol;                                         // 0x0010(0x11821D80)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TagSniper;                                         // 0x0018(0x11821D80)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TagShotgun;                                        // 0x0020(0x11821D80)(Edit, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TagAssault;                                        // 0x0028(0x11821D80)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TagMelee;                                          // 0x0008(0x0008)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TagPistol;                                         // 0x0010(0x0008)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TagSniper;                                         // 0x0018(0x0008)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TagShotgun;                                        // 0x0020(0x0008)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TagAssault;                                        // 0x0028(0x0008)(Edit, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Interaction_DefenderBeacon_C_DisplayWeaponType) == 0x11821D80, "Wrong alignment on Interaction_DefenderBeacon_C_DisplayWeaponType");
-static_assert(sizeof(Interaction_DefenderBeacon_C_DisplayWeaponType) == 0x11821D80, "Wrong size on Interaction_DefenderBeacon_C_DisplayWeaponType");
+static_assert(alignof(Interaction_DefenderBeacon_C_DisplayWeaponType) == 0x000008, "Wrong alignment on Interaction_DefenderBeacon_C_DisplayWeaponType");
+static_assert(sizeof(Interaction_DefenderBeacon_C_DisplayWeaponType) == 0x000038, "Wrong size on Interaction_DefenderBeacon_C_DisplayWeaponType");
 static_assert(offsetof(Interaction_DefenderBeacon_C_DisplayWeaponType, LocalDefenderPawn) == 0x000000, "Member 'Interaction_DefenderBeacon_C_DisplayWeaponType::LocalDefenderPawn' has a wrong offset!");
 static_assert(offsetof(Interaction_DefenderBeacon_C_DisplayWeaponType, TagMelee) == 0x000008, "Member 'Interaction_DefenderBeacon_C_DisplayWeaponType::TagMelee' has a wrong offset!");
 static_assert(offsetof(Interaction_DefenderBeacon_C_DisplayWeaponType, TagPistol) == 0x000010, "Member 'Interaction_DefenderBeacon_C_DisplayWeaponType::TagPistol' has a wrong offset!");

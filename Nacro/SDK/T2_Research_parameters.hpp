@@ -31,14 +31,14 @@ static_assert(offsetof(T2_Research_C_ExecuteUbergraph_T2_Research, K2Node_Event_
 static_assert(offsetof(T2_Research_C_ExecuteUbergraph_T2_Research, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'T2_Research_C_ExecuteUbergraph_T2_Research::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function T2_Research.T2_Research_C.PreConstruct
-// 0x0118 (0x0118 - 0x0000)
-struct alignas(0x118) T2_Research_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct T2_Research_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(T2_Research_C_PreConstruct) == 0x000118, "Wrong alignment on T2_Research_C_PreConstruct");
-static_assert(sizeof(T2_Research_C_PreConstruct) == 0x000118, "Wrong size on T2_Research_C_PreConstruct");
+static_assert(alignof(T2_Research_C_PreConstruct) == 0x000001, "Wrong alignment on T2_Research_C_PreConstruct");
+static_assert(sizeof(T2_Research_C_PreConstruct) == 0x000001, "Wrong size on T2_Research_C_PreConstruct");
 static_assert(offsetof(T2_Research_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'T2_Research_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }

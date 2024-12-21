@@ -327,15 +327,15 @@ void UOptionsMenuHudRotator_C::Update_Row_Selector(int32 Currently_Selected)
 }
 
 
-// Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Center on Widget
+// Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Center On Widget
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenuHudRotator_C::Center_on_Widget()
+void UOptionsMenuHudRotator_C::Center_On_Widget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHudRotator_C", "Center on Widget");
+		Func = Class->GetFunction("OptionsMenuHudRotator_C", "Center On Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -35,14 +35,14 @@ static_assert(offsetof(StatItemLarge_C_ExecuteUbergraph_StatItemLarge, K2Node_Ev
 static_assert(offsetof(StatItemLarge_C_ExecuteUbergraph_StatItemLarge, K2Node_Event_IsDesignTime) == 0x000008, "Member 'StatItemLarge_C_ExecuteUbergraph_StatItemLarge::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function StatItemLarge.StatItemLarge_C.ValueChanged
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) StatItemLarge_C_ValueChanged final
+// 0x0004 (0x0004 - 0x0000)
+struct StatItemLarge_C_ValueChanged final
 {
 public:
 	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StatItemLarge_C_ValueChanged) == 0x0000E4, "Wrong alignment on StatItemLarge_C_ValueChanged");
-static_assert(sizeof(StatItemLarge_C_ValueChanged) == 0x0000E4, "Wrong size on StatItemLarge_C_ValueChanged");
+static_assert(alignof(StatItemLarge_C_ValueChanged) == 0x000004, "Wrong alignment on StatItemLarge_C_ValueChanged");
+static_assert(sizeof(StatItemLarge_C_ValueChanged) == 0x000004, "Wrong size on StatItemLarge_C_ValueChanged");
 static_assert(offsetof(StatItemLarge_C_ValueChanged, Delta) == 0x000000, "Member 'StatItemLarge_C_ValueChanged::Delta' has a wrong offset!");
 
 // Function StatItemLarge.StatItemLarge_C.PreConstruct
@@ -57,19 +57,19 @@ static_assert(sizeof(StatItemLarge_C_PreConstruct) == 0x000001, "Wrong size on S
 static_assert(offsetof(StatItemLarge_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'StatItemLarge_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function StatItemLarge.StatItemLarge_C.GetLocalPlayerId
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct StatItemLarge_C_GetLocalPlayerId final
 {
 public:
-	struct FUniqueNetIdRepl                       LocalPlayerNetId;                                  // 0x0000(0x11821780)(Parm, OutParm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       LocalPlayerNetId;                                  // 0x0000(0x0018)(Parm, OutParm, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerState*                       K2Node_DynamicCast_AsFort_Player_State;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0030(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0030(0x0018)(HasGetValueTypeHash)
 };
-static_assert(alignof(StatItemLarge_C_GetLocalPlayerId) == 0x11821780, "Wrong alignment on StatItemLarge_C_GetLocalPlayerId");
-static_assert(sizeof(StatItemLarge_C_GetLocalPlayerId) == 0x11821780, "Wrong size on StatItemLarge_C_GetLocalPlayerId");
+static_assert(alignof(StatItemLarge_C_GetLocalPlayerId) == 0x000008, "Wrong alignment on StatItemLarge_C_GetLocalPlayerId");
+static_assert(sizeof(StatItemLarge_C_GetLocalPlayerId) == 0x000048, "Wrong size on StatItemLarge_C_GetLocalPlayerId");
 static_assert(offsetof(StatItemLarge_C_GetLocalPlayerId, LocalPlayerNetId) == 0x000000, "Member 'StatItemLarge_C_GetLocalPlayerId::LocalPlayerNetId' has a wrong offset!");
 static_assert(offsetof(StatItemLarge_C_GetLocalPlayerId, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'StatItemLarge_C_GetLocalPlayerId::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(StatItemLarge_C_GetLocalPlayerId, K2Node_DynamicCast_AsFort_Player_State) == 0x000020, "Member 'StatItemLarge_C_GetLocalPlayerId::K2Node_DynamicCast_AsFort_Player_State' has a wrong offset!");
@@ -77,7 +77,7 @@ static_assert(offsetof(StatItemLarge_C_GetLocalPlayerId, K2Node_DynamicCast_bSuc
 static_assert(offsetof(StatItemLarge_C_GetLocalPlayerId, CallFunc_GetUniqueID_ReturnValue) == 0x000030, "Member 'StatItemLarge_C_GetLocalPlayerId::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
 
 // Function StatItemLarge.StatItemLarge_C.UpdateDisplayData
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct StatItemLarge_C_UpdateDisplayData final
 {
 public:
@@ -88,10 +88,10 @@ public:
 	class FText                                   DisplayName;                                       // 0x0008(0x0018)(Edit)
 	float                                         CurrentValue;                                      // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0028(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0028(0x0070)()
 };
-static_assert(alignof(StatItemLarge_C_UpdateDisplayData) == 0x11821C00, "Wrong alignment on StatItemLarge_C_UpdateDisplayData");
-static_assert(sizeof(StatItemLarge_C_UpdateDisplayData) == 0x11821C00, "Wrong size on StatItemLarge_C_UpdateDisplayData");
+static_assert(alignof(StatItemLarge_C_UpdateDisplayData) == 0x000008, "Wrong alignment on StatItemLarge_C_UpdateDisplayData");
+static_assert(sizeof(StatItemLarge_C_UpdateDisplayData) == 0x000098, "Wrong size on StatItemLarge_C_UpdateDisplayData");
 static_assert(offsetof(StatItemLarge_C_UpdateDisplayData, DisplayState) == 0x000000, "Member 'StatItemLarge_C_UpdateDisplayData::DisplayState' has a wrong offset!");
 static_assert(offsetof(StatItemLarge_C_UpdateDisplayData, BuffState) == 0x000001, "Member 'StatItemLarge_C_UpdateDisplayData::BuffState' has a wrong offset!");
 static_assert(offsetof(StatItemLarge_C_UpdateDisplayData, NewValue) == 0x000004, "Member 'StatItemLarge_C_UpdateDisplayData::NewValue' has a wrong offset!");
@@ -100,7 +100,7 @@ static_assert(offsetof(StatItemLarge_C_UpdateDisplayData, CurrentValue) == 0x000
 static_assert(offsetof(StatItemLarge_C_UpdateDisplayData, CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute) == 0x000028, "Member 'StatItemLarge_C_UpdateDisplayData::CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute' has a wrong offset!");
 
 // Function StatItemLarge.StatItemLarge_C.UpdateValue
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct StatItemLarge_C_UpdateValue final
 {
 public:
@@ -109,8 +109,8 @@ public:
 	EFortStatValueDisplayType                     DisplayType;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortBuffState                                BuffState;                                         // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           BuffColor;                                         // 0x000C(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           BaseColor;                                         // 0x001C(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           BuffColor;                                         // 0x000C(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           BaseColor;                                         // 0x001C(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortStatValueDisplayType                     LocalDisplayType;                                  // 0x002C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortBuffState                                LocalBuffState;                                    // 0x002D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -118,15 +118,16 @@ public:
 	float                                         LocalNewValue;                                     // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuffState                                Temp_byte_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x004C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x005C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0070(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x003C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x004C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x005C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0070(0x0028)()
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StatItemLarge_C_UpdateValue) == 0x322CBBB8, "Wrong alignment on StatItemLarge_C_UpdateValue");
-static_assert(sizeof(StatItemLarge_C_UpdateValue) == 0x322CBBB8, "Wrong size on StatItemLarge_C_UpdateValue");
+static_assert(alignof(StatItemLarge_C_UpdateValue) == 0x000008, "Wrong alignment on StatItemLarge_C_UpdateValue");
+static_assert(sizeof(StatItemLarge_C_UpdateValue) == 0x0000A0, "Wrong size on StatItemLarge_C_UpdateValue");
 static_assert(offsetof(StatItemLarge_C_UpdateValue, NewValue) == 0x000000, "Member 'StatItemLarge_C_UpdateValue::NewValue' has a wrong offset!");
 static_assert(offsetof(StatItemLarge_C_UpdateValue, CurrentValue) == 0x000004, "Member 'StatItemLarge_C_UpdateValue::CurrentValue' has a wrong offset!");
 static_assert(offsetof(StatItemLarge_C_UpdateValue, DisplayType) == 0x000008, "Member 'StatItemLarge_C_UpdateValue::DisplayType' has a wrong offset!");

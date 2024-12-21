@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadSlotItemDetailsHostPanel.SquadSlotItemDetailsHostPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x02E8 - 0x02B8)
 class USquadSlotItemDetailsHostPanel_C final : public UFortSquadSlotItemDetailsHostPanel
 {
 public:
@@ -38,8 +38,8 @@ public:
 		return GetDefaultObjImpl<USquadSlotItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(USquadSlotItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong alignment on USquadSlotItemDetailsHostPanel_C");
-static_assert(sizeof(USquadSlotItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong size on USquadSlotItemDetailsHostPanel_C");
+static_assert(alignof(USquadSlotItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on USquadSlotItemDetailsHostPanel_C");
+static_assert(sizeof(USquadSlotItemDetailsHostPanel_C) == 0x0002E8, "Wrong size on USquadSlotItemDetailsHostPanel_C");
 static_assert(offsetof(USquadSlotItemDetailsHostPanel_C, HeaderWidget) == 0x0002B8, "Member 'USquadSlotItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
 static_assert(offsetof(USquadSlotItemDetailsHostPanel_C, ItemAlterationsListDetailWidget) == 0x0002C0, "Member 'USquadSlotItemDetailsHostPanel_C::ItemAlterationsListDetailWidget' has a wrong offset!");
 static_assert(offsetof(USquadSlotItemDetailsHostPanel_C, ItemCalledOutAttributesDetailWidget) == 0x0002C8, "Member 'USquadSlotItemDetailsHostPanel_C::ItemCalledOutAttributesDetailWidget' has a wrong offset!");

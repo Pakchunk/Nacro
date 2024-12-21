@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaLocalPlayerHitPointInfo.AthenaLocalPlayerHitPointInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0280 - 0x0260)
 class UAthenaLocalPlayerHitPointInfo_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UFortBangWrapper*                       _Bang_Wrapper___PlayerInfo_;                       // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaHitPointBar_C*                   HitPointBarHealth;                                 // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaHitPointBar_C*                   HitPointBarShield;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UAthenaLocalPlayerHitPointInfo_C>();
 	}
 };
-static_assert(alignof(UAthenaLocalPlayerHitPointInfo_C) == 0x322CBBB8, "Wrong alignment on UAthenaLocalPlayerHitPointInfo_C");
-static_assert(sizeof(UAthenaLocalPlayerHitPointInfo_C) == 0x322CBBB8, "Wrong size on UAthenaLocalPlayerHitPointInfo_C");
+static_assert(alignof(UAthenaLocalPlayerHitPointInfo_C) == 0x000008, "Wrong alignment on UAthenaLocalPlayerHitPointInfo_C");
+static_assert(sizeof(UAthenaLocalPlayerHitPointInfo_C) == 0x000280, "Wrong size on UAthenaLocalPlayerHitPointInfo_C");
 static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, UberGraphFrame) == 0x000260, "Member 'UAthenaLocalPlayerHitPointInfo_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, _Bang_Wrapper___PlayerInfo_) == 0x000268, "Member 'UAthenaLocalPlayerHitPointInfo_C::_Bang_Wrapper___PlayerInfo_' has a wrong offset!");
 static_assert(offsetof(UAthenaLocalPlayerHitPointInfo_C, HitPointBarHealth) == 0x000270, "Member 'UAthenaLocalPlayerHitPointInfo_C::HitPointBarHealth' has a wrong offset!");

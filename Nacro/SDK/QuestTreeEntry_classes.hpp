@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestTreeEntry.QuestTreeEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B0 (0x0960 - 0x08B0)
 class UQuestTreeEntry_C final : public UFortQuestTreeItemWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
 	class UBP_QuestExpiresWidget_C*               BP_QuestExpiresWidget;                             // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        ExpansionIndicator;                                // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageComplete;                                     // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 	bool                                          IsPinned_;                                         // 0x0930(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_931[0x7];                                      // 0x0931(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortQuestCategory*                     CurrentQuestCategory;                              // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           TwitchIconColor;                                   // 0x0940(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DefaultIconColor;                                  // 0x0950(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           TwitchIconColor;                                   // 0x0940(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DefaultIconColor;                                  // 0x0950(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_QuestTreeEntry(int32 EntryPoint);
@@ -80,8 +80,8 @@ public:
 		return GetDefaultObjImpl<UQuestTreeEntry_C>();
 	}
 };
-static_assert(alignof(UQuestTreeEntry_C) == 0x322CBBB8, "Wrong alignment on UQuestTreeEntry_C");
-static_assert(sizeof(UQuestTreeEntry_C) == 0x322CBBB8, "Wrong size on UQuestTreeEntry_C");
+static_assert(alignof(UQuestTreeEntry_C) == 0x000008, "Wrong alignment on UQuestTreeEntry_C");
+static_assert(sizeof(UQuestTreeEntry_C) == 0x000960, "Wrong size on UQuestTreeEntry_C");
 static_assert(offsetof(UQuestTreeEntry_C, UberGraphFrame) == 0x0008B0, "Member 'UQuestTreeEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestTreeEntry_C, BP_QuestExpiresWidget) == 0x0008B8, "Member 'UQuestTreeEntry_C::BP_QuestExpiresWidget' has a wrong offset!");
 static_assert(offsetof(UQuestTreeEntry_C, ExpansionIndicator) == 0x0008C0, "Member 'UQuestTreeEntry_C::ExpansionIndicator' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function QuickbarBase.QuickbarBase_C.ExecuteUbergraph_QuickbarBase
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0230 (0x0230 - 0x0000)
 struct QuickbarBase_C_ExecuteUbergraph_QuickbarBase final
 {
 public:
@@ -65,7 +65,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue4;                  // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPlayerDeathReport                 K2Node_CustomEvent_DeathReport;                    // 0x00E0(0x11821C00)(ConstParm)
+	struct FFortPlayerDeathReport                 K2Node_CustomEvent_DeathReport;                    // 0x00E0(0x0050)(ConstParm)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0130(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue5;                  // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(struct FFortPlayerDeathReport& DeathReport)> K2Node_CreateDelegate_OutputDelegate5;             // 0x0148(0x0010)(ZeroConstructor, NoDestructor)
@@ -84,8 +84,8 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate18;            // 0x0218(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue6;                  // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase) == 0x11821780, "Wrong alignment on QuickbarBase_C_ExecuteUbergraph_QuickbarBase");
-static_assert(sizeof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase) == 0x11821780, "Wrong size on QuickbarBase_C_ExecuteUbergraph_QuickbarBase");
+static_assert(alignof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase) == 0x000008, "Wrong alignment on QuickbarBase_C_ExecuteUbergraph_QuickbarBase");
+static_assert(sizeof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase) == 0x000230, "Wrong size on QuickbarBase_C_ExecuteUbergraph_QuickbarBase");
 static_assert(offsetof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase, EntryPoint) == 0x000000, "Member 'QuickbarBase_C_ExecuteUbergraph_QuickbarBase::EntryPoint' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase, K2Node_CustomEvent_ItemsAdded) == 0x000008, "Member 'QuickbarBase_C_ExecuteUbergraph_QuickbarBase::K2Node_CustomEvent_ItemsAdded' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase, K2Node_CustomEvent_ItemsRemoved) == 0x000018, "Member 'QuickbarBase_C_ExecuteUbergraph_QuickbarBase::K2Node_CustomEvent_ItemsRemoved' has a wrong offset!");
@@ -141,14 +141,14 @@ static_assert(offsetof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase, K2Node_Crea
 static_assert(offsetof(QuickbarBase_C_ExecuteUbergraph_QuickbarBase, CallFunc_GetContext_ReturnValue6) == 0x000228, "Member 'QuickbarBase_C_ExecuteUbergraph_QuickbarBase::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
 
 // Function QuickbarBase.QuickbarBase_C.OnLocalPlayerDied
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct QuickbarBase_C_OnLocalPlayerDied final
 {
 public:
-	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(QuickbarBase_C_OnLocalPlayerDied) == 0x11821780, "Wrong alignment on QuickbarBase_C_OnLocalPlayerDied");
-static_assert(sizeof(QuickbarBase_C_OnLocalPlayerDied) == 0x11821780, "Wrong size on QuickbarBase_C_OnLocalPlayerDied");
+static_assert(alignof(QuickbarBase_C_OnLocalPlayerDied) == 0x000008, "Wrong alignment on QuickbarBase_C_OnLocalPlayerDied");
+static_assert(sizeof(QuickbarBase_C_OnLocalPlayerDied) == 0x000050, "Wrong size on QuickbarBase_C_OnLocalPlayerDied");
 static_assert(offsetof(QuickbarBase_C_OnLocalPlayerDied, DeathReport) == 0x000000, "Member 'QuickbarBase_C_OnLocalPlayerDied::DeathReport' has a wrong offset!");
 
 // Function QuickbarBase.QuickbarBase_C.OnQuickbarSecondarySlotFocusChanged_Event_0
@@ -188,35 +188,35 @@ static_assert(sizeof(QuickbarBase_C_OnQuickbarContentsChanged) == 0x000001, "Wro
 static_assert(offsetof(QuickbarBase_C_OnQuickbarContentsChanged, QuickbarIndex) == 0x000000, "Member 'QuickbarBase_C_OnQuickbarContentsChanged::QuickbarIndex' has a wrong offset!");
 
 // Function QuickbarBase.QuickbarBase_C.OnQuickbarSlotFocusChanged
-// 0x0072 (0x0072 - 0x0000)
-struct alignas(0x72) QuickbarBase_C_OnQuickbarSlotFocusChanged final
+// 0x0008 (0x0008 - 0x0000)
+struct QuickbarBase_C_OnQuickbarSlotFocusChanged final
 {
 public:
 	EFortQuickBars                                QuickbarIndex;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Slot_0;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarBase_C_OnQuickbarSlotFocusChanged) == 0x000072, "Wrong alignment on QuickbarBase_C_OnQuickbarSlotFocusChanged");
-static_assert(sizeof(QuickbarBase_C_OnQuickbarSlotFocusChanged) == 0x000072, "Wrong size on QuickbarBase_C_OnQuickbarSlotFocusChanged");
+static_assert(alignof(QuickbarBase_C_OnQuickbarSlotFocusChanged) == 0x000004, "Wrong alignment on QuickbarBase_C_OnQuickbarSlotFocusChanged");
+static_assert(sizeof(QuickbarBase_C_OnQuickbarSlotFocusChanged) == 0x000008, "Wrong size on QuickbarBase_C_OnQuickbarSlotFocusChanged");
 static_assert(offsetof(QuickbarBase_C_OnQuickbarSlotFocusChanged, QuickbarIndex) == 0x000000, "Member 'QuickbarBase_C_OnQuickbarSlotFocusChanged::QuickbarIndex' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_OnQuickbarSlotFocusChanged, Slot_0) == 0x000004, "Member 'QuickbarBase_C_OnQuickbarSlotFocusChanged::Slot_0' has a wrong offset!");
 
 // Function QuickbarBase.QuickbarBase_C.OnWorldItemListChanged
-// 0x0250 (0x0250 - 0x0000)
-struct alignas(0x250) QuickbarBase_C_OnWorldItemListChanged final
+// 0x0020 (0x0020 - 0x0000)
+struct QuickbarBase_C_OnWorldItemListChanged final
 {
 public:
 	TArray<class UFortWorldItem*>                 ItemsAdded;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 ItemsRemoved;                                      // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(QuickbarBase_C_OnWorldItemListChanged) == 0x000250, "Wrong alignment on QuickbarBase_C_OnWorldItemListChanged");
-static_assert(sizeof(QuickbarBase_C_OnWorldItemListChanged) == 0x000250, "Wrong size on QuickbarBase_C_OnWorldItemListChanged");
+static_assert(alignof(QuickbarBase_C_OnWorldItemListChanged) == 0x000008, "Wrong alignment on QuickbarBase_C_OnWorldItemListChanged");
+static_assert(sizeof(QuickbarBase_C_OnWorldItemListChanged) == 0x000020, "Wrong size on QuickbarBase_C_OnWorldItemListChanged");
 static_assert(offsetof(QuickbarBase_C_OnWorldItemListChanged, ItemsAdded) == 0x000000, "Member 'QuickbarBase_C_OnWorldItemListChanged::ItemsAdded' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_OnWorldItemListChanged, ItemsRemoved) == 0x000010, "Member 'QuickbarBase_C_OnWorldItemListChanged::ItemsRemoved' has a wrong offset!");
 
 // Function QuickbarBase.QuickbarBase_C.Is Valid Slot
-// 0x750042 (0x750042 - 0x0000)
-struct alignas(0x750042) QuickbarBase_C_Is_Valid_Slot final
+// 0x0030 (0x0030 - 0x0000)
+struct QuickbarBase_C_Is_Valid_Slot final
 {
 public:
 	int32                                         Slot_0;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -236,8 +236,8 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarBase_C_Is_Valid_Slot) == 0x750042, "Wrong alignment on QuickbarBase_C_Is_Valid_Slot");
-static_assert(sizeof(QuickbarBase_C_Is_Valid_Slot) == 0x750042, "Wrong size on QuickbarBase_C_Is_Valid_Slot");
+static_assert(alignof(QuickbarBase_C_Is_Valid_Slot) == 0x000008, "Wrong alignment on QuickbarBase_C_Is_Valid_Slot");
+static_assert(sizeof(QuickbarBase_C_Is_Valid_Slot) == 0x000030, "Wrong size on QuickbarBase_C_Is_Valid_Slot");
 static_assert(offsetof(QuickbarBase_C_Is_Valid_Slot, Slot_0) == 0x000000, "Member 'QuickbarBase_C_Is_Valid_Slot::Slot_0' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_Is_Valid_Slot, Is_Valid) == 0x000004, "Member 'QuickbarBase_C_Is_Valid_Slot::Is_Valid' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_Is_Valid_Slot, Array_Index) == 0x000008, "Member 'QuickbarBase_C_Is_Valid_Slot::Array_Index' has a wrong offset!");
@@ -253,8 +253,8 @@ static_assert(offsetof(QuickbarBase_C_Is_Valid_Slot, CallFunc_EqualEqual_IntInt_
 static_assert(offsetof(QuickbarBase_C_Is_Valid_Slot, CallFunc_BooleanAND_ReturnValue) == 0x00002E, "Member 'QuickbarBase_C_Is_Valid_Slot::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function QuickbarBase.QuickbarBase_C.Maximize
-// 0x003D (0x003D - 0x0000)
-struct alignas(0x3D) QuickbarBase_C_Maximize final
+// 0x0040 (0x0040 - 0x0000)
+struct QuickbarBase_C_Maximize final
 {
 public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -273,8 +273,8 @@ public:
 	class UQuickbarSlot_C*                        CallFunc_Array_Get_Item2;                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarBase_C_Maximize) == 0x00003D, "Wrong alignment on QuickbarBase_C_Maximize");
-static_assert(sizeof(QuickbarBase_C_Maximize) == 0x00003D, "Wrong size on QuickbarBase_C_Maximize");
+static_assert(alignof(QuickbarBase_C_Maximize) == 0x000008, "Wrong alignment on QuickbarBase_C_Maximize");
+static_assert(sizeof(QuickbarBase_C_Maximize) == 0x000040, "Wrong size on QuickbarBase_C_Maximize");
 static_assert(offsetof(QuickbarBase_C_Maximize, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'QuickbarBase_C_Maximize::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_Maximize, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'QuickbarBase_C_Maximize::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_Maximize, Temp_int_Array_Index_Variable) == 0x000008, "Member 'QuickbarBase_C_Maximize::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -324,8 +324,8 @@ static_assert(offsetof(QuickbarBase_C_Minimize, CallFunc_Array_Length_ReturnValu
 static_assert(offsetof(QuickbarBase_C_Minimize, CallFunc_Less_IntInt_ReturnValue2) == 0x000034, "Member 'QuickbarBase_C_Minimize::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function QuickbarBase.QuickbarBase_C.HandleKeybindsChanged
-// 0x32005F (0x32005F - 0x0000)
-struct alignas(0x32005F) QuickbarBase_C_HandleKeybindsChanged final
+// 0x0020 (0x0020 - 0x0000)
+struct QuickbarBase_C_HandleKeybindsChanged final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -335,8 +335,8 @@ public:
 	class UQuickbarSlot_C*                        CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarBase_C_HandleKeybindsChanged) == 0x32005F, "Wrong alignment on QuickbarBase_C_HandleKeybindsChanged");
-static_assert(sizeof(QuickbarBase_C_HandleKeybindsChanged) == 0x32005F, "Wrong size on QuickbarBase_C_HandleKeybindsChanged");
+static_assert(alignof(QuickbarBase_C_HandleKeybindsChanged) == 0x000008, "Wrong alignment on QuickbarBase_C_HandleKeybindsChanged");
+static_assert(sizeof(QuickbarBase_C_HandleKeybindsChanged) == 0x000020, "Wrong size on QuickbarBase_C_HandleKeybindsChanged");
 static_assert(offsetof(QuickbarBase_C_HandleKeybindsChanged, Temp_int_Array_Index_Variable) == 0x000000, "Member 'QuickbarBase_C_HandleKeybindsChanged::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_HandleKeybindsChanged, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'QuickbarBase_C_HandleKeybindsChanged::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(QuickbarBase_C_HandleKeybindsChanged, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'QuickbarBase_C_HandleKeybindsChanged::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");

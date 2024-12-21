@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HUD_TeamInfo.HUD_TeamInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x02B0 - 0x0260)
 class UHUD_TeamInfo_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           _Vertical_Box__Team_Members;                       // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderFrame;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UHUD_TeamInfo_C>();
 	}
 };
-static_assert(alignof(UHUD_TeamInfo_C) == 0x322CBBB8, "Wrong alignment on UHUD_TeamInfo_C");
-static_assert(sizeof(UHUD_TeamInfo_C) == 0x322CBBB8, "Wrong size on UHUD_TeamInfo_C");
+static_assert(alignof(UHUD_TeamInfo_C) == 0x000008, "Wrong alignment on UHUD_TeamInfo_C");
+static_assert(sizeof(UHUD_TeamInfo_C) == 0x0002B0, "Wrong size on UHUD_TeamInfo_C");
 static_assert(offsetof(UHUD_TeamInfo_C, UberGraphFrame) == 0x000260, "Member 'UHUD_TeamInfo_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHUD_TeamInfo_C, _Vertical_Box__Team_Members) == 0x000268, "Member 'UHUD_TeamInfo_C::_Vertical_Box__Team_Members' has a wrong offset!");
 static_assert(offsetof(UHUD_TeamInfo_C, BorderFrame) == 0x000270, "Member 'UHUD_TeamInfo_C::BorderFrame' has a wrong offset!");

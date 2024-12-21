@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PrimaryHeroActiveAbilitiesListDetailWidget.PrimaryHeroActiveAbilitiesListDetailWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x02B0 - 0x0298)
 class UPrimaryHeroActiveAbilitiesListDetailWidget_C final : public UFortSquadSlotItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
 	class UPerksList_C*                           PerksList;                                         // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          EnableMouseTooltips;                               // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          DisplayOutsideOfHeroSquad;                         // 0x02A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UPrimaryHeroActiveAbilitiesListDetailWidget_C>();
 	}
 };
-static_assert(alignof(UPrimaryHeroActiveAbilitiesListDetailWidget_C) == 0x322CBBB8, "Wrong alignment on UPrimaryHeroActiveAbilitiesListDetailWidget_C");
-static_assert(sizeof(UPrimaryHeroActiveAbilitiesListDetailWidget_C) == 0x322CBBB8, "Wrong size on UPrimaryHeroActiveAbilitiesListDetailWidget_C");
+static_assert(alignof(UPrimaryHeroActiveAbilitiesListDetailWidget_C) == 0x000008, "Wrong alignment on UPrimaryHeroActiveAbilitiesListDetailWidget_C");
+static_assert(sizeof(UPrimaryHeroActiveAbilitiesListDetailWidget_C) == 0x0002B0, "Wrong size on UPrimaryHeroActiveAbilitiesListDetailWidget_C");
 static_assert(offsetof(UPrimaryHeroActiveAbilitiesListDetailWidget_C, UberGraphFrame) == 0x000298, "Member 'UPrimaryHeroActiveAbilitiesListDetailWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPrimaryHeroActiveAbilitiesListDetailWidget_C, PerksList) == 0x0002A0, "Member 'UPrimaryHeroActiveAbilitiesListDetailWidget_C::PerksList' has a wrong offset!");
 static_assert(offsetof(UPrimaryHeroActiveAbilitiesListDetailWidget_C, EnableMouseTooltips) == 0x0002A8, "Member 'UPrimaryHeroActiveAbilitiesListDetailWidget_C::EnableMouseTooltips' has a wrong offset!");

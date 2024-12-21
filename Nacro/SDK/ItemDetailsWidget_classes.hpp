@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemDetailsWidget.ItemDetailsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0298 - 0x0260)
 class UItemDetailsWidget_C final : public UFortItemDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UWidgetSwitcher*                        ContentSwitcher;                                   // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         DescriptionBox;                                    // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNamedSlot*                             IndicatorIconsSlot;                                // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UItemDetailsWidget_C>();
 	}
 };
-static_assert(alignof(UItemDetailsWidget_C) == 0x322CBBB8, "Wrong alignment on UItemDetailsWidget_C");
-static_assert(sizeof(UItemDetailsWidget_C) == 0x322CBBB8, "Wrong size on UItemDetailsWidget_C");
+static_assert(alignof(UItemDetailsWidget_C) == 0x000008, "Wrong alignment on UItemDetailsWidget_C");
+static_assert(sizeof(UItemDetailsWidget_C) == 0x000298, "Wrong size on UItemDetailsWidget_C");
 static_assert(offsetof(UItemDetailsWidget_C, UberGraphFrame) == 0x000260, "Member 'UItemDetailsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemDetailsWidget_C, ContentSwitcher) == 0x000268, "Member 'UItemDetailsWidget_C::ContentSwitcher' has a wrong offset!");
 static_assert(offsetof(UItemDetailsWidget_C, DescriptionBox) == 0x000270, "Member 'UItemDetailsWidget_C::DescriptionBox' has a wrong offset!");

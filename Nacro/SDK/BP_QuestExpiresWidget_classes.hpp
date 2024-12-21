@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_QuestExpiresWidget.BP_QuestExpiresWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0268 - 0x0248)
 class UBP_QuestExpiresWidget_C final : public UFortQuestExpiresWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       QuestExpires;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UClass*                                 Style;                                             // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bBreifText;                                        // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UBP_QuestExpiresWidget_C>();
 	}
 };
-static_assert(alignof(UBP_QuestExpiresWidget_C) == 0x322CBBB8, "Wrong alignment on UBP_QuestExpiresWidget_C");
-static_assert(sizeof(UBP_QuestExpiresWidget_C) == 0x322CBBB8, "Wrong size on UBP_QuestExpiresWidget_C");
+static_assert(alignof(UBP_QuestExpiresWidget_C) == 0x000008, "Wrong alignment on UBP_QuestExpiresWidget_C");
+static_assert(sizeof(UBP_QuestExpiresWidget_C) == 0x000268, "Wrong size on UBP_QuestExpiresWidget_C");
 static_assert(offsetof(UBP_QuestExpiresWidget_C, UberGraphFrame) == 0x000248, "Member 'UBP_QuestExpiresWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_QuestExpiresWidget_C, QuestExpires) == 0x000250, "Member 'UBP_QuestExpiresWidget_C::QuestExpires' has a wrong offset!");
 static_assert(offsetof(UBP_QuestExpiresWidget_C, Style) == 0x000258, "Member 'UBP_QuestExpiresWidget_C::Style' has a wrong offset!");

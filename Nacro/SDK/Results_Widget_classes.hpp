@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_Widget.Results_Widget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0140 (0x05E0 - 0x04A0)
 class UResults_Widget_C final : public UFortResultsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_TeleportPadIntro;                             // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_CommanderXPOutro;                             // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_CommanderXPIntro;                             // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -64,7 +64,7 @@ public:
 	class USoundBase*                             VictoryStart;                                      // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             TeamScoreWhoosh;                                   // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             CommanderXPWhoosh;                                 // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    InputSkip;                                         // 0x05C8(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InputSkip;                                         // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bVideoSkipped;                                     // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5D9[0x3];                                      // 0x05D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TPAnalyticsTimeStart;                              // 0x05DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -120,8 +120,8 @@ public:
 		return GetDefaultObjImpl<UResults_Widget_C>();
 	}
 };
-static_assert(alignof(UResults_Widget_C) == 0x322CBBB8, "Wrong alignment on UResults_Widget_C");
-static_assert(sizeof(UResults_Widget_C) == 0x322CBBB8, "Wrong size on UResults_Widget_C");
+static_assert(alignof(UResults_Widget_C) == 0x000008, "Wrong alignment on UResults_Widget_C");
+static_assert(sizeof(UResults_Widget_C) == 0x0005E0, "Wrong size on UResults_Widget_C");
 static_assert(offsetof(UResults_Widget_C, UberGraphFrame) == 0x0004A0, "Member 'UResults_Widget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_Widget_C, Anim_TeleportPadIntro) == 0x0004A8, "Member 'UResults_Widget_C::Anim_TeleportPadIntro' has a wrong offset!");
 static_assert(offsetof(UResults_Widget_C, Anim_CommanderXPOutro) == 0x0004B0, "Member 'UResults_Widget_C::Anim_CommanderXPOutro' has a wrong offset!");

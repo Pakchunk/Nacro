@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookSectionRewardWidget.CollectionBookSectionRewardWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x02C0 - 0x02A0)
 class UCollectionBookSectionRewardWidget_C final : public UFortCollectionBookSectionCompletionRewardWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 CheckmarkImage;                                    // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           RewardPendingBox;                                  // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  RewardStatusSwitcher;                              // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookSectionRewardWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookSectionRewardWidget_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookSectionRewardWidget_C");
-static_assert(sizeof(UCollectionBookSectionRewardWidget_C) == 0x322CBBB8, "Wrong size on UCollectionBookSectionRewardWidget_C");
+static_assert(alignof(UCollectionBookSectionRewardWidget_C) == 0x000008, "Wrong alignment on UCollectionBookSectionRewardWidget_C");
+static_assert(sizeof(UCollectionBookSectionRewardWidget_C) == 0x0002C0, "Wrong size on UCollectionBookSectionRewardWidget_C");
 static_assert(offsetof(UCollectionBookSectionRewardWidget_C, UberGraphFrame) == 0x0002A0, "Member 'UCollectionBookSectionRewardWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookSectionRewardWidget_C, CheckmarkImage) == 0x0002A8, "Member 'UCollectionBookSectionRewardWidget_C::CheckmarkImage' has a wrong offset!");
 static_assert(offsetof(UCollectionBookSectionRewardWidget_C, RewardPendingBox) == 0x0002B0, "Member 'UCollectionBookSectionRewardWidget_C::RewardPendingBox' has a wrong offset!");

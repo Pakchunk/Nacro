@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-Bottom-Box-Rounded-DkBlue.Border-Bottom-Box-Rounded-DkBlue_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C>();
 	}
 };
-static_assert(alignof(UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C) == 0x11827900, "Wrong alignment on UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C");
-static_assert(sizeof(UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C) == 0x11827900, "Wrong size on UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C");
+static_assert(alignof(UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C) == 0x000008, "Wrong alignment on UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C");
+static_assert(sizeof(UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C) == 0x0000B8, "Wrong size on UBorderMinusBottomMinusBoxMinusRoundedMinusDkBlue_C");
 
 }
 

@@ -20,28 +20,28 @@ namespace SDK::Params
 {
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.OnAddFriendClicked__DelegateSignature
-// 0x7FFFFFFF (0x7FFFFFFF - 0x0000)
-struct alignas(0x7FFFFFFF) Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature final
+// 0x0028 (0x0028 - 0x0000)
+struct Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature) == 0x7FFFFFFF, "Wrong alignment on Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature) == 0x7FFFFFFF, "Wrong size on Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.OnUpVoteClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
 
@@ -57,25 +57,25 @@ static_assert(sizeof(Results_TeleportPadPlayer_C_OnTeleportPadIntroFinished__Del
 static_assert(offsetof(Results_TeleportPadPlayer_C_OnTeleportPadIntroFinished__DelegateSignature, TeleportPadPlayer) == 0x000000, "Member 'Results_TeleportPadPlayer_C_OnTeleportPadIntroFinished__DelegateSignature::TeleportPadPlayer' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.ExecuteUbergraph_Results_TeleportPadPlayer
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
 	bool                                          CallFunc_CanInviteParty_bCanInvitePlayer;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanFriend_bCanFriendPlayer;               // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0040(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0040(0x0090)()
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00D8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00D8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer) == 0x322CBBB8, "Wrong alignment on Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer");
-static_assert(sizeof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer) == 0x322CBBB8, "Wrong size on Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer");
+static_assert(alignof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer");
+static_assert(sizeof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer) == 0x0000F0, "Wrong size on Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer");
 static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, EntryPoint) == 0x000000, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, CallFunc_CanInviteParty_bCanInvitePlayer) == 0x000030, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::CallFunc_CanInviteParty_bCanInvitePlayer' has a wrong offset!");
@@ -121,13 +121,13 @@ static_assert(sizeof(Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_Comp
 static_assert(offsetof(Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Initialize
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct Results_TeleportPadPlayer_C_Initialize final
 {
 public:
-	struct FUniqueNetIdRepl                       InUniqueId;                                        // 0x0000(0x11821780)(Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       InUniqueId;                                        // 0x0000(0x0018)(Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	class UFortUIScoreReport*                     InScoreReport;                                     // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       InConsoleUniqueId;                                 // 0x0020(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       InConsoleUniqueId;                                 // 0x0020(0x0018)(Parm, HasGetValueTypeHash)
 	int32                                         ScoreReportIndex;                                  // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0040(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -137,8 +137,8 @@ public:
 	class FText                                   CallFunc_GetPlayerName_ReturnValue;                // 0x0050(0x0018)()
 	int32                                         CallFunc_GetScoreReportIndex_ReturnValue;          // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_Initialize) == 0x11821780, "Wrong alignment on Results_TeleportPadPlayer_C_Initialize");
-static_assert(sizeof(Results_TeleportPadPlayer_C_Initialize) == 0x11821780, "Wrong size on Results_TeleportPadPlayer_C_Initialize");
+static_assert(alignof(Results_TeleportPadPlayer_C_Initialize) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_Initialize");
+static_assert(sizeof(Results_TeleportPadPlayer_C_Initialize) == 0x000070, "Wrong size on Results_TeleportPadPlayer_C_Initialize");
 static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, InUniqueId) == 0x000000, "Member 'Results_TeleportPadPlayer_C_Initialize::InUniqueId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, InScoreReport) == 0x000018, "Member 'Results_TeleportPadPlayer_C_Initialize::InScoreReport' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, InConsoleUniqueId) == 0x000020, "Member 'Results_TeleportPadPlayer_C_Initialize::InConsoleUniqueId' has a wrong offset!");

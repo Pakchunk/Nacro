@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.ExecuteUbergraph_LeaderboardRowWidget
-// 0x00F4 (0x00F4 - 0x0000)
-struct alignas(0xF4) LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget final
+// 0x0018 (0x0018 - 0x0000)
+struct LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,8 +24,8 @@ public:
 	class UFortLeaderboardRowProxyInstance*       K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget) == 0x0000F4, "Wrong alignment on LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget");
-static_assert(sizeof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget) == 0x0000F4, "Wrong size on LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget");
+static_assert(alignof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget) == 0x000008, "Wrong alignment on LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget");
+static_assert(sizeof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget) == 0x000018, "Wrong size on LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget");
 static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, EntryPoint) == 0x000000, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance) == 0x000008, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance' has a wrong offset!");
 static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");

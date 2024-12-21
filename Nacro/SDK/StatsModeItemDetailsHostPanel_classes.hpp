@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StatsModeItemDetailsHostPanel.StatsModeItemDetailsHostPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x02D0 - 0x02A8)
 class UStatsModeItemDetailsHostPanel_C final : public UFortItemManagementItemDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(Transient, DuplicateTransient)
 	class UItemDetailsHeader_C*                   HeaderWidget;                                      // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemAttributesDetailWidget_C*          ItemAttributesDetailWidget;                        // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 MarkedForMulchingBackgroundImage;                  // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UStatsModeItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UStatsModeItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong alignment on UStatsModeItemDetailsHostPanel_C");
-static_assert(sizeof(UStatsModeItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong size on UStatsModeItemDetailsHostPanel_C");
+static_assert(alignof(UStatsModeItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UStatsModeItemDetailsHostPanel_C");
+static_assert(sizeof(UStatsModeItemDetailsHostPanel_C) == 0x0002D0, "Wrong size on UStatsModeItemDetailsHostPanel_C");
 static_assert(offsetof(UStatsModeItemDetailsHostPanel_C, UberGraphFrame) == 0x0002A8, "Member 'UStatsModeItemDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStatsModeItemDetailsHostPanel_C, HeaderWidget) == 0x0002B0, "Member 'UStatsModeItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
 static_assert(offsetof(UStatsModeItemDetailsHostPanel_C, ItemAttributesDetailWidget) == 0x0002B8, "Member 'UStatsModeItemDetailsHostPanel_C::ItemAttributesDetailWidget' has a wrong offset!");

@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PowerToastWidget.PowerToastWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0098 (0x02F8 - 0x0260)
 class UPowerToastWidget_C final : public UFortPlayerTrackerBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       LookAtMe;                                          // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Outro;                                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Intro;                                             // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -41,7 +41,7 @@ public:
 	float                                         AnimationFinishedDelay;                            // 0x02D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2D4[0x4];                                      // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OnFinishedToast;                                   // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FTimerHandle                           AnimationDelayTimer;                               // 0x02E8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           AnimationDelayTimer;                               // 0x02E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          Show_Toast;                                        // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -72,8 +72,8 @@ public:
 		return GetDefaultObjImpl<UPowerToastWidget_C>();
 	}
 };
-static_assert(alignof(UPowerToastWidget_C) == 0x322CBBB8, "Wrong alignment on UPowerToastWidget_C");
-static_assert(sizeof(UPowerToastWidget_C) == 0x322CBBB8, "Wrong size on UPowerToastWidget_C");
+static_assert(alignof(UPowerToastWidget_C) == 0x000008, "Wrong alignment on UPowerToastWidget_C");
+static_assert(sizeof(UPowerToastWidget_C) == 0x0002F8, "Wrong size on UPowerToastWidget_C");
 static_assert(offsetof(UPowerToastWidget_C, UberGraphFrame) == 0x000260, "Member 'UPowerToastWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPowerToastWidget_C, LookAtMe) == 0x000268, "Member 'UPowerToastWidget_C::LookAtMe' has a wrong offset!");
 static_assert(offsetof(UPowerToastWidget_C, Outro) == 0x000270, "Member 'UPowerToastWidget_C::Outro' has a wrong offset!");

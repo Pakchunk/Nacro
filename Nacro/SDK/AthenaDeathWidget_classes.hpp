@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaDeathWidget.AthenaDeathWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00F8 (0x04D8 - 0x03E0)
 class UAthenaDeathWidget_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UAthenaGamePhaseWidget_C*               AthenaGamePhaseWidget;                             // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaKillerPortraitWidget_C*          AthenaKillerPortraitWidget;                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaKillFeedWidget_C*                AthenaKillFeedWidget;                              // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -79,8 +79,8 @@ public:
 		return GetDefaultObjImpl<UAthenaDeathWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaDeathWidget_C) == 0x322CBBB8, "Wrong alignment on UAthenaDeathWidget_C");
-static_assert(sizeof(UAthenaDeathWidget_C) == 0x322CBBB8, "Wrong size on UAthenaDeathWidget_C");
+static_assert(alignof(UAthenaDeathWidget_C) == 0x000008, "Wrong alignment on UAthenaDeathWidget_C");
+static_assert(sizeof(UAthenaDeathWidget_C) == 0x0004D8, "Wrong size on UAthenaDeathWidget_C");
 static_assert(offsetof(UAthenaDeathWidget_C, UberGraphFrame) == 0x0003E0, "Member 'UAthenaDeathWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaDeathWidget_C, AthenaGamePhaseWidget) == 0x0003E8, "Member 'UAthenaDeathWidget_C::AthenaGamePhaseWidget' has a wrong offset!");
 static_assert(offsetof(UAthenaDeathWidget_C, AthenaKillerPortraitWidget) == 0x0003F0, "Member 'UAthenaDeathWidget_C::AthenaKillerPortraitWidget' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ZoneDetails.ZoneDetails_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UZoneDetails_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UDayWidget_C*                           DayWidget;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortMultiSizeImage*                    MissionIcon;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       MissionName;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UZoneDetails_C>();
 	}
 };
-static_assert(alignof(UZoneDetails_C) == 0x322CBBB8, "Wrong alignment on UZoneDetails_C");
-static_assert(sizeof(UZoneDetails_C) == 0x322CBBB8, "Wrong size on UZoneDetails_C");
+static_assert(alignof(UZoneDetails_C) == 0x000008, "Wrong alignment on UZoneDetails_C");
+static_assert(sizeof(UZoneDetails_C) == 0x000260, "Wrong size on UZoneDetails_C");
 static_assert(offsetof(UZoneDetails_C, UberGraphFrame) == 0x000238, "Member 'UZoneDetails_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UZoneDetails_C, DayWidget) == 0x000240, "Member 'UZoneDetails_C::DayWidget' has a wrong offset!");
 static_assert(offsetof(UZoneDetails_C, MissionIcon) == 0x000248, "Member 'UZoneDetails_C::MissionIcon' has a wrong offset!");

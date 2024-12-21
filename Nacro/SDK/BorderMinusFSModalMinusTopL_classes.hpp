@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-FSModal-TopL.Border-FSModal-TopL_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusFSModalMinusTopL_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusFSModalMinusTopL_C>();
 	}
 };
-static_assert(alignof(UBorderMinusFSModalMinusTopL_C) == 0x11827900, "Wrong alignment on UBorderMinusFSModalMinusTopL_C");
-static_assert(sizeof(UBorderMinusFSModalMinusTopL_C) == 0x11827900, "Wrong size on UBorderMinusFSModalMinusTopL_C");
+static_assert(alignof(UBorderMinusFSModalMinusTopL_C) == 0x000008, "Wrong alignment on UBorderMinusFSModalMinusTopL_C");
+static_assert(sizeof(UBorderMinusFSModalMinusTopL_C) == 0x0000B8, "Wrong size on UBorderMinusFSModalMinusTopL_C");
 
 }
 

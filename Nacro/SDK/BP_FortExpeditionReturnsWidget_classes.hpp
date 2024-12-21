@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0290 - 0x0248)
 class UBP_FortExpeditionReturnsWidget_C final : public UFortExpeditionReturnsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
 	class UBP_FortMaterialProgressBar_C*          BP_FortMaterialProgressBar;                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ExpeditionReturns;                                 // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                ProgressPercentage;                                // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -55,8 +55,8 @@ public:
 		return GetDefaultObjImpl<UBP_FortExpeditionReturnsWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionReturnsWidget_C) == 0x322CBBB8, "Wrong alignment on UBP_FortExpeditionReturnsWidget_C");
-static_assert(sizeof(UBP_FortExpeditionReturnsWidget_C) == 0x322CBBB8, "Wrong size on UBP_FortExpeditionReturnsWidget_C");
+static_assert(alignof(UBP_FortExpeditionReturnsWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionReturnsWidget_C");
+static_assert(sizeof(UBP_FortExpeditionReturnsWidget_C) == 0x000290, "Wrong size on UBP_FortExpeditionReturnsWidget_C");
 static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, UberGraphFrame) == 0x000248, "Member 'UBP_FortExpeditionReturnsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, BP_FortMaterialProgressBar) == 0x000250, "Member 'UBP_FortExpeditionReturnsWidget_C::BP_FortMaterialProgressBar' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, ExpeditionReturns) == 0x000258, "Member 'UBP_FortExpeditionReturnsWidget_C::ExpeditionReturns' has a wrong offset!");

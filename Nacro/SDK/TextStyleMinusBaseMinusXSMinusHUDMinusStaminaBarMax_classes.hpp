@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Base-XS-HUD-StaminaBarMax.TextStyle-Base-XS-HUD-StaminaBarMax_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C final : public UTextStyleMinusBaseParent_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C");
-static_assert(sizeof(UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C");
+static_assert(alignof(UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C) == 0x000008, "Wrong alignment on UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C");
+static_assert(sizeof(UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C) == 0x0000D0, "Wrong size on UTextStyleMinusBaseMinusXSMinusHUDMinusStaminaBarMax_C");
 
 }
 

@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaRotator.AthenaRotator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0968 - 0x0930)
 class UAthenaRotator_C final : public UCommonRotator
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0930(0x11821D80)(Transient, DuplicateTransient)
-	struct FDataTableRowHandle                    Left_Triggering_Input_Action;                      // 0x0938(0x1182EB00)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                    Right_Triggering_Input_Action;                     // 0x0948(0x1182EB00)(Edit, BlueprintVisible, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0930(0x0008)(Transient, DuplicateTransient)
+	struct FDataTableRowHandle                    Left_Triggering_Input_Action;                      // 0x0938(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                    Right_Triggering_Input_Action;                     // 0x0948(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	class UClass*                                 TextStyle;                                         // 0x0958(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowGamepadButtonOnlyWhenFocused;                  // 0x0960(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -50,8 +50,8 @@ public:
 		return GetDefaultObjImpl<UAthenaRotator_C>();
 	}
 };
-static_assert(alignof(UAthenaRotator_C) == 0x322CBBB8, "Wrong alignment on UAthenaRotator_C");
-static_assert(sizeof(UAthenaRotator_C) == 0x322CBBB8, "Wrong size on UAthenaRotator_C");
+static_assert(alignof(UAthenaRotator_C) == 0x000008, "Wrong alignment on UAthenaRotator_C");
+static_assert(sizeof(UAthenaRotator_C) == 0x000968, "Wrong size on UAthenaRotator_C");
 static_assert(offsetof(UAthenaRotator_C, UberGraphFrame) == 0x000930, "Member 'UAthenaRotator_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaRotator_C, Left_Triggering_Input_Action) == 0x000938, "Member 'UAthenaRotator_C::Left_Triggering_Input_Action' has a wrong offset!");
 static_assert(offsetof(UAthenaRotator_C, Right_Triggering_Input_Action) == 0x000948, "Member 'UAthenaRotator_C::Right_Triggering_Input_Action' has a wrong offset!");

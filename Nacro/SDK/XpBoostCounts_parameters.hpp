@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function XpBoostCounts.XpBoostCounts_C.ExecuteUbergraph_XpBoostCounts
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts final
 {
 public:
@@ -26,11 +26,11 @@ public:
 	TDelegate<void(const struct FFortPublicAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 BoostAmount)>            K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0030(0x11821780)(NoDestructor)
+	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0030(0x0010)(NoDestructor)
 	int32                                         K2Node_CustomEvent_BoostAmount;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts) == 0x11821780, "Wrong alignment on XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts");
-static_assert(sizeof(XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts) == 0x11821780, "Wrong size on XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts");
+static_assert(alignof(XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts) == 0x000008, "Wrong alignment on XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts");
+static_assert(sizeof(XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts) == 0x000048, "Wrong size on XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts");
 static_assert(offsetof(XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts, EntryPoint) == 0x000000, "Member 'XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts::EntryPoint' has a wrong offset!");
 static_assert(offsetof(XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'XpBoostCounts_C_ExecuteUbergraph_XpBoostCounts::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -50,19 +50,19 @@ static_assert(sizeof(XpBoostCounts_C_Xp_Boost_Changed) == 0x000004, "Wrong size 
 static_assert(offsetof(XpBoostCounts_C_Xp_Boost_Changed, BoostAmount) == 0x000000, "Member 'XpBoostCounts_C_Xp_Boost_Changed::BoostAmount' has a wrong offset!");
 
 // Function XpBoostCounts.XpBoostCounts_C.HandleAccountUpdate
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct XpBoostCounts_C_HandleAccountUpdate final
 {
 public:
-	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x11821780)(Parm, NoDestructor)
+	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x0010)(Parm, NoDestructor)
 };
-static_assert(alignof(XpBoostCounts_C_HandleAccountUpdate) == 0x11821780, "Wrong alignment on XpBoostCounts_C_HandleAccountUpdate");
-static_assert(sizeof(XpBoostCounts_C_HandleAccountUpdate) == 0x11821780, "Wrong size on XpBoostCounts_C_HandleAccountUpdate");
+static_assert(alignof(XpBoostCounts_C_HandleAccountUpdate) == 0x000004, "Wrong alignment on XpBoostCounts_C_HandleAccountUpdate");
+static_assert(sizeof(XpBoostCounts_C_HandleAccountUpdate) == 0x000010, "Wrong size on XpBoostCounts_C_HandleAccountUpdate");
 static_assert(offsetof(XpBoostCounts_C_HandleAccountUpdate, NewInfo) == 0x000000, "Member 'XpBoostCounts_C_HandleAccountUpdate::NewInfo' has a wrong offset!");
 
 // Function XpBoostCounts.XpBoostCounts_C.Update Available Boosts
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) XpBoostCounts_C_Update_Available_Boosts final
+// 0x00B0 (0x00B0 - 0x0000)
+struct XpBoostCounts_C_Update_Available_Boosts final
 {
 public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0000(0x0018)()
@@ -78,8 +78,8 @@ public:
 	class FText                                   CallFunc_GetDisplayName_ReturnValue2;              // 0x0080(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x0098(0x0018)()
 };
-static_assert(alignof(XpBoostCounts_C_Update_Available_Boosts) == 0x0000E4, "Wrong alignment on XpBoostCounts_C_Update_Available_Boosts");
-static_assert(sizeof(XpBoostCounts_C_Update_Available_Boosts) == 0x0000E4, "Wrong size on XpBoostCounts_C_Update_Available_Boosts");
+static_assert(alignof(XpBoostCounts_C_Update_Available_Boosts) == 0x000008, "Wrong alignment on XpBoostCounts_C_Update_Available_Boosts");
+static_assert(sizeof(XpBoostCounts_C_Update_Available_Boosts) == 0x0000B0, "Wrong size on XpBoostCounts_C_Update_Available_Boosts");
 static_assert(offsetof(XpBoostCounts_C_Update_Available_Boosts, CallFunc_MakeLiteralText_ReturnValue) == 0x000000, "Member 'XpBoostCounts_C_Update_Available_Boosts::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostCounts_C_Update_Available_Boosts, CallFunc_MakeLiteralText_ReturnValue2) == 0x000018, "Member 'XpBoostCounts_C_Update_Available_Boosts::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(XpBoostCounts_C_Update_Available_Boosts, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'XpBoostCounts_C_Update_Available_Boosts::CallFunc_GetContext_ReturnValue' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_RiftZapPlayer.GCN_RiftZapPlayer_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0070 - 0x0070)
 class UGCN_RiftZapPlayer_C final : public UFortGameplayCueNotify_Simple
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UGCN_RiftZapPlayer_C>();
 	}
 };
-static_assert(alignof(UGCN_RiftZapPlayer_C) == 0x11821D80, "Wrong alignment on UGCN_RiftZapPlayer_C");
-static_assert(sizeof(UGCN_RiftZapPlayer_C) == 0x11821D80, "Wrong size on UGCN_RiftZapPlayer_C");
+static_assert(alignof(UGCN_RiftZapPlayer_C) == 0x000008, "Wrong alignment on UGCN_RiftZapPlayer_C");
+static_assert(sizeof(UGCN_RiftZapPlayer_C) == 0x000070, "Wrong size on UGCN_RiftZapPlayer_C");
 
 }
 

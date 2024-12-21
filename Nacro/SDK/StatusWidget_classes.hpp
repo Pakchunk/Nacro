@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StatusWidget.StatusWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UStatusWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonLazyImage*                       CommonLazyImage_0;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       StatusText;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UStatusWidget_C>();
 	}
 };
-static_assert(alignof(UStatusWidget_C) == 0x322CBBB8, "Wrong alignment on UStatusWidget_C");
-static_assert(sizeof(UStatusWidget_C) == 0x322CBBB8, "Wrong size on UStatusWidget_C");
+static_assert(alignof(UStatusWidget_C) == 0x000008, "Wrong alignment on UStatusWidget_C");
+static_assert(sizeof(UStatusWidget_C) == 0x000260, "Wrong size on UStatusWidget_C");
 static_assert(offsetof(UStatusWidget_C, UberGraphFrame) == 0x000238, "Member 'UStatusWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStatusWidget_C, CommonLazyImage_0) == 0x000240, "Member 'UStatusWidget_C::CommonLazyImage_0' has a wrong offset!");
 static_assert(offsetof(UStatusWidget_C, Image_0) == 0x000248, "Member 'UStatusWidget_C::Image_0' has a wrong offset!");

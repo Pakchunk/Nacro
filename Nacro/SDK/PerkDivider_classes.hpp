@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PerkDivider.PerkDivider_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0230 - 0x0230)
 class UPerkDivider_C final : public UUserWidget
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UPerkDivider_C>();
 	}
 };
-static_assert(alignof(UPerkDivider_C) == 0x322CBBB8, "Wrong alignment on UPerkDivider_C");
-static_assert(sizeof(UPerkDivider_C) == 0x322CBBB8, "Wrong size on UPerkDivider_C");
+static_assert(alignof(UPerkDivider_C) == 0x000008, "Wrong alignment on UPerkDivider_C");
+static_assert(sizeof(UPerkDivider_C) == 0x000230, "Wrong size on UPerkDivider_C");
 
 }
 

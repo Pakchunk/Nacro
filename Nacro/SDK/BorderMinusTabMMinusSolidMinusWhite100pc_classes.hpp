@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-TabM-Solid-White100pc.Border-TabM-Solid-White100pc_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusTabMMinusSolidMinusWhite100pc_C final : public UBorderMinusTabMMinusSolid_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusTabMMinusSolidMinusWhite100pc_C>();
 	}
 };
-static_assert(alignof(UBorderMinusTabMMinusSolidMinusWhite100pc_C) == 0x11827900, "Wrong alignment on UBorderMinusTabMMinusSolidMinusWhite100pc_C");
-static_assert(sizeof(UBorderMinusTabMMinusSolidMinusWhite100pc_C) == 0x11827900, "Wrong size on UBorderMinusTabMMinusSolidMinusWhite100pc_C");
+static_assert(alignof(UBorderMinusTabMMinusSolidMinusWhite100pc_C) == 0x000008, "Wrong alignment on UBorderMinusTabMMinusSolidMinusWhite100pc_C");
+static_assert(sizeof(UBorderMinusTabMMinusSolidMinusWhite100pc_C) == 0x0000B8, "Wrong size on UBorderMinusTabMMinusSolidMinusWhite100pc_C");
 
 }
 

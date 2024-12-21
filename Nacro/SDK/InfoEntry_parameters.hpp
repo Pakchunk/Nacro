@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function InfoEntry.InfoEntry_C.Entry Selected__DelegateSignature
-// 0x0101 (0x0101 - 0x0000)
-struct alignas(0x101) InfoEntry_C_Entry_Selected__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct InfoEntry_C_Entry_Selected__DelegateSignature final
 {
 public:
 	class UFortItemDefinition*                    Entry_Item_Definition;                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InfoEntry_C_Entry_Selected__DelegateSignature) == 0x000101, "Wrong alignment on InfoEntry_C_Entry_Selected__DelegateSignature");
-static_assert(sizeof(InfoEntry_C_Entry_Selected__DelegateSignature) == 0x000101, "Wrong size on InfoEntry_C_Entry_Selected__DelegateSignature");
+static_assert(alignof(InfoEntry_C_Entry_Selected__DelegateSignature) == 0x000008, "Wrong alignment on InfoEntry_C_Entry_Selected__DelegateSignature");
+static_assert(sizeof(InfoEntry_C_Entry_Selected__DelegateSignature) == 0x000008, "Wrong size on InfoEntry_C_Entry_Selected__DelegateSignature");
 static_assert(offsetof(InfoEntry_C_Entry_Selected__DelegateSignature, Entry_Item_Definition) == 0x000000, "Member 'InfoEntry_C_Entry_Selected__DelegateSignature::Entry_Item_Definition' has a wrong offset!");
 
 // Function InfoEntry.InfoEntry_C.ExecuteUbergraph_InfoEntry
@@ -130,12 +130,12 @@ static_assert(offsetof(InfoEntry_C_SetExpanded, bExpanded) == 0x000000, "Member 
 
 // Function InfoEntry.InfoEntry_C.RegisterOnClicked
 // 0x0010 (0x0010 - 0x0000)
-struct InfoEntry_C_RegisterOnClicked final
+struct alignas(0x08) InfoEntry_C_RegisterOnClicked final
 {
 public:
 	TDelegate<void(class UUserWidget* Widget)>    Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(InfoEntry_C_RegisterOnClicked) == 0x000004, "Wrong alignment on InfoEntry_C_RegisterOnClicked");
+static_assert(alignof(InfoEntry_C_RegisterOnClicked) == 0x000008, "Wrong alignment on InfoEntry_C_RegisterOnClicked");
 static_assert(sizeof(InfoEntry_C_RegisterOnClicked) == 0x000010, "Wrong size on InfoEntry_C_RegisterOnClicked");
 static_assert(offsetof(InfoEntry_C_RegisterOnClicked, Callback) == 0x000000, "Member 'InfoEntry_C_RegisterOnClicked::Callback' has a wrong offset!");
 
@@ -173,14 +173,14 @@ static_assert(sizeof(InfoEntry_C_GetIndentLevel) == 0x000004, "Wrong size on Inf
 static_assert(offsetof(InfoEntry_C_GetIndentLevel, ReturnValue) == 0x000000, "Member 'InfoEntry_C_GetIndentLevel::ReturnValue' has a wrong offset!");
 
 // Function InfoEntry.InfoEntry_C.DoesItemHaveChildren
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) InfoEntry_C_DoesItemHaveChildren final
+// 0x0004 (0x0004 - 0x0000)
+struct InfoEntry_C_DoesItemHaveChildren final
 {
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InfoEntry_C_DoesItemHaveChildren) == 0x0000E4, "Wrong alignment on InfoEntry_C_DoesItemHaveChildren");
-static_assert(sizeof(InfoEntry_C_DoesItemHaveChildren) == 0x0000E4, "Wrong size on InfoEntry_C_DoesItemHaveChildren");
+static_assert(alignof(InfoEntry_C_DoesItemHaveChildren) == 0x000004, "Wrong alignment on InfoEntry_C_DoesItemHaveChildren");
+static_assert(sizeof(InfoEntry_C_DoesItemHaveChildren) == 0x000004, "Wrong size on InfoEntry_C_DoesItemHaveChildren");
 static_assert(offsetof(InfoEntry_C_DoesItemHaveChildren, ReturnValue) == 0x000000, "Member 'InfoEntry_C_DoesItemHaveChildren::ReturnValue' has a wrong offset!");
 
 }

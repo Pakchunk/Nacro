@@ -17,12 +17,12 @@ namespace SDK::Params
 {
 
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.ExecuteUbergraph_AthenaTeamMemberIndicator
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerPawnAthena*                  K2Node_DynamicCast_AsFort_Player_Pawn_Athena;      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,8 +36,8 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortPlayerPawn*                        CallFunc_GetCurrentPawn_ReturnValue;               // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator) == 0x11827900, "Wrong alignment on AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator");
-static_assert(sizeof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator) == 0x11827900, "Wrong size on AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator");
+static_assert(alignof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator) == 0x000008, "Wrong alignment on AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator");
+static_assert(sizeof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator) == 0x0000A8, "Wrong size on AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator");
 static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, EntryPoint) == 0x000000, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_Event_MyGeometry) == 0x000004, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_Event_MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_Event_InDeltaTime) == 0x000038, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_Event_InDeltaTime' has a wrong offset!");
@@ -52,15 +52,15 @@ static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMe
 static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, CallFunc_GetCurrentPawn_ReturnValue) == 0x0000A0, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::CallFunc_GetCurrentPawn_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AthenaTeamMemberIndicator_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamMemberIndicator_C_Tick) == 0x11827900, "Wrong alignment on AthenaTeamMemberIndicator_C_Tick");
-static_assert(sizeof(AthenaTeamMemberIndicator_C_Tick) == 0x11827900, "Wrong size on AthenaTeamMemberIndicator_C_Tick");
+static_assert(alignof(AthenaTeamMemberIndicator_C_Tick) == 0x000004, "Wrong alignment on AthenaTeamMemberIndicator_C_Tick");
+static_assert(sizeof(AthenaTeamMemberIndicator_C_Tick) == 0x000038, "Wrong size on AthenaTeamMemberIndicator_C_Tick");
 static_assert(offsetof(AthenaTeamMemberIndicator_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaTeamMemberIndicator_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberIndicator_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaTeamMemberIndicator_C_Tick::InDeltaTime' has a wrong offset!");
 

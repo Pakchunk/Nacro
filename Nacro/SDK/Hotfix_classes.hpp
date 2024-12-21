@@ -50,7 +50,7 @@ static_assert(offsetof(UOnlineHotfixManager, DebugPrefix) == 0x0003B0, "Member '
 static_assert(offsetof(UOnlineHotfixManager, AssetsHotfixedFromIniFiles) == 0x0003C0, "Member 'UOnlineHotfixManager::AssetsHotfixedFromIniFiles' has a wrong offset!");
 
 // Class Hotfix.UpdateManager
-// 0x118212D8 (0x11821300 - 0x0028)
+// 0x0248 (0x0270 - 0x0028)
 class UUpdateManager : public UObject
 {
 public:
@@ -67,7 +67,7 @@ public:
 	EPatchCheckResult                             LastPatchCheckResult;                              // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EHotfixResult                                 LastHotfixResult;                                  // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_20A[0x2E];                                     // 0x020A(0x002E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              LastUpdateCheck[0x2];                              // 0x0238(0x11821300)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FDateTime                              LastUpdateCheck[0x2];                              // 0x0238(0x0008)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EUpdateCompletionStatus                       LastCompletionResult[0x2];                         // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_24A[0x16];                                     // 0x024A(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnum*                                  UpdateStateEnum;                                   // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -83,8 +83,8 @@ public:
 		return GetDefaultObjImpl<UUpdateManager>();
 	}
 };
-static_assert(alignof(UUpdateManager) == 0x11821300, "Wrong alignment on UUpdateManager");
-static_assert(sizeof(UUpdateManager) == 0x11821300, "Wrong size on UUpdateManager");
+static_assert(alignof(UUpdateManager) == 0x000008, "Wrong alignment on UUpdateManager");
+static_assert(sizeof(UUpdateManager) == 0x000270, "Wrong size on UUpdateManager");
 static_assert(offsetof(UUpdateManager, HotfixCheckCompleteDelay) == 0x0001F0, "Member 'UUpdateManager::HotfixCheckCompleteDelay' has a wrong offset!");
 static_assert(offsetof(UUpdateManager, UpdateCheckCompleteDelay) == 0x0001F4, "Member 'UUpdateManager::UpdateCheckCompleteDelay' has a wrong offset!");
 static_assert(offsetof(UUpdateManager, HotfixAvailabilityCheckCompleteDelay) == 0x0001F8, "Member 'UUpdateManager::HotfixAvailabilityCheckCompleteDelay' has a wrong offset!");

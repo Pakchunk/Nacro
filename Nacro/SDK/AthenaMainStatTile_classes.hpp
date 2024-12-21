@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaMainStatTile.AthenaMainStatTile_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0278 - 0x0238)
 class UAthenaMainStatTile_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       NameTextBlock;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ValueTextBlock;                                    // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   StatName;                                          // 0x0250(0x0018)(Edit, BlueprintVisible)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UAthenaMainStatTile_C>();
 	}
 };
-static_assert(alignof(UAthenaMainStatTile_C) == 0x322CBBB8, "Wrong alignment on UAthenaMainStatTile_C");
-static_assert(sizeof(UAthenaMainStatTile_C) == 0x322CBBB8, "Wrong size on UAthenaMainStatTile_C");
+static_assert(alignof(UAthenaMainStatTile_C) == 0x000008, "Wrong alignment on UAthenaMainStatTile_C");
+static_assert(sizeof(UAthenaMainStatTile_C) == 0x000278, "Wrong size on UAthenaMainStatTile_C");
 static_assert(offsetof(UAthenaMainStatTile_C, UberGraphFrame) == 0x000238, "Member 'UAthenaMainStatTile_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaMainStatTile_C, NameTextBlock) == 0x000240, "Member 'UAthenaMainStatTile_C::NameTextBlock' has a wrong offset!");
 static_assert(offsetof(UAthenaMainStatTile_C, ValueTextBlock) == 0x000248, "Member 'UAthenaMainStatTile_C::ValueTextBlock' has a wrong offset!");

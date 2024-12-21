@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0888 - 0x0868)
 class URewardsChoiceButtonWidget_C final : public UFortBaseButton
 {
 public:
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<URewardsChoiceButtonWidget_C>();
 	}
 };
-static_assert(alignof(URewardsChoiceButtonWidget_C) == 0x322CBBB8, "Wrong alignment on URewardsChoiceButtonWidget_C");
-static_assert(sizeof(URewardsChoiceButtonWidget_C) == 0x322CBBB8, "Wrong size on URewardsChoiceButtonWidget_C");
+static_assert(alignof(URewardsChoiceButtonWidget_C) == 0x000008, "Wrong alignment on URewardsChoiceButtonWidget_C");
+static_assert(sizeof(URewardsChoiceButtonWidget_C) == 0x000888, "Wrong size on URewardsChoiceButtonWidget_C");
 static_assert(offsetof(URewardsChoiceButtonWidget_C, RewardsBorderHighlight) == 0x000868, "Member 'URewardsChoiceButtonWidget_C::RewardsBorderHighlight' has a wrong offset!");
 static_assert(offsetof(URewardsChoiceButtonWidget_C, RewardsListWidget) == 0x000870, "Member 'URewardsChoiceButtonWidget_C::RewardsListWidget' has a wrong offset!");
 static_assert(offsetof(URewardsChoiceButtonWidget_C, Owner) == 0x000878, "Member 'URewardsChoiceButtonWidget_C::Owner' has a wrong offset!");

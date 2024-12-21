@@ -17,25 +17,25 @@ namespace SDK::Params
 {
 
 // Function B_DtB_LightningZap.B_DtB_LightningZap_C.ExecuteUbergraph_B_DtB_LightningZap
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x004C (0x004C - 0x0000)
 struct B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0028(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0034(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0028(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0034(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap) == 0x11821300, "Wrong alignment on B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap");
-static_assert(sizeof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap) == 0x11821300, "Wrong size on B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap");
+static_assert(alignof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap) == 0x000004, "Wrong alignment on B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap");
+static_assert(sizeof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap) == 0x00004C, "Wrong size on B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap");
 static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, EntryPoint) == 0x000000, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::EntryPoint' has a wrong offset!");
 static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::K2Node_Event_DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");

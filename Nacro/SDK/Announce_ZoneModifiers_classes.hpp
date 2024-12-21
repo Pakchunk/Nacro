@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Announce_ZoneModifiers.Announce_ZoneModifiers_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0008 (0x0418 - 0x0410)
 class AAnnounce_ZoneModifiers_C final : public AFortClientAnnouncement_ZoneModifiers
 {
 public:
@@ -36,8 +36,8 @@ public:
 		return GetDefaultObjImpl<AAnnounce_ZoneModifiers_C>();
 	}
 };
-static_assert(alignof(AAnnounce_ZoneModifiers_C) == 0x11821D80, "Wrong alignment on AAnnounce_ZoneModifiers_C");
-static_assert(sizeof(AAnnounce_ZoneModifiers_C) == 0x11821D80, "Wrong size on AAnnounce_ZoneModifiers_C");
+static_assert(alignof(AAnnounce_ZoneModifiers_C) == 0x000008, "Wrong alignment on AAnnounce_ZoneModifiers_C");
+static_assert(sizeof(AAnnounce_ZoneModifiers_C) == 0x000418, "Wrong size on AAnnounce_ZoneModifiers_C");
 static_assert(offsetof(AAnnounce_ZoneModifiers_C, DefaultSceneRoot) == 0x000410, "Member 'AAnnounce_ZoneModifiers_C::DefaultSceneRoot' has a wrong offset!");
 
 }

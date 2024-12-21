@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function PartyFinder.PartyFinder_C.ExecuteUbergraph_PartyFinder
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct PartyFinder_C_ExecuteUbergraph_PartyFinder final
 {
 public:
@@ -29,7 +29,7 @@ public:
 	class UUserWidget*                            K2Node_ComponentBoundEvent_Widget;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button5;                // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPartyState                            K2Node_CustomEvent_PartyData;                      // 0x0020(0x11821780)(ConstParm)
+	struct FPartyState                            K2Node_CustomEvent_PartyData;                      // 0x0020(0x0010)(ConstParm)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortDialogResult                             Temp_byte_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -78,12 +78,12 @@ public:
 	class UFortSocialItem*                        K2Node_DynamicCast_AsFort_Social_Item4;            // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetUniquePlayerId_ReturnValue;            // 0x0158(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniquePlayerId_ReturnValue;            // 0x0158(0x0018)(HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue2;          // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PartyFinder_C_ExecuteUbergraph_PartyFinder) == 0x11821780, "Wrong alignment on PartyFinder_C_ExecuteUbergraph_PartyFinder");
-static_assert(sizeof(PartyFinder_C_ExecuteUbergraph_PartyFinder) == 0x11821780, "Wrong size on PartyFinder_C_ExecuteUbergraph_PartyFinder");
+static_assert(alignof(PartyFinder_C_ExecuteUbergraph_PartyFinder) == 0x000008, "Wrong alignment on PartyFinder_C_ExecuteUbergraph_PartyFinder");
+static_assert(sizeof(PartyFinder_C_ExecuteUbergraph_PartyFinder) == 0x000180, "Wrong size on PartyFinder_C_ExecuteUbergraph_PartyFinder");
 static_assert(offsetof(PartyFinder_C_ExecuteUbergraph_PartyFinder, EntryPoint) == 0x000000, "Member 'PartyFinder_C_ExecuteUbergraph_PartyFinder::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PartyFinder_C_ExecuteUbergraph_PartyFinder, K2Node_ComponentBoundEvent_Widget) == 0x000008, "Member 'PartyFinder_C_ExecuteUbergraph_PartyFinder::K2Node_ComponentBoundEvent_Widget' has a wrong offset!");
 static_assert(offsetof(PartyFinder_C_ExecuteUbergraph_PartyFinder, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'PartyFinder_C_ExecuteUbergraph_PartyFinder::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -210,14 +210,14 @@ static_assert(sizeof(PartyFinder_C_BndEvt__InviteButton_K2Node_ComponentBoundEve
 static_assert(offsetof(PartyFinder_C_BndEvt__InviteButton_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PartyFinder_C_BndEvt__InviteButton_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PartyFinder.PartyFinder_C.HandlePartyDataChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct PartyFinder_C_HandlePartyDataChanged final
 {
 public:
-	struct FPartyState                            PartyData;                                         // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPartyState                            PartyData;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PartyFinder_C_HandlePartyDataChanged) == 0x11821780, "Wrong alignment on PartyFinder_C_HandlePartyDataChanged");
-static_assert(sizeof(PartyFinder_C_HandlePartyDataChanged) == 0x11821780, "Wrong size on PartyFinder_C_HandlePartyDataChanged");
+static_assert(alignof(PartyFinder_C_HandlePartyDataChanged) == 0x000008, "Wrong alignment on PartyFinder_C_HandlePartyDataChanged");
+static_assert(sizeof(PartyFinder_C_HandlePartyDataChanged) == 0x000010, "Wrong size on PartyFinder_C_HandlePartyDataChanged");
 static_assert(offsetof(PartyFinder_C_HandlePartyDataChanged, PartyData) == 0x000000, "Member 'PartyFinder_C_HandlePartyDataChanged::PartyData' has a wrong offset!");
 
 // Function PartyFinder.PartyFinder_C.BndEvt__IconTextButton_1_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature
@@ -233,14 +233,14 @@ static_assert(offsetof(PartyFinder_C_BndEvt__IconTextButton_1_K2Node_ComponentBo
 
 // Function PartyFinder.PartyFinder_C.DialogResult_9763B6F5495998E5B2E944A5F646709C
 // 0x0010 (0x0010 - 0x0000)
-struct PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C final
+struct alignas(0x08) PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C) == 0x000004, "Wrong alignment on PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C");
+static_assert(alignof(PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C) == 0x000008, "Wrong alignment on PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C");
 static_assert(sizeof(PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C) == 0x000010, "Wrong size on PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C");
 static_assert(offsetof(PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C, Result) == 0x000000, "Member 'PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C::Result' has a wrong offset!");
 static_assert(offsetof(PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C, ResultName) == 0x000008, "Member 'PartyFinder_C_DialogResult_9763B6F5495998E5B2E944A5F646709C::ResultName' has a wrong offset!");
@@ -456,18 +456,18 @@ static_assert(offsetof(PartyFinder_C_SocialTreeView_GetChildrenForCategory, Call
 static_assert(offsetof(PartyFinder_C_SocialTreeView_GetChildrenForCategory, CallFunc_GetPartyInvites_OutPartyInvites) == 0x000060, "Member 'PartyFinder_C_SocialTreeView_GetChildrenForCategory::CallFunc_GetPartyInvites_OutPartyInvites' has a wrong offset!");
 
 // Function PartyFinder.PartyFinder_C.HandleFriendPresenceUpdated
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct PartyFinder_C_HandleFriendPresenceUpdated final
 {
 public:
-	struct FUniqueNetIdRepl                       FriendId;                                          // 0x0000(0x11821780)(Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       FriendId;                                          // 0x0000(0x0018)(Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortSocialItem*                        K2Node_DynamicCast_AsFort_Social_Item;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PartyFinder_C_HandleFriendPresenceUpdated) == 0x11821780, "Wrong alignment on PartyFinder_C_HandleFriendPresenceUpdated");
-static_assert(sizeof(PartyFinder_C_HandleFriendPresenceUpdated) == 0x11821780, "Wrong size on PartyFinder_C_HandleFriendPresenceUpdated");
+static_assert(alignof(PartyFinder_C_HandleFriendPresenceUpdated) == 0x000008, "Wrong alignment on PartyFinder_C_HandleFriendPresenceUpdated");
+static_assert(sizeof(PartyFinder_C_HandleFriendPresenceUpdated) == 0x000030, "Wrong size on PartyFinder_C_HandleFriendPresenceUpdated");
 static_assert(offsetof(PartyFinder_C_HandleFriendPresenceUpdated, FriendId) == 0x000000, "Member 'PartyFinder_C_HandleFriendPresenceUpdated::FriendId' has a wrong offset!");
 static_assert(offsetof(PartyFinder_C_HandleFriendPresenceUpdated, CallFunc_GetSelectedItem_ReturnValue) == 0x000018, "Member 'PartyFinder_C_HandleFriendPresenceUpdated::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PartyFinder_C_HandleFriendPresenceUpdated, K2Node_DynamicCast_AsFort_Social_Item) == 0x000020, "Member 'PartyFinder_C_HandleFriendPresenceUpdated::K2Node_DynamicCast_AsFort_Social_Item' has a wrong offset!");

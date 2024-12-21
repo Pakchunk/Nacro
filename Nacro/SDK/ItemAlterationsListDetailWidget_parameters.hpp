@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C.ExecuteUbergraph_ItemAlterationsListDetailWidget
-// 0x0069 (0x0069 - 0x0000)
-struct alignas(0x69) ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget final
+// 0x0004 (0x0004 - 0x0000)
+struct ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget) == 0x000069, "Wrong alignment on ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget");
-static_assert(sizeof(ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget) == 0x000069, "Wrong size on ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget");
+static_assert(alignof(ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget) == 0x000004, "Wrong alignment on ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget");
+static_assert(sizeof(ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget) == 0x000004, "Wrong size on ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget");
 static_assert(offsetof(ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget, EntryPoint) == 0x000000, "Member 'ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget::EntryPoint' has a wrong offset!");
 
 // Function ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C.SetState

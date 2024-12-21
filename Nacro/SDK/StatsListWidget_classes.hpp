@@ -20,14 +20,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StatsListWidget.StatsListWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0298 - 0x0268)
 class UStatsListWidget_C final : public UFortAttributeList_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         HBoxCapMessage;                                    // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           StatsList;                                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FMargin                                RowMargin;                                         // 0x0280(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FMargin                                RowMargin;                                         // 0x0280(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         ClampedAttributeCount;                             // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UStatsListWidget_C>();
 	}
 };
-static_assert(alignof(UStatsListWidget_C) == 0x322CBBB8, "Wrong alignment on UStatsListWidget_C");
-static_assert(sizeof(UStatsListWidget_C) == 0x322CBBB8, "Wrong size on UStatsListWidget_C");
+static_assert(alignof(UStatsListWidget_C) == 0x000008, "Wrong alignment on UStatsListWidget_C");
+static_assert(sizeof(UStatsListWidget_C) == 0x000298, "Wrong size on UStatsListWidget_C");
 static_assert(offsetof(UStatsListWidget_C, UberGraphFrame) == 0x000268, "Member 'UStatsListWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStatsListWidget_C, HBoxCapMessage) == 0x000270, "Member 'UStatsListWidget_C::HBoxCapMessage' has a wrong offset!");
 static_assert(offsetof(UStatsListWidget_C, StatsList) == 0x000278, "Member 'UStatsListWidget_C::StatsList' has a wrong offset!");

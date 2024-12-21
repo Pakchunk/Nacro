@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function EulaTab.EulaTab_C.ExecuteUbergraph_EulaTab
-// 0x0112 (0x0112 - 0x0000)
-struct alignas(0x112) EulaTab_C_ExecuteUbergraph_EulaTab final
+// 0x0038 (0x0038 - 0x0000)
+struct EulaTab_C_ExecuteUbergraph_EulaTab final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -27,8 +27,8 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetEULAText_ReturnValue;                  // 0x0020(0x0018)()
 };
-static_assert(alignof(EulaTab_C_ExecuteUbergraph_EulaTab) == 0x000112, "Wrong alignment on EulaTab_C_ExecuteUbergraph_EulaTab");
-static_assert(sizeof(EulaTab_C_ExecuteUbergraph_EulaTab) == 0x000112, "Wrong size on EulaTab_C_ExecuteUbergraph_EulaTab");
+static_assert(alignof(EulaTab_C_ExecuteUbergraph_EulaTab) == 0x000008, "Wrong alignment on EulaTab_C_ExecuteUbergraph_EulaTab");
+static_assert(sizeof(EulaTab_C_ExecuteUbergraph_EulaTab) == 0x000038, "Wrong size on EulaTab_C_ExecuteUbergraph_EulaTab");
 static_assert(offsetof(EulaTab_C_ExecuteUbergraph_EulaTab, EntryPoint) == 0x000000, "Member 'EulaTab_C_ExecuteUbergraph_EulaTab::EntryPoint' has a wrong offset!");
 static_assert(offsetof(EulaTab_C_ExecuteUbergraph_EulaTab, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'EulaTab_C_ExecuteUbergraph_EulaTab::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EulaTab_C_ExecuteUbergraph_EulaTab, CallFunc_IsMobileApp_ReturnValue) == 0x000010, "Member 'EulaTab_C_ExecuteUbergraph_EulaTab::CallFunc_IsMobileApp_ReturnValue' has a wrong offset!");

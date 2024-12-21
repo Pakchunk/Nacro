@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_TeamScoreBox.Results_TeamScoreBox_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D8 (0x0310 - 0x0238)
 class UResults_TeamScoreBox_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_AbsorptionOutro;                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_AbsorptionIntro;                              // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_SkipToFinalState;                             // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 	UMulticastDelegateProperty_                   IntroFinished;                                     // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                         PlayRate;                                          // 0x02E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FlashTextTypeTime;                                 // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           TextTypeColor;                                     // 0x02F0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           FlashTextTypeTimer;                                // 0x0300(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FLinearColor                           TextTypeColor;                                     // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           FlashTextTypeTimer;                                // 0x0300(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         FlashTextTypeTimeStart;                            // 0x0308(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSkippedToEnd;                                     // 0x030C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bSkippingToEnd;                                    // 0x030D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -87,8 +87,8 @@ public:
 		return GetDefaultObjImpl<UResults_TeamScoreBox_C>();
 	}
 };
-static_assert(alignof(UResults_TeamScoreBox_C) == 0x322CBBB8, "Wrong alignment on UResults_TeamScoreBox_C");
-static_assert(sizeof(UResults_TeamScoreBox_C) == 0x322CBBB8, "Wrong size on UResults_TeamScoreBox_C");
+static_assert(alignof(UResults_TeamScoreBox_C) == 0x000008, "Wrong alignment on UResults_TeamScoreBox_C");
+static_assert(sizeof(UResults_TeamScoreBox_C) == 0x000310, "Wrong size on UResults_TeamScoreBox_C");
 static_assert(offsetof(UResults_TeamScoreBox_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeamScoreBox_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_TeamScoreBox_C, Anim_AbsorptionOutro) == 0x000240, "Member 'UResults_TeamScoreBox_C::Anim_AbsorptionOutro' has a wrong offset!");
 static_assert(offsetof(UResults_TeamScoreBox_C, Anim_AbsorptionIntro) == 0x000248, "Member 'UResults_TeamScoreBox_C::Anim_AbsorptionIntro' has a wrong offset!");

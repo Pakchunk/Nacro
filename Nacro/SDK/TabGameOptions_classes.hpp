@@ -18,12 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabGameOptions.TabGameOptions_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UTabGameOptions_C : public UFortGameOptions
+// 0x0020 (0x02A8 - 0x0288)
+class UTabGameOptions_C : public UFortGameOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x0008)(Transient, DuplicateTransient)
 	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalTabList_C*                   GameTabs;                                          // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TooltipDisplay;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,9 +46,8 @@ public:
 		return GetDefaultObjImpl<UTabGameOptions_C>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UTabGameOptions_C) == 0x322CBBB8, "Wrong alignment on UTabGameOptions_C");
-static_assert(sizeof(UTabGameOptions_C) == 0x322CBBB8, "Wrong size on UTabGameOptions_C");
+static_assert(alignof(UTabGameOptions_C) == 0x000008, "Wrong alignment on UTabGameOptions_C");
+static_assert(sizeof(UTabGameOptions_C) == 0x0002A8, "Wrong size on UTabGameOptions_C");
 static_assert(offsetof(UTabGameOptions_C, UberGraphFrame) == 0x000288, "Member 'UTabGameOptions_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTabGameOptions_C, CommonWidgetSwitcher_0) == 0x000290, "Member 'UTabGameOptions_C::CommonWidgetSwitcher_0' has a wrong offset!");
 static_assert(offsetof(UTabGameOptions_C, GameTabs) == 0x000298, "Member 'UTabGameOptions_C::GameTabs' has a wrong offset!");

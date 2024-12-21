@@ -125,7 +125,7 @@ static_assert(offsetof(ItemInspectEvolutionConfirmation_C_SetItemToRepresent, Ca
 static_assert(offsetof(ItemInspectEvolutionConfirmation_C_SetItemToRepresent, CallFunc_Less_IntInt_ReturnValue) == 0x00004C, "Member 'ItemInspectEvolutionConfirmation_C_SetItemToRepresent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetEvolutionToRepresent
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent final
 {
 public:
@@ -139,14 +139,14 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FRecipe>                        CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue; // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FRecipe                                CallFunc_Array_Get_Item;                           // 0x0050(0x11821F00)()
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item2;                          // 0x00A0(0x52535)()
+	struct FRecipe                                CallFunc_Array_Get_Item;                           // 0x0050(0x0050)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item2;                          // 0x00A0(0x0028)()
 	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x00D8(0x0018)()
 };
-static_assert(alignof(ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent) == 0x11821F00, "Wrong alignment on ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent");
-static_assert(sizeof(ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent) == 0x11821F00, "Wrong size on ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent");
+static_assert(alignof(ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent) == 0x000008, "Wrong alignment on ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent");
+static_assert(sizeof(ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent) == 0x0000F0, "Wrong size on ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent");
 static_assert(offsetof(ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent, EvolutionIndex) == 0x000000, "Member 'ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent::EvolutionIndex' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent, EvolutionItem) == 0x000008, "Member 'ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent::EvolutionItem' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent, Ingredients) == 0x000010, "Member 'ItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent::Ingredients' has a wrong offset!");
@@ -202,7 +202,7 @@ static_assert(offsetof(ItemInspectEvolutionConfirmation_C_HandleEvolutionOptionS
 static_assert(offsetof(ItemInspectEvolutionConfirmation_C_HandleEvolutionOptionSelected, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'ItemInspectEvolutionConfirmation_C_HandleEvolutionOptionSelected::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetupEvolutionOptions
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions final
 {
 public:
@@ -225,10 +225,10 @@ public:
 	TArray<struct FRecipe>                        CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue; // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRecipe                                CallFunc_Array_Get_Item;                           // 0x00A0(0x11821F00)()
+	struct FRecipe                                CallFunc_Array_Get_Item;                           // 0x00A0(0x0050)()
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item2;                          // 0x00F8(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item2;                          // 0x00F8(0x0028)()
 	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -243,8 +243,8 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue3;                  // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAllowedConversionIndex_ReturnValue;     // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions) == 0x11821F00, "Wrong alignment on ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions");
-static_assert(sizeof(ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions) == 0x11821F00, "Wrong size on ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions");
+static_assert(alignof(ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions) == 0x000008, "Wrong alignment on ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions");
+static_assert(sizeof(ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions) == 0x000158, "Wrong size on ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions");
 static_assert(offsetof(ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions, TemporaryEvolutionItem) == 0x000000, "Member 'ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions::TemporaryEvolutionItem' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'ItemInspectEvolutionConfirmation_C_SetupEvolutionOptions::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");

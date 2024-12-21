@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ToastDisplayArea.ToastDisplayArea_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class UToastDisplayArea_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UPowerToastWidget_C*                    PowerToastWidget;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_0;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UToastWidget_C*                         ToastWidget;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UToastDisplayArea_C>();
 	}
 };
-static_assert(alignof(UToastDisplayArea_C) == 0x322CBBB8, "Wrong alignment on UToastDisplayArea_C");
-static_assert(sizeof(UToastDisplayArea_C) == 0x322CBBB8, "Wrong size on UToastDisplayArea_C");
+static_assert(alignof(UToastDisplayArea_C) == 0x000008, "Wrong alignment on UToastDisplayArea_C");
+static_assert(sizeof(UToastDisplayArea_C) == 0x000270, "Wrong size on UToastDisplayArea_C");
 static_assert(offsetof(UToastDisplayArea_C, UberGraphFrame) == 0x000238, "Member 'UToastDisplayArea_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UToastDisplayArea_C, PowerToastWidget) == 0x000240, "Member 'UToastDisplayArea_C::PowerToastWidget' has a wrong offset!");
 static_assert(offsetof(UToastDisplayArea_C, SafeZone_0) == 0x000248, "Member 'UToastDisplayArea_C::SafeZone_0' has a wrong offset!");

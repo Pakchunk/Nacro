@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestUpdatesLog.QuestUpdatesLog_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0090 (0x02F0 - 0x0260)
 class UQuestUpdatesLog_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           QuestUpdatesBox;                                   // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<class UFortQuestItem*>                 PinnedQuests;                                      // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class UFortQuestItem*                         RequiredQuest;                                     // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,7 +33,7 @@ public:
 	int32                                         MaxDisplayedQuestUpdates;                          // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2CC[0x4];                                      // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWidget*>                        QuestUpdateWidgets;                                // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FTimerHandle                           TryDisplayNextUpdateTimerHandle;                   // 0x02E0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           TryDisplayNextUpdateTimerHandle;                   // 0x02E0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         MaxDisplayedQuestObjectives;                       // 0x02E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<UQuestUpdatesLog_C>();
 	}
 };
-static_assert(alignof(UQuestUpdatesLog_C) == 0x322CBBB8, "Wrong alignment on UQuestUpdatesLog_C");
-static_assert(sizeof(UQuestUpdatesLog_C) == 0x322CBBB8, "Wrong size on UQuestUpdatesLog_C");
+static_assert(alignof(UQuestUpdatesLog_C) == 0x000008, "Wrong alignment on UQuestUpdatesLog_C");
+static_assert(sizeof(UQuestUpdatesLog_C) == 0x0002F0, "Wrong size on UQuestUpdatesLog_C");
 static_assert(offsetof(UQuestUpdatesLog_C, UberGraphFrame) == 0x000260, "Member 'UQuestUpdatesLog_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestUpdatesLog_C, QuestUpdatesBox) == 0x000268, "Member 'UQuestUpdatesLog_C::QuestUpdatesBox' has a wrong offset!");
 static_assert(offsetof(UQuestUpdatesLog_C, PinnedQuests) == 0x000270, "Member 'UQuestUpdatesLog_C::PinnedQuests' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TutorialOverlay.TutorialOverlay_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x03F8 - 0x03E0)
 class UTutorialOverlay_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UAnnouncement_Tutorial_C*               Announcement_Tutorial;                             // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_0;                                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UTutorialOverlay_C>();
 	}
 };
-static_assert(alignof(UTutorialOverlay_C) == 0x322CBBB8, "Wrong alignment on UTutorialOverlay_C");
-static_assert(sizeof(UTutorialOverlay_C) == 0x322CBBB8, "Wrong size on UTutorialOverlay_C");
+static_assert(alignof(UTutorialOverlay_C) == 0x000008, "Wrong alignment on UTutorialOverlay_C");
+static_assert(sizeof(UTutorialOverlay_C) == 0x0003F8, "Wrong size on UTutorialOverlay_C");
 static_assert(offsetof(UTutorialOverlay_C, UberGraphFrame) == 0x0003E0, "Member 'UTutorialOverlay_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTutorialOverlay_C, Announcement_Tutorial) == 0x0003E8, "Member 'UTutorialOverlay_C::Announcement_Tutorial' has a wrong offset!");
 static_assert(offsetof(UTutorialOverlay_C, SafeZone_0) == 0x0003F0, "Member 'UTutorialOverlay_C::SafeZone_0' has a wrong offset!");

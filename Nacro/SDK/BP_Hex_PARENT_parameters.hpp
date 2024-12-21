@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.ExecuteUbergraph_BP_Hex_PARENT
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x04D8 (0x04D8 - 0x0000)
 struct BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT final
 {
 public:
@@ -88,22 +88,22 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATheaterCamera_Blueprint_C*             CallFunc_Array_Get_Item;                           // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color; // 0x0138(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color; // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid; // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue7;                  // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails;     // 0x0158(0x1182E980)()
+	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails;     // 0x0158(0x0160)()
 	bool                                          CallFunc_GetTileMissionDetails_ReturnValue;        // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2B9[0x3];                                      // 0x02B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x02BC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x02BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               K2Node_DynamicCast_AsTexture;                      // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails2;    // 0x02D8(0x1182E980)()
+	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails2;    // 0x02D8(0x0160)()
 	bool                                          CallFunc_GetTileMissionDetails_ReturnValue2;       // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_439[0x3];                                      // 0x0439(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x043C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color; // 0x0440(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color; // 0x0440(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Get_Conning_Color_From_Difficulty_Value_Success; // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText; // 0x0458(0x0018)()
@@ -111,17 +111,18 @@ public:
 	uint8                                         Pad_474[0x4];                                      // 0x0474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_EventName2;                     // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_EmitterTime2;                   // 0x0480(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Location2;                      // 0x0484(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Velocity2;                      // 0x0490(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Location2;                      // 0x0484(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Velocity2;                      // 0x0490(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49C[0x4];                                      // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_EventName;                      // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_EmitterTime;                    // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_ParticleTime;                   // 0x04AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Location;                       // 0x04B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Velocity;                       // 0x04BC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_Direction;                      // 0x04C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Location;                       // 0x04B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Velocity;                       // 0x04BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_Direction;                      // 0x04C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x1182E980, "Wrong alignment on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
-static_assert(sizeof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x1182E980, "Wrong size on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
+static_assert(alignof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
+static_assert(sizeof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x0004D8, "Wrong size on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
 static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, EntryPoint) == 0x000000, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000004, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_TeamPower) == 0x000008, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_TeamPower' has a wrong offset!");
@@ -200,19 +201,19 @@ static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_Cu
 static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Direction) == 0x0004C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Direction' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.MissionLightningOff
-// 0x11821300 (0x11821300 - 0x0000)
-struct BP_Hex_PARENT_C_MissionLightningOff final
+// 0x0038 (0x0038 - 0x0000)
+struct alignas(0x08) BP_Hex_PARENT_C_MissionLightningOff final
 {
 public:
 	class FName                                   EventName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         EmitterTime;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ParticleTime;                                      // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Location;                                          // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Velocity;                                          // 0x001C(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Direction;                                         // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Location;                                          // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Velocity;                                          // 0x001C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Direction;                                         // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_MissionLightningOff) == 0x11821300, "Wrong alignment on BP_Hex_PARENT_C_MissionLightningOff");
-static_assert(sizeof(BP_Hex_PARENT_C_MissionLightningOff) == 0x11821300, "Wrong size on BP_Hex_PARENT_C_MissionLightningOff");
+static_assert(alignof(BP_Hex_PARENT_C_MissionLightningOff) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_MissionLightningOff");
+static_assert(sizeof(BP_Hex_PARENT_C_MissionLightningOff) == 0x000038, "Wrong size on BP_Hex_PARENT_C_MissionLightningOff");
 static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, EventName) == 0x000000, "Member 'BP_Hex_PARENT_C_MissionLightningOff::EventName' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, EmitterTime) == 0x000008, "Member 'BP_Hex_PARENT_C_MissionLightningOff::EmitterTime' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, ParticleTime) == 0x00000C, "Member 'BP_Hex_PARENT_C_MissionLightningOff::ParticleTime' has a wrong offset!");
@@ -221,32 +222,32 @@ static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, Velocity) == 0x00001
 static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, Direction) == 0x000028, "Member 'BP_Hex_PARENT_C_MissionLightningOff::Direction' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.MissionLightning
-// 0x11821300 (0x11821300 - 0x0000)
-struct BP_Hex_PARENT_C_MissionLightning final
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) BP_Hex_PARENT_C_MissionLightning final
 {
 public:
 	class FName                                   EventName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         EmitterTime;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Location;                                          // 0x000C(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Velocity;                                          // 0x0018(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Location;                                          // 0x000C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Velocity;                                          // 0x0018(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_MissionLightning) == 0x11821300, "Wrong alignment on BP_Hex_PARENT_C_MissionLightning");
-static_assert(sizeof(BP_Hex_PARENT_C_MissionLightning) == 0x11821300, "Wrong size on BP_Hex_PARENT_C_MissionLightning");
+static_assert(alignof(BP_Hex_PARENT_C_MissionLightning) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_MissionLightning");
+static_assert(sizeof(BP_Hex_PARENT_C_MissionLightning) == 0x000028, "Wrong size on BP_Hex_PARENT_C_MissionLightning");
 static_assert(offsetof(BP_Hex_PARENT_C_MissionLightning, EventName) == 0x000000, "Member 'BP_Hex_PARENT_C_MissionLightning::EventName' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_MissionLightning, EmitterTime) == 0x000008, "Member 'BP_Hex_PARENT_C_MissionLightning::EmitterTime' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_MissionLightning, Location) == 0x00000C, "Member 'BP_Hex_PARENT_C_MissionLightning::Location' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_MissionLightning, Velocity) == 0x000018, "Member 'BP_Hex_PARENT_C_MissionLightning::Velocity' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.HandleFrontendCameraChanged
-// 0x0050 (0x0050 - 0x0000)
-struct alignas(0x50) BP_Hex_PARENT_C_HandleFrontendCameraChanged final
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Hex_PARENT_C_HandleFrontendCameraChanged final
 {
 public:
 	EFrontEndCamera                               NewCamera;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFrontEndCamera                               OldCamera;                                         // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Hex_PARENT_C_HandleFrontendCameraChanged) == 0x000050, "Wrong alignment on BP_Hex_PARENT_C_HandleFrontendCameraChanged");
-static_assert(sizeof(BP_Hex_PARENT_C_HandleFrontendCameraChanged) == 0x000050, "Wrong size on BP_Hex_PARENT_C_HandleFrontendCameraChanged");
+static_assert(alignof(BP_Hex_PARENT_C_HandleFrontendCameraChanged) == 0x000001, "Wrong alignment on BP_Hex_PARENT_C_HandleFrontendCameraChanged");
+static_assert(sizeof(BP_Hex_PARENT_C_HandleFrontendCameraChanged) == 0x000002, "Wrong size on BP_Hex_PARENT_C_HandleFrontendCameraChanged");
 static_assert(offsetof(BP_Hex_PARENT_C_HandleFrontendCameraChanged, NewCamera) == 0x000000, "Member 'BP_Hex_PARENT_C_HandleFrontendCameraChanged::NewCamera' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_HandleFrontendCameraChanged, OldCamera) == 0x000001, "Member 'BP_Hex_PARENT_C_HandleFrontendCameraChanged::OldCamera' has a wrong offset!");
 
@@ -264,11 +265,11 @@ static_assert(offsetof(BP_Hex_PARENT_C_HandleTeamPowerChanged, TeamPower) == 0x0
 static_assert(offsetof(BP_Hex_PARENT_C_HandleTeamPowerChanged, PersonalPower) == 0x000004, "Member 'BP_Hex_PARENT_C_HandleTeamPowerChanged::PersonalPower' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.UserConstructionScript
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct BP_Hex_PARENT_C_UserConstructionScript final
 {
 public:
-	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -281,8 +282,8 @@ public:
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_UserConstructionScript) == 0x11821300, "Wrong alignment on BP_Hex_PARENT_C_UserConstructionScript");
-static_assert(sizeof(BP_Hex_PARENT_C_UserConstructionScript) == 0x11821300, "Wrong size on BP_Hex_PARENT_C_UserConstructionScript");
+static_assert(alignof(BP_Hex_PARENT_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_Hex_PARENT_C_UserConstructionScript");
+static_assert(sizeof(BP_Hex_PARENT_C_UserConstructionScript) == 0x000070, "Wrong size on BP_Hex_PARENT_C_UserConstructionScript");
 static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'BP_Hex_PARENT_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000030, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000038, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
@@ -360,14 +361,14 @@ static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_BooleanOR_Re
 static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_BooleanAND_ReturnValue) == 0x000030, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.HandleUpdatingBannerMesh
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct BP_Hex_PARENT_C_HandleUpdatingBannerMesh final
 {
 public:
 	class USceneComponent*                        Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	const class UFortQuestItemDefinition*         CompletedQuest;                                    // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Material_Instance_Dynamic;                         // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0018(0x11821780)(Edit, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0018(0x0018)(Edit, HasGetValueTypeHash)
 	bool                                          HasCompletedQuest;                                 // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue2;       // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -377,11 +378,11 @@ public:
 	TArray<class AFortPlayerController*>          CallFunc_GetLocalFortPlayerControllers_ReturnValue; // 0x0038(0x0010)(ZeroConstructor, ReferenceParm)
 	class AFortPlayerController*                  CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0058(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0058(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_HasCompletedQuest_ReturnValue;            // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh) == 0x11821780, "Wrong alignment on BP_Hex_PARENT_C_HandleUpdatingBannerMesh");
-static_assert(sizeof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh) == 0x11821780, "Wrong size on BP_Hex_PARENT_C_HandleUpdatingBannerMesh");
+static_assert(alignof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_HandleUpdatingBannerMesh");
+static_assert(sizeof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh) == 0x000078, "Wrong size on BP_Hex_PARENT_C_HandleUpdatingBannerMesh");
 static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, Target) == 0x000000, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::Target' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CompletedQuest) == 0x000008, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CompletedQuest' has a wrong offset!");
 static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, Material_Instance_Dynamic) == 0x000010, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::Material_Instance_Dynamic' has a wrong offset!");

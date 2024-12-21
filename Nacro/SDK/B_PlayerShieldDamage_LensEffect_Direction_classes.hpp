@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_PlayerShieldDamage_LensEffect_Direction.B_PlayerShieldDamage_LensEffect_Direction_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0470 - 0x0470)
 class AB_PlayerShieldDamage_LensEffect_Direction_C final : public AFortEmitterCameraLensEffectDirectional
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<AB_PlayerShieldDamage_LensEffect_Direction_C>();
 	}
 };
-static_assert(alignof(AB_PlayerShieldDamage_LensEffect_Direction_C) == 0x11821D80, "Wrong alignment on AB_PlayerShieldDamage_LensEffect_Direction_C");
-static_assert(sizeof(AB_PlayerShieldDamage_LensEffect_Direction_C) == 0x11821D80, "Wrong size on AB_PlayerShieldDamage_LensEffect_Direction_C");
+static_assert(alignof(AB_PlayerShieldDamage_LensEffect_Direction_C) == 0x000010, "Wrong alignment on AB_PlayerShieldDamage_LensEffect_Direction_C");
+static_assert(sizeof(AB_PlayerShieldDamage_LensEffect_Direction_C) == 0x000470, "Wrong size on AB_PlayerShieldDamage_LensEffect_Direction_C");
 
 }
 

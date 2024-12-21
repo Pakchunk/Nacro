@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C.ExecuteUbergraph_GA_DefaultPlayer_Stunned
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0278 (0x0278 - 0x0000)
 struct GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned final
 {
 public:
@@ -29,8 +29,8 @@ public:
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0028(0x11821C00)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x0048(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0028(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_Option_B___If_false__use_Option_A_Variable; // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,8 +50,8 @@ public:
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           CallFunc_GetCurrentMontage_ReturnValue;            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x00C8(0x11821C00)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x00E8(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x00C8(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x00E8(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Montage_GetCurrentSection_ReturnValue;    // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue3;          // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -61,20 +61,20 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue4;          // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_123[0x5];                                      // 0x0123(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData3;                    // 0x0128(0x11821C00)(ConstParm)
-	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag3;                // 0x0148(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData3;                    // 0x0128(0x0020)(ConstParm)
+	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag3;                // 0x0148(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_Select_Default;                             // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate9;             // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue5;          // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_16B[0x5];                                      // 0x016B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable;                              // 0x0170(0x11821C00)()
+	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable;                              // 0x0170(0x0020)()
 	bool                                          Temp_bool_IsClosed_Variable2;                      // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable2;                // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_192[0x6];                                      // 0x0192(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           Temp_struct_Variable2;                             // 0x0198(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x01A0(0x11821D80)(NoDestructor)
+	struct FGameplayTag                           Temp_struct_Variable2;                             // 0x0198(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x01A0(0x0008)(NoDestructor)
 	class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageWaitTarget_ReturnValue;        // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue;            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -114,10 +114,10 @@ public:
 	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue3;      // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0269(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_26A[0x6];                                      // 0x026A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0270(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0270(0x0008)(NoDestructor)
 };
-static_assert(alignof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned) == 0x11821D80, "Wrong alignment on GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned");
-static_assert(sizeof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned) == 0x11821D80, "Wrong size on GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned");
+static_assert(alignof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned");
+static_assert(sizeof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned) == 0x000278, "Wrong size on GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, EntryPoint) == 0x000000, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_bool_Variable) == 0x000004, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000005, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
@@ -196,41 +196,41 @@ static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPla
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_K2_SetTimer_ReturnValue2) == 0x000270, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_K2_SetTimer_ReturnValue2' has a wrong offset!");
 
 // Function GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C.Triggered_3C8EA97E467ED88E163FF0B4F830736D
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D) == 0x11821D80, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D) == 0x11821D80, "Wrong size on GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D");
+static_assert(alignof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D");
+static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D) == 0x000028, "Wrong size on GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D, TargetData) == 0x000000, "Member 'GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D::TargetData' has a wrong offset!");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D, ApplicationTag) == 0x000020, "Member 'GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D::ApplicationTag' has a wrong offset!");
 
 // Function GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C.Cancelled_3C8EA97E467ED88E163FF0B4F830736D
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D) == 0x11821D80, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D) == 0x11821D80, "Wrong size on GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D");
+static_assert(alignof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D");
+static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D) == 0x000028, "Wrong size on GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D, TargetData) == 0x000000, "Member 'GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D::TargetData' has a wrong offset!");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D, ApplicationTag) == 0x000020, "Member 'GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D::ApplicationTag' has a wrong offset!");
 
 // Function GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C.Completed_3C8EA97E467ED88E163FF0B4F830736D
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D final
 {
 public:
-	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D) == 0x11821D80, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D) == 0x11821D80, "Wrong size on GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D");
+static_assert(alignof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D");
+static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D) == 0x000028, "Wrong size on GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D, TargetData) == 0x000000, "Member 'GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D::TargetData' has a wrong offset!");
 static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D, ApplicationTag) == 0x000020, "Member 'GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D::ApplicationTag' has a wrong offset!");
 

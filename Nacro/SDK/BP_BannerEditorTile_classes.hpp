@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_BannerEditorTile.BP_BannerEditorTile_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x08F8 - 0x08B0)
 class UBP_BannerEditorTile_C final : public UFortPlayerProfileBannerEditorTile
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ColorImage;                                        // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 IconImage;                                         // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UBP_BannerEditorTile_C>();
 	}
 };
-static_assert(alignof(UBP_BannerEditorTile_C) == 0x322CBBB8, "Wrong alignment on UBP_BannerEditorTile_C");
-static_assert(sizeof(UBP_BannerEditorTile_C) == 0x322CBBB8, "Wrong size on UBP_BannerEditorTile_C");
+static_assert(alignof(UBP_BannerEditorTile_C) == 0x000008, "Wrong alignment on UBP_BannerEditorTile_C");
+static_assert(sizeof(UBP_BannerEditorTile_C) == 0x0008F8, "Wrong size on UBP_BannerEditorTile_C");
 static_assert(offsetof(UBP_BannerEditorTile_C, UberGraphFrame) == 0x0008B0, "Member 'UBP_BannerEditorTile_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_BannerEditorTile_C, ColorImage) == 0x0008B8, "Member 'UBP_BannerEditorTile_C::ColorImage' has a wrong offset!");
 static_assert(offsetof(UBP_BannerEditorTile_C, CommonWidgetSwitcher_0) == 0x0008C0, "Member 'UBP_BannerEditorTile_C::CommonWidgetSwitcher_0' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ActiveModifierItemHUD.ActiveModifierItemHUD_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UActiveModifierItemHUD_C final : public UCommonUserWidget
 {
 public:
@@ -36,8 +36,8 @@ public:
 		return GetDefaultObjImpl<UActiveModifierItemHUD_C>();
 	}
 };
-static_assert(alignof(UActiveModifierItemHUD_C) == 0x322CBBB8, "Wrong alignment on UActiveModifierItemHUD_C");
-static_assert(sizeof(UActiveModifierItemHUD_C) == 0x322CBBB8, "Wrong size on UActiveModifierItemHUD_C");
+static_assert(alignof(UActiveModifierItemHUD_C) == 0x000008, "Wrong alignment on UActiveModifierItemHUD_C");
+static_assert(sizeof(UActiveModifierItemHUD_C) == 0x000240, "Wrong size on UActiveModifierItemHUD_C");
 static_assert(offsetof(UActiveModifierItemHUD_C, ImageModifier) == 0x000238, "Member 'UActiveModifierItemHUD_C::ImageModifier' has a wrong offset!");
 
 }

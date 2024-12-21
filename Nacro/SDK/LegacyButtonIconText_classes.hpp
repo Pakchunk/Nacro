@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LegacyButtonIconText.LegacyButtonIconText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0108 (0x0970 - 0x0868)
 class ULegacyButtonIconText_C final : public UFortBaseButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0868(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0868(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_Outro;                                        // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0878(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         ContentHBox;                                       // 0x0880(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,7 +35,7 @@ public:
 	class USizeBox*                               SizeBox;                                           // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextBlock;                                         // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   DisplayText;                                       // 0x08B0(0x0018)(Edit, BlueprintVisible, Config, ExposeOnSpawn)
-	struct FSlateBrush                            IconBrush;                                         // 0x08C8(0x322CBBB8)(Edit, BlueprintVisible, Config, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x08C8(0x0090)(Edit, BlueprintVisible, Config, ExposeOnSpawn)
 	bool                                          HasIcon;                                           // 0x0958(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          HasText;                                           // 0x0959(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	ETextJustify                                  Content_Align;                                     // 0x095A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -69,8 +69,8 @@ public:
 		return GetDefaultObjImpl<ULegacyButtonIconText_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonIconText_C) == 0x322CBBB8, "Wrong alignment on ULegacyButtonIconText_C");
-static_assert(sizeof(ULegacyButtonIconText_C) == 0x322CBBB8, "Wrong size on ULegacyButtonIconText_C");
+static_assert(alignof(ULegacyButtonIconText_C) == 0x000008, "Wrong alignment on ULegacyButtonIconText_C");
+static_assert(sizeof(ULegacyButtonIconText_C) == 0x000970, "Wrong size on ULegacyButtonIconText_C");
 static_assert(offsetof(ULegacyButtonIconText_C, UberGraphFrame) == 0x000868, "Member 'ULegacyButtonIconText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULegacyButtonIconText_C, Anim_Outro) == 0x000870, "Member 'ULegacyButtonIconText_C::Anim_Outro' has a wrong offset!");
 static_assert(offsetof(ULegacyButtonIconText_C, Anim_Intro) == 0x000878, "Member 'ULegacyButtonIconText_C::Anim_Intro' has a wrong offset!");

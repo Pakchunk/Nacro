@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function BluGloInventory.BluGloInventory_C.ExecuteUbergraph_BluGloInventory
-// 0x053F (0x053F - 0x0000)
-struct alignas(0x53F) BluGloInventory_C_ExecuteUbergraph_BluGloInventory final
+// 0x0050 (0x0050 - 0x0000)
+struct BluGloInventory_C_ExecuteUbergraph_BluGloInventory final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,8 +31,8 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory) == 0x00053F, "Wrong alignment on BluGloInventory_C_ExecuteUbergraph_BluGloInventory");
-static_assert(sizeof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory) == 0x00053F, "Wrong size on BluGloInventory_C_ExecuteUbergraph_BluGloInventory");
+static_assert(alignof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory) == 0x000008, "Wrong alignment on BluGloInventory_C_ExecuteUbergraph_BluGloInventory");
+static_assert(sizeof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory) == 0x000050, "Wrong size on BluGloInventory_C_ExecuteUbergraph_BluGloInventory");
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, EntryPoint) == 0x000000, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -45,34 +45,34 @@ static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, CallF
 static_assert(offsetof(BluGloInventory_C_ExecuteUbergraph_BluGloInventory, CallFunc_IsValid_ReturnValue2) == 0x00004B, "Member 'BluGloInventory_C_ExecuteUbergraph_BluGloInventory::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function BluGloInventory.BluGloInventory_C.HandleItemPickedUp
-// 0x04EA (0x04EA - 0x0000)
-struct alignas(0x4EA) BluGloInventory_C_HandleItemPickedUp final
+// 0x0010 (0x0010 - 0x0000)
+struct BluGloInventory_C_HandleItemPickedUp final
 {
 public:
 	class UFortWorldItem*                         New_Item;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Count;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloInventory_C_HandleItemPickedUp) == 0x0004EA, "Wrong alignment on BluGloInventory_C_HandleItemPickedUp");
-static_assert(sizeof(BluGloInventory_C_HandleItemPickedUp) == 0x0004EA, "Wrong size on BluGloInventory_C_HandleItemPickedUp");
+static_assert(alignof(BluGloInventory_C_HandleItemPickedUp) == 0x000008, "Wrong alignment on BluGloInventory_C_HandleItemPickedUp");
+static_assert(sizeof(BluGloInventory_C_HandleItemPickedUp) == 0x000010, "Wrong size on BluGloInventory_C_HandleItemPickedUp");
 static_assert(offsetof(BluGloInventory_C_HandleItemPickedUp, New_Item) == 0x000000, "Member 'BluGloInventory_C_HandleItemPickedUp::New_Item' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_HandleItemPickedUp, Count) == 0x000008, "Member 'BluGloInventory_C_HandleItemPickedUp::Count' has a wrong offset!");
 
 // Function BluGloInventory.BluGloInventory_C.HandleOnWorldItemListChanged
-// 0x0506 (0x0506 - 0x0000)
-struct alignas(0x506) BluGloInventory_C_HandleOnWorldItemListChanged final
+// 0x0020 (0x0020 - 0x0000)
+struct BluGloInventory_C_HandleOnWorldItemListChanged final
 {
 public:
 	TArray<class UFortWorldItem*>                 Items_Added;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 Items_Removed;                                     // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(BluGloInventory_C_HandleOnWorldItemListChanged) == 0x000506, "Wrong alignment on BluGloInventory_C_HandleOnWorldItemListChanged");
-static_assert(sizeof(BluGloInventory_C_HandleOnWorldItemListChanged) == 0x000506, "Wrong size on BluGloInventory_C_HandleOnWorldItemListChanged");
+static_assert(alignof(BluGloInventory_C_HandleOnWorldItemListChanged) == 0x000008, "Wrong alignment on BluGloInventory_C_HandleOnWorldItemListChanged");
+static_assert(sizeof(BluGloInventory_C_HandleOnWorldItemListChanged) == 0x000020, "Wrong size on BluGloInventory_C_HandleOnWorldItemListChanged");
 static_assert(offsetof(BluGloInventory_C_HandleOnWorldItemListChanged, Items_Added) == 0x000000, "Member 'BluGloInventory_C_HandleOnWorldItemListChanged::Items_Added' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_HandleOnWorldItemListChanged, Items_Removed) == 0x000010, "Member 'BluGloInventory_C_HandleOnWorldItemListChanged::Items_Removed' has a wrong offset!");
 
 // Function BluGloInventory.BluGloInventory_C.Update
-// 0x460065 (0x460065 - 0x0000)
-struct alignas(0x460065) BluGloInventory_C_Update final
+// 0x0060 (0x0060 - 0x0000)
+struct BluGloInventory_C_Update final
 {
 public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -91,8 +91,8 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0040(0x0018)()
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloInventory_C_Update) == 0x460065, "Wrong alignment on BluGloInventory_C_Update");
-static_assert(sizeof(BluGloInventory_C_Update) == 0x460065, "Wrong size on BluGloInventory_C_Update");
+static_assert(alignof(BluGloInventory_C_Update) == 0x000008, "Wrong alignment on BluGloInventory_C_Update");
+static_assert(sizeof(BluGloInventory_C_Update) == 0x000060, "Wrong size on BluGloInventory_C_Update");
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'BluGloInventory_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_GetContext_ReturnValue2) == 0x000008, "Member 'BluGloInventory_C_Update::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(BluGloInventory_C_Update, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BluGloInventory_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");

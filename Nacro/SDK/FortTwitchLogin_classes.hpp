@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FortTwitchLogin.FortTwitchLogin_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x02F8 - 0x0290)
 class UFortTwitchLogin_C final : public UFortTwitchLogin
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           NotSignedInBox;                                    // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           SignedInBox;                                       // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      SignInButton;                                      // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -68,8 +68,8 @@ public:
 		return GetDefaultObjImpl<UFortTwitchLogin_C>();
 	}
 };
-static_assert(alignof(UFortTwitchLogin_C) == 0x322CBBB8, "Wrong alignment on UFortTwitchLogin_C");
-static_assert(sizeof(UFortTwitchLogin_C) == 0x322CBBB8, "Wrong size on UFortTwitchLogin_C");
+static_assert(alignof(UFortTwitchLogin_C) == 0x000008, "Wrong alignment on UFortTwitchLogin_C");
+static_assert(sizeof(UFortTwitchLogin_C) == 0x0002F8, "Wrong size on UFortTwitchLogin_C");
 static_assert(offsetof(UFortTwitchLogin_C, UberGraphFrame) == 0x000290, "Member 'UFortTwitchLogin_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFortTwitchLogin_C, NotSignedInBox) == 0x000298, "Member 'UFortTwitchLogin_C::NotSignedInBox' has a wrong offset!");
 static_assert(offsetof(UFortTwitchLogin_C, SignedInBox) == 0x0002A0, "Member 'UFortTwitchLogin_C::SignedInBox' has a wrong offset!");

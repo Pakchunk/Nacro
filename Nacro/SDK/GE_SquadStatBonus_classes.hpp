@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_SquadStatBonus.GE_SquadStatBonus_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x0660 - 0x0660)
 class UGE_SquadStatBonus_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_SquadStatBonus_C>();
 	}
 };
-static_assert(alignof(UGE_SquadStatBonus_C) == 0x1182E980, "Wrong alignment on UGE_SquadStatBonus_C");
-static_assert(sizeof(UGE_SquadStatBonus_C) == 0x1182E980, "Wrong size on UGE_SquadStatBonus_C");
+static_assert(alignof(UGE_SquadStatBonus_C) == 0x000010, "Wrong alignment on UGE_SquadStatBonus_C");
+static_assert(sizeof(UGE_SquadStatBonus_C) == 0x000660, "Wrong size on UGE_SquadStatBonus_C");
 
 }
 

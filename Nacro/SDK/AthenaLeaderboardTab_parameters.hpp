@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.ExecuteUbergraph_AthenaLeaderboardTab
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab final
 {
 public:
@@ -55,7 +55,7 @@ public:
 	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_Event_Button;                               // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAthenaPlaylistLeaderboardData         K2Node_Event_PlaylistTabData2;                     // 0x0070(0x1182E980)(ConstParm)
+	struct FAthenaPlaylistLeaderboardData         K2Node_Event_PlaylistTabData2;                     // 0x0070(0x0048)(ConstParm)
 	bool                                          K2Node_Event_bWasSuccessful;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortLeaderboardRowProxyInstance*       K2Node_Event_LocalUserRow;                         // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,7 +68,7 @@ public:
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_10A[0x2];                                      // 0x010A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable2;                                // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAthenaPlaylistLeaderboardData         K2Node_Event_PlaylistTabData;                      // 0x0110(0x1182E980)(ConstParm)
+	struct FAthenaPlaylistLeaderboardData         K2Node_Event_PlaylistTabData;                      // 0x0110(0x0048)(ConstParm)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0168(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_Variable5;                               // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -82,8 +82,8 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select5_Default;                            // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab) == 0x1182E980, "Wrong alignment on AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab");
-static_assert(sizeof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab) == 0x1182E980, "Wrong size on AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab");
+static_assert(alignof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab) == 0x000008, "Wrong alignment on AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab");
+static_assert(sizeof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab) == 0x0001B0, "Wrong size on AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab");
 static_assert(offsetof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab, EntryPoint) == 0x000000, "Member 'AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab, Temp_int_Variable) == 0x000004, "Member 'AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -136,14 +136,14 @@ static_assert(offsetof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboard
 static_assert(offsetof(AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab, K2Node_Select5_Default) == 0x0001A9, "Member 'AthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab::K2Node_Select5_Default' has a wrong offset!");
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateListHeader
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct AthenaLeaderboardTab_C_OnUpdateListHeader final
 {
 public:
-	struct FAthenaPlaylistLeaderboardData         PlaylistTabData;                                   // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAthenaPlaylistLeaderboardData         PlaylistTabData;                                   // 0x0000(0x0048)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaLeaderboardTab_C_OnUpdateListHeader) == 0x1182E980, "Wrong alignment on AthenaLeaderboardTab_C_OnUpdateListHeader");
-static_assert(sizeof(AthenaLeaderboardTab_C_OnUpdateListHeader) == 0x1182E980, "Wrong size on AthenaLeaderboardTab_C_OnUpdateListHeader");
+static_assert(alignof(AthenaLeaderboardTab_C_OnUpdateListHeader) == 0x000008, "Wrong alignment on AthenaLeaderboardTab_C_OnUpdateListHeader");
+static_assert(sizeof(AthenaLeaderboardTab_C_OnUpdateListHeader) == 0x000048, "Wrong size on AthenaLeaderboardTab_C_OnUpdateListHeader");
 static_assert(offsetof(AthenaLeaderboardTab_C_OnUpdateListHeader, PlaylistTabData) == 0x000000, "Member 'AthenaLeaderboardTab_C_OnUpdateListHeader::PlaylistTabData' has a wrong offset!");
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateLeaderboardListUI
@@ -163,15 +163,15 @@ static_assert(offsetof(AthenaLeaderboardTab_C_OnUpdateLeaderboardListUI, LocalUs
 static_assert(offsetof(AthenaLeaderboardTab_C_OnUpdateLeaderboardListUI, ErrorStr) == 0x000010, "Member 'AthenaLeaderboardTab_C_OnUpdateLeaderboardListUI::ErrorStr' has a wrong offset!");
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateTabButtonText
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct AthenaLeaderboardTab_C_OnUpdateTabButtonText final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAthenaPlaylistLeaderboardData         PlaylistTabData;                                   // 0x0008(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FAthenaPlaylistLeaderboardData         PlaylistTabData;                                   // 0x0008(0x0048)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaLeaderboardTab_C_OnUpdateTabButtonText) == 0x1182E980, "Wrong alignment on AthenaLeaderboardTab_C_OnUpdateTabButtonText");
-static_assert(sizeof(AthenaLeaderboardTab_C_OnUpdateTabButtonText) == 0x1182E980, "Wrong size on AthenaLeaderboardTab_C_OnUpdateTabButtonText");
+static_assert(alignof(AthenaLeaderboardTab_C_OnUpdateTabButtonText) == 0x000008, "Wrong alignment on AthenaLeaderboardTab_C_OnUpdateTabButtonText");
+static_assert(sizeof(AthenaLeaderboardTab_C_OnUpdateTabButtonText) == 0x000050, "Wrong size on AthenaLeaderboardTab_C_OnUpdateTabButtonText");
 static_assert(offsetof(AthenaLeaderboardTab_C_OnUpdateTabButtonText, Button) == 0x000000, "Member 'AthenaLeaderboardTab_C_OnUpdateTabButtonText::Button' has a wrong offset!");
 static_assert(offsetof(AthenaLeaderboardTab_C_OnUpdateTabButtonText, PlaylistTabData) == 0x000008, "Member 'AthenaLeaderboardTab_C_OnUpdateTabButtonText::PlaylistTabData' has a wrong offset!");
 
@@ -278,7 +278,7 @@ static_assert(offsetof(AthenaLeaderboardTab_C_OnFriendTypeChangeGamepad, K2Node_
 static_assert(offsetof(AthenaLeaderboardTab_C_OnFriendTypeChangeGamepad, CallFunc_IsUsingGamepad_ReturnValue) == 0x000019, "Member 'AthenaLeaderboardTab_C_OnFriendTypeChangeGamepad::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryStateChanged
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct AthenaLeaderboardTab_C_OnQueryStateChanged final
 {
 public:
@@ -291,10 +291,10 @@ public:
 	bool                                          CallFunc_CanShowFriendsOnlyLeaderboard_ReturnValue; // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 };
-static_assert(alignof(AthenaLeaderboardTab_C_OnQueryStateChanged) == 0x11821D80, "Wrong alignment on AthenaLeaderboardTab_C_OnQueryStateChanged");
-static_assert(sizeof(AthenaLeaderboardTab_C_OnQueryStateChanged) == 0x11821D80, "Wrong size on AthenaLeaderboardTab_C_OnQueryStateChanged");
+static_assert(alignof(AthenaLeaderboardTab_C_OnQueryStateChanged) == 0x000008, "Wrong alignment on AthenaLeaderboardTab_C_OnQueryStateChanged");
+static_assert(sizeof(AthenaLeaderboardTab_C_OnQueryStateChanged) == 0x000020, "Wrong size on AthenaLeaderboardTab_C_OnQueryStateChanged");
 static_assert(offsetof(AthenaLeaderboardTab_C_OnQueryStateChanged, bQueryInProgress) == 0x000000, "Member 'AthenaLeaderboardTab_C_OnQueryStateChanged::bQueryInProgress' has a wrong offset!");
 static_assert(offsetof(AthenaLeaderboardTab_C_OnQueryStateChanged, Temp_bool_Variable) == 0x000001, "Member 'AthenaLeaderboardTab_C_OnQueryStateChanged::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaLeaderboardTab_C_OnQueryStateChanged, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'AthenaLeaderboardTab_C_OnQueryStateChanged::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");

@@ -19,22 +19,22 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass MenuScreen_Commando.MenuScreen_Commando_C
-// 0x7500 (0x11828C80 - 0x11821780)
+// 0x0618 (0x09E8 - 0x03D0)
 class UMenuScreen_Commando_C final : public UFrontendAnimInstance
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x11821D80)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_F70AA5C441806953E84736BA8BC1318A; // 0x03D8(0x11828B00)()
-	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_91B5767B40519A79E7AEC38404372807; // 0x0420(0x11828C80)()
-	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_4B2EDC5B4B1A02DB26673C9C5AA47EF2; // 0x04E0(0x11828C80)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_476FB3144FF01CDECEC25D9FCA0BF170; // 0x05A0(0x11821D80)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_78BB02D34BB0CD13E52B729CD15EC48B; // 0x05E8(0x11821D80)()
-	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_43CBCFD8445ED0E03161C4B571134CE9; // 0x0630(0x11828C80)()
-	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_3695B48646E0C5839953A39C17D3DEF9; // 0x06F0(0x11828C80)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_30CEFFAA4FD7F57FD5A6EDB40D31DE9D; // 0x07B0(0x11828B00)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_ECCC70F04489C85C49B82FB532A3D3A9; // 0x0810(0x11821D80)()
-	struct FAnimNode_BlendListByEnum              AnimGraphNode_BlendListByEnum_A3E599E943E9B22B3BC78EA28C49C57B; // 0x0880(0x11828B00)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_CDEB41CC42B9DE30260861A50A7F4D48; // 0x0960(0x11821D80)()
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root_F70AA5C441806953E84736BA8BC1318A; // 0x03D8(0x0048)()
+	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_91B5767B40519A79E7AEC38404372807; // 0x0420(0x00C0)()
+	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_4B2EDC5B4B1A02DB26673C9C5AA47EF2; // 0x04E0(0x00C0)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_476FB3144FF01CDECEC25D9FCA0BF170; // 0x05A0(0x0048)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_78BB02D34BB0CD13E52B729CD15EC48B; // 0x05E8(0x0048)()
+	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_43CBCFD8445ED0E03161C4B571134CE9; // 0x0630(0x00C0)()
+	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_3695B48646E0C5839953A39C17D3DEF9; // 0x06F0(0x00C0)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_30CEFFAA4FD7F57FD5A6EDB40D31DE9D; // 0x07B0(0x0060)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_ECCC70F04489C85C49B82FB532A3D3A9; // 0x0810(0x0070)()
+	struct FAnimNode_BlendListByEnum              AnimGraphNode_BlendListByEnum_A3E599E943E9B22B3BC78EA28C49C57B; // 0x0880(0x00E0)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_CDEB41CC42B9DE30260861A50A7F4D48; // 0x0960(0x0070)()
 	UMulticastDelegateProperty_                   MenuScreenDispatcher;                              // 0x09D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          HasBeenSelected;                                   // 0x09E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UMenuScreen_Commando_C>();
 	}
 };
-static_assert(alignof(UMenuScreen_Commando_C) == 0x11828C80, "Wrong alignment on UMenuScreen_Commando_C");
-static_assert(sizeof(UMenuScreen_Commando_C) == 0x11828C80, "Wrong size on UMenuScreen_Commando_C");
+static_assert(alignof(UMenuScreen_Commando_C) == 0x000008, "Wrong alignment on UMenuScreen_Commando_C");
+static_assert(sizeof(UMenuScreen_Commando_C) == 0x0009E8, "Wrong size on UMenuScreen_Commando_C");
 static_assert(offsetof(UMenuScreen_Commando_C, UberGraphFrame) == 0x0003D0, "Member 'UMenuScreen_Commando_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_Root_F70AA5C441806953E84736BA8BC1318A) == 0x0003D8, "Member 'UMenuScreen_Commando_C::AnimGraphNode_Root_F70AA5C441806953E84736BA8BC1318A' has a wrong offset!");
 static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_TwoBoneIK_91B5767B40519A79E7AEC38404372807) == 0x000420, "Member 'UMenuScreen_Commando_C::AnimGraphNode_TwoBoneIK_91B5767B40519A79E7AEC38404372807' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotEntry.ItemTransformSlotEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0288 - 0x0238)
 class UItemTransformSlotEntry_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UPanelButton_C*                         PanelButton;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                SacrificePointText;                                // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortMultiSizeItemCard*                 SelectedItemCard;                                  // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformSlotEntry_C>();
 	}
 };
-static_assert(alignof(UItemTransformSlotEntry_C) == 0x322CBBB8, "Wrong alignment on UItemTransformSlotEntry_C");
-static_assert(sizeof(UItemTransformSlotEntry_C) == 0x322CBBB8, "Wrong size on UItemTransformSlotEntry_C");
+static_assert(alignof(UItemTransformSlotEntry_C) == 0x000008, "Wrong alignment on UItemTransformSlotEntry_C");
+static_assert(sizeof(UItemTransformSlotEntry_C) == 0x000288, "Wrong size on UItemTransformSlotEntry_C");
 static_assert(offsetof(UItemTransformSlotEntry_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformSlotEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransformSlotEntry_C, PanelButton) == 0x000240, "Member 'UItemTransformSlotEntry_C::PanelButton' has a wrong offset!");
 static_assert(offsetof(UItemTransformSlotEntry_C, SacrificePointText) == 0x000248, "Member 'UItemTransformSlotEntry_C::SacrificePointText' has a wrong offset!");

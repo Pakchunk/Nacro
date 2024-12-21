@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ScoreBarsWidget.ScoreBarsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0B08 (0x0D68 - 0x0260)
 class UScoreBarsWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UCollectionMultiProgressBar_C*          BuildingMultiProgressBar;                          // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScoreMessageNumber_C*                  BuildingScoreMessageNumber;                        // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCollectionMultiProgressBar_C*          CombatMultiProgressBar;                            // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,15 +46,16 @@ public:
 	bool                                          bShowSideBarIcons;                                 // 0x02F5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bOnlyShowIconsForTopCategory;                      // 0x02F6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bOnlyShowBarsWithCountInRange;                     // 0x02F7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FFortMultiSizeBrush                    CombatCategoryIcon;                                // 0x02F8(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FFortMultiSizeBrush                    BuildingCategoryIcon;                              // 0x0658(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FFortMultiSizeBrush                    UtilityCategoryIcon;                               // 0x09B8(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortMultiSizeBrush                    CombatCategoryIcon;                                // 0x02F8(0x0360)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortMultiSizeBrush                    BuildingCategoryIcon;                              // 0x0658(0x0360)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortMultiSizeBrush                    UtilityCategoryIcon;                               // 0x09B8(0x0360)(Edit, BlueprintVisible, DisableEditOnInstance)
 	EFortBrushSize                                CategoryIconSize;                                  // 0x0D18(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBrushSize                                BadgeIconSize;                                     // 0x0D19(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D1A[0x2];                                      // 0x0D1A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                CategoriesMargin;                                  // 0x0D1C(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
-	struct FMargin                                BarsMargin;                                        // 0x0D2C(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
-	struct FMargin                                BarsIconMargin;                                    // 0x0D3C(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                CategoriesMargin;                                  // 0x0D1C(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                BarsMargin;                                        // 0x0D2C(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                BarsIconMargin;                                    // 0x0D3C(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	uint8                                         Pad_D4C[0x4];                                      // 0x0D4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIMessageManager*                  MessageManager;                                    // 0x0D50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         MaxScoreMessagesDisplayed;                         // 0x0D58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDisplayScoreStream;                               // 0x0D5C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -91,8 +92,8 @@ public:
 		return GetDefaultObjImpl<UScoreBarsWidget_C>();
 	}
 };
-static_assert(alignof(UScoreBarsWidget_C) == 0x322CBBB8, "Wrong alignment on UScoreBarsWidget_C");
-static_assert(sizeof(UScoreBarsWidget_C) == 0x322CBBB8, "Wrong size on UScoreBarsWidget_C");
+static_assert(alignof(UScoreBarsWidget_C) == 0x000008, "Wrong alignment on UScoreBarsWidget_C");
+static_assert(sizeof(UScoreBarsWidget_C) == 0x000D68, "Wrong size on UScoreBarsWidget_C");
 static_assert(offsetof(UScoreBarsWidget_C, UberGraphFrame) == 0x000260, "Member 'UScoreBarsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UScoreBarsWidget_C, BuildingMultiProgressBar) == 0x000268, "Member 'UScoreBarsWidget_C::BuildingMultiProgressBar' has a wrong offset!");
 static_assert(offsetof(UScoreBarsWidget_C, BuildingScoreMessageNumber) == 0x000270, "Member 'UScoreBarsWidget_C::BuildingScoreMessageNumber' has a wrong offset!");

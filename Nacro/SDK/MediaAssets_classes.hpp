@@ -174,7 +174,7 @@ static_assert(sizeof(UMediaPlaylist) == 0x000038, "Wrong size on UMediaPlaylist"
 static_assert(offsetof(UMediaPlaylist, Items) == 0x000028, "Member 'UMediaPlaylist::Items' has a wrong offset!");
 
 // Class MediaAssets.MediaSoundWave
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x00D8 (0x0340 - 0x0268)
 class UMediaSoundWave final : public USoundWave
 {
 public:
@@ -194,8 +194,8 @@ public:
 		return GetDefaultObjImpl<UMediaSoundWave>();
 	}
 };
-static_assert(alignof(UMediaSoundWave) == 0x11821D80, "Wrong alignment on UMediaSoundWave");
-static_assert(sizeof(UMediaSoundWave) == 0x11821D80, "Wrong size on UMediaSoundWave");
+static_assert(alignof(UMediaSoundWave) == 0x000008, "Wrong alignment on UMediaSoundWave");
+static_assert(sizeof(UMediaSoundWave) == 0x000340, "Wrong size on UMediaSoundWave");
 static_assert(offsetof(UMediaSoundWave, AudioTrackIndex) == 0x000270, "Member 'UMediaSoundWave::AudioTrackIndex' has a wrong offset!");
 static_assert(offsetof(UMediaSoundWave, MediaPlayer) == 0x000278, "Member 'UMediaSoundWave::MediaPlayer' has a wrong offset!");
 
@@ -310,7 +310,7 @@ static_assert(sizeof(UPlatformMediaSource) == 0x000038, "Wrong size on UPlatform
 static_assert(offsetof(UPlatformMediaSource, MediaSource) == 0x000030, "Member 'UPlatformMediaSource::MediaSource' has a wrong offset!");
 
 // Class MediaAssets.MediaTexture
-// 0x0000 (0x11821300 - 0x11821300)
+// 0x00E8 (0x01B0 - 0x00C8)
 class UMediaTexture final : public UTexture
 {
 public:
@@ -318,7 +318,8 @@ public:
 	ETextureAddress                               AddressX;                                          // 0x00D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETextureAddress                               AddressY;                                          // 0x00D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D2[0x2];                                       // 0x00D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ClearColor;                                        // 0x00D4(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ClearColor;                                        // 0x00D4(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMediaPlayer*                           MediaPlayer;                                       // 0x00E8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         VideoTrackIndex;                                   // 0x00F0(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_F4[0xBC];                                      // 0x00F4(0x00BC)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -338,8 +339,8 @@ public:
 		return GetDefaultObjImpl<UMediaTexture>();
 	}
 };
-static_assert(alignof(UMediaTexture) == 0x11821300, "Wrong alignment on UMediaTexture");
-static_assert(sizeof(UMediaTexture) == 0x11821300, "Wrong size on UMediaTexture");
+static_assert(alignof(UMediaTexture) == 0x000008, "Wrong alignment on UMediaTexture");
+static_assert(sizeof(UMediaTexture) == 0x0001B0, "Wrong size on UMediaTexture");
 static_assert(offsetof(UMediaTexture, AddressX) == 0x0000D0, "Member 'UMediaTexture::AddressX' has a wrong offset!");
 static_assert(offsetof(UMediaTexture, AddressY) == 0x0000D1, "Member 'UMediaTexture::AddressY' has a wrong offset!");
 static_assert(offsetof(UMediaTexture, ClearColor) == 0x0000D4, "Member 'UMediaTexture::ClearColor' has a wrong offset!");

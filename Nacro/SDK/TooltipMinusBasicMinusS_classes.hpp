@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Tooltip-Basic-S.Tooltip-Basic-S_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x02B0 - 0x0238)
 class UTooltipMinusBasicMinusS_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 _hr_;                                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         Body_HBox;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         Header_HBox;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UTooltipMinusBasicMinusS_C>();
 	}
 };
-static_assert(alignof(UTooltipMinusBasicMinusS_C) == 0x322CBBB8, "Wrong alignment on UTooltipMinusBasicMinusS_C");
-static_assert(sizeof(UTooltipMinusBasicMinusS_C) == 0x322CBBB8, "Wrong size on UTooltipMinusBasicMinusS_C");
+static_assert(alignof(UTooltipMinusBasicMinusS_C) == 0x000008, "Wrong alignment on UTooltipMinusBasicMinusS_C");
+static_assert(sizeof(UTooltipMinusBasicMinusS_C) == 0x0002B0, "Wrong size on UTooltipMinusBasicMinusS_C");
 static_assert(offsetof(UTooltipMinusBasicMinusS_C, UberGraphFrame) == 0x000238, "Member 'UTooltipMinusBasicMinusS_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTooltipMinusBasicMinusS_C, _hr_) == 0x000240, "Member 'UTooltipMinusBasicMinusS_C::_hr_' has a wrong offset!");
 static_assert(offsetof(UTooltipMinusBasicMinusS_C, Body_HBox) == 0x000248, "Member 'UTooltipMinusBasicMinusS_C::Body_HBox' has a wrong offset!");

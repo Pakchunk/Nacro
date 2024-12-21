@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemCountRecycling.ItemCountRecycling_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0288 - 0x0238)
 class UItemCountRecycling_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UFortItemCountTextBlock*                CountText;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       DisplayName;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemIcon*                          IconLeft;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 		return GetDefaultObjImpl<UItemCountRecycling_C>();
 	}
 };
-static_assert(alignof(UItemCountRecycling_C) == 0x322CBBB8, "Wrong alignment on UItemCountRecycling_C");
-static_assert(sizeof(UItemCountRecycling_C) == 0x322CBBB8, "Wrong size on UItemCountRecycling_C");
+static_assert(alignof(UItemCountRecycling_C) == 0x000008, "Wrong alignment on UItemCountRecycling_C");
+static_assert(sizeof(UItemCountRecycling_C) == 0x000288, "Wrong size on UItemCountRecycling_C");
 static_assert(offsetof(UItemCountRecycling_C, UberGraphFrame) == 0x000238, "Member 'UItemCountRecycling_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemCountRecycling_C, CountText) == 0x000240, "Member 'UItemCountRecycling_C::CountText' has a wrong offset!");
 static_assert(offsetof(UItemCountRecycling_C, DisplayName) == 0x000248, "Member 'UItemCountRecycling_C::DisplayName' has a wrong offset!");

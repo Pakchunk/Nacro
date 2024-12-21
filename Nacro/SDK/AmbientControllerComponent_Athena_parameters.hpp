@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.ExecuteUbergraph_AmbientControllerComponent_Athena
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0138 (0x0138 - 0x0000)
 struct AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena final
 {
 public:
@@ -38,7 +38,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0040(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0040(0x0008)(NoDestructor)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortTimeOfDayManager*                  CallFunc_GetTimeOfDayManagerFromContext_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,13 +50,14 @@ public:
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortTimeOfDayManager*                  CallFunc_GetTimeOfDayManagerFromContext_ReturnValue2; // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetViewTarget_ReturnValue2;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorUpVector_ReturnValue;             // 0x0088(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorUpVector_ReturnValue;             // 0x0088(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             K2Node_Select2_Default;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x00A0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00AC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00B8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00C4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue2;        // 0x00D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x00A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00AC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00B8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00C4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue2;        // 0x00D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Trace_ReturnValue;                        // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Trace_ReturnValue2;                       // 0x00DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Trace_ReturnValue3;                       // 0x00DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -79,8 +80,8 @@ public:
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_Enabled;                        // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena) == 0x11821D80, "Wrong alignment on AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena");
-static_assert(sizeof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena) == 0x11821D80, "Wrong size on AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena");
+static_assert(alignof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena) == 0x000008, "Wrong alignment on AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena");
+static_assert(sizeof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena) == 0x000138, "Wrong size on AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena");
 static_assert(offsetof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena, EntryPoint) == 0x000000, "Member 'AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena, CallFunc_IsValid_ReturnValue2) == 0x000005, "Member 'AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
@@ -131,14 +132,14 @@ static_assert(offsetof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_Ambi
 static_assert(offsetof(AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena, K2Node_CustomEvent_Enabled) == 0x000131, "Member 'AmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena::K2Node_CustomEvent_Enabled' has a wrong offset!");
 
 // Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.Set Storm Amb Layer Enabled
-// 0x610044 (0x610044 - 0x0000)
-struct alignas(0x610044) AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled final
+// 0x0001 (0x0001 - 0x0000)
+struct AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled) == 0x610044, "Wrong alignment on AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled");
-static_assert(sizeof(AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled) == 0x610044, "Wrong size on AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled");
+static_assert(alignof(AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled) == 0x000001, "Wrong alignment on AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled");
+static_assert(sizeof(AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled) == 0x000001, "Wrong size on AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled");
 static_assert(offsetof(AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled, Enabled) == 0x000000, "Member 'AmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled::Enabled' has a wrong offset!");
 
 // Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.On Game Phase Step Change
@@ -223,22 +224,22 @@ static_assert(offsetof(AmbientControllerComponent_Athena_C_Crossfade, CallFunc_S
 static_assert(offsetof(AmbientControllerComponent_Athena_C_Crossfade, CallFunc_SpawnSound2D_ReturnValue2) == 0x000020, "Member 'AmbientControllerComponent_Athena_C_Crossfade::CallFunc_SpawnSound2D_ReturnValue2' has a wrong offset!");
 
 // Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.Trace
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct AmbientControllerComponent_Athena_C_Trace final
 {
 public:
-	struct FVector                                Start;                                             // 0x0000(0x11821300)(ConstParm, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Direction;                                         // 0x000C(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Start;                                             // 0x0000(0x000C)(ConstParm, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Direction;                                         // 0x000C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AFortPlayerPawn*>                CallFunc_GetAllFortPlayerPawns_OutFortPlayerPawns; // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x0048(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x0048(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AmbientControllerComponent_Athena_C_Trace) == 0x11821D80, "Wrong alignment on AmbientControllerComponent_Athena_C_Trace");
-static_assert(sizeof(AmbientControllerComponent_Athena_C_Trace) == 0x11821D80, "Wrong size on AmbientControllerComponent_Athena_C_Trace");
+static_assert(alignof(AmbientControllerComponent_Athena_C_Trace) == 0x000008, "Wrong alignment on AmbientControllerComponent_Athena_C_Trace");
+static_assert(sizeof(AmbientControllerComponent_Athena_C_Trace) == 0x0000D8, "Wrong size on AmbientControllerComponent_Athena_C_Trace");
 static_assert(offsetof(AmbientControllerComponent_Athena_C_Trace, Start) == 0x000000, "Member 'AmbientControllerComponent_Athena_C_Trace::Start' has a wrong offset!");
 static_assert(offsetof(AmbientControllerComponent_Athena_C_Trace, Direction) == 0x00000C, "Member 'AmbientControllerComponent_Athena_C_Trace::Direction' has a wrong offset!");
 static_assert(offsetof(AmbientControllerComponent_Athena_C_Trace, ReturnValue) == 0x000018, "Member 'AmbientControllerComponent_Athena_C_Trace::ReturnValue' has a wrong offset!");

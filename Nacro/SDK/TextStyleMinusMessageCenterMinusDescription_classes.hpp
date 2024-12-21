@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-MessageCenter-Description.TextStyle-MessageCenter-Description_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusMessageCenterMinusDescription_C final : public UCommonTextStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusMessageCenterMinusDescription_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusMessageCenterMinusDescription_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusMessageCenterMinusDescription_C");
-static_assert(sizeof(UTextStyleMinusMessageCenterMinusDescription_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusMessageCenterMinusDescription_C");
+static_assert(alignof(UTextStyleMinusMessageCenterMinusDescription_C) == 0x000008, "Wrong alignment on UTextStyleMinusMessageCenterMinusDescription_C");
+static_assert(sizeof(UTextStyleMinusMessageCenterMinusDescription_C) == 0x0000D0, "Wrong size on UTextStyleMinusMessageCenterMinusDescription_C");
 
 }
 

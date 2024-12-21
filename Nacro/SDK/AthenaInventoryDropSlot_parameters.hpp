@@ -17,23 +17,23 @@ namespace SDK::Params
 {
 
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnEquipRequested__DelegateSignature
-// 0x062B (0x062B - 0x0000)
-struct alignas(0x62B) AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature final
 {
 public:
 	int32                                         SlotIndex_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature) == 0x00062B, "Wrong alignment on AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature) == 0x00062B, "Wrong size on AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature");
+static_assert(alignof(AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature");
+static_assert(sizeof(AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature");
 static_assert(offsetof(AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature, SlotIndex_0) == 0x000000, "Member 'AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature::SlotIndex_0' has a wrong offset!");
 
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.ExecuteUbergraph_AthenaInventoryDropSlot
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDragDropOperation*                     CallFunc_GetDragDroppingContent_ReturnValue;       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 	class UFortItem*                              K2Node_DynamicCast_AsFort_Item;                    // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot) == 0x11827900, "Wrong alignment on AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot");
-static_assert(sizeof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot) == 0x11827900, "Wrong size on AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot");
+static_assert(alignof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot) == 0x000008, "Wrong alignment on AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot");
+static_assert(sizeof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot) == 0x000068, "Wrong size on AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot");
 static_assert(offsetof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot, EntryPoint) == 0x000000, "Member 'AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot, K2Node_Event_MyGeometry) == 0x000004, "Member 'AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot::K2Node_Event_MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot, K2Node_Event_InDeltaTime) == 0x000038, "Member 'AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot::K2Node_Event_InDeltaTime' has a wrong offset!");
@@ -55,32 +55,33 @@ static_assert(offsetof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventor
 static_assert(offsetof(AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AthenaInventoryDropSlot_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryDropSlot_C_Tick) == 0x11827900, "Wrong alignment on AthenaInventoryDropSlot_C_Tick");
-static_assert(sizeof(AthenaInventoryDropSlot_C_Tick) == 0x11827900, "Wrong size on AthenaInventoryDropSlot_C_Tick");
+static_assert(alignof(AthenaInventoryDropSlot_C_Tick) == 0x000004, "Wrong alignment on AthenaInventoryDropSlot_C_Tick");
+static_assert(sizeof(AthenaInventoryDropSlot_C_Tick) == 0x000038, "Wrong size on AthenaInventoryDropSlot_C_Tick");
 static_assert(offsetof(AthenaInventoryDropSlot_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaInventoryDropSlot_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDropSlot_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaInventoryDropSlot_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnDrop
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct AthenaInventoryDropSlot_C_OnDrop final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(Parm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(Parm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAthenaInventoryDragDrop_C*             K2Node_DynamicCast_AsAthena_Inventory_Drag_Drop;   // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FInputEvent                            CallFunc_GetInputEventFromPointerEvent_ReturnValue; // 0x00D0(0x11827900)()
+	struct FInputEvent                            CallFunc_GetInputEventFromPointerEvent_ReturnValue; // 0x00D0(0x0020)()
 	bool                                          CallFunc_InputEvent_IsShiftDown_ReturnValue;       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F2[0x6];                                       // 0x00F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -98,8 +99,8 @@ public:
 	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryDropSlot_C_OnDrop) == 0x11829280, "Wrong alignment on AthenaInventoryDropSlot_C_OnDrop");
-static_assert(sizeof(AthenaInventoryDropSlot_C_OnDrop) == 0x11829280, "Wrong size on AthenaInventoryDropSlot_C_OnDrop");
+static_assert(alignof(AthenaInventoryDropSlot_C_OnDrop) == 0x000008, "Wrong alignment on AthenaInventoryDropSlot_C_OnDrop");
+static_assert(sizeof(AthenaInventoryDropSlot_C_OnDrop) == 0x000130, "Wrong size on AthenaInventoryDropSlot_C_OnDrop");
 static_assert(offsetof(AthenaInventoryDropSlot_C_OnDrop, MyGeometry) == 0x000000, "Member 'AthenaInventoryDropSlot_C_OnDrop::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDropSlot_C_OnDrop, PointerEvent) == 0x000038, "Member 'AthenaInventoryDropSlot_C_OnDrop::PointerEvent' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDropSlot_C_OnDrop, Operation) == 0x0000B0, "Member 'AthenaInventoryDropSlot_C_OnDrop::Operation' has a wrong offset!");

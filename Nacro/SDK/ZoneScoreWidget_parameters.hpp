@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function ZoneScoreWidget.ZoneScoreWidget_C.ExecuteUbergraph_ZoneScoreWidget
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget final
 {
 public:
@@ -32,7 +32,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0014(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0014(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue2;         // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -41,10 +41,10 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(struct FEndOfDayRecap& EndOfDayRecap)> K2Node_CreateDelegate_OutputDelegate;              // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
-	struct FEndOfDayRecap                         K2Node_CustomEvent_EndOfDayRecap;                  // 0x0088(0x11821780)(ConstParm)
+	struct FEndOfDayRecap                         K2Node_CustomEvent_EndOfDayRecap;                  // 0x0088(0x0020)(ConstParm)
 };
-static_assert(alignof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget) == 0x11827900, "Wrong alignment on ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget");
-static_assert(sizeof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget) == 0x11827900, "Wrong size on ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget");
+static_assert(alignof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget) == 0x000008, "Wrong alignment on ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget");
+static_assert(sizeof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget) == 0x0000A8, "Wrong size on ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget");
 static_assert(offsetof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget, EntryPoint) == 0x000000, "Member 'ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
@@ -61,26 +61,26 @@ static_assert(offsetof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget, K2Nod
 static_assert(offsetof(ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget, K2Node_CustomEvent_EndOfDayRecap) == 0x000088, "Member 'ZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget::K2Node_CustomEvent_EndOfDayRecap' has a wrong offset!");
 
 // Function ZoneScoreWidget.ZoneScoreWidget_C.OnEndOfDayRecap
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct ZoneScoreWidget_C_OnEndOfDayRecap final
 {
 public:
-	struct FEndOfDayRecap                         EndOfDayRecap;                                     // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEndOfDayRecap                         EndOfDayRecap;                                     // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ZoneScoreWidget_C_OnEndOfDayRecap) == 0x11821780, "Wrong alignment on ZoneScoreWidget_C_OnEndOfDayRecap");
-static_assert(sizeof(ZoneScoreWidget_C_OnEndOfDayRecap) == 0x11821780, "Wrong size on ZoneScoreWidget_C_OnEndOfDayRecap");
+static_assert(alignof(ZoneScoreWidget_C_OnEndOfDayRecap) == 0x000008, "Wrong alignment on ZoneScoreWidget_C_OnEndOfDayRecap");
+static_assert(sizeof(ZoneScoreWidget_C_OnEndOfDayRecap) == 0x000020, "Wrong size on ZoneScoreWidget_C_OnEndOfDayRecap");
 static_assert(offsetof(ZoneScoreWidget_C_OnEndOfDayRecap, EndOfDayRecap) == 0x000000, "Member 'ZoneScoreWidget_C_OnEndOfDayRecap::EndOfDayRecap' has a wrong offset!");
 
 // Function ZoneScoreWidget.ZoneScoreWidget_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct ZoneScoreWidget_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ZoneScoreWidget_C_Tick) == 0x11827900, "Wrong alignment on ZoneScoreWidget_C_Tick");
-static_assert(sizeof(ZoneScoreWidget_C_Tick) == 0x11827900, "Wrong size on ZoneScoreWidget_C_Tick");
+static_assert(alignof(ZoneScoreWidget_C_Tick) == 0x000004, "Wrong alignment on ZoneScoreWidget_C_Tick");
+static_assert(sizeof(ZoneScoreWidget_C_Tick) == 0x000038, "Wrong size on ZoneScoreWidget_C_Tick");
 static_assert(offsetof(ZoneScoreWidget_C_Tick, MyGeometry) == 0x000000, "Member 'ZoneScoreWidget_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_Tick, InDeltaTime) == 0x000034, "Member 'ZoneScoreWidget_C_Tick::InDeltaTime' has a wrong offset!");
 
@@ -96,8 +96,8 @@ static_assert(sizeof(ZoneScoreWidget_C_BeginTweeningScores) == 0x000008, "Wrong 
 static_assert(offsetof(ZoneScoreWidget_C_BeginTweeningScores, CallFunc_SpawnSound2D_ReturnValue) == 0x000000, "Member 'ZoneScoreWidget_C_BeginTweeningScores::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
 
 // Function ZoneScoreWidget.ZoneScoreWidget_C.UpdateScoresLERP
-// 0x0032 (0x0032 - 0x0000)
-struct alignas(0x19) ZoneScoreWidget_C_UpdateScoresLERP final
+// 0x0028 (0x0028 - 0x0000)
+struct ZoneScoreWidget_C_UpdateScoresLERP final
 {
 public:
 	float                                         LERP_Factor;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -109,8 +109,8 @@ public:
 	class UPlayerZoneTeamScoreContributionWidget_C* CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ZoneScoreWidget_C_UpdateScoresLERP) == 0x000019, "Wrong alignment on ZoneScoreWidget_C_UpdateScoresLERP");
-static_assert(sizeof(ZoneScoreWidget_C_UpdateScoresLERP) == 0x000032, "Wrong size on ZoneScoreWidget_C_UpdateScoresLERP");
+static_assert(alignof(ZoneScoreWidget_C_UpdateScoresLERP) == 0x000008, "Wrong alignment on ZoneScoreWidget_C_UpdateScoresLERP");
+static_assert(sizeof(ZoneScoreWidget_C_UpdateScoresLERP) == 0x000028, "Wrong size on ZoneScoreWidget_C_UpdateScoresLERP");
 static_assert(offsetof(ZoneScoreWidget_C_UpdateScoresLERP, LERP_Factor) == 0x000000, "Member 'ZoneScoreWidget_C_UpdateScoresLERP::LERP_Factor' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_UpdateScoresLERP, Temp_int_Array_Index_Variable) == 0x000004, "Member 'ZoneScoreWidget_C_UpdateScoresLERP::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_UpdateScoresLERP, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'ZoneScoreWidget_C_UpdateScoresLERP::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -142,7 +142,7 @@ static_assert(sizeof(ZoneScoreWidget_C_UpdateXPLERP) == 0x000004, "Wrong size on
 static_assert(offsetof(ZoneScoreWidget_C_UpdateXPLERP, LERP_Factor) == 0x000000, "Member 'ZoneScoreWidget_C_UpdateXPLERP::LERP_Factor' has a wrong offset!");
 
 // Function ZoneScoreWidget.ZoneScoreWidget_C.ShowXPReward
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct ZoneScoreWidget_C_ShowXPReward final
 {
 public:
@@ -153,13 +153,13 @@ public:
 	class AFortPlayerState*                       K2Node_DynamicCast_AsFort_Player_State;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0030(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0030(0x0018)(HasGetValueTypeHash)
 	int32                                         CallFunc_GetScoreReportIndex_ReturnValue;          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x004C(0x1182E980)(NoDestructor)
+	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x004C(0x002C)(NoDestructor)
 	bool                                          CallFunc_GetXpInfo_ReturnValue;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ZoneScoreWidget_C_ShowXPReward) == 0x1182E980, "Wrong alignment on ZoneScoreWidget_C_ShowXPReward");
-static_assert(sizeof(ZoneScoreWidget_C_ShowXPReward) == 0x1182E980, "Wrong size on ZoneScoreWidget_C_ShowXPReward");
+static_assert(alignof(ZoneScoreWidget_C_ShowXPReward) == 0x000008, "Wrong alignment on ZoneScoreWidget_C_ShowXPReward");
+static_assert(sizeof(ZoneScoreWidget_C_ShowXPReward) == 0x000080, "Wrong size on ZoneScoreWidget_C_ShowXPReward");
 static_assert(offsetof(ZoneScoreWidget_C_ShowXPReward, ScoreReport) == 0x000000, "Member 'ZoneScoreWidget_C_ShowXPReward::ScoreReport' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_ShowXPReward, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ZoneScoreWidget_C_ShowXPReward::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_ShowXPReward, CallFunc_GetScoreReport_ReturnValue) == 0x000010, "Member 'ZoneScoreWidget_C_ShowXPReward::CallFunc_GetScoreReport_ReturnValue' has a wrong offset!");
@@ -172,27 +172,27 @@ static_assert(offsetof(ZoneScoreWidget_C_ShowXPReward, CallFunc_GetXpInfo_OutXpI
 static_assert(offsetof(ZoneScoreWidget_C_ShowXPReward, CallFunc_GetXpInfo_ReturnValue) == 0x000078, "Member 'ZoneScoreWidget_C_ShowXPReward::CallFunc_GetXpInfo_ReturnValue' has a wrong offset!");
 
 // Function ZoneScoreWidget.ZoneScoreWidget_C.ShowTeamScoreContributions
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x02D8 (0x02D8 - 0x0000)
 struct ZoneScoreWidget_C_ShowTeamScoreContributions final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortPlayerScoreReport                 CallFunc_Array_Get_Item;                           // 0x0008(0x11821780)()
+	struct FFortPlayerScoreReport                 CallFunc_Array_Get_Item;                           // 0x0008(0x0288)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0294(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_299[0x3];                                      // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x029C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x02A0(0x322CBBB8)(NoDestructor)
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x02B0(0x11829280)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x02A0(0x0010)(NoDestructor)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x02B0(0x0008)(NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPlayerZoneTeamScoreContributionWidget_C* CallFunc_Create_ReturnValue;                       // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ZoneScoreWidget_C_ShowTeamScoreContributions) == 0x322CBBB8, "Wrong alignment on ZoneScoreWidget_C_ShowTeamScoreContributions");
-static_assert(sizeof(ZoneScoreWidget_C_ShowTeamScoreContributions) == 0x322CBBB8, "Wrong size on ZoneScoreWidget_C_ShowTeamScoreContributions");
+static_assert(alignof(ZoneScoreWidget_C_ShowTeamScoreContributions) == 0x000008, "Wrong alignment on ZoneScoreWidget_C_ShowTeamScoreContributions");
+static_assert(sizeof(ZoneScoreWidget_C_ShowTeamScoreContributions) == 0x0002D8, "Wrong size on ZoneScoreWidget_C_ShowTeamScoreContributions");
 static_assert(offsetof(ZoneScoreWidget_C_ShowTeamScoreContributions, Temp_int_Array_Index_Variable) == 0x000000, "Member 'ZoneScoreWidget_C_ShowTeamScoreContributions::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_ShowTeamScoreContributions, CallFunc_Array_Get_Item) == 0x000008, "Member 'ZoneScoreWidget_C_ShowTeamScoreContributions::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_ShowTeamScoreContributions, CallFunc_Array_Length_ReturnValue) == 0x000290, "Member 'ZoneScoreWidget_C_ShowTeamScoreContributions::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
@@ -207,19 +207,19 @@ static_assert(offsetof(ZoneScoreWidget_C_ShowTeamScoreContributions, CallFunc_Ad
 static_assert(offsetof(ZoneScoreWidget_C_ShowTeamScoreContributions, CallFunc_Array_Add_ReturnValue) == 0x0002D0, "Member 'ZoneScoreWidget_C_ShowTeamScoreContributions::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function ZoneScoreWidget.ZoneScoreWidget_C.BindEndOfDayHeaderText
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct ZoneScoreWidget_C_BindEndOfDayHeaderText final
 {
 public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0018)()
 };
-static_assert(alignof(ZoneScoreWidget_C_BindEndOfDayHeaderText) == 0x11821D80, "Wrong alignment on ZoneScoreWidget_C_BindEndOfDayHeaderText");
-static_assert(sizeof(ZoneScoreWidget_C_BindEndOfDayHeaderText) == 0x11821D80, "Wrong size on ZoneScoreWidget_C_BindEndOfDayHeaderText");
+static_assert(alignof(ZoneScoreWidget_C_BindEndOfDayHeaderText) == 0x000008, "Wrong alignment on ZoneScoreWidget_C_BindEndOfDayHeaderText");
+static_assert(sizeof(ZoneScoreWidget_C_BindEndOfDayHeaderText) == 0x000088, "Wrong size on ZoneScoreWidget_C_BindEndOfDayHeaderText");
 static_assert(offsetof(ZoneScoreWidget_C_BindEndOfDayHeaderText, CallFunc_Add_IntInt_ReturnValue) == 0x000000, "Member 'ZoneScoreWidget_C_BindEndOfDayHeaderText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_BindEndOfDayHeaderText, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'ZoneScoreWidget_C_BindEndOfDayHeaderText::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ZoneScoreWidget_C_BindEndOfDayHeaderText, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'ZoneScoreWidget_C_BindEndOfDayHeaderText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");

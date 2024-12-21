@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.ExecuteUbergraph_DuplicateResOutMesh
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x02A0 (0x02A0 - 0x0000)
 struct DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh final
 {
 public:
@@ -38,7 +38,7 @@ public:
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0048(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0048(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	float                                         CallFunc_MakeLiteralFloat_ReturnValue;             // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,33 +48,33 @@ public:
 	class USkeletalMeshComponent*                 CallFunc_Array_Get_Item2;                          // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 CallFunc_Array_Get_Item3;                          // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F8[0x8];                                       // 0x00F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0100(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0100(0x0030)(IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0138(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0138(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C1[0x3];                                      // 0x01C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x01C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x01D4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x01C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x01D4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>       K2Node_CustomEvent_MID_Array;                      // 0x01E0(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TArray<class USkeletalMeshComponent*>         K2Node_CustomEvent_External_MEsh_Component_Array;  // 0x01F0(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0200(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x020C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0218(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue2;        // 0x0224(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0230(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0240(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue3;        // 0x024C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0258(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0264(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue2;       // 0x0270(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0200(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x020C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0218(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue2;        // 0x0224(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0230(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0240(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue3;        // 0x024C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0258(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0264(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue2;       // 0x0270(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue2;                       // 0x0280(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x028C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue2;                       // 0x0280(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x028C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh) == 0x11821D80, "Wrong alignment on DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh");
-static_assert(sizeof(DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh) == 0x11821D80, "Wrong size on DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh");
+static_assert(alignof(DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh) == 0x000010, "Wrong alignment on DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh");
+static_assert(sizeof(DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh) == 0x0002A0, "Wrong size on DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh");
 static_assert(offsetof(DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh, EntryPoint) == 0x000000, "Member 'DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh::EntryPoint' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'DuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -134,18 +134,18 @@ static_assert(offsetof(DuplicateResOutMesh_C_UpdateExternalParameters, MID_Array
 static_assert(offsetof(DuplicateResOutMesh_C_UpdateExternalParameters, External_MEsh_Component_Array) == 0x000010, "Member 'DuplicateResOutMesh_C_UpdateExternalParameters::External_MEsh_Component_Array' has a wrong offset!");
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.ReceiveTick
-// 0x045D (0x045D - 0x0000)
-struct alignas(0x45D) DuplicateResOutMesh_C_ReceiveTick final
+// 0x0004 (0x0004 - 0x0000)
+struct DuplicateResOutMesh_C_ReceiveTick final
 {
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DuplicateResOutMesh_C_ReceiveTick) == 0x00045D, "Wrong alignment on DuplicateResOutMesh_C_ReceiveTick");
-static_assert(sizeof(DuplicateResOutMesh_C_ReceiveTick) == 0x00045D, "Wrong size on DuplicateResOutMesh_C_ReceiveTick");
+static_assert(alignof(DuplicateResOutMesh_C_ReceiveTick) == 0x000004, "Wrong alignment on DuplicateResOutMesh_C_ReceiveTick");
+static_assert(sizeof(DuplicateResOutMesh_C_ReceiveTick) == 0x000004, "Wrong size on DuplicateResOutMesh_C_ReceiveTick");
 static_assert(offsetof(DuplicateResOutMesh_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'DuplicateResOutMesh_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.UserConstructionScript
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct DuplicateResOutMesh_C_UserConstructionScript final
 {
 public:
@@ -154,11 +154,11 @@ public:
 	class UMaterialInstanceDynamic*               Container_Material;                                // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   NewLocalVar_1;                                     // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Box_Local_Transform_0;                             // 0x0020(0x11821300)(Edit, IsPlainOldData, NoDestructor)
-	struct FVector                                NewLocalVar_0;                                     // 0x0050(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Box_Local_Transform_0;                             // 0x0020(0x0030)(Edit, IsPlainOldData, NoDestructor)
+	struct FVector                                NewLocalVar_0;                                     // 0x0050(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DuplicateResOutMesh_C_UserConstructionScript) == 0x11821300, "Wrong alignment on DuplicateResOutMesh_C_UserConstructionScript");
-static_assert(sizeof(DuplicateResOutMesh_C_UserConstructionScript) == 0x11821300, "Wrong size on DuplicateResOutMesh_C_UserConstructionScript");
+static_assert(alignof(DuplicateResOutMesh_C_UserConstructionScript) == 0x000010, "Wrong alignment on DuplicateResOutMesh_C_UserConstructionScript");
+static_assert(sizeof(DuplicateResOutMesh_C_UserConstructionScript) == 0x000060, "Wrong size on DuplicateResOutMesh_C_UserConstructionScript");
 static_assert(offsetof(DuplicateResOutMesh_C_UserConstructionScript, NewLocalVar_2) == 0x000000, "Member 'DuplicateResOutMesh_C_UserConstructionScript::NewLocalVar_2' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_UserConstructionScript, Container_Material) == 0x000008, "Member 'DuplicateResOutMesh_C_UserConstructionScript::Container_Material' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_UserConstructionScript, NewLocalVar_1) == 0x000010, "Member 'DuplicateResOutMesh_C_UserConstructionScript::NewLocalVar_1' has a wrong offset!");
@@ -192,18 +192,18 @@ static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray
 static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray, K2Node_MakeArray_Array) == 0x000030, "Member 'DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.Find Bounds
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x01D0 (0x01D0 - 0x0000)
 struct DuplicateResOutMesh_C_Find_Bounds final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0010(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x001C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location2;                 // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation2;                 // 0x0034(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale2;                    // 0x0040(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0010(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x001C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location2;                 // 0x0028(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation2;                 // 0x0034(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale2;                    // 0x0040(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -211,26 +211,29 @@ public:
 	float                                         CallFunc_BreakVector_Y2;                           // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z2;                           // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0068(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0074(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakRotIntoAxes_X;                       // 0x0080(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakRotIntoAxes_Y;                       // 0x008C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakRotIntoAxes_Z;                       // 0x0098(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00B0(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x00E0(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue2;               // 0x00F0(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FTransform                             K2Node_Select_Default;                             // 0x0120(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location3;                 // 0x0150(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation3;                 // 0x015C(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale3;                    // 0x0168(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x0174(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x0180(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0068(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0074(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakRotIntoAxes_X;                       // 0x0080(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakRotIntoAxes_Y;                       // 0x008C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakRotIntoAxes_Z;                       // 0x0098(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4[0xC];                                       // 0x00A4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00B0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotationFromAxes_ReturnValue;         // 0x00E0(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue2;               // 0x00F0(0x0030)(IsPlainOldData, NoDestructor)
+	struct FTransform                             K2Node_Select_Default;                             // 0x0120(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location3;                 // 0x0150(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation3;                 // 0x015C(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale3;                    // 0x0168(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_Origin;                    // 0x0174(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorBounds_BoxExtent;                 // 0x0180(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0190(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue3;               // 0x01A0(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0190(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue3;               // 0x01A0(0x0030)(IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DuplicateResOutMesh_C_Find_Bounds) == 0x11821300, "Wrong alignment on DuplicateResOutMesh_C_Find_Bounds");
-static_assert(sizeof(DuplicateResOutMesh_C_Find_Bounds) == 0x11821300, "Wrong size on DuplicateResOutMesh_C_Find_Bounds");
+static_assert(alignof(DuplicateResOutMesh_C_Find_Bounds) == 0x000010, "Wrong alignment on DuplicateResOutMesh_C_Find_Bounds");
+static_assert(sizeof(DuplicateResOutMesh_C_Find_Bounds) == 0x0001D0, "Wrong size on DuplicateResOutMesh_C_Find_Bounds");
 static_assert(offsetof(DuplicateResOutMesh_C_Find_Bounds, Temp_bool_Variable) == 0x000000, "Member 'DuplicateResOutMesh_C_Find_Bounds::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_Find_Bounds, CallFunc_BreakTransform_Location) == 0x000004, "Member 'DuplicateResOutMesh_C_Find_Bounds::CallFunc_BreakTransform_Location' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_Find_Bounds, CallFunc_BreakTransform_Rotation) == 0x000010, "Member 'DuplicateResOutMesh_C_Find_Bounds::CallFunc_BreakTransform_Rotation' has a wrong offset!");
@@ -264,20 +267,20 @@ static_assert(offsetof(DuplicateResOutMesh_C_Find_Bounds, CallFunc_Multiply_Vect
 static_assert(offsetof(DuplicateResOutMesh_C_Find_Bounds, CallFunc_MakeTransform_ReturnValue3) == 0x0001A0, "Member 'DuplicateResOutMesh_C_Find_Bounds::CallFunc_MakeTransform_ReturnValue3' has a wrong offset!");
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.Spawn  Light
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct DuplicateResOutMesh_C_Spawn__Light final
 {
 public:
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0000(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0000(0x0030)(IsPlainOldData, NoDestructor)
 	class UPointLightComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DuplicateResOutMesh_C_Spawn__Light) == 0x11821300, "Wrong alignment on DuplicateResOutMesh_C_Spawn__Light");
-static_assert(sizeof(DuplicateResOutMesh_C_Spawn__Light) == 0x11821300, "Wrong size on DuplicateResOutMesh_C_Spawn__Light");
+static_assert(alignof(DuplicateResOutMesh_C_Spawn__Light) == 0x000010, "Wrong alignment on DuplicateResOutMesh_C_Spawn__Light");
+static_assert(sizeof(DuplicateResOutMesh_C_Spawn__Light) == 0x000040, "Wrong size on DuplicateResOutMesh_C_Spawn__Light");
 static_assert(offsetof(DuplicateResOutMesh_C_Spawn__Light, CallFunc_MakeTransform_ReturnValue) == 0x000000, "Member 'DuplicateResOutMesh_C_Spawn__Light::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_Spawn__Light, CallFunc_AddComponent_ReturnValue) == 0x000030, "Member 'DuplicateResOutMesh_C_Spawn__Light::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.Make and slave internal meshes
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct DuplicateResOutMesh_C_Make_and_slave_internal_meshes final
 {
 public:
@@ -285,14 +288,14 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0010(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue;                 // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 CallFunc_Array_Get_Item2;                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0090(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0030)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0090(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 CallFunc_Array_Get_Item3;                          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -307,8 +310,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DuplicateResOutMesh_C_Make_and_slave_internal_meshes) == 0x11821D80, "Wrong alignment on DuplicateResOutMesh_C_Make_and_slave_internal_meshes");
-static_assert(sizeof(DuplicateResOutMesh_C_Make_and_slave_internal_meshes) == 0x11821D80, "Wrong size on DuplicateResOutMesh_C_Make_and_slave_internal_meshes");
+static_assert(alignof(DuplicateResOutMesh_C_Make_and_slave_internal_meshes) == 0x000010, "Wrong alignment on DuplicateResOutMesh_C_Make_and_slave_internal_meshes");
+static_assert(sizeof(DuplicateResOutMesh_C_Make_and_slave_internal_meshes) == 0x000150, "Wrong size on DuplicateResOutMesh_C_Make_and_slave_internal_meshes");
 static_assert(offsetof(DuplicateResOutMesh_C_Make_and_slave_internal_meshes, Temp_int_Variable) == 0x000000, "Member 'DuplicateResOutMesh_C_Make_and_slave_internal_meshes::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_Make_and_slave_internal_meshes, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'DuplicateResOutMesh_C_Make_and_slave_internal_meshes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DuplicateResOutMesh_C_Make_and_slave_internal_meshes, Temp_int_Array_Index_Variable) == 0x000008, "Member 'DuplicateResOutMesh_C_Make_and_slave_internal_meshes::Temp_int_Array_Index_Variable' has a wrong offset!");

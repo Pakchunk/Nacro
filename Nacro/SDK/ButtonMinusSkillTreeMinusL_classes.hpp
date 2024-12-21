@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Button-SkillTree-L.Button-SkillTree-L_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonMinusSkillTreeMinusL_C : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonMinusSkillTreeMinusL_C>();
 	}
 };
-static_assert(alignof(UButtonMinusSkillTreeMinusL_C) == 0x322CBBB8, "Wrong alignment on UButtonMinusSkillTreeMinusL_C");
-static_assert(sizeof(UButtonMinusSkillTreeMinusL_C) == 0x322CBBB8, "Wrong size on UButtonMinusSkillTreeMinusL_C");
+static_assert(alignof(UButtonMinusSkillTreeMinusL_C) == 0x000008, "Wrong alignment on UButtonMinusSkillTreeMinusL_C");
+static_assert(sizeof(UButtonMinusSkillTreeMinusL_C) == 0x000530, "Wrong size on UButtonMinusSkillTreeMinusL_C");
 
 }
 

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Cinematic.Cinematic_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x0460 - 0x0400)
 class UCinematic_C final : public UFortUIStateWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
 	class UNamedSlot*                             LocalizedAudioOnlyMovieSlot;                       // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetStack*                     MainContentStack;                                  // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNamedSlot*                             MovieSlot;                                         // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -68,8 +68,8 @@ public:
 		return GetDefaultObjImpl<UCinematic_C>();
 	}
 };
-static_assert(alignof(UCinematic_C) == 0x322CBBB8, "Wrong alignment on UCinematic_C");
-static_assert(sizeof(UCinematic_C) == 0x322CBBB8, "Wrong size on UCinematic_C");
+static_assert(alignof(UCinematic_C) == 0x000008, "Wrong alignment on UCinematic_C");
+static_assert(sizeof(UCinematic_C) == 0x000460, "Wrong size on UCinematic_C");
 static_assert(offsetof(UCinematic_C, UberGraphFrame) == 0x000400, "Member 'UCinematic_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCinematic_C, LocalizedAudioOnlyMovieSlot) == 0x000408, "Member 'UCinematic_C::LocalizedAudioOnlyMovieSlot' has a wrong offset!");
 static_assert(offsetof(UCinematic_C, MainContentStack) == 0x000410, "Member 'UCinematic_C::MainContentStack' has a wrong offset!");

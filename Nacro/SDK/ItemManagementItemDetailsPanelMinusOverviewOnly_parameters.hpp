@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C.ExecuteUbergraph_ItemManagementItemDetailsPanel-OverviewOnly
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly final
+// 0x0028 (0x0028 - 0x0000)
+struct ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -26,15 +26,15 @@ public:
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0008(0x0018)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly) == 0x0000E4, "Wrong alignment on ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly");
-static_assert(sizeof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly) == 0x0000E4, "Wrong size on ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly");
+static_assert(alignof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly) == 0x000008, "Wrong alignment on ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly");
+static_assert(sizeof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly) == 0x000028, "Wrong size on ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly");
 static_assert(offsetof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly, EntryPoint) == 0x000000, "Member 'ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'ItemManagementItemDetailsPanelMinusOverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanelMinusOverviewOnly::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C.SetDescriptionText
-// 0x0440 (0x0440 - 0x0000)
-struct alignas(0x440) ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText final
+// 0x0088 (0x0088 - 0x0000)
+struct ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText final
 {
 public:
 	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -56,8 +56,8 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText) == 0x000440, "Wrong alignment on ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText");
-static_assert(sizeof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText) == 0x000440, "Wrong size on ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText");
+static_assert(alignof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText) == 0x000008, "Wrong alignment on ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText");
+static_assert(sizeof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText) == 0x000088, "Wrong size on ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText");
 static_assert(offsetof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText, Temp_byte_Variable) == 0x000008, "Member 'ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText, CallFunc_GetDescription_ReturnValue) == 0x000010, "Member 'ItemManagementItemDetailsPanelMinusOverviewOnly_C_SetDescriptionText::CallFunc_GetDescription_ReturnValue' has a wrong offset!");

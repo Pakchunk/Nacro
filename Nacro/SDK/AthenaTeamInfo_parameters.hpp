@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function AthenaTeamInfo.AthenaTeamInfo_C.ExecuteUbergraph_AthenaTeamInfo
-// 0x016C (0x016C - 0x0000)
-struct alignas(0x34) AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo final
+// 0x0168 (0x0168 - 0x0000)
+struct AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 	TDelegate<void(TArray<float>& HealthFractions, TArray<float>& ShieldFractions)> K2Node_CreateDelegate_OutputDelegate8;             // 0x0148(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(TArray<bool>& TalkingStates)>  K2Node_CreateDelegate_OutputDelegate9;             // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo) == 0x000034, "Wrong alignment on AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo");
-static_assert(sizeof(AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo) == 0x00016C, "Wrong size on AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo");
+static_assert(alignof(AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo) == 0x000008, "Wrong alignment on AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo");
+static_assert(sizeof(AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo) == 0x000168, "Wrong size on AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo");
 static_assert(offsetof(AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo, EntryPoint) == 0x000000, "Member 'AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo, Temp_int_Array_Index_Variable) == 0x000018, "Member 'AthenaTeamInfo_C_ExecuteUbergraph_AthenaTeamInfo::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -109,7 +109,7 @@ static_assert(sizeof(AthenaTeamInfo_C_PreConstruct) == 0x000001, "Wrong size on 
 static_assert(offsetof(AthenaTeamInfo_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaTeamInfo_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaTeamInfo.AthenaTeamInfo_C.AppendTeamMember
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AthenaTeamInfo_C_AppendTeamMember final
 {
 public:
@@ -117,13 +117,13 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentIndex;                                      // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaTeamMemberInfo_C*                CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0018(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0018(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamInfo_C_AppendTeamMember) == 0x322CBBB8, "Wrong alignment on AthenaTeamInfo_C_AppendTeamMember");
-static_assert(sizeof(AthenaTeamInfo_C_AppendTeamMember) == 0x322CBBB8, "Wrong size on AthenaTeamInfo_C_AppendTeamMember");
+static_assert(alignof(AthenaTeamInfo_C_AppendTeamMember) == 0x000008, "Wrong alignment on AthenaTeamInfo_C_AppendTeamMember");
+static_assert(sizeof(AthenaTeamInfo_C_AppendTeamMember) == 0x000038, "Wrong size on AthenaTeamInfo_C_AppendTeamMember");
 static_assert(offsetof(AthenaTeamInfo_C_AppendTeamMember, PlayerState) == 0x000000, "Member 'AthenaTeamInfo_C_AppendTeamMember::PlayerState' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_AppendTeamMember, PlayerIndex) == 0x000008, "Member 'AthenaTeamInfo_C_AppendTeamMember::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_AppendTeamMember, CurrentIndex) == 0x00000C, "Member 'AthenaTeamInfo_C_AppendTeamMember::CurrentIndex' has a wrong offset!");
@@ -262,8 +262,8 @@ static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMemberPlayerNamesChanged, Call
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMemberPlayerNamesChanged, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'AthenaTeamInfo_C_HandleTeamMemberPlayerNamesChanged::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamRevivingChanged
-// 0x0055 (0x0055 - 0x0000)
-struct alignas(0x55) AthenaTeamInfo_C_HandleTeamRevivingChanged final
+// 0x0038 (0x0038 - 0x0000)
+struct AthenaTeamInfo_C_HandleTeamRevivingChanged final
 {
 public:
 	TArray<bool>                                  TeamReviving;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
@@ -277,8 +277,8 @@ public:
 	class UAthenaTeamMemberInfo_C*                CallFunc_Array_Get_Item2;                          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamInfo_C_HandleTeamRevivingChanged) == 0x000055, "Wrong alignment on AthenaTeamInfo_C_HandleTeamRevivingChanged");
-static_assert(sizeof(AthenaTeamInfo_C_HandleTeamRevivingChanged) == 0x000055, "Wrong size on AthenaTeamInfo_C_HandleTeamRevivingChanged");
+static_assert(alignof(AthenaTeamInfo_C_HandleTeamRevivingChanged) == 0x000008, "Wrong alignment on AthenaTeamInfo_C_HandleTeamRevivingChanged");
+static_assert(sizeof(AthenaTeamInfo_C_HandleTeamRevivingChanged) == 0x000038, "Wrong size on AthenaTeamInfo_C_HandleTeamRevivingChanged");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamRevivingChanged, TeamReviving) == 0x000000, "Member 'AthenaTeamInfo_C_HandleTeamRevivingChanged::TeamReviving' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamRevivingChanged, Temp_int_Array_Index_Variable) == 0x000010, "Member 'AthenaTeamInfo_C_HandleTeamRevivingChanged::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamRevivingChanged, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'AthenaTeamInfo_C_HandleTeamRevivingChanged::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -289,8 +289,8 @@ static_assert(offsetof(AthenaTeamInfo_C_HandleTeamRevivingChanged, CallFunc_Arra
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamRevivingChanged, CallFunc_Less_IntInt_ReturnValue) == 0x000030, "Member 'AthenaTeamInfo_C_HandleTeamRevivingChanged::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamMemberRemoved
-// 0x005C (0x005C - 0x0000)
-struct alignas(0x17) AthenaTeamInfo_C_HandleTeamMemberRemoved final
+// 0x0058 (0x0058 - 0x0000)
+struct AthenaTeamInfo_C_HandleTeamMemberRemoved final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -307,8 +307,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamInfo_C_HandleTeamMemberRemoved) == 0x000017, "Wrong alignment on AthenaTeamInfo_C_HandleTeamMemberRemoved");
-static_assert(sizeof(AthenaTeamInfo_C_HandleTeamMemberRemoved) == 0x00005C, "Wrong size on AthenaTeamInfo_C_HandleTeamMemberRemoved");
+static_assert(alignof(AthenaTeamInfo_C_HandleTeamMemberRemoved) == 0x000008, "Wrong alignment on AthenaTeamInfo_C_HandleTeamMemberRemoved");
+static_assert(sizeof(AthenaTeamInfo_C_HandleTeamMemberRemoved) == 0x000058, "Wrong size on AthenaTeamInfo_C_HandleTeamMemberRemoved");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMemberRemoved, Temp_int_Array_Index_Variable) == 0x000000, "Member 'AthenaTeamInfo_C_HandleTeamMemberRemoved::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMemberRemoved, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AthenaTeamInfo_C_HandleTeamMemberRemoved::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMemberRemoved, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'AthenaTeamInfo_C_HandleTeamMemberRemoved::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -322,8 +322,8 @@ static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMemberRemoved, CallFunc_Array_
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMemberRemoved, CallFunc_Less_IntInt_ReturnValue) == 0x000054, "Member 'AthenaTeamInfo_C_HandleTeamMemberRemoved::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamTalkingChanged
-// 0x0042 (0x0042 - 0x0000)
-struct alignas(0x21) AthenaTeamInfo_C_HandleTeamTalkingChanged final
+// 0x0030 (0x0030 - 0x0000)
+struct AthenaTeamInfo_C_HandleTeamTalkingChanged final
 {
 public:
 	TArray<bool>                                  TeamTalking;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
@@ -335,8 +335,8 @@ public:
 	class UAthenaTeamMemberInfo_C*                CallFunc_Array_Get_Item2;                          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamInfo_C_HandleTeamTalkingChanged) == 0x000021, "Wrong alignment on AthenaTeamInfo_C_HandleTeamTalkingChanged");
-static_assert(sizeof(AthenaTeamInfo_C_HandleTeamTalkingChanged) == 0x000042, "Wrong size on AthenaTeamInfo_C_HandleTeamTalkingChanged");
+static_assert(alignof(AthenaTeamInfo_C_HandleTeamTalkingChanged) == 0x000008, "Wrong alignment on AthenaTeamInfo_C_HandleTeamTalkingChanged");
+static_assert(sizeof(AthenaTeamInfo_C_HandleTeamTalkingChanged) == 0x000030, "Wrong size on AthenaTeamInfo_C_HandleTeamTalkingChanged");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamTalkingChanged, TeamTalking) == 0x000000, "Member 'AthenaTeamInfo_C_HandleTeamTalkingChanged::TeamTalking' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamTalkingChanged, CallFunc_Array_LastIndex_ReturnValue) == 0x000010, "Member 'AthenaTeamInfo_C_HandleTeamTalkingChanged::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamTalkingChanged, Temp_int_Variable) == 0x000014, "Member 'AthenaTeamInfo_C_HandleTeamTalkingChanged::Temp_int_Variable' has a wrong offset!");
@@ -346,8 +346,8 @@ static_assert(offsetof(AthenaTeamInfo_C_HandleTeamTalkingChanged, CallFunc_Array
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamTalkingChanged, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'AthenaTeamInfo_C_HandleTeamTalkingChanged::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamMutedChanged
-// 0x0042 (0x0042 - 0x0000)
-struct alignas(0x21) AthenaTeamInfo_C_HandleTeamMutedChanged final
+// 0x0030 (0x0030 - 0x0000)
+struct AthenaTeamInfo_C_HandleTeamMutedChanged final
 {
 public:
 	TArray<bool>                                  TeamMuted;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
@@ -359,8 +359,8 @@ public:
 	class UAthenaTeamMemberInfo_C*                CallFunc_Array_Get_Item2;                          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamInfo_C_HandleTeamMutedChanged) == 0x000021, "Wrong alignment on AthenaTeamInfo_C_HandleTeamMutedChanged");
-static_assert(sizeof(AthenaTeamInfo_C_HandleTeamMutedChanged) == 0x000042, "Wrong size on AthenaTeamInfo_C_HandleTeamMutedChanged");
+static_assert(alignof(AthenaTeamInfo_C_HandleTeamMutedChanged) == 0x000008, "Wrong alignment on AthenaTeamInfo_C_HandleTeamMutedChanged");
+static_assert(sizeof(AthenaTeamInfo_C_HandleTeamMutedChanged) == 0x000030, "Wrong size on AthenaTeamInfo_C_HandleTeamMutedChanged");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMutedChanged, TeamMuted) == 0x000000, "Member 'AthenaTeamInfo_C_HandleTeamMutedChanged::TeamMuted' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMutedChanged, CallFunc_Array_LastIndex_ReturnValue) == 0x000010, "Member 'AthenaTeamInfo_C_HandleTeamMutedChanged::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaTeamInfo_C_HandleTeamMutedChanged, Temp_int_Variable) == 0x000014, "Member 'AthenaTeamInfo_C_HandleTeamMutedChanged::Temp_int_Variable' has a wrong offset!");

@@ -39,14 +39,14 @@ static_assert(offsetof(Lightbox_C_AddContent, Content_0) == 0x000000, "Member 'L
 static_assert(offsetof(Lightbox_C_AddContent, CallFunc_AddChild_ReturnValue) == 0x000008, "Member 'Lightbox_C_AddContent::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function Lightbox.Lightbox_C.RemoveContent
-// 0x0512 (0x0512 - 0x0000)
-struct alignas(0x512) Lightbox_C_RemoveContent final
+// 0x0001 (0x0001 - 0x0000)
+struct Lightbox_C_RemoveContent final
 {
 public:
 	bool                                          CallFunc_HasAnyChildren_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Lightbox_C_RemoveContent) == 0x000512, "Wrong alignment on Lightbox_C_RemoveContent");
-static_assert(sizeof(Lightbox_C_RemoveContent) == 0x000512, "Wrong size on Lightbox_C_RemoveContent");
+static_assert(alignof(Lightbox_C_RemoveContent) == 0x000001, "Wrong alignment on Lightbox_C_RemoveContent");
+static_assert(sizeof(Lightbox_C_RemoveContent) == 0x000001, "Wrong size on Lightbox_C_RemoveContent");
 static_assert(offsetof(Lightbox_C_RemoveContent, CallFunc_HasAnyChildren_ReturnValue) == 0x000000, "Member 'Lightbox_C_RemoveContent::CallFunc_HasAnyChildren_ReturnValue' has a wrong offset!");
 
 }

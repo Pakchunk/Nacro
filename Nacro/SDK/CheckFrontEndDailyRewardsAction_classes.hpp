@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0018 (0x0400 - 0x03E8)
 class ACheckFrontEndDailyRewardsAction_C final : public AFortScriptedAction
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          bLastStateWasLoginScreen;                          // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	ESubGame                                      NewVar_0;                                          // 0x03F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<ACheckFrontEndDailyRewardsAction_C>();
 	}
 };
-static_assert(alignof(ACheckFrontEndDailyRewardsAction_C) == 0x11821D80, "Wrong alignment on ACheckFrontEndDailyRewardsAction_C");
-static_assert(sizeof(ACheckFrontEndDailyRewardsAction_C) == 0x11821D80, "Wrong size on ACheckFrontEndDailyRewardsAction_C");
+static_assert(alignof(ACheckFrontEndDailyRewardsAction_C) == 0x000008, "Wrong alignment on ACheckFrontEndDailyRewardsAction_C");
+static_assert(sizeof(ACheckFrontEndDailyRewardsAction_C) == 0x000400, "Wrong size on ACheckFrontEndDailyRewardsAction_C");
 static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, UberGraphFrame) == 0x0003E8, "Member 'ACheckFrontEndDailyRewardsAction_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, DefaultSceneRoot) == 0x0003F0, "Member 'ACheckFrontEndDailyRewardsAction_C::DefaultSceneRoot' has a wrong offset!");
 static_assert(offsetof(ACheckFrontEndDailyRewardsAction_C, bLastStateWasLoginScreen) == 0x0003F8, "Member 'ACheckFrontEndDailyRewardsAction_C::bLastStateWasLoginScreen' has a wrong offset!");

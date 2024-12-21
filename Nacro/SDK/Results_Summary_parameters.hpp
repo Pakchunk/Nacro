@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function Results_Summary.Results_Summary_C.ExecuteUbergraph_Results_Summary
-// 0x00A6 (0x00A6 - 0x0000)
-struct alignas(0xA6) Results_Summary_C_ExecuteUbergraph_Results_Summary final
+// 0x0018 (0x0018 - 0x0000)
+struct Results_Summary_C_ExecuteUbergraph_Results_Summary final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -26,8 +26,8 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Summary_C_ExecuteUbergraph_Results_Summary) == 0x0000A6, "Wrong alignment on Results_Summary_C_ExecuteUbergraph_Results_Summary");
-static_assert(sizeof(Results_Summary_C_ExecuteUbergraph_Results_Summary) == 0x0000A6, "Wrong size on Results_Summary_C_ExecuteUbergraph_Results_Summary");
+static_assert(alignof(Results_Summary_C_ExecuteUbergraph_Results_Summary) == 0x000008, "Wrong alignment on Results_Summary_C_ExecuteUbergraph_Results_Summary");
+static_assert(sizeof(Results_Summary_C_ExecuteUbergraph_Results_Summary) == 0x000018, "Wrong size on Results_Summary_C_ExecuteUbergraph_Results_Summary");
 static_assert(offsetof(Results_Summary_C_ExecuteUbergraph_Results_Summary, EntryPoint) == 0x000000, "Member 'Results_Summary_C_ExecuteUbergraph_Results_Summary::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_Summary_C_ExecuteUbergraph_Results_Summary, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'Results_Summary_C_ExecuteUbergraph_Results_Summary::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(Results_Summary_C_ExecuteUbergraph_Results_Summary, K2Node_Event_IsDesignTime) == 0x000010, "Member 'Results_Summary_C_ExecuteUbergraph_Results_Summary::K2Node_Event_IsDesignTime' has a wrong offset!");
@@ -44,32 +44,32 @@ static_assert(sizeof(Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBound
 static_assert(offsetof(Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.PreConstruct
-// 0x6E0075 (0x6E0075 - 0x0000)
-struct alignas(0x6E0075) Results_Summary_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct Results_Summary_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Summary_C_PreConstruct) == 0x6E0075, "Wrong alignment on Results_Summary_C_PreConstruct");
-static_assert(sizeof(Results_Summary_C_PreConstruct) == 0x6E0075, "Wrong size on Results_Summary_C_PreConstruct");
+static_assert(alignof(Results_Summary_C_PreConstruct) == 0x000001, "Wrong alignment on Results_Summary_C_PreConstruct");
+static_assert(sizeof(Results_Summary_C_PreConstruct) == 0x000001, "Wrong size on Results_Summary_C_PreConstruct");
 static_assert(offsetof(Results_Summary_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_Summary_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.InitializeLootChest
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct Results_Summary_C_InitializeLootChest final
 {
 public:
 	int32                                         Level;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NewLocalVar_0;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0040)(HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Summary_C_InitializeLootChest) == 0x11821D80, "Wrong alignment on Results_Summary_C_InitializeLootChest");
-static_assert(sizeof(Results_Summary_C_InitializeLootChest) == 0x11821D80, "Wrong size on Results_Summary_C_InitializeLootChest");
+static_assert(alignof(Results_Summary_C_InitializeLootChest) == 0x000008, "Wrong alignment on Results_Summary_C_InitializeLootChest");
+static_assert(sizeof(Results_Summary_C_InitializeLootChest) == 0x000088, "Wrong size on Results_Summary_C_InitializeLootChest");
 static_assert(offsetof(Results_Summary_C_InitializeLootChest, Level) == 0x000000, "Member 'Results_Summary_C_InitializeLootChest::Level' has a wrong offset!");
 static_assert(offsetof(Results_Summary_C_InitializeLootChest, NewLocalVar_0) == 0x000004, "Member 'Results_Summary_C_InitializeLootChest::NewLocalVar_0' has a wrong offset!");
 static_assert(offsetof(Results_Summary_C_InitializeLootChest, Texture) == 0x000008, "Member 'Results_Summary_C_InitializeLootChest::Texture' has a wrong offset!");

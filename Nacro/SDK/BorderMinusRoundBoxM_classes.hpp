@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-RoundBoxM.Border-RoundBoxM_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusRoundBoxM_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusRoundBoxM_C>();
 	}
 };
-static_assert(alignof(UBorderMinusRoundBoxM_C) == 0x11827900, "Wrong alignment on UBorderMinusRoundBoxM_C");
-static_assert(sizeof(UBorderMinusRoundBoxM_C) == 0x11827900, "Wrong size on UBorderMinusRoundBoxM_C");
+static_assert(alignof(UBorderMinusRoundBoxM_C) == 0x000008, "Wrong alignment on UBorderMinusRoundBoxM_C");
+static_assert(sizeof(UBorderMinusRoundBoxM_C) == 0x0000B8, "Wrong size on UBorderMinusRoundBoxM_C");
 
 }
 

@@ -18,23 +18,23 @@ namespace SDK::Params
 {
 
 // Function PermissionsRoot.PermissionsRoot_C.ExecuteUbergraph_PermissionsRoot
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0008(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0008(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot) == 0x1182EB00, "Wrong alignment on PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot");
-static_assert(sizeof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot) == 0x1182EB00, "Wrong size on PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot");
+static_assert(alignof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot) == 0x000008, "Wrong alignment on PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot");
+static_assert(sizeof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot) == 0x000028, "Wrong size on PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot");
 static_assert(offsetof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot, EntryPoint) == 0x000000, "Member 'PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot, K2Node_MakeStruct_DataTableRowHandle) == 0x000008, "Member 'PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function PermissionsRoot.PermissionsRoot_C.RefreshOutpostInfo
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0570 (0x0570 - 0x0000)
 struct PermissionsRoot_C_RefreshOutpostInfo final
 {
 public:
@@ -48,32 +48,32 @@ public:
 	int32                                         CallFunc_GetOutpostCoreLevel_ReturnValue;          // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0090(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A8(0x0040)(HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0018)()
 	bool                                          CallFunc_EqualEqual_IgnoreCase_TextText_ReturnValue; // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0120(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0120(0x0040)(HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerControllerOutpost*           K2Node_DynamicCast_AsFort_Player_Controller_Outpost; // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0180(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0180(0x0190)()
 	bool                                          CallFunc_IsOutpostOwner_ReturnValue;               // 0x0310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_311[0x7];                                      // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0318(0x0018)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0330(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0330(0x0040)(HasGetValueTypeHash)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue4;                  // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo2; // 0x0378(0x11827900)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0508(0x11821D80)(HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo2; // 0x0378(0x0190)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0508(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0548(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0558(0x0018)()
 };
-static_assert(alignof(PermissionsRoot_C_RefreshOutpostInfo) == 0x11821D80, "Wrong alignment on PermissionsRoot_C_RefreshOutpostInfo");
-static_assert(sizeof(PermissionsRoot_C_RefreshOutpostInfo) == 0x11821D80, "Wrong size on PermissionsRoot_C_RefreshOutpostInfo");
+static_assert(alignof(PermissionsRoot_C_RefreshOutpostInfo) == 0x000008, "Wrong alignment on PermissionsRoot_C_RefreshOutpostInfo");
+static_assert(sizeof(PermissionsRoot_C_RefreshOutpostInfo) == 0x000570, "Wrong size on PermissionsRoot_C_RefreshOutpostInfo");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, Outpost_DisplayName) == 0x000000, "Member 'PermissionsRoot_C_RefreshOutpostInfo::Outpost_DisplayName' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, StonewoodText) == 0x000018, "Member 'PermissionsRoot_C_RefreshOutpostInfo::StonewoodText' has a wrong offset!");
 static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, Temp_text_Variable) == 0x000030, "Member 'PermissionsRoot_C_RefreshOutpostInfo::Temp_text_Variable' has a wrong offset!");

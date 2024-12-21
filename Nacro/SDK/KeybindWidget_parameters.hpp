@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function KeybindWidget.KeybindWidget_C.ExecuteUbergraph_KeybindWidget
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0260 (0x0260 - 0x0000)
 struct KeybindWidget_C_ExecuteUbergraph_KeybindWidget final
 {
 public:
@@ -46,15 +46,15 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x008C(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x008C(0x0010)(NoDestructor)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable2;                                // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x00B0(0x11827900)(HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0118(0x322CBBB8)(ConstParm)
-	struct FSlateBrush                            CallFunc_GetBrushForKey_Brush;                     // 0x01A8(0x322CBBB8)()
+	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x00B0(0x0068)(HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0118(0x0090)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushForKey_Brush;                     // 0x01A8(0x0090)()
 	bool                                          CallFunc_GetBrushForKey_ReturnValue;               // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_23A[0x6];                                      // 0x023A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -63,8 +63,8 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x025D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(KeybindWidget_C_ExecuteUbergraph_KeybindWidget) == 0x322CBBB8, "Wrong alignment on KeybindWidget_C_ExecuteUbergraph_KeybindWidget");
-static_assert(sizeof(KeybindWidget_C_ExecuteUbergraph_KeybindWidget) == 0x322CBBB8, "Wrong size on KeybindWidget_C_ExecuteUbergraph_KeybindWidget");
+static_assert(alignof(KeybindWidget_C_ExecuteUbergraph_KeybindWidget) == 0x000008, "Wrong alignment on KeybindWidget_C_ExecuteUbergraph_KeybindWidget");
+static_assert(sizeof(KeybindWidget_C_ExecuteUbergraph_KeybindWidget) == 0x000260, "Wrong size on KeybindWidget_C_ExecuteUbergraph_KeybindWidget");
 static_assert(offsetof(KeybindWidget_C_ExecuteUbergraph_KeybindWidget, EntryPoint) == 0x000000, "Member 'KeybindWidget_C_ExecuteUbergraph_KeybindWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(KeybindWidget_C_ExecuteUbergraph_KeybindWidget, Temp_byte_Variable) == 0x000004, "Member 'KeybindWidget_C_ExecuteUbergraph_KeybindWidget::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(KeybindWidget_C_ExecuteUbergraph_KeybindWidget, Temp_float_Variable) == 0x000008, "Member 'KeybindWidget_C_ExecuteUbergraph_KeybindWidget::Temp_float_Variable' has a wrong offset!");
@@ -136,12 +136,12 @@ static_assert(offsetof(KeybindWidget_C_Set_Brush_Size, Brush_Size_0) == 0x000000
 
 // Function KeybindWidget.KeybindWidget_C.Get Bound Action
 // 0x0008 (0x0008 - 0x0000)
-struct KeybindWidget_C_Get_Bound_Action final
+struct alignas(0x08) KeybindWidget_C_Get_Bound_Action final
 {
 public:
 	class FName                                   Action;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(KeybindWidget_C_Get_Bound_Action) == 0x000004, "Wrong alignment on KeybindWidget_C_Get_Bound_Action");
+static_assert(alignof(KeybindWidget_C_Get_Bound_Action) == 0x000008, "Wrong alignment on KeybindWidget_C_Get_Bound_Action");
 static_assert(sizeof(KeybindWidget_C_Get_Bound_Action) == 0x000008, "Wrong size on KeybindWidget_C_Get_Bound_Action");
 static_assert(offsetof(KeybindWidget_C_Get_Bound_Action, Action) == 0x000000, "Member 'KeybindWidget_C_Get_Bound_Action::Action' has a wrong offset!");
 

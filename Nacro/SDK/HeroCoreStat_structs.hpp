@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // UserDefinedStruct HeroCoreStat.HeroCoreStat
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x03B0 (0x03B0 - 0x0000)
 struct FHeroCoreStat final
 {
 public:
-	struct FGameplayAttribute                     Attribute_2_859C1FB14ABE4A72207022AB0F1427C4;      // 0x0000(0x11821C00)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FFortMultiSizeBrush                    Icon_10_9D04FBD74360020AB7F4218AE9EBD958;          // 0x0020(0x11827900)(Edit, BlueprintVisible)
+	struct FGameplayAttribute                     Attribute_2_859C1FB14ABE4A72207022AB0F1427C4;      // 0x0000(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FFortMultiSizeBrush                    Icon_10_9D04FBD74360020AB7F4218AE9EBD958;          // 0x0020(0x0360)(Edit, BlueprintVisible)
 	class FText                                   Name_5_252242B144B4F7E24E2AE1A24ECF0B7B;           // 0x0380(0x0018)(Edit, BlueprintVisible)
 	class FText                                   Description_7_9356C1674E7568A4B47D958509333360;    // 0x0398(0x0018)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FHeroCoreStat) == 0x11821C00, "Wrong alignment on FHeroCoreStat");
-static_assert(sizeof(FHeroCoreStat) == 0x11821C00, "Wrong size on FHeroCoreStat");
+static_assert(alignof(FHeroCoreStat) == 0x000008, "Wrong alignment on FHeroCoreStat");
+static_assert(sizeof(FHeroCoreStat) == 0x0003B0, "Wrong size on FHeroCoreStat");
 static_assert(offsetof(FHeroCoreStat, Attribute_2_859C1FB14ABE4A72207022AB0F1427C4) == 0x000000, "Member 'FHeroCoreStat::Attribute_2_859C1FB14ABE4A72207022AB0F1427C4' has a wrong offset!");
 static_assert(offsetof(FHeroCoreStat, Icon_10_9D04FBD74360020AB7F4218AE9EBD958) == 0x000020, "Member 'FHeroCoreStat::Icon_10_9D04FBD74360020AB7F4218AE9EBD958' has a wrong offset!");
 static_assert(offsetof(FHeroCoreStat, Name_5_252242B144B4F7E24E2AE1A24ECF0B7B) == 0x000380, "Member 'FHeroCoreStat::Name_5_252242B144B4F7E24E2AE1A24ECF0B7B' has a wrong offset!");

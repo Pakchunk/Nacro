@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HomebaseRatingBar.HomebaseRatingBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0390 - 0x0390)
 class UHomebaseRatingBar_C final : public UFortMaterialProgressBar
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UHomebaseRatingBar_C>();
 	}
 };
-static_assert(alignof(UHomebaseRatingBar_C) == 0x322CBBB8, "Wrong alignment on UHomebaseRatingBar_C");
-static_assert(sizeof(UHomebaseRatingBar_C) == 0x322CBBB8, "Wrong size on UHomebaseRatingBar_C");
+static_assert(alignof(UHomebaseRatingBar_C) == 0x000008, "Wrong alignment on UHomebaseRatingBar_C");
+static_assert(sizeof(UHomebaseRatingBar_C) == 0x000390, "Wrong size on UHomebaseRatingBar_C");
 
 }
 

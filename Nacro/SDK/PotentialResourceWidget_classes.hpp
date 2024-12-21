@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PotentialResourceWidget.PotentialResourceWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0280 - 0x0238)
 class UPotentialResourceWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       TranslateAndFadeUp;                                // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextResourceCount;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextResourceCountShadow;                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UPotentialResourceWidget_C>();
 	}
 };
-static_assert(alignof(UPotentialResourceWidget_C) == 0x322CBBB8, "Wrong alignment on UPotentialResourceWidget_C");
-static_assert(sizeof(UPotentialResourceWidget_C) == 0x322CBBB8, "Wrong size on UPotentialResourceWidget_C");
+static_assert(alignof(UPotentialResourceWidget_C) == 0x000008, "Wrong alignment on UPotentialResourceWidget_C");
+static_assert(sizeof(UPotentialResourceWidget_C) == 0x000280, "Wrong size on UPotentialResourceWidget_C");
 static_assert(offsetof(UPotentialResourceWidget_C, UberGraphFrame) == 0x000238, "Member 'UPotentialResourceWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPotentialResourceWidget_C, TranslateAndFadeUp) == 0x000240, "Member 'UPotentialResourceWidget_C::TranslateAndFadeUp' has a wrong offset!");
 static_assert(offsetof(UPotentialResourceWidget_C, TextResourceCount) == 0x000248, "Member 'UPotentialResourceWidget_C::TextResourceCount' has a wrong offset!");

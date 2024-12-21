@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Reticle.Reticle_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0288 - 0x0288)
 class UReticle_C final : public UFortReticle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UReticle_C>();
 	}
 };
-static_assert(alignof(UReticle_C) == 0x322CBBB8, "Wrong alignment on UReticle_C");
-static_assert(sizeof(UReticle_C) == 0x322CBBB8, "Wrong size on UReticle_C");
+static_assert(alignof(UReticle_C) == 0x000008, "Wrong alignment on UReticle_C");
+static_assert(sizeof(UReticle_C) == 0x000288, "Wrong size on UReticle_C");
 
 }
 

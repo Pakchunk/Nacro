@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass KeybindWidget.KeybindWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0630 (0x08C0 - 0x0290)
 class UKeybindWidget_C final : public UFortKeybindWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 _Image__Keybind;                                   // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__Shadow;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderFrame;                                       // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -37,8 +37,8 @@ public:
 	class USizeBox*                               TextSizeMinBox;                                    // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EFortBrushSize                                Brush_Size;                                        // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_2E9[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMultiSizeBrush                    Frame_MultiBrush;                                  // 0x02F0(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FFortMultiSizeFont                     MultiFont;                                         // 0x0650(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortMultiSizeBrush                    Frame_MultiBrush;                                  // 0x02F0(0x0360)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortMultiSizeFont                     MultiFont;                                         // 0x0650(0x0270)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_KeybindWidget(int32 EntryPoint);
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UKeybindWidget_C>();
 	}
 };
-static_assert(alignof(UKeybindWidget_C) == 0x322CBBB8, "Wrong alignment on UKeybindWidget_C");
-static_assert(sizeof(UKeybindWidget_C) == 0x322CBBB8, "Wrong size on UKeybindWidget_C");
+static_assert(alignof(UKeybindWidget_C) == 0x000008, "Wrong alignment on UKeybindWidget_C");
+static_assert(sizeof(UKeybindWidget_C) == 0x0008C0, "Wrong size on UKeybindWidget_C");
 static_assert(offsetof(UKeybindWidget_C, UberGraphFrame) == 0x000290, "Member 'UKeybindWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UKeybindWidget_C, _Image__Keybind) == 0x000298, "Member 'UKeybindWidget_C::_Image__Keybind' has a wrong offset!");
 static_assert(offsetof(UKeybindWidget_C, _Image__Shadow) == 0x0002A0, "Member 'UKeybindWidget_C::_Image__Shadow' has a wrong offset!");

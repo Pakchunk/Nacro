@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function OutpostScreenStormShield.OutpostScreenStormShield_C.ExecuteUbergraph_OutpostScreenStormShield
-// 0x00A0 (0x00A0 - 0x0000)
-struct alignas(0x28) OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield final
+// 0x0080 (0x0080 - 0x0000)
+struct OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,8 +42,8 @@ public:
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield) == 0x000028, "Wrong alignment on OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield");
-static_assert(sizeof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield) == 0x0000A0, "Wrong size on OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield");
+static_assert(alignof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield) == 0x000008, "Wrong alignment on OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield");
+static_assert(sizeof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield) == 0x000080, "Wrong size on OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield");
 static_assert(offsetof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield, EntryPoint) == 0x000000, "Member 'OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield::EntryPoint' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield, K2Node_ComponentBoundEvent_TabId2) == 0x000008, "Member 'OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield::K2Node_ComponentBoundEvent_TabId2' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield, CallFunc_Conv_NameToString_ReturnValue) == 0x000010, "Member 'OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
@@ -61,32 +61,32 @@ static_assert(offsetof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreen
 static_assert(offsetof(OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield, CallFunc_GetUINavigationManager_ReturnValue) == 0x000078, "Member 'OutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function OutpostScreenStormShield.OutpostScreenStormShield_C.BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature final
+// 0x0010 (0x0010 - 0x0000)
+struct OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature) == 0x0000E4, "Wrong alignment on OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature) == 0x0000E4, "Wrong size on OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature");
+static_assert(alignof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature");
+static_assert(sizeof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature");
 static_assert(offsetof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function OutpostScreenStormShield.OutpostScreenStormShield_C.BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x0000E4, "Wrong alignment on OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
-static_assert(sizeof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x0000E4, "Wrong size on OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+static_assert(alignof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000008, "Wrong alignment on OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+static_assert(sizeof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000008, "Wrong size on OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
 static_assert(offsetof(OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature, TabId) == 0x000000, "Member 'OutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature::TabId' has a wrong offset!");
 
 // Function OutpostScreenStormShield.OutpostScreenStormShield_C.SetCoreBuilding
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) OutpostScreenStormShield_C_SetCoreBuilding final
+// 0x0038 (0x0038 - 0x0000)
+struct OutpostScreenStormShield_C_SetCoreBuilding final
 {
 public:
 	class AFortOutpostBuilding*                   NewCoreBuilding;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -98,8 +98,8 @@ public:
 	class UOutpostScreenStormShieldPermissions_C* K2Node_DynamicCast_AsOutpost_Screen_Storm_Shield_Permissions; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OutpostScreenStormShield_C_SetCoreBuilding) == 0x0000E4, "Wrong alignment on OutpostScreenStormShield_C_SetCoreBuilding");
-static_assert(sizeof(OutpostScreenStormShield_C_SetCoreBuilding) == 0x0000E4, "Wrong size on OutpostScreenStormShield_C_SetCoreBuilding");
+static_assert(alignof(OutpostScreenStormShield_C_SetCoreBuilding) == 0x000008, "Wrong alignment on OutpostScreenStormShield_C_SetCoreBuilding");
+static_assert(sizeof(OutpostScreenStormShield_C_SetCoreBuilding) == 0x000038, "Wrong size on OutpostScreenStormShield_C_SetCoreBuilding");
 static_assert(offsetof(OutpostScreenStormShield_C_SetCoreBuilding, NewCoreBuilding) == 0x000000, "Member 'OutpostScreenStormShield_C_SetCoreBuilding::NewCoreBuilding' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShield_C_SetCoreBuilding, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShield_C_SetCoreBuilding::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShield_C_SetCoreBuilding, CallFunc_GetWidgetAtIndex_ReturnValue2) == 0x000010, "Member 'OutpostScreenStormShield_C_SetCoreBuilding::CallFunc_GetWidgetAtIndex_ReturnValue2' has a wrong offset!");
@@ -109,15 +109,15 @@ static_assert(offsetof(OutpostScreenStormShield_C_SetCoreBuilding, K2Node_Dynami
 static_assert(offsetof(OutpostScreenStormShield_C_SetCoreBuilding, K2Node_DynamicCast_bSuccess2) == 0x000030, "Member 'OutpostScreenStormShield_C_SetCoreBuilding::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function OutpostScreenStormShield.OutpostScreenStormShield_C.AddInputHandlers
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct OutpostScreenStormShield_C_AddInputHandlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(OutpostScreenStormShield_C_AddInputHandlers) == 0x1182EB00, "Wrong alignment on OutpostScreenStormShield_C_AddInputHandlers");
-static_assert(sizeof(OutpostScreenStormShield_C_AddInputHandlers) == 0x1182EB00, "Wrong size on OutpostScreenStormShield_C_AddInputHandlers");
+static_assert(alignof(OutpostScreenStormShield_C_AddInputHandlers) == 0x000008, "Wrong alignment on OutpostScreenStormShield_C_AddInputHandlers");
+static_assert(sizeof(OutpostScreenStormShield_C_AddInputHandlers) == 0x000020, "Wrong size on OutpostScreenStormShield_C_AddInputHandlers");
 static_assert(offsetof(OutpostScreenStormShield_C_AddInputHandlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'OutpostScreenStormShield_C_AddInputHandlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShield_C_AddInputHandlers, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'OutpostScreenStormShield_C_AddInputHandlers::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 

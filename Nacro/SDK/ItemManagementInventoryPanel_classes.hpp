@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementInventoryPanel.ItemManagementInventoryPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0100 (0x0400 - 0x0300)
 class UItemManagementInventoryPanel_C final : public UFortItemManagementInventoryPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       FadeMessage;                                       // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemManagementInventoryLimitStatusIndicator_C* AccountLimit;                                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           BackpackHeader;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -103,8 +103,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementInventoryPanel_C>();
 	}
 };
-static_assert(alignof(UItemManagementInventoryPanel_C) == 0x322CBBB8, "Wrong alignment on UItemManagementInventoryPanel_C");
-static_assert(sizeof(UItemManagementInventoryPanel_C) == 0x322CBBB8, "Wrong size on UItemManagementInventoryPanel_C");
+static_assert(alignof(UItemManagementInventoryPanel_C) == 0x000008, "Wrong alignment on UItemManagementInventoryPanel_C");
+static_assert(sizeof(UItemManagementInventoryPanel_C) == 0x000400, "Wrong size on UItemManagementInventoryPanel_C");
 static_assert(offsetof(UItemManagementInventoryPanel_C, UberGraphFrame) == 0x000300, "Member 'UItemManagementInventoryPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementInventoryPanel_C, FadeMessage) == 0x000308, "Member 'UItemManagementInventoryPanel_C::FadeMessage' has a wrong offset!");
 static_assert(offsetof(UItemManagementInventoryPanel_C, AccountLimit) == 0x000310, "Member 'UItemManagementInventoryPanel_C::AccountLimit' has a wrong offset!");

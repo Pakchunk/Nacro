@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNStatic_MantisStrike.GCNStatic_MantisStrike_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0040 - 0x0040)
 class UGCNStatic_MantisStrike_C final : public UGameplayCueNotify_Static
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UGCNStatic_MantisStrike_C>();
 	}
 };
-static_assert(alignof(UGCNStatic_MantisStrike_C) == 0x11821D80, "Wrong alignment on UGCNStatic_MantisStrike_C");
-static_assert(sizeof(UGCNStatic_MantisStrike_C) == 0x11821D80, "Wrong size on UGCNStatic_MantisStrike_C");
+static_assert(alignof(UGCNStatic_MantisStrike_C) == 0x000008, "Wrong alignment on UGCNStatic_MantisStrike_C");
+static_assert(sizeof(UGCNStatic_MantisStrike_C) == 0x000040, "Wrong size on UGCNStatic_MantisStrike_C");
 
 }
 

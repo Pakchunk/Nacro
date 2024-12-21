@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-Tab-Secondary.ButtonStyle-Tab-Secondary_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusTabMinusSecondary_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusTabMinusSecondary_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusTabMinusSecondary_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusTabMinusSecondary_C");
-static_assert(sizeof(UButtonStyleMinusTabMinusSecondary_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusTabMinusSecondary_C");
+static_assert(alignof(UButtonStyleMinusTabMinusSecondary_C) == 0x000008, "Wrong alignment on UButtonStyleMinusTabMinusSecondary_C");
+static_assert(sizeof(UButtonStyleMinusTabMinusSecondary_C) == 0x000530, "Wrong size on UButtonStyleMinusTabMinusSecondary_C");
 
 }
 

@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0090 (0x0648 - 0x05B8)
 class UFortHeroSupportPerkWidget_C final : public UFortHeroSupportPerkWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05B8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05B8(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          BorderShell;                                       // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  DescriptionTextSwitcher;                           // 0x05C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          EvolutionBorder;                                   // 0x05D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -68,8 +68,8 @@ public:
 		return GetDefaultObjImpl<UFortHeroSupportPerkWidget_C>();
 	}
 };
-static_assert(alignof(UFortHeroSupportPerkWidget_C) == 0x322CBBB8, "Wrong alignment on UFortHeroSupportPerkWidget_C");
-static_assert(sizeof(UFortHeroSupportPerkWidget_C) == 0x322CBBB8, "Wrong size on UFortHeroSupportPerkWidget_C");
+static_assert(alignof(UFortHeroSupportPerkWidget_C) == 0x000008, "Wrong alignment on UFortHeroSupportPerkWidget_C");
+static_assert(sizeof(UFortHeroSupportPerkWidget_C) == 0x000648, "Wrong size on UFortHeroSupportPerkWidget_C");
 static_assert(offsetof(UFortHeroSupportPerkWidget_C, UberGraphFrame) == 0x0005B8, "Member 'UFortHeroSupportPerkWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFortHeroSupportPerkWidget_C, BorderShell) == 0x0005C0, "Member 'UFortHeroSupportPerkWidget_C::BorderShell' has a wrong offset!");
 static_assert(offsetof(UFortHeroSupportPerkWidget_C, DescriptionTextSwitcher) == 0x0005C8, "Member 'UFortHeroSupportPerkWidget_C::DescriptionTextSwitcher' has a wrong offset!");

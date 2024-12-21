@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_TeleportPad.Results_TeleportPad_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00F0 (0x0390 - 0x02A0)
 class UResults_TeleportPad_C final : public UFortResultsTeleportScreenWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_ExitButtonIntro;                              // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_ExitTimeTick;                                 // 0x02B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_ExitEnabled;                                  // 0x02B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -97,8 +97,8 @@ public:
 		return GetDefaultObjImpl<UResults_TeleportPad_C>();
 	}
 };
-static_assert(alignof(UResults_TeleportPad_C) == 0x322CBBB8, "Wrong alignment on UResults_TeleportPad_C");
-static_assert(sizeof(UResults_TeleportPad_C) == 0x322CBBB8, "Wrong size on UResults_TeleportPad_C");
+static_assert(alignof(UResults_TeleportPad_C) == 0x000008, "Wrong alignment on UResults_TeleportPad_C");
+static_assert(sizeof(UResults_TeleportPad_C) == 0x000390, "Wrong size on UResults_TeleportPad_C");
 static_assert(offsetof(UResults_TeleportPad_C, UberGraphFrame) == 0x0002A0, "Member 'UResults_TeleportPad_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_TeleportPad_C, Anim_ExitButtonIntro) == 0x0002A8, "Member 'UResults_TeleportPad_C::Anim_ExitButtonIntro' has a wrong offset!");
 static_assert(offsetof(UResults_TeleportPad_C, Anim_ExitTimeTick) == 0x0002B0, "Member 'UResults_TeleportPad_C::Anim_ExitTimeTick' has a wrong offset!");

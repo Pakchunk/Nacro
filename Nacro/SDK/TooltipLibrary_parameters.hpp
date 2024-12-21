@@ -40,8 +40,8 @@ static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, Output) == 0x00004
 static_assert(offsetof(TooltipLibrary_C_Create_Basic_Tooltip, CallFunc_Create_ReturnValue) == 0x000050, "Member 'TooltipLibrary_C_Create_Basic_Tooltip::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function TooltipLibrary.TooltipLibrary_C.Create Custom Tooltip
-// 0x004B (0x004B - 0x0000)
-struct alignas(0x0F) TooltipLibrary_C_Create_Custom_Tooltip final
+// 0x0048 (0x0048 - 0x0000)
+struct TooltipLibrary_C_Create_Custom_Tooltip final
 {
 public:
 	class APlayerController*                      Owning_Player;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 	class UUserWidget*                            Output;                                            // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTooltipMinusCustomMinusS_C*            CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipLibrary_C_Create_Custom_Tooltip) == 0x00000F, "Wrong alignment on TooltipLibrary_C_Create_Custom_Tooltip");
-static_assert(sizeof(TooltipLibrary_C_Create_Custom_Tooltip) == 0x00004B, "Wrong size on TooltipLibrary_C_Create_Custom_Tooltip");
+static_assert(alignof(TooltipLibrary_C_Create_Custom_Tooltip) == 0x000008, "Wrong alignment on TooltipLibrary_C_Create_Custom_Tooltip");
+static_assert(sizeof(TooltipLibrary_C_Create_Custom_Tooltip) == 0x000048, "Wrong size on TooltipLibrary_C_Create_Custom_Tooltip");
 static_assert(offsetof(TooltipLibrary_C_Create_Custom_Tooltip, Owning_Player) == 0x000000, "Member 'TooltipLibrary_C_Create_Custom_Tooltip::Owning_Player' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_Create_Custom_Tooltip, Header_Text) == 0x000008, "Member 'TooltipLibrary_C_Create_Custom_Tooltip::Header_Text' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_Create_Custom_Tooltip, Icon_Brush) == 0x000020, "Member 'TooltipLibrary_C_Create_Custom_Tooltip::Icon_Brush' has a wrong offset!");
@@ -159,20 +159,20 @@ static_assert(offsetof(TooltipLibrary_C_Create_Basic_Multi_Line_Tooltip, Output)
 static_assert(offsetof(TooltipLibrary_C_Create_Basic_Multi_Line_Tooltip, CallFunc_Create_ReturnValue) == 0x000048, "Member 'TooltipLibrary_C_Create_Basic_Multi_Line_Tooltip::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function TooltipLibrary.TooltipLibrary_C.Create Core Stat Tooltip
-// 0x0510 (0x0510 - 0x0000)
+// 0x03D8 (0x03D8 - 0x0000)
 struct TooltipLibrary_C_Create_Core_Stat_Tooltip final
 {
 public:
 	class APlayerController*                      Owning_Player;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHeroCoreStat                          Data;                                              // 0x0008(0x11821C00)(Parm, HasGetValueTypeHash)
+	struct FHeroCoreStat                          Data;                                              // 0x0008(0x03B0)(Parm, HasGetValueTypeHash)
 	float                                         Value;                                             // 0x03B8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x03C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            Output;                                            // 0x03C8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTooltipMinusCoreStat_C*                CallFunc_Create_ReturnValue;                       // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipLibrary_C_Create_Core_Stat_Tooltip) == 0x000144, "Wrong alignment on TooltipLibrary_C_Create_Core_Stat_Tooltip");
-static_assert(sizeof(TooltipLibrary_C_Create_Core_Stat_Tooltip) == 0x000510, "Wrong size on TooltipLibrary_C_Create_Core_Stat_Tooltip");
+static_assert(alignof(TooltipLibrary_C_Create_Core_Stat_Tooltip) == 0x000008, "Wrong alignment on TooltipLibrary_C_Create_Core_Stat_Tooltip");
+static_assert(sizeof(TooltipLibrary_C_Create_Core_Stat_Tooltip) == 0x0003D8, "Wrong size on TooltipLibrary_C_Create_Core_Stat_Tooltip");
 static_assert(offsetof(TooltipLibrary_C_Create_Core_Stat_Tooltip, Owning_Player) == 0x000000, "Member 'TooltipLibrary_C_Create_Core_Stat_Tooltip::Owning_Player' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_Create_Core_Stat_Tooltip, Data) == 0x000008, "Member 'TooltipLibrary_C_Create_Core_Stat_Tooltip::Data' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_Create_Core_Stat_Tooltip, Value) == 0x0003B8, "Member 'TooltipLibrary_C_Create_Core_Stat_Tooltip::Value' has a wrong offset!");
@@ -181,8 +181,8 @@ static_assert(offsetof(TooltipLibrary_C_Create_Core_Stat_Tooltip, Output) == 0x0
 static_assert(offsetof(TooltipLibrary_C_Create_Core_Stat_Tooltip, CallFunc_Create_ReturnValue) == 0x0003D0, "Member 'TooltipLibrary_C_Create_Core_Stat_Tooltip::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function TooltipLibrary.TooltipLibrary_C.CreateXPTooltip
-// 0x0559 (0x0559 - 0x0000)
-struct alignas(0x559) TooltipLibrary_C_CreateXPTooltip final
+// 0x0098 (0x0098 - 0x0000)
+struct TooltipLibrary_C_CreateXPTooltip final
 {
 public:
 	class APlayerController*                      Owner;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -195,8 +195,8 @@ public:
 	class UCommonUserWidget*                      Out;                                               // 0x0088(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UXpBarToolTip_C*                        CallFunc_Create_ReturnValue;                       // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TooltipLibrary_C_CreateXPTooltip) == 0x000559, "Wrong alignment on TooltipLibrary_C_CreateXPTooltip");
-static_assert(sizeof(TooltipLibrary_C_CreateXPTooltip) == 0x000559, "Wrong size on TooltipLibrary_C_CreateXPTooltip");
+static_assert(alignof(TooltipLibrary_C_CreateXPTooltip) == 0x000008, "Wrong alignment on TooltipLibrary_C_CreateXPTooltip");
+static_assert(sizeof(TooltipLibrary_C_CreateXPTooltip) == 0x000098, "Wrong size on TooltipLibrary_C_CreateXPTooltip");
 static_assert(offsetof(TooltipLibrary_C_CreateXPTooltip, Owner) == 0x000000, "Member 'TooltipLibrary_C_CreateXPTooltip::Owner' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_CreateXPTooltip, Header) == 0x000008, "Member 'TooltipLibrary_C_CreateXPTooltip::Header' has a wrong offset!");
 static_assert(offsetof(TooltipLibrary_C_CreateXPTooltip, CommanderXP) == 0x000020, "Member 'TooltipLibrary_C_CreateXPTooltip::CommanderXP' has a wrong offset!");

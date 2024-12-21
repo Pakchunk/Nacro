@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "RewardListEntryType_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
-#include "RewardListEntryType_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 
 
@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RewardsListEntry.RewardsListEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0098 (0x02D0 - 0x0238)
 class URewardsListEntry_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       CommonTextBlock_5;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortMultiSizeItemCard*                 FortItemCard_XXSSchematicItemCard;                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_3;                                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -38,7 +38,7 @@ public:
 	class UCommonWidgetSwitcher*                  SwitcherRewardType;                                // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  SwitcherSpecialRewardType;                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItem*                              RewardItem;                                        // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FSlateColor                            TextColour;                                        // 0x0298(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateColor                            TextColour;                                        // 0x0298(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn)
 	ERewardListEntryType                          RewardType;                                        // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    ItemDef;                                           // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<URewardsListEntry_C>();
 	}
 };
-static_assert(alignof(URewardsListEntry_C) == 0x322CBBB8, "Wrong alignment on URewardsListEntry_C");
-static_assert(sizeof(URewardsListEntry_C) == 0x322CBBB8, "Wrong size on URewardsListEntry_C");
+static_assert(alignof(URewardsListEntry_C) == 0x000008, "Wrong alignment on URewardsListEntry_C");
+static_assert(sizeof(URewardsListEntry_C) == 0x0002D0, "Wrong size on URewardsListEntry_C");
 static_assert(offsetof(URewardsListEntry_C, UberGraphFrame) == 0x000238, "Member 'URewardsListEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URewardsListEntry_C, CommonTextBlock_5) == 0x000240, "Member 'URewardsListEntry_C::CommonTextBlock_5' has a wrong offset!");
 static_assert(offsetof(URewardsListEntry_C, FortItemCard_XXSSchematicItemCard) == 0x000248, "Member 'URewardsListEntry_C::FortItemCard_XXSSchematicItemCard' has a wrong offset!");

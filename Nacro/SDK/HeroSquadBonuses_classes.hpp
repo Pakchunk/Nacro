@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HeroSquadBonuses.HeroSquadBonuses_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0278 - 0x0278)
 class UHeroSquadBonuses_C final : public UFortHeroSquadBonusPerksWidgetBase
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UHeroSquadBonuses_C>();
 	}
 };
-static_assert(alignof(UHeroSquadBonuses_C) == 0x322CBBB8, "Wrong alignment on UHeroSquadBonuses_C");
-static_assert(sizeof(UHeroSquadBonuses_C) == 0x322CBBB8, "Wrong size on UHeroSquadBonuses_C");
+static_assert(alignof(UHeroSquadBonuses_C) == 0x000008, "Wrong alignment on UHeroSquadBonuses_C");
+static_assert(sizeof(UHeroSquadBonuses_C) == 0x000278, "Wrong size on UHeroSquadBonuses_C");
 
 }
 

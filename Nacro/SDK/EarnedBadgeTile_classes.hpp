@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass EarnedBadgeTile.EarnedBadgeTile_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0290 - 0x0238)
 class UEarnedBadgeTile_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UFortNumericTextBlock*                  BadgeCount;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       BadgeDescription;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemIcon*                          BadgeIcon;                                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,7 +35,7 @@ public:
 	int32                                         Count;                                             // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bEarnedBadge;                                      // 0x027C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_27D[0x3];                                      // 0x027D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           DarkenBadge;                                       // 0x0280(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DarkenBadge;                                       // 0x0280(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_EarnedBadgeTile(int32 EntryPoint);
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UEarnedBadgeTile_C>();
 	}
 };
-static_assert(alignof(UEarnedBadgeTile_C) == 0x322CBBB8, "Wrong alignment on UEarnedBadgeTile_C");
-static_assert(sizeof(UEarnedBadgeTile_C) == 0x322CBBB8, "Wrong size on UEarnedBadgeTile_C");
+static_assert(alignof(UEarnedBadgeTile_C) == 0x000008, "Wrong alignment on UEarnedBadgeTile_C");
+static_assert(sizeof(UEarnedBadgeTile_C) == 0x000290, "Wrong size on UEarnedBadgeTile_C");
 static_assert(offsetof(UEarnedBadgeTile_C, UberGraphFrame) == 0x000238, "Member 'UEarnedBadgeTile_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UEarnedBadgeTile_C, BadgeCount) == 0x000240, "Member 'UEarnedBadgeTile_C::BadgeCount' has a wrong offset!");
 static_assert(offsetof(UEarnedBadgeTile_C, BadgeDescription) == 0x000248, "Member 'UEarnedBadgeTile_C::BadgeDescription' has a wrong offset!");

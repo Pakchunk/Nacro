@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function CollectionBookPageDetailsWidget.CollectionBookPageDetailsWidget_C.ExecuteUbergraph_CollectionBookPageDetailsWidget
-// 0x0A51 (0x0A51 - 0x0000)
-struct alignas(0xA51) CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget final
+// 0x0014 (0x0014 - 0x0000)
+struct CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,8 +33,8 @@ public:
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget) == 0x000A51, "Wrong alignment on CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget");
-static_assert(sizeof(CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget) == 0x000A51, "Wrong size on CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget");
+static_assert(alignof(CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget) == 0x000004, "Wrong alignment on CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget");
+static_assert(sizeof(CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget) == 0x000014, "Wrong size on CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget");
 static_assert(offsetof(CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget, EntryPoint) == 0x000000, "Member 'CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget, Temp_byte_Variable) == 0x000004, "Member 'CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget, Temp_byte_Variable2) == 0x000005, "Member 'CollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget::Temp_byte_Variable2' has a wrong offset!");

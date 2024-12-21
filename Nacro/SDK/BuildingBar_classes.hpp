@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BuildingBar.BuildingBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0140 (0x0378 - 0x0238)
 class UBuildingBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         _Horizontal_Box__Health_Stat_Text;                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__HP_Baseplate;                              // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               _Overlay__HP_Bar_Artwork;                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,20 +46,20 @@ public:
 	float                                         Max_HP_Value;                                      // 0x02C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Last_HP_Value;                                     // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2CC[0x4];                                      // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           HP_FadeTimer;                                      // 0x02D0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           HP_FadeTimer;                                      // 0x02D0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         HP_FadeUpdateRate;                                 // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuildingInteraction                      DisplayMode;                                       // 0x02DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2DD[0x3];                                      // 0x02DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Max_Durability_Value;                              // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Current_Durability_Value;                          // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Default_Baseplate_Color;                           // 0x02E8(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Alternate_Baseplate_Color;                         // 0x02F8(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Default_HP_Color_A;                                // 0x0308(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Default_HP_Color_B;                                // 0x0318(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Default_HP_Color_C;                                // 0x0328(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Alternate_HP_Color_A;                              // 0x0338(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Alternate_HP_Color_B;                              // 0x0348(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Alternate_HP_Color_C;                              // 0x0358(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Default_Baseplate_Color;                           // 0x02E8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Alternate_Baseplate_Color;                         // 0x02F8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Default_HP_Color_A;                                // 0x0308(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Default_HP_Color_B;                                // 0x0318(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Default_HP_Color_C;                                // 0x0328(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Alternate_HP_Color_A;                              // 0x0338(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Alternate_HP_Color_B;                              // 0x0348(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Alternate_HP_Color_C;                              // 0x0358(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Show_Trap_Durability_Text;                         // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_369[0x7];                                      // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              TemporaryTrapInstance;                             // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -91,8 +91,8 @@ public:
 		return GetDefaultObjImpl<UBuildingBar_C>();
 	}
 };
-static_assert(alignof(UBuildingBar_C) == 0x322CBBB8, "Wrong alignment on UBuildingBar_C");
-static_assert(sizeof(UBuildingBar_C) == 0x322CBBB8, "Wrong size on UBuildingBar_C");
+static_assert(alignof(UBuildingBar_C) == 0x000008, "Wrong alignment on UBuildingBar_C");
+static_assert(sizeof(UBuildingBar_C) == 0x000378, "Wrong size on UBuildingBar_C");
 static_assert(offsetof(UBuildingBar_C, UberGraphFrame) == 0x000238, "Member 'UBuildingBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBuildingBar_C, _Horizontal_Box__Health_Stat_Text) == 0x000240, "Member 'UBuildingBar_C::_Horizontal_Box__Health_Stat_Text' has a wrong offset!");
 static_assert(offsetof(UBuildingBar_C, _Image__HP_Baseplate) == 0x000248, "Member 'UBuildingBar_C::_Image__HP_Baseplate' has a wrong offset!");

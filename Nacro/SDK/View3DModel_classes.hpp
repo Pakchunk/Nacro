@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass View3DModel.View3DModel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x03E8 - 0x03E0)
 class UView3DModel_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_View3DModel(int32 EntryPoint);
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UView3DModel_C>();
 	}
 };
-static_assert(alignof(UView3DModel_C) == 0x322CBBB8, "Wrong alignment on UView3DModel_C");
-static_assert(sizeof(UView3DModel_C) == 0x322CBBB8, "Wrong size on UView3DModel_C");
+static_assert(alignof(UView3DModel_C) == 0x000008, "Wrong alignment on UView3DModel_C");
+static_assert(sizeof(UView3DModel_C) == 0x0003E8, "Wrong size on UView3DModel_C");
 static_assert(offsetof(UView3DModel_C, UberGraphFrame) == 0x0003E0, "Member 'UView3DModel_C::UberGraphFrame' has a wrong offset!");
 
 }

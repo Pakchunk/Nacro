@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InfoEntry.InfoEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UInfoEntry_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      IconTextButton;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemDefinition*                    Item_Definition;                                   // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   Entry_Selected;                                    // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -59,8 +59,8 @@ public:
 		return GetDefaultObjImpl<UInfoEntry_C>();
 	}
 };
-static_assert(alignof(UInfoEntry_C) == 0x322CBBB8, "Wrong alignment on UInfoEntry_C");
-static_assert(sizeof(UInfoEntry_C) == 0x322CBBB8, "Wrong size on UInfoEntry_C");
+static_assert(alignof(UInfoEntry_C) == 0x000008, "Wrong alignment on UInfoEntry_C");
+static_assert(sizeof(UInfoEntry_C) == 0x000260, "Wrong size on UInfoEntry_C");
 static_assert(offsetof(UInfoEntry_C, UberGraphFrame) == 0x000238, "Member 'UInfoEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UInfoEntry_C, IconTextButton) == 0x000240, "Member 'UInfoEntry_C::IconTextButton' has a wrong offset!");
 static_assert(offsetof(UInfoEntry_C, Item_Definition) == 0x000248, "Member 'UInfoEntry_C::Item_Definition' has a wrong offset!");

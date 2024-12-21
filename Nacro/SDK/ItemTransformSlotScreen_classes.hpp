@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotScreen.ItemTransformSlotScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C0 (0x02F8 - 0x0238)
 class UItemTransformSlotScreen_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UItemTransformItemPicker_C*             ItemTransformItemPicker;                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemTransformResultInfo_C*             ItemTransformResultInfo;                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemTransformSlotEntry_C*              Slot1;                                             // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -81,8 +81,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformSlotScreen_C>();
 	}
 };
-static_assert(alignof(UItemTransformSlotScreen_C) == 0x322CBBB8, "Wrong alignment on UItemTransformSlotScreen_C");
-static_assert(sizeof(UItemTransformSlotScreen_C) == 0x322CBBB8, "Wrong size on UItemTransformSlotScreen_C");
+static_assert(alignof(UItemTransformSlotScreen_C) == 0x000008, "Wrong alignment on UItemTransformSlotScreen_C");
+static_assert(sizeof(UItemTransformSlotScreen_C) == 0x0002F8, "Wrong size on UItemTransformSlotScreen_C");
 static_assert(offsetof(UItemTransformSlotScreen_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformSlotScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransformSlotScreen_C, ItemTransformItemPicker) == 0x000240, "Member 'UItemTransformSlotScreen_C::ItemTransformItemPicker' has a wrong offset!");
 static_assert(offsetof(UItemTransformSlotScreen_C, ItemTransformResultInfo) == 0x000248, "Member 'UItemTransformSlotScreen_C::ItemTransformResultInfo' has a wrong offset!");

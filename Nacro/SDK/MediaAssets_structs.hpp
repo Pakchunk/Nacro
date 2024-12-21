@@ -31,17 +31,18 @@ enum class EMediaPlayerTrack : uint8
 };
 
 // ScriptStruct MediaAssets.MediaPlayerOverlay
-// 0x33DB3E80 (0x33DB3E80 - 0x0000)
-struct alignas(0x33DB3E80) FMediaPlayerOverlay final
+// 0x0028 (0x0028 - 0x0000)
+struct FMediaPlayerOverlay final
 {
 public:
 	bool                                          HasPosition;                                       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Position;                                          // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Position;                                          // 0x0004(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Text;                                              // 0x0010(0x0018)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMediaPlayerOverlay) == 0x33DB3E80, "Wrong alignment on FMediaPlayerOverlay");
-static_assert(sizeof(FMediaPlayerOverlay) == 0x33DB3E80, "Wrong size on FMediaPlayerOverlay");
+static_assert(alignof(FMediaPlayerOverlay) == 0x000008, "Wrong alignment on FMediaPlayerOverlay");
+static_assert(sizeof(FMediaPlayerOverlay) == 0x000028, "Wrong size on FMediaPlayerOverlay");
 static_assert(offsetof(FMediaPlayerOverlay, HasPosition) == 0x000000, "Member 'FMediaPlayerOverlay::HasPosition' has a wrong offset!");
 static_assert(offsetof(FMediaPlayerOverlay, Position) == 0x000004, "Member 'FMediaPlayerOverlay::Position' has a wrong offset!");
 static_assert(offsetof(FMediaPlayerOverlay, Text) == 0x000010, "Member 'FMediaPlayerOverlay::Text' has a wrong offset!");

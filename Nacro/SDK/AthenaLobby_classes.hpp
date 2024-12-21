@@ -21,28 +21,28 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaLobby.AthenaLobby_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A8 (0x04D8 - 0x0430)
 class UAthenaLobby_C final : public UAthenaLobbyBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
 	class UAthenaNews_C*                          AthenaNews;                                        // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ButtonGamepadSelect;                               // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaMatchmakingWidget_C*             Launch;                                            // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaLobbyPlayerPanel_C*              PlayerPanel;                                       // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    InputCancel;                                       // 0x0460(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InputCancel;                                       // 0x0460(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         SwitcherDetailsActiveIndex;                        // 0x0470(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_474[0x4];                                      // 0x0474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortTeamMemberInfo>            TeamMembersInfo;                                   // 0x0478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	int32                                         HoveredPlayerIndex;                                // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_48C[0x4];                                      // 0x048C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    InputScroll;                                       // 0x0490(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InputScroll;                                       // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         SelectedPlayerIndex;                               // 0x04A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4A4[0x4];                                      // 0x04A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 NavigationOrderToPlayerIndex;                      // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FDataTableRowHandle                    PlaylistChange;                                    // 0x04B8(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    FillChange;                                        // 0x04C8(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    PlaylistChange;                                    // 0x04B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    FillChange;                                        // 0x04C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaLobby(int32 EntryPoint);
@@ -100,8 +100,8 @@ public:
 		return GetDefaultObjImpl<UAthenaLobby_C>();
 	}
 };
-static_assert(alignof(UAthenaLobby_C) == 0x322CBBB8, "Wrong alignment on UAthenaLobby_C");
-static_assert(sizeof(UAthenaLobby_C) == 0x322CBBB8, "Wrong size on UAthenaLobby_C");
+static_assert(alignof(UAthenaLobby_C) == 0x000008, "Wrong alignment on UAthenaLobby_C");
+static_assert(sizeof(UAthenaLobby_C) == 0x0004D8, "Wrong size on UAthenaLobby_C");
 static_assert(offsetof(UAthenaLobby_C, UberGraphFrame) == 0x000430, "Member 'UAthenaLobby_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaLobby_C, AthenaNews) == 0x000438, "Member 'UAthenaLobby_C::AthenaNews' has a wrong offset!");
 static_assert(offsetof(UAthenaLobby_C, ButtonGamepadSelect) == 0x000440, "Member 'UAthenaLobby_C::ButtonGamepadSelect' has a wrong offset!");

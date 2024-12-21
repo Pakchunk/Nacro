@@ -82,28 +82,28 @@ static_assert(sizeof(AthenaQuickbarPrimary_C_OnQuickbarContentsChanged) == 0x000
 static_assert(offsetof(AthenaQuickbarPrimary_C_OnQuickbarContentsChanged, QuickbarIndex) == 0x000000, "Member 'AthenaQuickbarPrimary_C_OnQuickbarContentsChanged::QuickbarIndex' has a wrong offset!");
 
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.OnQuickBarSlotFocusChanged_Bind
-// 0x2E004D (0x2E004D - 0x0000)
-struct alignas(0x2E004D) AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind final
 {
 public:
 	EFortQuickBars                                QuickbarIndex;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Slot_0;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind) == 0x2E004D, "Wrong alignment on AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind");
-static_assert(sizeof(AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind) == 0x2E004D, "Wrong size on AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind");
+static_assert(alignof(AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind) == 0x000004, "Wrong alignment on AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind");
+static_assert(sizeof(AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind) == 0x000008, "Wrong size on AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind");
 static_assert(offsetof(AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind, QuickbarIndex) == 0x000000, "Member 'AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind::QuickbarIndex' has a wrong offset!");
 static_assert(offsetof(AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind, Slot_0) == 0x000004, "Member 'AthenaQuickbarPrimary_C_OnQuickBarSlotFocusChanged_Bind::Slot_0' has a wrong offset!");
 
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.HandleInputMethodChanged_Bind
-// 0x04D1 (0x04D1 - 0x0000)
-struct alignas(0x4D1) AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind final
 {
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind) == 0x0004D1, "Wrong alignment on AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind");
-static_assert(sizeof(AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind) == 0x0004D1, "Wrong size on AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind");
+static_assert(alignof(AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind) == 0x000001, "Wrong alignment on AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind");
+static_assert(sizeof(AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind) == 0x000001, "Wrong size on AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind");
 static_assert(offsetof(AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind, bUsingGamepad) == 0x000000, "Member 'AthenaQuickbarPrimary_C_HandleInputMethodChanged_Bind::bUsingGamepad' has a wrong offset!");
 
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.Show Primary Quickbar Rail
@@ -127,7 +127,7 @@ static_assert(offsetof(AthenaQuickbarPrimary_C_Show_Primary_Quickbar_Rail, K2Nod
 
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.HasOneNonHarvestWeapon
 // 0x0020 (0x0020 - 0x0000)
-struct alignas(0x10) AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon final
+struct AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon final
 {
 public:
 	bool                                          HasNonHarvestWeapon;                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -139,7 +139,7 @@ public:
 	class UQuickbarSlot_C*                        CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon) == 0x000010, "Wrong alignment on AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon");
+static_assert(alignof(AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon) == 0x000008, "Wrong alignment on AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon");
 static_assert(sizeof(AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon) == 0x000020, "Wrong size on AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon");
 static_assert(offsetof(AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon, HasNonHarvestWeapon) == 0x000000, "Member 'AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon::HasNonHarvestWeapon' has a wrong offset!");
 static_assert(offsetof(AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon, Temp_int_Variable) == 0x000004, "Member 'AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon::Temp_int_Variable' has a wrong offset!");
@@ -150,7 +150,7 @@ static_assert(offsetof(AthenaQuickbarPrimary_C_HasOneNonHarvestWeapon, CallFunc_
 
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.HandleUpdateSlots
 // 0x0050 (0x0050 - 0x0000)
-struct alignas(0x14) AthenaQuickbarPrimary_C_HandleUpdateSlots final
+struct AthenaQuickbarPrimary_C_HandleUpdateSlots final
 {
 public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -170,7 +170,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaQuickbarPrimary_C_HandleUpdateSlots) == 0x000014, "Wrong alignment on AthenaQuickbarPrimary_C_HandleUpdateSlots");
+static_assert(alignof(AthenaQuickbarPrimary_C_HandleUpdateSlots) == 0x000008, "Wrong alignment on AthenaQuickbarPrimary_C_HandleUpdateSlots");
 static_assert(sizeof(AthenaQuickbarPrimary_C_HandleUpdateSlots) == 0x000050, "Wrong size on AthenaQuickbarPrimary_C_HandleUpdateSlots");
 static_assert(offsetof(AthenaQuickbarPrimary_C_HandleUpdateSlots, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'AthenaQuickbarPrimary_C_HandleUpdateSlots::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaQuickbarPrimary_C_HandleUpdateSlots, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'AthenaQuickbarPrimary_C_HandleUpdateSlots::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");

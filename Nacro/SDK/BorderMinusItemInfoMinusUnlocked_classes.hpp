@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-ItemInfo-Unlocked.Border-ItemInfo-Unlocked_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusItemInfoMinusUnlocked_C : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusItemInfoMinusUnlocked_C>();
 	}
 };
-static_assert(alignof(UBorderMinusItemInfoMinusUnlocked_C) == 0x11827900, "Wrong alignment on UBorderMinusItemInfoMinusUnlocked_C");
-static_assert(sizeof(UBorderMinusItemInfoMinusUnlocked_C) == 0x11827900, "Wrong size on UBorderMinusItemInfoMinusUnlocked_C");
+static_assert(alignof(UBorderMinusItemInfoMinusUnlocked_C) == 0x000008, "Wrong alignment on UBorderMinusItemInfoMinusUnlocked_C");
+static_assert(sizeof(UBorderMinusItemInfoMinusUnlocked_C) == 0x0000B8, "Wrong size on UBorderMinusItemInfoMinusUnlocked_C");
 
 }
 

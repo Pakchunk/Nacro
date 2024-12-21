@@ -20,14 +20,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_SimpleItemWidget.BP_SimpleItemWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B0 (0x02E8 - 0x0238)
 class UBP_SimpleItemWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 IconImage;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       QuantityText;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            IconBrush;                                         // 0x0250(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x0250(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
 	int32                                         Quantity;                                          // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UBP_SimpleItemWidget_C>();
 	}
 };
-static_assert(alignof(UBP_SimpleItemWidget_C) == 0x322CBBB8, "Wrong alignment on UBP_SimpleItemWidget_C");
-static_assert(sizeof(UBP_SimpleItemWidget_C) == 0x322CBBB8, "Wrong size on UBP_SimpleItemWidget_C");
+static_assert(alignof(UBP_SimpleItemWidget_C) == 0x000008, "Wrong alignment on UBP_SimpleItemWidget_C");
+static_assert(sizeof(UBP_SimpleItemWidget_C) == 0x0002E8, "Wrong size on UBP_SimpleItemWidget_C");
 static_assert(offsetof(UBP_SimpleItemWidget_C, UberGraphFrame) == 0x000238, "Member 'UBP_SimpleItemWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_SimpleItemWidget_C, IconImage) == 0x000240, "Member 'UBP_SimpleItemWidget_C::IconImage' has a wrong offset!");
 static_assert(offsetof(UBP_SimpleItemWidget_C, QuantityText) == 0x000248, "Member 'UBP_SimpleItemWidget_C::QuantityText' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HordeWaveModifiersWidget.HordeWaveModifiersWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0270 - 0x0240)
 class UHordeWaveModifiersWidget_C final : public UFortUserWidget
 {
 public:
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UHordeWaveModifiersWidget_C>();
 	}
 };
-static_assert(alignof(UHordeWaveModifiersWidget_C) == 0x322CBBB8, "Wrong alignment on UHordeWaveModifiersWidget_C");
-static_assert(sizeof(UHordeWaveModifiersWidget_C) == 0x322CBBB8, "Wrong size on UHordeWaveModifiersWidget_C");
+static_assert(alignof(UHordeWaveModifiersWidget_C) == 0x000008, "Wrong alignment on UHordeWaveModifiersWidget_C");
+static_assert(sizeof(UHordeWaveModifiersWidget_C) == 0x000270, "Wrong size on UHordeWaveModifiersWidget_C");
 static_assert(offsetof(UHordeWaveModifiersWidget_C, ModifierVertBox) == 0x000240, "Member 'UHordeWaveModifiersWidget_C::ModifierVertBox' has a wrong offset!");
 static_assert(offsetof(UHordeWaveModifiersWidget_C, ModifierWidgets) == 0x000248, "Member 'UHordeWaveModifiersWidget_C::ModifierWidgets' has a wrong offset!");
 static_assert(offsetof(UHordeWaveModifiersWidget_C, CurPresentedIdx) == 0x000258, "Member 'UHordeWaveModifiersWidget_C::CurPresentedIdx' has a wrong offset!");

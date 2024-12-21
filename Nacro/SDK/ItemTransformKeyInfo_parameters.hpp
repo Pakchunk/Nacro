@@ -29,7 +29,7 @@ static_assert(sizeof(ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInf
 static_assert(offsetof(ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo, EntryPoint) == 0x000000, "Member 'ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo::EntryPoint' has a wrong offset!");
 
 // Function ItemTransformKeyInfo.ItemTransformKeyInfo_C.SetKeyToRepresent
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x02E8 (0x02E8 - 0x0000)
 struct ItemTransformKeyInfo_C_SetKeyToRepresent final
 {
 public:
@@ -38,30 +38,30 @@ public:
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0028(0x0018)()
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0040(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0040(0x0080)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00C8(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0108(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00C8(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0108(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0148(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0158(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0168(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0180(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0198(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01D8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0198(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01D8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x0218(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array4;                           // 0x0228(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0238(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue4;                      // 0x0250(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0268(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0268(0x0040)(HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x02A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array5;                           // 0x02B8(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          K2Node_SwitchString_CmpSuccess;                    // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue5;                      // 0x02D0(0x0018)()
 };
-static_assert(alignof(ItemTransformKeyInfo_C_SetKeyToRepresent) == 0x11821D80, "Wrong alignment on ItemTransformKeyInfo_C_SetKeyToRepresent");
-static_assert(sizeof(ItemTransformKeyInfo_C_SetKeyToRepresent) == 0x11821D80, "Wrong size on ItemTransformKeyInfo_C_SetKeyToRepresent");
+static_assert(alignof(ItemTransformKeyInfo_C_SetKeyToRepresent) == 0x000008, "Wrong alignment on ItemTransformKeyInfo_C_SetKeyToRepresent");
+static_assert(sizeof(ItemTransformKeyInfo_C_SetKeyToRepresent) == 0x0002E8, "Wrong size on ItemTransformKeyInfo_C_SetKeyToRepresent");
 static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, Key) == 0x000000, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::Key' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_GetDescription_ReturnValue) == 0x000008, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_GetRarity_ReturnValue) == 0x000020, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_GetRarity_ReturnValue' has a wrong offset!");

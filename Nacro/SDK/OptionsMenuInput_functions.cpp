@@ -353,15 +353,15 @@ void UOptionsMenuInput_C::OnAcquireFromPool()
 }
 
 
-// Function OptionsMenuInput.OptionsMenuInput_C.Center on Widget
+// Function OptionsMenuInput.OptionsMenuInput_C.Center On Widget
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenuInput_C::Center_on_Widget()
+void UOptionsMenuInput_C::Center_On_Widget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuInput_C", "Center on Widget");
+		Func = Class->GetFunction("OptionsMenuInput_C", "Center On Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

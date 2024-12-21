@@ -18,19 +18,19 @@ namespace SDK::Params
 {
 
 // Function PlayerInfo.PlayerInfo_C.ExecuteUbergraph_PlayerInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0340 (0x0340 - 0x0000)
 struct PlayerInfo_C_ExecuteUbergraph_PlayerInfo final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0010(0x11827900)()
-	struct FFortTeamMemberInfo                    K2Node_CustomEvent_PlayerInfo;                     // 0x01A0(0x11827900)(ConstParm)
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0010(0x0190)()
+	struct FFortTeamMemberInfo                    K2Node_CustomEvent_PlayerInfo;                     // 0x01A0(0x0190)(ConstParm)
 	TDelegate<void(struct FFortTeamMemberInfo& PlayerInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0330(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo) == 0x11821780, "Wrong alignment on PlayerInfo_C_ExecuteUbergraph_PlayerInfo");
-static_assert(sizeof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo) == 0x11821780, "Wrong size on PlayerInfo_C_ExecuteUbergraph_PlayerInfo");
+static_assert(alignof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo) == 0x000008, "Wrong alignment on PlayerInfo_C_ExecuteUbergraph_PlayerInfo");
+static_assert(sizeof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo) == 0x000340, "Wrong size on PlayerInfo_C_ExecuteUbergraph_PlayerInfo");
 static_assert(offsetof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo, EntryPoint) == 0x000000, "Member 'PlayerInfo_C_ExecuteUbergraph_PlayerInfo::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PlayerInfo_C_ExecuteUbergraph_PlayerInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000010, "Member 'PlayerInfo_C_ExecuteUbergraph_PlayerInfo::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
@@ -38,22 +38,22 @@ static_assert(offsetof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo, K2Node_CustomEv
 static_assert(offsetof(PlayerInfo_C_ExecuteUbergraph_PlayerInfo, K2Node_CreateDelegate_OutputDelegate) == 0x000330, "Member 'PlayerInfo_C_ExecuteUbergraph_PlayerInfo::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function PlayerInfo.PlayerInfo_C.HandlePlayerStateChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct PlayerInfo_C_HandlePlayerStateChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x0190)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PlayerInfo_C_HandlePlayerStateChanged) == 0x11821780, "Wrong alignment on PlayerInfo_C_HandlePlayerStateChanged");
-static_assert(sizeof(PlayerInfo_C_HandlePlayerStateChanged) == 0x11821780, "Wrong size on PlayerInfo_C_HandlePlayerStateChanged");
+static_assert(alignof(PlayerInfo_C_HandlePlayerStateChanged) == 0x000008, "Wrong alignment on PlayerInfo_C_HandlePlayerStateChanged");
+static_assert(sizeof(PlayerInfo_C_HandlePlayerStateChanged) == 0x000190, "Wrong size on PlayerInfo_C_HandlePlayerStateChanged");
 static_assert(offsetof(PlayerInfo_C_HandlePlayerStateChanged, PlayerInfo) == 0x000000, "Member 'PlayerInfo_C_HandlePlayerStateChanged::PlayerInfo' has a wrong offset!");
 
 // Function PlayerInfo.PlayerInfo_C.UpdateLocalPlayerInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct PlayerInfo_C_UpdateLocalPlayerInfo final
 {
 public:
-	struct FFortTeamMemberInfo                    Player_Info;                                       // 0x0000(0x11827900)(Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    Player_Info;                                       // 0x0000(0x0190)(Parm, OutParm, ReferenceParm)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_192[0x6];                                      // 0x0192(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -69,8 +69,8 @@ public:
 	bool                                          Temp_bool_Variable2;                               // 0x01AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerInfo_C_UpdateLocalPlayerInfo) == 0x11821780, "Wrong alignment on PlayerInfo_C_UpdateLocalPlayerInfo");
-static_assert(sizeof(PlayerInfo_C_UpdateLocalPlayerInfo) == 0x11821780, "Wrong size on PlayerInfo_C_UpdateLocalPlayerInfo");
+static_assert(alignof(PlayerInfo_C_UpdateLocalPlayerInfo) == 0x000008, "Wrong alignment on PlayerInfo_C_UpdateLocalPlayerInfo");
+static_assert(sizeof(PlayerInfo_C_UpdateLocalPlayerInfo) == 0x0001B0, "Wrong size on PlayerInfo_C_UpdateLocalPlayerInfo");
 static_assert(offsetof(PlayerInfo_C_UpdateLocalPlayerInfo, Player_Info) == 0x000000, "Member 'PlayerInfo_C_UpdateLocalPlayerInfo::Player_Info' has a wrong offset!");
 static_assert(offsetof(PlayerInfo_C_UpdateLocalPlayerInfo, Temp_byte_Variable) == 0x000190, "Member 'PlayerInfo_C_UpdateLocalPlayerInfo::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PlayerInfo_C_UpdateLocalPlayerInfo, Temp_byte_Variable2) == 0x000191, "Member 'PlayerInfo_C_UpdateLocalPlayerInfo::Temp_byte_Variable2' has a wrong offset!");

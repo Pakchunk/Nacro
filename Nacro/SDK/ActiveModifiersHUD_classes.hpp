@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ActiveModifiersHUD.ActiveModifiersHUD_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0290 - 0x0260)
 class UActiveModifiersHUD_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         HboxModifierStack;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<struct FTimerHandle>                   Timers;                                            // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMissionDetailsModifierRow_C*>   ModifierRows;                                      // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UActiveModifiersHUD_C>();
 	}
 };
-static_assert(alignof(UActiveModifiersHUD_C) == 0x322CBBB8, "Wrong alignment on UActiveModifiersHUD_C");
-static_assert(sizeof(UActiveModifiersHUD_C) == 0x322CBBB8, "Wrong size on UActiveModifiersHUD_C");
+static_assert(alignof(UActiveModifiersHUD_C) == 0x000008, "Wrong alignment on UActiveModifiersHUD_C");
+static_assert(sizeof(UActiveModifiersHUD_C) == 0x000290, "Wrong size on UActiveModifiersHUD_C");
 static_assert(offsetof(UActiveModifiersHUD_C, UberGraphFrame) == 0x000260, "Member 'UActiveModifiersHUD_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UActiveModifiersHUD_C, HboxModifierStack) == 0x000268, "Member 'UActiveModifiersHUD_C::HboxModifierStack' has a wrong offset!");
 static_assert(offsetof(UActiveModifiersHUD_C, Timers) == 0x000270, "Member 'UActiveModifiersHUD_C::Timers' has a wrong offset!");

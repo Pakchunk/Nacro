@@ -12,22 +12,22 @@
 
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
+#include "E_OutlanderFragmentTypes_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "E_OutlanderFragmentTypes_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass B_Fragment_Container.B_Fragment_Container_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0360 (0x1320 - 0x0FC0)
 class AB_Fragment_Container_C final : public ABuildingSMActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0FC0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0FC0(0x0008)(Transient, DuplicateTransient)
 	class UParticleSystemComponent*               P_LightOn;                                         // 0x0FC8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Orb_Mesh;                                          // 0x0FD0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               P_ResOut;                                          // 0x0FD8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -43,16 +43,17 @@ public:
 	ETimelineDirection                            VerticalMovementTimeline__Direction_E77B23F44312E9BD5DA6EF9ACE127DE4; // 0x1024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1025[0x3];                                     // 0x1025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     VerticalMovementTimeline;                          // 0x1028(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_HasFragmentAbility;                             // 0x1030(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_LlamaFragment;                                  // 0x1050(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame)
-	struct FGameplayTagContainer                  TC_ChargeFragmentTag;                              // 0x1070(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_LlamaFragmentTag;                               // 0x1090(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTag                           Event_FragmentCollected;                           // 0x10B0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEventData                     SentFragment;                                      // 0x10B8(0x11822200)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_HasFragmentAbility;                             // 0x1030(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_LlamaFragment;                                  // 0x1050(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame)
+	struct FGameplayTagContainer                  TC_ChargeFragmentTag;                              // 0x1070(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_LlamaFragmentTag;                               // 0x1090(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                           Event_FragmentCollected;                           // 0x10B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEventData                     SentFragment;                                      // 0x10B8(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
 	E_OutlanderFragmentTypes                      FragmentType;                                      // 0x1160(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1161[0x3];                                     // 0x1161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ChargeFragmentColor;                               // 0x1164(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           LlamaFragmentColor;                                // 0x1174(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ChargeFragmentColor;                               // 0x1164(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           LlamaFragmentColor;                                // 0x1174(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1184[0x4];                                     // 0x1184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAmmoItemDefinition*                FragmentAmmoData;                                  // 0x1188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Current_Outlander;                                 // 0x1190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerPawn*                        InteractingPlayerPawn;                             // 0x1198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -145,8 +146,8 @@ public:
 		return GetDefaultObjImpl<AB_Fragment_Container_C>();
 	}
 };
-static_assert(alignof(AB_Fragment_Container_C) == 0x1182A000, "Wrong alignment on AB_Fragment_Container_C");
-static_assert(sizeof(AB_Fragment_Container_C) == 0x1182A000, "Wrong size on AB_Fragment_Container_C");
+static_assert(alignof(AB_Fragment_Container_C) == 0x000010, "Wrong alignment on AB_Fragment_Container_C");
+static_assert(sizeof(AB_Fragment_Container_C) == 0x001320, "Wrong size on AB_Fragment_Container_C");
 static_assert(offsetof(AB_Fragment_Container_C, UberGraphFrame) == 0x000FC0, "Member 'AB_Fragment_Container_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AB_Fragment_Container_C, P_LightOn) == 0x000FC8, "Member 'AB_Fragment_Container_C::P_LightOn' has a wrong offset!");
 static_assert(offsetof(AB_Fragment_Container_C, Orb_Mesh) == 0x000FD0, "Member 'AB_Fragment_Container_C::Orb_Mesh' has a wrong offset!");

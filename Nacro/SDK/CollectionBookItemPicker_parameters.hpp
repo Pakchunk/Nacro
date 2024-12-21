@@ -19,18 +19,19 @@ namespace SDK::Params
 {
 
 // Function CollectionBookItemPicker.CollectionBookItemPicker_C.ExecuteUbergraph_CollectionBookItemPicker
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0590 (0x0590 - 0x0000)
 struct CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              CallFunc_GetSelectedItem_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDialogExternalLatentActionHandle  Temp_struct_Variable;                              // 0x0010(0x11821780)(NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  Temp_struct_Variable;                              // 0x0010(0x0004)(NoDestructor)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Get_Type_Text_Type;                       // 0x0018(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable;                                // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
 	EFortDialogResult                             Temp_byte_Variable;                                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -42,17 +43,17 @@ public:
 	class UFortItem*                              K2Node_CustomEvent_SelectedItem;                   // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDONOTUSE_C*                            CallFunc_Create_ReturnValue;                       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FCommonInputActionData                 CallFunc_GetDataTableRowFromName_OutRow;           // 0x00E0(0x1182EB00)()
+	struct FCommonInputActionData                 CallFunc_GetDataTableRowFromName_OutRow;           // 0x00E0(0x02D0)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3B1[0x7];                                      // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FConfirmationDialogAction              K2Node_MakeStruct_ConfirmationDialogAction;        // 0x03B8(0x1182E980)()
+	struct FConfirmationDialogAction              K2Node_MakeStruct_ConfirmationDialogAction;        // 0x03B8(0x00D0)()
 	TArray<struct FConfirmationDialogAction>      K2Node_MakeArray_Array2;                           // 0x0488(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_499[0x7];                                      // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bWaitingForLatentActionCompletion; // 0x04A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A9[0x3];                                      // 0x04A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogExternalLatentActionHandle  K2Node_CustomEvent_WaitingDialogHandle;            // 0x04AC(0x11821780)(NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  K2Node_CustomEvent_WaitingDialogHandle;            // 0x04AC(0x0004)(NoDestructor)
 	TDelegate<void(EFortDialogResult Result, class FName ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)> K2Node_CreateDelegate_OutputDelegate2;             // 0x04B0(0x0010)(ZeroConstructor, NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue2;             // 0x04C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UFortItem* SelectedItem)> K2Node_CreateDelegate_OutputDelegate3;             // 0x04C8(0x0010)(ZeroConstructor, NoDestructor)
@@ -64,14 +65,14 @@ public:
 	class UFortItem*                              CallFunc_GetSelectedItem_ReturnValue2;             // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI* CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue; // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Get_Type_Text_Type2;                      // 0x0508(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0520(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0520(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x0560(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0570(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_571[0x7];                                      // 0x0571(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0578(0x0018)()
 };
-static_assert(alignof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker) == 0x1182EB00, "Wrong alignment on CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker");
-static_assert(sizeof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker) == 0x1182EB00, "Wrong size on CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker");
+static_assert(alignof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker) == 0x000008, "Wrong alignment on CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker");
+static_assert(sizeof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker) == 0x000590, "Wrong size on CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker");
 static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, EntryPoint) == 0x000000, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, CallFunc_GetSelectedItem_ReturnValue) == 0x000008, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker, Temp_struct_Variable) == 0x000010, "Member 'CollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker::Temp_struct_Variable' has a wrong offset!");
@@ -122,8 +123,8 @@ static_assert(sizeof(CollectionBookItemPicker_C_ShowSlotItemConfirmation) == 0x0
 static_assert(offsetof(CollectionBookItemPicker_C_ShowSlotItemConfirmation, SelectedItem) == 0x000000, "Member 'CollectionBookItemPicker_C_ShowSlotItemConfirmation::SelectedItem' has a wrong offset!");
 
 // Function CollectionBookItemPicker.CollectionBookItemPicker_C.DialogResult_C897FB8741239C9DAE2430AD3D91A030
-// 0x11821780 (0x11821780 - 0x0000)
-struct CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030 final
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -131,10 +132,10 @@ public:
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bWaitingForLatentActionCompletion;                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogExternalLatentActionHandle  WaitingDialogHandle;                               // 0x0014(0x11821780)(Parm, NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  WaitingDialogHandle;                               // 0x0014(0x0004)(Parm, NoDestructor)
 };
-static_assert(alignof(CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030) == 0x11821780, "Wrong alignment on CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030");
-static_assert(sizeof(CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030) == 0x11821780, "Wrong size on CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030");
+static_assert(alignof(CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030) == 0x000008, "Wrong alignment on CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030");
+static_assert(sizeof(CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030) == 0x000018, "Wrong size on CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030");
 static_assert(offsetof(CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030, Result) == 0x000000, "Member 'CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030::Result' has a wrong offset!");
 static_assert(offsetof(CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030, ResultName) == 0x000008, "Member 'CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030::ResultName' has a wrong offset!");
 static_assert(offsetof(CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030, bWaitingForLatentActionCompletion) == 0x000010, "Member 'CollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030::bWaitingForLatentActionCompletion' has a wrong offset!");

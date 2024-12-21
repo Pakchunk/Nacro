@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StoreMain_OfferDetails.StoreMain_OfferDetails_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C0 (0x0570 - 0x04B0)
 class UStoreMain_OfferDetails_C final : public UFortMtxOfferDetailsBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04B0(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 BaseColor;                                         // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BaseColorDetails;                                  // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               BonusCurrencySB;                                   // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -71,8 +71,8 @@ public:
 		return GetDefaultObjImpl<UStoreMain_OfferDetails_C>();
 	}
 };
-static_assert(alignof(UStoreMain_OfferDetails_C) == 0x322CBBB8, "Wrong alignment on UStoreMain_OfferDetails_C");
-static_assert(sizeof(UStoreMain_OfferDetails_C) == 0x322CBBB8, "Wrong size on UStoreMain_OfferDetails_C");
+static_assert(alignof(UStoreMain_OfferDetails_C) == 0x000008, "Wrong alignment on UStoreMain_OfferDetails_C");
+static_assert(sizeof(UStoreMain_OfferDetails_C) == 0x000570, "Wrong size on UStoreMain_OfferDetails_C");
 static_assert(offsetof(UStoreMain_OfferDetails_C, UberGraphFrame) == 0x0004B0, "Member 'UStoreMain_OfferDetails_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStoreMain_OfferDetails_C, BaseColor) == 0x0004B8, "Member 'UStoreMain_OfferDetails_C::BaseColor' has a wrong offset!");
 static_assert(offsetof(UStoreMain_OfferDetails_C, BaseColorDetails) == 0x0004C0, "Member 'UStoreMain_OfferDetails_C::BaseColorDetails' has a wrong offset!");

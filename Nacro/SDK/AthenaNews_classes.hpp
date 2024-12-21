@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaNews.AthenaNews_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UAthenaNews_C final : public UFortAthenaNewsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       GeneralNews;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       NewsHeader;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       PlatformNews;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UAthenaNews_C>();
 	}
 };
-static_assert(alignof(UAthenaNews_C) == 0x322CBBB8, "Wrong alignment on UAthenaNews_C");
-static_assert(sizeof(UAthenaNews_C) == 0x322CBBB8, "Wrong size on UAthenaNews_C");
+static_assert(alignof(UAthenaNews_C) == 0x000008, "Wrong alignment on UAthenaNews_C");
+static_assert(sizeof(UAthenaNews_C) == 0x000260, "Wrong size on UAthenaNews_C");
 static_assert(offsetof(UAthenaNews_C, UberGraphFrame) == 0x000238, "Member 'UAthenaNews_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaNews_C, GeneralNews) == 0x000240, "Member 'UAthenaNews_C::GeneralNews' has a wrong offset!");
 static_assert(offsetof(UAthenaNews_C, NewsHeader) == 0x000248, "Member 'UAthenaNews_C::NewsHeader' has a wrong offset!");

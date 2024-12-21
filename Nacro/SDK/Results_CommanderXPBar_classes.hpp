@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CommonUI_classes.hpp"
-#include "Results_CommanderXP_Data_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Results_CommanderXP_Data_structs.hpp"
 #include "REsults_CommanderXP_MaterialData_structs.hpp"
+#include "CommonUI_classes.hpp"
 #include "FortniteGame_structs.hpp"
 
 
@@ -21,17 +21,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_CommanderXPBar.Results_CommanderXPBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0110 (0x0348 - 0x0238)
 class UResults_CommanderXPBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_SkipToFinalState;                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_FlashBar;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UResults_BonusXpType_C*                 BonusXpType;                                       // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ProgressBarNew;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           CountTimer;                                        // 0x0268(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           CountTimer;                                        // 0x0268(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         CurrentXP;                                         // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentLevel;                                      // 0x0274(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   CountFinished;                                     // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -95,8 +95,8 @@ public:
 		return GetDefaultObjImpl<UResults_CommanderXPBar_C>();
 	}
 };
-static_assert(alignof(UResults_CommanderXPBar_C) == 0x322CBBB8, "Wrong alignment on UResults_CommanderXPBar_C");
-static_assert(sizeof(UResults_CommanderXPBar_C) == 0x322CBBB8, "Wrong size on UResults_CommanderXPBar_C");
+static_assert(alignof(UResults_CommanderXPBar_C) == 0x000008, "Wrong alignment on UResults_CommanderXPBar_C");
+static_assert(sizeof(UResults_CommanderXPBar_C) == 0x000348, "Wrong size on UResults_CommanderXPBar_C");
 static_assert(offsetof(UResults_CommanderXPBar_C, UberGraphFrame) == 0x000238, "Member 'UResults_CommanderXPBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXPBar_C, Anim_SkipToFinalState) == 0x000240, "Member 'UResults_CommanderXPBar_C::Anim_SkipToFinalState' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXPBar_C, Anim_FlashBar) == 0x000248, "Member 'UResults_CommanderXPBar_C::Anim_FlashBar' has a wrong offset!");

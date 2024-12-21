@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SetBonus_ShieldRegen_Low.SetBonus_ShieldRegen_Low_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x0660 - 0x0660)
 class USetBonus_ShieldRegen_Low_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USetBonus_ShieldRegen_Low_C>();
 	}
 };
-static_assert(alignof(USetBonus_ShieldRegen_Low_C) == 0x1182E980, "Wrong alignment on USetBonus_ShieldRegen_Low_C");
-static_assert(sizeof(USetBonus_ShieldRegen_Low_C) == 0x1182E980, "Wrong size on USetBonus_ShieldRegen_Low_C");
+static_assert(alignof(USetBonus_ShieldRegen_Low_C) == 0x000010, "Wrong alignment on USetBonus_ShieldRegen_Low_C");
+static_assert(sizeof(USetBonus_ShieldRegen_Low_C) == 0x000660, "Wrong size on USetBonus_ShieldRegen_Low_C");
 
 }
 

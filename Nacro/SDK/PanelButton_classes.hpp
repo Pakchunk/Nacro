@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PanelButton.PanelButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x08D0 - 0x08A0)
 class UPanelButton_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
 	class UNamedSlot*                             ContentSlot;                                       // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UClass*                                 ControllerInputStyle;                              // 0x08B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UClass*                                 MouseKeyboardStyle;                                // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x08C0(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x08C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_PanelButton(int32 EntryPoint);
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UPanelButton_C>();
 	}
 };
-static_assert(alignof(UPanelButton_C) == 0x322CBBB8, "Wrong alignment on UPanelButton_C");
-static_assert(sizeof(UPanelButton_C) == 0x322CBBB8, "Wrong size on UPanelButton_C");
+static_assert(alignof(UPanelButton_C) == 0x000008, "Wrong alignment on UPanelButton_C");
+static_assert(sizeof(UPanelButton_C) == 0x0008D0, "Wrong size on UPanelButton_C");
 static_assert(offsetof(UPanelButton_C, UberGraphFrame) == 0x0008A0, "Member 'UPanelButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPanelButton_C, ContentSlot) == 0x0008A8, "Member 'UPanelButton_C::ContentSlot' has a wrong offset!");
 static_assert(offsetof(UPanelButton_C, ControllerInputStyle) == 0x0008B0, "Member 'UPanelButton_C::ControllerInputStyle' has a wrong offset!");

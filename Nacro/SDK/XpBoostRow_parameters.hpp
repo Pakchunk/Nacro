@@ -19,14 +19,14 @@ namespace SDK::Params
 {
 
 // Function XpBoostRow.XpBoostRow_C.Give Boost Clicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct XpBoostRow_C_Give_Boost_Clicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       Player_To_Boost;                                   // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       Player_To_Boost;                                   // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoostRow_C_Give_Boost_Clicked__DelegateSignature) == 0x11821780, "Wrong alignment on XpBoostRow_C_Give_Boost_Clicked__DelegateSignature");
-static_assert(sizeof(XpBoostRow_C_Give_Boost_Clicked__DelegateSignature) == 0x11821780, "Wrong size on XpBoostRow_C_Give_Boost_Clicked__DelegateSignature");
+static_assert(alignof(XpBoostRow_C_Give_Boost_Clicked__DelegateSignature) == 0x000008, "Wrong alignment on XpBoostRow_C_Give_Boost_Clicked__DelegateSignature");
+static_assert(sizeof(XpBoostRow_C_Give_Boost_Clicked__DelegateSignature) == 0x000018, "Wrong size on XpBoostRow_C_Give_Boost_Clicked__DelegateSignature");
 static_assert(offsetof(XpBoostRow_C_Give_Boost_Clicked__DelegateSignature, Player_To_Boost) == 0x000000, "Member 'XpBoostRow_C_Give_Boost_Clicked__DelegateSignature::Player_To_Boost' has a wrong offset!");
 
 // Function XpBoostRow.XpBoostRow_C.ExecuteUbergraph_XpBoostRow
@@ -115,46 +115,46 @@ static_assert(offsetof(XpBoostRow_C_BndEvt__GiveXPButton_K2Node_ComponentBoundEv
 
 // Function XpBoostRow.XpBoostRow_C.DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0
 // 0x0010 (0x0010 - 0x0000)
-struct XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0 final
+struct alignas(0x08) XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0) == 0x000004, "Wrong alignment on XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0");
+static_assert(alignof(XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0) == 0x000008, "Wrong alignment on XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0");
 static_assert(sizeof(XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0) == 0x000010, "Wrong size on XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0");
 static_assert(offsetof(XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0, Result) == 0x000000, "Member 'XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0::Result' has a wrong offset!");
 static_assert(offsetof(XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0, ResultName) == 0x000008, "Member 'XpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0::ResultName' has a wrong offset!");
 
 // Function XpBoostRow.XpBoostRow_C.DialogResult_9BF60C804C82DAA0C1A2839132130883
 // 0x0010 (0x0010 - 0x0000)
-struct XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883 final
+struct alignas(0x08) XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883) == 0x000004, "Wrong alignment on XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883");
+static_assert(alignof(XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883) == 0x000008, "Wrong alignment on XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883");
 static_assert(sizeof(XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883) == 0x000010, "Wrong size on XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883");
 static_assert(offsetof(XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883, Result) == 0x000000, "Member 'XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883::Result' has a wrong offset!");
 static_assert(offsetof(XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883, ResultName) == 0x000008, "Member 'XpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883::ResultName' has a wrong offset!");
 
 // Function XpBoostRow.XpBoostRow_C.Update Party Member
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0330 (0x0330 - 0x0000)
 struct XpBoostRow_C_Update_Party_Member final
 {
 public:
 	bool                                          Row_Has_Party_Member;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTeamMemberInfo                    Party_Members_Info;                                // 0x0008(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    Party_Members_Info;                                // 0x0008(0x0190)(Parm)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasBoost_Result;                          // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasBoost_Result2;                         // 0x01A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A3[0x5];                                      // 0x01A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01A8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01A8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01E8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01F8(0x0018)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0210(0x0018)()
@@ -168,15 +168,15 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue3;                  // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetPlayersXPPercentContributionToLocalPlayer_ReturnValue; // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetPlayersXPPercentContributionToLocalPlayer_ReturnValue2; // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0260(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x02A0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0260(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x02A0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x02E0(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x02F0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0300(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0318(0x0018)()
 };
-static_assert(alignof(XpBoostRow_C_Update_Party_Member) == 0x11821D80, "Wrong alignment on XpBoostRow_C_Update_Party_Member");
-static_assert(sizeof(XpBoostRow_C_Update_Party_Member) == 0x11821D80, "Wrong size on XpBoostRow_C_Update_Party_Member");
+static_assert(alignof(XpBoostRow_C_Update_Party_Member) == 0x000008, "Wrong alignment on XpBoostRow_C_Update_Party_Member");
+static_assert(sizeof(XpBoostRow_C_Update_Party_Member) == 0x000330, "Wrong size on XpBoostRow_C_Update_Party_Member");
 static_assert(offsetof(XpBoostRow_C_Update_Party_Member, Row_Has_Party_Member) == 0x000000, "Member 'XpBoostRow_C_Update_Party_Member::Row_Has_Party_Member' has a wrong offset!");
 static_assert(offsetof(XpBoostRow_C_Update_Party_Member, Party_Members_Info) == 0x000008, "Member 'XpBoostRow_C_Update_Party_Member::Party_Members_Info' has a wrong offset!");
 static_assert(offsetof(XpBoostRow_C_Update_Party_Member, CallFunc_GetContext_ReturnValue) == 0x000198, "Member 'XpBoostRow_C_Update_Party_Member::CallFunc_GetContext_ReturnValue' has a wrong offset!");

@@ -22,8 +22,8 @@ namespace SDK::Params
 {
 
 // Function ItemInspectScreen.ItemInspectScreen_C.ExecuteUbergraph_ItemInspectScreen
-// 0x0111 (0x0111 - 0x0000)
-struct alignas(0x5B) ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen final
+// 0x0108 (0x0108 - 0x0000)
+struct ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -75,8 +75,8 @@ public:
 	class FName                                   K2Node_ComponentBoundEvent_TabId;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_TabButton;              // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen) == 0x00005B, "Wrong alignment on ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen");
-static_assert(sizeof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen) == 0x000111, "Wrong size on ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen");
+static_assert(alignof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen) == 0x000008, "Wrong alignment on ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen");
+static_assert(sizeof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen) == 0x000108, "Wrong size on ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen");
 static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, EntryPoint) == 0x000000, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
@@ -203,14 +203,14 @@ static_assert(offsetof(ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_Componen
 static_assert(offsetof(ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature, bIngredientsChanged) == 0x000002, "Member 'ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature::bIngredientsChanged' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.SetItemToRepresent
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0390 (0x0390 - 0x0000)
 struct ItemInspectScreen_C_SetItemToRepresent final
 {
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo;          // 0x0010(0x1182E980)()
+	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo;          // 0x0010(0x00A8)()
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RegisterFortTab_ReturnValue;              // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -234,18 +234,18 @@ public:
 	class UFortHero*                              K2Node_DynamicCast_AsFort_Hero2;                   // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo2;         // 0x0138(0x1182E980)()
-	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo3;         // 0x01E0(0x1182E980)()
+	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo2;         // 0x0138(0x00A8)()
+	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo3;         // 0x01E0(0x00A8)()
 	bool                                          CallFunc_RegisterFortTab_ReturnValue2;             // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_289[0x7];                                      // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo4;         // 0x0290(0x1182E980)()
+	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo4;         // 0x0290(0x00A8)()
 	bool                                          CallFunc_RegisterFortTab_ReturnValue3;             // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagQuery                      CallFunc_MakeGameplayTagQuery_ReturnValue;         // 0x0340(0x11821D80)()
+	struct FGameplayTagQuery                      CallFunc_MakeGameplayTagQuery_ReturnValue;         // 0x0340(0x0048)()
 	bool                                          CallFunc_RegisterFortTab_ReturnValue4;             // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_SetItemToRepresent) == 0x1182E980, "Wrong alignment on ItemInspectScreen_C_SetItemToRepresent");
-static_assert(sizeof(ItemInspectScreen_C_SetItemToRepresent) == 0x1182E980, "Wrong size on ItemInspectScreen_C_SetItemToRepresent");
+static_assert(alignof(ItemInspectScreen_C_SetItemToRepresent) == 0x000008, "Wrong alignment on ItemInspectScreen_C_SetItemToRepresent");
+static_assert(sizeof(ItemInspectScreen_C_SetItemToRepresent) == 0x000390, "Wrong size on ItemInspectScreen_C_SetItemToRepresent");
 static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, Item) == 0x000000, "Member 'ItemInspectScreen_C_SetItemToRepresent::Item' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_MakeStruct_FortTabButtonLabelInfo) == 0x000010, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_MakeStruct_FortTabButtonLabelInfo' has a wrong offset!");
@@ -409,7 +409,7 @@ static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionChoiceSelected, Item) 
 static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionChoiceSelected, RecipeIndex) == 0x000008, "Member 'ItemInspectScreen_C_HandleEvolutionChoiceSelected::RecipeIndex' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.GetFirstEvolutionOption
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct ItemInspectScreen_C_GetFirstEvolutionOption final
 {
 public:
@@ -423,21 +423,21 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0040(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0040(0x0028)()
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FRecipe>                        CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue; // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRecipe                                CallFunc_Array_Get_Item2;                          // 0x0098(0x11821F00)()
+	struct FRecipe                                CallFunc_Array_Get_Item2;                          // 0x0098(0x0050)()
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_GetFirstEvolutionOption) == 0x11821F00, "Wrong alignment on ItemInspectScreen_C_GetFirstEvolutionOption");
-static_assert(sizeof(ItemInspectScreen_C_GetFirstEvolutionOption) == 0x11821F00, "Wrong size on ItemInspectScreen_C_GetFirstEvolutionOption");
+static_assert(alignof(ItemInspectScreen_C_GetFirstEvolutionOption) == 0x000008, "Wrong alignment on ItemInspectScreen_C_GetFirstEvolutionOption");
+static_assert(sizeof(ItemInspectScreen_C_GetFirstEvolutionOption) == 0x0000F8, "Wrong size on ItemInspectScreen_C_GetFirstEvolutionOption");
 static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, EvolutionItem) == 0x000000, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::EvolutionItem' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, Results) == 0x000008, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::Results' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
@@ -458,27 +458,27 @@ static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_Gre
 static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x0000F0, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.SetupActionHandlers
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct ItemInspectScreen_C_SetupActionHandlers final
 {
 public:
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0000(0x1182EB00)(NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0010(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0000(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0010(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x0040(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x0040(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate3;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle4;             // 0x0060(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle4;             // 0x0060(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate4;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle5;             // 0x0080(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle5;             // 0x0080(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestItem*                         CallFunc_GetQuestWithDefinition_ReturnValue;       // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_SetupActionHandlers) == 0x1182EB00, "Wrong alignment on ItemInspectScreen_C_SetupActionHandlers");
-static_assert(sizeof(ItemInspectScreen_C_SetupActionHandlers) == 0x1182EB00, "Wrong size on ItemInspectScreen_C_SetupActionHandlers");
+static_assert(alignof(ItemInspectScreen_C_SetupActionHandlers) == 0x000008, "Wrong alignment on ItemInspectScreen_C_SetupActionHandlers");
+static_assert(sizeof(ItemInspectScreen_C_SetupActionHandlers) == 0x0000C0, "Wrong size on ItemInspectScreen_C_SetupActionHandlers");
 static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_MakeStruct_DataTableRowHandle) == 0x000000, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_MakeStruct_DataTableRowHandle2) == 0x000010, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_MakeStruct_DataTableRowHandle2' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -535,17 +535,17 @@ static_assert(offsetof(ItemInspectScreen_C_HandleCursorModeChanging, CallFunc_Is
 static_assert(offsetof(ItemInspectScreen_C_HandleCursorModeChanging, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'ItemInspectScreen_C_HandleCursorModeChanging::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionComplete
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct ItemInspectScreen_C_HandleEvolutionComplete final
 {
 public:
 	TArray<struct FFortItemInstanceQuantityPair>  ResultingItems;                                    // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0010(0x11821D80)(NoDestructor)
+	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0010(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleEvolutionComplete) == 0x11821D80, "Wrong alignment on ItemInspectScreen_C_HandleEvolutionComplete");
-static_assert(sizeof(ItemInspectScreen_C_HandleEvolutionComplete) == 0x11821D80, "Wrong size on ItemInspectScreen_C_HandleEvolutionComplete");
+static_assert(alignof(ItemInspectScreen_C_HandleEvolutionComplete) == 0x000008, "Wrong alignment on ItemInspectScreen_C_HandleEvolutionComplete");
+static_assert(sizeof(ItemInspectScreen_C_HandleEvolutionComplete) == 0x000028, "Wrong size on ItemInspectScreen_C_HandleEvolutionComplete");
 static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionComplete, ResultingItems) == 0x000000, "Member 'ItemInspectScreen_C_HandleEvolutionComplete::ResultingItems' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionComplete, CallFunc_Array_Get_Item) == 0x000010, "Member 'ItemInspectScreen_C_HandleEvolutionComplete::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionComplete, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'ItemInspectScreen_C_HandleEvolutionComplete::CallFunc_Array_Length_ReturnValue' has a wrong offset!");

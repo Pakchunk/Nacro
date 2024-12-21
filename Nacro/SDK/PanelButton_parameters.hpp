@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function PanelButton.PanelButton_C.ExecuteUbergraph_PanelButton
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct PanelButton_C_ExecuteUbergraph_PanelButton final
 {
 public:
@@ -31,11 +31,11 @@ public:
 	bool                                          K2Node_ComponentBoundEvent_bUsingGamepad;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_Event_NewTriggeredAction;                   // 0x0010(0x1182EB00)(ConstParm, NoDestructor)
+	struct FDataTableRowHandle                    K2Node_Event_NewTriggeredAction;                   // 0x0010(0x0010)(ConstParm, NoDestructor)
 	float                                         K2Node_Event_HeldPercent;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PanelButton_C_ExecuteUbergraph_PanelButton) == 0x1182EB00, "Wrong alignment on PanelButton_C_ExecuteUbergraph_PanelButton");
-static_assert(sizeof(PanelButton_C_ExecuteUbergraph_PanelButton) == 0x1182EB00, "Wrong size on PanelButton_C_ExecuteUbergraph_PanelButton");
+static_assert(alignof(PanelButton_C_ExecuteUbergraph_PanelButton) == 0x000008, "Wrong alignment on PanelButton_C_ExecuteUbergraph_PanelButton");
+static_assert(sizeof(PanelButton_C_ExecuteUbergraph_PanelButton) == 0x000028, "Wrong size on PanelButton_C_ExecuteUbergraph_PanelButton");
 static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, EntryPoint) == 0x000000, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, Temp_byte_Variable) == 0x000004, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, Temp_byte_Variable2) == 0x000005, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::Temp_byte_Variable2' has a wrong offset!");
@@ -59,14 +59,14 @@ static_assert(sizeof(PanelButton_C_OnActionProgress) == 0x000004, "Wrong size on
 static_assert(offsetof(PanelButton_C_OnActionProgress, HeldPercent) == 0x000000, "Member 'PanelButton_C_OnActionProgress::HeldPercent' has a wrong offset!");
 
 // Function PanelButton.PanelButton_C.OnTriggeredInputActionChanged
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct PanelButton_C_OnTriggeredInputActionChanged final
 {
 public:
-	struct FDataTableRowHandle                    NewTriggeredAction;                                // 0x0000(0x1182EB00)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FDataTableRowHandle                    NewTriggeredAction;                                // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PanelButton_C_OnTriggeredInputActionChanged) == 0x1182EB00, "Wrong alignment on PanelButton_C_OnTriggeredInputActionChanged");
-static_assert(sizeof(PanelButton_C_OnTriggeredInputActionChanged) == 0x1182EB00, "Wrong size on PanelButton_C_OnTriggeredInputActionChanged");
+static_assert(alignof(PanelButton_C_OnTriggeredInputActionChanged) == 0x000008, "Wrong alignment on PanelButton_C_OnTriggeredInputActionChanged");
+static_assert(sizeof(PanelButton_C_OnTriggeredInputActionChanged) == 0x000010, "Wrong size on PanelButton_C_OnTriggeredInputActionChanged");
 static_assert(offsetof(PanelButton_C_OnTriggeredInputActionChanged, NewTriggeredAction) == 0x000000, "Member 'PanelButton_C_OnTriggeredInputActionChanged::NewTriggeredAction' has a wrong offset!");
 
 // Function PanelButton.PanelButton_C.BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature

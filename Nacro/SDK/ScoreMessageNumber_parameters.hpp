@@ -18,14 +18,14 @@ namespace SDK::Params
 {
 
 // Function ScoreMessageNumber.ScoreMessageNumber_C.OnScoreValueSet__DelegateSignature
-// 0x0072 (0x0072 - 0x0000)
-struct alignas(0x72) ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature final
+// 0x0001 (0x0001 - 0x0000)
+struct ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature final
 {
 public:
 	EStatCategory                                 ChangedScoreCategory;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature) == 0x000072, "Wrong alignment on ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature");
-static_assert(sizeof(ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature) == 0x000072, "Wrong size on ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature");
+static_assert(alignof(ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature) == 0x000001, "Wrong alignment on ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature");
+static_assert(sizeof(ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature) == 0x000001, "Wrong size on ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature");
 static_assert(offsetof(ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature, ChangedScoreCategory) == 0x000000, "Member 'ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature::ChangedScoreCategory' has a wrong offset!");
 
 // Function ScoreMessageNumber.ScoreMessageNumber_C.ExecuteUbergraph_ScoreMessageNumber
@@ -40,16 +40,16 @@ static_assert(sizeof(ScoreMessageNumber_C_ExecuteUbergraph_ScoreMessageNumber) =
 static_assert(offsetof(ScoreMessageNumber_C_ExecuteUbergraph_ScoreMessageNumber, EntryPoint) == 0x000000, "Member 'ScoreMessageNumber_C_ExecuteUbergraph_ScoreMessageNumber::EntryPoint' has a wrong offset!");
 
 // Function ScoreMessageNumber.ScoreMessageNumber_C.UpdateScoreText
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct ScoreMessageNumber_C_UpdateScoreText final
 {
 public:
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0000(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0000(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0050(0x0018)()
 };
-static_assert(alignof(ScoreMessageNumber_C_UpdateScoreText) == 0x11821D80, "Wrong alignment on ScoreMessageNumber_C_UpdateScoreText");
-static_assert(sizeof(ScoreMessageNumber_C_UpdateScoreText) == 0x11821D80, "Wrong size on ScoreMessageNumber_C_UpdateScoreText");
+static_assert(alignof(ScoreMessageNumber_C_UpdateScoreText) == 0x000008, "Wrong alignment on ScoreMessageNumber_C_UpdateScoreText");
+static_assert(sizeof(ScoreMessageNumber_C_UpdateScoreText) == 0x000068, "Wrong size on ScoreMessageNumber_C_UpdateScoreText");
 static_assert(offsetof(ScoreMessageNumber_C_UpdateScoreText, K2Node_MakeStruct_FormatArgumentData) == 0x000000, "Member 'ScoreMessageNumber_C_UpdateScoreText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(ScoreMessageNumber_C_UpdateScoreText, K2Node_MakeArray_Array) == 0x000040, "Member 'ScoreMessageNumber_C_UpdateScoreText::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(ScoreMessageNumber_C_UpdateScoreText, CallFunc_Format_ReturnValue) == 0x000050, "Member 'ScoreMessageNumber_C_UpdateScoreText::CallFunc_Format_ReturnValue' has a wrong offset!");

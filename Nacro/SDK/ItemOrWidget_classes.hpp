@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemOrWidget.ItemOrWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0268 - 0x0230)
 class UItemOrWidget_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_3;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_154;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UItemOrWidget_C>();
 	}
 };
-static_assert(alignof(UItemOrWidget_C) == 0x322CBBB8, "Wrong alignment on UItemOrWidget_C");
-static_assert(sizeof(UItemOrWidget_C) == 0x322CBBB8, "Wrong size on UItemOrWidget_C");
+static_assert(alignof(UItemOrWidget_C) == 0x000008, "Wrong alignment on UItemOrWidget_C");
+static_assert(sizeof(UItemOrWidget_C) == 0x000268, "Wrong size on UItemOrWidget_C");
 static_assert(offsetof(UItemOrWidget_C, UberGraphFrame) == 0x000230, "Member 'UItemOrWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemOrWidget_C, CommonWidgetSwitcher_0) == 0x000238, "Member 'UItemOrWidget_C::CommonWidgetSwitcher_0' has a wrong offset!");
 static_assert(offsetof(UItemOrWidget_C, Image_3) == 0x000240, "Member 'UItemOrWidget_C::Image_3' has a wrong offset!");

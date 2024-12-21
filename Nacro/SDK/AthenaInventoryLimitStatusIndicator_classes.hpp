@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UAthenaInventoryLimitStatusIndicator_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       InventoryLabel;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ItemStorageCountLabel;                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ItemStorageLimitLabel;                             // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UAthenaInventoryLimitStatusIndicator_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryLimitStatusIndicator_C) == 0x322CBBB8, "Wrong alignment on UAthenaInventoryLimitStatusIndicator_C");
-static_assert(sizeof(UAthenaInventoryLimitStatusIndicator_C) == 0x322CBBB8, "Wrong size on UAthenaInventoryLimitStatusIndicator_C");
+static_assert(alignof(UAthenaInventoryLimitStatusIndicator_C) == 0x000008, "Wrong alignment on UAthenaInventoryLimitStatusIndicator_C");
+static_assert(sizeof(UAthenaInventoryLimitStatusIndicator_C) == 0x000258, "Wrong size on UAthenaInventoryLimitStatusIndicator_C");
 static_assert(offsetof(UAthenaInventoryLimitStatusIndicator_C, UberGraphFrame) == 0x000238, "Member 'UAthenaInventoryLimitStatusIndicator_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryLimitStatusIndicator_C, InventoryLabel) == 0x000240, "Member 'UAthenaInventoryLimitStatusIndicator_C::InventoryLabel' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryLimitStatusIndicator_C, ItemStorageCountLabel) == 0x000248, "Member 'UAthenaInventoryLimitStatusIndicator_C::ItemStorageCountLabel' has a wrong offset!");

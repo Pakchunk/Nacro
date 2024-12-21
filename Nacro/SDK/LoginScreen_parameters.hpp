@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function LoginScreen.LoginScreen_C.ExecuteUbergraph_LoginScreen
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct LoginScreen_C_ExecuteUbergraph_LoginScreen final
 {
 public:
@@ -69,7 +69,7 @@ public:
 	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable2;                               // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Event_Widget;                               // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FContentPushState                      K2Node_Event_State;                                // 0x0138(0x1182E980)(NoDestructor)
+	struct FContentPushState                      K2Node_Event_State;                                // 0x0138(0x0003)(NoDestructor)
 	bool                                          CallFunc_IsLoggingOut_ReturnValue;                 // 0x013B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -105,8 +105,8 @@ public:
 	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue2; // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_ExecuteUbergraph_LoginScreen) == 0x1182E980, "Wrong alignment on LoginScreen_C_ExecuteUbergraph_LoginScreen");
-static_assert(sizeof(LoginScreen_C_ExecuteUbergraph_LoginScreen) == 0x1182E980, "Wrong size on LoginScreen_C_ExecuteUbergraph_LoginScreen");
+static_assert(alignof(LoginScreen_C_ExecuteUbergraph_LoginScreen) == 0x000008, "Wrong alignment on LoginScreen_C_ExecuteUbergraph_LoginScreen");
+static_assert(sizeof(LoginScreen_C_ExecuteUbergraph_LoginScreen) == 0x000208, "Wrong size on LoginScreen_C_ExecuteUbergraph_LoginScreen");
 static_assert(offsetof(LoginScreen_C_ExecuteUbergraph_LoginScreen, EntryPoint) == 0x000000, "Member 'LoginScreen_C_ExecuteUbergraph_LoginScreen::EntryPoint' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_ExecuteUbergraph_LoginScreen, K2Node_CustomEvent_Result) == 0x000004, "Member 'LoginScreen_C_ExecuteUbergraph_LoginScreen::K2Node_CustomEvent_Result' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_ExecuteUbergraph_LoginScreen, K2Node_CustomEvent_ResultName) == 0x000008, "Member 'LoginScreen_C_ExecuteUbergraph_LoginScreen::K2Node_CustomEvent_ResultName' has a wrong offset!");
@@ -172,8 +172,8 @@ static_assert(offsetof(LoginScreen_C_ExecuteUbergraph_LoginScreen, CallFunc_Show
 static_assert(offsetof(LoginScreen_C_ExecuteUbergraph_LoginScreen, CallFunc_IsValid_ReturnValue2) == 0x000200, "Member 'LoginScreen_C_ExecuteUbergraph_LoginScreen::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.OnShowLoginMessage
-// 0x5CEDE500 (0x5CEDE500 - 0x0000)
-struct alignas(0x5CEDE500) LoginScreen_C_OnShowLoginMessage final
+// 0x0038 (0x0038 - 0x0000)
+struct LoginScreen_C_OnShowLoginMessage final
 {
 public:
 	bool                                          bShow;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -181,8 +181,8 @@ public:
 	class FText                                   Tile;                                              // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
 	class FText                                   Body;                                              // 0x0020(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LoginScreen_C_OnShowLoginMessage) == 0x5CEDE500, "Wrong alignment on LoginScreen_C_OnShowLoginMessage");
-static_assert(sizeof(LoginScreen_C_OnShowLoginMessage) == 0x5CEDE500, "Wrong size on LoginScreen_C_OnShowLoginMessage");
+static_assert(alignof(LoginScreen_C_OnShowLoginMessage) == 0x000008, "Wrong alignment on LoginScreen_C_OnShowLoginMessage");
+static_assert(sizeof(LoginScreen_C_OnShowLoginMessage) == 0x000038, "Wrong size on LoginScreen_C_OnShowLoginMessage");
 static_assert(offsetof(LoginScreen_C_OnShowLoginMessage, bShow) == 0x000000, "Member 'LoginScreen_C_OnShowLoginMessage::bShow' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_OnShowLoginMessage, Tile) == 0x000008, "Member 'LoginScreen_C_OnShowLoginMessage::Tile' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_OnShowLoginMessage, Body) == 0x000020, "Member 'LoginScreen_C_OnShowLoginMessage::Body' has a wrong offset!");
@@ -210,37 +210,37 @@ static_assert(sizeof(LoginScreen_C_HandleOnLoginAccountTypeSelected) == 0x000001
 static_assert(offsetof(LoginScreen_C_HandleOnLoginAccountTypeSelected, LoginAccountType) == 0x000000, "Member 'LoginScreen_C_HandleOnLoginAccountTypeSelected::LoginAccountType' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.OnNeedsPurchaseOrAccountLinking
-// 0x6C0020 (0x6C0020 - 0x0000)
-struct alignas(0x6C0020) LoginScreen_C_OnNeedsPurchaseOrAccountLinking final
+// 0x0001 (0x0001 - 0x0000)
+struct LoginScreen_C_OnNeedsPurchaseOrAccountLinking final
 {
 public:
 	bool                                          bLinkedAccountNeedsPurchase;                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_OnNeedsPurchaseOrAccountLinking) == 0x6C0020, "Wrong alignment on LoginScreen_C_OnNeedsPurchaseOrAccountLinking");
-static_assert(sizeof(LoginScreen_C_OnNeedsPurchaseOrAccountLinking) == 0x6C0020, "Wrong size on LoginScreen_C_OnNeedsPurchaseOrAccountLinking");
+static_assert(alignof(LoginScreen_C_OnNeedsPurchaseOrAccountLinking) == 0x000001, "Wrong alignment on LoginScreen_C_OnNeedsPurchaseOrAccountLinking");
+static_assert(sizeof(LoginScreen_C_OnNeedsPurchaseOrAccountLinking) == 0x000001, "Wrong size on LoginScreen_C_OnNeedsPurchaseOrAccountLinking");
 static_assert(offsetof(LoginScreen_C_OnNeedsPurchaseOrAccountLinking, bLinkedAccountNeedsPurchase) == 0x000000, "Member 'LoginScreen_C_OnNeedsPurchaseOrAccountLinking::bLinkedAccountNeedsPurchase' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature
-// 0x6C0020 (0x6C0020 - 0x0000)
-struct alignas(0x6C0020) LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature) == 0x6C0020, "Wrong alignment on LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature) == 0x6C0020, "Wrong size on LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'LoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.PushContentWidgetInternal
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct LoginScreen_C_PushContentWidgetInternal final
 {
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FContentPushState                      State;                                             // 0x0008(0x1182E980)(Parm, NoDestructor)
+	struct FContentPushState                      State;                                             // 0x0008(0x0003)(Parm, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_PushContentWidgetInternal) == 0x1182E980, "Wrong alignment on LoginScreen_C_PushContentWidgetInternal");
-static_assert(sizeof(LoginScreen_C_PushContentWidgetInternal) == 0x1182E980, "Wrong size on LoginScreen_C_PushContentWidgetInternal");
+static_assert(alignof(LoginScreen_C_PushContentWidgetInternal) == 0x000008, "Wrong alignment on LoginScreen_C_PushContentWidgetInternal");
+static_assert(sizeof(LoginScreen_C_PushContentWidgetInternal) == 0x000010, "Wrong size on LoginScreen_C_PushContentWidgetInternal");
 static_assert(offsetof(LoginScreen_C_PushContentWidgetInternal, Widget) == 0x000000, "Member 'LoginScreen_C_PushContentWidgetInternal::Widget' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_PushContentWidgetInternal, State) == 0x000008, "Member 'LoginScreen_C_PushContentWidgetInternal::State' has a wrong offset!");
 
@@ -335,40 +335,40 @@ static_assert(sizeof(LoginScreen_C_OnEnterState) == 0x000001, "Wrong size on Log
 static_assert(offsetof(LoginScreen_C_OnEnterState, PreviousUIState) == 0x000000, "Member 'LoginScreen_C_OnEnterState::PreviousUIState' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.OnPatchingComplete
-// 0x00B8 (0x00B8 - 0x0000)
-struct alignas(0xB8) LoginScreen_C_OnPatchingComplete final
+// 0x0001 (0x0001 - 0x0000)
+struct LoginScreen_C_OnPatchingComplete final
 {
 public:
 	bool                                          bProceed;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_OnPatchingComplete) == 0x0000B8, "Wrong alignment on LoginScreen_C_OnPatchingComplete");
-static_assert(sizeof(LoginScreen_C_OnPatchingComplete) == 0x0000B8, "Wrong size on LoginScreen_C_OnPatchingComplete");
+static_assert(alignof(LoginScreen_C_OnPatchingComplete) == 0x000001, "Wrong alignment on LoginScreen_C_OnPatchingComplete");
+static_assert(sizeof(LoginScreen_C_OnPatchingComplete) == 0x000001, "Wrong size on LoginScreen_C_OnPatchingComplete");
 static_assert(offsetof(LoginScreen_C_OnPatchingComplete, bProceed) == 0x000000, "Member 'LoginScreen_C_OnPatchingComplete::bProceed' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.DialogResult_B952A8754B3836D2151B4981F531542E
 // 0x0010 (0x0010 - 0x0000)
-struct LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E final
+struct alignas(0x08) LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E) == 0x000004, "Wrong alignment on LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E");
+static_assert(alignof(LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E) == 0x000008, "Wrong alignment on LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E");
 static_assert(sizeof(LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E) == 0x000010, "Wrong size on LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E");
 static_assert(offsetof(LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E, Result) == 0x000000, "Member 'LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E::Result' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E, ResultName) == 0x000008, "Member 'LoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E::ResultName' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.DialogResult_EE7DC32F44B9651770AED08101A03510
 // 0x0010 (0x0010 - 0x0000)
-struct LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510 final
+struct alignas(0x08) LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510) == 0x000004, "Wrong alignment on LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510");
+static_assert(alignof(LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510) == 0x000008, "Wrong alignment on LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510");
 static_assert(sizeof(LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510) == 0x000010, "Wrong size on LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510");
 static_assert(offsetof(LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510, Result) == 0x000000, "Member 'LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510::Result' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510, ResultName) == 0x000008, "Member 'LoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510::ResultName' has a wrong offset!");
@@ -469,8 +469,8 @@ static_assert(offsetof(LoginScreen_C_UpdateStatusTitle, Title) == 0x000000, "Mem
 static_assert(offsetof(LoginScreen_C_UpdateStatusTitle, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'LoginScreen_C_UpdateStatusTitle::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.ToggleLoginMenu
-// 0x30303030 (0x30303030 - 0x0000)
-struct alignas(0x30303030) LoginScreen_C_ToggleLoginMenu final
+// 0x0005 (0x0005 - 0x0000)
+struct LoginScreen_C_ToggleLoginMenu final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -479,8 +479,8 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_ToggleLoginMenu) == 0x30303030, "Wrong alignment on LoginScreen_C_ToggleLoginMenu");
-static_assert(sizeof(LoginScreen_C_ToggleLoginMenu) == 0x30303030, "Wrong size on LoginScreen_C_ToggleLoginMenu");
+static_assert(alignof(LoginScreen_C_ToggleLoginMenu) == 0x000001, "Wrong alignment on LoginScreen_C_ToggleLoginMenu");
+static_assert(sizeof(LoginScreen_C_ToggleLoginMenu) == 0x000005, "Wrong size on LoginScreen_C_ToggleLoginMenu");
 static_assert(offsetof(LoginScreen_C_ToggleLoginMenu, Temp_bool_Variable) == 0x000000, "Member 'LoginScreen_C_ToggleLoginMenu::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_ToggleLoginMenu, Temp_byte_Variable) == 0x000001, "Member 'LoginScreen_C_ToggleLoginMenu::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_ToggleLoginMenu, Temp_byte_Variable2) == 0x000002, "Member 'LoginScreen_C_ToggleLoginMenu::Temp_byte_Variable2' has a wrong offset!");
@@ -540,8 +540,8 @@ static_assert(offsetof(LoginScreen_C_SetResultsDescription, Description) == 0x00
 static_assert(offsetof(LoginScreen_C_SetResultsDescription, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'LoginScreen_C_SetResultsDescription::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.ShowEulaWindow
-// 0x0056 (0x0056 - 0x0000)
-struct alignas(0x2B) LoginScreen_C_ShowEulaWindow final
+// 0x0048 (0x0048 - 0x0000)
+struct LoginScreen_C_ShowEulaWindow final
 {
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(Parm)
@@ -553,8 +553,8 @@ public:
 	class UEulaWidget_C*                          CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_ShowEulaWindow) == 0x00002B, "Wrong alignment on LoginScreen_C_ShowEulaWindow");
-static_assert(sizeof(LoginScreen_C_ShowEulaWindow) == 0x000056, "Wrong size on LoginScreen_C_ShowEulaWindow");
+static_assert(alignof(LoginScreen_C_ShowEulaWindow) == 0x000008, "Wrong alignment on LoginScreen_C_ShowEulaWindow");
+static_assert(sizeof(LoginScreen_C_ShowEulaWindow) == 0x000048, "Wrong size on LoginScreen_C_ShowEulaWindow");
 static_assert(offsetof(LoginScreen_C_ShowEulaWindow, Text) == 0x000000, "Member 'LoginScreen_C_ShowEulaWindow::Text' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_ShowEulaWindow, ViewOnly) == 0x000018, "Member 'LoginScreen_C_ShowEulaWindow::ViewOnly' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_ShowEulaWindow, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'LoginScreen_C_ShowEulaWindow::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
@@ -564,8 +564,8 @@ static_assert(offsetof(LoginScreen_C_ShowEulaWindow, CallFunc_Create_ReturnValue
 static_assert(offsetof(LoginScreen_C_ShowEulaWindow, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'LoginScreen_C_ShowEulaWindow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.ShouldShowBenchmark
-// 0x0037 (0x0037 - 0x0000)
-struct alignas(0x37) LoginScreen_C_ShouldShowBenchmark final
+// 0x0018 (0x0018 - 0x0000)
+struct LoginScreen_C_ShouldShowBenchmark final
 {
 public:
 	bool                                          Return_Value;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -573,8 +573,8 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShouldRunInitialBenchmark_ReturnValue;    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_ShouldShowBenchmark) == 0x000037, "Wrong alignment on LoginScreen_C_ShouldShowBenchmark");
-static_assert(sizeof(LoginScreen_C_ShouldShowBenchmark) == 0x000037, "Wrong size on LoginScreen_C_ShouldShowBenchmark");
+static_assert(alignof(LoginScreen_C_ShouldShowBenchmark) == 0x000008, "Wrong alignment on LoginScreen_C_ShouldShowBenchmark");
+static_assert(sizeof(LoginScreen_C_ShouldShowBenchmark) == 0x000018, "Wrong size on LoginScreen_C_ShouldShowBenchmark");
 static_assert(offsetof(LoginScreen_C_ShouldShowBenchmark, Return_Value) == 0x000000, "Member 'LoginScreen_C_ShouldShowBenchmark::Return_Value' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_ShouldShowBenchmark, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LoginScreen_C_ShouldShowBenchmark::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_ShouldShowBenchmark, CallFunc_ShouldRunInitialBenchmark_ReturnValue) == 0x000010, "Member 'LoginScreen_C_ShouldShowBenchmark::CallFunc_ShouldRunInitialBenchmark_ReturnValue' has a wrong offset!");
@@ -591,42 +591,43 @@ static_assert(sizeof(LoginScreen_C_RunBenchmark) == 0x000008, "Wrong size on Log
 static_assert(offsetof(LoginScreen_C_RunBenchmark, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'LoginScreen_C_RunBenchmark::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.SkipBenchmark
-// 0x0042 (0x0042 - 0x0000)
-struct alignas(0x42) LoginScreen_C_SkipBenchmark final
+// 0x0008 (0x0008 - 0x0000)
+struct LoginScreen_C_SkipBenchmark final
 {
 public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginScreen_C_SkipBenchmark) == 0x000042, "Wrong alignment on LoginScreen_C_SkipBenchmark");
-static_assert(sizeof(LoginScreen_C_SkipBenchmark) == 0x000042, "Wrong size on LoginScreen_C_SkipBenchmark");
+static_assert(alignof(LoginScreen_C_SkipBenchmark) == 0x000008, "Wrong alignment on LoginScreen_C_SkipBenchmark");
+static_assert(sizeof(LoginScreen_C_SkipBenchmark) == 0x000008, "Wrong size on LoginScreen_C_SkipBenchmark");
 static_assert(offsetof(LoginScreen_C_SkipBenchmark, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'LoginScreen_C_SkipBenchmark::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.OnMouseButtonUp_MenuBorder
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0220 (0x0220 - 0x0000)
 struct LoginScreen_C_OnMouseButtonUp_MenuBorder final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x00B8)()
 };
-static_assert(alignof(LoginScreen_C_OnMouseButtonUp_MenuBorder) == 0x11829280, "Wrong alignment on LoginScreen_C_OnMouseButtonUp_MenuBorder");
-static_assert(sizeof(LoginScreen_C_OnMouseButtonUp_MenuBorder) == 0x11829280, "Wrong size on LoginScreen_C_OnMouseButtonUp_MenuBorder");
+static_assert(alignof(LoginScreen_C_OnMouseButtonUp_MenuBorder) == 0x000008, "Wrong alignment on LoginScreen_C_OnMouseButtonUp_MenuBorder");
+static_assert(sizeof(LoginScreen_C_OnMouseButtonUp_MenuBorder) == 0x000220, "Wrong size on LoginScreen_C_OnMouseButtonUp_MenuBorder");
 static_assert(offsetof(LoginScreen_C_OnMouseButtonUp_MenuBorder, MyGeometry) == 0x000000, "Member 'LoginScreen_C_OnMouseButtonUp_MenuBorder::MyGeometry' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_OnMouseButtonUp_MenuBorder, MouseEvent) == 0x000038, "Member 'LoginScreen_C_OnMouseButtonUp_MenuBorder::MouseEvent' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_OnMouseButtonUp_MenuBorder, ReturnValue) == 0x0000B0, "Member 'LoginScreen_C_OnMouseButtonUp_MenuBorder::ReturnValue' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_OnMouseButtonUp_MenuBorder, CallFunc_Handled_ReturnValue) == 0x000168, "Member 'LoginScreen_C_OnMouseButtonUp_MenuBorder::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.GetLoginMenu
-// 0x005A (0x005A - 0x0000)
-struct alignas(0x5A) LoginScreen_C_GetLoginMenu final
+// 0x0008 (0x0008 - 0x0000)
+struct LoginScreen_C_GetLoginMenu final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginScreen_C_GetLoginMenu) == 0x00005A, "Wrong alignment on LoginScreen_C_GetLoginMenu");
-static_assert(sizeof(LoginScreen_C_GetLoginMenu) == 0x00005A, "Wrong size on LoginScreen_C_GetLoginMenu");
+static_assert(alignof(LoginScreen_C_GetLoginMenu) == 0x000008, "Wrong alignment on LoginScreen_C_GetLoginMenu");
+static_assert(sizeof(LoginScreen_C_GetLoginMenu) == 0x000008, "Wrong size on LoginScreen_C_GetLoginMenu");
 static_assert(offsetof(LoginScreen_C_GetLoginMenu, ReturnValue) == 0x000000, "Member 'LoginScreen_C_GetLoginMenu::ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.ShowSplashScreen
@@ -648,31 +649,32 @@ static_assert(offsetof(LoginScreen_C_ShowSplashScreen, CallFunc_GetOwningPlayer_
 static_assert(offsetof(LoginScreen_C_ShowSplashScreen, CallFunc_Create_ReturnValue) == 0x000020, "Member 'LoginScreen_C_ShowSplashScreen::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.PopContentWidgetInternal
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct LoginScreen_C_PopContentWidgetInternal final
 {
 public:
-	struct FContentPushState                      State;                                             // 0x0000(0x1182E980)(Parm, NoDestructor)
+	struct FContentPushState                      State;                                             // 0x0000(0x0003)(Parm, NoDestructor)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginScreen_C_PopContentWidgetInternal) == 0x1182E980, "Wrong alignment on LoginScreen_C_PopContentWidgetInternal");
-static_assert(sizeof(LoginScreen_C_PopContentWidgetInternal) == 0x1182E980, "Wrong size on LoginScreen_C_PopContentWidgetInternal");
+static_assert(alignof(LoginScreen_C_PopContentWidgetInternal) == 0x000008, "Wrong alignment on LoginScreen_C_PopContentWidgetInternal");
+static_assert(sizeof(LoginScreen_C_PopContentWidgetInternal) == 0x000018, "Wrong size on LoginScreen_C_PopContentWidgetInternal");
 static_assert(offsetof(LoginScreen_C_PopContentWidgetInternal, State) == 0x000000, "Member 'LoginScreen_C_PopContentWidgetInternal::State' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_PopContentWidgetInternal, ReturnValue) == 0x000008, "Member 'LoginScreen_C_PopContentWidgetInternal::ReturnValue' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_PopContentWidgetInternal, CallFunc_PopWigdet_ReturnValue) == 0x000010, "Member 'LoginScreen_C_PopContentWidgetInternal::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.RollbackToSplashScreen
-// 0x0023 (0x0023 - 0x0000)
-struct alignas(0x23) LoginScreen_C_RollbackToSplashScreen final
+// 0x0010 (0x0010 - 0x0000)
+struct LoginScreen_C_RollbackToSplashScreen final
 {
 public:
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_RollbackToSplashScreen) == 0x000023, "Wrong alignment on LoginScreen_C_RollbackToSplashScreen");
-static_assert(sizeof(LoginScreen_C_RollbackToSplashScreen) == 0x000023, "Wrong size on LoginScreen_C_RollbackToSplashScreen");
+static_assert(alignof(LoginScreen_C_RollbackToSplashScreen) == 0x000008, "Wrong alignment on LoginScreen_C_RollbackToSplashScreen");
+static_assert(sizeof(LoginScreen_C_RollbackToSplashScreen) == 0x000010, "Wrong size on LoginScreen_C_RollbackToSplashScreen");
 static_assert(offsetof(LoginScreen_C_RollbackToSplashScreen, CallFunc_PopWigdet_ReturnValue) == 0x000000, "Member 'LoginScreen_C_RollbackToSplashScreen::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_RollbackToSplashScreen, CallFunc_GetChildrenCount_ReturnValue) == 0x000008, "Member 'LoginScreen_C_RollbackToSplashScreen::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_RollbackToSplashScreen, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'LoginScreen_C_RollbackToSplashScreen::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
@@ -723,8 +725,8 @@ static_assert(offsetof(LoginScreen_C_ShowAccountSelectWindow, CallFunc_GetOwning
 static_assert(offsetof(LoginScreen_C_ShowAccountSelectWindow, CallFunc_Create_ReturnValue) == 0x000020, "Member 'LoginScreen_C_ShowAccountSelectWindow::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function LoginScreen.LoginScreen_C.SafePopContent
-// 0x0048 (0x0048 - 0x0000)
-struct alignas(0x48) LoginScreen_C_SafePopContent final
+// 0x0018 (0x0018 - 0x0000)
+struct LoginScreen_C_SafePopContent final
 {
 public:
 	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -732,8 +734,8 @@ public:
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginScreen_C_SafePopContent) == 0x000048, "Wrong alignment on LoginScreen_C_SafePopContent");
-static_assert(sizeof(LoginScreen_C_SafePopContent) == 0x000048, "Wrong size on LoginScreen_C_SafePopContent");
+static_assert(alignof(LoginScreen_C_SafePopContent) == 0x000008, "Wrong alignment on LoginScreen_C_SafePopContent");
+static_assert(sizeof(LoginScreen_C_SafePopContent) == 0x000018, "Wrong size on LoginScreen_C_SafePopContent");
 static_assert(offsetof(LoginScreen_C_SafePopContent, CallFunc_GetChildrenCount_ReturnValue) == 0x000000, "Member 'LoginScreen_C_SafePopContent::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_SafePopContent, CallFunc_PopWigdet_ReturnValue) == 0x000008, "Member 'LoginScreen_C_SafePopContent::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LoginScreen_C_SafePopContent, CallFunc_Greater_IntInt_ReturnValue) == 0x000010, "Member 'LoginScreen_C_SafePopContent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");

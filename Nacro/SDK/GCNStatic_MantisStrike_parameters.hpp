@@ -18,21 +18,22 @@ namespace SDK::Params
 {
 
 // Function GCNStatic_MantisStrike.GCNStatic_MantisStrike_C.OnExecute
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct GCNStatic_MantisStrike_C_OnExecute final
 {
 public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             LocalMantisStrikeImpactCue;                        // 0x00C8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        LocalP_MantisStrikeImpact;                         // 0x00D0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotFromZ_ReturnValue;                 // 0x00D8(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotFromZ_ReturnValue;                 // 0x00D8(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCNStatic_MantisStrike_C_OnExecute) == 0x11821C00, "Wrong alignment on GCNStatic_MantisStrike_C_OnExecute");
-static_assert(sizeof(GCNStatic_MantisStrike_C_OnExecute) == 0x11821C00, "Wrong size on GCNStatic_MantisStrike_C_OnExecute");
+static_assert(alignof(GCNStatic_MantisStrike_C_OnExecute) == 0x000008, "Wrong alignment on GCNStatic_MantisStrike_C_OnExecute");
+static_assert(sizeof(GCNStatic_MantisStrike_C_OnExecute) == 0x0000F0, "Wrong size on GCNStatic_MantisStrike_C_OnExecute");
 static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, MyTarget) == 0x000000, "Member 'GCNStatic_MantisStrike_C_OnExecute::MyTarget' has a wrong offset!");
 static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, Parameters) == 0x000008, "Member 'GCNStatic_MantisStrike_C_OnExecute::Parameters' has a wrong offset!");
 static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, ReturnValue) == 0x0000C0, "Member 'GCNStatic_MantisStrike_C_OnExecute::ReturnValue' has a wrong offset!");

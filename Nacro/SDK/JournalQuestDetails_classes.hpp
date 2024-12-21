@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass JournalQuestDetails.JournalQuestDetails_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D0 (0x0310 - 0x0240)
 class UJournalQuestDetails_C final : public UFortJournalQuestDetails
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UBP_LiveStreamerDescription_C*          BP_LiveStreamerDescription;                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_QuestExpiresWidget_C*               BP_QuestExpiresWidget;                             // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           FutureObjectiveProgressBarGroup;                   // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -44,7 +44,7 @@ public:
 	bool                                          Initialized_;                                      // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAnnounce_Gen_Quest_Conversation_C*     ConversationActor;                                 // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       NewVar_0;                                          // 0x02D0(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortClientEvent                       NewVar_0;                                          // 0x02D0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	UMulticastDelegateProperty_                   OnSpokenDialogEnded;                               // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UFortQuestItem*                         QuestItemRef;                                      // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsOutro;                                           // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -79,8 +79,8 @@ public:
 		return GetDefaultObjImpl<UJournalQuestDetails_C>();
 	}
 };
-static_assert(alignof(UJournalQuestDetails_C) == 0x322CBBB8, "Wrong alignment on UJournalQuestDetails_C");
-static_assert(sizeof(UJournalQuestDetails_C) == 0x322CBBB8, "Wrong size on UJournalQuestDetails_C");
+static_assert(alignof(UJournalQuestDetails_C) == 0x000008, "Wrong alignment on UJournalQuestDetails_C");
+static_assert(sizeof(UJournalQuestDetails_C) == 0x000310, "Wrong size on UJournalQuestDetails_C");
 static_assert(offsetof(UJournalQuestDetails_C, UberGraphFrame) == 0x000240, "Member 'UJournalQuestDetails_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, BP_LiveStreamerDescription) == 0x000248, "Member 'UJournalQuestDetails_C::BP_LiveStreamerDescription' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, BP_QuestExpiresWidget) == 0x000250, "Member 'UJournalQuestDetails_C::BP_QuestExpiresWidget' has a wrong offset!");

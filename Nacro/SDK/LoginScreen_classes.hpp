@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LoginScreen.LoginScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00F0 (0x0520 - 0x0430)
 class ULoginScreen_C final : public UFortUIStateWidget_Login
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          BackBorder;                                        // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      BackButton;                                        // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UConsoleProfileWidget_C*                ConsoleProfileWidget;                              // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -117,8 +117,8 @@ public:
 		return GetDefaultObjImpl<ULoginScreen_C>();
 	}
 };
-static_assert(alignof(ULoginScreen_C) == 0x322CBBB8, "Wrong alignment on ULoginScreen_C");
-static_assert(sizeof(ULoginScreen_C) == 0x322CBBB8, "Wrong size on ULoginScreen_C");
+static_assert(alignof(ULoginScreen_C) == 0x000008, "Wrong alignment on ULoginScreen_C");
+static_assert(sizeof(ULoginScreen_C) == 0x000520, "Wrong size on ULoginScreen_C");
 static_assert(offsetof(ULoginScreen_C, UberGraphFrame) == 0x000430, "Member 'ULoginScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULoginScreen_C, BackBorder) == 0x000438, "Member 'ULoginScreen_C::BackBorder' has a wrong offset!");
 static_assert(offsetof(ULoginScreen_C, BackButton) == 0x000440, "Member 'ULoginScreen_C::BackButton' has a wrong offset!");

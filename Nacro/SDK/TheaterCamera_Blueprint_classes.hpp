@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TheaterCamera_Blueprint.TheaterCamera_Blueprint_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0210 (0x0AD0 - 0x08C0)
 class ATheaterCamera_Blueprint_C final : public AFortTheaterCamera
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C0(0x0008)(Transient, DuplicateTransient)
 	class UStaticMeshComponent*                   MeshScreenPlane;                                   // 0x08C8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        SceneInitializeFX;                                 // 0x08D0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         FocusTimeline_Float_Curve_ADC98EA5D14E24EC78DD4F80C5102578; // 0x08D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,15 +59,15 @@ public:
 	float                                         NumberOfZoomLevels;                                // 0x0954(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ZoomDistanceUnitZ;                                 // 0x0958(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CurrentZoomLevel;                                  // 0x095C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                FocusedTileLocWithOffset;                          // 0x0960(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                FocusedTileLocWithOffset;                          // 0x0960(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MouseDown;                                         // 0x096C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_96D[0x3];                                      // 0x096D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CurrentOffsetAmountX;                              // 0x0970(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CameraXOffsetLevelMax;                             // 0x0974(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         InitialZoomLevels;                                 // 0x0978(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ForwardVector;                                     // 0x097C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ForwardVector;                                     // 0x097C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CameraYRotationLevelZero;                          // 0x0988(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TargetTileLoc;                                     // 0x098C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TargetTileLoc;                                     // 0x098C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         OldOffsetAmountX;                                  // 0x0998(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CurrentFOV;                                        // 0x099C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FOVLevelZero;                                      // 0x09A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -95,15 +95,15 @@ public:
 	TArray<bool>                                  PinnedQuestsArray;                                 // 0x0A10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                          WaitForPinned;                                     // 0x0A20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A21[0x3];                                      // 0x0A21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                HexWorldLocFromBP_Hex_PARENT;                      // 0x0A24(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HexWorldLocFromBP_Hex_PARENT;                      // 0x0A24(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MaxCameraDistance;                                 // 0x0A30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CenterOfCameraBounds;                              // 0x0A34(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CenterOfCameraBounds;                              // 0x0A34(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HighestXMinusValue;                                // 0x0A40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HighestYMinusValue;                                // 0x0A44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TotalWidthOfHexPlane;                              // 0x0A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HexPlaneBufferSize;                                // 0x0A4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CenterLocOfAllHexes;                               // 0x0A50(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                AllHexesBoxExtent;                                 // 0x0A5C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CenterLocOfAllHexes;                               // 0x0A50(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                AllHexesBoxExtent;                                 // 0x0A5C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector2D>                      RoadMaskLocations;                                 // 0x0A68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                          LightsBPSet;                                       // 0x0A78(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A79[0x7];                                      // 0x0A79(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -159,8 +159,8 @@ public:
 		return GetDefaultObjImpl<ATheaterCamera_Blueprint_C>();
 	}
 };
-static_assert(alignof(ATheaterCamera_Blueprint_C) == 0x11821D80, "Wrong alignment on ATheaterCamera_Blueprint_C");
-static_assert(sizeof(ATheaterCamera_Blueprint_C) == 0x11821D80, "Wrong size on ATheaterCamera_Blueprint_C");
+static_assert(alignof(ATheaterCamera_Blueprint_C) == 0x000010, "Wrong alignment on ATheaterCamera_Blueprint_C");
+static_assert(sizeof(ATheaterCamera_Blueprint_C) == 0x000AD0, "Wrong size on ATheaterCamera_Blueprint_C");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, UberGraphFrame) == 0x0008C0, "Member 'ATheaterCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, MeshScreenPlane) == 0x0008C8, "Member 'ATheaterCamera_Blueprint_C::MeshScreenPlane' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, SceneInitializeFX) == 0x0008D0, "Member 'ATheaterCamera_Blueprint_C::SceneInitializeFX' has a wrong offset!");

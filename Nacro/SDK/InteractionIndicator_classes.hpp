@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InteractionIndicator.InteractionIndicator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x02D0 - 0x0298)
 class UInteractionIndicator_C final : public UFortActorIndicatorWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
 	class UBasicInteractionWidget_C*              BasicInteractionWidget;                            // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHUDMinusPickupItemWidget_C*            HUDMinusPickupItemWidget;                          // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInteraction_DefenderBeacon_C*          Interaction_DefenderBeacon;                        // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UInteractionIndicator_C>();
 	}
 };
-static_assert(alignof(UInteractionIndicator_C) == 0x322CBBB8, "Wrong alignment on UInteractionIndicator_C");
-static_assert(sizeof(UInteractionIndicator_C) == 0x322CBBB8, "Wrong size on UInteractionIndicator_C");
+static_assert(alignof(UInteractionIndicator_C) == 0x000008, "Wrong alignment on UInteractionIndicator_C");
+static_assert(sizeof(UInteractionIndicator_C) == 0x0002D0, "Wrong size on UInteractionIndicator_C");
 static_assert(offsetof(UInteractionIndicator_C, UberGraphFrame) == 0x000298, "Member 'UInteractionIndicator_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UInteractionIndicator_C, BasicInteractionWidget) == 0x0002A0, "Member 'UInteractionIndicator_C::BasicInteractionWidget' has a wrong offset!");
 static_assert(offsetof(UInteractionIndicator_C, HUDMinusPickupItemWidget) == 0x0002A8, "Member 'UInteractionIndicator_C::HUDMinusPickupItemWidget' has a wrong offset!");

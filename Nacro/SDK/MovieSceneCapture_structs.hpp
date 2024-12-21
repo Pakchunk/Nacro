@@ -29,24 +29,24 @@ enum class EHDRCaptureGamut : uint8
 };
 
 // ScriptStruct MovieSceneCapture.CaptureResolution
-// 0x1182B800 (0x1182B800 - 0x0000)
-struct alignas(0x1182B800) FCaptureResolution final
+// 0x0008 (0x0008 - 0x0000)
+struct FCaptureResolution final
 {
 public:
 	uint32                                        ResX;                                              // 0x0000(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        ResY;                                              // 0x0004(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCaptureResolution) == 0x1182B800, "Wrong alignment on FCaptureResolution");
-static_assert(sizeof(FCaptureResolution) == 0x1182B800, "Wrong size on FCaptureResolution");
+static_assert(alignof(FCaptureResolution) == 0x000004, "Wrong alignment on FCaptureResolution");
+static_assert(sizeof(FCaptureResolution) == 0x000008, "Wrong size on FCaptureResolution");
 static_assert(offsetof(FCaptureResolution, ResX) == 0x000000, "Member 'FCaptureResolution::ResX' has a wrong offset!");
 static_assert(offsetof(FCaptureResolution, ResY) == 0x000004, "Member 'FCaptureResolution::ResY' has a wrong offset!");
 
 // ScriptStruct MovieSceneCapture.MovieSceneCaptureSettings
-// 0x1182B800 (0x1182B800 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct FMovieSceneCaptureSettings final
 {
 public:
-	struct FDirectoryPath                         OutputDirectory;                                   // 0x0000(0x1182B800)(Edit, Config, NativeAccessSpecifierPublic)
+	struct FDirectoryPath                         OutputDirectory;                                   // 0x0000(0x0010)(Edit, Config, NativeAccessSpecifierPublic)
 	bool                                          bCreateTemporaryCopiesOfLevels;                    // 0x0010(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class AGameModeBase>              GameModeOverride;                                  // 0x0018(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -58,7 +58,7 @@ public:
 	uint8                                         ZeroPadFrameNumbers;                               // 0x0038(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         FrameRate;                                         // 0x003C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCaptureResolution                     Resolution;                                        // 0x0040(0x1182B800)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCaptureResolution                     Resolution;                                        // 0x0040(0x0008)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bEnableTextureStreaming;                           // 0x0048(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCinematicEngineScalability;                       // 0x0049(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCinematicMode;                                    // 0x004A(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -68,8 +68,8 @@ public:
 	bool                                          bShowHUD;                                          // 0x004E(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneCaptureSettings) == 0x1182B800, "Wrong alignment on FMovieSceneCaptureSettings");
-static_assert(sizeof(FMovieSceneCaptureSettings) == 0x1182B800, "Wrong size on FMovieSceneCaptureSettings");
+static_assert(alignof(FMovieSceneCaptureSettings) == 0x000008, "Wrong alignment on FMovieSceneCaptureSettings");
+static_assert(sizeof(FMovieSceneCaptureSettings) == 0x000050, "Wrong size on FMovieSceneCaptureSettings");
 static_assert(offsetof(FMovieSceneCaptureSettings, OutputDirectory) == 0x000000, "Member 'FMovieSceneCaptureSettings::OutputDirectory' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCaptureSettings, bCreateTemporaryCopiesOfLevels) == 0x000010, "Member 'FMovieSceneCaptureSettings::bCreateTemporaryCopiesOfLevels' has a wrong offset!");
 static_assert(offsetof(FMovieSceneCaptureSettings, GameModeOverride) == 0x000018, "Member 'FMovieSceneCaptureSettings::GameModeOverride' has a wrong offset!");
@@ -89,25 +89,25 @@ static_assert(offsetof(FMovieSceneCaptureSettings, bShowPlayer) == 0x00004D, "Me
 static_assert(offsetof(FMovieSceneCaptureSettings, bShowHUD) == 0x00004E, "Member 'FMovieSceneCaptureSettings::bShowHUD' has a wrong offset!");
 
 // ScriptStruct MovieSceneCapture.CompositionGraphCapturePasses
-// 0x1182BC80 (0x1182BC80 - 0x0000)
-struct alignas(0x1182BC80) FCompositionGraphCapturePasses final
+// 0x0010 (0x0010 - 0x0000)
+struct FCompositionGraphCapturePasses final
 {
 public:
 	TArray<class FString>                         Value;                                             // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCompositionGraphCapturePasses) == 0x1182BC80, "Wrong alignment on FCompositionGraphCapturePasses");
-static_assert(sizeof(FCompositionGraphCapturePasses) == 0x1182BC80, "Wrong size on FCompositionGraphCapturePasses");
+static_assert(alignof(FCompositionGraphCapturePasses) == 0x000008, "Wrong alignment on FCompositionGraphCapturePasses");
+static_assert(sizeof(FCompositionGraphCapturePasses) == 0x000010, "Wrong size on FCompositionGraphCapturePasses");
 static_assert(offsetof(FCompositionGraphCapturePasses, Value) == 0x000000, "Member 'FCompositionGraphCapturePasses::Value' has a wrong offset!");
 
 // ScriptStruct MovieSceneCapture.CaptureProtocolID
-// 0x1182BC80 (0x1182BC80 - 0x0000)
-struct alignas(0x1182BC80) FCaptureProtocolID final
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) FCaptureProtocolID final
 {
 public:
 	class FName                                   Identifier;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCaptureProtocolID) == 0x1182BC80, "Wrong alignment on FCaptureProtocolID");
-static_assert(sizeof(FCaptureProtocolID) == 0x1182BC80, "Wrong size on FCaptureProtocolID");
+static_assert(alignof(FCaptureProtocolID) == 0x000008, "Wrong alignment on FCaptureProtocolID");
+static_assert(sizeof(FCaptureProtocolID) == 0x000008, "Wrong size on FCaptureProtocolID");
 static_assert(offsetof(FCaptureProtocolID, Identifier) == 0x000000, "Member 'FCaptureProtocolID::Identifier' has a wrong offset!");
 
 }

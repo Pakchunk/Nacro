@@ -20,12 +20,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Feedback_RateExperience.Feedback_RateExperience_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D0 (0x04D8 - 0x0408)
 class UFeedback_RateExperience_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class ULegacyButtonIconText_C*                OneStar;                                           // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyButtonIconText_C*                TwoStar;                                           // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyButtonIconText_C*                ThreeStar;                                         // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -78,8 +78,8 @@ public:
 		return GetDefaultObjImpl<UFeedback_RateExperience_C>();
 	}
 };
-static_assert(alignof(UFeedback_RateExperience_C) == 0x322CBBB8, "Wrong alignment on UFeedback_RateExperience_C");
-static_assert(sizeof(UFeedback_RateExperience_C) == 0x322CBBB8, "Wrong size on UFeedback_RateExperience_C");
+static_assert(alignof(UFeedback_RateExperience_C) == 0x000008, "Wrong alignment on UFeedback_RateExperience_C");
+static_assert(sizeof(UFeedback_RateExperience_C) == 0x0004D8, "Wrong size on UFeedback_RateExperience_C");
 static_assert(offsetof(UFeedback_RateExperience_C, UberGraphFrame) == 0x000410, "Member 'UFeedback_RateExperience_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFeedback_RateExperience_C, OneStar) == 0x000418, "Member 'UFeedback_RateExperience_C::OneStar' has a wrong offset!");
 static_assert(offsetof(UFeedback_RateExperience_C, TwoStar) == 0x000420, "Member 'UFeedback_RateExperience_C::TwoStar' has a wrong offset!");

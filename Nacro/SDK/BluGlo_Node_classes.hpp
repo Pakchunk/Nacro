@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BluGlo_Node.BluGlo_Node_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x00E0 (0x10B0 - 0x0FD0)
 class ABluGlo_Node_C final : public ABuildingProp
 {
 public:
 	uint8                                         Pad_FC8[0x8];                                      // 0x0FC8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0FD0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0FD0(0x0008)(Transient, DuplicateTransient)
 	class UPointLightComponent*                   bluLight;                                          // 0x0FD8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               IdleParticles;                                     // 0x0FE0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   bluglomesh;                                        // 0x0FE8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -42,10 +42,12 @@ public:
 	uint8                                         Pad_1023[0x5];                                     // 0x1023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   BluGloQuantity;                                    // 0x1028(0x0018)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	class AFortPawn*                              NewVar;                                            // 0x1040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                StartLocation;                                     // 0x1048(0x11821300)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                StartLocation;                                     // 0x1048(0x000C)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1054[0x4];                                     // 0x1054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               TrailEffect;                                       // 0x1058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Sound_BluGloLoop;                                  // 0x1060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               RandomSpawnRotation;                               // 0x1068(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FRotator                               RandomSpawnRotation;                               // 0x1068(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1074[0x4];                                     // 0x1074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABluGlow_MorphAnimation_C*              BlugloRef;                                         // 0x1078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UForceFeedbackEffect*                   PickupForceFeedback;                               // 0x1080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortWorldItemDefinition*               BlugloItemDef;                                     // 0x1088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,8 +79,8 @@ public:
 		return GetDefaultObjImpl<ABluGlo_Node_C>();
 	}
 };
-static_assert(alignof(ABluGlo_Node_C) == 0x1182A000, "Wrong alignment on ABluGlo_Node_C");
-static_assert(sizeof(ABluGlo_Node_C) == 0x1182A000, "Wrong size on ABluGlo_Node_C");
+static_assert(alignof(ABluGlo_Node_C) == 0x000010, "Wrong alignment on ABluGlo_Node_C");
+static_assert(sizeof(ABluGlo_Node_C) == 0x0010B0, "Wrong size on ABluGlo_Node_C");
 static_assert(offsetof(ABluGlo_Node_C, UberGraphFrame) == 0x000FD0, "Member 'ABluGlo_Node_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABluGlo_Node_C, bluLight) == 0x000FD8, "Member 'ABluGlo_Node_C::bluLight' has a wrong offset!");
 static_assert(offsetof(ABluGlo_Node_C, IdleParticles) == 0x000FE0, "Member 'ABluGlo_Node_C::IdleParticles' has a wrong offset!");

@@ -10,31 +10,31 @@
 
 #include "Basic.hpp"
 
+#include "PlayerPawn_Athena_Generic_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PlayerPawn_Athena_Generic_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerPawn_Athena.PlayerPawn_Athena_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x01C0 (0x21E0 - 0x2020)
 class APlayerPawn_Athena_C final : public APlayerPawn_Athena_Generic_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Athena_C;                // 0x2018(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Athena_C;                // 0x2018(0x0008)(Transient, DuplicateTransient)
 	class USkeletalMeshComponent*                 TargetHead;                                        // 0x2020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 TargetBody;                                        // 0x2028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInterface*>             PawnHeadMaterials_0;                               // 0x2030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInterface*>             PawnBodyMaterials_0;                               // 0x2040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class UParticleSystem*                        P_IncendiaryRound;                                 // 0x2050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        P_MakeItRain;                                      // 0x2058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_FlakVest;                                       // 0x2060(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayEventData                     Event_Data;                                        // 0x2080(0x11822200)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTag                           EventSpawnEffect;                                  // 0x2128(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_FlakVest;                                       // 0x2060(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayEventData                     Event_Data;                                        // 0x2080(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                           EventSpawnEffect;                                  // 0x2128(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         ShockwaveRefractionRingHeight;                     // 0x2130(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2134[0x4];                                     // 0x2134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        P_Shockwave;                                       // 0x2138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -46,7 +46,8 @@ public:
 	class USoundBase*                             SafeZonePassThroughSound;                          // 0x2160(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bHasBeenOutsideSafeZone;                           // 0x2168(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2169[0x3];                                     // 0x2169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ThreatColor;                                       // 0x216C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ThreatColor;                                       // 0x216C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_217C[0x4];                                     // 0x217C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             PlayerKilledSound;                                 // 0x2180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Contrail_A;                                        // 0x2188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Contrail_B;                                        // 0x2190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,24 +62,24 @@ public:
 	class UParticleSystemComponent*               Vapor_Effect;                                      // 0x21D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void InitAthenaFoleyAudio();
-	void UserConstructionScript();
-	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void ReceivePossessed(class AController* NewController);
-	void GameplayCue_Abilities_Activation_Commando_Shockwave(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void SetMenuScreenClassName();
-	void ReceiveBeginPlay();
-	void SelectPawn(class UAnimInstance* AnimInst);
-	void ReceiveDestroyed();
-	void GameplayCue_Athena_OutsideSafeZone(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void SafeZoneStatusChanged();
-	void GameplayCue_Athena_Equipping(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext);
-	void ReceiveTick(float DeltaSeconds);
-	void ContrailCheck();
-	void GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint);
+	void GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void ContrailCheck();
+	void ReceiveTick(float DeltaSeconds);
+	void OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext);
+	void GameplayCue_Athena_Equipping(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void SafeZoneStatusChanged();
+	void GameplayCue_Athena_OutsideSafeZone(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void ReceiveDestroyed();
+	void SelectPawn(class UAnimInstance* AnimInst);
+	void ReceiveBeginPlay();
+	void SetMenuScreenClassName();
+	void GameplayCue_Abilities_Activation_Commando_Shockwave(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void ReceivePossessed(class AController* NewController);
+	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void UserConstructionScript();
+	void InitAthenaFoleyAudio();
 
 public:
 	static class UClass* StaticClass()
@@ -90,8 +91,8 @@ public:
 		return GetDefaultObjImpl<APlayerPawn_Athena_C>();
 	}
 };
-static_assert(alignof(APlayerPawn_Athena_C) == 0x1182EB00, "Wrong alignment on APlayerPawn_Athena_C");
-static_assert(sizeof(APlayerPawn_Athena_C) == 0x1182EB00, "Wrong size on APlayerPawn_Athena_C");
+static_assert(alignof(APlayerPawn_Athena_C) == 0x000010, "Wrong alignment on APlayerPawn_Athena_C");
+static_assert(sizeof(APlayerPawn_Athena_C) == 0x0021E0, "Wrong size on APlayerPawn_Athena_C");
 static_assert(offsetof(APlayerPawn_Athena_C, UberGraphFrame_PlayerPawn_Athena_C) == 0x002018, "Member 'APlayerPawn_Athena_C::UberGraphFrame_PlayerPawn_Athena_C' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Athena_C, TargetHead) == 0x002020, "Member 'APlayerPawn_Athena_C::TargetHead' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Athena_C, TargetBody) == 0x002028, "Member 'APlayerPawn_Athena_C::TargetBody' has a wrong offset!");

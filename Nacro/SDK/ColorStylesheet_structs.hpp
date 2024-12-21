@@ -18,23 +18,23 @@ namespace SDK
 {
 
 // UserDefinedStruct ColorStylesheet.ColorStylesheet
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct FColorStylesheet final
 {
 public:
-	struct FFortUITheme                           ThemeMinusDefault_91_015CB18F413B4A467B38CB93E8734A68; // 0x0000(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FFortUITheme                           ThemeMinusEmphasis_94_962F11A944E9DF11F547FBBDB98DD4BE; // 0x0060(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FFortUITheme                           ThemeMinusCritical_97_43F63D0C4E71395016AE00B41BB7BA0C; // 0x00C0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FLinearColor                           ColorMinusBuff_145_AC063FB242D9ECBD0B6306BBE205C7F7; // 0x0120(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ColorMinusDebuff_146_0402338944FCC3DED4C90E9A78FD8BC5; // 0x0130(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ColorMinusUnique_150_B15CF0C9436988001F70B4B8F9D32E5B; // 0x0140(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ColorMinusFireElemental_152_FBAFDA0C445A96F1B689E880A707069C; // 0x0150(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ColorMinusIceElemental_154_FDA209D8429DF768ABA53EBA24C4B505; // 0x0160(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ColorMinusBoltElemental_156_10AEFEC147C25B2DEE47619E4AB4ABC7; // 0x0170(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ColorMinusHarvestWeakPoint_159_AE0CF44C4731DAF69193D4B4E59B0E7E; // 0x0180(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortUITheme                           ThemeMinusDefault_91_015CB18F413B4A467B38CB93E8734A68; // 0x0000(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FFortUITheme                           ThemeMinusEmphasis_94_962F11A944E9DF11F547FBBDB98DD4BE; // 0x0060(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FFortUITheme                           ThemeMinusCritical_97_43F63D0C4E71395016AE00B41BB7BA0C; // 0x00C0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FLinearColor                           ColorMinusBuff_145_AC063FB242D9ECBD0B6306BBE205C7F7; // 0x0120(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorMinusDebuff_146_0402338944FCC3DED4C90E9A78FD8BC5; // 0x0130(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorMinusUnique_150_B15CF0C9436988001F70B4B8F9D32E5B; // 0x0140(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorMinusFireElemental_152_FBAFDA0C445A96F1B689E880A707069C; // 0x0150(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorMinusIceElemental_154_FDA209D8429DF768ABA53EBA24C4B505; // 0x0160(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorMinusBoltElemental_156_10AEFEC147C25B2DEE47619E4AB4ABC7; // 0x0170(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorMinusHarvestWeakPoint_159_AE0CF44C4731DAF69193D4B4E59B0E7E; // 0x0180(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FColorStylesheet) == 0x11821300, "Wrong alignment on FColorStylesheet");
-static_assert(sizeof(FColorStylesheet) == 0x11821300, "Wrong size on FColorStylesheet");
+static_assert(alignof(FColorStylesheet) == 0x000004, "Wrong alignment on FColorStylesheet");
+static_assert(sizeof(FColorStylesheet) == 0x000190, "Wrong size on FColorStylesheet");
 static_assert(offsetof(FColorStylesheet, ThemeMinusDefault_91_015CB18F413B4A467B38CB93E8734A68) == 0x000000, "Member 'FColorStylesheet::ThemeMinusDefault_91_015CB18F413B4A467B38CB93E8734A68' has a wrong offset!");
 static_assert(offsetof(FColorStylesheet, ThemeMinusEmphasis_94_962F11A944E9DF11F547FBBDB98DD4BE) == 0x000060, "Member 'FColorStylesheet::ThemeMinusEmphasis_94_962F11A944E9DF11F547FBBDB98DD4BE' has a wrong offset!");
 static_assert(offsetof(FColorStylesheet, ThemeMinusCritical_97_43F63D0C4E71395016AE00B41BB7BA0C) == 0x0000C0, "Member 'FColorStylesheet::ThemeMinusCritical_97_43F63D0C4E71395016AE00B41BB7BA0C' has a wrong offset!");

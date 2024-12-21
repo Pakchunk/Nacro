@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HorizontalTabList.HorizontalTabList_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x03C8 - 0x0360)
 class UHorizontalTabList_C final : public UFortTabListWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageGamepadKeyPrompt;                             // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageHorizRule;                                    // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonActionWidget*                    NextTabAction;                                     // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -32,7 +32,7 @@ public:
 	class UCommonActionWidget*                    PreviousTabAction;                                 // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               PreviousTabActionWrapper;                          // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         TabButtonBox;                                      // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FMargin                                TabButtonPadding;                                  // 0x03A0(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
+	struct FMargin                                TabButtonPadding;                                  // 0x03A0(0x0010)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
 	class UClass*                                 ButtonStyle;                                       // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          UseButtonStyle;                                    // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          ShowGamePadInputPrompt;                            // 0x03B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UHorizontalTabList_C>();
 	}
 };
-static_assert(alignof(UHorizontalTabList_C) == 0x322CBBB8, "Wrong alignment on UHorizontalTabList_C");
-static_assert(sizeof(UHorizontalTabList_C) == 0x322CBBB8, "Wrong size on UHorizontalTabList_C");
+static_assert(alignof(UHorizontalTabList_C) == 0x000008, "Wrong alignment on UHorizontalTabList_C");
+static_assert(sizeof(UHorizontalTabList_C) == 0x0003C8, "Wrong size on UHorizontalTabList_C");
 static_assert(offsetof(UHorizontalTabList_C, UberGraphFrame) == 0x000360, "Member 'UHorizontalTabList_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHorizontalTabList_C, ImageGamepadKeyPrompt) == 0x000368, "Member 'UHorizontalTabList_C::ImageGamepadKeyPrompt' has a wrong offset!");
 static_assert(offsetof(UHorizontalTabList_C, ImageHorizRule) == 0x000370, "Member 'UHorizontalTabList_C::ImageHorizRule' has a wrong offset!");

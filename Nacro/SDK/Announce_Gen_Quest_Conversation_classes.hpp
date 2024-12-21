@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0008 (0x0450 - 0x0448)
 class AAnnounce_Gen_Quest_Conversation_C final : public AFortClientAnnouncement_Conversation
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0448(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0448(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_Announce_Gen_Quest_Conversation(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 		return GetDefaultObjImpl<AAnnounce_Gen_Quest_Conversation_C>();
 	}
 };
-static_assert(alignof(AAnnounce_Gen_Quest_Conversation_C) == 0x11821D80, "Wrong alignment on AAnnounce_Gen_Quest_Conversation_C");
-static_assert(sizeof(AAnnounce_Gen_Quest_Conversation_C) == 0x11821D80, "Wrong size on AAnnounce_Gen_Quest_Conversation_C");
+static_assert(alignof(AAnnounce_Gen_Quest_Conversation_C) == 0x000008, "Wrong alignment on AAnnounce_Gen_Quest_Conversation_C");
+static_assert(sizeof(AAnnounce_Gen_Quest_Conversation_C) == 0x000450, "Wrong size on AAnnounce_Gen_Quest_Conversation_C");
 static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_C, UberGraphFrame) == 0x000448, "Member 'AAnnounce_Gen_Quest_Conversation_C::UberGraphFrame' has a wrong offset!");
 
 }

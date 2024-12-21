@@ -53,12 +53,12 @@ static_assert(offsetof(ItemTransformKeyScreen_C_ExecuteUbergraph_ItemTransformKe
 
 // Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature final
+struct alignas(0x08) ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature) == 0x000004, "Wrong alignment on ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature");
+static_assert(alignof(ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature");
 static_assert(sizeof(ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature) == 0x000008, "Wrong size on ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature");
 static_assert(offsetof(ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature, TabId) == 0x000000, "Member 'ItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature::TabId' has a wrong offset!");
 
@@ -101,12 +101,12 @@ static_assert(offsetof(ItemTransformKeyScreen_C_RebuildKeyList, CallFunc_Greater
 
 // Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.SetupKeyList
 // 0x0010 (0x0010 - 0x0000)
-struct ItemTransformKeyScreen_C_SetupKeyList final
+struct alignas(0x08) ItemTransformKeyScreen_C_SetupKeyList final
 {
 public:
 	TDelegate<void(class UFortItem* SelectedItem)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ItemTransformKeyScreen_C_SetupKeyList) == 0x000004, "Wrong alignment on ItemTransformKeyScreen_C_SetupKeyList");
+static_assert(alignof(ItemTransformKeyScreen_C_SetupKeyList) == 0x000008, "Wrong alignment on ItemTransformKeyScreen_C_SetupKeyList");
 static_assert(sizeof(ItemTransformKeyScreen_C_SetupKeyList) == 0x000010, "Wrong size on ItemTransformKeyScreen_C_SetupKeyList");
 static_assert(offsetof(ItemTransformKeyScreen_C_SetupKeyList, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemTransformKeyScreen_C_SetupKeyList::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
@@ -146,8 +146,8 @@ static_assert(sizeof(ItemTransformKeyScreen_C_NavigateToSelectedItem) == 0x00000
 static_assert(offsetof(ItemTransformKeyScreen_C_NavigateToSelectedItem, InItem) == 0x000000, "Member 'ItemTransformKeyScreen_C_NavigateToSelectedItem::InItem' has a wrong offset!");
 
 // Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.Determine Key Types to See
-// 0x000C (0x000C - 0x0000)
-struct ItemTransformKeyScreen_C_Determine_Key_Types_to_See final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) ItemTransformKeyScreen_C_Determine_Key_Types_to_See final
 {
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -156,8 +156,8 @@ public:
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue2;         // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue3;         // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See) == 0x000004, "Wrong alignment on ItemTransformKeyScreen_C_Determine_Key_Types_to_See");
-static_assert(sizeof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See) == 0x00000C, "Wrong size on ItemTransformKeyScreen_C_Determine_Key_Types_to_See");
+static_assert(alignof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See) == 0x000008, "Wrong alignment on ItemTransformKeyScreen_C_Determine_Key_Types_to_See");
+static_assert(sizeof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See) == 0x000010, "Wrong size on ItemTransformKeyScreen_C_Determine_Key_Types_to_See");
 static_assert(offsetof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See, TabNameID) == 0x000000, "Member 'ItemTransformKeyScreen_C_Determine_Key_Types_to_See::TabNameID' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See, RequestType) == 0x000008, "Member 'ItemTransformKeyScreen_C_Determine_Key_Types_to_See::RequestType' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000009, "Member 'ItemTransformKeyScreen_C_Determine_Key_Types_to_See::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
@@ -165,8 +165,8 @@ static_assert(offsetof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See, Call
 static_assert(offsetof(ItemTransformKeyScreen_C_Determine_Key_Types_to_See, CallFunc_EqualEqual_NameName_ReturnValue3) == 0x00000B, "Member 'ItemTransformKeyScreen_C_Determine_Key_Types_to_See::CallFunc_EqualEqual_NameName_ReturnValue3' has a wrong offset!");
 
 // Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.Determine Tab List Title
-// 0x0487 (0x0487 - 0x0000)
-struct alignas(0x487) ItemTransformKeyScreen_C_Determine_Tab_List_Title final
+// 0x0028 (0x0028 - 0x0000)
+struct ItemTransformKeyScreen_C_Determine_Tab_List_Title final
 {
 public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -175,8 +175,8 @@ public:
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue2;         // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue3;         // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformKeyScreen_C_Determine_Tab_List_Title) == 0x000487, "Wrong alignment on ItemTransformKeyScreen_C_Determine_Tab_List_Title");
-static_assert(sizeof(ItemTransformKeyScreen_C_Determine_Tab_List_Title) == 0x000487, "Wrong size on ItemTransformKeyScreen_C_Determine_Tab_List_Title");
+static_assert(alignof(ItemTransformKeyScreen_C_Determine_Tab_List_Title) == 0x000008, "Wrong alignment on ItemTransformKeyScreen_C_Determine_Tab_List_Title");
+static_assert(sizeof(ItemTransformKeyScreen_C_Determine_Tab_List_Title) == 0x000028, "Wrong size on ItemTransformKeyScreen_C_Determine_Tab_List_Title");
 static_assert(offsetof(ItemTransformKeyScreen_C_Determine_Tab_List_Title, TabNameID) == 0x000000, "Member 'ItemTransformKeyScreen_C_Determine_Tab_List_Title::TabNameID' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyScreen_C_Determine_Tab_List_Title, Text) == 0x000008, "Member 'ItemTransformKeyScreen_C_Determine_Tab_List_Title::Text' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyScreen_C_Determine_Tab_List_Title, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000020, "Member 'ItemTransformKeyScreen_C_Determine_Tab_List_Title::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");

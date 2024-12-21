@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TextRotator.TextRotator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0938 - 0x0930)
 class UTextRotator_C final : public UCommonRotator
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0930(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0930(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_TextRotator(int32 EntryPoint);
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UTextRotator_C>();
 	}
 };
-static_assert(alignof(UTextRotator_C) == 0x322CBBB8, "Wrong alignment on UTextRotator_C");
-static_assert(sizeof(UTextRotator_C) == 0x322CBBB8, "Wrong size on UTextRotator_C");
+static_assert(alignof(UTextRotator_C) == 0x000008, "Wrong alignment on UTextRotator_C");
+static_assert(sizeof(UTextRotator_C) == 0x000938, "Wrong size on UTextRotator_C");
 static_assert(offsetof(UTextRotator_C, UberGraphFrame) == 0x000930, "Member 'UTextRotator_C::UberGraphFrame' has a wrong offset!");
 
 }

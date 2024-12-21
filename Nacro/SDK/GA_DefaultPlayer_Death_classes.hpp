@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0008 (0x0BD8 - 0x0BD0)
 class UGA_DefaultPlayer_Death_C final : public UGAB_GenericDeath_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_DefaultPlayer_Death_C;           // 0x0BD0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_DefaultPlayer_Death_C;           // 0x0BD0(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GA_DefaultPlayer_Death(int32 EntryPoint);
@@ -38,8 +38,8 @@ public:
 		return GetDefaultObjImpl<UGA_DefaultPlayer_Death_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_Death_C) == 0x1182EB00, "Wrong alignment on UGA_DefaultPlayer_Death_C");
-static_assert(sizeof(UGA_DefaultPlayer_Death_C) == 0x1182EB00, "Wrong size on UGA_DefaultPlayer_Death_C");
+static_assert(alignof(UGA_DefaultPlayer_Death_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_Death_C");
+static_assert(sizeof(UGA_DefaultPlayer_Death_C) == 0x000BD8, "Wrong size on UGA_DefaultPlayer_Death_C");
 static_assert(offsetof(UGA_DefaultPlayer_Death_C, UberGraphFrame_GA_DefaultPlayer_Death_C) == 0x000BD0, "Member 'UGA_DefaultPlayer_Death_C::UberGraphFrame_GA_DefaultPlayer_Death_C' has a wrong offset!");
 
 }

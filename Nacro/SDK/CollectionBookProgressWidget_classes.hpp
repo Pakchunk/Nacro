@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookProgressWidget.CollectionBookProgressWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x02A8 - 0x0290)
 class UCollectionBookProgressWidget_C final : public UFortCollectionBookProgressWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(Transient, DuplicateTransient)
 	class UBP_FortMaterialProgressBar_C*          BP_FortMaterialProgressBar;                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookProgressWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookProgressWidget_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookProgressWidget_C");
-static_assert(sizeof(UCollectionBookProgressWidget_C) == 0x322CBBB8, "Wrong size on UCollectionBookProgressWidget_C");
+static_assert(alignof(UCollectionBookProgressWidget_C) == 0x000008, "Wrong alignment on UCollectionBookProgressWidget_C");
+static_assert(sizeof(UCollectionBookProgressWidget_C) == 0x0002A8, "Wrong size on UCollectionBookProgressWidget_C");
 static_assert(offsetof(UCollectionBookProgressWidget_C, UberGraphFrame) == 0x000290, "Member 'UCollectionBookProgressWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookProgressWidget_C, BP_FortMaterialProgressBar) == 0x000298, "Member 'UCollectionBookProgressWidget_C::BP_FortMaterialProgressBar' has a wrong offset!");
 static_assert(offsetof(UCollectionBookProgressWidget_C, Image_0) == 0x0002A0, "Member 'UCollectionBookProgressWidget_C::Image_0' has a wrong offset!");

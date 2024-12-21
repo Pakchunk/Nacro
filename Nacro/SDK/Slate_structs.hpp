@@ -129,31 +129,31 @@ enum class EListItemAlignment : uint8
 };
 
 // ScriptStruct Slate.InputChord
-// 0x11827900 (0x11827900 - 0x0000)
-struct alignas(0x11827900) FInputChord final
+// 0x0020 (0x0020 - 0x0000)
+struct FInputChord final
 {
 public:
-	struct FKey                                   Key;                                               // 0x0000(0x11821D80)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bShift : 1;                                        // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCtrl : 1;                                         // 0x0018(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bAlt : 1;                                          // 0x0018(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCmd : 1;                                          // 0x0018(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInputChord) == 0x11827900, "Wrong alignment on FInputChord");
-static_assert(sizeof(FInputChord) == 0x11827900, "Wrong size on FInputChord");
+static_assert(alignof(FInputChord) == 0x000008, "Wrong alignment on FInputChord");
+static_assert(sizeof(FInputChord) == 0x000020, "Wrong size on FInputChord");
 static_assert(offsetof(FInputChord, Key) == 0x000000, "Member 'FInputChord::Key' has a wrong offset!");
 
 // ScriptStruct Slate.Anchors
-// 0x11827900 (0x11827900 - 0x0000)
-struct alignas(0x11827900) FAnchors final
+// 0x0010 (0x0010 - 0x0000)
+struct FAnchors final
 {
 public:
-	struct FVector2D                              Minimum;                                           // 0x0000(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Maximum;                                           // 0x0008(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Minimum;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Maximum;                                           // 0x0008(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnchors) == 0x11827900, "Wrong alignment on FAnchors");
-static_assert(sizeof(FAnchors) == 0x11827900, "Wrong size on FAnchors");
+static_assert(alignof(FAnchors) == 0x000004, "Wrong alignment on FAnchors");
+static_assert(sizeof(FAnchors) == 0x000010, "Wrong size on FAnchors");
 static_assert(offsetof(FAnchors, Minimum) == 0x000000, "Member 'FAnchors::Minimum' has a wrong offset!");
 static_assert(offsetof(FAnchors, Maximum) == 0x000008, "Member 'FAnchors::Maximum' has a wrong offset!");
 

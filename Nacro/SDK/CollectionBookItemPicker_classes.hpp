@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookItemPicker.CollectionBookItemPicker_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x0310 - 0x02B0)
 class UCollectionBookItemPicker_C final : public UFortCollectionBookPicker
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x11821D80)(Transient, DuplicateTransient)
-	struct FDataTableRowHandle                    BackInputActionName;                               // 0x02B8(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x0008)(Transient, DuplicateTransient)
+	struct FDataTableRowHandle                    BackInputActionName;                               // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FText                                   ConfirmSlotItemTitle;                              // 0x02C8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   ConfirmSlotItemMessage;                            // 0x02E0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FDataTableRowHandle                    ConfirmInputActionName;                            // 0x02F8(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ConfirmInputActionName;                            // 0x02F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class UCollectionBookRecycleSlotResultsWidget_C* RecycleSlotItemWidget;                             // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookItemPicker_C>();
 	}
 };
-static_assert(alignof(UCollectionBookItemPicker_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookItemPicker_C");
-static_assert(sizeof(UCollectionBookItemPicker_C) == 0x322CBBB8, "Wrong size on UCollectionBookItemPicker_C");
+static_assert(alignof(UCollectionBookItemPicker_C) == 0x000008, "Wrong alignment on UCollectionBookItemPicker_C");
+static_assert(sizeof(UCollectionBookItemPicker_C) == 0x000310, "Wrong size on UCollectionBookItemPicker_C");
 static_assert(offsetof(UCollectionBookItemPicker_C, UberGraphFrame) == 0x0002B0, "Member 'UCollectionBookItemPicker_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookItemPicker_C, BackInputActionName) == 0x0002B8, "Member 'UCollectionBookItemPicker_C::BackInputActionName' has a wrong offset!");
 static_assert(offsetof(UCollectionBookItemPicker_C, ConfirmSlotItemTitle) == 0x0002C8, "Member 'UCollectionBookItemPicker_C::ConfirmSlotItemTitle' has a wrong offset!");

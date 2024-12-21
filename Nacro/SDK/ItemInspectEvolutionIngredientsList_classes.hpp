@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemInspectEvolutionIngredientsList.ItemInspectEvolutionIngredientsList_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x02B8 - 0x0230)
 class UItemInspectEvolutionIngredientsList_C final : public UUserWidget
 {
 public:
@@ -28,8 +28,8 @@ public:
 	class UCommonTextBlock*                       LevelRequirementText;                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       LevelText;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<struct FFortItemQuantityPair>          IngredientsList;                                   // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FSlateColor                            HaveColor;                                         // 0x0260(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            NotHaveColor;                                      // 0x0288(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            HaveColor;                                         // 0x0260(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            NotHaveColor;                                      // 0x0288(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         HaveQuantity;                                      // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NeedQuantity;                                      // 0x02B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UItemInspectEvolutionIngredientsList_C>();
 	}
 };
-static_assert(alignof(UItemInspectEvolutionIngredientsList_C) == 0x322CBBB8, "Wrong alignment on UItemInspectEvolutionIngredientsList_C");
-static_assert(sizeof(UItemInspectEvolutionIngredientsList_C) == 0x322CBBB8, "Wrong size on UItemInspectEvolutionIngredientsList_C");
+static_assert(alignof(UItemInspectEvolutionIngredientsList_C) == 0x000008, "Wrong alignment on UItemInspectEvolutionIngredientsList_C");
+static_assert(sizeof(UItemInspectEvolutionIngredientsList_C) == 0x0002B8, "Wrong size on UItemInspectEvolutionIngredientsList_C");
 static_assert(offsetof(UItemInspectEvolutionIngredientsList_C, IngredientsListBox) == 0x000230, "Member 'UItemInspectEvolutionIngredientsList_C::IngredientsListBox' has a wrong offset!");
 static_assert(offsetof(UItemInspectEvolutionIngredientsList_C, LevelCheckMarkIcon) == 0x000238, "Member 'UItemInspectEvolutionIngredientsList_C::LevelCheckMarkIcon' has a wrong offset!");
 static_assert(offsetof(UItemInspectEvolutionIngredientsList_C, LevelRequirementText) == 0x000240, "Member 'UItemInspectEvolutionIngredientsList_C::LevelRequirementText' has a wrong offset!");

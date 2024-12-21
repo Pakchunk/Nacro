@@ -36,42 +36,42 @@ static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_ExecuteUbergraph_BP_Fort
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_ExecuteUbergraph_BP_FortExpeditionExpiresWidget, K2Node_Event_IsDesignTime) == 0x000011, "Member 'BP_FortExpeditionExpiresWidget_C_ExecuteUbergraph_BP_FortExpeditionExpiresWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.PreConstruct
-// 0x350030 (0x350030 - 0x0000)
-struct alignas(0x350030) BP_FortExpeditionExpiresWidget_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct BP_FortExpeditionExpiresWidget_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortExpeditionExpiresWidget_C_PreConstruct) == 0x350030, "Wrong alignment on BP_FortExpeditionExpiresWidget_C_PreConstruct");
-static_assert(sizeof(BP_FortExpeditionExpiresWidget_C_PreConstruct) == 0x350030, "Wrong size on BP_FortExpeditionExpiresWidget_C_PreConstruct");
+static_assert(alignof(BP_FortExpeditionExpiresWidget_C_PreConstruct) == 0x000001, "Wrong alignment on BP_FortExpeditionExpiresWidget_C_PreConstruct");
+static_assert(sizeof(BP_FortExpeditionExpiresWidget_C_PreConstruct) == 0x000001, "Wrong size on BP_FortExpeditionExpiresWidget_C_PreConstruct");
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BP_FortExpeditionExpiresWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.SetData
-// 0x080E (0x080E - 0x0000)
-struct alignas(0x80E) BP_FortExpeditionExpiresWidget_C_SetData final
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FortExpeditionExpiresWidget_C_SetData final
 {
 public:
 	class UFortExpeditionItem*                    InItem;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortExpeditionExpiresWidget_C_SetData) == 0x00080E, "Wrong alignment on BP_FortExpeditionExpiresWidget_C_SetData");
-static_assert(sizeof(BP_FortExpeditionExpiresWidget_C_SetData) == 0x00080E, "Wrong size on BP_FortExpeditionExpiresWidget_C_SetData");
+static_assert(alignof(BP_FortExpeditionExpiresWidget_C_SetData) == 0x000008, "Wrong alignment on BP_FortExpeditionExpiresWidget_C_SetData");
+static_assert(sizeof(BP_FortExpeditionExpiresWidget_C_SetData) == 0x000008, "Wrong size on BP_FortExpeditionExpiresWidget_C_SetData");
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_SetData, InItem) == 0x000000, "Member 'BP_FortExpeditionExpiresWidget_C_SetData::InItem' has a wrong offset!");
 
 // Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.Refresh Expiration Timer
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer final
 {
 public:
 	class UFortExpeditionItem*                    Item_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimespan                              CallFunc_Get_Utc_Now_Offset_ReturnValue;           // 0x0008(0x11821300)(NoDestructor, HasGetValueTypeHash)
-	struct FTimespan                              CallFunc_GetRemainingExpeditionExpirationDuration_ReturnValue; // 0x0010(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_Get_Utc_Now_Offset_ReturnValue;           // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_GetRemainingExpeditionExpirationDuration_ReturnValue; // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetTimespanAsText_ReturnValue;            // 0x0018(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
 };
-static_assert(alignof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer) == 0x11821D80, "Wrong alignment on BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer");
-static_assert(sizeof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer) == 0x11821D80, "Wrong size on BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer");
+static_assert(alignof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer) == 0x000008, "Wrong alignment on BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer");
+static_assert(sizeof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer) == 0x000098, "Wrong size on BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer");
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer, Item_0) == 0x000000, "Member 'BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer::Item_0' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_Get_Utc_Now_Offset_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_Get_Utc_Now_Offset_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_GetRemainingExpeditionExpirationDuration_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_GetRemainingExpeditionExpirationDuration_ReturnValue' has a wrong offset!");
@@ -81,19 +81,19 @@ static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_Format_ReturnValue) == 0x000080, "Member 'BP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.Get Utc Now Offset
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset final
 {
 public:
-	struct FTimespan                              ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_GetPlayerControllerUtcNowMcpOffset_ReturnValue; // 0x0020(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_GetPlayerControllerUtcNowMcpOffset_ReturnValue; // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset) == 0x11821300, "Wrong alignment on BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset");
-static_assert(sizeof(BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset) == 0x11821300, "Wrong size on BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset");
+static_assert(alignof(BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset) == 0x000008, "Wrong alignment on BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset");
+static_assert(sizeof(BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset) == 0x000028, "Wrong size on BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset");
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset, ReturnValue) == 0x000000, "Member 'BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset::ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'BP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");

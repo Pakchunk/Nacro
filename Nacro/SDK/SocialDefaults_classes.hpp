@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // Class SocialDefaults.ChatColorSchemeDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x0120 (0x0148 - 0x0028)
 class UChatColorSchemeDataAsset final : public UDataAsset
 {
 public:
-	struct FChatColorScheme                       ChatColorData;                                     // 0x0028(0x33DB4480)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FChatColorScheme                       ChatColorData;                                     // 0x0028(0x0120)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -35,16 +35,16 @@ public:
 		return GetDefaultObjImpl<UChatColorSchemeDataAsset>();
 	}
 };
-static_assert(alignof(UChatColorSchemeDataAsset) == 0x33DB4480, "Wrong alignment on UChatColorSchemeDataAsset");
-static_assert(sizeof(UChatColorSchemeDataAsset) == 0x33DB4480, "Wrong size on UChatColorSchemeDataAsset");
+static_assert(alignof(UChatColorSchemeDataAsset) == 0x000008, "Wrong alignment on UChatColorSchemeDataAsset");
+static_assert(sizeof(UChatColorSchemeDataAsset) == 0x000148, "Wrong size on UChatColorSchemeDataAsset");
 static_assert(offsetof(UChatColorSchemeDataAsset, ChatColorData) == 0x000028, "Member 'UChatColorSchemeDataAsset::ChatColorData' has a wrong offset!");
 
 // Class SocialDefaults.SocialActionButtonStyleDataAsset
-// 0x118278D8 (0x11827900 - 0x0028)
+// 0x02A8 (0x02D0 - 0x0028)
 class USocialActionButtonStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FButtonStyle                           Style;                                             // 0x0028(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           Style;                                             // 0x0028(0x02A8)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -56,16 +56,16 @@ public:
 		return GetDefaultObjImpl<USocialActionButtonStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialActionButtonStyleDataAsset) == 0x11827900, "Wrong alignment on USocialActionButtonStyleDataAsset");
-static_assert(sizeof(USocialActionButtonStyleDataAsset) == 0x11827900, "Wrong size on USocialActionButtonStyleDataAsset");
+static_assert(alignof(USocialActionButtonStyleDataAsset) == 0x000008, "Wrong alignment on USocialActionButtonStyleDataAsset");
+static_assert(sizeof(USocialActionButtonStyleDataAsset) == 0x0002D0, "Wrong size on USocialActionButtonStyleDataAsset");
 static_assert(offsetof(USocialActionButtonStyleDataAsset, Style) == 0x000028, "Member 'USocialActionButtonStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialChatChromeColorSchemeDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x0050 (0x0078 - 0x0028)
 class USocialChatChromeColorSchemeDataAsset final : public UDataAsset
 {
 public:
-	struct FChatChromeColorScheme                 Style;                                             // 0x0028(0x33DB4480)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FChatChromeColorScheme                 Style;                                             // 0x0028(0x0050)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -77,16 +77,17 @@ public:
 		return GetDefaultObjImpl<USocialChatChromeColorSchemeDataAsset>();
 	}
 };
-static_assert(alignof(USocialChatChromeColorSchemeDataAsset) == 0x33DB4480, "Wrong alignment on USocialChatChromeColorSchemeDataAsset");
-static_assert(sizeof(USocialChatChromeColorSchemeDataAsset) == 0x33DB4480, "Wrong size on USocialChatChromeColorSchemeDataAsset");
+static_assert(alignof(USocialChatChromeColorSchemeDataAsset) == 0x000008, "Wrong alignment on USocialChatChromeColorSchemeDataAsset");
+static_assert(sizeof(USocialChatChromeColorSchemeDataAsset) == 0x000078, "Wrong size on USocialChatChromeColorSchemeDataAsset");
 static_assert(offsetof(USocialChatChromeColorSchemeDataAsset, Style) == 0x000028, "Member 'USocialChatChromeColorSchemeDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialChatChromeMarginsDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x0068 (0x0090 - 0x0028)
 class USocialChatChromeMarginsDataAsset final : public UDataAsset
 {
 public:
-	struct FChatChromeMargins                     Style;                                             // 0x0028(0x33DB4480)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FChatChromeMargins                     Style;                                             // 0x0028(0x0064)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -98,16 +99,16 @@ public:
 		return GetDefaultObjImpl<USocialChatChromeMarginsDataAsset>();
 	}
 };
-static_assert(alignof(USocialChatChromeMarginsDataAsset) == 0x33DB4480, "Wrong alignment on USocialChatChromeMarginsDataAsset");
-static_assert(sizeof(USocialChatChromeMarginsDataAsset) == 0x33DB4480, "Wrong size on USocialChatChromeMarginsDataAsset");
+static_assert(alignof(USocialChatChromeMarginsDataAsset) == 0x000008, "Wrong alignment on USocialChatChromeMarginsDataAsset");
+static_assert(sizeof(USocialChatChromeMarginsDataAsset) == 0x000090, "Wrong size on USocialChatChromeMarginsDataAsset");
 static_assert(offsetof(USocialChatChromeMarginsDataAsset, Style) == 0x000028, "Member 'USocialChatChromeMarginsDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialChatChromeStyleDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x0850 (0x0878 - 0x0028)
 class USocialChatChromeStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FChatChromeStyle                       Style;                                             // 0x0028(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
+	struct FChatChromeStyle                       Style;                                             // 0x0028(0x0850)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -119,16 +120,16 @@ public:
 		return GetDefaultObjImpl<USocialChatChromeStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialChatChromeStyleDataAsset) == 0x33DB4480, "Wrong alignment on USocialChatChromeStyleDataAsset");
-static_assert(sizeof(USocialChatChromeStyleDataAsset) == 0x33DB4480, "Wrong size on USocialChatChromeStyleDataAsset");
+static_assert(alignof(USocialChatChromeStyleDataAsset) == 0x000008, "Wrong alignment on USocialChatChromeStyleDataAsset");
+static_assert(sizeof(USocialChatChromeStyleDataAsset) == 0x000878, "Wrong size on USocialChatChromeStyleDataAsset");
 static_assert(offsetof(USocialChatChromeStyleDataAsset, Style) == 0x000028, "Member 'USocialChatChromeStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialChatMarkupStyleDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x0670 (0x0698 - 0x0028)
 class USocialChatMarkupStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FChatMarkupStyle                       Style;                                             // 0x0028(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
+	struct FChatMarkupStyle                       Style;                                             // 0x0028(0x0670)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -140,16 +141,16 @@ public:
 		return GetDefaultObjImpl<USocialChatMarkupStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialChatMarkupStyleDataAsset) == 0x33DB4480, "Wrong alignment on USocialChatMarkupStyleDataAsset");
-static_assert(sizeof(USocialChatMarkupStyleDataAsset) == 0x33DB4480, "Wrong size on USocialChatMarkupStyleDataAsset");
+static_assert(alignof(USocialChatMarkupStyleDataAsset) == 0x000008, "Wrong alignment on USocialChatMarkupStyleDataAsset");
+static_assert(sizeof(USocialChatMarkupStyleDataAsset) == 0x000698, "Wrong size on USocialChatMarkupStyleDataAsset");
 static_assert(offsetof(USocialChatMarkupStyleDataAsset, Style) == 0x000028, "Member 'USocialChatMarkupStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialChatStyleDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x1490 (0x14B8 - 0x0028)
 class USocialChatStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FChatStyle                             Style;                                             // 0x0028(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
+	struct FChatStyle                             Style;                                             // 0x0028(0x1490)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -161,16 +162,16 @@ public:
 		return GetDefaultObjImpl<USocialChatStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialChatStyleDataAsset) == 0x33DB4480, "Wrong alignment on USocialChatStyleDataAsset");
-static_assert(sizeof(USocialChatStyleDataAsset) == 0x33DB4480, "Wrong size on USocialChatStyleDataAsset");
+static_assert(alignof(USocialChatStyleDataAsset) == 0x000008, "Wrong alignment on USocialChatStyleDataAsset");
+static_assert(sizeof(USocialChatStyleDataAsset) == 0x0014B8, "Wrong size on USocialChatStyleDataAsset");
 static_assert(offsetof(USocialChatStyleDataAsset, Style) == 0x000028, "Member 'USocialChatStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialCheckBoxStyleDataAsset
-// 0x11828058 (0x11828080 - 0x0028)
+// 0x05E0 (0x0608 - 0x0028)
 class USocialCheckBoxStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FCheckBoxStyle                         Style;                                             // 0x0028(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FCheckBoxStyle                         Style;                                             // 0x0028(0x05E0)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -182,16 +183,16 @@ public:
 		return GetDefaultObjImpl<USocialCheckBoxStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialCheckBoxStyleDataAsset) == 0x11828080, "Wrong alignment on USocialCheckBoxStyleDataAsset");
-static_assert(sizeof(USocialCheckBoxStyleDataAsset) == 0x11828080, "Wrong size on USocialCheckBoxStyleDataAsset");
+static_assert(alignof(USocialCheckBoxStyleDataAsset) == 0x000008, "Wrong alignment on USocialCheckBoxStyleDataAsset");
+static_assert(sizeof(USocialCheckBoxStyleDataAsset) == 0x000608, "Wrong size on USocialCheckBoxStyleDataAsset");
 static_assert(offsetof(USocialCheckBoxStyleDataAsset, Style) == 0x000028, "Member 'USocialCheckBoxStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialFontStyleDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x02A0 (0x02C8 - 0x0028)
 class USocialFontStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FSocialFontStyle                       Style;                                             // 0x0028(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialFontStyle                       Style;                                             // 0x0028(0x02A0)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -203,16 +204,16 @@ public:
 		return GetDefaultObjImpl<USocialFontStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialFontStyleDataAsset) == 0x33DB4480, "Wrong alignment on USocialFontStyleDataAsset");
-static_assert(sizeof(USocialFontStyleDataAsset) == 0x33DB4480, "Wrong size on USocialFontStyleDataAsset");
+static_assert(alignof(USocialFontStyleDataAsset) == 0x000008, "Wrong alignment on USocialFontStyleDataAsset");
+static_assert(sizeof(USocialFontStyleDataAsset) == 0x0002C8, "Wrong size on USocialFontStyleDataAsset");
 static_assert(offsetof(USocialFontStyleDataAsset, Style) == 0x000028, "Member 'USocialFontStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialListMarginsDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x0200 (0x0228 - 0x0028)
 class USocialListMarginsDataAsset final : public UDataAsset
 {
 public:
-	struct FSocialListMargins                     Style;                                             // 0x0028(0x33DB4480)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSocialListMargins                     Style;                                             // 0x0028(0x0200)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -224,16 +225,16 @@ public:
 		return GetDefaultObjImpl<USocialListMarginsDataAsset>();
 	}
 };
-static_assert(alignof(USocialListMarginsDataAsset) == 0x33DB4480, "Wrong alignment on USocialListMarginsDataAsset");
-static_assert(sizeof(USocialListMarginsDataAsset) == 0x33DB4480, "Wrong size on USocialListMarginsDataAsset");
+static_assert(alignof(USocialListMarginsDataAsset) == 0x000008, "Wrong alignment on USocialListMarginsDataAsset");
+static_assert(sizeof(USocialListMarginsDataAsset) == 0x000228, "Wrong size on USocialListMarginsDataAsset");
 static_assert(offsetof(USocialListMarginsDataAsset, Style) == 0x000028, "Member 'USocialListMarginsDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialListStyleDataAsset
-// 0x33DB4458 (0x33DB4480 - 0x0028)
+// 0x2870 (0x2898 - 0x0028)
 class USocialListStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FSocialListStyle                       Style;                                             // 0x0028(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialListStyle                       Style;                                             // 0x0028(0x2870)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -245,8 +246,8 @@ public:
 		return GetDefaultObjImpl<USocialListStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialListStyleDataAsset) == 0x33DB4480, "Wrong alignment on USocialListStyleDataAsset");
-static_assert(sizeof(USocialListStyleDataAsset) == 0x33DB4480, "Wrong size on USocialListStyleDataAsset");
+static_assert(alignof(USocialListStyleDataAsset) == 0x000008, "Wrong alignment on USocialListStyleDataAsset");
+static_assert(sizeof(USocialListStyleDataAsset) == 0x002898, "Wrong size on USocialListStyleDataAsset");
 static_assert(offsetof(USocialListStyleDataAsset, Style) == 0x000028, "Member 'USocialListStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialProfanityDataAsset
@@ -271,11 +272,11 @@ static_assert(sizeof(USocialProfanityDataAsset) == 0x000038, "Wrong size on USoc
 static_assert(offsetof(USocialProfanityDataAsset, ProfanityData) == 0x000028, "Member 'USocialProfanityDataAsset::ProfanityData' has a wrong offset!");
 
 // Class SocialDefaults.SocialRadioBoxStyleDataAsset
-// 0x11828058 (0x11828080 - 0x0028)
+// 0x05E0 (0x0608 - 0x0028)
 class USocialRadioBoxStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FCheckBoxStyle                         Style;                                             // 0x0028(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FCheckBoxStyle                         Style;                                             // 0x0028(0x05E0)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -287,16 +288,16 @@ public:
 		return GetDefaultObjImpl<USocialRadioBoxStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialRadioBoxStyleDataAsset) == 0x11828080, "Wrong alignment on USocialRadioBoxStyleDataAsset");
-static_assert(sizeof(USocialRadioBoxStyleDataAsset) == 0x11828080, "Wrong size on USocialRadioBoxStyleDataAsset");
+static_assert(alignof(USocialRadioBoxStyleDataAsset) == 0x000008, "Wrong alignment on USocialRadioBoxStyleDataAsset");
+static_assert(sizeof(USocialRadioBoxStyleDataAsset) == 0x000608, "Wrong size on USocialRadioBoxStyleDataAsset");
 static_assert(offsetof(USocialRadioBoxStyleDataAsset, Style) == 0x000028, "Member 'USocialRadioBoxStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialScrollBarStyleDataAsset
-// 0x118278D8 (0x11827900 - 0x0028)
+// 0x0518 (0x0540 - 0x0028)
 class USocialScrollBarStyleDataAsset final : public UDataAsset
 {
 public:
-	struct FScrollBarStyle                        Style;                                             // 0x0028(0x11827900)(Edit, NativeAccessSpecifierPublic)
+	struct FScrollBarStyle                        Style;                                             // 0x0028(0x0518)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -308,16 +309,16 @@ public:
 		return GetDefaultObjImpl<USocialScrollBarStyleDataAsset>();
 	}
 };
-static_assert(alignof(USocialScrollBarStyleDataAsset) == 0x11827900, "Wrong alignment on USocialScrollBarStyleDataAsset");
-static_assert(sizeof(USocialScrollBarStyleDataAsset) == 0x11827900, "Wrong size on USocialScrollBarStyleDataAsset");
+static_assert(alignof(USocialScrollBarStyleDataAsset) == 0x000008, "Wrong alignment on USocialScrollBarStyleDataAsset");
+static_assert(sizeof(USocialScrollBarStyleDataAsset) == 0x000540, "Wrong size on USocialScrollBarStyleDataAsset");
 static_assert(offsetof(USocialScrollBarStyleDataAsset, Style) == 0x000028, "Member 'USocialScrollBarStyleDataAsset::Style' has a wrong offset!");
 
 // Class SocialDefaults.SocialSoundSchemaDataAsset
-// 0x33DB45D8 (0x33DB4600 - 0x0028)
+// 0x0048 (0x0070 - 0x0028)
 class USocialSoundSchemaDataAsset final : public UDataAsset
 {
 public:
-	struct FSocialSoundSchema                     SoundSchema;                                       // 0x0028(0x33DB4600)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSocialSoundSchema                     SoundSchema;                                       // 0x0028(0x0048)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -329,8 +330,8 @@ public:
 		return GetDefaultObjImpl<USocialSoundSchemaDataAsset>();
 	}
 };
-static_assert(alignof(USocialSoundSchemaDataAsset) == 0x33DB4600, "Wrong alignment on USocialSoundSchemaDataAsset");
-static_assert(sizeof(USocialSoundSchemaDataAsset) == 0x33DB4600, "Wrong size on USocialSoundSchemaDataAsset");
+static_assert(alignof(USocialSoundSchemaDataAsset) == 0x000008, "Wrong alignment on USocialSoundSchemaDataAsset");
+static_assert(sizeof(USocialSoundSchemaDataAsset) == 0x000070, "Wrong size on USocialSoundSchemaDataAsset");
 static_assert(offsetof(USocialSoundSchemaDataAsset, SoundSchema) == 0x000028, "Member 'USocialSoundSchemaDataAsset::SoundSchema' has a wrong offset!");
 
 // Class SocialDefaults.SocialStyleDataAsset

@@ -87,14 +87,14 @@ static_assert(sizeof(ChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_66
 static_assert(offsetof(ChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature, bEnteringChat_0) == 0x000000, "Member 'ChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature::bEnteringChat_0' has a wrong offset!");
 
 // Function ChatWidget.ChatWidget_C.BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature
-// 0x0724 (0x0724 - 0x0000)
-struct alignas(0x724) ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature) == 0x000724, "Wrong alignment on ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature) == 0x000724, "Wrong size on ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ChatWidget.ChatWidget_C.Set Chat Visibility
@@ -126,7 +126,7 @@ static_assert(offsetof(ChatWidget_C_Set_Chat_Shortcut_Visibility, Temp_byte_Vari
 static_assert(offsetof(ChatWidget_C_Set_Chat_Shortcut_Visibility, K2Node_Select_Default) == 0x000003, "Member 'ChatWidget_C_Set_Chat_Shortcut_Visibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function ChatWidget.ChatWidget_C.UpdateChatUserListIcon
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct ChatWidget_C_UpdateChatUserListIcon final
 {
 public:
@@ -137,11 +137,11 @@ public:
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue2;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x0020(0x1182EB00)(NoDestructor)
-	struct FSlateBrush                            CallFunc_GetInputActionButtonIcon_ReturnValue;     // 0x0030(0x322CBBB8)()
+	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x0020(0x0010)(NoDestructor)
+	struct FSlateBrush                            CallFunc_GetInputActionButtonIcon_ReturnValue;     // 0x0030(0x0090)()
 };
-static_assert(alignof(ChatWidget_C_UpdateChatUserListIcon) == 0x1182EB00, "Wrong alignment on ChatWidget_C_UpdateChatUserListIcon");
-static_assert(sizeof(ChatWidget_C_UpdateChatUserListIcon) == 0x1182EB00, "Wrong size on ChatWidget_C_UpdateChatUserListIcon");
+static_assert(alignof(ChatWidget_C_UpdateChatUserListIcon) == 0x000008, "Wrong alignment on ChatWidget_C_UpdateChatUserListIcon");
+static_assert(sizeof(ChatWidget_C_UpdateChatUserListIcon) == 0x0000C0, "Wrong size on ChatWidget_C_UpdateChatUserListIcon");
 static_assert(offsetof(ChatWidget_C_UpdateChatUserListIcon, Open) == 0x000000, "Member 'ChatWidget_C_UpdateChatUserListIcon::Open' has a wrong offset!");
 static_assert(offsetof(ChatWidget_C_UpdateChatUserListIcon, Temp_bool_Variable) == 0x000001, "Member 'ChatWidget_C_UpdateChatUserListIcon::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ChatWidget_C_UpdateChatUserListIcon, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ChatWidget_C_UpdateChatUserListIcon::CallFunc_GetContext_ReturnValue' has a wrong offset!");

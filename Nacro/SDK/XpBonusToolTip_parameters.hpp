@@ -18,7 +18,7 @@ namespace SDK::Params
 
 // Function XpBonusToolTip.XpBonusToolTip_C.ExecuteUbergraph_XpBonusToolTip
 // 0x0030 (0x0030 - 0x0000)
-struct alignas(0x18) XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip final
+struct XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -40,7 +40,7 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip) == 0x000018, "Wrong alignment on XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip");
+static_assert(alignof(XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip) == 0x000008, "Wrong alignment on XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip");
 static_assert(sizeof(XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip) == 0x000030, "Wrong size on XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip");
 static_assert(offsetof(XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip, EntryPoint) == 0x000000, "Member 'XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip::EntryPoint' has a wrong offset!");
 static_assert(offsetof(XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip, Temp_bool_Variable) == 0x000004, "Member 'XpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip::Temp_bool_Variable' has a wrong offset!");

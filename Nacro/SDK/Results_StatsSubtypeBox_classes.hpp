@@ -20,18 +20,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_StatsSubtypeBox.Results_StatsSubtypeBox_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0278 - 0x0238)
 class UResults_StatsSubtypeBox_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UBasicGradientFill_C*                   GradientBackground;                                // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageType;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextType;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EFortUIScoreType                              ScoreType;                                         // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             TotalTypeTexture;                                  // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           TotalTypeColor;                                    // 0x0268(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           TotalTypeColor;                                    // 0x0268(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Results_StatsSubtypeBox(int32 EntryPoint);
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UResults_StatsSubtypeBox_C>();
 	}
 };
-static_assert(alignof(UResults_StatsSubtypeBox_C) == 0x322CBBB8, "Wrong alignment on UResults_StatsSubtypeBox_C");
-static_assert(sizeof(UResults_StatsSubtypeBox_C) == 0x322CBBB8, "Wrong size on UResults_StatsSubtypeBox_C");
+static_assert(alignof(UResults_StatsSubtypeBox_C) == 0x000008, "Wrong alignment on UResults_StatsSubtypeBox_C");
+static_assert(sizeof(UResults_StatsSubtypeBox_C) == 0x000278, "Wrong size on UResults_StatsSubtypeBox_C");
 static_assert(offsetof(UResults_StatsSubtypeBox_C, UberGraphFrame) == 0x000238, "Member 'UResults_StatsSubtypeBox_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_StatsSubtypeBox_C, GradientBackground) == 0x000240, "Member 'UResults_StatsSubtypeBox_C::GradientBackground' has a wrong offset!");
 static_assert(offsetof(UResults_StatsSubtypeBox_C, ImageType) == 0x000248, "Member 'UResults_StatsSubtypeBox_C::ImageType' has a wrong offset!");

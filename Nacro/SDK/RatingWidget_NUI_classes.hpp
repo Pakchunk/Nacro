@@ -20,38 +20,39 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RatingWidget_NUI.RatingWidget_NUI_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x15C8 (0x1800 - 0x0238)
 class URatingWidget_NUI_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonNumericTextBlock*                CommonNumericTextRatingValue;                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HorizontalBox;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBox;                                           // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         RatingValue;                                       // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0268(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0268(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	float                                         InterpDuration;                                    // 0x0280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMultiSizeBrush                    MBrush_Silhouette;                                 // 0x0288(0x11827900)(Edit, BlueprintVisible)
-	struct FFortMultiSizeBrush                    MBrush_Chamfer;                                    // 0x05E8(0x11827900)(Edit, BlueprintVisible)
-	struct FFortMultiSizeBrush                    MBrush_Shadow;                                     // 0x0948(0x11827900)(Edit, BlueprintVisible)
-	struct FFortMultiSizeBrush                    MBrush_Icon;                                       // 0x0CA8(0x11827900)(Edit, BlueprintVisible)
+	struct FFortMultiSizeBrush                    MBrush_Silhouette;                                 // 0x0288(0x0360)(Edit, BlueprintVisible)
+	struct FFortMultiSizeBrush                    MBrush_Chamfer;                                    // 0x05E8(0x0360)(Edit, BlueprintVisible)
+	struct FFortMultiSizeBrush                    MBrush_Shadow;                                     // 0x0948(0x0360)(Edit, BlueprintVisible)
+	struct FFortMultiSizeBrush                    MBrush_Icon;                                       // 0x0CA8(0x0360)(Edit, BlueprintVisible)
 	bool                                          OverrideDefaultColor;                              // 0x1008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1009[0x3];                                     // 0x1009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Color_Light;                                       // 0x100C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color_Medium;                                      // 0x101C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color_Dark;                                        // 0x102C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Default_Color_Light;                               // 0x103C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Default_Color_Medium;                              // 0x104C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Default_Color_Dark;                                // 0x105C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMultiSizeBrush                    MBrush_Icon_Alt;                                   // 0x1070(0x11827900)(Edit, BlueprintVisible)
+	struct FLinearColor                           Color_Light;                                       // 0x100C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color_Medium;                                      // 0x101C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color_Dark;                                        // 0x102C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Default_Color_Light;                               // 0x103C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Default_Color_Medium;                              // 0x104C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Default_Color_Dark;                                // 0x105C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_106C[0x4];                                     // 0x106C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortMultiSizeBrush                    MBrush_Icon_Alt;                                   // 0x1070(0x0360)(Edit, BlueprintVisible)
 	bool                                          UseAlternateIcon;                                  // 0x13D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_13D1[0x7];                                     // 0x13D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMultiSizeBrush                    MBrush_Shadow_Alt;                                 // 0x13D8(0x11827900)(Edit, BlueprintVisible)
-	struct FFortMultiSizeMargin                   MMargin_Alt;                                       // 0x1738(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
-	struct FFortMultiSizeMargin                   MMargin;                                           // 0x1798(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
+	struct FFortMultiSizeBrush                    MBrush_Shadow_Alt;                                 // 0x13D8(0x0360)(Edit, BlueprintVisible)
+	struct FFortMultiSizeMargin                   MMargin_Alt;                                       // 0x1738(0x0060)(Edit, BlueprintVisible, NoDestructor)
+	struct FFortMultiSizeMargin                   MMargin;                                           // 0x1798(0x0060)(Edit, BlueprintVisible, NoDestructor)
 	bool                                          ShowTeamPowerRating;                               // 0x17F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	EFortBrushSize                                Brush_Size;                                        // 0x17F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bUseRatingValuesFromPlayer;                        // 0x17FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -80,8 +81,8 @@ public:
 		return GetDefaultObjImpl<URatingWidget_NUI_C>();
 	}
 };
-static_assert(alignof(URatingWidget_NUI_C) == 0x322CBBB8, "Wrong alignment on URatingWidget_NUI_C");
-static_assert(sizeof(URatingWidget_NUI_C) == 0x322CBBB8, "Wrong size on URatingWidget_NUI_C");
+static_assert(alignof(URatingWidget_NUI_C) == 0x000008, "Wrong alignment on URatingWidget_NUI_C");
+static_assert(sizeof(URatingWidget_NUI_C) == 0x001800, "Wrong size on URatingWidget_NUI_C");
 static_assert(offsetof(URatingWidget_NUI_C, UberGraphFrame) == 0x000238, "Member 'URatingWidget_NUI_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URatingWidget_NUI_C, CommonNumericTextRatingValue) == 0x000240, "Member 'URatingWidget_NUI_C::CommonNumericTextRatingValue' has a wrong offset!");
 static_assert(offsetof(URatingWidget_NUI_C, HorizontalBox) == 0x000248, "Member 'URatingWidget_NUI_C::HorizontalBox' has a wrong offset!");

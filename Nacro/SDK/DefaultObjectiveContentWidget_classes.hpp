@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UDefaultObjectiveContentWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UMissionObjectiveProgressBarsManager_C* MissionObjectiveProgressBarsManager;               // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNamedSlot*                             RichTextSlot;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AFortObjectiveBase*                     TrackedObjective;                                  // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UDefaultObjectiveContentWidget_C>();
 	}
 };
-static_assert(alignof(UDefaultObjectiveContentWidget_C) == 0x322CBBB8, "Wrong alignment on UDefaultObjectiveContentWidget_C");
-static_assert(sizeof(UDefaultObjectiveContentWidget_C) == 0x322CBBB8, "Wrong size on UDefaultObjectiveContentWidget_C");
+static_assert(alignof(UDefaultObjectiveContentWidget_C) == 0x000008, "Wrong alignment on UDefaultObjectiveContentWidget_C");
+static_assert(sizeof(UDefaultObjectiveContentWidget_C) == 0x000260, "Wrong size on UDefaultObjectiveContentWidget_C");
 static_assert(offsetof(UDefaultObjectiveContentWidget_C, UberGraphFrame) == 0x000238, "Member 'UDefaultObjectiveContentWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UDefaultObjectiveContentWidget_C, MissionObjectiveProgressBarsManager) == 0x000240, "Member 'UDefaultObjectiveContentWidget_C::MissionObjectiveProgressBarsManager' has a wrong offset!");
 static_assert(offsetof(UDefaultObjectiveContentWidget_C, RichTextSlot) == 0x000248, "Member 'UDefaultObjectiveContentWidget_C::RichTextSlot' has a wrong offset!");

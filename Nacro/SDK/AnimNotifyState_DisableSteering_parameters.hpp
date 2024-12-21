@@ -46,8 +46,8 @@ static_assert(offsetof(AnimNotifyState_DisableSteering_C_Received_NotifyBegin, K
 static_assert(offsetof(AnimNotifyState_DisableSteering_C_Received_NotifyBegin, K2Node_DynamicCast_bSuccess2) == 0x000040, "Member 'AnimNotifyState_DisableSteering_C_Received_NotifyBegin::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function AnimNotifyState_DisableSteering.AnimNotifyState_DisableSteering_C.Received_NotifyEnd
-// 0x00E5 (0x00E5 - 0x0000)
-struct alignas(0xE5) AnimNotifyState_DisableSteering_C_Received_NotifyEnd final
+// 0x0048 (0x0048 - 0x0000)
+struct AnimNotifyState_DisableSteering_C_Received_NotifyEnd final
 {
 public:
 	class USkeletalMeshComponent*                 MeshComp;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 	class APlayerController*                      K2Node_DynamicCast_AsPlayer_Controller;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AnimNotifyState_DisableSteering_C_Received_NotifyEnd) == 0x0000E5, "Wrong alignment on AnimNotifyState_DisableSteering_C_Received_NotifyEnd");
-static_assert(sizeof(AnimNotifyState_DisableSteering_C_Received_NotifyEnd) == 0x0000E5, "Wrong size on AnimNotifyState_DisableSteering_C_Received_NotifyEnd");
+static_assert(alignof(AnimNotifyState_DisableSteering_C_Received_NotifyEnd) == 0x000008, "Wrong alignment on AnimNotifyState_DisableSteering_C_Received_NotifyEnd");
+static_assert(sizeof(AnimNotifyState_DisableSteering_C_Received_NotifyEnd) == 0x000048, "Wrong size on AnimNotifyState_DisableSteering_C_Received_NotifyEnd");
 static_assert(offsetof(AnimNotifyState_DisableSteering_C_Received_NotifyEnd, MeshComp) == 0x000000, "Member 'AnimNotifyState_DisableSteering_C_Received_NotifyEnd::MeshComp' has a wrong offset!");
 static_assert(offsetof(AnimNotifyState_DisableSteering_C_Received_NotifyEnd, Animation) == 0x000008, "Member 'AnimNotifyState_DisableSteering_C_Received_NotifyEnd::Animation' has a wrong offset!");
 static_assert(offsetof(AnimNotifyState_DisableSteering_C_Received_NotifyEnd, ReturnValue) == 0x000010, "Member 'AnimNotifyState_DisableSteering_C_Received_NotifyEnd::ReturnValue' has a wrong offset!");

@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function ScrollingTextButton.ScrollingTextButton_C.ExecuteUbergraph_ScrollingTextButton
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton final
 {
 public:
@@ -33,10 +33,10 @@ public:
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue2;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue2;              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0028(0x1182E980)(ConstParm)
+	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0028(0x00A8)(ConstParm)
 	bool                                          K2Node_ComponentBoundEvent_bUsingGamepad;          // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_Event_NewTriggeredAction;                   // 0x00D8(0x1182EB00)(ConstParm, NoDestructor)
+	struct FDataTableRowHandle                    K2Node_Event_NewTriggeredAction;                   // 0x00D8(0x0010)(ConstParm, NoDestructor)
 	float                                         K2Node_Event_HeldPercent;                          // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_SlateBrush_ReturnValue;        // 0x00ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -44,8 +44,8 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x00EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton) == 0x1182EB00, "Wrong alignment on ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton");
-static_assert(sizeof(ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton) == 0x1182EB00, "Wrong size on ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton");
+static_assert(alignof(ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton) == 0x000008, "Wrong alignment on ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton");
+static_assert(sizeof(ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton) == 0x0000F8, "Wrong size on ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton");
 static_assert(offsetof(ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton, EntryPoint) == 0x000000, "Member 'ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton, K2Node_Event_IsDesignTime) == 0x000004, "Member 'ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -74,36 +74,36 @@ static_assert(sizeof(ScrollingTextButton_C_OnActionProgress) == 0x000004, "Wrong
 static_assert(offsetof(ScrollingTextButton_C_OnActionProgress, HeldPercent) == 0x000000, "Member 'ScrollingTextButton_C_OnActionProgress::HeldPercent' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.OnTriggeredInputActionChanged
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct ScrollingTextButton_C_OnTriggeredInputActionChanged final
 {
 public:
-	struct FDataTableRowHandle                    NewTriggeredAction;                                // 0x0000(0x1182EB00)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FDataTableRowHandle                    NewTriggeredAction;                                // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(ScrollingTextButton_C_OnTriggeredInputActionChanged) == 0x1182EB00, "Wrong alignment on ScrollingTextButton_C_OnTriggeredInputActionChanged");
-static_assert(sizeof(ScrollingTextButton_C_OnTriggeredInputActionChanged) == 0x1182EB00, "Wrong size on ScrollingTextButton_C_OnTriggeredInputActionChanged");
+static_assert(alignof(ScrollingTextButton_C_OnTriggeredInputActionChanged) == 0x000008, "Wrong alignment on ScrollingTextButton_C_OnTriggeredInputActionChanged");
+static_assert(sizeof(ScrollingTextButton_C_OnTriggeredInputActionChanged) == 0x000010, "Wrong size on ScrollingTextButton_C_OnTriggeredInputActionChanged");
 static_assert(offsetof(ScrollingTextButton_C_OnTriggeredInputActionChanged, NewTriggeredAction) == 0x000000, "Member 'ScrollingTextButton_C_OnTriggeredInputActionChanged::NewTriggeredAction' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature final
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature final
 {
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature) == 0x10461A40, "Wrong alignment on ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
-static_assert(sizeof(ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature) == 0x10461A40, "Wrong size on ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+static_assert(alignof(ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature) == 0x000001, "Wrong alignment on ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+static_assert(sizeof(ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature) == 0x000001, "Wrong size on ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
 static_assert(offsetof(ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature, bUsingGamepad) == 0x000000, "Member 'ScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature::bUsingGamepad' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.SetTabLabelInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct ScrollingTextButton_C_SetTabLabelInfo final
 {
 public:
-	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ScrollingTextButton_C_SetTabLabelInfo) == 0x1182E980, "Wrong alignment on ScrollingTextButton_C_SetTabLabelInfo");
-static_assert(sizeof(ScrollingTextButton_C_SetTabLabelInfo) == 0x1182E980, "Wrong size on ScrollingTextButton_C_SetTabLabelInfo");
+static_assert(alignof(ScrollingTextButton_C_SetTabLabelInfo) == 0x000008, "Wrong alignment on ScrollingTextButton_C_SetTabLabelInfo");
+static_assert(sizeof(ScrollingTextButton_C_SetTabLabelInfo) == 0x0000A8, "Wrong size on ScrollingTextButton_C_SetTabLabelInfo");
 static_assert(offsetof(ScrollingTextButton_C_SetTabLabelInfo, TabLabelInfo) == 0x000000, "Member 'ScrollingTextButton_C_SetTabLabelInfo::TabLabelInfo' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.PreConstruct
@@ -139,26 +139,26 @@ static_assert(offsetof(ScrollingTextButton_C_Set_Text, Temp_bool_Variable) == 0x
 static_assert(offsetof(ScrollingTextButton_C_Set_Text, K2Node_Select_Default) == 0x00001C, "Member 'ScrollingTextButton_C_Set_Text::K2Node_Select_Default' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.Set Icon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct ScrollingTextButton_C_Set_Icon final
 {
 public:
-	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x322CBBB8)(Parm)
+	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0090)(Parm)
 };
-static_assert(alignof(ScrollingTextButton_C_Set_Icon) == 0x11827900, "Wrong alignment on ScrollingTextButton_C_Set_Icon");
-static_assert(sizeof(ScrollingTextButton_C_Set_Icon) == 0x11827900, "Wrong size on ScrollingTextButton_C_Set_Icon");
+static_assert(alignof(ScrollingTextButton_C_Set_Icon) == 0x000008, "Wrong alignment on ScrollingTextButton_C_Set_Icon");
+static_assert(sizeof(ScrollingTextButton_C_Set_Icon) == 0x000090, "Wrong size on ScrollingTextButton_C_Set_Icon");
 static_assert(offsetof(ScrollingTextButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'ScrollingTextButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.InitializeButton
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) ScrollingTextButton_C_InitializeButton final
+// 0x0010 (0x0010 - 0x0000)
+struct ScrollingTextButton_C_InitializeButton final
 {
 public:
 	class UObject*                                CallFunc_GetBrushResource_ReturnValue;             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ScrollingTextButton_C_InitializeButton) == 0x10461A40, "Wrong alignment on ScrollingTextButton_C_InitializeButton");
-static_assert(sizeof(ScrollingTextButton_C_InitializeButton) == 0x10461A40, "Wrong size on ScrollingTextButton_C_InitializeButton");
+static_assert(alignof(ScrollingTextButton_C_InitializeButton) == 0x000008, "Wrong alignment on ScrollingTextButton_C_InitializeButton");
+static_assert(sizeof(ScrollingTextButton_C_InitializeButton) == 0x000010, "Wrong size on ScrollingTextButton_C_InitializeButton");
 static_assert(offsetof(ScrollingTextButton_C_InitializeButton, CallFunc_GetBrushResource_ReturnValue) == 0x000000, "Member 'ScrollingTextButton_C_InitializeButton::CallFunc_GetBrushResource_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_InitializeButton, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ScrollingTextButton_C_InitializeButton::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -174,23 +174,23 @@ static_assert(sizeof(ScrollingTextButton_C_UpdateTextAndStyle) == 0x000001, "Wro
 static_assert(offsetof(ScrollingTextButton_C_UpdateTextAndStyle, bUsingGamepad) == 0x000000, "Member 'ScrollingTextButton_C_UpdateTextAndStyle::bUsingGamepad' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.SetControllerStyle
-// 0x001D (0x001D - 0x0000)
-struct alignas(0x1D) ScrollingTextButton_C_SetControllerStyle final
+// 0x0018 (0x0018 - 0x0000)
+struct ScrollingTextButton_C_SetControllerStyle final
 {
 public:
 	class UClass*                                 ControllerInputStyle_0;                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ScrollingTextButton_C_SetControllerStyle) == 0x00001D, "Wrong alignment on ScrollingTextButton_C_SetControllerStyle");
-static_assert(sizeof(ScrollingTextButton_C_SetControllerStyle) == 0x00001D, "Wrong size on ScrollingTextButton_C_SetControllerStyle");
+static_assert(alignof(ScrollingTextButton_C_SetControllerStyle) == 0x000008, "Wrong alignment on ScrollingTextButton_C_SetControllerStyle");
+static_assert(sizeof(ScrollingTextButton_C_SetControllerStyle) == 0x000018, "Wrong size on ScrollingTextButton_C_SetControllerStyle");
 static_assert(offsetof(ScrollingTextButton_C_SetControllerStyle, ControllerInputStyle_0) == 0x000000, "Member 'ScrollingTextButton_C_SetControllerStyle::ControllerInputStyle_0' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_SetControllerStyle, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ScrollingTextButton_C_SetControllerStyle::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_SetControllerStyle, CallFunc_IsUsingGamepad_ReturnValue) == 0x000010, "Member 'ScrollingTextButton_C_SetControllerStyle::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.UpdateText
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) ScrollingTextButton_C_UpdateText final
+// 0x0040 (0x0040 - 0x0000)
+struct ScrollingTextButton_C_UpdateText final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -201,8 +201,8 @@ public:
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0028(0x0018)()
 };
-static_assert(alignof(ScrollingTextButton_C_UpdateText) == 0x10461A40, "Wrong alignment on ScrollingTextButton_C_UpdateText");
-static_assert(sizeof(ScrollingTextButton_C_UpdateText) == 0x10461A40, "Wrong size on ScrollingTextButton_C_UpdateText");
+static_assert(alignof(ScrollingTextButton_C_UpdateText) == 0x000008, "Wrong alignment on ScrollingTextButton_C_UpdateText");
+static_assert(sizeof(ScrollingTextButton_C_UpdateText) == 0x000040, "Wrong size on ScrollingTextButton_C_UpdateText");
 static_assert(offsetof(ScrollingTextButton_C_UpdateText, Temp_bool_Variable) == 0x000000, "Member 'ScrollingTextButton_C_UpdateText::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_UpdateText, CallFunc_GetDisplayText_ReturnValue) == 0x000008, "Member 'ScrollingTextButton_C_UpdateText::CallFunc_GetDisplayText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_UpdateText, CallFunc_TextIsEmpty_ReturnValue) == 0x000020, "Member 'ScrollingTextButton_C_UpdateText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
@@ -236,29 +236,29 @@ static_assert(offsetof(ScrollingTextButton_C_SetMouseKeyboardStyle, CallFunc_Get
 static_assert(offsetof(ScrollingTextButton_C_SetMouseKeyboardStyle, CallFunc_IsUsingGamepad_ReturnValue) == 0x000010, "Member 'ScrollingTextButton_C_SetMouseKeyboardStyle::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.UpdateContentAlignment
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) ScrollingTextButton_C_UpdateContentAlignment final
+// 0x0018 (0x0018 - 0x0000)
+struct ScrollingTextButton_C_UpdateContentAlignment final
 {
 public:
 	class UPanelSlot*                             CallFunc_GetContentSlot_ReturnValue;               // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBorderSlot*                            K2Node_DynamicCast_AsBorder_Slot;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ScrollingTextButton_C_UpdateContentAlignment) == 0x540065, "Wrong alignment on ScrollingTextButton_C_UpdateContentAlignment");
-static_assert(sizeof(ScrollingTextButton_C_UpdateContentAlignment) == 0x540065, "Wrong size on ScrollingTextButton_C_UpdateContentAlignment");
+static_assert(alignof(ScrollingTextButton_C_UpdateContentAlignment) == 0x000008, "Wrong alignment on ScrollingTextButton_C_UpdateContentAlignment");
+static_assert(sizeof(ScrollingTextButton_C_UpdateContentAlignment) == 0x000018, "Wrong size on ScrollingTextButton_C_UpdateContentAlignment");
 static_assert(offsetof(ScrollingTextButton_C_UpdateContentAlignment, CallFunc_GetContentSlot_ReturnValue) == 0x000000, "Member 'ScrollingTextButton_C_UpdateContentAlignment::CallFunc_GetContentSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_UpdateContentAlignment, K2Node_DynamicCast_AsBorder_Slot) == 0x000008, "Member 'ScrollingTextButton_C_UpdateContentAlignment::K2Node_DynamicCast_AsBorder_Slot' has a wrong offset!");
 static_assert(offsetof(ScrollingTextButton_C_UpdateContentAlignment, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ScrollingTextButton_C_UpdateContentAlignment::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.SetContentAlignment
-// 0x001D (0x001D - 0x0000)
-struct alignas(0x1D) ScrollingTextButton_C_SetContentAlignment final
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollingTextButton_C_SetContentAlignment final
 {
 public:
 	EHorizontalAlignment                          ContentAlignment_0;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ScrollingTextButton_C_SetContentAlignment) == 0x00001D, "Wrong alignment on ScrollingTextButton_C_SetContentAlignment");
-static_assert(sizeof(ScrollingTextButton_C_SetContentAlignment) == 0x00001D, "Wrong size on ScrollingTextButton_C_SetContentAlignment");
+static_assert(alignof(ScrollingTextButton_C_SetContentAlignment) == 0x000001, "Wrong alignment on ScrollingTextButton_C_SetContentAlignment");
+static_assert(sizeof(ScrollingTextButton_C_SetContentAlignment) == 0x000001, "Wrong size on ScrollingTextButton_C_SetContentAlignment");
 static_assert(offsetof(ScrollingTextButton_C_SetContentAlignment, ContentAlignment_0) == 0x000000, "Member 'ScrollingTextButton_C_SetContentAlignment::ContentAlignment_0' has a wrong offset!");
 
 // Function ScrollingTextButton.ScrollingTextButton_C.UpdateTextStyle

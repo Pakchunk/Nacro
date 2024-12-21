@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function BuildWatermark.BuildWatermark_C.ExecuteUbergraph_BuildWatermark
-// 0x7E29280 (0x7E29280 - 0x0000)
-struct alignas(0x7E29280) BuildWatermark_C_ExecuteUbergraph_BuildWatermark final
+// 0x0004 (0x0004 - 0x0000)
+struct BuildWatermark_C_ExecuteUbergraph_BuildWatermark final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuildWatermark_C_ExecuteUbergraph_BuildWatermark) == 0x7E29280, "Wrong alignment on BuildWatermark_C_ExecuteUbergraph_BuildWatermark");
-static_assert(sizeof(BuildWatermark_C_ExecuteUbergraph_BuildWatermark) == 0x7E29280, "Wrong size on BuildWatermark_C_ExecuteUbergraph_BuildWatermark");
+static_assert(alignof(BuildWatermark_C_ExecuteUbergraph_BuildWatermark) == 0x000004, "Wrong alignment on BuildWatermark_C_ExecuteUbergraph_BuildWatermark");
+static_assert(sizeof(BuildWatermark_C_ExecuteUbergraph_BuildWatermark) == 0x000004, "Wrong size on BuildWatermark_C_ExecuteUbergraph_BuildWatermark");
 static_assert(offsetof(BuildWatermark_C_ExecuteUbergraph_BuildWatermark, EntryPoint) == 0x000000, "Member 'BuildWatermark_C_ExecuteUbergraph_BuildWatermark::EntryPoint' has a wrong offset!");
 
 // Function BuildWatermark.BuildWatermark_C.Update Watermark

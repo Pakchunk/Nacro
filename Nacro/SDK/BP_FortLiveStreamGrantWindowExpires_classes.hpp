@@ -20,21 +20,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0110 (0x0348 - 0x0238)
 class UBP_FortLiveStreamGrantWindowExpires_C final : public UFortLiveStreamGrantWindowExpires
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       FadeExpirationText;                                // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          Border;                                            // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ExpirationText;                                    // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBox_0;                                         // 0x0258(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 StreamImage;                                       // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            StreamBrush;                                       // 0x0268(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FTimespan                              SimulatedTimespan;                                 // 0x02F8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            StreamBrush;                                       // 0x0268(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FTimespan                              SimulatedTimespan;                                 // 0x02F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   StreamTimerExpired;                                // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   StreamTimerStarted;                                // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FTimerHandle                           SimulatedExpirationTimerHandle;                    // 0x0320(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           SimulatedExpirationTimerHandle;                    // 0x0320(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         CurrentName;                                       // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalNames;                                        // 0x032C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FText>                           Viewers;                                           // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -69,8 +69,8 @@ public:
 		return GetDefaultObjImpl<UBP_FortLiveStreamGrantWindowExpires_C>();
 	}
 };
-static_assert(alignof(UBP_FortLiveStreamGrantWindowExpires_C) == 0x322CBBB8, "Wrong alignment on UBP_FortLiveStreamGrantWindowExpires_C");
-static_assert(sizeof(UBP_FortLiveStreamGrantWindowExpires_C) == 0x322CBBB8, "Wrong size on UBP_FortLiveStreamGrantWindowExpires_C");
+static_assert(alignof(UBP_FortLiveStreamGrantWindowExpires_C) == 0x000008, "Wrong alignment on UBP_FortLiveStreamGrantWindowExpires_C");
+static_assert(sizeof(UBP_FortLiveStreamGrantWindowExpires_C) == 0x000348, "Wrong size on UBP_FortLiveStreamGrantWindowExpires_C");
 static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, UberGraphFrame) == 0x000238, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, FadeExpirationText) == 0x000240, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::FadeExpirationText' has a wrong offset!");
 static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, Border) == 0x000248, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::Border' has a wrong offset!");

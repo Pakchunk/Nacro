@@ -43,7 +43,7 @@ static_assert(offsetof(UGeometryCache, Materials) == 0x000030, "Member 'UGeometr
 static_assert(offsetof(UGeometryCache, Tracks) == 0x000040, "Member 'UGeometryCache::Tracks' has a wrong offset!");
 
 // Class GeometryCache.GeometryCacheActor
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0008 (0x0390 - 0x0388)
 class AGeometryCacheActor final : public AActor
 {
 public:
@@ -62,12 +62,12 @@ public:
 		return GetDefaultObjImpl<AGeometryCacheActor>();
 	}
 };
-static_assert(alignof(AGeometryCacheActor) == 0x11821D80, "Wrong alignment on AGeometryCacheActor");
-static_assert(sizeof(AGeometryCacheActor) == 0x11821D80, "Wrong size on AGeometryCacheActor");
+static_assert(alignof(AGeometryCacheActor) == 0x000008, "Wrong alignment on AGeometryCacheActor");
+static_assert(sizeof(AGeometryCacheActor) == 0x000390, "Wrong size on AGeometryCacheActor");
 static_assert(offsetof(AGeometryCacheActor, GeometryCacheComponent) == 0x000388, "Member 'AGeometryCacheActor::GeometryCacheComponent' has a wrong offset!");
 
 // Class GeometryCache.GeometryCacheComponent
-// 0x0000 (0x11828680 - 0x11828680)
+// 0x0070 (0x07F0 - 0x0780)
 class UGeometryCacheComponent final : public UMeshComponent
 {
 public:
@@ -107,8 +107,8 @@ public:
 		return GetDefaultObjImpl<UGeometryCacheComponent>();
 	}
 };
-static_assert(alignof(UGeometryCacheComponent) == 0x11828680, "Wrong alignment on UGeometryCacheComponent");
-static_assert(sizeof(UGeometryCacheComponent) == 0x11828680, "Wrong size on UGeometryCacheComponent");
+static_assert(alignof(UGeometryCacheComponent) == 0x000010, "Wrong alignment on UGeometryCacheComponent");
+static_assert(sizeof(UGeometryCacheComponent) == 0x0007F0, "Wrong size on UGeometryCacheComponent");
 static_assert(offsetof(UGeometryCacheComponent, GeometryCache) == 0x000778, "Member 'UGeometryCacheComponent::GeometryCache' has a wrong offset!");
 static_assert(offsetof(UGeometryCacheComponent, bRunning) == 0x000780, "Member 'UGeometryCacheComponent::bRunning' has a wrong offset!");
 static_assert(offsetof(UGeometryCacheComponent, bLooping) == 0x000781, "Member 'UGeometryCacheComponent::bLooping' has a wrong offset!");

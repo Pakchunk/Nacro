@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "ProgressBarType_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FortniteUI_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.ExecuteUbergraph_AthenaViewTargetHitPointBar
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar final
 {
 public:
@@ -32,14 +32,14 @@ public:
 	TDelegate<void(float Health)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x002C(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x002C(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bDBNO)>                   K2Node_CreateDelegate_OutputDelegate2;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar) == 0x11827900, "Wrong alignment on AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar");
-static_assert(sizeof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar) == 0x11827900, "Wrong size on AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar");
+static_assert(alignof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar) == 0x000008, "Wrong alignment on AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar");
+static_assert(sizeof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar) == 0x000080, "Wrong size on AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar, EntryPoint) == 0x000000, "Member 'AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
@@ -51,27 +51,27 @@ static_assert(offsetof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaView
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar, K2Node_CreateDelegate_OutputDelegate2) == 0x000070, "Member 'AthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AthenaViewTargetHitPointBar_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaViewTargetHitPointBar_C_Tick) == 0x11827900, "Wrong alignment on AthenaViewTargetHitPointBar_C_Tick");
-static_assert(sizeof(AthenaViewTargetHitPointBar_C_Tick) == 0x11827900, "Wrong size on AthenaViewTargetHitPointBar_C_Tick");
+static_assert(alignof(AthenaViewTargetHitPointBar_C_Tick) == 0x000004, "Wrong alignment on AthenaViewTargetHitPointBar_C_Tick");
+static_assert(sizeof(AthenaViewTargetHitPointBar_C_Tick) == 0x000038, "Wrong size on AthenaViewTargetHitPointBar_C_Tick");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaViewTargetHitPointBar_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaViewTargetHitPointBar_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.PreConstruct
-// 0x00B2 (0x00B2 - 0x0000)
-struct alignas(0xB2) AthenaViewTargetHitPointBar_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaViewTargetHitPointBar_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaViewTargetHitPointBar_C_PreConstruct) == 0x0000B2, "Wrong alignment on AthenaViewTargetHitPointBar_C_PreConstruct");
-static_assert(sizeof(AthenaViewTargetHitPointBar_C_PreConstruct) == 0x0000B2, "Wrong size on AthenaViewTargetHitPointBar_C_PreConstruct");
+static_assert(alignof(AthenaViewTargetHitPointBar_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaViewTargetHitPointBar_C_PreConstruct");
+static_assert(sizeof(AthenaViewTargetHitPointBar_C_PreConstruct) == 0x000001, "Wrong size on AthenaViewTargetHitPointBar_C_PreConstruct");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaViewTargetHitPointBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.UpdateMaxValue
@@ -110,7 +110,7 @@ static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateCurrentValue, CallFun
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateCurrentValue, CallFunc_Conv_FloatToText_ReturnValue) == 0x000010, "Member 'AthenaViewTargetHitPointBar_C_UpdateCurrentValue::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 
 // Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Update Fill Bar
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct AthenaViewTargetHitPointBar_C_Update_Fill_Bar final
 {
 public:
@@ -136,10 +136,10 @@ public:
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0050(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaViewTargetHitPointBar_C_Update_Fill_Bar) == 0x11821300, "Wrong alignment on AthenaViewTargetHitPointBar_C_Update_Fill_Bar");
-static_assert(sizeof(AthenaViewTargetHitPointBar_C_Update_Fill_Bar) == 0x11821300, "Wrong size on AthenaViewTargetHitPointBar_C_Update_Fill_Bar");
+static_assert(alignof(AthenaViewTargetHitPointBar_C_Update_Fill_Bar) == 0x000008, "Wrong alignment on AthenaViewTargetHitPointBar_C_Update_Fill_Bar");
+static_assert(sizeof(AthenaViewTargetHitPointBar_C_Update_Fill_Bar) == 0x000060, "Wrong size on AthenaViewTargetHitPointBar_C_Update_Fill_Bar");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Update_Fill_Bar, Temp_float_Variable) == 0x000000, "Member 'AthenaViewTargetHitPointBar_C_Update_Fill_Bar::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Update_Fill_Bar, CallFunc_Blueprint_GetSizeX_ReturnValue) == 0x000004, "Member 'AthenaViewTargetHitPointBar_C_Update_Fill_Bar::CallFunc_Blueprint_GetSizeX_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Update_Fill_Bar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'AthenaViewTargetHitPointBar_C_Update_Fill_Bar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
@@ -172,7 +172,7 @@ static_assert(sizeof(AthenaViewTargetHitPointBar_C_UpdateCurrentValueWithoutReas
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateCurrentValueWithoutReason, Current) == 0x000000, "Member 'AthenaViewTargetHitPointBar_C_UpdateCurrentValueWithoutReason::Current' has a wrong offset!");
 
 // Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Initialize Bar
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct AthenaViewTargetHitPointBar_C_Initialize_Bar final
 {
 public:
@@ -183,34 +183,35 @@ public:
 	class UClass*                                 Temp_class_Variable3;                              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable2;                               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0034(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0044(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0024(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0034(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0044(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable3;                               // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable4;                             // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable5;                             // 0x0068(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable6;                             // 0x0078(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable4;                             // 0x0058(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable5;                             // 0x0068(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable6;                             // 0x0078(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable4;                               // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable7;                             // 0x008C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable8;                             // 0x009C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable9;                             // 0x00AC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00BC(0x322CBBB8)(NoDestructor)
+	struct FLinearColor                           Temp_struct_Variable7;                             // 0x008C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable8;                             // 0x009C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable9;                             // 0x00AC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00BC(0x0010)(NoDestructor)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Temp_object_Variable;                              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable2;                             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable3;                             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable5;                               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable10;                            // 0x00F4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable11;                            // 0x0104(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable12;                            // 0x0114(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable10;                            // 0x00F4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable11;                            // 0x0104(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable12;                            // 0x0114(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable6;                               // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable13;                            // 0x0128(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable14;                            // 0x0138(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable15;                            // 0x0148(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable13;                            // 0x0128(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable14;                            // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable15;                            // 0x0148(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EProgressBarType                              Temp_byte_Variable7;                               // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -220,16 +221,17 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Blueprint_GetSizeY_ReturnValue;           // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0184(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0184(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select2_Default;                            // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             K2Node_Select3_Default;                            // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select4_Default;                            // 0x01A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select5_Default;                            // 0x01B8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select6_Default;                            // 0x01C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select7_Default;                            // 0x01D8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select4_Default;                            // 0x01A8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select5_Default;                            // 0x01B8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select6_Default;                            // 0x01C8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select7_Default;                            // 0x01D8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaViewTargetHitPointBar_C_Initialize_Bar) == 0x322CBBB8, "Wrong alignment on AthenaViewTargetHitPointBar_C_Initialize_Bar");
-static_assert(sizeof(AthenaViewTargetHitPointBar_C_Initialize_Bar) == 0x322CBBB8, "Wrong size on AthenaViewTargetHitPointBar_C_Initialize_Bar");
+static_assert(alignof(AthenaViewTargetHitPointBar_C_Initialize_Bar) == 0x000008, "Wrong alignment on AthenaViewTargetHitPointBar_C_Initialize_Bar");
+static_assert(sizeof(AthenaViewTargetHitPointBar_C_Initialize_Bar) == 0x0001E8, "Wrong size on AthenaViewTargetHitPointBar_C_Initialize_Bar");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Initialize_Bar, Temp_byte_Variable) == 0x000000, "Member 'AthenaViewTargetHitPointBar_C_Initialize_Bar::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Initialize_Bar, Temp_class_Variable) == 0x000008, "Member 'AthenaViewTargetHitPointBar_C_Initialize_Bar::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Initialize_Bar, Temp_class_Variable2) == 0x000010, "Member 'AthenaViewTargetHitPointBar_C_Initialize_Bar::Temp_class_Variable2' has a wrong offset!");
@@ -303,8 +305,8 @@ static_assert(offsetof(AthenaViewTargetHitPointBar_C_Update, CallFunc_NearlyEqua
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_Update, CallFunc_Lerp_ReturnValue) == 0x000004, "Member 'AthenaViewTargetHitPointBar_C_Update::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 
 // Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.UpdateVolatileForUpdate
-// 0x0063 (0x0063 - 0x0000)
-struct alignas(0x63) AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate final
+// 0x000C (0x000C - 0x0000)
+struct AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate final
 {
 public:
 	bool                                          NewVolatile;                                       // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -314,8 +316,8 @@ public:
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate) == 0x000063, "Wrong alignment on AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate");
-static_assert(sizeof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate) == 0x000063, "Wrong size on AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate");
+static_assert(alignof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate) == 0x000004, "Wrong alignment on AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate");
+static_assert(sizeof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate) == 0x00000C, "Wrong size on AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate, NewVolatile) == 0x000000, "Member 'AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate::NewVolatile' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate, Temp_byte_Variable) == 0x000001, "Member 'AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate, K2Node_Select_Default) == 0x000004, "Member 'AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate::K2Node_Select_Default' has a wrong offset!");
@@ -323,8 +325,8 @@ static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate, Ca
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000009, "Member 'AthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
 
 // Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.UpdateDBNOState
-// 0x001D (0x001D - 0x0000)
-struct alignas(0x1D) AthenaViewTargetHitPointBar_C_UpdateDBNOState final
+// 0x0018 (0x0018 - 0x0000)
+struct AthenaViewTargetHitPointBar_C_UpdateDBNOState final
 {
 public:
 	bool                                          IsDBNO;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -333,8 +335,8 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaViewTargetHitPointBar_C_UpdateDBNOState) == 0x00001D, "Wrong alignment on AthenaViewTargetHitPointBar_C_UpdateDBNOState");
-static_assert(sizeof(AthenaViewTargetHitPointBar_C_UpdateDBNOState) == 0x00001D, "Wrong size on AthenaViewTargetHitPointBar_C_UpdateDBNOState");
+static_assert(alignof(AthenaViewTargetHitPointBar_C_UpdateDBNOState) == 0x000008, "Wrong alignment on AthenaViewTargetHitPointBar_C_UpdateDBNOState");
+static_assert(sizeof(AthenaViewTargetHitPointBar_C_UpdateDBNOState) == 0x000018, "Wrong size on AthenaViewTargetHitPointBar_C_UpdateDBNOState");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateDBNOState, IsDBNO) == 0x000000, "Member 'AthenaViewTargetHitPointBar_C_UpdateDBNOState::IsDBNO' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateDBNOState, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x000001, "Member 'AthenaViewTargetHitPointBar_C_UpdateDBNOState::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaViewTargetHitPointBar_C_UpdateDBNOState, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'AthenaViewTargetHitPointBar_C_UpdateDBNOState::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");

@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RadialPicker.RadialPicker_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C0 (0x02F8 - 0x0238)
 class URadialPicker_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageRadialPointer;                                // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -91,8 +91,8 @@ public:
 		return GetDefaultObjImpl<URadialPicker_C>();
 	}
 };
-static_assert(alignof(URadialPicker_C) == 0x322CBBB8, "Wrong alignment on URadialPicker_C");
-static_assert(sizeof(URadialPicker_C) == 0x322CBBB8, "Wrong size on URadialPicker_C");
+static_assert(alignof(URadialPicker_C) == 0x000008, "Wrong alignment on URadialPicker_C");
+static_assert(sizeof(URadialPicker_C) == 0x0002F8, "Wrong size on URadialPicker_C");
 static_assert(offsetof(URadialPicker_C, UberGraphFrame) == 0x000238, "Member 'URadialPicker_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URadialPicker_C, CanvasPanel_0) == 0x000240, "Member 'URadialPicker_C::CanvasPanel_0' has a wrong offset!");
 static_assert(offsetof(URadialPicker_C, Image_0) == 0x000248, "Member 'URadialPicker_C::Image_0' has a wrong offset!");

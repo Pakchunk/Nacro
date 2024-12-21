@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LoginResultWIdget.LoginResultWIdget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0418 - 0x03E0)
 class ULoginResultWIdget_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UCommonLazyImage*                       CommonLazyImage_0;                                 // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ContinueButton;                                    // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       DescriptionText;                                   // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<ULoginResultWIdget_C>();
 	}
 };
-static_assert(alignof(ULoginResultWIdget_C) == 0x322CBBB8, "Wrong alignment on ULoginResultWIdget_C");
-static_assert(sizeof(ULoginResultWIdget_C) == 0x322CBBB8, "Wrong size on ULoginResultWIdget_C");
+static_assert(alignof(ULoginResultWIdget_C) == 0x000008, "Wrong alignment on ULoginResultWIdget_C");
+static_assert(sizeof(ULoginResultWIdget_C) == 0x000418, "Wrong size on ULoginResultWIdget_C");
 static_assert(offsetof(ULoginResultWIdget_C, UberGraphFrame) == 0x0003E0, "Member 'ULoginResultWIdget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULoginResultWIdget_C, CommonLazyImage_0) == 0x0003E8, "Member 'ULoginResultWIdget_C::CommonLazyImage_0' has a wrong offset!");
 static_assert(offsetof(ULoginResultWIdget_C, ContinueButton) == 0x0003F0, "Member 'ULoginResultWIdget_C::ContinueButton' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_InteractUse.GA_DefaultPlayer_InteractUse_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0008 (0x0A48 - 0x0A40)
 class UGA_DefaultPlayer_InteractUse_C final : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GA_DefaultPlayer_InteractUse(int32 EntryPoint);
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UGA_DefaultPlayer_InteractUse_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_InteractUse_C) == 0x1182EB00, "Wrong alignment on UGA_DefaultPlayer_InteractUse_C");
-static_assert(sizeof(UGA_DefaultPlayer_InteractUse_C) == 0x1182EB00, "Wrong size on UGA_DefaultPlayer_InteractUse_C");
+static_assert(alignof(UGA_DefaultPlayer_InteractUse_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_InteractUse_C");
+static_assert(sizeof(UGA_DefaultPlayer_InteractUse_C) == 0x000A48, "Wrong size on UGA_DefaultPlayer_InteractUse_C");
 static_assert(offsetof(UGA_DefaultPlayer_InteractUse_C, UberGraphFrame) == 0x000A40, "Member 'UGA_DefaultPlayer_InteractUse_C::UberGraphFrame' has a wrong offset!");
 
 }

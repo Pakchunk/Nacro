@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_Commando_IncendiaryRoundsDOT.GCN_Commando_IncendiaryRoundsDOT_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0008 (0x0470 - 0x0468)
 class AGCN_Commando_IncendiaryRoundsDOT_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0468(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0468(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_GCN_Commando_IncendiaryRoundsDOT(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 		return GetDefaultObjImpl<AGCN_Commando_IncendiaryRoundsDOT_C>();
 	}
 };
-static_assert(alignof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x11821D80, "Wrong alignment on AGCN_Commando_IncendiaryRoundsDOT_C");
-static_assert(sizeof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x11821D80, "Wrong size on AGCN_Commando_IncendiaryRoundsDOT_C");
+static_assert(alignof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x000008, "Wrong alignment on AGCN_Commando_IncendiaryRoundsDOT_C");
+static_assert(sizeof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x000470, "Wrong size on AGCN_Commando_IncendiaryRoundsDOT_C");
 static_assert(offsetof(AGCN_Commando_IncendiaryRoundsDOT_C, UberGraphFrame) == 0x000468, "Member 'AGCN_Commando_IncendiaryRoundsDOT_C::UberGraphFrame' has a wrong offset!");
 
 }

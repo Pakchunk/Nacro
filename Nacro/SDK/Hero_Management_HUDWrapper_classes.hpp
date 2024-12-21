@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Hero_Management_HUDWrapper.Hero_Management_HUDWrapper_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0258 - 0x0240)
 class UHero_Management_HUDWrapper_C final : public UFortUserWidget
 {
 public:
@@ -35,8 +35,8 @@ public:
 		return GetDefaultObjImpl<UHero_Management_HUDWrapper_C>();
 	}
 };
-static_assert(alignof(UHero_Management_HUDWrapper_C) == 0x322CBBB8, "Wrong alignment on UHero_Management_HUDWrapper_C");
-static_assert(sizeof(UHero_Management_HUDWrapper_C) == 0x322CBBB8, "Wrong size on UHero_Management_HUDWrapper_C");
+static_assert(alignof(UHero_Management_HUDWrapper_C) == 0x000008, "Wrong alignment on UHero_Management_HUDWrapper_C");
+static_assert(sizeof(UHero_Management_HUDWrapper_C) == 0x000258, "Wrong size on UHero_Management_HUDWrapper_C");
 static_assert(offsetof(UHero_Management_HUDWrapper_C, Fill) == 0x000240, "Member 'UHero_Management_HUDWrapper_C::Fill' has a wrong offset!");
 static_assert(offsetof(UHero_Management_HUDWrapper_C, Frame) == 0x000248, "Member 'UHero_Management_HUDWrapper_C::Frame' has a wrong offset!");
 static_assert(offsetof(UHero_Management_HUDWrapper_C, Pattern) == 0x000250, "Member 'UHero_Management_HUDWrapper_C::Pattern' has a wrong offset!");

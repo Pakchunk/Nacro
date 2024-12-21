@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabGamePadConfig.TabGamePadConfig_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x02D0 - 0x0288)
 class UTabGamePadConfig_C final : public UFortGameOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x0008)(Transient, DuplicateTransient)
 	class URotatorSelector_C*                     ControllerPlatformConfig;                          // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URotatorSelector_C*                     GamepadConfig;                                     // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UGamepadMappingInfo_C*                  GamepadMappingInfo;                                // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<UTabGamePadConfig_C>();
 	}
 };
-static_assert(alignof(UTabGamePadConfig_C) == 0x322CBBB8, "Wrong alignment on UTabGamePadConfig_C");
-static_assert(sizeof(UTabGamePadConfig_C) == 0x322CBBB8, "Wrong size on UTabGamePadConfig_C");
+static_assert(alignof(UTabGamePadConfig_C) == 0x000008, "Wrong alignment on UTabGamePadConfig_C");
+static_assert(sizeof(UTabGamePadConfig_C) == 0x0002D0, "Wrong size on UTabGamePadConfig_C");
 static_assert(offsetof(UTabGamePadConfig_C, UberGraphFrame) == 0x000288, "Member 'UTabGamePadConfig_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTabGamePadConfig_C, ControllerPlatformConfig) == 0x000290, "Member 'UTabGamePadConfig_C::ControllerPlatformConfig' has a wrong offset!");
 static_assert(offsetof(UTabGamePadConfig_C, GamepadConfig) == 0x000298, "Member 'UTabGamePadConfig_C::GamepadConfig' has a wrong offset!");

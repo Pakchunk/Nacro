@@ -20,17 +20,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemDetailsStackCounter.ItemDetailsStackCounter_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0660 (0x0898 - 0x0238)
 class UItemDetailsStackCounter_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class USizeBox*                               _SizeBox_;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderBase;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextCounter;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortMultiSizeBrush                    MultiSizeBase;                                     // 0x0258(0x11827900)(Edit, BlueprintVisible)
-	struct FFortMultiSizeFont                     MultiSizeFont;                                     // 0x05B8(0x11827900)(Edit, BlueprintVisible)
-	struct FFortMultiSizeMargin                   MultiSizeMargin;                                   // 0x0828(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
+	struct FFortMultiSizeBrush                    MultiSizeBase;                                     // 0x0258(0x0360)(Edit, BlueprintVisible)
+	struct FFortMultiSizeFont                     MultiSizeFont;                                     // 0x05B8(0x0270)(Edit, BlueprintVisible)
+	struct FFortMultiSizeMargin                   MultiSizeMargin;                                   // 0x0828(0x0060)(Edit, BlueprintVisible, NoDestructor)
 	EFortBrushSize                                Brush_Size;                                        // 0x0888(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_889[0x3];                                      // 0x0889(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Count;                                             // 0x088C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -55,8 +55,8 @@ public:
 		return GetDefaultObjImpl<UItemDetailsStackCounter_C>();
 	}
 };
-static_assert(alignof(UItemDetailsStackCounter_C) == 0x322CBBB8, "Wrong alignment on UItemDetailsStackCounter_C");
-static_assert(sizeof(UItemDetailsStackCounter_C) == 0x322CBBB8, "Wrong size on UItemDetailsStackCounter_C");
+static_assert(alignof(UItemDetailsStackCounter_C) == 0x000008, "Wrong alignment on UItemDetailsStackCounter_C");
+static_assert(sizeof(UItemDetailsStackCounter_C) == 0x000898, "Wrong size on UItemDetailsStackCounter_C");
 static_assert(offsetof(UItemDetailsStackCounter_C, UberGraphFrame) == 0x000238, "Member 'UItemDetailsStackCounter_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemDetailsStackCounter_C, _SizeBox_) == 0x000240, "Member 'UItemDetailsStackCounter_C::_SizeBox_' has a wrong offset!");
 static_assert(offsetof(UItemDetailsStackCounter_C, BorderBase) == 0x000248, "Member 'UItemDetailsStackCounter_C::BorderBase' has a wrong offset!");

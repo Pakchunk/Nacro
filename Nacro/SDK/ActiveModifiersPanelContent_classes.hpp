@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ActiveModifiersPanelContent.ActiveModifiersPanelContent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UActiveModifiersPanelContent_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_0;                                           // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMissionDetailsModifierList_C*          MissionDetailsModifierList;                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UActiveModifiersPanelContent_C>();
 	}
 };
-static_assert(alignof(UActiveModifiersPanelContent_C) == 0x322CBBB8, "Wrong alignment on UActiveModifiersPanelContent_C");
-static_assert(sizeof(UActiveModifiersPanelContent_C) == 0x322CBBB8, "Wrong size on UActiveModifiersPanelContent_C");
+static_assert(alignof(UActiveModifiersPanelContent_C) == 0x000008, "Wrong alignment on UActiveModifiersPanelContent_C");
+static_assert(sizeof(UActiveModifiersPanelContent_C) == 0x000250, "Wrong size on UActiveModifiersPanelContent_C");
 static_assert(offsetof(UActiveModifiersPanelContent_C, UberGraphFrame) == 0x000238, "Member 'UActiveModifiersPanelContent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UActiveModifiersPanelContent_C, Image_0) == 0x000240, "Member 'UActiveModifiersPanelContent_C::Image_0' has a wrong offset!");
 static_assert(offsetof(UActiveModifiersPanelContent_C, MissionDetailsModifierList) == 0x000248, "Member 'UActiveModifiersPanelContent_C::MissionDetailsModifierList' has a wrong offset!");

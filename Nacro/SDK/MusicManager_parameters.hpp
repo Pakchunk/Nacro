@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function MusicManager.MusicManager_C.ExecuteUbergraph_MusicManager
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x02E0 (0x02E0 - 0x0000)
 struct MusicManager_C_ExecuteUbergraph_MusicManager final
 {
 public:
@@ -129,7 +129,7 @@ public:
 	float                                         CallFunc_GetEventHeatPercent_ReturnValue4;         // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortDayPhase                                 Temp_byte_Variable2;                               // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0210(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0210(0x0008)(NoDestructor)
 	class USoundBase*                             K2Node_Select5_Default;                            // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Temp_object_Variable5;                             // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_MakeLiteralInt_ReturnValue4;              // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -190,8 +190,8 @@ public:
 	uint8                                         Pad_2D2[0x6];                                      // 0x02D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             K2Node_Select16_Default;                           // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x11821D80, "Wrong alignment on MusicManager_C_ExecuteUbergraph_MusicManager");
-static_assert(sizeof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x11821D80, "Wrong size on MusicManager_C_ExecuteUbergraph_MusicManager");
+static_assert(alignof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x000008, "Wrong alignment on MusicManager_C_ExecuteUbergraph_MusicManager");
+static_assert(sizeof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x0002E0, "Wrong size on MusicManager_C_ExecuteUbergraph_MusicManager");
 static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, EntryPoint) == 0x000000, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000004, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000008, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");

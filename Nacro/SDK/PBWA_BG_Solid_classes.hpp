@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_BG_Solid.PBWA_BG_Solid_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0000 (0x10B0 - 0x10B0)
 class APBWA_BG_Solid_C final : public ABuildingWall
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<APBWA_BG_Solid_C>();
 	}
 };
-static_assert(alignof(APBWA_BG_Solid_C) == 0x1182A000, "Wrong alignment on APBWA_BG_Solid_C");
-static_assert(sizeof(APBWA_BG_Solid_C) == 0x1182A000, "Wrong size on APBWA_BG_Solid_C");
+static_assert(alignof(APBWA_BG_Solid_C) == 0x000010, "Wrong alignment on APBWA_BG_Solid_C");
+static_assert(sizeof(APBWA_BG_Solid_C) == 0x0010B0, "Wrong size on APBWA_BG_Solid_C");
 
 }
 

@@ -21,9 +21,9 @@ namespace SDK
 {
 
 // Class EpicCMSUIFramework.EpicCMSScreenBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x0458 - 0x03E0)
 #pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UEpicCMSScreenBase : public UCommonActivatablePanel
+class alignas(0x08) UEpicCMSScreenBase : public UCommonActivatablePanel
 {
 public:
 	class FString                                 TileSetFieldName;                                  // 0x03E0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -43,15 +43,15 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UEpicCMSScreenBase) == 0x322CBBB8, "Wrong alignment on UEpicCMSScreenBase");
-static_assert(sizeof(UEpicCMSScreenBase) == 0x322CBBB8, "Wrong size on UEpicCMSScreenBase");
+static_assert(alignof(UEpicCMSScreenBase) == 0x000008, "Wrong alignment on UEpicCMSScreenBase");
+static_assert(sizeof(UEpicCMSScreenBase) == 0x000458, "Wrong size on UEpicCMSScreenBase");
 static_assert(offsetof(UEpicCMSScreenBase, TileSetFieldName) == 0x0003E0, "Member 'UEpicCMSScreenBase::TileSetFieldName' has a wrong offset!");
 static_assert(offsetof(UEpicCMSScreenBase, TileTypeToTileClassDataTable) == 0x0003F0, "Member 'UEpicCMSScreenBase::TileTypeToTileClassDataTable' has a wrong offset!");
 static_assert(offsetof(UEpicCMSScreenBase, LayoutErrorClass) == 0x000410, "Member 'UEpicCMSScreenBase::LayoutErrorClass' has a wrong offset!");
 static_assert(offsetof(UEpicCMSScreenBase, LayoutTypeToLayoutClassDataTable) == 0x000430, "Member 'UEpicCMSScreenBase::LayoutTypeToLayoutClassDataTable' has a wrong offset!");
 
 // Class EpicCMSUIFramework.EpicCMSTileBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0118 (0x09B8 - 0x08A0)
 class UEpicCMSTileBase final : public UCommonButton
 {
 public:
@@ -82,8 +82,8 @@ public:
 		return GetDefaultObjImpl<UEpicCMSTileBase>();
 	}
 };
-static_assert(alignof(UEpicCMSTileBase) == 0x322CBBB8, "Wrong alignment on UEpicCMSTileBase");
-static_assert(sizeof(UEpicCMSTileBase) == 0x322CBBB8, "Wrong size on UEpicCMSTileBase");
+static_assert(alignof(UEpicCMSTileBase) == 0x000008, "Wrong alignment on UEpicCMSTileBase");
+static_assert(sizeof(UEpicCMSTileBase) == 0x0009B8, "Wrong size on UEpicCMSTileBase");
 static_assert(offsetof(UEpicCMSTileBase, DefaultTitleTextStyle) == 0x0008A8, "Member 'UEpicCMSTileBase::DefaultTitleTextStyle' has a wrong offset!");
 static_assert(offsetof(UEpicCMSTileBase, FeaturedTitleTextStyle) == 0x0008B0, "Member 'UEpicCMSTileBase::FeaturedTitleTextStyle' has a wrong offset!");
 static_assert(offsetof(UEpicCMSTileBase, Title) == 0x0008B8, "Member 'UEpicCMSTileBase::Title' has a wrong offset!");
@@ -96,7 +96,7 @@ static_assert(offsetof(UEpicCMSTileBase, SubtitleTextBlock) == 0x0009A8, "Member
 static_assert(offsetof(UEpicCMSTileBase, EyebrowTextBlock) == 0x0009B0, "Member 'UEpicCMSTileBase::EyebrowTextBlock' has a wrong offset!");
 
 // Class EpicCMSUIFramework.EpicCMSLayoutBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x0298 - 0x0230)
 class UEpicCMSLayoutBase final : public UUserWidget
 {
 public:
@@ -114,8 +114,8 @@ public:
 		return GetDefaultObjImpl<UEpicCMSLayoutBase>();
 	}
 };
-static_assert(alignof(UEpicCMSLayoutBase) == 0x322CBBB8, "Wrong alignment on UEpicCMSLayoutBase");
-static_assert(sizeof(UEpicCMSLayoutBase) == 0x322CBBB8, "Wrong size on UEpicCMSLayoutBase");
+static_assert(alignof(UEpicCMSLayoutBase) == 0x000008, "Wrong alignment on UEpicCMSLayoutBase");
+static_assert(sizeof(UEpicCMSLayoutBase) == 0x000298, "Wrong size on UEpicCMSLayoutBase");
 static_assert(offsetof(UEpicCMSLayoutBase, CarouselSlotDescriptions) == 0x000230, "Member 'UEpicCMSLayoutBase::CarouselSlotDescriptions' has a wrong offset!");
 static_assert(offsetof(UEpicCMSLayoutBase, CarouselClass) == 0x000240, "Member 'UEpicCMSLayoutBase::CarouselClass' has a wrong offset!");
 
@@ -145,12 +145,12 @@ static_assert(offsetof(UEpicCMSManager, CmsEndpointOverride) == 0x0000A0, "Membe
 static_assert(offsetof(UEpicCMSManager, bRefreshing) == 0x0000B0, "Member 'UEpicCMSManager::bRefreshing' has a wrong offset!");
 
 // Class EpicCMSUIFramework.EpicCMSTileCarousel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0280 - 0x0230)
 class UEpicCMSTileCarousel final : public UUserWidget
 {
 public:
-	struct FSlateSound                            PreviousButtonSound;                               // 0x0230(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FSlateSound                            NextButtonSound;                                   // 0x0248(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FSlateSound                            PreviousButtonSound;                               // 0x0230(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FSlateSound                            NextButtonSound;                                   // 0x0248(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	class UCommonWidgetCarousel*                  Carousel;                                          // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UWidget*                                NextPageButton;                                    // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UWidget*                                PreviousPageButton;                                // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -177,8 +177,8 @@ public:
 		return GetDefaultObjImpl<UEpicCMSTileCarousel>();
 	}
 };
-static_assert(alignof(UEpicCMSTileCarousel) == 0x322CBBB8, "Wrong alignment on UEpicCMSTileCarousel");
-static_assert(sizeof(UEpicCMSTileCarousel) == 0x322CBBB8, "Wrong size on UEpicCMSTileCarousel");
+static_assert(alignof(UEpicCMSTileCarousel) == 0x000008, "Wrong alignment on UEpicCMSTileCarousel");
+static_assert(sizeof(UEpicCMSTileCarousel) == 0x000280, "Wrong size on UEpicCMSTileCarousel");
 static_assert(offsetof(UEpicCMSTileCarousel, PreviousButtonSound) == 0x000230, "Member 'UEpicCMSTileCarousel::PreviousButtonSound' has a wrong offset!");
 static_assert(offsetof(UEpicCMSTileCarousel, NextButtonSound) == 0x000248, "Member 'UEpicCMSTileCarousel::NextButtonSound' has a wrong offset!");
 static_assert(offsetof(UEpicCMSTileCarousel, Carousel) == 0x000260, "Member 'UEpicCMSTileCarousel::Carousel' has a wrong offset!");

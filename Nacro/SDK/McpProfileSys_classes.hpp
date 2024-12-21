@@ -54,9 +54,8 @@ static_assert(alignof(UMcpItemDefinitionBase) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UMcpItemDefinitionBase) == 0x000028, "Wrong size on UMcpItemDefinitionBase");
 
 // Class McpProfileSys.McpProfile
-// 0x118212D8 (0x11821300 - 0x0028)
-#pragma pack(push, 0x1)
-class alignas(0x11821300) UMcpProfile : public UObject
+// 0x0288 (0x02B0 - 0x0028)
+class UMcpProfile : public UObject
 {
 public:
 	EServerClientFlag                             AllowSubscriptionToNotificationsService;           // 0x0028(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -72,7 +71,7 @@ public:
 	bool                                          bShouldCreateInstances;                            // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bProfileWriteLocked;                               // 0x0115(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_116[0x2];                                      // 0x0116(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              ProfileWriteLockExpireTime;                        // 0x0118(0x11821300)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FDateTime                              ProfileWriteLockExpireTime;                        // 0x0118(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         CommandRevision;                                   // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_124[0x18C];                                    // 0x0124(0x018C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -93,9 +92,8 @@ public:
 		return GetDefaultObjImpl<UMcpProfile>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UMcpProfile) == 0x11821300, "Wrong alignment on UMcpProfile");
-static_assert(sizeof(UMcpProfile) == 0x11821300, "Wrong size on UMcpProfile");
+static_assert(alignof(UMcpProfile) == 0x000008, "Wrong alignment on UMcpProfile");
+static_assert(sizeof(UMcpProfile) == 0x0002B0, "Wrong size on UMcpProfile");
 static_assert(offsetof(UMcpProfile, AllowSubscriptionToNotificationsService) == 0x000028, "Member 'UMcpProfile::AllowSubscriptionToNotificationsService' has a wrong offset!");
 static_assert(offsetof(UMcpProfile, DebugName) == 0x0000D0, "Member 'UMcpProfile::DebugName' has a wrong offset!");
 static_assert(offsetof(UMcpProfile, bProfileLockOperationPending) == 0x0000E0, "Member 'UMcpProfile::bProfileLockOperationPending' has a wrong offset!");
@@ -110,7 +108,7 @@ static_assert(offsetof(UMcpProfile, ProfileWriteLockExpireTime) == 0x000118, "Me
 static_assert(offsetof(UMcpProfile, CommandRevision) == 0x000120, "Member 'UMcpProfile::CommandRevision' has a wrong offset!");
 
 // Class McpProfileSys.McpProfileGroup
-// 0x118212D8 (0x11821300 - 0x0028)
+// 0x0178 (0x01A0 - 0x0028)
 class UMcpProfileGroup final : public UObject
 {
 public:
@@ -127,7 +125,7 @@ public:
 	uint8                                         Pad_C0[0x40];                                      // 0x00C0(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 LastMcpVersion;                                    // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                 LastContentVersion;                                // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FTimespan                              LocalTimeOffset;                                   // 0x0120(0x11821300)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FTimespan                              LocalTimeOffset;                                   // 0x0120(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FProfileHttpRequest>            PendingRequests;                                   // 0x0128(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_138[0x10];                                     // 0x0138(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bIsProcessingRequestGenerator;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -151,8 +149,8 @@ public:
 		return GetDefaultObjImpl<UMcpProfileGroup>();
 	}
 };
-static_assert(alignof(UMcpProfileGroup) == 0x11821300, "Wrong alignment on UMcpProfileGroup");
-static_assert(sizeof(UMcpProfileGroup) == 0x11821300, "Wrong size on UMcpProfileGroup");
+static_assert(alignof(UMcpProfileGroup) == 0x000008, "Wrong alignment on UMcpProfileGroup");
+static_assert(sizeof(UMcpProfileGroup) == 0x0001A0, "Wrong size on UMcpProfileGroup");
 static_assert(offsetof(UMcpProfileGroup, DelayMcpResults) == 0x000078, "Member 'UMcpProfileGroup::DelayMcpResults' has a wrong offset!");
 static_assert(offsetof(UMcpProfileGroup, ProfileList) == 0x000080, "Member 'UMcpProfileGroup::ProfileList' has a wrong offset!");
 static_assert(offsetof(UMcpProfileGroup, bIsInitialized) == 0x000090, "Member 'UMcpProfileGroup::bIsInitialized' has a wrong offset!");

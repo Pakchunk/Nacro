@@ -20,22 +20,22 @@ namespace SDK::Params
 {
 
 // Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.UpdateSkillTreeNodeMaterial_StaticData
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0528 (0x0528 - 0x0000)
 struct SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData final
 {
 public:
 	class UObject*                                World_Context;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Material;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHomebaseNode                          NodeData;                                          // 0x0010(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FFortSkillTreeNodeDisplayData          DisplayData;                                       // 0x00D0(0x1182E980)(Parm)
+	struct FHomebaseNode                          NodeData;                                          // 0x0010(0x00C0)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortSkillTreeNodeDisplayData          DisplayData;                                       // 0x00D0(0x0368)(Parm)
 	class UCommonButton*                          Button;                                            // 0x0438(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0440(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable;                               // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBrushSize                                CallFunc_GetSkillTreeNodeIconSizeByMagnitude_Icon_Size; // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0451(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_452[0x6];                                      // 0x0452(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0458(0x322CBBB8)(ConstParm)
-	struct FLinearColor                           CallFunc_GetSkillTreeNodeCostTint_NodeTintColour;  // 0x04E8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0458(0x0090)(ConstParm)
+	struct FLinearColor                           CallFunc_GetSkillTreeNodeCostTint_NodeTintColour;  // 0x04E8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_GetBrushResourceAsTexture2D_ReturnValue;  // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable2;                              // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable3;                              // 0x0508(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 	uint8                                         Pad_519[0x7];                                      // 0x0519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData) == 0x1182E980, "Wrong alignment on SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData");
-static_assert(sizeof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData) == 0x1182E980, "Wrong size on SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData");
+static_assert(alignof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData) == 0x000008, "Wrong alignment on SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData");
+static_assert(sizeof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData) == 0x000528, "Wrong size on SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, World_Context) == 0x000000, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::World_Context' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, Material) == 0x000008, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::Material' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, NodeData) == 0x000010, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::NodeData' has a wrong offset!");
@@ -65,28 +65,28 @@ static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticDa
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, K2Node_Select_Default) == 0x000520, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::K2Node_Select_Default' has a wrong offset!");
 
 // Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.GetSkillTreeNodeCostTint
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0160 (0x0160 - 0x0000)
 struct SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint final
 {
 public:
-	struct FHomebaseNode                          HomebaseNode;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHomebaseNode                          HomebaseNode;                                      // 0x0000(0x00C0)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UObject*                                __WorldContext;                                    // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           NodeTintColour;                                    // 0x00C8(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           NodeTintColour;                                    // 0x00C8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortHomebaseUIContext*                 CallFunc_GetContext_ReturnValue2;                  // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            CallFunc_GetQuestNodeColour_ReturnValue;           // 0x00E8(0x322CBBB8)()
+	struct FSlateColor                            CallFunc_GetQuestNodeColour_ReturnValue;           // 0x00E8(0x0028)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0118(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0118(0x0028)()
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortTokenType*                         K2Node_DynamicCast_AsFort_Token_Type;              // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint) == 0x322CBBB8, "Wrong alignment on SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint");
-static_assert(sizeof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint) == 0x322CBBB8, "Wrong size on SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint");
+static_assert(alignof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint) == 0x000008, "Wrong alignment on SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint");
+static_assert(sizeof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint) == 0x000160, "Wrong size on SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, HomebaseNode) == 0x000000, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::HomebaseNode' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, __WorldContext) == 0x0000C0, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::__WorldContext' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, NodeTintColour) == 0x0000C8, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::NodeTintColour' has a wrong offset!");
@@ -102,13 +102,13 @@ static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, K2Node_Dyn
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, K2Node_DynamicCast_bSuccess) == 0x000158, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.UpdateSkillTreeNodeMaterial_DynamicData
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData final
 {
 public:
 	class UObject*                                World_Context;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Material;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHomebaseNodeState                     NodeState;                                         // 0x0010(0x11821780)(Parm, NoDestructor)
+	struct FHomebaseNodeState                     NodeState;                                         // 0x0010(0x0008)(Parm, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue2;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -116,8 +116,8 @@ public:
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue3;            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData) == 0x11821780, "Wrong alignment on SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData");
-static_assert(sizeof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData) == 0x11821780, "Wrong size on SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData");
+static_assert(alignof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData) == 0x000008, "Wrong alignment on SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData");
+static_assert(sizeof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData) == 0x000030, "Wrong size on SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, World_Context) == 0x000000, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::World_Context' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, Material) == 0x000008, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::Material' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, NodeState) == 0x000010, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::NodeState' has a wrong offset!");

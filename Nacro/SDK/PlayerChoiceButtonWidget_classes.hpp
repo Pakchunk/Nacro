@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PlayerChoiceButtonWidget.PlayerChoiceButtonWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0888 - 0x0868)
 class UPlayerChoiceButtonWidget_C final : public UFortBaseButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0868(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0868(0x0008)(Transient, DuplicateTransient)
 	class ULegacyButtonIconText_C*                Button;                                            // 0x0870(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         ChoiceID;                                          // 0x0878(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_87C[0x4];                                      // 0x087C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UPlayerChoiceButtonWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerChoiceButtonWidget_C) == 0x322CBBB8, "Wrong alignment on UPlayerChoiceButtonWidget_C");
-static_assert(sizeof(UPlayerChoiceButtonWidget_C) == 0x322CBBB8, "Wrong size on UPlayerChoiceButtonWidget_C");
+static_assert(alignof(UPlayerChoiceButtonWidget_C) == 0x000008, "Wrong alignment on UPlayerChoiceButtonWidget_C");
+static_assert(sizeof(UPlayerChoiceButtonWidget_C) == 0x000888, "Wrong size on UPlayerChoiceButtonWidget_C");
 static_assert(offsetof(UPlayerChoiceButtonWidget_C, UberGraphFrame) == 0x000868, "Member 'UPlayerChoiceButtonWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPlayerChoiceButtonWidget_C, Button) == 0x000870, "Member 'UPlayerChoiceButtonWidget_C::Button' has a wrong offset!");
 static_assert(offsetof(UPlayerChoiceButtonWidget_C, ChoiceID) == 0x000878, "Member 'UPlayerChoiceButtonWidget_C::ChoiceID' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Athena_GameState.Athena_GameState_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0008 (0x14E8 - 0x14E0)
 class AAthena_GameState_C final : public AFortGameStateAthena
 {
 public:
@@ -36,8 +36,8 @@ public:
 		return GetDefaultObjImpl<AAthena_GameState_C>();
 	}
 };
-static_assert(alignof(AAthena_GameState_C) == 0x1182EB00, "Wrong alignment on AAthena_GameState_C");
-static_assert(sizeof(AAthena_GameState_C) == 0x1182EB00, "Wrong size on AAthena_GameState_C");
+static_assert(alignof(AAthena_GameState_C) == 0x000008, "Wrong alignment on AAthena_GameState_C");
+static_assert(sizeof(AAthena_GameState_C) == 0x0014E8, "Wrong size on AAthena_GameState_C");
 static_assert(offsetof(AAthena_GameState_C, DefaultSceneRoot) == 0x0014E0, "Member 'AAthena_GameState_C::DefaultSceneRoot' has a wrong offset!");
 
 }

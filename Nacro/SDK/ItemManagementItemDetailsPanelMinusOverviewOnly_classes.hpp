@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x02A0 - 0x0260)
 class UItemManagementItemDetailsPanelMinusOverviewOnly_C final : public UFortItemDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       ItemDescription;                                   // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ItemDisplayNameText;                               // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           NoSelectionDetailsBox;                             // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementItemDetailsPanelMinusOverviewOnly_C>();
 	}
 };
-static_assert(alignof(UItemManagementItemDetailsPanelMinusOverviewOnly_C) == 0x322CBBB8, "Wrong alignment on UItemManagementItemDetailsPanelMinusOverviewOnly_C");
-static_assert(sizeof(UItemManagementItemDetailsPanelMinusOverviewOnly_C) == 0x322CBBB8, "Wrong size on UItemManagementItemDetailsPanelMinusOverviewOnly_C");
+static_assert(alignof(UItemManagementItemDetailsPanelMinusOverviewOnly_C) == 0x000008, "Wrong alignment on UItemManagementItemDetailsPanelMinusOverviewOnly_C");
+static_assert(sizeof(UItemManagementItemDetailsPanelMinusOverviewOnly_C) == 0x0002A0, "Wrong size on UItemManagementItemDetailsPanelMinusOverviewOnly_C");
 static_assert(offsetof(UItemManagementItemDetailsPanelMinusOverviewOnly_C, UberGraphFrame) == 0x000260, "Member 'UItemManagementItemDetailsPanelMinusOverviewOnly_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementItemDetailsPanelMinusOverviewOnly_C, ItemDescription) == 0x000268, "Member 'UItemManagementItemDetailsPanelMinusOverviewOnly_C::ItemDescription' has a wrong offset!");
 static_assert(offsetof(UItemManagementItemDetailsPanelMinusOverviewOnly_C, ItemDisplayNameText) == 0x000270, "Member 'UItemManagementItemDetailsPanelMinusOverviewOnly_C::ItemDisplayNameText' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookPageCompletionRewardWidget.CollectionBookPageCompletionRewardWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0270 - 0x0250)
 class UCollectionBookPageCompletionRewardWidget_C final : public UFortCollectionBookPageCompletionRewardWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ArrowImage;                                        // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 CheckImage;                                        // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  RewardStatusSwitcher;                              // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookPageCompletionRewardWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookPageCompletionRewardWidget_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookPageCompletionRewardWidget_C");
-static_assert(sizeof(UCollectionBookPageCompletionRewardWidget_C) == 0x322CBBB8, "Wrong size on UCollectionBookPageCompletionRewardWidget_C");
+static_assert(alignof(UCollectionBookPageCompletionRewardWidget_C) == 0x000008, "Wrong alignment on UCollectionBookPageCompletionRewardWidget_C");
+static_assert(sizeof(UCollectionBookPageCompletionRewardWidget_C) == 0x000270, "Wrong size on UCollectionBookPageCompletionRewardWidget_C");
 static_assert(offsetof(UCollectionBookPageCompletionRewardWidget_C, UberGraphFrame) == 0x000250, "Member 'UCollectionBookPageCompletionRewardWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookPageCompletionRewardWidget_C, ArrowImage) == 0x000258, "Member 'UCollectionBookPageCompletionRewardWidget_C::ArrowImage' has a wrong offset!");
 static_assert(offsetof(UCollectionBookPageCompletionRewardWidget_C, CheckImage) == 0x000260, "Member 'UCollectionBookPageCompletionRewardWidget_C::CheckImage' has a wrong offset!");

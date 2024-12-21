@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.ExecuteUbergraph_AthenaGamePhaseChangeWidget
-// 0x00C0 (0x00C0 - 0x0000)
-struct alignas(0x0C) AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget final
+// 0x00B8 (0x00B8 - 0x0000)
+struct AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       K2Node_Select2_Default;                            // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget) == 0x00000C, "Wrong alignment on AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget");
-static_assert(sizeof(AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget) == 0x0000C0, "Wrong size on AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget");
+static_assert(alignof(AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget) == 0x000008, "Wrong alignment on AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget");
+static_assert(sizeof(AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget) == 0x0000B8, "Wrong size on AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget");
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget, EntryPoint) == 0x000000, "Member 'AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget, Temp_object_Variable) == 0x000008, "Member 'AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget, Temp_object_Variable2) == 0x000010, "Member 'AthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget::Temp_object_Variable2' has a wrong offset!");
@@ -87,14 +87,14 @@ static_assert(sizeof(AthenaGamePhaseChangeWidget_C_GamePhaseStepChanged) == 0x00
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_GamePhaseStepChanged, Step) == 0x000000, "Member 'AthenaGamePhaseChangeWidget_C_GamePhaseStepChanged::Step' has a wrong offset!");
 
 // Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.OnAnimationFinished
-// 0x4D005F (0x4D005F - 0x0000)
-struct alignas(0x4D005F) AthenaGamePhaseChangeWidget_C_OnAnimationFinished final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaGamePhaseChangeWidget_C_OnAnimationFinished final
 {
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaGamePhaseChangeWidget_C_OnAnimationFinished) == 0x4D005F, "Wrong alignment on AthenaGamePhaseChangeWidget_C_OnAnimationFinished");
-static_assert(sizeof(AthenaGamePhaseChangeWidget_C_OnAnimationFinished) == 0x4D005F, "Wrong size on AthenaGamePhaseChangeWidget_C_OnAnimationFinished");
+static_assert(alignof(AthenaGamePhaseChangeWidget_C_OnAnimationFinished) == 0x000008, "Wrong alignment on AthenaGamePhaseChangeWidget_C_OnAnimationFinished");
+static_assert(sizeof(AthenaGamePhaseChangeWidget_C_OnAnimationFinished) == 0x000008, "Wrong size on AthenaGamePhaseChangeWidget_C_OnAnimationFinished");
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_OnAnimationFinished, Animation) == 0x000000, "Member 'AthenaGamePhaseChangeWidget_C_OnAnimationFinished::Animation' has a wrong offset!");
 
 // Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.UpdateMessaging
@@ -114,8 +114,8 @@ static_assert(offsetof(AthenaGamePhaseChangeWidget_C_UpdateMessaging, MESSAGE_0)
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_UpdateMessaging, TimeText_0) == 0x000020, "Member 'AthenaGamePhaseChangeWidget_C_UpdateMessaging::TimeText_0' has a wrong offset!");
 
 // Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.PlayGamePhaseAlertSound
-// 0x0CCB (0x0CCB - 0x0000)
-struct alignas(0xCCB) AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound final
+// 0x0068 (0x0068 - 0x0000)
+struct AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound final
 {
 public:
 	EAthenaGamePhaseStep                          Index_0;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -134,8 +134,8 @@ public:
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound) == 0x000CCB, "Wrong alignment on AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound");
-static_assert(sizeof(AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound) == 0x000CCB, "Wrong size on AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound");
+static_assert(alignof(AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound) == 0x000008, "Wrong alignment on AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound");
+static_assert(sizeof(AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound) == 0x000068, "Wrong size on AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound");
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound, Index_0) == 0x000000, "Member 'AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound::Index_0' has a wrong offset!");
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound, Temp_byte_Variable) == 0x000001, "Member 'AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound, Temp_object_Variable) == 0x000008, "Member 'AthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound::Temp_object_Variable' has a wrong offset!");

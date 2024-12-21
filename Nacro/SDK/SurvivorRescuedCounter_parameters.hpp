@@ -48,16 +48,16 @@ static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescued
 static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, CallFunc_GetContext_ReturnValue2) == 0x000048, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function SurvivorRescuedCounter.SurvivorRescuedCounter_C.UpdateSurvivorsRescued
-// 0x2D1AFE80 (0x2D1AFE80 - 0x0000)
-struct alignas(0x2D1AFE80) SurvivorRescuedCounter_C_UpdateSurvivorsRescued final
+// 0x0020 (0x0020 - 0x0000)
+struct SurvivorRescuedCounter_C_UpdateSurvivorsRescued final
 {
 public:
 	int32                                         SurvivorsRescued;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
-static_assert(alignof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued) == 0x2D1AFE80, "Wrong alignment on SurvivorRescuedCounter_C_UpdateSurvivorsRescued");
-static_assert(sizeof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued) == 0x2D1AFE80, "Wrong size on SurvivorRescuedCounter_C_UpdateSurvivorsRescued");
+static_assert(alignof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued) == 0x000008, "Wrong alignment on SurvivorRescuedCounter_C_UpdateSurvivorsRescued");
+static_assert(sizeof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued) == 0x000020, "Wrong size on SurvivorRescuedCounter_C_UpdateSurvivorsRescued");
 static_assert(offsetof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued, SurvivorsRescued) == 0x000000, "Member 'SurvivorRescuedCounter_C_UpdateSurvivorsRescued::SurvivorsRescued' has a wrong offset!");
 static_assert(offsetof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'SurvivorRescuedCounter_C_UpdateSurvivorsRescued::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 

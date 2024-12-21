@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-ManageListHeader.Border-ManageListHeader_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusManageListHeader_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusManageListHeader_C>();
 	}
 };
-static_assert(alignof(UBorderMinusManageListHeader_C) == 0x11827900, "Wrong alignment on UBorderMinusManageListHeader_C");
-static_assert(sizeof(UBorderMinusManageListHeader_C) == 0x11827900, "Wrong size on UBorderMinusManageListHeader_C");
+static_assert(alignof(UBorderMinusManageListHeader_C) == 0x000008, "Wrong alignment on UBorderMinusManageListHeader_C");
+static_assert(sizeof(UBorderMinusManageListHeader_C) == 0x0000B8, "Wrong size on UBorderMinusManageListHeader_C");
 
 }
 

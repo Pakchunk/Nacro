@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass StructuralBuildingsInCachedPathOfPrimaryAssignments.StructuralBuildingsInCachedPathOfPrimaryAssignments_C
-// 0x0000 (0x11821780 - 0x11821780)
+// 0x0000 (0x00D0 - 0x00D0)
 class UStructuralBuildingsInCachedPathOfPrimaryAssignments_C final : public UFortAIGoalProvider_EnvQuery
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UStructuralBuildingsInCachedPathOfPrimaryAssignments_C>();
 	}
 };
-static_assert(alignof(UStructuralBuildingsInCachedPathOfPrimaryAssignments_C) == 0x11821780, "Wrong alignment on UStructuralBuildingsInCachedPathOfPrimaryAssignments_C");
-static_assert(sizeof(UStructuralBuildingsInCachedPathOfPrimaryAssignments_C) == 0x11821780, "Wrong size on UStructuralBuildingsInCachedPathOfPrimaryAssignments_C");
+static_assert(alignof(UStructuralBuildingsInCachedPathOfPrimaryAssignments_C) == 0x000008, "Wrong alignment on UStructuralBuildingsInCachedPathOfPrimaryAssignments_C");
+static_assert(sizeof(UStructuralBuildingsInCachedPathOfPrimaryAssignments_C) == 0x0000D0, "Wrong size on UStructuralBuildingsInCachedPathOfPrimaryAssignments_C");
 
 }
 

@@ -15,21 +15,21 @@ namespace SDK::Params
 {
 
 // Function FriendNotification.FriendNotification_C.ExecuteUbergraph_FriendNotification
-// 0x0068 (0x0068 - 0x0000)
-struct alignas(0x68) FriendNotification_C_ExecuteUbergraph_FriendNotification final
+// 0x0008 (0x0008 - 0x0000)
+struct FriendNotification_C_ExecuteUbergraph_FriendNotification final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FriendNotification_C_ExecuteUbergraph_FriendNotification) == 0x000068, "Wrong alignment on FriendNotification_C_ExecuteUbergraph_FriendNotification");
-static_assert(sizeof(FriendNotification_C_ExecuteUbergraph_FriendNotification) == 0x000068, "Wrong size on FriendNotification_C_ExecuteUbergraph_FriendNotification");
+static_assert(alignof(FriendNotification_C_ExecuteUbergraph_FriendNotification) == 0x000004, "Wrong alignment on FriendNotification_C_ExecuteUbergraph_FriendNotification");
+static_assert(sizeof(FriendNotification_C_ExecuteUbergraph_FriendNotification) == 0x000008, "Wrong size on FriendNotification_C_ExecuteUbergraph_FriendNotification");
 static_assert(offsetof(FriendNotification_C_ExecuteUbergraph_FriendNotification, EntryPoint) == 0x000000, "Member 'FriendNotification_C_ExecuteUbergraph_FriendNotification::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ExecuteUbergraph_FriendNotification, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'FriendNotification_C_ExecuteUbergraph_FriendNotification::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function FriendNotification.FriendNotification_C.ShowPartyInvites
-// 0x740069 (0x740069 - 0x0000)
-struct alignas(0x740069) FriendNotification_C_ShowPartyInvites final
+// 0x0020 (0x0020 - 0x0000)
+struct FriendNotification_C_ShowPartyInvites final
 {
 public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,16 +37,16 @@ public:
 	class UCommonActivatablePanel*                K2Node_DynamicCast_AsCommon_Activatable_Panel;     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FriendNotification_C_ShowPartyInvites) == 0x740069, "Wrong alignment on FriendNotification_C_ShowPartyInvites");
-static_assert(sizeof(FriendNotification_C_ShowPartyInvites) == 0x740069, "Wrong size on FriendNotification_C_ShowPartyInvites");
+static_assert(alignof(FriendNotification_C_ShowPartyInvites) == 0x000008, "Wrong alignment on FriendNotification_C_ShowPartyInvites");
+static_assert(sizeof(FriendNotification_C_ShowPartyInvites) == 0x000020, "Wrong size on FriendNotification_C_ShowPartyInvites");
 static_assert(offsetof(FriendNotification_C_ShowPartyInvites, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'FriendNotification_C_ShowPartyInvites::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ShowPartyInvites, CallFunc_GetCachedWidget_ReturnValue) == 0x000008, "Member 'FriendNotification_C_ShowPartyInvites::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ShowPartyInvites, K2Node_DynamicCast_AsCommon_Activatable_Panel) == 0x000010, "Member 'FriendNotification_C_ShowPartyInvites::K2Node_DynamicCast_AsCommon_Activatable_Panel' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ShowPartyInvites, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'FriendNotification_C_ShowPartyInvites::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function FriendNotification.FriendNotification_C.ShowFriendInvites
-// 0x0310 (0x0310 - 0x0000)
-struct alignas(0x310) FriendNotification_C_ShowFriendInvites final
+// 0x0020 (0x0020 - 0x0000)
+struct FriendNotification_C_ShowFriendInvites final
 {
 public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 	class UFrontEnd_C*                            K2Node_DynamicCast_AsFront_End;                    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FriendNotification_C_ShowFriendInvites) == 0x000310, "Wrong alignment on FriendNotification_C_ShowFriendInvites");
-static_assert(sizeof(FriendNotification_C_ShowFriendInvites) == 0x000310, "Wrong size on FriendNotification_C_ShowFriendInvites");
+static_assert(alignof(FriendNotification_C_ShowFriendInvites) == 0x000008, "Wrong alignment on FriendNotification_C_ShowFriendInvites");
+static_assert(sizeof(FriendNotification_C_ShowFriendInvites) == 0x000020, "Wrong size on FriendNotification_C_ShowFriendInvites");
 static_assert(offsetof(FriendNotification_C_ShowFriendInvites, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'FriendNotification_C_ShowFriendInvites::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ShowFriendInvites, CallFunc_GetCurrentUIStateWidget_ReturnValue) == 0x000008, "Member 'FriendNotification_C_ShowFriendInvites::CallFunc_GetCurrentUIStateWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FriendNotification_C_ShowFriendInvites, K2Node_DynamicCast_AsFront_End) == 0x000010, "Member 'FriendNotification_C_ShowFriendInvites::K2Node_DynamicCast_AsFront_End' has a wrong offset!");

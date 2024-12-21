@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0090 (0x02D0 - 0x0240)
 class UItemInspectUpgradeCallout_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      EvolveButton;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_3;                                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemCount_C*                           ItemCount;                                         // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,7 +39,7 @@ public:
 	int32                                         UpgradeCost;                                       // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OnRequestUpgrade;                                  // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FLinearColor                           UpgradeColor;                                      // 0x02B8(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           UpgradeColor;                                      // 0x02B8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsMaxLevel;                                        // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -68,8 +68,8 @@ public:
 		return GetDefaultObjImpl<UItemInspectUpgradeCallout_C>();
 	}
 };
-static_assert(alignof(UItemInspectUpgradeCallout_C) == 0x322CBBB8, "Wrong alignment on UItemInspectUpgradeCallout_C");
-static_assert(sizeof(UItemInspectUpgradeCallout_C) == 0x322CBBB8, "Wrong size on UItemInspectUpgradeCallout_C");
+static_assert(alignof(UItemInspectUpgradeCallout_C) == 0x000008, "Wrong alignment on UItemInspectUpgradeCallout_C");
+static_assert(sizeof(UItemInspectUpgradeCallout_C) == 0x0002D0, "Wrong size on UItemInspectUpgradeCallout_C");
 static_assert(offsetof(UItemInspectUpgradeCallout_C, UberGraphFrame) == 0x000240, "Member 'UItemInspectUpgradeCallout_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemInspectUpgradeCallout_C, EvolveButton) == 0x000248, "Member 'UItemInspectUpgradeCallout_C::EvolveButton' has a wrong offset!");
 static_assert(offsetof(UItemInspectUpgradeCallout_C, Image_3) == 0x000250, "Member 'UItemInspectUpgradeCallout_C::Image_3' has a wrong offset!");

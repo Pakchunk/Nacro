@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SimpleSquadSlotButton.SimpleSquadSlotButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0100 (0x09F8 - 0x08F8)
 class USimpleSquadSlotButton_C final : public UFortSquadSlotSelectorButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          CommonBorder_0;                                    // 0x0900(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageSlotType;                                     // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageSlotTypeShadow;                               // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,7 +35,7 @@ public:
 	class FText                                   TooltipHeader;                                     // 0x0940(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          ShowSubTypeIcon;                                   // 0x0958(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_959[0x7];                                      // 0x0959(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            SubTypeIcon;                                       // 0x0960(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            SubTypeIcon;                                       // 0x0960(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          bSuppressTooltip;                                  // 0x09F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	EFortItemCardSize                             SlottedItemCardSize;                               // 0x09F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
@@ -63,8 +63,8 @@ public:
 		return GetDefaultObjImpl<USimpleSquadSlotButton_C>();
 	}
 };
-static_assert(alignof(USimpleSquadSlotButton_C) == 0x322CBBB8, "Wrong alignment on USimpleSquadSlotButton_C");
-static_assert(sizeof(USimpleSquadSlotButton_C) == 0x322CBBB8, "Wrong size on USimpleSquadSlotButton_C");
+static_assert(alignof(USimpleSquadSlotButton_C) == 0x000008, "Wrong alignment on USimpleSquadSlotButton_C");
+static_assert(sizeof(USimpleSquadSlotButton_C) == 0x0009F8, "Wrong size on USimpleSquadSlotButton_C");
 static_assert(offsetof(USimpleSquadSlotButton_C, UberGraphFrame) == 0x0008F8, "Member 'USimpleSquadSlotButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USimpleSquadSlotButton_C, CommonBorder_0) == 0x000900, "Member 'USimpleSquadSlotButton_C::CommonBorder_0' has a wrong offset!");
 static_assert(offsetof(USimpleSquadSlotButton_C, ImageSlotType) == 0x000908, "Member 'USimpleSquadSlotButton_C::ImageSlotType' has a wrong offset!");

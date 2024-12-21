@@ -64,15 +64,15 @@ static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, CallFunc_NotEqu
 static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x00001C, "Member 'ZoneDayCompletion_ScoreBlock_C_Increment::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
 
 // Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.SetScore
-// 0x042A (0x042A - 0x0000)
-struct alignas(0x42A) ZoneDayCompletion_ScoreBlock_C_SetScore final
+// 0x0008 (0x0008 - 0x0000)
+struct ZoneDayCompletion_ScoreBlock_C_SetScore final
 {
 public:
 	int32                                         New_Score;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ZoneDayCompletion_ScoreBlock_C_SetScore) == 0x00042A, "Wrong alignment on ZoneDayCompletion_ScoreBlock_C_SetScore");
-static_assert(sizeof(ZoneDayCompletion_ScoreBlock_C_SetScore) == 0x00042A, "Wrong size on ZoneDayCompletion_ScoreBlock_C_SetScore");
+static_assert(alignof(ZoneDayCompletion_ScoreBlock_C_SetScore) == 0x000004, "Wrong alignment on ZoneDayCompletion_ScoreBlock_C_SetScore");
+static_assert(sizeof(ZoneDayCompletion_ScoreBlock_C_SetScore) == 0x000008, "Wrong size on ZoneDayCompletion_ScoreBlock_C_SetScore");
 static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_SetScore, New_Score) == 0x000000, "Member 'ZoneDayCompletion_ScoreBlock_C_SetScore::New_Score' has a wrong offset!");
 static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_SetScore, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'ZoneDayCompletion_ScoreBlock_C_SetScore::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 

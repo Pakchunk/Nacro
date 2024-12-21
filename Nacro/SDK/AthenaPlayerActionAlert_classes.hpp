@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaPlayerActionAlert.AthenaPlayerActionAlert_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x02B8 - 0x0280)
 class UAthenaPlayerActionAlert_C final : public UAthenaHUDPlayerActionAlertBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       CrawlDown;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       FlashRun;                                          // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       ShowAlert;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UAthenaPlayerActionAlert_C>();
 	}
 };
-static_assert(alignof(UAthenaPlayerActionAlert_C) == 0x322CBBB8, "Wrong alignment on UAthenaPlayerActionAlert_C");
-static_assert(sizeof(UAthenaPlayerActionAlert_C) == 0x322CBBB8, "Wrong size on UAthenaPlayerActionAlert_C");
+static_assert(alignof(UAthenaPlayerActionAlert_C) == 0x000008, "Wrong alignment on UAthenaPlayerActionAlert_C");
+static_assert(sizeof(UAthenaPlayerActionAlert_C) == 0x0002B8, "Wrong size on UAthenaPlayerActionAlert_C");
 static_assert(offsetof(UAthenaPlayerActionAlert_C, UberGraphFrame) == 0x000280, "Member 'UAthenaPlayerActionAlert_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaPlayerActionAlert_C, CrawlDown) == 0x000288, "Member 'UAthenaPlayerActionAlert_C::CrawlDown' has a wrong offset!");
 static_assert(offsetof(UAthenaPlayerActionAlert_C, FlashRun) == 0x000290, "Member 'UAthenaPlayerActionAlert_C::FlashRun' has a wrong offset!");

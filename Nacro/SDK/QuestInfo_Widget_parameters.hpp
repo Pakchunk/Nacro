@@ -95,7 +95,7 @@ static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, CallFunc_Less_IntI
 static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, CallFunc_IsVisibleToUser_ReturnValue) == 0x000019, "Member 'QuestInfo_Widget_C_PopulateObjectives::CallFunc_IsVisibleToUser_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.PopulateRewards
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0100 (0x0100 - 0x0000)
 struct QuestInfo_Widget_C_PopulateRewards final
 {
 public:
@@ -106,18 +106,18 @@ public:
 	TArray<struct FFortItemInstanceQuantityPair>  CallFunc_GetPreviewRewards_ReturnValue;            // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0028(0x11821D80)(NoDestructor)
+	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0040(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0040(0x0090)()
 	class UFortQuestItem*                         K2Node_DynamicCast_AsFort_Quest_Item;              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x00E0(0x0018)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_Widget_C_PopulateRewards) == 0x11827900, "Wrong alignment on QuestInfo_Widget_C_PopulateRewards");
-static_assert(sizeof(QuestInfo_Widget_C_PopulateRewards) == 0x11827900, "Wrong size on QuestInfo_Widget_C_PopulateRewards");
+static_assert(alignof(QuestInfo_Widget_C_PopulateRewards) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_PopulateRewards");
+static_assert(sizeof(QuestInfo_Widget_C_PopulateRewards) == 0x000100, "Wrong size on QuestInfo_Widget_C_PopulateRewards");
 static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, Temp_int_Array_Index_Variable) == 0x000000, "Member 'QuestInfo_Widget_C_PopulateRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'QuestInfo_Widget_C_PopulateRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -132,31 +132,31 @@ static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_GetDisplayNa
 static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_IsValid_ReturnValue) == 0x0000F8, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.SetQuestIcon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0128 (0x0128 - 0x0000)
 struct QuestInfo_Widget_C_SetQuestIcon final
 {
 public:
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0000(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0000(0x0090)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_SetFieldsInStruct_StructOut;                // 0x0098(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_SetFieldsInStruct_StructOut;                // 0x0098(0x0090)()
 };
-static_assert(alignof(QuestInfo_Widget_C_SetQuestIcon) == 0x11827900, "Wrong alignment on QuestInfo_Widget_C_SetQuestIcon");
-static_assert(sizeof(QuestInfo_Widget_C_SetQuestIcon) == 0x11827900, "Wrong size on QuestInfo_Widget_C_SetQuestIcon");
+static_assert(alignof(QuestInfo_Widget_C_SetQuestIcon) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_SetQuestIcon");
+static_assert(sizeof(QuestInfo_Widget_C_SetQuestIcon) == 0x000128, "Wrong size on QuestInfo_Widget_C_SetQuestIcon");
 static_assert(offsetof(QuestInfo_Widget_C_SetQuestIcon, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000000, "Member 'QuestInfo_Widget_C_SetQuestIcon::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestInfo_Widget_C_SetQuestIcon, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'QuestInfo_Widget_C_SetQuestIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestInfo_Widget_C_SetQuestIcon, K2Node_SetFieldsInStruct_StructOut) == 0x000098, "Member 'QuestInfo_Widget_C_SetQuestIcon::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.SetQuestText
-// 0x2E96 (0x2E96 - 0x0000)
-struct alignas(0x2E96) QuestInfo_Widget_C_SetQuestText final
+// 0x0030 (0x0030 - 0x0000)
+struct QuestInfo_Widget_C_SetQuestText final
 {
 public:
 	class FText                                   CallFunc_GetDescription_ReturnValue;               // 0x0000(0x0018)()
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0018(0x0018)()
 };
-static_assert(alignof(QuestInfo_Widget_C_SetQuestText) == 0x002E96, "Wrong alignment on QuestInfo_Widget_C_SetQuestText");
-static_assert(sizeof(QuestInfo_Widget_C_SetQuestText) == 0x002E96, "Wrong size on QuestInfo_Widget_C_SetQuestText");
+static_assert(alignof(QuestInfo_Widget_C_SetQuestText) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_SetQuestText");
+static_assert(sizeof(QuestInfo_Widget_C_SetQuestText) == 0x000030, "Wrong size on QuestInfo_Widget_C_SetQuestText");
 static_assert(offsetof(QuestInfo_Widget_C_SetQuestText, CallFunc_GetDescription_ReturnValue) == 0x000000, "Member 'QuestInfo_Widget_C_SetQuestText::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestInfo_Widget_C_SetQuestText, CallFunc_GetDisplayName_ReturnValue) == 0x000018, "Member 'QuestInfo_Widget_C_SetQuestText::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 

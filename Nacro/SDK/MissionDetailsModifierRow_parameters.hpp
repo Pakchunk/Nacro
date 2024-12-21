@@ -29,7 +29,7 @@ static_assert(sizeof(MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetails
 static_assert(offsetof(MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow, EntryPoint) == 0x000000, "Member 'MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow::EntryPoint' has a wrong offset!");
 
 // Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.Init
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct MissionDetailsModifierRow_C_Init final
 {
 public:
@@ -40,8 +40,8 @@ public:
 	bool                                          ShowMinusDescription;                              // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          UseSmallIcon;                                      // 0x0041(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              NormalSize;                                        // 0x0044(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              SmallSize;                                         // 0x004C(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              NormalSize;                                        // 0x0044(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              SmallSize;                                         // 0x004C(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -56,8 +56,8 @@ public:
 	float                                         K2Node_Select2_Default;                            // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionDetailsModifierRow_C_Init) == 0x11821300, "Wrong alignment on MissionDetailsModifierRow_C_Init");
-static_assert(sizeof(MissionDetailsModifierRow_C_Init) == 0x11821300, "Wrong size on MissionDetailsModifierRow_C_Init");
+static_assert(alignof(MissionDetailsModifierRow_C_Init) == 0x000008, "Wrong alignment on MissionDetailsModifierRow_C_Init");
+static_assert(sizeof(MissionDetailsModifierRow_C_Init) == 0x000078, "Wrong size on MissionDetailsModifierRow_C_Init");
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierName) == 0x000000, "Member 'MissionDetailsModifierRow_C_Init::ModifierName' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierDescription) == 0x000018, "Member 'MissionDetailsModifierRow_C_Init::ModifierDescription' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierIcon) == 0x000030, "Member 'MissionDetailsModifierRow_C_Init::ModifierIcon' has a wrong offset!");

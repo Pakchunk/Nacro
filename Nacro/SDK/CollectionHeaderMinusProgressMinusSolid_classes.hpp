@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CollectionHeader-Progress-Solid.CollectionHeader-Progress-Solid_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UCollectionHeaderMinusProgressMinusSolid_C final : public UCollectionHeaderMinusLevel_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UCollectionHeaderMinusProgressMinusSolid_C>();
 	}
 };
-static_assert(alignof(UCollectionHeaderMinusProgressMinusSolid_C) == 0x11827900, "Wrong alignment on UCollectionHeaderMinusProgressMinusSolid_C");
-static_assert(sizeof(UCollectionHeaderMinusProgressMinusSolid_C) == 0x11827900, "Wrong size on UCollectionHeaderMinusProgressMinusSolid_C");
+static_assert(alignof(UCollectionHeaderMinusProgressMinusSolid_C) == 0x000008, "Wrong alignment on UCollectionHeaderMinusProgressMinusSolid_C");
+static_assert(sizeof(UCollectionHeaderMinusProgressMinusSolid_C) == 0x0000B8, "Wrong size on UCollectionHeaderMinusProgressMinusSolid_C");
 
 }
 

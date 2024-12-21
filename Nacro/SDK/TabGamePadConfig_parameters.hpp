@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function TabGamePadConfig.TabGamePadConfig_C.ExecuteUbergraph_TabGamePadConfig
-// 0x011A (0x011A - 0x0000)
-struct alignas(0x11A) TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig final
+// 0x00B0 (0x00B0 - 0x0000)
+struct TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 	int32                                         K2Node_CustomEvent_Selected_Index;                 // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 Selected_Index)>         K2Node_CreateDelegate_OutputDelegate3;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig) == 0x00011A, "Wrong alignment on TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig");
-static_assert(sizeof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig) == 0x00011A, "Wrong size on TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig");
+static_assert(alignof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig) == 0x000008, "Wrong alignment on TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig");
+static_assert(sizeof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig) == 0x0000B0, "Wrong size on TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig");
 static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, EntryPoint) == 0x000000, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -88,30 +88,30 @@ static_assert(sizeof(TabGamePadConfig_C_ControllerPlatformConfigChanged) == 0x00
 static_assert(offsetof(TabGamePadConfig_C_ControllerPlatformConfigChanged, Selected_Index) == 0x000000, "Member 'TabGamePadConfig_C_ControllerPlatformConfigChanged::Selected_Index' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Gamepad Config Changed
-// 0x00F9 (0x00F9 - 0x0000)
-struct alignas(0xF9) TabGamePadConfig_C_Gamepad_Config_Changed final
+// 0x0004 (0x0004 - 0x0000)
+struct TabGamePadConfig_C_Gamepad_Config_Changed final
 {
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGamePadConfig_C_Gamepad_Config_Changed) == 0x0000F9, "Wrong alignment on TabGamePadConfig_C_Gamepad_Config_Changed");
-static_assert(sizeof(TabGamePadConfig_C_Gamepad_Config_Changed) == 0x0000F9, "Wrong size on TabGamePadConfig_C_Gamepad_Config_Changed");
+static_assert(alignof(TabGamePadConfig_C_Gamepad_Config_Changed) == 0x000004, "Wrong alignment on TabGamePadConfig_C_Gamepad_Config_Changed");
+static_assert(sizeof(TabGamePadConfig_C_Gamepad_Config_Changed) == 0x000004, "Wrong size on TabGamePadConfig_C_Gamepad_Config_Changed");
 static_assert(offsetof(TabGamePadConfig_C_Gamepad_Config_Changed, Selected_Index) == 0x000000, "Member 'TabGamePadConfig_C_Gamepad_Config_Changed::Selected_Index' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Configuration Changed
-// 0x008A (0x008A - 0x0000)
-struct alignas(0x8A) TabGamePadConfig_C_Configuration_Changed final
+// 0x0004 (0x0004 - 0x0000)
+struct TabGamePadConfig_C_Configuration_Changed final
 {
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGamePadConfig_C_Configuration_Changed) == 0x00008A, "Wrong alignment on TabGamePadConfig_C_Configuration_Changed");
-static_assert(sizeof(TabGamePadConfig_C_Configuration_Changed) == 0x00008A, "Wrong size on TabGamePadConfig_C_Configuration_Changed");
+static_assert(alignof(TabGamePadConfig_C_Configuration_Changed) == 0x000004, "Wrong alignment on TabGamePadConfig_C_Configuration_Changed");
+static_assert(sizeof(TabGamePadConfig_C_Configuration_Changed) == 0x000004, "Wrong size on TabGamePadConfig_C_Configuration_Changed");
 static_assert(offsetof(TabGamePadConfig_C_Configuration_Changed, Selected_Index) == 0x000000, "Member 'TabGamePadConfig_C_Configuration_Changed::Selected_Index' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Initialize Data
-// 0x00DC (0x00DC - 0x0000)
-struct alignas(0xDC) TabGamePadConfig_C_Initialize_Data final
+// 0x00C8 (0x00C8 - 0x0000)
+struct TabGamePadConfig_C_Initialize_Data final
 {
 public:
 	TArray<class FText>                           NewLocalVar_0;                                     // 0x0000(0x0010)(Edit, ZeroConstructor)
@@ -130,8 +130,8 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0098(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
 };
-static_assert(alignof(TabGamePadConfig_C_Initialize_Data) == 0x0000DC, "Wrong alignment on TabGamePadConfig_C_Initialize_Data");
-static_assert(sizeof(TabGamePadConfig_C_Initialize_Data) == 0x0000DC, "Wrong size on TabGamePadConfig_C_Initialize_Data");
+static_assert(alignof(TabGamePadConfig_C_Initialize_Data) == 0x000008, "Wrong alignment on TabGamePadConfig_C_Initialize_Data");
+static_assert(sizeof(TabGamePadConfig_C_Initialize_Data) == 0x0000C8, "Wrong size on TabGamePadConfig_C_Initialize_Data");
 static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, NewLocalVar_0) == 0x000000, "Member 'TabGamePadConfig_C_Initialize_Data::NewLocalVar_0' has a wrong offset!");
 static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, Temp_text_Variable) == 0x000010, "Member 'TabGamePadConfig_C_Initialize_Data::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, Temp_text_Variable2) == 0x000028, "Member 'TabGamePadConfig_C_Initialize_Data::Temp_text_Variable2' has a wrong offset!");
@@ -177,14 +177,14 @@ static_assert(offsetof(TabGamePadConfig_C_Update_Data, K2Node_Select_Default) ==
 static_assert(offsetof(TabGamePadConfig_C_Update_Data, CallFunc_Array_Find_ReturnValue) == 0x000040, "Member 'TabGamePadConfig_C_Update_Data::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Handle Mode Toggled
-// 0x00BC (0x00BC - 0x0000)
-struct alignas(0xBC) TabGamePadConfig_C_Handle_Mode_Toggled final
+// 0x0001 (0x0001 - 0x0000)
+struct TabGamePadConfig_C_Handle_Mode_Toggled final
 {
 public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabGamePadConfig_C_Handle_Mode_Toggled) == 0x0000BC, "Wrong alignment on TabGamePadConfig_C_Handle_Mode_Toggled");
-static_assert(sizeof(TabGamePadConfig_C_Handle_Mode_Toggled) == 0x0000BC, "Wrong size on TabGamePadConfig_C_Handle_Mode_Toggled");
+static_assert(alignof(TabGamePadConfig_C_Handle_Mode_Toggled) == 0x000001, "Wrong alignment on TabGamePadConfig_C_Handle_Mode_Toggled");
+static_assert(sizeof(TabGamePadConfig_C_Handle_Mode_Toggled) == 0x000001, "Wrong size on TabGamePadConfig_C_Handle_Mode_Toggled");
 static_assert(offsetof(TabGamePadConfig_C_Handle_Mode_Toggled, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'TabGamePadConfig_C_Handle_Mode_Toggled::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.HandleGamepadMappingInfoChange

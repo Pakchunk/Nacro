@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0170 (0x0550 - 0x03E0)
 class UOutpostScreenStormShieldContent_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ButtonHelp;                                        // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ExpandShieldText;                                  // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HBoxRequestHelp;                                   // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -101,8 +101,8 @@ public:
 		return GetDefaultObjImpl<UOutpostScreenStormShieldContent_C>();
 	}
 };
-static_assert(alignof(UOutpostScreenStormShieldContent_C) == 0x322CBBB8, "Wrong alignment on UOutpostScreenStormShieldContent_C");
-static_assert(sizeof(UOutpostScreenStormShieldContent_C) == 0x322CBBB8, "Wrong size on UOutpostScreenStormShieldContent_C");
+static_assert(alignof(UOutpostScreenStormShieldContent_C) == 0x000008, "Wrong alignment on UOutpostScreenStormShieldContent_C");
+static_assert(sizeof(UOutpostScreenStormShieldContent_C) == 0x000550, "Wrong size on UOutpostScreenStormShieldContent_C");
 static_assert(offsetof(UOutpostScreenStormShieldContent_C, UberGraphFrame) == 0x0003E0, "Member 'UOutpostScreenStormShieldContent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenStormShieldContent_C, ButtonHelp) == 0x0003E8, "Member 'UOutpostScreenStormShieldContent_C::ButtonHelp' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenStormShieldContent_C, ExpandShieldText) == 0x0003F0, "Member 'UOutpostScreenStormShieldContent_C::ExpandShieldText' has a wrong offset!");

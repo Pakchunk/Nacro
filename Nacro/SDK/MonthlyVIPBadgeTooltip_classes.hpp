@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MonthlyVIPBadgeTooltip.MonthlyVIPBadgeTooltip_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UMonthlyVIPBadgeTooltip_C final : public UCommonUserWidget
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UMonthlyVIPBadgeTooltip_C>();
 	}
 };
-static_assert(alignof(UMonthlyVIPBadgeTooltip_C) == 0x322CBBB8, "Wrong alignment on UMonthlyVIPBadgeTooltip_C");
-static_assert(sizeof(UMonthlyVIPBadgeTooltip_C) == 0x322CBBB8, "Wrong size on UMonthlyVIPBadgeTooltip_C");
+static_assert(alignof(UMonthlyVIPBadgeTooltip_C) == 0x000008, "Wrong alignment on UMonthlyVIPBadgeTooltip_C");
+static_assert(sizeof(UMonthlyVIPBadgeTooltip_C) == 0x000240, "Wrong size on UMonthlyVIPBadgeTooltip_C");
 static_assert(offsetof(UMonthlyVIPBadgeTooltip_C, HBoxBoost) == 0x000238, "Member 'UMonthlyVIPBadgeTooltip_C::HBoxBoost' has a wrong offset!");
 
 }

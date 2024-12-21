@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MtxOffersList_2.MtxOffersList_2_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x0298 - 0x0238)
 class UMtxOffersList_2_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UMtxOffer_2_C*                          MtxOffer_2;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               NoOffers_Overlay;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         OffersList;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -30,7 +30,7 @@ public:
 	UMulticastDelegateProperty_                   PurchaseComplete;                                  // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                         CountUpdateRate;                                   // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CountTimer;                                        // 0x0278(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           CountTimer;                                        // 0x0278(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         CurrentMtxAmount_Float;                            // 0x0280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TargetMtxAmount_Float;                             // 0x0284(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DisplayedMtxAmount_Float;                          // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,8 +59,8 @@ public:
 		return GetDefaultObjImpl<UMtxOffersList_2_C>();
 	}
 };
-static_assert(alignof(UMtxOffersList_2_C) == 0x322CBBB8, "Wrong alignment on UMtxOffersList_2_C");
-static_assert(sizeof(UMtxOffersList_2_C) == 0x322CBBB8, "Wrong size on UMtxOffersList_2_C");
+static_assert(alignof(UMtxOffersList_2_C) == 0x000008, "Wrong alignment on UMtxOffersList_2_C");
+static_assert(sizeof(UMtxOffersList_2_C) == 0x000298, "Wrong size on UMtxOffersList_2_C");
 static_assert(offsetof(UMtxOffersList_2_C, UberGraphFrame) == 0x000238, "Member 'UMtxOffersList_2_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMtxOffersList_2_C, MtxOffer_2) == 0x000240, "Member 'UMtxOffersList_2_C::MtxOffer_2' has a wrong offset!");
 static_assert(offsetof(UMtxOffersList_2_C, NoOffers_Overlay) == 0x000248, "Member 'UMtxOffersList_2_C::NoOffers_Overlay' has a wrong offset!");

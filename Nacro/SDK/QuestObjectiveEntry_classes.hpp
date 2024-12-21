@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestObjectiveEntry.QuestObjectiveEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0278 - 0x0238)
 class UQuestObjectiveEntry_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Appear;                                            // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               BulletOverlay;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Checkmark;                                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UQuestObjectiveEntry_C>();
 	}
 };
-static_assert(alignof(UQuestObjectiveEntry_C) == 0x322CBBB8, "Wrong alignment on UQuestObjectiveEntry_C");
-static_assert(sizeof(UQuestObjectiveEntry_C) == 0x322CBBB8, "Wrong size on UQuestObjectiveEntry_C");
+static_assert(alignof(UQuestObjectiveEntry_C) == 0x000008, "Wrong alignment on UQuestObjectiveEntry_C");
+static_assert(sizeof(UQuestObjectiveEntry_C) == 0x000278, "Wrong size on UQuestObjectiveEntry_C");
 static_assert(offsetof(UQuestObjectiveEntry_C, UberGraphFrame) == 0x000238, "Member 'UQuestObjectiveEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestObjectiveEntry_C, Appear) == 0x000240, "Member 'UQuestObjectiveEntry_C::Appear' has a wrong offset!");
 static_assert(offsetof(UQuestObjectiveEntry_C, BulletOverlay) == 0x000248, "Member 'UQuestObjectiveEntry_C::BulletOverlay' has a wrong offset!");

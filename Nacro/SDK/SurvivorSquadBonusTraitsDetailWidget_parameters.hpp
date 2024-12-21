@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function SurvivorSquadBonusTraitsDetailWidget.SurvivorSquadBonusTraitsDetailWidget_C.ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget final
 {
 public:
@@ -53,7 +53,7 @@ public:
 	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue;                   // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x00C0(0x11821D80)()
+	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x00C0(0x0088)()
 	bool                                          CallFunc_TryGetHomebaseSquadData_ReturnValue;      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_14A[0x2];                                      // 0x014A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -68,8 +68,8 @@ public:
 	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select4_Default;                            // 0x0168(0x0018)()
 };
-static_assert(alignof(SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget) == 0x11821780, "Wrong alignment on SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget");
-static_assert(sizeof(SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget) == 0x11821780, "Wrong size on SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget");
+static_assert(alignof(SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget) == 0x000008, "Wrong alignment on SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget");
+static_assert(sizeof(SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget) == 0x000180, "Wrong size on SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget");
 static_assert(offsetof(SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget, EntryPoint) == 0x000000, "Member 'SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget, Temp_object_Variable) == 0x000008, "Member 'SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget, Temp_object_Variable2) == 0x000010, "Member 'SurvivorSquadBonusTraitsDetailWidget_C_ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget::Temp_object_Variable2' has a wrong offset!");

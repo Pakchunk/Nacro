@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_BadgeLootBar.Results_BadgeLootBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B8 (0x02F0 - 0x0238)
 class UResults_BadgeLootBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_PostLevelUpIntro;                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_LevelUp;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_ConvertBadge;                                 // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -32,7 +32,7 @@ public:
 	UMulticastDelegateProperty_                   IntroComplete;                                     // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         InitialPoints;                                     // 0x0280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentPoints;                                     // 0x0284(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           AddBadgePointsTimer;                               // 0x0288(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           AddBadgePointsTimer;                               // 0x0288(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         TargetPoints;                                      // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentLootLevel;                                  // 0x0294(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   FinishedAddingBadgePoints;                         // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -81,8 +81,8 @@ public:
 		return GetDefaultObjImpl<UResults_BadgeLootBar_C>();
 	}
 };
-static_assert(alignof(UResults_BadgeLootBar_C) == 0x322CBBB8, "Wrong alignment on UResults_BadgeLootBar_C");
-static_assert(sizeof(UResults_BadgeLootBar_C) == 0x322CBBB8, "Wrong size on UResults_BadgeLootBar_C");
+static_assert(alignof(UResults_BadgeLootBar_C) == 0x000008, "Wrong alignment on UResults_BadgeLootBar_C");
+static_assert(sizeof(UResults_BadgeLootBar_C) == 0x0002F0, "Wrong size on UResults_BadgeLootBar_C");
 static_assert(offsetof(UResults_BadgeLootBar_C, UberGraphFrame) == 0x000238, "Member 'UResults_BadgeLootBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_BadgeLootBar_C, Anim_PostLevelUpIntro) == 0x000240, "Member 'UResults_BadgeLootBar_C::Anim_PostLevelUpIntro' has a wrong offset!");
 static_assert(offsetof(UResults_BadgeLootBar_C, Anim_LevelUp) == 0x000248, "Member 'UResults_BadgeLootBar_C::Anim_LevelUp' has a wrong offset!");

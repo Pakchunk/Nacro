@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PopupFrame.PopupFrame_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0240 - 0x0230)
 class UPopupFrame_C final : public UUserWidget
 {
 public:
@@ -34,8 +34,8 @@ public:
 		return GetDefaultObjImpl<UPopupFrame_C>();
 	}
 };
-static_assert(alignof(UPopupFrame_C) == 0x322CBBB8, "Wrong alignment on UPopupFrame_C");
-static_assert(sizeof(UPopupFrame_C) == 0x322CBBB8, "Wrong size on UPopupFrame_C");
+static_assert(alignof(UPopupFrame_C) == 0x000008, "Wrong alignment on UPopupFrame_C");
+static_assert(sizeof(UPopupFrame_C) == 0x000240, "Wrong size on UPopupFrame_C");
 static_assert(offsetof(UPopupFrame_C, Frame) == 0x000230, "Member 'UPopupFrame_C::Frame' has a wrong offset!");
 static_assert(offsetof(UPopupFrame_C, Pattern) == 0x000238, "Member 'UPopupFrame_C::Pattern' has a wrong offset!");
 

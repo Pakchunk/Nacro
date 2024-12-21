@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TooltipHeroBonuses.TooltipHeroBonuses_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0280 - 0x0230)
 class UTooltipHeroBonuses_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         HorizontalBoxBonusContainer;                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextHeroBonuses;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBoxBonusContainer;                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UTooltipHeroBonuses_C>();
 	}
 };
-static_assert(alignof(UTooltipHeroBonuses_C) == 0x322CBBB8, "Wrong alignment on UTooltipHeroBonuses_C");
-static_assert(sizeof(UTooltipHeroBonuses_C) == 0x322CBBB8, "Wrong size on UTooltipHeroBonuses_C");
+static_assert(alignof(UTooltipHeroBonuses_C) == 0x000008, "Wrong alignment on UTooltipHeroBonuses_C");
+static_assert(sizeof(UTooltipHeroBonuses_C) == 0x000280, "Wrong size on UTooltipHeroBonuses_C");
 static_assert(offsetof(UTooltipHeroBonuses_C, UberGraphFrame) == 0x000230, "Member 'UTooltipHeroBonuses_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTooltipHeroBonuses_C, HorizontalBoxBonusContainer) == 0x000238, "Member 'UTooltipHeroBonuses_C::HorizontalBoxBonusContainer' has a wrong offset!");
 static_assert(offsetof(UTooltipHeroBonuses_C, TextHeroBonuses) == 0x000240, "Member 'UTooltipHeroBonuses_C::TextHeroBonuses' has a wrong offset!");

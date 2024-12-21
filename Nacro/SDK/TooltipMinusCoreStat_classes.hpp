@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "HeroCoreStat_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Tooltip-CoreStat.Tooltip-CoreStat_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x03E8 (0x0618 - 0x0230)
 class UTooltipMinusCoreStat_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageStatIcon;                                     // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageStatShadow;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextStatDesc;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextStatLabel;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextStatValue;                                     // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FHeroCoreStat                          Data;                                              // 0x0260(0x11821C00)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FHeroCoreStat                          Data;                                              // 0x0260(0x03B0)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         Value;                                             // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UTooltipMinusCoreStat_C>();
 	}
 };
-static_assert(alignof(UTooltipMinusCoreStat_C) == 0x322CBBB8, "Wrong alignment on UTooltipMinusCoreStat_C");
-static_assert(sizeof(UTooltipMinusCoreStat_C) == 0x322CBBB8, "Wrong size on UTooltipMinusCoreStat_C");
+static_assert(alignof(UTooltipMinusCoreStat_C) == 0x000008, "Wrong alignment on UTooltipMinusCoreStat_C");
+static_assert(sizeof(UTooltipMinusCoreStat_C) == 0x000618, "Wrong size on UTooltipMinusCoreStat_C");
 static_assert(offsetof(UTooltipMinusCoreStat_C, UberGraphFrame) == 0x000230, "Member 'UTooltipMinusCoreStat_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTooltipMinusCoreStat_C, ImageStatIcon) == 0x000238, "Member 'UTooltipMinusCoreStat_C::ImageStatIcon' has a wrong offset!");
 static_assert(offsetof(UTooltipMinusCoreStat_C, ImageStatShadow) == 0x000240, "Member 'UTooltipMinusCoreStat_C::ImageStatShadow' has a wrong offset!");

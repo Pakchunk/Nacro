@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemInspectionItemExtraDetailsHostPanel.ItemInspectionItemExtraDetailsHostPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0290 - 0x0290)
 class UItemInspectionItemExtraDetailsHostPanel_C final : public UFortItemDetailsHostPanel
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UItemInspectionItemExtraDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x322CBBB8, "Wrong alignment on UItemInspectionItemExtraDetailsHostPanel_C");
-static_assert(sizeof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x322CBBB8, "Wrong size on UItemInspectionItemExtraDetailsHostPanel_C");
+static_assert(alignof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x000008, "Wrong alignment on UItemInspectionItemExtraDetailsHostPanel_C");
+static_assert(sizeof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x000290, "Wrong size on UItemInspectionItemExtraDetailsHostPanel_C");
 
 }
 

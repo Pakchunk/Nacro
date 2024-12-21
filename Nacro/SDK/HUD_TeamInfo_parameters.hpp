@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function HUD_TeamInfo.HUD_TeamInfo_C.ExecuteUbergraph_HUD_TeamInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0248 (0x0248 - 0x0000)
 struct HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo final
 {
 public:
@@ -40,14 +40,14 @@ public:
 	TArray<float>                                 CallFunc_GetTeamHitPointFractions_HealthFractions; // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<float>                                 CallFunc_GetTeamHitPointFractions_ShieldFractions; // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFortTeamMemberInfo>            CallFunc_GetTeamMembers_TeamMembers;               // 0x0090(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x00A0(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_Array_Get_Item;                           // 0x00A0(0x0190)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0234(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_235[0x3];                                      // 0x0235(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate5;             // 0x0238(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo) == 0x11821780, "Wrong alignment on HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo");
-static_assert(sizeof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo) == 0x11821780, "Wrong size on HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo");
+static_assert(alignof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo) == 0x000008, "Wrong alignment on HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo");
+static_assert(sizeof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo) == 0x000248, "Wrong size on HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo");
 static_assert(offsetof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo, EntryPoint) == 0x000000, "Member 'HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo, Temp_int_Array_Index_Variable) == 0x000018, "Member 'HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -68,8 +68,8 @@ static_assert(offsetof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo, CallFunc_Le
 static_assert(offsetof(HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo, K2Node_CreateDelegate_OutputDelegate5) == 0x000238, "Member 'HUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
 
 // Function HUD_TeamInfo.HUD_TeamInfo_C.HandleTeamMemberRemoved
-// 0x01B0 (0x01B0 - 0x0000)
-struct alignas(0x1B0) HUD_TeamInfo_C_HandleTeamMemberRemoved final
+// 0x0010 (0x0010 - 0x0000)
+struct HUD_TeamInfo_C_HandleTeamMemberRemoved final
 {
 public:
 	int32                                         Member_Index;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -78,8 +78,8 @@ public:
 	bool                                          CallFunc_RemoveChildAt_ReturnValue;                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_TeamInfo_C_HandleTeamMemberRemoved) == 0x0001B0, "Wrong alignment on HUD_TeamInfo_C_HandleTeamMemberRemoved");
-static_assert(sizeof(HUD_TeamInfo_C_HandleTeamMemberRemoved) == 0x0001B0, "Wrong size on HUD_TeamInfo_C_HandleTeamMemberRemoved");
+static_assert(alignof(HUD_TeamInfo_C_HandleTeamMemberRemoved) == 0x000004, "Wrong alignment on HUD_TeamInfo_C_HandleTeamMemberRemoved");
+static_assert(sizeof(HUD_TeamInfo_C_HandleTeamMemberRemoved) == 0x000010, "Wrong size on HUD_TeamInfo_C_HandleTeamMemberRemoved");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberRemoved, Member_Index) == 0x000000, "Member 'HUD_TeamInfo_C_HandleTeamMemberRemoved::Member_Index' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberRemoved, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'HUD_TeamInfo_C_HandleTeamMemberRemoved::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberRemoved, CallFunc_GetChildrenCount_ReturnValue) == 0x000008, "Member 'HUD_TeamInfo_C_HandleTeamMemberRemoved::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
@@ -87,11 +87,11 @@ static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberRemoved, CallFunc_RemoveCh
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberRemoved, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000D, "Member 'HUD_TeamInfo_C_HandleTeamMemberRemoved::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function HUD_TeamInfo.HUD_TeamInfo_C.HandleTeamMemberChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct HUD_TeamInfo_C_HandleTeamMemberChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    Member_Info;                                       // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    Member_Info;                                       // 0x0000(0x0190)(Parm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -101,8 +101,8 @@ public:
 	uint8                                         Pad_1A6[0x2];                                      // 0x01A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHUDMinusTeamMemberInfo_C*              CallFunc_Array_Get_Item;                           // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_TeamInfo_C_HandleTeamMemberChanged) == 0x11821780, "Wrong alignment on HUD_TeamInfo_C_HandleTeamMemberChanged");
-static_assert(sizeof(HUD_TeamInfo_C_HandleTeamMemberChanged) == 0x11821780, "Wrong size on HUD_TeamInfo_C_HandleTeamMemberChanged");
+static_assert(alignof(HUD_TeamInfo_C_HandleTeamMemberChanged) == 0x000008, "Wrong alignment on HUD_TeamInfo_C_HandleTeamMemberChanged");
+static_assert(sizeof(HUD_TeamInfo_C_HandleTeamMemberChanged) == 0x0001B0, "Wrong size on HUD_TeamInfo_C_HandleTeamMemberChanged");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberChanged, Member_Info) == 0x000000, "Member 'HUD_TeamInfo_C_HandleTeamMemberChanged::Member_Info' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberChanged, CallFunc_Array_Length_ReturnValue) == 0x000190, "Member 'HUD_TeamInfo_C_HandleTeamMemberChanged::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberChanged, CallFunc_GetContext_ReturnValue) == 0x000198, "Member 'HUD_TeamInfo_C_HandleTeamMemberChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -112,11 +112,11 @@ static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberChanged, CallFunc_Less_Int
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamMemberChanged, CallFunc_Array_Get_Item) == 0x0001A8, "Member 'HUD_TeamInfo_C_HandleTeamMemberChanged::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function HUD_TeamInfo.HUD_TeamInfo_C.ShiftTeamMembers
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01E0 (0x01E0 - 0x0000)
 struct HUD_TeamInfo_C_ShiftTeamMembers final
 {
 public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x11827900)(Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x0190)(Parm, OutParm, ReferenceParm)
 	int32                                         Index_0;                                           // 0x0190(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentIndex;                                      // 0x0194(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -126,14 +126,14 @@ public:
 	class UHUDMinusTeamMemberInfo_C*              CallFunc_Create_ReturnValue;                       // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x01B8(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x01B8(0x0010)(NoDestructor)
 	class UHUDMinusTeamMemberInfo_C*              CallFunc_Array_Get_Item;                           // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_TeamInfo_C_ShiftTeamMembers) == 0x322CBBB8, "Wrong alignment on HUD_TeamInfo_C_ShiftTeamMembers");
-static_assert(sizeof(HUD_TeamInfo_C_ShiftTeamMembers) == 0x322CBBB8, "Wrong size on HUD_TeamInfo_C_ShiftTeamMembers");
+static_assert(alignof(HUD_TeamInfo_C_ShiftTeamMembers) == 0x000008, "Wrong alignment on HUD_TeamInfo_C_ShiftTeamMembers");
+static_assert(sizeof(HUD_TeamInfo_C_ShiftTeamMembers) == 0x0001E0, "Wrong size on HUD_TeamInfo_C_ShiftTeamMembers");
 static_assert(offsetof(HUD_TeamInfo_C_ShiftTeamMembers, TeamMemberInfo) == 0x000000, "Member 'HUD_TeamInfo_C_ShiftTeamMembers::TeamMemberInfo' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_ShiftTeamMembers, Index_0) == 0x000190, "Member 'HUD_TeamInfo_C_ShiftTeamMembers::Index_0' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_ShiftTeamMembers, CurrentIndex) == 0x000194, "Member 'HUD_TeamInfo_C_ShiftTeamMembers::CurrentIndex' has a wrong offset!");
@@ -150,21 +150,22 @@ static_assert(offsetof(HUD_TeamInfo_C_ShiftTeamMembers, CallFunc_Array_Length_Re
 static_assert(offsetof(HUD_TeamInfo_C_ShiftTeamMembers, CallFunc_Less_IntInt_ReturnValue) == 0x0001DC, "Member 'HUD_TeamInfo_C_ShiftTeamMembers::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function HUD_TeamInfo.HUD_TeamInfo_C.AppendTeamMember
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct HUD_TeamInfo_C_AppendTeamMember final
 {
 public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x11827900)(Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x0190)(Parm, OutParm, ReferenceParm)
 	int32                                         CurrentIndex;                                      // 0x0190(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0194(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0194(0x0010)(NoDestructor)
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHUDMinusTeamMemberInfo_C*              CallFunc_Create_ReturnValue;                       // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_TeamInfo_C_AppendTeamMember) == 0x322CBBB8, "Wrong alignment on HUD_TeamInfo_C_AppendTeamMember");
-static_assert(sizeof(HUD_TeamInfo_C_AppendTeamMember) == 0x322CBBB8, "Wrong size on HUD_TeamInfo_C_AppendTeamMember");
+static_assert(alignof(HUD_TeamInfo_C_AppendTeamMember) == 0x000008, "Wrong alignment on HUD_TeamInfo_C_AppendTeamMember");
+static_assert(sizeof(HUD_TeamInfo_C_AppendTeamMember) == 0x0001C8, "Wrong size on HUD_TeamInfo_C_AppendTeamMember");
 static_assert(offsetof(HUD_TeamInfo_C_AppendTeamMember, TeamMemberInfo) == 0x000000, "Member 'HUD_TeamInfo_C_AppendTeamMember::TeamMemberInfo' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_AppendTeamMember, CurrentIndex) == 0x000190, "Member 'HUD_TeamInfo_C_AppendTeamMember::CurrentIndex' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_AppendTeamMember, K2Node_MakeStruct_Margin) == 0x000194, "Member 'HUD_TeamInfo_C_AppendTeamMember::K2Node_MakeStruct_Margin' has a wrong offset!");
@@ -174,8 +175,8 @@ static_assert(offsetof(HUD_TeamInfo_C_AppendTeamMember, CallFunc_Array_Add_Retur
 static_assert(offsetof(HUD_TeamInfo_C_AppendTeamMember, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0001C0, "Member 'HUD_TeamInfo_C_AppendTeamMember::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function HUD_TeamInfo.HUD_TeamInfo_C.HandleTeamHitInfoChanged
-// 0x095E (0x095E - 0x0000)
-struct alignas(0x95E) HUD_TeamInfo_C_HandleTeamHitInfoChanged final
+// 0x0048 (0x0048 - 0x0000)
+struct HUD_TeamInfo_C_HandleTeamHitInfoChanged final
 {
 public:
 	TArray<float>                                 HealthFractions;                                   // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
@@ -189,8 +190,8 @@ public:
 	class UHUDMinusTeamMemberInfo_C*              CallFunc_Array_Get_Item2;                          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_TeamInfo_C_HandleTeamHitInfoChanged) == 0x00095E, "Wrong alignment on HUD_TeamInfo_C_HandleTeamHitInfoChanged");
-static_assert(sizeof(HUD_TeamInfo_C_HandleTeamHitInfoChanged) == 0x00095E, "Wrong size on HUD_TeamInfo_C_HandleTeamHitInfoChanged");
+static_assert(alignof(HUD_TeamInfo_C_HandleTeamHitInfoChanged) == 0x000008, "Wrong alignment on HUD_TeamInfo_C_HandleTeamHitInfoChanged");
+static_assert(sizeof(HUD_TeamInfo_C_HandleTeamHitInfoChanged) == 0x000048, "Wrong size on HUD_TeamInfo_C_HandleTeamHitInfoChanged");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamHitInfoChanged, HealthFractions) == 0x000000, "Member 'HUD_TeamInfo_C_HandleTeamHitInfoChanged::HealthFractions' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamHitInfoChanged, ShieldFractions) == 0x000010, "Member 'HUD_TeamInfo_C_HandleTeamHitInfoChanged::ShieldFractions' has a wrong offset!");
 static_assert(offsetof(HUD_TeamInfo_C_HandleTeamHitInfoChanged, CallFunc_Array_LastIndex_ReturnValue) == 0x000020, "Member 'HUD_TeamInfo_C_HandleTeamHitInfoChanged::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");

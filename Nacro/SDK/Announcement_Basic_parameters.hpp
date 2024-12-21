@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function Announcement_Basic.Announcement_Basic_C.ExecuteUbergraph_Announcement_Basic
-// 0x6F560390 (0x6F560390 - 0x0000)
-struct alignas(0x6F560390) Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic final
+// 0x0070 (0x0070 - 0x0000)
+struct Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable4;                               // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic) == 0x6F560390, "Wrong alignment on Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic");
-static_assert(sizeof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic) == 0x6F560390, "Wrong size on Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic");
+static_assert(alignof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic) == 0x000008, "Wrong alignment on Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic");
+static_assert(sizeof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic) == 0x000070, "Wrong size on Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic");
 static_assert(offsetof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic, EntryPoint) == 0x000000, "Member 'Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic, Temp_bool_Variable) == 0x000004, "Member 'Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic, Temp_byte_Variable) == 0x000005, "Member 'Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic::Temp_byte_Variable' has a wrong offset!");
@@ -84,25 +84,25 @@ static_assert(offsetof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic,
 static_assert(offsetof(Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic, K2Node_Select3_Default) == 0x00006C, "Member 'Announcement_Basic_C_ExecuteUbergraph_Announcement_Basic::K2Node_Select3_Default' has a wrong offset!");
 
 // Function Announcement_Basic.Announcement_Basic_C.AnnouncementStopped
-// 0x310068 (0x310068 - 0x0000)
-struct alignas(0x310068) Announcement_Basic_C_AnnouncementStopped final
+// 0x0008 (0x0008 - 0x0000)
+struct Announcement_Basic_C_AnnouncementStopped final
 {
 public:
 	class AFortClientAnnouncement*                Announcement;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announcement_Basic_C_AnnouncementStopped) == 0x310068, "Wrong alignment on Announcement_Basic_C_AnnouncementStopped");
-static_assert(sizeof(Announcement_Basic_C_AnnouncementStopped) == 0x310068, "Wrong size on Announcement_Basic_C_AnnouncementStopped");
+static_assert(alignof(Announcement_Basic_C_AnnouncementStopped) == 0x000008, "Wrong alignment on Announcement_Basic_C_AnnouncementStopped");
+static_assert(sizeof(Announcement_Basic_C_AnnouncementStopped) == 0x000008, "Wrong size on Announcement_Basic_C_AnnouncementStopped");
 static_assert(offsetof(Announcement_Basic_C_AnnouncementStopped, Announcement) == 0x000000, "Member 'Announcement_Basic_C_AnnouncementStopped::Announcement' has a wrong offset!");
 
 // Function Announcement_Basic.Announcement_Basic_C.UpdateWidgetData
-// 0x0CC6 (0x0CC6 - 0x0000)
-struct alignas(0xCC6) Announcement_Basic_C_UpdateWidgetData final
+// 0x0008 (0x0008 - 0x0000)
+struct Announcement_Basic_C_UpdateWidgetData final
 {
 public:
 	class AFortClientAnnouncement*                Announcement;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announcement_Basic_C_UpdateWidgetData) == 0x000CC6, "Wrong alignment on Announcement_Basic_C_UpdateWidgetData");
-static_assert(sizeof(Announcement_Basic_C_UpdateWidgetData) == 0x000CC6, "Wrong size on Announcement_Basic_C_UpdateWidgetData");
+static_assert(alignof(Announcement_Basic_C_UpdateWidgetData) == 0x000008, "Wrong alignment on Announcement_Basic_C_UpdateWidgetData");
+static_assert(sizeof(Announcement_Basic_C_UpdateWidgetData) == 0x000008, "Wrong size on Announcement_Basic_C_UpdateWidgetData");
 static_assert(offsetof(Announcement_Basic_C_UpdateWidgetData, Announcement) == 0x000000, "Member 'Announcement_Basic_C_UpdateWidgetData::Announcement' has a wrong offset!");
 
 }

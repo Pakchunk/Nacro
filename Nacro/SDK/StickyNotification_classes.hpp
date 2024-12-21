@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StickyNotification.StickyNotification_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0230 (0x0460 - 0x0230)
 class UStickyNotification_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Open;                                              // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       MouseOverButton;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       HideContents;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,7 +42,7 @@ public:
 	class UTextBlock*                             TextBlock_Message;                                 // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bShown;                                            // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription                 DialogDescriptionRef;                              // 0x02C0(0x11827900)(Edit, BlueprintVisible, ContainsInstancedReference, ExposeOnSpawn)
+	struct FFortDialogDescription                 DialogDescriptionRef;                              // 0x02C0(0x0170)(Edit, BlueprintVisible, ContainsInstancedReference, ExposeOnSpawn)
 	bool                                          HasBeenMinimized;                                  // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Dissmissing;                                       // 0x0431(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_432[0x6];                                      // 0x0432(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -80,8 +80,8 @@ public:
 		return GetDefaultObjImpl<UStickyNotification_C>();
 	}
 };
-static_assert(alignof(UStickyNotification_C) == 0x322CBBB8, "Wrong alignment on UStickyNotification_C");
-static_assert(sizeof(UStickyNotification_C) == 0x322CBBB8, "Wrong size on UStickyNotification_C");
+static_assert(alignof(UStickyNotification_C) == 0x000010, "Wrong alignment on UStickyNotification_C");
+static_assert(sizeof(UStickyNotification_C) == 0x000460, "Wrong size on UStickyNotification_C");
 static_assert(offsetof(UStickyNotification_C, UberGraphFrame) == 0x000230, "Member 'UStickyNotification_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStickyNotification_C, Open) == 0x000238, "Member 'UStickyNotification_C::Open' has a wrong offset!");
 static_assert(offsetof(UStickyNotification_C, MouseOverButton) == 0x000240, "Member 'UStickyNotification_C::MouseOverButton' has a wrong offset!");

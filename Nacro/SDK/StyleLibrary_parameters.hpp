@@ -11,37 +11,37 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "FortniteGame_structs.hpp"
+#include "EFortUITheme_structs.hpp"
 #include "FortUITheme_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "EFortUIThemeColor_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteUI_structs.hpp"
-#include "EFortUITheme_structs.hpp"
 #include "FortUIStylesheet_structs.hpp"
-#include "EFortUIThemeColor_structs.hpp"
+#include "FortniteUI_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function StyleLibrary.StyleLibrary_C.Get Theme Color
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0C48 (0x0C48 - 0x0000)
 struct StyleLibrary_C_Get_Theme_Color final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	EFortUITheme                                  Theme_Type;                                        // 0x0BB0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortUIThemeColor                             Color_Type;                                        // 0x0BB1(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BB2[0x6];                                      // 0x0BB2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0BB8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Theme_Color;                                       // 0x0BC0(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Theme_Color;                                       // 0x0BC0(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortUIThemeColor                             Temp_byte_Variable;                                // 0x0BD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BD1[0x3];                                      // 0x0BD1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUITheme                           CallFunc_Get_Theme_Theme;                          // 0x0BD4(0x11821300)(HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0C34(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortUITheme                           CallFunc_Get_Theme_Theme;                          // 0x0BD4(0x0060)(HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0C34(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Theme_Color) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Theme_Color");
-static_assert(sizeof(StyleLibrary_C_Get_Theme_Color) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Theme_Color");
+static_assert(alignof(StyleLibrary_C_Get_Theme_Color) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Theme_Color");
+static_assert(sizeof(StyleLibrary_C_Get_Theme_Color) == 0x000C48, "Wrong size on StyleLibrary_C_Get_Theme_Color");
 static_assert(offsetof(StyleLibrary_C_Get_Theme_Color, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Theme_Color::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Theme_Color, Theme_Type) == 0x000BB0, "Member 'StyleLibrary_C_Get_Theme_Color::Theme_Type' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Theme_Color, Color_Type) == 0x000BB1, "Member 'StyleLibrary_C_Get_Theme_Color::Color_Type' has a wrong offset!");
@@ -52,21 +52,21 @@ static_assert(offsetof(StyleLibrary_C_Get_Theme_Color, CallFunc_Get_Theme_Theme)
 static_assert(offsetof(StyleLibrary_C_Get_Theme_Color, K2Node_Select_Default) == 0x000C34, "Member 'StyleLibrary_C_Get_Theme_Color::K2Node_Select_Default' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Theme
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0C88 (0x0C88 - 0x0000)
 struct StyleLibrary_C_Get_Theme final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	EFortUITheme                                  Theme_Type;                                        // 0x0BB0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BB1[0x7];                                      // 0x0BB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0BB8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUITheme                           Theme;                                             // 0x0BC0(0x11821300)(Parm, OutParm, HasGetValueTypeHash)
+	struct FFortUITheme                           Theme;                                             // 0x0BC0(0x0060)(Parm, OutParm, HasGetValueTypeHash)
 	EFortUITheme                                  Temp_byte_Variable;                                // 0x0C20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C21[0x3];                                      // 0x0C21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUITheme                           K2Node_Select_Default;                             // 0x0C24(0x11821300)(HasGetValueTypeHash)
+	struct FFortUITheme                           K2Node_Select_Default;                             // 0x0C24(0x0060)(HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Theme) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Theme");
-static_assert(sizeof(StyleLibrary_C_Get_Theme) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Theme");
+static_assert(alignof(StyleLibrary_C_Get_Theme) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Theme");
+static_assert(sizeof(StyleLibrary_C_Get_Theme) == 0x000C88, "Wrong size on StyleLibrary_C_Get_Theme");
 static_assert(offsetof(StyleLibrary_C_Get_Theme, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Theme::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Theme, Theme_Type) == 0x000BB0, "Member 'StyleLibrary_C_Get_Theme::Theme_Type' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Theme, __WorldContext) == 0x000BB8, "Member 'StyleLibrary_C_Get_Theme::__WorldContext' has a wrong offset!");
@@ -75,19 +75,19 @@ static_assert(offsetof(StyleLibrary_C_Get_Theme, Temp_byte_Variable) == 0x000C20
 static_assert(offsetof(StyleLibrary_C_Get_Theme, K2Node_Select_Default) == 0x000C24, "Member 'StyleLibrary_C_Get_Theme::K2Node_Select_Default' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Standard Icon Size
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0C58 (0x0C58 - 0x0000)
 struct StyleLibrary_C_Get_Standard_Icon_Size final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	EFortBrushSize                                Brush_Size;                                        // 0x0BB0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BB1[0x7];                                      // 0x0BB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0BB8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Icon_Size;                                         // 0x0BC0(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0BC8(0x322CBBB8)(ConstParm)
+	struct FVector2D                              Icon_Size;                                         // 0x0BC0(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0BC8(0x0090)(ConstParm)
 };
-static_assert(alignof(StyleLibrary_C_Get_Standard_Icon_Size) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Standard_Icon_Size");
-static_assert(sizeof(StyleLibrary_C_Get_Standard_Icon_Size) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Standard_Icon_Size");
+static_assert(alignof(StyleLibrary_C_Get_Standard_Icon_Size) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Standard_Icon_Size");
+static_assert(sizeof(StyleLibrary_C_Get_Standard_Icon_Size) == 0x000C58, "Wrong size on StyleLibrary_C_Get_Standard_Icon_Size");
 static_assert(offsetof(StyleLibrary_C_Get_Standard_Icon_Size, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Standard_Icon_Size::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Standard_Icon_Size, Brush_Size) == 0x000BB0, "Member 'StyleLibrary_C_Get_Standard_Icon_Size::Brush_Size' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Standard_Icon_Size, __WorldContext) == 0x000BB8, "Member 'StyleLibrary_C_Get_Standard_Icon_Size::__WorldContext' has a wrong offset!");
@@ -95,19 +95,19 @@ static_assert(offsetof(StyleLibrary_C_Get_Standard_Icon_Size, Icon_Size) == 0x00
 static_assert(offsetof(StyleLibrary_C_Get_Standard_Icon_Size, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x000BC8, "Member 'StyleLibrary_C_Get_Standard_Icon_Size::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Item Icon Size
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0C58 (0x0C58 - 0x0000)
 struct StyleLibrary_C_Get_Item_Icon_Size final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	EFortBrushSize                                Brush_Size;                                        // 0x0BB0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BB1[0x7];                                      // 0x0BB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0BB8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Icon_Size;                                         // 0x0BC0(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0BC8(0x322CBBB8)(ConstParm)
+	struct FVector2D                              Icon_Size;                                         // 0x0BC0(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0BC8(0x0090)(ConstParm)
 };
-static_assert(alignof(StyleLibrary_C_Get_Item_Icon_Size) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Item_Icon_Size");
-static_assert(sizeof(StyleLibrary_C_Get_Item_Icon_Size) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Item_Icon_Size");
+static_assert(alignof(StyleLibrary_C_Get_Item_Icon_Size) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Item_Icon_Size");
+static_assert(sizeof(StyleLibrary_C_Get_Item_Icon_Size) == 0x000C58, "Wrong size on StyleLibrary_C_Get_Item_Icon_Size");
 static_assert(offsetof(StyleLibrary_C_Get_Item_Icon_Size, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Item_Icon_Size::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Item_Icon_Size, Brush_Size) == 0x000BB0, "Member 'StyleLibrary_C_Get_Item_Icon_Size::Brush_Size' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Item_Icon_Size, __WorldContext) == 0x000BB8, "Member 'StyleLibrary_C_Get_Item_Icon_Size::__WorldContext' has a wrong offset!");
@@ -115,49 +115,49 @@ static_assert(offsetof(StyleLibrary_C_Get_Item_Icon_Size, Icon_Size) == 0x000BC0
 static_assert(offsetof(StyleLibrary_C_Get_Item_Icon_Size, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x000BC8, "Member 'StyleLibrary_C_Get_Item_Icon_Size::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Buff Color
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0BC8 (0x0BC8 - 0x0000)
 struct StyleLibrary_C_Get_Buff_Color final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0BB0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0BB8(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0BB8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Buff_Color) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Buff_Color");
-static_assert(sizeof(StyleLibrary_C_Get_Buff_Color) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Buff_Color");
+static_assert(alignof(StyleLibrary_C_Get_Buff_Color) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Buff_Color");
+static_assert(sizeof(StyleLibrary_C_Get_Buff_Color) == 0x000BC8, "Wrong size on StyleLibrary_C_Get_Buff_Color");
 static_assert(offsetof(StyleLibrary_C_Get_Buff_Color, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Buff_Color::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Buff_Color, __WorldContext) == 0x000BB0, "Member 'StyleLibrary_C_Get_Buff_Color::__WorldContext' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Buff_Color, Color) == 0x000BB8, "Member 'StyleLibrary_C_Get_Buff_Color::Color' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Debuff Color
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0BC8 (0x0BC8 - 0x0000)
 struct StyleLibrary_C_Get_Debuff_Color final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0BB0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0BB8(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0BB8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Debuff_Color) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Debuff_Color");
-static_assert(sizeof(StyleLibrary_C_Get_Debuff_Color) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Debuff_Color");
+static_assert(alignof(StyleLibrary_C_Get_Debuff_Color) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Debuff_Color");
+static_assert(sizeof(StyleLibrary_C_Get_Debuff_Color) == 0x000BC8, "Wrong size on StyleLibrary_C_Get_Debuff_Color");
 static_assert(offsetof(StyleLibrary_C_Get_Debuff_Color, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Debuff_Color::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Debuff_Color, __WorldContext) == 0x000BB0, "Member 'StyleLibrary_C_Get_Debuff_Color::__WorldContext' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Debuff_Color, Color) == 0x000BB8, "Member 'StyleLibrary_C_Get_Debuff_Color::Color' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Item Size
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0C58 (0x0C58 - 0x0000)
 struct StyleLibrary_C_Get_Item_Size final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	EFortBrushSize                                Brush_Size;                                        // 0x0BB0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BB1[0x7];                                      // 0x0BB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0BB8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Item_Size;                                         // 0x0BC0(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0BC8(0x322CBBB8)(ConstParm)
+	struct FVector2D                              Item_Size;                                         // 0x0BC0(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0BC8(0x0090)(ConstParm)
 };
-static_assert(alignof(StyleLibrary_C_Get_Item_Size) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Item_Size");
-static_assert(sizeof(StyleLibrary_C_Get_Item_Size) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Item_Size");
+static_assert(alignof(StyleLibrary_C_Get_Item_Size) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Item_Size");
+static_assert(sizeof(StyleLibrary_C_Get_Item_Size) == 0x000C58, "Wrong size on StyleLibrary_C_Get_Item_Size");
 static_assert(offsetof(StyleLibrary_C_Get_Item_Size, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Item_Size::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Item_Size, Brush_Size) == 0x000BB0, "Member 'StyleLibrary_C_Get_Item_Size::Brush_Size' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Item_Size, __WorldContext) == 0x000BB8, "Member 'StyleLibrary_C_Get_Item_Size::__WorldContext' has a wrong offset!");
@@ -165,95 +165,95 @@ static_assert(offsetof(StyleLibrary_C_Get_Item_Size, Item_Size) == 0x000BC0, "Me
 static_assert(offsetof(StyleLibrary_C_Get_Item_Size, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x000BC8, "Member 'StyleLibrary_C_Get_Item_Size::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Unique Color
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0BC8 (0x0BC8 - 0x0000)
 struct StyleLibrary_C_Get_Unique_Color final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0BB0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0BB8(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0BB8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Unique_Color) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Unique_Color");
-static_assert(sizeof(StyleLibrary_C_Get_Unique_Color) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Unique_Color");
+static_assert(alignof(StyleLibrary_C_Get_Unique_Color) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Unique_Color");
+static_assert(sizeof(StyleLibrary_C_Get_Unique_Color) == 0x000BC8, "Wrong size on StyleLibrary_C_Get_Unique_Color");
 static_assert(offsetof(StyleLibrary_C_Get_Unique_Color, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Unique_Color::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Unique_Color, __WorldContext) == 0x000BB0, "Member 'StyleLibrary_C_Get_Unique_Color::__WorldContext' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Unique_Color, Color) == 0x000BB8, "Member 'StyleLibrary_C_Get_Unique_Color::Color' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Fire Elemental Color
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0BC8 (0x0BC8 - 0x0000)
 struct StyleLibrary_C_Get_Fire_Elemental_Color final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0BB0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0BB8(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0BB8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Fire_Elemental_Color) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Fire_Elemental_Color");
-static_assert(sizeof(StyleLibrary_C_Get_Fire_Elemental_Color) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Fire_Elemental_Color");
+static_assert(alignof(StyleLibrary_C_Get_Fire_Elemental_Color) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Fire_Elemental_Color");
+static_assert(sizeof(StyleLibrary_C_Get_Fire_Elemental_Color) == 0x000BC8, "Wrong size on StyleLibrary_C_Get_Fire_Elemental_Color");
 static_assert(offsetof(StyleLibrary_C_Get_Fire_Elemental_Color, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Fire_Elemental_Color::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Fire_Elemental_Color, __WorldContext) == 0x000BB0, "Member 'StyleLibrary_C_Get_Fire_Elemental_Color::__WorldContext' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Fire_Elemental_Color, Color) == 0x000BB8, "Member 'StyleLibrary_C_Get_Fire_Elemental_Color::Color' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Ice Elemental Color
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0BC8 (0x0BC8 - 0x0000)
 struct StyleLibrary_C_Get_Ice_Elemental_Color final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0BB0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0BB8(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0BB8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Ice_Elemental_Color) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Ice_Elemental_Color");
-static_assert(sizeof(StyleLibrary_C_Get_Ice_Elemental_Color) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Ice_Elemental_Color");
+static_assert(alignof(StyleLibrary_C_Get_Ice_Elemental_Color) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Ice_Elemental_Color");
+static_assert(sizeof(StyleLibrary_C_Get_Ice_Elemental_Color) == 0x000BC8, "Wrong size on StyleLibrary_C_Get_Ice_Elemental_Color");
 static_assert(offsetof(StyleLibrary_C_Get_Ice_Elemental_Color, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Ice_Elemental_Color::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Ice_Elemental_Color, __WorldContext) == 0x000BB0, "Member 'StyleLibrary_C_Get_Ice_Elemental_Color::__WorldContext' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Ice_Elemental_Color, Color) == 0x000BB8, "Member 'StyleLibrary_C_Get_Ice_Elemental_Color::Color' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Bolt Elemental Color
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0BC8 (0x0BC8 - 0x0000)
 struct StyleLibrary_C_Get_Bolt_Elemental_Color final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0BB0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0BB8(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0BB8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Bolt_Elemental_Color) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Bolt_Elemental_Color");
-static_assert(sizeof(StyleLibrary_C_Get_Bolt_Elemental_Color) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Bolt_Elemental_Color");
+static_assert(alignof(StyleLibrary_C_Get_Bolt_Elemental_Color) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Bolt_Elemental_Color");
+static_assert(sizeof(StyleLibrary_C_Get_Bolt_Elemental_Color) == 0x000BC8, "Wrong size on StyleLibrary_C_Get_Bolt_Elemental_Color");
 static_assert(offsetof(StyleLibrary_C_Get_Bolt_Elemental_Color, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_Bolt_Elemental_Color::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Bolt_Elemental_Color, __WorldContext) == 0x000BB0, "Member 'StyleLibrary_C_Get_Bolt_Elemental_Color::__WorldContext' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Bolt_Elemental_Color, Color) == 0x000BB8, "Member 'StyleLibrary_C_Get_Bolt_Elemental_Color::Color' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Base & Buff Colors
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0C98 (0x0C98 - 0x0000)
 struct StyleLibrary_C_Get_Base___Buff_Colors final
 {
 public:
 	EFortStatValueDisplayType                     Display_Type;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortBuffState                                Buff_State;                                        // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0008(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0008(0x0BB0)(Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0BB8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Base;                                              // 0x0BC0(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           buff;                                              // 0x0BD0(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0BE0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Buff_Color_Color;                     // 0x0BF0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Debuff_Color_Color;                   // 0x0C00(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Unique_Color_Color;                   // 0x0C10(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Fire_Elemental_Color_Color;           // 0x0C20(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Ice_Elemental_Color_Color;            // 0x0C30(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Bolt_Elemental_Color_Color;           // 0x0C40(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Base;                                              // 0x0BC0(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           buff;                                              // 0x0BD0(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0BE0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Buff_Color_Color;                     // 0x0BF0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Debuff_Color_Color;                   // 0x0C00(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Unique_Color_Color;                   // 0x0C10(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Fire_Elemental_Color_Color;           // 0x0C20(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Ice_Elemental_Color_Color;            // 0x0C30(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Bolt_Elemental_Color_Color;           // 0x0C40(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortStatValueDisplayType                     Temp_byte_Variable;                                // 0x0C50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C51[0x3];                                      // 0x0C51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0C54(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0C64(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0C54(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0C64(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuffState                                Temp_byte_Variable2;                               // 0x0C74(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C75[0x3];                                      // 0x0C75(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0C78(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0C88(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0C78(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0C88(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_Base___Buff_Colors) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_Base___Buff_Colors");
-static_assert(sizeof(StyleLibrary_C_Get_Base___Buff_Colors) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_Base___Buff_Colors");
+static_assert(alignof(StyleLibrary_C_Get_Base___Buff_Colors) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Base___Buff_Colors");
+static_assert(sizeof(StyleLibrary_C_Get_Base___Buff_Colors) == 0x000C98, "Wrong size on StyleLibrary_C_Get_Base___Buff_Colors");
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Display_Type) == 0x000000, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Display_Type' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Buff_State) == 0x000001, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Buff_State' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, Stylesheet) == 0x000008, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::Stylesheet' has a wrong offset!");
@@ -275,20 +275,20 @@ static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, K2Node_Select_Defa
 static_assert(offsetof(StyleLibrary_C_Get_Base___Buff_Colors, K2Node_Select2_Default) == 0x000C88, "Member 'StyleLibrary_C_Get_Base___Buff_Colors::K2Node_Select2_Default' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.ResizeBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct StyleLibrary_C_ResizeBrush final
 {
 public:
 	EFortBrushSize                                BrushSize;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            BaseBrush;                                         // 0x0008(0x322CBBB8)(Parm)
+	struct FSlateBrush                            BaseBrush;                                         // 0x0008(0x0090)(Parm)
 	class UObject*                                __WorldContext;                                    // 0x0098(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            NewParam;                                          // 0x00A0(0x322CBBB8)(Parm, OutParm)
-	struct FVector2D                              CallFunc_Get_Standard_Icon_Size_Icon_Size;         // 0x0130(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0138(0x322CBBB8)()
+	struct FSlateBrush                            NewParam;                                          // 0x00A0(0x0090)(Parm, OutParm)
+	struct FVector2D                              CallFunc_Get_Standard_Icon_Size_Icon_Size;         // 0x0130(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0138(0x0090)()
 };
-static_assert(alignof(StyleLibrary_C_ResizeBrush) == 0x11827900, "Wrong alignment on StyleLibrary_C_ResizeBrush");
-static_assert(sizeof(StyleLibrary_C_ResizeBrush) == 0x11827900, "Wrong size on StyleLibrary_C_ResizeBrush");
+static_assert(alignof(StyleLibrary_C_ResizeBrush) == 0x000008, "Wrong alignment on StyleLibrary_C_ResizeBrush");
+static_assert(sizeof(StyleLibrary_C_ResizeBrush) == 0x0001C8, "Wrong size on StyleLibrary_C_ResizeBrush");
 static_assert(offsetof(StyleLibrary_C_ResizeBrush, BrushSize) == 0x000000, "Member 'StyleLibrary_C_ResizeBrush::BrushSize' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_ResizeBrush, BaseBrush) == 0x000008, "Member 'StyleLibrary_C_ResizeBrush::BaseBrush' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_ResizeBrush, __WorldContext) == 0x000098, "Member 'StyleLibrary_C_ResizeBrush::__WorldContext' has a wrong offset!");
@@ -297,32 +297,32 @@ static_assert(offsetof(StyleLibrary_C_ResizeBrush, CallFunc_Get_Standard_Icon_Si
 static_assert(offsetof(StyleLibrary_C_ResizeBrush, K2Node_MakeStruct_SlateBrush) == 0x000138, "Member 'StyleLibrary_C_ResizeBrush::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get HarvestWeakPoint Color
-// 0x2CF5BC00 (0x2CF5BC00 - 0x0000)
+// 0x0BC8 (0x0BC8 - 0x0000)
 struct StyleLibrary_C_Get_HarvestWeakPoint_Color final
 {
 public:
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x2CF5BC00)(Parm, HasGetValueTypeHash)
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0000(0x0BB0)(Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0BB0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           StyleSheetOut;                                     // 0x0BB8(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           StyleSheetOut;                                     // 0x0BB8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StyleLibrary_C_Get_HarvestWeakPoint_Color) == 0x2CF5BC00, "Wrong alignment on StyleLibrary_C_Get_HarvestWeakPoint_Color");
-static_assert(sizeof(StyleLibrary_C_Get_HarvestWeakPoint_Color) == 0x2CF5BC00, "Wrong size on StyleLibrary_C_Get_HarvestWeakPoint_Color");
+static_assert(alignof(StyleLibrary_C_Get_HarvestWeakPoint_Color) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_HarvestWeakPoint_Color");
+static_assert(sizeof(StyleLibrary_C_Get_HarvestWeakPoint_Color) == 0x000BC8, "Wrong size on StyleLibrary_C_Get_HarvestWeakPoint_Color");
 static_assert(offsetof(StyleLibrary_C_Get_HarvestWeakPoint_Color, Stylesheet) == 0x000000, "Member 'StyleLibrary_C_Get_HarvestWeakPoint_Color::Stylesheet' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_HarvestWeakPoint_Color, __WorldContext) == 0x000BB0, "Member 'StyleLibrary_C_Get_HarvestWeakPoint_Color::__WorldContext' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_HarvestWeakPoint_Color, StyleSheetOut) == 0x000BB8, "Member 'StyleLibrary_C_Get_HarvestWeakPoint_Color::StyleSheetOut' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Conning Color From Difficulty Value
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0290 (0x0290 - 0x0000)
 struct StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value final
 {
 public:
 	int32                                         Player_Skill_Level;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Content_Difficulty_Level;                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameDifficultyInfo                    Game_Difficulty_Info;                              // 0x0008(0x11821780)(Parm)
+	struct FGameDifficultyInfo                    Game_Difficulty_Info;                              // 0x0008(0x0080)(Parm)
 	int32                                         Content_Skill_Points;                              // 0x0088(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0090(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Difficulty_Linear_Color;                           // 0x0098(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Difficulty_Linear_Color;                           // 0x0098(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Success;                                           // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ToolTipText;                                       // 0x00B0(0x0018)(Parm, OutParm)
@@ -346,7 +346,7 @@ public:
 	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 SPCutoffValues;                                    // 0x0170(0x0010)(Edit, ZeroConstructor)
 	int32                                         Stonewood_VLT_Skill_Level;                         // 0x0180(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DifficultyColor;                                   // 0x0184(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DifficultyColor;                                   // 0x0184(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         BucketOffsetValue;                                 // 0x0194(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -381,12 +381,12 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x023B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FLinearColor>                   K2Node_MakeArray_Array6;                           // 0x0240(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FLinearColor                           CallFunc_Array_Get_Item4;                          // 0x0250(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Array_Get_Item4;                          // 0x0250(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Array_Get_Item5;                          // 0x0260(0x0018)()
 	class FText                                   CallFunc_Array_Get_Item6;                          // 0x0278(0x0018)()
 };
-static_assert(alignof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value) == 0x11821780, "Wrong alignment on StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value");
-static_assert(sizeof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value) == 0x11821780, "Wrong size on StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value");
+static_assert(alignof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value");
+static_assert(sizeof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value) == 0x000290, "Wrong size on StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, Player_Skill_Level) == 0x000000, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::Player_Skill_Level' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, Content_Difficulty_Level) == 0x000004, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::Content_Difficulty_Level' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, Game_Difficulty_Info) == 0x000008, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::Game_Difficulty_Info' has a wrong offset!");
@@ -444,21 +444,21 @@ static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, C
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value, CallFunc_Array_Get_Item6) == 0x000278, "Member 'StyleLibrary_C_Get_Conning_Color_From_Difficulty_Value::CallFunc_Array_Get_Item6' has a wrong offset!");
 
 // Function StyleLibrary.StyleLibrary_C.Get Conning Color For Specific Difficulty
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty final
 {
 public:
 	int32                                         Difficulty_Value;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Difficulty_Linear_Color;                           // 0x0010(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Difficulty_Linear_Color;                           // 0x0010(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Invalid;                                           // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           DifficultyColor;                                   // 0x0024(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DifficultyColor;                                   // 0x0024(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty) == 0x11821300, "Wrong alignment on StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty");
-static_assert(sizeof(StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty) == 0x11821300, "Wrong size on StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty");
+static_assert(alignof(StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty) == 0x000008, "Wrong alignment on StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty");
+static_assert(sizeof(StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty) == 0x000038, "Wrong size on StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty, Difficulty_Value) == 0x000000, "Member 'StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty::Difficulty_Value' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty, __WorldContext) == 0x000008, "Member 'StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty::__WorldContext' has a wrong offset!");
 static_assert(offsetof(StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty, Difficulty_Linear_Color) == 0x000010, "Member 'StyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty::Difficulty_Linear_Color' has a wrong offset!");

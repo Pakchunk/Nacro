@@ -18,14 +18,15 @@ namespace SDK
 {
 
 // Class Party.PartyGameState
-// 0x11821758 (0x11821780 - 0x0028)
+// 0x05B0 (0x05D8 - 0x0028)
 #pragma pack(push, 0x1)
-class alignas(0x11821780) UPartyGameState : public UObject
+class alignas(0x08) UPartyGameState : public UObject
 {
 public:
 	class UScriptStruct*                          PartyStateRefDef;                                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       OwningUserId;                                      // 0x0038(0x11821780)(Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FUniqueNetIdRepl                       OwningUserId;                                      // 0x0038(0x0018)(Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_50[0x118];                                     // 0x0050(0x0118)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bDebugAcceptingMembers;                            // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_169[0x18];                                     // 0x0169(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bStayWithPartyOnDisconnect;                        // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -47,8 +48,8 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPartyGameState) == 0x11821780, "Wrong alignment on UPartyGameState");
-static_assert(sizeof(UPartyGameState) == 0x11821780, "Wrong size on UPartyGameState");
+static_assert(alignof(UPartyGameState) == 0x000008, "Wrong alignment on UPartyGameState");
+static_assert(sizeof(UPartyGameState) == 0x0005D8, "Wrong size on UPartyGameState");
 static_assert(offsetof(UPartyGameState, PartyStateRefDef) == 0x000028, "Member 'UPartyGameState::PartyStateRefDef' has a wrong offset!");
 static_assert(offsetof(UPartyGameState, OwningUserId) == 0x000038, "Member 'UPartyGameState::OwningUserId' has a wrong offset!");
 static_assert(offsetof(UPartyGameState, bDebugAcceptingMembers) == 0x000168, "Member 'UPartyGameState::bDebugAcceptingMembers' has a wrong offset!");
@@ -84,12 +85,11 @@ static_assert(offsetof(UChatroom, MaxChatRoomRetries) == 0x000038, "Member 'UCha
 static_assert(offsetof(UChatroom, NumChatRoomRetries) == 0x00003C, "Member 'UChatroom::NumChatRoomRetries' has a wrong offset!");
 
 // Class Party.PartyMemberState
-// 0x11821758 (0x11821780 - 0x0028)
-#pragma pack(push, 0x1)
-class alignas(0x11821780) UPartyMemberState : public UObject
+// 0x0050 (0x0078 - 0x0028)
+class UPartyMemberState : public UObject
 {
 public:
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0028(0x11821780)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0028(0x0018)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   DisplayName;                                       // 0x0040(0x0018)(BlueprintVisible, BlueprintReadOnly, Transient, NativeAccessSpecifierPublic)
 	class UScriptStruct*                          MemberStateRefDef;                                 // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_60[0x10];                                      // 0x0060(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -110,9 +110,8 @@ public:
 		return GetDefaultObjImpl<UPartyMemberState>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UPartyMemberState) == 0x11821780, "Wrong alignment on UPartyMemberState");
-static_assert(sizeof(UPartyMemberState) == 0x11821780, "Wrong size on UPartyMemberState");
+static_assert(alignof(UPartyMemberState) == 0x000008, "Wrong alignment on UPartyMemberState");
+static_assert(sizeof(UPartyMemberState) == 0x000078, "Wrong size on UPartyMemberState");
 static_assert(offsetof(UPartyMemberState, UniqueId) == 0x000028, "Member 'UPartyMemberState::UniqueId' has a wrong offset!");
 static_assert(offsetof(UPartyMemberState, DisplayName) == 0x000040, "Member 'UPartyMemberState::DisplayName' has a wrong offset!");
 static_assert(offsetof(UPartyMemberState, MemberStateRefDef) == 0x000058, "Member 'UPartyMemberState::MemberStateRefDef' has a wrong offset!");

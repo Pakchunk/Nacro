@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DailyRewardsMissingFoundersPack.DailyRewardsMissingFoundersPack_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x02F8 - 0x02D0)
 class UDailyRewardsMissingFoundersPack_C final : public UFortDailyRewardsSchedule
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(Transient, DuplicateTransient)
 	class UFortMultiSizeItemCard*                 FortItemCard;                                      // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       MESSAGE;                                           // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         NumMaxEpicRewards;                                 // 0x02E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UDailyRewardsMissingFoundersPack_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsMissingFoundersPack_C) == 0x322CBBB8, "Wrong alignment on UDailyRewardsMissingFoundersPack_C");
-static_assert(sizeof(UDailyRewardsMissingFoundersPack_C) == 0x322CBBB8, "Wrong size on UDailyRewardsMissingFoundersPack_C");
+static_assert(alignof(UDailyRewardsMissingFoundersPack_C) == 0x000008, "Wrong alignment on UDailyRewardsMissingFoundersPack_C");
+static_assert(sizeof(UDailyRewardsMissingFoundersPack_C) == 0x0002F8, "Wrong size on UDailyRewardsMissingFoundersPack_C");
 static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, UberGraphFrame) == 0x0002D0, "Member 'UDailyRewardsMissingFoundersPack_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, FortItemCard) == 0x0002D8, "Member 'UDailyRewardsMissingFoundersPack_C::FortItemCard' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, MESSAGE) == 0x0002E0, "Member 'UDailyRewardsMissingFoundersPack_C::MESSAGE' has a wrong offset!");

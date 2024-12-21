@@ -88,8 +88,8 @@ static_assert(sizeof(CollectionBar_C_SetAchievedCount) == 0x000004, "Wrong size 
 static_assert(offsetof(CollectionBar_C_SetAchievedCount, InAchievedCount) == 0x000000, "Member 'CollectionBar_C_SetAchievedCount::InAchievedCount' has a wrong offset!");
 
 // Function CollectionBar.CollectionBar_C.IsAchievedCountInRange
-// 0x1154 (0x1154 - 0x0000)
-struct alignas(0x1154) CollectionBar_C_IsAchievedCountInRange final
+// 0x0004 (0x0004 - 0x0000)
+struct CollectionBar_C_IsAchievedCountInRange final
 {
 public:
 	bool                                          bIsInRange;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -97,24 +97,24 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBar_C_IsAchievedCountInRange) == 0x001154, "Wrong alignment on CollectionBar_C_IsAchievedCountInRange");
-static_assert(sizeof(CollectionBar_C_IsAchievedCountInRange) == 0x001154, "Wrong size on CollectionBar_C_IsAchievedCountInRange");
+static_assert(alignof(CollectionBar_C_IsAchievedCountInRange) == 0x000001, "Wrong alignment on CollectionBar_C_IsAchievedCountInRange");
+static_assert(sizeof(CollectionBar_C_IsAchievedCountInRange) == 0x000004, "Wrong size on CollectionBar_C_IsAchievedCountInRange");
 static_assert(offsetof(CollectionBar_C_IsAchievedCountInRange, bIsInRange) == 0x000000, "Member 'CollectionBar_C_IsAchievedCountInRange::bIsInRange' has a wrong offset!");
 static_assert(offsetof(CollectionBar_C_IsAchievedCountInRange, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000001, "Member 'CollectionBar_C_IsAchievedCountInRange::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionBar_C_IsAchievedCountInRange, CallFunc_Less_IntInt_ReturnValue) == 0x000002, "Member 'CollectionBar_C_IsAchievedCountInRange::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionBar_C_IsAchievedCountInRange, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'CollectionBar_C_IsAchievedCountInRange::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function CollectionBar.CollectionBar_C.SetIcon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct CollectionBar_C_SetIcon final
 {
 public:
-	struct FSlateBrush                            InIcon;                                            // 0x0000(0x322CBBB8)(Parm)
+	struct FSlateBrush                            InIcon;                                            // 0x0000(0x0090)(Parm)
 	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBar_C_SetIcon) == 0x11827900, "Wrong alignment on CollectionBar_C_SetIcon");
-static_assert(sizeof(CollectionBar_C_SetIcon) == 0x11827900, "Wrong size on CollectionBar_C_SetIcon");
+static_assert(alignof(CollectionBar_C_SetIcon) == 0x000008, "Wrong alignment on CollectionBar_C_SetIcon");
+static_assert(sizeof(CollectionBar_C_SetIcon) == 0x0000A0, "Wrong size on CollectionBar_C_SetIcon");
 static_assert(offsetof(CollectionBar_C_SetIcon, InIcon) == 0x000000, "Member 'CollectionBar_C_SetIcon::InIcon' has a wrong offset!");
 static_assert(offsetof(CollectionBar_C_SetIcon, K2Node_DynamicCast_AsHorizontal_Box_Slot) == 0x000090, "Member 'CollectionBar_C_SetIcon::K2Node_DynamicCast_AsHorizontal_Box_Slot' has a wrong offset!");
 static_assert(offsetof(CollectionBar_C_SetIcon, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'CollectionBar_C_SetIcon::K2Node_DynamicCast_bSuccess' has a wrong offset!");

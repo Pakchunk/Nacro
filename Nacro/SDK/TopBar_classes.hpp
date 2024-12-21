@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TopBar.TopBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0108 (0x0518 - 0x0410)
 class UTopBar_C final : public UFortTopBarPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       PartyJoinFlash;                                    // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       IntroMainMenu;                                     // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_FortLiveStreamGrantWindowExpires_C* BP_FortLiveStreamGrantWindowExpires;               // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -50,8 +50,8 @@ public:
 	class AFort_Entry_Music_Controller_BP_C*      Fort_Entry_Music_Controller;                       // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFrontEndCamera                               LastNavigationRequestCameraState;                  // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           HeroSquadPulseTimer;                               // 0x04D0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FTimerHandle                           DisableHeroSquadPulseTimer;                        // 0x04D8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           HeroSquadPulseTimer;                               // 0x04D0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           DisableHeroSquadPulseTimer;                        // 0x04D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	UMulticastDelegateProperty_                   MainMenuStateChanged;                              // 0x04E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UFortGameFeedbackBase*                  FeedbackWidget;                                    // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FEdgePower;                                        // 0x04F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -115,8 +115,8 @@ public:
 		return GetDefaultObjImpl<UTopBar_C>();
 	}
 };
-static_assert(alignof(UTopBar_C) == 0x322CBBB8, "Wrong alignment on UTopBar_C");
-static_assert(sizeof(UTopBar_C) == 0x322CBBB8, "Wrong size on UTopBar_C");
+static_assert(alignof(UTopBar_C) == 0x000008, "Wrong alignment on UTopBar_C");
+static_assert(sizeof(UTopBar_C) == 0x000518, "Wrong size on UTopBar_C");
 static_assert(offsetof(UTopBar_C, UberGraphFrame) == 0x000410, "Member 'UTopBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTopBar_C, PartyJoinFlash) == 0x000418, "Member 'UTopBar_C::PartyJoinFlash' has a wrong offset!");
 static_assert(offsetof(UTopBar_C, IntroMainMenu) == 0x000420, "Member 'UTopBar_C::IntroMainMenu' has a wrong offset!");

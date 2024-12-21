@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0078 (0x0168 - 0x00F0)
 class UAmbientControllerComponent_Athena_C final : public UActorComponent
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00F0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00F0(0x0008)(Transient, DuplicateTransient)
 	class USoundBase*                             Loop_Morning;                                      // 0x00F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Loop_Evening;                                      // 0x0100(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Loop_Indoors;                                      // 0x0108(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -72,8 +72,8 @@ public:
 		return GetDefaultObjImpl<UAmbientControllerComponent_Athena_C>();
 	}
 };
-static_assert(alignof(UAmbientControllerComponent_Athena_C) == 0x11821D80, "Wrong alignment on UAmbientControllerComponent_Athena_C");
-static_assert(sizeof(UAmbientControllerComponent_Athena_C) == 0x11821D80, "Wrong size on UAmbientControllerComponent_Athena_C");
+static_assert(alignof(UAmbientControllerComponent_Athena_C) == 0x000008, "Wrong alignment on UAmbientControllerComponent_Athena_C");
+static_assert(sizeof(UAmbientControllerComponent_Athena_C) == 0x000168, "Wrong size on UAmbientControllerComponent_Athena_C");
 static_assert(offsetof(UAmbientControllerComponent_Athena_C, UberGraphFrame) == 0x0000F0, "Member 'UAmbientControllerComponent_Athena_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAmbientControllerComponent_Athena_C, Loop_Morning) == 0x0000F8, "Member 'UAmbientControllerComponent_Athena_C::Loop_Morning' has a wrong offset!");
 static_assert(offsetof(UAmbientControllerComponent_Athena_C, Loop_Evening) == 0x000100, "Member 'UAmbientControllerComponent_Athena_C::Loop_Evening' has a wrong offset!");

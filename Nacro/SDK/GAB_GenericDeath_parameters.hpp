@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function GAB_GenericDeath.GAB_GenericDeath_C.ExecuteUbergraph_GAB_GenericDeath
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x02C0 (0x02C0 - 0x0000)
 struct GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath final
 {
 public:
@@ -29,13 +29,13 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue2;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 K2Node_MakeStruct_GameplayCueParameters;           // 0x0028(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_MakeStruct_GameplayCueParameters;           // 0x0028(0x00B8)(ContainsInstancedReference)
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F1[0xF];                                       // 0x00F1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0100(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0100(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput; // 0x0138(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAnyMatchingGameplayTags_ReturnValue;   // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -72,13 +72,13 @@ public:
 	EFortDamageZone                               CallFunc_GetDamageZone_ReturnValue;                // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1EB[0x5];                                      // 0x01EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x01F0(0x11822200)(ConstParm)
+	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x01F0(0x00A8)(ConstParm)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0298(0x0010)(ZeroConstructor, NoDestructor)
 	class FName                                   CallFunc_SetFNameBasedOnHitDirection_NameResult;   // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_SetFNameBasedOnHitDirection_NameResult2;  // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath) == 0x11822200, "Wrong alignment on GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath");
-static_assert(sizeof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath) == 0x11822200, "Wrong size on GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath");
+static_assert(alignof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath) == 0x000010, "Wrong alignment on GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath");
+static_assert(sizeof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath) == 0x0002C0, "Wrong size on GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath");
 static_assert(offsetof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath, EntryPoint) == 0x000000, "Member 'GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath, CallFunc_GetActivatingPawn_ReturnValue) == 0x000018, "Member 'GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath::CallFunc_GetActivatingPawn_ReturnValue' has a wrong offset!");
@@ -125,31 +125,31 @@ static_assert(offsetof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath, Cal
 static_assert(offsetof(GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath, CallFunc_SetFNameBasedOnHitDirection_NameResult2) == 0x0002B0, "Member 'GAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath::CallFunc_SetFNameBasedOnHitDirection_NameResult2' has a wrong offset!");
 
 // Function GAB_GenericDeath.GAB_GenericDeath_C.K2_ActivateAbilityFromEvent
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct GAB_GenericDeath_C_K2_ActivateAbilityFromEvent final
 {
 public:
-	struct FGameplayEventData                     EventData;                                         // 0x0000(0x11822200)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GAB_GenericDeath_C_K2_ActivateAbilityFromEvent) == 0x11822200, "Wrong alignment on GAB_GenericDeath_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GAB_GenericDeath_C_K2_ActivateAbilityFromEvent) == 0x11822200, "Wrong size on GAB_GenericDeath_C_K2_ActivateAbilityFromEvent");
+static_assert(alignof(GAB_GenericDeath_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GAB_GenericDeath_C_K2_ActivateAbilityFromEvent");
+static_assert(sizeof(GAB_GenericDeath_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GAB_GenericDeath_C_K2_ActivateAbilityFromEvent");
 static_assert(offsetof(GAB_GenericDeath_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GAB_GenericDeath_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GAB_GenericDeath.GAB_GenericDeath_C.InitializeDeathHitDirection
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct GAB_GenericDeath_C_InitializeDeathHitDirection final
 {
 public:
-	struct FGameplayEventData                     EventHitData;                                      // 0x0000(0x11822200)(Parm)
-	struct FVector                                CallFunc_GetImpulseData_ImpulseDirection;          // 0x00A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEventData                     EventHitData;                                      // 0x0000(0x00A8)(Parm)
+	struct FVector                                CallFunc_GetImpulseData_ImpulseDirection;          // 0x00A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetImpulseData_KnockbackMagnitude;        // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetImpulseData_KnockbackZAngle;           // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_EffectContextGetHitResult_ReturnValue;    // 0x00C0(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0148(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_EffectContextGetHitResult_ReturnValue;    // 0x00C0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0148(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_GenericDeath_C_InitializeDeathHitDirection) == 0x11822200, "Wrong alignment on GAB_GenericDeath_C_InitializeDeathHitDirection");
-static_assert(sizeof(GAB_GenericDeath_C_InitializeDeathHitDirection) == 0x11822200, "Wrong size on GAB_GenericDeath_C_InitializeDeathHitDirection");
+static_assert(alignof(GAB_GenericDeath_C_InitializeDeathHitDirection) == 0x000008, "Wrong alignment on GAB_GenericDeath_C_InitializeDeathHitDirection");
+static_assert(sizeof(GAB_GenericDeath_C_InitializeDeathHitDirection) == 0x000158, "Wrong size on GAB_GenericDeath_C_InitializeDeathHitDirection");
 static_assert(offsetof(GAB_GenericDeath_C_InitializeDeathHitDirection, EventHitData) == 0x000000, "Member 'GAB_GenericDeath_C_InitializeDeathHitDirection::EventHitData' has a wrong offset!");
 static_assert(offsetof(GAB_GenericDeath_C_InitializeDeathHitDirection, CallFunc_GetImpulseData_ImpulseDirection) == 0x0000A8, "Member 'GAB_GenericDeath_C_InitializeDeathHitDirection::CallFunc_GetImpulseData_ImpulseDirection' has a wrong offset!");
 static_assert(offsetof(GAB_GenericDeath_C_InitializeDeathHitDirection, CallFunc_GetImpulseData_KnockbackMagnitude) == 0x0000B4, "Member 'GAB_GenericDeath_C_InitializeDeathHitDirection::CallFunc_GetImpulseData_KnockbackMagnitude' has a wrong offset!");
@@ -158,8 +158,8 @@ static_assert(offsetof(GAB_GenericDeath_C_InitializeDeathHitDirection, CallFunc_
 static_assert(offsetof(GAB_GenericDeath_C_InitializeDeathHitDirection, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000148, "Member 'GAB_GenericDeath_C_InitializeDeathHitDirection::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 
 // Function GAB_GenericDeath.GAB_GenericDeath_C.GetRandomSectionName
-// 0x720075 (0x720075 - 0x0000)
-struct alignas(0x720075) GAB_GenericDeath_C_GetRandomSectionName final
+// 0x0078 (0x0078 - 0x0000)
+struct GAB_GenericDeath_C_GetRandomSectionName final
 {
 public:
 	int32                                         MaxNumberOfSections;                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -175,8 +175,8 @@ public:
 	class FString                                 CallFunc_MakeLiteralString_ReturnValue;            // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_GenericDeath_C_GetRandomSectionName) == 0x720075, "Wrong alignment on GAB_GenericDeath_C_GetRandomSectionName");
-static_assert(sizeof(GAB_GenericDeath_C_GetRandomSectionName) == 0x720075, "Wrong size on GAB_GenericDeath_C_GetRandomSectionName");
+static_assert(alignof(GAB_GenericDeath_C_GetRandomSectionName) == 0x000008, "Wrong alignment on GAB_GenericDeath_C_GetRandomSectionName");
+static_assert(sizeof(GAB_GenericDeath_C_GetRandomSectionName) == 0x000078, "Wrong size on GAB_GenericDeath_C_GetRandomSectionName");
 static_assert(offsetof(GAB_GenericDeath_C_GetRandomSectionName, MaxNumberOfSections) == 0x000000, "Member 'GAB_GenericDeath_C_GetRandomSectionName::MaxNumberOfSections' has a wrong offset!");
 static_assert(offsetof(GAB_GenericDeath_C_GetRandomSectionName, OriginalSectionName) == 0x000008, "Member 'GAB_GenericDeath_C_GetRandomSectionName::OriginalSectionName' has a wrong offset!");
 static_assert(offsetof(GAB_GenericDeath_C_GetRandomSectionName, SectionName) == 0x000010, "Member 'GAB_GenericDeath_C_GetRandomSectionName::SectionName' has a wrong offset!");

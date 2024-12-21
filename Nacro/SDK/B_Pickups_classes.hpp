@@ -20,15 +20,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_Pickups.B_Pickups_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x01E8 (0x05B0 - 0x03C8)
 class AB_Pickups_C final : public AFortPickupEffect
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x0008)(Transient, DuplicateTransient)
 	class UParticleSystemComponent*               ParticleSystem;                                    // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        Root;                                              // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Pivot_Offset;                                      // 0x03E0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Rotation_Bias;                                     // 0x03EC(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FVector                                Pivot_Offset;                                      // 0x03E0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Rotation_Bias;                                     // 0x03EC(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UStaticMeshComponent*                   Static_Mesh_Pickup;                                // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 Skeletal_Mesh_Pickup;                              // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSkeletalMesh;                                    // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -54,7 +54,7 @@ public:
 	class USkeletalMeshComponent*                 Skeletal_Mesh_Pickup_Hologram;                     // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>       Hologram_MIDs;                                     // 0x0490(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UTexture*>                       NormalMaps;                                        // 0x04A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FLinearColor                           Rarity_Color;                                      // 0x04B0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Rarity_Color;                                      // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Rarity_Level;                                      // 0x04C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C4[0x4];                                      // 0x04C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               Current_MID;                                       // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,8 +110,8 @@ public:
 		return GetDefaultObjImpl<AB_Pickups_C>();
 	}
 };
-static_assert(alignof(AB_Pickups_C) == 0x11821D80, "Wrong alignment on AB_Pickups_C");
-static_assert(sizeof(AB_Pickups_C) == 0x11821D80, "Wrong size on AB_Pickups_C");
+static_assert(alignof(AB_Pickups_C) == 0x000008, "Wrong alignment on AB_Pickups_C");
+static_assert(sizeof(AB_Pickups_C) == 0x0005B0, "Wrong size on AB_Pickups_C");
 static_assert(offsetof(AB_Pickups_C, UberGraphFrame) == 0x0003C8, "Member 'AB_Pickups_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AB_Pickups_C, ParticleSystem) == 0x0003D0, "Member 'AB_Pickups_C::ParticleSystem' has a wrong offset!");
 static_assert(offsetof(AB_Pickups_C, Root) == 0x0003D8, "Member 'AB_Pickups_C::Root' has a wrong offset!");

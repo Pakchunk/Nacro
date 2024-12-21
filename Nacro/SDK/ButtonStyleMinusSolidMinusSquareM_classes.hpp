@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-Solid-SquareM.ButtonStyle-Solid-SquareM_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusSolidMinusSquareM_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusSolidMinusSquareM_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusSolidMinusSquareM_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusSolidMinusSquareM_C");
-static_assert(sizeof(UButtonStyleMinusSolidMinusSquareM_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusSolidMinusSquareM_C");
+static_assert(alignof(UButtonStyleMinusSolidMinusSquareM_C) == 0x000008, "Wrong alignment on UButtonStyleMinusSolidMinusSquareM_C");
+static_assert(sizeof(UButtonStyleMinusSolidMinusSquareM_C) == 0x000530, "Wrong size on UButtonStyleMinusSolidMinusSquareM_C");
 
 }
 

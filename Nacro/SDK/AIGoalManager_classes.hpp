@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AIGoalManager.AIGoalManager_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0008 (0x04A8 - 0x04A0)
 class AAIGoalManager_C final : public AFortAIGoalManager
 {
 public:
@@ -36,8 +36,8 @@ public:
 		return GetDefaultObjImpl<AAIGoalManager_C>();
 	}
 };
-static_assert(alignof(AAIGoalManager_C) == 0x11821D80, "Wrong alignment on AAIGoalManager_C");
-static_assert(sizeof(AAIGoalManager_C) == 0x11821D80, "Wrong size on AAIGoalManager_C");
+static_assert(alignof(AAIGoalManager_C) == 0x000008, "Wrong alignment on AAIGoalManager_C");
+static_assert(sizeof(AAIGoalManager_C) == 0x0004A8, "Wrong size on AAIGoalManager_C");
 static_assert(offsetof(AAIGoalManager_C, DefaultSceneRoot) == 0x0004A0, "Member 'AAIGoalManager_C::DefaultSceneRoot' has a wrong offset!");
 
 }

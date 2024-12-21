@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.ExecuteUbergraph__WaterMeshBlueprintMaster
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x04F0 (0x04F0 - 0x0000)
 struct _WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster final
 {
 public:
@@ -26,13 +26,13 @@ public:
 	int32                                         CallFunc_GetRenderingMaterialQualityLevel_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_Find_Placement_on_water_mesh_surfaces_Traced_Transform; // 0x0010(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Find_Placement_on_water_mesh_surfaces_VelocityVector; // 0x0040(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_Find_Placement_on_water_mesh_surfaces_Traced_Transform; // 0x0010(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Find_Placement_on_water_mesh_surfaces_VelocityVector; // 0x0040(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Find_Placement_on_water_mesh_surfaces_Trace_Hit; // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x005C(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0068(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x005C(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0068(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -41,7 +41,7 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x009C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x009C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X2;                           // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y2;                           // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,21 +61,24 @@ public:
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerPawn_Generic_C*                  K2Node_CustomEvent_CallingActor;                   // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00F8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent8;   // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor8;            // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp8;             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex8;        // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0124(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0130(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0124(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0130(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent7;   // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor7;            // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp7;             // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex7;        // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_LineTraceComponent_HitLocation;        // 0x015C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_LineTraceComponent_HitNormal;          // 0x0168(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_LineTraceComponent_HitLocation;        // 0x015C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_LineTraceComponent_HitNormal;          // 0x0168(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_K2_LineTraceComponent_BoneName;           // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_LineTraceComponent_OutHit;             // 0x0180(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_LineTraceComponent_OutHit;             // 0x0180(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_LineTraceComponent_ReturnValue;        // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent6;   // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -84,7 +87,7 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex6;        // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep4;            // 0x022C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22D[0x3];                                      // 0x022D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult4;           // 0x0230(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult4;           // 0x0230(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent5;   // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor5;            // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp5;             // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -96,28 +99,28 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex4;        // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep3;            // 0x02F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2F5[0x3];                                      // 0x02F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult3;           // 0x02F8(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult3;           // 0x02F8(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent3;   // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor3;            // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp3;             // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex3;        // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep2;            // 0x039C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39D[0x3];                                      // 0x039D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult2;           // 0x03A0(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult2;           // 0x03A0(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent2;   // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor2;            // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp2;             // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex2;        // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x0444(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_445[0x3];                                      // 0x0445(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0448(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0448(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x04E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x04E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster) == 0x11821D80, "Wrong alignment on _WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster");
-static_assert(sizeof(_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster) == 0x11821D80, "Wrong size on _WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster");
+static_assert(alignof(_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster) == 0x000010, "Wrong alignment on _WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster");
+static_assert(sizeof(_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster) == 0x0004F0, "Wrong size on _WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster, EntryPoint) == 0x000000, "Member '_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster::EntryPoint' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster, CallFunc_GetRenderingMaterialQualityLevel_ReturnValue) == 0x000004, "Member '_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster::CallFunc_GetRenderingMaterialQualityLevel_ReturnValue' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member '_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
@@ -217,7 +220,7 @@ static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_69_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_69_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
 // Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
@@ -227,10 +230,10 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong alignment on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong size on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(alignof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
@@ -239,7 +242,7 @@ static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
 // Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
@@ -249,10 +252,10 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong alignment on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong size on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(alignof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
@@ -261,7 +264,7 @@ static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
 // Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
@@ -271,10 +274,10 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong alignment on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong size on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(alignof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
@@ -300,7 +303,7 @@ static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_203_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_203_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
 // Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
@@ -310,10 +313,10 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong alignment on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong size on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(alignof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on _WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member '_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
@@ -384,39 +387,42 @@ static_assert(offsetof(_WaterMeshBlueprintMaster_C_SetupMeshCollisionVolumes, Ca
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_SetupMeshCollisionVolumes, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00000D, "Member '_WaterMeshBlueprintMaster_C_SetupMeshCollisionVolumes::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.Find Placement on water mesh surfaces
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct _WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces final
 {
 public:
-	struct FTransform                             Traced_Transform;                                  // 0x0000(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor)
-	struct FVector                                VelocityVector;                                    // 0x0030(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Traced_Transform;                                  // 0x0000(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor)
+	struct FVector                                VelocityVector;                                    // 0x0030(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Trace_Hit;                                         // 0x003C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   K2Node_Select_Default;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0048(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0060(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x006C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0078(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_LineTraceComponent_HitLocation;        // 0x0084(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_LineTraceComponent_HitNormal;          // 0x0090(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0060(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x006C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0078(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_LineTraceComponent_HitLocation;        // 0x0084(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_LineTraceComponent_HitNormal;          // 0x0090(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_K2_LineTraceComponent_BoneName;           // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_LineTraceComponent_OutHit;             // 0x00A8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_LineTraceComponent_OutHit;             // 0x00A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_LineTraceComponent_ReturnValue;        // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0134(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue2;          // 0x0140(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue;           // 0x0134(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Cross_VectorVector_ReturnValue2;          // 0x0140(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_151[0x3];                                      // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x0154(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0160(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotFromXZ_ReturnValue;                // 0x016C(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0180(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x0154(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0160(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotFromXZ_ReturnValue;                // 0x016C(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_178[0x8];                                      // 0x0178(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0180(0x0030)(IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces) == 0x11821D80, "Wrong alignment on _WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces");
-static_assert(sizeof(_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces) == 0x11821D80, "Wrong size on _WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces");
+static_assert(alignof(_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces) == 0x000010, "Wrong alignment on _WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces");
+static_assert(sizeof(_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces) == 0x0001B0, "Wrong size on _WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces, Traced_Transform) == 0x000000, "Member '_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces::Traced_Transform' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces, VelocityVector) == 0x000030, "Member '_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces::VelocityVector' has a wrong offset!");
 static_assert(offsetof(_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces, Trace_Hit) == 0x00003C, "Member '_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces::Trace_Hit' has a wrong offset!");

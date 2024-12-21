@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function StoreMain_Root.StoreMain_Root_C.ExecuteUbergraph_StoreMain_Root
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root final
 {
 public:
@@ -46,7 +46,7 @@ public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUIStateWidget_NUI*                 CallFunc_GetCurrentUIStateWidget_ReturnValue;      // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0058(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0058(0x0010)(NoDestructor)
 	class UFrontEnd_C*                            K2Node_DynamicCast_AsFront_End;                    // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -55,8 +55,8 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue4;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root) == 0x1182EB00, "Wrong alignment on StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root");
-static_assert(sizeof(StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root) == 0x1182EB00, "Wrong size on StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root");
+static_assert(alignof(StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root) == 0x000008, "Wrong alignment on StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root");
+static_assert(sizeof(StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root) == 0x0000A0, "Wrong size on StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root");
 static_assert(offsetof(StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root, EntryPoint) == 0x000000, "Member 'StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root::EntryPoint' has a wrong offset!");
 static_assert(offsetof(StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root, Temp_byte_Variable) == 0x000004, "Member 'StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root, Temp_byte_Variable2) == 0x000005, "Member 'StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root::Temp_byte_Variable2' has a wrong offset!");
@@ -96,12 +96,12 @@ static_assert(sizeof(StoreMain_Root_C_OnMtxOfferGenerated) == 0x000008, "Wrong s
 static_assert(offsetof(StoreMain_Root_C_OnMtxOfferGenerated, MtxOffer) == 0x000000, "Member 'StoreMain_Root_C_OnMtxOfferGenerated::MtxOffer' has a wrong offset!");
 
 // Function StoreMain_Root.StoreMain_Root_C.AddOffer
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct StoreMain_Root_C_AddOffer final
 {
 public:
 	class UFortMtxStoreOfferBase*                 MtxOffer;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0008(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0008(0x0010)(NoDestructor)
 	class UStoreMain_MTXOffer_C*                  K2Node_DynamicCast_AsStore_Main_MTXOffer;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -110,8 +110,8 @@ public:
 	class UScrollBoxSlot*                         K2Node_DynamicCast_AsScroll_Box_Slot;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_Root_C_AddOffer) == 0x322CBBB8, "Wrong alignment on StoreMain_Root_C_AddOffer");
-static_assert(sizeof(StoreMain_Root_C_AddOffer) == 0x322CBBB8, "Wrong size on StoreMain_Root_C_AddOffer");
+static_assert(alignof(StoreMain_Root_C_AddOffer) == 0x000008, "Wrong alignment on StoreMain_Root_C_AddOffer");
+static_assert(sizeof(StoreMain_Root_C_AddOffer) == 0x000050, "Wrong size on StoreMain_Root_C_AddOffer");
 static_assert(offsetof(StoreMain_Root_C_AddOffer, MtxOffer) == 0x000000, "Member 'StoreMain_Root_C_AddOffer::MtxOffer' has a wrong offset!");
 static_assert(offsetof(StoreMain_Root_C_AddOffer, K2Node_MakeStruct_Margin) == 0x000008, "Member 'StoreMain_Root_C_AddOffer::K2Node_MakeStruct_Margin' has a wrong offset!");
 static_assert(offsetof(StoreMain_Root_C_AddOffer, K2Node_DynamicCast_AsStore_Main_MTXOffer) == 0x000018, "Member 'StoreMain_Root_C_AddOffer::K2Node_DynamicCast_AsStore_Main_MTXOffer' has a wrong offset!");

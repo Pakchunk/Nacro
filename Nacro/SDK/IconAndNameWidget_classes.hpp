@@ -21,23 +21,23 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass IconAndNameWidget.IconAndNameWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00F0 (0x0328 - 0x0238)
 class UIconAndNameWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          CommonBorder_0;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Icon;                                              // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Matched;                                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Name_0;                                            // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            Brush;                                             // 0x0260(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            Brush;                                             // 0x0260(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                   Text;                                              // 0x02F0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class UClass*                                 BorderStyle;                                       // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bBorderVisible;                                    // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bMatches;                                          // 0x0311(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bBorderColorOverride;                              // 0x0312(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_313[0x1];                                      // 0x0313(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           RGBA0;                                             // 0x0314(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           RGBA0;                                             // 0x0314(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_IconAndNameWidget(int32 EntryPoint);
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UIconAndNameWidget_C>();
 	}
 };
-static_assert(alignof(UIconAndNameWidget_C) == 0x322CBBB8, "Wrong alignment on UIconAndNameWidget_C");
-static_assert(sizeof(UIconAndNameWidget_C) == 0x322CBBB8, "Wrong size on UIconAndNameWidget_C");
+static_assert(alignof(UIconAndNameWidget_C) == 0x000008, "Wrong alignment on UIconAndNameWidget_C");
+static_assert(sizeof(UIconAndNameWidget_C) == 0x000328, "Wrong size on UIconAndNameWidget_C");
 static_assert(offsetof(UIconAndNameWidget_C, UberGraphFrame) == 0x000238, "Member 'UIconAndNameWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UIconAndNameWidget_C, CommonBorder_0) == 0x000240, "Member 'UIconAndNameWidget_C::CommonBorder_0' has a wrong offset!");
 static_assert(offsetof(UIconAndNameWidget_C, Icon) == 0x000248, "Member 'UIconAndNameWidget_C::Icon' has a wrong offset!");

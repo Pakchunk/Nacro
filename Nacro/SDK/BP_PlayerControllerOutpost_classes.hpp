@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0020 (0x2A00 - 0x29E0)
 class ABP_PlayerControllerOutpost_C final : public AFortPlayerControllerOutpost
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x29E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x29E0(0x0008)(Transient, DuplicateTransient)
 	class AOutpostStructureBase*                  NewVar_0;                                          // 0x29E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AOutpostStructureBase*                  NewVar_1;                                          // 0x29F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          GetHelp;                                           // 0x29F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<ABP_PlayerControllerOutpost_C>();
 	}
 };
-static_assert(alignof(ABP_PlayerControllerOutpost_C) == 0x11821D80, "Wrong alignment on ABP_PlayerControllerOutpost_C");
-static_assert(sizeof(ABP_PlayerControllerOutpost_C) == 0x11821D80, "Wrong size on ABP_PlayerControllerOutpost_C");
+static_assert(alignof(ABP_PlayerControllerOutpost_C) == 0x000008, "Wrong alignment on ABP_PlayerControllerOutpost_C");
+static_assert(sizeof(ABP_PlayerControllerOutpost_C) == 0x002A00, "Wrong size on ABP_PlayerControllerOutpost_C");
 static_assert(offsetof(ABP_PlayerControllerOutpost_C, UberGraphFrame) == 0x0029E0, "Member 'ABP_PlayerControllerOutpost_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABP_PlayerControllerOutpost_C, NewVar_0) == 0x0029E8, "Member 'ABP_PlayerControllerOutpost_C::NewVar_0' has a wrong offset!");
 static_assert(offsetof(ABP_PlayerControllerOutpost_C, NewVar_1) == 0x0029F0, "Member 'ABP_PlayerControllerOutpost_C::NewVar_1' has a wrong offset!");

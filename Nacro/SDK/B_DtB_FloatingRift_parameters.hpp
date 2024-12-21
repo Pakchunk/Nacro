@@ -42,19 +42,19 @@ static_assert(sizeof(B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignatur
 static_assert(offsetof(B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature, FortPlayerPawn) == 0x000000, "Member 'B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature::FortPlayerPawn' has a wrong offset!");
 
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.ExecuteUbergraph_B_DtB_FloatingRift
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x03D0 (0x03D0 - 0x0000)
 struct B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent4;   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor4;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp4;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex4;        // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep3;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult3;           // 0x0030(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult3;           // 0x0030(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent3;   // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor3;            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp3;             // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -78,12 +78,13 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex2;        // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep2;            // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12D[0x3];                                      // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult2;           // 0x0130(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult2;           // 0x0130(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn3;            // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C1[0x3];                                      // 0x01C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  K2Node_HandleMissionEvent_MissionGuid;             // 0x01C4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_ObjectiveHandle;         // 0x01D8(0x11821C00)()
+	struct FGuid                                  K2Node_HandleMissionEvent_MissionGuid;             // 0x01C4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_ObjectiveHandle;         // 0x01D8(0x0020)()
 	class UFortMissionEventParams*                K2Node_HandleMissionEvent_Params;                  // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW; // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -93,8 +94,8 @@ public:
 	int32                                         K2Node_HandleMissionEvent_GenericInt;              // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_HandleMissionEvent_GenericFloat;            // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_HandleMissionEvent_GenericText;             // 0x0228(0x0018)(ConstParm)
-	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_GameplayTags;            // 0x0240(0x11821C00)()
-	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent;            // 0x0260(0x11821C00)(ConstParm)
+	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_GameplayTags;            // 0x0240(0x0020)()
+	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent;            // 0x0260(0x0098)(ConstParm)
 	bool                                          CallFunc_DoesAnyoneRequireQuest_SomePlayerNeedsTheQuest; // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesAnyoneRequireQuest_SomePlayerNeedsTheQuest2; // 0x02F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2FA[0x6];                                      // 0x02FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -104,7 +105,7 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x031C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31D[0x3];                                      // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0320(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0320(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn4;            // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3B1[0x7];                                      // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -113,8 +114,8 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_ParticleCount;          // 0x03C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift) == 0x11821D80, "Wrong alignment on B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift");
-static_assert(sizeof(B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift) == 0x11821D80, "Wrong size on B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift");
+static_assert(alignof(B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift) == 0x000008, "Wrong alignment on B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift");
+static_assert(sizeof(B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift) == 0x0003D0, "Wrong size on B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift");
 static_assert(offsetof(B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift, EntryPoint) == 0x000000, "Member 'B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift::EntryPoint' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000004, "Member 'B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift, K2Node_ComponentBoundEvent_OverlappedComponent4) == 0x000010, "Member 'B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift::K2Node_ComponentBoundEvent_OverlappedComponent4' has a wrong offset!");
@@ -173,21 +174,21 @@ static_assert(offsetof(B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift,
 
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature final
+struct alignas(0x08) B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature final
 {
 public:
 	class FName                                   EventName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         EmitterTime;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ParticleCount;                                     // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature) == 0x000004, "Wrong alignment on B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature");
+static_assert(alignof(B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature) == 0x000008, "Wrong alignment on B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature");
 static_assert(sizeof(B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature) == 0x000010, "Wrong size on B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature, EventName) == 0x000000, "Member 'B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature::EventName' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature, EmitterTime) == 0x000008, "Member 'B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature::EmitterTime' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature, ParticleCount) == 0x00000C, "Member 'B_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature::ParticleCount' has a wrong offset!");
 
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
@@ -197,10 +198,10 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong alignment on B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong size on B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(alignof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
@@ -209,12 +210,12 @@ static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2No
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'B_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.HandleMissionEvent_NewPlayer
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer final
 {
 public:
-	struct FGuid                                  MissionGuid;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  ObjectiveHandle;                                   // 0x0010(0x11821C00)(Parm)
+	struct FGuid                                  MissionGuid;                                       // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  ObjectiveHandle;                                   // 0x0010(0x0020)(Parm)
 	class UFortMissionEventParams*                Params_0;                                          // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DO_NOT_USE_THIS_OR_VARIABLES_BELOW;                // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -224,11 +225,11 @@ public:
 	int32                                         GenericInt;                                        // 0x0058(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         GenericFloat;                                      // 0x005C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   GenericText;                                       // 0x0060(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0078(0x11821C00)(Parm)
-	struct FFortMissionEvent                      MissionEvent;                                      // 0x0098(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0078(0x0020)(Parm)
+	struct FFortMissionEvent                      MissionEvent;                                      // 0x0098(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer) == 0x11821C00, "Wrong alignment on B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer");
-static_assert(sizeof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer) == 0x11821C00, "Wrong size on B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer");
+static_assert(alignof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer) == 0x000008, "Wrong alignment on B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer");
+static_assert(sizeof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer) == 0x000130, "Wrong size on B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer");
 static_assert(offsetof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer, MissionGuid) == 0x000000, "Member 'B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer::MissionGuid' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer, ObjectiveHandle) == 0x000010, "Member 'B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer::ObjectiveHandle' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer, Params_0) == 0x000030, "Member 'B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer::Params_0' has a wrong offset!");
@@ -243,7 +244,7 @@ static_assert(offsetof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer, Gamepl
 static_assert(offsetof(B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer, MissionEvent) == 0x000098, "Member 'B_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer::MissionEvent' has a wrong offset!");
 
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
@@ -253,10 +254,10 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong alignment on B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong size on B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(alignof(B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'B_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
@@ -282,7 +283,7 @@ static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
@@ -292,10 +293,10 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong alignment on B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong size on B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(alignof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
 static_assert(offsetof(B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'B_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");

@@ -20,18 +20,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemInspectEvolutionIngredientsEntry.ItemInspectEvolutionIngredientsEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A0 (0x02D0 - 0x0230)
 class UItemInspectEvolutionIngredientsEntry_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 CheckMarkIcon;                                     // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemIcon*                          ItemIcon;                                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ItemName;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       QuantityText;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortItemQuantityPair                  IngredientItemQuantity;                            // 0x0258(0x52535)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateColor                            NotHaveColor;                                      // 0x0280(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            HaveColor;                                         // 0x02A8(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortItemQuantityPair                  IngredientItemQuantity;                            // 0x0258(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateColor                            NotHaveColor;                                      // 0x0280(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            HaveColor;                                         // 0x02A8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_ItemInspectEvolutionIngredientsEntry(int32 EntryPoint);
@@ -50,8 +50,8 @@ public:
 		return GetDefaultObjImpl<UItemInspectEvolutionIngredientsEntry_C>();
 	}
 };
-static_assert(alignof(UItemInspectEvolutionIngredientsEntry_C) == 0x322CBBB8, "Wrong alignment on UItemInspectEvolutionIngredientsEntry_C");
-static_assert(sizeof(UItemInspectEvolutionIngredientsEntry_C) == 0x322CBBB8, "Wrong size on UItemInspectEvolutionIngredientsEntry_C");
+static_assert(alignof(UItemInspectEvolutionIngredientsEntry_C) == 0x000008, "Wrong alignment on UItemInspectEvolutionIngredientsEntry_C");
+static_assert(sizeof(UItemInspectEvolutionIngredientsEntry_C) == 0x0002D0, "Wrong size on UItemInspectEvolutionIngredientsEntry_C");
 static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, UberGraphFrame) == 0x000230, "Member 'UItemInspectEvolutionIngredientsEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, CheckMarkIcon) == 0x000238, "Member 'UItemInspectEvolutionIngredientsEntry_C::CheckMarkIcon' has a wrong offset!");
 static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, ItemIcon) == 0x000240, "Member 'UItemInspectEvolutionIngredientsEntry_C::ItemIcon' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0288 - 0x0260)
 class UFrontEndRewards_Conversation_VO_C final : public UFortRewardConversationWidget
 {
 public:
-	struct FDataTableRowHandle                    ReplayAction;                                      // 0x0260(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ReplayAction;                                      // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class UFortConversation*                      Conversation;                                      // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestItem*                         QuestItemRef;                                      // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C* ConversationActor;                                 // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UFrontEndRewards_Conversation_VO_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_Conversation_VO_C) == 0x322CBBB8, "Wrong alignment on UFrontEndRewards_Conversation_VO_C");
-static_assert(sizeof(UFrontEndRewards_Conversation_VO_C) == 0x322CBBB8, "Wrong size on UFrontEndRewards_Conversation_VO_C");
+static_assert(alignof(UFrontEndRewards_Conversation_VO_C) == 0x000008, "Wrong alignment on UFrontEndRewards_Conversation_VO_C");
+static_assert(sizeof(UFrontEndRewards_Conversation_VO_C) == 0x000288, "Wrong size on UFrontEndRewards_Conversation_VO_C");
 static_assert(offsetof(UFrontEndRewards_Conversation_VO_C, ReplayAction) == 0x000260, "Member 'UFrontEndRewards_Conversation_VO_C::ReplayAction' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_Conversation_VO_C, Conversation) == 0x000270, "Member 'UFrontEndRewards_Conversation_VO_C::Conversation' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_Conversation_VO_C, QuestItemRef) == 0x000278, "Member 'UFrontEndRewards_Conversation_VO_C::QuestItemRef' has a wrong offset!");

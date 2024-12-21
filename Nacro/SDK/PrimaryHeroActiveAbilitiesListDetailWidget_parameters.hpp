@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function PrimaryHeroActiveAbilitiesListDetailWidget.PrimaryHeroActiveAbilitiesListDetailWidget_C.ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0178 (0x0178 - 0x0000)
 struct PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget final
 {
 public:
@@ -31,7 +31,7 @@ public:
 	int32                                         CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x0028(0x11821D80)()
+	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x0028(0x0088)()
 	bool                                          CallFunc_TryGetHomebaseSquadData_ReturnValue;      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -43,7 +43,7 @@ public:
 	int32                                         CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex2; // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad2; // 0x00D8(0x11821D80)()
+	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad2; // 0x00D8(0x0088)()
 	bool                                          CallFunc_TryGetHomebaseSquadData_ReturnValue2;     // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_162[0x6];                                      // 0x0162(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -52,8 +52,8 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget) == 0x11821780, "Wrong alignment on PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget");
-static_assert(sizeof(PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget) == 0x11821780, "Wrong size on PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget");
+static_assert(alignof(PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget) == 0x000008, "Wrong alignment on PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget");
+static_assert(sizeof(PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget) == 0x000178, "Wrong size on PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget");
 static_assert(offsetof(PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget, EntryPoint) == 0x000000, "Member 'PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget, Temp_byte_Variable) == 0x000010, "Member 'PrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget::Temp_byte_Variable' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaStatsTab.AthenaStatsTab_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D0 (0x0540 - 0x0470)
 class UAthenaStatsTab_C final : public UAthenaStatsScreenBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0470(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0470(0x0008)(Transient, DuplicateTransient)
 	class UComingSoonPlaceholderWidget_C*         ComingSoonPlaceholderWidget;                       // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  HiddenSwitcher;                                    // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<UAthenaStatsTab_C>();
 	}
 };
-static_assert(alignof(UAthenaStatsTab_C) == 0x322CBBB8, "Wrong alignment on UAthenaStatsTab_C");
-static_assert(sizeof(UAthenaStatsTab_C) == 0x322CBBB8, "Wrong size on UAthenaStatsTab_C");
+static_assert(alignof(UAthenaStatsTab_C) == 0x000008, "Wrong alignment on UAthenaStatsTab_C");
+static_assert(sizeof(UAthenaStatsTab_C) == 0x000540, "Wrong size on UAthenaStatsTab_C");
 static_assert(offsetof(UAthenaStatsTab_C, UberGraphFrame) == 0x000470, "Member 'UAthenaStatsTab_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaStatsTab_C, ComingSoonPlaceholderWidget) == 0x000478, "Member 'UAthenaStatsTab_C::ComingSoonPlaceholderWidget' has a wrong offset!");
 static_assert(offsetof(UAthenaStatsTab_C, CommonWidgetSwitcher_0) == 0x000480, "Member 'UAthenaStatsTab_C::CommonWidgetSwitcher_0' has a wrong offset!");

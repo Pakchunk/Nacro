@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-LowerTabM.Border-LowerTabM_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusLowerTabM_C : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusLowerTabM_C>();
 	}
 };
-static_assert(alignof(UBorderMinusLowerTabM_C) == 0x11827900, "Wrong alignment on UBorderMinusLowerTabM_C");
-static_assert(sizeof(UBorderMinusLowerTabM_C) == 0x11827900, "Wrong size on UBorderMinusLowerTabM_C");
+static_assert(alignof(UBorderMinusLowerTabM_C) == 0x000008, "Wrong alignment on UBorderMinusLowerTabM_C");
+static_assert(sizeof(UBorderMinusLowerTabM_C) == 0x0000B8, "Wrong size on UBorderMinusLowerTabM_C");
 
 }
 

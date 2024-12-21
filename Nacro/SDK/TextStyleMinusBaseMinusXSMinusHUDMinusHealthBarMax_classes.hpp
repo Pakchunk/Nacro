@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Base-XS-HUD-HealthBarMax.TextStyle-Base-XS-HUD-HealthBarMax_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C final : public UTextStyleMinusBaseParent_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C");
-static_assert(sizeof(UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C");
+static_assert(alignof(UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C) == 0x000008, "Wrong alignment on UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C");
+static_assert(sizeof(UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C) == 0x0000D0, "Wrong size on UTextStyleMinusBaseMinusXSMinusHUDMinusHealthBarMax_C");
 
 }
 

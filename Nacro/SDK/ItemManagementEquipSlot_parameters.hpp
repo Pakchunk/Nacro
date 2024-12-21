@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.ExecuteUbergraph_ItemManagementEquipSlot
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot final
 {
 public:
@@ -29,20 +29,20 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0014(0x11827900)(NoDestructor)
+	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0014(0x0008)(NoDestructor)
 	bool                                          K2Node_ComponentBoundEvent_bUsingGamepad;          // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSelected_Selected;                      // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_PointerEvent;                         // 0x0020(0x11829280)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_PointerEvent;                         // 0x0020(0x0078)(ConstParm)
 	class UDragDropOperation*                     K2Node_Event_Operation;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot) == 0x11829280, "Wrong alignment on ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot");
-static_assert(sizeof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot) == 0x11829280, "Wrong size on ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot");
+static_assert(alignof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot) == 0x000008, "Wrong alignment on ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot");
+static_assert(sizeof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot) == 0x0000B8, "Wrong size on ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot");
 static_assert(offsetof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot, EntryPoint) == 0x000000, "Member 'ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot, Temp_byte_Variable) == 0x000004, "Member 'ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot, Temp_byte_Variable2) == 0x000005, "Member 'ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot::Temp_byte_Variable2' has a wrong offset!");
@@ -60,15 +60,15 @@ static_assert(offsetof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagement
 static_assert(offsetof(ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot, K2Node_DynamicCast_bSuccess) == 0x0000B0, "Member 'ItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnDragCancelled
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct ItemManagementEquipSlot_C_OnDragCancelled final
 {
 public:
-	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x0078(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementEquipSlot_C_OnDragCancelled) == 0x11829280, "Wrong alignment on ItemManagementEquipSlot_C_OnDragCancelled");
-static_assert(sizeof(ItemManagementEquipSlot_C_OnDragCancelled) == 0x11829280, "Wrong size on ItemManagementEquipSlot_C_OnDragCancelled");
+static_assert(alignof(ItemManagementEquipSlot_C_OnDragCancelled) == 0x000008, "Wrong alignment on ItemManagementEquipSlot_C_OnDragCancelled");
+static_assert(sizeof(ItemManagementEquipSlot_C_OnDragCancelled) == 0x000080, "Wrong size on ItemManagementEquipSlot_C_OnDragCancelled");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragCancelled, PointerEvent) == 0x000000, "Member 'ItemManagementEquipSlot_C_OnDragCancelled::PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragCancelled, Operation) == 0x000078, "Member 'ItemManagementEquipSlot_C_OnDragCancelled::Operation' has a wrong offset!");
 
@@ -84,14 +84,14 @@ static_assert(sizeof(ItemManagementEquipSlot_C_BndEvt__InputActionWidget_K2Node_
 static_assert(offsetof(ItemManagementEquipSlot_C_BndEvt__InputActionWidget_K2Node_ComponentBoundEvent_6_OnInputMethodChanged__DelegateSignature, bUsingGamepad) == 0x000000, "Member 'ItemManagementEquipSlot_C_BndEvt__InputActionWidget_K2Node_ComponentBoundEvent_6_OnInputMethodChanged__DelegateSignature::bUsingGamepad' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnFocusLost
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct ItemManagementEquipSlot_C_OnFocusLost final
 {
 public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x11827900)(Parm, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(Parm, NoDestructor)
 };
-static_assert(alignof(ItemManagementEquipSlot_C_OnFocusLost) == 0x11827900, "Wrong alignment on ItemManagementEquipSlot_C_OnFocusLost");
-static_assert(sizeof(ItemManagementEquipSlot_C_OnFocusLost) == 0x11827900, "Wrong size on ItemManagementEquipSlot_C_OnFocusLost");
+static_assert(alignof(ItemManagementEquipSlot_C_OnFocusLost) == 0x000004, "Wrong alignment on ItemManagementEquipSlot_C_OnFocusLost");
+static_assert(sizeof(ItemManagementEquipSlot_C_OnFocusLost) == 0x000008, "Wrong size on ItemManagementEquipSlot_C_OnFocusLost");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'ItemManagementEquipSlot_C_OnFocusLost::InFocusEvent' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.RefreshItem
@@ -110,12 +110,13 @@ static_assert(offsetof(ItemManagementEquipSlot_C_RefreshItem, CallFunc_GetQuickB
 static_assert(offsetof(ItemManagementEquipSlot_C_RefreshItem, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'ItemManagementEquipSlot_C_RefreshItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnDrop
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct ItemManagementEquipSlot_C_OnDrop final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(Parm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(Parm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -128,8 +129,8 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DropItemOnQuickBar_ReturnValue;           // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementEquipSlot_C_OnDrop) == 0x11829280, "Wrong alignment on ItemManagementEquipSlot_C_OnDrop");
-static_assert(sizeof(ItemManagementEquipSlot_C_OnDrop) == 0x11829280, "Wrong size on ItemManagementEquipSlot_C_OnDrop");
+static_assert(alignof(ItemManagementEquipSlot_C_OnDrop) == 0x000008, "Wrong alignment on ItemManagementEquipSlot_C_OnDrop");
+static_assert(sizeof(ItemManagementEquipSlot_C_OnDrop) == 0x0000F0, "Wrong size on ItemManagementEquipSlot_C_OnDrop");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, MyGeometry) == 0x000000, "Member 'ItemManagementEquipSlot_C_OnDrop::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, PointerEvent) == 0x000038, "Member 'ItemManagementEquipSlot_C_OnDrop::PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, Operation) == 0x0000B0, "Member 'ItemManagementEquipSlot_C_OnDrop::Operation' has a wrong offset!");
@@ -142,21 +143,22 @@ static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, CallFunc_GetContext_Ret
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDrop, CallFunc_DropItemOnQuickBar_ReturnValue) == 0x0000E8, "Member 'ItemManagementEquipSlot_C_OnDrop::CallFunc_DropItemOnQuickBar_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnMouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x02F0 (0x02F0 - 0x0000)
 struct ItemManagementEquipSlot_C_OnMouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x11827900)()
-	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0220(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x00B8)()
+	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0220(0x00B8)()
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_GetItemToDetail_ReturnValue;              // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementEquipSlot_C_OnMouseButtonDown) == 0x11829280, "Wrong alignment on ItemManagementEquipSlot_C_OnMouseButtonDown");
-static_assert(sizeof(ItemManagementEquipSlot_C_OnMouseButtonDown) == 0x11829280, "Wrong size on ItemManagementEquipSlot_C_OnMouseButtonDown");
+static_assert(alignof(ItemManagementEquipSlot_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on ItemManagementEquipSlot_C_OnMouseButtonDown");
+static_assert(sizeof(ItemManagementEquipSlot_C_OnMouseButtonDown) == 0x0002F0, "Wrong size on ItemManagementEquipSlot_C_OnMouseButtonDown");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'ItemManagementEquipSlot_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'ItemManagementEquipSlot_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'ItemManagementEquipSlot_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
@@ -167,12 +169,13 @@ static_assert(offsetof(ItemManagementEquipSlot_C_OnMouseButtonDown, CallFunc_Get
 static_assert(offsetof(ItemManagementEquipSlot_C_OnMouseButtonDown, CallFunc_IsUsingGamepad_ReturnValue) == 0x0002E8, "Member 'ItemManagementEquipSlot_C_OnMouseButtonDown::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnDragDetected
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct ItemManagementEquipSlot_C_OnDragDetected final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDragDropOperation*                     CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -187,8 +190,8 @@ public:
 	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemDragIcon_C*                        CallFunc_Create_ReturnValue;                       // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementEquipSlot_C_OnDragDetected) == 0x11829280, "Wrong alignment on ItemManagementEquipSlot_C_OnDragDetected");
-static_assert(sizeof(ItemManagementEquipSlot_C_OnDragDetected) == 0x11829280, "Wrong size on ItemManagementEquipSlot_C_OnDragDetected");
+static_assert(alignof(ItemManagementEquipSlot_C_OnDragDetected) == 0x000008, "Wrong alignment on ItemManagementEquipSlot_C_OnDragDetected");
+static_assert(sizeof(ItemManagementEquipSlot_C_OnDragDetected) == 0x000118, "Wrong size on ItemManagementEquipSlot_C_OnDragDetected");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'ItemManagementEquipSlot_C_OnDragDetected::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'ItemManagementEquipSlot_C_OnDragDetected::PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnDragDetected, Operation) == 0x0000B0, "Member 'ItemManagementEquipSlot_C_OnDragDetected::Operation' has a wrong offset!");
@@ -223,33 +226,34 @@ static_assert(offsetof(ItemManagementEquipSlot_C_SetSelected, Temp_byte_Variable
 static_assert(offsetof(ItemManagementEquipSlot_C_SetSelected, K2Node_Select_Default) == 0x000004, "Member 'ItemManagementEquipSlot_C_SetSelected::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnFocusReceived
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct ItemManagementEquipSlot_C_OnFocusReceived final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x11827900)(Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x0008)(Parm, NoDestructor)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(ItemManagementEquipSlot_C_OnFocusReceived) == 0x11827900, "Wrong alignment on ItemManagementEquipSlot_C_OnFocusReceived");
-static_assert(sizeof(ItemManagementEquipSlot_C_OnFocusReceived) == 0x11827900, "Wrong size on ItemManagementEquipSlot_C_OnFocusReceived");
+static_assert(alignof(ItemManagementEquipSlot_C_OnFocusReceived) == 0x000008, "Wrong alignment on ItemManagementEquipSlot_C_OnFocusReceived");
+static_assert(sizeof(ItemManagementEquipSlot_C_OnFocusReceived) == 0x0001B0, "Wrong size on ItemManagementEquipSlot_C_OnFocusReceived");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'ItemManagementEquipSlot_C_OnFocusReceived::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnFocusReceived, InFocusEvent) == 0x000034, "Member 'ItemManagementEquipSlot_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'ItemManagementEquipSlot_C_OnFocusReceived::ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x0000F8, "Member 'ItemManagementEquipSlot_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.IsSelected
-// 0x05A4 (0x05A4 - 0x0000)
-struct alignas(0x5A4) ItemManagementEquipSlot_C_IsSelected final
+// 0x0003 (0x0003 - 0x0000)
+struct ItemManagementEquipSlot_C_IsSelected final
 {
 public:
 	bool                                          Selected;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementEquipSlot_C_IsSelected) == 0x0005A4, "Wrong alignment on ItemManagementEquipSlot_C_IsSelected");
-static_assert(sizeof(ItemManagementEquipSlot_C_IsSelected) == 0x0005A4, "Wrong size on ItemManagementEquipSlot_C_IsSelected");
+static_assert(alignof(ItemManagementEquipSlot_C_IsSelected) == 0x000001, "Wrong alignment on ItemManagementEquipSlot_C_IsSelected");
+static_assert(sizeof(ItemManagementEquipSlot_C_IsSelected) == 0x000003, "Wrong size on ItemManagementEquipSlot_C_IsSelected");
 static_assert(offsetof(ItemManagementEquipSlot_C_IsSelected, Selected) == 0x000000, "Member 'ItemManagementEquipSlot_C_IsSelected::Selected' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_IsSelected, CallFunc_GetVisibility_ReturnValue) == 0x000001, "Member 'ItemManagementEquipSlot_C_IsSelected::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementEquipSlot_C_IsSelected, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'ItemManagementEquipSlot_C_IsSelected::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");

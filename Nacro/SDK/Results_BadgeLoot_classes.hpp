@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_BadgeLoot.Results_BadgeLoot_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0130 (0x0370 - 0x0240)
 class UResults_BadgeLoot_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_SkipToFinalState;                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Outro;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_LeveledUp;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -108,8 +108,8 @@ public:
 		return GetDefaultObjImpl<UResults_BadgeLoot_C>();
 	}
 };
-static_assert(alignof(UResults_BadgeLoot_C) == 0x322CBBB8, "Wrong alignment on UResults_BadgeLoot_C");
-static_assert(sizeof(UResults_BadgeLoot_C) == 0x322CBBB8, "Wrong size on UResults_BadgeLoot_C");
+static_assert(alignof(UResults_BadgeLoot_C) == 0x000008, "Wrong alignment on UResults_BadgeLoot_C");
+static_assert(sizeof(UResults_BadgeLoot_C) == 0x000370, "Wrong size on UResults_BadgeLoot_C");
 static_assert(offsetof(UResults_BadgeLoot_C, UberGraphFrame) == 0x000240, "Member 'UResults_BadgeLoot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_BadgeLoot_C, Anim_SkipToFinalState) == 0x000248, "Member 'UResults_BadgeLoot_C::Anim_SkipToFinalState' has a wrong offset!");
 static_assert(offsetof(UResults_BadgeLoot_C, Anim_Outro) == 0x000250, "Member 'UResults_BadgeLoot_C::Anim_Outro' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-SolidBG-RewardBack.Border-SolidBG-RewardBack_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusSolidBGMinusRewardBack_C final : public UBorderMinusShellTopBar_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusSolidBGMinusRewardBack_C>();
 	}
 };
-static_assert(alignof(UBorderMinusSolidBGMinusRewardBack_C) == 0x11827900, "Wrong alignment on UBorderMinusSolidBGMinusRewardBack_C");
-static_assert(sizeof(UBorderMinusSolidBGMinusRewardBack_C) == 0x11827900, "Wrong size on UBorderMinusSolidBGMinusRewardBack_C");
+static_assert(alignof(UBorderMinusSolidBGMinusRewardBack_C) == 0x000008, "Wrong alignment on UBorderMinusSolidBGMinusRewardBack_C");
+static_assert(sizeof(UBorderMinusSolidBGMinusRewardBack_C) == 0x0000B8, "Wrong size on UBorderMinusSolidBGMinusRewardBack_C");
 
 }
 

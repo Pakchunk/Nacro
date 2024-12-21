@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.ExecuteUbergraph_FrontEndRewards_EpicQuest
-// 0x0656 (0x0656 - 0x0000)
-struct alignas(0x656) FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest final
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,8 +24,8 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest) == 0x000656, "Wrong alignment on FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest");
-static_assert(sizeof(FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest) == 0x000656, "Wrong size on FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest");
+static_assert(alignof(FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest) == 0x000008, "Wrong alignment on FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest");
+static_assert(sizeof(FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest) == 0x000018, "Wrong size on FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest");
 static_assert(offsetof(FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest, EntryPoint) == 0x000000, "Member 'FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest, CallFunc_HandleContinueAction_Committed) == 0x000004, "Member 'FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest::CallFunc_HandleContinueAction_Committed' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'FrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -66,15 +66,15 @@ static_assert(sizeof(FrontEndRewards_EpicQuest_C_HandleTransitionInComplete) == 
 static_assert(offsetof(FrontEndRewards_EpicQuest_C_HandleTransitionInComplete, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'FrontEndRewards_EpicQuest_C_HandleTransitionInComplete::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.MarkQuestAsSeen
-// 0x19C6 (0x19C6 - 0x0000)
-struct alignas(0x19C6) FrontEndRewards_EpicQuest_C_MarkQuestAsSeen final
+// 0x0010 (0x0010 - 0x0000)
+struct FrontEndRewards_EpicQuest_C_MarkQuestAsSeen final
 {
 public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_EpicQuest_C_MarkQuestAsSeen) == 0x0019C6, "Wrong alignment on FrontEndRewards_EpicQuest_C_MarkQuestAsSeen");
-static_assert(sizeof(FrontEndRewards_EpicQuest_C_MarkQuestAsSeen) == 0x0019C6, "Wrong size on FrontEndRewards_EpicQuest_C_MarkQuestAsSeen");
+static_assert(alignof(FrontEndRewards_EpicQuest_C_MarkQuestAsSeen) == 0x000008, "Wrong alignment on FrontEndRewards_EpicQuest_C_MarkQuestAsSeen");
+static_assert(sizeof(FrontEndRewards_EpicQuest_C_MarkQuestAsSeen) == 0x000010, "Wrong size on FrontEndRewards_EpicQuest_C_MarkQuestAsSeen");
 static_assert(offsetof(FrontEndRewards_EpicQuest_C_MarkQuestAsSeen, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'FrontEndRewards_EpicQuest_C_MarkQuestAsSeen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_EpicQuest_C_MarkQuestAsSeen, CallFunc_GetQuestManager_ReturnValue) == 0x000008, "Member 'FrontEndRewards_EpicQuest_C_MarkQuestAsSeen::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
 

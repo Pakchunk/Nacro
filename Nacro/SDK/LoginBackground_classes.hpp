@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LoginBackground.LoginBackground_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class ULoginBackground_C final : public UCommonUserWidget
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<ULoginBackground_C>();
 	}
 };
-static_assert(alignof(ULoginBackground_C) == 0x322CBBB8, "Wrong alignment on ULoginBackground_C");
-static_assert(sizeof(ULoginBackground_C) == 0x322CBBB8, "Wrong size on ULoginBackground_C");
+static_assert(alignof(ULoginBackground_C) == 0x000008, "Wrong alignment on ULoginBackground_C");
+static_assert(sizeof(ULoginBackground_C) == 0x000240, "Wrong size on ULoginBackground_C");
 static_assert(offsetof(ULoginBackground_C, Content) == 0x000238, "Member 'ULoginBackground_C::Content' has a wrong offset!");
 
 }

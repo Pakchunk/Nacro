@@ -19,12 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuickbarSecondary.QuickbarSecondary_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x0310 - 0x0288)
 class UQuickbarSecondary_C final : public UQuickbarBase_C
 {
 public:
-	uint8                                         Pad_281[0x7];                                      // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame_QuickbarSecondary_C;                // 0x0288(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_QuickbarSecondary_C;                // 0x0288(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         _Horizontal_Box__Camera_Mode_Content;              // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__Separator;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__Switch_Action;                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -62,8 +61,8 @@ public:
 		return GetDefaultObjImpl<UQuickbarSecondary_C>();
 	}
 };
-static_assert(alignof(UQuickbarSecondary_C) == 0x322CBBB8, "Wrong alignment on UQuickbarSecondary_C");
-static_assert(sizeof(UQuickbarSecondary_C) == 0x322CBBB8, "Wrong size on UQuickbarSecondary_C");
+static_assert(alignof(UQuickbarSecondary_C) == 0x000008, "Wrong alignment on UQuickbarSecondary_C");
+static_assert(sizeof(UQuickbarSecondary_C) == 0x000310, "Wrong size on UQuickbarSecondary_C");
 static_assert(offsetof(UQuickbarSecondary_C, UberGraphFrame_QuickbarSecondary_C) == 0x000288, "Member 'UQuickbarSecondary_C::UberGraphFrame_QuickbarSecondary_C' has a wrong offset!");
 static_assert(offsetof(UQuickbarSecondary_C, _Horizontal_Box__Camera_Mode_Content) == 0x000290, "Member 'UQuickbarSecondary_C::_Horizontal_Box__Camera_Mode_Content' has a wrong offset!");
 static_assert(offsetof(UQuickbarSecondary_C, _Image__Separator) == 0x000298, "Member 'UQuickbarSecondary_C::_Image__Separator' has a wrong offset!");

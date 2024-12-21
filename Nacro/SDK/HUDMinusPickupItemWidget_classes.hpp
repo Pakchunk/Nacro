@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HUD-PickupItemWidget.HUD-PickupItemWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class UHUDMinusPickupItemWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageBackpack;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemHeaderWidget_C*                    ItemHeaderWidget;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBoxInteractionFailure;                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UHUDMinusPickupItemWidget_C>();
 	}
 };
-static_assert(alignof(UHUDMinusPickupItemWidget_C) == 0x322CBBB8, "Wrong alignment on UHUDMinusPickupItemWidget_C");
-static_assert(sizeof(UHUDMinusPickupItemWidget_C) == 0x322CBBB8, "Wrong size on UHUDMinusPickupItemWidget_C");
+static_assert(alignof(UHUDMinusPickupItemWidget_C) == 0x000008, "Wrong alignment on UHUDMinusPickupItemWidget_C");
+static_assert(sizeof(UHUDMinusPickupItemWidget_C) == 0x000270, "Wrong size on UHUDMinusPickupItemWidget_C");
 static_assert(offsetof(UHUDMinusPickupItemWidget_C, UberGraphFrame) == 0x000238, "Member 'UHUDMinusPickupItemWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHUDMinusPickupItemWidget_C, ImageBackpack) == 0x000240, "Member 'UHUDMinusPickupItemWidget_C::ImageBackpack' has a wrong offset!");
 static_assert(offsetof(UHUDMinusPickupItemWidget_C, ItemHeaderWidget) == 0x000248, "Member 'UHUDMinusPickupItemWidget_C::ItemHeaderWidget' has a wrong offset!");

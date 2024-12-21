@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MulchRefundItemQuantityList.MulchRefundItemQuantityList_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x02C0 - 0x02B0)
 class UMulchRefundItemQuantityList_C final : public UFortItemQuantityListBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           ContainerBox;                                      // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
@@ -39,8 +39,8 @@ public:
 		return GetDefaultObjImpl<UMulchRefundItemQuantityList_C>();
 	}
 };
-static_assert(alignof(UMulchRefundItemQuantityList_C) == 0x322CBBB8, "Wrong alignment on UMulchRefundItemQuantityList_C");
-static_assert(sizeof(UMulchRefundItemQuantityList_C) == 0x322CBBB8, "Wrong size on UMulchRefundItemQuantityList_C");
+static_assert(alignof(UMulchRefundItemQuantityList_C) == 0x000008, "Wrong alignment on UMulchRefundItemQuantityList_C");
+static_assert(sizeof(UMulchRefundItemQuantityList_C) == 0x0002C0, "Wrong size on UMulchRefundItemQuantityList_C");
 static_assert(offsetof(UMulchRefundItemQuantityList_C, UberGraphFrame) == 0x0002B0, "Member 'UMulchRefundItemQuantityList_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMulchRefundItemQuantityList_C, ContainerBox) == 0x0002B8, "Member 'UMulchRefundItemQuantityList_C::ContainerBox' has a wrong offset!");
 

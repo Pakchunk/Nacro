@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-RatingWidget.ButtonStyle-RatingWidget_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x1C08 - 0x1C08)
 class UButtonStyleMinusRatingWidget_C final : public UFortButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusRatingWidget_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusRatingWidget_C) == 0x1182E980, "Wrong alignment on UButtonStyleMinusRatingWidget_C");
-static_assert(sizeof(UButtonStyleMinusRatingWidget_C) == 0x1182E980, "Wrong size on UButtonStyleMinusRatingWidget_C");
+static_assert(alignof(UButtonStyleMinusRatingWidget_C) == 0x000008, "Wrong alignment on UButtonStyleMinusRatingWidget_C");
+static_assert(sizeof(UButtonStyleMinusRatingWidget_C) == 0x001C08, "Wrong size on UButtonStyleMinusRatingWidget_C");
 
 }
 

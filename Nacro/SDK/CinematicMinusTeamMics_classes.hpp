@@ -20,16 +20,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Cinematic-TeamMics.Cinematic-TeamMics_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01C0 (0x03F8 - 0x0238)
 class UCinematicMinusTeamMics_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UMicIndicator_C*                        MicIndicator;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  SwitcherConnectingStranger;                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextBlock_6;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextPlayerName;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x0260(0x11827900)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x0260(0x0190)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          ShowingHealth;                                     // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UCinematicMinusTeamMics_C>();
 	}
 };
-static_assert(alignof(UCinematicMinusTeamMics_C) == 0x322CBBB8, "Wrong alignment on UCinematicMinusTeamMics_C");
-static_assert(sizeof(UCinematicMinusTeamMics_C) == 0x322CBBB8, "Wrong size on UCinematicMinusTeamMics_C");
+static_assert(alignof(UCinematicMinusTeamMics_C) == 0x000008, "Wrong alignment on UCinematicMinusTeamMics_C");
+static_assert(sizeof(UCinematicMinusTeamMics_C) == 0x0003F8, "Wrong size on UCinematicMinusTeamMics_C");
 static_assert(offsetof(UCinematicMinusTeamMics_C, UberGraphFrame) == 0x000238, "Member 'UCinematicMinusTeamMics_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCinematicMinusTeamMics_C, MicIndicator) == 0x000240, "Member 'UCinematicMinusTeamMics_C::MicIndicator' has a wrong offset!");
 static_assert(offsetof(UCinematicMinusTeamMics_C, SwitcherConnectingStranger) == 0x000248, "Member 'UCinematicMinusTeamMics_C::SwitcherConnectingStranger' has a wrong offset!");

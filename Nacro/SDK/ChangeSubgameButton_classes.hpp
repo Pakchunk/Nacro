@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ChangeSubgameButton.ChangeSubgameButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class UChangeSubgameButton_C final : public UFortSubGameSelectButtonBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ChangeSubgame;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBoxContainer;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   OnClicked;                                         // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UChangeSubgameButton_C>();
 	}
 };
-static_assert(alignof(UChangeSubgameButton_C) == 0x322CBBB8, "Wrong alignment on UChangeSubgameButton_C");
-static_assert(sizeof(UChangeSubgameButton_C) == 0x322CBBB8, "Wrong size on UChangeSubgameButton_C");
+static_assert(alignof(UChangeSubgameButton_C) == 0x000008, "Wrong alignment on UChangeSubgameButton_C");
+static_assert(sizeof(UChangeSubgameButton_C) == 0x000270, "Wrong size on UChangeSubgameButton_C");
 static_assert(offsetof(UChangeSubgameButton_C, UberGraphFrame) == 0x000238, "Member 'UChangeSubgameButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UChangeSubgameButton_C, ChangeSubgame) == 0x000240, "Member 'UChangeSubgameButton_C::ChangeSubgame' has a wrong offset!");
 static_assert(offsetof(UChangeSubgameButton_C, SizeBoxContainer) == 0x000248, "Member 'UChangeSubgameButton_C::SizeBoxContainer' has a wrong offset!");

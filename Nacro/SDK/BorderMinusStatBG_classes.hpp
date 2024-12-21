@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-StatBG.Border-StatBG_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusStatBG_C final : public UBorderMinusShellTopBar_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusStatBG_C>();
 	}
 };
-static_assert(alignof(UBorderMinusStatBG_C) == 0x11827900, "Wrong alignment on UBorderMinusStatBG_C");
-static_assert(sizeof(UBorderMinusStatBG_C) == 0x11827900, "Wrong size on UBorderMinusStatBG_C");
+static_assert(alignof(UBorderMinusStatBG_C) == 0x000008, "Wrong alignment on UBorderMinusStatBG_C");
+static_assert(sizeof(UBorderMinusStatBG_C) == 0x0000B8, "Wrong size on UBorderMinusStatBG_C");
 
 }
 

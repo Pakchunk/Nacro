@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-TopBar-TimerFlash.Border-TopBar-TimerFlash_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusTopBarMinusTimerFlash_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusTopBarMinusTimerFlash_C>();
 	}
 };
-static_assert(alignof(UBorderMinusTopBarMinusTimerFlash_C) == 0x11827900, "Wrong alignment on UBorderMinusTopBarMinusTimerFlash_C");
-static_assert(sizeof(UBorderMinusTopBarMinusTimerFlash_C) == 0x11827900, "Wrong size on UBorderMinusTopBarMinusTimerFlash_C");
+static_assert(alignof(UBorderMinusTopBarMinusTimerFlash_C) == 0x000008, "Wrong alignment on UBorderMinusTopBarMinusTimerFlash_C");
+static_assert(sizeof(UBorderMinusTopBarMinusTimerFlash_C) == 0x0000B8, "Wrong size on UBorderMinusTopBarMinusTimerFlash_C");
 
 }
 

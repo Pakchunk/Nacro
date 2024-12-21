@@ -133,13 +133,13 @@ static_assert(offsetof(PickupManager_C_HandleItemPickedUp, K2Node_DynamicCast_As
 static_assert(offsetof(PickupManager_C_HandleItemPickedUp, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'PickupManager_C_HandleItemPickedUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function PickupManager.PickupManager_C.RefreshCounts
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct PickupManager_C_RefreshCounts final
 {
 public:
 	float                                         BackpackFullPct;                                   // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            BackpackColor;                                     // 0x0008(0x322CBBB8)(Edit)
+	struct FSlateColor                            BackpackColor;                                     // 0x0008(0x0028)(Edit)
 	int32                                         Overflow_Items_Count;                              // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Max_Items_Count;                                   // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Items_Count;                                       // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -170,21 +170,22 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x00AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AF[0x1];                                       // 0x00AF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x00B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color2;             // 0x00C0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x00B0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color2;             // 0x00C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable2;                               // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00D8(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00D8(0x0090)()
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_16B[0x1];                                      // 0x016B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x016C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0180(0x322CBBB8)()
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x016C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0180(0x0028)()
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue2;             // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PickupManager_C_RefreshCounts) == 0x322CBBB8, "Wrong alignment on PickupManager_C_RefreshCounts");
-static_assert(sizeof(PickupManager_C_RefreshCounts) == 0x322CBBB8, "Wrong size on PickupManager_C_RefreshCounts");
+static_assert(alignof(PickupManager_C_RefreshCounts) == 0x000008, "Wrong alignment on PickupManager_C_RefreshCounts");
+static_assert(sizeof(PickupManager_C_RefreshCounts) == 0x0001B0, "Wrong size on PickupManager_C_RefreshCounts");
 static_assert(offsetof(PickupManager_C_RefreshCounts, BackpackFullPct) == 0x000000, "Member 'PickupManager_C_RefreshCounts::BackpackFullPct' has a wrong offset!");
 static_assert(offsetof(PickupManager_C_RefreshCounts, BackpackColor) == 0x000008, "Member 'PickupManager_C_RefreshCounts::BackpackColor' has a wrong offset!");
 static_assert(offsetof(PickupManager_C_RefreshCounts, Overflow_Items_Count) == 0x000030, "Member 'PickupManager_C_RefreshCounts::Overflow_Items_Count' has a wrong offset!");

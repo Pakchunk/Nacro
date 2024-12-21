@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_NameplateWidget.Results_NameplateWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0288 - 0x0240)
 class UResults_NameplateWidget_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_Outro;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextZoneCompletion;                                // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UResults_NameplateWidget_C>();
 	}
 };
-static_assert(alignof(UResults_NameplateWidget_C) == 0x322CBBB8, "Wrong alignment on UResults_NameplateWidget_C");
-static_assert(sizeof(UResults_NameplateWidget_C) == 0x322CBBB8, "Wrong size on UResults_NameplateWidget_C");
+static_assert(alignof(UResults_NameplateWidget_C) == 0x000008, "Wrong alignment on UResults_NameplateWidget_C");
+static_assert(sizeof(UResults_NameplateWidget_C) == 0x000288, "Wrong size on UResults_NameplateWidget_C");
 static_assert(offsetof(UResults_NameplateWidget_C, UberGraphFrame) == 0x000240, "Member 'UResults_NameplateWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_NameplateWidget_C, Anim_Outro) == 0x000248, "Member 'UResults_NameplateWidget_C::Anim_Outro' has a wrong offset!");
 static_assert(offsetof(UResults_NameplateWidget_C, Anim_Intro) == 0x000250, "Member 'UResults_NameplateWidget_C::Anim_Intro' has a wrong offset!");

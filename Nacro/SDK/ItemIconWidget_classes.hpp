@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemIconWidget.ItemIconWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0250 - 0x0230)
 class UItemIconWidget_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image;                                             // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItem*                              Item;                                              // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	EFortBrushSize                                BrushSize;                                         // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UItemIconWidget_C>();
 	}
 };
-static_assert(alignof(UItemIconWidget_C) == 0x322CBBB8, "Wrong alignment on UItemIconWidget_C");
-static_assert(sizeof(UItemIconWidget_C) == 0x322CBBB8, "Wrong size on UItemIconWidget_C");
+static_assert(alignof(UItemIconWidget_C) == 0x000008, "Wrong alignment on UItemIconWidget_C");
+static_assert(sizeof(UItemIconWidget_C) == 0x000250, "Wrong size on UItemIconWidget_C");
 static_assert(offsetof(UItemIconWidget_C, UberGraphFrame) == 0x000230, "Member 'UItemIconWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemIconWidget_C, Image) == 0x000238, "Member 'UItemIconWidget_C::Image' has a wrong offset!");
 static_assert(offsetof(UItemIconWidget_C, Item) == 0x000240, "Member 'UItemIconWidget_C::Item' has a wrong offset!");

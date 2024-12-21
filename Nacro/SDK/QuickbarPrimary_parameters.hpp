@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function QuickbarPrimary.QuickbarPrimary_C.ExecuteUbergraph_QuickbarPrimary
-// 0x00FC (0x00FC - 0x0000)
-struct alignas(0x7E) QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary final
+// 0x0080 (0x0080 - 0x0000)
+struct QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 	int32                                         CallFunc_GetQuickbarFocus_OutSecondarySlot;        // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot;  // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary) == 0x00007E, "Wrong alignment on QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary");
-static_assert(sizeof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary) == 0x0000FC, "Wrong size on QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary");
+static_assert(alignof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary) == 0x000008, "Wrong alignment on QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary");
+static_assert(sizeof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary) == 0x000080, "Wrong size on QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary");
 static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, EntryPoint) == 0x000000, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::EntryPoint' has a wrong offset!");
 static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, K2Node_MakeArray_Array) == 0x000018, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::K2Node_MakeArray_Array' has a wrong offset!");
@@ -64,19 +64,19 @@ static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallF
 static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot) == 0x00007C, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot' has a wrong offset!");
 
 // Function QuickbarPrimary.QuickbarPrimary_C.HandleInputMethodChanged
-// 0x00C4 (0x00C4 - 0x0000)
-struct alignas(0xC4) QuickbarPrimary_C_HandleInputMethodChanged final
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarPrimary_C_HandleInputMethodChanged final
 {
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarPrimary_C_HandleInputMethodChanged) == 0x0000C4, "Wrong alignment on QuickbarPrimary_C_HandleInputMethodChanged");
-static_assert(sizeof(QuickbarPrimary_C_HandleInputMethodChanged) == 0x0000C4, "Wrong size on QuickbarPrimary_C_HandleInputMethodChanged");
+static_assert(alignof(QuickbarPrimary_C_HandleInputMethodChanged) == 0x000001, "Wrong alignment on QuickbarPrimary_C_HandleInputMethodChanged");
+static_assert(sizeof(QuickbarPrimary_C_HandleInputMethodChanged) == 0x000001, "Wrong size on QuickbarPrimary_C_HandleInputMethodChanged");
 static_assert(offsetof(QuickbarPrimary_C_HandleInputMethodChanged, bUsingGamepad) == 0x000000, "Member 'QuickbarPrimary_C_HandleInputMethodChanged::bUsingGamepad' has a wrong offset!");
 
 // Function QuickbarPrimary.QuickbarPrimary_C.Show Primary Quickbar Rail
-// 0x008F (0x008F - 0x0000)
-struct alignas(0x8F) QuickbarPrimary_C_Show_Primary_Quickbar_Rail final
+// 0x0005 (0x0005 - 0x0000)
+struct QuickbarPrimary_C_Show_Primary_Quickbar_Rail final
 {
 public:
 	bool                                          Show;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -85,8 +85,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail) == 0x00008F, "Wrong alignment on QuickbarPrimary_C_Show_Primary_Quickbar_Rail");
-static_assert(sizeof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail) == 0x00008F, "Wrong size on QuickbarPrimary_C_Show_Primary_Quickbar_Rail");
+static_assert(alignof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail) == 0x000001, "Wrong alignment on QuickbarPrimary_C_Show_Primary_Quickbar_Rail");
+static_assert(sizeof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail) == 0x000005, "Wrong size on QuickbarPrimary_C_Show_Primary_Quickbar_Rail");
 static_assert(offsetof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail, Show) == 0x000000, "Member 'QuickbarPrimary_C_Show_Primary_Quickbar_Rail::Show' has a wrong offset!");
 static_assert(offsetof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail, Temp_bool_Variable) == 0x000001, "Member 'QuickbarPrimary_C_Show_Primary_Quickbar_Rail::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail, Temp_byte_Variable) == 0x000002, "Member 'QuickbarPrimary_C_Show_Primary_Quickbar_Rail::Temp_byte_Variable' has a wrong offset!");

@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StatNumericTextBlock.StatNumericTextBlock_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UStatNumericTextBlock_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ComparisonArrowImage;                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                NumericText;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EFortBuffState                                Buff_State;                                        // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UStatNumericTextBlock_C>();
 	}
 };
-static_assert(alignof(UStatNumericTextBlock_C) == 0x322CBBB8, "Wrong alignment on UStatNumericTextBlock_C");
-static_assert(sizeof(UStatNumericTextBlock_C) == 0x322CBBB8, "Wrong size on UStatNumericTextBlock_C");
+static_assert(alignof(UStatNumericTextBlock_C) == 0x000008, "Wrong alignment on UStatNumericTextBlock_C");
+static_assert(sizeof(UStatNumericTextBlock_C) == 0x000260, "Wrong size on UStatNumericTextBlock_C");
 static_assert(offsetof(UStatNumericTextBlock_C, UberGraphFrame) == 0x000238, "Member 'UStatNumericTextBlock_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStatNumericTextBlock_C, ComparisonArrowImage) == 0x000240, "Member 'UStatNumericTextBlock_C::ComparisonArrowImage' has a wrong offset!");
 static_assert(offsetof(UStatNumericTextBlock_C, NumericText) == 0x000248, "Member 'UStatNumericTextBlock_C::NumericText' has a wrong offset!");

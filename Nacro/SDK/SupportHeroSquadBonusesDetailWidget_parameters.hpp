@@ -35,7 +35,7 @@ static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_Su
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.UpdateVisibility
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility final
 {
 public:
@@ -54,7 +54,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x0038(0x11821D80)()
+	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x0038(0x0088)()
 	bool                                          CallFunc_TryGetHomebaseSquadData_ReturnValue;      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHero*                              K2Node_DynamicCast_AsFort_Hero;                    // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,8 +66,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00D6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility) == 0x11821780, "Wrong alignment on SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility");
-static_assert(sizeof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility) == 0x11821780, "Wrong size on SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility");
+static_assert(alignof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility) == 0x000008, "Wrong alignment on SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility");
+static_assert(sizeof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility) == 0x0000D8, "Wrong size on SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId) == 0x000000, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId' has a wrong offset!");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex) == 0x000008, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex' has a wrong offset!");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2) == 0x000010, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2' has a wrong offset!");
@@ -94,7 +94,7 @@ static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, K
 
 // Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.UpdatePerkWidgets
 // 0x0018 (0x0018 - 0x0000)
-struct SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets final
+struct alignas(0x08) SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -106,7 +106,7 @@ public:
 	EFortSupportBonusType                         Temp_byte_Variable2;                               // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortSupportBonusType                         K2Node_Select_Default;                             // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets) == 0x000004, "Wrong alignment on SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets");
+static_assert(alignof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets) == 0x000008, "Wrong alignment on SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets");
 static_assert(sizeof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets) == 0x000018, "Wrong size on SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, Temp_bool_Variable) == 0x000000, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId) == 0x000008, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LF_SurvivorShelterIndoor.LF_SurvivorShelterIndoor_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0000 (0x1080 - 0x1080)
 class ALF_SurvivorShelterIndoor_C final : public ABuildingFoundation5x5
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<ALF_SurvivorShelterIndoor_C>();
 	}
 };
-static_assert(alignof(ALF_SurvivorShelterIndoor_C) == 0x1182A000, "Wrong alignment on ALF_SurvivorShelterIndoor_C");
-static_assert(sizeof(ALF_SurvivorShelterIndoor_C) == 0x1182A000, "Wrong size on ALF_SurvivorShelterIndoor_C");
+static_assert(alignof(ALF_SurvivorShelterIndoor_C) == 0x000010, "Wrong alignment on ALF_SurvivorShelterIndoor_C");
+static_assert(sizeof(ALF_SurvivorShelterIndoor_C) == 0x001080, "Wrong size on ALF_SurvivorShelterIndoor_C");
 
 }
 

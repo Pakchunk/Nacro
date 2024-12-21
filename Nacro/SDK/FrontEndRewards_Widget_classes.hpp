@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_Widget.FrontEndRewards_Widget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0130 (0x06C0 - 0x0590)
 class UFrontEndRewards_Widget_C final : public UFortRewardNotificationWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0590(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0590(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       AnimShowBorder;                                    // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimFadeHeader;                                    // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimShowHeader;                                    // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -151,8 +151,8 @@ public:
 		return GetDefaultObjImpl<UFrontEndRewards_Widget_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_Widget_C) == 0x322CBBB8, "Wrong alignment on UFrontEndRewards_Widget_C");
-static_assert(sizeof(UFrontEndRewards_Widget_C) == 0x322CBBB8, "Wrong size on UFrontEndRewards_Widget_C");
+static_assert(alignof(UFrontEndRewards_Widget_C) == 0x000010, "Wrong alignment on UFrontEndRewards_Widget_C");
+static_assert(sizeof(UFrontEndRewards_Widget_C) == 0x0006C0, "Wrong size on UFrontEndRewards_Widget_C");
 static_assert(offsetof(UFrontEndRewards_Widget_C, UberGraphFrame) == 0x000590, "Member 'UFrontEndRewards_Widget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_Widget_C, AnimShowBorder) == 0x000598, "Member 'UFrontEndRewards_Widget_C::AnimShowBorder' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_Widget_C, AnimFadeHeader) == 0x0005A0, "Member 'UFrontEndRewards_Widget_C::AnimFadeHeader' has a wrong offset!");

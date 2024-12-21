@@ -44,8 +44,8 @@ static_assert(offsetof(ToastDisplayArea_C_RegisterToastHandler, CallFunc_IsValid
 static_assert(offsetof(ToastDisplayArea_C_RegisterToastHandler, CallFunc_GetUINotificationQueue_ReturnValue) == 0x000018, "Member 'ToastDisplayArea_C_RegisterToastHandler::CallFunc_GetUINotificationQueue_ReturnValue' has a wrong offset!");
 
 // Function ToastDisplayArea.ToastDisplayArea_C.AttemptDisplayNextToast
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ToastDisplayArea_C_AttemptDisplayNextToast final
+// 0x0028 (0x0028 - 0x0000)
+struct ToastDisplayArea_C_AttemptDisplayNextToast final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -58,8 +58,8 @@ public:
 	class UFortUINotification*                    CallFunc_GetNextNotification_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ToastDisplayArea_C_AttemptDisplayNextToast) == 0x0000E4, "Wrong alignment on ToastDisplayArea_C_AttemptDisplayNextToast");
-static_assert(sizeof(ToastDisplayArea_C_AttemptDisplayNextToast) == 0x0000E4, "Wrong size on ToastDisplayArea_C_AttemptDisplayNextToast");
+static_assert(alignof(ToastDisplayArea_C_AttemptDisplayNextToast) == 0x000008, "Wrong alignment on ToastDisplayArea_C_AttemptDisplayNextToast");
+static_assert(sizeof(ToastDisplayArea_C_AttemptDisplayNextToast) == 0x000028, "Wrong size on ToastDisplayArea_C_AttemptDisplayNextToast");
 static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000001, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ToastDisplayArea_C_AttemptDisplayNextToast, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ToastDisplayArea_C_AttemptDisplayNextToast::CallFunc_GetContext_ReturnValue' has a wrong offset!");

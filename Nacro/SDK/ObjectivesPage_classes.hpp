@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ObjectivesPage.ObjectivesPage_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0080 (0x0460 - 0x03E0)
 class UObjectivesPage_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UActiveModifiersPanelContent_C*         ActiveModifiersPanelContent;                       // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      BadgesButton;                                      // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBadgesEarnedPanelContent_C*            BadgesEarnedPanelContent_0;                        // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<UObjectivesPage_C>();
 	}
 };
-static_assert(alignof(UObjectivesPage_C) == 0x322CBBB8, "Wrong alignment on UObjectivesPage_C");
-static_assert(sizeof(UObjectivesPage_C) == 0x322CBBB8, "Wrong size on UObjectivesPage_C");
+static_assert(alignof(UObjectivesPage_C) == 0x000008, "Wrong alignment on UObjectivesPage_C");
+static_assert(sizeof(UObjectivesPage_C) == 0x000460, "Wrong size on UObjectivesPage_C");
 static_assert(offsetof(UObjectivesPage_C, UberGraphFrame) == 0x0003E0, "Member 'UObjectivesPage_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UObjectivesPage_C, ActiveModifiersPanelContent) == 0x0003E8, "Member 'UObjectivesPage_C::ActiveModifiersPanelContent' has a wrong offset!");
 static_assert(offsetof(UObjectivesPage_C, BadgesButton) == 0x0003F0, "Member 'UObjectivesPage_C::BadgesButton' has a wrong offset!");

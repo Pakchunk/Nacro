@@ -19,24 +19,24 @@ namespace SDK::Params
 {
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.ExecuteUbergraph_HUD-TeamMemberInfo
-// 0x650074 (0x650074 - 0x0000)
-struct alignas(0x650074) HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo final
+// 0x0004 (0x0004 - 0x0000)
+struct HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo) == 0x650074, "Wrong alignment on HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo");
-static_assert(sizeof(HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo) == 0x650074, "Wrong size on HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo");
+static_assert(alignof(HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo) == 0x000004, "Wrong alignment on HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo");
+static_assert(sizeof(HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo) == 0x000004, "Wrong size on HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo");
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo, EntryPoint) == 0x000000, "Member 'HUDMinusTeamMemberInfo_C_ExecuteUbergraph_HUDMinusTeamMemberInfo::EntryPoint' has a wrong offset!");
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.Update
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct HUDMinusTeamMemberInfo_C_Update final
 {
 public:
-	struct FFortTeamMemberInfo                    UpdatedMemberInfo;                                 // 0x0000(0x11827900)(Parm)
-	struct FUniqueNetIdRepl                       PlayerPlatformNetId;                               // 0x0190(0x11821780)(Edit, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x01A8(0x11821780)(Edit, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                    UpdatedMemberInfo;                                 // 0x0000(0x0190)(Parm)
+	struct FUniqueNetIdRepl                       PlayerPlatformNetId;                               // 0x0190(0x0018)(Edit, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x01A8(0x0018)(Edit, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x01C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -56,7 +56,7 @@ public:
 	bool                                          CallFunc_IsInLocalPlayersParty_ReturnValue;        // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable5;                               // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1F2[0x6];                                      // 0x01F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Select_Default;                             // 0x01F8(0x11821780)(ConstParm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_Select_Default;                             // 0x01F8(0x0018)(ConstParm, HasGetValueTypeHash)
 	class UClass*                                 K2Node_Select2_Default;                            // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -69,8 +69,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0226(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select5_Default;                            // 0x0227(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDMinusTeamMemberInfo_C_Update) == 0x11821780, "Wrong alignment on HUDMinusTeamMemberInfo_C_Update");
-static_assert(sizeof(HUDMinusTeamMemberInfo_C_Update) == 0x11821780, "Wrong size on HUDMinusTeamMemberInfo_C_Update");
+static_assert(alignof(HUDMinusTeamMemberInfo_C_Update) == 0x000008, "Wrong alignment on HUDMinusTeamMemberInfo_C_Update");
+static_assert(sizeof(HUDMinusTeamMemberInfo_C_Update) == 0x000228, "Wrong size on HUDMinusTeamMemberInfo_C_Update");
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, UpdatedMemberInfo) == 0x000000, "Member 'HUDMinusTeamMemberInfo_C_Update::UpdatedMemberInfo' has a wrong offset!");
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, PlayerPlatformNetId) == 0x000190, "Member 'HUDMinusTeamMemberInfo_C_Update::PlayerPlatformNetId' has a wrong offset!");
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, PlayerNetId) == 0x0001A8, "Member 'HUDMinusTeamMemberInfo_C_Update::PlayerNetId' has a wrong offset!");
@@ -103,8 +103,8 @@ static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, CallFunc_BooleanAND_Retu
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_Update, K2Node_Select5_Default) == 0x000227, "Member 'HUDMinusTeamMemberInfo_C_Update::K2Node_Select5_Default' has a wrong offset!");
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.SetHealth
-// 0x340032 (0x340032 - 0x0000)
-struct alignas(0x340032) HUDMinusTeamMemberInfo_C_SetHealth final
+// 0x0010 (0x0010 - 0x0000)
+struct HUDMinusTeamMemberInfo_C_SetHealth final
 {
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -112,8 +112,8 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDMinusTeamMemberInfo_C_SetHealth) == 0x340032, "Wrong alignment on HUDMinusTeamMemberInfo_C_SetHealth");
-static_assert(sizeof(HUDMinusTeamMemberInfo_C_SetHealth) == 0x340032, "Wrong size on HUDMinusTeamMemberInfo_C_SetHealth");
+static_assert(alignof(HUDMinusTeamMemberInfo_C_SetHealth) == 0x000008, "Wrong alignment on HUDMinusTeamMemberInfo_C_SetHealth");
+static_assert(sizeof(HUDMinusTeamMemberInfo_C_SetHealth) == 0x000010, "Wrong size on HUDMinusTeamMemberInfo_C_SetHealth");
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_SetHealth, Value) == 0x000000, "Member 'HUDMinusTeamMemberInfo_C_SetHealth::Value' has a wrong offset!");
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_SetHealth, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'HUDMinusTeamMemberInfo_C_SetHealth::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUDMinusTeamMemberInfo_C_SetHealth, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'HUDMinusTeamMemberInfo_C_SetHealth::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");

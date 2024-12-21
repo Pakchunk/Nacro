@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.ExecuteUbergraph_ItemDetailsHeaderItemDisplayText
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText final
 {
 public:
@@ -36,14 +36,14 @@ public:
 	ESlateVisibility                              Temp_byte_Variable4;                               // 0x0027(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0030(0x11821780)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00B0(0x322CBBB8)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0030(0x0080)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00B0(0x0028)()
 	class FText                                   CallFunc_GetDisplayName_DisplayName2;              // 0x00D8(0x0018)()
 	bool                                          CallFunc_TextIsEmpty_ReturnValue2;                 // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText) == 0x322CBBB8, "Wrong alignment on ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
-static_assert(sizeof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText) == 0x322CBBB8, "Wrong size on ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
+static_assert(alignof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText) == 0x000008, "Wrong alignment on ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
+static_assert(sizeof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText) == 0x0000F8, "Wrong size on ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
 static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, EntryPoint) == 0x000000, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, CallFunc_GetDisplayName_DisplayName) == 0x000008, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::CallFunc_GetDisplayName_DisplayName' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, Temp_bool_Variable) == 0x000020, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::Temp_bool_Variable' has a wrong offset!");

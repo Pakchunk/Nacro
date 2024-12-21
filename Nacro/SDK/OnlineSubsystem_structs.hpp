@@ -47,8 +47,8 @@ enum class EMPMatchOutcome : uint8
 };
 
 // ScriptStruct OnlineSubsystem.InAppPurchaseProductInfo
-// 0x11825B00 (0x11825B00 - 0x0000)
-struct alignas(0x11825B00) FInAppPurchaseProductInfo final
+// 0x00A8 (0x00A8 - 0x0000)
+struct FInAppPurchaseProductInfo final
 {
 public:
 	class FString                                 Identifier;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -64,8 +64,8 @@ public:
 	class FString                                 GroupingSeparator;                                 // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReceiptData;                                       // 0x0098(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInAppPurchaseProductInfo) == 0x11825B00, "Wrong alignment on FInAppPurchaseProductInfo");
-static_assert(sizeof(FInAppPurchaseProductInfo) == 0x11825B00, "Wrong size on FInAppPurchaseProductInfo");
+static_assert(alignof(FInAppPurchaseProductInfo) == 0x000008, "Wrong alignment on FInAppPurchaseProductInfo");
+static_assert(sizeof(FInAppPurchaseProductInfo) == 0x0000A8, "Wrong size on FInAppPurchaseProductInfo");
 static_assert(offsetof(FInAppPurchaseProductInfo, Identifier) == 0x000000, "Member 'FInAppPurchaseProductInfo::Identifier' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseProductInfo, TransactionIdentifier) == 0x000010, "Member 'FInAppPurchaseProductInfo::TransactionIdentifier' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseProductInfo, DisplayName) == 0x000020, "Member 'FInAppPurchaseProductInfo::DisplayName' has a wrong offset!");
@@ -79,57 +79,57 @@ static_assert(offsetof(FInAppPurchaseProductInfo, GroupingSeparator) == 0x000088
 static_assert(offsetof(FInAppPurchaseProductInfo, ReceiptData) == 0x000098, "Member 'FInAppPurchaseProductInfo::ReceiptData' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystem.InAppPurchaseRestoreInfo
-// 0x53FA2 (0x53FA2 - 0x0000)
-struct alignas(0x53FA2) FInAppPurchaseRestoreInfo final
+// 0x0030 (0x0030 - 0x0000)
+struct FInAppPurchaseRestoreInfo final
 {
 public:
 	class FString                                 Identifier;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReceiptData;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 TransactionIdentifier;                             // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FInAppPurchaseRestoreInfo) == 0x053FA2, "Wrong alignment on FInAppPurchaseRestoreInfo");
-static_assert(sizeof(FInAppPurchaseRestoreInfo) == 0x053FA2, "Wrong size on FInAppPurchaseRestoreInfo");
+static_assert(alignof(FInAppPurchaseRestoreInfo) == 0x000008, "Wrong alignment on FInAppPurchaseRestoreInfo");
+static_assert(sizeof(FInAppPurchaseRestoreInfo) == 0x000030, "Wrong size on FInAppPurchaseRestoreInfo");
 static_assert(offsetof(FInAppPurchaseRestoreInfo, Identifier) == 0x000000, "Member 'FInAppPurchaseRestoreInfo::Identifier' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseRestoreInfo, ReceiptData) == 0x000010, "Member 'FInAppPurchaseRestoreInfo::ReceiptData' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseRestoreInfo, TransactionIdentifier) == 0x000020, "Member 'FInAppPurchaseRestoreInfo::TransactionIdentifier' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystem.NamedInterfaceDef
-// 0x1182F280 (0x1182F280 - 0x0000)
-struct alignas(0x1182F280) FNamedInterfaceDef final
+// 0x0018 (0x0018 - 0x0000)
+struct FNamedInterfaceDef final
 {
 public:
 	class FName                                   InterfaceName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 InterfaceClassName;                                // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNamedInterfaceDef) == 0x1182F280, "Wrong alignment on FNamedInterfaceDef");
-static_assert(sizeof(FNamedInterfaceDef) == 0x1182F280, "Wrong size on FNamedInterfaceDef");
+static_assert(alignof(FNamedInterfaceDef) == 0x000008, "Wrong alignment on FNamedInterfaceDef");
+static_assert(sizeof(FNamedInterfaceDef) == 0x000018, "Wrong size on FNamedInterfaceDef");
 static_assert(offsetof(FNamedInterfaceDef, InterfaceName) == 0x000000, "Member 'FNamedInterfaceDef::InterfaceName' has a wrong offset!");
 static_assert(offsetof(FNamedInterfaceDef, InterfaceClassName) == 0x000008, "Member 'FNamedInterfaceDef::InterfaceClassName' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystem.NamedInterface
-// 0x11825B00 (0x11825B00 - 0x0000)
-struct alignas(0x11825B00) FNamedInterface final
+// 0x0010 (0x0010 - 0x0000)
+struct FNamedInterface final
 {
 public:
 	class FName                                   InterfaceName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                InterfaceObject;                                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNamedInterface) == 0x11825B00, "Wrong alignment on FNamedInterface");
-static_assert(sizeof(FNamedInterface) == 0x11825B00, "Wrong size on FNamedInterface");
+static_assert(alignof(FNamedInterface) == 0x000008, "Wrong alignment on FNamedInterface");
+static_assert(sizeof(FNamedInterface) == 0x000010, "Wrong size on FNamedInterface");
 static_assert(offsetof(FNamedInterface, InterfaceName) == 0x000000, "Member 'FNamedInterface::InterfaceName' has a wrong offset!");
 static_assert(offsetof(FNamedInterface, InterfaceObject) == 0x000008, "Member 'FNamedInterface::InterfaceObject' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystem.InAppPurchaseProductRequest
-// 0x11825B00 (0x11825B00 - 0x0000)
-struct alignas(0x11825B00) FInAppPurchaseProductRequest final
+// 0x0018 (0x0018 - 0x0000)
+struct FInAppPurchaseProductRequest final
 {
 public:
 	class FString                                 ProductIdentifier;                                 // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsConsumable;                                     // 0x0010(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInAppPurchaseProductRequest) == 0x11825B00, "Wrong alignment on FInAppPurchaseProductRequest");
-static_assert(sizeof(FInAppPurchaseProductRequest) == 0x11825B00, "Wrong size on FInAppPurchaseProductRequest");
+static_assert(alignof(FInAppPurchaseProductRequest) == 0x000008, "Wrong alignment on FInAppPurchaseProductRequest");
+static_assert(sizeof(FInAppPurchaseProductRequest) == 0x000018, "Wrong size on FInAppPurchaseProductRequest");
 static_assert(offsetof(FInAppPurchaseProductRequest, ProductIdentifier) == 0x000000, "Member 'FInAppPurchaseProductRequest::ProductIdentifier' has a wrong offset!");
 static_assert(offsetof(FInAppPurchaseProductRequest, bIsConsumable) == 0x000010, "Member 'FInAppPurchaseProductRequest::bIsConsumable' has a wrong offset!");
 

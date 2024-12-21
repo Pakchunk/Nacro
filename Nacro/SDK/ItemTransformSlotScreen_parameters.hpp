@@ -225,8 +225,8 @@ static_assert(offsetof(ItemTransformSlotScreen_C_NavigateToFirstItem, CallFunc_G
 static_assert(offsetof(ItemTransformSlotScreen_C_NavigateToFirstItem, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'ItemTransformSlotScreen_C_NavigateToFirstItem::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.GetSlotFromIndex
-// 0x005E (0x005E - 0x0000)
-struct alignas(0x5E) ItemTransformSlotScreen_C_GetSlotFromIndex final
+// 0x0018 (0x0018 - 0x0000)
+struct ItemTransformSlotScreen_C_GetSlotFromIndex final
 {
 public:
 	class UItemTransformSlotEntry_C*              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -234,8 +234,8 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UItemTransformSlotEntry_C*              K2Node_Select_Default;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformSlotScreen_C_GetSlotFromIndex) == 0x00005E, "Wrong alignment on ItemTransformSlotScreen_C_GetSlotFromIndex");
-static_assert(sizeof(ItemTransformSlotScreen_C_GetSlotFromIndex) == 0x00005E, "Wrong size on ItemTransformSlotScreen_C_GetSlotFromIndex");
+static_assert(alignof(ItemTransformSlotScreen_C_GetSlotFromIndex) == 0x000008, "Wrong alignment on ItemTransformSlotScreen_C_GetSlotFromIndex");
+static_assert(sizeof(ItemTransformSlotScreen_C_GetSlotFromIndex) == 0x000018, "Wrong size on ItemTransformSlotScreen_C_GetSlotFromIndex");
 static_assert(offsetof(ItemTransformSlotScreen_C_GetSlotFromIndex, ReturnValue) == 0x000000, "Member 'ItemTransformSlotScreen_C_GetSlotFromIndex::ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_GetSlotFromIndex, Temp_int_Variable) == 0x000008, "Member 'ItemTransformSlotScreen_C_GetSlotFromIndex::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotScreen_C_GetSlotFromIndex, K2Node_Select_Default) == 0x000010, "Member 'ItemTransformSlotScreen_C_GetSlotFromIndex::K2Node_Select_Default' has a wrong offset!");

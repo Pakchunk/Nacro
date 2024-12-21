@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.ExecuteUbergraph_ItemManangementItemTileButton
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton final
 {
 public:
@@ -47,13 +47,13 @@ public:
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Event_EquipSlot;                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select2_Default;                            // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0030(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_CanItemBeMulched_OutRestrictionReason;    // 0x0040(0x0018)()
 	bool                                          CallFunc_CanItemBeMulched_ReturnValue;             // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue3;                 // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5B[0x5];                                       // 0x005B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerEvent                          K2Node_Event_PointerEvent;                         // 0x0060(0x11829280)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_PointerEvent;                         // 0x0060(0x0078)(ConstParm)
 	class UDragDropOperation*                     K2Node_Event_Operation;                            // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -71,8 +71,8 @@ public:
 	bool                                          Temp_bool_Variable3;                               // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton) == 0x11829280, "Wrong alignment on ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton");
-static_assert(sizeof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton) == 0x11829280, "Wrong size on ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton");
+static_assert(alignof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton) == 0x000008, "Wrong alignment on ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton");
+static_assert(sizeof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton) == 0x000118, "Wrong size on ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton");
 static_assert(offsetof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton, EntryPoint) == 0x000000, "Member 'ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton, Temp_float_Variable) == 0x000004, "Member 'ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton, Temp_float_Variable2) == 0x000008, "Member 'ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton::Temp_float_Variable2' has a wrong offset!");
@@ -114,15 +114,15 @@ static_assert(offsetof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemMana
 static_assert(offsetof(ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton, K2Node_Select3_Default) == 0x000112, "Member 'ItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton::K2Node_Select3_Default' has a wrong offset!");
 
 // Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.OnDragCancelled
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct ItemManangementItemTileButton_C_OnDragCancelled final
 {
 public:
-	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x0078(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManangementItemTileButton_C_OnDragCancelled) == 0x11829280, "Wrong alignment on ItemManangementItemTileButton_C_OnDragCancelled");
-static_assert(sizeof(ItemManangementItemTileButton_C_OnDragCancelled) == 0x11829280, "Wrong size on ItemManangementItemTileButton_C_OnDragCancelled");
+static_assert(alignof(ItemManangementItemTileButton_C_OnDragCancelled) == 0x000008, "Wrong alignment on ItemManangementItemTileButton_C_OnDragCancelled");
+static_assert(sizeof(ItemManangementItemTileButton_C_OnDragCancelled) == 0x000080, "Wrong size on ItemManangementItemTileButton_C_OnDragCancelled");
 static_assert(offsetof(ItemManangementItemTileButton_C_OnDragCancelled, PointerEvent) == 0x000000, "Member 'ItemManangementItemTileButton_C_OnDragCancelled::PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_OnDragCancelled, Operation) == 0x000078, "Member 'ItemManangementItemTileButton_C_OnDragCancelled::Operation' has a wrong offset!");
 
@@ -138,12 +138,12 @@ static_assert(sizeof(ItemManangementItemTileButton_C_HandleEquipSlotChanged) == 
 static_assert(offsetof(ItemManangementItemTileButton_C_HandleEquipSlotChanged, EquipSlot) == 0x000000, "Member 'ItemManangementItemTileButton_C_HandleEquipSlotChanged::EquipSlot' has a wrong offset!");
 
 // Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.UpdateMulchStateBox
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct ItemManangementItemTileButton_C_UpdateMulchStateBox final
 {
 public:
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0000(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -163,10 +163,10 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0068(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0068(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManangementItemTileButton_C_UpdateMulchStateBox) == 0x11821300, "Wrong alignment on ItemManangementItemTileButton_C_UpdateMulchStateBox");
-static_assert(sizeof(ItemManangementItemTileButton_C_UpdateMulchStateBox) == 0x11821300, "Wrong size on ItemManangementItemTileButton_C_UpdateMulchStateBox");
+static_assert(alignof(ItemManangementItemTileButton_C_UpdateMulchStateBox) == 0x000008, "Wrong alignment on ItemManangementItemTileButton_C_UpdateMulchStateBox");
+static_assert(sizeof(ItemManangementItemTileButton_C_UpdateMulchStateBox) == 0x000078, "Wrong size on ItemManangementItemTileButton_C_UpdateMulchStateBox");
 static_assert(offsetof(ItemManangementItemTileButton_C_UpdateMulchStateBox, Temp_struct_Variable) == 0x000000, "Member 'ItemManangementItemTileButton_C_UpdateMulchStateBox::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_UpdateMulchStateBox, Temp_struct_Variable2) == 0x000010, "Member 'ItemManangementItemTileButton_C_UpdateMulchStateBox::Temp_struct_Variable2' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_UpdateMulchStateBox, Temp_bool_Variable) == 0x000020, "Member 'ItemManangementItemTileButton_C_UpdateMulchStateBox::Temp_bool_Variable' has a wrong offset!");
@@ -219,15 +219,16 @@ static_assert(offsetof(ItemManangementItemTileButton_C_UpdateStyle, CallFunc_Get
 static_assert(offsetof(ItemManangementItemTileButton_C_UpdateStyle, K2Node_SwitchEnum_CmpSuccess) == 0x000041, "Member 'ItemManangementItemTileButton_C_UpdateStyle::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.On_ItemWidgetHolder_MouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x03B8 (0x03B8 - 0x0000)
 struct ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0168(0x11827900)()
-	struct FEventReply                            CallFunc_DetectDrag_ReturnValue;                   // 0x0220(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0168(0x00B8)()
+	struct FEventReply                            CallFunc_DetectDrag_ReturnValue;                   // 0x0220(0x00B8)()
 	bool                                          CallFunc_IsSchematic_ReturnValue;                  // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2D9[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -237,10 +238,10 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanNOR_ReturnValue;                   // 0x02F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2FA[0x6];                                      // 0x02FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue2;                   // 0x0300(0x11827900)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue2;                   // 0x0300(0x00B8)()
 };
-static_assert(alignof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown) == 0x11829280, "Wrong alignment on ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown");
-static_assert(sizeof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown) == 0x11829280, "Wrong size on ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown");
+static_assert(alignof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown) == 0x000008, "Wrong alignment on ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown");
+static_assert(sizeof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown) == 0x0003B8, "Wrong size on ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown");
 static_assert(offsetof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, MyGeometry) == 0x000000, "Member 'ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, MouseEvent) == 0x000038, "Member 'ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, ReturnValue) == 0x0000B0, "Member 'ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::ReturnValue' has a wrong offset!");
@@ -255,12 +256,13 @@ static_assert(offsetof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_Mouse
 static_assert(offsetof(ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown, CallFunc_Unhandled_ReturnValue2) == 0x000300, "Member 'ItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown::CallFunc_Unhandled_ReturnValue2' has a wrong offset!");
 
 // Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.OnDragDetected
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct ItemManangementItemTileButton_C_OnDragDetected final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDragDropOperation*                     CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UItemManagementInventoryPanel_C*        K2Node_DynamicCast_AsItem_Management_Inventory_Panel; // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -275,8 +277,8 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManangementItemTileButton_C_OnDragDetected) == 0x11829280, "Wrong alignment on ItemManangementItemTileButton_C_OnDragDetected");
-static_assert(sizeof(ItemManangementItemTileButton_C_OnDragDetected) == 0x11829280, "Wrong size on ItemManangementItemTileButton_C_OnDragDetected");
+static_assert(alignof(ItemManangementItemTileButton_C_OnDragDetected) == 0x000008, "Wrong alignment on ItemManangementItemTileButton_C_OnDragDetected");
+static_assert(sizeof(ItemManangementItemTileButton_C_OnDragDetected) == 0x000120, "Wrong size on ItemManangementItemTileButton_C_OnDragDetected");
 static_assert(offsetof(ItemManangementItemTileButton_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'ItemManangementItemTileButton_C_OnDragDetected::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'ItemManangementItemTileButton_C_OnDragDetected::PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_OnDragDetected, Operation) == 0x0000B0, "Member 'ItemManangementItemTileButton_C_OnDragDetected::Operation' has a wrong offset!");
@@ -443,7 +445,7 @@ static_assert(offsetof(ItemManangementItemTileButton_C_UpdateQuantityProduced, C
 static_assert(offsetof(ItemManangementItemTileButton_C_UpdateQuantityProduced, CallFunc_Conv_StringToText_ReturnValue) == 0x000040, "Member 'ItemManangementItemTileButton_C_UpdateQuantityProduced::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleSlottedSurvivor
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0380 (0x0380 - 0x0000)
 struct ItemManangementItemTileButton_C_HandleSlottedSurvivor final
 {
 public:
@@ -453,10 +455,10 @@ public:
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortHomebaseUIContext*                 CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMultiSizeBrush                    CallFunc_GetSquadIcon_ReturnValue;                 // 0x0020(0x11827900)()
+	struct FFortMultiSizeBrush                    CallFunc_GetSquadIcon_ReturnValue;                 // 0x0020(0x0360)()
 };
-static_assert(alignof(ItemManangementItemTileButton_C_HandleSlottedSurvivor) == 0x11821780, "Wrong alignment on ItemManangementItemTileButton_C_HandleSlottedSurvivor");
-static_assert(sizeof(ItemManangementItemTileButton_C_HandleSlottedSurvivor) == 0x11821780, "Wrong size on ItemManangementItemTileButton_C_HandleSlottedSurvivor");
+static_assert(alignof(ItemManangementItemTileButton_C_HandleSlottedSurvivor) == 0x000008, "Wrong alignment on ItemManangementItemTileButton_C_HandleSlottedSurvivor");
+static_assert(sizeof(ItemManangementItemTileButton_C_HandleSlottedSurvivor) == 0x000380, "Wrong size on ItemManangementItemTileButton_C_HandleSlottedSurvivor");
 static_assert(offsetof(ItemManangementItemTileButton_C_HandleSlottedSurvivor, K2Node_DynamicCast_AsFort_Character) == 0x000000, "Member 'ItemManangementItemTileButton_C_HandleSlottedSurvivor::K2Node_DynamicCast_AsFort_Character' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_HandleSlottedSurvivor, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'ItemManangementItemTileButton_C_HandleSlottedSurvivor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(ItemManangementItemTileButton_C_HandleSlottedSurvivor, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000009, "Member 'ItemManangementItemTileButton_C_HandleSlottedSurvivor::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_VictoryDrone.BP_VictoryDrone_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0048 (0x0430 - 0x03E8)
 class ABP_VictoryDrone_C final : public APawn
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(Transient, DuplicateTransient)
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               PlayerTeleportEffect;                              // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               SpawnEffect;                                       // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 		return GetDefaultObjImpl<ABP_VictoryDrone_C>();
 	}
 };
-static_assert(alignof(ABP_VictoryDrone_C) == 0x11821D80, "Wrong alignment on ABP_VictoryDrone_C");
-static_assert(sizeof(ABP_VictoryDrone_C) == 0x11821D80, "Wrong size on ABP_VictoryDrone_C");
+static_assert(alignof(ABP_VictoryDrone_C) == 0x000008, "Wrong alignment on ABP_VictoryDrone_C");
+static_assert(sizeof(ABP_VictoryDrone_C) == 0x000430, "Wrong size on ABP_VictoryDrone_C");
 static_assert(offsetof(ABP_VictoryDrone_C, UberGraphFrame) == 0x0003E8, "Member 'ABP_VictoryDrone_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABP_VictoryDrone_C, StaticMesh) == 0x0003F0, "Member 'ABP_VictoryDrone_C::StaticMesh' has a wrong offset!");
 static_assert(offsetof(ABP_VictoryDrone_C, PlayerTeleportEffect) == 0x0003F8, "Member 'ABP_VictoryDrone_C::PlayerTeleportEffect' has a wrong offset!");

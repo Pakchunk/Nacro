@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaTeamMemberInfo.AthenaTeamMemberInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x05F0 (0x0828 - 0x0238)
 class UAthenaTeamMemberInfo_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UAthenaTeamMemberDBNOState_C*           DBNOState;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 DeadIndicator;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageDBNOBar;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,23 +35,23 @@ public:
 	class UImage*                                 Speaker;                                           // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  SwitcherContextualInfo;                            // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextPlayerName;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x0288(0x11827900)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x0288(0x0190)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          ShowingHealth;                                     // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          ShowingShield;                                     // 0x0419(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41A[0x6];                                      // 0x041A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerStateAthena*                 PlayerState;                                       // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         PlayerIndex;                                       // 0x0428(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_42C[0x4];                                      // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            Player0;                                           // 0x0430(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            Player1;                                           // 0x04C0(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            Player2;                                           // 0x0550(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            Player3;                                           // 0x05E0(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            Player0;                                           // 0x0430(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            Player1;                                           // 0x04C0(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            Player2;                                           // 0x0550(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            Player3;                                           // 0x05E0(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          Talking;                                           // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Muted;                                             // 0x0671(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_672[0x6];                                      // 0x0672(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            MutedBrush;                                        // 0x0678(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            TalkingBrush;                                      // 0x0708(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            NotTalkingBrush;                                   // 0x0798(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            MutedBrush;                                        // 0x0678(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            TalkingBrush;                                      // 0x0708(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            NotTalkingBrush;                                   // 0x0798(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_AthenaTeamMemberInfo(int32 EntryPoint);
@@ -79,8 +79,8 @@ public:
 		return GetDefaultObjImpl<UAthenaTeamMemberInfo_C>();
 	}
 };
-static_assert(alignof(UAthenaTeamMemberInfo_C) == 0x322CBBB8, "Wrong alignment on UAthenaTeamMemberInfo_C");
-static_assert(sizeof(UAthenaTeamMemberInfo_C) == 0x322CBBB8, "Wrong size on UAthenaTeamMemberInfo_C");
+static_assert(alignof(UAthenaTeamMemberInfo_C) == 0x000008, "Wrong alignment on UAthenaTeamMemberInfo_C");
+static_assert(sizeof(UAthenaTeamMemberInfo_C) == 0x000828, "Wrong size on UAthenaTeamMemberInfo_C");
 static_assert(offsetof(UAthenaTeamMemberInfo_C, UberGraphFrame) == 0x000238, "Member 'UAthenaTeamMemberInfo_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaTeamMemberInfo_C, DBNOState) == 0x000240, "Member 'UAthenaTeamMemberInfo_C::DBNOState' has a wrong offset!");
 static_assert(offsetof(UAthenaTeamMemberInfo_C, DeadIndicator) == 0x000248, "Member 'UAthenaTeamMemberInfo_C::DeadIndicator' has a wrong offset!");

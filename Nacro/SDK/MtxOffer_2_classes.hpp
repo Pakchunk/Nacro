@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MtxOffer_2.MtxOffer_2_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0200 (0x0438 - 0x0238)
 class UMtxOffer_2_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Embiggen;                                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               Bonus_SizeBox;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ButtonBuy;                                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,13 +39,13 @@ public:
 	class UImage*                                 MovingBack;                                        // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 MTX_Currency_Image;                                // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   BuyItem;                                           // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FMtxPackage                            Package;                                           // 0x02C0(0x11821780)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FMtxPackage                            Package;                                           // 0x02C0(0x00A0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	int32                                         BaseOfferAmount;                                   // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_364[0x4];                                      // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   MtxOfferMouseEnter_EventDispatcher;                // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   MtxOfferMouseLeave_EventDispatcher;                // 0x0378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class UTexture2D*>                     CoinCollection;                                    // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
-	struct FMtxPackage                            Package_0;                                         // 0x0398(0x11821780)(Edit, BlueprintVisible)
+	struct FMtxPackage                            Package_0;                                         // 0x0398(0x00A0)(Edit, BlueprintVisible)
 
 public:
 	void BuyItem__DelegateSignature(const class FString& OfferId);
@@ -67,8 +67,8 @@ public:
 		return GetDefaultObjImpl<UMtxOffer_2_C>();
 	}
 };
-static_assert(alignof(UMtxOffer_2_C) == 0x322CBBB8, "Wrong alignment on UMtxOffer_2_C");
-static_assert(sizeof(UMtxOffer_2_C) == 0x322CBBB8, "Wrong size on UMtxOffer_2_C");
+static_assert(alignof(UMtxOffer_2_C) == 0x000008, "Wrong alignment on UMtxOffer_2_C");
+static_assert(sizeof(UMtxOffer_2_C) == 0x000438, "Wrong size on UMtxOffer_2_C");
 static_assert(offsetof(UMtxOffer_2_C, UberGraphFrame) == 0x000238, "Member 'UMtxOffer_2_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMtxOffer_2_C, Embiggen) == 0x000240, "Member 'UMtxOffer_2_C::Embiggen' has a wrong offset!");
 static_assert(offsetof(UMtxOffer_2_C, Bonus_SizeBox) == 0x000248, "Member 'UMtxOffer_2_C::Bonus_SizeBox' has a wrong offset!");

@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Results_CommanderXP_Data_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "FortniteUI_structs.hpp"
 #include "REsults_CommanderXP_MaterialData_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteUI_structs.hpp"
 
 
 namespace SDK::Params
@@ -33,7 +33,7 @@ static_assert(sizeof(Results_CommanderXPBar_C_LeveledUp__DelegateSignature) == 0
 static_assert(offsetof(Results_CommanderXPBar_C_LeveledUp__DelegateSignature, NewLevel) == 0x000000, "Member 'Results_CommanderXPBar_C_LeveledUp__DelegateSignature::NewLevel' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.ExecuteUbergraph_Results_CommanderXPBar
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar final
 {
 public:
@@ -43,7 +43,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue4;                   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -56,8 +56,8 @@ public:
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x11821D80, "Wrong alignment on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
-static_assert(sizeof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x11821D80, "Wrong size on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
+static_assert(alignof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
+static_assert(sizeof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x000048, "Wrong size on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
 static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, EntryPoint) == 0x000000, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue2) == 0x000005, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
@@ -85,7 +85,7 @@ static_assert(sizeof(Results_CommanderXPBar_C_PreConstruct) == 0x000001, "Wrong 
 static_assert(offsetof(Results_CommanderXPBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_CommanderXPBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.UpdateCount
-// 0x0104 (0x0104 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct Results_CommanderXPBar_C_UpdateCount final
 {
 public:
@@ -121,8 +121,8 @@ public:
 	float                                         CallFunc_GetLevelProgress_ReturnValue2;            // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_UpdateCount) == 0x000004, "Wrong alignment on Results_CommanderXPBar_C_UpdateCount");
-static_assert(sizeof(Results_CommanderXPBar_C_UpdateCount) == 0x000104, "Wrong size on Results_CommanderXPBar_C_UpdateCount");
+static_assert(alignof(Results_CommanderXPBar_C_UpdateCount) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_UpdateCount");
+static_assert(sizeof(Results_CommanderXPBar_C_UpdateCount) == 0x000108, "Wrong size on Results_CommanderXPBar_C_UpdateCount");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CheckStartXP) == 0x000000, "Member 'Results_CommanderXPBar_C_UpdateCount::CheckStartXP' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CheckEndXP) == 0x000004, "Member 'Results_CommanderXPBar_C_UpdateCount::CheckEndXP' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, TimePassed) == 0x000008, "Member 'Results_CommanderXPBar_C_UpdateCount::TimePassed' has a wrong offset!");
@@ -153,16 +153,16 @@ static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetLevelPr
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000100, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.Initialize
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x02F0 (0x02F0 - 0x0000)
 struct Results_CommanderXPBar_C_Initialize final
 {
 public:
 	class UFortUIScoreReport*                     InScoreReport;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PlayRate_0;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortExperienceDelta                   ExperienceDelta;                                   // 0x000C(0x11821780)(Edit, NoDestructor)
+	struct FFortExperienceDelta                   ExperienceDelta;                                   // 0x000C(0x0024)(Edit, NoDestructor)
 	EFortUIScoreType                              BonusScoreType;                                    // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIXpInfo                          LocalPlayerXPInfo;                                 // 0x0034(0x1182E980)(Edit, NoDestructor)
+	struct FFortUIXpInfo                          LocalPlayerXPInfo;                                 // 0x0034(0x002C)(Edit, NoDestructor)
 	int32                                         CurrentPlayerIndex;                                // 0x0060(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FResults_CommanderXP_Data              CallFunc_Array_Get_Item;                           // 0x0068(0x0028)(HasGetValueTypeHash)
@@ -208,13 +208,13 @@ public:
 	class AFortPlayerState*                       K2Node_DynamicCast_AsFort_Player_State;            // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x02A0(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x02A0(0x0018)(HasGetValueTypeHash)
 	int32                                         CallFunc_GetScoreReportIndex_ReturnValue;          // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x02BC(0x1182E980)(NoDestructor)
+	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x02BC(0x002C)(NoDestructor)
 	bool                                          CallFunc_GetXpInfo_ReturnValue;                    // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_Initialize) == 0x1182E980, "Wrong alignment on Results_CommanderXPBar_C_Initialize");
-static_assert(sizeof(Results_CommanderXPBar_C_Initialize) == 0x1182E980, "Wrong size on Results_CommanderXPBar_C_Initialize");
+static_assert(alignof(Results_CommanderXPBar_C_Initialize) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_Initialize");
+static_assert(sizeof(Results_CommanderXPBar_C_Initialize) == 0x0002F0, "Wrong size on Results_CommanderXPBar_C_Initialize");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, InScoreReport) == 0x000000, "Member 'Results_CommanderXPBar_C_Initialize::InScoreReport' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, PlayRate_0) == 0x000008, "Member 'Results_CommanderXPBar_C_Initialize::PlayRate_0' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_Initialize, ExperienceDelta) == 0x00000C, "Member 'Results_CommanderXPBar_C_Initialize::ExperienceDelta' has a wrong offset!");
@@ -358,7 +358,7 @@ static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Ar
 static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.UpdateProgressBarPercent
-// 0x21BC1FB4 (0x21BC1FB4 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct Results_CommanderXPBar_C_UpdateProgressBarPercent final
 {
 public:
@@ -372,7 +372,7 @@ public:
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResults_CommanderXP_MaterialData      K2Node_MakeStruct_Results_CommanderXP_MaterialData; // 0x0020(0x21BC1FB4)(HasGetValueTypeHash)
+	struct FResults_CommanderXP_MaterialData      K2Node_MakeStruct_Results_CommanderXP_MaterialData; // 0x0020(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue2;         // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue3;         // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -387,12 +387,12 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FResults_CommanderXP_MaterialData      CallFunc_Array_Get_Item;                           // 0x0058(0x21BC1FB4)(HasGetValueTypeHash)
+	struct FResults_CommanderXP_MaterialData      CallFunc_Array_Get_Item;                           // 0x0058(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue5;         // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_UpdateProgressBarPercent) == 0x21BC1FB4, "Wrong alignment on Results_CommanderXPBar_C_UpdateProgressBarPercent");
-static_assert(sizeof(Results_CommanderXPBar_C_UpdateProgressBarPercent) == 0x21BC1FB4, "Wrong size on Results_CommanderXPBar_C_UpdateProgressBarPercent");
+static_assert(alignof(Results_CommanderXPBar_C_UpdateProgressBarPercent) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_UpdateProgressBarPercent");
+static_assert(sizeof(Results_CommanderXPBar_C_UpdateProgressBarPercent) == 0x000070, "Wrong size on Results_CommanderXPBar_C_UpdateProgressBarPercent");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, ParameterName) == 0x000000, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::ParameterName' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, ProgressBarPercent) == 0x000008, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::ProgressBarPercent' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, MatInfoFound) == 0x00000C, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::MatInfoFound' has a wrong offset!");
@@ -419,21 +419,21 @@ static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFu
 static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue5) == 0x000069, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue5' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.GetHoveredProgressBarSection
-// 0x11821300 (0x11821300 - 0x0000)
-struct Results_CommanderXPBar_C_GetHoveredProgressBarSection final
+// 0x0030 (0x0030 - 0x0000)
+struct alignas(0x08) Results_CommanderXPBar_C_GetHoveredProgressBarSection final
 {
 public:
 	class FName                                   XpSectionName;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ProgressBarSize;                                   // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ProgressBarPos;                                    // 0x0010(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              MousePos;                                          // 0x0018(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ProgressBarSize;                                   // 0x0008(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ProgressBarPos;                                    // 0x0010(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              MousePos;                                          // 0x0018(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ProgressBarWidth;                                  // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ProgressBarX;                                      // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MouseY;                                            // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MouseX;                                            // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXPBar_C_GetHoveredProgressBarSection) == 0x11821300, "Wrong alignment on Results_CommanderXPBar_C_GetHoveredProgressBarSection");
-static_assert(sizeof(Results_CommanderXPBar_C_GetHoveredProgressBarSection) == 0x11821300, "Wrong size on Results_CommanderXPBar_C_GetHoveredProgressBarSection");
+static_assert(alignof(Results_CommanderXPBar_C_GetHoveredProgressBarSection) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_GetHoveredProgressBarSection");
+static_assert(sizeof(Results_CommanderXPBar_C_GetHoveredProgressBarSection) == 0x000030, "Wrong size on Results_CommanderXPBar_C_GetHoveredProgressBarSection");
 static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, XpSectionName) == 0x000000, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::XpSectionName' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, ProgressBarSize) == 0x000008, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::ProgressBarSize' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, ProgressBarPos) == 0x000010, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::ProgressBarPos' has a wrong offset!");

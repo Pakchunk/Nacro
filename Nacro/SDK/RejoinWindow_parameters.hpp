@@ -28,7 +28,7 @@ static_assert(sizeof(RejoinWindow_C_ExecuteUbergraph_RejoinWindow) == 0x000004, 
 static_assert(offsetof(RejoinWindow_C_ExecuteUbergraph_RejoinWindow, EntryPoint) == 0x000000, "Member 'RejoinWindow_C_ExecuteUbergraph_RejoinWindow::EntryPoint' has a wrong offset!");
 
 // Function RejoinWindow.RejoinWindow_C.ShowRetryScreen
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct RejoinWindow_C_ShowRetryScreen final
 {
 public:
@@ -40,14 +40,14 @@ public:
 	class FText                                   LocalRetryFailure;                                 // 0x0020(0x0018)(Edit)
 	float                                         LocalTimeoutSeconds;                               // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0040(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0040(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0058(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0058(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RejoinWindow_C_ShowRetryScreen) == 0x1182EB00, "Wrong alignment on RejoinWindow_C_ShowRetryScreen");
-static_assert(sizeof(RejoinWindow_C_ShowRetryScreen) == 0x1182EB00, "Wrong size on RejoinWindow_C_ShowRetryScreen");
+static_assert(alignof(RejoinWindow_C_ShowRetryScreen) == 0x000008, "Wrong alignment on RejoinWindow_C_ShowRetryScreen");
+static_assert(sizeof(RejoinWindow_C_ShowRetryScreen) == 0x000070, "Wrong size on RejoinWindow_C_ShowRetryScreen");
 static_assert(offsetof(RejoinWindow_C_ShowRetryScreen, Failure) == 0x000000, "Member 'RejoinWindow_C_ShowRetryScreen::Failure' has a wrong offset!");
 static_assert(offsetof(RejoinWindow_C_ShowRetryScreen, TimeoutSeconds) == 0x000018, "Member 'RejoinWindow_C_ShowRetryScreen::TimeoutSeconds' has a wrong offset!");
 static_assert(offsetof(RejoinWindow_C_ShowRetryScreen, AllowRetry) == 0x00001C, "Member 'RejoinWindow_C_ShowRetryScreen::AllowRetry' has a wrong offset!");
@@ -60,18 +60,18 @@ static_assert(offsetof(RejoinWindow_C_ShowRetryScreen, K2Node_MakeStruct_DataTab
 static_assert(offsetof(RejoinWindow_C_ShowRetryScreen, CallFunc_Array_Add_ReturnValue2) == 0x000068, "Member 'RejoinWindow_C_ShowRetryScreen::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
 
 // Function RejoinWindow.RejoinWindow_C.ShowInitalScreen
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct RejoinWindow_C_ShowInitalScreen final
 {
 public:
 	float                                         TimeoutSeconds;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LocalTimeoutSeconds;                               // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0008(0x1182EB00)(NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0018(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0008(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0018(0x0010)(NoDestructor)
 	TArray<struct FDataTableRowHandle>            K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(RejoinWindow_C_ShowInitalScreen) == 0x1182EB00, "Wrong alignment on RejoinWindow_C_ShowInitalScreen");
-static_assert(sizeof(RejoinWindow_C_ShowInitalScreen) == 0x1182EB00, "Wrong size on RejoinWindow_C_ShowInitalScreen");
+static_assert(alignof(RejoinWindow_C_ShowInitalScreen) == 0x000008, "Wrong alignment on RejoinWindow_C_ShowInitalScreen");
+static_assert(sizeof(RejoinWindow_C_ShowInitalScreen) == 0x000038, "Wrong size on RejoinWindow_C_ShowInitalScreen");
 static_assert(offsetof(RejoinWindow_C_ShowInitalScreen, TimeoutSeconds) == 0x000000, "Member 'RejoinWindow_C_ShowInitalScreen::TimeoutSeconds' has a wrong offset!");
 static_assert(offsetof(RejoinWindow_C_ShowInitalScreen, LocalTimeoutSeconds) == 0x000004, "Member 'RejoinWindow_C_ShowInitalScreen::LocalTimeoutSeconds' has a wrong offset!");
 static_assert(offsetof(RejoinWindow_C_ShowInitalScreen, K2Node_MakeStruct_DataTableRowHandle) == 0x000008, "Member 'RejoinWindow_C_ShowInitalScreen::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
@@ -79,7 +79,7 @@ static_assert(offsetof(RejoinWindow_C_ShowInitalScreen, K2Node_MakeStruct_DataTa
 static_assert(offsetof(RejoinWindow_C_ShowInitalScreen, K2Node_MakeArray_Array) == 0x000028, "Member 'RejoinWindow_C_ShowInitalScreen::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function RejoinWindow.RejoinWindow_C.InitializeRejoinWindow
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct RejoinWindow_C_InitializeRejoinWindow final
 {
 public:
@@ -92,12 +92,12 @@ public:
 	class FText                                   Temp_text_Variable;                                // 0x0028(0x0018)(ConstParm)
 	class UIconTextButton_C*                      CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CallFunc_Array_Get_Item;                           // 0x0050(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    CallFunc_Array_Get_Item;                           // 0x0050(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RejoinWindow_C_InitializeRejoinWindow) == 0x1182EB00, "Wrong alignment on RejoinWindow_C_InitializeRejoinWindow");
-static_assert(sizeof(RejoinWindow_C_InitializeRejoinWindow) == 0x1182EB00, "Wrong size on RejoinWindow_C_InitializeRejoinWindow");
+static_assert(alignof(RejoinWindow_C_InitializeRejoinWindow) == 0x000008, "Wrong alignment on RejoinWindow_C_InitializeRejoinWindow");
+static_assert(sizeof(RejoinWindow_C_InitializeRejoinWindow) == 0x000068, "Wrong size on RejoinWindow_C_InitializeRejoinWindow");
 static_assert(offsetof(RejoinWindow_C_InitializeRejoinWindow, Temp_int_Array_Index_Variable) == 0x000000, "Member 'RejoinWindow_C_InitializeRejoinWindow::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(RejoinWindow_C_InitializeRejoinWindow, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'RejoinWindow_C_InitializeRejoinWindow::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(RejoinWindow_C_InitializeRejoinWindow, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'RejoinWindow_C_InitializeRejoinWindow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -129,17 +129,17 @@ static_assert(offsetof(RejoinWindow_C_CenterFirstButton, CallFunc_Greater_IntInt
 static_assert(offsetof(RejoinWindow_C_CenterFirstButton, CallFunc_GetChildAt_ReturnValue) == 0x000010, "Member 'RejoinWindow_C_CenterFirstButton::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
 
 // Function RejoinWindow.RejoinWindow_C.OnButtonClicked
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct RejoinWindow_C_OnButtonClicked final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CallFunc_GetInputAction_InputActionRow;            // 0x0008(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    CallFunc_GetInputAction_InputActionRow;            // 0x0008(0x0010)(NoDestructor)
 	bool                                          CallFunc_GetInputAction_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RejoinWindow_C_OnButtonClicked) == 0x1182EB00, "Wrong alignment on RejoinWindow_C_OnButtonClicked");
-static_assert(sizeof(RejoinWindow_C_OnButtonClicked) == 0x1182EB00, "Wrong size on RejoinWindow_C_OnButtonClicked");
+static_assert(alignof(RejoinWindow_C_OnButtonClicked) == 0x000008, "Wrong alignment on RejoinWindow_C_OnButtonClicked");
+static_assert(sizeof(RejoinWindow_C_OnButtonClicked) == 0x000020, "Wrong size on RejoinWindow_C_OnButtonClicked");
 static_assert(offsetof(RejoinWindow_C_OnButtonClicked, Button) == 0x000000, "Member 'RejoinWindow_C_OnButtonClicked::Button' has a wrong offset!");
 static_assert(offsetof(RejoinWindow_C_OnButtonClicked, CallFunc_GetInputAction_InputActionRow) == 0x000008, "Member 'RejoinWindow_C_OnButtonClicked::CallFunc_GetInputAction_InputActionRow' has a wrong offset!");
 static_assert(offsetof(RejoinWindow_C_OnButtonClicked, CallFunc_GetInputAction_ReturnValue) == 0x000018, "Member 'RejoinWindow_C_OnButtonClicked::CallFunc_GetInputAction_ReturnValue' has a wrong offset!");

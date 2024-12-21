@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RewardsListWidget.RewardsListWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0278 - 0x0240)
 class URewardsListWidget_C final : public UFortUserWidget
 {
 public:
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<URewardsListWidget_C>();
 	}
 };
-static_assert(alignof(URewardsListWidget_C) == 0x322CBBB8, "Wrong alignment on URewardsListWidget_C");
-static_assert(sizeof(URewardsListWidget_C) == 0x322CBBB8, "Wrong size on URewardsListWidget_C");
+static_assert(alignof(URewardsListWidget_C) == 0x000008, "Wrong alignment on URewardsListWidget_C");
+static_assert(sizeof(URewardsListWidget_C) == 0x000278, "Wrong size on URewardsListWidget_C");
 static_assert(offsetof(URewardsListWidget_C, RewardsVerticalBox) == 0x000240, "Member 'URewardsListWidget_C::RewardsVerticalBox' has a wrong offset!");
 static_assert(offsetof(URewardsListWidget_C, RewardsArray) == 0x000248, "Member 'URewardsListWidget_C::RewardsArray' has a wrong offset!");
 static_assert(offsetof(URewardsListWidget_C, Index_0) == 0x000258, "Member 'URewardsListWidget_C::Index_0' has a wrong offset!");

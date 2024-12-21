@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BuildingInfoIndicator.BuildingInfoIndicator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01D0 (0x0468 - 0x0298)
 class UBuildingInfoIndicator_C final : public UFortActorIndicatorWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         _Horizontal_Box__BuildMinusEdit;                   // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         _Horizontal_Box__Edit;                             // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         _Horizontal_Box__Material;                         // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -69,10 +69,10 @@ public:
 	class UVerticalBox*                           VerticalBoxBuildWithRotate;                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBoxLowerOption;                            // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBoxPlaceTrapstandalone;                    // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortFocusedBuildingInfo               BuildingInfo;                                      // 0x03F8(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortFocusedBuildingInfo               BuildingInfo;                                      // 0x03F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         Current_Health;                                    // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           HealthFadeTimerHandle;                             // 0x0450(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           HealthFadeTimerHandle;                             // 0x0450(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         Current_Durability;                                // 0x0458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_45C[0x4];                                      // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   UpgradeRepairAction;                               // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -104,8 +104,8 @@ public:
 		return GetDefaultObjImpl<UBuildingInfoIndicator_C>();
 	}
 };
-static_assert(alignof(UBuildingInfoIndicator_C) == 0x322CBBB8, "Wrong alignment on UBuildingInfoIndicator_C");
-static_assert(sizeof(UBuildingInfoIndicator_C) == 0x322CBBB8, "Wrong size on UBuildingInfoIndicator_C");
+static_assert(alignof(UBuildingInfoIndicator_C) == 0x000008, "Wrong alignment on UBuildingInfoIndicator_C");
+static_assert(sizeof(UBuildingInfoIndicator_C) == 0x000468, "Wrong size on UBuildingInfoIndicator_C");
 static_assert(offsetof(UBuildingInfoIndicator_C, UberGraphFrame) == 0x000298, "Member 'UBuildingInfoIndicator_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBuildingInfoIndicator_C, _Horizontal_Box__BuildMinusEdit) == 0x0002A0, "Member 'UBuildingInfoIndicator_C::_Horizontal_Box__BuildMinusEdit' has a wrong offset!");
 static_assert(offsetof(UBuildingInfoIndicator_C, _Horizontal_Box__Edit) == 0x0002A8, "Member 'UBuildingInfoIndicator_C::_Horizontal_Box__Edit' has a wrong offset!");

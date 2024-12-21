@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PartyFinderListItem.PartyFinderListItem_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x0918 - 0x08B8)
 class UPartyFinderListItem_C final : public UFortPartyTreeItemBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B8(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Arrow;                                             // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         Header;                                            // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       HeaderText;                                        // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -59,8 +59,8 @@ public:
 		return GetDefaultObjImpl<UPartyFinderListItem_C>();
 	}
 };
-static_assert(alignof(UPartyFinderListItem_C) == 0x322CBBB8, "Wrong alignment on UPartyFinderListItem_C");
-static_assert(sizeof(UPartyFinderListItem_C) == 0x322CBBB8, "Wrong size on UPartyFinderListItem_C");
+static_assert(alignof(UPartyFinderListItem_C) == 0x000008, "Wrong alignment on UPartyFinderListItem_C");
+static_assert(sizeof(UPartyFinderListItem_C) == 0x000918, "Wrong size on UPartyFinderListItem_C");
 static_assert(offsetof(UPartyFinderListItem_C, UberGraphFrame) == 0x0008B8, "Member 'UPartyFinderListItem_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPartyFinderListItem_C, Arrow) == 0x0008C0, "Member 'UPartyFinderListItem_C::Arrow' has a wrong offset!");
 static_assert(offsetof(UPartyFinderListItem_C, Header) == 0x0008C8, "Member 'UPartyFinderListItem_C::Header' has a wrong offset!");

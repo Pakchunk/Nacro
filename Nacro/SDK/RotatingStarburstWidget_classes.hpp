@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RotatingStarburstWidget.RotatingStarburstWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0248 - 0x0230)
 class URotatingStarburstWidget_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_0;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                         RotationSpeed;                                     // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<URotatingStarburstWidget_C>();
 	}
 };
-static_assert(alignof(URotatingStarburstWidget_C) == 0x322CBBB8, "Wrong alignment on URotatingStarburstWidget_C");
-static_assert(sizeof(URotatingStarburstWidget_C) == 0x322CBBB8, "Wrong size on URotatingStarburstWidget_C");
+static_assert(alignof(URotatingStarburstWidget_C) == 0x000008, "Wrong alignment on URotatingStarburstWidget_C");
+static_assert(sizeof(URotatingStarburstWidget_C) == 0x000248, "Wrong size on URotatingStarburstWidget_C");
 static_assert(offsetof(URotatingStarburstWidget_C, UberGraphFrame) == 0x000230, "Member 'URotatingStarburstWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URotatingStarburstWidget_C, Image_0) == 0x000238, "Member 'URotatingStarburstWidget_C::Image_0' has a wrong offset!");
 static_assert(offsetof(URotatingStarburstWidget_C, RotationSpeed) == 0x000240, "Member 'URotatingStarburstWidget_C::RotationSpeed' has a wrong offset!");

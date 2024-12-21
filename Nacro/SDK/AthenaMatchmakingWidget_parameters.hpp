@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.ExecuteUbergraph_AthenaMatchmakingWidget
-// 0x0219 (0x0219 - 0x0000)
-struct alignas(0xB3) AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget final
+// 0x0180 (0x0180 - 0x0000)
+struct AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -57,8 +57,8 @@ public:
 	class FText                                   K2Node_Select3_Default;                            // 0x0150(0x0018)()
 	class FText                                   K2Node_Select4_Default;                            // 0x0168(0x0018)()
 };
-static_assert(alignof(AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget) == 0x0000B3, "Wrong alignment on AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget");
-static_assert(sizeof(AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget) == 0x000219, "Wrong size on AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget");
+static_assert(alignof(AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget) == 0x000008, "Wrong alignment on AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget");
+static_assert(sizeof(AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget) == 0x000180, "Wrong size on AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget");
 static_assert(offsetof(AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget, EntryPoint) == 0x000000, "Member 'AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget, K2Node_ComponentBoundEvent_Value) == 0x000004, "Member 'AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
 static_assert(offsetof(AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget, Temp_bool_Variable) == 0x000008, "Member 'AthenaMatchmakingWidget_C_ExecuteUbergraph_AthenaMatchmakingWidget::Temp_bool_Variable' has a wrong offset!");
@@ -100,36 +100,36 @@ static_assert(sizeof(AthenaMatchmakingWidget_C_BndEvt__TeamFillRotator_K2Node_Co
 static_assert(offsetof(AthenaMatchmakingWidget_C_BndEvt__TeamFillRotator_K2Node_ComponentBoundEvent_128_OnRotated__DelegateSignature, Value) == 0x000000, "Member 'AthenaMatchmakingWidget_C_BndEvt__TeamFillRotator_K2Node_ComponentBoundEvent_128_OnRotated__DelegateSignature::Value' has a wrong offset!");
 
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature
-// 0x0025 (0x0025 - 0x0000)
-struct alignas(0x25) AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature final
 {
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature) == 0x000025, "Wrong alignment on AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature");
-static_assert(sizeof(AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature) == 0x000025, "Wrong size on AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature");
+static_assert(alignof(AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature) == 0x000004, "Wrong alignment on AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature");
+static_assert(sizeof(AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature) == 0x000004, "Wrong size on AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature");
 static_assert(offsetof(AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature, Value) == 0x000000, "Member 'AthenaMatchmakingWidget_C_BndEvt__PlaylistRotator_K2Node_ComponentBoundEvent_83_OnRotated__DelegateSignature::Value' has a wrong offset!");
 
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.SetCancelButtonState
-// 0x0032 (0x0032 - 0x0000)
-struct alignas(0x32) AthenaMatchmakingWidget_C_SetCancelButtonState final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaMatchmakingWidget_C_SetCancelButtonState final
 {
 public:
 	bool                                          bIsMatchmaking;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMatchmakingWidget_C_SetCancelButtonState) == 0x000032, "Wrong alignment on AthenaMatchmakingWidget_C_SetCancelButtonState");
-static_assert(sizeof(AthenaMatchmakingWidget_C_SetCancelButtonState) == 0x000032, "Wrong size on AthenaMatchmakingWidget_C_SetCancelButtonState");
+static_assert(alignof(AthenaMatchmakingWidget_C_SetCancelButtonState) == 0x000001, "Wrong alignment on AthenaMatchmakingWidget_C_SetCancelButtonState");
+static_assert(sizeof(AthenaMatchmakingWidget_C_SetCancelButtonState) == 0x000001, "Wrong size on AthenaMatchmakingWidget_C_SetCancelButtonState");
 static_assert(offsetof(AthenaMatchmakingWidget_C_SetCancelButtonState, bIsMatchmaking) == 0x000000, "Member 'AthenaMatchmakingWidget_C_SetCancelButtonState::bIsMatchmaking' has a wrong offset!");
 
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.SetPlayButtonState
-// 0x000F (0x000F - 0x0000)
-struct alignas(0x0F) AthenaMatchmakingWidget_C_SetPlayButtonState final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaMatchmakingWidget_C_SetPlayButtonState final
 {
 public:
 	bool                                          bCanMatchmake;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMatchmakingWidget_C_SetPlayButtonState) == 0x00000F, "Wrong alignment on AthenaMatchmakingWidget_C_SetPlayButtonState");
-static_assert(sizeof(AthenaMatchmakingWidget_C_SetPlayButtonState) == 0x00000F, "Wrong size on AthenaMatchmakingWidget_C_SetPlayButtonState");
+static_assert(alignof(AthenaMatchmakingWidget_C_SetPlayButtonState) == 0x000001, "Wrong alignment on AthenaMatchmakingWidget_C_SetPlayButtonState");
+static_assert(sizeof(AthenaMatchmakingWidget_C_SetPlayButtonState) == 0x000001, "Wrong size on AthenaMatchmakingWidget_C_SetPlayButtonState");
 static_assert(offsetof(AthenaMatchmakingWidget_C_SetPlayButtonState, bCanMatchmake) == 0x000000, "Member 'AthenaMatchmakingWidget_C_SetPlayButtonState::bCanMatchmake' has a wrong offset!");
 
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.BndEvt__BP_CancelButton_K2Node_ComponentBoundEvent_19_CommonButtonClicked__DelegateSignature
@@ -155,14 +155,14 @@ static_assert(sizeof(AthenaMatchmakingWidget_C_BndEvt__BP_PlayButton_K2Node_Comp
 static_assert(offsetof(AthenaMatchmakingWidget_C_BndEvt__BP_PlayButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaMatchmakingWidget_C_BndEvt__BP_PlayButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.SetAutoFillOptions
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) AthenaMatchmakingWidget_C_SetAutoFillOptions final
+// 0x0010 (0x0010 - 0x0000)
+struct AthenaMatchmakingWidget_C_SetAutoFillOptions final
 {
 public:
 	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(AthenaMatchmakingWidget_C_SetAutoFillOptions) == 0x0000E4, "Wrong alignment on AthenaMatchmakingWidget_C_SetAutoFillOptions");
-static_assert(sizeof(AthenaMatchmakingWidget_C_SetAutoFillOptions) == 0x0000E4, "Wrong size on AthenaMatchmakingWidget_C_SetAutoFillOptions");
+static_assert(alignof(AthenaMatchmakingWidget_C_SetAutoFillOptions) == 0x000008, "Wrong alignment on AthenaMatchmakingWidget_C_SetAutoFillOptions");
+static_assert(sizeof(AthenaMatchmakingWidget_C_SetAutoFillOptions) == 0x000010, "Wrong size on AthenaMatchmakingWidget_C_SetAutoFillOptions");
 static_assert(offsetof(AthenaMatchmakingWidget_C_SetAutoFillOptions, K2Node_MakeArray_Array) == 0x000000, "Member 'AthenaMatchmakingWidget_C_SetAutoFillOptions::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.PlaylistChange

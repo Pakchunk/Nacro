@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TeamScoreDetailsContent.TeamScoreDetailsContent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0278 - 0x0240)
 class UTeamScoreDetailsContent_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_2;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_3;                                           // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_4;                                           // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UTeamScoreDetailsContent_C>();
 	}
 };
-static_assert(alignof(UTeamScoreDetailsContent_C) == 0x322CBBB8, "Wrong alignment on UTeamScoreDetailsContent_C");
-static_assert(sizeof(UTeamScoreDetailsContent_C) == 0x322CBBB8, "Wrong size on UTeamScoreDetailsContent_C");
+static_assert(alignof(UTeamScoreDetailsContent_C) == 0x000008, "Wrong alignment on UTeamScoreDetailsContent_C");
+static_assert(sizeof(UTeamScoreDetailsContent_C) == 0x000278, "Wrong size on UTeamScoreDetailsContent_C");
 static_assert(offsetof(UTeamScoreDetailsContent_C, UberGraphFrame) == 0x000240, "Member 'UTeamScoreDetailsContent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTeamScoreDetailsContent_C, Image_2) == 0x000248, "Member 'UTeamScoreDetailsContent_C::Image_2' has a wrong offset!");
 static_assert(offsetof(UTeamScoreDetailsContent_C, Image_3) == 0x000250, "Member 'UTeamScoreDetailsContent_C::Image_3' has a wrong offset!");

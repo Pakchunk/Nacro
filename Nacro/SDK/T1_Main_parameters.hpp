@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function T1_Main.T1_Main_C.ExecuteUbergraph_T1_Main
-// 0x0048 (0x0048 - 0x0000)
-struct alignas(0x48) T1_Main_C_ExecuteUbergraph_T1_Main final
+// 0x0010 (0x0010 - 0x0000)
+struct T1_Main_C_ExecuteUbergraph_T1_Main final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,8 +24,8 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(T1_Main_C_ExecuteUbergraph_T1_Main) == 0x000048, "Wrong alignment on T1_Main_C_ExecuteUbergraph_T1_Main");
-static_assert(sizeof(T1_Main_C_ExecuteUbergraph_T1_Main) == 0x000048, "Wrong size on T1_Main_C_ExecuteUbergraph_T1_Main");
+static_assert(alignof(T1_Main_C_ExecuteUbergraph_T1_Main) == 0x000008, "Wrong alignment on T1_Main_C_ExecuteUbergraph_T1_Main");
+static_assert(sizeof(T1_Main_C_ExecuteUbergraph_T1_Main) == 0x000010, "Wrong size on T1_Main_C_ExecuteUbergraph_T1_Main");
 static_assert(offsetof(T1_Main_C_ExecuteUbergraph_T1_Main, EntryPoint) == 0x000000, "Member 'T1_Main_C_ExecuteUbergraph_T1_Main::EntryPoint' has a wrong offset!");
 static_assert(offsetof(T1_Main_C_ExecuteUbergraph_T1_Main, K2Node_Event_IsDesignTime) == 0x000004, "Member 'T1_Main_C_ExecuteUbergraph_T1_Main::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(T1_Main_C_ExecuteUbergraph_T1_Main, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'T1_Main_C_ExecuteUbergraph_T1_Main::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Base-XS.TextStyle-Base-XS_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusBaseMinusXS_C : public UTextStyleMinusBaseParent_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusBaseMinusXS_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusBaseMinusXS_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusBaseMinusXS_C");
-static_assert(sizeof(UTextStyleMinusBaseMinusXS_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusBaseMinusXS_C");
+static_assert(alignof(UTextStyleMinusBaseMinusXS_C) == 0x000008, "Wrong alignment on UTextStyleMinusBaseMinusXS_C");
+static_assert(sizeof(UTextStyleMinusBaseMinusXS_C) == 0x0000D0, "Wrong size on UTextStyleMinusBaseMinusXS_C");
 
 }
 

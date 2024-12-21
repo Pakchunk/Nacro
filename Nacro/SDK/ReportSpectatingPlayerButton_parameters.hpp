@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C.ExecuteUbergraph_ReportSpectatingPlayerButton
-// 0x00C6 (0x00C6 - 0x0000)
-struct alignas(0x63) ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton final
+// 0x0068 (0x0068 - 0x0000)
+struct ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,8 +32,8 @@ public:
 	class FString                                 CallFunc_GetSpectatingPlayerName_ReturnValue;      // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
 };
-static_assert(alignof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton) == 0x000063, "Wrong alignment on ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton");
-static_assert(sizeof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton) == 0x0000C6, "Wrong size on ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton");
+static_assert(alignof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton) == 0x000008, "Wrong alignment on ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton");
+static_assert(sizeof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton) == 0x000068, "Wrong size on ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton");
 static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, EntryPoint) == 0x000000, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, CallFunc_Create_ReturnValue) == 0x000010, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::CallFunc_Create_ReturnValue' has a wrong offset!");

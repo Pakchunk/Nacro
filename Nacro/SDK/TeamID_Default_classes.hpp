@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TeamID_Default.TeamID_Default_C
-// 0x0000 (0x11821300 - 0x11821300)
+// 0x0000 (0x0038 - 0x0038)
 class UTeamID_Default_C final : public UFortTeamIdentification
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTeamID_Default_C>();
 	}
 };
-static_assert(alignof(UTeamID_Default_C) == 0x11821300, "Wrong alignment on UTeamID_Default_C");
-static_assert(sizeof(UTeamID_Default_C) == 0x11821300, "Wrong size on UTeamID_Default_C");
+static_assert(alignof(UTeamID_Default_C) == 0x000008, "Wrong alignment on UTeamID_Default_C");
+static_assert(sizeof(UTeamID_Default_C) == 0x000038, "Wrong size on UTeamID_Default_C");
 
 }
 

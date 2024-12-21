@@ -15,27 +15,27 @@ namespace SDK::Params
 {
 
 // Function AthenaStatsRow.AthenaStatsRow_C.ExecuteUbergraph_AthenaStatsRow
-// 0x0025 (0x0025 - 0x0000)
-struct alignas(0x25) AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow) == 0x000025, "Wrong alignment on AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow");
-static_assert(sizeof(AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow) == 0x000025, "Wrong size on AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow");
+static_assert(alignof(AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow) == 0x000004, "Wrong alignment on AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow");
+static_assert(sizeof(AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow) == 0x000008, "Wrong size on AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow");
 static_assert(offsetof(AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow, EntryPoint) == 0x000000, "Member 'AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow, K2Node_Event_IsDesignTime) == 0x000004, "Member 'AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function AthenaStatsRow.AthenaStatsRow_C.PreConstruct
-// 0x03A1 (0x03A1 - 0x0000)
-struct alignas(0x3A1) AthenaStatsRow_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaStatsRow_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaStatsRow_C_PreConstruct) == 0x0003A1, "Wrong alignment on AthenaStatsRow_C_PreConstruct");
-static_assert(sizeof(AthenaStatsRow_C_PreConstruct) == 0x0003A1, "Wrong size on AthenaStatsRow_C_PreConstruct");
+static_assert(alignof(AthenaStatsRow_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaStatsRow_C_PreConstruct");
+static_assert(sizeof(AthenaStatsRow_C_PreConstruct) == 0x000001, "Wrong size on AthenaStatsRow_C_PreConstruct");
 static_assert(offsetof(AthenaStatsRow_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaStatsRow_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaStatsRow.AthenaStatsRow_C.SetStatValueAsText

@@ -19,8 +19,8 @@ namespace SDK::Params
 {
 
 // Function AccountBonuses.AccountBonuses_C.ExecuteUbergraph_AccountBonuses
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) AccountBonuses_C_ExecuteUbergraph_AccountBonuses final
+// 0x0020 (0x0020 - 0x0000)
+struct AccountBonuses_C_ExecuteUbergraph_AccountBonuses final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -28,15 +28,15 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses) == 0x0000E4, "Wrong alignment on AccountBonuses_C_ExecuteUbergraph_AccountBonuses");
-static_assert(sizeof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses) == 0x0000E4, "Wrong size on AccountBonuses_C_ExecuteUbergraph_AccountBonuses");
+static_assert(alignof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses) == 0x000008, "Wrong alignment on AccountBonuses_C_ExecuteUbergraph_AccountBonuses");
+static_assert(sizeof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses) == 0x000020, "Wrong size on AccountBonuses_C_ExecuteUbergraph_AccountBonuses");
 static_assert(offsetof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses, EntryPoint) == 0x000000, "Member 'AccountBonuses_C_ExecuteUbergraph_AccountBonuses::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AccountBonuses_C_ExecuteUbergraph_AccountBonuses::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AccountBonuses_C_ExecuteUbergraph_AccountBonuses::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AccountBonuses.AccountBonuses_C.Has Founder Badge
-// 0x004A (0x004A - 0x0000)
-struct alignas(0x4A) AccountBonuses_C_Has_Founder_Badge final
+// 0x0030 (0x0030 - 0x0000)
+struct AccountBonuses_C_Has_Founder_Badge final
 {
 public:
 	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -49,8 +49,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsActive_ReturnValue;                     // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccountBonuses_C_Has_Founder_Badge) == 0x00004A, "Wrong alignment on AccountBonuses_C_Has_Founder_Badge");
-static_assert(sizeof(AccountBonuses_C_Has_Founder_Badge) == 0x00004A, "Wrong size on AccountBonuses_C_Has_Founder_Badge");
+static_assert(alignof(AccountBonuses_C_Has_Founder_Badge) == 0x000008, "Wrong alignment on AccountBonuses_C_Has_Founder_Badge");
+static_assert(sizeof(AccountBonuses_C_Has_Founder_Badge) == 0x000030, "Wrong size on AccountBonuses_C_Has_Founder_Badge");
 static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, Result) == 0x000000, "Member 'AccountBonuses_C_Has_Founder_Badge::Result' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AccountBonuses_C_Has_Founder_Badge::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, CallFunc_GetAccountItemWithDefinition_ReturnValue) == 0x000010, "Member 'AccountBonuses_C_Has_Founder_Badge::CallFunc_GetAccountItemWithDefinition_ReturnValue' has a wrong offset!");
@@ -85,7 +85,7 @@ static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, K2Node_DynamicCast_bSucce
 static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, CallFunc_IsActive_ReturnValue) == 0x000029, "Member 'AccountBonuses_C_Has_VIP_Badge::CallFunc_IsActive_ReturnValue' has a wrong offset!");
 
 // Function AccountBonuses.AccountBonuses_C.Update Badges
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct AccountBonuses_C_Update_Badges final
 {
 public:
@@ -114,13 +114,13 @@ public:
 	bool                                          CallFunc_Has_Founder_Badge_Result2;                // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              CallFunc_UtcNow_ReturnValue;                       // 0x0088(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                              CallFunc_UtcNow_ReturnValue;                       // 0x0088(0x0008)(NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable3;                               // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_Subtract_DateTimeDateTime_ReturnValue;    // 0x0098(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_Subtract_DateTimeDateTime_ReturnValue;    // 0x0098(0x0008)(NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetDays_ReturnValue;                      // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A8(0x0040)(HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable4;                               // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ZeroConstructor, ReferenceParm)
@@ -128,8 +128,8 @@ public:
 	bool                                          Temp_bool_Variable2;                               // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccountBonuses_C_Update_Badges) == 0x11821D80, "Wrong alignment on AccountBonuses_C_Update_Badges");
-static_assert(sizeof(AccountBonuses_C_Update_Badges) == 0x11821D80, "Wrong size on AccountBonuses_C_Update_Badges");
+static_assert(alignof(AccountBonuses_C_Update_Badges) == 0x000008, "Wrong alignment on AccountBonuses_C_Update_Badges");
+static_assert(sizeof(AccountBonuses_C_Update_Badges) == 0x000120, "Wrong size on AccountBonuses_C_Update_Badges");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue2) == 0x000008, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue3) == 0x000010, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue3' has a wrong offset!");

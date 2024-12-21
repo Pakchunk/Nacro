@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Interaction_DefenderBeacon.Interaction_DefenderBeacon_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C8 (0x0308 - 0x0240)
 class UInteraction_DefenderBeacon_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UFortMultiSizeItemCard*                 AmmoItemCard;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               AmmoSelection;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               AmmoSlot;                                          // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -67,8 +67,8 @@ public:
 		return GetDefaultObjImpl<UInteraction_DefenderBeacon_C>();
 	}
 };
-static_assert(alignof(UInteraction_DefenderBeacon_C) == 0x322CBBB8, "Wrong alignment on UInteraction_DefenderBeacon_C");
-static_assert(sizeof(UInteraction_DefenderBeacon_C) == 0x322CBBB8, "Wrong size on UInteraction_DefenderBeacon_C");
+static_assert(alignof(UInteraction_DefenderBeacon_C) == 0x000008, "Wrong alignment on UInteraction_DefenderBeacon_C");
+static_assert(sizeof(UInteraction_DefenderBeacon_C) == 0x000308, "Wrong size on UInteraction_DefenderBeacon_C");
 static_assert(offsetof(UInteraction_DefenderBeacon_C, UberGraphFrame) == 0x000240, "Member 'UInteraction_DefenderBeacon_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UInteraction_DefenderBeacon_C, AmmoItemCard) == 0x000248, "Member 'UInteraction_DefenderBeacon_C::AmmoItemCard' has a wrong offset!");
 static_assert(offsetof(UInteraction_DefenderBeacon_C, AmmoSelection) == 0x000250, "Member 'UInteraction_DefenderBeacon_C::AmmoSelection' has a wrong offset!");

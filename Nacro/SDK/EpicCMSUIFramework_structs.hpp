@@ -28,8 +28,8 @@ enum class EDateType : uint8
 };
 
 // ScriptStruct EpicCMSUIFramework.TileDefinition
-// 0x1182EF80 (0x1182EF80 - 0x0000)
-struct alignas(0x1182EF80) FTileDefinition final
+// 0x0088 (0x0088 - 0x0000)
+struct FTileDefinition final
 {
 public:
 	class FString                                 TypeString;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -38,15 +38,15 @@ public:
 	class FString                                 Eyebrow;                                           // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Link;                                              // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupID;                                           // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              Countdown;                                         // 0x0060(0x11821300)(BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              Countdown;                                         // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDateType                                     CountdownType;                                     // 0x0068(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 MediaUrl;                                          // 0x0070(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsVisible;                                         // 0x0080(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTileDefinition) == 0x1182EF80, "Wrong alignment on FTileDefinition");
-static_assert(sizeof(FTileDefinition) == 0x1182EF80, "Wrong size on FTileDefinition");
+static_assert(alignof(FTileDefinition) == 0x000008, "Wrong alignment on FTileDefinition");
+static_assert(sizeof(FTileDefinition) == 0x000088, "Wrong size on FTileDefinition");
 static_assert(offsetof(FTileDefinition, TypeString) == 0x000000, "Member 'FTileDefinition::TypeString' has a wrong offset!");
 static_assert(offsetof(FTileDefinition, Title) == 0x000010, "Member 'FTileDefinition::Title' has a wrong offset!");
 static_assert(offsetof(FTileDefinition, Subtitle) == 0x000020, "Member 'FTileDefinition::Subtitle' has a wrong offset!");
@@ -59,19 +59,19 @@ static_assert(offsetof(FTileDefinition, MediaUrl) == 0x000070, "Member 'FTileDef
 static_assert(offsetof(FTileDefinition, IsVisible) == 0x000080, "Member 'FTileDefinition::IsVisible' has a wrong offset!");
 
 // ScriptStruct EpicCMSUIFramework.EpicCMSLayoutTypeMapping
-// 0xD380 (0x1182EB00 - 0x11821780)
-struct alignas(0x1182EB00) FEpicCMSLayoutTypeMapping final : public FTableRowBase
+// 0x0020 (0x0028 - 0x0008)
+struct FEpicCMSLayoutTypeMapping final : public FTableRowBase
 {
 public:
 	TSoftClassPtr<class UClass>                   LayoutType;                                        // 0x0008(0x0020)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FEpicCMSLayoutTypeMapping) == 0x1182EB00, "Wrong alignment on FEpicCMSLayoutTypeMapping");
-static_assert(sizeof(FEpicCMSLayoutTypeMapping) == 0x1182EB00, "Wrong size on FEpicCMSLayoutTypeMapping");
+static_assert(alignof(FEpicCMSLayoutTypeMapping) == 0x000008, "Wrong alignment on FEpicCMSLayoutTypeMapping");
+static_assert(sizeof(FEpicCMSLayoutTypeMapping) == 0x000028, "Wrong size on FEpicCMSLayoutTypeMapping");
 static_assert(offsetof(FEpicCMSLayoutTypeMapping, LayoutType) == 0x000008, "Member 'FEpicCMSLayoutTypeMapping::LayoutType' has a wrong offset!");
 
 // ScriptStruct EpicCMSUIFramework.SlotDescription
-// 0x1182EF80 (0x1182EF80 - 0x0000)
-struct alignas(0x1182EF80) FSlotDescription final
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) FSlotDescription final
 {
 public:
 	class FName                                   SlotName;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -81,8 +81,8 @@ public:
 	bool                                          bEnableAutoScroll;                                 // 0x0011(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSlotDescription) == 0x1182EF80, "Wrong alignment on FSlotDescription");
-static_assert(sizeof(FSlotDescription) == 0x1182EF80, "Wrong size on FSlotDescription");
+static_assert(alignof(FSlotDescription) == 0x000008, "Wrong alignment on FSlotDescription");
+static_assert(sizeof(FSlotDescription) == 0x000018, "Wrong size on FSlotDescription");
 static_assert(offsetof(FSlotDescription, SlotName) == 0x000000, "Member 'FSlotDescription::SlotName' has a wrong offset!");
 static_assert(offsetof(FSlotDescription, ColumnCount) == 0x000008, "Member 'FSlotDescription::ColumnCount' has a wrong offset!");
 static_assert(offsetof(FSlotDescription, RowCount) == 0x00000C, "Member 'FSlotDescription::RowCount' has a wrong offset!");
@@ -90,14 +90,14 @@ static_assert(offsetof(FSlotDescription, bUseFeaturedTextStyle) == 0x000010, "Me
 static_assert(offsetof(FSlotDescription, bEnableAutoScroll) == 0x000011, "Member 'FSlotDescription::bEnableAutoScroll' has a wrong offset!");
 
 // ScriptStruct EpicCMSUIFramework.EpicCMSTileTypeMapping
-// 0xD380 (0x1182EB00 - 0x11821780)
-struct alignas(0x1182EB00) FEpicCMSTileTypeMapping final : public FTableRowBase
+// 0x0020 (0x0028 - 0x0008)
+struct FEpicCMSTileTypeMapping final : public FTableRowBase
 {
 public:
 	TSoftClassPtr<class UClass>                   TileClass;                                         // 0x0008(0x0020)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FEpicCMSTileTypeMapping) == 0x1182EB00, "Wrong alignment on FEpicCMSTileTypeMapping");
-static_assert(sizeof(FEpicCMSTileTypeMapping) == 0x1182EB00, "Wrong size on FEpicCMSTileTypeMapping");
+static_assert(alignof(FEpicCMSTileTypeMapping) == 0x000008, "Wrong alignment on FEpicCMSTileTypeMapping");
+static_assert(sizeof(FEpicCMSTileTypeMapping) == 0x000028, "Wrong size on FEpicCMSTileTypeMapping");
 static_assert(offsetof(FEpicCMSTileTypeMapping, TileClass) == 0x000008, "Member 'FEpicCMSTileTypeMapping::TileClass' has a wrong offset!");
 
 }

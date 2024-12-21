@@ -81,20 +81,20 @@ static_assert(offsetof(GameplayTask_ClaimResource_ClaimResources, TaskInstanceNa
 static_assert(offsetof(GameplayTask_ClaimResource_ClaimResources, ReturnValue) == 0x000030, "Member 'GameplayTask_ClaimResource_ClaimResources::ReturnValue' has a wrong offset!");
 
 // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct GameplayTask_SpawnActor_SpawnActor final
 {
 public:
 	TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
-	struct FVector                                SpawnLocation;                                     // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               SpawnRotation;                                     // 0x001C(0x11821300)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                SpawnLocation;                                     // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               SpawnRotation;                                     // 0x001C(0x000C)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	TSubclassOf<class AActor>                     Class_0;                                           // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSpawnOnlyOnAuthority;                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameplayTask_SpawnActor*               ReturnValue;                                       // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(GameplayTask_SpawnActor_SpawnActor) == 0x11821300, "Wrong alignment on GameplayTask_SpawnActor_SpawnActor");
-static_assert(sizeof(GameplayTask_SpawnActor_SpawnActor) == 0x11821300, "Wrong size on GameplayTask_SpawnActor_SpawnActor");
+static_assert(alignof(GameplayTask_SpawnActor_SpawnActor) == 0x000008, "Wrong alignment on GameplayTask_SpawnActor_SpawnActor");
+static_assert(sizeof(GameplayTask_SpawnActor_SpawnActor) == 0x000040, "Wrong size on GameplayTask_SpawnActor_SpawnActor");
 static_assert(offsetof(GameplayTask_SpawnActor_SpawnActor, TaskOwner) == 0x000000, "Member 'GameplayTask_SpawnActor_SpawnActor::TaskOwner' has a wrong offset!");
 static_assert(offsetof(GameplayTask_SpawnActor_SpawnActor, SpawnLocation) == 0x000010, "Member 'GameplayTask_SpawnActor_SpawnActor::SpawnLocation' has a wrong offset!");
 static_assert(offsetof(GameplayTask_SpawnActor_SpawnActor, SpawnRotation) == 0x00001C, "Member 'GameplayTask_SpawnActor_SpawnActor::SpawnRotation' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-Primary-L-Yellow.ButtonStyle-Primary-L-Yellow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusPrimaryMinusLMinusYellow_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusPrimaryMinusLMinusYellow_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusPrimaryMinusLMinusYellow_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusPrimaryMinusLMinusYellow_C");
-static_assert(sizeof(UButtonStyleMinusPrimaryMinusLMinusYellow_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusPrimaryMinusLMinusYellow_C");
+static_assert(alignof(UButtonStyleMinusPrimaryMinusLMinusYellow_C) == 0x000008, "Wrong alignment on UButtonStyleMinusPrimaryMinusLMinusYellow_C");
+static_assert(sizeof(UButtonStyleMinusPrimaryMinusLMinusYellow_C) == 0x000530, "Wrong size on UButtonStyleMinusPrimaryMinusLMinusYellow_C");
 
 }
 

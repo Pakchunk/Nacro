@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function ItemManagementScreen.ItemManagementScreen_C.ExecuteUbergraph_ItemManagementScreen
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0338 (0x0338 - 0x0000)
 struct ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen final
 {
 public:
@@ -40,7 +40,7 @@ public:
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDescriptionText_ItemDescription;       // 0x0068(0x0018)()
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue7;                  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0088(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0088(0x0190)()
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue8;                  // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              K2Node_Event_Item2;                                // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortSchematicItem*                     K2Node_Event_SchematicItem;                        // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -65,7 +65,7 @@ public:
 	class UFortConsumableAccountItem*             K2Node_Event_ConsumableItem;                       // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAsyncAction_MCPContextConsumeItem* CallFunc_ConsumeItem_ReturnValue;                  // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x02A0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x02B8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x02B8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02F8(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_309[0x7];                                      // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -75,8 +75,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanActivateOnSelf_ReturnValue;            // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen) == 0x11821D80, "Wrong alignment on ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen");
-static_assert(sizeof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen) == 0x11821D80, "Wrong size on ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen");
+static_assert(alignof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen) == 0x000008, "Wrong alignment on ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen");
+static_assert(sizeof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen) == 0x000338, "Wrong size on ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen");
 static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, EntryPoint) == 0x000000, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item) == 0x000008, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -166,16 +166,16 @@ static_assert(sizeof(ItemManagementScreen_C_HandleEquipItemBP) == 0x000008, "Wro
 static_assert(offsetof(ItemManagementScreen_C_HandleEquipItemBP, Item) == 0x000000, "Member 'ItemManagementScreen_C_HandleEquipItemBP::Item' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40
-// 0x0056 (0x0056 - 0x0000)
-struct alignas(0x56) ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40 final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40) == 0x000056, "Wrong alignment on ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40");
-static_assert(sizeof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40) == 0x000056, "Wrong size on ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40");
+static_assert(alignof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40) == 0x000008, "Wrong alignment on ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40");
+static_assert(sizeof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40) == 0x000010, "Wrong size on ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40");
 static_assert(offsetof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40, Result) == 0x000000, "Member 'ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40::Result' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40, ResultName) == 0x000008, "Member 'ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40::ResultName' has a wrong offset!");
 
@@ -264,12 +264,13 @@ static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_GetCo
 static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_GetCombinedDescription_ReturnValue) == 0x000070, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.OnDrop
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct ItemManagementScreen_C_OnDrop final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(Parm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(Parm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -282,8 +283,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_RemoveItemFromQuickBar_ReturnValue;       // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_OnDrop) == 0x11829280, "Wrong alignment on ItemManagementScreen_C_OnDrop");
-static_assert(sizeof(ItemManagementScreen_C_OnDrop) == 0x11829280, "Wrong size on ItemManagementScreen_C_OnDrop");
+static_assert(alignof(ItemManagementScreen_C_OnDrop) == 0x000008, "Wrong alignment on ItemManagementScreen_C_OnDrop");
+static_assert(sizeof(ItemManagementScreen_C_OnDrop) == 0x0000E8, "Wrong size on ItemManagementScreen_C_OnDrop");
 static_assert(offsetof(ItemManagementScreen_C_OnDrop, MyGeometry) == 0x000000, "Member 'ItemManagementScreen_C_OnDrop::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_OnDrop, PointerEvent) == 0x000038, "Member 'ItemManagementScreen_C_OnDrop::PointerEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementScreen_C_OnDrop, Operation) == 0x0000B0, "Member 'ItemManagementScreen_C_OnDrop::Operation' has a wrong offset!");
@@ -399,14 +400,14 @@ static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CraftAndSlo
 static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CraftAndSlotSchematic_ReturnValue) == 0x00004A, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CraftAndSlotSchematic_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.ShowCraftError
-// 0x1198DB70 (0x1198DB70 - 0x0000)
-struct alignas(0x1198DB70) ItemManagementScreen_C_ShowCraftError final
+// 0x0001 (0x0001 - 0x0000)
+struct ItemManagementScreen_C_ShowCraftError final
 {
 public:
 	EFortCraftFailCause                           FailCause;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_ShowCraftError) == 0x1198DB70, "Wrong alignment on ItemManagementScreen_C_ShowCraftError");
-static_assert(sizeof(ItemManagementScreen_C_ShowCraftError) == 0x1198DB70, "Wrong size on ItemManagementScreen_C_ShowCraftError");
+static_assert(alignof(ItemManagementScreen_C_ShowCraftError) == 0x000001, "Wrong alignment on ItemManagementScreen_C_ShowCraftError");
+static_assert(sizeof(ItemManagementScreen_C_ShowCraftError) == 0x000001, "Wrong size on ItemManagementScreen_C_ShowCraftError");
 static_assert(offsetof(ItemManagementScreen_C_ShowCraftError, FailCause) == 0x000000, "Member 'ItemManagementScreen_C_ShowCraftError::FailCause' has a wrong offset!");
 
 }

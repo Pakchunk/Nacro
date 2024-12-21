@@ -20,17 +20,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass IconTextButton.IconTextButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0100 (0x09A0 - 0x08A0)
 class UIconTextButton_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       CenterButtonTextWidget;                            // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                ContentBorder;                                     // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 LeftSideImage;                                     // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNamedSlot*                             RightExtraContentSlot;                             // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   ButtonText;                                        // 0x08C8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                            IconBrush;                                         // 0x08E0(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x08E0(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class UClass*                                 ControllerInputStyle;                              // 0x0970(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UClass*                                 MouseKeyboardStyle;                                // 0x0978(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EHorizontalAlignment                          ContentAlignment;                                  // 0x0980(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -73,8 +73,8 @@ public:
 		return GetDefaultObjImpl<UIconTextButton_C>();
 	}
 };
-static_assert(alignof(UIconTextButton_C) == 0x322CBBB8, "Wrong alignment on UIconTextButton_C");
-static_assert(sizeof(UIconTextButton_C) == 0x322CBBB8, "Wrong size on UIconTextButton_C");
+static_assert(alignof(UIconTextButton_C) == 0x000008, "Wrong alignment on UIconTextButton_C");
+static_assert(sizeof(UIconTextButton_C) == 0x0009A0, "Wrong size on UIconTextButton_C");
 static_assert(offsetof(UIconTextButton_C, UberGraphFrame) == 0x0008A0, "Member 'UIconTextButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UIconTextButton_C, CenterButtonTextWidget) == 0x0008A8, "Member 'UIconTextButton_C::CenterButtonTextWidget' has a wrong offset!");
 static_assert(offsetof(UIconTextButton_C, ContentBorder) == 0x0008B0, "Member 'UIconTextButton_C::ContentBorder' has a wrong offset!");

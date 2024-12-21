@@ -18,14 +18,15 @@ namespace SDK::Params
 {
 
 // Function ProjectileHuskRanged.ProjectileHuskRanged_C.ExecuteUbergraph_ProjectileHuskRanged
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetInstigatorController_ReturnValue;      // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortAIController*                      K2Node_DynamicCast_AsFort_AIController;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -35,12 +36,13 @@ public:
 	class UPrimitiveComponent*                    K2Node_Event_OtherComp;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bSelfMoved;                           // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                K2Node_Event_HitLocation;                          // 0x004C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_HitNormal;                            // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Event_NormalImpulse;                        // 0x0064(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_Hit;                                  // 0x0070(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_Event_HitLocation;                          // 0x004C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_HitNormal;                            // 0x0058(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Event_NormalImpulse;                        // 0x0064(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_Event_Hit;                                  // 0x0070(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AActor*                                 CallFunc_GetGoalActor_ReturnValue;                 // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0100(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0100(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -48,17 +50,17 @@ public:
 	class APawn*                                  CallFunc_GetInstigator_ReturnValue;                // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBlackboardComponent*                   CallFunc_GetBlackboard_ReturnValue;                // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0140(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0140(0x0008)(NoDestructor)
 	class UObject*                                CallFunc_GetValueAsObject_ReturnValue;             // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_DynamicCast_AsActor;                        // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15A[0x2];                                      // 0x015A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x015C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0168(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x0174(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0180(0x11821D80)(NoDestructor)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0188(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x015C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0168(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x0174(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0180(0x0008)(NoDestructor)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0188(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -66,12 +68,12 @@ public:
 	TArray<class AActor*>                         K2Node_Event_HitActors;                            // 0x01A0(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FHitResult>                     K2Node_Event_HitResults;                           // 0x01B0(0x0010)(ConstParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue4;         // 0x01C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x01D4(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue4;         // 0x01C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x01D4(0x000C)(IsPlainOldData, NoDestructor)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged) == 0x11821D80, "Wrong alignment on ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged");
-static_assert(sizeof(ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged) == 0x11821D80, "Wrong size on ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged");
+static_assert(alignof(ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged) == 0x000008, "Wrong alignment on ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged");
+static_assert(sizeof(ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged) == 0x0001E8, "Wrong size on ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged");
 static_assert(offsetof(ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged, EntryPoint) == 0x000000, "Member 'ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged, Temp_bool_Has_Been_Initd_Variable) == 0x000004, "Member 'ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
 static_assert(offsetof(ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'ProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
@@ -128,7 +130,7 @@ static_assert(offsetof(ProjectileHuskRanged_C_OnExploded, HitActors) == 0x000000
 static_assert(offsetof(ProjectileHuskRanged_C_OnExploded, HitResults) == 0x000010, "Member 'ProjectileHuskRanged_C_OnExploded::HitResults' has a wrong offset!");
 
 // Function ProjectileHuskRanged.ProjectileHuskRanged_C.ReceiveHit
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct ProjectileHuskRanged_C_ReceiveHit final
 {
 public:
@@ -137,13 +139,13 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSelfMoved;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                HitLocation;                                       // 0x001C(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HitNormal;                                         // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0034(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0040(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                HitLocation;                                       // 0x001C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HitNormal;                                         // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                NormalImpulse;                                     // 0x0034(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0040(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(ProjectileHuskRanged_C_ReceiveHit) == 0x11821D80, "Wrong alignment on ProjectileHuskRanged_C_ReceiveHit");
-static_assert(sizeof(ProjectileHuskRanged_C_ReceiveHit) == 0x11821D80, "Wrong size on ProjectileHuskRanged_C_ReceiveHit");
+static_assert(alignof(ProjectileHuskRanged_C_ReceiveHit) == 0x000008, "Wrong alignment on ProjectileHuskRanged_C_ReceiveHit");
+static_assert(sizeof(ProjectileHuskRanged_C_ReceiveHit) == 0x0000C8, "Wrong size on ProjectileHuskRanged_C_ReceiveHit");
 static_assert(offsetof(ProjectileHuskRanged_C_ReceiveHit, MyComp) == 0x000000, "Member 'ProjectileHuskRanged_C_ReceiveHit::MyComp' has a wrong offset!");
 static_assert(offsetof(ProjectileHuskRanged_C_ReceiveHit, Other) == 0x000008, "Member 'ProjectileHuskRanged_C_ReceiveHit::Other' has a wrong offset!");
 static_assert(offsetof(ProjectileHuskRanged_C_ReceiveHit, OtherComp) == 0x000010, "Member 'ProjectileHuskRanged_C_ReceiveHit::OtherComp' has a wrong offset!");

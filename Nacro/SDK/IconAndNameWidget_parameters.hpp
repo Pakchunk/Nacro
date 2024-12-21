@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function IconAndNameWidget.IconAndNameWidget_C.ExecuteUbergraph_IconAndNameWidget
-// 0x5F0044 (0x5F0044 - 0x0000)
-struct alignas(0x5F0044) IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget final
+// 0x0030 (0x0030 - 0x0000)
+struct IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -34,8 +34,8 @@ public:
 	class UClass*                                 K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget) == 0x5F0044, "Wrong alignment on IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget");
-static_assert(sizeof(IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget) == 0x5F0044, "Wrong size on IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget");
+static_assert(alignof(IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget) == 0x000008, "Wrong alignment on IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget");
+static_assert(sizeof(IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget) == 0x000030, "Wrong size on IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget");
 static_assert(offsetof(IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget, EntryPoint) == 0x000000, "Member 'IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget, Temp_bool_Variable) == 0x000004, "Member 'IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget, Temp_byte_Variable) == 0x000005, "Member 'IconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget::Temp_byte_Variable' has a wrong offset!");
@@ -98,14 +98,14 @@ static_assert(offsetof(IconAndNameWidget_C_Setup_Text, CallFunc_TextIsEmpty_Retu
 static_assert(offsetof(IconAndNameWidget_C_Setup_Text, K2Node_Select_Default) == 0x000004, "Member 'IconAndNameWidget_C_Setup_Text::K2Node_Select_Default' has a wrong offset!");
 
 // Function IconAndNameWidget.IconAndNameWidget_C.Set Border Color
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct IconAndNameWidget_C_Set_Border_Color final
 {
 public:
-	struct FLinearColor                           Value;                                             // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Value;                                             // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(IconAndNameWidget_C_Set_Border_Color) == 0x11821300, "Wrong alignment on IconAndNameWidget_C_Set_Border_Color");
-static_assert(sizeof(IconAndNameWidget_C_Set_Border_Color) == 0x11821300, "Wrong size on IconAndNameWidget_C_Set_Border_Color");
+static_assert(alignof(IconAndNameWidget_C_Set_Border_Color) == 0x000004, "Wrong alignment on IconAndNameWidget_C_Set_Border_Color");
+static_assert(sizeof(IconAndNameWidget_C_Set_Border_Color) == 0x000010, "Wrong size on IconAndNameWidget_C_Set_Border_Color");
 static_assert(offsetof(IconAndNameWidget_C_Set_Border_Color, Value) == 0x000000, "Member 'IconAndNameWidget_C_Set_Border_Color::Value' has a wrong offset!");
 
 }

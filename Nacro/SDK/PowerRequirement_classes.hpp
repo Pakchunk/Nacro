@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PowerRequirement.PowerRequirement_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0258 - 0x0230)
 class UPowerRequirement_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         PowerRequirementHB;                                // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyRatingWidget_C*                  RatingWidget;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextBlock;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UPowerRequirement_C>();
 	}
 };
-static_assert(alignof(UPowerRequirement_C) == 0x322CBBB8, "Wrong alignment on UPowerRequirement_C");
-static_assert(sizeof(UPowerRequirement_C) == 0x322CBBB8, "Wrong size on UPowerRequirement_C");
+static_assert(alignof(UPowerRequirement_C) == 0x000008, "Wrong alignment on UPowerRequirement_C");
+static_assert(sizeof(UPowerRequirement_C) == 0x000258, "Wrong size on UPowerRequirement_C");
 static_assert(offsetof(UPowerRequirement_C, UberGraphFrame) == 0x000230, "Member 'UPowerRequirement_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPowerRequirement_C, PowerRequirementHB) == 0x000238, "Member 'UPowerRequirement_C::PowerRequirementHB' has a wrong offset!");
 static_assert(offsetof(UPowerRequirement_C, RatingWidget) == 0x000240, "Member 'UPowerRequirement_C::RatingWidget' has a wrong offset!");

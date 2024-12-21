@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.ExecuteUbergraph_SquadSlotItemPickerTileButton
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton final
 {
 public:
@@ -28,14 +28,14 @@ public:
 	class UCommonListView*                        K2Node_Event_OwningList;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquadSlotId                   K2Node_Event_SquadSlotId;                          // 0x0020(0x11821780)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	struct FHomebaseSquadSlotId                   K2Node_Event_SquadSlotId;                          // 0x0020(0x0010)(ConstParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton) == 0x11821780, "Wrong alignment on SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton");
-static_assert(sizeof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton) == 0x11821780, "Wrong size on SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton");
+static_assert(alignof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton) == 0x000008, "Wrong alignment on SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton");
+static_assert(sizeof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton) == 0x000040, "Wrong size on SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton");
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton, EntryPoint) == 0x000000, "Member 'SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton, K2Node_Event_InData) == 0x000008, "Member 'SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton::K2Node_Event_InData' has a wrong offset!");
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton, K2Node_Event_OwningList) == 0x000010, "Member 'SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton::K2Node_Event_OwningList' has a wrong offset!");
@@ -46,14 +46,14 @@ static_assert(offsetof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlo
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton, K2Node_Select_Default) == 0x000038, "Member 'SquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton::K2Node_Select_Default' has a wrong offset!");
 
 // Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.HandleItemSlottedToDifferentSquad
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad final
 {
 public:
-	struct FHomebaseSquadSlotId                   SquadSlotId;                                       // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	struct FHomebaseSquadSlotId                   SquadSlotId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad) == 0x11821780, "Wrong alignment on SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad");
-static_assert(sizeof(SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad) == 0x11821780, "Wrong size on SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad");
+static_assert(alignof(SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad) == 0x000008, "Wrong alignment on SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad");
+static_assert(sizeof(SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad) == 0x000010, "Wrong size on SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad");
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad, SquadSlotId) == 0x000000, "Member 'SquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad::SquadSlotId' has a wrong offset!");
 
 // Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.SetData
@@ -70,16 +70,16 @@ static_assert(offsetof(SquadSlotItemPickerTileButton_C_SetData, InData) == 0x000
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_SetData, OwningList) == 0x000008, "Member 'SquadSlotItemPickerTileButton_C_SetData::OwningList' has a wrong offset!");
 
 // Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.UpdateOverlays
-// 0x04BA (0x04BA - 0x0000)
-struct alignas(0x4BA) SquadSlotItemPickerTileButton_C_UpdateOverlays final
+// 0x0018 (0x0018 - 0x0000)
+struct SquadSlotItemPickerTileButton_C_UpdateOverlays final
 {
 public:
 	TArray<EFortSquadSlottingRestrictionReason>   CallFunc_GetSlottingRestrictionReasons_ReturnValue; // 0x0000(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SquadSlotItemPickerTileButton_C_UpdateOverlays) == 0x0004BA, "Wrong alignment on SquadSlotItemPickerTileButton_C_UpdateOverlays");
-static_assert(sizeof(SquadSlotItemPickerTileButton_C_UpdateOverlays) == 0x0004BA, "Wrong size on SquadSlotItemPickerTileButton_C_UpdateOverlays");
+static_assert(alignof(SquadSlotItemPickerTileButton_C_UpdateOverlays) == 0x000008, "Wrong alignment on SquadSlotItemPickerTileButton_C_UpdateOverlays");
+static_assert(sizeof(SquadSlotItemPickerTileButton_C_UpdateOverlays) == 0x000018, "Wrong size on SquadSlotItemPickerTileButton_C_UpdateOverlays");
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_UpdateOverlays, CallFunc_GetSlottingRestrictionReasons_ReturnValue) == 0x000000, "Member 'SquadSlotItemPickerTileButton_C_UpdateOverlays::CallFunc_GetSlottingRestrictionReasons_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_UpdateOverlays, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'SquadSlotItemPickerTileButton_C_UpdateOverlays::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SquadSlotItemPickerTileButton_C_UpdateOverlays, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'SquadSlotItemPickerTileButton_C_UpdateOverlays::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");

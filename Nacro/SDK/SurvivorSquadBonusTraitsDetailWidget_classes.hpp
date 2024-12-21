@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SurvivorSquadBonusTraitsDetailWidget.SurvivorSquadBonusTraitsDetailWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x0328 - 0x02C0)
 class USurvivorSquadBonusTraitsDetailWidget_C final : public UFortSquadSlotSurvivorTraitMatchesDetailWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 LeaderMatchesSquadTypeImageIndicator;              // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 MatchesLeaderPersonalityImageIndicator;            // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        PersonalityTraitValueWidgetSwitcher;               // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<USurvivorSquadBonusTraitsDetailWidget_C>();
 	}
 };
-static_assert(alignof(USurvivorSquadBonusTraitsDetailWidget_C) == 0x322CBBB8, "Wrong alignment on USurvivorSquadBonusTraitsDetailWidget_C");
-static_assert(sizeof(USurvivorSquadBonusTraitsDetailWidget_C) == 0x322CBBB8, "Wrong size on USurvivorSquadBonusTraitsDetailWidget_C");
+static_assert(alignof(USurvivorSquadBonusTraitsDetailWidget_C) == 0x000008, "Wrong alignment on USurvivorSquadBonusTraitsDetailWidget_C");
+static_assert(sizeof(USurvivorSquadBonusTraitsDetailWidget_C) == 0x000328, "Wrong size on USurvivorSquadBonusTraitsDetailWidget_C");
 static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, UberGraphFrame) == 0x0002C0, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, LeaderMatchesSquadTypeImageIndicator) == 0x0002C8, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::LeaderMatchesSquadTypeImageIndicator' has a wrong offset!");
 static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, MatchesLeaderPersonalityImageIndicator) == 0x0002D0, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::MatchesLeaderPersonalityImageIndicator' has a wrong offset!");

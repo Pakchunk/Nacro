@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Announcement_ZoneModifiers.Announcement_ZoneModifiers_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0258 - 0x0240)
 class UAnnouncement_ZoneModifiers_C final : public UFortAnnouncementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UMissionDetailsModifierList_C*          MissionDetailsModifierList;                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AFortClientAnnouncement_ZoneModifiers*  ZoneModifiersAnnouncement;                         // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UAnnouncement_ZoneModifiers_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_ZoneModifiers_C) == 0x322CBBB8, "Wrong alignment on UAnnouncement_ZoneModifiers_C");
-static_assert(sizeof(UAnnouncement_ZoneModifiers_C) == 0x322CBBB8, "Wrong size on UAnnouncement_ZoneModifiers_C");
+static_assert(alignof(UAnnouncement_ZoneModifiers_C) == 0x000008, "Wrong alignment on UAnnouncement_ZoneModifiers_C");
+static_assert(sizeof(UAnnouncement_ZoneModifiers_C) == 0x000258, "Wrong size on UAnnouncement_ZoneModifiers_C");
 static_assert(offsetof(UAnnouncement_ZoneModifiers_C, UberGraphFrame) == 0x000240, "Member 'UAnnouncement_ZoneModifiers_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_ZoneModifiers_C, MissionDetailsModifierList) == 0x000248, "Member 'UAnnouncement_ZoneModifiers_C::MissionDetailsModifierList' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_ZoneModifiers_C, ZoneModifiersAnnouncement) == 0x000250, "Member 'UAnnouncement_ZoneModifiers_C::ZoneModifiersAnnouncement' has a wrong offset!");

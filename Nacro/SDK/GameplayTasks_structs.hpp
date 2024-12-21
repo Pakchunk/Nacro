@@ -48,14 +48,14 @@ enum class EGameplayTaskState : uint8
 };
 
 // ScriptStruct GameplayTasks.GameplayResourceSet
-// 0x11821C00 (0x11821C00 - 0x0000)
-struct alignas(0x11821C00) FGameplayResourceSet final
+// 0x0002 (0x0002 - 0x0000)
+struct alignas(0x02) FGameplayResourceSet final
 {
 public:
 	uint8                                         Pad_0[0x2];                                        // 0x0000(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGameplayResourceSet) == 0x11821C00, "Wrong alignment on FGameplayResourceSet");
-static_assert(sizeof(FGameplayResourceSet) == 0x11821C00, "Wrong size on FGameplayResourceSet");
+static_assert(alignof(FGameplayResourceSet) == 0x000002, "Wrong alignment on FGameplayResourceSet");
+static_assert(sizeof(FGameplayResourceSet) == 0x000002, "Wrong size on FGameplayResourceSet");
 
 }
 

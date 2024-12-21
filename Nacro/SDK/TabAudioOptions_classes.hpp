@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabAudioOptions.TabAudioOptions_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0298 - 0x0248)
 class UTabAudioOptions_C final : public UFortAudioOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
 	class UOptionsMenuSlider_C*                   ChatVolume;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOptionsMenuSlider_C*                   DialogVolume;                                      // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOptionsMenuSlider_C*                   MusicVolume;                                       // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -60,8 +60,8 @@ public:
 		return GetDefaultObjImpl<UTabAudioOptions_C>();
 	}
 };
-static_assert(alignof(UTabAudioOptions_C) == 0x322CBBB8, "Wrong alignment on UTabAudioOptions_C");
-static_assert(sizeof(UTabAudioOptions_C) == 0x322CBBB8, "Wrong size on UTabAudioOptions_C");
+static_assert(alignof(UTabAudioOptions_C) == 0x000008, "Wrong alignment on UTabAudioOptions_C");
+static_assert(sizeof(UTabAudioOptions_C) == 0x000298, "Wrong size on UTabAudioOptions_C");
 static_assert(offsetof(UTabAudioOptions_C, UberGraphFrame) == 0x000248, "Member 'UTabAudioOptions_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTabAudioOptions_C, ChatVolume) == 0x000250, "Member 'UTabAudioOptions_C::ChatVolume' has a wrong offset!");
 static_assert(offsetof(UTabAudioOptions_C, DialogVolume) == 0x000258, "Member 'UTabAudioOptions_C::DialogVolume' has a wrong offset!");

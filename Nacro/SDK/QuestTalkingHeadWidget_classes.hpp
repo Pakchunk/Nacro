@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestTalkingHeadWidget.QuestTalkingHeadWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0280 - 0x0240)
 class UQuestTalkingHeadWidget_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_0;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               RootOverlay;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 TalkingHeadIcon;                                   // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UQuestTalkingHeadWidget_C>();
 	}
 };
-static_assert(alignof(UQuestTalkingHeadWidget_C) == 0x322CBBB8, "Wrong alignment on UQuestTalkingHeadWidget_C");
-static_assert(sizeof(UQuestTalkingHeadWidget_C) == 0x322CBBB8, "Wrong size on UQuestTalkingHeadWidget_C");
+static_assert(alignof(UQuestTalkingHeadWidget_C) == 0x000008, "Wrong alignment on UQuestTalkingHeadWidget_C");
+static_assert(sizeof(UQuestTalkingHeadWidget_C) == 0x000280, "Wrong size on UQuestTalkingHeadWidget_C");
 static_assert(offsetof(UQuestTalkingHeadWidget_C, UberGraphFrame) == 0x000240, "Member 'UQuestTalkingHeadWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestTalkingHeadWidget_C, Image_0) == 0x000248, "Member 'UQuestTalkingHeadWidget_C::Image_0' has a wrong offset!");
 static_assert(offsetof(UQuestTalkingHeadWidget_C, RootOverlay) == 0x000250, "Member 'UQuestTalkingHeadWidget_C::RootOverlay' has a wrong offset!");

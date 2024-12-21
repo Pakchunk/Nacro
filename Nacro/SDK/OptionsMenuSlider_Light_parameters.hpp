@@ -29,7 +29,7 @@ static_assert(sizeof(OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature)
 static_assert(offsetof(OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
 
 // Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.ExecuteUbergraph_OptionsMenuSlider_Light
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light final
 {
 public:
@@ -37,19 +37,20 @@ public:
 	float                                         CallFunc_GetValue_ReturnValue;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0018(0x11829280)(ConstParm)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0090(0x11827900)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00C8(0x11829280)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0018(0x0078)(ConstParm)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0090(0x0034)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00C8(0x0078)(ConstParm)
 	float                                         K2Node_ComponentBoundEvent_Value2;                 // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_ComponentBoundEvent_Value;                  // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0148(0x0018)()
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0160(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x0170(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0160(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x0170(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetValue_ReturnValue2;                    // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetValue_ReturnValue3;                    // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light) == 0x11829280, "Wrong alignment on OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light");
-static_assert(sizeof(OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light) == 0x11829280, "Wrong size on OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light");
+static_assert(alignof(OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light) == 0x000008, "Wrong alignment on OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light");
+static_assert(sizeof(OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light) == 0x000188, "Wrong size on OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light");
 static_assert(offsetof(OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light, EntryPoint) == 0x000000, "Member 'OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light::EntryPoint' has a wrong offset!");
 static_assert(offsetof(OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light, CallFunc_GetValue_ReturnValue) == 0x000004, "Member 'OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light::CallFunc_GetValue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light, CallFunc_MakeLiteralName_ReturnValue) == 0x000008, "Member 'OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
@@ -88,27 +89,28 @@ static_assert(sizeof(OptionsMenuSlider_Light_C_BndEvt__MenuSlider_K2Node_Compone
 static_assert(offsetof(OptionsMenuSlider_Light_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'OptionsMenuSlider_Light_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
 
 // Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.OnMouseEnter
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct OptionsMenuSlider_Light_C_OnMouseEnter final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuSlider_Light_C_OnMouseEnter) == 0x11829280, "Wrong alignment on OptionsMenuSlider_Light_C_OnMouseEnter");
-static_assert(sizeof(OptionsMenuSlider_Light_C_OnMouseEnter) == 0x11829280, "Wrong size on OptionsMenuSlider_Light_C_OnMouseEnter");
+static_assert(alignof(OptionsMenuSlider_Light_C_OnMouseEnter) == 0x000008, "Wrong alignment on OptionsMenuSlider_Light_C_OnMouseEnter");
+static_assert(sizeof(OptionsMenuSlider_Light_C_OnMouseEnter) == 0x0000B0, "Wrong size on OptionsMenuSlider_Light_C_OnMouseEnter");
 static_assert(offsetof(OptionsMenuSlider_Light_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'OptionsMenuSlider_Light_C_OnMouseEnter::MyGeometry' has a wrong offset!");
 static_assert(offsetof(OptionsMenuSlider_Light_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'OptionsMenuSlider_Light_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.OnMouseLeave
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct OptionsMenuSlider_Light_C_OnMouseLeave final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuSlider_Light_C_OnMouseLeave) == 0x11829280, "Wrong alignment on OptionsMenuSlider_Light_C_OnMouseLeave");
-static_assert(sizeof(OptionsMenuSlider_Light_C_OnMouseLeave) == 0x11829280, "Wrong size on OptionsMenuSlider_Light_C_OnMouseLeave");
+static_assert(alignof(OptionsMenuSlider_Light_C_OnMouseLeave) == 0x000008, "Wrong alignment on OptionsMenuSlider_Light_C_OnMouseLeave");
+static_assert(sizeof(OptionsMenuSlider_Light_C_OnMouseLeave) == 0x000078, "Wrong size on OptionsMenuSlider_Light_C_OnMouseLeave");
 static_assert(offsetof(OptionsMenuSlider_Light_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'OptionsMenuSlider_Light_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Update Slider
@@ -133,16 +135,16 @@ static_assert(offsetof(OptionsMenuSlider_Light_C_Update_Slider, Tooltip_Text_Blo
 static_assert(offsetof(OptionsMenuSlider_Light_C_Update_Slider, CallFunc_MakeLiteralName_ReturnValue) == 0x000040, "Member 'OptionsMenuSlider_Light_C_Update_Slider::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenuSlider_Light_C_Update_Slider, CallFunc_Conv_FloatToText_ReturnValue) == 0x000048, "Member 'OptionsMenuSlider_Light_C_Update_Slider::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 
-// Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Center on Widget
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) OptionsMenuSlider_Light_C_Center_on_Widget final
+// Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Center On Widget
+// 0x0008 (0x0008 - 0x0000)
+struct OptionsMenuSlider_Light_C_Center_On_Widget final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuSlider_Light_C_Center_on_Widget) == 0x0000E4, "Wrong alignment on OptionsMenuSlider_Light_C_Center_on_Widget");
-static_assert(sizeof(OptionsMenuSlider_Light_C_Center_on_Widget) == 0x0000E4, "Wrong size on OptionsMenuSlider_Light_C_Center_on_Widget");
-static_assert(offsetof(OptionsMenuSlider_Light_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuSlider_Light_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(alignof(OptionsMenuSlider_Light_C_Center_On_Widget) == 0x000008, "Wrong alignment on OptionsMenuSlider_Light_C_Center_On_Widget");
+static_assert(sizeof(OptionsMenuSlider_Light_C_Center_On_Widget) == 0x000008, "Wrong size on OptionsMenuSlider_Light_C_Center_On_Widget");
+static_assert(offsetof(OptionsMenuSlider_Light_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuSlider_Light_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 }
 

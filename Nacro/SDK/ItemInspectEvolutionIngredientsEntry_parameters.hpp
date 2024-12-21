@@ -45,22 +45,22 @@ static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_ExecuteUbergraph_I
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_ExecuteUbergraph_ItemInspectEvolutionIngredientsEntry, CallFunc_GetDisplayName_ReturnValue2) == 0x000050, "Member 'ItemInspectEvolutionIngredientsEntry_C_ExecuteUbergraph_ItemInspectEvolutionIngredientsEntry::CallFunc_GetDisplayName_ReturnValue2' has a wrong offset!");
 
 // Function ItemInspectEvolutionIngredientsEntry.ItemInspectEvolutionIngredientsEntry_C.GetIconBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0128 (0x0128 - 0x0000)
 struct ItemInspectEvolutionIngredientsEntry_C_GetIconBrush final
 {
 public:
 	class UFortItemDefinition*                    ItemDefinition;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            Brush;                                             // 0x0008(0x322CBBB8)(Parm, OutParm)
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0098(0x322CBBB8)()
+	struct FSlateBrush                            Brush;                                             // 0x0008(0x0090)(Parm, OutParm)
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0098(0x0090)()
 };
-static_assert(alignof(ItemInspectEvolutionIngredientsEntry_C_GetIconBrush) == 0x11827900, "Wrong alignment on ItemInspectEvolutionIngredientsEntry_C_GetIconBrush");
-static_assert(sizeof(ItemInspectEvolutionIngredientsEntry_C_GetIconBrush) == 0x11827900, "Wrong size on ItemInspectEvolutionIngredientsEntry_C_GetIconBrush");
+static_assert(alignof(ItemInspectEvolutionIngredientsEntry_C_GetIconBrush) == 0x000008, "Wrong alignment on ItemInspectEvolutionIngredientsEntry_C_GetIconBrush");
+static_assert(sizeof(ItemInspectEvolutionIngredientsEntry_C_GetIconBrush) == 0x000128, "Wrong size on ItemInspectEvolutionIngredientsEntry_C_GetIconBrush");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_GetIconBrush, ItemDefinition) == 0x000000, "Member 'ItemInspectEvolutionIngredientsEntry_C_GetIconBrush::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_GetIconBrush, Brush) == 0x000008, "Member 'ItemInspectEvolutionIngredientsEntry_C_GetIconBrush::Brush' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_GetIconBrush, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue) == 0x000098, "Member 'ItemInspectEvolutionIngredientsEntry_C_GetIconBrush::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectEvolutionIngredientsEntry.ItemInspectEvolutionIngredientsEntry_C.SetIngredientCount
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount final
 {
 public:
@@ -71,17 +71,17 @@ public:
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x0028(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0080(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0080(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D0(0x0018)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_Select_Default;                             // 0x00F0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_Select_Default;                             // 0x00F0(0x0028)()
 	int32                                         CallFunc_GetHaveQuantity_ReturnValue;              // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount) == 0x322CBBB8, "Wrong alignment on ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount");
-static_assert(sizeof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount) == 0x322CBBB8, "Wrong size on ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount");
+static_assert(alignof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount) == 0x000008, "Wrong alignment on ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount");
+static_assert(sizeof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount) == 0x000120, "Wrong size on ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount, NeedQuantity) == 0x000000, "Member 'ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount::NeedQuantity' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount, HaveQuantity) == 0x000004, "Member 'ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount::HaveQuantity' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount, Temp_bool_Variable) == 0x000008, "Member 'ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount::Temp_bool_Variable' has a wrong offset!");
@@ -97,11 +97,11 @@ static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount, CallFunc_GetHaveQuantity_ReturnValue) == 0x000118, "Member 'ItemInspectEvolutionIngredientsEntry_C_SetIngredientCount::CallFunc_GetHaveQuantity_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectEvolutionIngredientsEntry.ItemInspectEvolutionIngredientsEntry_C.GetHaveQuantity
-// 0x52535 (0x52535 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity final
 {
 public:
-	struct FFortItemQuantityPair                  InPair;                                            // 0x0000(0x52535)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortItemQuantityPair                  InPair;                                            // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm)
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -109,8 +109,8 @@ public:
 	class UFortItemDefinition*                    CallFunc_GetItemFromItemQuantityPair_ReturnValue;  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetTotalItemQuantityByDefinition_ReturnValue; // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity) == 0x052535, "Wrong alignment on ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity");
-static_assert(sizeof(ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity) == 0x052535, "Wrong size on ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity");
+static_assert(alignof(ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity) == 0x000008, "Wrong alignment on ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity");
+static_assert(sizeof(ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity) == 0x000050, "Wrong size on ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity, InPair) == 0x000000, "Member 'ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity::InPair' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity, ReturnValue) == 0x000028, "Member 'ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity::ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'ItemInspectEvolutionIngredientsEntry_C_GetHaveQuantity::CallFunc_GetContext_ReturnValue' has a wrong offset!");

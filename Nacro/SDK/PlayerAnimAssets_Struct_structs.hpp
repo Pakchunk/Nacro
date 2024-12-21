@@ -15,8 +15,8 @@ namespace SDK
 {
 
 // UserDefinedStruct PlayerAnimAssets_Struct.PlayerAnimAssets_Struct
-// 0x6F0077 (0x6F0077 - 0x0000)
-struct alignas(0x6F0077) FPlayerAnimAssets_Struct final
+// 0x0098 (0x0098 - 0x0000)
+struct FPlayerAnimAssets_Struct final
 {
 public:
 	bool                                          ShouldAimOffsetsApplytoFullBody_31_5AE0E4754B3138F966FD11A295F7B78E; // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -40,8 +40,8 @@ public:
 	class UBlendSpaceBase*                        CrouchJogAdditiveBlendspaceRelaxed_53_8D84728C44041928BFA384B783F1F5AF; // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequence*                          CrouchSprintAnimation_48_15FC9EEA46F9EDFF96BABF8B183E8A77; // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FPlayerAnimAssets_Struct) == 0x6F0077, "Wrong alignment on FPlayerAnimAssets_Struct");
-static_assert(sizeof(FPlayerAnimAssets_Struct) == 0x6F0077, "Wrong size on FPlayerAnimAssets_Struct");
+static_assert(alignof(FPlayerAnimAssets_Struct) == 0x000008, "Wrong alignment on FPlayerAnimAssets_Struct");
+static_assert(sizeof(FPlayerAnimAssets_Struct) == 0x000098, "Wrong size on FPlayerAnimAssets_Struct");
 static_assert(offsetof(FPlayerAnimAssets_Struct, ShouldAimOffsetsApplytoFullBody_31_5AE0E4754B3138F966FD11A295F7B78E) == 0x000000, "Member 'FPlayerAnimAssets_Struct::ShouldAimOffsetsApplytoFullBody_31_5AE0E4754B3138F966FD11A295F7B78E' has a wrong offset!");
 static_assert(offsetof(FPlayerAnimAssets_Struct, TargetingPose_4_D2562A4A44A308F2ADE73F8A183BA29E) == 0x000008, "Member 'FPlayerAnimAssets_Struct::TargetingPose_4_D2562A4A44A308F2ADE73F8A183BA29E' has a wrong offset!");
 static_assert(offsetof(FPlayerAnimAssets_Struct, TargetingAimOffset_13_5040B0EC478A3717BCE10AB68ADAC339) == 0x000010, "Member 'FPlayerAnimAssets_Struct::TargetingAimOffset_13_5040B0EC478A3717BCE10AB68ADAC339' has a wrong offset!");

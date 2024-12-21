@@ -117,15 +117,15 @@ static_assert(offsetof(FortTwitchLogin_C_ExecuteUbergraph_FortTwitchLogin, CallF
 static_assert(offsetof(FortTwitchLogin_C_ExecuteUbergraph_FortTwitchLogin, K2Node_CreateDelegate_OutputDelegate3) == 0x000180, "Member 'FortTwitchLogin_C_ExecuteUbergraph_FortTwitchLogin::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.OnShowLoginError
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) FortTwitchLogin_C_OnShowLoginError final
+// 0x0030 (0x0030 - 0x0000)
+struct FortTwitchLogin_C_OnShowLoginError final
 {
 public:
 	class FText                                   ErrorTitle;                                        // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
 	class FText                                   ErrorMessage;                                      // 0x0018(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(FortTwitchLogin_C_OnShowLoginError) == 0x10461A40, "Wrong alignment on FortTwitchLogin_C_OnShowLoginError");
-static_assert(sizeof(FortTwitchLogin_C_OnShowLoginError) == 0x10461A40, "Wrong size on FortTwitchLogin_C_OnShowLoginError");
+static_assert(alignof(FortTwitchLogin_C_OnShowLoginError) == 0x000008, "Wrong alignment on FortTwitchLogin_C_OnShowLoginError");
+static_assert(sizeof(FortTwitchLogin_C_OnShowLoginError) == 0x000030, "Wrong size on FortTwitchLogin_C_OnShowLoginError");
 static_assert(offsetof(FortTwitchLogin_C_OnShowLoginError, ErrorTitle) == 0x000000, "Member 'FortTwitchLogin_C_OnShowLoginError::ErrorTitle' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_OnShowLoginError, ErrorMessage) == 0x000018, "Member 'FortTwitchLogin_C_OnShowLoginError::ErrorMessage' has a wrong offset!");
 
@@ -152,14 +152,14 @@ static_assert(sizeof(FortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBou
 static_assert(offsetof(FortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature
-// 0x006D (0x006D - 0x0000)
-struct alignas(0x6D) FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature) == 0x00006D, "Wrong alignment on FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature) == 0x00006D, "Wrong size on FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature
@@ -185,14 +185,14 @@ static_assert(sizeof(FortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBou
 static_assert(offsetof(FortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature) == 0x540065, "Wrong alignment on FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature) == 0x540065, "Wrong size on FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.OnLoginFlowModalDismissed
@@ -218,30 +218,30 @@ static_assert(sizeof(FortTwitchLogin_C_OnLoginFlowModalCreated) == 0x000008, "Wr
 static_assert(offsetof(FortTwitchLogin_C_OnLoginFlowModalCreated, Modal) == 0x000000, "Member 'FortTwitchLogin_C_OnLoginFlowModalCreated::Modal' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.OnLoginStatusChanged
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x28) FortTwitchLogin_C_OnLoginStatusChanged final
+// 0x0018 (0x0018 - 0x0000)
+struct FortTwitchLogin_C_OnLoginStatusChanged final
 {
 public:
 	bool                                          bLoggedIn;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 AccountName;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortTwitchLogin_C_OnLoginStatusChanged) == 0x000028, "Wrong alignment on FortTwitchLogin_C_OnLoginStatusChanged");
-static_assert(sizeof(FortTwitchLogin_C_OnLoginStatusChanged) == 0x000028, "Wrong size on FortTwitchLogin_C_OnLoginStatusChanged");
+static_assert(alignof(FortTwitchLogin_C_OnLoginStatusChanged) == 0x000008, "Wrong alignment on FortTwitchLogin_C_OnLoginStatusChanged");
+static_assert(sizeof(FortTwitchLogin_C_OnLoginStatusChanged) == 0x000018, "Wrong size on FortTwitchLogin_C_OnLoginStatusChanged");
 static_assert(offsetof(FortTwitchLogin_C_OnLoginStatusChanged, bLoggedIn) == 0x000000, "Member 'FortTwitchLogin_C_OnLoginStatusChanged::bLoggedIn' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_OnLoginStatusChanged, AccountName) == 0x000008, "Member 'FortTwitchLogin_C_OnLoginStatusChanged::AccountName' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.DialogResult_5994C6BA48DC4D282A16D7BA54384F79
-// 0x003F (0x003F - 0x0000)
-struct alignas(0x3F) FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79 final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79) == 0x00003F, "Wrong alignment on FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79");
-static_assert(sizeof(FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79) == 0x00003F, "Wrong size on FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79");
+static_assert(alignof(FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79) == 0x000008, "Wrong alignment on FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79");
+static_assert(sizeof(FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79) == 0x000010, "Wrong size on FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79");
 static_assert(offsetof(FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79, Result) == 0x000000, "Member 'FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79::Result' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79, ResultName) == 0x000008, "Member 'FortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79::ResultName' has a wrong offset!");
 
@@ -280,54 +280,54 @@ static_assert(offsetof(FortTwitchLogin_C_CenterActiveAuthButton, CallFunc_EqualE
 static_assert(offsetof(FortTwitchLogin_C_CenterActiveAuthButton, K2Node_Select_Default) == 0x000028, "Member 'FortTwitchLogin_C_CenterActiveAuthButton::K2Node_Select_Default' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.Fire SignIn Analytic
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct FortTwitchLogin_C_Fire_SignIn_Analytic final
 {
 public:
-	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue; // 0x0000(0x11821780)()
-	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue; // 0x0020(0x11821780)()
+	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue; // 0x0000(0x0020)()
+	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue; // 0x0020(0x0020)()
 	TArray<struct FFortAnalyticsEventAttribute>   K2Node_MakeArray_Array;                            // 0x0040(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(FortTwitchLogin_C_Fire_SignIn_Analytic) == 0x11821780, "Wrong alignment on FortTwitchLogin_C_Fire_SignIn_Analytic");
-static_assert(sizeof(FortTwitchLogin_C_Fire_SignIn_Analytic) == 0x11821780, "Wrong size on FortTwitchLogin_C_Fire_SignIn_Analytic");
+static_assert(alignof(FortTwitchLogin_C_Fire_SignIn_Analytic) == 0x000008, "Wrong alignment on FortTwitchLogin_C_Fire_SignIn_Analytic");
+static_assert(sizeof(FortTwitchLogin_C_Fire_SignIn_Analytic) == 0x000050, "Wrong size on FortTwitchLogin_C_Fire_SignIn_Analytic");
 static_assert(offsetof(FortTwitchLogin_C_Fire_SignIn_Analytic, CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue) == 0x000000, "Member 'FortTwitchLogin_C_Fire_SignIn_Analytic::CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Fire_SignIn_Analytic, CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue) == 0x000020, "Member 'FortTwitchLogin_C_Fire_SignIn_Analytic::CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Fire_SignIn_Analytic, K2Node_MakeArray_Array) == 0x000040, "Member 'FortTwitchLogin_C_Fire_SignIn_Analytic::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.Fire Logged In Analytic
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FortTwitchLogin_C_Fire_Logged_In_Analytic final
 {
 public:
-	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue; // 0x0000(0x11821780)()
-	struct FFortAnalyticsEventAttribute           CallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue; // 0x0020(0x11821780)()
-	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue; // 0x0040(0x11821780)()
+	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue; // 0x0000(0x0020)()
+	struct FFortAnalyticsEventAttribute           CallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue; // 0x0020(0x0020)()
+	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue; // 0x0040(0x0020)()
 	TArray<struct FFortAnalyticsEventAttribute>   K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(FortTwitchLogin_C_Fire_Logged_In_Analytic) == 0x11821780, "Wrong alignment on FortTwitchLogin_C_Fire_Logged_In_Analytic");
-static_assert(sizeof(FortTwitchLogin_C_Fire_Logged_In_Analytic) == 0x11821780, "Wrong size on FortTwitchLogin_C_Fire_Logged_In_Analytic");
+static_assert(alignof(FortTwitchLogin_C_Fire_Logged_In_Analytic) == 0x000008, "Wrong alignment on FortTwitchLogin_C_Fire_Logged_In_Analytic");
+static_assert(sizeof(FortTwitchLogin_C_Fire_Logged_In_Analytic) == 0x000070, "Wrong size on FortTwitchLogin_C_Fire_Logged_In_Analytic");
 static_assert(offsetof(FortTwitchLogin_C_Fire_Logged_In_Analytic, CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue) == 0x000000, "Member 'FortTwitchLogin_C_Fire_Logged_In_Analytic::CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Fire_Logged_In_Analytic, CallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue) == 0x000020, "Member 'FortTwitchLogin_C_Fire_Logged_In_Analytic::CallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Fire_Logged_In_Analytic, CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue) == 0x000040, "Member 'FortTwitchLogin_C_Fire_Logged_In_Analytic::CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Fire_Logged_In_Analytic, K2Node_MakeArray_Array) == 0x000060, "Member 'FortTwitchLogin_C_Fire_Logged_In_Analytic::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.Build Player Name Analytic Attribute
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute final
 {
 public:
-	struct FFortAnalyticsEventAttribute           ReturnValue;                                       // 0x0000(0x11821780)(Parm, OutParm, ReturnParm)
+	struct FFortAnalyticsEventAttribute           ReturnValue;                                       // 0x0000(0x0020)(Parm, OutParm, ReturnParm)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0038(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0038(0x0018)(HasGetValueTypeHash)
 	class UFortRegisteredPlayerInfo*              CallFunc_GetPlayerInfoFromUniqueID_ReturnValue;    // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0068(0x11821780)()
+	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0068(0x0020)()
 };
-static_assert(alignof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute) == 0x11821780, "Wrong alignment on FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute");
-static_assert(sizeof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute) == 0x11821780, "Wrong size on FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute");
+static_assert(alignof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute) == 0x000008, "Wrong alignment on FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute");
+static_assert(sizeof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute) == 0x000088, "Wrong size on FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute");
 static_assert(offsetof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute, ReturnValue) == 0x000000, "Member 'FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute::ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000028, "Member 'FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
@@ -338,38 +338,38 @@ static_assert(offsetof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute, C
 static_assert(offsetof(FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute, CallFunc_ConstructAnalyticsAttribute_ReturnValue) == 0x000068, "Member 'FortTwitchLogin_C_Build_Player_Name_Analytic_Attribute::CallFunc_ConstructAnalyticsAttribute_ReturnValue' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.Build Twitch Name Analytic Attribute
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute final
 {
 public:
-	struct FFortAnalyticsEventAttribute           ReturnValue;                                       // 0x0000(0x11821780)(Parm, OutParm, ReturnParm)
+	struct FFortAnalyticsEventAttribute           ReturnValue;                                       // 0x0000(0x0020)(Parm, OutParm, ReturnParm)
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0020(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0048(0x11821780)()
+	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0048(0x0020)()
 };
-static_assert(alignof(FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute) == 0x11821780, "Wrong alignment on FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute");
-static_assert(sizeof(FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute) == 0x11821780, "Wrong size on FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute");
+static_assert(alignof(FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute) == 0x000008, "Wrong alignment on FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute");
+static_assert(sizeof(FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute) == 0x000068, "Wrong size on FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute");
 static_assert(offsetof(FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute, ReturnValue) == 0x000000, "Member 'FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute::ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute, CallFunc_GetText_ReturnValue) == 0x000020, "Member 'FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute::CallFunc_GetText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute, CallFunc_Conv_TextToString_ReturnValue) == 0x000038, "Member 'FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute, CallFunc_ConstructAnalyticsAttribute_ReturnValue) == 0x000048, "Member 'FortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute::CallFunc_ConstructAnalyticsAttribute_ReturnValue' has a wrong offset!");
 
 // Function FortTwitchLogin.FortTwitchLogin_C.Build Player Id Analytic Attribute
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute final
 {
 public:
-	struct FFortAnalyticsEventAttribute           ReturnValue;                                       // 0x0000(0x11821780)(Parm, OutParm, ReturnParm)
+	struct FFortAnalyticsEventAttribute           ReturnValue;                                       // 0x0000(0x0020)(Parm, OutParm, ReturnParm)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0038(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0038(0x0018)(HasGetValueTypeHash)
 	class FString                                 CallFunc_GetDebugStringForUniqueId_ReturnValue;    // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0060(0x11821780)()
+	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0060(0x0020)()
 };
-static_assert(alignof(FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute) == 0x11821780, "Wrong alignment on FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute");
-static_assert(sizeof(FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute) == 0x11821780, "Wrong size on FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute");
+static_assert(alignof(FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute) == 0x000008, "Wrong alignment on FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute");
+static_assert(sizeof(FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute) == 0x000080, "Wrong size on FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute");
 static_assert(offsetof(FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute, ReturnValue) == 0x000000, "Member 'FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute::ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000028, "Member 'FortTwitchLogin_C_Build_Player_Id_Analytic_Attribute::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");

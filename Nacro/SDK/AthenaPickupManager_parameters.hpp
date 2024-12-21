@@ -72,8 +72,8 @@ static_assert(offsetof(AthenaPickupManager_C_HandleWorldItemListChanged, ItemsAd
 static_assert(offsetof(AthenaPickupManager_C_HandleWorldItemListChanged, ItemsRemoved) == 0x000010, "Member 'AthenaPickupManager_C_HandleWorldItemListChanged::ItemsRemoved' has a wrong offset!");
 
 // Function AthenaPickupManager.AthenaPickupManager_C.TryGetNextItem
-// 0x6B0063 (0x6B0063 - 0x0000)
-struct alignas(0x6B0063) AthenaPickupManager_C_TryGetNextItem final
+// 0x0028 (0x0028 - 0x0000)
+struct AthenaPickupManager_C_TryGetNextItem final
 {
 public:
 	TDelegate<void(class UFortUIMessageItemWidget* MessageItem)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
@@ -83,8 +83,8 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaPickupManager_C_TryGetNextItem) == 0x6B0063, "Wrong alignment on AthenaPickupManager_C_TryGetNextItem");
-static_assert(sizeof(AthenaPickupManager_C_TryGetNextItem) == 0x6B0063, "Wrong size on AthenaPickupManager_C_TryGetNextItem");
+static_assert(alignof(AthenaPickupManager_C_TryGetNextItem) == 0x000008, "Wrong alignment on AthenaPickupManager_C_TryGetNextItem");
+static_assert(sizeof(AthenaPickupManager_C_TryGetNextItem) == 0x000028, "Wrong size on AthenaPickupManager_C_TryGetNextItem");
 static_assert(offsetof(AthenaPickupManager_C_TryGetNextItem, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaPickupManager_C_TryGetNextItem::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AthenaPickupManager_C_TryGetNextItem, CallFunc_GetNextMessageInQueue_ReturnValue) == 0x000010, "Member 'AthenaPickupManager_C_TryGetNextItem::CallFunc_GetNextMessageInQueue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaPickupManager_C_TryGetNextItem, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000018, "Member 'AthenaPickupManager_C_TryGetNextItem::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
@@ -132,13 +132,13 @@ static_assert(offsetof(AthenaPickupManager_C_HandleItemPickedUp, K2Node_DynamicC
 static_assert(offsetof(AthenaPickupManager_C_HandleItemPickedUp, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'AthenaPickupManager_C_HandleItemPickedUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaPickupManager.AthenaPickupManager_C.RefreshCounts
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0198 (0x0198 - 0x0000)
 struct AthenaPickupManager_C_RefreshCounts final
 {
 public:
 	float                                         BackpackFullPct;                                   // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            BackpackColor;                                     // 0x0008(0x322CBBB8)(Edit)
+	struct FSlateColor                            BackpackColor;                                     // 0x0008(0x0028)(Edit)
 	int32                                         Overflow_Items_Count;                              // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Max_Items_Count;                                   // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Items_Count;                                       // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -153,10 +153,10 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x0070(0x0018)()
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetRealTimeSeconds_ReturnValue;           // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0090(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color2;             // 0x00A0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0090(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color2;             // 0x00A0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00B8(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00B8(0x0090)()
 	int32                                         CallFunc_GetBackpackItemCounts_ItemsCount;         // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetBackpackItemCounts_MaxItemsCount;      // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetBackpackItemCounts_OverflowItemsCount; // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -164,12 +164,12 @@ public:
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0155(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0156(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_157[0x1];                                      // 0x0157(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0158(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0168(0x322CBBB8)()
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0158(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0168(0x0028)()
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue2;             // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaPickupManager_C_RefreshCounts) == 0x322CBBB8, "Wrong alignment on AthenaPickupManager_C_RefreshCounts");
-static_assert(sizeof(AthenaPickupManager_C_RefreshCounts) == 0x322CBBB8, "Wrong size on AthenaPickupManager_C_RefreshCounts");
+static_assert(alignof(AthenaPickupManager_C_RefreshCounts) == 0x000008, "Wrong alignment on AthenaPickupManager_C_RefreshCounts");
+static_assert(sizeof(AthenaPickupManager_C_RefreshCounts) == 0x000198, "Wrong size on AthenaPickupManager_C_RefreshCounts");
 static_assert(offsetof(AthenaPickupManager_C_RefreshCounts, BackpackFullPct) == 0x000000, "Member 'AthenaPickupManager_C_RefreshCounts::BackpackFullPct' has a wrong offset!");
 static_assert(offsetof(AthenaPickupManager_C_RefreshCounts, BackpackColor) == 0x000008, "Member 'AthenaPickupManager_C_RefreshCounts::BackpackColor' has a wrong offset!");
 static_assert(offsetof(AthenaPickupManager_C_RefreshCounts, Overflow_Items_Count) == 0x000030, "Member 'AthenaPickupManager_C_RefreshCounts::Overflow_Items_Count' has a wrong offset!");

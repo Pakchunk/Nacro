@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabBrightnessOptions.TabBrightnessOptions_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x02C8 - 0x0288)
 class UTabBrightnessOptions_C final : public UFortGameOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0288(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 BackgroundSurpress;                                // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOptionsMenuSlider_Light_C*             BrightnessValue;                                   // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       CommonTextBlock_0;                                 // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UTabBrightnessOptions_C>();
 	}
 };
-static_assert(alignof(UTabBrightnessOptions_C) == 0x322CBBB8, "Wrong alignment on UTabBrightnessOptions_C");
-static_assert(sizeof(UTabBrightnessOptions_C) == 0x322CBBB8, "Wrong size on UTabBrightnessOptions_C");
+static_assert(alignof(UTabBrightnessOptions_C) == 0x000008, "Wrong alignment on UTabBrightnessOptions_C");
+static_assert(sizeof(UTabBrightnessOptions_C) == 0x0002C8, "Wrong size on UTabBrightnessOptions_C");
 static_assert(offsetof(UTabBrightnessOptions_C, UberGraphFrame) == 0x000288, "Member 'UTabBrightnessOptions_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTabBrightnessOptions_C, BackgroundSurpress) == 0x000290, "Member 'UTabBrightnessOptions_C::BackgroundSurpress' has a wrong offset!");
 static_assert(offsetof(UTabBrightnessOptions_C, BrightnessValue) == 0x000298, "Member 'UTabBrightnessOptions_C::BrightnessValue' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementModeDetailsPanel.ItemManagementModeDetailsPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0270 - 0x0268)
 class UItemManagementModeDetailsPanel_C final : public UFortItemManagementModeDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_ItemManagementModeDetailsPanel(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementModeDetailsPanel_C>();
 	}
 };
-static_assert(alignof(UItemManagementModeDetailsPanel_C) == 0x322CBBB8, "Wrong alignment on UItemManagementModeDetailsPanel_C");
-static_assert(sizeof(UItemManagementModeDetailsPanel_C) == 0x322CBBB8, "Wrong size on UItemManagementModeDetailsPanel_C");
+static_assert(alignof(UItemManagementModeDetailsPanel_C) == 0x000008, "Wrong alignment on UItemManagementModeDetailsPanel_C");
+static_assert(sizeof(UItemManagementModeDetailsPanel_C) == 0x000270, "Wrong size on UItemManagementModeDetailsPanel_C");
 static_assert(offsetof(UItemManagementModeDetailsPanel_C, UberGraphFrame) == 0x000268, "Member 'UItemManagementModeDetailsPanel_C::UberGraphFrame' has a wrong offset!");
 
 }

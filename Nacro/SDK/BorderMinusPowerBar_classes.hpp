@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-PowerBar.Border-PowerBar_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusPowerBar_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusPowerBar_C>();
 	}
 };
-static_assert(alignof(UBorderMinusPowerBar_C) == 0x11827900, "Wrong alignment on UBorderMinusPowerBar_C");
-static_assert(sizeof(UBorderMinusPowerBar_C) == 0x11827900, "Wrong size on UBorderMinusPowerBar_C");
+static_assert(alignof(UBorderMinusPowerBar_C) == 0x000008, "Wrong alignment on UBorderMinusPowerBar_C");
+static_assert(sizeof(UBorderMinusPowerBar_C) == 0x0000B8, "Wrong size on UBorderMinusPowerBar_C");
 
 }
 

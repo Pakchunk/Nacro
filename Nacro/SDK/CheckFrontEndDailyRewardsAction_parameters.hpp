@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.ExecuteUbergraph_CheckFrontEndDailyRewardsAction
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction final
 {
 public:
@@ -29,10 +29,10 @@ public:
 	bool                                          CallFunc_IsDailyRewardAvailable_ReturnValue;       // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortScriptedActionParams              K2Node_Event_Params;                               // 0x0018(0x1182EB00)(ConstParm, NoDestructor)
+	struct FFortScriptedActionParams              K2Node_Event_Params;                               // 0x0018(0x0030)(ConstParm, NoDestructor)
 	class UObject*                                K2Node_HandleClientEvent_EventSource;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus;               // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x0058(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x0058(0x0020)(ConstParm, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPendingLogout_ReturnValue;              // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -54,8 +54,8 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x00AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction) == 0x11821780, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction");
-static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction) == 0x11821780, "Wrong size on CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction");
+static_assert(alignof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction) == 0x000008, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction");
+static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction) == 0x0000B0, "Wrong size on CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, EntryPoint) == 0x000000, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_IsDailyRewardAvailable_OutMinutesUntilNextReward) == 0x000010, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_IsDailyRewardAvailable_OutMinutesUntilNextReward' has a wrong offset!");
@@ -85,34 +85,34 @@ static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckF
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction, CallFunc_Not_PreBool_ReturnValue2) == 0x0000AE, "Member 'CheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
 
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.HandleClientEvent_FinishedModalQueue
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue) == 0x11821780, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue");
-static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue) == 0x11821780, "Wrong size on CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue");
+static_assert(alignof(CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue) == 0x000008, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue");
+static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue) == 0x000030, "Wrong size on CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue, EventSource) == 0x000000, "Member 'CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue::EventSource' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue, EventFocus) == 0x000008, "Member 'CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue::EventFocus' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue, ClientEvent) == 0x000010, "Member 'CheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue::ClientEvent' has a wrong offset!");
 
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.Execute
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct CheckFrontEndDailyRewardsAction_C_Execute final
 {
 public:
-	struct FFortScriptedActionParams              Params_0;                                          // 0x0000(0x1182EB00)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortScriptedActionParams              Params_0;                                          // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(CheckFrontEndDailyRewardsAction_C_Execute) == 0x11821780, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_Execute");
-static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_Execute) == 0x11821780, "Wrong size on CheckFrontEndDailyRewardsAction_C_Execute");
+static_assert(alignof(CheckFrontEndDailyRewardsAction_C_Execute) == 0x000008, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_Execute");
+static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_Execute) == 0x000030, "Wrong size on CheckFrontEndDailyRewardsAction_C_Execute");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_Execute, Params_0) == 0x000000, "Member 'CheckFrontEndDailyRewardsAction_C_Execute::Params_0' has a wrong offset!");
 
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.ShowDailyRewards
-// 0x005D (0x005D - 0x0000)
-struct alignas(0x1F) CheckFrontEndDailyRewardsAction_C_ShowDailyRewards final
+// 0x0048 (0x0048 - 0x0000)
+struct CheckFrontEndDailyRewardsAction_C_ShowDailyRewards final
 {
 public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -125,8 +125,8 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards) == 0x00001F, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_ShowDailyRewards");
-static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards) == 0x00005D, "Wrong size on CheckFrontEndDailyRewardsAction_C_ShowDailyRewards");
+static_assert(alignof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards) == 0x000008, "Wrong alignment on CheckFrontEndDailyRewardsAction_C_ShowDailyRewards");
+static_assert(sizeof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards) == 0x000048, "Wrong size on CheckFrontEndDailyRewardsAction_C_ShowDailyRewards");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(CheckFrontEndDailyRewardsAction_C_ShowDailyRewards, CallFunc_GetCachedWidget_ReturnValue) == 0x000018, "Member 'CheckFrontEndDailyRewardsAction_C_ShowDailyRewards::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");

@@ -18,15 +18,15 @@ namespace SDK::Params
 {
 
 // Function PickupMessageItem.PickupMessageItem_C.ExecuteUbergraph_PickupMessageItem
-// 0x740065 (0x740065 - 0x0000)
-struct alignas(0x740065) PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem final
+// 0x0008 (0x0008 - 0x0000)
+struct PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_OldStackSize;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem) == 0x740065, "Wrong alignment on PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem");
-static_assert(sizeof(PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem) == 0x740065, "Wrong size on PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem");
+static_assert(alignof(PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem) == 0x000004, "Wrong alignment on PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem");
+static_assert(sizeof(PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem) == 0x000008, "Wrong size on PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem");
 static_assert(offsetof(PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem, EntryPoint) == 0x000000, "Member 'PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem, K2Node_Event_OldStackSize) == 0x000004, "Member 'PickupMessageItem_C_ExecuteUbergraph_PickupMessageItem::K2Node_Event_OldStackSize' has a wrong offset!");
 
@@ -61,16 +61,16 @@ static_assert(offsetof(PickupMessageItem_C_Refresh_Count, CallFunc_Greater_IntIn
 static_assert(offsetof(PickupMessageItem_C_Refresh_Count, K2Node_Select_Default) == 0x000004, "Member 'PickupMessageItem_C_Refresh_Count::K2Node_Select_Default' has a wrong offset!");
 
 // Function PickupMessageItem.PickupMessageItem_C.Setup
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct PickupMessageItem_C_Setup final
 {
 public:
 	class UFortItem*                              Picked_Up_Item_0;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0008(0x0018)()
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0020(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0020(0x0090)()
 };
-static_assert(alignof(PickupMessageItem_C_Setup) == 0x11827900, "Wrong alignment on PickupMessageItem_C_Setup");
-static_assert(sizeof(PickupMessageItem_C_Setup) == 0x11827900, "Wrong size on PickupMessageItem_C_Setup");
+static_assert(alignof(PickupMessageItem_C_Setup) == 0x000008, "Wrong alignment on PickupMessageItem_C_Setup");
+static_assert(sizeof(PickupMessageItem_C_Setup) == 0x0000B0, "Wrong size on PickupMessageItem_C_Setup");
 static_assert(offsetof(PickupMessageItem_C_Setup, Picked_Up_Item_0) == 0x000000, "Member 'PickupMessageItem_C_Setup::Picked_Up_Item_0' has a wrong offset!");
 static_assert(offsetof(PickupMessageItem_C_Setup, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'PickupMessageItem_C_Setup::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PickupMessageItem_C_Setup, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000020, "Member 'PickupMessageItem_C_Setup::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");

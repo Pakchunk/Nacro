@@ -107,17 +107,17 @@ static_assert(offsetof(DefaultObjectiveContentWidget_C_Setup, Objective) == 0x00
 static_assert(offsetof(DefaultObjectiveContentWidget_C_Setup, bInConfigureAsHUD) == 0x000008, "Member 'DefaultObjectiveContentWidget_C_Setup::bInConfigureAsHUD' has a wrong offset!");
 
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.Update
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct DefaultObjectiveContentWidget_C_Update final
 {
 public:
 	class FText                                   TimerText;                                         // 0x0000(0x0018)(Edit)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0028(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0028(0x0008)(NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_GetEmptyText_ReturnValue;                 // 0x0078(0x0018)()
 	class UFortMissionTimerComponent*             CallFunc_GetTimerComponent_ReturnValue;            // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMissionRichText_C*                     CallFunc_GetRichTextBlock_MissionRichTextBlock;    // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -127,7 +127,7 @@ public:
 	class FText                                   CallFunc_GetTimeText_ReturnValue;                  // 0x00A8(0x0018)()
 	bool                                          CallFunc_IsTimerVisible_ReturnValue;               // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C8(0x0040)(HasGetValueTypeHash)
 	float                                         CallFunc_GetMissionTimerTimeRemaining_ReturnValue; // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0110(0x0010)(ZeroConstructor, ReferenceParm)
@@ -137,12 +137,12 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetObjectiveDisplayString_ReturnValue;    // 0x0148(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0160(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0160(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x01A0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x01B0(0x0018)()
 };
-static_assert(alignof(DefaultObjectiveContentWidget_C_Update) == 0x11821D80, "Wrong alignment on DefaultObjectiveContentWidget_C_Update");
-static_assert(sizeof(DefaultObjectiveContentWidget_C_Update) == 0x11821D80, "Wrong size on DefaultObjectiveContentWidget_C_Update");
+static_assert(alignof(DefaultObjectiveContentWidget_C_Update) == 0x000008, "Wrong alignment on DefaultObjectiveContentWidget_C_Update");
+static_assert(sizeof(DefaultObjectiveContentWidget_C_Update) == 0x0001C8, "Wrong size on DefaultObjectiveContentWidget_C_Update");
 static_assert(offsetof(DefaultObjectiveContentWidget_C_Update, TimerText) == 0x000000, "Member 'DefaultObjectiveContentWidget_C_Update::TimerText' has a wrong offset!");
 static_assert(offsetof(DefaultObjectiveContentWidget_C_Update, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'DefaultObjectiveContentWidget_C_Update::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(DefaultObjectiveContentWidget_C_Update, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000028, "Member 'DefaultObjectiveContentWidget_C_Update::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
@@ -218,8 +218,8 @@ static_assert(sizeof(DefaultObjectiveContentWidget_C_HandleTimerComponentUpdated
 static_assert(offsetof(DefaultObjectiveContentWidget_C_HandleTimerComponentUpdated, InTimerComponent) == 0x000000, "Member 'DefaultObjectiveContentWidget_C_HandleTimerComponentUpdated::InTimerComponent' has a wrong offset!");
 
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.GetHeightEstimate
-// 0x0512 (0x0512 - 0x0000)
-struct alignas(0x512) DefaultObjectiveContentWidget_C_GetHeightEstimate final
+// 0x0030 (0x0030 - 0x0000)
+struct DefaultObjectiveContentWidget_C_GetHeightEstimate final
 {
 public:
 	float                                         Height;                                            // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -235,8 +235,8 @@ public:
 	float                                         CallFunc_GetMissionHUDTextLineHeightEstimate_ReturnValue; // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DefaultObjectiveContentWidget_C_GetHeightEstimate) == 0x000512, "Wrong alignment on DefaultObjectiveContentWidget_C_GetHeightEstimate");
-static_assert(sizeof(DefaultObjectiveContentWidget_C_GetHeightEstimate) == 0x000512, "Wrong size on DefaultObjectiveContentWidget_C_GetHeightEstimate");
+static_assert(alignof(DefaultObjectiveContentWidget_C_GetHeightEstimate) == 0x000008, "Wrong alignment on DefaultObjectiveContentWidget_C_GetHeightEstimate");
+static_assert(sizeof(DefaultObjectiveContentWidget_C_GetHeightEstimate) == 0x000030, "Wrong size on DefaultObjectiveContentWidget_C_GetHeightEstimate");
 static_assert(offsetof(DefaultObjectiveContentWidget_C_GetHeightEstimate, Height) == 0x000000, "Member 'DefaultObjectiveContentWidget_C_GetHeightEstimate::Height' has a wrong offset!");
 static_assert(offsetof(DefaultObjectiveContentWidget_C_GetHeightEstimate, HeightEstimate) == 0x000004, "Member 'DefaultObjectiveContentWidget_C_GetHeightEstimate::HeightEstimate' has a wrong offset!");
 static_assert(offsetof(DefaultObjectiveContentWidget_C_GetHeightEstimate, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'DefaultObjectiveContentWidget_C_GetHeightEstimate::CallFunc_IsValid_ReturnValue' has a wrong offset!");

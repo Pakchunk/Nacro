@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DailyRewardsEpic.DailyRewardsEpic_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0298 - 0x0248)
 class UDailyRewardsEpic_C final : public UFortDailyRewardsItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
 	class UCommonNumericTextBlock*                DayNumber;                                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortMultiSizeItemCard*                 FortItemCard;                                      // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_Item_Flare;                                  // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UDailyRewardsEpic_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsEpic_C) == 0x322CBBB8, "Wrong alignment on UDailyRewardsEpic_C");
-static_assert(sizeof(UDailyRewardsEpic_C) == 0x322CBBB8, "Wrong size on UDailyRewardsEpic_C");
+static_assert(alignof(UDailyRewardsEpic_C) == 0x000008, "Wrong alignment on UDailyRewardsEpic_C");
+static_assert(sizeof(UDailyRewardsEpic_C) == 0x000298, "Wrong size on UDailyRewardsEpic_C");
 static_assert(offsetof(UDailyRewardsEpic_C, UberGraphFrame) == 0x000248, "Member 'UDailyRewardsEpic_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsEpic_C, DayNumber) == 0x000250, "Member 'UDailyRewardsEpic_C::DayNumber' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsEpic_C, FortItemCard) == 0x000258, "Member 'UDailyRewardsEpic_C::FortItemCard' has a wrong offset!");

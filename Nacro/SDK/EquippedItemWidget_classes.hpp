@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass EquippedItemWidget.EquippedItemWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02D0 - 0x0260)
 class UEquippedItemWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 _Image__AmmoIcon;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__ResourceIcon;                              // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__Separator;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -68,8 +68,8 @@ public:
 		return GetDefaultObjImpl<UEquippedItemWidget_C>();
 	}
 };
-static_assert(alignof(UEquippedItemWidget_C) == 0x322CBBB8, "Wrong alignment on UEquippedItemWidget_C");
-static_assert(sizeof(UEquippedItemWidget_C) == 0x322CBBB8, "Wrong size on UEquippedItemWidget_C");
+static_assert(alignof(UEquippedItemWidget_C) == 0x000008, "Wrong alignment on UEquippedItemWidget_C");
+static_assert(sizeof(UEquippedItemWidget_C) == 0x0002D0, "Wrong size on UEquippedItemWidget_C");
 static_assert(offsetof(UEquippedItemWidget_C, UberGraphFrame) == 0x000260, "Member 'UEquippedItemWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UEquippedItemWidget_C, _Image__AmmoIcon) == 0x000268, "Member 'UEquippedItemWidget_C::_Image__AmmoIcon' has a wrong offset!");
 static_assert(offsetof(UEquippedItemWidget_C, _Image__ResourceIcon) == 0x000270, "Member 'UEquippedItemWidget_C::_Image__ResourceIcon' has a wrong offset!");

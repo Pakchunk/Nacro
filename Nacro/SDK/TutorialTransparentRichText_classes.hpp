@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TutorialTransparentRichText.TutorialTransparentRichText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UTutorialTransparentRichText_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UFortRichTextBlock*                     FortRichTextBlock_0;                               // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   Text;                                              // 0x0248(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UTutorialTransparentRichText_C>();
 	}
 };
-static_assert(alignof(UTutorialTransparentRichText_C) == 0x322CBBB8, "Wrong alignment on UTutorialTransparentRichText_C");
-static_assert(sizeof(UTutorialTransparentRichText_C) == 0x322CBBB8, "Wrong size on UTutorialTransparentRichText_C");
+static_assert(alignof(UTutorialTransparentRichText_C) == 0x000008, "Wrong alignment on UTutorialTransparentRichText_C");
+static_assert(sizeof(UTutorialTransparentRichText_C) == 0x000260, "Wrong size on UTutorialTransparentRichText_C");
 static_assert(offsetof(UTutorialTransparentRichText_C, UberGraphFrame) == 0x000238, "Member 'UTutorialTransparentRichText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTutorialTransparentRichText_C, FortRichTextBlock_0) == 0x000240, "Member 'UTutorialTransparentRichText_C::FortRichTextBlock_0' has a wrong offset!");
 static_assert(offsetof(UTutorialTransparentRichText_C, Text) == 0x000248, "Member 'UTutorialTransparentRichText_C::Text' has a wrong offset!");

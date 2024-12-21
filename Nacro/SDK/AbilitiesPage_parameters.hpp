@@ -19,14 +19,14 @@ namespace SDK::Params
 {
 
 // Function AbilitiesPage.AbilitiesPage_C.ExecuteUbergraph_AbilitiesPage
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0018(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0018(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UCommonButtonGroup*                     CallFunc_SpawnObject_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UCommonButton* AssociatedButton, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
@@ -44,14 +44,14 @@ public:
 	class UCommonButton*                          CallFunc_GetButtonAtIndex_ReturnValue2;            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x00A8(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x00A8(0x0010)(NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x00D0(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x00D0(0x0010)(NoDestructor)
 };
-static_assert(alignof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage) == 0x1182EB00, "Wrong alignment on AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage");
-static_assert(sizeof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage) == 0x1182EB00, "Wrong size on AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage");
+static_assert(alignof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage) == 0x000008, "Wrong alignment on AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage");
+static_assert(sizeof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage) == 0x0000E0, "Wrong size on AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage");
 static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, EntryPoint) == 0x000000, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_MakeStruct_DataTableRowHandle) == 0x000018, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
@@ -75,14 +75,14 @@ static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_Cr
 static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_MakeStruct_DataTableRowHandle3) == 0x0000D0, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_MakeStruct_DataTableRowHandle3' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.OnQuickbarContentsChanged
-// 0x001F (0x001F - 0x0000)
-struct alignas(0x1F) AbilitiesPage_C_OnQuickbarContentsChanged final
+// 0x0001 (0x0001 - 0x0000)
+struct AbilitiesPage_C_OnQuickbarContentsChanged final
 {
 public:
 	EFortQuickBars                                QuickbarIndex;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AbilitiesPage_C_OnQuickbarContentsChanged) == 0x00001F, "Wrong alignment on AbilitiesPage_C_OnQuickbarContentsChanged");
-static_assert(sizeof(AbilitiesPage_C_OnQuickbarContentsChanged) == 0x00001F, "Wrong size on AbilitiesPage_C_OnQuickbarContentsChanged");
+static_assert(alignof(AbilitiesPage_C_OnQuickbarContentsChanged) == 0x000001, "Wrong alignment on AbilitiesPage_C_OnQuickbarContentsChanged");
+static_assert(sizeof(AbilitiesPage_C_OnQuickbarContentsChanged) == 0x000001, "Wrong size on AbilitiesPage_C_OnQuickbarContentsChanged");
 static_assert(offsetof(AbilitiesPage_C_OnQuickbarContentsChanged, QuickbarIndex) == 0x000000, "Member 'AbilitiesPage_C_OnQuickbarContentsChanged::QuickbarIndex' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.HandleBack
@@ -100,7 +100,7 @@ static_assert(offsetof(AbilitiesPage_C_HandleBack, PassThrough) == 0x000000, "Me
 static_assert(offsetof(AbilitiesPage_C_HandleBack, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AbilitiesPage_C_HandleBack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.OnAbilitySelected
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0270 (0x0270 - 0x0000)
 struct AbilitiesPage_C_OnAbilitySelected final
 {
 public:
@@ -123,29 +123,29 @@ public:
 	class FText                                   CallFunc_GetTooltipTextFromToken_OutText;          // 0x0070(0x0018)()
 	bool                                          CallFunc_GetTooltipTextFromToken_ReturnValue;      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0090(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0090(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetTooltipTextFromToken_OutText2;         // 0x00D8(0x0018)()
 	bool                                          CallFunc_GetTooltipTextFromToken_ReturnValue2;     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F2[0x6];                                       // 0x00F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00F8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00F8(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0140(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0140(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_GetCombinedDescription_OutDescription;    // 0x0180(0x0018)()
 	bool                                          CallFunc_GetCombinedDescription_ReturnValue;       // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_199[0x7];                                      // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01A0(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x01E0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01A0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x01E0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0220(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0230(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0240(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0258(0x0018)()
 };
-static_assert(alignof(AbilitiesPage_C_OnAbilitySelected) == 0x11821D80, "Wrong alignment on AbilitiesPage_C_OnAbilitySelected");
-static_assert(sizeof(AbilitiesPage_C_OnAbilitySelected) == 0x11821D80, "Wrong size on AbilitiesPage_C_OnAbilitySelected");
+static_assert(alignof(AbilitiesPage_C_OnAbilitySelected) == 0x000008, "Wrong alignment on AbilitiesPage_C_OnAbilitySelected");
+static_assert(sizeof(AbilitiesPage_C_OnAbilitySelected) == 0x000270, "Wrong size on AbilitiesPage_C_OnAbilitySelected");
 static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, AbilityButton) == 0x000000, "Member 'AbilitiesPage_C_OnAbilitySelected::AbilityButton' has a wrong offset!");
 static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_DynamicCast_AsAbilities_Page_Tile) == 0x000010, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_DynamicCast_AsAbilities_Page_Tile' has a wrong offset!");
@@ -229,7 +229,7 @@ static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_LessEqual
 static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.InitializeAbilityTiles
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01C0 (0x01C0 - 0x0000)
 struct AbilitiesPage_C_InitializeAbilityTiles final
 {
 public:
@@ -246,7 +246,7 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHeroManagementContext*             CallFunc_GetContext_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHeroUIData                            CallFunc_GetHeroData_HeroData;                     // 0x0050(0x1182E980)(NoDestructor)
+	struct FHeroUIData                            CallFunc_GetHeroData_HeroData;                     // 0x0050(0x0020)(NoDestructor)
 	bool                                          CallFunc_GetHeroData_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -262,7 +262,7 @@ public:
 	TArray<struct FFortUIPerk>                    CallFunc_GetHeroAbilityPerks_HeroAbilityPerks;     // 0x0098(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_GetHeroAbilityPerks_ReturnValue;          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIPerk                            CallFunc_Array_Get_Item2;                          // 0x00B0(0x1182E980)()
+	struct FFortUIPerk                            CallFunc_Array_Get_Item2;                          // 0x00B0(0x0088)()
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -288,8 +288,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AbilitiesPage_C_InitializeAbilityTiles) == 0x1182E980, "Wrong alignment on AbilitiesPage_C_InitializeAbilityTiles");
-static_assert(sizeof(AbilitiesPage_C_InitializeAbilityTiles) == 0x1182E980, "Wrong size on AbilitiesPage_C_InitializeAbilityTiles");
+static_assert(alignof(AbilitiesPage_C_InitializeAbilityTiles) == 0x000008, "Wrong alignment on AbilitiesPage_C_InitializeAbilityTiles");
+static_assert(sizeof(AbilitiesPage_C_InitializeAbilityTiles) == 0x0001C0, "Wrong size on AbilitiesPage_C_InitializeAbilityTiles");
 static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, SlottedGadgets) == 0x000000, "Member 'AbilitiesPage_C_InitializeAbilityTiles::SlottedGadgets' has a wrong offset!");
 static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, AvailableSlots) == 0x000010, "Member 'AbilitiesPage_C_InitializeAbilityTiles::AvailableSlots' has a wrong offset!");
 static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, Temp_int_Array_Index_Variable) == 0x000020, "Member 'AbilitiesPage_C_InitializeAbilityTiles::Temp_int_Array_Index_Variable' has a wrong offset!");

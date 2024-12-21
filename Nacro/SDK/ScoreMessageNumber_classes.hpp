@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ScoreMessageNumber.ScoreMessageNumber_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0268 - 0x0238)
 class UScoreMessageNumber_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       ScoreValue;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Score;                                             // 0x0248(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UScoreMessageNumber_C>();
 	}
 };
-static_assert(alignof(UScoreMessageNumber_C) == 0x322CBBB8, "Wrong alignment on UScoreMessageNumber_C");
-static_assert(sizeof(UScoreMessageNumber_C) == 0x322CBBB8, "Wrong size on UScoreMessageNumber_C");
+static_assert(alignof(UScoreMessageNumber_C) == 0x000008, "Wrong alignment on UScoreMessageNumber_C");
+static_assert(sizeof(UScoreMessageNumber_C) == 0x000268, "Wrong size on UScoreMessageNumber_C");
 static_assert(offsetof(UScoreMessageNumber_C, UberGraphFrame) == 0x000238, "Member 'UScoreMessageNumber_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UScoreMessageNumber_C, ScoreValue) == 0x000240, "Member 'UScoreMessageNumber_C::ScoreValue' has a wrong offset!");
 static_assert(offsetof(UScoreMessageNumber_C, Score) == 0x000248, "Member 'UScoreMessageNumber_C::Score' has a wrong offset!");

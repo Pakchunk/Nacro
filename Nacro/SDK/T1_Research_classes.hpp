@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SkillTreepAGEColors_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SkillTreepAGEColors_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
 
@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass T1_Research.T1_Research_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01E0 (0x0510 - 0x0330)
 class UT1_Research_C final : public UFortSkillTreePageWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          Background;                                        // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UDefaultSkillNode_C*                    DefaultSkillNode_C_1;                              // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UDefaultSkillNode_C*                    DefaultSkillNode_C_2;                              // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -59,7 +59,7 @@ public:
 	class UDefaultSkillNode_C*                    DefaultSkillNode_C_72;                             // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UDefaultSkillNode_C*                    DefaultSkillNode_C_73;                             // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UDefaultSkillNode_C*                    DefaultSkillNode_C_74;                             // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSkillTreePageColors                   PageColors;                                        // 0x0450(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FSkillTreePageColors                   PageColors;                                        // 0x0450(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_T1_Research(int32 EntryPoint);
@@ -76,8 +76,8 @@ public:
 		return GetDefaultObjImpl<UT1_Research_C>();
 	}
 };
-static_assert(alignof(UT1_Research_C) == 0x322CBBB8, "Wrong alignment on UT1_Research_C");
-static_assert(sizeof(UT1_Research_C) == 0x322CBBB8, "Wrong size on UT1_Research_C");
+static_assert(alignof(UT1_Research_C) == 0x000008, "Wrong alignment on UT1_Research_C");
+static_assert(sizeof(UT1_Research_C) == 0x000510, "Wrong size on UT1_Research_C");
 static_assert(offsetof(UT1_Research_C, UberGraphFrame) == 0x000330, "Member 'UT1_Research_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UT1_Research_C, Background) == 0x000338, "Member 'UT1_Research_C::Background' has a wrong offset!");
 static_assert(offsetof(UT1_Research_C, DefaultSkillNode_C_1) == 0x000340, "Member 'UT1_Research_C::DefaultSkillNode_C_1' has a wrong offset!");

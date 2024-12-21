@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemCountOverCost.ItemCountOverCost_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0290 - 0x0238)
 class UItemCountOverCost_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonNumericTextBlock*                CountText;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       DisplayName;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemIcon*                          IconLeft;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 		return GetDefaultObjImpl<UItemCountOverCost_C>();
 	}
 };
-static_assert(alignof(UItemCountOverCost_C) == 0x322CBBB8, "Wrong alignment on UItemCountOverCost_C");
-static_assert(sizeof(UItemCountOverCost_C) == 0x322CBBB8, "Wrong size on UItemCountOverCost_C");
+static_assert(alignof(UItemCountOverCost_C) == 0x000008, "Wrong alignment on UItemCountOverCost_C");
+static_assert(sizeof(UItemCountOverCost_C) == 0x000290, "Wrong size on UItemCountOverCost_C");
 static_assert(offsetof(UItemCountOverCost_C, UberGraphFrame) == 0x000238, "Member 'UItemCountOverCost_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemCountOverCost_C, CountText) == 0x000240, "Member 'UItemCountOverCost_C::CountText' has a wrong offset!");
 static_assert(offsetof(UItemCountOverCost_C, DisplayName) == 0x000248, "Member 'UItemCountOverCost_C::DisplayName' has a wrong offset!");

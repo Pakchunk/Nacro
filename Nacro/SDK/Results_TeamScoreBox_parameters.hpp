@@ -91,22 +91,22 @@ static_assert(sizeof(Results_TeamScoreBox_C_PreConstruct) == 0x000001, "Wrong si
 static_assert(offsetof(Results_TeamScoreBox_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_TeamScoreBox_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_TeamScoreBox.Results_TeamScoreBox_C.InitializeScoreType
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x03F8 (0x03F8 - 0x0000)
 struct Results_TeamScoreBox_C_InitializeScoreType final
 {
 public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Text;                                              // 0x0018(0x0018)(Edit)
-	struct FFortScoreStylingInfo                  CallFunc_GetScoreStylingData_ScoreStylingInfo;     // 0x0030(0x11821780)()
+	struct FFortScoreStylingInfo                  CallFunc_GetScoreStylingData_ScoreStylingInfo;     // 0x0030(0x0388)()
 	bool                                          CallFunc_GetScoreStylingData_ReturnValue;          // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3B9[0x7];                                      // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x03C0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x03C0(0x0028)()
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamScoreBox_C_InitializeScoreType) == 0x322CBBB8, "Wrong alignment on Results_TeamScoreBox_C_InitializeScoreType");
-static_assert(sizeof(Results_TeamScoreBox_C_InitializeScoreType) == 0x322CBBB8, "Wrong size on Results_TeamScoreBox_C_InitializeScoreType");
+static_assert(alignof(Results_TeamScoreBox_C_InitializeScoreType) == 0x000008, "Wrong alignment on Results_TeamScoreBox_C_InitializeScoreType");
+static_assert(sizeof(Results_TeamScoreBox_C_InitializeScoreType) == 0x0003F8, "Wrong size on Results_TeamScoreBox_C_InitializeScoreType");
 static_assert(offsetof(Results_TeamScoreBox_C_InitializeScoreType, Texture) == 0x000000, "Member 'Results_TeamScoreBox_C_InitializeScoreType::Texture' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_InitializeScoreType, Color) == 0x000008, "Member 'Results_TeamScoreBox_C_InitializeScoreType::Color' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_InitializeScoreType, Text) == 0x000018, "Member 'Results_TeamScoreBox_C_InitializeScoreType::Text' has a wrong offset!");
@@ -135,27 +135,27 @@ static_assert(offsetof(Results_TeamScoreBox_C_Initialize, PlayRate_0) == 0x00000
 static_assert(offsetof(Results_TeamScoreBox_C_Initialize, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'Results_TeamScoreBox_C_Initialize::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamScoreBox.Results_TeamScoreBox_C.FlashTextType
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct Results_TeamScoreBox_C_FlashTextType final
 {
 public:
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 };
-static_assert(alignof(Results_TeamScoreBox_C_FlashTextType) == 0x11821D80, "Wrong alignment on Results_TeamScoreBox_C_FlashTextType");
-static_assert(sizeof(Results_TeamScoreBox_C_FlashTextType) == 0x11821D80, "Wrong size on Results_TeamScoreBox_C_FlashTextType");
+static_assert(alignof(Results_TeamScoreBox_C_FlashTextType) == 0x000008, "Wrong alignment on Results_TeamScoreBox_C_FlashTextType");
+static_assert(sizeof(Results_TeamScoreBox_C_FlashTextType) == 0x000020, "Wrong size on Results_TeamScoreBox_C_FlashTextType");
 static_assert(offsetof(Results_TeamScoreBox_C_FlashTextType, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000000, "Member 'Results_TeamScoreBox_C_FlashTextType::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_FlashTextType, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Results_TeamScoreBox_C_FlashTextType::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_FlashTextType, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'Results_TeamScoreBox_C_FlashTextType::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamScoreBox.Results_TeamScoreBox_C.UpdateFlashTextType
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct Results_TeamScoreBox_C_UpdateFlashTextType final
 {
 public:
-	struct FLinearColor                           ColorWhite;                                        // 0x0000(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorWhite;                                        // 0x0000(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TimePassed;                                        // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -163,11 +163,11 @@ public:
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x0028)()
 };
-static_assert(alignof(Results_TeamScoreBox_C_UpdateFlashTextType) == 0x322CBBB8, "Wrong alignment on Results_TeamScoreBox_C_UpdateFlashTextType");
-static_assert(sizeof(Results_TeamScoreBox_C_UpdateFlashTextType) == 0x322CBBB8, "Wrong size on Results_TeamScoreBox_C_UpdateFlashTextType");
+static_assert(alignof(Results_TeamScoreBox_C_UpdateFlashTextType) == 0x000008, "Wrong alignment on Results_TeamScoreBox_C_UpdateFlashTextType");
+static_assert(sizeof(Results_TeamScoreBox_C_UpdateFlashTextType) == 0x000060, "Wrong size on Results_TeamScoreBox_C_UpdateFlashTextType");
 static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, ColorWhite) == 0x000000, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::ColorWhite' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, TimePassed) == 0x000010, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::TimePassed' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000014, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");

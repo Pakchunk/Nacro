@@ -46,17 +46,17 @@ static_assert(sizeof(PartyFinderListItem_C_ExpansionChanged) == 0x000001, "Wrong
 static_assert(offsetof(PartyFinderListItem_C_ExpansionChanged, bExpanded) == 0x000000, "Member 'PartyFinderListItem_C_ExpansionChanged::bExpanded' has a wrong offset!");
 
 // Function PartyFinderListItem.PartyFinderListItem_C.InitializeItem
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct PartyFinderListItem_C_InitializeItem final
 {
 public:
 	class FText                                   CallFunc_GetLocation_ReturnValue;                  // 0x0000(0x0018)()
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0018(0x0018)()
-	struct FUniqueNetIdRepl                       CallFunc_GetUniquePlayerId_ReturnValue;            // 0x0030(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniquePlayerId_ReturnValue;            // 0x0030(0x0018)(HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PartyFinderListItem_C_InitializeItem) == 0x11821780, "Wrong alignment on PartyFinderListItem_C_InitializeItem");
-static_assert(sizeof(PartyFinderListItem_C_InitializeItem) == 0x11821780, "Wrong size on PartyFinderListItem_C_InitializeItem");
+static_assert(alignof(PartyFinderListItem_C_InitializeItem) == 0x000008, "Wrong alignment on PartyFinderListItem_C_InitializeItem");
+static_assert(sizeof(PartyFinderListItem_C_InitializeItem) == 0x000050, "Wrong size on PartyFinderListItem_C_InitializeItem");
 static_assert(offsetof(PartyFinderListItem_C_InitializeItem, CallFunc_GetLocation_ReturnValue) == 0x000000, "Member 'PartyFinderListItem_C_InitializeItem::CallFunc_GetLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PartyFinderListItem_C_InitializeItem, CallFunc_GetDisplayName_ReturnValue) == 0x000018, "Member 'PartyFinderListItem_C_InitializeItem::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PartyFinderListItem_C_InitializeItem, CallFunc_GetUniquePlayerId_ReturnValue) == 0x000030, "Member 'PartyFinderListItem_C_InitializeItem::CallFunc_GetUniquePlayerId_ReturnValue' has a wrong offset!");
@@ -64,12 +64,12 @@ static_assert(offsetof(PartyFinderListItem_C_InitializeItem, K2Node_SwitchEnum_C
 
 // Function PartyFinderListItem.PartyFinderListItem_C.BindSocialItemDelegates
 // 0x0010 (0x0010 - 0x0000)
-struct PartyFinderListItem_C_BindSocialItemDelegates final
+struct alignas(0x08) PartyFinderListItem_C_BindSocialItemDelegates final
 {
 public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(PartyFinderListItem_C_BindSocialItemDelegates) == 0x000004, "Wrong alignment on PartyFinderListItem_C_BindSocialItemDelegates");
+static_assert(alignof(PartyFinderListItem_C_BindSocialItemDelegates) == 0x000008, "Wrong alignment on PartyFinderListItem_C_BindSocialItemDelegates");
 static_assert(sizeof(PartyFinderListItem_C_BindSocialItemDelegates) == 0x000010, "Wrong size on PartyFinderListItem_C_BindSocialItemDelegates");
 static_assert(offsetof(PartyFinderListItem_C_BindSocialItemDelegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'PartyFinderListItem_C_BindSocialItemDelegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
@@ -134,14 +134,14 @@ static_assert(offsetof(PartyFinderListItem_C_UpdateStateText, K2Node_SwitchEnum_
 static_assert(offsetof(PartyFinderListItem_C_UpdateStateText, K2Node_Select_Default) == 0x0000E8, "Member 'PartyFinderListItem_C_UpdateStateText::K2Node_Select_Default' has a wrong offset!");
 
 // Function PartyFinderListItem.PartyFinderListItem_C.UnbindSocialItemDelegates
-// 0x61751F80 (0x61751F80 - 0x0000)
-struct alignas(0x61751F80) PartyFinderListItem_C_UnbindSocialItemDelegates final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) PartyFinderListItem_C_UnbindSocialItemDelegates final
 {
 public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(PartyFinderListItem_C_UnbindSocialItemDelegates) == 0x61751F80, "Wrong alignment on PartyFinderListItem_C_UnbindSocialItemDelegates");
-static_assert(sizeof(PartyFinderListItem_C_UnbindSocialItemDelegates) == 0x61751F80, "Wrong size on PartyFinderListItem_C_UnbindSocialItemDelegates");
+static_assert(alignof(PartyFinderListItem_C_UnbindSocialItemDelegates) == 0x000008, "Wrong alignment on PartyFinderListItem_C_UnbindSocialItemDelegates");
+static_assert(sizeof(PartyFinderListItem_C_UnbindSocialItemDelegates) == 0x000010, "Wrong size on PartyFinderListItem_C_UnbindSocialItemDelegates");
 static_assert(offsetof(PartyFinderListItem_C_UnbindSocialItemDelegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'PartyFinderListItem_C_UnbindSocialItemDelegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 }

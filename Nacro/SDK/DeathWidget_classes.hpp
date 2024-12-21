@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DeathWidget.DeathWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B0 (0x02E8 - 0x0238)
 class UDeathWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       CommonTextBlock_PrimaryDeathText;                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       CommonTextBlockExtraLives;                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       CommonTextBlockRespawn;                            // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -37,11 +37,11 @@ public:
 	class UKeybindWidget_C*                       ResurrectBinding;                                  // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UButton*                                RightMouseBase;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           StartDeathBox;                                     // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           RespawnTimerHandle;                                // 0x02B0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           RespawnTimerHandle;                                // 0x02B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         ReleaseTimeRemaining;                              // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2BC[0x4];                                      // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReadyToRespawnText;                                // 0x02C0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FTimerHandle                           ShowExtraLivesTimerHandle;                         // 0x02D8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           ShowExtraLivesTimerHandle;                         // 0x02D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         ResurrectTimeRemaining;                            // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -64,8 +64,8 @@ public:
 		return GetDefaultObjImpl<UDeathWidget_C>();
 	}
 };
-static_assert(alignof(UDeathWidget_C) == 0x322CBBB8, "Wrong alignment on UDeathWidget_C");
-static_assert(sizeof(UDeathWidget_C) == 0x322CBBB8, "Wrong size on UDeathWidget_C");
+static_assert(alignof(UDeathWidget_C) == 0x000008, "Wrong alignment on UDeathWidget_C");
+static_assert(sizeof(UDeathWidget_C) == 0x0002E8, "Wrong size on UDeathWidget_C");
 static_assert(offsetof(UDeathWidget_C, UberGraphFrame) == 0x000238, "Member 'UDeathWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UDeathWidget_C, CommonTextBlock_PrimaryDeathText) == 0x000240, "Member 'UDeathWidget_C::CommonTextBlock_PrimaryDeathText' has a wrong offset!");
 static_assert(offsetof(UDeathWidget_C, CommonTextBlockExtraLives) == 0x000248, "Member 'UDeathWidget_C::CommonTextBlockExtraLives' has a wrong offset!");

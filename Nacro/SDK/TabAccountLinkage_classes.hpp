@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabAccountLinkage.TabAccountLinkage_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0298 - 0x0248)
 class UTabAccountLinkage_C final : public UFortAccountOptions
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       AccountLinkText;                                   // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  ConfigurationSwitcher;                             // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         DefaultConfigurationBox;                           // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -59,8 +59,8 @@ public:
 		return GetDefaultObjImpl<UTabAccountLinkage_C>();
 	}
 };
-static_assert(alignof(UTabAccountLinkage_C) == 0x322CBBB8, "Wrong alignment on UTabAccountLinkage_C");
-static_assert(sizeof(UTabAccountLinkage_C) == 0x322CBBB8, "Wrong size on UTabAccountLinkage_C");
+static_assert(alignof(UTabAccountLinkage_C) == 0x000008, "Wrong alignment on UTabAccountLinkage_C");
+static_assert(sizeof(UTabAccountLinkage_C) == 0x000298, "Wrong size on UTabAccountLinkage_C");
 static_assert(offsetof(UTabAccountLinkage_C, UberGraphFrame) == 0x000248, "Member 'UTabAccountLinkage_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTabAccountLinkage_C, AccountLinkText) == 0x000250, "Member 'UTabAccountLinkage_C::AccountLinkText' has a wrong offset!");
 static_assert(offsetof(UTabAccountLinkage_C, ConfigurationSwitcher) == 0x000258, "Member 'UTabAccountLinkage_C::ConfigurationSwitcher' has a wrong offset!");

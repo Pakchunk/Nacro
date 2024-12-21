@@ -19,16 +19,16 @@ namespace SDK::Params
 {
 
 // Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.ExecuteUbergraph_ItemDetailsHeaderTagListText
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0008(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0008(0x0080)()
 	class UFortItemDefinition*                    CallFunc_GetSchematicCraftingResultBP_ReturnValue; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0090(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0090(0x0028)()
 	class UFortWeaponItemDefinition*              K2Node_DynamicCast_AsFort_Weapon_Item_Definition;  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -36,8 +36,8 @@ public:
 	TArray<class FText>                           CallFunc_GetUserFriendlyTags_ReturnValue;          // 0x00D0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_FormatItemDisplayTags_FormatedText;       // 0x00E0(0x0018)()
 };
-static_assert(alignof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText) == 0x322CBBB8, "Wrong alignment on ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText");
-static_assert(sizeof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText) == 0x322CBBB8, "Wrong size on ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText");
+static_assert(alignof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText) == 0x000008, "Wrong alignment on ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText");
+static_assert(sizeof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText) == 0x0000F8, "Wrong size on ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText");
 static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, EntryPoint) == 0x000000, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_GetRarity_ReturnValue) == 0x000004, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_BPGetRarityData_ReturnValue) == 0x000008, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
@@ -50,7 +50,7 @@ static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetai
 static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_FormatItemDisplayTags_FormatedText) == 0x0000E0, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_FormatItemDisplayTags_FormatedText' has a wrong offset!");
 
 // Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.FormatItemDisplayTags
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct ItemDetailsHeaderTagListText_C_FormatItemDisplayTags final
 {
 public:
@@ -60,20 +60,20 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x0048(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00B0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00B0(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
 };
-static_assert(alignof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags) == 0x11821D80, "Wrong alignment on ItemDetailsHeaderTagListText_C_FormatItemDisplayTags");
-static_assert(sizeof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags) == 0x11821D80, "Wrong size on ItemDetailsHeaderTagListText_C_FormatItemDisplayTags");
+static_assert(alignof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags) == 0x000008, "Wrong alignment on ItemDetailsHeaderTagListText_C_FormatItemDisplayTags");
+static_assert(sizeof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags) == 0x000120, "Wrong size on ItemDetailsHeaderTagListText_C_FormatItemDisplayTags");
 static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, TagTexts) == 0x000000, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::TagTexts' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, FormatedText) == 0x000010, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::FormatedText' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, Result) == 0x000028, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::Result' has a wrong offset!");

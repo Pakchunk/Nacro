@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HeroSquadBonus.HeroSquadBonus_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0120 (0x03F0 - 0x02D0)
 class UHeroSquadBonus_C final : public UFortPerkWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       BonusPerkDescription;                              // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BonusPerkIcon;                                     // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       BonusPerkTitle;                                    // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -36,10 +36,10 @@ public:
 	class UImage*                                 ImageLock;                                         // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageSquadBonusType;                               // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageSquadBonusTypeShadow;                         // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            EmptyBrush;                                        // 0x0320(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            EmptyBrush;                                        // 0x0320(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   EmptyText;                                         // 0x03B0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   BonusPerkTItleText;                                // 0x03C8(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FVector2D                              Skill_Icon_Size;                                   // 0x03E0(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Skill_Icon_Size;                                   // 0x03E0(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortSupportBonusType                         SquadBonusType;                                    // 0x03E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UHeroSquadBonus_C>();
 	}
 };
-static_assert(alignof(UHeroSquadBonus_C) == 0x322CBBB8, "Wrong alignment on UHeroSquadBonus_C");
-static_assert(sizeof(UHeroSquadBonus_C) == 0x322CBBB8, "Wrong size on UHeroSquadBonus_C");
+static_assert(alignof(UHeroSquadBonus_C) == 0x000008, "Wrong alignment on UHeroSquadBonus_C");
+static_assert(sizeof(UHeroSquadBonus_C) == 0x0003F0, "Wrong size on UHeroSquadBonus_C");
 static_assert(offsetof(UHeroSquadBonus_C, UberGraphFrame) == 0x0002D0, "Member 'UHeroSquadBonus_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHeroSquadBonus_C, BonusPerkDescription) == 0x0002D8, "Member 'UHeroSquadBonus_C::BonusPerkDescription' has a wrong offset!");
 static_assert(offsetof(UHeroSquadBonus_C, BonusPerkIcon) == 0x0002E0, "Member 'UHeroSquadBonus_C::BonusPerkIcon' has a wrong offset!");

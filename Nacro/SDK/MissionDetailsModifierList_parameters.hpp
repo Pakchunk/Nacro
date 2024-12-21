@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function MissionDetailsModifierList.MissionDetailsModifierList_C.PopulateModifiers
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct MissionDetailsModifierList_C_PopulateModifiers final
 {
 public:
@@ -42,7 +42,7 @@ public:
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGameplayModifierItemDefinition*    CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              CallFunc_GetLargePreviewImage_ReturnValue;         // 0x0058(0x0020)(HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetSmallPreviewImageBrush_ReturnValue;    // 0x0078(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetSmallPreviewImageBrush_ReturnValue;    // 0x0078(0x0090)()
 	class FText                                   CallFunc_GetShortDescription_ReturnValue;          // 0x0108(0x0018)()
 	class UTexture2D*                             CallFunc_GetBrushResourceAsTexture2D_ReturnValue;  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0128(0x0018)()
@@ -59,7 +59,7 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0160(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0160(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01A0(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -73,13 +73,14 @@ public:
 	float                                         Temp_float_Variable;                               // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable2;                              // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select2_Default;                            // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x01E4(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x01E4(0x0010)(NoDestructor)
+	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMissionDetailsModifierRow_C*           CallFunc_Create_ReturnValue;                       // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionDetailsModifierList_C_PopulateModifiers) == 0x322CBBB8, "Wrong alignment on MissionDetailsModifierList_C_PopulateModifiers");
-static_assert(sizeof(MissionDetailsModifierList_C_PopulateModifiers) == 0x322CBBB8, "Wrong size on MissionDetailsModifierList_C_PopulateModifiers");
+static_assert(alignof(MissionDetailsModifierList_C_PopulateModifiers) == 0x000008, "Wrong alignment on MissionDetailsModifierList_C_PopulateModifiers");
+static_assert(sizeof(MissionDetailsModifierList_C_PopulateModifiers) == 0x000210, "Wrong size on MissionDetailsModifierList_C_PopulateModifiers");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, UseTrunctatedList) == 0x000000, "Member 'MissionDetailsModifierList_C_PopulateModifiers::UseTrunctatedList' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, NameTextStyle) == 0x000008, "Member 'MissionDetailsModifierList_C_PopulateModifiers::NameTextStyle' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, DescriptionTextStyle) == 0x000010, "Member 'MissionDetailsModifierList_C_PopulateModifiers::DescriptionTextStyle' has a wrong offset!");

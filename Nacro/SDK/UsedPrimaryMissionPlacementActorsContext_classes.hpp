@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass UsedPrimaryMissionPlacementActorsContext.UsedPrimaryMissionPlacementActorsContext_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0078 - 0x0078)
 class UUsedPrimaryMissionPlacementActorsContext_C final : public UUsedPlacementActorsContext_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UUsedPrimaryMissionPlacementActorsContext_C>();
 	}
 };
-static_assert(alignof(UUsedPrimaryMissionPlacementActorsContext_C) == 0x11821D80, "Wrong alignment on UUsedPrimaryMissionPlacementActorsContext_C");
-static_assert(sizeof(UUsedPrimaryMissionPlacementActorsContext_C) == 0x11821D80, "Wrong size on UUsedPrimaryMissionPlacementActorsContext_C");
+static_assert(alignof(UUsedPrimaryMissionPlacementActorsContext_C) == 0x000008, "Wrong alignment on UUsedPrimaryMissionPlacementActorsContext_C");
+static_assert(sizeof(UUsedPrimaryMissionPlacementActorsContext_C) == 0x000078, "Wrong size on UUsedPrimaryMissionPlacementActorsContext_C");
 
 }
 

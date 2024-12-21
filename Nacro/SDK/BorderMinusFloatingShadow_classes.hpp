@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-FloatingShadow.Border-FloatingShadow_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusFloatingShadow_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusFloatingShadow_C>();
 	}
 };
-static_assert(alignof(UBorderMinusFloatingShadow_C) == 0x11827900, "Wrong alignment on UBorderMinusFloatingShadow_C");
-static_assert(sizeof(UBorderMinusFloatingShadow_C) == 0x11827900, "Wrong size on UBorderMinusFloatingShadow_C");
+static_assert(alignof(UBorderMinusFloatingShadow_C) == 0x000008, "Wrong alignment on UBorderMinusFloatingShadow_C");
+static_assert(sizeof(UBorderMinusFloatingShadow_C) == 0x0000B8, "Wrong size on UBorderMinusFloatingShadow_C");
 
 }
 

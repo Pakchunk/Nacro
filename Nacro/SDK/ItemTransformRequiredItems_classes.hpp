@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformRequiredItems.ItemTransformRequiredItems_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0278 - 0x0238)
 class UItemTransformRequiredItems_C final : public UCommonUserWidget
 {
 public:
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformRequiredItems_C>();
 	}
 };
-static_assert(alignof(UItemTransformRequiredItems_C) == 0x322CBBB8, "Wrong alignment on UItemTransformRequiredItems_C");
-static_assert(sizeof(UItemTransformRequiredItems_C) == 0x322CBBB8, "Wrong size on UItemTransformRequiredItems_C");
+static_assert(alignof(UItemTransformRequiredItems_C) == 0x000008, "Wrong alignment on UItemTransformRequiredItems_C");
+static_assert(sizeof(UItemTransformRequiredItems_C) == 0x000278, "Wrong size on UItemTransformRequiredItems_C");
 static_assert(offsetof(UItemTransformRequiredItems_C, CheckMarkIcon) == 0x000238, "Member 'UItemTransformRequiredItems_C::CheckMarkIcon' has a wrong offset!");
 static_assert(offsetof(UItemTransformRequiredItems_C, CheckMarkSwitcher) == 0x000240, "Member 'UItemTransformRequiredItems_C::CheckMarkSwitcher' has a wrong offset!");
 static_assert(offsetof(UItemTransformRequiredItems_C, FailMarkIcon) == 0x000248, "Member 'UItemTransformRequiredItems_C::FailMarkIcon' has a wrong offset!");

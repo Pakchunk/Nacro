@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_PlayerScoreRow.Results_PlayerScoreRow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x02C0 - 0x0238)
 class UResults_PlayerScoreRow_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UBasicGradientFill_C*                   BasicGradientFill;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageCapLeft;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageCapRight;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -36,8 +36,8 @@ public:
 	class UCommonNumericTextBlock*                TextScoreMission;                                  // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                TextScoreTotal;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonNumericTextBlock*                TextScoreUtility;                                  // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FLinearColor                           PlayerNameColor;                                   // 0x0298(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           LocalPlayerNameColor;                              // 0x02A8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           PlayerNameColor;                                   // 0x0298(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           LocalPlayerNameColor;                              // 0x02A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsLocalPlayer;                                    // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
@@ -60,8 +60,8 @@ public:
 		return GetDefaultObjImpl<UResults_PlayerScoreRow_C>();
 	}
 };
-static_assert(alignof(UResults_PlayerScoreRow_C) == 0x322CBBB8, "Wrong alignment on UResults_PlayerScoreRow_C");
-static_assert(sizeof(UResults_PlayerScoreRow_C) == 0x322CBBB8, "Wrong size on UResults_PlayerScoreRow_C");
+static_assert(alignof(UResults_PlayerScoreRow_C) == 0x000008, "Wrong alignment on UResults_PlayerScoreRow_C");
+static_assert(sizeof(UResults_PlayerScoreRow_C) == 0x0002C0, "Wrong size on UResults_PlayerScoreRow_C");
 static_assert(offsetof(UResults_PlayerScoreRow_C, UberGraphFrame) == 0x000238, "Member 'UResults_PlayerScoreRow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_PlayerScoreRow_C, BasicGradientFill) == 0x000240, "Member 'UResults_PlayerScoreRow_C::BasicGradientFill' has a wrong offset!");
 static_assert(offsetof(UResults_PlayerScoreRow_C, ImageCapLeft) == 0x000248, "Member 'UResults_PlayerScoreRow_C::ImageCapLeft' has a wrong offset!");

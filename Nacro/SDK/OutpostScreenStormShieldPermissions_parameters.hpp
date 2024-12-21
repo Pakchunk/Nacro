@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.ExecuteUbergraph_OutpostScreenStormShieldPermissions
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions final
 {
 public:
@@ -30,14 +30,14 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFortTeamMemberInfo                    K2Node_CustomEvent_NewTeamMemberInfo;              // 0x0040(0x11827900)()
+	struct FFortTeamMemberInfo                    K2Node_CustomEvent_NewTeamMemberInfo;              // 0x0040(0x0190)()
 	int32                                         K2Node_CustomEvent_PlayerIndex;                    // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions) == 0x11821780, "Wrong alignment on OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions");
-static_assert(sizeof(OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions) == 0x11821780, "Wrong size on OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions");
+static_assert(alignof(OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions");
+static_assert(sizeof(OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions) == 0x0001E8, "Wrong size on OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions, EntryPoint) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions::EntryPoint' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions, K2Node_DynamicCast_AsFort_Player_Controller_Outpost) == 0x000010, "Member 'OutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions::K2Node_DynamicCast_AsFort_Player_Controller_Outpost' has a wrong offset!");
@@ -61,19 +61,19 @@ static_assert(sizeof(OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_1, PlayerIndex) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_1::PlayerIndex' has a wrong offset!");
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.UpdatePrivilagesEvent_0
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0 final
 {
 public:
-	struct FFortTeamMemberInfo                    NewTeamMemberInfo;                                 // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    NewTeamMemberInfo;                                 // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0) == 0x11821780, "Wrong alignment on OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0");
-static_assert(sizeof(OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0) == 0x11821780, "Wrong size on OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0");
+static_assert(alignof(OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0");
+static_assert(sizeof(OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0) == 0x000190, "Wrong size on OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0, NewTeamMemberInfo) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_0::NewTeamMemberInfo' has a wrong offset!");
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.isPlayerAlone
 // 0x0030 (0x0030 - 0x0000)
-struct alignas(0x0C) OutpostScreenStormShieldPermissions_C_IsPlayerAlone final
+struct OutpostScreenStormShieldPermissions_C_IsPlayerAlone final
 {
 public:
 	bool                                          IsAlone;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -84,7 +84,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone) == 0x00000C, "Wrong alignment on OutpostScreenStormShieldPermissions_C_IsPlayerAlone");
+static_assert(alignof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_IsPlayerAlone");
 static_assert(sizeof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone) == 0x000030, "Wrong size on OutpostScreenStormShieldPermissions_C_IsPlayerAlone");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone, IsAlone) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_IsPlayerAlone::IsAlone' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShieldPermissions_C_IsPlayerAlone::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -105,8 +105,8 @@ static_assert(sizeof(OutpostScreenStormShieldPermissions_C_UpdatePrivilages) == 
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_UpdatePrivilages, CallFunc_isPlayerAlone_isAlone) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_UpdatePrivilages::CallFunc_isPlayerAlone_isAlone' has a wrong offset!");
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.IsOwningPlayerOutpostOwner
-// 0x0089 (0x0089 - 0x0000)
-struct alignas(0x89) OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner final
+// 0x0020 (0x0020 - 0x0000)
+struct OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
@@ -116,8 +116,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsOutpostOwner_ReturnValue;               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner) == 0x000089, "Wrong alignment on OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner");
-static_assert(sizeof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner) == 0x000089, "Wrong size on OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner");
+static_assert(alignof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner");
+static_assert(sizeof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner) == 0x000020, "Wrong size on OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner, ReturnValue) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner::ReturnValue' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner, K2Node_DynamicCast_AsFort_Player_Controller_Outpost) == 0x000010, "Member 'OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner::K2Node_DynamicCast_AsFort_Player_Controller_Outpost' has a wrong offset!");
@@ -125,41 +125,41 @@ static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpo
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner, CallFunc_IsOutpostOwner_ReturnValue) == 0x000019, "Member 'OutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner::CallFunc_IsOutpostOwner_ReturnValue' has a wrong offset!");
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.AddInputHandlers
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct OutpostScreenStormShieldPermissions_C_AddInputHandlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(OutpostScreenStormShieldPermissions_C_AddInputHandlers) == 0x1182EB00, "Wrong alignment on OutpostScreenStormShieldPermissions_C_AddInputHandlers");
-static_assert(sizeof(OutpostScreenStormShieldPermissions_C_AddInputHandlers) == 0x1182EB00, "Wrong size on OutpostScreenStormShieldPermissions_C_AddInputHandlers");
+static_assert(alignof(OutpostScreenStormShieldPermissions_C_AddInputHandlers) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_AddInputHandlers");
+static_assert(sizeof(OutpostScreenStormShieldPermissions_C_AddInputHandlers) == 0x000020, "Wrong size on OutpostScreenStormShieldPermissions_C_AddInputHandlers");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_AddInputHandlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_AddInputHandlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_AddInputHandlers, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'OutpostScreenStormShieldPermissions_C_AddInputHandlers::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.HandleBack
-// 0x0014 (0x0014 - 0x0000)
-struct alignas(0x0A) OutpostScreenStormShieldPermissions_C_HandleBack final
+// 0x0010 (0x0010 - 0x0000)
+struct OutpostScreenStormShieldPermissions_C_HandleBack final
 {
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenStormShieldPermissions_C_HandleBack) == 0x00000A, "Wrong alignment on OutpostScreenStormShieldPermissions_C_HandleBack");
-static_assert(sizeof(OutpostScreenStormShieldPermissions_C_HandleBack) == 0x000014, "Wrong size on OutpostScreenStormShieldPermissions_C_HandleBack");
+static_assert(alignof(OutpostScreenStormShieldPermissions_C_HandleBack) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_HandleBack");
+static_assert(sizeof(OutpostScreenStormShieldPermissions_C_HandleBack) == 0x000010, "Wrong size on OutpostScreenStormShieldPermissions_C_HandleBack");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_HandleBack, PassThrough) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_HandleBack::PassThrough' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_HandleBack, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShieldPermissions_C_HandleBack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.SetParent
-// 0x0115 (0x0115 - 0x0000)
-struct alignas(0x115) OutpostScreenStormShieldPermissions_C_SetParent final
+// 0x0008 (0x0008 - 0x0000)
+struct OutpostScreenStormShieldPermissions_C_SetParent final
 {
 public:
 	class UOutpostScreenStormShield_C*            ParentWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenStormShieldPermissions_C_SetParent) == 0x000115, "Wrong alignment on OutpostScreenStormShieldPermissions_C_SetParent");
-static_assert(sizeof(OutpostScreenStormShieldPermissions_C_SetParent) == 0x000115, "Wrong size on OutpostScreenStormShieldPermissions_C_SetParent");
+static_assert(alignof(OutpostScreenStormShieldPermissions_C_SetParent) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_SetParent");
+static_assert(sizeof(OutpostScreenStormShieldPermissions_C_SetParent) == 0x000008, "Wrong size on OutpostScreenStormShieldPermissions_C_SetParent");
 static_assert(offsetof(OutpostScreenStormShieldPermissions_C_SetParent, ParentWidget) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_SetParent::ParentWidget' has a wrong offset!");
 
 }

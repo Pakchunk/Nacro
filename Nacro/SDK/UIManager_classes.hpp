@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass UIManager.UIManager_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B8 (0x04B8 - 0x0400)
 class UUIManager_C final : public UFortUIManagerWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
 	class UNamedSlot*                             Confirmation_Layer;                                // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNamedSlot*                             ControllerDisconnectedLayer;                       // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNamedSlot*                             Error_Layer;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -100,8 +100,8 @@ public:
 		return GetDefaultObjImpl<UUIManager_C>();
 	}
 };
-static_assert(alignof(UUIManager_C) == 0x322CBBB8, "Wrong alignment on UUIManager_C");
-static_assert(sizeof(UUIManager_C) == 0x322CBBB8, "Wrong size on UUIManager_C");
+static_assert(alignof(UUIManager_C) == 0x000008, "Wrong alignment on UUIManager_C");
+static_assert(sizeof(UUIManager_C) == 0x0004B8, "Wrong size on UUIManager_C");
 static_assert(offsetof(UUIManager_C, UberGraphFrame) == 0x000400, "Member 'UUIManager_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UUIManager_C, Confirmation_Layer) == 0x000408, "Member 'UUIManager_C::Confirmation_Layer' has a wrong offset!");
 static_assert(offsetof(UUIManager_C, ControllerDisconnectedLayer) == 0x000410, "Member 'UUIManager_C::ControllerDisconnectedLayer' has a wrong offset!");

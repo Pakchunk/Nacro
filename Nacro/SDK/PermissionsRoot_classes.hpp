@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PermissionsRoot.PermissionsRoot_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0418 - 0x03E0)
 class UPermissionsRoot_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UCommonWidgetSwitcher*                  Outpost_Screen_WidgetSwitcher;                     // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       OutpostLevel_Text;                                 // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       OutpostName_Text;                                  // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UPermissionsRoot_C>();
 	}
 };
-static_assert(alignof(UPermissionsRoot_C) == 0x322CBBB8, "Wrong alignment on UPermissionsRoot_C");
-static_assert(sizeof(UPermissionsRoot_C) == 0x322CBBB8, "Wrong size on UPermissionsRoot_C");
+static_assert(alignof(UPermissionsRoot_C) == 0x000008, "Wrong alignment on UPermissionsRoot_C");
+static_assert(sizeof(UPermissionsRoot_C) == 0x000418, "Wrong size on UPermissionsRoot_C");
 static_assert(offsetof(UPermissionsRoot_C, UberGraphFrame) == 0x0003E0, "Member 'UPermissionsRoot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPermissionsRoot_C, Outpost_Screen_WidgetSwitcher) == 0x0003E8, "Member 'UPermissionsRoot_C::Outpost_Screen_WidgetSwitcher' has a wrong offset!");
 static_assert(offsetof(UPermissionsRoot_C, OutpostLevel_Text) == 0x0003F0, "Member 'UPermissionsRoot_C::OutpostLevel_Text' has a wrong offset!");

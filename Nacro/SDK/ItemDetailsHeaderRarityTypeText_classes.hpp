@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemDetailsHeaderRarityTypeText.ItemDetailsHeaderRarityTypeText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0290 - 0x0270)
 class UItemDetailsHeaderRarityTypeText_C final : public UFortItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       RarityTextBlock;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TypeTextBlock;                                     // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          Show_New_System;                                   // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UItemDetailsHeaderRarityTypeText_C>();
 	}
 };
-static_assert(alignof(UItemDetailsHeaderRarityTypeText_C) == 0x322CBBB8, "Wrong alignment on UItemDetailsHeaderRarityTypeText_C");
-static_assert(sizeof(UItemDetailsHeaderRarityTypeText_C) == 0x322CBBB8, "Wrong size on UItemDetailsHeaderRarityTypeText_C");
+static_assert(alignof(UItemDetailsHeaderRarityTypeText_C) == 0x000008, "Wrong alignment on UItemDetailsHeaderRarityTypeText_C");
+static_assert(sizeof(UItemDetailsHeaderRarityTypeText_C) == 0x000290, "Wrong size on UItemDetailsHeaderRarityTypeText_C");
 static_assert(offsetof(UItemDetailsHeaderRarityTypeText_C, UberGraphFrame) == 0x000270, "Member 'UItemDetailsHeaderRarityTypeText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemDetailsHeaderRarityTypeText_C, RarityTextBlock) == 0x000278, "Member 'UItemDetailsHeaderRarityTypeText_C::RarityTextBlock' has a wrong offset!");
 static_assert(offsetof(UItemDetailsHeaderRarityTypeText_C, TypeTextBlock) == 0x000280, "Member 'UItemDetailsHeaderRarityTypeText_C::TypeTextBlock' has a wrong offset!");

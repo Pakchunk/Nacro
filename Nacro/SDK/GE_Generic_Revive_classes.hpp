@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_Generic_Revive.GE_Generic_Revive_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x0660 - 0x0660)
 class UGE_Generic_Revive_C : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_Generic_Revive_C>();
 	}
 };
-static_assert(alignof(UGE_Generic_Revive_C) == 0x1182E980, "Wrong alignment on UGE_Generic_Revive_C");
-static_assert(sizeof(UGE_Generic_Revive_C) == 0x1182E980, "Wrong size on UGE_Generic_Revive_C");
+static_assert(alignof(UGE_Generic_Revive_C) == 0x000010, "Wrong alignment on UGE_Generic_Revive_C");
+static_assert(sizeof(UGE_Generic_Revive_C) == 0x000660, "Wrong size on UGE_Generic_Revive_C");
 
 }
 

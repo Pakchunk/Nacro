@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AthenaInventoryDragDrop.AthenaInventoryDragDrop_C
-// 0x0000 (0x11821300 - 0x11821300)
+// 0x0008 (0x0090 - 0x0088)
 class UAthenaInventoryDragDrop_C final : public UDragDropOperation
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UAthenaInventoryDragDrop_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryDragDrop_C) == 0x11821300, "Wrong alignment on UAthenaInventoryDragDrop_C");
-static_assert(sizeof(UAthenaInventoryDragDrop_C) == 0x11821300, "Wrong size on UAthenaInventoryDragDrop_C");
+static_assert(alignof(UAthenaInventoryDragDrop_C) == 0x000008, "Wrong alignment on UAthenaInventoryDragDrop_C");
+static_assert(sizeof(UAthenaInventoryDragDrop_C) == 0x000090, "Wrong size on UAthenaInventoryDragDrop_C");
 static_assert(offsetof(UAthenaInventoryDragDrop_C, SplitTheStack) == 0x000088, "Member 'UAthenaInventoryDragDrop_C::SplitTheStack' has a wrong offset!");
 
 }

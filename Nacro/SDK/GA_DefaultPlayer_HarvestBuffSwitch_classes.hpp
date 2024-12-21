@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_HarvestBuffSwitch.GA_DefaultPlayer_HarvestBuffSwitch_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x00D0 (0x0B10 - 0x0A40)
 class UGA_DefaultPlayer_HarvestBuffSwitch_C final : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
-	struct FGameplayTagContainer                  TC_ImpactWeapon;                                   // 0x0A48(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_HarvestBuff_T1;                                 // 0x0A68(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_LaserFocus;                                     // 0x0A88(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTagContainer                  TC_ImpactWeapon;                                   // 0x0A48(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_HarvestBuff_T1;                                 // 0x0A68(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_LaserFocus;                                     // 0x0A88(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UClass*                                 GE_LaserFocus;                                     // 0x0AA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_ImpactWeapon_Stick;                             // 0x0AB0(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_ImpactWeapon_Pickaxe;                           // 0x0AD0(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_HarvestBuff_T2;                                 // 0x0AF0(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_ImpactWeapon_Stick;                             // 0x0AB0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_ImpactWeapon_Pickaxe;                           // 0x0AD0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_HarvestBuff_T2;                                 // 0x0AF0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch(int32 EntryPoint);
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UGA_DefaultPlayer_HarvestBuffSwitch_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_HarvestBuffSwitch_C) == 0x1182EB00, "Wrong alignment on UGA_DefaultPlayer_HarvestBuffSwitch_C");
-static_assert(sizeof(UGA_DefaultPlayer_HarvestBuffSwitch_C) == 0x1182EB00, "Wrong size on UGA_DefaultPlayer_HarvestBuffSwitch_C");
+static_assert(alignof(UGA_DefaultPlayer_HarvestBuffSwitch_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_HarvestBuffSwitch_C");
+static_assert(sizeof(UGA_DefaultPlayer_HarvestBuffSwitch_C) == 0x000B10, "Wrong size on UGA_DefaultPlayer_HarvestBuffSwitch_C");
 static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, UberGraphFrame) == 0x000A40, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, TC_ImpactWeapon) == 0x000A48, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::TC_ImpactWeapon' has a wrong offset!");
 static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, TC_HarvestBuff_T1) == 0x000A68, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::TC_HarvestBuff_T1' has a wrong offset!");

@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function MissionFocusWidget.MissionFocusWidget_C.ExecuteUbergraph_MissionFocusWidget
-// 0x00A3 (0x00A3 - 0x0000)
-struct alignas(0xA3) MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget final
+// 0x0028 (0x0028 - 0x0000)
+struct MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -28,15 +28,15 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortMission*                           CallFunc_GetFocusedMission_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget) == 0x0000A3, "Wrong alignment on MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget");
-static_assert(sizeof(MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget) == 0x0000A3, "Wrong size on MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget");
+static_assert(alignof(MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget) == 0x000008, "Wrong alignment on MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget");
+static_assert(sizeof(MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget) == 0x000028, "Wrong size on MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget");
 static_assert(offsetof(MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget, EntryPoint) == 0x000000, "Member 'MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget, CallFunc_GetFocusedMission_ReturnValue) == 0x000020, "Member 'MissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget::CallFunc_GetFocusedMission_ReturnValue' has a wrong offset!");
 
 // Function MissionFocusWidget.MissionFocusWidget_C.UpdateTimer
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct MissionFocusWidget_C_UpdateTimer final
 {
 public:
@@ -59,7 +59,7 @@ public:
 	float                                         CallFunc_GetCurrentFocusPercentage_ReturnValue;    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetCurrentFocusDisplayText_ReturnValue;   // 0x0068(0x0018)()
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0090(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0090(0x0008)(NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetText_ReturnValue2;                     // 0x00A0(0x0018)()
@@ -70,8 +70,8 @@ public:
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetTimeText_ReturnValue;                  // 0x00C0(0x0018)()
 };
-static_assert(alignof(MissionFocusWidget_C_UpdateTimer) == 0x11821D80, "Wrong alignment on MissionFocusWidget_C_UpdateTimer");
-static_assert(sizeof(MissionFocusWidget_C_UpdateTimer) == 0x11821D80, "Wrong size on MissionFocusWidget_C_UpdateTimer");
+static_assert(alignof(MissionFocusWidget_C_UpdateTimer) == 0x000008, "Wrong alignment on MissionFocusWidget_C_UpdateTimer");
+static_assert(sizeof(MissionFocusWidget_C_UpdateTimer) == 0x0000D8, "Wrong size on MissionFocusWidget_C_UpdateTimer");
 static_assert(offsetof(MissionFocusWidget_C_UpdateTimer, KillBarPercentageChanged) == 0x000000, "Member 'MissionFocusWidget_C_UpdateTimer::KillBarPercentageChanged' has a wrong offset!");
 static_assert(offsetof(MissionFocusWidget_C_UpdateTimer, NewKillBarPercentage) == 0x000004, "Member 'MissionFocusWidget_C_UpdateTimer::NewKillBarPercentage' has a wrong offset!");
 static_assert(offsetof(MissionFocusWidget_C_UpdateTimer, HeaderTextChanged) == 0x000008, "Member 'MissionFocusWidget_C_UpdateTimer::HeaderTextChanged' has a wrong offset!");
@@ -130,8 +130,8 @@ static_assert(offsetof(MissionFocusWidget_C_HandleFocusedMission, CallFunc_IsVal
 static_assert(offsetof(MissionFocusWidget_C_HandleFocusedMission, CallFunc_IsValid_ReturnValue3) == 0x000031, "Member 'MissionFocusWidget_C_HandleFocusedMission::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
 
 // Function MissionFocusWidget.MissionFocusWidget_C.UpdateVisibility
-// 0x720054 (0x720054 - 0x0000)
-struct alignas(0x720054) MissionFocusWidget_C_UpdateVisibility final
+// 0x0058 (0x0058 - 0x0000)
+struct MissionFocusWidget_C_UpdateVisibility final
 {
 public:
 	bool                                          KillBarVisible;                                    // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -162,8 +162,8 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionFocusWidget_C_UpdateVisibility) == 0x720054, "Wrong alignment on MissionFocusWidget_C_UpdateVisibility");
-static_assert(sizeof(MissionFocusWidget_C_UpdateVisibility) == 0x720054, "Wrong size on MissionFocusWidget_C_UpdateVisibility");
+static_assert(alignof(MissionFocusWidget_C_UpdateVisibility) == 0x000008, "Wrong alignment on MissionFocusWidget_C_UpdateVisibility");
+static_assert(sizeof(MissionFocusWidget_C_UpdateVisibility) == 0x000058, "Wrong size on MissionFocusWidget_C_UpdateVisibility");
 static_assert(offsetof(MissionFocusWidget_C_UpdateVisibility, KillBarVisible) == 0x000000, "Member 'MissionFocusWidget_C_UpdateVisibility::KillBarVisible' has a wrong offset!");
 static_assert(offsetof(MissionFocusWidget_C_UpdateVisibility, TimerVisible) == 0x000001, "Member 'MissionFocusWidget_C_UpdateVisibility::TimerVisible' has a wrong offset!");
 static_assert(offsetof(MissionFocusWidget_C_UpdateVisibility, HeaderVisible) == 0x000002, "Member 'MissionFocusWidget_C_UpdateVisibility::HeaderVisible' has a wrong offset!");

@@ -37,14 +37,14 @@ static_assert(sizeof(CineCameraComponent_GetHorizontalFieldOfView) == 0x000004, 
 static_assert(offsetof(CineCameraComponent_GetHorizontalFieldOfView, ReturnValue) == 0x000000, "Member 'CineCameraComponent_GetHorizontalFieldOfView::ReturnValue' has a wrong offset!");
 
 // Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView
-// 0x2D633D80 (0x2D633D80 - 0x0000)
-struct alignas(0x2D633D80) CineCameraComponent_GetVerticalFieldOfView final
+// 0x0004 (0x0004 - 0x0000)
+struct CineCameraComponent_GetVerticalFieldOfView final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(CineCameraComponent_GetVerticalFieldOfView) == 0x2D633D80, "Wrong alignment on CineCameraComponent_GetVerticalFieldOfView");
-static_assert(sizeof(CineCameraComponent_GetVerticalFieldOfView) == 0x2D633D80, "Wrong size on CineCameraComponent_GetVerticalFieldOfView");
+static_assert(alignof(CineCameraComponent_GetVerticalFieldOfView) == 0x000004, "Wrong alignment on CineCameraComponent_GetVerticalFieldOfView");
+static_assert(sizeof(CineCameraComponent_GetVerticalFieldOfView) == 0x000004, "Wrong size on CineCameraComponent_GetVerticalFieldOfView");
 static_assert(offsetof(CineCameraComponent_GetVerticalFieldOfView, ReturnValue) == 0x000000, "Member 'CineCameraComponent_GetVerticalFieldOfView::ReturnValue' has a wrong offset!");
 
 }

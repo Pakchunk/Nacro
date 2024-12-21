@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-ProgressBar-Collections.Border-ProgressBar-Collections_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusProgressBarMinusCollections_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusProgressBarMinusCollections_C>();
 	}
 };
-static_assert(alignof(UBorderMinusProgressBarMinusCollections_C) == 0x11827900, "Wrong alignment on UBorderMinusProgressBarMinusCollections_C");
-static_assert(sizeof(UBorderMinusProgressBarMinusCollections_C) == 0x11827900, "Wrong size on UBorderMinusProgressBarMinusCollections_C");
+static_assert(alignof(UBorderMinusProgressBarMinusCollections_C) == 0x000008, "Wrong alignment on UBorderMinusProgressBarMinusCollections_C");
+static_assert(sizeof(UBorderMinusProgressBarMinusCollections_C) == 0x0000B8, "Wrong size on UBorderMinusProgressBarMinusCollections_C");
 
 }
 

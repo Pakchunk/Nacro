@@ -29,30 +29,30 @@ static_assert(sizeof(QuestInfo_BulletListEntry_C_InitBullet) == 0x000018, "Wrong
 static_assert(offsetof(QuestInfo_BulletListEntry_C_InitBullet, EntryText) == 0x000000, "Member 'QuestInfo_BulletListEntry_C_InitBullet::EntryText' has a wrong offset!");
 
 // Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.InitBrush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct QuestInfo_BulletListEntry_C_InitBrush final
 {
 public:
 	class FText                                   EntryText;                                         // 0x0000(0x0018)(Parm)
-	struct FSlateBrush                            EntryIconBrush;                                    // 0x0018(0x322CBBB8)(Parm)
-	struct FVector2D                              CallFunc_CalcBrushSize_ReturnValue;                // 0x00A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            EntryIconBrush;                                    // 0x0018(0x0090)(Parm)
+	struct FVector2D                              CallFunc_CalcBrushSize_ReturnValue;                // 0x00A8(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestInfo_BulletListEntry_C_InitBrush) == 0x11827900, "Wrong alignment on QuestInfo_BulletListEntry_C_InitBrush");
-static_assert(sizeof(QuestInfo_BulletListEntry_C_InitBrush) == 0x11827900, "Wrong size on QuestInfo_BulletListEntry_C_InitBrush");
+static_assert(alignof(QuestInfo_BulletListEntry_C_InitBrush) == 0x000008, "Wrong alignment on QuestInfo_BulletListEntry_C_InitBrush");
+static_assert(sizeof(QuestInfo_BulletListEntry_C_InitBrush) == 0x0000B0, "Wrong size on QuestInfo_BulletListEntry_C_InitBrush");
 static_assert(offsetof(QuestInfo_BulletListEntry_C_InitBrush, EntryText) == 0x000000, "Member 'QuestInfo_BulletListEntry_C_InitBrush::EntryText' has a wrong offset!");
 static_assert(offsetof(QuestInfo_BulletListEntry_C_InitBrush, EntryIconBrush) == 0x000018, "Member 'QuestInfo_BulletListEntry_C_InitBrush::EntryIconBrush' has a wrong offset!");
 static_assert(offsetof(QuestInfo_BulletListEntry_C_InitBrush, CallFunc_CalcBrushSize_ReturnValue) == 0x0000A8, "Member 'QuestInfo_BulletListEntry_C_InitBrush::CallFunc_CalcBrushSize_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.CalcBrushSize
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0044 (0x0044 - 0x0000)
 struct QuestInfo_BulletListEntry_C_CalcBrushSize final
 {
 public:
-	struct FVector2D                              InImageSize;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ReturnValue;                                       // 0x0008(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              InImageSize;                                       // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Min;                                               // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Scale;                                             // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0018(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -63,8 +63,8 @@ public:
 	float                                         CallFunc_BreakVector2D_Y3;                         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_BulletListEntry_C_CalcBrushSize) == 0x11821300, "Wrong alignment on QuestInfo_BulletListEntry_C_CalcBrushSize");
-static_assert(sizeof(QuestInfo_BulletListEntry_C_CalcBrushSize) == 0x11821300, "Wrong size on QuestInfo_BulletListEntry_C_CalcBrushSize");
+static_assert(alignof(QuestInfo_BulletListEntry_C_CalcBrushSize) == 0x000004, "Wrong alignment on QuestInfo_BulletListEntry_C_CalcBrushSize");
+static_assert(sizeof(QuestInfo_BulletListEntry_C_CalcBrushSize) == 0x000044, "Wrong size on QuestInfo_BulletListEntry_C_CalcBrushSize");
 static_assert(offsetof(QuestInfo_BulletListEntry_C_CalcBrushSize, InImageSize) == 0x000000, "Member 'QuestInfo_BulletListEntry_C_CalcBrushSize::InImageSize' has a wrong offset!");
 static_assert(offsetof(QuestInfo_BulletListEntry_C_CalcBrushSize, ReturnValue) == 0x000008, "Member 'QuestInfo_BulletListEntry_C_CalcBrushSize::ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestInfo_BulletListEntry_C_CalcBrushSize, Min) == 0x000010, "Member 'QuestInfo_BulletListEntry_C_CalcBrushSize::Min' has a wrong offset!");

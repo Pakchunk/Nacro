@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function EulaWidget.EulaWidget_C.OnEulaResponse__DelegateSignature
-// 0x151E (0x151E - 0x0000)
-struct alignas(0x151E) EulaWidget_C_OnEulaResponse__DelegateSignature final
+// 0x0001 (0x0001 - 0x0000)
+struct EulaWidget_C_OnEulaResponse__DelegateSignature final
 {
 public:
 	bool                                          Accepted;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EulaWidget_C_OnEulaResponse__DelegateSignature) == 0x00151E, "Wrong alignment on EulaWidget_C_OnEulaResponse__DelegateSignature");
-static_assert(sizeof(EulaWidget_C_OnEulaResponse__DelegateSignature) == 0x00151E, "Wrong size on EulaWidget_C_OnEulaResponse__DelegateSignature");
+static_assert(alignof(EulaWidget_C_OnEulaResponse__DelegateSignature) == 0x000001, "Wrong alignment on EulaWidget_C_OnEulaResponse__DelegateSignature");
+static_assert(sizeof(EulaWidget_C_OnEulaResponse__DelegateSignature) == 0x000001, "Wrong size on EulaWidget_C_OnEulaResponse__DelegateSignature");
 static_assert(offsetof(EulaWidget_C_OnEulaResponse__DelegateSignature, Accepted) == 0x000000, "Member 'EulaWidget_C_OnEulaResponse__DelegateSignature::Accepted' has a wrong offset!");
 
 // Function EulaWidget.EulaWidget_C.ExecuteUbergraph_EulaWidget

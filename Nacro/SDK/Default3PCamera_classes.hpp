@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Default3PCamera.Default3PCamera_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0128 - 0x0128)
 class UDefault3PCamera_C final : public UFort3PCam_Default
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UDefault3PCamera_C>();
 	}
 };
-static_assert(alignof(UDefault3PCamera_C) == 0x11821D80, "Wrong alignment on UDefault3PCamera_C");
-static_assert(sizeof(UDefault3PCamera_C) == 0x11821D80, "Wrong size on UDefault3PCamera_C");
+static_assert(alignof(UDefault3PCamera_C) == 0x000008, "Wrong alignment on UDefault3PCamera_C");
+static_assert(sizeof(UDefault3PCamera_C) == 0x000128, "Wrong size on UDefault3PCamera_C");
 
 }
 

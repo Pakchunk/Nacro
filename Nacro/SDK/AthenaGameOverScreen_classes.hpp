@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaGameOverScreen.AthenaGameOverScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0280 - 0x0260)
 class UAthenaGameOverScreen_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UCommonWidgetStack*                     GameOverStack;                                     // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_0;                                        // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ShowingGameOverScreen;                             // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UAthenaGameOverScreen_C>();
 	}
 };
-static_assert(alignof(UAthenaGameOverScreen_C) == 0x322CBBB8, "Wrong alignment on UAthenaGameOverScreen_C");
-static_assert(sizeof(UAthenaGameOverScreen_C) == 0x322CBBB8, "Wrong size on UAthenaGameOverScreen_C");
+static_assert(alignof(UAthenaGameOverScreen_C) == 0x000008, "Wrong alignment on UAthenaGameOverScreen_C");
+static_assert(sizeof(UAthenaGameOverScreen_C) == 0x000280, "Wrong size on UAthenaGameOverScreen_C");
 static_assert(offsetof(UAthenaGameOverScreen_C, UberGraphFrame) == 0x000260, "Member 'UAthenaGameOverScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaGameOverScreen_C, GameOverStack) == 0x000268, "Member 'UAthenaGameOverScreen_C::GameOverStack' has a wrong offset!");
 static_assert(offsetof(UAthenaGameOverScreen_C, SafeZone_0) == 0x000270, "Member 'UAthenaGameOverScreen_C::SafeZone_0' has a wrong offset!");

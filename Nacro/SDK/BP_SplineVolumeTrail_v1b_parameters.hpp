@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ExecuteUbergraph_BP_SplineVolumeTrail_v1b
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0268 (0x0268 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b final
 {
 public:
@@ -34,16 +34,16 @@ public:
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue3;        // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue4;        // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Multiply_RotatorFloat_ReturnValue;        // 0x0038(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0044(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0050(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FRotator                               CallFunc_Multiply_RotatorFloat_ReturnValue;        // 0x0038(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0044(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0050(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x00E0(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00F0(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00F0(0x0008)(NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_DoesSocketExist_ReturnValue;              // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_FA[0x6];                                       // 0x00FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x0100(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x0100(0x0008)(NoDestructor)
 	int32                                         Temp_int_Variable;                                 // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,7 +53,7 @@ public:
 	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0128(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue3;         // 0x0138(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue3;         // 0x0138(0x0008)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -67,10 +67,10 @@ public:
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveLinearColor*                      CallFunc_Array_Get_Item;                           // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_BakeLinearColor_LinearColorOut;           // 0x0170(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_BakeLinearColor_LinearColorOut;           // 0x0170(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue4;         // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0184(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x0194(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0184(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x0194(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue4;             // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,18 +85,18 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue3;             // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x01D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x01D0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1DD[0x3];                                      // 0x01DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x01E0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x01E8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x01E0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x01E8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1F9[0x3];                                      // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue5;             // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue6;             // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue3;                // 0x0208(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue3;                // 0x0208(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X2;                         // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y2;                         // 0x0214(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_Vector2DVector2D_ReturnValue;  // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -108,14 +108,14 @@ public:
 	float                                         CallFunc_BreakVector2D_X3;                         // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y3;                         // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvas*                                CallFunc_BeginDrawCanvasToRenderTarget_Canvas;     // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size;       // 0x0240(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context;    // 0x0248(0x11821D80)(NoDestructor)
+	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size;       // 0x0240(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context;    // 0x0248(0x0010)(NoDestructor)
 	int32                                         CallFunc_FTrunc_ReturnValue4;                      // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b) == 0x11821D80, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b) == 0x11821D80, "Wrong size on BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b) == 0x000268, "Wrong size on BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, EntryPoint) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::K2Node_Event_DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
@@ -198,29 +198,29 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolu
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000260, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ReceiveTick
-// 0x5F4A24D0 (0x5F4A24D0 - 0x0000)
-struct alignas(0x5F4A24D0) BP_SplineVolumeTrail_v1b_C_ReceiveTick final
+// 0x0004 (0x0004 - 0x0000)
+struct BP_SplineVolumeTrail_v1b_C_ReceiveTick final
 {
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ReceiveTick) == 0x5F4A24D0, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ReceiveTick");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ReceiveTick) == 0x5F4A24D0, "Wrong size on BP_SplineVolumeTrail_v1b_C_ReceiveTick");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ReceiveTick");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ReceiveTick) == 0x000004, "Wrong size on BP_SplineVolumeTrail_v1b_C_ReceiveTick");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UserConstructionScript
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_UserConstructionScript final
 {
 public:
-	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class USplineComponent*                       CallFunc_AddComponent_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESplineCoordinateSpace                        Temp_byte_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESplineCoordinateSpace                        Temp_byte_Variable2;                               // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable2;                             // 0x0040(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable2;                             // 0x0040(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue2;                // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -242,11 +242,11 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue4;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_AddLocalOffset_SweepHitResult;         // 0x00B8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0140(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_AddLocalOffset_SweepHitResult;         // 0x00B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0140(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript) == 0x11821D80, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UserConstructionScript");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript) == 0x11821D80, "Wrong size on BP_SplineVolumeTrail_v1b_C_UserConstructionScript");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UserConstructionScript");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript) == 0x000150, "Wrong size on BP_SplineVolumeTrail_v1b_C_UserConstructionScript");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, Temp_byte_Variable) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::Temp_byte_Variable' has a wrong offset!");
@@ -274,7 +274,7 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFu
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_GetSocketLocationWS_LocationWS) == 0x000140, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplineMesh
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_AddSplineMesh final
 {
 public:
@@ -287,12 +287,12 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue2;             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x001C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x001C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue3;             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x002C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue2;    // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue3;    // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x002C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue2;    // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue3;    // 0x0058(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -302,7 +302,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_82[0xE];                                       // 0x0082(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x0090(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0090(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue2;             // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USplineMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -336,8 +336,8 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplineMesh");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh) == 0x000010, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplineMesh");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh) == 0x000140, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplineMesh");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, Temp_bool_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_LastIndex_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
@@ -385,20 +385,20 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Add_ReturnValue3) == 0x000134, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetStartAndEndSplineMesh
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh final
 {
 public:
 	bool                                          Update_Spline_Mesh;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location; // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent; // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location2; // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent2; // 0x002C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location; // 0x0008(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent; // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location2; // 0x0020(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent2; // 0x002C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh) == 0x000038, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, Update_Spline_Mesh) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::Update_Spline_Mesh' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, CallFunc_GetLocationAndTangentAtSplinePoint_Location) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::CallFunc_GetLocationAndTangentAtSplinePoint_Location' has a wrong offset!");
@@ -407,7 +407,7 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, Call
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, CallFunc_GetLocationAndTangentAtSplinePoint_Tangent2) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::CallFunc_GetLocationAndTangentAtSplinePoint_Tangent2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplinePoint
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_AddSplinePoint final
 {
 public:
@@ -418,10 +418,10 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplinePoint");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplinePoint");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplinePoint");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint) == 0x000020, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplinePoint");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
@@ -430,23 +430,23 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_Boole
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_GetSocketLocationWS_LocationWS) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateSplinePointPosition
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition final
 {
 public:
 	int32                                         CallFunc_GetNumberOfSplinePoints_ReturnValue;      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0008(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition) == 0x000014, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition, CallFunc_GetSocketLocationWS_LocationWS) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SplineTimestampManagement
-// 0x009F (0x009F - 0x0000)
-struct alignas(0x35) BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement final
+// 0x0078 (0x0078 - 0x0000)
+struct BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement final
 {
 public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -484,8 +484,8 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement) == 0x000035, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement) == 0x00009F, "Wrong size on BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement) == 0x000078, "Wrong size on BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, Temp_int_Array_Index_Variable) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -517,15 +517,15 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, Cal
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000075, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ScaleSplineMesh
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut; // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2; // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut; // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2; // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_R;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G;                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B;                             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -534,13 +534,13 @@ public:
 	float                                         CallFunc_BreakColor_G2;                            // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B2;                            // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_A2;                            // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue2;      // 0x0060(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0048(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x0050(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0058(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue2;      // 0x0060(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh) == 0x000068, "Wrong size on BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut' has a wrong offset!");
@@ -559,19 +559,19 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_Mult
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_Multiply_Vector2DFloat_ReturnValue2) == 0x000060, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_Multiply_Vector2DFloat_ReturnValue2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateMID
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_UpdateMID final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut; // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2; // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut; // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2; // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateMID) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateMID");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateMID) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateMID");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateMID) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateMID");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateMID) == 0x000030, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateMID");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut' has a wrong offset!");
@@ -579,17 +579,17 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_GetLinearC
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateParticleSystemPosition
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0010(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition) == 0x11821D80, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition) == 0x11821D80, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition) == 0x000098, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition, CallFunc_GetSocketLocationWS_LocationWS) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
@@ -652,15 +652,15 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_GetFl
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000050, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetForwardAxisOnSplineMesh
-// 0x0017 (0x0017 - 0x0000)
-struct alignas(0x17) BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh final
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh final
 {
 public:
 	class USplineMeshComponent*                   SplineMesh;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh) == 0x000017, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh) == 0x000017, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh) == 0x000010, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh, SplineMesh) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh::SplineMesh' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh, K2Node_SwitchEnum_CmpSuccess) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
@@ -676,7 +676,7 @@ static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool) == 0x000
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplineDistanceCheck
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck final
 {
 public:
@@ -690,15 +690,15 @@ public:
 	int32                                         CallFunc_GetNumberOfSplinePoints_ReturnValue;      // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue2;             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x001C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue2;    // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0034(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x001C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue2;    // 0x0028(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0034(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck) == 0x000048, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, Temp_bool_Variable) == 0x000001, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
@@ -732,19 +732,19 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered, CallFu
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.TickIntervalLODCheck
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable2;                               // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -774,8 +774,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x0085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0086(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck) == 0x000088, "Wrong size on BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, Temp_bool_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_GetSocketLocationWS_LocationWS) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
@@ -809,13 +809,13 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_BooleanOR_ReturnValue) == 0x000086, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.GetLinearColorFromCurveAtTime
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime final
 {
 public:
 	class UCurveLinearColor*                      Curve_Linear_Color;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Index_0;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           LinearColorOut;                                    // 0x000C(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           LinearColorOut;                                    // 0x000C(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -828,10 +828,10 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime) == 0x000058, "Wrong size on BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, Curve_Linear_Color) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::Curve_Linear_Color' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, Index_0) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::Index_0' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, LinearColorOut) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::LinearColorOut' has a wrong offset!");
@@ -849,14 +849,14 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime,
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_GetLinearColorValue_ReturnValue) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.RedistributePointsAlongSpline
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline final
 {
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumberOfSplinePoints_ReturnValue;      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x000C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x000C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -864,11 +864,11 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MultiplyMultiply_FloatFloat_ReturnValue;  // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtTime_ReturnValue;            // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtTime_ReturnValue;            // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline) == 0x000048, "Wrong size on BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, Temp_int_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
@@ -883,7 +883,7 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline,
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_VLerp_ReturnValue) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_VLerp_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SplineUpdateOnTick
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick final
 {
 public:
@@ -893,9 +893,9 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -919,8 +919,8 @@ public:
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USplineMeshComponent*                   CallFunc_Array_Get_Item3;                          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick) == 0x000080, "Wrong size on BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Array_LastIndex_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
@@ -948,40 +948,40 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_A
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Array_Get_Item3) == 0x000078, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Array_Get_Item3' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ReturnSplineMeshToPool
-// 0x0035 (0x0035 - 0x0000)
-struct alignas(0x35) BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool final
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool final
 {
 public:
 	class USplineMeshComponent*                   SplineMesh;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         IndexToRemove;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool) == 0x000035, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool) == 0x000035, "Wrong size on BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool) == 0x000010, "Wrong size on BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool, SplineMesh) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool::SplineMesh' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool, IndexToRemove) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool::IndexToRemove' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool, CallFunc_Array_Add_ReturnValue) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.BakeLinearColor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_BakeLinearColor final
 {
 public:
 	class UCurveLinearColor*                      Curve_Linear_Color;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Pixel__X_;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           LinearColorOut;                                    // 0x000C(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           LinearColorOut;                                    // 0x000C(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0034(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0034(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_BakeLinearColor");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_BakeLinearColor");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_BakeLinearColor");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor) == 0x000058, "Wrong size on BP_SplineVolumeTrail_v1b_C_BakeLinearColor");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, Curve_Linear_Color) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::Curve_Linear_Color' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, Pixel__X_) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::Pixel__X_' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, LinearColorOut) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::LinearColorOut' has a wrong offset!");
@@ -1035,8 +1035,8 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFu
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_IsValid_ReturnValue2) == 0x000039, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetStartAndEndAllSplineMeshes
-// 0x0044 (0x0044 - 0x0000)
-struct alignas(0x44) BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes final
+// 0x0028 (0x0028 - 0x0000)
+struct BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes final
 {
 public:
 	bool                                          Update_All_Spline_Meshes;                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1050,8 +1050,8 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes) == 0x000044, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes) == 0x000044, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes) == 0x000028, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, Update_All_Spline_Meshes) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::Update_All_Spline_Meshes' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -1061,22 +1061,22 @@ static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes,
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.GetSocketLocationWS
-// 0x11821300 (0x11821300 - 0x0000)
-struct BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS final
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS final
 {
 public:
 	class FName                                   Socket_Name;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                LocationWS;                                        // 0x0008(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LocationWS;                                        // 0x0008(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS) == 0x000020, "Wrong size on BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS, Socket_Name) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS::Socket_Name' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS, LocationWS) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS::LocationWS' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS, CallFunc_GetSocketLocation_ReturnValue) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateCheapSplinesWPOVectors
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors final
 {
 public:
@@ -1092,17 +1092,17 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue3;             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue2;    // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue;     // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAtSplinePoint_ReturnValue2;    // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x0058(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors) == 0x11821300, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors) == 0x11821300, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors");
+static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors");
+static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors) == 0x000080, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");

@@ -39,57 +39,57 @@ static_assert(offsetof(FindSessionsCallbackProxy_FindSessions, bUseLAN) == 0x000
 static_assert(offsetof(FindSessionsCallbackProxy_FindSessions, ReturnValue) == 0x000018, "Member 'FindSessionsCallbackProxy_FindSessions::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers
-// 0x53FBA (0x53FBA - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct FindSessionsCallbackProxy_GetCurrentPlayers final
 {
 public:
-	struct FBlueprintSessionResult                Result;                                            // 0x0000(0x53FBA)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlueprintSessionResult                Result;                                            // 0x0000(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FindSessionsCallbackProxy_GetCurrentPlayers) == 0x053FBA, "Wrong alignment on FindSessionsCallbackProxy_GetCurrentPlayers");
-static_assert(sizeof(FindSessionsCallbackProxy_GetCurrentPlayers) == 0x053FBA, "Wrong size on FindSessionsCallbackProxy_GetCurrentPlayers");
+static_assert(alignof(FindSessionsCallbackProxy_GetCurrentPlayers) == 0x000008, "Wrong alignment on FindSessionsCallbackProxy_GetCurrentPlayers");
+static_assert(sizeof(FindSessionsCallbackProxy_GetCurrentPlayers) == 0x0000C0, "Wrong size on FindSessionsCallbackProxy_GetCurrentPlayers");
 static_assert(offsetof(FindSessionsCallbackProxy_GetCurrentPlayers, Result) == 0x000000, "Member 'FindSessionsCallbackProxy_GetCurrentPlayers::Result' has a wrong offset!");
 static_assert(offsetof(FindSessionsCallbackProxy_GetCurrentPlayers, ReturnValue) == 0x0000B8, "Member 'FindSessionsCallbackProxy_GetCurrentPlayers::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers
-// 0x53FBA (0x53FBA - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct FindSessionsCallbackProxy_GetMaxPlayers final
 {
 public:
-	struct FBlueprintSessionResult                Result;                                            // 0x0000(0x53FBA)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlueprintSessionResult                Result;                                            // 0x0000(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FindSessionsCallbackProxy_GetMaxPlayers) == 0x053FBA, "Wrong alignment on FindSessionsCallbackProxy_GetMaxPlayers");
-static_assert(sizeof(FindSessionsCallbackProxy_GetMaxPlayers) == 0x053FBA, "Wrong size on FindSessionsCallbackProxy_GetMaxPlayers");
+static_assert(alignof(FindSessionsCallbackProxy_GetMaxPlayers) == 0x000008, "Wrong alignment on FindSessionsCallbackProxy_GetMaxPlayers");
+static_assert(sizeof(FindSessionsCallbackProxy_GetMaxPlayers) == 0x0000C0, "Wrong size on FindSessionsCallbackProxy_GetMaxPlayers");
 static_assert(offsetof(FindSessionsCallbackProxy_GetMaxPlayers, Result) == 0x000000, "Member 'FindSessionsCallbackProxy_GetMaxPlayers::Result' has a wrong offset!");
 static_assert(offsetof(FindSessionsCallbackProxy_GetMaxPlayers, ReturnValue) == 0x0000B8, "Member 'FindSessionsCallbackProxy_GetMaxPlayers::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs
-// 0x53FBA (0x53FBA - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct FindSessionsCallbackProxy_GetPingInMs final
 {
 public:
-	struct FBlueprintSessionResult                Result;                                            // 0x0000(0x53FBA)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlueprintSessionResult                Result;                                            // 0x0000(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x00B8(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FindSessionsCallbackProxy_GetPingInMs) == 0x053FBA, "Wrong alignment on FindSessionsCallbackProxy_GetPingInMs");
-static_assert(sizeof(FindSessionsCallbackProxy_GetPingInMs) == 0x053FBA, "Wrong size on FindSessionsCallbackProxy_GetPingInMs");
+static_assert(alignof(FindSessionsCallbackProxy_GetPingInMs) == 0x000008, "Wrong alignment on FindSessionsCallbackProxy_GetPingInMs");
+static_assert(sizeof(FindSessionsCallbackProxy_GetPingInMs) == 0x0000C0, "Wrong size on FindSessionsCallbackProxy_GetPingInMs");
 static_assert(offsetof(FindSessionsCallbackProxy_GetPingInMs, Result) == 0x000000, "Member 'FindSessionsCallbackProxy_GetPingInMs::Result' has a wrong offset!");
 static_assert(offsetof(FindSessionsCallbackProxy_GetPingInMs, ReturnValue) == 0x0000B8, "Member 'FindSessionsCallbackProxy_GetPingInMs::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName
-// 0x53FBA (0x53FBA - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct FindSessionsCallbackProxy_GetServerName final
 {
 public:
-	struct FBlueprintSessionResult                Result;                                            // 0x0000(0x53FBA)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlueprintSessionResult                Result;                                            // 0x0000(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x00B8(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FindSessionsCallbackProxy_GetServerName) == 0x053FBA, "Wrong alignment on FindSessionsCallbackProxy_GetServerName");
-static_assert(sizeof(FindSessionsCallbackProxy_GetServerName) == 0x053FBA, "Wrong size on FindSessionsCallbackProxy_GetServerName");
+static_assert(alignof(FindSessionsCallbackProxy_GetServerName) == 0x000008, "Wrong alignment on FindSessionsCallbackProxy_GetServerName");
+static_assert(sizeof(FindSessionsCallbackProxy_GetServerName) == 0x0000C8, "Wrong size on FindSessionsCallbackProxy_GetServerName");
 static_assert(offsetof(FindSessionsCallbackProxy_GetServerName, Result) == 0x000000, "Member 'FindSessionsCallbackProxy_GetServerName::Result' has a wrong offset!");
 static_assert(offsetof(FindSessionsCallbackProxy_GetServerName, ReturnValue) == 0x0000B8, "Member 'FindSessionsCallbackProxy_GetServerName::ReturnValue' has a wrong offset!");
 
@@ -157,39 +157,39 @@ static_assert(sizeof(PartyBeaconClient_ClientSendReservationUpdates) == 0x000004
 static_assert(offsetof(PartyBeaconClient_ClientSendReservationUpdates, NumRemainingReservations) == 0x000000, "Member 'PartyBeaconClient_ClientSendReservationUpdates::NumRemainingReservations' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct PartyBeaconClient_ServerCancelReservationRequest final
 {
 public:
-	struct FUniqueNetIdRepl                       PartyLeader;                                       // 0x0000(0x11821780)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FUniqueNetIdRepl                       PartyLeader;                                       // 0x0000(0x0018)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PartyBeaconClient_ServerCancelReservationRequest) == 0x11821780, "Wrong alignment on PartyBeaconClient_ServerCancelReservationRequest");
-static_assert(sizeof(PartyBeaconClient_ServerCancelReservationRequest) == 0x11821780, "Wrong size on PartyBeaconClient_ServerCancelReservationRequest");
+static_assert(alignof(PartyBeaconClient_ServerCancelReservationRequest) == 0x000008, "Wrong alignment on PartyBeaconClient_ServerCancelReservationRequest");
+static_assert(sizeof(PartyBeaconClient_ServerCancelReservationRequest) == 0x000018, "Wrong size on PartyBeaconClient_ServerCancelReservationRequest");
 static_assert(offsetof(PartyBeaconClient_ServerCancelReservationRequest, PartyLeader) == 0x000000, "Member 'PartyBeaconClient_ServerCancelReservationRequest::PartyLeader' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest
-// 0x11825B00 (0x11825B00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct PartyBeaconClient_ServerReservationRequest final
 {
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPartyReservation                      Reservation;                                       // 0x0010(0x11825B00)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPartyReservation                      Reservation;                                       // 0x0010(0x0030)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PartyBeaconClient_ServerReservationRequest) == 0x11825B00, "Wrong alignment on PartyBeaconClient_ServerReservationRequest");
-static_assert(sizeof(PartyBeaconClient_ServerReservationRequest) == 0x11825B00, "Wrong size on PartyBeaconClient_ServerReservationRequest");
+static_assert(alignof(PartyBeaconClient_ServerReservationRequest) == 0x000008, "Wrong alignment on PartyBeaconClient_ServerReservationRequest");
+static_assert(sizeof(PartyBeaconClient_ServerReservationRequest) == 0x000040, "Wrong size on PartyBeaconClient_ServerReservationRequest");
 static_assert(offsetof(PartyBeaconClient_ServerReservationRequest, SessionId) == 0x000000, "Member 'PartyBeaconClient_ServerReservationRequest::SessionId' has a wrong offset!");
 static_assert(offsetof(PartyBeaconClient_ServerReservationRequest, Reservation) == 0x000010, "Member 'PartyBeaconClient_ServerReservationRequest::Reservation' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest
-// 0x11825B00 (0x11825B00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct PartyBeaconClient_ServerUpdateReservationRequest final
 {
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPartyReservation                      ReservationUpdate;                                 // 0x0010(0x11825B00)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPartyReservation                      ReservationUpdate;                                 // 0x0010(0x0030)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PartyBeaconClient_ServerUpdateReservationRequest) == 0x11825B00, "Wrong alignment on PartyBeaconClient_ServerUpdateReservationRequest");
-static_assert(sizeof(PartyBeaconClient_ServerUpdateReservationRequest) == 0x11825B00, "Wrong size on PartyBeaconClient_ServerUpdateReservationRequest");
+static_assert(alignof(PartyBeaconClient_ServerUpdateReservationRequest) == 0x000008, "Wrong alignment on PartyBeaconClient_ServerUpdateReservationRequest");
+static_assert(sizeof(PartyBeaconClient_ServerUpdateReservationRequest) == 0x000040, "Wrong size on PartyBeaconClient_ServerUpdateReservationRequest");
 static_assert(offsetof(PartyBeaconClient_ServerUpdateReservationRequest, SessionId) == 0x000000, "Member 'PartyBeaconClient_ServerUpdateReservationRequest::SessionId' has a wrong offset!");
 static_assert(offsetof(PartyBeaconClient_ServerUpdateReservationRequest, ReservationUpdate) == 0x000010, "Member 'PartyBeaconClient_ServerUpdateReservationRequest::ReservationUpdate' has a wrong offset!");
 
@@ -381,16 +381,16 @@ static_assert(offsetof(FindTurnBasedMatchCallbackProxy_FindTurnBasedMatch, ShowE
 static_assert(offsetof(FindTurnBasedMatchCallbackProxy_FindTurnBasedMatch, ReturnValue) == 0x000030, "Member 'FindTurnBasedMatchCallbackProxy_FindTurnBasedMatch::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase
-// 0x11825B00 (0x11825B00 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase final
 {
 public:
 	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FInAppPurchaseProductRequest           ProductRequest;                                    // 0x0008(0x11825B00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FInAppPurchaseProductRequest           ProductRequest;                                    // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UInAppPurchaseCallbackProxy*            ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase) == 0x11825B00, "Wrong alignment on InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase");
-static_assert(sizeof(InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase) == 0x11825B00, "Wrong size on InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase");
+static_assert(alignof(InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase) == 0x000008, "Wrong alignment on InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase");
+static_assert(sizeof(InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase) == 0x000028, "Wrong size on InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase");
 static_assert(offsetof(InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase, PlayerController) == 0x000000, "Member 'InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase::PlayerController' has a wrong offset!");
 static_assert(offsetof(InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase, ProductRequest) == 0x000008, "Member 'InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase::ProductRequest' has a wrong offset!");
 static_assert(offsetof(InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase, ReturnValue) == 0x000020, "Member 'InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase::ReturnValue' has a wrong offset!");
@@ -426,17 +426,17 @@ static_assert(offsetof(InAppPurchaseRestoreCallbackProxy_CreateProxyObjectForInA
 static_assert(offsetof(InAppPurchaseRestoreCallbackProxy_CreateProxyObjectForInAppPurchaseRestore, ReturnValue) == 0x000018, "Member 'InAppPurchaseRestoreCallbackProxy_CreateProxyObjectForInAppPurchaseRestore::ReturnValue' has a wrong offset!");
 
 // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession
-// 0x53FBA (0x53FBA - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct JoinSessionCallbackProxy_JoinSession final
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlueprintSessionResult                SearchResult;                                      // 0x0010(0x53FBA)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlueprintSessionResult                SearchResult;                                      // 0x0010(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UJoinSessionCallbackProxy*              ReturnValue;                                       // 0x00C8(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(JoinSessionCallbackProxy_JoinSession) == 0x053FBA, "Wrong alignment on JoinSessionCallbackProxy_JoinSession");
-static_assert(sizeof(JoinSessionCallbackProxy_JoinSession) == 0x053FBA, "Wrong size on JoinSessionCallbackProxy_JoinSession");
+static_assert(alignof(JoinSessionCallbackProxy_JoinSession) == 0x000008, "Wrong alignment on JoinSessionCallbackProxy_JoinSession");
+static_assert(sizeof(JoinSessionCallbackProxy_JoinSession) == 0x0000D0, "Wrong size on JoinSessionCallbackProxy_JoinSession");
 static_assert(offsetof(JoinSessionCallbackProxy_JoinSession, WorldContextObject) == 0x000000, "Member 'JoinSessionCallbackProxy_JoinSession::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(JoinSessionCallbackProxy_JoinSession, PlayerController) == 0x000008, "Member 'JoinSessionCallbackProxy_JoinSession::PlayerController' has a wrong offset!");
 static_assert(offsetof(JoinSessionCallbackProxy_JoinSession, SearchResult) == 0x000010, "Member 'JoinSessionCallbackProxy_JoinSession::SearchResult' has a wrong offset!");

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionDetailsModifierList.MissionDetailsModifierList_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UMissionDetailsModifierList_C final : public UCommonUserWidget
 {
 public:
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UMissionDetailsModifierList_C>();
 	}
 };
-static_assert(alignof(UMissionDetailsModifierList_C) == 0x322CBBB8, "Wrong alignment on UMissionDetailsModifierList_C");
-static_assert(sizeof(UMissionDetailsModifierList_C) == 0x322CBBB8, "Wrong size on UMissionDetailsModifierList_C");
+static_assert(alignof(UMissionDetailsModifierList_C) == 0x000008, "Wrong alignment on UMissionDetailsModifierList_C");
+static_assert(sizeof(UMissionDetailsModifierList_C) == 0x000260, "Wrong size on UMissionDetailsModifierList_C");
 static_assert(offsetof(UMissionDetailsModifierList_C, BorderExtra) == 0x000238, "Member 'UMissionDetailsModifierList_C::BorderExtra' has a wrong offset!");
 static_assert(offsetof(UMissionDetailsModifierList_C, TextMore) == 0x000240, "Member 'UMissionDetailsModifierList_C::TextMore' has a wrong offset!");
 static_assert(offsetof(UMissionDetailsModifierList_C, VBoxModifiers) == 0x000248, "Member 'UMissionDetailsModifierList_C::VBoxModifiers' has a wrong offset!");

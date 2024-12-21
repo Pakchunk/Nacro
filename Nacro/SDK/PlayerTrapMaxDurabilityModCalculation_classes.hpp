@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerTrapMaxDurabilityModCalculation.PlayerTrapMaxDurabilityModCalculation_C
-// 0x0000 (0x11821C00 - 0x11821C00)
+// 0x0000 (0x0068 - 0x0068)
 class UPlayerTrapMaxDurabilityModCalculation_C final : public UPlayerTrapBonusModMagnitudeCalculation
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UPlayerTrapMaxDurabilityModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapMaxDurabilityModCalculation_C) == 0x11821C00, "Wrong alignment on UPlayerTrapMaxDurabilityModCalculation_C");
-static_assert(sizeof(UPlayerTrapMaxDurabilityModCalculation_C) == 0x11821C00, "Wrong size on UPlayerTrapMaxDurabilityModCalculation_C");
+static_assert(alignof(UPlayerTrapMaxDurabilityModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapMaxDurabilityModCalculation_C");
+static_assert(sizeof(UPlayerTrapMaxDurabilityModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapMaxDurabilityModCalculation_C");
 
 }
 

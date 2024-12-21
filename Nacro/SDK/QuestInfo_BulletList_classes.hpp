@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestInfo_BulletList.QuestInfo_BulletList_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0268 - 0x0238)
 class UQuestInfo_BulletList_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       TextBlockTitle;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBoxBulletList;                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   TitleText;                                         // 0x0250(0x0018)(Edit, BlueprintVisible)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UQuestInfo_BulletList_C>();
 	}
 };
-static_assert(alignof(UQuestInfo_BulletList_C) == 0x322CBBB8, "Wrong alignment on UQuestInfo_BulletList_C");
-static_assert(sizeof(UQuestInfo_BulletList_C) == 0x322CBBB8, "Wrong size on UQuestInfo_BulletList_C");
+static_assert(alignof(UQuestInfo_BulletList_C) == 0x000008, "Wrong alignment on UQuestInfo_BulletList_C");
+static_assert(sizeof(UQuestInfo_BulletList_C) == 0x000268, "Wrong size on UQuestInfo_BulletList_C");
 static_assert(offsetof(UQuestInfo_BulletList_C, UberGraphFrame) == 0x000238, "Member 'UQuestInfo_BulletList_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestInfo_BulletList_C, TextBlockTitle) == 0x000240, "Member 'UQuestInfo_BulletList_C::TextBlockTitle' has a wrong offset!");
 static_assert(offsetof(UQuestInfo_BulletList_C, VerticalBoxBulletList) == 0x000248, "Member 'UQuestInfo_BulletList_C::VerticalBoxBulletList' has a wrong offset!");

@@ -18,19 +18,19 @@ namespace SDK::Params
 {
 
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.ExecuteUbergraph_QuestTrackerSubEntry
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry) == 0x11821D80, "Wrong alignment on QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry");
-static_assert(sizeof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry) == 0x11821D80, "Wrong size on QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry");
+static_assert(alignof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry) == 0x000008, "Wrong alignment on QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry");
+static_assert(sizeof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry) == 0x000040, "Wrong size on QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry");
 static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, EntryPoint) == 0x000000, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::EntryPoint' has a wrong offset!");
 static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
@@ -38,7 +38,7 @@ static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEn
 static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.UpdateObjectiveText
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct QuestTrackerSubEntry_C_UpdateObjectiveText final
 {
 public:
@@ -58,8 +58,8 @@ public:
 	class FText                                   CallFunc_GetCombinedDescription_OutDescription;    // 0x0040(0x0018)()
 	bool                                          CallFunc_GetCombinedDescription_ReturnValue;       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00A0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00A0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E0(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          Temp_bool_Variable3;                               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -72,7 +72,7 @@ public:
 	bool                                          CallFunc_GetTooltipTextFromToken_ReturnValue;      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable6;                               // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_152[0x6];                                      // 0x0152(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0158(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0158(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0198(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -91,8 +91,8 @@ public:
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestTrackerSubEntry_C_UpdateObjectiveText) == 0x11821D80, "Wrong alignment on QuestTrackerSubEntry_C_UpdateObjectiveText");
-static_assert(sizeof(QuestTrackerSubEntry_C_UpdateObjectiveText) == 0x11821D80, "Wrong size on QuestTrackerSubEntry_C_UpdateObjectiveText");
+static_assert(alignof(QuestTrackerSubEntry_C_UpdateObjectiveText) == 0x000008, "Wrong alignment on QuestTrackerSubEntry_C_UpdateObjectiveText");
+static_assert(sizeof(QuestTrackerSubEntry_C_UpdateObjectiveText) == 0x0001E8, "Wrong size on QuestTrackerSubEntry_C_UpdateObjectiveText");
 static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, ObjectiveProgressText) == 0x000000, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::ObjectiveProgressText' has a wrong offset!");
 static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_byte_Variable) == 0x000018, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_byte_Variable2) == 0x000019, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_byte_Variable2' has a wrong offset!");
@@ -157,8 +157,8 @@ static_assert(offsetof(QuestTrackerSubEntry_C_HideIfEmpty, CallFunc_TextIsEmpty_
 static_assert(offsetof(QuestTrackerSubEntry_C_HideIfEmpty, K2Node_Select_Default) == 0x000021, "Member 'QuestTrackerSubEntry_C_HideIfEmpty::K2Node_Select_Default' has a wrong offset!");
 
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.GetHeightEstimate
-// 0x67B7F480 (0x67B7F480 - 0x0000)
-struct alignas(0x67B7F480) QuestTrackerSubEntry_C_GetHeightEstimate final
+// 0x0030 (0x0030 - 0x0000)
+struct QuestTrackerSubEntry_C_GetHeightEstimate final
 {
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -170,8 +170,8 @@ public:
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestTrackerSubEntry_C_GetHeightEstimate) == 0x67B7F480, "Wrong alignment on QuestTrackerSubEntry_C_GetHeightEstimate");
-static_assert(sizeof(QuestTrackerSubEntry_C_GetHeightEstimate) == 0x67B7F480, "Wrong size on QuestTrackerSubEntry_C_GetHeightEstimate");
+static_assert(alignof(QuestTrackerSubEntry_C_GetHeightEstimate) == 0x000008, "Wrong alignment on QuestTrackerSubEntry_C_GetHeightEstimate");
+static_assert(sizeof(QuestTrackerSubEntry_C_GetHeightEstimate) == 0x000030, "Wrong size on QuestTrackerSubEntry_C_GetHeightEstimate");
 static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, ReturnValue) == 0x000000, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::CallFunc_GetText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::CallFunc_IsValid_ReturnValue' has a wrong offset!");

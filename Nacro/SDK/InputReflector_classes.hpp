@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InputReflector.InputReflector_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0280 - 0x0260)
 class UInputReflector_C final : public UCommonInputReflector
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         ButtonBox;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FMargin                                DefaultButtonMargin;                               // 0x0270(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FMargin                                DefaultButtonMargin;                               // 0x0270(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_InputReflector(int32 EntryPoint);
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UInputReflector_C>();
 	}
 };
-static_assert(alignof(UInputReflector_C) == 0x322CBBB8, "Wrong alignment on UInputReflector_C");
-static_assert(sizeof(UInputReflector_C) == 0x322CBBB8, "Wrong size on UInputReflector_C");
+static_assert(alignof(UInputReflector_C) == 0x000008, "Wrong alignment on UInputReflector_C");
+static_assert(sizeof(UInputReflector_C) == 0x000280, "Wrong size on UInputReflector_C");
 static_assert(offsetof(UInputReflector_C, UberGraphFrame) == 0x000260, "Member 'UInputReflector_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UInputReflector_C, ButtonBox) == 0x000268, "Member 'UInputReflector_C::ButtonBox' has a wrong offset!");
 static_assert(offsetof(UInputReflector_C, DefaultButtonMargin) == 0x000270, "Member 'UInputReflector_C::DefaultButtonMargin' has a wrong offset!");

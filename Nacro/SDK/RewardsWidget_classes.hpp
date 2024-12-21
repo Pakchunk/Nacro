@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RewardsWidget.RewardsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01A8 (0x0410 - 0x0268)
 class URewardsWidget_C final : public UFortQuestRewardChoiceWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       OpenChestAni_open;                                 // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       OpenChestAni;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyButtonIconText_C*                ButtonClaimRewards;                                // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -59,7 +59,7 @@ public:
 	class AAnnounce_Gen_Quest_Conversation_C*     ConversationActor;                                 // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestItem*                         ClaimedQuest;                                      // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class URewardsChoiceButtonWidget_C*>   RewardsWidgets;                                    // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FSlateBrush                            ChestIntroImage;                                   // 0x0378(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            ChestIntroImage;                                   // 0x0378(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bRewardsShown;                                     // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_409[0x3];                                      // 0x0409(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PlayerChoice;                                      // 0x040C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -104,8 +104,8 @@ public:
 		return GetDefaultObjImpl<URewardsWidget_C>();
 	}
 };
-static_assert(alignof(URewardsWidget_C) == 0x322CBBB8, "Wrong alignment on URewardsWidget_C");
-static_assert(sizeof(URewardsWidget_C) == 0x322CBBB8, "Wrong size on URewardsWidget_C");
+static_assert(alignof(URewardsWidget_C) == 0x000008, "Wrong alignment on URewardsWidget_C");
+static_assert(sizeof(URewardsWidget_C) == 0x000410, "Wrong size on URewardsWidget_C");
 static_assert(offsetof(URewardsWidget_C, UberGraphFrame) == 0x000268, "Member 'URewardsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URewardsWidget_C, OpenChestAni_open) == 0x000270, "Member 'URewardsWidget_C::OpenChestAni_open' has a wrong offset!");
 static_assert(offsetof(URewardsWidget_C, OpenChestAni) == 0x000278, "Member 'URewardsWidget_C::OpenChestAni' has a wrong offset!");

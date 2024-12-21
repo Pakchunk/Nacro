@@ -89,7 +89,7 @@ static_assert(offsetof(ItemWindow_C_OnSelectedButtonChanged_Event_0, AssociatedB
 static_assert(offsetof(ItemWindow_C_OnSelectedButtonChanged_Event_0, ButtonIndex) == 0x000008, "Member 'ItemWindow_C_OnSelectedButtonChanged_Event_0::ButtonIndex' has a wrong offset!");
 
 // Function ItemWindow.ItemWindow_C.AddInfo
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0348 (0x0348 - 0x0000)
 struct ItemWindow_C_AddInfo final
 {
 public:
@@ -114,7 +114,7 @@ public:
 	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0068(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0080(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0080(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D0(0x0018)()
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -123,20 +123,20 @@ public:
 	bool                                          CallFunc_GetPrimaryCategory_ReturnValue;           // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_InternalToExternalRarity_ExternalRarity;  // 0x0110(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0128(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0168(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0128(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0168(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue2;              // 0x01A8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01C0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01C0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0210(0x0018)()
 	class FText                                   CallFunc_GetDisplayName_ReturnValue3;              // 0x0228(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0240(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0240(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x0280(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0290(0x0018)()
 	int32                                         Temp_int_Variable;                                 // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetDisplayName_ReturnValue4;              // 0x02B0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x02C8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x02C8(0x0040)(HasGetValueTypeHash)
 	int32                                         Temp_int_Variable2;                                // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_30C[0x4];                                      // 0x030C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array4;                           // 0x0310(0x0010)(ZeroConstructor, ReferenceParm)
@@ -149,8 +149,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0340(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0341(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemWindow_C_AddInfo) == 0x11821D80, "Wrong alignment on ItemWindow_C_AddInfo");
-static_assert(sizeof(ItemWindow_C_AddInfo) == 0x11821D80, "Wrong size on ItemWindow_C_AddInfo");
+static_assert(alignof(ItemWindow_C_AddInfo) == 0x000008, "Wrong alignment on ItemWindow_C_AddInfo");
+static_assert(sizeof(ItemWindow_C_AddInfo) == 0x000348, "Wrong size on ItemWindow_C_AddInfo");
 static_assert(offsetof(ItemWindow_C_AddInfo, Info_Items) == 0x000000, "Member 'ItemWindow_C_AddInfo::Info_Items' has a wrong offset!");
 static_assert(offsetof(ItemWindow_C_AddInfo, Title_0) == 0x000010, "Member 'ItemWindow_C_AddInfo::Title_0' has a wrong offset!");
 static_assert(offsetof(ItemWindow_C_AddInfo, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'ItemWindow_C_AddInfo::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
@@ -209,7 +209,7 @@ static_assert(sizeof(ItemWindow_C_Initialize) == 0x000008, "Wrong size on ItemWi
 static_assert(offsetof(ItemWindow_C_Initialize, CallFunc_SpawnObject_ReturnValue) == 0x000000, "Member 'ItemWindow_C_Initialize::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
 
 // Function ItemWindow.ItemWindow_C.HandleButton
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct ItemWindow_C_HandleButton final
 {
 public:
@@ -219,10 +219,10 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0020(0x11829280)(NoDestructor)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0020(0x0008)(NoDestructor)
 };
-static_assert(alignof(ItemWindow_C_HandleButton) == 0x11829280, "Wrong alignment on ItemWindow_C_HandleButton");
-static_assert(sizeof(ItemWindow_C_HandleButton) == 0x11829280, "Wrong size on ItemWindow_C_HandleButton");
+static_assert(alignof(ItemWindow_C_HandleButton) == 0x000008, "Wrong alignment on ItemWindow_C_HandleButton");
+static_assert(sizeof(ItemWindow_C_HandleButton) == 0x000028, "Wrong size on ItemWindow_C_HandleButton");
 static_assert(offsetof(ItemWindow_C_HandleButton, Content) == 0x000000, "Member 'ItemWindow_C_HandleButton::Content' has a wrong offset!");
 static_assert(offsetof(ItemWindow_C_HandleButton, Index_0) == 0x000008, "Member 'ItemWindow_C_HandleButton::Index_0' has a wrong offset!");
 static_assert(offsetof(ItemWindow_C_HandleButton, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'ItemWindow_C_HandleButton::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");

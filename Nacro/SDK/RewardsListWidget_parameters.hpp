@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function RewardsListWidget.RewardsListWidget_C.PopulateRewards
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct RewardsListWidget_C_PopulateRewards final
 {
 public:
@@ -36,7 +36,7 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0048(0x11821D80)(NoDestructor)
+	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item;                           // 0x0048(0x0010)(NoDestructor)
 	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -44,10 +44,10 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable2;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item2;                          // 0x0070(0x11821D80)(NoDestructor)
+	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item2;                          // 0x0070(0x0010)(NoDestructor)
 };
-static_assert(alignof(RewardsListWidget_C_PopulateRewards) == 0x11821D80, "Wrong alignment on RewardsListWidget_C_PopulateRewards");
-static_assert(sizeof(RewardsListWidget_C_PopulateRewards) == 0x11821D80, "Wrong size on RewardsListWidget_C_PopulateRewards");
+static_assert(alignof(RewardsListWidget_C_PopulateRewards) == 0x000008, "Wrong alignment on RewardsListWidget_C_PopulateRewards");
+static_assert(sizeof(RewardsListWidget_C_PopulateRewards) == 0x000080, "Wrong size on RewardsListWidget_C_PopulateRewards");
 static_assert(offsetof(RewardsListWidget_C_PopulateRewards, Rewards) == 0x000000, "Member 'RewardsListWidget_C_PopulateRewards::Rewards' has a wrong offset!");
 static_assert(offsetof(RewardsListWidget_C_PopulateRewards, SelectableRewards) == 0x000010, "Member 'RewardsListWidget_C_PopulateRewards::SelectableRewards' has a wrong offset!");
 static_assert(offsetof(RewardsListWidget_C_PopulateRewards, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'RewardsListWidget_C_PopulateRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -68,8 +68,8 @@ static_assert(offsetof(RewardsListWidget_C_PopulateRewards, Temp_int_Array_Index
 static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Array_Get_Item2) == 0x000070, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Array_Get_Item2' has a wrong offset!");
 
 // Function RewardsListWidget.RewardsListWidget_C.PresentNextReward
-// 0x740065 (0x740065 - 0x0000)
-struct alignas(0x740065) RewardsListWidget_C_PresentNextReward final
+// 0x0028 (0x0028 - 0x0000)
+struct RewardsListWidget_C_PresentNextReward final
 {
 public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -82,8 +82,8 @@ public:
 	class UFrontEndRewardWrapperWidget_C*         CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsListWidget_C_PresentNextReward) == 0x740065, "Wrong alignment on RewardsListWidget_C_PresentNextReward");
-static_assert(sizeof(RewardsListWidget_C_PresentNextReward) == 0x740065, "Wrong size on RewardsListWidget_C_PresentNextReward");
+static_assert(alignof(RewardsListWidget_C_PresentNextReward) == 0x000008, "Wrong alignment on RewardsListWidget_C_PresentNextReward");
+static_assert(sizeof(RewardsListWidget_C_PresentNextReward) == 0x000028, "Wrong size on RewardsListWidget_C_PresentNextReward");
 static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Array_Length_ReturnValue) == 0x000000, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -94,18 +94,18 @@ static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Array_Get
 static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000020, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function RewardsListWidget.RewardsListWidget_C.CreateReward
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct RewardsListWidget_C_CreateReward final
 {
 public:
-	struct FFortItemInstanceQuantityPair          FortItemInstanceQuantityPair;                      // 0x0000(0x11821D80)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortItemInstanceQuantityPair          FortItemInstanceQuantityPair;                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 	bool                                          Selectable;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Quantity;                                          // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              Item;                                              // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0060(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0078(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0078(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C8(0x0018)()
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -117,8 +117,8 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsListWidget_C_CreateReward) == 0x11821D80, "Wrong alignment on RewardsListWidget_C_CreateReward");
-static_assert(sizeof(RewardsListWidget_C_CreateReward) == 0x11821D80, "Wrong size on RewardsListWidget_C_CreateReward");
+static_assert(alignof(RewardsListWidget_C_CreateReward) == 0x000008, "Wrong alignment on RewardsListWidget_C_CreateReward");
+static_assert(sizeof(RewardsListWidget_C_CreateReward) == 0x000108, "Wrong size on RewardsListWidget_C_CreateReward");
 static_assert(offsetof(RewardsListWidget_C_CreateReward, FortItemInstanceQuantityPair) == 0x000000, "Member 'RewardsListWidget_C_CreateReward::FortItemInstanceQuantityPair' has a wrong offset!");
 static_assert(offsetof(RewardsListWidget_C_CreateReward, Selectable) == 0x000010, "Member 'RewardsListWidget_C_CreateReward::Selectable' has a wrong offset!");
 static_assert(offsetof(RewardsListWidget_C_CreateReward, Quantity) == 0x000014, "Member 'RewardsListWidget_C_CreateReward::Quantity' has a wrong offset!");
@@ -158,7 +158,7 @@ static_assert(offsetof(RewardsListWidget_C_CreateRewardWrapper, CallFunc_GetOwni
 static_assert(offsetof(RewardsListWidget_C_CreateRewardWrapper, CallFunc_Create_ReturnValue) == 0x000040, "Member 'RewardsListWidget_C_CreateRewardWrapper::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function RewardsListWidget.RewardsListWidget_C.PresentAllRewards
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct RewardsListWidget_C_PresentAllRewards final
 {
 public:
@@ -168,8 +168,8 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable2;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0014(0x322CBBB8)(NoDestructor)
-	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x0024(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0014(0x0010)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x0024(0x0010)(NoDestructor)
 	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFrontEndRewardWrapperWidget_C*         CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -188,8 +188,8 @@ public:
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue3;       // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsListWidget_C_PresentAllRewards) == 0x322CBBB8, "Wrong alignment on RewardsListWidget_C_PresentAllRewards");
-static_assert(sizeof(RewardsListWidget_C_PresentAllRewards) == 0x322CBBB8, "Wrong size on RewardsListWidget_C_PresentAllRewards");
+static_assert(alignof(RewardsListWidget_C_PresentAllRewards) == 0x000008, "Wrong alignment on RewardsListWidget_C_PresentAllRewards");
+static_assert(sizeof(RewardsListWidget_C_PresentAllRewards) == 0x000090, "Wrong size on RewardsListWidget_C_PresentAllRewards");
 static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, Temp_int_Array_Index_Variable) == 0x000000, "Member 'RewardsListWidget_C_PresentAllRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'RewardsListWidget_C_PresentAllRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");

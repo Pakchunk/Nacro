@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BoostsRoot.BoostsRoot_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0428 - 0x03E0)
 class UBoostsRoot_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalTabList_C*                   BoostsTabs;                                        // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  CurrentTabSwitcher;                                // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Title;                                             // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<UBoostsRoot_C>();
 	}
 };
-static_assert(alignof(UBoostsRoot_C) == 0x322CBBB8, "Wrong alignment on UBoostsRoot_C");
-static_assert(sizeof(UBoostsRoot_C) == 0x322CBBB8, "Wrong size on UBoostsRoot_C");
+static_assert(alignof(UBoostsRoot_C) == 0x000008, "Wrong alignment on UBoostsRoot_C");
+static_assert(sizeof(UBoostsRoot_C) == 0x000428, "Wrong size on UBoostsRoot_C");
 static_assert(offsetof(UBoostsRoot_C, UberGraphFrame) == 0x0003E0, "Member 'UBoostsRoot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBoostsRoot_C, BoostsTabs) == 0x0003E8, "Member 'UBoostsRoot_C::BoostsTabs' has a wrong offset!");
 static_assert(offsetof(UBoostsRoot_C, CurrentTabSwitcher) == 0x0003F0, "Member 'UBoostsRoot_C::CurrentTabSwitcher' has a wrong offset!");

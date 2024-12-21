@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "FortniteGame_structs.hpp"
-#include "UMG_structs.hpp"
-#include "ItemDisplayMode_structs.hpp"
-#include "ItemDisplayStyle_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "ItemDisplayMode_structs.hpp"
+#include "UMG_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -22,8 +22,8 @@ namespace SDK::Params
 {
 
 // Function Item_TierBadge.Item_TierBadge_C.Update
-// 0x7FFFFFFF (0x7FFFFFFF - 0x0000)
-struct alignas(0x7FFFFFFF) Item_TierBadge_C_Update final
+// 0x0210 (0x0210 - 0x0000)
+struct Item_TierBadge_C_Update final
 {
 public:
 	EFortItemTier                                 Current_Tier;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,12 +32,12 @@ public:
 	EItemDisplayStyle                             Item_Display_Style;                                // 0x0003(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EItemDisplayMode                              Item_Display_Mode;                                 // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    Rarity_Colors;                                     // 0x0008(0x11821780)(Parm)
+	struct FFortRarityItemData                    Rarity_Colors;                                     // 0x0008(0x0080)(Parm)
 	int32                                         Current_Level;                                     // 0x0088(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Max_Level;                                         // 0x008C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         MaxLevel;                                          // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentLevel;                                      // 0x0094(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortRarityItemData                    RarityData;                                        // 0x0098(0x11821780)(Edit)
+	struct FFortRarityItemData                    RarityData;                                        // 0x0098(0x0080)(Edit)
 	EItemDisplayMode                              DisplayMode;                                       // 0x0118(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EItemDisplayStyle                             DisplayStyle;                                      // 0x0119(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBrushSize                                BrushSize;                                         // 0x011A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,7 +62,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable12;                             // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0160(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0160(0x0028)()
 	bool                                          CallFunc_Refresh_Visibility_Visible;               // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -80,7 +80,7 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x01CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1CE[0x2];                                      // 0x01CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select3_Default;                            // 0x01D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select3_Default;                            // 0x01D0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,10 +89,10 @@ public:
 	int32                                         CallFunc_Convert_Tier_To_Integer_Numeric_Tier2;    // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable13;                             // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select4_Default;                            // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x01FC(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x01FC(0x0010)(NoDestructor)
 };
-static_assert(alignof(Item_TierBadge_C_Update) == 0x7FFFFFFF, "Wrong alignment on Item_TierBadge_C_Update");
-static_assert(sizeof(Item_TierBadge_C_Update) == 0x7FFFFFFF, "Wrong size on Item_TierBadge_C_Update");
+static_assert(alignof(Item_TierBadge_C_Update) == 0x000008, "Wrong alignment on Item_TierBadge_C_Update");
+static_assert(sizeof(Item_TierBadge_C_Update) == 0x000210, "Wrong size on Item_TierBadge_C_Update");
 static_assert(offsetof(Item_TierBadge_C_Update, Current_Tier) == 0x000000, "Member 'Item_TierBadge_C_Update::Current_Tier' has a wrong offset!");
 static_assert(offsetof(Item_TierBadge_C_Update, Max_Tier) == 0x000001, "Member 'Item_TierBadge_C_Update::Max_Tier' has a wrong offset!");
 static_assert(offsetof(Item_TierBadge_C_Update, Brush_Size) == 0x000002, "Member 'Item_TierBadge_C_Update::Brush_Size' has a wrong offset!");
@@ -190,16 +190,16 @@ static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_Not_PreBool
 static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, K2Node_Select_Default) == 0x00000F, "Member 'Item_TierBadge_C_Refresh_Visibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function Item_TierBadge.Item_TierBadge_C.Set Level
-// 0xA15F38A (0xA15F38A - 0x0000)
-struct alignas(0xA15F38A) Item_TierBadge_C_Set_Level final
+// 0x0020 (0x0020 - 0x0000)
+struct Item_TierBadge_C_Set_Level final
 {
 public:
 	int32                                         Current_Level;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Max_Level;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
-static_assert(alignof(Item_TierBadge_C_Set_Level) == 0xA15F38A, "Wrong alignment on Item_TierBadge_C_Set_Level");
-static_assert(sizeof(Item_TierBadge_C_Set_Level) == 0xA15F38A, "Wrong size on Item_TierBadge_C_Set_Level");
+static_assert(alignof(Item_TierBadge_C_Set_Level) == 0x000008, "Wrong alignment on Item_TierBadge_C_Set_Level");
+static_assert(sizeof(Item_TierBadge_C_Set_Level) == 0x000020, "Wrong size on Item_TierBadge_C_Set_Level");
 static_assert(offsetof(Item_TierBadge_C_Set_Level, Current_Level) == 0x000000, "Member 'Item_TierBadge_C_Set_Level::Current_Level' has a wrong offset!");
 static_assert(offsetof(Item_TierBadge_C_Set_Level, Max_Level) == 0x000004, "Member 'Item_TierBadge_C_Set_Level::Max_Level' has a wrong offset!");
 static_assert(offsetof(Item_TierBadge_C_Set_Level, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'Item_TierBadge_C_Set_Level::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");

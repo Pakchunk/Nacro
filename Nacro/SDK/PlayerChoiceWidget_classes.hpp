@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PlayerChoiceWidget.PlayerChoiceWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B0 (0x02F0 - 0x0240)
 class UPlayerChoiceWidget_C final : public UFortUserChoiceWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UBasicStrokeBox_C*                      BasicStrokeBox_26;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCanvasPanel*                           ChoicePanel;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             DecriptionText;                                    // 0x0258(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<UPlayerChoiceWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerChoiceWidget_C) == 0x322CBBB8, "Wrong alignment on UPlayerChoiceWidget_C");
-static_assert(sizeof(UPlayerChoiceWidget_C) == 0x322CBBB8, "Wrong size on UPlayerChoiceWidget_C");
+static_assert(alignof(UPlayerChoiceWidget_C) == 0x000008, "Wrong alignment on UPlayerChoiceWidget_C");
+static_assert(sizeof(UPlayerChoiceWidget_C) == 0x0002F0, "Wrong size on UPlayerChoiceWidget_C");
 static_assert(offsetof(UPlayerChoiceWidget_C, UberGraphFrame) == 0x000240, "Member 'UPlayerChoiceWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPlayerChoiceWidget_C, BasicStrokeBox_26) == 0x000248, "Member 'UPlayerChoiceWidget_C::BasicStrokeBox_26' has a wrong offset!");
 static_assert(offsetof(UPlayerChoiceWidget_C, ChoicePanel) == 0x000250, "Member 'UPlayerChoiceWidget_C::ChoicePanel' has a wrong offset!");

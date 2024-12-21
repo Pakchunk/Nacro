@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaAerialFeedback.AthenaAerialFeedback_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0280 - 0x0260)
 class UAthenaAerialFeedback_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         Feedback;                                          // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       FeedbackText;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UKeybindWidget_C*                       KeybindWidget_0;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UAthenaAerialFeedback_C>();
 	}
 };
-static_assert(alignof(UAthenaAerialFeedback_C) == 0x322CBBB8, "Wrong alignment on UAthenaAerialFeedback_C");
-static_assert(sizeof(UAthenaAerialFeedback_C) == 0x322CBBB8, "Wrong size on UAthenaAerialFeedback_C");
+static_assert(alignof(UAthenaAerialFeedback_C) == 0x000008, "Wrong alignment on UAthenaAerialFeedback_C");
+static_assert(sizeof(UAthenaAerialFeedback_C) == 0x000280, "Wrong size on UAthenaAerialFeedback_C");
 static_assert(offsetof(UAthenaAerialFeedback_C, UberGraphFrame) == 0x000260, "Member 'UAthenaAerialFeedback_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaAerialFeedback_C, Feedback) == 0x000268, "Member 'UAthenaAerialFeedback_C::Feedback' has a wrong offset!");
 static_assert(offsetof(UAthenaAerialFeedback_C, FeedbackText) == 0x000270, "Member 'UAthenaAerialFeedback_C::FeedbackText' has a wrong offset!");

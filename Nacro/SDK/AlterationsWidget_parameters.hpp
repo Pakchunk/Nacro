@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function AlterationsWidget.AlterationsWidget_C.ExecuteUbergraph_AlterationsWidget
-// 0x618A7A80 (0x618A7A80 - 0x0000)
-struct alignas(0x618A7A80) AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget final
+// 0x0070 (0x0070 - 0x0000)
+struct AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,7 +29,7 @@ public:
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAlterationUnlocked_ReturnValue;         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIAlteration                      K2Node_Event_AlterationInfo;                       // 0x0028(0x1182E980)(NoDestructor)
+	struct FFortUIAlteration                      K2Node_Event_AlterationInfo;                       // 0x0028(0x0018)(NoDestructor)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue2;       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPerkDivider_C*                         CallFunc_Create_ReturnValue2;                      // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPerkDivider_C*                         CallFunc_Create_ReturnValue3;                      // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,8 +38,8 @@ public:
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget) == 0x618A7A80, "Wrong alignment on AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget");
-static_assert(sizeof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget) == 0x618A7A80, "Wrong size on AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget");
+static_assert(alignof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget) == 0x000008, "Wrong alignment on AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget");
+static_assert(sizeof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget) == 0x000070, "Wrong size on AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget");
 static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, EntryPoint) == 0x000000, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_Create_ReturnValue) == 0x000010, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
@@ -55,14 +55,14 @@ static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, C
 static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000069, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function AlterationsWidget.AlterationsWidget_C.OnGenerateAlteration
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct AlterationsWidget_C_OnGenerateAlteration final
 {
 public:
-	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0000(0x1182E980)(Parm, NoDestructor)
+	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0000(0x0018)(Parm, NoDestructor)
 };
-static_assert(alignof(AlterationsWidget_C_OnGenerateAlteration) == 0x1182E980, "Wrong alignment on AlterationsWidget_C_OnGenerateAlteration");
-static_assert(sizeof(AlterationsWidget_C_OnGenerateAlteration) == 0x1182E980, "Wrong size on AlterationsWidget_C_OnGenerateAlteration");
+static_assert(alignof(AlterationsWidget_C_OnGenerateAlteration) == 0x000008, "Wrong alignment on AlterationsWidget_C_OnGenerateAlteration");
+static_assert(sizeof(AlterationsWidget_C_OnGenerateAlteration) == 0x000018, "Wrong size on AlterationsWidget_C_OnGenerateAlteration");
 static_assert(offsetof(AlterationsWidget_C_OnGenerateAlteration, AlterationInfo) == 0x000000, "Member 'AlterationsWidget_C_OnGenerateAlteration::AlterationInfo' has a wrong offset!");
 
 }

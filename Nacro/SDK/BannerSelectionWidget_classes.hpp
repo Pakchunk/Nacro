@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BannerSelectionWidget.BannerSelectionWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0090 (0x04B0 - 0x0420)
 class UBannerSelectionWidget_C final : public UFortBannerSelectorBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
 	class UBP_LocalPlayerBannerEditor_C*          BP_LocalPlayerBannerEditor;                        // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ConfirmHomebaseNameButton;                         // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           EntryVbox;                                         // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -35,9 +35,9 @@ public:
 	class UVerticalBox*                           ProgressVBox;                                      // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        Switcher;                                          // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Title;                                             // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FMargin                                PatternPadding;                                    // 0x0480(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    PreviousCategoryAction;                            // 0x0490(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    NextCategoryAction;                                // 0x04A0(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FMargin                                PatternPadding;                                    // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    PreviousCategoryAction;                            // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    NextCategoryAction;                                // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BannerSelectionWidget(int32 EntryPoint);
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<UBannerSelectionWidget_C>();
 	}
 };
-static_assert(alignof(UBannerSelectionWidget_C) == 0x322CBBB8, "Wrong alignment on UBannerSelectionWidget_C");
-static_assert(sizeof(UBannerSelectionWidget_C) == 0x322CBBB8, "Wrong size on UBannerSelectionWidget_C");
+static_assert(alignof(UBannerSelectionWidget_C) == 0x000008, "Wrong alignment on UBannerSelectionWidget_C");
+static_assert(sizeof(UBannerSelectionWidget_C) == 0x0004B0, "Wrong size on UBannerSelectionWidget_C");
 static_assert(offsetof(UBannerSelectionWidget_C, UberGraphFrame) == 0x000420, "Member 'UBannerSelectionWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBannerSelectionWidget_C, BP_LocalPlayerBannerEditor) == 0x000428, "Member 'UBannerSelectionWidget_C::BP_LocalPlayerBannerEditor' has a wrong offset!");
 static_assert(offsetof(UBannerSelectionWidget_C, ConfirmHomebaseNameButton) == 0x000430, "Member 'UBannerSelectionWidget_C::ConfirmHomebaseNameButton' has a wrong offset!");

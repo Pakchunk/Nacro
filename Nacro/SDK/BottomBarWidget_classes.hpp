@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BottomBarWidget.BottomBarWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UBottomBarWidget_C final : public UCommonUserWidget
 {
 public:
 	class UInputReflector_C*                      InputReflector;                                    // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_1;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FMargin                                DefaultButtonMargin;                               // 0x0248(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FMargin                                DefaultButtonMargin;                               // 0x0248(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	static class UClass* StaticClass()
@@ -36,8 +36,8 @@ public:
 		return GetDefaultObjImpl<UBottomBarWidget_C>();
 	}
 };
-static_assert(alignof(UBottomBarWidget_C) == 0x322CBBB8, "Wrong alignment on UBottomBarWidget_C");
-static_assert(sizeof(UBottomBarWidget_C) == 0x322CBBB8, "Wrong size on UBottomBarWidget_C");
+static_assert(alignof(UBottomBarWidget_C) == 0x000008, "Wrong alignment on UBottomBarWidget_C");
+static_assert(sizeof(UBottomBarWidget_C) == 0x000258, "Wrong size on UBottomBarWidget_C");
 static_assert(offsetof(UBottomBarWidget_C, InputReflector) == 0x000238, "Member 'UBottomBarWidget_C::InputReflector' has a wrong offset!");
 static_assert(offsetof(UBottomBarWidget_C, SafeZone_1) == 0x000240, "Member 'UBottomBarWidget_C::SafeZone_1' has a wrong offset!");
 static_assert(offsetof(UBottomBarWidget_C, DefaultButtonMargin) == 0x000248, "Member 'UBottomBarWidget_C::DefaultButtonMargin' has a wrong offset!");

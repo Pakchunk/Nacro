@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaMinimapContainer.AthenaMinimapContainer_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0260 - 0x0260)
 class UAthenaMinimapContainer_C final : public UFortHUDElementWidget
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UAthenaMinimapContainer_C>();
 	}
 };
-static_assert(alignof(UAthenaMinimapContainer_C) == 0x322CBBB8, "Wrong alignment on UAthenaMinimapContainer_C");
-static_assert(sizeof(UAthenaMinimapContainer_C) == 0x322CBBB8, "Wrong size on UAthenaMinimapContainer_C");
+static_assert(alignof(UAthenaMinimapContainer_C) == 0x000008, "Wrong alignment on UAthenaMinimapContainer_C");
+static_assert(sizeof(UAthenaMinimapContainer_C) == 0x000260, "Wrong size on UAthenaMinimapContainer_C");
 
 }
 

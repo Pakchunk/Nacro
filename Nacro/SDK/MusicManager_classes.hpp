@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MusicManager.MusicManager_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x00F8 (0x04C0 - 0x03C8)
 class AMusicManager_C final : public AFortMusicManager
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x0008)(Transient, DuplicateTransient)
 	class USoundBase*                             MusicFrontend;                                     // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             MusicLobby;                                        // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             StingerReturningToAmbientMusic;                    // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -91,8 +91,8 @@ public:
 		return GetDefaultObjImpl<AMusicManager_C>();
 	}
 };
-static_assert(alignof(AMusicManager_C) == 0x11821D80, "Wrong alignment on AMusicManager_C");
-static_assert(sizeof(AMusicManager_C) == 0x11821D80, "Wrong size on AMusicManager_C");
+static_assert(alignof(AMusicManager_C) == 0x000008, "Wrong alignment on AMusicManager_C");
+static_assert(sizeof(AMusicManager_C) == 0x0004C0, "Wrong size on AMusicManager_C");
 static_assert(offsetof(AMusicManager_C, UberGraphFrame) == 0x0003C8, "Member 'AMusicManager_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AMusicManager_C, MusicFrontend) == 0x0003D0, "Member 'AMusicManager_C::MusicFrontend' has a wrong offset!");
 static_assert(offsetof(AMusicManager_C, MusicLobby) == 0x0003D8, "Member 'AMusicManager_C::MusicLobby' has a wrong offset!");

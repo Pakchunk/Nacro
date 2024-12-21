@@ -15,34 +15,34 @@ namespace SDK
 {
 
 // ScriptStruct GeometryCache.TrackRenderData
-// 0x1182AF00 (0x1182AF00 - 0x0000)
-struct alignas(0x1182AF00) FTrackRenderData final
+// 0x0050 (0x0050 - 0x0000)
+struct alignas(0x10) FTrackRenderData final
 {
 public:
 	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTrackRenderData) == 0x1182AF00, "Wrong alignment on FTrackRenderData");
-static_assert(sizeof(FTrackRenderData) == 0x1182AF00, "Wrong size on FTrackRenderData");
+static_assert(alignof(FTrackRenderData) == 0x000010, "Wrong alignment on FTrackRenderData");
+static_assert(sizeof(FTrackRenderData) == 0x000050, "Wrong size on FTrackRenderData");
 
 // ScriptStruct GeometryCache.GeometryCacheMeshData
-// 0x1182B200 (0x1182B200 - 0x0000)
-struct alignas(0x1182B200) FGeometryCacheMeshData final
+// 0x0050 (0x0050 - 0x0000)
+struct alignas(0x08) FGeometryCacheMeshData final
 {
 public:
 	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGeometryCacheMeshData) == 0x1182B200, "Wrong alignment on FGeometryCacheMeshData");
-static_assert(sizeof(FGeometryCacheMeshData) == 0x1182B200, "Wrong size on FGeometryCacheMeshData");
+static_assert(alignof(FGeometryCacheMeshData) == 0x000008, "Wrong alignment on FGeometryCacheMeshData");
+static_assert(sizeof(FGeometryCacheMeshData) == 0x000050, "Wrong size on FGeometryCacheMeshData");
 
 // ScriptStruct GeometryCache.GeometryCacheMeshBatchInfo
-// 0x1182B200 (0x1182B200 - 0x0000)
-struct alignas(0x1182B200) FGeometryCacheMeshBatchInfo final
+// 0x000C (0x000C - 0x0000)
+struct alignas(0x04) FGeometryCacheMeshBatchInfo final
 {
 public:
 	uint8                                         Pad_0[0xC];                                        // 0x0000(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGeometryCacheMeshBatchInfo) == 0x1182B200, "Wrong alignment on FGeometryCacheMeshBatchInfo");
-static_assert(sizeof(FGeometryCacheMeshBatchInfo) == 0x1182B200, "Wrong size on FGeometryCacheMeshBatchInfo");
+static_assert(alignof(FGeometryCacheMeshBatchInfo) == 0x000004, "Wrong alignment on FGeometryCacheMeshBatchInfo");
+static_assert(sizeof(FGeometryCacheMeshBatchInfo) == 0x00000C, "Wrong size on FGeometryCacheMeshBatchInfo");
 
 }
 

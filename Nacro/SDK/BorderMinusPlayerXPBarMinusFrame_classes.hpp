@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-PlayerXPBar-Frame.Border-PlayerXPBar-Frame_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusPlayerXPBarMinusFrame_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusPlayerXPBarMinusFrame_C>();
 	}
 };
-static_assert(alignof(UBorderMinusPlayerXPBarMinusFrame_C) == 0x11827900, "Wrong alignment on UBorderMinusPlayerXPBarMinusFrame_C");
-static_assert(sizeof(UBorderMinusPlayerXPBarMinusFrame_C) == 0x11827900, "Wrong size on UBorderMinusPlayerXPBarMinusFrame_C");
+static_assert(alignof(UBorderMinusPlayerXPBarMinusFrame_C) == 0x000008, "Wrong alignment on UBorderMinusPlayerXPBarMinusFrame_C");
+static_assert(sizeof(UBorderMinusPlayerXPBarMinusFrame_C) == 0x0000B8, "Wrong size on UBorderMinusPlayerXPBarMinusFrame_C");
 
 }
 

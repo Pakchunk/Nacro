@@ -11,19 +11,19 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "TabGameOptions_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TabGameOptionsMain.TabGameOptionsMain_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A0 (0x0348 - 0x02A8)
 class UTabGameOptionsMain_C final : public UTabGameOptions_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_TabGameOptionsMain_C;               // 0x02A8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_TabGameOptionsMain_C;               // 0x02A8(0x0008)(Transient, DuplicateTransient)
 	class URotatorSelector_C*                     AutoEquipBetterItems;                              // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOptionsMenuSlider_C*                   ControllerLookSensitivityX;                        // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOptionsMenuSlider_C*                   ControllerLookSensitivityY;                        // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -82,8 +82,8 @@ public:
 		return GetDefaultObjImpl<UTabGameOptionsMain_C>();
 	}
 };
-static_assert(alignof(UTabGameOptionsMain_C) == 0x322CBBB8, "Wrong alignment on UTabGameOptionsMain_C");
-static_assert(sizeof(UTabGameOptionsMain_C) == 0x322CBBB8, "Wrong size on UTabGameOptionsMain_C");
+static_assert(alignof(UTabGameOptionsMain_C) == 0x000008, "Wrong alignment on UTabGameOptionsMain_C");
+static_assert(sizeof(UTabGameOptionsMain_C) == 0x000348, "Wrong size on UTabGameOptionsMain_C");
 static_assert(offsetof(UTabGameOptionsMain_C, UberGraphFrame_TabGameOptionsMain_C) == 0x0002A8, "Member 'UTabGameOptionsMain_C::UberGraphFrame_TabGameOptionsMain_C' has a wrong offset!");
 static_assert(offsetof(UTabGameOptionsMain_C, AutoEquipBetterItems) == 0x0002B0, "Member 'UTabGameOptionsMain_C::AutoEquipBetterItems' has a wrong offset!");
 static_assert(offsetof(UTabGameOptionsMain_C, ControllerLookSensitivityX) == 0x0002B8, "Member 'UTabGameOptionsMain_C::ControllerLookSensitivityX' has a wrong offset!");

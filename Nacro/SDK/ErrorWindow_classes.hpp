@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ErrorWindow.ErrorWindow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x0490 - 0x0420)
 class UErrorWindow_C final : public UFortErrorWindow
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CloseButton;                                       // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_ErrorRed;                                    // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UErrorWindow_C>();
 	}
 };
-static_assert(alignof(UErrorWindow_C) == 0x322CBBB8, "Wrong alignment on UErrorWindow_C");
-static_assert(sizeof(UErrorWindow_C) == 0x322CBBB8, "Wrong size on UErrorWindow_C");
+static_assert(alignof(UErrorWindow_C) == 0x000008, "Wrong alignment on UErrorWindow_C");
+static_assert(sizeof(UErrorWindow_C) == 0x000490, "Wrong size on UErrorWindow_C");
 static_assert(offsetof(UErrorWindow_C, UberGraphFrame) == 0x000420, "Member 'UErrorWindow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UErrorWindow_C, CloseButton) == 0x000428, "Member 'UErrorWindow_C::CloseButton' has a wrong offset!");
 static_assert(offsetof(UErrorWindow_C, Image_0) == 0x000430, "Member 'UErrorWindow_C::Image_0' has a wrong offset!");

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortUIStylesheet_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "FortUIStylesheet_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 
@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0CE0 (0x0FF8 - 0x0318)
 class UTooltipMinusDisplayAttribute_C final : public UFortAttributeListItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Blink;                                             // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderBasicPairedValue;                            // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderBasicSingleValue;                            // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -41,16 +41,17 @@ public:
 	class UTextBlock*                             TextBasicPairedValue;                              // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextBasicSingleValue;                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyBasicGradientFill_C*             WidgetGradient;                                    // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  TooltipData;                                       // 0x0390(0x11821C00)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFortDisplayAttribute                  TooltipData;                                       // 0x0390(0x0070)(Edit, BlueprintVisible, ExposeOnSpawn)
 	EFortStatValueDisplayType                     Display_Type;                                      // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortBuffState                                Buff_State;                                        // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortComparisonType                           Comparison_Type;                                   // 0x0402(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_403[0x1];                                      // 0x0403(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Blank;                                             // 0x0404(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Base_Color;                                        // 0x0414(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Buff_Color;                                        // 0x0424(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Default_White;                                     // 0x0434(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0448(0x2CF5BC00)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FLinearColor                           Blank;                                             // 0x0404(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Base_Color;                                        // 0x0414(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Buff_Color;                                        // 0x0424(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Default_White;                                     // 0x0434(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_444[0x4];                                      // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortUIStylesheet                      Stylesheet;                                        // 0x0448(0x0BB0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_TooltipMinusDisplayAttribute(int32 EntryPoint);
@@ -76,8 +77,8 @@ public:
 		return GetDefaultObjImpl<UTooltipMinusDisplayAttribute_C>();
 	}
 };
-static_assert(alignof(UTooltipMinusDisplayAttribute_C) == 0x322CBBB8, "Wrong alignment on UTooltipMinusDisplayAttribute_C");
-static_assert(sizeof(UTooltipMinusDisplayAttribute_C) == 0x322CBBB8, "Wrong size on UTooltipMinusDisplayAttribute_C");
+static_assert(alignof(UTooltipMinusDisplayAttribute_C) == 0x000008, "Wrong alignment on UTooltipMinusDisplayAttribute_C");
+static_assert(sizeof(UTooltipMinusDisplayAttribute_C) == 0x000FF8, "Wrong size on UTooltipMinusDisplayAttribute_C");
 static_assert(offsetof(UTooltipMinusDisplayAttribute_C, UberGraphFrame) == 0x000318, "Member 'UTooltipMinusDisplayAttribute_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTooltipMinusDisplayAttribute_C, Blink) == 0x000320, "Member 'UTooltipMinusDisplayAttribute_C::Blink' has a wrong offset!");
 static_assert(offsetof(UTooltipMinusDisplayAttribute_C, BorderBasicPairedValue) == 0x000328, "Member 'UTooltipMinusDisplayAttribute_C::BorderBasicPairedValue' has a wrong offset!");

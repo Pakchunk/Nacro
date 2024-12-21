@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function SquadSlotGroup.SquadSlotGroup_C.ExecuteUbergraph_SquadSlotGroup
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01F0 (0x01F0 - 0x0000)
 struct SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup final
 {
 public:
@@ -29,16 +29,16 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x322CBBB8)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0038(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0028)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0038(0x0090)()
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C9[0x3];                                       // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x00CC(0x11827900)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0100(0x11829280)(ConstParm)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0178(0x11829280)(ConstParm)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x00CC(0x0034)(IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0100(0x0078)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0178(0x0078)(ConstParm)
 };
-static_assert(alignof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup) == 0x322CBBB8, "Wrong alignment on SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup");
-static_assert(sizeof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup) == 0x322CBBB8, "Wrong size on SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup");
+static_assert(alignof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup) == 0x000008, "Wrong alignment on SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup");
+static_assert(sizeof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup) == 0x0001F0, "Wrong size on SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup");
 static_assert(offsetof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup, EntryPoint) == 0x000000, "Member 'SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup, Temp_byte_Variable) == 0x000004, "Member 'SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup, Temp_byte_Variable2) == 0x000005, "Member 'SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup::Temp_byte_Variable2' has a wrong offset!");
@@ -53,26 +53,27 @@ static_assert(offsetof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup, K2Node_
 static_assert(offsetof(SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup, K2Node_Event_MouseEvent) == 0x000178, "Member 'SquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup::K2Node_Event_MouseEvent' has a wrong offset!");
 
 // Function SquadSlotGroup.SquadSlotGroup_C.OnMouseLeave
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct SquadSlotGroup_C_OnMouseLeave final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SquadSlotGroup_C_OnMouseLeave) == 0x11829280, "Wrong alignment on SquadSlotGroup_C_OnMouseLeave");
-static_assert(sizeof(SquadSlotGroup_C_OnMouseLeave) == 0x11829280, "Wrong size on SquadSlotGroup_C_OnMouseLeave");
+static_assert(alignof(SquadSlotGroup_C_OnMouseLeave) == 0x000008, "Wrong alignment on SquadSlotGroup_C_OnMouseLeave");
+static_assert(sizeof(SquadSlotGroup_C_OnMouseLeave) == 0x000078, "Wrong size on SquadSlotGroup_C_OnMouseLeave");
 static_assert(offsetof(SquadSlotGroup_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'SquadSlotGroup_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function SquadSlotGroup.SquadSlotGroup_C.OnMouseEnter
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct SquadSlotGroup_C_OnMouseEnter final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SquadSlotGroup_C_OnMouseEnter) == 0x11829280, "Wrong alignment on SquadSlotGroup_C_OnMouseEnter");
-static_assert(sizeof(SquadSlotGroup_C_OnMouseEnter) == 0x11829280, "Wrong size on SquadSlotGroup_C_OnMouseEnter");
+static_assert(alignof(SquadSlotGroup_C_OnMouseEnter) == 0x000008, "Wrong alignment on SquadSlotGroup_C_OnMouseEnter");
+static_assert(sizeof(SquadSlotGroup_C_OnMouseEnter) == 0x0000B0, "Wrong size on SquadSlotGroup_C_OnMouseEnter");
 static_assert(offsetof(SquadSlotGroup_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'SquadSlotGroup_C_OnMouseEnter::MyGeometry' has a wrong offset!");
 static_assert(offsetof(SquadSlotGroup_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'SquadSlotGroup_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 

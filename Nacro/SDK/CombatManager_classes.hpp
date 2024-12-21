@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CombatManager.CombatManager_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0008 (0x0C08 - 0x0C00)
 class ACombatManager_C final : public AFortCombatManager
 {
 public:
@@ -36,8 +36,8 @@ public:
 		return GetDefaultObjImpl<ACombatManager_C>();
 	}
 };
-static_assert(alignof(ACombatManager_C) == 0x11821D80, "Wrong alignment on ACombatManager_C");
-static_assert(sizeof(ACombatManager_C) == 0x11821D80, "Wrong size on ACombatManager_C");
+static_assert(alignof(ACombatManager_C) == 0x000008, "Wrong alignment on ACombatManager_C");
+static_assert(sizeof(ACombatManager_C) == 0x000C08, "Wrong size on ACombatManager_C");
 static_assert(offsetof(ACombatManager_C, DefaultSceneRoot) == 0x000C00, "Member 'ACombatManager_C::DefaultSceneRoot' has a wrong offset!");
 
 }

@@ -20,12 +20,12 @@ namespace SDK
 {
 
 // Class ActorSequence.ActorSequence
-// 0x2880 (0x1182B200 - 0x11828980)
+// 0x0028 (0x0300 - 0x02D8)
 class UActorSequence final : public UMovieSceneSequence
 {
 public:
 	class UMovieScene*                            MovieScene;                                        // 0x02D8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FActorSequenceObjectReferenceMap       ObjectReferences;                                  // 0x02E0(0x1182B200)(NativeAccessSpecifierPrivate)
+	struct FActorSequenceObjectReferenceMap       ObjectReferences;                                  // 0x02E0(0x0020)(NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -37,17 +37,17 @@ public:
 		return GetDefaultObjImpl<UActorSequence>();
 	}
 };
-static_assert(alignof(UActorSequence) == 0x1182B200, "Wrong alignment on UActorSequence");
-static_assert(sizeof(UActorSequence) == 0x1182B200, "Wrong size on UActorSequence");
+static_assert(alignof(UActorSequence) == 0x000008, "Wrong alignment on UActorSequence");
+static_assert(sizeof(UActorSequence) == 0x000300, "Wrong size on UActorSequence");
 static_assert(offsetof(UActorSequence, MovieScene) == 0x0002D8, "Member 'UActorSequence::MovieScene' has a wrong offset!");
 static_assert(offsetof(UActorSequence, ObjectReferences) == 0x0002E0, "Member 'UActorSequence::ObjectReferences' has a wrong offset!");
 
 // Class ActorSequence.ActorSequenceComponent
-// 0x6C00 (0x11828980 - 0x11821D80)
+// 0x0040 (0x0130 - 0x00F0)
 class UActorSequenceComponent final : public UActorComponent
 {
 public:
-	struct FMovieSceneSequencePlaybackSettings    PlaybackSettings;                                  // 0x00F0(0x11828980)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FMovieSceneSequencePlaybackSettings    PlaybackSettings;                                  // 0x00F0(0x0028)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	class UActorSequence*                         Sequence;                                          // 0x0118(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UActorSequencePlayer*                   SequencePlayer;                                    // 0x0120(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bAutoPlay;                                         // 0x0128(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -63,15 +63,15 @@ public:
 		return GetDefaultObjImpl<UActorSequenceComponent>();
 	}
 };
-static_assert(alignof(UActorSequenceComponent) == 0x11828980, "Wrong alignment on UActorSequenceComponent");
-static_assert(sizeof(UActorSequenceComponent) == 0x11828980, "Wrong size on UActorSequenceComponent");
+static_assert(alignof(UActorSequenceComponent) == 0x000008, "Wrong alignment on UActorSequenceComponent");
+static_assert(sizeof(UActorSequenceComponent) == 0x000130, "Wrong size on UActorSequenceComponent");
 static_assert(offsetof(UActorSequenceComponent, PlaybackSettings) == 0x0000F0, "Member 'UActorSequenceComponent::PlaybackSettings' has a wrong offset!");
 static_assert(offsetof(UActorSequenceComponent, Sequence) == 0x000118, "Member 'UActorSequenceComponent::Sequence' has a wrong offset!");
 static_assert(offsetof(UActorSequenceComponent, SequencePlayer) == 0x000120, "Member 'UActorSequenceComponent::SequencePlayer' has a wrong offset!");
 static_assert(offsetof(UActorSequenceComponent, bAutoPlay) == 0x000128, "Member 'UActorSequenceComponent::bAutoPlay' has a wrong offset!");
 
 // Class ActorSequence.ActorSequencePlayer
-// 0x0000 (0x11828980 - 0x11828980)
+// 0x0000 (0x0690 - 0x0690)
 class UActorSequencePlayer final : public UMovieSceneSequencePlayer
 {
 public:
@@ -84,8 +84,8 @@ public:
 		return GetDefaultObjImpl<UActorSequencePlayer>();
 	}
 };
-static_assert(alignof(UActorSequencePlayer) == 0x11828980, "Wrong alignment on UActorSequencePlayer");
-static_assert(sizeof(UActorSequencePlayer) == 0x11828980, "Wrong size on UActorSequencePlayer");
+static_assert(alignof(UActorSequencePlayer) == 0x000008, "Wrong alignment on UActorSequencePlayer");
+static_assert(sizeof(UActorSequencePlayer) == 0x000690, "Wrong size on UActorSequencePlayer");
 
 }
 

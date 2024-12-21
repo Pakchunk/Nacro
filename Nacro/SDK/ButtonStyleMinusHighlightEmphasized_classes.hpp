@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-HighlightEmphasized.ButtonStyle-HighlightEmphasized_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusHighlightEmphasized_C final : public UButtonStyleMinusMediumTransparentNoCues_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusHighlightEmphasized_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusHighlightEmphasized_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusHighlightEmphasized_C");
-static_assert(sizeof(UButtonStyleMinusHighlightEmphasized_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusHighlightEmphasized_C");
+static_assert(alignof(UButtonStyleMinusHighlightEmphasized_C) == 0x000008, "Wrong alignment on UButtonStyleMinusHighlightEmphasized_C");
+static_assert(sizeof(UButtonStyleMinusHighlightEmphasized_C) == 0x000530, "Wrong size on UButtonStyleMinusHighlightEmphasized_C");
 
 }
 

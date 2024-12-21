@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNS_Outlander_HeavyStuffDamage.GCNS_Outlander_HeavyStuffDamage_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0070 - 0x0070)
 class UGCNS_Outlander_HeavyStuffDamage_C final : public UFortGameplayCueNotify_Simple
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGCNS_Outlander_HeavyStuffDamage_C>();
 	}
 };
-static_assert(alignof(UGCNS_Outlander_HeavyStuffDamage_C) == 0x11821D80, "Wrong alignment on UGCNS_Outlander_HeavyStuffDamage_C");
-static_assert(sizeof(UGCNS_Outlander_HeavyStuffDamage_C) == 0x11821D80, "Wrong size on UGCNS_Outlander_HeavyStuffDamage_C");
+static_assert(alignof(UGCNS_Outlander_HeavyStuffDamage_C) == 0x000008, "Wrong alignment on UGCNS_Outlander_HeavyStuffDamage_C");
+static_assert(sizeof(UGCNS_Outlander_HeavyStuffDamage_C) == 0x000070, "Wrong size on UGCNS_Outlander_HeavyStuffDamage_C");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemInspectionMainItemDetailsHostPanel.ItemInspectionMainItemDetailsHostPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x02C0 - 0x0290)
 class UItemInspectionMainItemDetailsHostPanel_C final : public UFortItemDetailsHostPanel
 {
 public:
@@ -38,8 +38,8 @@ public:
 		return GetDefaultObjImpl<UItemInspectionMainItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UItemInspectionMainItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong alignment on UItemInspectionMainItemDetailsHostPanel_C");
-static_assert(sizeof(UItemInspectionMainItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong size on UItemInspectionMainItemDetailsHostPanel_C");
+static_assert(alignof(UItemInspectionMainItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UItemInspectionMainItemDetailsHostPanel_C");
+static_assert(sizeof(UItemInspectionMainItemDetailsHostPanel_C) == 0x0002C0, "Wrong size on UItemInspectionMainItemDetailsHostPanel_C");
 static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, HeaderWidget) == 0x000290, "Member 'UItemInspectionMainItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
 static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, ItemAttributesDetailWidget) == 0x000298, "Member 'UItemInspectionMainItemDetailsHostPanel_C::ItemAttributesDetailWidget' has a wrong offset!");
 static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, ItemCalledOutAttributesDetailWidget) == 0x0002A0, "Member 'UItemInspectionMainItemDetailsHostPanel_C::ItemCalledOutAttributesDetailWidget' has a wrong offset!");

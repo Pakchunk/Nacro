@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-SignInPage-S.TextStyle-SignInPage-S_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusSignInPageMinusS_C final : public UTextStyleMinusBaseParent_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusSignInPageMinusS_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusSignInPageMinusS_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusSignInPageMinusS_C");
-static_assert(sizeof(UTextStyleMinusSignInPageMinusS_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusSignInPageMinusS_C");
+static_assert(alignof(UTextStyleMinusSignInPageMinusS_C) == 0x000008, "Wrong alignment on UTextStyleMinusSignInPageMinusS_C");
+static_assert(sizeof(UTextStyleMinusSignInPageMinusS_C) == 0x0000D0, "Wrong size on UTextStyleMinusSignInPageMinusS_C");
 
 }
 

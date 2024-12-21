@@ -19,8 +19,8 @@ namespace SDK::Params
 {
 
 // Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.ExecuteUbergraph_AthenaInventoryLimitStatusIndicator
-// 0x460065 (0x460065 - 0x0000)
-struct alignas(0x460065) AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator final
+// 0x0040 (0x0040 - 0x0000)
+struct AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -30,8 +30,8 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator) == 0x460065, "Wrong alignment on AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator");
-static_assert(sizeof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator) == 0x460065, "Wrong size on AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator");
+static_assert(alignof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator) == 0x000008, "Wrong alignment on AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator");
+static_assert(sizeof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator) == 0x000040, "Wrong size on AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator");
 static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator, EntryPoint) == 0x000000, "Member 'AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator, K2Node_CustomEvent_ItemsAdded) == 0x000008, "Member 'AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator::K2Node_CustomEvent_ItemsAdded' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator, K2Node_CustomEvent_ItemsRemoved) == 0x000018, "Member 'AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator::K2Node_CustomEvent_ItemsRemoved' has a wrong offset!");
@@ -65,22 +65,22 @@ static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory
 static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.RefreshWorldInventoryStatus
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus final
 {
 public:
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0000(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x0020(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetBackpackItemCounts_ItemsCount;         // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetBackpackItemCounts_MaxItemsCount;      // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetBackpackItemCounts_OverflowItemsCount; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color2;             // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color2;             // 0x003C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0090(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0090(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00D0(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x00E0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00F0(0x0018)()
@@ -93,12 +93,13 @@ public:
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue2;             // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x0132(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_133[0x1];                                      // 0x0133(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0134(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0144(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0158(0x322CBBB8)()
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0134(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0144(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0158(0x0028)()
 };
-static_assert(alignof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus) == 0x322CBBB8, "Wrong alignment on AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus");
-static_assert(sizeof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus) == 0x322CBBB8, "Wrong size on AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus");
+static_assert(alignof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus) == 0x000008, "Wrong alignment on AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus");
+static_assert(sizeof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus) == 0x000180, "Wrong size on AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus");
 static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, Temp_struct_Variable) == 0x000000, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, Temp_bool_Variable) == 0x000010, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetContext_ReturnValue' has a wrong offset!");

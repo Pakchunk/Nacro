@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SignInWidget.SignInWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x0478 - 0x0410)
 class USignInWidget_C final : public UFortSignInWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UNamedSlot*                             ButtonSlot;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonLazyImage*                       CommonLazyImage_0;                                 // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           ContentBox;                                        // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -32,7 +32,7 @@ public:
 	class UIconTextButton_C*                      IconTextButton;                                    // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          PasswordBorder;                                    // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Title;                                             // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    LoginInputAction;                                  // 0x0458(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    LoginInputAction;                                  // 0x0458(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class UClass*                                 HighlightBorderStyle;                              // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 NormalBorderStyle;                                 // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -57,8 +57,8 @@ public:
 		return GetDefaultObjImpl<USignInWidget_C>();
 	}
 };
-static_assert(alignof(USignInWidget_C) == 0x322CBBB8, "Wrong alignment on USignInWidget_C");
-static_assert(sizeof(USignInWidget_C) == 0x322CBBB8, "Wrong size on USignInWidget_C");
+static_assert(alignof(USignInWidget_C) == 0x000008, "Wrong alignment on USignInWidget_C");
+static_assert(sizeof(USignInWidget_C) == 0x000478, "Wrong size on USignInWidget_C");
 static_assert(offsetof(USignInWidget_C, UberGraphFrame) == 0x000410, "Member 'USignInWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USignInWidget_C, ButtonSlot) == 0x000418, "Member 'USignInWidget_C::ButtonSlot' has a wrong offset!");
 static_assert(offsetof(USignInWidget_C, CommonLazyImage_0) == 0x000420, "Member 'USignInWidget_C::CommonLazyImage_0' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x02B8 - 0x0260)
 class UAthenaGamePhaseChangeWidget_C final : public UAthenaHUDGamePhaseChangingBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       IconSlide;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       IconPulse;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       ModeChanged;                                       // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UAthenaGamePhaseChangeWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaGamePhaseChangeWidget_C) == 0x322CBBB8, "Wrong alignment on UAthenaGamePhaseChangeWidget_C");
-static_assert(sizeof(UAthenaGamePhaseChangeWidget_C) == 0x322CBBB8, "Wrong size on UAthenaGamePhaseChangeWidget_C");
+static_assert(alignof(UAthenaGamePhaseChangeWidget_C) == 0x000008, "Wrong alignment on UAthenaGamePhaseChangeWidget_C");
+static_assert(sizeof(UAthenaGamePhaseChangeWidget_C) == 0x0002B8, "Wrong size on UAthenaGamePhaseChangeWidget_C");
 static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaGamePhaseChangeWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, IconSlide) == 0x000268, "Member 'UAthenaGamePhaseChangeWidget_C::IconSlide' has a wrong offset!");
 static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, IconPulse) == 0x000270, "Member 'UAthenaGamePhaseChangeWidget_C::IconPulse' has a wrong offset!");

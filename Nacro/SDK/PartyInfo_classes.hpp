@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PartyInfo.PartyInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02A0 - 0x0230)
 class UPartyInfo_C final : public UUserWidget
 {
 public:
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UPartyInfo_C>();
 	}
 };
-static_assert(alignof(UPartyInfo_C) == 0x322CBBB8, "Wrong alignment on UPartyInfo_C");
-static_assert(sizeof(UPartyInfo_C) == 0x322CBBB8, "Wrong size on UPartyInfo_C");
+static_assert(alignof(UPartyInfo_C) == 0x000008, "Wrong alignment on UPartyInfo_C");
+static_assert(sizeof(UPartyInfo_C) == 0x0002A0, "Wrong size on UPartyInfo_C");
 static_assert(offsetof(UPartyInfo_C, Biome_Info) == 0x000230, "Member 'UPartyInfo_C::Biome_Info' has a wrong offset!");
 static_assert(offsetof(UPartyInfo_C, BiomeName) == 0x000238, "Member 'UPartyInfo_C::BiomeName' has a wrong offset!");
 static_assert(offsetof(UPartyInfo_C, Difficulty_Info) == 0x000240, "Member 'UPartyInfo_C::Difficulty_Info' has a wrong offset!");

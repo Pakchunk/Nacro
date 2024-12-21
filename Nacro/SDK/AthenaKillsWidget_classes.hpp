@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaKillsWidget.AthenaKillsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0290 - 0x0260)
 class UAthenaKillsWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_1;                                           // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             KillsText;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   KillsPrefix;                                       // 0x0278(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UAthenaKillsWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaKillsWidget_C) == 0x322CBBB8, "Wrong alignment on UAthenaKillsWidget_C");
-static_assert(sizeof(UAthenaKillsWidget_C) == 0x322CBBB8, "Wrong size on UAthenaKillsWidget_C");
+static_assert(alignof(UAthenaKillsWidget_C) == 0x000008, "Wrong alignment on UAthenaKillsWidget_C");
+static_assert(sizeof(UAthenaKillsWidget_C) == 0x000290, "Wrong size on UAthenaKillsWidget_C");
 static_assert(offsetof(UAthenaKillsWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaKillsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaKillsWidget_C, Image_1) == 0x000268, "Member 'UAthenaKillsWidget_C::Image_1' has a wrong offset!");
 static_assert(offsetof(UAthenaKillsWidget_C, KillsText) == 0x000270, "Member 'UAthenaKillsWidget_C::KillsText' has a wrong offset!");

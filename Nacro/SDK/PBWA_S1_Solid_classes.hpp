@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_S1_Solid.PBWA_S1_Solid_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0030 (0x10E0 - 0x10B0)
 class APBWA_S1_Solid_C final : public ABuildingWall
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x10B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x10B0(0x0008)(Transient, DuplicateTransient)
 	int32                                         GnomeWallChance;                                   // 0x10B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         GnomeWallMax;                                      // 0x10BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Gnomed;                                            // 0x10C0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<APBWA_S1_Solid_C>();
 	}
 };
-static_assert(alignof(APBWA_S1_Solid_C) == 0x1182A000, "Wrong alignment on APBWA_S1_Solid_C");
-static_assert(sizeof(APBWA_S1_Solid_C) == 0x1182A000, "Wrong size on APBWA_S1_Solid_C");
+static_assert(alignof(APBWA_S1_Solid_C) == 0x000010, "Wrong alignment on APBWA_S1_Solid_C");
+static_assert(sizeof(APBWA_S1_Solid_C) == 0x0010E0, "Wrong size on APBWA_S1_Solid_C");
 static_assert(offsetof(APBWA_S1_Solid_C, UberGraphFrame) == 0x0010B0, "Member 'APBWA_S1_Solid_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(APBWA_S1_Solid_C, GnomeWallChance) == 0x0010B8, "Member 'APBWA_S1_Solid_C::GnomeWallChance' has a wrong offset!");
 static_assert(offsetof(APBWA_S1_Solid_C, GnomeWallMax) == 0x0010BC, "Member 'APBWA_S1_Solid_C::GnomeWallMax' has a wrong offset!");

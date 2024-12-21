@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PickupManager.PickupManager_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x02D8 - 0x0260)
 class UPickupManager_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UPackResource_C*                        _Pack_Resource__Metal;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPackResource_C*                        _Pack_Resource__Stone;                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPackResource_C*                        _Pack_Resource__Wood;                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UPickupManager_C>();
 	}
 };
-static_assert(alignof(UPickupManager_C) == 0x322CBBB8, "Wrong alignment on UPickupManager_C");
-static_assert(sizeof(UPickupManager_C) == 0x322CBBB8, "Wrong size on UPickupManager_C");
+static_assert(alignof(UPickupManager_C) == 0x000008, "Wrong alignment on UPickupManager_C");
+static_assert(sizeof(UPickupManager_C) == 0x0002D8, "Wrong size on UPickupManager_C");
 static_assert(offsetof(UPickupManager_C, UberGraphFrame) == 0x000260, "Member 'UPickupManager_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPickupManager_C, _Pack_Resource__Metal) == 0x000268, "Member 'UPickupManager_C::_Pack_Resource__Metal' has a wrong offset!");
 static_assert(offsetof(UPickupManager_C, _Pack_Resource__Stone) == 0x000270, "Member 'UPickupManager_C::_Pack_Resource__Stone' has a wrong offset!");

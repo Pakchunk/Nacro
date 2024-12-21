@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0900 - 0x08D0)
 class UAthenaInventoryFortItemTileButton_C final : public UAthenaInventoryFortItemTileButtonBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08D0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08D0(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 DropTarget;                                        // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                EquipSlotBorder;                                   // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 EquipSlotOverlay;                                  // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UAthenaInventoryFortItemTileButton_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryFortItemTileButton_C) == 0x322CBBB8, "Wrong alignment on UAthenaInventoryFortItemTileButton_C");
-static_assert(sizeof(UAthenaInventoryFortItemTileButton_C) == 0x322CBBB8, "Wrong size on UAthenaInventoryFortItemTileButton_C");
+static_assert(alignof(UAthenaInventoryFortItemTileButton_C) == 0x000008, "Wrong alignment on UAthenaInventoryFortItemTileButton_C");
+static_assert(sizeof(UAthenaInventoryFortItemTileButton_C) == 0x000900, "Wrong size on UAthenaInventoryFortItemTileButton_C");
 static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, UberGraphFrame) == 0x0008D0, "Member 'UAthenaInventoryFortItemTileButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, DropTarget) == 0x0008D8, "Member 'UAthenaInventoryFortItemTileButton_C::DropTarget' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, EquipSlotBorder) == 0x0008E0, "Member 'UAthenaInventoryFortItemTileButton_C::EquipSlotBorder' has a wrong offset!");

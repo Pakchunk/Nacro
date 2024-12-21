@@ -40,14 +40,14 @@ static_assert(offsetof(NewsEntry_C_ExecuteUbergraph_NewsEntry, EntryPoint) == 0x
 static_assert(offsetof(NewsEntry_C_ExecuteUbergraph_NewsEntry, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'NewsEntry_C_ExecuteUbergraph_NewsEntry::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function NewsEntry.NewsEntry_C.BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature
-// 0x016A (0x016A - 0x0000)
-struct alignas(0x16A) NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature) == 0x00016A, "Wrong alignment on NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature) == 0x00016A, "Wrong size on NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'NewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function NewsEntry.NewsEntry_C.SetFocus

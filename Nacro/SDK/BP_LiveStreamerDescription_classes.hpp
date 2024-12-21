@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_LiveStreamerDescription.BP_LiveStreamerDescription_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0278 - 0x0230)
 class UBP_LiveStreamerDescription_C final : public UUserWidget
 {
 public:
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UBP_LiveStreamerDescription_C>();
 	}
 };
-static_assert(alignof(UBP_LiveStreamerDescription_C) == 0x322CBBB8, "Wrong alignment on UBP_LiveStreamerDescription_C");
-static_assert(sizeof(UBP_LiveStreamerDescription_C) == 0x322CBBB8, "Wrong size on UBP_LiveStreamerDescription_C");
+static_assert(alignof(UBP_LiveStreamerDescription_C) == 0x000008, "Wrong alignment on UBP_LiveStreamerDescription_C");
+static_assert(sizeof(UBP_LiveStreamerDescription_C) == 0x000278, "Wrong size on UBP_LiveStreamerDescription_C");
 static_assert(offsetof(UBP_LiveStreamerDescription_C, BroadcasterDescText) == 0x000230, "Member 'UBP_LiveStreamerDescription_C::BroadcasterDescText' has a wrong offset!");
 static_assert(offsetof(UBP_LiveStreamerDescription_C, BroadcasterViewerSwitcher) == 0x000238, "Member 'UBP_LiveStreamerDescription_C::BroadcasterViewerSwitcher' has a wrong offset!");
 static_assert(offsetof(UBP_LiveStreamerDescription_C, LiveStreamTitileText) == 0x000240, "Member 'UBP_LiveStreamerDescription_C::LiveStreamTitileText' has a wrong offset!");

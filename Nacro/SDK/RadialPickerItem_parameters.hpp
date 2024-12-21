@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function RadialPickerItem.RadialPickerItem_C.ExecuteUbergraph_RadialPickerItem
-// 0x0032 (0x0032 - 0x0000)
-struct alignas(0x19) RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem final
+// 0x0020 (0x0020 - 0x0000)
+struct RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -27,19 +27,19 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem) == 0x000019, "Wrong alignment on RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem");
-static_assert(sizeof(RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem) == 0x000032, "Wrong size on RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem");
+static_assert(alignof(RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem) == 0x000008, "Wrong alignment on RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem");
+static_assert(sizeof(RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem) == 0x000020, "Wrong size on RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem");
 static_assert(offsetof(RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem, EntryPoint) == 0x000000, "Member 'RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem::EntryPoint' has a wrong offset!");
 static_assert(offsetof(RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function RadialPickerItem.RadialPickerItem_C.SetImageAndLabelContent
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct RadialPickerItem_C_SetImageAndLabelContent final
 {
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(Parm)
-	struct FSlateBrush                            Brush;                                             // 0x0018(0x322CBBB8)(Parm)
+	struct FSlateBrush                            Brush;                                             // 0x0018(0x0090)(Parm)
 	bool                                          Option_Enabled;                                    // 0x00A8(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RadialItemIndex;                                   // 0x00AC(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RadialPickerItem_C_SetImageAndLabelContent) == 0x11827900, "Wrong alignment on RadialPickerItem_C_SetImageAndLabelContent");
-static_assert(sizeof(RadialPickerItem_C_SetImageAndLabelContent) == 0x11827900, "Wrong size on RadialPickerItem_C_SetImageAndLabelContent");
+static_assert(alignof(RadialPickerItem_C_SetImageAndLabelContent) == 0x000008, "Wrong alignment on RadialPickerItem_C_SetImageAndLabelContent");
+static_assert(sizeof(RadialPickerItem_C_SetImageAndLabelContent) == 0x0000D8, "Wrong size on RadialPickerItem_C_SetImageAndLabelContent");
 static_assert(offsetof(RadialPickerItem_C_SetImageAndLabelContent, Text) == 0x000000, "Member 'RadialPickerItem_C_SetImageAndLabelContent::Text' has a wrong offset!");
 static_assert(offsetof(RadialPickerItem_C_SetImageAndLabelContent, Brush) == 0x000018, "Member 'RadialPickerItem_C_SetImageAndLabelContent::Brush' has a wrong offset!");
 static_assert(offsetof(RadialPickerItem_C_SetImageAndLabelContent, Option_Enabled) == 0x0000A8, "Member 'RadialPickerItem_C_SetImageAndLabelContent::Option_Enabled' has a wrong offset!");
@@ -61,7 +61,7 @@ static_assert(offsetof(RadialPickerItem_C_SetImageAndLabelContent, CallFunc_Conv
 static_assert(offsetof(RadialPickerItem_C_SetImageAndLabelContent, CallFunc_MakeLiteralName_ReturnValue) == 0x0000D0, "Member 'RadialPickerItem_C_SetImageAndLabelContent::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
 
 // Function RadialPickerItem.RadialPickerItem_C.SetSelected
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct RadialPickerItem_C_SetSelected final
 {
 public:
@@ -76,13 +76,13 @@ public:
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x0028)()
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0050(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0050(0x0028)()
 };
-static_assert(alignof(RadialPickerItem_C_SetSelected) == 0x322CBBB8, "Wrong alignment on RadialPickerItem_C_SetSelected");
-static_assert(sizeof(RadialPickerItem_C_SetSelected) == 0x322CBBB8, "Wrong size on RadialPickerItem_C_SetSelected");
+static_assert(alignof(RadialPickerItem_C_SetSelected) == 0x000008, "Wrong alignment on RadialPickerItem_C_SetSelected");
+static_assert(sizeof(RadialPickerItem_C_SetSelected) == 0x000078, "Wrong size on RadialPickerItem_C_SetSelected");
 static_assert(offsetof(RadialPickerItem_C_SetSelected, IsSelected) == 0x000000, "Member 'RadialPickerItem_C_SetSelected::IsSelected' has a wrong offset!");
 static_assert(offsetof(RadialPickerItem_C_SetSelected, Temp_byte_Variable) == 0x000001, "Member 'RadialPickerItem_C_SetSelected::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(RadialPickerItem_C_SetSelected, Temp_byte_Variable2) == 0x000002, "Member 'RadialPickerItem_C_SetSelected::Temp_byte_Variable2' has a wrong offset!");

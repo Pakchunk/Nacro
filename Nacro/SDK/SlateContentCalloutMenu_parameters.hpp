@@ -26,14 +26,14 @@ static_assert(sizeof(SlateContentCalloutMenu_C_ExecuteUbergraph_SlateContentCall
 static_assert(offsetof(SlateContentCalloutMenu_C_ExecuteUbergraph_SlateContentCalloutMenu, EntryPoint) == 0x000000, "Member 'SlateContentCalloutMenu_C_ExecuteUbergraph_SlateContentCalloutMenu::EntryPoint' has a wrong offset!");
 
 // Function SlateContentCalloutMenu.SlateContentCalloutMenu_C.Get Size Box
-// 0x66444300 (0x66444300 - 0x0000)
-struct alignas(0x66444300) SlateContentCalloutMenu_C_Get_Size_Box final
+// 0x0008 (0x0008 - 0x0000)
+struct SlateContentCalloutMenu_C_Get_Size_Box final
 {
 public:
 	class USizeBox*                               Size_Box;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SlateContentCalloutMenu_C_Get_Size_Box) == 0x66444300, "Wrong alignment on SlateContentCalloutMenu_C_Get_Size_Box");
-static_assert(sizeof(SlateContentCalloutMenu_C_Get_Size_Box) == 0x66444300, "Wrong size on SlateContentCalloutMenu_C_Get_Size_Box");
+static_assert(alignof(SlateContentCalloutMenu_C_Get_Size_Box) == 0x000008, "Wrong alignment on SlateContentCalloutMenu_C_Get_Size_Box");
+static_assert(sizeof(SlateContentCalloutMenu_C_Get_Size_Box) == 0x000008, "Wrong size on SlateContentCalloutMenu_C_Get_Size_Box");
 static_assert(offsetof(SlateContentCalloutMenu_C_Get_Size_Box, Size_Box) == 0x000000, "Member 'SlateContentCalloutMenu_C_Get_Size_Box::Size_Box' has a wrong offset!");
 
 }

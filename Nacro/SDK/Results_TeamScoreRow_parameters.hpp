@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function Results_TeamScoreRow.Results_TeamScoreRow_C.ExecuteUbergraph_Results_TeamScoreRow
-// 0x7FFFFFFF (0x7FFFFFFF - 0x0000)
-struct alignas(0x7FFFFFFF) Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow final
+// 0x0030 (0x0030 - 0x0000)
+struct Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -41,8 +41,8 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue8;                   // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow) == 0x7FFFFFFF, "Wrong alignment on Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow");
-static_assert(sizeof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow) == 0x7FFFFFFF, "Wrong size on Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow");
+static_assert(alignof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow) == 0x000008, "Wrong alignment on Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow");
+static_assert(sizeof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow) == 0x000030, "Wrong size on Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow");
 static_assert(offsetof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow, EntryPoint) == 0x000000, "Member 'Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow, CallFunc_BooleanOR_ReturnValue2) == 0x000005, "Member 'Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
@@ -61,7 +61,7 @@ static_assert(offsetof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScore
 static_assert(offsetof(Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow, CallFunc_BooleanOR_ReturnValue8) == 0x00002C, "Member 'Results_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow::CallFunc_BooleanOR_ReturnValue8' has a wrong offset!");
 
 // Function Results_TeamScoreRow.Results_TeamScoreRow_C.Initialize
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct Results_TeamScoreRow_C_Initialize final
 {
 public:
@@ -100,7 +100,7 @@ public:
 	class UResults_PlayerScoreBox_C*              CallFunc_Array_Get_Item5;                          // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00D0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00D0(0x0028)()
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetIsValidScoreBox_bIsValidScoreBox;      // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_FA[0x2];                                       // 0x00FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -112,8 +112,8 @@ public:
 	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeamScoreRow_C_Initialize) == 0x322CBBB8, "Wrong alignment on Results_TeamScoreRow_C_Initialize");
-static_assert(sizeof(Results_TeamScoreRow_C_Initialize) == 0x322CBBB8, "Wrong size on Results_TeamScoreRow_C_Initialize");
+static_assert(alignof(Results_TeamScoreRow_C_Initialize) == 0x000008, "Wrong alignment on Results_TeamScoreRow_C_Initialize");
+static_assert(sizeof(Results_TeamScoreRow_C_Initialize) == 0x000118, "Wrong size on Results_TeamScoreRow_C_Initialize");
 static_assert(offsetof(Results_TeamScoreRow_C_Initialize, InScoreReport) == 0x000000, "Member 'Results_TeamScoreRow_C_Initialize::InScoreReport' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreRow_C_Initialize, PlayRate_0) == 0x000008, "Member 'Results_TeamScoreRow_C_Initialize::PlayRate_0' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreRow_C_Initialize, CurrentResidualScoreText) == 0x000010, "Member 'Results_TeamScoreRow_C_Initialize::CurrentResidualScoreText' has a wrong offset!");
@@ -152,19 +152,19 @@ static_assert(offsetof(Results_TeamScoreRow_C_Initialize, CallFunc_Less_IntInt_R
 static_assert(offsetof(Results_TeamScoreRow_C_Initialize, CallFunc_Add_IntInt_ReturnValue2) == 0x000110, "Member 'Results_TeamScoreRow_C_Initialize::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function Results_TeamScoreRow.Results_TeamScoreRow_C.SetSkippingToEnd
-// 0x00E8 (0x00E8 - 0x0000)
-struct alignas(0xE8) Results_TeamScoreRow_C_SetSkippingToEnd final
+// 0x0001 (0x0001 - 0x0000)
+struct Results_TeamScoreRow_C_SetSkippingToEnd final
 {
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamScoreRow_C_SetSkippingToEnd) == 0x0000E8, "Wrong alignment on Results_TeamScoreRow_C_SetSkippingToEnd");
-static_assert(sizeof(Results_TeamScoreRow_C_SetSkippingToEnd) == 0x0000E8, "Wrong size on Results_TeamScoreRow_C_SetSkippingToEnd");
+static_assert(alignof(Results_TeamScoreRow_C_SetSkippingToEnd) == 0x000001, "Wrong alignment on Results_TeamScoreRow_C_SetSkippingToEnd");
+static_assert(sizeof(Results_TeamScoreRow_C_SetSkippingToEnd) == 0x000001, "Wrong size on Results_TeamScoreRow_C_SetSkippingToEnd");
 static_assert(offsetof(Results_TeamScoreRow_C_SetSkippingToEnd, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'Results_TeamScoreRow_C_SetSkippingToEnd::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamScoreRow.Results_TeamScoreRow_C.ShowValidResidualScores
-// 0x002A (0x002A - 0x0000)
-struct alignas(0x15) Results_TeamScoreRow_C_ShowValidResidualScores final
+// 0x0030 (0x0030 - 0x0000)
+struct Results_TeamScoreRow_C_ShowValidResidualScores final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -178,8 +178,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamScoreRow_C_ShowValidResidualScores) == 0x000015, "Wrong alignment on Results_TeamScoreRow_C_ShowValidResidualScores");
-static_assert(sizeof(Results_TeamScoreRow_C_ShowValidResidualScores) == 0x00002A, "Wrong size on Results_TeamScoreRow_C_ShowValidResidualScores");
+static_assert(alignof(Results_TeamScoreRow_C_ShowValidResidualScores) == 0x000008, "Wrong alignment on Results_TeamScoreRow_C_ShowValidResidualScores");
+static_assert(sizeof(Results_TeamScoreRow_C_ShowValidResidualScores) == 0x000030, "Wrong size on Results_TeamScoreRow_C_ShowValidResidualScores");
 static_assert(offsetof(Results_TeamScoreRow_C_ShowValidResidualScores, Temp_int_Array_Index_Variable) == 0x000000, "Member 'Results_TeamScoreRow_C_ShowValidResidualScores::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreRow_C_ShowValidResidualScores, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Results_TeamScoreRow_C_ShowValidResidualScores::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreRow_C_ShowValidResidualScores, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Results_TeamScoreRow_C_ShowValidResidualScores::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");

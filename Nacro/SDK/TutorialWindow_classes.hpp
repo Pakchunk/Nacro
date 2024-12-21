@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TutorialWindow.TutorialWindow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0448 - 0x0408)
 class UTutorialWindow_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         ButtonBox;                                         // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Description;                                       // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      IconTextButton;                                    // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UTutorialWindow_C>();
 	}
 };
-static_assert(alignof(UTutorialWindow_C) == 0x322CBBB8, "Wrong alignment on UTutorialWindow_C");
-static_assert(sizeof(UTutorialWindow_C) == 0x322CBBB8, "Wrong size on UTutorialWindow_C");
+static_assert(alignof(UTutorialWindow_C) == 0x000008, "Wrong alignment on UTutorialWindow_C");
+static_assert(sizeof(UTutorialWindow_C) == 0x000448, "Wrong size on UTutorialWindow_C");
 static_assert(offsetof(UTutorialWindow_C, UberGraphFrame) == 0x000410, "Member 'UTutorialWindow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTutorialWindow_C, ButtonBox) == 0x000418, "Member 'UTutorialWindow_C::ButtonBox' has a wrong offset!");
 static_assert(offsetof(UTutorialWindow_C, Description) == 0x000420, "Member 'UTutorialWindow_C::Description' has a wrong offset!");

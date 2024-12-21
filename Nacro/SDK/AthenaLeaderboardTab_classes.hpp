@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaLeaderboardTab.AthenaLeaderboardTab_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A8 (0x0578 - 0x04D0)
 class UAthenaLeaderboardTab_C final : public UAthenaLeaderboardScreenBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04D0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04D0(0x0008)(Transient, DuplicateTransient)
 	class UComingSoonPlaceholderWidget_C*         ComingSoonPlaceholderWidget;                       // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         ContentBox;                                        // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        EnableWidgetSwitcher;                              // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,9 +39,9 @@ public:
 	class ULeaderboardRowWidget_C*                LocalUserRow;                                      // 0x0538(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               OverlayMain;                                       // 0x0540(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           ResetTimeBox;                                      // 0x0548(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    PlaylistChange;                                    // 0x0550(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    FriendTypeChange;                                  // 0x0560(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FTimerHandle                           QueryTimerHandle;                                  // 0x0570(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    PlaylistChange;                                    // 0x0550(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    FriendTypeChange;                                  // 0x0560(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           QueryTimerHandle;                                  // 0x0570(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AthenaLeaderboardTab(int32 EntryPoint);
@@ -74,8 +74,8 @@ public:
 		return GetDefaultObjImpl<UAthenaLeaderboardTab_C>();
 	}
 };
-static_assert(alignof(UAthenaLeaderboardTab_C) == 0x322CBBB8, "Wrong alignment on UAthenaLeaderboardTab_C");
-static_assert(sizeof(UAthenaLeaderboardTab_C) == 0x322CBBB8, "Wrong size on UAthenaLeaderboardTab_C");
+static_assert(alignof(UAthenaLeaderboardTab_C) == 0x000008, "Wrong alignment on UAthenaLeaderboardTab_C");
+static_assert(sizeof(UAthenaLeaderboardTab_C) == 0x000578, "Wrong size on UAthenaLeaderboardTab_C");
 static_assert(offsetof(UAthenaLeaderboardTab_C, UberGraphFrame) == 0x0004D0, "Member 'UAthenaLeaderboardTab_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaLeaderboardTab_C, ComingSoonPlaceholderWidget) == 0x0004D8, "Member 'UAthenaLeaderboardTab_C::ComingSoonPlaceholderWidget' has a wrong offset!");
 static_assert(offsetof(UAthenaLeaderboardTab_C, ContentBox) == 0x0004E0, "Member 'UAthenaLeaderboardTab_C::ContentBox' has a wrong offset!");

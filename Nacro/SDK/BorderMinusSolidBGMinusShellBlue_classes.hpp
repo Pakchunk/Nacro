@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-SolidBG-ShellBlue.Border-SolidBG-ShellBlue_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusSolidBGMinusShellBlue_C final : public UBorderMinusShellTopBar_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusSolidBGMinusShellBlue_C>();
 	}
 };
-static_assert(alignof(UBorderMinusSolidBGMinusShellBlue_C) == 0x11827900, "Wrong alignment on UBorderMinusSolidBGMinusShellBlue_C");
-static_assert(sizeof(UBorderMinusSolidBGMinusShellBlue_C) == 0x11827900, "Wrong size on UBorderMinusSolidBGMinusShellBlue_C");
+static_assert(alignof(UBorderMinusSolidBGMinusShellBlue_C) == 0x000008, "Wrong alignment on UBorderMinusSolidBGMinusShellBlue_C");
+static_assert(sizeof(UBorderMinusSolidBGMinusShellBlue_C) == 0x0000B8, "Wrong size on UBorderMinusSolidBGMinusShellBlue_C");
 
 }
 

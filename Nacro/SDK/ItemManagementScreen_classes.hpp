@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementScreen.ItemManagementScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0730 - 0x0710)
 class UItemManagementScreen_C final : public UFortItemManagementScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0710(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0710(0x0008)(Transient, DuplicateTransient)
 	class USizeBox*                               SizeBox_Inventory;                                 // 0x0718(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ItemDragEnabled;                                   // 0x0720(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_721[0x7];                                      // 0x0721(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -59,8 +59,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementScreen_C>();
 	}
 };
-static_assert(alignof(UItemManagementScreen_C) == 0x322CBBB8, "Wrong alignment on UItemManagementScreen_C");
-static_assert(sizeof(UItemManagementScreen_C) == 0x322CBBB8, "Wrong size on UItemManagementScreen_C");
+static_assert(alignof(UItemManagementScreen_C) == 0x000008, "Wrong alignment on UItemManagementScreen_C");
+static_assert(sizeof(UItemManagementScreen_C) == 0x000730, "Wrong size on UItemManagementScreen_C");
 static_assert(offsetof(UItemManagementScreen_C, UberGraphFrame) == 0x000710, "Member 'UItemManagementScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementScreen_C, SizeBox_Inventory) == 0x000718, "Member 'UItemManagementScreen_C::SizeBox_Inventory' has a wrong offset!");
 static_assert(offsetof(UItemManagementScreen_C, ItemDragEnabled) == 0x000720, "Member 'UItemManagementScreen_C::ItemDragEnabled' has a wrong offset!");

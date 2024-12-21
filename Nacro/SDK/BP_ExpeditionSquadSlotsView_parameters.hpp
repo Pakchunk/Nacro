@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.OnSquadSlotSelected__DelegateSignature
-// 0x0554 (0x0554 - 0x0000)
-struct alignas(0x554) BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature final
 {
 public:
 	int32                                         SquadSlotIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature) == 0x000554, "Wrong alignment on BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature");
-static_assert(sizeof(BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature) == 0x000554, "Wrong size on BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature");
+static_assert(alignof(BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong alignment on BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature");
+static_assert(sizeof(BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong size on BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature");
 static_assert(offsetof(BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature, SquadSlotIndex) == 0x000000, "Member 'BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature::SquadSlotIndex' has a wrong offset!");
 
 // Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.ExecuteUbergraph_BP_ExpeditionSquadSlotsView
@@ -66,13 +66,13 @@ static_assert(sizeof(BP_ExpeditionSquadSlotsView_C_HandleSquadSlotSelected) == 0
 static_assert(offsetof(BP_ExpeditionSquadSlotsView_C_HandleSquadSlotSelected, SquadSlotIndex) == 0x000000, "Member 'BP_ExpeditionSquadSlotsView_C_HandleSquadSlotSelected::SquadSlotIndex' has a wrong offset!");
 
 // Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.CreateAndAddSquadSlotButton
-// 0x1198DB70 (0x1198DB70 - 0x0000)
-struct alignas(0x1198DB70) BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton final
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton final
 {
 public:
 	int32                                         SquadSlotIndex;                                    // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquadSlot                     SquadSlotDefinition;                               // 0x0008(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FHomebaseSquadSlot                     SquadSlotDefinition;                               // 0x0008(0x0060)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UWidget*                                OutSquadSlotButtonHost;                            // 0x0068(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortSquadSlotSelectorButton*           ReturnValue;                                       // 0x0070(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -83,8 +83,8 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 SquadSlotIndex)>         K2Node_CreateDelegate_OutputDelegate2;             // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x1198DB70, "Wrong alignment on BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton");
-static_assert(sizeof(BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x1198DB70, "Wrong size on BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton");
+static_assert(alignof(BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x000008, "Wrong alignment on BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton");
+static_assert(sizeof(BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x0000C0, "Wrong size on BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton");
 static_assert(offsetof(BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton, SquadSlotIndex) == 0x000000, "Member 'BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton::SquadSlotIndex' has a wrong offset!");
 static_assert(offsetof(BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton, SquadSlotDefinition) == 0x000008, "Member 'BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton::SquadSlotDefinition' has a wrong offset!");
 static_assert(offsetof(BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton, OutSquadSlotButtonHost) == 0x000068, "Member 'BP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton::OutSquadSlotButtonHost' has a wrong offset!");

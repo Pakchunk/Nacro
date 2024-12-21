@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00D8 (0x00D8 - 0x0000)
 struct BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires final
 {
 public:
@@ -29,18 +29,18 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_MakeTimespan_ReturnValue;                 // 0x0010(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_MakeTimespan_ReturnValue;                 // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_Seconds;                        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0020(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0040(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0040(0x0008)(NoDestructor)
 	TArray<class FText>                           K2Node_CustomEvent_Names;                          // 0x0048(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TDelegate<void(float Seconds)>                K2Node_CreateDelegate_OutputDelegate2;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(TArray<class FText>& Names)>   K2Node_CreateDelegate_OutputDelegate4;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimespan                              CallFunc_Subtract_TimespanTimespan_ReturnValue;    // 0x0088(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_Subtract_TimespanTimespan_ReturnValue;    // 0x0088(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetTotalSeconds_ReturnValue;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -54,11 +54,11 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate6;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x00C8(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x00C8(0x0008)(NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires) == 0x11821D80, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires) == 0x11821D80, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires");
+static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires");
+static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires) == 0x0000D8, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, EntryPoint) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
@@ -121,22 +121,22 @@ static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_PreConstruct) == 0x00
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Set Stream Brush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush final
 {
 public:
-	struct FSlateBrush                            InBrush;                                           // 0x0000(0x322CBBB8)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FSlateBrush                            InBrush;                                           // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush) == 0x11827900, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush) == 0x11827900, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush");
+static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush");
+static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush) == 0x000090, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush, InBrush) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush::InBrush' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Update Expiration Text
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text final
 {
 public:
-	struct FTimespan                              Timespan;                                          // 0x0000(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              Timespan;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetTotalSeconds_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -145,11 +145,11 @@ public:
 	float                                         CallFunc_GetTotalSeconds_ReturnValue2;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0020(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetTimespanAsText_ReturnValue;            // 0x0028(0x0018)()
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text) == 0x11821300, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text) == 0x11821300, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text");
+static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text");
+static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text) == 0x000040, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, Timespan) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::Timespan' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_GetTotalSeconds_ReturnValue) == 0x00000C, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");

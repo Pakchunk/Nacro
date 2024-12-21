@@ -21,15 +21,15 @@ namespace SDK::Params
 {
 
 // Function BuildingBar.BuildingBar_C.ExecuteUbergraph_BuildingBar
-// 0x720065 (0x720065 - 0x0000)
-struct alignas(0x720065) BuildingBar_C_ExecuteUbergraph_BuildingBar final
+// 0x0008 (0x0008 - 0x0000)
+struct BuildingBar_C_ExecuteUbergraph_BuildingBar final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_ExecuteUbergraph_BuildingBar) == 0x720065, "Wrong alignment on BuildingBar_C_ExecuteUbergraph_BuildingBar");
-static_assert(sizeof(BuildingBar_C_ExecuteUbergraph_BuildingBar) == 0x720065, "Wrong size on BuildingBar_C_ExecuteUbergraph_BuildingBar");
+static_assert(alignof(BuildingBar_C_ExecuteUbergraph_BuildingBar) == 0x000004, "Wrong alignment on BuildingBar_C_ExecuteUbergraph_BuildingBar");
+static_assert(sizeof(BuildingBar_C_ExecuteUbergraph_BuildingBar) == 0x000008, "Wrong size on BuildingBar_C_ExecuteUbergraph_BuildingBar");
 static_assert(offsetof(BuildingBar_C_ExecuteUbergraph_BuildingBar, EntryPoint) == 0x000000, "Member 'BuildingBar_C_ExecuteUbergraph_BuildingBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_ExecuteUbergraph_BuildingBar, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BuildingBar_C_ExecuteUbergraph_BuildingBar::K2Node_Event_IsDesignTime' has a wrong offset!");
 
@@ -45,20 +45,20 @@ static_assert(sizeof(BuildingBar_C_PreConstruct) == 0x000001, "Wrong size on Bui
 static_assert(offsetof(BuildingBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BuildingBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update Max HP Value
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct BuildingBar_C_Update_Max_HP_Value final
 {
 public:
 	float                                         Max;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0018)()
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_Update_Max_HP_Value) == 0x11821D80, "Wrong alignment on BuildingBar_C_Update_Max_HP_Value");
-static_assert(sizeof(BuildingBar_C_Update_Max_HP_Value) == 0x11821D80, "Wrong size on BuildingBar_C_Update_Max_HP_Value");
+static_assert(alignof(BuildingBar_C_Update_Max_HP_Value) == 0x000008, "Wrong alignment on BuildingBar_C_Update_Max_HP_Value");
+static_assert(sizeof(BuildingBar_C_Update_Max_HP_Value) == 0x000090, "Wrong size on BuildingBar_C_Update_Max_HP_Value");
 static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, Max) == 0x000000, "Member 'BuildingBar_C_Update_Max_HP_Value::Max' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, CallFunc_FCeil_ReturnValue) == 0x000004, "Member 'BuildingBar_C_Update_Max_HP_Value::CallFunc_FCeil_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'BuildingBar_C_Update_Max_HP_Value::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
@@ -86,7 +86,7 @@ static_assert(offsetof(BuildingBar_C_Update_Current_HP_Value, CallFunc_EqualEqua
 static_assert(offsetof(BuildingBar_C_Update_Current_HP_Value, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'BuildingBar_C_Update_Current_HP_Value::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update HP Fill Bar
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct BuildingBar_C_Update_HP_Fill_Bar final
 {
 public:
@@ -108,10 +108,10 @@ public:
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x003C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuildingBar_C_Update_HP_Fill_Bar) == 0x11821300, "Wrong alignment on BuildingBar_C_Update_HP_Fill_Bar");
-static_assert(sizeof(BuildingBar_C_Update_HP_Fill_Bar) == 0x11821300, "Wrong size on BuildingBar_C_Update_HP_Fill_Bar");
+static_assert(alignof(BuildingBar_C_Update_HP_Fill_Bar) == 0x000008, "Wrong alignment on BuildingBar_C_Update_HP_Fill_Bar");
+static_assert(sizeof(BuildingBar_C_Update_HP_Fill_Bar) == 0x000050, "Wrong size on BuildingBar_C_Update_HP_Fill_Bar");
 static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000000, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, Temp_float_Variable) == 0x000004, "Member 'BuildingBar_C_Update_HP_Fill_Bar::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, K2Node_DynamicCast_AsSize_Box_Slot) == 0x000008, "Member 'BuildingBar_C_Update_HP_Fill_Bar::K2Node_DynamicCast_AsSize_Box_Slot' has a wrong offset!");
@@ -157,7 +157,7 @@ static_assert(offsetof(BuildingBar_C_Update, CallFunc_NotEqual_FloatFloat_Return
 static_assert(offsetof(BuildingBar_C_Update, CallFunc_Lerp_ReturnValue) == 0x000004, "Member 'BuildingBar_C_Update::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Set Timer
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct BuildingBar_C_Set_Timer final
 {
 public:
@@ -166,10 +166,10 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_Set_Timer) == 0x11821D80, "Wrong alignment on BuildingBar_C_Set_Timer");
-static_assert(sizeof(BuildingBar_C_Set_Timer) == 0x11821D80, "Wrong size on BuildingBar_C_Set_Timer");
+static_assert(alignof(BuildingBar_C_Set_Timer) == 0x000008, "Wrong alignment on BuildingBar_C_Set_Timer");
+static_assert(sizeof(BuildingBar_C_Set_Timer) == 0x000028, "Wrong size on BuildingBar_C_Set_Timer");
 static_assert(offsetof(BuildingBar_C_Set_Timer, Enabled) == 0x000000, "Member 'BuildingBar_C_Set_Timer::Enabled' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Set_Timer, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BuildingBar_C_Set_Timer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Set_Timer, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000018, "Member 'BuildingBar_C_Set_Timer::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
@@ -221,23 +221,23 @@ static_assert(offsetof(BuildingBar_C_Update_Current_Durability_Value, CallFunc_R
 static_assert(offsetof(BuildingBar_C_Update_Current_Durability_Value, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BuildingBar_C_Update_Current_Durability_Value::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update Durability Text
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct BuildingBar_C_Update_Durability_Text final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0060(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0060(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B8(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00D0(0x0018)()
 };
-static_assert(alignof(BuildingBar_C_Update_Durability_Text) == 0x11821D80, "Wrong alignment on BuildingBar_C_Update_Durability_Text");
-static_assert(sizeof(BuildingBar_C_Update_Durability_Text) == 0x11821D80, "Wrong size on BuildingBar_C_Update_Durability_Text");
+static_assert(alignof(BuildingBar_C_Update_Durability_Text) == 0x000008, "Wrong alignment on BuildingBar_C_Update_Durability_Text");
+static_assert(sizeof(BuildingBar_C_Update_Durability_Text) == 0x0000E8, "Wrong size on BuildingBar_C_Update_Durability_Text");
 static_assert(offsetof(BuildingBar_C_Update_Durability_Text, Temp_bool_Variable) == 0x000000, "Member 'BuildingBar_C_Update_Durability_Text::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Update_Durability_Text, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'BuildingBar_C_Update_Durability_Text::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Update_Durability_Text, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'BuildingBar_C_Update_Durability_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
@@ -248,7 +248,7 @@ static_assert(offsetof(BuildingBar_C_Update_Durability_Text, CallFunc_Format_Ret
 static_assert(offsetof(BuildingBar_C_Update_Durability_Text, K2Node_Select_Default) == 0x0000D0, "Member 'BuildingBar_C_Update_Durability_Text::K2Node_Select_Default' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Set Display Mode
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct BuildingBar_C_Set_Display_Mode final
 {
 public:
@@ -267,16 +267,16 @@ public:
 	ESlateVisibility                              Temp_byte_Variable8;                               // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortBuildingInteraction                      Temp_byte_Variable9;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x001C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable2;                             // 0x002C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x001C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x002C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuildingInteraction                      Temp_byte_Variable10;                              // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0040(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable4;                             // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable3;                             // 0x0040(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable4;                             // 0x0050(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuildingInteraction                      Temp_byte_Variable11;                              // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable5;                             // 0x0064(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable6;                             // 0x0074(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable5;                             // 0x0064(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable6;                             // 0x0074(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuildingInteraction                      Temp_byte_Variable12;                              // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0086(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -284,18 +284,18 @@ public:
 	int32                                         Temp_int_Variable4;                                // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable5;                                // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable6;                                // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0094(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select3_Default;                            // 0x00A4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0094(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select3_Default;                            // 0x00A4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable7;                                // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBuildingInteraction                      Temp_byte_Variable13;                              // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select4_Default;                            // 0x00C4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select4_Default;                            // 0x00C4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select5_Default;                            // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select6_Default;                            // 0x00D8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select6_Default;                            // 0x00D8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuildingBar_C_Set_Display_Mode) == 0x11821300, "Wrong alignment on BuildingBar_C_Set_Display_Mode");
-static_assert(sizeof(BuildingBar_C_Set_Display_Mode) == 0x11821300, "Wrong size on BuildingBar_C_Set_Display_Mode");
+static_assert(alignof(BuildingBar_C_Set_Display_Mode) == 0x000008, "Wrong alignment on BuildingBar_C_Set_Display_Mode");
+static_assert(sizeof(BuildingBar_C_Set_Display_Mode) == 0x0000E8, "Wrong size on BuildingBar_C_Set_Display_Mode");
 static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Display_Mode) == 0x000000, "Member 'BuildingBar_C_Set_Display_Mode::Display_Mode' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable) == 0x000004, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable2) == 0x000008, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable2' has a wrong offset!");
@@ -333,7 +333,7 @@ static_assert(offsetof(BuildingBar_C_Set_Display_Mode, K2Node_Select5_Default) =
 static_assert(offsetof(BuildingBar_C_Set_Display_Mode, K2Node_Select6_Default) == 0x0000D8, "Member 'BuildingBar_C_Set_Display_Mode::K2Node_Select6_Default' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.UpdateBuildingTrap
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct BuildingBar_C_UpdateBuildingTrap final
 {
 public:
@@ -344,17 +344,17 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetRarityColor_ReturnValue;               // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetRarityColor_ReturnValue;               // 0x0020(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x0028)()
 	class FText                                   CallFunc_GetShortDisplayName_ReturnValue;          // 0x0060(0x0018)()
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_UpdateBuildingTrap) == 0x322CBBB8, "Wrong alignment on BuildingBar_C_UpdateBuildingTrap");
-static_assert(sizeof(BuildingBar_C_UpdateBuildingTrap) == 0x322CBBB8, "Wrong size on BuildingBar_C_UpdateBuildingTrap");
+static_assert(alignof(BuildingBar_C_UpdateBuildingTrap) == 0x000008, "Wrong alignment on BuildingBar_C_UpdateBuildingTrap");
+static_assert(sizeof(BuildingBar_C_UpdateBuildingTrap) == 0x000080, "Wrong size on BuildingBar_C_UpdateBuildingTrap");
 static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, BuildingTrap) == 0x000000, "Member 'BuildingBar_C_UpdateBuildingTrap::BuildingTrap' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, Temp_byte_Variable) == 0x000008, "Member 'BuildingBar_C_UpdateBuildingTrap::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, CallFunc_GetTrapLevel_ReturnValue) == 0x00000C, "Member 'BuildingBar_C_UpdateBuildingTrap::CallFunc_GetTrapLevel_ReturnValue' has a wrong offset!");

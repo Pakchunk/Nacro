@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MiscellaneousModeItemDetailsHostPanel.MiscellaneousModeItemDetailsHostPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x02E0 - 0x02A8)
 class UMiscellaneousModeItemDetailsHostPanel_C final : public UFortItemManagementItemDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(Transient, DuplicateTransient)
 	class UItemDetailsHeader_C*                   HeaderWidget;                                      // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHeroSquadBonusesDetailWidget_C*        HeroSquadBonusesDetailWidget;                      // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemCraftingIngredientsDetailWidget_C* ItemCraftingIngredientsDetailWidget;               // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UMiscellaneousModeItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UMiscellaneousModeItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong alignment on UMiscellaneousModeItemDetailsHostPanel_C");
-static_assert(sizeof(UMiscellaneousModeItemDetailsHostPanel_C) == 0x322CBBB8, "Wrong size on UMiscellaneousModeItemDetailsHostPanel_C");
+static_assert(alignof(UMiscellaneousModeItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UMiscellaneousModeItemDetailsHostPanel_C");
+static_assert(sizeof(UMiscellaneousModeItemDetailsHostPanel_C) == 0x0002E0, "Wrong size on UMiscellaneousModeItemDetailsHostPanel_C");
 static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, UberGraphFrame) == 0x0002A8, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, HeaderWidget) == 0x0002B0, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
 static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, HeroSquadBonusesDetailWidget) == 0x0002B8, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::HeroSquadBonusesDetailWidget' has a wrong offset!");

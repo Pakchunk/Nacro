@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_PlayerScoreBox.Results_PlayerScoreBox_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x02A0 - 0x0238)
 class UResults_PlayerScoreBox_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_Glare;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Spark;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -36,8 +36,8 @@ public:
 	uint8                                         Pad_272[0x2];                                      // 0x0272(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PlayRate;                                          // 0x0274(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TimeBetweenIntroAndCount;                          // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           TopScoreColor;                                     // 0x027C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           NormalScoreColor;                                  // 0x028C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           TopScoreColor;                                     // 0x027C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           NormalScoreColor;                                  // 0x028C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSkippingToEnd;                                    // 0x029C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -64,8 +64,8 @@ public:
 		return GetDefaultObjImpl<UResults_PlayerScoreBox_C>();
 	}
 };
-static_assert(alignof(UResults_PlayerScoreBox_C) == 0x322CBBB8, "Wrong alignment on UResults_PlayerScoreBox_C");
-static_assert(sizeof(UResults_PlayerScoreBox_C) == 0x322CBBB8, "Wrong size on UResults_PlayerScoreBox_C");
+static_assert(alignof(UResults_PlayerScoreBox_C) == 0x000008, "Wrong alignment on UResults_PlayerScoreBox_C");
+static_assert(sizeof(UResults_PlayerScoreBox_C) == 0x0002A0, "Wrong size on UResults_PlayerScoreBox_C");
 static_assert(offsetof(UResults_PlayerScoreBox_C, UberGraphFrame) == 0x000238, "Member 'UResults_PlayerScoreBox_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_PlayerScoreBox_C, Anim_Glare) == 0x000240, "Member 'UResults_PlayerScoreBox_C::Anim_Glare' has a wrong offset!");
 static_assert(offsetof(UResults_PlayerScoreBox_C, Anim_Spark) == 0x000248, "Member 'UResults_PlayerScoreBox_C::Anim_Spark' has a wrong offset!");

@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function ItemIconWidget.ItemIconWidget_C.ExecuteUbergraph_ItemIconWidget
-// 0x65F0C330 (0x65F0C330 - 0x0000)
-struct alignas(0x65F0C330) ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget final
+// 0x00F0 (0x00F0 - 0x0000)
+struct ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,10 +38,10 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue;         // 0x0060(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue;         // 0x0060(0x0090)()
 };
-static_assert(alignof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget) == 0x65F0C330, "Wrong alignment on ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget");
-static_assert(sizeof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget) == 0x65F0C330, "Wrong size on ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget");
+static_assert(alignof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget) == 0x000008, "Wrong alignment on ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget");
+static_assert(sizeof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget) == 0x0000F0, "Wrong size on ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget");
 static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, EntryPoint) == 0x000000, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_byte_Variable) == 0x000004, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_int_Variable) == 0x000008, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_int_Variable' has a wrong offset!");

@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function ScoreDetailsRow.ScoreDetailsRow_C.UpdateRow
-// 0x67D725B0 (0x67D725B0 - 0x0000)
-struct alignas(0x67D725B0) ScoreDetailsRow_C_UpdateRow final
+// 0x0048 (0x0048 - 0x0000)
+struct ScoreDetailsRow_C_UpdateRow final
 {
 public:
 	class FText                                   PlayerName_0;                                      // 0x0000(0x0018)(Parm)
@@ -36,8 +36,8 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue4;             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_TextText_ReturnValue;            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ScoreDetailsRow_C_UpdateRow) == 0x67D725B0, "Wrong alignment on ScoreDetailsRow_C_UpdateRow");
-static_assert(sizeof(ScoreDetailsRow_C_UpdateRow) == 0x67D725B0, "Wrong size on ScoreDetailsRow_C_UpdateRow");
+static_assert(alignof(ScoreDetailsRow_C_UpdateRow) == 0x000008, "Wrong alignment on ScoreDetailsRow_C_UpdateRow");
+static_assert(sizeof(ScoreDetailsRow_C_UpdateRow) == 0x000048, "Wrong size on ScoreDetailsRow_C_UpdateRow");
 static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, PlayerName_0) == 0x000000, "Member 'ScoreDetailsRow_C_UpdateRow::PlayerName_0' has a wrong offset!");
 static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, TotalScore_0) == 0x000018, "Member 'ScoreDetailsRow_C_UpdateRow::TotalScore_0' has a wrong offset!");
 static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, Combat_0) == 0x00001C, "Member 'ScoreDetailsRow_C_UpdateRow::Combat_0' has a wrong offset!");

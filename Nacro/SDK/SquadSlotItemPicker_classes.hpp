@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadSlotItemPicker.SquadSlotItemPicker_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0370 - 0x0370)
 class USquadSlotItemPicker_C final : public UFortSquadSlotItemPicker
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USquadSlotItemPicker_C>();
 	}
 };
-static_assert(alignof(USquadSlotItemPicker_C) == 0x322CBBB8, "Wrong alignment on USquadSlotItemPicker_C");
-static_assert(sizeof(USquadSlotItemPicker_C) == 0x322CBBB8, "Wrong size on USquadSlotItemPicker_C");
+static_assert(alignof(USquadSlotItemPicker_C) == 0x000008, "Wrong alignment on USquadSlotItemPicker_C");
+static_assert(sizeof(USquadSlotItemPicker_C) == 0x000370, "Wrong size on USquadSlotItemPicker_C");
 
 }
 

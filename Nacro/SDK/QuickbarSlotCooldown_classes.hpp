@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ItemDisplayStyle_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "UMG_structs.hpp"
@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuickbarSlotCooldown.QuickbarSlotCooldown_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x02F0 - 0x02C8)
 class UQuickbarSlotCooldown_C final : public UFortItemCooldownWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C8(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageRadialOpacityLayer;                           // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageRectangularOpacityLayer;                      // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  SwitcherOpacityOverlay;                            // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UQuickbarSlotCooldown_C>();
 	}
 };
-static_assert(alignof(UQuickbarSlotCooldown_C) == 0x322CBBB8, "Wrong alignment on UQuickbarSlotCooldown_C");
-static_assert(sizeof(UQuickbarSlotCooldown_C) == 0x322CBBB8, "Wrong size on UQuickbarSlotCooldown_C");
+static_assert(alignof(UQuickbarSlotCooldown_C) == 0x000008, "Wrong alignment on UQuickbarSlotCooldown_C");
+static_assert(sizeof(UQuickbarSlotCooldown_C) == 0x0002F0, "Wrong size on UQuickbarSlotCooldown_C");
 static_assert(offsetof(UQuickbarSlotCooldown_C, UberGraphFrame) == 0x0002C8, "Member 'UQuickbarSlotCooldown_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlotCooldown_C, ImageRadialOpacityLayer) == 0x0002D0, "Member 'UQuickbarSlotCooldown_C::ImageRadialOpacityLayer' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlotCooldown_C, ImageRectangularOpacityLayer) == 0x0002D8, "Member 'UQuickbarSlotCooldown_C::ImageRectangularOpacityLayer' has a wrong offset!");

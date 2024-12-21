@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0028 (0x0470 - 0x0448)
 class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C final : public AFortClientAnnouncement_Conversation
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0448(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0448(0x0008)(Transient, DuplicateTransient)
 	UMulticastDelegateProperty_                   OnNewSentence;                                     // 0x0450(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnCurrentConversationFinished;                     // 0x0460(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C>();
 	}
 };
-static_assert(alignof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x11821D80, "Wrong alignment on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
-static_assert(sizeof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x11821D80, "Wrong size on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
+static_assert(alignof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x000008, "Wrong alignment on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
+static_assert(sizeof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x000470, "Wrong size on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
 static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, UberGraphFrame) == 0x000448, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, OnNewSentence) == 0x000450, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnNewSentence' has a wrong offset!");
 static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, OnCurrentConversationFinished) == 0x000460, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnCurrentConversationFinished' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FortHeroSupportPerkWidget-Overview.FortHeroSupportPerkWidget-Overview_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x05D0 - 0x05B8)
 class UFortHeroSupportPerkWidgetMinusOverview_C final : public UFortHeroSupportPerkWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05B8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05B8(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       TypeText;                                          // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EFortBrushSize                                IconSize;                                          // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UFortHeroSupportPerkWidgetMinusOverview_C>();
 	}
 };
-static_assert(alignof(UFortHeroSupportPerkWidgetMinusOverview_C) == 0x322CBBB8, "Wrong alignment on UFortHeroSupportPerkWidgetMinusOverview_C");
-static_assert(sizeof(UFortHeroSupportPerkWidgetMinusOverview_C) == 0x322CBBB8, "Wrong size on UFortHeroSupportPerkWidgetMinusOverview_C");
+static_assert(alignof(UFortHeroSupportPerkWidgetMinusOverview_C) == 0x000008, "Wrong alignment on UFortHeroSupportPerkWidgetMinusOverview_C");
+static_assert(sizeof(UFortHeroSupportPerkWidgetMinusOverview_C) == 0x0005D0, "Wrong size on UFortHeroSupportPerkWidgetMinusOverview_C");
 static_assert(offsetof(UFortHeroSupportPerkWidgetMinusOverview_C, UberGraphFrame) == 0x0005B8, "Member 'UFortHeroSupportPerkWidgetMinusOverview_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFortHeroSupportPerkWidgetMinusOverview_C, TypeText) == 0x0005C0, "Member 'UFortHeroSupportPerkWidgetMinusOverview_C::TypeText' has a wrong offset!");
 static_assert(offsetof(UFortHeroSupportPerkWidgetMinusOverview_C, IconSize) == 0x0005C8, "Member 'UFortHeroSupportPerkWidgetMinusOverview_C::IconSize' has a wrong offset!");

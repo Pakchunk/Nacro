@@ -20,8 +20,8 @@ namespace SDK::Params
 {
 
 // Function EquippedItemWidget.EquippedItemWidget_C.ExecuteUbergraph_EquippedItemWidget
-// 0x00D0 (0x00D0 - 0x0000)
-struct alignas(0x68) EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget final
+// 0x0098 (0x0098 - 0x0000)
+struct EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 	TDelegate<void(int32 LocalCount, int32 LocalRemaining)> K2Node_CreateDelegate_OutputDelegate5;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget) == 0x000068, "Wrong alignment on EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget");
-static_assert(sizeof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget) == 0x0000D0, "Wrong size on EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget");
+static_assert(alignof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget) == 0x000008, "Wrong alignment on EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget");
+static_assert(sizeof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget) == 0x000098, "Wrong size on EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget");
 static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, EntryPoint) == 0x000000, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget, K2Node_CustomEvent_NewWeapon) == 0x000018, "Member 'EquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget::K2Node_CustomEvent_NewWeapon' has a wrong offset!");
@@ -107,7 +107,7 @@ static_assert(offsetof(EquippedItemWidget_C_FullUpdateAmmoDisplay, CallFunc_GetL
 static_assert(offsetof(EquippedItemWidget_C_FullUpdateAmmoDisplay, CallFunc_GetLocalRemainingAmmo_ReturnValue) == 0x000014, "Member 'EquippedItemWidget_C_FullUpdateAmmoDisplay::CallFunc_GetLocalRemainingAmmo_ReturnValue' has a wrong offset!");
 
 // Function EquippedItemWidget.EquippedItemWidget_C.FullUpdateResourceDisplay
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct EquippedItemWidget_C_FullUpdateResourceDisplay final
 {
 public:
@@ -115,11 +115,11 @@ public:
 	class UFortResourceItemDefinition*            CallFunc_GetCurrentResourceItemDefinition_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetCurrentResourceCount_ReturnValue;      // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0018(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0018(0x0090)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00A8(0x0018)()
 };
-static_assert(alignof(EquippedItemWidget_C_FullUpdateResourceDisplay) == 0x11827900, "Wrong alignment on EquippedItemWidget_C_FullUpdateResourceDisplay");
-static_assert(sizeof(EquippedItemWidget_C_FullUpdateResourceDisplay) == 0x11827900, "Wrong size on EquippedItemWidget_C_FullUpdateResourceDisplay");
+static_assert(alignof(EquippedItemWidget_C_FullUpdateResourceDisplay) == 0x000008, "Wrong alignment on EquippedItemWidget_C_FullUpdateResourceDisplay");
+static_assert(sizeof(EquippedItemWidget_C_FullUpdateResourceDisplay) == 0x0000C0, "Wrong size on EquippedItemWidget_C_FullUpdateResourceDisplay");
 static_assert(offsetof(EquippedItemWidget_C_FullUpdateResourceDisplay, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'EquippedItemWidget_C_FullUpdateResourceDisplay::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_FullUpdateResourceDisplay, CallFunc_GetCurrentResourceItemDefinition_ReturnValue) == 0x000008, "Member 'EquippedItemWidget_C_FullUpdateResourceDisplay::CallFunc_GetCurrentResourceItemDefinition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_FullUpdateResourceDisplay, CallFunc_GetCurrentResourceCount_ReturnValue) == 0x000010, "Member 'EquippedItemWidget_C_FullUpdateResourceDisplay::CallFunc_GetCurrentResourceCount_ReturnValue' has a wrong offset!");
@@ -151,7 +151,7 @@ static_assert(offsetof(EquippedItemWidget_C_UpdateVisibility, K2Node_DynamicCast
 static_assert(offsetof(EquippedItemWidget_C_UpdateVisibility, CallFunc_ShouldDisplayAmmoCounter_ReturnValue) == 0x000029, "Member 'EquippedItemWidget_C_UpdateVisibility::CallFunc_ShouldDisplayAmmoCounter_ReturnValue' has a wrong offset!");
 
 // Function EquippedItemWidget.EquippedItemWidget_C.UpdateWidgetColor
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct EquippedItemWidget_C_UpdateWidgetColor final
 {
 public:
@@ -162,17 +162,17 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable3;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x322CBBB8)()
-	struct FLinearColor                           CallFunc_Get_Debuff_Color_Color;                   // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0068(0x322CBBB8)()
-	struct FSlateColor                            K2Node_Select3_Default;                            // 0x0090(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x0028)()
+	struct FLinearColor                           CallFunc_Get_Debuff_Color_Color;                   // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x0058(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0068(0x0028)()
+	struct FSlateColor                            K2Node_Select3_Default;                            // 0x0090(0x0028)()
 };
-static_assert(alignof(EquippedItemWidget_C_UpdateWidgetColor) == 0x322CBBB8, "Wrong alignment on EquippedItemWidget_C_UpdateWidgetColor");
-static_assert(sizeof(EquippedItemWidget_C_UpdateWidgetColor) == 0x322CBBB8, "Wrong size on EquippedItemWidget_C_UpdateWidgetColor");
+static_assert(alignof(EquippedItemWidget_C_UpdateWidgetColor) == 0x000008, "Wrong alignment on EquippedItemWidget_C_UpdateWidgetColor");
+static_assert(sizeof(EquippedItemWidget_C_UpdateWidgetColor) == 0x0000B8, "Wrong size on EquippedItemWidget_C_UpdateWidgetColor");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, HasAmmo) == 0x000000, "Member 'EquippedItemWidget_C_UpdateWidgetColor::HasAmmo' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, Temp_byte_Variable) == 0x000001, "Member 'EquippedItemWidget_C_UpdateWidgetColor::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateWidgetColor, Temp_bool_Variable) == 0x000002, "Member 'EquippedItemWidget_C_UpdateWidgetColor::Temp_bool_Variable' has a wrong offset!");
@@ -210,7 +210,7 @@ static_assert(offsetof(EquippedItemWidget_C_UpdateAmmoCapacity, K2Node_DynamicCa
 static_assert(offsetof(EquippedItemWidget_C_UpdateAmmoCapacity, CallFunc_GetBulletsPerClip_ReturnValue) == 0x000024, "Member 'EquippedItemWidget_C_UpdateAmmoCapacity::CallFunc_GetBulletsPerClip_ReturnValue' has a wrong offset!");
 
 // Function EquippedItemWidget.EquippedItemWidget_C.UpdateCurrentAmmo
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0160 (0x0160 - 0x0000)
 struct EquippedItemWidget_C_UpdateCurrentAmmo final
 {
 public:
@@ -238,7 +238,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0090(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0090(0x0090)()
 	bool                                          Temp_bool_Variable;                                // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -253,8 +253,8 @@ public:
 	uint8                                         Pad_155[0x3];                                      // 0x0155(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select3_Default;                            // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EquippedItemWidget_C_UpdateCurrentAmmo) == 0x11827900, "Wrong alignment on EquippedItemWidget_C_UpdateCurrentAmmo");
-static_assert(sizeof(EquippedItemWidget_C_UpdateCurrentAmmo) == 0x11827900, "Wrong size on EquippedItemWidget_C_UpdateCurrentAmmo");
+static_assert(alignof(EquippedItemWidget_C_UpdateCurrentAmmo) == 0x000008, "Wrong alignment on EquippedItemWidget_C_UpdateCurrentAmmo");
+static_assert(sizeof(EquippedItemWidget_C_UpdateCurrentAmmo) == 0x000160, "Wrong size on EquippedItemWidget_C_UpdateCurrentAmmo");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, LocalCount) == 0x000000, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::LocalCount' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, LocalRemaining) == 0x000004, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::LocalRemaining' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_UpdateCurrentAmmo, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'EquippedItemWidget_C_UpdateCurrentAmmo::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
@@ -303,7 +303,7 @@ static_assert(offsetof(EquippedItemWidget_C_UpdateResourceCount, CallFunc_GetCur
 static_assert(offsetof(EquippedItemWidget_C_UpdateResourceCount, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'EquippedItemWidget_C_UpdateResourceCount::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function EquippedItemWidget.EquippedItemWidget_C.GetCurrentAmmoText
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct EquippedItemWidget_C_GetCurrentAmmoText final
 {
 public:
@@ -312,17 +312,17 @@ public:
 	class FText                                   CurrentAmmoText;                                   // 0x0008(0x0018)(Parm, OutParm)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0078(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0078(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B8(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x00D0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x00E0(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00F8(0x0018)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EquippedItemWidget_C_GetCurrentAmmoText) == 0x11821D80, "Wrong alignment on EquippedItemWidget_C_GetCurrentAmmoText");
-static_assert(sizeof(EquippedItemWidget_C_GetCurrentAmmoText) == 0x11821D80, "Wrong size on EquippedItemWidget_C_GetCurrentAmmoText");
+static_assert(alignof(EquippedItemWidget_C_GetCurrentAmmoText) == 0x000008, "Wrong alignment on EquippedItemWidget_C_GetCurrentAmmoText");
+static_assert(sizeof(EquippedItemWidget_C_GetCurrentAmmoText) == 0x000118, "Wrong size on EquippedItemWidget_C_GetCurrentAmmoText");
 static_assert(offsetof(EquippedItemWidget_C_GetCurrentAmmoText, CurrentAmmoCount) == 0x000000, "Member 'EquippedItemWidget_C_GetCurrentAmmoText::CurrentAmmoCount' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_GetCurrentAmmoText, CurrentAmmoText) == 0x000008, "Member 'EquippedItemWidget_C_GetCurrentAmmoText::CurrentAmmoText' has a wrong offset!");
 static_assert(offsetof(EquippedItemWidget_C_GetCurrentAmmoText, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'EquippedItemWidget_C_GetCurrentAmmoText::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");

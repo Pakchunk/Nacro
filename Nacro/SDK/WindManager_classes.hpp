@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass WindManager.WindManager_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0098 (0x0670 - 0x05D8)
 class AWindManager_C final : public AFortWindManager
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D8(0x0008)(Transient, DuplicateTransient)
 	class UStaticMeshComponent*                   EmptyStaticMesh;                                   // 0x05E0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               ParticleSystem;                                    // 0x05E8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneCaptureComponent2D*               TopDownCaptureActorOfTheWorld;                     // 0x05F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -40,7 +40,7 @@ public:
 	bool                                          DebugParticleBasedWind;                            // 0x0640(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_641[0x7];                                      // 0x0641(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AFortStaticMeshActor*>           World_Terrain_Meshes;                              // 0x0648(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FVector                                Camera_Height_Offset;                              // 0x0658(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Camera_Height_Offset;                              // 0x0658(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Character_Initialized;                             // 0x0664(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_665[0x3];                                      // 0x0665(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Particle_Z_Offset;                                 // 0x0668(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,8 +70,8 @@ public:
 		return GetDefaultObjImpl<AWindManager_C>();
 	}
 };
-static_assert(alignof(AWindManager_C) == 0x11821D80, "Wrong alignment on AWindManager_C");
-static_assert(sizeof(AWindManager_C) == 0x11821D80, "Wrong size on AWindManager_C");
+static_assert(alignof(AWindManager_C) == 0x000008, "Wrong alignment on AWindManager_C");
+static_assert(sizeof(AWindManager_C) == 0x000670, "Wrong size on AWindManager_C");
 static_assert(offsetof(AWindManager_C, UberGraphFrame) == 0x0005D8, "Member 'AWindManager_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AWindManager_C, EmptyStaticMesh) == 0x0005E0, "Member 'AWindManager_C::EmptyStaticMesh' has a wrong offset!");
 static_assert(offsetof(AWindManager_C, ParticleSystem) == 0x0005E8, "Member 'AWindManager_C::ParticleSystem' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LoginAccountSelect.LoginAccountSelect_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0410 - 0x03F0)
 class ULoginAccountSelect_C final : public UFortLoginAccountSelect
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      EpicLoginButton;                                   // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      PlayStationLoginButton;                            // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      XBoxLoginButton;                                   // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<ULoginAccountSelect_C>();
 	}
 };
-static_assert(alignof(ULoginAccountSelect_C) == 0x322CBBB8, "Wrong alignment on ULoginAccountSelect_C");
-static_assert(sizeof(ULoginAccountSelect_C) == 0x322CBBB8, "Wrong size on ULoginAccountSelect_C");
+static_assert(alignof(ULoginAccountSelect_C) == 0x000008, "Wrong alignment on ULoginAccountSelect_C");
+static_assert(sizeof(ULoginAccountSelect_C) == 0x000410, "Wrong size on ULoginAccountSelect_C");
 static_assert(offsetof(ULoginAccountSelect_C, UberGraphFrame) == 0x0003F0, "Member 'ULoginAccountSelect_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULoginAccountSelect_C, EpicLoginButton) == 0x0003F8, "Member 'ULoginAccountSelect_C::EpicLoginButton' has a wrong offset!");
 static_assert(offsetof(ULoginAccountSelect_C, PlayStationLoginButton) == 0x000400, "Member 'ULoginAccountSelect_C::PlayStationLoginButton' has a wrong offset!");

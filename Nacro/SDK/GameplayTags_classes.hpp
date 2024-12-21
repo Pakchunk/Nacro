@@ -20,14 +20,14 @@ namespace SDK
 {
 
 // Class GameplayTags.EditableGameplayTagQuery
-// 0x11821D58 (0x11821D80 - 0x0028)
+// 0x0070 (0x0098 - 0x0028)
 class UEditableGameplayTagQuery final : public UObject
 {
 public:
 	class FString                                 UserDescription;                                   // 0x0028(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_38[0x10];                                      // 0x0038(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEditableGameplayTagQueryExpression*    RootExpression;                                    // 0x0048(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayTagQuery                      TagQueryExportText_Helper;                         // 0x0050(0x11821D80)(NativeAccessSpecifierPrivate)
+	struct FGameplayTagQuery                      TagQueryExportText_Helper;                         // 0x0050(0x0048)(NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -39,8 +39,8 @@ public:
 		return GetDefaultObjImpl<UEditableGameplayTagQuery>();
 	}
 };
-static_assert(alignof(UEditableGameplayTagQuery) == 0x11821D80, "Wrong alignment on UEditableGameplayTagQuery");
-static_assert(sizeof(UEditableGameplayTagQuery) == 0x11821D80, "Wrong size on UEditableGameplayTagQuery");
+static_assert(alignof(UEditableGameplayTagQuery) == 0x000008, "Wrong alignment on UEditableGameplayTagQuery");
+static_assert(sizeof(UEditableGameplayTagQuery) == 0x000098, "Wrong size on UEditableGameplayTagQuery");
 static_assert(offsetof(UEditableGameplayTagQuery, UserDescription) == 0x000028, "Member 'UEditableGameplayTagQuery::UserDescription' has a wrong offset!");
 static_assert(offsetof(UEditableGameplayTagQuery, RootExpression) == 0x000048, "Member 'UEditableGameplayTagQuery::RootExpression' has a wrong offset!");
 static_assert(offsetof(UEditableGameplayTagQuery, TagQueryExportText_Helper) == 0x000050, "Member 'UEditableGameplayTagQuery::TagQueryExportText_Helper' has a wrong offset!");
@@ -63,11 +63,11 @@ static_assert(alignof(UEditableGameplayTagQueryExpression) == 0x000008, "Wrong a
 static_assert(sizeof(UEditableGameplayTagQueryExpression) == 0x000028, "Wrong size on UEditableGameplayTagQueryExpression");
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AnyTagsMatch
-// 0x11821BD8 (0x11821C00 - 0x0028)
+// 0x0020 (0x0048 - 0x0028)
 class UEditableGameplayTagQueryExpression_AnyTagsMatch final : public UEditableGameplayTagQueryExpression
 {
 public:
-	struct FGameplayTagContainer                  Tags;                                              // 0x0028(0x11821C00)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  Tags;                                              // 0x0028(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -79,16 +79,16 @@ public:
 		return GetDefaultObjImpl<UEditableGameplayTagQueryExpression_AnyTagsMatch>();
 	}
 };
-static_assert(alignof(UEditableGameplayTagQueryExpression_AnyTagsMatch) == 0x11821C00, "Wrong alignment on UEditableGameplayTagQueryExpression_AnyTagsMatch");
-static_assert(sizeof(UEditableGameplayTagQueryExpression_AnyTagsMatch) == 0x11821C00, "Wrong size on UEditableGameplayTagQueryExpression_AnyTagsMatch");
+static_assert(alignof(UEditableGameplayTagQueryExpression_AnyTagsMatch) == 0x000008, "Wrong alignment on UEditableGameplayTagQueryExpression_AnyTagsMatch");
+static_assert(sizeof(UEditableGameplayTagQueryExpression_AnyTagsMatch) == 0x000048, "Wrong size on UEditableGameplayTagQueryExpression_AnyTagsMatch");
 static_assert(offsetof(UEditableGameplayTagQueryExpression_AnyTagsMatch, Tags) == 0x000028, "Member 'UEditableGameplayTagQueryExpression_AnyTagsMatch::Tags' has a wrong offset!");
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AllTagsMatch
-// 0x11821BD8 (0x11821C00 - 0x0028)
+// 0x0020 (0x0048 - 0x0028)
 class UEditableGameplayTagQueryExpression_AllTagsMatch final : public UEditableGameplayTagQueryExpression
 {
 public:
-	struct FGameplayTagContainer                  Tags;                                              // 0x0028(0x11821C00)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  Tags;                                              // 0x0028(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -100,16 +100,16 @@ public:
 		return GetDefaultObjImpl<UEditableGameplayTagQueryExpression_AllTagsMatch>();
 	}
 };
-static_assert(alignof(UEditableGameplayTagQueryExpression_AllTagsMatch) == 0x11821C00, "Wrong alignment on UEditableGameplayTagQueryExpression_AllTagsMatch");
-static_assert(sizeof(UEditableGameplayTagQueryExpression_AllTagsMatch) == 0x11821C00, "Wrong size on UEditableGameplayTagQueryExpression_AllTagsMatch");
+static_assert(alignof(UEditableGameplayTagQueryExpression_AllTagsMatch) == 0x000008, "Wrong alignment on UEditableGameplayTagQueryExpression_AllTagsMatch");
+static_assert(sizeof(UEditableGameplayTagQueryExpression_AllTagsMatch) == 0x000048, "Wrong size on UEditableGameplayTagQueryExpression_AllTagsMatch");
 static_assert(offsetof(UEditableGameplayTagQueryExpression_AllTagsMatch, Tags) == 0x000028, "Member 'UEditableGameplayTagQueryExpression_AllTagsMatch::Tags' has a wrong offset!");
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_NoTagsMatch
-// 0x11821BD8 (0x11821C00 - 0x0028)
+// 0x0020 (0x0048 - 0x0028)
 class UEditableGameplayTagQueryExpression_NoTagsMatch final : public UEditableGameplayTagQueryExpression
 {
 public:
-	struct FGameplayTagContainer                  Tags;                                              // 0x0028(0x11821C00)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  Tags;                                              // 0x0028(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -121,8 +121,8 @@ public:
 		return GetDefaultObjImpl<UEditableGameplayTagQueryExpression_NoTagsMatch>();
 	}
 };
-static_assert(alignof(UEditableGameplayTagQueryExpression_NoTagsMatch) == 0x11821C00, "Wrong alignment on UEditableGameplayTagQueryExpression_NoTagsMatch");
-static_assert(sizeof(UEditableGameplayTagQueryExpression_NoTagsMatch) == 0x11821C00, "Wrong size on UEditableGameplayTagQueryExpression_NoTagsMatch");
+static_assert(alignof(UEditableGameplayTagQueryExpression_NoTagsMatch) == 0x000008, "Wrong alignment on UEditableGameplayTagQueryExpression_NoTagsMatch");
+static_assert(sizeof(UEditableGameplayTagQueryExpression_NoTagsMatch) == 0x000048, "Wrong size on UEditableGameplayTagQueryExpression_NoTagsMatch");
 static_assert(offsetof(UEditableGameplayTagQueryExpression_NoTagsMatch, Tags) == 0x000028, "Member 'UEditableGameplayTagQueryExpression_NoTagsMatch::Tags' has a wrong offset!");
 
 // Class GameplayTags.EditableGameplayTagQueryExpression_AnyExprMatch

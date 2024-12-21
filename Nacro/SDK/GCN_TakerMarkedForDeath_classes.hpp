@@ -20,18 +20,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0050 (0x04B8 - 0x0468)
 class AGCN_TakerMarkedForDeath_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0468(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0468(0x0008)(Transient, DuplicateTransient)
 	class UParticleSystemComponent*               OverHeadEffect;                                    // 0x0470(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UFortMiniMapComponent*                  MiniMapCrosshair;                                  // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UFortMiniMapComponent*                  MiniMapIconBackground;                             // 0x0480(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FFortFeedbackHandle                    TakerFeedbackEvent;                                // 0x0488(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortFeedbackHandle                    TakerFeedbackEvent;                                // 0x0488(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         TakerFeedbackRepeatDelay;                          // 0x04A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TakerFeedbackInitialDelay;                         // 0x04A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TC_GameplayStatusStun;                             // 0x04A8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TC_GameplayStatusStun;                             // 0x04A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          PlayerIsStunned;                                   // 0x04B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -50,8 +50,8 @@ public:
 		return GetDefaultObjImpl<AGCN_TakerMarkedForDeath_C>();
 	}
 };
-static_assert(alignof(AGCN_TakerMarkedForDeath_C) == 0x11821D80, "Wrong alignment on AGCN_TakerMarkedForDeath_C");
-static_assert(sizeof(AGCN_TakerMarkedForDeath_C) == 0x11821D80, "Wrong size on AGCN_TakerMarkedForDeath_C");
+static_assert(alignof(AGCN_TakerMarkedForDeath_C) == 0x000008, "Wrong alignment on AGCN_TakerMarkedForDeath_C");
+static_assert(sizeof(AGCN_TakerMarkedForDeath_C) == 0x0004B8, "Wrong size on AGCN_TakerMarkedForDeath_C");
 static_assert(offsetof(AGCN_TakerMarkedForDeath_C, UberGraphFrame) == 0x000468, "Member 'AGCN_TakerMarkedForDeath_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AGCN_TakerMarkedForDeath_C, OverHeadEffect) == 0x000470, "Member 'AGCN_TakerMarkedForDeath_C::OverHeadEffect' has a wrong offset!");
 static_assert(offsetof(AGCN_TakerMarkedForDeath_C, MiniMapCrosshair) == 0x000478, "Member 'AGCN_TakerMarkedForDeath_C::MiniMapCrosshair' has a wrong offset!");

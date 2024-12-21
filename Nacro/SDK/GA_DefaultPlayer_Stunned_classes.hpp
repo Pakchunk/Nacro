@@ -20,21 +20,21 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0098 (0x0B08 - 0x0A70)
 class UGA_DefaultPlayer_Stunned_C final : public UGAB_GenericStunned_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_GA_DefaultPlayer_Stunned_C;         // 0x0A70(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_GA_DefaultPlayer_Stunned_C;         // 0x0A70(0x0008)(Transient, DuplicateTransient)
 	class UAnimMontage*                           TakerSoulSuckVictimMontage;                        // 0x0A78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TC_GT_NPCAbilityAttackMeleeSoulSuck;               // 0x0A80(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TC_NPCAbilityAttackMeleeSoulSuckRelease;           // 0x0A88(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_NPCAbilityAttackMeleeSoulSuck;                  // 0x0A90(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                           TC_GT_NPCAbilityAttackMeleeSoulSuck;               // 0x0A80(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TC_NPCAbilityAttackMeleeSoulSuckRelease;           // 0x0A88(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_NPCAbilityAttackMeleeSoulSuck;                  // 0x0A90(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AFortPawn*                              PlayerPawn;                                        // 0x0AB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   SoulSuckMontageSection;                            // 0x0AB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   SoulSuckCurrentMontageSection;                     // 0x0AC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SoulSuckGoalActorNormalizedHealth;                 // 0x0AC8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_ACC[0x4];                                      // 0x0ACC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortFeedbackHandle                    StunFeedbackEvent;                                 // 0x0AD0(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortFeedbackHandle                    StunFeedbackEvent;                                 // 0x0AD0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class UClass*                                 SoulSuckCameraShake;                               // 0x0AE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCameraAnimInst*                        SoulSuckCameraAnimInst;                            // 0x0AF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerCameraManager*                   PlayerCameraManager;                               // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,8 +68,8 @@ public:
 		return GetDefaultObjImpl<UGA_DefaultPlayer_Stunned_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_Stunned_C) == 0x1182EB00, "Wrong alignment on UGA_DefaultPlayer_Stunned_C");
-static_assert(sizeof(UGA_DefaultPlayer_Stunned_C) == 0x1182EB00, "Wrong size on UGA_DefaultPlayer_Stunned_C");
+static_assert(alignof(UGA_DefaultPlayer_Stunned_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_Stunned_C");
+static_assert(sizeof(UGA_DefaultPlayer_Stunned_C) == 0x000B08, "Wrong size on UGA_DefaultPlayer_Stunned_C");
 static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, UberGraphFrame_GA_DefaultPlayer_Stunned_C) == 0x000A70, "Member 'UGA_DefaultPlayer_Stunned_C::UberGraphFrame_GA_DefaultPlayer_Stunned_C' has a wrong offset!");
 static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, TakerSoulSuckVictimMontage) == 0x000A78, "Member 'UGA_DefaultPlayer_Stunned_C::TakerSoulSuckVictimMontage' has a wrong offset!");
 static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, TC_GT_NPCAbilityAttackMeleeSoulSuck) == 0x000A80, "Member 'UGA_DefaultPlayer_Stunned_C::TC_GT_NPCAbilityAttackMeleeSoulSuck' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookRecycleSlotResultsWidget.CollectionBookRecycleSlotResultsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0260 - 0x0250)
 class UCollectionBookRecycleSlotResultsWidget_C final : public UFortCollectionBookRecycleSlotResultsWidget
 {
 public:
@@ -34,8 +34,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookRecycleSlotResultsWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookRecycleSlotResultsWidget_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookRecycleSlotResultsWidget_C");
-static_assert(sizeof(UCollectionBookRecycleSlotResultsWidget_C) == 0x322CBBB8, "Wrong size on UCollectionBookRecycleSlotResultsWidget_C");
+static_assert(alignof(UCollectionBookRecycleSlotResultsWidget_C) == 0x000008, "Wrong alignment on UCollectionBookRecycleSlotResultsWidget_C");
+static_assert(sizeof(UCollectionBookRecycleSlotResultsWidget_C) == 0x000260, "Wrong size on UCollectionBookRecycleSlotResultsWidget_C");
 static_assert(offsetof(UCollectionBookRecycleSlotResultsWidget_C, DisplayNameWidget) == 0x000250, "Member 'UCollectionBookRecycleSlotResultsWidget_C::DisplayNameWidget' has a wrong offset!");
 static_assert(offsetof(UCollectionBookRecycleSlotResultsWidget_C, Image_2) == 0x000258, "Member 'UCollectionBookRecycleSlotResultsWidget_C::Image_2' has a wrong offset!");
 

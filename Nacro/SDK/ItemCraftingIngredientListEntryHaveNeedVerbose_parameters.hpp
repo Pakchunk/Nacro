@@ -55,7 +55,7 @@ static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_PreConstru
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemCraftingIngredientListEntryHaveNeedVerbose_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemCraftingIngredientListEntryHaveNeedVerbose.ItemCraftingIngredientListEntryHaveNeedVerbose_C.DoDesignTimeRandomization
-// 0x52535 (0x52535 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization final
 {
 public:
@@ -68,10 +68,10 @@ public:
 	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomInteger_ReturnValue2;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemDefinition*                    K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x0038(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x0038(0x0028)()
 };
-static_assert(alignof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization) == 0x052535, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization");
-static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization) == 0x052535, "Wrong size on ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization");
+static_assert(alignof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization) == 0x000008, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization");
+static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization) == 0x000060, "Wrong size on ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization, Temp_int_Variable) == 0x000000, "Member 'ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization, Temp_object_Variable) == 0x000008, "Member 'ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization, Temp_object_Variable2) == 0x000010, "Member 'ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization::Temp_object_Variable2' has a wrong offset!");
@@ -83,8 +83,8 @@ static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesign
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization, CallFunc_MakeItemQuantityPair_ReturnValue) == 0x000038, "Member 'ItemCraftingIngredientListEntryHaveNeedVerbose_C_DoDesignTimeRandomization::CallFunc_MakeItemQuantityPair_ReturnValue' has a wrong offset!");
 
 // Function ItemCraftingIngredientListEntryHaveNeedVerbose.ItemCraftingIngredientListEntryHaveNeedVerbose_C.Refresh
-// 0x740068 (0x740068 - 0x0000)
-struct alignas(0x740068) ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh final
+// 0x0058 (0x0058 - 0x0000)
+struct ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh final
 {
 public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -101,8 +101,8 @@ public:
 	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0040(0x0018)()
 };
-static_assert(alignof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh) == 0x740068, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh");
-static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh) == 0x740068, "Wrong size on ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh");
+static_assert(alignof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh) == 0x000008, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh");
+static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh) == 0x000058, "Wrong size on ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh, Temp_byte_Variable) == 0x000000, "Member 'ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh, CallFunc_GetEmptyText_ReturnValue) == 0x000008, "Member 'ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh, Temp_byte_Variable2) == 0x000020, "Member 'ItemCraftingIngredientListEntryHaveNeedVerbose_C_Refresh::Temp_byte_Variable2' has a wrong offset!");

@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "SkillTreeGroups_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function NodeBackground.NodeBackground_C.ExecuteUbergraph_NodeBackground
-// 0x0E18 (0x0E18 - 0x0000)
-struct alignas(0xE18) NodeBackground_C_ExecuteUbergraph_NodeBackground final
+// 0x0008 (0x0008 - 0x0000)
+struct NodeBackground_C_ExecuteUbergraph_NodeBackground final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(NodeBackground_C_ExecuteUbergraph_NodeBackground) == 0x000E18, "Wrong alignment on NodeBackground_C_ExecuteUbergraph_NodeBackground");
-static_assert(sizeof(NodeBackground_C_ExecuteUbergraph_NodeBackground) == 0x000E18, "Wrong size on NodeBackground_C_ExecuteUbergraph_NodeBackground");
+static_assert(alignof(NodeBackground_C_ExecuteUbergraph_NodeBackground) == 0x000004, "Wrong alignment on NodeBackground_C_ExecuteUbergraph_NodeBackground");
+static_assert(sizeof(NodeBackground_C_ExecuteUbergraph_NodeBackground) == 0x000008, "Wrong size on NodeBackground_C_ExecuteUbergraph_NodeBackground");
 static_assert(offsetof(NodeBackground_C_ExecuteUbergraph_NodeBackground, EntryPoint) == 0x000000, "Member 'NodeBackground_C_ExecuteUbergraph_NodeBackground::EntryPoint' has a wrong offset!");
 static_assert(offsetof(NodeBackground_C_ExecuteUbergraph_NodeBackground, K2Node_Event_IsDesignTime) == 0x000004, "Member 'NodeBackground_C_ExecuteUbergraph_NodeBackground::K2Node_Event_IsDesignTime' has a wrong offset!");
 
@@ -42,7 +42,7 @@ static_assert(sizeof(NodeBackground_C_PreConstruct) == 0x000001, "Wrong size on 
 static_assert(offsetof(NodeBackground_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'NodeBackground_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function NodeBackground.NodeBackground_C.SetBackgroundColor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct NodeBackground_C_SetBackgroundColor final
 {
 public:
@@ -50,10 +50,10 @@ public:
 	ESkillTreeGroups                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetSingleMaterialStyleMID_ReturnValue;    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NodeBackground_C_SetBackgroundColor) == 0x11821300, "Wrong alignment on NodeBackground_C_SetBackgroundColor");
-static_assert(sizeof(NodeBackground_C_SetBackgroundColor) == 0x11821300, "Wrong size on NodeBackground_C_SetBackgroundColor");
+static_assert(alignof(NodeBackground_C_SetBackgroundColor) == 0x000008, "Wrong alignment on NodeBackground_C_SetBackgroundColor");
+static_assert(sizeof(NodeBackground_C_SetBackgroundColor) == 0x000020, "Wrong size on NodeBackground_C_SetBackgroundColor");
 static_assert(offsetof(NodeBackground_C_SetBackgroundColor, Groups) == 0x000000, "Member 'NodeBackground_C_SetBackgroundColor::Groups' has a wrong offset!");
 static_assert(offsetof(NodeBackground_C_SetBackgroundColor, Temp_byte_Variable) == 0x000001, "Member 'NodeBackground_C_SetBackgroundColor::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(NodeBackground_C_SetBackgroundColor, CallFunc_GetSingleMaterialStyleMID_ReturnValue) == 0x000008, "Member 'NodeBackground_C_SetBackgroundColor::CallFunc_GetSingleMaterialStyleMID_ReturnValue' has a wrong offset!");

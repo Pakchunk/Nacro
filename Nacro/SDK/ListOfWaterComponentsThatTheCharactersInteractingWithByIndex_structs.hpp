@@ -15,14 +15,14 @@ namespace SDK
 {
 
 // UserDefinedStruct ListOfWaterComponentsThatTheCharactersInteractingWithByIndex.ListOfWaterComponentsThatTheCharactersInteractingWithByIndex
-// 0x320030 (0x320030 - 0x0000)
-struct alignas(0x320030) FListOfWaterComponentsThatTheCharactersInteractingWithByIndex final
+// 0x0010 (0x0010 - 0x0000)
+struct FListOfWaterComponentsThatTheCharactersInteractingWithByIndex final
 {
 public:
 	TArray<int32>                                 WaterCollisionComponentIndices_3_A6FB8AAE4E16FD605B61E1A03FF83823; // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
 };
-static_assert(alignof(FListOfWaterComponentsThatTheCharactersInteractingWithByIndex) == 0x320030, "Wrong alignment on FListOfWaterComponentsThatTheCharactersInteractingWithByIndex");
-static_assert(sizeof(FListOfWaterComponentsThatTheCharactersInteractingWithByIndex) == 0x320030, "Wrong size on FListOfWaterComponentsThatTheCharactersInteractingWithByIndex");
+static_assert(alignof(FListOfWaterComponentsThatTheCharactersInteractingWithByIndex) == 0x000008, "Wrong alignment on FListOfWaterComponentsThatTheCharactersInteractingWithByIndex");
+static_assert(sizeof(FListOfWaterComponentsThatTheCharactersInteractingWithByIndex) == 0x000010, "Wrong size on FListOfWaterComponentsThatTheCharactersInteractingWithByIndex");
 static_assert(offsetof(FListOfWaterComponentsThatTheCharactersInteractingWithByIndex, WaterCollisionComponentIndices_3_A6FB8AAE4E16FD605B61E1A03FF83823) == 0x000000, "Member 'FListOfWaterComponentsThatTheCharactersInteractingWithByIndex::WaterCollisionComponentIndices_3_A6FB8AAE4E16FD605B61E1A03FF83823' has a wrong offset!");
 
 }

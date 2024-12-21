@@ -20,13 +20,14 @@ namespace SDK::Params
 {
 
 // Function BluGloManager.BluGloManager_C.ExecuteUbergraph_BluGloManager
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x03A0 (0x03A0 - 0x0000)
 struct BluGloManager_C_ExecuteUbergraph_BluGloManager final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  K2Node_HandleMissionEvent_MissionGuid;             // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_ObjectiveHandle;         // 0x0018(0x11821C00)()
+	struct FGuid                                  K2Node_HandleMissionEvent_MissionGuid;             // 0x0004(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_ObjectiveHandle;         // 0x0018(0x0020)()
 	class UFortMissionEventParams*                K2Node_HandleMissionEvent_Params;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW; // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -36,10 +37,10 @@ public:
 	int32                                         K2Node_HandleMissionEvent_GenericInt;              // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_HandleMissionEvent_GenericFloat;            // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_HandleMissionEvent_GenericText;             // 0x0068(0x0018)(ConstParm)
-	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_GameplayTags;            // 0x0080(0x11821C00)()
-	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent;            // 0x00A0(0x11821C00)(ConstParm)
-	struct FGuid                                  K2Node_HandleMissionEvent_MissionGuid2;            // 0x0138(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_ObjectiveHandle2;        // 0x0148(0x11821C00)()
+	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_GameplayTags;            // 0x0080(0x0020)()
+	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent;            // 0x00A0(0x0098)(ConstParm)
+	struct FGuid                                  K2Node_HandleMissionEvent_MissionGuid2;            // 0x0138(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_ObjectiveHandle2;        // 0x0148(0x0020)()
 	class UFortMissionEventParams*                K2Node_HandleMissionEvent_Params2;                 // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW2; // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -49,12 +50,12 @@ public:
 	int32                                         K2Node_HandleMissionEvent_GenericInt2;             // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_HandleMissionEvent_GenericFloat2;           // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_HandleMissionEvent_GenericText2;            // 0x0198(0x0018)(ConstParm)
-	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_GameplayTags2;           // 0x01B0(0x11821C00)()
-	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent2;           // 0x01D0(0x11821C00)(ConstParm)
+	struct FGameplayTagContainer                  K2Node_HandleMissionEvent_GameplayTags2;           // 0x01B0(0x0020)()
+	struct FFortMissionEvent                      K2Node_HandleMissionEvent_MissionEvent2;           // 0x01D0(0x0098)(ConstParm)
 	bool                                          K2Node_CustomEvent_On_off;                         // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_269[0x3];                                      // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0270(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0270(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -72,7 +73,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable2;                    // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_ActorToSpawnFrom;               // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_LocationToSpawnFromIfActorInvalid; // 0x02D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_LocationToSpawnFromIfActorInvalid; // 0x02D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEnvQueryStatus                               K2Node_CustomEvent_QueryStatus;                    // 0x02DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2DD[0x3];                                      // 0x02DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnvQueryInstanceBlueprintWrapper*      K2Node_CustomEvent_QueryInstance;                  // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,25 +82,26 @@ public:
 	uint8                                         Pad_2ED[0x3];                                      // 0x02ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATiered_BluGlo_Parent_C*                CallFunc_Array_Get_Item2;                          // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x02FC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x02FC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               K2Node_CustomEvent_PSystem;                        // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_Conv_VectorToTransform_ReturnValue;       // 0x0310(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0340(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_Conv_VectorToTransform_ReturnValue;       // 0x0310(0x0030)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0340(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34C[0x4];                                      // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_359[0x7];                                      // 0x0359(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABluGlo_Node_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_369[0x3];                                      // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                K2Node_CustomEvent_SpawnCenter;                    // 0x036C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_SpawnCenter;                    // 0x036C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_StartSpawnFXAndAudio_SpawnFXEmitter;      // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UParticleSystemComponent* PSystem)> K2Node_CreateDelegate_OutputDelegate;              // 0x0388(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortMission*                           K2Node_CustomEvent_Mission;                        // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_ExecuteUbergraph_BluGloManager) == 0x11821C00, "Wrong alignment on BluGloManager_C_ExecuteUbergraph_BluGloManager");
-static_assert(sizeof(BluGloManager_C_ExecuteUbergraph_BluGloManager) == 0x11821C00, "Wrong size on BluGloManager_C_ExecuteUbergraph_BluGloManager");
+static_assert(alignof(BluGloManager_C_ExecuteUbergraph_BluGloManager) == 0x000010, "Wrong alignment on BluGloManager_C_ExecuteUbergraph_BluGloManager");
+static_assert(sizeof(BluGloManager_C_ExecuteUbergraph_BluGloManager) == 0x0003A0, "Wrong size on BluGloManager_C_ExecuteUbergraph_BluGloManager");
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, EntryPoint) == 0x000000, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_MissionGuid) == 0x000004, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_MissionGuid' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_ObjectiveHandle) == 0x000018, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_ObjectiveHandle' has a wrong offset!");
@@ -163,12 +165,12 @@ static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_Cr
 static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_Mission) == 0x000398, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_Mission' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseEQS
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS final
 {
 public:
-	struct FGuid                                  MissionGuid;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  ObjectiveHandle;                                   // 0x0010(0x11821C00)(Parm)
+	struct FGuid                                  MissionGuid;                                       // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  ObjectiveHandle;                                   // 0x0010(0x0020)(Parm)
 	class UFortMissionEventParams*                Params_0;                                          // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DO_NOT_USE_THIS_OR_VARIABLES_BELOW;                // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -178,11 +180,11 @@ public:
 	int32                                         GenericInt;                                        // 0x0058(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         GenericFloat;                                      // 0x005C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   GenericText;                                       // 0x0060(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0078(0x11821C00)(Parm)
-	struct FFortMissionEvent                      MissionEvent;                                      // 0x0098(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0078(0x0020)(Parm)
+	struct FFortMissionEvent                      MissionEvent;                                      // 0x0098(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS) == 0x11821C00, "Wrong alignment on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS");
-static_assert(sizeof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS) == 0x11821C00, "Wrong size on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS");
+static_assert(alignof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS) == 0x000008, "Wrong alignment on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS");
+static_assert(sizeof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS) == 0x000130, "Wrong size on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS");
 static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, MissionGuid) == 0x000000, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::MissionGuid' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, ObjectiveHandle) == 0x000010, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::ObjectiveHandle' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, Params_0) == 0x000030, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::Params_0' has a wrong offset!");
@@ -208,41 +210,41 @@ static_assert(sizeof(BluGloManager_C_AddMoreBluGloInWorld) == 0x000008, "Wrong s
 static_assert(offsetof(BluGloManager_C_AddMoreBluGloInWorld, Mission) == 0x000000, "Member 'BluGloManager_C_AddMoreBluGloInWorld::Mission' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.SpawnBluGloGroupEvent
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct BluGloManager_C_SpawnBluGloGroupEvent final
 {
 public:
-	struct FVector                                SpawnCenter;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SpawnCenter;                                       // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_SpawnBluGloGroupEvent) == 0x11821300, "Wrong alignment on BluGloManager_C_SpawnBluGloGroupEvent");
-static_assert(sizeof(BluGloManager_C_SpawnBluGloGroupEvent) == 0x11821300, "Wrong size on BluGloManager_C_SpawnBluGloGroupEvent");
+static_assert(alignof(BluGloManager_C_SpawnBluGloGroupEvent) == 0x000004, "Wrong alignment on BluGloManager_C_SpawnBluGloGroupEvent");
+static_assert(sizeof(BluGloManager_C_SpawnBluGloGroupEvent) == 0x00000C, "Wrong size on BluGloManager_C_SpawnBluGloGroupEvent");
 static_assert(offsetof(BluGloManager_C_SpawnBluGloGroupEvent, SpawnCenter) == 0x000000, "Member 'BluGloManager_C_SpawnBluGloGroupEvent::SpawnCenter' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.SpawnFXComplete
-// 0x00CF (0x00CF - 0x0000)
-struct alignas(0xCF) BluGloManager_C_SpawnFXComplete final
+// 0x0008 (0x0008 - 0x0000)
+struct BluGloManager_C_SpawnFXComplete final
 {
 public:
 	class UParticleSystemComponent*               PSystem;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_SpawnFXComplete) == 0x0000CF, "Wrong alignment on BluGloManager_C_SpawnFXComplete");
-static_assert(sizeof(BluGloManager_C_SpawnFXComplete) == 0x0000CF, "Wrong size on BluGloManager_C_SpawnFXComplete");
+static_assert(alignof(BluGloManager_C_SpawnFXComplete) == 0x000008, "Wrong alignment on BluGloManager_C_SpawnFXComplete");
+static_assert(sizeof(BluGloManager_C_SpawnFXComplete) == 0x000008, "Wrong size on BluGloManager_C_SpawnFXComplete");
 static_assert(offsetof(BluGloManager_C_SpawnFXComplete, PSystem) == 0x000000, "Member 'BluGloManager_C_SpawnFXComplete::PSystem' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.OnBluGloQueryFinished
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct BluGloManager_C_OnBluGloQueryFinished final
 {
 public:
 	class AActor*                                 ActorToSpawnFrom;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                LocationToSpawnFromIfActorInvalid;                 // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LocationToSpawnFromIfActorInvalid;                 // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEnvQueryStatus                               QueryStatus;                                       // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnvQueryInstanceBlueprintWrapper*      QueryInstance;                                     // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumBluGloToSpawn;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_OnBluGloQueryFinished) == 0x11821300, "Wrong alignment on BluGloManager_C_OnBluGloQueryFinished");
-static_assert(sizeof(BluGloManager_C_OnBluGloQueryFinished) == 0x11821300, "Wrong size on BluGloManager_C_OnBluGloQueryFinished");
+static_assert(alignof(BluGloManager_C_OnBluGloQueryFinished) == 0x000008, "Wrong alignment on BluGloManager_C_OnBluGloQueryFinished");
+static_assert(sizeof(BluGloManager_C_OnBluGloQueryFinished) == 0x000028, "Wrong size on BluGloManager_C_OnBluGloQueryFinished");
 static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, ActorToSpawnFrom) == 0x000000, "Member 'BluGloManager_C_OnBluGloQueryFinished::ActorToSpawnFrom' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, LocationToSpawnFromIfActorInvalid) == 0x000008, "Member 'BluGloManager_C_OnBluGloQueryFinished::LocationToSpawnFromIfActorInvalid' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, QueryStatus) == 0x000014, "Member 'BluGloManager_C_OnBluGloQueryFinished::QueryStatus' has a wrong offset!");
@@ -250,23 +252,23 @@ static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, QueryInstance) == 
 static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, NumBluGloToSpawn) == 0x000020, "Member 'BluGloManager_C_OnBluGloQueryFinished::NumBluGloToSpawn' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.StopSpawnFX
-// 0x002A (0x002A - 0x0000)
-struct alignas(0x2A) BluGloManager_C_StopSpawnFX final
+// 0x0001 (0x0001 - 0x0000)
+struct BluGloManager_C_StopSpawnFX final
 {
 public:
 	bool                                          Off;                                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_StopSpawnFX) == 0x00002A, "Wrong alignment on BluGloManager_C_StopSpawnFX");
-static_assert(sizeof(BluGloManager_C_StopSpawnFX) == 0x00002A, "Wrong size on BluGloManager_C_StopSpawnFX");
+static_assert(alignof(BluGloManager_C_StopSpawnFX) == 0x000001, "Wrong alignment on BluGloManager_C_StopSpawnFX");
+static_assert(sizeof(BluGloManager_C_StopSpawnFX) == 0x000001, "Wrong size on BluGloManager_C_StopSpawnFX");
 static_assert(offsetof(BluGloManager_C_StopSpawnFX, Off) == 0x000000, "Member 'BluGloManager_C_StopSpawnFX::Off' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseActor
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor final
 {
 public:
-	struct FGuid                                  MissionGuid;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  ObjectiveHandle;                                   // 0x0010(0x11821C00)(Parm)
+	struct FGuid                                  MissionGuid;                                       // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  ObjectiveHandle;                                   // 0x0010(0x0020)(Parm)
 	class UFortMissionEventParams*                Params_0;                                          // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DO_NOT_USE_THIS_OR_VARIABLES_BELOW;                // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -276,11 +278,11 @@ public:
 	int32                                         GenericInt;                                        // 0x0058(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         GenericFloat;                                      // 0x005C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   GenericText;                                       // 0x0060(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0078(0x11821C00)(Parm)
-	struct FFortMissionEvent                      MissionEvent;                                      // 0x0098(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0078(0x0020)(Parm)
+	struct FFortMissionEvent                      MissionEvent;                                      // 0x0098(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor) == 0x11821C00, "Wrong alignment on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor");
-static_assert(sizeof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor) == 0x11821C00, "Wrong size on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor");
+static_assert(alignof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor) == 0x000008, "Wrong alignment on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor");
+static_assert(sizeof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor) == 0x000130, "Wrong size on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor");
 static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, MissionGuid) == 0x000000, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::MissionGuid' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, ObjectiveHandle) == 0x000010, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::ObjectiveHandle' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, Params_0) == 0x000030, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::Params_0' has a wrong offset!");
@@ -295,19 +297,20 @@ static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseA
 static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, MissionEvent) == 0x000098, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::MissionEvent' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.RequestedBluGo
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct BluGloManager_C_RequestedBluGo final
 {
 public:
 	class AFortMission*                           Mission;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                EQS_Start_Location;                                // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                EQS_Start_Location;                                // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetCurrentBluGloRewards_ReturnValue;      // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_RequestedBluGo) == 0x11821300, "Wrong alignment on BluGloManager_C_RequestedBluGo");
-static_assert(sizeof(BluGloManager_C_RequestedBluGo) == 0x11821300, "Wrong size on BluGloManager_C_RequestedBluGo");
+static_assert(alignof(BluGloManager_C_RequestedBluGo) == 0x000008, "Wrong alignment on BluGloManager_C_RequestedBluGo");
+static_assert(sizeof(BluGloManager_C_RequestedBluGo) == 0x000028, "Wrong size on BluGloManager_C_RequestedBluGo");
 static_assert(offsetof(BluGloManager_C_RequestedBluGo, Mission) == 0x000000, "Member 'BluGloManager_C_RequestedBluGo::Mission' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_RequestedBluGo, EQS_Start_Location) == 0x000008, "Member 'BluGloManager_C_RequestedBluGo::EQS_Start_Location' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_RequestedBluGo, Actor) == 0x000018, "Member 'BluGloManager_C_RequestedBluGo::Actor' has a wrong offset!");
@@ -315,8 +318,8 @@ static_assert(offsetof(BluGloManager_C_RequestedBluGo, CallFunc_IsValid_ReturnVa
 static_assert(offsetof(BluGloManager_C_RequestedBluGo, CallFunc_GetCurrentBluGloRewards_ReturnValue) == 0x000024, "Member 'BluGloManager_C_RequestedBluGo::CallFunc_GetCurrentBluGloRewards_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.RemoveOccupiedNodes
-// 0x0038 (0x0038 - 0x0000)
-struct alignas(0x38) BluGloManager_C_RemoveOccupiedNodes final
+// 0x0020 (0x0020 - 0x0000)
+struct BluGloManager_C_RemoveOccupiedNodes final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -328,8 +331,8 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_RemoveOccupiedNodes) == 0x000038, "Wrong alignment on BluGloManager_C_RemoveOccupiedNodes");
-static_assert(sizeof(BluGloManager_C_RemoveOccupiedNodes) == 0x000038, "Wrong size on BluGloManager_C_RemoveOccupiedNodes");
+static_assert(alignof(BluGloManager_C_RemoveOccupiedNodes) == 0x000008, "Wrong alignment on BluGloManager_C_RemoveOccupiedNodes");
+static_assert(sizeof(BluGloManager_C_RemoveOccupiedNodes) == 0x000020, "Wrong size on BluGloManager_C_RemoveOccupiedNodes");
 static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BluGloManager_C_RemoveOccupiedNodes::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BluGloManager_C_RemoveOccupiedNodes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BluGloManager_C_RemoveOccupiedNodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -339,18 +342,19 @@ static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, CallFunc_Less_IntInt
 static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, CallFunc_Array_RemoveItem_ReturnValue) == 0x00001D, "Member 'BluGloManager_C_RemoveOccupiedNodes::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.SpawnBluGlo
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct BluGloManager_C_SpawnBluGlo final
 {
 public:
-	struct FVector                                SpawnLocation;                                     // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                SpawnFromLocation;                                 // 0x000C(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_Conv_VectorToTransform_ReturnValue;       // 0x0020(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FVector                                SpawnLocation;                                     // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SpawnFromLocation;                                 // 0x000C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_Conv_VectorToTransform_ReturnValue;       // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABluGlo_Node_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_SpawnBluGlo) == 0x11821300, "Wrong alignment on BluGloManager_C_SpawnBluGlo");
-static_assert(sizeof(BluGloManager_C_SpawnBluGlo) == 0x11821300, "Wrong size on BluGloManager_C_SpawnBluGlo");
+static_assert(alignof(BluGloManager_C_SpawnBluGlo) == 0x000010, "Wrong alignment on BluGloManager_C_SpawnBluGlo");
+static_assert(sizeof(BluGloManager_C_SpawnBluGlo) == 0x000060, "Wrong size on BluGloManager_C_SpawnBluGlo");
 static_assert(offsetof(BluGloManager_C_SpawnBluGlo, SpawnLocation) == 0x000000, "Member 'BluGloManager_C_SpawnBluGlo::SpawnLocation' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_SpawnBluGlo, SpawnFromLocation) == 0x00000C, "Member 'BluGloManager_C_SpawnBluGlo::SpawnFromLocation' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_SpawnBluGlo, CallFunc_Conv_VectorToTransform_ReturnValue) == 0x000020, "Member 'BluGloManager_C_SpawnBluGlo::CallFunc_Conv_VectorToTransform_ReturnValue' has a wrong offset!");
@@ -358,21 +362,22 @@ static_assert(offsetof(BluGloManager_C_SpawnBluGlo, CallFunc_BeginDeferredActorS
 static_assert(offsetof(BluGloManager_C_SpawnBluGlo, CallFunc_FinishSpawningActor_ReturnValue) == 0x000058, "Member 'BluGloManager_C_SpawnBluGlo::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.IssueBluGloRequest
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct BluGloManager_C_IssueBluGloRequest final
 {
 public:
 	int32                                         NumBluGloToSpawn;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 ActorToSpawnFrom;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                LocationToSpawnFromIfActorInvalid;                 // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LocationToSpawnFromIfActorInvalid;                 // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnvQueryInstanceBlueprintWrapper*      CallFunc_RunEQSQuery_ReturnValue;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid, EEnvQueryStatus QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int32 NumBluGloToSpawn)> K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UBluGloRequestHandler_C*                K2Node_DynamicCast_AsBlu_Glo_Request_Handler;      // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_IssueBluGloRequest) == 0x11821300, "Wrong alignment on BluGloManager_C_IssueBluGloRequest");
-static_assert(sizeof(BluGloManager_C_IssueBluGloRequest) == 0x11821300, "Wrong size on BluGloManager_C_IssueBluGloRequest");
+static_assert(alignof(BluGloManager_C_IssueBluGloRequest) == 0x000008, "Wrong alignment on BluGloManager_C_IssueBluGloRequest");
+static_assert(sizeof(BluGloManager_C_IssueBluGloRequest) == 0x000048, "Wrong size on BluGloManager_C_IssueBluGloRequest");
 static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, NumBluGloToSpawn) == 0x000000, "Member 'BluGloManager_C_IssueBluGloRequest::NumBluGloToSpawn' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, ActorToSpawnFrom) == 0x000008, "Member 'BluGloManager_C_IssueBluGloRequest::ActorToSpawnFrom' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, LocationToSpawnFromIfActorInvalid) == 0x000010, "Member 'BluGloManager_C_IssueBluGloRequest::LocationToSpawnFromIfActorInvalid' has a wrong offset!");
@@ -382,7 +387,7 @@ static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, K2Node_DynamicCast_As
 static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BluGloManager_C_IssueBluGloRequest::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.BuildSpawnLocations
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct BluGloManager_C_BuildSpawnLocations final
 {
 public:
@@ -390,7 +395,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnvQueryInstanceBlueprintWrapper*      QueryInstance;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumBluGloToSpawn;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                SpawnCenter;                                       // 0x0014(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SpawnCenter;                                       // 0x0014(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector>                        LocationsForSpawningBluGlo;                        // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -401,8 +406,8 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_BuildSpawnLocations) == 0x11821300, "Wrong alignment on BluGloManager_C_BuildSpawnLocations");
-static_assert(sizeof(BluGloManager_C_BuildSpawnLocations) == 0x11821300, "Wrong size on BluGloManager_C_BuildSpawnLocations");
+static_assert(alignof(BluGloManager_C_BuildSpawnLocations) == 0x000008, "Wrong alignment on BluGloManager_C_BuildSpawnLocations");
+static_assert(sizeof(BluGloManager_C_BuildSpawnLocations) == 0x000070, "Wrong size on BluGloManager_C_BuildSpawnLocations");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, QueryStatus) == 0x000000, "Member 'BluGloManager_C_BuildSpawnLocations::QueryStatus' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, QueryInstance) == 0x000008, "Member 'BluGloManager_C_BuildSpawnLocations::QueryInstance' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, NumBluGloToSpawn) == 0x000010, "Member 'BluGloManager_C_BuildSpawnLocations::NumBluGloToSpawn' has a wrong offset!");
@@ -417,7 +422,7 @@ static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_GreaterEqua
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_BooleanAND_ReturnValue) == 0x00006D, "Member 'BluGloManager_C_BuildSpawnLocations::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.BuildSpawnLocationsFromQueryLocations
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct BluGloManager_C_BuildSpawnLocationsFromQueryLocations final
 {
 public:
@@ -431,13 +436,13 @@ public:
 	int32                                         CallFunc_Min_ReturnValue;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Array_Get_Item;                           // 0x004C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Array_Get_Item;                           // 0x004C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations) == 0x11821300, "Wrong alignment on BluGloManager_C_BuildSpawnLocationsFromQueryLocations");
-static_assert(sizeof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations) == 0x11821300, "Wrong size on BluGloManager_C_BuildSpawnLocationsFromQueryLocations");
+static_assert(alignof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations) == 0x000008, "Wrong alignment on BluGloManager_C_BuildSpawnLocationsFromQueryLocations");
+static_assert(sizeof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations) == 0x000068, "Wrong size on BluGloManager_C_BuildSpawnLocationsFromQueryLocations");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, NumBluGloToSpawn) == 0x000000, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::NumBluGloToSpawn' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, QueryResultLocations) == 0x000008, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::QueryResultLocations' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, LocationsForSpawningBluGlo) == 0x000018, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::LocationsForSpawningBluGlo' has a wrong offset!");
@@ -453,26 +458,26 @@ static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, Ca
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000060, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.BuildSpawnLocationsRandomly
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct BluGloManager_C_BuildSpawnLocationsRandomly final
 {
 public:
-	struct FVector                                LocationToSpawnFrom;                               // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LocationToSpawnFrom;                               // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumBluGloToSpawn;                                  // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector>                        LocationsForSpawningBluGlo;                        // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor)
 	int32                                         LastIndex;                                         // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                SpawnCenter;                                       // 0x0024(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SpawnCenter;                                       // 0x0024(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector>                        LocationsToSpawnTo;                                // 0x0030(0x0010)(Edit, ZeroConstructor)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetRandomPointInNavigableRadius_ReturnValue; // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetRandomPointInNavigableRadius_ReturnValue; // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_BuildSpawnLocationsRandomly) == 0x11821300, "Wrong alignment on BluGloManager_C_BuildSpawnLocationsRandomly");
-static_assert(sizeof(BluGloManager_C_BuildSpawnLocationsRandomly) == 0x11821300, "Wrong size on BluGloManager_C_BuildSpawnLocationsRandomly");
+static_assert(alignof(BluGloManager_C_BuildSpawnLocationsRandomly) == 0x000008, "Wrong alignment on BluGloManager_C_BuildSpawnLocationsRandomly");
+static_assert(sizeof(BluGloManager_C_BuildSpawnLocationsRandomly) == 0x000060, "Wrong size on BluGloManager_C_BuildSpawnLocationsRandomly");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, LocationToSpawnFrom) == 0x000000, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::LocationToSpawnFrom' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, NumBluGloToSpawn) == 0x00000C, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::NumBluGloToSpawn' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, LocationsForSpawningBluGlo) == 0x000010, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::LocationsForSpawningBluGlo' has a wrong offset!");
@@ -487,19 +492,19 @@ static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, CallFunc_Get
 static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, CallFunc_Array_Add_ReturnValue) == 0x00005C, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.ChooseSpawnCenter
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct BluGloManager_C_ChooseSpawnCenter final
 {
 public:
 	class AActor*                                 ActorToSpawnFrom;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                LocationToSpawnFrom;                               // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                SpawnCenter;                                       // 0x0014(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LocationToSpawnFrom;                               // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SpawnCenter;                                       // 0x0014(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0024(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_ChooseSpawnCenter) == 0x11821300, "Wrong alignment on BluGloManager_C_ChooseSpawnCenter");
-static_assert(sizeof(BluGloManager_C_ChooseSpawnCenter) == 0x11821300, "Wrong size on BluGloManager_C_ChooseSpawnCenter");
+static_assert(alignof(BluGloManager_C_ChooseSpawnCenter) == 0x000008, "Wrong alignment on BluGloManager_C_ChooseSpawnCenter");
+static_assert(sizeof(BluGloManager_C_ChooseSpawnCenter) == 0x000030, "Wrong size on BluGloManager_C_ChooseSpawnCenter");
 static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, ActorToSpawnFrom) == 0x000000, "Member 'BluGloManager_C_ChooseSpawnCenter::ActorToSpawnFrom' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, LocationToSpawnFrom) == 0x000008, "Member 'BluGloManager_C_ChooseSpawnCenter::LocationToSpawnFrom' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, SpawnCenter) == 0x000014, "Member 'BluGloManager_C_ChooseSpawnCenter::SpawnCenter' has a wrong offset!");
@@ -507,29 +512,29 @@ static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, CallFunc_IsValid_Retur
 static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000024, "Member 'BluGloManager_C_ChooseSpawnCenter::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.SpawnBluGloGroup
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct BluGloManager_C_SpawnBluGloGroup final
 {
 public:
 	class AActor*                                 ActorToSpawnFrom;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                LocationToSpawnFromIfActorInvalid;                 // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                LocationToSpawnFromIfActorInvalid;                 // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEnvQueryStatus                               QueryStatus;                                       // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnvQueryInstanceBlueprintWrapper*      QueryInstance;                                     // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumBluGloToSpawn;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_ChooseSpawnCenter_SpawnCenter;            // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_ChooseSpawnCenter_SpawnCenter;            // 0x0024(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        CallFunc_BuildSpawnLocations_LocationsForSpawningBluGlo; // 0x0038(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FVector                                CallFunc_Array_Get_Item;                           // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Array_Get_Item;                           // 0x0048(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_SpawnBluGloGroup) == 0x11821300, "Wrong alignment on BluGloManager_C_SpawnBluGloGroup");
-static_assert(sizeof(BluGloManager_C_SpawnBluGloGroup) == 0x11821300, "Wrong size on BluGloManager_C_SpawnBluGloGroup");
+static_assert(alignof(BluGloManager_C_SpawnBluGloGroup) == 0x000008, "Wrong alignment on BluGloManager_C_SpawnBluGloGroup");
+static_assert(sizeof(BluGloManager_C_SpawnBluGloGroup) == 0x000068, "Wrong size on BluGloManager_C_SpawnBluGloGroup");
 static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, ActorToSpawnFrom) == 0x000000, "Member 'BluGloManager_C_SpawnBluGloGroup::ActorToSpawnFrom' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, LocationToSpawnFromIfActorInvalid) == 0x000008, "Member 'BluGloManager_C_SpawnBluGloGroup::LocationToSpawnFromIfActorInvalid' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, QueryStatus) == 0x000014, "Member 'BluGloManager_C_SpawnBluGloGroup::QueryStatus' has a wrong offset!");
@@ -545,32 +550,33 @@ static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, CallFunc_Less_IntInt_Re
 static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'BluGloManager_C_SpawnBluGloGroup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.StartSpawnFXAndAudio
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct BluGloManager_C_StartSpawnFXAndAudio final
 {
 public:
-	struct FVector                                SpawnCenter;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SpawnCenter;                                       // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               SpawnFXEmitter;                                    // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_StartSpawnFXAndAudio) == 0x11821300, "Wrong alignment on BluGloManager_C_StartSpawnFXAndAudio");
-static_assert(sizeof(BluGloManager_C_StartSpawnFXAndAudio) == 0x11821300, "Wrong size on BluGloManager_C_StartSpawnFXAndAudio");
+static_assert(alignof(BluGloManager_C_StartSpawnFXAndAudio) == 0x000008, "Wrong alignment on BluGloManager_C_StartSpawnFXAndAudio");
+static_assert(sizeof(BluGloManager_C_StartSpawnFXAndAudio) == 0x000020, "Wrong size on BluGloManager_C_StartSpawnFXAndAudio");
 static_assert(offsetof(BluGloManager_C_StartSpawnFXAndAudio, SpawnCenter) == 0x000000, "Member 'BluGloManager_C_StartSpawnFXAndAudio::SpawnCenter' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_StartSpawnFXAndAudio, SpawnFXEmitter) == 0x000010, "Member 'BluGloManager_C_StartSpawnFXAndAudio::SpawnFXEmitter' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_StartSpawnFXAndAudio, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000018, "Member 'BluGloManager_C_StartSpawnFXAndAudio::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.IssueBluGloRequestForMission
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct BluGloManager_C_IssueBluGloRequestForMission final
 {
 public:
 	class AFortMission*                           Mission;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 ActorToSpawnBluGloFrom;                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetCurrentBluGloRewards_ReturnValue;      // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_IssueBluGloRequestForMission) == 0x11821300, "Wrong alignment on BluGloManager_C_IssueBluGloRequestForMission");
-static_assert(sizeof(BluGloManager_C_IssueBluGloRequestForMission) == 0x11821300, "Wrong size on BluGloManager_C_IssueBluGloRequestForMission");
+static_assert(alignof(BluGloManager_C_IssueBluGloRequestForMission) == 0x000008, "Wrong alignment on BluGloManager_C_IssueBluGloRequestForMission");
+static_assert(sizeof(BluGloManager_C_IssueBluGloRequestForMission) == 0x000020, "Wrong size on BluGloManager_C_IssueBluGloRequestForMission");
 static_assert(offsetof(BluGloManager_C_IssueBluGloRequestForMission, Mission) == 0x000000, "Member 'BluGloManager_C_IssueBluGloRequestForMission::Mission' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_IssueBluGloRequestForMission, ActorToSpawnBluGloFrom) == 0x000008, "Member 'BluGloManager_C_IssueBluGloRequestForMission::ActorToSpawnBluGloFrom' has a wrong offset!");
 static_assert(offsetof(BluGloManager_C_IssueBluGloRequestForMission, CallFunc_GetCurrentBluGloRewards_ReturnValue) == 0x000010, "Member 'BluGloManager_C_IssueBluGloRequestForMission::CallFunc_GetCurrentBluGloRewards_ReturnValue' has a wrong offset!");

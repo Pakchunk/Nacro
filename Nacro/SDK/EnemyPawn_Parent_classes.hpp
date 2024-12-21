@@ -13,22 +13,22 @@
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "ElementalEnum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "ElementalEnum_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass EnemyPawn_Parent.EnemyPawn_Parent_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0300 (0x1DF0 - 0x1AF0)
 class AEnemyPawn_Parent_C final : public AFortAIPawn
 {
 public:
 	uint8                                         Pad_1AE8[0x8];                                     // 0x1AE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1AF0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1AF0(0x0008)(Transient, DuplicateTransient)
 	class UCapsuleComponent*                      WeaponCapsuleCollision;                            // 0x1AF8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Elemental_Layer_Audio_Loop;                        // 0x1B00(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         DeathMaterialParamsTL_RemoveShadow_07AA619C445DCC77E615709CFA0BD94D; // 0x1B08(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -64,11 +64,11 @@ public:
 	bool                                          POCShouldOverrideMaterialValues;                   // 0x1B9A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B9B[0x5];                                     // 0x1B9B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     POCOverrideMaterial;                               // 0x1BA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           POCMaterialHairColor;                              // 0x1BA8(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           POCMaterialSkinColor;                              // 0x1BB8(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           POCMaterialPantColor;                              // 0x1BC8(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           POCMaterialShirtColor;                             // 0x1BD8(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRandomStream                          RandomStream;                                      // 0x1BE8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FLinearColor                           POCMaterialHairColor;                              // 0x1BA8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           POCMaterialSkinColor;                              // 0x1BB8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           POCMaterialPantColor;                              // 0x1BC8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           POCMaterialShirtColor;                             // 0x1BD8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRandomStream                          RandomStream;                                      // 0x1BE8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         PseudoRandomNetworkedFloat;                        // 0x1BF0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseRandomColorVariation;                           // 0x1BF4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1BF5[0x3];                                     // 0x1BF5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -79,29 +79,30 @@ public:
 	class UCurveFloat*                            HieghtDistributionCurve;                           // 0x1C38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RandomizeMeshScale;                                // 0x1C40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C41[0xF];                                     // 0x1C41(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             SpawnParticlesTransform;                           // 0x1C50(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FTransform                             SpawnParticlesTransform;                           // 0x1C50(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UMaterialInstanceDynamic*               Dynamic_Material_Instance_1;                       // 0x1C80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        SpawnParticles;                                    // 0x1C88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CharacterAmbientParticles;                         // 0x1C90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          AllowHeadshot;                                     // 0x1C98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C99[0x7];                                     // 0x1C99(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_RangedWeapon;                                   // 0x1CA0(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_RangedWeapon;                                   // 0x1CA0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UParticleSystemComponent*               HeadshotParticleSystemComp;                        // 0x1CC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           Additive_Hit_React_Montage;                        // 0x1CC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Death_Normal_Sound;                                // 0x1CD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Elemental_Audio_Layer_Sound;                       // 0x1CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SpecialEventHalloweenPumpkinHead;                  // 0x1CE0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1CE1[0x7];                                     // 0x1CE1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  TC_NPCCharacterTypeHuskBasic;                      // 0x1CE8(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_NPCCharacterTypeHuskBasic;                      // 0x1CE8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         PumpkinHeadPercentage;                             // 0x1D08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D0C[0x4];                                     // 0x1D0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 GE_SpecialEvent_Halloween_PumpkinHead;             // 0x1D10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            PumpkinHeadActiveGE;                               // 0x1D18(0x11821C00)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            PumpkinHeadActiveGE;                               // 0x1D18(0x0008)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Pumpkin_Head_Mesh;                                 // 0x1D20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Pumpkin_Eyeglow_Mesh;                              // 0x1D28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               PumpkinHeadRotation;                               // 0x1D30(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FVector                                PumpkinHeadScale;                                  // 0x1D3C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PumpkinHeadOffset;                                 // 0x1D48(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               PumpkinHeadRotation;                               // 0x1D30(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FVector                                PumpkinHeadScale;                                  // 0x1D3C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PumpkinHeadOffset;                                 // 0x1D48(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D54[0x4];                                     // 0x1D54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               Pumpkin_Eye_R;                                     // 0x1D58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Pumpking_Eye_L;                                    // 0x1D60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Headshot_FX_Socket;                                // 0x1D68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -128,7 +129,7 @@ public:
 	bool                                          HasGlowColorsAssigned;                             // 0x1DE5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          SpawnInTimelineCompletedSuccessfully;              // 0x1DE6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1DE7[0x1];                                     // 0x1DE7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CharacterSpawnInSafetyCheckHandle;                 // 0x1DE8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           CharacterSpawnInSafetyCheckHandle;                 // 0x1DE8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_EnemyPawn_Parent(int32 EntryPoint);
@@ -181,8 +182,8 @@ public:
 		return GetDefaultObjImpl<AEnemyPawn_Parent_C>();
 	}
 };
-static_assert(alignof(AEnemyPawn_Parent_C) == 0x1182EB00, "Wrong alignment on AEnemyPawn_Parent_C");
-static_assert(sizeof(AEnemyPawn_Parent_C) == 0x1182EB00, "Wrong size on AEnemyPawn_Parent_C");
+static_assert(alignof(AEnemyPawn_Parent_C) == 0x000010, "Wrong alignment on AEnemyPawn_Parent_C");
+static_assert(sizeof(AEnemyPawn_Parent_C) == 0x001DF0, "Wrong size on AEnemyPawn_Parent_C");
 static_assert(offsetof(AEnemyPawn_Parent_C, UberGraphFrame) == 0x001AF0, "Member 'AEnemyPawn_Parent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AEnemyPawn_Parent_C, WeaponCapsuleCollision) == 0x001AF8, "Member 'AEnemyPawn_Parent_C::WeaponCapsuleCollision' has a wrong offset!");
 static_assert(offsetof(AEnemyPawn_Parent_C, Elemental_Layer_Audio_Loop) == 0x001B00, "Member 'AEnemyPawn_Parent_C::Elemental_Layer_Audio_Loop' has a wrong offset!");

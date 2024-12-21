@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass UsedPlacementActorsContext.UsedPlacementActorsContext_C
-// 0x11821D50 (0x11821D80 - 0x0030)
+// 0x0048 (0x0078 - 0x0030)
 class UUsedPlacementActorsContext_C : public UEnvQueryContext_BlueprintBase
 {
 public:
-	struct FGameplayTagQuery                      UsedTagsAddedQuery;                                // 0x0030(0x11821D80)(Edit, BlueprintVisible)
+	struct FGameplayTagQuery                      UsedTagsAddedQuery;                                // 0x0030(0x0048)(Edit, BlueprintVisible)
 
 public:
 	void ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const;
@@ -37,8 +37,8 @@ public:
 		return GetDefaultObjImpl<UUsedPlacementActorsContext_C>();
 	}
 };
-static_assert(alignof(UUsedPlacementActorsContext_C) == 0x11821D80, "Wrong alignment on UUsedPlacementActorsContext_C");
-static_assert(sizeof(UUsedPlacementActorsContext_C) == 0x11821D80, "Wrong size on UUsedPlacementActorsContext_C");
+static_assert(alignof(UUsedPlacementActorsContext_C) == 0x000008, "Wrong alignment on UUsedPlacementActorsContext_C");
+static_assert(sizeof(UUsedPlacementActorsContext_C) == 0x000078, "Wrong size on UUsedPlacementActorsContext_C");
 static_assert(offsetof(UUsedPlacementActorsContext_C, UsedTagsAddedQuery) == 0x000030, "Member 'UUsedPlacementActorsContext_C::UsedTagsAddedQuery' has a wrong offset!");
 
 }

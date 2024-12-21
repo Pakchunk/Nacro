@@ -42,19 +42,19 @@ static_assert(sizeof(LegacyBasicGradientFill_C_PreConstruct) == 0x000001, "Wrong
 static_assert(offsetof(LegacyBasicGradientFill_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LegacyBasicGradientFill_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.Set Fill
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct LegacyBasicGradientFill_C_Set_Fill final
 {
 public:
-	struct FLinearColor                           Color_1_0;                                         // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color_2_0;                                         // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color_1_0;                                         // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color_2_0;                                         // 0x0010(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Rotation__0_Minus_1_;                              // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyBasicGradientFill_C_Set_Fill) == 0x11821300, "Wrong alignment on LegacyBasicGradientFill_C_Set_Fill");
-static_assert(sizeof(LegacyBasicGradientFill_C_Set_Fill) == 0x11821300, "Wrong size on LegacyBasicGradientFill_C_Set_Fill");
+static_assert(alignof(LegacyBasicGradientFill_C_Set_Fill) == 0x000008, "Wrong alignment on LegacyBasicGradientFill_C_Set_Fill");
+static_assert(sizeof(LegacyBasicGradientFill_C_Set_Fill) == 0x000038, "Wrong size on LegacyBasicGradientFill_C_Set_Fill");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, Color_1_0) == 0x000000, "Member 'LegacyBasicGradientFill_C_Set_Fill::Color_1_0' has a wrong offset!");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, Color_2_0) == 0x000010, "Member 'LegacyBasicGradientFill_C_Set_Fill::Color_2_0' has a wrong offset!");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, Rotation__0_Minus_1_) == 0x000020, "Member 'LegacyBasicGradientFill_C_Set_Fill::Rotation__0_Minus_1_' has a wrong offset!");
@@ -63,15 +63,15 @@ static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, CallFunc_GetDynamicMa
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'LegacyBasicGradientFill_C_Set_Fill::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.Set Brush Size
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct LegacyBasicGradientFill_C_Set_Brush_Size final
 {
 public:
-	struct FVector2D                              Brush_Size_0;                                      // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0008(0x322CBBB8)()
+	struct FVector2D                              Brush_Size_0;                                      // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0008(0x0090)()
 };
-static_assert(alignof(LegacyBasicGradientFill_C_Set_Brush_Size) == 0x11827900, "Wrong alignment on LegacyBasicGradientFill_C_Set_Brush_Size");
-static_assert(sizeof(LegacyBasicGradientFill_C_Set_Brush_Size) == 0x11827900, "Wrong size on LegacyBasicGradientFill_C_Set_Brush_Size");
+static_assert(alignof(LegacyBasicGradientFill_C_Set_Brush_Size) == 0x000008, "Wrong alignment on LegacyBasicGradientFill_C_Set_Brush_Size");
+static_assert(sizeof(LegacyBasicGradientFill_C_Set_Brush_Size) == 0x000098, "Wrong size on LegacyBasicGradientFill_C_Set_Brush_Size");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Brush_Size, Brush_Size_0) == 0x000000, "Member 'LegacyBasicGradientFill_C_Set_Brush_Size::Brush_Size_0' has a wrong offset!");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Brush_Size, K2Node_MakeStruct_SlateBrush) == 0x000008, "Member 'LegacyBasicGradientFill_C_Set_Brush_Size::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 

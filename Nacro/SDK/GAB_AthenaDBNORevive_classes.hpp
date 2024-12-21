@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0040 (0x0A80 - 0x0A40)
 class UGAB_AthenaDBNORevive_C final : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
-	struct FGameplayTag                           EC_AppliedEffect;                                  // 0x0A48(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayTag                           EC_AppliedEffect;                                  // 0x0A48(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerPawn*                        PlayerPawn;                                        // 0x0A50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         KnockbackMagnitude;                                // 0x0A58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A5C[0x4];                                      // 0x0A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UGAB_AthenaDBNORevive_C>();
 	}
 };
-static_assert(alignof(UGAB_AthenaDBNORevive_C) == 0x1182EB00, "Wrong alignment on UGAB_AthenaDBNORevive_C");
-static_assert(sizeof(UGAB_AthenaDBNORevive_C) == 0x1182EB00, "Wrong size on UGAB_AthenaDBNORevive_C");
+static_assert(alignof(UGAB_AthenaDBNORevive_C) == 0x000008, "Wrong alignment on UGAB_AthenaDBNORevive_C");
+static_assert(sizeof(UGAB_AthenaDBNORevive_C) == 0x000A80, "Wrong size on UGAB_AthenaDBNORevive_C");
 static_assert(offsetof(UGAB_AthenaDBNORevive_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_AthenaDBNORevive_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UGAB_AthenaDBNORevive_C, EC_AppliedEffect) == 0x000A48, "Member 'UGAB_AthenaDBNORevive_C::EC_AppliedEffect' has a wrong offset!");
 static_assert(offsetof(UGAB_AthenaDBNORevive_C, PlayerPawn) == 0x000A50, "Member 'UGAB_AthenaDBNORevive_C::PlayerPawn' has a wrong offset!");

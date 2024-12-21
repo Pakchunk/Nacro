@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function LobbyTimer.LobbyTimer_C.ExecuteUbergraph_LobbyTimer
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) LobbyTimer_C_ExecuteUbergraph_LobbyTimer final
+// 0x0004 (0x0004 - 0x0000)
+struct LobbyTimer_C_ExecuteUbergraph_LobbyTimer final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyTimer_C_ExecuteUbergraph_LobbyTimer) == 0x10461A40, "Wrong alignment on LobbyTimer_C_ExecuteUbergraph_LobbyTimer");
-static_assert(sizeof(LobbyTimer_C_ExecuteUbergraph_LobbyTimer) == 0x10461A40, "Wrong size on LobbyTimer_C_ExecuteUbergraph_LobbyTimer");
+static_assert(alignof(LobbyTimer_C_ExecuteUbergraph_LobbyTimer) == 0x000004, "Wrong alignment on LobbyTimer_C_ExecuteUbergraph_LobbyTimer");
+static_assert(sizeof(LobbyTimer_C_ExecuteUbergraph_LobbyTimer) == 0x000004, "Wrong size on LobbyTimer_C_ExecuteUbergraph_LobbyTimer");
 static_assert(offsetof(LobbyTimer_C_ExecuteUbergraph_LobbyTimer, EntryPoint) == 0x000000, "Member 'LobbyTimer_C_ExecuteUbergraph_LobbyTimer::EntryPoint' has a wrong offset!");
 
 // Function LobbyTimer.LobbyTimer_C.Show Lobby Timer
@@ -71,20 +71,20 @@ static_assert(sizeof(LobbyTimer_C_Handle_Show_Lobby_Timer) == 0x000001, "Wrong s
 static_assert(offsetof(LobbyTimer_C_Handle_Show_Lobby_Timer, Show) == 0x000000, "Member 'LobbyTimer_C_Handle_Show_Lobby_Timer::Show' has a wrong offset!");
 
 // Function LobbyTimer.LobbyTimer_C.Handle Lobby Timer Updated
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct LobbyTimer_C_Handle_Lobby_Timer_Updated final
 {
 public:
 	int32                                         Seconds_Remaining;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_MakeTimespan_ReturnValue;                 // 0x0008(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_MakeTimespan_ReturnValue;                 // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_AsTimespan_Timespan_ReturnValue;          // 0x0010(0x0018)()
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LobbyTimer_C_Handle_Lobby_Timer_Updated) == 0x11821300, "Wrong alignment on LobbyTimer_C_Handle_Lobby_Timer_Updated");
-static_assert(sizeof(LobbyTimer_C_Handle_Lobby_Timer_Updated) == 0x11821300, "Wrong size on LobbyTimer_C_Handle_Lobby_Timer_Updated");
+static_assert(alignof(LobbyTimer_C_Handle_Lobby_Timer_Updated) == 0x000008, "Wrong alignment on LobbyTimer_C_Handle_Lobby_Timer_Updated");
+static_assert(sizeof(LobbyTimer_C_Handle_Lobby_Timer_Updated) == 0x000030, "Wrong size on LobbyTimer_C_Handle_Lobby_Timer_Updated");
 static_assert(offsetof(LobbyTimer_C_Handle_Lobby_Timer_Updated, Seconds_Remaining) == 0x000000, "Member 'LobbyTimer_C_Handle_Lobby_Timer_Updated::Seconds_Remaining' has a wrong offset!");
 static_assert(offsetof(LobbyTimer_C_Handle_Lobby_Timer_Updated, Temp_bool_Has_Been_Initd_Variable) == 0x000004, "Member 'LobbyTimer_C_Handle_Lobby_Timer_Updated::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
 static_assert(offsetof(LobbyTimer_C_Handle_Lobby_Timer_Updated, CallFunc_MakeTimespan_ReturnValue) == 0x000008, "Member 'LobbyTimer_C_Handle_Lobby_Timer_Updated::CallFunc_MakeTimespan_ReturnValue' has a wrong offset!");

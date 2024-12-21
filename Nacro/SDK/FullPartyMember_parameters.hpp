@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function FullPartyMember.FullPartyMember_C.ExecuteUbergraph_FullPartyMember
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0280 (0x0280 - 0x0000)
 struct FullPartyMember_C_ExecuteUbergraph_FullPartyMember final
 {
 public:
@@ -68,10 +68,10 @@ public:
 	bool                                          CallFunc_IsPlayerInOurParty_ReturnValue;           // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_EB[0x5];                                       // 0x00EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTeamMemberInfo                    K2Node_Event_NewInfo;                              // 0x00F0(0x11827900)()
+	struct FFortTeamMemberInfo                    K2Node_Event_NewInfo;                              // 0x00F0(0x0190)()
 };
-static_assert(alignof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember) == 0x11821780, "Wrong alignment on FullPartyMember_C_ExecuteUbergraph_FullPartyMember");
-static_assert(sizeof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember) == 0x11821780, "Wrong size on FullPartyMember_C_ExecuteUbergraph_FullPartyMember");
+static_assert(alignof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember) == 0x000008, "Wrong alignment on FullPartyMember_C_ExecuteUbergraph_FullPartyMember");
+static_assert(sizeof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember) == 0x000280, "Wrong size on FullPartyMember_C_ExecuteUbergraph_FullPartyMember");
 static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, EntryPoint) == 0x000000, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_Event_IsDesignTime) == 0x000004, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_DuplicateConnectedWidget_ReturnValue) == 0x000008, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_DuplicateConnectedWidget_ReturnValue' has a wrong offset!");
@@ -109,60 +109,60 @@ static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallF
 static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_Event_NewInfo) == 0x0000F0, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_Event_NewInfo' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.OnPlayerInfoChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct FullPartyMember_C_OnPlayerInfoChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(FullPartyMember_C_OnPlayerInfoChanged) == 0x11821780, "Wrong alignment on FullPartyMember_C_OnPlayerInfoChanged");
-static_assert(sizeof(FullPartyMember_C_OnPlayerInfoChanged) == 0x11821780, "Wrong size on FullPartyMember_C_OnPlayerInfoChanged");
+static_assert(alignof(FullPartyMember_C_OnPlayerInfoChanged) == 0x000008, "Wrong alignment on FullPartyMember_C_OnPlayerInfoChanged");
+static_assert(sizeof(FullPartyMember_C_OnPlayerInfoChanged) == 0x000190, "Wrong size on FullPartyMember_C_OnPlayerInfoChanged");
 static_assert(offsetof(FullPartyMember_C_OnPlayerInfoChanged, NewInfo) == 0x000000, "Member 'FullPartyMember_C_OnPlayerInfoChanged::NewInfo' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.PreConstruct
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) FullPartyMember_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct FullPartyMember_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_PreConstruct) == 0x540065, "Wrong alignment on FullPartyMember_C_PreConstruct");
-static_assert(sizeof(FullPartyMember_C_PreConstruct) == 0x540065, "Wrong size on FullPartyMember_C_PreConstruct");
+static_assert(alignof(FullPartyMember_C_PreConstruct) == 0x000001, "Wrong alignment on FullPartyMember_C_PreConstruct");
+static_assert(sizeof(FullPartyMember_C_PreConstruct) == 0x000001, "Wrong size on FullPartyMember_C_PreConstruct");
 static_assert(offsetof(FullPartyMember_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'FullPartyMember_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.DialogResult_1F64669049EA0B1762273C8ED9CBB619
 // 0x0010 (0x0010 - 0x0000)
-struct FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619 final
+struct alignas(0x08) FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619) == 0x000004, "Wrong alignment on FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619");
+static_assert(alignof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619) == 0x000008, "Wrong alignment on FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619");
 static_assert(sizeof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619) == 0x000010, "Wrong size on FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619");
 static_assert(offsetof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619, Result) == 0x000000, "Member 'FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619::Result' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619, ResultName) == 0x000008, "Member 'FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619::ResultName' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateMemberInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct FullPartyMember_C_UpdateMemberInfo final
 {
 public:
-	struct FFortTeamMemberInfo                    NewMemberInfo;                                     // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    NewMemberInfo;                                     // 0x0000(0x0190)(Parm)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortPartyMemberDisplayState                  CallFunc_GetPartyMemberDisplayState_ReturnValue;   // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_UpdateMemberInfo) == 0x11821780, "Wrong alignment on FullPartyMember_C_UpdateMemberInfo");
-static_assert(sizeof(FullPartyMember_C_UpdateMemberInfo) == 0x11821780, "Wrong size on FullPartyMember_C_UpdateMemberInfo");
+static_assert(alignof(FullPartyMember_C_UpdateMemberInfo) == 0x000008, "Wrong alignment on FullPartyMember_C_UpdateMemberInfo");
+static_assert(sizeof(FullPartyMember_C_UpdateMemberInfo) == 0x0001A0, "Wrong size on FullPartyMember_C_UpdateMemberInfo");
 static_assert(offsetof(FullPartyMember_C_UpdateMemberInfo, NewMemberInfo) == 0x000000, "Member 'FullPartyMember_C_UpdateMemberInfo::NewMemberInfo' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_UpdateMemberInfo, CallFunc_GetContext_ReturnValue) == 0x000190, "Member 'FullPartyMember_C_UpdateMemberInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_UpdateMemberInfo, CallFunc_GetPartyMemberDisplayState_ReturnValue) == 0x000198, "Member 'FullPartyMember_C_UpdateMemberInfo::CallFunc_GetPartyMemberDisplayState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_UpdateMemberInfo, K2Node_SwitchEnum_CmpSuccess) == 0x000199, "Member 'FullPartyMember_C_UpdateMemberInfo::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.ShowConnected
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct FullPartyMember_C_ShowConnected final
 {
 public:
@@ -181,7 +181,7 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Select_Default;                             // 0x0020(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_Select_Default;                             // 0x0020(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsInLocalPlayersParty_ReturnValue;        // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -189,8 +189,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_ShowConnected) == 0x11821780, "Wrong alignment on FullPartyMember_C_ShowConnected");
-static_assert(sizeof(FullPartyMember_C_ShowConnected) == 0x11821780, "Wrong size on FullPartyMember_C_ShowConnected");
+static_assert(alignof(FullPartyMember_C_ShowConnected) == 0x000008, "Wrong alignment on FullPartyMember_C_ShowConnected");
+static_assert(sizeof(FullPartyMember_C_ShowConnected) == 0x000040, "Wrong size on FullPartyMember_C_ShowConnected");
 static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_byte_Variable) == 0x000000, "Member 'FullPartyMember_C_ShowConnected::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_ShowConnected, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'FullPartyMember_C_ShowConnected::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_bool_Variable) == 0x000010, "Member 'FullPartyMember_C_ShowConnected::Temp_bool_Variable' has a wrong offset!");
@@ -213,14 +213,14 @@ static_assert(offsetof(FullPartyMember_C_ShowConnected, CallFunc_BooleanAND_Retu
 static_assert(offsetof(FullPartyMember_C_ShowConnected, K2Node_Select4_Default) == 0x00003D, "Member 'FullPartyMember_C_ShowConnected::K2Node_Select4_Default' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateDimensions
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FullPartyMember_C_UpdateDimensions final
 {
 public:
-	struct FVector2D                              NewDimensions;                                     // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              NewDimensions;                                     // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_UpdateDimensions) == 0x11821300, "Wrong alignment on FullPartyMember_C_UpdateDimensions");
-static_assert(sizeof(FullPartyMember_C_UpdateDimensions) == 0x11821300, "Wrong size on FullPartyMember_C_UpdateDimensions");
+static_assert(alignof(FullPartyMember_C_UpdateDimensions) == 0x000004, "Wrong alignment on FullPartyMember_C_UpdateDimensions");
+static_assert(sizeof(FullPartyMember_C_UpdateDimensions) == 0x000008, "Wrong size on FullPartyMember_C_UpdateDimensions");
 static_assert(offsetof(FullPartyMember_C_UpdateDimensions, NewDimensions) == 0x000000, "Member 'FullPartyMember_C_UpdateDimensions::NewDimensions' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.DuplicateConnectedWidget
@@ -258,8 +258,8 @@ static_assert(offsetof(FullPartyMember_C_UpdateLocalPlayerAction, CallFunc_Array
 static_assert(offsetof(FullPartyMember_C_UpdateLocalPlayerAction, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000024, "Member 'FullPartyMember_C_UpdateLocalPlayerAction::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.HandleLocalPlayerActionsResult
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) FullPartyMember_C_HandleLocalPlayerActionsResult final
+// 0x0028 (0x0028 - 0x0000)
+struct FullPartyMember_C_HandleLocalPlayerActionsResult final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -272,8 +272,8 @@ public:
 	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_HandleLocalPlayerActionsResult) == 0x540065, "Wrong alignment on FullPartyMember_C_HandleLocalPlayerActionsResult");
-static_assert(sizeof(FullPartyMember_C_HandleLocalPlayerActionsResult) == 0x540065, "Wrong size on FullPartyMember_C_HandleLocalPlayerActionsResult");
+static_assert(alignof(FullPartyMember_C_HandleLocalPlayerActionsResult) == 0x000008, "Wrong alignment on FullPartyMember_C_HandleLocalPlayerActionsResult");
+static_assert(sizeof(FullPartyMember_C_HandleLocalPlayerActionsResult) == 0x000028, "Wrong size on FullPartyMember_C_HandleLocalPlayerActionsResult");
 static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, Result) == 0x000000, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::Result' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, ResultName) == 0x000008, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::ResultName' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -283,7 +283,7 @@ static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, CallFun
 static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.MakeLocalPlayerConfirmActions
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct FullPartyMember_C_MakeLocalPlayerConfirmActions final
 {
 public:
@@ -296,13 +296,13 @@ public:
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue2;           // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FConfirmationDialogAction              K2Node_MakeStruct_ConfirmationDialogAction;        // 0x0040(0x1182E980)()
-	struct FConfirmationDialogAction              K2Node_MakeStruct_ConfirmationDialogAction2;       // 0x0110(0x1182E980)()
+	struct FConfirmationDialogAction              K2Node_MakeStruct_ConfirmationDialogAction;        // 0x0040(0x00D0)()
+	struct FConfirmationDialogAction              K2Node_MakeStruct_ConfirmationDialogAction2;       // 0x0110(0x00D0)()
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_MakeLocalPlayerConfirmActions) == 0x1182E980, "Wrong alignment on FullPartyMember_C_MakeLocalPlayerConfirmActions");
-static_assert(sizeof(FullPartyMember_C_MakeLocalPlayerConfirmActions) == 0x1182E980, "Wrong size on FullPartyMember_C_MakeLocalPlayerConfirmActions");
+static_assert(alignof(FullPartyMember_C_MakeLocalPlayerConfirmActions) == 0x000008, "Wrong alignment on FullPartyMember_C_MakeLocalPlayerConfirmActions");
+static_assert(sizeof(FullPartyMember_C_MakeLocalPlayerConfirmActions) == 0x0001E8, "Wrong size on FullPartyMember_C_MakeLocalPlayerConfirmActions");
 static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, LocalPlayerAlone) == 0x000000, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::LocalPlayerAlone' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, OutConfirmActions) == 0x000008, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::OutConfirmActions' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, ConfirmActions) == 0x000018, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::ConfirmActions' has a wrong offset!");
@@ -316,18 +316,18 @@ static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, CallFunc
 static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, CallFunc_Array_Add_ReturnValue2) == 0x0001E4, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.InitializeConnectedWidget
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) FullPartyMember_C_InitializeConnectedWidget final
+// 0x0008 (0x0008 - 0x0000)
+struct FullPartyMember_C_InitializeConnectedWidget final
 {
 public:
 	class UFullPartyMemberConnected_C*            ConnectedWidget;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_InitializeConnectedWidget) == 0x540065, "Wrong alignment on FullPartyMember_C_InitializeConnectedWidget");
-static_assert(sizeof(FullPartyMember_C_InitializeConnectedWidget) == 0x540065, "Wrong size on FullPartyMember_C_InitializeConnectedWidget");
+static_assert(alignof(FullPartyMember_C_InitializeConnectedWidget) == 0x000008, "Wrong alignment on FullPartyMember_C_InitializeConnectedWidget");
+static_assert(sizeof(FullPartyMember_C_InitializeConnectedWidget) == 0x000008, "Wrong size on FullPartyMember_C_InitializeConnectedWidget");
 static_assert(offsetof(FullPartyMember_C_InitializeConnectedWidget, ConnectedWidget) == 0x000000, "Member 'FullPartyMember_C_InitializeConnectedWidget::ConnectedWidget' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateStatDisplays
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0748 (0x0748 - 0x0000)
 struct FullPartyMember_C_UpdateStatDisplays final
 {
 public:
@@ -340,48 +340,48 @@ public:
 	class FText                                   TeamStatFormatString;                              // 0x0060(0x0018)(Edit)
 	int32                                         CallFunc_GetModifiedFortitude_ReturnValue;         // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetModifiedOffense_ReturnValue;           // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0080(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0080(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0100(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0110(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0120(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0138(0x0018)()
 	int32                                         CallFunc_GetModifiedResistance_ReturnValue;        // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetModifiedTech_ReturnValue;              // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0158(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0198(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0158(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0198(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x01D8(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array4;                           // 0x01E8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x01F8(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue4;                      // 0x0210(0x0018)()
 	int32                                         CallFunc_GetTech_ReturnValue;                      // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetResistance_ReturnValue;                // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0230(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x0270(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0230(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x0270(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array5;                           // 0x02B0(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array6;                           // 0x02C0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue5;                      // 0x02D0(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue6;                      // 0x02E8(0x0018)()
 	int32                                         CallFunc_GetOffense_ReturnValue;                   // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetFortitude_ReturnValue;                 // 0x0304(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData7;             // 0x0308(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData8;             // 0x0348(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData7;             // 0x0308(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData8;             // 0x0348(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array7;                           // 0x0388(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array8;                           // 0x0398(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue7;                      // 0x03A8(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue8;                      // 0x03C0(0x0018)()
 	int32                                         CallFunc_GetTech_ReturnValue2;                     // 0x03D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetResistance_ReturnValue2;               // 0x03DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData9;             // 0x03E0(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData10;            // 0x0420(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData9;             // 0x03E0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData10;            // 0x0420(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array9;                           // 0x0460(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array10;                          // 0x0470(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue9;                      // 0x0480(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue10;                     // 0x0498(0x0018)()
 	int32                                         CallFunc_GetOffense_ReturnValue2;                  // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetFortitude_ReturnValue2;                // 0x04B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData11;            // 0x04B8(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x04F8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData11;            // 0x04B8(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData12;            // 0x04F8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array11;                          // 0x0538(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array12;                          // 0x0548(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue11;                     // 0x0558(0x0018)()
@@ -389,27 +389,27 @@ public:
 	bool                                          CallFunc_HasModifiedStats_ReturnValue;             // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_589[0x3];                                      // 0x0589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetTeamTech_ReturnValue;                  // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData13;            // 0x0590(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData13;            // 0x0590(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array13;                          // 0x05D0(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_GetTeamResistance_ReturnValue;            // 0x05E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData14;            // 0x05E8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData14;            // 0x05E8(0x0040)(HasGetValueTypeHash)
 	int32                                         CallFunc_GetTeamOffense_ReturnValue;               // 0x0628(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array14;                          // 0x0630(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData15;            // 0x0640(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData15;            // 0x0640(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array15;                          // 0x0680(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue13;                     // 0x0690(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue14;                     // 0x06A8(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue15;                     // 0x06C0(0x0018)()
 	int32                                         CallFunc_GetTeamFortitude_ReturnValue;             // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6DC[0x4];                                      // 0x06DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData16;            // 0x06E0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData16;            // 0x06E0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array16;                          // 0x0720(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue16;                     // 0x0730(0x0018)()
 };
-static_assert(alignof(FullPartyMember_C_UpdateStatDisplays) == 0x11821D80, "Wrong alignment on FullPartyMember_C_UpdateStatDisplays");
-static_assert(sizeof(FullPartyMember_C_UpdateStatDisplays) == 0x11821D80, "Wrong size on FullPartyMember_C_UpdateStatDisplays");
+static_assert(alignof(FullPartyMember_C_UpdateStatDisplays) == 0x000008, "Wrong alignment on FullPartyMember_C_UpdateStatDisplays");
+static_assert(sizeof(FullPartyMember_C_UpdateStatDisplays) == 0x000748, "Wrong size on FullPartyMember_C_UpdateStatDisplays");
 static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, BaseStatFormatString) == 0x000000, "Member 'FullPartyMember_C_UpdateStatDisplays::BaseStatFormatString' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, ModifiedStatTextStyle) == 0x000018, "Member 'FullPartyMember_C_UpdateStatDisplays::ModifiedStatTextStyle' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, SoloStatTextStyle) == 0x000020, "Member 'FullPartyMember_C_UpdateStatDisplays::SoloStatTextStyle' has a wrong offset!");
@@ -484,7 +484,7 @@ static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Ar
 static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue16) == 0x000730, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue16' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateHomebaseRating
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct FullPartyMember_C_UpdateHomebaseRating final
 {
 public:
@@ -493,7 +493,7 @@ public:
 	float                                         CallFunc_GetHomebaseRating_ProgressFraction;       // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetHomebaseRating_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0018)()
 	int32                                         CallFunc_GetModifiedHomebaseRating_Rating;         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -508,8 +508,8 @@ public:
 	uint8                                         Pad_AA[0x2];                                       // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_UpdateHomebaseRating) == 0x11821D80, "Wrong alignment on FullPartyMember_C_UpdateHomebaseRating");
-static_assert(sizeof(FullPartyMember_C_UpdateHomebaseRating) == 0x11821D80, "Wrong size on FullPartyMember_C_UpdateHomebaseRating");
+static_assert(alignof(FullPartyMember_C_UpdateHomebaseRating) == 0x000008, "Wrong alignment on FullPartyMember_C_UpdateHomebaseRating");
+static_assert(sizeof(FullPartyMember_C_UpdateHomebaseRating) == 0x0000B0, "Wrong size on FullPartyMember_C_UpdateHomebaseRating");
 static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, BaseHomebaseRatingFormatString) == 0x000000, "Member 'FullPartyMember_C_UpdateHomebaseRating::BaseHomebaseRatingFormatString' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetHomebaseRating_Rating) == 0x000018, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetHomebaseRating_Rating' has a wrong offset!");
 static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetHomebaseRating_ProgressFraction) == 0x00001C, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetHomebaseRating_ProgressFraction' has a wrong offset!");
@@ -539,14 +539,14 @@ static_assert(sizeof(FullPartyMember_C_SetStatDisplayStyle) == 0x000008, "Wrong 
 static_assert(offsetof(FullPartyMember_C_SetStatDisplayStyle, InStyle) == 0x000000, "Member 'FullPartyMember_C_SetStatDisplayStyle::InStyle' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.SetSecondaryStatDisplayVisibility
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) FullPartyMember_C_SetSecondaryStatDisplayVisibility final
+// 0x0001 (0x0001 - 0x0000)
+struct FullPartyMember_C_SetSecondaryStatDisplayVisibility final
 {
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_SetSecondaryStatDisplayVisibility) == 0x10461A40, "Wrong alignment on FullPartyMember_C_SetSecondaryStatDisplayVisibility");
-static_assert(sizeof(FullPartyMember_C_SetSecondaryStatDisplayVisibility) == 0x10461A40, "Wrong size on FullPartyMember_C_SetSecondaryStatDisplayVisibility");
+static_assert(alignof(FullPartyMember_C_SetSecondaryStatDisplayVisibility) == 0x000001, "Wrong alignment on FullPartyMember_C_SetSecondaryStatDisplayVisibility");
+static_assert(sizeof(FullPartyMember_C_SetSecondaryStatDisplayVisibility) == 0x000001, "Wrong size on FullPartyMember_C_SetSecondaryStatDisplayVisibility");
 static_assert(offsetof(FullPartyMember_C_SetSecondaryStatDisplayVisibility, InVisibility) == 0x000000, "Member 'FullPartyMember_C_SetSecondaryStatDisplayVisibility::InVisibility' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.HighlightEmptyBanner

@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function TalkingHeadWidget.TalkingHeadWidget_C.ExecuteUbergraph_TalkingHeadWidget
-// 0x003E (0x003E - 0x0000)
-struct alignas(0x3E) TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget final
+// 0x0030 (0x0030 - 0x0000)
+struct TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -28,22 +28,22 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget) == 0x00003E, "Wrong alignment on TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget");
-static_assert(sizeof(TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget) == 0x00003E, "Wrong size on TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget");
+static_assert(alignof(TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget) == 0x000008, "Wrong alignment on TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget");
+static_assert(sizeof(TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget) == 0x000030, "Wrong size on TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget");
 static_assert(offsetof(TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget, EntryPoint) == 0x000000, "Member 'TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 static_assert(offsetof(TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000028, "Member 'TalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function TalkingHeadWidget.TalkingHeadWidget_C.SetTalkingHeadImage
-// 0x026F (0x026F - 0x0000)
-struct alignas(0x26F) TalkingHeadWidget_C_SetTalkingHeadImage final
+// 0x0008 (0x0008 - 0x0000)
+struct TalkingHeadWidget_C_SetTalkingHeadImage final
 {
 public:
 	class UTexture2D*                             Icon;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TalkingHeadWidget_C_SetTalkingHeadImage) == 0x00026F, "Wrong alignment on TalkingHeadWidget_C_SetTalkingHeadImage");
-static_assert(sizeof(TalkingHeadWidget_C_SetTalkingHeadImage) == 0x00026F, "Wrong size on TalkingHeadWidget_C_SetTalkingHeadImage");
+static_assert(alignof(TalkingHeadWidget_C_SetTalkingHeadImage) == 0x000008, "Wrong alignment on TalkingHeadWidget_C_SetTalkingHeadImage");
+static_assert(sizeof(TalkingHeadWidget_C_SetTalkingHeadImage) == 0x000008, "Wrong size on TalkingHeadWidget_C_SetTalkingHeadImage");
 static_assert(offsetof(TalkingHeadWidget_C_SetTalkingHeadImage, Icon) == 0x000000, "Member 'TalkingHeadWidget_C_SetTalkingHeadImage::Icon' has a wrong offset!");
 
 // Function TalkingHeadWidget.TalkingHeadWidget_C.SetTalkingHeadName
@@ -58,14 +58,14 @@ static_assert(sizeof(TalkingHeadWidget_C_SetTalkingHeadName) == 0x000018, "Wrong
 static_assert(offsetof(TalkingHeadWidget_C_SetTalkingHeadName, Title) == 0x000000, "Member 'TalkingHeadWidget_C_SetTalkingHeadName::Title' has a wrong offset!");
 
 // Function TalkingHeadWidget.TalkingHeadWidget_C.SetTalkingHeadSubtitle
-// 0x00AB (0x00AB - 0x0000)
-struct alignas(0xAB) TalkingHeadWidget_C_SetTalkingHeadSubtitle final
+// 0x0018 (0x0018 - 0x0000)
+struct TalkingHeadWidget_C_SetTalkingHeadSubtitle final
 {
 public:
 	class FText                                   Subtitle;                                          // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(TalkingHeadWidget_C_SetTalkingHeadSubtitle) == 0x0000AB, "Wrong alignment on TalkingHeadWidget_C_SetTalkingHeadSubtitle");
-static_assert(sizeof(TalkingHeadWidget_C_SetTalkingHeadSubtitle) == 0x0000AB, "Wrong size on TalkingHeadWidget_C_SetTalkingHeadSubtitle");
+static_assert(alignof(TalkingHeadWidget_C_SetTalkingHeadSubtitle) == 0x000008, "Wrong alignment on TalkingHeadWidget_C_SetTalkingHeadSubtitle");
+static_assert(sizeof(TalkingHeadWidget_C_SetTalkingHeadSubtitle) == 0x000018, "Wrong size on TalkingHeadWidget_C_SetTalkingHeadSubtitle");
 static_assert(offsetof(TalkingHeadWidget_C_SetTalkingHeadSubtitle, Subtitle) == 0x000000, "Member 'TalkingHeadWidget_C_SetTalkingHeadSubtitle::Subtitle' has a wrong offset!");
 
 // Function TalkingHeadWidget.TalkingHeadWidget_C.HandleTalkingHeadBegin

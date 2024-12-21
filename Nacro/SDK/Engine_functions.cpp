@@ -17,6 +17,21 @@
 namespace SDK
 {
 
+ULevel* AActor::GetLevel()
+{
+	return (ULevel*)Outer;
+}
+
+UWorld* AActor::GetWorld()
+{
+	if (class ULevel* Level = GetLevel())
+	{
+		return Level->OwningWorld;
+	}
+
+	return nullptr;
+}
+
 // Function Engine.AnimNotifyState.GetNotifyName
 // (Native, Event, Public, BlueprintEvent, Const)
 // Parameters:

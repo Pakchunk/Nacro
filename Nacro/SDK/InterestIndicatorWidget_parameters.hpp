@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function InterestIndicatorWidget.InterestIndicatorWidget_C.ExecuteUbergraph_InterestIndicatorWidget
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget final
+// 0x0004 (0x0004 - 0x0000)
+struct InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget) == 0x10461A40, "Wrong alignment on InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget");
-static_assert(sizeof(InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget) == 0x10461A40, "Wrong size on InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget");
+static_assert(alignof(InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget) == 0x000004, "Wrong alignment on InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget");
+static_assert(sizeof(InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget) == 0x000004, "Wrong size on InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget");
 static_assert(offsetof(InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget, EntryPoint) == 0x000000, "Member 'InterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget::EntryPoint' has a wrong offset!");
 
 // Function InterestIndicatorWidget.InterestIndicatorWidget_C.SetDisplayText
@@ -70,8 +70,8 @@ static_assert(offsetof(InterestIndicatorWidget_C_SetDisplayImage, Temp_byte_Vari
 static_assert(offsetof(InterestIndicatorWidget_C_SetDisplayImage, K2Node_Select_Default) == 0x00000C, "Member 'InterestIndicatorWidget_C_SetDisplayImage::K2Node_Select_Default' has a wrong offset!");
 
 // Function InterestIndicatorWidget.InterestIndicatorWidget_C.InitPointOfInterest
-// 0x126B (0x126B - 0x0000)
-struct alignas(0x126B) InterestIndicatorWidget_C_InitPointOfInterest final
+// 0x0030 (0x0030 - 0x0000)
+struct InterestIndicatorWidget_C_InitPointOfInterest final
 {
 public:
 	class AActor*                                 PointOfInterest;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,8 +79,8 @@ public:
 	class UTexture2D*                             DisplayImage;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(InterestIndicatorWidget_C_InitPointOfInterest) == 0x00126B, "Wrong alignment on InterestIndicatorWidget_C_InitPointOfInterest");
-static_assert(sizeof(InterestIndicatorWidget_C_InitPointOfInterest) == 0x00126B, "Wrong size on InterestIndicatorWidget_C_InitPointOfInterest");
+static_assert(alignof(InterestIndicatorWidget_C_InitPointOfInterest) == 0x000008, "Wrong alignment on InterestIndicatorWidget_C_InitPointOfInterest");
+static_assert(sizeof(InterestIndicatorWidget_C_InitPointOfInterest) == 0x000030, "Wrong size on InterestIndicatorWidget_C_InitPointOfInterest");
 static_assert(offsetof(InterestIndicatorWidget_C_InitPointOfInterest, PointOfInterest) == 0x000000, "Member 'InterestIndicatorWidget_C_InitPointOfInterest::PointOfInterest' has a wrong offset!");
 static_assert(offsetof(InterestIndicatorWidget_C_InitPointOfInterest, DisplayText) == 0x000008, "Member 'InterestIndicatorWidget_C_InitPointOfInterest::DisplayText' has a wrong offset!");
 static_assert(offsetof(InterestIndicatorWidget_C_InitPointOfInterest, DisplayImage) == 0x000020, "Member 'InterestIndicatorWidget_C_InitPointOfInterest::DisplayImage' has a wrong offset!");

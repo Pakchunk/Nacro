@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border_HordeZoneLabel_Green.Border_HordeZoneLabel_Green_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorder_HordeZoneLabel_Green_C final : public UBorderMinusItemInfoHeader_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorder_HordeZoneLabel_Green_C>();
 	}
 };
-static_assert(alignof(UBorder_HordeZoneLabel_Green_C) == 0x11827900, "Wrong alignment on UBorder_HordeZoneLabel_Green_C");
-static_assert(sizeof(UBorder_HordeZoneLabel_Green_C) == 0x11827900, "Wrong size on UBorder_HordeZoneLabel_Green_C");
+static_assert(alignof(UBorder_HordeZoneLabel_Green_C) == 0x000008, "Wrong alignment on UBorder_HordeZoneLabel_Green_C");
+static_assert(sizeof(UBorder_HordeZoneLabel_Green_C) == 0x0000B8, "Wrong size on UBorder_HordeZoneLabel_Green_C");
 
 }
 

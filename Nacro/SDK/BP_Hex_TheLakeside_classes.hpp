@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Hex_TheLakeside.BP_Hex_TheLakeside_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0000 (0x0728 - 0x0728)
 class ABP_Hex_TheLakeside_C final : public ABP_Hex_PARENT_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<ABP_Hex_TheLakeside_C>();
 	}
 };
-static_assert(alignof(ABP_Hex_TheLakeside_C) == 0x1182EB00, "Wrong alignment on ABP_Hex_TheLakeside_C");
-static_assert(sizeof(ABP_Hex_TheLakeside_C) == 0x1182EB00, "Wrong size on ABP_Hex_TheLakeside_C");
+static_assert(alignof(ABP_Hex_TheLakeside_C) == 0x000008, "Wrong alignment on ABP_Hex_TheLakeside_C");
+static_assert(sizeof(ABP_Hex_TheLakeside_C) == 0x000728, "Wrong size on ABP_Hex_TheLakeside_C");
 
 }
 

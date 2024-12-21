@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-QuestPrimary-L2.ButtonStyle-QuestPrimary-L2_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusQuestPrimaryMinusL2_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusQuestPrimaryMinusL2_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusQuestPrimaryMinusL2_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusQuestPrimaryMinusL2_C");
-static_assert(sizeof(UButtonStyleMinusQuestPrimaryMinusL2_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusQuestPrimaryMinusL2_C");
+static_assert(alignof(UButtonStyleMinusQuestPrimaryMinusL2_C) == 0x000008, "Wrong alignment on UButtonStyleMinusQuestPrimaryMinusL2_C");
+static_assert(sizeof(UButtonStyleMinusQuestPrimaryMinusL2_C) == 0x000530, "Wrong size on UButtonStyleMinusQuestPrimaryMinusL2_C");
 
 }
 

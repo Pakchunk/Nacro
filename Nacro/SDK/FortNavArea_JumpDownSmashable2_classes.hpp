@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FortNavArea_JumpDownSmashable2.FortNavArea_JumpDownSmashable2_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0050 - 0x0050)
 class UFortNavArea_JumpDownSmashable2_C final : public UFortNavArea_SmashableJump
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UFortNavArea_JumpDownSmashable2_C>();
 	}
 };
-static_assert(alignof(UFortNavArea_JumpDownSmashable2_C) == 0x11821D80, "Wrong alignment on UFortNavArea_JumpDownSmashable2_C");
-static_assert(sizeof(UFortNavArea_JumpDownSmashable2_C) == 0x11821D80, "Wrong size on UFortNavArea_JumpDownSmashable2_C");
+static_assert(alignof(UFortNavArea_JumpDownSmashable2_C) == 0x000008, "Wrong alignment on UFortNavArea_JumpDownSmashable2_C");
+static_assert(sizeof(UFortNavArea_JumpDownSmashable2_C) == 0x000050, "Wrong size on UFortNavArea_JumpDownSmashable2_C");
 
 }
 

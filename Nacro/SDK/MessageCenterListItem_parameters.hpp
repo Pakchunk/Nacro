@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function MessageCenterListItem.MessageCenterListItem_C.ExecuteUbergraph_MessageCenterListItem
-// 0x00DD (0x00DD - 0x0000)
-struct alignas(0xDD) MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem final
+// 0x0040 (0x0040 - 0x0000)
+struct MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,8 +37,8 @@ public:
 	bool                                          K2Node_Event_bSelected;                            // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem) == 0x0000DD, "Wrong alignment on MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem");
-static_assert(sizeof(MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem) == 0x0000DD, "Wrong size on MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem");
+static_assert(alignof(MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem) == 0x000008, "Wrong alignment on MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem");
+static_assert(sizeof(MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem) == 0x000040, "Wrong size on MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem");
 static_assert(offsetof(MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem, EntryPoint) == 0x000000, "Member 'MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem, Temp_bool_Variable) == 0x000004, "Member 'MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem, Temp_byte_Variable) == 0x000005, "Member 'MessageCenterListItem_C_ExecuteUbergraph_MessageCenterListItem::Temp_byte_Variable' has a wrong offset!");
@@ -101,12 +101,12 @@ static_assert(offsetof(MessageCenterListItem_C_SetExpanded, bExpanded) == 0x0000
 
 // Function MessageCenterListItem.MessageCenterListItem_C.RegisterOnClicked
 // 0x0010 (0x0010 - 0x0000)
-struct MessageCenterListItem_C_RegisterOnClicked final
+struct alignas(0x08) MessageCenterListItem_C_RegisterOnClicked final
 {
 public:
 	TDelegate<void(class UUserWidget* Widget)>    Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(MessageCenterListItem_C_RegisterOnClicked) == 0x000004, "Wrong alignment on MessageCenterListItem_C_RegisterOnClicked");
+static_assert(alignof(MessageCenterListItem_C_RegisterOnClicked) == 0x000008, "Wrong alignment on MessageCenterListItem_C_RegisterOnClicked");
 static_assert(sizeof(MessageCenterListItem_C_RegisterOnClicked) == 0x000010, "Wrong size on MessageCenterListItem_C_RegisterOnClicked");
 static_assert(offsetof(MessageCenterListItem_C_RegisterOnClicked, Callback) == 0x000000, "Member 'MessageCenterListItem_C_RegisterOnClicked::Callback' has a wrong offset!");
 

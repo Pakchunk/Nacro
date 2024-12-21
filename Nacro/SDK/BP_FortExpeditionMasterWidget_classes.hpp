@@ -20,17 +20,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D0 (0x0530 - 0x0460)
 class UBP_FortExpeditionMasterWidget_C final : public UFortExpeditionMasterWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0460(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0460(0x0008)(Transient, DuplicateTransient)
 	class UBP_FortExpeditionOverviewWidget_C*     BP_FortExpeditionOverviewWidget;                   // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0470(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    BuildExpeditionAction;                             // 0x0480(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    AbandonExpeditionAction;                           // 0x0490(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CollectExpeditionAction;                           // 0x04A0(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    SortInputAction;                                   // 0x04B0(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0470(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    BuildExpeditionAction;                             // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    AbandonExpeditionAction;                           // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CollectExpeditionAction;                           // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    SortInputAction;                                   // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bRewardsShowing;                                   // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,8 +70,8 @@ public:
 		return GetDefaultObjImpl<UBP_FortExpeditionMasterWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionMasterWidget_C) == 0x322CBBB8, "Wrong alignment on UBP_FortExpeditionMasterWidget_C");
-static_assert(sizeof(UBP_FortExpeditionMasterWidget_C) == 0x322CBBB8, "Wrong size on UBP_FortExpeditionMasterWidget_C");
+static_assert(alignof(UBP_FortExpeditionMasterWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionMasterWidget_C");
+static_assert(sizeof(UBP_FortExpeditionMasterWidget_C) == 0x000530, "Wrong size on UBP_FortExpeditionMasterWidget_C");
 static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, UberGraphFrame) == 0x000460, "Member 'UBP_FortExpeditionMasterWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BP_FortExpeditionOverviewWidget) == 0x000468, "Member 'UBP_FortExpeditionMasterWidget_C::BP_FortExpeditionOverviewWidget' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionMasterWidget_C, BackInputAction) == 0x000470, "Member 'UBP_FortExpeditionMasterWidget_C::BackInputAction' has a wrong offset!");

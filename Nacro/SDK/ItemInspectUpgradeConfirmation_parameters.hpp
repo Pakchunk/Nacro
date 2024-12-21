@@ -174,7 +174,7 @@ static_assert(offsetof(ItemInspectUpgradeConfirmation_C_RefreshEnabledState, Cal
 static_assert(offsetof(ItemInspectUpgradeConfirmation_C_RefreshEnabledState, CallFunc_BooleanAND_ReturnValue) == 0x000039, "Member 'ItemInspectUpgradeConfirmation_C_RefreshEnabledState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.RefreshLevelInfo
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct ItemInspectUpgradeConfirmation_C_RefreshLevelInfo final
 {
 public:
@@ -189,7 +189,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0048(0x0018)()
 	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0068(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0068(0x0040)(HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ZeroConstructor, ReferenceParm)
@@ -197,8 +197,8 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D8(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x00F0(0x0018)()
 };
-static_assert(alignof(ItemInspectUpgradeConfirmation_C_RefreshLevelInfo) == 0x11821D80, "Wrong alignment on ItemInspectUpgradeConfirmation_C_RefreshLevelInfo");
-static_assert(sizeof(ItemInspectUpgradeConfirmation_C_RefreshLevelInfo) == 0x11821D80, "Wrong size on ItemInspectUpgradeConfirmation_C_RefreshLevelInfo");
+static_assert(alignof(ItemInspectUpgradeConfirmation_C_RefreshLevelInfo) == 0x000008, "Wrong alignment on ItemInspectUpgradeConfirmation_C_RefreshLevelInfo");
+static_assert(sizeof(ItemInspectUpgradeConfirmation_C_RefreshLevelInfo) == 0x000108, "Wrong size on ItemInspectUpgradeConfirmation_C_RefreshLevelInfo");
 static_assert(offsetof(ItemInspectUpgradeConfirmation_C_RefreshLevelInfo, Temp_bool_Variable) == 0x000000, "Member 'ItemInspectUpgradeConfirmation_C_RefreshLevelInfo::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeConfirmation_C_RefreshLevelInfo, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'ItemInspectUpgradeConfirmation_C_RefreshLevelInfo::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemInspectUpgradeConfirmation_C_RefreshLevelInfo, CallFunc_GetType_ReturnValue) == 0x000020, "Member 'ItemInspectUpgradeConfirmation_C_RefreshLevelInfo::CallFunc_GetType_ReturnValue' has a wrong offset!");

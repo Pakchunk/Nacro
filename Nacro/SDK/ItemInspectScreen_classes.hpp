@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemInspectScreen.ItemInspectScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C8 (0x04A8 - 0x03E0)
 class UItemInspectScreen_C final : public UFortItemInspectionScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class USizeBox*                               CycleItem;                                         // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalTabList_C*                   ExtraDetailsPanelTabList;                          // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  ExtraDetailsTabContentSwitcher;                    // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -106,8 +106,8 @@ public:
 		return GetDefaultObjImpl<UItemInspectScreen_C>();
 	}
 };
-static_assert(alignof(UItemInspectScreen_C) == 0x322CBBB8, "Wrong alignment on UItemInspectScreen_C");
-static_assert(sizeof(UItemInspectScreen_C) == 0x322CBBB8, "Wrong size on UItemInspectScreen_C");
+static_assert(alignof(UItemInspectScreen_C) == 0x000008, "Wrong alignment on UItemInspectScreen_C");
+static_assert(sizeof(UItemInspectScreen_C) == 0x0004A8, "Wrong size on UItemInspectScreen_C");
 static_assert(offsetof(UItemInspectScreen_C, UberGraphFrame) == 0x0003E0, "Member 'UItemInspectScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemInspectScreen_C, CycleItem) == 0x0003E8, "Member 'UItemInspectScreen_C::CycleItem' has a wrong offset!");
 static_assert(offsetof(UItemInspectScreen_C, ExtraDetailsPanelTabList) == 0x0003F0, "Member 'UItemInspectScreen_C::ExtraDetailsPanelTabList' has a wrong offset!");

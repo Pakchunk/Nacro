@@ -37,19 +37,19 @@ static_assert(offsetof(PinnedSchematicItemWidget_C_ExecuteUbergraph_PinnedSchema
 static_assert(offsetof(PinnedSchematicItemWidget_C_ExecuteUbergraph_PinnedSchematicItemWidget, CallFunc_SetSchematicPinned_ReturnValue) == 0x000018, "Member 'PinnedSchematicItemWidget_C_ExecuteUbergraph_PinnedSchematicItemWidget::CallFunc_SetSchematicPinned_ReturnValue' has a wrong offset!");
 
 // Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.PinButton_Clicked
-// 0x2DB64C00 (0x2DB64C00 - 0x0000)
-struct alignas(0x2DB64C00) PinnedSchematicItemWidget_C_PinButton_Clicked final
+// 0x0008 (0x0008 - 0x0000)
+struct PinnedSchematicItemWidget_C_PinButton_Clicked final
 {
 public:
 	class UFortBaseButton*                        NewParam;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PinnedSchematicItemWidget_C_PinButton_Clicked) == 0x2DB64C00, "Wrong alignment on PinnedSchematicItemWidget_C_PinButton_Clicked");
-static_assert(sizeof(PinnedSchematicItemWidget_C_PinButton_Clicked) == 0x2DB64C00, "Wrong size on PinnedSchematicItemWidget_C_PinButton_Clicked");
+static_assert(alignof(PinnedSchematicItemWidget_C_PinButton_Clicked) == 0x000008, "Wrong alignment on PinnedSchematicItemWidget_C_PinButton_Clicked");
+static_assert(sizeof(PinnedSchematicItemWidget_C_PinButton_Clicked) == 0x000008, "Wrong size on PinnedSchematicItemWidget_C_PinButton_Clicked");
 static_assert(offsetof(PinnedSchematicItemWidget_C_PinButton_Clicked, NewParam) == 0x000000, "Member 'PinnedSchematicItemWidget_C_PinButton_Clicked::NewParam' has a wrong offset!");
 
 // Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.Refresh
-// 0x63005F (0x63005F - 0x0000)
-struct alignas(0x63005F) PinnedSchematicItemWidget_C_Refresh final
+// 0x0020 (0x0020 - 0x0000)
+struct PinnedSchematicItemWidget_C_Refresh final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PinnedSchematicItemWidget_C_Refresh) == 0x63005F, "Wrong alignment on PinnedSchematicItemWidget_C_Refresh");
-static_assert(sizeof(PinnedSchematicItemWidget_C_Refresh) == 0x63005F, "Wrong size on PinnedSchematicItemWidget_C_Refresh");
+static_assert(alignof(PinnedSchematicItemWidget_C_Refresh) == 0x000008, "Wrong alignment on PinnedSchematicItemWidget_C_Refresh");
+static_assert(sizeof(PinnedSchematicItemWidget_C_Refresh) == 0x000020, "Wrong size on PinnedSchematicItemWidget_C_Refresh");
 static_assert(offsetof(PinnedSchematicItemWidget_C_Refresh, Temp_int_Array_Index_Variable) == 0x000000, "Member 'PinnedSchematicItemWidget_C_Refresh::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemWidget_C_Refresh, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'PinnedSchematicItemWidget_C_Refresh::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemWidget_C_Refresh, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'PinnedSchematicItemWidget_C_Refresh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -72,19 +72,20 @@ static_assert(offsetof(PinnedSchematicItemWidget_C_Refresh, CallFunc_Array_Lengt
 static_assert(offsetof(PinnedSchematicItemWidget_C_Refresh, CallFunc_Less_IntInt_ReturnValue) == 0x00001C, "Member 'PinnedSchematicItemWidget_C_Refresh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.SetPinnedSchematic
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct PinnedSchematicItemWidget_C_SetPinnedSchematic final
 {
 public:
 	class UFortSchematicItem*                     NewPinnedSchematic;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetRarityColor_ReturnValue;               // 0x000C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_GetRarityColor_ReturnValue;               // 0x000C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x0028)()
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0048(0x0018)()
 };
-static_assert(alignof(PinnedSchematicItemWidget_C_SetPinnedSchematic) == 0x322CBBB8, "Wrong alignment on PinnedSchematicItemWidget_C_SetPinnedSchematic");
-static_assert(sizeof(PinnedSchematicItemWidget_C_SetPinnedSchematic) == 0x322CBBB8, "Wrong size on PinnedSchematicItemWidget_C_SetPinnedSchematic");
+static_assert(alignof(PinnedSchematicItemWidget_C_SetPinnedSchematic) == 0x000008, "Wrong alignment on PinnedSchematicItemWidget_C_SetPinnedSchematic");
+static_assert(sizeof(PinnedSchematicItemWidget_C_SetPinnedSchematic) == 0x000060, "Wrong size on PinnedSchematicItemWidget_C_SetPinnedSchematic");
 static_assert(offsetof(PinnedSchematicItemWidget_C_SetPinnedSchematic, NewPinnedSchematic) == 0x000000, "Member 'PinnedSchematicItemWidget_C_SetPinnedSchematic::NewPinnedSchematic' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemWidget_C_SetPinnedSchematic, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'PinnedSchematicItemWidget_C_SetPinnedSchematic::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemWidget_C_SetPinnedSchematic, CallFunc_GetRarityColor_ReturnValue) == 0x00000C, "Member 'PinnedSchematicItemWidget_C_SetPinnedSchematic::CallFunc_GetRarityColor_ReturnValue' has a wrong offset!");
@@ -143,7 +144,7 @@ static_assert(offsetof(PinnedSchematicItemWidget_C_HandleWorldItemListChanged, I
 static_assert(offsetof(PinnedSchematicItemWidget_C_HandleWorldItemListChanged, ItemsRemoved) == 0x000010, "Member 'PinnedSchematicItemWidget_C_HandleWorldItemListChanged::ItemsRemoved' has a wrong offset!");
 
 // Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.SetupIngredients
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct PinnedSchematicItemWidget_C_SetupIngredients final
 {
 public:
@@ -155,14 +156,14 @@ public:
 	class UCraftingIngredient_C*                  CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FSchematicRequirement>          CallFunc_GetSchematicRequirements_Requirements;    // 0x0020(0x0010)(ZeroConstructor, ReferenceParm)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSchematicRequirement                  CallFunc_Array_Get_Item;                           // 0x0038(0x11821780)(NoDestructor)
+	struct FSchematicRequirement                  CallFunc_Array_Get_Item;                           // 0x0038(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PinnedSchematicItemWidget_C_SetupIngredients) == 0x11821780, "Wrong alignment on PinnedSchematicItemWidget_C_SetupIngredients");
-static_assert(sizeof(PinnedSchematicItemWidget_C_SetupIngredients) == 0x11821780, "Wrong size on PinnedSchematicItemWidget_C_SetupIngredients");
+static_assert(alignof(PinnedSchematicItemWidget_C_SetupIngredients) == 0x000008, "Wrong alignment on PinnedSchematicItemWidget_C_SetupIngredients");
+static_assert(sizeof(PinnedSchematicItemWidget_C_SetupIngredients) == 0x000058, "Wrong size on PinnedSchematicItemWidget_C_SetupIngredients");
 static_assert(offsetof(PinnedSchematicItemWidget_C_SetupIngredients, Temp_int_Array_Index_Variable) == 0x000000, "Member 'PinnedSchematicItemWidget_C_SetupIngredients::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemWidget_C_SetupIngredients, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'PinnedSchematicItemWidget_C_SetupIngredients::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(PinnedSchematicItemWidget_C_SetupIngredients, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'PinnedSchematicItemWidget_C_SetupIngredients::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");

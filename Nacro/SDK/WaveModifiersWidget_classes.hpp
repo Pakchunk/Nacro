@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WaveModifiersWidget.WaveModifiersWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0278 - 0x0240)
 class UWaveModifiersWidget_C final : public UFortUserWidget
 {
 public:
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UWaveModifiersWidget_C>();
 	}
 };
-static_assert(alignof(UWaveModifiersWidget_C) == 0x322CBBB8, "Wrong alignment on UWaveModifiersWidget_C");
-static_assert(sizeof(UWaveModifiersWidget_C) == 0x322CBBB8, "Wrong size on UWaveModifiersWidget_C");
+static_assert(alignof(UWaveModifiersWidget_C) == 0x000008, "Wrong alignment on UWaveModifiersWidget_C");
+static_assert(sizeof(UWaveModifiersWidget_C) == 0x000278, "Wrong size on UWaveModifiersWidget_C");
 static_assert(offsetof(UWaveModifiersWidget_C, BasicGradientFill) == 0x000240, "Member 'UWaveModifiersWidget_C::BasicGradientFill' has a wrong offset!");
 static_assert(offsetof(UWaveModifiersWidget_C, ModifierVertBox) == 0x000248, "Member 'UWaveModifiersWidget_C::ModifierVertBox' has a wrong offset!");
 static_assert(offsetof(UWaveModifiersWidget_C, ModifierWidgets) == 0x000250, "Member 'UWaveModifiersWidget_C::ModifierWidgets' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0040 (0x03C8 - 0x0388)
 class AHexmapLevelSettings_Temperate01_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class UExponentialHeightFogComponent*         ExponentialHeightFog_Volumetric;                   // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UExponentialHeightFogComponent*         ExponentialHeightFog;                              // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USkyLightComponent*                     SkyLight;                                          // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<AHexmapLevelSettings_Temperate01_C>();
 	}
 };
-static_assert(alignof(AHexmapLevelSettings_Temperate01_C) == 0x11821D80, "Wrong alignment on AHexmapLevelSettings_Temperate01_C");
-static_assert(sizeof(AHexmapLevelSettings_Temperate01_C) == 0x11821D80, "Wrong size on AHexmapLevelSettings_Temperate01_C");
+static_assert(alignof(AHexmapLevelSettings_Temperate01_C) == 0x000008, "Wrong alignment on AHexmapLevelSettings_Temperate01_C");
+static_assert(sizeof(AHexmapLevelSettings_Temperate01_C) == 0x0003C8, "Wrong size on AHexmapLevelSettings_Temperate01_C");
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, UberGraphFrame) == 0x000388, "Member 'AHexmapLevelSettings_Temperate01_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, ExponentialHeightFog_Volumetric) == 0x000390, "Member 'AHexmapLevelSettings_Temperate01_C::ExponentialHeightFog_Volumetric' has a wrong offset!");
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, ExponentialHeightFog) == 0x000398, "Member 'AHexmapLevelSettings_Temperate01_C::ExponentialHeightFog' has a wrong offset!");

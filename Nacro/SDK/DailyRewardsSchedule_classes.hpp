@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DailyRewardsSchedule.DailyRewardsSchedule_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0308 - 0x02D0)
 class UDailyRewardsSchedule_C final : public UFortDailyRewardsSchedule
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       AvailableRewards;                                  // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         DailyRewardsBox;                                   // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         EpicRewardsBox;                                    // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UDailyRewardsSchedule_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsSchedule_C) == 0x322CBBB8, "Wrong alignment on UDailyRewardsSchedule_C");
-static_assert(sizeof(UDailyRewardsSchedule_C) == 0x322CBBB8, "Wrong size on UDailyRewardsSchedule_C");
+static_assert(alignof(UDailyRewardsSchedule_C) == 0x000008, "Wrong alignment on UDailyRewardsSchedule_C");
+static_assert(sizeof(UDailyRewardsSchedule_C) == 0x000308, "Wrong size on UDailyRewardsSchedule_C");
 static_assert(offsetof(UDailyRewardsSchedule_C, UberGraphFrame) == 0x0002D0, "Member 'UDailyRewardsSchedule_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsSchedule_C, AvailableRewards) == 0x0002D8, "Member 'UDailyRewardsSchedule_C::AvailableRewards' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsSchedule_C, DailyRewardsBox) == 0x0002E0, "Member 'UDailyRewardsSchedule_C::DailyRewardsBox' has a wrong offset!");

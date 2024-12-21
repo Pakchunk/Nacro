@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // Class HeadMountedDisplay.MotionControllerComponent
-// 0x0000 (0x11828680 - 0x11828680)
+// 0x0020 (0x0690 - 0x0670)
 class UMotionControllerComponent final : public UPrimitiveComponent
 {
 public:
@@ -44,14 +44,14 @@ public:
 		return GetDefaultObjImpl<UMotionControllerComponent>();
 	}
 };
-static_assert(alignof(UMotionControllerComponent) == 0x11828680, "Wrong alignment on UMotionControllerComponent");
-static_assert(sizeof(UMotionControllerComponent) == 0x11828680, "Wrong size on UMotionControllerComponent");
+static_assert(alignof(UMotionControllerComponent) == 0x000010, "Wrong alignment on UMotionControllerComponent");
+static_assert(sizeof(UMotionControllerComponent) == 0x000690, "Wrong size on UMotionControllerComponent");
 static_assert(offsetof(UMotionControllerComponent, PlayerIndex) == 0x000670, "Member 'UMotionControllerComponent::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(UMotionControllerComponent, Hand) == 0x000674, "Member 'UMotionControllerComponent::Hand' has a wrong offset!");
 static_assert(offsetof(UMotionControllerComponent, CurrentTrackingStatus) == 0x00067C, "Member 'UMotionControllerComponent::CurrentTrackingStatus' has a wrong offset!");
 
 // Class HeadMountedDisplay.VRNotificationsComponent
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0080 (0x0170 - 0x00F0)
 class UVRNotificationsComponent final : public UActorComponent
 {
 public:
@@ -77,8 +77,8 @@ public:
 		return GetDefaultObjImpl<UVRNotificationsComponent>();
 	}
 };
-static_assert(alignof(UVRNotificationsComponent) == 0x11821D80, "Wrong alignment on UVRNotificationsComponent");
-static_assert(sizeof(UVRNotificationsComponent) == 0x11821D80, "Wrong size on UVRNotificationsComponent");
+static_assert(alignof(UVRNotificationsComponent) == 0x000008, "Wrong alignment on UVRNotificationsComponent");
+static_assert(sizeof(UVRNotificationsComponent) == 0x000170, "Wrong size on UVRNotificationsComponent");
 static_assert(offsetof(UVRNotificationsComponent, HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate) == 0x0000F0, "Member 'UVRNotificationsComponent::HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate' has a wrong offset!");
 static_assert(offsetof(UVRNotificationsComponent, HMDTrackingInitializedDelegate) == 0x000100, "Member 'UVRNotificationsComponent::HMDTrackingInitializedDelegate' has a wrong offset!");
 static_assert(offsetof(UVRNotificationsComponent, HMDRecenteredDelegate) == 0x000110, "Member 'UVRNotificationsComponent::HMDRecenteredDelegate' has a wrong offset!");

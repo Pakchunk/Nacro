@@ -28,7 +28,7 @@ static_assert(sizeof(LeaveButton_C_Update_Visibility__DelegateSignature) == 0x00
 static_assert(offsetof(LeaveButton_C_Update_Visibility__DelegateSignature, Visibility_0) == 0x000000, "Member 'LeaveButton_C_Update_Visibility__DelegateSignature::Visibility_0' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.ExecuteUbergraph_LeaveButton
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x05A0 (0x05A0 - 0x0000)
 struct LeaveButton_C_ExecuteUbergraph_LeaveButton final
 {
 public:
@@ -92,7 +92,7 @@ public:
 	class FName                                   K2Node_CustomEvent_ResultName4;                    // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate6;             // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate7;             // 0x0188(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFortTeamMemberInfo                    K2Node_CustomEvent_NewTeamMemberInfo;              // 0x0198(0x11827900)()
+	struct FFortTeamMemberInfo                    K2Node_CustomEvent_NewTeamMemberInfo;              // 0x0198(0x0190)()
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_PlayerControllerOutpost_C*          K2Node_DynamicCast_AsBP_Player_Controller_Outpost; // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -162,8 +162,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0598(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0599(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaveButton_C_ExecuteUbergraph_LeaveButton) == 0x11821780, "Wrong alignment on LeaveButton_C_ExecuteUbergraph_LeaveButton");
-static_assert(sizeof(LeaveButton_C_ExecuteUbergraph_LeaveButton) == 0x11821780, "Wrong size on LeaveButton_C_ExecuteUbergraph_LeaveButton");
+static_assert(alignof(LeaveButton_C_ExecuteUbergraph_LeaveButton) == 0x000008, "Wrong alignment on LeaveButton_C_ExecuteUbergraph_LeaveButton");
+static_assert(sizeof(LeaveButton_C_ExecuteUbergraph_LeaveButton) == 0x0005A0, "Wrong size on LeaveButton_C_ExecuteUbergraph_LeaveButton");
 static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, EntryPoint) == 0x000000, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_bool_Variable) == 0x000004, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_name_Variable) == 0x000008, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_name_Variable' has a wrong offset!");
@@ -293,14 +293,14 @@ static_assert(sizeof(LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_C
 static_assert(offsetof(LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.HandleTeamMemberAdded
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct LeaveButton_C_HandleTeamMemberAdded final
 {
 public:
-	struct FFortTeamMemberInfo                    NewTeamMemberInfo;                                 // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    NewTeamMemberInfo;                                 // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(LeaveButton_C_HandleTeamMemberAdded) == 0x11821780, "Wrong alignment on LeaveButton_C_HandleTeamMemberAdded");
-static_assert(sizeof(LeaveButton_C_HandleTeamMemberAdded) == 0x11821780, "Wrong size on LeaveButton_C_HandleTeamMemberAdded");
+static_assert(alignof(LeaveButton_C_HandleTeamMemberAdded) == 0x000008, "Wrong alignment on LeaveButton_C_HandleTeamMemberAdded");
+static_assert(sizeof(LeaveButton_C_HandleTeamMemberAdded) == 0x000190, "Wrong size on LeaveButton_C_HandleTeamMemberAdded");
 static_assert(offsetof(LeaveButton_C_HandleTeamMemberAdded, NewTeamMemberInfo) == 0x000000, "Member 'LeaveButton_C_HandleTeamMemberAdded::NewTeamMemberInfo' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.HandleTeamMemberRemoved
@@ -316,56 +316,56 @@ static_assert(offsetof(LeaveButton_C_HandleTeamMemberRemoved, PlayerIndex) == 0x
 
 // Function LeaveButton.LeaveButton_C.DialogResult_A0D25F7F4E82D325BF226E811F1D79AF
 // 0x0010 (0x0010 - 0x0000)
-struct LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF final
+struct alignas(0x08) LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF) == 0x000004, "Wrong alignment on LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF");
+static_assert(alignof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF) == 0x000008, "Wrong alignment on LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF");
 static_assert(sizeof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF) == 0x000010, "Wrong size on LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF");
 static_assert(offsetof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF, Result) == 0x000000, "Member 'LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF::Result' has a wrong offset!");
 static_assert(offsetof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF, ResultName) == 0x000008, "Member 'LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF::ResultName' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B
 // 0x0010 (0x0010 - 0x0000)
-struct LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B final
+struct alignas(0x08) LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B) == 0x000004, "Wrong alignment on LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B");
+static_assert(alignof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B) == 0x000008, "Wrong alignment on LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B");
 static_assert(sizeof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B) == 0x000010, "Wrong size on LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B");
 static_assert(offsetof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B, Result) == 0x000000, "Member 'LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B::Result' has a wrong offset!");
 static_assert(offsetof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B, ResultName) == 0x000008, "Member 'LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B::ResultName' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.DialogResult_F5AF58094777CFEEC0BF28BEA620800C
 // 0x0010 (0x0010 - 0x0000)
-struct LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C final
+struct alignas(0x08) LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C) == 0x000004, "Wrong alignment on LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C");
+static_assert(alignof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C) == 0x000008, "Wrong alignment on LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C");
 static_assert(sizeof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C) == 0x000010, "Wrong size on LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C");
 static_assert(offsetof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C, Result) == 0x000000, "Member 'LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C::Result' has a wrong offset!");
 static_assert(offsetof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C, ResultName) == 0x000008, "Member 'LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C::ResultName' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.DialogResult_1E39F47546648367BB2F218F69311220
 // 0x0010 (0x0010 - 0x0000)
-struct LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220 final
+struct alignas(0x08) LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220 final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220) == 0x000004, "Wrong alignment on LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220");
+static_assert(alignof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220) == 0x000008, "Wrong alignment on LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220");
 static_assert(sizeof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220) == 0x000010, "Wrong size on LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220");
 static_assert(offsetof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220, Result) == 0x000000, "Member 'LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220::Result' has a wrong offset!");
 static_assert(offsetof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220, ResultName) == 0x000008, "Member 'LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220::ResultName' has a wrong offset!");
@@ -510,14 +510,14 @@ static_assert(offsetof(LeaveButton_C_HasUnsavedQuestProgress, CallFunc_GetQuestM
 static_assert(offsetof(LeaveButton_C_HasUnsavedQuestProgress, CallFunc_HasUnsavedPrimaryMissionProgress_ReturnValue) == 0x000028, "Member 'LeaveButton_C_HasUnsavedQuestProgress::CallFunc_HasUnsavedPrimaryMissionProgress_ReturnValue' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.GetButton
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) LeaveButton_C_GetButton final
+// 0x0008 (0x0008 - 0x0000)
+struct LeaveButton_C_GetButton final
 {
 public:
 	class UIconTextButton_C*                      Leave_0;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_GetButton) == 0x0000E4, "Wrong alignment on LeaveButton_C_GetButton");
-static_assert(sizeof(LeaveButton_C_GetButton) == 0x0000E4, "Wrong size on LeaveButton_C_GetButton");
+static_assert(alignof(LeaveButton_C_GetButton) == 0x000008, "Wrong alignment on LeaveButton_C_GetButton");
+static_assert(sizeof(LeaveButton_C_GetButton) == 0x000008, "Wrong size on LeaveButton_C_GetButton");
 static_assert(offsetof(LeaveButton_C_GetButton, Leave_0) == 0x000000, "Member 'LeaveButton_C_GetButton::Leave_0' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.SetText

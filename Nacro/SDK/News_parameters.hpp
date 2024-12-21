@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function News.News_C.ExecuteUbergraph_News
-// 0x0131 (0x0131 - 0x0000)
-struct alignas(0x131) News_C_ExecuteUbergraph_News final
+// 0x0028 (0x0028 - 0x0000)
+struct News_C_ExecuteUbergraph_News final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -26,8 +26,8 @@ public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(News_C_ExecuteUbergraph_News) == 0x000131, "Wrong alignment on News_C_ExecuteUbergraph_News");
-static_assert(sizeof(News_C_ExecuteUbergraph_News) == 0x000131, "Wrong size on News_C_ExecuteUbergraph_News");
+static_assert(alignof(News_C_ExecuteUbergraph_News) == 0x000008, "Wrong alignment on News_C_ExecuteUbergraph_News");
+static_assert(sizeof(News_C_ExecuteUbergraph_News) == 0x000028, "Wrong size on News_C_ExecuteUbergraph_News");
 static_assert(offsetof(News_C_ExecuteUbergraph_News, EntryPoint) == 0x000000, "Member 'News_C_ExecuteUbergraph_News::EntryPoint' has a wrong offset!");
 static_assert(offsetof(News_C_ExecuteUbergraph_News, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'News_C_ExecuteUbergraph_News::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(News_C_ExecuteUbergraph_News, CallFunc_SpawnObject_ReturnValue) == 0x000010, "Member 'News_C_ExecuteUbergraph_News::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
@@ -35,14 +35,14 @@ static_assert(offsetof(News_C_ExecuteUbergraph_News, CallFunc_GetUIManagerWidget
 static_assert(offsetof(News_C_ExecuteUbergraph_News, CallFunc_GetUINavigationManager_ReturnValue) == 0x000020, "Member 'News_C_ExecuteUbergraph_News::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function News.News_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature
-// 0x730061 (0x730061 - 0x0000)
-struct alignas(0x730061) News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x730061, "Wrong alignment on News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x730061, "Wrong size on News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function News.News_C.AddEntry

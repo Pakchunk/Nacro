@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
+#include "RewardListEntryType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "RewardListEntryType_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionPanelContent.MissionPanelContent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UMissionPanelContent_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UFortMultiSizeImage*                    MissionIcon;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       MissionName;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           MissionRewards;                                    // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UMissionPanelContent_C>();
 	}
 };
-static_assert(alignof(UMissionPanelContent_C) == 0x322CBBB8, "Wrong alignment on UMissionPanelContent_C");
-static_assert(sizeof(UMissionPanelContent_C) == 0x322CBBB8, "Wrong size on UMissionPanelContent_C");
+static_assert(alignof(UMissionPanelContent_C) == 0x000008, "Wrong alignment on UMissionPanelContent_C");
+static_assert(sizeof(UMissionPanelContent_C) == 0x000260, "Wrong size on UMissionPanelContent_C");
 static_assert(offsetof(UMissionPanelContent_C, UberGraphFrame) == 0x000238, "Member 'UMissionPanelContent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionPanelContent_C, MissionIcon) == 0x000240, "Member 'UMissionPanelContent_C::MissionIcon' has a wrong offset!");
 static_assert(offsetof(UMissionPanelContent_C, MissionName) == 0x000248, "Member 'UMissionPanelContent_C::MissionName' has a wrong offset!");

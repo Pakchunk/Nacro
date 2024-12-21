@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0290 - 0x0260)
 class UItemCraftingIngredientListEntryHaveNeed_C final : public UFortItemQuantityListEntryBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         HorizontalBox_0;                                   // 0x0268(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCountTextBlock*                ItemCountHave;                                     // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCountTextBlock*                ItemCountNeed;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UItemCraftingIngredientListEntryHaveNeed_C>();
 	}
 };
-static_assert(alignof(UItemCraftingIngredientListEntryHaveNeed_C) == 0x322CBBB8, "Wrong alignment on UItemCraftingIngredientListEntryHaveNeed_C");
-static_assert(sizeof(UItemCraftingIngredientListEntryHaveNeed_C) == 0x322CBBB8, "Wrong size on UItemCraftingIngredientListEntryHaveNeed_C");
+static_assert(alignof(UItemCraftingIngredientListEntryHaveNeed_C) == 0x000008, "Wrong alignment on UItemCraftingIngredientListEntryHaveNeed_C");
+static_assert(sizeof(UItemCraftingIngredientListEntryHaveNeed_C) == 0x000290, "Wrong size on UItemCraftingIngredientListEntryHaveNeed_C");
 static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, UberGraphFrame) == 0x000260, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, HorizontalBox_0) == 0x000268, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::HorizontalBox_0' has a wrong offset!");
 static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, ItemCountHave) == 0x000270, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::ItemCountHave' has a wrong offset!");

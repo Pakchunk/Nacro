@@ -20,8 +20,8 @@ namespace SDK::Params
 {
 
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.InitializeMovie
-// 0x63005F (0x63005F - 0x0000)
-struct alignas(0x63005F) HordeTierResultsWidget_C_InitializeMovie final
+// 0x0028 (0x0028 - 0x0000)
+struct HordeTierResultsWidget_C_InitializeMovie final
 {
 public:
 	class UMediaSource*                           MediaToUse;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,15 +29,15 @@ public:
 	class UMediaSource*                           CallFunc_ChooseMediaToUse_MediaToUse;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMediaPlayer*                           CallFunc_GetMediaPlayer_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HordeTierResultsWidget_C_InitializeMovie) == 0x63005F, "Wrong alignment on HordeTierResultsWidget_C_InitializeMovie");
-static_assert(sizeof(HordeTierResultsWidget_C_InitializeMovie) == 0x63005F, "Wrong size on HordeTierResultsWidget_C_InitializeMovie");
+static_assert(alignof(HordeTierResultsWidget_C_InitializeMovie) == 0x000008, "Wrong alignment on HordeTierResultsWidget_C_InitializeMovie");
+static_assert(sizeof(HordeTierResultsWidget_C_InitializeMovie) == 0x000028, "Wrong size on HordeTierResultsWidget_C_InitializeMovie");
 static_assert(offsetof(HordeTierResultsWidget_C_InitializeMovie, MediaToUse) == 0x000000, "Member 'HordeTierResultsWidget_C_InitializeMovie::MediaToUse' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_InitializeMovie, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HordeTierResultsWidget_C_InitializeMovie::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_InitializeMovie, CallFunc_ChooseMediaToUse_MediaToUse) == 0x000018, "Member 'HordeTierResultsWidget_C_InitializeMovie::CallFunc_ChooseMediaToUse_MediaToUse' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_InitializeMovie, CallFunc_GetMediaPlayer_ReturnValue) == 0x000020, "Member 'HordeTierResultsWidget_C_InitializeMovie::CallFunc_GetMediaPlayer_ReturnValue' has a wrong offset!");
 
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.Initialize
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct HordeTierResultsWidget_C_Initialize final
 {
 public:
@@ -45,17 +45,17 @@ public:
 	EFortCompletionResult                         Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0010(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0010(0x0008)(NoDestructor)
 };
-static_assert(alignof(HordeTierResultsWidget_C_Initialize) == 0x11821D80, "Wrong alignment on HordeTierResultsWidget_C_Initialize");
-static_assert(sizeof(HordeTierResultsWidget_C_Initialize) == 0x11821D80, "Wrong size on HordeTierResultsWidget_C_Initialize");
+static_assert(alignof(HordeTierResultsWidget_C_Initialize) == 0x000008, "Wrong alignment on HordeTierResultsWidget_C_Initialize");
+static_assert(sizeof(HordeTierResultsWidget_C_Initialize) == 0x000018, "Wrong size on HordeTierResultsWidget_C_Initialize");
 static_assert(offsetof(HordeTierResultsWidget_C_Initialize, Result) == 0x000000, "Member 'HordeTierResultsWidget_C_Initialize::Result' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_Initialize, Temp_byte_Variable) == 0x000001, "Member 'HordeTierResultsWidget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_Initialize, K2Node_Select_Default) == 0x000008, "Member 'HordeTierResultsWidget_C_Initialize::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_Initialize, CallFunc_K2_SetTimer_ReturnValue) == 0x000010, "Member 'HordeTierResultsWidget_C_Initialize::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
 
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.ChooseMediaToUse
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0400 (0x0400 - 0x0000)
 struct HordeTierResultsWidget_C_ChooseMediaToUse final
 {
 public:
@@ -66,15 +66,15 @@ public:
 	EFortCompletionResult                         Temp_byte_Variable2;                               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0028(0x1182E980)()
+	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0028(0x03B8)()
 	bool                                          CallFunc_GetCurrentBasicMissionInfo_ReturnValue;   // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3E1[0x7];                                      // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMediaSource*                           K2Node_Select_Default;                             // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMediaSource*                           K2Node_Select2_Default;                            // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMediaSource*                           K2Node_Select3_Default;                            // 0x03F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HordeTierResultsWidget_C_ChooseMediaToUse) == 0x1182E980, "Wrong alignment on HordeTierResultsWidget_C_ChooseMediaToUse");
-static_assert(sizeof(HordeTierResultsWidget_C_ChooseMediaToUse) == 0x1182E980, "Wrong size on HordeTierResultsWidget_C_ChooseMediaToUse");
+static_assert(alignof(HordeTierResultsWidget_C_ChooseMediaToUse) == 0x000008, "Wrong alignment on HordeTierResultsWidget_C_ChooseMediaToUse");
+static_assert(sizeof(HordeTierResultsWidget_C_ChooseMediaToUse) == 0x000400, "Wrong size on HordeTierResultsWidget_C_ChooseMediaToUse");
 static_assert(offsetof(HordeTierResultsWidget_C_ChooseMediaToUse, MediaToUse) == 0x000000, "Member 'HordeTierResultsWidget_C_ChooseMediaToUse::MediaToUse' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_ChooseMediaToUse, StringTest) == 0x000008, "Member 'HordeTierResultsWidget_C_ChooseMediaToUse::StringTest' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_ChooseMediaToUse, Temp_bool_Variable) == 0x000018, "Member 'HordeTierResultsWidget_C_ChooseMediaToUse::Temp_bool_Variable' has a wrong offset!");
@@ -101,17 +101,17 @@ static_assert(offsetof(HordeTierResultsWidget_C_OnEndOfMovieReached, K2Node_Crea
 static_assert(offsetof(HordeTierResultsWidget_C_OnEndOfMovieReached, CallFunc_GetMediaPlayer_ReturnValue) == 0x000010, "Member 'HordeTierResultsWidget_C_OnEndOfMovieReached::CallFunc_GetMediaPlayer_ReturnValue' has a wrong offset!");
 
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.OnHandleAction
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0178 (0x0178 - 0x0000)
 struct HordeTierResultsWidget_C_OnHandleAction final
 {
 public:
-	struct FEventReply                            Result;                                            // 0x0000(0x11827900)(Parm, OutParm)
+	struct FEventReply                            Result;                                            // 0x0000(0x00B8)(Parm, OutParm)
 	bool                                          bPassThrough;                                      // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00C0(0x11827900)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00C0(0x00B8)()
 };
-static_assert(alignof(HordeTierResultsWidget_C_OnHandleAction) == 0x11827900, "Wrong alignment on HordeTierResultsWidget_C_OnHandleAction");
-static_assert(sizeof(HordeTierResultsWidget_C_OnHandleAction) == 0x11827900, "Wrong size on HordeTierResultsWidget_C_OnHandleAction");
+static_assert(alignof(HordeTierResultsWidget_C_OnHandleAction) == 0x000008, "Wrong alignment on HordeTierResultsWidget_C_OnHandleAction");
+static_assert(sizeof(HordeTierResultsWidget_C_OnHandleAction) == 0x000178, "Wrong size on HordeTierResultsWidget_C_OnHandleAction");
 static_assert(offsetof(HordeTierResultsWidget_C_OnHandleAction, Result) == 0x000000, "Member 'HordeTierResultsWidget_C_OnHandleAction::Result' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_OnHandleAction, bPassThrough) == 0x0000B8, "Member 'HordeTierResultsWidget_C_OnHandleAction::bPassThrough' has a wrong offset!");
 static_assert(offsetof(HordeTierResultsWidget_C_OnHandleAction, CallFunc_Handled_ReturnValue) == 0x0000C0, "Member 'HordeTierResultsWidget_C_OnHandleAction::CallFunc_Handled_ReturnValue' has a wrong offset!");

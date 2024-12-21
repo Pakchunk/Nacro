@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CCGameplayEffects.CCGameplayEffects_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x0660 - 0x0660)
 class UCCGameplayEffects_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UCCGameplayEffects_C>();
 	}
 };
-static_assert(alignof(UCCGameplayEffects_C) == 0x1182E980, "Wrong alignment on UCCGameplayEffects_C");
-static_assert(sizeof(UCCGameplayEffects_C) == 0x1182E980, "Wrong size on UCCGameplayEffects_C");
+static_assert(alignof(UCCGameplayEffects_C) == 0x000010, "Wrong alignment on UCCGameplayEffects_C");
+static_assert(sizeof(UCCGameplayEffects_C) == 0x000660, "Wrong size on UCCGameplayEffects_C");
 
 }
 

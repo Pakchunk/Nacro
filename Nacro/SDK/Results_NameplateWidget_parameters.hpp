@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function Results_NameplateWidget.Results_NameplateWidget_C.ExecuteUbergraph_Results_NameplateWidget
-// 0x0045 (0x0045 - 0x0000)
-struct alignas(0x45) Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget final
+// 0x0010 (0x0010 - 0x0000)
+struct Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -27,8 +27,8 @@ public:
 	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget) == 0x000045, "Wrong alignment on Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget");
-static_assert(sizeof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget) == 0x000045, "Wrong size on Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget");
+static_assert(alignof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget) == 0x000004, "Wrong alignment on Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget");
+static_assert(sizeof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget) == 0x000010, "Wrong size on Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget");
 static_assert(offsetof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget, EntryPoint) == 0x000000, "Member 'Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget, CallFunc_GetEndTime_ReturnValue) == 0x000008, "Member 'Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");

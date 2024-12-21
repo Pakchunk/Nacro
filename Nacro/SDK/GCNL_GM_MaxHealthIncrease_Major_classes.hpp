@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNL_GM_MaxHealthIncrease_Major.GCNL_GM_MaxHealthIncrease_Major_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0468 - 0x0468)
 class AGCNL_GM_MaxHealthIncrease_Major_C final : public AFortGameplayCueNotify_Looping
 {
 public:
@@ -34,8 +34,8 @@ public:
 		return GetDefaultObjImpl<AGCNL_GM_MaxHealthIncrease_Major_C>();
 	}
 };
-static_assert(alignof(AGCNL_GM_MaxHealthIncrease_Major_C) == 0x11821D80, "Wrong alignment on AGCNL_GM_MaxHealthIncrease_Major_C");
-static_assert(sizeof(AGCNL_GM_MaxHealthIncrease_Major_C) == 0x11821D80, "Wrong size on AGCNL_GM_MaxHealthIncrease_Major_C");
+static_assert(alignof(AGCNL_GM_MaxHealthIncrease_Major_C) == 0x000008, "Wrong alignment on AGCNL_GM_MaxHealthIncrease_Major_C");
+static_assert(sizeof(AGCNL_GM_MaxHealthIncrease_Major_C) == 0x000468, "Wrong size on AGCNL_GM_MaxHealthIncrease_Major_C");
 
 }
 

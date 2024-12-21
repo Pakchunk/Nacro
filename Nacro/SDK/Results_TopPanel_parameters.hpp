@@ -30,7 +30,7 @@ static_assert(sizeof(Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel) == 0x
 static_assert(offsetof(Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel, EntryPoint) == 0x000000, "Member 'Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel::EntryPoint' has a wrong offset!");
 
 // Function Results_TopPanel.Results_TopPanel_C.Initialize
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x04F8 (0x04F8 - 0x0000)
 struct Results_TopPanel_C_Initialize final
 {
 public:
@@ -41,19 +41,19 @@ public:
 	class FText                                   Temp_text_Variable3;                               // 0x0038(0x0018)()
 	class FText                                   Temp_text_Variable4;                               // 0x0050(0x0018)()
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0070(0x1182E980)()
+	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0070(0x03B8)()
 	bool                                          CallFunc_GetCurrentBasicMissionInfo_ReturnValue;   // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_429[0x7];                                      // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0430(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0470(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0430(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0470(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x04B0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x04C0(0x0018)()
 	EFortCompletionResult                         Temp_byte_Variable;                                // 0x04D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4D9[0x7];                                      // 0x04D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x04E0(0x0018)()
 };
-static_assert(alignof(Results_TopPanel_C_Initialize) == 0x1182E980, "Wrong alignment on Results_TopPanel_C_Initialize");
-static_assert(sizeof(Results_TopPanel_C_Initialize) == 0x1182E980, "Wrong size on Results_TopPanel_C_Initialize");
+static_assert(alignof(Results_TopPanel_C_Initialize) == 0x000008, "Wrong alignment on Results_TopPanel_C_Initialize");
+static_assert(sizeof(Results_TopPanel_C_Initialize) == 0x0004F8, "Wrong size on Results_TopPanel_C_Initialize");
 static_assert(offsetof(Results_TopPanel_C_Initialize, CompletionResult) == 0x000000, "Member 'Results_TopPanel_C_Initialize::CompletionResult' has a wrong offset!");
 static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable) == 0x000008, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable2) == 0x000020, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable2' has a wrong offset!");

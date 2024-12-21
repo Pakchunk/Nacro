@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SplashScreenWidget.SplashScreenWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0450 - 0x0400)
 class USplashScreenWidget_C final : public UFortSplashScreenWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
 	class UCommonActionWidget*                    GamepadActionWidget;                               // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         GamepadInputHbox;                                  // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       GamepadInputText;                                  // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<USplashScreenWidget_C>();
 	}
 };
-static_assert(alignof(USplashScreenWidget_C) == 0x322CBBB8, "Wrong alignment on USplashScreenWidget_C");
-static_assert(sizeof(USplashScreenWidget_C) == 0x322CBBB8, "Wrong size on USplashScreenWidget_C");
+static_assert(alignof(USplashScreenWidget_C) == 0x000008, "Wrong alignment on USplashScreenWidget_C");
+static_assert(sizeof(USplashScreenWidget_C) == 0x000450, "Wrong size on USplashScreenWidget_C");
 static_assert(offsetof(USplashScreenWidget_C, UberGraphFrame) == 0x000400, "Member 'USplashScreenWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USplashScreenWidget_C, GamepadActionWidget) == 0x000408, "Member 'USplashScreenWidget_C::GamepadActionWidget' has a wrong offset!");
 static_assert(offsetof(USplashScreenWidget_C, GamepadInputHbox) == 0x000410, "Member 'USplashScreenWidget_C::GamepadInputHbox' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Get_DirectDamageParent.Get_DirectDamageParent_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x0660 - 0x0660)
 class UGet_DirectDamageParent_C : public UGET_DamageParent_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGet_DirectDamageParent_C>();
 	}
 };
-static_assert(alignof(UGet_DirectDamageParent_C) == 0x1182E980, "Wrong alignment on UGet_DirectDamageParent_C");
-static_assert(sizeof(UGet_DirectDamageParent_C) == 0x1182E980, "Wrong size on UGet_DirectDamageParent_C");
+static_assert(alignof(UGet_DirectDamageParent_C) == 0x000010, "Wrong alignment on UGet_DirectDamageParent_C");
+static_assert(sizeof(UGet_DirectDamageParent_C) == 0x000660, "Wrong size on UGet_DirectDamageParent_C");
 
 }
 

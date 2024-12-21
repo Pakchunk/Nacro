@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MissionGen_AthenaSquad.MissionGen_AthenaSquad_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0000 (0x06A8 - 0x06A8)
 class UMissionGen_AthenaSquad_C final : public UFortMissionGenerator
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UMissionGen_AthenaSquad_C>();
 	}
 };
-static_assert(alignof(UMissionGen_AthenaSquad_C) == 0x1182EB00, "Wrong alignment on UMissionGen_AthenaSquad_C");
-static_assert(sizeof(UMissionGen_AthenaSquad_C) == 0x1182EB00, "Wrong size on UMissionGen_AthenaSquad_C");
+static_assert(alignof(UMissionGen_AthenaSquad_C) == 0x000008, "Wrong alignment on UMissionGen_AthenaSquad_C");
+static_assert(sizeof(UMissionGen_AthenaSquad_C) == 0x0006A8, "Wrong size on UMissionGen_AthenaSquad_C");
 
 }
 

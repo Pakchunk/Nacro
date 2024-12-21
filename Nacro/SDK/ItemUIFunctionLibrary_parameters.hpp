@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Add Alteration Widgets
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0270 (0x0270 - 0x0000)
 struct ItemUIFunctionLibrary_C_Add_Alteration_Widgets final
 {
 public:
@@ -34,7 +34,7 @@ public:
 	bool                                          FormatForVaultDetails;                             // 0x0020(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShowPreview;                                       // 0x0021(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Color;                                             // 0x0024(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0024(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AlterationsArrayIndex;                             // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         LevelToPreview;                                    // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsAlterationSlotActive;                           // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,16 +50,16 @@ public:
 	class UTooltipStatWidget_C*                   CallFunc_Create_ReturnValue3;                      // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTooltipStatWrapper_C*                  CallFunc_Create_ReturnValue4;                      // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue2;       // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0098(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0098(0x0010)(NoDestructor)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue3;       // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x00C0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00B0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor2;                    // 0x00C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x00D8(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x00D8(0x0010)(NoDestructor)
 	class FText                                   CallFunc_GetAlterationSlotActivationRequirement_ReturnValue; // 0x00E8(0x0018)()
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor3;                    // 0x0100(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor3;                    // 0x0100(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_ParseLevelRequiredFromString_outInt;      // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -87,8 +87,8 @@ public:
 	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue4;       // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets) == 0x322CBBB8, "Wrong alignment on ItemUIFunctionLibrary_C_Add_Alteration_Widgets");
-static_assert(sizeof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets) == 0x322CBBB8, "Wrong size on ItemUIFunctionLibrary_C_Add_Alteration_Widgets");
+static_assert(alignof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_Add_Alteration_Widgets");
+static_assert(sizeof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets) == 0x000270, "Wrong size on ItemUIFunctionLibrary_C_Add_Alteration_Widgets");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Host_Widget) == 0x000000, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Host_Widget' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Item) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Item' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, PreviewLevel) == 0x000010, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::PreviewLevel' has a wrong offset!");
@@ -218,7 +218,7 @@ static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, K2Node_Select_Default) == 0x000044, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Truncate Integer Value
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct ItemUIFunctionLibrary_C_Truncate_Integer_Value final
 {
 public:
@@ -260,16 +260,16 @@ public:
 	bool                                          Temp_bool_Variable6;                               // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x00E0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00F8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00F8(0x0040)(HasGetValueTypeHash)
 	class FText                                   K2Node_Select4_Default;                            // 0x0138(0x0018)()
 	class FText                                   K2Node_Select5_Default;                            // 0x0150(0x0018)()
 	class FText                                   K2Node_Select6_Default;                            // 0x0168(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0180(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0180(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01C0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01D0(0x0018)()
 };
-static_assert(alignof(ItemUIFunctionLibrary_C_Truncate_Integer_Value) == 0x11821D80, "Wrong alignment on ItemUIFunctionLibrary_C_Truncate_Integer_Value");
-static_assert(sizeof(ItemUIFunctionLibrary_C_Truncate_Integer_Value) == 0x11821D80, "Wrong size on ItemUIFunctionLibrary_C_Truncate_Integer_Value");
+static_assert(alignof(ItemUIFunctionLibrary_C_Truncate_Integer_Value) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_Truncate_Integer_Value");
+static_assert(sizeof(ItemUIFunctionLibrary_C_Truncate_Integer_Value) == 0x0001E8, "Wrong size on ItemUIFunctionLibrary_C_Truncate_Integer_Value");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Value) == 0x000000, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Value' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Min_Fractional_Digits) == 0x000004, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Min_Fractional_Digits' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Max_Fractional_Digits) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Max_Fractional_Digits' has a wrong offset!");

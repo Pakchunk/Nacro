@@ -19,15 +19,15 @@ namespace SDK::Params
 {
 
 // Function ItemStackCounter.ItemStackCounter_C.ExecuteUbergraph_ItemStackCounter
-// 0x650073 (0x650073 - 0x0000)
-struct alignas(0x650073) ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter final
+// 0x0008 (0x0008 - 0x0000)
+struct ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter) == 0x650073, "Wrong alignment on ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter");
-static_assert(sizeof(ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter) == 0x650073, "Wrong size on ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter");
+static_assert(alignof(ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter) == 0x000004, "Wrong alignment on ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter");
+static_assert(sizeof(ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter) == 0x000008, "Wrong size on ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter");
 static_assert(offsetof(ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter, EntryPoint) == 0x000000, "Member 'ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter, K2Node_Event_IsDesignTime) == 0x000004, "Member 'ItemStackCounter_C_ExecuteUbergraph_ItemStackCounter::K2Node_Event_IsDesignTime' has a wrong offset!");
 
@@ -43,7 +43,7 @@ static_assert(sizeof(ItemStackCounter_C_PreConstruct) == 0x000001, "Wrong size o
 static_assert(offsetof(ItemStackCounter_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemStackCounter_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemStackCounter.ItemStackCounter_C.Update
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct ItemStackCounter_C_Update final
 {
 public:
@@ -53,13 +53,14 @@ public:
 	class UBorderSlot*                            K2Node_DynamicCast_AsBorder_Slot;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue; // 0x0014(0x322CBBB8)(ConstParm, NoDestructor)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0028(0x322CBBB8)(ConstParm)
+	struct FMargin                                CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue; // 0x0014(0x0010)(ConstParm, NoDestructor)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0028(0x0090)(ConstParm)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemStackCounter_C_Update) == 0x322CBBB8, "Wrong alignment on ItemStackCounter_C_Update");
-static_assert(sizeof(ItemStackCounter_C_Update) == 0x322CBBB8, "Wrong size on ItemStackCounter_C_Update");
+static_assert(alignof(ItemStackCounter_C_Update) == 0x000008, "Wrong alignment on ItemStackCounter_C_Update");
+static_assert(sizeof(ItemStackCounter_C_Update) == 0x0000C0, "Wrong size on ItemStackCounter_C_Update");
 static_assert(offsetof(ItemStackCounter_C_Update, Brush_Size_0) == 0x000000, "Member 'ItemStackCounter_C_Update::Brush_Size_0' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Update, Count_0) == 0x000004, "Member 'ItemStackCounter_C_Update::Count_0' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Update, K2Node_DynamicCast_AsBorder_Slot) == 0x000008, "Member 'ItemStackCounter_C_Update::K2Node_DynamicCast_AsBorder_Slot' has a wrong offset!");
@@ -90,8 +91,8 @@ static_assert(offsetof(ItemStackCounter_C_Set_Stack_Count, CallFunc_Truncate_Int
 static_assert(offsetof(ItemStackCounter_C_Set_Stack_Count, K2Node_Select_Default) == 0x000038, "Member 'ItemStackCounter_C_Set_Stack_Count::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemStackCounter.ItemStackCounter_C.Refresh Visibility
-// 0x00EB (0x00EB - 0x0000)
-struct alignas(0xEB) ItemStackCounter_C_Refresh_Visibility final
+// 0x0006 (0x0006 - 0x0000)
+struct ItemStackCounter_C_Refresh_Visibility final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -101,8 +102,8 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemStackCounter_C_Refresh_Visibility) == 0x0000EB, "Wrong alignment on ItemStackCounter_C_Refresh_Visibility");
-static_assert(sizeof(ItemStackCounter_C_Refresh_Visibility) == 0x0000EB, "Wrong size on ItemStackCounter_C_Refresh_Visibility");
+static_assert(alignof(ItemStackCounter_C_Refresh_Visibility) == 0x000001, "Wrong alignment on ItemStackCounter_C_Refresh_Visibility");
+static_assert(sizeof(ItemStackCounter_C_Refresh_Visibility) == 0x000006, "Wrong size on ItemStackCounter_C_Refresh_Visibility");
 static_assert(offsetof(ItemStackCounter_C_Refresh_Visibility, Temp_bool_Variable) == 0x000000, "Member 'ItemStackCounter_C_Refresh_Visibility::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Refresh_Visibility, Temp_byte_Variable) == 0x000001, "Member 'ItemStackCounter_C_Refresh_Visibility::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemStackCounter_C_Refresh_Visibility, Temp_byte_Variable2) == 0x000002, "Member 'ItemStackCounter_C_Refresh_Visibility::Temp_byte_Variable2' has a wrong offset!");

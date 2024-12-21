@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_BonusXpType.Results_BonusXpType_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02A8 - 0x0238)
 class UResults_BonusXpType_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_SkipToInvisible;                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_SkipToVisible;                                // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UResults_BonusXpType_C>();
 	}
 };
-static_assert(alignof(UResults_BonusXpType_C) == 0x322CBBB8, "Wrong alignment on UResults_BonusXpType_C");
-static_assert(sizeof(UResults_BonusXpType_C) == 0x322CBBB8, "Wrong size on UResults_BonusXpType_C");
+static_assert(alignof(UResults_BonusXpType_C) == 0x000008, "Wrong alignment on UResults_BonusXpType_C");
+static_assert(sizeof(UResults_BonusXpType_C) == 0x0002A8, "Wrong size on UResults_BonusXpType_C");
 static_assert(offsetof(UResults_BonusXpType_C, UberGraphFrame) == 0x000238, "Member 'UResults_BonusXpType_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_BonusXpType_C, Anim_SkipToInvisible) == 0x000240, "Member 'UResults_BonusXpType_C::Anim_SkipToInvisible' has a wrong offset!");
 static_assert(offsetof(UResults_BonusXpType_C, Anim_Intro) == 0x000248, "Member 'UResults_BonusXpType_C::Anim_Intro' has a wrong offset!");

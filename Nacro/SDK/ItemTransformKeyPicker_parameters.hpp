@@ -15,15 +15,15 @@ namespace SDK::Params
 {
 
 // Function ItemTransformKeyPicker.ItemTransformKeyPicker_C.SetSelectedKey
-// 0x01AA (0x01AA - 0x0000)
-struct alignas(0x1AA) ItemTransformKeyPicker_C_SetSelectedKey final
+// 0x0010 (0x0010 - 0x0000)
+struct ItemTransformKeyPicker_C_SetSelectedKey final
 {
 public:
 	class UFortAccountItem*                       AccountKey;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetSelectedItem_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformKeyPicker_C_SetSelectedKey) == 0x0001AA, "Wrong alignment on ItemTransformKeyPicker_C_SetSelectedKey");
-static_assert(sizeof(ItemTransformKeyPicker_C_SetSelectedKey) == 0x0001AA, "Wrong size on ItemTransformKeyPicker_C_SetSelectedKey");
+static_assert(alignof(ItemTransformKeyPicker_C_SetSelectedKey) == 0x000008, "Wrong alignment on ItemTransformKeyPicker_C_SetSelectedKey");
+static_assert(sizeof(ItemTransformKeyPicker_C_SetSelectedKey) == 0x000010, "Wrong size on ItemTransformKeyPicker_C_SetSelectedKey");
 static_assert(offsetof(ItemTransformKeyPicker_C_SetSelectedKey, AccountKey) == 0x000000, "Member 'ItemTransformKeyPicker_C_SetSelectedKey::AccountKey' has a wrong offset!");
 static_assert(offsetof(ItemTransformKeyPicker_C_SetSelectedKey, CallFunc_SetSelectedItem_ReturnValue) == 0x000008, "Member 'ItemTransformKeyPicker_C_SetSelectedKey::CallFunc_SetSelectedItem_ReturnValue' has a wrong offset!");
 

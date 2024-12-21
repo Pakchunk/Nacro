@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BasicNotification.BasicNotification_C
-// 0x0000 (0x11821780 - 0x11821780)
+// 0x0000 (0x0090 - 0x0090)
 class UBasicNotification_C final : public UFortUINotification
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBasicNotification_C>();
 	}
 };
-static_assert(alignof(UBasicNotification_C) == 0x11821780, "Wrong alignment on UBasicNotification_C");
-static_assert(sizeof(UBasicNotification_C) == 0x11821780, "Wrong size on UBasicNotification_C");
+static_assert(alignof(UBasicNotification_C) == 0x000008, "Wrong alignment on UBasicNotification_C");
+static_assert(sizeof(UBasicNotification_C) == 0x000090, "Wrong size on UBasicNotification_C");
 
 }
 

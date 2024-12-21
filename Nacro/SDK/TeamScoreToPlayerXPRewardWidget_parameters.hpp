@@ -17,16 +17,16 @@ namespace SDK::Params
 {
 
 // Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget
-// 0x450100 (0x450100 - 0x0000)
-struct alignas(0x450100) TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget final
+// 0x0010 (0x0010 - 0x0000)
+struct TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_CreateSound2D_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget) == 0x450100, "Wrong alignment on TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget");
-static_assert(sizeof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget) == 0x450100, "Wrong size on TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget");
+static_assert(alignof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget) == 0x000008, "Wrong alignment on TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget");
+static_assert(sizeof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget) == 0x000010, "Wrong size on TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget");
 static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget, EntryPoint) == 0x000000, "Member 'TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget, CallFunc_CreateSound2D_ReturnValue) == 0x000008, "Member 'TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget::CallFunc_CreateSound2D_ReturnValue' has a wrong offset!");
 
@@ -88,17 +88,18 @@ static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFun
 static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Conv_IntToFloat_ReturnValue4) == 0x000060, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Conv_IntToFloat_ReturnValue4' has a wrong offset!");
 
 // Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.Initialize
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct TeamScoreToPlayerXPRewardWidget_C_Initialize final
 {
 public:
-	struct FFortUIXpInfo                          XPinfo_0;                                          // 0x0000(0x1182E980)(Parm, NoDestructor)
+	struct FFortUIXpInfo                          XPinfo_0;                                          // 0x0000(0x002C)(Parm, NoDestructor)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Player_Name;                                       // 0x0030(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIScoreReport*                     CallFunc_GetScoreReport_ReturnValue;               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamScoreToPlayerXPRewardWidget_C_Initialize) == 0x1182E980, "Wrong alignment on TeamScoreToPlayerXPRewardWidget_C_Initialize");
-static_assert(sizeof(TeamScoreToPlayerXPRewardWidget_C_Initialize) == 0x1182E980, "Wrong size on TeamScoreToPlayerXPRewardWidget_C_Initialize");
+static_assert(alignof(TeamScoreToPlayerXPRewardWidget_C_Initialize) == 0x000008, "Wrong alignment on TeamScoreToPlayerXPRewardWidget_C_Initialize");
+static_assert(sizeof(TeamScoreToPlayerXPRewardWidget_C_Initialize) == 0x000050, "Wrong size on TeamScoreToPlayerXPRewardWidget_C_Initialize");
 static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Initialize, XPinfo_0) == 0x000000, "Member 'TeamScoreToPlayerXPRewardWidget_C_Initialize::XPinfo_0' has a wrong offset!");
 static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Initialize, Player_Name) == 0x000030, "Member 'TeamScoreToPlayerXPRewardWidget_C_Initialize::Player_Name' has a wrong offset!");
 static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'TeamScoreToPlayerXPRewardWidget_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");

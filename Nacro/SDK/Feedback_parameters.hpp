@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function Feedback.Feedback_C.ExecuteUbergraph_Feedback
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) Feedback_C_ExecuteUbergraph_Feedback final
+// 0x0048 (0x0048 - 0x0000)
+struct Feedback_C_ExecuteUbergraph_Feedback final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,8 +32,8 @@ public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UIconTextButton_C*                      K2Node_Select_Default;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_ExecuteUbergraph_Feedback) == 0x540065, "Wrong alignment on Feedback_C_ExecuteUbergraph_Feedback");
-static_assert(sizeof(Feedback_C_ExecuteUbergraph_Feedback) == 0x540065, "Wrong size on Feedback_C_ExecuteUbergraph_Feedback");
+static_assert(alignof(Feedback_C_ExecuteUbergraph_Feedback) == 0x000008, "Wrong alignment on Feedback_C_ExecuteUbergraph_Feedback");
+static_assert(sizeof(Feedback_C_ExecuteUbergraph_Feedback) == 0x000048, "Wrong size on Feedback_C_ExecuteUbergraph_Feedback");
 static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, EntryPoint) == 0x000000, "Member 'Feedback_C_ExecuteUbergraph_Feedback::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, CallFunc_GetSelected_ReturnValue) == 0x000004, "Member 'Feedback_C_ExecuteUbergraph_Feedback::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, Temp_bool_Variable) == 0x000005, "Member 'Feedback_C_ExecuteUbergraph_Feedback::Temp_bool_Variable' has a wrong offset!");
@@ -80,13 +80,13 @@ static_assert(offsetof(Feedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEven
 
 // Function Feedback.Feedback_C.BindDelegates
 // 0x0020 (0x0020 - 0x0000)
-struct Feedback_C_BindDelegates final
+struct alignas(0x08) Feedback_C_BindDelegates final
 {
 public:
 	TDelegate<void(class FText& Text)>            K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class FText& Text)>            K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(Feedback_C_BindDelegates) == 0x000004, "Wrong alignment on Feedback_C_BindDelegates");
+static_assert(alignof(Feedback_C_BindDelegates) == 0x000008, "Wrong alignment on Feedback_C_BindDelegates");
 static_assert(sizeof(Feedback_C_BindDelegates) == 0x000020, "Wrong size on Feedback_C_BindDelegates");
 static_assert(offsetof(Feedback_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'Feedback_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(Feedback_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'Feedback_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");

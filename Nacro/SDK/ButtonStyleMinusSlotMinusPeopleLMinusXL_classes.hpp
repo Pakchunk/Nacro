@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-Slot-PeopleL-XL.ButtonStyle-Slot-PeopleL-XL_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusSlotMinusPeopleLMinusXL_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusSlotMinusPeopleLMinusXL_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusSlotMinusPeopleLMinusXL_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusSlotMinusPeopleLMinusXL_C");
-static_assert(sizeof(UButtonStyleMinusSlotMinusPeopleLMinusXL_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusSlotMinusPeopleLMinusXL_C");
+static_assert(alignof(UButtonStyleMinusSlotMinusPeopleLMinusXL_C) == 0x000008, "Wrong alignment on UButtonStyleMinusSlotMinusPeopleLMinusXL_C");
+static_assert(sizeof(UButtonStyleMinusSlotMinusPeopleLMinusXL_C) == 0x000530, "Wrong size on UButtonStyleMinusSlotMinusPeopleLMinusXL_C");
 
 }
 

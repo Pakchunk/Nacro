@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestVerticalRewardInfo.QuestVerticalRewardInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x02C0 - 0x02C0)
 class UQuestVerticalRewardInfo_C final : public UFortRewardInfoWidget
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UQuestVerticalRewardInfo_C>();
 	}
 };
-static_assert(alignof(UQuestVerticalRewardInfo_C) == 0x322CBBB8, "Wrong alignment on UQuestVerticalRewardInfo_C");
-static_assert(sizeof(UQuestVerticalRewardInfo_C) == 0x322CBBB8, "Wrong size on UQuestVerticalRewardInfo_C");
+static_assert(alignof(UQuestVerticalRewardInfo_C) == 0x000008, "Wrong alignment on UQuestVerticalRewardInfo_C");
+static_assert(sizeof(UQuestVerticalRewardInfo_C) == 0x0002C0, "Wrong size on UQuestVerticalRewardInfo_C");
 
 }
 

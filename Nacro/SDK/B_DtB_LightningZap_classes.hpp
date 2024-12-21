@@ -19,14 +19,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_DtB_LightningZap.B_DtB_LightningZap_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0030 (0x03B8 - 0x0388)
 class AB_DtB_LightningZap_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class UParticleSystemComponent*               P_DtBRiftLightningZap;                             // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                RiftLocation;                                      // 0x03A0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                RiftLocation;                                      // 0x03A0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TickDuration;                                      // 0x03AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TickCounter;                                       // 0x03B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<AB_DtB_LightningZap_C>();
 	}
 };
-static_assert(alignof(AB_DtB_LightningZap_C) == 0x11821D80, "Wrong alignment on AB_DtB_LightningZap_C");
-static_assert(sizeof(AB_DtB_LightningZap_C) == 0x11821D80, "Wrong size on AB_DtB_LightningZap_C");
+static_assert(alignof(AB_DtB_LightningZap_C) == 0x000008, "Wrong alignment on AB_DtB_LightningZap_C");
+static_assert(sizeof(AB_DtB_LightningZap_C) == 0x0003B8, "Wrong size on AB_DtB_LightningZap_C");
 static_assert(offsetof(AB_DtB_LightningZap_C, UberGraphFrame) == 0x000388, "Member 'AB_DtB_LightningZap_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AB_DtB_LightningZap_C, P_DtBRiftLightningZap) == 0x000390, "Member 'AB_DtB_LightningZap_C::P_DtBRiftLightningZap' has a wrong offset!");
 static_assert(offsetof(AB_DtB_LightningZap_C, DefaultSceneRoot) == 0x000398, "Member 'AB_DtB_LightningZap_C::DefaultSceneRoot' has a wrong offset!");

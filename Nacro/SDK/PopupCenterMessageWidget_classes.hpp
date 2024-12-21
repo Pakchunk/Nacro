@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PopupCenterMessageWidget.PopupCenterMessageWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0280 - 0x0268)
 class UPopupCenterMessageWidget_C final : public UFortHUDCenterPopupMessageWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0268(0x0008)(Transient, DuplicateTransient)
 	class UPopupCenterMessageModalPanel_C*        CenterPopupModal;                                  // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           UpdateStateTimer;                                  // 0x0278(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           UpdateStateTimer;                                  // 0x0278(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_PopupCenterMessageWidget(int32 EntryPoint);
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UPopupCenterMessageWidget_C>();
 	}
 };
-static_assert(alignof(UPopupCenterMessageWidget_C) == 0x322CBBB8, "Wrong alignment on UPopupCenterMessageWidget_C");
-static_assert(sizeof(UPopupCenterMessageWidget_C) == 0x322CBBB8, "Wrong size on UPopupCenterMessageWidget_C");
+static_assert(alignof(UPopupCenterMessageWidget_C) == 0x000008, "Wrong alignment on UPopupCenterMessageWidget_C");
+static_assert(sizeof(UPopupCenterMessageWidget_C) == 0x000280, "Wrong size on UPopupCenterMessageWidget_C");
 static_assert(offsetof(UPopupCenterMessageWidget_C, UberGraphFrame) == 0x000268, "Member 'UPopupCenterMessageWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPopupCenterMessageWidget_C, CenterPopupModal) == 0x000270, "Member 'UPopupCenterMessageWidget_C::CenterPopupModal' has a wrong offset!");
 static_assert(offsetof(UPopupCenterMessageWidget_C, UpdateStateTimer) == 0x000278, "Member 'UPopupCenterMessageWidget_C::UpdateStateTimer' has a wrong offset!");

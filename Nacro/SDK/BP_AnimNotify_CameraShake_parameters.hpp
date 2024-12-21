@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function BP_AnimNotify_CameraShake.BP_AnimNotify_CameraShake_C.Received_Notify
-// 0x0100 (0x0100 - 0x0000)
-struct alignas(0x100) BP_AnimNotify_CameraShake_C_Received_Notify final
+// 0x0048 (0x0048 - 0x0000)
+struct BP_AnimNotify_CameraShake_C_Received_Notify final
 {
 public:
 	class USkeletalMeshComponent*                 MeshComp;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,8 +31,8 @@ public:
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_AnimNotify_CameraShake_C_Received_Notify) == 0x000100, "Wrong alignment on BP_AnimNotify_CameraShake_C_Received_Notify");
-static_assert(sizeof(BP_AnimNotify_CameraShake_C_Received_Notify) == 0x000100, "Wrong size on BP_AnimNotify_CameraShake_C_Received_Notify");
+static_assert(alignof(BP_AnimNotify_CameraShake_C_Received_Notify) == 0x000008, "Wrong alignment on BP_AnimNotify_CameraShake_C_Received_Notify");
+static_assert(sizeof(BP_AnimNotify_CameraShake_C_Received_Notify) == 0x000048, "Wrong size on BP_AnimNotify_CameraShake_C_Received_Notify");
 static_assert(offsetof(BP_AnimNotify_CameraShake_C_Received_Notify, MeshComp) == 0x000000, "Member 'BP_AnimNotify_CameraShake_C_Received_Notify::MeshComp' has a wrong offset!");
 static_assert(offsetof(BP_AnimNotify_CameraShake_C_Received_Notify, Animation) == 0x000008, "Member 'BP_AnimNotify_CameraShake_C_Received_Notify::Animation' has a wrong offset!");
 static_assert(offsetof(BP_AnimNotify_CameraShake_C_Received_Notify, ReturnValue) == 0x000010, "Member 'BP_AnimNotify_CameraShake_C_Received_Notify::ReturnValue' has a wrong offset!");

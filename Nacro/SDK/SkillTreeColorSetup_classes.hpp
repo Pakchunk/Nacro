@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SkillTreePages_structs.hpp"
 #include "Engine_classes.hpp"
+#include "SkillTreePages_structs.hpp"
 
 
 namespace SDK

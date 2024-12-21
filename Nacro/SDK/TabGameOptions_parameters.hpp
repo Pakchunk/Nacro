@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function TabGameOptions.TabGameOptions_C.ExecuteUbergraph_TabGameOptions
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0270 (0x0270 - 0x0000)
 struct TabGameOptions_C_ExecuteUbergraph_TabGameOptions final
 {
 public:
@@ -42,13 +42,13 @@ public:
 	class UTabGameOptions_C*                      K2Node_DynamicCast_AsTab_Game_Options3;            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo;          // 0x0060(0x1182E980)()
+	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo;          // 0x0060(0x00A8)()
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTabGameOptionsMain_C*                  CallFunc_Create_ReturnValue;                       // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RegisterFortTab_ReturnValue;              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo2;         // 0x0128(0x1182E980)()
+	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo2;         // 0x0128(0x00A8)()
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue2;         // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTabGameOptionsHud_C*                   CallFunc_Create_ReturnValue2;                      // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable2;                                // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,8 +76,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x0269(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions) == 0x1182E980, "Wrong alignment on TabGameOptions_C_ExecuteUbergraph_TabGameOptions");
-static_assert(sizeof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions) == 0x1182E980, "Wrong size on TabGameOptions_C_ExecuteUbergraph_TabGameOptions");
+static_assert(alignof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions) == 0x000008, "Wrong alignment on TabGameOptions_C_ExecuteUbergraph_TabGameOptions");
+static_assert(sizeof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions) == 0x000270, "Wrong size on TabGameOptions_C_ExecuteUbergraph_TabGameOptions");
 static_assert(offsetof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions, EntryPoint) == 0x000000, "Member 'TabGameOptions_C_ExecuteUbergraph_TabGameOptions::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'TabGameOptions_C_ExecuteUbergraph_TabGameOptions::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000008, "Member 'TabGameOptions_C_ExecuteUbergraph_TabGameOptions::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
@@ -123,28 +123,28 @@ static_assert(offsetof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions, K2Node_
 static_assert(offsetof(TabGameOptions_C_ExecuteUbergraph_TabGameOptions, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000269, "Member 'TabGameOptions_C_ExecuteUbergraph_TabGameOptions::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function TabGameOptions.TabGameOptions_C.BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature final
+// 0x0010 (0x0010 - 0x0000)
+struct TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature) == 0x0000E4, "Wrong alignment on TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature) == 0x0000E4, "Wrong size on TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature");
+static_assert(alignof(TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature");
+static_assert(sizeof(TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature");
 static_assert(offsetof(TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
 static_assert(offsetof(TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'TabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function TabGameOptions.TabGameOptions_C.BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature
-// 0x0027 (0x0027 - 0x0000)
-struct alignas(0x27) TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature final
+// 0x0010 (0x0010 - 0x0000)
+struct TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature final
 {
 public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature) == 0x000027, "Wrong alignment on TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature) == 0x000027, "Wrong size on TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature");
+static_assert(alignof(TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature");
+static_assert(sizeof(TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature");
 static_assert(offsetof(TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
 static_assert(offsetof(TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'TabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 

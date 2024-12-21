@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBWA_BG_HalfWall.PBWA_BG_HalfWall_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0000 (0x10B0 - 0x10B0)
 class APBWA_BG_HalfWall_C final : public ABuildingWall
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<APBWA_BG_HalfWall_C>();
 	}
 };
-static_assert(alignof(APBWA_BG_HalfWall_C) == 0x1182A000, "Wrong alignment on APBWA_BG_HalfWall_C");
-static_assert(sizeof(APBWA_BG_HalfWall_C) == 0x1182A000, "Wrong size on APBWA_BG_HalfWall_C");
+static_assert(alignof(APBWA_BG_HalfWall_C) == 0x000010, "Wrong alignment on APBWA_BG_HalfWall_C");
+static_assert(sizeof(APBWA_BG_HalfWall_C) == 0x0010B0, "Wrong size on APBWA_BG_HalfWall_C");
 
 }
 

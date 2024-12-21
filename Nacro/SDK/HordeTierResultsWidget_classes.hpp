@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HordeTierResultsWidget.HordeTierResultsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x02C8 - 0x0268)
 class UHordeTierResultsWidget_C final : public UFortActionHandlerPanel
 {
 public:
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UHordeTierResultsWidget_C>();
 	}
 };
-static_assert(alignof(UHordeTierResultsWidget_C) == 0x322CBBB8, "Wrong alignment on UHordeTierResultsWidget_C");
-static_assert(sizeof(UHordeTierResultsWidget_C) == 0x322CBBB8, "Wrong size on UHordeTierResultsWidget_C");
+static_assert(alignof(UHordeTierResultsWidget_C) == 0x000008, "Wrong alignment on UHordeTierResultsWidget_C");
+static_assert(sizeof(UHordeTierResultsWidget_C) == 0x0002C8, "Wrong size on UHordeTierResultsWidget_C");
 static_assert(offsetof(UHordeTierResultsWidget_C, Movie) == 0x000268, "Member 'UHordeTierResultsWidget_C::Movie' has a wrong offset!");
 static_assert(offsetof(UHordeTierResultsWidget_C, ResultsNameplate) == 0x000270, "Member 'UHordeTierResultsWidget_C::ResultsNameplate' has a wrong offset!");
 static_assert(offsetof(UHordeTierResultsWidget_C, OnTierResultsWidgetComplete) == 0x000278, "Member 'UHordeTierResultsWidget_C::OnTierResultsWidgetComplete' has a wrong offset!");

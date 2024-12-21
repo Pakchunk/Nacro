@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-MainModal.Border-MainModal_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusMainModal_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusMainModal_C>();
 	}
 };
-static_assert(alignof(UBorderMinusMainModal_C) == 0x11827900, "Wrong alignment on UBorderMinusMainModal_C");
-static_assert(sizeof(UBorderMinusMainModal_C) == 0x11827900, "Wrong size on UBorderMinusMainModal_C");
+static_assert(alignof(UBorderMinusMainModal_C) == 0x000008, "Wrong alignment on UBorderMinusMainModal_C");
+static_assert(sizeof(UBorderMinusMainModal_C) == 0x0000B8, "Wrong size on UBorderMinusMainModal_C");
 
 }
 

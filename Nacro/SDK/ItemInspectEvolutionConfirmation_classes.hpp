@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C8 (0x0308 - 0x0240)
 class UItemInspectEvolutionConfirmation_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      EvolutionConfirmButton;                            // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           EvolutionInfo;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  EvolutionInfoSwitcher;                             // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -78,8 +78,8 @@ public:
 		return GetDefaultObjImpl<UItemInspectEvolutionConfirmation_C>();
 	}
 };
-static_assert(alignof(UItemInspectEvolutionConfirmation_C) == 0x322CBBB8, "Wrong alignment on UItemInspectEvolutionConfirmation_C");
-static_assert(sizeof(UItemInspectEvolutionConfirmation_C) == 0x322CBBB8, "Wrong size on UItemInspectEvolutionConfirmation_C");
+static_assert(alignof(UItemInspectEvolutionConfirmation_C) == 0x000008, "Wrong alignment on UItemInspectEvolutionConfirmation_C");
+static_assert(sizeof(UItemInspectEvolutionConfirmation_C) == 0x000308, "Wrong size on UItemInspectEvolutionConfirmation_C");
 static_assert(offsetof(UItemInspectEvolutionConfirmation_C, UberGraphFrame) == 0x000240, "Member 'UItemInspectEvolutionConfirmation_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionConfirmButton) == 0x000248, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionConfirmButton' has a wrong offset!");
 static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionInfo) == 0x000250, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionInfo' has a wrong offset!");

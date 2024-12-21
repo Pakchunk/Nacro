@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_DtB_FloatingRift.B_DtB_FloatingRift_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0130 (0x0970 - 0x0840)
 class AB_DtB_FloatingRift_C final : public ABuildingGameplayActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0840(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0840(0x0008)(Transient, DuplicateTransient)
 	class UAudioComponent*                        Electricity_Spark_Zaps_Audio_Component;            // 0x0848(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Dtb_rift_ground_04;                                // 0x0850(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Dtb_rift_ground_03;                                // 0x0858(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -83,8 +83,8 @@ public:
 		return GetDefaultObjImpl<AB_DtB_FloatingRift_C>();
 	}
 };
-static_assert(alignof(AB_DtB_FloatingRift_C) == 0x1182EB00, "Wrong alignment on AB_DtB_FloatingRift_C");
-static_assert(sizeof(AB_DtB_FloatingRift_C) == 0x1182EB00, "Wrong size on AB_DtB_FloatingRift_C");
+static_assert(alignof(AB_DtB_FloatingRift_C) == 0x000010, "Wrong alignment on AB_DtB_FloatingRift_C");
+static_assert(sizeof(AB_DtB_FloatingRift_C) == 0x000970, "Wrong size on AB_DtB_FloatingRift_C");
 static_assert(offsetof(AB_DtB_FloatingRift_C, UberGraphFrame) == 0x000840, "Member 'AB_DtB_FloatingRift_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AB_DtB_FloatingRift_C, Electricity_Spark_Zaps_Audio_Component) == 0x000848, "Member 'AB_DtB_FloatingRift_C::Electricity_Spark_Zaps_Audio_Component' has a wrong offset!");
 static_assert(offsetof(AB_DtB_FloatingRift_C, Dtb_rift_ground_04) == 0x000850, "Member 'AB_DtB_FloatingRift_C::Dtb_rift_ground_04' has a wrong offset!");

@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function DailyRewardsItem.DailyRewardsItem_C.ExecuteUbergraph_DailyRewardsItem
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem final
 {
 public:
@@ -26,8 +26,8 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable3;                               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -36,21 +36,22 @@ public:
 	float                                         Temp_float_Variable2;                              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable5;                               // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Temp_struct_Variable3;                             // 0x0038(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Temp_struct_Variable4;                             // 0x0040(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Temp_struct_Variable3;                             // 0x0038(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Temp_struct_Variable4;                             // 0x0040(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable6;                               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable5;                             // 0x004C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable6;                             // 0x005C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable5;                             // 0x004C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable6;                             // 0x005C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable7;                               // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable7;                             // 0x0070(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable8;                             // 0x0080(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable7;                             // 0x0070(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable8;                             // 0x0080(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              K2Node_Select2_Default;                            // 0x0094(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select2_Default;                            // 0x0094(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00A0(0x0018)()
-	struct FLinearColor                           K2Node_Select3_Default;                            // 0x00B8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select3_Default;                            // 0x00B8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -63,14 +64,14 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E5[0x3];                                       // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select5_Default;                            // 0x00E8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select5_Default;                            // 0x00E8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select6_Default;                            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select7_Default;                            // 0x00FC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select7_Default;                            // 0x00FC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select8_Default;                            // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem) == 0x11821300, "Wrong alignment on DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem");
-static_assert(sizeof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem) == 0x11821300, "Wrong size on DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem");
+static_assert(alignof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem) == 0x000008, "Wrong alignment on DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem");
+static_assert(sizeof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem) == 0x000110, "Wrong size on DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem");
 static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, EntryPoint) == 0x000000, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::EntryPoint' has a wrong offset!");
 static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable) == 0x000004, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable2) == 0x000005, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable2' has a wrong offset!");

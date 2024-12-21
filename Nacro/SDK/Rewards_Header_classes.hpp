@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Rewards_Header.Rewards_Header_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class URewards_Header_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       AnimFadeSubHeader;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderSubHeader;                                   // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextBlockHeader;                                   // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 		return GetDefaultObjImpl<URewards_Header_C>();
 	}
 };
-static_assert(alignof(URewards_Header_C) == 0x322CBBB8, "Wrong alignment on URewards_Header_C");
-static_assert(sizeof(URewards_Header_C) == 0x322CBBB8, "Wrong size on URewards_Header_C");
+static_assert(alignof(URewards_Header_C) == 0x000008, "Wrong alignment on URewards_Header_C");
+static_assert(sizeof(URewards_Header_C) == 0x000270, "Wrong size on URewards_Header_C");
 static_assert(offsetof(URewards_Header_C, UberGraphFrame) == 0x000238, "Member 'URewards_Header_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URewards_Header_C, AnimFadeSubHeader) == 0x000240, "Member 'URewards_Header_C::AnimFadeSubHeader' has a wrong offset!");
 static_assert(offsetof(URewards_Header_C, BorderSubHeader) == 0x000248, "Member 'URewards_Header_C::BorderSubHeader' has a wrong offset!");

@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.ExecuteUbergraph_BluGlow_MorphAnimation
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation final
 {
 public:
@@ -28,7 +28,7 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0018(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Sin_ReturnValue;                          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,12 +36,13 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Sin_ReturnValue2;                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue4;              // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0040(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0050(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0040(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0050(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation) == 0x11821D80, "Wrong alignment on BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation");
-static_assert(sizeof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation) == 0x11821D80, "Wrong size on BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation");
+static_assert(alignof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation) == 0x000008, "Wrong alignment on BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation");
+static_assert(sizeof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation) == 0x0000E0, "Wrong size on BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation");
 static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, EntryPoint) == 0x000000, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Add_IntInt_ReturnValue2) == 0x000008, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");

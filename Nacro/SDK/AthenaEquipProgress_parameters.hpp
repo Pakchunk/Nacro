@@ -18,12 +18,12 @@ namespace SDK::Params
 {
 
 // Function AthenaEquipProgress.AthenaEquipProgress_C.ExecuteUbergraph_AthenaEquipProgress
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,7 +36,7 @@ public:
 	class FName                                   K2Node_CustomEvent_CueName;                        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_CustomEvent_EventType;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_CustomEvent_Parameters;                     // 0x0070(0x11827600)(ConstParm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_CustomEvent_Parameters;                     // 0x0070(0x00B8)(ConstParm, ContainsInstancedReference)
 	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -45,8 +45,8 @@ public:
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue2;        // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress) == 0x11827900, "Wrong alignment on AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress");
-static_assert(sizeof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress) == 0x11827900, "Wrong size on AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress");
+static_assert(alignof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress) == 0x000008, "Wrong alignment on AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress");
+static_assert(sizeof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress) == 0x000150, "Wrong size on AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress");
 static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, EntryPoint) == 0x000000, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_Event_MyGeometry) == 0x000004, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_Event_MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, K2Node_Event_InDeltaTime) == 0x000038, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::K2Node_Event_InDeltaTime' has a wrong offset!");
@@ -68,31 +68,31 @@ static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgres
 static_assert(offsetof(AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00014C, "Member 'AthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function AthenaEquipProgress.AthenaEquipProgress_C.OnUIGameplayCue_Event_0
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct AthenaEquipProgress_C_OnUIGameplayCue_Event_0 final
 {
 public:
 	class FName                                   CueName;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             EventType;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0010(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(AthenaEquipProgress_C_OnUIGameplayCue_Event_0) == 0x11821C00, "Wrong alignment on AthenaEquipProgress_C_OnUIGameplayCue_Event_0");
-static_assert(sizeof(AthenaEquipProgress_C_OnUIGameplayCue_Event_0) == 0x11821C00, "Wrong size on AthenaEquipProgress_C_OnUIGameplayCue_Event_0");
+static_assert(alignof(AthenaEquipProgress_C_OnUIGameplayCue_Event_0) == 0x000008, "Wrong alignment on AthenaEquipProgress_C_OnUIGameplayCue_Event_0");
+static_assert(sizeof(AthenaEquipProgress_C_OnUIGameplayCue_Event_0) == 0x0000C8, "Wrong size on AthenaEquipProgress_C_OnUIGameplayCue_Event_0");
 static_assert(offsetof(AthenaEquipProgress_C_OnUIGameplayCue_Event_0, CueName) == 0x000000, "Member 'AthenaEquipProgress_C_OnUIGameplayCue_Event_0::CueName' has a wrong offset!");
 static_assert(offsetof(AthenaEquipProgress_C_OnUIGameplayCue_Event_0, EventType) == 0x000008, "Member 'AthenaEquipProgress_C_OnUIGameplayCue_Event_0::EventType' has a wrong offset!");
 static_assert(offsetof(AthenaEquipProgress_C_OnUIGameplayCue_Event_0, Parameters) == 0x000010, "Member 'AthenaEquipProgress_C_OnUIGameplayCue_Event_0::Parameters' has a wrong offset!");
 
 // Function AthenaEquipProgress.AthenaEquipProgress_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AthenaEquipProgress_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaEquipProgress_C_Tick) == 0x11827900, "Wrong alignment on AthenaEquipProgress_C_Tick");
-static_assert(sizeof(AthenaEquipProgress_C_Tick) == 0x11827900, "Wrong size on AthenaEquipProgress_C_Tick");
+static_assert(alignof(AthenaEquipProgress_C_Tick) == 0x000004, "Wrong alignment on AthenaEquipProgress_C_Tick");
+static_assert(sizeof(AthenaEquipProgress_C_Tick) == 0x000038, "Wrong size on AthenaEquipProgress_C_Tick");
 static_assert(offsetof(AthenaEquipProgress_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaEquipProgress_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaEquipProgress_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaEquipProgress_C_Tick::InDeltaTime' has a wrong offset!");
 

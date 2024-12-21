@@ -20,16 +20,16 @@ namespace SDK::Params
 {
 
 // Function DailyRewardsSchedule.DailyRewardsSchedule_C.ExecuteUbergraph_DailyRewardsSchedule
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0178 (0x0178 - 0x0000)
 struct DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0050(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0050(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ZeroConstructor, ReferenceParm)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A8(0x0018)()
@@ -45,10 +45,10 @@ public:
 	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue3;     // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x010C(0x11829280)(NoDestructor)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x010C(0x0008)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x011C(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x011C(0x0010)(NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12D[0x3];                                      // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -56,19 +56,19 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_13A[0x6];                                      // 0x013A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item;                           // 0x0140(0x1182E980)(NoDestructor)
+	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item;                           // 0x0140(0x0010)(NoDestructor)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_155[0x3];                                      // 0x0155(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item2;                          // 0x0158(0x1182E980)(NoDestructor)
+	struct FFortDailyRewardsItemData              CallFunc_Array_Get_Item2;                          // 0x0158(0x0010)(NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue2;             // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule) == 0x322CBBB8, "Wrong alignment on DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule");
-static_assert(sizeof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule) == 0x322CBBB8, "Wrong size on DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule");
+static_assert(alignof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule) == 0x000008, "Wrong alignment on DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule");
+static_assert(sizeof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule) == 0x000178, "Wrong size on DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, EntryPoint) == 0x000000, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::EntryPoint' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
@@ -107,14 +107,14 @@ static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSched
 static_assert(offsetof(DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000174, "Member 'DailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function DailyRewardsSchedule.DailyRewardsSchedule_C.PreConstruct
-// 0x8F8100 (0x8F8100 - 0x0000)
-struct alignas(0x8F8100) DailyRewardsSchedule_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct DailyRewardsSchedule_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DailyRewardsSchedule_C_PreConstruct) == 0x8F8100, "Wrong alignment on DailyRewardsSchedule_C_PreConstruct");
-static_assert(sizeof(DailyRewardsSchedule_C_PreConstruct) == 0x8F8100, "Wrong size on DailyRewardsSchedule_C_PreConstruct");
+static_assert(alignof(DailyRewardsSchedule_C_PreConstruct) == 0x000001, "Wrong alignment on DailyRewardsSchedule_C_PreConstruct");
+static_assert(sizeof(DailyRewardsSchedule_C_PreConstruct) == 0x000001, "Wrong size on DailyRewardsSchedule_C_PreConstruct");
 static_assert(offsetof(DailyRewardsSchedule_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'DailyRewardsSchedule_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }

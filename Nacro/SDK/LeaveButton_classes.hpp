@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LeaveButton.LeaveButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x0298 - 0x0238)
 class ULeaveButton_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      Leave;                                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   OnClicked;                                         // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   Update_Visibility;                                 // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -69,8 +69,8 @@ public:
 		return GetDefaultObjImpl<ULeaveButton_C>();
 	}
 };
-static_assert(alignof(ULeaveButton_C) == 0x322CBBB8, "Wrong alignment on ULeaveButton_C");
-static_assert(sizeof(ULeaveButton_C) == 0x322CBBB8, "Wrong size on ULeaveButton_C");
+static_assert(alignof(ULeaveButton_C) == 0x000008, "Wrong alignment on ULeaveButton_C");
+static_assert(sizeof(ULeaveButton_C) == 0x000298, "Wrong size on ULeaveButton_C");
 static_assert(offsetof(ULeaveButton_C, UberGraphFrame) == 0x000238, "Member 'ULeaveButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULeaveButton_C, Leave) == 0x000240, "Member 'ULeaveButton_C::Leave' has a wrong offset!");
 static_assert(offsetof(ULeaveButton_C, OnClicked) == 0x000248, "Member 'ULeaveButton_C::OnClicked' has a wrong offset!");

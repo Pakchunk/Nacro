@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function PerksList.PerksList_C.ExecuteUbergraph_PerksList
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct PerksList_C_ExecuteUbergraph_PerksList final
 {
 public:
@@ -35,7 +35,7 @@ public:
 	class UPerkDivider_C*                         CallFunc_Create_ReturnValue5;                      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue3;       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue4;       // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUIPerk                            K2Node_Event_FortPerk;                             // 0x0058(0x1182E980)()
+	struct FFortUIPerk                            K2Node_Event_FortPerk;                             // 0x0058(0x0088)()
 	class UFortPerkWidget_NUI*                    K2Node_Event_PerkWidget;                           // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPerkWidgetNew_C*                       K2Node_DynamicCast_AsPerk_Widget_New;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -53,7 +53,7 @@ public:
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue8;       // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPerkUnlocked_ReturnValue;               // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIPerkTier                        K2Node_Event_FortPerkTier;                         // 0x0148(0x1182E980)(NoDestructor)
+	struct FFortUIPerkTier                        K2Node_Event_FortPerkTier;                         // 0x0148(0x0020)(NoDestructor)
 	class UFortPerkTierWidget_NUI*                K2Node_Event_PerkTierWidget;                       // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPerkTierWidgetNew_C*                   K2Node_DynamicCast_AsPerk_Tier_Widget_New;         // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,8 +61,8 @@ public:
 	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue2;                    // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerksList_C_ExecuteUbergraph_PerksList) == 0x1182E980, "Wrong alignment on PerksList_C_ExecuteUbergraph_PerksList");
-static_assert(sizeof(PerksList_C_ExecuteUbergraph_PerksList) == 0x1182E980, "Wrong size on PerksList_C_ExecuteUbergraph_PerksList");
+static_assert(alignof(PerksList_C_ExecuteUbergraph_PerksList) == 0x000008, "Wrong alignment on PerksList_C_ExecuteUbergraph_PerksList");
+static_assert(sizeof(PerksList_C_ExecuteUbergraph_PerksList) == 0x000190, "Wrong size on PerksList_C_ExecuteUbergraph_PerksList");
 static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, EntryPoint) == 0x000000, "Member 'PerksList_C_ExecuteUbergraph_PerksList::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_Create_ReturnValue) == 0x000008, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_Create_ReturnValue2) == 0x000010, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_Create_ReturnValue2' has a wrong offset!");
@@ -97,28 +97,28 @@ static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_DynamicCas
 static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_AddChild_ReturnValue2) == 0x000188, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_AddChild_ReturnValue2' has a wrong offset!");
 
 // Function PerksList.PerksList_C.OnGeneratePerk
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct PerksList_C_OnGeneratePerk final
 {
 public:
-	struct FFortUIPerk                            FortPerk;                                          // 0x0000(0x1182E980)(Parm)
+	struct FFortUIPerk                            FortPerk;                                          // 0x0000(0x0088)(Parm)
 	class UFortPerkWidget_NUI*                    PerkWidget;                                        // 0x0088(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerksList_C_OnGeneratePerk) == 0x1182E980, "Wrong alignment on PerksList_C_OnGeneratePerk");
-static_assert(sizeof(PerksList_C_OnGeneratePerk) == 0x1182E980, "Wrong size on PerksList_C_OnGeneratePerk");
+static_assert(alignof(PerksList_C_OnGeneratePerk) == 0x000008, "Wrong alignment on PerksList_C_OnGeneratePerk");
+static_assert(sizeof(PerksList_C_OnGeneratePerk) == 0x000090, "Wrong size on PerksList_C_OnGeneratePerk");
 static_assert(offsetof(PerksList_C_OnGeneratePerk, FortPerk) == 0x000000, "Member 'PerksList_C_OnGeneratePerk::FortPerk' has a wrong offset!");
 static_assert(offsetof(PerksList_C_OnGeneratePerk, PerkWidget) == 0x000088, "Member 'PerksList_C_OnGeneratePerk::PerkWidget' has a wrong offset!");
 
 // Function PerksList.PerksList_C.OnGeneratePerkTier
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct PerksList_C_OnGeneratePerkTier final
 {
 public:
-	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0000(0x1182E980)(Parm, NoDestructor)
+	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0000(0x0020)(Parm, NoDestructor)
 	class UFortPerkTierWidget_NUI*                PerkTierWidget;                                    // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerksList_C_OnGeneratePerkTier) == 0x1182E980, "Wrong alignment on PerksList_C_OnGeneratePerkTier");
-static_assert(sizeof(PerksList_C_OnGeneratePerkTier) == 0x1182E980, "Wrong size on PerksList_C_OnGeneratePerkTier");
+static_assert(alignof(PerksList_C_OnGeneratePerkTier) == 0x000008, "Wrong alignment on PerksList_C_OnGeneratePerkTier");
+static_assert(sizeof(PerksList_C_OnGeneratePerkTier) == 0x000028, "Wrong size on PerksList_C_OnGeneratePerkTier");
 static_assert(offsetof(PerksList_C_OnGeneratePerkTier, FortPerkTier) == 0x000000, "Member 'PerksList_C_OnGeneratePerkTier::FortPerkTier' has a wrong offset!");
 static_assert(offsetof(PerksList_C_OnGeneratePerkTier, PerkTierWidget) == 0x000020, "Member 'PerksList_C_OnGeneratePerkTier::PerkTierWidget' has a wrong offset!");
 

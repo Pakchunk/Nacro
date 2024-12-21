@@ -181,15 +181,15 @@ void URotatorSelector_C::Initialize(const class FText& Display_Text, TArray<clas
 }
 
 
-// Function RotatorSelector.RotatorSelector_C.Center on Widget
+// Function RotatorSelector.RotatorSelector_C.Center On Widget
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void URotatorSelector_C::Center_on_Widget()
+void URotatorSelector_C::Center_On_Widget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RotatorSelector_C", "Center on Widget");
+		Func = Class->GetFunction("RotatorSelector_C", "Center On Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

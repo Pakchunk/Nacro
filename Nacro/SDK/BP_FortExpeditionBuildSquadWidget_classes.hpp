@@ -24,11 +24,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x02B8 (0x06F8 - 0x0440)
 class UBP_FortExpeditionBuildSquadWidget_C final : public UFortExpeditionBuildSquadWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
 	class UBasicRatingWidget_C*                   BasicRatingWidget;                                 // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           BonusSet;                                          // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_FortExpeditionExpiresWidget_C*      BP_FortExpeditionExpiresWidget;                    // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,24 +52,25 @@ public:
 	class UImage*                                 VehicleImage;                                      // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       VehicleName;                                       // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UViewInfoButton_NoText_C*               ViewInfoButton_NoText;                             // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0500(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    ChangeVehicleActon;                                // 0x0510(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    SlotItemAction;                                    // 0x0520(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CloseAction;                                       // 0x0530(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    StartExpeditionAction;                             // 0x0540(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    OpenPickerAction;                                  // 0x0550(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FHomebaseSquad                         Current_Squad_Info;                                // 0x0560(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            NoVehicleBrush;                                    // 0x05E8(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FDataTableRowHandle                    BackInputAction;                                   // 0x0500(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ChangeVehicleActon;                                // 0x0510(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    SlotItemAction;                                    // 0x0520(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CloseAction;                                       // 0x0530(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    StartExpeditionAction;                             // 0x0540(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    OpenPickerAction;                                  // 0x0550(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FHomebaseSquad                         Current_Squad_Info;                                // 0x0560(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            NoVehicleBrush;                                    // 0x05E8(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UClass*                                 Expedition_Pick_Vehicle_Class;                     // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CancelInputActionName;                             // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SelectedSlot;                                      // 0x0688(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_68C[0x4];                                      // 0x068C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInfoWindow_C*                          RewardInfoWindow;                                  // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDialogExternalLatentActionHandle  WaitingForDialogHandle;                            // 0x0698(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FLinearColor                           BuffColor;                                         // 0x069C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DebuffColor;                                       // 0x06AC(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    PurchaseSlotAction;                                // 0x06C0(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    InspectAction;                                     // 0x06D0(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  WaitingForDialogHandle;                            // 0x0698(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FLinearColor                           BuffColor;                                         // 0x069C(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DebuffColor;                                       // 0x06AC(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6BC[0x4];                                      // 0x06BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    PurchaseSlotAction;                                // 0x06C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InspectAction;                                     // 0x06D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class UFortItem*                              InspectItem;                                       // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_ExpeditionSquadSlotsView_C*         CachedExpeditionSquadSlotsView;                    // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USquadSlotItemPicker_C*                 CachedExpeditionSquadSlotPicker;                   // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -162,8 +163,8 @@ public:
 		return GetDefaultObjImpl<UBP_FortExpeditionBuildSquadWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionBuildSquadWidget_C) == 0x322CBBB8, "Wrong alignment on UBP_FortExpeditionBuildSquadWidget_C");
-static_assert(sizeof(UBP_FortExpeditionBuildSquadWidget_C) == 0x322CBBB8, "Wrong size on UBP_FortExpeditionBuildSquadWidget_C");
+static_assert(alignof(UBP_FortExpeditionBuildSquadWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionBuildSquadWidget_C");
+static_assert(sizeof(UBP_FortExpeditionBuildSquadWidget_C) == 0x0006F8, "Wrong size on UBP_FortExpeditionBuildSquadWidget_C");
 static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, UberGraphFrame) == 0x000440, "Member 'UBP_FortExpeditionBuildSquadWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, BasicRatingWidget) == 0x000448, "Member 'UBP_FortExpeditionBuildSquadWidget_C::BasicRatingWidget' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, BonusSet) == 0x000450, "Member 'UBP_FortExpeditionBuildSquadWidget_C::BonusSet' has a wrong offset!");

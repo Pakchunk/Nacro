@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function Cinematic.Cinematic_C.ExecuteUbergraph_Cinematic
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0100 (0x0100 - 0x0000)
 struct Cinematic_C_ExecuteUbergraph_Cinematic final
 {
 public:
@@ -27,11 +27,11 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_HandleClientEvent_EventSource;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x0018(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x0018(0x0020)(ConstParm, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	class UObject*                                K2Node_HandleClientEvent_EventSource2;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus2;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent2;             // 0x0058(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent2;             // 0x0058(0x0020)(ConstParm, NoDestructor)
 	class UFortMediaSubtitlesPlayer*              K2Node_DynamicCast_AsFort_Media_Subtitles_Player;  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -39,7 +39,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Event_Widget;                               // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FContentPushState                      K2Node_Event_State;                                // 0x00A0(0x1182E980)(NoDestructor)
+	struct FContentPushState                      K2Node_Event_State;                                // 0x00A0(0x0003)(NoDestructor)
+	uint8                                         Pad_A3[0x5];                                       // 0x00A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
 	EFortUIState                                  K2Node_Event_PreviousUIState;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortUIState                                  K2Node_Event_NextUIState;                          // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -58,8 +59,8 @@ public:
 	int32                                         CallFunc_GetAudioTrackIndex_AudioTrack;            // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SelectTrack_ReturnValue;                  // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Cinematic_C_ExecuteUbergraph_Cinematic) == 0x1182E980, "Wrong alignment on Cinematic_C_ExecuteUbergraph_Cinematic");
-static_assert(sizeof(Cinematic_C_ExecuteUbergraph_Cinematic) == 0x1182E980, "Wrong size on Cinematic_C_ExecuteUbergraph_Cinematic");
+static_assert(alignof(Cinematic_C_ExecuteUbergraph_Cinematic) == 0x000008, "Wrong alignment on Cinematic_C_ExecuteUbergraph_Cinematic");
+static_assert(sizeof(Cinematic_C_ExecuteUbergraph_Cinematic) == 0x000100, "Wrong size on Cinematic_C_ExecuteUbergraph_Cinematic");
 static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, EntryPoint) == 0x000000, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, K2Node_HandleClientEvent_EventSource) == 0x000008, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_ExecuteUbergraph_Cinematic, K2Node_HandleClientEvent_EventFocus) == 0x000010, "Member 'Cinematic_C_ExecuteUbergraph_Cinematic::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
@@ -112,44 +113,44 @@ static_assert(sizeof(Cinematic_C_OnEnterState) == 0x000001, "Wrong size on Cinem
 static_assert(offsetof(Cinematic_C_OnEnterState, PreviousUIState) == 0x000000, "Member 'Cinematic_C_OnEnterState::PreviousUIState' has a wrong offset!");
 
 // Function Cinematic.Cinematic_C.PushContentWidgetInternal
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct Cinematic_C_PushContentWidgetInternal final
 {
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FContentPushState                      State;                                             // 0x0008(0x1182E980)(Parm, NoDestructor)
+	struct FContentPushState                      State;                                             // 0x0008(0x0003)(Parm, NoDestructor)
 };
-static_assert(alignof(Cinematic_C_PushContentWidgetInternal) == 0x1182E980, "Wrong alignment on Cinematic_C_PushContentWidgetInternal");
-static_assert(sizeof(Cinematic_C_PushContentWidgetInternal) == 0x1182E980, "Wrong size on Cinematic_C_PushContentWidgetInternal");
+static_assert(alignof(Cinematic_C_PushContentWidgetInternal) == 0x000008, "Wrong alignment on Cinematic_C_PushContentWidgetInternal");
+static_assert(sizeof(Cinematic_C_PushContentWidgetInternal) == 0x000010, "Wrong size on Cinematic_C_PushContentWidgetInternal");
 static_assert(offsetof(Cinematic_C_PushContentWidgetInternal, Widget) == 0x000000, "Member 'Cinematic_C_PushContentWidgetInternal::Widget' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_PushContentWidgetInternal, State) == 0x000008, "Member 'Cinematic_C_PushContentWidgetInternal::State' has a wrong offset!");
 
 // Function Cinematic.Cinematic_C.HandleClientEvent_SkipCinematic
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct Cinematic_C_HandleClientEvent_SkipCinematic final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Cinematic_C_HandleClientEvent_SkipCinematic) == 0x11821780, "Wrong alignment on Cinematic_C_HandleClientEvent_SkipCinematic");
-static_assert(sizeof(Cinematic_C_HandleClientEvent_SkipCinematic) == 0x11821780, "Wrong size on Cinematic_C_HandleClientEvent_SkipCinematic");
+static_assert(alignof(Cinematic_C_HandleClientEvent_SkipCinematic) == 0x000008, "Wrong alignment on Cinematic_C_HandleClientEvent_SkipCinematic");
+static_assert(sizeof(Cinematic_C_HandleClientEvent_SkipCinematic) == 0x000030, "Wrong size on Cinematic_C_HandleClientEvent_SkipCinematic");
 static_assert(offsetof(Cinematic_C_HandleClientEvent_SkipCinematic, EventSource) == 0x000000, "Member 'Cinematic_C_HandleClientEvent_SkipCinematic::EventSource' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_HandleClientEvent_SkipCinematic, EventFocus) == 0x000008, "Member 'Cinematic_C_HandleClientEvent_SkipCinematic::EventFocus' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_HandleClientEvent_SkipCinematic, ClientEvent) == 0x000010, "Member 'Cinematic_C_HandleClientEvent_SkipCinematic::ClientEvent' has a wrong offset!");
 
 // Function Cinematic.Cinematic_C.HandleClientEvent_QueueCinematic
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct Cinematic_C_HandleClientEvent_QueueCinematic final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Cinematic_C_HandleClientEvent_QueueCinematic) == 0x11821780, "Wrong alignment on Cinematic_C_HandleClientEvent_QueueCinematic");
-static_assert(sizeof(Cinematic_C_HandleClientEvent_QueueCinematic) == 0x11821780, "Wrong size on Cinematic_C_HandleClientEvent_QueueCinematic");
+static_assert(alignof(Cinematic_C_HandleClientEvent_QueueCinematic) == 0x000008, "Wrong alignment on Cinematic_C_HandleClientEvent_QueueCinematic");
+static_assert(sizeof(Cinematic_C_HandleClientEvent_QueueCinematic) == 0x000030, "Wrong size on Cinematic_C_HandleClientEvent_QueueCinematic");
 static_assert(offsetof(Cinematic_C_HandleClientEvent_QueueCinematic, EventSource) == 0x000000, "Member 'Cinematic_C_HandleClientEvent_QueueCinematic::EventSource' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_HandleClientEvent_QueueCinematic, EventFocus) == 0x000008, "Member 'Cinematic_C_HandleClientEvent_QueueCinematic::EventFocus' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_HandleClientEvent_QueueCinematic, ClientEvent) == 0x000010, "Member 'Cinematic_C_HandleClientEvent_QueueCinematic::ClientEvent' has a wrong offset!");
@@ -195,16 +196,17 @@ static_assert(offsetof(Cinematic_C_SkipMovie, CallFunc_IsPlaying_ReturnValue) ==
 static_assert(offsetof(Cinematic_C_SkipMovie, CallFunc_Pause_ReturnValue) == 0x000009, "Member 'Cinematic_C_SkipMovie::CallFunc_Pause_ReturnValue' has a wrong offset!");
 
 // Function Cinematic.Cinematic_C.PopContentWidgetInternal
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct Cinematic_C_PopContentWidgetInternal final
 {
 public:
-	struct FContentPushState                      State;                                             // 0x0000(0x1182E980)(Parm, NoDestructor)
+	struct FContentPushState                      State;                                             // 0x0000(0x0003)(Parm, NoDestructor)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Cinematic_C_PopContentWidgetInternal) == 0x1182E980, "Wrong alignment on Cinematic_C_PopContentWidgetInternal");
-static_assert(sizeof(Cinematic_C_PopContentWidgetInternal) == 0x1182E980, "Wrong size on Cinematic_C_PopContentWidgetInternal");
+static_assert(alignof(Cinematic_C_PopContentWidgetInternal) == 0x000008, "Wrong alignment on Cinematic_C_PopContentWidgetInternal");
+static_assert(sizeof(Cinematic_C_PopContentWidgetInternal) == 0x000018, "Wrong size on Cinematic_C_PopContentWidgetInternal");
 static_assert(offsetof(Cinematic_C_PopContentWidgetInternal, State) == 0x000000, "Member 'Cinematic_C_PopContentWidgetInternal::State' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_PopContentWidgetInternal, ReturnValue) == 0x000008, "Member 'Cinematic_C_PopContentWidgetInternal::ReturnValue' has a wrong offset!");
 static_assert(offsetof(Cinematic_C_PopContentWidgetInternal, CallFunc_PopWigdet_ReturnValue) == 0x000010, "Member 'Cinematic_C_PopContentWidgetInternal::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");

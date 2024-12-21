@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function SignInWidget.SignInWidget_C.ExecuteUbergraph_SignInWidget
-// 0x093E (0x093E - 0x0000)
-struct alignas(0x93E) SignInWidget_C_ExecuteUbergraph_SignInWidget final
+// 0x0090 (0x0090 - 0x0000)
+struct SignInWidget_C_ExecuteUbergraph_SignInWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,8 +35,8 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SignInWidget_C_ExecuteUbergraph_SignInWidget) == 0x00093E, "Wrong alignment on SignInWidget_C_ExecuteUbergraph_SignInWidget");
-static_assert(sizeof(SignInWidget_C_ExecuteUbergraph_SignInWidget) == 0x00093E, "Wrong size on SignInWidget_C_ExecuteUbergraph_SignInWidget");
+static_assert(alignof(SignInWidget_C_ExecuteUbergraph_SignInWidget) == 0x000008, "Wrong alignment on SignInWidget_C_ExecuteUbergraph_SignInWidget");
+static_assert(sizeof(SignInWidget_C_ExecuteUbergraph_SignInWidget) == 0x000090, "Wrong size on SignInWidget_C_ExecuteUbergraph_SignInWidget");
 static_assert(offsetof(SignInWidget_C_ExecuteUbergraph_SignInWidget, EntryPoint) == 0x000000, "Member 'SignInWidget_C_ExecuteUbergraph_SignInWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SignInWidget_C_ExecuteUbergraph_SignInWidget, K2Node_ComponentBoundEvent_Text4) == 0x000008, "Member 'SignInWidget_C_ExecuteUbergraph_SignInWidget::K2Node_ComponentBoundEvent_Text4' has a wrong offset!");
 static_assert(offsetof(SignInWidget_C_ExecuteUbergraph_SignInWidget, K2Node_ComponentBoundEvent_CommitMethod2) == 0x000020, "Member 'SignInWidget_C_ExecuteUbergraph_SignInWidget::K2Node_ComponentBoundEvent_CommitMethod2' has a wrong offset!");
@@ -49,25 +49,25 @@ static_assert(offsetof(SignInWidget_C_ExecuteUbergraph_SignInWidget, K2Node_Comp
 static_assert(offsetof(SignInWidget_C_ExecuteUbergraph_SignInWidget, K2Node_ComponentBoundEvent_Button) == 0x000088, "Member 'SignInWidget_C_ExecuteUbergraph_SignInWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function SignInWidget.SignInWidget_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x20) SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature) == 0x000020, "Wrong alignment on SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature) == 0x000020, "Wrong size on SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SignInWidget.SignInWidget_C.BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature) == 0x0000E4, "Wrong alignment on SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature) == 0x0000E4, "Wrong size on SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SignInWidget.SignInWidget_C.BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_1_OnEditableTextChangedEvent__DelegateSignature
@@ -93,15 +93,15 @@ static_assert(sizeof(SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundE
 static_assert(offsetof(SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature, Text) == 0x000000, "Member 'SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature::Text' has a wrong offset!");
 
 // Function SignInWidget.SignInWidget_C.BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature final
+// 0x0020 (0x0020 - 0x0000)
+struct SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature final
 {
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
 	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature) == 0x0000E4, "Wrong alignment on SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(sizeof(SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature) == 0x0000E4, "Wrong size on SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(alignof(SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(sizeof(SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature");
 static_assert(offsetof(SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
 static_assert(offsetof(SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'SignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
 
@@ -119,8 +119,8 @@ static_assert(offsetof(SignInWidget_C_BndEvt__PasswordEditText_K2Node_ComponentB
 static_assert(offsetof(SignInWidget_C_BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_86_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'SignInWidget_C_BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_86_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
 
 // Function SignInWidget.SignInWidget_C.HandleTextCommited
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) SignInWidget_C_HandleTextCommited final
+// 0x0038 (0x0038 - 0x0000)
+struct SignInWidget_C_HandleTextCommited final
 {
 public:
 	ETextCommit                                   TextCommitType;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -137,8 +137,8 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select2_Default;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SignInWidget_C_HandleTextCommited) == 0x0000E4, "Wrong alignment on SignInWidget_C_HandleTextCommited");
-static_assert(sizeof(SignInWidget_C_HandleTextCommited) == 0x0000E4, "Wrong size on SignInWidget_C_HandleTextCommited");
+static_assert(alignof(SignInWidget_C_HandleTextCommited) == 0x000008, "Wrong alignment on SignInWidget_C_HandleTextCommited");
+static_assert(sizeof(SignInWidget_C_HandleTextCommited) == 0x000038, "Wrong size on SignInWidget_C_HandleTextCommited");
 static_assert(offsetof(SignInWidget_C_HandleTextCommited, TextCommitType) == 0x000000, "Member 'SignInWidget_C_HandleTextCommited::TextCommitType' has a wrong offset!");
 static_assert(offsetof(SignInWidget_C_HandleTextCommited, HighlightBorder) == 0x000008, "Member 'SignInWidget_C_HandleTextCommited::HighlightBorder' has a wrong offset!");
 static_assert(offsetof(SignInWidget_C_HandleTextCommited, NormalBorder) == 0x000010, "Member 'SignInWidget_C_HandleTextCommited::NormalBorder' has a wrong offset!");

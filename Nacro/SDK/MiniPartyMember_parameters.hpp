@@ -19,20 +19,20 @@ namespace SDK::Params
 {
 
 // Function MiniPartyMember.MiniPartyMember_C.ExecuteUbergraph_MiniPartyMember
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01B8 (0x01B8 - 0x0000)
 struct MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTeamMemberInfo                    K2Node_Event_NewInfo;                              // 0x0008(0x11827900)()
+	struct FFortTeamMemberInfo                    K2Node_Event_NewInfo;                              // 0x0008(0x0190)()
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember) == 0x11821780, "Wrong alignment on MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember");
-static_assert(sizeof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember) == 0x11821780, "Wrong size on MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember");
+static_assert(alignof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember) == 0x000008, "Wrong alignment on MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember");
+static_assert(sizeof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember) == 0x0001B8, "Wrong size on MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember");
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, EntryPoint) == 0x000000, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_Event_NewInfo) == 0x000008, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_Event_NewInfo' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_ComponentBoundEvent_Button3) == 0x000198, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
@@ -41,14 +41,14 @@ static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Nod
 static_assert(offsetof(MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember, K2Node_Event_IsDesignTime) == 0x0001B0, "Member 'MiniPartyMember_C_ExecuteUbergraph_MiniPartyMember::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function MiniPartyMember.MiniPartyMember_C.PreConstruct
-// 0x6640F340 (0x6640F340 - 0x0000)
-struct alignas(0x6640F340) MiniPartyMember_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct MiniPartyMember_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MiniPartyMember_C_PreConstruct) == 0x6640F340, "Wrong alignment on MiniPartyMember_C_PreConstruct");
-static_assert(sizeof(MiniPartyMember_C_PreConstruct) == 0x6640F340, "Wrong size on MiniPartyMember_C_PreConstruct");
+static_assert(alignof(MiniPartyMember_C_PreConstruct) == 0x000001, "Wrong alignment on MiniPartyMember_C_PreConstruct");
+static_assert(sizeof(MiniPartyMember_C_PreConstruct) == 0x000001, "Wrong size on MiniPartyMember_C_PreConstruct");
 static_assert(offsetof(MiniPartyMember_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'MiniPartyMember_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function MiniPartyMember.MiniPartyMember_C.BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature
@@ -85,14 +85,14 @@ static_assert(sizeof(MiniPartyMember_C_BndEvt__ButtonPartyFinder_K2Node_Componen
 static_assert(offsetof(MiniPartyMember_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MiniPartyMember_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MiniPartyMember.MiniPartyMember_C.OnPlayerInfoChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct MiniPartyMember_C_OnPlayerInfoChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(MiniPartyMember_C_OnPlayerInfoChanged) == 0x11821780, "Wrong alignment on MiniPartyMember_C_OnPlayerInfoChanged");
-static_assert(sizeof(MiniPartyMember_C_OnPlayerInfoChanged) == 0x11821780, "Wrong size on MiniPartyMember_C_OnPlayerInfoChanged");
+static_assert(alignof(MiniPartyMember_C_OnPlayerInfoChanged) == 0x000008, "Wrong alignment on MiniPartyMember_C_OnPlayerInfoChanged");
+static_assert(sizeof(MiniPartyMember_C_OnPlayerInfoChanged) == 0x000190, "Wrong size on MiniPartyMember_C_OnPlayerInfoChanged");
 static_assert(offsetof(MiniPartyMember_C_OnPlayerInfoChanged, NewInfo) == 0x000000, "Member 'MiniPartyMember_C_OnPlayerInfoChanged::NewInfo' has a wrong offset!");
 
 // Function MiniPartyMember.MiniPartyMember_C.ShowConnected
@@ -107,17 +107,17 @@ static_assert(sizeof(MiniPartyMember_C_ShowConnected) == 0x000001, "Wrong size o
 static_assert(offsetof(MiniPartyMember_C_ShowConnected, CallFunc_GetLeaderVisibility_ReturnValue) == 0x000000, "Member 'MiniPartyMember_C_ShowConnected::CallFunc_GetLeaderVisibility_ReturnValue' has a wrong offset!");
 
 // Function MiniPartyMember.MiniPartyMember_C.UpdateMemberInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct MiniPartyMember_C_UpdateMemberInfo final
 {
 public:
-	struct FFortTeamMemberInfo                    NewMemberInfo;                                     // 0x0000(0x11827900)(Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    NewMemberInfo;                                     // 0x0000(0x0190)(Parm, OutParm, ReferenceParm)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortPartyMemberDisplayState                  CallFunc_GetPartyMemberDisplayState_ReturnValue;   // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MiniPartyMember_C_UpdateMemberInfo) == 0x11821780, "Wrong alignment on MiniPartyMember_C_UpdateMemberInfo");
-static_assert(sizeof(MiniPartyMember_C_UpdateMemberInfo) == 0x11821780, "Wrong size on MiniPartyMember_C_UpdateMemberInfo");
+static_assert(alignof(MiniPartyMember_C_UpdateMemberInfo) == 0x000008, "Wrong alignment on MiniPartyMember_C_UpdateMemberInfo");
+static_assert(sizeof(MiniPartyMember_C_UpdateMemberInfo) == 0x0001A0, "Wrong size on MiniPartyMember_C_UpdateMemberInfo");
 static_assert(offsetof(MiniPartyMember_C_UpdateMemberInfo, NewMemberInfo) == 0x000000, "Member 'MiniPartyMember_C_UpdateMemberInfo::NewMemberInfo' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_UpdateMemberInfo, CallFunc_GetContext_ReturnValue) == 0x000190, "Member 'MiniPartyMember_C_UpdateMemberInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_UpdateMemberInfo, CallFunc_GetPartyMemberDisplayState_ReturnValue) == 0x000198, "Member 'MiniPartyMember_C_UpdateMemberInfo::CallFunc_GetPartyMemberDisplayState_ReturnValue' has a wrong offset!");
@@ -166,7 +166,7 @@ static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, K2Node_DynamicCast_bSu
 static_assert(offsetof(MiniPartyMember_C_OpenPartyFinder, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'MiniPartyMember_C_OpenPartyFinder::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MiniPartyMember.MiniPartyMember_C.HandleMouseHoverVisualState
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct MiniPartyMember_C_HandleMouseHoverVisualState final
 {
 public:
@@ -176,10 +176,10 @@ public:
 	class UObject*                                Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                Temp_object_Variable2;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0020(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0020(0x0090)()
 };
-static_assert(alignof(MiniPartyMember_C_HandleMouseHoverVisualState) == 0x11827900, "Wrong alignment on MiniPartyMember_C_HandleMouseHoverVisualState");
-static_assert(sizeof(MiniPartyMember_C_HandleMouseHoverVisualState) == 0x11827900, "Wrong size on MiniPartyMember_C_HandleMouseHoverVisualState");
+static_assert(alignof(MiniPartyMember_C_HandleMouseHoverVisualState) == 0x000008, "Wrong alignment on MiniPartyMember_C_HandleMouseHoverVisualState");
+static_assert(sizeof(MiniPartyMember_C_HandleMouseHoverVisualState) == 0x0000B0, "Wrong size on MiniPartyMember_C_HandleMouseHoverVisualState");
 static_assert(offsetof(MiniPartyMember_C_HandleMouseHoverVisualState, Hover) == 0x000000, "Member 'MiniPartyMember_C_HandleMouseHoverVisualState::Hover' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_HandleMouseHoverVisualState, Temp_bool_Variable) == 0x000001, "Member 'MiniPartyMember_C_HandleMouseHoverVisualState::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(MiniPartyMember_C_HandleMouseHoverVisualState, Temp_object_Variable) == 0x000008, "Member 'MiniPartyMember_C_HandleMouseHoverVisualState::Temp_object_Variable' has a wrong offset!");

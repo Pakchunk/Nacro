@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function MovieWidget.MovieWidget_C.ExecuteUbergraph_MovieWidget
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct MovieWidget_C_ExecuteUbergraph_MovieWidget final
 {
 public:
@@ -28,11 +28,11 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         K2Node_Event_NewWidth;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_NewHeight;                            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0028(0x322CBBB8)()
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0028(0x0090)()
 };
-static_assert(alignof(MovieWidget_C_ExecuteUbergraph_MovieWidget) == 0x11827900, "Wrong alignment on MovieWidget_C_ExecuteUbergraph_MovieWidget");
-static_assert(sizeof(MovieWidget_C_ExecuteUbergraph_MovieWidget) == 0x11827900, "Wrong size on MovieWidget_C_ExecuteUbergraph_MovieWidget");
+static_assert(alignof(MovieWidget_C_ExecuteUbergraph_MovieWidget) == 0x000008, "Wrong alignment on MovieWidget_C_ExecuteUbergraph_MovieWidget");
+static_assert(sizeof(MovieWidget_C_ExecuteUbergraph_MovieWidget) == 0x0000B8, "Wrong size on MovieWidget_C_ExecuteUbergraph_MovieWidget");
 static_assert(offsetof(MovieWidget_C_ExecuteUbergraph_MovieWidget, EntryPoint) == 0x000000, "Member 'MovieWidget_C_ExecuteUbergraph_MovieWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MovieWidget_C_ExecuteUbergraph_MovieWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MovieWidget_C_ExecuteUbergraph_MovieWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(MovieWidget_C_ExecuteUbergraph_MovieWidget, K2Node_Event_NewWidth) == 0x000018, "Member 'MovieWidget_C_ExecuteUbergraph_MovieWidget::K2Node_Event_NewWidth' has a wrong offset!");
@@ -71,19 +71,19 @@ static_assert(offsetof(MovieWidget_C_Init, K2Node_CreateDelegate_OutputDelegate)
 static_assert(offsetof(MovieWidget_C_Init, CallFunc_HasPlayerForSource_ReturnValue) == 0x000020, "Member 'MovieWidget_C_Init::CallFunc_HasPlayerForSource_ReturnValue' has a wrong offset!");
 
 // Function MovieWidget.MovieWidget_C.Play
-// 0x670064 (0x670064 - 0x0000)
-struct alignas(0x670064) MovieWidget_C_Play final
+// 0x0001 (0x0001 - 0x0000)
+struct MovieWidget_C_Play final
 {
 public:
 	bool                                          ShouldRewind;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MovieWidget_C_Play) == 0x670064, "Wrong alignment on MovieWidget_C_Play");
-static_assert(sizeof(MovieWidget_C_Play) == 0x670064, "Wrong size on MovieWidget_C_Play");
+static_assert(alignof(MovieWidget_C_Play) == 0x000001, "Wrong alignment on MovieWidget_C_Play");
+static_assert(sizeof(MovieWidget_C_Play) == 0x000001, "Wrong size on MovieWidget_C_Play");
 static_assert(offsetof(MovieWidget_C_Play, ShouldRewind) == 0x000000, "Member 'MovieWidget_C_Play::ShouldRewind' has a wrong offset!");
 
 // Function MovieWidget.MovieWidget_C.SetDelayedContentValues
-// 0x003E (0x003E - 0x0000)
-struct alignas(0x1F) MovieWidget_C_SetDelayedContentValues final
+// 0x0028 (0x0028 - 0x0000)
+struct MovieWidget_C_SetDelayedContentValues final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -97,8 +97,8 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMediaTexture*                          CallFunc_GetMediaTexture_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MovieWidget_C_SetDelayedContentValues) == 0x00001F, "Wrong alignment on MovieWidget_C_SetDelayedContentValues");
-static_assert(sizeof(MovieWidget_C_SetDelayedContentValues) == 0x00003E, "Wrong size on MovieWidget_C_SetDelayedContentValues");
+static_assert(alignof(MovieWidget_C_SetDelayedContentValues) == 0x000008, "Wrong alignment on MovieWidget_C_SetDelayedContentValues");
+static_assert(sizeof(MovieWidget_C_SetDelayedContentValues) == 0x000028, "Wrong size on MovieWidget_C_SetDelayedContentValues");
 static_assert(offsetof(MovieWidget_C_SetDelayedContentValues, Temp_bool_Variable) == 0x000000, "Member 'MovieWidget_C_SetDelayedContentValues::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(MovieWidget_C_SetDelayedContentValues, Temp_byte_Variable) == 0x000001, "Member 'MovieWidget_C_SetDelayedContentValues::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(MovieWidget_C_SetDelayedContentValues, Temp_byte_Variable2) == 0x000002, "Member 'MovieWidget_C_SetDelayedContentValues::Temp_byte_Variable2' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionDetailsModifierRow.MissionDetailsModifierRow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A8 (0x02D8 - 0x0230)
 class UMissionDetailsModifierRow_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Intro;                                             // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonLazyImage*                       ImageModifier;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBoxIcon;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UMissionDetailsModifierRow_C>();
 	}
 };
-static_assert(alignof(UMissionDetailsModifierRow_C) == 0x322CBBB8, "Wrong alignment on UMissionDetailsModifierRow_C");
-static_assert(sizeof(UMissionDetailsModifierRow_C) == 0x322CBBB8, "Wrong size on UMissionDetailsModifierRow_C");
+static_assert(alignof(UMissionDetailsModifierRow_C) == 0x000008, "Wrong alignment on UMissionDetailsModifierRow_C");
+static_assert(sizeof(UMissionDetailsModifierRow_C) == 0x0002D8, "Wrong size on UMissionDetailsModifierRow_C");
 static_assert(offsetof(UMissionDetailsModifierRow_C, UberGraphFrame) == 0x000230, "Member 'UMissionDetailsModifierRow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionDetailsModifierRow_C, Intro) == 0x000238, "Member 'UMissionDetailsModifierRow_C::Intro' has a wrong offset!");
 static_assert(offsetof(UMissionDetailsModifierRow_C, ImageModifier) == 0x000240, "Member 'UMissionDetailsModifierRow_C::ImageModifier' has a wrong offset!");

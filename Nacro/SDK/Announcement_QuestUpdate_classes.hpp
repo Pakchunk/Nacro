@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Announcement_QuestUpdate.Announcement_QuestUpdate_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0250 - 0x0240)
 class UAnnouncement_QuestUpdate_C final : public UFortAnnouncementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UQuestUpdateEntry_C*                    QuestUpdateEntry;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UAnnouncement_QuestUpdate_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_QuestUpdate_C) == 0x322CBBB8, "Wrong alignment on UAnnouncement_QuestUpdate_C");
-static_assert(sizeof(UAnnouncement_QuestUpdate_C) == 0x322CBBB8, "Wrong size on UAnnouncement_QuestUpdate_C");
+static_assert(alignof(UAnnouncement_QuestUpdate_C) == 0x000008, "Wrong alignment on UAnnouncement_QuestUpdate_C");
+static_assert(sizeof(UAnnouncement_QuestUpdate_C) == 0x000250, "Wrong size on UAnnouncement_QuestUpdate_C");
 static_assert(offsetof(UAnnouncement_QuestUpdate_C, UberGraphFrame) == 0x000240, "Member 'UAnnouncement_QuestUpdate_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_QuestUpdate_C, QuestUpdateEntry) == 0x000248, "Member 'UAnnouncement_QuestUpdate_C::QuestUpdateEntry' has a wrong offset!");
 

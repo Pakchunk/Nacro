@@ -15,15 +15,15 @@ namespace SDK::Params
 {
 
 // Function AthenaInventoryDragVisual.AthenaInventoryDragVisual_C.ExecuteUbergraph_AthenaInventoryDragVisual
-// 0x00A5 (0x00A5 - 0x0000)
-struct alignas(0xA5) AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual) == 0x0000A5, "Wrong alignment on AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual");
-static_assert(sizeof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual) == 0x0000A5, "Wrong size on AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual");
+static_assert(alignof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual) == 0x000004, "Wrong alignment on AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual");
+static_assert(sizeof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual) == 0x000008, "Wrong size on AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual");
 static_assert(offsetof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual, EntryPoint) == 0x000000, "Member 'AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual, K2Node_Event_IsDesignTime) == 0x000004, "Member 'AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual::K2Node_Event_IsDesignTime' has a wrong offset!");
 

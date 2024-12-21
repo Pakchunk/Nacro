@@ -330,18 +330,19 @@ static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowVideoOptions_Retur
 static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowControllerOptions_ReturnValue) == 0x000091, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowControllerOptions_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnPreviewMouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0320 (0x0320 - 0x0000)
 struct OptionsMenu_C_OnPreviewMouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x11821D80)(HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0180(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0180(0x00B8)()
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x11827900)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x00B8)()
 	int32                                         Temp_int_Variable;                                 // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2FC[0x4];                                      // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -353,8 +354,8 @@ public:
 	uint8                                         Pad_31A[0x2];                                      // 0x031A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnPreviewMouseButtonDown) == 0x11829280, "Wrong alignment on OptionsMenu_C_OnPreviewMouseButtonDown");
-static_assert(sizeof(OptionsMenu_C_OnPreviewMouseButtonDown) == 0x11829280, "Wrong size on OptionsMenu_C_OnPreviewMouseButtonDown");
+static_assert(alignof(OptionsMenu_C_OnPreviewMouseButtonDown) == 0x000008, "Wrong alignment on OptionsMenu_C_OnPreviewMouseButtonDown");
+static_assert(sizeof(OptionsMenu_C_OnPreviewMouseButtonDown) == 0x000320, "Wrong size on OptionsMenu_C_OnPreviewMouseButtonDown");
 static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, MyGeometry) == 0x000000, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, MouseEvent) == 0x000038, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::ReturnValue' has a wrong offset!");
@@ -371,20 +372,21 @@ static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_LessEqua
 static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_Add_IntInt_ReturnValue) == 0x00031C, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnMouseWheel
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0310 (0x0310 - 0x0000)
 struct OptionsMenu_C_OnMouseWheel final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
 	float                                         CallFunc_PointerEvent_GetWheelDelta_ReturnValue;   // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x11827900)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x00B8)()
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22A[0x6];                                      // 0x022A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0230(0x11827900)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0230(0x00B8)()
 	int32                                         Temp_int_Variable;                                 // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2EC[0x4];                                      // 0x02EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -396,8 +398,8 @@ public:
 	uint8                                         Pad_30A[0x2];                                      // 0x030A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnMouseWheel) == 0x11829280, "Wrong alignment on OptionsMenu_C_OnMouseWheel");
-static_assert(sizeof(OptionsMenu_C_OnMouseWheel) == 0x11829280, "Wrong size on OptionsMenu_C_OnMouseWheel");
+static_assert(alignof(OptionsMenu_C_OnMouseWheel) == 0x000008, "Wrong alignment on OptionsMenu_C_OnMouseWheel");
+static_assert(sizeof(OptionsMenu_C_OnMouseWheel) == 0x000310, "Wrong size on OptionsMenu_C_OnMouseWheel");
 static_assert(offsetof(OptionsMenu_C_OnMouseWheel, MyGeometry) == 0x000000, "Member 'OptionsMenu_C_OnMouseWheel::MyGeometry' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_OnMouseWheel, MouseEvent) == 0x000038, "Member 'OptionsMenu_C_OnMouseWheel::MouseEvent' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_OnMouseWheel, ReturnValue) == 0x0000B0, "Member 'OptionsMenu_C_OnMouseWheel::ReturnValue' has a wrong offset!");
@@ -415,18 +417,19 @@ static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_LessEqual_IntInt_Ret
 static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_Add_IntInt_ReturnValue) == 0x00030C, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnPreviewKeyDown
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x02E8 (0x02E8 - 0x0000)
 struct OptionsMenu_C_OnPreviewKeyDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x11827900)(Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0078(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0130(0x11821D80)(HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0148(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0040)(Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0078(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0130(0x0018)(HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0148(0x00B8)()
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0208(0x11827900)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0208(0x00B8)()
 	int32                                         Temp_int_Variable;                                 // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -438,8 +441,8 @@ public:
 	uint8                                         Pad_2E2[0x2];                                      // 0x02E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnPreviewKeyDown) == 0x11827900, "Wrong alignment on OptionsMenu_C_OnPreviewKeyDown");
-static_assert(sizeof(OptionsMenu_C_OnPreviewKeyDown) == 0x11827900, "Wrong size on OptionsMenu_C_OnPreviewKeyDown");
+static_assert(alignof(OptionsMenu_C_OnPreviewKeyDown) == 0x000008, "Wrong alignment on OptionsMenu_C_OnPreviewKeyDown");
+static_assert(sizeof(OptionsMenu_C_OnPreviewKeyDown) == 0x0002E8, "Wrong size on OptionsMenu_C_OnPreviewKeyDown");
 static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, MyGeometry) == 0x000000, "Member 'OptionsMenu_C_OnPreviewKeyDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, InKeyEvent) == 0x000038, "Member 'OptionsMenu_C_OnPreviewKeyDown::InKeyEvent' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, ReturnValue) == 0x000078, "Member 'OptionsMenu_C_OnPreviewKeyDown::ReturnValue' has a wrong offset!");
@@ -562,7 +565,7 @@ static_assert(offsetof(OptionsMenu_C_HandleBack, CallFunc_GetUIManagerWidget_Ret
 
 // Function OptionsMenu.OptionsMenu_C.Set Input Action Handlers
 // 0x0060 (0x0060 - 0x0000)
-struct OptionsMenu_C_Set_Input_Action_Handlers final
+struct alignas(0x08) OptionsMenu_C_Set_Input_Action_Handlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
@@ -572,7 +575,7 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate6;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_Set_Input_Action_Handlers) == 0x000004, "Wrong alignment on OptionsMenu_C_Set_Input_Action_Handlers");
+static_assert(alignof(OptionsMenu_C_Set_Input_Action_Handlers) == 0x000008, "Wrong alignment on OptionsMenu_C_Set_Input_Action_Handlers");
 static_assert(sizeof(OptionsMenu_C_Set_Input_Action_Handlers) == 0x000060, "Wrong size on OptionsMenu_C_Set_Input_Action_Handlers");
 static_assert(offsetof(OptionsMenu_C_Set_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'OptionsMenu_C_Set_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_Set_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'OptionsMenu_C_Set_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -633,22 +636,22 @@ static_assert(offsetof(OptionsMenu_C_HandleCursorModeChanging, CallFunc_GetInput
 static_assert(offsetof(OptionsMenu_C_HandleCursorModeChanging, CallFunc_BooleanAND_ReturnValue) == 0x000020, "Member 'OptionsMenu_C_HandleCursorModeChanging::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.AddTab
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct OptionsMenu_C_AddTab final
 {
 public:
 	class UClass*                                 WidgetClass;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   DisplayName;                                       // 0x0008(0x0018)(Parm)
 	class FName                                   NameId;                                            // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo;          // 0x0028(0x1182E980)()
+	struct FFortTabButtonLabelInfo                K2Node_MakeStruct_FortTabButtonLabelInfo;          // 0x0028(0x00A8)()
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortOptionsTab*                        CallFunc_Create_ReturnValue;                       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RegisterFortTab_ReturnValue;              // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_AddTab) == 0x1182E980, "Wrong alignment on OptionsMenu_C_AddTab");
-static_assert(sizeof(OptionsMenu_C_AddTab) == 0x1182E980, "Wrong size on OptionsMenu_C_AddTab");
+static_assert(alignof(OptionsMenu_C_AddTab) == 0x000008, "Wrong alignment on OptionsMenu_C_AddTab");
+static_assert(sizeof(OptionsMenu_C_AddTab) == 0x0000F0, "Wrong size on OptionsMenu_C_AddTab");
 static_assert(offsetof(OptionsMenu_C_AddTab, WidgetClass) == 0x000000, "Member 'OptionsMenu_C_AddTab::WidgetClass' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_AddTab, DisplayName) == 0x000008, "Member 'OptionsMenu_C_AddTab::DisplayName' has a wrong offset!");
 static_assert(offsetof(OptionsMenu_C_AddTab, NameId) == 0x000020, "Member 'OptionsMenu_C_AddTab::NameId' has a wrong offset!");

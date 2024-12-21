@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-PowerToastGlow.Border-PowerToastGlow_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusPowerToastGlow_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusPowerToastGlow_C>();
 	}
 };
-static_assert(alignof(UBorderMinusPowerToastGlow_C) == 0x11827900, "Wrong alignment on UBorderMinusPowerToastGlow_C");
-static_assert(sizeof(UBorderMinusPowerToastGlow_C) == 0x11827900, "Wrong size on UBorderMinusPowerToastGlow_C");
+static_assert(alignof(UBorderMinusPowerToastGlow_C) == 0x000008, "Wrong alignment on UBorderMinusPowerToastGlow_C");
+static_assert(sizeof(UBorderMinusPowerToastGlow_C) == 0x0000B8, "Wrong size on UBorderMinusPowerToastGlow_C");
 
 }
 

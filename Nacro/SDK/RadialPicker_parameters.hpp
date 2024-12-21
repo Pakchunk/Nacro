@@ -21,14 +21,14 @@ namespace SDK::Params
 {
 
 // Function RadialPicker.RadialPicker_C.ExecuteUbergraph_RadialPicker
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct RadialPicker_C_ExecuteUbergraph_RadialPicker final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -70,9 +70,9 @@ public:
 	bool                                          CallFunc_GetMousePosition_ReturnValue;             // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x00E0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x00E0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_DegAtan2_ReturnValue;                     // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Divide_Vector2DFloat_ReturnValue;         // 0x00EC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Divide_Vector2DFloat_ReturnValue;         // 0x00EC(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -105,8 +105,8 @@ public:
 	class UFortPickerContext*                     CallFunc_GetContext_ReturnValue3;                  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate5;             // 0x0170(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(RadialPicker_C_ExecuteUbergraph_RadialPicker) == 0x11827900, "Wrong alignment on RadialPicker_C_ExecuteUbergraph_RadialPicker");
-static_assert(sizeof(RadialPicker_C_ExecuteUbergraph_RadialPicker) == 0x11827900, "Wrong size on RadialPicker_C_ExecuteUbergraph_RadialPicker");
+static_assert(alignof(RadialPicker_C_ExecuteUbergraph_RadialPicker) == 0x000008, "Wrong alignment on RadialPicker_C_ExecuteUbergraph_RadialPicker");
+static_assert(sizeof(RadialPicker_C_ExecuteUbergraph_RadialPicker) == 0x000180, "Wrong size on RadialPicker_C_ExecuteUbergraph_RadialPicker");
 static_assert(offsetof(RadialPicker_C_ExecuteUbergraph_RadialPicker, EntryPoint) == 0x000000, "Member 'RadialPicker_C_ExecuteUbergraph_RadialPicker::EntryPoint' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_ExecuteUbergraph_RadialPicker, CallFunc_GetVisibility_ReturnValue) == 0x000004, "Member 'RadialPicker_C_ExecuteUbergraph_RadialPicker::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_ExecuteUbergraph_RadialPicker, K2Node_Event_MyGeometry) == 0x000008, "Member 'RadialPicker_C_ExecuteUbergraph_RadialPicker::K2Node_Event_MyGeometry' has a wrong offset!");
@@ -188,20 +188,20 @@ static_assert(sizeof(RadialPicker_C_AcceptChosenOption) == 0x000004, "Wrong size
 static_assert(offsetof(RadialPicker_C_AcceptChosenOption, PickerOption) == 0x000000, "Member 'RadialPicker_C_AcceptChosenOption::PickerOption' has a wrong offset!");
 
 // Function RadialPicker.RadialPicker_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct RadialPicker_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RadialPicker_C_Tick) == 0x11827900, "Wrong alignment on RadialPicker_C_Tick");
-static_assert(sizeof(RadialPicker_C_Tick) == 0x11827900, "Wrong size on RadialPicker_C_Tick");
+static_assert(alignof(RadialPicker_C_Tick) == 0x000004, "Wrong alignment on RadialPicker_C_Tick");
+static_assert(sizeof(RadialPicker_C_Tick) == 0x000038, "Wrong size on RadialPicker_C_Tick");
 static_assert(offsetof(RadialPicker_C_Tick, MyGeometry) == 0x000000, "Member 'RadialPicker_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_Tick, InDeltaTime) == 0x000034, "Member 'RadialPicker_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function RadialPicker.RadialPicker_C.InitializePicker
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct RadialPicker_C_InitializePicker final
 {
 public:
@@ -210,7 +210,8 @@ public:
 	int32                                         InitialOption;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x000C(0x11827900)(NoDestructor)
+	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x000C(0x0010)(NoDestructor)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class URadialPickerItem_C*                    CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -225,7 +226,7 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetOptionPosition_Position;               // 0x0064(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetOptionPosition_Position;               // 0x0064(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x006E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -244,12 +245,12 @@ public:
 	bool                                          CallFunc_GetRadialPickerOptionItem_bOptionEnabled; // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetRadialPickerOptionImageAndLabel_Label; // 0x00B8(0x0018)()
-	struct FSlateBrush                            CallFunc_GetRadialPickerOptionImageAndLabel_Brush; // 0x00D0(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetRadialPickerOptionImageAndLabel_Brush; // 0x00D0(0x0090)()
 	bool                                          CallFunc_GetRadialPickerOptionImageAndLabel_bOptionEnabled; // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RadialPicker_C_InitializePicker) == 0x11827900, "Wrong alignment on RadialPicker_C_InitializePicker");
-static_assert(sizeof(RadialPicker_C_InitializePicker) == 0x11827900, "Wrong size on RadialPicker_C_InitializePicker");
+static_assert(alignof(RadialPicker_C_InitializePicker) == 0x000008, "Wrong alignment on RadialPicker_C_InitializePicker");
+static_assert(sizeof(RadialPicker_C_InitializePicker) == 0x000168, "Wrong size on RadialPicker_C_InitializePicker");
 static_assert(offsetof(RadialPicker_C_InitializePicker, PickerMode_0) == 0x000000, "Member 'RadialPicker_C_InitializePicker::PickerMode_0' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_InitializePicker, InitialOption) == 0x000004, "Member 'RadialPicker_C_InitializePicker::InitialOption' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_InitializePicker, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000008, "Member 'RadialPicker_C_InitializePicker::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
@@ -286,21 +287,21 @@ static_assert(offsetof(RadialPicker_C_InitializePicker, CallFunc_GetRadialPicker
 static_assert(offsetof(RadialPicker_C_InitializePicker, CallFunc_Less_IntInt_ReturnValue2) == 0x000161, "Member 'RadialPicker_C_InitializePicker::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function RadialPicker.RadialPicker_C.GetOptionPosition
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct RadialPicker_C_GetOptionPosition final
 {
 public:
 	int32                                         Option;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Position;                                          // 0x0004(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Position;                                          // 0x0004(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetOptionAngle_Angle;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_DegCos_ReturnValue;                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_DegSin_ReturnValue;                       // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RadialPicker_C_GetOptionPosition) == 0x11821300, "Wrong alignment on RadialPicker_C_GetOptionPosition");
-static_assert(sizeof(RadialPicker_C_GetOptionPosition) == 0x11821300, "Wrong size on RadialPicker_C_GetOptionPosition");
+static_assert(alignof(RadialPicker_C_GetOptionPosition) == 0x000004, "Wrong alignment on RadialPicker_C_GetOptionPosition");
+static_assert(sizeof(RadialPicker_C_GetOptionPosition) == 0x000028, "Wrong size on RadialPicker_C_GetOptionPosition");
 static_assert(offsetof(RadialPicker_C_GetOptionPosition, Option) == 0x000000, "Member 'RadialPicker_C_GetOptionPosition::Option' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_GetOptionPosition, Position) == 0x000004, "Member 'RadialPicker_C_GetOptionPosition::Position' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_GetOptionPosition, CallFunc_GetOptionAngle_Angle) == 0x00000C, "Member 'RadialPicker_C_GetOptionPosition::CallFunc_GetOptionAngle_Angle' has a wrong offset!");
@@ -311,8 +312,8 @@ static_assert(offsetof(RadialPicker_C_GetOptionPosition, CallFunc_Multiply_Float
 static_assert(offsetof(RadialPicker_C_GetOptionPosition, CallFunc_MakeVector2D_ReturnValue) == 0x000020, "Member 'RadialPicker_C_GetOptionPosition::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 
 // Function RadialPicker.RadialPicker_C.GetAngleDifference
-// 0x0078 (0x0078 - 0x0000)
-struct alignas(0x78) RadialPicker_C_GetAngleDifference final
+// 0x0024 (0x0024 - 0x0000)
+struct RadialPicker_C_GetAngleDifference final
 {
 public:
 	float                                         AngleA;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -326,8 +327,8 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue2;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RadialPicker_C_GetAngleDifference) == 0x000078, "Wrong alignment on RadialPicker_C_GetAngleDifference");
-static_assert(sizeof(RadialPicker_C_GetAngleDifference) == 0x000078, "Wrong size on RadialPicker_C_GetAngleDifference");
+static_assert(alignof(RadialPicker_C_GetAngleDifference) == 0x000004, "Wrong alignment on RadialPicker_C_GetAngleDifference");
+static_assert(sizeof(RadialPicker_C_GetAngleDifference) == 0x000024, "Wrong size on RadialPicker_C_GetAngleDifference");
 static_assert(offsetof(RadialPicker_C_GetAngleDifference, AngleA) == 0x000000, "Member 'RadialPicker_C_GetAngleDifference::AngleA' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_GetAngleDifference, AngleB) == 0x000004, "Member 'RadialPicker_C_GetAngleDifference::AngleB' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_GetAngleDifference, Difference) == 0x000008, "Member 'RadialPicker_C_GetAngleDifference::Difference' has a wrong offset!");
@@ -442,18 +443,18 @@ static_assert(offsetof(RadialPicker_C_ResetInput, CallFunc_GetContext_ReturnValu
 static_assert(offsetof(RadialPicker_C_ResetInput, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'RadialPicker_C_ResetInput::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
 
 // Function RadialPicker.RadialPicker_C.MoveActiveOption
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct RadialPicker_C_MoveActiveOption final
 {
 public:
 	int32                                         MoveOptionDirection;                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NewActiveOption;                                   // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x0008(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetViewportScale_ReturnValue;             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Divide_Vector2DFloat_ReturnValue;         // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Divide_Vector2DFloat_ReturnValue;         // 0x0014(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetOptionPosition_Position;               // 0x0024(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetOptionPosition_Position;               // 0x0024(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X2;                         // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y2;                         // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsGamepadInPickerDeadZone_bIsInDeadZone;  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -479,8 +480,8 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue2;              // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RadialPicker_C_MoveActiveOption) == 0x11821300, "Wrong alignment on RadialPicker_C_MoveActiveOption");
-static_assert(sizeof(RadialPicker_C_MoveActiveOption) == 0x11821300, "Wrong size on RadialPicker_C_MoveActiveOption");
+static_assert(alignof(RadialPicker_C_MoveActiveOption) == 0x000008, "Wrong alignment on RadialPicker_C_MoveActiveOption");
+static_assert(sizeof(RadialPicker_C_MoveActiveOption) == 0x000088, "Wrong size on RadialPicker_C_MoveActiveOption");
 static_assert(offsetof(RadialPicker_C_MoveActiveOption, MoveOptionDirection) == 0x000000, "Member 'RadialPicker_C_MoveActiveOption::MoveOptionDirection' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_MoveActiveOption, NewActiveOption) == 0x000004, "Member 'RadialPicker_C_MoveActiveOption::NewActiveOption' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_MoveActiveOption, CallFunc_GetViewportSize_ReturnValue) == 0x000008, "Member 'RadialPicker_C_MoveActiveOption::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
@@ -512,7 +513,7 @@ static_assert(offsetof(RadialPicker_C_MoveActiveOption, CallFunc_GetContext_Retu
 static_assert(offsetof(RadialPicker_C_MoveActiveOption, CallFunc_IsUsingGamepad_ReturnValue2) == 0x000080, "Member 'RadialPicker_C_MoveActiveOption::CallFunc_IsUsingGamepad_ReturnValue2' has a wrong offset!");
 
 // Function RadialPicker.RadialPicker_C.SetPointerDirection
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct RadialPicker_C_SetPointerDirection final
 {
 public:
@@ -521,11 +522,11 @@ public:
 	float                                         CallFunc_DegCos_ReturnValue;                       // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FWidgetTransform                       K2Node_MakeStruct_WidgetTransform;                 // 0x001C(0x11827900)(NoDestructor)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0014(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FWidgetTransform                       K2Node_MakeStruct_WidgetTransform;                 // 0x001C(0x001C)(NoDestructor)
 };
-static_assert(alignof(RadialPicker_C_SetPointerDirection) == 0x11827900, "Wrong alignment on RadialPicker_C_SetPointerDirection");
-static_assert(sizeof(RadialPicker_C_SetPointerDirection) == 0x11827900, "Wrong size on RadialPicker_C_SetPointerDirection");
+static_assert(alignof(RadialPicker_C_SetPointerDirection) == 0x000004, "Wrong alignment on RadialPicker_C_SetPointerDirection");
+static_assert(sizeof(RadialPicker_C_SetPointerDirection) == 0x000038, "Wrong size on RadialPicker_C_SetPointerDirection");
 static_assert(offsetof(RadialPicker_C_SetPointerDirection, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000000, "Member 'RadialPicker_C_SetPointerDirection::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_SetPointerDirection, CallFunc_DegSin_ReturnValue) == 0x000004, "Member 'RadialPicker_C_SetPointerDirection::CallFunc_DegSin_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_SetPointerDirection, CallFunc_DegCos_ReturnValue) == 0x000008, "Member 'RadialPicker_C_SetPointerDirection::CallFunc_DegCos_ReturnValue' has a wrong offset!");
@@ -535,14 +536,15 @@ static_assert(offsetof(RadialPicker_C_SetPointerDirection, CallFunc_MakeVector2D
 static_assert(offsetof(RadialPicker_C_SetPointerDirection, K2Node_MakeStruct_WidgetTransform) == 0x00001C, "Member 'RadialPicker_C_SetPointerDirection::K2Node_MakeStruct_WidgetTransform' has a wrong offset!");
 
 // Function RadialPicker.RadialPicker_C.SetShowMouseCursor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct RadialPicker_C_SetShowMouseCursor final
 {
 public:
 	bool                                          InShowMouseCursor;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Divide_Vector2DFloat_ReturnValue;         // 0x000C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetViewportSize_ReturnValue;              // 0x0004(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Divide_Vector2DFloat_ReturnValue;         // 0x000C(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -550,8 +552,8 @@ public:
 	int32                                         CallFunc_FTrunc_ReturnValue2;                      // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RadialPicker_C_SetShowMouseCursor) == 0x11821300, "Wrong alignment on RadialPicker_C_SetShowMouseCursor");
-static_assert(sizeof(RadialPicker_C_SetShowMouseCursor) == 0x11821300, "Wrong size on RadialPicker_C_SetShowMouseCursor");
+static_assert(alignof(RadialPicker_C_SetShowMouseCursor) == 0x000008, "Wrong alignment on RadialPicker_C_SetShowMouseCursor");
+static_assert(sizeof(RadialPicker_C_SetShowMouseCursor) == 0x000038, "Wrong size on RadialPicker_C_SetShowMouseCursor");
 static_assert(offsetof(RadialPicker_C_SetShowMouseCursor, InShowMouseCursor) == 0x000000, "Member 'RadialPicker_C_SetShowMouseCursor::InShowMouseCursor' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_SetShowMouseCursor, CallFunc_GetViewportSize_ReturnValue) == 0x000004, "Member 'RadialPicker_C_SetShowMouseCursor::CallFunc_GetViewportSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_SetShowMouseCursor, CallFunc_Divide_Vector2DFloat_ReturnValue) == 0x00000C, "Member 'RadialPicker_C_SetShowMouseCursor::CallFunc_Divide_Vector2DFloat_ReturnValue' has a wrong offset!");
@@ -563,7 +565,7 @@ static_assert(offsetof(RadialPicker_C_SetShowMouseCursor, CallFunc_FTrunc_Return
 static_assert(offsetof(RadialPicker_C_SetShowMouseCursor, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000030, "Member 'RadialPicker_C_SetShowMouseCursor::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
 
 // Function RadialPicker.RadialPicker_C.IsGamepadInPickerDeadZone
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct RadialPicker_C_IsGamepadInPickerDeadZone final
 {
 public:
@@ -572,12 +574,12 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetInputAnalogStickState_StickX;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetInputAnalogStickState_StickY;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0018(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize2DSquared_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RadialPicker_C_IsGamepadInPickerDeadZone) == 0x11821300, "Wrong alignment on RadialPicker_C_IsGamepadInPickerDeadZone");
-static_assert(sizeof(RadialPicker_C_IsGamepadInPickerDeadZone) == 0x11821300, "Wrong size on RadialPicker_C_IsGamepadInPickerDeadZone");
+static_assert(alignof(RadialPicker_C_IsGamepadInPickerDeadZone) == 0x000008, "Wrong alignment on RadialPicker_C_IsGamepadInPickerDeadZone");
+static_assert(sizeof(RadialPicker_C_IsGamepadInPickerDeadZone) == 0x000028, "Wrong size on RadialPicker_C_IsGamepadInPickerDeadZone");
 static_assert(offsetof(RadialPicker_C_IsGamepadInPickerDeadZone, bIsInDeadZone) == 0x000000, "Member 'RadialPicker_C_IsGamepadInPickerDeadZone::bIsInDeadZone' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_IsGamepadInPickerDeadZone, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'RadialPicker_C_IsGamepadInPickerDeadZone::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RadialPicker_C_IsGamepadInPickerDeadZone, CallFunc_GetInputAnalogStickState_StickX) == 0x000010, "Member 'RadialPicker_C_IsGamepadInPickerDeadZone::CallFunc_GetInputAnalogStickState_StickX' has a wrong offset!");

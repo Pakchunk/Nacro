@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MiniPartyMember.MiniPartyMember_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01F0 (0x0450 - 0x0260)
 class UMiniPartyMember_C final : public UFortPlayerTrackerBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ButtonPartyFinder;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               ConnectedOverlay;                                  // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               ConnectingSizeBox;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -34,7 +34,7 @@ public:
 	class UImage*                                 OpenImage;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               OverlayOpen;                                       // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x02B0(0x11827900)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x02B0(0x0190)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class UFortUIManagerWidget_NUI*               UIManager;                                         // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPartyFinder_C*                         PartyFinder;                                       // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -64,8 +64,8 @@ public:
 		return GetDefaultObjImpl<UMiniPartyMember_C>();
 	}
 };
-static_assert(alignof(UMiniPartyMember_C) == 0x322CBBB8, "Wrong alignment on UMiniPartyMember_C");
-static_assert(sizeof(UMiniPartyMember_C) == 0x322CBBB8, "Wrong size on UMiniPartyMember_C");
+static_assert(alignof(UMiniPartyMember_C) == 0x000008, "Wrong alignment on UMiniPartyMember_C");
+static_assert(sizeof(UMiniPartyMember_C) == 0x000450, "Wrong size on UMiniPartyMember_C");
 static_assert(offsetof(UMiniPartyMember_C, UberGraphFrame) == 0x000260, "Member 'UMiniPartyMember_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMiniPartyMember_C, ButtonPartyFinder) == 0x000268, "Member 'UMiniPartyMember_C::ButtonPartyFinder' has a wrong offset!");
 static_assert(offsetof(UMiniPartyMember_C, ConnectedOverlay) == 0x000270, "Member 'UMiniPartyMember_C::ConnectedOverlay' has a wrong offset!");

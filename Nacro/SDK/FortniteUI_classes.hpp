@@ -122,9 +122,8 @@ static_assert(offsetof(UAthenaHUDContext, bPendingAttachToHUD) == 0x000150, "Mem
 static_assert(offsetof(UAthenaHUDContext, LastSelectedInventoryItem) == 0x000154, "Member 'UAthenaHUDContext::LastSelectedInventoryItem' has a wrong offset!");
 
 // Class FortniteUI.AthenaLobbyBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaLobbyBase : public UCommonActivatablePanel
+// 0x0050 (0x0430 - 0x03E0)
+class UAthenaLobbyBase : public UCommonActivatablePanel
 {
 public:
 	uint8                                         Pad_3E0[0x40];                                     // 0x03E0(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
@@ -148,20 +147,20 @@ public:
 		return GetDefaultObjImpl<UAthenaLobbyBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaLobbyBase) == 0x322CBBB8, "Wrong alignment on UAthenaLobbyBase");
-static_assert(sizeof(UAthenaLobbyBase) == 0x322CBBB8, "Wrong size on UAthenaLobbyBase");
+static_assert(alignof(UAthenaLobbyBase) == 0x000008, "Wrong alignment on UAthenaLobbyBase");
+static_assert(sizeof(UAthenaLobbyBase) == 0x000430, "Wrong size on UAthenaLobbyBase");
 static_assert(offsetof(UAthenaLobbyBase, OverlayMain) == 0x000420, "Member 'UAthenaLobbyBase::OverlayMain' has a wrong offset!");
 
 // Class FortniteUI.FortNodeCanvas
-// 0x7200 (0x1182EB00 - 0x11827900)
+// 0x0100 (0x0240 - 0x0140)
 class UFortNodeCanvas final : public UCanvasPanel
 {
 public:
 	uint8                                         Pad_140[0x8];                                      // 0x0140(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   NodePageName;                                      // 0x0148(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDataTableRowHandle                    NodeTypeData;                                      // 0x0150(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              OriginForParallax;                                 // 0x0160(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                    NodeTypeData;                                      // 0x0150(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              OriginForParallax;                                 // 0x0160(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_168[0xD8];                                     // 0x0168(0x00D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void PanToNode(const class FName NodeID, EFortAnimSpeed PanSpeed);
@@ -176,19 +175,19 @@ public:
 		return GetDefaultObjImpl<UFortNodeCanvas>();
 	}
 };
-static_assert(alignof(UFortNodeCanvas) == 0x1182EB00, "Wrong alignment on UFortNodeCanvas");
-static_assert(sizeof(UFortNodeCanvas) == 0x1182EB00, "Wrong size on UFortNodeCanvas");
+static_assert(alignof(UFortNodeCanvas) == 0x000008, "Wrong alignment on UFortNodeCanvas");
+static_assert(sizeof(UFortNodeCanvas) == 0x000240, "Wrong size on UFortNodeCanvas");
 static_assert(offsetof(UFortNodeCanvas, NodePageName) == 0x000148, "Member 'UFortNodeCanvas::NodePageName' has a wrong offset!");
 static_assert(offsetof(UFortNodeCanvas, NodeTypeData) == 0x000150, "Member 'UFortNodeCanvas::NodeTypeData' has a wrong offset!");
 static_assert(offsetof(UFortNodeCanvas, OriginForParallax) == 0x000160, "Member 'UFortNodeCanvas::OriginForParallax' has a wrong offset!");
 
 // Class FortniteUI.FortHUDElementWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortHUDElementWidget : public UCommonUserWidget
+// 0x0028 (0x0260 - 0x0238)
+class UFortHUDElementWidget : public UCommonUserWidget
 {
 public:
-	struct FGameplayTagContainer                  HUDElementTag;                                     // 0x0238(0x11821C00)(Edit, Protected, NativeAccessSpecifierProtected)
+	struct FGameplayTagContainer                  HUDElementTag;                                     // 0x0238(0x0020)(Edit, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_258[0x8];                                      // 0x0258(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void HandleOnHUDElementVisibilityChanged(const struct FGameplayTagContainer& HiddenHUDElementTags);
@@ -203,20 +202,19 @@ public:
 		return GetDefaultObjImpl<UFortHUDElementWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortHUDElementWidget) == 0x322CBBB8, "Wrong alignment on UFortHUDElementWidget");
-static_assert(sizeof(UFortHUDElementWidget) == 0x322CBBB8, "Wrong size on UFortHUDElementWidget");
+static_assert(alignof(UFortHUDElementWidget) == 0x000008, "Wrong alignment on UFortHUDElementWidget");
+static_assert(sizeof(UFortHUDElementWidget) == 0x000260, "Wrong size on UFortHUDElementWidget");
 static_assert(offsetof(UFortHUDElementWidget, HUDElementTag) == 0x000238, "Member 'UFortHUDElementWidget::HUDElementTag' has a wrong offset!");
 
 // Class FortniteUI.FortBangWrapper
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0040 (0x0170 - 0x0130)
 class UFortBangWrapper final : public UContentWidget
 {
 public:
 	uint8                                         Pad_130[0x8];                                      // 0x0130(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	EFortBangSize                                 Size;                                              // 0x0138(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Offset;                                            // 0x013C(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Offset;                                            // 0x013C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortBangType                                 BangType;                                          // 0x0144(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   TutorialNameID;                                    // 0x0148(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -236,8 +234,8 @@ public:
 		return GetDefaultObjImpl<UFortBangWrapper>();
 	}
 };
-static_assert(alignof(UFortBangWrapper) == 0x11827900, "Wrong alignment on UFortBangWrapper");
-static_assert(sizeof(UFortBangWrapper) == 0x11827900, "Wrong size on UFortBangWrapper");
+static_assert(alignof(UFortBangWrapper) == 0x000008, "Wrong alignment on UFortBangWrapper");
+static_assert(sizeof(UFortBangWrapper) == 0x000170, "Wrong size on UFortBangWrapper");
 static_assert(offsetof(UFortBangWrapper, Size) == 0x000138, "Member 'UFortBangWrapper::Size' has a wrong offset!");
 static_assert(offsetof(UFortBangWrapper, Offset) == 0x00013C, "Member 'UFortBangWrapper::Offset' has a wrong offset!");
 static_assert(offsetof(UFortBangWrapper, BangType) == 0x000144, "Member 'UFortBangWrapper::BangType' has a wrong offset!");
@@ -245,9 +243,12 @@ static_assert(offsetof(UFortBangWrapper, TutorialNameID) == 0x000148, "Member 'U
 static_assert(offsetof(UFortBangWrapper, TutorialGlowType) == 0x000150, "Member 'UFortBangWrapper::TutorialGlowType' has a wrong offset!");
 
 // Class FortniteUI.AthenaHUDTeamIndicatorBase
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0010 (0x0128 - 0x0118)
 class UAthenaHUDTeamIndicatorBase final : public UWidget
 {
+public:
+	uint8                                         Pad_118[0x10];                                     // 0x0118(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -258,8 +259,8 @@ public:
 		return GetDefaultObjImpl<UAthenaHUDTeamIndicatorBase>();
 	}
 };
-static_assert(alignof(UAthenaHUDTeamIndicatorBase) == 0x11827900, "Wrong alignment on UAthenaHUDTeamIndicatorBase");
-static_assert(sizeof(UAthenaHUDTeamIndicatorBase) == 0x11827900, "Wrong size on UAthenaHUDTeamIndicatorBase");
+static_assert(alignof(UAthenaHUDTeamIndicatorBase) == 0x000008, "Wrong alignment on UAthenaHUDTeamIndicatorBase");
+static_assert(sizeof(UAthenaHUDTeamIndicatorBase) == 0x000128, "Wrong size on UAthenaHUDTeamIndicatorBase");
 
 // Class FortniteUI.FortTabButtonInterface
 // 0x0000 (0x0028 - 0x0028)
@@ -282,9 +283,8 @@ static_assert(alignof(IFortTabButtonInterface) == 0x000008, "Wrong alignment on 
 static_assert(sizeof(IFortTabButtonInterface) == 0x000028, "Wrong size on IFortTabButtonInterface");
 
 // Class FortniteUI.FortTabListWidgetBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortTabListWidgetBase : public UCommonTabListWidget
+// 0x0060 (0x0360 - 0x0300)
+class UFortTabListWidgetBase : public UCommonTabListWidget
 {
 public:
 	TArray<struct FFortTabListRegistrationInfo>   PreregisteredTabInfoArray;                         // 0x0300(0x0010)(Edit, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
@@ -310,16 +310,14 @@ public:
 		return GetDefaultObjImpl<UFortTabListWidgetBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortTabListWidgetBase) == 0x322CBBB8, "Wrong alignment on UFortTabListWidgetBase");
-static_assert(sizeof(UFortTabListWidgetBase) == 0x322CBBB8, "Wrong size on UFortTabListWidgetBase");
+static_assert(alignof(UFortTabListWidgetBase) == 0x000008, "Wrong alignment on UFortTabListWidgetBase");
+static_assert(sizeof(UFortTabListWidgetBase) == 0x000360, "Wrong size on UFortTabListWidgetBase");
 static_assert(offsetof(UFortTabListWidgetBase, PreregisteredTabInfoArray) == 0x000300, "Member 'UFortTabListWidgetBase::PreregisteredTabInfoArray' has a wrong offset!");
 static_assert(offsetof(UFortTabListWidgetBase, PendingTabLabelInfoMap) == 0x000310, "Member 'UFortTabListWidgetBase::PendingTabLabelInfoMap' has a wrong offset!");
 
 // Class FortniteUI.AthenaInventoryPanelBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaInventoryPanelBase : public UCommonActivatablePanel
+// 0x0070 (0x0450 - 0x03E0)
+class UAthenaInventoryPanelBase : public UCommonActivatablePanel
 {
 public:
 	EInventoryContentSortType                     CurrentSortType;                                   // 0x03E0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -359,18 +357,16 @@ public:
 		return GetDefaultObjImpl<UAthenaInventoryPanelBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaInventoryPanelBase) == 0x322CBBB8, "Wrong alignment on UAthenaInventoryPanelBase");
-static_assert(sizeof(UAthenaInventoryPanelBase) == 0x322CBBB8, "Wrong size on UAthenaInventoryPanelBase");
+static_assert(alignof(UAthenaInventoryPanelBase) == 0x000008, "Wrong alignment on UAthenaInventoryPanelBase");
+static_assert(sizeof(UAthenaInventoryPanelBase) == 0x000450, "Wrong size on UAthenaInventoryPanelBase");
 static_assert(offsetof(UAthenaInventoryPanelBase, CurrentSortType) == 0x0003E0, "Member 'UAthenaInventoryPanelBase::CurrentSortType' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryPanelBase, TileViewLoadGuard) == 0x0003E8, "Member 'UAthenaInventoryPanelBase::TileViewLoadGuard' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryPanelBase, TileView) == 0x0003F0, "Member 'UAthenaInventoryPanelBase::TileView' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryPanelBase, ResourceTiles) == 0x0003F8, "Member 'UAthenaInventoryPanelBase::ResourceTiles' has a wrong offset!");
 
 // Class FortniteUI.AthenaLeaderboardScreenBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaLeaderboardScreenBase : public UCommonActivatablePanel
+// 0x00F0 (0x04D0 - 0x03E0)
+class UAthenaLeaderboardScreenBase : public UCommonActivatablePanel
 {
 public:
 	class UFortTabListWidgetBase*                 LeaderboardTabList;                                // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -383,7 +379,8 @@ public:
 	TArray<class UFortLeaderboardRowProxyInstance*> RowProxies;                                        // 0x0460(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
 	TArray<class UFortLeaderboardRowProxyInstance*> RowProxiesFreeList;                                // 0x0470(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
 	class UFortLeaderboardRowProxyInstance*       LocalUserRowProxy;                                 // 0x0480(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FLeaderboardFilter                     CurrentLeaderboardFilter;                          // 0x0488(0x1182E980)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FLeaderboardFilter                     CurrentLeaderboardFilter;                          // 0x0488(0x0018)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4A0[0x30];                                     // 0x04A0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnActiveLeaderboardTabChanged(int32 ActiveWidgetIndex);
@@ -407,9 +404,8 @@ public:
 		return GetDefaultObjImpl<UAthenaLeaderboardScreenBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaLeaderboardScreenBase) == 0x322CBBB8, "Wrong alignment on UAthenaLeaderboardScreenBase");
-static_assert(sizeof(UAthenaLeaderboardScreenBase) == 0x322CBBB8, "Wrong size on UAthenaLeaderboardScreenBase");
+static_assert(alignof(UAthenaLeaderboardScreenBase) == 0x000008, "Wrong alignment on UAthenaLeaderboardScreenBase");
+static_assert(sizeof(UAthenaLeaderboardScreenBase) == 0x0004D0, "Wrong size on UAthenaLeaderboardScreenBase");
 static_assert(offsetof(UAthenaLeaderboardScreenBase, LeaderboardTabList) == 0x0003E0, "Member 'UAthenaLeaderboardScreenBase::LeaderboardTabList' has a wrong offset!");
 static_assert(offsetof(UAthenaLeaderboardScreenBase, MatchRotator) == 0x0003E8, "Member 'UAthenaLeaderboardScreenBase::MatchRotator' has a wrong offset!");
 static_assert(offsetof(UAthenaLeaderboardScreenBase, LeaderboardTypeRotator) == 0x0003F0, "Member 'UAthenaLeaderboardScreenBase::LeaderboardTypeRotator' has a wrong offset!");
@@ -423,7 +419,7 @@ static_assert(offsetof(UAthenaLeaderboardScreenBase, LocalUserRowProxy) == 0x000
 static_assert(offsetof(UAthenaLeaderboardScreenBase, CurrentLeaderboardFilter) == 0x000488, "Member 'UAthenaLeaderboardScreenBase::CurrentLeaderboardFilter' has a wrong offset!");
 
 // Class FortniteUI.AthenaLootStoreScreenBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x03E0 - 0x03E0)
 class UAthenaLootStoreScreenBase final : public UCommonActivatablePanel
 {
 public:
@@ -436,13 +432,16 @@ public:
 		return GetDefaultObjImpl<UAthenaLootStoreScreenBase>();
 	}
 };
-static_assert(alignof(UAthenaLootStoreScreenBase) == 0x322CBBB8, "Wrong alignment on UAthenaLootStoreScreenBase");
-static_assert(sizeof(UAthenaLootStoreScreenBase) == 0x322CBBB8, "Wrong size on UAthenaLootStoreScreenBase");
+static_assert(alignof(UAthenaLootStoreScreenBase) == 0x000008, "Wrong alignment on UAthenaLootStoreScreenBase");
+static_assert(sizeof(UAthenaLootStoreScreenBase) == 0x0003E0, "Wrong size on UAthenaLootStoreScreenBase");
 
 // Class FortniteUI.AthenaMatchReadyDesktopPopup
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02A0 - 0x0230)
 class UAthenaMatchReadyDesktopPopup final : public UUserWidget
 {
+public:
+	uint8                                         Pad_230[0x70];                                     // 0x0230(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void UserDismissedDialog(bool bBringToFront);
 
@@ -456,13 +455,12 @@ public:
 		return GetDefaultObjImpl<UAthenaMatchReadyDesktopPopup>();
 	}
 };
-static_assert(alignof(UAthenaMatchReadyDesktopPopup) == 0x322CBBB8, "Wrong alignment on UAthenaMatchReadyDesktopPopup");
-static_assert(sizeof(UAthenaMatchReadyDesktopPopup) == 0x322CBBB8, "Wrong size on UAthenaMatchReadyDesktopPopup");
+static_assert(alignof(UAthenaMatchReadyDesktopPopup) == 0x000008, "Wrong alignment on UAthenaMatchReadyDesktopPopup");
+static_assert(sizeof(UAthenaMatchReadyDesktopPopup) == 0x0002A0, "Wrong size on UAthenaMatchReadyDesktopPopup");
 
 // Class FortniteUI.AthenaStatsScreenBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaStatsScreenBase : public UCommonActivatablePanel
+// 0x0090 (0x0470 - 0x03E0)
+class UAthenaStatsScreenBase : public UCommonActivatablePanel
 {
 public:
 	class UCommonTabListWidget*                   StatsTabList;                                      // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -493,9 +491,8 @@ public:
 		return GetDefaultObjImpl<UAthenaStatsScreenBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaStatsScreenBase) == 0x322CBBB8, "Wrong alignment on UAthenaStatsScreenBase");
-static_assert(sizeof(UAthenaStatsScreenBase) == 0x322CBBB8, "Wrong size on UAthenaStatsScreenBase");
+static_assert(alignof(UAthenaStatsScreenBase) == 0x000008, "Wrong alignment on UAthenaStatsScreenBase");
+static_assert(sizeof(UAthenaStatsScreenBase) == 0x000470, "Wrong size on UAthenaStatsScreenBase");
 static_assert(offsetof(UAthenaStatsScreenBase, StatsTabList) == 0x0003E0, "Member 'UAthenaStatsScreenBase::StatsTabList' has a wrong offset!");
 static_assert(offsetof(UAthenaStatsScreenBase, CurrentPlaylistId) == 0x0003E8, "Member 'UAthenaStatsScreenBase::CurrentPlaylistId' has a wrong offset!");
 static_assert(offsetof(UAthenaStatsScreenBase, bWasLastQuerySuccessful) == 0x0003EC, "Member 'UAthenaStatsScreenBase::bWasLastQuerySuccessful' has a wrong offset!");
@@ -545,9 +542,9 @@ static_assert(alignof(UFortAccountStatsContext) == 0x000008, "Wrong alignment on
 static_assert(sizeof(UFortAccountStatsContext) == 0x000028, "Wrong size on UFortAccountStatsContext");
 
 // Class FortniteUI.FortActivatablePanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0408 - 0x03E0)
 #pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortActivatablePanel : public UCommonActivatablePanel
+class alignas(0x08) UFortActivatablePanel : public UCommonActivatablePanel
 {
 public:
 	bool                                          bIsPushedOnToContentPanelStack;                    // 0x03E0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -570,16 +567,15 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UFortActivatablePanel) == 0x322CBBB8, "Wrong alignment on UFortActivatablePanel");
-static_assert(sizeof(UFortActivatablePanel) == 0x322CBBB8, "Wrong size on UFortActivatablePanel");
+static_assert(alignof(UFortActivatablePanel) == 0x000008, "Wrong alignment on UFortActivatablePanel");
+static_assert(sizeof(UFortActivatablePanel) == 0x000408, "Wrong size on UFortActivatablePanel");
 static_assert(offsetof(UFortActivatablePanel, bIsPushedOnToContentPanelStack) == 0x0003E0, "Member 'UFortActivatablePanel::bIsPushedOnToContentPanelStack' has a wrong offset!");
 static_assert(offsetof(UFortActivatablePanel, bIsAlreadyOnContentPanelStack) == 0x0003E1, "Member 'UFortActivatablePanel::bIsAlreadyOnContentPanelStack' has a wrong offset!");
 static_assert(offsetof(UFortActivatablePanel, InputPriority) == 0x0003E2, "Member 'UFortActivatablePanel::InputPriority' has a wrong offset!");
 
 // Class FortniteUI.FortAccountLinkingWindow
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAccountLinkingWindow : public UFortActivatablePanel
+// 0x0038 (0x0440 - 0x0408)
+class UFortAccountLinkingWindow : public UFortActivatablePanel
 {
 public:
 	UMulticastDelegateProperty_                   OnNewPurchaseReceipt;                              // 0x0408(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -600,9 +596,8 @@ public:
 		return GetDefaultObjImpl<UFortAccountLinkingWindow>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAccountLinkingWindow) == 0x322CBBB8, "Wrong alignment on UFortAccountLinkingWindow");
-static_assert(sizeof(UFortAccountLinkingWindow) == 0x322CBBB8, "Wrong size on UFortAccountLinkingWindow");
+static_assert(alignof(UFortAccountLinkingWindow) == 0x000008, "Wrong alignment on UFortAccountLinkingWindow");
+static_assert(sizeof(UFortAccountLinkingWindow) == 0x000440, "Wrong size on UFortAccountLinkingWindow");
 static_assert(offsetof(UFortAccountLinkingWindow, OnNewPurchaseReceipt) == 0x000408, "Member 'UFortAccountLinkingWindow::OnNewPurchaseReceipt' has a wrong offset!");
 static_assert(offsetof(UFortAccountLinkingWindow, FoundersPackStoreCategory) == 0x000418, "Member 'UFortAccountLinkingWindow::FoundersPackStoreCategory' has a wrong offset!");
 static_assert(offsetof(UFortAccountLinkingWindow, bPSPlusHasFreeAccess) == 0x000428, "Member 'UFortAccountLinkingWindow::bPSPlusHasFreeAccess' has a wrong offset!");
@@ -753,9 +748,8 @@ static_assert(offsetof(UFortAsyncAction_CreateHeadlessAccount, OnAccountNotCreat
 static_assert(offsetof(UFortAsyncAction_CreateHeadlessAccount, WorldContextObject) == 0x000048, "Member 'UFortAsyncAction_CreateHeadlessAccount::WorldContextObject' has a wrong offset!");
 
 // Class FortniteUI.FortUserWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortUserWidget : public UUserWidget
+// 0x0010 (0x0240 - 0x0230)
+class UFortUserWidget : public UUserWidget
 {
 public:
 	uint8                                         Pad_230[0x8];                                      // 0x0230(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -776,13 +770,12 @@ public:
 		return GetDefaultObjImpl<UFortUserWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortUserWidget) == 0x322CBBB8, "Wrong alignment on UFortUserWidget");
-static_assert(sizeof(UFortUserWidget) == 0x322CBBB8, "Wrong size on UFortUserWidget");
+static_assert(alignof(UFortUserWidget) == 0x000008, "Wrong alignment on UFortUserWidget");
+static_assert(sizeof(UFortUserWidget) == 0x000240, "Wrong size on UFortUserWidget");
 static_assert(offsetof(UFortUserWidget, bConsumePointerInput) == 0x000238, "Member 'UFortUserWidget::bConsumePointerInput' has a wrong offset!");
 
 // Class FortniteUI.FortListItem
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0240 - 0x0240)
 class UFortListItem final : public UFortUserWidget
 {
 public:
@@ -807,11 +800,11 @@ public:
 		return GetDefaultObjImpl<UFortListItem>();
 	}
 };
-static_assert(alignof(UFortListItem) == 0x322CBBB8, "Wrong alignment on UFortListItem");
-static_assert(sizeof(UFortListItem) == 0x322CBBB8, "Wrong size on UFortListItem");
+static_assert(alignof(UFortListItem) == 0x000008, "Wrong alignment on UFortListItem");
+static_assert(sizeof(UFortListItem) == 0x000240, "Wrong size on UFortListItem");
 
 // Class FortniteUI.FortCollectionBookProgressionRewardDetailInspectWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0248 - 0x0238)
 class UFortCollectionBookProgressionRewardDetailInspectWidget final : public UCommonUserWidget
 {
 public:
@@ -831,18 +824,18 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookProgressionRewardDetailInspectWidget>();
 	}
 };
-static_assert(alignof(UFortCollectionBookProgressionRewardDetailInspectWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookProgressionRewardDetailInspectWidget");
-static_assert(sizeof(UFortCollectionBookProgressionRewardDetailInspectWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookProgressionRewardDetailInspectWidget");
+static_assert(alignof(UFortCollectionBookProgressionRewardDetailInspectWidget) == 0x000008, "Wrong alignment on UFortCollectionBookProgressionRewardDetailInspectWidget");
+static_assert(sizeof(UFortCollectionBookProgressionRewardDetailInspectWidget) == 0x000248, "Wrong size on UFortCollectionBookProgressionRewardDetailInspectWidget");
 static_assert(offsetof(UFortCollectionBookProgressionRewardDetailInspectWidget, LevelTextWidget) == 0x000238, "Member 'UFortCollectionBookProgressionRewardDetailInspectWidget::LevelTextWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookProgressionRewardDetailInspectWidget, RewardWidget) == 0x000240, "Member 'UFortCollectionBookProgressionRewardDetailInspectWidget::RewardWidget' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookProgressionRewardsModalWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x0470 - 0x0408)
 class UFortCollectionBookProgressionRewardsModalWidget final : public UFortActivatablePanel
 {
 public:
 	TSoftClassPtr<class UClass>                   RewardWidgetClass;                                 // 0x0408(0x0020)(Edit, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FMargin                                RewardWidgetPadding;                               // 0x0428(0x322CBBB8)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FMargin                                RewardWidgetPadding;                               // 0x0428(0x0010)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	int32                                         NumRewardsToShow;                                  // 0x0438(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBox*                           RewardBoxWidget;                                   // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -868,8 +861,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookProgressionRewardsModalWidget>();
 	}
 };
-static_assert(alignof(UFortCollectionBookProgressionRewardsModalWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookProgressionRewardsModalWidget");
-static_assert(sizeof(UFortCollectionBookProgressionRewardsModalWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookProgressionRewardsModalWidget");
+static_assert(alignof(UFortCollectionBookProgressionRewardsModalWidget) == 0x000008, "Wrong alignment on UFortCollectionBookProgressionRewardsModalWidget");
+static_assert(sizeof(UFortCollectionBookProgressionRewardsModalWidget) == 0x000470, "Wrong size on UFortCollectionBookProgressionRewardsModalWidget");
 static_assert(offsetof(UFortCollectionBookProgressionRewardsModalWidget, RewardWidgetClass) == 0x000408, "Member 'UFortCollectionBookProgressionRewardsModalWidget::RewardWidgetClass' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookProgressionRewardsModalWidget, RewardWidgetPadding) == 0x000428, "Member 'UFortCollectionBookProgressionRewardsModalWidget::RewardWidgetPadding' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookProgressionRewardsModalWidget, NumRewardsToShow) == 0x000438, "Member 'UFortCollectionBookProgressionRewardsModalWidget::NumRewardsToShow' has a wrong offset!");
@@ -880,7 +873,7 @@ static_assert(offsetof(UFortCollectionBookProgressionRewardsModalWidget, LevelTe
 static_assert(offsetof(UFortCollectionBookProgressionRewardsModalWidget, ButtonGroup) == 0x000460, "Member 'UFortCollectionBookProgressionRewardsModalWidget::ButtonGroup' has a wrong offset!");
 
 // Class FortniteUI.FortChatContainer
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0258 - 0x0240)
 class UFortChatContainer final : public UFortUserWidget
 {
 public:
@@ -906,8 +899,8 @@ public:
 		return GetDefaultObjImpl<UFortChatContainer>();
 	}
 };
-static_assert(alignof(UFortChatContainer) == 0x322CBBB8, "Wrong alignment on UFortChatContainer");
-static_assert(sizeof(UFortChatContainer) == 0x322CBBB8, "Wrong size on UFortChatContainer");
+static_assert(alignof(UFortChatContainer) == 0x000008, "Wrong alignment on UFortChatContainer");
+static_assert(sizeof(UFortChatContainer) == 0x000258, "Wrong size on UFortChatContainer");
 static_assert(offsetof(UFortChatContainer, MinimizeEnabled) == 0x000240, "Member 'UFortChatContainer::MinimizeEnabled' has a wrong offset!");
 static_assert(offsetof(UFortChatContainer, AutoReleaseFocus) == 0x000241, "Member 'UFortChatContainer::AutoReleaseFocus' has a wrong offset!");
 static_assert(offsetof(UFortChatContainer, AllowEmotes) == 0x000242, "Member 'UFortChatContainer::AllowEmotes' has a wrong offset!");
@@ -915,9 +908,8 @@ static_assert(offsetof(UFortChatContainer, ListFadeTime) == 0x000244, "Member 'U
 static_assert(offsetof(UFortChatContainer, MinimizedChatMessageNum) == 0x000248, "Member 'UFortChatContainer::MinimizedChatMessageNum' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookWidget : public UFortActivatablePanel
+// 0x0038 (0x0440 - 0x0408)
+class UFortCollectionBookWidget : public UFortActivatablePanel
 {
 public:
 	class UFortCollectionBookProgressWidget*      ProgressWidget;                                    // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -945,9 +937,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookWidget");
-static_assert(sizeof(UFortCollectionBookWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookWidget");
+static_assert(alignof(UFortCollectionBookWidget) == 0x000008, "Wrong alignment on UFortCollectionBookWidget");
+static_assert(sizeof(UFortCollectionBookWidget) == 0x000440, "Wrong size on UFortCollectionBookWidget");
 static_assert(offsetof(UFortCollectionBookWidget, ProgressWidget) == 0x000408, "Member 'UFortCollectionBookWidget::ProgressWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookWidget, MainWidgetSwitcher) == 0x000410, "Member 'UFortCollectionBookWidget::MainWidgetSwitcher' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookWidget, PrimaryPanelWidget) == 0x000418, "Member 'UFortCollectionBookWidget::PrimaryPanelWidget' has a wrong offset!");
@@ -956,9 +947,8 @@ static_assert(offsetof(UFortCollectionBookWidget, PrimaryPanelIdx) == 0x000428, 
 static_assert(offsetof(UFortCollectionBookWidget, SectionPanelIdx) == 0x00042C, "Member 'UFortCollectionBookWidget::SectionPanelIdx' has a wrong offset!");
 
 // Class FortniteUI.FortErrorWindow
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortErrorWindow : public UFortActivatablePanel
+// 0x0018 (0x0420 - 0x0408)
+class UFortErrorWindow : public UFortActivatablePanel
 {
 public:
 	TSubclassOf<class UCommonUserWidget>          ErrorEntryClass;                                   // 0x0408(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -979,16 +969,14 @@ public:
 		return GetDefaultObjImpl<UFortErrorWindow>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortErrorWindow) == 0x322CBBB8, "Wrong alignment on UFortErrorWindow");
-static_assert(sizeof(UFortErrorWindow) == 0x322CBBB8, "Wrong size on UFortErrorWindow");
+static_assert(alignof(UFortErrorWindow) == 0x000008, "Wrong alignment on UFortErrorWindow");
+static_assert(sizeof(UFortErrorWindow) == 0x000420, "Wrong size on UFortErrorWindow");
 static_assert(offsetof(UFortErrorWindow, ErrorEntryClass) == 0x000408, "Member 'UFortErrorWindow::ErrorEntryClass' has a wrong offset!");
 static_assert(offsetof(UFortErrorWindow, ErrorEntriesPool) == 0x000410, "Member 'UFortErrorWindow::ErrorEntriesPool' has a wrong offset!");
 
 // Class FortniteUI.FortGameFeedbackBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortGameFeedbackBase : public UFortActivatablePanel
+// 0x0098 (0x04A0 - 0x0408)
+class UFortGameFeedbackBase : public UFortActivatablePanel
 {
 public:
 	class UEditableText*                          SubjectEditable;                                   // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -1014,17 +1002,15 @@ public:
 		return GetDefaultObjImpl<UFortGameFeedbackBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortGameFeedbackBase) == 0x322CBBB8, "Wrong alignment on UFortGameFeedbackBase");
-static_assert(sizeof(UFortGameFeedbackBase) == 0x322CBBB8, "Wrong size on UFortGameFeedbackBase");
+static_assert(alignof(UFortGameFeedbackBase) == 0x000008, "Wrong alignment on UFortGameFeedbackBase");
+static_assert(sizeof(UFortGameFeedbackBase) == 0x0004A0, "Wrong size on UFortGameFeedbackBase");
 static_assert(offsetof(UFortGameFeedbackBase, SubjectEditable) == 0x000408, "Member 'UFortGameFeedbackBase::SubjectEditable' has a wrong offset!");
 static_assert(offsetof(UFortGameFeedbackBase, BodyEditable) == 0x000410, "Member 'UFortGameFeedbackBase::BodyEditable' has a wrong offset!");
 static_assert(offsetof(UFortGameFeedbackBase, ButtonGroup) == 0x000418, "Member 'UFortGameFeedbackBase::ButtonGroup' has a wrong offset!");
 
 // Class FortniteUI.FortInfoWindow
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortInfoWindow : public UFortActivatablePanel
+// 0x0008 (0x0410 - 0x0408)
+class UFortInfoWindow : public UFortActivatablePanel
 {
 public:
 	class UCommonListView*                        InfoEntries;                                       // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1042,13 +1028,12 @@ public:
 		return GetDefaultObjImpl<UFortInfoWindow>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortInfoWindow) == 0x322CBBB8, "Wrong alignment on UFortInfoWindow");
-static_assert(sizeof(UFortInfoWindow) == 0x322CBBB8, "Wrong size on UFortInfoWindow");
+static_assert(alignof(UFortInfoWindow) == 0x000008, "Wrong alignment on UFortInfoWindow");
+static_assert(sizeof(UFortInfoWindow) == 0x000410, "Wrong size on UFortInfoWindow");
 static_assert(offsetof(UFortInfoWindow, InfoEntries) == 0x000408, "Member 'UFortInfoWindow::InfoEntries' has a wrong offset!");
 
 // Class FortniteUI.FortItemGroupSlotWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D8 (0x0318 - 0x0240)
 class UFortItemGroupSlotWidget final : public UFortUserWidget
 {
 public:
@@ -1061,7 +1046,7 @@ public:
 	TWeakObjectPtr<class UFortItem>               SlottedItem;                                       // 0x029C(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EFortItemType>                         ItemTypeFilters;                                   // 0x02A8(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  ItemTagFilter;                                     // 0x02B8(0x11821C00)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  ItemTagFilter;                                     // 0x02B8(0x0020)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnItemSlotLockedStateChangedEvent;                 // 0x02D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnItemSetEvent;                                    // 0x02E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnAttributeBonusValueChangedEvent;                 // 0x02F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -1101,8 +1086,8 @@ public:
 		return GetDefaultObjImpl<UFortItemGroupSlotWidget>();
 	}
 };
-static_assert(alignof(UFortItemGroupSlotWidget) == 0x322CBBB8, "Wrong alignment on UFortItemGroupSlotWidget");
-static_assert(sizeof(UFortItemGroupSlotWidget) == 0x322CBBB8, "Wrong size on UFortItemGroupSlotWidget");
+static_assert(alignof(UFortItemGroupSlotWidget) == 0x000008, "Wrong alignment on UFortItemGroupSlotWidget");
+static_assert(sizeof(UFortItemGroupSlotWidget) == 0x000318, "Wrong size on UFortItemGroupSlotWidget");
 static_assert(offsetof(UFortItemGroupSlotWidget, SlotIndexInGroup) == 0x000240, "Member 'UFortItemGroupSlotWidget::SlotIndexInGroup' has a wrong offset!");
 static_assert(offsetof(UFortItemGroupSlotWidget, IsLocked) == 0x000244, "Member 'UFortItemGroupSlotWidget::IsLocked' has a wrong offset!");
 static_assert(offsetof(UFortItemGroupSlotWidget, AttributeBonusValues) == 0x000248, "Member 'UFortItemGroupSlotWidget::AttributeBonusValues' has a wrong offset!");
@@ -1117,15 +1102,15 @@ static_assert(offsetof(UFortItemGroupSlotWidget, HostItemGroupWidget) == 0x00030
 static_assert(offsetof(UFortItemGroupSlotWidget, ItemPickerWidgetType) == 0x000310, "Member 'UFortItemGroupSlotWidget::ItemPickerWidgetType' has a wrong offset!");
 
 // Class FortniteUI.FortMtxOfferData
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x0160 (0x0188 - 0x0028)
 class UFortMtxOfferData final : public UPrimaryDataAsset
 {
 public:
-	struct FSlateBrush                            TileImage;                                         // 0x0028(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            DetailsImage;                                      // 0x00B8(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TileImage;                                         // 0x0028(0x0090)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            DetailsImage;                                      // 0x00B8(0x0090)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	TArray<struct FFortMtxDetailsAttribute>       DetailsAttributes;                                 // 0x0148(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FFortMtxGradient                       Gradient;                                          // 0x0158(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	struct FLinearColor                           Background;                                        // 0x0178(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortMtxGradient                       Gradient;                                          // 0x0158(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FLinearColor                           Background;                                        // 0x0178(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -1137,8 +1122,8 @@ public:
 		return GetDefaultObjImpl<UFortMtxOfferData>();
 	}
 };
-static_assert(alignof(UFortMtxOfferData) == 0x1182E980, "Wrong alignment on UFortMtxOfferData");
-static_assert(sizeof(UFortMtxOfferData) == 0x1182E980, "Wrong size on UFortMtxOfferData");
+static_assert(alignof(UFortMtxOfferData) == 0x000008, "Wrong alignment on UFortMtxOfferData");
+static_assert(sizeof(UFortMtxOfferData) == 0x000188, "Wrong size on UFortMtxOfferData");
 static_assert(offsetof(UFortMtxOfferData, TileImage) == 0x000028, "Member 'UFortMtxOfferData::TileImage' has a wrong offset!");
 static_assert(offsetof(UFortMtxOfferData, DetailsImage) == 0x0000B8, "Member 'UFortMtxOfferData::DetailsImage' has a wrong offset!");
 static_assert(offsetof(UFortMtxOfferData, DetailsAttributes) == 0x000148, "Member 'UFortMtxOfferData::DetailsAttributes' has a wrong offset!");
@@ -1146,13 +1131,12 @@ static_assert(offsetof(UFortMtxOfferData, Gradient) == 0x000158, "Member 'UFortM
 static_assert(offsetof(UFortMtxOfferData, Background) == 0x000178, "Member 'UFortMtxOfferData::Background' has a wrong offset!");
 
 // Class FortniteUI.FortMtxOfferDetailsBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMtxOfferDetailsBase : public UFortActivatablePanel
+// 0x00A8 (0x04B0 - 0x0408)
+class UFortMtxOfferDetailsBase : public UFortActivatablePanel
 {
 public:
 	class UFortMtxOfferData*                      OfferDisplayAsset;                                 // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FMtxPackage                            MtxOffer;                                          // 0x0410(0x11821780)(Transient, NativeAccessSpecifierPrivate)
+	struct FMtxPackage                            MtxOffer;                                          // 0x0410(0x00A0)(Transient, NativeAccessSpecifierPrivate)
 
 public:
 	void UpdateMtxOffer(class UFortMtxStoreOfferBase* MtxOfferWidget);
@@ -1181,17 +1165,18 @@ public:
 		return GetDefaultObjImpl<UFortMtxOfferDetailsBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMtxOfferDetailsBase) == 0x322CBBB8, "Wrong alignment on UFortMtxOfferDetailsBase");
-static_assert(sizeof(UFortMtxOfferDetailsBase) == 0x322CBBB8, "Wrong size on UFortMtxOfferDetailsBase");
+static_assert(alignof(UFortMtxOfferDetailsBase) == 0x000008, "Wrong alignment on UFortMtxOfferDetailsBase");
+static_assert(sizeof(UFortMtxOfferDetailsBase) == 0x0004B0, "Wrong size on UFortMtxOfferDetailsBase");
 static_assert(offsetof(UFortMtxOfferDetailsBase, OfferDisplayAsset) == 0x000408, "Member 'UFortMtxOfferDetailsBase::OfferDisplayAsset' has a wrong offset!");
 static_assert(offsetof(UFortMtxOfferDetailsBase, MtxOffer) == 0x000410, "Member 'UFortMtxOfferDetailsBase::MtxOffer' has a wrong offset!");
 
 // Class FortniteUI.FortPlayerProfileModalWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPlayerProfileModalWidget : public UFortActivatablePanel
+// 0x0008 (0x0410 - 0x0408)
+class UFortPlayerProfileModalWidget : public UFortActivatablePanel
 {
+public:
+	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -1202,9 +1187,8 @@ public:
 		return GetDefaultObjImpl<UFortPlayerProfileModalWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPlayerProfileModalWidget) == 0x322CBBB8, "Wrong alignment on UFortPlayerProfileModalWidget");
-static_assert(sizeof(UFortPlayerProfileModalWidget) == 0x322CBBB8, "Wrong size on UFortPlayerProfileModalWidget");
+static_assert(alignof(UFortPlayerProfileModalWidget) == 0x000008, "Wrong alignment on UFortPlayerProfileModalWidget");
+static_assert(sizeof(UFortPlayerProfileModalWidget) == 0x000410, "Wrong size on UFortPlayerProfileModalWidget");
 
 // Class FortniteUI.FortFrontendInventoryFilterFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -1227,9 +1211,8 @@ static_assert(alignof(UFortFrontendInventoryFilterFunctionLibrary) == 0x000008, 
 static_assert(sizeof(UFortFrontendInventoryFilterFunctionLibrary) == 0x000028, "Wrong size on UFortFrontendInventoryFilterFunctionLibrary");
 
 // Class FortniteUI.FortItemManagementScreen
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemManagementScreen : public UCommonActivatablePanel
+// 0x0330 (0x0710 - 0x03E0)
+class UFortItemManagementScreen : public UCommonActivatablePanel
 {
 public:
 	uint8                                         Pad_3E0[0x2A0];                                    // 0x03E0(0x02A0)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1280,9 +1263,8 @@ public:
 		return GetDefaultObjImpl<UFortItemManagementScreen>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemManagementScreen) == 0x322CBBB8, "Wrong alignment on UFortItemManagementScreen");
-static_assert(sizeof(UFortItemManagementScreen) == 0x322CBBB8, "Wrong size on UFortItemManagementScreen");
+static_assert(alignof(UFortItemManagementScreen) == 0x000008, "Wrong alignment on UFortItemManagementScreen");
+static_assert(sizeof(UFortItemManagementScreen) == 0x000710, "Wrong size on UFortItemManagementScreen");
 static_assert(offsetof(UFortItemManagementScreen, Mode) == 0x000680, "Member 'UFortItemManagementScreen::Mode' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementScreen, FrontendInventoryFilter) == 0x000681, "Member 'UFortItemManagementScreen::FrontendInventoryFilter' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementScreen, ConsumeItemRequestInProgress) == 0x000682, "Member 'UFortItemManagementScreen::ConsumeItemRequestInProgress' has a wrong offset!");
@@ -1408,9 +1390,9 @@ static_assert(alignof(UFortItemViewContext_ExpeditionSquadSlotItemPicker) == 0x0
 static_assert(sizeof(UFortItemViewContext_ExpeditionSquadSlotItemPicker) == 0x000110, "Wrong size on UFortItemViewContext_ExpeditionSquadSlotItemPicker");
 
 // Class FortniteUI.FortSquadManagementScreenBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C0 (0x04C8 - 0x0408)
 #pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadManagementScreenBase : public UFortActivatablePanel
+class alignas(0x08) UFortSquadManagementScreenBase : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x10];                                     // 0x0408(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1418,13 +1400,14 @@ public:
 	class UFortSquadSlotsView*                    SquadSlotsView;                                    // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UFortSquadSlotDetailsPanel*             SelectedSlotDetailsPanel;                          // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UFortSquadSlotItemPicker*               SelectedSlotItemPicker;                            // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    InspectInputActionRowHandle;                       // 0x0438(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    ManageInputActionRowHandle;                        // 0x0448(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    BackInputActionRowHandle;                          // 0x0458(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    InventoryInputActionRowHandle;                     // 0x0468(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    InventoryCloseInputActionRowHandle;                // 0x0478(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    ClosePickerInputActionRowHandle;                   // 0x0488(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    SelectPickerSlotActionRowHandle;                   // 0x0498(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    InspectInputActionRowHandle;                       // 0x0438(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    ManageInputActionRowHandle;                        // 0x0448(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    BackInputActionRowHandle;                          // 0x0458(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    InventoryInputActionRowHandle;                     // 0x0468(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    InventoryCloseInputActionRowHandle;                // 0x0478(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    ClosePickerInputActionRowHandle;                   // 0x0488(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    SelectPickerSlotActionRowHandle;                   // 0x0498(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4A8[0x10];                                     // 0x04A8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemViewContext_SquadSlotsView*    ItemViewContext_SquadSlotsView;                    // 0x04B8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UFortItemViewContext_SquadSlotItemPicker* ItemViewContext_SquadSlotItemPicker;               // 0x04C0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -1459,8 +1442,8 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UFortSquadManagementScreenBase) == 0x322CBBB8, "Wrong alignment on UFortSquadManagementScreenBase");
-static_assert(sizeof(UFortSquadManagementScreenBase) == 0x322CBBB8, "Wrong size on UFortSquadManagementScreenBase");
+static_assert(alignof(UFortSquadManagementScreenBase) == 0x000008, "Wrong alignment on UFortSquadManagementScreenBase");
+static_assert(sizeof(UFortSquadManagementScreenBase) == 0x0004C8, "Wrong size on UFortSquadManagementScreenBase");
 static_assert(offsetof(UFortSquadManagementScreenBase, SquadStatsWidget) == 0x000418, "Member 'UFortSquadManagementScreenBase::SquadStatsWidget' has a wrong offset!");
 static_assert(offsetof(UFortSquadManagementScreenBase, SquadSlotsView) == 0x000420, "Member 'UFortSquadManagementScreenBase::SquadSlotsView' has a wrong offset!");
 static_assert(offsetof(UFortSquadManagementScreenBase, SelectedSlotDetailsPanel) == 0x000428, "Member 'UFortSquadManagementScreenBase::SelectedSlotDetailsPanel' has a wrong offset!");
@@ -1476,12 +1459,11 @@ static_assert(offsetof(UFortSquadManagementScreenBase, ItemViewContext_SquadSlot
 static_assert(offsetof(UFortSquadManagementScreenBase, ItemViewContext_SquadSlotItemPicker) == 0x0004C0, "Member 'UFortSquadManagementScreenBase::ItemViewContext_SquadSlotItemPicker' has a wrong offset!");
 
 // Class FortniteUI.FortHeroSquadManagementScreen
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortHeroSquadManagementScreen : public UFortSquadManagementScreenBase
+// 0x0018 (0x04E0 - 0x04C8)
+class UFortHeroSquadManagementScreen : public UFortSquadManagementScreenBase
 {
 public:
-	struct FDataTableRowHandle                    ManageDefendersInputActionRowHandle;               // 0x04C8(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    ManageDefendersInputActionRowHandle;               // 0x04C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	class UFortHeroSquadBonusPerksWidgetBase*     BonusPerksWidget;                                  // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -1494,14 +1476,13 @@ public:
 		return GetDefaultObjImpl<UFortHeroSquadManagementScreen>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortHeroSquadManagementScreen) == 0x322CBBB8, "Wrong alignment on UFortHeroSquadManagementScreen");
-static_assert(sizeof(UFortHeroSquadManagementScreen) == 0x322CBBB8, "Wrong size on UFortHeroSquadManagementScreen");
+static_assert(alignof(UFortHeroSquadManagementScreen) == 0x000008, "Wrong alignment on UFortHeroSquadManagementScreen");
+static_assert(sizeof(UFortHeroSquadManagementScreen) == 0x0004E0, "Wrong size on UFortHeroSquadManagementScreen");
 static_assert(offsetof(UFortHeroSquadManagementScreen, ManageDefendersInputActionRowHandle) == 0x0004C8, "Member 'UFortHeroSquadManagementScreen::ManageDefendersInputActionRowHandle' has a wrong offset!");
 static_assert(offsetof(UFortHeroSquadManagementScreen, BonusPerksWidget) == 0x0004D8, "Member 'UFortHeroSquadManagementScreen::BonusPerksWidget' has a wrong offset!");
 
 // Class FortniteUI.FortSurvivorSquadManagementScreen
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x04D0 - 0x04C8)
 class UFortSurvivorSquadManagementScreen final : public UFortSquadManagementScreenBase
 {
 public:
@@ -1517,14 +1498,13 @@ public:
 		return GetDefaultObjImpl<UFortSurvivorSquadManagementScreen>();
 	}
 };
-static_assert(alignof(UFortSurvivorSquadManagementScreen) == 0x322CBBB8, "Wrong alignment on UFortSurvivorSquadManagementScreen");
-static_assert(sizeof(UFortSurvivorSquadManagementScreen) == 0x322CBBB8, "Wrong size on UFortSurvivorSquadManagementScreen");
+static_assert(alignof(UFortSurvivorSquadManagementScreen) == 0x000008, "Wrong alignment on UFortSurvivorSquadManagementScreen");
+static_assert(sizeof(UFortSurvivorSquadManagementScreen) == 0x0004D0, "Wrong size on UFortSurvivorSquadManagementScreen");
 static_assert(offsetof(UFortSurvivorSquadManagementScreen, StatMatchesWidget) == 0x0004C8, "Member 'UFortSurvivorSquadManagementScreen::StatMatchesWidget' has a wrong offset!");
 
 // Class FortniteUI.FortSquadSelectorButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadSelectorButton : public UCommonButton
+// 0x0020 (0x08C0 - 0x08A0)
+class UFortSquadSelectorButton : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x10];                                     // 0x08A0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1549,20 +1529,19 @@ public:
 		return GetDefaultObjImpl<UFortSquadSelectorButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadSelectorButton) == 0x322CBBB8, "Wrong alignment on UFortSquadSelectorButton");
-static_assert(sizeof(UFortSquadSelectorButton) == 0x322CBBB8, "Wrong size on UFortSquadSelectorButton");
+static_assert(alignof(UFortSquadSelectorButton) == 0x000008, "Wrong alignment on UFortSquadSelectorButton");
+static_assert(sizeof(UFortSquadSelectorButton) == 0x0008C0, "Wrong size on UFortSquadSelectorButton");
 static_assert(offsetof(UFortSquadSelectorButton, SquadManagementScreenType) == 0x0008B0, "Member 'UFortSquadSelectorButton::SquadManagementScreenType' has a wrong offset!");
 
 // Class FortniteUI.FortSquadTypeLandingPageBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0450 - 0x0408)
 class UFortSquadTypeLandingPageBase final : public UFortActivatablePanel
 {
 public:
 	EFortHomebaseSquadType                        SquadType;                                         // 0x0408(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    ManageInputActionRowHandle;                        // 0x0410(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    BackInputActionRowHandle;                          // 0x0420(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    ManageInputActionRowHandle;                        // 0x0410(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    BackInputActionRowHandle;                          // 0x0420(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	EFortFrontendInventoryFilter                  ItemManagementScreenFilter;                        // 0x0430(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_431[0x7];                                      // 0x0431(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TWeakObjectPtr<class UFortSquadSelectorButton>> SquadSelectorButtons;                              // 0x0438(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
@@ -1584,8 +1563,8 @@ public:
 		return GetDefaultObjImpl<UFortSquadTypeLandingPageBase>();
 	}
 };
-static_assert(alignof(UFortSquadTypeLandingPageBase) == 0x322CBBB8, "Wrong alignment on UFortSquadTypeLandingPageBase");
-static_assert(sizeof(UFortSquadTypeLandingPageBase) == 0x322CBBB8, "Wrong size on UFortSquadTypeLandingPageBase");
+static_assert(alignof(UFortSquadTypeLandingPageBase) == 0x000008, "Wrong alignment on UFortSquadTypeLandingPageBase");
+static_assert(sizeof(UFortSquadTypeLandingPageBase) == 0x000450, "Wrong size on UFortSquadTypeLandingPageBase");
 static_assert(offsetof(UFortSquadTypeLandingPageBase, SquadType) == 0x000408, "Member 'UFortSquadTypeLandingPageBase::SquadType' has a wrong offset!");
 static_assert(offsetof(UFortSquadTypeLandingPageBase, ManageInputActionRowHandle) == 0x000410, "Member 'UFortSquadTypeLandingPageBase::ManageInputActionRowHandle' has a wrong offset!");
 static_assert(offsetof(UFortSquadTypeLandingPageBase, BackInputActionRowHandle) == 0x000420, "Member 'UFortSquadTypeLandingPageBase::BackInputActionRowHandle' has a wrong offset!");
@@ -1593,10 +1572,12 @@ static_assert(offsetof(UFortSquadTypeLandingPageBase, ItemManagementScreenFilter
 static_assert(offsetof(UFortSquadTypeLandingPageBase, SquadSelectorButtons) == 0x000438, "Member 'UFortSquadTypeLandingPageBase::SquadSelectorButtons' has a wrong offset!");
 
 // Class FortniteUI.FortTopBarPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortTopBarPanel : public UFortActivatablePanel
+// 0x0008 (0x0410 - 0x0408)
+class UFortTopBarPanel : public UFortActivatablePanel
 {
+public:
+	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -1607,14 +1588,12 @@ public:
 		return GetDefaultObjImpl<UFortTopBarPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortTopBarPanel) == 0x322CBBB8, "Wrong alignment on UFortTopBarPanel");
-static_assert(sizeof(UFortTopBarPanel) == 0x322CBBB8, "Wrong size on UFortTopBarPanel");
+static_assert(alignof(UFortTopBarPanel) == 0x000008, "Wrong alignment on UFortTopBarPanel");
+static_assert(sizeof(UFortTopBarPanel) == 0x000410, "Wrong size on UFortTopBarPanel");
 
 // Class FortniteUI.FortTwitchLoginModalWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortTwitchLoginModalWidget : public UFortActivatablePanel
+// 0x0008 (0x0410 - 0x0408)
+class UFortTwitchLoginModalWidget : public UFortActivatablePanel
 {
 public:
 	class UNativeWidgetHost*                      NativeHost;                                        // 0x0408(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -1632,17 +1611,17 @@ public:
 		return GetDefaultObjImpl<UFortTwitchLoginModalWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortTwitchLoginModalWidget) == 0x322CBBB8, "Wrong alignment on UFortTwitchLoginModalWidget");
-static_assert(sizeof(UFortTwitchLoginModalWidget) == 0x322CBBB8, "Wrong size on UFortTwitchLoginModalWidget");
+static_assert(alignof(UFortTwitchLoginModalWidget) == 0x000008, "Wrong alignment on UFortTwitchLoginModalWidget");
+static_assert(sizeof(UFortTwitchLoginModalWidget) == 0x000410, "Wrong size on UFortTwitchLoginModalWidget");
 static_assert(offsetof(UFortTwitchLoginModalWidget, NativeHost) == 0x000408, "Member 'UFortTwitchLoginModalWidget::NativeHost' has a wrong offset!");
 
 // Class FortniteUI.FortActorCanvas
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0050 (0x0180 - 0x0130)
 class UFortActorCanvas final : public UPanelWidget
 {
 public:
-	struct FGameplayTagContainer                  DefaultHUDElementTags;                             // 0x0130(0x11821C00)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+	struct FGameplayTagContainer                  DefaultHUDElementTags;                             // 0x0130(0x0020)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_150[0x30];                                     // 0x0150(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UFortActorCanvasSlot* AddActorIndicator(class UFortActorIndicatorWidget* Indicator);
@@ -1658,8 +1637,8 @@ public:
 		return GetDefaultObjImpl<UFortActorCanvas>();
 	}
 };
-static_assert(alignof(UFortActorCanvas) == 0x11827900, "Wrong alignment on UFortActorCanvas");
-static_assert(sizeof(UFortActorCanvas) == 0x11827900, "Wrong size on UFortActorCanvas");
+static_assert(alignof(UFortActorCanvas) == 0x000008, "Wrong alignment on UFortActorCanvas");
+static_assert(sizeof(UFortActorCanvas) == 0x000180, "Wrong size on UFortActorCanvas");
 static_assert(offsetof(UFortActorCanvas, DefaultHUDElementTags) == 0x000130, "Member 'UFortActorCanvas::DefaultHUDElementTags' has a wrong offset!");
 
 // Class FortniteUI.FortActorCanvasSlot
@@ -1694,9 +1673,8 @@ static_assert(offsetof(UFortActorCanvasSlot, VerticalAlignment) == 0x000039, "Me
 static_assert(offsetof(UFortActorCanvasSlot, bCanAutoRemove) == 0x00003A, "Member 'UFortActorCanvasSlot::bCanAutoRemove' has a wrong offset!");
 
 // Class FortniteUI.FortAlterationsWidget_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAlterationsWidget_NUI : public UCommonUserWidget
+// 0x0028 (0x0260 - 0x0238)
+class UFortAlterationsWidget_NUI : public UCommonUserWidget
 {
 public:
 	class UFortItem*                              Item;                                              // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1725,20 +1703,18 @@ public:
 		return GetDefaultObjImpl<UFortAlterationsWidget_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAlterationsWidget_NUI) == 0x322CBBB8, "Wrong alignment on UFortAlterationsWidget_NUI");
-static_assert(sizeof(UFortAlterationsWidget_NUI) == 0x322CBBB8, "Wrong size on UFortAlterationsWidget_NUI");
+static_assert(alignof(UFortAlterationsWidget_NUI) == 0x000008, "Wrong alignment on UFortAlterationsWidget_NUI");
+static_assert(sizeof(UFortAlterationsWidget_NUI) == 0x000260, "Wrong size on UFortAlterationsWidget_NUI");
 static_assert(offsetof(UFortAlterationsWidget_NUI, Item) == 0x000238, "Member 'UFortAlterationsWidget_NUI::Item' has a wrong offset!");
 static_assert(offsetof(UFortAlterationsWidget_NUI, State) == 0x000240, "Member 'UFortAlterationsWidget_NUI::State' has a wrong offset!");
 static_assert(offsetof(UFortAlterationsWidget_NUI, ItemToCompareWith) == 0x000248, "Member 'UFortAlterationsWidget_NUI::ItemToCompareWith' has a wrong offset!");
 
 // Class FortniteUI.FortAlterationWidget_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAlterationWidget_NUI : public UCommonUserWidget
+// 0x0018 (0x0250 - 0x0238)
+class UFortAlterationWidget_NUI : public UCommonUserWidget
 {
 public:
-	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0238(0x1182E980)(BlueprintVisible, BlueprintReadOnly, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0238(0x0018)(BlueprintVisible, BlueprintReadOnly, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
 
 public:
 	class UFortAlterationItemDefinition* GetAlterationDefintion() const;
@@ -1756,15 +1732,13 @@ public:
 		return GetDefaultObjImpl<UFortAlterationWidget_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAlterationWidget_NUI) == 0x322CBBB8, "Wrong alignment on UFortAlterationWidget_NUI");
-static_assert(sizeof(UFortAlterationWidget_NUI) == 0x322CBBB8, "Wrong size on UFortAlterationWidget_NUI");
+static_assert(alignof(UFortAlterationWidget_NUI) == 0x000008, "Wrong alignment on UFortAlterationWidget_NUI");
+static_assert(sizeof(UFortAlterationWidget_NUI) == 0x000250, "Wrong size on UFortAlterationWidget_NUI");
 static_assert(offsetof(UFortAlterationWidget_NUI, AlterationInfo) == 0x000238, "Member 'UFortAlterationWidget_NUI::AlterationInfo' has a wrong offset!");
 
 // Class FortniteUI.FortAnnouncementWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAnnouncementWidget : public UCommonUserWidget
+// 0x0008 (0x0240 - 0x0238)
+class UFortAnnouncementWidget : public UCommonUserWidget
 {
 public:
 	class AFortClientAnnouncement*                BoundAnnouncement;                                 // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -1784,13 +1758,12 @@ public:
 		return GetDefaultObjImpl<UFortAnnouncementWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAnnouncementWidget) == 0x322CBBB8, "Wrong alignment on UFortAnnouncementWidget");
-static_assert(sizeof(UFortAnnouncementWidget) == 0x322CBBB8, "Wrong size on UFortAnnouncementWidget");
+static_assert(alignof(UFortAnnouncementWidget) == 0x000008, "Wrong alignment on UFortAnnouncementWidget");
+static_assert(sizeof(UFortAnnouncementWidget) == 0x000240, "Wrong size on UFortAnnouncementWidget");
 static_assert(offsetof(UFortAnnouncementWidget, BoundAnnouncement) == 0x000238, "Member 'UFortAnnouncementWidget::BoundAnnouncement' has a wrong offset!");
 
 // Class FortniteUI.FortArmoryScreen
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x03E0 - 0x03E0)
 class UFortArmoryScreen final : public UCommonActivatablePanel
 {
 public:
@@ -1803,8 +1776,8 @@ public:
 		return GetDefaultObjImpl<UFortArmoryScreen>();
 	}
 };
-static_assert(alignof(UFortArmoryScreen) == 0x322CBBB8, "Wrong alignment on UFortArmoryScreen");
-static_assert(sizeof(UFortArmoryScreen) == 0x322CBBB8, "Wrong size on UFortArmoryScreen");
+static_assert(alignof(UFortArmoryScreen) == 0x000008, "Wrong alignment on UFortArmoryScreen");
+static_assert(sizeof(UFortArmoryScreen) == 0x0003E0, "Wrong size on UFortArmoryScreen");
 
 // Class FortniteUI.FortAsyncAction_SetUIState
 // 0x0020 (0x0048 - 0x0028)
@@ -1834,13 +1807,13 @@ static_assert(offsetof(UFortAsyncAction_SetUIState, OnStateEntered) == 0x000028,
 static_assert(offsetof(UFortAsyncAction_SetUIState, WorldContextObject) == 0x000038, "Member 'UFortAsyncAction_SetUIState::WorldContextObject' has a wrong offset!");
 
 // Class FortniteUI.FortAsyncAction_ShowAdvancedLatentConfirmation_NUI
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x0198 (0x01C0 - 0x0028)
 class UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI final : public UBlueprintAsyncActionBase
 {
 public:
 	UMulticastDelegateProperty_                   DialogResult;                                      // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UObject*                                WorldContextObject;                                // 0x0038(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FFortDialogDescription_NUI             Description;                                       // 0x0040(0x1182E980)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	struct FFortDialogDescription_NUI             Description;                                       // 0x0040(0x0180)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
 public:
 	static class UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI* ShowAdvancedLatentActionConfirmation(class UObject* InWorldContextObject, const struct FSlateBrush& Icon, const class FText& Title, const class FText& MESSAGE, const TArray<struct FConfirmationDialogAction>& ConfirmButtonInputActions, const class FName& DeclineButtonInputAction, class UWidget* AdditionalContent, class UWidget* LeftAdditionalContent);
@@ -1855,14 +1828,14 @@ public:
 		return GetDefaultObjImpl<UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI>();
 	}
 };
-static_assert(alignof(UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI) == 0x1182E980, "Wrong alignment on UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI");
-static_assert(sizeof(UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI) == 0x1182E980, "Wrong size on UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI");
+static_assert(alignof(UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI) == 0x000010, "Wrong alignment on UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI");
+static_assert(sizeof(UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI) == 0x0001C0, "Wrong size on UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI");
 static_assert(offsetof(UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI, DialogResult) == 0x000028, "Member 'UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI::DialogResult' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI, WorldContextObject) == 0x000038, "Member 'UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI, Description) == 0x000040, "Member 'UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI::Description' has a wrong offset!");
 
 // Class FortniteUI.FortAsyncAction_ShowConfirmation
-// 0x118245D8 (0x11824600 - 0x0028)
+// 0x01A8 (0x01D0 - 0x0028)
 class UFortAsyncAction_ShowConfirmation final : public UBlueprintAsyncActionBase
 {
 public:
@@ -1870,7 +1843,7 @@ public:
 	UMulticastDelegateProperty_                   OnDeclined;                                        // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnTimedOut;                                        // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UObject*                                WorldContextObject;                                // 0x0058(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FFortDialogDescription                 Description;                                       // 0x0060(0x11827900)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	struct FFortDialogDescription                 Description;                                       // 0x0060(0x0170)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
 public:
 	static class UFortAsyncAction_ShowConfirmation* ShowConfirmationDialog(class UObject* InWorldContextObject, const class FText& Title, const class FText& MESSAGE, const class FText& ConfirmButtonText, const class FText& DeclineButtonText, class UFortUserWidget* InAdditionalContent, float InDisplayTime);
@@ -1885,8 +1858,8 @@ public:
 		return GetDefaultObjImpl<UFortAsyncAction_ShowConfirmation>();
 	}
 };
-static_assert(alignof(UFortAsyncAction_ShowConfirmation) == 0x11824600, "Wrong alignment on UFortAsyncAction_ShowConfirmation");
-static_assert(sizeof(UFortAsyncAction_ShowConfirmation) == 0x11824600, "Wrong size on UFortAsyncAction_ShowConfirmation");
+static_assert(alignof(UFortAsyncAction_ShowConfirmation) == 0x000010, "Wrong alignment on UFortAsyncAction_ShowConfirmation");
+static_assert(sizeof(UFortAsyncAction_ShowConfirmation) == 0x0001D0, "Wrong size on UFortAsyncAction_ShowConfirmation");
 static_assert(offsetof(UFortAsyncAction_ShowConfirmation, OnConfirmed) == 0x000028, "Member 'UFortAsyncAction_ShowConfirmation::OnConfirmed' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowConfirmation, OnDeclined) == 0x000038, "Member 'UFortAsyncAction_ShowConfirmation::OnDeclined' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowConfirmation, OnTimedOut) == 0x000048, "Member 'UFortAsyncAction_ShowConfirmation::OnTimedOut' has a wrong offset!");
@@ -1894,13 +1867,13 @@ static_assert(offsetof(UFortAsyncAction_ShowConfirmation, WorldContextObject) ==
 static_assert(offsetof(UFortAsyncAction_ShowConfirmation, Description) == 0x000060, "Member 'UFortAsyncAction_ShowConfirmation::Description' has a wrong offset!");
 
 // Class FortniteUI.FortAsyncAction_ShowConfirmation_NUI
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x0198 (0x01C0 - 0x0028)
 class UFortAsyncAction_ShowConfirmation_NUI final : public UBlueprintAsyncActionBase
 {
 public:
 	UMulticastDelegateProperty_                   DialogResult;                                      // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UObject*                                WorldContextObject;                                // 0x0038(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FFortDialogDescription_NUI             Description;                                       // 0x0040(0x1182E980)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	struct FFortDialogDescription_NUI             Description;                                       // 0x0040(0x0180)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
 public:
 	static class UFortAsyncAction_ShowConfirmation_NUI* ShowConfirmationDialog_NUI(class UObject* InWorldContextObject, const struct FSlateBrush& Icon, const class FText& Title, const class FText& MESSAGE, const TArray<struct FConfirmationDialogAction>& ConfirmButtonInputActions, const class FName& DeclineButtonInputAction, class UWidget* AdditionalContent, class UWidget* LeftAdditionalContent);
@@ -1917,20 +1890,20 @@ public:
 		return GetDefaultObjImpl<UFortAsyncAction_ShowConfirmation_NUI>();
 	}
 };
-static_assert(alignof(UFortAsyncAction_ShowConfirmation_NUI) == 0x1182E980, "Wrong alignment on UFortAsyncAction_ShowConfirmation_NUI");
-static_assert(sizeof(UFortAsyncAction_ShowConfirmation_NUI) == 0x1182E980, "Wrong size on UFortAsyncAction_ShowConfirmation_NUI");
+static_assert(alignof(UFortAsyncAction_ShowConfirmation_NUI) == 0x000010, "Wrong alignment on UFortAsyncAction_ShowConfirmation_NUI");
+static_assert(sizeof(UFortAsyncAction_ShowConfirmation_NUI) == 0x0001C0, "Wrong size on UFortAsyncAction_ShowConfirmation_NUI");
 static_assert(offsetof(UFortAsyncAction_ShowConfirmation_NUI, DialogResult) == 0x000028, "Member 'UFortAsyncAction_ShowConfirmation_NUI::DialogResult' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowConfirmation_NUI, WorldContextObject) == 0x000038, "Member 'UFortAsyncAction_ShowConfirmation_NUI::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowConfirmation_NUI, Description) == 0x000040, "Member 'UFortAsyncAction_ShowConfirmation_NUI::Description' has a wrong offset!");
 
 // Class FortniteUI.FortAsyncAction_ShowPartyDialog
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x0328 (0x0350 - 0x0028)
 class UFortAsyncAction_ShowPartyDialog final : public UBlueprintAsyncActionBase
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0028(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FFortDialogDescription_NUI             Description;                                       // 0x0030(0x1182E980)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x01B0(0x11827900)(NativeAccessSpecifierPrivate)
+	struct FFortDialogDescription_NUI             Description;                                       // 0x0030(0x0180)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x01B0(0x0190)(NativeAccessSpecifierPrivate)
 	class ULocalPlayer*                           LocalPlayer;                                       // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_348[0x8];                                      // 0x0348(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -1948,17 +1921,16 @@ public:
 		return GetDefaultObjImpl<UFortAsyncAction_ShowPartyDialog>();
 	}
 };
-static_assert(alignof(UFortAsyncAction_ShowPartyDialog) == 0x1182E980, "Wrong alignment on UFortAsyncAction_ShowPartyDialog");
-static_assert(sizeof(UFortAsyncAction_ShowPartyDialog) == 0x1182E980, "Wrong size on UFortAsyncAction_ShowPartyDialog");
+static_assert(alignof(UFortAsyncAction_ShowPartyDialog) == 0x000010, "Wrong alignment on UFortAsyncAction_ShowPartyDialog");
+static_assert(sizeof(UFortAsyncAction_ShowPartyDialog) == 0x000350, "Wrong size on UFortAsyncAction_ShowPartyDialog");
 static_assert(offsetof(UFortAsyncAction_ShowPartyDialog, WorldContextObject) == 0x000028, "Member 'UFortAsyncAction_ShowPartyDialog::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowPartyDialog, Description) == 0x000030, "Member 'UFortAsyncAction_ShowPartyDialog::Description' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowPartyDialog, TeamMemberInfo) == 0x0001B0, "Member 'UFortAsyncAction_ShowPartyDialog::TeamMemberInfo' has a wrong offset!");
 static_assert(offsetof(UFortAsyncAction_ShowPartyDialog, LocalPlayer) == 0x000340, "Member 'UFortAsyncAction_ShowPartyDialog::LocalPlayer' has a wrong offset!");
 
 // Class FortniteUI.FortAthenaMatchmakingWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAthenaMatchmakingWidget : public UCommonActivatablePanel
+// 0x00A0 (0x0480 - 0x03E0)
+class UFortAthenaMatchmakingWidget : public UCommonActivatablePanel
 {
 public:
 	TSubclassOf<class UFortMissionGenerator>      MissionGen;                                        // 0x03E0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1996,9 +1968,8 @@ public:
 		return GetDefaultObjImpl<UFortAthenaMatchmakingWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAthenaMatchmakingWidget) == 0x322CBBB8, "Wrong alignment on UFortAthenaMatchmakingWidget");
-static_assert(sizeof(UFortAthenaMatchmakingWidget) == 0x322CBBB8, "Wrong size on UFortAthenaMatchmakingWidget");
+static_assert(alignof(UFortAthenaMatchmakingWidget) == 0x000008, "Wrong alignment on UFortAthenaMatchmakingWidget");
+static_assert(sizeof(UFortAthenaMatchmakingWidget) == 0x000480, "Wrong size on UFortAthenaMatchmakingWidget");
 static_assert(offsetof(UFortAthenaMatchmakingWidget, MissionGen) == 0x0003E0, "Member 'UFortAthenaMatchmakingWidget::MissionGen' has a wrong offset!");
 static_assert(offsetof(UFortAthenaMatchmakingWidget, DuoMissionGen) == 0x0003E8, "Member 'UFortAthenaMatchmakingWidget::DuoMissionGen' has a wrong offset!");
 static_assert(offsetof(UFortAthenaMatchmakingWidget, SquadMissionGen) == 0x0003F0, "Member 'UFortAthenaMatchmakingWidget::SquadMissionGen' has a wrong offset!");
@@ -2015,9 +1986,8 @@ static_assert(offsetof(UFortAthenaMatchmakingWidget, TeamFillRotator) == 0x00043
 static_assert(offsetof(UFortAthenaMatchmakingWidget, TeamFillRow) == 0x000440, "Member 'UFortAthenaMatchmakingWidget::TeamFillRow' has a wrong offset!");
 
 // Class FortniteUI.FortAthenaNewsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAthenaNewsWidget : public UCommonUserWidget
+// 0x0000 (0x0238 - 0x0238)
+class UFortAthenaNewsWidget : public UCommonUserWidget
 {
 public:
 	bool GetText(class FText* Title, class FText* PlatformBody, class FText* RegionBody, class FText* Body) const;
@@ -2032,9 +2002,8 @@ public:
 		return GetDefaultObjImpl<UFortAthenaNewsWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAthenaNewsWidget) == 0x322CBBB8, "Wrong alignment on UFortAthenaNewsWidget");
-static_assert(sizeof(UFortAthenaNewsWidget) == 0x322CBBB8, "Wrong size on UFortAthenaNewsWidget");
+static_assert(alignof(UFortAthenaNewsWidget) == 0x000008, "Wrong alignment on UFortAthenaNewsWidget");
+static_assert(sizeof(UFortAthenaNewsWidget) == 0x000238, "Wrong size on UFortAthenaNewsWidget");
 
 // Class FortniteUI.FortNodeCanvasEntityInterface
 // 0x0000 (0x0028 - 0x0028)
@@ -2054,9 +2023,8 @@ static_assert(alignof(IFortNodeCanvasEntityInterface) == 0x000008, "Wrong alignm
 static_assert(sizeof(IFortNodeCanvasEntityInterface) == 0x000028, "Wrong size on IFortNodeCanvasEntityInterface");
 
 // Class FortniteUI.FortBaseCanvasEntity
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortBaseCanvasEntity : public UFortUserWidget
+// 0x0040 (0x0280 - 0x0240)
+class UFortBaseCanvasEntity : public UFortUserWidget
 {
 public:
 	uint8                                         Pad_240[0x8];                                      // 0x0240(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -2064,8 +2032,9 @@ public:
 	bool                                          bConsideredInSizeCalculation;                      // 0x0250(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_251[0x3];                                      // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MovementMultiplier;                                // 0x0254(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDataTableRowHandle                    NodeStyleData;                                     // 0x0258(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              BasePos;                                           // 0x0270(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                    NodeStyleData;                                     // 0x0258(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_268[0x8];                                      // 0x0268(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              BasePos;                                           // 0x0270(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HasHadBasePosSet;                                  // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -2083,9 +2052,8 @@ public:
 		return GetDefaultObjImpl<UFortBaseCanvasEntity>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortBaseCanvasEntity) == 0x322CBBB8, "Wrong alignment on UFortBaseCanvasEntity");
-static_assert(sizeof(UFortBaseCanvasEntity) == 0x322CBBB8, "Wrong size on UFortBaseCanvasEntity");
+static_assert(alignof(UFortBaseCanvasEntity) == 0x000008, "Wrong alignment on UFortBaseCanvasEntity");
+static_assert(sizeof(UFortBaseCanvasEntity) == 0x000280, "Wrong size on UFortBaseCanvasEntity");
 static_assert(offsetof(UFortBaseCanvasEntity, NodeID) == 0x000248, "Member 'UFortBaseCanvasEntity::NodeID' has a wrong offset!");
 static_assert(offsetof(UFortBaseCanvasEntity, bConsideredInSizeCalculation) == 0x000250, "Member 'UFortBaseCanvasEntity::bConsideredInSizeCalculation' has a wrong offset!");
 static_assert(offsetof(UFortBaseCanvasEntity, MovementMultiplier) == 0x000254, "Member 'UFortBaseCanvasEntity::MovementMultiplier' has a wrong offset!");
@@ -2094,7 +2062,7 @@ static_assert(offsetof(UFortBaseCanvasEntity, BasePos) == 0x000270, "Member 'UFo
 static_assert(offsetof(UFortBaseCanvasEntity, HasHadBasePosSet) == 0x000278, "Member 'UFortBaseCanvasEntity::HasHadBasePosSet' has a wrong offset!");
 
 // Class FortniteUI.FortBaseCanvasNode
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x02A8 - 0x0280)
 class UFortBaseCanvasNode final : public UFortBaseCanvasEntity
 {
 public:
@@ -2136,8 +2104,8 @@ public:
 		return GetDefaultObjImpl<UFortBaseCanvasNode>();
 	}
 };
-static_assert(alignof(UFortBaseCanvasNode) == 0x322CBBB8, "Wrong alignment on UFortBaseCanvasNode");
-static_assert(sizeof(UFortBaseCanvasNode) == 0x322CBBB8, "Wrong size on UFortBaseCanvasNode");
+static_assert(alignof(UFortBaseCanvasNode) == 0x000008, "Wrong alignment on UFortBaseCanvasNode");
+static_assert(sizeof(UFortBaseCanvasNode) == 0x0002A8, "Wrong size on UFortBaseCanvasNode");
 static_assert(offsetof(UFortBaseCanvasNode, PreviewMediaSource) == 0x000280, "Member 'UFortBaseCanvasNode::PreviewMediaSource' has a wrong offset!");
 static_assert(offsetof(UFortBaseCanvasNode, bShouldHideConnectorsToDependents) == 0x000288, "Member 'UFortBaseCanvasNode::bShouldHideConnectorsToDependents' has a wrong offset!");
 static_assert(offsetof(UFortBaseCanvasNode, OnNodeStateChangedEvent) == 0x000290, "Member 'UFortBaseCanvasNode::OnNodeStateChangedEvent' has a wrong offset!");
@@ -2304,9 +2272,8 @@ static_assert(offsetof(UFortGlobalUIContext, bShowRateWidget) == 0x000331, "Memb
 static_assert(offsetof(UFortGlobalUIContext, FeedbackTitle) == 0x000338, "Member 'UFortGlobalUIContext::FeedbackTitle' has a wrong offset!");
 
 // Class FortniteUI.FortAthenaTabsScreenBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAthenaTabsScreenBase : public UCommonActivatablePanel
+// 0x0060 (0x0440 - 0x03E0)
+class UFortAthenaTabsScreenBase : public UCommonActivatablePanel
 {
 public:
 	TMap<EFortUIFeature, class FName>             FeaturesTabsMap;                                   // 0x03E0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
@@ -2327,22 +2294,21 @@ public:
 		return GetDefaultObjImpl<UFortAthenaTabsScreenBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAthenaTabsScreenBase) == 0x322CBBB8, "Wrong alignment on UFortAthenaTabsScreenBase");
-static_assert(sizeof(UFortAthenaTabsScreenBase) == 0x322CBBB8, "Wrong size on UFortAthenaTabsScreenBase");
+static_assert(alignof(UFortAthenaTabsScreenBase) == 0x000008, "Wrong alignment on UFortAthenaTabsScreenBase");
+static_assert(sizeof(UFortAthenaTabsScreenBase) == 0x000440, "Wrong size on UFortAthenaTabsScreenBase");
 static_assert(offsetof(UFortAthenaTabsScreenBase, FeaturesTabsMap) == 0x0003E0, "Member 'UFortAthenaTabsScreenBase::FeaturesTabsMap' has a wrong offset!");
 static_assert(offsetof(UFortAthenaTabsScreenBase, TopTabList) == 0x000430, "Member 'UFortAthenaTabsScreenBase::TopTabList' has a wrong offset!");
 
 // Class FortniteUI.FortAttributeListItem_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAttributeListItem_NUI : public UCommonUserWidget
+// 0x00F8 (0x0330 - 0x0238)
+class UFortAttributeListItem_NUI : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bHoverEnabled;                                     // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           StatTag;                                           // 0x0248(0x11821D80)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           StatTag;                                           // 0x0248(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_250[0xE0];                                     // 0x0250(0x00E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClearPreview();
@@ -2367,16 +2333,14 @@ public:
 		return GetDefaultObjImpl<UFortAttributeListItem_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAttributeListItem_NUI) == 0x322CBBB8, "Wrong alignment on UFortAttributeListItem_NUI");
-static_assert(sizeof(UFortAttributeListItem_NUI) == 0x322CBBB8, "Wrong size on UFortAttributeListItem_NUI");
+static_assert(alignof(UFortAttributeListItem_NUI) == 0x000008, "Wrong alignment on UFortAttributeListItem_NUI");
+static_assert(sizeof(UFortAttributeListItem_NUI) == 0x000330, "Wrong size on UFortAttributeListItem_NUI");
 static_assert(offsetof(UFortAttributeListItem_NUI, bHoverEnabled) == 0x000240, "Member 'UFortAttributeListItem_NUI::bHoverEnabled' has a wrong offset!");
 static_assert(offsetof(UFortAttributeListItem_NUI, StatTag) == 0x000248, "Member 'UFortAttributeListItem_NUI::StatTag' has a wrong offset!");
 
 // Class FortniteUI.FortAttributeList_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAttributeList_NUI : public UCommonUserWidget
+// 0x0030 (0x0268 - 0x0238)
+class UFortAttributeList_NUI : public UCommonUserWidget
 {
 public:
 	TSubclassOf<class UFortAttributeListItem_NUI> AttributeItemClass;                                // 0x0238(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2403,17 +2367,15 @@ public:
 		return GetDefaultObjImpl<UFortAttributeList_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAttributeList_NUI) == 0x322CBBB8, "Wrong alignment on UFortAttributeList_NUI");
-static_assert(sizeof(UFortAttributeList_NUI) == 0x322CBBB8, "Wrong size on UFortAttributeList_NUI");
+static_assert(alignof(UFortAttributeList_NUI) == 0x000008, "Wrong alignment on UFortAttributeList_NUI");
+static_assert(sizeof(UFortAttributeList_NUI) == 0x000268, "Wrong size on UFortAttributeList_NUI");
 static_assert(offsetof(UFortAttributeList_NUI, AttributeItemClass) == 0x000238, "Member 'UFortAttributeList_NUI::AttributeItemClass' has a wrong offset!");
 static_assert(offsetof(UFortAttributeList_NUI, bHoverEnabledOnElements) == 0x000240, "Member 'UFortAttributeList_NUI::bHoverEnabledOnElements' has a wrong offset!");
 static_assert(offsetof(UFortAttributeList_NUI, ShownAttributeWidgets) == 0x000248, "Member 'UFortAttributeList_NUI::ShownAttributeWidgets' has a wrong offset!");
 
 // Class FortniteUI.FortAttributeListItem
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAttributeListItem : public UUserWidget
+// 0x00E8 (0x0318 - 0x0230)
+class UFortAttributeListItem : public UUserWidget
 {
 public:
 	bool                                          bHoverEnabled;                                     // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2442,15 +2404,13 @@ public:
 		return GetDefaultObjImpl<UFortAttributeListItem>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAttributeListItem) == 0x322CBBB8, "Wrong alignment on UFortAttributeListItem");
-static_assert(sizeof(UFortAttributeListItem) == 0x322CBBB8, "Wrong size on UFortAttributeListItem");
+static_assert(alignof(UFortAttributeListItem) == 0x000008, "Wrong alignment on UFortAttributeListItem");
+static_assert(sizeof(UFortAttributeListItem) == 0x000318, "Wrong size on UFortAttributeListItem");
 static_assert(offsetof(UFortAttributeListItem, bHoverEnabled) == 0x000230, "Member 'UFortAttributeListItem::bHoverEnabled' has a wrong offset!");
 
 // Class FortniteUI.FortBangWrapper_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortBangWrapper_NUI : public UCommonUserWidget
+// 0x0018 (0x0250 - 0x0238)
+class UFortBangWrapper_NUI : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -2477,16 +2437,14 @@ public:
 		return GetDefaultObjImpl<UFortBangWrapper_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortBangWrapper_NUI) == 0x322CBBB8, "Wrong alignment on UFortBangWrapper_NUI");
-static_assert(sizeof(UFortBangWrapper_NUI) == 0x322CBBB8, "Wrong size on UFortBangWrapper_NUI");
+static_assert(alignof(UFortBangWrapper_NUI) == 0x000008, "Wrong alignment on UFortBangWrapper_NUI");
+static_assert(sizeof(UFortBangWrapper_NUI) == 0x000250, "Wrong size on UFortBangWrapper_NUI");
 static_assert(offsetof(UFortBangWrapper_NUI, BangType) == 0x000240, "Member 'UFortBangWrapper_NUI::BangType' has a wrong offset!");
 static_assert(offsetof(UFortBangWrapper_NUI, TutorialNameID) == 0x000248, "Member 'UFortBangWrapper_NUI::TutorialNameID' has a wrong offset!");
 
 // Class FortniteUI.FortBannerSelectorBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortBannerSelectorBase : public UCommonActivatablePanel
+// 0x0040 (0x0420 - 0x03E0)
+class UFortBannerSelectorBase : public UCommonActivatablePanel
 {
 public:
 	class UEditableText*                          BannerName;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -2515,16 +2473,15 @@ public:
 		return GetDefaultObjImpl<UFortBannerSelectorBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortBannerSelectorBase) == 0x322CBBB8, "Wrong alignment on UFortBannerSelectorBase");
-static_assert(sizeof(UFortBannerSelectorBase) == 0x322CBBB8, "Wrong size on UFortBannerSelectorBase");
+static_assert(alignof(UFortBannerSelectorBase) == 0x000008, "Wrong alignment on UFortBannerSelectorBase");
+static_assert(sizeof(UFortBannerSelectorBase) == 0x000420, "Wrong size on UFortBannerSelectorBase");
 static_assert(offsetof(UFortBannerSelectorBase, BannerName) == 0x0003E0, "Member 'UFortBannerSelectorBase::BannerName' has a wrong offset!");
 static_assert(offsetof(UFortBannerSelectorBase, BannerNameMaxLength) == 0x0003E8, "Member 'UFortBannerSelectorBase::BannerNameMaxLength' has a wrong offset!");
 static_assert(offsetof(UFortBannerSelectorBase, ErrorBorder) == 0x0003F0, "Member 'UFortBannerSelectorBase::ErrorBorder' has a wrong offset!");
 static_assert(offsetof(UFortBannerSelectorBase, ErrorText) == 0x0003F8, "Member 'UFortBannerSelectorBase::ErrorText' has a wrong offset!");
 
 // Class FortniteUI.FortBorderStyleList
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UFortBorderStyleList final : public UCommonUserWidget
 {
 public:
@@ -2543,12 +2500,12 @@ public:
 		return GetDefaultObjImpl<UFortBorderStyleList>();
 	}
 };
-static_assert(alignof(UFortBorderStyleList) == 0x322CBBB8, "Wrong alignment on UFortBorderStyleList");
-static_assert(sizeof(UFortBorderStyleList) == 0x322CBBB8, "Wrong size on UFortBorderStyleList");
+static_assert(alignof(UFortBorderStyleList) == 0x000008, "Wrong alignment on UFortBorderStyleList");
+static_assert(sizeof(UFortBorderStyleList) == 0x000240, "Wrong size on UFortBorderStyleList");
 static_assert(offsetof(UFortBorderStyleList, BordersPath) == 0x000238, "Member 'UFortBorderStyleList::BordersPath' has a wrong offset!");
 
 // Class FortniteUI.FortButtonInternalWidget
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0018 (0x0480 - 0x0468)
 class UFortButtonInternalWidget final : public UButton
 {
 public:
@@ -2565,27 +2522,27 @@ public:
 		return GetDefaultObjImpl<UFortButtonInternalWidget>();
 	}
 };
-static_assert(alignof(UFortButtonInternalWidget) == 0x11827900, "Wrong alignment on UFortButtonInternalWidget");
-static_assert(sizeof(UFortButtonInternalWidget) == 0x11827900, "Wrong size on UFortButtonInternalWidget");
+static_assert(alignof(UFortButtonInternalWidget) == 0x000008, "Wrong alignment on UFortButtonInternalWidget");
+static_assert(sizeof(UFortButtonInternalWidget) == 0x000480, "Wrong size on UFortButtonInternalWidget");
 static_assert(offsetof(UFortButtonInternalWidget, IsClickable) == 0x000468, "Member 'UFortButtonInternalWidget::IsClickable' has a wrong offset!");
 
 // Class FortniteUI.FortButtonStyle
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x1BE0 (0x1C08 - 0x0028)
 class UFortButtonStyle : public UObject
 {
 public:
-	struct FFortStateStyle                        NormalBase;                                        // 0x0028(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortStateStyle                        NormalHovered;                                     // 0x03A8(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortStateStyle                        NormalPressed;                                     // 0x0728(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortStateStyle                        SelectedBase;                                      // 0x0AA8(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortStateStyle                        SelectedHovered;                                   // 0x0E28(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortStateStyle                        SelectedPressed;                                   // 0x11A8(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortStateStyle                        Disabled;                                          // 0x1528(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeMargin                   ButtonPadding;                                     // 0x18A8(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeFont                     Font;                                              // 0x1908(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeMargin                   CustomPadding;                                     // 0x1B78(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateSound                            PressedSlateSound;                                 // 0x1BD8(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateSound                            HoveredSlateSound;                                 // 0x1BF0(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortStateStyle                        NormalBase;                                        // 0x0028(0x0380)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortStateStyle                        NormalHovered;                                     // 0x03A8(0x0380)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortStateStyle                        NormalPressed;                                     // 0x0728(0x0380)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortStateStyle                        SelectedBase;                                      // 0x0AA8(0x0380)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortStateStyle                        SelectedHovered;                                   // 0x0E28(0x0380)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortStateStyle                        SelectedPressed;                                   // 0x11A8(0x0380)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortStateStyle                        Disabled;                                          // 0x1528(0x0380)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeMargin                   ButtonPadding;                                     // 0x18A8(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeFont                     Font;                                              // 0x1908(0x0270)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeMargin                   CustomPadding;                                     // 0x1B78(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateSound                            PressedSlateSound;                                 // 0x1BD8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateSound                            HoveredSlateSound;                                 // 0x1BF0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static const struct FSlateBrush GetBrushBySizeFromMultiSizeBrush(const struct FFortMultiSizeBrush& MultiSizeBrush, EFortBrushSize Size);
@@ -2606,8 +2563,8 @@ public:
 		return GetDefaultObjImpl<UFortButtonStyle>();
 	}
 };
-static_assert(alignof(UFortButtonStyle) == 0x1182E980, "Wrong alignment on UFortButtonStyle");
-static_assert(sizeof(UFortButtonStyle) == 0x1182E980, "Wrong size on UFortButtonStyle");
+static_assert(alignof(UFortButtonStyle) == 0x000008, "Wrong alignment on UFortButtonStyle");
+static_assert(sizeof(UFortButtonStyle) == 0x001C08, "Wrong size on UFortButtonStyle");
 static_assert(offsetof(UFortButtonStyle, NormalBase) == 0x000028, "Member 'UFortButtonStyle::NormalBase' has a wrong offset!");
 static_assert(offsetof(UFortButtonStyle, NormalHovered) == 0x0003A8, "Member 'UFortButtonStyle::NormalHovered' has a wrong offset!");
 static_assert(offsetof(UFortButtonStyle, NormalPressed) == 0x000728, "Member 'UFortButtonStyle::NormalPressed' has a wrong offset!");
@@ -2622,9 +2579,8 @@ static_assert(offsetof(UFortButtonStyle, PressedSlateSound) == 0x001BD8, "Member
 static_assert(offsetof(UFortButtonStyle, HoveredSlateSound) == 0x001BF0, "Member 'UFortButtonStyle::HoveredSlateSound' has a wrong offset!");
 
 // Class FortniteUI.FortBaseButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortBaseButton : public UFortUserWidget
+// 0x0628 (0x0868 - 0x0240)
+class UFortBaseButton : public UFortUserWidget
 {
 public:
 	uint8                                         Pad_240[0x8];                                      // 0x0240(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -2633,7 +2589,7 @@ public:
 	UMulticastDelegateProperty_                   ButtonClicked;                                     // 0x0268(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	EFortBangSize                                 BangSize;                                          // 0x0278(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_279[0x3];                                      // 0x0279(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              BangOffset;                                        // 0x027C(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector2D                              BangOffset;                                        // 0x027C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EFortBangType                                 BangType;                                          // 0x0284(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_285[0x3];                                      // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   TutorialNameID;                                    // 0x0288(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -2642,8 +2598,8 @@ public:
 	TSubclassOf<class UFortButtonStyle>           Style;                                             // 0x0298(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EFortBrushSize                                BrushSize;                                         // 0x02A0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateSound                            PressedSlateSoundOverride;                         // 0x02A8(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FSlateSound                            HoveredSlateSoundOverride;                         // 0x02C0(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FSlateSound                            PressedSlateSoundOverride;                         // 0x02A8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FSlateSound                            HoveredSlateSoundOverride;                         // 0x02C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	bool                                          bSelectable;                                       // 0x02D8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_2D9[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   SelectionGroup;                                    // 0x02E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -2682,9 +2638,8 @@ public:
 		return GetDefaultObjImpl<UFortBaseButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortBaseButton) == 0x322CBBB8, "Wrong alignment on UFortBaseButton");
-static_assert(sizeof(UFortBaseButton) == 0x322CBBB8, "Wrong size on UFortBaseButton");
+static_assert(alignof(UFortBaseButton) == 0x000008, "Wrong alignment on UFortBaseButton");
+static_assert(sizeof(UFortBaseButton) == 0x000868, "Wrong size on UFortBaseButton");
 static_assert(offsetof(UFortBaseButton, EnabledChanged) == 0x000248, "Member 'UFortBaseButton::EnabledChanged' has a wrong offset!");
 static_assert(offsetof(UFortBaseButton, SelectedChanged) == 0x000258, "Member 'UFortBaseButton::SelectedChanged' has a wrong offset!");
 static_assert(offsetof(UFortBaseButton, ButtonClicked) == 0x000268, "Member 'UFortBaseButton::ButtonClicked' has a wrong offset!");
@@ -2704,7 +2659,7 @@ static_assert(offsetof(UFortBaseButton, bClickable) == 0x0002E9, "Member 'UFortB
 static_assert(offsetof(UFortBaseButton, ClickMethod) == 0x0002EA, "Member 'UFortBaseButton::ClickMethod' has a wrong offset!");
 
 // Class FortniteUI.FortChatWidget
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0048 (0x0170 - 0x0128)
 class UFortChatWidget final : public UNativeWidgetHost
 {
 public:
@@ -2736,8 +2691,8 @@ public:
 		return GetDefaultObjImpl<UFortChatWidget>();
 	}
 };
-static_assert(alignof(UFortChatWidget) == 0x11827900, "Wrong alignment on UFortChatWidget");
-static_assert(sizeof(UFortChatWidget) == 0x11827900, "Wrong size on UFortChatWidget");
+static_assert(alignof(UFortChatWidget) == 0x000008, "Wrong alignment on UFortChatWidget");
+static_assert(sizeof(UFortChatWidget) == 0x000170, "Wrong size on UFortChatWidget");
 static_assert(offsetof(UFortChatWidget, MinimizeEnabled) == 0x000128, "Member 'UFortChatWidget::MinimizeEnabled' has a wrong offset!");
 static_assert(offsetof(UFortChatWidget, AutoReleaseFocus) == 0x000129, "Member 'UFortChatWidget::AutoReleaseFocus' has a wrong offset!");
 static_assert(offsetof(UFortChatWidget, AllowEmotes) == 0x00012A, "Member 'UFortChatWidget::AllowEmotes' has a wrong offset!");
@@ -2771,9 +2726,8 @@ static_assert(alignof(UFortCheatMenuFactory) == 0x000008, "Wrong alignment on UF
 static_assert(sizeof(UFortCheatMenuFactory) == 0x000028, "Wrong size on UFortCheatMenuFactory");
 
 // Class FortniteUI.FortCollectionBookGenericRewardWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookGenericRewardWidget : public UCommonUserWidget
+// 0x0018 (0x0250 - 0x0238)
+class UFortCollectionBookGenericRewardWidget : public UCommonUserWidget
 {
 public:
 	uint8                                         bUpdateVisibilityBasedOnRewardExistence : 1;       // 0x0238(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
@@ -2805,18 +2759,16 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookGenericRewardWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookGenericRewardWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookGenericRewardWidget");
-static_assert(sizeof(UFortCollectionBookGenericRewardWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookGenericRewardWidget");
+static_assert(alignof(UFortCollectionBookGenericRewardWidget) == 0x000008, "Wrong alignment on UFortCollectionBookGenericRewardWidget");
+static_assert(sizeof(UFortCollectionBookGenericRewardWidget) == 0x000250, "Wrong size on UFortCollectionBookGenericRewardWidget");
 static_assert(offsetof(UFortCollectionBookGenericRewardWidget, VisibilityWhenNoRewardSpecified) == 0x00023C, "Member 'UFortCollectionBookGenericRewardWidget::VisibilityWhenNoRewardSpecified' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookGenericRewardWidget, VisibilityWhenRewardSpecified) == 0x00023D, "Member 'UFortCollectionBookGenericRewardWidget::VisibilityWhenRewardSpecified' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookGenericRewardWidget, RewardCardWidget) == 0x000240, "Member 'UFortCollectionBookGenericRewardWidget::RewardCardWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookGenericRewardWidget, RewardStatus) == 0x000248, "Member 'UFortCollectionBookGenericRewardWidget::RewardStatus' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookPageCompletionRewardWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookPageCompletionRewardWidget : public UFortCollectionBookGenericRewardWidget
+// 0x0000 (0x0250 - 0x0250)
+class UFortCollectionBookPageCompletionRewardWidget : public UFortCollectionBookGenericRewardWidget
 {
 public:
 	static class UClass* StaticClass()
@@ -2828,12 +2780,11 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookPageCompletionRewardWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookPageCompletionRewardWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookPageCompletionRewardWidget");
-static_assert(sizeof(UFortCollectionBookPageCompletionRewardWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookPageCompletionRewardWidget");
+static_assert(alignof(UFortCollectionBookPageCompletionRewardWidget) == 0x000008, "Wrong alignment on UFortCollectionBookPageCompletionRewardWidget");
+static_assert(sizeof(UFortCollectionBookPageCompletionRewardWidget) == 0x000250, "Wrong size on UFortCollectionBookPageCompletionRewardWidget");
 
 // Class FortniteUI.FortCollectionBookProgressionRewardWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0260 - 0x0250)
 class UFortCollectionBookProgressionRewardWidget : public UFortCollectionBookGenericRewardWidget
 {
 public:
@@ -2853,15 +2804,14 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookProgressionRewardWidget>();
 	}
 };
-static_assert(alignof(UFortCollectionBookProgressionRewardWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookProgressionRewardWidget");
-static_assert(sizeof(UFortCollectionBookProgressionRewardWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookProgressionRewardWidget");
+static_assert(alignof(UFortCollectionBookProgressionRewardWidget) == 0x000008, "Wrong alignment on UFortCollectionBookProgressionRewardWidget");
+static_assert(sizeof(UFortCollectionBookProgressionRewardWidget) == 0x000260, "Wrong size on UFortCollectionBookProgressionRewardWidget");
 static_assert(offsetof(UFortCollectionBookProgressionRewardWidget, LevelTextWidget) == 0x000250, "Member 'UFortCollectionBookProgressionRewardWidget::LevelTextWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookProgressionRewardWidget, DisplayNameWidget) == 0x000258, "Member 'UFortCollectionBookProgressionRewardWidget::DisplayNameWidget' has a wrong offset!");
 
 // Class FortniteUI.FortItemWidget_NUI
-// 0x0000 (0x11827900 - 0x11827900)
-#pragma pack(push, 0x1)
-class alignas(0x11827900) UFortItemWidget_NUI : public UWidget
+// 0x0028 (0x0140 - 0x0118)
+class UFortItemWidget_NUI : public UWidget
 {
 public:
 	TWeakObjectPtr<class UFortItem>               ItemToRepresent;                                   // 0x0118(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -2882,14 +2832,13 @@ public:
 		return GetDefaultObjImpl<UFortItemWidget_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemWidget_NUI) == 0x11827900, "Wrong alignment on UFortItemWidget_NUI");
-static_assert(sizeof(UFortItemWidget_NUI) == 0x11827900, "Wrong size on UFortItemWidget_NUI");
+static_assert(alignof(UFortItemWidget_NUI) == 0x000008, "Wrong alignment on UFortItemWidget_NUI");
+static_assert(sizeof(UFortItemWidget_NUI) == 0x000140, "Wrong size on UFortItemWidget_NUI");
 static_assert(offsetof(UFortItemWidget_NUI, ItemToRepresent) == 0x000118, "Member 'UFortItemWidget_NUI::ItemToRepresent' has a wrong offset!");
 static_assert(offsetof(UFortItemWidget_NUI, ItemViewContext) == 0x000120, "Member 'UFortItemWidget_NUI::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortItemCardBase
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x0140 - 0x0140)
 class UFortItemCardBase final : public UFortItemWidget_NUI
 {
 public:
@@ -2905,13 +2854,12 @@ public:
 		return GetDefaultObjImpl<UFortItemCardBase>();
 	}
 };
-static_assert(alignof(UFortItemCardBase) == 0x11827900, "Wrong alignment on UFortItemCardBase");
-static_assert(sizeof(UFortItemCardBase) == 0x11827900, "Wrong size on UFortItemCardBase");
+static_assert(alignof(UFortItemCardBase) == 0x000008, "Wrong alignment on UFortItemCardBase");
+static_assert(sizeof(UFortItemCardBase) == 0x000140, "Wrong size on UFortItemCardBase");
 
 // Class FortniteUI.FortRewardInfoButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortRewardInfoButton : public UCommonButton
+// 0x0020 (0x08C0 - 0x08A0)
+class UFortRewardInfoButton : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -2940,21 +2888,20 @@ public:
 		return GetDefaultObjImpl<UFortRewardInfoButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortRewardInfoButton) == 0x322CBBB8, "Wrong alignment on UFortRewardInfoButton");
-static_assert(sizeof(UFortRewardInfoButton) == 0x322CBBB8, "Wrong size on UFortRewardInfoButton");
+static_assert(alignof(UFortRewardInfoButton) == 0x000008, "Wrong alignment on UFortRewardInfoButton");
+static_assert(sizeof(UFortRewardInfoButton) == 0x0008C0, "Wrong size on UFortRewardInfoButton");
 static_assert(offsetof(UFortRewardInfoButton, ItemCardPanel) == 0x0008A8, "Member 'UFortRewardInfoButton::ItemCardPanel' has a wrong offset!");
 static_assert(offsetof(UFortRewardInfoButton, ItemCardSize) == 0x0008B0, "Member 'UFortRewardInfoButton::ItemCardSize' has a wrong offset!");
 static_assert(offsetof(UFortRewardInfoButton, bDisplayAsRewardCard) == 0x0008B1, "Member 'UFortRewardInfoButton::bDisplayAsRewardCard' has a wrong offset!");
 static_assert(offsetof(UFortRewardInfoButton, ItemInstance) == 0x0008B8, "Member 'UFortRewardInfoButton::ItemInstance' has a wrong offset!");
 
 // Class FortniteUI.FortRewardInfoWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x02C0 - 0x0238)
 class UFortRewardInfoWidget : public UCommonUserWidget
 {
 public:
 	class UPanelWidget*                           RewardListWidget;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FMargin                                RewardWidgetPadding;                               // 0x0240(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FMargin                                RewardWidgetPadding;                               // 0x0240(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	EHorizontalAlignment                          HorizontalAlignment;                               // 0x0250(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EVerticalAlignment                            VerticalAlignment;                                 // 0x0251(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bShowDescription;                                  // 0x0252(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -2980,8 +2927,8 @@ public:
 		return GetDefaultObjImpl<UFortRewardInfoWidget>();
 	}
 };
-static_assert(alignof(UFortRewardInfoWidget) == 0x322CBBB8, "Wrong alignment on UFortRewardInfoWidget");
-static_assert(sizeof(UFortRewardInfoWidget) == 0x322CBBB8, "Wrong size on UFortRewardInfoWidget");
+static_assert(alignof(UFortRewardInfoWidget) == 0x000008, "Wrong alignment on UFortRewardInfoWidget");
+static_assert(sizeof(UFortRewardInfoWidget) == 0x0002C0, "Wrong size on UFortRewardInfoWidget");
 static_assert(offsetof(UFortRewardInfoWidget, RewardListWidget) == 0x000238, "Member 'UFortRewardInfoWidget::RewardListWidget' has a wrong offset!");
 static_assert(offsetof(UFortRewardInfoWidget, RewardWidgetPadding) == 0x000240, "Member 'UFortRewardInfoWidget::RewardWidgetPadding' has a wrong offset!");
 static_assert(offsetof(UFortRewardInfoWidget, HorizontalAlignment) == 0x000250, "Member 'UFortRewardInfoWidget::HorizontalAlignment' has a wrong offset!");
@@ -2993,7 +2940,7 @@ static_assert(offsetof(UFortRewardInfoWidget, RewardInfoButtonType) == 0x000260,
 static_assert(offsetof(UFortRewardInfoWidget, ButtonGroup) == 0x000288, "Member 'UFortRewardInfoWidget::ButtonGroup' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookRewardModalWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0430 - 0x03E0)
 class UFortCollectionBookRewardModalWidget final : public UCommonActivatablePanel
 {
 public:
@@ -3013,17 +2960,16 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookRewardModalWidget>();
 	}
 };
-static_assert(alignof(UFortCollectionBookRewardModalWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookRewardModalWidget");
-static_assert(sizeof(UFortCollectionBookRewardModalWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookRewardModalWidget");
+static_assert(alignof(UFortCollectionBookRewardModalWidget) == 0x000008, "Wrong alignment on UFortCollectionBookRewardModalWidget");
+static_assert(sizeof(UFortCollectionBookRewardModalWidget) == 0x000430, "Wrong size on UFortCollectionBookRewardModalWidget");
 static_assert(offsetof(UFortCollectionBookRewardModalWidget, TitleWidget) == 0x0003E0, "Member 'UFortCollectionBookRewardModalWidget::TitleWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookRewardModalWidget, RewardWidget) == 0x0003E8, "Member 'UFortCollectionBookRewardModalWidget::RewardWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookRewardModalWidget, ProgressBar) == 0x0003F0, "Member 'UFortCollectionBookRewardModalWidget::ProgressBar' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookRewardModalWidget, ProgressTextWidget) == 0x0003F8, "Member 'UFortCollectionBookRewardModalWidget::ProgressTextWidget' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookSectionCompletionRewardWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookSectionCompletionRewardWidget : public UFortCollectionBookGenericRewardWidget
+// 0x0050 (0x02A0 - 0x0250)
+class UFortCollectionBookSectionCompletionRewardWidget : public UFortCollectionBookGenericRewardWidget
 {
 public:
 	class UCommonButton*                          RewardDetailsButton;                               // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3046,9 +2992,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookSectionCompletionRewardWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookSectionCompletionRewardWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookSectionCompletionRewardWidget");
-static_assert(sizeof(UFortCollectionBookSectionCompletionRewardWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookSectionCompletionRewardWidget");
+static_assert(alignof(UFortCollectionBookSectionCompletionRewardWidget) == 0x000008, "Wrong alignment on UFortCollectionBookSectionCompletionRewardWidget");
+static_assert(sizeof(UFortCollectionBookSectionCompletionRewardWidget) == 0x0002A0, "Wrong size on UFortCollectionBookSectionCompletionRewardWidget");
 static_assert(offsetof(UFortCollectionBookSectionCompletionRewardWidget, RewardDetailsButton) == 0x000250, "Member 'UFortCollectionBookSectionCompletionRewardWidget::RewardDetailsButton' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSectionCompletionRewardWidget, RewardDetailsModalWidgetClass) == 0x000258, "Member 'UFortCollectionBookSectionCompletionRewardWidget::RewardDetailsModalWidgetClass' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSectionCompletionRewardWidget, ModalTitle) == 0x000278, "Member 'UFortCollectionBookSectionCompletionRewardWidget::ModalTitle' has a wrong offset!");
@@ -3056,7 +3001,7 @@ static_assert(offsetof(UFortCollectionBookSectionCompletionRewardWidget, RewardD
 static_assert(offsetof(UFortCollectionBookSectionCompletionRewardWidget, Section) == 0x000298, "Member 'UFortCollectionBookSectionCompletionRewardWidget::Section' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookOverviewWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0278 - 0x0238)
 class UFortCollectionBookOverviewWidget : public UCommonUserWidget
 {
 public:
@@ -3083,8 +3028,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookOverviewWidget>();
 	}
 };
-static_assert(alignof(UFortCollectionBookOverviewWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookOverviewWidget");
-static_assert(sizeof(UFortCollectionBookOverviewWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookOverviewWidget");
+static_assert(alignof(UFortCollectionBookOverviewWidget) == 0x000008, "Wrong alignment on UFortCollectionBookOverviewWidget");
+static_assert(sizeof(UFortCollectionBookOverviewWidget) == 0x000278, "Wrong size on UFortCollectionBookOverviewWidget");
 static_assert(offsetof(UFortCollectionBookOverviewWidget, OnCollectionBookPageSelected) == 0x000238, "Member 'UFortCollectionBookOverviewWidget::OnCollectionBookPageSelected' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookOverviewWidget, OnCollectionBookPageClicked) == 0x000248, "Member 'UFortCollectionBookOverviewWidget::OnCollectionBookPageClicked' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookOverviewWidget, PageTreeViewWidget) == 0x000258, "Member 'UFortCollectionBookOverviewWidget::PageTreeViewWidget' has a wrong offset!");
@@ -3092,9 +3037,8 @@ static_assert(offsetof(UFortCollectionBookOverviewWidget, CategoryObjectPool) ==
 static_assert(offsetof(UFortCollectionBookOverviewWidget, LastSelectedPage) == 0x000270, "Member 'UFortCollectionBookOverviewWidget::LastSelectedPage' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookPageDetailsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookPageDetailsWidget : public UCommonUserWidget
+// 0x0068 (0x02A0 - 0x0238)
+class UFortCollectionBookPageDetailsWidget : public UCommonUserWidget
 {
 public:
 	class UCommonTextBlock*                       PageCompletionText;                                // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3123,9 +3067,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookPageDetailsWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookPageDetailsWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookPageDetailsWidget");
-static_assert(sizeof(UFortCollectionBookPageDetailsWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookPageDetailsWidget");
+static_assert(alignof(UFortCollectionBookPageDetailsWidget) == 0x000008, "Wrong alignment on UFortCollectionBookPageDetailsWidget");
+static_assert(sizeof(UFortCollectionBookPageDetailsWidget) == 0x0002A0, "Wrong size on UFortCollectionBookPageDetailsWidget");
 static_assert(offsetof(UFortCollectionBookPageDetailsWidget, PageCompletionText) == 0x000238, "Member 'UFortCollectionBookPageDetailsWidget::PageCompletionText' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookPageDetailsWidget, ProgressBar) == 0x000240, "Member 'UFortCollectionBookPageDetailsWidget::ProgressBar' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookPageDetailsWidget, PageRewardWidget) == 0x000248, "Member 'UFortCollectionBookPageDetailsWidget::PageRewardWidget' has a wrong offset!");
@@ -3136,9 +3079,8 @@ static_assert(offsetof(UFortCollectionBookPageDetailsWidget, ModalTitle) == 0x00
 static_assert(offsetof(UFortCollectionBookPageDetailsWidget, RewardDetailsModalWidget) == 0x000298, "Member 'UFortCollectionBookPageDetailsWidget::RewardDetailsModalWidget' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookPageListWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookPageListWidget : public UCommonButton
+// 0x0030 (0x08D0 - 0x08A0)
+class UFortCollectionBookPageListWidget : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -3166,9 +3108,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookPageListWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookPageListWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookPageListWidget");
-static_assert(sizeof(UFortCollectionBookPageListWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookPageListWidget");
+static_assert(alignof(UFortCollectionBookPageListWidget) == 0x000008, "Wrong alignment on UFortCollectionBookPageListWidget");
+static_assert(sizeof(UFortCollectionBookPageListWidget) == 0x0008D0, "Wrong size on UFortCollectionBookPageListWidget");
 static_assert(offsetof(UFortCollectionBookPageListWidget, PageNameWidget) == 0x0008A8, "Member 'UFortCollectionBookPageListWidget::PageNameWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookPageListWidget, AvailableSlotsWidget) == 0x0008B0, "Member 'UFortCollectionBookPageListWidget::AvailableSlotsWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookPageListWidget, PageCompletionWidget) == 0x0008B8, "Member 'UFortCollectionBookPageListWidget::PageCompletionWidget' has a wrong offset!");
@@ -3176,16 +3117,15 @@ static_assert(offsetof(UFortCollectionBookPageListWidget, AssociatedPageOrCatego
 static_assert(offsetof(UFortCollectionBookPageListWidget, bIsExpanded) == 0x0008C8, "Member 'UFortCollectionBookPageListWidget::bIsExpanded' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookPrimaryPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookPrimaryPanel : public UCommonActivatablePanel
+// 0x00C0 (0x04A0 - 0x03E0)
+class UFortCollectionBookPrimaryPanel : public UCommonActivatablePanel
 {
 public:
 	UMulticastDelegateProperty_                   OnCollectionBookPageSelectedDelegate;              // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnCollectionBookPageClickedDelegate;               // 0x03F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnCollectionBookSectionClickedDelegate;            // 0x0400(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FDataTableRowHandle                    BackActionRowHandle;                               // 0x0410(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    SummonInfoPanelActionRowHandle;                    // 0x0420(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    BackActionRowHandle;                               // 0x0410(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    SummonInfoPanelActionRowHandle;                    // 0x0420(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	class UFortCollectionBookOverviewWidget*      OverviewWidget;                                    // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonTileView*                        SectionTileViewWidget;                             // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	ECollectionBookPrimaryNavTarget               CurrentNavTarget;                                  // 0x0440(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3212,9 +3152,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookPrimaryPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookPrimaryPanel) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookPrimaryPanel");
-static_assert(sizeof(UFortCollectionBookPrimaryPanel) == 0x322CBBB8, "Wrong size on UFortCollectionBookPrimaryPanel");
+static_assert(alignof(UFortCollectionBookPrimaryPanel) == 0x000008, "Wrong alignment on UFortCollectionBookPrimaryPanel");
+static_assert(sizeof(UFortCollectionBookPrimaryPanel) == 0x0004A0, "Wrong size on UFortCollectionBookPrimaryPanel");
 static_assert(offsetof(UFortCollectionBookPrimaryPanel, OnCollectionBookPageSelectedDelegate) == 0x0003E0, "Member 'UFortCollectionBookPrimaryPanel::OnCollectionBookPageSelectedDelegate' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookPrimaryPanel, OnCollectionBookPageClickedDelegate) == 0x0003F0, "Member 'UFortCollectionBookPrimaryPanel::OnCollectionBookPageClickedDelegate' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookPrimaryPanel, OnCollectionBookSectionClickedDelegate) == 0x000400, "Member 'UFortCollectionBookPrimaryPanel::OnCollectionBookSectionClickedDelegate' has a wrong offset!");
@@ -3226,9 +3165,8 @@ static_assert(offsetof(UFortCollectionBookPrimaryPanel, CurrentNavTarget) == 0x0
 static_assert(offsetof(UFortCollectionBookPrimaryPanel, LastClickedSection) == 0x000448, "Member 'UFortCollectionBookPrimaryPanel::LastClickedSection' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookProgressionRewardsPreviewWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookProgressionRewardsPreviewWidget : public UCommonUserWidget
+// 0x0010 (0x0248 - 0x0238)
+class UFortCollectionBookProgressionRewardsPreviewWidget : public UCommonUserWidget
 {
 public:
 	class UFortCollectionBookProgressionRewardWidget* NextRewardWidget;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3244,16 +3182,14 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookProgressionRewardsPreviewWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookProgressionRewardsPreviewWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookProgressionRewardsPreviewWidget");
-static_assert(sizeof(UFortCollectionBookProgressionRewardsPreviewWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookProgressionRewardsPreviewWidget");
+static_assert(alignof(UFortCollectionBookProgressionRewardsPreviewWidget) == 0x000008, "Wrong alignment on UFortCollectionBookProgressionRewardsPreviewWidget");
+static_assert(sizeof(UFortCollectionBookProgressionRewardsPreviewWidget) == 0x000248, "Wrong size on UFortCollectionBookProgressionRewardsPreviewWidget");
 static_assert(offsetof(UFortCollectionBookProgressionRewardsPreviewWidget, NextRewardWidget) == 0x000238, "Member 'UFortCollectionBookProgressionRewardsPreviewWidget::NextRewardWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookProgressionRewardsPreviewWidget, NextMajorRewardWidget) == 0x000240, "Member 'UFortCollectionBookProgressionRewardsPreviewWidget::NextMajorRewardWidget' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookProgressWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookProgressWidget : public UCommonUserWidget
+// 0x0058 (0x0290 - 0x0238)
+class UFortCollectionBookProgressWidget : public UCommonUserWidget
 {
 public:
 	int32                                         CachedXPLevel;                                     // 0x0238(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3285,9 +3221,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookProgressWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookProgressWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookProgressWidget");
-static_assert(sizeof(UFortCollectionBookProgressWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookProgressWidget");
+static_assert(alignof(UFortCollectionBookProgressWidget) == 0x000008, "Wrong alignment on UFortCollectionBookProgressWidget");
+static_assert(sizeof(UFortCollectionBookProgressWidget) == 0x000290, "Wrong size on UFortCollectionBookProgressWidget");
 static_assert(offsetof(UFortCollectionBookProgressWidget, CachedXPLevel) == 0x000238, "Member 'UFortCollectionBookProgressWidget::CachedXPLevel' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookProgressWidget, CachedXPCompletionPct) == 0x00023C, "Member 'UFortCollectionBookProgressWidget::CachedXPCompletionPct' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookProgressWidget, RewardDetailsModalWidgetClass) == 0x000240, "Member 'UFortCollectionBookProgressWidget::RewardDetailsModalWidgetClass' has a wrong offset!");
@@ -3299,11 +3234,11 @@ static_assert(offsetof(UFortCollectionBookProgressWidget, PageDetailsWidget) == 
 static_assert(offsetof(UFortCollectionBookProgressWidget, DetailsModalWidget) == 0x000288, "Member 'UFortCollectionBookProgressWidget::DetailsModalWidget' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreeCanvasSlot
-// 0x118212C8 (0x11821300 - 0x0038)
+// 0x0018 (0x0050 - 0x0038)
 class UFortSkillTreeCanvasSlot final : public UPanelSlot
 {
 public:
-	struct FVector2D                              BasePosition;                                      // 0x0038(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              BasePosition;                                      // 0x0038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ParallaxPanningFactor;                             // 0x0040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ZOrder;                                            // 0x0044(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -3326,16 +3261,15 @@ public:
 		return GetDefaultObjImpl<UFortSkillTreeCanvasSlot>();
 	}
 };
-static_assert(alignof(UFortSkillTreeCanvasSlot) == 0x11821300, "Wrong alignment on UFortSkillTreeCanvasSlot");
-static_assert(sizeof(UFortSkillTreeCanvasSlot) == 0x11821300, "Wrong size on UFortSkillTreeCanvasSlot");
+static_assert(alignof(UFortSkillTreeCanvasSlot) == 0x000008, "Wrong alignment on UFortSkillTreeCanvasSlot");
+static_assert(sizeof(UFortSkillTreeCanvasSlot) == 0x000050, "Wrong size on UFortSkillTreeCanvasSlot");
 static_assert(offsetof(UFortSkillTreeCanvasSlot, BasePosition) == 0x000038, "Member 'UFortSkillTreeCanvasSlot::BasePosition' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreeCanvasSlot, ParallaxPanningFactor) == 0x000040, "Member 'UFortSkillTreeCanvasSlot::ParallaxPanningFactor' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreeCanvasSlot, ZOrder) == 0x000044, "Member 'UFortSkillTreeCanvasSlot::ZOrder' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookRecycleSlotResultsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookRecycleSlotResultsWidget : public UCommonUserWidget
+// 0x0018 (0x0250 - 0x0238)
+class UFortCollectionBookRecycleSlotResultsWidget : public UCommonUserWidget
 {
 public:
 	class UPanelWidget*                           RecycleResultsWidget;                              // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3356,17 +3290,15 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookRecycleSlotResultsWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookRecycleSlotResultsWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookRecycleSlotResultsWidget");
-static_assert(sizeof(UFortCollectionBookRecycleSlotResultsWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookRecycleSlotResultsWidget");
+static_assert(alignof(UFortCollectionBookRecycleSlotResultsWidget) == 0x000008, "Wrong alignment on UFortCollectionBookRecycleSlotResultsWidget");
+static_assert(sizeof(UFortCollectionBookRecycleSlotResultsWidget) == 0x000250, "Wrong size on UFortCollectionBookRecycleSlotResultsWidget");
 static_assert(offsetof(UFortCollectionBookRecycleSlotResultsWidget, RecycleResultsWidget) == 0x000238, "Member 'UFortCollectionBookRecycleSlotResultsWidget::RecycleResultsWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookRecycleSlotResultsWidget, ItemCardSize) == 0x000240, "Member 'UFortCollectionBookRecycleSlotResultsWidget::ItemCardSize' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookRecycleSlotResultsWidget, ItemToRecycle) == 0x000248, "Member 'UFortCollectionBookRecycleSlotResultsWidget::ItemToRecycle' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookRewardCardWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookRewardCardWidget : public UCommonUserWidget
+// 0x0080 (0x02B8 - 0x0238)
+class UFortCollectionBookRewardCardWidget : public UCommonUserWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnDisplayedItemChangedEvent;                       // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -3377,9 +3309,10 @@ public:
 	EFortItemCardSize                             ItemCardSize;                                      // 0x0264(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bDisplayAsRewardCard;                              // 0x0265(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_266[0x2];                                      // 0x0266(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRewardInfo                        RepresentedRewards;                                // 0x0268(0x11821780)(Transient, Protected, NativeAccessSpecifierProtected)
+	struct FFortRewardInfo                        RepresentedRewards;                                // 0x0268(0x0030)(Transient, Protected, NativeAccessSpecifierProtected)
 	TArray<class UFortItem*>                      DummyItems;                                        // 0x0298(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	struct FTimerHandle                           UpdateCardTimer;                                   // 0x02A8(0x11821D80)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FTimerHandle                           UpdateCardTimer;                                   // 0x02A8(0x0008)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2B0[0x8];                                      // 0x02B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClearRewards();
@@ -3398,9 +3331,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookRewardCardWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookRewardCardWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookRewardCardWidget");
-static_assert(sizeof(UFortCollectionBookRewardCardWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookRewardCardWidget");
+static_assert(alignof(UFortCollectionBookRewardCardWidget) == 0x000008, "Wrong alignment on UFortCollectionBookRewardCardWidget");
+static_assert(sizeof(UFortCollectionBookRewardCardWidget) == 0x0002B8, "Wrong size on UFortCollectionBookRewardCardWidget");
 static_assert(offsetof(UFortCollectionBookRewardCardWidget, OnDisplayedItemChangedEvent) == 0x000238, "Member 'UFortCollectionBookRewardCardWidget::OnDisplayedItemChangedEvent' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookRewardCardWidget, ItemCardWidget) == 0x000248, "Member 'UFortCollectionBookRewardCardWidget::ItemCardWidget' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookRewardCardWidget, MultiItemRewardOverlay) == 0x000250, "Member 'UFortCollectionBookRewardCardWidget::MultiItemRewardOverlay' has a wrong offset!");
@@ -3413,9 +3345,8 @@ static_assert(offsetof(UFortCollectionBookRewardCardWidget, DummyItems) == 0x000
 static_assert(offsetof(UFortCollectionBookRewardCardWidget, UpdateCardTimer) == 0x0002A8, "Member 'UFortCollectionBookRewardCardWidget::UpdateCardTimer' has a wrong offset!");
 
 // Class FortniteUI.FortMtxStoreRootBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMtxStoreRootBase : public UCommonActivatablePanel
+// 0x0040 (0x0420 - 0x03E0)
+class UFortMtxStoreRootBase : public UCommonActivatablePanel
 {
 public:
 	uint8                                         Pad_3E0[0x8];                                      // 0x03E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -3445,17 +3376,15 @@ public:
 		return GetDefaultObjImpl<UFortMtxStoreRootBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMtxStoreRootBase) == 0x322CBBB8, "Wrong alignment on UFortMtxStoreRootBase");
-static_assert(sizeof(UFortMtxStoreRootBase) == 0x322CBBB8, "Wrong size on UFortMtxStoreRootBase");
+static_assert(alignof(UFortMtxStoreRootBase) == 0x000008, "Wrong alignment on UFortMtxStoreRootBase");
+static_assert(sizeof(UFortMtxStoreRootBase) == 0x000420, "Wrong size on UFortMtxStoreRootBase");
 static_assert(offsetof(UFortMtxStoreRootBase, MtxOfferWidgetClass) == 0x0003E8, "Member 'UFortMtxStoreRootBase::MtxOfferWidgetClass' has a wrong offset!");
 static_assert(offsetof(UFortMtxStoreRootBase, bIncludeCurrency) == 0x0003F0, "Member 'UFortMtxStoreRootBase::bIncludeCurrency' has a wrong offset!");
 static_assert(offsetof(UFortMtxStoreRootBase, MtxOffers) == 0x0003F8, "Member 'UFortMtxStoreRootBase::MtxOffers' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookSectionPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookSectionPanel : public UCommonActivatablePanel
+// 0x0150 (0x0530 - 0x03E0)
+class UFortCollectionBookSectionPanel : public UCommonActivatablePanel
 {
 public:
 	UMulticastDelegateProperty_                   OnSectionCloseRequest;                             // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -3469,20 +3398,20 @@ public:
 	class UWidget*                                ItemAcquisitionSourceContainerWidget;              // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonTextBlock*                       ItemAcquisitionSourceDescWidget;                   // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonTextBlock*                       ItemAcquisitionSourceDesc2Widget;                  // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    BackActionRowHandle;                               // 0x0448(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    CloseActionRowHandle;                              // 0x0458(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    SlotItemActionRowHandle;                           // 0x0468(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    InspectItemActionRowHandle;                        // 0x0478(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    InspectCollectionBookItemActionRowHandle;          // 0x0488(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    InspectPreviewItemActionRowHandle;                 // 0x0498(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    OpenPickerActionRowHandle;                         // 0x04A8(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    LogAllowedItemsActionRowHandle;                    // 0x04B8(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    BackActionRowHandle;                               // 0x0448(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    CloseActionRowHandle;                              // 0x0458(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    SlotItemActionRowHandle;                           // 0x0468(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    InspectItemActionRowHandle;                        // 0x0478(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    InspectCollectionBookItemActionRowHandle;          // 0x0488(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    InspectPreviewItemActionRowHandle;                 // 0x0498(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    OpenPickerActionRowHandle;                         // 0x04A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    LogAllowedItemsActionRowHandle;                    // 0x04B8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	ECollectionBookSectionNavTarget               CurrentNavTarget;                                  // 0x04C8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortCollectionBookSection*             AssociatedSection;                                 // 0x04D0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bHasSummonedInspectPanel;                          // 0x04D8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_4D9[0x3];                                      // 0x04D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogExternalLatentActionHandle  SlotConfirmationDialogLatentHandle;                // 0x04DC(0x11821780)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FFortDialogExternalLatentActionHandle  SlotConfirmationDialogLatentHandle;                // 0x04DC(0x0004)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	UMulticastDelegateProperty_                   OnShowItemDetailEvent;                             // 0x04E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 	UMulticastDelegateProperty_                   OnSlotItemConfirmEvent;                            // 0x04F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 	UMulticastDelegateProperty_                   OnInspectItemEvent;                                // 0x0500(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
@@ -3516,9 +3445,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookSectionPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookSectionPanel) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookSectionPanel");
-static_assert(sizeof(UFortCollectionBookSectionPanel) == 0x322CBBB8, "Wrong size on UFortCollectionBookSectionPanel");
+static_assert(alignof(UFortCollectionBookSectionPanel) == 0x000008, "Wrong alignment on UFortCollectionBookSectionPanel");
+static_assert(sizeof(UFortCollectionBookSectionPanel) == 0x000530, "Wrong size on UFortCollectionBookSectionPanel");
 static_assert(offsetof(UFortCollectionBookSectionPanel, OnSectionCloseRequest) == 0x0003E0, "Member 'UFortCollectionBookSectionPanel::OnSectionCloseRequest' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSectionPanel, OnPreviewXPChangeEvent) == 0x0003F0, "Member 'UFortCollectionBookSectionPanel::OnPreviewXPChangeEvent' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSectionPanel, SectionNameTextWidget) == 0x000400, "Member 'UFortCollectionBookSectionPanel::SectionNameTextWidget' has a wrong offset!");
@@ -3547,7 +3475,7 @@ static_assert(offsetof(UFortCollectionBookSectionPanel, OnSlotItemConfirmEvent) 
 static_assert(offsetof(UFortCollectionBookSectionPanel, OnInspectItemEvent) == 0x000500, "Member 'UFortCollectionBookSectionPanel::OnInspectItemEvent' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookSlotWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0128 (0x0360 - 0x0238)
 class UFortCollectionBookSlotWidget final : public UCommonUserWidget
 {
 public:
@@ -3586,8 +3514,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookSlotWidget>();
 	}
 };
-static_assert(alignof(UFortCollectionBookSlotWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookSlotWidget");
-static_assert(sizeof(UFortCollectionBookSlotWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookSlotWidget");
+static_assert(alignof(UFortCollectionBookSlotWidget) == 0x000008, "Wrong alignment on UFortCollectionBookSlotWidget");
+static_assert(sizeof(UFortCollectionBookSlotWidget) == 0x000360, "Wrong size on UFortCollectionBookSlotWidget");
 static_assert(offsetof(UFortCollectionBookSlotWidget, ItemCardSize) == 0x000248, "Member 'UFortCollectionBookSlotWidget::ItemCardSize' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSlotWidget, bIsRewardCard) == 0x000249, "Member 'UFortCollectionBookSlotWidget::bIsRewardCard' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSlotWidget, ItemCardWidget) == 0x000250, "Member 'UFortCollectionBookSlotWidget::ItemCardWidget' has a wrong offset!");
@@ -3606,9 +3534,8 @@ static_assert(offsetof(UFortCollectionBookSlotWidget, ItemInSlotCanBeEvolvedText
 static_assert(offsetof(UFortCollectionBookSlotWidget, SlottedItemRepresentation) == 0x000338, "Member 'UFortCollectionBookSlotWidget::SlottedItemRepresentation' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreePageWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSkillTreePageWidget : public UCommonUserWidget
+// 0x00F8 (0x0330 - 0x0238)
+class UFortSkillTreePageWidget : public UCommonUserWidget
 {
 public:
 	class FName                                   SkillTreePageId;                                   // 0x0238(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3631,21 +3558,19 @@ public:
 		return GetDefaultObjImpl<UFortSkillTreePageWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSkillTreePageWidget) == 0x322CBBB8, "Wrong alignment on UFortSkillTreePageWidget");
-static_assert(sizeof(UFortSkillTreePageWidget) == 0x322CBBB8, "Wrong size on UFortSkillTreePageWidget");
+static_assert(alignof(UFortSkillTreePageWidget) == 0x000008, "Wrong alignment on UFortSkillTreePageWidget");
+static_assert(sizeof(UFortSkillTreePageWidget) == 0x000330, "Wrong size on UFortSkillTreePageWidget");
 static_assert(offsetof(UFortSkillTreePageWidget, SkillTreePageId) == 0x000238, "Member 'UFortSkillTreePageWidget::SkillTreePageId' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreePageWidget, SkillTreeCanvas) == 0x000328, "Member 'UFortSkillTreePageWidget::SkillTreeCanvas' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookSectionTileWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookSectionTileWidget : public UCommonButton
+// 0x0070 (0x0910 - 0x08A0)
+class UFortCollectionBookSectionTileWidget : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   SlotWidgetClass;                                   // 0x08A8(0x0020)(Edit, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FMargin                                SlotWidgetPadding;                                 // 0x08C8(0x322CBBB8)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FMargin                                SlotWidgetPadding;                                 // 0x08C8(0x0010)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	EHorizontalAlignment                          SlotWidgetHorizontalAlignment;                     // 0x08D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EVerticalAlignment                            SlotWidgetVerticalAlignment;                       // 0x08D9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_8DA[0x2];                                      // 0x08DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -3670,9 +3595,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookSectionTileWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookSectionTileWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookSectionTileWidget");
-static_assert(sizeof(UFortCollectionBookSectionTileWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookSectionTileWidget");
+static_assert(alignof(UFortCollectionBookSectionTileWidget) == 0x000008, "Wrong alignment on UFortCollectionBookSectionTileWidget");
+static_assert(sizeof(UFortCollectionBookSectionTileWidget) == 0x000910, "Wrong size on UFortCollectionBookSectionTileWidget");
 static_assert(offsetof(UFortCollectionBookSectionTileWidget, SlotWidgetClass) == 0x0008A8, "Member 'UFortCollectionBookSectionTileWidget::SlotWidgetClass' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSectionTileWidget, SlotWidgetPadding) == 0x0008C8, "Member 'UFortCollectionBookSectionTileWidget::SlotWidgetPadding' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSectionTileWidget, SlotWidgetHorizontalAlignment) == 0x0008D8, "Member 'UFortCollectionBookSectionTileWidget::SlotWidgetHorizontalAlignment' has a wrong offset!");
@@ -3685,7 +3609,7 @@ static_assert(offsetof(UFortCollectionBookSectionTileWidget, AssociatedSection) 
 static_assert(offsetof(UFortCollectionBookSectionTileWidget, SlotWidgets) == 0x000900, "Member 'UFortCollectionBookSectionTileWidget::SlotWidgets' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookSlotButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x08A8 - 0x08A0)
 class UFortCollectionBookSlotButton final : public UCommonButton
 {
 public:
@@ -3704,8 +3628,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookSlotButton>();
 	}
 };
-static_assert(alignof(UFortCollectionBookSlotButton) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookSlotButton");
-static_assert(sizeof(UFortCollectionBookSlotButton) == 0x322CBBB8, "Wrong size on UFortCollectionBookSlotButton");
+static_assert(alignof(UFortCollectionBookSlotButton) == 0x000008, "Wrong alignment on UFortCollectionBookSlotButton");
+static_assert(sizeof(UFortCollectionBookSlotButton) == 0x0008A8, "Wrong size on UFortCollectionBookSlotButton");
 static_assert(offsetof(UFortCollectionBookSlotButton, CollectionBookSlotWidget) == 0x0008A0, "Member 'UFortCollectionBookSlotButton::CollectionBookSlotWidget' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreeCanvasEditorInterface
@@ -3726,7 +3650,7 @@ static_assert(alignof(IFortSkillTreeCanvasEditorInterface) == 0x000008, "Wrong a
 static_assert(sizeof(IFortSkillTreeCanvasEditorInterface) == 0x000028, "Wrong size on IFortSkillTreeCanvasEditorInterface");
 
 // Class FortniteUI.FortCollectionBookSlotDetailsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0238 - 0x0238)
 class UFortCollectionBookSlotDetailsWidget final : public UCommonUserWidget
 {
 public:
@@ -3739,13 +3663,12 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookSlotDetailsWidget>();
 	}
 };
-static_assert(alignof(UFortCollectionBookSlotDetailsWidget) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookSlotDetailsWidget");
-static_assert(sizeof(UFortCollectionBookSlotDetailsWidget) == 0x322CBBB8, "Wrong size on UFortCollectionBookSlotDetailsWidget");
+static_assert(alignof(UFortCollectionBookSlotDetailsWidget) == 0x000008, "Wrong alignment on UFortCollectionBookSlotDetailsWidget");
+static_assert(sizeof(UFortCollectionBookSlotDetailsWidget) == 0x000238, "Wrong size on UFortCollectionBookSlotDetailsWidget");
 
 // Class FortniteUI.FortCollectionBookSlotView
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookSlotView : public UCommonUserWidget
+// 0x0138 (0x0370 - 0x0238)
+class UFortCollectionBookSlotView : public UCommonUserWidget
 {
 public:
 	TSoftClassPtr<class UClass>                   CollectionBookButtonClass;                         // 0x0238(0x0020)(Edit, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3775,9 +3698,8 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookSlotView>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookSlotView) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookSlotView");
-static_assert(sizeof(UFortCollectionBookSlotView) == 0x322CBBB8, "Wrong size on UFortCollectionBookSlotView");
+static_assert(alignof(UFortCollectionBookSlotView) == 0x000008, "Wrong alignment on UFortCollectionBookSlotView");
+static_assert(sizeof(UFortCollectionBookSlotView) == 0x000370, "Wrong size on UFortCollectionBookSlotView");
 static_assert(offsetof(UFortCollectionBookSlotView, CollectionBookButtonClass) == 0x000238, "Member 'UFortCollectionBookSlotView::CollectionBookButtonClass' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSlotView, CollectionBookButtonBox) == 0x000258, "Member 'UFortCollectionBookSlotView::CollectionBookButtonBox' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookSlotView, CollectionBookSlotButtonGroup) == 0x000260, "Member 'UFortCollectionBookSlotView::CollectionBookSlotButtonGroup' has a wrong offset!");
@@ -3788,15 +3710,15 @@ static_assert(offsetof(UFortCollectionBookSlotView, PreviousSelectedButtonIdx) =
 static_assert(offsetof(UFortCollectionBookSlotView, CurrentSelectedButtonIdx) == 0x000368, "Member 'UFortCollectionBookSlotView::CurrentSelectedButtonIdx' has a wrong offset!");
 
 // Class FortniteUI.FortMultiSizeImage
-// 0x0000 (0x11827900 - 0x11827900)
-#pragma pack(push, 0x1)
-class alignas(0x11827900) UFortMultiSizeImage : public UWidget
+// 0x0388 (0x04A0 - 0x0118)
+class UFortMultiSizeImage : public UWidget
 {
 public:
-	struct FFortMultiSizeBrush                    MultiSizeBrush;                                    // 0x0118(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FFortMultiSizeBrush                    MultiSizeBrush;                                    // 0x0118(0x0360)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0478(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_479[0x3];                                      // 0x0479(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ColorAndOpacity;                                   // 0x047C(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorAndOpacity;                                   // 0x047C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_48C[0x14];                                     // 0x048C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetBrushSize(EFortBrushSize BrushSize_0);
@@ -3813,15 +3735,14 @@ public:
 		return GetDefaultObjImpl<UFortMultiSizeImage>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMultiSizeImage) == 0x11827900, "Wrong alignment on UFortMultiSizeImage");
-static_assert(sizeof(UFortMultiSizeImage) == 0x11827900, "Wrong size on UFortMultiSizeImage");
+static_assert(alignof(UFortMultiSizeImage) == 0x000008, "Wrong alignment on UFortMultiSizeImage");
+static_assert(sizeof(UFortMultiSizeImage) == 0x0004A0, "Wrong size on UFortMultiSizeImage");
 static_assert(offsetof(UFortMultiSizeImage, MultiSizeBrush) == 0x000118, "Member 'UFortMultiSizeImage::MultiSizeBrush' has a wrong offset!");
 static_assert(offsetof(UFortMultiSizeImage, BrushSize) == 0x000478, "Member 'UFortMultiSizeImage::BrushSize' has a wrong offset!");
 static_assert(offsetof(UFortMultiSizeImage, ColorAndOpacity) == 0x00047C, "Member 'UFortMultiSizeImage::ColorAndOpacity' has a wrong offset!");
 
 // Class FortniteUI.FortSimpleItemConditionIconIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0008 (0x04A8 - 0x04A0)
 class UFortSimpleItemConditionIconIndicator : public UFortMultiSizeImage
 {
 public:
@@ -3844,12 +3765,12 @@ public:
 		return GetDefaultObjImpl<UFortSimpleItemConditionIconIndicator>();
 	}
 };
-static_assert(alignof(UFortSimpleItemConditionIconIndicator) == 0x11827900, "Wrong alignment on UFortSimpleItemConditionIconIndicator");
-static_assert(sizeof(UFortSimpleItemConditionIconIndicator) == 0x11827900, "Wrong size on UFortSimpleItemConditionIconIndicator");
+static_assert(alignof(UFortSimpleItemConditionIconIndicator) == 0x000008, "Wrong alignment on UFortSimpleItemConditionIconIndicator");
+static_assert(sizeof(UFortSimpleItemConditionIconIndicator) == 0x0004A8, "Wrong size on UFortSimpleItemConditionIconIndicator");
 static_assert(offsetof(UFortSimpleItemConditionIconIndicator, bShouldCollapseWhenConditionIsFalse) == 0x0004A0, "Member 'UFortSimpleItemConditionIconIndicator::bShouldCollapseWhenConditionIsFalse' has a wrong offset!");
 
 // Class FortniteUI.FortUpgradeIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x04A8 - 0x04A8)
 class UFortUpgradeIndicator final : public UFortSimpleItemConditionIconIndicator
 {
 public:
@@ -3862,8 +3783,8 @@ public:
 		return GetDefaultObjImpl<UFortUpgradeIndicator>();
 	}
 };
-static_assert(alignof(UFortUpgradeIndicator) == 0x11827900, "Wrong alignment on UFortUpgradeIndicator");
-static_assert(sizeof(UFortUpgradeIndicator) == 0x11827900, "Wrong size on UFortUpgradeIndicator");
+static_assert(alignof(UFortUpgradeIndicator) == 0x000008, "Wrong alignment on UFortUpgradeIndicator");
+static_assert(sizeof(UFortUpgradeIndicator) == 0x0004A8, "Wrong size on UFortUpgradeIndicator");
 
 // Class FortniteUI.FortCommittableButtonGroup
 // 0x0010 (0x00A8 - 0x0098)
@@ -3887,12 +3808,11 @@ static_assert(sizeof(UFortCommittableButtonGroup) == 0x0000A8, "Wrong size on UF
 static_assert(offsetof(UFortCommittableButtonGroup, OnButtonCommitted) == 0x000098, "Member 'UFortCommittableButtonGroup::OnButtonCommitted' has a wrong offset!");
 
 // Class FortniteUI.FortDailyRewardsItem
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortDailyRewardsItem : public UCommonUserWidget
+// 0x0010 (0x0248 - 0x0238)
+class UFortDailyRewardsItem : public UCommonUserWidget
 {
 public:
-	struct FFortDailyRewardsItemData              ItemData;                                          // 0x0238(0x1182E980)(BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
+	struct FFortDailyRewardsItemData              ItemData;                                          // 0x0238(0x0010)(BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -3904,13 +3824,12 @@ public:
 		return GetDefaultObjImpl<UFortDailyRewardsItem>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortDailyRewardsItem) == 0x322CBBB8, "Wrong alignment on UFortDailyRewardsItem");
-static_assert(sizeof(UFortDailyRewardsItem) == 0x322CBBB8, "Wrong size on UFortDailyRewardsItem");
+static_assert(alignof(UFortDailyRewardsItem) == 0x000008, "Wrong alignment on UFortDailyRewardsItem");
+static_assert(sizeof(UFortDailyRewardsItem) == 0x000248, "Wrong size on UFortDailyRewardsItem");
 static_assert(offsetof(UFortDailyRewardsItem, ItemData) == 0x000238, "Member 'UFortDailyRewardsItem::ItemData' has a wrong offset!");
 
 // Class FortniteUI.FortComparisonResultIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0008 (0x04A8 - 0x04A0)
 class UFortComparisonResultIndicator final : public UFortMultiSizeImage
 {
 public:
@@ -3931,18 +3850,17 @@ public:
 		return GetDefaultObjImpl<UFortComparisonResultIndicator>();
 	}
 };
-static_assert(alignof(UFortComparisonResultIndicator) == 0x11827900, "Wrong alignment on UFortComparisonResultIndicator");
-static_assert(sizeof(UFortComparisonResultIndicator) == 0x11827900, "Wrong size on UFortComparisonResultIndicator");
+static_assert(alignof(UFortComparisonResultIndicator) == 0x000008, "Wrong alignment on UFortComparisonResultIndicator");
+static_assert(sizeof(UFortComparisonResultIndicator) == 0x0004A8, "Wrong size on UFortComparisonResultIndicator");
 static_assert(offsetof(UFortComparisonResultIndicator, bShouldCollapseWhenNotShown) == 0x0004A0, "Member 'UFortComparisonResultIndicator::bShouldCollapseWhenNotShown' has a wrong offset!");
 static_assert(offsetof(UFortComparisonResultIndicator, ComparisonResult) == 0x0004A1, "Member 'UFortComparisonResultIndicator::ComparisonResult' has a wrong offset!");
 
 // Class FortniteUI.FortDailyRewardsSchedule
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortDailyRewardsSchedule : public UCommonUserWidget
+// 0x0098 (0x02D0 - 0x0238)
+class UFortDailyRewardsSchedule : public UCommonUserWidget
 {
 public:
-	struct FFortDailyRewardsScheduleData          ScheduleData;                                      // 0x0238(0x1182E980)(BlueprintVisible, BlueprintReadOnly, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FFortDailyRewardsScheduleData          ScheduleData;                                      // 0x0238(0x0098)(BlueprintVisible, BlueprintReadOnly, ExposeOnSpawn, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -3954,16 +3872,17 @@ public:
 		return GetDefaultObjImpl<UFortDailyRewardsSchedule>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortDailyRewardsSchedule) == 0x322CBBB8, "Wrong alignment on UFortDailyRewardsSchedule");
-static_assert(sizeof(UFortDailyRewardsSchedule) == 0x322CBBB8, "Wrong size on UFortDailyRewardsSchedule");
+static_assert(alignof(UFortDailyRewardsSchedule) == 0x000008, "Wrong alignment on UFortDailyRewardsSchedule");
+static_assert(sizeof(UFortDailyRewardsSchedule) == 0x0002D0, "Wrong size on UFortDailyRewardsSchedule");
 static_assert(offsetof(UFortDailyRewardsSchedule, ScheduleData) == 0x000238, "Member 'UFortDailyRewardsSchedule::ScheduleData' has a wrong offset!");
 
 // Class FortniteUI.FortDailyRewards
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortDailyRewards : public UCommonActivatablePanel
+// 0x0010 (0x03F0 - 0x03E0)
+class UFortDailyRewards : public UCommonActivatablePanel
 {
+public:
+	uint8                                         Pad_3E0[0x10];                                     // 0x03E0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void ClaimResultReceived(const TArray<struct FFortItemInstanceQuantityPair>& Loot);
 	void FinishedClaiming();
@@ -3980,14 +3899,12 @@ public:
 		return GetDefaultObjImpl<UFortDailyRewards>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortDailyRewards) == 0x322CBBB8, "Wrong alignment on UFortDailyRewards");
-static_assert(sizeof(UFortDailyRewards) == 0x322CBBB8, "Wrong size on UFortDailyRewards");
+static_assert(alignof(UFortDailyRewards) == 0x000008, "Wrong alignment on UFortDailyRewards");
+static_assert(sizeof(UFortDailyRewards) == 0x0003F0, "Wrong size on UFortDailyRewards");
 
 // Class FortniteUI.FortMissionTrackerSubEntry
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMissionTrackerSubEntry : public UCommonUserWidget
+// 0x0038 (0x0270 - 0x0238)
+class UFortMissionTrackerSubEntry : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4013,9 +3930,8 @@ public:
 		return GetDefaultObjImpl<UFortMissionTrackerSubEntry>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMissionTrackerSubEntry) == 0x322CBBB8, "Wrong alignment on UFortMissionTrackerSubEntry");
-static_assert(sizeof(UFortMissionTrackerSubEntry) == 0x322CBBB8, "Wrong size on UFortMissionTrackerSubEntry");
+static_assert(alignof(UFortMissionTrackerSubEntry) == 0x000008, "Wrong alignment on UFortMissionTrackerSubEntry");
+static_assert(sizeof(UFortMissionTrackerSubEntry) == 0x000270, "Wrong size on UFortMissionTrackerSubEntry");
 static_assert(offsetof(UFortMissionTrackerSubEntry, OnMissionSubEntryVisibilityChanged) == 0x000240, "Member 'UFortMissionTrackerSubEntry::OnMissionSubEntryVisibilityChanged' has a wrong offset!");
 static_assert(offsetof(UFortMissionTrackerSubEntry, bConfigureAsHUD) == 0x000250, "Member 'UFortMissionTrackerSubEntry::bConfigureAsHUD' has a wrong offset!");
 static_assert(offsetof(UFortMissionTrackerSubEntry, bHiddenByHeightConstraint) == 0x000251, "Member 'UFortMissionTrackerSubEntry::bHiddenByHeightConstraint' has a wrong offset!");
@@ -4023,9 +3939,8 @@ static_assert(offsetof(UFortMissionTrackerSubEntry, TrackedObjective) == 0x00025
 static_assert(offsetof(UFortMissionTrackerSubEntry, OnSizeEstimateChangedDelegate) == 0x000260, "Member 'UFortMissionTrackerSubEntry::OnSizeEstimateChangedDelegate' has a wrong offset!");
 
 // Class FortniteUI.FortExpeditionBuildSquadWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionBuildSquadWidget : public UCommonActivatablePanel
+// 0x0060 (0x0440 - 0x03E0)
+class UFortExpeditionBuildSquadWidget : public UCommonActivatablePanel
 {
 public:
 	TWeakObjectPtr<class UFortExpeditionItem>     Item;                                              // 0x03E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4061,9 +3976,8 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionBuildSquadWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionBuildSquadWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionBuildSquadWidget");
-static_assert(sizeof(UFortExpeditionBuildSquadWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionBuildSquadWidget");
+static_assert(alignof(UFortExpeditionBuildSquadWidget) == 0x000008, "Wrong alignment on UFortExpeditionBuildSquadWidget");
+static_assert(sizeof(UFortExpeditionBuildSquadWidget) == 0x000440, "Wrong size on UFortExpeditionBuildSquadWidget");
 static_assert(offsetof(UFortExpeditionBuildSquadWidget, Item) == 0x0003E0, "Member 'UFortExpeditionBuildSquadWidget::Item' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionBuildSquadWidget, CurrentSquadId) == 0x0003E8, "Member 'UFortExpeditionBuildSquadWidget::CurrentSquadId' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionBuildSquadWidget, ExpeditionSquadSlotsView) == 0x0003F0, "Member 'UFortExpeditionBuildSquadWidget::ExpeditionSquadSlotsView' has a wrong offset!");
@@ -4073,9 +3987,8 @@ static_assert(offsetof(UFortExpeditionBuildSquadWidget, ItemViewContext_Expediti
 static_assert(offsetof(UFortExpeditionBuildSquadWidget, ItemViewContext_ExpeditionSlotItemPicker) == 0x000410, "Member 'UFortExpeditionBuildSquadWidget::ItemViewContext_ExpeditionSlotItemPicker' has a wrong offset!");
 
 // Class FortniteUI.FortExpeditionDetailsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionDetailsWidget : public UCommonUserWidget
+// 0x0040 (0x0278 - 0x0238)
+class UFortExpeditionDetailsWidget : public UCommonUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortExpeditionItem>     Item;                                              // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4101,16 +4014,15 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionDetailsWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionDetailsWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionDetailsWidget");
-static_assert(sizeof(UFortExpeditionDetailsWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionDetailsWidget");
+static_assert(alignof(UFortExpeditionDetailsWidget) == 0x000008, "Wrong alignment on UFortExpeditionDetailsWidget");
+static_assert(sizeof(UFortExpeditionDetailsWidget) == 0x000278, "Wrong size on UFortExpeditionDetailsWidget");
 static_assert(offsetof(UFortExpeditionDetailsWidget, Item) == 0x000238, "Member 'UFortExpeditionDetailsWidget::Item' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionDetailsWidget, ExpeditionSquadSlotsView) == 0x000240, "Member 'UFortExpeditionDetailsWidget::ExpeditionSquadSlotsView' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionDetailsWidget, CurrentSquadId) == 0x000248, "Member 'UFortExpeditionDetailsWidget::CurrentSquadId' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionDetailsWidget, ItemViewContext_ExpeditionSlotsView) == 0x000250, "Member 'UFortExpeditionDetailsWidget::ItemViewContext_ExpeditionSlotsView' has a wrong offset!");
 
 // Class FortniteUI.FortInventoryOverflowIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x04A8 - 0x04A8)
 class UFortInventoryOverflowIndicator final : public UFortSimpleItemConditionIconIndicator
 {
 public:
@@ -4123,13 +4035,12 @@ public:
 		return GetDefaultObjImpl<UFortInventoryOverflowIndicator>();
 	}
 };
-static_assert(alignof(UFortInventoryOverflowIndicator) == 0x11827900, "Wrong alignment on UFortInventoryOverflowIndicator");
-static_assert(sizeof(UFortInventoryOverflowIndicator) == 0x11827900, "Wrong size on UFortInventoryOverflowIndicator");
+static_assert(alignof(UFortInventoryOverflowIndicator) == 0x000008, "Wrong alignment on UFortInventoryOverflowIndicator");
+static_assert(sizeof(UFortInventoryOverflowIndicator) == 0x0004A8, "Wrong size on UFortInventoryOverflowIndicator");
 
 // Class FortniteUI.FortExpeditionExpiresWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionExpiresWidget : public UCommonUserWidget
+// 0x0010 (0x0248 - 0x0238)
+class UFortExpeditionExpiresWidget : public UCommonUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortExpeditionItem>     Item;                                              // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4149,15 +4060,13 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionExpiresWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionExpiresWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionExpiresWidget");
-static_assert(sizeof(UFortExpeditionExpiresWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionExpiresWidget");
+static_assert(alignof(UFortExpeditionExpiresWidget) == 0x000008, "Wrong alignment on UFortExpeditionExpiresWidget");
+static_assert(sizeof(UFortExpeditionExpiresWidget) == 0x000248, "Wrong size on UFortExpeditionExpiresWidget");
 static_assert(offsetof(UFortExpeditionExpiresWidget, Item) == 0x000238, "Member 'UFortExpeditionExpiresWidget::Item' has a wrong offset!");
 
 // Class FortniteUI.FortExpeditionListItemWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionListItemWidget : public UCommonButton
+// 0x0018 (0x08B8 - 0x08A0)
+class UFortExpeditionListItemWidget : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4177,15 +4086,13 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionListItemWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionListItemWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionListItemWidget");
-static_assert(sizeof(UFortExpeditionListItemWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionListItemWidget");
+static_assert(alignof(UFortExpeditionListItemWidget) == 0x000008, "Wrong alignment on UFortExpeditionListItemWidget");
+static_assert(sizeof(UFortExpeditionListItemWidget) == 0x0008B8, "Wrong size on UFortExpeditionListItemWidget");
 static_assert(offsetof(UFortExpeditionListItemWidget, Item) == 0x0008A8, "Member 'UFortExpeditionListItemWidget::Item' has a wrong offset!");
 
 // Class FortniteUI.FortOptionsTab
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortOptionsTab : public UCommonUserWidget
+// 0x0010 (0x0248 - 0x0238)
+class UFortOptionsTab : public UCommonUserWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnTabSettingChanged;                               // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -4207,15 +4114,13 @@ public:
 		return GetDefaultObjImpl<UFortOptionsTab>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortOptionsTab) == 0x322CBBB8, "Wrong alignment on UFortOptionsTab");
-static_assert(sizeof(UFortOptionsTab) == 0x322CBBB8, "Wrong size on UFortOptionsTab");
+static_assert(alignof(UFortOptionsTab) == 0x000008, "Wrong alignment on UFortOptionsTab");
+static_assert(sizeof(UFortOptionsTab) == 0x000248, "Wrong size on UFortOptionsTab");
 static_assert(offsetof(UFortOptionsTab, OnTabSettingChanged) == 0x000238, "Member 'UFortOptionsTab::OnTabSettingChanged' has a wrong offset!");
 
 // Class FortniteUI.FortInputOptions
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortInputOptions : public UFortOptionsTab
+// 0x0038 (0x0280 - 0x0248)
+class UFortInputOptions : public UFortOptionsTab
 {
 public:
 	uint8                                         Pad_248[0x10];                                     // 0x0248(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4242,17 +4147,15 @@ public:
 		return GetDefaultObjImpl<UFortInputOptions>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortInputOptions) == 0x322CBBB8, "Wrong alignment on UFortInputOptions");
-static_assert(sizeof(UFortInputOptions) == 0x322CBBB8, "Wrong size on UFortInputOptions");
+static_assert(alignof(UFortInputOptions) == 0x000008, "Wrong alignment on UFortInputOptions");
+static_assert(sizeof(UFortInputOptions) == 0x000280, "Wrong size on UFortInputOptions");
 static_assert(offsetof(UFortInputOptions, InputData) == 0x000258, "Member 'UFortInputOptions::InputData' has a wrong offset!");
 static_assert(offsetof(UFortInputOptions, InputCommonListView) == 0x000268, "Member 'UFortInputOptions::InputCommonListView' has a wrong offset!");
 static_assert(offsetof(UFortInputOptions, TooltipDisplay) == 0x000270, "Member 'UFortInputOptions::TooltipDisplay' has a wrong offset!");
 
 // Class FortniteUI.FortExpeditionListViewWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionListViewWidget : public UCommonUserWidget
+// 0x0038 (0x0270 - 0x0238)
+class UFortExpeditionListViewWidget : public UCommonUserWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnExpeditionSelected;                              // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -4278,9 +4181,8 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionListViewWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionListViewWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionListViewWidget");
-static_assert(sizeof(UFortExpeditionListViewWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionListViewWidget");
+static_assert(alignof(UFortExpeditionListViewWidget) == 0x000008, "Wrong alignment on UFortExpeditionListViewWidget");
+static_assert(sizeof(UFortExpeditionListViewWidget) == 0x000270, "Wrong size on UFortExpeditionListViewWidget");
 static_assert(offsetof(UFortExpeditionListViewWidget, OnExpeditionSelected) == 0x000238, "Member 'UFortExpeditionListViewWidget::OnExpeditionSelected' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionListViewWidget, OnExpeditionListViewRefreshed) == 0x000248, "Member 'UFortExpeditionListViewWidget::OnExpeditionListViewRefreshed' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionListViewWidget, ExpeditionListView) == 0x000258, "Member 'UFortExpeditionListViewWidget::ExpeditionListView' has a wrong offset!");
@@ -4288,10 +4190,12 @@ static_assert(offsetof(UFortExpeditionListViewWidget, CurrentTabNameId) == 0x000
 static_assert(offsetof(UFortExpeditionListViewWidget, SortType) == 0x000268, "Member 'UFortExpeditionListViewWidget::SortType' has a wrong offset!");
 
 // Class FortniteUI.FortExpeditionMasterWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionMasterWidget : public UCommonActivatablePanel
+// 0x0080 (0x0460 - 0x03E0)
+class UFortExpeditionMasterWidget : public UCommonActivatablePanel
 {
+public:
+	uint8                                         Pad_3E0[0x80];                                     // 0x03E0(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -4302,14 +4206,12 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionMasterWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionMasterWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionMasterWidget");
-static_assert(sizeof(UFortExpeditionMasterWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionMasterWidget");
+static_assert(alignof(UFortExpeditionMasterWidget) == 0x000008, "Wrong alignment on UFortExpeditionMasterWidget");
+static_assert(sizeof(UFortExpeditionMasterWidget) == 0x000460, "Wrong size on UFortExpeditionMasterWidget");
 
 // Class FortniteUI.FortOptionsMenu
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortOptionsMenu : public UCommonActivatablePanel
+// 0x0000 (0x03E0 - 0x03E0)
+class UFortOptionsMenu : public UCommonActivatablePanel
 {
 public:
 	void HandleBenchmarkComplete();
@@ -4337,14 +4239,12 @@ public:
 		return GetDefaultObjImpl<UFortOptionsMenu>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortOptionsMenu) == 0x322CBBB8, "Wrong alignment on UFortOptionsMenu");
-static_assert(sizeof(UFortOptionsMenu) == 0x322CBBB8, "Wrong size on UFortOptionsMenu");
+static_assert(alignof(UFortOptionsMenu) == 0x000008, "Wrong alignment on UFortOptionsMenu");
+static_assert(sizeof(UFortOptionsMenu) == 0x0003E0, "Wrong size on UFortOptionsMenu");
 
 // Class FortniteUI.FortExpeditionOverviewWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionOverviewWidget : public UCommonUserWidget
+// 0x0028 (0x0260 - 0x0238)
+class UFortExpeditionOverviewWidget : public UCommonUserWidget
 {
 public:
 	TSubclassOf<class UCommonButton>              TabButtonType;                                     // 0x0238(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4369,18 +4269,16 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionOverviewWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionOverviewWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionOverviewWidget");
-static_assert(sizeof(UFortExpeditionOverviewWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionOverviewWidget");
+static_assert(alignof(UFortExpeditionOverviewWidget) == 0x000008, "Wrong alignment on UFortExpeditionOverviewWidget");
+static_assert(sizeof(UFortExpeditionOverviewWidget) == 0x000260, "Wrong size on UFortExpeditionOverviewWidget");
 static_assert(offsetof(UFortExpeditionOverviewWidget, TabButtonType) == 0x000238, "Member 'UFortExpeditionOverviewWidget::TabButtonType' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionOverviewWidget, TabListRegistrationInfo) == 0x000240, "Member 'UFortExpeditionOverviewWidget::TabListRegistrationInfo' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionOverviewWidget, ExpeditionTabList) == 0x000250, "Member 'UFortExpeditionOverviewWidget::ExpeditionTabList' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionOverviewWidget, ExpeditionListView) == 0x000258, "Member 'UFortExpeditionOverviewWidget::ExpeditionListView' has a wrong offset!");
 
 // Class FortniteUI.FortExpeditionPickVehicleWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionPickVehicleWidget : public UCommonActivatablePanel
+// 0x0010 (0x03F0 - 0x03E0)
+class UFortExpeditionPickVehicleWidget : public UCommonActivatablePanel
 {
 public:
 	TWeakObjectPtr<class UFortExpeditionItem>     Item;                                              // 0x03E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4399,13 +4297,12 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionPickVehicleWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionPickVehicleWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionPickVehicleWidget");
-static_assert(sizeof(UFortExpeditionPickVehicleWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionPickVehicleWidget");
+static_assert(alignof(UFortExpeditionPickVehicleWidget) == 0x000008, "Wrong alignment on UFortExpeditionPickVehicleWidget");
+static_assert(sizeof(UFortExpeditionPickVehicleWidget) == 0x0003F0, "Wrong size on UFortExpeditionPickVehicleWidget");
 static_assert(offsetof(UFortExpeditionPickVehicleWidget, Item) == 0x0003E0, "Member 'UFortExpeditionPickVehicleWidget::Item' has a wrong offset!");
 
 // Class FortniteUI.FortEvolveIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x04A8 - 0x04A8)
 class UFortEvolveIndicator final : public UFortSimpleItemConditionIconIndicator
 {
 public:
@@ -4418,13 +4315,12 @@ public:
 		return GetDefaultObjImpl<UFortEvolveIndicator>();
 	}
 };
-static_assert(alignof(UFortEvolveIndicator) == 0x11827900, "Wrong alignment on UFortEvolveIndicator");
-static_assert(sizeof(UFortEvolveIndicator) == 0x11827900, "Wrong size on UFortEvolveIndicator");
+static_assert(alignof(UFortEvolveIndicator) == 0x000008, "Wrong alignment on UFortEvolveIndicator");
+static_assert(sizeof(UFortEvolveIndicator) == 0x0004A8, "Wrong size on UFortEvolveIndicator");
 
 // Class FortniteUI.FortExpeditionReturnsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionReturnsWidget : public UCommonUserWidget
+// 0x0010 (0x0248 - 0x0238)
+class UFortExpeditionReturnsWidget : public UCommonUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortExpeditionItem>     Item;                                              // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4444,13 +4340,12 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionReturnsWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionReturnsWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionReturnsWidget");
-static_assert(sizeof(UFortExpeditionReturnsWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionReturnsWidget");
+static_assert(alignof(UFortExpeditionReturnsWidget) == 0x000008, "Wrong alignment on UFortExpeditionReturnsWidget");
+static_assert(sizeof(UFortExpeditionReturnsWidget) == 0x000248, "Wrong size on UFortExpeditionReturnsWidget");
 static_assert(offsetof(UFortExpeditionReturnsWidget, Item) == 0x000238, "Member 'UFortExpeditionReturnsWidget::Item' has a wrong offset!");
 
 // Class FortniteUI.FortExpeditionRewardsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UFortExpeditionRewardsWidget final : public UCommonUserWidget
 {
 public:
@@ -4474,16 +4369,15 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionRewardsWidget>();
 	}
 };
-static_assert(alignof(UFortExpeditionRewardsWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionRewardsWidget");
-static_assert(sizeof(UFortExpeditionRewardsWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionRewardsWidget");
+static_assert(alignof(UFortExpeditionRewardsWidget) == 0x000008, "Wrong alignment on UFortExpeditionRewardsWidget");
+static_assert(sizeof(UFortExpeditionRewardsWidget) == 0x000260, "Wrong size on UFortExpeditionRewardsWidget");
 static_assert(offsetof(UFortExpeditionRewardsWidget, OnAllExpeditionsCollected) == 0x000238, "Member 'UFortExpeditionRewardsWidget::OnAllExpeditionsCollected' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionRewardsWidget, RewardsTileView) == 0x000248, "Member 'UFortExpeditionRewardsWidget::RewardsTileView' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionRewardsWidget, bPendingCollection) == 0x000250, "Member 'UFortExpeditionRewardsWidget::bPendingCollection' has a wrong offset!");
 
 // Class FortniteUI.FortAudioOptions
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAudioOptions : public UFortOptionsTab
+// 0x0000 (0x0248 - 0x0248)
+class UFortAudioOptions : public UFortOptionsTab
 {
 public:
 	void ChatVolumeChanged(float NewValue);
@@ -4516,12 +4410,11 @@ public:
 		return GetDefaultObjImpl<UFortAudioOptions>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAudioOptions) == 0x322CBBB8, "Wrong alignment on UFortAudioOptions");
-static_assert(sizeof(UFortAudioOptions) == 0x322CBBB8, "Wrong size on UFortAudioOptions");
+static_assert(alignof(UFortAudioOptions) == 0x000008, "Wrong alignment on UFortAudioOptions");
+static_assert(sizeof(UFortAudioOptions) == 0x000248, "Wrong size on UFortAudioOptions");
 
 // Class FortniteUI.FortExpeditionSummaryWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0278 - 0x0238)
 class UFortExpeditionSummaryWidget final : public UCommonUserWidget
 {
 public:
@@ -4549,8 +4442,8 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionSummaryWidget>();
 	}
 };
-static_assert(alignof(UFortExpeditionSummaryWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionSummaryWidget");
-static_assert(sizeof(UFortExpeditionSummaryWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionSummaryWidget");
+static_assert(alignof(UFortExpeditionSummaryWidget) == 0x000008, "Wrong alignment on UFortExpeditionSummaryWidget");
+static_assert(sizeof(UFortExpeditionSummaryWidget) == 0x000278, "Wrong size on UFortExpeditionSummaryWidget");
 static_assert(offsetof(UFortExpeditionSummaryWidget, AvailableExpeditions) == 0x000238, "Member 'UFortExpeditionSummaryWidget::AvailableExpeditions' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionSummaryWidget, CompletedExpeditions) == 0x00023C, "Member 'UFortExpeditionSummaryWidget::CompletedExpeditions' has a wrong offset!");
 static_assert(offsetof(UFortExpeditionSummaryWidget, LandVehicles) == 0x000240, "Member 'UFortExpeditionSummaryWidget::LandVehicles' has a wrong offset!");
@@ -4595,9 +4488,8 @@ static_assert(alignof(UFortExpeditionUtilities) == 0x000008, "Wrong alignment on
 static_assert(sizeof(UFortExpeditionUtilities) == 0x000028, "Wrong size on UFortExpeditionUtilities");
 
 // Class FortniteUI.FortPlayerProfileBannerEditor
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPlayerProfileBannerEditor : public UCommonUserWidget
+// 0x0040 (0x0278 - 0x0238)
+class UFortPlayerProfileBannerEditor : public UCommonUserWidget
 {
 public:
 	TArray<class FName>                           IconCategories;                                    // 0x0238(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
@@ -4625,9 +4517,8 @@ public:
 		return GetDefaultObjImpl<UFortPlayerProfileBannerEditor>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPlayerProfileBannerEditor) == 0x322CBBB8, "Wrong alignment on UFortPlayerProfileBannerEditor");
-static_assert(sizeof(UFortPlayerProfileBannerEditor) == 0x322CBBB8, "Wrong size on UFortPlayerProfileBannerEditor");
+static_assert(alignof(UFortPlayerProfileBannerEditor) == 0x000008, "Wrong alignment on UFortPlayerProfileBannerEditor");
+static_assert(sizeof(UFortPlayerProfileBannerEditor) == 0x000278, "Wrong size on UFortPlayerProfileBannerEditor");
 static_assert(offsetof(UFortPlayerProfileBannerEditor, IconCategories) == 0x000238, "Member 'UFortPlayerProfileBannerEditor::IconCategories' has a wrong offset!");
 static_assert(offsetof(UFortPlayerProfileBannerEditor, ColorCategories) == 0x000248, "Member 'UFortPlayerProfileBannerEditor::ColorCategories' has a wrong offset!");
 static_assert(offsetof(UFortPlayerProfileBannerEditor, ChosenIcon) == 0x000258, "Member 'UFortPlayerProfileBannerEditor::ChosenIcon' has a wrong offset!");
@@ -4636,9 +4527,8 @@ static_assert(offsetof(UFortPlayerProfileBannerEditor, ChosenColor) == 0x000268,
 static_assert(offsetof(UFortPlayerProfileBannerEditor, ChosenColorCategory) == 0x000270, "Member 'UFortPlayerProfileBannerEditor::ChosenColorCategory' has a wrong offset!");
 
 // Class FortniteUI.FortExpeditionVehicleTileItemWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortExpeditionVehicleTileItemWidget : public UCommonButton
+// 0x0010 (0x08B0 - 0x08A0)
+class UFortExpeditionVehicleTileItemWidget : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4654,9 +4544,8 @@ public:
 		return GetDefaultObjImpl<UFortExpeditionVehicleTileItemWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortExpeditionVehicleTileItemWidget) == 0x322CBBB8, "Wrong alignment on UFortExpeditionVehicleTileItemWidget");
-static_assert(sizeof(UFortExpeditionVehicleTileItemWidget) == 0x322CBBB8, "Wrong size on UFortExpeditionVehicleTileItemWidget");
+static_assert(alignof(UFortExpeditionVehicleTileItemWidget) == 0x000008, "Wrong alignment on UFortExpeditionVehicleTileItemWidget");
+static_assert(sizeof(UFortExpeditionVehicleTileItemWidget) == 0x0008B0, "Wrong size on UFortExpeditionVehicleTileItemWidget");
 static_assert(offsetof(UFortExpeditionVehicleTileItemWidget, SquadId) == 0x0008A8, "Member 'UFortExpeditionVehicleTileItemWidget::SquadId' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreeCanvasEntityInterface
@@ -4681,9 +4570,8 @@ static_assert(alignof(IFortSkillTreeCanvasEntityInterface) == 0x000008, "Wrong a
 static_assert(sizeof(IFortSkillTreeCanvasEntityInterface) == 0x000028, "Wrong size on IFortSkillTreeCanvasEntityInterface");
 
 // Class FortniteUI.FortPartyTreeItemBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPartyTreeItemBase : public UCommonButton
+// 0x0018 (0x08B8 - 0x08A0)
+class UFortPartyTreeItemBase : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4704,9 +4592,8 @@ public:
 		return GetDefaultObjImpl<UFortPartyTreeItemBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPartyTreeItemBase) == 0x322CBBB8, "Wrong alignment on UFortPartyTreeItemBase");
-static_assert(sizeof(UFortPartyTreeItemBase) == 0x322CBBB8, "Wrong size on UFortPartyTreeItemBase");
+static_assert(alignof(UFortPartyTreeItemBase) == 0x000008, "Wrong alignment on UFortPartyTreeItemBase");
+static_assert(sizeof(UFortPartyTreeItemBase) == 0x0008B8, "Wrong size on UFortPartyTreeItemBase");
 static_assert(offsetof(UFortPartyTreeItemBase, SocialItem) == 0x0008A8, "Member 'UFortPartyTreeItemBase::SocialItem' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreeNodeDisplayDataRegistry
@@ -4732,9 +4619,8 @@ static_assert(sizeof(UFortSkillTreeNodeDisplayDataRegistry) == 0x000098, "Wrong 
 static_assert(offsetof(UFortSkillTreeNodeDisplayDataRegistry, SkillTreeNodeStyleIdToDisplayDataMap) == 0x000028, "Member 'UFortSkillTreeNodeDisplayDataRegistry::SkillTreeNodeStyleIdToDisplayDataMap' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreeCanvasNode
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSkillTreeCanvasNode : public UCommonButton
+// 0x0028 (0x08C8 - 0x08A0)
+class UFortSkillTreeCanvasNode : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4760,17 +4646,15 @@ public:
 		return GetDefaultObjImpl<UFortSkillTreeCanvasNode>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSkillTreeCanvasNode) == 0x322CBBB8, "Wrong alignment on UFortSkillTreeCanvasNode");
-static_assert(sizeof(UFortSkillTreeCanvasNode) == 0x322CBBB8, "Wrong size on UFortSkillTreeCanvasNode");
+static_assert(alignof(UFortSkillTreeCanvasNode) == 0x000008, "Wrong alignment on UFortSkillTreeCanvasNode");
+static_assert(sizeof(UFortSkillTreeCanvasNode) == 0x0008C8, "Wrong size on UFortSkillTreeCanvasNode");
 static_assert(offsetof(UFortSkillTreeCanvasNode, PageId) == 0x0008A8, "Member 'UFortSkillTreeCanvasNode::PageId' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreeCanvasNode, NodeID) == 0x0008B0, "Member 'UFortSkillTreeCanvasNode::NodeID' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreeCanvasNode, ShouldHideConnectorsToDependents) == 0x0008B8, "Member 'UFortSkillTreeCanvasNode::ShouldHideConnectorsToDependents' has a wrong offset!");
 
 // Class FortniteUI.FortKeybindWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortKeybindWidget : public UCommonUserWidget
+// 0x0058 (0x0290 - 0x0238)
+class UFortKeybindWidget : public UCommonUserWidget
 {
 public:
 	class FName                                   BoundAction;                                       // 0x0238(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4780,7 +4664,7 @@ public:
 	bool                                          bShowKeybindBorder;                                // 0x0243(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bShowTimeCountDown;                                // 0x0244(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_245[0x3];                                      // 0x0245(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   BoundKey;                                          // 0x0248(0x11821D80)(BlueprintVisible, BlueprintReadOnly, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FKey                                   BoundKey;                                          // 0x0248(0x0018)(BlueprintVisible, BlueprintReadOnly, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UImage*                                 HoldKeybindImage;                                  // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonTextBlock*                       TextCountdown;                                     // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UWidgetSwitcher*                        KeyCountdownSwitcher;                              // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4811,9 +4695,8 @@ public:
 		return GetDefaultObjImpl<UFortKeybindWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortKeybindWidget) == 0x322CBBB8, "Wrong alignment on UFortKeybindWidget");
-static_assert(sizeof(UFortKeybindWidget) == 0x322CBBB8, "Wrong size on UFortKeybindWidget");
+static_assert(alignof(UFortKeybindWidget) == 0x000008, "Wrong alignment on UFortKeybindWidget");
+static_assert(sizeof(UFortKeybindWidget) == 0x000290, "Wrong size on UFortKeybindWidget");
 static_assert(offsetof(UFortKeybindWidget, BoundAction) == 0x000238, "Member 'UFortKeybindWidget::BoundAction' has a wrong offset!");
 static_assert(offsetof(UFortKeybindWidget, bForcedHoldKeybind) == 0x000240, "Member 'UFortKeybindWidget::bForcedHoldKeybind' has a wrong offset!");
 static_assert(offsetof(UFortKeybindWidget, ForcedHoldKeybindStatus) == 0x000241, "Member 'UFortKeybindWidget::ForcedHoldKeybindStatus' has a wrong offset!");
@@ -4828,9 +4711,8 @@ static_assert(offsetof(UFortKeybindWidget, PercentageMaterialParameterName) == 0
 static_assert(offsetof(UFortKeybindWidget, ProgressPercentageMID) == 0x000280, "Member 'UFortKeybindWidget::ProgressPercentageMID' has a wrong offset!");
 
 // Class FortniteUI.FortItemInspectionScreen
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemInspectionScreen : public UCommonActivatablePanel
+// 0x0000 (0x03E0 - 0x03E0)
+class UFortItemInspectionScreen : public UCommonActivatablePanel
 {
 public:
 	void OpenItemInspect(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, bool ShouldAllowUpgrading, bool ShouldAllowEvolution, bool ShouldAllowFavorite, bool IsTemporaryItem);
@@ -4845,20 +4727,19 @@ public:
 		return GetDefaultObjImpl<UFortItemInspectionScreen>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemInspectionScreen) == 0x322CBBB8, "Wrong alignment on UFortItemInspectionScreen");
-static_assert(sizeof(UFortItemInspectionScreen) == 0x322CBBB8, "Wrong size on UFortItemInspectionScreen");
+static_assert(alignof(UFortItemInspectionScreen) == 0x000008, "Wrong alignment on UFortItemInspectionScreen");
+static_assert(sizeof(UFortItemInspectionScreen) == 0x0003E0, "Wrong size on UFortItemInspectionScreen");
 
 // Class FortniteUI.FortSkillTreeViewer
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D0 (0x04B0 - 0x03E0)
 class UFortSkillTreeViewer final : public UCommonActivatablePanel
 {
 public:
 	UMulticastDelegateProperty_                   OnNodeSelectionChangedEvent;                       // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FMargin                                PageDisplayAreaMargins;                            // 0x03F0(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                PageDisplayAreaMargins;                            // 0x03F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 	class UFortSkillTreePageWidget*               CurrentPageWidget;                                 // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UOverlay*                               PageHostOverlay;                                   // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FDataTableRowHandle                    BackOutInputAction;                                // 0x0410(0x1182EB00)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FDataTableRowHandle                    BackOutInputAction;                                // 0x0410(0x0010)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	TMap<class FName, class UFortSkillTreePageWidget*> PageIdToWidgetCache;                               // 0x0420(0x0050)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	float                                         ZoomLevel;                                         // 0x0470(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_474[0x3C];                                     // 0x0474(0x003C)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -4893,8 +4774,8 @@ public:
 		return GetDefaultObjImpl<UFortSkillTreeViewer>();
 	}
 };
-static_assert(alignof(UFortSkillTreeViewer) == 0x322CBBB8, "Wrong alignment on UFortSkillTreeViewer");
-static_assert(sizeof(UFortSkillTreeViewer) == 0x322CBBB8, "Wrong size on UFortSkillTreeViewer");
+static_assert(alignof(UFortSkillTreeViewer) == 0x000008, "Wrong alignment on UFortSkillTreeViewer");
+static_assert(sizeof(UFortSkillTreeViewer) == 0x0004B0, "Wrong size on UFortSkillTreeViewer");
 static_assert(offsetof(UFortSkillTreeViewer, OnNodeSelectionChangedEvent) == 0x0003E0, "Member 'UFortSkillTreeViewer::OnNodeSelectionChangedEvent' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreeViewer, PageDisplayAreaMargins) == 0x0003F0, "Member 'UFortSkillTreeViewer::PageDisplayAreaMargins' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreeViewer, CurrentPageWidget) == 0x000400, "Member 'UFortSkillTreeViewer::CurrentPageWidget' has a wrong offset!");
@@ -4904,7 +4785,7 @@ static_assert(offsetof(UFortSkillTreeViewer, PageIdToWidgetCache) == 0x000420, "
 static_assert(offsetof(UFortSkillTreeViewer, ZoomLevel) == 0x000470, "Member 'UFortSkillTreeViewer::ZoomLevel' has a wrong offset!");
 
 // Class FortniteUI.FortUIDataConfiguration
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x2520 (0x2548 - 0x0028)
 class UFortUIDataConfiguration : public UPrimaryDataAsset
 {
 public:
@@ -4914,15 +4795,15 @@ public:
 	TArray<TSoftClassPtr<class UClass>>           CachedWidgetClasses;                               // 0x0188(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
 	TMap<EFortBrushSize, int32>                   StandardImageBrushSizes;                           // 0x0198(0x0050)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> PowerRatingIconMultiSizeBrush;                     // 0x01E8(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PowerRatingEnchantedPositiveColorOverride;         // 0x0208(0x11821300)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PowerRatingEnchantedNegativeColorOverride;         // 0x0218(0x11821300)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PowerRatingEnchantedPositiveColorOverride;         // 0x0208(0x0010)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PowerRatingEnchantedNegativeColorOverride;         // 0x0218(0x0010)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> FilledTierPipMultiSizeBrush;                       // 0x0228(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> UnfilledTierPipMultiSizeBrush;                     // 0x0248(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> PreviewingTierPipMultiSizeBrush;                   // 0x0268(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> UpgradeArrowMultiSizeBrush;                        // 0x0288(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> ComparisonUpArrowMultiSizeBrush;                   // 0x02A8(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BetterComparisonResultColor;                       // 0x02C8(0x11821300)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           WorseComparisonResultColor;                        // 0x02D8(0x11821300)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BetterComparisonResultColor;                       // 0x02C8(0x0010)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           WorseComparisonResultColor;                        // 0x02D8(0x0010)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> InventoryOverflowIndicatorMultiSizeBrush;          // 0x02E8(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> TrackedSchematicIndicatorMultiSizeBrush;           // 0x0308(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> FavoritedItemIndicatorMultiSizeBrush;              // 0x0328(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4951,19 +4832,20 @@ public:
 	float                                         SkillTreeZoomLevelIncrement;                       // 0x051C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SkillTreeZoomLevelIncrementController;             // 0x0520(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SkillTreeZoomLevelIncrementMobile;                 // 0x0524(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortSkillTreeCanvasStyle              SkillTreeCanvasStyle;                              // 0x0528(0x1182E980)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortSkillTreeCanvasStyle              SkillTreeCanvasStyle;                              // 0x0528(0x0034)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_55C[0x4];                                      // 0x055C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   DefaultSkillTreeNodeWidgetType;                    // 0x0560(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<EFortHomebaseNodeDisplayType, TSoftClassPtr<class UClass>> SkillTreeNodeWidgetTypeMap;                        // 0x0580(0x0050)(Edit, EditFixedSize, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
 	TMap<EFortBrushSize, TSubclassOf<class UCommonTextStyle>> ItemCardPowerRatingTextStylesByBrushSize;          // 0x05D0(0x0050)(Edit, EditFixedSize, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
 	TMap<EFortBrushSize, TSubclassOf<class UCommonTextStyle>> ItemCardStackCountTextStylesByBrushSize;           // 0x0620(0x0050)(Edit, EditFixedSize, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UMaterialInterface>      ItemCardLevelMeterMaterial;                        // 0x0670(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UMaterialInterface>      ItemCardDurabilityMeterMaterial;                   // 0x0690(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemCardBackgroundPlateBrush;                      // 0x06B0(0x322CBBB8)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemCardRarityGradientBrush;                       // 0x0740(0x322CBBB8)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemCardDefenderPortraitBackgroundBrush;           // 0x07D0(0x322CBBB8)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemCardHeroPortraitBackgroundBrush;               // 0x0860(0x322CBBB8)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemCardLeadSurvivorPortraitBackgroundBrush;       // 0x08F0(0x322CBBB8)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ItemCardSchematicBackgroundBrush;                  // 0x0980(0x322CBBB8)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemCardBackgroundPlateBrush;                      // 0x06B0(0x0090)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemCardRarityGradientBrush;                       // 0x0740(0x0090)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemCardDefenderPortraitBackgroundBrush;           // 0x07D0(0x0090)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemCardHeroPortraitBackgroundBrush;               // 0x0860(0x0090)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemCardLeadSurvivorPortraitBackgroundBrush;       // 0x08F0(0x0090)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ItemCardSchematicBackgroundBrush;                  // 0x0980(0x0090)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> ItemCardRewardTraitsBackgroundMultiSizeBrush;      // 0x0A10(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UFortMultiSizeBrushAsset> ItemCardSchematicTraitsBackgroundMultiSizeBrush;   // 0x0A30(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftClassPtr<class UClass>                   FrontendItemManagementScreenType;                  // 0x0A50(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4976,7 +4858,7 @@ public:
 	TSoftClassPtr<class UClass>                   MainTabSet;                                        // 0x0B30(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLimitedToES2Features;                             // 0x0B50(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B51[0x7];                                      // 0x0B51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FWeightedBlendables                    FrontEndFFPostProcessMaterials;                    // 0x0B58(0x11821D80)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FWeightedBlendables                    FrontEndFFPostProcessMaterials;                    // 0x0B58(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	bool                                          bUseSpecificPinataWeapon;                          // 0x0B68(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_B69[0x7];                                      // 0x0B69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EFortItemCardSize, struct FVector2D>     PersonnelAndSchematicCardSizes;                    // 0x0B70(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
@@ -4992,16 +4874,17 @@ public:
 	TSoftObjectPtr<class UMaterialInterface>      UniversalItemCardUnearnedTierIconMaterial;         // 0x0DA0(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UMaterialInterface>      UniversalItemCardAvailableTierIconMaterial;        // 0x0DC0(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UMaterialInterface>      UniversalItemCardEarnedTierIconMaterial;           // 0x0DE0(0x0020)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortItemCard_XL_PersonnelAndSchematics_Configuration ItemCardConfig_XL_PersonnelAndSchematics;          // 0x0E00(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortItemCard_XL_ItemInstance_Configuration ItemCardConfig_XL_ItemInstance;                    // 0x11B0(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortItemCard_L_PersonnelAndSchematics_Configuration ItemCardConfig_L_PersonnelAndSchematics;           // 0x1448(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortItemCard_L_ItemInstance_Configuration ItemCardConfig_L_ItemInstance;                     // 0x1788(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortItemCard_M_PersonnelAndSchematics_Configuration ItemCardConfig_M_PersonnelAndSchematics;           // 0x1A40(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortItemCard_M_ItemInstance_Configuration ItemCardConfig_M_ItemInstance;                     // 0x1D80(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortItemCard_S_PersonnelAndSchematics_Configuration ItemCardConfig_S_PersonnelAndSchematics;           // 0x2010(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortItemCard_S_ItemInstance_Configuration ItemCardConfig_S_ItemInstance;                     // 0x2350(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FFortItemCard_XS_PersonnelAndSchematics_Configuration ItemCardConfig_XS_PersonnelAndSchematics;          // 0x2510(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFortItemCard_XS_ItemInstance_Configuration ItemCardConfig_XS_ItemInstance;                    // 0x2544(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemCard_XL_PersonnelAndSchematics_Configuration ItemCardConfig_XL_PersonnelAndSchematics;          // 0x0E00(0x03B0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortItemCard_XL_ItemInstance_Configuration ItemCardConfig_XL_ItemInstance;                    // 0x11B0(0x0298)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortItemCard_L_PersonnelAndSchematics_Configuration ItemCardConfig_L_PersonnelAndSchematics;           // 0x1448(0x0340)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortItemCard_L_ItemInstance_Configuration ItemCardConfig_L_ItemInstance;                     // 0x1788(0x02B8)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortItemCard_M_PersonnelAndSchematics_Configuration ItemCardConfig_M_PersonnelAndSchematics;           // 0x1A40(0x0340)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortItemCard_M_ItemInstance_Configuration ItemCardConfig_M_ItemInstance;                     // 0x1D80(0x0290)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortItemCard_S_PersonnelAndSchematics_Configuration ItemCardConfig_S_PersonnelAndSchematics;           // 0x2010(0x0340)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortItemCard_S_ItemInstance_Configuration ItemCardConfig_S_ItemInstance;                     // 0x2350(0x01C0)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FFortItemCard_XS_PersonnelAndSchematics_Configuration ItemCardConfig_XS_PersonnelAndSchematics;          // 0x2510(0x0034)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortItemCard_XS_ItemInstance_Configuration ItemCardConfig_XS_ItemInstance;                    // 0x2544(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2545[0x3];                                     // 0x2545(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UFortMultiSizeBrushAsset* GetDefenderSubtypeIconMultiSizeBrushByTag(const struct FGameplayTag& DefenderSubtypeTag);
@@ -5016,8 +4899,8 @@ public:
 		return GetDefaultObjImpl<UFortUIDataConfiguration>();
 	}
 };
-static_assert(alignof(UFortUIDataConfiguration) == 0x1182E980, "Wrong alignment on UFortUIDataConfiguration");
-static_assert(sizeof(UFortUIDataConfiguration) == 0x1182E980, "Wrong size on UFortUIDataConfiguration");
+static_assert(alignof(UFortUIDataConfiguration) == 0x000008, "Wrong alignment on UFortUIDataConfiguration");
+static_assert(sizeof(UFortUIDataConfiguration) == 0x002548, "Wrong size on UFortUIDataConfiguration");
 static_assert(offsetof(UFortUIDataConfiguration, DefaultUIDataConfigurationPath) == 0x000028, "Member 'UFortUIDataConfiguration::DefaultUIDataConfigurationPath' has a wrong offset!");
 static_assert(offsetof(UFortUIDataConfiguration, MobileUIDataConfigurationPath) == 0x000038, "Member 'UFortUIDataConfiguration::MobileUIDataConfigurationPath' has a wrong offset!");
 static_assert(offsetof(UFortUIDataConfiguration, StateWidgetClasses) == 0x000048, "Member 'UFortUIDataConfiguration::StateWidgetClasses' has a wrong offset!");
@@ -5110,9 +4993,8 @@ static_assert(offsetof(UFortUIDataConfiguration, ItemCardConfig_XS_PersonnelAndS
 static_assert(offsetof(UFortUIDataConfiguration, ItemCardConfig_XS_ItemInstance) == 0x002544, "Member 'UFortUIDataConfiguration::ItemCardConfig_XS_ItemInstance' has a wrong offset!");
 
 // Class FortniteUI.FortQuestTrackerSubEntry
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortQuestTrackerSubEntry : public UCommonUserWidget
+// 0x0040 (0x0278 - 0x0238)
+class UFortQuestTrackerSubEntry : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x10];                                     // 0x0238(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -5139,16 +5021,15 @@ public:
 		return GetDefaultObjImpl<UFortQuestTrackerSubEntry>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortQuestTrackerSubEntry) == 0x322CBBB8, "Wrong alignment on UFortQuestTrackerSubEntry");
-static_assert(sizeof(UFortQuestTrackerSubEntry) == 0x322CBBB8, "Wrong size on UFortQuestTrackerSubEntry");
+static_assert(alignof(UFortQuestTrackerSubEntry) == 0x000008, "Wrong alignment on UFortQuestTrackerSubEntry");
+static_assert(sizeof(UFortQuestTrackerSubEntry) == 0x000278, "Wrong size on UFortQuestTrackerSubEntry");
 static_assert(offsetof(UFortQuestTrackerSubEntry, TrackedObjective) == 0x000248, "Member 'UFortQuestTrackerSubEntry::TrackedObjective' has a wrong offset!");
 static_assert(offsetof(UFortQuestTrackerSubEntry, OnSizeEstimateChangedDelegate) == 0x000250, "Member 'UFortQuestTrackerSubEntry::OnSizeEstimateChangedDelegate' has a wrong offset!");
 static_assert(offsetof(UFortQuestTrackerSubEntry, OnHUDQuestObjectiveCompletedDelegate) == 0x000260, "Member 'UFortQuestTrackerSubEntry::OnHUDQuestObjectiveCompletedDelegate' has a wrong offset!");
 static_assert(offsetof(UFortQuestTrackerSubEntry, bConfigureAsHUD) == 0x000270, "Member 'UFortQuestTrackerSubEntry::bConfigureAsHUD' has a wrong offset!");
 
 // Class FortniteUI.FortFrontEndContext
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x0220 (0x0248 - 0x0028)
 class UFortFrontEndContext final : public UBlueprintContextBase
 {
 public:
@@ -5171,9 +5052,8 @@ public:
 	UMulticastDelegateProperty_                   OnRecruitHero;                                     // 0x0120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnPlayerLoggedIn;                                  // 0x0130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnPlayerLoggedOut;                                 // 0x0140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FFortFrontEndFeatureStruct             Features[0x9];                                     // 0x0150(0x1182E980)(Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_-6265C930[0x6265CB58];                         // 0x-6265C930(0x6265CB58)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortSavedModeLoadout                  CachedModeLoadout;                                 // 0x0228(0x11821780)(Transient, NativeAccessSpecifierPrivate)
+	struct FFortFrontEndFeatureStruct             Features[0x9];                                     // 0x0150(0x0018)(Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	struct FFortSavedModeLoadout                  CachedModeLoadout;                                 // 0x0228(0x0020)(Transient, NativeAccessSpecifierPrivate)
 
 public:
 	void BindToFeatureStateAndInitialize(EFortFrontEndFeature Feature, TDelegate<void(EFortFrontEndFeature ChangedFeature, EFortFrontEndFeatureState NewState)> Delegate);
@@ -5253,8 +5133,8 @@ public:
 		return GetDefaultObjImpl<UFortFrontEndContext>();
 	}
 };
-static_assert(alignof(UFortFrontEndContext) == 0x1182E980, "Wrong alignment on UFortFrontEndContext");
-static_assert(sizeof(UFortFrontEndContext) == 0x1182E980, "Wrong size on UFortFrontEndContext");
+static_assert(alignof(UFortFrontEndContext) == 0x000008, "Wrong alignment on UFortFrontEndContext");
+static_assert(sizeof(UFortFrontEndContext) == 0x000248, "Wrong size on UFortFrontEndContext");
 static_assert(offsetof(UFortFrontEndContext, OnFrontEndCameraChanged) == 0x000030, "Member 'UFortFrontEndContext::OnFrontEndCameraChanged' has a wrong offset!");
 static_assert(offsetof(UFortFrontEndContext, OnLobbyEmptyPlayerClicked) == 0x000040, "Member 'UFortFrontEndContext::OnLobbyEmptyPlayerClicked' has a wrong offset!");
 static_assert(offsetof(UFortFrontEndContext, OnLobbyPlayerGadgetsClicked) == 0x000050, "Member 'UFortFrontEndContext::OnLobbyPlayerGadgetsClicked' has a wrong offset!");
@@ -5277,7 +5157,7 @@ static_assert(offsetof(UFortFrontEndContext, Features) == 0x000150, "Member 'UFo
 static_assert(offsetof(UFortFrontEndContext, CachedModeLoadout) == 0x000228, "Member 'UFortFrontEndContext::CachedModeLoadout' has a wrong offset!");
 
 // Class FortniteUI.FortGridPickerTile
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0250 - 0x0240)
 class UFortGridPickerTile final : public UFortUserWidget
 {
 public:
@@ -5301,15 +5181,14 @@ public:
 		return GetDefaultObjImpl<UFortGridPickerTile>();
 	}
 };
-static_assert(alignof(UFortGridPickerTile) == 0x322CBBB8, "Wrong alignment on UFortGridPickerTile");
-static_assert(sizeof(UFortGridPickerTile) == 0x322CBBB8, "Wrong size on UFortGridPickerTile");
+static_assert(alignof(UFortGridPickerTile) == 0x000008, "Wrong alignment on UFortGridPickerTile");
+static_assert(sizeof(UFortGridPickerTile) == 0x000250, "Wrong size on UFortGridPickerTile");
 static_assert(offsetof(UFortGridPickerTile, Data) == 0x000240, "Member 'UFortGridPickerTile::Data' has a wrong offset!");
 static_assert(offsetof(UFortGridPickerTile, Owner) == 0x000248, "Member 'UFortGridPickerTile::Owner' has a wrong offset!");
 
 // Class FortniteUI.FortGridWidgetBase
-// 0x20AA42B8 (0x322CBBB8 - 0x11827900)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortGridWidgetBase : public UContentWidget
+// 0x0150 (0x0280 - 0x0130)
+class UFortGridWidgetBase : public UContentWidget
 {
 public:
 	TSubclassOf<class UFortGridPickerTile>        ClearWidgetType;                                   // 0x0130(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -5320,9 +5199,9 @@ public:
 	bool                                          bShrinkToFit;                                      // 0x0148(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PeekOverflowTilePercentage;                        // 0x014C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FMargin                                TilePadding;                                       // 0x0150(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FSlateBrush                            GridBackground;                                    // 0x0160(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	struct FMargin                                GridBackgroundPadding;                             // 0x01F0(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FMargin                                TilePadding;                                       // 0x0150(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FSlateBrush                            GridBackground;                                    // 0x0160(0x0090)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	struct FMargin                                GridBackgroundPadding;                             // 0x01F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	TArray<class UObject*>                        DataProvider;                                      // 0x0200(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	UMulticastDelegateProperty_                   OnTileGenerated;                                   // 0x0210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnTileClicked;                                     // 0x0220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -5357,9 +5236,8 @@ public:
 		return GetDefaultObjImpl<UFortGridWidgetBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortGridWidgetBase) == 0x322CBBB8, "Wrong alignment on UFortGridWidgetBase");
-static_assert(sizeof(UFortGridWidgetBase) == 0x322CBBB8, "Wrong size on UFortGridWidgetBase");
+static_assert(alignof(UFortGridWidgetBase) == 0x000008, "Wrong alignment on UFortGridWidgetBase");
+static_assert(sizeof(UFortGridWidgetBase) == 0x000280, "Wrong size on UFortGridWidgetBase");
 static_assert(offsetof(UFortGridWidgetBase, ClearWidgetType) == 0x000130, "Member 'UFortGridWidgetBase::ClearWidgetType' has a wrong offset!");
 static_assert(offsetof(UFortGridWidgetBase, TileWidth) == 0x000138, "Member 'UFortGridWidgetBase::TileWidth' has a wrong offset!");
 static_assert(offsetof(UFortGridWidgetBase, TileHeight) == 0x00013C, "Member 'UFortGridWidgetBase::TileHeight' has a wrong offset!");
@@ -5381,7 +5259,7 @@ static_assert(offsetof(UFortGridWidgetBase, bReversed) == 0x000259, "Member 'UFo
 static_assert(offsetof(UFortGridWidgetBase, GetSortKeyFor) == 0x000260, "Member 'UFortGridWidgetBase::GetSortKeyFor' has a wrong offset!");
 
 // Class FortniteUI.FortGridPickerButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x02C8 - 0x0280)
 class UFortGridPickerButton final : public UFortGridWidgetBase
 {
 public:
@@ -5410,8 +5288,8 @@ public:
 		return GetDefaultObjImpl<UFortGridPickerButton>();
 	}
 };
-static_assert(alignof(UFortGridPickerButton) == 0x322CBBB8, "Wrong alignment on UFortGridPickerButton");
-static_assert(sizeof(UFortGridPickerButton) == 0x322CBBB8, "Wrong size on UFortGridPickerButton");
+static_assert(alignof(UFortGridPickerButton) == 0x000008, "Wrong alignment on UFortGridPickerButton");
+static_assert(sizeof(UFortGridPickerButton) == 0x0002C8, "Wrong size on UFortGridPickerButton");
 static_assert(offsetof(UFortGridPickerButton, GridPlacement) == 0x000280, "Member 'UFortGridPickerButton::GridPlacement' has a wrong offset!");
 static_assert(offsetof(UFortGridPickerButton, GridWidget) == 0x000288, "Member 'UFortGridPickerButton::GridWidget' has a wrong offset!");
 static_assert(offsetof(UFortGridPickerButton, bCloseOnTileClicked) == 0x000290, "Member 'UFortGridPickerButton::bCloseOnTileClicked' has a wrong offset!");
@@ -5419,9 +5297,12 @@ static_assert(offsetof(UFortGridPickerButton, GridWidgetDelegate) == 0x000298, "
 static_assert(offsetof(UFortGridPickerButton, OnGridPickerOpenChanged) == 0x0002A8, "Member 'UFortGridPickerButton::OnGridPickerOpenChanged' has a wrong offset!");
 
 // Class FortniteUI.FortGridWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0290 - 0x0280)
 class UFortGridWidget final : public UFortGridWidgetBase
 {
+public:
+	uint8                                         Pad_280[0x10];                                     // 0x0280(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -5432,8 +5313,8 @@ public:
 		return GetDefaultObjImpl<UFortGridWidget>();
 	}
 };
-static_assert(alignof(UFortGridWidget) == 0x322CBBB8, "Wrong alignment on UFortGridWidget");
-static_assert(sizeof(UFortGridWidget) == 0x322CBBB8, "Wrong size on UFortGridWidget");
+static_assert(alignof(UFortGridWidget) == 0x000008, "Wrong alignment on UFortGridWidget");
+static_assert(sizeof(UFortGridWidget) == 0x000290, "Wrong size on UFortGridWidget");
 
 // Class FortniteUI.FortHeroManagementContext
 // 0x00B0 (0x00D8 - 0x0028)
@@ -5531,9 +5412,8 @@ static_assert(offsetof(UFortHeroManagementContext, CurrentHero) == 0x0000B8, "Me
 static_assert(offsetof(UFortHeroManagementContext, HeroBeingDeleted) == 0x0000C8, "Member 'UFortHeroManagementContext::HeroBeingDeleted' has a wrong offset!");
 
 // Class FortniteUI.FortQuestScreen
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortQuestScreen : public UCommonActivatablePanel
+// 0x0000 (0x03E0 - 0x03E0)
+class UFortQuestScreen : public UCommonActivatablePanel
 {
 public:
 	void ProcessPendingSeenQuestItems();
@@ -5548,12 +5428,11 @@ public:
 		return GetDefaultObjImpl<UFortQuestScreen>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortQuestScreen) == 0x322CBBB8, "Wrong alignment on UFortQuestScreen");
-static_assert(sizeof(UFortQuestScreen) == 0x322CBBB8, "Wrong size on UFortQuestScreen");
+static_assert(alignof(UFortQuestScreen) == 0x000008, "Wrong alignment on UFortQuestScreen");
+static_assert(sizeof(UFortQuestScreen) == 0x0003E0, "Wrong size on UFortQuestScreen");
 
 // Class FortniteUI.FortHeroNotificationHandler
-// 0x0000 (0x11824600 - 0x11824600)
+// 0x0010 (0x01F0 - 0x01E0)
 class UFortHeroNotificationHandler : public UFortDialogNotificationHandler
 {
 public:
@@ -5573,14 +5452,13 @@ public:
 		return GetDefaultObjImpl<UFortHeroNotificationHandler>();
 	}
 };
-static_assert(alignof(UFortHeroNotificationHandler) == 0x11824600, "Wrong alignment on UFortHeroNotificationHandler");
-static_assert(sizeof(UFortHeroNotificationHandler) == 0x11824600, "Wrong size on UFortHeroNotificationHandler");
+static_assert(alignof(UFortHeroNotificationHandler) == 0x000010, "Wrong alignment on UFortHeroNotificationHandler");
+static_assert(sizeof(UFortHeroNotificationHandler) == 0x0001F0, "Wrong size on UFortHeroNotificationHandler");
 static_assert(offsetof(UFortHeroNotificationHandler, Hero) == 0x0001E0, "Member 'UFortHeroNotificationHandler::Hero' has a wrong offset!");
 
 // Class FortniteUI.FortHeroSupportPerkWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortHeroSupportPerkWidget : public UUserWidget
+// 0x0388 (0x05B8 - 0x0230)
+class UFortHeroSupportPerkWidget : public UUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortHero>               HeroToRepresent;                                   // 0x0230(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5616,9 +5494,8 @@ public:
 		return GetDefaultObjImpl<UFortHeroSupportPerkWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortHeroSupportPerkWidget) == 0x322CBBB8, "Wrong alignment on UFortHeroSupportPerkWidget");
-static_assert(sizeof(UFortHeroSupportPerkWidget) == 0x322CBBB8, "Wrong size on UFortHeroSupportPerkWidget");
+static_assert(alignof(UFortHeroSupportPerkWidget) == 0x000008, "Wrong alignment on UFortHeroSupportPerkWidget");
+static_assert(sizeof(UFortHeroSupportPerkWidget) == 0x0005B8, "Wrong size on UFortHeroSupportPerkWidget");
 static_assert(offsetof(UFortHeroSupportPerkWidget, HeroToRepresent) == 0x000230, "Member 'UFortHeroSupportPerkWidget::HeroToRepresent' has a wrong offset!");
 static_assert(offsetof(UFortHeroSupportPerkWidget, SupportTypeToRepresent) == 0x000238, "Member 'UFortHeroSupportPerkWidget::SupportTypeToRepresent' has a wrong offset!");
 static_assert(offsetof(UFortHeroSupportPerkWidget, SupportPerkWidgetState) == 0x000239, "Member 'UFortHeroSupportPerkWidget::SupportPerkWidgetState' has a wrong offset!");
@@ -5763,9 +5640,8 @@ static_assert(offsetof(UFortHomebaseUIContext, OnNodePurchased) == 0x000048, "Me
 static_assert(offsetof(UFortHomebaseUIContext, SquadIconDataTableAsset) == 0x000058, "Member 'UFortHomebaseUIContext::SquadIconDataTableAsset' has a wrong offset!");
 
 // Class FortniteUI.FortQuestExpiresWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortQuestExpiresWidget : public UCommonUserWidget
+// 0x0010 (0x0248 - 0x0238)
+class UFortQuestExpiresWidget : public UCommonUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortQuestItem>          Item;                                              // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -5785,13 +5661,12 @@ public:
 		return GetDefaultObjImpl<UFortQuestExpiresWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortQuestExpiresWidget) == 0x322CBBB8, "Wrong alignment on UFortQuestExpiresWidget");
-static_assert(sizeof(UFortQuestExpiresWidget) == 0x322CBBB8, "Wrong size on UFortQuestExpiresWidget");
+static_assert(alignof(UFortQuestExpiresWidget) == 0x000008, "Wrong alignment on UFortQuestExpiresWidget");
+static_assert(sizeof(UFortQuestExpiresWidget) == 0x000248, "Wrong size on UFortQuestExpiresWidget");
 static_assert(offsetof(UFortQuestExpiresWidget, Item) == 0x000238, "Member 'UFortQuestExpiresWidget::Item' has a wrong offset!");
 
 // Class FortniteUI.FortHomeCMSScreenBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0460 - 0x0458)
 class UFortHomeCMSScreenBase final : public UEpicCMSScreenBase
 {
 public:
@@ -5812,14 +5687,13 @@ public:
 		return GetDefaultObjImpl<UFortHomeCMSScreenBase>();
 	}
 };
-static_assert(alignof(UFortHomeCMSScreenBase) == 0x322CBBB8, "Wrong alignment on UFortHomeCMSScreenBase");
-static_assert(sizeof(UFortHomeCMSScreenBase) == 0x322CBBB8, "Wrong size on UFortHomeCMSScreenBase");
+static_assert(alignof(UFortHomeCMSScreenBase) == 0x000008, "Wrong alignment on UFortHomeCMSScreenBase");
+static_assert(sizeof(UFortHomeCMSScreenBase) == 0x000460, "Wrong size on UFortHomeCMSScreenBase");
 static_assert(offsetof(UFortHomeCMSScreenBase, LayoutSwitcher) == 0x000458, "Member 'UFortHomeCMSScreenBase::LayoutSwitcher' has a wrong offset!");
 
 // Class FortniteUI.FortHUDCenterPopupMessageWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortHUDCenterPopupMessageWidget : public UCommonUserWidget
+// 0x0030 (0x0268 - 0x0238)
+class UFortHUDCenterPopupMessageWidget : public UCommonUserWidget
 {
 public:
 	TSoftClassPtr<class UClass>                   CenterPopupModalWidgetClass;                       // 0x0238(0x0020)(Edit, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -5842,9 +5716,8 @@ public:
 		return GetDefaultObjImpl<UFortHUDCenterPopupMessageWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortHUDCenterPopupMessageWidget) == 0x322CBBB8, "Wrong alignment on UFortHUDCenterPopupMessageWidget");
-static_assert(sizeof(UFortHUDCenterPopupMessageWidget) == 0x322CBBB8, "Wrong size on UFortHUDCenterPopupMessageWidget");
+static_assert(alignof(UFortHUDCenterPopupMessageWidget) == 0x000008, "Wrong alignment on UFortHUDCenterPopupMessageWidget");
+static_assert(sizeof(UFortHUDCenterPopupMessageWidget) == 0x000268, "Wrong size on UFortHUDCenterPopupMessageWidget");
 static_assert(offsetof(UFortHUDCenterPopupMessageWidget, CenterPopupModalWidgetClass) == 0x000238, "Member 'UFortHUDCenterPopupMessageWidget::CenterPopupModalWidgetClass' has a wrong offset!");
 static_assert(offsetof(UFortHUDCenterPopupMessageWidget, CenterPopupModalWidget) == 0x000260, "Member 'UFortHUDCenterPopupMessageWidget::CenterPopupModalWidget' has a wrong offset!");
 
@@ -6053,9 +5926,8 @@ static_assert(offsetof(UFortHUDContext, CurFocusedTrap) == 0x000498, "Member 'UF
 static_assert(offsetof(UFortHUDContext, PendingFocusBuilding) == 0x0004A8, "Member 'UFortHUDContext::PendingFocusBuilding' has a wrong offset!");
 
 // Class FortniteUI.AthenaHUDGamePhaseChangingBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaHUDGamePhaseChangingBase : public UFortHUDElementWidget
+// 0x0000 (0x0260 - 0x0260)
+class UAthenaHUDGamePhaseChangingBase : public UFortHUDElementWidget
 {
 public:
 	void GamePhaseStepChanged(EAthenaGamePhaseStep Step);
@@ -6072,14 +5944,12 @@ public:
 		return GetDefaultObjImpl<UAthenaHUDGamePhaseChangingBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaHUDGamePhaseChangingBase) == 0x322CBBB8, "Wrong alignment on UAthenaHUDGamePhaseChangingBase");
-static_assert(sizeof(UAthenaHUDGamePhaseChangingBase) == 0x322CBBB8, "Wrong size on UAthenaHUDGamePhaseChangingBase");
+static_assert(alignof(UAthenaHUDGamePhaseChangingBase) == 0x000008, "Wrong alignment on UAthenaHUDGamePhaseChangingBase");
+static_assert(sizeof(UAthenaHUDGamePhaseChangingBase) == 0x000260, "Wrong size on UAthenaHUDGamePhaseChangingBase");
 
 // Class FortniteUI.FortRewardNotificationSubWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortRewardNotificationSubWidget : public UCommonUserWidget
+// 0x0028 (0x0260 - 0x0238)
+class UFortRewardNotificationSubWidget : public UCommonUserWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnTransitionInComplete;                            // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -6120,16 +5990,14 @@ public:
 		return GetDefaultObjImpl<UFortRewardNotificationSubWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortRewardNotificationSubWidget) == 0x322CBBB8, "Wrong alignment on UFortRewardNotificationSubWidget");
-static_assert(sizeof(UFortRewardNotificationSubWidget) == 0x322CBBB8, "Wrong size on UFortRewardNotificationSubWidget");
+static_assert(alignof(UFortRewardNotificationSubWidget) == 0x000008, "Wrong alignment on UFortRewardNotificationSubWidget");
+static_assert(sizeof(UFortRewardNotificationSubWidget) == 0x000260, "Wrong size on UFortRewardNotificationSubWidget");
 static_assert(offsetof(UFortRewardNotificationSubWidget, OnTransitionInComplete) == 0x000238, "Member 'UFortRewardNotificationSubWidget::OnTransitionInComplete' has a wrong offset!");
 static_assert(offsetof(UFortRewardNotificationSubWidget, OnTransitionOutComplete) == 0x000248, "Member 'UFortRewardNotificationSubWidget::OnTransitionOutComplete' has a wrong offset!");
 
 // Class FortniteUI.FortRewardExpeditionWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortRewardExpeditionWidget : public UFortRewardNotificationSubWidget
+// 0x0068 (0x02C8 - 0x0260)
+class UFortRewardExpeditionWidget : public UFortRewardNotificationSubWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnMcpError;                                        // 0x0260(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -6149,15 +6017,13 @@ public:
 		return GetDefaultObjImpl<UFortRewardExpeditionWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortRewardExpeditionWidget) == 0x322CBBB8, "Wrong alignment on UFortRewardExpeditionWidget");
-static_assert(sizeof(UFortRewardExpeditionWidget) == 0x322CBBB8, "Wrong size on UFortRewardExpeditionWidget");
+static_assert(alignof(UFortRewardExpeditionWidget) == 0x000008, "Wrong alignment on UFortRewardExpeditionWidget");
+static_assert(sizeof(UFortRewardExpeditionWidget) == 0x0002C8, "Wrong size on UFortRewardExpeditionWidget");
 static_assert(offsetof(UFortRewardExpeditionWidget, OnMcpError) == 0x000260, "Member 'UFortRewardExpeditionWidget::OnMcpError' has a wrong offset!");
 
 // Class FortniteUI.AthenaHUDPlayerActionAlertBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaHUDPlayerActionAlertBase : public UFortHUDElementWidget
+// 0x0020 (0x0280 - 0x0260)
+class UAthenaHUDPlayerActionAlertBase : public UFortHUDElementWidget
 {
 public:
 	class AFortPlayerPawnAthena*                  LastPlayerPawn;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -6178,28 +6044,27 @@ public:
 		return GetDefaultObjImpl<UAthenaHUDPlayerActionAlertBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaHUDPlayerActionAlertBase) == 0x322CBBB8, "Wrong alignment on UAthenaHUDPlayerActionAlertBase");
-static_assert(sizeof(UAthenaHUDPlayerActionAlertBase) == 0x322CBBB8, "Wrong size on UAthenaHUDPlayerActionAlertBase");
+static_assert(alignof(UAthenaHUDPlayerActionAlertBase) == 0x000008, "Wrong alignment on UAthenaHUDPlayerActionAlertBase");
+static_assert(sizeof(UAthenaHUDPlayerActionAlertBase) == 0x000280, "Wrong size on UAthenaHUDPlayerActionAlertBase");
 static_assert(offsetof(UAthenaHUDPlayerActionAlertBase, LastPlayerPawn) == 0x000260, "Member 'UAthenaHUDPlayerActionAlertBase::LastPlayerPawn' has a wrong offset!");
 static_assert(offsetof(UAthenaHUDPlayerActionAlertBase, bReadyForNextAlert) == 0x000268, "Member 'UAthenaHUDPlayerActionAlertBase::bReadyForNextAlert' has a wrong offset!");
 
 // Class FortniteUI.FortActorIndicatorWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortActorIndicatorWidget : public UFortHUDElementWidget
+// 0x0038 (0x0298 - 0x0260)
+class UFortActorIndicatorWidget : public UFortHUDElementWidget
 {
 public:
 	uint8                                         Pad_260[0x8];                                      // 0x0260(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 IndicatedActor;                                    // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UPrimitiveComponent*                    IndicatedActorComponent;                           // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                RelativeLocation;                                  // 0x0278(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                RelativeLocation;                                  // 0x0278(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         MaxDistance;                                       // 0x0284(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bClampOnScreen;                                    // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bShowClampToScreenArrow;                           // 0x0289(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUseScreenSpacePosition;                           // 0x028A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_28B[0x1];                                      // 0x028B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              ScreenSpaceRelativeOffset;                         // 0x028C(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector2D                              ScreenSpaceRelativeOffset;                         // 0x028C(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_294[0x4];                                      // 0x0294(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -6211,9 +6076,8 @@ public:
 		return GetDefaultObjImpl<UFortActorIndicatorWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortActorIndicatorWidget) == 0x322CBBB8, "Wrong alignment on UFortActorIndicatorWidget");
-static_assert(sizeof(UFortActorIndicatorWidget) == 0x322CBBB8, "Wrong size on UFortActorIndicatorWidget");
+static_assert(alignof(UFortActorIndicatorWidget) == 0x000008, "Wrong alignment on UFortActorIndicatorWidget");
+static_assert(sizeof(UFortActorIndicatorWidget) == 0x000298, "Wrong size on UFortActorIndicatorWidget");
 static_assert(offsetof(UFortActorIndicatorWidget, IndicatedActor) == 0x000268, "Member 'UFortActorIndicatorWidget::IndicatedActor' has a wrong offset!");
 static_assert(offsetof(UFortActorIndicatorWidget, IndicatedActorComponent) == 0x000270, "Member 'UFortActorIndicatorWidget::IndicatedActorComponent' has a wrong offset!");
 static_assert(offsetof(UFortActorIndicatorWidget, RelativeLocation) == 0x000278, "Member 'UFortActorIndicatorWidget::RelativeLocation' has a wrong offset!");
@@ -6241,9 +6105,8 @@ static_assert(alignof(UFortRewardMissionAlertData) == 0x000008, "Wrong alignment
 static_assert(sizeof(UFortRewardMissionAlertData) == 0x000030, "Wrong size on UFortRewardMissionAlertData");
 
 // Class FortniteUI.AthenaPlayersLeftBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaPlayersLeftBase : public UFortHUDElementWidget
+// 0x0008 (0x0268 - 0x0260)
+class UAthenaPlayersLeftBase : public UFortHUDElementWidget
 {
 public:
 	class UTextBlock*                             PlayersLeftText;                                   // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -6258,15 +6121,13 @@ public:
 		return GetDefaultObjImpl<UAthenaPlayersLeftBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaPlayersLeftBase) == 0x322CBBB8, "Wrong alignment on UAthenaPlayersLeftBase");
-static_assert(sizeof(UAthenaPlayersLeftBase) == 0x322CBBB8, "Wrong size on UAthenaPlayersLeftBase");
+static_assert(alignof(UAthenaPlayersLeftBase) == 0x000008, "Wrong alignment on UAthenaPlayersLeftBase");
+static_assert(sizeof(UAthenaPlayersLeftBase) == 0x000268, "Wrong size on UAthenaPlayersLeftBase");
 static_assert(offsetof(UAthenaPlayersLeftBase, PlayersLeftText) == 0x000260, "Member 'UAthenaPlayersLeftBase::PlayersLeftText' has a wrong offset!");
 
 // Class FortniteUI.AthenaTeamMemberIndicatorBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaTeamMemberIndicatorBase : public UFortActorIndicatorWidget
+// 0x0000 (0x0298 - 0x0298)
+class UAthenaTeamMemberIndicatorBase : public UFortActorIndicatorWidget
 {
 public:
 	static class UClass* StaticClass()
@@ -6278,14 +6139,12 @@ public:
 		return GetDefaultObjImpl<UAthenaTeamMemberIndicatorBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaTeamMemberIndicatorBase) == 0x322CBBB8, "Wrong alignment on UAthenaTeamMemberIndicatorBase");
-static_assert(sizeof(UAthenaTeamMemberIndicatorBase) == 0x322CBBB8, "Wrong size on UAthenaTeamMemberIndicatorBase");
+static_assert(alignof(UAthenaTeamMemberIndicatorBase) == 0x000008, "Wrong alignment on UAthenaTeamMemberIndicatorBase");
+static_assert(sizeof(UAthenaTeamMemberIndicatorBase) == 0x000298, "Wrong size on UAthenaTeamMemberIndicatorBase");
 
 // Class FortniteUI.FortResultsTeleportScreenWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortResultsTeleportScreenWidget : public UCommonUserWidget
+// 0x0068 (0x02A0 - 0x0238)
+class UFortResultsTeleportScreenWidget : public UCommonUserWidget
 {
 public:
 	float                                         ExitTime;                                          // 0x0238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6307,13 +6166,12 @@ public:
 		return GetDefaultObjImpl<UFortResultsTeleportScreenWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortResultsTeleportScreenWidget) == 0x322CBBB8, "Wrong alignment on UFortResultsTeleportScreenWidget");
-static_assert(sizeof(UFortResultsTeleportScreenWidget) == 0x322CBBB8, "Wrong size on UFortResultsTeleportScreenWidget");
+static_assert(alignof(UFortResultsTeleportScreenWidget) == 0x000008, "Wrong alignment on UFortResultsTeleportScreenWidget");
+static_assert(sizeof(UFortResultsTeleportScreenWidget) == 0x0002A0, "Wrong size on UFortResultsTeleportScreenWidget");
 static_assert(offsetof(UFortResultsTeleportScreenWidget, ExitTime) == 0x000238, "Member 'UFortResultsTeleportScreenWidget::ExitTime' has a wrong offset!");
 
 // Class FortniteUI.FortCraftingBarWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0288 - 0x0260)
 class UFortCraftingBarWidget : public UFortHUDElementWidget
 {
 public:
@@ -6338,16 +6196,15 @@ public:
 		return GetDefaultObjImpl<UFortCraftingBarWidget>();
 	}
 };
-static_assert(alignof(UFortCraftingBarWidget) == 0x322CBBB8, "Wrong alignment on UFortCraftingBarWidget");
-static_assert(sizeof(UFortCraftingBarWidget) == 0x322CBBB8, "Wrong size on UFortCraftingBarWidget");
+static_assert(alignof(UFortCraftingBarWidget) == 0x000008, "Wrong alignment on UFortCraftingBarWidget");
+static_assert(sizeof(UFortCraftingBarWidget) == 0x000288, "Wrong size on UFortCraftingBarWidget");
 static_assert(offsetof(UFortCraftingBarWidget, CraftingText) == 0x000260, "Member 'UFortCraftingBarWidget::CraftingText' has a wrong offset!");
 static_assert(offsetof(UFortCraftingBarWidget, CraftingProgressBar) == 0x000268, "Member 'UFortCraftingBarWidget::CraftingProgressBar' has a wrong offset!");
 static_assert(offsetof(UFortCraftingBarWidget, CompletedRemainVisibleTime) == 0x000270, "Member 'UFortCraftingBarWidget::CompletedRemainVisibleTime' has a wrong offset!");
 
 // Class FortniteUI.FortHUDEquipProgressBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortHUDEquipProgressBase : public UFortHUDElementWidget
+// 0x0000 (0x0260 - 0x0260)
+class UFortHUDEquipProgressBase : public UFortHUDElementWidget
 {
 public:
 	static class UClass* StaticClass()
@@ -6359,9 +6216,8 @@ public:
 		return GetDefaultObjImpl<UFortHUDEquipProgressBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortHUDEquipProgressBase) == 0x322CBBB8, "Wrong alignment on UFortHUDEquipProgressBase");
-static_assert(sizeof(UFortHUDEquipProgressBase) == 0x322CBBB8, "Wrong size on UFortHUDEquipProgressBase");
+static_assert(alignof(UFortHUDEquipProgressBase) == 0x000008, "Wrong alignment on UFortHUDEquipProgressBase");
+static_assert(sizeof(UFortHUDEquipProgressBase) == 0x000260, "Wrong size on UFortHUDEquipProgressBase");
 
 // Class FortniteUI.FortHUDObjectiveSizeInterface
 // 0x0000 (0x0028 - 0x0028)
@@ -6384,7 +6240,7 @@ static_assert(alignof(IFortHUDObjectiveSizeInterface) == 0x000008, "Wrong alignm
 static_assert(sizeof(IFortHUDObjectiveSizeInterface) == 0x000028, "Wrong size on IFortHUDObjectiveSizeInterface");
 
 // Class FortniteUI.FortMissionTrackerList
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0090 (0x02C8 - 0x0238)
 class UFortMissionTrackerList : public UCommonUserWidget
 {
 public:
@@ -6412,8 +6268,8 @@ public:
 		return GetDefaultObjImpl<UFortMissionTrackerList>();
 	}
 };
-static_assert(alignof(UFortMissionTrackerList) == 0x322CBBB8, "Wrong alignment on UFortMissionTrackerList");
-static_assert(sizeof(UFortMissionTrackerList) == 0x322CBBB8, "Wrong size on UFortMissionTrackerList");
+static_assert(alignof(UFortMissionTrackerList) == 0x000008, "Wrong alignment on UFortMissionTrackerList");
+static_assert(sizeof(UFortMissionTrackerList) == 0x0002C8, "Wrong size on UFortMissionTrackerList");
 static_assert(offsetof(UFortMissionTrackerList, MissionEntryClass) == 0x000240, "Member 'UFortMissionTrackerList::MissionEntryClass' has a wrong offset!");
 static_assert(offsetof(UFortMissionTrackerList, bConfigureAsHUD) == 0x000248, "Member 'UFortMissionTrackerList::bConfigureAsHUD' has a wrong offset!");
 static_assert(offsetof(UFortMissionTrackerList, MissionsListBox) == 0x000250, "Member 'UFortMissionTrackerList::MissionsListBox' has a wrong offset!");
@@ -6421,7 +6277,7 @@ static_assert(offsetof(UFortMissionTrackerList, OnMissionTrackerListVisibilityCh
 static_assert(offsetof(UFortMissionTrackerList, OnSizeEstimateChangedDelegate) == 0x000268, "Member 'UFortMissionTrackerList::OnSizeEstimateChangedDelegate' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreeLandingPage
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0400 - 0x03E0)
 class UFortSkillTreeLandingPage final : public UCommonActivatablePanel
 {
 public:
@@ -6442,13 +6298,13 @@ public:
 		return GetDefaultObjImpl<UFortSkillTreeLandingPage>();
 	}
 };
-static_assert(alignof(UFortSkillTreeLandingPage) == 0x322CBBB8, "Wrong alignment on UFortSkillTreeLandingPage");
-static_assert(sizeof(UFortSkillTreeLandingPage) == 0x322CBBB8, "Wrong size on UFortSkillTreeLandingPage");
+static_assert(alignof(UFortSkillTreeLandingPage) == 0x000008, "Wrong alignment on UFortSkillTreeLandingPage");
+static_assert(sizeof(UFortSkillTreeLandingPage) == 0x000400, "Wrong size on UFortSkillTreeLandingPage");
 static_assert(offsetof(UFortSkillTreeLandingPage, SkillsToLinkTo) == 0x0003E0, "Member 'UFortSkillTreeLandingPage::SkillsToLinkTo' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreeLandingPage, ResearchToLinkTo) == 0x0003F0, "Member 'UFortSkillTreeLandingPage::ResearchToLinkTo' has a wrong offset!");
 
 // Class FortniteUI.FortQuestTrackerList
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class UFortQuestTrackerList : public UCommonUserWidget
 {
 public:
@@ -6477,17 +6333,16 @@ public:
 		return GetDefaultObjImpl<UFortQuestTrackerList>();
 	}
 };
-static_assert(alignof(UFortQuestTrackerList) == 0x322CBBB8, "Wrong alignment on UFortQuestTrackerList");
-static_assert(sizeof(UFortQuestTrackerList) == 0x322CBBB8, "Wrong size on UFortQuestTrackerList");
+static_assert(alignof(UFortQuestTrackerList) == 0x000008, "Wrong alignment on UFortQuestTrackerList");
+static_assert(sizeof(UFortQuestTrackerList) == 0x000270, "Wrong size on UFortQuestTrackerList");
 static_assert(offsetof(UFortQuestTrackerList, bConfigureAsHUD) == 0x000240, "Member 'UFortQuestTrackerList::bConfigureAsHUD' has a wrong offset!");
 static_assert(offsetof(UFortQuestTrackerList, QuestList) == 0x000248, "Member 'UFortQuestTrackerList::QuestList' has a wrong offset!");
 static_assert(offsetof(UFortQuestTrackerList, HUDCachedQuests) == 0x000250, "Member 'UFortQuestTrackerList::HUDCachedQuests' has a wrong offset!");
 static_assert(offsetof(UFortQuestTrackerList, OnSizeEstimateChangedDelegate) == 0x000260, "Member 'UFortQuestTrackerList::OnSizeEstimateChangedDelegate' has a wrong offset!");
 
 // Class FortniteUI.FortMissionTracker
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMissionTracker : public UFortHUDElementWidget
+// 0x0030 (0x0290 - 0x0260)
+class UFortMissionTracker : public UFortHUDElementWidget
 {
 public:
 	class UFortMissionTrackerList*                MissionTrackerList;                                // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -6515,9 +6370,8 @@ public:
 		return GetDefaultObjImpl<UFortMissionTracker>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMissionTracker) == 0x322CBBB8, "Wrong alignment on UFortMissionTracker");
-static_assert(sizeof(UFortMissionTracker) == 0x322CBBB8, "Wrong size on UFortMissionTracker");
+static_assert(alignof(UFortMissionTracker) == 0x000008, "Wrong alignment on UFortMissionTracker");
+static_assert(sizeof(UFortMissionTracker) == 0x000290, "Wrong size on UFortMissionTracker");
 static_assert(offsetof(UFortMissionTracker, MissionTrackerList) == 0x000260, "Member 'UFortMissionTracker::MissionTrackerList' has a wrong offset!");
 static_assert(offsetof(UFortMissionTracker, MainQuestList) == 0x000268, "Member 'UFortMissionTracker::MainQuestList' has a wrong offset!");
 static_assert(offsetof(UFortMissionTracker, PinnedQuestsList) == 0x000270, "Member 'UFortMissionTracker::PinnedQuestsList' has a wrong offset!");
@@ -6528,19 +6382,19 @@ static_assert(offsetof(UFortMissionTracker, bEnforceHeightLimit) == 0x00028C, "M
 static_assert(offsetof(UFortMissionTracker, bSizeEstimateNeedsRefresh) == 0x00028D, "Member 'UFortMissionTracker::bSizeEstimateNeedsRefresh' has a wrong offset!");
 
 // Class FortniteUI.FortRichTextBlock
-// 0x20AA42B8 (0x322CBBB8 - 0x11827900)
+// 0x0A28 (0x0B40 - 0x0118)
 class UFortRichTextBlock final : public UWidget
 {
 public:
 	class FText                                   Text;                                              // 0x0118(0x0018)(Edit, NativeAccessSpecifierPublic)
 	class UDataTable*                             StyleSet;                                          // 0x0130(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                TextMargin;                                        // 0x0138(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                TextMargin;                                        // 0x0138(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         WrapTextAt;                                        // 0x0148(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AutoWrapText;                                      // 0x014C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETextJustify                                  Justification;                                     // 0x014D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14E[0x2];                                      // 0x014E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FButtonStyle                           HyperlinkButtonStyle;                              // 0x0150(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FScrollBarStyle                        ScrollBarStyle;                                    // 0x03F8(0x11827900)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           HyperlinkButtonStyle;                              // 0x0150(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FScrollBarStyle                        ScrollBarStyle;                                    // 0x03F8(0x0518)(Edit, NativeAccessSpecifierPublic)
 	TSubclassOf<class UFortKeybindWidget>         KeybindWidgetClass;                                // 0x0910(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_918[0x228];                                    // 0x0918(0x0228)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -6557,8 +6411,8 @@ public:
 		return GetDefaultObjImpl<UFortRichTextBlock>();
 	}
 };
-static_assert(alignof(UFortRichTextBlock) == 0x322CBBB8, "Wrong alignment on UFortRichTextBlock");
-static_assert(sizeof(UFortRichTextBlock) == 0x322CBBB8, "Wrong size on UFortRichTextBlock");
+static_assert(alignof(UFortRichTextBlock) == 0x000008, "Wrong alignment on UFortRichTextBlock");
+static_assert(sizeof(UFortRichTextBlock) == 0x000B40, "Wrong size on UFortRichTextBlock");
 static_assert(offsetof(UFortRichTextBlock, Text) == 0x000118, "Member 'UFortRichTextBlock::Text' has a wrong offset!");
 static_assert(offsetof(UFortRichTextBlock, StyleSet) == 0x000130, "Member 'UFortRichTextBlock::StyleSet' has a wrong offset!");
 static_assert(offsetof(UFortRichTextBlock, TextMargin) == 0x000138, "Member 'UFortRichTextBlock::TextMargin' has a wrong offset!");
@@ -6570,9 +6424,12 @@ static_assert(offsetof(UFortRichTextBlock, ScrollBarStyle) == 0x0003F8, "Member 
 static_assert(offsetof(UFortRichTextBlock, KeybindWidgetClass) == 0x000910, "Member 'UFortRichTextBlock::KeybindWidgetClass' has a wrong offset!");
 
 // Class FortniteUI.FortReticle
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0288 - 0x0260)
 class UFortReticle : public UFortHUDElementWidget
 {
+public:
+	uint8                                         Pad_260[0x28];                                     // 0x0260(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void OnContextualReticleChanged();
 	void OnPawnSet();
@@ -6589,11 +6446,11 @@ public:
 		return GetDefaultObjImpl<UFortReticle>();
 	}
 };
-static_assert(alignof(UFortReticle) == 0x322CBBB8, "Wrong alignment on UFortReticle");
-static_assert(sizeof(UFortReticle) == 0x322CBBB8, "Wrong size on UFortReticle");
+static_assert(alignof(UFortReticle) == 0x000008, "Wrong alignment on UFortReticle");
+static_assert(sizeof(UFortReticle) == 0x000288, "Wrong size on UFortReticle");
 
 // Class FortniteUI.FortHUDTargetUnderReticleWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UFortHUDTargetUnderReticleWidget final : public UCommonUserWidget
 {
 public:
@@ -6615,8 +6472,8 @@ public:
 		return GetDefaultObjImpl<UFortHUDTargetUnderReticleWidget>();
 	}
 };
-static_assert(alignof(UFortHUDTargetUnderReticleWidget) == 0x322CBBB8, "Wrong alignment on UFortHUDTargetUnderReticleWidget");
-static_assert(sizeof(UFortHUDTargetUnderReticleWidget) == 0x322CBBB8, "Wrong size on UFortHUDTargetUnderReticleWidget");
+static_assert(alignof(UFortHUDTargetUnderReticleWidget) == 0x000008, "Wrong alignment on UFortHUDTargetUnderReticleWidget");
+static_assert(sizeof(UFortHUDTargetUnderReticleWidget) == 0x000258, "Wrong size on UFortHUDTargetUnderReticleWidget");
 static_assert(offsetof(UFortHUDTargetUnderReticleWidget, Target) == 0x000238, "Member 'UFortHUDTargetUnderReticleWidget::Target' has a wrong offset!");
 
 // Class FortniteUI.FortRewardQuestData
@@ -6644,11 +6501,11 @@ static_assert(sizeof(UFortRewardQuestData) == 0x000038, "Wrong size on UFortRewa
 static_assert(offsetof(UFortRewardQuestData, Quest) == 0x000030, "Member 'UFortRewardQuestData::Quest' has a wrong offset!");
 
 // Class FortniteUI.FortHUDVisibilityData
-// 0x11821D58 (0x11821D80 - 0x0028)
+// 0x0040 (0x0068 - 0x0028)
 class UFortHUDVisibilityData final : public UDataAsset
 {
 public:
-	struct FGameplayTag                           HUDVisibilityGameplayTag;                          // 0x0028(0x11821D80)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           HUDVisibilityGameplayTag;                          // 0x0028(0x0008)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   DisplayText;                                       // 0x0030(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
 	class FText                                   ToolTipText;                                       // 0x0048(0x0018)(BlueprintVisible, NativeAccessSpecifierPublic)
 	bool                                          Visible;                                           // 0x0060(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6664,17 +6521,16 @@ public:
 		return GetDefaultObjImpl<UFortHUDVisibilityData>();
 	}
 };
-static_assert(alignof(UFortHUDVisibilityData) == 0x11821D80, "Wrong alignment on UFortHUDVisibilityData");
-static_assert(sizeof(UFortHUDVisibilityData) == 0x11821D80, "Wrong size on UFortHUDVisibilityData");
+static_assert(alignof(UFortHUDVisibilityData) == 0x000008, "Wrong alignment on UFortHUDVisibilityData");
+static_assert(sizeof(UFortHUDVisibilityData) == 0x000068, "Wrong size on UFortHUDVisibilityData");
 static_assert(offsetof(UFortHUDVisibilityData, HUDVisibilityGameplayTag) == 0x000028, "Member 'UFortHUDVisibilityData::HUDVisibilityGameplayTag' has a wrong offset!");
 static_assert(offsetof(UFortHUDVisibilityData, DisplayText) == 0x000030, "Member 'UFortHUDVisibilityData::DisplayText' has a wrong offset!");
 static_assert(offsetof(UFortHUDVisibilityData, ToolTipText) == 0x000048, "Member 'UFortHUDVisibilityData::ToolTipText' has a wrong offset!");
 static_assert(offsetof(UFortHUDVisibilityData, Visible) == 0x000060, "Member 'UFortHUDVisibilityData::Visible' has a wrong offset!");
 
 // Class FortniteUI.FortIconWithLabel
-// 0x0000 (0x11827900 - 0x11827900)
-#pragma pack(push, 0x1)
-class alignas(0x11827900) UFortIconWithLabel : public UWidget
+// 0x0020 (0x0138 - 0x0118)
+class UFortIconWithLabel : public UWidget
 {
 public:
 	bool                                          ShouldShowIcon;                                    // 0x0118(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6695,9 +6551,8 @@ public:
 		return GetDefaultObjImpl<UFortIconWithLabel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortIconWithLabel) == 0x11827900, "Wrong alignment on UFortIconWithLabel");
-static_assert(sizeof(UFortIconWithLabel) == 0x11827900, "Wrong size on UFortIconWithLabel");
+static_assert(alignof(UFortIconWithLabel) == 0x000008, "Wrong alignment on UFortIconWithLabel");
+static_assert(sizeof(UFortIconWithLabel) == 0x000138, "Wrong size on UFortIconWithLabel");
 static_assert(offsetof(UFortIconWithLabel, ShouldShowIcon) == 0x000118, "Member 'UFortIconWithLabel::ShouldShowIcon' has a wrong offset!");
 static_assert(offsetof(UFortIconWithLabel, ShouldCollapseIconWhenNotShown) == 0x000119, "Member 'UFortIconWithLabel::ShouldCollapseIconWhenNotShown' has a wrong offset!");
 static_assert(offsetof(UFortIconWithLabel, IconBrushSize) == 0x00011A, "Member 'UFortIconWithLabel::IconBrushSize' has a wrong offset!");
@@ -6705,9 +6560,8 @@ static_assert(offsetof(UFortIconWithLabel, ShouldShowLabel) == 0x00011B, "Member
 static_assert(offsetof(UFortIconWithLabel, LabelTextStyle) == 0x000120, "Member 'UFortIconWithLabel::LabelTextStyle' has a wrong offset!");
 
 // Class FortniteUI.FortActionHandlerPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortActionHandlerPanel : public UFortUserWidget
+// 0x0028 (0x0268 - 0x0240)
+class UFortActionHandlerPanel : public UFortUserWidget
 {
 public:
 	bool                                          bAutoActivate;                                     // 0x0240(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6735,9 +6589,8 @@ public:
 		return GetDefaultObjImpl<UFortActionHandlerPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortActionHandlerPanel) == 0x322CBBB8, "Wrong alignment on UFortActionHandlerPanel");
-static_assert(sizeof(UFortActionHandlerPanel) == 0x322CBBB8, "Wrong size on UFortActionHandlerPanel");
+static_assert(alignof(UFortActionHandlerPanel) == 0x000008, "Wrong alignment on UFortActionHandlerPanel");
+static_assert(sizeof(UFortActionHandlerPanel) == 0x000268, "Wrong size on UFortActionHandlerPanel");
 static_assert(offsetof(UFortActionHandlerPanel, bAutoActivate) == 0x000240, "Member 'UFortActionHandlerPanel::bAutoActivate' has a wrong offset!");
 static_assert(offsetof(UFortActionHandlerPanel, PlayerControllerProcessing) == 0x000241, "Member 'UFortActionHandlerPanel::PlayerControllerProcessing' has a wrong offset!");
 static_assert(offsetof(UFortActionHandlerPanel, bIsActive) == 0x000242, "Member 'UFortActionHandlerPanel::bIsActive' has a wrong offset!");
@@ -6745,7 +6598,7 @@ static_assert(offsetof(UFortActionHandlerPanel, OnPanelActivated) == 0x000248, "
 static_assert(offsetof(UFortActionHandlerPanel, OnPanelDeactivated) == 0x000258, "Member 'UFortActionHandlerPanel::OnPanelDeactivated' has a wrong offset!");
 
 // Class FortniteUI.FortVaultWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C8 (0x0330 - 0x0268)
 class UFortVaultWidget final : public UFortActionHandlerPanel
 {
 public:
@@ -6786,14 +6639,14 @@ public:
 		return GetDefaultObjImpl<UFortVaultWidget>();
 	}
 };
-static_assert(alignof(UFortVaultWidget) == 0x322CBBB8, "Wrong alignment on UFortVaultWidget");
-static_assert(sizeof(UFortVaultWidget) == 0x322CBBB8, "Wrong size on UFortVaultWidget");
+static_assert(alignof(UFortVaultWidget) == 0x000008, "Wrong alignment on UFortVaultWidget");
+static_assert(sizeof(UFortVaultWidget) == 0x000330, "Wrong size on UFortVaultWidget");
 static_assert(offsetof(UFortVaultWidget, OnRecycleItemsChanged) == 0x000268, "Member 'UFortVaultWidget::OnRecycleItemsChanged' has a wrong offset!");
 static_assert(offsetof(UFortVaultWidget, RecycleItems) == 0x0002D0, "Member 'UFortVaultWidget::RecycleItems' has a wrong offset!");
 static_assert(offsetof(UFortVaultWidget, ResourceItemQuantitiesMap) == 0x0002E0, "Member 'UFortVaultWidget::ResourceItemQuantitiesMap' has a wrong offset!");
 
 // Class FortniteUI.FortHeroSupportPerkIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0010 (0x0148 - 0x0138)
 class UFortHeroSupportPerkIndicator final : public UFortIconWithLabel
 {
 public:
@@ -6815,13 +6668,13 @@ public:
 		return GetDefaultObjImpl<UFortHeroSupportPerkIndicator>();
 	}
 };
-static_assert(alignof(UFortHeroSupportPerkIndicator) == 0x11827900, "Wrong alignment on UFortHeroSupportPerkIndicator");
-static_assert(sizeof(UFortHeroSupportPerkIndicator) == 0x11827900, "Wrong size on UFortHeroSupportPerkIndicator");
+static_assert(alignof(UFortHeroSupportPerkIndicator) == 0x000008, "Wrong alignment on UFortHeroSupportPerkIndicator");
+static_assert(sizeof(UFortHeroSupportPerkIndicator) == 0x000148, "Wrong size on UFortHeroSupportPerkIndicator");
 static_assert(offsetof(UFortHeroSupportPerkIndicator, ItemToRepresent) == 0x000138, "Member 'UFortHeroSupportPerkIndicator::ItemToRepresent' has a wrong offset!");
 static_assert(offsetof(UFortHeroSupportPerkIndicator, SupportTypeToRepresent) == 0x000140, "Member 'UFortHeroSupportPerkIndicator::SupportTypeToRepresent' has a wrong offset!");
 
 // Class FortniteUI.FortItemCategoryIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0010 (0x0148 - 0x0138)
 class UFortItemCategoryIndicator final : public UFortIconWithLabel
 {
 public:
@@ -6843,15 +6696,18 @@ public:
 		return GetDefaultObjImpl<UFortItemCategoryIndicator>();
 	}
 };
-static_assert(alignof(UFortItemCategoryIndicator) == 0x11827900, "Wrong alignment on UFortItemCategoryIndicator");
-static_assert(sizeof(UFortItemCategoryIndicator) == 0x11827900, "Wrong size on UFortItemCategoryIndicator");
+static_assert(alignof(UFortItemCategoryIndicator) == 0x000008, "Wrong alignment on UFortItemCategoryIndicator");
+static_assert(sizeof(UFortItemCategoryIndicator) == 0x000148, "Wrong size on UFortItemCategoryIndicator");
 static_assert(offsetof(UFortItemCategoryIndicator, ItemToRepresent) == 0x000138, "Member 'UFortItemCategoryIndicator::ItemToRepresent' has a wrong offset!");
 static_assert(offsetof(UFortItemCategoryIndicator, OrdinalOfCategoryToRepresent) == 0x000140, "Member 'UFortItemCategoryIndicator::OrdinalOfCategoryToRepresent' has a wrong offset!");
 
 // Class FortniteUI.FortSquadLandingPageDefenderSummary
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UFortSquadLandingPageDefenderSummary final : public UCommonUserWidget
 {
+public:
+	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void HandleAddDefenderSquadDetailsBP(const struct FFortLandingPageDefenderSummaryInfo& DefenderSummaryInfo);
 	void HandleAddLockedDefenderSquadDetailsBP(const struct FFortLandingPageDefenderSummaryInfo& DefenderSummaryInfo);
@@ -6867,8 +6723,8 @@ public:
 		return GetDefaultObjImpl<UFortSquadLandingPageDefenderSummary>();
 	}
 };
-static_assert(alignof(UFortSquadLandingPageDefenderSummary) == 0x322CBBB8, "Wrong alignment on UFortSquadLandingPageDefenderSummary");
-static_assert(sizeof(UFortSquadLandingPageDefenderSummary) == 0x322CBBB8, "Wrong size on UFortSquadLandingPageDefenderSummary");
+static_assert(alignof(UFortSquadLandingPageDefenderSummary) == 0x000008, "Wrong alignment on UFortSquadLandingPageDefenderSummary");
+static_assert(sizeof(UFortSquadLandingPageDefenderSummary) == 0x000240, "Wrong size on UFortSquadLandingPageDefenderSummary");
 
 // Class FortniteUI.FortInventoryContext
 // 0x0180 (0x01A8 - 0x0028)
@@ -7029,9 +6885,8 @@ static_assert(sizeof(UFortItemCardMaterialPooler) == 0x0000E0, "Wrong size on UF
 static_assert(offsetof(UFortItemCardMaterialPooler, RarityToDetailAreaMID) == 0x000090, "Member 'UFortItemCardMaterialPooler::RarityToDetailAreaMID' has a wrong offset!");
 
 // Class FortniteUI.FortItemWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemWidget : public UFortBaseButton
+// 0x0038 (0x08A0 - 0x0868)
+class UFortItemWidget : public UFortBaseButton
 {
 public:
 	TDelegate<void(class UFortItem** ItemToCompare)> OnGetItemToCompareDelegate;                        // 0x0868(0x0010)(ZeroConstructor, InstancedReference, NoDestructor, Protected, NativeAccessSpecifierProtected)
@@ -7085,9 +6940,8 @@ public:
 		return GetDefaultObjImpl<UFortItemWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemWidget) == 0x322CBBB8, "Wrong alignment on UFortItemWidget");
-static_assert(sizeof(UFortItemWidget) == 0x322CBBB8, "Wrong size on UFortItemWidget");
+static_assert(alignof(UFortItemWidget) == 0x000008, "Wrong alignment on UFortItemWidget");
+static_assert(sizeof(UFortItemWidget) == 0x0008A0, "Wrong size on UFortItemWidget");
 static_assert(offsetof(UFortItemWidget, OnGetItemToCompareDelegate) == 0x000868, "Member 'UFortItemWidget::OnGetItemToCompareDelegate' has a wrong offset!");
 static_assert(offsetof(UFortItemWidget, CooldownMaterialParameterName) == 0x000878, "Member 'UFortItemWidget::CooldownMaterialParameterName' has a wrong offset!");
 static_assert(offsetof(UFortItemWidget, CooldownMaterial) == 0x000880, "Member 'UFortItemWidget::CooldownMaterial' has a wrong offset!");
@@ -7116,9 +6970,8 @@ static_assert(alignof(UFortItemCardUtilities) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UFortItemCardUtilities) == 0x000028, "Wrong size on UFortItemCardUtilities");
 
 // Class FortniteUI.FortItemCooldownWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemCooldownWidget : public UCommonUserWidget
+// 0x0090 (0x02C8 - 0x0238)
+class UFortItemCooldownWidget : public UCommonUserWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnCooldownStarted_Delegate;                        // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -7146,9 +6999,8 @@ public:
 		return GetDefaultObjImpl<UFortItemCooldownWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemCooldownWidget) == 0x322CBBB8, "Wrong alignment on UFortItemCooldownWidget");
-static_assert(sizeof(UFortItemCooldownWidget) == 0x322CBBB8, "Wrong size on UFortItemCooldownWidget");
+static_assert(alignof(UFortItemCooldownWidget) == 0x000008, "Wrong alignment on UFortItemCooldownWidget");
+static_assert(sizeof(UFortItemCooldownWidget) == 0x0002C8, "Wrong size on UFortItemCooldownWidget");
 static_assert(offsetof(UFortItemCooldownWidget, OnCooldownStarted_Delegate) == 0x000238, "Member 'UFortItemCooldownWidget::OnCooldownStarted_Delegate' has a wrong offset!");
 static_assert(offsetof(UFortItemCooldownWidget, OnCooldownStopped_Delegate) == 0x000248, "Member 'UFortItemCooldownWidget::OnCooldownStopped_Delegate' has a wrong offset!");
 static_assert(offsetof(UFortItemCooldownWidget, CooldownText) == 0x000258, "Member 'UFortItemCooldownWidget::CooldownText' has a wrong offset!");
@@ -7158,9 +7010,8 @@ static_assert(offsetof(UFortItemCooldownWidget, CooldownTypesSupported) == 0x000
 static_assert(offsetof(UFortItemCooldownWidget, CooldownPercentageMID) == 0x000280, "Member 'UFortItemCooldownWidget::CooldownPercentageMID' has a wrong offset!");
 
 // Class FortniteUI.FortSplashScreenWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSplashScreenWidget : public UCommonActivatablePanel
+// 0x0020 (0x0400 - 0x03E0)
+class UFortSplashScreenWidget : public UCommonActivatablePanel
 {
 public:
 	UMulticastDelegateProperty_                   OnSplashScreenProgressed;                          // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -7182,13 +7033,12 @@ public:
 		return GetDefaultObjImpl<UFortSplashScreenWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSplashScreenWidget) == 0x322CBBB8, "Wrong alignment on UFortSplashScreenWidget");
-static_assert(sizeof(UFortSplashScreenWidget) == 0x322CBBB8, "Wrong size on UFortSplashScreenWidget");
+static_assert(alignof(UFortSplashScreenWidget) == 0x000008, "Wrong alignment on UFortSplashScreenWidget");
+static_assert(sizeof(UFortSplashScreenWidget) == 0x000400, "Wrong size on UFortSplashScreenWidget");
 static_assert(offsetof(UFortSplashScreenWidget, OnSplashScreenProgressed) == 0x0003E0, "Member 'UFortSplashScreenWidget::OnSplashScreenProgressed' has a wrong offset!");
 
 // Class FortniteUI.FortItemCountTextBlock
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0338 - 0x0320)
 class UFortItemCountTextBlock final : public UCommonNumericTextBlock
 {
 public:
@@ -7216,17 +7066,16 @@ public:
 		return GetDefaultObjImpl<UFortItemCountTextBlock>();
 	}
 };
-static_assert(alignof(UFortItemCountTextBlock) == 0x322CBBB8, "Wrong alignment on UFortItemCountTextBlock");
-static_assert(sizeof(UFortItemCountTextBlock) == 0x322CBBB8, "Wrong size on UFortItemCountTextBlock");
+static_assert(alignof(UFortItemCountTextBlock) == 0x000008, "Wrong alignment on UFortItemCountTextBlock");
+static_assert(sizeof(UFortItemCountTextBlock) == 0x000338, "Wrong size on UFortItemCountTextBlock");
 static_assert(offsetof(UFortItemCountTextBlock, ItemDefinition) == 0x000320, "Member 'UFortItemCountTextBlock::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(UFortItemCountTextBlock, CountStyle) == 0x000328, "Member 'UFortItemCountTextBlock::CountStyle' has a wrong offset!");
 static_assert(offsetof(UFortItemCountTextBlock, ItemCountMaxInterpolateDuration) == 0x00032C, "Member 'UFortItemCountTextBlock::ItemCountMaxInterpolateDuration' has a wrong offset!");
 static_assert(offsetof(UFortItemCountTextBlock, ItemCountMinInterpolateRate) == 0x000330, "Member 'UFortItemCountTextBlock::ItemCountMinInterpolateRate' has a wrong offset!");
 
 // Class FortniteUI.FortItemDetailElementWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemDetailElementWidget : public UCommonUserWidget
+// 0x0038 (0x0270 - 0x0238)
+class UFortItemDetailElementWidget : public UCommonUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortItem>               ItemToDetail;                                      // 0x0238(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7253,18 +7102,16 @@ public:
 		return GetDefaultObjImpl<UFortItemDetailElementWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemDetailElementWidget) == 0x322CBBB8, "Wrong alignment on UFortItemDetailElementWidget");
-static_assert(sizeof(UFortItemDetailElementWidget) == 0x322CBBB8, "Wrong size on UFortItemDetailElementWidget");
+static_assert(alignof(UFortItemDetailElementWidget) == 0x000008, "Wrong alignment on UFortItemDetailElementWidget");
+static_assert(sizeof(UFortItemDetailElementWidget) == 0x000270, "Wrong size on UFortItemDetailElementWidget");
 static_assert(offsetof(UFortItemDetailElementWidget, ItemToDetail) == 0x000238, "Member 'UFortItemDetailElementWidget::ItemToDetail' has a wrong offset!");
 static_assert(offsetof(UFortItemDetailElementWidget, ItemToCompareWith) == 0x000240, "Member 'UFortItemDetailElementWidget::ItemToCompareWith' has a wrong offset!");
 static_assert(offsetof(UFortItemDetailElementWidget, bShouldPreviewUpgradingItem) == 0x000248, "Member 'UFortItemDetailElementWidget::bShouldPreviewUpgradingItem' has a wrong offset!");
 static_assert(offsetof(UFortItemDetailElementWidget, ItemViewContext) == 0x000250, "Member 'UFortItemDetailElementWidget::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortSquadSlotsView
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadSlotsView : public UCommonUserWidget
+// 0x0088 (0x02C0 - 0x0238)
+class UFortSquadSlotsView : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x10];                                     // 0x0238(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -7305,9 +7152,8 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotsView>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadSlotsView) == 0x322CBBB8, "Wrong alignment on UFortSquadSlotsView");
-static_assert(sizeof(UFortSquadSlotsView) == 0x322CBBB8, "Wrong size on UFortSquadSlotsView");
+static_assert(alignof(UFortSquadSlotsView) == 0x000008, "Wrong alignment on UFortSquadSlotsView");
+static_assert(sizeof(UFortSquadSlotsView) == 0x0002C0, "Wrong size on UFortSquadSlotsView");
 static_assert(offsetof(UFortSquadSlotsView, OnDifferentSquadSlotSelectedEvent) == 0x000248, "Member 'UFortSquadSlotsView::OnDifferentSquadSlotSelectedEvent' has a wrong offset!");
 static_assert(offsetof(UFortSquadSlotsView, OnRequestOpenSquadSlotEvent) == 0x000258, "Member 'UFortSquadSlotsView::OnRequestOpenSquadSlotEvent' has a wrong offset!");
 static_assert(offsetof(UFortSquadSlotsView, IndexOfSelectedSquadSlot) == 0x000268, "Member 'UFortSquadSlotsView::IndexOfSelectedSquadSlot' has a wrong offset!");
@@ -7317,9 +7163,8 @@ static_assert(offsetof(UFortSquadSlotsView, SquadSlotButtonGroup) == 0x000270, "
 static_assert(offsetof(UFortSquadSlotsView, ItemViewContext) == 0x0002A8, "Member 'UFortSquadSlotsView::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortItemDetailsHostPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemDetailsHostPanel : public UCommonUserWidget
+// 0x0058 (0x0290 - 0x0238)
+class UFortItemDetailsHostPanel : public UCommonUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortItem>               ItemToDetail;                                      // 0x0238(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7351,9 +7196,8 @@ public:
 		return GetDefaultObjImpl<UFortItemDetailsHostPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemDetailsHostPanel) == 0x322CBBB8, "Wrong alignment on UFortItemDetailsHostPanel");
-static_assert(sizeof(UFortItemDetailsHostPanel) == 0x322CBBB8, "Wrong size on UFortItemDetailsHostPanel");
+static_assert(alignof(UFortItemDetailsHostPanel) == 0x000008, "Wrong alignment on UFortItemDetailsHostPanel");
+static_assert(sizeof(UFortItemDetailsHostPanel) == 0x000290, "Wrong size on UFortItemDetailsHostPanel");
 static_assert(offsetof(UFortItemDetailsHostPanel, ItemToDetail) == 0x000238, "Member 'UFortItemDetailsHostPanel::ItemToDetail' has a wrong offset!");
 static_assert(offsetof(UFortItemDetailsHostPanel, ItemToCompareWith) == 0x000240, "Member 'UFortItemDetailsHostPanel::ItemToCompareWith' has a wrong offset!");
 static_assert(offsetof(UFortItemDetailsHostPanel, bShouldPreviewUpgradingItem) == 0x000248, "Member 'UFortItemDetailsHostPanel::bShouldPreviewUpgradingItem' has a wrong offset!");
@@ -7362,10 +7206,12 @@ static_assert(offsetof(UFortItemDetailsHostPanel, DetailsContainerSlotWidget) ==
 static_assert(offsetof(UFortItemDetailsHostPanel, ItemViewContext) == 0x000260, "Member 'UFortItemDetailsHostPanel::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortSquadSlotItemDetailElementWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadSlotItemDetailElementWidget : public UFortItemDetailElementWidget
+// 0x0028 (0x0298 - 0x0270)
+class UFortSquadSlotItemDetailElementWidget : public UFortItemDetailElementWidget
 {
+public:
+	uint8                                         Pad_270[0x28];                                     // 0x0270(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void HandlePostDifferentSquadSlotSetBP();
 	void SetIdOfSquadSlotToManageBP(const class FName& SquadId, const int32 SquadSlotIndex);
@@ -7384,12 +7230,11 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotItemDetailElementWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadSlotItemDetailElementWidget) == 0x322CBBB8, "Wrong alignment on UFortSquadSlotItemDetailElementWidget");
-static_assert(sizeof(UFortSquadSlotItemDetailElementWidget) == 0x322CBBB8, "Wrong size on UFortSquadSlotItemDetailElementWidget");
+static_assert(alignof(UFortSquadSlotItemDetailElementWidget) == 0x000008, "Wrong alignment on UFortSquadSlotItemDetailElementWidget");
+static_assert(sizeof(UFortSquadSlotItemDetailElementWidget) == 0x000298, "Wrong size on UFortSquadSlotItemDetailElementWidget");
 
 // Class FortniteUI.FortSquadLandingPageDefenderSquadDetailsLocked
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UFortSquadLandingPageDefenderSquadDetailsLocked final : public UCommonUserWidget
 {
 public:
@@ -7408,15 +7253,17 @@ public:
 		return GetDefaultObjImpl<UFortSquadLandingPageDefenderSquadDetailsLocked>();
 	}
 };
-static_assert(alignof(UFortSquadLandingPageDefenderSquadDetailsLocked) == 0x322CBBB8, "Wrong alignment on UFortSquadLandingPageDefenderSquadDetailsLocked");
-static_assert(sizeof(UFortSquadLandingPageDefenderSquadDetailsLocked) == 0x322CBBB8, "Wrong size on UFortSquadLandingPageDefenderSquadDetailsLocked");
+static_assert(alignof(UFortSquadLandingPageDefenderSquadDetailsLocked) == 0x000008, "Wrong alignment on UFortSquadLandingPageDefenderSquadDetailsLocked");
+static_assert(sizeof(UFortSquadLandingPageDefenderSquadDetailsLocked) == 0x000240, "Wrong size on UFortSquadLandingPageDefenderSquadDetailsLocked");
 static_assert(offsetof(UFortSquadLandingPageDefenderSquadDetailsLocked, OutpostName) == 0x000238, "Member 'UFortSquadLandingPageDefenderSquadDetailsLocked::OutpostName' has a wrong offset!");
 
 // Class FortniteUI.FortSquadSlotItemDetailsHostPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadSlotItemDetailsHostPanel : public UFortItemDetailsHostPanel
+// 0x0028 (0x02B8 - 0x0290)
+class UFortSquadSlotItemDetailsHostPanel : public UFortItemDetailsHostPanel
 {
+public:
+	uint8                                         Pad_290[0x28];                                     // 0x0290(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void SetIdOfSquadSlotToManageBP(const class FName& SquadId, const int32 SquadSlotIndex);
 
@@ -7434,14 +7281,12 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotItemDetailsHostPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadSlotItemDetailsHostPanel) == 0x322CBBB8, "Wrong alignment on UFortSquadSlotItemDetailsHostPanel");
-static_assert(sizeof(UFortSquadSlotItemDetailsHostPanel) == 0x322CBBB8, "Wrong size on UFortSquadSlotItemDetailsHostPanel");
+static_assert(alignof(UFortSquadSlotItemDetailsHostPanel) == 0x000008, "Wrong alignment on UFortSquadSlotItemDetailsHostPanel");
+static_assert(sizeof(UFortSquadSlotItemDetailsHostPanel) == 0x0002B8, "Wrong size on UFortSquadSlotItemDetailsHostPanel");
 
 // Class FortniteUI.FortSquadSlotSurvivorTraitMatchesDetailWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadSlotSurvivorTraitMatchesDetailWidget : public UFortSquadSlotItemDetailElementWidget
+// 0x0028 (0x02C0 - 0x0298)
+class UFortSquadSlotSurvivorTraitMatchesDetailWidget : public UFortSquadSlotItemDetailElementWidget
 {
 public:
 	bool                                          IsSquadLeaderSlot;                                 // 0x0298(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7467,9 +7312,8 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotSurvivorTraitMatchesDetailWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadSlotSurvivorTraitMatchesDetailWidget) == 0x322CBBB8, "Wrong alignment on UFortSquadSlotSurvivorTraitMatchesDetailWidget");
-static_assert(sizeof(UFortSquadSlotSurvivorTraitMatchesDetailWidget) == 0x322CBBB8, "Wrong size on UFortSquadSlotSurvivorTraitMatchesDetailWidget");
+static_assert(alignof(UFortSquadSlotSurvivorTraitMatchesDetailWidget) == 0x000008, "Wrong alignment on UFortSquadSlotSurvivorTraitMatchesDetailWidget");
+static_assert(sizeof(UFortSquadSlotSurvivorTraitMatchesDetailWidget) == 0x0002C0, "Wrong size on UFortSquadSlotSurvivorTraitMatchesDetailWidget");
 static_assert(offsetof(UFortSquadSlotSurvivorTraitMatchesDetailWidget, IsSquadLeaderSlot) == 0x000298, "Member 'UFortSquadSlotSurvivorTraitMatchesDetailWidget::IsSquadLeaderSlot' has a wrong offset!");
 static_assert(offsetof(UFortSquadSlotSurvivorTraitMatchesDetailWidget, LeaderMatchesSquadType) == 0x000299, "Member 'UFortSquadSlotSurvivorTraitMatchesDetailWidget::LeaderMatchesSquadType' has a wrong offset!");
 static_assert(offsetof(UFortSquadSlotSurvivorTraitMatchesDetailWidget, SubordinatePersonalityMatchCount) == 0x00029C, "Member 'UFortSquadSlotSurvivorTraitMatchesDetailWidget::SubordinatePersonalityMatchCount' has a wrong offset!");
@@ -7478,13 +7322,13 @@ static_assert(offsetof(UFortSquadSlotSurvivorTraitMatchesDetailWidget, MatchingS
 static_assert(offsetof(UFortSquadSlotSurvivorTraitMatchesDetailWidget, SetBonusSize) == 0x0002A8, "Member 'UFortSquadSlotSurvivorTraitMatchesDetailWidget::SetBonusSize' has a wrong offset!");
 
 // Class FortniteUI.FortSocialListView
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x07C8 (0x08E0 - 0x0118)
 class UFortSocialListView final : public UWidget
 {
 public:
 	TDelegate<void(class UFortSocialItem* SocialItem)> GenerateItemEvent;                                 // 0x0118(0x0010)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)
 	TSubclassOf<class UFortSocialItemWidget>      SocialItemWidgetType;                              // 0x0128(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTableRowStyle                         ListRowStyle;                                      // 0x0130(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FTableRowStyle                         ListRowStyle;                                      // 0x0130(0x0718)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	TArray<class UFortSocialItem*>                SocialList;                                        // 0x0848(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_858[0x88];                                     // 0x0858(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -7501,17 +7345,17 @@ public:
 		return GetDefaultObjImpl<UFortSocialListView>();
 	}
 };
-static_assert(alignof(UFortSocialListView) == 0x11827900, "Wrong alignment on UFortSocialListView");
-static_assert(sizeof(UFortSocialListView) == 0x11827900, "Wrong size on UFortSocialListView");
+static_assert(alignof(UFortSocialListView) == 0x000008, "Wrong alignment on UFortSocialListView");
+static_assert(sizeof(UFortSocialListView) == 0x0008E0, "Wrong size on UFortSocialListView");
 static_assert(offsetof(UFortSocialListView, GenerateItemEvent) == 0x000118, "Member 'UFortSocialListView::GenerateItemEvent' has a wrong offset!");
 static_assert(offsetof(UFortSocialListView, SocialItemWidgetType) == 0x000128, "Member 'UFortSocialListView::SocialItemWidgetType' has a wrong offset!");
 static_assert(offsetof(UFortSocialListView, ListRowStyle) == 0x000130, "Member 'UFortSocialListView::ListRowStyle' has a wrong offset!");
 static_assert(offsetof(UFortSocialListView, SocialList) == 0x000848, "Member 'UFortSocialListView::SocialList' has a wrong offset!");
 
 // Class FortniteUI.FortItemDetailsActivatablePanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0418 - 0x03E0)
 #pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemDetailsActivatablePanel : public UCommonActivatablePanel
+class alignas(0x08) UFortItemDetailsActivatablePanel : public UCommonActivatablePanel
 {
 public:
 	TWeakObjectPtr<class UFortItem>               ItemToDetail;                                      // 0x03E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7535,16 +7379,15 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UFortItemDetailsActivatablePanel) == 0x322CBBB8, "Wrong alignment on UFortItemDetailsActivatablePanel");
-static_assert(sizeof(UFortItemDetailsActivatablePanel) == 0x322CBBB8, "Wrong size on UFortItemDetailsActivatablePanel");
+static_assert(alignof(UFortItemDetailsActivatablePanel) == 0x000008, "Wrong alignment on UFortItemDetailsActivatablePanel");
+static_assert(sizeof(UFortItemDetailsActivatablePanel) == 0x000418, "Wrong size on UFortItemDetailsActivatablePanel");
 static_assert(offsetof(UFortItemDetailsActivatablePanel, ItemToDetail) == 0x0003E0, "Member 'UFortItemDetailsActivatablePanel::ItemToDetail' has a wrong offset!");
 static_assert(offsetof(UFortItemDetailsActivatablePanel, ItemToCompareWith) == 0x0003E8, "Member 'UFortItemDetailsActivatablePanel::ItemToCompareWith' has a wrong offset!");
 static_assert(offsetof(UFortItemDetailsActivatablePanel, HostItemManagementScreen) == 0x0003F0, "Member 'UFortItemDetailsActivatablePanel::HostItemManagementScreen' has a wrong offset!");
 
 // Class FortniteUI.FortItemDetailsModeActivatablePanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemDetailsModeActivatablePanel : public UFortItemDetailsActivatablePanel
+// 0x0018 (0x0430 - 0x0418)
+class UFortItemDetailsModeActivatablePanel : public UFortItemDetailsActivatablePanel
 {
 public:
 	class UCommonWidgetSwitcher*                  DetailPanelWidgetSwitcher;                         // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7563,15 +7406,13 @@ public:
 		return GetDefaultObjImpl<UFortItemDetailsModeActivatablePanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemDetailsModeActivatablePanel) == 0x322CBBB8, "Wrong alignment on UFortItemDetailsModeActivatablePanel");
-static_assert(sizeof(UFortItemDetailsModeActivatablePanel) == 0x322CBBB8, "Wrong size on UFortItemDetailsModeActivatablePanel");
+static_assert(alignof(UFortItemDetailsModeActivatablePanel) == 0x000008, "Wrong alignment on UFortItemDetailsModeActivatablePanel");
+static_assert(sizeof(UFortItemDetailsModeActivatablePanel) == 0x000430, "Wrong size on UFortItemDetailsModeActivatablePanel");
 static_assert(offsetof(UFortItemDetailsModeActivatablePanel, DetailPanelWidgetSwitcher) == 0x000418, "Member 'UFortItemDetailsModeActivatablePanel::DetailPanelWidgetSwitcher' has a wrong offset!");
 
 // Class FortniteUI.FortSquadSlotDetailsPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadSlotDetailsPanel : public UCommonUserWidget
+// 0x0060 (0x0298 - 0x0238)
+class UFortSquadSlotDetailsPanel : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x28];                                     // 0x0238(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
@@ -7602,16 +7443,14 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotDetailsPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadSlotDetailsPanel) == 0x322CBBB8, "Wrong alignment on UFortSquadSlotDetailsPanel");
-static_assert(sizeof(UFortSquadSlotDetailsPanel) == 0x322CBBB8, "Wrong size on UFortSquadSlotDetailsPanel");
+static_assert(alignof(UFortSquadSlotDetailsPanel) == 0x000008, "Wrong alignment on UFortSquadSlotDetailsPanel");
+static_assert(sizeof(UFortSquadSlotDetailsPanel) == 0x000298, "Wrong size on UFortSquadSlotDetailsPanel");
 static_assert(offsetof(UFortSquadSlotDetailsPanel, ItemDetailsPanel) == 0x000260, "Member 'UFortSquadSlotDetailsPanel::ItemDetailsPanel' has a wrong offset!");
 static_assert(offsetof(UFortSquadSlotDetailsPanel, ItemViewContext) == 0x000268, "Member 'UFortSquadSlotDetailsPanel::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortItemCompareModeActivatablePanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemCompareModeActivatablePanel : public UFortItemDetailsActivatablePanel
+// 0x0018 (0x0430 - 0x0418)
+class UFortItemCompareModeActivatablePanel : public UFortItemDetailsActivatablePanel
 {
 public:
 	class UFortItemManagementItemDetailsPanel*    ComparisonModeLeftItemDetailsPanel;                // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7628,16 +7467,14 @@ public:
 		return GetDefaultObjImpl<UFortItemCompareModeActivatablePanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemCompareModeActivatablePanel) == 0x322CBBB8, "Wrong alignment on UFortItemCompareModeActivatablePanel");
-static_assert(sizeof(UFortItemCompareModeActivatablePanel) == 0x322CBBB8, "Wrong size on UFortItemCompareModeActivatablePanel");
+static_assert(alignof(UFortItemCompareModeActivatablePanel) == 0x000008, "Wrong alignment on UFortItemCompareModeActivatablePanel");
+static_assert(sizeof(UFortItemCompareModeActivatablePanel) == 0x000430, "Wrong size on UFortItemCompareModeActivatablePanel");
 static_assert(offsetof(UFortItemCompareModeActivatablePanel, ComparisonModeLeftItemDetailsPanel) == 0x000418, "Member 'UFortItemCompareModeActivatablePanel::ComparisonModeLeftItemDetailsPanel' has a wrong offset!");
 static_assert(offsetof(UFortItemCompareModeActivatablePanel, ComparisonModeRightItemDetailsPanel) == 0x000420, "Member 'UFortItemCompareModeActivatablePanel::ComparisonModeRightItemDetailsPanel' has a wrong offset!");
 
 // Class FortniteUI.FortItemMulchModeActivatablePanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemMulchModeActivatablePanel : public UFortItemDetailsActivatablePanel
+// 0x0018 (0x0430 - 0x0418)
+class UFortItemMulchModeActivatablePanel : public UFortItemDetailsActivatablePanel
 {
 public:
 	class UFortItemManagementItemDetailsPanel*    MulchModeItemDetailsPanel;                         // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7654,19 +7491,18 @@ public:
 		return GetDefaultObjImpl<UFortItemMulchModeActivatablePanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemMulchModeActivatablePanel) == 0x322CBBB8, "Wrong alignment on UFortItemMulchModeActivatablePanel");
-static_assert(sizeof(UFortItemMulchModeActivatablePanel) == 0x322CBBB8, "Wrong size on UFortItemMulchModeActivatablePanel");
+static_assert(alignof(UFortItemMulchModeActivatablePanel) == 0x000008, "Wrong alignment on UFortItemMulchModeActivatablePanel");
+static_assert(sizeof(UFortItemMulchModeActivatablePanel) == 0x000430, "Wrong size on UFortItemMulchModeActivatablePanel");
 static_assert(offsetof(UFortItemMulchModeActivatablePanel, MulchModeItemDetailsPanel) == 0x000418, "Member 'UFortItemMulchModeActivatablePanel::MulchModeItemDetailsPanel' has a wrong offset!");
 static_assert(offsetof(UFortItemMulchModeActivatablePanel, MulchDetailsPanel) == 0x000420, "Member 'UFortItemMulchModeActivatablePanel::MulchDetailsPanel' has a wrong offset!");
 
 // Class FortniteUI.FortSquadStatValueWithIcon
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0290 - 0x0238)
 class UFortSquadStatValueWithIcon final : public UCommonUserWidget
 {
 public:
-	struct FGameplayAttribute                     Attribute;                                         // 0x0238(0x11821C00)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGameplayAttribute                     TeamAttribute;                                     // 0x0258(0x11821C00)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     Attribute;                                         // 0x0238(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     TeamAttribute;                                     // 0x0258(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortBrushSize                                ImageSize;                                         // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonNumericTextBlock*                Value;                                             // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7685,8 +7521,8 @@ public:
 		return GetDefaultObjImpl<UFortSquadStatValueWithIcon>();
 	}
 };
-static_assert(alignof(UFortSquadStatValueWithIcon) == 0x322CBBB8, "Wrong alignment on UFortSquadStatValueWithIcon");
-static_assert(sizeof(UFortSquadStatValueWithIcon) == 0x322CBBB8, "Wrong size on UFortSquadStatValueWithIcon");
+static_assert(alignof(UFortSquadStatValueWithIcon) == 0x000008, "Wrong alignment on UFortSquadStatValueWithIcon");
+static_assert(sizeof(UFortSquadStatValueWithIcon) == 0x000290, "Wrong size on UFortSquadStatValueWithIcon");
 static_assert(offsetof(UFortSquadStatValueWithIcon, Attribute) == 0x000238, "Member 'UFortSquadStatValueWithIcon::Attribute' has a wrong offset!");
 static_assert(offsetof(UFortSquadStatValueWithIcon, TeamAttribute) == 0x000258, "Member 'UFortSquadStatValueWithIcon::TeamAttribute' has a wrong offset!");
 static_assert(offsetof(UFortSquadStatValueWithIcon, ImageSize) == 0x000278, "Member 'UFortSquadStatValueWithIcon::ImageSize' has a wrong offset!");
@@ -7694,9 +7530,8 @@ static_assert(offsetof(UFortSquadStatValueWithIcon, Value) == 0x000280, "Member 
 static_assert(offsetof(UFortSquadStatValueWithIcon, Icon) == 0x000288, "Member 'UFortSquadStatValueWithIcon::Icon' has a wrong offset!");
 
 // Class FortniteUI.FortItemManagementItemDetailsPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemManagementItemDetailsPanel : public UFortItemDetailsHostPanel
+// 0x0018 (0x02A8 - 0x0290)
+class UFortItemManagementItemDetailsPanel : public UFortItemDetailsHostPanel
 {
 public:
 	bool                                          HasItemMarkedForMulching;                          // 0x0290(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7718,16 +7553,14 @@ public:
 		return GetDefaultObjImpl<UFortItemManagementItemDetailsPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemManagementItemDetailsPanel) == 0x322CBBB8, "Wrong alignment on UFortItemManagementItemDetailsPanel");
-static_assert(sizeof(UFortItemManagementItemDetailsPanel) == 0x322CBBB8, "Wrong size on UFortItemManagementItemDetailsPanel");
+static_assert(alignof(UFortItemManagementItemDetailsPanel) == 0x000008, "Wrong alignment on UFortItemManagementItemDetailsPanel");
+static_assert(sizeof(UFortItemManagementItemDetailsPanel) == 0x0002A8, "Wrong size on UFortItemManagementItemDetailsPanel");
 static_assert(offsetof(UFortItemManagementItemDetailsPanel, HasItemMarkedForMulching) == 0x000290, "Member 'UFortItemManagementItemDetailsPanel::HasItemMarkedForMulching' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementItemDetailsPanel, HostItemManagementScreen) == 0x000294, "Member 'UFortItemManagementItemDetailsPanel::HostItemManagementScreen' has a wrong offset!");
 
 // Class FortniteUI.FortItemManagementMulchDetailsPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemManagementMulchDetailsPanel : public UCommonUserWidget
+// 0x0018 (0x0250 - 0x0238)
+class UFortItemManagementMulchDetailsPanel : public UCommonUserWidget
 {
 public:
 	class UFortItemQuantityListBase*              ResourceList;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7752,17 +7585,18 @@ public:
 		return GetDefaultObjImpl<UFortItemManagementMulchDetailsPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemManagementMulchDetailsPanel) == 0x322CBBB8, "Wrong alignment on UFortItemManagementMulchDetailsPanel");
-static_assert(sizeof(UFortItemManagementMulchDetailsPanel) == 0x322CBBB8, "Wrong size on UFortItemManagementMulchDetailsPanel");
+static_assert(alignof(UFortItemManagementMulchDetailsPanel) == 0x000008, "Wrong alignment on UFortItemManagementMulchDetailsPanel");
+static_assert(sizeof(UFortItemManagementMulchDetailsPanel) == 0x000250, "Wrong size on UFortItemManagementMulchDetailsPanel");
 static_assert(offsetof(UFortItemManagementMulchDetailsPanel, ResourceList) == 0x000238, "Member 'UFortItemManagementMulchDetailsPanel::ResourceList' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementMulchDetailsPanel, HostItemManagementScreen) == 0x000240, "Member 'UFortItemManagementMulchDetailsPanel::HostItemManagementScreen' has a wrong offset!");
 
 // Class FortniteUI.FortSquadStatDetailsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadStatDetailsWidget : public UCommonUserWidget
+// 0x0030 (0x0268 - 0x0238)
+class UFortSquadStatDetailsWidget : public UCommonUserWidget
 {
+public:
+	uint8                                         Pad_238[0x30];                                     // 0x0238(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -7773,14 +7607,12 @@ public:
 		return GetDefaultObjImpl<UFortSquadStatDetailsWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadStatDetailsWidget) == 0x322CBBB8, "Wrong alignment on UFortSquadStatDetailsWidget");
-static_assert(sizeof(UFortSquadStatDetailsWidget) == 0x322CBBB8, "Wrong size on UFortSquadStatDetailsWidget");
+static_assert(alignof(UFortSquadStatDetailsWidget) == 0x000008, "Wrong alignment on UFortSquadStatDetailsWidget");
+static_assert(sizeof(UFortSquadStatDetailsWidget) == 0x000268, "Wrong size on UFortSquadStatDetailsWidget");
 
 // Class FortniteUI.FortItemManagementModeDetailsPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemManagementModeDetailsPanel : public UCommonUserWidget
+// 0x0030 (0x0268 - 0x0238)
+class UFortItemManagementModeDetailsPanel : public UCommonUserWidget
 {
 public:
 	class UCommonWidgetSwitcher*                  ModeWidgetSwitcher;                                // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7806,9 +7638,8 @@ public:
 		return GetDefaultObjImpl<UFortItemManagementModeDetailsPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemManagementModeDetailsPanel) == 0x322CBBB8, "Wrong alignment on UFortItemManagementModeDetailsPanel");
-static_assert(sizeof(UFortItemManagementModeDetailsPanel) == 0x322CBBB8, "Wrong size on UFortItemManagementModeDetailsPanel");
+static_assert(alignof(UFortItemManagementModeDetailsPanel) == 0x000008, "Wrong alignment on UFortItemManagementModeDetailsPanel");
+static_assert(sizeof(UFortItemManagementModeDetailsPanel) == 0x000268, "Wrong size on UFortItemManagementModeDetailsPanel");
 static_assert(offsetof(UFortItemManagementModeDetailsPanel, ModeWidgetSwitcher) == 0x000238, "Member 'UFortItemManagementModeDetailsPanel::ModeWidgetSwitcher' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementModeDetailsPanel, DetailsModeItemDetailsPanel) == 0x000240, "Member 'UFortItemManagementModeDetailsPanel::DetailsModeItemDetailsPanel' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementModeDetailsPanel, ComparisonModeItemDetailsPanel) == 0x000248, "Member 'UFortItemManagementModeDetailsPanel::ComparisonModeItemDetailsPanel' has a wrong offset!");
@@ -7816,9 +7647,8 @@ static_assert(offsetof(UFortItemManagementModeDetailsPanel, MulchModeItemDetails
 static_assert(offsetof(UFortItemManagementModeDetailsPanel, HostItemManagementScreen) == 0x000258, "Member 'UFortItemManagementModeDetailsPanel::HostItemManagementScreen' has a wrong offset!");
 
 // Class FortniteUI.FortItemDetailsPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemDetailsPanel : public UCommonUserWidget
+// 0x0028 (0x0260 - 0x0238)
+class UFortItemDetailsPanel : public UCommonUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortItem>               ItemToDetail;                                      // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7844,14 +7674,13 @@ public:
 		return GetDefaultObjImpl<UFortItemDetailsPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemDetailsPanel) == 0x322CBBB8, "Wrong alignment on UFortItemDetailsPanel");
-static_assert(sizeof(UFortItemDetailsPanel) == 0x322CBBB8, "Wrong size on UFortItemDetailsPanel");
+static_assert(alignof(UFortItemDetailsPanel) == 0x000008, "Wrong alignment on UFortItemDetailsPanel");
+static_assert(sizeof(UFortItemDetailsPanel) == 0x000260, "Wrong size on UFortItemDetailsPanel");
 static_assert(offsetof(UFortItemDetailsPanel, ItemToDetail) == 0x000238, "Member 'UFortItemDetailsPanel::ItemToDetail' has a wrong offset!");
 static_assert(offsetof(UFortItemDetailsPanel, ItemToCompareWith) == 0x000240, "Member 'UFortItemDetailsPanel::ItemToCompareWith' has a wrong offset!");
 
 // Class FortniteUI.FortDefenderSquadSelectorButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x08C0 - 0x08C0)
 class UFortDefenderSquadSelectorButton final : public UFortSquadSelectorButton
 {
 public:
@@ -7869,11 +7698,11 @@ public:
 		return GetDefaultObjImpl<UFortDefenderSquadSelectorButton>();
 	}
 };
-static_assert(alignof(UFortDefenderSquadSelectorButton) == 0x322CBBB8, "Wrong alignment on UFortDefenderSquadSelectorButton");
-static_assert(sizeof(UFortDefenderSquadSelectorButton) == 0x322CBBB8, "Wrong size on UFortDefenderSquadSelectorButton");
+static_assert(alignof(UFortDefenderSquadSelectorButton) == 0x000008, "Wrong alignment on UFortDefenderSquadSelectorButton");
+static_assert(sizeof(UFortDefenderSquadSelectorButton) == 0x0008C0, "Wrong size on UFortDefenderSquadSelectorButton");
 
 // Class FortniteUI.FortItemDisplayNameText
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x02C8 - 0x0298)
 class UFortItemDisplayNameText final : public UCommonTextBlock
 {
 public:
@@ -7893,23 +7722,24 @@ public:
 		return GetDefaultObjImpl<UFortItemDisplayNameText>();
 	}
 };
-static_assert(alignof(UFortItemDisplayNameText) == 0x322CBBB8, "Wrong alignment on UFortItemDisplayNameText");
-static_assert(sizeof(UFortItemDisplayNameText) == 0x322CBBB8, "Wrong size on UFortItemDisplayNameText");
+static_assert(alignof(UFortItemDisplayNameText) == 0x000008, "Wrong alignment on UFortItemDisplayNameText");
+static_assert(sizeof(UFortItemDisplayNameText) == 0x0002C8, "Wrong size on UFortItemDisplayNameText");
 static_assert(offsetof(UFortItemDisplayNameText, ItemToRepresent) == 0x000298, "Member 'UFortItemDisplayNameText::ItemToRepresent' has a wrong offset!");
 
 // Class FortniteUI.FortItemIcon
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x00F0 (0x0208 - 0x0118)
 class UFortItemIcon final : public UWidget
 {
 public:
 	class UFortItemDefinition*                    ItemDefinition;                                    // 0x0118(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortBrushSize                                BrushSize;                                         // 0x0120(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ColorAndOpacity;                                   // 0x0124(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorAndOpacity;                                   // 0x0124(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShadow;                                           // 0x0134(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_135[0x3];                                      // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           ShadowColorAndOpacity;                             // 0x0138(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            SmallPreviewImageBrush;                            // 0x0148(0x322CBBB8)(NativeAccessSpecifierPrivate)
+	struct FLinearColor                           ShadowColorAndOpacity;                             // 0x0138(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SmallPreviewImageBrush;                            // 0x0148(0x0090)(NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1D8[0x30];                                     // 0x01D8(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetBrushSize(EFortBrushSize InBrushSize);
@@ -7928,8 +7758,8 @@ public:
 		return GetDefaultObjImpl<UFortItemIcon>();
 	}
 };
-static_assert(alignof(UFortItemIcon) == 0x11827900, "Wrong alignment on UFortItemIcon");
-static_assert(sizeof(UFortItemIcon) == 0x11827900, "Wrong size on UFortItemIcon");
+static_assert(alignof(UFortItemIcon) == 0x000008, "Wrong alignment on UFortItemIcon");
+static_assert(sizeof(UFortItemIcon) == 0x000208, "Wrong size on UFortItemIcon");
 static_assert(offsetof(UFortItemIcon, ItemDefinition) == 0x000118, "Member 'UFortItemIcon::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(UFortItemIcon, BrushSize) == 0x000120, "Member 'UFortItemIcon::BrushSize' has a wrong offset!");
 static_assert(offsetof(UFortItemIcon, ColorAndOpacity) == 0x000124, "Member 'UFortItemIcon::ColorAndOpacity' has a wrong offset!");
@@ -7938,7 +7768,7 @@ static_assert(offsetof(UFortItemIcon, ShadowColorAndOpacity) == 0x000138, "Membe
 static_assert(offsetof(UFortItemIcon, SmallPreviewImageBrush) == 0x000148, "Member 'UFortItemIcon::SmallPreviewImageBrush' has a wrong offset!");
 
 // Class FortniteUI.FortSurvivorSquadStatMatchesBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0298 - 0x0268)
 class UFortSurvivorSquadStatMatchesBase final : public UFortSquadStatDetailsWidget
 {
 public:
@@ -7967,16 +7797,15 @@ public:
 		return GetDefaultObjImpl<UFortSurvivorSquadStatMatchesBase>();
 	}
 };
-static_assert(alignof(UFortSurvivorSquadStatMatchesBase) == 0x322CBBB8, "Wrong alignment on UFortSurvivorSquadStatMatchesBase");
-static_assert(sizeof(UFortSurvivorSquadStatMatchesBase) == 0x322CBBB8, "Wrong size on UFortSurvivorSquadStatMatchesBase");
+static_assert(alignof(UFortSurvivorSquadStatMatchesBase) == 0x000008, "Wrong alignment on UFortSurvivorSquadStatMatchesBase");
+static_assert(sizeof(UFortSurvivorSquadStatMatchesBase) == 0x000298, "Wrong size on UFortSurvivorSquadStatMatchesBase");
 static_assert(offsetof(UFortSurvivorSquadStatMatchesBase, StatMatchClass) == 0x000268, "Member 'UFortSurvivorSquadStatMatchesBase::StatMatchClass' has a wrong offset!");
 static_assert(offsetof(UFortSurvivorSquadStatMatchesBase, bSummaryView) == 0x000270, "Member 'UFortSurvivorSquadStatMatchesBase::bSummaryView' has a wrong offset!");
 static_assert(offsetof(UFortSurvivorSquadStatMatchesBase, StatMatches) == 0x000278, "Member 'UFortSurvivorSquadStatMatchesBase::StatMatches' has a wrong offset!");
 
 // Class FortniteUI.FortItemManagementInventoryPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemManagementInventoryPanel : public UCommonUserWidget
+// 0x00C8 (0x0300 - 0x0238)
+class UFortItemManagementInventoryPanel : public UCommonUserWidget
 {
 public:
 	class FName                                   CurrentFilterName;                                 // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8035,9 +7864,8 @@ public:
 		return GetDefaultObjImpl<UFortItemManagementInventoryPanel>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemManagementInventoryPanel) == 0x322CBBB8, "Wrong alignment on UFortItemManagementInventoryPanel");
-static_assert(sizeof(UFortItemManagementInventoryPanel) == 0x322CBBB8, "Wrong size on UFortItemManagementInventoryPanel");
+static_assert(alignof(UFortItemManagementInventoryPanel) == 0x000008, "Wrong alignment on UFortItemManagementInventoryPanel");
+static_assert(sizeof(UFortItemManagementInventoryPanel) == 0x000300, "Wrong size on UFortItemManagementInventoryPanel");
 static_assert(offsetof(UFortItemManagementInventoryPanel, CurrentFilterName) == 0x000238, "Member 'UFortItemManagementInventoryPanel::CurrentFilterName' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementInventoryPanel, CurrentSortType) == 0x000240, "Member 'UFortItemManagementInventoryPanel::CurrentSortType' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementInventoryPanel, FilterTabButtonType) == 0x000248, "Member 'UFortItemManagementInventoryPanel::FilterTabButtonType' has a wrong offset!");
@@ -8053,9 +7881,8 @@ static_assert(offsetof(UFortItemManagementInventoryPanel, MulchRestrictionReason
 static_assert(offsetof(UFortItemManagementInventoryPanel, HostItemManagementScreen) == 0x0002A0, "Member 'UFortItemManagementInventoryPanel::HostItemManagementScreen' has a wrong offset!");
 
 // Class FortniteUI.FortItemPickerBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemPickerBase : public UCommonUserWidget
+// 0x0058 (0x0290 - 0x0238)
+class UFortItemPickerBase : public UCommonUserWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnSelectionChangedEvent;                           // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -8093,9 +7920,8 @@ public:
 		return GetDefaultObjImpl<UFortItemPickerBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemPickerBase) == 0x322CBBB8, "Wrong alignment on UFortItemPickerBase");
-static_assert(sizeof(UFortItemPickerBase) == 0x322CBBB8, "Wrong size on UFortItemPickerBase");
+static_assert(alignof(UFortItemPickerBase) == 0x000008, "Wrong alignment on UFortItemPickerBase");
+static_assert(sizeof(UFortItemPickerBase) == 0x000290, "Wrong size on UFortItemPickerBase");
 static_assert(offsetof(UFortItemPickerBase, OnSelectionChangedEvent) == 0x000238, "Member 'UFortItemPickerBase::OnSelectionChangedEvent' has a wrong offset!");
 static_assert(offsetof(UFortItemPickerBase, OnSelectionCommittedEvent) == 0x000248, "Member 'UFortItemPickerBase::OnSelectionCommittedEvent' has a wrong offset!");
 static_assert(offsetof(UFortItemPickerBase, OnItemHoveredEvent) == 0x000258, "Member 'UFortItemPickerBase::OnItemHoveredEvent' has a wrong offset!");
@@ -8104,7 +7930,7 @@ static_assert(offsetof(UFortItemPickerBase, PickerTileView) == 0x000278, "Member
 static_assert(offsetof(UFortItemPickerBase, ItemViewContext) == 0x000280, "Member 'UFortItemPickerBase::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortSurvivorSquadSummaryStatItem
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UFortSurvivorSquadSummaryStatItem final : public UCommonUserWidget
 {
 public:
@@ -8127,17 +7953,16 @@ public:
 		return GetDefaultObjImpl<UFortSurvivorSquadSummaryStatItem>();
 	}
 };
-static_assert(alignof(UFortSurvivorSquadSummaryStatItem) == 0x322CBBB8, "Wrong alignment on UFortSurvivorSquadSummaryStatItem");
-static_assert(sizeof(UFortSurvivorSquadSummaryStatItem) == 0x322CBBB8, "Wrong size on UFortSurvivorSquadSummaryStatItem");
+static_assert(alignof(UFortSurvivorSquadSummaryStatItem) == 0x000008, "Wrong alignment on UFortSurvivorSquadSummaryStatItem");
+static_assert(sizeof(UFortSurvivorSquadSummaryStatItem) == 0x000258, "Wrong size on UFortSurvivorSquadSummaryStatItem");
 static_assert(offsetof(UFortSurvivorSquadSummaryStatItem, ImageSize) == 0x000238, "Member 'UFortSurvivorSquadSummaryStatItem::ImageSize' has a wrong offset!");
 static_assert(offsetof(UFortSurvivorSquadSummaryStatItem, Icon) == 0x000240, "Member 'UFortSurvivorSquadSummaryStatItem::Icon' has a wrong offset!");
 static_assert(offsetof(UFortSurvivorSquadSummaryStatItem, Value) == 0x000248, "Member 'UFortSurvivorSquadSummaryStatItem::Value' has a wrong offset!");
 static_assert(offsetof(UFortSurvivorSquadSummaryStatItem, Name_0) == 0x000250, "Member 'UFortSurvivorSquadSummaryStatItem::Name_0' has a wrong offset!");
 
 // Class FortniteUI.FortCollectionBookPicker
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortCollectionBookPicker : public UFortItemPickerBase
+// 0x0020 (0x02B0 - 0x0290)
+class UFortCollectionBookPicker : public UFortItemPickerBase
 {
 public:
 	UMulticastDelegateProperty_                   OnSlotItemConfirmationCompleteEvent;               // 0x0290(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -8160,14 +7985,13 @@ public:
 		return GetDefaultObjImpl<UFortCollectionBookPicker>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortCollectionBookPicker) == 0x322CBBB8, "Wrong alignment on UFortCollectionBookPicker");
-static_assert(sizeof(UFortCollectionBookPicker) == 0x322CBBB8, "Wrong size on UFortCollectionBookPicker");
+static_assert(alignof(UFortCollectionBookPicker) == 0x000008, "Wrong alignment on UFortCollectionBookPicker");
+static_assert(sizeof(UFortCollectionBookPicker) == 0x0002B0, "Wrong size on UFortCollectionBookPicker");
 static_assert(offsetof(UFortCollectionBookPicker, OnSlotItemConfirmationCompleteEvent) == 0x000290, "Member 'UFortCollectionBookPicker::OnSlotItemConfirmationCompleteEvent' has a wrong offset!");
 static_assert(offsetof(UFortCollectionBookPicker, CurrentSlottedItem) == 0x0002A8, "Member 'UFortCollectionBookPicker::CurrentSlottedItem' has a wrong offset!");
 
 // Class FortniteUI.FortOutpostStorageItemPicker
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x0300 - 0x0290)
 class UFortOutpostStorageItemPicker final : public UFortItemPickerBase
 {
 public:
@@ -8188,12 +8012,12 @@ public:
 		return GetDefaultObjImpl<UFortOutpostStorageItemPicker>();
 	}
 };
-static_assert(alignof(UFortOutpostStorageItemPicker) == 0x322CBBB8, "Wrong alignment on UFortOutpostStorageItemPicker");
-static_assert(sizeof(UFortOutpostStorageItemPicker) == 0x322CBBB8, "Wrong size on UFortOutpostStorageItemPicker");
+static_assert(alignof(UFortOutpostStorageItemPicker) == 0x000008, "Wrong alignment on UFortOutpostStorageItemPicker");
+static_assert(sizeof(UFortOutpostStorageItemPicker) == 0x000300, "Wrong size on UFortOutpostStorageItemPicker");
 static_assert(offsetof(UFortOutpostStorageItemPicker, DetailsPanel) == 0x000290, "Member 'UFortOutpostStorageItemPicker::DetailsPanel' has a wrong offset!");
 
 // Class FortniteUI.FortStoreContext
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x00A8 (0x00D0 - 0x0028)
 class UFortStoreContext final : public UBlueprintContextBase
 {
 public:
@@ -8201,11 +8025,11 @@ public:
 	UMulticastDelegateProperty_                   OnCardPackOffersChanged;                           // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnStoreStateChange;                                // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TArray<struct FCardPackOffer>                 Offers;                                            // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FDateTime                              NextStoreRefresh;                                  // 0x0060(0x11821300)(BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              NextStoreRefresh;                                  // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FCard>                          CardList;                                          // 0x0068(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         CardIndex;                                         // 0x0078(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FOpenedCardPack                        OpenedCardPack;                                    // 0x0080(0x1182E980)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FOpenedCardPack                        OpenedCardPack;                                    // 0x0080(0x0010)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 	EFortRarity                                   LastCardRarity;                                    // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_91[0x2F];                                      // 0x0091(0x002F)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FStringAssetReference>          MissingAssetsAttemptedAsyncLoad;                   // 0x00C0(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
@@ -8258,8 +8082,8 @@ public:
 		return GetDefaultObjImpl<UFortStoreContext>();
 	}
 };
-static_assert(alignof(UFortStoreContext) == 0x1182E980, "Wrong alignment on UFortStoreContext");
-static_assert(sizeof(UFortStoreContext) == 0x1182E980, "Wrong size on UFortStoreContext");
+static_assert(alignof(UFortStoreContext) == 0x000008, "Wrong alignment on UFortStoreContext");
+static_assert(sizeof(UFortStoreContext) == 0x0000D0, "Wrong size on UFortStoreContext");
 static_assert(offsetof(UFortStoreContext, OnCardPackOffersChanged) == 0x000030, "Member 'UFortStoreContext::OnCardPackOffersChanged' has a wrong offset!");
 static_assert(offsetof(UFortStoreContext, OnStoreStateChange) == 0x000040, "Member 'UFortStoreContext::OnStoreStateChange' has a wrong offset!");
 static_assert(offsetof(UFortStoreContext, Offers) == 0x000050, "Member 'UFortStoreContext::Offers' has a wrong offset!");
@@ -8271,9 +8095,12 @@ static_assert(offsetof(UFortStoreContext, LastCardRarity) == 0x000090, "Member '
 static_assert(offsetof(UFortStoreContext, MissingAssetsAttemptedAsyncLoad) == 0x0000C0, "Member 'UFortStoreContext::MissingAssetsAttemptedAsyncLoad' has a wrong offset!");
 
 // Class FortniteUI.FortSquadSlotItemPicker
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00E0 (0x0370 - 0x0290)
 class UFortSquadSlotItemPicker : public UFortItemPickerBase
 {
+public:
+	uint8                                         Pad_290[0xE0];                                     // 0x0290(0x00E0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void SetIdOfSquadSlotToManageBP(const class FName& SquadId, const int32 SquadSlotIndex);
 
@@ -8289,13 +8116,16 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotItemPicker>();
 	}
 };
-static_assert(alignof(UFortSquadSlotItemPicker) == 0x322CBBB8, "Wrong alignment on UFortSquadSlotItemPicker");
-static_assert(sizeof(UFortSquadSlotItemPicker) == 0x322CBBB8, "Wrong size on UFortSquadSlotItemPicker");
+static_assert(alignof(UFortSquadSlotItemPicker) == 0x000008, "Wrong alignment on UFortSquadSlotItemPicker");
+static_assert(sizeof(UFortSquadSlotItemPicker) == 0x000370, "Wrong size on UFortSquadSlotItemPicker");
 
 // Class FortniteUI.FortTransformKeyPicker
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x0300 - 0x0290)
 class UFortTransformKeyPicker : public UFortItemPickerBase
 {
+public:
+	uint8                                         Pad_290[0x70];                                     // 0x0290(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void RebuildTransformKeys(const TArray<class UObject*>& InDataProvider);
 
@@ -8309,11 +8139,11 @@ public:
 		return GetDefaultObjImpl<UFortTransformKeyPicker>();
 	}
 };
-static_assert(alignof(UFortTransformKeyPicker) == 0x322CBBB8, "Wrong alignment on UFortTransformKeyPicker");
-static_assert(sizeof(UFortTransformKeyPicker) == 0x322CBBB8, "Wrong size on UFortTransformKeyPicker");
+static_assert(alignof(UFortTransformKeyPicker) == 0x000008, "Wrong alignment on UFortTransformKeyPicker");
+static_assert(sizeof(UFortTransformKeyPicker) == 0x000300, "Wrong size on UFortTransformKeyPicker");
 
 // Class FortniteUI.FortHeroSquadBonusPerksWidgetBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0278 - 0x0268)
 class UFortHeroSquadBonusPerksWidgetBase : public UFortSquadStatDetailsWidget
 {
 public:
@@ -8330,15 +8160,18 @@ public:
 		return GetDefaultObjImpl<UFortHeroSquadBonusPerksWidgetBase>();
 	}
 };
-static_assert(alignof(UFortHeroSquadBonusPerksWidgetBase) == 0x322CBBB8, "Wrong alignment on UFortHeroSquadBonusPerksWidgetBase");
-static_assert(sizeof(UFortHeroSquadBonusPerksWidgetBase) == 0x322CBBB8, "Wrong size on UFortHeroSquadBonusPerksWidgetBase");
+static_assert(alignof(UFortHeroSquadBonusPerksWidgetBase) == 0x000008, "Wrong alignment on UFortHeroSquadBonusPerksWidgetBase");
+static_assert(sizeof(UFortHeroSquadBonusPerksWidgetBase) == 0x000278, "Wrong size on UFortHeroSquadBonusPerksWidgetBase");
 static_assert(offsetof(UFortHeroSquadBonusPerksWidgetBase, SupportBonusPerkWidget) == 0x000268, "Member 'UFortHeroSquadBonusPerksWidgetBase::SupportBonusPerkWidget' has a wrong offset!");
 static_assert(offsetof(UFortHeroSquadBonusPerksWidgetBase, TacticalBonusPerkWidget) == 0x000270, "Member 'UFortHeroSquadBonusPerksWidgetBase::TacticalBonusPerkWidget' has a wrong offset!");
 
 // Class FortniteUI.FortTransformSlotItemPicker
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x02A0 - 0x0290)
 class UFortTransformSlotItemPicker : public UFortItemPickerBase
 {
+public:
+	uint8                                         Pad_290[0x10];                                     // 0x0290(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void RebuildSlottableItems(const TArray<EFortInventoryFilter>& ItemFilters, EFortItemType ItemType, const TArray<class UFortItem*>& ItemsToIgnore);
 
@@ -8352,11 +8185,11 @@ public:
 		return GetDefaultObjImpl<UFortTransformSlotItemPicker>();
 	}
 };
-static_assert(alignof(UFortTransformSlotItemPicker) == 0x322CBBB8, "Wrong alignment on UFortTransformSlotItemPicker");
-static_assert(sizeof(UFortTransformSlotItemPicker) == 0x322CBBB8, "Wrong size on UFortTransformSlotItemPicker");
+static_assert(alignof(UFortTransformSlotItemPicker) == 0x000008, "Wrong alignment on UFortTransformSlotItemPicker");
+static_assert(sizeof(UFortTransformSlotItemPicker) == 0x0002A0, "Wrong size on UFortTransformSlotItemPicker");
 
 // Class FortniteUI.FortTrapDefenderItemPicker
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x0300 - 0x0290)
 class UFortTrapDefenderItemPicker final : public UFortItemPickerBase
 {
 public:
@@ -8377,8 +8210,8 @@ public:
 		return GetDefaultObjImpl<UFortTrapDefenderItemPicker>();
 	}
 };
-static_assert(alignof(UFortTrapDefenderItemPicker) == 0x322CBBB8, "Wrong alignment on UFortTrapDefenderItemPicker");
-static_assert(sizeof(UFortTrapDefenderItemPicker) == 0x322CBBB8, "Wrong size on UFortTrapDefenderItemPicker");
+static_assert(alignof(UFortTrapDefenderItemPicker) == 0x000008, "Wrong alignment on UFortTrapDefenderItemPicker");
+static_assert(sizeof(UFortTrapDefenderItemPicker) == 0x000300, "Wrong size on UFortTrapDefenderItemPicker");
 static_assert(offsetof(UFortTrapDefenderItemPicker, DetailsPanel) == 0x000290, "Member 'UFortTrapDefenderItemPicker::DetailsPanel' has a wrong offset!");
 static_assert(offsetof(UFortTrapDefenderItemPicker, DefenderTrap) == 0x000298, "Member 'UFortTrapDefenderItemPicker::DefenderTrap' has a wrong offset!");
 
@@ -8436,9 +8269,8 @@ static_assert(offsetof(UFortPickerContext, PickerData) == 0x0000F8, "Member 'UFo
 static_assert(offsetof(UFortPickerContext, AccountTrapSchematics) == 0x000100, "Member 'UFortPickerContext::AccountTrapSchematics' has a wrong offset!");
 
 // Class FortniteUI.FortItemQuantityListEntryBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemQuantityListEntryBase : public UCommonUserWidget
+// 0x0028 (0x0260 - 0x0238)
+class UFortItemQuantityListEntryBase : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8469,15 +8301,13 @@ public:
 		return GetDefaultObjImpl<UFortItemQuantityListEntryBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemQuantityListEntryBase) == 0x322CBBB8, "Wrong alignment on UFortItemQuantityListEntryBase");
-static_assert(sizeof(UFortItemQuantityListEntryBase) == 0x322CBBB8, "Wrong size on UFortItemQuantityListEntryBase");
+static_assert(alignof(UFortItemQuantityListEntryBase) == 0x000008, "Wrong alignment on UFortItemQuantityListEntryBase");
+static_assert(sizeof(UFortItemQuantityListEntryBase) == 0x000260, "Wrong size on UFortItemQuantityListEntryBase");
 static_assert(offsetof(UFortItemQuantityListEntryBase, Quantity) == 0x000240, "Member 'UFortItemQuantityListEntryBase::Quantity' has a wrong offset!");
 
 // Class FortniteUI.FortItemQuantityListBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemQuantityListBase : public UCommonUserWidget
+// 0x0078 (0x02B0 - 0x0238)
+class UFortItemQuantityListBase : public UCommonUserWidget
 {
 public:
 	TSubclassOf<class UFortItemQuantityListEntryBase> ListEntryWidgetType;                               // 0x0238(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8503,9 +8333,8 @@ public:
 		return GetDefaultObjImpl<UFortItemQuantityListBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemQuantityListBase) == 0x322CBBB8, "Wrong alignment on UFortItemQuantityListBase");
-static_assert(sizeof(UFortItemQuantityListBase) == 0x322CBBB8, "Wrong size on UFortItemQuantityListBase");
+static_assert(alignof(UFortItemQuantityListBase) == 0x000008, "Wrong alignment on UFortItemQuantityListBase");
+static_assert(sizeof(UFortItemQuantityListBase) == 0x0002B0, "Wrong size on UFortItemQuantityListBase");
 static_assert(offsetof(UFortItemQuantityListBase, ListEntryWidgetType) == 0x000238, "Member 'UFortItemQuantityListBase::ListEntryWidgetType' has a wrong offset!");
 static_assert(offsetof(UFortItemQuantityListBase, ItemObjectToWidgetMap) == 0x000240, "Member 'UFortItemQuantityListBase::ItemObjectToWidgetMap' has a wrong offset!");
 
@@ -8536,14 +8365,13 @@ static_assert(alignof(UFortUIBlueprintFunctionLibrary) == 0x000008, "Wrong align
 static_assert(sizeof(UFortUIBlueprintFunctionLibrary) == 0x000028, "Wrong size on UFortUIBlueprintFunctionLibrary");
 
 // Class FortniteUI.FortItemRatingIndicator
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemRatingIndicator : public UCommonUserWidget
+// 0x0398 (0x05D0 - 0x0238)
+class UFortItemRatingIndicator : public UCommonUserWidget
 {
 public:
 	TWeakObjectPtr<class UFortItem>               ItemToRepresent;                                   // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class UFortItem>               ItemToCompareWith;                                 // 0x0240(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortMultiSizeBrush                    RatingTypeIcon;                                    // 0x0248(0x11827900)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	struct FFortMultiSizeBrush                    RatingTypeIcon;                                    // 0x0248(0x0360)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
 	int32                                         RatingValue;                                       // 0x05A8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EFortBuffState                                ComparisonResult;                                  // 0x05AC(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          ShouldAppearEnchanted;                             // 0x05AD(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8565,9 +8393,8 @@ public:
 		return GetDefaultObjImpl<UFortItemRatingIndicator>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemRatingIndicator) == 0x322CBBB8, "Wrong alignment on UFortItemRatingIndicator");
-static_assert(sizeof(UFortItemRatingIndicator) == 0x322CBBB8, "Wrong size on UFortItemRatingIndicator");
+static_assert(alignof(UFortItemRatingIndicator) == 0x000008, "Wrong alignment on UFortItemRatingIndicator");
+static_assert(sizeof(UFortItemRatingIndicator) == 0x0005D0, "Wrong size on UFortItemRatingIndicator");
 static_assert(offsetof(UFortItemRatingIndicator, ItemToRepresent) == 0x000238, "Member 'UFortItemRatingIndicator::ItemToRepresent' has a wrong offset!");
 static_assert(offsetof(UFortItemRatingIndicator, ItemToCompareWith) == 0x000240, "Member 'UFortItemRatingIndicator::ItemToCompareWith' has a wrong offset!");
 static_assert(offsetof(UFortItemRatingIndicator, RatingTypeIcon) == 0x000248, "Member 'UFortItemRatingIndicator::RatingTypeIcon' has a wrong offset!");
@@ -8576,9 +8403,8 @@ static_assert(offsetof(UFortItemRatingIndicator, ComparisonResult) == 0x0005AC, 
 static_assert(offsetof(UFortItemRatingIndicator, ShouldAppearEnchanted) == 0x0005AD, "Member 'UFortItemRatingIndicator::ShouldAppearEnchanted' has a wrong offset!");
 
 // Class FortniteUI.FortItemTileButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemTileButton : public UCommonButton
+// 0x0030 (0x08D0 - 0x08A0)
+class UFortItemTileButton : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8599,9 +8425,8 @@ public:
 		return GetDefaultObjImpl<UFortItemTileButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemTileButton) == 0x322CBBB8, "Wrong alignment on UFortItemTileButton");
-static_assert(sizeof(UFortItemTileButton) == 0x322CBBB8, "Wrong size on UFortItemTileButton");
+static_assert(alignof(UFortItemTileButton) == 0x000008, "Wrong alignment on UFortItemTileButton");
+static_assert(sizeof(UFortItemTileButton) == 0x0008D0, "Wrong size on UFortItemTileButton");
 static_assert(offsetof(UFortItemTileButton, ItemWidget) == 0x0008A8, "Member 'UFortItemTileButton::ItemWidget' has a wrong offset!");
 static_assert(offsetof(UFortItemTileButton, Item) == 0x0008B0, "Member 'UFortItemTileButton::Item' has a wrong offset!");
 static_assert(offsetof(UFortItemTileButton, ItemCardSize) == 0x0008B8, "Member 'UFortItemTileButton::ItemCardSize' has a wrong offset!");
@@ -8609,13 +8434,12 @@ static_assert(offsetof(UFortItemTileButton, IsRewardCard) == 0x0008B9, "Member '
 static_assert(offsetof(UFortItemTileButton, ItemViewContext) == 0x0008C0, "Member 'UFortItemTileButton::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortPlayerTrackerBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPlayerTrackerBase : public UCommonUserWidget
+// 0x0028 (0x0260 - 0x0238)
+class UFortPlayerTrackerBase : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0240(0x11821780)(BlueprintVisible, BlueprintReadOnly, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0240(0x0018)(BlueprintVisible, BlueprintReadOnly, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         PartyIndex;                                        // 0x0258(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          IsLocalPlayer;                                     // 0x025C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_25D[0x3];                                      // 0x025D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -8661,17 +8485,15 @@ public:
 		return GetDefaultObjImpl<UFortPlayerTrackerBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPlayerTrackerBase) == 0x322CBBB8, "Wrong alignment on UFortPlayerTrackerBase");
-static_assert(sizeof(UFortPlayerTrackerBase) == 0x322CBBB8, "Wrong size on UFortPlayerTrackerBase");
+static_assert(alignof(UFortPlayerTrackerBase) == 0x000008, "Wrong alignment on UFortPlayerTrackerBase");
+static_assert(sizeof(UFortPlayerTrackerBase) == 0x000260, "Wrong size on UFortPlayerTrackerBase");
 static_assert(offsetof(UFortPlayerTrackerBase, UniqueId) == 0x000240, "Member 'UFortPlayerTrackerBase::UniqueId' has a wrong offset!");
 static_assert(offsetof(UFortPlayerTrackerBase, PartyIndex) == 0x000258, "Member 'UFortPlayerTrackerBase::PartyIndex' has a wrong offset!");
 static_assert(offsetof(UFortPlayerTrackerBase, IsLocalPlayer) == 0x00025C, "Member 'UFortPlayerTrackerBase::IsLocalPlayer' has a wrong offset!");
 
 // Class FortniteUI.AthenaInventoryFortItemTileButtonBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaInventoryFortItemTileButtonBase : public UFortItemTileButton
+// 0x0000 (0x08D0 - 0x08D0)
+class UAthenaInventoryFortItemTileButtonBase : public UFortItemTileButton
 {
 public:
 	void HandleEquipSlotChanged(int32 EquipSlot);
@@ -8686,14 +8508,12 @@ public:
 		return GetDefaultObjImpl<UAthenaInventoryFortItemTileButtonBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaInventoryFortItemTileButtonBase) == 0x322CBBB8, "Wrong alignment on UAthenaInventoryFortItemTileButtonBase");
-static_assert(sizeof(UAthenaInventoryFortItemTileButtonBase) == 0x322CBBB8, "Wrong size on UAthenaInventoryFortItemTileButtonBase");
+static_assert(alignof(UAthenaInventoryFortItemTileButtonBase) == 0x000008, "Wrong alignment on UAthenaInventoryFortItemTileButtonBase");
+static_assert(sizeof(UAthenaInventoryFortItemTileButtonBase) == 0x0008D0, "Wrong size on UAthenaInventoryFortItemTileButtonBase");
 
 // Class FortniteUI.FortItemManagementItemTileButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemManagementItemTileButton : public UFortItemTileButton
+// 0x0038 (0x0908 - 0x08D0)
+class UFortItemManagementItemTileButton : public UFortItemTileButton
 {
 public:
 	bool                                          HasTheItemToDetail;                                // 0x08D0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8724,9 +8544,8 @@ public:
 		return GetDefaultObjImpl<UFortItemManagementItemTileButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemManagementItemTileButton) == 0x322CBBB8, "Wrong alignment on UFortItemManagementItemTileButton");
-static_assert(sizeof(UFortItemManagementItemTileButton) == 0x322CBBB8, "Wrong size on UFortItemManagementItemTileButton");
+static_assert(alignof(UFortItemManagementItemTileButton) == 0x000008, "Wrong alignment on UFortItemManagementItemTileButton");
+static_assert(sizeof(UFortItemManagementItemTileButton) == 0x000908, "Wrong size on UFortItemManagementItemTileButton");
 static_assert(offsetof(UFortItemManagementItemTileButton, HasTheItemToDetail) == 0x0008D0, "Member 'UFortItemManagementItemTileButton::HasTheItemToDetail' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementItemTileButton, HasTheItemToCompareDetailsWith) == 0x0008D1, "Member 'UFortItemManagementItemTileButton::HasTheItemToCompareDetailsWith' has a wrong offset!");
 static_assert(offsetof(UFortItemManagementItemTileButton, HasAnItemMarkedForMulching) == 0x0008D2, "Member 'UFortItemManagementItemTileButton::HasAnItemMarkedForMulching' has a wrong offset!");
@@ -8735,13 +8554,12 @@ static_assert(offsetof(UFortItemManagementItemTileButton, NotCraftableOverlay) =
 static_assert(offsetof(UFortItemManagementItemTileButton, HostItemManagementScreen) == 0x0008E0, "Member 'UFortItemManagementItemTileButton::HostItemManagementScreen' has a wrong offset!");
 
 // Class FortniteUI.FortPerkTierWidget_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPerkTierWidget_NUI : public UCommonUserWidget
+// 0x0050 (0x0288 - 0x0238)
+class UFortPerkTierWidget_NUI : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0240(0x1182E980)(BlueprintVisible, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0240(0x0020)(BlueprintVisible, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
 	class UFortTooltipContext*                    TooltipContext;                                    // 0x0260(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_268[0x20];                                     // 0x0268(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -8759,16 +8577,14 @@ public:
 		return GetDefaultObjImpl<UFortPerkTierWidget_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPerkTierWidget_NUI) == 0x322CBBB8, "Wrong alignment on UFortPerkTierWidget_NUI");
-static_assert(sizeof(UFortPerkTierWidget_NUI) == 0x322CBBB8, "Wrong size on UFortPerkTierWidget_NUI");
+static_assert(alignof(UFortPerkTierWidget_NUI) == 0x000008, "Wrong alignment on UFortPerkTierWidget_NUI");
+static_assert(sizeof(UFortPerkTierWidget_NUI) == 0x000288, "Wrong size on UFortPerkTierWidget_NUI");
 static_assert(offsetof(UFortPerkTierWidget_NUI, FortPerkTier) == 0x000240, "Member 'UFortPerkTierWidget_NUI::FortPerkTier' has a wrong offset!");
 static_assert(offsetof(UFortPerkTierWidget_NUI, TooltipContext) == 0x000260, "Member 'UFortPerkTierWidget_NUI::TooltipContext' has a wrong offset!");
 
 // Class FortniteUI.FortItemPickerButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemPickerButton : public UFortItemTileButton
+// 0x0000 (0x08D0 - 0x08D0)
+class UFortItemPickerButton : public UFortItemTileButton
 {
 public:
 	static class UClass* StaticClass()
@@ -8780,15 +8596,16 @@ public:
 		return GetDefaultObjImpl<UFortItemPickerButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemPickerButton) == 0x322CBBB8, "Wrong alignment on UFortItemPickerButton");
-static_assert(sizeof(UFortItemPickerButton) == 0x322CBBB8, "Wrong size on UFortItemPickerButton");
+static_assert(alignof(UFortItemPickerButton) == 0x000008, "Wrong alignment on UFortItemPickerButton");
+static_assert(sizeof(UFortItemPickerButton) == 0x0008D0, "Wrong size on UFortItemPickerButton");
 
 // Class FortniteUI.FortSquadSlotItemPickerTileButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadSlotItemPickerTileButton : public UFortItemPickerButton
+// 0x0018 (0x08E8 - 0x08D0)
+class UFortSquadSlotItemPickerTileButton : public UFortItemPickerButton
 {
+public:
+	uint8                                         Pad_8D0[0x18];                                     // 0x08D0(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void HandleItemSlottedToDifferentSquad(const struct FHomebaseSquadSlotId& SquadSlotId);
 	void HandleSlottingRestrictionReasonsChanged();
@@ -8805,9 +8622,8 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotItemPickerTileButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadSlotItemPickerTileButton) == 0x322CBBB8, "Wrong alignment on UFortSquadSlotItemPickerTileButton");
-static_assert(sizeof(UFortSquadSlotItemPickerTileButton) == 0x322CBBB8, "Wrong size on UFortSquadSlotItemPickerTileButton");
+static_assert(alignof(UFortSquadSlotItemPickerTileButton) == 0x000008, "Wrong alignment on UFortSquadSlotItemPickerTileButton");
+static_assert(sizeof(UFortSquadSlotItemPickerTileButton) == 0x0008E8, "Wrong size on UFortSquadSlotItemPickerTileButton");
 
 // Class FortniteUI.FortTutorialContext
 // 0x00C0 (0x00E8 - 0x0028)
@@ -8850,9 +8666,8 @@ static_assert(offsetof(UFortTutorialContext, OnUpdateTutorialAnnouncement) == 0x
 static_assert(offsetof(UFortTutorialContext, OnNewAnnouncementStartedOnClientDelegate) == 0x000038, "Member 'UFortTutorialContext::OnNewAnnouncementStartedOnClientDelegate' has a wrong offset!");
 
 // Class FortniteUI.FortTransformKeyPickerTileButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortTransformKeyPickerTileButton : public UFortItemPickerButton
+// 0x0000 (0x08D0 - 0x08D0)
+class UFortTransformKeyPickerTileButton : public UFortItemPickerButton
 {
 public:
 	static class UClass* StaticClass()
@@ -8864,14 +8679,12 @@ public:
 		return GetDefaultObjImpl<UFortTransformKeyPickerTileButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortTransformKeyPickerTileButton) == 0x322CBBB8, "Wrong alignment on UFortTransformKeyPickerTileButton");
-static_assert(sizeof(UFortTransformKeyPickerTileButton) == 0x322CBBB8, "Wrong size on UFortTransformKeyPickerTileButton");
+static_assert(alignof(UFortTransformKeyPickerTileButton) == 0x000008, "Wrong alignment on UFortTransformKeyPickerTileButton");
+static_assert(sizeof(UFortTransformKeyPickerTileButton) == 0x0008D0, "Wrong size on UFortTransformKeyPickerTileButton");
 
 // Class FortniteUI.FortTransformSlotItemPickerTileButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortTransformSlotItemPickerTileButton : public UFortItemPickerButton
+// 0x0000 (0x08D0 - 0x08D0)
+class UFortTransformSlotItemPickerTileButton : public UFortItemPickerButton
 {
 public:
 	static class UClass* StaticClass()
@@ -8883,14 +8696,12 @@ public:
 		return GetDefaultObjImpl<UFortTransformSlotItemPickerTileButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortTransformSlotItemPickerTileButton) == 0x322CBBB8, "Wrong alignment on UFortTransformSlotItemPickerTileButton");
-static_assert(sizeof(UFortTransformSlotItemPickerTileButton) == 0x322CBBB8, "Wrong size on UFortTransformSlotItemPickerTileButton");
+static_assert(alignof(UFortTransformSlotItemPickerTileButton) == 0x000008, "Wrong alignment on UFortTransformSlotItemPickerTileButton");
+static_assert(sizeof(UFortTransformSlotItemPickerTileButton) == 0x0008D0, "Wrong size on UFortTransformSlotItemPickerTileButton");
 
 // Class FortniteUI.FortUIManagerWidget_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortUIManagerWidget_NUI : public UCommonUserWidget
+// 0x01C8 (0x0400 - 0x0238)
+class UFortUIManagerWidget_NUI : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8967,9 +8778,8 @@ public:
 		return GetDefaultObjImpl<UFortUIManagerWidget_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortUIManagerWidget_NUI) == 0x322CBBB8, "Wrong alignment on UFortUIManagerWidget_NUI");
-static_assert(sizeof(UFortUIManagerWidget_NUI) == 0x322CBBB8, "Wrong size on UFortUIManagerWidget_NUI");
+static_assert(alignof(UFortUIManagerWidget_NUI) == 0x000008, "Wrong alignment on UFortUIManagerWidget_NUI");
+static_assert(sizeof(UFortUIManagerWidget_NUI) == 0x000400, "Wrong size on UFortUIManagerWidget_NUI");
 static_assert(offsetof(UFortUIManagerWidget_NUI, OnBeginSpokenDialog) == 0x000240, "Member 'UFortUIManagerWidget_NUI::OnBeginSpokenDialog' has a wrong offset!");
 static_assert(offsetof(UFortUIManagerWidget_NUI, OnEndSpokenDialog) == 0x000250, "Member 'UFortUIManagerWidget_NUI::OnEndSpokenDialog' has a wrong offset!");
 static_assert(offsetof(UFortUIManagerWidget_NUI, OnShouldBlockSubtitlePortraitChanged) == 0x000260, "Member 'UFortUIManagerWidget_NUI::OnShouldBlockSubtitlePortraitChanged' has a wrong offset!");
@@ -8985,12 +8795,12 @@ static_assert(offsetof(UFortUIManagerWidget_NUI, bSupressErrors) == 0x0003E0, "M
 static_assert(offsetof(UFortUIManagerWidget_NUI, BlockSubtitlePortraitRefcount) == 0x0003F8, "Member 'UFortUIManagerWidget_NUI::BlockSubtitlePortraitRefcount' has a wrong offset!");
 
 // Class FortniteUI.FortItemTileView
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0120 (0x0450 - 0x0330)
 class UFortItemTileView final : public UCommonTileView
 {
 public:
-	struct FFortItemFilterDefinition              Filter;                                            // 0x0330(0x53EFC)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FFortItemSorterDefinition              Sorter;                                            // 0x0390(0x53F37)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FFortItemFilterDefinition              Filter;                                            // 0x0330(0x0060)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FFortItemSorterDefinition              Sorter;                                            // 0x0390(0x0050)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	bool                                          bShouldShowNullItemTile;                           // 0x03E0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAutomaticallyLoadItemDetails;                     // 0x03E1(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EItemTileViewDisplayType                      DisplayType;                                       // 0x03E2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9024,8 +8834,8 @@ public:
 		return GetDefaultObjImpl<UFortItemTileView>();
 	}
 };
-static_assert(alignof(UFortItemTileView) == 0x322CBBB8, "Wrong alignment on UFortItemTileView");
-static_assert(sizeof(UFortItemTileView) == 0x322CBBB8, "Wrong size on UFortItemTileView");
+static_assert(alignof(UFortItemTileView) == 0x000010, "Wrong alignment on UFortItemTileView");
+static_assert(sizeof(UFortItemTileView) == 0x000450, "Wrong size on UFortItemTileView");
 static_assert(offsetof(UFortItemTileView, Filter) == 0x000330, "Member 'UFortItemTileView::Filter' has a wrong offset!");
 static_assert(offsetof(UFortItemTileView, Sorter) == 0x000390, "Member 'UFortItemTileView::Sorter' has a wrong offset!");
 static_assert(offsetof(UFortItemTileView, bShouldShowNullItemTile) == 0x0003E0, "Member 'UFortItemTileView::bShouldShowNullItemTile' has a wrong offset!");
@@ -9036,9 +8846,8 @@ static_assert(offsetof(UFortItemTileView, ItemsForTileView) == 0x000410, "Member
 static_assert(offsetof(UFortItemTileView, ItemViewContext) == 0x000420, "Member 'UFortItemTileView::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortItemTransform
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortItemTransform : public UCommonActivatablePanel
+// 0x0000 (0x03E0 - 0x03E0)
+class UFortItemTransform : public UCommonActivatablePanel
 {
 public:
 	void ProcessPendingSeenTransformKeys();
@@ -9053,12 +8862,11 @@ public:
 		return GetDefaultObjImpl<UFortItemTransform>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortItemTransform) == 0x322CBBB8, "Wrong alignment on UFortItemTransform");
-static_assert(sizeof(UFortItemTransform) == 0x322CBBB8, "Wrong size on UFortItemTransform");
+static_assert(alignof(UFortItemTransform) == 0x000008, "Wrong alignment on UFortItemTransform");
+static_assert(sizeof(UFortItemTransform) == 0x0003E0, "Wrong size on UFortItemTransform");
 
 // Class FortniteUI.FortTierIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0020 (0x0138 - 0x0118)
 class UFortTierIndicator final : public UWidget
 {
 public:
@@ -9085,14 +8893,14 @@ public:
 		return GetDefaultObjImpl<UFortTierIndicator>();
 	}
 };
-static_assert(alignof(UFortTierIndicator) == 0x11827900, "Wrong alignment on UFortTierIndicator");
-static_assert(sizeof(UFortTierIndicator) == 0x11827900, "Wrong size on UFortTierIndicator");
+static_assert(alignof(UFortTierIndicator) == 0x000008, "Wrong alignment on UFortTierIndicator");
+static_assert(sizeof(UFortTierIndicator) == 0x000138, "Wrong size on UFortTierIndicator");
 static_assert(offsetof(UFortTierIndicator, ItemToRepresent) == 0x000118, "Member 'UFortTierIndicator::ItemToRepresent' has a wrong offset!");
 static_assert(offsetof(UFortTierIndicator, BrushSize) == 0x000120, "Member 'UFortTierIndicator::BrushSize' has a wrong offset!");
 static_assert(offsetof(UFortTierIndicator, InterPipPadding) == 0x000124, "Member 'UFortTierIndicator::InterPipPadding' has a wrong offset!");
 
 // Class FortniteUI.FortMultiSizeItemCard
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0040 (0x0180 - 0x0140)
 class UFortMultiSizeItemCard final : public UFortItemWidget_NUI
 {
 public:
@@ -9120,17 +8928,16 @@ public:
 		return GetDefaultObjImpl<UFortMultiSizeItemCard>();
 	}
 };
-static_assert(alignof(UFortMultiSizeItemCard) == 0x11827900, "Wrong alignment on UFortMultiSizeItemCard");
-static_assert(sizeof(UFortMultiSizeItemCard) == 0x11827900, "Wrong size on UFortMultiSizeItemCard");
+static_assert(alignof(UFortMultiSizeItemCard) == 0x000008, "Wrong alignment on UFortMultiSizeItemCard");
+static_assert(sizeof(UFortMultiSizeItemCard) == 0x000180, "Wrong size on UFortMultiSizeItemCard");
 static_assert(offsetof(UFortMultiSizeItemCard, BPItemCardSize) == 0x000140, "Member 'UFortMultiSizeItemCard::BPItemCardSize' has a wrong offset!");
 static_assert(offsetof(UFortMultiSizeItemCard, ShouldDisplayItemAsReward) == 0x000141, "Member 'UFortMultiSizeItemCard::ShouldDisplayItemAsReward' has a wrong offset!");
 static_assert(offsetof(UFortMultiSizeItemCard, QuantityOverride) == 0x000144, "Member 'UFortMultiSizeItemCard::QuantityOverride' has a wrong offset!");
 static_assert(offsetof(UFortMultiSizeItemCard, EmptyItemType) == 0x000148, "Member 'UFortMultiSizeItemCard::EmptyItemType' has a wrong offset!");
 
 // Class FortniteUI.FortJournalQuestDetails
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortJournalQuestDetails : public UCommonUserWidget
+// 0x0008 (0x0240 - 0x0238)
+class UFortJournalQuestDetails : public UCommonUserWidget
 {
 public:
 	class UFortQuestItem*                         CurrentQuest;                                      // 0x0238(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9156,9 +8963,8 @@ public:
 		return GetDefaultObjImpl<UFortJournalQuestDetails>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortJournalQuestDetails) == 0x322CBBB8, "Wrong alignment on UFortJournalQuestDetails");
-static_assert(sizeof(UFortJournalQuestDetails) == 0x322CBBB8, "Wrong size on UFortJournalQuestDetails");
+static_assert(alignof(UFortJournalQuestDetails) == 0x000008, "Wrong alignment on UFortJournalQuestDetails");
+static_assert(sizeof(UFortJournalQuestDetails) == 0x000240, "Wrong size on UFortJournalQuestDetails");
 static_assert(offsetof(UFortJournalQuestDetails, CurrentQuest) == 0x000238, "Member 'UFortJournalQuestDetails::CurrentQuest' has a wrong offset!");
 
 // Class FortniteUI.FortUINotificationQueue
@@ -9193,9 +8999,8 @@ static_assert(offsetof(UFortUINotificationQueue, MaxNotificationsInQueue) == 0x0
 static_assert(offsetof(UFortUINotificationQueue, NotificationQueue) == 0x000030, "Member 'UFortUINotificationQueue::NotificationQueue' has a wrong offset!");
 
 // Class FortniteUI.FortJournalQuestProgressBar
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortJournalQuestProgressBar : public UCommonUserWidget
+// 0x0010 (0x0248 - 0x0238)
+class UFortJournalQuestProgressBar : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -9215,9 +9020,8 @@ public:
 		return GetDefaultObjImpl<UFortJournalQuestProgressBar>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortJournalQuestProgressBar) == 0x322CBBB8, "Wrong alignment on UFortJournalQuestProgressBar");
-static_assert(sizeof(UFortJournalQuestProgressBar) == 0x322CBBB8, "Wrong size on UFortJournalQuestProgressBar");
+static_assert(alignof(UFortJournalQuestProgressBar) == 0x000008, "Wrong alignment on UFortJournalQuestProgressBar");
+static_assert(sizeof(UFortJournalQuestProgressBar) == 0x000248, "Wrong size on UFortJournalQuestProgressBar");
 static_assert(offsetof(UFortJournalQuestProgressBar, QuestObjectiveInfo) == 0x000240, "Member 'UFortJournalQuestProgressBar::QuestObjectiveInfo' has a wrong offset!");
 
 // Class FortniteUI.FortLeaderboardContext
@@ -9242,9 +9046,8 @@ static_assert(alignof(UFortLeaderboardContext) == 0x000008, "Wrong alignment on 
 static_assert(sizeof(UFortLeaderboardContext) == 0x000028, "Wrong size on UFortLeaderboardContext");
 
 // Class FortniteUI.FortUIStateWidget_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortUIStateWidget_NUI : public UCommonActivatablePanel
+// 0x0020 (0x0400 - 0x03E0)
+class UFortUIStateWidget_NUI : public UCommonActivatablePanel
 {
 public:
 	uint8                                         Pad_3E0[0x8];                                      // 0x03E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -9270,16 +9073,17 @@ public:
 		return GetDefaultObjImpl<UFortUIStateWidget_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortUIStateWidget_NUI) == 0x322CBBB8, "Wrong alignment on UFortUIStateWidget_NUI");
-static_assert(sizeof(UFortUIStateWidget_NUI) == 0x322CBBB8, "Wrong size on UFortUIStateWidget_NUI");
+static_assert(alignof(UFortUIStateWidget_NUI) == 0x000008, "Wrong alignment on UFortUIStateWidget_NUI");
+static_assert(sizeof(UFortUIStateWidget_NUI) == 0x000400, "Wrong size on UFortUIStateWidget_NUI");
 static_assert(offsetof(UFortUIStateWidget_NUI, StackStates) == 0x0003E8, "Member 'UFortUIStateWidget_NUI::StackStates' has a wrong offset!");
 
 // Class FortniteUI.FortUIStateWidget_Login
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortUIStateWidget_Login : public UFortUIStateWidget_NUI
+// 0x0030 (0x0430 - 0x0400)
+class UFortUIStateWidget_Login : public UFortUIStateWidget_NUI
 {
+public:
+	uint8                                         Pad_400[0x30];                                     // 0x0400(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	bool CheckNetworkError();
 	void CheckShowLoginMessage();
@@ -9313,14 +9117,12 @@ public:
 		return GetDefaultObjImpl<UFortUIStateWidget_Login>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortUIStateWidget_Login) == 0x322CBBB8, "Wrong alignment on UFortUIStateWidget_Login");
-static_assert(sizeof(UFortUIStateWidget_Login) == 0x322CBBB8, "Wrong size on UFortUIStateWidget_Login");
+static_assert(alignof(UFortUIStateWidget_Login) == 0x000008, "Wrong alignment on UFortUIStateWidget_Login");
+static_assert(sizeof(UFortUIStateWidget_Login) == 0x000430, "Wrong size on UFortUIStateWidget_Login");
 
 // Class FortniteUI.FortLeaderboardEntryWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortLeaderboardEntryWidget : public UCommonButton
+// 0x0010 (0x08B0 - 0x08A0)
+class UFortLeaderboardEntryWidget : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -9339,13 +9141,12 @@ public:
 		return GetDefaultObjImpl<UFortLeaderboardEntryWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortLeaderboardEntryWidget) == 0x322CBBB8, "Wrong alignment on UFortLeaderboardEntryWidget");
-static_assert(sizeof(UFortLeaderboardEntryWidget) == 0x322CBBB8, "Wrong size on UFortLeaderboardEntryWidget");
+static_assert(alignof(UFortLeaderboardEntryWidget) == 0x000008, "Wrong alignment on UFortLeaderboardEntryWidget");
+static_assert(sizeof(UFortLeaderboardEntryWidget) == 0x0008B0, "Wrong size on UFortLeaderboardEntryWidget");
 static_assert(offsetof(UFortLeaderboardEntryWidget, LeaderboardEntryObject) == 0x0008A8, "Member 'UFortLeaderboardEntryWidget::LeaderboardEntryObject' has a wrong offset!");
 
 // Class FortniteUI.FortLegacySlateBridgeWidget
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0018 (0x0140 - 0x0128)
 class UFortLegacySlateBridgeWidget final : public UNativeWidgetHost
 {
 public:
@@ -9368,8 +9169,8 @@ public:
 		return GetDefaultObjImpl<UFortLegacySlateBridgeWidget>();
 	}
 };
-static_assert(alignof(UFortLegacySlateBridgeWidget) == 0x11827900, "Wrong alignment on UFortLegacySlateBridgeWidget");
-static_assert(sizeof(UFortLegacySlateBridgeWidget) == 0x11827900, "Wrong size on UFortLegacySlateBridgeWidget");
+static_assert(alignof(UFortLegacySlateBridgeWidget) == 0x000008, "Wrong alignment on UFortLegacySlateBridgeWidget");
+static_assert(sizeof(UFortLegacySlateBridgeWidget) == 0x000140, "Wrong size on UFortLegacySlateBridgeWidget");
 static_assert(offsetof(UFortLegacySlateBridgeWidget, ContainedWidgetType) == 0x000128, "Member 'UFortLegacySlateBridgeWidget::ContainedWidgetType' has a wrong offset!");
 static_assert(offsetof(UFortLegacySlateBridgeWidget, DPIScaleFactor) == 0x00012C, "Member 'UFortLegacySlateBridgeWidget::DPIScaleFactor' has a wrong offset!");
 static_assert(offsetof(UFortLegacySlateBridgeWidget, OnClose) == 0x000130, "Member 'UFortLegacySlateBridgeWidget::OnClose' has a wrong offset!");
@@ -9418,7 +9219,7 @@ static_assert(alignof(UFortUIStateTrigger_Athena) == 0x000008, "Wrong alignment 
 static_assert(sizeof(UFortUIStateTrigger_Athena) == 0x000030, "Wrong size on UFortUIStateTrigger_Athena");
 
 // Class FortniteUI.FortLevelIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0078 (0x0190 - 0x0118)
 class UFortLevelIndicator final : public UWidget
 {
 public:
@@ -9460,8 +9261,8 @@ public:
 		return GetDefaultObjImpl<UFortLevelIndicator>();
 	}
 };
-static_assert(alignof(UFortLevelIndicator) == 0x11827900, "Wrong alignment on UFortLevelIndicator");
-static_assert(sizeof(UFortLevelIndicator) == 0x11827900, "Wrong size on UFortLevelIndicator");
+static_assert(alignof(UFortLevelIndicator) == 0x000008, "Wrong alignment on UFortLevelIndicator");
+static_assert(sizeof(UFortLevelIndicator) == 0x000190, "Wrong size on UFortLevelIndicator");
 static_assert(offsetof(UFortLevelIndicator, ItemToRepresent) == 0x000118, "Member 'UFortLevelIndicator::ItemToRepresent' has a wrong offset!");
 static_assert(offsetof(UFortLevelIndicator, ItemForComparison) == 0x000120, "Member 'UFortLevelIndicator::ItemForComparison' has a wrong offset!");
 static_assert(offsetof(UFortLevelIndicator, ShouldShowLabel) == 0x000128, "Member 'UFortLevelIndicator::ShouldShowLabel' has a wrong offset!");
@@ -9479,7 +9280,7 @@ static_assert(offsetof(UFortLevelIndicator, DivisionOperatorTextBlock) == 0x0001
 static_assert(offsetof(UFortLevelIndicator, MaximumLevelNumericTextBlock) == 0x000178, "Member 'UFortLevelIndicator::MaximumLevelNumericTextBlock' has a wrong offset!");
 
 // Class FortniteUI.FortListView
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0068 (0x0180 - 0x0118)
 class UFortListView final : public UTableViewBase
 {
 public:
@@ -9517,8 +9318,8 @@ public:
 		return GetDefaultObjImpl<UFortListView>();
 	}
 };
-static_assert(alignof(UFortListView) == 0x11827900, "Wrong alignment on UFortListView");
-static_assert(sizeof(UFortListView) == 0x11827900, "Wrong size on UFortListView");
+static_assert(alignof(UFortListView) == 0x000008, "Wrong alignment on UFortListView");
+static_assert(sizeof(UFortListView) == 0x000180, "Wrong size on UFortListView");
 static_assert(offsetof(UFortListView, OnItemClicked) == 0x000118, "Member 'UFortListView::OnItemClicked' has a wrong offset!");
 static_assert(offsetof(UFortListView, OnItemSelected) == 0x000128, "Member 'UFortListView::OnItemSelected' has a wrong offset!");
 static_assert(offsetof(UFortListView, OnGenerateRowEvent) == 0x000138, "Member 'UFortListView::OnGenerateRowEvent' has a wrong offset!");
@@ -9563,9 +9364,8 @@ static_assert(offsetof(UFortUIMessageManager, MessageQueue) == 0x000038, "Member
 static_assert(offsetof(UFortUIMessageManager, CurrentlyDisplayedMessages) == 0x000048, "Member 'UFortUIMessageManager::CurrentlyDisplayedMessages' has a wrong offset!");
 
 // Class FortniteUI.FortLiveStreamGrantWindowExpires
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortLiveStreamGrantWindowExpires : public UCommonUserWidget
+// 0x0000 (0x0238 - 0x0238)
+class UFortLiveStreamGrantWindowExpires : public UCommonUserWidget
 {
 public:
 	static class UClass* StaticClass()
@@ -9577,12 +9377,11 @@ public:
 		return GetDefaultObjImpl<UFortLiveStreamGrantWindowExpires>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortLiveStreamGrantWindowExpires) == 0x322CBBB8, "Wrong alignment on UFortLiveStreamGrantWindowExpires");
-static_assert(sizeof(UFortLiveStreamGrantWindowExpires) == 0x322CBBB8, "Wrong size on UFortLiveStreamGrantWindowExpires");
+static_assert(alignof(UFortLiveStreamGrantWindowExpires) == 0x000008, "Wrong alignment on UFortLiveStreamGrantWindowExpires");
+static_assert(sizeof(UFortLiveStreamGrantWindowExpires) == 0x000238, "Wrong size on UFortLiveStreamGrantWindowExpires");
 
 // Class FortniteUI.FortLobby
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0430 - 0x03E0)
 class UFortLobby final : public UCommonActivatablePanel
 {
 public:
@@ -9607,14 +9406,13 @@ public:
 		return GetDefaultObjImpl<UFortLobby>();
 	}
 };
-static_assert(alignof(UFortLobby) == 0x322CBBB8, "Wrong alignment on UFortLobby");
-static_assert(sizeof(UFortLobby) == 0x322CBBB8, "Wrong size on UFortLobby");
+static_assert(alignof(UFortLobby) == 0x000008, "Wrong alignment on UFortLobby");
+static_assert(sizeof(UFortLobby) == 0x000430, "Wrong size on UFortLobby");
 static_assert(offsetof(UFortLobby, OverlayMain) == 0x000420, "Member 'UFortLobby::OverlayMain' has a wrong offset!");
 
 // Class FortniteUI.AthenaHUDBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UAthenaHUDBase : public UFortUIStateWidget_NUI
+// 0x0000 (0x0400 - 0x0400)
+class UAthenaHUDBase : public UFortUIStateWidget_NUI
 {
 public:
 	void TeamMembersChanged();
@@ -9629,14 +9427,12 @@ public:
 		return GetDefaultObjImpl<UAthenaHUDBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UAthenaHUDBase) == 0x322CBBB8, "Wrong alignment on UAthenaHUDBase");
-static_assert(sizeof(UAthenaHUDBase) == 0x322CBBB8, "Wrong size on UAthenaHUDBase");
+static_assert(alignof(UAthenaHUDBase) == 0x000008, "Wrong alignment on UAthenaHUDBase");
+static_assert(sizeof(UAthenaHUDBase) == 0x000400, "Wrong size on UAthenaHUDBase");
 
 // Class FortniteUI.FortLoginAccountSelect
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortLoginAccountSelect : public UCommonActivatablePanel
+// 0x0010 (0x03F0 - 0x03E0)
+class UFortLoginAccountSelect : public UCommonActivatablePanel
 {
 public:
 	UMulticastDelegateProperty_                   OnLoginAccountTypeSelected;                        // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -9654,15 +9450,13 @@ public:
 		return GetDefaultObjImpl<UFortLoginAccountSelect>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortLoginAccountSelect) == 0x322CBBB8, "Wrong alignment on UFortLoginAccountSelect");
-static_assert(sizeof(UFortLoginAccountSelect) == 0x322CBBB8, "Wrong size on UFortLoginAccountSelect");
+static_assert(alignof(UFortLoginAccountSelect) == 0x000008, "Wrong alignment on UFortLoginAccountSelect");
+static_assert(sizeof(UFortLoginAccountSelect) == 0x0003F0, "Wrong size on UFortLoginAccountSelect");
 static_assert(offsetof(UFortLoginAccountSelect, OnLoginAccountTypeSelected) == 0x0003E0, "Member 'UFortLoginAccountSelect::OnLoginAccountTypeSelected' has a wrong offset!");
 
 // Class FortniteUI.FortMainTabsScreenBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMainTabsScreenBase : public UCommonActivatablePanel
+// 0x0070 (0x0450 - 0x03E0)
+class UFortMainTabsScreenBase : public UCommonActivatablePanel
 {
 public:
 	TMap<EFortUIFeature, class FName>             FeaturesTabsMap;                                   // 0x03E0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
@@ -9688,20 +9482,18 @@ public:
 		return GetDefaultObjImpl<UFortMainTabsScreenBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMainTabsScreenBase) == 0x322CBBB8, "Wrong alignment on UFortMainTabsScreenBase");
-static_assert(sizeof(UFortMainTabsScreenBase) == 0x322CBBB8, "Wrong size on UFortMainTabsScreenBase");
+static_assert(alignof(UFortMainTabsScreenBase) == 0x000008, "Wrong alignment on UFortMainTabsScreenBase");
+static_assert(sizeof(UFortMainTabsScreenBase) == 0x000450, "Wrong size on UFortMainTabsScreenBase");
 static_assert(offsetof(UFortMainTabsScreenBase, FeaturesTabsMap) == 0x0003E0, "Member 'UFortMainTabsScreenBase::FeaturesTabsMap' has a wrong offset!");
 static_assert(offsetof(UFortMainTabsScreenBase, TopTabContainer) == 0x000430, "Member 'UFortMainTabsScreenBase::TopTabContainer' has a wrong offset!");
 static_assert(offsetof(UFortMainTabsScreenBase, TopTabList) == 0x000438, "Member 'UFortMainTabsScreenBase::TopTabList' has a wrong offset!");
 
 // Class FortniteUI.FortAlterationWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAlterationWidget : public UFortUserWidget
+// 0x0018 (0x0258 - 0x0240)
+class UFortAlterationWidget : public UFortUserWidget
 {
 public:
-	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0240(0x1182E980)(BlueprintVisible, BlueprintReadOnly, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0240(0x0018)(BlueprintVisible, BlueprintReadOnly, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
 
 public:
 	class UFortAlterationItemDefinition* GetAlterationDefintion() const;
@@ -9719,19 +9511,18 @@ public:
 		return GetDefaultObjImpl<UFortAlterationWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAlterationWidget) == 0x322CBBB8, "Wrong alignment on UFortAlterationWidget");
-static_assert(sizeof(UFortAlterationWidget) == 0x322CBBB8, "Wrong size on UFortAlterationWidget");
+static_assert(alignof(UFortAlterationWidget) == 0x000008, "Wrong alignment on UFortAlterationWidget");
+static_assert(sizeof(UFortAlterationWidget) == 0x000258, "Wrong size on UFortAlterationWidget");
 static_assert(offsetof(UFortAlterationWidget, AlterationInfo) == 0x000240, "Member 'UFortAlterationWidget::AlterationInfo' has a wrong offset!");
 
 // Class FortniteUI.FortMaterialProgressBarStyle
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x0118 (0x0140 - 0x0028)
 class UFortMaterialProgressBarStyle final : public UObject
 {
 public:
 	class FName                                   BackgroundColorParamName;                          // 0x0028(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           BackgroundColor;                                   // 0x0030(0x11821300)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortMaterialProgressBarSectionStyle   BarSectionStyles[0x4];                             // 0x0040(0x1182E980)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FLinearColor                           BackgroundColor;                                   // 0x0030(0x0010)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFortMaterialProgressBarSectionStyle   BarSectionStyles[0x4];                             // 0x0040(0x0040)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -9743,23 +9534,23 @@ public:
 		return GetDefaultObjImpl<UFortMaterialProgressBarStyle>();
 	}
 };
-static_assert(alignof(UFortMaterialProgressBarStyle) == 0x1182E980, "Wrong alignment on UFortMaterialProgressBarStyle");
-static_assert(sizeof(UFortMaterialProgressBarStyle) == 0x1182E980, "Wrong size on UFortMaterialProgressBarStyle");
+static_assert(alignof(UFortMaterialProgressBarStyle) == 0x000008, "Wrong alignment on UFortMaterialProgressBarStyle");
+static_assert(sizeof(UFortMaterialProgressBarStyle) == 0x000140, "Wrong size on UFortMaterialProgressBarStyle");
 static_assert(offsetof(UFortMaterialProgressBarStyle, BackgroundColorParamName) == 0x000028, "Member 'UFortMaterialProgressBarStyle::BackgroundColorParamName' has a wrong offset!");
 static_assert(offsetof(UFortMaterialProgressBarStyle, BackgroundColor) == 0x000030, "Member 'UFortMaterialProgressBarStyle::BackgroundColor' has a wrong offset!");
 static_assert(offsetof(UFortMaterialProgressBarStyle, BarSectionStyles) == 0x000040, "Member 'UFortMaterialProgressBarStyle::BarSectionStyles' has a wrong offset!");
 
 // Class FortniteUI.FortMaterialProgressBar
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0158 (0x0390 - 0x0238)
 class UFortMaterialProgressBar : public UCommonUserWidget
 {
 public:
 	TSubclassOf<class UFortMaterialProgressBarStyle> Style;                                             // 0x0238(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FName                                   BackgroundColorParamName;                          // 0x0240(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FLinearColor                           BackgroundColor;                                   // 0x0248(0x11821300)(Edit, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FLinearColor                           BackgroundColor;                                   // 0x0248(0x0010)(Edit, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EFortMaterialProgressBarSectionOverflowBehavior OverflowBehavior;                                  // 0x0258(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMaterialProgressBarSectionInfo    BarSectionInfo[0x4];                               // 0x0260(0x1182E980)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FFortMaterialProgressBarSectionInfo    BarSectionInfo[0x4];                               // 0x0260(0x0048)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	class UCommonBorder*                          ProgressBar;                                       // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMaterialInstanceDynamic*               ProgressBarMID;                                    // 0x0388(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -9779,8 +9570,8 @@ public:
 		return GetDefaultObjImpl<UFortMaterialProgressBar>();
 	}
 };
-static_assert(alignof(UFortMaterialProgressBar) == 0x322CBBB8, "Wrong alignment on UFortMaterialProgressBar");
-static_assert(sizeof(UFortMaterialProgressBar) == 0x322CBBB8, "Wrong size on UFortMaterialProgressBar");
+static_assert(alignof(UFortMaterialProgressBar) == 0x000008, "Wrong alignment on UFortMaterialProgressBar");
+static_assert(sizeof(UFortMaterialProgressBar) == 0x000390, "Wrong size on UFortMaterialProgressBar");
 static_assert(offsetof(UFortMaterialProgressBar, Style) == 0x000238, "Member 'UFortMaterialProgressBar::Style' has a wrong offset!");
 static_assert(offsetof(UFortMaterialProgressBar, BackgroundColorParamName) == 0x000240, "Member 'UFortMaterialProgressBar::BackgroundColorParamName' has a wrong offset!");
 static_assert(offsetof(UFortMaterialProgressBar, BackgroundColor) == 0x000248, "Member 'UFortMaterialProgressBar::BackgroundColor' has a wrong offset!");
@@ -9790,12 +9581,12 @@ static_assert(offsetof(UFortMaterialProgressBar, ProgressBar) == 0x000380, "Memb
 static_assert(offsetof(UFortMaterialProgressBar, ProgressBarMID) == 0x000388, "Member 'UFortMaterialProgressBar::ProgressBarMID' has a wrong offset!");
 
 // Class FortniteUI.FortConfirmationWindow
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0178 (0x03E0 - 0x0268)
 class UFortConfirmationWindow final : public UFortActionHandlerPanel
 {
 public:
 	uint8                                         Pad_268[0x8];                                      // 0x0268(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription                 CurrentDescription;                                // 0x0270(0x11827900)(BlueprintVisible, BlueprintReadOnly, ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	struct FFortDialogDescription                 CurrentDescription;                                // 0x0270(0x0170)(BlueprintVisible, BlueprintReadOnly, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
 public:
 	void KillConfirmation();
@@ -9814,15 +9605,17 @@ public:
 		return GetDefaultObjImpl<UFortConfirmationWindow>();
 	}
 };
-static_assert(alignof(UFortConfirmationWindow) == 0x322CBBB8, "Wrong alignment on UFortConfirmationWindow");
-static_assert(sizeof(UFortConfirmationWindow) == 0x322CBBB8, "Wrong size on UFortConfirmationWindow");
+static_assert(alignof(UFortConfirmationWindow) == 0x000010, "Wrong alignment on UFortConfirmationWindow");
+static_assert(sizeof(UFortConfirmationWindow) == 0x0003E0, "Wrong size on UFortConfirmationWindow");
 static_assert(offsetof(UFortConfirmationWindow, CurrentDescription) == 0x000270, "Member 'UFortConfirmationWindow::CurrentDescription' has a wrong offset!");
 
 // Class FortniteUI.FortMicIndicatorWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMicIndicatorWidget : public UCommonUserWidget
+// 0x0028 (0x0260 - 0x0238)
+class UFortMicIndicatorWidget : public UCommonUserWidget
 {
+public:
+	uint8                                         Pad_238[0x28];                                     // 0x0238(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void OnPlayerMicAvailable(bool bIsTalking);
 	void OnPlayerMuted(bool bIsMuted);
@@ -9839,12 +9632,11 @@ public:
 		return GetDefaultObjImpl<UFortMicIndicatorWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMicIndicatorWidget) == 0x322CBBB8, "Wrong alignment on UFortMicIndicatorWidget");
-static_assert(sizeof(UFortMicIndicatorWidget) == 0x322CBBB8, "Wrong size on UFortMicIndicatorWidget");
+static_assert(alignof(UFortMicIndicatorWidget) == 0x000008, "Wrong alignment on UFortMicIndicatorWidget");
+static_assert(sizeof(UFortMicIndicatorWidget) == 0x000260, "Wrong size on UFortMicIndicatorWidget");
 
 // Class FortniteUI.FortMissionSelect
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x0440 - 0x03E0)
 class UFortMissionSelect final : public UCommonActivatablePanel
 {
 public:
@@ -9866,8 +9658,8 @@ public:
 		return GetDefaultObjImpl<UFortMissionSelect>();
 	}
 };
-static_assert(alignof(UFortMissionSelect) == 0x322CBBB8, "Wrong alignment on UFortMissionSelect");
-static_assert(sizeof(UFortMissionSelect) == 0x322CBBB8, "Wrong size on UFortMissionSelect");
+static_assert(alignof(UFortMissionSelect) == 0x000008, "Wrong alignment on UFortMissionSelect");
+static_assert(sizeof(UFortMissionSelect) == 0x000440, "Wrong size on UFortMissionSelect");
 static_assert(offsetof(UFortMissionSelect, OnNavigation) == 0x000420, "Member 'UFortMissionSelect::OnNavigation' has a wrong offset!");
 static_assert(offsetof(UFortMissionSelect, MainBorder) == 0x000430, "Member 'UFortMissionSelect::MainBorder' has a wrong offset!");
 
@@ -9889,9 +9681,8 @@ static_assert(alignof(UFortUIStateTrigger_Login) == 0x000008, "Wrong alignment o
 static_assert(sizeof(UFortUIStateTrigger_Login) == 0x000030, "Wrong size on UFortUIStateTrigger_Login");
 
 // Class FortniteUI.FortMissionTrackerEntry
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMissionTrackerEntry : public UCommonUserWidget
+// 0x00A8 (0x02E0 - 0x0238)
+class UFortMissionTrackerEntry : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -9922,9 +9713,8 @@ public:
 		return GetDefaultObjImpl<UFortMissionTrackerEntry>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMissionTrackerEntry) == 0x322CBBB8, "Wrong alignment on UFortMissionTrackerEntry");
-static_assert(sizeof(UFortMissionTrackerEntry) == 0x322CBBB8, "Wrong size on UFortMissionTrackerEntry");
+static_assert(alignof(UFortMissionTrackerEntry) == 0x000008, "Wrong alignment on UFortMissionTrackerEntry");
+static_assert(sizeof(UFortMissionTrackerEntry) == 0x0002E0, "Wrong size on UFortMissionTrackerEntry");
 static_assert(offsetof(UFortMissionTrackerEntry, OnMissionEntryVisibilityChanged) == 0x000240, "Member 'UFortMissionTrackerEntry::OnMissionEntryVisibilityChanged' has a wrong offset!");
 static_assert(offsetof(UFortMissionTrackerEntry, SubEntryClass) == 0x000250, "Member 'UFortMissionTrackerEntry::SubEntryClass' has a wrong offset!");
 static_assert(offsetof(UFortMissionTrackerEntry, bConfigureAsHUD) == 0x000258, "Member 'UFortMissionTrackerEntry::bConfigureAsHUD' has a wrong offset!");
@@ -9957,7 +9747,7 @@ static_assert(sizeof(UFortModalContainerData) == 0x000038, "Wrong size on UFortM
 static_assert(offsetof(UFortModalContainerData, Entries) == 0x000028, "Member 'UFortModalContainerData::Entries' has a wrong offset!");
 
 // Class FortniteUI.FortModalContainerWidget
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0058 (0x0170 - 0x0118)
 class UFortModalContainerWidget final : public UWidget
 {
 public:
@@ -9982,8 +9772,8 @@ public:
 		return GetDefaultObjImpl<UFortModalContainerWidget>();
 	}
 };
-static_assert(alignof(UFortModalContainerWidget) == 0x11827900, "Wrong alignment on UFortModalContainerWidget");
-static_assert(sizeof(UFortModalContainerWidget) == 0x11827900, "Wrong size on UFortModalContainerWidget");
+static_assert(alignof(UFortModalContainerWidget) == 0x000008, "Wrong alignment on UFortModalContainerWidget");
+static_assert(sizeof(UFortModalContainerWidget) == 0x000170, "Wrong size on UFortModalContainerWidget");
 static_assert(offsetof(UFortModalContainerWidget, SizeConstraint) == 0x000120, "Member 'UFortModalContainerWidget::SizeConstraint' has a wrong offset!");
 static_assert(offsetof(UFortModalContainerWidget, DefaultSizeEntries) == 0x000128, "Member 'UFortModalContainerWidget::DefaultSizeEntries' has a wrong offset!");
 static_assert(offsetof(UFortModalContainerWidget, OverrideSizeEntries) == 0x000138, "Member 'UFortModalContainerWidget::OverrideSizeEntries' has a wrong offset!");
@@ -9993,13 +9783,12 @@ static_assert(offsetof(UFortModalContainerWidget, BottomContent) == 0x000150, "M
 static_assert(offsetof(UFortModalContainerWidget, BackgroudContent) == 0x000158, "Member 'UFortModalContainerWidget::BackgroudContent' has a wrong offset!");
 
 // Class FortniteUI.FortMtxStoreOfferBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMtxStoreOfferBase : public UCommonButton
+// 0x00A8 (0x0948 - 0x08A0)
+class UFortMtxStoreOfferBase : public UCommonButton
 {
 public:
 	class UFortMtxOfferData*                      OfferDisplayAsset;                                 // 0x08A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FMtxPackage                            MtxOffer;                                          // 0x08A8(0x11821780)(Transient, NativeAccessSpecifierPrivate)
+	struct FMtxPackage                            MtxOffer;                                          // 0x08A8(0x00A0)(Transient, NativeAccessSpecifierPrivate)
 
 public:
 	struct FLinearColor GetBackground() const;
@@ -10026,14 +9815,13 @@ public:
 		return GetDefaultObjImpl<UFortMtxStoreOfferBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMtxStoreOfferBase) == 0x322CBBB8, "Wrong alignment on UFortMtxStoreOfferBase");
-static_assert(sizeof(UFortMtxStoreOfferBase) == 0x322CBBB8, "Wrong size on UFortMtxStoreOfferBase");
+static_assert(alignof(UFortMtxStoreOfferBase) == 0x000008, "Wrong alignment on UFortMtxStoreOfferBase");
+static_assert(sizeof(UFortMtxStoreOfferBase) == 0x000948, "Wrong size on UFortMtxStoreOfferBase");
 static_assert(offsetof(UFortMtxStoreOfferBase, OfferDisplayAsset) == 0x0008A0, "Member 'UFortMtxStoreOfferBase::OfferDisplayAsset' has a wrong offset!");
 static_assert(offsetof(UFortMtxStoreOfferBase, MtxOffer) == 0x0008A8, "Member 'UFortMtxStoreOfferBase::MtxOffer' has a wrong offset!");
 
 // Class FortniteUI.FortFavoriteIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x04A8 - 0x04A8)
 class UFortFavoriteIndicator final : public UFortSimpleItemConditionIconIndicator
 {
 public:
@@ -10046,11 +9834,11 @@ public:
 		return GetDefaultObjImpl<UFortFavoriteIndicator>();
 	}
 };
-static_assert(alignof(UFortFavoriteIndicator) == 0x11827900, "Wrong alignment on UFortFavoriteIndicator");
-static_assert(sizeof(UFortFavoriteIndicator) == 0x11827900, "Wrong size on UFortFavoriteIndicator");
+static_assert(alignof(UFortFavoriteIndicator) == 0x000008, "Wrong alignment on UFortFavoriteIndicator");
+static_assert(sizeof(UFortFavoriteIndicator) == 0x0004A8, "Wrong size on UFortFavoriteIndicator");
 
 // Class FortniteUI.FortTrackedIndicator
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x04A8 - 0x04A8)
 class UFortTrackedIndicator final : public UFortSimpleItemConditionIconIndicator
 {
 public:
@@ -10063,11 +9851,11 @@ public:
 		return GetDefaultObjImpl<UFortTrackedIndicator>();
 	}
 };
-static_assert(alignof(UFortTrackedIndicator) == 0x11827900, "Wrong alignment on UFortTrackedIndicator");
-static_assert(sizeof(UFortTrackedIndicator) == 0x11827900, "Wrong size on UFortTrackedIndicator");
+static_assert(alignof(UFortTrackedIndicator) == 0x000008, "Wrong alignment on UFortTrackedIndicator");
+static_assert(sizeof(UFortTrackedIndicator) == 0x0004A8, "Wrong size on UFortTrackedIndicator");
 
 // Class FortniteUI.FortNumericTextBlock
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0298 - 0x0248)
 class UFortNumericTextBlock final : public UTextBlock
 {
 public:
@@ -10099,8 +9887,8 @@ public:
 		return GetDefaultObjImpl<UFortNumericTextBlock>();
 	}
 };
-static_assert(alignof(UFortNumericTextBlock) == 0x322CBBB8, "Wrong alignment on UFortNumericTextBlock");
-static_assert(sizeof(UFortNumericTextBlock) == 0x322CBBB8, "Wrong size on UFortNumericTextBlock");
+static_assert(alignof(UFortNumericTextBlock) == 0x000008, "Wrong alignment on UFortNumericTextBlock");
+static_assert(sizeof(UFortNumericTextBlock) == 0x000298, "Wrong size on UFortNumericTextBlock");
 static_assert(offsetof(UFortNumericTextBlock, CountFinished) == 0x000248, "Member 'UFortNumericTextBlock::CountFinished' has a wrong offset!");
 static_assert(offsetof(UFortNumericTextBlock, StartingValue) == 0x000258, "Member 'UFortNumericTextBlock::StartingValue' has a wrong offset!");
 static_assert(offsetof(UFortNumericTextBlock, DestValue) == 0x00025C, "Member 'UFortNumericTextBlock::DestValue' has a wrong offset!");
@@ -10141,9 +9929,8 @@ static_assert(offsetof(UFortOptionsMenuInputData, ElementNumber) == 0x000070, "M
 static_assert(offsetof(UFortOptionsMenuInputData, TabText) == 0x000078, "Member 'UFortOptionsMenuInputData::TabText' has a wrong offset!");
 
 // Class FortniteUI.FortAccountOptions
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAccountOptions : public UFortOptionsTab
+// 0x0000 (0x0248 - 0x0248)
+class UFortAccountOptions : public UFortOptionsTab
 {
 public:
 	static class UClass* StaticClass()
@@ -10155,14 +9942,12 @@ public:
 		return GetDefaultObjImpl<UFortAccountOptions>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAccountOptions) == 0x322CBBB8, "Wrong alignment on UFortAccountOptions");
-static_assert(sizeof(UFortAccountOptions) == 0x322CBBB8, "Wrong size on UFortAccountOptions");
+static_assert(alignof(UFortAccountOptions) == 0x000008, "Wrong alignment on UFortAccountOptions");
+static_assert(sizeof(UFortAccountOptions) == 0x000248, "Wrong size on UFortAccountOptions");
 
 // Class FortniteUI.FortGameOptions
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortGameOptions : public UFortOptionsTab
+// 0x0040 (0x0288 - 0x0248)
+class UFortGameOptions : public UFortOptionsTab
 {
 public:
 	float                                         MinGammaValue;                                     // 0x0248(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10229,19 +10014,20 @@ public:
 		return GetDefaultObjImpl<UFortGameOptions>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortGameOptions) == 0x322CBBB8, "Wrong alignment on UFortGameOptions");
-static_assert(sizeof(UFortGameOptions) == 0x322CBBB8, "Wrong size on UFortGameOptions");
+static_assert(alignof(UFortGameOptions) == 0x000008, "Wrong alignment on UFortGameOptions");
+static_assert(sizeof(UFortGameOptions) == 0x000288, "Wrong size on UFortGameOptions");
 static_assert(offsetof(UFortGameOptions, MinGammaValue) == 0x000248, "Member 'UFortGameOptions::MinGammaValue' has a wrong offset!");
 static_assert(offsetof(UFortGameOptions, MaxGammaValue) == 0x00024C, "Member 'UFortGameOptions::MaxGammaValue' has a wrong offset!");
 static_assert(offsetof(UFortGameOptions, HUDData) == 0x000250, "Member 'UFortGameOptions::HUDData' has a wrong offset!");
 static_assert(offsetof(UFortGameOptions, HUDCommonListView) == 0x000260, "Member 'UFortGameOptions::HUDCommonListView' has a wrong offset!");
 
 // Class FortniteUI.FortVideoOptions
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortVideoOptions : public UFortOptionsTab
+// 0x0060 (0x02A8 - 0x0248)
+class UFortVideoOptions : public UFortOptionsTab
 {
+public:
+	uint8                                         Pad_248[0x60];                                     // 0x0248(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void AntiAliasingQualityChanged(int32 ButtonId);
 	void DiscreteResolutionQualityChanged(int32 ButtonId);
@@ -10288,18 +10074,16 @@ public:
 		return GetDefaultObjImpl<UFortVideoOptions>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortVideoOptions) == 0x322CBBB8, "Wrong alignment on UFortVideoOptions");
-static_assert(sizeof(UFortVideoOptions) == 0x322CBBB8, "Wrong size on UFortVideoOptions");
+static_assert(alignof(UFortVideoOptions) == 0x000008, "Wrong alignment on UFortVideoOptions");
+static_assert(sizeof(UFortVideoOptions) == 0x0002A8, "Wrong size on UFortVideoOptions");
 
 // Class FortniteUI.FortPerkWidget_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPerkWidget_NUI : public UCommonUserWidget
+// 0x0098 (0x02D0 - 0x0238)
+class UFortPerkWidget_NUI : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIPerk                            Perk;                                              // 0x0240(0x1182E980)(BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FFortUIPerk                            Perk;                                              // 0x0240(0x0088)(BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
 	class UFortTooltipContext*                    TooltipContext;                                    // 0x02C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -10329,16 +10113,14 @@ public:
 		return GetDefaultObjImpl<UFortPerkWidget_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPerkWidget_NUI) == 0x322CBBB8, "Wrong alignment on UFortPerkWidget_NUI");
-static_assert(sizeof(UFortPerkWidget_NUI) == 0x322CBBB8, "Wrong size on UFortPerkWidget_NUI");
+static_assert(alignof(UFortPerkWidget_NUI) == 0x000008, "Wrong alignment on UFortPerkWidget_NUI");
+static_assert(sizeof(UFortPerkWidget_NUI) == 0x0002D0, "Wrong size on UFortPerkWidget_NUI");
 static_assert(offsetof(UFortPerkWidget_NUI, Perk) == 0x000240, "Member 'UFortPerkWidget_NUI::Perk' has a wrong offset!");
 static_assert(offsetof(UFortPerkWidget_NUI, TooltipContext) == 0x0002C8, "Member 'UFortPerkWidget_NUI::TooltipContext' has a wrong offset!");
 
 // Class FortniteUI.FortPerksWidget_NUI
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPerksWidget_NUI : public UCommonUserWidget
+// 0x0078 (0x02B0 - 0x0238)
+class UFortPerksWidget_NUI : public UCommonUserWidget
 {
 public:
 	class UFortHero*                              Hero;                                              // 0x0238(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10370,9 +10152,8 @@ public:
 		return GetDefaultObjImpl<UFortPerksWidget_NUI>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPerksWidget_NUI) == 0x322CBBB8, "Wrong alignment on UFortPerksWidget_NUI");
-static_assert(sizeof(UFortPerksWidget_NUI) == 0x322CBBB8, "Wrong size on UFortPerksWidget_NUI");
+static_assert(alignof(UFortPerksWidget_NUI) == 0x000008, "Wrong alignment on UFortPerksWidget_NUI");
+static_assert(sizeof(UFortPerksWidget_NUI) == 0x0002B0, "Wrong size on UFortPerksWidget_NUI");
 static_assert(offsetof(UFortPerksWidget_NUI, Hero) == 0x000238, "Member 'UFortPerksWidget_NUI::Hero' has a wrong offset!");
 static_assert(offsetof(UFortPerksWidget_NUI, State) == 0x000240, "Member 'UFortPerksWidget_NUI::State' has a wrong offset!");
 static_assert(offsetof(UFortPerksWidget_NUI, EvolutionOption) == 0x000248, "Member 'UFortPerksWidget_NUI::EvolutionOption' has a wrong offset!");
@@ -10422,9 +10203,8 @@ static_assert(offsetof(UFortPickerData, MapNoteOptions) == 0x0000B8, "Member 'UF
 static_assert(offsetof(UFortPickerData, EmoteOptions) == 0x0000C8, "Member 'UFortPickerData::EmoteOptions' has a wrong offset!");
 
 // Class FortniteUI.FortPlayerProfileBannerEditorTile
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPlayerProfileBannerEditorTile : public UCommonButton
+// 0x0010 (0x08B0 - 0x08A0)
+class UFortPlayerProfileBannerEditorTile : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -10440,15 +10220,13 @@ public:
 		return GetDefaultObjImpl<UFortPlayerProfileBannerEditorTile>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPlayerProfileBannerEditorTile) == 0x322CBBB8, "Wrong alignment on UFortPlayerProfileBannerEditorTile");
-static_assert(sizeof(UFortPlayerProfileBannerEditorTile) == 0x322CBBB8, "Wrong size on UFortPlayerProfileBannerEditorTile");
+static_assert(alignof(UFortPlayerProfileBannerEditorTile) == 0x000008, "Wrong alignment on UFortPlayerProfileBannerEditorTile");
+static_assert(sizeof(UFortPlayerProfileBannerEditorTile) == 0x0008B0, "Wrong size on UFortPlayerProfileBannerEditorTile");
 static_assert(offsetof(UFortPlayerProfileBannerEditorTile, Item) == 0x0008A8, "Member 'UFortPlayerProfileBannerEditorTile::Item' has a wrong offset!");
 
 // Class FortniteUI.FortPrivacyBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPrivacyBase : public UCommonActivatablePanel
+// 0x0080 (0x0460 - 0x03E0)
+class UFortPrivacyBase : public UCommonActivatablePanel
 {
 public:
 	UMulticastDelegateProperty_                   OnPrivacyChanged;                                  // 0x03E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -10474,9 +10252,8 @@ public:
 		return GetDefaultObjImpl<UFortPrivacyBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPrivacyBase) == 0x322CBBB8, "Wrong alignment on UFortPrivacyBase");
-static_assert(sizeof(UFortPrivacyBase) == 0x322CBBB8, "Wrong size on UFortPrivacyBase");
+static_assert(alignof(UFortPrivacyBase) == 0x000008, "Wrong alignment on UFortPrivacyBase");
+static_assert(sizeof(UFortPrivacyBase) == 0x000460, "Wrong size on UFortPrivacyBase");
 static_assert(offsetof(UFortPrivacyBase, OnPrivacyChanged) == 0x0003E0, "Member 'UFortPrivacyBase::OnPrivacyChanged' has a wrong offset!");
 static_assert(offsetof(UFortPrivacyBase, AllowFriendsOfFriendsButton) == 0x0003F0, "Member 'UFortPrivacyBase::AllowFriendsOfFriendsButton' has a wrong offset!");
 static_assert(offsetof(UFortPrivacyBase, AllowFriendsOfFriendsContainer) == 0x0003F8, "Member 'UFortPrivacyBase::AllowFriendsOfFriendsContainer' has a wrong offset!");
@@ -10484,7 +10261,7 @@ static_assert(offsetof(UFortPrivacyBase, ButtonGroup) == 0x000400, "Member 'UFor
 static_assert(offsetof(UFortPrivacyBase, PrivacyButtonMap) == 0x000408, "Member 'UFortPrivacyBase::PrivacyButtonMap' has a wrong offset!");
 
 // Class FortniteUI.FortQuestNotificationHandler
-// 0x0000 (0x11824600 - 0x11824600)
+// 0x0010 (0x01F0 - 0x01E0)
 class UFortQuestNotificationHandler final : public UFortDialogNotificationHandler
 {
 public:
@@ -10501,14 +10278,13 @@ public:
 		return GetDefaultObjImpl<UFortQuestNotificationHandler>();
 	}
 };
-static_assert(alignof(UFortQuestNotificationHandler) == 0x11824600, "Wrong alignment on UFortQuestNotificationHandler");
-static_assert(sizeof(UFortQuestNotificationHandler) == 0x11824600, "Wrong size on UFortQuestNotificationHandler");
+static_assert(alignof(UFortQuestNotificationHandler) == 0x000010, "Wrong alignment on UFortQuestNotificationHandler");
+static_assert(sizeof(UFortQuestNotificationHandler) == 0x0001F0, "Wrong size on UFortQuestNotificationHandler");
 static_assert(offsetof(UFortQuestNotificationHandler, Quest) == 0x0001E0, "Member 'UFortQuestNotificationHandler::Quest' has a wrong offset!");
 
 // Class FortniteUI.FortQuestTrackerEntry
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortQuestTrackerEntry : public UCommonUserWidget
+// 0x0060 (0x0298 - 0x0238)
+class UFortQuestTrackerEntry : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x10];                                     // 0x0238(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -10536,9 +10312,8 @@ public:
 		return GetDefaultObjImpl<UFortQuestTrackerEntry>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortQuestTrackerEntry) == 0x322CBBB8, "Wrong alignment on UFortQuestTrackerEntry");
-static_assert(sizeof(UFortQuestTrackerEntry) == 0x322CBBB8, "Wrong size on UFortQuestTrackerEntry");
+static_assert(alignof(UFortQuestTrackerEntry) == 0x000008, "Wrong alignment on UFortQuestTrackerEntry");
+static_assert(sizeof(UFortQuestTrackerEntry) == 0x000298, "Wrong size on UFortQuestTrackerEntry");
 static_assert(offsetof(UFortQuestTrackerEntry, QuestNameText) == 0x000248, "Member 'UFortQuestTrackerEntry::QuestNameText' has a wrong offset!");
 static_assert(offsetof(UFortQuestTrackerEntry, ObjectivesList) == 0x000250, "Member 'UFortQuestTrackerEntry::ObjectivesList' has a wrong offset!");
 static_assert(offsetof(UFortQuestTrackerEntry, TrackedQuest) == 0x000258, "Member 'UFortQuestTrackerEntry::TrackedQuest' has a wrong offset!");
@@ -10548,9 +10323,8 @@ static_assert(offsetof(UFortQuestTrackerEntry, bConfigureAsHUD) == 0x000280, "Me
 static_assert(offsetof(UFortQuestTrackerEntry, OnSizeEstimateChangedDelegate) == 0x000288, "Member 'UFortQuestTrackerEntry::OnSizeEstimateChangedDelegate' has a wrong offset!");
 
 // Class FortniteUI.FortQuestTreeItemWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortQuestTreeItemWidget : public UCommonButton
+// 0x0010 (0x08B0 - 0x08A0)
+class UFortQuestTreeItemWidget : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x8];                                      // 0x08A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -10573,15 +10347,13 @@ public:
 		return GetDefaultObjImpl<UFortQuestTreeItemWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortQuestTreeItemWidget) == 0x322CBBB8, "Wrong alignment on UFortQuestTreeItemWidget");
-static_assert(sizeof(UFortQuestTreeItemWidget) == 0x322CBBB8, "Wrong size on UFortQuestTreeItemWidget");
+static_assert(alignof(UFortQuestTreeItemWidget) == 0x000008, "Wrong alignment on UFortQuestTreeItemWidget");
+static_assert(sizeof(UFortQuestTreeItemWidget) == 0x0008B0, "Wrong size on UFortQuestTreeItemWidget");
 static_assert(offsetof(UFortQuestTreeItemWidget, QuestOrCategory) == 0x0008A8, "Member 'UFortQuestTreeItemWidget::QuestOrCategory' has a wrong offset!");
 
 // Class FortniteUI.FortRejoinWindowBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortRejoinWindowBase : public UCommonActivatablePanel
+// 0x0010 (0x03F0 - 0x03E0)
+class UFortRejoinWindowBase : public UCommonActivatablePanel
 {
 public:
 	class UCommonTextBlock*                       RejoinTime;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -10602,15 +10374,13 @@ public:
 		return GetDefaultObjImpl<UFortRejoinWindowBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortRejoinWindowBase) == 0x322CBBB8, "Wrong alignment on UFortRejoinWindowBase");
-static_assert(sizeof(UFortRejoinWindowBase) == 0x322CBBB8, "Wrong size on UFortRejoinWindowBase");
+static_assert(alignof(UFortRejoinWindowBase) == 0x000008, "Wrong alignment on UFortRejoinWindowBase");
+static_assert(sizeof(UFortRejoinWindowBase) == 0x0003F0, "Wrong size on UFortRejoinWindowBase");
 static_assert(offsetof(UFortRejoinWindowBase, RejoinTime) == 0x0003E0, "Member 'UFortRejoinWindowBase::RejoinTime' has a wrong offset!");
 
 // Class FortniteUI.FortResultsSummaryScreenWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortResultsSummaryScreenWidget : public UCommonUserWidget
+// 0x0000 (0x0238 - 0x0238)
+class UFortResultsSummaryScreenWidget : public UCommonUserWidget
 {
 public:
 	void GetTotalScoreSortedScoreIndices(const class UFortUIScoreReport* ScoreReport, TArray<int32>* OutSortedScoreIndices) const;
@@ -10625,14 +10395,12 @@ public:
 		return GetDefaultObjImpl<UFortResultsSummaryScreenWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortResultsSummaryScreenWidget) == 0x322CBBB8, "Wrong alignment on UFortResultsSummaryScreenWidget");
-static_assert(sizeof(UFortResultsSummaryScreenWidget) == 0x322CBBB8, "Wrong size on UFortResultsSummaryScreenWidget");
+static_assert(alignof(UFortResultsSummaryScreenWidget) == 0x000008, "Wrong alignment on UFortResultsSummaryScreenWidget");
+static_assert(sizeof(UFortResultsSummaryScreenWidget) == 0x000238, "Wrong size on UFortResultsSummaryScreenWidget");
 
 // Class FortniteUI.FortResultsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortResultsWidget : public UCommonActivatablePanel
+// 0x00C0 (0x04A0 - 0x03E0)
+class UFortResultsWidget : public UCommonActivatablePanel
 {
 public:
 	uint8                                         Pad_3E0[0x70];                                     // 0x03E0(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
@@ -10667,9 +10435,8 @@ public:
 		return GetDefaultObjImpl<UFortResultsWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortResultsWidget) == 0x322CBBB8, "Wrong alignment on UFortResultsWidget");
-static_assert(sizeof(UFortResultsWidget) == 0x322CBBB8, "Wrong size on UFortResultsWidget");
+static_assert(alignof(UFortResultsWidget) == 0x000008, "Wrong alignment on UFortResultsWidget");
+static_assert(sizeof(UFortResultsWidget) == 0x0004A0, "Wrong size on UFortResultsWidget");
 static_assert(offsetof(UFortResultsWidget, AdditionalGrantedMissionPoints) == 0x000450, "Member 'UFortResultsWidget::AdditionalGrantedMissionPoints' has a wrong offset!");
 static_assert(offsetof(UFortResultsWidget, RewardedBadges) == 0x000458, "Member 'UFortResultsWidget::RewardedBadges' has a wrong offset!");
 static_assert(offsetof(UFortResultsWidget, MissedBadges) == 0x000468, "Member 'UFortResultsWidget::MissedBadges' has a wrong offset!");
@@ -10677,11 +10444,11 @@ static_assert(offsetof(UFortResultsWidget, RewardedItems) == 0x000478, "Member '
 static_assert(offsetof(UFortResultsWidget, RewardedAccountItems) == 0x000488, "Member 'UFortResultsWidget::RewardedAccountItems' has a wrong offset!");
 
 // Class FortniteUI.FortRewardCollectionBookData
-// 0x11821750 (0x11821780 - 0x0030)
+// 0x0070 (0x00A0 - 0x0030)
 class UFortRewardCollectionBookData final : public UFortRewardNotificationData
 {
 public:
-	struct FFortCollectionBookRewards             CollectionBookRewards;                             // 0x0030(0x11821780)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FFortCollectionBookRewards             CollectionBookRewards;                             // 0x0030(0x0070)(BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	bool GetIconBrush(struct FSlateBrush* IconBrush, EFortBrushSize BrushSize);
@@ -10696,8 +10463,8 @@ public:
 		return GetDefaultObjImpl<UFortRewardCollectionBookData>();
 	}
 };
-static_assert(alignof(UFortRewardCollectionBookData) == 0x11821780, "Wrong alignment on UFortRewardCollectionBookData");
-static_assert(sizeof(UFortRewardCollectionBookData) == 0x11821780, "Wrong size on UFortRewardCollectionBookData");
+static_assert(alignof(UFortRewardCollectionBookData) == 0x000008, "Wrong alignment on UFortRewardCollectionBookData");
+static_assert(sizeof(UFortRewardCollectionBookData) == 0x0000A0, "Wrong size on UFortRewardCollectionBookData");
 static_assert(offsetof(UFortRewardCollectionBookData, CollectionBookRewards) == 0x000030, "Member 'UFortRewardCollectionBookData::CollectionBookRewards' has a wrong offset!");
 
 // Class FortniteUI.FortRewardExpeditionData
@@ -10742,16 +10509,16 @@ static_assert(alignof(UFortRewardMissionData) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UFortRewardMissionData) == 0x000030, "Wrong size on UFortRewardMissionData");
 
 // Class FortniteUI.FortRewardNotificationWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortRewardNotificationWidget : public UCommonActivatablePanel
+// 0x01B0 (0x0590 - 0x03E0)
+class UFortRewardNotificationWidget : public UCommonActivatablePanel
 {
 public:
 	TArray<class UFortRewardNotificationData*>    NotificationDataList;                              // 0x03E0(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3F0[0x40];                                     // 0x03F0(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOverlay*                               OverlayMain;                                       // 0x0430(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_438[0x8];                                      // 0x0438(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortSwipeDetector                     SwipeDetector;                                     // 0x0440(0x1182E980)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	struct FFortSwipeDetector                     SwipeDetector;                                     // 0x0440(0x0130)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	uint8                                         Pad_570[0x20];                                     // 0x0570(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddCollectionBookData(const struct FFortCollectionBookRewards& CollectionBookRewards);
@@ -10785,17 +10552,15 @@ public:
 		return GetDefaultObjImpl<UFortRewardNotificationWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortRewardNotificationWidget) == 0x322CBBB8, "Wrong alignment on UFortRewardNotificationWidget");
-static_assert(sizeof(UFortRewardNotificationWidget) == 0x322CBBB8, "Wrong size on UFortRewardNotificationWidget");
+static_assert(alignof(UFortRewardNotificationWidget) == 0x000010, "Wrong alignment on UFortRewardNotificationWidget");
+static_assert(sizeof(UFortRewardNotificationWidget) == 0x000590, "Wrong size on UFortRewardNotificationWidget");
 static_assert(offsetof(UFortRewardNotificationWidget, NotificationDataList) == 0x0003E0, "Member 'UFortRewardNotificationWidget::NotificationDataList' has a wrong offset!");
 static_assert(offsetof(UFortRewardNotificationWidget, OverlayMain) == 0x000430, "Member 'UFortRewardNotificationWidget::OverlayMain' has a wrong offset!");
 static_assert(offsetof(UFortRewardNotificationWidget, SwipeDetector) == 0x000440, "Member 'UFortRewardNotificationWidget::SwipeDetector' has a wrong offset!");
 
 // Class FortniteUI.FortRewardConversationWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortRewardConversationWidget : public UFortRewardNotificationSubWidget
+// 0x0000 (0x0260 - 0x0260)
+class UFortRewardConversationWidget : public UFortRewardNotificationSubWidget
 {
 public:
 	void GetDataFromSentence(const struct FFortConversationSentence& Sentence, class FText* Text, class UTexture2D** TalkingHeadTexture);
@@ -10811,14 +10576,12 @@ public:
 		return GetDefaultObjImpl<UFortRewardConversationWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortRewardConversationWidget) == 0x322CBBB8, "Wrong alignment on UFortRewardConversationWidget");
-static_assert(sizeof(UFortRewardConversationWidget) == 0x322CBBB8, "Wrong size on UFortRewardConversationWidget");
+static_assert(alignof(UFortRewardConversationWidget) == 0x000008, "Wrong alignment on UFortRewardConversationWidget");
+static_assert(sizeof(UFortRewardConversationWidget) == 0x000260, "Wrong size on UFortRewardConversationWidget");
 
 // Class FortniteUI.FortRewardNewQuestWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortRewardNewQuestWidget : public UFortRewardNotificationSubWidget
+// 0x0000 (0x0260 - 0x0260)
+class UFortRewardNewQuestWidget : public UFortRewardNotificationSubWidget
 {
 public:
 	void GetDataFromSentence(const struct FFortConversationSentence& Sentence, class FText* Text, class UTexture2D** TalkingHeadTexture);
@@ -10834,14 +10597,12 @@ public:
 		return GetDefaultObjImpl<UFortRewardNewQuestWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortRewardNewQuestWidget) == 0x322CBBB8, "Wrong alignment on UFortRewardNewQuestWidget");
-static_assert(sizeof(UFortRewardNewQuestWidget) == 0x322CBBB8, "Wrong size on UFortRewardNewQuestWidget");
+static_assert(alignof(UFortRewardNewQuestWidget) == 0x000008, "Wrong alignment on UFortRewardNewQuestWidget");
+static_assert(sizeof(UFortRewardNewQuestWidget) == 0x000260, "Wrong size on UFortRewardNewQuestWidget");
 
 // Class FortniteUI.FortSignInWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSignInWidget : public UCommonActivatablePanel
+// 0x0030 (0x0410 - 0x03E0)
+class UFortSignInWidget : public UCommonActivatablePanel
 {
 public:
 	class UEditableText*                          Email;                                             // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10865,9 +10626,8 @@ public:
 		return GetDefaultObjImpl<UFortSignInWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSignInWidget) == 0x322CBBB8, "Wrong alignment on UFortSignInWidget");
-static_assert(sizeof(UFortSignInWidget) == 0x322CBBB8, "Wrong size on UFortSignInWidget");
+static_assert(alignof(UFortSignInWidget) == 0x000008, "Wrong alignment on UFortSignInWidget");
+static_assert(sizeof(UFortSignInWidget) == 0x000410, "Wrong size on UFortSignInWidget");
 static_assert(offsetof(UFortSignInWidget, Email) == 0x0003E0, "Member 'UFortSignInWidget::Email' has a wrong offset!");
 static_assert(offsetof(UFortSignInWidget, Password) == 0x0003E8, "Member 'UFortSignInWidget::Password' has a wrong offset!");
 static_assert(offsetof(UFortSignInWidget, SignInButton) == 0x0003F0, "Member 'UFortSignInWidget::SignInButton' has a wrong offset!");
@@ -10875,12 +10635,13 @@ static_assert(offsetof(UFortSignInWidget, OnStartSignIn) == 0x0003F8, "Member 'U
 static_assert(offsetof(UFortSignInWidget, bStartedSignIn) == 0x000408, "Member 'UFortSignInWidget::bStartedSignIn' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreeCanvas
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x01A0 (0x02D0 - 0x0130)
 class UFortSkillTreeCanvas final : public UPanelWidget
 {
 public:
 	uint8                                         Pad_130[0x8];                                      // 0x0130(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              OriginForParallaxEffect;                           // 0x0138(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              OriginForParallaxEffect;                           // 0x0138(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_140[0xE8];                                     // 0x0140(0x00E8)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButtonGroup*                     NodeButtonGroup;                                   // 0x0228(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_230[0xA0];                                     // 0x0230(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -10899,13 +10660,13 @@ public:
 		return GetDefaultObjImpl<UFortSkillTreeCanvas>();
 	}
 };
-static_assert(alignof(UFortSkillTreeCanvas) == 0x11827900, "Wrong alignment on UFortSkillTreeCanvas");
-static_assert(sizeof(UFortSkillTreeCanvas) == 0x11827900, "Wrong size on UFortSkillTreeCanvas");
+static_assert(alignof(UFortSkillTreeCanvas) == 0x000008, "Wrong alignment on UFortSkillTreeCanvas");
+static_assert(sizeof(UFortSkillTreeCanvas) == 0x0002D0, "Wrong size on UFortSkillTreeCanvas");
 static_assert(offsetof(UFortSkillTreeCanvas, OriginForParallaxEffect) == 0x000138, "Member 'UFortSkillTreeCanvas::OriginForParallaxEffect' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreeCanvas, NodeButtonGroup) == 0x000228, "Member 'UFortSkillTreeCanvas::NodeButtonGroup' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreePageSelectorButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x08B8 - 0x08A0)
 class UFortSkillTreePageSelectorButton final : public UCommonButton
 {
 public:
@@ -10932,13 +10693,13 @@ public:
 		return GetDefaultObjImpl<UFortSkillTreePageSelectorButton>();
 	}
 };
-static_assert(alignof(UFortSkillTreePageSelectorButton) == 0x322CBBB8, "Wrong alignment on UFortSkillTreePageSelectorButton");
-static_assert(sizeof(UFortSkillTreePageSelectorButton) == 0x322CBBB8, "Wrong size on UFortSkillTreePageSelectorButton");
+static_assert(alignof(UFortSkillTreePageSelectorButton) == 0x000008, "Wrong alignment on UFortSkillTreePageSelectorButton");
+static_assert(sizeof(UFortSkillTreePageSelectorButton) == 0x0008B8, "Wrong size on UFortSkillTreePageSelectorButton");
 static_assert(offsetof(UFortSkillTreePageSelectorButton, SkillTreePageId) == 0x0008A0, "Member 'UFortSkillTreePageSelectorButton::SkillTreePageId' has a wrong offset!");
 static_assert(offsetof(UFortSkillTreePageSelectorButton, SkillTreeViewerType) == 0x0008A8, "Member 'UFortSkillTreePageSelectorButton::SkillTreeViewerType' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreeNodeDetailsPanel
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0248 - 0x0238)
 class UFortSkillTreeNodeDetailsPanel final : public UCommonUserWidget
 {
 public:
@@ -10966,8 +10727,8 @@ public:
 		return GetDefaultObjImpl<UFortSkillTreeNodeDetailsPanel>();
 	}
 };
-static_assert(alignof(UFortSkillTreeNodeDetailsPanel) == 0x322CBBB8, "Wrong alignment on UFortSkillTreeNodeDetailsPanel");
-static_assert(sizeof(UFortSkillTreeNodeDetailsPanel) == 0x322CBBB8, "Wrong size on UFortSkillTreeNodeDetailsPanel");
+static_assert(alignof(UFortSkillTreeNodeDetailsPanel) == 0x000008, "Wrong alignment on UFortSkillTreeNodeDetailsPanel");
+static_assert(sizeof(UFortSkillTreeNodeDetailsPanel) == 0x000248, "Wrong size on UFortSkillTreeNodeDetailsPanel");
 static_assert(offsetof(UFortSkillTreeNodeDetailsPanel, IdOfSkillTreeNodeToRepresent) == 0x000238, "Member 'UFortSkillTreeNodeDetailsPanel::IdOfSkillTreeNodeToRepresent' has a wrong offset!");
 
 // Class FortniteUI.FortSkillTreePageWidgetRegistry
@@ -10993,11 +10754,11 @@ static_assert(sizeof(UFortSkillTreePageWidgetRegistry) == 0x000098, "Wrong size 
 static_assert(offsetof(UFortSkillTreePageWidgetRegistry, SkillTreePageIdToWidgetTypeMap) == 0x000028, "Member 'UFortSkillTreePageWidgetRegistry::SkillTreePageIdToWidgetTypeMap' has a wrong offset!");
 
 // Class FortniteUI.FortSocialStyle
-// 0x11AC0558 (0x11AC0580 - 0x0028)
+// 0x6DE8 (0x6E10 - 0x0028)
 class UFortSocialStyle final : public UDataAsset
 {
 public:
-	struct FSocialStyle                           Style;                                             // 0x0028(0x33DB4600)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialStyle                           Style;                                             // 0x0028(0x6DE0)(Edit, NativeAccessSpecifierPublic)
 	class USocialStyleDataAsset*                  OverrideStyle;                                     // 0x6E08(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -11010,13 +10771,13 @@ public:
 		return GetDefaultObjImpl<UFortSocialStyle>();
 	}
 };
-static_assert(alignof(UFortSocialStyle) == 0x11AC0580, "Wrong alignment on UFortSocialStyle");
-static_assert(sizeof(UFortSocialStyle) == 0x11AC0580, "Wrong size on UFortSocialStyle");
+static_assert(alignof(UFortSocialStyle) == 0x000008, "Wrong alignment on UFortSocialStyle");
+static_assert(sizeof(UFortSocialStyle) == 0x006E10, "Wrong size on UFortSocialStyle");
 static_assert(offsetof(UFortSocialStyle, Style) == 0x000028, "Member 'UFortSocialStyle::Style' has a wrong offset!");
 static_assert(offsetof(UFortSocialStyle, OverrideStyle) == 0x006E08, "Member 'UFortSocialStyle::OverrideStyle' has a wrong offset!");
 
 // Class FortniteUI.FortSquadIcon
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UFortSquadIcon : public UCommonUserWidget
 {
 public:
@@ -11039,14 +10800,14 @@ public:
 		return GetDefaultObjImpl<UFortSquadIcon>();
 	}
 };
-static_assert(alignof(UFortSquadIcon) == 0x322CBBB8, "Wrong alignment on UFortSquadIcon");
-static_assert(sizeof(UFortSquadIcon) == 0x322CBBB8, "Wrong size on UFortSquadIcon");
+static_assert(alignof(UFortSquadIcon) == 0x000008, "Wrong alignment on UFortSquadIcon");
+static_assert(sizeof(UFortSquadIcon) == 0x000250, "Wrong size on UFortSquadIcon");
 static_assert(offsetof(UFortSquadIcon, Name_0) == 0x000238, "Member 'UFortSquadIcon::Name_0' has a wrong offset!");
 static_assert(offsetof(UFortSquadIcon, ImageSize) == 0x000240, "Member 'UFortSquadIcon::ImageSize' has a wrong offset!");
 static_assert(offsetof(UFortSquadIcon, Icon) == 0x000248, "Member 'UFortSquadIcon::Icon' has a wrong offset!");
 
 // Class FortniteUI.FortSquadLandingPageDefenderSquadDetails
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0248 - 0x0238)
 class UFortSquadLandingPageDefenderSquadDetails final : public UCommonUserWidget
 {
 public:
@@ -11068,13 +10829,13 @@ public:
 		return GetDefaultObjImpl<UFortSquadLandingPageDefenderSquadDetails>();
 	}
 };
-static_assert(alignof(UFortSquadLandingPageDefenderSquadDetails) == 0x322CBBB8, "Wrong alignment on UFortSquadLandingPageDefenderSquadDetails");
-static_assert(sizeof(UFortSquadLandingPageDefenderSquadDetails) == 0x322CBBB8, "Wrong size on UFortSquadLandingPageDefenderSquadDetails");
+static_assert(alignof(UFortSquadLandingPageDefenderSquadDetails) == 0x000008, "Wrong alignment on UFortSquadLandingPageDefenderSquadDetails");
+static_assert(sizeof(UFortSquadLandingPageDefenderSquadDetails) == 0x000248, "Wrong size on UFortSquadLandingPageDefenderSquadDetails");
 static_assert(offsetof(UFortSquadLandingPageDefenderSquadDetails, OutpostName) == 0x000238, "Member 'UFortSquadLandingPageDefenderSquadDetails::OutpostName' has a wrong offset!");
 static_assert(offsetof(UFortSquadLandingPageDefenderSquadDetails, PowerRating) == 0x000240, "Member 'UFortSquadLandingPageDefenderSquadDetails::PowerRating' has a wrong offset!");
 
 // Class FortniteUI.FortSquadLandingPageSurvivorSummary
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x02C0 - 0x0238)
 class UFortSquadLandingPageSurvivorSummary final : public UCommonUserWidget
 {
 public:
@@ -11098,15 +10859,15 @@ public:
 		return GetDefaultObjImpl<UFortSquadLandingPageSurvivorSummary>();
 	}
 };
-static_assert(alignof(UFortSquadLandingPageSurvivorSummary) == 0x322CBBB8, "Wrong alignment on UFortSquadLandingPageSurvivorSummary");
-static_assert(sizeof(UFortSquadLandingPageSurvivorSummary) == 0x322CBBB8, "Wrong size on UFortSquadLandingPageSurvivorSummary");
+static_assert(alignof(UFortSquadLandingPageSurvivorSummary) == 0x000008, "Wrong alignment on UFortSquadLandingPageSurvivorSummary");
+static_assert(sizeof(UFortSquadLandingPageSurvivorSummary) == 0x0002C0, "Wrong size on UFortSquadLandingPageSurvivorSummary");
 static_assert(offsetof(UFortSquadLandingPageSurvivorSummary, FortitudeStatValue) == 0x000238, "Member 'UFortSquadLandingPageSurvivorSummary::FortitudeStatValue' has a wrong offset!");
 static_assert(offsetof(UFortSquadLandingPageSurvivorSummary, OffenseStatValue) == 0x000240, "Member 'UFortSquadLandingPageSurvivorSummary::OffenseStatValue' has a wrong offset!");
 static_assert(offsetof(UFortSquadLandingPageSurvivorSummary, ResistanceStatValue) == 0x000248, "Member 'UFortSquadLandingPageSurvivorSummary::ResistanceStatValue' has a wrong offset!");
 static_assert(offsetof(UFortSquadLandingPageSurvivorSummary, TechStatValue) == 0x000250, "Member 'UFortSquadLandingPageSurvivorSummary::TechStatValue' has a wrong offset!");
 
 // Class FortniteUI.FortSurvivorSquadSelectorButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x08E0 - 0x08C0)
 class UFortSurvivorSquadSelectorButton final : public UFortSquadSelectorButton
 {
 public:
@@ -11128,15 +10889,14 @@ public:
 		return GetDefaultObjImpl<UFortSurvivorSquadSelectorButton>();
 	}
 };
-static_assert(alignof(UFortSurvivorSquadSelectorButton) == 0x322CBBB8, "Wrong alignment on UFortSurvivorSquadSelectorButton");
-static_assert(sizeof(UFortSurvivorSquadSelectorButton) == 0x322CBBB8, "Wrong size on UFortSurvivorSquadSelectorButton");
+static_assert(alignof(UFortSurvivorSquadSelectorButton) == 0x000008, "Wrong alignment on UFortSurvivorSquadSelectorButton");
+static_assert(sizeof(UFortSurvivorSquadSelectorButton) == 0x0008E0, "Wrong size on UFortSurvivorSquadSelectorButton");
 static_assert(offsetof(UFortSurvivorSquadSelectorButton, FortStatAttributes) == 0x0008C0, "Member 'UFortSurvivorSquadSelectorButton::FortStatAttributes' has a wrong offset!");
 static_assert(offsetof(UFortSurvivorSquadSelectorButton, FortTeamStatAttributes) == 0x0008D0, "Member 'UFortSurvivorSquadSelectorButton::FortTeamStatAttributes' has a wrong offset!");
 
 // Class FortniteUI.FortSquadSlotSelectorButton
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadSlotSelectorButton : public UCommonButton
+// 0x0058 (0x08F8 - 0x08A0)
+class UFortSquadSlotSelectorButton : public UCommonButton
 {
 public:
 	uint8                                         Pad_8A0[0x28];                                     // 0x08A0(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
@@ -11164,14 +10924,13 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotSelectorButton>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadSlotSelectorButton) == 0x322CBBB8, "Wrong alignment on UFortSquadSlotSelectorButton");
-static_assert(sizeof(UFortSquadSlotSelectorButton) == 0x322CBBB8, "Wrong size on UFortSquadSlotSelectorButton");
+static_assert(alignof(UFortSquadSlotSelectorButton) == 0x000008, "Wrong alignment on UFortSquadSlotSelectorButton");
+static_assert(sizeof(UFortSquadSlotSelectorButton) == 0x0008F8, "Wrong size on UFortSquadSlotSelectorButton");
 static_assert(offsetof(UFortSquadSlotSelectorButton, SquadSlotWidget) == 0x0008C8, "Member 'UFortSquadSlotSelectorButton::SquadSlotWidget' has a wrong offset!");
 static_assert(offsetof(UFortSquadSlotSelectorButton, ItemViewContext) == 0x0008D0, "Member 'UFortSquadSlotSelectorButton::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortSquadSlotWidget
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0108 (0x0220 - 0x0118)
 class UFortSquadSlotWidget final : public UWidget
 {
 public:
@@ -11201,19 +10960,18 @@ public:
 		return GetDefaultObjImpl<UFortSquadSlotWidget>();
 	}
 };
-static_assert(alignof(UFortSquadSlotWidget) == 0x11827900, "Wrong alignment on UFortSquadSlotWidget");
-static_assert(sizeof(UFortSquadSlotWidget) == 0x11827900, "Wrong size on UFortSquadSlotWidget");
+static_assert(alignof(UFortSquadSlotWidget) == 0x000008, "Wrong alignment on UFortSquadSlotWidget");
+static_assert(sizeof(UFortSquadSlotWidget) == 0x000220, "Wrong size on UFortSquadSlotWidget");
 static_assert(offsetof(UFortSquadSlotWidget, ItemCardSize) == 0x000140, "Member 'UFortSquadSlotWidget::ItemCardSize' has a wrong offset!");
 static_assert(offsetof(UFortSquadSlotWidget, SlottedItemCard) == 0x0001E0, "Member 'UFortSquadSlotWidget::SlottedItemCard' has a wrong offset!");
 static_assert(offsetof(UFortSquadSlotWidget, ItemViewContext) == 0x0001F0, "Member 'UFortSquadSlotWidget::ItemViewContext' has a wrong offset!");
 
 // Class FortniteUI.FortPerkWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPerkWidget : public UFortUserWidget
+// 0x0088 (0x02C8 - 0x0240)
+class UFortPerkWidget : public UFortUserWidget
 {
 public:
-	struct FFortUIPerk                            Perk;                                              // 0x0240(0x1182E980)(BlueprintVisible, BlueprintReadOnly, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FFortUIPerk                            Perk;                                              // 0x0240(0x0088)(BlueprintVisible, BlueprintReadOnly, ExposeOnSpawn, NativeAccessSpecifierPublic)
 
 public:
 	bool GetIcon(struct FSlateBrush* Brush) const;
@@ -11237,18 +10995,17 @@ public:
 		return GetDefaultObjImpl<UFortPerkWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPerkWidget) == 0x322CBBB8, "Wrong alignment on UFortPerkWidget");
-static_assert(sizeof(UFortPerkWidget) == 0x322CBBB8, "Wrong size on UFortPerkWidget");
+static_assert(alignof(UFortPerkWidget) == 0x000008, "Wrong alignment on UFortPerkWidget");
+static_assert(sizeof(UFortPerkWidget) == 0x0002C8, "Wrong size on UFortPerkWidget");
 static_assert(offsetof(UFortPerkWidget, Perk) == 0x000240, "Member 'UFortPerkWidget::Perk' has a wrong offset!");
 
 // Class FortniteUI.FortSurvivorSquadStatMatchBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x03A8 (0x05E0 - 0x0238)
 class UFortSurvivorSquadStatMatchBase final : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUISurvivorSquadStatMatch          StatMatch;                                         // 0x0240(0x1182E980)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	struct FFortUISurvivorSquadStatMatch          StatMatch;                                         // 0x0240(0x03A0)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
 
 public:
 	void OnStatMatchUpdated(const struct FFortUISurvivorSquadStatMatch& UpdatedMatch);
@@ -11263,14 +11020,13 @@ public:
 		return GetDefaultObjImpl<UFortSurvivorSquadStatMatchBase>();
 	}
 };
-static_assert(alignof(UFortSurvivorSquadStatMatchBase) == 0x322CBBB8, "Wrong alignment on UFortSurvivorSquadStatMatchBase");
-static_assert(sizeof(UFortSurvivorSquadStatMatchBase) == 0x322CBBB8, "Wrong size on UFortSurvivorSquadStatMatchBase");
+static_assert(alignof(UFortSurvivorSquadStatMatchBase) == 0x000008, "Wrong alignment on UFortSurvivorSquadStatMatchBase");
+static_assert(sizeof(UFortSurvivorSquadStatMatchBase) == 0x0005E0, "Wrong size on UFortSurvivorSquadStatMatchBase");
 static_assert(offsetof(UFortSurvivorSquadStatMatchBase, StatMatch) == 0x000240, "Member 'UFortSurvivorSquadStatMatchBase::StatMatch' has a wrong offset!");
 
 // Class FortniteUI.FortSquadStatsWidgetBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSquadStatsWidgetBase : public UCommonUserWidget
+// 0x0038 (0x0270 - 0x0238)
+class UFortSquadStatsWidgetBase : public UCommonUserWidget
 {
 public:
 	TArray<class UFortAttributeListItem_NUI*>     OverviewStats;                                     // 0x0238(0x0010)(BlueprintVisible, ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
@@ -11294,18 +11050,17 @@ public:
 		return GetDefaultObjImpl<UFortSquadStatsWidgetBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSquadStatsWidgetBase) == 0x322CBBB8, "Wrong alignment on UFortSquadStatsWidgetBase");
-static_assert(sizeof(UFortSquadStatsWidgetBase) == 0x322CBBB8, "Wrong size on UFortSquadStatsWidgetBase");
+static_assert(alignof(UFortSquadStatsWidgetBase) == 0x000008, "Wrong alignment on UFortSquadStatsWidgetBase");
+static_assert(sizeof(UFortSquadStatsWidgetBase) == 0x000270, "Wrong size on UFortSquadStatsWidgetBase");
 static_assert(offsetof(UFortSquadStatsWidgetBase, OverviewStats) == 0x000238, "Member 'UFortSquadStatsWidgetBase::OverviewStats' has a wrong offset!");
 static_assert(offsetof(UFortSquadStatsWidgetBase, DetailedStats) == 0x000248, "Member 'UFortSquadStatsWidgetBase::DetailedStats' has a wrong offset!");
 
 // Class FortniteUI.FortStatIcon
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0268 - 0x0238)
 class UFortStatIcon final : public UCommonUserWidget
 {
 public:
-	struct FGameplayAttribute                     Attribute;                                         // 0x0238(0x11821C00)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayAttribute                     Attribute;                                         // 0x0238(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortBrushSize                                ImageSize;                                         // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImage*                                 Icon;                                              // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11324,16 +11079,19 @@ public:
 		return GetDefaultObjImpl<UFortStatIcon>();
 	}
 };
-static_assert(alignof(UFortStatIcon) == 0x322CBBB8, "Wrong alignment on UFortStatIcon");
-static_assert(sizeof(UFortStatIcon) == 0x322CBBB8, "Wrong size on UFortStatIcon");
+static_assert(alignof(UFortStatIcon) == 0x000008, "Wrong alignment on UFortStatIcon");
+static_assert(sizeof(UFortStatIcon) == 0x000268, "Wrong size on UFortStatIcon");
 static_assert(offsetof(UFortStatIcon, Attribute) == 0x000238, "Member 'UFortStatIcon::Attribute' has a wrong offset!");
 static_assert(offsetof(UFortStatIcon, ImageSize) == 0x000258, "Member 'UFortStatIcon::ImageSize' has a wrong offset!");
 static_assert(offsetof(UFortStatIcon, Icon) == 0x000260, "Member 'UFortStatIcon::Icon' has a wrong offset!");
 
 // Class FortniteUI.FortStoreRootBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x03F0 - 0x03E0)
 class UFortStoreRootBase final : public UCommonActivatablePanel
 {
+public:
+	uint8                                         Pad_3E0[0x10];                                     // 0x03E0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -11344,15 +11102,15 @@ public:
 		return GetDefaultObjImpl<UFortStoreRootBase>();
 	}
 };
-static_assert(alignof(UFortStoreRootBase) == 0x322CBBB8, "Wrong alignment on UFortStoreRootBase");
-static_assert(sizeof(UFortStoreRootBase) == 0x322CBBB8, "Wrong size on UFortStoreRootBase");
+static_assert(alignof(UFortStoreRootBase) == 0x000008, "Wrong alignment on UFortStoreRootBase");
+static_assert(sizeof(UFortStoreRootBase) == 0x0003F0, "Wrong size on UFortStoreRootBase");
 
 // Class FortniteUI.StoreCardObject
-// 0x1182E958 (0x1182E980 - 0x0028)
+// 0x0018 (0x0040 - 0x0028)
 class UStoreCardObject final : public UObject
 {
 public:
-	struct FCard                                  Card;                                              // 0x0028(0x1182E980)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCard                                  Card;                                              // 0x0028(0x0018)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -11364,12 +11122,12 @@ public:
 		return GetDefaultObjImpl<UStoreCardObject>();
 	}
 };
-static_assert(alignof(UStoreCardObject) == 0x1182E980, "Wrong alignment on UStoreCardObject");
-static_assert(sizeof(UStoreCardObject) == 0x1182E980, "Wrong size on UStoreCardObject");
+static_assert(alignof(UStoreCardObject) == 0x000008, "Wrong alignment on UStoreCardObject");
+static_assert(sizeof(UStoreCardObject) == 0x000040, "Wrong size on UStoreCardObject");
 static_assert(offsetof(UStoreCardObject, Card) == 0x000028, "Member 'UStoreCardObject::Card' has a wrong offset!");
 
 // Class FortniteUI.FortStoreSummary
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0400 - 0x03E0)
 class UFortStoreSummary final : public UCommonActivatablePanel
 {
 public:
@@ -11390,15 +11148,14 @@ public:
 		return GetDefaultObjImpl<UFortStoreSummary>();
 	}
 };
-static_assert(alignof(UFortStoreSummary) == 0x322CBBB8, "Wrong alignment on UFortStoreSummary");
-static_assert(sizeof(UFortStoreSummary) == 0x322CBBB8, "Wrong size on UFortStoreSummary");
+static_assert(alignof(UFortStoreSummary) == 0x000008, "Wrong alignment on UFortStoreSummary");
+static_assert(sizeof(UFortStoreSummary) == 0x000400, "Wrong size on UFortStoreSummary");
 static_assert(offsetof(UFortStoreSummary, StoreCardObjects) == 0x0003E0, "Member 'UFortStoreSummary::StoreCardObjects' has a wrong offset!");
 static_assert(offsetof(UFortStoreSummary, TileView) == 0x0003F0, "Member 'UFortStoreSummary::TileView' has a wrong offset!");
 
 // Class FortniteUI.FortSubGameSelectBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSubGameSelectBase : public UCommonActivatablePanel
+// 0x0000 (0x03E0 - 0x03E0)
+class UFortSubGameSelectBase : public UCommonActivatablePanel
 {
 public:
 	bool GetFullDescription(ESubGame SubGame, class FText* FullDescription) const;
@@ -11414,14 +11171,12 @@ public:
 		return GetDefaultObjImpl<UFortSubGameSelectBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSubGameSelectBase) == 0x322CBBB8, "Wrong alignment on UFortSubGameSelectBase");
-static_assert(sizeof(UFortSubGameSelectBase) == 0x322CBBB8, "Wrong size on UFortSubGameSelectBase");
+static_assert(alignof(UFortSubGameSelectBase) == 0x000008, "Wrong alignment on UFortSubGameSelectBase");
+static_assert(sizeof(UFortSubGameSelectBase) == 0x0003E0, "Wrong size on UFortSubGameSelectBase");
 
 // Class FortniteUI.FortSubGameSelectButtonBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortSubGameSelectButtonBase : public UCommonUserWidget
+// 0x0000 (0x0238 - 0x0238)
+class UFortSubGameSelectButtonBase : public UCommonUserWidget
 {
 public:
 	void UpdateButtonState(bool bVisible);
@@ -11436,12 +11191,11 @@ public:
 		return GetDefaultObjImpl<UFortSubGameSelectButtonBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortSubGameSelectButtonBase) == 0x322CBBB8, "Wrong alignment on UFortSubGameSelectButtonBase");
-static_assert(sizeof(UFortSubGameSelectButtonBase) == 0x322CBBB8, "Wrong size on UFortSubGameSelectButtonBase");
+static_assert(alignof(UFortSubGameSelectButtonBase) == 0x000008, "Wrong alignment on UFortSubGameSelectButtonBase");
+static_assert(sizeof(UFortSubGameSelectButtonBase) == 0x000238, "Wrong size on UFortSubGameSelectButtonBase");
 
 // Class FortniteUI.FortSZAwareImage
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0008 (0x0208 - 0x0200)
 class UFortSZAwareImage final : public UImage
 {
 public:
@@ -11461,15 +11215,15 @@ public:
 		return GetDefaultObjImpl<UFortSZAwareImage>();
 	}
 };
-static_assert(alignof(UFortSZAwareImage) == 0x11827900, "Wrong alignment on UFortSZAwareImage");
-static_assert(sizeof(UFortSZAwareImage) == 0x11827900, "Wrong size on UFortSZAwareImage");
+static_assert(alignof(UFortSZAwareImage) == 0x000008, "Wrong alignment on UFortSZAwareImage");
+static_assert(sizeof(UFortSZAwareImage) == 0x000208, "Wrong size on UFortSZAwareImage");
 static_assert(offsetof(UFortSZAwareImage, AnchorLeft) == 0x000200, "Member 'UFortSZAwareImage::AnchorLeft' has a wrong offset!");
 static_assert(offsetof(UFortSZAwareImage, AnchorRight) == 0x000201, "Member 'UFortSZAwareImage::AnchorRight' has a wrong offset!");
 static_assert(offsetof(UFortSZAwareImage, AnchorTop) == 0x000202, "Member 'UFortSZAwareImage::AnchorTop' has a wrong offset!");
 static_assert(offsetof(UFortSZAwareImage, AnchorBottom) == 0x000203, "Member 'UFortSZAwareImage::AnchorBottom' has a wrong offset!");
 
 // Class FortniteUI.FortTextStyleList
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UFortTextStyleList final : public UCommonUserWidget
 {
 public:
@@ -11488,12 +11242,12 @@ public:
 		return GetDefaultObjImpl<UFortTextStyleList>();
 	}
 };
-static_assert(alignof(UFortTextStyleList) == 0x322CBBB8, "Wrong alignment on UFortTextStyleList");
-static_assert(sizeof(UFortTextStyleList) == 0x322CBBB8, "Wrong size on UFortTextStyleList");
+static_assert(alignof(UFortTextStyleList) == 0x000008, "Wrong alignment on UFortTextStyleList");
+static_assert(sizeof(UFortTextStyleList) == 0x000240, "Wrong size on UFortTextStyleList");
 static_assert(offsetof(UFortTextStyleList, TextStylesPath) == 0x000238, "Member 'UFortTextStyleList::TextStylesPath' has a wrong offset!");
 
 // Class FortniteUI.FortTheaterSelect
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0430 - 0x03E0)
 class UFortTheaterSelect final : public UCommonActivatablePanel
 {
 public:
@@ -11518,8 +11272,8 @@ public:
 		return GetDefaultObjImpl<UFortTheaterSelect>();
 	}
 };
-static_assert(alignof(UFortTheaterSelect) == 0x322CBBB8, "Wrong alignment on UFortTheaterSelect");
-static_assert(sizeof(UFortTheaterSelect) == 0x322CBBB8, "Wrong size on UFortTheaterSelect");
+static_assert(alignof(UFortTheaterSelect) == 0x000008, "Wrong alignment on UFortTheaterSelect");
+static_assert(sizeof(UFortTheaterSelect) == 0x000430, "Wrong size on UFortTheaterSelect");
 static_assert(offsetof(UFortTheaterSelect, OverlayMain) == 0x000420, "Member 'UFortTheaterSelect::OverlayMain' has a wrong offset!");
 
 // Class FortniteUI.FortTooltipUIContext
@@ -11552,9 +11306,8 @@ static_assert(alignof(UFortTooltipUIContext) == 0x000008, "Wrong alignment on UF
 static_assert(sizeof(UFortTooltipUIContext) == 0x000028, "Wrong size on UFortTooltipUIContext");
 
 // Class FortniteUI.FortTwitchLogin
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortTwitchLogin : public UCommonUserWidget
+// 0x0058 (0x0290 - 0x0238)
+class UFortTwitchLogin : public UCommonUserWidget
 {
 public:
 	uint8                                         Pad_238[0x30];                                     // 0x0238(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
@@ -11584,9 +11337,8 @@ public:
 		return GetDefaultObjImpl<UFortTwitchLogin>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortTwitchLogin) == 0x322CBBB8, "Wrong alignment on UFortTwitchLogin");
-static_assert(sizeof(UFortTwitchLogin) == 0x322CBBB8, "Wrong size on UFortTwitchLogin");
+static_assert(alignof(UFortTwitchLogin) == 0x000008, "Wrong alignment on UFortTwitchLogin");
+static_assert(sizeof(UFortTwitchLogin) == 0x000290, "Wrong size on UFortTwitchLogin");
 static_assert(offsetof(UFortTwitchLogin, TwitchLoginModalWidgetClass) == 0x000268, "Member 'UFortTwitchLogin::TwitchLoginModalWidgetClass' has a wrong offset!");
 static_assert(offsetof(UFortTwitchLogin, ActiveLoginModal) == 0x000288, "Member 'UFortTwitchLogin::ActiveLoginModal' has a wrong offset!");
 
@@ -11616,9 +11368,8 @@ static_assert(alignof(UFortUIDataConfigurationContext) == 0x000008, "Wrong align
 static_assert(sizeof(UFortUIDataConfigurationContext) == 0x000028, "Wrong size on UFortUIDataConfigurationContext");
 
 // Class FortniteUI.FortUIMessageItemWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortUIMessageItemWidget : public UCommonUserWidget
+// 0x0048 (0x0280 - 0x0238)
+class UFortUIMessageItemWidget : public UCommonUserWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnMessageDisplayed;                                // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -11644,9 +11395,8 @@ public:
 		return GetDefaultObjImpl<UFortUIMessageItemWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortUIMessageItemWidget) == 0x322CBBB8, "Wrong alignment on UFortUIMessageItemWidget");
-static_assert(sizeof(UFortUIMessageItemWidget) == 0x322CBBB8, "Wrong size on UFortUIMessageItemWidget");
+static_assert(alignof(UFortUIMessageItemWidget) == 0x000008, "Wrong alignment on UFortUIMessageItemWidget");
+static_assert(sizeof(UFortUIMessageItemWidget) == 0x000280, "Wrong size on UFortUIMessageItemWidget");
 static_assert(offsetof(UFortUIMessageItemWidget, OnMessageDisplayed) == 0x000238, "Member 'UFortUIMessageItemWidget::OnMessageDisplayed' has a wrong offset!");
 static_assert(offsetof(UFortUIMessageItemWidget, OnMessageRemoved) == 0x000248, "Member 'UFortUIMessageItemWidget::OnMessageRemoved' has a wrong offset!");
 static_assert(offsetof(UFortUIMessageItemWidget, MessageID) == 0x000258, "Member 'UFortUIMessageItemWidget::MessageID' has a wrong offset!");
@@ -11655,9 +11405,8 @@ static_assert(offsetof(UFortUIMessageItemWidget, DisplayDuration) == 0x000264, "
 static_assert(offsetof(UFortUIMessageItemWidget, RemoveDuration) == 0x000268, "Member 'UFortUIMessageItemWidget::RemoveDuration' has a wrong offset!");
 
 // Class FortniteUI.FortUIMessagesPageBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortUIMessagesPageBase : public UCommonActivatablePanel
+// 0x0030 (0x0410 - 0x03E0)
+class UFortUIMessagesPageBase : public UCommonActivatablePanel
 {
 public:
 	int32                                         MaximumMessagesShown;                              // 0x03E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11682,9 +11431,8 @@ public:
 		return GetDefaultObjImpl<UFortUIMessagesPageBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortUIMessagesPageBase) == 0x322CBBB8, "Wrong alignment on UFortUIMessagesPageBase");
-static_assert(sizeof(UFortUIMessagesPageBase) == 0x322CBBB8, "Wrong size on UFortUIMessagesPageBase");
+static_assert(alignof(UFortUIMessagesPageBase) == 0x000008, "Wrong alignment on UFortUIMessagesPageBase");
+static_assert(sizeof(UFortUIMessagesPageBase) == 0x000410, "Wrong size on UFortUIMessagesPageBase");
 static_assert(offsetof(UFortUIMessagesPageBase, MaximumMessagesShown) == 0x0003E0, "Member 'UFortUIMessagesPageBase::MaximumMessagesShown' has a wrong offset!");
 static_assert(offsetof(UFortUIMessagesPageBase, MessagesList) == 0x0003E8, "Member 'UFortUIMessagesPageBase::MessagesList' has a wrong offset!");
 static_assert(offsetof(UFortUIMessagesPageBase, MessagesShown) == 0x0003F8, "Member 'UFortUIMessagesPageBase::MessagesShown' has a wrong offset!");
@@ -11772,9 +11520,8 @@ static_assert(alignof(UFortUIStateTrigger_InGame) == 0x000008, "Wrong alignment 
 static_assert(sizeof(UFortUIStateTrigger_InGame) == 0x000030, "Wrong size on UFortUIStateTrigger_InGame");
 
 // Class FortniteUI.FortUIStateWidget_Frontend
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortUIStateWidget_Frontend : public UFortUIStateWidget_NUI
+// 0x0000 (0x0400 - 0x0400)
+class UFortUIStateWidget_Frontend : public UFortUIStateWidget_NUI
 {
 public:
 	static class UClass* StaticClass()
@@ -11786,12 +11533,11 @@ public:
 		return GetDefaultObjImpl<UFortUIStateWidget_Frontend>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortUIStateWidget_Frontend) == 0x322CBBB8, "Wrong alignment on UFortUIStateWidget_Frontend");
-static_assert(sizeof(UFortUIStateWidget_Frontend) == 0x322CBBB8, "Wrong size on UFortUIStateWidget_Frontend");
+static_assert(alignof(UFortUIStateWidget_Frontend) == 0x000008, "Wrong alignment on UFortUIStateWidget_Frontend");
+static_assert(sizeof(UFortUIStateWidget_Frontend) == 0x000400, "Wrong size on UFortUIStateWidget_Frontend");
 
 // Class FortniteUI.FortErrorDialog
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0278 - 0x0268)
 class UFortErrorDialog final : public UFortActionHandlerPanel
 {
 public:
@@ -11812,14 +11558,13 @@ public:
 		return GetDefaultObjImpl<UFortErrorDialog>();
 	}
 };
-static_assert(alignof(UFortErrorDialog) == 0x322CBBB8, "Wrong alignment on UFortErrorDialog");
-static_assert(sizeof(UFortErrorDialog) == 0x322CBBB8, "Wrong size on UFortErrorDialog");
+static_assert(alignof(UFortErrorDialog) == 0x000008, "Wrong alignment on UFortErrorDialog");
+static_assert(sizeof(UFortErrorDialog) == 0x000278, "Wrong size on UFortErrorDialog");
 static_assert(offsetof(UFortErrorDialog, ErrorInfo) == 0x000268, "Member 'UFortErrorDialog::ErrorInfo' has a wrong offset!");
 
 // Class FortniteUI.FortQuestRewardChoiceWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortQuestRewardChoiceWidget : public UFortActionHandlerPanel
+// 0x0000 (0x0268 - 0x0268)
+class UFortQuestRewardChoiceWidget : public UFortActionHandlerPanel
 {
 public:
 	void SetQuest(const class UFortQuestItem* Quest);
@@ -11834,12 +11579,11 @@ public:
 		return GetDefaultObjImpl<UFortQuestRewardChoiceWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortQuestRewardChoiceWidget) == 0x322CBBB8, "Wrong alignment on UFortQuestRewardChoiceWidget");
-static_assert(sizeof(UFortQuestRewardChoiceWidget) == 0x322CBBB8, "Wrong size on UFortQuestRewardChoiceWidget");
+static_assert(alignof(UFortQuestRewardChoiceWidget) == 0x000008, "Wrong alignment on UFortQuestRewardChoiceWidget");
+static_assert(sizeof(UFortQuestRewardChoiceWidget) == 0x000268, "Wrong size on UFortQuestRewardChoiceWidget");
 
 // Class FortniteUI.FortUIStateWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0268 - 0x0268)
 class UFortUIStateWidget final : public UFortActionHandlerPanel
 {
 public:
@@ -11856,13 +11600,12 @@ public:
 		return GetDefaultObjImpl<UFortUIStateWidget>();
 	}
 };
-static_assert(alignof(UFortUIStateWidget) == 0x322CBBB8, "Wrong alignment on UFortUIStateWidget");
-static_assert(sizeof(UFortUIStateWidget) == 0x322CBBB8, "Wrong size on UFortUIStateWidget");
+static_assert(alignof(UFortUIStateWidget) == 0x000008, "Wrong alignment on UFortUIStateWidget");
+static_assert(sizeof(UFortUIStateWidget) == 0x000268, "Wrong size on UFortUIStateWidget");
 
 // Class FortniteUI.FortAlterationsWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortAlterationsWidget : public UFortUserWidget
+// 0x0018 (0x0258 - 0x0240)
+class UFortAlterationsWidget : public UFortUserWidget
 {
 public:
 	TArray<class UFortAlterationItemDefinition*>  AlterationList;                                    // 0x0240(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
@@ -11884,15 +11627,14 @@ public:
 		return GetDefaultObjImpl<UFortAlterationsWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortAlterationsWidget) == 0x322CBBB8, "Wrong alignment on UFortAlterationsWidget");
-static_assert(sizeof(UFortAlterationsWidget) == 0x322CBBB8, "Wrong size on UFortAlterationsWidget");
+static_assert(alignof(UFortAlterationsWidget) == 0x000008, "Wrong alignment on UFortAlterationsWidget");
+static_assert(sizeof(UFortAlterationsWidget) == 0x000258, "Wrong size on UFortAlterationsWidget");
 static_assert(offsetof(UFortAlterationsWidget, AlterationList) == 0x000240, "Member 'UFortAlterationsWidget::AlterationList' has a wrong offset!");
 static_assert(offsetof(UFortAlterationsWidget, bIsUpgrade) == 0x000250, "Member 'UFortAlterationsWidget::bIsUpgrade' has a wrong offset!");
 static_assert(offsetof(UFortAlterationsWidget, CurrentItemLevel) == 0x000254, "Member 'UFortAlterationsWidget::CurrentItemLevel' has a wrong offset!");
 
 // Class FortniteUI.FortAttributeList
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0258 - 0x0240)
 class UFortAttributeList final : public UFortUserWidget
 {
 public:
@@ -11917,16 +11659,19 @@ public:
 		return GetDefaultObjImpl<UFortAttributeList>();
 	}
 };
-static_assert(alignof(UFortAttributeList) == 0x322CBBB8, "Wrong alignment on UFortAttributeList");
-static_assert(sizeof(UFortAttributeList) == 0x322CBBB8, "Wrong size on UFortAttributeList");
+static_assert(alignof(UFortAttributeList) == 0x000008, "Wrong alignment on UFortAttributeList");
+static_assert(sizeof(UFortAttributeList) == 0x000258, "Wrong size on UFortAttributeList");
 static_assert(offsetof(UFortAttributeList, AttributeItemClass) == 0x000240, "Member 'UFortAttributeList::AttributeItemClass' has a wrong offset!");
 static_assert(offsetof(UFortAttributeList, bHoverEnabledOnElements) == 0x000248, "Member 'UFortAttributeList::bHoverEnabledOnElements' has a wrong offset!");
 static_assert(offsetof(UFortAttributeList, AttributeContainer) == 0x000250, "Member 'UFortAttributeList::AttributeContainer' has a wrong offset!");
 
 // Class FortniteUI.FortBluGloCounter
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0248 - 0x0240)
 class UFortBluGloCounter final : public UFortUserWidget
 {
+public:
+	uint8                                         Pad_240[0x8];                                      // 0x0240(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void OnBluGloQuantityChanged(int32 Quantity);
 
@@ -11940,13 +11685,16 @@ public:
 		return GetDefaultObjImpl<UFortBluGloCounter>();
 	}
 };
-static_assert(alignof(UFortBluGloCounter) == 0x322CBBB8, "Wrong alignment on UFortBluGloCounter");
-static_assert(sizeof(UFortBluGloCounter) == 0x322CBBB8, "Wrong size on UFortBluGloCounter");
+static_assert(alignof(UFortBluGloCounter) == 0x000008, "Wrong alignment on UFortBluGloCounter");
+static_assert(sizeof(UFortBluGloCounter) == 0x000248, "Wrong size on UFortBluGloCounter");
 
 // Class FortniteUI.FortCapturePointWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0250 - 0x0240)
 class UFortCapturePointWidget final : public UFortUserWidget
 {
+public:
+	uint8                                         Pad_240[0x10];                                     // 0x0240(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void OnCapturePointDataChanged(bool bActivated, bool bLocked, float CapturePercentage, ECaptureState CaptureState, EFortTeam ControllingTeam);
 
@@ -11960,11 +11708,11 @@ public:
 		return GetDefaultObjImpl<UFortCapturePointWidget>();
 	}
 };
-static_assert(alignof(UFortCapturePointWidget) == 0x322CBBB8, "Wrong alignment on UFortCapturePointWidget");
-static_assert(sizeof(UFortCapturePointWidget) == 0x322CBBB8, "Wrong size on UFortCapturePointWidget");
+static_assert(alignof(UFortCapturePointWidget) == 0x000008, "Wrong alignment on UFortCapturePointWidget");
+static_assert(sizeof(UFortCapturePointWidget) == 0x000250, "Wrong size on UFortCapturePointWidget");
 
 // Class FortniteUI.FortGridPickerGrid
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0240 - 0x0240)
 class UFortGridPickerGrid final : public UFortUserWidget
 {
 public:
@@ -11977,11 +11725,11 @@ public:
 		return GetDefaultObjImpl<UFortGridPickerGrid>();
 	}
 };
-static_assert(alignof(UFortGridPickerGrid) == 0x322CBBB8, "Wrong alignment on UFortGridPickerGrid");
-static_assert(sizeof(UFortGridPickerGrid) == 0x322CBBB8, "Wrong size on UFortGridPickerGrid");
+static_assert(alignof(UFortGridPickerGrid) == 0x000008, "Wrong alignment on UFortGridPickerGrid");
+static_assert(sizeof(UFortGridPickerGrid) == 0x000240, "Wrong size on UFortGridPickerGrid");
 
 // Class FortniteUI.FortItemCollectorWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0250 - 0x0240)
 class UFortItemCollectorWidget final : public UFortUserWidget
 {
 public:
@@ -12003,12 +11751,12 @@ public:
 		return GetDefaultObjImpl<UFortItemCollectorWidget>();
 	}
 };
-static_assert(alignof(UFortItemCollectorWidget) == 0x322CBBB8, "Wrong alignment on UFortItemCollectorWidget");
-static_assert(sizeof(UFortItemCollectorWidget) == 0x322CBBB8, "Wrong size on UFortItemCollectorWidget");
+static_assert(alignof(UFortItemCollectorWidget) == 0x000008, "Wrong alignment on UFortItemCollectorWidget");
+static_assert(sizeof(UFortItemCollectorWidget) == 0x000250, "Wrong size on UFortItemCollectorWidget");
 static_assert(offsetof(UFortItemCollectorWidget, ItemCollector) == 0x000240, "Member 'UFortItemCollectorWidget::ItemCollector' has a wrong offset!");
 
 // Class FortniteUI.FortItemGroupSlotPicker
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0270 - 0x0240)
 class UFortItemGroupSlotPicker final : public UFortUserWidget
 {
 public:
@@ -12048,8 +11796,8 @@ public:
 		return GetDefaultObjImpl<UFortItemGroupSlotPicker>();
 	}
 };
-static_assert(alignof(UFortItemGroupSlotPicker) == 0x322CBBB8, "Wrong alignment on UFortItemGroupSlotPicker");
-static_assert(sizeof(UFortItemGroupSlotPicker) == 0x322CBBB8, "Wrong size on UFortItemGroupSlotPicker");
+static_assert(alignof(UFortItemGroupSlotPicker) == 0x000008, "Wrong alignment on UFortItemGroupSlotPicker");
+static_assert(sizeof(UFortItemGroupSlotPicker) == 0x000270, "Wrong size on UFortItemGroupSlotPicker");
 static_assert(offsetof(UFortItemGroupSlotPicker, OnItemPickerSelectionCommittedEvent) == 0x000240, "Member 'UFortItemGroupSlotPicker::OnItemPickerSelectionCommittedEvent' has a wrong offset!");
 static_assert(offsetof(UFortItemGroupSlotPicker, HostItemGroupSlotWidget) == 0x000250, "Member 'UFortItemGroupSlotPicker::HostItemGroupSlotWidget' has a wrong offset!");
 static_assert(offsetof(UFortItemGroupSlotPicker, SlottedItemDetailsContainer) == 0x000258, "Member 'UFortItemGroupSlotPicker::SlottedItemDetailsContainer' has a wrong offset!");
@@ -12057,7 +11805,7 @@ static_assert(offsetof(UFortItemGroupSlotPicker, SlottedItemDetailsWidget) == 0x
 static_assert(offsetof(UFortItemGroupSlotPicker, UpgradedItemForPreview) == 0x000268, "Member 'UFortItemGroupSlotPicker::UpgradedItemForPreview' has a wrong offset!");
 
 // Class FortniteUI.FortItemGroupWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0268 - 0x0240)
 class UFortItemGroupWidget final : public UFortUserWidget
 {
 public:
@@ -12087,17 +11835,16 @@ public:
 		return GetDefaultObjImpl<UFortItemGroupWidget>();
 	}
 };
-static_assert(alignof(UFortItemGroupWidget) == 0x322CBBB8, "Wrong alignment on UFortItemGroupWidget");
-static_assert(sizeof(UFortItemGroupWidget) == 0x322CBBB8, "Wrong size on UFortItemGroupWidget");
+static_assert(alignof(UFortItemGroupWidget) == 0x000008, "Wrong alignment on UFortItemGroupWidget");
+static_assert(sizeof(UFortItemGroupWidget) == 0x000268, "Wrong size on UFortItemGroupWidget");
 static_assert(offsetof(UFortItemGroupWidget, SquadId) == 0x000240, "Member 'UFortItemGroupWidget::SquadId' has a wrong offset!");
 static_assert(offsetof(UFortItemGroupWidget, ItemSlotWidgetType) == 0x000248, "Member 'UFortItemGroupWidget::ItemSlotWidgetType' has a wrong offset!");
 static_assert(offsetof(UFortItemGroupWidget, ItemSlotsContainer) == 0x000250, "Member 'UFortItemGroupWidget::ItemSlotsContainer' has a wrong offset!");
 static_assert(offsetof(UFortItemGroupWidget, SlotWidgets) == 0x000258, "Member 'UFortItemGroupWidget::SlotWidgets' has a wrong offset!");
 
 // Class FortniteUI.FortMovieWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortMovieWidget : public UFortUserWidget
+// 0x0018 (0x0258 - 0x0240)
+class UFortMovieWidget : public UFortUserWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnMediaOpened;                                     // 0x0240(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -12123,14 +11870,13 @@ public:
 		return GetDefaultObjImpl<UFortMovieWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortMovieWidget) == 0x322CBBB8, "Wrong alignment on UFortMovieWidget");
-static_assert(sizeof(UFortMovieWidget) == 0x322CBBB8, "Wrong size on UFortMovieWidget");
+static_assert(alignof(UFortMovieWidget) == 0x000008, "Wrong alignment on UFortMovieWidget");
+static_assert(sizeof(UFortMovieWidget) == 0x000258, "Wrong size on UFortMovieWidget");
 static_assert(offsetof(UFortMovieWidget, OnMediaOpened) == 0x000240, "Member 'UFortMovieWidget::OnMediaOpened' has a wrong offset!");
 static_assert(offsetof(UFortMovieWidget, MediaPlayer) == 0x000250, "Member 'UFortMovieWidget::MediaPlayer' has a wrong offset!");
 
 // Class FortniteUI.FortNodeCanvasHost
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0248 - 0x0240)
 class UFortNodeCanvasHost final : public UFortUserWidget
 {
 public:
@@ -12146,16 +11892,16 @@ public:
 		return GetDefaultObjImpl<UFortNodeCanvasHost>();
 	}
 };
-static_assert(alignof(UFortNodeCanvasHost) == 0x322CBBB8, "Wrong alignment on UFortNodeCanvasHost");
-static_assert(sizeof(UFortNodeCanvasHost) == 0x322CBBB8, "Wrong size on UFortNodeCanvasHost");
+static_assert(alignof(UFortNodeCanvasHost) == 0x000008, "Wrong alignment on UFortNodeCanvasHost");
+static_assert(sizeof(UFortNodeCanvasHost) == 0x000248, "Wrong size on UFortNodeCanvasHost");
 static_assert(offsetof(UFortNodeCanvasHost, Canvas) == 0x000240, "Member 'UFortNodeCanvasHost::Canvas' has a wrong offset!");
 
 // Class FortniteUI.FortNodeGraphHost
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0138 (0x0378 - 0x0240)
 class UFortNodeGraphHost final : public UFortUserWidget
 {
 public:
-	struct FFortCanvasProperties                  CanvasProperties;                                  // 0x0240(0x322CBBB8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFortCanvasProperties                  CanvasProperties;                                  // 0x0240(0x0070)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                   OnPageShownDelegate;                               // 0x02B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UFortNodeCanvasHost*                    CurrentNodeCanvasHost;                             // 0x02C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UOverlay*                               CanvasOverlay;                                     // 0x02C8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -12186,8 +11932,8 @@ public:
 		return GetDefaultObjImpl<UFortNodeGraphHost>();
 	}
 };
-static_assert(alignof(UFortNodeGraphHost) == 0x322CBBB8, "Wrong alignment on UFortNodeGraphHost");
-static_assert(sizeof(UFortNodeGraphHost) == 0x322CBBB8, "Wrong size on UFortNodeGraphHost");
+static_assert(alignof(UFortNodeGraphHost) == 0x000008, "Wrong alignment on UFortNodeGraphHost");
+static_assert(sizeof(UFortNodeGraphHost) == 0x000378, "Wrong size on UFortNodeGraphHost");
 static_assert(offsetof(UFortNodeGraphHost, CanvasProperties) == 0x000240, "Member 'UFortNodeGraphHost::CanvasProperties' has a wrong offset!");
 static_assert(offsetof(UFortNodeGraphHost, OnPageShownDelegate) == 0x0002B0, "Member 'UFortNodeGraphHost::OnPageShownDelegate' has a wrong offset!");
 static_assert(offsetof(UFortNodeGraphHost, CurrentNodeCanvasHost) == 0x0002C0, "Member 'UFortNodeGraphHost::CurrentNodeCanvasHost' has a wrong offset!");
@@ -12196,11 +11942,11 @@ static_assert(offsetof(UFortNodeGraphHost, NodePageIdToWidgetTypeMap) == 0x0002D
 static_assert(offsetof(UFortNodeGraphHost, NodePageIdToInstanceCache) == 0x000320, "Member 'UFortNodeGraphHost::NodePageIdToInstanceCache' has a wrong offset!");
 
 // Class FortniteUI.FortNodePrerequisitesWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0250 - 0x0240)
 class UFortNodePrerequisitesWidget final : public UFortUserWidget
 {
 public:
-	struct FDataTableRowHandle                    NodeStyleData;                                     // 0x0240(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                    NodeStyleData;                                     // 0x0240(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void GenerateNodePrerequisite(const struct FFortUINodePrerequisite& NodePrerequisite);
@@ -12217,14 +11963,13 @@ public:
 		return GetDefaultObjImpl<UFortNodePrerequisitesWidget>();
 	}
 };
-static_assert(alignof(UFortNodePrerequisitesWidget) == 0x322CBBB8, "Wrong alignment on UFortNodePrerequisitesWidget");
-static_assert(sizeof(UFortNodePrerequisitesWidget) == 0x322CBBB8, "Wrong size on UFortNodePrerequisitesWidget");
+static_assert(alignof(UFortNodePrerequisitesWidget) == 0x000008, "Wrong alignment on UFortNodePrerequisitesWidget");
+static_assert(sizeof(UFortNodePrerequisitesWidget) == 0x000250, "Wrong size on UFortNodePrerequisitesWidget");
 static_assert(offsetof(UFortNodePrerequisitesWidget, NodeStyleData) == 0x000240, "Member 'UFortNodePrerequisitesWidget::NodeStyleData' has a wrong offset!");
 
 // Class FortniteUI.FortPerksWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPerksWidget : public UFortUserWidget
+// 0x0018 (0x0258 - 0x0240)
+class UFortPerksWidget : public UFortUserWidget
 {
 public:
 	class UFortHero*                              Hero;                                              // 0x0240(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12247,21 +11992,19 @@ public:
 		return GetDefaultObjImpl<UFortPerksWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPerksWidget) == 0x322CBBB8, "Wrong alignment on UFortPerksWidget");
-static_assert(sizeof(UFortPerksWidget) == 0x322CBBB8, "Wrong size on UFortPerksWidget");
+static_assert(alignof(UFortPerksWidget) == 0x000008, "Wrong alignment on UFortPerksWidget");
+static_assert(sizeof(UFortPerksWidget) == 0x000258, "Wrong size on UFortPerksWidget");
 static_assert(offsetof(UFortPerksWidget, Hero) == 0x000240, "Member 'UFortPerksWidget::Hero' has a wrong offset!");
 static_assert(offsetof(UFortPerksWidget, bIsUpgrade) == 0x000248, "Member 'UFortPerksWidget::bIsUpgrade' has a wrong offset!");
 static_assert(offsetof(UFortPerksWidget, bIsEvolution) == 0x000249, "Member 'UFortPerksWidget::bIsEvolution' has a wrong offset!");
 static_assert(offsetof(UFortPerksWidget, EvolutionOption) == 0x000250, "Member 'UFortPerksWidget::EvolutionOption' has a wrong offset!");
 
 // Class FortniteUI.FortPerkTierWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortPerkTierWidget : public UFortUserWidget
+// 0x0020 (0x0260 - 0x0240)
+class UFortPerkTierWidget : public UFortUserWidget
 {
 public:
-	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0240(0x1182E980)(BlueprintVisible, BlueprintReadOnly, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0240(0x0020)(BlueprintVisible, BlueprintReadOnly, NoDestructor, ExposeOnSpawn, NativeAccessSpecifierPublic)
 
 public:
 	void OnGeneratePerk(const struct FFortUIPerk& Perk);
@@ -12277,15 +12020,17 @@ public:
 		return GetDefaultObjImpl<UFortPerkTierWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortPerkTierWidget) == 0x322CBBB8, "Wrong alignment on UFortPerkTierWidget");
-static_assert(sizeof(UFortPerkTierWidget) == 0x322CBBB8, "Wrong size on UFortPerkTierWidget");
+static_assert(alignof(UFortPerkTierWidget) == 0x000008, "Wrong alignment on UFortPerkTierWidget");
+static_assert(sizeof(UFortPerkTierWidget) == 0x000260, "Wrong size on UFortPerkTierWidget");
 static_assert(offsetof(UFortPerkTierWidget, FortPerkTier) == 0x000240, "Member 'UFortPerkTierWidget::FortPerkTier' has a wrong offset!");
 
 // Class FortniteUI.FortPvPMinimapWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0260 - 0x0240)
 class UFortPvPMinimapWidget final : public UFortUserWidget
 {
+public:
+	uint8                                         Pad_240[0x20];                                     // 0x0240(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -12296,11 +12041,11 @@ public:
 		return GetDefaultObjImpl<UFortPvPMinimapWidget>();
 	}
 };
-static_assert(alignof(UFortPvPMinimapWidget) == 0x322CBBB8, "Wrong alignment on UFortPvPMinimapWidget");
-static_assert(sizeof(UFortPvPMinimapWidget) == 0x322CBBB8, "Wrong size on UFortPvPMinimapWidget");
+static_assert(alignof(UFortPvPMinimapWidget) == 0x000008, "Wrong alignment on UFortPvPMinimapWidget");
+static_assert(sizeof(UFortPvPMinimapWidget) == 0x000260, "Wrong size on UFortPvPMinimapWidget");
 
 // Class FortniteUI.FortSocialItemWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0240 - 0x0240)
 class UFortSocialItemWidget final : public UFortUserWidget
 {
 public:
@@ -12316,11 +12061,11 @@ public:
 		return GetDefaultObjImpl<UFortSocialItemWidget>();
 	}
 };
-static_assert(alignof(UFortSocialItemWidget) == 0x322CBBB8, "Wrong alignment on UFortSocialItemWidget");
-static_assert(sizeof(UFortSocialItemWidget) == 0x322CBBB8, "Wrong size on UFortSocialItemWidget");
+static_assert(alignof(UFortSocialItemWidget) == 0x000008, "Wrong alignment on UFortSocialItemWidget");
+static_assert(sizeof(UFortSocialItemWidget) == 0x000240, "Wrong size on UFortSocialItemWidget");
 
 // Class FortniteUI.FortSquadPanelWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0268 - 0x0240)
 class UFortSquadPanelWidget final : public UFortUserWidget
 {
 public:
@@ -12340,15 +12085,15 @@ public:
 		return GetDefaultObjImpl<UFortSquadPanelWidget>();
 	}
 };
-static_assert(alignof(UFortSquadPanelWidget) == 0x322CBBB8, "Wrong alignment on UFortSquadPanelWidget");
-static_assert(sizeof(UFortSquadPanelWidget) == 0x322CBBB8, "Wrong size on UFortSquadPanelWidget");
+static_assert(alignof(UFortSquadPanelWidget) == 0x000008, "Wrong alignment on UFortSquadPanelWidget");
+static_assert(sizeof(UFortSquadPanelWidget) == 0x000268, "Wrong size on UFortSquadPanelWidget");
 static_assert(offsetof(UFortSquadPanelWidget, SquadTypeFilter) == 0x000240, "Member 'UFortSquadPanelWidget::SquadTypeFilter' has a wrong offset!");
 static_assert(offsetof(UFortSquadPanelWidget, SquadWidgetType) == 0x000248, "Member 'UFortSquadPanelWidget::SquadWidgetType' has a wrong offset!");
 static_assert(offsetof(UFortSquadPanelWidget, SquadWidgetsContainer) == 0x000250, "Member 'UFortSquadPanelWidget::SquadWidgetsContainer' has a wrong offset!");
 static_assert(offsetof(UFortSquadPanelWidget, SquadWidgets) == 0x000258, "Member 'UFortSquadPanelWidget::SquadWidgets' has a wrong offset!");
 
 // Class FortniteUI.FortStorefront
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0240 - 0x0240)
 class UFortStorefront final : public UFortUserWidget
 {
 public:
@@ -12361,11 +12106,11 @@ public:
 		return GetDefaultObjImpl<UFortStorefront>();
 	}
 };
-static_assert(alignof(UFortStorefront) == 0x322CBBB8, "Wrong alignment on UFortStorefront");
-static_assert(sizeof(UFortStorefront) == 0x322CBBB8, "Wrong size on UFortStorefront");
+static_assert(alignof(UFortStorefront) == 0x000008, "Wrong alignment on UFortStorefront");
+static_assert(sizeof(UFortStorefront) == 0x000240, "Wrong size on UFortStorefront");
 
 // Class FortniteUI.FortUIManagerWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0250 (0x0490 - 0x0240)
 class UFortUIManagerWidget final : public UFortUserWidget
 {
 public:
@@ -12424,8 +12169,8 @@ public:
 		return GetDefaultObjImpl<UFortUIManagerWidget>();
 	}
 };
-static_assert(alignof(UFortUIManagerWidget) == 0x322CBBB8, "Wrong alignment on UFortUIManagerWidget");
-static_assert(sizeof(UFortUIManagerWidget) == 0x322CBBB8, "Wrong size on UFortUIManagerWidget");
+static_assert(alignof(UFortUIManagerWidget) == 0x000008, "Wrong alignment on UFortUIManagerWidget");
+static_assert(sizeof(UFortUIManagerWidget) == 0x000490, "Wrong size on UFortUIManagerWidget");
 static_assert(offsetof(UFortUIManagerWidget, OnBeginSpokenDialog) == 0x000248, "Member 'UFortUIManagerWidget::OnBeginSpokenDialog' has a wrong offset!");
 static_assert(offsetof(UFortUIManagerWidget, OnEndSpokenDialog) == 0x000258, "Member 'UFortUIManagerWidget::OnEndSpokenDialog' has a wrong offset!");
 static_assert(offsetof(UFortUIManagerWidget, StateWidgets) == 0x000268, "Member 'UFortUIManagerWidget::StateWidgets' has a wrong offset!");
@@ -12440,9 +12185,8 @@ static_assert(offsetof(UFortUIManagerWidget, bIsStateContentDisplayed) == 0x0004
 static_assert(offsetof(UFortUIManagerWidget, NavigationManager) == 0x000410, "Member 'UFortUIManagerWidget::NavigationManager' has a wrong offset!");
 
 // Class FortniteUI.FortUserChoiceWidget
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFortUserChoiceWidget : public UFortUserWidget
+// 0x0000 (0x0240 - 0x0240)
+class UFortUserChoiceWidget : public UFortUserWidget
 {
 public:
 	void SetChoices(const struct FChoiceData& ChoiceItems);
@@ -12457,16 +12201,15 @@ public:
 		return GetDefaultObjImpl<UFortUserChoiceWidget>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFortUserChoiceWidget) == 0x322CBBB8, "Wrong alignment on UFortUserChoiceWidget");
-static_assert(sizeof(UFortUserChoiceWidget) == 0x322CBBB8, "Wrong size on UFortUserChoiceWidget");
+static_assert(alignof(UFortUserChoiceWidget) == 0x000008, "Wrong alignment on UFortUserChoiceWidget");
+static_assert(sizeof(UFortUserChoiceWidget) == 0x000240, "Wrong size on UFortUserChoiceWidget");
 
 // Class FortniteUI.FortWorkerSetBonusIcon
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UFortWorkerSetBonusIcon final : public UCommonUserWidget
 {
 public:
-	struct FGameplayTag                           GameplayTag;                                       // 0x0238(0x11821D80)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           GameplayTag;                                       // 0x0238(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFortBrushSize                                ImageSize;                                         // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImage*                                 Icon;                                              // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12485,16 +12228,15 @@ public:
 		return GetDefaultObjImpl<UFortWorkerSetBonusIcon>();
 	}
 };
-static_assert(alignof(UFortWorkerSetBonusIcon) == 0x322CBBB8, "Wrong alignment on UFortWorkerSetBonusIcon");
-static_assert(sizeof(UFortWorkerSetBonusIcon) == 0x322CBBB8, "Wrong size on UFortWorkerSetBonusIcon");
+static_assert(alignof(UFortWorkerSetBonusIcon) == 0x000008, "Wrong alignment on UFortWorkerSetBonusIcon");
+static_assert(sizeof(UFortWorkerSetBonusIcon) == 0x000250, "Wrong size on UFortWorkerSetBonusIcon");
 static_assert(offsetof(UFortWorkerSetBonusIcon, GameplayTag) == 0x000238, "Member 'UFortWorkerSetBonusIcon::GameplayTag' has a wrong offset!");
 static_assert(offsetof(UFortWorkerSetBonusIcon, ImageSize) == 0x000240, "Member 'UFortWorkerSetBonusIcon::ImageSize' has a wrong offset!");
 static_assert(offsetof(UFortWorkerSetBonusIcon, Icon) == 0x000248, "Member 'UFortWorkerSetBonusIcon::Icon' has a wrong offset!");
 
 // Class FortniteUI.FriendCodeEntryBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFriendCodeEntryBase : public UCommonButton
+// 0x0000 (0x08A0 - 0x08A0)
+class UFriendCodeEntryBase : public UCommonButton
 {
 public:
 	static class UClass* StaticClass()
@@ -12506,14 +12248,12 @@ public:
 		return GetDefaultObjImpl<UFriendCodeEntryBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFriendCodeEntryBase) == 0x322CBBB8, "Wrong alignment on UFriendCodeEntryBase");
-static_assert(sizeof(UFriendCodeEntryBase) == 0x322CBBB8, "Wrong size on UFriendCodeEntryBase");
+static_assert(alignof(UFriendCodeEntryBase) == 0x000008, "Wrong alignment on UFriendCodeEntryBase");
+static_assert(sizeof(UFriendCodeEntryBase) == 0x0008A0, "Wrong size on UFriendCodeEntryBase");
 
 // Class FortniteUI.FriendCodeListBase
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
-#pragma pack(push, 0x1)
-class alignas(0x322CBBB8) UFriendCodeListBase : public UCommonActivatablePanel
+// 0x0000 (0x03E0 - 0x03E0)
+class UFriendCodeListBase : public UCommonActivatablePanel
 {
 public:
 	static class UClass* StaticClass()
@@ -12525,9 +12265,8 @@ public:
 		return GetDefaultObjImpl<UFriendCodeListBase>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UFriendCodeListBase) == 0x322CBBB8, "Wrong alignment on UFriendCodeListBase");
-static_assert(sizeof(UFriendCodeListBase) == 0x322CBBB8, "Wrong size on UFriendCodeListBase");
+static_assert(alignof(UFriendCodeListBase) == 0x000008, "Wrong alignment on UFriendCodeListBase");
+static_assert(sizeof(UFriendCodeListBase) == 0x0003E0, "Wrong size on UFriendCodeListBase");
 
 // Class FortniteUI.UINavigationManager
 // 0x0020 (0x0048 - 0x0028)

@@ -26,15 +26,15 @@ static_assert(sizeof(BPI_StormShieldInterface_C_CanLeaveOutpost) == 0x000001, "W
 static_assert(offsetof(BPI_StormShieldInterface_C_CanLeaveOutpost, AllowedToLeave) == 0x000000, "Member 'BPI_StormShieldInterface_C_CanLeaveOutpost::AllowedToLeave' has a wrong offset!");
 
 // Function BPI_StormShieldinterface.BPI_StormShieldInterface_C.GetOutpostReadyState
-// 0x0108 (0x0108 - 0x0000)
-struct alignas(0x108) BPI_StormShieldInterface_C_GetOutpostReadyState final
+// 0x0002 (0x0002 - 0x0000)
+struct BPI_StormShieldInterface_C_GetOutpostReadyState final
 {
 public:
 	bool                                          ReadyToExpand;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ReadyToInstallAmplifier;                           // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BPI_StormShieldInterface_C_GetOutpostReadyState) == 0x000108, "Wrong alignment on BPI_StormShieldInterface_C_GetOutpostReadyState");
-static_assert(sizeof(BPI_StormShieldInterface_C_GetOutpostReadyState) == 0x000108, "Wrong size on BPI_StormShieldInterface_C_GetOutpostReadyState");
+static_assert(alignof(BPI_StormShieldInterface_C_GetOutpostReadyState) == 0x000001, "Wrong alignment on BPI_StormShieldInterface_C_GetOutpostReadyState");
+static_assert(sizeof(BPI_StormShieldInterface_C_GetOutpostReadyState) == 0x000002, "Wrong size on BPI_StormShieldInterface_C_GetOutpostReadyState");
 static_assert(offsetof(BPI_StormShieldInterface_C_GetOutpostReadyState, ReadyToExpand) == 0x000000, "Member 'BPI_StormShieldInterface_C_GetOutpostReadyState::ReadyToExpand' has a wrong offset!");
 static_assert(offsetof(BPI_StormShieldInterface_C_GetOutpostReadyState, ReadyToInstallAmplifier) == 0x000001, "Member 'BPI_StormShieldInterface_C_GetOutpostReadyState::ReadyToInstallAmplifier' has a wrong offset!");
 

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0930 - 0x08E8)
 class USquadSlotItemPickerTileButton_C final : public UFortSquadSlotItemPickerTileButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08E8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08E8(0x0008)(Transient, DuplicateTransient)
 	class UBorder*                                CurrentlySlottedIndicatorLayer;                    // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          NullItemBorder;                                    // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        OverlayTypeSwitcher;                               // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -50,8 +50,8 @@ public:
 		return GetDefaultObjImpl<USquadSlotItemPickerTileButton_C>();
 	}
 };
-static_assert(alignof(USquadSlotItemPickerTileButton_C) == 0x322CBBB8, "Wrong alignment on USquadSlotItemPickerTileButton_C");
-static_assert(sizeof(USquadSlotItemPickerTileButton_C) == 0x322CBBB8, "Wrong size on USquadSlotItemPickerTileButton_C");
+static_assert(alignof(USquadSlotItemPickerTileButton_C) == 0x000008, "Wrong alignment on USquadSlotItemPickerTileButton_C");
+static_assert(sizeof(USquadSlotItemPickerTileButton_C) == 0x000930, "Wrong size on USquadSlotItemPickerTileButton_C");
 static_assert(offsetof(USquadSlotItemPickerTileButton_C, UberGraphFrame) == 0x0008E8, "Member 'USquadSlotItemPickerTileButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USquadSlotItemPickerTileButton_C, CurrentlySlottedIndicatorLayer) == 0x0008F0, "Member 'USquadSlotItemPickerTileButton_C::CurrentlySlottedIndicatorLayer' has a wrong offset!");
 static_assert(offsetof(USquadSlotItemPickerTileButton_C, NullItemBorder) == 0x0008F8, "Member 'USquadSlotItemPickerTileButton_C::NullItemBorder' has a wrong offset!");

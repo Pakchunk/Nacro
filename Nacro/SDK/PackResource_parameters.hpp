@@ -30,7 +30,7 @@ static_assert(sizeof(PackResource_C_ExecuteUbergraph_PackResource) == 0x000004, 
 static_assert(offsetof(PackResource_C_ExecuteUbergraph_PackResource, EntryPoint) == 0x000000, "Member 'PackResource_C_ExecuteUbergraph_PackResource::EntryPoint' has a wrong offset!");
 
 // Function PackResource.PackResource_C.UpdateCount
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct PackResource_C_UpdateCount final
 {
 public:
@@ -47,11 +47,11 @@ public:
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetResourceCount_ReturnValue;             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0038(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0048(0x322CBBB8)()
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0038(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0048(0x0028)()
 };
-static_assert(alignof(PackResource_C_UpdateCount) == 0x322CBBB8, "Wrong alignment on PackResource_C_UpdateCount");
-static_assert(sizeof(PackResource_C_UpdateCount) == 0x322CBBB8, "Wrong size on PackResource_C_UpdateCount");
+static_assert(alignof(PackResource_C_UpdateCount) == 0x000008, "Wrong alignment on PackResource_C_UpdateCount");
+static_assert(sizeof(PackResource_C_UpdateCount) == 0x000070, "Wrong size on PackResource_C_UpdateCount");
 static_assert(offsetof(PackResource_C_UpdateCount, ResourceCount) == 0x000000, "Member 'PackResource_C_UpdateCount::ResourceCount' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateCount, Temp_float_Variable) == 0x000004, "Member 'PackResource_C_UpdateCount::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateCount, Temp_float_Variable2) == 0x000008, "Member 'PackResource_C_UpdateCount::Temp_float_Variable2' has a wrong offset!");
@@ -66,7 +66,7 @@ static_assert(offsetof(PackResource_C_UpdateCount, K2Node_MakeStruct_LinearColor
 static_assert(offsetof(PackResource_C_UpdateCount, K2Node_MakeStruct_SlateColor) == 0x000048, "Member 'PackResource_C_UpdateCount::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
 // Function PackResource.PackResource_C.UpdateType
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct PackResource_C_UpdateType final
 {
 public:
@@ -74,10 +74,10 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortResourceItemDefinition*            CallFunc_GetResourceItemDefinition_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0018(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0018(0x0090)()
 };
-static_assert(alignof(PackResource_C_UpdateType) == 0x11827900, "Wrong alignment on PackResource_C_UpdateType");
-static_assert(sizeof(PackResource_C_UpdateType) == 0x11827900, "Wrong size on PackResource_C_UpdateType");
+static_assert(alignof(PackResource_C_UpdateType) == 0x000008, "Wrong alignment on PackResource_C_UpdateType");
+static_assert(sizeof(PackResource_C_UpdateType) == 0x0000A8, "Wrong size on PackResource_C_UpdateType");
 static_assert(offsetof(PackResource_C_UpdateType, ResourceType_0) == 0x000000, "Member 'PackResource_C_UpdateType::ResourceType_0' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateType, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PackResource_C_UpdateType::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PackResource_C_UpdateType, CallFunc_GetResourceItemDefinition_ReturnValue) == 0x000010, "Member 'PackResource_C_UpdateType::CallFunc_GetResourceItemDefinition_ReturnValue' has a wrong offset!");

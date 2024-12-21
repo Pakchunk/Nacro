@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D8 (0x0338 - 0x0260)
 class UFrontEndRewards_ListRewards_C final : public UFortRewardNotificationSubWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       ShowHideDescription;                               // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimOutro;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       RibbonExpand;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,10 +42,10 @@ public:
 	bool                                          IsBusy;                                            // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2E9[0x3];                                      // 0x02E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CardOffset;                                        // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ScrollAction;                                      // 0x02F0(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CollectAllAction;                                  // 0x0300(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    InspectAction;                                     // 0x0310(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FTimerHandle                           TransitionInHandle;                                // 0x0320(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ScrollAction;                                      // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CollectAllAction;                                  // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InspectAction;                                     // 0x0310(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           TransitionInHandle;                                // 0x0320(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         TransitionInStaggerDelay;                          // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TransitionInIndex;                                 // 0x032C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsTransitioningIn;                                 // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -104,8 +104,8 @@ public:
 		return GetDefaultObjImpl<UFrontEndRewards_ListRewards_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_ListRewards_C) == 0x322CBBB8, "Wrong alignment on UFrontEndRewards_ListRewards_C");
-static_assert(sizeof(UFrontEndRewards_ListRewards_C) == 0x322CBBB8, "Wrong size on UFrontEndRewards_ListRewards_C");
+static_assert(alignof(UFrontEndRewards_ListRewards_C) == 0x000008, "Wrong alignment on UFrontEndRewards_ListRewards_C");
+static_assert(sizeof(UFrontEndRewards_ListRewards_C) == 0x000338, "Wrong size on UFrontEndRewards_ListRewards_C");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, UberGraphFrame) == 0x000260, "Member 'UFrontEndRewards_ListRewards_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, ShowHideDescription) == 0x000268, "Member 'UFrontEndRewards_ListRewards_C::ShowHideDescription' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, AnimOutro) == 0x000270, "Member 'UFrontEndRewards_ListRewards_C::AnimOutro' has a wrong offset!");

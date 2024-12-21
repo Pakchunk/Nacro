@@ -52,17 +52,17 @@ static_assert(sizeof(MiniCraftingIngredientListEntry_C_Refresh) == 0x000008, "Wr
 static_assert(offsetof(MiniCraftingIngredientListEntry_C_Refresh, CallFunc_GetItemDefinition_ReturnValue) == 0x000000, "Member 'MiniCraftingIngredientListEntry_C_Refresh::CallFunc_GetItemDefinition_ReturnValue' has a wrong offset!");
 
 // Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.RefreshBeingPreviewed
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed final
 {
 public:
-	struct FFortItemEntryPreviewData              CallFunc_GetPreviewData_OutPreviewData;            // 0x0000(0x1182E980)(NoDestructor)
+	struct FFortItemEntryPreviewData              CallFunc_GetPreviewData_OutPreviewData;            // 0x0000(0x0004)(NoDestructor)
 	bool                                          CallFunc_IsBeingPreviewed_ReturnValue;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed) == 0x1182E980, "Wrong alignment on MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed");
-static_assert(sizeof(MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed) == 0x1182E980, "Wrong size on MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed");
+static_assert(alignof(MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed) == 0x000004, "Wrong alignment on MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed");
+static_assert(sizeof(MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed) == 0x000008, "Wrong size on MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed");
 static_assert(offsetof(MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed, CallFunc_GetPreviewData_OutPreviewData) == 0x000000, "Member 'MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed::CallFunc_GetPreviewData_OutPreviewData' has a wrong offset!");
 static_assert(offsetof(MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed, CallFunc_IsBeingPreviewed_ReturnValue) == 0x000004, "Member 'MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed::CallFunc_IsBeingPreviewed_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000005, "Member 'MiniCraftingIngredientListEntry_C_RefreshBeingPreviewed::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");

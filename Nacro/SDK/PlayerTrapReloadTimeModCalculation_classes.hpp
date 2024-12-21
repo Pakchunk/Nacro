@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerTrapReloadTimeModCalculation.PlayerTrapReloadTimeModCalculation_C
-// 0x0000 (0x11821C00 - 0x11821C00)
+// 0x0000 (0x0068 - 0x0068)
 class UPlayerTrapReloadTimeModCalculation_C final : public UPlayerTrapBonusModMagnitudeCalculation
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UPlayerTrapReloadTimeModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapReloadTimeModCalculation_C) == 0x11821C00, "Wrong alignment on UPlayerTrapReloadTimeModCalculation_C");
-static_assert(sizeof(UPlayerTrapReloadTimeModCalculation_C) == 0x11821C00, "Wrong size on UPlayerTrapReloadTimeModCalculation_C");
+static_assert(alignof(UPlayerTrapReloadTimeModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapReloadTimeModCalculation_C");
+static_assert(sizeof(UPlayerTrapReloadTimeModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapReloadTimeModCalculation_C");
 
 }
 

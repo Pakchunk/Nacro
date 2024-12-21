@@ -18,15 +18,15 @@ namespace SDK::Params
 {
 
 // Function OptionsMenuInput.OptionsMenuInput_C.Input Clicked__DelegateSignature
-// 0x0026 (0x0026 - 0x0000)
-struct alignas(0x26) OptionsMenuInput_C_Input_Clicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct OptionsMenuInput_C_Input_Clicked__DelegateSignature final
 {
 public:
 	int32                                         Number_in_List_0;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Is_Primary_Button;                                 // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuInput_C_Input_Clicked__DelegateSignature) == 0x000026, "Wrong alignment on OptionsMenuInput_C_Input_Clicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuInput_C_Input_Clicked__DelegateSignature) == 0x000026, "Wrong size on OptionsMenuInput_C_Input_Clicked__DelegateSignature");
+static_assert(alignof(OptionsMenuInput_C_Input_Clicked__DelegateSignature) == 0x000004, "Wrong alignment on OptionsMenuInput_C_Input_Clicked__DelegateSignature");
+static_assert(sizeof(OptionsMenuInput_C_Input_Clicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuInput_C_Input_Clicked__DelegateSignature");
 static_assert(offsetof(OptionsMenuInput_C_Input_Clicked__DelegateSignature, Number_in_List_0) == 0x000000, "Member 'OptionsMenuInput_C_Input_Clicked__DelegateSignature::Number_in_List_0' has a wrong offset!");
 static_assert(offsetof(OptionsMenuInput_C_Input_Clicked__DelegateSignature, Is_Primary_Button) == 0x000004, "Member 'OptionsMenuInput_C_Input_Clicked__DelegateSignature::Is_Primary_Button' has a wrong offset!");
 
@@ -42,7 +42,7 @@ static_assert(sizeof(OptionsMenuInput_C_UnbindClicked__DelegateSignature) == 0x0
 static_assert(offsetof(OptionsMenuInput_C_UnbindClicked__DelegateSignature, Number_in_List_0) == 0x000000, "Member 'OptionsMenuInput_C_UnbindClicked__DelegateSignature::Number_in_List_0' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.ExecuteUbergraph_OptionsMenuInput
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x01F0 (0x01F0 - 0x0000)
 struct OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput final
 {
 public:
@@ -61,16 +61,17 @@ public:
 	class UFortOptionsMenuInputData*              K2Node_DynamicCast_AsFort_Options_Menu_Input_Data; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0098(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A8(0x0018)()
-	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x00C0(0x11829280)(ConstParm)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0138(0x11827900)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0170(0x11829280)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x00C0(0x0078)(ConstParm)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0138(0x0034)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0170(0x0078)(ConstParm)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput) == 0x11829280, "Wrong alignment on OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput");
-static_assert(sizeof(OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput) == 0x11829280, "Wrong size on OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput");
+static_assert(alignof(OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput) == 0x000008, "Wrong alignment on OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput");
+static_assert(sizeof(OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput) == 0x0001F0, "Wrong size on OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput");
 static_assert(offsetof(OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput, EntryPoint) == 0x000000, "Member 'OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput::EntryPoint' has a wrong offset!");
 static_assert(offsetof(OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput, K2Node_Event_Callback) == 0x000008, "Member 'OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput::K2Node_Event_Callback' has a wrong offset!");
 static_assert(offsetof(OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput, K2Node_Event_bExpanded) == 0x000018, "Member 'OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput::K2Node_Event_bExpanded' has a wrong offset!");
@@ -102,73 +103,74 @@ static_assert(sizeof(OptionsMenuInput_C_BndEvt__IconTextButton_K2Node_ComponentB
 static_assert(offsetof(OptionsMenuInput_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenuInput_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.OnMouseEnter
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct OptionsMenuInput_C_OnMouseEnter final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuInput_C_OnMouseEnter) == 0x11829280, "Wrong alignment on OptionsMenuInput_C_OnMouseEnter");
-static_assert(sizeof(OptionsMenuInput_C_OnMouseEnter) == 0x11829280, "Wrong size on OptionsMenuInput_C_OnMouseEnter");
+static_assert(alignof(OptionsMenuInput_C_OnMouseEnter) == 0x000008, "Wrong alignment on OptionsMenuInput_C_OnMouseEnter");
+static_assert(sizeof(OptionsMenuInput_C_OnMouseEnter) == 0x0000B0, "Wrong size on OptionsMenuInput_C_OnMouseEnter");
 static_assert(offsetof(OptionsMenuInput_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'OptionsMenuInput_C_OnMouseEnter::MyGeometry' has a wrong offset!");
 static_assert(offsetof(OptionsMenuInput_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'OptionsMenuInput_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.OnMouseLeave
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct OptionsMenuInput_C_OnMouseLeave final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuInput_C_OnMouseLeave) == 0x11829280, "Wrong alignment on OptionsMenuInput_C_OnMouseLeave");
-static_assert(sizeof(OptionsMenuInput_C_OnMouseLeave) == 0x11829280, "Wrong size on OptionsMenuInput_C_OnMouseLeave");
+static_assert(alignof(OptionsMenuInput_C_OnMouseLeave) == 0x000008, "Wrong alignment on OptionsMenuInput_C_OnMouseLeave");
+static_assert(sizeof(OptionsMenuInput_C_OnMouseLeave) == 0x000078, "Wrong size on OptionsMenuInput_C_OnMouseLeave");
 static_assert(offsetof(OptionsMenuInput_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'OptionsMenuInput_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.SetData
-// 0x0015 (0x0015 - 0x0000)
-struct alignas(0x15) OptionsMenuInput_C_SetData final
+// 0x0010 (0x0010 - 0x0000)
+struct OptionsMenuInput_C_SetData final
 {
 public:
 	class UObject*                                InData;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonListView*                        OwningList;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuInput_C_SetData) == 0x000015, "Wrong alignment on OptionsMenuInput_C_SetData");
-static_assert(sizeof(OptionsMenuInput_C_SetData) == 0x000015, "Wrong size on OptionsMenuInput_C_SetData");
+static_assert(alignof(OptionsMenuInput_C_SetData) == 0x000008, "Wrong alignment on OptionsMenuInput_C_SetData");
+static_assert(sizeof(OptionsMenuInput_C_SetData) == 0x000010, "Wrong size on OptionsMenuInput_C_SetData");
 static_assert(offsetof(OptionsMenuInput_C_SetData, InData) == 0x000000, "Member 'OptionsMenuInput_C_SetData::InData' has a wrong offset!");
 static_assert(offsetof(OptionsMenuInput_C_SetData, OwningList) == 0x000008, "Member 'OptionsMenuInput_C_SetData::OwningList' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature
-// 0x0241 (0x0241 - 0x0000)
-struct alignas(0x241) OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature) == 0x000241, "Wrong alignment on OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature) == 0x000241, "Wrong size on OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature
-// 0x002C (0x002C - 0x0000)
-struct alignas(0x2C) OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature) == 0x00002C, "Wrong alignment on OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature) == 0x00002C, "Wrong size on OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.SetSelected
-// 0x0063 (0x0063 - 0x0000)
-struct alignas(0x63) OptionsMenuInput_C_SetSelected final
+// 0x0001 (0x0001 - 0x0000)
+struct OptionsMenuInput_C_SetSelected final
 {
 public:
 	bool                                          bSelected;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuInput_C_SetSelected) == 0x000063, "Wrong alignment on OptionsMenuInput_C_SetSelected");
-static_assert(sizeof(OptionsMenuInput_C_SetSelected) == 0x000063, "Wrong size on OptionsMenuInput_C_SetSelected");
+static_assert(alignof(OptionsMenuInput_C_SetSelected) == 0x000001, "Wrong alignment on OptionsMenuInput_C_SetSelected");
+static_assert(sizeof(OptionsMenuInput_C_SetSelected) == 0x000001, "Wrong size on OptionsMenuInput_C_SetSelected");
 static_assert(offsetof(OptionsMenuInput_C_SetSelected, bSelected) == 0x000000, "Member 'OptionsMenuInput_C_SetSelected::bSelected' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.SetIndexInList
@@ -195,25 +197,25 @@ static_assert(offsetof(OptionsMenuInput_C_SetExpanded, bExpanded) == 0x000000, "
 
 // Function OptionsMenuInput.OptionsMenuInput_C.RegisterOnClicked
 // 0x0010 (0x0010 - 0x0000)
-struct OptionsMenuInput_C_RegisterOnClicked final
+struct alignas(0x08) OptionsMenuInput_C_RegisterOnClicked final
 {
 public:
 	TDelegate<void(class UUserWidget* Widget)>    Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(OptionsMenuInput_C_RegisterOnClicked) == 0x000004, "Wrong alignment on OptionsMenuInput_C_RegisterOnClicked");
+static_assert(alignof(OptionsMenuInput_C_RegisterOnClicked) == 0x000008, "Wrong alignment on OptionsMenuInput_C_RegisterOnClicked");
 static_assert(sizeof(OptionsMenuInput_C_RegisterOnClicked) == 0x000010, "Wrong size on OptionsMenuInput_C_RegisterOnClicked");
 static_assert(offsetof(OptionsMenuInput_C_RegisterOnClicked, Callback) == 0x000000, "Member 'OptionsMenuInput_C_RegisterOnClicked::Callback' has a wrong offset!");
 
-// Function OptionsMenuInput.OptionsMenuInput_C.Center on Widget
-// 0x002F (0x002F - 0x0000)
-struct alignas(0x2F) OptionsMenuInput_C_Center_on_Widget final
+// Function OptionsMenuInput.OptionsMenuInput_C.Center On Widget
+// 0x0008 (0x0008 - 0x0000)
+struct OptionsMenuInput_C_Center_On_Widget final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuInput_C_Center_on_Widget) == 0x00002F, "Wrong alignment on OptionsMenuInput_C_Center_on_Widget");
-static_assert(sizeof(OptionsMenuInput_C_Center_on_Widget) == 0x00002F, "Wrong size on OptionsMenuInput_C_Center_on_Widget");
-static_assert(offsetof(OptionsMenuInput_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuInput_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(alignof(OptionsMenuInput_C_Center_On_Widget) == 0x000008, "Wrong alignment on OptionsMenuInput_C_Center_On_Widget");
+static_assert(sizeof(OptionsMenuInput_C_Center_On_Widget) == 0x000008, "Wrong size on OptionsMenuInput_C_Center_On_Widget");
+static_assert(offsetof(OptionsMenuInput_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuInput_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.Change Key
 // 0x0020 (0x0020 - 0x0000)
@@ -230,14 +232,14 @@ static_assert(offsetof(OptionsMenuInput_C_Change_Key, Primary_Key) == 0x000000, 
 static_assert(offsetof(OptionsMenuInput_C_Change_Key, Key_To_Sets) == 0x000008, "Member 'OptionsMenuInput_C_Change_Key::Key_To_Sets' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.GetData
-// 0x0048 (0x0048 - 0x0000)
-struct alignas(0x48) OptionsMenuInput_C_GetData final
+// 0x0008 (0x0008 - 0x0000)
+struct OptionsMenuInput_C_GetData final
 {
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuInput_C_GetData) == 0x000048, "Wrong alignment on OptionsMenuInput_C_GetData");
-static_assert(sizeof(OptionsMenuInput_C_GetData) == 0x000048, "Wrong size on OptionsMenuInput_C_GetData");
+static_assert(alignof(OptionsMenuInput_C_GetData) == 0x000008, "Wrong alignment on OptionsMenuInput_C_GetData");
+static_assert(sizeof(OptionsMenuInput_C_GetData) == 0x000008, "Wrong size on OptionsMenuInput_C_GetData");
 static_assert(offsetof(OptionsMenuInput_C_GetData, ReturnValue) == 0x000000, "Member 'OptionsMenuInput_C_GetData::ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.IsItemExpanded

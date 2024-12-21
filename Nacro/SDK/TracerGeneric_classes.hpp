@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TracerGeneric.TracerGeneric_C
-// 0x0000 (0x1182A000 - 0x1182A000)
-class ATracerGeneric_C : public AFortTracerBase
+// 0x0068 (0x0478 - 0x0410)
+class ATracerGeneric_C final : public AFortTracerBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	float                                         PreviousPlaneDotProd;                              // 0x0418(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bHasPlayedPassBySound;                             // 0x041C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41D[0x3];                                      // 0x041D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CachedDirectionVector;                             // 0x0420(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Start;                                             // 0x042C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                End;                                               // 0x0438(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CachedDirectionVector;                             // 0x0420(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Start;                                             // 0x042C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                End;                                               // 0x0438(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PassByRadiusMin;                                   // 0x0444(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PassByRadiusMax;                                   // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -59,8 +59,8 @@ public:
 		return GetDefaultObjImpl<ATracerGeneric_C>();
 	}
 };
-static_assert(alignof(ATracerGeneric_C) == 0x1182A000, "Wrong alignment on ATracerGeneric_C");
-static_assert(sizeof(ATracerGeneric_C) == 0x1182A000, "Wrong size on ATracerGeneric_C");
+static_assert(alignof(ATracerGeneric_C) == 0x000008, "Wrong alignment on ATracerGeneric_C");
+static_assert(sizeof(ATracerGeneric_C) == 0x000478, "Wrong size on ATracerGeneric_C");
 static_assert(offsetof(ATracerGeneric_C, UberGraphFrame) == 0x000410, "Member 'ATracerGeneric_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ATracerGeneric_C, PreviousPlaneDotProd) == 0x000418, "Member 'ATracerGeneric_C::PreviousPlaneDotProd' has a wrong offset!");
 static_assert(offsetof(ATracerGeneric_C, bHasPlayedPassBySound) == 0x00041C, "Member 'ATracerGeneric_C::bHasPlayedPassBySound' has a wrong offset!");

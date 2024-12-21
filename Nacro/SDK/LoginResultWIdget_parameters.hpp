@@ -33,19 +33,19 @@ static_assert(offsetof(LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget, C
 static_assert(offsetof(LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget, CallFunc_HasKeyboardFocus_ReturnValue) == 0x000018, "Member 'LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget::CallFunc_HasKeyboardFocus_ReturnValue' has a wrong offset!");
 
 // Function LoginResultWIdget.LoginResultWIdget_C.BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
-// 0x0026 (0x0026 - 0x0000)
-struct alignas(0x26) LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000026, "Wrong alignment on LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000026, "Wrong size on LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function LoginResultWIdget.LoginResultWIdget_C.SetTitle
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) LoginResultWIdget_C_SetTitle final
+// 0x0040 (0x0040 - 0x0000)
+struct LoginResultWIdget_C_SetTitle final
 {
 public:
 	class FText                                   Title;                                             // 0x0000(0x0018)(Parm)
@@ -57,8 +57,8 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginResultWIdget_C_SetTitle) == 0x0000E4, "Wrong alignment on LoginResultWIdget_C_SetTitle");
-static_assert(sizeof(LoginResultWIdget_C_SetTitle) == 0x0000E4, "Wrong size on LoginResultWIdget_C_SetTitle");
+static_assert(alignof(LoginResultWIdget_C_SetTitle) == 0x000008, "Wrong alignment on LoginResultWIdget_C_SetTitle");
+static_assert(sizeof(LoginResultWIdget_C_SetTitle) == 0x000040, "Wrong size on LoginResultWIdget_C_SetTitle");
 static_assert(offsetof(LoginResultWIdget_C_SetTitle, Title) == 0x000000, "Member 'LoginResultWIdget_C_SetTitle::Title' has a wrong offset!");
 static_assert(offsetof(LoginResultWIdget_C_SetTitle, bShowError) == 0x000018, "Member 'LoginResultWIdget_C_SetTitle::bShowError' has a wrong offset!");
 static_assert(offsetof(LoginResultWIdget_C_SetTitle, Temp_class_Variable) == 0x000020, "Member 'LoginResultWIdget_C_SetTitle::Temp_class_Variable' has a wrong offset!");

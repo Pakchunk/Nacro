@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function OutpostScreenCanEditRow.OutpostScreenCanEditRow_C.ExecuteUbergraph_OutpostScreenCanEditRow
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow final
+// 0x0010 (0x0010 - 0x0000)
+struct OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,21 +24,21 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow) == 0x0000E4, "Wrong alignment on OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow");
-static_assert(sizeof(OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow) == 0x0000E4, "Wrong size on OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow");
+static_assert(alignof(OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow) == 0x000008, "Wrong alignment on OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow");
+static_assert(sizeof(OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow) == 0x000010, "Wrong size on OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow");
 static_assert(offsetof(OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow, EntryPoint) == 0x000000, "Member 'OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow::EntryPoint' has a wrong offset!");
 static_assert(offsetof(OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow, CallFunc_GetSelected_ReturnValue) == 0x000004, "Member 'OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'OutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function OutpostScreenCanEditRow.OutpostScreenCanEditRow_C.BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature) == 0x0000E4, "Wrong alignment on OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature) == 0x0000E4, "Wrong size on OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OutpostScreenCanEditRow.OutpostScreenCanEditRow_C.Init

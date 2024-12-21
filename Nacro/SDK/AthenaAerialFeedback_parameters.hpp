@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function AthenaAerialFeedback.AthenaAerialFeedback_C.ExecuteUbergraph_AthenaAerialFeedback
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0138 (0x0138 - 0x0000)
 struct AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback final
 {
 public:
@@ -29,7 +29,7 @@ public:
 	class FText                                   Temp_text_Variable2;                               // 0x0020(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x003C(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x003C(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0108(0x0018)()
 	class FText                                   K2Node_Select2_Default;                            // 0x0120(0x0018)()
 };
-static_assert(alignof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x11827900, "Wrong alignment on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
-static_assert(sizeof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x11827900, "Wrong size on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
+static_assert(alignof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x000008, "Wrong alignment on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
+static_assert(sizeof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x000138, "Wrong size on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
 static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, EntryPoint) == 0x000000, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, Temp_byte_Variable) == 0x000004, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, Temp_text_Variable) == 0x000008, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::Temp_text_Variable' has a wrong offset!");
@@ -80,15 +80,15 @@ static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedb
 static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Select2_Default) == 0x000120, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Select2_Default' has a wrong offset!");
 
 // Function AthenaAerialFeedback.AthenaAerialFeedback_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AthenaAerialFeedback_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaAerialFeedback_C_Tick) == 0x11827900, "Wrong alignment on AthenaAerialFeedback_C_Tick");
-static_assert(sizeof(AthenaAerialFeedback_C_Tick) == 0x11827900, "Wrong size on AthenaAerialFeedback_C_Tick");
+static_assert(alignof(AthenaAerialFeedback_C_Tick) == 0x000004, "Wrong alignment on AthenaAerialFeedback_C_Tick");
+static_assert(sizeof(AthenaAerialFeedback_C_Tick) == 0x000038, "Wrong size on AthenaAerialFeedback_C_Tick");
 static_assert(offsetof(AthenaAerialFeedback_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaAerialFeedback_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaAerialFeedback_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaAerialFeedback_C_Tick::InDeltaTime' has a wrong offset!");
 

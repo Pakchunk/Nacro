@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass RadialPickerItem.RadialPickerItem_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0290 - 0x0238)
 class URadialPickerItem_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          BorderItemBorder;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image;                                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageItemNotSelected;                              // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<URadialPickerItem_C>();
 	}
 };
-static_assert(alignof(URadialPickerItem_C) == 0x322CBBB8, "Wrong alignment on URadialPickerItem_C");
-static_assert(sizeof(URadialPickerItem_C) == 0x322CBBB8, "Wrong size on URadialPickerItem_C");
+static_assert(alignof(URadialPickerItem_C) == 0x000008, "Wrong alignment on URadialPickerItem_C");
+static_assert(sizeof(URadialPickerItem_C) == 0x000290, "Wrong size on URadialPickerItem_C");
 static_assert(offsetof(URadialPickerItem_C, UberGraphFrame) == 0x000238, "Member 'URadialPickerItem_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URadialPickerItem_C, BorderItemBorder) == 0x000240, "Member 'URadialPickerItem_C::BorderItemBorder' has a wrong offset!");
 static_assert(offsetof(URadialPickerItem_C, Image) == 0x000248, "Member 'URadialPickerItem_C::Image' has a wrong offset!");

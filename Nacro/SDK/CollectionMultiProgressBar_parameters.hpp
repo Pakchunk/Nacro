@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 #include "UMG_structs.hpp"
+#include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -19,18 +19,18 @@ namespace SDK::Params
 {
 
 // Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.ExecuteUbergraph_CollectionMultiProgressBar
-// 0x0083 (0x0083 - 0x0000)
-struct alignas(0x83) CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar final
+// 0x0004 (0x0004 - 0x0000)
+struct CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar) == 0x000083, "Wrong alignment on CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar");
-static_assert(sizeof(CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar) == 0x000083, "Wrong size on CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar");
+static_assert(alignof(CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar) == 0x000004, "Wrong alignment on CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar");
+static_assert(sizeof(CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar) == 0x000004, "Wrong size on CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar");
 static_assert(offsetof(CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar, EntryPoint) == 0x000000, "Member 'CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar::EntryPoint' has a wrong offset!");
 
 // Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.Setup
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct CollectionMultiProgressBar_C_Setup final
 {
 public:
@@ -38,8 +38,9 @@ public:
 	int32                                         AchievedCount;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x001C(0x11829280)(NoDestructor)
-	struct FCollectionMissionBadgeDisplayInfo     CallFunc_Array_Get_Item;                           // 0x0028(0x11821D80)(HasGetValueTypeHash)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x001C(0x0008)(NoDestructor)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCollectionMissionBadgeDisplayInfo     CallFunc_Array_Get_Item;                           // 0x0028(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,16 +60,16 @@ public:
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0088(0x322CBBB8)()
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize2;                 // 0x0118(0x11829280)(NoDestructor)
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0088(0x0090)()
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize2;                 // 0x0118(0x0008)(NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue2;             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCollectionBar_C*                       CallFunc_Create_ReturnValue2;                      // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAchievedCountInRange_bIsInRange;        // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue2;     // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionMultiProgressBar_C_Setup) == 0x11829280, "Wrong alignment on CollectionMultiProgressBar_C_Setup");
-static_assert(sizeof(CollectionMultiProgressBar_C_Setup) == 0x11829280, "Wrong size on CollectionMultiProgressBar_C_Setup");
+static_assert(alignof(CollectionMultiProgressBar_C_Setup) == 0x000008, "Wrong alignment on CollectionMultiProgressBar_C_Setup");
+static_assert(sizeof(CollectionMultiProgressBar_C_Setup) == 0x000140, "Wrong size on CollectionMultiProgressBar_C_Setup");
 static_assert(offsetof(CollectionMultiProgressBar_C_Setup, InBarInfos) == 0x000000, "Member 'CollectionMultiProgressBar_C_Setup::InBarInfos' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_Setup, AchievedCount) == 0x000010, "Member 'CollectionMultiProgressBar_C_Setup::AchievedCount' has a wrong offset!");
 static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionFocusWidget.MissionFocusWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class UMissionFocusWidget_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       HeaderText;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UProgressBar*                           KillPointsBar;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TimerText;                                         // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UMissionFocusWidget_C>();
 	}
 };
-static_assert(alignof(UMissionFocusWidget_C) == 0x322CBBB8, "Wrong alignment on UMissionFocusWidget_C");
-static_assert(sizeof(UMissionFocusWidget_C) == 0x322CBBB8, "Wrong size on UMissionFocusWidget_C");
+static_assert(alignof(UMissionFocusWidget_C) == 0x000008, "Wrong alignment on UMissionFocusWidget_C");
+static_assert(sizeof(UMissionFocusWidget_C) == 0x000270, "Wrong size on UMissionFocusWidget_C");
 static_assert(offsetof(UMissionFocusWidget_C, UberGraphFrame) == 0x000238, "Member 'UMissionFocusWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionFocusWidget_C, HeaderText) == 0x000240, "Member 'UMissionFocusWidget_C::HeaderText' has a wrong offset!");
 static_assert(offsetof(UMissionFocusWidget_C, KillPointsBar) == 0x000248, "Member 'UMissionFocusWidget_C::KillPointsBar' has a wrong offset!");

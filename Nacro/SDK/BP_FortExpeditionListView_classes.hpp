@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionListView.BP_FortExpeditionListView_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0298 - 0x0270)
 class UBP_FortExpeditionListView_C final : public UFortExpeditionListViewWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	UMulticastDelegateProperty_                   OnItemClicked;                                     // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnItemHovered;                                     // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UBP_FortExpeditionListView_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionListView_C) == 0x322CBBB8, "Wrong alignment on UBP_FortExpeditionListView_C");
-static_assert(sizeof(UBP_FortExpeditionListView_C) == 0x322CBBB8, "Wrong size on UBP_FortExpeditionListView_C");
+static_assert(alignof(UBP_FortExpeditionListView_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionListView_C");
+static_assert(sizeof(UBP_FortExpeditionListView_C) == 0x000298, "Wrong size on UBP_FortExpeditionListView_C");
 static_assert(offsetof(UBP_FortExpeditionListView_C, UberGraphFrame) == 0x000270, "Member 'UBP_FortExpeditionListView_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionListView_C, OnItemClicked) == 0x000278, "Member 'UBP_FortExpeditionListView_C::OnItemClicked' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionListView_C, OnItemHovered) == 0x000288, "Member 'UBP_FortExpeditionListView_C::OnItemHovered' has a wrong offset!");

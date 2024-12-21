@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function PBWA_S1_Solid.PBWA_S1_Solid_C.ExecuteUbergraph_PBWA_S1_Solid
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid final
+// 0x0004 (0x0004 - 0x0000)
+struct PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid) == 0x0000E4, "Wrong alignment on PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid");
-static_assert(sizeof(PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid) == 0x0000E4, "Wrong size on PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid");
+static_assert(alignof(PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid) == 0x000004, "Wrong alignment on PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid");
+static_assert(sizeof(PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid) == 0x000004, "Wrong size on PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid");
 static_assert(offsetof(PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid, EntryPoint) == 0x000000, "Member 'PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid::EntryPoint' has a wrong offset!");
 
 // Function PBWA_S1_Solid.PBWA_S1_Solid_C.UserConstructionScript

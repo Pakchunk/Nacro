@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.ExecuteUbergraph_ItemCraftingIngredientList
-// 0x0C14 (0x0C14 - 0x0000)
-struct alignas(0xC14) ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList final
+// 0x0018 (0x0018 - 0x0000)
+struct ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -27,8 +27,8 @@ public:
 	class UFortItemQuantityListEntryBase*         K2Node_Event_ListEntry;                            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList) == 0x000C14, "Wrong alignment on ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList");
-static_assert(sizeof(ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList) == 0x000C14, "Wrong size on ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList");
+static_assert(alignof(ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList) == 0x000008, "Wrong alignment on ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList");
+static_assert(sizeof(ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList) == 0x000018, "Wrong size on ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList");
 static_assert(offsetof(ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList, EntryPoint) == 0x000000, "Member 'ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList, K2Node_Event_IsDesignTime) == 0x000004, "Member 'ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList, K2Node_Event_ListEntry) == 0x000008, "Member 'ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList::K2Node_Event_ListEntry' has a wrong offset!");
@@ -221,7 +221,7 @@ static_assert(offsetof(ItemCraftingIngredientList_C_SetItemToCompare, ItemToComp
 static_assert(offsetof(ItemCraftingIngredientList_C_SetItemToCompare, CallFunc_GetIngredients_ReturnIngredients) == 0x000008, "Member 'ItemCraftingIngredientList_C_SetItemToCompare::CallFunc_GetIngredients_ReturnIngredients' has a wrong offset!");
 
 // Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.GetIngredients
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct ItemCraftingIngredientList_C_GetIngredients final
 {
 public:
@@ -234,18 +234,18 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSchematicRequirement>          CallFunc_GetSchematicRequirements_Requirements;    // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FSchematicRequirement                  CallFunc_Array_Get_Item;                           // 0x0050(0x11821780)(NoDestructor)
+	struct FSchematicRequirement                  CallFunc_Array_Get_Item;                           // 0x0050(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x0068(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x0068(0x0028)()
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemCraftingIngredientList_C_GetIngredients) == 0x11821780, "Wrong alignment on ItemCraftingIngredientList_C_GetIngredients");
-static_assert(sizeof(ItemCraftingIngredientList_C_GetIngredients) == 0x11821780, "Wrong size on ItemCraftingIngredientList_C_GetIngredients");
+static_assert(alignof(ItemCraftingIngredientList_C_GetIngredients) == 0x000008, "Wrong alignment on ItemCraftingIngredientList_C_GetIngredients");
+static_assert(sizeof(ItemCraftingIngredientList_C_GetIngredients) == 0x0000A0, "Wrong size on ItemCraftingIngredientList_C_GetIngredients");
 static_assert(offsetof(ItemCraftingIngredientList_C_GetIngredients, Item) == 0x000000, "Member 'ItemCraftingIngredientList_C_GetIngredients::Item' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientList_C_GetIngredients, ReturnIngredients) == 0x000008, "Member 'ItemCraftingIngredientList_C_GetIngredients::ReturnIngredients' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientList_C_GetIngredients, Ingredients) == 0x000018, "Member 'ItemCraftingIngredientList_C_GetIngredients::Ingredients' has a wrong offset!");

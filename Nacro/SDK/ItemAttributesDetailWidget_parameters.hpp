@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.ExecuteUbergraph_ItemAttributesDetailWidget
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget final
+// 0x0058 (0x0058 - 0x0000)
+struct alignas(0x08) ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -40,8 +40,8 @@ public:
 	TDelegate<void(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget) == 0x0000E4, "Wrong alignment on ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget");
-static_assert(sizeof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget) == 0x0000E4, "Wrong size on ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget");
+static_assert(alignof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget) == 0x000008, "Wrong alignment on ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget");
+static_assert(sizeof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget) == 0x000058, "Wrong size on ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget");
 static_assert(offsetof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget, EntryPoint) == 0x000000, "Member 'ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget, K2Node_CustomEvent_bItemChanged2) == 0x000018, "Member 'ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget::K2Node_CustomEvent_bItemChanged2' has a wrong offset!");
@@ -74,16 +74,16 @@ static_assert(offsetof(ItemAttributesDetailWidget_C_HandleItemToCompareWithChang
 static_assert(offsetof(ItemAttributesDetailWidget_C_HandleItemToCompareWithChanged, bIngredientsChanged) == 0x000002, "Member 'ItemAttributesDetailWidget_C_HandleItemToCompareWithChanged::bIngredientsChanged' has a wrong offset!");
 
 // Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.HandleItemToDetailChanged
-// 0x005C (0x005C - 0x0000)
-struct alignas(0x5C) ItemAttributesDetailWidget_C_HandleItemToDetailChanged final
+// 0x0003 (0x0003 - 0x0000)
+struct ItemAttributesDetailWidget_C_HandleItemToDetailChanged final
 {
 public:
 	bool                                          bItemChanged;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bAmmoChanged;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bIngredientsChanged;                               // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemAttributesDetailWidget_C_HandleItemToDetailChanged) == 0x00005C, "Wrong alignment on ItemAttributesDetailWidget_C_HandleItemToDetailChanged");
-static_assert(sizeof(ItemAttributesDetailWidget_C_HandleItemToDetailChanged) == 0x00005C, "Wrong size on ItemAttributesDetailWidget_C_HandleItemToDetailChanged");
+static_assert(alignof(ItemAttributesDetailWidget_C_HandleItemToDetailChanged) == 0x000001, "Wrong alignment on ItemAttributesDetailWidget_C_HandleItemToDetailChanged");
+static_assert(sizeof(ItemAttributesDetailWidget_C_HandleItemToDetailChanged) == 0x000003, "Wrong size on ItemAttributesDetailWidget_C_HandleItemToDetailChanged");
 static_assert(offsetof(ItemAttributesDetailWidget_C_HandleItemToDetailChanged, bItemChanged) == 0x000000, "Member 'ItemAttributesDetailWidget_C_HandleItemToDetailChanged::bItemChanged' has a wrong offset!");
 static_assert(offsetof(ItemAttributesDetailWidget_C_HandleItemToDetailChanged, bAmmoChanged) == 0x000001, "Member 'ItemAttributesDetailWidget_C_HandleItemToDetailChanged::bAmmoChanged' has a wrong offset!");
 static_assert(offsetof(ItemAttributesDetailWidget_C_HandleItemToDetailChanged, bIngredientsChanged) == 0x000002, "Member 'ItemAttributesDetailWidget_C_HandleItemToDetailChanged::bIngredientsChanged' has a wrong offset!");

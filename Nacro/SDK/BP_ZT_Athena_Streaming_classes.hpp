@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ZT_Athena_Streaming.BP_ZT_Athena_Streaming_C
-// 0x0000 (0x11821C00 - 0x11821C00)
+// 0x0000 (0x0270 - 0x0270)
 class UBP_ZT_Athena_Streaming_C final : public UFortZoneTheme
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBP_ZT_Athena_Streaming_C>();
 	}
 };
-static_assert(alignof(UBP_ZT_Athena_Streaming_C) == 0x11821C00, "Wrong alignment on UBP_ZT_Athena_Streaming_C");
-static_assert(sizeof(UBP_ZT_Athena_Streaming_C) == 0x11821C00, "Wrong size on UBP_ZT_Athena_Streaming_C");
+static_assert(alignof(UBP_ZT_Athena_Streaming_C) == 0x000008, "Wrong alignment on UBP_ZT_Athena_Streaming_C");
+static_assert(sizeof(UBP_ZT_Athena_Streaming_C) == 0x000270, "Wrong size on UBP_ZT_Athena_Streaming_C");
 
 }
 

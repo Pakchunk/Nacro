@@ -35,7 +35,7 @@ static_assert(offsetof(DayWidget_C_ExecuteUbergraph_DayWidget, K2Node_CreateDele
 static_assert(offsetof(DayWidget_C_ExecuteUbergraph_DayWidget, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'DayWidget_C_ExecuteUbergraph_DayWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function DayWidget.DayWidget_C.Update
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct DayWidget_C_Update final
 {
 public:
@@ -49,12 +49,12 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
 };
-static_assert(alignof(DayWidget_C_Update) == 0x11821D80, "Wrong alignment on DayWidget_C_Update");
-static_assert(sizeof(DayWidget_C_Update) == 0x11821D80, "Wrong size on DayWidget_C_Update");
+static_assert(alignof(DayWidget_C_Update) == 0x000008, "Wrong alignment on DayWidget_C_Update");
+static_assert(sizeof(DayWidget_C_Update) == 0x0000A8, "Wrong size on DayWidget_C_Update");
 static_assert(offsetof(DayWidget_C_Update, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'DayWidget_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DayWidget_C_Update, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'DayWidget_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(DayWidget_C_Update, CallFunc_GetGameStateZone_ReturnValue) == 0x000010, "Member 'DayWidget_C_Update::CallFunc_GetGameStateZone_ReturnValue' has a wrong offset!");

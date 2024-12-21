@@ -71,14 +71,14 @@ static_assert(offsetof(AthenaStatsTab_C_ExecuteUbergraph_AthenaStatsTab, CallFun
 static_assert(offsetof(AthenaStatsTab_C_ExecuteUbergraph_AthenaStatsTab, CallFunc_Map_Find_ReturnValue3) == 0x0000C0, "Member 'AthenaStatsTab_C_ExecuteUbergraph_AthenaStatsTab::CallFunc_Map_Find_ReturnValue3' has a wrong offset!");
 
 // Function AthenaStatsTab.AthenaStatsTab_C.BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature
-// 0x0036 (0x0036 - 0x0000)
-struct alignas(0x36) AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct alignas(0x08) AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000036, "Wrong alignment on AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
-static_assert(sizeof(AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000036, "Wrong size on AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+static_assert(alignof(AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000008, "Wrong alignment on AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+static_assert(sizeof(AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000008, "Wrong size on AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
 static_assert(offsetof(AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature, TabId) == 0x000000, "Member 'AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature::TabId' has a wrong offset!");
 
 // Function AthenaStatsTab.AthenaStatsTab_C.OnQueryFinished
@@ -93,13 +93,13 @@ static_assert(sizeof(AthenaStatsTab_C_OnQueryFinished) == 0x000001, "Wrong size 
 static_assert(offsetof(AthenaStatsTab_C_OnQueryFinished, bWasSuccessful) == 0x000000, "Member 'AthenaStatsTab_C_OnQueryFinished::bWasSuccessful' has a wrong offset!");
 
 // Function AthenaStatsTab.AthenaStatsTab_C.UpdateStats
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct AthenaStatsTab_C_UpdateStats final
 {
 public:
 	int32                                         CallFunc_GetStatValue_ReturnValue;                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_MakeTimespan_ReturnValue;                 // 0x0008(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_MakeTimespan_ReturnValue;                 // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetStatValue_ReturnValue2;                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_FormatStatValueAsElapsedTime_ReturnValue; // 0x0018(0x0018)()
@@ -120,8 +120,8 @@ public:
 	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue5;              // 0x00E0(0x0018)()
 };
-static_assert(alignof(AthenaStatsTab_C_UpdateStats) == 0x11821300, "Wrong alignment on AthenaStatsTab_C_UpdateStats");
-static_assert(sizeof(AthenaStatsTab_C_UpdateStats) == 0x11821300, "Wrong size on AthenaStatsTab_C_UpdateStats");
+static_assert(alignof(AthenaStatsTab_C_UpdateStats) == 0x000008, "Wrong alignment on AthenaStatsTab_C_UpdateStats");
+static_assert(sizeof(AthenaStatsTab_C_UpdateStats) == 0x0000F8, "Wrong size on AthenaStatsTab_C_UpdateStats");
 static_assert(offsetof(AthenaStatsTab_C_UpdateStats, CallFunc_GetStatValue_ReturnValue) == 0x000000, "Member 'AthenaStatsTab_C_UpdateStats::CallFunc_GetStatValue_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaStatsTab_C_UpdateStats, CallFunc_MakeTimespan_ReturnValue) == 0x000008, "Member 'AthenaStatsTab_C_UpdateStats::CallFunc_MakeTimespan_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaStatsTab_C_UpdateStats, CallFunc_GetStatValue_ReturnValue2) == 0x000010, "Member 'AthenaStatsTab_C_UpdateStats::CallFunc_GetStatValue_ReturnValue2' has a wrong offset!");

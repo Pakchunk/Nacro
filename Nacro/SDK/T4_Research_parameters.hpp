@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function T4_Research.T4_Research_C.ExecuteUbergraph_T4_Research
-// 0x2EED1210 (0x2EED1210 - 0x0000)
-struct alignas(0x2EED1210) T4_Research_C_ExecuteUbergraph_T4_Research final
+// 0x0010 (0x0010 - 0x0000)
+struct T4_Research_C_ExecuteUbergraph_T4_Research final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,8 +24,8 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(T4_Research_C_ExecuteUbergraph_T4_Research) == 0x2EED1210, "Wrong alignment on T4_Research_C_ExecuteUbergraph_T4_Research");
-static_assert(sizeof(T4_Research_C_ExecuteUbergraph_T4_Research) == 0x2EED1210, "Wrong size on T4_Research_C_ExecuteUbergraph_T4_Research");
+static_assert(alignof(T4_Research_C_ExecuteUbergraph_T4_Research) == 0x000008, "Wrong alignment on T4_Research_C_ExecuteUbergraph_T4_Research");
+static_assert(sizeof(T4_Research_C_ExecuteUbergraph_T4_Research) == 0x000010, "Wrong size on T4_Research_C_ExecuteUbergraph_T4_Research");
 static_assert(offsetof(T4_Research_C_ExecuteUbergraph_T4_Research, EntryPoint) == 0x000000, "Member 'T4_Research_C_ExecuteUbergraph_T4_Research::EntryPoint' has a wrong offset!");
 static_assert(offsetof(T4_Research_C_ExecuteUbergraph_T4_Research, K2Node_Event_IsDesignTime) == 0x000004, "Member 'T4_Research_C_ExecuteUbergraph_T4_Research::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(T4_Research_C_ExecuteUbergraph_T4_Research, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'T4_Research_C_ExecuteUbergraph_T4_Research::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");

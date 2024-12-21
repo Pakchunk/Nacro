@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function StickyNotification.StickyNotification_C.ExecuteUbergraph_StickyNotification
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct StickyNotification_C_ExecuteUbergraph_StickyNotification final
 {
 public:
@@ -25,17 +25,18 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortBaseButton*                        K2Node_ComponentBoundEvent_Button2;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0018(0x11829280)(ConstParm)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0090(0x11827900)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00C8(0x11829280)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0018(0x0078)(ConstParm)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0090(0x0034)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00C8(0x0078)(ConstParm)
 	bool                                          K2Node_ComponentBoundEvent_Is_Hovered;             // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_142[0x6];                                      // 0x0142(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortBaseButton*                        K2Node_ComponentBoundEvent_Button;                 // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StickyNotification_C_ExecuteUbergraph_StickyNotification) == 0x11829280, "Wrong alignment on StickyNotification_C_ExecuteUbergraph_StickyNotification");
-static_assert(sizeof(StickyNotification_C_ExecuteUbergraph_StickyNotification) == 0x11829280, "Wrong size on StickyNotification_C_ExecuteUbergraph_StickyNotification");
+static_assert(alignof(StickyNotification_C_ExecuteUbergraph_StickyNotification) == 0x000008, "Wrong alignment on StickyNotification_C_ExecuteUbergraph_StickyNotification");
+static_assert(sizeof(StickyNotification_C_ExecuteUbergraph_StickyNotification) == 0x000158, "Wrong size on StickyNotification_C_ExecuteUbergraph_StickyNotification");
 static_assert(offsetof(StickyNotification_C_ExecuteUbergraph_StickyNotification, EntryPoint) == 0x000000, "Member 'StickyNotification_C_ExecuteUbergraph_StickyNotification::EntryPoint' has a wrong offset!");
 static_assert(offsetof(StickyNotification_C_ExecuteUbergraph_StickyNotification, K2Node_ComponentBoundEvent_Button2) == 0x000008, "Member 'StickyNotification_C_ExecuteUbergraph_StickyNotification::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(StickyNotification_C_ExecuteUbergraph_StickyNotification, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'StickyNotification_C_ExecuteUbergraph_StickyNotification::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -70,27 +71,28 @@ static_assert(sizeof(StickyNotification_C_BndEvt__ButtonIconText_Go_K2Node_Compo
 static_assert(offsetof(StickyNotification_C_BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_1161_On_Mouse_Hovered_Changed__DelegateSignature, Is_Hovered) == 0x000000, "Member 'StickyNotification_C_BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_1161_On_Mouse_Hovered_Changed__DelegateSignature::Is_Hovered' has a wrong offset!");
 
 // Function StickyNotification.StickyNotification_C.OnMouseEnter
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct StickyNotification_C_OnMouseEnter final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(StickyNotification_C_OnMouseEnter) == 0x11829280, "Wrong alignment on StickyNotification_C_OnMouseEnter");
-static_assert(sizeof(StickyNotification_C_OnMouseEnter) == 0x11829280, "Wrong size on StickyNotification_C_OnMouseEnter");
+static_assert(alignof(StickyNotification_C_OnMouseEnter) == 0x000008, "Wrong alignment on StickyNotification_C_OnMouseEnter");
+static_assert(sizeof(StickyNotification_C_OnMouseEnter) == 0x0000B0, "Wrong size on StickyNotification_C_OnMouseEnter");
 static_assert(offsetof(StickyNotification_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'StickyNotification_C_OnMouseEnter::MyGeometry' has a wrong offset!");
 static_assert(offsetof(StickyNotification_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'StickyNotification_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function StickyNotification.StickyNotification_C.OnMouseLeave
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct StickyNotification_C_OnMouseLeave final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(StickyNotification_C_OnMouseLeave) == 0x11829280, "Wrong alignment on StickyNotification_C_OnMouseLeave");
-static_assert(sizeof(StickyNotification_C_OnMouseLeave) == 0x11829280, "Wrong size on StickyNotification_C_OnMouseLeave");
+static_assert(alignof(StickyNotification_C_OnMouseLeave) == 0x000008, "Wrong alignment on StickyNotification_C_OnMouseLeave");
+static_assert(sizeof(StickyNotification_C_OnMouseLeave) == 0x000078, "Wrong size on StickyNotification_C_OnMouseLeave");
 static_assert(offsetof(StickyNotification_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'StickyNotification_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function StickyNotification.StickyNotification_C.BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_826_FortBaseButtonClicked__DelegateSignature

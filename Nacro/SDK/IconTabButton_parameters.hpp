@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function IconTabButton.IconTabButton_C.ExecuteUbergraph_IconTabButton
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct IconTabButton_C_ExecuteUbergraph_IconTabButton final
 {
 public:
@@ -29,12 +29,12 @@ public:
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0020(0x1182E980)(ConstParm)
+	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0020(0x00A8)(ConstParm)
 	bool                                          CallFunc_GetSelected_ReturnValue;                  // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetSelected_ReturnValue2;                 // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(IconTabButton_C_ExecuteUbergraph_IconTabButton) == 0x1182E980, "Wrong alignment on IconTabButton_C_ExecuteUbergraph_IconTabButton");
-static_assert(sizeof(IconTabButton_C_ExecuteUbergraph_IconTabButton) == 0x1182E980, "Wrong size on IconTabButton_C_ExecuteUbergraph_IconTabButton");
+static_assert(alignof(IconTabButton_C_ExecuteUbergraph_IconTabButton) == 0x000008, "Wrong alignment on IconTabButton_C_ExecuteUbergraph_IconTabButton");
+static_assert(sizeof(IconTabButton_C_ExecuteUbergraph_IconTabButton) == 0x0000D0, "Wrong size on IconTabButton_C_ExecuteUbergraph_IconTabButton");
 static_assert(offsetof(IconTabButton_C_ExecuteUbergraph_IconTabButton, EntryPoint) == 0x000000, "Member 'IconTabButton_C_ExecuteUbergraph_IconTabButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(IconTabButton_C_ExecuteUbergraph_IconTabButton, CallFunc_GetCurrentTextStyleClass_ReturnValue) == 0x000008, "Member 'IconTabButton_C_ExecuteUbergraph_IconTabButton::CallFunc_GetCurrentTextStyleClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IconTabButton_C_ExecuteUbergraph_IconTabButton, CallFunc_GetCurrentTextStyleClass_ReturnValue2) == 0x000010, "Member 'IconTabButton_C_ExecuteUbergraph_IconTabButton::CallFunc_GetCurrentTextStyleClass_ReturnValue2' has a wrong offset!");
@@ -45,14 +45,14 @@ static_assert(offsetof(IconTabButton_C_ExecuteUbergraph_IconTabButton, CallFunc_
 static_assert(offsetof(IconTabButton_C_ExecuteUbergraph_IconTabButton, CallFunc_GetSelected_ReturnValue2) == 0x0000C9, "Member 'IconTabButton_C_ExecuteUbergraph_IconTabButton::CallFunc_GetSelected_ReturnValue2' has a wrong offset!");
 
 // Function IconTabButton.IconTabButton_C.SetTabLabelInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct IconTabButton_C_SetTabLabelInfo final
 {
 public:
-	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(IconTabButton_C_SetTabLabelInfo) == 0x1182E980, "Wrong alignment on IconTabButton_C_SetTabLabelInfo");
-static_assert(sizeof(IconTabButton_C_SetTabLabelInfo) == 0x1182E980, "Wrong size on IconTabButton_C_SetTabLabelInfo");
+static_assert(alignof(IconTabButton_C_SetTabLabelInfo) == 0x000008, "Wrong alignment on IconTabButton_C_SetTabLabelInfo");
+static_assert(sizeof(IconTabButton_C_SetTabLabelInfo) == 0x0000A8, "Wrong size on IconTabButton_C_SetTabLabelInfo");
 static_assert(offsetof(IconTabButton_C_SetTabLabelInfo, TabLabelInfo) == 0x000000, "Member 'IconTabButton_C_SetTabLabelInfo::TabLabelInfo' has a wrong offset!");
 
 // Function IconTabButton.IconTabButton_C.PreConstruct
@@ -90,14 +90,14 @@ static_assert(offsetof(IconTabButton_C_Set_Text, CallFunc_BooleanAND_ReturnValue
 static_assert(offsetof(IconTabButton_C_Set_Text, CallFunc_Create_Basic_Tooltip_Output) == 0x000030, "Member 'IconTabButton_C_Set_Text::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
 // Function IconTabButton.IconTabButton_C.Set Icon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct IconTabButton_C_Set_Icon final
 {
 public:
-	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x322CBBB8)(Parm)
+	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0090)(Parm)
 };
-static_assert(alignof(IconTabButton_C_Set_Icon) == 0x11827900, "Wrong alignment on IconTabButton_C_Set_Icon");
-static_assert(sizeof(IconTabButton_C_Set_Icon) == 0x11827900, "Wrong size on IconTabButton_C_Set_Icon");
+static_assert(alignof(IconTabButton_C_Set_Icon) == 0x000008, "Wrong alignment on IconTabButton_C_Set_Icon");
+static_assert(sizeof(IconTabButton_C_Set_Icon) == 0x000090, "Wrong size on IconTabButton_C_Set_Icon");
 static_assert(offsetof(IconTabButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'IconTabButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
 // Function IconTabButton.IconTabButton_C.SetTutorialBorderStyle
@@ -112,8 +112,8 @@ static_assert(sizeof(IconTabButton_C_SetTutorialBorderStyle) == 0x000008, "Wrong
 static_assert(offsetof(IconTabButton_C_SetTutorialBorderStyle, BorderStyle) == 0x000000, "Member 'IconTabButton_C_SetTutorialBorderStyle::BorderStyle' has a wrong offset!");
 
 // Function IconTabButton.IconTabButton_C.Update Bang State
-// 0x0090 (0x0090 - 0x0000)
-struct alignas(0x90) IconTabButton_C_Update_Bang_State final
+// 0x0004 (0x0004 - 0x0000)
+struct IconTabButton_C_Update_Bang_State final
 {
 public:
 	bool                                          bBangEnabled_0;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -121,8 +121,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(IconTabButton_C_Update_Bang_State) == 0x000090, "Wrong alignment on IconTabButton_C_Update_Bang_State");
-static_assert(sizeof(IconTabButton_C_Update_Bang_State) == 0x000090, "Wrong size on IconTabButton_C_Update_Bang_State");
+static_assert(alignof(IconTabButton_C_Update_Bang_State) == 0x000001, "Wrong alignment on IconTabButton_C_Update_Bang_State");
+static_assert(sizeof(IconTabButton_C_Update_Bang_State) == 0x000004, "Wrong size on IconTabButton_C_Update_Bang_State");
 static_assert(offsetof(IconTabButton_C_Update_Bang_State, bBangEnabled_0) == 0x000000, "Member 'IconTabButton_C_Update_Bang_State::bBangEnabled_0' has a wrong offset!");
 static_assert(offsetof(IconTabButton_C_Update_Bang_State, CallFunc_GetIsEnabled_ReturnValue) == 0x000001, "Member 'IconTabButton_C_Update_Bang_State::CallFunc_GetIsEnabled_ReturnValue' has a wrong offset!");
 static_assert(offsetof(IconTabButton_C_Update_Bang_State, CallFunc_BooleanAND_ReturnValue) == 0x000002, "Member 'IconTabButton_C_Update_Bang_State::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");

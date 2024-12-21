@@ -19,12 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
-#pragma pack(push, 0x1)
-class alignas(0x1182EB00) APlayerPawn_Athena_Generic_Parent_C : public AFortPlayerPawnAthena
+// 0x00C0 (0x1B50 - 0x1A90)
+class APlayerPawn_Athena_Generic_Parent_C : public AFortPlayerPawnAthena
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1A90(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1A90(0x0008)(Transient, DuplicateTransient)
 	TArray<class UMaterialInterface*>             Default_Weapon_Materials;                          // 0x1A98(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>       PawnBackpackMaterials;                             // 0x1AA8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>       PawnHatMaterials;                                  // 0x1AB8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -56,9 +55,8 @@ public:
 		return GetDefaultObjImpl<APlayerPawn_Athena_Generic_Parent_C>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(APlayerPawn_Athena_Generic_Parent_C) == 0x1182EB00, "Wrong alignment on APlayerPawn_Athena_Generic_Parent_C");
-static_assert(sizeof(APlayerPawn_Athena_Generic_Parent_C) == 0x1182EB00, "Wrong size on APlayerPawn_Athena_Generic_Parent_C");
+static_assert(alignof(APlayerPawn_Athena_Generic_Parent_C) == 0x000010, "Wrong alignment on APlayerPawn_Athena_Generic_Parent_C");
+static_assert(sizeof(APlayerPawn_Athena_Generic_Parent_C) == 0x001B50, "Wrong size on APlayerPawn_Athena_Generic_Parent_C");
 static_assert(offsetof(APlayerPawn_Athena_Generic_Parent_C, UberGraphFrame) == 0x001A90, "Member 'APlayerPawn_Athena_Generic_Parent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Athena_Generic_Parent_C, Default_Weapon_Materials) == 0x001A98, "Member 'APlayerPawn_Athena_Generic_Parent_C::Default_Weapon_Materials' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Athena_Generic_Parent_C, PawnBackpackMaterials) == 0x001AA8, "Member 'APlayerPawn_Athena_Generic_Parent_C::PawnBackpackMaterials' has a wrong offset!");

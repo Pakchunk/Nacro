@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function WebPurchase.WebPurchase_C.ExecuteUbergraph_WebPurchase
-// 0x0026 (0x0026 - 0x0000)
-struct alignas(0x26) WebPurchase_C_ExecuteUbergraph_WebPurchase final
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) WebPurchase_C_ExecuteUbergraph_WebPurchase final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,15 +24,15 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_HasInputActionHandler_ReturnValue;        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WebPurchase_C_ExecuteUbergraph_WebPurchase) == 0x000026, "Wrong alignment on WebPurchase_C_ExecuteUbergraph_WebPurchase");
-static_assert(sizeof(WebPurchase_C_ExecuteUbergraph_WebPurchase) == 0x000026, "Wrong size on WebPurchase_C_ExecuteUbergraph_WebPurchase");
+static_assert(alignof(WebPurchase_C_ExecuteUbergraph_WebPurchase) == 0x000008, "Wrong alignment on WebPurchase_C_ExecuteUbergraph_WebPurchase");
+static_assert(sizeof(WebPurchase_C_ExecuteUbergraph_WebPurchase) == 0x000020, "Wrong size on WebPurchase_C_ExecuteUbergraph_WebPurchase");
 static_assert(offsetof(WebPurchase_C_ExecuteUbergraph_WebPurchase, EntryPoint) == 0x000000, "Member 'WebPurchase_C_ExecuteUbergraph_WebPurchase::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WebPurchase_C_ExecuteUbergraph_WebPurchase, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WebPurchase_C_ExecuteUbergraph_WebPurchase::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WebPurchase_C_ExecuteUbergraph_WebPurchase, CallFunc_HasInputActionHandler_ReturnValue) == 0x000018, "Member 'WebPurchase_C_ExecuteUbergraph_WebPurchase::CallFunc_HasInputActionHandler_ReturnValue' has a wrong offset!");
 
 // Function WebPurchase.WebPurchase_C.Display
-// 0x003C (0x003C - 0x0000)
-struct alignas(0x3C) WebPurchase_C_Display final
+// 0x0030 (0x0030 - 0x0000)
+struct WebPurchase_C_Display final
 {
 public:
 	class UWidget*                                WebWidget;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,8 +42,8 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WebPurchase_C_Display) == 0x00003C, "Wrong alignment on WebPurchase_C_Display");
-static_assert(sizeof(WebPurchase_C_Display) == 0x00003C, "Wrong size on WebPurchase_C_Display");
+static_assert(alignof(WebPurchase_C_Display) == 0x000008, "Wrong alignment on WebPurchase_C_Display");
+static_assert(sizeof(WebPurchase_C_Display) == 0x000030, "Wrong size on WebPurchase_C_Display");
 static_assert(offsetof(WebPurchase_C_Display, WebWidget) == 0x000000, "Member 'WebPurchase_C_Display::WebWidget' has a wrong offset!");
 static_assert(offsetof(WebPurchase_C_Display, AttemptedMTXOfferId) == 0x000008, "Member 'WebPurchase_C_Display::AttemptedMTXOfferId' has a wrong offset!");
 static_assert(offsetof(WebPurchase_C_Display, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'WebPurchase_C_Display::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -51,16 +51,16 @@ static_assert(offsetof(WebPurchase_C_Display, CallFunc_OpenWebPayment_ReturnValu
 static_assert(offsetof(WebPurchase_C_Display, CallFunc_AddChild_ReturnValue) == 0x000028, "Member 'WebPurchase_C_Display::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function WebPurchase.WebPurchase_C.Dismiss
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x10) WebPurchase_C_Dismiss final
+// 0x0018 (0x0018 - 0x0000)
+struct WebPurchase_C_Dismiss final
 {
 public:
 	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ExitWebPayment_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WebPurchase_C_Dismiss) == 0x000010, "Wrong alignment on WebPurchase_C_Dismiss");
-static_assert(sizeof(WebPurchase_C_Dismiss) == 0x000020, "Wrong size on WebPurchase_C_Dismiss");
+static_assert(alignof(WebPurchase_C_Dismiss) == 0x000008, "Wrong alignment on WebPurchase_C_Dismiss");
+static_assert(sizeof(WebPurchase_C_Dismiss) == 0x000018, "Wrong size on WebPurchase_C_Dismiss");
 static_assert(offsetof(WebPurchase_C_Dismiss, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'WebPurchase_C_Dismiss::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WebPurchase_C_Dismiss, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'WebPurchase_C_Dismiss::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WebPurchase_C_Dismiss, CallFunc_ExitWebPayment_ReturnValue) == 0x000010, "Member 'WebPurchase_C_Dismiss::CallFunc_ExitWebPayment_ReturnValue' has a wrong offset!");

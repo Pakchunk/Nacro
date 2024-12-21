@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "ItemDisplayStyle_structs.hpp"
+#include "ItemDisplayMode_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "ItemTextureSet_structs.hpp"
 #include "UMG_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
+#include "ItemTextureSet_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FortniteUI_structs.hpp"
-#include "ItemDisplayMode_structs.hpp"
 #include "GameplayTags_structs.hpp"
 
 
@@ -25,7 +25,7 @@ namespace SDK::Params
 {
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.ExecuteUbergraph_LegacyItem_DO_NOT_USE
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE final
 {
 public:
@@ -48,22 +48,23 @@ public:
 	class UUserWidget*                            K2Node_CustomEvent_CursorModeContentWidget;        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bCursorModeEnabled, class FName ActionName, class UUserWidget* CursorModeContentWidget)> K2Node_CreateDelegate_OutputDelegate;              // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0068(0x11827900)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00A0(0x11829280)(ConstParm)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0068(0x0034)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00A0(0x0078)(ConstParm)
 	int32                                         K2Node_Event_NewCooldownSeconds;                   // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bNewActivatable;                      // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11D[0x3];                                      // 0x011D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0128(0x11821300)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0128(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Get_Num_in_Stack_ReturnValue;             // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Get_Num_in_Stack_ReturnValue2;            // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_Get_Item_Tooltip_ReturnValue;             // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_Get_Item_Tooltip_ReturnValue2;            // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE) == 0x11829280, "Wrong alignment on LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE) == 0x11829280, "Wrong size on LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE) == 0x000150, "Wrong size on LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, EntryPoint) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::EntryPoint' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
@@ -114,15 +115,16 @@ static_assert(sizeof(LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged) == 0x00
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged, NewCooldownSeconds) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged::NewCooldownSeconds' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseEnter
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_OnMouseEnter final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseEnter) == 0x11829280, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseEnter");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseEnter) == 0x11829280, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseEnter");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseEnter) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseEnter");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseEnter) == 0x0000B0, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseEnter");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseEnter::MyGeometry' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
@@ -165,7 +167,7 @@ static_assert(sizeof(LegacyItem_DO_NOT_USE_C_PreConstruct) == 0x000001, "Wrong s
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Base Material
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Update_Base_Material final
 {
 public:
@@ -186,7 +188,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0038(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0038(0x0090)(ConstParm)
 	class UTexture2D*                             CallFunc_Get_Texture2D_From_Multi_Size_Brush_Texture2D; // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Get_Texture2D_From_Multi_Size_Brush_Success; // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -195,8 +197,8 @@ public:
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Base_Material) == 0x11827900, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Base_Material");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Base_Material) == 0x11827900, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Base_Material");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Base_Material) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Base_Material");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Base_Material) == 0x0000F0, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Base_Material");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, Icon_Material) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::Icon_Material' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, Base_Material) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::Base_Material' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, Temp_byte_Variable) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::Temp_byte_Variable' has a wrong offset!");
@@ -218,20 +220,20 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_Ge
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x0000E8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Item Data
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Set_Item_Data final
 {
 public:
 	class UFortItem*                              Item_Data;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0010(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0010(0x0080)()
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EItemDisplayStyle                             CallFunc_Get_Display_Style_Style;                  // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Item_Data) == 0x11821780, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Item_Data");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Item_Data) == 0x11821780, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Item_Data");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Item_Data) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Item_Data");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Item_Data) == 0x000098, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Item_Data");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, Item_Data) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::Item_Data' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, CallFunc_GetRarity_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, CallFunc_BPGetRarityData_ReturnValue) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
@@ -260,7 +262,7 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter, CallFunc_Ge
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter, K2Node_Select_Default) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Stack_Counter::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update All
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0A78 (0x0A78 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Update_All final
 {
 public:
@@ -271,14 +273,14 @@ public:
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  CallFunc_IsActivatable_FailureReason;              // 0x0028(0x11821C00)()
+	struct FGameplayTagContainer                  CallFunc_IsActivatable_FailureReason;              // 0x0028(0x0020)()
 	bool                                          CallFunc_IsActivatable_ReturnValue;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FItemTextureSet                        CallFunc_Get_Item_Texture_Set_Texture_Set;         // 0x0050(0x11821780)(HasGetValueTypeHash)
+	struct FItemTextureSet                        CallFunc_Get_Item_Texture_Set_Texture_Set;         // 0x0050(0x0A28)(HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_All) == 0x11821C00, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_All");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_All) == 0x11821C00, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_All");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_All) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_All");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_All) == 0x000A78, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_All");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_GetCooldownMaterial_CooldownMat) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_GetCooldownMaterial_CooldownMat' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
@@ -290,19 +292,20 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_IsValid_Retu
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_Get_Item_Texture_Set_Texture_Set) == 0x000050, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_Get_Item_Texture_Set_Texture_Set' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0390 (0x0390 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_OnMouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            Result;                                            // 0x0168(0x11827900)(Edit)
-	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0220(0x11827900)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x02D8(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            Result;                                            // 0x0168(0x00B8)(Edit)
+	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0220(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x02D8(0x00B8)()
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown) == 0x11829280, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseButtonDown");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown) == 0x11829280, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseButtonDown");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseButtonDown");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown) == 0x000390, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseButtonDown");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
@@ -311,12 +314,13 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, CallFunc_Detec
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, CallFunc_Unhandled_ReturnValue) == 0x0002D8, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnDragDetected
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_OnDragDetected final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Drag_Icon_Texture;                                 // 0x00B8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDragDropOperation*                     CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -329,8 +333,8 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnDragDetected) == 0x11829280, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnDragDetected");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnDragDetected) == 0x11829280, "Wrong size on LegacyItem_DO_NOT_USE_C_OnDragDetected");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnDragDetected) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnDragDetected");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnDragDetected) == 0x000118, "Wrong size on LegacyItem_DO_NOT_USE_C_OnDragDetected");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::MyGeometry' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::PointerEvent' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, Operation) == 0x0000B0, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::Operation' has a wrong offset!");
@@ -345,29 +349,29 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, K2Node_DynamicCas
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, K2Node_DynamicCast_bSuccess) == 0x000110, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Size Box
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Update_Size_Box final
 {
 public:
-	struct FVector2D                              CallFunc_Get_Item_Size_Item_Size;                  // 0x0000(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Get_Item_Size_Item_Size;                  // 0x0000(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Size_Box) == 0x11821300, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Size_Box");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Size_Box) == 0x11821300, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Size_Box");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Size_Box) == 0x000004, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Size_Box");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Size_Box) == 0x000010, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Size_Box");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Size_Box, CallFunc_Get_Item_Size_Item_Size) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Size_Box::CallFunc_Get_Item_Size_Item_Size' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Size_Box, CallFunc_BreakVector2D_X) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Size_Box::CallFunc_BreakVector2D_X' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Size_Box, CallFunc_BreakVector2D_Y) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Size_Box::CallFunc_BreakVector2D_Y' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Item Texture Set
-// 0x740065 (0x740065 - 0x0000)
+// 0x1EA8 (0x1EA8 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set final
 {
 public:
 	EItemDisplayStyle                             Display_Style;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FItemTextureSet                        Texture_Set;                                       // 0x0008(0x11821780)(Parm, OutParm, HasGetValueTypeHash)
-	struct FItemTextureSet                        Item_Texture_Set;                                  // 0x0A30(0x11821780)(Edit, HasGetValueTypeHash)
+	struct FItemTextureSet                        Texture_Set;                                       // 0x0008(0x0A28)(Parm, OutParm, HasGetValueTypeHash)
+	struct FItemTextureSet                        Item_Texture_Set;                                  // 0x0A30(0x0A28)(Edit, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x1458(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1459[0x3];                                     // 0x1459(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x145C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -378,12 +382,12 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x146C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x1470(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1471[0x7];                                     // 0x1471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FItemTextureSet                        CallFunc_Array_Get_Item;                           // 0x1478(0x11821780)(HasGetValueTypeHash)
+	struct FItemTextureSet                        CallFunc_Array_Get_Item;                           // 0x1478(0x0A28)(HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x1EA0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x1EA1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set) == 0x740065, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set) == 0x740065, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set) == 0x001EA8, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Display_Style) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Display_Style' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Texture_Set) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Texture_Set' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Item_Texture_Set) == 0x000A30, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Item_Texture_Set' has a wrong offset!");
@@ -399,12 +403,12 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_Bo
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x001EA1, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Primary Icon
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Update_Primary_Icon final
 {
 public:
 	class UMaterialInstanceDynamic*               Mid;                                               // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Icon_Size;                                         // 0x0008(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Icon_Size;                                         // 0x0008(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -422,8 +426,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon) == 0x11821300, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Primary_Icon");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon) == 0x11821300, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Primary_Icon");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Primary_Icon");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon) == 0x000068, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Primary_Icon");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, Mid) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::Mid' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, Icon_Size) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::Icon_Size' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, Temp_byte_Variable) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::Temp_byte_Variable' has a wrong offset!");
@@ -442,7 +446,7 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, K2Node_Dynam
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_IsValid_ReturnValue) == 0x000061, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Tier Badge
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Update_Tier_Badge final
 {
 public:
@@ -457,7 +461,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x002C(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x002C(0x0010)(NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortItemTier                                 CallFunc_GetTier_ReturnValue;                      // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -465,8 +469,8 @@ public:
 	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemTier                                 CallFunc_GetMaxTier_ReturnValue;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge) == 0x322CBBB8, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Tier_Badge");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge) == 0x322CBBB8, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Tier_Badge");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Tier_Badge");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge) == 0x000050, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Tier_Badge");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_byte_Variable) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_float_Variable) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_float_Variable2) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_float_Variable2' has a wrong offset!");
@@ -607,13 +611,13 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Vari
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, K2Node_Select_Default) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Subtype Icons & Ammo
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x07A8 (0x07A8 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo final
 {
 public:
-	struct FSlateBrush                            Local_IconBrush;                                   // 0x0000(0x322CBBB8)(Edit)
-	struct FSlateBrush                            Local_FillBrush;                                   // 0x0090(0x322CBBB8)(Edit)
-	struct FSlateBrush                            Local_FrameBrush;                                  // 0x0120(0x322CBBB8)(Edit)
+	struct FSlateBrush                            Local_IconBrush;                                   // 0x0000(0x0090)(Edit)
+	struct FSlateBrush                            Local_FillBrush;                                   // 0x0090(0x0090)(Edit)
+	struct FSlateBrush                            Local_FrameBrush;                                  // 0x0120(0x0090)(Edit)
 	EFortBrushSize                                Local_BrushSize;                                   // 0x01B0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EHorizontalAlignment                          HorizontalAlign;                                   // 0x01B1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EVerticalAlignment                            VerticalAlign;                                     // 0x01B2(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -694,18 +698,18 @@ public:
 	uint8                                         Pad_246[0x2];                                      // 0x0246(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetTertiaryCategory_ItemCategoryText;     // 0x0250(0x0018)()
-	struct FSlateBrush                            CallFunc_GetTertiaryCategory_ItemCategoryBrush;    // 0x0268(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetTertiaryCategory_ItemCategoryBrush;    // 0x0268(0x0090)()
 	bool                                          CallFunc_GetTertiaryCategory_ReturnValue;          // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable19;                              // 0x02F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable20;                              // 0x02FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select2_Default;                            // 0x02FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2FC[0x4];                                      // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetSecondaryCategory_ItemCategoryText;    // 0x0300(0x0018)()
-	struct FSlateBrush                            CallFunc_GetSecondaryCategory_ItemCategoryBrush;   // 0x0318(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetSecondaryCategory_ItemCategoryBrush;   // 0x0318(0x0090)()
 	bool                                          CallFunc_GetSecondaryCategory_ReturnValue;         // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x03A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3AA[0x2];                                      // 0x03AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x03AC(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x03AC(0x0010)(NoDestructor)
 	EVerticalAlignment                            K2Node_Select3_Default;                            // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EHorizontalAlignment                          K2Node_Select4_Default;                            // 0x03BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3BE[0x2];                                      // 0x03BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -724,26 +728,26 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x03DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x03DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3DD[0x3];                                      // 0x03DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x03E0(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x03E0(0x0090)(ConstParm)
 	bool                                          Temp_bool_Variable23;                              // 0x0470(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable24;                              // 0x0471(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_472[0x6];                                      // 0x0472(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2; // 0x0478(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2; // 0x0478(0x0090)(ConstParm)
 	bool                                          Temp_bool_Variable25;                              // 0x0508(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable26;                              // 0x0509(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable27;                              // 0x050A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_50B[0x5];                                      // 0x050B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue3; // 0x0510(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue3; // 0x0510(0x0090)(ConstParm)
 	bool                                          Temp_bool_Variable28;                              // 0x05A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EItemDisplayStyle                             Temp_byte_Variable28;                              // 0x05A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Select10_Default;                           // 0x05A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5A3[0x1];                                      // 0x05A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x05A4(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x05A4(0x0010)(NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x05B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable29;                              // 0x05B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue4;                  // 0x05B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5B7[0x1];                                      // 0x05B7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateFontInfo                         CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue; // 0x05B8(0x11827900)(ConstParm, HasGetValueTypeHash)
+	struct FSlateFontInfo                         CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue; // 0x05B8(0x0068)(ConstParm, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_621[0x3];                                      // 0x0621(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select11_Default;                           // 0x0624(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -752,13 +756,13 @@ public:
 	uint8                                         Pad_62A[0x2];                                      // 0x062A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x062C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue2;     // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin3;                         // 0x0638(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin3;                         // 0x0638(0x0010)(NoDestructor)
 	bool                                          Temp_bool_Variable29;                              // 0x0648(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_649[0x7];                                      // 0x0649(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0650(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select12_Default;                           // 0x0658(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_659[0x7];                                      // 0x0659(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue4; // 0x0660(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue4; // 0x0660(0x0090)(ConstParm)
 	ESlateVisibility                              Temp_byte_Variable31;                              // 0x06F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable32;                              // 0x06F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable30;                              // 0x06F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -766,13 +770,13 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue3;         // 0x06F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6F5[0x3];                                      // 0x06F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetSecondaryCategory_ItemCategoryText2;   // 0x06F8(0x0018)()
-	struct FSlateBrush                            CallFunc_GetSecondaryCategory_ItemCategoryBrush2;  // 0x0710(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetSecondaryCategory_ItemCategoryBrush2;  // 0x0710(0x0090)()
 	bool                                          CallFunc_GetSecondaryCategory_ReturnValue2;        // 0x07A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue6;                  // 0x07A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue7;                  // 0x07A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo) == 0x322CBBB8, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo) == 0x322CBBB8, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo) == 0x0007A8, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Local_IconBrush) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Local_IconBrush' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Local_FillBrush) == 0x000090, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Local_FillBrush' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Local_FrameBrush) == 0x000120, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Local_FrameBrush' has a wrong offset!");
@@ -994,7 +998,7 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header, Header_Text) 
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header, Icon_Brush) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header::Icon_Brush' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Durability Meter
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Update_Durability_Meter final
 {
 public:
@@ -1010,18 +1014,18 @@ public:
 	EFortBrushSize                                Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Get_Item_Icon_Size_Icon_Size;             // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0038(0x322CBBB8)(NoDestructor)
+	struct FVector2D                              CallFunc_Get_Item_Icon_Size_Icon_Size;             // 0x0030(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0038(0x0010)(NoDestructor)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetNormalizedDurability_ReturnValue;      // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0060(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0060(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter) == 0x322CBBB8, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Durability_Meter");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter) == 0x322CBBB8, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Durability_Meter");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Durability_Meter");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter) == 0x000068, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Durability_Meter");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, DurabilityBarHeight) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::DurabilityBarHeight' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_float_Variable) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_float_Variable2) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_float_Variable2' has a wrong offset!");
@@ -1103,23 +1107,24 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Resize, Brush_Size) == 0x000000, 
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Resize, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Resize::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseButtonDoubleClick
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x02F8 (0x02F8 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick final
 {
 public:
-	struct FGeometry                              InMyGeometry;                                      // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          InMouseEvent;                                      // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x11827900)()
+	struct FGeometry                              InMyGeometry;                                      // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          InMouseEvent;                                      // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0168(0x00B8)()
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0228(0x11827900)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0228(0x00B8)()
 	class UFortItem*                              CallFunc_GetItem_ReturnValue;                      // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortWorldItem*                         K2Node_DynamicCast_AsFort_World_Item;              // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ActivateItem_ReturnValue;                 // 0x02F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick) == 0x11829280, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick) == 0x11829280, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick) == 0x0002F8, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, InMyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::InMyGeometry' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, InMouseEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::InMouseEvent' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, ReturnValue) == 0x0000B0, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::ReturnValue' has a wrong offset!");
@@ -1132,27 +1137,28 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, K2Node_
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, CallFunc_ActivateItem_ReturnValue) == 0x0002F1, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::CallFunc_ActivateItem_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Subtype Icons & Ammo Color
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color final
 {
 public:
 	bool                                          Override_Secondary_Icon_Color;                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Secondary_Icon_Override_Color;                     // 0x0004(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Secondary_Icon_Override_Color;                     // 0x0004(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Override_Tertiary_Icon_Color;                      // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Tertiary_Icon_Override_Color;                      // 0x0018(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Tertiary_Icon_Override_Color;                      // 0x0018(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2B[0x1];                                       // 0x002B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x002C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x322CBBB8)()
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0078(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x002C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x003C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x0028)()
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0078(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color) == 0x322CBBB8, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color) == 0x322CBBB8, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color) == 0x000088, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Override_Secondary_Icon_Color) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Override_Secondary_Icon_Color' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Secondary_Icon_Override_Color) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Secondary_Icon_Override_Color' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Override_Tertiary_Icon_Color) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Override_Tertiary_Icon_Color' has a wrong offset!");
@@ -1275,22 +1281,22 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack, CallFunc_GetSta
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Texture2D From Multi Size Brush
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0418 (0x0418 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush final
 {
 public:
-	struct FFortMultiSizeBrush                    Multi_Size_Brush;                                  // 0x0000(0x11827900)(Parm)
+	struct FFortMultiSizeBrush                    Multi_Size_Brush;                                  // 0x0000(0x0360)(Parm)
 	EFortBrushSize                                Brush_Size;                                        // 0x0360(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_361[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Texture2D;                                         // 0x0368(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Success;                                           // 0x0370(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0378(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0378(0x0090)(ConstParm)
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush) == 0x11827900, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush) == 0x11827900, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush) == 0x000418, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, Multi_Size_Brush) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::Multi_Size_Brush' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, Brush_Size) == 0x000360, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::Brush_Size' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, Texture2D) == 0x000368, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::Texture2D' has a wrong offset!");
@@ -1300,7 +1306,7 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Bru
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, K2Node_DynamicCast_bSuccess) == 0x000410, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Rating Tag
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct LegacyItem_DO_NOT_USE_C_Update_Rating_Tag final
 {
 public:
@@ -1328,15 +1334,15 @@ public:
 	float                                         K2Node_Select3_Default;                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0038(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0038(0x0010)(NoDestructor)
 	int32                                         CallFunc_GetRating_ReturnValue;                    // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetRating_ReturnValue2;                   // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag) == 0x322CBBB8, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Rating_Tag");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag) == 0x322CBBB8, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Rating_Tag");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Rating_Tag");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag) == 0x000058, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Rating_Tag");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, ShowRating) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::ShowRating' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_byte_Variable) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_float_Variable) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_float_Variable' has a wrong offset!");
@@ -1409,17 +1415,18 @@ static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Opacity, CallFunc_Equ
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Opacity, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Opacity::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnDrop
-// 0x7FFFFFFF (0x7FFFFFFF - 0x0000)
-struct alignas(0x7FFFFFFF) LegacyItem_DO_NOT_USE_C_OnDrop final
+// 0x00C0 (0x00C0 - 0x0000)
+struct LegacyItem_DO_NOT_USE_C_OnDrop final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x11829280)(Parm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0078)(Parm)
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnDrop) == 0x7FFFFFFF, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnDrop");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnDrop) == 0x7FFFFFFF, "Wrong size on LegacyItem_DO_NOT_USE_C_OnDrop");
+static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnDrop) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnDrop");
+static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnDrop) == 0x0000C0, "Wrong size on LegacyItem_DO_NOT_USE_C_OnDrop");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDrop, MyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnDrop::MyGeometry' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDrop, PointerEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnDrop::PointerEvent' has a wrong offset!");
 static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDrop, Operation) == 0x0000B0, "Member 'LegacyItem_DO_NOT_USE_C_OnDrop::Operation' has a wrong offset!");

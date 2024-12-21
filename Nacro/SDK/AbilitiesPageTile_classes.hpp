@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AbilitiesPageTile.AbilitiesPageTile_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0128 (0x09C8 - 0x08A0)
 class UAbilitiesPageTile_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
 	class UFortSZAwareImage*                      AbilityImage;                                      // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       AbilityName;                                       // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UKeybindWidget_C*                       KeybindAbilityKeybind;                             // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -40,12 +40,12 @@ public:
 	class UFortItem*                              AbilityItem;                                       // 0x08F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          AbilityLocked;                                     // 0x0900(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_901[0x7];                                      // 0x0901(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIPerk                            AbilityUIPerk;                                     // 0x0908(0x1182E980)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FLinearColor                           LockedColor;                                       // 0x0990(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           UnlockedColor;                                     // 0x09A0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortUIPerk                            AbilityUIPerk;                                     // 0x0908(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FLinearColor                           LockedColor;                                       // 0x0990(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           UnlockedColor;                                     // 0x09A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBrushSize                                AbilityIconBrushSize;                              // 0x09B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9B1[0x3];                                      // 0x09B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           LockedAbilityIconColor;                            // 0x09B4(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           LockedAbilityIconColor;                            // 0x09B4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_AbilitiesPageTile(int32 EntryPoint);
@@ -65,8 +65,8 @@ public:
 		return GetDefaultObjImpl<UAbilitiesPageTile_C>();
 	}
 };
-static_assert(alignof(UAbilitiesPageTile_C) == 0x322CBBB8, "Wrong alignment on UAbilitiesPageTile_C");
-static_assert(sizeof(UAbilitiesPageTile_C) == 0x322CBBB8, "Wrong size on UAbilitiesPageTile_C");
+static_assert(alignof(UAbilitiesPageTile_C) == 0x000008, "Wrong alignment on UAbilitiesPageTile_C");
+static_assert(sizeof(UAbilitiesPageTile_C) == 0x0009C8, "Wrong size on UAbilitiesPageTile_C");
 static_assert(offsetof(UAbilitiesPageTile_C, UberGraphFrame) == 0x0008A0, "Member 'UAbilitiesPageTile_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAbilitiesPageTile_C, AbilityImage) == 0x0008A8, "Member 'UAbilitiesPageTile_C::AbilityImage' has a wrong offset!");
 static_assert(offsetof(UAbilitiesPageTile_C, AbilityName) == 0x0008B0, "Member 'UAbilitiesPageTile_C::AbilityName' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HordeWaveAlertWidget.HordeWaveAlertWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0080 (0x02C0 - 0x0240)
 class UHordeWaveAlertWidget_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       AppearanceAndDisappearance_Quick;                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       ModifierDisappearance;                             // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       ModifierAppearance;                                // 0x0258(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -63,8 +63,8 @@ public:
 		return GetDefaultObjImpl<UHordeWaveAlertWidget_C>();
 	}
 };
-static_assert(alignof(UHordeWaveAlertWidget_C) == 0x322CBBB8, "Wrong alignment on UHordeWaveAlertWidget_C");
-static_assert(sizeof(UHordeWaveAlertWidget_C) == 0x322CBBB8, "Wrong size on UHordeWaveAlertWidget_C");
+static_assert(alignof(UHordeWaveAlertWidget_C) == 0x000008, "Wrong alignment on UHordeWaveAlertWidget_C");
+static_assert(sizeof(UHordeWaveAlertWidget_C) == 0x0002C0, "Wrong size on UHordeWaveAlertWidget_C");
 static_assert(offsetof(UHordeWaveAlertWidget_C, UberGraphFrame) == 0x000240, "Member 'UHordeWaveAlertWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHordeWaveAlertWidget_C, AppearanceAndDisappearance_Quick) == 0x000248, "Member 'UHordeWaveAlertWidget_C::AppearanceAndDisappearance_Quick' has a wrong offset!");
 static_assert(offsetof(UHordeWaveAlertWidget_C, ModifierDisappearance) == 0x000250, "Member 'UHordeWaveAlertWidget_C::ModifierDisappearance' has a wrong offset!");

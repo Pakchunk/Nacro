@@ -19,8 +19,8 @@ namespace SDK::Params
 {
 
 // Function QuickbarSlotCooldown.QuickbarSlotCooldown_C.ExecuteUbergraph_QuickbarSlotCooldown
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x10) QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown final
+// 0x000C (0x000C - 0x0000)
+struct QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,8 +33,8 @@ public:
 	bool                                          K2Node_SwitchEnum5_CmpSuccess;                     // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum6_CmpSuccess;                     // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown) == 0x000010, "Wrong alignment on QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown");
-static_assert(sizeof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown) == 0x000010, "Wrong size on QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown");
+static_assert(alignof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown) == 0x000004, "Wrong alignment on QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown");
+static_assert(sizeof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown) == 0x00000C, "Wrong size on QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown");
 static_assert(offsetof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown, EntryPoint) == 0x000000, "Member 'QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown::EntryPoint' has a wrong offset!");
 static_assert(offsetof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown, K2Node_Event_CooldownType) == 0x000005, "Member 'QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown::K2Node_Event_CooldownType' has a wrong offset!");
@@ -46,25 +46,25 @@ static_assert(offsetof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCoold
 static_assert(offsetof(QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown, K2Node_SwitchEnum6_CmpSuccess) == 0x00000B, "Member 'QuickbarSlotCooldown_C_ExecuteUbergraph_QuickbarSlotCooldown::K2Node_SwitchEnum6_CmpSuccess' has a wrong offset!");
 
 // Function QuickbarSlotCooldown.QuickbarSlotCooldown_C.OnCooldownStopped
-// 0x6F0072 (0x6F0072 - 0x0000)
-struct alignas(0x6F0072) QuickbarSlotCooldown_C_OnCooldownStopped final
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarSlotCooldown_C_OnCooldownStopped final
 {
 public:
 	EFortItemCooldownType                         CooldownType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlotCooldown_C_OnCooldownStopped) == 0x6F0072, "Wrong alignment on QuickbarSlotCooldown_C_OnCooldownStopped");
-static_assert(sizeof(QuickbarSlotCooldown_C_OnCooldownStopped) == 0x6F0072, "Wrong size on QuickbarSlotCooldown_C_OnCooldownStopped");
+static_assert(alignof(QuickbarSlotCooldown_C_OnCooldownStopped) == 0x000001, "Wrong alignment on QuickbarSlotCooldown_C_OnCooldownStopped");
+static_assert(sizeof(QuickbarSlotCooldown_C_OnCooldownStopped) == 0x000001, "Wrong size on QuickbarSlotCooldown_C_OnCooldownStopped");
 static_assert(offsetof(QuickbarSlotCooldown_C_OnCooldownStopped, CooldownType) == 0x000000, "Member 'QuickbarSlotCooldown_C_OnCooldownStopped::CooldownType' has a wrong offset!");
 
 // Function QuickbarSlotCooldown.QuickbarSlotCooldown_C.OnCooldownStarted
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) QuickbarSlotCooldown_C_OnCooldownStarted final
+// 0x0001 (0x0001 - 0x0000)
+struct QuickbarSlotCooldown_C_OnCooldownStarted final
 {
 public:
 	EFortItemCooldownType                         CooldownType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlotCooldown_C_OnCooldownStarted) == 0x0000E4, "Wrong alignment on QuickbarSlotCooldown_C_OnCooldownStarted");
-static_assert(sizeof(QuickbarSlotCooldown_C_OnCooldownStarted) == 0x0000E4, "Wrong size on QuickbarSlotCooldown_C_OnCooldownStarted");
+static_assert(alignof(QuickbarSlotCooldown_C_OnCooldownStarted) == 0x000001, "Wrong alignment on QuickbarSlotCooldown_C_OnCooldownStarted");
+static_assert(sizeof(QuickbarSlotCooldown_C_OnCooldownStarted) == 0x000001, "Wrong size on QuickbarSlotCooldown_C_OnCooldownStarted");
 static_assert(offsetof(QuickbarSlotCooldown_C_OnCooldownStarted, CooldownType) == 0x000000, "Member 'QuickbarSlotCooldown_C_OnCooldownStarted::CooldownType' has a wrong offset!");
 
 // Function QuickbarSlotCooldown.QuickbarSlotCooldown_C.Show Countdown
@@ -87,8 +87,8 @@ static_assert(offsetof(QuickbarSlotCooldown_C_Show_Countdown, Temp_byte_Variable
 static_assert(offsetof(QuickbarSlotCooldown_C_Show_Countdown, K2Node_Select_Default) == 0x000004, "Member 'QuickbarSlotCooldown_C_Show_Countdown::K2Node_Select_Default' has a wrong offset!");
 
 // Function QuickbarSlotCooldown.QuickbarSlotCooldown_C.Initialize
-// 0x6F0072 (0x6F0072 - 0x0000)
-struct alignas(0x6F0072) QuickbarSlotCooldown_C_Initialize final
+// 0x0068 (0x0068 - 0x0000)
+struct QuickbarSlotCooldown_C_Initialize final
 {
 public:
 	EItemDisplayStyle                             QuickbarItemDisplayStyle;                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -107,8 +107,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlotCooldown_C_Initialize) == 0x6F0072, "Wrong alignment on QuickbarSlotCooldown_C_Initialize");
-static_assert(sizeof(QuickbarSlotCooldown_C_Initialize) == 0x6F0072, "Wrong size on QuickbarSlotCooldown_C_Initialize");
+static_assert(alignof(QuickbarSlotCooldown_C_Initialize) == 0x000008, "Wrong alignment on QuickbarSlotCooldown_C_Initialize");
+static_assert(sizeof(QuickbarSlotCooldown_C_Initialize) == 0x000068, "Wrong size on QuickbarSlotCooldown_C_Initialize");
 static_assert(offsetof(QuickbarSlotCooldown_C_Initialize, QuickbarItemDisplayStyle) == 0x000000, "Member 'QuickbarSlotCooldown_C_Initialize::QuickbarItemDisplayStyle' has a wrong offset!");
 static_assert(offsetof(QuickbarSlotCooldown_C_Initialize, DesiredCooldownTypesSupported) == 0x000008, "Member 'QuickbarSlotCooldown_C_Initialize::DesiredCooldownTypesSupported' has a wrong offset!");
 static_assert(offsetof(QuickbarSlotCooldown_C_Initialize, Temp_byte_Variable) == 0x000018, "Member 'QuickbarSlotCooldown_C_Initialize::Temp_byte_Variable' has a wrong offset!");

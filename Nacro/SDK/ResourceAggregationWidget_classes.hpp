@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ResourceAggregationWidget.ResourceAggregationWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0060 (0x02C0 - 0x0260)
 class UResourceAggregationWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       ResourceIconPulseAnim;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AggregateOutroAnim;                                // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HBoxTotalAggregation;                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -34,7 +34,7 @@ public:
 	int32                                         AggregateResourceCollected;                        // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bActivateAggregateAnim;                            // 0x02AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2AD[0x3];                                      // 0x02AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           HideWidgetTimer;                                   // 0x02B0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           HideWidgetTimer;                                   // 0x02B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bIgnoreHide;                                       // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -57,8 +57,8 @@ public:
 		return GetDefaultObjImpl<UResourceAggregationWidget_C>();
 	}
 };
-static_assert(alignof(UResourceAggregationWidget_C) == 0x322CBBB8, "Wrong alignment on UResourceAggregationWidget_C");
-static_assert(sizeof(UResourceAggregationWidget_C) == 0x322CBBB8, "Wrong size on UResourceAggregationWidget_C");
+static_assert(alignof(UResourceAggregationWidget_C) == 0x000008, "Wrong alignment on UResourceAggregationWidget_C");
+static_assert(sizeof(UResourceAggregationWidget_C) == 0x0002C0, "Wrong size on UResourceAggregationWidget_C");
 static_assert(offsetof(UResourceAggregationWidget_C, UberGraphFrame) == 0x000260, "Member 'UResourceAggregationWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResourceAggregationWidget_C, ResourceIconPulseAnim) == 0x000268, "Member 'UResourceAggregationWidget_C::ResourceIconPulseAnim' has a wrong offset!");
 static_assert(offsetof(UResourceAggregationWidget_C, AggregateOutroAnim) == 0x000270, "Member 'UResourceAggregationWidget_C::AggregateOutroAnim' has a wrong offset!");

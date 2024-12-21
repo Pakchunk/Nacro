@@ -15,15 +15,15 @@ namespace SDK::Params
 {
 
 // Function TabBrightnessOptions.TabBrightnessOptions_C.ExecuteUbergraph_TabBrightnessOptions
-// 0x0082 (0x0082 - 0x0000)
-struct alignas(0x82) TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions final
+// 0x0008 (0x0008 - 0x0000)
+struct TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_ComponentBoundEvent_Slider_Value;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions) == 0x000082, "Wrong alignment on TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions");
-static_assert(sizeof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions) == 0x000082, "Wrong size on TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions");
+static_assert(alignof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions) == 0x000004, "Wrong alignment on TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions");
+static_assert(sizeof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions) == 0x000008, "Wrong size on TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions");
 static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, EntryPoint) == 0x000000, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions, K2Node_ComponentBoundEvent_Slider_Value) == 0x000004, "Member 'TabBrightnessOptions_C_ExecuteUbergraph_TabBrightnessOptions::K2Node_ComponentBoundEvent_Slider_Value' has a wrong offset!");
 
@@ -55,8 +55,8 @@ static_assert(offsetof(TabBrightnessOptions_C_Update_Data, CallFunc_GetEmptyText
 static_assert(offsetof(TabBrightnessOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue) == 0x000020, "Member 'TabBrightnessOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 
 // Function TabBrightnessOptions.TabBrightnessOptions_C.Set Default Call Out
-// 0x0092 (0x0092 - 0x0000)
-struct alignas(0x92) TabBrightnessOptions_C_Set_Default_Call_Out final
+// 0x0090 (0x0090 - 0x0000)
+struct TabBrightnessOptions_C_Set_Default_Call_Out final
 {
 public:
 	float                                         CallFunc_GetDefaultGammaSettings_ReturnValue;      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -69,8 +69,8 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue2;               // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0078(0x0018)()
 };
-static_assert(alignof(TabBrightnessOptions_C_Set_Default_Call_Out) == 0x000092, "Wrong alignment on TabBrightnessOptions_C_Set_Default_Call_Out");
-static_assert(sizeof(TabBrightnessOptions_C_Set_Default_Call_Out) == 0x000092, "Wrong size on TabBrightnessOptions_C_Set_Default_Call_Out");
+static_assert(alignof(TabBrightnessOptions_C_Set_Default_Call_Out) == 0x000008, "Wrong alignment on TabBrightnessOptions_C_Set_Default_Call_Out");
+static_assert(sizeof(TabBrightnessOptions_C_Set_Default_Call_Out) == 0x000090, "Wrong size on TabBrightnessOptions_C_Set_Default_Call_Out");
 static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, CallFunc_GetDefaultGammaSettings_ReturnValue) == 0x000000, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::CallFunc_GetDefaultGammaSettings_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TabBrightnessOptions_C_Set_Default_Call_Out, CallFunc_Conv_FloatToText_ReturnValue) == 0x000020, "Member 'TabBrightnessOptions_C_Set_Default_Call_Out::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");

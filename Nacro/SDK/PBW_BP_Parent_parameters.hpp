@@ -16,7 +16,7 @@ namespace SDK::Params
 
 // Function PBW_BP_Parent.PBW_BP_Parent_C.ExecuteUbergraph_PBW_BP_Parent
 // 0x0020 (0x0020 - 0x0000)
-struct alignas(0x20) PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent final
+struct PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,7 +29,7 @@ public:
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent) == 0x000020, "Wrong alignment on PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent");
+static_assert(alignof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent) == 0x000008, "Wrong alignment on PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent");
 static_assert(sizeof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent) == 0x000020, "Wrong size on PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent");
 static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, EntryPoint) == 0x000000, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, CallFunc_HasAuthority_ReturnValue) == 0x000004, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");

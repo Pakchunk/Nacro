@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LegacyPerksWidget.LegacyPerksWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0290 - 0x0258)
 class ULegacyPerksWidget_C final : public UFortPerksWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
 	class ULegacyPerkTierWidget_C*                PerkTierWidget;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyPerkTierWidget_C*                PerkTierWidget_0;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyPerkTierWidget_C*                PerkTierWidget_1;                                  // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<ULegacyPerksWidget_C>();
 	}
 };
-static_assert(alignof(ULegacyPerksWidget_C) == 0x322CBBB8, "Wrong alignment on ULegacyPerksWidget_C");
-static_assert(sizeof(ULegacyPerksWidget_C) == 0x322CBBB8, "Wrong size on ULegacyPerksWidget_C");
+static_assert(alignof(ULegacyPerksWidget_C) == 0x000008, "Wrong alignment on ULegacyPerksWidget_C");
+static_assert(sizeof(ULegacyPerksWidget_C) == 0x000290, "Wrong size on ULegacyPerksWidget_C");
 static_assert(offsetof(ULegacyPerksWidget_C, UberGraphFrame) == 0x000258, "Member 'ULegacyPerksWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULegacyPerksWidget_C, PerkTierWidget) == 0x000260, "Member 'ULegacyPerksWidget_C::PerkTierWidget' has a wrong offset!");
 static_assert(offsetof(ULegacyPerksWidget_C, PerkTierWidget_0) == 0x000268, "Member 'ULegacyPerksWidget_C::PerkTierWidget_0' has a wrong offset!");

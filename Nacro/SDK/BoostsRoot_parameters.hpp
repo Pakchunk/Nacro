@@ -129,13 +129,13 @@ static_assert(offsetof(BoostsRoot_C_HandleBack, CallFunc_GetUIManagerWidget_Retu
 
 // Function BoostsRoot.BoostsRoot_C.Set Input Action Handlers
 // 0x0020 (0x0020 - 0x0000)
-struct BoostsRoot_C_Set_Input_Action_Handlers final
+struct alignas(0x08) BoostsRoot_C_Set_Input_Action_Handlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(BoostsRoot_C_Set_Input_Action_Handlers) == 0x000004, "Wrong alignment on BoostsRoot_C_Set_Input_Action_Handlers");
+static_assert(alignof(BoostsRoot_C_Set_Input_Action_Handlers) == 0x000008, "Wrong alignment on BoostsRoot_C_Set_Input_Action_Handlers");
 static_assert(sizeof(BoostsRoot_C_Set_Input_Action_Handlers) == 0x000020, "Wrong size on BoostsRoot_C_Set_Input_Action_Handlers");
 static_assert(offsetof(BoostsRoot_C_Set_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BoostsRoot_C_Set_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BoostsRoot_C_Set_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'BoostsRoot_C_Set_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");

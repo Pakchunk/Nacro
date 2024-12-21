@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FullPartyMemberConnected.FullPartyMemberConnected_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01D8 (0x0410 - 0x0238)
 class UFullPartyMemberConnected_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UOverlay*                               CONNECTED;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_112;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               LeaderImageOverlay;                                // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -33,8 +33,8 @@ public:
 	class UCommonNumericTextBlock*                PlayerHBRating;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       PlayerName;                                        // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       PlayerNameNonParty;                                // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x0278(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FVector2D                              Dimensions;                                        // 0x0408(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x0278(0x0190)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FVector2D                              Dimensions;                                        // 0x0408(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_FullPartyMemberConnected(int32 EntryPoint);
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UFullPartyMemberConnected_C>();
 	}
 };
-static_assert(alignof(UFullPartyMemberConnected_C) == 0x322CBBB8, "Wrong alignment on UFullPartyMemberConnected_C");
-static_assert(sizeof(UFullPartyMemberConnected_C) == 0x322CBBB8, "Wrong size on UFullPartyMemberConnected_C");
+static_assert(alignof(UFullPartyMemberConnected_C) == 0x000008, "Wrong alignment on UFullPartyMemberConnected_C");
+static_assert(sizeof(UFullPartyMemberConnected_C) == 0x000410, "Wrong size on UFullPartyMemberConnected_C");
 static_assert(offsetof(UFullPartyMemberConnected_C, UberGraphFrame) == 0x000238, "Member 'UFullPartyMemberConnected_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFullPartyMemberConnected_C, CONNECTED) == 0x000240, "Member 'UFullPartyMemberConnected_C::CONNECTED' has a wrong offset!");
 static_assert(offsetof(UFullPartyMemberConnected_C, Image_112) == 0x000248, "Member 'UFullPartyMemberConnected_C::Image_112' has a wrong offset!");

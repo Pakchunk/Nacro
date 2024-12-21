@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-TextOnlyBase_XS-SortLabelLight.ButtonStyle-TextOnlyBase_XS-SortLabelLight_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C final : public UButtonStyleMinusTextOnlyBase_SMinusB_Blue_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C");
-static_assert(sizeof(UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C");
+static_assert(alignof(UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C) == 0x000008, "Wrong alignment on UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C");
+static_assert(sizeof(UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C) == 0x000530, "Wrong size on UButtonStyleMinusTextOnlyBase_XSMinusSortLabelLight_C");
 
 }
 

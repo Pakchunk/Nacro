@@ -21,12 +21,12 @@ namespace SDK::Params
 {
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.ExecuteUbergraph_FrontEndRewards_ListRewards
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetDesiredSize_ReturnValue;               // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetDesiredSize_ReturnValue;               // 0x0004(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,12 +50,12 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0078(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0078(0x0008)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue3;              // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards) == 0x11821D80, "Wrong alignment on FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards");
-static_assert(sizeof(FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards) == 0x11821D80, "Wrong size on FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards");
+static_assert(alignof(FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards) == 0x000008, "Wrong alignment on FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards");
+static_assert(sizeof(FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards) == 0x000088, "Wrong size on FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards, EntryPoint) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards, CallFunc_GetDesiredSize_ReturnValue) == 0x000004, "Member 'FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards::CallFunc_GetDesiredSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards, CallFunc_BreakVector2D_X) == 0x00000C, "Member 'FrontEndRewards_ListRewards_C_ExecuteUbergraph_FrontEndRewards_ListRewards::CallFunc_BreakVector2D_X' has a wrong offset!");
@@ -164,39 +164,39 @@ static_assert(sizeof(FrontEndRewards_ListRewards_C_SelectNextCard) == 0x000004, 
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SelectNextCard, CallFunc_Add_IntInt_ReturnValue) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_SelectNextCard::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.GetCardAlignment
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00AC (0x00AC - 0x0000)
 struct FrontEndRewards_ListRewards_C_GetCardAlignment final
 {
 public:
 	int32                                         CardQueueIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CardListIndex;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Alignment;                                         // 0x0008(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               Anchors;                                           // 0x0010(0x11827900)(Parm, OutParm, NoDestructor)
+	struct FVector2D                              Alignment;                                         // 0x0008(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               Anchors;                                           // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 	float                                         Scale;                                             // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Offset;                                            // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Angle;                                             // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Translation;                                       // 0x002C(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Translation;                                       // 0x002C(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DropShadowDepth;                                   // 0x0034(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CardQueueOffset;                                   // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CardWidth;                                         // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0040(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0048(0x11827900)(NoDestructor)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               K2Node_MakeStruct_Anchors2;                        // 0x0060(0x11827900)(NoDestructor)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue3;                // 0x0070(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               K2Node_MakeStruct_Anchors3;                        // 0x0078(0x11827900)(NoDestructor)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0040(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0048(0x0010)(NoDestructor)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x0058(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               K2Node_MakeStruct_Anchors2;                        // 0x0060(0x0010)(NoDestructor)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue3;                // 0x0070(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               K2Node_MakeStruct_Anchors3;                        // 0x0078(0x0010)(NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8A[0x2];                                       // 0x008A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue2;           // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue4;                // 0x0098(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue4;                // 0x0098(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue5;                // 0x00A4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue5;                // 0x00A4(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_ListRewards_C_GetCardAlignment) == 0x11827900, "Wrong alignment on FrontEndRewards_ListRewards_C_GetCardAlignment");
-static_assert(sizeof(FrontEndRewards_ListRewards_C_GetCardAlignment) == 0x11827900, "Wrong size on FrontEndRewards_ListRewards_C_GetCardAlignment");
+static_assert(alignof(FrontEndRewards_ListRewards_C_GetCardAlignment) == 0x000004, "Wrong alignment on FrontEndRewards_ListRewards_C_GetCardAlignment");
+static_assert(sizeof(FrontEndRewards_ListRewards_C_GetCardAlignment) == 0x0000AC, "Wrong size on FrontEndRewards_ListRewards_C_GetCardAlignment");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, CardQueueIndex) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::CardQueueIndex' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, CardListIndex) == 0x000004, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::CardListIndex' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, Alignment) == 0x000008, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::Alignment' has a wrong offset!");
@@ -252,7 +252,7 @@ static_assert(sizeof(FrontEndRewards_ListRewards_C_SelectPreviousCard) == 0x0000
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SelectPreviousCard, CallFunc_Subtract_IntInt_ReturnValue) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_SelectPreviousCard::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.SetCardAlignment
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct FrontEndRewards_ListRewards_C_SetCardAlignment final
 {
 public:
@@ -269,21 +269,21 @@ public:
 	class UCanvasPanelSlot*                       K2Node_DynamicCast_AsCanvas_Panel_Slot;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                CallFunc_GetOffsets_ReturnValue;                   // 0x003C(0x322CBBB8)(NoDestructor)
+	struct FMargin                                CallFunc_GetOffsets_ReturnValue;                   // 0x003C(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetCardAlignment_Alignment;               // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               CallFunc_GetCardAlignment_Anchors;                 // 0x0058(0x11827900)(NoDestructor)
+	struct FVector2D                              CallFunc_GetCardAlignment_Alignment;               // 0x0050(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               CallFunc_GetCardAlignment_Anchors;                 // 0x0058(0x0010)(NoDestructor)
 	float                                         CallFunc_GetCardAlignment_Scale;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetCardAlignment_Offset;                  // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetCardAlignment_Angle;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetCardAlignment_Translation;             // 0x0074(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetCardAlignment_Translation;             // 0x0074(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetCardAlignment_DropShadowDepth;         // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0080(0x322CBBB8)(NoDestructor)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0090(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FWidgetTransform                       K2Node_MakeStruct_WidgetTransform;                 // 0x0098(0x11827900)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0080(0x0010)(NoDestructor)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0090(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FWidgetTransform                       K2Node_MakeStruct_WidgetTransform;                 // 0x0098(0x001C)(NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_ListRewards_C_SetCardAlignment) == 0x322CBBB8, "Wrong alignment on FrontEndRewards_ListRewards_C_SetCardAlignment");
-static_assert(sizeof(FrontEndRewards_ListRewards_C_SetCardAlignment) == 0x322CBBB8, "Wrong size on FrontEndRewards_ListRewards_C_SetCardAlignment");
+static_assert(alignof(FrontEndRewards_ListRewards_C_SetCardAlignment) == 0x000008, "Wrong alignment on FrontEndRewards_ListRewards_C_SetCardAlignment");
+static_assert(sizeof(FrontEndRewards_ListRewards_C_SetCardAlignment) == 0x0000B8, "Wrong size on FrontEndRewards_ListRewards_C_SetCardAlignment");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SetCardAlignment, CardWidget) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_SetCardAlignment::CardWidget' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SetCardAlignment, SelectionIndex) == 0x000008, "Member 'FrontEndRewards_ListRewards_C_SetCardAlignment::SelectionIndex' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SetCardAlignment, CanvasPanelSlot) == 0x000010, "Member 'FrontEndRewards_ListRewards_C_SetCardAlignment::CanvasPanelSlot' has a wrong offset!");
@@ -333,7 +333,7 @@ static_assert(offsetof(FrontEndRewards_ListRewards_C_SetItemDescription, CallFun
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SetItemDescription, CallFunc_IsValid_ReturnValue) == 0x00003D, "Member 'FrontEndRewards_ListRewards_C_SetItemDescription::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.PlayCardSlide
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct FrontEndRewards_ListRewards_C_PlayCardSlide final
 {
 public:
@@ -342,17 +342,17 @@ public:
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Find_ReturnValue2;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetCardAlignment_Alignment;               // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               CallFunc_GetCardAlignment_Anchors;                 // 0x0020(0x11827900)(NoDestructor)
+	struct FVector2D                              CallFunc_GetCardAlignment_Alignment;               // 0x0018(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               CallFunc_GetCardAlignment_Anchors;                 // 0x0020(0x0010)(NoDestructor)
 	float                                         CallFunc_GetCardAlignment_Scale;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetCardAlignment_Offset;                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetCardAlignment_Angle;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetCardAlignment_Translation;             // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetCardAlignment_Translation;             // 0x003C(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetCardAlignment_DropShadowDepth;         // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_ListRewards_C_PlayCardSlide) == 0x11827900, "Wrong alignment on FrontEndRewards_ListRewards_C_PlayCardSlide");
-static_assert(sizeof(FrontEndRewards_ListRewards_C_PlayCardSlide) == 0x11827900, "Wrong size on FrontEndRewards_ListRewards_C_PlayCardSlide");
+static_assert(alignof(FrontEndRewards_ListRewards_C_PlayCardSlide) == 0x000008, "Wrong alignment on FrontEndRewards_ListRewards_C_PlayCardSlide");
+static_assert(sizeof(FrontEndRewards_ListRewards_C_PlayCardSlide) == 0x000050, "Wrong size on FrontEndRewards_ListRewards_C_PlayCardSlide");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_PlayCardSlide, RewardsItemCard) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_PlayCardSlide::RewardsItemCard' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_PlayCardSlide, StaggerDelay) == 0x000008, "Member 'FrontEndRewards_ListRewards_C_PlayCardSlide::StaggerDelay' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_PlayCardSlide, CallFunc_Array_Find_ReturnValue) == 0x00000C, "Member 'FrontEndRewards_ListRewards_C_PlayCardSlide::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
@@ -415,7 +415,7 @@ static_assert(sizeof(FrontEndRewards_ListRewards_C_SetCardSelected) == 0x000008,
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SetCardSelected, Card) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_SetCardSelected::Card' has a wrong offset!");
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.SelectCard
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct FrontEndRewards_ListRewards_C_SelectCard final
 {
 public:
@@ -425,8 +425,8 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0030(0x11821D80)(NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x0038(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0030(0x0008)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x0038(0x0008)(NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -460,8 +460,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_ListRewards_C_SelectCard) == 0x11821D80, "Wrong alignment on FrontEndRewards_ListRewards_C_SelectCard");
-static_assert(sizeof(FrontEndRewards_ListRewards_C_SelectCard) == 0x11821D80, "Wrong size on FrontEndRewards_ListRewards_C_SelectCard");
+static_assert(alignof(FrontEndRewards_ListRewards_C_SelectCard) == 0x000008, "Wrong alignment on FrontEndRewards_ListRewards_C_SelectCard");
+static_assert(sizeof(FrontEndRewards_ListRewards_C_SelectCard) == 0x0000E0, "Wrong size on FrontEndRewards_ListRewards_C_SelectCard");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SelectCard, InNewIndex) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_SelectCard::InNewIndex' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SelectCard, OldIndex) == 0x000004, "Member 'FrontEndRewards_ListRewards_C_SelectCard::OldIndex' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SelectCard, NewIndex) == 0x000008, "Member 'FrontEndRewards_ListRewards_C_SelectCard::NewIndex' has a wrong offset!");
@@ -622,14 +622,14 @@ static_assert(offsetof(FrontEndRewards_ListRewards_C_EnableInputActions, CallFun
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.AddInputActions
 // 0x0030 (0x0030 - 0x0000)
-struct FrontEndRewards_ListRewards_C_AddInputActions final
+struct alignas(0x08) FrontEndRewards_ListRewards_C_AddInputActions final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate3;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_ListRewards_C_AddInputActions) == 0x000004, "Wrong alignment on FrontEndRewards_ListRewards_C_AddInputActions");
+static_assert(alignof(FrontEndRewards_ListRewards_C_AddInputActions) == 0x000008, "Wrong alignment on FrontEndRewards_ListRewards_C_AddInputActions");
 static_assert(sizeof(FrontEndRewards_ListRewards_C_AddInputActions) == 0x000030, "Wrong size on FrontEndRewards_ListRewards_C_AddInputActions");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_AddInputActions, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_AddInputActions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_AddInputActions, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'FrontEndRewards_ListRewards_C_AddInputActions::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -637,13 +637,13 @@ static_assert(offsetof(FrontEndRewards_ListRewards_C_AddInputActions, K2Node_Cre
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.BindEvents
 // 0x0020 (0x0020 - 0x0000)
-struct FrontEndRewards_ListRewards_C_BindEvents final
+struct alignas(0x08) FrontEndRewards_ListRewards_C_BindEvents final
 {
 public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_ListRewards_C_BindEvents) == 0x000004, "Wrong alignment on FrontEndRewards_ListRewards_C_BindEvents");
+static_assert(alignof(FrontEndRewards_ListRewards_C_BindEvents) == 0x000008, "Wrong alignment on FrontEndRewards_ListRewards_C_BindEvents");
 static_assert(sizeof(FrontEndRewards_ListRewards_C_BindEvents) == 0x000020, "Wrong size on FrontEndRewards_ListRewards_C_BindEvents");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_BindEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_BindEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_BindEvents, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'FrontEndRewards_ListRewards_C_BindEvents::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -693,7 +693,7 @@ static_assert(offsetof(FrontEndRewards_ListRewards_C_SkipTransitionIn, CallFunc_
 static_assert(offsetof(FrontEndRewards_ListRewards_C_SkipTransitionIn, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'FrontEndRewards_ListRewards_C_SkipTransitionIn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.Set DisplayName and Description Widget
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget final
 {
 public:
@@ -704,13 +704,13 @@ public:
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0028(0x0018)()
 	bool                                          CallFunc_IsSchematic_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0098(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
 };
-static_assert(alignof(FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget) == 0x11821D80, "Wrong alignment on FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget");
-static_assert(sizeof(FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget) == 0x11821D80, "Wrong size on FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget");
+static_assert(alignof(FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget) == 0x000008, "Wrong alignment on FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget");
+static_assert(sizeof(FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget) == 0x0000C8, "Wrong size on FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget, Item) == 0x000000, "Member 'FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget::Item' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget, Description) == 0x000008, "Member 'FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget::Description' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget, Temp_bool_Variable) == 0x000020, "Member 'FrontEndRewards_ListRewards_C_Set_DisplayName_and_Description_Widget::Temp_bool_Variable' has a wrong offset!");

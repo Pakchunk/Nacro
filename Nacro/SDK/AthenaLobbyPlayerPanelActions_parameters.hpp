@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.ExecuteUbergraph_AthenaLobbyPlayerPanelActions
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions final
 {
 public:
@@ -52,14 +52,14 @@ public:
 	bool                                          CallFunc_IsValidNetID_ReturnValue2;                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValidNetID_ReturnValue3;                // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Select_Default;                             // 0x0090(0x11821780)(ConstParm, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_Select2_Default;                            // 0x00A8(0x11821780)(ConstParm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_Select_Default;                             // 0x0090(0x0018)(ConstParm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_Select2_Default;                            // 0x00A8(0x0018)(ConstParm, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPlayerInOurParty_ReturnValue;           // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions) == 0x11821780, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions) == 0x11821780, "Wrong size on AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions) == 0x0000D0, "Wrong size on AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions, EntryPoint) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions, Temp_bool_Variable) == 0x000004, "Member 'AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions, Temp_bool_Variable2) == 0x000005, "Member 'AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions::Temp_bool_Variable2' has a wrong offset!");
@@ -90,36 +90,36 @@ static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLo
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions, CallFunc_BooleanAND_ReturnValue) == 0x0000C9, "Member 'AthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature
-// 0x0046 (0x0046 - 0x0000)
-struct alignas(0x46) AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature) == 0x000046, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature) == 0x000046, "Wrong size on AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature
-// 0x04CE (0x04CE - 0x0000)
-struct alignas(0x4CE) AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature) == 0x0004CE, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature) == 0x0004CE, "Wrong size on AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature
-// 0x0021 (0x0021 - 0x0000)
-struct alignas(0x21) AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature) == 0x000021, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature) == 0x000021, "Wrong size on AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ButtonManage_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature
@@ -223,32 +223,32 @@ static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_Refresh, K2Node_Select4_D
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_Refresh, CallFunc_IsLocalPlayer_bIsLocalPlayer) == 0x000014, "Member 'AthenaLobbyPlayerPanelActions_C_Refresh::CallFunc_IsLocalPlayer_bIsLocalPlayer' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsLocalPlayer
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01A8 (0x01A8 - 0x0000)
 struct AthenaLobbyPlayerPanelActions_C_IsLocalPlayer final
 {
 public:
 	bool                                          bIsLocalPlayer;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0010(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0010(0x0190)()
 	bool                                          CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer) == 0x11821780, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsLocalPlayer");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer) == 0x11821780, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsLocalPlayer");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsLocalPlayer");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer) == 0x0001A8, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsLocalPlayer");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer, bIsLocalPlayer) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_IsLocalPlayer::bIsLocalPlayer' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobbyPlayerPanelActions_C_IsLocalPlayer::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000010, "Member 'AthenaLobbyPlayerPanelActions_C_IsLocalPlayer::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer, CallFunc_AreUniqueIDsIdentical_ReturnValue) == 0x0001A0, "Member 'AthenaLobbyPlayerPanelActions_C_IsLocalPlayer::CallFunc_AreUniqueIDsIdentical_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsMissionLocalPlayersOutpost
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost final
 {
 public:
 	bool                                          IsLocalPlayersOutpost;                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMissionDetails                    CallFunc_GetActiveTileMissionDetails_MissionDetails; // 0x0010(0x1182E980)()
+	struct FFortMissionDetails                    CallFunc_GetActiveTileMissionDetails_MissionDetails; // 0x0010(0x0160)()
 	bool                                          CallFunc_GetActiveTileMissionDetails_ReturnValue;  // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -256,8 +256,8 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0182(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost) == 0x1182E980, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost) == 0x1182E980, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost) == 0x000188, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost, IsLocalPlayersOutpost) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost::IsLocalPlayersOutpost' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost, CallFunc_GetActiveTileMissionDetails_MissionDetails) == 0x000010, "Member 'AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost::CallFunc_GetActiveTileMissionDetails_MissionDetails' has a wrong offset!");
@@ -328,13 +328,13 @@ static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_CanInviteToParty, CallFun
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_CanInviteToParty, CallFunc_CanBeInvitedNetID_ReturnValue) == 0x000011, "Member 'AthenaLobbyPlayerPanelActions_C_CanInviteToParty::CallFunc_CanBeInvitedNetID_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsInvitationPending
-// 0x7EA54090 (0x7EA54090 - 0x0000)
-struct alignas(0x7EA54090) AthenaLobbyPlayerPanelActions_C_IsInvitationPending final
+// 0x0060 (0x0060 - 0x0000)
+struct AthenaLobbyPlayerPanelActions_C_IsInvitationPending final
 {
 public:
 	bool                                          bIsInvitationPending;                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       PlayerUniqueId;                                    // 0x0008(0x11821780)(Edit, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       PlayerUniqueId;                                    // 0x0008(0x0018)(Edit, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -350,14 +350,14 @@ public:
 	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select_Default;                             // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Select2_Default;                            // 0x0040(0x11821780)(ConstParm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_Select2_Default;                            // 0x0040(0x0018)(ConstParm, HasGetValueTypeHash)
 	bool                                          K2Node_Select3_Default;                            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasPendingPartyInvitation_ReturnValue;    // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValidNetID_ReturnValue2;                // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsInvitationPending) == 0x7EA54090, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsInvitationPending");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsInvitationPending) == 0x7EA54090, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsInvitationPending");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsInvitationPending) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsInvitationPending");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsInvitationPending) == 0x000060, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsInvitationPending");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsInvitationPending, bIsInvitationPending) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_IsInvitationPending::bIsInvitationPending' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsInvitationPending, PlayerUniqueId) == 0x000008, "Member 'AthenaLobbyPlayerPanelActions_C_IsInvitationPending::PlayerUniqueId' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsInvitationPending, Temp_bool_Variable) == 0x000020, "Member 'AthenaLobbyPlayerPanelActions_C_IsInvitationPending::Temp_bool_Variable' has a wrong offset!");
@@ -444,8 +444,8 @@ static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_HasValidActions, CallFunc
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_HasValidActions, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'AthenaLobbyPlayerPanelActions_C_HasValidActions::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.Focus
-// 0x004B (0x004B - 0x0000)
-struct alignas(0x4B) AthenaLobbyPlayerPanelActions_C_Focus final
+// 0x0020 (0x0020 - 0x0000)
+struct AthenaLobbyPlayerPanelActions_C_Focus final
 {
 public:
 	class UIconTextButton_C*                      CallFunc_GetFirstActiveActionButton_IconTextButton; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -455,8 +455,8 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue2;      // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_Focus) == 0x00004B, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_Focus");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_Focus) == 0x00004B, "Wrong size on AthenaLobbyPlayerPanelActions_C_Focus");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_Focus) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_Focus");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_Focus) == 0x000020, "Wrong size on AthenaLobbyPlayerPanelActions_C_Focus");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_Focus, CallFunc_GetFirstActiveActionButton_IconTextButton) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_Focus::CallFunc_GetFirstActiveActionButton_IconTextButton' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_Focus, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'AthenaLobbyPlayerPanelActions_C_Focus::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_Focus, CallFunc_IsVisible_ReturnValue) == 0x000010, "Member 'AthenaLobbyPlayerPanelActions_C_Focus::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
@@ -492,30 +492,30 @@ static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_OnPartyInvitesCountChanged)
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_OnPartyInvitesCountChanged, InvitesCount) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_OnPartyInvitesCountChanged::InvitesCount' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.OnActiveFriendsCountUpdated
-// 0x0046 (0x0046 - 0x0000)
-struct alignas(0x46) AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated final
+// 0x0004 (0x0004 - 0x0000)
+struct AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated final
 {
 public:
 	int32                                         ActiveFriendsCount;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated) == 0x000046, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated) == 0x000046, "Wrong size on AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated) == 0x000004, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated) == 0x000004, "Wrong size on AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated, ActiveFriendsCount) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated::ActiveFriendsCount' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.SetTeamMemberInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo final
 {
 public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo) == 0x11821780, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo) == 0x11821780, "Wrong size on AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo) == 0x000190, "Wrong size on AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo, TeamMemberInfo_0) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo::TeamMemberInfo_0' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsTeamMemberLocalPlayer
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x28) AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer final
+// 0x0018 (0x0018 - 0x0000)
+struct AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
@@ -523,8 +523,8 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLocalPlayersUniqueID_ReturnValue;       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer) == 0x000028, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer");
-static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer) == 0x000028, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer");
+static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer");
+static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer) == 0x000018, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer, ReturnValue) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer, CallFunc_IsLocalPlayersUniqueID_ReturnValue) == 0x000010, "Member 'AthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer::CallFunc_IsLocalPlayersUniqueID_ReturnValue' has a wrong offset!");

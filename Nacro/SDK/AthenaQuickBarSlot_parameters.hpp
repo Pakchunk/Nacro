@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function AthenaQuickBarSlot.AthenaQuickBarSlot_C.GetKeyBindingAction_Gamepad
-// 0x06F2 (0x06F2 - 0x0000)
-struct alignas(0x6F2) AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad final
+// 0x0070 (0x0070 - 0x0000)
+struct AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad final
 {
 public:
 	class FName                                   KeyBindingAction;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,8 +59,8 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchInteger3_CmpSuccess;                  // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad) == 0x0006F2, "Wrong alignment on AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad");
-static_assert(sizeof(AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad) == 0x0006F2, "Wrong size on AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad");
+static_assert(alignof(AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad) == 0x000008, "Wrong alignment on AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad");
+static_assert(sizeof(AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad) == 0x000070, "Wrong size on AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad");
 static_assert(offsetof(AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad, KeyBindingAction) == 0x000000, "Member 'AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad::KeyBindingAction' has a wrong offset!");
 static_assert(offsetof(AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad, OnlyShowBuildingPieceNextPrevKeybinds) == 0x000008, "Member 'AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad::OnlyShowBuildingPieceNextPrevKeybinds' has a wrong offset!");
 static_assert(offsetof(AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad, FocusedSlotIndex) == 0x00000C, "Member 'AthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad::FocusedSlotIndex' has a wrong offset!");

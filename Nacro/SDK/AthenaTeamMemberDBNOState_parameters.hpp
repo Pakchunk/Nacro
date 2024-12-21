@@ -17,32 +17,32 @@ namespace SDK::Params
 {
 
 // Function AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C.ExecuteUbergraph_AthenaTeamMemberDBNOState
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState) == 0x10461A40, "Wrong alignment on AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState");
-static_assert(sizeof(AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState) == 0x10461A40, "Wrong size on AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState");
+static_assert(alignof(AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState) == 0x000004, "Wrong alignment on AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState");
+static_assert(sizeof(AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState) == 0x000008, "Wrong size on AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState");
 static_assert(offsetof(AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState, EntryPoint) == 0x000000, "Member 'AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState, K2Node_Event_IsDesignTime) == 0x000004, "Member 'AthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C.PreConstruct
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) AthenaTeamMemberDBNOState_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaTeamMemberDBNOState_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberDBNOState_C_PreConstruct) == 0x10461A40, "Wrong alignment on AthenaTeamMemberDBNOState_C_PreConstruct");
-static_assert(sizeof(AthenaTeamMemberDBNOState_C_PreConstruct) == 0x10461A40, "Wrong size on AthenaTeamMemberDBNOState_C_PreConstruct");
+static_assert(alignof(AthenaTeamMemberDBNOState_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaTeamMemberDBNOState_C_PreConstruct");
+static_assert(sizeof(AthenaTeamMemberDBNOState_C_PreConstruct) == 0x000001, "Wrong size on AthenaTeamMemberDBNOState_C_PreConstruct");
 static_assert(offsetof(AthenaTeamMemberDBNOState_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaTeamMemberDBNOState_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C.Set DBNO
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) AthenaTeamMemberDBNOState_C_Set_DBNO final
+// 0x0004 (0x0004 - 0x0000)
+struct AthenaTeamMemberDBNOState_C_Set_DBNO final
 {
 public:
 	bool                                          Is_DBNO;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,8 +50,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberDBNOState_C_Set_DBNO) == 0x10461A40, "Wrong alignment on AthenaTeamMemberDBNOState_C_Set_DBNO");
-static_assert(sizeof(AthenaTeamMemberDBNOState_C_Set_DBNO) == 0x10461A40, "Wrong size on AthenaTeamMemberDBNOState_C_Set_DBNO");
+static_assert(alignof(AthenaTeamMemberDBNOState_C_Set_DBNO) == 0x000001, "Wrong alignment on AthenaTeamMemberDBNOState_C_Set_DBNO");
+static_assert(sizeof(AthenaTeamMemberDBNOState_C_Set_DBNO) == 0x000004, "Wrong size on AthenaTeamMemberDBNOState_C_Set_DBNO");
 static_assert(offsetof(AthenaTeamMemberDBNOState_C_Set_DBNO, Is_DBNO) == 0x000000, "Member 'AthenaTeamMemberDBNOState_C_Set_DBNO::Is_DBNO' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberDBNOState_C_Set_DBNO, Temp_bool_Variable) == 0x000001, "Member 'AthenaTeamMemberDBNOState_C_Set_DBNO::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberDBNOState_C_Set_DBNO, Temp_byte_Variable) == 0x000002, "Member 'AthenaTeamMemberDBNOState_C_Set_DBNO::Temp_byte_Variable' has a wrong offset!");

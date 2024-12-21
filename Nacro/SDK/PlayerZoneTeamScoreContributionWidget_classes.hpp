@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x02B8 (0x04F8 - 0x0240)
 class UPlayerZoneTeamScoreContributionWidget_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       IntroAnim;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          Border_Shell;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPlayerBanner_C*                        PlayerBanner;                                      // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextPlayerName;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextPlayerScoreCounter;                            // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortPlayerScoreReport                 ScoreReport;                                       // 0x0270(0x11821780)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFortPlayerScoreReport                 ScoreReport;                                       // 0x0270(0x0288)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget(int32 EntryPoint);
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UPlayerZoneTeamScoreContributionWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerZoneTeamScoreContributionWidget_C) == 0x322CBBB8, "Wrong alignment on UPlayerZoneTeamScoreContributionWidget_C");
-static_assert(sizeof(UPlayerZoneTeamScoreContributionWidget_C) == 0x322CBBB8, "Wrong size on UPlayerZoneTeamScoreContributionWidget_C");
+static_assert(alignof(UPlayerZoneTeamScoreContributionWidget_C) == 0x000008, "Wrong alignment on UPlayerZoneTeamScoreContributionWidget_C");
+static_assert(sizeof(UPlayerZoneTeamScoreContributionWidget_C) == 0x0004F8, "Wrong size on UPlayerZoneTeamScoreContributionWidget_C");
 static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, UberGraphFrame) == 0x000240, "Member 'UPlayerZoneTeamScoreContributionWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, IntroAnim) == 0x000248, "Member 'UPlayerZoneTeamScoreContributionWidget_C::IntroAnim' has a wrong offset!");
 static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, Border_Shell) == 0x000250, "Member 'UPlayerZoneTeamScoreContributionWidget_C::Border_Shell' has a wrong offset!");

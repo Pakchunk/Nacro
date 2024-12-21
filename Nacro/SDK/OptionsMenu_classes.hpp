@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OptionsMenu.OptionsMenu_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0090 (0x0470 - 0x03E0)
 class UOptionsMenu_C final : public UFortOptionsMenu
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          BorderBackground;                                  // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  CurrentTabSwitcher;                                // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -89,8 +89,8 @@ public:
 		return GetDefaultObjImpl<UOptionsMenu_C>();
 	}
 };
-static_assert(alignof(UOptionsMenu_C) == 0x322CBBB8, "Wrong alignment on UOptionsMenu_C");
-static_assert(sizeof(UOptionsMenu_C) == 0x322CBBB8, "Wrong size on UOptionsMenu_C");
+static_assert(alignof(UOptionsMenu_C) == 0x000008, "Wrong alignment on UOptionsMenu_C");
+static_assert(sizeof(UOptionsMenu_C) == 0x000470, "Wrong size on UOptionsMenu_C");
 static_assert(offsetof(UOptionsMenu_C, UberGraphFrame) == 0x0003E0, "Member 'UOptionsMenu_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOptionsMenu_C, BorderBackground) == 0x0003E8, "Member 'UOptionsMenu_C::BorderBackground' has a wrong offset!");
 static_assert(offsetof(UOptionsMenu_C, CurrentTabSwitcher) == 0x0003F0, "Member 'UOptionsMenu_C::CurrentTabSwitcher' has a wrong offset!");

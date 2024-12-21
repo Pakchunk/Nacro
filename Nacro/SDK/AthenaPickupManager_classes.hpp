@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaPickupManager.AthenaPickupManager_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x02B8 - 0x0260)
 class UAthenaPickupManager_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UPackResource_C*                        _Pack_Resource__Metal;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPackResource_C*                        _Pack_Resource__Stone;                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPackResource_C*                        _Pack_Resource__Wood;                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -57,8 +57,8 @@ public:
 		return GetDefaultObjImpl<UAthenaPickupManager_C>();
 	}
 };
-static_assert(alignof(UAthenaPickupManager_C) == 0x322CBBB8, "Wrong alignment on UAthenaPickupManager_C");
-static_assert(sizeof(UAthenaPickupManager_C) == 0x322CBBB8, "Wrong size on UAthenaPickupManager_C");
+static_assert(alignof(UAthenaPickupManager_C) == 0x000008, "Wrong alignment on UAthenaPickupManager_C");
+static_assert(sizeof(UAthenaPickupManager_C) == 0x0002B8, "Wrong size on UAthenaPickupManager_C");
 static_assert(offsetof(UAthenaPickupManager_C, UberGraphFrame) == 0x000260, "Member 'UAthenaPickupManager_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaPickupManager_C, _Pack_Resource__Metal) == 0x000268, "Member 'UAthenaPickupManager_C::_Pack_Resource__Metal' has a wrong offset!");
 static_assert(offsetof(UAthenaPickupManager_C, _Pack_Resource__Stone) == 0x000270, "Member 'UAthenaPickupManager_C::_Pack_Resource__Stone' has a wrong offset!");

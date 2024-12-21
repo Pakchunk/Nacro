@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function ObjectivesPage.ObjectivesPage_C.ExecuteUbergraph_ObjectivesPage
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage final
 {
 public:
@@ -30,11 +30,11 @@ public:
 	int32                                         CallFunc_GetSelectedButtonIndex_ReturnValue;       // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          CallFunc_GetButtonAtIndex_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0050(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0050(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate4;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0070(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0070(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x0090(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x0090(0x0010)(NoDestructor)
 	bool                                          CallFunc_MissionHasModifiers_MissionHasModifiers;  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage) == 0x1182EB00, "Wrong alignment on ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage");
-static_assert(sizeof(ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage) == 0x1182EB00, "Wrong size on ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage");
+static_assert(alignof(ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage) == 0x000008, "Wrong alignment on ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage");
+static_assert(sizeof(ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage) == 0x0000D0, "Wrong size on ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage");
 static_assert(offsetof(ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage, EntryPoint) == 0x000000, "Member 'ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'ObjectivesPage_C_ExecuteUbergraph_ObjectivesPage::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -138,8 +138,8 @@ static_assert(offsetof(ObjectivesPage_C_ConfigureModifiersView, K2Node_DynamicCa
 static_assert(offsetof(ObjectivesPage_C_ConfigureModifiersView, CallFunc_GetActiveModifiers_OutActiveModifiers) == 0x000020, "Member 'ObjectivesPage_C_ConfigureModifiersView::CallFunc_GetActiveModifiers_OutActiveModifiers' has a wrong offset!");
 
 // Function ObjectivesPage.ObjectivesPage_C.MissionHasModifiers
-// 0x7FFFFFFF (0x7FFFFFFF - 0x0000)
-struct alignas(0x7FFFFFFF) ObjectivesPage_C_MissionHasModifiers final
+// 0x0020 (0x0020 - 0x0000)
+struct ObjectivesPage_C_MissionHasModifiers final
 {
 public:
 	bool                                          MissionHasModifiers_0;                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -149,8 +149,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasActiveGameplayModifiers_ReturnValue;   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ObjectivesPage_C_MissionHasModifiers) == 0x7FFFFFFF, "Wrong alignment on ObjectivesPage_C_MissionHasModifiers");
-static_assert(sizeof(ObjectivesPage_C_MissionHasModifiers) == 0x7FFFFFFF, "Wrong size on ObjectivesPage_C_MissionHasModifiers");
+static_assert(alignof(ObjectivesPage_C_MissionHasModifiers) == 0x000008, "Wrong alignment on ObjectivesPage_C_MissionHasModifiers");
+static_assert(sizeof(ObjectivesPage_C_MissionHasModifiers) == 0x000020, "Wrong size on ObjectivesPage_C_MissionHasModifiers");
 static_assert(offsetof(ObjectivesPage_C_MissionHasModifiers, MissionHasModifiers_0) == 0x000000, "Member 'ObjectivesPage_C_MissionHasModifiers::MissionHasModifiers_0' has a wrong offset!");
 static_assert(offsetof(ObjectivesPage_C_MissionHasModifiers, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'ObjectivesPage_C_MissionHasModifiers::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ObjectivesPage_C_MissionHasModifiers, K2Node_DynamicCast_AsFort_Game_State_Zone) == 0x000010, "Member 'ObjectivesPage_C_MissionHasModifiers::K2Node_DynamicCast_AsFort_Game_State_Zone' has a wrong offset!");

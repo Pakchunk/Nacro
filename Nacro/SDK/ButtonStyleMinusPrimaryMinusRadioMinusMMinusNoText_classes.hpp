@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-Primary-Radio-M-NoText.ButtonStyle-Primary-Radio-M-NoText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C");
-static_assert(sizeof(UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C");
+static_assert(alignof(UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C) == 0x000008, "Wrong alignment on UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C");
+static_assert(sizeof(UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C) == 0x000530, "Wrong size on UButtonStyleMinusPrimaryMinusRadioMinusMMinusNoText_C");
 
 }
 

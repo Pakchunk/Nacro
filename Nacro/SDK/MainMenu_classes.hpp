@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MainMenu.MainMenu_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01D8 (0x0410 - 0x0238)
 class UMainMenu_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      AthenaPartyPrivacyButton;                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      BoostsButton;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ButtonCredits;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -195,8 +195,8 @@ public:
 		return GetDefaultObjImpl<UMainMenu_C>();
 	}
 };
-static_assert(alignof(UMainMenu_C) == 0x322CBBB8, "Wrong alignment on UMainMenu_C");
-static_assert(sizeof(UMainMenu_C) == 0x322CBBB8, "Wrong size on UMainMenu_C");
+static_assert(alignof(UMainMenu_C) == 0x000008, "Wrong alignment on UMainMenu_C");
+static_assert(sizeof(UMainMenu_C) == 0x000410, "Wrong size on UMainMenu_C");
 static_assert(offsetof(UMainMenu_C, UberGraphFrame) == 0x000238, "Member 'UMainMenu_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, AthenaPartyPrivacyButton) == 0x000240, "Member 'UMainMenu_C::AthenaPartyPrivacyButton' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, BoostsButton) == 0x000248, "Member 'UMainMenu_C::BoostsButton' has a wrong offset!");

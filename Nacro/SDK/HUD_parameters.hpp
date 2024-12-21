@@ -22,7 +22,7 @@ namespace SDK::Params
 {
 
 // Function HUD.HUD_C.ExecuteUbergraph_HUD
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0520 (0x0520 - 0x0000)
 struct HUD_C_ExecuteUbergraph_HUD final
 {
 public:
@@ -77,7 +77,7 @@ public:
 	uint8                                         Pad_175[0x3];                                      // 0x0175(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEndOfDayRecap                         K2Node_CustomEvent_EndOfDayRecap;                  // 0x0180(0x11821780)(ConstParm)
+	struct FEndOfDayRecap                         K2Node_CustomEvent_EndOfDayRecap;                  // 0x0180(0x0020)(ConstParm)
 	TDelegate<void(EFortCompletionResult Result)> K2Node_CreateDelegate_OutputDelegate11;            // 0x01A0(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(EFortPickerMode Mode, int32 InitialOption, bool bIgnoreFirstAccept)> K2Node_CreateDelegate_OutputDelegate12;            // 0x01B0(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class AActor* PointOfInterest, class FText DisplayText, class UTexture2D* DisplayImage)> K2Node_CreateDelegate_OutputDelegate13;            // 0x01C0(0x0010)(ZeroConstructor, NoDestructor)
@@ -85,7 +85,8 @@ public:
 	TDelegate<void(class AActor* PointOfInterest)> K2Node_CreateDelegate_OutputDelegate15;            // 0x01E0(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue10;                 // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Event_Widget;                               // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FContentPushState                      K2Node_Event_State;                                // 0x0200(0x1182E980)(NoDestructor)
+	struct FContentPushState                      K2Node_Event_State;                                // 0x0200(0x0003)(NoDestructor)
+	uint8                                         Pad_203[0x5];                                      // 0x0203(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_GetCachedWidget_ReturnValue;              // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMgmtTabsScreen_C*                      K2Node_DynamicCast_AsMgmt_Tabs_Screen;             // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -94,15 +95,15 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate16;            // 0x0228(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortQuestItem*                         CallFunc_Array_Get_Item;                           // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0240(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0240(0x0090)()
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x02D0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x02E8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x02E8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0328(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          K2Node_CustomEvent_UsingGamepad;                   // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0340(0x0018)()
 	uint8                                         Pad_358[0x8];                                      // 0x0358(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDialogDescription                 K2Node_MakeStruct_FortDialogDescription;           // 0x0360(0x11827900)(ContainsInstancedReference)
+	struct FFortDialogDescription                 K2Node_MakeStruct_FortDialogDescription;           // 0x0360(0x0170)(ContainsInstancedReference)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAsyncAction_TriggerNotification*   CallFunc_TriggerNotification_ReturnValue;          // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -113,8 +114,8 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue12;                 // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(struct FGameplayTagContainer& HiddenHUDElementTags)> K2Node_CreateDelegate_OutputDelegate18;            // 0x0508(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(HUD_C_ExecuteUbergraph_HUD) == 0x1182E980, "Wrong alignment on HUD_C_ExecuteUbergraph_HUD");
-static_assert(sizeof(HUD_C_ExecuteUbergraph_HUD) == 0x1182E980, "Wrong size on HUD_C_ExecuteUbergraph_HUD");
+static_assert(alignof(HUD_C_ExecuteUbergraph_HUD) == 0x000010, "Wrong alignment on HUD_C_ExecuteUbergraph_HUD");
+static_assert(sizeof(HUD_C_ExecuteUbergraph_HUD) == 0x000520, "Wrong size on HUD_C_ExecuteUbergraph_HUD");
 static_assert(offsetof(HUD_C_ExecuteUbergraph_HUD, EntryPoint) == 0x000000, "Member 'HUD_C_ExecuteUbergraph_HUD::EntryPoint' has a wrong offset!");
 static_assert(offsetof(HUD_C_ExecuteUbergraph_HUD, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'HUD_C_ExecuteUbergraph_HUD::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUD_C_ExecuteUbergraph_HUD, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'HUD_C_ExecuteUbergraph_HUD::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -201,60 +202,60 @@ static_assert(sizeof(HUD_C_HandleInputMethodChanged) == 0x000001, "Wrong size on
 static_assert(offsetof(HUD_C_HandleInputMethodChanged, UsingGamepad) == 0x000000, "Member 'HUD_C_HandleInputMethodChanged::UsingGamepad' has a wrong offset!");
 
 // Function HUD.HUD_C.PushContentWidgetInternal
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct HUD_C_PushContentWidgetInternal final
 {
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FContentPushState                      State;                                             // 0x0008(0x1182E980)(Parm, NoDestructor)
+	struct FContentPushState                      State;                                             // 0x0008(0x0003)(Parm, NoDestructor)
 };
-static_assert(alignof(HUD_C_PushContentWidgetInternal) == 0x1182E980, "Wrong alignment on HUD_C_PushContentWidgetInternal");
-static_assert(sizeof(HUD_C_PushContentWidgetInternal) == 0x1182E980, "Wrong size on HUD_C_PushContentWidgetInternal");
+static_assert(alignof(HUD_C_PushContentWidgetInternal) == 0x000008, "Wrong alignment on HUD_C_PushContentWidgetInternal");
+static_assert(sizeof(HUD_C_PushContentWidgetInternal) == 0x000010, "Wrong size on HUD_C_PushContentWidgetInternal");
 static_assert(offsetof(HUD_C_PushContentWidgetInternal, Widget) == 0x000000, "Member 'HUD_C_PushContentWidgetInternal::Widget' has a wrong offset!");
 static_assert(offsetof(HUD_C_PushContentWidgetInternal, State) == 0x000008, "Member 'HUD_C_PushContentWidgetInternal::State' has a wrong offset!");
 
 // Function HUD.HUD_C.EndOfDayRecapStarted
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct HUD_C_EndOfDayRecapStarted final
 {
 public:
-	struct FEndOfDayRecap                         EndOfDayRecap;                                     // 0x0000(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEndOfDayRecap                         EndOfDayRecap;                                     // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(HUD_C_EndOfDayRecapStarted) == 0x11821780, "Wrong alignment on HUD_C_EndOfDayRecapStarted");
-static_assert(sizeof(HUD_C_EndOfDayRecapStarted) == 0x11821780, "Wrong size on HUD_C_EndOfDayRecapStarted");
+static_assert(alignof(HUD_C_EndOfDayRecapStarted) == 0x000008, "Wrong alignment on HUD_C_EndOfDayRecapStarted");
+static_assert(sizeof(HUD_C_EndOfDayRecapStarted) == 0x000020, "Wrong size on HUD_C_EndOfDayRecapStarted");
 static_assert(offsetof(HUD_C_EndOfDayRecapStarted, EndOfDayRecap) == 0x000000, "Member 'HUD_C_EndOfDayRecapStarted::EndOfDayRecap' has a wrong offset!");
 
 // Function HUD.HUD_C.LoadingScreenChanged
-// 0x0B72 (0x0B72 - 0x0000)
-struct alignas(0xB72) HUD_C_LoadingScreenChanged final
+// 0x0001 (0x0001 - 0x0000)
+struct HUD_C_LoadingScreenChanged final
 {
 public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_LoadingScreenChanged) == 0x000B72, "Wrong alignment on HUD_C_LoadingScreenChanged");
-static_assert(sizeof(HUD_C_LoadingScreenChanged) == 0x000B72, "Wrong size on HUD_C_LoadingScreenChanged");
+static_assert(alignof(HUD_C_LoadingScreenChanged) == 0x000001, "Wrong alignment on HUD_C_LoadingScreenChanged");
+static_assert(sizeof(HUD_C_LoadingScreenChanged) == 0x000001, "Wrong size on HUD_C_LoadingScreenChanged");
 static_assert(offsetof(HUD_C_LoadingScreenChanged, bVisible) == 0x000000, "Member 'HUD_C_LoadingScreenChanged::bVisible' has a wrong offset!");
 
 // Function HUD.HUD_C.QuestsCompleted
-// 0x007F (0x007F - 0x0000)
-struct alignas(0x7F) HUD_C_QuestsCompleted final
+// 0x0010 (0x0010 - 0x0000)
+struct HUD_C_QuestsCompleted final
 {
 public:
 	TArray<class UFortQuestItem*>                 Quests;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(HUD_C_QuestsCompleted) == 0x00007F, "Wrong alignment on HUD_C_QuestsCompleted");
-static_assert(sizeof(HUD_C_QuestsCompleted) == 0x00007F, "Wrong size on HUD_C_QuestsCompleted");
+static_assert(alignof(HUD_C_QuestsCompleted) == 0x000008, "Wrong alignment on HUD_C_QuestsCompleted");
+static_assert(sizeof(HUD_C_QuestsCompleted) == 0x000010, "Wrong size on HUD_C_QuestsCompleted");
 static_assert(offsetof(HUD_C_QuestsCompleted, Quests) == 0x000000, "Member 'HUD_C_QuestsCompleted::Quests' has a wrong offset!");
 
 // Function HUD.HUD_C.OnEnterState
-// 0x0045 (0x0045 - 0x0000)
-struct alignas(0x45) HUD_C_OnEnterState final
+// 0x0001 (0x0001 - 0x0000)
+struct HUD_C_OnEnterState final
 {
 public:
 	EFortUIState                                  PreviousUIState;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_OnEnterState) == 0x000045, "Wrong alignment on HUD_C_OnEnterState");
-static_assert(sizeof(HUD_C_OnEnterState) == 0x000045, "Wrong size on HUD_C_OnEnterState");
+static_assert(alignof(HUD_C_OnEnterState) == 0x000001, "Wrong alignment on HUD_C_OnEnterState");
+static_assert(sizeof(HUD_C_OnEnterState) == 0x000001, "Wrong size on HUD_C_OnEnterState");
 static_assert(offsetof(HUD_C_OnEnterState, PreviousUIState) == 0x000000, "Member 'HUD_C_OnEnterState::PreviousUIState' has a wrong offset!");
 
 // Function HUD.HUD_C.HandleCursorModeChanged
@@ -330,8 +331,8 @@ static_assert(offsetof(HUD_C_HandleCursorModeChanged, CallFunc_GetContext_Return
 static_assert(offsetof(HUD_C_HandleCursorModeChanged, CallFunc_GetInputManager_ReturnValue2) == 0x0000B0, "Member 'HUD_C_HandleCursorModeChanged::CallFunc_GetInputManager_ReturnValue2' has a wrong offset!");
 
 // Function HUD.HUD_C.HandleQuickbarSlotFocusSlotChanged
-// 0x0050 (0x0050 - 0x0000)
-struct alignas(0x50) HUD_C_HandleQuickbarSlotFocusSlotChanged final
+// 0x000C (0x000C - 0x0000)
+struct HUD_C_HandleQuickbarSlotFocusSlotChanged final
 {
 public:
 	EFortQuickBars                                Quickbar_Index;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -339,33 +340,33 @@ public:
 	int32                                         Slot_0;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_HandleQuickbarSlotFocusSlotChanged) == 0x000050, "Wrong alignment on HUD_C_HandleQuickbarSlotFocusSlotChanged");
-static_assert(sizeof(HUD_C_HandleQuickbarSlotFocusSlotChanged) == 0x000050, "Wrong size on HUD_C_HandleQuickbarSlotFocusSlotChanged");
+static_assert(alignof(HUD_C_HandleQuickbarSlotFocusSlotChanged) == 0x000004, "Wrong alignment on HUD_C_HandleQuickbarSlotFocusSlotChanged");
+static_assert(sizeof(HUD_C_HandleQuickbarSlotFocusSlotChanged) == 0x00000C, "Wrong size on HUD_C_HandleQuickbarSlotFocusSlotChanged");
 static_assert(offsetof(HUD_C_HandleQuickbarSlotFocusSlotChanged, Quickbar_Index) == 0x000000, "Member 'HUD_C_HandleQuickbarSlotFocusSlotChanged::Quickbar_Index' has a wrong offset!");
 static_assert(offsetof(HUD_C_HandleQuickbarSlotFocusSlotChanged, Slot_0) == 0x000004, "Member 'HUD_C_HandleQuickbarSlotFocusSlotChanged::Slot_0' has a wrong offset!");
 static_assert(offsetof(HUD_C_HandleQuickbarSlotFocusSlotChanged, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000008, "Member 'HUD_C_HandleQuickbarSlotFocusSlotChanged::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function HUD.HUD_C.SetQuickbarSizes
-// 0x00A2 (0x00A2 - 0x0000)
-struct alignas(0xA2) HUD_C_SetQuickbarSizes final
+// 0x0010 (0x0010 - 0x0000)
+struct HUD_C_SetQuickbarSizes final
 {
 public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_SetQuickbarSizes) == 0x0000A2, "Wrong alignment on HUD_C_SetQuickbarSizes");
-static_assert(sizeof(HUD_C_SetQuickbarSizes) == 0x0000A2, "Wrong size on HUD_C_SetQuickbarSizes");
+static_assert(alignof(HUD_C_SetQuickbarSizes) == 0x000008, "Wrong alignment on HUD_C_SetQuickbarSizes");
+static_assert(sizeof(HUD_C_SetQuickbarSizes) == 0x000010, "Wrong size on HUD_C_SetQuickbarSizes");
 static_assert(offsetof(HUD_C_SetQuickbarSizes, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'HUD_C_SetQuickbarSizes::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUD_C_SetQuickbarSizes, CallFunc_IsUsingGamepad_ReturnValue) == 0x000008, "Member 'HUD_C_SetQuickbarSizes::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUD_C_SetQuickbarSizes, K2Node_SwitchEnum_CmpSuccess) == 0x000009, "Member 'HUD_C_SetQuickbarSizes::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function HUD.HUD_C.OnHandleAction
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0310 (0x0310 - 0x0000)
 struct HUD_C_OnHandleAction final
 {
 public:
-	struct FEventReply                            Result;                                            // 0x0000(0x11827900)(Parm, OutParm)
+	struct FEventReply                            Result;                                            // 0x0000(0x00B8)(Parm, OutParm)
 	bool                                          bPassThrough;                                      // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          HandleAction;                                      // 0x00B9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -374,16 +375,16 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShouldCloseMenuOnEscape_ReturnValue;      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00D8(0x11827900)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00D8(0x00B8)()
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0198(0x11827900)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0198(0x00B8)()
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            K2Node_Select_Default;                             // 0x0258(0x11827900)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x0258(0x00B8)()
 };
-static_assert(alignof(HUD_C_OnHandleAction) == 0x11827900, "Wrong alignment on HUD_C_OnHandleAction");
-static_assert(sizeof(HUD_C_OnHandleAction) == 0x11827900, "Wrong size on HUD_C_OnHandleAction");
+static_assert(alignof(HUD_C_OnHandleAction) == 0x000008, "Wrong alignment on HUD_C_OnHandleAction");
+static_assert(sizeof(HUD_C_OnHandleAction) == 0x000310, "Wrong size on HUD_C_OnHandleAction");
 static_assert(offsetof(HUD_C_OnHandleAction, Result) == 0x000000, "Member 'HUD_C_OnHandleAction::Result' has a wrong offset!");
 static_assert(offsetof(HUD_C_OnHandleAction, bPassThrough) == 0x0000B8, "Member 'HUD_C_OnHandleAction::bPassThrough' has a wrong offset!");
 static_assert(offsetof(HUD_C_OnHandleAction, HandleAction) == 0x0000B9, "Member 'HUD_C_OnHandleAction::HandleAction' has a wrong offset!");
@@ -419,8 +420,8 @@ static_assert(offsetof(HUD_C_HandleZoneCompleted, CallFunc_GetContext_ReturnValu
 static_assert(offsetof(HUD_C_HandleZoneCompleted, CallFunc_GetContext_ReturnValue3) == 0x000028, "Member 'HUD_C_HandleZoneCompleted::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 
 // Function HUD.HUD_C.OnPlayerTargetingChanged
-// 0x007E (0x007E - 0x0000)
-struct alignas(0x7E) HUD_C_OnPlayerTargetingChanged final
+// 0x0028 (0x0028 - 0x0000)
+struct HUD_C_OnPlayerTargetingChanged final
 {
 public:
 	bool                                          IsTargeting;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -430,8 +431,8 @@ public:
 	class AFortWeaponRanged*                      K2Node_DynamicCast_AsFort_Weapon_Ranged;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_OnPlayerTargetingChanged) == 0x00007E, "Wrong alignment on HUD_C_OnPlayerTargetingChanged");
-static_assert(sizeof(HUD_C_OnPlayerTargetingChanged) == 0x00007E, "Wrong size on HUD_C_OnPlayerTargetingChanged");
+static_assert(alignof(HUD_C_OnPlayerTargetingChanged) == 0x000008, "Wrong alignment on HUD_C_OnPlayerTargetingChanged");
+static_assert(sizeof(HUD_C_OnPlayerTargetingChanged) == 0x000028, "Wrong size on HUD_C_OnPlayerTargetingChanged");
 static_assert(offsetof(HUD_C_OnPlayerTargetingChanged, IsTargeting) == 0x000000, "Member 'HUD_C_OnPlayerTargetingChanged::IsTargeting' has a wrong offset!");
 static_assert(offsetof(HUD_C_OnPlayerTargetingChanged, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'HUD_C_OnPlayerTargetingChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUD_C_OnPlayerTargetingChanged, CallFunc_GetEquippedWeapon_ReturnValue) == 0x000010, "Member 'HUD_C_OnPlayerTargetingChanged::CallFunc_GetEquippedWeapon_ReturnValue' has a wrong offset!");
@@ -439,8 +440,8 @@ static_assert(offsetof(HUD_C_OnPlayerTargetingChanged, K2Node_DynamicCast_AsFort
 static_assert(offsetof(HUD_C_OnPlayerTargetingChanged, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'HUD_C_OnPlayerTargetingChanged::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function HUD.HUD_C.SetCursorModeContent
-// 0x0098 (0x0098 - 0x0000)
-struct alignas(0x98) HUD_C_SetCursorModeContent final
+// 0x0028 (0x0028 - 0x0000)
+struct HUD_C_SetCursorModeContent final
 {
 public:
 	class UUserWidget*                            CustomWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -450,8 +451,8 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_C_SetCursorModeContent) == 0x000098, "Wrong alignment on HUD_C_SetCursorModeContent");
-static_assert(sizeof(HUD_C_SetCursorModeContent) == 0x000098, "Wrong size on HUD_C_SetCursorModeContent");
+static_assert(alignof(HUD_C_SetCursorModeContent) == 0x000008, "Wrong alignment on HUD_C_SetCursorModeContent");
+static_assert(sizeof(HUD_C_SetCursorModeContent) == 0x000028, "Wrong size on HUD_C_SetCursorModeContent");
 static_assert(offsetof(HUD_C_SetCursorModeContent, CustomWidget) == 0x000000, "Member 'HUD_C_SetCursorModeContent::CustomWidget' has a wrong offset!");
 static_assert(offsetof(HUD_C_SetCursorModeContent, ActionName) == 0x000008, "Member 'HUD_C_SetCursorModeContent::ActionName' has a wrong offset!");
 static_assert(offsetof(HUD_C_SetCursorModeContent, CursorWidget) == 0x000010, "Member 'HUD_C_SetCursorModeContent::CursorWidget' has a wrong offset!");
@@ -459,8 +460,8 @@ static_assert(offsetof(HUD_C_SetCursorModeContent, CallFunc_IsValid_ReturnValue)
 static_assert(offsetof(HUD_C_SetCursorModeContent, CallFunc_AddChild_ReturnValue) == 0x000020, "Member 'HUD_C_SetCursorModeContent::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function HUD.HUD_C.HandleIndicatorModeChanged
-// 0x0074 (0x0074 - 0x0000)
-struct alignas(0x74) HUD_C_HandleIndicatorModeChanged final
+// 0x0005 (0x0005 - 0x0000)
+struct HUD_C_HandleIndicatorModeChanged final
 {
 public:
 	bool                                          InidicatorsEnabled;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -469,8 +470,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_HandleIndicatorModeChanged) == 0x000074, "Wrong alignment on HUD_C_HandleIndicatorModeChanged");
-static_assert(sizeof(HUD_C_HandleIndicatorModeChanged) == 0x000074, "Wrong size on HUD_C_HandleIndicatorModeChanged");
+static_assert(alignof(HUD_C_HandleIndicatorModeChanged) == 0x000001, "Wrong alignment on HUD_C_HandleIndicatorModeChanged");
+static_assert(sizeof(HUD_C_HandleIndicatorModeChanged) == 0x000005, "Wrong size on HUD_C_HandleIndicatorModeChanged");
 static_assert(offsetof(HUD_C_HandleIndicatorModeChanged, InidicatorsEnabled) == 0x000000, "Member 'HUD_C_HandleIndicatorModeChanged::InidicatorsEnabled' has a wrong offset!");
 static_assert(offsetof(HUD_C_HandleIndicatorModeChanged, Temp_bool_Variable) == 0x000001, "Member 'HUD_C_HandleIndicatorModeChanged::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(HUD_C_HandleIndicatorModeChanged, Temp_byte_Variable) == 0x000002, "Member 'HUD_C_HandleIndicatorModeChanged::Temp_byte_Variable' has a wrong offset!");
@@ -527,8 +528,8 @@ static_assert(sizeof(HUD_C_ToggleTopLevelMenu) == 0x000001, "Wrong size on HUD_C
 static_assert(offsetof(HUD_C_ToggleTopLevelMenu, Show) == 0x000000, "Member 'HUD_C_ToggleTopLevelMenu::Show' has a wrong offset!");
 
 // Function HUD.HUD_C.HandleHordeTierComplete
-// 0x0052 (0x0052 - 0x0000)
-struct alignas(0x29) HUD_C_HandleHordeTierComplete final
+// 0x0040 (0x0040 - 0x0000)
+struct HUD_C_HandleHordeTierComplete final
 {
 public:
 	EFortCompletionResult                         Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -540,8 +541,8 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_C_HandleHordeTierComplete) == 0x000029, "Wrong alignment on HUD_C_HandleHordeTierComplete");
-static_assert(sizeof(HUD_C_HandleHordeTierComplete) == 0x000052, "Wrong size on HUD_C_HandleHordeTierComplete");
+static_assert(alignof(HUD_C_HandleHordeTierComplete) == 0x000008, "Wrong alignment on HUD_C_HandleHordeTierComplete");
+static_assert(sizeof(HUD_C_HandleHordeTierComplete) == 0x000040, "Wrong size on HUD_C_HandleHordeTierComplete");
 static_assert(offsetof(HUD_C_HandleHordeTierComplete, Result) == 0x000000, "Member 'HUD_C_HandleHordeTierComplete::Result' has a wrong offset!");
 static_assert(offsetof(HUD_C_HandleHordeTierComplete, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HUD_C_HandleHordeTierComplete::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(HUD_C_HandleHordeTierComplete, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'HUD_C_HandleHordeTierComplete::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -551,14 +552,14 @@ static_assert(offsetof(HUD_C_HandleHordeTierComplete, CallFunc_AddChild_ReturnVa
 static_assert(offsetof(HUD_C_HandleHordeTierComplete, CallFunc_GetContext_ReturnValue2) == 0x000038, "Member 'HUD_C_HandleHordeTierComplete::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function HUD.HUD_C.OnHordeTierCompleteWidgetFinished
-// 0x003F (0x003F - 0x0000)
-struct alignas(0x3F) HUD_C_OnHordeTierCompleteWidgetFinished final
+// 0x0008 (0x0008 - 0x0000)
+struct HUD_C_OnHordeTierCompleteWidgetFinished final
 {
 public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_C_OnHordeTierCompleteWidgetFinished) == 0x00003F, "Wrong alignment on HUD_C_OnHordeTierCompleteWidgetFinished");
-static_assert(sizeof(HUD_C_OnHordeTierCompleteWidgetFinished) == 0x00003F, "Wrong size on HUD_C_OnHordeTierCompleteWidgetFinished");
+static_assert(alignof(HUD_C_OnHordeTierCompleteWidgetFinished) == 0x000008, "Wrong alignment on HUD_C_OnHordeTierCompleteWidgetFinished");
+static_assert(sizeof(HUD_C_OnHordeTierCompleteWidgetFinished) == 0x000008, "Wrong size on HUD_C_OnHordeTierCompleteWidgetFinished");
 static_assert(offsetof(HUD_C_OnHordeTierCompleteWidgetFinished, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'HUD_C_OnHordeTierCompleteWidgetFinished::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function HUD.HUD_C.ShowPicker
@@ -582,8 +583,8 @@ static_assert(offsetof(HUD_C_ShowPicker, CallFunc_GetVisibility_ReturnValue) == 
 static_assert(offsetof(HUD_C_ShowPicker, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00000A, "Member 'HUD_C_ShowPicker::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function HUD.HUD_C.HandleOnPointOfInterestAdded
-// 0x006C (0x006C - 0x0000)
-struct alignas(0x36) HUD_C_HandleOnPointOfInterestAdded final
+// 0x0040 (0x0040 - 0x0000)
+struct HUD_C_HandleOnPointOfInterestAdded final
 {
 public:
 	class AActor*                                 PointOfInterest;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -594,8 +595,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_HandleOnPointOfInterestAdded) == 0x000036, "Wrong alignment on HUD_C_HandleOnPointOfInterestAdded");
-static_assert(sizeof(HUD_C_HandleOnPointOfInterestAdded) == 0x00006C, "Wrong size on HUD_C_HandleOnPointOfInterestAdded");
+static_assert(alignof(HUD_C_HandleOnPointOfInterestAdded) == 0x000008, "Wrong alignment on HUD_C_HandleOnPointOfInterestAdded");
+static_assert(sizeof(HUD_C_HandleOnPointOfInterestAdded) == 0x000040, "Wrong size on HUD_C_HandleOnPointOfInterestAdded");
 static_assert(offsetof(HUD_C_HandleOnPointOfInterestAdded, PointOfInterest) == 0x000000, "Member 'HUD_C_HandleOnPointOfInterestAdded::PointOfInterest' has a wrong offset!");
 static_assert(offsetof(HUD_C_HandleOnPointOfInterestAdded, DisplayText) == 0x000008, "Member 'HUD_C_HandleOnPointOfInterestAdded::DisplayText' has a wrong offset!");
 static_assert(offsetof(HUD_C_HandleOnPointOfInterestAdded, DisplayImage) == 0x000020, "Member 'HUD_C_HandleOnPointOfInterestAdded::DisplayImage' has a wrong offset!");
@@ -666,58 +667,59 @@ static_assert(offsetof(HUD_C_CreateInterestIndicatorWidget, CallFunc_Array_AddUn
 static_assert(offsetof(HUD_C_CreateInterestIndicatorWidget, CallFunc_AddActorIndicator_ReturnValue) == 0x000018, "Member 'HUD_C_CreateInterestIndicatorWidget::CallFunc_AddActorIndicator_ReturnValue' has a wrong offset!");
 
 // Function HUD.HUD_C.PopContentWidgetInternal
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct HUD_C_PopContentWidgetInternal final
 {
 public:
-	struct FContentPushState                      State;                                             // 0x0000(0x1182E980)(Parm, NoDestructor)
+	struct FContentPushState                      State;                                             // 0x0000(0x0003)(Parm, NoDestructor)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_C_PopContentWidgetInternal) == 0x1182E980, "Wrong alignment on HUD_C_PopContentWidgetInternal");
-static_assert(sizeof(HUD_C_PopContentWidgetInternal) == 0x1182E980, "Wrong size on HUD_C_PopContentWidgetInternal");
+static_assert(alignof(HUD_C_PopContentWidgetInternal) == 0x000008, "Wrong alignment on HUD_C_PopContentWidgetInternal");
+static_assert(sizeof(HUD_C_PopContentWidgetInternal) == 0x000018, "Wrong size on HUD_C_PopContentWidgetInternal");
 static_assert(offsetof(HUD_C_PopContentWidgetInternal, State) == 0x000000, "Member 'HUD_C_PopContentWidgetInternal::State' has a wrong offset!");
 static_assert(offsetof(HUD_C_PopContentWidgetInternal, ReturnValue) == 0x000008, "Member 'HUD_C_PopContentWidgetInternal::ReturnValue' has a wrong offset!");
 static_assert(offsetof(HUD_C_PopContentWidgetInternal, CallFunc_PopWigdet_ReturnValue) == 0x000010, "Member 'HUD_C_PopContentWidgetInternal::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
 // Function HUD.HUD_C.OnManagementTabSelected
-// 0x0045 (0x0045 - 0x0000)
-struct alignas(0x45) HUD_C_OnManagementTabSelected final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) HUD_C_OnManagementTabSelected final
 {
 public:
 	class FName                                   TabName;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_OnManagementTabSelected) == 0x000045, "Wrong alignment on HUD_C_OnManagementTabSelected");
-static_assert(sizeof(HUD_C_OnManagementTabSelected) == 0x000045, "Wrong size on HUD_C_OnManagementTabSelected");
+static_assert(alignof(HUD_C_OnManagementTabSelected) == 0x000008, "Wrong alignment on HUD_C_OnManagementTabSelected");
+static_assert(sizeof(HUD_C_OnManagementTabSelected) == 0x000010, "Wrong size on HUD_C_OnManagementTabSelected");
 static_assert(offsetof(HUD_C_OnManagementTabSelected, TabName) == 0x000000, "Member 'HUD_C_OnManagementTabSelected::TabName' has a wrong offset!");
 static_assert(offsetof(HUD_C_OnManagementTabSelected, K2Node_SwitchName_CmpSuccess) == 0x000008, "Member 'HUD_C_OnManagementTabSelected::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
 
 // Function HUD.HUD_C.OnHUDElementVisibilityChanged
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct HUD_C_OnHUDElementVisibilityChanged final
 {
 public:
-	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x11821C00)(Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x0020)(Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(HUD_C_OnHUDElementVisibilityChanged) == 0x11821C00, "Wrong alignment on HUD_C_OnHUDElementVisibilityChanged");
-static_assert(sizeof(HUD_C_OnHUDElementVisibilityChanged) == 0x11821C00, "Wrong size on HUD_C_OnHUDElementVisibilityChanged");
+static_assert(alignof(HUD_C_OnHUDElementVisibilityChanged) == 0x000008, "Wrong alignment on HUD_C_OnHUDElementVisibilityChanged");
+static_assert(sizeof(HUD_C_OnHUDElementVisibilityChanged) == 0x000020, "Wrong size on HUD_C_OnHUDElementVisibilityChanged");
 static_assert(offsetof(HUD_C_OnHUDElementVisibilityChanged, HiddenHUDElementTags) == 0x000000, "Member 'HUD_C_OnHUDElementVisibilityChanged::HiddenHUDElementTags' has a wrong offset!");
 
 // Function HUD.HUD_C.CheckHUDElementVisibility
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct HUD_C_CheckHUDElementVisibility final
 {
 public:
-	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x11821C00)(Parm, OutParm, ReferenceParm)
-	struct FGameplayTag                           HUDElementTagToCheck;                              // 0x0020(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x0020)(Parm, OutParm, ReferenceParm)
+	struct FGameplayTag                           HUDElementTagToCheck;                              // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                HUDElement;                                        // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  CallFunc_MakeGameplayTagContainerFromTag_ReturnValue; // 0x0030(0x11821C00)()
+	struct FGameplayTagContainer                  CallFunc_MakeGameplayTagContainerFromTag_ReturnValue; // 0x0030(0x0020)()
 	bool                                          CallFunc_HasAnyTags_ReturnValue;                   // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_C_CheckHUDElementVisibility) == 0x11821D80, "Wrong alignment on HUD_C_CheckHUDElementVisibility");
-static_assert(sizeof(HUD_C_CheckHUDElementVisibility) == 0x11821D80, "Wrong size on HUD_C_CheckHUDElementVisibility");
+static_assert(alignof(HUD_C_CheckHUDElementVisibility) == 0x000008, "Wrong alignment on HUD_C_CheckHUDElementVisibility");
+static_assert(sizeof(HUD_C_CheckHUDElementVisibility) == 0x000058, "Wrong size on HUD_C_CheckHUDElementVisibility");
 static_assert(offsetof(HUD_C_CheckHUDElementVisibility, HiddenHUDElementTags) == 0x000000, "Member 'HUD_C_CheckHUDElementVisibility::HiddenHUDElementTags' has a wrong offset!");
 static_assert(offsetof(HUD_C_CheckHUDElementVisibility, HUDElementTagToCheck) == 0x000020, "Member 'HUD_C_CheckHUDElementVisibility::HUDElementTagToCheck' has a wrong offset!");
 static_assert(offsetof(HUD_C_CheckHUDElementVisibility, HUDElement) == 0x000028, "Member 'HUD_C_CheckHUDElementVisibility::HUDElement' has a wrong offset!");

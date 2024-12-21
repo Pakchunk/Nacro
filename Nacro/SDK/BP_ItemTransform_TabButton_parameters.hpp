@@ -19,32 +19,32 @@ namespace SDK::Params
 {
 
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.ExecuteUbergraph_BP_ItemTransform_TabButton
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01F8 (0x01F8 - 0x0000)
 struct BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
 	class UClass*                                 CallFunc_GetCurrentTextStyleClass_ReturnValue;     // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CallFunc_GetCurrentTextStyleClass_ReturnValue2;    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0048(0x1182E980)(ConstParm)
+	struct FFortTabButtonLabelInfo                K2Node_Event_TabLabelInfo;                         // 0x0048(0x00A8)(ConstParm)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetSelected_ReturnValue;                  // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetSelected_ReturnValue2;                 // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_102[0x6];                                      // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0108(0x322CBBB8)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor3;                     // 0x0130(0x322CBBB8)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor4;                     // 0x0158(0x322CBBB8)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor5;                     // 0x0180(0x322CBBB8)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor6;                     // 0x01A8(0x322CBBB8)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor7;                     // 0x01D0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0108(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor3;                     // 0x0130(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor4;                     // 0x0158(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor5;                     // 0x0180(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor6;                     // 0x01A8(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor7;                     // 0x01D0(0x0028)()
 };
-static_assert(alignof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton) == 0x322CBBB8, "Wrong alignment on BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton");
-static_assert(sizeof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton) == 0x322CBBB8, "Wrong size on BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton");
+static_assert(alignof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton) == 0x000008, "Wrong alignment on BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton");
+static_assert(sizeof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton) == 0x0001F8, "Wrong size on BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton");
 static_assert(offsetof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton, EntryPoint) == 0x000000, "Member 'BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton, CallFunc_GetCurrentTextStyleClass_ReturnValue) == 0x000030, "Member 'BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton::CallFunc_GetCurrentTextStyleClass_ReturnValue' has a wrong offset!");
@@ -63,14 +63,14 @@ static_assert(offsetof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTran
 static_assert(offsetof(BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton, K2Node_MakeStruct_SlateColor7) == 0x0001D0, "Member 'BP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton::K2Node_MakeStruct_SlateColor7' has a wrong offset!");
 
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.SetTabLabelInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct BP_ItemTransform_TabButton_C_SetTabLabelInfo final
 {
 public:
-	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x1182E980)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_ItemTransform_TabButton_C_SetTabLabelInfo) == 0x1182E980, "Wrong alignment on BP_ItemTransform_TabButton_C_SetTabLabelInfo");
-static_assert(sizeof(BP_ItemTransform_TabButton_C_SetTabLabelInfo) == 0x1182E980, "Wrong size on BP_ItemTransform_TabButton_C_SetTabLabelInfo");
+static_assert(alignof(BP_ItemTransform_TabButton_C_SetTabLabelInfo) == 0x000008, "Wrong alignment on BP_ItemTransform_TabButton_C_SetTabLabelInfo");
+static_assert(sizeof(BP_ItemTransform_TabButton_C_SetTabLabelInfo) == 0x0000A8, "Wrong size on BP_ItemTransform_TabButton_C_SetTabLabelInfo");
 static_assert(offsetof(BP_ItemTransform_TabButton_C_SetTabLabelInfo, TabLabelInfo) == 0x000000, "Member 'BP_ItemTransform_TabButton_C_SetTabLabelInfo::TabLabelInfo' has a wrong offset!");
 
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.PreConstruct
@@ -100,14 +100,14 @@ static_assert(offsetof(BP_ItemTransform_TabButton_C_Set_Text, CallFunc_GetOwning
 static_assert(offsetof(BP_ItemTransform_TabButton_C_Set_Text, CallFunc_Create_Basic_Tooltip_Output) == 0x000020, "Member 'BP_ItemTransform_TabButton_C_Set_Text::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Icon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct BP_ItemTransform_TabButton_C_Set_Icon final
 {
 public:
-	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x322CBBB8)(Parm)
+	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0090)(Parm)
 };
-static_assert(alignof(BP_ItemTransform_TabButton_C_Set_Icon) == 0x11827900, "Wrong alignment on BP_ItemTransform_TabButton_C_Set_Icon");
-static_assert(sizeof(BP_ItemTransform_TabButton_C_Set_Icon) == 0x11827900, "Wrong size on BP_ItemTransform_TabButton_C_Set_Icon");
+static_assert(alignof(BP_ItemTransform_TabButton_C_Set_Icon) == 0x000008, "Wrong alignment on BP_ItemTransform_TabButton_C_Set_Icon");
+static_assert(sizeof(BP_ItemTransform_TabButton_C_Set_Icon) == 0x000090, "Wrong size on BP_ItemTransform_TabButton_C_Set_Icon");
 static_assert(offsetof(BP_ItemTransform_TabButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'BP_ItemTransform_TabButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Refresh Bang State
@@ -128,12 +128,12 @@ static_assert(offsetof(BP_ItemTransform_TabButton_C_Refresh_Bang_State, CallFunc
 
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Tab Id
 // 0x0008 (0x0008 - 0x0000)
-struct BP_ItemTransform_TabButton_C_Set_Tab_Id final
+struct alignas(0x08) BP_ItemTransform_TabButton_C_Set_Tab_Id final
 {
 public:
 	class FName                                   TabId_0;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ItemTransform_TabButton_C_Set_Tab_Id) == 0x000004, "Wrong alignment on BP_ItemTransform_TabButton_C_Set_Tab_Id");
+static_assert(alignof(BP_ItemTransform_TabButton_C_Set_Tab_Id) == 0x000008, "Wrong alignment on BP_ItemTransform_TabButton_C_Set_Tab_Id");
 static_assert(sizeof(BP_ItemTransform_TabButton_C_Set_Tab_Id) == 0x000008, "Wrong size on BP_ItemTransform_TabButton_C_Set_Tab_Id");
 static_assert(offsetof(BP_ItemTransform_TabButton_C_Set_Tab_Id, TabId_0) == 0x000000, "Member 'BP_ItemTransform_TabButton_C_Set_Tab_Id::TabId_0' has a wrong offset!");
 

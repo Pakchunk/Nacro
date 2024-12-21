@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Button-BottomBar-S-Selected.TextStyle-Button-BottomBar-S-Selected_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C final : public UCommonTextStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C");
-static_assert(sizeof(UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C");
+static_assert(alignof(UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C) == 0x000008, "Wrong alignment on UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C");
+static_assert(sizeof(UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C) == 0x0000D0, "Wrong size on UTextStyleMinusButtonMinusBottomBarMinusSMinusSelected_C");
 
 }
 

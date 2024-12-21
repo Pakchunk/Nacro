@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionMultiProgressBar.CollectionMultiProgressBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x02D8 (0x0510 - 0x0238)
 class UCollectionMultiProgressBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Flash;                                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 CategoryIcon;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 FlashImage;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -34,16 +34,16 @@ public:
 	class UHorizontalBox*                         TopBox;                                            // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         TopIconsBox;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<struct FCollectionMissionBadgeDisplayInfo> BarInfos;                                          // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn)
-	struct FProgressBarStyle                      ProgressBarsStyle;                                 // 0x0288(0x11827900)(Edit, BlueprintVisible)
+	struct FProgressBarStyle                      ProgressBarsStyle;                                 // 0x0288(0x01B8)(Edit, BlueprintVisible)
 	bool                                          bOnlyShowBarWithCountInRange;                      // 0x0440(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_441[0x7];                                      // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            IconBrush;                                         // 0x0448(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x0448(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
 	EFortBrushSize                                IconSize;                                          // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bShowBarTopIcons;                                  // 0x04D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bShowBarSideIcons;                                 // 0x04DA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_4DB[0x1];                                      // 0x04DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                BarsMargin;                                        // 0x04DC(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
-	struct FMargin                                BarsIconMargin;                                    // 0x04EC(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                BarsMargin;                                        // 0x04DC(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                BarsIconMargin;                                    // 0x04EC(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	float                                         BarHeightFactor;                                   // 0x04FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCollectionBar_C*                       PreviousBarWithCountInRange;                       // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         BarHeightOverride;                                 // 0x0508(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -66,8 +66,8 @@ public:
 		return GetDefaultObjImpl<UCollectionMultiProgressBar_C>();
 	}
 };
-static_assert(alignof(UCollectionMultiProgressBar_C) == 0x322CBBB8, "Wrong alignment on UCollectionMultiProgressBar_C");
-static_assert(sizeof(UCollectionMultiProgressBar_C) == 0x322CBBB8, "Wrong size on UCollectionMultiProgressBar_C");
+static_assert(alignof(UCollectionMultiProgressBar_C) == 0x000008, "Wrong alignment on UCollectionMultiProgressBar_C");
+static_assert(sizeof(UCollectionMultiProgressBar_C) == 0x000510, "Wrong size on UCollectionMultiProgressBar_C");
 static_assert(offsetof(UCollectionMultiProgressBar_C, UberGraphFrame) == 0x000238, "Member 'UCollectionMultiProgressBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionMultiProgressBar_C, Flash) == 0x000240, "Member 'UCollectionMultiProgressBar_C::Flash' has a wrong offset!");
 static_assert(offsetof(UCollectionMultiProgressBar_C, CategoryIcon) == 0x000248, "Member 'UCollectionMultiProgressBar_C::CategoryIcon' has a wrong offset!");

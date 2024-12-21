@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function Results_Badge.Results_Badge_C.ExecuteUbergraph_Results_Badge
-// 0x0027 (0x0027 - 0x0000)
-struct alignas(0x27) Results_Badge_C_ExecuteUbergraph_Results_Badge final
+// 0x0008 (0x0008 - 0x0000)
+struct Results_Badge_C_ExecuteUbergraph_Results_Badge final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -25,8 +25,8 @@ public:
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Badge_C_ExecuteUbergraph_Results_Badge) == 0x000027, "Wrong alignment on Results_Badge_C_ExecuteUbergraph_Results_Badge");
-static_assert(sizeof(Results_Badge_C_ExecuteUbergraph_Results_Badge) == 0x000027, "Wrong size on Results_Badge_C_ExecuteUbergraph_Results_Badge");
+static_assert(alignof(Results_Badge_C_ExecuteUbergraph_Results_Badge) == 0x000004, "Wrong alignment on Results_Badge_C_ExecuteUbergraph_Results_Badge");
+static_assert(sizeof(Results_Badge_C_ExecuteUbergraph_Results_Badge) == 0x000008, "Wrong size on Results_Badge_C_ExecuteUbergraph_Results_Badge");
 static_assert(offsetof(Results_Badge_C_ExecuteUbergraph_Results_Badge, EntryPoint) == 0x000000, "Member 'Results_Badge_C_ExecuteUbergraph_Results_Badge::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_Badge_C_ExecuteUbergraph_Results_Badge, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_Badge_C_ExecuteUbergraph_Results_Badge::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_Badge_C_ExecuteUbergraph_Results_Badge, CallFunc_BooleanOR_ReturnValue2) == 0x000005, "Member 'Results_Badge_C_ExecuteUbergraph_Results_Badge::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");

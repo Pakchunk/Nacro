@@ -18,33 +18,33 @@ namespace SDK::Params
 {
 
 // Function Results_TeleportPad.Results_TeleportPad_C.OnAddFriendClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.OnUpVoteClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.ExecuteUbergraph_Results_TeleportPad
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad final
 {
 public:
@@ -85,7 +85,7 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_Percent;                              // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId8;              // 0x0088(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId8;              // 0x0088(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName8;            // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UResults_TeleportPadPlayer_C*           CallFunc_Array_Get_Item4;                          // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidPad_bIsValid4;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -93,19 +93,19 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue4;                // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId7;              // 0x00C8(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId7;              // 0x00C8(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName7;            // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId6;              // 0x00F0(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId6;              // 0x00F0(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName6;            // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId5;              // 0x0118(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId5;              // 0x0118(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName5;            // 0x0130(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId4;              // 0x0140(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId4;              // 0x0140(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName4;            // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId3;              // 0x0168(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId3;              // 0x0168(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName3;            // 0x0180(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId2;              // 0x0190(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId2;              // 0x0190(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName2;            // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId;               // 0x01B8(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId;               // 0x01B8(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName;             // 0x01D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UResults_TeleportPadPlayer_C*           K2Node_ComponentBoundEvent_TeleportPadPlayer4;     // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -124,8 +124,8 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Should_Hide_Exit_Timer_bHideExitTimer2;   // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad");
-static_assert(sizeof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad) == 0x11821780, "Wrong size on Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad");
+static_assert(alignof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad) == 0x000008, "Wrong alignment on Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad");
+static_assert(sizeof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad) == 0x000228, "Wrong size on Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, EntryPoint) == 0x000000, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, CallFunc_Should_Hide_Exit_Timer_bHideExitTimer) == 0x000004, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::CallFunc_Should_Hide_Exit_Timer_bHideExitTimer' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad, Temp_bool_A_Execution_Happened_Variable) == 0x000005, "Member 'Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad::Temp_bool_A_Execution_Happened_Variable' has a wrong offset!");
@@ -213,14 +213,14 @@ static_assert(sizeof(Results_TeleportPad_C_BndEvt__Pad3_K2Node_ComponentBoundEve
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__Pad3_K2Node_ComponentBoundEvent_6_OnTeleportPadIntroFinished__DelegateSignature, TeleportPadPlayer) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__Pad3_K2Node_ComponentBoundEvent_6_OnTeleportPadIntroFinished__DelegateSignature::TeleportPadPlayer' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature
-// 0x001C (0x001C - 0x0000)
-struct alignas(0x1C) Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature final
 {
 public:
 	class UResults_TeleportPadPlayer_C*           TeleportPadPlayer;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature) == 0x00001C, "Wrong alignment on Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature) == 0x00001C, "Wrong size on Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature) == 0x000008, "Wrong size on Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature, TeleportPadPlayer) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__Pad2_K2Node_ComponentBoundEvent_5_OnTeleportPadIntroFinished__DelegateSignature::TeleportPadPlayer' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__Pad1_K2Node_ComponentBoundEvent_4_OnTeleportPadIntroFinished__DelegateSignature
@@ -235,117 +235,117 @@ static_assert(sizeof(Results_TeleportPad_C_BndEvt__Pad1_K2Node_ComponentBoundEve
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__Pad1_K2Node_ComponentBoundEvent_4_OnTeleportPadIntroFinished__DelegateSignature, TeleportPadPlayer) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__Pad1_K2Node_ComponentBoundEvent_4_OnTeleportPadIntroFinished__DelegateSignature::TeleportPadPlayer' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
-// 0x0051 (0x0051 - 0x0000)
-struct alignas(0x51) Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000051, "Wrong alignment on Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000051, "Wrong size on Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature
-// 0x6F5C3E10 (0x6F5C3E10 - 0x0000)
-struct alignas(0x6F5C3E10) Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature final
+// 0x0028 (0x0028 - 0x0000)
+struct Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature) == 0x6F5C3E10, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature) == 0x6F5C3E10, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature");
+static_assert(alignof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature");
+static_assert(sizeof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
@@ -372,7 +372,7 @@ static_assert(sizeof(Results_TeleportPad_C_OnExitTimeRemainingUpdated) == 0x0000
 static_assert(offsetof(Results_TeleportPad_C_OnExitTimeRemainingUpdated, TimeRemainingSeconds) == 0x000000, "Member 'Results_TeleportPad_C_OnExitTimeRemainingUpdated::TimeRemainingSeconds' has a wrong offset!");
 
 // Function Results_TeleportPad.Results_TeleportPad_C.Initialize
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct Results_TeleportPad_C_Initialize final
 {
 public:
@@ -408,12 +408,12 @@ public:
 	class AFortPlayerState*                       K2Node_DynamicCast_AsFort_Player_State;            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetPlatformUniqueNetId_ReturnValue;       // 0x0098(0x11821780)(HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x00B0(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetPlatformUniqueNetId_ReturnValue;       // 0x0098(0x0018)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x00B0(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeleportPad_C_Initialize) == 0x11821780, "Wrong alignment on Results_TeleportPad_C_Initialize");
-static_assert(sizeof(Results_TeleportPad_C_Initialize) == 0x11821780, "Wrong size on Results_TeleportPad_C_Initialize");
+static_assert(alignof(Results_TeleportPad_C_Initialize) == 0x000008, "Wrong alignment on Results_TeleportPad_C_Initialize");
+static_assert(sizeof(Results_TeleportPad_C_Initialize) == 0x0000D0, "Wrong size on Results_TeleportPad_C_Initialize");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, InScoreReport) == 0x000000, "Member 'Results_TeleportPad_C_Initialize::InScoreReport' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, CompletionResult_0) == 0x000008, "Member 'Results_TeleportPad_C_Initialize::CompletionResult_0' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPad_C_Initialize, CurrentTeleportPad) == 0x000010, "Member 'Results_TeleportPad_C_Initialize::CurrentTeleportPad' has a wrong offset!");

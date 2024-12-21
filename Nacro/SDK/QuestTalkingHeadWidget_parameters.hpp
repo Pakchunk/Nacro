@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.ExecuteUbergraph_QuestTalkingHeadWidget
-// 0x05BD (0x05BD - 0x0000)
-struct alignas(0x5BD) QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget final
+// 0x0040 (0x0040 - 0x0000)
+struct QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,8 +29,8 @@ public:
 	TDelegate<void(class UTexture2D* Image, class FText Title, class FText Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool bShouldBlockSubtitlePortrait)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget) == 0x0005BD, "Wrong alignment on QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget");
-static_assert(sizeof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget) == 0x0005BD, "Wrong size on QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget");
+static_assert(alignof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget) == 0x000008, "Wrong alignment on QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget");
+static_assert(sizeof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget) == 0x000040, "Wrong size on QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget");
 static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, EntryPoint) == 0x000000, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000018, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
@@ -38,14 +38,14 @@ static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHea
 static_assert(offsetof(QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'QuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.SetTalkingHeadImage
-// 0x0061 (0x0061 - 0x0000)
-struct alignas(0x61) QuestTalkingHeadWidget_C_SetTalkingHeadImage final
+// 0x0008 (0x0008 - 0x0000)
+struct QuestTalkingHeadWidget_C_SetTalkingHeadImage final
 {
 public:
 	class UTexture2D*                             Icon;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestTalkingHeadWidget_C_SetTalkingHeadImage) == 0x000061, "Wrong alignment on QuestTalkingHeadWidget_C_SetTalkingHeadImage");
-static_assert(sizeof(QuestTalkingHeadWidget_C_SetTalkingHeadImage) == 0x000061, "Wrong size on QuestTalkingHeadWidget_C_SetTalkingHeadImage");
+static_assert(alignof(QuestTalkingHeadWidget_C_SetTalkingHeadImage) == 0x000008, "Wrong alignment on QuestTalkingHeadWidget_C_SetTalkingHeadImage");
+static_assert(sizeof(QuestTalkingHeadWidget_C_SetTalkingHeadImage) == 0x000008, "Wrong size on QuestTalkingHeadWidget_C_SetTalkingHeadImage");
 static_assert(offsetof(QuestTalkingHeadWidget_C_SetTalkingHeadImage, Icon) == 0x000000, "Member 'QuestTalkingHeadWidget_C_SetTalkingHeadImage::Icon' has a wrong offset!");
 
 // Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.SetTalkingHeadName

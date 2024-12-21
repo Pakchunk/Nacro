@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Base-XS-HUD-ShieldBarMax.TextStyle-Base-XS-HUD-ShieldBarMax_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C final : public UTextStyleMinusBaseParent_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C");
-static_assert(sizeof(UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C");
+static_assert(alignof(UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C) == 0x000008, "Wrong alignment on UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C");
+static_assert(sizeof(UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C) == 0x0000D0, "Wrong size on UTextStyleMinusBaseMinusXSMinusHUDMinusShieldBarMax_C");
 
 }
 

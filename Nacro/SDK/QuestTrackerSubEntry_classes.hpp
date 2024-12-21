@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestTrackerSubEntry.QuestTrackerSubEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0170 (0x03E8 - 0x0278)
 class UQuestTrackerSubEntry_C final : public UFortQuestTrackerSubEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       CheckmarkAnimation;                                // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       CompletionRemove;                                  // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       CompletionFlash;                                   // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -34,8 +34,8 @@ public:
 	class UImage*                                 FlashImage;                                        // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ObjectiveDescriptionText;                          // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Pin;                                               // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            NonHUDBullet;                                      // 0x02C8(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                            NonHUDPin;                                         // 0x0358(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            NonHUDBullet;                                      // 0x02C8(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            NonHUDPin;                                         // 0x0358(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_QuestTrackerSubEntry(int32 EntryPoint);
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<UQuestTrackerSubEntry_C>();
 	}
 };
-static_assert(alignof(UQuestTrackerSubEntry_C) == 0x322CBBB8, "Wrong alignment on UQuestTrackerSubEntry_C");
-static_assert(sizeof(UQuestTrackerSubEntry_C) == 0x322CBBB8, "Wrong size on UQuestTrackerSubEntry_C");
+static_assert(alignof(UQuestTrackerSubEntry_C) == 0x000008, "Wrong alignment on UQuestTrackerSubEntry_C");
+static_assert(sizeof(UQuestTrackerSubEntry_C) == 0x0003E8, "Wrong size on UQuestTrackerSubEntry_C");
 static_assert(offsetof(UQuestTrackerSubEntry_C, UberGraphFrame) == 0x000278, "Member 'UQuestTrackerSubEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestTrackerSubEntry_C, CheckmarkAnimation) == 0x000280, "Member 'UQuestTrackerSubEntry_C::CheckmarkAnimation' has a wrong offset!");
 static_assert(offsetof(UQuestTrackerSubEntry_C, CompletionRemove) == 0x000288, "Member 'UQuestTrackerSubEntry_C::CompletionRemove' has a wrong offset!");

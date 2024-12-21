@@ -28,7 +28,7 @@ static_assert(sizeof(MtxOffer_2_C_BuyItem__DelegateSignature) == 0x000010, "Wron
 static_assert(offsetof(MtxOffer_2_C_BuyItem__DelegateSignature, OfferId) == 0x000000, "Member 'MtxOffer_2_C_BuyItem__DelegateSignature::OfferId' has a wrong offset!");
 
 // Function MtxOffer_2.MtxOffer_2_C.ExecuteUbergraph_MtxOffer_2
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0250 (0x0250 - 0x0000)
 struct MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2 final
 {
 public:
@@ -38,7 +38,7 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0018)()
 	class FString                                 CallFunc_LeftChop_ReturnValue;                     // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0088(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FString                                 CallFunc_Right_ReturnValue;                        // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue4;           // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue3;              // 0x0118(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0130(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0170(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0130(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0170(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x01B0(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x01C0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x01D0(0x0018)()
@@ -72,8 +72,8 @@ public:
 	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2) == 0x11821D80, "Wrong alignment on MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2");
-static_assert(sizeof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2) == 0x11821D80, "Wrong size on MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2");
+static_assert(alignof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2) == 0x000008, "Wrong alignment on MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2");
+static_assert(sizeof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2) == 0x000250, "Wrong size on MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2");
 static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, EntryPoint) == 0x000000, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_ComponentBoundEvent_Button2) == 0x000008, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
 static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Conv_TextToString_ReturnValue) == 0x000010, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");

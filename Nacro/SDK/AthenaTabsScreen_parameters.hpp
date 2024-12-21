@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function AthenaTabsScreen.AthenaTabsScreen_C.ExecuteUbergraph_AthenaTabsScreen
-// 0x008E (0x008E - 0x0000)
-struct alignas(0x8E) AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen final
+// 0x0020 (0x0020 - 0x0000)
+struct AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -25,8 +25,8 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_TabButton;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_ComponentBoundEvent_TabId;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen) == 0x00008E, "Wrong alignment on AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen");
-static_assert(sizeof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen) == 0x00008E, "Wrong size on AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen");
+static_assert(alignof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen) == 0x000008, "Wrong alignment on AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen");
+static_assert(sizeof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen) == 0x000020, "Wrong size on AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen");
 static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, EntryPoint) == 0x000000, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_TabId2) == 0x000008, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_TabId2' has a wrong offset!");
 static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2Node_ComponentBoundEvent_TabButton) == 0x000010, "Member 'AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
@@ -34,12 +34,12 @@ static_assert(offsetof(AthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen, K2N
 
 // Function AthenaTabsScreen.AthenaTabsScreen_C.BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature final
+struct alignas(0x08) AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000004, "Wrong alignment on AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+static_assert(alignof(AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000008, "Wrong alignment on AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
 static_assert(sizeof(AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000008, "Wrong size on AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
 static_assert(offsetof(AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature, TabId) == 0x000000, "Member 'AthenaTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature::TabId' has a wrong offset!");
 
@@ -81,15 +81,15 @@ static_assert(offsetof(AthenaTabsScreen_C_HandleTabCreated, K2Node_DynamicCast_b
 static_assert(offsetof(AthenaTabsScreen_C_HandleTabCreated, CallFunc_TextToUpper_ReturnValue) == 0x000030, "Member 'AthenaTabsScreen_C_HandleTabCreated::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
 
 // Function AthenaTabsScreen.AthenaTabsScreen_C.HandleTabSelected
-// 0x016A (0x016A - 0x0000)
-struct alignas(0x16A) AthenaTabsScreen_C_HandleTabSelected final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) AthenaTabsScreen_C_HandleTabSelected final
 {
 public:
 	class FName                                   TabName;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_GetActiveTab_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTabsScreen_C_HandleTabSelected) == 0x00016A, "Wrong alignment on AthenaTabsScreen_C_HandleTabSelected");
-static_assert(sizeof(AthenaTabsScreen_C_HandleTabSelected) == 0x00016A, "Wrong size on AthenaTabsScreen_C_HandleTabSelected");
+static_assert(alignof(AthenaTabsScreen_C_HandleTabSelected) == 0x000008, "Wrong alignment on AthenaTabsScreen_C_HandleTabSelected");
+static_assert(sizeof(AthenaTabsScreen_C_HandleTabSelected) == 0x000010, "Wrong size on AthenaTabsScreen_C_HandleTabSelected");
 static_assert(offsetof(AthenaTabsScreen_C_HandleTabSelected, TabName) == 0x000000, "Member 'AthenaTabsScreen_C_HandleTabSelected::TabName' has a wrong offset!");
 static_assert(offsetof(AthenaTabsScreen_C_HandleTabSelected, CallFunc_GetActiveTab_ReturnValue) == 0x000008, "Member 'AthenaTabsScreen_C_HandleTabSelected::CallFunc_GetActiveTab_ReturnValue' has a wrong offset!");
 

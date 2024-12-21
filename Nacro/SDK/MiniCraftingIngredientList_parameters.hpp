@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function MiniCraftingIngredientList.MiniCraftingIngredientList_C.ExecuteUbergraph_MiniCraftingIngredientList
-// 0x1805 (0x1805 - 0x0000)
-struct alignas(0x1805) MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList final
+// 0x0018 (0x0018 - 0x0000)
+struct MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,8 +24,8 @@ public:
 	class UFortItemQuantityListEntryBase*         K2Node_Event_ListEntry;                            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWrapBoxSlot*                           CallFunc_AddChildWrapBox_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList) == 0x001805, "Wrong alignment on MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList");
-static_assert(sizeof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList) == 0x001805, "Wrong size on MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList");
+static_assert(alignof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList) == 0x000008, "Wrong alignment on MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList");
+static_assert(sizeof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList) == 0x000018, "Wrong size on MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList");
 static_assert(offsetof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList, EntryPoint) == 0x000000, "Member 'MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList, K2Node_Event_ListEntry) == 0x000008, "Member 'MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList::K2Node_Event_ListEntry' has a wrong offset!");
 static_assert(offsetof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList, CallFunc_AddChildWrapBox_ReturnValue) == 0x000010, "Member 'MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList::CallFunc_AddChildWrapBox_ReturnValue' has a wrong offset!");

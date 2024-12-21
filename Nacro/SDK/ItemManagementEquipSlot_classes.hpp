@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementEquipSlot.ItemManagementEquipSlot_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0288 - 0x0240)
 class UItemManagementEquipSlot_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 DropTarget;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 EmptyImage;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               InputActionOverlay;                                // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementEquipSlot_C>();
 	}
 };
-static_assert(alignof(UItemManagementEquipSlot_C) == 0x322CBBB8, "Wrong alignment on UItemManagementEquipSlot_C");
-static_assert(sizeof(UItemManagementEquipSlot_C) == 0x322CBBB8, "Wrong size on UItemManagementEquipSlot_C");
+static_assert(alignof(UItemManagementEquipSlot_C) == 0x000008, "Wrong alignment on UItemManagementEquipSlot_C");
+static_assert(sizeof(UItemManagementEquipSlot_C) == 0x000288, "Wrong size on UItemManagementEquipSlot_C");
 static_assert(offsetof(UItemManagementEquipSlot_C, UberGraphFrame) == 0x000240, "Member 'UItemManagementEquipSlot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementEquipSlot_C, DropTarget) == 0x000248, "Member 'UItemManagementEquipSlot_C::DropTarget' has a wrong offset!");
 static_assert(offsetof(UItemManagementEquipSlot_C, EmptyImage) == 0x000250, "Member 'UItemManagementEquipSlot_C::EmptyImage' has a wrong offset!");

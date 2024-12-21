@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.ExecuteUbergraph_ItemManagementInventoryPanel
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0198 (0x0198 - 0x0000)
 struct ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel final
 {
 public:
@@ -48,7 +48,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetCriterionDisplayNameOfSortType_ReturnValue; // 0x0020(0x0018)()
 	class FText                                   CallFunc_GetQualifiedFilterDisplayName_ReturnValue; // 0x0038(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ZeroConstructor, ReferenceParm)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A8(0x0018)()
@@ -91,8 +91,8 @@ public:
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0192(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel) == 0x11821D80, "Wrong alignment on ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel");
-static_assert(sizeof(ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel) == 0x11821D80, "Wrong size on ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel");
+static_assert(alignof(ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel) == 0x000008, "Wrong alignment on ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel");
+static_assert(sizeof(ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel) == 0x000198, "Wrong size on ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel");
 static_assert(offsetof(ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel, EntryPoint) == 0x000000, "Member 'ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel, Temp_byte_Variable) == 0x000004, "Member 'ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel, Temp_byte_Variable2) == 0x000005, "Member 'ItemManagementInventoryPanel_C_ExecuteUbergraph_ItemManagementInventoryPanel::Temp_byte_Variable2' has a wrong offset!");
@@ -242,22 +242,22 @@ static_assert(offsetof(ItemManagementInventoryPanel_C_SetUniqueFeatures, CallFun
 static_assert(offsetof(ItemManagementInventoryPanel_C_SetUniqueFeatures, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'ItemManagementInventoryPanel_C_SetUniqueFeatures::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.UpdateRecycleInfo
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct ItemManagementInventoryPanel_C_UpdateRecycleInfo final
 {
 public:
 	int32                                         CallFunc_GetNumItemsToMulch_ReturnValue;           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0058(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0058(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0098(0x0018)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x00B0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x00C0(0x0018)()
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementInventoryPanel_C_UpdateRecycleInfo) == 0x11821D80, "Wrong alignment on ItemManagementInventoryPanel_C_UpdateRecycleInfo");
-static_assert(sizeof(ItemManagementInventoryPanel_C_UpdateRecycleInfo) == 0x11821D80, "Wrong size on ItemManagementInventoryPanel_C_UpdateRecycleInfo");
+static_assert(alignof(ItemManagementInventoryPanel_C_UpdateRecycleInfo) == 0x000008, "Wrong alignment on ItemManagementInventoryPanel_C_UpdateRecycleInfo");
+static_assert(sizeof(ItemManagementInventoryPanel_C_UpdateRecycleInfo) == 0x0000E0, "Wrong size on ItemManagementInventoryPanel_C_UpdateRecycleInfo");
 static_assert(offsetof(ItemManagementInventoryPanel_C_UpdateRecycleInfo, CallFunc_GetNumItemsToMulch_ReturnValue) == 0x000000, "Member 'ItemManagementInventoryPanel_C_UpdateRecycleInfo::CallFunc_GetNumItemsToMulch_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementInventoryPanel_C_UpdateRecycleInfo, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'ItemManagementInventoryPanel_C_UpdateRecycleInfo::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(ItemManagementInventoryPanel_C_UpdateRecycleInfo, K2Node_MakeArray_Array) == 0x000048, "Member 'ItemManagementInventoryPanel_C_UpdateRecycleInfo::K2Node_MakeArray_Array' has a wrong offset!");
@@ -402,11 +402,11 @@ static_assert(offsetof(ItemManagementInventoryPanel_C_HandleMulchQuantityCallbac
 static_assert(offsetof(ItemManagementInventoryPanel_C_HandleMulchQuantityCallback, CallFunc_Greater_IntInt_ReturnValue) == 0x000010, "Member 'ItemManagementInventoryPanel_C_HandleMulchQuantityCallback::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.SelectTrapByTag
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct ItemManagementInventoryPanel_C_SelectTrapByTag final
 {
 public:
-	struct FGameplayTag                           Tag;                                               // 0x0000(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Tag;                                               // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 	bool                                          Success;                                           // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -429,8 +429,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasTag_ReturnValue;                       // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementInventoryPanel_C_SelectTrapByTag) == 0x11821D80, "Wrong alignment on ItemManagementInventoryPanel_C_SelectTrapByTag");
-static_assert(sizeof(ItemManagementInventoryPanel_C_SelectTrapByTag) == 0x11821D80, "Wrong size on ItemManagementInventoryPanel_C_SelectTrapByTag");
+static_assert(alignof(ItemManagementInventoryPanel_C_SelectTrapByTag) == 0x000008, "Wrong alignment on ItemManagementInventoryPanel_C_SelectTrapByTag");
+static_assert(sizeof(ItemManagementInventoryPanel_C_SelectTrapByTag) == 0x000058, "Wrong size on ItemManagementInventoryPanel_C_SelectTrapByTag");
 static_assert(offsetof(ItemManagementInventoryPanel_C_SelectTrapByTag, Tag) == 0x000000, "Member 'ItemManagementInventoryPanel_C_SelectTrapByTag::Tag' has a wrong offset!");
 static_assert(offsetof(ItemManagementInventoryPanel_C_SelectTrapByTag, Success) == 0x000008, "Member 'ItemManagementInventoryPanel_C_SelectTrapByTag::Success' has a wrong offset!");
 static_assert(offsetof(ItemManagementInventoryPanel_C_SelectTrapByTag, Temp_bool_Variable) == 0x000009, "Member 'ItemManagementInventoryPanel_C_SelectTrapByTag::Temp_bool_Variable' has a wrong offset!");
@@ -491,12 +491,12 @@ static_assert(offsetof(ItemManagementInventoryPanel_C_SelectTrapByItem, CallFunc
 static_assert(offsetof(ItemManagementInventoryPanel_C_SelectTrapByItem, CallFunc_BooleanAND_ReturnValue) == 0x00003D, "Member 'ItemManagementInventoryPanel_C_SelectTrapByItem::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.PrepOpeningInventory
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct ItemManagementInventoryPanel_C_PrepOpeningInventory final
 {
 public:
 	class FName                                   ActionName;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           TrapsTag;                                          // 0x0008(0x11821D80)(Edit, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           TrapsTag;                                          // 0x0008(0x0008)(Edit, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -515,8 +515,8 @@ public:
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              CallFunc_GetItemToDetail_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementInventoryPanel_C_PrepOpeningInventory) == 0x11821D80, "Wrong alignment on ItemManagementInventoryPanel_C_PrepOpeningInventory");
-static_assert(sizeof(ItemManagementInventoryPanel_C_PrepOpeningInventory) == 0x11821D80, "Wrong size on ItemManagementInventoryPanel_C_PrepOpeningInventory");
+static_assert(alignof(ItemManagementInventoryPanel_C_PrepOpeningInventory) == 0x000008, "Wrong alignment on ItemManagementInventoryPanel_C_PrepOpeningInventory");
+static_assert(sizeof(ItemManagementInventoryPanel_C_PrepOpeningInventory) == 0x000060, "Wrong size on ItemManagementInventoryPanel_C_PrepOpeningInventory");
 static_assert(offsetof(ItemManagementInventoryPanel_C_PrepOpeningInventory, ActionName) == 0x000000, "Member 'ItemManagementInventoryPanel_C_PrepOpeningInventory::ActionName' has a wrong offset!");
 static_assert(offsetof(ItemManagementInventoryPanel_C_PrepOpeningInventory, TrapsTag) == 0x000008, "Member 'ItemManagementInventoryPanel_C_PrepOpeningInventory::TrapsTag' has a wrong offset!");
 static_assert(offsetof(ItemManagementInventoryPanel_C_PrepOpeningInventory, K2Node_SwitchName_CmpSuccess) == 0x000010, "Member 'ItemManagementInventoryPanel_C_PrepOpeningInventory::K2Node_SwitchName_CmpSuccess' has a wrong offset!");

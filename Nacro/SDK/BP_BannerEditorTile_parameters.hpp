@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function BP_BannerEditorTile.BP_BannerEditorTile_C.ExecuteUbergraph_BP_BannerEditorTile
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile final
 {
 public:
@@ -44,16 +44,17 @@ public:
 	class UFortHomebaseBannerColorItem*           K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item2; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetBannerColorSecondaryColor_ReturnValue; // 0x00A4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetBannerColorPrimaryColor_ReturnValue;   // 0x00B4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetBannerColorSecondaryColor_ReturnValue; // 0x00A4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetBannerColorPrimaryColor_ReturnValue;   // 0x00B4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Event_InData;                               // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonListView*                        K2Node_Event_OwningList;                           // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile) == 0x11821300, "Wrong alignment on BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile");
-static_assert(sizeof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile) == 0x11821300, "Wrong size on BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile");
+static_assert(alignof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile) == 0x000008, "Wrong alignment on BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile");
+static_assert(sizeof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile) == 0x0000E8, "Wrong size on BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile");
 static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, EntryPoint) == 0x000000, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_GetData_ReturnValue) == 0x000008, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_GetData_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item) == 0x000010, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item' has a wrong offset!");

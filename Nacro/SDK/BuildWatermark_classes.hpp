@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BuildWatermark.BuildWatermark_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0288 - 0x0260)
 class UBuildWatermark_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UTextBlock*                             Text;                                              // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   Watermark;                                         // 0x0270(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UBuildWatermark_C>();
 	}
 };
-static_assert(alignof(UBuildWatermark_C) == 0x322CBBB8, "Wrong alignment on UBuildWatermark_C");
-static_assert(sizeof(UBuildWatermark_C) == 0x322CBBB8, "Wrong size on UBuildWatermark_C");
+static_assert(alignof(UBuildWatermark_C) == 0x000008, "Wrong alignment on UBuildWatermark_C");
+static_assert(sizeof(UBuildWatermark_C) == 0x000288, "Wrong size on UBuildWatermark_C");
 static_assert(offsetof(UBuildWatermark_C, UberGraphFrame) == 0x000260, "Member 'UBuildWatermark_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBuildWatermark_C, Text) == 0x000268, "Member 'UBuildWatermark_C::Text' has a wrong offset!");
 static_assert(offsetof(UBuildWatermark_C, Watermark) == 0x000270, "Member 'UBuildWatermark_C::Watermark' has a wrong offset!");

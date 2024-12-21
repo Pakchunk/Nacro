@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.ExecuteUbergraph_StoreMain_OfferDetails
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails final
 {
 public:
@@ -35,12 +35,12 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool bSuccess)>                K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0050(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0050(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails) == 0x1182EB00, "Wrong alignment on StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails");
-static_assert(sizeof(StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails) == 0x1182EB00, "Wrong size on StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails");
+static_assert(alignof(StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails) == 0x000008, "Wrong alignment on StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails");
+static_assert(sizeof(StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails) == 0x000078, "Wrong size on StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails");
 static_assert(offsetof(StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails, EntryPoint) == 0x000000, "Member 'StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails::EntryPoint' has a wrong offset!");
 static_assert(offsetof(StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -65,14 +65,14 @@ static_assert(sizeof(StoreMain_OfferDetails_C_HandlePurchaseComplete) == 0x00000
 static_assert(offsetof(StoreMain_OfferDetails_C_HandlePurchaseComplete, bSuccess) == 0x000000, "Member 'StoreMain_OfferDetails_C_HandlePurchaseComplete::bSuccess' has a wrong offset!");
 
 // Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature
-// 0x0148 (0x0148 - 0x0000)
-struct alignas(0x148) StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature) == 0x000148, "Wrong alignment on StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature) == 0x000148, "Wrong size on StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'StoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.HandleBack
@@ -87,7 +87,7 @@ static_assert(sizeof(StoreMain_OfferDetails_C_HandleBack) == 0x000001, "Wrong si
 static_assert(offsetof(StoreMain_OfferDetails_C_HandleBack, PassThrough) == 0x000000, "Member 'StoreMain_OfferDetails_C_HandleBack::PassThrough' has a wrong offset!");
 
 // Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.Init
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct StoreMain_OfferDetails_C_Init final
 {
 public:
@@ -139,7 +139,7 @@ public:
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortMtxDetailsAttribute>       CallFunc_GetDetailsAttributes_ReturnValue;         // 0x00B8(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFortMtxDetailsAttribute               CallFunc_Array_Get_Item;                           // 0x00C8(0x1182E980)()
+	struct FFortMtxDetailsAttribute               CallFunc_Array_Get_Item;                           // 0x00C8(0x0030)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortMtxStoreOfferType                        CallFunc_GetStoreOfferType_ReturnValue4;           // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -157,15 +157,15 @@ public:
 	class FText                                   CallFunc_GetName_ReturnValue;                      // 0x0140(0x0018)()
 	ESlateVisibility                              Temp_byte_Variable14;                              // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMtxGradient                       CallFunc_GetGradient_ReturnValue;                  // 0x015C(0x1182E980)(NoDestructor)
+	struct FFortMtxGradient                       CallFunc_GetGradient_ReturnValue;                  // 0x015C(0x0020)(NoDestructor)
 	ESlateVisibility                              K2Node_Select6_Default;                            // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_17D[0x3];                                      // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetBackground_ReturnValue;                // 0x0180(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetBackground_ReturnValue;                // 0x0180(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetDetailsImage_ReturnValue;              // 0x0198(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetDetailsImage_ReturnValue;              // 0x0198(0x0090)()
 };
-static_assert(alignof(StoreMain_OfferDetails_C_Init) == 0x1182E980, "Wrong alignment on StoreMain_OfferDetails_C_Init");
-static_assert(sizeof(StoreMain_OfferDetails_C_Init) == 0x1182E980, "Wrong size on StoreMain_OfferDetails_C_Init");
+static_assert(alignof(StoreMain_OfferDetails_C_Init) == 0x000008, "Wrong alignment on StoreMain_OfferDetails_C_Init");
+static_assert(sizeof(StoreMain_OfferDetails_C_Init) == 0x000228, "Wrong size on StoreMain_OfferDetails_C_Init");
 static_assert(offsetof(StoreMain_OfferDetails_C_Init, Temp_bool_Variable) == 0x000000, "Member 'StoreMain_OfferDetails_C_Init::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(StoreMain_OfferDetails_C_Init, Temp_byte_Variable) == 0x000001, "Member 'StoreMain_OfferDetails_C_Init::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StoreMain_OfferDetails_C_Init, Temp_byte_Variable2) == 0x000002, "Member 'StoreMain_OfferDetails_C_Init::Temp_byte_Variable2' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManagementCompareModeBox.ItemManagementCompareModeBox_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0050 (0x0480 - 0x0430)
 class UItemManagementCompareModeBox_C final : public UFortItemCompareModeActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         ComparisonModeBox;                                 // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_30;                                          // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_31;                                          // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementCompareModeBox_C>();
 	}
 };
-static_assert(alignof(UItemManagementCompareModeBox_C) == 0x322CBBB8, "Wrong alignment on UItemManagementCompareModeBox_C");
-static_assert(sizeof(UItemManagementCompareModeBox_C) == 0x322CBBB8, "Wrong size on UItemManagementCompareModeBox_C");
+static_assert(alignof(UItemManagementCompareModeBox_C) == 0x000008, "Wrong alignment on UItemManagementCompareModeBox_C");
+static_assert(sizeof(UItemManagementCompareModeBox_C) == 0x000480, "Wrong size on UItemManagementCompareModeBox_C");
 static_assert(offsetof(UItemManagementCompareModeBox_C, UberGraphFrame) == 0x000430, "Member 'UItemManagementCompareModeBox_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementCompareModeBox_C, ComparisonModeBox) == 0x000438, "Member 'UItemManagementCompareModeBox_C::ComparisonModeBox' has a wrong offset!");
 static_assert(offsetof(UItemManagementCompareModeBox_C, Image_30) == 0x000440, "Member 'UItemManagementCompareModeBox_C::Image_30' has a wrong offset!");

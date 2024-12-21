@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaEquipProgress.AthenaEquipProgress_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0298 - 0x0260)
 class UAthenaEquipProgress_C final : public UFortHUDEquipProgressBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 ImageTimer;                                        // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               OverlayTimer;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScaleBox*                              Root;                                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UAthenaEquipProgress_C>();
 	}
 };
-static_assert(alignof(UAthenaEquipProgress_C) == 0x322CBBB8, "Wrong alignment on UAthenaEquipProgress_C");
-static_assert(sizeof(UAthenaEquipProgress_C) == 0x322CBBB8, "Wrong size on UAthenaEquipProgress_C");
+static_assert(alignof(UAthenaEquipProgress_C) == 0x000008, "Wrong alignment on UAthenaEquipProgress_C");
+static_assert(sizeof(UAthenaEquipProgress_C) == 0x000298, "Wrong size on UAthenaEquipProgress_C");
 static_assert(offsetof(UAthenaEquipProgress_C, UberGraphFrame) == 0x000260, "Member 'UAthenaEquipProgress_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaEquipProgress_C, ImageTimer) == 0x000268, "Member 'UAthenaEquipProgress_C::ImageTimer' has a wrong offset!");
 static_assert(offsetof(UAthenaEquipProgress_C, OverlayTimer) == 0x000270, "Member 'UAthenaEquipProgress_C::OverlayTimer' has a wrong offset!");

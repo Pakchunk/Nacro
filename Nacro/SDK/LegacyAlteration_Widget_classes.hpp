@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LegacyAlteration_Widget.LegacyAlteration_Widget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02C8 - 0x0258)
 class ULegacyAlteration_Widget_C final : public UFortAlterationWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
 	class UBorder*                                BorderBadge;                                       // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderBadge_Alt;                                   // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderFrame;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -55,8 +55,8 @@ public:
 		return GetDefaultObjImpl<ULegacyAlteration_Widget_C>();
 	}
 };
-static_assert(alignof(ULegacyAlteration_Widget_C) == 0x322CBBB8, "Wrong alignment on ULegacyAlteration_Widget_C");
-static_assert(sizeof(ULegacyAlteration_Widget_C) == 0x322CBBB8, "Wrong size on ULegacyAlteration_Widget_C");
+static_assert(alignof(ULegacyAlteration_Widget_C) == 0x000008, "Wrong alignment on ULegacyAlteration_Widget_C");
+static_assert(sizeof(ULegacyAlteration_Widget_C) == 0x0002C8, "Wrong size on ULegacyAlteration_Widget_C");
 static_assert(offsetof(ULegacyAlteration_Widget_C, UberGraphFrame) == 0x000258, "Member 'ULegacyAlteration_Widget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULegacyAlteration_Widget_C, BorderBadge) == 0x000260, "Member 'ULegacyAlteration_Widget_C::BorderBadge' has a wrong offset!");
 static_assert(offsetof(ULegacyAlteration_Widget_C, BorderBadge_Alt) == 0x000268, "Member 'ULegacyAlteration_Widget_C::BorderBadge_Alt' has a wrong offset!");

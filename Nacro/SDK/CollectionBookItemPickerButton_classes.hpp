@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookItemPickerButton.CollectionBookItemPickerButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x08D8 - 0x08D0)
 class UCollectionBookItemPickerButton_C final : public UFortItemPickerButton
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookItemPickerButton_C>();
 	}
 };
-static_assert(alignof(UCollectionBookItemPickerButton_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookItemPickerButton_C");
-static_assert(sizeof(UCollectionBookItemPickerButton_C) == 0x322CBBB8, "Wrong size on UCollectionBookItemPickerButton_C");
+static_assert(alignof(UCollectionBookItemPickerButton_C) == 0x000008, "Wrong alignment on UCollectionBookItemPickerButton_C");
+static_assert(sizeof(UCollectionBookItemPickerButton_C) == 0x0008D8, "Wrong size on UCollectionBookItemPickerButton_C");
 static_assert(offsetof(UCollectionBookItemPickerButton_C, RootWidgetSwitcher) == 0x0008D0, "Member 'UCollectionBookItemPickerButton_C::RootWidgetSwitcher' has a wrong offset!");
 
 }

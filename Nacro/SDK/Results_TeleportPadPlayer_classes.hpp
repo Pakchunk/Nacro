@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_TeleportPadPlayer.Results_TeleportPadPlayer_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00F8 (0x0330 - 0x0238)
 class UResults_TeleportPadPlayer_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_Outro;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_InviteCheck;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_ThumbsPulse;                                  // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,13 +39,13 @@ public:
 	uint8                                         Pad_292[0x6];                                      // 0x0292(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             ThumbsUp;                                          // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             ThumbsNeutral;                                     // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       UniqueNetID;                                       // 0x02A8(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       UniqueNetID;                                       // 0x02A8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   OnMissionStatsClicked;                             // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnAddFriendClicked;                                // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnUpVoteClicked;                                   // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                   PlayerName;                                        // 0x02F0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	UMulticastDelegateProperty_                   OnTeleportPadIntroFinished;                        // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FUniqueNetIdRepl                       ConsoleUniqueNetId;                                // 0x0318(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       ConsoleUniqueNetId;                                // 0x0318(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void OnMissionStatsClicked__DelegateSignature();
@@ -81,8 +81,8 @@ public:
 		return GetDefaultObjImpl<UResults_TeleportPadPlayer_C>();
 	}
 };
-static_assert(alignof(UResults_TeleportPadPlayer_C) == 0x322CBBB8, "Wrong alignment on UResults_TeleportPadPlayer_C");
-static_assert(sizeof(UResults_TeleportPadPlayer_C) == 0x322CBBB8, "Wrong size on UResults_TeleportPadPlayer_C");
+static_assert(alignof(UResults_TeleportPadPlayer_C) == 0x000008, "Wrong alignment on UResults_TeleportPadPlayer_C");
+static_assert(sizeof(UResults_TeleportPadPlayer_C) == 0x000330, "Wrong size on UResults_TeleportPadPlayer_C");
 static_assert(offsetof(UResults_TeleportPadPlayer_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeleportPadPlayer_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_TeleportPadPlayer_C, Anim_Outro) == 0x000240, "Member 'UResults_TeleportPadPlayer_C::Anim_Outro' has a wrong offset!");
 static_assert(offsetof(UResults_TeleportPadPlayer_C, Anim_InviteCheck) == 0x000248, "Member 'UResults_TeleportPadPlayer_C::Anim_InviteCheck' has a wrong offset!");

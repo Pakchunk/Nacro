@@ -21,7 +21,7 @@ namespace SDK::Params
 {
 
 // Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.ExecuteUbergraph_WorkerTooltipStatsWidget
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget final
 {
 public:
@@ -35,14 +35,14 @@ public:
 	bool                                          CallFunc_GetWorkerPreviewStatus_OutMatchesPersonality; // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetWorkerPreviewStatus_OutMatchesSquadType; // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FWorkerSetBonusState                   CallFunc_GetWorkerPreviewStatus_OutSetBonusState;  // 0x0030(0x11821D80)(NoDestructor)
+	struct FWorkerSetBonusState                   CallFunc_GetWorkerPreviewStatus_OutSetBonusState;  // 0x0030(0x0010)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0050(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0068(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0068(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x00A8(0x0018)()
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00C8(0x0040)(HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0110(0x0010)(ZeroConstructor, ReferenceParm)
@@ -51,10 +51,11 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0128(0x0018)()
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0144(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0144(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Calculate_Current_Pulsing_Highlight_Color_Current_Color; // 0x017C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0190(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_Calculate_Current_Pulsing_Highlight_Color_Current_Color; // 0x017C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0190(0x0028)()
 	ESlateVisibility                              Temp_byte_Variable3;                               // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable4;                               // 0x01BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -70,8 +71,8 @@ public:
 	bool                                          Temp_bool_Variable3;                               // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x01C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget) == 0x322CBBB8, "Wrong alignment on WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget");
-static_assert(sizeof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget) == 0x322CBBB8, "Wrong size on WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget");
+static_assert(alignof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget) == 0x000008, "Wrong alignment on WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget");
+static_assert(sizeof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget) == 0x0001C8, "Wrong size on WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget");
 static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, EntryPoint) == 0x000000, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
@@ -111,15 +112,15 @@ static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltip
 static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_Select3_Default) == 0x0001C5, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_Select3_Default' has a wrong offset!");
 
 // Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct WorkerTooltipStatsWidget_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WorkerTooltipStatsWidget_C_Tick) == 0x11827900, "Wrong alignment on WorkerTooltipStatsWidget_C_Tick");
-static_assert(sizeof(WorkerTooltipStatsWidget_C_Tick) == 0x11827900, "Wrong size on WorkerTooltipStatsWidget_C_Tick");
+static_assert(alignof(WorkerTooltipStatsWidget_C_Tick) == 0x000004, "Wrong alignment on WorkerTooltipStatsWidget_C_Tick");
+static_assert(sizeof(WorkerTooltipStatsWidget_C_Tick) == 0x000038, "Wrong size on WorkerTooltipStatsWidget_C_Tick");
 static_assert(offsetof(WorkerTooltipStatsWidget_C_Tick, MyGeometry) == 0x000000, "Member 'WorkerTooltipStatsWidget_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(WorkerTooltipStatsWidget_C_Tick, InDeltaTime) == 0x000034, "Member 'WorkerTooltipStatsWidget_C_Tick::InDeltaTime' has a wrong offset!");
 

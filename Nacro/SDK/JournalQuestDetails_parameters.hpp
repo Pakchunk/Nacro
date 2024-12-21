@@ -97,7 +97,7 @@ static_assert(offsetof(JournalQuestDetails_C_UpdatePlayButtonState, CallFunc_Get
 static_assert(offsetof(JournalQuestDetails_C_UpdatePlayButtonState, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000001, "Member 'JournalQuestDetails_C_UpdatePlayButtonState::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function JournalQuestDetails.JournalQuestDetails_C.UpdatePanelInfo
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0138 (0x0138 - 0x0000)
 struct JournalQuestDetails_C_UpdatePanelInfo final
 {
 public:
@@ -113,7 +113,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDescription_ReturnValue;               // 0x0050(0x0018)()
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0068(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0068(0x0090)()
 	class UFortQuestItemDefinition*               CallFunc_GetQuestDefinitionBP_ReturnValue;         // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0100(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -121,8 +121,8 @@ public:
 	TArray<class UFortQuestObjectiveInfo*>        CallFunc_GetVisibleObjectives_VisibleObjectives;   // 0x0120(0x0010)(ZeroConstructor, ReferenceParm)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JournalQuestDetails_C_UpdatePanelInfo) == 0x11827900, "Wrong alignment on JournalQuestDetails_C_UpdatePanelInfo");
-static_assert(sizeof(JournalQuestDetails_C_UpdatePanelInfo) == 0x11827900, "Wrong size on JournalQuestDetails_C_UpdatePanelInfo");
+static_assert(alignof(JournalQuestDetails_C_UpdatePanelInfo) == 0x000008, "Wrong alignment on JournalQuestDetails_C_UpdatePanelInfo");
+static_assert(sizeof(JournalQuestDetails_C_UpdatePanelInfo) == 0x000138, "Wrong size on JournalQuestDetails_C_UpdatePanelInfo");
 static_assert(offsetof(JournalQuestDetails_C_UpdatePanelInfo, Temp_byte_Variable) == 0x000000, "Member 'JournalQuestDetails_C_UpdatePanelInfo::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_UpdatePanelInfo, CallFunc_GetFutureObjectives_FutureObjectives) == 0x000008, "Member 'JournalQuestDetails_C_UpdatePanelInfo::CallFunc_GetFutureObjectives_FutureObjectives' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_UpdatePanelInfo, Temp_byte_Variable2) == 0x000018, "Member 'JournalQuestDetails_C_UpdatePanelInfo::Temp_byte_Variable2' has a wrong offset!");
@@ -186,7 +186,7 @@ static_assert(sizeof(JournalQuestDetails_C_StopConversation) == 0x000001, "Wrong
 static_assert(offsetof(JournalQuestDetails_C_StopConversation, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'JournalQuestDetails_C_StopConversation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function JournalQuestDetails.JournalQuestDetails_C.StartConversation
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct JournalQuestDetails_C_StartConversation final
 {
 public:
@@ -195,19 +195,19 @@ public:
 	bool                                          IsOutro_;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortClientAnnouncementData_Conversation K2Node_MakeStruct_FortClientAnnouncementData_Conversation; // 0x0018(0x1182E980)(NoDestructor)
+	struct FFortClientAnnouncementData_Conversation K2Node_MakeStruct_FortClientAnnouncementData_Conversation; // 0x0018(0x0010)(NoDestructor)
 	class FString                                 Temp_string_Variable;                              // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Temp_string_Variable2;                             // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_Select_Default;                             // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TArray<class AFortPlayerController*>          CallFunc_GetLocalFortPlayerControllers_ReturnValue; // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0070(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0070(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AAnnounce_Gen_Quest_Conversation_C*     CallFunc_FinishSpawningActor_ReturnValue;          // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JournalQuestDetails_C_StartConversation) == 0x11821780, "Wrong alignment on JournalQuestDetails_C_StartConversation");
-static_assert(sizeof(JournalQuestDetails_C_StartConversation) == 0x11821780, "Wrong size on JournalQuestDetails_C_StartConversation");
+static_assert(alignof(JournalQuestDetails_C_StartConversation) == 0x000010, "Wrong alignment on JournalQuestDetails_C_StartConversation");
+static_assert(sizeof(JournalQuestDetails_C_StartConversation) == 0x0000B0, "Wrong size on JournalQuestDetails_C_StartConversation");
 static_assert(offsetof(JournalQuestDetails_C_StartConversation, Conversation_0) == 0x000000, "Member 'JournalQuestDetails_C_StartConversation::Conversation_0' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_StartConversation, QuestItem) == 0x000008, "Member 'JournalQuestDetails_C_StartConversation::QuestItem' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_StartConversation, IsOutro_) == 0x000010, "Member 'JournalQuestDetails_C_StartConversation::IsOutro_' has a wrong offset!");
@@ -234,7 +234,7 @@ static_assert(sizeof(JournalQuestDetails_C_IsQuestAudioPlaying) == 0x000001, "Wr
 static_assert(offsetof(JournalQuestDetails_C_IsQuestAudioPlaying, IsQuestAudioPlaying_0) == 0x000000, "Member 'JournalQuestDetails_C_IsQuestAudioPlaying::IsQuestAudioPlaying_0' has a wrong offset!");
 
 // Function JournalQuestDetails.JournalQuestDetails_C.Set Quest Display Name
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct JournalQuestDetails_C_Set_Quest_Display_Name final
 {
 public:
@@ -242,17 +242,17 @@ public:
 	class FText                                   LocalQuestName;                                    // 0x0018(0x0018)(Edit)
 	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Get_Streaming_Attached_Quest_Name_ReturnValue; // 0x0078(0x0018)()
 	bool                                          CallFunc_Is_Streaming_Quest_bStreamingQuest;       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0098(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0098(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00D8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E8(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0100(0x0018)()
 };
-static_assert(alignof(JournalQuestDetails_C_Set_Quest_Display_Name) == 0x11821D80, "Wrong alignment on JournalQuestDetails_C_Set_Quest_Display_Name");
-static_assert(sizeof(JournalQuestDetails_C_Set_Quest_Display_Name) == 0x11821D80, "Wrong size on JournalQuestDetails_C_Set_Quest_Display_Name");
+static_assert(alignof(JournalQuestDetails_C_Set_Quest_Display_Name) == 0x000008, "Wrong alignment on JournalQuestDetails_C_Set_Quest_Display_Name");
+static_assert(sizeof(JournalQuestDetails_C_Set_Quest_Display_Name) == 0x000118, "Wrong size on JournalQuestDetails_C_Set_Quest_Display_Name");
 static_assert(offsetof(JournalQuestDetails_C_Set_Quest_Display_Name, InText) == 0x000000, "Member 'JournalQuestDetails_C_Set_Quest_Display_Name::InText' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_Set_Quest_Display_Name, LocalQuestName) == 0x000018, "Member 'JournalQuestDetails_C_Set_Quest_Display_Name::LocalQuestName' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_Set_Quest_Display_Name, Temp_bool_Variable) == 0x000030, "Member 'JournalQuestDetails_C_Set_Quest_Display_Name::Temp_bool_Variable' has a wrong offset!");
@@ -282,8 +282,8 @@ static_assert(offsetof(JournalQuestDetails_C_Get_Quest_Item_Def, K2Node_DynamicC
 static_assert(offsetof(JournalQuestDetails_C_Get_Quest_Item_Def, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'JournalQuestDetails_C_Get_Quest_Item_Def::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function JournalQuestDetails.JournalQuestDetails_C.Is Streaming Quest
-// 0x013F (0x013F - 0x0000)
-struct alignas(0x13F) JournalQuestDetails_C_Is_Streaming_Quest final
+// 0x0018 (0x0018 - 0x0000)
+struct JournalQuestDetails_C_Is_Streaming_Quest final
 {
 public:
 	bool                                          bStreamingQuest;                                   // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -296,8 +296,8 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JournalQuestDetails_C_Is_Streaming_Quest) == 0x00013F, "Wrong alignment on JournalQuestDetails_C_Is_Streaming_Quest");
-static_assert(sizeof(JournalQuestDetails_C_Is_Streaming_Quest) == 0x00013F, "Wrong size on JournalQuestDetails_C_Is_Streaming_Quest");
+static_assert(alignof(JournalQuestDetails_C_Is_Streaming_Quest) == 0x000008, "Wrong alignment on JournalQuestDetails_C_Is_Streaming_Quest");
+static_assert(sizeof(JournalQuestDetails_C_Is_Streaming_Quest) == 0x000018, "Wrong size on JournalQuestDetails_C_Is_Streaming_Quest");
 static_assert(offsetof(JournalQuestDetails_C_Is_Streaming_Quest, bStreamingQuest) == 0x000000, "Member 'JournalQuestDetails_C_Is_Streaming_Quest::bStreamingQuest' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_Is_Streaming_Quest, CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition) == 0x000008, "Member 'JournalQuestDetails_C_Is_Streaming_Quest::CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_Is_Streaming_Quest, CallFunc_GetQuestType_ReturnValue) == 0x000010, "Member 'JournalQuestDetails_C_Is_Streaming_Quest::CallFunc_GetQuestType_ReturnValue' has a wrong offset!");

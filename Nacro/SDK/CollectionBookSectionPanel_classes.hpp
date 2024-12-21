@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookSectionPanel.CollectionBookSectionPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0080 (0x05B0 - 0x0530)
 class UCollectionBookSectionPanel_C final : public UFortCollectionBookSectionPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0530(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0530(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_0;                                           // 0x0538(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_2;                                           // 0x0540(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMainModeItemDetailsHostPanel_C*        MainModeItemDetailsHostPanel;                      // 0x0548(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    SlotItemInputAction;                               // 0x0550(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    InspectInputAction;                                // 0x0560(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    SlotItemInputAction;                               // 0x0550(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InspectInputAction;                                // 0x0560(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FText                                   ConfirmSlotItemTitle;                              // 0x0570(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   ConfirmSlotItemMessage;                            // 0x0588(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FDataTableRowHandle                    BackInputActionName;                               // 0x05A0(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    BackInputActionName;                               // 0x05A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_CollectionBookSectionPanel(int32 EntryPoint);
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookSectionPanel_C>();
 	}
 };
-static_assert(alignof(UCollectionBookSectionPanel_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookSectionPanel_C");
-static_assert(sizeof(UCollectionBookSectionPanel_C) == 0x322CBBB8, "Wrong size on UCollectionBookSectionPanel_C");
+static_assert(alignof(UCollectionBookSectionPanel_C) == 0x000008, "Wrong alignment on UCollectionBookSectionPanel_C");
+static_assert(sizeof(UCollectionBookSectionPanel_C) == 0x0005B0, "Wrong size on UCollectionBookSectionPanel_C");
 static_assert(offsetof(UCollectionBookSectionPanel_C, UberGraphFrame) == 0x000530, "Member 'UCollectionBookSectionPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookSectionPanel_C, Image_0) == 0x000538, "Member 'UCollectionBookSectionPanel_C::Image_0' has a wrong offset!");
 static_assert(offsetof(UCollectionBookSectionPanel_C, Image_2) == 0x000540, "Member 'UCollectionBookSectionPanel_C::Image_2' has a wrong offset!");

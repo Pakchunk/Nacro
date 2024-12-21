@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionRichText.MissionRichText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0270 - 0x0238)
 class UMissionRichText_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UFortRichTextBlock*                     TextBlockHUD;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortRichTextBlock*                     TextBlockNonHUD;                                   // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   TextToDisplay;                                     // 0x0250(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UMissionRichText_C>();
 	}
 };
-static_assert(alignof(UMissionRichText_C) == 0x322CBBB8, "Wrong alignment on UMissionRichText_C");
-static_assert(sizeof(UMissionRichText_C) == 0x322CBBB8, "Wrong size on UMissionRichText_C");
+static_assert(alignof(UMissionRichText_C) == 0x000008, "Wrong alignment on UMissionRichText_C");
+static_assert(sizeof(UMissionRichText_C) == 0x000270, "Wrong size on UMissionRichText_C");
 static_assert(offsetof(UMissionRichText_C, UberGraphFrame) == 0x000238, "Member 'UMissionRichText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionRichText_C, TextBlockHUD) == 0x000240, "Member 'UMissionRichText_C::TextBlockHUD' has a wrong offset!");
 static_assert(offsetof(UMissionRichText_C, TextBlockNonHUD) == 0x000248, "Member 'UMissionRichText_C::TextBlockNonHUD' has a wrong offset!");

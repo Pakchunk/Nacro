@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-MainL2.Border-MainL2_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusMainL2_C final : public UBorderMinusMainL_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusMainL2_C>();
 	}
 };
-static_assert(alignof(UBorderMinusMainL2_C) == 0x11827900, "Wrong alignment on UBorderMinusMainL2_C");
-static_assert(sizeof(UBorderMinusMainL2_C) == 0x11827900, "Wrong size on UBorderMinusMainL2_C");
+static_assert(alignof(UBorderMinusMainL2_C) == 0x000008, "Wrong alignment on UBorderMinusMainL2_C");
+static_assert(sizeof(UBorderMinusMainL2_C) == 0x0000B8, "Wrong size on UBorderMinusMainL2_C");
 
 }
 

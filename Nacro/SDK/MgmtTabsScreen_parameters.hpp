@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function MgmtTabsScreen.MgmtTabsScreen_C.ExecuteUbergraph_MgmtTabsScreen
-// 0x0394 (0x0394 - 0x0000)
-struct alignas(0x394) MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen final
+// 0x00D0 (0x00D0 - 0x0000)
+struct MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -60,8 +60,8 @@ public:
 	EFortUIFeatureState                           K2Node_CustomEvent_NewState;                       // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select2_Default;                            // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen) == 0x000394, "Wrong alignment on MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen");
-static_assert(sizeof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen) == 0x000394, "Wrong size on MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen");
+static_assert(alignof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen) == 0x000008, "Wrong alignment on MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen");
+static_assert(sizeof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen) == 0x0000D0, "Wrong size on MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen");
 static_assert(offsetof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen, EntryPoint) == 0x000000, "Member 'MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen, Temp_bool_Variable) == 0x000004, "Member 'MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen, Temp_bool_Variable2) == 0x000005, "Member 'MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen::Temp_bool_Variable2' has a wrong offset!");
@@ -97,15 +97,15 @@ static_assert(offsetof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen, K2Node_
 static_assert(offsetof(MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen, K2Node_Select2_Default) == 0x0000CA, "Member 'MgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen::K2Node_Select2_Default' has a wrong offset!");
 
 // Function MgmtTabsScreen.MgmtTabsScreen_C.HandleShowObjectives
-// 0x730073 (0x730073 - 0x0000)
-struct alignas(0x730073) MgmtTabsScreen_C_HandleShowObjectives final
+// 0x0002 (0x0002 - 0x0000)
+struct MgmtTabsScreen_C_HandleShowObjectives final
 {
 public:
 	EFortUIFeature                                ChangedFeature;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortUIFeatureState                           NewState;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MgmtTabsScreen_C_HandleShowObjectives) == 0x730073, "Wrong alignment on MgmtTabsScreen_C_HandleShowObjectives");
-static_assert(sizeof(MgmtTabsScreen_C_HandleShowObjectives) == 0x730073, "Wrong size on MgmtTabsScreen_C_HandleShowObjectives");
+static_assert(alignof(MgmtTabsScreen_C_HandleShowObjectives) == 0x000001, "Wrong alignment on MgmtTabsScreen_C_HandleShowObjectives");
+static_assert(sizeof(MgmtTabsScreen_C_HandleShowObjectives) == 0x000002, "Wrong size on MgmtTabsScreen_C_HandleShowObjectives");
 static_assert(offsetof(MgmtTabsScreen_C_HandleShowObjectives, ChangedFeature) == 0x000000, "Member 'MgmtTabsScreen_C_HandleShowObjectives::ChangedFeature' has a wrong offset!");
 static_assert(offsetof(MgmtTabsScreen_C_HandleShowObjectives, NewState) == 0x000001, "Member 'MgmtTabsScreen_C_HandleShowObjectives::NewState' has a wrong offset!");
 
@@ -175,15 +175,15 @@ static_assert(offsetof(MgmtTabsScreen_C_HandleDamageReceived, CallFunc_Not_PreBo
 static_assert(offsetof(MgmtTabsScreen_C_HandleDamageReceived, CallFunc_BooleanAND_ReturnValue) == 0x00000B, "Member 'MgmtTabsScreen_C_HandleDamageReceived::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function MgmtTabsScreen.MgmtTabsScreen_C.HandleMgmtMenuTabChangeRequested
-// 0x000C (0x000C - 0x0000)
-struct MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested final
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested final
 {
 public:
 	class FName                                   TabName;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SelectTabByID_ReturnValue;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested) == 0x000004, "Wrong alignment on MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested");
-static_assert(sizeof(MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested) == 0x00000C, "Wrong size on MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested");
+static_assert(alignof(MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested) == 0x000008, "Wrong alignment on MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested");
+static_assert(sizeof(MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested) == 0x000010, "Wrong size on MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested");
 static_assert(offsetof(MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested, TabName) == 0x000000, "Member 'MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested::TabName' has a wrong offset!");
 static_assert(offsetof(MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested, CallFunc_SelectTabByID_ReturnValue) == 0x000008, "Member 'MgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested::CallFunc_SelectTabByID_ReturnValue' has a wrong offset!");
 

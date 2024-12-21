@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LegacyAlterationGroup_Widget.LegacyAlterationGroup_Widget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0288 - 0x0258)
 class ULegacyAlterationGroup_Widget_C final : public UFortAlterationsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0258(0x0008)(Transient, DuplicateTransient)
 	class ULegacyAlteration_Widget_C*             AlterationWidget;                                  // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyAlteration_Widget_C*             AlterationWidget_0;                                // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULegacyAlteration_Widget_C*             AlterationWidget_1;                                // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<ULegacyAlterationGroup_Widget_C>();
 	}
 };
-static_assert(alignof(ULegacyAlterationGroup_Widget_C) == 0x322CBBB8, "Wrong alignment on ULegacyAlterationGroup_Widget_C");
-static_assert(sizeof(ULegacyAlterationGroup_Widget_C) == 0x322CBBB8, "Wrong size on ULegacyAlterationGroup_Widget_C");
+static_assert(alignof(ULegacyAlterationGroup_Widget_C) == 0x000008, "Wrong alignment on ULegacyAlterationGroup_Widget_C");
+static_assert(sizeof(ULegacyAlterationGroup_Widget_C) == 0x000288, "Wrong size on ULegacyAlterationGroup_Widget_C");
 static_assert(offsetof(ULegacyAlterationGroup_Widget_C, UberGraphFrame) == 0x000258, "Member 'ULegacyAlterationGroup_Widget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULegacyAlterationGroup_Widget_C, AlterationWidget) == 0x000260, "Member 'ULegacyAlterationGroup_Widget_C::AlterationWidget' has a wrong offset!");
 static_assert(offsetof(ULegacyAlterationGroup_Widget_C, AlterationWidget_0) == 0x000268, "Member 'ULegacyAlterationGroup_Widget_C::AlterationWidget_0' has a wrong offset!");

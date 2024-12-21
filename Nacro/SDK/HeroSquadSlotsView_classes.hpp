@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HeroSquadSlotsView.HeroSquadSlotsView_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x02E0 - 0x02C0)
 class UHeroSquadSlotsView_C final : public UFortSquadSlotsView
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(Transient, DuplicateTransient)
 	class USquadSlotGroup_C*                      BonusSquadSlotGroup;                               // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USquadSlotGroup_C*                      DefendersSquadSlotGroup;                           // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USquadSlotGroup_C*                      PrimarySquadSlotGroup;                             // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UHeroSquadSlotsView_C>();
 	}
 };
-static_assert(alignof(UHeroSquadSlotsView_C) == 0x322CBBB8, "Wrong alignment on UHeroSquadSlotsView_C");
-static_assert(sizeof(UHeroSquadSlotsView_C) == 0x322CBBB8, "Wrong size on UHeroSquadSlotsView_C");
+static_assert(alignof(UHeroSquadSlotsView_C) == 0x000008, "Wrong alignment on UHeroSquadSlotsView_C");
+static_assert(sizeof(UHeroSquadSlotsView_C) == 0x0002E0, "Wrong size on UHeroSquadSlotsView_C");
 static_assert(offsetof(UHeroSquadSlotsView_C, UberGraphFrame) == 0x0002C0, "Member 'UHeroSquadSlotsView_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHeroSquadSlotsView_C, BonusSquadSlotGroup) == 0x0002C8, "Member 'UHeroSquadSlotsView_C::BonusSquadSlotGroup' has a wrong offset!");
 static_assert(offsetof(UHeroSquadSlotsView_C, DefendersSquadSlotGroup) == 0x0002D0, "Member 'UHeroSquadSlotsView_C::DefendersSquadSlotGroup' has a wrong offset!");

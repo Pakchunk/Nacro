@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-ItemInfoHeader.Border-ItemInfoHeader_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusItemInfoHeader_C : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusItemInfoHeader_C>();
 	}
 };
-static_assert(alignof(UBorderMinusItemInfoHeader_C) == 0x11827900, "Wrong alignment on UBorderMinusItemInfoHeader_C");
-static_assert(sizeof(UBorderMinusItemInfoHeader_C) == 0x11827900, "Wrong size on UBorderMinusItemInfoHeader_C");
+static_assert(alignof(UBorderMinusItemInfoHeader_C) == 0x000008, "Wrong alignment on UBorderMinusItemInfoHeader_C");
+static_assert(sizeof(UBorderMinusItemInfoHeader_C) == 0x0000B8, "Wrong size on UBorderMinusItemInfoHeader_C");
 
 }
 

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Announcement_Tutorial.Announcement_Tutorial_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x02B8 - 0x0240)
 class UAnnouncement_Tutorial_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UScrollBox*                             ChatBox;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               ContentBox;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -34,7 +34,7 @@ public:
 	class UOverlay*                               TopOverlay;                                        // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<class FText>                           TextLines;                                         // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class FText                                   LastText;                                          // 0x0298(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FTimerHandle                           ContinueTutorialTimer;                             // 0x02B0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           ContinueTutorialTimer;                             // 0x02B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_Announcement_Tutorial(int32 EntryPoint);
@@ -60,8 +60,8 @@ public:
 		return GetDefaultObjImpl<UAnnouncement_Tutorial_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_Tutorial_C) == 0x322CBBB8, "Wrong alignment on UAnnouncement_Tutorial_C");
-static_assert(sizeof(UAnnouncement_Tutorial_C) == 0x322CBBB8, "Wrong size on UAnnouncement_Tutorial_C");
+static_assert(alignof(UAnnouncement_Tutorial_C) == 0x000008, "Wrong alignment on UAnnouncement_Tutorial_C");
+static_assert(sizeof(UAnnouncement_Tutorial_C) == 0x0002B8, "Wrong size on UAnnouncement_Tutorial_C");
 static_assert(offsetof(UAnnouncement_Tutorial_C, UberGraphFrame) == 0x000240, "Member 'UAnnouncement_Tutorial_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_Tutorial_C, ChatBox) == 0x000248, "Member 'UAnnouncement_Tutorial_C::ChatBox' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_Tutorial_C, ContentBox) == 0x000250, "Member 'UAnnouncement_Tutorial_C::ContentBox' has a wrong offset!");

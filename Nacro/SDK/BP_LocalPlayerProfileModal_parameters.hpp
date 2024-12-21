@@ -44,13 +44,13 @@ static_assert(offsetof(BP_LocalPlayerProfileModal_C_ExecuteUbergraph_BP_LocalPla
 
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature final
+struct alignas(0x08) BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature final
 {
 public:
 	class FName                                   IconId;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   ColorId;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature) == 0x000004, "Wrong alignment on BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature");
+static_assert(alignof(BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature) == 0x000008, "Wrong alignment on BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature");
 static_assert(sizeof(BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature) == 0x000010, "Wrong size on BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature");
 static_assert(offsetof(BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature, IconId) == 0x000000, "Member 'BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature::IconId' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature, ColorId) == 0x000008, "Member 'BP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature::ColorId' has a wrong offset!");
@@ -69,14 +69,14 @@ static_assert(offsetof(BP_LocalPlayerProfileModal_C_BndEvt__CommonWidgetSwitcher
 static_assert(offsetof(BP_LocalPlayerProfileModal_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_66_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'BP_LocalPlayerProfileModal_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_66_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.PreConstruct
-// 0x0078 (0x0078 - 0x0000)
-struct alignas(0x78) BP_LocalPlayerProfileModal_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct BP_LocalPlayerProfileModal_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_LocalPlayerProfileModal_C_PreConstruct) == 0x000078, "Wrong alignment on BP_LocalPlayerProfileModal_C_PreConstruct");
-static_assert(sizeof(BP_LocalPlayerProfileModal_C_PreConstruct) == 0x000078, "Wrong size on BP_LocalPlayerProfileModal_C_PreConstruct");
+static_assert(alignof(BP_LocalPlayerProfileModal_C_PreConstruct) == 0x000001, "Wrong alignment on BP_LocalPlayerProfileModal_C_PreConstruct");
+static_assert(sizeof(BP_LocalPlayerProfileModal_C_PreConstruct) == 0x000001, "Wrong size on BP_LocalPlayerProfileModal_C_PreConstruct");
 static_assert(offsetof(BP_LocalPlayerProfileModal_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BP_LocalPlayerProfileModal_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.Activate Widget
@@ -115,14 +115,14 @@ static_assert(offsetof(BP_LocalPlayerProfileModal_C_HandleCloseAction, CallFunc_
 
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.Setup Input Action Handlers
 // 0x0030 (0x0030 - 0x0000)
-struct BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers final
+struct alignas(0x08) BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate3;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers) == 0x000004, "Wrong alignment on BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers");
+static_assert(alignof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers) == 0x000008, "Wrong alignment on BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers");
 static_assert(sizeof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers) == 0x000030, "Wrong size on BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers");
 static_assert(offsetof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'BP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");

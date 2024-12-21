@@ -18,24 +18,24 @@ namespace SDK
 {
 
 // ScriptStruct SocialTypes.ChatStyle
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FChatStyle final
+// 0x1490 (0x1490 - 0x0000)
+struct FChatStyle final
 {
 public:
-	struct FEditableTextBoxStyle                  ChatEntryTextStyle;                                // 0x0000(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FEditableTextBoxStyle                  ChatDisplayTextStyle;                              // 0x0870(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FScrollBoxStyle                        ScrollBorderStyle;                                 // 0x10E0(0x11827900)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MessageNotificationBrush;                          // 0x1328(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FMargin                                ChatEntryPadding;                                  // 0x13B8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FEditableTextBoxStyle                  ChatEntryTextStyle;                                // 0x0000(0x0870)(Edit, NativeAccessSpecifierPublic)
+	struct FEditableTextBoxStyle                  ChatDisplayTextStyle;                              // 0x0870(0x0870)(Edit, NativeAccessSpecifierPublic)
+	struct FScrollBoxStyle                        ScrollBorderStyle;                                 // 0x10E0(0x0248)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MessageNotificationBrush;                          // 0x1328(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FMargin                                ChatEntryPadding;                                  // 0x13B8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         ChatEntryHeight;                                   // 0x13C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_13CC[0x4];                                     // 0x13CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            ChatMenuBackgroundBrush;                           // 0x13D0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendActionPadding;                               // 0x1460(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendActionHeaderPadding;                         // 0x1470(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendActionStatusMargin;                          // 0x1480(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ChatMenuBackgroundBrush;                           // 0x13D0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendActionPadding;                               // 0x1460(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendActionHeaderPadding;                         // 0x1470(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendActionStatusMargin;                          // 0x1480(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChatStyle) == 0x33DB4480, "Wrong alignment on FChatStyle");
-static_assert(sizeof(FChatStyle) == 0x33DB4480, "Wrong size on FChatStyle");
+static_assert(alignof(FChatStyle) == 0x000008, "Wrong alignment on FChatStyle");
+static_assert(sizeof(FChatStyle) == 0x001490, "Wrong size on FChatStyle");
 static_assert(offsetof(FChatStyle, ChatEntryTextStyle) == 0x000000, "Member 'FChatStyle::ChatEntryTextStyle' has a wrong offset!");
 static_assert(offsetof(FChatStyle, ChatDisplayTextStyle) == 0x000870, "Member 'FChatStyle::ChatDisplayTextStyle' has a wrong offset!");
 static_assert(offsetof(FChatStyle, ScrollBorderStyle) == 0x0010E0, "Member 'FChatStyle::ScrollBorderStyle' has a wrong offset!");
@@ -48,18 +48,18 @@ static_assert(offsetof(FChatStyle, FriendActionHeaderPadding) == 0x001470, "Memb
 static_assert(offsetof(FChatStyle, FriendActionStatusMargin) == 0x001480, "Member 'FChatStyle::FriendActionStatusMargin' has a wrong offset!");
 
 // ScriptStruct SocialTypes.ChatChromeColorScheme
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FChatChromeColorScheme final
+// 0x0050 (0x0050 - 0x0000)
+struct FChatChromeColorScheme final
 {
 public:
-	struct FLinearColor                           ChatEntryBackgroundColor;                          // 0x0000(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           NoneActiveTabColor;                                // 0x0010(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TabFontColor;                                      // 0x0020(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TabFontColorInverted;                              // 0x0030(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ChatBackgroundColor;                               // 0x0040(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ChatEntryBackgroundColor;                          // 0x0000(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           NoneActiveTabColor;                                // 0x0010(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TabFontColor;                                      // 0x0020(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TabFontColorInverted;                              // 0x0030(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ChatBackgroundColor;                               // 0x0040(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChatChromeColorScheme) == 0x33DB4480, "Wrong alignment on FChatChromeColorScheme");
-static_assert(sizeof(FChatChromeColorScheme) == 0x33DB4480, "Wrong size on FChatChromeColorScheme");
+static_assert(alignof(FChatChromeColorScheme) == 0x000004, "Wrong alignment on FChatChromeColorScheme");
+static_assert(sizeof(FChatChromeColorScheme) == 0x000050, "Wrong size on FChatChromeColorScheme");
 static_assert(offsetof(FChatChromeColorScheme, ChatEntryBackgroundColor) == 0x000000, "Member 'FChatChromeColorScheme::ChatEntryBackgroundColor' has a wrong offset!");
 static_assert(offsetof(FChatChromeColorScheme, NoneActiveTabColor) == 0x000010, "Member 'FChatChromeColorScheme::NoneActiveTabColor' has a wrong offset!");
 static_assert(offsetof(FChatChromeColorScheme, TabFontColor) == 0x000020, "Member 'FChatChromeColorScheme::TabFontColor' has a wrong offset!");
@@ -67,20 +67,20 @@ static_assert(offsetof(FChatChromeColorScheme, TabFontColorInverted) == 0x000030
 static_assert(offsetof(FChatChromeColorScheme, ChatBackgroundColor) == 0x000040, "Member 'FChatChromeColorScheme::ChatBackgroundColor' has a wrong offset!");
 
 // ScriptStruct SocialTypes.ChatChromeMargins
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FChatChromeMargins final
+// 0x0064 (0x0064 - 0x0000)
+struct FChatChromeMargins final
 {
 public:
 	float                                         TabWidth;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                TabPadding;                                        // 0x0004(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ChatWindowPadding;                                 // 0x0014(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ChatWindowToEntryMargin;                           // 0x0024(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ChatChannelPadding;                                // 0x0034(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                UserListButtonPadding;                             // 0x0044(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                UserListIconPadding;                               // 0x0054(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                TabPadding;                                        // 0x0004(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ChatWindowPadding;                                 // 0x0014(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ChatWindowToEntryMargin;                           // 0x0024(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ChatChannelPadding;                                // 0x0034(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                UserListButtonPadding;                             // 0x0044(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                UserListIconPadding;                               // 0x0054(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChatChromeMargins) == 0x33DB4480, "Wrong alignment on FChatChromeMargins");
-static_assert(sizeof(FChatChromeMargins) == 0x33DB4480, "Wrong size on FChatChromeMargins");
+static_assert(alignof(FChatChromeMargins) == 0x000004, "Wrong alignment on FChatChromeMargins");
+static_assert(sizeof(FChatChromeMargins) == 0x000064, "Wrong size on FChatChromeMargins");
 static_assert(offsetof(FChatChromeMargins, TabWidth) == 0x000000, "Member 'FChatChromeMargins::TabWidth' has a wrong offset!");
 static_assert(offsetof(FChatChromeMargins, TabPadding) == 0x000004, "Member 'FChatChromeMargins::TabPadding' has a wrong offset!");
 static_assert(offsetof(FChatChromeMargins, ChatWindowPadding) == 0x000014, "Member 'FChatChromeMargins::ChatWindowPadding' has a wrong offset!");
@@ -90,23 +90,23 @@ static_assert(offsetof(FChatChromeMargins, UserListButtonPadding) == 0x000044, "
 static_assert(offsetof(FChatChromeMargins, UserListIconPadding) == 0x000054, "Member 'FChatChromeMargins::UserListIconPadding' has a wrong offset!");
 
 // ScriptStruct SocialTypes.ChatChromeStyle
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FChatChromeStyle final
+// 0x0850 (0x0850 - 0x0000)
+struct FChatChromeStyle final
 {
 public:
-	struct FSlateBrush                            UserListBrush;                                     // 0x0000(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ChatBackgroundBrush;                               // 0x0090(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ChatEntryBackgroundBrush;                          // 0x0120(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ChannelBackgroundBrush;                            // 0x01B0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            TabBackgroundBrush;                                // 0x0240(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           TabSelectorButtonStyle;                            // 0x02D0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FMargin                                TabOptionPadding;                                  // 0x0578(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                TabContentPadding;                                 // 0x0588(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                TabClosePadding;                                   // 0x0598(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           UserListButtonStyle;                               // 0x05A8(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            UserListBrush;                                     // 0x0000(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ChatBackgroundBrush;                               // 0x0090(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ChatEntryBackgroundBrush;                          // 0x0120(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ChannelBackgroundBrush;                            // 0x01B0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            TabBackgroundBrush;                                // 0x0240(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           TabSelectorButtonStyle;                            // 0x02D0(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FMargin                                TabOptionPadding;                                  // 0x0578(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                TabContentPadding;                                 // 0x0588(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                TabClosePadding;                                   // 0x0598(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           UserListButtonStyle;                               // 0x05A8(0x02A8)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChatChromeStyle) == 0x33DB4480, "Wrong alignment on FChatChromeStyle");
-static_assert(sizeof(FChatChromeStyle) == 0x33DB4480, "Wrong size on FChatChromeStyle");
+static_assert(alignof(FChatChromeStyle) == 0x000008, "Wrong alignment on FChatChromeStyle");
+static_assert(sizeof(FChatChromeStyle) == 0x000850, "Wrong size on FChatChromeStyle");
 static_assert(offsetof(FChatChromeStyle, UserListBrush) == 0x000000, "Member 'FChatChromeStyle::UserListBrush' has a wrong offset!");
 static_assert(offsetof(FChatChromeStyle, ChatBackgroundBrush) == 0x000090, "Member 'FChatChromeStyle::ChatBackgroundBrush' has a wrong offset!");
 static_assert(offsetof(FChatChromeStyle, ChatEntryBackgroundBrush) == 0x000120, "Member 'FChatChromeStyle::ChatEntryBackgroundBrush' has a wrong offset!");
@@ -119,46 +119,46 @@ static_assert(offsetof(FChatChromeStyle, TabClosePadding) == 0x000598, "Member '
 static_assert(offsetof(FChatChromeStyle, UserListButtonStyle) == 0x0005A8, "Member 'FChatChromeStyle::UserListButtonStyle' has a wrong offset!");
 
 // ScriptStruct SocialTypes.SocialSoundSchema
-// 0x33DB4600 (0x33DB4600 - 0x0000)
-struct alignas(0x33DB4600) FSocialSoundSchema final
+// 0x0048 (0x0048 - 0x0000)
+struct FSocialSoundSchema final
 {
 public:
-	struct FSlateSound                            MessageReceivedSound;                              // 0x0000(0x11827900)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateSound                            PartyInviteReceivedSound;                          // 0x0018(0x11827900)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FSlateSound                            FriendInviteReceivedSound;                         // 0x0030(0x11827900)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateSound                            MessageReceivedSound;                              // 0x0000(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateSound                            PartyInviteReceivedSound;                          // 0x0018(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateSound                            FriendInviteReceivedSound;                         // 0x0030(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSocialSoundSchema) == 0x33DB4600, "Wrong alignment on FSocialSoundSchema");
-static_assert(sizeof(FSocialSoundSchema) == 0x33DB4600, "Wrong size on FSocialSoundSchema");
+static_assert(alignof(FSocialSoundSchema) == 0x000008, "Wrong alignment on FSocialSoundSchema");
+static_assert(sizeof(FSocialSoundSchema) == 0x000048, "Wrong size on FSocialSoundSchema");
 static_assert(offsetof(FSocialSoundSchema, MessageReceivedSound) == 0x000000, "Member 'FSocialSoundSchema::MessageReceivedSound' has a wrong offset!");
 static_assert(offsetof(FSocialSoundSchema, PartyInviteReceivedSound) == 0x000018, "Member 'FSocialSoundSchema::PartyInviteReceivedSound' has a wrong offset!");
 static_assert(offsetof(FSocialSoundSchema, FriendInviteReceivedSound) == 0x000030, "Member 'FSocialSoundSchema::FriendInviteReceivedSound' has a wrong offset!");
 
 // ScriptStruct SocialTypes.ChatColorScheme
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FChatColorScheme final
+// 0x0120 (0x0120 - 0x0000)
+struct FChatColorScheme final
 {
 public:
-	struct FLinearColor                           TimeStampColor;                                    // 0x0000(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultChatColor;                                  // 0x0010(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           WhisperChatColor;                                  // 0x0020(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           GlobalChatColor;                                   // 0x0030(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           FounderChatColor;                                  // 0x0040(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           GameChatColor;                                     // 0x0050(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TeamChatColor;                                     // 0x0060(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PartyChatColor;                                    // 0x0070(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           AdminChatColor;                                    // 0x0080(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           GameAdminChatColor;                                // 0x0090(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           WhisperHyperlinkChatColor;                         // 0x00A0(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           GlobalHyperlinkChatColor;                          // 0x00B0(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           FounderHyperlinkChatColor;                         // 0x00C0(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           GameHyperlinkChatColor;                            // 0x00D0(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           TeamHyperlinkChatColor;                            // 0x00E0(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           PartyHyperlinkChatColor;                           // 0x00F0(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           EnemyColor;                                        // 0x0100(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           FriendlyColor;                                     // 0x0110(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TimeStampColor;                                    // 0x0000(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultChatColor;                                  // 0x0010(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           WhisperChatColor;                                  // 0x0020(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           GlobalChatColor;                                   // 0x0030(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           FounderChatColor;                                  // 0x0040(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           GameChatColor;                                     // 0x0050(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TeamChatColor;                                     // 0x0060(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PartyChatColor;                                    // 0x0070(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           AdminChatColor;                                    // 0x0080(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           GameAdminChatColor;                                // 0x0090(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           WhisperHyperlinkChatColor;                         // 0x00A0(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           GlobalHyperlinkChatColor;                          // 0x00B0(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           FounderHyperlinkChatColor;                         // 0x00C0(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           GameHyperlinkChatColor;                            // 0x00D0(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           TeamHyperlinkChatColor;                            // 0x00E0(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           PartyHyperlinkChatColor;                           // 0x00F0(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           EnemyColor;                                        // 0x0100(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           FriendlyColor;                                     // 0x0110(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FChatColorScheme) == 0x33DB4480, "Wrong alignment on FChatColorScheme");
-static_assert(sizeof(FChatColorScheme) == 0x33DB4480, "Wrong size on FChatColorScheme");
+static_assert(alignof(FChatColorScheme) == 0x000004, "Wrong alignment on FChatColorScheme");
+static_assert(sizeof(FChatColorScheme) == 0x000120, "Wrong size on FChatColorScheme");
 static_assert(offsetof(FChatColorScheme, TimeStampColor) == 0x000000, "Member 'FChatColorScheme::TimeStampColor' has a wrong offset!");
 static_assert(offsetof(FChatColorScheme, DefaultChatColor) == 0x000010, "Member 'FChatColorScheme::DefaultChatColor' has a wrong offset!");
 static_assert(offsetof(FChatColorScheme, WhisperChatColor) == 0x000020, "Member 'FChatColorScheme::WhisperChatColor' has a wrong offset!");
@@ -179,49 +179,49 @@ static_assert(offsetof(FChatColorScheme, EnemyColor) == 0x000100, "Member 'FChat
 static_assert(offsetof(FChatColorScheme, FriendlyColor) == 0x000110, "Member 'FChatColorScheme::FriendlyColor' has a wrong offset!");
 
 // ScriptStruct SocialTypes.SocialListMargins
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FSocialListMargins final
+// 0x0200 (0x0200 - 0x0000)
+struct FSocialListMargins final
 {
 public:
-	struct FVector2D                              UserPresenceImageSize;                             // 0x0000(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                HeaderButtonMargin;                                // 0x0008(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendsListMargin;                                 // 0x0018(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendsListNoFriendsMargin;                        // 0x0028(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendsListHeaderMargin;                           // 0x0038(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendsListHeaderCountMargin;                      // 0x0048(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                HeaderButtonContentMargin;                         // 0x0058(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemMargin;                                  // 0x0068(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemStatusMargin;                            // 0x0078(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendTipStatusMargin;                             // 0x0088(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemPresenceMargin;                          // 0x0098(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemPlatformMargin;                          // 0x00A8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendItemTextScrollerMargin;                      // 0x00B8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ConfirmationBorderMargin;                          // 0x00C8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ConfirmationButtonMargin;                          // 0x00D8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ConfirmationButtonContentMargin;                   // 0x00E8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                NoneFriendContentMargin;                           // 0x00F8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              UserPresenceImageSize;                             // 0x0000(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                HeaderButtonMargin;                                // 0x0008(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendsListMargin;                                 // 0x0018(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendsListNoFriendsMargin;                        // 0x0028(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendsListHeaderMargin;                           // 0x0038(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendsListHeaderCountMargin;                      // 0x0048(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                HeaderButtonContentMargin;                         // 0x0058(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemMargin;                                  // 0x0068(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemStatusMargin;                            // 0x0078(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendTipStatusMargin;                             // 0x0088(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemPresenceMargin;                          // 0x0098(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemPlatformMargin;                          // 0x00A8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendItemTextScrollerMargin;                      // 0x00B8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ConfirmationBorderMargin;                          // 0x00C8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ConfirmationButtonMargin;                          // 0x00D8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ConfirmationButtonContentMargin;                   // 0x00E8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                NoneFriendContentMargin;                           // 0x00F8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         NoneFriendContentHeight;                           // 0x0108(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NoneFriendIconWidth;                               // 0x010C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuBackIconMargin;                             // 0x0110(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuPageIconMargin;                             // 0x0120(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                RadioSettingTitleMargin;                           // 0x0130(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuSearchIconMargin;                           // 0x0140(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuSearchTextMargin;                           // 0x0150(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuBackButtonMargin;                           // 0x0160(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuSettingButtonMargin;                        // 0x0170(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                SubMenuListMargin;                                 // 0x0180(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuBackIconMargin;                             // 0x0110(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuPageIconMargin;                             // 0x0120(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                RadioSettingTitleMargin;                           // 0x0130(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuSearchIconMargin;                           // 0x0140(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuSearchTextMargin;                           // 0x0150(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuBackButtonMargin;                           // 0x0160(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuSettingButtonMargin;                        // 0x0170(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                SubMenuListMargin;                                 // 0x0180(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         SubMenuSeperatorThickness;                         // 0x0190(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PresenceSeperatorThickness;                        // 0x0194(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendTipMargin;                                   // 0x0198(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendTipPresenceMargin;                           // 0x01A8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                FriendTipSeperatorMargin;                          // 0x01B8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ToolTipMargin;                                     // 0x01C8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                TipStatusMargin;                                   // 0x01D8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                AddButtonMargin;                                   // 0x01E8(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              AddButtonSpacing;                                  // 0x01F8(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendTipMargin;                                   // 0x0198(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendTipPresenceMargin;                           // 0x01A8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                FriendTipSeperatorMargin;                          // 0x01B8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ToolTipMargin;                                     // 0x01C8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                TipStatusMargin;                                   // 0x01D8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                AddButtonMargin;                                   // 0x01E8(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector2D                              AddButtonSpacing;                                  // 0x01F8(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSocialListMargins) == 0x33DB4480, "Wrong alignment on FSocialListMargins");
-static_assert(sizeof(FSocialListMargins) == 0x33DB4480, "Wrong size on FSocialListMargins");
+static_assert(alignof(FSocialListMargins) == 0x000004, "Wrong alignment on FSocialListMargins");
+static_assert(sizeof(FSocialListMargins) == 0x000200, "Wrong size on FSocialListMargins");
 static_assert(offsetof(FSocialListMargins, UserPresenceImageSize) == 0x000000, "Member 'FSocialListMargins::UserPresenceImageSize' has a wrong offset!");
 static_assert(offsetof(FSocialListMargins, HeaderButtonMargin) == 0x000008, "Member 'FSocialListMargins::HeaderButtonMargin' has a wrong offset!");
 static_assert(offsetof(FSocialListMargins, FriendsListMargin) == 0x000018, "Member 'FSocialListMargins::FriendsListMargin' has a wrong offset!");
@@ -260,23 +260,24 @@ static_assert(offsetof(FSocialListMargins, AddButtonMargin) == 0x0001E8, "Member
 static_assert(offsetof(FSocialListMargins, AddButtonSpacing) == 0x0001F8, "Member 'FSocialListMargins::AddButtonSpacing' has a wrong offset!");
 
 // ScriptStruct SocialTypes.ChatMarkupStyle
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FChatMarkupStyle final
+// 0x0670 (0x0670 - 0x0000)
+struct FChatMarkupStyle final
 {
 public:
-	struct FButtonStyle                           MarkupButtonStyle;                                 // 0x0000(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FTextBlockStyle                        MarkupTextStyle;                                   // 0x02A8(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            MarkupBackground;                                  // 0x04B0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ButtonColor;                                       // 0x0540(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ButtonHoverColor;                                  // 0x0568(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            TipColor;                                          // 0x0590(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            SeperatorBrush;                                    // 0x05B8(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           MarkupButtonStyle;                                 // 0x0000(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FTextBlockStyle                        MarkupTextStyle;                                   // 0x02A8(0x0208)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            MarkupBackground;                                  // 0x04B0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ButtonColor;                                       // 0x0540(0x0028)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ButtonHoverColor;                                  // 0x0568(0x0028)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            TipColor;                                          // 0x0590(0x0028)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SeperatorBrush;                                    // 0x05B8(0x0090)(Edit, NativeAccessSpecifierPublic)
 	float                                         SeperatorThickness;                                // 0x0648(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMargin                                MarkupPadding;                                     // 0x064C(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FMargin                                ButtonPadding;                                     // 0x065C(0x322CBBB8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                MarkupPadding;                                     // 0x064C(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                                ButtonPadding;                                     // 0x065C(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_66C[0x4];                                      // 0x066C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FChatMarkupStyle) == 0x33DB4480, "Wrong alignment on FChatMarkupStyle");
-static_assert(sizeof(FChatMarkupStyle) == 0x33DB4480, "Wrong size on FChatMarkupStyle");
+static_assert(alignof(FChatMarkupStyle) == 0x000008, "Wrong alignment on FChatMarkupStyle");
+static_assert(sizeof(FChatMarkupStyle) == 0x000670, "Wrong size on FChatMarkupStyle");
 static_assert(offsetof(FChatMarkupStyle, MarkupButtonStyle) == 0x000000, "Member 'FChatMarkupStyle::MarkupButtonStyle' has a wrong offset!");
 static_assert(offsetof(FChatMarkupStyle, MarkupTextStyle) == 0x0002A8, "Member 'FChatMarkupStyle::MarkupTextStyle' has a wrong offset!");
 static_assert(offsetof(FChatMarkupStyle, MarkupBackground) == 0x0004B0, "Member 'FChatMarkupStyle::MarkupBackground' has a wrong offset!");
@@ -289,22 +290,22 @@ static_assert(offsetof(FChatMarkupStyle, MarkupPadding) == 0x00064C, "Member 'FC
 static_assert(offsetof(FChatMarkupStyle, ButtonPadding) == 0x00065C, "Member 'FChatMarkupStyle::ButtonPadding' has a wrong offset!");
 
 // ScriptStruct SocialTypes.SocialFontStyle
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FSocialFontStyle final
+// 0x02A0 (0x02A0 - 0x0000)
+struct FSocialFontStyle final
 {
 public:
-	struct FSlateFontInfo                         FontSmall;                                         // 0x0000(0x11827900)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         FontSmallBold;                                     // 0x0068(0x11827900)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         FontNormal;                                        // 0x00D0(0x11827900)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         FontNormalBold;                                    // 0x0138(0x11827900)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         FontLarge;                                         // 0x01A0(0x11827900)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateFontInfo                         FontLargeBold;                                     // 0x0208(0x11827900)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultFontColor;                                  // 0x0270(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           InvertedFontColor;                                 // 0x0280(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           DefaultDullFontColor;                              // 0x0290(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         FontSmall;                                         // 0x0000(0x0068)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         FontSmallBold;                                     // 0x0068(0x0068)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         FontNormal;                                        // 0x00D0(0x0068)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         FontNormalBold;                                    // 0x0138(0x0068)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         FontLarge;                                         // 0x01A0(0x0068)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         FontLargeBold;                                     // 0x0208(0x0068)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultFontColor;                                  // 0x0270(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           InvertedFontColor;                                 // 0x0280(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           DefaultDullFontColor;                              // 0x0290(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSocialFontStyle) == 0x33DB4480, "Wrong alignment on FSocialFontStyle");
-static_assert(sizeof(FSocialFontStyle) == 0x33DB4480, "Wrong size on FSocialFontStyle");
+static_assert(alignof(FSocialFontStyle) == 0x000008, "Wrong alignment on FSocialFontStyle");
+static_assert(sizeof(FSocialFontStyle) == 0x0002A0, "Wrong size on FSocialFontStyle");
 static_assert(offsetof(FSocialFontStyle, FontSmall) == 0x000000, "Member 'FSocialFontStyle::FontSmall' has a wrong offset!");
 static_assert(offsetof(FSocialFontStyle, FontSmallBold) == 0x000068, "Member 'FSocialFontStyle::FontSmallBold' has a wrong offset!");
 static_assert(offsetof(FSocialFontStyle, FontNormal) == 0x0000D0, "Member 'FSocialFontStyle::FontNormal' has a wrong offset!");
@@ -316,47 +317,47 @@ static_assert(offsetof(FSocialFontStyle, InvertedFontColor) == 0x000280, "Member
 static_assert(offsetof(FSocialFontStyle, DefaultDullFontColor) == 0x000290, "Member 'FSocialFontStyle::DefaultDullFontColor' has a wrong offset!");
 
 // ScriptStruct SocialTypes.SocialListStyle
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FSocialListStyle final
+// 0x2870 (0x2870 - 0x0000)
+struct FSocialListStyle final
 {
 public:
-	struct FButtonStyle                           GlobalChatButtonStyle;                             // 0x0000(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            GlobalChatIcon;                                    // 0x02A8(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           FriendItemButtonStyle;                             // 0x0338(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           ConfirmButtonStyle;                                // 0x05E0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           CancelButtonStyle;                                 // 0x0888(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ButtonContentColor;                                // 0x0B30(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ButtonHoverContentColor;                           // 0x0B58(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ActionMenuArrowBrush;                              // 0x0B80(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ActionMenuArrowRightBrush;                         // 0x0C10(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateColor                            ActionMenuBackgroundColor;                         // 0x0CA0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ToolTipArrowBrush;                                 // 0x0CC8(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           BackButtonStyle;                                   // 0x0D58(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           HeaderButtonStyle;                                 // 0x1000(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           FriendListActionButtonStyle;                       // 0x12A8(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            AddFriendButtonContentBrush;                       // 0x1550(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            StatusIconBrush;                                   // 0x15E0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            PCIconBrush;                                       // 0x1670(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            ConsoleIconBrush;                                  // 0x1700(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            EpicIconBrush;                                     // 0x1790(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            FriendImageBrush;                                  // 0x1820(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            OfflineBrush;                                      // 0x18B0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            OnlineBrush;                                       // 0x1940(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            AwayBrush;                                         // 0x19D0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            SpectateBrush;                                     // 0x1A60(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            FriendsContainerBackground;                        // 0x1AF0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            FriendsListBackground;                             // 0x1B80(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FEditableTextBoxStyle                  AddFriendEditableTextStyle;                        // 0x1C10(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            BackBrush;                                         // 0x2480(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            SelectedOptionBrush;                               // 0x2510(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            SettingsBrush;                                     // 0x25A0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            SeperatorBrush;                                    // 0x2630(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            PresenceSeperatorBrush;                            // 0x26C0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            FontSizeBrush;                                     // 0x2750(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                            SearchBrush;                                       // 0x27E0(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           GlobalChatButtonStyle;                             // 0x0000(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            GlobalChatIcon;                                    // 0x02A8(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           FriendItemButtonStyle;                             // 0x0338(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           ConfirmButtonStyle;                                // 0x05E0(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           CancelButtonStyle;                                 // 0x0888(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ButtonContentColor;                                // 0x0B30(0x0028)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ButtonHoverContentColor;                           // 0x0B58(0x0028)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ActionMenuArrowBrush;                              // 0x0B80(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ActionMenuArrowRightBrush;                         // 0x0C10(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateColor                            ActionMenuBackgroundColor;                         // 0x0CA0(0x0028)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ToolTipArrowBrush;                                 // 0x0CC8(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           BackButtonStyle;                                   // 0x0D58(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           HeaderButtonStyle;                                 // 0x1000(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           FriendListActionButtonStyle;                       // 0x12A8(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            AddFriendButtonContentBrush;                       // 0x1550(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            StatusIconBrush;                                   // 0x15E0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            PCIconBrush;                                       // 0x1670(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            ConsoleIconBrush;                                  // 0x1700(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            EpicIconBrush;                                     // 0x1790(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            FriendImageBrush;                                  // 0x1820(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            OfflineBrush;                                      // 0x18B0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            OnlineBrush;                                       // 0x1940(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            AwayBrush;                                         // 0x19D0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SpectateBrush;                                     // 0x1A60(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            FriendsContainerBackground;                        // 0x1AF0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            FriendsListBackground;                             // 0x1B80(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FEditableTextBoxStyle                  AddFriendEditableTextStyle;                        // 0x1C10(0x0870)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            BackBrush;                                         // 0x2480(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SelectedOptionBrush;                               // 0x2510(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SettingsBrush;                                     // 0x25A0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SeperatorBrush;                                    // 0x2630(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            PresenceSeperatorBrush;                            // 0x26C0(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            FontSizeBrush;                                     // 0x2750(0x0090)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                            SearchBrush;                                       // 0x27E0(0x0090)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSocialListStyle) == 0x33DB4480, "Wrong alignment on FSocialListStyle");
-static_assert(sizeof(FSocialListStyle) == 0x33DB4480, "Wrong size on FSocialListStyle");
+static_assert(alignof(FSocialListStyle) == 0x000008, "Wrong alignment on FSocialListStyle");
+static_assert(sizeof(FSocialListStyle) == 0x002870, "Wrong size on FSocialListStyle");
 static_assert(offsetof(FSocialListStyle, GlobalChatButtonStyle) == 0x000000, "Member 'FSocialListStyle::GlobalChatButtonStyle' has a wrong offset!");
 static_assert(offsetof(FSocialListStyle, GlobalChatIcon) == 0x0002A8, "Member 'FSocialListStyle::GlobalChatIcon' has a wrong offset!");
 static_assert(offsetof(FSocialListStyle, FriendItemButtonStyle) == 0x000338, "Member 'FSocialListStyle::FriendItemButtonStyle' has a wrong offset!");
@@ -393,8 +394,8 @@ static_assert(offsetof(FSocialListStyle, FontSizeBrush) == 0x002750, "Member 'FS
 static_assert(offsetof(FSocialListStyle, SearchBrush) == 0x0027E0, "Member 'FSocialListStyle::SearchBrush' has a wrong offset!");
 
 // ScriptStruct SocialTypes.ProfanityData
-// 0x33DB4480 (0x33DB4480 - 0x0000)
-struct alignas(0x33DB4480) FProfanityData final
+// 0x0038 (0x0038 - 0x0000)
+struct FProfanityData final
 {
 public:
 	class FString                                 CountryCode;                                       // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -403,38 +404,39 @@ public:
 	bool                                          bAutoAdd;                                          // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FProfanityData) == 0x33DB4480, "Wrong alignment on FProfanityData");
-static_assert(sizeof(FProfanityData) == 0x33DB4480, "Wrong size on FProfanityData");
+static_assert(alignof(FProfanityData) == 0x000008, "Wrong alignment on FProfanityData");
+static_assert(sizeof(FProfanityData) == 0x000038, "Wrong size on FProfanityData");
 static_assert(offsetof(FProfanityData, CountryCode) == 0x000000, "Member 'FProfanityData::CountryCode' has a wrong offset!");
 static_assert(offsetof(FProfanityData, ProfanityList) == 0x000010, "Member 'FProfanityData::ProfanityList' has a wrong offset!");
 static_assert(offsetof(FProfanityData, WhiteList) == 0x000020, "Member 'FProfanityData::WhiteList' has a wrong offset!");
 static_assert(offsetof(FProfanityData, bAutoAdd) == 0x000030, "Member 'FProfanityData::bAutoAdd' has a wrong offset!");
 
 // ScriptStruct SocialTypes.SocialStyle
-// 0x33DB4600 (0x33DB4600 - 0x0000)
+// 0x6DE0 (0x6DE0 - 0x0000)
 struct FSocialStyle final
 {
 public:
-	struct FScrollBarStyle                        ScrollBarStyle;                                    // 0x0000(0x11827900)(Edit, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           ActionButtonStyle;                                 // 0x0518(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSocialFontStyle                       SmallFontStyle;                                    // 0x07C0(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
-	struct FSocialFontStyle                       NormalFontStyle;                                   // 0x0A60(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
-	struct FSocialFontStyle                       LargeFontStyle;                                    // 0x0D00(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
-	struct FSocialFontStyle                       ChatFontStyle;                                     // 0x0FA0(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
-	struct FCheckBoxStyle                         CheckBoxStyle;                                     // 0x1240(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FCheckBoxStyle                         RadioBoxStyle;                                     // 0x1820(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	struct FSocialListStyle                       SocialListStyle;                                   // 0x1E00(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
-	struct FSocialListMargins                     SocialListMargins;                                 // 0x4670(0x33DB4480)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FChatStyle                             ChatStyle;                                         // 0x4870(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
-	struct FChatColorScheme                       ChatColorScheme;                                   // 0x5D00(0x33DB4480)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FChatChromeStyle                       ChatChromeStyle;                                   // 0x5E20(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
-	struct FChatChromeMargins                     ChatChromeMargins;                                 // 0x6670(0x33DB4480)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FChatChromeColorScheme                 ChatChromeColorScheme;                             // 0x66D4(0x33DB4480)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FChatMarkupStyle                       ChatMarkupStyle;                                   // 0x6728(0x33DB4480)(Edit, NativeAccessSpecifierPublic)
-	struct FSocialSoundSchema                     SoundSchema;                                       // 0x6D98(0x33DB4600)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FScrollBarStyle                        ScrollBarStyle;                                    // 0x0000(0x0518)(Edit, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           ActionButtonStyle;                                 // 0x0518(0x02A8)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialFontStyle                       SmallFontStyle;                                    // 0x07C0(0x02A0)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialFontStyle                       NormalFontStyle;                                   // 0x0A60(0x02A0)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialFontStyle                       LargeFontStyle;                                    // 0x0D00(0x02A0)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialFontStyle                       ChatFontStyle;                                     // 0x0FA0(0x02A0)(Edit, NativeAccessSpecifierPublic)
+	struct FCheckBoxStyle                         CheckBoxStyle;                                     // 0x1240(0x05E0)(Edit, NativeAccessSpecifierPublic)
+	struct FCheckBoxStyle                         RadioBoxStyle;                                     // 0x1820(0x05E0)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialListStyle                       SocialListStyle;                                   // 0x1E00(0x2870)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialListMargins                     SocialListMargins;                                 // 0x4670(0x0200)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FChatStyle                             ChatStyle;                                         // 0x4870(0x1490)(Edit, NativeAccessSpecifierPublic)
+	struct FChatColorScheme                       ChatColorScheme;                                   // 0x5D00(0x0120)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FChatChromeStyle                       ChatChromeStyle;                                   // 0x5E20(0x0850)(Edit, NativeAccessSpecifierPublic)
+	struct FChatChromeMargins                     ChatChromeMargins;                                 // 0x6670(0x0064)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FChatChromeColorScheme                 ChatChromeColorScheme;                             // 0x66D4(0x0050)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6724[0x4];                                     // 0x6724(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FChatMarkupStyle                       ChatMarkupStyle;                                   // 0x6728(0x0670)(Edit, NativeAccessSpecifierPublic)
+	struct FSocialSoundSchema                     SoundSchema;                                       // 0x6D98(0x0048)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSocialStyle) == 0x33DB4600, "Wrong alignment on FSocialStyle");
-static_assert(sizeof(FSocialStyle) == 0x33DB4600, "Wrong size on FSocialStyle");
+static_assert(alignof(FSocialStyle) == 0x000008, "Wrong alignment on FSocialStyle");
+static_assert(sizeof(FSocialStyle) == 0x006DE0, "Wrong size on FSocialStyle");
 static_assert(offsetof(FSocialStyle, ScrollBarStyle) == 0x000000, "Member 'FSocialStyle::ScrollBarStyle' has a wrong offset!");
 static_assert(offsetof(FSocialStyle, ActionButtonStyle) == 0x000518, "Member 'FSocialStyle::ActionButtonStyle' has a wrong offset!");
 static_assert(offsetof(FSocialStyle, SmallFontStyle) == 0x0007C0, "Member 'FSocialStyle::SmallFontStyle' has a wrong offset!");

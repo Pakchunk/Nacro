@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function CollectionBookSectionTileRewardWidget.CollectionBookSectionTileRewardWidget_C.ExecuteUbergraph_CollectionBookSectionTileRewardWidget
-// 0x10000 (0x10000 - 0x0000)
-struct alignas(0x10000) CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget final
+// 0x0028 (0x0028 - 0x0000)
+struct CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,8 +31,8 @@ public:
 	class UWidget*                                K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_Select2_Default;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget) == 0x010000, "Wrong alignment on CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget");
-static_assert(sizeof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget) == 0x010000, "Wrong size on CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget");
+static_assert(alignof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget) == 0x000008, "Wrong alignment on CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget");
+static_assert(sizeof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget) == 0x000028, "Wrong size on CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget");
 static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget, EntryPoint) == 0x000000, "Member 'CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget, Temp_byte_Variable) == 0x000004, "Member 'CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget, K2Node_Event_NewStatus) == 0x000005, "Member 'CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget::K2Node_Event_NewStatus' has a wrong offset!");
@@ -42,19 +42,19 @@ static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_
 static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget, K2Node_Select2_Default) == 0x000020, "Member 'CollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget::K2Node_Select2_Default' has a wrong offset!");
 
 // Function CollectionBookSectionTileRewardWidget.CollectionBookSectionTileRewardWidget_C.OnRewardStatusChanged
-// 0x04F5 (0x04F5 - 0x0000)
-struct alignas(0x4F5) CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged final
+// 0x0001 (0x0001 - 0x0000)
+struct CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged final
 {
 public:
 	ECollectionBookRewardStatus                   NewStatus;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged) == 0x0004F5, "Wrong alignment on CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged");
-static_assert(sizeof(CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged) == 0x0004F5, "Wrong size on CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged");
+static_assert(alignof(CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged) == 0x000001, "Wrong alignment on CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged");
+static_assert(sizeof(CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged) == 0x000001, "Wrong size on CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged");
 static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged, NewStatus) == 0x000000, "Member 'CollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged::NewStatus' has a wrong offset!");
 
 // Function CollectionBookSectionTileRewardWidget.CollectionBookSectionTileRewardWidget_C.SetSlotCompletionRatio
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio final
+// 0x0010 (0x0010 - 0x0000)
+struct CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio final
 {
 public:
 	int32                                         NumSlotted;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio) == 0x0000E4, "Wrong alignment on CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio");
-static_assert(sizeof(CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio) == 0x0000E4, "Wrong size on CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio");
+static_assert(alignof(CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio) == 0x000004, "Wrong alignment on CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio");
+static_assert(sizeof(CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio) == 0x000010, "Wrong size on CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio");
 static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio, NumSlotted) == 0x000000, "Member 'CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio::NumSlotted' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio, NumSlots) == 0x000004, "Member 'CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio::NumSlots' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'CollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerSpawnPlacementActor.PlayerSpawnPlacementActor_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0008 (0x0748 - 0x0740)
 class APlayerSpawnPlacementActor_C final : public AFortPlacementActor
 {
 public:
@@ -36,8 +36,8 @@ public:
 		return GetDefaultObjImpl<APlayerSpawnPlacementActor_C>();
 	}
 };
-static_assert(alignof(APlayerSpawnPlacementActor_C) == 0x1182A000, "Wrong alignment on APlayerSpawnPlacementActor_C");
-static_assert(sizeof(APlayerSpawnPlacementActor_C) == 0x1182A000, "Wrong size on APlayerSpawnPlacementActor_C");
+static_assert(alignof(APlayerSpawnPlacementActor_C) == 0x000008, "Wrong alignment on APlayerSpawnPlacementActor_C");
+static_assert(sizeof(APlayerSpawnPlacementActor_C) == 0x000748, "Wrong size on APlayerSpawnPlacementActor_C");
 static_assert(offsetof(APlayerSpawnPlacementActor_C, Arrow) == 0x000740, "Member 'APlayerSpawnPlacementActor_C::Arrow' has a wrong offset!");
 
 }

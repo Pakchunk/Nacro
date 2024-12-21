@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PBW_BP_Parent.PBW_BP_Parent_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0020 (0x10D0 - 0x10B0)
 class APBW_BP_Parent_C final : public ABuildingWall
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x10B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x10B0(0x0008)(Transient, DuplicateTransient)
 	TArray<class UStaticMesh*>                    StaticMeshAlternateArray;                          // 0x10B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
 
 public:
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<APBW_BP_Parent_C>();
 	}
 };
-static_assert(alignof(APBW_BP_Parent_C) == 0x1182A000, "Wrong alignment on APBW_BP_Parent_C");
-static_assert(sizeof(APBW_BP_Parent_C) == 0x1182A000, "Wrong size on APBW_BP_Parent_C");
+static_assert(alignof(APBW_BP_Parent_C) == 0x000010, "Wrong alignment on APBW_BP_Parent_C");
+static_assert(sizeof(APBW_BP_Parent_C) == 0x0010D0, "Wrong size on APBW_BP_Parent_C");
 static_assert(offsetof(APBW_BP_Parent_C, UberGraphFrame) == 0x0010B0, "Member 'APBW_BP_Parent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(APBW_BP_Parent_C, StaticMeshAlternateArray) == 0x0010B8, "Member 'APBW_BP_Parent_C::StaticMeshAlternateArray' has a wrong offset!");
 

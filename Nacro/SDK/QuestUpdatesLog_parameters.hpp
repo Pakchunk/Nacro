@@ -37,7 +37,7 @@ static_assert(offsetof(QuestUpdatesLog_C_ExecuteUbergraph_QuestUpdatesLog, CallF
 static_assert(offsetof(QuestUpdatesLog_C_ExecuteUbergraph_QuestUpdatesLog, CallFunc_GetQuestManager_ReturnValue) == 0x000020, "Member 'QuestUpdatesLog_C_ExecuteUbergraph_QuestUpdatesLog::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
 
 // Function QuestUpdatesLog.QuestUpdatesLog_C.HandleDisplayDynamicQuestUpdate
-// 0x0074 (0x0074 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate final
 {
 public:
@@ -48,14 +48,14 @@ public:
 	class UFortQuestItem*                         CallFunc_GetOwningQuest_ReturnValue;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDynamicQuestUpdateInfo                K2Node_MakeStruct_DynamicQuestUpdateInfo;          // 0x0020(0x0074)(HasGetValueTypeHash)
-	struct FDynamicQuestUpdateInfo                K2Node_MakeStruct_DynamicQuestUpdateInfo2;         // 0x0040(0x0074)(HasGetValueTypeHash)
+	struct FDynamicQuestUpdateInfo                K2Node_MakeStruct_DynamicQuestUpdateInfo;          // 0x0020(0x0020)(HasGetValueTypeHash)
+	struct FDynamicQuestUpdateInfo                K2Node_MakeStruct_DynamicQuestUpdateInfo2;         // 0x0040(0x0020)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate) == 0x000074, "Wrong alignment on QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate");
-static_assert(sizeof(QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate) == 0x000074, "Wrong size on QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate");
+static_assert(alignof(QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate) == 0x000008, "Wrong alignment on QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate");
+static_assert(sizeof(QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate) == 0x000068, "Wrong size on QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate");
 static_assert(offsetof(QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate, QuestObjective) == 0x000000, "Member 'QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate::QuestObjective' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate, bDisplayStatusUpdate) == 0x000008, "Member 'QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate::bDisplayStatusUpdate' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate, bDisplayAnnouncementUpdate) == 0x000009, "Member 'QuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate::bDisplayAnnouncementUpdate' has a wrong offset!");
@@ -93,7 +93,7 @@ static_assert(offsetof(QuestUpdatesLog_C_CreateQuestUpdateWIdgets, CallFunc_Subt
 static_assert(offsetof(QuestUpdatesLog_C_CreateQuestUpdateWIdgets, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000034, "Member 'QuestUpdatesLog_C_CreateQuestUpdateWIdgets::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function QuestUpdatesLog.QuestUpdatesLog_C.TryDisplayDynamicQuestStatusUpdate
-// 0x00E8 (0x00E8 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate final
 {
 public:
@@ -113,10 +113,10 @@ public:
 	int32                                         Temp_int_Array_Index_Variable2;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDynamicQuestUpdateInfo                CallFunc_Array_Get_Item;                           // 0x0040(0x0074)(HasGetValueTypeHash)
+	struct FDynamicQuestUpdateInfo                CallFunc_Array_Get_Item;                           // 0x0040(0x0020)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDynamicQuestUpdateInfo                CallFunc_Array_Get_Item2;                          // 0x0068(0x0074)(HasGetValueTypeHash)
+	struct FDynamicQuestUpdateInfo                CallFunc_Array_Get_Item2;                          // 0x0068(0x0020)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -130,8 +130,8 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate) == 0x000074, "Wrong alignment on QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate");
-static_assert(sizeof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate) == 0x0000E8, "Wrong size on QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate");
+static_assert(alignof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate) == 0x000008, "Wrong alignment on QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate");
+static_assert(sizeof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate) == 0x0000B8, "Wrong size on QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate");
 static_assert(offsetof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate, UpdatesToRemove) == 0x000000, "Member 'QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate::UpdatesToRemove' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate, Temp_int_Array_Index_Variable) == 0x000014, "Member 'QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -159,11 +159,11 @@ static_assert(offsetof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate, Cal
 static_assert(offsetof(QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate, CallFunc_IsValid_ReturnValue) == 0x0000B3, "Member 'QuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function QuestUpdatesLog.QuestUpdatesLog_C.GetAvailableQuestUpdateWidget
-// 0x0074 (0x0074 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct QuestUpdatesLog_C_GetAvailableQuestUpdateWidget final
 {
 public:
-	struct FDynamicQuestUpdateInfo                UpdateInfo;                                        // 0x0000(0x0074)(Parm, HasGetValueTypeHash)
+	struct FDynamicQuestUpdateInfo                UpdateInfo;                                        // 0x0000(0x0020)(Parm, HasGetValueTypeHash)
 	class UQuestUpdateEntry_C*                    AvailableWIdget;                                   // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UQuestUpdateEntry_C*                    FoundWidget;                                       // 0x0028(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -183,8 +183,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanAddUpdate_Result;                      // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget) == 0x000074, "Wrong alignment on QuestUpdatesLog_C_GetAvailableQuestUpdateWidget");
-static_assert(sizeof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget) == 0x000074, "Wrong size on QuestUpdatesLog_C_GetAvailableQuestUpdateWidget");
+static_assert(alignof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget) == 0x000008, "Wrong alignment on QuestUpdatesLog_C_GetAvailableQuestUpdateWidget");
+static_assert(sizeof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget) == 0x000068, "Wrong size on QuestUpdatesLog_C_GetAvailableQuestUpdateWidget");
 static_assert(offsetof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget, UpdateInfo) == 0x000000, "Member 'QuestUpdatesLog_C_GetAvailableQuestUpdateWidget::UpdateInfo' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget, AvailableWIdget) == 0x000020, "Member 'QuestUpdatesLog_C_GetAvailableQuestUpdateWidget::AvailableWIdget' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget, FoundWidget) == 0x000028, "Member 'QuestUpdatesLog_C_GetAvailableQuestUpdateWidget::FoundWidget' has a wrong offset!");
@@ -202,7 +202,7 @@ static_assert(offsetof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget, CallFunc
 static_assert(offsetof(QuestUpdatesLog_C_GetAvailableQuestUpdateWidget, CallFunc_CanAddUpdate_Result) == 0x000063, "Member 'QuestUpdatesLog_C_GetAvailableQuestUpdateWidget::CallFunc_CanAddUpdate_Result' has a wrong offset!");
 
 // Function QuestUpdatesLog.QuestUpdatesLog_C.HandleQuestUpdateWidgetFinished
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished final
 {
 public:
@@ -210,22 +210,22 @@ public:
 	bool                                          CallFunc_RemoveChild_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
 };
-static_assert(alignof(QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished) == 0x11821D80, "Wrong alignment on QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished");
-static_assert(sizeof(QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished) == 0x11821D80, "Wrong size on QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished");
+static_assert(alignof(QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished) == 0x000008, "Wrong alignment on QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished");
+static_assert(sizeof(QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished) == 0x000028, "Wrong size on QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished");
 static_assert(offsetof(QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished, UpdateWidget) == 0x000000, "Member 'QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished::UpdateWidget' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished, CallFunc_RemoveChild_ReturnValue) == 0x000008, "Member 'QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished::CallFunc_RemoveChild_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'QuestUpdatesLog_C_HandleQuestUpdateWidgetFinished::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function QuestUpdatesLog.QuestUpdatesLog_C.CreateAnnouncementUpdate
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct QuestUpdatesLog_C_CreateAnnouncementUpdate final
 {
 public:
-	struct FDynamicQuestUpdateInfo                UpdateInfo;                                        // 0x0000(0x0074)(Parm, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FDynamicQuestUpdateInfo                UpdateInfo;                                        // 0x0000(0x0020)(Parm, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -234,8 +234,8 @@ public:
 	TArray<class AFortPlayerController*>          K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
 	class AAnnounce_QuestUpdate_C*                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestUpdatesLog_C_CreateAnnouncementUpdate) == 0x11821300, "Wrong alignment on QuestUpdatesLog_C_CreateAnnouncementUpdate");
-static_assert(sizeof(QuestUpdatesLog_C_CreateAnnouncementUpdate) == 0x11821300, "Wrong size on QuestUpdatesLog_C_CreateAnnouncementUpdate");
+static_assert(alignof(QuestUpdatesLog_C_CreateAnnouncementUpdate) == 0x000010, "Wrong alignment on QuestUpdatesLog_C_CreateAnnouncementUpdate");
+static_assert(sizeof(QuestUpdatesLog_C_CreateAnnouncementUpdate) == 0x000090, "Wrong size on QuestUpdatesLog_C_CreateAnnouncementUpdate");
 static_assert(offsetof(QuestUpdatesLog_C_CreateAnnouncementUpdate, UpdateInfo) == 0x000000, "Member 'QuestUpdatesLog_C_CreateAnnouncementUpdate::UpdateInfo' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_CreateAnnouncementUpdate, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'QuestUpdatesLog_C_CreateAnnouncementUpdate::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_CreateAnnouncementUpdate, CallFunc_GetOwningPlayer_ReturnValue) == 0x000050, "Member 'QuestUpdatesLog_C_CreateAnnouncementUpdate::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
@@ -281,8 +281,8 @@ static_assert(offsetof(QuestUpdatesLog_C_GetTotalDisplayedObjectives, CallFunc_G
 static_assert(offsetof(QuestUpdatesLog_C_GetTotalDisplayedObjectives, CallFunc_Add_IntInt_ReturnValue2) == 0x000038, "Member 'QuestUpdatesLog_C_GetTotalDisplayedObjectives::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function QuestUpdatesLog.QuestUpdatesLog_C.CanDisplayAnotherObjective
-// 0x0B95 (0x0B95 - 0x0000)
-struct alignas(0xB95) QuestUpdatesLog_C_CanDisplayAnotherObjective final
+// 0x000C (0x000C - 0x0000)
+struct QuestUpdatesLog_C_CanDisplayAnotherObjective final
 {
 public:
 	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -292,8 +292,8 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestUpdatesLog_C_CanDisplayAnotherObjective) == 0x000B95, "Wrong alignment on QuestUpdatesLog_C_CanDisplayAnotherObjective");
-static_assert(sizeof(QuestUpdatesLog_C_CanDisplayAnotherObjective) == 0x000B95, "Wrong size on QuestUpdatesLog_C_CanDisplayAnotherObjective");
+static_assert(alignof(QuestUpdatesLog_C_CanDisplayAnotherObjective) == 0x000004, "Wrong alignment on QuestUpdatesLog_C_CanDisplayAnotherObjective");
+static_assert(sizeof(QuestUpdatesLog_C_CanDisplayAnotherObjective) == 0x00000C, "Wrong size on QuestUpdatesLog_C_CanDisplayAnotherObjective");
 static_assert(offsetof(QuestUpdatesLog_C_CanDisplayAnotherObjective, Result) == 0x000000, "Member 'QuestUpdatesLog_C_CanDisplayAnotherObjective::Result' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_CanDisplayAnotherObjective, CallFunc_GetTotalDisplayedObjectives_NumObjectives) == 0x000004, "Member 'QuestUpdatesLog_C_CanDisplayAnotherObjective::CallFunc_GetTotalDisplayedObjectives_NumObjectives' has a wrong offset!");
 static_assert(offsetof(QuestUpdatesLog_C_CanDisplayAnotherObjective, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'QuestUpdatesLog_C_CanDisplayAnotherObjective::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");

@@ -41,14 +41,14 @@ static_assert(sizeof(CollectionBookProgressWidget_C_OnCollectionBookPreviewXPCha
 static_assert(offsetof(CollectionBookProgressWidget_C_OnCollectionBookPreviewXPChange, PreviewCompletionPct) == 0x000000, "Member 'CollectionBookProgressWidget_C_OnCollectionBookPreviewXPChange::PreviewCompletionPct' has a wrong offset!");
 
 // Function CollectionBookProgressWidget.CollectionBookProgressWidget_C.OnCollectionBookLevelProgressionChanged
-// 0x1279 (0x1279 - 0x0000)
-struct alignas(0x1279) CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged final
+// 0x0004 (0x0004 - 0x0000)
+struct CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged final
 {
 public:
 	float                                         NewCompletionPct;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged) == 0x001279, "Wrong alignment on CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged");
-static_assert(sizeof(CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged) == 0x001279, "Wrong size on CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged");
+static_assert(alignof(CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged) == 0x000004, "Wrong alignment on CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged");
+static_assert(sizeof(CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged) == 0x000004, "Wrong size on CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged");
 static_assert(offsetof(CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged, NewCompletionPct) == 0x000000, "Member 'CollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged::NewCompletionPct' has a wrong offset!");
 
 }

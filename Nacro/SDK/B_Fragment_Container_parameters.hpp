@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_OutlanderFragmentTypes_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "E_OutlanderFragmentTypes_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -22,7 +22,7 @@ namespace SDK::Params
 {
 
 // Function B_Fragment_Container.B_Fragment_Container_C.ExecuteUbergraph_B_Fragment_Container
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0738 (0x0738 - 0x0000)
 struct B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container final
 {
 public:
@@ -35,12 +35,13 @@ public:
 	bool                                          CallFunc_HasAuthority_ReturnValue3;                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_Damage;                               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  K2Node_Event_DamageTags;                           // 0x0010(0x11821C00)(ConstParm)
-	struct FVector                                K2Node_Event_Momentum;                             // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_HitInfo;                              // 0x0040(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  K2Node_Event_DamageTags;                           // 0x0010(0x0020)(ConstParm)
+	struct FVector                                K2Node_Event_Momentum;                             // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_HitInfo;                              // 0x0040(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AController*                            K2Node_Event_InstigatedBy;                         // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_DamageCauser;                         // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x00D8(0x11821C00)()
+	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x00D8(0x0018)()
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	const class AFortPawn*                        K2Node_Event_InteractingPawn;                      // 0x00F8(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -55,7 +56,7 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex2;        // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bFromSweep;             // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12D[0x3];                                      // 0x012D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0130(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             K2Node_ComponentBoundEvent_SweepResult;            // 0x0130(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OverlappedComponent;    // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ComponentBoundEvent_OtherActor;             // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,7 +82,7 @@ public:
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0215(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_216[0x2];                                      // 0x0216(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0218(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0218(0x0008)(NoDestructor)
 	TArray<class AActor*>                         CallFunc_GetOverlappingActors_OverlappingActors;   // 0x0220(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0234(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -93,8 +94,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess5;                      // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAuthority_ReturnValue4;                // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_252[0x2];                                      // 0x0252(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0254(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0260(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0254(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0260(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x02E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -107,7 +108,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x0321(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_322[0x6];                                      // 0x0322(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue; // 0x0330(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue; // 0x0330(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasAuthority_ReturnValue5;                // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -123,39 +124,43 @@ public:
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0365(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue4;           // 0x0366(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x0367(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue2; // 0x0368(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue2; // 0x0368(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TArray<class AFortPlayerPawn*>                CallFunc_AuthorityGetFortPossessedPlayerPawns_ReturnValue; // 0x0370(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue5;           // 0x0384(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0385(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_386[0x2];                                      // 0x0386(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0388(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0388(0x000C)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0394(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_395[0x3];                                      // 0x0395(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0398(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x03A4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x03B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0398(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x03A4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x03B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x03C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x03C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D4[0x4];                                      // 0x03D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x03E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x03E4(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x03E4(0x000C)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3F1[0x3];                                      // 0x03F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakRotator_Roll;                        // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Pitch;                       // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Yaw;                         // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0400(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0400(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue2;         // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_RLerp_ReturnValue;                        // 0x0418(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_RLerp_ReturnValue;                        // 0x0418(0x000C)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_424[0x4];                                      // 0x0424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue2;          // 0x0428(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0430(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult2;   // 0x04B8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult3;   // 0x0540(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0430(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult2;   // 0x04B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult3;   // 0x0540(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          Temp_bool_Has_Been_Initd_Variable2;                // 0x05C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5C9[0x3];                                      // 0x05C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x05CC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x05D8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x05CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x05D8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AGameModeBase*                          CallFunc_GetGameMode_ReturnValue;                  // 0x0660(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortGameModeDeployableBase*            K2Node_DynamicCast_AsFort_Game_Mode_Deployable_Base; // 0x0668(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess8;                      // 0x0670(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -177,22 +182,22 @@ public:
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue2;   // 0x06C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortTeamAffiliation                          CallFunc_GetTeamAffiliation_ReturnValue;           // 0x06C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C9[0x7];                                      // 0x06C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEffectContextHandle           CallFunc_MakeEffectContext_ReturnValue;            // 0x06D0(0x11821C00)()
+	struct FGameplayEffectContextHandle           CallFunc_MakeEffectContext_ReturnValue;            // 0x06D0(0x0018)()
 	bool                                          K2Node_SwitchEnum4_CmpSuccess;                     // 0x06E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6E9[0x3];                                      // 0x06E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue3; // 0x06EC(0x11821C00)(NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x06F4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue3; // 0x06EC(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x06F4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0704(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0708(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_709[0x3];                                      // 0x0709(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x070C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x070C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0718(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0720(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue3; // 0x0728(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue4; // 0x0730(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container) == 0x11821D80, "Wrong alignment on B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container");
-static_assert(sizeof(B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container) == 0x11821D80, "Wrong size on B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container");
+static_assert(alignof(B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container) == 0x000008, "Wrong alignment on B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container");
+static_assert(sizeof(B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container) == 0x000738, "Wrong size on B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container");
 static_assert(offsetof(B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container, EntryPoint) == 0x000000, "Member 'B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container::EntryPoint' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container, CallFunc_HasAuthority_ReturnValue) == 0x000004, "Member 'B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container, CallFunc_IsDedicatedServer_ReturnValue) == 0x000005, "Member 'B_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
@@ -358,7 +363,7 @@ static_assert(offsetof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_Co
 static_assert(offsetof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_111_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_111_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
 // Function B_Fragment_Container.B_Fragment_Container_C.BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
@@ -368,10 +373,10 @@ public:
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong alignment on B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature) == 0x11821D80, "Wrong size on B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(alignof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature");
 static_assert(offsetof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'B_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
@@ -391,21 +396,22 @@ static_assert(sizeof(B_Fragment_Container_C_BlueprintOnInteract) == 0x000008, "W
 static_assert(offsetof(B_Fragment_Container_C_BlueprintOnInteract, InteractingPawn) == 0x000000, "Member 'B_Fragment_Container_C_BlueprintOnInteract::InteractingPawn' has a wrong offset!");
 
 // Function B_Fragment_Container.B_Fragment_Container_C.OnDeathServer
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct B_Fragment_Container_C_OnDeathServer final
 {
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AController*                            InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x11821C00)(Parm)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
 };
-static_assert(alignof(B_Fragment_Container_C_OnDeathServer) == 0x11821D80, "Wrong alignment on B_Fragment_Container_C_OnDeathServer");
-static_assert(sizeof(B_Fragment_Container_C_OnDeathServer) == 0x11821D80, "Wrong size on B_Fragment_Container_C_OnDeathServer");
+static_assert(alignof(B_Fragment_Container_C_OnDeathServer) == 0x000008, "Wrong alignment on B_Fragment_Container_C_OnDeathServer");
+static_assert(sizeof(B_Fragment_Container_C_OnDeathServer) == 0x0000E8, "Wrong size on B_Fragment_Container_C_OnDeathServer");
 static_assert(offsetof(B_Fragment_Container_C_OnDeathServer, Damage) == 0x000000, "Member 'B_Fragment_Container_C_OnDeathServer::Damage' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_OnDeathServer, DamageTags) == 0x000008, "Member 'B_Fragment_Container_C_OnDeathServer::DamageTags' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_OnDeathServer, Momentum) == 0x000028, "Member 'B_Fragment_Container_C_OnDeathServer::Momentum' has a wrong offset!");
@@ -450,16 +456,16 @@ static_assert(offsetof(B_Fragment_Container_C_BlueprintGetInteractionString, Cal
 static_assert(offsetof(B_Fragment_Container_C_BlueprintGetInteractionString, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000040, "Member 'B_Fragment_Container_C_BlueprintGetInteractionString::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
 
 // Function B_Fragment_Container.B_Fragment_Container_C.OnRep_BuffType
-// 0x11822200 (0x11822200 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct B_Fragment_Container_C_OnRep_BuffType final
 {
 public:
-	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0000(0x11822200)()
-	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData2;              // 0x00A8(0x11822200)()
+	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0000(0x00A8)()
+	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData2;              // 0x00A8(0x00A8)()
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Fragment_Container_C_OnRep_BuffType) == 0x11822200, "Wrong alignment on B_Fragment_Container_C_OnRep_BuffType");
-static_assert(sizeof(B_Fragment_Container_C_OnRep_BuffType) == 0x11822200, "Wrong size on B_Fragment_Container_C_OnRep_BuffType");
+static_assert(alignof(B_Fragment_Container_C_OnRep_BuffType) == 0x000008, "Wrong alignment on B_Fragment_Container_C_OnRep_BuffType");
+static_assert(sizeof(B_Fragment_Container_C_OnRep_BuffType) == 0x000158, "Wrong size on B_Fragment_Container_C_OnRep_BuffType");
 static_assert(offsetof(B_Fragment_Container_C_OnRep_BuffType, K2Node_MakeStruct_GameplayEventData) == 0x000000, "Member 'B_Fragment_Container_C_OnRep_BuffType::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_OnRep_BuffType, K2Node_MakeStruct_GameplayEventData2) == 0x0000A8, "Member 'B_Fragment_Container_C_OnRep_BuffType::K2Node_MakeStruct_GameplayEventData2' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_OnRep_BuffType, K2Node_SwitchEnum_CmpSuccess) == 0x000150, "Member 'B_Fragment_Container_C_OnRep_BuffType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
@@ -502,19 +508,19 @@ static_assert(sizeof(B_Fragment_Container_C_SetOutlander) == 0x000008, "Wrong si
 static_assert(offsetof(B_Fragment_Container_C_SetOutlander, NewOutlander) == 0x000000, "Member 'B_Fragment_Container_C_SetOutlander::NewOutlander' has a wrong offset!");
 
 // Function B_Fragment_Container.B_Fragment_Container_C.OnRep_IsOn
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct B_Fragment_Container_C_OnRep_IsOn final
 {
 public:
-	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_AddComponent_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue2;         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue2;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Fragment_Container_C_OnRep_IsOn) == 0x11821300, "Wrong alignment on B_Fragment_Container_C_OnRep_IsOn");
-static_assert(sizeof(B_Fragment_Container_C_OnRep_IsOn) == 0x11821300, "Wrong size on B_Fragment_Container_C_OnRep_IsOn");
+static_assert(alignof(B_Fragment_Container_C_OnRep_IsOn) == 0x000010, "Wrong alignment on B_Fragment_Container_C_OnRep_IsOn");
+static_assert(sizeof(B_Fragment_Container_C_OnRep_IsOn) == 0x000060, "Wrong size on B_Fragment_Container_C_OnRep_IsOn");
 static_assert(offsetof(B_Fragment_Container_C_OnRep_IsOn, Temp_struct_Variable) == 0x000000, "Member 'B_Fragment_Container_C_OnRep_IsOn::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_OnRep_IsOn, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000030, "Member 'B_Fragment_Container_C_OnRep_IsOn::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_OnRep_IsOn, CallFunc_AddComponent_ReturnValue) == 0x000038, "Member 'B_Fragment_Container_C_OnRep_IsOn::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
@@ -523,19 +529,20 @@ static_assert(offsetof(B_Fragment_Container_C_OnRep_IsOn, CallFunc_SpawnSoundAtt
 static_assert(offsetof(B_Fragment_Container_C_OnRep_IsOn, CallFunc_SpawnSoundAttached_ReturnValue2) == 0x000050, "Member 'B_Fragment_Container_C_OnRep_IsOn::CallFunc_SpawnSoundAttached_ReturnValue2' has a wrong offset!");
 
 // Function B_Fragment_Container.B_Fragment_Container_C.ForceFeedbackInteract
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct B_Fragment_Container_C_ForceFeedbackInteract final
 {
 public:
 	bool                                          Soft;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Fragment_Container_C_ForceFeedbackInteract) == 0x11821300, "Wrong alignment on B_Fragment_Container_C_ForceFeedbackInteract");
-static_assert(sizeof(B_Fragment_Container_C_ForceFeedbackInteract) == 0x11821300, "Wrong size on B_Fragment_Container_C_ForceFeedbackInteract");
+static_assert(alignof(B_Fragment_Container_C_ForceFeedbackInteract) == 0x000008, "Wrong alignment on B_Fragment_Container_C_ForceFeedbackInteract");
+static_assert(sizeof(B_Fragment_Container_C_ForceFeedbackInteract) == 0x000030, "Wrong size on B_Fragment_Container_C_ForceFeedbackInteract");
 static_assert(offsetof(B_Fragment_Container_C_ForceFeedbackInteract, Soft) == 0x000000, "Member 'B_Fragment_Container_C_ForceFeedbackInteract::Soft' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_ForceFeedbackInteract, CallFunc_GetController_ReturnValue) == 0x000008, "Member 'B_Fragment_Container_C_ForceFeedbackInteract::CallFunc_GetController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_ForceFeedbackInteract, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000010, "Member 'B_Fragment_Container_C_ForceFeedbackInteract::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
@@ -543,7 +550,7 @@ static_assert(offsetof(B_Fragment_Container_C_ForceFeedbackInteract, K2Node_Dyna
 static_assert(offsetof(B_Fragment_Container_C_ForceFeedbackInteract, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'B_Fragment_Container_C_ForceFeedbackInteract::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function B_Fragment_Container.B_Fragment_Container_C.BlueprintCanInteract
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct B_Fragment_Container_C_BlueprintCanInteract final
 {
 public:
@@ -554,7 +561,7 @@ public:
 	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_GetOwnedGameplayTags_self_CastInput;      // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FGameplayTagContainer                  CallFunc_GetOwnedGameplayTags_TagContainer;        // 0x0028(0x11821C00)()
+	struct FGameplayTagContainer                  CallFunc_GetOwnedGameplayTags_TagContainer;        // 0x0028(0x0020)()
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -570,7 +577,7 @@ public:
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue2;   // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  CallFunc_MakeLiteralGameplayTagContainer_ReturnValue; // 0x0098(0x11821C00)()
+	struct FGameplayTagContainer                  CallFunc_MakeLiteralGameplayTagContainer_ReturnValue; // 0x0098(0x0020)()
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess; // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_BA[0x2];                                       // 0x00BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -603,8 +610,8 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue4;                  // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Fragment_Container_C_BlueprintCanInteract) == 0x11821C00, "Wrong alignment on B_Fragment_Container_C_BlueprintCanInteract");
-static_assert(sizeof(B_Fragment_Container_C_BlueprintCanInteract) == 0x11821C00, "Wrong size on B_Fragment_Container_C_BlueprintCanInteract");
+static_assert(alignof(B_Fragment_Container_C_BlueprintCanInteract) == 0x000008, "Wrong alignment on B_Fragment_Container_C_BlueprintCanInteract");
+static_assert(sizeof(B_Fragment_Container_C_BlueprintCanInteract) == 0x000118, "Wrong size on B_Fragment_Container_C_BlueprintCanInteract");
 static_assert(offsetof(B_Fragment_Container_C_BlueprintCanInteract, InteractingPawn) == 0x000000, "Member 'B_Fragment_Container_C_BlueprintCanInteract::InteractingPawn' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_BlueprintCanInteract, ReturnValue) == 0x000008, "Member 'B_Fragment_Container_C_BlueprintCanInteract::ReturnValue' has a wrong offset!");
 static_assert(offsetof(B_Fragment_Container_C_BlueprintCanInteract, LocalExecuteOk) == 0x000009, "Member 'B_Fragment_Container_C_BlueprintCanInteract::LocalExecuteOk' has a wrong offset!");

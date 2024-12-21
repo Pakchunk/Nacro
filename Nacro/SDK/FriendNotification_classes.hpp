@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FriendNotification.FriendNotification_C
-// 0x0600 (0x11821D80 - 0x11821780)
+// 0x0008 (0x00A0 - 0x0098)
 class UFriendNotification_C final : public UFortUIFriendNotification
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0098(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0098(0x0008)(Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_FriendNotification(int32 EntryPoint);
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UFriendNotification_C>();
 	}
 };
-static_assert(alignof(UFriendNotification_C) == 0x11821D80, "Wrong alignment on UFriendNotification_C");
-static_assert(sizeof(UFriendNotification_C) == 0x11821D80, "Wrong size on UFriendNotification_C");
+static_assert(alignof(UFriendNotification_C) == 0x000008, "Wrong alignment on UFriendNotification_C");
+static_assert(sizeof(UFriendNotification_C) == 0x0000A0, "Wrong size on UFriendNotification_C");
 static_assert(offsetof(UFriendNotification_C, UberGraphFrame) == 0x000098, "Member 'UFriendNotification_C::UberGraphFrame' has a wrong offset!");
 
 }

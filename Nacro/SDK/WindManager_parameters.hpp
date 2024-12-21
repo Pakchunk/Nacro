@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function WindManager.WindManager_C.ExecuteUbergraph_WindManager
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0330 (0x0330 - 0x0000)
 struct WindManager_C_ExecuteUbergraph_WindManager final
 {
 public:
@@ -62,23 +62,24 @@ public:
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AFortStaticMeshActor*>           CallFunc_GetAllActorsOfClass_OutActors;            // 0x0068(0x0010)(ZeroConstructor, ReferenceParm)
 	class UParticleSystem*                        K2Node_CustomEvent_EmitterTemplate;                // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             K2Node_CustomEvent_InTransform;                    // 0x0080(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x00B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00BC(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             K2Node_CustomEvent_InTransform;                    // 0x0080(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x00B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00BC(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_CeilVector_ReturnValue;                   // 0x00E0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_CeilVector_ReturnValue2;                  // 0x00EC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00F8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0104(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0110(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult2;      // 0x0198(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0220(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x0230(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_CeilVector_ReturnValue3;                  // 0x0240(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue3;            // 0x024C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult3;      // 0x0258(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue3;    // 0x02E0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_CeilVector_ReturnValue;                   // 0x00E0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_CeilVector_ReturnValue2;                  // 0x00EC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00F8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0104(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0110(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult2;      // 0x0198(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x0220(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x0230(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_CeilVector_ReturnValue3;                  // 0x0240(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue3;            // 0x024C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult3;      // 0x0258(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue3;    // 0x02E0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x02F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2F5[0x3];                                      // 0x02F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -93,8 +94,8 @@ public:
 	class AActor*                                 CallFunc_Array_Get_Item2;                          // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue2;           // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WindManager_C_ExecuteUbergraph_WindManager) == 0x11821D80, "Wrong alignment on WindManager_C_ExecuteUbergraph_WindManager");
-static_assert(sizeof(WindManager_C_ExecuteUbergraph_WindManager) == 0x11821D80, "Wrong size on WindManager_C_ExecuteUbergraph_WindManager");
+static_assert(alignof(WindManager_C_ExecuteUbergraph_WindManager) == 0x000010, "Wrong alignment on WindManager_C_ExecuteUbergraph_WindManager");
+static_assert(sizeof(WindManager_C_ExecuteUbergraph_WindManager) == 0x000330, "Wrong size on WindManager_C_ExecuteUbergraph_WindManager");
 static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, EntryPoint) == 0x000000, "Member 'WindManager_C_ExecuteUbergraph_WindManager::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetRenderingMaterialQualityLevel_ReturnValue) == 0x000008, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetRenderingMaterialQualityLevel_ReturnValue' has a wrong offset!");
@@ -176,16 +177,16 @@ static_assert(sizeof(WindManager_C_ReceiveTick) == 0x000004, "Wrong size on Wind
 static_assert(offsetof(WindManager_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'WindManager_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function WindManager.WindManager_C.Add Render To Texture Particle
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct WindManager_C_Add_Render_To_Texture_Particle final
 {
 public:
 	class UParticleSystem*                        EmitterTemplate;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             InTransform;                                       // 0x0010(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             InTransform;                                       // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WindManager_C_Add_Render_To_Texture_Particle) == 0x11821300, "Wrong alignment on WindManager_C_Add_Render_To_Texture_Particle");
-static_assert(sizeof(WindManager_C_Add_Render_To_Texture_Particle) == 0x11821300, "Wrong size on WindManager_C_Add_Render_To_Texture_Particle");
+static_assert(alignof(WindManager_C_Add_Render_To_Texture_Particle) == 0x000010, "Wrong alignment on WindManager_C_Add_Render_To_Texture_Particle");
+static_assert(sizeof(WindManager_C_Add_Render_To_Texture_Particle) == 0x000040, "Wrong size on WindManager_C_Add_Render_To_Texture_Particle");
 static_assert(offsetof(WindManager_C_Add_Render_To_Texture_Particle, EmitterTemplate) == 0x000000, "Member 'WindManager_C_Add_Render_To_Texture_Particle::EmitterTemplate' has a wrong offset!");
 static_assert(offsetof(WindManager_C_Add_Render_To_Texture_Particle, InTransform) == 0x000010, "Member 'WindManager_C_Add_Render_To_Texture_Particle::InTransform' has a wrong offset!");
 
@@ -237,24 +238,25 @@ static_assert(sizeof(WindManager_C_ActivateTestContent) == 0x000001, "Wrong size
 static_assert(offsetof(WindManager_C_ActivateTestContent, Condition) == 0x000000, "Member 'WindManager_C_ActivateTestContent::Condition' has a wrong offset!");
 
 // Function WindManager.WindManager_C.CeilVector
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct WindManager_C_CeilVector final
 {
 public:
 	float                                         Scale;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneCaptureComponent2D*               Scene_Capture;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ReturnValue;                                       // 0x0010(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ReturnValue;                                       // 0x0010(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetCameraLocation_ReturnValue;            // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x0034(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetCameraLocation_ReturnValue;            // 0x0028(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x0034(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0044(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0044(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0054(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0060(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorVector_ReturnValue;          // 0x006C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x0078(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0054(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0060(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorVector_ReturnValue;          // 0x006C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorFloat_ReturnValue;         // 0x0078(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -264,11 +266,11 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue4;             // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FCeil_ReturnValue3;                       // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue5;             // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x00A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue2;       // 0x00B4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x00A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue2;       // 0x00B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WindManager_C_CeilVector) == 0x11821300, "Wrong alignment on WindManager_C_CeilVector");
-static_assert(sizeof(WindManager_C_CeilVector) == 0x11821300, "Wrong size on WindManager_C_CeilVector");
+static_assert(alignof(WindManager_C_CeilVector) == 0x000008, "Wrong alignment on WindManager_C_CeilVector");
+static_assert(sizeof(WindManager_C_CeilVector) == 0x0000C0, "Wrong size on WindManager_C_CeilVector");
 static_assert(offsetof(WindManager_C_CeilVector, Scale) == 0x000000, "Member 'WindManager_C_CeilVector::Scale' has a wrong offset!");
 static_assert(offsetof(WindManager_C_CeilVector, Scene_Capture) == 0x000008, "Member 'WindManager_C_CeilVector::Scene_Capture' has a wrong offset!");
 static_assert(offsetof(WindManager_C_CeilVector, ReturnValue) == 0x000010, "Member 'WindManager_C_CeilVector::ReturnValue' has a wrong offset!");

@@ -20,14 +20,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ErrorEntry.ErrorEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A8 (0x02E0 - 0x0238)
 class UErrorEntry_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      IconTextButton;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       MESSAGE;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortErrorInfo                         ErrorInfo;                                         // 0x0250(0x1182E980)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortErrorInfo                         ErrorInfo;                                         // 0x0250(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FString                                 ErrorUrlBase;                                      // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
@@ -36,7 +36,7 @@ public:
 	void Construct();
 	void GetButtonVisibility(ESlateVisibility* NewParam);
 	void SetErrorInfo(const struct FFortErrorInfo& ErrorInfo_0);
-	void Center_on_Widget(bool* Did_Center);
+	void Center_On_Widget(bool* Did_Center);
 
 public:
 	static class UClass* StaticClass()
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UErrorEntry_C>();
 	}
 };
-static_assert(alignof(UErrorEntry_C) == 0x322CBBB8, "Wrong alignment on UErrorEntry_C");
-static_assert(sizeof(UErrorEntry_C) == 0x322CBBB8, "Wrong size on UErrorEntry_C");
+static_assert(alignof(UErrorEntry_C) == 0x000010, "Wrong alignment on UErrorEntry_C");
+static_assert(sizeof(UErrorEntry_C) == 0x0002E0, "Wrong size on UErrorEntry_C");
 static_assert(offsetof(UErrorEntry_C, UberGraphFrame) == 0x000238, "Member 'UErrorEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UErrorEntry_C, IconTextButton) == 0x000240, "Member 'UErrorEntry_C::IconTextButton' has a wrong offset!");
 static_assert(offsetof(UErrorEntry_C, MESSAGE) == 0x000248, "Member 'UErrorEntry_C::MESSAGE' has a wrong offset!");

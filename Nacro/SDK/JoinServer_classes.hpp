@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass JoinServer.JoinServer_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0080 (0x0480 - 0x0400)
 class UJoinServer_C final : public UFortUIStateWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
 	class UBuildWatermark_C*                      BuildWatermark;                                    // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetStack*                     MainContentStack;                                  // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ManualStart;                                       // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -89,8 +89,8 @@ public:
 		return GetDefaultObjImpl<UJoinServer_C>();
 	}
 };
-static_assert(alignof(UJoinServer_C) == 0x322CBBB8, "Wrong alignment on UJoinServer_C");
-static_assert(sizeof(UJoinServer_C) == 0x322CBBB8, "Wrong size on UJoinServer_C");
+static_assert(alignof(UJoinServer_C) == 0x000008, "Wrong alignment on UJoinServer_C");
+static_assert(sizeof(UJoinServer_C) == 0x000480, "Wrong size on UJoinServer_C");
 static_assert(offsetof(UJoinServer_C, UberGraphFrame) == 0x000400, "Member 'UJoinServer_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UJoinServer_C, BuildWatermark) == 0x000408, "Member 'UJoinServer_C::BuildWatermark' has a wrong offset!");
 static_assert(offsetof(UJoinServer_C, MainContentStack) == 0x000410, "Member 'UJoinServer_C::MainContentStack' has a wrong offset!");

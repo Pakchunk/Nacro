@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function Subtitles.Subtitles_C.ExecuteUbergraph_Subtitles
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) Subtitles_C_ExecuteUbergraph_Subtitles final
+// 0x0004 (0x0004 - 0x0000)
+struct Subtitles_C_ExecuteUbergraph_Subtitles final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Subtitles_C_ExecuteUbergraph_Subtitles) == 0x10461A40, "Wrong alignment on Subtitles_C_ExecuteUbergraph_Subtitles");
-static_assert(sizeof(Subtitles_C_ExecuteUbergraph_Subtitles) == 0x10461A40, "Wrong size on Subtitles_C_ExecuteUbergraph_Subtitles");
+static_assert(alignof(Subtitles_C_ExecuteUbergraph_Subtitles) == 0x000004, "Wrong alignment on Subtitles_C_ExecuteUbergraph_Subtitles");
+static_assert(sizeof(Subtitles_C_ExecuteUbergraph_Subtitles) == 0x000004, "Wrong size on Subtitles_C_ExecuteUbergraph_Subtitles");
 static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, EntryPoint) == 0x000000, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::EntryPoint' has a wrong offset!");
 
 // Function Subtitles.Subtitles_C.GetSubtitleVisibility

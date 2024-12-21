@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StoreMain_Root.StoreMain_Root_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0460 - 0x0420)
 class UStoreMain_Root_C final : public UFortMtxStoreRootBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       NoOffersText;                                      // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             OffersHorizontalScrollBox;                         // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               OverlayInstructions;                               // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UStoreMain_Root_C>();
 	}
 };
-static_assert(alignof(UStoreMain_Root_C) == 0x322CBBB8, "Wrong alignment on UStoreMain_Root_C");
-static_assert(sizeof(UStoreMain_Root_C) == 0x322CBBB8, "Wrong size on UStoreMain_Root_C");
+static_assert(alignof(UStoreMain_Root_C) == 0x000008, "Wrong alignment on UStoreMain_Root_C");
+static_assert(sizeof(UStoreMain_Root_C) == 0x000460, "Wrong size on UStoreMain_Root_C");
 static_assert(offsetof(UStoreMain_Root_C, UberGraphFrame) == 0x000420, "Member 'UStoreMain_Root_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStoreMain_Root_C, NoOffersText) == 0x000428, "Member 'UStoreMain_Root_C::NoOffersText' has a wrong offset!");
 static_assert(offsetof(UStoreMain_Root_C, OffersHorizontalScrollBox) == 0x000430, "Member 'UStoreMain_Root_C::OffersHorizontalScrollBox' has a wrong offset!");

@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Hex_PARENT.BP_Hex_PARENT_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0128 (0x0728 - 0x0600)
 class ABP_Hex_PARENT_C : public AFortTheaterMapTile
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0600(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0600(0x0008)(Transient, DuplicateTransient)
 	class UWidgetComponent*                       StormZoneIndicator;                                // 0x0608(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               P_StormAffected;                                   // 0x0610(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    StormBillboard;                                    // 0x0618(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -69,7 +69,7 @@ public:
 	bool                                          RenderHexWithClouds;                               // 0x06D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6D9[0x7];                                      // 0x06D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               MIDMissionPinnedIcon;                              // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DifficultyColor;                                   // 0x06E8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DifficultyColor;                                   // 0x06E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PinnedQuest;                                       // 0x06F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6F9[0x7];                                      // 0x06F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATheaterCamera_Blueprint_C*             TheaterCamera;                                     // 0x0700(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -132,8 +132,8 @@ public:
 		return GetDefaultObjImpl<ABP_Hex_PARENT_C>();
 	}
 };
-static_assert(alignof(ABP_Hex_PARENT_C) == 0x1182EB00, "Wrong alignment on ABP_Hex_PARENT_C");
-static_assert(sizeof(ABP_Hex_PARENT_C) == 0x1182EB00, "Wrong size on ABP_Hex_PARENT_C");
+static_assert(alignof(ABP_Hex_PARENT_C) == 0x000008, "Wrong alignment on ABP_Hex_PARENT_C");
+static_assert(sizeof(ABP_Hex_PARENT_C) == 0x000728, "Wrong size on ABP_Hex_PARENT_C");
 static_assert(offsetof(ABP_Hex_PARENT_C, UberGraphFrame) == 0x000600, "Member 'ABP_Hex_PARENT_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_PARENT_C, StormZoneIndicator) == 0x000608, "Member 'ABP_Hex_PARENT_C::StormZoneIndicator' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_PARENT_C, P_StormAffected) == 0x000610, "Member 'ABP_Hex_PARENT_C::P_StormAffected' has a wrong offset!");

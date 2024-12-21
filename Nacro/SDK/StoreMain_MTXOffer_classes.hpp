@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StoreMain_MTXOffer.StoreMain_MTXOffer_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0090 (0x09D8 - 0x0948)
 class UStoreMain_MTXOffer_C final : public UFortMtxStoreOfferBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0948(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0948(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Embiggen;                                          // 0x0950(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       HighlightGlow_Founders;                            // 0x0958(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       HighlightGlow_VBuck;                               // 0x0960(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UStoreMain_MTXOffer_C>();
 	}
 };
-static_assert(alignof(UStoreMain_MTXOffer_C) == 0x322CBBB8, "Wrong alignment on UStoreMain_MTXOffer_C");
-static_assert(sizeof(UStoreMain_MTXOffer_C) == 0x322CBBB8, "Wrong size on UStoreMain_MTXOffer_C");
+static_assert(alignof(UStoreMain_MTXOffer_C) == 0x000008, "Wrong alignment on UStoreMain_MTXOffer_C");
+static_assert(sizeof(UStoreMain_MTXOffer_C) == 0x0009D8, "Wrong size on UStoreMain_MTXOffer_C");
 static_assert(offsetof(UStoreMain_MTXOffer_C, UberGraphFrame) == 0x000948, "Member 'UStoreMain_MTXOffer_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStoreMain_MTXOffer_C, Embiggen) == 0x000950, "Member 'UStoreMain_MTXOffer_C::Embiggen' has a wrong offset!");
 static_assert(offsetof(UStoreMain_MTXOffer_C, HighlightGlow_Founders) == 0x000958, "Member 'UStoreMain_MTXOffer_C::HighlightGlow_Founders' has a wrong offset!");

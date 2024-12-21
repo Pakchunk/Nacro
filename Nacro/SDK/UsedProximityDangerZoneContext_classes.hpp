@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass UsedProximityDangerZoneContext.UsedProximityDangerZoneContext_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0078 - 0x0078)
 class UUsedProximityDangerZoneContext_C final : public UUsedPlacementActorsContext_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UUsedProximityDangerZoneContext_C>();
 	}
 };
-static_assert(alignof(UUsedProximityDangerZoneContext_C) == 0x11821D80, "Wrong alignment on UUsedProximityDangerZoneContext_C");
-static_assert(sizeof(UUsedProximityDangerZoneContext_C) == 0x11821D80, "Wrong size on UUsedProximityDangerZoneContext_C");
+static_assert(alignof(UUsedProximityDangerZoneContext_C) == 0x000008, "Wrong alignment on UUsedProximityDangerZoneContext_C");
+static_assert(sizeof(UUsedProximityDangerZoneContext_C) == 0x000078, "Wrong size on UUsedProximityDangerZoneContext_C");
 
 }
 

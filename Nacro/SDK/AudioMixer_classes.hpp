@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // Class AudioMixer.SoundEffectLowPassFilterPreset
-// 0x1182E340 (0x1182E380 - 0x0040)
+// 0x0008 (0x0048 - 0x0040)
 class USoundEffectLowPassFilterPreset final : public USoundEffectSourcePreset
 {
 public:
-	struct FSoundEffectLowPassFilterSettings      Settings;                                          // 0x0040(0x1182E380)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSoundEffectLowPassFilterSettings      Settings;                                          // 0x0040(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -35,16 +35,16 @@ public:
 		return GetDefaultObjImpl<USoundEffectLowPassFilterPreset>();
 	}
 };
-static_assert(alignof(USoundEffectLowPassFilterPreset) == 0x1182E380, "Wrong alignment on USoundEffectLowPassFilterPreset");
-static_assert(sizeof(USoundEffectLowPassFilterPreset) == 0x1182E380, "Wrong size on USoundEffectLowPassFilterPreset");
+static_assert(alignof(USoundEffectLowPassFilterPreset) == 0x000008, "Wrong alignment on USoundEffectLowPassFilterPreset");
+static_assert(sizeof(USoundEffectLowPassFilterPreset) == 0x000048, "Wrong size on USoundEffectLowPassFilterPreset");
 static_assert(offsetof(USoundEffectLowPassFilterPreset, Settings) == 0x000040, "Member 'USoundEffectLowPassFilterPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SubmixEffectReverbPreset
-// 0x1182E340 (0x1182E380 - 0x0040)
+// 0x0008 (0x0048 - 0x0040)
 class USubmixEffectReverbPreset final : public USoundEffectSubmixPreset
 {
 public:
-	struct FSubmixEffectReverbSettings            Settings;                                          // 0x0040(0x1182E380)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSubmixEffectReverbSettings            Settings;                                          // 0x0040(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -56,16 +56,17 @@ public:
 		return GetDefaultObjImpl<USubmixEffectReverbPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectReverbPreset) == 0x1182E380, "Wrong alignment on USubmixEffectReverbPreset");
-static_assert(sizeof(USubmixEffectReverbPreset) == 0x1182E380, "Wrong size on USubmixEffectReverbPreset");
+static_assert(alignof(USubmixEffectReverbPreset) == 0x000008, "Wrong alignment on USubmixEffectReverbPreset");
+static_assert(sizeof(USubmixEffectReverbPreset) == 0x000048, "Wrong size on USubmixEffectReverbPreset");
 static_assert(offsetof(USubmixEffectReverbPreset, Settings) == 0x000040, "Member 'USubmixEffectReverbPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SubmixEffectSubmixEQPreset
-// 0x33DB4140 (0x33DB4180 - 0x0040)
+// 0x0008 (0x0048 - 0x0040)
 class USubmixEffectSubmixEQPreset final : public USoundEffectSubmixPreset
 {
 public:
-	struct FSubmixEffectSubmixEQSettings          Settings;                                          // 0x0040(0x33DB4180)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSubmixEffectSubmixEQSettings          Settings;                                          // 0x0040(0x0001)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -77,16 +78,17 @@ public:
 		return GetDefaultObjImpl<USubmixEffectSubmixEQPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectSubmixEQPreset) == 0x33DB4180, "Wrong alignment on USubmixEffectSubmixEQPreset");
-static_assert(sizeof(USubmixEffectSubmixEQPreset) == 0x33DB4180, "Wrong size on USubmixEffectSubmixEQPreset");
+static_assert(alignof(USubmixEffectSubmixEQPreset) == 0x000008, "Wrong alignment on USubmixEffectSubmixEQPreset");
+static_assert(sizeof(USubmixEffectSubmixEQPreset) == 0x000048, "Wrong size on USubmixEffectSubmixEQPreset");
 static_assert(offsetof(USubmixEffectSubmixEQPreset, Settings) == 0x000040, "Member 'USubmixEffectSubmixEQPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SubmixEffectTestPreset
-// 0x33DB4140 (0x33DB4180 - 0x0040)
+// 0x0008 (0x0048 - 0x0040)
 class USubmixEffectTestPreset final : public USoundEffectSubmixPreset
 {
 public:
-	struct FSubmixEffectTestSettings              Settings;                                          // 0x0040(0x33DB4180)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSubmixEffectTestSettings              Settings;                                          // 0x0040(0x0004)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -98,14 +100,17 @@ public:
 		return GetDefaultObjImpl<USubmixEffectTestPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectTestPreset) == 0x33DB4180, "Wrong alignment on USubmixEffectTestPreset");
-static_assert(sizeof(USubmixEffectTestPreset) == 0x33DB4180, "Wrong size on USubmixEffectTestPreset");
+static_assert(alignof(USubmixEffectTestPreset) == 0x000008, "Wrong alignment on USubmixEffectTestPreset");
+static_assert(sizeof(USubmixEffectTestPreset) == 0x000048, "Wrong size on USubmixEffectTestPreset");
 static_assert(offsetof(USubmixEffectTestPreset, Settings) == 0x000040, "Member 'USubmixEffectTestPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SynthSound
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0020 (0x0310 - 0x02F0)
 class USynthSound final : public USoundWaveProcedural
 {
+public:
+	uint8                                         Pad_2F0[0x20];                                     // 0x02F0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -116,11 +121,11 @@ public:
 		return GetDefaultObjImpl<USynthSound>();
 	}
 };
-static_assert(alignof(USynthSound) == 0x11821D80, "Wrong alignment on USynthSound");
-static_assert(sizeof(USynthSound) == 0x11821D80, "Wrong size on USynthSound");
+static_assert(alignof(USynthSound) == 0x000008, "Wrong alignment on USynthSound");
+static_assert(sizeof(USynthSound) == 0x000310, "Wrong size on USynthSound");
 
 // Class AudioMixer.SynthComponent
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0190 (0x0420 - 0x0290)
 class USynthComponent final : public USceneComponent
 {
 public:
@@ -130,7 +135,7 @@ public:
 	uint8                                         bOverrideAttenuation : 1;                          // 0x0290(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_291[0x7];                                      // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundAttenuation*                      AttenuationSettings;                               // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoundAttenuationSettings              AttenuationOverrides;                              // 0x02A0(0x11821D80)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSoundAttenuationSettings              AttenuationOverrides;                              // 0x02A0(0x0120)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	class USoundConcurrency*                      ConcurrencySettings;                               // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USoundClass*                            SoundClass;                                        // 0x03C8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3D0[0x8];                                      // 0x03D0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -154,8 +159,8 @@ public:
 		return GetDefaultObjImpl<USynthComponent>();
 	}
 };
-static_assert(alignof(USynthComponent) == 0x11821D80, "Wrong alignment on USynthComponent");
-static_assert(sizeof(USynthComponent) == 0x11821D80, "Wrong size on USynthComponent");
+static_assert(alignof(USynthComponent) == 0x000008, "Wrong alignment on USynthComponent");
+static_assert(sizeof(USynthComponent) == 0x000420, "Wrong size on USynthComponent");
 static_assert(offsetof(USynthComponent, AttenuationSettings) == 0x000298, "Member 'USynthComponent::AttenuationSettings' has a wrong offset!");
 static_assert(offsetof(USynthComponent, AttenuationOverrides) == 0x0002A0, "Member 'USynthComponent::AttenuationOverrides' has a wrong offset!");
 static_assert(offsetof(USynthComponent, ConcurrencySettings) == 0x0003C0, "Member 'USynthComponent::ConcurrencySettings' has a wrong offset!");

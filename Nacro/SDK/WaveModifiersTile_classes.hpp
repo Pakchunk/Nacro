@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WaveModifiersTile.WaveModifiersTile_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0278 - 0x0240)
 class UWaveModifiersTile_C final : public UFortUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Intro;                                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             ModifierDesc;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ModifierImage;                                     // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<UWaveModifiersTile_C>();
 	}
 };
-static_assert(alignof(UWaveModifiersTile_C) == 0x322CBBB8, "Wrong alignment on UWaveModifiersTile_C");
-static_assert(sizeof(UWaveModifiersTile_C) == 0x322CBBB8, "Wrong size on UWaveModifiersTile_C");
+static_assert(alignof(UWaveModifiersTile_C) == 0x000008, "Wrong alignment on UWaveModifiersTile_C");
+static_assert(sizeof(UWaveModifiersTile_C) == 0x000278, "Wrong size on UWaveModifiersTile_C");
 static_assert(offsetof(UWaveModifiersTile_C, UberGraphFrame) == 0x000240, "Member 'UWaveModifiersTile_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWaveModifiersTile_C, Intro) == 0x000248, "Member 'UWaveModifiersTile_C::Intro' has a wrong offset!");
 static_assert(offsetof(UWaveModifiersTile_C, ModifierDesc) == 0x000250, "Member 'UWaveModifiersTile_C::ModifierDesc' has a wrong offset!");

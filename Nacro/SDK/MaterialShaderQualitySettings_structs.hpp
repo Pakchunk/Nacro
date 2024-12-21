@@ -25,8 +25,8 @@ enum class EMobileCSMQuality : uint8
 };
 
 // ScriptStruct MaterialShaderQualitySettings.MaterialQualityOverrides
-// 0x11826700 (0x11826700 - 0x0000)
-struct alignas(0x11826700) FMaterialQualityOverrides final
+// 0x0006 (0x0006 - 0x0000)
+struct FMaterialQualityOverrides final
 {
 public:
 	bool                                          bEnableOverride;                                   // 0x0000(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -36,8 +36,8 @@ public:
 	bool                                          bForceLQReflections;                               // 0x0004(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMobileCSMQuality                             MobileCSMQuality;                                  // 0x0005(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialQualityOverrides) == 0x11826700, "Wrong alignment on FMaterialQualityOverrides");
-static_assert(sizeof(FMaterialQualityOverrides) == 0x11826700, "Wrong size on FMaterialQualityOverrides");
+static_assert(alignof(FMaterialQualityOverrides) == 0x000001, "Wrong alignment on FMaterialQualityOverrides");
+static_assert(sizeof(FMaterialQualityOverrides) == 0x000006, "Wrong size on FMaterialQualityOverrides");
 static_assert(offsetof(FMaterialQualityOverrides, bEnableOverride) == 0x000000, "Member 'FMaterialQualityOverrides::bEnableOverride' has a wrong offset!");
 static_assert(offsetof(FMaterialQualityOverrides, bForceFullyRough) == 0x000001, "Member 'FMaterialQualityOverrides::bForceFullyRough' has a wrong offset!");
 static_assert(offsetof(FMaterialQualityOverrides, bForceNonMetal) == 0x000002, "Member 'FMaterialQualityOverrides::bForceNonMetal' has a wrong offset!");

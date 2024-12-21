@@ -22,8 +22,8 @@ namespace SDK::Params
 {
 
 // Function MissionTooltip.MissionTooltip_C.ExecuteUbergraph_MissionTooltip
-// 0x56005F (0x56005F - 0x0000)
-struct alignas(0x56005F) MissionTooltip_C_ExecuteUbergraph_MissionTooltip final
+// 0x0020 (0x0020 - 0x0000)
+struct MissionTooltip_C_ExecuteUbergraph_MissionTooltip final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,36 +32,36 @@ public:
 	class ABP_Hex_PARENT_C*                       K2Node_DynamicCast_AsBP_Hex_PARENT;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip) == 0x56005F, "Wrong alignment on MissionTooltip_C_ExecuteUbergraph_MissionTooltip");
-static_assert(sizeof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip) == 0x56005F, "Wrong size on MissionTooltip_C_ExecuteUbergraph_MissionTooltip");
+static_assert(alignof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip) == 0x000008, "Wrong alignment on MissionTooltip_C_ExecuteUbergraph_MissionTooltip");
+static_assert(sizeof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip) == 0x000020, "Wrong size on MissionTooltip_C_ExecuteUbergraph_MissionTooltip");
 static_assert(offsetof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip, EntryPoint) == 0x000000, "Member 'MissionTooltip_C_ExecuteUbergraph_MissionTooltip::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip, K2Node_Event_InitObject) == 0x000008, "Member 'MissionTooltip_C_ExecuteUbergraph_MissionTooltip::K2Node_Event_InitObject' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip, K2Node_DynamicCast_AsBP_Hex_PARENT) == 0x000010, "Member 'MissionTooltip_C_ExecuteUbergraph_MissionTooltip::K2Node_DynamicCast_AsBP_Hex_PARENT' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MissionTooltip_C_ExecuteUbergraph_MissionTooltip::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function MissionTooltip.MissionTooltip_C.InitFromObject
-// 0x5F0052 (0x5F0052 - 0x0000)
-struct alignas(0x5F0052) MissionTooltip_C_InitFromObject final
+// 0x0008 (0x0008 - 0x0000)
+struct MissionTooltip_C_InitFromObject final
 {
 public:
 	class UObject*                                InitObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionTooltip_C_InitFromObject) == 0x5F0052, "Wrong alignment on MissionTooltip_C_InitFromObject");
-static_assert(sizeof(MissionTooltip_C_InitFromObject) == 0x5F0052, "Wrong size on MissionTooltip_C_InitFromObject");
+static_assert(alignof(MissionTooltip_C_InitFromObject) == 0x000008, "Wrong alignment on MissionTooltip_C_InitFromObject");
+static_assert(sizeof(MissionTooltip_C_InitFromObject) == 0x000008, "Wrong size on MissionTooltip_C_InitFromObject");
 static_assert(offsetof(MissionTooltip_C_InitFromObject, InitObject) == 0x000000, "Member 'MissionTooltip_C_InitFromObject::InitObject' has a wrong offset!");
 
 // Function MissionTooltip.MissionTooltip_C.UpdateMissionInfo
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x07E0 (0x07E0 - 0x0000)
 struct MissionTooltip_C_UpdateMissionInfo final
 {
 public:
 	class ABP_Hex_PARENT_C*                       Mission_Details;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameDifficultyInfo                    GameDifficultyInfo;                                // 0x0008(0x11821780)(Edit)
+	struct FGameDifficultyInfo                    GameDifficultyInfo;                                // 0x0008(0x0080)(Edit)
 	int32                                         ConningBucketIndex;                                // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ConningColor;                                      // 0x008C(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ConningColor;                                      // 0x008C(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CollapseDifficulty;                                // 0x009C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMissionDetails                    TileMissionDetails;                                // 0x00A0(0x1182E980)(Edit)
+	struct FFortMissionDetails                    TileMissionDetails;                                // 0x00A0(0x0160)(Edit)
 	int32                                         ContentDifficulty;                                 // 0x0200(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalSkillPoints;                                  // 0x0204(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Blank_FText;                                       // 0x0208(0x0018)(Edit)
@@ -85,7 +85,7 @@ public:
 	EFortTheaterMapTileType                       Temp_byte_Variable3;                               // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails;     // 0x0308(0x1182E980)()
+	struct FFortMissionDetails                    CallFunc_GetTileMissionDetails_MissionDetails;     // 0x0308(0x0160)()
 	bool                                          CallFunc_GetTileMissionDetails_ReturnValue;        // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0469(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x046A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -94,16 +94,16 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x046D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x046E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_46F[0x1];                                      // 0x046F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0470(0x322CBBB8)()
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0498(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x04A8(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0470(0x0028)()
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0498(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x04A8(0x0028)()
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x04D8(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x04D8(0x0090)()
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0569(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_56A[0x2];                                      // 0x056A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color; // 0x056C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color; // 0x056C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Get_Conning_Color_From_Difficulty_Value_Success; // 0x057C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_57D[0x3];                                      // 0x057D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText; // 0x0580(0x0018)()
@@ -115,19 +115,19 @@ public:
 	ESlateVisibility                              Temp_byte_Variable5;                               // 0x05AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x05AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5AF[0x1];                                      // 0x05AF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor3;                     // 0x05B0(0x322CBBB8)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush2;                     // 0x05D8(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor3;                     // 0x05B0(0x0028)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush2;                     // 0x05D8(0x0090)()
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_669[0x7];                                      // 0x0669(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0670(0x0018)()
 	bool                                          CallFunc_TextIsEmpty_ReturnValue2;                 // 0x0688(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_689[0x7];                                      // 0x0689(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0690(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x06A8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x06A8(0x0040)(HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x06E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x06E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6EA[0x6];                                      // 0x06EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x06F0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x06F0(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0730(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_731[0x7];                                      // 0x0731(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0738(0x0010)(ZeroConstructor, ReferenceParm)
@@ -153,8 +153,8 @@ public:
 	class FText                                   K2Node_Select4_Default;                            // 0x07C0(0x0018)()
 	ESlateVisibility                              K2Node_Select5_Default;                            // 0x07D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionTooltip_C_UpdateMissionInfo) == 0x322CBBB8, "Wrong alignment on MissionTooltip_C_UpdateMissionInfo");
-static_assert(sizeof(MissionTooltip_C_UpdateMissionInfo) == 0x322CBBB8, "Wrong size on MissionTooltip_C_UpdateMissionInfo");
+static_assert(alignof(MissionTooltip_C_UpdateMissionInfo) == 0x000008, "Wrong alignment on MissionTooltip_C_UpdateMissionInfo");
+static_assert(sizeof(MissionTooltip_C_UpdateMissionInfo) == 0x0007E0, "Wrong size on MissionTooltip_C_UpdateMissionInfo");
 static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Mission_Details) == 0x000000, "Member 'MissionTooltip_C_UpdateMissionInfo::Mission_Details' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, GameDifficultyInfo) == 0x000008, "Member 'MissionTooltip_C_UpdateMissionInfo::GameDifficultyInfo' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, ConningBucketIndex) == 0x000088, "Member 'MissionTooltip_C_UpdateMissionInfo::ConningBucketIndex' has a wrong offset!");
@@ -236,7 +236,7 @@ static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_Select4_Defaul
 static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_Select5_Default) == 0x0007D8, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_Select5_Default' has a wrong offset!");
 
 // Function MissionTooltip.MissionTooltip_C.HandleMissionRewards
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct MissionTooltip_C_HandleMissionRewards final
 {
 public:
@@ -244,7 +244,7 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortMissionRewardInfo                 CallFunc_Array_Get_Item;                           // 0x0010(0x1182E980)()
+	struct FFortMissionRewardInfo                 CallFunc_Array_Get_Item;                           // 0x0010(0x00B8)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -252,8 +252,8 @@ public:
 	class UMissionRewardItemMinusTooltip_C*       CallFunc_Create_ReturnValue;                       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionTooltip_C_HandleMissionRewards) == 0x1182E980, "Wrong alignment on MissionTooltip_C_HandleMissionRewards");
-static_assert(sizeof(MissionTooltip_C_HandleMissionRewards) == 0x1182E980, "Wrong size on MissionTooltip_C_HandleMissionRewards");
+static_assert(alignof(MissionTooltip_C_HandleMissionRewards) == 0x000008, "Wrong alignment on MissionTooltip_C_HandleMissionRewards");
+static_assert(sizeof(MissionTooltip_C_HandleMissionRewards) == 0x0000E8, "Wrong size on MissionTooltip_C_HandleMissionRewards");
 static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, Temp_int_Array_Index_Variable) == 0x000000, "Member 'MissionTooltip_C_HandleMissionRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'MissionTooltip_C_HandleMissionRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -265,8 +265,8 @@ static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_Create_Re
 static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000E0, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function MissionTooltip.MissionTooltip_C.HandleGameplayModifiers
-// 0x56005F (0x56005F - 0x0000)
-struct alignas(0x56005F) MissionTooltip_C_HandleGameplayModifiers final
+// 0x0068 (0x0068 - 0x0000)
+struct MissionTooltip_C_HandleGameplayModifiers final
 {
 public:
 	TArray<class UFortGameplayModifierItemDefinition*> GameplayModifiers;                                 // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
@@ -292,8 +292,8 @@ public:
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionTooltip_C_HandleGameplayModifiers) == 0x56005F, "Wrong alignment on MissionTooltip_C_HandleGameplayModifiers");
-static_assert(sizeof(MissionTooltip_C_HandleGameplayModifiers) == 0x56005F, "Wrong size on MissionTooltip_C_HandleGameplayModifiers");
+static_assert(alignof(MissionTooltip_C_HandleGameplayModifiers) == 0x000008, "Wrong alignment on MissionTooltip_C_HandleGameplayModifiers");
+static_assert(sizeof(MissionTooltip_C_HandleGameplayModifiers) == 0x000068, "Wrong size on MissionTooltip_C_HandleGameplayModifiers");
 static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, GameplayModifiers) == 0x000000, "Member 'MissionTooltip_C_HandleGameplayModifiers::GameplayModifiers' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, Temp_byte_Variable) == 0x000010, "Member 'MissionTooltip_C_HandleGameplayModifiers::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");

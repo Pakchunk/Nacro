@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function PopupCenterMessageModalPanel.PopupCenterMessageModalPanel_C.ExecuteUbergraph_PopupCenterMessageModalPanel
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel final
 {
 public:
@@ -27,11 +27,11 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_UpdateMatchTimerText_StopTimer;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel) == 0x11821D80, "Wrong alignment on PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel");
-static_assert(sizeof(PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel) == 0x11821D80, "Wrong size on PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel");
+static_assert(alignof(PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel) == 0x000008, "Wrong alignment on PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel");
+static_assert(sizeof(PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel) == 0x000030, "Wrong size on PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel");
 static_assert(offsetof(PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel, EntryPoint) == 0x000000, "Member 'PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel, CallFunc_UpdateMatchTimerText_StopTimer) == 0x000018, "Member 'PopupCenterMessageModalPanel_C_ExecuteUbergraph_PopupCenterMessageModalPanel::CallFunc_UpdateMatchTimerText_StopTimer' has a wrong offset!");
@@ -59,7 +59,7 @@ static_assert(offsetof(PopupCenterMessageModalPanel_C_UpdateState, CallFunc_Upda
 static_assert(offsetof(PopupCenterMessageModalPanel_C_UpdateState, CallFunc_Not_PreBool_ReturnValue) == 0x000022, "Member 'PopupCenterMessageModalPanel_C_UpdateState::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function PopupCenterMessageModalPanel.PopupCenterMessageModalPanel_C.UpdateMatchTimerText
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct PopupCenterMessageModalPanel_C_UpdateMatchTimerText final
 {
 public:
@@ -68,7 +68,7 @@ public:
 	int32                                         CurrentCount;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
 	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
@@ -77,8 +77,8 @@ public:
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetStartMatchDelayTimer_ReturnValue;      // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PopupCenterMessageModalPanel_C_UpdateMatchTimerText) == 0x11821D80, "Wrong alignment on PopupCenterMessageModalPanel_C_UpdateMatchTimerText");
-static_assert(sizeof(PopupCenterMessageModalPanel_C_UpdateMatchTimerText) == 0x11821D80, "Wrong size on PopupCenterMessageModalPanel_C_UpdateMatchTimerText");
+static_assert(alignof(PopupCenterMessageModalPanel_C_UpdateMatchTimerText) == 0x000008, "Wrong alignment on PopupCenterMessageModalPanel_C_UpdateMatchTimerText");
+static_assert(sizeof(PopupCenterMessageModalPanel_C_UpdateMatchTimerText) == 0x000090, "Wrong size on PopupCenterMessageModalPanel_C_UpdateMatchTimerText");
 static_assert(offsetof(PopupCenterMessageModalPanel_C_UpdateMatchTimerText, StopTimer) == 0x000000, "Member 'PopupCenterMessageModalPanel_C_UpdateMatchTimerText::StopTimer' has a wrong offset!");
 static_assert(offsetof(PopupCenterMessageModalPanel_C_UpdateMatchTimerText, CurrentCount) == 0x000004, "Member 'PopupCenterMessageModalPanel_C_UpdateMatchTimerText::CurrentCount' has a wrong offset!");
 static_assert(offsetof(PopupCenterMessageModalPanel_C_UpdateMatchTimerText, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000008, "Member 'PopupCenterMessageModalPanel_C_UpdateMatchTimerText::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");

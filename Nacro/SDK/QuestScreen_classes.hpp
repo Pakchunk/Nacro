@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestScreen.QuestScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D0 (0x04B0 - 0x03E0)
 class UQuestScreen_C final : public UFortQuestScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UJournalQuestDetails_C*                 JournalQuestDetails;                               // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UJournalQuestRewardDetails_C*           JournalQuestRewardDetails;                         // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             QuestDetailsScrollbox;                             // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,7 +46,7 @@ public:
 	class UJournalQuestDetails_C*                 QuestDetailsWidgetReference;                       // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UJournalQuestRewardDetails_C*           RewardDetailsWidgetReference;                      // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestItem*                         InitialQuestToSelect;                              // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           UpdatePendingSeenItemTimerHandle;                  // 0x0490(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           UpdatePendingSeenItemTimerHandle;                  // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	TArray<class UQuestTreeEntry_C*>              QuestButtons;                                      // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                          bDisableClaimRewardButton;                         // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -101,8 +101,8 @@ public:
 		return GetDefaultObjImpl<UQuestScreen_C>();
 	}
 };
-static_assert(alignof(UQuestScreen_C) == 0x322CBBB8, "Wrong alignment on UQuestScreen_C");
-static_assert(sizeof(UQuestScreen_C) == 0x322CBBB8, "Wrong size on UQuestScreen_C");
+static_assert(alignof(UQuestScreen_C) == 0x000008, "Wrong alignment on UQuestScreen_C");
+static_assert(sizeof(UQuestScreen_C) == 0x0004B0, "Wrong size on UQuestScreen_C");
 static_assert(offsetof(UQuestScreen_C, UberGraphFrame) == 0x0003E0, "Member 'UQuestScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, JournalQuestDetails) == 0x0003E8, "Member 'UQuestScreen_C::JournalQuestDetails' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, JournalQuestRewardDetails) == 0x0003F0, "Member 'UQuestScreen_C::JournalQuestRewardDetails' has a wrong offset!");

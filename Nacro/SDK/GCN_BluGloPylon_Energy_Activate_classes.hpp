@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCN_BluGloPylon_Energy_Activate.GCN_BluGloPylon_Energy_Activate_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0008 (0x0470 - 0x0468)
 class AGCN_BluGloPylon_Energy_Activate_C final : public AFortGameplayCueNotify_Looping
 {
 public:
@@ -38,8 +38,8 @@ public:
 		return GetDefaultObjImpl<AGCN_BluGloPylon_Energy_Activate_C>();
 	}
 };
-static_assert(alignof(AGCN_BluGloPylon_Energy_Activate_C) == 0x11821D80, "Wrong alignment on AGCN_BluGloPylon_Energy_Activate_C");
-static_assert(sizeof(AGCN_BluGloPylon_Energy_Activate_C) == 0x11821D80, "Wrong size on AGCN_BluGloPylon_Energy_Activate_C");
+static_assert(alignof(AGCN_BluGloPylon_Energy_Activate_C) == 0x000008, "Wrong alignment on AGCN_BluGloPylon_Energy_Activate_C");
+static_assert(sizeof(AGCN_BluGloPylon_Energy_Activate_C) == 0x000470, "Wrong size on AGCN_BluGloPylon_Energy_Activate_C");
 static_assert(offsetof(AGCN_BluGloPylon_Energy_Activate_C, IconTexture) == 0x000468, "Member 'AGCN_BluGloPylon_Energy_Activate_C::IconTexture' has a wrong offset!");
 
 }

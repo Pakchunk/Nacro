@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function AthenaNews.AthenaNews_C.ExecuteUbergraph_AthenaNews
-// 0x00B0 (0x00B0 - 0x0000)
-struct alignas(0x58) AthenaNews_C_ExecuteUbergraph_AthenaNews final
+// 0x0070 (0x0070 - 0x0000)
+struct AthenaNews_C_ExecuteUbergraph_AthenaNews final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,8 +29,8 @@ public:
 	class FText                                   CallFunc_GetText_Body;                             // 0x0050(0x0018)()
 	bool                                          CallFunc_GetText_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x000058, "Wrong alignment on AthenaNews_C_ExecuteUbergraph_AthenaNews");
-static_assert(sizeof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x0000B0, "Wrong size on AthenaNews_C_ExecuteUbergraph_AthenaNews");
+static_assert(alignof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x000008, "Wrong alignment on AthenaNews_C_ExecuteUbergraph_AthenaNews");
+static_assert(sizeof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x000070, "Wrong size on AthenaNews_C_ExecuteUbergraph_AthenaNews");
 static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, EntryPoint) == 0x000000, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetText_Title) == 0x000008, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetText_Title' has a wrong offset!");
 static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetText_PlatformBody) == 0x000020, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetText_PlatformBody' has a wrong offset!");
@@ -39,8 +39,8 @@ static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetTex
 static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetText_ReturnValue) == 0x000068, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetText_ReturnValue' has a wrong offset!");
 
 // Function AthenaNews.AthenaNews_C.Get_PlatformNews_Visibility
-// 0x0115 (0x0115 - 0x0000)
-struct alignas(0x115) AthenaNews_C_Get_PlatformNews_Visibility final
+// 0x0028 (0x0028 - 0x0000)
+struct AthenaNews_C_Get_PlatformNews_Visibility final
 {
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
@@ -52,8 +52,8 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaNews_C_Get_PlatformNews_Visibility) == 0x000115, "Wrong alignment on AthenaNews_C_Get_PlatformNews_Visibility");
-static_assert(sizeof(AthenaNews_C_Get_PlatformNews_Visibility) == 0x000115, "Wrong size on AthenaNews_C_Get_PlatformNews_Visibility");
+static_assert(alignof(AthenaNews_C_Get_PlatformNews_Visibility) == 0x000008, "Wrong alignment on AthenaNews_C_Get_PlatformNews_Visibility");
+static_assert(sizeof(AthenaNews_C_Get_PlatformNews_Visibility) == 0x000028, "Wrong size on AthenaNews_C_Get_PlatformNews_Visibility");
 static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, ReturnValue) == 0x000000, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, Temp_bool_Variable) == 0x000001, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, Temp_byte_Variable) == 0x000002, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::Temp_byte_Variable' has a wrong offset!");

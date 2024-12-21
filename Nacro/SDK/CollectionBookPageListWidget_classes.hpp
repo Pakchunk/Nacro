@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookPageListWidget.CollectionBookPageListWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0098 (0x0968 - 0x08D0)
 class UCollectionBookPageListWidget_C final : public UFortCollectionBookPageListWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08D0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08D0(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          AvailableSlotsBorder;                              // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  ExpansionStateSwitcher;                            // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -40,8 +40,8 @@ public:
 	class UClass*                                 PageButtonStyle;                                   // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   AvailableSlotBorderColor1ParamName;                // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   AvailableSlotBorderColor2ParamName;                // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           AvailableSlotBorderSelectedColor;                  // 0x0948(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           AvailableSlotBorderDeselectedColor;                // 0x0958(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           AvailableSlotBorderSelectedColor;                  // 0x0948(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           AvailableSlotBorderDeselectedColor;                // 0x0958(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_CollectionBookPageListWidget(int32 EntryPoint);
@@ -64,8 +64,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookPageListWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookPageListWidget_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookPageListWidget_C");
-static_assert(sizeof(UCollectionBookPageListWidget_C) == 0x322CBBB8, "Wrong size on UCollectionBookPageListWidget_C");
+static_assert(alignof(UCollectionBookPageListWidget_C) == 0x000008, "Wrong alignment on UCollectionBookPageListWidget_C");
+static_assert(sizeof(UCollectionBookPageListWidget_C) == 0x000968, "Wrong size on UCollectionBookPageListWidget_C");
 static_assert(offsetof(UCollectionBookPageListWidget_C, UberGraphFrame) == 0x0008D0, "Member 'UCollectionBookPageListWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookPageListWidget_C, AvailableSlotsBorder) == 0x0008D8, "Member 'UCollectionBookPageListWidget_C::AvailableSlotsBorder' has a wrong offset!");
 static_assert(offsetof(UCollectionBookPageListWidget_C, CommonWidgetSwitcher_0) == 0x0008E0, "Member 'UCollectionBookPageListWidget_C::CommonWidgetSwitcher_0' has a wrong offset!");

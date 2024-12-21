@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ProgressModalWidget.ProgressModalWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00E8 (0x04F0 - 0x0408)
 class UProgressModalWidget_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class ULightbox_C*                            Lightbox;                                          // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UProgressWidget_C*                      ProgressWidget;                                    // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   Title;                                             // 0x0428(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                   Description;                                       // 0x0440(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                            Icon;                                              // 0x0458(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            Icon;                                              // 0x0458(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          bIntroOutrEnabled;                                 // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bAutoInitialize;                                   // 0x04E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bFocusSelf;                                        // 0x04EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -59,8 +59,8 @@ public:
 		return GetDefaultObjImpl<UProgressModalWidget_C>();
 	}
 };
-static_assert(alignof(UProgressModalWidget_C) == 0x322CBBB8, "Wrong alignment on UProgressModalWidget_C");
-static_assert(sizeof(UProgressModalWidget_C) == 0x322CBBB8, "Wrong size on UProgressModalWidget_C");
+static_assert(alignof(UProgressModalWidget_C) == 0x000008, "Wrong alignment on UProgressModalWidget_C");
+static_assert(sizeof(UProgressModalWidget_C) == 0x0004F0, "Wrong size on UProgressModalWidget_C");
 static_assert(offsetof(UProgressModalWidget_C, UberGraphFrame) == 0x000410, "Member 'UProgressModalWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UProgressModalWidget_C, Lightbox) == 0x000418, "Member 'UProgressModalWidget_C::Lightbox' has a wrong offset!");
 static_assert(offsetof(UProgressModalWidget_C, ProgressWidget) == 0x000420, "Member 'UProgressModalWidget_C::ProgressWidget' has a wrong offset!");

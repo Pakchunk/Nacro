@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaInventoryPanel.AthenaInventoryPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A8 (0x04F8 - 0x0450)
 class UAthenaInventoryPanel_C final : public UAthenaInventoryPanelBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       FadeMessage;                                       // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaInventoryDropSlot_C*             AthenaInventoryDropSlot;                           // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           BackpackHeader;                                    // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -90,8 +90,8 @@ public:
 		return GetDefaultObjImpl<UAthenaInventoryPanel_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryPanel_C) == 0x322CBBB8, "Wrong alignment on UAthenaInventoryPanel_C");
-static_assert(sizeof(UAthenaInventoryPanel_C) == 0x322CBBB8, "Wrong size on UAthenaInventoryPanel_C");
+static_assert(alignof(UAthenaInventoryPanel_C) == 0x000008, "Wrong alignment on UAthenaInventoryPanel_C");
+static_assert(sizeof(UAthenaInventoryPanel_C) == 0x0004F8, "Wrong size on UAthenaInventoryPanel_C");
 static_assert(offsetof(UAthenaInventoryPanel_C, UberGraphFrame) == 0x000450, "Member 'UAthenaInventoryPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryPanel_C, FadeMessage) == 0x000458, "Member 'UAthenaInventoryPanel_C::FadeMessage' has a wrong offset!");
 static_assert(offsetof(UAthenaInventoryPanel_C, AthenaInventoryDropSlot) == 0x000460, "Member 'UAthenaInventoryPanel_C::AthenaInventoryDropSlot' has a wrong offset!");

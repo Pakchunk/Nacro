@@ -21,18 +21,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GAB_GenericDeath.GAB_GenericDeath_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
-#pragma pack(push, 0x1)
-class alignas(0x1182EB00) UGAB_GenericDeath_C : public UFortGameplayAbility
+// 0x0190 (0x0BD0 - 0x0A40)
+class UGAB_GenericDeath_C : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
 	class UAnimMontage*                           DeathMontage;                                      // 0x0A48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   DeathMontageSectionName;                           // 0x0A50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DeathHitDirection;                                 // 0x0A58(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             DeathHitResult;                                    // 0x0A68(0x11827600)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0AF0(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  SpawnDroneTags;                                    // 0x0B10(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FVector                                DeathHitDirection;                                 // 0x0A58(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A64[0x4];                                      // 0x0A64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             DeathHitResult;                                    // 0x0A68(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0AF0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  SpawnDroneTags;                                    // 0x0B10(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UAnimMontage*                           Front;                                             // 0x0B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           Left;                                              // 0x0B38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           Right;                                             // 0x0B40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -80,9 +80,8 @@ public:
 		return GetDefaultObjImpl<UGAB_GenericDeath_C>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UGAB_GenericDeath_C) == 0x1182EB00, "Wrong alignment on UGAB_GenericDeath_C");
-static_assert(sizeof(UGAB_GenericDeath_C) == 0x1182EB00, "Wrong size on UGAB_GenericDeath_C");
+static_assert(alignof(UGAB_GenericDeath_C) == 0x000008, "Wrong alignment on UGAB_GenericDeath_C");
+static_assert(sizeof(UGAB_GenericDeath_C) == 0x000BD0, "Wrong size on UGAB_GenericDeath_C");
 static_assert(offsetof(UGAB_GenericDeath_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_GenericDeath_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UGAB_GenericDeath_C, DeathMontage) == 0x000A48, "Member 'UGAB_GenericDeath_C::DeathMontage' has a wrong offset!");
 static_assert(offsetof(UGAB_GenericDeath_C, DeathMontageSectionName) == 0x000A50, "Member 'UGAB_GenericDeath_C::DeathMontageSectionName' has a wrong offset!");

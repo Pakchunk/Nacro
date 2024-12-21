@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "RewardListEntryType_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function RewardsListEntry.RewardsListEntry_C.ExecuteUbergraph_RewardsListEntry
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0438 (0x0438 - 0x0000)
 struct RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry final
 {
 public:
@@ -39,18 +39,18 @@ public:
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0020(0x322CBBB8)()
-	struct FLinearColor                           CallFunc_GetRarityColor_ReturnValue;               // 0x00B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00C0(0x322CBBB8)()
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue2; // 0x00E8(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0020(0x0090)()
+	struct FLinearColor                           CallFunc_GetRarityColor_ReturnValue;               // 0x00B0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00C0(0x0028)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue2; // 0x00E8(0x0090)()
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0178(0x0018)()
 	ESlateVisibility                              Temp_byte_Variable5;                               // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0198(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0198(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01D8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01E8(0x0018)()
-	struct FLinearColor                           CallFunc_GetRarityColor_ReturnValue2;              // 0x0200(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0210(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_GetRarityColor_ReturnValue2;              // 0x0200(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0210(0x0028)()
 	int32                                         K2Node_Select_Default;                             // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue2;              // 0x0240(0x0018)()
@@ -65,22 +65,22 @@ public:
 	class FText                                   CallFunc_GetPrimaryCategory_ItemCategoryText;      // 0x0298(0x0018)()
 	bool                                          CallFunc_GetPrimaryCategory_ReturnValue;           // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue3; // 0x02B8(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue3; // 0x02B8(0x0090)()
 	ESlateVisibility                              Temp_byte_Variable6;                               // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_349[0x7];                                      // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetPrimaryCategory_ItemCategoryText2;     // 0x0350(0x0018)()
 	bool                                          CallFunc_GetPrimaryCategory_ReturnValue2;          // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_369[0x7];                                      // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0370(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0370(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue4;              // 0x03B0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x03C8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x03C8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0408(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0418(0x0018)()
 	ERewardListEntryType                          Temp_byte_Variable7;                               // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0431(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry) == 0x322CBBB8, "Wrong alignment on RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry");
-static_assert(sizeof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry) == 0x322CBBB8, "Wrong size on RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry");
+static_assert(alignof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry) == 0x000008, "Wrong alignment on RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry");
+static_assert(sizeof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry) == 0x000438, "Wrong size on RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry");
 static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, EntryPoint) == 0x000000, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::EntryPoint' has a wrong offset!");
 static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable) == 0x000004, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable2) == 0x000005, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable2' has a wrong offset!");

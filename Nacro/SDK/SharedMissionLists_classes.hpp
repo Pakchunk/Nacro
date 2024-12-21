@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SharedMissionLists.SharedMissionLists_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0158 - 0x0158)
 class USharedMissionLists_C final : public UFortSharedMissionLists
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USharedMissionLists_C>();
 	}
 };
-static_assert(alignof(USharedMissionLists_C) == 0x11821D80, "Wrong alignment on USharedMissionLists_C");
-static_assert(sizeof(USharedMissionLists_C) == 0x11821D80, "Wrong size on USharedMissionLists_C");
+static_assert(alignof(USharedMissionLists_C) == 0x000008, "Wrong alignment on USharedMissionLists_C");
+static_assert(sizeof(USharedMissionLists_C) == 0x000158, "Wrong size on USharedMissionLists_C");
 
 }
 

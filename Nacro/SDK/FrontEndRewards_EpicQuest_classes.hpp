@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0288 - 0x0260)
 class UFrontEndRewards_EpicQuest_C final : public UFortRewardNewQuestWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UQuestInfo_Widget_C*                    QuestInfo_Widget;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortQuestItem*                         Quest;                                             // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ReplayAction;                                      // 0x0278(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ReplayAction;                                      // 0x0278(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_FrontEndRewards_EpicQuest(int32 EntryPoint);
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UFrontEndRewards_EpicQuest_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_EpicQuest_C) == 0x322CBBB8, "Wrong alignment on UFrontEndRewards_EpicQuest_C");
-static_assert(sizeof(UFrontEndRewards_EpicQuest_C) == 0x322CBBB8, "Wrong size on UFrontEndRewards_EpicQuest_C");
+static_assert(alignof(UFrontEndRewards_EpicQuest_C) == 0x000008, "Wrong alignment on UFrontEndRewards_EpicQuest_C");
+static_assert(sizeof(UFrontEndRewards_EpicQuest_C) == 0x000288, "Wrong size on UFrontEndRewards_EpicQuest_C");
 static_assert(offsetof(UFrontEndRewards_EpicQuest_C, UberGraphFrame) == 0x000260, "Member 'UFrontEndRewards_EpicQuest_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_EpicQuest_C, QuestInfo_Widget) == 0x000268, "Member 'UFrontEndRewards_EpicQuest_C::QuestInfo_Widget' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_EpicQuest_C, Quest) == 0x000270, "Member 'UFrontEndRewards_EpicQuest_C::Quest' has a wrong offset!");

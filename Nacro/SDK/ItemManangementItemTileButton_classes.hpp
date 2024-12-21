@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemManangementItemTileButton.ItemManangementItemTileButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0098 (0x09A0 - 0x0908)
 class UItemManangementItemTileButton_C final : public UFortItemManagementItemTileButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0908(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0908(0x0008)(Transient, DuplicateTransient)
 	class UBorder*                                CurrentlySlottedIndicatorLayer;                    // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                EquipSlotBorder;                                   // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 EquipSlotOverlay;                                  // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -77,8 +77,8 @@ public:
 		return GetDefaultObjImpl<UItemManangementItemTileButton_C>();
 	}
 };
-static_assert(alignof(UItemManangementItemTileButton_C) == 0x322CBBB8, "Wrong alignment on UItemManangementItemTileButton_C");
-static_assert(sizeof(UItemManangementItemTileButton_C) == 0x322CBBB8, "Wrong size on UItemManangementItemTileButton_C");
+static_assert(alignof(UItemManangementItemTileButton_C) == 0x000008, "Wrong alignment on UItemManangementItemTileButton_C");
+static_assert(sizeof(UItemManangementItemTileButton_C) == 0x0009A0, "Wrong size on UItemManangementItemTileButton_C");
 static_assert(offsetof(UItemManangementItemTileButton_C, UberGraphFrame) == 0x000908, "Member 'UItemManangementItemTileButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManangementItemTileButton_C, CurrentlySlottedIndicatorLayer) == 0x000910, "Member 'UItemManangementItemTileButton_C::CurrentlySlottedIndicatorLayer' has a wrong offset!");
 static_assert(offsetof(UItemManangementItemTileButton_C, EquipSlotBorder) == 0x000918, "Member 'UItemManangementItemTileButton_C::EquipSlotBorder' has a wrong offset!");

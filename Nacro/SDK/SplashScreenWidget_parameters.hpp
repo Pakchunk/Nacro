@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function SplashScreenWidget.SplashScreenWidget_C.ExecuteUbergraph_SplashScreenWidget
-// 0x730073 (0x730073 - 0x0000)
-struct alignas(0x730073) SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget final
+// 0x0068 (0x0068 - 0x0000)
+struct SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 	class UWidget*                                K2Node_Select3_Default;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget) == 0x730073, "Wrong alignment on SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget");
-static_assert(sizeof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget) == 0x730073, "Wrong size on SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget");
+static_assert(alignof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget) == 0x000008, "Wrong alignment on SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget");
+static_assert(sizeof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget) == 0x000068, "Wrong size on SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, EntryPoint) == 0x000000, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, Temp_bool_Variable) == 0x000004, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, Temp_bool_Variable2) == 0x000005, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::Temp_bool_Variable2' has a wrong offset!");
@@ -63,14 +63,14 @@ static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget,
 static_assert(offsetof(SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000060, "Member 'SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function SplashScreenWidget.SplashScreenWidget_C.OnGameBootableInviteReceived
-// 0x730073 (0x730073 - 0x0000)
-struct alignas(0x730073) SplashScreenWidget_C_OnGameBootableInviteReceived final
+// 0x0004 (0x0004 - 0x0000)
+struct SplashScreenWidget_C_OnGameBootableInviteReceived final
 {
 public:
 	int32                                         UserIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SplashScreenWidget_C_OnGameBootableInviteReceived) == 0x730073, "Wrong alignment on SplashScreenWidget_C_OnGameBootableInviteReceived");
-static_assert(sizeof(SplashScreenWidget_C_OnGameBootableInviteReceived) == 0x730073, "Wrong size on SplashScreenWidget_C_OnGameBootableInviteReceived");
+static_assert(alignof(SplashScreenWidget_C_OnGameBootableInviteReceived) == 0x000004, "Wrong alignment on SplashScreenWidget_C_OnGameBootableInviteReceived");
+static_assert(sizeof(SplashScreenWidget_C_OnGameBootableInviteReceived) == 0x000004, "Wrong size on SplashScreenWidget_C_OnGameBootableInviteReceived");
 static_assert(offsetof(SplashScreenWidget_C_OnGameBootableInviteReceived, UserIndex) == 0x000000, "Member 'SplashScreenWidget_C_OnGameBootableInviteReceived::UserIndex' has a wrong offset!");
 
 // Function SplashScreenWidget.SplashScreenWidget_C.OnInputMethodChanged
@@ -107,19 +107,20 @@ static_assert(sizeof(SplashScreenWidget_C_RelinquishInputFocus) == 0x000008, "Wr
 static_assert(offsetof(SplashScreenWidget_C_RelinquishInputFocus, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'SplashScreenWidget_C_RelinquishInputFocus::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function SplashScreenWidget.SplashScreenWidget_C.OnMouseButtonDown
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0228 (0x0228 - 0x0000)
 struct SplashScreenWidget_C_OnMouseButtonDown final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x11827900)(Parm, OutParm, ReturnParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00B8)(Parm, OutParm, ReturnParm)
 	int32                                         CallFunc_PointerEvent_GetUserIndex_ReturnValue;    // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x11827900)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x00B8)()
 };
-static_assert(alignof(SplashScreenWidget_C_OnMouseButtonDown) == 0x11829280, "Wrong alignment on SplashScreenWidget_C_OnMouseButtonDown");
-static_assert(sizeof(SplashScreenWidget_C_OnMouseButtonDown) == 0x11829280, "Wrong size on SplashScreenWidget_C_OnMouseButtonDown");
+static_assert(alignof(SplashScreenWidget_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on SplashScreenWidget_C_OnMouseButtonDown");
+static_assert(sizeof(SplashScreenWidget_C_OnMouseButtonDown) == 0x000228, "Wrong size on SplashScreenWidget_C_OnMouseButtonDown");
 static_assert(offsetof(SplashScreenWidget_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'SplashScreenWidget_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'SplashScreenWidget_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'SplashScreenWidget_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
@@ -127,17 +128,18 @@ static_assert(offsetof(SplashScreenWidget_C_OnMouseButtonDown, CallFunc_PointerE
 static_assert(offsetof(SplashScreenWidget_C_OnMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000170, "Member 'SplashScreenWidget_C_OnMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function SplashScreenWidget.SplashScreenWidget_C.OnFocusReceived
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct SplashScreenWidget_C_OnFocusReceived final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x11827900)(Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x0008)(Parm, NoDestructor)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(SplashScreenWidget_C_OnFocusReceived) == 0x11827900, "Wrong alignment on SplashScreenWidget_C_OnFocusReceived");
-static_assert(sizeof(SplashScreenWidget_C_OnFocusReceived) == 0x11827900, "Wrong size on SplashScreenWidget_C_OnFocusReceived");
+static_assert(alignof(SplashScreenWidget_C_OnFocusReceived) == 0x000008, "Wrong alignment on SplashScreenWidget_C_OnFocusReceived");
+static_assert(sizeof(SplashScreenWidget_C_OnFocusReceived) == 0x0001B0, "Wrong size on SplashScreenWidget_C_OnFocusReceived");
 static_assert(offsetof(SplashScreenWidget_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'SplashScreenWidget_C_OnFocusReceived::MyGeometry' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_OnFocusReceived, InFocusEvent) == 0x000034, "Member 'SplashScreenWidget_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
 static_assert(offsetof(SplashScreenWidget_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'SplashScreenWidget_C_OnFocusReceived::ReturnValue' has a wrong offset!");

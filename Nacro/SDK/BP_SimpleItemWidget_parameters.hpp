@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function BP_SimpleItemWidget.BP_SimpleItemWidget_C.ExecuteUbergraph_BP_SimpleItemWidget
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget final
 {
 public:
@@ -29,12 +29,12 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0018)()
 };
-static_assert(alignof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget) == 0x11821D80, "Wrong alignment on BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget");
-static_assert(sizeof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget) == 0x11821D80, "Wrong size on BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget");
+static_assert(alignof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget) == 0x000008, "Wrong alignment on BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget");
+static_assert(sizeof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget) == 0x000078, "Wrong size on BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget");
 static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, EntryPoint) == 0x000000, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, Temp_bool_Variable) == 0x000004, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, Temp_byte_Variable) == 0x000005, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::Temp_byte_Variable' has a wrong offset!");

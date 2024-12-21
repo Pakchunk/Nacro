@@ -26,8 +26,8 @@ static_assert(sizeof(LandscapeProxy_ChangeLODDistanceFactor) == 0x000004, "Wrong
 static_assert(offsetof(LandscapeProxy_ChangeLODDistanceFactor, InLODDistanceFactor) == 0x000000, "Member 'LandscapeProxy_ChangeLODDistanceFactor::InLODDistanceFactor' has a wrong offset!");
 
 // Function Landscape.LandscapeProxy.EditorApplySpline
-// 0x2D633D80 (0x2D633D80 - 0x0000)
-struct alignas(0x2D633D80) LandscapeProxy_EditorApplySpline final
+// 0x0030 (0x0030 - 0x0000)
+struct LandscapeProxy_EditorApplySpline final
 {
 public:
 	class USplineComponent*                       InSplineComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -43,8 +43,8 @@ public:
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULandscapeLayerInfoObject*              PaintLayer;                                        // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LandscapeProxy_EditorApplySpline) == 0x2D633D80, "Wrong alignment on LandscapeProxy_EditorApplySpline");
-static_assert(sizeof(LandscapeProxy_EditorApplySpline) == 0x2D633D80, "Wrong size on LandscapeProxy_EditorApplySpline");
+static_assert(alignof(LandscapeProxy_EditorApplySpline) == 0x000008, "Wrong alignment on LandscapeProxy_EditorApplySpline");
+static_assert(sizeof(LandscapeProxy_EditorApplySpline) == 0x000030, "Wrong size on LandscapeProxy_EditorApplySpline");
 static_assert(offsetof(LandscapeProxy_EditorApplySpline, InSplineComponent) == 0x000000, "Member 'LandscapeProxy_EditorApplySpline::InSplineComponent' has a wrong offset!");
 static_assert(offsetof(LandscapeProxy_EditorApplySpline, StartWidth) == 0x000008, "Member 'LandscapeProxy_EditorApplySpline::StartWidth' has a wrong offset!");
 static_assert(offsetof(LandscapeProxy_EditorApplySpline, EndWidth) == 0x00000C, "Member 'LandscapeProxy_EditorApplySpline::EndWidth' has a wrong offset!");

@@ -13,10 +13,10 @@
 #include "UMG_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "ItemTooltip_DisplayMode_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ItemTooltip_DisplayMode_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -73,7 +73,7 @@ static_assert(offsetof(ItemTooltipContent_C_Set_Item_Data, OverrideQuantity_0) =
 static_assert(offsetof(ItemTooltipContent_C_Set_Item_Data, CallFunc_Update_Success) == 0x000018, "Member 'ItemTooltipContent_C_Set_Item_Data::CallFunc_Update_Success' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Weapon DPS Stat
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct ItemTooltipContent_C_Build_Weapon_DPS_Stat final
 {
 public:
@@ -86,15 +86,15 @@ public:
 	class UVerticalBox*                           K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWeaponTooltipDPSWidget_C*              CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0030(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0030(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable2;                               // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Weapon_DPS_Stat) == 0x11821C00, "Wrong alignment on ItemTooltipContent_C_Build_Weapon_DPS_Stat");
-static_assert(sizeof(ItemTooltipContent_C_Build_Weapon_DPS_Stat) == 0x11821C00, "Wrong size on ItemTooltipContent_C_Build_Weapon_DPS_Stat");
+static_assert(alignof(ItemTooltipContent_C_Build_Weapon_DPS_Stat) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Weapon_DPS_Stat");
+static_assert(sizeof(ItemTooltipContent_C_Build_Weapon_DPS_Stat) == 0x0000B8, "Wrong size on ItemTooltipContent_C_Build_Weapon_DPS_Stat");
 static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, Temp_byte_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, Temp_byte_Variable2) == 0x000001, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, Temp_bool_Variable) == 0x000002, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::Temp_bool_Variable' has a wrong offset!");
@@ -147,7 +147,7 @@ static_assert(offsetof(ItemTooltipContent_C_Build_Alteration_Info, CallFunc_GetL
 static_assert(offsetof(ItemTooltipContent_C_Build_Alteration_Info, K2Node_Select_Default) == 0x000008, "Member 'ItemTooltipContent_C_Build_Alteration_Info::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Durability
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct ItemTooltipContent_C_Build_Durability final
 {
 public:
@@ -158,15 +158,15 @@ public:
 	float                                         CallFunc_GetTooltipNumericValue_Value;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetTooltipNumericValue_ReturnValue;       // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0028(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0028(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBox*                           K2Node_Select_Default;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Durability) == 0x11821C00, "Wrong alignment on ItemTooltipContent_C_Build_Durability");
-static_assert(sizeof(ItemTooltipContent_C_Build_Durability) == 0x11821C00, "Wrong size on ItemTooltipContent_C_Build_Durability");
+static_assert(alignof(ItemTooltipContent_C_Build_Durability) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Durability");
+static_assert(sizeof(ItemTooltipContent_C_Build_Durability) == 0x0000B0, "Wrong size on ItemTooltipContent_C_Build_Durability");
 static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_Init_Tooltip_Context_Tooltip_Context) == 0x000008, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_Init_Tooltip_Context_Tooltip_Context' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
@@ -180,7 +180,7 @@ static_assert(offsetof(ItemTooltipContent_C_Build_Durability, K2Node_Select_Defa
 static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000A8, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Basic Stat Block
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct ItemTooltipContent_C_Build_Basic_Stat_Block final
 {
 public:
@@ -190,7 +190,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_Array_Get_Item;                           // 0x0028(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_Array_Get_Item;                           // 0x0028(0x0070)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x009D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -207,8 +207,8 @@ public:
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetUpgradeStats_ReturnValue;              // 0x00E8(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetComparisonStats_ReturnValue;           // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Basic_Stat_Block) == 0x11821C00, "Wrong alignment on ItemTooltipContent_C_Build_Basic_Stat_Block");
-static_assert(sizeof(ItemTooltipContent_C_Build_Basic_Stat_Block) == 0x11821C00, "Wrong size on ItemTooltipContent_C_Build_Basic_Stat_Block");
+static_assert(alignof(ItemTooltipContent_C_Build_Basic_Stat_Block) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Basic_Stat_Block");
+static_assert(sizeof(ItemTooltipContent_C_Build_Basic_Stat_Block) == 0x000108, "Wrong size on ItemTooltipContent_C_Build_Basic_Stat_Block");
 static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, StatArray) == 0x000000, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::StatArray' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, Temp_int_Array_Index_Variable) == 0x000010, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -230,18 +230,18 @@ static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_Get
 static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_GetComparisonStats_ReturnValue) == 0x0000F8, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_GetComparisonStats_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Display Name Text
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct ItemTooltipContent_C_Set_Display_Name_Text final
 {
 public:
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0000(0x0018)()
 	class FText                                   CallFunc_TextTrimPrecedingAndTrailing_ReturnValue; // 0x0018(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Display_Name_Text) == 0x11821D80, "Wrong alignment on ItemTooltipContent_C_Set_Display_Name_Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Display_Name_Text) == 0x11821D80, "Wrong size on ItemTooltipContent_C_Set_Display_Name_Text");
+static_assert(alignof(ItemTooltipContent_C_Set_Display_Name_Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Display_Name_Text");
+static_assert(sizeof(ItemTooltipContent_C_Set_Display_Name_Text) == 0x000098, "Wrong size on ItemTooltipContent_C_Set_Display_Name_Text");
 static_assert(offsetof(ItemTooltipContent_C_Set_Display_Name_Text, CallFunc_GetDisplayName_ReturnValue) == 0x000000, "Member 'ItemTooltipContent_C_Set_Display_Name_Text::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Display_Name_Text, CallFunc_TextTrimPrecedingAndTrailing_ReturnValue) == 0x000018, "Member 'ItemTooltipContent_C_Set_Display_Name_Text::CallFunc_TextTrimPrecedingAndTrailing_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Display_Name_Text, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'ItemTooltipContent_C_Set_Display_Name_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
@@ -271,7 +271,7 @@ static_assert(offsetof(ItemTooltipContent_C_Set_Primary_Category_Text, CallFunc_
 static_assert(offsetof(ItemTooltipContent_C_Set_Primary_Category_Text, K2Node_Select_Default) == 0x000021, "Member 'ItemTooltipContent_C_Set_Primary_Category_Text::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Secondary Category Icon & Text
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct ItemTooltipContent_C_Set_Secondary_Category_Icon___Text final
 {
 public:
@@ -284,12 +284,12 @@ public:
 	EFortBrushSize                                K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetSecondaryCategory_ItemCategoryText;    // 0x0008(0x0018)()
-	struct FSlateBrush                            CallFunc_GetSecondaryCategory_ItemCategoryBrush;   // 0x0020(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetSecondaryCategory_ItemCategoryBrush;   // 0x0020(0x0090)()
 	bool                                          CallFunc_GetSecondaryCategory_ReturnValue;         // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text) == 0x11827900, "Wrong alignment on ItemTooltipContent_C_Set_Secondary_Category_Icon___Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text) == 0x11827900, "Wrong size on ItemTooltipContent_C_Set_Secondary_Category_Icon___Text");
+static_assert(alignof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Secondary_Category_Icon___Text");
+static_assert(sizeof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text) == 0x0000B8, "Wrong size on ItemTooltipContent_C_Set_Secondary_Category_Icon___Text");
 static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_byte_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_bool_Variable) == 0x000001, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_byte_Variable2) == 0x000002, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_byte_Variable2' has a wrong offset!");
@@ -303,7 +303,7 @@ static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, 
 static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, K2Node_Select2_Default) == 0x0000B1, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Tertiary Category Icon & Text
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text final
 {
 public:
@@ -316,12 +316,12 @@ public:
 	EFortBrushSize                                K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetTertiaryCategory_ItemCategoryText;     // 0x0008(0x0018)()
-	struct FSlateBrush                            CallFunc_GetTertiaryCategory_ItemCategoryBrush;    // 0x0020(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetTertiaryCategory_ItemCategoryBrush;    // 0x0020(0x0090)()
 	bool                                          CallFunc_GetTertiaryCategory_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text) == 0x11827900, "Wrong alignment on ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text) == 0x11827900, "Wrong size on ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text");
+static_assert(alignof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text");
+static_assert(sizeof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text) == 0x0000B8, "Wrong size on ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text");
 static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_byte_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_bool_Variable) == 0x000001, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_byte_Variable2) == 0x000002, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_byte_Variable2' has a wrong offset!");
@@ -335,7 +335,7 @@ static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, C
 static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, K2Node_Select2_Default) == 0x0000B1, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Tier
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct ItemTooltipContent_C_Set_Tier final
 {
 public:
@@ -349,7 +349,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0018(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0018(0x0010)(NoDestructor)
 	EFortItemTier                                 CallFunc_GetMaxTier_ReturnValue;                   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemTier                                 CallFunc_GetTier_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -370,10 +370,10 @@ public:
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable3;                               // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6B[0x1];                                       // 0x006B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select3_Default;                            // 0x006C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select3_Default;                            // 0x006C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Tier) == 0x322CBBB8, "Wrong alignment on ItemTooltipContent_C_Set_Tier");
-static_assert(sizeof(ItemTooltipContent_C_Set_Tier) == 0x322CBBB8, "Wrong size on ItemTooltipContent_C_Set_Tier");
+static_assert(alignof(ItemTooltipContent_C_Set_Tier) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Tier");
+static_assert(sizeof(ItemTooltipContent_C_Set_Tier) == 0x000080, "Wrong size on ItemTooltipContent_C_Set_Tier");
 static_assert(offsetof(ItemTooltipContent_C_Set_Tier, MaxTier) == 0x000000, "Member 'ItemTooltipContent_C_Set_Tier::MaxTier' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CurrentTier) == 0x000004, "Member 'ItemTooltipContent_C_Set_Tier::CurrentTier' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Tier, ActiveBox) == 0x000008, "Member 'ItemTooltipContent_C_Set_Tier::ActiveBox' has a wrong offset!");
@@ -403,7 +403,7 @@ static_assert(offsetof(ItemTooltipContent_C_Set_Tier, Temp_bool_Variable3) == 0x
 static_assert(offsetof(ItemTooltipContent_C_Set_Tier, K2Node_Select3_Default) == 0x00006C, "Member 'ItemTooltipContent_C_Set_Tier::K2Node_Select3_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Level Text
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct ItemTooltipContent_C_Set_Level_Text final
 {
 public:
@@ -423,14 +423,15 @@ public:
 	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_Create_Custom_Integer_Stat_Display_Attribute; // 0x0038(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_Create_Custom_Integer_Stat_Display_Attribute; // 0x0038(0x0070)()
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTooltipMinusDisplayAttribute_C*        CallFunc_Create_ReturnValue;                       // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00C4(0x322CBBB8)(NoDestructor)
-	struct FFortDisplayAttribute                  CallFunc_Create_Custom_Integer_Stat_Display_Attribute2; // 0x00D8(0x11821C00)()
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00C4(0x0010)(NoDestructor)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFortDisplayAttribute                  CallFunc_Create_Custom_Integer_Stat_Display_Attribute2; // 0x00D8(0x0070)()
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -447,8 +448,8 @@ public:
 	class UVerticalBox*                           K2Node_Select2_Default;                            // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue2;       // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Level_Text) == 0x322CBBB8, "Wrong alignment on ItemTooltipContent_C_Set_Level_Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Level_Text) == 0x322CBBB8, "Wrong size on ItemTooltipContent_C_Set_Level_Text");
+static_assert(alignof(ItemTooltipContent_C_Set_Level_Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Level_Text");
+static_assert(sizeof(ItemTooltipContent_C_Set_Level_Text) == 0x000180, "Wrong size on ItemTooltipContent_C_Set_Level_Text");
 static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CompareMaxLevel) == 0x000000, "Member 'ItemTooltipContent_C_Set_Level_Text::CompareMaxLevel' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CompareLevel) == 0x000004, "Member 'ItemTooltipContent_C_Set_Level_Text::CompareLevel' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, HasLevel) == 0x000008, "Member 'ItemTooltipContent_C_Set_Level_Text::HasLevel' has a wrong offset!");
@@ -507,34 +508,34 @@ static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, CallFunc_BooleanAN
 static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, K2Node_Select_Default) == 0x000007, "Member 'ItemTooltipContent_C_Set_Display_Mode::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Rarity Data
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct ItemTooltipContent_C_Set_Rarity_Data final
 {
 public:
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0008(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0008(0x0080)()
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Rarity_Data) == 0x11821780, "Wrong alignment on ItemTooltipContent_C_Set_Rarity_Data");
-static_assert(sizeof(ItemTooltipContent_C_Set_Rarity_Data) == 0x11821780, "Wrong size on ItemTooltipContent_C_Set_Rarity_Data");
+static_assert(alignof(ItemTooltipContent_C_Set_Rarity_Data) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Rarity_Data");
+static_assert(sizeof(ItemTooltipContent_C_Set_Rarity_Data) == 0x000088, "Wrong size on ItemTooltipContent_C_Set_Rarity_Data");
 static_assert(offsetof(ItemTooltipContent_C_Set_Rarity_Data, CallFunc_GetRarity_ReturnValue) == 0x000000, "Member 'ItemTooltipContent_C_Set_Rarity_Data::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Set_Rarity_Data, CallFunc_BPGetRarityData_ReturnValue) == 0x000008, "Member 'ItemTooltipContent_C_Set_Rarity_Data::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Get Query Tag
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct ItemTooltipContent_C_Get_Query_Tag final
 {
 public:
-	struct FGameplayTag                           Tag;                                               // 0x0000(0x11821D80)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Tag;                                               // 0x0000(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 	EItemTooltip_DisplayMode                      Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           Temp_struct_Variable;                              // 0x0010(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Temp_struct_Variable2;                             // 0x0018(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Temp_struct_Variable3;                             // 0x0020(0x11821D80)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           K2Node_Select_Default;                             // 0x0028(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Temp_struct_Variable;                              // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Temp_struct_Variable2;                             // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Temp_struct_Variable3;                             // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           K2Node_Select_Default;                             // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Get_Query_Tag) == 0x11821D80, "Wrong alignment on ItemTooltipContent_C_Get_Query_Tag");
-static_assert(sizeof(ItemTooltipContent_C_Get_Query_Tag) == 0x11821D80, "Wrong size on ItemTooltipContent_C_Get_Query_Tag");
+static_assert(alignof(ItemTooltipContent_C_Get_Query_Tag) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Get_Query_Tag");
+static_assert(sizeof(ItemTooltipContent_C_Get_Query_Tag) == 0x000030, "Wrong size on ItemTooltipContent_C_Get_Query_Tag");
 static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Tag) == 0x000000, "Member 'ItemTooltipContent_C_Get_Query_Tag::Tag' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Temp_byte_Variable) == 0x000008, "Member 'ItemTooltipContent_C_Get_Query_Tag::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Temp_struct_Variable) == 0x000010, "Member 'ItemTooltipContent_C_Get_Query_Tag::Temp_struct_Variable' has a wrong offset!");
@@ -543,18 +544,18 @@ static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Temp_struct_Variable3
 static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, K2Node_Select_Default) == 0x000028, "Member 'ItemTooltipContent_C_Get_Query_Tag::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Init Tooltip Context
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct ItemTooltipContent_C_Init_Tooltip_Context final
 {
 public:
 	class UFortTooltipContext*                    Tooltip_Context;                                   // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           CallFunc_Get_Query_Tag_Tag;                        // 0x0008(0x11821D80)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           CallFunc_Get_Query_Tag_Tag;                        // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortTooltipContext*                    CallFunc_SpawnTooltipContextWithSource_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_AddGameplayTagToContainer_ReturnValue;    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Init_Tooltip_Context) == 0x11821D80, "Wrong alignment on ItemTooltipContent_C_Init_Tooltip_Context");
-static_assert(sizeof(ItemTooltipContent_C_Init_Tooltip_Context) == 0x11821D80, "Wrong size on ItemTooltipContent_C_Init_Tooltip_Context");
+static_assert(alignof(ItemTooltipContent_C_Init_Tooltip_Context) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Init_Tooltip_Context");
+static_assert(sizeof(ItemTooltipContent_C_Init_Tooltip_Context) == 0x000028, "Wrong size on ItemTooltipContent_C_Init_Tooltip_Context");
 static_assert(offsetof(ItemTooltipContent_C_Init_Tooltip_Context, Tooltip_Context) == 0x000000, "Member 'ItemTooltipContent_C_Init_Tooltip_Context::Tooltip_Context' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Init_Tooltip_Context, CallFunc_Get_Query_Tag_Tag) == 0x000008, "Member 'ItemTooltipContent_C_Init_Tooltip_Context::CallFunc_Get_Query_Tag_Tag' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Init_Tooltip_Context, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Init_Tooltip_Context::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
@@ -673,7 +674,7 @@ static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, K2Node_DynamicCast
 static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_Not_PreBool_ReturnValue) == 0x000071, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Create Custom Integer Stat
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x04B0 (0x04B0 - 0x0000)
 struct ItemTooltipContent_C_Create_Custom_Integer_Stat final
 {
 public:
@@ -684,7 +685,7 @@ public:
 	int32                                         Comparison_Value;                                  // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HigherIsBetter;                                    // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  Display_Attribute;                                 // 0x0030(0x11821C00)(Parm, OutParm)
+	struct FFortDisplayAttribute                  Display_Attribute;                                 // 0x0030(0x0070)(Parm, OutParm)
 	bool                                          Temp_bool_Variable;                                // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -692,18 +693,18 @@ public:
 	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00A8(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x00C0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00D8(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0118(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0158(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00D8(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0118(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0158(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0198(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x01A8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01B8(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x01D0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01E8(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0228(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x0268(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData7;             // 0x02A8(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData8;             // 0x02E8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01E8(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0228(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x0268(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData7;             // 0x02A8(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData8;             // 0x02E8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x0328(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array4;                           // 0x0338(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0348(0x0018)()
@@ -766,10 +767,10 @@ public:
 	EFortComparisonType                           K2Node_Select17_Default;                           // 0x0437(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortBuffState                                K2Node_Select18_Default;                           // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_439[0x7];                                      // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  K2Node_MakeStruct_FortDisplayAttribute;            // 0x0440(0x11821C00)()
+	struct FFortDisplayAttribute                  K2Node_MakeStruct_FortDisplayAttribute;            // 0x0440(0x0070)()
 };
-static_assert(alignof(ItemTooltipContent_C_Create_Custom_Integer_Stat) == 0x11821D80, "Wrong alignment on ItemTooltipContent_C_Create_Custom_Integer_Stat");
-static_assert(sizeof(ItemTooltipContent_C_Create_Custom_Integer_Stat) == 0x11821D80, "Wrong size on ItemTooltipContent_C_Create_Custom_Integer_Stat");
+static_assert(alignof(ItemTooltipContent_C_Create_Custom_Integer_Stat) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Create_Custom_Integer_Stat");
+static_assert(sizeof(ItemTooltipContent_C_Create_Custom_Integer_Stat) == 0x0004B0, "Wrong size on ItemTooltipContent_C_Create_Custom_Integer_Stat");
 static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Display_Type) == 0x000000, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Display_Type' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Label) == 0x000008, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Label' has a wrong offset!");
 static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Value) == 0x000020, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Value' has a wrong offset!");

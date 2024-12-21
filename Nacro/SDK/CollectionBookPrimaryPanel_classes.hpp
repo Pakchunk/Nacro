@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x04B0 - 0x04A0)
 class UCollectionBookPrimaryPanel_C final : public UFortCollectionBookPrimaryPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(Transient, DuplicateTransient)
 	bool                                          CanShowCollectionBookHelp;                         // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookPrimaryPanel_C>();
 	}
 };
-static_assert(alignof(UCollectionBookPrimaryPanel_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookPrimaryPanel_C");
-static_assert(sizeof(UCollectionBookPrimaryPanel_C) == 0x322CBBB8, "Wrong size on UCollectionBookPrimaryPanel_C");
+static_assert(alignof(UCollectionBookPrimaryPanel_C) == 0x000008, "Wrong alignment on UCollectionBookPrimaryPanel_C");
+static_assert(sizeof(UCollectionBookPrimaryPanel_C) == 0x0004B0, "Wrong size on UCollectionBookPrimaryPanel_C");
 static_assert(offsetof(UCollectionBookPrimaryPanel_C, UberGraphFrame) == 0x0004A0, "Member 'UCollectionBookPrimaryPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookPrimaryPanel_C, CanShowCollectionBookHelp) == 0x0004A8, "Member 'UCollectionBookPrimaryPanel_C::CanShowCollectionBookHelp' has a wrong offset!");
 

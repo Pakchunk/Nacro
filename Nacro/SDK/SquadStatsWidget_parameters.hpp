@@ -165,7 +165,7 @@ static_assert(offsetof(SquadStatsWidget_C_HandleActivityChanged, IsActive) == 0x
 static_assert(offsetof(SquadStatsWidget_C_HandleActivityChanged, CallFunc_BooleanAND_ReturnValue) == 0x000001, "Member 'SquadStatsWidget_C_HandleActivityChanged::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function SquadStatsWidget.SquadStatsWidget_C.BindToAttributeChanges
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct SquadStatsWidget_C_BindToAttributeChanges final
 {
 public:
@@ -183,12 +183,12 @@ public:
 	class UFortRegisteredPlayerInfo*              CallFunc_GetRegisteredPlayerInfo_ReturnValue;      // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FGameplayAttribute>             CallFunc_GetTooltipAttributes_ReturnValue;         // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAttribute                     CallFunc_Array_Get_Item;                           // 0x0068(0x11821C00)(HasGetValueTypeHash)
+	struct FGameplayAttribute                     CallFunc_Array_Get_Item;                           // 0x0068(0x0020)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SquadStatsWidget_C_BindToAttributeChanges) == 0x11821C00, "Wrong alignment on SquadStatsWidget_C_BindToAttributeChanges");
-static_assert(sizeof(SquadStatsWidget_C_BindToAttributeChanges) == 0x11821C00, "Wrong size on SquadStatsWidget_C_BindToAttributeChanges");
+static_assert(alignof(SquadStatsWidget_C_BindToAttributeChanges) == 0x000008, "Wrong alignment on SquadStatsWidget_C_BindToAttributeChanges");
+static_assert(sizeof(SquadStatsWidget_C_BindToAttributeChanges) == 0x000090, "Wrong size on SquadStatsWidget_C_BindToAttributeChanges");
 static_assert(offsetof(SquadStatsWidget_C_BindToAttributeChanges, Temp_int_Array_Index_Variable) == 0x000000, "Member 'SquadStatsWidget_C_BindToAttributeChanges::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(SquadStatsWidget_C_BindToAttributeChanges, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'SquadStatsWidget_C_BindToAttributeChanges::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(SquadStatsWidget_C_BindToAttributeChanges, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'SquadStatsWidget_C_BindToAttributeChanges::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");

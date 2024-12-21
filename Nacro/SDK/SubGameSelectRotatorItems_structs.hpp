@@ -15,8 +15,8 @@ namespace SDK
 {
 
 // UserDefinedStruct SubGameSelectRotatorItems.SubGameSelectRotatorItems
-// 0x001F (0x001F - 0x0000)
-struct alignas(0x1F) FSubGameSelectRotatorItems final
+// 0x0020 (0x0020 - 0x0000)
+struct FSubGameSelectRotatorItems final
 {
 public:
 	class UTexture*                               TextureA_14_E7B5352843A0CC202D091BA5F59BA9DD;      // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -26,8 +26,8 @@ public:
 	float                                         TextureAOffset_18_6D3555E44726B049D630D78E92CC4870; // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TextureBOffset_21_74C86E2140E24AD02DBF4CB21456B661; // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FSubGameSelectRotatorItems) == 0x00001F, "Wrong alignment on FSubGameSelectRotatorItems");
-static_assert(sizeof(FSubGameSelectRotatorItems) == 0x00001F, "Wrong size on FSubGameSelectRotatorItems");
+static_assert(alignof(FSubGameSelectRotatorItems) == 0x000008, "Wrong alignment on FSubGameSelectRotatorItems");
+static_assert(sizeof(FSubGameSelectRotatorItems) == 0x000020, "Wrong size on FSubGameSelectRotatorItems");
 static_assert(offsetof(FSubGameSelectRotatorItems, TextureA_14_E7B5352843A0CC202D091BA5F59BA9DD) == 0x000000, "Member 'FSubGameSelectRotatorItems::TextureA_14_E7B5352843A0CC202D091BA5F59BA9DD' has a wrong offset!");
 static_assert(offsetof(FSubGameSelectRotatorItems, TextureB_17_97E08EFC465353392FD93BA3E86A55E2) == 0x000008, "Member 'FSubGameSelectRotatorItems::TextureB_17_97E08EFC465353392FD93BA3E86A55E2' has a wrong offset!");
 static_assert(offsetof(FSubGameSelectRotatorItems, LongDuration_23_9643D52549E3E365C6EAA7BD64E38A7D) == 0x000010, "Member 'FSubGameSelectRotatorItems::LongDuration_23_9643D52549E3E365C6EAA7BD64E38A7D' has a wrong offset!");

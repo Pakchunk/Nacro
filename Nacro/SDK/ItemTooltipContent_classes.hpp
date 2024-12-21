@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ItemTooltip_DisplayMode_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "ItemTooltip_DisplayMode_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "FortniteUI_structs.hpp"
@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTooltipContent.ItemTooltipContent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x02B0 (0x04E0 - 0x0230)
 class UItemTooltipContent_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       _Anim__Intro;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderSecondaryType_B;                             // 0x0240(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderSecondaryTypeFrame_A;                        // 0x0248(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -88,7 +88,7 @@ public:
 	class UVerticalBox*                           VerticalBoxStats_B;                                // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItem*                              Item;                                              // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UFortItem*                              ComparisonItem;                                    // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FFortRarityItemData                    Rarity_Data;                                       // 0x0420(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortRarityItemData                    Rarity_Data;                                       // 0x0420(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          HoverEnabled;                                      // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          PanelMode;                                         // 0x04A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EItemTooltip_DisplayMode                      DisplayMode;                                       // 0x04A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -142,8 +142,8 @@ public:
 		return GetDefaultObjImpl<UItemTooltipContent_C>();
 	}
 };
-static_assert(alignof(UItemTooltipContent_C) == 0x322CBBB8, "Wrong alignment on UItemTooltipContent_C");
-static_assert(sizeof(UItemTooltipContent_C) == 0x322CBBB8, "Wrong size on UItemTooltipContent_C");
+static_assert(alignof(UItemTooltipContent_C) == 0x000008, "Wrong alignment on UItemTooltipContent_C");
+static_assert(sizeof(UItemTooltipContent_C) == 0x0004E0, "Wrong size on UItemTooltipContent_C");
 static_assert(offsetof(UItemTooltipContent_C, UberGraphFrame) == 0x000230, "Member 'UItemTooltipContent_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, _Anim__Intro) == 0x000238, "Member 'UItemTooltipContent_C::_Anim__Intro' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, BorderSecondaryType_B) == 0x000240, "Member 'UItemTooltipContent_C::BorderSecondaryType_B' has a wrong offset!");

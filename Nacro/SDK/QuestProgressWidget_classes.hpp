@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuestProgressWidget.QuestProgressWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0248 - 0x0238)
 class UQuestProgressWidget_C final : public UCommonUserWidget
 {
 public:
@@ -38,8 +38,8 @@ public:
 		return GetDefaultObjImpl<UQuestProgressWidget_C>();
 	}
 };
-static_assert(alignof(UQuestProgressWidget_C) == 0x322CBBB8, "Wrong alignment on UQuestProgressWidget_C");
-static_assert(sizeof(UQuestProgressWidget_C) == 0x322CBBB8, "Wrong size on UQuestProgressWidget_C");
+static_assert(alignof(UQuestProgressWidget_C) == 0x000008, "Wrong alignment on UQuestProgressWidget_C");
+static_assert(sizeof(UQuestProgressWidget_C) == 0x000248, "Wrong size on UQuestProgressWidget_C");
 static_assert(offsetof(UQuestProgressWidget_C, _ProgressBar__Quest_Progress) == 0x000238, "Member 'UQuestProgressWidget_C::_ProgressBar__Quest_Progress' has a wrong offset!");
 static_assert(offsetof(UQuestProgressWidget_C, ProgressValue) == 0x000240, "Member 'UQuestProgressWidget_C::ProgressValue' has a wrong offset!");
 

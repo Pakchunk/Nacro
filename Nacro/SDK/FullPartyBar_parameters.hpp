@@ -31,8 +31,8 @@ static_assert(sizeof(FullPartyBar_C_OnButtonHovered__DelegateSignature) == 0x000
 static_assert(offsetof(FullPartyBar_C_OnButtonHovered__DelegateSignature, HelpText) == 0x000000, "Member 'FullPartyBar_C_OnButtonHovered__DelegateSignature::HelpText' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.ExecuteUbergraph_FullPartyBar
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) FullPartyBar_C_ExecuteUbergraph_FullPartyBar final
+// 0x0170 (0x0170 - 0x0000)
+struct FullPartyBar_C_ExecuteUbergraph_FullPartyBar final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -73,8 +73,8 @@ public:
 	class FText                                   K2Node_Select4_Default;                            // 0x0150(0x0018)()
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar) == 0x540065, "Wrong alignment on FullPartyBar_C_ExecuteUbergraph_FullPartyBar");
-static_assert(sizeof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar) == 0x540065, "Wrong size on FullPartyBar_C_ExecuteUbergraph_FullPartyBar");
+static_assert(alignof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar) == 0x000008, "Wrong alignment on FullPartyBar_C_ExecuteUbergraph_FullPartyBar");
+static_assert(sizeof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar) == 0x000170, "Wrong size on FullPartyBar_C_ExecuteUbergraph_FullPartyBar");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, EntryPoint) == 0x000000, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, Temp_bool_Variable) == 0x000004, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, Temp_bool_Variable2) == 0x000005, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::Temp_bool_Variable2' has a wrong offset!");
@@ -110,36 +110,36 @@ static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, K2Node_Sele
 static_assert(offsetof(FullPartyBar_C_ExecuteUbergraph_FullPartyBar, CallFunc_GetContext_ReturnValue2) == 0x000168, "Member 'FullPartyBar_C_ExecuteUbergraph_FullPartyBar::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature) == 0x10461A40, "Wrong alignment on FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature) == 0x10461A40, "Wrong size on FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FullPartyBar_C_BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature) == 0x10461A40, "Wrong alignment on FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature) == 0x10461A40, "Wrong size on FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature
-// 0x0079 (0x0079 - 0x0000)
-struct alignas(0x79) FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature) == 0x000079, "Wrong alignment on FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature) == 0x000079, "Wrong size on FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_12_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature
@@ -198,25 +198,25 @@ static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundE
 static_assert(offsetof(FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FullPartyBar_C_BndEvt__RemotePlayer3_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x28) FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000028, "Wrong alignment on FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000028, "Wrong size on FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FullPartyBar_C_BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
-// 0x540065 (0x540065 - 0x0000)
-struct alignas(0x540065) FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x540065, "Wrong alignment on FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x540065, "Wrong size on FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FullPartyBar_C_BndEvt__RemotePlayer1_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature
@@ -299,7 +299,7 @@ static_assert(sizeof(FullPartyBar_C_OpenPartyPrivacy) == 0x000008, "Wrong size o
 static_assert(offsetof(FullPartyBar_C_OpenPartyPrivacy, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'FullPartyBar_C_OpenPartyPrivacy::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.isTeammateSlotPopulated
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct FullPartyBar_C_IsTeammateSlotPopulated final
 {
 public:
@@ -307,12 +307,12 @@ public:
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FUniqueNetIdRepl>               CallFunc_GetTeamMemberIDs_TeamMemberIDs;           // 0x0008(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FUniqueNetIdRepl                       CallFunc_Array_Get_Item;                           // 0x0018(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_Array_Get_Item;                           // 0x0018(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyBar_C_IsTeammateSlotPopulated) == 0x11821780, "Wrong alignment on FullPartyBar_C_IsTeammateSlotPopulated");
-static_assert(sizeof(FullPartyBar_C_IsTeammateSlotPopulated) == 0x11821780, "Wrong size on FullPartyBar_C_IsTeammateSlotPopulated");
+static_assert(alignof(FullPartyBar_C_IsTeammateSlotPopulated) == 0x000008, "Wrong alignment on FullPartyBar_C_IsTeammateSlotPopulated");
+static_assert(sizeof(FullPartyBar_C_IsTeammateSlotPopulated) == 0x000038, "Wrong size on FullPartyBar_C_IsTeammateSlotPopulated");
 static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, InSlotNUmber) == 0x000000, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::InSlotNUmber' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, ReturnValue) == 0x000004, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, CallFunc_GetTeamMemberIDs_TeamMemberIDs) == 0x000008, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::CallFunc_GetTeamMemberIDs_TeamMemberIDs' has a wrong offset!");
@@ -341,12 +341,12 @@ static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Array_Len
 static_assert(offsetof(FullPartyBar_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'FullPartyBar_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.Get_Fortitude_ToolTipWidget
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FullPartyBar_C_Get_Fortitude_ToolTipWidget final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0008(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0008(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -354,8 +354,8 @@ public:
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyBar_C_Get_Fortitude_ToolTipWidget) == 0x11821C00, "Wrong alignment on FullPartyBar_C_Get_Fortitude_ToolTipWidget");
-static_assert(sizeof(FullPartyBar_C_Get_Fortitude_ToolTipWidget) == 0x11821C00, "Wrong size on FullPartyBar_C_Get_Fortitude_ToolTipWidget");
+static_assert(alignof(FullPartyBar_C_Get_Fortitude_ToolTipWidget) == 0x000008, "Wrong alignment on FullPartyBar_C_Get_Fortitude_ToolTipWidget");
+static_assert(sizeof(FullPartyBar_C_Get_Fortitude_ToolTipWidget) == 0x0000A0, "Wrong size on FullPartyBar_C_Get_Fortitude_ToolTipWidget");
 static_assert(offsetof(FullPartyBar_C_Get_Fortitude_ToolTipWidget, ReturnValue) == 0x000000, "Member 'FullPartyBar_C_Get_Fortitude_ToolTipWidget::ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_Get_Fortitude_ToolTipWidget, CallFunc_GetTooltipStat_OutDisplayAttribute) == 0x000008, "Member 'FullPartyBar_C_Get_Fortitude_ToolTipWidget::CallFunc_GetTooltipStat_OutDisplayAttribute' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_Get_Fortitude_ToolTipWidget, CallFunc_GetTooltipStat_ReturnValue) == 0x000078, "Member 'FullPartyBar_C_Get_Fortitude_ToolTipWidget::CallFunc_GetTooltipStat_ReturnValue' has a wrong offset!");
@@ -365,12 +365,12 @@ static_assert(offsetof(FullPartyBar_C_Get_Fortitude_ToolTipWidget, CallFunc_Crea
 static_assert(offsetof(FullPartyBar_C_Get_Fortitude_ToolTipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000098, "Member 'FullPartyBar_C_Get_Fortitude_ToolTipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.Get_Offense_ToolTipWidget
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FullPartyBar_C_Get_Offense_ToolTipWidget final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0008(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0008(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -378,8 +378,8 @@ public:
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyBar_C_Get_Offense_ToolTipWidget) == 0x11821C00, "Wrong alignment on FullPartyBar_C_Get_Offense_ToolTipWidget");
-static_assert(sizeof(FullPartyBar_C_Get_Offense_ToolTipWidget) == 0x11821C00, "Wrong size on FullPartyBar_C_Get_Offense_ToolTipWidget");
+static_assert(alignof(FullPartyBar_C_Get_Offense_ToolTipWidget) == 0x000008, "Wrong alignment on FullPartyBar_C_Get_Offense_ToolTipWidget");
+static_assert(sizeof(FullPartyBar_C_Get_Offense_ToolTipWidget) == 0x0000A0, "Wrong size on FullPartyBar_C_Get_Offense_ToolTipWidget");
 static_assert(offsetof(FullPartyBar_C_Get_Offense_ToolTipWidget, ReturnValue) == 0x000000, "Member 'FullPartyBar_C_Get_Offense_ToolTipWidget::ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_Get_Offense_ToolTipWidget, CallFunc_GetTooltipStat_OutDisplayAttribute) == 0x000008, "Member 'FullPartyBar_C_Get_Offense_ToolTipWidget::CallFunc_GetTooltipStat_OutDisplayAttribute' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_Get_Offense_ToolTipWidget, CallFunc_GetTooltipStat_ReturnValue) == 0x000078, "Member 'FullPartyBar_C_Get_Offense_ToolTipWidget::CallFunc_GetTooltipStat_ReturnValue' has a wrong offset!");
@@ -389,12 +389,12 @@ static_assert(offsetof(FullPartyBar_C_Get_Offense_ToolTipWidget, CallFunc_Create
 static_assert(offsetof(FullPartyBar_C_Get_Offense_ToolTipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000098, "Member 'FullPartyBar_C_Get_Offense_ToolTipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.Get_Resistance_ToolTipWidget
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FullPartyBar_C_Get_Resistance_ToolTipWidget final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0008(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0008(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -402,8 +402,8 @@ public:
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyBar_C_Get_Resistance_ToolTipWidget) == 0x11821C00, "Wrong alignment on FullPartyBar_C_Get_Resistance_ToolTipWidget");
-static_assert(sizeof(FullPartyBar_C_Get_Resistance_ToolTipWidget) == 0x11821C00, "Wrong size on FullPartyBar_C_Get_Resistance_ToolTipWidget");
+static_assert(alignof(FullPartyBar_C_Get_Resistance_ToolTipWidget) == 0x000008, "Wrong alignment on FullPartyBar_C_Get_Resistance_ToolTipWidget");
+static_assert(sizeof(FullPartyBar_C_Get_Resistance_ToolTipWidget) == 0x0000A0, "Wrong size on FullPartyBar_C_Get_Resistance_ToolTipWidget");
 static_assert(offsetof(FullPartyBar_C_Get_Resistance_ToolTipWidget, ReturnValue) == 0x000000, "Member 'FullPartyBar_C_Get_Resistance_ToolTipWidget::ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_Get_Resistance_ToolTipWidget, CallFunc_GetTooltipStat_OutDisplayAttribute) == 0x000008, "Member 'FullPartyBar_C_Get_Resistance_ToolTipWidget::CallFunc_GetTooltipStat_OutDisplayAttribute' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_Get_Resistance_ToolTipWidget, CallFunc_GetTooltipStat_ReturnValue) == 0x000078, "Member 'FullPartyBar_C_Get_Resistance_ToolTipWidget::CallFunc_GetTooltipStat_ReturnValue' has a wrong offset!");
@@ -413,12 +413,12 @@ static_assert(offsetof(FullPartyBar_C_Get_Resistance_ToolTipWidget, CallFunc_Cre
 static_assert(offsetof(FullPartyBar_C_Get_Resistance_ToolTipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000098, "Member 'FullPartyBar_C_Get_Resistance_ToolTipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.Get_Tech_ToolTipWidget
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct FullPartyBar_C_Get_Tech_ToolTipWidget final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0008(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0008(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -426,8 +426,8 @@ public:
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyBar_C_Get_Tech_ToolTipWidget) == 0x11821C00, "Wrong alignment on FullPartyBar_C_Get_Tech_ToolTipWidget");
-static_assert(sizeof(FullPartyBar_C_Get_Tech_ToolTipWidget) == 0x11821C00, "Wrong size on FullPartyBar_C_Get_Tech_ToolTipWidget");
+static_assert(alignof(FullPartyBar_C_Get_Tech_ToolTipWidget) == 0x000008, "Wrong alignment on FullPartyBar_C_Get_Tech_ToolTipWidget");
+static_assert(sizeof(FullPartyBar_C_Get_Tech_ToolTipWidget) == 0x0000A0, "Wrong size on FullPartyBar_C_Get_Tech_ToolTipWidget");
 static_assert(offsetof(FullPartyBar_C_Get_Tech_ToolTipWidget, ReturnValue) == 0x000000, "Member 'FullPartyBar_C_Get_Tech_ToolTipWidget::ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_Get_Tech_ToolTipWidget, CallFunc_GetTooltipStat_OutDisplayAttribute) == 0x000008, "Member 'FullPartyBar_C_Get_Tech_ToolTipWidget::CallFunc_GetTooltipStat_OutDisplayAttribute' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_Get_Tech_ToolTipWidget, CallFunc_GetTooltipStat_ReturnValue) == 0x000078, "Member 'FullPartyBar_C_Get_Tech_ToolTipWidget::CallFunc_GetTooltipStat_ReturnValue' has a wrong offset!");
@@ -437,24 +437,24 @@ static_assert(offsetof(FullPartyBar_C_Get_Tech_ToolTipWidget, CallFunc_Create_Ba
 static_assert(offsetof(FullPartyBar_C_Get_Tech_ToolTipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000098, "Member 'FullPartyBar_C_Get_Tech_ToolTipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.InitializeStatLabels
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x01E0 (0x01E0 - 0x0000)
 struct FullPartyBar_C_InitializeStatLabels final
 {
 public:
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0000(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x0000(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute2;      // 0x0078(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute2;      // 0x0078(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue2;              // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute3;      // 0x00F0(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute3;      // 0x00F0(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue3;              // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute4;      // 0x0168(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute4;      // 0x0168(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue4;              // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyBar_C_InitializeStatLabels) == 0x11821C00, "Wrong alignment on FullPartyBar_C_InitializeStatLabels");
-static_assert(sizeof(FullPartyBar_C_InitializeStatLabels) == 0x11821C00, "Wrong size on FullPartyBar_C_InitializeStatLabels");
+static_assert(alignof(FullPartyBar_C_InitializeStatLabels) == 0x000008, "Wrong alignment on FullPartyBar_C_InitializeStatLabels");
+static_assert(sizeof(FullPartyBar_C_InitializeStatLabels) == 0x0001E0, "Wrong size on FullPartyBar_C_InitializeStatLabels");
 static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_OutDisplayAttribute) == 0x000000, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_OutDisplayAttribute' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_ReturnValue) == 0x000070, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_OutDisplayAttribute2) == 0x000078, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_OutDisplayAttribute2' has a wrong offset!");
@@ -465,12 +465,12 @@ static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipS
 static_assert(offsetof(FullPartyBar_C_InitializeStatLabels, CallFunc_GetTooltipStat_ReturnValue4) == 0x0001D8, "Member 'FullPartyBar_C_InitializeStatLabels::CallFunc_GetTooltipStat_ReturnValue4' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.GetTooltipStat
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct FullPartyBar_C_GetTooltipStat final
 {
 public:
-	struct FGameplayTag                           Token;                                             // 0x0000(0x11821D80)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0008(0x11821C00)(Parm, OutParm)
+	struct FGameplayTag                           Token;                                             // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
+	struct FFortDisplayAttribute                  OutDisplayAttribute;                               // 0x0008(0x0070)(Parm, OutParm)
 	bool                                          ReturnValue;                                       // 0x0078(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -479,13 +479,13 @@ public:
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x00A8(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x00A8(0x0018)(HasGetValueTypeHash)
 	class UFortRegisteredPlayerInfo*              CallFunc_GetPlayerInfoFromUniqueID_ReturnValue;    // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x00C8(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetTooltipStat_OutDisplayAttribute;       // 0x00C8(0x0070)()
 	bool                                          CallFunc_GetTooltipStat_ReturnValue;               // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyBar_C_GetTooltipStat) == 0x11821D80, "Wrong alignment on FullPartyBar_C_GetTooltipStat");
-static_assert(sizeof(FullPartyBar_C_GetTooltipStat) == 0x11821D80, "Wrong size on FullPartyBar_C_GetTooltipStat");
+static_assert(alignof(FullPartyBar_C_GetTooltipStat) == 0x000008, "Wrong alignment on FullPartyBar_C_GetTooltipStat");
+static_assert(sizeof(FullPartyBar_C_GetTooltipStat) == 0x000140, "Wrong size on FullPartyBar_C_GetTooltipStat");
 static_assert(offsetof(FullPartyBar_C_GetTooltipStat, Token) == 0x000000, "Member 'FullPartyBar_C_GetTooltipStat::Token' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTooltipStat, OutDisplayAttribute) == 0x000008, "Member 'FullPartyBar_C_GetTooltipStat::OutDisplayAttribute' has a wrong offset!");
 static_assert(offsetof(FullPartyBar_C_GetTooltipStat, ReturnValue) == 0x000078, "Member 'FullPartyBar_C_GetTooltipStat::ReturnValue' has a wrong offset!");

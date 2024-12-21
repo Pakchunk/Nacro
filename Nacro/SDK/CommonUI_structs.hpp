@@ -107,8 +107,8 @@ enum class ECommonSwitcherTransition : uint8
 };
 
 // ScriptStruct CommonUI.Operation
-// 0x1182F280 (0x1182F280 - 0x0000)
-struct alignas(0x1182F280) FOperation final
+// 0x0018 (0x0018 - 0x0000)
+struct FOperation final
 {
 public:
 	EOperation                                    Operation;                                         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -118,16 +118,16 @@ public:
 	bool                                          bOutroPanelBelow;                                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FOperation) == 0x1182F280, "Wrong alignment on FOperation");
-static_assert(sizeof(FOperation) == 0x1182F280, "Wrong size on FOperation");
+static_assert(alignof(FOperation) == 0x000008, "Wrong alignment on FOperation");
+static_assert(sizeof(FOperation) == 0x000018, "Wrong size on FOperation");
 static_assert(offsetof(FOperation, Operation) == 0x000000, "Member 'FOperation::Operation' has a wrong offset!");
 static_assert(offsetof(FOperation, Panel) == 0x000008, "Member 'FOperation::Panel' has a wrong offset!");
 static_assert(offsetof(FOperation, bIntroPanel) == 0x000010, "Member 'FOperation::bIntroPanel' has a wrong offset!");
 static_assert(offsetof(FOperation, bOutroPanelBelow) == 0x000011, "Member 'FOperation::bOutroPanelBelow' has a wrong offset!");
 
 // ScriptStruct CommonUI.CommonRegisteredTabInfo
-// 0x11821780 (0x11821780 - 0x0000)
-struct alignas(0x11821780) FCommonRegisteredTabInfo final
+// 0x0018 (0x0018 - 0x0000)
+struct FCommonRegisteredTabInfo final
 {
 public:
 	int32                                         TabIndex;                                          // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -135,15 +135,15 @@ public:
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidget*                                ContentInstance;                                   // 0x0010(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonRegisteredTabInfo) == 0x11821780, "Wrong alignment on FCommonRegisteredTabInfo");
-static_assert(sizeof(FCommonRegisteredTabInfo) == 0x11821780, "Wrong size on FCommonRegisteredTabInfo");
+static_assert(alignof(FCommonRegisteredTabInfo) == 0x000008, "Wrong alignment on FCommonRegisteredTabInfo");
+static_assert(sizeof(FCommonRegisteredTabInfo) == 0x000018, "Wrong size on FCommonRegisteredTabInfo");
 static_assert(offsetof(FCommonRegisteredTabInfo, TabIndex) == 0x000000, "Member 'FCommonRegisteredTabInfo::TabIndex' has a wrong offset!");
 static_assert(offsetof(FCommonRegisteredTabInfo, TabButton) == 0x000008, "Member 'FCommonRegisteredTabInfo::TabButton' has a wrong offset!");
 static_assert(offsetof(FCommonRegisteredTabInfo, ContentInstance) == 0x000010, "Member 'FCommonRegisteredTabInfo::ContentInstance' has a wrong offset!");
 
 // ScriptStruct CommonUI.CommonNumberFormattingOptions
-// 0x1182EB00 (0x1182EB00 - 0x0000)
-struct alignas(0x1182EB00) FCommonNumberFormattingOptions final
+// 0x0014 (0x0014 - 0x0000)
+struct FCommonNumberFormattingOptions final
 {
 public:
 	ERoundingMode                                 RoundingMode;                                      // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -154,8 +154,8 @@ public:
 	int32                                         MinimumFractionalDigits;                           // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaximumFractionalDigits;                           // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonNumberFormattingOptions) == 0x1182EB00, "Wrong alignment on FCommonNumberFormattingOptions");
-static_assert(sizeof(FCommonNumberFormattingOptions) == 0x1182EB00, "Wrong size on FCommonNumberFormattingOptions");
+static_assert(alignof(FCommonNumberFormattingOptions) == 0x000004, "Wrong alignment on FCommonNumberFormattingOptions");
+static_assert(sizeof(FCommonNumberFormattingOptions) == 0x000014, "Wrong size on FCommonNumberFormattingOptions");
 static_assert(offsetof(FCommonNumberFormattingOptions, RoundingMode) == 0x000000, "Member 'FCommonNumberFormattingOptions::RoundingMode' has a wrong offset!");
 static_assert(offsetof(FCommonNumberFormattingOptions, UseGrouping) == 0x000001, "Member 'FCommonNumberFormattingOptions::UseGrouping' has a wrong offset!");
 static_assert(offsetof(FCommonNumberFormattingOptions, MinimumIntegralDigits) == 0x000004, "Member 'FCommonNumberFormattingOptions::MinimumIntegralDigits' has a wrong offset!");
@@ -164,61 +164,59 @@ static_assert(offsetof(FCommonNumberFormattingOptions, MinimumFractionalDigits) 
 static_assert(offsetof(FCommonNumberFormattingOptions, MaximumFractionalDigits) == 0x000010, "Member 'FCommonNumberFormattingOptions::MaximumFractionalDigits' has a wrong offset!");
 
 // ScriptStruct CommonUI.CommonInputKeyDisplayData
-// 0x1182EB00 (0x1182EB00 - 0x0000)
-struct alignas(0x1182EB00) FCommonInputKeyDisplayData final
+// 0x0240 (0x0240 - 0x0000)
+struct FCommonInputKeyDisplayData final
 {
 public:
-	struct FSlateBrush                            PlatformSpecificBrush[0x4];                        // 0x0000(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	uint8                                         Pad_-374D1120[0x374D1360];                         // 0x-374D1120(0x374D1360)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            PlatformSpecificBrush[0x4];                        // 0x0000(0x0090)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonInputKeyDisplayData) == 0x1182EB00, "Wrong alignment on FCommonInputKeyDisplayData");
-static_assert(sizeof(FCommonInputKeyDisplayData) == 0x1182EB00, "Wrong size on FCommonInputKeyDisplayData");
+static_assert(alignof(FCommonInputKeyDisplayData) == 0x000008, "Wrong alignment on FCommonInputKeyDisplayData");
+static_assert(sizeof(FCommonInputKeyDisplayData) == 0x000240, "Wrong size on FCommonInputKeyDisplayData");
 static_assert(offsetof(FCommonInputKeyDisplayData, PlatformSpecificBrush) == 0x000000, "Member 'FCommonInputKeyDisplayData::PlatformSpecificBrush' has a wrong offset!");
 
 // ScriptStruct CommonUI.CommonInputKeyDisplayConfiguration
-// 0x1182F280 (0x1182F280 - 0x0000)
-struct alignas(0x1182F280) FCommonInputKeyDisplayConfiguration final
+// 0x0258 (0x0258 - 0x0000)
+struct FCommonInputKeyDisplayConfiguration final
 {
 public:
-	struct FKey                                   Key;                                               // 0x0000(0x11821D80)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCommonInputKeyDisplayData             Value;                                             // 0x0018(0x1182EB00)(Edit, NativeAccessSpecifierPublic)
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCommonInputKeyDisplayData             Value;                                             // 0x0018(0x0240)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonInputKeyDisplayConfiguration) == 0x1182F280, "Wrong alignment on FCommonInputKeyDisplayConfiguration");
-static_assert(sizeof(FCommonInputKeyDisplayConfiguration) == 0x1182F280, "Wrong size on FCommonInputKeyDisplayConfiguration");
+static_assert(alignof(FCommonInputKeyDisplayConfiguration) == 0x000008, "Wrong alignment on FCommonInputKeyDisplayConfiguration");
+static_assert(sizeof(FCommonInputKeyDisplayConfiguration) == 0x000258, "Wrong size on FCommonInputKeyDisplayConfiguration");
 static_assert(offsetof(FCommonInputKeyDisplayConfiguration, Key) == 0x000000, "Member 'FCommonInputKeyDisplayConfiguration::Key' has a wrong offset!");
 static_assert(offsetof(FCommonInputKeyDisplayConfiguration, Value) == 0x000018, "Member 'FCommonInputKeyDisplayConfiguration::Value' has a wrong offset!");
 
 // ScriptStruct CommonUI.CommonInputActionHandlerData
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct FCommonInputActionHandlerData final
 {
 public:
-	struct FDataTableRowHandle                    InputActionRow;                                    // 0x0000(0x1182EB00)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDataTableRowHandle                    InputActionRow;                                    // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 	EInputActionState                             State;                                             // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCommonInputActionHandlerData) == 0x1182EB00, "Wrong alignment on FCommonInputActionHandlerData");
-static_assert(sizeof(FCommonInputActionHandlerData) == 0x1182EB00, "Wrong size on FCommonInputActionHandlerData");
+static_assert(alignof(FCommonInputActionHandlerData) == 0x000008, "Wrong alignment on FCommonInputActionHandlerData");
+static_assert(sizeof(FCommonInputActionHandlerData) == 0x000018, "Wrong size on FCommonInputActionHandlerData");
 static_assert(offsetof(FCommonInputActionHandlerData, InputActionRow) == 0x000000, "Member 'FCommonInputActionHandlerData::InputActionRow' has a wrong offset!");
 static_assert(offsetof(FCommonInputActionHandlerData, State) == 0x000010, "Member 'FCommonInputActionHandlerData::State' has a wrong offset!");
 
 // ScriptStruct CommonUI.CommonInputActionData
-// 0xD380 (0x1182EB00 - 0x11821780)
-struct alignas(0x1182EB00) FCommonInputActionData final : public FTableRowBase
+// 0x02C8 (0x02D0 - 0x0008)
+struct FCommonInputActionData final : public FTableRowBase
 {
 public:
 	class FText                                   DisplayName;                                       // 0x0008(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	struct FKey                                   PlatformSpecificKeys[0x4];                         // 0x0020(0x11821D80)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FKey                                   PlatformSpecificKeys[0x4];                         // 0x0020(0x0018)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EInputActionState                             OverrrideStateForInputType[0x4];                   // 0x0080(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            InputTypeOverrideBrush[0x4];                       // 0x0088(0x322CBBB8)(Edit, NativeAccessSpecifierPublic)
-	uint8                                         Pad_-374D1098[0x374D1360];                         // 0x-374D1098(0x374D1360)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            InputTypeOverrideBrush[0x4];                       // 0x0088(0x0090)(Edit, NativeAccessSpecifierPublic)
 	bool                                          bActionRequiresHold;                               // 0x02C8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2C9[0x3];                                      // 0x02C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HoldTime;                                          // 0x02CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonInputActionData) == 0x1182EB00, "Wrong alignment on FCommonInputActionData");
-static_assert(sizeof(FCommonInputActionData) == 0x1182EB00, "Wrong size on FCommonInputActionData");
+static_assert(alignof(FCommonInputActionData) == 0x000008, "Wrong alignment on FCommonInputActionData");
+static_assert(sizeof(FCommonInputActionData) == 0x0002D0, "Wrong size on FCommonInputActionData");
 static_assert(offsetof(FCommonInputActionData, DisplayName) == 0x000008, "Member 'FCommonInputActionData::DisplayName' has a wrong offset!");
 static_assert(offsetof(FCommonInputActionData, PlatformSpecificKeys) == 0x000020, "Member 'FCommonInputActionData::PlatformSpecificKeys' has a wrong offset!");
 static_assert(offsetof(FCommonInputActionData, OverrrideStateForInputType) == 0x000080, "Member 'FCommonInputActionData::OverrrideStateForInputType' has a wrong offset!");

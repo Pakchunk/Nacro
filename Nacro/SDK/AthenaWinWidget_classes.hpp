@@ -18,22 +18,22 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaWinWidget.AthenaWinWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x0468 - 0x03E0)
 class UAthenaWinWidget_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UAthenaKillFeedWidget_C*                AthenaKillFeedWidget;                              // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaKillsWidget_C*                   AthenaKillsWidget_78;                              // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaPlayersLeftWidget_C*             AthenaPlayersLeftWidget_65;                        // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       CommonTextBlock_PrimaryDeathText;                  // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      LeaveButton;                                       // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           RespawnTimerHandle;                                // 0x0418(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           RespawnTimerHandle;                                // 0x0418(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         ReleaseTimeRemaining;                              // 0x0420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_424[0x4];                                      // 0x0424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReadyToRespawnText;                                // 0x0428(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FTimerHandle                           ShowExtraLivesTimerHandle;                         // 0x0440(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           ShowExtraLivesTimerHandle;                         // 0x0440(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         ResurrectTimeRemaining;                            // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   PlacePrefixText;                                   // 0x0450(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -54,8 +54,8 @@ public:
 		return GetDefaultObjImpl<UAthenaWinWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaWinWidget_C) == 0x322CBBB8, "Wrong alignment on UAthenaWinWidget_C");
-static_assert(sizeof(UAthenaWinWidget_C) == 0x322CBBB8, "Wrong size on UAthenaWinWidget_C");
+static_assert(alignof(UAthenaWinWidget_C) == 0x000008, "Wrong alignment on UAthenaWinWidget_C");
+static_assert(sizeof(UAthenaWinWidget_C) == 0x000468, "Wrong size on UAthenaWinWidget_C");
 static_assert(offsetof(UAthenaWinWidget_C, UberGraphFrame) == 0x0003E0, "Member 'UAthenaWinWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaWinWidget_C, AthenaKillFeedWidget) == 0x0003E8, "Member 'UAthenaWinWidget_C::AthenaKillFeedWidget' has a wrong offset!");
 static_assert(offsetof(UAthenaWinWidget_C, AthenaKillsWidget_78) == 0x0003F0, "Member 'UAthenaWinWidget_C::AthenaKillsWidget_78' has a wrong offset!");

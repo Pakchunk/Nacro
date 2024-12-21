@@ -11,28 +11,28 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "EFortUITheme_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "EFortUITheme_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function CraftingIngredient.CraftingIngredient_C.ExecuteUbergraph_CraftingIngredient
-// 0x04C4 (0x04C4 - 0x0000)
-struct alignas(0x4C4) CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient final
+// 0x0004 (0x0004 - 0x0000)
+struct CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient) == 0x0004C4, "Wrong alignment on CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient");
-static_assert(sizeof(CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient) == 0x0004C4, "Wrong size on CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient");
+static_assert(alignof(CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient) == 0x000004, "Wrong alignment on CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient");
+static_assert(sizeof(CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient) == 0x000004, "Wrong size on CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient");
 static_assert(offsetof(CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient, EntryPoint) == 0x000000, "Member 'CraftingIngredient_C_ExecuteUbergraph_CraftingIngredient::EntryPoint' has a wrong offset!");
 
 // Function CraftingIngredient.CraftingIngredient_C.Refresh
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct CraftingIngredient_C_Refresh final
 {
 public:
@@ -44,22 +44,22 @@ public:
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0018(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue2;              // 0x0030(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0098(0x0018)()
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortUITheme                                  K2Node_Select_Default;                             // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B3[0x1];                                       // 0x00B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x00B4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Theme_Color_Theme_Color;              // 0x00B4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00C8(0x322CBBB8)()
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x00F0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00C8(0x0028)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x00F0(0x0090)()
 	int32                                         CallFunc_GetNumInInventory_ReturnValue;            // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CraftingIngredient_C_Refresh) == 0x322CBBB8, "Wrong alignment on CraftingIngredient_C_Refresh");
-static_assert(sizeof(CraftingIngredient_C_Refresh) == 0x322CBBB8, "Wrong size on CraftingIngredient_C_Refresh");
+static_assert(alignof(CraftingIngredient_C_Refresh) == 0x000008, "Wrong alignment on CraftingIngredient_C_Refresh");
+static_assert(sizeof(CraftingIngredient_C_Refresh) == 0x000188, "Wrong size on CraftingIngredient_C_Refresh");
 static_assert(offsetof(CraftingIngredient_C_Refresh, TotalCount) == 0x000000, "Member 'CraftingIngredient_C_Refresh::TotalCount' has a wrong offset!");
 static_assert(offsetof(CraftingIngredient_C_Refresh, InventoryCount) == 0x000004, "Member 'CraftingIngredient_C_Refresh::InventoryCount' has a wrong offset!");
 static_assert(offsetof(CraftingIngredient_C_Refresh, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'CraftingIngredient_C_Refresh::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -80,8 +80,8 @@ static_assert(offsetof(CraftingIngredient_C_Refresh, CallFunc_GetItemDefinitionS
 static_assert(offsetof(CraftingIngredient_C_Refresh, CallFunc_GetNumInInventory_ReturnValue) == 0x000180, "Member 'CraftingIngredient_C_Refresh::CallFunc_GetNumInInventory_ReturnValue' has a wrong offset!");
 
 // Function CraftingIngredient.CraftingIngredient_C.Get Tooltip
-// 0x0C4D (0x0C4D - 0x0000)
-struct alignas(0xC4D) CraftingIngredient_C_Get_Tooltip final
+// 0x0048 (0x0048 - 0x0000)
+struct CraftingIngredient_C_Get_Tooltip final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -90,8 +90,8 @@ public:
 	class FText                                   CallFunc_GetSingleLineDescription_ReturnValue;     // 0x0028(0x0018)()
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CraftingIngredient_C_Get_Tooltip) == 0x000C4D, "Wrong alignment on CraftingIngredient_C_Get_Tooltip");
-static_assert(sizeof(CraftingIngredient_C_Get_Tooltip) == 0x000C4D, "Wrong size on CraftingIngredient_C_Get_Tooltip");
+static_assert(alignof(CraftingIngredient_C_Get_Tooltip) == 0x000008, "Wrong alignment on CraftingIngredient_C_Get_Tooltip");
+static_assert(sizeof(CraftingIngredient_C_Get_Tooltip) == 0x000048, "Wrong size on CraftingIngredient_C_Get_Tooltip");
 static_assert(offsetof(CraftingIngredient_C_Get_Tooltip, ReturnValue) == 0x000000, "Member 'CraftingIngredient_C_Get_Tooltip::ReturnValue' has a wrong offset!");
 static_assert(offsetof(CraftingIngredient_C_Get_Tooltip, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'CraftingIngredient_C_Get_Tooltip::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CraftingIngredient_C_Get_Tooltip, CallFunc_GetDisplayName_ReturnValue) == 0x000010, "Member 'CraftingIngredient_C_Get_Tooltip::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
@@ -99,8 +99,8 @@ static_assert(offsetof(CraftingIngredient_C_Get_Tooltip, CallFunc_GetSingleLineD
 static_assert(offsetof(CraftingIngredient_C_Get_Tooltip, CallFunc_Create_Basic_Tooltip_Output) == 0x000040, "Member 'CraftingIngredient_C_Get_Tooltip::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
 // Function CraftingIngredient.CraftingIngredient_C.ShowDivider
-// 0x1D60 (0x1D60 - 0x0000)
-struct alignas(0x1D60) CraftingIngredient_C_ShowDivider final
+// 0x0005 (0x0005 - 0x0000)
+struct CraftingIngredient_C_ShowDivider final
 {
 public:
 	bool                                          Show;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -109,8 +109,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CraftingIngredient_C_ShowDivider) == 0x001D60, "Wrong alignment on CraftingIngredient_C_ShowDivider");
-static_assert(sizeof(CraftingIngredient_C_ShowDivider) == 0x001D60, "Wrong size on CraftingIngredient_C_ShowDivider");
+static_assert(alignof(CraftingIngredient_C_ShowDivider) == 0x000001, "Wrong alignment on CraftingIngredient_C_ShowDivider");
+static_assert(sizeof(CraftingIngredient_C_ShowDivider) == 0x000005, "Wrong size on CraftingIngredient_C_ShowDivider");
 static_assert(offsetof(CraftingIngredient_C_ShowDivider, Show) == 0x000000, "Member 'CraftingIngredient_C_ShowDivider::Show' has a wrong offset!");
 static_assert(offsetof(CraftingIngredient_C_ShowDivider, Temp_bool_Variable) == 0x000001, "Member 'CraftingIngredient_C_ShowDivider::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(CraftingIngredient_C_ShowDivider, Temp_byte_Variable) == 0x000002, "Member 'CraftingIngredient_C_ShowDivider::Temp_byte_Variable' has a wrong offset!");

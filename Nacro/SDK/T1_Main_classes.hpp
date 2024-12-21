@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SkillTreepAGEColors_structs.hpp"
 #include "SkillTreePages_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SkillTreepAGEColors_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
 
@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass T1_Main.T1_Main_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x03C8 (0x06F8 - 0x0330)
 class UT1_Main_C final : public UFortSkillTreePageWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          Background;                                        // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNodeBackground_C*                      Base1;                                             // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNodeBackground_C*                      Base2;                                             // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -121,7 +121,8 @@ public:
 	class UNodeBackground_C*                      Utility3;                                          // 0x0620(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	ESkillTreePages                               Pages;                                             // 0x0628(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_629[0x3];                                      // 0x0629(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSkillTreePageColors                   PageColors;                                        // 0x062C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FSkillTreePageColors                   PageColors;                                        // 0x062C(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	uint8                                         Pad_6EC[0x4];                                      // 0x06EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDefaultSkillNode_C*                    DefaultSkillNode_C_176;                            // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -139,8 +140,8 @@ public:
 		return GetDefaultObjImpl<UT1_Main_C>();
 	}
 };
-static_assert(alignof(UT1_Main_C) == 0x322CBBB8, "Wrong alignment on UT1_Main_C");
-static_assert(sizeof(UT1_Main_C) == 0x322CBBB8, "Wrong size on UT1_Main_C");
+static_assert(alignof(UT1_Main_C) == 0x000008, "Wrong alignment on UT1_Main_C");
+static_assert(sizeof(UT1_Main_C) == 0x0006F8, "Wrong size on UT1_Main_C");
 static_assert(offsetof(UT1_Main_C, UberGraphFrame) == 0x000330, "Member 'UT1_Main_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UT1_Main_C, Background) == 0x000338, "Member 'UT1_Main_C::Background' has a wrong offset!");
 static_assert(offsetof(UT1_Main_C, Base1) == 0x000340, "Member 'UT1_Main_C::Base1' has a wrong offset!");

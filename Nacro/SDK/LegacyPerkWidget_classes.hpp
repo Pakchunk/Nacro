@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LegacyPerkWidget.LegacyPerkWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0150 (0x0418 - 0x02C8)
 class ULegacyPerkWidget_C final : public UFortPerkWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C8(0x0008)(Transient, DuplicateTransient)
 	class UBorder*                                BorderAbility;                                     // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderFrame;                                       // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderHighlightBorder;                             // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,7 +48,7 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcherBasicPerkOrAbilityPerk;              // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        WidgetSwitcherTextOrImage;                         // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        WidgetSwitcherTierOrLevel;                         // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            DemoImage;                                         // 0x0380(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            DemoImage;                                         // 0x0380(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bTextOnly;                                         // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          ShowTextWithIcon;                                  // 0x0411(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
@@ -80,8 +80,8 @@ public:
 		return GetDefaultObjImpl<ULegacyPerkWidget_C>();
 	}
 };
-static_assert(alignof(ULegacyPerkWidget_C) == 0x322CBBB8, "Wrong alignment on ULegacyPerkWidget_C");
-static_assert(sizeof(ULegacyPerkWidget_C) == 0x322CBBB8, "Wrong size on ULegacyPerkWidget_C");
+static_assert(alignof(ULegacyPerkWidget_C) == 0x000008, "Wrong alignment on ULegacyPerkWidget_C");
+static_assert(sizeof(ULegacyPerkWidget_C) == 0x000418, "Wrong size on ULegacyPerkWidget_C");
 static_assert(offsetof(ULegacyPerkWidget_C, UberGraphFrame) == 0x0002C8, "Member 'ULegacyPerkWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULegacyPerkWidget_C, BorderAbility) == 0x0002D0, "Member 'ULegacyPerkWidget_C::BorderAbility' has a wrong offset!");
 static_assert(offsetof(ULegacyPerkWidget_C, BorderFrame) == 0x0002D8, "Member 'ULegacyPerkWidget_C::BorderFrame' has a wrong offset!");

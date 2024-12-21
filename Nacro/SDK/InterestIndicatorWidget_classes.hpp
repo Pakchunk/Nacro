@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InterestIndicatorWidget.InterestIndicatorWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x02D8 - 0x0298)
 class UInterestIndicatorWidget_C final : public UFortActorIndicatorWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       NewAnimation_2;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       NewAnimation_1;                                    // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 backgroundpulse;                                   // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -51,8 +51,8 @@ public:
 		return GetDefaultObjImpl<UInterestIndicatorWidget_C>();
 	}
 };
-static_assert(alignof(UInterestIndicatorWidget_C) == 0x322CBBB8, "Wrong alignment on UInterestIndicatorWidget_C");
-static_assert(sizeof(UInterestIndicatorWidget_C) == 0x322CBBB8, "Wrong size on UInterestIndicatorWidget_C");
+static_assert(alignof(UInterestIndicatorWidget_C) == 0x000008, "Wrong alignment on UInterestIndicatorWidget_C");
+static_assert(sizeof(UInterestIndicatorWidget_C) == 0x0002D8, "Wrong size on UInterestIndicatorWidget_C");
 static_assert(offsetof(UInterestIndicatorWidget_C, UberGraphFrame) == 0x000298, "Member 'UInterestIndicatorWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_2) == 0x0002A0, "Member 'UInterestIndicatorWidget_C::NewAnimation_2' has a wrong offset!");
 static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_1) == 0x0002A8, "Member 'UInterestIndicatorWidget_C::NewAnimation_1' has a wrong offset!");

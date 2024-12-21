@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FounderBadgeTooltip.FounderBadgeTooltip_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UFounderBadgeTooltip_C final : public UCommonUserWidget
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UFounderBadgeTooltip_C>();
 	}
 };
-static_assert(alignof(UFounderBadgeTooltip_C) == 0x322CBBB8, "Wrong alignment on UFounderBadgeTooltip_C");
-static_assert(sizeof(UFounderBadgeTooltip_C) == 0x322CBBB8, "Wrong size on UFounderBadgeTooltip_C");
+static_assert(alignof(UFounderBadgeTooltip_C) == 0x000008, "Wrong alignment on UFounderBadgeTooltip_C");
+static_assert(sizeof(UFounderBadgeTooltip_C) == 0x000240, "Wrong size on UFounderBadgeTooltip_C");
 static_assert(offsetof(UFounderBadgeTooltip_C, HBoxBoost) == 0x000238, "Member 'UFounderBadgeTooltip_C::HBoxBoost' has a wrong offset!");
 
 }

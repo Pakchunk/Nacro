@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00D8 (0x0338 - 0x0260)
 class UFrontEndRewards_ChoiceRewards_C final : public UFortRewardNotificationSubWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       AnimFadeOut;                                       // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimFadeIn;                                        // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderConfirmationDim;                             // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -50,7 +50,7 @@ public:
 	float                                         BackgroundShadowDepth;                             // 0x0314(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HighlightedShadowDepth;                            // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    InspectAction;                                     // 0x0320(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InspectAction;                                     // 0x0320(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bCardSelectionDisabled;                            // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -98,8 +98,8 @@ public:
 		return GetDefaultObjImpl<UFrontEndRewards_ChoiceRewards_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_ChoiceRewards_C) == 0x322CBBB8, "Wrong alignment on UFrontEndRewards_ChoiceRewards_C");
-static_assert(sizeof(UFrontEndRewards_ChoiceRewards_C) == 0x322CBBB8, "Wrong size on UFrontEndRewards_ChoiceRewards_C");
+static_assert(alignof(UFrontEndRewards_ChoiceRewards_C) == 0x000008, "Wrong alignment on UFrontEndRewards_ChoiceRewards_C");
+static_assert(sizeof(UFrontEndRewards_ChoiceRewards_C) == 0x000338, "Wrong size on UFrontEndRewards_ChoiceRewards_C");
 static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, UberGraphFrame) == 0x000260, "Member 'UFrontEndRewards_ChoiceRewards_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, AnimFadeOut) == 0x000268, "Member 'UFrontEndRewards_ChoiceRewards_C::AnimFadeOut' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, AnimFadeIn) == 0x000270, "Member 'UFrontEndRewards_ChoiceRewards_C::AnimFadeIn' has a wrong offset!");

@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.BlueprintUpdateAnimation
-// 0x2E0065 (0x2E0065 - 0x0000)
-struct alignas(0x2E0065) VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation) == 0x2E0065, "Wrong alignment on VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation) == 0x2E0065, "Wrong size on VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
-
 // Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.ExecuteUbergraph_VinderTech_GliderChute_AnimBP
 // 0x0050 (0x0050 - 0x0000)
 struct VinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTech_GliderChute_AnimBP final
@@ -67,6 +56,17 @@ static_assert(offsetof(VinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTe
 static_assert(offsetof(VinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTech_GliderChute_AnimBP, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x000044, "Member 'VinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTech_GliderChute_AnimBP::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
 static_assert(offsetof(VinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTech_GliderChute_AnimBP, K2Node_Event_DeltaTimeX) == 0x000048, "Member 'VinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTech_GliderChute_AnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
 static_assert(offsetof(VinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTech_GliderChute_AnimBP, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x00004C, "Member 'VinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTech_GliderChute_AnimBP::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation");
+static_assert(sizeof(VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation");
+static_assert(offsetof(VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'VinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
 
 }
 

@@ -19,21 +19,21 @@ namespace SDK::Params
 {
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Selection Changed__DelegateSignature
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature final
 {
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           Gameplay_Tag_0;                                    // 0x0008(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Gameplay_Tag_0;                                    // 0x0008(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature) == 0x11821D80, "Wrong alignment on OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature");
-static_assert(sizeof(OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature) == 0x11821D80, "Wrong size on OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature");
+static_assert(alignof(OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature");
+static_assert(sizeof(OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature) == 0x000010, "Wrong size on OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature");
 static_assert(offsetof(OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 static_assert(offsetof(OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature, Gameplay_Tag_0) == 0x000008, "Member 'OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature::Gameplay_Tag_0' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.ExecuteUbergraph_OptionsMenuHudRotator
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator final
 {
 public:
@@ -45,9 +45,10 @@ public:
 	int32                                         K2Node_Event_InIndexInList;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bSelected;                            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0028(0x11829280)(ConstParm)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x00A0(0x11827900)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00D8(0x11829280)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0028(0x0078)(ConstParm)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x00A0(0x0034)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00D8(0x0078)(ConstParm)
 	int32                                         K2Node_ComponentBoundEvent_Value;                  // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_Event_InData;                               // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -58,8 +59,8 @@ public:
 	int32                                         CallFunc_Conv_BoolToInt_ReturnValue;               // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0178(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator) == 0x11829280, "Wrong alignment on OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator");
-static_assert(sizeof(OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator) == 0x11829280, "Wrong size on OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator");
+static_assert(alignof(OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator) == 0x000008, "Wrong alignment on OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator");
+static_assert(sizeof(OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator) == 0x000188, "Wrong size on OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator");
 static_assert(offsetof(OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator, EntryPoint) == 0x000000, "Member 'OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator::EntryPoint' has a wrong offset!");
 static_assert(offsetof(OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator, K2Node_Event_Callback) == 0x000008, "Member 'OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator::K2Node_Event_Callback' has a wrong offset!");
 static_assert(offsetof(OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator, K2Node_Event_bExpanded) == 0x000018, "Member 'OptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator::K2Node_Event_bExpanded' has a wrong offset!");
@@ -101,27 +102,28 @@ static_assert(sizeof(OptionsMenuHudRotator_C_BndEvt__TextRotator_K2Node_Componen
 static_assert(offsetof(OptionsMenuHudRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature, Value) == 0x000000, "Member 'OptionsMenuHudRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature::Value' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnMouseEnter
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct OptionsMenuHudRotator_C_OnMouseEnter final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_OnMouseEnter) == 0x11829280, "Wrong alignment on OptionsMenuHudRotator_C_OnMouseEnter");
-static_assert(sizeof(OptionsMenuHudRotator_C_OnMouseEnter) == 0x11829280, "Wrong size on OptionsMenuHudRotator_C_OnMouseEnter");
+static_assert(alignof(OptionsMenuHudRotator_C_OnMouseEnter) == 0x000008, "Wrong alignment on OptionsMenuHudRotator_C_OnMouseEnter");
+static_assert(sizeof(OptionsMenuHudRotator_C_OnMouseEnter) == 0x0000B0, "Wrong size on OptionsMenuHudRotator_C_OnMouseEnter");
 static_assert(offsetof(OptionsMenuHudRotator_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'OptionsMenuHudRotator_C_OnMouseEnter::MyGeometry' has a wrong offset!");
 static_assert(offsetof(OptionsMenuHudRotator_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'OptionsMenuHudRotator_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnMouseLeave
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct OptionsMenuHudRotator_C_OnMouseLeave final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_OnMouseLeave) == 0x11829280, "Wrong alignment on OptionsMenuHudRotator_C_OnMouseLeave");
-static_assert(sizeof(OptionsMenuHudRotator_C_OnMouseLeave) == 0x11829280, "Wrong size on OptionsMenuHudRotator_C_OnMouseLeave");
+static_assert(alignof(OptionsMenuHudRotator_C_OnMouseLeave) == 0x000008, "Wrong alignment on OptionsMenuHudRotator_C_OnMouseLeave");
+static_assert(sizeof(OptionsMenuHudRotator_C_OnMouseLeave) == 0x000078, "Wrong size on OptionsMenuHudRotator_C_OnMouseLeave");
 static_assert(offsetof(OptionsMenuHudRotator_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'OptionsMenuHudRotator_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.SetSelected
@@ -136,35 +138,35 @@ static_assert(sizeof(OptionsMenuHudRotator_C_SetSelected) == 0x000001, "Wrong si
 static_assert(offsetof(OptionsMenuHudRotator_C_SetSelected, bSelected) == 0x000000, "Member 'OptionsMenuHudRotator_C_SetSelected::bSelected' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.SetIndexInList
-// 0x0053 (0x0053 - 0x0000)
-struct alignas(0x53) OptionsMenuHudRotator_C_SetIndexInList final
+// 0x0004 (0x0004 - 0x0000)
+struct OptionsMenuHudRotator_C_SetIndexInList final
 {
 public:
 	int32                                         InIndexInList;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_SetIndexInList) == 0x000053, "Wrong alignment on OptionsMenuHudRotator_C_SetIndexInList");
-static_assert(sizeof(OptionsMenuHudRotator_C_SetIndexInList) == 0x000053, "Wrong size on OptionsMenuHudRotator_C_SetIndexInList");
+static_assert(alignof(OptionsMenuHudRotator_C_SetIndexInList) == 0x000004, "Wrong alignment on OptionsMenuHudRotator_C_SetIndexInList");
+static_assert(sizeof(OptionsMenuHudRotator_C_SetIndexInList) == 0x000004, "Wrong size on OptionsMenuHudRotator_C_SetIndexInList");
 static_assert(offsetof(OptionsMenuHudRotator_C_SetIndexInList, InIndexInList) == 0x000000, "Member 'OptionsMenuHudRotator_C_SetIndexInList::InIndexInList' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.SetExpanded
-// 0x007A (0x007A - 0x0000)
-struct alignas(0x7A) OptionsMenuHudRotator_C_SetExpanded final
+// 0x0001 (0x0001 - 0x0000)
+struct OptionsMenuHudRotator_C_SetExpanded final
 {
 public:
 	bool                                          bExpanded;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_SetExpanded) == 0x00007A, "Wrong alignment on OptionsMenuHudRotator_C_SetExpanded");
-static_assert(sizeof(OptionsMenuHudRotator_C_SetExpanded) == 0x00007A, "Wrong size on OptionsMenuHudRotator_C_SetExpanded");
+static_assert(alignof(OptionsMenuHudRotator_C_SetExpanded) == 0x000001, "Wrong alignment on OptionsMenuHudRotator_C_SetExpanded");
+static_assert(sizeof(OptionsMenuHudRotator_C_SetExpanded) == 0x000001, "Wrong size on OptionsMenuHudRotator_C_SetExpanded");
 static_assert(offsetof(OptionsMenuHudRotator_C_SetExpanded, bExpanded) == 0x000000, "Member 'OptionsMenuHudRotator_C_SetExpanded::bExpanded' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.RegisterOnClicked
 // 0x0010 (0x0010 - 0x0000)
-struct OptionsMenuHudRotator_C_RegisterOnClicked final
+struct alignas(0x08) OptionsMenuHudRotator_C_RegisterOnClicked final
 {
 public:
 	TDelegate<void(class UUserWidget* Widget)>    Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_RegisterOnClicked) == 0x000004, "Wrong alignment on OptionsMenuHudRotator_C_RegisterOnClicked");
+static_assert(alignof(OptionsMenuHudRotator_C_RegisterOnClicked) == 0x000008, "Wrong alignment on OptionsMenuHudRotator_C_RegisterOnClicked");
 static_assert(sizeof(OptionsMenuHudRotator_C_RegisterOnClicked) == 0x000010, "Wrong size on OptionsMenuHudRotator_C_RegisterOnClicked");
 static_assert(offsetof(OptionsMenuHudRotator_C_RegisterOnClicked, Callback) == 0x000000, "Member 'OptionsMenuHudRotator_C_RegisterOnClicked::Callback' has a wrong offset!");
 
@@ -179,41 +181,42 @@ static_assert(alignof(OptionsMenuHudRotator_C_Update_Row_Selector) == 0x000004, 
 static_assert(sizeof(OptionsMenuHudRotator_C_Update_Row_Selector) == 0x000004, "Wrong size on OptionsMenuHudRotator_C_Update_Row_Selector");
 static_assert(offsetof(OptionsMenuHudRotator_C_Update_Row_Selector, Currently_Selected) == 0x000000, "Member 'OptionsMenuHudRotator_C_Update_Row_Selector::Currently_Selected' has a wrong offset!");
 
-// Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Center on Widget
-// 0x0040 (0x0040 - 0x0000)
-struct alignas(0x40) OptionsMenuHudRotator_C_Center_on_Widget final
+// Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Center On Widget
+// 0x0008 (0x0008 - 0x0000)
+struct OptionsMenuHudRotator_C_Center_On_Widget final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_Center_on_Widget) == 0x000040, "Wrong alignment on OptionsMenuHudRotator_C_Center_on_Widget");
-static_assert(sizeof(OptionsMenuHudRotator_C_Center_on_Widget) == 0x000040, "Wrong size on OptionsMenuHudRotator_C_Center_on_Widget");
-static_assert(offsetof(OptionsMenuHudRotator_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuHudRotator_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(alignof(OptionsMenuHudRotator_C_Center_On_Widget) == 0x000008, "Wrong alignment on OptionsMenuHudRotator_C_Center_On_Widget");
+static_assert(sizeof(OptionsMenuHudRotator_C_Center_On_Widget) == 0x000008, "Wrong size on OptionsMenuHudRotator_C_Center_On_Widget");
+static_assert(offsetof(OptionsMenuHudRotator_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuHudRotator_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Update Options
-// 0x02AC (0x02AC - 0x0000)
-struct alignas(0x2AC) OptionsMenuHudRotator_C_Update_Options final
+// 0x0010 (0x0010 - 0x0000)
+struct OptionsMenuHudRotator_C_Update_Options final
 {
 public:
 	TArray<class FText>                           NewParam;                                          // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_Update_Options) == 0x0002AC, "Wrong alignment on OptionsMenuHudRotator_C_Update_Options");
-static_assert(sizeof(OptionsMenuHudRotator_C_Update_Options) == 0x0002AC, "Wrong size on OptionsMenuHudRotator_C_Update_Options");
+static_assert(alignof(OptionsMenuHudRotator_C_Update_Options) == 0x000008, "Wrong alignment on OptionsMenuHudRotator_C_Update_Options");
+static_assert(sizeof(OptionsMenuHudRotator_C_Update_Options) == 0x000010, "Wrong size on OptionsMenuHudRotator_C_Update_Options");
 static_assert(offsetof(OptionsMenuHudRotator_C_Update_Options, NewParam) == 0x000000, "Member 'OptionsMenuHudRotator_C_Update_Options::NewParam' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnFocusReceived
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01B8 (0x01B8 - 0x0000)
 struct OptionsMenuHudRotator_C_OnFocusReceived final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x11827900)(Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x0008)(Parm, NoDestructor)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x00B8)()
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_OnFocusReceived) == 0x11827900, "Wrong alignment on OptionsMenuHudRotator_C_OnFocusReceived");
-static_assert(sizeof(OptionsMenuHudRotator_C_OnFocusReceived) == 0x11827900, "Wrong size on OptionsMenuHudRotator_C_OnFocusReceived");
+static_assert(alignof(OptionsMenuHudRotator_C_OnFocusReceived) == 0x000008, "Wrong alignment on OptionsMenuHudRotator_C_OnFocusReceived");
+static_assert(sizeof(OptionsMenuHudRotator_C_OnFocusReceived) == 0x0001B8, "Wrong size on OptionsMenuHudRotator_C_OnFocusReceived");
 static_assert(offsetof(OptionsMenuHudRotator_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'OptionsMenuHudRotator_C_OnFocusReceived::MyGeometry' has a wrong offset!");
 static_assert(offsetof(OptionsMenuHudRotator_C_OnFocusReceived, InFocusEvent) == 0x000034, "Member 'OptionsMenuHudRotator_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
 static_assert(offsetof(OptionsMenuHudRotator_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'OptionsMenuHudRotator_C_OnFocusReceived::ReturnValue' has a wrong offset!");
@@ -232,14 +235,14 @@ static_assert(sizeof(OptionsMenuHudRotator_C_GetData) == 0x000008, "Wrong size o
 static_assert(offsetof(OptionsMenuHudRotator_C_GetData, ReturnValue) == 0x000000, "Member 'OptionsMenuHudRotator_C_GetData::ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.IsItemExpanded
-// 0x0048 (0x0048 - 0x0000)
-struct alignas(0x48) OptionsMenuHudRotator_C_IsItemExpanded final
+// 0x0001 (0x0001 - 0x0000)
+struct OptionsMenuHudRotator_C_IsItemExpanded final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuHudRotator_C_IsItemExpanded) == 0x000048, "Wrong alignment on OptionsMenuHudRotator_C_IsItemExpanded");
-static_assert(sizeof(OptionsMenuHudRotator_C_IsItemExpanded) == 0x000048, "Wrong size on OptionsMenuHudRotator_C_IsItemExpanded");
+static_assert(alignof(OptionsMenuHudRotator_C_IsItemExpanded) == 0x000001, "Wrong alignment on OptionsMenuHudRotator_C_IsItemExpanded");
+static_assert(sizeof(OptionsMenuHudRotator_C_IsItemExpanded) == 0x000001, "Wrong size on OptionsMenuHudRotator_C_IsItemExpanded");
 static_assert(offsetof(OptionsMenuHudRotator_C_IsItemExpanded, ReturnValue) == 0x000000, "Member 'OptionsMenuHudRotator_C_IsItemExpanded::ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.GetIndentLevel

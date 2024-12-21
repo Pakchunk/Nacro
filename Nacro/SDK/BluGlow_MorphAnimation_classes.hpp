@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BluGlow_MorphAnimation.BluGlow_MorphAnimation_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0070 (0x03F8 - 0x0388)
 class ABluGlow_MorphAnimation_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class UPointLightComponent*                   PointLight;                                        // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               NewParticleSystem;                                 // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   BluGlowModel;                                      // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -39,7 +39,7 @@ public:
 	int32                                         IntCounter;                                        // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Initial_Sphere_Scale;                              // 0x03DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Additional_Texture_Rotation_Rate;                  // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Rotation;                                          // 0x03E4(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FRotator                               Rotation;                                          // 0x03E4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         Number_of_Morph_Targets;                           // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumberOfMorphTargets;                              // 0x03F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -61,8 +61,8 @@ public:
 		return GetDefaultObjImpl<ABluGlow_MorphAnimation_C>();
 	}
 };
-static_assert(alignof(ABluGlow_MorphAnimation_C) == 0x11821D80, "Wrong alignment on ABluGlow_MorphAnimation_C");
-static_assert(sizeof(ABluGlow_MorphAnimation_C) == 0x11821D80, "Wrong size on ABluGlow_MorphAnimation_C");
+static_assert(alignof(ABluGlow_MorphAnimation_C) == 0x000008, "Wrong alignment on ABluGlow_MorphAnimation_C");
+static_assert(sizeof(ABluGlow_MorphAnimation_C) == 0x0003F8, "Wrong size on ABluGlow_MorphAnimation_C");
 static_assert(offsetof(ABluGlow_MorphAnimation_C, UberGraphFrame) == 0x000388, "Member 'ABluGlow_MorphAnimation_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABluGlow_MorphAnimation_C, PointLight) == 0x000390, "Member 'ABluGlow_MorphAnimation_C::PointLight' has a wrong offset!");
 static_assert(offsetof(ABluGlow_MorphAnimation_C, NewParticleSystem) == 0x000398, "Member 'ABluGlow_MorphAnimation_C::NewParticleSystem' has a wrong offset!");

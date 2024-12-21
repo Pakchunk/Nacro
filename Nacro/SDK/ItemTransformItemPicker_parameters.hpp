@@ -29,7 +29,7 @@ static_assert(offsetof(ItemTransformItemPicker_C_OnItemSelected__DelegateSignatu
 
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.ExecuteUbergraph_ItemTransformItemPicker
 // 0x0010 (0x0010 - 0x0000)
-struct ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker final
+struct alignas(0x08) ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,7 +37,7 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_ComponentBoundEvent_TabId;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker) == 0x000004, "Wrong alignment on ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker");
+static_assert(alignof(ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker) == 0x000008, "Wrong alignment on ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker");
 static_assert(sizeof(ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker) == 0x000010, "Wrong size on ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker");
 static_assert(offsetof(ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker, EntryPoint) == 0x000000, "Member 'ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker, K2Node_Event_IsDesignTime) == 0x000004, "Member 'ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker::K2Node_Event_IsDesignTime' has a wrong offset!");
@@ -45,12 +45,12 @@ static_assert(offsetof(ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformI
 
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature final
+struct alignas(0x08) ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000004, "Wrong alignment on ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+static_assert(alignof(ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
 static_assert(sizeof(ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature) == 0x000008, "Wrong size on ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
 static_assert(offsetof(ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature, TabId) == 0x000000, "Member 'ItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature::TabId' has a wrong offset!");
 
@@ -67,13 +67,13 @@ static_assert(offsetof(ItemTransformItemPicker_C_PreConstruct, IsDesignTime) == 
 
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.SetupItemPicker
 // 0x0020 (0x0020 - 0x0000)
-struct ItemTransformItemPicker_C_SetupItemPicker final
+struct alignas(0x08) ItemTransformItemPicker_C_SetupItemPicker final
 {
 public:
 	TDelegate<void(class UFortItem* SelectedItem)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class UFortItem* SelectedItem)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ItemTransformItemPicker_C_SetupItemPicker) == 0x000004, "Wrong alignment on ItemTransformItemPicker_C_SetupItemPicker");
+static_assert(alignof(ItemTransformItemPicker_C_SetupItemPicker) == 0x000008, "Wrong alignment on ItemTransformItemPicker_C_SetupItemPicker");
 static_assert(sizeof(ItemTransformItemPicker_C_SetupItemPicker) == 0x000020, "Wrong size on ItemTransformItemPicker_C_SetupItemPicker");
 static_assert(offsetof(ItemTransformItemPicker_C_SetupItemPicker, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemTransformItemPicker_C_SetupItemPicker::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ItemTransformItemPicker_C_SetupItemPicker, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'ItemTransformItemPicker_C_SetupItemPicker::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -158,7 +158,7 @@ static_assert(sizeof(ItemTransformItemPicker_C_HandleItemCommitted) == 0x000008,
 static_assert(offsetof(ItemTransformItemPicker_C_HandleItemCommitted, Item) == 0x000000, "Member 'ItemTransformItemPicker_C_HandleItemCommitted::Item' has a wrong offset!");
 
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.SetupFilterTabList
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct ItemTransformItemPicker_C_SetupFilterTabList final
 {
 public:
@@ -166,13 +166,13 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemTransformFilterTabLabelInfo   CallFunc_Array_Get_Item;                           // 0x0010(0x1182E980)()
+	struct FFortItemTransformFilterTabLabelInfo   CallFunc_Array_Get_Item;                           // 0x0010(0x00C8)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_RegisterFortTab_ReturnValue;              // 0x00DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformItemPicker_C_SetupFilterTabList) == 0x1182E980, "Wrong alignment on ItemTransformItemPicker_C_SetupFilterTabList");
-static_assert(sizeof(ItemTransformItemPicker_C_SetupFilterTabList) == 0x1182E980, "Wrong size on ItemTransformItemPicker_C_SetupFilterTabList");
+static_assert(alignof(ItemTransformItemPicker_C_SetupFilterTabList) == 0x000008, "Wrong alignment on ItemTransformItemPicker_C_SetupFilterTabList");
+static_assert(sizeof(ItemTransformItemPicker_C_SetupFilterTabList) == 0x0000E0, "Wrong size on ItemTransformItemPicker_C_SetupFilterTabList");
 static_assert(offsetof(ItemTransformItemPicker_C_SetupFilterTabList, Temp_int_Array_Index_Variable) == 0x000000, "Member 'ItemTransformItemPicker_C_SetupFilterTabList::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTransformItemPicker_C_SetupFilterTabList, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'ItemTransformItemPicker_C_SetupFilterTabList::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTransformItemPicker_C_SetupFilterTabList, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'ItemTransformItemPicker_C_SetupFilterTabList::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -182,7 +182,7 @@ static_assert(offsetof(ItemTransformItemPicker_C_SetupFilterTabList, CallFunc_Le
 static_assert(offsetof(ItemTransformItemPicker_C_SetupFilterTabList, CallFunc_RegisterFortTab_ReturnValue) == 0x0000DD, "Member 'ItemTransformItemPicker_C_SetupFilterTabList::CallFunc_RegisterFortTab_ReturnValue' has a wrong offset!");
 
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.SetFilter
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct ItemTransformItemPicker_C_SetFilter final
 {
 public:
@@ -195,14 +195,14 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemTransformFilterTabLabelInfo   CallFunc_Array_Get_Item;                           // 0x0020(0x1182E980)()
+	struct FFortItemTransformFilterTabLabelInfo   CallFunc_Array_Get_Item;                           // 0x0020(0x00C8)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x00EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformItemPicker_C_SetFilter) == 0x1182E980, "Wrong alignment on ItemTransformItemPicker_C_SetFilter");
-static_assert(sizeof(ItemTransformItemPicker_C_SetFilter) == 0x1182E980, "Wrong size on ItemTransformItemPicker_C_SetFilter");
+static_assert(alignof(ItemTransformItemPicker_C_SetFilter) == 0x000008, "Wrong alignment on ItemTransformItemPicker_C_SetFilter");
+static_assert(sizeof(ItemTransformItemPicker_C_SetFilter) == 0x0000F0, "Wrong size on ItemTransformItemPicker_C_SetFilter");
 static_assert(offsetof(ItemTransformItemPicker_C_SetFilter, FilterName) == 0x000000, "Member 'ItemTransformItemPicker_C_SetFilter::FilterName' has a wrong offset!");
 static_assert(offsetof(ItemTransformItemPicker_C_SetFilter, Temp_bool_True_if_break_was_hit_Variable) == 0x000008, "Member 'ItemTransformItemPicker_C_SetFilter::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
 static_assert(offsetof(ItemTransformItemPicker_C_SetFilter, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'ItemTransformItemPicker_C_SetFilter::Temp_int_Array_Index_Variable' has a wrong offset!");

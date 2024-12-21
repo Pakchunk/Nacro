@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PerkWidgetNew.PerkWidgetNew_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01A8 (0x0478 - 0x02D0)
 class UPerkWidgetNew_C final : public UFortPerkWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(Transient, DuplicateTransient)
 	class UBorder*                                BorderAbility;                                     // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderHighlightBorder;                             // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderHightlightBackground;                        // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -50,7 +50,7 @@ public:
 	class UVerticalBox*                           SmallInfo;                                         // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        WidgetSwitcherBasicPerkOrAbilityPerk;              // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        WidgetSwitcherTierOrLevel;                         // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            DemoImage;                                         // 0x0398(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            DemoImage;                                         // 0x0398(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bIncludeName;                                      // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bIncludeDescription;                               // 0x0429(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_42A[0x6];                                      // 0x042A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -60,7 +60,7 @@ public:
 	uint8                                         Pad_43A[0x6];                                      // 0x043A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Locked_Text_Style;                                 // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Locked_Description_Style;                          // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                ListPadding;                                       // 0x0450(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FMargin                                ListPadding;                                       // 0x0450(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class UClass*                                 Default_Description_Style;                         // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Default_Text_Style;                                // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bEnableMouseTooltips;                              // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -93,8 +93,8 @@ public:
 		return GetDefaultObjImpl<UPerkWidgetNew_C>();
 	}
 };
-static_assert(alignof(UPerkWidgetNew_C) == 0x322CBBB8, "Wrong alignment on UPerkWidgetNew_C");
-static_assert(sizeof(UPerkWidgetNew_C) == 0x322CBBB8, "Wrong size on UPerkWidgetNew_C");
+static_assert(alignof(UPerkWidgetNew_C) == 0x000008, "Wrong alignment on UPerkWidgetNew_C");
+static_assert(sizeof(UPerkWidgetNew_C) == 0x000478, "Wrong size on UPerkWidgetNew_C");
 static_assert(offsetof(UPerkWidgetNew_C, UberGraphFrame) == 0x0002D0, "Member 'UPerkWidgetNew_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPerkWidgetNew_C, BorderAbility) == 0x0002D8, "Member 'UPerkWidgetNew_C::BorderAbility' has a wrong offset!");
 static_assert(offsetof(UPerkWidgetNew_C, BorderHighlightBorder) == 0x0002E0, "Member 'UPerkWidgetNew_C::BorderHighlightBorder' has a wrong offset!");

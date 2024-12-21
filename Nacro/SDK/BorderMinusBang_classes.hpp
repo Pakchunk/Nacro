@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-Bang.Border-Bang_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusBang_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusBang_C>();
 	}
 };
-static_assert(alignof(UBorderMinusBang_C) == 0x11827900, "Wrong alignment on UBorderMinusBang_C");
-static_assert(sizeof(UBorderMinusBang_C) == 0x11827900, "Wrong size on UBorderMinusBang_C");
+static_assert(alignof(UBorderMinusBang_C) == 0x000008, "Wrong alignment on UBorderMinusBang_C");
+static_assert(sizeof(UBorderMinusBang_C) == 0x0000B8, "Wrong size on UBorderMinusBang_C");
 
 }
 

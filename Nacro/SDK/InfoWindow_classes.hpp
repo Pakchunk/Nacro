@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass InfoWindow.InfoWindow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0448 - 0x0410)
 class UInfoWindow_C final : public UFortInfoWindow
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CloseButton;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemIcon*                          EntryIcon;                                         // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       EntryText;                                         // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 		return GetDefaultObjImpl<UInfoWindow_C>();
 	}
 };
-static_assert(alignof(UInfoWindow_C) == 0x322CBBB8, "Wrong alignment on UInfoWindow_C");
-static_assert(sizeof(UInfoWindow_C) == 0x322CBBB8, "Wrong size on UInfoWindow_C");
+static_assert(alignof(UInfoWindow_C) == 0x000008, "Wrong alignment on UInfoWindow_C");
+static_assert(sizeof(UInfoWindow_C) == 0x000448, "Wrong size on UInfoWindow_C");
 static_assert(offsetof(UInfoWindow_C, UberGraphFrame) == 0x000410, "Member 'UInfoWindow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UInfoWindow_C, CloseButton) == 0x000418, "Member 'UInfoWindow_C::CloseButton' has a wrong offset!");
 static_assert(offsetof(UInfoWindow_C, EntryIcon) == 0x000420, "Member 'UInfoWindow_C::EntryIcon' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-TopBar-Timer.Border-TopBar-Timer_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusTopBarMinusTimer_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusTopBarMinusTimer_C>();
 	}
 };
-static_assert(alignof(UBorderMinusTopBarMinusTimer_C) == 0x11827900, "Wrong alignment on UBorderMinusTopBarMinusTimer_C");
-static_assert(sizeof(UBorderMinusTopBarMinusTimer_C) == 0x11827900, "Wrong size on UBorderMinusTopBarMinusTimer_C");
+static_assert(alignof(UBorderMinusTopBarMinusTimer_C) == 0x000008, "Wrong alignment on UBorderMinusTopBarMinusTimer_C");
+static_assert(sizeof(UBorderMinusTopBarMinusTimer_C) == 0x0000B8, "Wrong size on UBorderMinusTopBarMinusTimer_C");
 
 }
 

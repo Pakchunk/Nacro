@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HeroSquadManagementScreen.HeroSquadManagementScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0510 - 0x04E0)
 class UHeroSquadManagementScreen_C final : public UFortHeroSquadManagementScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04E0(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          BorderSlotInfo;                                    // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextSlotBody;                                      // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextSlotHeader;                                    // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    InputBackAction;                                   // 0x0500(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InputBackAction;                                   // 0x0500(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_HeroSquadManagementScreen(int32 EntryPoint);
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UHeroSquadManagementScreen_C>();
 	}
 };
-static_assert(alignof(UHeroSquadManagementScreen_C) == 0x322CBBB8, "Wrong alignment on UHeroSquadManagementScreen_C");
-static_assert(sizeof(UHeroSquadManagementScreen_C) == 0x322CBBB8, "Wrong size on UHeroSquadManagementScreen_C");
+static_assert(alignof(UHeroSquadManagementScreen_C) == 0x000008, "Wrong alignment on UHeroSquadManagementScreen_C");
+static_assert(sizeof(UHeroSquadManagementScreen_C) == 0x000510, "Wrong size on UHeroSquadManagementScreen_C");
 static_assert(offsetof(UHeroSquadManagementScreen_C, UberGraphFrame) == 0x0004E0, "Member 'UHeroSquadManagementScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHeroSquadManagementScreen_C, BorderSlotInfo) == 0x0004E8, "Member 'UHeroSquadManagementScreen_C::BorderSlotInfo' has a wrong offset!");
 static_assert(offsetof(UHeroSquadManagementScreen_C, TextSlotBody) == 0x0004F0, "Member 'UHeroSquadManagementScreen_C::TextSlotBody' has a wrong offset!");

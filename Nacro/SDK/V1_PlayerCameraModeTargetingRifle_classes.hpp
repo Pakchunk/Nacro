@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass v1_PlayerCameraModeTargetingRifle.v1_PlayerCameraModeTargetingRifle_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0110 - 0x0110)
 class UV1_PlayerCameraModeTargetingRifle_C final : public UV1_PlayerCameraModeBase_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UV1_PlayerCameraModeTargetingRifle_C>();
 	}
 };
-static_assert(alignof(UV1_PlayerCameraModeTargetingRifle_C) == 0x11821D80, "Wrong alignment on UV1_PlayerCameraModeTargetingRifle_C");
-static_assert(sizeof(UV1_PlayerCameraModeTargetingRifle_C) == 0x11821D80, "Wrong size on UV1_PlayerCameraModeTargetingRifle_C");
+static_assert(alignof(UV1_PlayerCameraModeTargetingRifle_C) == 0x000008, "Wrong alignment on UV1_PlayerCameraModeTargetingRifle_C");
+static_assert(sizeof(UV1_PlayerCameraModeTargetingRifle_C) == 0x000110, "Wrong size on UV1_PlayerCameraModeTargetingRifle_C");
 
 }
 

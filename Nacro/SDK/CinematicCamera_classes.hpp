@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Class CinematicCamera.CameraRig_Crane
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0050 (0x03D8 - 0x0388)
 class ACameraRig_Crane final : public AActor
 {
 public:
@@ -47,8 +47,8 @@ public:
 		return GetDefaultObjImpl<ACameraRig_Crane>();
 	}
 };
-static_assert(alignof(ACameraRig_Crane) == 0x11821D80, "Wrong alignment on ACameraRig_Crane");
-static_assert(sizeof(ACameraRig_Crane) == 0x11821D80, "Wrong size on ACameraRig_Crane");
+static_assert(alignof(ACameraRig_Crane) == 0x000008, "Wrong alignment on ACameraRig_Crane");
+static_assert(sizeof(ACameraRig_Crane) == 0x0003D8, "Wrong size on ACameraRig_Crane");
 static_assert(offsetof(ACameraRig_Crane, CranePitch) == 0x000388, "Member 'ACameraRig_Crane::CranePitch' has a wrong offset!");
 static_assert(offsetof(ACameraRig_Crane, CraneYaw) == 0x00038C, "Member 'ACameraRig_Crane::CraneYaw' has a wrong offset!");
 static_assert(offsetof(ACameraRig_Crane, CraneArmLength) == 0x000390, "Member 'ACameraRig_Crane::CraneArmLength' has a wrong offset!");
@@ -64,7 +64,7 @@ static_assert(offsetof(ACameraRig_Crane, PreviewMesh_CraneMount) == 0x0003C8, "M
 static_assert(offsetof(ACameraRig_Crane, PreviewMesh_CraneCounterWeight) == 0x0003D0, "Member 'ACameraRig_Crane::PreviewMesh_CraneCounterWeight' has a wrong offset!");
 
 // Class CinematicCamera.CameraRig_Rail
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0048 (0x03D0 - 0x0388)
 class ACameraRig_Rail final : public AActor
 {
 public:
@@ -88,8 +88,8 @@ public:
 		return GetDefaultObjImpl<ACameraRig_Rail>();
 	}
 };
-static_assert(alignof(ACameraRig_Rail) == 0x11821D80, "Wrong alignment on ACameraRig_Rail");
-static_assert(sizeof(ACameraRig_Rail) == 0x11821D80, "Wrong size on ACameraRig_Rail");
+static_assert(alignof(ACameraRig_Rail) == 0x000008, "Wrong alignment on ACameraRig_Rail");
+static_assert(sizeof(ACameraRig_Rail) == 0x0003D0, "Wrong size on ACameraRig_Rail");
 static_assert(offsetof(ACameraRig_Rail, CurrentPositionOnRail) == 0x000388, "Member 'ACameraRig_Rail::CurrentPositionOnRail' has a wrong offset!");
 static_assert(offsetof(ACameraRig_Rail, TransformComponent) == 0x000390, "Member 'ACameraRig_Rail::TransformComponent' has a wrong offset!");
 static_assert(offsetof(ACameraRig_Rail, RailSplineComponent) == 0x000398, "Member 'ACameraRig_Rail::RailSplineComponent' has a wrong offset!");
@@ -100,11 +100,12 @@ static_assert(offsetof(ACameraRig_Rail, PreviewRailStaticMesh) == 0x0003C0, "Mem
 static_assert(offsetof(ACameraRig_Rail, PreviewMesh_Mount) == 0x0003C8, "Member 'ACameraRig_Rail::PreviewMesh_Mount' has a wrong offset!");
 
 // Class CinematicCamera.CineCameraActor
-// 0x7E00 (0x11829B80 - 0x11821D80)
+// 0x0040 (0x08C0 - 0x0880)
 class ACineCameraActor final : public ACameraActor
 {
 public:
-	struct FCameraLookatTrackingSettings          LookatTrackingSettings;                            // 0x0880(0x11829B80)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCameraLookatTrackingSettings          LookatTrackingSettings;                            // 0x0880(0x0030)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8B0[0x10];                                     // 0x08B0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UCineCameraComponent* GetCineCameraComponent() const;
@@ -119,18 +120,18 @@ public:
 		return GetDefaultObjImpl<ACineCameraActor>();
 	}
 };
-static_assert(alignof(ACineCameraActor) == 0x11829B80, "Wrong alignment on ACineCameraActor");
-static_assert(sizeof(ACineCameraActor) == 0x11829B80, "Wrong size on ACineCameraActor");
+static_assert(alignof(ACineCameraActor) == 0x000010, "Wrong alignment on ACineCameraActor");
+static_assert(sizeof(ACineCameraActor) == 0x0008C0, "Wrong size on ACineCameraActor");
 static_assert(offsetof(ACineCameraActor, LookatTrackingSettings) == 0x000880, "Member 'ACineCameraActor::LookatTrackingSettings' has a wrong offset!");
 
 // Class CinematicCamera.CineCameraComponent
-// 0x22591E00 (0x33DB3B80 - 0x11821D80)
+// 0x00B0 (0x0880 - 0x07D0)
 class UCineCameraComponent final : public UCameraComponent
 {
 public:
-	struct FCameraFilmbackSettings                FilmbackSettings;                                  // 0x07D0(0x33DB3B80)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCameraLensSettings                    LensSettings;                                      // 0x07DC(0x11829B80)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FCameraFocusSettings                   FocusSettings;                                     // 0x07F0(0x11829B80)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCameraFilmbackSettings                FilmbackSettings;                                  // 0x07D0(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCameraLensSettings                    LensSettings;                                      // 0x07DC(0x0014)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FCameraFocusSettings                   FocusSettings;                                     // 0x07F0(0x0030)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         CurrentFocalLength;                                // 0x0820(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CurrentAperture;                                   // 0x0824(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CurrentFocusDistance;                              // 0x0828(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -156,8 +157,8 @@ public:
 		return GetDefaultObjImpl<UCineCameraComponent>();
 	}
 };
-static_assert(alignof(UCineCameraComponent) == 0x33DB3B80, "Wrong alignment on UCineCameraComponent");
-static_assert(sizeof(UCineCameraComponent) == 0x33DB3B80, "Wrong size on UCineCameraComponent");
+static_assert(alignof(UCineCameraComponent) == 0x000010, "Wrong alignment on UCineCameraComponent");
+static_assert(sizeof(UCineCameraComponent) == 0x000880, "Wrong size on UCineCameraComponent");
 static_assert(offsetof(UCineCameraComponent, FilmbackSettings) == 0x0007D0, "Member 'UCineCameraComponent::FilmbackSettings' has a wrong offset!");
 static_assert(offsetof(UCineCameraComponent, LensSettings) == 0x0007DC, "Member 'UCineCameraComponent::LensSettings' has a wrong offset!");
 static_assert(offsetof(UCineCameraComponent, FocusSettings) == 0x0007F0, "Member 'UCineCameraComponent::FocusSettings' has a wrong offset!");

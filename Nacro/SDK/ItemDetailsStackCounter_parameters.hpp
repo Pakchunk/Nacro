@@ -76,8 +76,8 @@ static_assert(offsetof(ItemDetailsStackCounter_C_Set_Stack_Count, CallFunc_Trunc
 static_assert(offsetof(ItemDetailsStackCounter_C_Set_Stack_Count, K2Node_Select_Default) == 0x000038, "Member 'ItemDetailsStackCounter_C_Set_Stack_Count::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.Refresh Visibility
-// 0x04C0 (0x04C0 - 0x0000)
-struct alignas(0x4C0) ItemDetailsStackCounter_C_Refresh_Visibility final
+// 0x0006 (0x0006 - 0x0000)
+struct ItemDetailsStackCounter_C_Refresh_Visibility final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -87,8 +87,8 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDetailsStackCounter_C_Refresh_Visibility) == 0x0004C0, "Wrong alignment on ItemDetailsStackCounter_C_Refresh_Visibility");
-static_assert(sizeof(ItemDetailsStackCounter_C_Refresh_Visibility) == 0x0004C0, "Wrong size on ItemDetailsStackCounter_C_Refresh_Visibility");
+static_assert(alignof(ItemDetailsStackCounter_C_Refresh_Visibility) == 0x000001, "Wrong alignment on ItemDetailsStackCounter_C_Refresh_Visibility");
+static_assert(sizeof(ItemDetailsStackCounter_C_Refresh_Visibility) == 0x000006, "Wrong size on ItemDetailsStackCounter_C_Refresh_Visibility");
 static_assert(offsetof(ItemDetailsStackCounter_C_Refresh_Visibility, Temp_bool_Variable) == 0x000000, "Member 'ItemDetailsStackCounter_C_Refresh_Visibility::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemDetailsStackCounter_C_Refresh_Visibility, Temp_byte_Variable) == 0x000001, "Member 'ItemDetailsStackCounter_C_Refresh_Visibility::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemDetailsStackCounter_C_Refresh_Visibility, Temp_byte_Variable2) == 0x000002, "Member 'ItemDetailsStackCounter_C_Refresh_Visibility::Temp_byte_Variable2' has a wrong offset!");

@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function T4_Horde.T4_Horde_C.ExecuteUbergraph_T4_Horde
-// 0x411EE7F0 (0x411EE7F0 - 0x0000)
-struct alignas(0x411EE7F0) T4_Horde_C_ExecuteUbergraph_T4_Horde final
+// 0x0018 (0x0018 - 0x0000)
+struct T4_Horde_C_ExecuteUbergraph_T4_Horde final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -24,21 +24,21 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(T4_Horde_C_ExecuteUbergraph_T4_Horde) == 0x411EE7F0, "Wrong alignment on T4_Horde_C_ExecuteUbergraph_T4_Horde");
-static_assert(sizeof(T4_Horde_C_ExecuteUbergraph_T4_Horde) == 0x411EE7F0, "Wrong size on T4_Horde_C_ExecuteUbergraph_T4_Horde");
+static_assert(alignof(T4_Horde_C_ExecuteUbergraph_T4_Horde) == 0x000008, "Wrong alignment on T4_Horde_C_ExecuteUbergraph_T4_Horde");
+static_assert(sizeof(T4_Horde_C_ExecuteUbergraph_T4_Horde) == 0x000018, "Wrong size on T4_Horde_C_ExecuteUbergraph_T4_Horde");
 static_assert(offsetof(T4_Horde_C_ExecuteUbergraph_T4_Horde, EntryPoint) == 0x000000, "Member 'T4_Horde_C_ExecuteUbergraph_T4_Horde::EntryPoint' has a wrong offset!");
 static_assert(offsetof(T4_Horde_C_ExecuteUbergraph_T4_Horde, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'T4_Horde_C_ExecuteUbergraph_T4_Horde::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(T4_Horde_C_ExecuteUbergraph_T4_Horde, K2Node_Event_IsDesignTime) == 0x000010, "Member 'T4_Horde_C_ExecuteUbergraph_T4_Horde::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function T4_Horde.T4_Horde_C.PreConstruct
-// 0x1A00 (0x1A00 - 0x0000)
-struct alignas(0x1A00) T4_Horde_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct T4_Horde_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(T4_Horde_C_PreConstruct) == 0x001A00, "Wrong alignment on T4_Horde_C_PreConstruct");
-static_assert(sizeof(T4_Horde_C_PreConstruct) == 0x001A00, "Wrong size on T4_Horde_C_PreConstruct");
+static_assert(alignof(T4_Horde_C_PreConstruct) == 0x000001, "Wrong alignment on T4_Horde_C_PreConstruct");
+static_assert(sizeof(T4_Horde_C_PreConstruct) == 0x000001, "Wrong size on T4_Horde_C_PreConstruct");
 static_assert(offsetof(T4_Horde_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'T4_Horde_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }

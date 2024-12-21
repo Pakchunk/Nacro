@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x02B8 - 0x0298)
 class USupportHeroSquadBonusesDetailWidget_C final : public UFortSquadSlotItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(Transient, DuplicateTransient)
 	class UFortHeroSupportPerkWidget_C*           SupportPerkWidget;                                 // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortHeroSupportPerkWidget_C*           TacticalPerkWidget;                                // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          AlwaysDisplayDescriptions;                         // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<USupportHeroSquadBonusesDetailWidget_C>();
 	}
 };
-static_assert(alignof(USupportHeroSquadBonusesDetailWidget_C) == 0x322CBBB8, "Wrong alignment on USupportHeroSquadBonusesDetailWidget_C");
-static_assert(sizeof(USupportHeroSquadBonusesDetailWidget_C) == 0x322CBBB8, "Wrong size on USupportHeroSquadBonusesDetailWidget_C");
+static_assert(alignof(USupportHeroSquadBonusesDetailWidget_C) == 0x000008, "Wrong alignment on USupportHeroSquadBonusesDetailWidget_C");
+static_assert(sizeof(USupportHeroSquadBonusesDetailWidget_C) == 0x0002B8, "Wrong size on USupportHeroSquadBonusesDetailWidget_C");
 static_assert(offsetof(USupportHeroSquadBonusesDetailWidget_C, UberGraphFrame) == 0x000298, "Member 'USupportHeroSquadBonusesDetailWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USupportHeroSquadBonusesDetailWidget_C, SupportPerkWidget) == 0x0002A0, "Member 'USupportHeroSquadBonusesDetailWidget_C::SupportPerkWidget' has a wrong offset!");
 static_assert(offsetof(USupportHeroSquadBonusesDetailWidget_C, TacticalPerkWidget) == 0x0002A8, "Member 'USupportHeroSquadBonusesDetailWidget_C::TacticalPerkWidget' has a wrong offset!");

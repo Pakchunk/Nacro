@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_RiftImpact_CameraShake.B_RiftImpact_CameraShake_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0160 - 0x0160)
 class UB_RiftImpact_CameraShake_C final : public UCameraShake
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UB_RiftImpact_CameraShake_C>();
 	}
 };
-static_assert(alignof(UB_RiftImpact_CameraShake_C) == 0x11821D80, "Wrong alignment on UB_RiftImpact_CameraShake_C");
-static_assert(sizeof(UB_RiftImpact_CameraShake_C) == 0x11821D80, "Wrong size on UB_RiftImpact_CameraShake_C");
+static_assert(alignof(UB_RiftImpact_CameraShake_C) == 0x000008, "Wrong alignment on UB_RiftImpact_CameraShake_C");
+static_assert(sizeof(UB_RiftImpact_CameraShake_C) == 0x000160, "Wrong size on UB_RiftImpact_CameraShake_C");
 
 }
 

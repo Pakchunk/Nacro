@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaPlayerInfo.AthenaPlayerInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0280 - 0x0260)
 class UAthenaPlayerInfo_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         _Horizontal_Box__Player_Info;                      // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 LeaderImage;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextPlayerName;                                    // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UAthenaPlayerInfo_C>();
 	}
 };
-static_assert(alignof(UAthenaPlayerInfo_C) == 0x322CBBB8, "Wrong alignment on UAthenaPlayerInfo_C");
-static_assert(sizeof(UAthenaPlayerInfo_C) == 0x322CBBB8, "Wrong size on UAthenaPlayerInfo_C");
+static_assert(alignof(UAthenaPlayerInfo_C) == 0x000008, "Wrong alignment on UAthenaPlayerInfo_C");
+static_assert(sizeof(UAthenaPlayerInfo_C) == 0x000280, "Wrong size on UAthenaPlayerInfo_C");
 static_assert(offsetof(UAthenaPlayerInfo_C, UberGraphFrame) == 0x000260, "Member 'UAthenaPlayerInfo_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaPlayerInfo_C, _Horizontal_Box__Player_Info) == 0x000268, "Member 'UAthenaPlayerInfo_C::_Horizontal_Box__Player_Info' has a wrong offset!");
 static_assert(offsetof(UAthenaPlayerInfo_C, LeaderImage) == 0x000270, "Member 'UAthenaPlayerInfo_C::LeaderImage' has a wrong offset!");

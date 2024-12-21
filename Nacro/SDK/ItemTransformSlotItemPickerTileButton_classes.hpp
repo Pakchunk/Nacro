@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x08F8 - 0x08D0)
 class UItemTransformSlotItemPickerTileButton_C final : public UFortTransformSlotItemPickerTileButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08D0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08D0(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           BottomBarBox;                                      // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        ItemWidgetSwitcher;                                // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          NullItemBorder;                                    // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformSlotItemPickerTileButton_C>();
 	}
 };
-static_assert(alignof(UItemTransformSlotItemPickerTileButton_C) == 0x322CBBB8, "Wrong alignment on UItemTransformSlotItemPickerTileButton_C");
-static_assert(sizeof(UItemTransformSlotItemPickerTileButton_C) == 0x322CBBB8, "Wrong size on UItemTransformSlotItemPickerTileButton_C");
+static_assert(alignof(UItemTransformSlotItemPickerTileButton_C) == 0x000008, "Wrong alignment on UItemTransformSlotItemPickerTileButton_C");
+static_assert(sizeof(UItemTransformSlotItemPickerTileButton_C) == 0x0008F8, "Wrong size on UItemTransformSlotItemPickerTileButton_C");
 static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, UberGraphFrame) == 0x0008D0, "Member 'UItemTransformSlotItemPickerTileButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, BottomBarBox) == 0x0008D8, "Member 'UItemTransformSlotItemPickerTileButton_C::BottomBarBox' has a wrong offset!");
 static_assert(offsetof(UItemTransformSlotItemPickerTileButton_C, ItemWidgetSwitcher) == 0x0008E0, "Member 'UItemTransformSlotItemPickerTileButton_C::ItemWidgetSwitcher' has a wrong offset!");

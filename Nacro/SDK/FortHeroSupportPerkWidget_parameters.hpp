@@ -30,7 +30,7 @@ static_assert(sizeof(FortHeroSupportPerkWidget_C_ExecuteUbergraph_FortHeroSuppor
 static_assert(offsetof(FortHeroSupportPerkWidget_C_ExecuteUbergraph_FortHeroSupportPerkWidget, EntryPoint) == 0x000000, "Member 'FortHeroSupportPerkWidget_C_ExecuteUbergraph_FortHeroSupportPerkWidget::EntryPoint' has a wrong offset!");
 
 // Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.Update
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct FortHeroSupportPerkWidget_C_Update final
 {
 public:
@@ -46,14 +46,14 @@ public:
 	class FText                                   Temp_text_Variable;                                // 0x0028(0x0018)()
 	class FText                                   Temp_text_Variable2;                               // 0x0040(0x0018)()
 	class FText                                   Temp_text_Variable3;                               // 0x0058(0x0018)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0070(0x322CBBB8)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0098(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0070(0x0028)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0098(0x0090)()
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Select2_Default;                            // 0x0130(0x0018)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FortHeroSupportPerkWidget_C_Update) == 0x322CBBB8, "Wrong alignment on FortHeroSupportPerkWidget_C_Update");
-static_assert(sizeof(FortHeroSupportPerkWidget_C_Update) == 0x322CBBB8, "Wrong size on FortHeroSupportPerkWidget_C_Update");
+static_assert(alignof(FortHeroSupportPerkWidget_C_Update) == 0x000008, "Wrong alignment on FortHeroSupportPerkWidget_C_Update");
+static_assert(sizeof(FortHeroSupportPerkWidget_C_Update) == 0x000150, "Wrong size on FortHeroSupportPerkWidget_C_Update");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, DisplayedOutsideOfHeroSquad_0) == 0x000000, "Member 'FortHeroSupportPerkWidget_C_Update::DisplayedOutsideOfHeroSquad_0' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, TargetedSupportType) == 0x000001, "Member 'FortHeroSupportPerkWidget_C_Update::TargetedSupportType' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_Update, Temp_byte_Variable) == 0x000002, "Member 'FortHeroSupportPerkWidget_C_Update::Temp_byte_Variable' has a wrong offset!");
@@ -90,7 +90,7 @@ static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateLockedVisibility, CallF
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateLockedVisibility, K2Node_Select_Default) == 0x000004, "Member 'FortHeroSupportPerkWidget_C_UpdateLockedVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateActiveDisplay
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0278 (0x0278 - 0x0000)
 struct FortHeroSupportPerkWidget_C_UpdateActiveDisplay final
 {
 public:
@@ -122,25 +122,25 @@ public:
 	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     K2Node_Select2_Default;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0058(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0058(0x0028)()
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPerkActive_ReturnValue;                 // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0088(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0088(0x0028)()
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00B8(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00B8(0x0090)()
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush2;                     // 0x0150(0x322CBBB8)()
-	struct FSlateBrush                            K2Node_Select5_Default;                            // 0x01E0(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush2;                     // 0x0150(0x0090)()
+	struct FSlateBrush                            K2Node_Select5_Default;                            // 0x01E0(0x0090)(ConstParm)
 	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_271[0x3];                                      // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select6_Default;                            // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay) == 0x322CBBB8, "Wrong alignment on FortHeroSupportPerkWidget_C_UpdateActiveDisplay");
-static_assert(sizeof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay) == 0x322CBBB8, "Wrong size on FortHeroSupportPerkWidget_C_UpdateActiveDisplay");
+static_assert(alignof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay) == 0x000008, "Wrong alignment on FortHeroSupportPerkWidget_C_UpdateActiveDisplay");
+static_assert(sizeof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay) == 0x000278, "Wrong size on FortHeroSupportPerkWidget_C_UpdateActiveDisplay");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_class_Variable) == 0x000000, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable) == 0x000008, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(FortHeroSupportPerkWidget_C_UpdateActiveDisplay, Temp_bool_Variable2) == 0x000009, "Member 'FortHeroSupportPerkWidget_C_UpdateActiveDisplay::Temp_bool_Variable2' has a wrong offset!");

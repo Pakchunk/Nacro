@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FullPartyBar.FullPartyBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x02A0 (0x04D8 - 0x0238)
 class UFullPartyBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          Fortitude;                                         // 0x0240(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 FortitudeImage;                                    // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       FortitudeText;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,7 +47,7 @@ public:
 	class UImage*                                 TechImage;                                         // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TechText;                                          // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        LocalTeam;                                         // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    EmptyPartyMember;                                  // 0x02E8(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortTeamMemberInfo                    EmptyPartyMember;                                  // 0x02E8(0x0190)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FConfirmationDialogAction>      PrivacyConfirmOptions;                             // 0x0478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class FName                                   DeclineAction;                                     // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Public;                                            // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -97,8 +97,8 @@ public:
 		return GetDefaultObjImpl<UFullPartyBar_C>();
 	}
 };
-static_assert(alignof(UFullPartyBar_C) == 0x322CBBB8, "Wrong alignment on UFullPartyBar_C");
-static_assert(sizeof(UFullPartyBar_C) == 0x322CBBB8, "Wrong size on UFullPartyBar_C");
+static_assert(alignof(UFullPartyBar_C) == 0x000008, "Wrong alignment on UFullPartyBar_C");
+static_assert(sizeof(UFullPartyBar_C) == 0x0004D8, "Wrong size on UFullPartyBar_C");
 static_assert(offsetof(UFullPartyBar_C, UberGraphFrame) == 0x000238, "Member 'UFullPartyBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFullPartyBar_C, Fortitude) == 0x000240, "Member 'UFullPartyBar_C::Fortitude' has a wrong offset!");
 static_assert(offsetof(UFullPartyBar_C, FortitudeImage) == 0x000248, "Member 'UFullPartyBar_C::FortitudeImage' has a wrong offset!");

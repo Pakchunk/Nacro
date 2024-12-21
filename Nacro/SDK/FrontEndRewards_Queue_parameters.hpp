@@ -31,18 +31,18 @@ static_assert(offsetof(FrontEndRewards_Queue_C_ExecuteUbergraph_FrontEndRewards_
 static_assert(offsetof(FrontEndRewards_Queue_C_ExecuteUbergraph_FrontEndRewards_Queue, K2Node_Event_IsDesignTime) == 0x000004, "Member 'FrontEndRewards_Queue_C_ExecuteUbergraph_FrontEndRewards_Queue::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.PreConstruct
-// 0x0220 (0x0220 - 0x0000)
-struct alignas(0x220) FrontEndRewards_Queue_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct FrontEndRewards_Queue_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Queue_C_PreConstruct) == 0x000220, "Wrong alignment on FrontEndRewards_Queue_C_PreConstruct");
-static_assert(sizeof(FrontEndRewards_Queue_C_PreConstruct) == 0x000220, "Wrong size on FrontEndRewards_Queue_C_PreConstruct");
+static_assert(alignof(FrontEndRewards_Queue_C_PreConstruct) == 0x000001, "Wrong alignment on FrontEndRewards_Queue_C_PreConstruct");
+static_assert(sizeof(FrontEndRewards_Queue_C_PreConstruct) == 0x000001, "Wrong size on FrontEndRewards_Queue_C_PreConstruct");
 static_assert(offsetof(FrontEndRewards_Queue_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'FrontEndRewards_Queue_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.QueueReward
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct FrontEndRewards_Queue_C_QueueReward final
 {
 public:
@@ -63,10 +63,10 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class URewardsIcon_C* Icon)>   K2Node_CreateDelegate_OutputDelegate;              // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0064(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0064(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Queue_C_QueueReward) == 0x11821300, "Wrong alignment on FrontEndRewards_Queue_C_QueueReward");
-static_assert(sizeof(FrontEndRewards_Queue_C_QueueReward) == 0x11821300, "Wrong size on FrontEndRewards_Queue_C_QueueReward");
+static_assert(alignof(FrontEndRewards_Queue_C_QueueReward) == 0x000008, "Wrong alignment on FrontEndRewards_Queue_C_QueueReward");
+static_assert(sizeof(FrontEndRewards_Queue_C_QueueReward) == 0x000070, "Wrong size on FrontEndRewards_Queue_C_QueueReward");
 static_assert(offsetof(FrontEndRewards_Queue_C_QueueReward, RewardItem) == 0x000000, "Member 'FrontEndRewards_Queue_C_QueueReward::RewardItem' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_QueueReward, IsDesignTime) == 0x000008, "Member 'FrontEndRewards_Queue_C_QueueReward::IsDesignTime' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_QueueReward, OutIcon) == 0x000010, "Member 'FrontEndRewards_Queue_C_QueueReward::OutIcon' has a wrong offset!");
@@ -150,8 +150,8 @@ static_assert(offsetof(FrontEndRewards_Queue_C_CloneIconList, CallFunc_Array_Add
 static_assert(offsetof(FrontEndRewards_Queue_C_CloneIconList, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00003C, "Member 'FrontEndRewards_Queue_C_CloneIconList::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.RandomizeDesignView
-// 0x43005F (0x43005F - 0x0000)
-struct alignas(0x43005F) FrontEndRewards_Queue_C_RandomizeDesignView final
+// 0x0020 (0x0020 - 0x0000)
+struct FrontEndRewards_Queue_C_RandomizeDesignView final
 {
 public:
 	class URewardsIcon_C*                         CallFunc_QueueReward_OutIcon;                      // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -161,8 +161,8 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Queue_C_RandomizeDesignView) == 0x43005F, "Wrong alignment on FrontEndRewards_Queue_C_RandomizeDesignView");
-static_assert(sizeof(FrontEndRewards_Queue_C_RandomizeDesignView) == 0x43005F, "Wrong size on FrontEndRewards_Queue_C_RandomizeDesignView");
+static_assert(alignof(FrontEndRewards_Queue_C_RandomizeDesignView) == 0x000008, "Wrong alignment on FrontEndRewards_Queue_C_RandomizeDesignView");
+static_assert(sizeof(FrontEndRewards_Queue_C_RandomizeDesignView) == 0x000020, "Wrong size on FrontEndRewards_Queue_C_RandomizeDesignView");
 static_assert(offsetof(FrontEndRewards_Queue_C_RandomizeDesignView, CallFunc_QueueReward_OutIcon) == 0x000000, "Member 'FrontEndRewards_Queue_C_RandomizeDesignView::CallFunc_QueueReward_OutIcon' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_RandomizeDesignView, Temp_int_Variable) == 0x000008, "Member 'FrontEndRewards_Queue_C_RandomizeDesignView::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_RandomizeDesignView, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'FrontEndRewards_Queue_C_RandomizeDesignView::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -171,8 +171,8 @@ static_assert(offsetof(FrontEndRewards_Queue_C_RandomizeDesignView, CallFunc_Add
 static_assert(offsetof(FrontEndRewards_Queue_C_RandomizeDesignView, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000018, "Member 'FrontEndRewards_Queue_C_RandomizeDesignView::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.PopIcon
-// 0x5F0065 (0x5F0065 - 0x0000)
-struct alignas(0x5F0065) FrontEndRewards_Queue_C_PopIcon final
+// 0x0048 (0x0048 - 0x0000)
+struct FrontEndRewards_Queue_C_PopIcon final
 {
 public:
 	class URewardsIcon_C*                         OutIcon;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -194,8 +194,8 @@ public:
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class URewardsIcon_C*                         CallFunc_Array_Get_Item2;                          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Queue_C_PopIcon) == 0x5F0065, "Wrong alignment on FrontEndRewards_Queue_C_PopIcon");
-static_assert(sizeof(FrontEndRewards_Queue_C_PopIcon) == 0x5F0065, "Wrong size on FrontEndRewards_Queue_C_PopIcon");
+static_assert(alignof(FrontEndRewards_Queue_C_PopIcon) == 0x000008, "Wrong alignment on FrontEndRewards_Queue_C_PopIcon");
+static_assert(sizeof(FrontEndRewards_Queue_C_PopIcon) == 0x000048, "Wrong size on FrontEndRewards_Queue_C_PopIcon");
 static_assert(offsetof(FrontEndRewards_Queue_C_PopIcon, OutIcon) == 0x000000, "Member 'FrontEndRewards_Queue_C_PopIcon::OutIcon' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_PopIcon, RetVal) == 0x000008, "Member 'FrontEndRewards_Queue_C_PopIcon::RetVal' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_PopIcon, Temp_int_Array_Index_Variable) == 0x000010, "Member 'FrontEndRewards_Queue_C_PopIcon::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -297,7 +297,7 @@ static_assert(offsetof(FrontEndRewards_Queue_C_TickIconSlide, CallFunc_Array_Len
 static_assert(offsetof(FrontEndRewards_Queue_C_TickIconSlide, CallFunc_Less_IntInt_ReturnValue2) == 0x0000AC, "Member 'FrontEndRewards_Queue_C_TickIconSlide::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.StartDequeueAnimation
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FrontEndRewards_Queue_C_StartDequeueAnimation final
 {
 public:
@@ -307,11 +307,11 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
 	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Queue_C_StartDequeueAnimation) == 0x11821D80, "Wrong alignment on FrontEndRewards_Queue_C_StartDequeueAnimation");
-static_assert(sizeof(FrontEndRewards_Queue_C_StartDequeueAnimation) == 0x11821D80, "Wrong size on FrontEndRewards_Queue_C_StartDequeueAnimation");
+static_assert(alignof(FrontEndRewards_Queue_C_StartDequeueAnimation) == 0x000008, "Wrong alignment on FrontEndRewards_Queue_C_StartDequeueAnimation");
+static_assert(sizeof(FrontEndRewards_Queue_C_StartDequeueAnimation) == 0x000030, "Wrong size on FrontEndRewards_Queue_C_StartDequeueAnimation");
 static_assert(offsetof(FrontEndRewards_Queue_C_StartDequeueAnimation, Temp_int_Variable) == 0x000000, "Member 'FrontEndRewards_Queue_C_StartDequeueAnimation::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_StartDequeueAnimation, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'FrontEndRewards_Queue_C_StartDequeueAnimation::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_StartDequeueAnimation, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Queue_C_StartDequeueAnimation::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
@@ -346,7 +346,7 @@ static_assert(offsetof(FrontEndRewards_Queue_C_SlideIcon, CallFunc_Add_FloatFloa
 static_assert(offsetof(FrontEndRewards_Queue_C_SlideIcon, CallFunc_Add_FloatFloat_ReturnValue2) == 0x000020, "Member 'FrontEndRewards_Queue_C_SlideIcon::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
 
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.StartInitAnimation
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct FrontEndRewards_Queue_C_StartInitAnimation final
 {
 public:
@@ -356,11 +356,11 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Queue_C_StartInitAnimation) == 0x11821D80, "Wrong alignment on FrontEndRewards_Queue_C_StartInitAnimation");
-static_assert(sizeof(FrontEndRewards_Queue_C_StartInitAnimation) == 0x11821D80, "Wrong size on FrontEndRewards_Queue_C_StartInitAnimation");
+static_assert(alignof(FrontEndRewards_Queue_C_StartInitAnimation) == 0x000008, "Wrong alignment on FrontEndRewards_Queue_C_StartInitAnimation");
+static_assert(sizeof(FrontEndRewards_Queue_C_StartInitAnimation) == 0x000030, "Wrong size on FrontEndRewards_Queue_C_StartInitAnimation");
 static_assert(offsetof(FrontEndRewards_Queue_C_StartInitAnimation, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000000, "Member 'FrontEndRewards_Queue_C_StartInitAnimation::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_StartInitAnimation, CallFunc_Array_LastIndex_ReturnValue) == 0x000004, "Member 'FrontEndRewards_Queue_C_StartInitAnimation::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_StartInitAnimation, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'FrontEndRewards_Queue_C_StartInitAnimation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -369,8 +369,8 @@ static_assert(offsetof(FrontEndRewards_Queue_C_StartInitAnimation, CallFunc_K2_S
 static_assert(offsetof(FrontEndRewards_Queue_C_StartInitAnimation, CallFunc_Greater_IntInt_ReturnValue) == 0x000028, "Member 'FrontEndRewards_Queue_C_StartInitAnimation::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.TickIconInit
-// 0x1B36 (0x1B36 - 0x0000)
-struct alignas(0x1B36) FrontEndRewards_Queue_C_TickIconInit final
+// 0x0040 (0x0040 - 0x0000)
+struct FrontEndRewards_Queue_C_TickIconInit final
 {
 public:
 	class URewardsIcon_C*                         CurrentIcon;                                       // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -386,8 +386,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Queue_C_TickIconInit) == 0x001B36, "Wrong alignment on FrontEndRewards_Queue_C_TickIconInit");
-static_assert(sizeof(FrontEndRewards_Queue_C_TickIconInit) == 0x001B36, "Wrong size on FrontEndRewards_Queue_C_TickIconInit");
+static_assert(alignof(FrontEndRewards_Queue_C_TickIconInit) == 0x000008, "Wrong alignment on FrontEndRewards_Queue_C_TickIconInit");
+static_assert(sizeof(FrontEndRewards_Queue_C_TickIconInit) == 0x000040, "Wrong size on FrontEndRewards_Queue_C_TickIconInit");
 static_assert(offsetof(FrontEndRewards_Queue_C_TickIconInit, CurrentIcon) == 0x000000, "Member 'FrontEndRewards_Queue_C_TickIconInit::CurrentIcon' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_TickIconInit, ArrayElement) == 0x000008, "Member 'FrontEndRewards_Queue_C_TickIconInit::ArrayElement' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_Queue_C_TickIconInit, ArrayIndex) == 0x00000C, "Member 'FrontEndRewards_Queue_C_TickIconInit::ArrayIndex' has a wrong offset!");

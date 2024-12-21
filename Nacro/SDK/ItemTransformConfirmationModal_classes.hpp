@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformConfirmationModal.ItemTransformConfirmationModal_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x0468 - 0x03E0)
 class UItemTransformConfirmationModal_C final : public UCommonActivatablePanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CancelButton;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ConfirmButton;                                     // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -57,8 +57,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformConfirmationModal_C>();
 	}
 };
-static_assert(alignof(UItemTransformConfirmationModal_C) == 0x322CBBB8, "Wrong alignment on UItemTransformConfirmationModal_C");
-static_assert(sizeof(UItemTransformConfirmationModal_C) == 0x322CBBB8, "Wrong size on UItemTransformConfirmationModal_C");
+static_assert(alignof(UItemTransformConfirmationModal_C) == 0x000008, "Wrong alignment on UItemTransformConfirmationModal_C");
+static_assert(sizeof(UItemTransformConfirmationModal_C) == 0x000468, "Wrong size on UItemTransformConfirmationModal_C");
 static_assert(offsetof(UItemTransformConfirmationModal_C, UberGraphFrame) == 0x0003E0, "Member 'UItemTransformConfirmationModal_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransformConfirmationModal_C, CancelButton) == 0x0003E8, "Member 'UItemTransformConfirmationModal_C::CancelButton' has a wrong offset!");
 static_assert(offsetof(UItemTransformConfirmationModal_C, ConfirmButton) == 0x0003F0, "Member 'UItemTransformConfirmationModal_C::ConfirmButton' has a wrong offset!");

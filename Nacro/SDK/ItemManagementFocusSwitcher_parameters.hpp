@@ -19,43 +19,44 @@ namespace SDK::Params
 {
 
 // Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.OnFocusReceived
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct ItemManagementFocusSwitcher_C_OnFocusReceived final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x11827900)(Parm, NoDestructor)
-	struct FEventReply                            ReturnValue;                                       // 0x0040(0x11827900)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x11827900)()
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0034(0x0008)(Parm, NoDestructor)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(ItemManagementFocusSwitcher_C_OnFocusReceived) == 0x11827900, "Wrong alignment on ItemManagementFocusSwitcher_C_OnFocusReceived");
-static_assert(sizeof(ItemManagementFocusSwitcher_C_OnFocusReceived) == 0x11827900, "Wrong size on ItemManagementFocusSwitcher_C_OnFocusReceived");
+static_assert(alignof(ItemManagementFocusSwitcher_C_OnFocusReceived) == 0x000008, "Wrong alignment on ItemManagementFocusSwitcher_C_OnFocusReceived");
+static_assert(sizeof(ItemManagementFocusSwitcher_C_OnFocusReceived) == 0x0001B0, "Wrong size on ItemManagementFocusSwitcher_C_OnFocusReceived");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'ItemManagementFocusSwitcher_C_OnFocusReceived::MyGeometry' has a wrong offset!");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_OnFocusReceived, InFocusEvent) == 0x000034, "Member 'ItemManagementFocusSwitcher_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'ItemManagementFocusSwitcher_C_OnFocusReceived::ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x0000F8, "Member 'ItemManagementFocusSwitcher_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.DeferFocusSwitch
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct ItemManagementFocusSwitcher_C_DeferFocusSwitch final
 {
 public:
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0000(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0000(0x0008)(NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementFocusSwitcher_C_DeferFocusSwitch) == 0x11821D80, "Wrong alignment on ItemManagementFocusSwitcher_C_DeferFocusSwitch");
-static_assert(sizeof(ItemManagementFocusSwitcher_C_DeferFocusSwitch) == 0x11821D80, "Wrong size on ItemManagementFocusSwitcher_C_DeferFocusSwitch");
+static_assert(alignof(ItemManagementFocusSwitcher_C_DeferFocusSwitch) == 0x000008, "Wrong alignment on ItemManagementFocusSwitcher_C_DeferFocusSwitch");
+static_assert(sizeof(ItemManagementFocusSwitcher_C_DeferFocusSwitch) == 0x000020, "Wrong size on ItemManagementFocusSwitcher_C_DeferFocusSwitch");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_DeferFocusSwitch, CallFunc_K2_SetTimer_ReturnValue) == 0x000000, "Member 'ItemManagementFocusSwitcher_C_DeferFocusSwitch::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_DeferFocusSwitch, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ItemManagementFocusSwitcher_C_DeferFocusSwitch::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_DeferFocusSwitch, CallFunc_GetSelectedItem_ReturnValue) == 0x000010, "Member 'ItemManagementFocusSwitcher_C_DeferFocusSwitch::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_DeferFocusSwitch, CallFunc_IsValid_ReturnValue2) == 0x000018, "Member 'ItemManagementFocusSwitcher_C_DeferFocusSwitch::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.ExecuteFocusSwitch
-// 0x08C1 (0x08C1 - 0x0000)
-struct alignas(0x8C1) ItemManagementFocusSwitcher_C_ExecuteFocusSwitch final
+// 0x0050 (0x0050 - 0x0000)
+struct ItemManagementFocusSwitcher_C_ExecuteFocusSwitch final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,8 +78,8 @@ public:
 	bool                                          CallFunc_SetSelectedIndex_ReturnValue;             // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetSelectedIndex_ReturnValue2;            // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch) == 0x0008C1, "Wrong alignment on ItemManagementFocusSwitcher_C_ExecuteFocusSwitch");
-static_assert(sizeof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch) == 0x0008C1, "Wrong size on ItemManagementFocusSwitcher_C_ExecuteFocusSwitch");
+static_assert(alignof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch) == 0x000008, "Wrong alignment on ItemManagementFocusSwitcher_C_ExecuteFocusSwitch");
+static_assert(sizeof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch) == 0x000050, "Wrong size on ItemManagementFocusSwitcher_C_ExecuteFocusSwitch");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetNumItems_ReturnValue) == 0x000008, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");

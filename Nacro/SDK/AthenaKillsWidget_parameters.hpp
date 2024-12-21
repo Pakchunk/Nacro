@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function AthenaKillsWidget.AthenaKillsWidget_C.ExecuteUbergraph_AthenaKillsWidget
-// 0x51D6CEB0 (0x51D6CEB0 - 0x0000)
-struct alignas(0x51D6CEB0) AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget final
+// 0x00A8 (0x00A8 - 0x0000)
+struct AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0018(0x11827900)(IsPlainOldData, NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0018(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,8 +37,8 @@ public:
 	class FString                                 CallFunc_BuildString_Int_ReturnValue;              // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0090(0x0018)()
 };
-static_assert(alignof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget) == 0x51D6CEB0, "Wrong alignment on AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget");
-static_assert(sizeof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget) == 0x51D6CEB0, "Wrong size on AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget");
+static_assert(alignof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget) == 0x000008, "Wrong alignment on AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget");
+static_assert(sizeof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget) == 0x0000A8, "Wrong size on AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget");
 static_assert(offsetof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget, EntryPoint) == 0x000000, "Member 'AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget, CallFunc_Conv_TextToString_ReturnValue) == 0x000008, "Member 'AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget, K2Node_Event_MyGeometry) == 0x000018, "Member 'AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget::K2Node_Event_MyGeometry' has a wrong offset!");
@@ -53,15 +53,15 @@ static_assert(offsetof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget, C
 static_assert(offsetof(AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget, CallFunc_Conv_StringToText_ReturnValue) == 0x000090, "Member 'AthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function AthenaKillsWidget.AthenaKillsWidget_C.Tick
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AthenaKillsWidget_C_Tick final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaKillsWidget_C_Tick) == 0x11827900, "Wrong alignment on AthenaKillsWidget_C_Tick");
-static_assert(sizeof(AthenaKillsWidget_C_Tick) == 0x11827900, "Wrong size on AthenaKillsWidget_C_Tick");
+static_assert(alignof(AthenaKillsWidget_C_Tick) == 0x000004, "Wrong alignment on AthenaKillsWidget_C_Tick");
+static_assert(sizeof(AthenaKillsWidget_C_Tick) == 0x000038, "Wrong size on AthenaKillsWidget_C_Tick");
 static_assert(offsetof(AthenaKillsWidget_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaKillsWidget_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(AthenaKillsWidget_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaKillsWidget_C_Tick::InDeltaTime' has a wrong offset!");
 

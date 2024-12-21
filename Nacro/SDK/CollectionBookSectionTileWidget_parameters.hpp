@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function CollectionBookSectionTileWidget.CollectionBookSectionTileWidget_C.ExecuteUbergraph_CollectionBookSectionTileWidget
-// 0x010C (0x010C - 0x0000)
-struct alignas(0x10C) CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget final
+// 0x0030 (0x0030 - 0x0000)
+struct CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,8 +33,8 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget) == 0x00010C, "Wrong alignment on CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget");
-static_assert(sizeof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget) == 0x00010C, "Wrong size on CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget");
+static_assert(alignof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget) == 0x000008, "Wrong alignment on CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget");
+static_assert(sizeof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget) == 0x000030, "Wrong size on CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget");
 static_assert(offsetof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget, EntryPoint) == 0x000000, "Member 'CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget, Temp_byte_Variable) == 0x000004, "Member 'CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget, K2Node_Event_NumFilledSlots) == 0x000008, "Member 'CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget::K2Node_Event_NumFilledSlots' has a wrong offset!");
@@ -45,16 +45,16 @@ static_assert(offsetof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_Collec
 static_assert(offsetof(CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget, K2Node_Select_Default) == 0x000028, "Member 'CollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget::K2Node_Select_Default' has a wrong offset!");
 
 // Function CollectionBookSectionTileWidget.CollectionBookSectionTileWidget_C.OnSectionSlotUpdate
-// 0x0875 (0x0875 - 0x0000)
-struct alignas(0x875) CollectionBookSectionTileWidget_C_OnSectionSlotUpdate final
+// 0x000C (0x000C - 0x0000)
+struct CollectionBookSectionTileWidget_C_OnSectionSlotUpdate final
 {
 public:
 	int32                                         NumFilledSlots;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumSlots;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortCollectionBookState                      SectionState;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookSectionTileWidget_C_OnSectionSlotUpdate) == 0x000875, "Wrong alignment on CollectionBookSectionTileWidget_C_OnSectionSlotUpdate");
-static_assert(sizeof(CollectionBookSectionTileWidget_C_OnSectionSlotUpdate) == 0x000875, "Wrong size on CollectionBookSectionTileWidget_C_OnSectionSlotUpdate");
+static_assert(alignof(CollectionBookSectionTileWidget_C_OnSectionSlotUpdate) == 0x000004, "Wrong alignment on CollectionBookSectionTileWidget_C_OnSectionSlotUpdate");
+static_assert(sizeof(CollectionBookSectionTileWidget_C_OnSectionSlotUpdate) == 0x00000C, "Wrong size on CollectionBookSectionTileWidget_C_OnSectionSlotUpdate");
 static_assert(offsetof(CollectionBookSectionTileWidget_C_OnSectionSlotUpdate, NumFilledSlots) == 0x000000, "Member 'CollectionBookSectionTileWidget_C_OnSectionSlotUpdate::NumFilledSlots' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionTileWidget_C_OnSectionSlotUpdate, NumSlots) == 0x000004, "Member 'CollectionBookSectionTileWidget_C_OnSectionSlotUpdate::NumSlots' has a wrong offset!");
 static_assert(offsetof(CollectionBookSectionTileWidget_C_OnSectionSlotUpdate, SectionState) == 0x000008, "Member 'CollectionBookSectionTileWidget_C_OnSectionSlotUpdate::SectionState' has a wrong offset!");

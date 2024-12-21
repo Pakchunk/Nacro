@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MtxStoreRoot.MtxStoreRoot_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0450 - 0x0408)
 class UMtxStoreRoot_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      CancelButton;                                      // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_583;                                         // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULightbox_C*                            Lightbox;                                          // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<UMtxStoreRoot_C>();
 	}
 };
-static_assert(alignof(UMtxStoreRoot_C) == 0x322CBBB8, "Wrong alignment on UMtxStoreRoot_C");
-static_assert(sizeof(UMtxStoreRoot_C) == 0x322CBBB8, "Wrong size on UMtxStoreRoot_C");
+static_assert(alignof(UMtxStoreRoot_C) == 0x000008, "Wrong alignment on UMtxStoreRoot_C");
+static_assert(sizeof(UMtxStoreRoot_C) == 0x000450, "Wrong size on UMtxStoreRoot_C");
 static_assert(offsetof(UMtxStoreRoot_C, UberGraphFrame) == 0x000410, "Member 'UMtxStoreRoot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMtxStoreRoot_C, CancelButton) == 0x000418, "Member 'UMtxStoreRoot_C::CancelButton' has a wrong offset!");
 static_assert(offsetof(UMtxStoreRoot_C, Image_583) == 0x000420, "Member 'UMtxStoreRoot_C::Image_583' has a wrong offset!");

@@ -44,12 +44,12 @@ static_assert(sizeof(FullPartyMemberConnected_C_PreConstruct) == 0x000001, "Wron
 static_assert(offsetof(FullPartyMemberConnected_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'FullPartyMemberConnected_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.UpdateMemberInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0200 (0x0200 - 0x0000)
 struct FullPartyMemberConnected_C_UpdateMemberInfo final
 {
 public:
-	struct FFortTeamMemberInfo                    NewMemberInfo;                                     // 0x0000(0x11827900)(Parm)
-	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0190(0x11821780)(Edit, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                    NewMemberInfo;                                     // 0x0000(0x0190)(Parm)
+	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0190(0x0018)(Edit, HasGetValueTypeHash)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -71,7 +71,7 @@ public:
 	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x01CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1CD[0x3];                                      // 0x01CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Select3_Default;                            // 0x01D0(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_Select3_Default;                            // 0x01D0(0x0018)(HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetTotalHomebaseRating_Rating;            // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -80,8 +80,8 @@ public:
 	uint8                                         Pad_1F5[0x3];                                      // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMemberConnected_C_UpdateMemberInfo) == 0x11821780, "Wrong alignment on FullPartyMemberConnected_C_UpdateMemberInfo");
-static_assert(sizeof(FullPartyMemberConnected_C_UpdateMemberInfo) == 0x11821780, "Wrong size on FullPartyMemberConnected_C_UpdateMemberInfo");
+static_assert(alignof(FullPartyMemberConnected_C_UpdateMemberInfo) == 0x000008, "Wrong alignment on FullPartyMemberConnected_C_UpdateMemberInfo");
+static_assert(sizeof(FullPartyMemberConnected_C_UpdateMemberInfo) == 0x000200, "Wrong size on FullPartyMemberConnected_C_UpdateMemberInfo");
 static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, NewMemberInfo) == 0x000000, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::NewMemberInfo' has a wrong offset!");
 static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, PlayerNetId) == 0x000190, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::PlayerNetId' has a wrong offset!");
 static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_GetContext_ReturnValue) == 0x0001A8, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -111,14 +111,14 @@ static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_Get
 static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0001F8, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.UpdateDimensions
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FullPartyMemberConnected_C_UpdateDimensions final
 {
 public:
-	struct FVector2D                              NewDimensions;                                     // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              NewDimensions;                                     // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMemberConnected_C_UpdateDimensions) == 0x11821300, "Wrong alignment on FullPartyMemberConnected_C_UpdateDimensions");
-static_assert(sizeof(FullPartyMemberConnected_C_UpdateDimensions) == 0x11821300, "Wrong size on FullPartyMemberConnected_C_UpdateDimensions");
+static_assert(alignof(FullPartyMemberConnected_C_UpdateDimensions) == 0x000004, "Wrong alignment on FullPartyMemberConnected_C_UpdateDimensions");
+static_assert(sizeof(FullPartyMemberConnected_C_UpdateDimensions) == 0x000008, "Wrong size on FullPartyMemberConnected_C_UpdateDimensions");
 static_assert(offsetof(FullPartyMemberConnected_C_UpdateDimensions, NewDimensions) == 0x000000, "Member 'FullPartyMemberConnected_C_UpdateDimensions::NewDimensions' has a wrong offset!");
 
 }

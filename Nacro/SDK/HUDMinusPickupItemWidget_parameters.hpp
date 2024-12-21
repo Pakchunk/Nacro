@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function HUD-PickupItemWidget.HUD-PickupItemWidget_C.ExecuteUbergraph_HUD-PickupItemWidget
-// 0x0078 (0x0078 - 0x0000)
-struct alignas(0x78) HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget final
+// 0x0004 (0x0004 - 0x0000)
+struct HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget) == 0x000078, "Wrong alignment on HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget");
-static_assert(sizeof(HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget) == 0x000078, "Wrong size on HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget");
+static_assert(alignof(HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget) == 0x000004, "Wrong alignment on HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget");
+static_assert(sizeof(HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget) == 0x000004, "Wrong size on HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget");
 static_assert(offsetof(HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget, EntryPoint) == 0x000000, "Member 'HUDMinusPickupItemWidget_C_ExecuteUbergraph_HUDMinusPickupItemWidget::EntryPoint' has a wrong offset!");
 
 // Function HUD-PickupItemWidget.HUD-PickupItemWidget_C.InitializeItemData
@@ -96,14 +96,14 @@ static_assert(offsetof(HUDMinusPickupItemWidget_C_InitializeInteractionFailureTe
 static_assert(offsetof(HUDMinusPickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GetInteractErrorText_ReturnValue) == 0x000068, "Member 'HUDMinusPickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GetInteractErrorText_ReturnValue' has a wrong offset!");
 
 // Function HUD-PickupItemWidget.HUD-PickupItemWidget_C.SetPickup
-// 0x5F0064 (0x5F0064 - 0x0000)
-struct alignas(0x5F0064) HUDMinusPickupItemWidget_C_SetPickup final
+// 0x0008 (0x0008 - 0x0000)
+struct HUDMinusPickupItemWidget_C_SetPickup final
 {
 public:
 	class AFortPickup*                            NewPickup;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDMinusPickupItemWidget_C_SetPickup) == 0x5F0064, "Wrong alignment on HUDMinusPickupItemWidget_C_SetPickup");
-static_assert(sizeof(HUDMinusPickupItemWidget_C_SetPickup) == 0x5F0064, "Wrong size on HUDMinusPickupItemWidget_C_SetPickup");
+static_assert(alignof(HUDMinusPickupItemWidget_C_SetPickup) == 0x000008, "Wrong alignment on HUDMinusPickupItemWidget_C_SetPickup");
+static_assert(sizeof(HUDMinusPickupItemWidget_C_SetPickup) == 0x000008, "Wrong size on HUDMinusPickupItemWidget_C_SetPickup");
 static_assert(offsetof(HUDMinusPickupItemWidget_C_SetPickup, NewPickup) == 0x000000, "Member 'HUDMinusPickupItemWidget_C_SetPickup::NewPickup' has a wrong offset!");
 
 }

@@ -17,15 +17,15 @@ namespace SDK::Params
 {
 
 // Function KillerPortraitWidget.KillerPortraitWidget_C.Init
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct KillerPortraitWidget_C_Init final
 {
 public:
-	struct FFortKillerVisualInfo                  KillerVisualInfo;                                  // 0x0000(0x1182E980)(Parm, OutParm, ReferenceParm)
+	struct FFortKillerVisualInfo                  KillerVisualInfo;                                  // 0x0000(0x00A8)(Parm, OutParm, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(KillerPortraitWidget_C_Init) == 0x1182E980, "Wrong alignment on KillerPortraitWidget_C_Init");
-static_assert(sizeof(KillerPortraitWidget_C_Init) == 0x1182E980, "Wrong size on KillerPortraitWidget_C_Init");
+static_assert(alignof(KillerPortraitWidget_C_Init) == 0x000008, "Wrong alignment on KillerPortraitWidget_C_Init");
+static_assert(sizeof(KillerPortraitWidget_C_Init) == 0x0000B0, "Wrong size on KillerPortraitWidget_C_Init");
 static_assert(offsetof(KillerPortraitWidget_C_Init, KillerVisualInfo) == 0x000000, "Member 'KillerPortraitWidget_C_Init::KillerVisualInfo' has a wrong offset!");
 static_assert(offsetof(KillerPortraitWidget_C_Init, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'KillerPortraitWidget_C_Init::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 

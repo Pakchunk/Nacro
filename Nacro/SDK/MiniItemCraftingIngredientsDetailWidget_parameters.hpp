@@ -33,7 +33,7 @@ static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergrap
 static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget, CallFunc_GetRecipeItemQuantityPairs_Pairs2) == 0x000018, "Member 'MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget::CallFunc_GetRecipeItemQuantityPairs_Pairs2' has a wrong offset!");
 
 // Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.GetRecipeItemQuantityPairs
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs final
 {
 public:
@@ -48,17 +48,17 @@ public:
 	TArray<struct FSchematicRequirement>          CallFunc_GetSchematicRequirements_Requirements;    // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSchematicRequirement                  CallFunc_Array_Get_Item;                           // 0x0058(0x11821780)(NoDestructor)
+	struct FSchematicRequirement                  CallFunc_Array_Get_Item;                           // 0x0058(0x0010)(NoDestructor)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x0070(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x0070(0x0028)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs) == 0x11821780, "Wrong alignment on MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs");
-static_assert(sizeof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs) == 0x11821780, "Wrong size on MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs");
+static_assert(alignof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs) == 0x000008, "Wrong alignment on MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs");
+static_assert(sizeof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs) == 0x0000A8, "Wrong size on MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs");
 static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, Item) == 0x000000, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::Item' has a wrong offset!");
 static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, Pairs) == 0x000008, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::Pairs' has a wrong offset!");
 static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, Results) == 0x000018, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::Results' has a wrong offset!");

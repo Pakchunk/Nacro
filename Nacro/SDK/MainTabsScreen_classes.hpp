@@ -19,16 +19,16 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MainTabsScreen.MainTabsScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0478 - 0x0450)
 class UMainTabsScreen_C final : public UFortMainTabsScreenBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x0008)(Transient, DuplicateTransient)
 	class UCommonWidgetSwitcher*                  TopTabContentWidgetSwitcher;                       // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FName                                   LastActiveTabId;                                   // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         UnclaimedResearchBangThreshold;                    // 0x0468(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_46C[0x4];                                      // 0x046C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           UnclaimedResearchPointsHandle;                     // 0x0470(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           UnclaimedResearchPointsHandle;                     // 0x0470(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_MainTabsScreen(int32 EntryPoint);
@@ -78,8 +78,8 @@ public:
 		return GetDefaultObjImpl<UMainTabsScreen_C>();
 	}
 };
-static_assert(alignof(UMainTabsScreen_C) == 0x322CBBB8, "Wrong alignment on UMainTabsScreen_C");
-static_assert(sizeof(UMainTabsScreen_C) == 0x322CBBB8, "Wrong size on UMainTabsScreen_C");
+static_assert(alignof(UMainTabsScreen_C) == 0x000008, "Wrong alignment on UMainTabsScreen_C");
+static_assert(sizeof(UMainTabsScreen_C) == 0x000478, "Wrong size on UMainTabsScreen_C");
 static_assert(offsetof(UMainTabsScreen_C, UberGraphFrame) == 0x000450, "Member 'UMainTabsScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMainTabsScreen_C, TopTabContentWidgetSwitcher) == 0x000458, "Member 'UMainTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
 static_assert(offsetof(UMainTabsScreen_C, LastActiveTabId) == 0x000460, "Member 'UMainTabsScreen_C::LastActiveTabId' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Announcement_Layout.Announcement_Layout_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0280 - 0x0260)
 class UAnnouncement_Layout_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class USizeBox*                               AnnouncementRoot;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMissionFocusWidget_C*                  MissionFocusWidget;                                // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UClass*                                 AnnouncementWidget_Basic;                          // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UAnnouncement_Layout_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_Layout_C) == 0x322CBBB8, "Wrong alignment on UAnnouncement_Layout_C");
-static_assert(sizeof(UAnnouncement_Layout_C) == 0x322CBBB8, "Wrong size on UAnnouncement_Layout_C");
+static_assert(alignof(UAnnouncement_Layout_C) == 0x000008, "Wrong alignment on UAnnouncement_Layout_C");
+static_assert(sizeof(UAnnouncement_Layout_C) == 0x000280, "Wrong size on UAnnouncement_Layout_C");
 static_assert(offsetof(UAnnouncement_Layout_C, UberGraphFrame) == 0x000260, "Member 'UAnnouncement_Layout_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_Layout_C, AnnouncementRoot) == 0x000268, "Member 'UAnnouncement_Layout_C::AnnouncementRoot' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_Layout_C, MissionFocusWidget) == 0x000270, "Member 'UAnnouncement_Layout_C::MissionFocusWidget' has a wrong offset!");

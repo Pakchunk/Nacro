@@ -17,16 +17,16 @@ namespace SDK::Params
 {
 
 // Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed
-// 0x650073 (0x650073 - 0x0000)
-struct alignas(0x650073) ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed final
+// 0x0008 (0x0008 - 0x0000)
+struct ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsBeingReset;                         // 0x0004(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed) == 0x650073, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed");
-static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed) == 0x650073, "Wrong size on ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed");
+static_assert(alignof(ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed) == 0x000004, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed");
+static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed) == 0x000008, "Wrong size on ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed, EntryPoint) == 0x000000, "Member 'ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed, K2Node_Event_IsBeingReset) == 0x000004, "Member 'ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed::K2Node_Event_IsBeingReset' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed, K2Node_Event_IsDesignTime) == 0x000005, "Member 'ItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed::K2Node_Event_IsDesignTime' has a wrong offset!");
@@ -43,18 +43,18 @@ static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeed_C_HandleDifferentIt
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeed_C_HandleDifferentItemOrQuantitySetBP, IsBeingReset) == 0x000000, "Member 'ItemCraftingIngredientListEntryHaveNeed_C_HandleDifferentItemOrQuantitySetBP::IsBeingReset' has a wrong offset!");
 
 // Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.PreConstruct
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct) == 0x0000E4, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct");
-static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct) == 0x0000E4, "Wrong size on ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct");
+static_assert(alignof(ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct) == 0x000001, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct");
+static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct) == 0x000001, "Wrong size on ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemCraftingIngredientListEntryHaveNeed_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.DoDesignTimeRandomization
-// 0x52535 (0x52535 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization final
 {
 public:
@@ -67,10 +67,10 @@ public:
 	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomInteger_ReturnValue2;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemDefinition*                    K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x0038(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x0038(0x0028)()
 };
-static_assert(alignof(ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization) == 0x052535, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization");
-static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization) == 0x052535, "Wrong size on ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization");
+static_assert(alignof(ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization) == 0x000008, "Wrong alignment on ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization");
+static_assert(sizeof(ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization) == 0x000060, "Wrong size on ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization, Temp_int_Variable) == 0x000000, "Member 'ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization, Temp_object_Variable) == 0x000008, "Member 'ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization, Temp_object_Variable2) == 0x000010, "Member 'ItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization::Temp_object_Variable2' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-LeftDark.ButtonStyle-LeftDark_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusLeftDark_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusLeftDark_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusLeftDark_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusLeftDark_C");
-static_assert(sizeof(UButtonStyleMinusLeftDark_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusLeftDark_C");
+static_assert(alignof(UButtonStyleMinusLeftDark_C) == 0x000008, "Wrong alignment on UButtonStyleMinusLeftDark_C");
+static_assert(sizeof(UButtonStyleMinusLeftDark_C) == 0x000530, "Wrong size on UButtonStyleMinusLeftDark_C");
 
 }
 

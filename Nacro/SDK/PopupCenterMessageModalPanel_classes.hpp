@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass PopupCenterMessageModalPanel.PopupCenterMessageModalPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x0480 - 0x0408)
 class UPopupCenterMessageModalPanel_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       CenterMessageText;                                 // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULeaveButton_C*                         LeaveButton;                                       // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               MessageOverlay;                                    // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   WaitingForPlayersText;                             // 0x0430(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   WaitingForOutpostOwnerText;                        // 0x0448(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FTimerHandle                           MatchTimerHandle;                                  // 0x0460(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           MatchTimerHandle;                                  // 0x0460(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FText                                   WaitingForMatchToBeginText;                        // 0x0468(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UPopupCenterMessageModalPanel_C>();
 	}
 };
-static_assert(alignof(UPopupCenterMessageModalPanel_C) == 0x322CBBB8, "Wrong alignment on UPopupCenterMessageModalPanel_C");
-static_assert(sizeof(UPopupCenterMessageModalPanel_C) == 0x322CBBB8, "Wrong size on UPopupCenterMessageModalPanel_C");
+static_assert(alignof(UPopupCenterMessageModalPanel_C) == 0x000008, "Wrong alignment on UPopupCenterMessageModalPanel_C");
+static_assert(sizeof(UPopupCenterMessageModalPanel_C) == 0x000480, "Wrong size on UPopupCenterMessageModalPanel_C");
 static_assert(offsetof(UPopupCenterMessageModalPanel_C, UberGraphFrame) == 0x000410, "Member 'UPopupCenterMessageModalPanel_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPopupCenterMessageModalPanel_C, CenterMessageText) == 0x000418, "Member 'UPopupCenterMessageModalPanel_C::CenterMessageText' has a wrong offset!");
 static_assert(offsetof(UPopupCenterMessageModalPanel_C, LeaveButton) == 0x000420, "Member 'UPopupCenterMessageModalPanel_C::LeaveButton' has a wrong offset!");

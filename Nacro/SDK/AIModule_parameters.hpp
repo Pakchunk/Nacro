@@ -21,12 +21,13 @@ namespace SDK::Params
 {
 
 // Function AIModule.AITask_MoveTo.AIMoveTo
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AITask_MoveTo_AIMoveTo final
 {
 public:
 	class AAIController*                          Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                GoalLocation;                                      // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                GoalLocation;                                      // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 GoalActor;                                         // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AcceptanceRadius;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAIOptionFlag                                 StopOnOverlap;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -37,8 +38,8 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAITask_MoveTo*                         ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AITask_MoveTo_AIMoveTo) == 0x11821300, "Wrong alignment on AITask_MoveTo_AIMoveTo");
-static_assert(sizeof(AITask_MoveTo_AIMoveTo) == 0x11821300, "Wrong size on AITask_MoveTo_AIMoveTo");
+static_assert(alignof(AITask_MoveTo_AIMoveTo) == 0x000008, "Wrong alignment on AITask_MoveTo_AIMoveTo");
+static_assert(sizeof(AITask_MoveTo_AIMoveTo) == 0x000038, "Wrong size on AITask_MoveTo_AIMoveTo");
 static_assert(offsetof(AITask_MoveTo_AIMoveTo, Controller) == 0x000000, "Member 'AITask_MoveTo_AIMoveTo::Controller' has a wrong offset!");
 static_assert(offsetof(AITask_MoveTo_AIMoveTo, GoalLocation) == 0x000008, "Member 'AITask_MoveTo_AIMoveTo::GoalLocation' has a wrong offset!");
 static_assert(offsetof(AITask_MoveTo_AIMoveTo, GoalActor) == 0x000018, "Member 'AITask_MoveTo_AIMoveTo::GoalActor' has a wrong offset!");
@@ -88,17 +89,18 @@ static_assert(sizeof(PawnAction_GetActionPriority) == 0x000001, "Wrong size on P
 static_assert(offsetof(PawnAction_GetActionPriority, ReturnValue) == 0x000000, "Member 'PawnAction_GetActionPriority::ReturnValue' has a wrong offset!");
 
 // Function AIModule.PathFollowingComponent.OnActorBump
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct PathFollowingComponent_OnActorBump final
 {
 public:
 	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                NormalImpulse;                                     // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                             Hit;                                               // 0x0020(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FVector                                NormalImpulse;                                     // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             Hit;                                               // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PathFollowingComponent_OnActorBump) == 0x11821D80, "Wrong alignment on PathFollowingComponent_OnActorBump");
-static_assert(sizeof(PathFollowingComponent_OnActorBump) == 0x11821D80, "Wrong size on PathFollowingComponent_OnActorBump");
+static_assert(alignof(PathFollowingComponent_OnActorBump) == 0x000008, "Wrong alignment on PathFollowingComponent_OnActorBump");
+static_assert(sizeof(PathFollowingComponent_OnActorBump) == 0x0000A8, "Wrong size on PathFollowingComponent_OnActorBump");
 static_assert(offsetof(PathFollowingComponent_OnActorBump, SelfActor) == 0x000000, "Member 'PathFollowingComponent_OnActorBump::SelfActor' has a wrong offset!");
 static_assert(offsetof(PathFollowingComponent_OnActorBump, OtherActor) == 0x000008, "Member 'PathFollowingComponent_OnActorBump::OtherActor' has a wrong offset!");
 static_assert(offsetof(PathFollowingComponent_OnActorBump, NormalImpulse) == 0x000010, "Member 'PathFollowingComponent_OnActorBump::NormalImpulse' has a wrong offset!");
@@ -127,31 +129,31 @@ static_assert(sizeof(PathFollowingComponent_GetPathActionType) == 0x000001, "Wro
 static_assert(offsetof(PathFollowingComponent_GetPathActionType, ReturnValue) == 0x000000, "Member 'PathFollowingComponent_GetPathActionType::ReturnValue' has a wrong offset!");
 
 // Function AIModule.PathFollowingComponent.GetPathDestination
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct PathFollowingComponent_GetPathDestination final
 {
 public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PathFollowingComponent_GetPathDestination) == 0x11821300, "Wrong alignment on PathFollowingComponent_GetPathDestination");
-static_assert(sizeof(PathFollowingComponent_GetPathDestination) == 0x11821300, "Wrong size on PathFollowingComponent_GetPathDestination");
+static_assert(alignof(PathFollowingComponent_GetPathDestination) == 0x000004, "Wrong alignment on PathFollowingComponent_GetPathDestination");
+static_assert(sizeof(PathFollowingComponent_GetPathDestination) == 0x00000C, "Wrong size on PathFollowingComponent_GetPathDestination");
 static_assert(offsetof(PathFollowingComponent_GetPathDestination, ReturnValue) == 0x000000, "Member 'PathFollowingComponent_GetPathDestination::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AISense_Hearing.ReportNoiseEvent
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct AISense_Hearing_ReportNoiseEvent final
 {
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                NoiseLocation;                                     // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                NoiseLocation;                                     // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Loudness;                                          // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Instigator;                                        // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxRange;                                          // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Tag;                                               // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AISense_Hearing_ReportNoiseEvent) == 0x11821300, "Wrong alignment on AISense_Hearing_ReportNoiseEvent");
-static_assert(sizeof(AISense_Hearing_ReportNoiseEvent) == 0x11821300, "Wrong size on AISense_Hearing_ReportNoiseEvent");
+static_assert(alignof(AISense_Hearing_ReportNoiseEvent) == 0x000008, "Wrong alignment on AISense_Hearing_ReportNoiseEvent");
+static_assert(sizeof(AISense_Hearing_ReportNoiseEvent) == 0x000030, "Wrong size on AISense_Hearing_ReportNoiseEvent");
 static_assert(offsetof(AISense_Hearing_ReportNoiseEvent, WorldContext) == 0x000000, "Member 'AISense_Hearing_ReportNoiseEvent::WorldContext' has a wrong offset!");
 static_assert(offsetof(AISense_Hearing_ReportNoiseEvent, NoiseLocation) == 0x000008, "Member 'AISense_Hearing_ReportNoiseEvent::NoiseLocation' has a wrong offset!");
 static_assert(offsetof(AISense_Hearing_ReportNoiseEvent, Loudness) == 0x000014, "Member 'AISense_Hearing_ReportNoiseEvent::Loudness' has a wrong offset!");
@@ -193,14 +195,14 @@ static_assert(sizeof(AIController_GetAIPerceptionComponent) == 0x000008, "Wrong 
 static_assert(offsetof(AIController_GetAIPerceptionComponent, ReturnValue) == 0x000000, "Member 'AIController_GetAIPerceptionComponent::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIController.K2_SetFocalPoint
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct AIController_K2_SetFocalPoint final
 {
 public:
-	struct FVector                                FP;                                                // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                FP;                                                // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AIController_K2_SetFocalPoint) == 0x11821300, "Wrong alignment on AIController_K2_SetFocalPoint");
-static_assert(sizeof(AIController_K2_SetFocalPoint) == 0x11821300, "Wrong size on AIController_K2_SetFocalPoint");
+static_assert(alignof(AIController_K2_SetFocalPoint) == 0x000004, "Wrong alignment on AIController_K2_SetFocalPoint");
+static_assert(sizeof(AIController_K2_SetFocalPoint) == 0x00000C, "Wrong size on AIController_K2_SetFocalPoint");
 static_assert(offsetof(AIController_K2_SetFocalPoint, FP) == 0x000000, "Member 'AIController_K2_SetFocalPoint::FP' has a wrong offset!");
 
 // Function AIModule.AIController.K2_SetFocus
@@ -242,11 +244,11 @@ static_assert(offsetof(AIController_MoveToActor, bAllowPartialPath) == 0x000018,
 static_assert(offsetof(AIController_MoveToActor, ReturnValue) == 0x000019, "Member 'AIController_MoveToActor::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIController.MoveToLocation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct AIController_MoveToLocation final
 {
 public:
-	struct FVector                                Dest;                                              // 0x0000(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Dest;                                              // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AcceptanceRadius;                                  // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopOnOverlap;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUsePathfinding;                                   // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -258,8 +260,8 @@ public:
 	EPathFollowingRequestResult                   ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIController_MoveToLocation) == 0x11821300, "Wrong alignment on AIController_MoveToLocation");
-static_assert(sizeof(AIController_MoveToLocation) == 0x11821300, "Wrong size on AIController_MoveToLocation");
+static_assert(alignof(AIController_MoveToLocation) == 0x000008, "Wrong alignment on AIController_MoveToLocation");
+static_assert(sizeof(AIController_MoveToLocation) == 0x000028, "Wrong size on AIController_MoveToLocation");
 static_assert(offsetof(AIController_MoveToLocation, Dest) == 0x000000, "Member 'AIController_MoveToLocation::Dest' has a wrong offset!");
 static_assert(offsetof(AIController_MoveToLocation, AcceptanceRadius) == 0x00000C, "Member 'AIController_MoveToLocation::AcceptanceRadius' has a wrong offset!");
 static_assert(offsetof(AIController_MoveToLocation, bStopOnOverlap) == 0x000010, "Member 'AIController_MoveToLocation::bStopOnOverlap' has a wrong offset!");
@@ -271,15 +273,15 @@ static_assert(offsetof(AIController_MoveToLocation, bAllowPartialPath) == 0x0000
 static_assert(offsetof(AIController_MoveToLocation, ReturnValue) == 0x000021, "Member 'AIController_MoveToLocation::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIController.OnGameplayTaskResourcesClaimed
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct AIController_OnGameplayTaskResourcesClaimed final
 {
 public:
-	struct FGameplayResourceSet                   NewlyClaimed;                                      // 0x0000(0x11821C00)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	struct FGameplayResourceSet                   FreshlyReleased;                                   // 0x0002(0x11821C00)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FGameplayResourceSet                   NewlyClaimed;                                      // 0x0000(0x0002)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FGameplayResourceSet                   FreshlyReleased;                                   // 0x0002(0x0002)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AIController_OnGameplayTaskResourcesClaimed) == 0x11821C00, "Wrong alignment on AIController_OnGameplayTaskResourcesClaimed");
-static_assert(sizeof(AIController_OnGameplayTaskResourcesClaimed) == 0x11821C00, "Wrong size on AIController_OnGameplayTaskResourcesClaimed");
+static_assert(alignof(AIController_OnGameplayTaskResourcesClaimed) == 0x000002, "Wrong alignment on AIController_OnGameplayTaskResourcesClaimed");
+static_assert(sizeof(AIController_OnGameplayTaskResourcesClaimed) == 0x000004, "Wrong size on AIController_OnGameplayTaskResourcesClaimed");
 static_assert(offsetof(AIController_OnGameplayTaskResourcesClaimed, NewlyClaimed) == 0x000000, "Member 'AIController_OnGameplayTaskResourcesClaimed::NewlyClaimed' has a wrong offset!");
 static_assert(offsetof(AIController_OnGameplayTaskResourcesClaimed, FreshlyReleased) == 0x000002, "Member 'AIController_OnGameplayTaskResourcesClaimed::FreshlyReleased' has a wrong offset!");
 
@@ -355,8 +357,8 @@ static_assert(sizeof(AIController_UnclaimTaskResource) == 0x000008, "Wrong size 
 static_assert(offsetof(AIController_UnclaimTaskResource, ResourceClass) == 0x000000, "Member 'AIController_UnclaimTaskResource::ResourceClass' has a wrong offset!");
 
 // Function AIModule.AIController.UseBlackboard
-// 0x2D767E80 (0x2D767E80 - 0x0000)
-struct alignas(0x2D767E80) AIController_UseBlackboard final
+// 0x0018 (0x0018 - 0x0000)
+struct AIController_UseBlackboard final
 {
 public:
 	class UBlackboardData*                        BlackboardAsset;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -364,33 +366,34 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIController_UseBlackboard) == 0x2D767E80, "Wrong alignment on AIController_UseBlackboard");
-static_assert(sizeof(AIController_UseBlackboard) == 0x2D767E80, "Wrong size on AIController_UseBlackboard");
+static_assert(alignof(AIController_UseBlackboard) == 0x000008, "Wrong alignment on AIController_UseBlackboard");
+static_assert(sizeof(AIController_UseBlackboard) == 0x000018, "Wrong size on AIController_UseBlackboard");
 static_assert(offsetof(AIController_UseBlackboard, BlackboardAsset) == 0x000000, "Member 'AIController_UseBlackboard::BlackboardAsset' has a wrong offset!");
 static_assert(offsetof(AIController_UseBlackboard, BlackboardComponent) == 0x000008, "Member 'AIController_UseBlackboard::BlackboardComponent' has a wrong offset!");
 static_assert(offsetof(AIController_UseBlackboard, ReturnValue) == 0x000010, "Member 'AIController_UseBlackboard::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIController.GetFocalPoint
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct AIController_GetFocalPoint final
 {
 public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AIController_GetFocalPoint) == 0x11821300, "Wrong alignment on AIController_GetFocalPoint");
-static_assert(sizeof(AIController_GetFocalPoint) == 0x11821300, "Wrong size on AIController_GetFocalPoint");
+static_assert(alignof(AIController_GetFocalPoint) == 0x000004, "Wrong alignment on AIController_GetFocalPoint");
+static_assert(sizeof(AIController_GetFocalPoint) == 0x00000C, "Wrong size on AIController_GetFocalPoint");
 static_assert(offsetof(AIController_GetFocalPoint, ReturnValue) == 0x000000, "Member 'AIController_GetFocalPoint::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIController.GetFocalPointOnActor
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct AIController_GetFocalPointOnActor final
 {
 public:
 	const class AActor*                           Actor;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ReturnValue;                                       // 0x0008(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIController_GetFocalPointOnActor) == 0x11821300, "Wrong alignment on AIController_GetFocalPointOnActor");
-static_assert(sizeof(AIController_GetFocalPointOnActor) == 0x11821300, "Wrong size on AIController_GetFocalPointOnActor");
+static_assert(alignof(AIController_GetFocalPointOnActor) == 0x000008, "Wrong alignment on AIController_GetFocalPointOnActor");
+static_assert(sizeof(AIController_GetFocalPointOnActor) == 0x000018, "Wrong size on AIController_GetFocalPointOnActor");
 static_assert(offsetof(AIController_GetFocalPointOnActor, Actor) == 0x000000, "Member 'AIController_GetFocalPointOnActor::Actor' has a wrong offset!");
 static_assert(offsetof(AIController_GetFocalPointOnActor, ReturnValue) == 0x000008, "Member 'AIController_GetFocalPointOnActor::ReturnValue' has a wrong offset!");
 
@@ -406,14 +409,14 @@ static_assert(sizeof(AIController_GetFocusActor) == 0x000008, "Wrong size on AIC
 static_assert(offsetof(AIController_GetFocusActor, ReturnValue) == 0x000000, "Member 'AIController_GetFocusActor::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIController.GetImmediateMoveDestination
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct AIController_GetImmediateMoveDestination final
 {
 public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AIController_GetImmediateMoveDestination) == 0x11821300, "Wrong alignment on AIController_GetImmediateMoveDestination");
-static_assert(sizeof(AIController_GetImmediateMoveDestination) == 0x11821300, "Wrong size on AIController_GetImmediateMoveDestination");
+static_assert(alignof(AIController_GetImmediateMoveDestination) == 0x000004, "Wrong alignment on AIController_GetImmediateMoveDestination");
+static_assert(sizeof(AIController_GetImmediateMoveDestination) == 0x00000C, "Wrong size on AIController_GetImmediateMoveDestination");
 static_assert(offsetof(AIController_GetImmediateMoveDestination, ReturnValue) == 0x000000, "Member 'AIController_GetImmediateMoveDestination::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIController.GetMoveStatus
@@ -461,17 +464,17 @@ static_assert(sizeof(CrowdFollowingComponent_SuspendCrowdSteering) == 0x000001, 
 static_assert(offsetof(CrowdFollowingComponent_SuspendCrowdSteering, bSuspend) == 0x000000, "Member 'CrowdFollowingComponent_SuspendCrowdSteering::bSuspend' has a wrong offset!");
 
 // Function AIModule.AIPerceptionComponent.GetActorsPerception
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct AIPerceptionComponent_GetActorsPerception final
 {
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FActorPerceptionBlueprintInfo          Info;                                              // 0x0008(0x11821F00)(Parm, OutParm, NativeAccessSpecifierPublic)
+	struct FActorPerceptionBlueprintInfo          Info;                                              // 0x0008(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIPerceptionComponent_GetActorsPerception) == 0x11821F00, "Wrong alignment on AIPerceptionComponent_GetActorsPerception");
-static_assert(sizeof(AIPerceptionComponent_GetActorsPerception) == 0x11821F00, "Wrong size on AIPerceptionComponent_GetActorsPerception");
+static_assert(alignof(AIPerceptionComponent_GetActorsPerception) == 0x000008, "Wrong alignment on AIPerceptionComponent_GetActorsPerception");
+static_assert(sizeof(AIPerceptionComponent_GetActorsPerception) == 0x000030, "Wrong size on AIPerceptionComponent_GetActorsPerception");
 static_assert(offsetof(AIPerceptionComponent_GetActorsPerception, Actor) == 0x000000, "Member 'AIPerceptionComponent_GetActorsPerception::Actor' has a wrong offset!");
 static_assert(offsetof(AIPerceptionComponent_GetActorsPerception, Info) == 0x000008, "Member 'AIPerceptionComponent_GetActorsPerception::Info' has a wrong offset!");
 static_assert(offsetof(AIPerceptionComponent_GetActorsPerception, ReturnValue) == 0x000028, "Member 'AIPerceptionComponent_GetActorsPerception::ReturnValue' has a wrong offset!");
@@ -541,16 +544,16 @@ static_assert(sizeof(AIPerceptionComponent_GetPerceivedHostileActors) == 0x00001
 static_assert(offsetof(AIPerceptionComponent_GetPerceivedHostileActors, OutActors) == 0x000000, "Member 'AIPerceptionComponent_GetPerceivedHostileActors::OutActors' has a wrong offset!");
 
 // Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus
-// 0x53343 (0x53343 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct AIPerceptionSystem_GetSenseClassForStimulus final
 {
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAIStimulus                            Stimulus;                                          // 0x0008(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAIStimulus                            Stimulus;                                          // 0x0008(0x0048)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TSubclassOf<class UAISense>                   ReturnValue;                                       // 0x0050(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AIPerceptionSystem_GetSenseClassForStimulus) == 0x053343, "Wrong alignment on AIPerceptionSystem_GetSenseClassForStimulus");
-static_assert(sizeof(AIPerceptionSystem_GetSenseClassForStimulus) == 0x053343, "Wrong size on AIPerceptionSystem_GetSenseClassForStimulus");
+static_assert(alignof(AIPerceptionSystem_GetSenseClassForStimulus) == 0x000008, "Wrong alignment on AIPerceptionSystem_GetSenseClassForStimulus");
+static_assert(sizeof(AIPerceptionSystem_GetSenseClassForStimulus) == 0x000058, "Wrong size on AIPerceptionSystem_GetSenseClassForStimulus");
 static_assert(offsetof(AIPerceptionSystem_GetSenseClassForStimulus, WorldContext) == 0x000000, "Member 'AIPerceptionSystem_GetSenseClassForStimulus::WorldContext' has a wrong offset!");
 static_assert(offsetof(AIPerceptionSystem_GetSenseClassForStimulus, Stimulus) == 0x000008, "Member 'AIPerceptionSystem_GetSenseClassForStimulus::Stimulus' has a wrong offset!");
 static_assert(offsetof(AIPerceptionSystem_GetSenseClassForStimulus, ReturnValue) == 0x000050, "Member 'AIPerceptionSystem_GetSenseClassForStimulus::ReturnValue' has a wrong offset!");
@@ -634,45 +637,45 @@ static_assert(offsetof(EnvQueryManager_RunEQSQuery, WrapperClass) == 0x000020, "
 static_assert(offsetof(EnvQueryManager_RunEQSQuery, ReturnValue) == 0x000028, "Member 'EnvQueryManager_RunEQSQuery::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct BehaviorTreeComponent_AddCooldownTagDuration final
 {
 public:
-	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CooldownDuration;                                  // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddToExistingDuration;                            // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BehaviorTreeComponent_AddCooldownTagDuration) == 0x11821D80, "Wrong alignment on BehaviorTreeComponent_AddCooldownTagDuration");
-static_assert(sizeof(BehaviorTreeComponent_AddCooldownTagDuration) == 0x11821D80, "Wrong size on BehaviorTreeComponent_AddCooldownTagDuration");
+static_assert(alignof(BehaviorTreeComponent_AddCooldownTagDuration) == 0x000008, "Wrong alignment on BehaviorTreeComponent_AddCooldownTagDuration");
+static_assert(sizeof(BehaviorTreeComponent_AddCooldownTagDuration) == 0x000010, "Wrong size on BehaviorTreeComponent_AddCooldownTagDuration");
 static_assert(offsetof(BehaviorTreeComponent_AddCooldownTagDuration, CooldownTag) == 0x000000, "Member 'BehaviorTreeComponent_AddCooldownTagDuration::CooldownTag' has a wrong offset!");
 static_assert(offsetof(BehaviorTreeComponent_AddCooldownTagDuration, CooldownDuration) == 0x000008, "Member 'BehaviorTreeComponent_AddCooldownTagDuration::CooldownDuration' has a wrong offset!");
 static_assert(offsetof(BehaviorTreeComponent_AddCooldownTagDuration, bAddToExistingDuration) == 0x00000C, "Member 'BehaviorTreeComponent_AddCooldownTagDuration::bAddToExistingDuration' has a wrong offset!");
 
 // Function AIModule.BehaviorTreeComponent.SetDynamicSubtree
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct BehaviorTreeComponent_SetDynamicSubtree final
 {
 public:
-	struct FGameplayTag                           InjectTag;                                         // 0x0000(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           InjectTag;                                         // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UBehaviorTree*                          BehaviorAsset;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BehaviorTreeComponent_SetDynamicSubtree) == 0x11821D80, "Wrong alignment on BehaviorTreeComponent_SetDynamicSubtree");
-static_assert(sizeof(BehaviorTreeComponent_SetDynamicSubtree) == 0x11821D80, "Wrong size on BehaviorTreeComponent_SetDynamicSubtree");
+static_assert(alignof(BehaviorTreeComponent_SetDynamicSubtree) == 0x000008, "Wrong alignment on BehaviorTreeComponent_SetDynamicSubtree");
+static_assert(sizeof(BehaviorTreeComponent_SetDynamicSubtree) == 0x000010, "Wrong size on BehaviorTreeComponent_SetDynamicSubtree");
 static_assert(offsetof(BehaviorTreeComponent_SetDynamicSubtree, InjectTag) == 0x000000, "Member 'BehaviorTreeComponent_SetDynamicSubtree::InjectTag' has a wrong offset!");
 static_assert(offsetof(BehaviorTreeComponent_SetDynamicSubtree, BehaviorAsset) == 0x000008, "Member 'BehaviorTreeComponent_SetDynamicSubtree::BehaviorAsset' has a wrong offset!");
 
 // Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct BehaviorTreeComponent_GetTagCooldownEndTime final
 {
 public:
-	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x11821D80)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BehaviorTreeComponent_GetTagCooldownEndTime) == 0x11821D80, "Wrong alignment on BehaviorTreeComponent_GetTagCooldownEndTime");
-static_assert(sizeof(BehaviorTreeComponent_GetTagCooldownEndTime) == 0x11821D80, "Wrong size on BehaviorTreeComponent_GetTagCooldownEndTime");
+static_assert(alignof(BehaviorTreeComponent_GetTagCooldownEndTime) == 0x000008, "Wrong alignment on BehaviorTreeComponent_GetTagCooldownEndTime");
+static_assert(sizeof(BehaviorTreeComponent_GetTagCooldownEndTime) == 0x000010, "Wrong size on BehaviorTreeComponent_GetTagCooldownEndTime");
 static_assert(offsetof(BehaviorTreeComponent_GetTagCooldownEndTime, CooldownTag) == 0x000000, "Member 'BehaviorTreeComponent_GetTagCooldownEndTime::CooldownTag' has a wrong offset!");
 static_assert(offsetof(BehaviorTreeComponent_GetTagCooldownEndTime, ReturnValue) == 0x000008, "Member 'BehaviorTreeComponent_GetTagCooldownEndTime::ReturnValue' has a wrong offset!");
 
@@ -699,16 +702,16 @@ static_assert(sizeof(AIPerceptionStimuliSourceComponent_UnregisterFromSense) == 
 static_assert(offsetof(AIPerceptionStimuliSourceComponent_UnregisterFromSense, SenseClass) == 0x000000, "Member 'AIPerceptionStimuliSourceComponent_UnregisterFromSense::SenseClass' has a wrong offset!");
 
 // Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
-// 0x536B7 (0x536B7 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct AIAsyncTaskBlueprintProxy_OnMoveCompleted final
 {
 public:
-	struct FAIRequestID                           RequestID;                                         // 0x0000(0x536B7)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAIRequestID                           RequestID;                                         // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	EPathFollowingResult                          MovementResult;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIAsyncTaskBlueprintProxy_OnMoveCompleted) == 0x0536B7, "Wrong alignment on AIAsyncTaskBlueprintProxy_OnMoveCompleted");
-static_assert(sizeof(AIAsyncTaskBlueprintProxy_OnMoveCompleted) == 0x0536B7, "Wrong size on AIAsyncTaskBlueprintProxy_OnMoveCompleted");
+static_assert(alignof(AIAsyncTaskBlueprintProxy_OnMoveCompleted) == 0x000004, "Wrong alignment on AIAsyncTaskBlueprintProxy_OnMoveCompleted");
+static_assert(sizeof(AIAsyncTaskBlueprintProxy_OnMoveCompleted) == 0x000008, "Wrong size on AIAsyncTaskBlueprintProxy_OnMoveCompleted");
 static_assert(offsetof(AIAsyncTaskBlueprintProxy_OnMoveCompleted, RequestID) == 0x000000, "Member 'AIAsyncTaskBlueprintProxy_OnMoveCompleted::RequestID' has a wrong offset!");
 static_assert(offsetof(AIAsyncTaskBlueprintProxy_OnMoveCompleted, MovementResult) == 0x000004, "Member 'AIAsyncTaskBlueprintProxy_OnMoveCompleted::MovementResult' has a wrong offset!");
 
@@ -799,21 +802,22 @@ static_assert(sizeof(AISense_Blueprint_GetAllListenerComponents) == 0x000010, "W
 static_assert(offsetof(AISense_Blueprint_GetAllListenerComponents, ListenerComponents) == 0x000000, "Member 'AISense_Blueprint_GetAllListenerComponents::ListenerComponents' has a wrong offset!");
 
 // Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AIBlueprintHelperLibrary_CreateMoveToProxyObject final
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  Pawn;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Destination;                                       // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Destination;                                       // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 TargetActor;                                       // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AcceptanceRadius;                                  // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopOnOverlap;                                    // 0x002C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAIAsyncTaskBlueprintProxy*             ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AIBlueprintHelperLibrary_CreateMoveToProxyObject) == 0x11821300, "Wrong alignment on AIBlueprintHelperLibrary_CreateMoveToProxyObject");
-static_assert(sizeof(AIBlueprintHelperLibrary_CreateMoveToProxyObject) == 0x11821300, "Wrong size on AIBlueprintHelperLibrary_CreateMoveToProxyObject");
+static_assert(alignof(AIBlueprintHelperLibrary_CreateMoveToProxyObject) == 0x000008, "Wrong alignment on AIBlueprintHelperLibrary_CreateMoveToProxyObject");
+static_assert(sizeof(AIBlueprintHelperLibrary_CreateMoveToProxyObject) == 0x000038, "Wrong size on AIBlueprintHelperLibrary_CreateMoveToProxyObject");
 static_assert(offsetof(AIBlueprintHelperLibrary_CreateMoveToProxyObject, WorldContextObject) == 0x000000, "Member 'AIBlueprintHelperLibrary_CreateMoveToProxyObject::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_CreateMoveToProxyObject, Pawn) == 0x000008, "Member 'AIBlueprintHelperLibrary_CreateMoveToProxyObject::Pawn' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_CreateMoveToProxyObject, Destination) == 0x000010, "Member 'AIBlueprintHelperLibrary_CreateMoveToProxyObject::Destination' has a wrong offset!");
@@ -849,44 +853,44 @@ static_assert(offsetof(AIBlueprintHelperLibrary_GetBlackboard, Target) == 0x0000
 static_assert(offsetof(AIBlueprintHelperLibrary_GetBlackboard, ReturnValue) == 0x000008, "Member 'AIBlueprintHelperLibrary_GetBlackboard::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AIBlueprintHelperLibrary_IsValidAIDirection final
 {
 public:
-	struct FVector                                DirectionVector;                                   // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                DirectionVector;                                   // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIBlueprintHelperLibrary_IsValidAIDirection) == 0x11821300, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAIDirection");
-static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAIDirection) == 0x11821300, "Wrong size on AIBlueprintHelperLibrary_IsValidAIDirection");
+static_assert(alignof(AIBlueprintHelperLibrary_IsValidAIDirection) == 0x000004, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAIDirection");
+static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAIDirection) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_IsValidAIDirection");
 static_assert(offsetof(AIBlueprintHelperLibrary_IsValidAIDirection, DirectionVector) == 0x000000, "Member 'AIBlueprintHelperLibrary_IsValidAIDirection::DirectionVector' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_IsValidAIDirection, ReturnValue) == 0x00000C, "Member 'AIBlueprintHelperLibrary_IsValidAIDirection::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AIBlueprintHelperLibrary_IsValidAILocation final
 {
 public:
-	struct FVector                                Location;                                          // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIBlueprintHelperLibrary_IsValidAILocation) == 0x11821300, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAILocation");
-static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAILocation) == 0x11821300, "Wrong size on AIBlueprintHelperLibrary_IsValidAILocation");
+static_assert(alignof(AIBlueprintHelperLibrary_IsValidAILocation) == 0x000004, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAILocation");
+static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAILocation) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_IsValidAILocation");
 static_assert(offsetof(AIBlueprintHelperLibrary_IsValidAILocation, Location) == 0x000000, "Member 'AIBlueprintHelperLibrary_IsValidAILocation::Location' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_IsValidAILocation, ReturnValue) == 0x00000C, "Member 'AIBlueprintHelperLibrary_IsValidAILocation::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct AIBlueprintHelperLibrary_IsValidAIRotation final
 {
 public:
-	struct FRotator                               Rotation;                                          // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRotator                               Rotation;                                          // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIBlueprintHelperLibrary_IsValidAIRotation) == 0x11821300, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAIRotation");
-static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAIRotation) == 0x11821300, "Wrong size on AIBlueprintHelperLibrary_IsValidAIRotation");
+static_assert(alignof(AIBlueprintHelperLibrary_IsValidAIRotation) == 0x000004, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAIRotation");
+static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAIRotation) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_IsValidAIRotation");
 static_assert(offsetof(AIBlueprintHelperLibrary_IsValidAIRotation, Rotation) == 0x000000, "Member 'AIBlueprintHelperLibrary_IsValidAIRotation::Rotation' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_IsValidAIRotation, ReturnValue) == 0x00000C, "Member 'AIBlueprintHelperLibrary_IsValidAIRotation::ReturnValue' has a wrong offset!");
 
@@ -925,21 +929,21 @@ static_assert(offsetof(AIBlueprintHelperLibrary_SendAIMessage, MessageSource) ==
 static_assert(offsetof(AIBlueprintHelperLibrary_SendAIMessage, bSuccess) == 0x000018, "Member 'AIBlueprintHelperLibrary_SendAIMessage::bSuccess' has a wrong offset!");
 
 // Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct AIBlueprintHelperLibrary_SpawnAIFromClass final
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class APawn>                      PawnClass;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UBehaviorTree*                          BehaviorTree;                                      // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0018(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               Rotation;                                          // 0x0024(0x11821300)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0018(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               Rotation;                                          // 0x0024(0x000C)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bNoCollisionFail;                                  // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  ReturnValue;                                       // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AIBlueprintHelperLibrary_SpawnAIFromClass) == 0x11821300, "Wrong alignment on AIBlueprintHelperLibrary_SpawnAIFromClass");
-static_assert(sizeof(AIBlueprintHelperLibrary_SpawnAIFromClass) == 0x11821300, "Wrong size on AIBlueprintHelperLibrary_SpawnAIFromClass");
+static_assert(alignof(AIBlueprintHelperLibrary_SpawnAIFromClass) == 0x000008, "Wrong alignment on AIBlueprintHelperLibrary_SpawnAIFromClass");
+static_assert(sizeof(AIBlueprintHelperLibrary_SpawnAIFromClass) == 0x000040, "Wrong size on AIBlueprintHelperLibrary_SpawnAIFromClass");
 static_assert(offsetof(AIBlueprintHelperLibrary_SpawnAIFromClass, WorldContextObject) == 0x000000, "Member 'AIBlueprintHelperLibrary_SpawnAIFromClass::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_SpawnAIFromClass, PawnClass) == 0x000008, "Member 'AIBlueprintHelperLibrary_SpawnAIFromClass::PawnClass' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_SpawnAIFromClass, BehaviorTree) == 0x000010, "Member 'AIBlueprintHelperLibrary_SpawnAIFromClass::BehaviorTree' has a wrong offset!");
@@ -949,8 +953,8 @@ static_assert(offsetof(AIBlueprintHelperLibrary_SpawnAIFromClass, bNoCollisionFa
 static_assert(offsetof(AIBlueprintHelperLibrary_SpawnAIFromClass, ReturnValue) == 0x000038, "Member 'AIBlueprintHelperLibrary_SpawnAIFromClass::ReturnValue' has a wrong offset!");
 
 // Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation
-// 0x2D767E80 (0x2D767E80 - 0x0000)
-struct alignas(0x2D767E80) AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation final
+// 0x0010 (0x0010 - 0x0000)
+struct AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation final
 {
 public:
 	class UAnimInstance*                          AnimInstance;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -958,14 +962,14 @@ public:
 	bool                                          UnlockAILogic;                                     // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation) == 0x2D767E80, "Wrong alignment on AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation");
-static_assert(sizeof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation) == 0x2D767E80, "Wrong size on AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation");
+static_assert(alignof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation) == 0x000008, "Wrong alignment on AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation");
+static_assert(sizeof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation");
 static_assert(offsetof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation, AnimInstance) == 0x000000, "Member 'AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation::AnimInstance' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation, bUnlockMovement) == 0x000008, "Member 'AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation::bUnlockMovement' has a wrong offset!");
 static_assert(offsetof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation, UnlockAILogic) == 0x000009, "Member 'AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation::UnlockAILogic' has a wrong offset!");
 
 // Function AIModule.AISense_Damage.ReportDamageEvent
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AISense_Damage_ReportDamageEvent final
 {
 public:
@@ -973,11 +977,12 @@ public:
 	class AActor*                                 DamagedActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Instigator;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DamageAmount;                                      // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                EventLocation;                                     // 0x001C(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                HitLocation;                                       // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                EventLocation;                                     // 0x001C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                HitLocation;                                       // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(AISense_Damage_ReportDamageEvent) == 0x11821300, "Wrong alignment on AISense_Damage_ReportDamageEvent");
-static_assert(sizeof(AISense_Damage_ReportDamageEvent) == 0x11821300, "Wrong size on AISense_Damage_ReportDamageEvent");
+static_assert(alignof(AISense_Damage_ReportDamageEvent) == 0x000008, "Wrong alignment on AISense_Damage_ReportDamageEvent");
+static_assert(sizeof(AISense_Damage_ReportDamageEvent) == 0x000038, "Wrong size on AISense_Damage_ReportDamageEvent");
 static_assert(offsetof(AISense_Damage_ReportDamageEvent, WorldContext) == 0x000000, "Member 'AISense_Damage_ReportDamageEvent::WorldContext' has a wrong offset!");
 static_assert(offsetof(AISense_Damage_ReportDamageEvent, DamagedActor) == 0x000008, "Member 'AISense_Damage_ReportDamageEvent::DamagedActor' has a wrong offset!");
 static_assert(offsetof(AISense_Damage_ReportDamageEvent, Instigator) == 0x000010, "Member 'AISense_Damage_ReportDamageEvent::Instigator' has a wrong offset!");
@@ -1124,15 +1129,16 @@ static_assert(offsetof(BlackboardComponent_SetValueAsObject, KeyName) == 0x00000
 static_assert(offsetof(BlackboardComponent_SetValueAsObject, ObjectValue) == 0x000008, "Member 'BlackboardComponent_SetValueAsObject::ObjectValue' has a wrong offset!");
 
 // Function AIModule.BlackboardComponent.SetValueAsRotator
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BlackboardComponent_SetValueAsRotator final
 {
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               VectorValue;                                       // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRotator                               VectorValue;                                       // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BlackboardComponent_SetValueAsRotator) == 0x11821300, "Wrong alignment on BlackboardComponent_SetValueAsRotator");
-static_assert(sizeof(BlackboardComponent_SetValueAsRotator) == 0x11821300, "Wrong size on BlackboardComponent_SetValueAsRotator");
+static_assert(alignof(BlackboardComponent_SetValueAsRotator) == 0x000004, "Wrong alignment on BlackboardComponent_SetValueAsRotator");
+static_assert(sizeof(BlackboardComponent_SetValueAsRotator) == 0x000018, "Wrong size on BlackboardComponent_SetValueAsRotator");
 static_assert(offsetof(BlackboardComponent_SetValueAsRotator, KeyName) == 0x000000, "Member 'BlackboardComponent_SetValueAsRotator::KeyName' has a wrong offset!");
 static_assert(offsetof(BlackboardComponent_SetValueAsRotator, VectorValue) == 0x000008, "Member 'BlackboardComponent_SetValueAsRotator::VectorValue' has a wrong offset!");
 
@@ -1150,46 +1156,47 @@ static_assert(offsetof(BlackboardComponent_SetValueAsString, KeyName) == 0x00000
 static_assert(offsetof(BlackboardComponent_SetValueAsString, StringValue) == 0x000008, "Member 'BlackboardComponent_SetValueAsString::StringValue' has a wrong offset!");
 
 // Function AIModule.BlackboardComponent.SetValueAsVector
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BlackboardComponent_SetValueAsVector final
 {
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                VectorValue;                                       // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                VectorValue;                                       // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BlackboardComponent_SetValueAsVector) == 0x11821300, "Wrong alignment on BlackboardComponent_SetValueAsVector");
-static_assert(sizeof(BlackboardComponent_SetValueAsVector) == 0x11821300, "Wrong size on BlackboardComponent_SetValueAsVector");
+static_assert(alignof(BlackboardComponent_SetValueAsVector) == 0x000004, "Wrong alignment on BlackboardComponent_SetValueAsVector");
+static_assert(sizeof(BlackboardComponent_SetValueAsVector) == 0x000018, "Wrong size on BlackboardComponent_SetValueAsVector");
 static_assert(offsetof(BlackboardComponent_SetValueAsVector, KeyName) == 0x000000, "Member 'BlackboardComponent_SetValueAsVector::KeyName' has a wrong offset!");
 static_assert(offsetof(BlackboardComponent_SetValueAsVector, VectorValue) == 0x000008, "Member 'BlackboardComponent_SetValueAsVector::VectorValue' has a wrong offset!");
 
 // Function AIModule.BlackboardComponent.GetLocationFromEntry
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BlackboardComponent_GetLocationFromEntry final
 {
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ResultLocation;                                    // 0x0008(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ResultLocation;                                    // 0x0008(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BlackboardComponent_GetLocationFromEntry) == 0x11821300, "Wrong alignment on BlackboardComponent_GetLocationFromEntry");
-static_assert(sizeof(BlackboardComponent_GetLocationFromEntry) == 0x11821300, "Wrong size on BlackboardComponent_GetLocationFromEntry");
+static_assert(alignof(BlackboardComponent_GetLocationFromEntry) == 0x000004, "Wrong alignment on BlackboardComponent_GetLocationFromEntry");
+static_assert(sizeof(BlackboardComponent_GetLocationFromEntry) == 0x000018, "Wrong size on BlackboardComponent_GetLocationFromEntry");
 static_assert(offsetof(BlackboardComponent_GetLocationFromEntry, KeyName) == 0x000000, "Member 'BlackboardComponent_GetLocationFromEntry::KeyName' has a wrong offset!");
 static_assert(offsetof(BlackboardComponent_GetLocationFromEntry, ResultLocation) == 0x000008, "Member 'BlackboardComponent_GetLocationFromEntry::ResultLocation' has a wrong offset!");
 static_assert(offsetof(BlackboardComponent_GetLocationFromEntry, ReturnValue) == 0x000014, "Member 'BlackboardComponent_GetLocationFromEntry::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BlackboardComponent.GetRotationFromEntry
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BlackboardComponent_GetRotationFromEntry final
 {
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               ResultRotation;                                    // 0x0008(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRotator                               ResultRotation;                                    // 0x0008(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BlackboardComponent_GetRotationFromEntry) == 0x11821300, "Wrong alignment on BlackboardComponent_GetRotationFromEntry");
-static_assert(sizeof(BlackboardComponent_GetRotationFromEntry) == 0x11821300, "Wrong size on BlackboardComponent_GetRotationFromEntry");
+static_assert(alignof(BlackboardComponent_GetRotationFromEntry) == 0x000004, "Wrong alignment on BlackboardComponent_GetRotationFromEntry");
+static_assert(sizeof(BlackboardComponent_GetRotationFromEntry) == 0x000018, "Wrong size on BlackboardComponent_GetRotationFromEntry");
 static_assert(offsetof(BlackboardComponent_GetRotationFromEntry, KeyName) == 0x000000, "Member 'BlackboardComponent_GetRotationFromEntry::KeyName' has a wrong offset!");
 static_assert(offsetof(BlackboardComponent_GetRotationFromEntry, ResultRotation) == 0x000008, "Member 'BlackboardComponent_GetRotationFromEntry::ResultRotation' has a wrong offset!");
 static_assert(offsetof(BlackboardComponent_GetRotationFromEntry, ReturnValue) == 0x000014, "Member 'BlackboardComponent_GetRotationFromEntry::ReturnValue' has a wrong offset!");
@@ -1290,15 +1297,16 @@ static_assert(offsetof(BlackboardComponent_GetValueAsObject, KeyName) == 0x00000
 static_assert(offsetof(BlackboardComponent_GetValueAsObject, ReturnValue) == 0x000008, "Member 'BlackboardComponent_GetValueAsObject::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BlackboardComponent.GetValueAsRotator
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BlackboardComponent_GetValueAsRotator final
 {
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               ReturnValue;                                       // 0x0008(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRotator                               ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BlackboardComponent_GetValueAsRotator) == 0x11821300, "Wrong alignment on BlackboardComponent_GetValueAsRotator");
-static_assert(sizeof(BlackboardComponent_GetValueAsRotator) == 0x11821300, "Wrong size on BlackboardComponent_GetValueAsRotator");
+static_assert(alignof(BlackboardComponent_GetValueAsRotator) == 0x000004, "Wrong alignment on BlackboardComponent_GetValueAsRotator");
+static_assert(sizeof(BlackboardComponent_GetValueAsRotator) == 0x000018, "Wrong size on BlackboardComponent_GetValueAsRotator");
 static_assert(offsetof(BlackboardComponent_GetValueAsRotator, KeyName) == 0x000000, "Member 'BlackboardComponent_GetValueAsRotator::KeyName' has a wrong offset!");
 static_assert(offsetof(BlackboardComponent_GetValueAsRotator, ReturnValue) == 0x000008, "Member 'BlackboardComponent_GetValueAsRotator::ReturnValue' has a wrong offset!");
 
@@ -1316,15 +1324,16 @@ static_assert(offsetof(BlackboardComponent_GetValueAsString, KeyName) == 0x00000
 static_assert(offsetof(BlackboardComponent_GetValueAsString, ReturnValue) == 0x000008, "Member 'BlackboardComponent_GetValueAsString::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BlackboardComponent.GetValueAsVector
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct BlackboardComponent_GetValueAsVector final
 {
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ReturnValue;                                       // 0x0008(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BlackboardComponent_GetValueAsVector) == 0x11821300, "Wrong alignment on BlackboardComponent_GetValueAsVector");
-static_assert(sizeof(BlackboardComponent_GetValueAsVector) == 0x11821300, "Wrong size on BlackboardComponent_GetValueAsVector");
+static_assert(alignof(BlackboardComponent_GetValueAsVector) == 0x000004, "Wrong alignment on BlackboardComponent_GetValueAsVector");
+static_assert(sizeof(BlackboardComponent_GetValueAsVector) == 0x000018, "Wrong size on BlackboardComponent_GetValueAsVector");
 static_assert(offsetof(BlackboardComponent_GetValueAsVector, KeyName) == 0x000000, "Member 'BlackboardComponent_GetValueAsVector::KeyName' has a wrong offset!");
 static_assert(offsetof(BlackboardComponent_GetValueAsVector, ReturnValue) == 0x000008, "Member 'BlackboardComponent_GetValueAsVector::ReturnValue' has a wrong offset!");
 
@@ -1343,196 +1352,198 @@ static_assert(offsetof(BlackboardComponent_IsVectorValueSet, KeyName) == 0x00000
 static_assert(offsetof(BlackboardComponent_IsVectorValueSet, ReturnValue) == 0x000008, "Member 'BlackboardComponent_IsVectorValueSet::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.ClearBlackboardValue
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct BTFunctionLibrary_ClearBlackboardValue final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_ClearBlackboardValue) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_ClearBlackboardValue");
-static_assert(sizeof(BTFunctionLibrary_ClearBlackboardValue) == 0x11821F00, "Wrong size on BTFunctionLibrary_ClearBlackboardValue");
+static_assert(alignof(BTFunctionLibrary_ClearBlackboardValue) == 0x000008, "Wrong alignment on BTFunctionLibrary_ClearBlackboardValue");
+static_assert(sizeof(BTFunctionLibrary_ClearBlackboardValue) == 0x000030, "Wrong size on BTFunctionLibrary_ClearBlackboardValue");
 static_assert(offsetof(BTFunctionLibrary_ClearBlackboardValue, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_ClearBlackboardValue::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_ClearBlackboardValue, Key) == 0x000008, "Member 'BTFunctionLibrary_ClearBlackboardValue::Key' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct BTFunctionLibrary_ClearBlackboardValueAsVector final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_ClearBlackboardValueAsVector) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_ClearBlackboardValueAsVector");
-static_assert(sizeof(BTFunctionLibrary_ClearBlackboardValueAsVector) == 0x11821F00, "Wrong size on BTFunctionLibrary_ClearBlackboardValueAsVector");
+static_assert(alignof(BTFunctionLibrary_ClearBlackboardValueAsVector) == 0x000008, "Wrong alignment on BTFunctionLibrary_ClearBlackboardValueAsVector");
+static_assert(sizeof(BTFunctionLibrary_ClearBlackboardValueAsVector) == 0x000030, "Wrong size on BTFunctionLibrary_ClearBlackboardValueAsVector");
 static_assert(offsetof(BTFunctionLibrary_ClearBlackboardValueAsVector, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_ClearBlackboardValueAsVector::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_ClearBlackboardValueAsVector, Key) == 0x000008, "Member 'BTFunctionLibrary_ClearBlackboardValueAsVector::Key' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsActor final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class AActor*                                 ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsActor) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsActor");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsActor) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsActor");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsActor) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsActor");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsActor) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsActor");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsActor, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsActor::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsActor, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsActor::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsActor, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsActor::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsBool final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsBool) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsBool");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsBool) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsBool");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsBool) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsBool");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsBool) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsBool");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsBool, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsBool::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsBool, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsBool::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsBool, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsBool::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsClass final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UClass*                                 ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsClass) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsClass");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsClass) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsClass");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsClass) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsClass");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsClass) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsClass");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsClass, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsClass::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsClass, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsClass::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsClass, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsClass::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsEnum final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	uint8                                         ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsEnum) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsEnum");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsEnum) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsEnum");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsEnum) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsEnum");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsEnum) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsEnum");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsEnum, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsEnum::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsEnum, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsEnum::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsEnum, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsEnum::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsFloat final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsFloat) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsFloat");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsFloat) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsFloat");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsFloat) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsFloat");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsFloat) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsFloat");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsFloat, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsFloat::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsFloat, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsFloat::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsFloat, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsFloat::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsInt final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsInt) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsInt");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsInt) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsInt");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsInt) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsInt");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsInt) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsInt");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsInt, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsInt::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsInt, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsInt::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsInt, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsInt::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsName final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FName                                   ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsName) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsName");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsName) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsName");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsName) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsName");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsName) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsName");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsName, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsName::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsName, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsName::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsName, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsName::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsObject final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UObject*                                ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsObject) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsObject");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsObject) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsObject");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsObject) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsObject");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsObject) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsObject");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsObject, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsObject::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsObject, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsObject::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsObject, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsObject::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsRotator final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FRotator                               ReturnValue;                                       // 0x0030(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FRotator                               ReturnValue;                                       // 0x0030(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsRotator) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsRotator");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsRotator) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsRotator");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsRotator) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsRotator");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsRotator) == 0x000040, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsRotator");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsRotator, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsRotator::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsRotator, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsRotator::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsRotator, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsRotator::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsString final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsString) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsString");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsString) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsString");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsString) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsString");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsString) == 0x000040, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsString");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsString, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsString::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsString, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsString::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsString, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsString::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BTFunctionLibrary_GetBlackboardValueAsVector final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FVector                                ReturnValue;                                       // 0x0030(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0030(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsVector) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsVector");
-static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsVector) == 0x11821F00, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsVector");
+static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsVector) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsVector");
+static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsVector) == 0x000040, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsVector");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsVector, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_GetBlackboardValueAsVector::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsVector, Key) == 0x000008, "Member 'BTFunctionLibrary_GetBlackboardValueAsVector::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_GetBlackboardValueAsVector, ReturnValue) == 0x000030, "Member 'BTFunctionLibrary_GetBlackboardValueAsVector::ReturnValue' has a wrong offset!");
@@ -1564,155 +1575,157 @@ static_assert(offsetof(BTFunctionLibrary_GetOwnersBlackboard, NodeOwner) == 0x00
 static_assert(offsetof(BTFunctionLibrary_GetOwnersBlackboard, ReturnValue) == 0x000008, "Member 'BTFunctionLibrary_GetOwnersBlackboard::ReturnValue' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsBool final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          Value;                                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsBool) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsBool");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsBool) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsBool");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsBool) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsBool");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsBool) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsBool");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsBool, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsBool::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsBool, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsBool::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsBool, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsBool::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsClass final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UClass*                                 Value;                                             // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsClass) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsClass");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsClass) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsClass");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsClass) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsClass");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsClass) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsClass");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsClass, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsClass::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsClass, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsClass::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsClass, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsClass::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsEnum final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	uint8                                         Value;                                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsEnum) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsEnum");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsEnum) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsEnum");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsEnum) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsEnum");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsEnum) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsEnum");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsEnum, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsEnum::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsEnum, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsEnum::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsEnum, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsEnum::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsFloat final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsFloat) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsFloat");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsFloat) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsFloat");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsFloat) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsFloat");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsFloat) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsFloat");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsFloat, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsFloat::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsFloat, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsFloat::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsFloat, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsFloat::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsInt final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsInt) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsInt");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsInt) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsInt");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsInt) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsInt");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsInt) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsInt");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsInt, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsInt::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsInt, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsInt::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsInt, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsInt::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsName final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FName                                   Value;                                             // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsName) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsName");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsName) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsName");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsName) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsName");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsName) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsName");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsName, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsName::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsName, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsName::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsName, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsName::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsObject final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UObject*                                Value;                                             // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsObject) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsObject");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsObject) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsObject");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsObject) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsObject");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsObject) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsObject");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsObject, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsObject::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsObject, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsObject::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsObject, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsObject::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsRotator final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FRotator                               Value;                                             // 0x0030(0x11821300)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FRotator                               Value;                                             // 0x0030(0x000C)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsRotator) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsRotator");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsRotator) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsRotator");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsRotator) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsRotator");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsRotator) == 0x000040, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsRotator");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsRotator, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsRotator::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsRotator, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsRotator::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsRotator, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsRotator::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsString final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsString) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsString");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsString) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsString");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsString) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsString");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsString) == 0x000040, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsString");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsString, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsString::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsString, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsString::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsString, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsString::Value' has a wrong offset!");
 
 // Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector
-// 0x11821F00 (0x11821F00 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BTFunctionLibrary_SetBlackboardValueAsVector final
 {
 public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x11821F00)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FVector                                Value;                                             // 0x0030(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector                                Value;                                             // 0x0030(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsVector) == 0x11821F00, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsVector");
-static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsVector) == 0x11821F00, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsVector");
+static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsVector) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsVector");
+static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsVector) == 0x000040, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsVector");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsVector, NodeOwner) == 0x000000, "Member 'BTFunctionLibrary_SetBlackboardValueAsVector::NodeOwner' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsVector, Key) == 0x000008, "Member 'BTFunctionLibrary_SetBlackboardValueAsVector::Key' has a wrong offset!");
 static_assert(offsetof(BTFunctionLibrary_SetBlackboardValueAsVector, Value) == 0x000030, "Member 'BTFunctionLibrary_SetBlackboardValueAsVector::Value' has a wrong offset!");
@@ -2220,16 +2233,17 @@ static_assert(offsetof(EnvQueryContext_BlueprintBase_ProvideSingleActor, Querier
 static_assert(offsetof(EnvQueryContext_BlueprintBase_ProvideSingleActor, ResultingActor) == 0x000010, "Member 'EnvQueryContext_BlueprintBase_ProvideSingleActor::ResultingActor' has a wrong offset!");
 
 // Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct EnvQueryContext_BlueprintBase_ProvideSingleLocation final
 {
 public:
 	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ResultingLocation;                                 // 0x0010(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ResultingLocation;                                 // 0x0010(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(EnvQueryContext_BlueprintBase_ProvideSingleLocation) == 0x11821300, "Wrong alignment on EnvQueryContext_BlueprintBase_ProvideSingleLocation");
-static_assert(sizeof(EnvQueryContext_BlueprintBase_ProvideSingleLocation) == 0x11821300, "Wrong size on EnvQueryContext_BlueprintBase_ProvideSingleLocation");
+static_assert(alignof(EnvQueryContext_BlueprintBase_ProvideSingleLocation) == 0x000008, "Wrong alignment on EnvQueryContext_BlueprintBase_ProvideSingleLocation");
+static_assert(sizeof(EnvQueryContext_BlueprintBase_ProvideSingleLocation) == 0x000020, "Wrong size on EnvQueryContext_BlueprintBase_ProvideSingleLocation");
 static_assert(offsetof(EnvQueryContext_BlueprintBase_ProvideSingleLocation, QuerierObject) == 0x000000, "Member 'EnvQueryContext_BlueprintBase_ProvideSingleLocation::QuerierObject' has a wrong offset!");
 static_assert(offsetof(EnvQueryContext_BlueprintBase_ProvideSingleLocation, QuerierActor) == 0x000008, "Member 'EnvQueryContext_BlueprintBase_ProvideSingleLocation::QuerierActor' has a wrong offset!");
 static_assert(offsetof(EnvQueryContext_BlueprintBase_ProvideSingleLocation, ResultingLocation) == 0x000010, "Member 'EnvQueryContext_BlueprintBase_ProvideSingleLocation::ResultingLocation' has a wrong offset!");
@@ -2309,14 +2323,14 @@ static_assert(sizeof(EnvQueryGenerator_BlueprintBase_AddGeneratedActor) == 0x000
 static_assert(offsetof(EnvQueryGenerator_BlueprintBase_AddGeneratedActor, GeneratedActor) == 0x000000, "Member 'EnvQueryGenerator_BlueprintBase_AddGeneratedActor::GeneratedActor' has a wrong offset!");
 
 // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct EnvQueryGenerator_BlueprintBase_AddGeneratedVector final
 {
 public:
-	struct FVector                                GeneratedVector;                                   // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                GeneratedVector;                                   // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EnvQueryGenerator_BlueprintBase_AddGeneratedVector) == 0x11821300, "Wrong alignment on EnvQueryGenerator_BlueprintBase_AddGeneratedVector");
-static_assert(sizeof(EnvQueryGenerator_BlueprintBase_AddGeneratedVector) == 0x11821300, "Wrong size on EnvQueryGenerator_BlueprintBase_AddGeneratedVector");
+static_assert(alignof(EnvQueryGenerator_BlueprintBase_AddGeneratedVector) == 0x000004, "Wrong alignment on EnvQueryGenerator_BlueprintBase_AddGeneratedVector");
+static_assert(sizeof(EnvQueryGenerator_BlueprintBase_AddGeneratedVector) == 0x00000C, "Wrong size on EnvQueryGenerator_BlueprintBase_AddGeneratedVector");
 static_assert(offsetof(EnvQueryGenerator_BlueprintBase_AddGeneratedVector, GeneratedVector) == 0x000000, "Member 'EnvQueryGenerator_BlueprintBase_AddGeneratedVector::GeneratedVector' has a wrong offset!");
 
 // Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration
@@ -2331,25 +2345,25 @@ static_assert(sizeof(EnvQueryGenerator_BlueprintBase_DoItemGeneration) == 0x0000
 static_assert(offsetof(EnvQueryGenerator_BlueprintBase_DoItemGeneration, ContextLocations) == 0x000000, "Member 'EnvQueryGenerator_BlueprintBase_DoItemGeneration::ContextLocations' has a wrong offset!");
 
 // Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier
-// 0x2D633D80 (0x2D633D80 - 0x0000)
-struct alignas(0x2D633D80) EnvQueryGenerator_BlueprintBase_GetQuerier final
+// 0x0008 (0x0008 - 0x0000)
+struct EnvQueryGenerator_BlueprintBase_GetQuerier final
 {
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(EnvQueryGenerator_BlueprintBase_GetQuerier) == 0x2D633D80, "Wrong alignment on EnvQueryGenerator_BlueprintBase_GetQuerier");
-static_assert(sizeof(EnvQueryGenerator_BlueprintBase_GetQuerier) == 0x2D633D80, "Wrong size on EnvQueryGenerator_BlueprintBase_GetQuerier");
+static_assert(alignof(EnvQueryGenerator_BlueprintBase_GetQuerier) == 0x000008, "Wrong alignment on EnvQueryGenerator_BlueprintBase_GetQuerier");
+static_assert(sizeof(EnvQueryGenerator_BlueprintBase_GetQuerier) == 0x000008, "Wrong size on EnvQueryGenerator_BlueprintBase_GetQuerier");
 static_assert(offsetof(EnvQueryGenerator_BlueprintBase_GetQuerier, ReturnValue) == 0x000000, "Member 'EnvQueryGenerator_BlueprintBase_GetQuerier::ReturnValue' has a wrong offset!");
 
 // Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct NavLocalGridManager_AddLocalNavigationGridForBox final
 {
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0008(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Extent;                                            // 0x0014(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               Rotation;                                          // 0x0020(0x11821300)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Extent;                                            // 0x0014(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               Rotation;                                          // 0x0020(0x000C)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Radius2D;                                          // 0x002C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Height;                                            // 0x0030(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildGrids;                                     // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2357,8 +2371,8 @@ public:
 	int32                                         ReturnValue;                                       // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForBox) == 0x11821300, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForBox");
-static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForBox) == 0x11821300, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForBox");
+static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForBox) == 0x000008, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForBox");
+static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForBox) == 0x000040, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForBox");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForBox, WorldContext) == 0x000000, "Member 'NavLocalGridManager_AddLocalNavigationGridForBox::WorldContext' has a wrong offset!");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForBox, Location) == 0x000008, "Member 'NavLocalGridManager_AddLocalNavigationGridForBox::Location' has a wrong offset!");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForBox, Extent) == 0x000014, "Member 'NavLocalGridManager_AddLocalNavigationGridForBox::Extent' has a wrong offset!");
@@ -2369,12 +2383,12 @@ static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForBox, bRebuil
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForBox, ReturnValue) == 0x000038, "Member 'NavLocalGridManager_AddLocalNavigationGridForBox::ReturnValue' has a wrong offset!");
 
 // Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct NavLocalGridManager_AddLocalNavigationGridForCapsule final
 {
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0008(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CapsuleRadius;                                     // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CapsuleHalfHeight;                                 // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Radius2D;                                          // 0x001C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2384,8 +2398,8 @@ public:
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForCapsule) == 0x11821300, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForCapsule");
-static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForCapsule) == 0x11821300, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForCapsule");
+static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForCapsule) == 0x000008, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForCapsule");
+static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForCapsule) == 0x000030, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForCapsule");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForCapsule, WorldContext) == 0x000000, "Member 'NavLocalGridManager_AddLocalNavigationGridForCapsule::WorldContext' has a wrong offset!");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForCapsule, Location) == 0x000008, "Member 'NavLocalGridManager_AddLocalNavigationGridForCapsule::Location' has a wrong offset!");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForCapsule, CapsuleRadius) == 0x000014, "Member 'NavLocalGridManager_AddLocalNavigationGridForCapsule::CapsuleRadius' has a wrong offset!");
@@ -2396,12 +2410,12 @@ static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForCapsule, bRe
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForCapsule, ReturnValue) == 0x000028, "Member 'NavLocalGridManager_AddLocalNavigationGridForCapsule::ReturnValue' has a wrong offset!");
 
 // Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct NavLocalGridManager_AddLocalNavigationGridForPoint final
 {
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0008(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Radius2D;                                          // 0x0014(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Height;                                            // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildGrids;                                     // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2409,8 +2423,8 @@ public:
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForPoint) == 0x11821300, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForPoint");
-static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForPoint) == 0x11821300, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForPoint");
+static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForPoint) == 0x000008, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForPoint");
+static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForPoint) == 0x000028, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForPoint");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForPoint, WorldContext) == 0x000000, "Member 'NavLocalGridManager_AddLocalNavigationGridForPoint::WorldContext' has a wrong offset!");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForPoint, Location) == 0x000008, "Member 'NavLocalGridManager_AddLocalNavigationGridForPoint::Location' has a wrong offset!");
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForPoint, Radius2D) == 0x000014, "Member 'NavLocalGridManager_AddLocalNavigationGridForPoint::Radius2D' has a wrong offset!");
@@ -2419,19 +2433,19 @@ static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForPoint, bRebu
 static_assert(offsetof(NavLocalGridManager_AddLocalNavigationGridForPoint, ReturnValue) == 0x000020, "Member 'NavLocalGridManager_AddLocalNavigationGridForPoint::ReturnValue' has a wrong offset!");
 
 // Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct NavLocalGridManager_FindLocalNavigationGridPath final
 {
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Start;                                             // 0x0008(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                End;                                               // 0x0014(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Start;                                             // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                End;                                               // 0x0014(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        PathPoints;                                        // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(NavLocalGridManager_FindLocalNavigationGridPath) == 0x11821300, "Wrong alignment on NavLocalGridManager_FindLocalNavigationGridPath");
-static_assert(sizeof(NavLocalGridManager_FindLocalNavigationGridPath) == 0x11821300, "Wrong size on NavLocalGridManager_FindLocalNavigationGridPath");
+static_assert(alignof(NavLocalGridManager_FindLocalNavigationGridPath) == 0x000008, "Wrong alignment on NavLocalGridManager_FindLocalNavigationGridPath");
+static_assert(sizeof(NavLocalGridManager_FindLocalNavigationGridPath) == 0x000038, "Wrong size on NavLocalGridManager_FindLocalNavigationGridPath");
 static_assert(offsetof(NavLocalGridManager_FindLocalNavigationGridPath, WorldContext) == 0x000000, "Member 'NavLocalGridManager_FindLocalNavigationGridPath::WorldContext' has a wrong offset!");
 static_assert(offsetof(NavLocalGridManager_FindLocalNavigationGridPath, Start) == 0x000008, "Member 'NavLocalGridManager_FindLocalNavigationGridPath::Start' has a wrong offset!");
 static_assert(offsetof(NavLocalGridManager_FindLocalNavigationGridPath, End) == 0x000014, "Member 'NavLocalGridManager_FindLocalNavigationGridPath::End' has a wrong offset!");
@@ -2496,14 +2510,14 @@ static_assert(sizeof(PawnAction_BlueprintBase_ActionPause) == 0x000008, "Wrong s
 static_assert(offsetof(PawnAction_BlueprintBase_ActionPause, ControlledPawn) == 0x000000, "Member 'PawnAction_BlueprintBase_ActionPause::ControlledPawn' has a wrong offset!");
 
 // Function AIModule.PawnAction_BlueprintBase.ActionResume
-// 0x2DC479C0 (0x2DC479C0 - 0x0000)
-struct alignas(0x2DC479C0) PawnAction_BlueprintBase_ActionResume final
+// 0x0008 (0x0008 - 0x0000)
+struct PawnAction_BlueprintBase_ActionResume final
 {
 public:
 	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PawnAction_BlueprintBase_ActionResume) == 0x2DC479C0, "Wrong alignment on PawnAction_BlueprintBase_ActionResume");
-static_assert(sizeof(PawnAction_BlueprintBase_ActionResume) == 0x2DC479C0, "Wrong size on PawnAction_BlueprintBase_ActionResume");
+static_assert(alignof(PawnAction_BlueprintBase_ActionResume) == 0x000008, "Wrong alignment on PawnAction_BlueprintBase_ActionResume");
+static_assert(sizeof(PawnAction_BlueprintBase_ActionResume) == 0x000008, "Wrong size on PawnAction_BlueprintBase_ActionResume");
 static_assert(offsetof(PawnAction_BlueprintBase_ActionResume, ControlledPawn) == 0x000000, "Member 'PawnAction_BlueprintBase_ActionResume::ControlledPawn' has a wrong offset!");
 
 // Function AIModule.PawnAction_BlueprintBase.ActionStart
@@ -2597,16 +2611,16 @@ static_assert(offsetof(PawnActionsComponent_K2_PushAction, Instigator) == 0x0000
 static_assert(offsetof(PawnActionsComponent_K2_PushAction, ReturnValue) == 0x000018, "Member 'PawnActionsComponent_K2_PushAction::ReturnValue' has a wrong offset!");
 
 // DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct PawnSensingComponent_HearNoiseDelegate__DelegateSignature final
 {
 public:
 	class APawn*                                  Instigator;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0008(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Volume;                                            // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature) == 0x11821300, "Wrong alignment on PawnSensingComponent_HearNoiseDelegate__DelegateSignature");
-static_assert(sizeof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature) == 0x11821300, "Wrong size on PawnSensingComponent_HearNoiseDelegate__DelegateSignature");
+static_assert(alignof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature) == 0x000008, "Wrong alignment on PawnSensingComponent_HearNoiseDelegate__DelegateSignature");
+static_assert(sizeof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature) == 0x000018, "Wrong size on PawnSensingComponent_HearNoiseDelegate__DelegateSignature");
 static_assert(offsetof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature, Instigator) == 0x000000, "Member 'PawnSensingComponent_HearNoiseDelegate__DelegateSignature::Instigator' has a wrong offset!");
 static_assert(offsetof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature, Location) == 0x000008, "Member 'PawnSensingComponent_HearNoiseDelegate__DelegateSignature::Location' has a wrong offset!");
 static_assert(offsetof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature, Volume) == 0x000014, "Member 'PawnSensingComponent_HearNoiseDelegate__DelegateSignature::Volume' has a wrong offset!");

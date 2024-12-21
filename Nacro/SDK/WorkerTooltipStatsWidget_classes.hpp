@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0258 - 0x0230)
 class UWorkerTooltipStatsWidget_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UTextBlock*                             BuildingSynergyTextBlock;                          // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             PersonalityTextBlock;                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             SetBonusTextBlock;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UWorkerTooltipStatsWidget_C>();
 	}
 };
-static_assert(alignof(UWorkerTooltipStatsWidget_C) == 0x322CBBB8, "Wrong alignment on UWorkerTooltipStatsWidget_C");
-static_assert(sizeof(UWorkerTooltipStatsWidget_C) == 0x322CBBB8, "Wrong size on UWorkerTooltipStatsWidget_C");
+static_assert(alignof(UWorkerTooltipStatsWidget_C) == 0x000008, "Wrong alignment on UWorkerTooltipStatsWidget_C");
+static_assert(sizeof(UWorkerTooltipStatsWidget_C) == 0x000258, "Wrong size on UWorkerTooltipStatsWidget_C");
 static_assert(offsetof(UWorkerTooltipStatsWidget_C, UberGraphFrame) == 0x000230, "Member 'UWorkerTooltipStatsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWorkerTooltipStatsWidget_C, BuildingSynergyTextBlock) == 0x000238, "Member 'UWorkerTooltipStatsWidget_C::BuildingSynergyTextBlock' has a wrong offset!");
 static_assert(offsetof(UWorkerTooltipStatsWidget_C, PersonalityTextBlock) == 0x000240, "Member 'UWorkerTooltipStatsWidget_C::PersonalityTextBlock' has a wrong offset!");

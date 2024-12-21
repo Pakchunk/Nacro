@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass NormalBangWrapper.NormalBangWrapper_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02C0 - 0x0250)
 class UNormalBangWrapper_C final : public UFortBangWrapper_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       TutorialGlow;                                      // 0x0258(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               BigBang;                                           // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               BigBangCount;                                      // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -60,8 +60,8 @@ public:
 		return GetDefaultObjImpl<UNormalBangWrapper_C>();
 	}
 };
-static_assert(alignof(UNormalBangWrapper_C) == 0x322CBBB8, "Wrong alignment on UNormalBangWrapper_C");
-static_assert(sizeof(UNormalBangWrapper_C) == 0x322CBBB8, "Wrong size on UNormalBangWrapper_C");
+static_assert(alignof(UNormalBangWrapper_C) == 0x000008, "Wrong alignment on UNormalBangWrapper_C");
+static_assert(sizeof(UNormalBangWrapper_C) == 0x0002C0, "Wrong size on UNormalBangWrapper_C");
 static_assert(offsetof(UNormalBangWrapper_C, UberGraphFrame) == 0x000250, "Member 'UNormalBangWrapper_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UNormalBangWrapper_C, TutorialGlow) == 0x000258, "Member 'UNormalBangWrapper_C::TutorialGlow' has a wrong offset!");
 static_assert(offsetof(UNormalBangWrapper_C, BigBang) == 0x000260, "Member 'UNormalBangWrapper_C::BigBang' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemTransformKeyScreen.ItemTransformKeyScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x02A0 - 0x0238)
 class UItemTransformKeyScreen_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalTabList_C*                   HorizontalTabList;                                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemTransformKeyInfo_C*                ItemTransformKeyInfo;                              // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemTransformKeyPicker_C*              ItemTransformKeyPicker;                            // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UItemTransformKeyScreen_C>();
 	}
 };
-static_assert(alignof(UItemTransformKeyScreen_C) == 0x322CBBB8, "Wrong alignment on UItemTransformKeyScreen_C");
-static_assert(sizeof(UItemTransformKeyScreen_C) == 0x322CBBB8, "Wrong size on UItemTransformKeyScreen_C");
+static_assert(alignof(UItemTransformKeyScreen_C) == 0x000008, "Wrong alignment on UItemTransformKeyScreen_C");
+static_assert(sizeof(UItemTransformKeyScreen_C) == 0x0002A0, "Wrong size on UItemTransformKeyScreen_C");
 static_assert(offsetof(UItemTransformKeyScreen_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformKeyScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemTransformKeyScreen_C, HorizontalTabList) == 0x000240, "Member 'UItemTransformKeyScreen_C::HorizontalTabList' has a wrong offset!");
 static_assert(offsetof(UItemTransformKeyScreen_C, ItemTransformKeyInfo) == 0x000248, "Member 'UItemTransformKeyScreen_C::ItemTransformKeyInfo' has a wrong offset!");

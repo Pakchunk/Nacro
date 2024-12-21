@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C.ExecuteUbergraph_GCN_TakerMarkedForDeath
-// 0x0070 (0x0070 - 0x0000)
-struct alignas(0x38) GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath final
+// 0x0050 (0x0050 - 0x0000)
+struct GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,8 +32,8 @@ public:
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput;    // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath) == 0x000038, "Wrong alignment on GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath");
-static_assert(sizeof(GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath) == 0x000070, "Wrong size on GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath");
+static_assert(alignof(GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath) == 0x000008, "Wrong alignment on GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath");
+static_assert(sizeof(GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath) == 0x000050, "Wrong size on GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath");
 static_assert(offsetof(GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath, EntryPoint) == 0x000000, "Member 'GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath::EntryPoint' has a wrong offset!");
 static_assert(offsetof(GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath, K2Node_DynamicCast_AsFort_Pawn) == 0x000010, "Member 'GCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");

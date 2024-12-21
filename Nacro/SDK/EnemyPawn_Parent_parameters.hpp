@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "ElementalEnum_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "ElementalEnum_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
 
@@ -22,93 +22,96 @@ namespace SDK::Params
 {
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ExecuteUbergraph_EnemyPawn_Parent
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0700 (0x0700 - 0x0000)
 struct EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0004(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0004(0x000C)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0020(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0020(0x0008)(NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue2;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x003C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_Damage2;                              // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  K2Node_Event_DamageTags2;                          // 0x0050(0x11821C00)(ConstParm)
-	struct FVector                                K2Node_Event_Momentum2;                            // 0x0070(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_HitInfo2;                             // 0x0080(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  K2Node_Event_DamageTags2;                          // 0x0050(0x0020)(ConstParm)
+	struct FVector                                K2Node_Event_Momentum2;                            // 0x0070(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_HitInfo2;                             // 0x0080(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPawn*                              K2Node_Event_InstigatedBy2;                        // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_DamageCauser2;                        // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext2;                       // 0x0118(0x11821C00)()
+	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext2;                       // 0x0118(0x0018)()
 	EFortDamageZone                               CallFunc_GetDamageZone_ReturnValue;                // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0132(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_133[0x1];                                      // 0x0133(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0138(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0144(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0150(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x015C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0138(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0144(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0150(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x015C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0190(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x019C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0190(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x019C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EnemyDeathVisuals_HQ;                     // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1AA[0x2];                                      // 0x01AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x01B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x01B0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x01C0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x01C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D5[0xB];                                      // 0x01D5(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x01E0(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x01E0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_214[0x4];                                      // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_AddComponent_ReturnValue;                 // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_RiftLocationWS;                 // 0x0220(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x022C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x023C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_RiftLocationWS;                 // 0x0220(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x022C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x023C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable;                               // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x0258(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue3;    // 0x0264(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue3;     // 0x0274(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0280(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x028C(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0298(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x0258(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue3;    // 0x0264(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue3;     // 0x0274(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0280(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x028C(0x000C)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0298(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AB_Rift_Portals_C*                      K2Node_DynamicCast_AsB_Rift_Portals;               // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_VectorVector_ReturnValue;      // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2BA[0x2];                                      // 0x02BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x02BC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x02C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue4;    // 0x02D4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x02F0(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x02BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x02C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue4;    // 0x02D4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E4[0xC];                                      // 0x02E4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x02F0(0x0030)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0321(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_322[0x2];                                      // 0x0322(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue3;           // 0x0324(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue5;    // 0x0330(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue3;           // 0x0324(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue5;    // 0x0330(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue; // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatFromStream_ReturnValue;        // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_PickColorFromAnArrayOfColors_Color;       // 0x034C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_PickColorFromAnArrayOfColors_Color2;      // 0x035C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_PickColorFromAnArrayOfColors_Color3;      // 0x036C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_PickColorFromAnArrayOfColors_Color;       // 0x034C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_PickColorFromAnArrayOfColors_Color2;      // 0x035C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_PickColorFromAnArrayOfColors_Color3;      // 0x036C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetFloatValue_ReturnValue;                // 0x0384(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -116,29 +119,31 @@ public:
 	float                                         CallFunc_BreakVector_Y;                            // 0x038C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0390(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0394(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0398(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable2;                             // 0x0398(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x03AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x03B4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable3;                             // 0x03C0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue4;           // 0x03D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x03B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable3;                             // 0x03C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue4;           // 0x03D0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3DC[0x4];                                      // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue2;      // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable2;                               // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x03E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3EA[0x2];                                      // 0x03EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x03EC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x03EC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x03FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x03FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3FE[0x2];                                      // 0x03FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_Damage;                               // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_404[0x4];                                      // 0x0404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  K2Node_Event_DamageTags;                           // 0x0408(0x11821C00)(ConstParm)
-	struct FVector                                K2Node_Event_Momentum;                             // 0x0428(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_Event_HitInfo;                              // 0x0438(0x11827600)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  K2Node_Event_DamageTags;                           // 0x0408(0x0020)(ConstParm)
+	struct FVector                                K2Node_Event_Momentum;                             // 0x0428(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_434[0x4];                                      // 0x0434(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_HitInfo;                              // 0x0438(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPawn*                              K2Node_Event_InstigatedBy;                         // 0x04C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_Event_DamageCauser;                         // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x04D0(0x11821C00)()
+	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x04D0(0x0018)()
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x04E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4E9[0x7];                                      // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortProjectileBase*                    K2Node_DynamicCast_AsFort_Projectile_Base;         // 0x04F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -153,7 +158,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x0520(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAnyMatchingGameplayTags_ReturnValue;   // 0x0521(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_522[0x6];                                      // 0x0522(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0528(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0528(0x0008)(NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0530(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_531[0x3];                                      // 0x0531(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakVector_X2;                           // 0x0534(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -162,19 +167,21 @@ public:
 	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue3;          // 0x0544(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue4;          // 0x0548(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x054C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0558(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue6;    // 0x0564(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x054C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue2;            // 0x0558(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue6;    // 0x0564(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue3;          // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_581[0x3];                                      // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue5;           // 0x0584(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue5;           // 0x0584(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue3;      // 0x0590(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue5;          // 0x0598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue2;           // 0x059C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue3;           // 0x059D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59E[0x2];                                      // 0x059E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue6;           // 0x05A0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue6;           // 0x05A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue4;          // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x05B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x05B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -190,13 +197,13 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x05CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue2;        // 0x05D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5D4[0xC];                                      // 0x05D4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable4;                             // 0x05E0(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable4;                             // 0x05E0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue2;                // 0x0610(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue8;                     // 0x0618(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue4;                 // 0x0619(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_61A[0x6];                                      // 0x061A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0620(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x0630(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x0630(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x06B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6B9[0x7];                                      // 0x06B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue2; // 0x06C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -211,8 +218,8 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x06E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue2;        // 0x06F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent) == 0x11821D80, "Wrong alignment on EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent");
-static_assert(sizeof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent) == 0x11821D80, "Wrong size on EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent");
+static_assert(alignof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent");
+static_assert(sizeof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent) == 0x000700, "Wrong size on EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent");
 static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, EntryPoint) == 0x000000, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::EntryPoint' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000004, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -372,21 +379,22 @@ static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Cal
 static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_AttachToComponent_ReturnValue2) == 0x0006F0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_AttachToComponent_ReturnValue2' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnDamagePlayEffects
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct EnemyPawn_Parent_C_OnDamagePlayEffects final
 {
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x11821C00)(Parm)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
 };
-static_assert(alignof(EnemyPawn_Parent_C_OnDamagePlayEffects) == 0x11821D80, "Wrong alignment on EnemyPawn_Parent_C_OnDamagePlayEffects");
-static_assert(sizeof(EnemyPawn_Parent_C_OnDamagePlayEffects) == 0x11821D80, "Wrong size on EnemyPawn_Parent_C_OnDamagePlayEffects");
+static_assert(alignof(EnemyPawn_Parent_C_OnDamagePlayEffects) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_OnDamagePlayEffects");
+static_assert(sizeof(EnemyPawn_Parent_C_OnDamagePlayEffects) == 0x0000E8, "Wrong size on EnemyPawn_Parent_C_OnDamagePlayEffects");
 static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, Damage) == 0x000000, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::Damage' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, DamageTags) == 0x000008, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::DamageTags' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, Momentum) == 0x000028, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::Momentum' has a wrong offset!");
@@ -396,32 +404,33 @@ static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, DamageCauser) == 
 static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, EffectContext) == 0x0000D0, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::EffectContext' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.DespawnEnemy
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct EnemyPawn_Parent_C_DespawnEnemy final
 {
 public:
-	struct FVector                                RiftLocationWS;                                    // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                RiftLocationWS;                                    // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_DespawnEnemy) == 0x11821300, "Wrong alignment on EnemyPawn_Parent_C_DespawnEnemy");
-static_assert(sizeof(EnemyPawn_Parent_C_DespawnEnemy) == 0x11821300, "Wrong size on EnemyPawn_Parent_C_DespawnEnemy");
+static_assert(alignof(EnemyPawn_Parent_C_DespawnEnemy) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_DespawnEnemy");
+static_assert(sizeof(EnemyPawn_Parent_C_DespawnEnemy) == 0x00000C, "Wrong size on EnemyPawn_Parent_C_DespawnEnemy");
 static_assert(offsetof(EnemyPawn_Parent_C_DespawnEnemy, RiftLocationWS) == 0x000000, "Member 'EnemyPawn_Parent_C_DespawnEnemy::RiftLocationWS' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnDeathPlayEffects
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct EnemyPawn_Parent_C_OnDeathPlayEffects final
 {
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x11821C00)(Parm)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
 };
-static_assert(alignof(EnemyPawn_Parent_C_OnDeathPlayEffects) == 0x11821D80, "Wrong alignment on EnemyPawn_Parent_C_OnDeathPlayEffects");
-static_assert(sizeof(EnemyPawn_Parent_C_OnDeathPlayEffects) == 0x11821D80, "Wrong size on EnemyPawn_Parent_C_OnDeathPlayEffects");
+static_assert(alignof(EnemyPawn_Parent_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_OnDeathPlayEffects");
+static_assert(sizeof(EnemyPawn_Parent_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on EnemyPawn_Parent_C_OnDeathPlayEffects");
 static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::Damage' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
@@ -431,7 +440,7 @@ static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, DamageCauser) == 0
 static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.UserConstructionScript
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct EnemyPawn_Parent_C_UserConstructionScript final
 {
 public:
@@ -440,7 +449,7 @@ public:
 	class UParticleSystem*                        Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0xF];                                       // 0x0011(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x0020(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0020(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_AddComponent_ReturnValue;                 // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -450,20 +459,20 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x007C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x007C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x008C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x008C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        K2Node_Select_Default;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetScalarParameterValue_ReturnValue;      // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x00B0(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x00B0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_AttachTo_ReturnValue;                  // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue; // 0x0148(0x11821C00)(NoDestructor, HasGetValueTypeHash)
+	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue; // 0x0148(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_155[0x3];                                      // 0x0155(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -471,8 +480,8 @@ public:
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_UserConstructionScript) == 0x11821D80, "Wrong alignment on EnemyPawn_Parent_C_UserConstructionScript");
-static_assert(sizeof(EnemyPawn_Parent_C_UserConstructionScript) == 0x11821D80, "Wrong size on EnemyPawn_Parent_C_UserConstructionScript");
+static_assert(alignof(EnemyPawn_Parent_C_UserConstructionScript) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_UserConstructionScript");
+static_assert(sizeof(EnemyPawn_Parent_C_UserConstructionScript) == 0x000170, "Wrong size on EnemyPawn_Parent_C_UserConstructionScript");
 static_assert(offsetof(EnemyPawn_Parent_C_UserConstructionScript, Temp_byte_Variable) == 0x000000, "Member 'EnemyPawn_Parent_C_UserConstructionScript::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_UserConstructionScript, Temp_object_Variable) == 0x000008, "Member 'EnemyPawn_Parent_C_UserConstructionScript::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_UserConstructionScript, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_UserConstructionScript::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
@@ -500,7 +509,7 @@ static_assert(offsetof(EnemyPawn_Parent_C_UserConstructionScript, CallFunc_HasAl
 static_assert(offsetof(EnemyPawn_Parent_C_UserConstructionScript, CallFunc_BooleanAND_ReturnValue) == 0x000169, "Member 'EnemyPawn_Parent_C_UserConstructionScript::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.EnemyDeathVisuals
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0370 (0x0370 - 0x0000)
 struct EnemyPawn_Parent_C_EnemyDeathVisuals final
 {
 public:
@@ -510,7 +519,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameUserSettings*                      CallFunc_GetGameUserSettings_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -524,15 +533,15 @@ public:
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue2;        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue3;        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0058(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0064(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x0070(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0058(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0064(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x0070(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_Origin2;               // 0x0084(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_BoxExtent2;            // 0x0090(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_Origin2;               // 0x0084(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_BoxExtent2;            // 0x0090(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius2;         // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00A0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -549,17 +558,18 @@ public:
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam;                // 0x00E0(0x11821780)(IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x0160(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue2;       // 0x016C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam2;               // 0x0180(0x11821780)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam;                // 0x00E0(0x0080)(IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x0160(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue2;       // 0x016C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_178[0x8];                                      // 0x0178(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam2;               // 0x0180(0x0080)(IsPlainOldData, NoDestructor)
 	float                                         CallFunc_VSize_ReturnValue2;                       // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FParticleSysParam>              K2Node_MakeArray_Array;                            // 0x0208(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_219[0x3];                                      // 0x0219(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x021C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue3;       // 0x0228(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue2;           // 0x021C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue3;       // 0x0228(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize_ReturnValue3;                       // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_239[0x3];                                      // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -568,16 +578,16 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue4;         // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue6;           // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam3;               // 0x0250(0x11821780)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam3;               // 0x0250(0x0080)(IsPlainOldData, NoDestructor)
 	float                                         CallFunc_FClamp_ReturnValue2;                      // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue5;         // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue6;         // 0x02D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2DC[0x4];                                      // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam4;               // 0x02E0(0x11821780)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam4;               // 0x02E0(0x0080)(IsPlainOldData, NoDestructor)
 	TArray<struct FParticleSysParam>              K2Node_MakeArray_Array2;                           // 0x0360(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(EnemyPawn_Parent_C_EnemyDeathVisuals) == 0x11821780, "Wrong alignment on EnemyPawn_Parent_C_EnemyDeathVisuals");
-static_assert(sizeof(EnemyPawn_Parent_C_EnemyDeathVisuals) == 0x11821780, "Wrong size on EnemyPawn_Parent_C_EnemyDeathVisuals");
+static_assert(alignof(EnemyPawn_Parent_C_EnemyDeathVisuals) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_EnemyDeathVisuals");
+static_assert(sizeof(EnemyPawn_Parent_C_EnemyDeathVisuals) == 0x000370, "Wrong size on EnemyPawn_Parent_C_EnemyDeathVisuals");
 static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, HQ) == 0x000000, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::HQ' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000008, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -662,18 +672,18 @@ static_assert(offsetof(EnemyPawn_Parent_C_StopDeathFX, CallFunc_IsDedicatedServe
 static_assert(offsetof(EnemyPawn_Parent_C_StopDeathFX, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'EnemyPawn_Parent_C_StopDeathFX::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.PickColorFromAnArrayOfColors
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct EnemyPawn_Parent_C_PickColorFromAnArrayOfColors final
 {
 public:
 	TArray<struct FLinearColor>                   ArrayOfColors;                                     // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FLinearColor                           Color;                                             // 0x0010(0x11821300)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0010(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Array_Get_Item;                           // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors) == 0x11821300, "Wrong alignment on EnemyPawn_Parent_C_PickColorFromAnArrayOfColors");
-static_assert(sizeof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors) == 0x11821300, "Wrong size on EnemyPawn_Parent_C_PickColorFromAnArrayOfColors");
+static_assert(alignof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_PickColorFromAnArrayOfColors");
+static_assert(sizeof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors) == 0x000038, "Wrong size on EnemyPawn_Parent_C_PickColorFromAnArrayOfColors");
 static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, ArrayOfColors) == 0x000000, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::ArrayOfColors' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, Color) == 0x000010, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::Color' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, CallFunc_Array_LastIndex_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
@@ -681,17 +691,17 @@ static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, CallFunc
 static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, CallFunc_Array_Get_Item) == 0x000028, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllMIDs
-// 0x11821300 (0x11821300 - 0x0000)
-struct EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs final
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs final
 {
 public:
 	class FName                                   Parameter_Name;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Linear_Color;                                      // 0x0008(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Linear_Color;                                      // 0x0008(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs) == 0x11821300, "Wrong alignment on EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs");
-static_assert(sizeof(EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs) == 0x11821300, "Wrong size on EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs");
+static_assert(alignof(EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs");
+static_assert(sizeof(EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs) == 0x000020, "Wrong size on EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs");
 static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs, Parameter_Name) == 0x000000, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs::Parameter_Name' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs, Linear_Color) == 0x000008, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs::Linear_Color' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -699,7 +709,7 @@ static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllMIDs, CallFunc_
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetScalarParameterOnAllMIDs
 // 0x0010 (0x0010 - 0x0000)
-struct EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs final
+struct alignas(0x08) EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs final
 {
 public:
 	class FName                                   Parameter_Name;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -707,7 +717,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs");
+static_assert(alignof(EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs");
 static_assert(sizeof(EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs) == 0x000010, "Wrong size on EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs");
 static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs, Parameter_Name) == 0x000000, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs::Parameter_Name' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs, Scalar_Value) == 0x000008, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllMIDs::Scalar_Value' has a wrong offset!");
@@ -730,41 +740,42 @@ static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalAmbientParticles, Re
 static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalAmbientParticles, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'EnemyPawn_Parent_C_SetActiveElementalAmbientParticles::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.PlayAdditiveHitReacts
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct EnemyPawn_Parent_C_PlayAdditiveHitReacts final
 {
 public:
-	struct FVector                                Hit_Direction;                                     // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Hit_Direction;                                     // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           Anim_Montage;                                      // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_SetFNameBasedOnHitDirection_NameResult;   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_PlayLocalAnimMontage_ReturnValue;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_PlayAdditiveHitReacts) == 0x11821300, "Wrong alignment on EnemyPawn_Parent_C_PlayAdditiveHitReacts");
-static_assert(sizeof(EnemyPawn_Parent_C_PlayAdditiveHitReacts) == 0x11821300, "Wrong size on EnemyPawn_Parent_C_PlayAdditiveHitReacts");
+static_assert(alignof(EnemyPawn_Parent_C_PlayAdditiveHitReacts) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_PlayAdditiveHitReacts");
+static_assert(sizeof(EnemyPawn_Parent_C_PlayAdditiveHitReacts) == 0x000028, "Wrong size on EnemyPawn_Parent_C_PlayAdditiveHitReacts");
 static_assert(offsetof(EnemyPawn_Parent_C_PlayAdditiveHitReacts, Hit_Direction) == 0x000000, "Member 'EnemyPawn_Parent_C_PlayAdditiveHitReacts::Hit_Direction' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_PlayAdditiveHitReacts, Anim_Montage) == 0x000010, "Member 'EnemyPawn_Parent_C_PlayAdditiveHitReacts::Anim_Montage' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_PlayAdditiveHitReacts, CallFunc_SetFNameBasedOnHitDirection_NameResult) == 0x000018, "Member 'EnemyPawn_Parent_C_PlayAdditiveHitReacts::CallFunc_SetFNameBasedOnHitDirection_NameResult' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_PlayAdditiveHitReacts, CallFunc_PlayLocalAnimMontage_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_PlayAdditiveHitReacts::CallFunc_PlayLocalAnimMontage_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnRep_PumpkinHeadActiveGE
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE final
 {
 public:
-	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FTransform                             Temp_struct_Variable2;                             // 0x0030(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable2;                             // 0x0030(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue2;                // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue2;        // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_AddLocalOffset_SweepHitResult;         // 0x0088(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0110(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_AddLocalOffset_SweepHitResult;         // 0x0088(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0110(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue2;        // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE) == 0x11821D80, "Wrong alignment on EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE");
-static_assert(sizeof(EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE) == 0x11821D80, "Wrong size on EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE");
+static_assert(alignof(EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE");
+static_assert(sizeof(EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE) == 0x0001A0, "Wrong size on EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE");
 static_assert(offsetof(EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE, Temp_struct_Variable) == 0x000000, "Member 'EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE, Temp_struct_Variable2) == 0x000030, "Member 'EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE::Temp_struct_Variable2' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE, CallFunc_AddComponent_ReturnValue) == 0x000060, "Member 'EnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
@@ -826,20 +837,20 @@ static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMes
 static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_IsDedicatedServer_ReturnValue) == 0x000009, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnParticleSystemAttachedToCharacterMesh
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh final
 {
 public:
 	class UParticleSystem*                        Particle_System;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Attach_Point_Name;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Location;                                          // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Rotation;                                          // 0x001C(0x11821300)(Parm, IsPlainOldData, NoDestructor)
+	struct FVector                                Location;                                          // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Rotation;                                          // 0x001C(0x000C)(Parm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh) == 0x11821300, "Wrong alignment on EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh) == 0x11821300, "Wrong size on EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh");
+static_assert(alignof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh");
+static_assert(sizeof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh) == 0x000038, "Wrong size on EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh");
 static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh, Particle_System) == 0x000000, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh::Particle_System' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh, Attach_Point_Name) == 0x000008, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh::Attach_Point_Name' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh, Location) == 0x000010, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh::Location' has a wrong offset!");
@@ -848,31 +859,31 @@ static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacter
 static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000030, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetCharacterFresnelGlowColors
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0024 (0x0024 - 0x0000)
 struct EnemyPawn_Parent_C_SetCharacterFresnelGlowColors final
 {
 public:
-	struct FLinearColor                           Inner_Color;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Outer_Color;                                       // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Inner_Color;                                       // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Outer_Color;                                       // 0x0010(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetCharacterFresnelGlowColors) == 0x11821300, "Wrong alignment on EnemyPawn_Parent_C_SetCharacterFresnelGlowColors");
-static_assert(sizeof(EnemyPawn_Parent_C_SetCharacterFresnelGlowColors) == 0x11821300, "Wrong size on EnemyPawn_Parent_C_SetCharacterFresnelGlowColors");
+static_assert(alignof(EnemyPawn_Parent_C_SetCharacterFresnelGlowColors) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_SetCharacterFresnelGlowColors");
+static_assert(sizeof(EnemyPawn_Parent_C_SetCharacterFresnelGlowColors) == 0x000024, "Wrong size on EnemyPawn_Parent_C_SetCharacterFresnelGlowColors");
 static_assert(offsetof(EnemyPawn_Parent_C_SetCharacterFresnelGlowColors, Inner_Color) == 0x000000, "Member 'EnemyPawn_Parent_C_SetCharacterFresnelGlowColors::Inner_Color' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SetCharacterFresnelGlowColors, Outer_Color) == 0x000010, "Member 'EnemyPawn_Parent_C_SetCharacterFresnelGlowColors::Outer_Color' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SetCharacterFresnelGlowColors, CallFunc_IsDedicatedServer_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_SetCharacterFresnelGlowColors::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetCharacterEyeColors
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0024 (0x0024 - 0x0000)
 struct EnemyPawn_Parent_C_SetCharacterEyeColors final
 {
 public:
-	struct FLinearColor                           Eye_Color_Inner;                                   // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Eye_Color_Outer;                                   // 0x0010(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Eye_Color_Inner;                                   // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Eye_Color_Outer;                                   // 0x0010(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetCharacterEyeColors) == 0x11821300, "Wrong alignment on EnemyPawn_Parent_C_SetCharacterEyeColors");
-static_assert(sizeof(EnemyPawn_Parent_C_SetCharacterEyeColors) == 0x11821300, "Wrong size on EnemyPawn_Parent_C_SetCharacterEyeColors");
+static_assert(alignof(EnemyPawn_Parent_C_SetCharacterEyeColors) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_SetCharacterEyeColors");
+static_assert(sizeof(EnemyPawn_Parent_C_SetCharacterEyeColors) == 0x000024, "Wrong size on EnemyPawn_Parent_C_SetCharacterEyeColors");
 static_assert(offsetof(EnemyPawn_Parent_C_SetCharacterEyeColors, Eye_Color_Inner) == 0x000000, "Member 'EnemyPawn_Parent_C_SetCharacterEyeColors::Eye_Color_Inner' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SetCharacterEyeColors, Eye_Color_Outer) == 0x000010, "Member 'EnemyPawn_Parent_C_SetCharacterEyeColors::Eye_Color_Outer' has a wrong offset!");
 static_assert(offsetof(EnemyPawn_Parent_C_SetCharacterEyeColors, CallFunc_IsDedicatedServer_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_SetCharacterEyeColors::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");

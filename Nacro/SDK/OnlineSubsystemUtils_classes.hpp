@@ -51,9 +51,8 @@ static_assert(offsetof(UFindSessionsCallbackProxy, OnSuccess) == 0x000028, "Memb
 static_assert(offsetof(UFindSessionsCallbackProxy, OnFailure) == 0x000038, "Member 'UFindSessionsCallbackProxy::OnFailure' has a wrong offset!");
 
 // Class OnlineSubsystemUtils.OnlineBeaconHostObject
-// 0x0000 (0x11821D80 - 0x11821D80)
-#pragma pack(push, 0x1)
-class alignas(0x11821D80) AOnlineBeaconHostObject : public AActor
+// 0x0028 (0x03B0 - 0x0388)
+class AOnlineBeaconHostObject : public AActor
 {
 public:
 	class FString                                 BeaconTypeName;                                    // 0x0388(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -70,17 +69,15 @@ public:
 		return GetDefaultObjImpl<AOnlineBeaconHostObject>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(AOnlineBeaconHostObject) == 0x11821D80, "Wrong alignment on AOnlineBeaconHostObject");
-static_assert(sizeof(AOnlineBeaconHostObject) == 0x11821D80, "Wrong size on AOnlineBeaconHostObject");
+static_assert(alignof(AOnlineBeaconHostObject) == 0x000008, "Wrong alignment on AOnlineBeaconHostObject");
+static_assert(sizeof(AOnlineBeaconHostObject) == 0x0003B0, "Wrong size on AOnlineBeaconHostObject");
 static_assert(offsetof(AOnlineBeaconHostObject, BeaconTypeName) == 0x000388, "Member 'AOnlineBeaconHostObject::BeaconTypeName' has a wrong offset!");
 static_assert(offsetof(AOnlineBeaconHostObject, ClientBeaconActorClass) == 0x000398, "Member 'AOnlineBeaconHostObject::ClientBeaconActorClass' has a wrong offset!");
 static_assert(offsetof(AOnlineBeaconHostObject, ClientActors) == 0x0003A0, "Member 'AOnlineBeaconHostObject::ClientActors' has a wrong offset!");
 
 // Class OnlineSubsystemUtils.OnlineBeacon
-// 0x0000 (0x11821D80 - 0x11821D80)
-#pragma pack(push, 0x1)
-class alignas(0x11821D80) AOnlineBeacon : public AActor
+// 0x0028 (0x03B0 - 0x0388)
+class AOnlineBeacon : public AActor
 {
 public:
 	uint8                                         Pad_388[0x8];                                      // 0x0388(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -99,15 +96,14 @@ public:
 		return GetDefaultObjImpl<AOnlineBeacon>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(AOnlineBeacon) == 0x11821D80, "Wrong alignment on AOnlineBeacon");
-static_assert(sizeof(AOnlineBeacon) == 0x11821D80, "Wrong size on AOnlineBeacon");
+static_assert(alignof(AOnlineBeacon) == 0x000008, "Wrong alignment on AOnlineBeacon");
+static_assert(sizeof(AOnlineBeacon) == 0x0003B0, "Wrong size on AOnlineBeacon");
 static_assert(offsetof(AOnlineBeacon, BeaconConnectionInitialTimeout) == 0x000390, "Member 'AOnlineBeacon::BeaconConnectionInitialTimeout' has a wrong offset!");
 static_assert(offsetof(AOnlineBeacon, BeaconConnectionTimeout) == 0x000394, "Member 'AOnlineBeacon::BeaconConnectionTimeout' has a wrong offset!");
 static_assert(offsetof(AOnlineBeacon, NetDriver) == 0x000398, "Member 'AOnlineBeacon::NetDriver' has a wrong offset!");
 
 // Class OnlineSubsystemUtils.OnlineBeaconHost
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x00B8 (0x0468 - 0x03B0)
 class AOnlineBeaconHost : public AOnlineBeacon
 {
 public:
@@ -126,8 +122,8 @@ public:
 		return GetDefaultObjImpl<AOnlineBeaconHost>();
 	}
 };
-static_assert(alignof(AOnlineBeaconHost) == 0x11821D80, "Wrong alignment on AOnlineBeaconHost");
-static_assert(sizeof(AOnlineBeaconHost) == 0x11821D80, "Wrong size on AOnlineBeaconHost");
+static_assert(alignof(AOnlineBeaconHost) == 0x000008, "Wrong alignment on AOnlineBeaconHost");
+static_assert(sizeof(AOnlineBeaconHost) == 0x000468, "Wrong size on AOnlineBeaconHost");
 static_assert(offsetof(AOnlineBeaconHost, ListenPort) == 0x0003B0, "Member 'AOnlineBeaconHost::ListenPort' has a wrong offset!");
 static_assert(offsetof(AOnlineBeaconHost, ClientActors) == 0x0003B8, "Member 'AOnlineBeaconHost::ClientActors' has a wrong offset!");
 
@@ -160,9 +156,9 @@ static_assert(offsetof(UAchievementQueryCallbackProxy, OnSuccess) == 0x000028, "
 static_assert(offsetof(UAchievementQueryCallbackProxy, OnFailure) == 0x000038, "Member 'UAchievementQueryCallbackProxy::OnFailure' has a wrong offset!");
 
 // Class OnlineSubsystemUtils.OnlineBeaconClient
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0088 (0x0438 - 0x03B0)
 #pragma pack(push, 0x1)
-class alignas(0x11821D80) AOnlineBeaconClient : public AOnlineBeacon
+class alignas(0x08) AOnlineBeaconClient : public AOnlineBeacon
 {
 public:
 	class AOnlineBeaconHostObject*                BeaconOwner;                                       // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -184,8 +180,8 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(AOnlineBeaconClient) == 0x11821D80, "Wrong alignment on AOnlineBeaconClient");
-static_assert(sizeof(AOnlineBeaconClient) == 0x11821D80, "Wrong size on AOnlineBeaconClient");
+static_assert(alignof(AOnlineBeaconClient) == 0x000008, "Wrong alignment on AOnlineBeaconClient");
+static_assert(sizeof(AOnlineBeaconClient) == 0x000438, "Wrong size on AOnlineBeaconClient");
 static_assert(offsetof(AOnlineBeaconClient, BeaconOwner) == 0x0003B0, "Member 'AOnlineBeaconClient::BeaconOwner' has a wrong offset!");
 static_assert(offsetof(AOnlineBeaconClient, BeaconConnection) == 0x0003B8, "Member 'AOnlineBeaconClient::BeaconConnection' has a wrong offset!");
 static_assert(offsetof(AOnlineBeaconClient, ConnectionState) == 0x0003C0, "Member 'AOnlineBeaconClient::ConnectionState' has a wrong offset!");
@@ -254,14 +250,13 @@ static_assert(offsetof(UOnlineSessionClient, bIsFromInvite) == 0x0002B0, "Member
 static_assert(offsetof(UOnlineSessionClient, bHandlingDisconnect) == 0x0002B1, "Member 'UOnlineSessionClient::bHandlingDisconnect' has a wrong offset!");
 
 // Class OnlineSubsystemUtils.PartyBeaconClient
-// 0x3D80 (0x11825B00 - 0x11821D80)
-#pragma pack(push, 0x1)
-class alignas(0x11825B00) APartyBeaconClient : public AOnlineBeaconClient
+// 0x0138 (0x0570 - 0x0438)
+class APartyBeaconClient : public AOnlineBeaconClient
 {
 public:
 	uint8                                         Pad_438[0xC8];                                     // 0x0438(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 DestSessionId;                                     // 0x0500(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FPartyReservation                      PendingReservation;                                // 0x0510(0x11825B00)(Protected, NativeAccessSpecifierProtected)
+	struct FPartyReservation                      PendingReservation;                                // 0x0510(0x0030)(Protected, NativeAccessSpecifierProtected)
 	EClientRequestType                            RequestType;                                       // 0x0540(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bPendingReservationSent;                           // 0x0541(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bCancelReservation;                                // 0x0542(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -286,9 +281,8 @@ public:
 		return GetDefaultObjImpl<APartyBeaconClient>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(APartyBeaconClient) == 0x11825B00, "Wrong alignment on APartyBeaconClient");
-static_assert(sizeof(APartyBeaconClient) == 0x11825B00, "Wrong size on APartyBeaconClient");
+static_assert(alignof(APartyBeaconClient) == 0x000008, "Wrong alignment on APartyBeaconClient");
+static_assert(sizeof(APartyBeaconClient) == 0x000570, "Wrong size on APartyBeaconClient");
 static_assert(offsetof(APartyBeaconClient, DestSessionId) == 0x000500, "Member 'APartyBeaconClient::DestSessionId' has a wrong offset!");
 static_assert(offsetof(APartyBeaconClient, PendingReservation) == 0x000510, "Member 'APartyBeaconClient::PendingReservation' has a wrong offset!");
 static_assert(offsetof(APartyBeaconClient, RequestType) == 0x000540, "Member 'APartyBeaconClient::RequestType' has a wrong offset!");
@@ -296,7 +290,7 @@ static_assert(offsetof(APartyBeaconClient, bPendingReservationSent) == 0x000541,
 static_assert(offsetof(APartyBeaconClient, bCancelReservation) == 0x000542, "Member 'APartyBeaconClient::bCancelReservation' has a wrong offset!");
 
 // Class OnlineSubsystemUtils.PartyBeaconHost
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0160 (0x0510 - 0x03B0)
 class APartyBeaconHost : public AOnlineBeaconHostObject
 {
 public:
@@ -318,8 +312,8 @@ public:
 		return GetDefaultObjImpl<APartyBeaconHost>();
 	}
 };
-static_assert(alignof(APartyBeaconHost) == 0x11821D80, "Wrong alignment on APartyBeaconHost");
-static_assert(sizeof(APartyBeaconHost) == 0x11821D80, "Wrong size on APartyBeaconHost");
+static_assert(alignof(APartyBeaconHost) == 0x000008, "Wrong alignment on APartyBeaconHost");
+static_assert(sizeof(APartyBeaconHost) == 0x000510, "Wrong size on APartyBeaconHost");
 static_assert(offsetof(APartyBeaconHost, State) == 0x0003B0, "Member 'APartyBeaconHost::State' has a wrong offset!");
 static_assert(offsetof(APartyBeaconHost, bLogoutOnSessionTimeout) == 0x000500, "Member 'APartyBeaconHost::bLogoutOnSessionTimeout' has a wrong offset!");
 static_assert(offsetof(APartyBeaconHost, SessionTimeoutSecs) == 0x000504, "Member 'APartyBeaconHost::SessionTimeoutSecs' has a wrong offset!");
@@ -617,9 +611,12 @@ static_assert(offsetof(UInAppPurchaseRestoreCallbackProxy, OnSuccess) == 0x00002
 static_assert(offsetof(UInAppPurchaseRestoreCallbackProxy, OnFailure) == 0x000038, "Member 'UInAppPurchaseRestoreCallbackProxy::OnFailure' has a wrong offset!");
 
 // Class OnlineSubsystemUtils.IpConnection
-// 0x0000 (0x11821780 - 0x11821780)
+// 0x0020 (0x33760 - 0x33740)
 class UIpConnection final : public UNetConnection
 {
+public:
+	uint8                                         Pad_33740[0x20];                                   // 0x33740(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -630,8 +627,8 @@ public:
 		return GetDefaultObjImpl<UIpConnection>();
 	}
 };
-static_assert(alignof(UIpConnection) == 0x11821780, "Wrong alignment on UIpConnection");
-static_assert(sizeof(UIpConnection) == 0x11821780, "Wrong size on UIpConnection");
+static_assert(alignof(UIpConnection) == 0x000008, "Wrong alignment on UIpConnection");
+static_assert(sizeof(UIpConnection) == 0x033760, "Wrong size on UIpConnection");
 
 // Class OnlineSubsystemUtils.IpNetDriver
 // 0x0030 (0x0440 - 0x0410)
@@ -795,9 +792,12 @@ static_assert(offsetof(ULogoutCallbackProxy, OnSuccess) == 0x000028, "Member 'UL
 static_assert(offsetof(ULogoutCallbackProxy, OnFailure) == 0x000038, "Member 'ULogoutCallbackProxy::OnFailure' has a wrong offset!");
 
 // Class OnlineSubsystemUtils.TestBeaconClient
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0008 (0x0440 - 0x0438)
 class ATestBeaconClient final : public AOnlineBeaconClient
 {
+public:
+	uint8                                         Pad_438[0x8];                                      // 0x0438(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	void ClientPing();
 	void ServerPong();
@@ -812,11 +812,11 @@ public:
 		return GetDefaultObjImpl<ATestBeaconClient>();
 	}
 };
-static_assert(alignof(ATestBeaconClient) == 0x11821D80, "Wrong alignment on ATestBeaconClient");
-static_assert(sizeof(ATestBeaconClient) == 0x11821D80, "Wrong size on ATestBeaconClient");
+static_assert(alignof(ATestBeaconClient) == 0x000008, "Wrong alignment on ATestBeaconClient");
+static_assert(sizeof(ATestBeaconClient) == 0x000440, "Wrong size on ATestBeaconClient");
 
 // Class OnlineSubsystemUtils.TestBeaconHost
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x03B0 - 0x03B0)
 class ATestBeaconHost final : public AOnlineBeaconHostObject
 {
 public:
@@ -829,8 +829,8 @@ public:
 		return GetDefaultObjImpl<ATestBeaconHost>();
 	}
 };
-static_assert(alignof(ATestBeaconHost) == 0x11821D80, "Wrong alignment on ATestBeaconHost");
-static_assert(sizeof(ATestBeaconHost) == 0x11821D80, "Wrong size on ATestBeaconHost");
+static_assert(alignof(ATestBeaconHost) == 0x000008, "Wrong alignment on ATestBeaconHost");
+static_assert(sizeof(ATestBeaconHost) == 0x0003B0, "Wrong size on ATestBeaconHost");
 
 // Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
 // 0x0108 (0x0130 - 0x0028)

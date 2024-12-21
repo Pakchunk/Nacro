@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function B_Pickups.B_Pickups_C.ExecuteUbergraph_B_Pickups
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x03E8 (0x03E8 - 0x0000)
 struct B_Pickups_C_ExecuteUbergraph_B_Pickups final
 {
 public:
@@ -39,11 +39,11 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsActive_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0044(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0044(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item;                           // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue2;          // 0x0054(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue2;          // 0x0054(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Array_Get_Item2;                          // 0x0064(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Array_Get_Item2;                          // 0x0064(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable;                               // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -60,28 +60,28 @@ public:
 	bool                                          CallFunc_Array_Contains_ReturnValue2;              // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AA[0x2];                                       // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_SelectRotator_ReturnValue;                // 0x00AC(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_SelectRotator_ReturnValue;                // 0x00AC(0x000C)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00BC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x00C8(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x00C8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0158(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0158(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPickupBackpack*                    K2Node_DynamicCast_AsFort_Pickup_Backpack;         // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue2;        // 0x01F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1F3[0x1];                                      // 0x01F3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x01F4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0200(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x020C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x0218(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x01F4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0200(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x020C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x0218(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0228(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0234(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0228(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0234(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0248(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0248(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_LastIndex_ReturnValue2;             // 0x02D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -90,7 +90,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess4;                      // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x02E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2EA[0x6];                                      // 0x02EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x02F0(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x02F0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item3;                          // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item4;                          // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -117,8 +117,8 @@ public:
 	uint8                                         Pad_3E1[0x3];                                      // 0x03E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x03E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_C_ExecuteUbergraph_B_Pickups) == 0x11821D80, "Wrong alignment on B_Pickups_C_ExecuteUbergraph_B_Pickups");
-static_assert(sizeof(B_Pickups_C_ExecuteUbergraph_B_Pickups) == 0x11821D80, "Wrong size on B_Pickups_C_ExecuteUbergraph_B_Pickups");
+static_assert(alignof(B_Pickups_C_ExecuteUbergraph_B_Pickups) == 0x000008, "Wrong alignment on B_Pickups_C_ExecuteUbergraph_B_Pickups");
+static_assert(sizeof(B_Pickups_C_ExecuteUbergraph_B_Pickups) == 0x0003E8, "Wrong size on B_Pickups_C_ExecuteUbergraph_B_Pickups");
 static_assert(offsetof(B_Pickups_C_ExecuteUbergraph_B_Pickups, EntryPoint) == 0x000000, "Member 'B_Pickups_C_ExecuteUbergraph_B_Pickups::EntryPoint' has a wrong offset!");
 static_assert(offsetof(B_Pickups_C_ExecuteUbergraph_B_Pickups, K2Node_Event_PickupTarget) == 0x000008, "Member 'B_Pickups_C_ExecuteUbergraph_B_Pickups::K2Node_Event_PickupTarget' has a wrong offset!");
 static_assert(offsetof(B_Pickups_C_ExecuteUbergraph_B_Pickups, CallFunc_IsLocallyControlled_ReturnValue) == 0x000010, "Member 'B_Pickups_C_ExecuteUbergraph_B_Pickups::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
@@ -219,31 +219,31 @@ static_assert(sizeof(B_Pickups_C_ReceiveTick) == 0x000004, "Wrong size on B_Pick
 static_assert(offsetof(B_Pickups_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'B_Pickups_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function B_Pickups.B_Pickups_C.UserConstructionScript
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct B_Pickups_C_UserConstructionScript final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable2;                             // 0x0050(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable2;                             // 0x0050(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue2;                // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0090(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x009C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0090(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x009C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             Temp_struct_Variable3;                             // 0x00B0(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable3;                             // 0x00B0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 CallFunc_AddComponent_ReturnValue3;                // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             Temp_struct_Variable4;                             // 0x00F0(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable4;                             // 0x00F0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue4;                // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_128[0x8];                                      // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Temp_struct_Variable5;                             // 0x0130(0x11821300)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable5;                             // 0x0130(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UParticleSystemComponent*               CallFunc_AddComponent_ReturnValue5;                // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue2;     // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -255,8 +255,8 @@ public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetStaticMesh_ReturnValue2;               // 0x0182(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Pickups_C_UserConstructionScript) == 0x11821300, "Wrong alignment on B_Pickups_C_UserConstructionScript");
-static_assert(sizeof(B_Pickups_C_UserConstructionScript) == 0x11821300, "Wrong size on B_Pickups_C_UserConstructionScript");
+static_assert(alignof(B_Pickups_C_UserConstructionScript) == 0x000010, "Wrong alignment on B_Pickups_C_UserConstructionScript");
+static_assert(sizeof(B_Pickups_C_UserConstructionScript) == 0x000190, "Wrong size on B_Pickups_C_UserConstructionScript");
 static_assert(offsetof(B_Pickups_C_UserConstructionScript, Temp_bool_Variable) == 0x000000, "Member 'B_Pickups_C_UserConstructionScript::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(B_Pickups_C_UserConstructionScript, Temp_struct_Variable) == 0x000010, "Member 'B_Pickups_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
 static_assert(offsetof(B_Pickups_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000040, "Member 'B_Pickups_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
@@ -284,7 +284,7 @@ static_assert(offsetof(B_Pickups_C_UserConstructionScript, CallFunc_SetStaticMes
 static_assert(offsetof(B_Pickups_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue2) == 0x000182, "Member 'B_Pickups_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue2' has a wrong offset!");
 
 // Function B_Pickups.B_Pickups_C.SetRarityColor
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct B_Pickups_C_SetRarityColor final
 {
 public:
@@ -303,15 +303,15 @@ public:
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Array_Get_Item;                           // 0x0038(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Array_Get_Item;                           // 0x0038(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x004C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x004C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0060(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0060(0x0080)()
 };
-static_assert(alignof(B_Pickups_C_SetRarityColor) == 0x11821780, "Wrong alignment on B_Pickups_C_SetRarityColor");
-static_assert(sizeof(B_Pickups_C_SetRarityColor) == 0x11821780, "Wrong size on B_Pickups_C_SetRarityColor");
+static_assert(alignof(B_Pickups_C_SetRarityColor) == 0x000008, "Wrong alignment on B_Pickups_C_SetRarityColor");
+static_assert(sizeof(B_Pickups_C_SetRarityColor) == 0x0000E0, "Wrong size on B_Pickups_C_SetRarityColor");
 static_assert(offsetof(B_Pickups_C_SetRarityColor, Temp_byte_Variable) == 0x000000, "Member 'B_Pickups_C_SetRarityColor::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(B_Pickups_C_SetRarityColor, Temp_int_Variable) == 0x000004, "Member 'B_Pickups_C_SetRarityColor::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(B_Pickups_C_SetRarityColor, Temp_int_Variable2) == 0x000008, "Member 'B_Pickups_C_SetRarityColor::Temp_int_Variable2' has a wrong offset!");
@@ -332,18 +332,19 @@ static_assert(offsetof(B_Pickups_C_SetRarityColor, K2Node_Select_Default) == 0x0
 static_assert(offsetof(B_Pickups_C_SetRarityColor, CallFunc_BPGetRarityData_ReturnValue) == 0x000060, "Member 'B_Pickups_C_SetRarityColor::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups.B_Pickups_C.SpawnPickedUpTrailPS
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct B_Pickups_C_SpawnPickedUpTrailPS final
 {
 public:
 	class UParticleSystemComponent*               TrailPS;                                           // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item;                           // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item2;                          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_LinearColorToVector_ReturnValue;     // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_LinearColorToVector_ReturnValue;     // 0x0010(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_C_SpawnPickedUpTrailPS) == 0x11821300, "Wrong alignment on B_Pickups_C_SpawnPickedUpTrailPS");
-static_assert(sizeof(B_Pickups_C_SpawnPickedUpTrailPS) == 0x11821300, "Wrong size on B_Pickups_C_SpawnPickedUpTrailPS");
+static_assert(alignof(B_Pickups_C_SpawnPickedUpTrailPS) == 0x000008, "Wrong alignment on B_Pickups_C_SpawnPickedUpTrailPS");
+static_assert(sizeof(B_Pickups_C_SpawnPickedUpTrailPS) == 0x000028, "Wrong size on B_Pickups_C_SpawnPickedUpTrailPS");
 static_assert(offsetof(B_Pickups_C_SpawnPickedUpTrailPS, TrailPS) == 0x000000, "Member 'B_Pickups_C_SpawnPickedUpTrailPS::TrailPS' has a wrong offset!");
 static_assert(offsetof(B_Pickups_C_SpawnPickedUpTrailPS, CallFunc_Array_Get_Item) == 0x000008, "Member 'B_Pickups_C_SpawnPickedUpTrailPS::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(B_Pickups_C_SpawnPickedUpTrailPS, CallFunc_Array_Get_Item2) == 0x00000C, "Member 'B_Pickups_C_SpawnPickedUpTrailPS::CallFunc_Array_Get_Item2' has a wrong offset!");

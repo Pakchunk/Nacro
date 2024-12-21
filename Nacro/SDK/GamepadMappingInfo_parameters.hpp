@@ -87,8 +87,8 @@ static_assert(offsetof(GamepadMappingInfo_C_Update_Displayed_Mapping, K2Node_Sel
 static_assert(offsetof(GamepadMappingInfo_C_Update_Displayed_Mapping, K2Node_Select6_Default) == 0x0000C8, "Member 'GamepadMappingInfo_C_Update_Displayed_Mapping::K2Node_Select6_Default' has a wrong offset!");
 
 // Function GamepadMappingInfo.GamepadMappingInfo_C.OnConfigChanged
-// 0x0610 (0x0610 - 0x0000)
-struct alignas(0x610) GamepadMappingInfo_C_OnConfigChanged final
+// 0x0018 (0x0018 - 0x0000)
+struct GamepadMappingInfo_C_OnConfigChanged final
 {
 public:
 	int32                                         Mode;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -97,8 +97,8 @@ public:
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GamepadMappingInfo_C_OnConfigChanged) == 0x000610, "Wrong alignment on GamepadMappingInfo_C_OnConfigChanged");
-static_assert(sizeof(GamepadMappingInfo_C_OnConfigChanged) == 0x000610, "Wrong size on GamepadMappingInfo_C_OnConfigChanged");
+static_assert(alignof(GamepadMappingInfo_C_OnConfigChanged) == 0x000008, "Wrong alignment on GamepadMappingInfo_C_OnConfigChanged");
+static_assert(sizeof(GamepadMappingInfo_C_OnConfigChanged) == 0x000018, "Wrong size on GamepadMappingInfo_C_OnConfigChanged");
 static_assert(offsetof(GamepadMappingInfo_C_OnConfigChanged, Mode) == 0x000000, "Member 'GamepadMappingInfo_C_OnConfigChanged::Mode' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_OnConfigChanged, Config) == 0x000004, "Member 'GamepadMappingInfo_C_OnConfigChanged::Config' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_OnConfigChanged, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'GamepadMappingInfo_C_OnConfigChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -106,8 +106,8 @@ static_assert(offsetof(GamepadMappingInfo_C_OnConfigChanged, CallFunc_GetSubGame
 static_assert(offsetof(GamepadMappingInfo_C_OnConfigChanged, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'GamepadMappingInfo_C_OnConfigChanged::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function GamepadMappingInfo.GamepadMappingInfo_C.HandleConfigChanged_Athena
-// 0x6F006D (0x6F006D - 0x0000)
-struct alignas(0x6F006D) GamepadMappingInfo_C_HandleConfigChanged_Athena final
+// 0x1580 (0x1580 - 0x0000)
+struct GamepadMappingInfo_C_HandleConfigChanged_Athena final
 {
 public:
 	int32                                         Mode;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -459,8 +459,8 @@ public:
 	bool                                          Temp_bool_Variable6;                               // 0x157E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select56_Default;                           // 0x157F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GamepadMappingInfo_C_HandleConfigChanged_Athena) == 0x6F006D, "Wrong alignment on GamepadMappingInfo_C_HandleConfigChanged_Athena");
-static_assert(sizeof(GamepadMappingInfo_C_HandleConfigChanged_Athena) == 0x6F006D, "Wrong size on GamepadMappingInfo_C_HandleConfigChanged_Athena");
+static_assert(alignof(GamepadMappingInfo_C_HandleConfigChanged_Athena) == 0x000008, "Wrong alignment on GamepadMappingInfo_C_HandleConfigChanged_Athena");
+static_assert(sizeof(GamepadMappingInfo_C_HandleConfigChanged_Athena) == 0x001580, "Wrong size on GamepadMappingInfo_C_HandleConfigChanged_Athena");
 static_assert(offsetof(GamepadMappingInfo_C_HandleConfigChanged_Athena, Mode) == 0x000000, "Member 'GamepadMappingInfo_C_HandleConfigChanged_Athena::Mode' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_HandleConfigChanged_Athena, Config) == 0x000004, "Member 'GamepadMappingInfo_C_HandleConfigChanged_Athena::Config' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_HandleConfigChanged_Athena, Temp_int_Variable) == 0x000008, "Member 'GamepadMappingInfo_C_HandleConfigChanged_Athena::Temp_int_Variable' has a wrong offset!");
@@ -756,8 +756,8 @@ static_assert(offsetof(GamepadMappingInfo_C_HandleConfigChanged_Athena, Temp_boo
 static_assert(offsetof(GamepadMappingInfo_C_HandleConfigChanged_Athena, K2Node_Select56_Default) == 0x00157F, "Member 'GamepadMappingInfo_C_HandleConfigChanged_Athena::K2Node_Select56_Default' has a wrong offset!");
 
 // Function GamepadMappingInfo.GamepadMappingInfo_C.HandleConfigChanged
-// 0x10E0 (0x10E0 - 0x0000)
-struct alignas(0x28) GamepadMappingInfo_C_HandleConfigChanged final
+// 0x10C0 (0x10C0 - 0x0000)
+struct GamepadMappingInfo_C_HandleConfigChanged final
 {
 public:
 	int32                                         Mode;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1052,8 +1052,8 @@ public:
 	uint8                                         Pad_10A4[0x4];                                     // 0x10A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select55_Default;                           // 0x10A8(0x0018)()
 };
-static_assert(alignof(GamepadMappingInfo_C_HandleConfigChanged) == 0x000028, "Wrong alignment on GamepadMappingInfo_C_HandleConfigChanged");
-static_assert(sizeof(GamepadMappingInfo_C_HandleConfigChanged) == 0x0010E0, "Wrong size on GamepadMappingInfo_C_HandleConfigChanged");
+static_assert(alignof(GamepadMappingInfo_C_HandleConfigChanged) == 0x000008, "Wrong alignment on GamepadMappingInfo_C_HandleConfigChanged");
+static_assert(sizeof(GamepadMappingInfo_C_HandleConfigChanged) == 0x0010C0, "Wrong size on GamepadMappingInfo_C_HandleConfigChanged");
 static_assert(offsetof(GamepadMappingInfo_C_HandleConfigChanged, Mode) == 0x000000, "Member 'GamepadMappingInfo_C_HandleConfigChanged::Mode' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_HandleConfigChanged, Config) == 0x000004, "Member 'GamepadMappingInfo_C_HandleConfigChanged::Config' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_HandleConfigChanged, Temp_bool_Variable) == 0x000008, "Member 'GamepadMappingInfo_C_HandleConfigChanged::Temp_bool_Variable' has a wrong offset!");

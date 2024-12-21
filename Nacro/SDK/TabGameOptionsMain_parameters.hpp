@@ -125,14 +125,14 @@ static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain,
 static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_ComponentBoundEvent_Slider_Value) == 0x0000F0, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_ComponentBoundEvent_Slider_Value' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature
-// 0x00B3 (0x00B3 - 0x0000)
-struct alignas(0xB3) TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature final
 {
 public:
 	float                                         Slider_Value;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature) == 0x0000B3, "Wrong alignment on TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature");
-static_assert(sizeof(TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature) == 0x0000B3, "Wrong size on TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature");
+static_assert(alignof(TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature");
+static_assert(sizeof(TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature");
 static_assert(offsetof(TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__ScopedMultiplier_K2Node_ComponentBoundEvent_201_SliderChanged__DelegateSignature
@@ -169,25 +169,25 @@ static_assert(sizeof(TabGameOptionsMain_C_BndEvt__EquipFirstBuildingPieceWhenSwa
 static_assert(offsetof(TabGameOptionsMain_C_BndEvt__EquipFirstBuildingPieceWhenSwappingQuickbars_K2Node_ComponentBoundEvent_136_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__EquipFirstBuildingPieceWhenSwappingQuickbars_K2Node_ComponentBoundEvent_136_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection Changed__DelegateSignature
-// 0x007F (0x007F - 0x0000)
-struct alignas(0x7F) TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature final
 {
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature) == 0x00007F, "Wrong alignment on TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature");
-static_assert(sizeof(TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature) == 0x00007F, "Wrong size on TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature");
+static_assert(alignof(TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature");
+static_assert(sizeof(TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature");
 static_assert(offsetof(TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__First-PersonCamera_K2Node_ComponentBoundEvent_106_Selection Changed__DelegateSignature
-// 0x0039 (0x0039 - 0x0000)
-struct alignas(0x39) TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature final
 {
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature) == 0x000039, "Wrong alignment on TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature");
-static_assert(sizeof(TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature) == 0x000039, "Wrong size on TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature");
+static_assert(alignof(TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature");
+static_assert(sizeof(TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature");
 static_assert(offsetof(TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__AutoEquipBetterItems_K2Node_ComponentBoundEvent_93_Selection Changed__DelegateSignature
@@ -235,25 +235,25 @@ static_assert(sizeof(TabGameOptionsMain_C_BndEvt__ToggleSprint_K2Node_ComponentB
 static_assert(offsetof(TabGameOptionsMain_C_BndEvt__ToggleSprint_K2Node_ComponentBoundEvent_60_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__ToggleSprint_K2Node_ComponentBoundEvent_60_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection Changed__DelegateSignature
-// 0x0104 (0x0104 - 0x0000)
-struct alignas(0x104) TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature final
 {
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature) == 0x000104, "Wrong alignment on TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature");
-static_assert(sizeof(TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature) == 0x000104, "Wrong size on TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature");
+static_assert(alignof(TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature");
+static_assert(sizeof(TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature");
 static_assert(offsetof(TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__InvertMouse_K2Node_ComponentBoundEvent_51_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection Changed__DelegateSignature
-// 0x001C (0x001C - 0x0000)
-struct alignas(0x1C) TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature final
+// 0x0004 (0x0004 - 0x0000)
+struct TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature final
 {
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature) == 0x00001C, "Wrong alignment on TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature");
-static_assert(sizeof(TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature) == 0x00001C, "Wrong size on TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature");
+static_assert(alignof(TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature");
+static_assert(sizeof(TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature");
 static_assert(offsetof(TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__Language_K2Node_ComponentBoundEvent_42_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__ShowBackpack_K2Node_ComponentBoundEvent_111_Selection Changed__DelegateSignature
@@ -323,7 +323,7 @@ static_assert(sizeof(TabGameOptionsMain_C_BndEvt__MouseSensitivity_K2Node_Compon
 static_assert(offsetof(TabGameOptionsMain_C_BndEvt__MouseSensitivity_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__MouseSensitivity_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.Update Data
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x02B8 (0x02B8 - 0x0000)
 struct TabGameOptionsMain_C_Update_Data final
 {
 public:
@@ -411,7 +411,7 @@ public:
 	int32                                         CallFunc_Conv_BoolToInt_ReturnValue6;              // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable9;                               // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_269[0x3];                                      // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_GetGamepadLookSensitivityValue_ReturnValue; // 0x026C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetGamepadLookSensitivityValue_ReturnValue; // 0x026C(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select9_Default;                            // 0x0274(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -430,8 +430,8 @@ public:
 	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue8;             // 0x02A0(0x0018)()
 };
-static_assert(alignof(TabGameOptionsMain_C_Update_Data) == 0x11821300, "Wrong alignment on TabGameOptionsMain_C_Update_Data");
-static_assert(sizeof(TabGameOptionsMain_C_Update_Data) == 0x11821300, "Wrong size on TabGameOptionsMain_C_Update_Data");
+static_assert(alignof(TabGameOptionsMain_C_Update_Data) == 0x000008, "Wrong alignment on TabGameOptionsMain_C_Update_Data");
+static_assert(sizeof(TabGameOptionsMain_C_Update_Data) == 0x0002B8, "Wrong size on TabGameOptionsMain_C_Update_Data");
 static_assert(offsetof(TabGameOptionsMain_C_Update_Data, Temp_bool_Variable) == 0x000000, "Member 'TabGameOptionsMain_C_Update_Data::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(TabGameOptionsMain_C_Update_Data, Temp_text_Variable) == 0x000008, "Member 'TabGameOptionsMain_C_Update_Data::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(TabGameOptionsMain_C_Update_Data, Temp_text_Variable2) == 0x000020, "Member 'TabGameOptionsMain_C_Update_Data::Temp_text_Variable2' has a wrong offset!");
@@ -517,8 +517,8 @@ static_assert(offsetof(TabGameOptionsMain_C_Update_Data, CallFunc_GetMouseSensit
 static_assert(offsetof(TabGameOptionsMain_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue8) == 0x0002A0, "Member 'TabGameOptionsMain_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue8' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.Initialize Data
-// 0x0348 (0x0348 - 0x0000)
-struct alignas(0x118) TabGameOptionsMain_C_Initialize_Data final
+// 0x02C0 (0x02C0 - 0x0000)
+struct TabGameOptionsMain_C_Initialize_Data final
 {
 public:
 	TArray<class FText>                           OffOnOptions;                                      // 0x0000(0x0010)(Edit, ZeroConstructor)
@@ -556,8 +556,8 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue22;            // 0x0290(0x0018)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue23;            // 0x02A8(0x0018)()
 };
-static_assert(alignof(TabGameOptionsMain_C_Initialize_Data) == 0x000118, "Wrong alignment on TabGameOptionsMain_C_Initialize_Data");
-static_assert(sizeof(TabGameOptionsMain_C_Initialize_Data) == 0x000348, "Wrong size on TabGameOptionsMain_C_Initialize_Data");
+static_assert(alignof(TabGameOptionsMain_C_Initialize_Data) == 0x000008, "Wrong alignment on TabGameOptionsMain_C_Initialize_Data");
+static_assert(sizeof(TabGameOptionsMain_C_Initialize_Data) == 0x0002C0, "Wrong size on TabGameOptionsMain_C_Initialize_Data");
 static_assert(offsetof(TabGameOptionsMain_C_Initialize_Data, OffOnOptions) == 0x000000, "Member 'TabGameOptionsMain_C_Initialize_Data::OffOnOptions' has a wrong offset!");
 static_assert(offsetof(TabGameOptionsMain_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue) == 0x000010, "Member 'TabGameOptionsMain_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TabGameOptionsMain_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue2) == 0x000028, "Member 'TabGameOptionsMain_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Tiered_BluGlo_Parent.Tiered_BluGlo_Parent_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0000 (0x10D0 - 0x10D0)
 class ATiered_BluGlo_Parent_C final : public ABuildingContainer
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<ATiered_BluGlo_Parent_C>();
 	}
 };
-static_assert(alignof(ATiered_BluGlo_Parent_C) == 0x1182A000, "Wrong alignment on ATiered_BluGlo_Parent_C");
-static_assert(sizeof(ATiered_BluGlo_Parent_C) == 0x1182A000, "Wrong size on ATiered_BluGlo_Parent_C");
+static_assert(alignof(ATiered_BluGlo_Parent_C) == 0x000010, "Wrong alignment on ATiered_BluGlo_Parent_C");
+static_assert(sizeof(ATiered_BluGlo_Parent_C) == 0x0010D0, "Wrong size on ATiered_BluGlo_Parent_C");
 
 }
 

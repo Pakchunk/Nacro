@@ -28,14 +28,14 @@ static_assert(offsetof(AthenaMainStatTile_C_ExecuteUbergraph_AthenaMainStatTile,
 static_assert(offsetof(AthenaMainStatTile_C_ExecuteUbergraph_AthenaMainStatTile, K2Node_Event_IsDesignTime) == 0x000004, "Member 'AthenaMainStatTile_C_ExecuteUbergraph_AthenaMainStatTile::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function AthenaMainStatTile.AthenaMainStatTile_C.PreConstruct
-// 0x0025 (0x0025 - 0x0000)
-struct alignas(0x25) AthenaMainStatTile_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaMainStatTile_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMainStatTile_C_PreConstruct) == 0x000025, "Wrong alignment on AthenaMainStatTile_C_PreConstruct");
-static_assert(sizeof(AthenaMainStatTile_C_PreConstruct) == 0x000025, "Wrong size on AthenaMainStatTile_C_PreConstruct");
+static_assert(alignof(AthenaMainStatTile_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaMainStatTile_C_PreConstruct");
+static_assert(sizeof(AthenaMainStatTile_C_PreConstruct) == 0x000001, "Wrong size on AthenaMainStatTile_C_PreConstruct");
 static_assert(offsetof(AthenaMainStatTile_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaMainStatTile_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaMainStatTile.AthenaMainStatTile_C.SetTagAndDisplayName

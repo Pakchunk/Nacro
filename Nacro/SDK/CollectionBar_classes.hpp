@@ -12,32 +12,32 @@
 
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CollectionBounds_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "CollectionBounds_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBar.CollectionBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00E8 (0x0320 - 0x0238)
 class UCollectionBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UProgressBar*                           Bar;                                               // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               BarSizeBox;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 SideIcon;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FCollectionBounds                      BarBounds;                                         // 0x0258(0x0008)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         AchievedCount;                                     // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            IconBrush;                                         // 0x0268(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x0268(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          bShowSideIcon;                                     // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_2F9[0x3];                                      // 0x02F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           BarColor;                                          // 0x02FC(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FLinearColor                           BarColor;                                          // 0x02FC(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         BarHeightOverride;                                 // 0x030C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FMargin                                IconMargin;                                        // 0x0310(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
+	struct FMargin                                IconMargin;                                        // 0x0310(0x0010)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_CollectionBar(int32 EntryPoint);
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBar_C>();
 	}
 };
-static_assert(alignof(UCollectionBar_C) == 0x322CBBB8, "Wrong alignment on UCollectionBar_C");
-static_assert(sizeof(UCollectionBar_C) == 0x322CBBB8, "Wrong size on UCollectionBar_C");
+static_assert(alignof(UCollectionBar_C) == 0x000008, "Wrong alignment on UCollectionBar_C");
+static_assert(sizeof(UCollectionBar_C) == 0x000320, "Wrong size on UCollectionBar_C");
 static_assert(offsetof(UCollectionBar_C, UberGraphFrame) == 0x000238, "Member 'UCollectionBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBar_C, Bar) == 0x000240, "Member 'UCollectionBar_C::Bar' has a wrong offset!");
 static_assert(offsetof(UCollectionBar_C, BarSizeBox) == 0x000248, "Member 'UCollectionBar_C::BarSizeBox' has a wrong offset!");

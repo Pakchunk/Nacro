@@ -42,7 +42,7 @@ static_assert(offsetof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedP
 static_assert(offsetof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent, K2Node_CreateDelegate_OutputDelegate3) == 0x000038, "Member 'BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.UpdateBadgeWidgets
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct BadgesEarnedPanelContent_C_UpdateBadgeWidgets final
 {
 public:
@@ -50,7 +50,7 @@ public:
 	TArray<struct FEarnedBadgeEntry>              CallFunc_GetEarnedBadges_ReturnValue;              // 0x0008(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEarnedBadgeEntry                      CallFunc_Array_Get_Item;                           // 0x0020(0x11821C00)()
+	struct FEarnedBadgeEntry                      CallFunc_Array_Get_Item;                           // 0x0020(0x0030)()
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -75,8 +75,8 @@ public:
 	class UEarnedBadgeTile_C*                     CallFunc_Create_ReturnValue;                       // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets) == 0x11821780, "Wrong alignment on BadgesEarnedPanelContent_C_UpdateBadgeWidgets");
-static_assert(sizeof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets) == 0x11821780, "Wrong size on BadgesEarnedPanelContent_C_UpdateBadgeWidgets");
+static_assert(alignof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets) == 0x000008, "Wrong alignment on BadgesEarnedPanelContent_C_UpdateBadgeWidgets");
+static_assert(sizeof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets) == 0x0000B0, "Wrong size on BadgesEarnedPanelContent_C_UpdateBadgeWidgets");
 static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_GetEarnedBadges_ReturnValue) == 0x000008, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_GetEarnedBadges_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, Temp_int_Array_Index_Variable) == 0x000018, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -102,7 +102,7 @@ static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_C
 static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000A8, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.UpdatePotentialBadges
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct BadgesEarnedPanelContent_C_UpdatePotentialBadges final
 {
 public:
@@ -116,14 +116,14 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortBadgeCount>                CallFunc_GetPotentialBadges_ReturnValue;           // 0x0030(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	struct FFortBadgeCount                        CallFunc_Array_Get_Item;                           // 0x0040(0x11821C00)(NoDestructor)
+	struct FFortBadgeCount                        CallFunc_Array_Get_Item;                           // 0x0040(0x0020)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BadgesEarnedPanelContent_C_UpdatePotentialBadges) == 0x11821780, "Wrong alignment on BadgesEarnedPanelContent_C_UpdatePotentialBadges");
-static_assert(sizeof(BadgesEarnedPanelContent_C_UpdatePotentialBadges) == 0x11821780, "Wrong size on BadgesEarnedPanelContent_C_UpdatePotentialBadges");
+static_assert(alignof(BadgesEarnedPanelContent_C_UpdatePotentialBadges) == 0x000008, "Wrong alignment on BadgesEarnedPanelContent_C_UpdatePotentialBadges");
+static_assert(sizeof(BadgesEarnedPanelContent_C_UpdatePotentialBadges) == 0x000070, "Wrong size on BadgesEarnedPanelContent_C_UpdatePotentialBadges");
 static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000010, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
@@ -137,12 +137,12 @@ static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFun
 static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.Get Badge And Count For Player
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player final
 {
 public:
 	class AFortPlayerController*                  InFortPC;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEarnedBadgeEntry                      EarnedBadgeEntry;                                  // 0x0008(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FEarnedBadgeEntry                      EarnedBadgeEntry;                                  // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm)
 	bool                                          Found;                                             // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerController*                  FortPC;                                            // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -158,16 +158,16 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEarnedBadgePlayerData                 CallFunc_Array_Get_Item;                           // 0x0070(0x11821780)()
+	struct FEarnedBadgePlayerData                 CallFunc_Array_Get_Item;                           // 0x0070(0x0020)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_92[0x2];                                       // 0x0092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0098(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0098(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player) == 0x11821780, "Wrong alignment on BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player");
-static_assert(sizeof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player) == 0x11821780, "Wrong size on BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player");
+static_assert(alignof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player) == 0x000008, "Wrong alignment on BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player");
+static_assert(sizeof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player) == 0x0000B8, "Wrong size on BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player");
 static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, InFortPC) == 0x000000, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::InFortPC' has a wrong offset!");
 static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, EarnedBadgeEntry) == 0x000008, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::EarnedBadgeEntry' has a wrong offset!");
 static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, Found) == 0x000038, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::Found' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ZoneScoreWidget.ZoneScoreWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B0 (0x0310 - 0x0260)
 class UZoneScoreWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Intro_EndOfDayRecapAnim;                           // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       XPIntroAnim;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTeamScoreToPlayerXPRewardWidget_C*     TeamScoreToPlayerXPRewardWidget;                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -40,7 +40,7 @@ public:
 	float                                         Pre_And_Post_Tween_Delay;                          // 0x02BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        XPTweenLoopSound;                                  // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        TeamScoreTweenLoopSound;                           // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEndOfDayRecap                         End_of_Day_Recap;                                  // 0x02D0(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FEndOfDayRecap                         End_of_Day_Recap;                                  // 0x02D0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UAudioComponent*                        ZoneScoreMusic_Sound;                              // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   OnEndOfDayRecapEnded;                              // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class USoundBase*                             EndOfDay_Recap_Appear_Sound;                       // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -72,8 +72,8 @@ public:
 		return GetDefaultObjImpl<UZoneScoreWidget_C>();
 	}
 };
-static_assert(alignof(UZoneScoreWidget_C) == 0x322CBBB8, "Wrong alignment on UZoneScoreWidget_C");
-static_assert(sizeof(UZoneScoreWidget_C) == 0x322CBBB8, "Wrong size on UZoneScoreWidget_C");
+static_assert(alignof(UZoneScoreWidget_C) == 0x000008, "Wrong alignment on UZoneScoreWidget_C");
+static_assert(sizeof(UZoneScoreWidget_C) == 0x000310, "Wrong size on UZoneScoreWidget_C");
 static_assert(offsetof(UZoneScoreWidget_C, UberGraphFrame) == 0x000260, "Member 'UZoneScoreWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UZoneScoreWidget_C, Intro_EndOfDayRecapAnim) == 0x000268, "Member 'UZoneScoreWidget_C::Intro_EndOfDayRecapAnim' has a wrong offset!");
 static_assert(offsetof(UZoneScoreWidget_C, XPIntroAnim) == 0x000270, "Member 'UZoneScoreWidget_C::XPIntroAnim' has a wrong offset!");

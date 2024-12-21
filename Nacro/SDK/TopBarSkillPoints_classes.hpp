@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TopBarSkillPoints.TopBarSkillPoints_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0098 (0x02D0 - 0x0238)
 class UTopBarSkillPoints_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ButtonXPBar;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 FounderBadge;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HorizontalBox_3;                                   // 0x0250(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -80,8 +80,8 @@ public:
 		return GetDefaultObjImpl<UTopBarSkillPoints_C>();
 	}
 };
-static_assert(alignof(UTopBarSkillPoints_C) == 0x322CBBB8, "Wrong alignment on UTopBarSkillPoints_C");
-static_assert(sizeof(UTopBarSkillPoints_C) == 0x322CBBB8, "Wrong size on UTopBarSkillPoints_C");
+static_assert(alignof(UTopBarSkillPoints_C) == 0x000008, "Wrong alignment on UTopBarSkillPoints_C");
+static_assert(sizeof(UTopBarSkillPoints_C) == 0x0002D0, "Wrong size on UTopBarSkillPoints_C");
 static_assert(offsetof(UTopBarSkillPoints_C, UberGraphFrame) == 0x000238, "Member 'UTopBarSkillPoints_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTopBarSkillPoints_C, ButtonXPBar) == 0x000240, "Member 'UTopBarSkillPoints_C::ButtonXPBar' has a wrong offset!");
 static_assert(offsetof(UTopBarSkillPoints_C, FounderBadge) == 0x000248, "Member 'UTopBarSkillPoints_C::FounderBadge' has a wrong offset!");

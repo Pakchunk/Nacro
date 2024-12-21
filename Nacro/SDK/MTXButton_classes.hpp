@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MTXButton.MTXButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0260 - 0x0238)
 class UMTXButton_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonNumericTextBlock*                Amount;                                            // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      Button;                                            // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextPlus;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -50,8 +50,8 @@ public:
 		return GetDefaultObjImpl<UMTXButton_C>();
 	}
 };
-static_assert(alignof(UMTXButton_C) == 0x322CBBB8, "Wrong alignment on UMTXButton_C");
-static_assert(sizeof(UMTXButton_C) == 0x322CBBB8, "Wrong size on UMTXButton_C");
+static_assert(alignof(UMTXButton_C) == 0x000008, "Wrong alignment on UMTXButton_C");
+static_assert(sizeof(UMTXButton_C) == 0x000260, "Wrong size on UMTXButton_C");
 static_assert(offsetof(UMTXButton_C, UberGraphFrame) == 0x000238, "Member 'UMTXButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMTXButton_C, Amount) == 0x000240, "Member 'UMTXButton_C::Amount' has a wrong offset!");
 static_assert(offsetof(UMTXButton_C, Button) == 0x000248, "Member 'UMTXButton_C::Button' has a wrong offset!");

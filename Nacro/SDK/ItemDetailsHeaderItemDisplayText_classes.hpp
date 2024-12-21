@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0288 - 0x0270)
 class UItemDetailsHeaderItemDisplayText_C final : public UFortItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       ItemDisplayName;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          Show_New_System;                                   // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UItemDetailsHeaderItemDisplayText_C>();
 	}
 };
-static_assert(alignof(UItemDetailsHeaderItemDisplayText_C) == 0x322CBBB8, "Wrong alignment on UItemDetailsHeaderItemDisplayText_C");
-static_assert(sizeof(UItemDetailsHeaderItemDisplayText_C) == 0x322CBBB8, "Wrong size on UItemDetailsHeaderItemDisplayText_C");
+static_assert(alignof(UItemDetailsHeaderItemDisplayText_C) == 0x000008, "Wrong alignment on UItemDetailsHeaderItemDisplayText_C");
+static_assert(sizeof(UItemDetailsHeaderItemDisplayText_C) == 0x000288, "Wrong size on UItemDetailsHeaderItemDisplayText_C");
 static_assert(offsetof(UItemDetailsHeaderItemDisplayText_C, UberGraphFrame) == 0x000270, "Member 'UItemDetailsHeaderItemDisplayText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemDetailsHeaderItemDisplayText_C, ItemDisplayName) == 0x000278, "Member 'UItemDetailsHeaderItemDisplayText_C::ItemDisplayName' has a wrong offset!");
 static_assert(offsetof(UItemDetailsHeaderItemDisplayText_C, Show_New_System) == 0x000280, "Member 'UItemDetailsHeaderItemDisplayText_C::Show_New_System' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookSectionTileWidget.CollectionBookSectionTileWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0940 - 0x0910)
 class UCollectionBookSectionTileWidget_C final : public UFortCollectionBookSectionTileWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0910(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0910(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          SlotBorder;                                        // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UClass*                                 NormalTextStyle;                                   // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CompletedTextStyle;                                // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookSectionTileWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookSectionTileWidget_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookSectionTileWidget_C");
-static_assert(sizeof(UCollectionBookSectionTileWidget_C) == 0x322CBBB8, "Wrong size on UCollectionBookSectionTileWidget_C");
+static_assert(alignof(UCollectionBookSectionTileWidget_C) == 0x000008, "Wrong alignment on UCollectionBookSectionTileWidget_C");
+static_assert(sizeof(UCollectionBookSectionTileWidget_C) == 0x000940, "Wrong size on UCollectionBookSectionTileWidget_C");
 static_assert(offsetof(UCollectionBookSectionTileWidget_C, UberGraphFrame) == 0x000910, "Member 'UCollectionBookSectionTileWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookSectionTileWidget_C, SlotBorder) == 0x000918, "Member 'UCollectionBookSectionTileWidget_C::SlotBorder' has a wrong offset!");
 static_assert(offsetof(UCollectionBookSectionTileWidget_C, NormalTextStyle) == 0x000920, "Member 'UCollectionBookSectionTileWidget_C::NormalTextStyle' has a wrong offset!");

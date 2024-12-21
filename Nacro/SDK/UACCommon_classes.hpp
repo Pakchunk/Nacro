@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Class UACCommon.UACNetComponent
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0090 (0x0180 - 0x00F0)
 class UUACNetComponent final : public UActorComponent
 {
 public:
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<UUACNetComponent>();
 	}
 };
-static_assert(alignof(UUACNetComponent) == 0x11821D80, "Wrong alignment on UUACNetComponent");
-static_assert(sizeof(UUACNetComponent) == 0x11821D80, "Wrong size on UUACNetComponent");
+static_assert(alignof(UUACNetComponent) == 0x000008, "Wrong alignment on UUACNetComponent");
+static_assert(sizeof(UUACNetComponent) == 0x000180, "Wrong size on UUACNetComponent");
 static_assert(offsetof(UUACNetComponent, PlayerID) == 0x0000F0, "Member 'UUACNetComponent::PlayerID' has a wrong offset!");
 
 }

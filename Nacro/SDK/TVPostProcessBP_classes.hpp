@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TVPostProcessBP.TVPostProcessBP_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0180 (0x0508 - 0x0388)
 class ATVPostProcessBP_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class UPostProcessComponent*                  FullScreenTVPPMinusStoreFF;                        // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    Billboard;                                         // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UPostProcessComponent*                  FullScreenTVPPMinusOnlyMaterialModified;           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -171,8 +171,8 @@ public:
 		return GetDefaultObjImpl<ATVPostProcessBP_C>();
 	}
 };
-static_assert(alignof(ATVPostProcessBP_C) == 0x11821D80, "Wrong alignment on ATVPostProcessBP_C");
-static_assert(sizeof(ATVPostProcessBP_C) == 0x11821D80, "Wrong size on ATVPostProcessBP_C");
+static_assert(alignof(ATVPostProcessBP_C) == 0x000008, "Wrong alignment on ATVPostProcessBP_C");
+static_assert(sizeof(ATVPostProcessBP_C) == 0x000508, "Wrong size on ATVPostProcessBP_C");
 static_assert(offsetof(ATVPostProcessBP_C, UberGraphFrame) == 0x000388, "Member 'ATVPostProcessBP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPPMinusStoreFF) == 0x000390, "Member 'ATVPostProcessBP_C::FullScreenTVPPMinusStoreFF' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, Billboard) == 0x000398, "Member 'ATVPostProcessBP_C::Billboard' has a wrong offset!");

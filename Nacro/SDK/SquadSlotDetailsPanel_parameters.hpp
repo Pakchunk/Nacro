@@ -20,13 +20,13 @@ namespace SDK::Params
 {
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.ExecuteUbergraph_SquadSlotDetailsPanel
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0338 (0x0338 - 0x0000)
 struct SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ZeroConstructor, ReferenceParm)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -56,11 +56,11 @@ public:
 	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue2;                  // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x00F0(0x11821D80)()
+	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x00F0(0x0088)()
 	bool                                          CallFunc_TryGetHomebaseSquadData_ReturnValue;      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_17A[0x6];                                      // 0x017A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquadSlot                     CallFunc_Array_Get_Item;                           // 0x0180(0x1182E980)()
+	struct FHomebaseSquadSlot                     CallFunc_Array_Get_Item;                           // 0x0180(0x0060)()
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortItemType                                 CallFunc_Array_Get_Item2;                          // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -80,10 +80,10 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_252[0x6];                                      // 0x0252(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0258(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0258(0x0040)(HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable3;                               // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x02A0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x02A0(0x0040)(HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select2_Default;                            // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x02E8(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          Temp_bool_Variable4;                               // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -95,8 +95,8 @@ public:
 	class UWidget*                                K2Node_Select4_Default;                            // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select5_Default;                            // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel) == 0x1182E980, "Wrong alignment on SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel");
-static_assert(sizeof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel) == 0x1182E980, "Wrong size on SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel");
+static_assert(alignof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel) == 0x000008, "Wrong alignment on SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel");
+static_assert(sizeof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel) == 0x000338, "Wrong size on SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel");
 static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, EntryPoint) == 0x000000, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::EntryPoint' has a wrong offset!");
 static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_MakeArray_Array) == 0x000048, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_MakeArray_Array' has a wrong offset!");
@@ -152,14 +152,14 @@ static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetails
 static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_Select5_Default) == 0x000330, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_Select5_Default' has a wrong offset!");
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature
-// 0x61587A80 (0x61587A80 - 0x0000)
-struct alignas(0x61587A80) SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature) == 0x61587A80, "Wrong alignment on SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature) == 0x61587A80, "Wrong size on SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.UpdateSkillTreeButtonVisibility
@@ -199,7 +199,7 @@ static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, 
 static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, K2Node_Select_Default) == 0x00003A, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.GetRestrictionReasonsAsText
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText final
 {
 public:
@@ -217,18 +217,18 @@ public:
 	uint8                                         Pad_82[0x2];                                       // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Temp_text_Variable3;                               // 0x0088(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0040)(HasGetValueTypeHash)
 	class FText                                   Temp_text_Variable4;                               // 0x00E0(0x0018)()
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortSquadSlottingRestrictionReason           Temp_byte_Variable;                                // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_FA[0x6];                                       // 0x00FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0100(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0118(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0118(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0158(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0168(0x0018)()
 };
-static_assert(alignof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText) == 0x11821D80, "Wrong alignment on SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText");
-static_assert(sizeof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText) == 0x11821D80, "Wrong size on SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText");
+static_assert(alignof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText) == 0x000008, "Wrong alignment on SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText");
+static_assert(sizeof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText) == 0x000180, "Wrong size on SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText");
 static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Reasons) == 0x000000, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Reasons' has a wrong offset!");
 static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Text) == 0x000010, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Text' has a wrong offset!");
 static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Result) == 0x000028, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Result' has a wrong offset!");

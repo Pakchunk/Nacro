@@ -49,12 +49,12 @@ static_assert(sizeof(UFortMediaSubtitlesPlayer) == 0x000058, "Wrong size on UFor
 static_assert(offsetof(UFortMediaSubtitlesPlayer, SourceSubtitles) == 0x000040, "Member 'UFortMediaSubtitlesPlayer::SourceSubtitles' has a wrong offset!");
 
 // Class SubtitlesWidgets.SubtitleDisplay
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x02B0 (0x03C8 - 0x0118)
 class USubtitleDisplay final : public UWidget
 {
 public:
-	struct FSlateFontInfo                         FontInfo;                                          // 0x0118(0x11827900)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           ColorAndOpacity;                                   // 0x0180(0x11821300)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSlateFontInfo                         FontInfo;                                          // 0x0118(0x0068)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           ColorAndOpacity;                                   // 0x0180(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WrapTextAt;                                        // 0x0190(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_194[0x234];                                    // 0x0194(0x0234)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -71,8 +71,8 @@ public:
 		return GetDefaultObjImpl<USubtitleDisplay>();
 	}
 };
-static_assert(alignof(USubtitleDisplay) == 0x11827900, "Wrong alignment on USubtitleDisplay");
-static_assert(sizeof(USubtitleDisplay) == 0x11827900, "Wrong size on USubtitleDisplay");
+static_assert(alignof(USubtitleDisplay) == 0x000008, "Wrong alignment on USubtitleDisplay");
+static_assert(sizeof(USubtitleDisplay) == 0x0003C8, "Wrong size on USubtitleDisplay");
 static_assert(offsetof(USubtitleDisplay, FontInfo) == 0x000118, "Member 'USubtitleDisplay::FontInfo' has a wrong offset!");
 static_assert(offsetof(USubtitleDisplay, ColorAndOpacity) == 0x000180, "Member 'USubtitleDisplay::ColorAndOpacity' has a wrong offset!");
 static_assert(offsetof(USubtitleDisplay, WrapTextAt) == 0x000190, "Member 'USubtitleDisplay::WrapTextAt' has a wrong offset!");

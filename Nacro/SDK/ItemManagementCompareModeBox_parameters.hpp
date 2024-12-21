@@ -17,19 +17,19 @@ namespace SDK::Params
 {
 
 // Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.ExecuteUbergraph_ItemManagementCompareModeBox
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0008(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0008(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue2;      // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox) == 0x1182EB00, "Wrong alignment on ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox");
-static_assert(sizeof(ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox) == 0x1182EB00, "Wrong size on ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox");
+static_assert(alignof(ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox) == 0x000008, "Wrong alignment on ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox");
+static_assert(sizeof(ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox) == 0x000038, "Wrong size on ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox");
 static_assert(offsetof(ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox, EntryPoint) == 0x000000, "Member 'ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox, K2Node_MakeStruct_DataTableRowHandle) == 0x000008, "Member 'ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 static_assert(offsetof(ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'ItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");

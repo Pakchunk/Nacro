@@ -64,8 +64,8 @@ static_assert(sizeof(StatsListWidget_C_OnAddShownAttributeListItem) == 0x000008,
 static_assert(offsetof(StatsListWidget_C_OnAddShownAttributeListItem, AttributeListItemWidget) == 0x000000, "Member 'StatsListWidget_C_OnAddShownAttributeListItem::AttributeListItemWidget' has a wrong offset!");
 
 // Function StatsListWidget.StatsListWidget_C.ToggleClampedValueMessage
-// 0x04BE (0x04BE - 0x0000)
-struct alignas(0x4BE) StatsListWidget_C_ToggleClampedValueMessage final
+// 0x0005 (0x0005 - 0x0000)
+struct StatsListWidget_C_ToggleClampedValueMessage final
 {
 public:
 	bool                                          InShow;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -74,8 +74,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StatsListWidget_C_ToggleClampedValueMessage) == 0x0004BE, "Wrong alignment on StatsListWidget_C_ToggleClampedValueMessage");
-static_assert(sizeof(StatsListWidget_C_ToggleClampedValueMessage) == 0x0004BE, "Wrong size on StatsListWidget_C_ToggleClampedValueMessage");
+static_assert(alignof(StatsListWidget_C_ToggleClampedValueMessage) == 0x000001, "Wrong alignment on StatsListWidget_C_ToggleClampedValueMessage");
+static_assert(sizeof(StatsListWidget_C_ToggleClampedValueMessage) == 0x000005, "Wrong size on StatsListWidget_C_ToggleClampedValueMessage");
 static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, InShow) == 0x000000, "Member 'StatsListWidget_C_ToggleClampedValueMessage::InShow' has a wrong offset!");
 static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, Temp_bool_Variable) == 0x000001, "Member 'StatsListWidget_C_ToggleClampedValueMessage::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, Temp_byte_Variable) == 0x000002, "Member 'StatsListWidget_C_ToggleClampedValueMessage::Temp_byte_Variable' has a wrong offset!");
@@ -83,7 +83,7 @@ static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, Temp_byte_Va
 static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, K2Node_Select_Default) == 0x000004, "Member 'StatsListWidget_C_ToggleClampedValueMessage::K2Node_Select_Default' has a wrong offset!");
 
 // Function StatsListWidget.StatsListWidget_C.AdjustClampCount
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct StatsListWidget_C_AdjustClampCount final
 {
 public:
@@ -95,11 +95,11 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue2;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0018(0x11821C00)()
+	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0018(0x0070)()
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StatsListWidget_C_AdjustClampCount) == 0x11821C00, "Wrong alignment on StatsListWidget_C_AdjustClampCount");
-static_assert(sizeof(StatsListWidget_C_AdjustClampCount) == 0x11821C00, "Wrong size on StatsListWidget_C_AdjustClampCount");
+static_assert(alignof(StatsListWidget_C_AdjustClampCount) == 0x000008, "Wrong alignment on StatsListWidget_C_AdjustClampCount");
+static_assert(sizeof(StatsListWidget_C_AdjustClampCount) == 0x000090, "Wrong size on StatsListWidget_C_AdjustClampCount");
 static_assert(offsetof(StatsListWidget_C_AdjustClampCount, Widget) == 0x000000, "Member 'StatsListWidget_C_AdjustClampCount::Widget' has a wrong offset!");
 static_assert(offsetof(StatsListWidget_C_AdjustClampCount, Add) == 0x000008, "Member 'StatsListWidget_C_AdjustClampCount::Add' has a wrong offset!");
 static_assert(offsetof(StatsListWidget_C_AdjustClampCount, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000009, "Member 'StatsListWidget_C_AdjustClampCount::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");

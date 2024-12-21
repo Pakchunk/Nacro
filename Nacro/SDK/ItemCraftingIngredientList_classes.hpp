@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemCraftingIngredientList.ItemCraftingIngredientList_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x02D0 - 0x02B0)
 class UItemCraftingIngredientList_C final : public UFortItemQuantityListBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           IngredientsList;                                   // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItem*                              ItemRepresented;                                   // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBrushSize                                IconSize;                                          // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -53,8 +53,8 @@ public:
 		return GetDefaultObjImpl<UItemCraftingIngredientList_C>();
 	}
 };
-static_assert(alignof(UItemCraftingIngredientList_C) == 0x322CBBB8, "Wrong alignment on UItemCraftingIngredientList_C");
-static_assert(sizeof(UItemCraftingIngredientList_C) == 0x322CBBB8, "Wrong size on UItemCraftingIngredientList_C");
+static_assert(alignof(UItemCraftingIngredientList_C) == 0x000008, "Wrong alignment on UItemCraftingIngredientList_C");
+static_assert(sizeof(UItemCraftingIngredientList_C) == 0x0002D0, "Wrong size on UItemCraftingIngredientList_C");
 static_assert(offsetof(UItemCraftingIngredientList_C, UberGraphFrame) == 0x0002B0, "Member 'UItemCraftingIngredientList_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemCraftingIngredientList_C, IngredientsList) == 0x0002B8, "Member 'UItemCraftingIngredientList_C::IngredientsList' has a wrong offset!");
 static_assert(offsetof(UItemCraftingIngredientList_C, ItemRepresented) == 0x0002C0, "Member 'UItemCraftingIngredientList_C::ItemRepresented' has a wrong offset!");

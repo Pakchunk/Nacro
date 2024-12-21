@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function XpBoostInfoText.XpBoostInfoText_C.ExecuteUbergraph_XpBoostInfoText
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText final
 {
 public:
@@ -26,11 +26,11 @@ public:
 	TDelegate<void(const struct FFortPublicAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 BoostAmount)>            K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0030(0x11821780)(NoDestructor)
+	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0030(0x0010)(NoDestructor)
 	int32                                         K2Node_CustomEvent_BoostAmount;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText) == 0x11821780, "Wrong alignment on XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText");
-static_assert(sizeof(XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText) == 0x11821780, "Wrong size on XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText");
+static_assert(alignof(XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText) == 0x000008, "Wrong alignment on XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText");
+static_assert(sizeof(XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText) == 0x000048, "Wrong size on XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText");
 static_assert(offsetof(XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText, EntryPoint) == 0x000000, "Member 'XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText::EntryPoint' has a wrong offset!");
 static_assert(offsetof(XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'XpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -50,14 +50,14 @@ static_assert(sizeof(XpBoostInfoText_C_Xp_Boost_Changed) == 0x000004, "Wrong siz
 static_assert(offsetof(XpBoostInfoText_C_Xp_Boost_Changed, BoostAmount) == 0x000000, "Member 'XpBoostInfoText_C_Xp_Boost_Changed::BoostAmount' has a wrong offset!");
 
 // Function XpBoostInfoText.XpBoostInfoText_C.HandleAccountUpdate
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct XpBoostInfoText_C_HandleAccountUpdate final
 {
 public:
-	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x11821780)(Parm, NoDestructor)
+	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x0010)(Parm, NoDestructor)
 };
-static_assert(alignof(XpBoostInfoText_C_HandleAccountUpdate) == 0x11821780, "Wrong alignment on XpBoostInfoText_C_HandleAccountUpdate");
-static_assert(sizeof(XpBoostInfoText_C_HandleAccountUpdate) == 0x11821780, "Wrong size on XpBoostInfoText_C_HandleAccountUpdate");
+static_assert(alignof(XpBoostInfoText_C_HandleAccountUpdate) == 0x000004, "Wrong alignment on XpBoostInfoText_C_HandleAccountUpdate");
+static_assert(sizeof(XpBoostInfoText_C_HandleAccountUpdate) == 0x000010, "Wrong size on XpBoostInfoText_C_HandleAccountUpdate");
 static_assert(offsetof(XpBoostInfoText_C_HandleAccountUpdate, NewInfo) == 0x000000, "Member 'XpBoostInfoText_C_HandleAccountUpdate::NewInfo' has a wrong offset!");
 
 // Function XpBoostInfoText.XpBoostInfoText_C.Update Available Boosts

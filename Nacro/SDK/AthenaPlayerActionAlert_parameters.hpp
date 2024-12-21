@@ -17,8 +17,8 @@ namespace SDK::Params
 {
 
 // Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.ExecuteUbergraph_AthenaPlayerActionAlert
-// 0x2E004D (0x2E004D - 0x0000)
-struct alignas(0x2E004D) AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert final
+// 0x0040 (0x0040 - 0x0000)
+struct AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,8 +36,8 @@ public:
 	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert) == 0x2E004D, "Wrong alignment on AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert");
-static_assert(sizeof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert) == 0x2E004D, "Wrong size on AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert");
+static_assert(alignof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert) == 0x000008, "Wrong alignment on AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert");
+static_assert(sizeof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert) == 0x000040, "Wrong size on AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert");
 static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, EntryPoint) == 0x000000, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, Temp_int_Variable) == 0x000004, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, Temp_int_Variable2) == 0x000008, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::Temp_int_Variable2' has a wrong offset!");

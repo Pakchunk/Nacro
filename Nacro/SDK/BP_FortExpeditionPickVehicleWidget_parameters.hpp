@@ -19,17 +19,17 @@ namespace SDK::Params
 
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.OnVehicleSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature final
+struct alignas(0x08) BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature final
 {
 public:
 	class FName                                   SquadId;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature) == 0x000004, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature");
+static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature) == 0x000008, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature");
 static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature) == 0x000008, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature, SquadId) == 0x000000, "Member 'BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature::SquadId' has a wrong offset!");
 
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget final
 {
 public:
@@ -47,7 +47,7 @@ public:
 	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortExpeditionItem*                    K2Node_Event_InItem;                               // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortExpeditionItemDefinition*          CallFunc_Get_Expedition_Item_Definition_AsFort_Expedition_Item_Definition; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  CallFunc_GetRequiredTags_ReturnValue;              // 0x0050(0x11821C00)()
+	struct FGameplayTagContainer                  CallFunc_GetRequiredTags_ReturnValue;              // 0x0050(0x0020)()
 	class UCommonButton*                          K2Node_CustomEvent_Button2;                        // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_FortExpeditionVehicleTileItemWidget_C* K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget2; // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -55,11 +55,11 @@ public:
 	TDelegate<void(class UCommonButton* Button)>  K2Node_CreateDelegate_OutputDelegate2;             // 0x0088(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
 	class UCommonButton*                          K2Node_CustomEvent_Button;                         // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00B0(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00B0(0x0008)(NoDestructor)
 	TDelegate<void(class UCommonButton* Button)>  K2Node_CreateDelegate_OutputDelegate4;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget) == 0x11821D80, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget");
-static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget) == 0x11821D80, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget");
+static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget) == 0x000008, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget");
+static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget) == 0x0000C8, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget, EntryPoint) == 0x000000, "Member 'BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget, K2Node_ComponentBoundEvent_Widget) == 0x000008, "Member 'BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget::K2Node_ComponentBoundEvent_Widget' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget, K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget) == 0x000010, "Member 'BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget::K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget' has a wrong offset!");
@@ -105,12 +105,12 @@ static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_HandleVehicleButtonH
 
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.HandleVehicleSelected
 // 0x0008 (0x0008 - 0x0000)
-struct BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected final
+struct alignas(0x08) BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected final
 {
 public:
 	class FName                                   SquadId;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected) == 0x000004, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected");
+static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected) == 0x000008, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected");
 static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected) == 0x000008, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected, SquadId) == 0x000000, "Member 'BP_FortExpeditionPickVehicleWidget_C_HandleVehicleSelected::SquadId' has a wrong offset!");
 
@@ -152,18 +152,18 @@ static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_HandleBack, CallFunc
 
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.Setup Input Action Handlers
 // 0x0010 (0x0010 - 0x0000)
-struct BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers final
+struct alignas(0x08) BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers) == 0x000004, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers");
+static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers) == 0x000008, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers");
 static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers) == 0x000010, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BP_FortExpeditionPickVehicleWidget_C_Setup_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.Get Expedition Item Definition
-// 0x320039 (0x320039 - 0x0000)
-struct alignas(0x320039) BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition final
+// 0x0028 (0x0028 - 0x0000)
+struct BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition final
 {
 public:
 	class UFortItem*                              ItemDef;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -172,8 +172,8 @@ public:
 	class UFortExpeditionItemDefinition*          K2Node_DynamicCast_AsFort_Expedition_Item_Definition; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition) == 0x320039, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition");
-static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition) == 0x320039, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition");
+static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition) == 0x000008, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition");
+static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition) == 0x000028, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition, ItemDef) == 0x000000, "Member 'BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition::ItemDef' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition, AsFort_Expedition_Item_Definition) == 0x000008, "Member 'BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition::AsFort_Expedition_Item_Definition' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000010, "Member 'BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
@@ -181,11 +181,11 @@ static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_FortExpeditionPickVehicleWidget_C_Get_Expedition_Item_Definition::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.Determine Available Expedition Squads
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads final
 {
 public:
-	struct FGameplayTagContainer                  RequirementTags;                                   // 0x0000(0x11821C00)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGameplayTagContainer                  RequirementTags;                                   // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -205,8 +205,8 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads) == 0x11821C00, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads");
-static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads) == 0x11821C00, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads");
+static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads) == 0x000008, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads");
+static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads) == 0x000080, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads, RequirementTags) == 0x000000, "Member 'BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads::RequirementTags' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads, Temp_int_Array_Index_Variable) == 0x000020, "Member 'BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'BP_FortExpeditionPickVehicleWidget_C_Determine_Available_Expedition_Squads::Temp_int_Loop_Counter_Variable' has a wrong offset!");

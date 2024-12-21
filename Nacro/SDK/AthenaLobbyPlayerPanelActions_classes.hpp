@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01D8 (0x0410 - 0x0238)
 class UAthenaLobbyPlayerPanelActions_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           BoxActions;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ButtonAddFriend;                                   // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ButtonInviteParty;                                 // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -32,7 +32,7 @@ public:
 	class UIconTextButton_C*                      ViewProfileButton;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      HoveredActionButton;                               // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   OnGadgetsClicked;                                  // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0280(0x11827900)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0280(0x0190)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void OnGadgetsClicked__DelegateSignature();
@@ -70,8 +70,8 @@ public:
 		return GetDefaultObjImpl<UAthenaLobbyPlayerPanelActions_C>();
 	}
 };
-static_assert(alignof(UAthenaLobbyPlayerPanelActions_C) == 0x322CBBB8, "Wrong alignment on UAthenaLobbyPlayerPanelActions_C");
-static_assert(sizeof(UAthenaLobbyPlayerPanelActions_C) == 0x322CBBB8, "Wrong size on UAthenaLobbyPlayerPanelActions_C");
+static_assert(alignof(UAthenaLobbyPlayerPanelActions_C) == 0x000008, "Wrong alignment on UAthenaLobbyPlayerPanelActions_C");
+static_assert(sizeof(UAthenaLobbyPlayerPanelActions_C) == 0x000410, "Wrong size on UAthenaLobbyPlayerPanelActions_C");
 static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, UberGraphFrame) == 0x000238, "Member 'UAthenaLobbyPlayerPanelActions_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, BoxActions) == 0x000240, "Member 'UAthenaLobbyPlayerPanelActions_C::BoxActions' has a wrong offset!");
 static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, ButtonAddFriend) == 0x000248, "Member 'UAthenaLobbyPlayerPanelActions_C::ButtonAddFriend' has a wrong offset!");

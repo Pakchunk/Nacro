@@ -18,13 +18,13 @@ namespace SDK::Params
 {
 
 // Function AthenaKillerPortraitWidget.AthenaKillerPortraitWidget_C.Init
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct AthenaKillerPortraitWidget_C_Init final
 {
 public:
-	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x11821C00)(Parm, OutParm, ReferenceParm)
+	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x0050)(Parm, OutParm, ReferenceParm)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortKillerVisualInfo                  CallFunc_GetKillerVisualInfoFromDeathReport_ReturnValue; // 0x0058(0x1182E980)()
+	struct FFortKillerVisualInfo                  CallFunc_GetKillerVisualInfoFromDeathReport_ReturnValue; // 0x0058(0x00A8)()
 	class AFortPlayerStateAthena*                 CallFunc_GetOwningPlayerState_AsFort_Player_State_Athena; // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasTag_ReturnValue;                       // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasTag_ReturnValue2;                      // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -33,8 +33,8 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x010D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaKillerPortraitWidget_C_Init) == 0x1182E980, "Wrong alignment on AthenaKillerPortraitWidget_C_Init");
-static_assert(sizeof(AthenaKillerPortraitWidget_C_Init) == 0x1182E980, "Wrong size on AthenaKillerPortraitWidget_C_Init");
+static_assert(alignof(AthenaKillerPortraitWidget_C_Init) == 0x000008, "Wrong alignment on AthenaKillerPortraitWidget_C_Init");
+static_assert(sizeof(AthenaKillerPortraitWidget_C_Init) == 0x000110, "Wrong size on AthenaKillerPortraitWidget_C_Init");
 static_assert(offsetof(AthenaKillerPortraitWidget_C_Init, DeathReport) == 0x000000, "Member 'AthenaKillerPortraitWidget_C_Init::DeathReport' has a wrong offset!");
 static_assert(offsetof(AthenaKillerPortraitWidget_C_Init, CallFunc_GetContext_ReturnValue) == 0x000050, "Member 'AthenaKillerPortraitWidget_C_Init::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaKillerPortraitWidget_C_Init, CallFunc_GetKillerVisualInfoFromDeathReport_ReturnValue) == 0x000058, "Member 'AthenaKillerPortraitWidget_C_Init::CallFunc_GetKillerVisualInfoFromDeathReport_ReturnValue' has a wrong offset!");
@@ -47,8 +47,8 @@ static_assert(offsetof(AthenaKillerPortraitWidget_C_Init, CallFunc_BooleanOR_Ret
 static_assert(offsetof(AthenaKillerPortraitWidget_C_Init, CallFunc_BooleanOR_ReturnValue2) == 0x00010D, "Member 'AthenaKillerPortraitWidget_C_Init::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
 
 // Function AthenaKillerPortraitWidget.AthenaKillerPortraitWidget_C.GetOwningPlayerState
-// 0x0172 (0x0172 - 0x0000)
-struct alignas(0x172) AthenaKillerPortraitWidget_C_GetOwningPlayerState final
+// 0x0020 (0x0020 - 0x0000)
+struct AthenaKillerPortraitWidget_C_GetOwningPlayerState final
 {
 public:
 	class AFortPlayerStateAthena*                 AsFort_Player_State_Athena;                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -57,8 +57,8 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaKillerPortraitWidget_C_GetOwningPlayerState) == 0x000172, "Wrong alignment on AthenaKillerPortraitWidget_C_GetOwningPlayerState");
-static_assert(sizeof(AthenaKillerPortraitWidget_C_GetOwningPlayerState) == 0x000172, "Wrong size on AthenaKillerPortraitWidget_C_GetOwningPlayerState");
+static_assert(alignof(AthenaKillerPortraitWidget_C_GetOwningPlayerState) == 0x000008, "Wrong alignment on AthenaKillerPortraitWidget_C_GetOwningPlayerState");
+static_assert(sizeof(AthenaKillerPortraitWidget_C_GetOwningPlayerState) == 0x000020, "Wrong size on AthenaKillerPortraitWidget_C_GetOwningPlayerState");
 static_assert(offsetof(AthenaKillerPortraitWidget_C_GetOwningPlayerState, AsFort_Player_State_Athena) == 0x000000, "Member 'AthenaKillerPortraitWidget_C_GetOwningPlayerState::AsFort_Player_State_Athena' has a wrong offset!");
 static_assert(offsetof(AthenaKillerPortraitWidget_C_GetOwningPlayerState, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'AthenaKillerPortraitWidget_C_GetOwningPlayerState::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaKillerPortraitWidget_C_GetOwningPlayerState, K2Node_DynamicCast_AsFort_Player_State_Athena) == 0x000010, "Member 'AthenaKillerPortraitWidget_C_GetOwningPlayerState::K2Node_DynamicCast_AsFort_Player_State_Athena' has a wrong offset!");

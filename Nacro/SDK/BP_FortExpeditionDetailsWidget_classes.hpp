@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C0 (0x0338 - 0x0278)
 class UBP_FortExpeditionDetailsWidget_C final : public UFortExpeditionDetailsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x0008)(Transient, DuplicateTransient)
 	class UVerticalBox*                           BonusSet;                                          // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_FortExpeditionExpiresWidget_C*      BP_FortExpeditionExpiresWidget;                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_FortExpeditionReturnsWidget_C*      BP_FortExpeditionReturnsWidget;                    // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,7 +47,7 @@ public:
 	class UBP_FortExpeditionOverviewWidget_C*     ParentWidget;                                      // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CancelInputActionName;                             // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UInfoWindow_C*                          RewardInfoWindow;                                  // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDialogExternalLatentActionHandle  WaitingForDialogHandle;                            // 0x0330(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  WaitingForDialogHandle;                            // 0x0330(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_FortExpeditionDetailsWidget(int32 EntryPoint);
@@ -84,8 +84,8 @@ public:
 		return GetDefaultObjImpl<UBP_FortExpeditionDetailsWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionDetailsWidget_C) == 0x322CBBB8, "Wrong alignment on UBP_FortExpeditionDetailsWidget_C");
-static_assert(sizeof(UBP_FortExpeditionDetailsWidget_C) == 0x322CBBB8, "Wrong size on UBP_FortExpeditionDetailsWidget_C");
+static_assert(alignof(UBP_FortExpeditionDetailsWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionDetailsWidget_C");
+static_assert(sizeof(UBP_FortExpeditionDetailsWidget_C) == 0x000338, "Wrong size on UBP_FortExpeditionDetailsWidget_C");
 static_assert(offsetof(UBP_FortExpeditionDetailsWidget_C, UberGraphFrame) == 0x000278, "Member 'UBP_FortExpeditionDetailsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionDetailsWidget_C, BonusSet) == 0x000280, "Member 'UBP_FortExpeditionDetailsWidget_C::BonusSet' has a wrong offset!");
 static_assert(offsetof(UBP_FortExpeditionDetailsWidget_C, BP_FortExpeditionExpiresWidget) == 0x000288, "Member 'UBP_FortExpeditionDetailsWidget_C::BP_FortExpeditionExpiresWidget' has a wrong offset!");

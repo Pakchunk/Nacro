@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_Expedition.FrontEndRewards_Expedition_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x0330 - 0x02C8)
 class UFrontEndRewards_Expedition_C final : public UFortRewardExpeditionWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C8(0x0008)(Transient, DuplicateTransient)
 	class UOverlay*                               OverlayCheck;                                      // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               OverlayFailure;                                    // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               OverlaySuccess;                                    // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 		return GetDefaultObjImpl<UFrontEndRewards_Expedition_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_Expedition_C) == 0x322CBBB8, "Wrong alignment on UFrontEndRewards_Expedition_C");
-static_assert(sizeof(UFrontEndRewards_Expedition_C) == 0x322CBBB8, "Wrong size on UFrontEndRewards_Expedition_C");
+static_assert(alignof(UFrontEndRewards_Expedition_C) == 0x000008, "Wrong alignment on UFrontEndRewards_Expedition_C");
+static_assert(sizeof(UFrontEndRewards_Expedition_C) == 0x000330, "Wrong size on UFrontEndRewards_Expedition_C");
 static_assert(offsetof(UFrontEndRewards_Expedition_C, UberGraphFrame) == 0x0002C8, "Member 'UFrontEndRewards_Expedition_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_Expedition_C, OverlayCheck) == 0x0002D0, "Member 'UFrontEndRewards_Expedition_C::OverlayCheck' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_Expedition_C, OverlayFailure) == 0x0002D8, "Member 'UFrontEndRewards_Expedition_C::OverlayFailure' has a wrong offset!");

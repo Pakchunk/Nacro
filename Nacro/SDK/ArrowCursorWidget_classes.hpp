@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ArrowCursorWidget.ArrowCursorWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0230 - 0x0230)
 class UArrowCursorWidget_C final : public UUserWidget
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UArrowCursorWidget_C>();
 	}
 };
-static_assert(alignof(UArrowCursorWidget_C) == 0x322CBBB8, "Wrong alignment on UArrowCursorWidget_C");
-static_assert(sizeof(UArrowCursorWidget_C) == 0x322CBBB8, "Wrong size on UArrowCursorWidget_C");
+static_assert(alignof(UArrowCursorWidget_C) == 0x000008, "Wrong alignment on UArrowCursorWidget_C");
+static_assert(sizeof(UArrowCursorWidget_C) == 0x000230, "Wrong size on UArrowCursorWidget_C");
 
 }
 

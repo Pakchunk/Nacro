@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TwitchLoginModalWidget.TwitchLoginModalWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0448 - 0x0410)
 class UTwitchLoginModalWidget_C final : public UFortTwitchLoginModalWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      IconTextButton;                                    // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_21;                                          // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UTwitchLoginModalWidget_C>();
 	}
 };
-static_assert(alignof(UTwitchLoginModalWidget_C) == 0x322CBBB8, "Wrong alignment on UTwitchLoginModalWidget_C");
-static_assert(sizeof(UTwitchLoginModalWidget_C) == 0x322CBBB8, "Wrong size on UTwitchLoginModalWidget_C");
+static_assert(alignof(UTwitchLoginModalWidget_C) == 0x000008, "Wrong alignment on UTwitchLoginModalWidget_C");
+static_assert(sizeof(UTwitchLoginModalWidget_C) == 0x000448, "Wrong size on UTwitchLoginModalWidget_C");
 static_assert(offsetof(UTwitchLoginModalWidget_C, UberGraphFrame) == 0x000410, "Member 'UTwitchLoginModalWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTwitchLoginModalWidget_C, IconTextButton) == 0x000418, "Member 'UTwitchLoginModalWidget_C::IconTextButton' has a wrong offset!");
 static_assert(offsetof(UTwitchLoginModalWidget_C, Image_0) == 0x000420, "Member 'UTwitchLoginModalWidget_C::Image_0' has a wrong offset!");

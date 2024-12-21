@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function TooltipHeroBonuses.TooltipHeroBonuses_C.ExecuteUbergraph_TooltipHeroBonuses
-// 0x60642940 (0x60642940 - 0x0000)
-struct alignas(0x60642940) TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses final
+// 0x0140 (0x0140 - 0x0000)
+struct TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -34,13 +34,14 @@ public:
 	class ULegacyPerkWidget_C*                    CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortUIPerk                            CallFunc_Array_Get_Item;                           // 0x0030(0x1182E980)()
+	struct FFortUIPerk                            CallFunc_Array_Get_Item;                           // 0x0030(0x0088)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_BD[0x3];                                       // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable2;                                // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00CC(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x00CC(0x0010)(NoDestructor)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue2;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortUIPerk>                    CallFunc_GetSupportBonusPerks_SupportBonusPerks;   // 0x00F0(0x0010)(ZeroConstructor, ReferenceParm)
@@ -54,10 +55,10 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable2;                              // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select2_Default;                            // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x012C(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x012C(0x0010)(NoDestructor)
 };
-static_assert(alignof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses) == 0x60642940, "Wrong alignment on TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses");
-static_assert(sizeof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses) == 0x60642940, "Wrong size on TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses");
+static_assert(alignof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses) == 0x000008, "Wrong alignment on TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses");
+static_assert(sizeof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses) == 0x000140, "Wrong size on TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses");
 static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, EntryPoint) == 0x000000, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_bool_Variable) == 0x000004, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_int_Loop_Counter_Variable' has a wrong offset!");

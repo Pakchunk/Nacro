@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Base-XS-Blue-StatLesser.TextStyle-Base-XS-Blue-StatLesser_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C final : public UTextStyleMinusBaseMinusXSMinusBlueMinusStatNormal_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C");
-static_assert(sizeof(UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C");
+static_assert(alignof(UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C) == 0x000008, "Wrong alignment on UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C");
+static_assert(sizeof(UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C) == 0x0000D0, "Wrong size on UTextStyleMinusBaseMinusXSMinusBlueMinusStatLesser_C");
 
 }
 

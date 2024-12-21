@@ -74,23 +74,23 @@ enum class EConsoleAuthLinkState : uint8
 };
 
 // ScriptStruct Account.WebEnvUrl
-// 0x11824A80 (0x11824A80 - 0x0000)
-struct alignas(0x11824A80) FWebEnvUrl final
+// 0x0030 (0x0030 - 0x0000)
+struct FWebEnvUrl final
 {
 public:
 	class FString                                 URL;                                               // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 RedirectUrl;                                       // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Environment;                                       // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWebEnvUrl) == 0x11824A80, "Wrong alignment on FWebEnvUrl");
-static_assert(sizeof(FWebEnvUrl) == 0x11824A80, "Wrong size on FWebEnvUrl");
+static_assert(alignof(FWebEnvUrl) == 0x000008, "Wrong alignment on FWebEnvUrl");
+static_assert(sizeof(FWebEnvUrl) == 0x000030, "Wrong size on FWebEnvUrl");
 static_assert(offsetof(FWebEnvUrl, URL) == 0x000000, "Member 'FWebEnvUrl::URL' has a wrong offset!");
 static_assert(offsetof(FWebEnvUrl, RedirectUrl) == 0x000010, "Member 'FWebEnvUrl::RedirectUrl' has a wrong offset!");
 static_assert(offsetof(FWebEnvUrl, Environment) == 0x000020, "Member 'FWebEnvUrl::Environment' has a wrong offset!");
 
 // ScriptStruct Account.OnlineAccountTexts_FailedLoginConsole
-// 0x1182E980 (0x1182E980 - 0x0000)
-struct alignas(0x1182E980) FOnlineAccountTexts_FailedLoginConsole final
+// 0x0138 (0x0138 - 0x0000)
+struct FOnlineAccountTexts_FailedLoginConsole final
 {
 public:
 	class FText                                   AgeRestriction;                                    // 0x0000(0x0018)(Edit, NativeAccessSpecifierPublic)
@@ -107,8 +107,8 @@ public:
 	class FText                                   UnableToStartPrivCheck;                            // 0x0108(0x0018)(Edit, NativeAccessSpecifierPublic)
 	class FText                                   UnexpectedError;                                   // 0x0120(0x0018)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FOnlineAccountTexts_FailedLoginConsole) == 0x1182E980, "Wrong alignment on FOnlineAccountTexts_FailedLoginConsole");
-static_assert(sizeof(FOnlineAccountTexts_FailedLoginConsole) == 0x1182E980, "Wrong size on FOnlineAccountTexts_FailedLoginConsole");
+static_assert(alignof(FOnlineAccountTexts_FailedLoginConsole) == 0x000008, "Wrong alignment on FOnlineAccountTexts_FailedLoginConsole");
+static_assert(sizeof(FOnlineAccountTexts_FailedLoginConsole) == 0x000138, "Wrong size on FOnlineAccountTexts_FailedLoginConsole");
 static_assert(offsetof(FOnlineAccountTexts_FailedLoginConsole, AgeRestriction) == 0x000000, "Member 'FOnlineAccountTexts_FailedLoginConsole::AgeRestriction' has a wrong offset!");
 static_assert(offsetof(FOnlineAccountTexts_FailedLoginConsole, Generic) == 0x000018, "Member 'FOnlineAccountTexts_FailedLoginConsole::Generic' has a wrong offset!");
 static_assert(offsetof(FOnlineAccountTexts_FailedLoginConsole, MissingAuthAssociation) == 0x000030, "Member 'FOnlineAccountTexts_FailedLoginConsole::MissingAuthAssociation' has a wrong offset!");
@@ -124,7 +124,7 @@ static_assert(offsetof(FOnlineAccountTexts_FailedLoginConsole, UnableToStartPriv
 static_assert(offsetof(FOnlineAccountTexts_FailedLoginConsole, UnexpectedError) == 0x000120, "Member 'FOnlineAccountTexts_FailedLoginConsole::UnexpectedError' has a wrong offset!");
 
 // ScriptStruct Account.OnlineAccountTexts
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x07B0 (0x07B0 - 0x0000)
 struct FOnlineAccountTexts final
 {
 public:
@@ -197,10 +197,10 @@ public:
 	class FText                                   WaitingRoomError;                                  // 0x0630(0x0018)(Edit, NativeAccessSpecifierPublic)
 	class FText                                   WaitingRoomFailure;                                // 0x0648(0x0018)(Edit, NativeAccessSpecifierPublic)
 	class FText                                   WaitingRoomWaiting;                                // 0x0660(0x0018)(Edit, NativeAccessSpecifierPublic)
-	struct FOnlineAccountTexts_FailedLoginConsole FailedLoginConsole;                                // 0x0678(0x1182E980)(Edit, NativeAccessSpecifierPublic)
+	struct FOnlineAccountTexts_FailedLoginConsole FailedLoginConsole;                                // 0x0678(0x0138)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FOnlineAccountTexts) == 0x1182E980, "Wrong alignment on FOnlineAccountTexts");
-static_assert(sizeof(FOnlineAccountTexts) == 0x1182E980, "Wrong size on FOnlineAccountTexts");
+static_assert(alignof(FOnlineAccountTexts) == 0x000008, "Wrong alignment on FOnlineAccountTexts");
+static_assert(sizeof(FOnlineAccountTexts) == 0x0007B0, "Wrong size on FOnlineAccountTexts");
 static_assert(offsetof(FOnlineAccountTexts, AllGiftCodesUsed) == 0x000000, "Member 'FOnlineAccountTexts::AllGiftCodesUsed' has a wrong offset!");
 static_assert(offsetof(FOnlineAccountTexts, AssociateConsoleAuth) == 0x000018, "Member 'FOnlineAccountTexts::AssociateConsoleAuth' has a wrong offset!");
 static_assert(offsetof(FOnlineAccountTexts, AutoLoginFailed) == 0x000030, "Member 'FOnlineAccountTexts::AutoLoginFailed' has a wrong offset!");
@@ -273,16 +273,16 @@ static_assert(offsetof(FOnlineAccountTexts, WaitingRoomWaiting) == 0x000660, "Me
 static_assert(offsetof(FOnlineAccountTexts, FailedLoginConsole) == 0x000678, "Member 'FOnlineAccountTexts::FailedLoginConsole' has a wrong offset!");
 
 // ScriptStruct Account.GiftMessage
-// 0x11824A80 (0x11824A80 - 0x0000)
-struct alignas(0x11824A80) FGiftMessage final
+// 0x0030 (0x0030 - 0x0000)
+struct FGiftMessage final
 {
 public:
 	class FString                                 GiftCode;                                          // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 SenderName;                                        // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_20[0x10];                                      // 0x0020(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGiftMessage) == 0x11824A80, "Wrong alignment on FGiftMessage");
-static_assert(sizeof(FGiftMessage) == 0x11824A80, "Wrong size on FGiftMessage");
+static_assert(alignof(FGiftMessage) == 0x000008, "Wrong alignment on FGiftMessage");
+static_assert(sizeof(FGiftMessage) == 0x000030, "Wrong size on FGiftMessage");
 static_assert(offsetof(FGiftMessage, GiftCode) == 0x000000, "Member 'FGiftMessage::GiftCode' has a wrong offset!");
 static_assert(offsetof(FGiftMessage, SenderName) == 0x000010, "Member 'FGiftMessage::SenderName' has a wrong offset!");
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Targeting3PCamera.Targeting3PCamera_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0128 - 0x0128)
 class UTargeting3PCamera_C final : public UFort3PCam_Targeting
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTargeting3PCamera_C>();
 	}
 };
-static_assert(alignof(UTargeting3PCamera_C) == 0x11821D80, "Wrong alignment on UTargeting3PCamera_C");
-static_assert(sizeof(UTargeting3PCamera_C) == 0x11821D80, "Wrong size on UTargeting3PCamera_C");
+static_assert(alignof(UTargeting3PCamera_C) == 0x000008, "Wrong alignment on UTargeting3PCamera_C");
+static_assert(sizeof(UTargeting3PCamera_C) == 0x000128, "Wrong size on UTargeting3PCamera_C");
 
 }
 

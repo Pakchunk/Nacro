@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBarToolTip.XpBarToolTip_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00C8 (0x0300 - 0x0238)
 class UXpBarToolTip_C final : public UCommonUserWidget
 {
 public:
@@ -54,8 +54,8 @@ public:
 		return GetDefaultObjImpl<UXpBarToolTip_C>();
 	}
 };
-static_assert(alignof(UXpBarToolTip_C) == 0x322CBBB8, "Wrong alignment on UXpBarToolTip_C");
-static_assert(sizeof(UXpBarToolTip_C) == 0x322CBBB8, "Wrong size on UXpBarToolTip_C");
+static_assert(alignof(UXpBarToolTip_C) == 0x000008, "Wrong alignment on UXpBarToolTip_C");
+static_assert(sizeof(UXpBarToolTip_C) == 0x000300, "Wrong size on UXpBarToolTip_C");
 static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_0) == 0x000238, "Member 'UXpBarToolTip_C::CommonTextBlock_0' has a wrong offset!");
 static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_2) == 0x000240, "Member 'UXpBarToolTip_C::CommonTextBlock_2' has a wrong offset!");
 static_assert(offsetof(UXpBarToolTip_C, CommonTextBlock_29) == 0x000248, "Member 'UXpBarToolTip_C::CommonTextBlock_29' has a wrong offset!");

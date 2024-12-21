@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SquadIcon.SquadIcon_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0250 - 0x0250)
 class USquadIcon_C final : public UFortSquadIcon
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<USquadIcon_C>();
 	}
 };
-static_assert(alignof(USquadIcon_C) == 0x322CBBB8, "Wrong alignment on USquadIcon_C");
-static_assert(sizeof(USquadIcon_C) == 0x322CBBB8, "Wrong size on USquadIcon_C");
+static_assert(alignof(USquadIcon_C) == 0x000008, "Wrong alignment on USquadIcon_C");
+static_assert(sizeof(USquadIcon_C) == 0x000250, "Wrong size on USquadIcon_C");
 
 }
 

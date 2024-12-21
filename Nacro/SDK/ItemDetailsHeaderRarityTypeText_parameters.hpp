@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function ItemDetailsHeaderRarityTypeText.ItemDetailsHeaderRarityTypeText_C.ExecuteUbergraph_ItemDetailsHeaderRarityTypeText
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText final
 {
 public:
@@ -28,18 +28,18 @@ public:
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_ToText_ReturnValue;                       // 0x0008(0x0018)()
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0020(0x11821780)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x11821D80)(HasGetValueTypeHash)
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0020(0x0080)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E0(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00F0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00F0(0x0028)()
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0118(0x0018)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0130(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0130(0x0028)()
 	class UFortItemDefinition*                    CallFunc_GetSchematicCraftingResultBP_ReturnValue; // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortWeaponItemDefinition*              K2Node_DynamicCast_AsFort_Weapon_Item_Definition;  // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText) == 0x322CBBB8, "Wrong alignment on ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText");
-static_assert(sizeof(ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText) == 0x322CBBB8, "Wrong size on ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText");
+static_assert(alignof(ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText) == 0x000008, "Wrong alignment on ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText");
+static_assert(sizeof(ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText) == 0x000170, "Wrong size on ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText");
 static_assert(offsetof(ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText, EntryPoint) == 0x000000, "Member 'ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText, CallFunc_GetType_ReturnValue) == 0x000004, "Member 'ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText::CallFunc_GetType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText, CallFunc_GetRarity_ReturnValue) == 0x000005, "Member 'ItemDetailsHeaderRarityTypeText_C_ExecuteUbergraph_ItemDetailsHeaderRarityTypeText::CallFunc_GetRarity_ReturnValue' has a wrong offset!");

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "SurvivorBadgeTypes_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "EnumEventWorldItemDrop_structs.hpp"
-#include "SurvivorBadgeTypes_structs.hpp"
 
 
 namespace SDK

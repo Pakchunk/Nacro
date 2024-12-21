@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AlterationsWidget.AlterationsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0088 (0x02E8 - 0x0260)
 class UAlterationsWidget_C final : public UFortAlterationsWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UAlterationWidget_C*                    AlterationWidget;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAlterationWidget_C*                    AlterationWidget_2;                                // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAlterationWidget_C*                    AlterationWidget_3;                                // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,10 +42,10 @@ public:
 	bool                                          FirstLockedComplete;                               // 0x02BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	EFortBrushSize                                IconSize;                                          // 0x02BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_2BE[0x2];                                      // 0x02BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                RowPadding;                                        // 0x02C0(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                RowPadding;                                        // 0x02C0(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	bool                                          bUseLargeFormatNameOnly;                           // 0x02D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_2D1[0x3];                                      // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                Description_Padding;                               // 0x02D4(0x322CBBB8)(Edit, BlueprintVisible, NoDestructor)
+	struct FMargin                                Description_Padding;                               // 0x02D4(0x0010)(Edit, BlueprintVisible, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AlterationsWidget(int32 EntryPoint);
@@ -65,8 +65,8 @@ public:
 		return GetDefaultObjImpl<UAlterationsWidget_C>();
 	}
 };
-static_assert(alignof(UAlterationsWidget_C) == 0x322CBBB8, "Wrong alignment on UAlterationsWidget_C");
-static_assert(sizeof(UAlterationsWidget_C) == 0x322CBBB8, "Wrong size on UAlterationsWidget_C");
+static_assert(alignof(UAlterationsWidget_C) == 0x000008, "Wrong alignment on UAlterationsWidget_C");
+static_assert(sizeof(UAlterationsWidget_C) == 0x0002E8, "Wrong size on UAlterationsWidget_C");
 static_assert(offsetof(UAlterationsWidget_C, UberGraphFrame) == 0x000260, "Member 'UAlterationsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAlterationsWidget_C, AlterationWidget) == 0x000268, "Member 'UAlterationsWidget_C::AlterationWidget' has a wrong offset!");
 static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_2) == 0x000270, "Member 'UAlterationsWidget_C::AlterationWidget_2' has a wrong offset!");

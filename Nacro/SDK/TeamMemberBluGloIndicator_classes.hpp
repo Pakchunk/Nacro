@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UTeamMemberBluGloIndicator_C final : public UCommonUserWidget
 {
 public:
@@ -39,8 +39,8 @@ public:
 		return GetDefaultObjImpl<UTeamMemberBluGloIndicator_C>();
 	}
 };
-static_assert(alignof(UTeamMemberBluGloIndicator_C) == 0x322CBBB8, "Wrong alignment on UTeamMemberBluGloIndicator_C");
-static_assert(sizeof(UTeamMemberBluGloIndicator_C) == 0x322CBBB8, "Wrong size on UTeamMemberBluGloIndicator_C");
+static_assert(alignof(UTeamMemberBluGloIndicator_C) == 0x000008, "Wrong alignment on UTeamMemberBluGloIndicator_C");
+static_assert(sizeof(UTeamMemberBluGloIndicator_C) == 0x000250, "Wrong size on UTeamMemberBluGloIndicator_C");
 static_assert(offsetof(UTeamMemberBluGloIndicator_C, Image_0) == 0x000238, "Member 'UTeamMemberBluGloIndicator_C::Image_0' has a wrong offset!");
 static_assert(offsetof(UTeamMemberBluGloIndicator_C, NumericTextBluGloCount) == 0x000240, "Member 'UTeamMemberBluGloIndicator_C::NumericTextBluGloCount' has a wrong offset!");
 static_assert(offsetof(UTeamMemberBluGloIndicator_C, CurrentPlayer) == 0x000248, "Member 'UTeamMemberBluGloIndicator_C::CurrentPlayer' has a wrong offset!");

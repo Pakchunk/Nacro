@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AlterationWidget.AlterationWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00F0 (0x0340 - 0x0250)
 class UAlterationWidget_C final : public UFortAlterationWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0250(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       AlterationDescription;                             // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       AlterationName;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       AlterationShortDescription;                        // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -81,8 +81,8 @@ public:
 		return GetDefaultObjImpl<UAlterationWidget_C>();
 	}
 };
-static_assert(alignof(UAlterationWidget_C) == 0x322CBBB8, "Wrong alignment on UAlterationWidget_C");
-static_assert(sizeof(UAlterationWidget_C) == 0x322CBBB8, "Wrong size on UAlterationWidget_C");
+static_assert(alignof(UAlterationWidget_C) == 0x000008, "Wrong alignment on UAlterationWidget_C");
+static_assert(sizeof(UAlterationWidget_C) == 0x000340, "Wrong size on UAlterationWidget_C");
 static_assert(offsetof(UAlterationWidget_C, UberGraphFrame) == 0x000250, "Member 'UAlterationWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAlterationWidget_C, AlterationDescription) == 0x000258, "Member 'UAlterationWidget_C::AlterationDescription' has a wrong offset!");
 static_assert(offsetof(UAlterationWidget_C, AlterationName) == 0x000260, "Member 'UAlterationWidget_C::AlterationName' has a wrong offset!");

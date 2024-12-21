@@ -28,17 +28,17 @@ static_assert(sizeof(FrontEndRewardWrapperWidget_C_ExecuteUbergraph_FrontEndRewa
 static_assert(offsetof(FrontEndRewardWrapperWidget_C_ExecuteUbergraph_FrontEndRewardWrapperWidget, EntryPoint) == 0x000000, "Member 'FrontEndRewardWrapperWidget_C_ExecuteUbergraph_FrontEndRewardWrapperWidget::EntryPoint' has a wrong offset!");
 
 // Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.AddToWrapper
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct FrontEndRewardWrapperWidget_C_AddToWrapper final
 {
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   DisplayName;                                       // 0x0008(0x0018)(Parm)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0020(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0020(0x0010)(NoDestructor)
 	class UOverlaySlot*                           CallFunc_AddChildToOverlay_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewardWrapperWidget_C_AddToWrapper) == 0x322CBBB8, "Wrong alignment on FrontEndRewardWrapperWidget_C_AddToWrapper");
-static_assert(sizeof(FrontEndRewardWrapperWidget_C_AddToWrapper) == 0x322CBBB8, "Wrong size on FrontEndRewardWrapperWidget_C_AddToWrapper");
+static_assert(alignof(FrontEndRewardWrapperWidget_C_AddToWrapper) == 0x000008, "Wrong alignment on FrontEndRewardWrapperWidget_C_AddToWrapper");
+static_assert(sizeof(FrontEndRewardWrapperWidget_C_AddToWrapper) == 0x000038, "Wrong size on FrontEndRewardWrapperWidget_C_AddToWrapper");
 static_assert(offsetof(FrontEndRewardWrapperWidget_C_AddToWrapper, Widget) == 0x000000, "Member 'FrontEndRewardWrapperWidget_C_AddToWrapper::Widget' has a wrong offset!");
 static_assert(offsetof(FrontEndRewardWrapperWidget_C_AddToWrapper, DisplayName) == 0x000008, "Member 'FrontEndRewardWrapperWidget_C_AddToWrapper::DisplayName' has a wrong offset!");
 static_assert(offsetof(FrontEndRewardWrapperWidget_C_AddToWrapper, K2Node_MakeStruct_Margin) == 0x000020, "Member 'FrontEndRewardWrapperWidget_C_AddToWrapper::K2Node_MakeStruct_Margin' has a wrong offset!");

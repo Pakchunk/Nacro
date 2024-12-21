@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass GamepadMappingInfo.GamepadMappingInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0128 (0x0360 - 0x0238)
 class UGamepadMappingInfo_C final : public UCommonUserWidget
 {
 public:
@@ -77,8 +77,8 @@ public:
 		return GetDefaultObjImpl<UGamepadMappingInfo_C>();
 	}
 };
-static_assert(alignof(UGamepadMappingInfo_C) == 0x322CBBB8, "Wrong alignment on UGamepadMappingInfo_C");
-static_assert(sizeof(UGamepadMappingInfo_C) == 0x322CBBB8, "Wrong size on UGamepadMappingInfo_C");
+static_assert(alignof(UGamepadMappingInfo_C) == 0x000008, "Wrong alignment on UGamepadMappingInfo_C");
+static_assert(sizeof(UGamepadMappingInfo_C) == 0x000360, "Wrong size on UGamepadMappingInfo_C");
 static_assert(offsetof(UGamepadMappingInfo_C, Image_Gamepad) == 0x000238, "Member 'UGamepadMappingInfo_C::Image_Gamepad' has a wrong offset!");
 static_assert(offsetof(UGamepadMappingInfo_C, Image_Gamepad_Buttons) == 0x000240, "Member 'UGamepadMappingInfo_C::Image_Gamepad_Buttons' has a wrong offset!");
 static_assert(offsetof(UGamepadMappingInfo_C, Image_Mode) == 0x000248, "Member 'UGamepadMappingInfo_C::Image_Mode' has a wrong offset!");

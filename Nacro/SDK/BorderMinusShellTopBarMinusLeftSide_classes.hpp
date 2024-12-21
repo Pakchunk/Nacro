@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-ShellTopBar-LeftSide.Border-ShellTopBar-LeftSide_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusShellTopBarMinusLeftSide_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusShellTopBarMinusLeftSide_C>();
 	}
 };
-static_assert(alignof(UBorderMinusShellTopBarMinusLeftSide_C) == 0x11827900, "Wrong alignment on UBorderMinusShellTopBarMinusLeftSide_C");
-static_assert(sizeof(UBorderMinusShellTopBarMinusLeftSide_C) == 0x11827900, "Wrong size on UBorderMinusShellTopBarMinusLeftSide_C");
+static_assert(alignof(UBorderMinusShellTopBarMinusLeftSide_C) == 0x000008, "Wrong alignment on UBorderMinusShellTopBarMinusLeftSide_C");
+static_assert(sizeof(UBorderMinusShellTopBarMinusLeftSide_C) == 0x0000B8, "Wrong size on UBorderMinusShellTopBarMinusLeftSide_C");
 
 }
 

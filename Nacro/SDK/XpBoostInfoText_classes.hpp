@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass XpBoostInfoText.XpBoostInfoText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UXpBoostInfoText_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       BoostText;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             ScrollBox_Description;                             // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UXpBoostInfoText_C>();
 	}
 };
-static_assert(alignof(UXpBoostInfoText_C) == 0x322CBBB8, "Wrong alignment on UXpBoostInfoText_C");
-static_assert(sizeof(UXpBoostInfoText_C) == 0x322CBBB8, "Wrong size on UXpBoostInfoText_C");
+static_assert(alignof(UXpBoostInfoText_C) == 0x000008, "Wrong alignment on UXpBoostInfoText_C");
+static_assert(sizeof(UXpBoostInfoText_C) == 0x000250, "Wrong size on UXpBoostInfoText_C");
 static_assert(offsetof(UXpBoostInfoText_C, UberGraphFrame) == 0x000238, "Member 'UXpBoostInfoText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UXpBoostInfoText_C, BoostText) == 0x000240, "Member 'UXpBoostInfoText_C::BoostText' has a wrong offset!");
 static_assert(offsetof(UXpBoostInfoText_C, ScrollBox_Description) == 0x000248, "Member 'UXpBoostInfoText_C::ScrollBox_Description' has a wrong offset!");

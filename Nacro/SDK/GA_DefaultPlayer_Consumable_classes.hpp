@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_Consumable.GA_DefaultPlayer_Consumable_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0010 (0x0A50 - 0x0A40)
 class UGA_DefaultPlayer_Consumable_C final : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
 	class UAnimMontage*                           EatMontage;                                        // 0x0A48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UGA_DefaultPlayer_Consumable_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_Consumable_C) == 0x1182EB00, "Wrong alignment on UGA_DefaultPlayer_Consumable_C");
-static_assert(sizeof(UGA_DefaultPlayer_Consumable_C) == 0x1182EB00, "Wrong size on UGA_DefaultPlayer_Consumable_C");
+static_assert(alignof(UGA_DefaultPlayer_Consumable_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_Consumable_C");
+static_assert(sizeof(UGA_DefaultPlayer_Consumable_C) == 0x000A50, "Wrong size on UGA_DefaultPlayer_Consumable_C");
 static_assert(offsetof(UGA_DefaultPlayer_Consumable_C, UberGraphFrame) == 0x000A40, "Member 'UGA_DefaultPlayer_Consumable_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UGA_DefaultPlayer_Consumable_C, EatMontage) == 0x000A48, "Member 'UGA_DefaultPlayer_Consumable_C::EatMontage' has a wrong offset!");
 

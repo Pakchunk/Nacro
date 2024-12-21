@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaQuickBarSlot.AthenaQuickBarSlot_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0378 - 0x0378)
 class UAthenaQuickBarSlot_C final : public UQuickbarSlot_C
 {
 public:
@@ -34,8 +34,8 @@ public:
 		return GetDefaultObjImpl<UAthenaQuickBarSlot_C>();
 	}
 };
-static_assert(alignof(UAthenaQuickBarSlot_C) == 0x322CBBB8, "Wrong alignment on UAthenaQuickBarSlot_C");
-static_assert(sizeof(UAthenaQuickBarSlot_C) == 0x322CBBB8, "Wrong size on UAthenaQuickBarSlot_C");
+static_assert(alignof(UAthenaQuickBarSlot_C) == 0x000008, "Wrong alignment on UAthenaQuickBarSlot_C");
+static_assert(sizeof(UAthenaQuickBarSlot_C) == 0x000378, "Wrong size on UAthenaQuickBarSlot_C");
 
 }
 

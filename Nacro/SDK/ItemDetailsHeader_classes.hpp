@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemDetailsHeader.ItemDetailsHeader_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0110 (0x03A0 - 0x0290)
 class UItemDetailsHeader_C final : public UFortItemDetailsHostPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(Transient, DuplicateTransient)
 	class UFortItemCategoryIndicator*             CategoryIndicator;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortEvolveIndicator*                   EvolveIndicator;                                   // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UNamedSlot*                             ExtraIndicatorSlot;                                // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -40,7 +40,7 @@ public:
 	class UFortTierIndicator*                     TierIndicator;                                     // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortUpgradeIndicator*                  UpgradeIndicator;                                  // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               RarityBorderMID;                                   // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortRarityItemData                    RarityData;                                        // 0x0310(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortRarityItemData                    RarityData;                                        // 0x0310(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UMaterialInstanceDynamic*               Level_Bar_MID;                                     // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Show_New_System;                                   // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -63,8 +63,8 @@ public:
 		return GetDefaultObjImpl<UItemDetailsHeader_C>();
 	}
 };
-static_assert(alignof(UItemDetailsHeader_C) == 0x322CBBB8, "Wrong alignment on UItemDetailsHeader_C");
-static_assert(sizeof(UItemDetailsHeader_C) == 0x322CBBB8, "Wrong size on UItemDetailsHeader_C");
+static_assert(alignof(UItemDetailsHeader_C) == 0x000008, "Wrong alignment on UItemDetailsHeader_C");
+static_assert(sizeof(UItemDetailsHeader_C) == 0x0003A0, "Wrong size on UItemDetailsHeader_C");
 static_assert(offsetof(UItemDetailsHeader_C, UberGraphFrame) == 0x000290, "Member 'UItemDetailsHeader_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemDetailsHeader_C, CategoryIndicator) == 0x000298, "Member 'UItemDetailsHeader_C::CategoryIndicator' has a wrong offset!");
 static_assert(offsetof(UItemDetailsHeader_C, EvolveIndicator) == 0x0002A0, "Member 'UItemDetailsHeader_C::EvolveIndicator' has a wrong offset!");

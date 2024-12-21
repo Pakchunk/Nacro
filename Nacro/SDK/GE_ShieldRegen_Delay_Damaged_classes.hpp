@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GE_ShieldRegen_Delay_Damaged.GE_ShieldRegen_Delay_Damaged_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x0660 - 0x0660)
 class UGE_ShieldRegen_Delay_Damaged_C final : public UGameplayEffect
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UGE_ShieldRegen_Delay_Damaged_C>();
 	}
 };
-static_assert(alignof(UGE_ShieldRegen_Delay_Damaged_C) == 0x1182E980, "Wrong alignment on UGE_ShieldRegen_Delay_Damaged_C");
-static_assert(sizeof(UGE_ShieldRegen_Delay_Damaged_C) == 0x1182E980, "Wrong size on UGE_ShieldRegen_Delay_Damaged_C");
+static_assert(alignof(UGE_ShieldRegen_Delay_Damaged_C) == 0x000010, "Wrong alignment on UGE_ShieldRegen_Delay_Damaged_C");
+static_assert(sizeof(UGE_ShieldRegen_Delay_Damaged_C) == 0x000660, "Wrong size on UGE_ShieldRegen_Delay_Damaged_C");
 
 }
 

@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBarTopIcon.CollectionBarTopIcon_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00A0 (0x02D8 - 0x0238)
 class UCollectionBarTopIcon_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Icon;                                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            IconBrush;                                         // 0x0248(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            IconBrush;                                         // 0x0248(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_CollectionBarTopIcon(int32 EntryPoint);
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBarTopIcon_C>();
 	}
 };
-static_assert(alignof(UCollectionBarTopIcon_C) == 0x322CBBB8, "Wrong alignment on UCollectionBarTopIcon_C");
-static_assert(sizeof(UCollectionBarTopIcon_C) == 0x322CBBB8, "Wrong size on UCollectionBarTopIcon_C");
+static_assert(alignof(UCollectionBarTopIcon_C) == 0x000008, "Wrong alignment on UCollectionBarTopIcon_C");
+static_assert(sizeof(UCollectionBarTopIcon_C) == 0x0002D8, "Wrong size on UCollectionBarTopIcon_C");
 static_assert(offsetof(UCollectionBarTopIcon_C, UberGraphFrame) == 0x000238, "Member 'UCollectionBarTopIcon_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBarTopIcon_C, Icon) == 0x000240, "Member 'UCollectionBarTopIcon_C::Icon' has a wrong offset!");
 static_assert(offsetof(UCollectionBarTopIcon_C, IconBrush) == 0x000248, "Member 'UCollectionBarTopIcon_C::IconBrush' has a wrong offset!");

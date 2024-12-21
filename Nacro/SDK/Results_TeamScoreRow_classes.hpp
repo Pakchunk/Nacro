@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_TeamScoreRow.Results_TeamScoreRow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00B0 (0x02E8 - 0x0238)
 class UResults_TeamScoreRow_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_SkipToFinalState;                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Absorb;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UResults_PlayerScoreBox_C*              Score1;                                            // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -73,8 +73,8 @@ public:
 		return GetDefaultObjImpl<UResults_TeamScoreRow_C>();
 	}
 };
-static_assert(alignof(UResults_TeamScoreRow_C) == 0x322CBBB8, "Wrong alignment on UResults_TeamScoreRow_C");
-static_assert(sizeof(UResults_TeamScoreRow_C) == 0x322CBBB8, "Wrong size on UResults_TeamScoreRow_C");
+static_assert(alignof(UResults_TeamScoreRow_C) == 0x000008, "Wrong alignment on UResults_TeamScoreRow_C");
+static_assert(sizeof(UResults_TeamScoreRow_C) == 0x0002E8, "Wrong size on UResults_TeamScoreRow_C");
 static_assert(offsetof(UResults_TeamScoreRow_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeamScoreRow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_TeamScoreRow_C, Anim_SkipToFinalState) == 0x000240, "Member 'UResults_TeamScoreRow_C::Anim_SkipToFinalState' has a wrong offset!");
 static_assert(offsetof(UResults_TeamScoreRow_C, Anim_Absorb) == 0x000248, "Member 'UResults_TeamScoreRow_C::Anim_Absorb' has a wrong offset!");

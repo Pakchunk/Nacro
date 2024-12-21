@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LeaderboardRowWidget.LeaderboardRowWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x08E8 - 0x08B0)
 class ULeaderboardRowWidget_C final : public UFortLeaderboardEntryWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08B0(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_4;                                           // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               QuestIconOverlay;                                  // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 QuestTreeIcon;                                     // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<ULeaderboardRowWidget_C>();
 	}
 };
-static_assert(alignof(ULeaderboardRowWidget_C) == 0x322CBBB8, "Wrong alignment on ULeaderboardRowWidget_C");
-static_assert(sizeof(ULeaderboardRowWidget_C) == 0x322CBBB8, "Wrong size on ULeaderboardRowWidget_C");
+static_assert(alignof(ULeaderboardRowWidget_C) == 0x000008, "Wrong alignment on ULeaderboardRowWidget_C");
+static_assert(sizeof(ULeaderboardRowWidget_C) == 0x0008E8, "Wrong size on ULeaderboardRowWidget_C");
 static_assert(offsetof(ULeaderboardRowWidget_C, UberGraphFrame) == 0x0008B0, "Member 'ULeaderboardRowWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULeaderboardRowWidget_C, Image_4) == 0x0008B8, "Member 'ULeaderboardRowWidget_C::Image_4' has a wrong offset!");
 static_assert(offsetof(ULeaderboardRowWidget_C, QuestIconOverlay) == 0x0008C0, "Member 'ULeaderboardRowWidget_C::QuestIconOverlay' has a wrong offset!");

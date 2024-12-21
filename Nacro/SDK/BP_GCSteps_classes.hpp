@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GCSteps.BP_GCSteps_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0000 (0x0160 - 0x0160)
 class UBP_GCSteps_C final : public UCameraShake
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBP_GCSteps_C>();
 	}
 };
-static_assert(alignof(UBP_GCSteps_C) == 0x11821D80, "Wrong alignment on UBP_GCSteps_C");
-static_assert(sizeof(UBP_GCSteps_C) == 0x11821D80, "Wrong size on UBP_GCSteps_C");
+static_assert(alignof(UBP_GCSteps_C) == 0x000008, "Wrong alignment on UBP_GCSteps_C");
+static_assert(sizeof(UBP_GCSteps_C) == 0x000160, "Wrong size on UBP_GCSteps_C");
 
 }
 

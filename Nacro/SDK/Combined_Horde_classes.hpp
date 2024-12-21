@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SkillTreepAGEColors_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SkillTreepAGEColors_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
 
@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Combined_Horde.Combined_Horde_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x03D8 (0x0708 - 0x0330)
 class UCombined_Horde_C final : public UFortSkillTreePageWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(Transient, DuplicateTransient)
 	class UCommonBorder*                          Background;                                        // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BGlow;                                             // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BTriangles;                                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -122,7 +122,7 @@ public:
 	class UImage*                                 OTriangles;                                        // 0x0630(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 PGlow;                                             // 0x0638(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 PTriangles;                                        // 0x0640(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSkillTreePageColors                   PageColors;                                        // 0x0648(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FSkillTreePageColors                   PageColors;                                        // 0x0648(0x00C0)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Combined_Horde(int32 EntryPoint);
@@ -139,8 +139,8 @@ public:
 		return GetDefaultObjImpl<UCombined_Horde_C>();
 	}
 };
-static_assert(alignof(UCombined_Horde_C) == 0x322CBBB8, "Wrong alignment on UCombined_Horde_C");
-static_assert(sizeof(UCombined_Horde_C) == 0x322CBBB8, "Wrong size on UCombined_Horde_C");
+static_assert(alignof(UCombined_Horde_C) == 0x000008, "Wrong alignment on UCombined_Horde_C");
+static_assert(sizeof(UCombined_Horde_C) == 0x000708, "Wrong size on UCombined_Horde_C");
 static_assert(offsetof(UCombined_Horde_C, UberGraphFrame) == 0x000330, "Member 'UCombined_Horde_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCombined_Horde_C, Background) == 0x000338, "Member 'UCombined_Horde_C::Background' has a wrong offset!");
 static_assert(offsetof(UCombined_Horde_C, BGlow) == 0x000340, "Member 'UCombined_Horde_C::BGlow' has a wrong offset!");

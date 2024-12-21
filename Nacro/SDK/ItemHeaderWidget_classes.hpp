@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemHeaderWidget.ItemHeaderWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0138 (0x0398 - 0x0260)
 class UItemHeaderWidget_C final : public UFortItemDetailsPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UNamedSlot*                             AdditionalContentSlot;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         BottomCategoryIndicators;                          // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          CommonBorderLowerSection;                          // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -90,8 +90,8 @@ public:
 		return GetDefaultObjImpl<UItemHeaderWidget_C>();
 	}
 };
-static_assert(alignof(UItemHeaderWidget_C) == 0x322CBBB8, "Wrong alignment on UItemHeaderWidget_C");
-static_assert(sizeof(UItemHeaderWidget_C) == 0x322CBBB8, "Wrong size on UItemHeaderWidget_C");
+static_assert(alignof(UItemHeaderWidget_C) == 0x000008, "Wrong alignment on UItemHeaderWidget_C");
+static_assert(sizeof(UItemHeaderWidget_C) == 0x000398, "Wrong size on UItemHeaderWidget_C");
 static_assert(offsetof(UItemHeaderWidget_C, UberGraphFrame) == 0x000260, "Member 'UItemHeaderWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemHeaderWidget_C, AdditionalContentSlot) == 0x000268, "Member 'UItemHeaderWidget_C::AdditionalContentSlot' has a wrong offset!");
 static_assert(offsetof(UItemHeaderWidget_C, BottomCategoryIndicators) == 0x000270, "Member 'UItemHeaderWidget_C::BottomCategoryIndicators' has a wrong offset!");

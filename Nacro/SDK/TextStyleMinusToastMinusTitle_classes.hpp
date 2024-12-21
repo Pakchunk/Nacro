@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Toast-Title.TextStyle-Toast-Title_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusToastMinusTitle_C final : public UCommonTextStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusToastMinusTitle_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusToastMinusTitle_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusToastMinusTitle_C");
-static_assert(sizeof(UTextStyleMinusToastMinusTitle_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusToastMinusTitle_C");
+static_assert(alignof(UTextStyleMinusToastMinusTitle_C) == 0x000008, "Wrong alignment on UTextStyleMinusToastMinusTitle_C");
+static_assert(sizeof(UTextStyleMinusToastMinusTitle_C) == 0x0000D0, "Wrong size on UTextStyleMinusToastMinusTitle_C");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ThirdPartyTab.ThirdPartyTab_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0010 (0x0248 - 0x0238)
 class UThirdPartyTab_C final : public UCommonUserWidget
 {
 public:
@@ -37,8 +37,8 @@ public:
 		return GetDefaultObjImpl<UThirdPartyTab_C>();
 	}
 };
-static_assert(alignof(UThirdPartyTab_C) == 0x322CBBB8, "Wrong alignment on UThirdPartyTab_C");
-static_assert(sizeof(UThirdPartyTab_C) == 0x322CBBB8, "Wrong size on UThirdPartyTab_C");
+static_assert(alignof(UThirdPartyTab_C) == 0x000008, "Wrong alignment on UThirdPartyTab_C");
+static_assert(sizeof(UThirdPartyTab_C) == 0x000248, "Wrong size on UThirdPartyTab_C");
 static_assert(offsetof(UThirdPartyTab_C, FortRichTextBlock_0) == 0x000238, "Member 'UThirdPartyTab_C::FortRichTextBlock_0' has a wrong offset!");
 static_assert(offsetof(UThirdPartyTab_C, ScrollBox_2) == 0x000240, "Member 'UThirdPartyTab_C::ScrollBox_2' has a wrong offset!");
 

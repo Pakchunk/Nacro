@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function PowerToastWidget.PowerToastWidget_C.ExecuteUbergraph_PowerToastWidget
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x05B0 (0x05B0 - 0x0000)
 struct PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget final
 {
 public:
@@ -32,7 +32,7 @@ public:
 	float                                         CallFunc_GetLocalPlayerHomebaseRating_ProgressFraction; // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetLocalPlayerHomebaseRating_ReturnValue; // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0028(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x0028(0x0190)()
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetTeamHomebaseRating_Rating;             // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -41,7 +41,7 @@ public:
 	uint8                                         Pad_1D1[0x3];                                      // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FUniqueNetIdRepl& NewTeamMemberId)> K2Node_CreateDelegate_OutputDelegate;              // 0x01D8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01E8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01E8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0228(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -53,12 +53,13 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0268(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0278(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0288(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0298(0x11821D80)(NoDestructor)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x02A0(0x11827900)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x02D8(0x11829280)(ConstParm)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0350(0x11829280)(ConstParm)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0298(0x0008)(NoDestructor)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x02A0(0x0034)(IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D4[0x4];                                      // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x02D8(0x0078)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0350(0x0078)(ConstParm)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    K2Node_Event_NewInfo;                              // 0x03D0(0x11827900)()
+	struct FFortTeamMemberInfo                    K2Node_Event_NewInfo;                              // 0x03D0(0x0190)()
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0560(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_561[0x3];                                      // 0x0561(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetHomebaseRating_Rating;                 // 0x0564(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,15 +69,15 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0570(0x0018)()
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_CustomEvent_NewTeamMemberId;                // 0x0590(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_CustomEvent_NewTeamMemberId;                // 0x0590(0x0018)(HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue; // 0x05A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x05AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x05AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x05AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget) == 0x11829280, "Wrong alignment on PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget");
-static_assert(sizeof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget) == 0x11829280, "Wrong size on PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget");
+static_assert(alignof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget) == 0x000008, "Wrong alignment on PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget");
+static_assert(sizeof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget) == 0x0005B0, "Wrong size on PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, EntryPoint) == 0x000000, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
@@ -121,25 +122,25 @@ static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, Cal
 static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_BooleanAND_ReturnValue2) == 0x0005AC, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnTeamMemberFinishedSynchronizing_Event_0
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0 final
 {
 public:
-	struct FUniqueNetIdRepl                       NewTeamMemberId;                                   // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       NewTeamMemberId;                                   // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0) == 0x11821780, "Wrong alignment on PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0");
-static_assert(sizeof(PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0) == 0x11821780, "Wrong size on PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0");
+static_assert(alignof(PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0) == 0x000008, "Wrong alignment on PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0");
+static_assert(sizeof(PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0) == 0x000018, "Wrong size on PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0");
 static_assert(offsetof(PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0, NewTeamMemberId) == 0x000000, "Member 'PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0::NewTeamMemberId' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnPlayerInfoChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct PowerToastWidget_C_OnPlayerInfoChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x11827900)(Parm)
+	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(PowerToastWidget_C_OnPlayerInfoChanged) == 0x11821780, "Wrong alignment on PowerToastWidget_C_OnPlayerInfoChanged");
-static_assert(sizeof(PowerToastWidget_C_OnPlayerInfoChanged) == 0x11821780, "Wrong size on PowerToastWidget_C_OnPlayerInfoChanged");
+static_assert(alignof(PowerToastWidget_C_OnPlayerInfoChanged) == 0x000008, "Wrong alignment on PowerToastWidget_C_OnPlayerInfoChanged");
+static_assert(sizeof(PowerToastWidget_C_OnPlayerInfoChanged) == 0x000190, "Wrong size on PowerToastWidget_C_OnPlayerInfoChanged");
 static_assert(offsetof(PowerToastWidget_C_OnPlayerInfoChanged, NewInfo) == 0x000000, "Member 'PowerToastWidget_C_OnPlayerInfoChanged::NewInfo' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
@@ -154,26 +155,27 @@ static_assert(sizeof(PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBound
 static_assert(offsetof(PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnMouseLeave
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct PowerToastWidget_C_OnMouseLeave final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PowerToastWidget_C_OnMouseLeave) == 0x11829280, "Wrong alignment on PowerToastWidget_C_OnMouseLeave");
-static_assert(sizeof(PowerToastWidget_C_OnMouseLeave) == 0x11829280, "Wrong size on PowerToastWidget_C_OnMouseLeave");
+static_assert(alignof(PowerToastWidget_C_OnMouseLeave) == 0x000008, "Wrong alignment on PowerToastWidget_C_OnMouseLeave");
+static_assert(sizeof(PowerToastWidget_C_OnMouseLeave) == 0x000078, "Wrong size on PowerToastWidget_C_OnMouseLeave");
 static_assert(offsetof(PowerToastWidget_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'PowerToastWidget_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnMouseEnter
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct PowerToastWidget_C_OnMouseEnter final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x11827900)(Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PowerToastWidget_C_OnMouseEnter) == 0x11829280, "Wrong alignment on PowerToastWidget_C_OnMouseEnter");
-static_assert(sizeof(PowerToastWidget_C_OnMouseEnter) == 0x11829280, "Wrong size on PowerToastWidget_C_OnMouseEnter");
+static_assert(alignof(PowerToastWidget_C_OnMouseEnter) == 0x000008, "Wrong alignment on PowerToastWidget_C_OnMouseEnter");
+static_assert(sizeof(PowerToastWidget_C_OnMouseEnter) == 0x0000B0, "Wrong size on PowerToastWidget_C_OnMouseEnter");
 static_assert(offsetof(PowerToastWidget_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PowerToastWidget_C_OnMouseEnter::MyGeometry' has a wrong offset!");
 static_assert(offsetof(PowerToastWidget_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PowerToastWidget_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 

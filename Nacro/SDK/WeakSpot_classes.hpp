@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass WeakSpot.WeakSpot_C
-// 0x0000 (0x11827600 - 0x11827600)
+// 0x00E0 (0x0530 - 0x0450)
 class AWeakSpot_C final : public AFortCrackEffect
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x0008)(Transient, DuplicateTransient)
 	class UParticleSystemComponent*               AnimatedBackgroundRingsParticleEffect;             // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SphereHitLocator;                                  // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UCapsuleComponent*                      CollisionComponent;                                // 0x0468(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -34,7 +34,8 @@ public:
 	class UTimelineComponent*                     ScaleDownParticleTL;                               // 0x0480(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Impact_Sound;                                      // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             SpawnSound;                                        // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Particle_Location;                                 // 0x0498(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Particle_Location;                                 // 0x0498(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A4[0x4];                                      // 0x04A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             SoundCrack_Level_01;                               // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             SoundCrack_Level_02;                               // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             SoundCrack_Level_03;                               // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,8 +77,8 @@ public:
 		return GetDefaultObjImpl<AWeakSpot_C>();
 	}
 };
-static_assert(alignof(AWeakSpot_C) == 0x11827600, "Wrong alignment on AWeakSpot_C");
-static_assert(sizeof(AWeakSpot_C) == 0x11827600, "Wrong size on AWeakSpot_C");
+static_assert(alignof(AWeakSpot_C) == 0x000008, "Wrong alignment on AWeakSpot_C");
+static_assert(sizeof(AWeakSpot_C) == 0x000530, "Wrong size on AWeakSpot_C");
 static_assert(offsetof(AWeakSpot_C, UberGraphFrame) == 0x000450, "Member 'AWeakSpot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AWeakSpot_C, AnimatedBackgroundRingsParticleEffect) == 0x000458, "Member 'AWeakSpot_C::AnimatedBackgroundRingsParticleEffect' has a wrong offset!");
 static_assert(offsetof(AWeakSpot_C, SphereHitLocator) == 0x000460, "Member 'AWeakSpot_C::SphereHitLocator' has a wrong offset!");

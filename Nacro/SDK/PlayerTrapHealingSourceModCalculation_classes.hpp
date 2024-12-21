@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerTrapHealingSourceModCalculation.PlayerTrapHealingSourceModCalculation_C
-// 0x0000 (0x11821C00 - 0x11821C00)
+// 0x0000 (0x0068 - 0x0068)
 class UPlayerTrapHealingSourceModCalculation_C final : public UPlayerTrapBonusModMagnitudeCalculation
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UPlayerTrapHealingSourceModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapHealingSourceModCalculation_C) == 0x11821C00, "Wrong alignment on UPlayerTrapHealingSourceModCalculation_C");
-static_assert(sizeof(UPlayerTrapHealingSourceModCalculation_C) == 0x11821C00, "Wrong size on UPlayerTrapHealingSourceModCalculation_C");
+static_assert(alignof(UPlayerTrapHealingSourceModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapHealingSourceModCalculation_C");
+static_assert(sizeof(UPlayerTrapHealingSourceModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapHealingSourceModCalculation_C");
 
 }
 

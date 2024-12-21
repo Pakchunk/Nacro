@@ -19,15 +19,15 @@ namespace SDK::Params
 {
 
 // Function Results_Widget.Results_Widget_C.ExecuteUbergraph_Results_Widget
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct Results_Widget_C_ExecuteUbergraph_Results_Widget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId2;              // 0x0008(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId2;              // 0x0008(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName2;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId;               // 0x0030(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_ComponentBoundEvent_TargetId;               // 0x0030(0x0018)(HasGetValueTypeHash)
 	class FString                                 K2Node_ComponentBoundEvent_TargetName;             // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetRealTimeSeconds_ReturnValue;           // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -50,12 +50,12 @@ public:
 	bool                                          CallFunc_UseVideos_bVideos;                        // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_96[0x2];                                       // 0x0096(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00A8(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00A8(0x0008)(NoDestructor)
 	float                                         CallFunc_GetRealTimeSeconds_ReturnValue7;          // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_HandleClientEvent_EventSource;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus;               // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x00C8(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x00C8(0x0020)(ConstParm, NoDestructor)
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -64,8 +64,8 @@ public:
 	bool                                          CallFunc_IsDataFinalized_ReturnValue;              // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x11821D80, "Wrong alignment on Results_Widget_C_ExecuteUbergraph_Results_Widget");
-static_assert(sizeof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x11821D80, "Wrong size on Results_Widget_C_ExecuteUbergraph_Results_Widget");
+static_assert(alignof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x000008, "Wrong alignment on Results_Widget_C_ExecuteUbergraph_Results_Widget");
+static_assert(sizeof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x000108, "Wrong size on Results_Widget_C_ExecuteUbergraph_Results_Widget");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, EntryPoint) == 0x000000, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetId2) == 0x000008, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetId2' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetName2) == 0x000020, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetName2' has a wrong offset!");
@@ -101,43 +101,43 @@ static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFun
 static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_Has_Been_Initd_Variable) == 0x000102, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.HandleClientEvent_PlayerLeftEvent
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct Results_Widget_C_HandleClientEvent_PlayerLeftEvent final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent) == 0x11821780, "Wrong alignment on Results_Widget_C_HandleClientEvent_PlayerLeftEvent");
-static_assert(sizeof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent) == 0x11821780, "Wrong size on Results_Widget_C_HandleClientEvent_PlayerLeftEvent");
+static_assert(alignof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent) == 0x000008, "Wrong alignment on Results_Widget_C_HandleClientEvent_PlayerLeftEvent");
+static_assert(sizeof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent) == 0x000030, "Wrong size on Results_Widget_C_HandleClientEvent_PlayerLeftEvent");
 static_assert(offsetof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent, EventSource) == 0x000000, "Member 'Results_Widget_C_HandleClientEvent_PlayerLeftEvent::EventSource' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent, EventFocus) == 0x000008, "Member 'Results_Widget_C_HandleClientEvent_PlayerLeftEvent::EventFocus' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent, ClientEvent) == 0x000010, "Member 'Results_Widget_C_HandleClientEvent_PlayerLeftEvent::ClientEvent' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature");
+static_assert(alignof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature");
+static_assert(sizeof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature");
 static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature final
 {
 public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong alignment on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature) == 0x11821780, "Wrong size on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature");
+static_assert(alignof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature");
+static_assert(sizeof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature");
 static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
@@ -179,14 +179,14 @@ static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetZoneCompletionRe
 static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetRewardsByType_OutRewards) == 0x0000B0, "Member 'Results_Widget_C_Initialize::CallFunc_GetRewardsByType_OutRewards' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Initialize Video
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0418 (0x0418 - 0x0000)
 struct Results_Widget_C_Initialize_Video final
 {
 public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_UseVideos_bVideos;                        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0010(0x1182E980)()
+	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0010(0x03B8)()
 	bool                                          CallFunc_GetCurrentBasicMissionInfo_ReturnValue;   // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3C9[0x7];                                      // 0x03C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x03D0(0x0010)(ZeroConstructor, NoDestructor)
@@ -200,8 +200,8 @@ public:
 	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMediaSource*                           K2Node_Select_Default;                             // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_Initialize_Video) == 0x1182E980, "Wrong alignment on Results_Widget_C_Initialize_Video");
-static_assert(sizeof(Results_Widget_C_Initialize_Video) == 0x1182E980, "Wrong size on Results_Widget_C_Initialize_Video");
+static_assert(alignof(Results_Widget_C_Initialize_Video) == 0x000008, "Wrong alignment on Results_Widget_C_Initialize_Video");
+static_assert(sizeof(Results_Widget_C_Initialize_Video) == 0x000418, "Wrong size on Results_Widget_C_Initialize_Video");
 static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'Results_Widget_C_Initialize_Video::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_UseVideos_bVideos) == 0x000008, "Member 'Results_Widget_C_Initialize_Video::CallFunc_UseVideos_bVideos' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo) == 0x000010, "Member 'Results_Widget_C_Initialize_Video::CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo' has a wrong offset!");
@@ -317,12 +317,12 @@ static_assert(offsetof(Results_Widget_C_OnInputSkip, bCommited) == 0x000000, "Me
 
 // Function Results_Widget.Results_Widget_C.InitializeInput
 // 0x0010 (0x0010 - 0x0000)
-struct Results_Widget_C_InitializeInput final
+struct alignas(0x08) Results_Widget_C_InitializeInput final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_InitializeInput) == 0x000004, "Wrong alignment on Results_Widget_C_InitializeInput");
+static_assert(alignof(Results_Widget_C_InitializeInput) == 0x000008, "Wrong alignment on Results_Widget_C_InitializeInput");
 static_assert(sizeof(Results_Widget_C_InitializeInput) == 0x000010, "Wrong size on Results_Widget_C_InitializeInput");
 static_assert(offsetof(Results_Widget_C_InitializeInput, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'Results_Widget_C_InitializeInput::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
@@ -347,7 +347,7 @@ static_assert(offsetof(Results_Widget_C_Focus, K2Node_SwitchInteger_CmpSuccess) 
 static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue3) == 0x000009, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue3' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.UseVideos
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x03D0 (0x03D0 - 0x0000)
 struct Results_Widget_C_UseVideos final
 {
 public:
@@ -355,12 +355,12 @@ public:
 	bool                                          CallFunc_ShouldShowMissionResultsMovies_ReturnValue; // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0010(0x1182E980)()
+	struct FFortBasicMissionInfo                  CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo; // 0x0010(0x03B8)()
 	bool                                          CallFunc_GetCurrentBasicMissionInfo_ReturnValue;   // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x03C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_UseVideos) == 0x1182E980, "Wrong alignment on Results_Widget_C_UseVideos");
-static_assert(sizeof(Results_Widget_C_UseVideos) == 0x1182E980, "Wrong size on Results_Widget_C_UseVideos");
+static_assert(alignof(Results_Widget_C_UseVideos) == 0x000008, "Wrong alignment on Results_Widget_C_UseVideos");
+static_assert(sizeof(Results_Widget_C_UseVideos) == 0x0003D0, "Wrong size on Results_Widget_C_UseVideos");
 static_assert(offsetof(Results_Widget_C_UseVideos, bVideos) == 0x000000, "Member 'Results_Widget_C_UseVideos::bVideos' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_UseVideos, CallFunc_ShouldShowMissionResultsMovies_ReturnValue) == 0x000001, "Member 'Results_Widget_C_UseVideos::CallFunc_ShouldShowMissionResultsMovies_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_Widget_C_UseVideos, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'Results_Widget_C_UseVideos::CallFunc_GetContext_ReturnValue' has a wrong offset!");

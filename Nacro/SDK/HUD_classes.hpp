@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HUD.HUD_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0270 (0x0670 - 0x0400)
 class UHUD_C final : public UFortUIStateWidget_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
 	class UFortActorCanvas*                       _Actor_Canvas__Indicators;                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         _Horizontal_Box__Top_Right_Content;                // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               _Overlay__Camera_Mode_Content;                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -100,7 +100,7 @@ public:
 	class UZoneScoreWidget_C*                     ZoneScoreWidget;                                   // 0x0638(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EFortQuickBars                                FocusedQuickbar;                                   // 0x0640(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_641[0x3];                                      // 0x0641(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              UnfocusedQuickbarScale;                            // 0x0644(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              UnfocusedQuickbarScale;                            // 0x0644(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CursorModeEnabled;                                 // 0x064C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          ZoneCompleted;                                     // 0x064D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_64E[0x2];                                      // 0x064E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -157,8 +157,8 @@ public:
 		return GetDefaultObjImpl<UHUD_C>();
 	}
 };
-static_assert(alignof(UHUD_C) == 0x322CBBB8, "Wrong alignment on UHUD_C");
-static_assert(sizeof(UHUD_C) == 0x322CBBB8, "Wrong size on UHUD_C");
+static_assert(alignof(UHUD_C) == 0x000008, "Wrong alignment on UHUD_C");
+static_assert(sizeof(UHUD_C) == 0x000670, "Wrong size on UHUD_C");
 static_assert(offsetof(UHUD_C, UberGraphFrame) == 0x000400, "Member 'UHUD_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHUD_C, _Actor_Canvas__Indicators) == 0x000408, "Member 'UHUD_C::_Actor_Canvas__Indicators' has a wrong offset!");
 static_assert(offsetof(UHUD_C, _Horizontal_Box__Top_Right_Content) == 0x000410, "Member 'UHUD_C::_Horizontal_Box__Top_Right_Content' has a wrong offset!");

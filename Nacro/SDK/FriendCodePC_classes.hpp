@@ -19,15 +19,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass FriendCodePC.FriendCodePC_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x08E8 - 0x08A0)
 class UFriendCodePC_C final : public UFriendCodeEntryBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       CodeText;                                          // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       CopyLinkText;                                      // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UEditableTextBox*                       UrlText;                                           // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFriendCode                            FriendCode;                                        // 0x08C0(0x11827900)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFriendCode                            FriendCode;                                        // 0x08C0(0x0020)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FName                                   NewVar_0;                                          // 0x08E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UFriendCodePC_C>();
 	}
 };
-static_assert(alignof(UFriendCodePC_C) == 0x322CBBB8, "Wrong alignment on UFriendCodePC_C");
-static_assert(sizeof(UFriendCodePC_C) == 0x322CBBB8, "Wrong size on UFriendCodePC_C");
+static_assert(alignof(UFriendCodePC_C) == 0x000008, "Wrong alignment on UFriendCodePC_C");
+static_assert(sizeof(UFriendCodePC_C) == 0x0008E8, "Wrong size on UFriendCodePC_C");
 static_assert(offsetof(UFriendCodePC_C, UberGraphFrame) == 0x0008A0, "Member 'UFriendCodePC_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UFriendCodePC_C, CodeText) == 0x0008A8, "Member 'UFriendCodePC_C::CodeText' has a wrong offset!");
 static_assert(offsetof(UFriendCodePC_C, CopyLinkText) == 0x0008B0, "Member 'UFriendCodePC_C::CopyLinkText' has a wrong offset!");

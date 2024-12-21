@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function WeaponTooltipDPSWidget.WeaponTooltipDPSWidget_C.ExecuteUbergraph_WeaponTooltipDPSWidget
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget final
 {
 public:
@@ -26,13 +26,13 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x0028)()
 };
-static_assert(alignof(WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget) == 0x322CBBB8, "Wrong alignment on WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget");
-static_assert(sizeof(WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget) == 0x322CBBB8, "Wrong size on WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget");
+static_assert(alignof(WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget) == 0x000008, "Wrong alignment on WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget");
+static_assert(sizeof(WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget) == 0x000060, "Wrong size on WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget");
 static_assert(offsetof(WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget, EntryPoint) == 0x000000, "Member 'WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget, Temp_bool_Variable) == 0x000004, "Member 'WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000005, "Member 'WeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");

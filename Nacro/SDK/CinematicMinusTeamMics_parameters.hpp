@@ -30,12 +30,12 @@ static_assert(sizeof(CinematicMinusTeamMics_C_ExecuteUbergraph_CinematicMinusTea
 static_assert(offsetof(CinematicMinusTeamMics_C_ExecuteUbergraph_CinematicMinusTeamMics, EntryPoint) == 0x000000, "Member 'CinematicMinusTeamMics_C_ExecuteUbergraph_CinematicMinusTeamMics::EntryPoint' has a wrong offset!");
 
 // Function Cinematic-TeamMics.Cinematic-TeamMics_C.Update
-// 0x51B7F5B0 (0x51B7F5B0 - 0x0000)
-struct alignas(0x51B7F5B0) CinematicMinusTeamMics_C_Update final
+// 0x01E0 (0x01E0 - 0x0000)
+struct CinematicMinusTeamMics_C_Update final
 {
 public:
-	struct FFortTeamMemberInfo                    UpdatedMemberInfo;                                 // 0x0000(0x11827900)(Parm)
-	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0190(0x11821780)(Edit, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                    UpdatedMemberInfo;                                 // 0x0000(0x0190)(Parm)
+	struct FUniqueNetIdRepl                       PlayerNetId;                                       // 0x0190(0x0018)(Edit, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable2;                               // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x01AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,10 +50,10 @@ public:
 	int32                                         K2Node_Select2_Default;                            // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Select3_Default;                            // 0x01C8(0x11821780)(ConstParm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_Select3_Default;                            // 0x01C8(0x0018)(ConstParm, HasGetValueTypeHash)
 };
-static_assert(alignof(CinematicMinusTeamMics_C_Update) == 0x51B7F5B0, "Wrong alignment on CinematicMinusTeamMics_C_Update");
-static_assert(sizeof(CinematicMinusTeamMics_C_Update) == 0x51B7F5B0, "Wrong size on CinematicMinusTeamMics_C_Update");
+static_assert(alignof(CinematicMinusTeamMics_C_Update) == 0x000008, "Wrong alignment on CinematicMinusTeamMics_C_Update");
+static_assert(sizeof(CinematicMinusTeamMics_C_Update) == 0x0001E0, "Wrong size on CinematicMinusTeamMics_C_Update");
 static_assert(offsetof(CinematicMinusTeamMics_C_Update, UpdatedMemberInfo) == 0x000000, "Member 'CinematicMinusTeamMics_C_Update::UpdatedMemberInfo' has a wrong offset!");
 static_assert(offsetof(CinematicMinusTeamMics_C_Update, PlayerNetId) == 0x000190, "Member 'CinematicMinusTeamMics_C_Update::PlayerNetId' has a wrong offset!");
 static_assert(offsetof(CinematicMinusTeamMics_C_Update, Temp_bool_Variable) == 0x0001A8, "Member 'CinematicMinusTeamMics_C_Update::Temp_bool_Variable' has a wrong offset!");

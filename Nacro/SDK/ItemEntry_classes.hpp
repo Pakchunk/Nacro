@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemEntry.ItemEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x08C0 - 0x08A0)
 class UItemEntry_C final : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       Name_0;                                            // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   Entry_Selected;                                    // 0x08B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UItemEntry_C>();
 	}
 };
-static_assert(alignof(UItemEntry_C) == 0x322CBBB8, "Wrong alignment on UItemEntry_C");
-static_assert(sizeof(UItemEntry_C) == 0x322CBBB8, "Wrong size on UItemEntry_C");
+static_assert(alignof(UItemEntry_C) == 0x000008, "Wrong alignment on UItemEntry_C");
+static_assert(sizeof(UItemEntry_C) == 0x0008C0, "Wrong size on UItemEntry_C");
 static_assert(offsetof(UItemEntry_C, UberGraphFrame) == 0x0008A0, "Member 'UItemEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemEntry_C, Name_0) == 0x0008A8, "Member 'UItemEntry_C::Name_0' has a wrong offset!");
 static_assert(offsetof(UItemEntry_C, Entry_Selected) == 0x0008B0, "Member 'UItemEntry_C::Entry_Selected' has a wrong offset!");

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-Slot-Empty.Border-Slot-Empty_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusSlotMinusEmpty_C final : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusSlotMinusEmpty_C>();
 	}
 };
-static_assert(alignof(UBorderMinusSlotMinusEmpty_C) == 0x11827900, "Wrong alignment on UBorderMinusSlotMinusEmpty_C");
-static_assert(sizeof(UBorderMinusSlotMinusEmpty_C) == 0x11827900, "Wrong size on UBorderMinusSlotMinusEmpty_C");
+static_assert(alignof(UBorderMinusSlotMinusEmpty_C) == 0x000008, "Wrong alignment on UBorderMinusSlotMinusEmpty_C");
+static_assert(sizeof(UBorderMinusSlotMinusEmpty_C) == 0x0000B8, "Wrong size on UBorderMinusSlotMinusEmpty_C");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CircleAroundPrimaryAssignmentGoals_Bombshell_Poison.CircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C
-// 0x0000 (0x11821780 - 0x11821780)
+// 0x0000 (0x00D0 - 0x00D0)
 class UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C final : public UFortAIGoalProvider_EnvQuery
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C>();
 	}
 };
-static_assert(alignof(UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C) == 0x11821780, "Wrong alignment on UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C");
-static_assert(sizeof(UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C) == 0x11821780, "Wrong size on UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C");
+static_assert(alignof(UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C) == 0x000008, "Wrong alignment on UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C");
+static_assert(sizeof(UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C) == 0x0000D0, "Wrong size on UCircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C");
 
 }
 

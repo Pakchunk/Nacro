@@ -28,8 +28,8 @@ static_assert(sizeof(TabVideoOptions_C_Enable_Overlay__DelegateSignature) == 0x0
 static_assert(offsetof(TabVideoOptions_C_Enable_Overlay__DelegateSignature, Accept_Input) == 0x000000, "Member 'TabVideoOptions_C_Enable_Overlay__DelegateSignature::Accept_Input' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.ExecuteUbergraph_TabVideoOptions
-// 0x0258 (0x0258 - 0x0000)
-struct alignas(0x12C) TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions final
+// 0x0190 (0x0190 - 0x0000)
+struct TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -90,8 +90,8 @@ public:
 	class FString                                 CallFunc_MakeLiteralString_ReturnValue;            // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0178(0x0018)()
 };
-static_assert(alignof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions) == 0x00012C, "Wrong alignment on TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions");
-static_assert(sizeof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions) == 0x000258, "Wrong size on TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions");
+static_assert(alignof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions) == 0x000008, "Wrong alignment on TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions");
+static_assert(sizeof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions) == 0x000190, "Wrong size on TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions");
 static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, EntryPoint) == 0x000000, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -173,14 +173,14 @@ static_assert(sizeof(TabVideoOptions_C_CustomEvent) == 0x000004, "Wrong size on 
 static_assert(offsetof(TabVideoOptions_C_CustomEvent, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_CustomEvent::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Motion Blur Changed
-// 0x0048 (0x0048 - 0x0000)
-struct alignas(0x48) TabVideoOptions_C_Motion_Blur_Changed final
+// 0x0004 (0x0004 - 0x0000)
+struct TabVideoOptions_C_Motion_Blur_Changed final
 {
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Motion_Blur_Changed) == 0x000048, "Wrong alignment on TabVideoOptions_C_Motion_Blur_Changed");
-static_assert(sizeof(TabVideoOptions_C_Motion_Blur_Changed) == 0x000048, "Wrong size on TabVideoOptions_C_Motion_Blur_Changed");
+static_assert(alignof(TabVideoOptions_C_Motion_Blur_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Motion_Blur_Changed");
+static_assert(sizeof(TabVideoOptions_C_Motion_Blur_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Motion_Blur_Changed");
 static_assert(offsetof(TabVideoOptions_C_Motion_Blur_Changed, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_Motion_Blur_Changed::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.VSync Changed
@@ -250,14 +250,14 @@ static_assert(sizeof(TabVideoOptions_C_Effects_Changed) == 0x000004, "Wrong size
 static_assert(offsetof(TabVideoOptions_C_Effects_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Effects_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Post-Processing Changed
-// 0x0026 (0x0026 - 0x0000)
-struct alignas(0x26) TabVideoOptions_C_PostMinusProcessing_Changed final
+// 0x0004 (0x0004 - 0x0000)
+struct TabVideoOptions_C_PostMinusProcessing_Changed final
 {
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_PostMinusProcessing_Changed) == 0x000026, "Wrong alignment on TabVideoOptions_C_PostMinusProcessing_Changed");
-static_assert(sizeof(TabVideoOptions_C_PostMinusProcessing_Changed) == 0x000026, "Wrong size on TabVideoOptions_C_PostMinusProcessing_Changed");
+static_assert(alignof(TabVideoOptions_C_PostMinusProcessing_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_PostMinusProcessing_Changed");
+static_assert(sizeof(TabVideoOptions_C_PostMinusProcessing_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_PostMinusProcessing_Changed");
 static_assert(offsetof(TabVideoOptions_C_PostMinusProcessing_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_PostMinusProcessing_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Textures Changed

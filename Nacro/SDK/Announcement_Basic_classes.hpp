@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Announcement_Basic.Announcement_Basic_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0028 (0x0268 - 0x0240)
 class UAnnouncement_Basic_C final : public UFortAnnouncementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         HorizontalBoxRoot;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Icon;                                              // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortRichTextBlock*                     TextDetailText;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UAnnouncement_Basic_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_Basic_C) == 0x322CBBB8, "Wrong alignment on UAnnouncement_Basic_C");
-static_assert(sizeof(UAnnouncement_Basic_C) == 0x322CBBB8, "Wrong size on UAnnouncement_Basic_C");
+static_assert(alignof(UAnnouncement_Basic_C) == 0x000008, "Wrong alignment on UAnnouncement_Basic_C");
+static_assert(sizeof(UAnnouncement_Basic_C) == 0x000268, "Wrong size on UAnnouncement_Basic_C");
 static_assert(offsetof(UAnnouncement_Basic_C, UberGraphFrame) == 0x000240, "Member 'UAnnouncement_Basic_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_Basic_C, HorizontalBoxRoot) == 0x000248, "Member 'UAnnouncement_Basic_C::HorizontalBoxRoot' has a wrong offset!");
 static_assert(offsetof(UAnnouncement_Basic_C, Icon) == 0x000250, "Member 'UAnnouncement_Basic_C::Icon' has a wrong offset!");

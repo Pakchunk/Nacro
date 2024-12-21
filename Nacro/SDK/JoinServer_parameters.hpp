@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function JoinServer.JoinServer_C.ExecuteUbergraph_JoinServer
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct JoinServer_C_ExecuteUbergraph_JoinServer final
 {
 public:
@@ -39,7 +39,7 @@ public:
 	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_HandleClientEvent_EventSource2;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus2;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent2;             // 0x0088(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent2;             // 0x0088(0x0020)(ConstParm, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Temp_name_Variable;                                // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,11 +62,11 @@ public:
 	uint8                                         Pad_11A[0x6];                                      // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_HandleClientEvent_EventSource;              // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus;               // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x0130(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x0130(0x0020)(ConstParm, NoDestructor)
 	EFortUIState                                  K2Node_Event_PreviousUIState;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_ExecuteUbergraph_JoinServer) == 0x11821780, "Wrong alignment on JoinServer_C_ExecuteUbergraph_JoinServer");
-static_assert(sizeof(JoinServer_C_ExecuteUbergraph_JoinServer) == 0x11821780, "Wrong size on JoinServer_C_ExecuteUbergraph_JoinServer");
+static_assert(alignof(JoinServer_C_ExecuteUbergraph_JoinServer) == 0x000008, "Wrong alignment on JoinServer_C_ExecuteUbergraph_JoinServer");
+static_assert(sizeof(JoinServer_C_ExecuteUbergraph_JoinServer) == 0x000158, "Wrong size on JoinServer_C_ExecuteUbergraph_JoinServer");
 static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, EntryPoint) == 0x000000, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::EntryPoint' has a wrong offset!");
 static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
@@ -103,56 +103,56 @@ static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_HandleCl
 static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_Event_PreviousUIState) == 0x000150, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_Event_PreviousUIState' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.OnEnterState
-// 0x00C0 (0x00C0 - 0x0000)
-struct alignas(0xC0) JoinServer_C_OnEnterState final
+// 0x0001 (0x0001 - 0x0000)
+struct JoinServer_C_OnEnterState final
 {
 public:
 	EFortUIState                                  PreviousUIState;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_OnEnterState) == 0x0000C0, "Wrong alignment on JoinServer_C_OnEnterState");
-static_assert(sizeof(JoinServer_C_OnEnterState) == 0x0000C0, "Wrong size on JoinServer_C_OnEnterState");
+static_assert(alignof(JoinServer_C_OnEnterState) == 0x000001, "Wrong alignment on JoinServer_C_OnEnterState");
+static_assert(sizeof(JoinServer_C_OnEnterState) == 0x000001, "Wrong size on JoinServer_C_OnEnterState");
 static_assert(offsetof(JoinServer_C_OnEnterState, PreviousUIState) == 0x000000, "Member 'JoinServer_C_OnEnterState::PreviousUIState' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleClientEvent_OnboardingStartMatchmaking
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking) == 0x11821780, "Wrong alignment on JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking");
-static_assert(sizeof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking) == 0x11821780, "Wrong size on JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking");
+static_assert(alignof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking) == 0x000008, "Wrong alignment on JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking");
+static_assert(sizeof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking) == 0x000030, "Wrong size on JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking");
 static_assert(offsetof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking, EventSource) == 0x000000, "Member 'JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking::EventSource' has a wrong offset!");
 static_assert(offsetof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking, EventFocus) == 0x000008, "Member 'JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking::EventFocus' has a wrong offset!");
 static_assert(offsetof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking, ClientEvent) == 0x000010, "Member 'JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking::ClientEvent' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleClientEvent_RejoinStart
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct JoinServer_C_HandleClientEvent_RejoinStart final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HandleClientEvent_RejoinStart) == 0x11821780, "Wrong alignment on JoinServer_C_HandleClientEvent_RejoinStart");
-static_assert(sizeof(JoinServer_C_HandleClientEvent_RejoinStart) == 0x11821780, "Wrong size on JoinServer_C_HandleClientEvent_RejoinStart");
+static_assert(alignof(JoinServer_C_HandleClientEvent_RejoinStart) == 0x000008, "Wrong alignment on JoinServer_C_HandleClientEvent_RejoinStart");
+static_assert(sizeof(JoinServer_C_HandleClientEvent_RejoinStart) == 0x000030, "Wrong size on JoinServer_C_HandleClientEvent_RejoinStart");
 static_assert(offsetof(JoinServer_C_HandleClientEvent_RejoinStart, EventSource) == 0x000000, "Member 'JoinServer_C_HandleClientEvent_RejoinStart::EventSource' has a wrong offset!");
 static_assert(offsetof(JoinServer_C_HandleClientEvent_RejoinStart, EventFocus) == 0x000008, "Member 'JoinServer_C_HandleClientEvent_RejoinStart::EventFocus' has a wrong offset!");
 static_assert(offsetof(JoinServer_C_HandleClientEvent_RejoinStart, ClientEvent) == 0x000010, "Member 'JoinServer_C_HandleClientEvent_RejoinStart::ClientEvent' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF
 // 0x0010 (0x0010 - 0x0000)
-struct JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF final
+struct alignas(0x08) JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF final
 {
 public:
 	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF) == 0x000004, "Wrong alignment on JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF");
+static_assert(alignof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF) == 0x000008, "Wrong alignment on JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF");
 static_assert(sizeof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF) == 0x000010, "Wrong size on JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF");
 static_assert(offsetof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF, Result) == 0x000000, "Member 'JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF::Result' has a wrong offset!");
 static_assert(offsetof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF, ResultName) == 0x000008, "Member 'JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF::ResultName' has a wrong offset!");

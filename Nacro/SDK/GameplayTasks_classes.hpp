@@ -49,9 +49,8 @@ static_assert(offsetof(UGameplayTask, InstanceName) == 0x000030, "Member 'UGamep
 static_assert(offsetof(UGameplayTask, ChildTask) == 0x000060, "Member 'UGameplayTask::ChildTask' has a wrong offset!");
 
 // Class GameplayTasks.GameplayTasksComponent
-// 0x0000 (0x11821D80 - 0x11821D80)
-#pragma pack(push, 0x1)
-class alignas(0x11821D80) UGameplayTasksComponent : public UActorComponent
+// 0x0068 (0x0158 - 0x00F0)
+class UGameplayTasksComponent : public UActorComponent
 {
 public:
 	uint8                                         Pad_F0[0x8];                                       // 0x00F0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -78,9 +77,8 @@ public:
 		return GetDefaultObjImpl<UGameplayTasksComponent>();
 	}
 };
-#pragma pack(pop)
-static_assert(alignof(UGameplayTasksComponent) == 0x11821D80, "Wrong alignment on UGameplayTasksComponent");
-static_assert(sizeof(UGameplayTasksComponent) == 0x11821D80, "Wrong size on UGameplayTasksComponent");
+static_assert(alignof(UGameplayTasksComponent) == 0x000008, "Wrong alignment on UGameplayTasksComponent");
+static_assert(sizeof(UGameplayTasksComponent) == 0x000158, "Wrong size on UGameplayTasksComponent");
 static_assert(offsetof(UGameplayTasksComponent, SimulatedTasks) == 0x0000F8, "Member 'UGameplayTasksComponent::SimulatedTasks' has a wrong offset!");
 static_assert(offsetof(UGameplayTasksComponent, TaskPriorityQueue) == 0x000108, "Member 'UGameplayTasksComponent::TaskPriorityQueue' has a wrong offset!");
 static_assert(offsetof(UGameplayTasksComponent, TickingTasks) == 0x000128, "Member 'UGameplayTasksComponent::TickingTasks' has a wrong offset!");

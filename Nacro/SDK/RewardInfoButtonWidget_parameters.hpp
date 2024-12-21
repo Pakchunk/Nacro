@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.ExecuteUbergraph_RewardInfoButtonWidget
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x01F0 (0x01F0 - 0x0000)
 struct RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget final
 {
 public:
@@ -32,7 +32,7 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ZeroConstructor, ReferenceParm)
 	class UFortItem*                              CallFunc_GetItemInstance_ReturnValue;              // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
@@ -46,9 +46,9 @@ public:
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue2;         // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue2;              // 0x00F0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0108(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0108(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_DisplayName;               // 0x0148(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0160(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0160(0x0040)(HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x01A8(0x0010)(ZeroConstructor, ReferenceParm)
@@ -57,8 +57,8 @@ public:
 	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetEmptyText_ReturnValue2;                // 0x01D8(0x0018)()
 };
-static_assert(alignof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget) == 0x11821D80, "Wrong alignment on RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget");
-static_assert(sizeof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget) == 0x11821D80, "Wrong size on RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget");
+static_assert(alignof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget) == 0x000008, "Wrong alignment on RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget");
+static_assert(sizeof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget) == 0x0001F0, "Wrong size on RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget");
 static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, EntryPoint) == 0x000000, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, Temp_bool_Variable) == 0x000004, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetQuantity_ReturnValue) == 0x000008, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetQuantity_ReturnValue' has a wrong offset!");
@@ -87,18 +87,18 @@ static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButto
 static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetEmptyText_ReturnValue2) == 0x0001D8, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetEmptyText_ReturnValue2' has a wrong offset!");
 
 // Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.SetShowDescriptionBP
-// 0x66B1AD50 (0x66B1AD50 - 0x0000)
-struct alignas(0x66B1AD50) RewardInfoButtonWidget_C_SetShowDescriptionBP final
+// 0x0001 (0x0001 - 0x0000)
+struct RewardInfoButtonWidget_C_SetShowDescriptionBP final
 {
 public:
 	bool                                          bInShowDescription;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardInfoButtonWidget_C_SetShowDescriptionBP) == 0x66B1AD50, "Wrong alignment on RewardInfoButtonWidget_C_SetShowDescriptionBP");
-static_assert(sizeof(RewardInfoButtonWidget_C_SetShowDescriptionBP) == 0x66B1AD50, "Wrong size on RewardInfoButtonWidget_C_SetShowDescriptionBP");
+static_assert(alignof(RewardInfoButtonWidget_C_SetShowDescriptionBP) == 0x000001, "Wrong alignment on RewardInfoButtonWidget_C_SetShowDescriptionBP");
+static_assert(sizeof(RewardInfoButtonWidget_C_SetShowDescriptionBP) == 0x000001, "Wrong size on RewardInfoButtonWidget_C_SetShowDescriptionBP");
 static_assert(offsetof(RewardInfoButtonWidget_C_SetShowDescriptionBP, bInShowDescription) == 0x000000, "Member 'RewardInfoButtonWidget_C_SetShowDescriptionBP::bInShowDescription' has a wrong offset!");
 
 // Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.GetDisplayName
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0A40 (0x0A40 - 0x0000)
 struct RewardInfoButtonWidget_C_GetDisplayName final
 {
 public:
@@ -160,20 +160,20 @@ public:
 	class FText                                   Temp_text_Variable52;                              // 0x0500(0x0018)()
 	class FText                                   Temp_text_Variable53;                              // 0x0518(0x0018)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0530(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0548(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0548(0x0040)(HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_GetItemInstance_ReturnValue;              // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue2;             // 0x0590(0x0018)()
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5A9[0x7];                                      // 0x05A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x05B0(0x11821D80)(HasGetValueTypeHash)
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x05F0(0x11821780)()
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue2;             // 0x0670(0x11821780)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x06F0(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0730(0x11821D80)(HasGetValueTypeHash)
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue3;             // 0x0770(0x11821780)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x05B0(0x0040)(HasGetValueTypeHash)
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x05F0(0x0080)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue2;             // 0x0670(0x0080)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x06F0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x0730(0x0040)(HasGetValueTypeHash)
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue3;             // 0x0770(0x0080)()
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x07F0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0800(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0818(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0818(0x0040)(HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_GetItemInstance_ReturnValue2;             // 0x0858(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortWorker*                            K2Node_DynamicCast_AsFort_Worker;                  // 0x0860(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0868(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -183,10 +183,10 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0878(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_879[0x7];                                      // 0x0879(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetTertiaryCategory_ItemCategoryText;     // 0x0880(0x0018)()
-	struct FSlateBrush                            CallFunc_GetTertiaryCategory_ItemCategoryBrush;    // 0x0898(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetTertiaryCategory_ItemCategoryBrush;    // 0x0898(0x0090)()
 	bool                                          CallFunc_GetTertiaryCategory_ReturnValue;          // 0x0928(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_929[0x7];                                      // 0x0929(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x0930(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData6;             // 0x0930(0x0040)(HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_GetItemInstance_ReturnValue4;             // 0x0970(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0978(0x0010)(ZeroConstructor, ReferenceParm)
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0988(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -198,12 +198,12 @@ public:
 	EFortItemType                                 CallFunc_GetType_ReturnValue2;                     // 0x09B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9B9[0x7];                                      // 0x09B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x09C0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData7;             // 0x09D8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData7;             // 0x09D8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x0A18(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0A28(0x0018)()
 };
-static_assert(alignof(RewardInfoButtonWidget_C_GetDisplayName) == 0x11827900, "Wrong alignment on RewardInfoButtonWidget_C_GetDisplayName");
-static_assert(sizeof(RewardInfoButtonWidget_C_GetDisplayName) == 0x11827900, "Wrong size on RewardInfoButtonWidget_C_GetDisplayName");
+static_assert(alignof(RewardInfoButtonWidget_C_GetDisplayName) == 0x000008, "Wrong alignment on RewardInfoButtonWidget_C_GetDisplayName");
+static_assert(sizeof(RewardInfoButtonWidget_C_GetDisplayName) == 0x000A40, "Wrong size on RewardInfoButtonWidget_C_GetDisplayName");
 static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, DisplayName) == 0x000000, "Member 'RewardInfoButtonWidget_C_GetDisplayName::DisplayName' has a wrong offset!");
 static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, OutName) == 0x000018, "Member 'RewardInfoButtonWidget_C_GetDisplayName::OutName' has a wrong offset!");
 static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_byte_Variable) == 0x000030, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_byte_Variable' has a wrong offset!");

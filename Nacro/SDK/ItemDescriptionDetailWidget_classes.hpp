@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0288 - 0x0270)
 class UItemDescriptionDetailWidget_C final : public UFortItemDetailElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       ItemDescriptionTextBlock;                          // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ShouldShowOnlyIfItemIsSimple;                      // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          InCollectionBook;                                  // 0x0281(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UItemDescriptionDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemDescriptionDetailWidget_C) == 0x322CBBB8, "Wrong alignment on UItemDescriptionDetailWidget_C");
-static_assert(sizeof(UItemDescriptionDetailWidget_C) == 0x322CBBB8, "Wrong size on UItemDescriptionDetailWidget_C");
+static_assert(alignof(UItemDescriptionDetailWidget_C) == 0x000008, "Wrong alignment on UItemDescriptionDetailWidget_C");
+static_assert(sizeof(UItemDescriptionDetailWidget_C) == 0x000288, "Wrong size on UItemDescriptionDetailWidget_C");
 static_assert(offsetof(UItemDescriptionDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemDescriptionDetailWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemDescriptionDetailWidget_C, ItemDescriptionTextBlock) == 0x000278, "Member 'UItemDescriptionDetailWidget_C::ItemDescriptionTextBlock' has a wrong offset!");
 static_assert(offsetof(UItemDescriptionDetailWidget_C, ShouldShowOnlyIfItemIsSimple) == 0x000280, "Member 'UItemDescriptionDetailWidget_C::ShouldShowOnlyIfItemIsSimple' has a wrong offset!");

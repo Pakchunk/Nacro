@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ObjectivesPanelContent.ObjectivesPanelContent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x0250 - 0x0238)
 class UObjectivesPanelContent_C final : public UCommonUserWidget
 {
 public:
@@ -35,8 +35,8 @@ public:
 		return GetDefaultObjImpl<UObjectivesPanelContent_C>();
 	}
 };
-static_assert(alignof(UObjectivesPanelContent_C) == 0x322CBBB8, "Wrong alignment on UObjectivesPanelContent_C");
-static_assert(sizeof(UObjectivesPanelContent_C) == 0x322CBBB8, "Wrong size on UObjectivesPanelContent_C");
+static_assert(alignof(UObjectivesPanelContent_C) == 0x000008, "Wrong alignment on UObjectivesPanelContent_C");
+static_assert(sizeof(UObjectivesPanelContent_C) == 0x000250, "Wrong size on UObjectivesPanelContent_C");
 static_assert(offsetof(UObjectivesPanelContent_C, MissionTrackerList) == 0x000238, "Member 'UObjectivesPanelContent_C::MissionTrackerList' has a wrong offset!");
 static_assert(offsetof(UObjectivesPanelContent_C, QuestTrackerMainQuestList) == 0x000240, "Member 'UObjectivesPanelContent_C::QuestTrackerMainQuestList' has a wrong offset!");
 static_assert(offsetof(UObjectivesPanelContent_C, QuestTrackerTrackedQuestsList) == 0x000248, "Member 'UObjectivesPanelContent_C::QuestTrackerTrackedQuestsList' has a wrong offset!");

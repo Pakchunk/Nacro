@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LegacyButtonStyle-Close.LegacyButtonStyle-Close_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x1C08 - 0x1C08)
 class ULegacyButtonStyleMinusClose_C final : public ULegacyButtonStyleMinusBase_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<ULegacyButtonStyleMinusClose_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonStyleMinusClose_C) == 0x1182E980, "Wrong alignment on ULegacyButtonStyleMinusClose_C");
-static_assert(sizeof(ULegacyButtonStyleMinusClose_C) == 0x1182E980, "Wrong size on ULegacyButtonStyleMinusClose_C");
+static_assert(alignof(ULegacyButtonStyleMinusClose_C) == 0x000008, "Wrong alignment on ULegacyButtonStyleMinusClose_C");
+static_assert(sizeof(ULegacyButtonStyleMinusClose_C) == 0x001C08, "Wrong size on ULegacyButtonStyleMinusClose_C");
 
 }
 

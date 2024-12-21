@@ -72,8 +72,8 @@ static_assert(offsetof(ItemDetailsWidget_C_ShowUpgradeComparison, CallFunc_GetCo
 static_assert(offsetof(ItemDetailsWidget_C_ShowUpgradeComparison, CallFunc_GetUpgradeStats_ReturnValue) == 0x000018, "Member 'ItemDetailsWidget_C_ShowUpgradeComparison::CallFunc_GetUpgradeStats_ReturnValue' has a wrong offset!");
 
 // Function ItemDetailsWidget.ItemDetailsWidget_C.ItemHasStats
-// 0x0575 (0x0575 - 0x0000)
-struct alignas(0x575) ItemDetailsWidget_C_ItemHasStats final
+// 0x0038 (0x0038 - 0x0000)
+struct ItemDetailsWidget_C_ItemHasStats final
 {
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -92,8 +92,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDetailsWidget_C_ItemHasStats) == 0x000575, "Wrong alignment on ItemDetailsWidget_C_ItemHasStats");
-static_assert(sizeof(ItemDetailsWidget_C_ItemHasStats) == 0x000575, "Wrong size on ItemDetailsWidget_C_ItemHasStats");
+static_assert(alignof(ItemDetailsWidget_C_ItemHasStats) == 0x000008, "Wrong alignment on ItemDetailsWidget_C_ItemHasStats");
+static_assert(sizeof(ItemDetailsWidget_C_ItemHasStats) == 0x000038, "Wrong size on ItemDetailsWidget_C_ItemHasStats");
 static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, Item) == 0x000000, "Member 'ItemDetailsWidget_C_ItemHasStats::Item' has a wrong offset!");
 static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, Stats) == 0x000008, "Member 'ItemDetailsWidget_C_ItemHasStats::Stats' has a wrong offset!");
 static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000010, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");

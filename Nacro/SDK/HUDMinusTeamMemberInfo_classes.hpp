@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass HUD-TeamMemberInfo.HUD-TeamMemberInfo_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0200 (0x0438 - 0x0238)
 class UHUDMinusTeamMemberInfo_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 _Image__Class_Icon;                                // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__Healthbar;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       CommonTextBlock_1;                                 // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -37,7 +37,7 @@ public:
 	class UTeamMemberBluGloIndicator_C*           TeamMemberBluGloIndicator;                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextBlock_6;                                       // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextPlayerName;                                    // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x02A0(0x11827900)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FFortTeamMemberInfo                    MemberInfo;                                        // 0x02A0(0x0190)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          ShowingHealth;                                     // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UHUDMinusTeamMemberInfo_C>();
 	}
 };
-static_assert(alignof(UHUDMinusTeamMemberInfo_C) == 0x322CBBB8, "Wrong alignment on UHUDMinusTeamMemberInfo_C");
-static_assert(sizeof(UHUDMinusTeamMemberInfo_C) == 0x322CBBB8, "Wrong size on UHUDMinusTeamMemberInfo_C");
+static_assert(alignof(UHUDMinusTeamMemberInfo_C) == 0x000008, "Wrong alignment on UHUDMinusTeamMemberInfo_C");
+static_assert(sizeof(UHUDMinusTeamMemberInfo_C) == 0x000438, "Wrong size on UHUDMinusTeamMemberInfo_C");
 static_assert(offsetof(UHUDMinusTeamMemberInfo_C, UberGraphFrame) == 0x000238, "Member 'UHUDMinusTeamMemberInfo_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UHUDMinusTeamMemberInfo_C, _Image__Class_Icon) == 0x000240, "Member 'UHUDMinusTeamMemberInfo_C::_Image__Class_Icon' has a wrong offset!");
 static_assert(offsetof(UHUDMinusTeamMemberInfo_C, _Image__Healthbar) == 0x000248, "Member 'UHUDMinusTeamMemberInfo_C::_Image__Healthbar' has a wrong offset!");

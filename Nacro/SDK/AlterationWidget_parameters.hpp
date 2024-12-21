@@ -20,37 +20,37 @@ namespace SDK::Params
 {
 
 // Function AlterationWidget.AlterationWidget_C.ExecuteUbergraph_AlterationWidget
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct AlterationWidget_C_ExecuteUbergraph_AlterationWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShouldFadeAlteration_ReturnValue;         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget) == 0x11821300, "Wrong alignment on AlterationWidget_C_ExecuteUbergraph_AlterationWidget");
-static_assert(sizeof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget) == 0x11821300, "Wrong size on AlterationWidget_C_ExecuteUbergraph_AlterationWidget");
+static_assert(alignof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget) == 0x000004, "Wrong alignment on AlterationWidget_C_ExecuteUbergraph_AlterationWidget");
+static_assert(sizeof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget) == 0x000018, "Wrong size on AlterationWidget_C_ExecuteUbergraph_AlterationWidget");
 static_assert(offsetof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget, EntryPoint) == 0x000000, "Member 'AlterationWidget_C_ExecuteUbergraph_AlterationWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget, CallFunc_ShouldFadeAlteration_ReturnValue) == 0x000004, "Member 'AlterationWidget_C_ExecuteUbergraph_AlterationWidget::CallFunc_ShouldFadeAlteration_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget, K2Node_MakeStruct_LinearColor) == 0x000008, "Member 'AlterationWidget_C_ExecuteUbergraph_AlterationWidget::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.GetHighlightColor
-// 0x1A618A6C (0x1A618A6C - 0x0000)
-struct alignas(0x1A618A6C) AlterationWidget_C_GetHighlightColor final
+// 0x0048 (0x0048 - 0x0000)
+struct AlterationWidget_C_GetHighlightColor final
 {
 public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0014(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0014(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAlterationHighlighted_ReturnValue;      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_Get_Buff_Color_Color;                     // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0038(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Get_Buff_Color_Color;                     // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0038(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AlterationWidget_C_GetHighlightColor) == 0x1A618A6C, "Wrong alignment on AlterationWidget_C_GetHighlightColor");
-static_assert(sizeof(AlterationWidget_C_GetHighlightColor) == 0x1A618A6C, "Wrong size on AlterationWidget_C_GetHighlightColor");
+static_assert(alignof(AlterationWidget_C_GetHighlightColor) == 0x000004, "Wrong alignment on AlterationWidget_C_GetHighlightColor");
+static_assert(sizeof(AlterationWidget_C_GetHighlightColor) == 0x000048, "Wrong size on AlterationWidget_C_GetHighlightColor");
 static_assert(offsetof(AlterationWidget_C_GetHighlightColor, ReturnValue) == 0x000000, "Member 'AlterationWidget_C_GetHighlightColor::ReturnValue' has a wrong offset!");
 static_assert(offsetof(AlterationWidget_C_GetHighlightColor, Temp_bool_Variable) == 0x000010, "Member 'AlterationWidget_C_GetHighlightColor::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AlterationWidget_C_GetHighlightColor, Temp_struct_Variable) == 0x000014, "Member 'AlterationWidget_C_GetHighlightColor::Temp_struct_Variable' has a wrong offset!");
@@ -80,18 +80,18 @@ static_assert(offsetof(AlterationWidget_C_ShouldFadeAlteration, CallFunc_Not_Pre
 static_assert(offsetof(AlterationWidget_C_ShouldFadeAlteration, CallFunc_BooleanAND_ReturnValue) == 0x000005, "Member 'AlterationWidget_C_ShouldFadeAlteration::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.InitIcon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct AlterationWidget_C_InitIcon final
 {
 public:
-	struct FSlateBrush                            CallFunc_ResizeBrush_NewParam;                     // 0x0000(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_ResizeBrush_NewParam;                     // 0x0000(0x0090)()
 	class UFortAlterationItemDefinition*          CallFunc_GetAlterationDefintion_ReturnValue;       // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x00A0(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x00A0(0x0090)()
 };
-static_assert(alignof(AlterationWidget_C_InitIcon) == 0x11827900, "Wrong alignment on AlterationWidget_C_InitIcon");
-static_assert(sizeof(AlterationWidget_C_InitIcon) == 0x11827900, "Wrong size on AlterationWidget_C_InitIcon");
+static_assert(alignof(AlterationWidget_C_InitIcon) == 0x000008, "Wrong alignment on AlterationWidget_C_InitIcon");
+static_assert(sizeof(AlterationWidget_C_InitIcon) == 0x000130, "Wrong size on AlterationWidget_C_InitIcon");
 static_assert(offsetof(AlterationWidget_C_InitIcon, CallFunc_ResizeBrush_NewParam) == 0x000000, "Member 'AlterationWidget_C_InitIcon::CallFunc_ResizeBrush_NewParam' has a wrong offset!");
 static_assert(offsetof(AlterationWidget_C_InitIcon, CallFunc_GetAlterationDefintion_ReturnValue) == 0x000090, "Member 'AlterationWidget_C_InitIcon::CallFunc_GetAlterationDefintion_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AlterationWidget_C_InitIcon, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'AlterationWidget_C_InitIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -126,27 +126,28 @@ static_assert(offsetof(AlterationWidget_C_InitText, K2Node_DynamicCast_AsFort_Cl
 static_assert(offsetof(AlterationWidget_C_InitText, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'AlterationWidget_C_InitText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.SetLevelText
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct AlterationWidget_C_SetLevelText final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
 	bool                                          CallFunc_IsAlterationHighlighted_ReturnValue;      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetHighlightColor_ReturnValue;            // 0x0034(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0048(0x322CBBB8)()
+	struct FLinearColor                           CallFunc_GetHighlightColor_ReturnValue;            // 0x0034(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0048(0x0028)()
 	int32                                         CallFunc_GetRequiredLevel_ReturnValue;             // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_Select_Default;                             // 0x0078(0x322CBBB8)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x11821D80)(HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_Select_Default;                             // 0x0078(0x0028)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00F0(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
 };
-static_assert(alignof(AlterationWidget_C_SetLevelText) == 0x322CBBB8, "Wrong alignment on AlterationWidget_C_SetLevelText");
-static_assert(sizeof(AlterationWidget_C_SetLevelText) == 0x322CBBB8, "Wrong size on AlterationWidget_C_SetLevelText");
+static_assert(alignof(AlterationWidget_C_SetLevelText) == 0x000008, "Wrong alignment on AlterationWidget_C_SetLevelText");
+static_assert(sizeof(AlterationWidget_C_SetLevelText) == 0x000120, "Wrong size on AlterationWidget_C_SetLevelText");
 static_assert(offsetof(AlterationWidget_C_SetLevelText, Temp_bool_Variable) == 0x000000, "Member 'AlterationWidget_C_SetLevelText::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AlterationWidget_C_SetLevelText, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'AlterationWidget_C_SetLevelText::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(AlterationWidget_C_SetLevelText, CallFunc_IsAlterationHighlighted_ReturnValue) == 0x000030, "Member 'AlterationWidget_C_SetLevelText::CallFunc_IsAlterationHighlighted_ReturnValue' has a wrong offset!");

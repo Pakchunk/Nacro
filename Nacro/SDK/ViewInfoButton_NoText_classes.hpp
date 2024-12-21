@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ViewInfoButton_NoText.ViewInfoButton_NoText_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x08A8 - 0x08A0)
 class UViewInfoButton_NoText_C final : public UCommonButton
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UViewInfoButton_NoText_C>();
 	}
 };
-static_assert(alignof(UViewInfoButton_NoText_C) == 0x322CBBB8, "Wrong alignment on UViewInfoButton_NoText_C");
-static_assert(sizeof(UViewInfoButton_NoText_C) == 0x322CBBB8, "Wrong size on UViewInfoButton_NoText_C");
+static_assert(alignof(UViewInfoButton_NoText_C) == 0x000008, "Wrong alignment on UViewInfoButton_NoText_C");
+static_assert(sizeof(UViewInfoButton_NoText_C) == 0x0008A8, "Wrong size on UViewInfoButton_NoText_C");
 static_assert(offsetof(UViewInfoButton_NoText_C, Content) == 0x0008A0, "Member 'UViewInfoButton_NoText_C::Content' has a wrong offset!");
 
 }

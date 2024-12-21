@@ -18,18 +18,18 @@ namespace SDK::Params
 {
 
 // Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.ExecuteUbergraph_SchematicTooltipCraftingIngredient
-// 0x740065 (0x740065 - 0x0000)
-struct alignas(0x740065) SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient final
+// 0x0004 (0x0004 - 0x0000)
+struct SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient) == 0x740065, "Wrong alignment on SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient");
-static_assert(sizeof(SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient) == 0x740065, "Wrong size on SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient");
+static_assert(alignof(SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient) == 0x000004, "Wrong alignment on SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient");
+static_assert(sizeof(SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient) == 0x000004, "Wrong size on SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient");
 static_assert(offsetof(SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient, EntryPoint) == 0x000000, "Member 'SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient::EntryPoint' has a wrong offset!");
 
 // Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.Refresh
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct SchematicTooltipCraftingIngredient_C_Refresh final
 {
 public:
@@ -42,10 +42,10 @@ public:
 	EFortBrushSize                                K2Node_Select_Default;                             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select2_Default;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0030(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0030(0x0090)()
 };
-static_assert(alignof(SchematicTooltipCraftingIngredient_C_Refresh) == 0x11827900, "Wrong alignment on SchematicTooltipCraftingIngredient_C_Refresh");
-static_assert(sizeof(SchematicTooltipCraftingIngredient_C_Refresh) == 0x11827900, "Wrong size on SchematicTooltipCraftingIngredient_C_Refresh");
+static_assert(alignof(SchematicTooltipCraftingIngredient_C_Refresh) == 0x000008, "Wrong alignment on SchematicTooltipCraftingIngredient_C_Refresh");
+static_assert(sizeof(SchematicTooltipCraftingIngredient_C_Refresh) == 0x0000C0, "Wrong size on SchematicTooltipCraftingIngredient_C_Refresh");
 static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, TotalCount) == 0x000000, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::TotalCount' has a wrong offset!");
 static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, Temp_bool_Variable) == 0x000004, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, Temp_byte_Variable) == 0x000005, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::Temp_byte_Variable' has a wrong offset!");

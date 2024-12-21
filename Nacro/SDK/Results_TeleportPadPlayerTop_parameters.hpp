@@ -59,11 +59,11 @@ static_assert(sizeof(Results_TeleportPadPlayerTop_C_PreConstruct) == 0x000001, "
 static_assert(offsetof(Results_TeleportPadPlayerTop_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_TeleportPadPlayerTop_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.Initialize
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct Results_TeleportPadPlayerTop_C_Initialize final
 {
 public:
-	struct FUniqueNetIdRepl                       UniqueNetID;                                       // 0x0000(0x11821780)(Parm, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       UniqueNetID;                                       // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ScoreReportIndex;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -75,8 +75,8 @@ public:
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayerTop_C_Initialize) == 0x11821780, "Wrong alignment on Results_TeleportPadPlayerTop_C_Initialize");
-static_assert(sizeof(Results_TeleportPadPlayerTop_C_Initialize) == 0x11821780, "Wrong size on Results_TeleportPadPlayerTop_C_Initialize");
+static_assert(alignof(Results_TeleportPadPlayerTop_C_Initialize) == 0x000008, "Wrong alignment on Results_TeleportPadPlayerTop_C_Initialize");
+static_assert(sizeof(Results_TeleportPadPlayerTop_C_Initialize) == 0x000058, "Wrong size on Results_TeleportPadPlayerTop_C_Initialize");
 static_assert(offsetof(Results_TeleportPadPlayerTop_C_Initialize, UniqueNetID) == 0x000000, "Member 'Results_TeleportPadPlayerTop_C_Initialize::UniqueNetID' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayerTop_C_Initialize, ScoreReport) == 0x000018, "Member 'Results_TeleportPadPlayerTop_C_Initialize::ScoreReport' has a wrong offset!");
 static_assert(offsetof(Results_TeleportPadPlayerTop_C_Initialize, ScoreReportIndex) == 0x000020, "Member 'Results_TeleportPadPlayerTop_C_Initialize::ScoreReportIndex' has a wrong offset!");

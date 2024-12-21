@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AdditionalEntriesIndicator.AdditionalEntriesIndicator_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UAdditionalEntriesIndicator_C final : public UCommonUserWidget
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UAdditionalEntriesIndicator_C>();
 	}
 };
-static_assert(alignof(UAdditionalEntriesIndicator_C) == 0x322CBBB8, "Wrong alignment on UAdditionalEntriesIndicator_C");
-static_assert(sizeof(UAdditionalEntriesIndicator_C) == 0x322CBBB8, "Wrong size on UAdditionalEntriesIndicator_C");
+static_assert(alignof(UAdditionalEntriesIndicator_C) == 0x000008, "Wrong alignment on UAdditionalEntriesIndicator_C");
+static_assert(sizeof(UAdditionalEntriesIndicator_C) == 0x000240, "Wrong size on UAdditionalEntriesIndicator_C");
 static_assert(offsetof(UAdditionalEntriesIndicator_C, Image_0) == 0x000238, "Member 'UAdditionalEntriesIndicator_C::Image_0' has a wrong offset!");
 
 }

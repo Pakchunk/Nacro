@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass SubgameSelectScreen.SubgameSelectScreen_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0108 (0x04E8 - 0x03E0)
 class USubgameSelectScreen_C final : public UFortSubGameSelectBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       PanMinusP1P2;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       PanMinusP1;                                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       PanMinusP2;                                        // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -55,7 +55,7 @@ public:
 	uint8                                         Pad_4B1[0x7];                                      // 0x04B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UProgressModalWidget_C*                 LeavingMatchmakingDialog;                          // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               MIDMinusKeyart;                                    // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CycleTimer;                                        // 0x04C8(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           CycleTimer;                                        // 0x04C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         PveRotatorIndex;                                   // 0x04D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSubGameSelectRotatorItems>     Items;                                             // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -101,8 +101,8 @@ public:
 		return GetDefaultObjImpl<USubgameSelectScreen_C>();
 	}
 };
-static_assert(alignof(USubgameSelectScreen_C) == 0x322CBBB8, "Wrong alignment on USubgameSelectScreen_C");
-static_assert(sizeof(USubgameSelectScreen_C) == 0x322CBBB8, "Wrong size on USubgameSelectScreen_C");
+static_assert(alignof(USubgameSelectScreen_C) == 0x000008, "Wrong alignment on USubgameSelectScreen_C");
+static_assert(sizeof(USubgameSelectScreen_C) == 0x0004E8, "Wrong size on USubgameSelectScreen_C");
 static_assert(offsetof(USubgameSelectScreen_C, UberGraphFrame) == 0x0003E0, "Member 'USubgameSelectScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, PanMinusP1P2) == 0x0003E8, "Member 'USubgameSelectScreen_C::PanMinusP1P2' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, PanMinusP1) == 0x0003F0, "Member 'USubgameSelectScreen_C::PanMinusP1' has a wrong offset!");

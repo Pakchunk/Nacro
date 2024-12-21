@@ -159,8 +159,8 @@ static_assert(sizeof(MissionObjectiveProgressBarsManager_C_HandleUpdate) == 0x00
 static_assert(offsetof(MissionObjectiveProgressBarsManager_C_HandleUpdate, Objective) == 0x000000, "Member 'MissionObjectiveProgressBarsManager_C_HandleUpdate::Objective' has a wrong offset!");
 
 // Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.GetHeightEstimate
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) MissionObjectiveProgressBarsManager_C_GetHeightEstimate final
+// 0x0040 (0x0040 - 0x0000)
+struct MissionObjectiveProgressBarsManager_C_GetHeightEstimate final
 {
 public:
 	float                                         Height;                                            // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -180,8 +180,8 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionObjectiveProgressBarsManager_C_GetHeightEstimate) == 0x0000E4, "Wrong alignment on MissionObjectiveProgressBarsManager_C_GetHeightEstimate");
-static_assert(sizeof(MissionObjectiveProgressBarsManager_C_GetHeightEstimate) == 0x0000E4, "Wrong size on MissionObjectiveProgressBarsManager_C_GetHeightEstimate");
+static_assert(alignof(MissionObjectiveProgressBarsManager_C_GetHeightEstimate) == 0x000008, "Wrong alignment on MissionObjectiveProgressBarsManager_C_GetHeightEstimate");
+static_assert(sizeof(MissionObjectiveProgressBarsManager_C_GetHeightEstimate) == 0x000040, "Wrong size on MissionObjectiveProgressBarsManager_C_GetHeightEstimate");
 static_assert(offsetof(MissionObjectiveProgressBarsManager_C_GetHeightEstimate, Height) == 0x000000, "Member 'MissionObjectiveProgressBarsManager_C_GetHeightEstimate::Height' has a wrong offset!");
 static_assert(offsetof(MissionObjectiveProgressBarsManager_C_GetHeightEstimate, HeightEstimate) == 0x000004, "Member 'MissionObjectiveProgressBarsManager_C_GetHeightEstimate::HeightEstimate' has a wrong offset!");
 static_assert(offsetof(MissionObjectiveProgressBarsManager_C_GetHeightEstimate, Temp_int_Variable) == 0x000008, "Member 'MissionObjectiveProgressBarsManager_C_GetHeightEstimate::Temp_int_Variable' has a wrong offset!");

@@ -19,35 +19,36 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C
-// 0x118287A8 (0x11828B00 - 0x0358)
+// 0x05C8 (0x0920 - 0x0358)
 class UVinderTech_Umbrella_AnimBP_C final : public UAnimInstance
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0358(0x11821D80)(Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root_47C162A34E75B5D855F1039C8811E06C; // 0x0360(0x11828B00)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_55B0C7EB4409F55E838D3CA7B7457964; // 0x03A8(0x11828B00)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9592CEBA49F2B067A15FFFBB6AB5105E; // 0x0410(0x11821D80)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5; // 0x0490(0x11821D80)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F; // 0x0510(0x11821D80)()
-	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107; // 0x0590(0x11821D80)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_8F6CE6514B2B120BE5A47CA93BF6B64F; // 0x0610(0x11821D80)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_0FA712374C2DD4AE7BAB068F07EF1E2A; // 0x0680(0x11828B00)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_FB121E7E466BDC2AEC2334AABA7B7973; // 0x06C8(0x11821D80)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_12B937664A6236CA6C6F30B310D7D872; // 0x0738(0x11828B00)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_CAD550DB43A0B090364489A1ED4F53F6; // 0x0780(0x11821D80)()
-	struct FAnimNode_Root                         AnimGraphNode_StateResult_90756A2C41FA0E67C991218B04CCA9C1; // 0x07F0(0x11828B00)()
-	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine_AD38D8EC41D7A5D47CC14C9AC67E6D6E; // 0x0838(0x11821D80)()
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0358(0x0008)(Transient, DuplicateTransient)
+	struct FAnimNode_Root                         AnimGraphNode_Root_47C162A34E75B5D855F1039C8811E06C; // 0x0360(0x0048)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_55B0C7EB4409F55E838D3CA7B7457964; // 0x03A8(0x0060)()
+	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_9592CEBA49F2B067A15FFFBB6AB5105E; // 0x0410(0x0080)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5; // 0x0490(0x0080)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F; // 0x0510(0x0080)()
+	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107; // 0x0590(0x0080)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_8F6CE6514B2B120BE5A47CA93BF6B64F; // 0x0610(0x0070)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_0FA712374C2DD4AE7BAB068F07EF1E2A; // 0x0680(0x0048)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_FB121E7E466BDC2AEC2334AABA7B7973; // 0x06C8(0x0070)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_12B937664A6236CA6C6F30B310D7D872; // 0x0738(0x0048)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_CAD550DB43A0B090364489A1ED4F53F6; // 0x0780(0x0070)()
+	struct FAnimNode_Root                         AnimGraphNode_StateResult_90756A2C41FA0E67C991218B04CCA9C1; // 0x07F0(0x0048)()
+	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine_AD38D8EC41D7A5D47CC14C9AC67E6D6E; // 0x0838(0x00D8)()
 	bool                                          IsParachuteOpen;                                   // 0x0910(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_911[0x3];                                      // 0x0911(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DeltaSeconds;                                      // 0x0914(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_9592CEBA49F2B067A15FFFBB6AB5105E();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void ExecuteUbergraph_VinderTech_Umbrella_AnimBP(int32 EntryPoint);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_9592CEBA49F2B067A15FFFBB6AB5105E();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F();
 
 public:
 	static class UClass* StaticClass()
@@ -59,8 +60,8 @@ public:
 		return GetDefaultObjImpl<UVinderTech_Umbrella_AnimBP_C>();
 	}
 };
-static_assert(alignof(UVinderTech_Umbrella_AnimBP_C) == 0x11828B00, "Wrong alignment on UVinderTech_Umbrella_AnimBP_C");
-static_assert(sizeof(UVinderTech_Umbrella_AnimBP_C) == 0x11828B00, "Wrong size on UVinderTech_Umbrella_AnimBP_C");
+static_assert(alignof(UVinderTech_Umbrella_AnimBP_C) == 0x000010, "Wrong alignment on UVinderTech_Umbrella_AnimBP_C");
+static_assert(sizeof(UVinderTech_Umbrella_AnimBP_C) == 0x000920, "Wrong size on UVinderTech_Umbrella_AnimBP_C");
 static_assert(offsetof(UVinderTech_Umbrella_AnimBP_C, UberGraphFrame) == 0x000358, "Member 'UVinderTech_Umbrella_AnimBP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UVinderTech_Umbrella_AnimBP_C, AnimGraphNode_Root_47C162A34E75B5D855F1039C8811E06C) == 0x000360, "Member 'UVinderTech_Umbrella_AnimBP_C::AnimGraphNode_Root_47C162A34E75B5D855F1039C8811E06C' has a wrong offset!");
 static_assert(offsetof(UVinderTech_Umbrella_AnimBP_C, AnimGraphNode_Slot_55B0C7EB4409F55E838D3CA7B7457964) == 0x0003A8, "Member 'UVinderTech_Umbrella_AnimBP_C::AnimGraphNode_Slot_55B0C7EB4409F55E838D3CA7B7457964' has a wrong offset!");

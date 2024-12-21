@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookProgressionRewardWidget.CollectionBookProgressionRewardWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0260 - 0x0260)
 class UCollectionBookProgressionRewardWidget_C final : public UFortCollectionBookProgressionRewardWidget
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookProgressionRewardWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookProgressionRewardWidget_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookProgressionRewardWidget_C");
-static_assert(sizeof(UCollectionBookProgressionRewardWidget_C) == 0x322CBBB8, "Wrong size on UCollectionBookProgressionRewardWidget_C");
+static_assert(alignof(UCollectionBookProgressionRewardWidget_C) == 0x000008, "Wrong alignment on UCollectionBookProgressionRewardWidget_C");
+static_assert(sizeof(UCollectionBookProgressionRewardWidget_C) == 0x000260, "Wrong size on UCollectionBookProgressionRewardWidget_C");
 
 }
 

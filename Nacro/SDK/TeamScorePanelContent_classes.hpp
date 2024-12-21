@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass TeamScorePanelContent.TeamScorePanelContent_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0008 (0x0240 - 0x0238)
 class UTeamScorePanelContent_C final : public UCommonUserWidget
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UTeamScorePanelContent_C>();
 	}
 };
-static_assert(alignof(UTeamScorePanelContent_C) == 0x322CBBB8, "Wrong alignment on UTeamScorePanelContent_C");
-static_assert(sizeof(UTeamScorePanelContent_C) == 0x322CBBB8, "Wrong size on UTeamScorePanelContent_C");
+static_assert(alignof(UTeamScorePanelContent_C) == 0x000008, "Wrong alignment on UTeamScorePanelContent_C");
+static_assert(sizeof(UTeamScorePanelContent_C) == 0x000240, "Wrong size on UTeamScorePanelContent_C");
 static_assert(offsetof(UTeamScorePanelContent_C, TeamScoreDetailsContent) == 0x000238, "Member 'UTeamScorePanelContent_C::TeamScoreDetailsContent' has a wrong offset!");
 
 }

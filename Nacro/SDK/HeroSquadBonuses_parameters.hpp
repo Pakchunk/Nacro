@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function HeroSquadBonuses.HeroSquadBonuses_C.OnSquadSlotSelected
-// 0x336C (0x336C - 0x0000)
-struct alignas(0x336C) HeroSquadBonuses_C_OnSquadSlotSelected final
+// 0x0028 (0x0028 - 0x0000)
+struct HeroSquadBonuses_C_OnSquadSlotSelected final
 {
 public:
 	int32                                         SquadSlotIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,8 +29,8 @@ public:
 	class UHeroSquadBonus_C*                      K2Node_DynamicCast_AsHero_Squad_Bonus2;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeroSquadBonuses_C_OnSquadSlotSelected) == 0x00336C, "Wrong alignment on HeroSquadBonuses_C_OnSquadSlotSelected");
-static_assert(sizeof(HeroSquadBonuses_C_OnSquadSlotSelected) == 0x00336C, "Wrong size on HeroSquadBonuses_C_OnSquadSlotSelected");
+static_assert(alignof(HeroSquadBonuses_C_OnSquadSlotSelected) == 0x000008, "Wrong alignment on HeroSquadBonuses_C_OnSquadSlotSelected");
+static_assert(sizeof(HeroSquadBonuses_C_OnSquadSlotSelected) == 0x000028, "Wrong size on HeroSquadBonuses_C_OnSquadSlotSelected");
 static_assert(offsetof(HeroSquadBonuses_C_OnSquadSlotSelected, SquadSlotIndex) == 0x000000, "Member 'HeroSquadBonuses_C_OnSquadSlotSelected::SquadSlotIndex' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonuses_C_OnSquadSlotSelected, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'HeroSquadBonuses_C_OnSquadSlotSelected::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonuses_C_OnSquadSlotSelected, K2Node_DynamicCast_AsHero_Squad_Bonus) == 0x000008, "Member 'HeroSquadBonuses_C_OnSquadSlotSelected::K2Node_DynamicCast_AsHero_Squad_Bonus' has a wrong offset!");

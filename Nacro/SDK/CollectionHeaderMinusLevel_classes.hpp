@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CollectionHeader-Level.CollectionHeader-Level_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UCollectionHeaderMinusLevel_C : public UCommonBorderStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UCollectionHeaderMinusLevel_C>();
 	}
 };
-static_assert(alignof(UCollectionHeaderMinusLevel_C) == 0x11827900, "Wrong alignment on UCollectionHeaderMinusLevel_C");
-static_assert(sizeof(UCollectionHeaderMinusLevel_C) == 0x11827900, "Wrong size on UCollectionHeaderMinusLevel_C");
+static_assert(alignof(UCollectionHeaderMinusLevel_C) == 0x000008, "Wrong alignment on UCollectionHeaderMinusLevel_C");
+static_assert(sizeof(UCollectionHeaderMinusLevel_C) == 0x0000B8, "Wrong size on UCollectionHeaderMinusLevel_C");
 
 }
 

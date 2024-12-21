@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "ProgressBarType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteUI_structs.hpp"
+#include "ProgressBarType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "FortniteUI_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0340 (0x0578 - 0x0238)
 class UAthenaViewTargetHitPointBar_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         _Horizontal_Box__Stat_Text;                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__Baseplate;                                 // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 _Image__Bevel;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,12 +46,12 @@ public:
 	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Fill_Texture;                                      // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Gloss_Texture;                                     // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Critical_Color_A;                                  // 0x02C0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Critical_Color_B;                                  // 0x02D0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Critical_Color_C;                                  // 0x02E0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Critical_Color_A;                                  // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Critical_Color_B;                                  // 0x02D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Critical_Color_C;                                  // 0x02E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Last_Value;                                        // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FadeUpdateRate;                                    // 0x02F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMultiSizeFont                     MultiFont;                                         // 0x02F8(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortMultiSizeFont                     MultiFont;                                         // 0x02F8(0x0270)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UTexture2D*                             Baseplate_Texture;                                 // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Volatile;                                          // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DBNOStateCache;                                    // 0x0571(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -81,8 +81,8 @@ public:
 		return GetDefaultObjImpl<UAthenaViewTargetHitPointBar_C>();
 	}
 };
-static_assert(alignof(UAthenaViewTargetHitPointBar_C) == 0x322CBBB8, "Wrong alignment on UAthenaViewTargetHitPointBar_C");
-static_assert(sizeof(UAthenaViewTargetHitPointBar_C) == 0x322CBBB8, "Wrong size on UAthenaViewTargetHitPointBar_C");
+static_assert(alignof(UAthenaViewTargetHitPointBar_C) == 0x000008, "Wrong alignment on UAthenaViewTargetHitPointBar_C");
+static_assert(sizeof(UAthenaViewTargetHitPointBar_C) == 0x000578, "Wrong size on UAthenaViewTargetHitPointBar_C");
 static_assert(offsetof(UAthenaViewTargetHitPointBar_C, UberGraphFrame) == 0x000238, "Member 'UAthenaViewTargetHitPointBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Horizontal_Box__Stat_Text) == 0x000240, "Member 'UAthenaViewTargetHitPointBar_C::_Horizontal_Box__Stat_Text' has a wrong offset!");
 static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Image__Baseplate) == 0x000248, "Member 'UAthenaViewTargetHitPointBar_C::_Image__Baseplate' has a wrong offset!");

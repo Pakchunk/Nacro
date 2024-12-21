@@ -18,19 +18,19 @@ namespace SDK::Params
 {
 
 // Function AthenaPlayerInfo.AthenaPlayerInfo_C.ExecuteUbergraph_AthenaPlayerInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0340 (0x0340 - 0x0000)
 struct AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(struct FFortTeamMemberInfo& PlayerInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFortTeamMemberInfo                    K2Node_CustomEvent_PlayerInfo;                     // 0x0018(0x11827900)(ConstParm)
+	struct FFortTeamMemberInfo                    K2Node_CustomEvent_PlayerInfo;                     // 0x0018(0x0190)(ConstParm)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x01B0(0x11827900)()
+	struct FFortTeamMemberInfo                    CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo; // 0x01B0(0x0190)()
 };
-static_assert(alignof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo) == 0x11821780, "Wrong alignment on AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo");
-static_assert(sizeof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo) == 0x11821780, "Wrong size on AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo");
+static_assert(alignof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo) == 0x000008, "Wrong alignment on AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo");
+static_assert(sizeof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo) == 0x000340, "Wrong size on AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo");
 static_assert(offsetof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo, EntryPoint) == 0x000000, "Member 'AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo, K2Node_CustomEvent_PlayerInfo) == 0x000018, "Member 'AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo::K2Node_CustomEvent_PlayerInfo' has a wrong offset!");
@@ -38,22 +38,22 @@ static_assert(offsetof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo, Cal
 static_assert(offsetof(AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x0001B0, "Member 'AthenaPlayerInfo_C_ExecuteUbergraph_AthenaPlayerInfo::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
 
 // Function AthenaPlayerInfo.AthenaPlayerInfo_C.HandlePlayerStateChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct AthenaPlayerInfo_C_HandlePlayerStateChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x0190)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaPlayerInfo_C_HandlePlayerStateChanged) == 0x11821780, "Wrong alignment on AthenaPlayerInfo_C_HandlePlayerStateChanged");
-static_assert(sizeof(AthenaPlayerInfo_C_HandlePlayerStateChanged) == 0x11821780, "Wrong size on AthenaPlayerInfo_C_HandlePlayerStateChanged");
+static_assert(alignof(AthenaPlayerInfo_C_HandlePlayerStateChanged) == 0x000008, "Wrong alignment on AthenaPlayerInfo_C_HandlePlayerStateChanged");
+static_assert(sizeof(AthenaPlayerInfo_C_HandlePlayerStateChanged) == 0x000190, "Wrong size on AthenaPlayerInfo_C_HandlePlayerStateChanged");
 static_assert(offsetof(AthenaPlayerInfo_C_HandlePlayerStateChanged, PlayerInfo) == 0x000000, "Member 'AthenaPlayerInfo_C_HandlePlayerStateChanged::PlayerInfo' has a wrong offset!");
 
 // Function AthenaPlayerInfo.AthenaPlayerInfo_C.UpdateLocalPlayerInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct AthenaPlayerInfo_C_UpdateLocalPlayerInfo final
 {
 public:
-	struct FFortTeamMemberInfo                    Player_Info;                                       // 0x0000(0x11827900)(Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    Player_Info;                                       // 0x0000(0x0190)(Parm, OutParm, ReferenceParm)
 	bool                                          Temp_bool_Variable;                                // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0192(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -70,8 +70,8 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x01AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x01AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaPlayerInfo_C_UpdateLocalPlayerInfo) == 0x11821780, "Wrong alignment on AthenaPlayerInfo_C_UpdateLocalPlayerInfo");
-static_assert(sizeof(AthenaPlayerInfo_C_UpdateLocalPlayerInfo) == 0x11821780, "Wrong size on AthenaPlayerInfo_C_UpdateLocalPlayerInfo");
+static_assert(alignof(AthenaPlayerInfo_C_UpdateLocalPlayerInfo) == 0x000008, "Wrong alignment on AthenaPlayerInfo_C_UpdateLocalPlayerInfo");
+static_assert(sizeof(AthenaPlayerInfo_C_UpdateLocalPlayerInfo) == 0x0001B0, "Wrong size on AthenaPlayerInfo_C_UpdateLocalPlayerInfo");
 static_assert(offsetof(AthenaPlayerInfo_C_UpdateLocalPlayerInfo, Player_Info) == 0x000000, "Member 'AthenaPlayerInfo_C_UpdateLocalPlayerInfo::Player_Info' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerInfo_C_UpdateLocalPlayerInfo, Temp_bool_Variable) == 0x000190, "Member 'AthenaPlayerInfo_C_UpdateLocalPlayerInfo::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaPlayerInfo_C_UpdateLocalPlayerInfo, Temp_byte_Variable) == 0x000191, "Member 'AthenaPlayerInfo_C_UpdateLocalPlayerInfo::Temp_byte_Variable' has a wrong offset!");

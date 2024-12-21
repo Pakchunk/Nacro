@@ -18,14 +18,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01C8 (0x0400 - 0x0238)
 class UAthenaLobbyPlayerPanel_C final : public UCommonUserWidget
 {
 public:
 	class UAthenaLobbyPlayerPanelActions_C*       Actions;                                           // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderMinusTabM;                                   // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaLobbyPlayerPanelDetails_C*       Details;                                           // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0250(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0250(0x0190)(Edit, BlueprintVisible, DisableEditOnInstance)
 	UMulticastDelegateProperty_                   OnGadgetsClicked;                                  // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnClosed;                                          // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
@@ -50,8 +50,8 @@ public:
 		return GetDefaultObjImpl<UAthenaLobbyPlayerPanel_C>();
 	}
 };
-static_assert(alignof(UAthenaLobbyPlayerPanel_C) == 0x322CBBB8, "Wrong alignment on UAthenaLobbyPlayerPanel_C");
-static_assert(sizeof(UAthenaLobbyPlayerPanel_C) == 0x322CBBB8, "Wrong size on UAthenaLobbyPlayerPanel_C");
+static_assert(alignof(UAthenaLobbyPlayerPanel_C) == 0x000008, "Wrong alignment on UAthenaLobbyPlayerPanel_C");
+static_assert(sizeof(UAthenaLobbyPlayerPanel_C) == 0x000400, "Wrong size on UAthenaLobbyPlayerPanel_C");
 static_assert(offsetof(UAthenaLobbyPlayerPanel_C, Actions) == 0x000238, "Member 'UAthenaLobbyPlayerPanel_C::Actions' has a wrong offset!");
 static_assert(offsetof(UAthenaLobbyPlayerPanel_C, BorderMinusTabM) == 0x000240, "Member 'UAthenaLobbyPlayerPanel_C::BorderMinusTabM' has a wrong offset!");
 static_assert(offsetof(UAthenaLobbyPlayerPanel_C, Details) == 0x000248, "Member 'UAthenaLobbyPlayerPanel_C::Details' has a wrong offset!");

@@ -110,25 +110,25 @@ static_assert(sizeof(CollectionBookPageListWidget_C_PreConstruct) == 0x000001, "
 static_assert(offsetof(CollectionBookPageListWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'CollectionBookPageListWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.OnExpansionChanged
-// 0x10000 (0x10000 - 0x0000)
-struct alignas(0x10000) CollectionBookPageListWidget_C_OnExpansionChanged final
+// 0x0001 (0x0001 - 0x0000)
+struct CollectionBookPageListWidget_C_OnExpansionChanged final
 {
 public:
 	bool                                          bExpanded;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookPageListWidget_C_OnExpansionChanged) == 0x010000, "Wrong alignment on CollectionBookPageListWidget_C_OnExpansionChanged");
-static_assert(sizeof(CollectionBookPageListWidget_C_OnExpansionChanged) == 0x010000, "Wrong size on CollectionBookPageListWidget_C_OnExpansionChanged");
+static_assert(alignof(CollectionBookPageListWidget_C_OnExpansionChanged) == 0x000001, "Wrong alignment on CollectionBookPageListWidget_C_OnExpansionChanged");
+static_assert(sizeof(CollectionBookPageListWidget_C_OnExpansionChanged) == 0x000001, "Wrong size on CollectionBookPageListWidget_C_OnExpansionChanged");
 static_assert(offsetof(CollectionBookPageListWidget_C_OnExpansionChanged, bExpanded) == 0x000000, "Member 'CollectionBookPageListWidget_C_OnExpansionChanged::bExpanded' has a wrong offset!");
 
 // Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.SetupAsPage
-// 0x010C (0x010C - 0x0000)
-struct alignas(0x10C) CollectionBookPageListWidget_C_SetupAsPage final
+// 0x0008 (0x0008 - 0x0000)
+struct CollectionBookPageListWidget_C_SetupAsPage final
 {
 public:
 	class UFortCollectionBookPage*                Page;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionBookPageListWidget_C_SetupAsPage) == 0x00010C, "Wrong alignment on CollectionBookPageListWidget_C_SetupAsPage");
-static_assert(sizeof(CollectionBookPageListWidget_C_SetupAsPage) == 0x00010C, "Wrong size on CollectionBookPageListWidget_C_SetupAsPage");
+static_assert(alignof(CollectionBookPageListWidget_C_SetupAsPage) == 0x000008, "Wrong alignment on CollectionBookPageListWidget_C_SetupAsPage");
+static_assert(sizeof(CollectionBookPageListWidget_C_SetupAsPage) == 0x000008, "Wrong size on CollectionBookPageListWidget_C_SetupAsPage");
 static_assert(offsetof(CollectionBookPageListWidget_C_SetupAsPage, Page) == 0x000000, "Member 'CollectionBookPageListWidget_C_SetupAsPage::Page' has a wrong offset!");
 
 // Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.SetupAsCategory
@@ -143,20 +143,20 @@ static_assert(sizeof(CollectionBookPageListWidget_C_SetupAsCategory) == 0x000008
 static_assert(offsetof(CollectionBookPageListWidget_C_SetupAsCategory, Category) == 0x000000, "Member 'CollectionBookPageListWidget_C_SetupAsCategory::Category' has a wrong offset!");
 
 // Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.UpdateAvailableSlotsBorderColors
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors final
 {
 public:
-	struct FLinearColor                           ColorToUse;                                        // 0x0000(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ColorToUse;                                        // 0x0000(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetSelected_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0020(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors) == 0x11821300, "Wrong alignment on CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors");
-static_assert(sizeof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors) == 0x11821300, "Wrong size on CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors");
+static_assert(alignof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors) == 0x000008, "Wrong alignment on CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors");
+static_assert(sizeof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors) == 0x000038, "Wrong size on CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors");
 static_assert(offsetof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors, ColorToUse) == 0x000000, "Member 'CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors::ColorToUse' has a wrong offset!");
 static_assert(offsetof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors, CallFunc_GetSelected_ReturnValue) == 0x000010, "Member 'CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
 static_assert(offsetof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors, Temp_bool_Variable) == 0x000011, "Member 'CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors::Temp_bool_Variable' has a wrong offset!");
@@ -165,8 +165,8 @@ static_assert(offsetof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorder
 static_assert(offsetof(CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'CollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.Update Available Slots Widget
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) CollectionBookPageListWidget_C_Update_Available_Slots_Widget final
+// 0x000C (0x000C - 0x0000)
+struct CollectionBookPageListWidget_C_Update_Available_Slots_Widget final
 {
 public:
 	int32                                         NumAvailableSlots;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -176,8 +176,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionBookPageListWidget_C_Update_Available_Slots_Widget) == 0x0000E4, "Wrong alignment on CollectionBookPageListWidget_C_Update_Available_Slots_Widget");
-static_assert(sizeof(CollectionBookPageListWidget_C_Update_Available_Slots_Widget) == 0x0000E4, "Wrong size on CollectionBookPageListWidget_C_Update_Available_Slots_Widget");
+static_assert(alignof(CollectionBookPageListWidget_C_Update_Available_Slots_Widget) == 0x000004, "Wrong alignment on CollectionBookPageListWidget_C_Update_Available_Slots_Widget");
+static_assert(sizeof(CollectionBookPageListWidget_C_Update_Available_Slots_Widget) == 0x00000C, "Wrong size on CollectionBookPageListWidget_C_Update_Available_Slots_Widget");
 static_assert(offsetof(CollectionBookPageListWidget_C_Update_Available_Slots_Widget, NumAvailableSlots) == 0x000000, "Member 'CollectionBookPageListWidget_C_Update_Available_Slots_Widget::NumAvailableSlots' has a wrong offset!");
 static_assert(offsetof(CollectionBookPageListWidget_C_Update_Available_Slots_Widget, Temp_bool_Variable) == 0x000004, "Member 'CollectionBookPageListWidget_C_Update_Available_Slots_Widget::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(CollectionBookPageListWidget_C_Update_Available_Slots_Widget, CallFunc_Greater_IntInt_ReturnValue) == 0x000005, "Member 'CollectionBookPageListWidget_C_Update_Available_Slots_Widget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");

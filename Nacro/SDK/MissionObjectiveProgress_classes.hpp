@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MissionObjectiveProgress.MissionObjectiveProgress_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0258 - 0x0238)
 class UMissionObjectiveProgress_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UProgressBar*                           ObjectiveProgressBar;                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ProgressBarText;                                   // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bConfigureAsHUD;                                   // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -44,8 +44,8 @@ public:
 		return GetDefaultObjImpl<UMissionObjectiveProgress_C>();
 	}
 };
-static_assert(alignof(UMissionObjectiveProgress_C) == 0x322CBBB8, "Wrong alignment on UMissionObjectiveProgress_C");
-static_assert(sizeof(UMissionObjectiveProgress_C) == 0x322CBBB8, "Wrong size on UMissionObjectiveProgress_C");
+static_assert(alignof(UMissionObjectiveProgress_C) == 0x000008, "Wrong alignment on UMissionObjectiveProgress_C");
+static_assert(sizeof(UMissionObjectiveProgress_C) == 0x000258, "Wrong size on UMissionObjectiveProgress_C");
 static_assert(offsetof(UMissionObjectiveProgress_C, UberGraphFrame) == 0x000238, "Member 'UMissionObjectiveProgress_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMissionObjectiveProgress_C, ObjectiveProgressBar) == 0x000240, "Member 'UMissionObjectiveProgress_C::ObjectiveProgressBar' has a wrong offset!");
 static_assert(offsetof(UMissionObjectiveProgress_C, ProgressBarText) == 0x000248, "Member 'UMissionObjectiveProgress_C::ProgressBarText' has a wrong offset!");

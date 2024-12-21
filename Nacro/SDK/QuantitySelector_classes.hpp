@@ -21,12 +21,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuantitySelector.QuantitySelector_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0780 (0x0B88 - 0x0408)
 class UQuantitySelector_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UCommonTextBlock*                       AdditionalInfo;                                    // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      CancelButton;                                      // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ConfirmButton;                                     // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,9 +42,9 @@ public:
 	UMulticastDelegateProperty_                   OnButtonClickedDispatcher;                         // 0x0470(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnStackValueChangedDispatcher;                     // 0x0480(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UFortItem*                              Item;                                              // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSliderStyle                           SliderStyle_MouseKeyboard;                         // 0x0498(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSliderStyle                           SliderStyle_XboxOne;                               // 0x06E8(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSliderStyle                           SliderStyle_PS4;                                   // 0x0938(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSliderStyle                           SliderStyle_MouseKeyboard;                         // 0x0498(0x0250)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSliderStyle                           SliderStyle_XboxOne;                               // 0x06E8(0x0250)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSliderStyle                           SliderStyle_PS4;                                   // 0x0938(0x0250)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void OnButtonClickedDispatcher__DelegateSignature(int32 ChosenValue, class UFortItem* FortItem);
@@ -77,8 +77,8 @@ public:
 		return GetDefaultObjImpl<UQuantitySelector_C>();
 	}
 };
-static_assert(alignof(UQuantitySelector_C) == 0x322CBBB8, "Wrong alignment on UQuantitySelector_C");
-static_assert(sizeof(UQuantitySelector_C) == 0x322CBBB8, "Wrong size on UQuantitySelector_C");
+static_assert(alignof(UQuantitySelector_C) == 0x000008, "Wrong alignment on UQuantitySelector_C");
+static_assert(sizeof(UQuantitySelector_C) == 0x000B88, "Wrong size on UQuantitySelector_C");
 static_assert(offsetof(UQuantitySelector_C, UberGraphFrame) == 0x000410, "Member 'UQuantitySelector_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuantitySelector_C, AdditionalInfo) == 0x000418, "Member 'UQuantitySelector_C::AdditionalInfo' has a wrong offset!");
 static_assert(offsetof(UQuantitySelector_C, CancelButton) == 0x000420, "Member 'UQuantitySelector_C::CancelButton' has a wrong offset!");

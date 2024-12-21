@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNL_GM_ReflectDamage.GCNL_GM_ReflectDamage_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0010 (0x0478 - 0x0468)
 class AGCNL_GM_ReflectDamage_C final : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0468(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0468(0x0008)(Transient, DuplicateTransient)
 	float                                         ParticleMeshLength;                                // 0x0470(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<AGCNL_GM_ReflectDamage_C>();
 	}
 };
-static_assert(alignof(AGCNL_GM_ReflectDamage_C) == 0x11821D80, "Wrong alignment on AGCNL_GM_ReflectDamage_C");
-static_assert(sizeof(AGCNL_GM_ReflectDamage_C) == 0x11821D80, "Wrong size on AGCNL_GM_ReflectDamage_C");
+static_assert(alignof(AGCNL_GM_ReflectDamage_C) == 0x000008, "Wrong alignment on AGCNL_GM_ReflectDamage_C");
+static_assert(sizeof(AGCNL_GM_ReflectDamage_C) == 0x000478, "Wrong size on AGCNL_GM_ReflectDamage_C");
 static_assert(offsetof(AGCNL_GM_ReflectDamage_C, UberGraphFrame) == 0x000468, "Member 'AGCNL_GM_ReflectDamage_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AGCNL_GM_ReflectDamage_C, ParticleMeshLength) == 0x000470, "Member 'AGCNL_GM_ReflectDamage_C::ParticleMeshLength' has a wrong offset!");
 

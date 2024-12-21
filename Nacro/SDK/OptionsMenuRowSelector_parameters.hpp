@@ -29,7 +29,7 @@ static_assert(sizeof(OptionsMenuRowSelector_C_Selector_Button_Selected__Delegate
 static_assert(offsetof(OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature, Tab_Id) == 0x000000, "Member 'OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature::Tab_Id' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.ExecuteUbergraph_OptionsMenuRowSelector
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector final
 {
 public:
@@ -39,7 +39,7 @@ public:
 	class UCommonButton*                          K2Node_CustomEvent_AssociatedButton;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_ButtonIndex;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0020(0x11829280)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0020(0x0078)(ConstParm)
 	class UCommonButtonGroup*                     CallFunc_SpawnObject_ReturnValue;                  // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -48,15 +48,15 @@ public:
 	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot;          // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x00D4(0x11829280)(NoDestructor)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x00D4(0x0008)(NoDestructor)
 	int32                                         Temp_int_Variable;                                 // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UCommonButton* AssociatedButton, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector) == 0x11829280, "Wrong alignment on OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector");
-static_assert(sizeof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector) == 0x11829280, "Wrong size on OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector");
+static_assert(alignof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector) == 0x000008, "Wrong alignment on OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector");
+static_assert(sizeof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector) == 0x0000F8, "Wrong size on OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector");
 static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, EntryPoint) == 0x000000, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::EntryPoint' has a wrong offset!");
 static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000004, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, CallFunc_Create_ReturnValue) == 0x000008, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::CallFunc_Create_ReturnValue' has a wrong offset!");
@@ -87,14 +87,14 @@ static_assert(sizeof(OptionsMenuRowSelector_C_PreConstruct) == 0x000001, "Wrong 
 static_assert(offsetof(OptionsMenuRowSelector_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'OptionsMenuRowSelector_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.OnMouseLeave
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct OptionsMenuRowSelector_C_OnMouseLeave final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x11829280)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_OnMouseLeave) == 0x11829280, "Wrong alignment on OptionsMenuRowSelector_C_OnMouseLeave");
-static_assert(sizeof(OptionsMenuRowSelector_C_OnMouseLeave) == 0x11829280, "Wrong size on OptionsMenuRowSelector_C_OnMouseLeave");
+static_assert(alignof(OptionsMenuRowSelector_C_OnMouseLeave) == 0x000008, "Wrong alignment on OptionsMenuRowSelector_C_OnMouseLeave");
+static_assert(sizeof(OptionsMenuRowSelector_C_OnMouseLeave) == 0x000078, "Wrong size on OptionsMenuRowSelector_C_OnMouseLeave");
 static_assert(offsetof(OptionsMenuRowSelector_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'OptionsMenuRowSelector_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.OnSelectedButtonChanged_Event_0
@@ -111,7 +111,7 @@ static_assert(offsetof(OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0,
 static_assert(offsetof(OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0, ButtonIndex) == 0x000008, "Member 'OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0::ButtonIndex' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Initialize Row Selector
-// 0x11829280 (0x11829280 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct OptionsMenuRowSelector_C_Initialize_Row_Selector final
 {
 public:
@@ -130,14 +130,14 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0080(0x11829280)(NoDestructor)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0080(0x0008)(NoDestructor)
 	TDelegate<void(class UCommonButton* Button)>  K2Node_CreateDelegate_OutputDelegate;              // 0x0088(0x0010)(ZeroConstructor, NoDestructor)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_Initialize_Row_Selector) == 0x11829280, "Wrong alignment on OptionsMenuRowSelector_C_Initialize_Row_Selector");
-static_assert(sizeof(OptionsMenuRowSelector_C_Initialize_Row_Selector) == 0x11829280, "Wrong size on OptionsMenuRowSelector_C_Initialize_Row_Selector");
+static_assert(alignof(OptionsMenuRowSelector_C_Initialize_Row_Selector) == 0x000008, "Wrong alignment on OptionsMenuRowSelector_C_Initialize_Row_Selector");
+static_assert(sizeof(OptionsMenuRowSelector_C_Initialize_Row_Selector) == 0x0000B0, "Wrong size on OptionsMenuRowSelector_C_Initialize_Row_Selector");
 static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Row_Text) == 0x000000, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Row_Text' has a wrong offset!");
 static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Buttons) == 0x000018, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Buttons' has a wrong offset!");
 static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Hover_Texts_0) == 0x000028, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Hover_Texts_0' has a wrong offset!");

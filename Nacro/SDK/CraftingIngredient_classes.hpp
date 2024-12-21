@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "EFortUITheme_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "UMG_structs.hpp"
 
@@ -21,17 +21,17 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CraftingIngredient.CraftingIngredient_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x02A0 - 0x0260)
 class UCraftingIngredient_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 IconImage;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       InventoryText;                                     // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBox_Divider;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TotalText;                                         // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBox_831;                                   // 0x0288(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSchematicRequirement                  Ingredient;                                        // 0x0290(0x11821780)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
+	struct FSchematicRequirement                  Ingredient;                                        // 0x0290(0x0010)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_CraftingIngredient(int32 EntryPoint);
@@ -50,8 +50,8 @@ public:
 		return GetDefaultObjImpl<UCraftingIngredient_C>();
 	}
 };
-static_assert(alignof(UCraftingIngredient_C) == 0x322CBBB8, "Wrong alignment on UCraftingIngredient_C");
-static_assert(sizeof(UCraftingIngredient_C) == 0x322CBBB8, "Wrong size on UCraftingIngredient_C");
+static_assert(alignof(UCraftingIngredient_C) == 0x000008, "Wrong alignment on UCraftingIngredient_C");
+static_assert(sizeof(UCraftingIngredient_C) == 0x0002A0, "Wrong size on UCraftingIngredient_C");
 static_assert(offsetof(UCraftingIngredient_C, UberGraphFrame) == 0x000260, "Member 'UCraftingIngredient_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCraftingIngredient_C, IconImage) == 0x000268, "Member 'UCraftingIngredient_C::IconImage' has a wrong offset!");
 static_assert(offsetof(UCraftingIngredient_C, InventoryText) == 0x000270, "Member 'UCraftingIngredient_C::InventoryText' has a wrong offset!");

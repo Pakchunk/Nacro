@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ItemManagementTileButtonStyle-ComparisonModeItemToDetail.ItemManagementTileButtonStyle-ComparisonModeItemToDetail_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C final : public UItemManagementTileButtonStyleMinusBase_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C>();
 	}
 };
-static_assert(alignof(UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C) == 0x322CBBB8, "Wrong alignment on UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C");
-static_assert(sizeof(UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C) == 0x322CBBB8, "Wrong size on UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C");
+static_assert(alignof(UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C) == 0x000008, "Wrong alignment on UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C");
+static_assert(sizeof(UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C) == 0x000530, "Wrong size on UItemManagementTileButtonStyleMinusComparisonModeItemToDetail_C");
 
 }
 

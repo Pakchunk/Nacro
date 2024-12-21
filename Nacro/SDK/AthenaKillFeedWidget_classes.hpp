@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaKillFeedWidget.AthenaKillFeedWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0298 - 0x0260)
 class UAthenaKillFeedWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UAthenaKillFeedItem_C*                  KillFeed1;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaKillFeedItem_C*                  KillFeed2;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaKillFeedItem_C*                  KillFeed3;                                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UAthenaKillFeedWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaKillFeedWidget_C) == 0x322CBBB8, "Wrong alignment on UAthenaKillFeedWidget_C");
-static_assert(sizeof(UAthenaKillFeedWidget_C) == 0x322CBBB8, "Wrong size on UAthenaKillFeedWidget_C");
+static_assert(alignof(UAthenaKillFeedWidget_C) == 0x000008, "Wrong alignment on UAthenaKillFeedWidget_C");
+static_assert(sizeof(UAthenaKillFeedWidget_C) == 0x000298, "Wrong size on UAthenaKillFeedWidget_C");
 static_assert(offsetof(UAthenaKillFeedWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaKillFeedWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaKillFeedWidget_C, KillFeed1) == 0x000268, "Member 'UAthenaKillFeedWidget_C::KillFeed1' has a wrong offset!");
 static_assert(offsetof(UAthenaKillFeedWidget_C, KillFeed2) == 0x000270, "Member 'UAthenaKillFeedWidget_C::KillFeed2' has a wrong offset!");

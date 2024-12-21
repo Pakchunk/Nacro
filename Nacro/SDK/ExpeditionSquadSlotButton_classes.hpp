@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0048 (0x0940 - 0x08F8)
 class UExpeditionSquadSlotButton_C final : public UFortSquadSlotSelectorButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F8(0x0008)(Transient, DuplicateTransient)
 	int32                                         SquadSlotIndex;                                    // 0x0900(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	uint8                                         Pad_904[0x4];                                      // 0x0904(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OnSquadSlotSelected;                               // 0x0908(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -56,8 +56,8 @@ public:
 		return GetDefaultObjImpl<UExpeditionSquadSlotButton_C>();
 	}
 };
-static_assert(alignof(UExpeditionSquadSlotButton_C) == 0x322CBBB8, "Wrong alignment on UExpeditionSquadSlotButton_C");
-static_assert(sizeof(UExpeditionSquadSlotButton_C) == 0x322CBBB8, "Wrong size on UExpeditionSquadSlotButton_C");
+static_assert(alignof(UExpeditionSquadSlotButton_C) == 0x000008, "Wrong alignment on UExpeditionSquadSlotButton_C");
+static_assert(sizeof(UExpeditionSquadSlotButton_C) == 0x000940, "Wrong size on UExpeditionSquadSlotButton_C");
 static_assert(offsetof(UExpeditionSquadSlotButton_C, UberGraphFrame) == 0x0008F8, "Member 'UExpeditionSquadSlotButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UExpeditionSquadSlotButton_C, SquadSlotIndex) == 0x000900, "Member 'UExpeditionSquadSlotButton_C::SquadSlotIndex' has a wrong offset!");
 static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotSelected) == 0x000908, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotSelected' has a wrong offset!");

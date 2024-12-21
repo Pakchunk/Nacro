@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.ExecuteUbergraph_JournalQuestRewardDetails
-// 0x002B (0x002B - 0x0000)
-struct alignas(0x2B) JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails final
+// 0x0004 (0x0004 - 0x0000)
+struct JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails) == 0x00002B, "Wrong alignment on JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails");
-static_assert(sizeof(JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails) == 0x00002B, "Wrong size on JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails");
+static_assert(alignof(JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails) == 0x000004, "Wrong alignment on JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails");
+static_assert(sizeof(JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails) == 0x000004, "Wrong size on JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails");
 static_assert(offsetof(JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails, EntryPoint) == 0x000000, "Member 'JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails::EntryPoint' has a wrong offset!");
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.Setup
@@ -60,8 +60,8 @@ static_assert(offsetof(JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog, Su
 static_assert(offsetof(JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog, DisplayPreference) == 0x000038, "Member 'JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog::DisplayPreference' has a wrong offset!");
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.UpdatePlayButtonState
-// 0x084F (0x084F - 0x0000)
-struct alignas(0x84F) JournalQuestRewardDetails_C_UpdatePlayButtonState final
+// 0x0004 (0x0004 - 0x0000)
+struct JournalQuestRewardDetails_C_UpdatePlayButtonState final
 {
 public:
 	bool                                          CallFunc_CanGotoQuest_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -69,23 +69,23 @@ public:
 	EFortQuestState                               CallFunc_GetQuestState_ReturnValue;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JournalQuestRewardDetails_C_UpdatePlayButtonState) == 0x00084F, "Wrong alignment on JournalQuestRewardDetails_C_UpdatePlayButtonState");
-static_assert(sizeof(JournalQuestRewardDetails_C_UpdatePlayButtonState) == 0x00084F, "Wrong size on JournalQuestRewardDetails_C_UpdatePlayButtonState");
+static_assert(alignof(JournalQuestRewardDetails_C_UpdatePlayButtonState) == 0x000001, "Wrong alignment on JournalQuestRewardDetails_C_UpdatePlayButtonState");
+static_assert(sizeof(JournalQuestRewardDetails_C_UpdatePlayButtonState) == 0x000004, "Wrong size on JournalQuestRewardDetails_C_UpdatePlayButtonState");
 static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePlayButtonState, CallFunc_CanGotoQuest_ReturnValue) == 0x000000, "Member 'JournalQuestRewardDetails_C_UpdatePlayButtonState::CallFunc_CanGotoQuest_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePlayButtonState, CallFunc_CanPlayQuest_ReturnValue) == 0x000001, "Member 'JournalQuestRewardDetails_C_UpdatePlayButtonState::CallFunc_CanPlayQuest_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePlayButtonState, CallFunc_GetQuestState_ReturnValue) == 0x000002, "Member 'JournalQuestRewardDetails_C_UpdatePlayButtonState::CallFunc_GetQuestState_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePlayButtonState, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000003, "Member 'JournalQuestRewardDetails_C_UpdatePlayButtonState::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.UpdatePanelInfo
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct JournalQuestRewardDetails_C_UpdatePanelInfo final
 {
 public:
 	class UFortQuestItemDefinition*               CallFunc_GetQuestDefinitionBP_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortRewardInfo                        CallFunc_GetRewardInfo_BP_ReturnValue;             // 0x0008(0x11821780)()
+	struct FFortRewardInfo                        CallFunc_GetRewardInfo_BP_ReturnValue;             // 0x0008(0x0030)()
 };
-static_assert(alignof(JournalQuestRewardDetails_C_UpdatePanelInfo) == 0x11821780, "Wrong alignment on JournalQuestRewardDetails_C_UpdatePanelInfo");
-static_assert(sizeof(JournalQuestRewardDetails_C_UpdatePanelInfo) == 0x11821780, "Wrong size on JournalQuestRewardDetails_C_UpdatePanelInfo");
+static_assert(alignof(JournalQuestRewardDetails_C_UpdatePanelInfo) == 0x000008, "Wrong alignment on JournalQuestRewardDetails_C_UpdatePanelInfo");
+static_assert(sizeof(JournalQuestRewardDetails_C_UpdatePanelInfo) == 0x000038, "Wrong size on JournalQuestRewardDetails_C_UpdatePanelInfo");
 static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePanelInfo, CallFunc_GetQuestDefinitionBP_ReturnValue) == 0x000000, "Member 'JournalQuestRewardDetails_C_UpdatePanelInfo::CallFunc_GetQuestDefinitionBP_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePanelInfo, CallFunc_GetRewardInfo_BP_ReturnValue) == 0x000008, "Member 'JournalQuestRewardDetails_C_UpdatePanelInfo::CallFunc_GetRewardInfo_BP_ReturnValue' has a wrong offset!");
 

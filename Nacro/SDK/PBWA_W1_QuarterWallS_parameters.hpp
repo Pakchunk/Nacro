@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function PBWA_W1_QuarterWallS.PBWA_W1_QuarterWallS_C.ExecuteUbergraph_PBWA_W1_QuarterWallS
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x01A8 (0x01A8 - 0x0000)
 struct PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS final
 {
 public:
@@ -28,17 +28,17 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetAnimatingMID_ReturnValue3;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType;                 // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x0028(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters;                // 0x0028(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType2;                // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_E3[0x5];                                       // 0x00E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x00E8(0x11827600)(ContainsInstancedReference)
+	struct FGameplayCueParameters                 K2Node_GameplayCueEvent_Parameters2;               // 0x00E8(0x00B8)(ContainsInstancedReference)
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue2;           // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS) == 0x11821C00, "Wrong alignment on PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS");
-static_assert(sizeof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS) == 0x11821C00, "Wrong size on PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS");
+static_assert(alignof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS) == 0x000008, "Wrong alignment on PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS");
+static_assert(sizeof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS) == 0x0001A8, "Wrong size on PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS");
 static_assert(offsetof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS, EntryPoint) == 0x000000, "Member 'PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS::EntryPoint' has a wrong offset!");
 static_assert(offsetof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS, CallFunc_GetAnimatingMID_ReturnValue) == 0x000008, "Member 'PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS::CallFunc_GetAnimatingMID_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS, CallFunc_GetAnimatingMID_ReturnValue2) == 0x000010, "Member 'PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS::CallFunc_GetAnimatingMID_ReturnValue2' has a wrong offset!");
@@ -53,30 +53,30 @@ static_assert(offsetof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWa
 static_assert(offsetof(PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS, CallFunc_IsDedicatedServer_ReturnValue2) == 0x0001A1, "Member 'PBWA_W1_QuarterWallS_C_ExecuteUbergraph_PBWA_W1_QuarterWallS::CallFunc_IsDedicatedServer_ReturnValue2' has a wrong offset!");
 
 // Function PBWA_W1_QuarterWallS.PBWA_W1_QuarterWallS_C.GameplayCue.Abilities.Activation.Generic.BannerWallBuff2
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2 final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2) == 0x11821C00, "Wrong alignment on PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2");
-static_assert(sizeof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2) == 0x11821C00, "Wrong size on PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2");
+static_assert(alignof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2) == 0x000008, "Wrong alignment on PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2");
+static_assert(sizeof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2) == 0x0000C0, "Wrong size on PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2");
 static_assert(offsetof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2, EventType) == 0x000000, "Member 'PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2::EventType' has a wrong offset!");
 static_assert(offsetof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2, Parameters) == 0x000008, "Member 'PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff2::Parameters' has a wrong offset!");
 
 // Function PBWA_W1_QuarterWallS.PBWA_W1_QuarterWallS_C.GameplayCue.Abilities.Activation.Generic.BannerWallBuff1
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1 final
 {
 public:
 	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(Parm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1) == 0x11821C00, "Wrong alignment on PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1");
-static_assert(sizeof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1) == 0x11821C00, "Wrong size on PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1");
+static_assert(alignof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1) == 0x000008, "Wrong alignment on PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1");
+static_assert(sizeof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1) == 0x0000C0, "Wrong size on PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1");
 static_assert(offsetof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1, EventType) == 0x000000, "Member 'PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1::EventType' has a wrong offset!");
 static_assert(offsetof(PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1, Parameters) == 0x000008, "Member 'PBWA_W1_QuarterWallS_C_GameplayCue_Abilities_Activation_Generic_BannerWallBuff1::Parameters' has a wrong offset!");
 

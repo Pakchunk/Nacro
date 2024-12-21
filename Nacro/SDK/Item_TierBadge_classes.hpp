@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Item_TierBadge.Item_TierBadge_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0250 - 0x0230)
 class UItem_TierBadge_C final : public UUserWidget
 {
 public:
@@ -45,8 +45,8 @@ public:
 		return GetDefaultObjImpl<UItem_TierBadge_C>();
 	}
 };
-static_assert(alignof(UItem_TierBadge_C) == 0x322CBBB8, "Wrong alignment on UItem_TierBadge_C");
-static_assert(sizeof(UItem_TierBadge_C) == 0x322CBBB8, "Wrong size on UItem_TierBadge_C");
+static_assert(alignof(UItem_TierBadge_C) == 0x000008, "Wrong alignment on UItem_TierBadge_C");
+static_assert(sizeof(UItem_TierBadge_C) == 0x000250, "Wrong size on UItem_TierBadge_C");
 static_assert(offsetof(UItem_TierBadge_C, Border_Baseplate) == 0x000230, "Member 'UItem_TierBadge_C::Border_Baseplate' has a wrong offset!");
 static_assert(offsetof(UItem_TierBadge_C, HorizontalBox_StarGroup) == 0x000238, "Member 'UItem_TierBadge_C::HorizontalBox_StarGroup' has a wrong offset!");
 static_assert(offsetof(UItem_TierBadge_C, SizeBox_Container) == 0x000240, "Member 'UItem_TierBadge_C::SizeBox_Container' has a wrong offset!");

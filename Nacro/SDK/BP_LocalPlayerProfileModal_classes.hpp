@@ -18,20 +18,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0068 (0x0478 - 0x0410)
 class UBP_LocalPlayerProfileModal_C final : public UFortPlayerProfileModalWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UBP_LocalPlayerBannerEditor_C*          BP_LocalPlayerBannerEditor;                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBP_LocalPlayerProfileManagement_C*     BP_LocalPlayerProfileManagement;                   // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  CommonWidgetSwitcher_0;                            // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULightbox_C*                            Lightbox;                                          // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CloseAction;                                       // 0x0438(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CloseAction;                                       // 0x0438(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FName                                   LastChosenIcon;                                    // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   LastChosenColor;                                   // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    PreviousAction;                                    // 0x0458(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    NextAction;                                        // 0x0468(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    PreviousAction;                                    // 0x0458(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    NextAction;                                        // 0x0468(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_LocalPlayerProfileModal(int32 EntryPoint);
@@ -60,8 +60,8 @@ public:
 		return GetDefaultObjImpl<UBP_LocalPlayerProfileModal_C>();
 	}
 };
-static_assert(alignof(UBP_LocalPlayerProfileModal_C) == 0x322CBBB8, "Wrong alignment on UBP_LocalPlayerProfileModal_C");
-static_assert(sizeof(UBP_LocalPlayerProfileModal_C) == 0x322CBBB8, "Wrong size on UBP_LocalPlayerProfileModal_C");
+static_assert(alignof(UBP_LocalPlayerProfileModal_C) == 0x000008, "Wrong alignment on UBP_LocalPlayerProfileModal_C");
+static_assert(sizeof(UBP_LocalPlayerProfileModal_C) == 0x000478, "Wrong size on UBP_LocalPlayerProfileModal_C");
 static_assert(offsetof(UBP_LocalPlayerProfileModal_C, UberGraphFrame) == 0x000410, "Member 'UBP_LocalPlayerProfileModal_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_LocalPlayerProfileModal_C, BP_LocalPlayerBannerEditor) == 0x000418, "Member 'UBP_LocalPlayerProfileModal_C::BP_LocalPlayerBannerEditor' has a wrong offset!");
 static_assert(offsetof(UBP_LocalPlayerProfileModal_C, BP_LocalPlayerProfileManagement) == 0x000420, "Member 'UBP_LocalPlayerProfileModal_C::BP_LocalPlayerProfileManagement' has a wrong offset!");

@@ -30,11 +30,11 @@ static_assert(sizeof(ItemDurabilityMeter_C_ExecuteUbergraph_ItemDurabilityMeter)
 static_assert(offsetof(ItemDurabilityMeter_C_ExecuteUbergraph_ItemDurabilityMeter, EntryPoint) == 0x000000, "Member 'ItemDurabilityMeter_C_ExecuteUbergraph_ItemDurabilityMeter::EntryPoint' has a wrong offset!");
 
 // Function ItemDurabilityMeter.ItemDurabilityMeter_C.Update
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct ItemDurabilityMeter_C_Update final
 {
 public:
-	struct FVector2D                              Draw_Size;                                         // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Draw_Size;                                         // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Durability;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -46,10 +46,10 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0030(0x322CBBB8)(NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0030(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemDurabilityMeter_C_Update) == 0x322CBBB8, "Wrong alignment on ItemDurabilityMeter_C_Update");
-static_assert(sizeof(ItemDurabilityMeter_C_Update) == 0x322CBBB8, "Wrong size on ItemDurabilityMeter_C_Update");
+static_assert(alignof(ItemDurabilityMeter_C_Update) == 0x000008, "Wrong alignment on ItemDurabilityMeter_C_Update");
+static_assert(sizeof(ItemDurabilityMeter_C_Update) == 0x000040, "Wrong size on ItemDurabilityMeter_C_Update");
 static_assert(offsetof(ItemDurabilityMeter_C_Update, Draw_Size) == 0x000000, "Member 'ItemDurabilityMeter_C_Update::Draw_Size' has a wrong offset!");
 static_assert(offsetof(ItemDurabilityMeter_C_Update, Durability) == 0x000008, "Member 'ItemDurabilityMeter_C_Update::Durability' has a wrong offset!");
 static_assert(offsetof(ItemDurabilityMeter_C_Update, CallFunc_Multiply_IntFloat_ReturnValue) == 0x00000C, "Member 'ItemDurabilityMeter_C_Update::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
@@ -92,14 +92,14 @@ static_assert(offsetof(ItemDurabilityMeter_C_Set_Durability, CallFunc_GetDynamic
 static_assert(offsetof(ItemDurabilityMeter_C_Set_Durability, K2Node_Select_Default) == 0x000018, "Member 'ItemDurabilityMeter_C_Set_Durability::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemDurabilityMeter.ItemDurabilityMeter_C.Set Backfill Color
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct ItemDurabilityMeter_C_Set_Backfill_Color final
 {
 public:
-	struct FLinearColor                           Backfill_Color_0;                                  // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Backfill_Color_0;                                  // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemDurabilityMeter_C_Set_Backfill_Color) == 0x11821300, "Wrong alignment on ItemDurabilityMeter_C_Set_Backfill_Color");
-static_assert(sizeof(ItemDurabilityMeter_C_Set_Backfill_Color) == 0x11821300, "Wrong size on ItemDurabilityMeter_C_Set_Backfill_Color");
+static_assert(alignof(ItemDurabilityMeter_C_Set_Backfill_Color) == 0x000004, "Wrong alignment on ItemDurabilityMeter_C_Set_Backfill_Color");
+static_assert(sizeof(ItemDurabilityMeter_C_Set_Backfill_Color) == 0x000010, "Wrong size on ItemDurabilityMeter_C_Set_Backfill_Color");
 static_assert(offsetof(ItemDurabilityMeter_C_Set_Backfill_Color, Backfill_Color_0) == 0x000000, "Member 'ItemDurabilityMeter_C_Set_Backfill_Color::Backfill_Color_0' has a wrong offset!");
 
 }

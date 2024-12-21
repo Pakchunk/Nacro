@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-ItemInfo-Blank-DkBlue.Border-ItemInfo-Blank-DkBlue_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusItemInfoMinusBlankMinusDkBlue_C final : public UBorderMinusItemInfoMinusUnlocked_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusItemInfoMinusBlankMinusDkBlue_C>();
 	}
 };
-static_assert(alignof(UBorderMinusItemInfoMinusBlankMinusDkBlue_C) == 0x11827900, "Wrong alignment on UBorderMinusItemInfoMinusBlankMinusDkBlue_C");
-static_assert(sizeof(UBorderMinusItemInfoMinusBlankMinusDkBlue_C) == 0x11827900, "Wrong size on UBorderMinusItemInfoMinusBlankMinusDkBlue_C");
+static_assert(alignof(UBorderMinusItemInfoMinusBlankMinusDkBlue_C) == 0x000008, "Wrong alignment on UBorderMinusItemInfoMinusBlankMinusDkBlue_C");
+static_assert(sizeof(UBorderMinusItemInfoMinusBlankMinusDkBlue_C) == 0x0000B8, "Wrong size on UBorderMinusItemInfoMinusBlankMinusDkBlue_C");
 
 }
 

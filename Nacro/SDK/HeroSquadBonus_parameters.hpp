@@ -49,28 +49,29 @@ static_assert(sizeof(HeroSquadBonus_C_PreConstruct) == 0x000001, "Wrong size on 
 static_assert(offsetof(HeroSquadBonus_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HeroSquadBonus_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function HeroSquadBonus.HeroSquadBonus_C.UpdateBonusPerk
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0270 (0x0270 - 0x0000)
 struct HeroSquadBonus_C_UpdateBonusPerk final
 {
 public:
 	class FText                                   CallFunc_GetTooltipTitle_ReturnValue;              // 0x0000(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0018(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0018(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
 	bool                                          CallFunc_IsPerkUnlocked_ReturnValue;               // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0084(0x322CBBB8)(NoDestructor)
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0098(0x322CBBB8)()
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0084(0x0010)(NoDestructor)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0098(0x0090)()
 	bool                                          CallFunc_IsPerkEmpty_ReturnValue;                  // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            CallFunc_GetIcon_Brush;                            // 0x0130(0x322CBBB8)()
+	struct FSlateBrush                            CallFunc_GetIcon_Brush;                            // 0x0130(0x0090)()
 	bool                                          CallFunc_GetIcon_ReturnValue;                      // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_SetFieldsInStruct_StructOut;                // 0x01C8(0x322CBBB8)()
+	struct FSlateBrush                            K2Node_SetFieldsInStruct_StructOut;                // 0x01C8(0x0090)()
 	class FText                                   CallFunc_GetTooltipTitle_ReturnValue2;             // 0x0258(0x0018)()
 };
-static_assert(alignof(HeroSquadBonus_C_UpdateBonusPerk) == 0x322CBBB8, "Wrong alignment on HeroSquadBonus_C_UpdateBonusPerk");
-static_assert(sizeof(HeroSquadBonus_C_UpdateBonusPerk) == 0x322CBBB8, "Wrong size on HeroSquadBonus_C_UpdateBonusPerk");
+static_assert(alignof(HeroSquadBonus_C_UpdateBonusPerk) == 0x000008, "Wrong alignment on HeroSquadBonus_C_UpdateBonusPerk");
+static_assert(sizeof(HeroSquadBonus_C_UpdateBonusPerk) == 0x000270, "Wrong size on HeroSquadBonus_C_UpdateBonusPerk");
 static_assert(offsetof(HeroSquadBonus_C_UpdateBonusPerk, CallFunc_GetTooltipTitle_ReturnValue) == 0x000000, "Member 'HeroSquadBonus_C_UpdateBonusPerk::CallFunc_GetTooltipTitle_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateBonusPerk, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'HeroSquadBonus_C_UpdateBonusPerk::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateBonusPerk, K2Node_MakeArray_Array) == 0x000058, "Member 'HeroSquadBonus_C_UpdateBonusPerk::K2Node_MakeArray_Array' has a wrong offset!");
@@ -85,11 +86,11 @@ static_assert(offsetof(HeroSquadBonus_C_UpdateBonusPerk, K2Node_SetFieldsInStruc
 static_assert(offsetof(HeroSquadBonus_C_UpdateBonusPerk, CallFunc_GetTooltipTitle_ReturnValue2) == 0x000258, "Member 'HeroSquadBonus_C_UpdateBonusPerk::CallFunc_GetTooltipTitle_ReturnValue2' has a wrong offset!");
 
 // Function HeroSquadBonus.HeroSquadBonus_C.UpdateSquadBonusIconState
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct HeroSquadBonus_C_UpdateSquadBonusIconState final
 {
 public:
-	struct FSlateColor                            Tint;                                              // 0x0000(0x322CBBB8)(Edit)
+	struct FSlateColor                            Tint;                                              // 0x0000(0x0028)(Edit)
 	EFortSupportBonusType                         Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Temp_object_Variable;                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -103,15 +104,15 @@ public:
 	bool                                          CallFunc_IsPerkUnlocked_ReturnValue;               // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPerkEmpty_ReturnValue;                  // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x0028)()
 	class UObject*                                K2Node_Select_Default;                             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0080(0x322CBBB8)()
-	struct FSlateColor                            K2Node_Select2_Default;                            // 0x00A8(0x322CBBB8)()
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00D0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0080(0x0028)()
+	struct FSlateColor                            K2Node_Select2_Default;                            // 0x00A8(0x0028)()
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00D0(0x0090)()
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeroSquadBonus_C_UpdateSquadBonusIconState) == 0x322CBBB8, "Wrong alignment on HeroSquadBonus_C_UpdateSquadBonusIconState");
-static_assert(sizeof(HeroSquadBonus_C_UpdateSquadBonusIconState) == 0x322CBBB8, "Wrong size on HeroSquadBonus_C_UpdateSquadBonusIconState");
+static_assert(alignof(HeroSquadBonus_C_UpdateSquadBonusIconState) == 0x000008, "Wrong alignment on HeroSquadBonus_C_UpdateSquadBonusIconState");
+static_assert(sizeof(HeroSquadBonus_C_UpdateSquadBonusIconState) == 0x000168, "Wrong size on HeroSquadBonus_C_UpdateSquadBonusIconState");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Tint) == 0x000000, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Tint' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_byte_Variable) == 0x000028, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_UpdateSquadBonusIconState, Temp_object_Variable) == 0x000030, "Member 'HeroSquadBonus_C_UpdateSquadBonusIconState::Temp_object_Variable' has a wrong offset!");
@@ -152,8 +153,8 @@ static_assert(offsetof(HeroSquadBonus_C_SetBackgroundGlow, Temp_byte_Variable2) 
 static_assert(offsetof(HeroSquadBonus_C_SetBackgroundGlow, K2Node_Select_Default) == 0x000004, "Member 'HeroSquadBonus_C_SetBackgroundGlow::K2Node_Select_Default' has a wrong offset!");
 
 // Function HeroSquadBonus.HeroSquadBonus_C.Get_ToolTipWidget
-// 0x5F0065 (0x5F0065 - 0x0000)
-struct alignas(0x5F0065) HeroSquadBonus_C_Get_ToolTipWidget final
+// 0x0048 (0x0048 - 0x0000)
+struct HeroSquadBonus_C_Get_ToolTipWidget final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -162,8 +163,8 @@ public:
 	class FText                                   CallFunc_GetCombinedTooltipDescription_ReturnValue; // 0x0028(0x0018)()
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroSquadBonus_C_Get_ToolTipWidget) == 0x5F0065, "Wrong alignment on HeroSquadBonus_C_Get_ToolTipWidget");
-static_assert(sizeof(HeroSquadBonus_C_Get_ToolTipWidget) == 0x5F0065, "Wrong size on HeroSquadBonus_C_Get_ToolTipWidget");
+static_assert(alignof(HeroSquadBonus_C_Get_ToolTipWidget) == 0x000008, "Wrong alignment on HeroSquadBonus_C_Get_ToolTipWidget");
+static_assert(sizeof(HeroSquadBonus_C_Get_ToolTipWidget) == 0x000048, "Wrong size on HeroSquadBonus_C_Get_ToolTipWidget");
 static_assert(offsetof(HeroSquadBonus_C_Get_ToolTipWidget, ReturnValue) == 0x000000, "Member 'HeroSquadBonus_C_Get_ToolTipWidget::ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_Get_ToolTipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'HeroSquadBonus_C_Get_ToolTipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(HeroSquadBonus_C_Get_ToolTipWidget, CallFunc_GetTooltipTitle_ReturnValue) == 0x000010, "Member 'HeroSquadBonus_C_Get_ToolTipWidget::CallFunc_GetTooltipTitle_ReturnValue' has a wrong offset!");

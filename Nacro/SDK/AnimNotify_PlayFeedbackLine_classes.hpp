@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass AnimNotify_PlayFeedbackLine.AnimNotify_PlayFeedbackLine_C
-// 0x11821748 (0x11821780 - 0x0038)
+// 0x0020 (0x0058 - 0x0038)
 class UAnimNotify_PlayFeedbackLine_C final : public UAnimNotify
 {
 public:
-	struct FFortFeedbackHandle                    Event;                                             // 0x0038(0x11821780)(Edit, BlueprintVisible, NoDestructor)
+	struct FFortFeedbackHandle                    Event;                                             // 0x0038(0x0018)(Edit, BlueprintVisible, NoDestructor)
 	bool                                          bAllowReplication;                                 // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
@@ -38,8 +38,8 @@ public:
 		return GetDefaultObjImpl<UAnimNotify_PlayFeedbackLine_C>();
 	}
 };
-static_assert(alignof(UAnimNotify_PlayFeedbackLine_C) == 0x11821780, "Wrong alignment on UAnimNotify_PlayFeedbackLine_C");
-static_assert(sizeof(UAnimNotify_PlayFeedbackLine_C) == 0x11821780, "Wrong size on UAnimNotify_PlayFeedbackLine_C");
+static_assert(alignof(UAnimNotify_PlayFeedbackLine_C) == 0x000008, "Wrong alignment on UAnimNotify_PlayFeedbackLine_C");
+static_assert(sizeof(UAnimNotify_PlayFeedbackLine_C) == 0x000058, "Wrong size on UAnimNotify_PlayFeedbackLine_C");
 static_assert(offsetof(UAnimNotify_PlayFeedbackLine_C, Event) == 0x000038, "Member 'UAnimNotify_PlayFeedbackLine_C::Event' has a wrong offset!");
 static_assert(offsetof(UAnimNotify_PlayFeedbackLine_C, bAllowReplication) == 0x000050, "Member 'UAnimNotify_PlayFeedbackLine_C::bAllowReplication' has a wrong offset!");
 

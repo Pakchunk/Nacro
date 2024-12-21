@@ -19,8 +19,8 @@ namespace SDK::Params
 {
 
 // Function Results_CommanderXP.Results_CommanderXP_C.ExecuteUbergraph_Results_CommanderXP
-// 0x0039 (0x0039 - 0x0000)
-struct alignas(0x39) Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP final
+// 0x0020 (0x0020 - 0x0000)
+struct Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -41,8 +41,8 @@ public:
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP) == 0x000039, "Wrong alignment on Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP");
-static_assert(sizeof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP) == 0x000039, "Wrong size on Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP");
+static_assert(alignof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP) == 0x000008, "Wrong alignment on Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP");
+static_assert(sizeof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP) == 0x000020, "Wrong size on Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP");
 static_assert(offsetof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP, EntryPoint) == 0x000000, "Member 'Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP, CallFunc_BooleanOR_ReturnValue2) == 0x000005, "Member 'Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
@@ -61,14 +61,14 @@ static_assert(offsetof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderX
 static_assert(offsetof(Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP, K2Node_ComponentBoundEvent_Button) == 0x000018, "Member 'Results_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
-// 0x007B (0x007B - 0x0000)
-struct alignas(0x7B) Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x00007B, "Wrong alignment on Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x00007B, "Wrong size on Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__Results_CommanderXPBar_K2Node_ComponentBoundEvent_1_LeveledUp__DelegateSignature
@@ -83,7 +83,7 @@ static_assert(sizeof(Results_CommanderXP_C_BndEvt__Results_CommanderXPBar_K2Node
 static_assert(offsetof(Results_CommanderXP_C_BndEvt__Results_CommanderXPBar_K2Node_ComponentBoundEvent_1_LeveledUp__DelegateSignature, NewLevel) == 0x000000, "Member 'Results_CommanderXP_C_BndEvt__Results_CommanderXPBar_K2Node_ComponentBoundEvent_1_LeveledUp__DelegateSignature::NewLevel' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.Initialize
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01E0 (0x01E0 - 0x0000)
 struct Results_CommanderXP_C_Initialize final
 {
 public:
@@ -96,7 +96,7 @@ public:
 	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0020(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortHomeBaseInfo                      CallFunc_GetHomeBaseInfo_Result;                   // 0x0038(0x52245)()
+	struct FFortHomeBaseInfo                      CallFunc_GetHomeBaseInfo_Result;                   // 0x0038(0x0040)()
 	TSoftObjectPtr<class UTexture2D>              CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x0078(0x0020)(HasGetValueTypeHash)
 	class UObject*                                CallFunc_Conv_AssetToObject_ReturnValue;           // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -108,13 +108,13 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue3;                  // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortHomeBaseInfo                      CallFunc_GetHomeBaseInfo_Result2;                  // 0x00D8(0x52245)()
+	struct FFortHomeBaseInfo                      CallFunc_GetHomeBaseInfo_Result2;                  // 0x00D8(0x0040)()
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue2;           // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortItemQuantityPair>          CallFunc_GetAccountLevelUpRewards_Rewards;         // 0x0130(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0140(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0140(0x0028)()
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -124,15 +124,15 @@ public:
 	class AFortPlayerState*                       K2Node_DynamicCast_AsFort_Player_State;            // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0190(0x11821780)(HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       CallFunc_GetUniqueID_ReturnValue;                  // 0x0190(0x0018)(HasGetValueTypeHash)
 	int32                                         CallFunc_GetScoreReportIndex_ReturnValue;          // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x01AC(0x1182E980)(NoDestructor)
+	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x01AC(0x002C)(NoDestructor)
 	bool                                          CallFunc_GetXpInfo_ReturnValue;                    // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D9[0x3];                                      // 0x01D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXP_C_Initialize) == 0x1182E980, "Wrong alignment on Results_CommanderXP_C_Initialize");
-static_assert(sizeof(Results_CommanderXP_C_Initialize) == 0x1182E980, "Wrong size on Results_CommanderXP_C_Initialize");
+static_assert(alignof(Results_CommanderXP_C_Initialize) == 0x000008, "Wrong alignment on Results_CommanderXP_C_Initialize");
+static_assert(sizeof(Results_CommanderXP_C_Initialize) == 0x0001E0, "Wrong size on Results_CommanderXP_C_Initialize");
 static_assert(offsetof(Results_CommanderXP_C_Initialize, InScoreReport) == 0x000000, "Member 'Results_CommanderXP_C_Initialize::InScoreReport' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_Initialize, TeamTotalScore_0) == 0x000008, "Member 'Results_CommanderXP_C_Initialize::TeamTotalScore_0' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_Initialize, SkillPoints) == 0x000010, "Member 'Results_CommanderXP_C_Initialize::SkillPoints' has a wrong offset!");
@@ -170,24 +170,24 @@ static_assert(offsetof(Results_CommanderXP_C_Initialize, CallFunc_GetXpInfo_Retu
 static_assert(offsetof(Results_CommanderXP_C_Initialize, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0001DC, "Member 'Results_CommanderXP_C_Initialize::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.UpdatePointsForLevel
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00D0 (0x00D0 - 0x0000)
 struct Results_CommanderXP_C_UpdatePointsForLevel final
 {
 public:
 	int32                                         Level;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RewardedPoints;                                    // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0018)()
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortItemQuantityPair>          CallFunc_GetAccountLevelUpRewards_Rewards;         // 0x0098(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x00A8(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x00A8(0x0028)()
 };
-static_assert(alignof(Results_CommanderXP_C_UpdatePointsForLevel) == 0x11821D80, "Wrong alignment on Results_CommanderXP_C_UpdatePointsForLevel");
-static_assert(sizeof(Results_CommanderXP_C_UpdatePointsForLevel) == 0x11821D80, "Wrong size on Results_CommanderXP_C_UpdatePointsForLevel");
+static_assert(alignof(Results_CommanderXP_C_UpdatePointsForLevel) == 0x000008, "Wrong alignment on Results_CommanderXP_C_UpdatePointsForLevel");
+static_assert(sizeof(Results_CommanderXP_C_UpdatePointsForLevel) == 0x0000D0, "Wrong size on Results_CommanderXP_C_UpdatePointsForLevel");
 static_assert(offsetof(Results_CommanderXP_C_UpdatePointsForLevel, Level) == 0x000000, "Member 'Results_CommanderXP_C_UpdatePointsForLevel::Level' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_UpdatePointsForLevel, RewardedPoints) == 0x000004, "Member 'Results_CommanderXP_C_UpdatePointsForLevel::RewardedPoints' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_UpdatePointsForLevel, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'Results_CommanderXP_C_UpdatePointsForLevel::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
@@ -200,55 +200,55 @@ static_assert(offsetof(Results_CommanderXP_C_UpdatePointsForLevel, CallFunc_GetA
 static_assert(offsetof(Results_CommanderXP_C_UpdatePointsForLevel, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'Results_CommanderXP_C_UpdatePointsForLevel::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.UpdatePointsText
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct Results_CommanderXP_C_UpdatePointsText final
 {
 public:
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0000(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0000(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0050(0x0018)()
 };
-static_assert(alignof(Results_CommanderXP_C_UpdatePointsText) == 0x11821D80, "Wrong alignment on Results_CommanderXP_C_UpdatePointsText");
-static_assert(sizeof(Results_CommanderXP_C_UpdatePointsText) == 0x11821D80, "Wrong size on Results_CommanderXP_C_UpdatePointsText");
+static_assert(alignof(Results_CommanderXP_C_UpdatePointsText) == 0x000008, "Wrong alignment on Results_CommanderXP_C_UpdatePointsText");
+static_assert(sizeof(Results_CommanderXP_C_UpdatePointsText) == 0x000068, "Wrong size on Results_CommanderXP_C_UpdatePointsText");
 static_assert(offsetof(Results_CommanderXP_C_UpdatePointsText, K2Node_MakeStruct_FormatArgumentData) == 0x000000, "Member 'Results_CommanderXP_C_UpdatePointsText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_UpdatePointsText, K2Node_MakeArray_Array) == 0x000040, "Member 'Results_CommanderXP_C_UpdatePointsText::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_UpdatePointsText, CallFunc_Format_ReturnValue) == 0x000050, "Member 'Results_CommanderXP_C_UpdatePointsText::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.SkipToFinalState
-// 0x580065 (0x580065 - 0x0000)
-struct alignas(0x580065) Results_CommanderXP_C_SkipToFinalState final
+// 0x0001 (0x0001 - 0x0000)
+struct Results_CommanderXP_C_SkipToFinalState final
 {
 public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXP_C_SkipToFinalState) == 0x580065, "Wrong alignment on Results_CommanderXP_C_SkipToFinalState");
-static_assert(sizeof(Results_CommanderXP_C_SkipToFinalState) == 0x580065, "Wrong size on Results_CommanderXP_C_SkipToFinalState");
+static_assert(alignof(Results_CommanderXP_C_SkipToFinalState) == 0x000001, "Wrong alignment on Results_CommanderXP_C_SkipToFinalState");
+static_assert(sizeof(Results_CommanderXP_C_SkipToFinalState) == 0x000001, "Wrong size on Results_CommanderXP_C_SkipToFinalState");
 static_assert(offsetof(Results_CommanderXP_C_SkipToFinalState, CallFunc_Greater_IntInt_ReturnValue) == 0x000000, "Member 'Results_CommanderXP_C_SkipToFinalState::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.SetSkippingToEnd
-// 0x750069 (0x750069 - 0x0000)
-struct alignas(0x750069) Results_CommanderXP_C_SetSkippingToEnd final
+// 0x0003 (0x0003 - 0x0000)
+struct Results_CommanderXP_C_SetSkippingToEnd final
 {
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue2;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue3;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXP_C_SetSkippingToEnd) == 0x750069, "Wrong alignment on Results_CommanderXP_C_SetSkippingToEnd");
-static_assert(sizeof(Results_CommanderXP_C_SetSkippingToEnd) == 0x750069, "Wrong size on Results_CommanderXP_C_SetSkippingToEnd");
+static_assert(alignof(Results_CommanderXP_C_SetSkippingToEnd) == 0x000001, "Wrong alignment on Results_CommanderXP_C_SetSkippingToEnd");
+static_assert(sizeof(Results_CommanderXP_C_SetSkippingToEnd) == 0x000003, "Wrong size on Results_CommanderXP_C_SetSkippingToEnd");
 static_assert(offsetof(Results_CommanderXP_C_SetSkippingToEnd, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'Results_CommanderXP_C_SetSkippingToEnd::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_SetSkippingToEnd, CallFunc_IsAnimationPlaying_ReturnValue2) == 0x000001, "Member 'Results_CommanderXP_C_SetSkippingToEnd::CallFunc_IsAnimationPlaying_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(Results_CommanderXP_C_SetSkippingToEnd, CallFunc_IsAnimationPlaying_ReturnValue3) == 0x000002, "Member 'Results_CommanderXP_C_SetSkippingToEnd::CallFunc_IsAnimationPlaying_ReturnValue3' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.PlayAnimationCommon
-// 0x00C8 (0x00C8 - 0x0000)
-struct alignas(0xC8) Results_CommanderXP_C_PlayAnimationCommon final
+// 0x0008 (0x0008 - 0x0000)
+struct Results_CommanderXP_C_PlayAnimationCommon final
 {
 public:
 	class UWidgetAnimation*                       Animation;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXP_C_PlayAnimationCommon) == 0x0000C8, "Wrong alignment on Results_CommanderXP_C_PlayAnimationCommon");
-static_assert(sizeof(Results_CommanderXP_C_PlayAnimationCommon) == 0x0000C8, "Wrong size on Results_CommanderXP_C_PlayAnimationCommon");
+static_assert(alignof(Results_CommanderXP_C_PlayAnimationCommon) == 0x000008, "Wrong alignment on Results_CommanderXP_C_PlayAnimationCommon");
+static_assert(sizeof(Results_CommanderXP_C_PlayAnimationCommon) == 0x000008, "Wrong size on Results_CommanderXP_C_PlayAnimationCommon");
 static_assert(offsetof(Results_CommanderXP_C_PlayAnimationCommon, Animation) == 0x000000, "Member 'Results_CommanderXP_C_PlayAnimationCommon::Animation' has a wrong offset!");
 
 // Function Results_CommanderXP.Results_CommanderXP_C.Focus

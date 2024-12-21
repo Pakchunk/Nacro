@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BluGloManager.BluGloManager_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0060 (0x0480 - 0x0420)
 class ABluGloManager_C final : public AFortBluGloManager
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<class ATiered_BluGlo_Parent_C*>        PossibleSpawnLocationsArray;                       // 0x0430(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	TArray<class ATiered_BluGlo_Parent_C*>        OccupiedNodes;                                     // 0x0440(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
@@ -70,8 +70,8 @@ public:
 		return GetDefaultObjImpl<ABluGloManager_C>();
 	}
 };
-static_assert(alignof(ABluGloManager_C) == 0x11827900, "Wrong alignment on ABluGloManager_C");
-static_assert(sizeof(ABluGloManager_C) == 0x11827900, "Wrong size on ABluGloManager_C");
+static_assert(alignof(ABluGloManager_C) == 0x000008, "Wrong alignment on ABluGloManager_C");
+static_assert(sizeof(ABluGloManager_C) == 0x000480, "Wrong size on ABluGloManager_C");
 static_assert(offsetof(ABluGloManager_C, UberGraphFrame) == 0x000420, "Member 'ABluGloManager_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABluGloManager_C, DefaultSceneRoot) == 0x000428, "Member 'ABluGloManager_C::DefaultSceneRoot' has a wrong offset!");
 static_assert(offsetof(ABluGloManager_C, PossibleSpawnLocationsArray) == 0x000430, "Member 'ABluGloManager_C::PossibleSpawnLocationsArray' has a wrong offset!");

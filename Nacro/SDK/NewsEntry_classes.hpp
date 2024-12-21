@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass NewsEntry.NewsEntry_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0058 (0x0290 - 0x0238)
 class UNewsEntry_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ButtonEntry;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextEntry;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   EntryText;                                         // 0x0250(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UNewsEntry_C>();
 	}
 };
-static_assert(alignof(UNewsEntry_C) == 0x322CBBB8, "Wrong alignment on UNewsEntry_C");
-static_assert(sizeof(UNewsEntry_C) == 0x322CBBB8, "Wrong size on UNewsEntry_C");
+static_assert(alignof(UNewsEntry_C) == 0x000008, "Wrong alignment on UNewsEntry_C");
+static_assert(sizeof(UNewsEntry_C) == 0x000290, "Wrong size on UNewsEntry_C");
 static_assert(offsetof(UNewsEntry_C, UberGraphFrame) == 0x000238, "Member 'UNewsEntry_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UNewsEntry_C, ButtonEntry) == 0x000240, "Member 'UNewsEntry_C::ButtonEntry' has a wrong offset!");
 static_assert(offsetof(UNewsEntry_C, TextEntry) == 0x000248, "Member 'UNewsEntry_C::TextEntry' has a wrong offset!");

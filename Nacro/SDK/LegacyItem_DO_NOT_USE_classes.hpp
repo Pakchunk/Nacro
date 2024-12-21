@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "ItemDisplayStyle_structs.hpp"
+#include "ItemDisplayMode_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "ItemDisplayMode_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "ItemTextureStylesheet_structs.hpp"
 #include "ItemTextureSet_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
+#include "ItemTextureStylesheet_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "UMG_structs.hpp"
@@ -27,11 +27,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x1508 (0x1DA8 - 0x08A0)
 class ULegacyItem_DO_NOT_USE_C final : public UFortItemWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08A0(0x0008)(Transient, DuplicateTransient)
 	class UBorder*                                Border_SecondaryIconFill;                          // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                Border_SecondaryIconFrame;                         // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                Border_TertiaryIconFill;                           // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -50,7 +50,7 @@ public:
 	class ULegacyRatingWidget_C*                  Widget_Rating;                                     // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemStackCounter_C*                    Widget_StackCounter;                               // 0x0928(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItem_TierBadge_C*                      Widget_TierBadge;                                  // 0x0930(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortRarityItemData                    RarityData;                                        // 0x0938(0x11821780)(Edit, BlueprintVisible)
+	struct FFortRarityItemData                    RarityData;                                        // 0x0938(0x0080)(Edit, BlueprintVisible)
 	bool                                          CanBeDragged;                                      // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_9B9[0x7];                                      // 0x09B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 DragTagString;                                     // 0x09C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -58,18 +58,18 @@ public:
 	EItemDisplayMode                              DisplayMode;                                       // 0x09D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EItemDisplayStyle                             DisplayStyle;                                      // 0x09D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9DA[0x6];                                      // 0x09DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FItemTextureSet                        Item_Textures;                                     // 0x09E0(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FItemTextureStylesheet                 Item_Texture_Stylesheet;                           // 0x1408(0x300054)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FFortMultiSizeBrush                    Subtype_Icon_Frame;                                // 0x1418(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FFortMultiSizeFont                     AmmoMultiFont;                                     // 0x1778(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FItemTextureSet                        Item_Textures;                                     // 0x09E0(0x0A28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FItemTextureStylesheet                 Item_Texture_Stylesheet;                           // 0x1408(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FFortMultiSizeBrush                    Subtype_Icon_Frame;                                // 0x1418(0x0360)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FFortMultiSizeFont                     AmmoMultiFont;                                     // 0x1778(0x0270)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   TooltipHeaderText;                                 // 0x19E8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class USlateBrushAsset*                       TooltipHeaderIcon;                                 // 0x1A00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          InfiniteAmmo;                                      // 0x1A08(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A09[0x7];                                     // 0x1A09(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    DemoItemData;                                      // 0x1A10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortMultiSizeBrush                    Subtype_Icon_Fill;                                 // 0x1A18(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FLinearColor                           Subtype_Fill_Color;                                // 0x1D78(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Subtype_Frame_Color;                               // 0x1D88(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortMultiSizeBrush                    Subtype_Icon_Fill;                                 // 0x1A18(0x0360)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FLinearColor                           Subtype_Fill_Color;                                // 0x1D78(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Subtype_Frame_Color;                               // 0x1D88(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          OverrideSecondaryTypeIconColor;                    // 0x1D98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          ShowSecondaryTypeIcon;                             // 0x1D99(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          ShowTertiaryTypeIcon;                              // 0x1D9A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -134,8 +134,8 @@ public:
 		return GetDefaultObjImpl<ULegacyItem_DO_NOT_USE_C>();
 	}
 };
-static_assert(alignof(ULegacyItem_DO_NOT_USE_C) == 0x322CBBB8, "Wrong alignment on ULegacyItem_DO_NOT_USE_C");
-static_assert(sizeof(ULegacyItem_DO_NOT_USE_C) == 0x322CBBB8, "Wrong size on ULegacyItem_DO_NOT_USE_C");
+static_assert(alignof(ULegacyItem_DO_NOT_USE_C) == 0x000008, "Wrong alignment on ULegacyItem_DO_NOT_USE_C");
+static_assert(sizeof(ULegacyItem_DO_NOT_USE_C) == 0x001DA8, "Wrong size on ULegacyItem_DO_NOT_USE_C");
 static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, UberGraphFrame) == 0x0008A0, "Member 'ULegacyItem_DO_NOT_USE_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Border_SecondaryIconFill) == 0x0008A8, "Member 'ULegacyItem_DO_NOT_USE_C::Border_SecondaryIconFill' has a wrong offset!");
 static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Border_SecondaryIconFrame) == 0x0008B0, "Member 'ULegacyItem_DO_NOT_USE_C::Border_SecondaryIconFrame' has a wrong offset!");

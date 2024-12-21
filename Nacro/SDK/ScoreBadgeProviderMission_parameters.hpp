@@ -32,16 +32,16 @@ static_assert(offsetof(ScoreBadgeProviderMission_C_GetScoreBadgeInfos, ScoreCate
 static_assert(offsetof(ScoreBadgeProviderMission_C_GetScoreBadgeInfos, BadgeInfos) == 0x000008, "Member 'ScoreBadgeProviderMission_C_GetScoreBadgeInfos::BadgeInfos' has a wrong offset!");
 
 // Function ScoreBadgeProviderMission.ScoreBadgeProviderMission_C.GetTotalScore
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ScoreBadgeProviderMission_C_GetTotalScore final
+// 0x0008 (0x0008 - 0x0000)
+struct ScoreBadgeProviderMission_C_GetTotalScore final
 {
 public:
 	EStatCategory                                 ScoreCategory;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Score;                                             // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ScoreBadgeProviderMission_C_GetTotalScore) == 0x0000E4, "Wrong alignment on ScoreBadgeProviderMission_C_GetTotalScore");
-static_assert(sizeof(ScoreBadgeProviderMission_C_GetTotalScore) == 0x0000E4, "Wrong size on ScoreBadgeProviderMission_C_GetTotalScore");
+static_assert(alignof(ScoreBadgeProviderMission_C_GetTotalScore) == 0x000004, "Wrong alignment on ScoreBadgeProviderMission_C_GetTotalScore");
+static_assert(sizeof(ScoreBadgeProviderMission_C_GetTotalScore) == 0x000008, "Wrong size on ScoreBadgeProviderMission_C_GetTotalScore");
 static_assert(offsetof(ScoreBadgeProviderMission_C_GetTotalScore, ScoreCategory) == 0x000000, "Member 'ScoreBadgeProviderMission_C_GetTotalScore::ScoreCategory' has a wrong offset!");
 static_assert(offsetof(ScoreBadgeProviderMission_C_GetTotalScore, Score) == 0x000004, "Member 'ScoreBadgeProviderMission_C_GetTotalScore::Score' has a wrong offset!");
 

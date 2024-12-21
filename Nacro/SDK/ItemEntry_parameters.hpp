@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function ItemEntry.ItemEntry_C.Entry Selected__DelegateSignature
-// 0x52005F (0x52005F - 0x0000)
-struct alignas(0x52005F) ItemEntry_C_Entry_Selected__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct ItemEntry_C_Entry_Selected__DelegateSignature final
 {
 public:
 	class UFortItemDefinition*                    Items_Definition;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemEntry_C_Entry_Selected__DelegateSignature) == 0x52005F, "Wrong alignment on ItemEntry_C_Entry_Selected__DelegateSignature");
-static_assert(sizeof(ItemEntry_C_Entry_Selected__DelegateSignature) == 0x52005F, "Wrong size on ItemEntry_C_Entry_Selected__DelegateSignature");
+static_assert(alignof(ItemEntry_C_Entry_Selected__DelegateSignature) == 0x000008, "Wrong alignment on ItemEntry_C_Entry_Selected__DelegateSignature");
+static_assert(sizeof(ItemEntry_C_Entry_Selected__DelegateSignature) == 0x000008, "Wrong size on ItemEntry_C_Entry_Selected__DelegateSignature");
 static_assert(offsetof(ItemEntry_C_Entry_Selected__DelegateSignature, Items_Definition) == 0x000000, "Member 'ItemEntry_C_Entry_Selected__DelegateSignature::Items_Definition' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.ExecuteUbergraph_ItemEntry
@@ -99,12 +99,12 @@ static_assert(offsetof(ItemEntry_C_SetExpanded, bExpanded) == 0x000000, "Member 
 
 // Function ItemEntry.ItemEntry_C.RegisterOnClicked
 // 0x0010 (0x0010 - 0x0000)
-struct ItemEntry_C_RegisterOnClicked final
+struct alignas(0x08) ItemEntry_C_RegisterOnClicked final
 {
 public:
 	TDelegate<void(class UUserWidget* Widget)>    Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(ItemEntry_C_RegisterOnClicked) == 0x000004, "Wrong alignment on ItemEntry_C_RegisterOnClicked");
+static_assert(alignof(ItemEntry_C_RegisterOnClicked) == 0x000008, "Wrong alignment on ItemEntry_C_RegisterOnClicked");
 static_assert(sizeof(ItemEntry_C_RegisterOnClicked) == 0x000010, "Wrong size on ItemEntry_C_RegisterOnClicked");
 static_assert(offsetof(ItemEntry_C_RegisterOnClicked, Callback) == 0x000000, "Member 'ItemEntry_C_RegisterOnClicked::Callback' has a wrong offset!");
 

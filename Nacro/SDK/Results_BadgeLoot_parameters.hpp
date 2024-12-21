@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.ExecuteUbergraph_Results_BadgeLoot
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot final
 {
 public:
@@ -52,24 +52,24 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	class UObject*                                K2Node_HandleClientEvent_EventSource4;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus4;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent4;             // 0x0058(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent4;             // 0x0058(0x0020)(ConstParm, NoDestructor)
 	class UObject*                                K2Node_HandleClientEvent_EventSource3;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus3;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent3;             // 0x0088(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent3;             // 0x0088(0x0020)(ConstParm, NoDestructor)
 	class UObject*                                K2Node_HandleClientEvent_EventSource2;             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus2;              // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent2;             // 0x00B8(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent2;             // 0x00B8(0x0020)(ConstParm, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue11;                  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_HandleClientEvent_EventSource;              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_HandleClientEvent_EventFocus;               // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x00F0(0x11821780)(ConstParm, NoDestructor)
+	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x00F0(0x0020)(ConstParm, NoDestructor)
 	bool                                          CallFunc_HasMoreBadgesToShow_bMoreBadgesToShow;    // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot) == 0x11821780, "Wrong alignment on Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot");
-static_assert(sizeof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot) == 0x11821780, "Wrong size on Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot");
+static_assert(alignof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot) == 0x000008, "Wrong alignment on Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot");
+static_assert(sizeof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot) == 0x000120, "Wrong size on Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, EntryPoint) == 0x000000, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot, CallFunc_BooleanOR_ReturnValue2) == 0x000005, "Member 'Results_BadgeLoot_C_ExecuteUbergraph_Results_BadgeLoot::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
@@ -124,61 +124,61 @@ static_assert(sizeof(Results_BadgeLoot_C_BndEvt__ButtonContinue_K2Node_Component
 static_assert(offsetof(Results_BadgeLoot_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_279_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_BadgeLoot_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_279_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.HandleClientEvent_ChestOutroDone
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone) == 0x11821780, "Wrong alignment on Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone");
-static_assert(sizeof(Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone) == 0x11821780, "Wrong size on Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone");
+static_assert(alignof(Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone) == 0x000008, "Wrong alignment on Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone");
+static_assert(sizeof(Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone) == 0x000030, "Wrong size on Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone, EventSource) == 0x000000, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone::EventSource' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone, EventFocus) == 0x000008, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone::EventFocus' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone, ClientEvent) == 0x000010, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestOutroDone::ClientEvent' has a wrong offset!");
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.HandleClientEvent_ChestResultFocusDone
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone) == 0x11821780, "Wrong alignment on Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone");
-static_assert(sizeof(Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone) == 0x11821780, "Wrong size on Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone");
+static_assert(alignof(Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone) == 0x000008, "Wrong alignment on Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone");
+static_assert(sizeof(Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone) == 0x000030, "Wrong size on Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone, EventSource) == 0x000000, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone::EventSource' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone, EventFocus) == 0x000008, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone::EventFocus' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone, ClientEvent) == 0x000010, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestResultFocusDone::ClientEvent' has a wrong offset!");
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.HandleClientEvent_ChestProgressionDone
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone) == 0x11821780, "Wrong alignment on Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone");
-static_assert(sizeof(Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone) == 0x11821780, "Wrong size on Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone");
+static_assert(alignof(Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone) == 0x000008, "Wrong alignment on Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone");
+static_assert(sizeof(Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone) == 0x000030, "Wrong size on Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone, EventSource) == 0x000000, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone::EventSource' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone, EventFocus) == 0x000008, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone::EventFocus' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone, ClientEvent) == 0x000010, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestProgressionDone::ClientEvent' has a wrong offset!");
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.HandleClientEvent_ChestIntroDone
-// 0x7FFFFFFF (0x7FFFFFFF - 0x0000)
-struct alignas(0x7FFFFFFF) Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone final
+// 0x0030 (0x0030 - 0x0000)
+struct Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone final
 {
 public:
 	class UObject*                                EventSource;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x11821780)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone) == 0x7FFFFFFF, "Wrong alignment on Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone");
-static_assert(sizeof(Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone) == 0x7FFFFFFF, "Wrong size on Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone");
+static_assert(alignof(Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone) == 0x000008, "Wrong alignment on Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone");
+static_assert(sizeof(Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone) == 0x000030, "Wrong size on Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone, EventSource) == 0x000000, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone::EventSource' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone, EventFocus) == 0x000008, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone::EventFocus' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone, ClientEvent) == 0x000010, "Member 'Results_BadgeLoot_C_HandleClientEvent_ChestIntroDone::ClientEvent' has a wrong offset!");

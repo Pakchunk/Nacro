@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass TextStyle-Header-L-Critical.TextStyle-Header-L-Critical_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x00D0 - 0x00D0)
 class UTextStyleMinusHeaderMinusLMinusCritical_C final : public UTextStyleMinusHeaderMinusL_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UTextStyleMinusHeaderMinusLMinusCritical_C>();
 	}
 };
-static_assert(alignof(UTextStyleMinusHeaderMinusLMinusCritical_C) == 0x322CBBB8, "Wrong alignment on UTextStyleMinusHeaderMinusLMinusCritical_C");
-static_assert(sizeof(UTextStyleMinusHeaderMinusLMinusCritical_C) == 0x322CBBB8, "Wrong size on UTextStyleMinusHeaderMinusLMinusCritical_C");
+static_assert(alignof(UTextStyleMinusHeaderMinusLMinusCritical_C) == 0x000008, "Wrong alignment on UTextStyleMinusHeaderMinusLMinusCritical_C");
+static_assert(sizeof(UTextStyleMinusHeaderMinusLMinusCritical_C) == 0x0000D0, "Wrong size on UTextStyleMinusHeaderMinusLMinusCritical_C");
 
 }
 

@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass HeroNotificationHandler.HeroNotificationHandler_C
-// 0x0000 (0x11824600 - 0x11824600)
+// 0x0000 (0x01F0 - 0x01F0)
 class UHeroNotificationHandler_C final : public UFortHeroNotificationHandler
 {
 public:
@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UHeroNotificationHandler_C>();
 	}
 };
-static_assert(alignof(UHeroNotificationHandler_C) == 0x11824600, "Wrong alignment on UHeroNotificationHandler_C");
-static_assert(sizeof(UHeroNotificationHandler_C) == 0x11824600, "Wrong size on UHeroNotificationHandler_C");
+static_assert(alignof(UHeroNotificationHandler_C) == 0x000010, "Wrong alignment on UHeroNotificationHandler_C");
+static_assert(sizeof(UHeroNotificationHandler_C) == 0x0001F0, "Wrong size on UHeroNotificationHandler_C");
 
 }
 

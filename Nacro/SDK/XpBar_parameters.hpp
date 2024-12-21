@@ -18,23 +18,23 @@ namespace SDK::Params
 {
 
 // Function XpBar.XpBar_C.ExecuteUbergraph_XpBar
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct XpBar_C_ExecuteUbergraph_XpBar final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPublicAccountInfo                 CallFunc_GetCurrentlyViewedAccountInfo_Result;     // 0x0010(0x11821780)(NoDestructor)
+	struct FFortPublicAccountInfo                 CallFunc_GetCurrentlyViewedAccountInfo_Result;     // 0x0010(0x0010)(NoDestructor)
 	TDelegate<void(int32 BoostAmount)>            K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0038(0x11821780)(NoDestructor)
+	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0038(0x0010)(NoDestructor)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FFortPublicAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         K2Node_CustomEvent_BoostAmount;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_ExecuteUbergraph_XpBar) == 0x11821780, "Wrong alignment on XpBar_C_ExecuteUbergraph_XpBar");
-static_assert(sizeof(XpBar_C_ExecuteUbergraph_XpBar) == 0x11821780, "Wrong size on XpBar_C_ExecuteUbergraph_XpBar");
+static_assert(alignof(XpBar_C_ExecuteUbergraph_XpBar) == 0x000008, "Wrong alignment on XpBar_C_ExecuteUbergraph_XpBar");
+static_assert(sizeof(XpBar_C_ExecuteUbergraph_XpBar) == 0x000068, "Wrong size on XpBar_C_ExecuteUbergraph_XpBar");
 static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, EntryPoint) == 0x000000, "Member 'XpBar_C_ExecuteUbergraph_XpBar::EntryPoint' has a wrong offset!");
 static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'XpBar_C_ExecuteUbergraph_XpBar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, CallFunc_GetCurrentlyViewedAccountInfo_Result) == 0x000010, "Member 'XpBar_C_ExecuteUbergraph_XpBar::CallFunc_GetCurrentlyViewedAccountInfo_Result' has a wrong offset!");
@@ -57,22 +57,22 @@ static_assert(sizeof(XpBar_C_Xp_Boost_Changed) == 0x000004, "Wrong size on XpBar
 static_assert(offsetof(XpBar_C_Xp_Boost_Changed, BoostAmount) == 0x000000, "Member 'XpBar_C_Xp_Boost_Changed::BoostAmount' has a wrong offset!");
 
 // Function XpBar.XpBar_C.Account Info Changed
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct XpBar_C_Account_Info_Changed final
 {
 public:
-	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x11821780)(Parm, NoDestructor)
+	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x0010)(Parm, NoDestructor)
 };
-static_assert(alignof(XpBar_C_Account_Info_Changed) == 0x11821780, "Wrong alignment on XpBar_C_Account_Info_Changed");
-static_assert(sizeof(XpBar_C_Account_Info_Changed) == 0x11821780, "Wrong size on XpBar_C_Account_Info_Changed");
+static_assert(alignof(XpBar_C_Account_Info_Changed) == 0x000004, "Wrong alignment on XpBar_C_Account_Info_Changed");
+static_assert(sizeof(XpBar_C_Account_Info_Changed) == 0x000010, "Wrong size on XpBar_C_Account_Info_Changed");
 static_assert(offsetof(XpBar_C_Account_Info_Changed, NewInfo) == 0x000000, "Member 'XpBar_C_Account_Info_Changed::NewInfo' has a wrong offset!");
 
 // Function XpBar.XpBar_C.Update Xp Bar
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct XpBar_C_Update_Xp_Bar final
 {
 public:
-	struct FFortPublicAccountInfo                 Account_Info;                                      // 0x0000(0x11821780)(Parm, NoDestructor)
+	struct FFortPublicAccountInfo                 Account_Info;                                      // 0x0000(0x0010)(Parm, NoDestructor)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_ScaledCommanderBalance_ReturnValue;       // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -92,8 +92,8 @@ public:
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue3;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue4;             // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_Update_Xp_Bar) == 0x11821780, "Wrong alignment on XpBar_C_Update_Xp_Bar");
-static_assert(sizeof(XpBar_C_Update_Xp_Bar) == 0x11821780, "Wrong size on XpBar_C_Update_Xp_Bar");
+static_assert(alignof(XpBar_C_Update_Xp_Bar) == 0x000008, "Wrong alignment on XpBar_C_Update_Xp_Bar");
+static_assert(sizeof(XpBar_C_Update_Xp_Bar) == 0x000068, "Wrong size on XpBar_C_Update_Xp_Bar");
 static_assert(offsetof(XpBar_C_Update_Xp_Bar, Account_Info) == 0x000000, "Member 'XpBar_C_Update_Xp_Bar::Account_Info' has a wrong offset!");
 static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_MakeLiteralName_ReturnValue) == 0x000010, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_ScaledCommanderBalance_ReturnValue) == 0x000018, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_ScaledCommanderBalance_ReturnValue' has a wrong offset!");
@@ -112,7 +112,7 @@ static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_MakeLiteralName_ReturnVal
 static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_MakeLiteralName_ReturnValue4) == 0x000060, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_MakeLiteralName_ReturnValue4' has a wrong offset!");
 
 // Function XpBar.XpBar_C.GetExperienceToolTipWidget
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x02B8 (0x02B8 - 0x0000)
 struct XpBar_C_GetExperienceToolTipWidget final
 {
 public:
@@ -124,10 +124,10 @@ public:
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue3;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPublicAccountInfo                 CallFunc_GetCurrentlyViewedAccountInfo_Result;     // 0x0030(0x11821780)(NoDestructor)
+	struct FFortPublicAccountInfo                 CallFunc_GetCurrentlyViewedAccountInfo_Result;     // 0x0030(0x0010)(NoDestructor)
 	int32                                         CallFunc_ScaledRestBalance_ReturnValue;            // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -135,26 +135,26 @@ public:
 	TArray<struct FFortItemQuantityPair>          CallFunc_GetAccountLevelUpRewards_Rewards;         // 0x00B8(0x0010)(ZeroConstructor, ReferenceParm)
 	int32                                         CallFunc_ScaledBoostBalance_ReturnValue;           // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00D0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00D0(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0118(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0128(0x0018)()
-	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0140(0x52535)()
+	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0140(0x0028)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0168(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0180(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01C0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0180(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01C0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x0200(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0210(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0228(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData5;             // 0x0228(0x0040)(HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array4;                           // 0x0270(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0280(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue4;                      // 0x0298(0x0018)()
 	class UCommonUserWidget*                      CallFunc_CreateXPTooltip_Out;                      // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_GetExperienceToolTipWidget) == 0x11821D80, "Wrong alignment on XpBar_C_GetExperienceToolTipWidget");
-static_assert(sizeof(XpBar_C_GetExperienceToolTipWidget) == 0x11821D80, "Wrong size on XpBar_C_GetExperienceToolTipWidget");
+static_assert(alignof(XpBar_C_GetExperienceToolTipWidget) == 0x000008, "Wrong alignment on XpBar_C_GetExperienceToolTipWidget");
+static_assert(sizeof(XpBar_C_GetExperienceToolTipWidget) == 0x0002B8, "Wrong size on XpBar_C_GetExperienceToolTipWidget");
 static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, ReturnValue) == 0x000000, "Member 'XpBar_C_GetExperienceToolTipWidget::ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, XPToLevel) == 0x000008, "Member 'XpBar_C_GetExperienceToolTipWidget::XPToLevel' has a wrong offset!");
 static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CurrentXP) == 0x00000C, "Member 'XpBar_C_GetExperienceToolTipWidget::CurrentXP' has a wrong offset!");
@@ -249,8 +249,8 @@ static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_Multiply_FloatFloat_R
 static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_FTrunc_ReturnValue) == 0x00002C, "Member 'XpBar_C_ScaledRestBalance::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 
 // Function XpBar.XpBar_C.ScaledCommanderBalance
-// 0x0019 (0x0019 - 0x0000)
-struct alignas(0x19) XpBar_C_ScaledCommanderBalance final
+// 0x0018 (0x0018 - 0x0000)
+struct XpBar_C_ScaledCommanderBalance final
 {
 public:
 	int32                                         LeveXP;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -260,8 +260,8 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_ScaledCommanderBalance) == 0x000019, "Wrong alignment on XpBar_C_ScaledCommanderBalance");
-static_assert(sizeof(XpBar_C_ScaledCommanderBalance) == 0x000019, "Wrong size on XpBar_C_ScaledCommanderBalance");
+static_assert(alignof(XpBar_C_ScaledCommanderBalance) == 0x000004, "Wrong alignment on XpBar_C_ScaledCommanderBalance");
+static_assert(sizeof(XpBar_C_ScaledCommanderBalance) == 0x000018, "Wrong size on XpBar_C_ScaledCommanderBalance");
 static_assert(offsetof(XpBar_C_ScaledCommanderBalance, LeveXP) == 0x000000, "Member 'XpBar_C_ScaledCommanderBalance::LeveXP' has a wrong offset!");
 static_assert(offsetof(XpBar_C_ScaledCommanderBalance, InInt2) == 0x000004, "Member 'XpBar_C_ScaledCommanderBalance::InInt2' has a wrong offset!");
 static_assert(offsetof(XpBar_C_ScaledCommanderBalance, ReturnValue) == 0x000008, "Member 'XpBar_C_ScaledCommanderBalance::ReturnValue' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Results_CommanderXP.Results_CommanderXP_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00F8 (0x0330 - 0x0238)
 class UResults_CommanderXP_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Anim_SkipToFinalState;                             // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_SkillPointIncrement2;                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_ContinueButtonOutro;                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -97,8 +97,8 @@ public:
 		return GetDefaultObjImpl<UResults_CommanderXP_C>();
 	}
 };
-static_assert(alignof(UResults_CommanderXP_C) == 0x322CBBB8, "Wrong alignment on UResults_CommanderXP_C");
-static_assert(sizeof(UResults_CommanderXP_C) == 0x322CBBB8, "Wrong size on UResults_CommanderXP_C");
+static_assert(alignof(UResults_CommanderXP_C) == 0x000008, "Wrong alignment on UResults_CommanderXP_C");
+static_assert(sizeof(UResults_CommanderXP_C) == 0x000330, "Wrong size on UResults_CommanderXP_C");
 static_assert(offsetof(UResults_CommanderXP_C, UberGraphFrame) == 0x000238, "Member 'UResults_CommanderXP_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXP_C, Anim_SkipToFinalState) == 0x000240, "Member 'UResults_CommanderXP_C::Anim_SkipToFinalState' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXP_C, Anim_SkillPointIncrement2) == 0x000248, "Member 'UResults_CommanderXP_C::Anim_SkillPointIncrement2' has a wrong offset!");

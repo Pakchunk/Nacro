@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass CheckRateExperienceAction.CheckRateExperienceAction_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0010 (0x03F8 - 0x03E8)
 class ACheckRateExperienceAction_C final : public AFortScriptedAction
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<ACheckRateExperienceAction_C>();
 	}
 };
-static_assert(alignof(ACheckRateExperienceAction_C) == 0x11821D80, "Wrong alignment on ACheckRateExperienceAction_C");
-static_assert(sizeof(ACheckRateExperienceAction_C) == 0x11821D80, "Wrong size on ACheckRateExperienceAction_C");
+static_assert(alignof(ACheckRateExperienceAction_C) == 0x000008, "Wrong alignment on ACheckRateExperienceAction_C");
+static_assert(sizeof(ACheckRateExperienceAction_C) == 0x0003F8, "Wrong size on ACheckRateExperienceAction_C");
 static_assert(offsetof(ACheckRateExperienceAction_C, UberGraphFrame) == 0x0003E8, "Member 'ACheckRateExperienceAction_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ACheckRateExperienceAction_C, DefaultSceneRoot) == 0x0003F0, "Member 'ACheckRateExperienceAction_C::DefaultSceneRoot' has a wrong offset!");
 

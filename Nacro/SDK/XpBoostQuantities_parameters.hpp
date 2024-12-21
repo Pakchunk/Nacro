@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function XpBoostQuantities.XpBoostQuantities_C.ExecuteUbergraph_XpBoostQuantities
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities final
 {
 public:
@@ -27,11 +27,11 @@ public:
 	TDelegate<void(const struct FFortPublicAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 BoostAmount)>            K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0030(0x11821780)(NoDestructor)
+	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0030(0x0010)(NoDestructor)
 	int32                                         K2Node_CustomEvent_BoostAmount;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities) == 0x11821780, "Wrong alignment on XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities");
-static_assert(sizeof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities) == 0x11821780, "Wrong size on XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities");
+static_assert(alignof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities) == 0x000008, "Wrong alignment on XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities");
+static_assert(sizeof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities) == 0x000048, "Wrong size on XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities");
 static_assert(offsetof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities, EntryPoint) == 0x000000, "Member 'XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities::EntryPoint' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
@@ -40,29 +40,29 @@ static_assert(offsetof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities, K
 static_assert(offsetof(XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities, K2Node_CustomEvent_BoostAmount) == 0x000040, "Member 'XpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities::K2Node_CustomEvent_BoostAmount' has a wrong offset!");
 
 // Function XpBoostQuantities.XpBoostQuantities_C.Xp Boost Changed
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) XpBoostQuantities_C_Xp_Boost_Changed final
+// 0x0004 (0x0004 - 0x0000)
+struct XpBoostQuantities_C_Xp_Boost_Changed final
 {
 public:
 	int32                                         BoostAmount;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoostQuantities_C_Xp_Boost_Changed) == 0x0000E4, "Wrong alignment on XpBoostQuantities_C_Xp_Boost_Changed");
-static_assert(sizeof(XpBoostQuantities_C_Xp_Boost_Changed) == 0x0000E4, "Wrong size on XpBoostQuantities_C_Xp_Boost_Changed");
+static_assert(alignof(XpBoostQuantities_C_Xp_Boost_Changed) == 0x000004, "Wrong alignment on XpBoostQuantities_C_Xp_Boost_Changed");
+static_assert(sizeof(XpBoostQuantities_C_Xp_Boost_Changed) == 0x000004, "Wrong size on XpBoostQuantities_C_Xp_Boost_Changed");
 static_assert(offsetof(XpBoostQuantities_C_Xp_Boost_Changed, BoostAmount) == 0x000000, "Member 'XpBoostQuantities_C_Xp_Boost_Changed::BoostAmount' has a wrong offset!");
 
 // Function XpBoostQuantities.XpBoostQuantities_C.HandleAccountUpdate
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct XpBoostQuantities_C_HandleAccountUpdate final
 {
 public:
-	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x11821780)(Parm, NoDestructor)
+	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x0010)(Parm, NoDestructor)
 };
-static_assert(alignof(XpBoostQuantities_C_HandleAccountUpdate) == 0x11821780, "Wrong alignment on XpBoostQuantities_C_HandleAccountUpdate");
-static_assert(sizeof(XpBoostQuantities_C_HandleAccountUpdate) == 0x11821780, "Wrong size on XpBoostQuantities_C_HandleAccountUpdate");
+static_assert(alignof(XpBoostQuantities_C_HandleAccountUpdate) == 0x000004, "Wrong alignment on XpBoostQuantities_C_HandleAccountUpdate");
+static_assert(sizeof(XpBoostQuantities_C_HandleAccountUpdate) == 0x000010, "Wrong size on XpBoostQuantities_C_HandleAccountUpdate");
 static_assert(offsetof(XpBoostQuantities_C_HandleAccountUpdate, NewInfo) == 0x000000, "Member 'XpBoostQuantities_C_HandleAccountUpdate::NewInfo' has a wrong offset!");
 
 // Function XpBoostQuantities.XpBoostQuantities_C.UpdateXPQuantitiesInfo
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct XpBoostQuantities_C_UpdateXPQuantitiesInfo final
 {
 public:
@@ -71,10 +71,10 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0018)()
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortPublicAccountInfo                 CallFunc_GetCurrentlyViewedAccountInfo_Result;     // 0x0030(0x11821780)(NoDestructor)
+	struct FFortPublicAccountInfo                 CallFunc_GetCurrentlyViewedAccountInfo_Result;     // 0x0030(0x0010)(NoDestructor)
 	int32                                         CallFunc_ScaledBoostBalance_ReturnValue;           // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0098(0x0018)()
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -83,7 +83,7 @@ public:
 	int32                                         CallFunc_ScaledRestBalance_ReturnValue;            // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortItemQuantityPair>          CallFunc_GetAccountLevelUpRewards_Rewards;         // 0x00C0(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00D0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00D0(0x0040)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0118(0x0010)(ZeroConstructor, ReferenceParm)
@@ -91,13 +91,13 @@ public:
 	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0130(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0148(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0160(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01A0(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData3;             // 0x0160(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData4;             // 0x01A0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x01E0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x01F0(0x0018)()
 };
-static_assert(alignof(XpBoostQuantities_C_UpdateXPQuantitiesInfo) == 0x11821D80, "Wrong alignment on XpBoostQuantities_C_UpdateXPQuantitiesInfo");
-static_assert(sizeof(XpBoostQuantities_C_UpdateXPQuantitiesInfo) == 0x11821D80, "Wrong size on XpBoostQuantities_C_UpdateXPQuantitiesInfo");
+static_assert(alignof(XpBoostQuantities_C_UpdateXPQuantitiesInfo) == 0x000008, "Wrong alignment on XpBoostQuantities_C_UpdateXPQuantitiesInfo");
+static_assert(sizeof(XpBoostQuantities_C_UpdateXPQuantitiesInfo) == 0x000208, "Wrong size on XpBoostQuantities_C_UpdateXPQuantitiesInfo");
 static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, CurrentXP) == 0x000000, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::CurrentXP' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, XPToLevel) == 0x000004, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::XPToLevel' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_UpdateXPQuantitiesInfo, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'XpBoostQuantities_C_UpdateXPQuantitiesInfo::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
@@ -156,8 +156,8 @@ static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_Multiply
 static_assert(offsetof(XpBoostQuantities_C_ScaledBoostBalance, CallFunc_FTrunc_ReturnValue) == 0x000030, "Member 'XpBoostQuantities_C_ScaledBoostBalance::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 
 // Function XpBoostQuantities.XpBoostQuantities_C.ScaledRestBalance
-// 0x004B (0x004B - 0x0000)
-struct alignas(0x19) XpBoostQuantities_C_ScaledRestBalance final
+// 0x0038 (0x0038 - 0x0000)
+struct XpBoostQuantities_C_ScaledRestBalance final
 {
 public:
 	int32                                         AmountToLevel;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -173,8 +173,8 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoostQuantities_C_ScaledRestBalance) == 0x000019, "Wrong alignment on XpBoostQuantities_C_ScaledRestBalance");
-static_assert(sizeof(XpBoostQuantities_C_ScaledRestBalance) == 0x00004B, "Wrong size on XpBoostQuantities_C_ScaledRestBalance");
+static_assert(alignof(XpBoostQuantities_C_ScaledRestBalance) == 0x000008, "Wrong alignment on XpBoostQuantities_C_ScaledRestBalance");
+static_assert(sizeof(XpBoostQuantities_C_ScaledRestBalance) == 0x000038, "Wrong size on XpBoostQuantities_C_ScaledRestBalance");
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, AmountToLevel) == 0x000000, "Member 'XpBoostQuantities_C_ScaledRestBalance::AmountToLevel' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, ReturnValue) == 0x000004, "Member 'XpBoostQuantities_C_ScaledRestBalance::ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostQuantities_C_ScaledRestBalance, Xp_For_Level) == 0x000008, "Member 'XpBoostQuantities_C_ScaledRestBalance::Xp_For_Level' has a wrong offset!");

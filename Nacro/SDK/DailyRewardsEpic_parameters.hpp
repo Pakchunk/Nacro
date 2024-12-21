@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function DailyRewardsEpic.DailyRewardsEpic_C.ExecuteUbergraph_DailyRewardsEpic
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic final
 {
 public:
@@ -36,7 +36,7 @@ public:
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable8;                               // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0038(0x11821780)()
+	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0038(0x0080)()
 	ESlateVisibility                              Temp_byte_Variable9;                               // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable10;                              // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable11;                              // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -44,8 +44,8 @@ public:
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic) == 0x11821780, "Wrong alignment on DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic");
-static_assert(sizeof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic) == 0x11821780, "Wrong size on DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic");
+static_assert(alignof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic) == 0x000008, "Wrong alignment on DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic");
+static_assert(sizeof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic) == 0x0000C8, "Wrong size on DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic");
 static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, EntryPoint) == 0x000000, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::EntryPoint' has a wrong offset!");
 static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable) == 0x000004, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable2) == 0x000005, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable2' has a wrong offset!");

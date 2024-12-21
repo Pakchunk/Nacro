@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function TwitchNotification.TwitchNotification_C.GetImageOverride
-// 0x0015 (0x0015 - 0x0000)
-struct alignas(0x15) TwitchNotification_C_GetImageOverride final
+// 0x0008 (0x0008 - 0x0000)
+struct TwitchNotification_C_GetImageOverride final
 {
 public:
 	class UTexture2D*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TwitchNotification_C_GetImageOverride) == 0x000015, "Wrong alignment on TwitchNotification_C_GetImageOverride");
-static_assert(sizeof(TwitchNotification_C_GetImageOverride) == 0x000015, "Wrong size on TwitchNotification_C_GetImageOverride");
+static_assert(alignof(TwitchNotification_C_GetImageOverride) == 0x000008, "Wrong alignment on TwitchNotification_C_GetImageOverride");
+static_assert(sizeof(TwitchNotification_C_GetImageOverride) == 0x000008, "Wrong size on TwitchNotification_C_GetImageOverride");
 static_assert(offsetof(TwitchNotification_C_GetImageOverride, ReturnValue) == 0x000000, "Member 'TwitchNotification_C_GetImageOverride::ReturnValue' has a wrong offset!");
 
 }

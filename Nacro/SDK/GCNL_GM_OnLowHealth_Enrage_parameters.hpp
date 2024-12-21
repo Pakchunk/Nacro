@@ -18,19 +18,19 @@ namespace SDK::Params
 {
 
 // Function GCNL_GM_OnLowHealth_Enrage.GCNL_GM_OnLowHealth_Enrage_C.OnActive
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct GCNL_GM_OnLowHealth_Enrage_C_OnActive final
 {
 public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AEnemyPawn_Parent_C*                    K2Node_DynamicCast_AsEnemy_Pawn_Parent;            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameUserSettings*                      CallFunc_GetGameUserSettings_ReturnValue;          // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam;                // 0x00E0(0x11821780)(IsPlainOldData, NoDestructor)
+	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam;                // 0x00E0(0x0080)(IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_GetVisualEffectQuality_ReturnValue;       // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FParticleSysParam>              K2Node_MakeArray_Array;                            // 0x0168(0x0010)(ZeroConstructor, ReferenceParm)
@@ -40,8 +40,8 @@ public:
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue2;        // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue3;        // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCNL_GM_OnLowHealth_Enrage_C_OnActive) == 0x11821C00, "Wrong alignment on GCNL_GM_OnLowHealth_Enrage_C_OnActive");
-static_assert(sizeof(GCNL_GM_OnLowHealth_Enrage_C_OnActive) == 0x11821C00, "Wrong size on GCNL_GM_OnLowHealth_Enrage_C_OnActive");
+static_assert(alignof(GCNL_GM_OnLowHealth_Enrage_C_OnActive) == 0x000010, "Wrong alignment on GCNL_GM_OnLowHealth_Enrage_C_OnActive");
+static_assert(sizeof(GCNL_GM_OnLowHealth_Enrage_C_OnActive) == 0x0001A0, "Wrong size on GCNL_GM_OnLowHealth_Enrage_C_OnActive");
 static_assert(offsetof(GCNL_GM_OnLowHealth_Enrage_C_OnActive, MyTarget) == 0x000000, "Member 'GCNL_GM_OnLowHealth_Enrage_C_OnActive::MyTarget' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_OnLowHealth_Enrage_C_OnActive, Parameters) == 0x000008, "Member 'GCNL_GM_OnLowHealth_Enrage_C_OnActive::Parameters' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_OnLowHealth_Enrage_C_OnActive, ReturnValue) == 0x0000C0, "Member 'GCNL_GM_OnLowHealth_Enrage_C_OnActive::ReturnValue' has a wrong offset!");
@@ -57,17 +57,17 @@ static_assert(offsetof(GCNL_GM_OnLowHealth_Enrage_C_OnActive, CallFunc_SpawnEmit
 static_assert(offsetof(GCNL_GM_OnLowHealth_Enrage_C_OnActive, CallFunc_SpawnEmitterAttached_ReturnValue3) == 0x000190, "Member 'GCNL_GM_OnLowHealth_Enrage_C_OnActive::CallFunc_SpawnEmitterAttached_ReturnValue3' has a wrong offset!");
 
 // Function GCNL_GM_OnLowHealth_Enrage.GCNL_GM_OnLowHealth_Enrage_C.OnRemove
-// 0x11821C00 (0x11821C00 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct GCNL_GM_OnLowHealth_Enrage_C_OnRemove final
 {
 public:
 	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x11827600)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	bool                                          ReturnValue;                                       // 0x00C0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCNL_GM_OnLowHealth_Enrage_C_OnRemove) == 0x11821C00, "Wrong alignment on GCNL_GM_OnLowHealth_Enrage_C_OnRemove");
-static_assert(sizeof(GCNL_GM_OnLowHealth_Enrage_C_OnRemove) == 0x11821C00, "Wrong size on GCNL_GM_OnLowHealth_Enrage_C_OnRemove");
+static_assert(alignof(GCNL_GM_OnLowHealth_Enrage_C_OnRemove) == 0x000008, "Wrong alignment on GCNL_GM_OnLowHealth_Enrage_C_OnRemove");
+static_assert(sizeof(GCNL_GM_OnLowHealth_Enrage_C_OnRemove) == 0x0000C8, "Wrong size on GCNL_GM_OnLowHealth_Enrage_C_OnRemove");
 static_assert(offsetof(GCNL_GM_OnLowHealth_Enrage_C_OnRemove, MyTarget) == 0x000000, "Member 'GCNL_GM_OnLowHealth_Enrage_C_OnRemove::MyTarget' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_OnLowHealth_Enrage_C_OnRemove, Parameters) == 0x000008, "Member 'GCNL_GM_OnLowHealth_Enrage_C_OnRemove::Parameters' has a wrong offset!");
 static_assert(offsetof(GCNL_GM_OnLowHealth_Enrage_C_OnRemove, ReturnValue) == 0x0000C0, "Member 'GCNL_GM_OnLowHealth_Enrage_C_OnRemove::ReturnValue' has a wrong offset!");

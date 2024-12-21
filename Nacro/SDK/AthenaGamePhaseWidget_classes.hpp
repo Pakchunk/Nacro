@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaGamePhaseWidget.AthenaGamePhaseWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0280 - 0x0260)
 class UAthenaGamePhaseWidget_C final : public UFortHUDElementWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Icon;                                              // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TimeText;                                          // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AAthena_GameState_C*                    GameState;                                         // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,8 +43,8 @@ public:
 		return GetDefaultObjImpl<UAthenaGamePhaseWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaGamePhaseWidget_C) == 0x322CBBB8, "Wrong alignment on UAthenaGamePhaseWidget_C");
-static_assert(sizeof(UAthenaGamePhaseWidget_C) == 0x322CBBB8, "Wrong size on UAthenaGamePhaseWidget_C");
+static_assert(alignof(UAthenaGamePhaseWidget_C) == 0x000008, "Wrong alignment on UAthenaGamePhaseWidget_C");
+static_assert(sizeof(UAthenaGamePhaseWidget_C) == 0x000280, "Wrong size on UAthenaGamePhaseWidget_C");
 static_assert(offsetof(UAthenaGamePhaseWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaGamePhaseWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAthenaGamePhaseWidget_C, Icon) == 0x000268, "Member 'UAthenaGamePhaseWidget_C::Icon' has a wrong offset!");
 static_assert(offsetof(UAthenaGamePhaseWidget_C, TimeText) == 0x000270, "Member 'UAthenaGamePhaseWidget_C::TimeText' has a wrong offset!");

@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass LobbyTimer.LobbyTimer_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0030 (0x0260 - 0x0230)
 class ULobbyTimer_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       TimerIntro;                                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          LobbyTimerBorder;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       LobbyTimerText;                                    // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,8 +49,8 @@ public:
 		return GetDefaultObjImpl<ULobbyTimer_C>();
 	}
 };
-static_assert(alignof(ULobbyTimer_C) == 0x322CBBB8, "Wrong alignment on ULobbyTimer_C");
-static_assert(sizeof(ULobbyTimer_C) == 0x322CBBB8, "Wrong size on ULobbyTimer_C");
+static_assert(alignof(ULobbyTimer_C) == 0x000008, "Wrong alignment on ULobbyTimer_C");
+static_assert(sizeof(ULobbyTimer_C) == 0x000260, "Wrong size on ULobbyTimer_C");
 static_assert(offsetof(ULobbyTimer_C, UberGraphFrame) == 0x000230, "Member 'ULobbyTimer_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ULobbyTimer_C, TimerIntro) == 0x000238, "Member 'ULobbyTimer_C::TimerIntro' has a wrong offset!");
 static_assert(offsetof(ULobbyTimer_C, LobbyTimerBorder) == 0x000240, "Member 'ULobbyTimer_C::LobbyTimerBorder' has a wrong offset!");

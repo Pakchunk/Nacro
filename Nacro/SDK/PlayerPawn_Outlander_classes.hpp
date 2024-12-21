@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "E_Outlander_FragmentTypes_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "PlayerPawn_Generic_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_Outlander_FragmentTypes_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -23,11 +23,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerPawn_Outlander.PlayerPawn_Outlander_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x0440 (0x2070 - 0x1C30)
 class APlayerPawn_Outlander_C final : public APlayerPawn_Generic_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Outlander_C;             // 0x1C28(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Outlander_C;             // 0x1C28(0x0008)(Transient, DuplicateTransient)
 	class UBoxComponent*                          AntiMaterialHitBox;                                // 0x1C30(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               P_Outlander_Teleport_01;                           // 0x1C38(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USphereComponent*                       KeenEyesRadius;                                    // 0x1C40(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -58,15 +58,15 @@ public:
 	class UMaterialInstanceDynamic*               Smoke_Index7;                                      // 0x1CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Diamond_Index6;                                    // 0x1CE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Sparkles_Index9;                                   // 0x1CE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           OffensiveColor1;                                   // 0x1CF0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           OffensiveColor2;                                   // 0x1D00(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DefensiveColor1;                                   // 0x1D10(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           DefensiveColor2;                                   // 0x1D20(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           SpecialtyColor1;                                   // 0x1D30(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           SpecialtyColor2;                                   // 0x1D40(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_SpecialityBuff;                                 // 0x1D50(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_DefensiveBuff;                                  // 0x1D70(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTagContainer                  TC_OffensiveBuff;                                  // 0x1D90(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FLinearColor                           OffensiveColor1;                                   // 0x1CF0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           OffensiveColor2;                                   // 0x1D00(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DefensiveColor1;                                   // 0x1D10(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DefensiveColor2;                                   // 0x1D20(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           SpecialtyColor1;                                   // 0x1D30(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           SpecialtyColor2;                                   // 0x1D40(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_SpecialityBuff;                                 // 0x1D50(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_DefensiveBuff;                                  // 0x1D70(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTagContainer                  TC_OffensiveBuff;                                  // 0x1D90(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	E_Outlander_FragmentTypes                     FragType;                                          // 0x1DB0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1DB1[0x7];                                     // 0x1DB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        P_FragmentOffense;                                 // 0x1DB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -75,18 +75,18 @@ public:
 	class UParticleSystem*                        P_InTheZone_Activate;                              // 0x1DD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          OnPlayerBuiltFloor;                                // 0x1DD8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
 	uint8                                         Pad_1DD9[0x7];                                     // 0x1DD9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEventData                     EventData;                                         // 0x1DE0(0x11822200)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTag                           EventNeedRoadsActivate;                            // 0x1E88(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           EventNeedRoadsDeactivate;                          // 0x1E90(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  TC_WhereWereGoingWeNeedRoads_0;                    // 0x1E98(0x11821C00)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayEventData                     EventData;                                         // 0x1DE0(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                           EventNeedRoadsActivate;                            // 0x1E88(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           EventNeedRoadsDeactivate;                          // 0x1E90(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  TC_WhereWereGoingWeNeedRoads_0;                    // 0x1E98(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UParticleSystem*                        P_Fragment;                                        // 0x1EB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        P_Specialty;                                       // 0x1EC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        P_Defensive;                                       // 0x1EC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        P_Offensive;                                       // 0x1ED0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortFeedbackHandle                    Feedback_ShardGet;                                 // 0x1ED8(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FFortFeedbackHandle                    Feedback_OffensiveShard;                           // 0x1EF0(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FFortFeedbackHandle                    Feedback_DefensiveShard;                           // 0x1F08(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FFortFeedbackHandle                    Feedback_SpecialtyShard;                           // 0x1F20(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortFeedbackHandle                    Feedback_ShardGet;                                 // 0x1ED8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortFeedbackHandle                    Feedback_OffensiveShard;                           // 0x1EF0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortFeedbackHandle                    Feedback_DefensiveShard;                           // 0x1F08(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortFeedbackHandle                    Feedback_SpecialtyShard;                           // 0x1F20(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class USoundBase*                             Sound_Frg_Offensive_Start;                         // 0x1F38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Sound_Frg_Defensive_Start;                         // 0x1F40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Sound_Frg_Resource_Start;                          // 0x1F48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -179,8 +179,8 @@ public:
 		return GetDefaultObjImpl<APlayerPawn_Outlander_C>();
 	}
 };
-static_assert(alignof(APlayerPawn_Outlander_C) == 0x1182EB00, "Wrong alignment on APlayerPawn_Outlander_C");
-static_assert(sizeof(APlayerPawn_Outlander_C) == 0x1182EB00, "Wrong size on APlayerPawn_Outlander_C");
+static_assert(alignof(APlayerPawn_Outlander_C) == 0x000010, "Wrong alignment on APlayerPawn_Outlander_C");
+static_assert(sizeof(APlayerPawn_Outlander_C) == 0x002070, "Wrong size on APlayerPawn_Outlander_C");
 static_assert(offsetof(APlayerPawn_Outlander_C, UberGraphFrame_PlayerPawn_Outlander_C) == 0x001C28, "Member 'APlayerPawn_Outlander_C::UberGraphFrame_PlayerPawn_Outlander_C' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Outlander_C, AntiMaterialHitBox) == 0x001C30, "Member 'APlayerPawn_Outlander_C::AntiMaterialHitBox' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Outlander_C, P_Outlander_Teleport_01) == 0x001C38, "Member 'APlayerPawn_Outlander_C::P_Outlander_Teleport_01' has a wrong offset!");

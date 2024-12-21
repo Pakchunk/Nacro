@@ -15,8 +15,8 @@ namespace SDK::Params
 {
 
 // Function Fortnite_M_Avg_Player_MenusScreen_AnimBP.Fortnite_M_Avg_Player_MenusScreen_AnimBP_C.ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP
-// 0x49A48600 (0x49A48600 - 0x0000)
-struct alignas(0x49A48600) Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP final
+// 0x0040 (0x0040 - 0x0000)
+struct Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaTimeX;                           // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP) == 0x49A48600, "Wrong alignment on Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP");
-static_assert(sizeof(Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP) == 0x49A48600, "Wrong size on Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP");
+static_assert(alignof(Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP) == 0x000004, "Wrong alignment on Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP");
+static_assert(sizeof(Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP) == 0x000040, "Wrong size on Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP");
 static_assert(offsetof(Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP, EntryPoint) == 0x000000, "Member 'Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP::EntryPoint' has a wrong offset!");
 static_assert(offsetof(Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP, CallFunc_GetInstanceAssetPlayerTimeFromEnd_ReturnValue) == 0x000004, "Member 'Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP::CallFunc_GetInstanceAssetPlayerTimeFromEnd_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP, CallFunc_GetInstanceAssetPlayerTimeFromEnd_ReturnValue2) == 0x000008, "Member 'Fortnite_M_Avg_Player_MenusScreen_AnimBP_C_ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP::CallFunc_GetInstanceAssetPlayerTimeFromEnd_ReturnValue2' has a wrong offset!");

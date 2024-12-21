@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.ExecuteUbergraph_ItemTransformSlotEntry
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry final
 {
 public:
@@ -33,7 +33,7 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button3;                // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetCardDimensions_ReturnValue;            // 0x0030(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetCardDimensions_ReturnValue;            // 0x0030(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,8 +48,8 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry) == 0x11821300, "Wrong alignment on ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry");
-static_assert(sizeof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry) == 0x11821300, "Wrong size on ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry");
+static_assert(alignof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry) == 0x000008, "Wrong alignment on ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry");
+static_assert(sizeof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry) == 0x000078, "Wrong size on ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry");
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, EntryPoint) == 0x000000, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, K2Node_Event_IsDesignTime) == 0x000010, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::K2Node_Event_IsDesignTime' has a wrong offset!");
@@ -72,15 +72,15 @@ static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSl
 static_assert(offsetof(ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry, CallFunc_BooleanAND_ReturnValue2) == 0x000072, "Member 'ItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 
 // Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature
-// 0x0127 (0x0127 - 0x0000)
-struct alignas(0x127) ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature final
+// 0x0010 (0x0010 - 0x0000)
+struct ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Selected;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature) == 0x000127, "Wrong alignment on ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature");
-static_assert(sizeof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature) == 0x000127, "Wrong size on ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature");
+static_assert(alignof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature");
+static_assert(sizeof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature) == 0x000010, "Wrong size on ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature");
 static_assert(offsetof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature, Button) == 0x000000, "Member 'ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature::Button' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature, Selected) == 0x000008, "Member 'ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature::Selected' has a wrong offset!");
 
@@ -107,18 +107,18 @@ static_assert(sizeof(ItemTransformSlotEntry_C_PreConstruct) == 0x000001, "Wrong 
 static_assert(offsetof(ItemTransformSlotEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemTransformSlotEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x0000E4, "Wrong alignment on ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x0000E4, "Wrong size on ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.SetSacrificeItem
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct ItemTransformSlotEntry_C_SetSacrificeItem final
 {
 public:
@@ -127,13 +127,13 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransmogSacrifice                     CallFunc_GetTransmogSacrificeDataFromItemDefintion_OutTransmogData; // 0x0020(0x11821780)()
+	struct FTransmogSacrifice                     CallFunc_GetTransmogSacrificeDataFromItemDefintion_OutTransmogData; // 0x0020(0x0010)()
 	bool                                          CallFunc_GetTransmogSacrificeDataFromItemDefintion_ReturnValue; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformSlotEntry_C_SetSacrificeItem) == 0x11821780, "Wrong alignment on ItemTransformSlotEntry_C_SetSacrificeItem");
-static_assert(sizeof(ItemTransformSlotEntry_C_SetSacrificeItem) == 0x11821780, "Wrong size on ItemTransformSlotEntry_C_SetSacrificeItem");
+static_assert(alignof(ItemTransformSlotEntry_C_SetSacrificeItem) == 0x000008, "Wrong alignment on ItemTransformSlotEntry_C_SetSacrificeItem");
+static_assert(sizeof(ItemTransformSlotEntry_C_SetSacrificeItem) == 0x000038, "Wrong size on ItemTransformSlotEntry_C_SetSacrificeItem");
 static_assert(offsetof(ItemTransformSlotEntry_C_SetSacrificeItem, SelectedSacrificeItem) == 0x000000, "Member 'ItemTransformSlotEntry_C_SetSacrificeItem::SelectedSacrificeItem' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_SetSacrificeItem, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000008, "Member 'ItemTransformSlotEntry_C_SetSacrificeItem::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemTransformSlotEntry_C_SetSacrificeItem, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'ItemTransformSlotEntry_C_SetSacrificeItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -143,14 +143,14 @@ static_assert(offsetof(ItemTransformSlotEntry_C_SetSacrificeItem, CallFunc_GetTr
 static_assert(offsetof(ItemTransformSlotEntry_C_SetSacrificeItem, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000034, "Member 'ItemTransformSlotEntry_C_SetSacrificeItem::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.SetSlotSelection
-// 0x04EF (0x04EF - 0x0000)
-struct alignas(0x4EF) ItemTransformSlotEntry_C_SetSlotSelection final
+// 0x0001 (0x0001 - 0x0000)
+struct ItemTransformSlotEntry_C_SetSlotSelection final
 {
 public:
 	bool                                          Selected;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformSlotEntry_C_SetSlotSelection) == 0x0004EF, "Wrong alignment on ItemTransformSlotEntry_C_SetSlotSelection");
-static_assert(sizeof(ItemTransformSlotEntry_C_SetSlotSelection) == 0x0004EF, "Wrong size on ItemTransformSlotEntry_C_SetSlotSelection");
+static_assert(alignof(ItemTransformSlotEntry_C_SetSlotSelection) == 0x000001, "Wrong alignment on ItemTransformSlotEntry_C_SetSlotSelection");
+static_assert(sizeof(ItemTransformSlotEntry_C_SetSlotSelection) == 0x000001, "Wrong size on ItemTransformSlotEntry_C_SetSlotSelection");
 static_assert(offsetof(ItemTransformSlotEntry_C_SetSlotSelection, Selected) == 0x000000, "Member 'ItemTransformSlotEntry_C_SetSlotSelection::Selected' has a wrong offset!");
 
 }

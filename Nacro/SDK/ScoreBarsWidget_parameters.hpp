@@ -19,8 +19,8 @@ namespace SDK::Params
 {
 
 // Function ScoreBarsWidget.ScoreBarsWidget_C.ExecuteUbergraph_ScoreBarsWidget
-// 0x0D2E (0x0D2E - 0x0000)
-struct alignas(0xD2E) ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget final
+// 0x0040 (0x0040 - 0x0000)
+struct ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,8 +33,8 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class AFortMissionState* MissionState)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget) == 0x000D2E, "Wrong alignment on ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget");
-static_assert(sizeof(ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget) == 0x000D2E, "Wrong size on ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget");
+static_assert(alignof(ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget) == 0x000008, "Wrong alignment on ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget");
+static_assert(sizeof(ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget) == 0x000040, "Wrong size on ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget");
 static_assert(offsetof(ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget, EntryPoint) == 0x000000, "Member 'ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget, CallFunc_HasValidBadgeInfos_bHasValidBadgeInfos) == 0x000018, "Member 'ScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget::CallFunc_HasValidBadgeInfos_bHasValidBadgeInfos' has a wrong offset!");
@@ -201,7 +201,7 @@ static_assert(offsetof(ScoreBarsWidget_C_HandleUpdateUI, Mission) == 0x000000, "
 static_assert(offsetof(ScoreBarsWidget_C_HandleUpdateUI, CallFunc_HasValidBadgeInfos_bHasValidBadgeInfos) == 0x000008, "Member 'ScoreBarsWidget_C_HandleUpdateUI::CallFunc_HasValidBadgeInfos_bHasValidBadgeInfos' has a wrong offset!");
 
 // Function ScoreBarsWidget.ScoreBarsWidget_C.InitializeIcons
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x01B8 (0x01B8 - 0x0000)
 struct ScoreBarsWidget_C_InitializeIcons final
 {
 public:
@@ -213,12 +213,12 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue4;                 // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue4;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0008(0x322CBBB8)(ConstParm)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2; // 0x0098(0x322CBBB8)(ConstParm)
-	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue3; // 0x0128(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0008(0x0090)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2; // 0x0098(0x0090)(ConstParm)
+	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue3; // 0x0128(0x0090)(ConstParm)
 };
-static_assert(alignof(ScoreBarsWidget_C_InitializeIcons) == 0x11827900, "Wrong alignment on ScoreBarsWidget_C_InitializeIcons");
-static_assert(sizeof(ScoreBarsWidget_C_InitializeIcons) == 0x11827900, "Wrong size on ScoreBarsWidget_C_InitializeIcons");
+static_assert(alignof(ScoreBarsWidget_C_InitializeIcons) == 0x000008, "Wrong alignment on ScoreBarsWidget_C_InitializeIcons");
+static_assert(sizeof(ScoreBarsWidget_C_InitializeIcons) == 0x0001B8, "Wrong size on ScoreBarsWidget_C_InitializeIcons");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_Not_PreBool_ReturnValue2) == 0x000001, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ScoreBarsWidget_C_InitializeIcons, CallFunc_BooleanAND_ReturnValue) == 0x000002, "Member 'ScoreBarsWidget_C_InitializeIcons::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");

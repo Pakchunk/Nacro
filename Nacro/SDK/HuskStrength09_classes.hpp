@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass HuskStrength09.HuskStrength09_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x0000 (0x0060 - 0x0060)
 class UHuskStrength09_C final : public UFortNavAreaAutomatic
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UHuskStrength09_C>();
 	}
 };
-static_assert(alignof(UHuskStrength09_C) == 0x1182A000, "Wrong alignment on UHuskStrength09_C");
-static_assert(sizeof(UHuskStrength09_C) == 0x1182A000, "Wrong size on UHuskStrength09_C");
+static_assert(alignof(UHuskStrength09_C) == 0x000008, "Wrong alignment on UHuskStrength09_C");
+static_assert(sizeof(UHuskStrength09_C) == 0x000060, "Wrong size on UHuskStrength09_C");
 
 }
 

@@ -115,14 +115,14 @@ static_assert(offsetof(NormalBangWrapper_C_Update_Bang_Icon_Version, K2Node_Sele
 static_assert(offsetof(NormalBangWrapper_C_Update_Bang_Icon_Version, K2Node_Select2_Default) == 0x000020, "Member 'NormalBangWrapper_C_Update_Bang_Icon_Version::K2Node_Select2_Default' has a wrong offset!");
 
 // Function NormalBangWrapper.NormalBangWrapper_C.Adjust Bang Image Translation
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct NormalBangWrapper_C_Adjust_Bang_Image_Translation final
 {
 public:
-	struct FVector2D                              Translation;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Translation;                                       // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(NormalBangWrapper_C_Adjust_Bang_Image_Translation) == 0x11821300, "Wrong alignment on NormalBangWrapper_C_Adjust_Bang_Image_Translation");
-static_assert(sizeof(NormalBangWrapper_C_Adjust_Bang_Image_Translation) == 0x11821300, "Wrong size on NormalBangWrapper_C_Adjust_Bang_Image_Translation");
+static_assert(alignof(NormalBangWrapper_C_Adjust_Bang_Image_Translation) == 0x000004, "Wrong alignment on NormalBangWrapper_C_Adjust_Bang_Image_Translation");
+static_assert(sizeof(NormalBangWrapper_C_Adjust_Bang_Image_Translation) == 0x000008, "Wrong size on NormalBangWrapper_C_Adjust_Bang_Image_Translation");
 static_assert(offsetof(NormalBangWrapper_C_Adjust_Bang_Image_Translation, Translation) == 0x000000, "Member 'NormalBangWrapper_C_Adjust_Bang_Image_Translation::Translation' has a wrong offset!");
 
 }

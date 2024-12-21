@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NavLink_RoofC.NavLink_RoofC_C
-// 0x0000 (0x11821780 - 0x11821780)
+// 0x0000 (0x0080 - 0x0080)
 class UNavLink_RoofC_C final : public UFortNavLinkDefinition
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UNavLink_RoofC_C>();
 	}
 };
-static_assert(alignof(UNavLink_RoofC_C) == 0x11821780, "Wrong alignment on UNavLink_RoofC_C");
-static_assert(sizeof(UNavLink_RoofC_C) == 0x11821780, "Wrong size on UNavLink_RoofC_C");
+static_assert(alignof(UNavLink_RoofC_C) == 0x000008, "Wrong alignment on UNavLink_RoofC_C");
+static_assert(sizeof(UNavLink_RoofC_C) == 0x000080, "Wrong size on UNavLink_RoofC_C");
 
 }
 

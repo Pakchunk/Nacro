@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AthenaPlayersLeftWidget.AthenaPlayersLeftWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0288 - 0x0268)
 class UAthenaPlayersLeftWidget_C final : public UAthenaPlayersLeftBase
 {
 public:
@@ -34,8 +34,8 @@ public:
 		return GetDefaultObjImpl<UAthenaPlayersLeftWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaPlayersLeftWidget_C) == 0x322CBBB8, "Wrong alignment on UAthenaPlayersLeftWidget_C");
-static_assert(sizeof(UAthenaPlayersLeftWidget_C) == 0x322CBBB8, "Wrong size on UAthenaPlayersLeftWidget_C");
+static_assert(alignof(UAthenaPlayersLeftWidget_C) == 0x000008, "Wrong alignment on UAthenaPlayersLeftWidget_C");
+static_assert(sizeof(UAthenaPlayersLeftWidget_C) == 0x000288, "Wrong size on UAthenaPlayersLeftWidget_C");
 static_assert(offsetof(UAthenaPlayersLeftWidget_C, PlayersOrTeamsLeftImage) == 0x000268, "Member 'UAthenaPlayersLeftWidget_C::PlayersOrTeamsLeftImage' has a wrong offset!");
 static_assert(offsetof(UAthenaPlayersLeftWidget_C, TeamsLeft) == 0x000270, "Member 'UAthenaPlayersLeftWidget_C::TeamsLeft' has a wrong offset!");
 

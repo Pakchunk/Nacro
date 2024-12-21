@@ -18,15 +18,15 @@ namespace SDK::Params
 {
 
 // Function ItemTransformRequiredItems.ItemTransformRequiredItems_C.UpdateItems
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct ItemTransformRequiredItems_C_UpdateItems final
 {
 public:
 	class UFortItem*                              TransformKey;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SacrificePoints;                                   // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            NotHaveColor;                                      // 0x0010(0x322CBBB8)(Edit)
-	struct FSlateColor                            HaveColor;                                         // 0x0038(0x322CBBB8)(Edit)
+	struct FSlateColor                            NotHaveColor;                                      // 0x0010(0x0028)(Edit)
+	struct FSlateColor                            HaveColor;                                         // 0x0038(0x0028)(Edit)
 	int32                                         Temp_int_Variable;                                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,7 +53,7 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable4;                                // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_Select2_Default;                            // 0x00E0(0x322CBBB8)()
+	struct FSlateColor                            K2Node_Select2_Default;                            // 0x00E0(0x0028)()
 	bool                                          Temp_bool_Variable3;                               // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select3_Default;                            // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,8 +62,8 @@ public:
 	bool                                          Temp_bool_Variable4;                               // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformRequiredItems_C_UpdateItems) == 0x322CBBB8, "Wrong alignment on ItemTransformRequiredItems_C_UpdateItems");
-static_assert(sizeof(ItemTransformRequiredItems_C_UpdateItems) == 0x322CBBB8, "Wrong size on ItemTransformRequiredItems_C_UpdateItems");
+static_assert(alignof(ItemTransformRequiredItems_C_UpdateItems) == 0x000008, "Wrong alignment on ItemTransformRequiredItems_C_UpdateItems");
+static_assert(sizeof(ItemTransformRequiredItems_C_UpdateItems) == 0x000118, "Wrong size on ItemTransformRequiredItems_C_UpdateItems");
 static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, TransformKey) == 0x000000, "Member 'ItemTransformRequiredItems_C_UpdateItems::TransformKey' has a wrong offset!");
 static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, SacrificePoints) == 0x000008, "Member 'ItemTransformRequiredItems_C_UpdateItems::SacrificePoints' has a wrong offset!");
 static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, NotHaveColor) == 0x000010, "Member 'ItemTransformRequiredItems_C_UpdateItems::NotHaveColor' has a wrong offset!");

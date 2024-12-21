@@ -21,11 +21,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass StatsListItemWIdget.StatsListItemWIdget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01D8 (0x0508 - 0x0330)
 class UStatsListItemWIdget_C final : public UFortAttributeListItem_NUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 BasicPairBuffArrow;                                // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BasicPairIcon;                                     // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       BasicPairLabel;                                    // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -44,8 +44,8 @@ public:
 	class UBorder*                                StatBackground;                                    // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        SwitcherPairedBasic;                               // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VBStatHeader;                                      // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                            StatIcon;                                          // 0x03C8(0x322CBBB8)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                            NormalBorderStyle;                                 // 0x0458(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            StatIcon;                                          // 0x03C8(0x0090)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                            NormalBorderStyle;                                 // 0x0458(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          Indent;                                            // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_4E9[0x7];                                      // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   OverrideStateName;                                 // 0x04F0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
@@ -76,8 +76,8 @@ public:
 		return GetDefaultObjImpl<UStatsListItemWIdget_C>();
 	}
 };
-static_assert(alignof(UStatsListItemWIdget_C) == 0x322CBBB8, "Wrong alignment on UStatsListItemWIdget_C");
-static_assert(sizeof(UStatsListItemWIdget_C) == 0x322CBBB8, "Wrong size on UStatsListItemWIdget_C");
+static_assert(alignof(UStatsListItemWIdget_C) == 0x000008, "Wrong alignment on UStatsListItemWIdget_C");
+static_assert(sizeof(UStatsListItemWIdget_C) == 0x000508, "Wrong size on UStatsListItemWIdget_C");
 static_assert(offsetof(UStatsListItemWIdget_C, UberGraphFrame) == 0x000330, "Member 'UStatsListItemWIdget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UStatsListItemWIdget_C, BasicPairBuffArrow) == 0x000338, "Member 'UStatsListItemWIdget_C::BasicPairBuffArrow' has a wrong offset!");
 static_assert(offsetof(UStatsListItemWIdget_C, BasicPairIcon) == 0x000340, "Member 'UStatsListItemWIdget_C::BasicPairIcon' has a wrong offset!");

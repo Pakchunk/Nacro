@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Item_TierStar.Item_TierStar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0020 (0x0250 - 0x0230)
 class UItem_TierStar_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_Star;                                        // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0240(0x11821300)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0240(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_Item_TierStar(int32 EntryPoint);
@@ -41,8 +41,8 @@ public:
 		return GetDefaultObjImpl<UItem_TierStar_C>();
 	}
 };
-static_assert(alignof(UItem_TierStar_C) == 0x322CBBB8, "Wrong alignment on UItem_TierStar_C");
-static_assert(sizeof(UItem_TierStar_C) == 0x322CBBB8, "Wrong size on UItem_TierStar_C");
+static_assert(alignof(UItem_TierStar_C) == 0x000008, "Wrong alignment on UItem_TierStar_C");
+static_assert(sizeof(UItem_TierStar_C) == 0x000250, "Wrong size on UItem_TierStar_C");
 static_assert(offsetof(UItem_TierStar_C, UberGraphFrame) == 0x000230, "Member 'UItem_TierStar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItem_TierStar_C, Image_Star) == 0x000238, "Member 'UItem_TierStar_C::Image_Star' has a wrong offset!");
 static_assert(offsetof(UItem_TierStar_C, Color) == 0x000240, "Member 'UItem_TierStar_C::Color' has a wrong offset!");

@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function QuestTreeEntry.QuestTreeEntry_C.ExecuteUbergraph_QuestTreeEntry
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry final
 {
 public:
@@ -68,7 +68,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x00CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select2_Default;                            // 0x00D4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select2_Default;                            // 0x00D4(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable2;                                // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestItem*                         K2Node_CustomEvent_Quest;                          // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UFortQuestItem* Quest)>  K2Node_CreateDelegate_OutputDelegate2;             // 0x00F0(0x0010)(ZeroConstructor, NoDestructor)
@@ -79,8 +79,8 @@ public:
 	int32                                         Temp_int_Variable4;                                // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select3_Default;                            // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry) == 0x11821300, "Wrong alignment on QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry");
-static_assert(sizeof(QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry) == 0x11821300, "Wrong size on QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry");
+static_assert(alignof(QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry) == 0x000008, "Wrong alignment on QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry");
+static_assert(sizeof(QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry) == 0x000120, "Wrong size on QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry");
 static_assert(offsetof(QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry, EntryPoint) == 0x000000, "Member 'QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry::EntryPoint' has a wrong offset!");
 static_assert(offsetof(QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry, Temp_bool_Variable) == 0x000018, "Member 'QuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry::Temp_bool_Variable' has a wrong offset!");
@@ -187,7 +187,7 @@ static_assert(offsetof(QuestTreeEntry_C_SetPinnedState, CallFunc_Conv_BoolToInt_
 static_assert(offsetof(QuestTreeEntry_C_SetPinnedState, CallFunc_IsQuestPinned_ReturnValue) == 0x000008, "Member 'QuestTreeEntry_C_SetPinnedState::CallFunc_IsQuestPinned_ReturnValue' has a wrong offset!");
 
 // Function QuestTreeEntry.QuestTreeEntry_C.SetCompletionPercentage
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct QuestTreeEntry_C_SetCompletionPercentage final
 {
 public:
@@ -198,12 +198,12 @@ public:
 	int32                                         CallFunc_FFloor_ReturnValue;                       // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0018)()
 };
-static_assert(alignof(QuestTreeEntry_C_SetCompletionPercentage) == 0x11821D80, "Wrong alignment on QuestTreeEntry_C_SetCompletionPercentage");
-static_assert(sizeof(QuestTreeEntry_C_SetCompletionPercentage) == 0x11821D80, "Wrong size on QuestTreeEntry_C_SetCompletionPercentage");
+static_assert(alignof(QuestTreeEntry_C_SetCompletionPercentage) == 0x000008, "Wrong alignment on QuestTreeEntry_C_SetCompletionPercentage");
+static_assert(sizeof(QuestTreeEntry_C_SetCompletionPercentage) == 0x000090, "Wrong size on QuestTreeEntry_C_SetCompletionPercentage");
 static_assert(offsetof(QuestTreeEntry_C_SetCompletionPercentage, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'QuestTreeEntry_C_SetCompletionPercentage::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestTreeEntry_C_SetCompletionPercentage, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'QuestTreeEntry_C_SetCompletionPercentage::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(QuestTreeEntry_C_SetCompletionPercentage, CallFunc_GetPercentageComplete_ReturnValue) == 0x000004, "Member 'QuestTreeEntry_C_SetCompletionPercentage::CallFunc_GetPercentageComplete_ReturnValue' has a wrong offset!");
@@ -333,7 +333,7 @@ static_assert(offsetof(QuestTreeEntry_C_Get_Quest_Item_Def, K2Node_DynamicCast_A
 static_assert(offsetof(QuestTreeEntry_C_Get_Quest_Item_Def, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'QuestTreeEntry_C_Get_Quest_Item_Def::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function QuestTreeEntry.QuestTreeEntry_C.Set Quest Display Name
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct QuestTreeEntry_C_Set_Quest_Display_Name final
 {
 public:
@@ -341,8 +341,8 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Get_Streaming_Attached_Quest_Name_ModifiedName; // 0x0020(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x11821D80)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0078(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x0078(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B8(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_Is_Streaming_Quest_bStreamingQuest;       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -350,8 +350,8 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x00E8(0x0018)()
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0100(0x0018)()
 };
-static_assert(alignof(QuestTreeEntry_C_Set_Quest_Display_Name) == 0x11821D80, "Wrong alignment on QuestTreeEntry_C_Set_Quest_Display_Name");
-static_assert(sizeof(QuestTreeEntry_C_Set_Quest_Display_Name) == 0x11821D80, "Wrong size on QuestTreeEntry_C_Set_Quest_Display_Name");
+static_assert(alignof(QuestTreeEntry_C_Set_Quest_Display_Name) == 0x000008, "Wrong alignment on QuestTreeEntry_C_Set_Quest_Display_Name");
+static_assert(sizeof(QuestTreeEntry_C_Set_Quest_Display_Name) == 0x000118, "Wrong size on QuestTreeEntry_C_Set_Quest_Display_Name");
 static_assert(offsetof(QuestTreeEntry_C_Set_Quest_Display_Name, LocalQuestName) == 0x000000, "Member 'QuestTreeEntry_C_Set_Quest_Display_Name::LocalQuestName' has a wrong offset!");
 static_assert(offsetof(QuestTreeEntry_C_Set_Quest_Display_Name, Temp_bool_Variable) == 0x000018, "Member 'QuestTreeEntry_C_Set_Quest_Display_Name::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(QuestTreeEntry_C_Set_Quest_Display_Name, CallFunc_Get_Streaming_Attached_Quest_Name_ModifiedName) == 0x000020, "Member 'QuestTreeEntry_C_Set_Quest_Display_Name::CallFunc_Get_Streaming_Attached_Quest_Name_ModifiedName' has a wrong offset!");

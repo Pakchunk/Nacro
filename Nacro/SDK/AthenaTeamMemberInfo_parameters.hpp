@@ -18,23 +18,23 @@ namespace SDK::Params
 {
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.ExecuteUbergraph_AthenaTeamMemberInfo
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0008(0x322CBBB8)(ConstParm)
+	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0008(0x0090)(ConstParm)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo) == 0x11827900, "Wrong alignment on AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo");
-static_assert(sizeof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo) == 0x11827900, "Wrong size on AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo");
+static_assert(alignof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo");
+static_assert(sizeof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo) == 0x000098, "Wrong size on AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo");
 static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, EntryPoint) == 0x000000, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::EntryPoint' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, Temp_int_Variable) == 0x000004, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::Temp_int_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo, K2Node_Select_Default) == 0x000008, "Member 'AthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetHealth
-// 0x0B62 (0x0B62 - 0x0000)
-struct alignas(0xB62) AthenaTeamMemberInfo_C_SetHealth final
+// 0x0018 (0x0018 - 0x0000)
+struct AthenaTeamMemberInfo_C_SetHealth final
 {
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,16 +43,16 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_SetHealth) == 0x000B62, "Wrong alignment on AthenaTeamMemberInfo_C_SetHealth");
-static_assert(sizeof(AthenaTeamMemberInfo_C_SetHealth) == 0x000B62, "Wrong size on AthenaTeamMemberInfo_C_SetHealth");
+static_assert(alignof(AthenaTeamMemberInfo_C_SetHealth) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_SetHealth");
+static_assert(sizeof(AthenaTeamMemberInfo_C_SetHealth) == 0x000018, "Wrong size on AthenaTeamMemberInfo_C_SetHealth");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetHealth, Value) == 0x000000, "Member 'AthenaTeamMemberInfo_C_SetHealth::Value' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetHealth, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'AthenaTeamMemberInfo_C_SetHealth::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetHealth, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'AthenaTeamMemberInfo_C_SetHealth::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetHealth, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x000010, "Member 'AthenaTeamMemberInfo_C_SetHealth::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetShield
-// 0x10461A40 (0x10461A40 - 0x0000)
-struct alignas(0x10461A40) AthenaTeamMemberInfo_C_SetShield final
+// 0x0010 (0x0010 - 0x0000)
+struct AthenaTeamMemberInfo_C_SetShield final
 {
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -60,25 +60,25 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_SetShield) == 0x10461A40, "Wrong alignment on AthenaTeamMemberInfo_C_SetShield");
-static_assert(sizeof(AthenaTeamMemberInfo_C_SetShield) == 0x10461A40, "Wrong size on AthenaTeamMemberInfo_C_SetShield");
+static_assert(alignof(AthenaTeamMemberInfo_C_SetShield) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_SetShield");
+static_assert(sizeof(AthenaTeamMemberInfo_C_SetShield) == 0x000010, "Wrong size on AthenaTeamMemberInfo_C_SetShield");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetShield, Value) == 0x000000, "Member 'AthenaTeamMemberInfo_C_SetShield::Value' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetShield, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'AthenaTeamMemberInfo_C_SetShield::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetShield, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'AthenaTeamMemberInfo_C_SetShield::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdatePS
-// 0x009D (0x009D - 0x0000)
-struct alignas(0x9D) AthenaTeamMemberInfo_C_UpdatePS final
+// 0x0008 (0x0008 - 0x0000)
+struct AthenaTeamMemberInfo_C_UpdatePS final
 {
 public:
 	class AFortPlayerStateAthena*                 InPlayerState;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_UpdatePS) == 0x00009D, "Wrong alignment on AthenaTeamMemberInfo_C_UpdatePS");
-static_assert(sizeof(AthenaTeamMemberInfo_C_UpdatePS) == 0x00009D, "Wrong size on AthenaTeamMemberInfo_C_UpdatePS");
+static_assert(alignof(AthenaTeamMemberInfo_C_UpdatePS) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_UpdatePS");
+static_assert(sizeof(AthenaTeamMemberInfo_C_UpdatePS) == 0x000008, "Wrong size on AthenaTeamMemberInfo_C_UpdatePS");
 static_assert(offsetof(AthenaTeamMemberInfo_C_UpdatePS, InPlayerState) == 0x000000, "Member 'AthenaTeamMemberInfo_C_UpdatePS::InPlayerState' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetDead
-// 0x322CBBB8 (0x322CBBB8 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct AthenaTeamMemberInfo_C_SetDead final
 {
 public:
@@ -89,12 +89,12 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x322CBBB8)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0030(0x322CBBB8)()
-	struct FSlateColor                            K2Node_Select2_Default;                            // 0x0058(0x322CBBB8)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0030(0x0028)()
+	struct FSlateColor                            K2Node_Select2_Default;                            // 0x0058(0x0028)()
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_SetDead) == 0x322CBBB8, "Wrong alignment on AthenaTeamMemberInfo_C_SetDead");
-static_assert(sizeof(AthenaTeamMemberInfo_C_SetDead) == 0x322CBBB8, "Wrong size on AthenaTeamMemberInfo_C_SetDead");
+static_assert(alignof(AthenaTeamMemberInfo_C_SetDead) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_SetDead");
+static_assert(sizeof(AthenaTeamMemberInfo_C_SetDead) == 0x000080, "Wrong size on AthenaTeamMemberInfo_C_SetDead");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetDead, Dead) == 0x000000, "Member 'AthenaTeamMemberInfo_C_SetDead::Dead' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetDead, Temp_bool_Variable) == 0x000001, "Member 'AthenaTeamMemberInfo_C_SetDead::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetDead, Temp_bool_Variable2) == 0x000002, "Member 'AthenaTeamMemberInfo_C_SetDead::Temp_bool_Variable2' has a wrong offset!");
@@ -117,28 +117,28 @@ static_assert(sizeof(AthenaTeamMemberInfo_C_SetDBNO) == 0x000001, "Wrong size on
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetDBNO, DBNO) == 0x000000, "Member 'AthenaTeamMemberInfo_C_SetDBNO::DBNO' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdatePlayerName
-// 0x005D (0x005D - 0x0000)
-struct alignas(0x5D) AthenaTeamMemberInfo_C_UpdatePlayerName final
+// 0x0020 (0x0020 - 0x0000)
+struct AthenaTeamMemberInfo_C_UpdatePlayerName final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0008(0x0018)()
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_UpdatePlayerName) == 0x00005D, "Wrong alignment on AthenaTeamMemberInfo_C_UpdatePlayerName");
-static_assert(sizeof(AthenaTeamMemberInfo_C_UpdatePlayerName) == 0x00005D, "Wrong size on AthenaTeamMemberInfo_C_UpdatePlayerName");
+static_assert(alignof(AthenaTeamMemberInfo_C_UpdatePlayerName) == 0x000008, "Wrong alignment on AthenaTeamMemberInfo_C_UpdatePlayerName");
+static_assert(sizeof(AthenaTeamMemberInfo_C_UpdatePlayerName) == 0x000020, "Wrong size on AthenaTeamMemberInfo_C_UpdatePlayerName");
 static_assert(offsetof(AthenaTeamMemberInfo_C_UpdatePlayerName, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'AthenaTeamMemberInfo_C_UpdatePlayerName::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaTeamMemberInfo_C_UpdatePlayerName, CallFunc_Conv_StringToText_ReturnValue) == 0x000008, "Member 'AthenaTeamMemberInfo_C_UpdatePlayerName::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetReviving
-// 0x0050 (0x0050 - 0x0000)
-struct alignas(0x50) AthenaTeamMemberInfo_C_SetReviving final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaTeamMemberInfo_C_SetReviving final
 {
 public:
 	bool                                          Reviving;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberInfo_C_SetReviving) == 0x000050, "Wrong alignment on AthenaTeamMemberInfo_C_SetReviving");
-static_assert(sizeof(AthenaTeamMemberInfo_C_SetReviving) == 0x000050, "Wrong size on AthenaTeamMemberInfo_C_SetReviving");
+static_assert(alignof(AthenaTeamMemberInfo_C_SetReviving) == 0x000001, "Wrong alignment on AthenaTeamMemberInfo_C_SetReviving");
+static_assert(sizeof(AthenaTeamMemberInfo_C_SetReviving) == 0x000001, "Wrong size on AthenaTeamMemberInfo_C_SetReviving");
 static_assert(offsetof(AthenaTeamMemberInfo_C_SetReviving, Reviving) == 0x000000, "Member 'AthenaTeamMemberInfo_C_SetReviving::Reviving' has a wrong offset!");
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetMuted

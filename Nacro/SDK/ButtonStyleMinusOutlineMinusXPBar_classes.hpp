@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass ButtonStyle-Outline-XPBar.ButtonStyle-Outline-XPBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0000 (0x0530 - 0x0530)
 class UButtonStyleMinusOutlineMinusXPBar_C final : public UCommonButtonStyle
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UButtonStyleMinusOutlineMinusXPBar_C>();
 	}
 };
-static_assert(alignof(UButtonStyleMinusOutlineMinusXPBar_C) == 0x322CBBB8, "Wrong alignment on UButtonStyleMinusOutlineMinusXPBar_C");
-static_assert(sizeof(UButtonStyleMinusOutlineMinusXPBar_C) == 0x322CBBB8, "Wrong size on UButtonStyleMinusOutlineMinusXPBar_C");
+static_assert(alignof(UButtonStyleMinusOutlineMinusXPBar_C) == 0x000008, "Wrong alignment on UButtonStyleMinusOutlineMinusXPBar_C");
+static_assert(sizeof(UButtonStyleMinusOutlineMinusXPBar_C) == 0x000530, "Wrong size on UButtonStyleMinusOutlineMinusXPBar_C");
 
 }
 

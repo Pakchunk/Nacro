@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ShowFriendCodesSelection.ShowFriendCodesSelection_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0040 (0x0420 - 0x03E0)
 class UShowFriendCodesSelection_C final : public UFriendCodeListBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
 	class UHorizontalBox*                         ButtonBox;                                         // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             CodesListScrollBox;                                // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFriendCodePC_C*                        FriendCodePC;                                      // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,8 +48,8 @@ public:
 		return GetDefaultObjImpl<UShowFriendCodesSelection_C>();
 	}
 };
-static_assert(alignof(UShowFriendCodesSelection_C) == 0x322CBBB8, "Wrong alignment on UShowFriendCodesSelection_C");
-static_assert(sizeof(UShowFriendCodesSelection_C) == 0x322CBBB8, "Wrong size on UShowFriendCodesSelection_C");
+static_assert(alignof(UShowFriendCodesSelection_C) == 0x000008, "Wrong alignment on UShowFriendCodesSelection_C");
+static_assert(sizeof(UShowFriendCodesSelection_C) == 0x000420, "Wrong size on UShowFriendCodesSelection_C");
 static_assert(offsetof(UShowFriendCodesSelection_C, UberGraphFrame) == 0x0003E0, "Member 'UShowFriendCodesSelection_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UShowFriendCodesSelection_C, ButtonBox) == 0x0003E8, "Member 'UShowFriendCodesSelection_C::ButtonBox' has a wrong offset!");
 static_assert(offsetof(UShowFriendCodesSelection_C, CodesListScrollBox) == 0x0003F0, "Member 'UShowFriendCodesSelection_C::CodesListScrollBox' has a wrong offset!");

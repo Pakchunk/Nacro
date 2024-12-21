@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Set Quest
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct BP_LiveStreamerDescription_C_Set_Quest final
 {
 public:
@@ -33,20 +33,20 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetBroadcasterName_BroadcasterName;       // 0x0030(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0040)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00B8(0x11821D80)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData2;             // 0x00B8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0108(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0120(0x0018)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_LiveStreamerDescription_C_Set_Quest) == 0x11821D80, "Wrong alignment on BP_LiveStreamerDescription_C_Set_Quest");
-static_assert(sizeof(BP_LiveStreamerDescription_C_Set_Quest) == 0x11821D80, "Wrong size on BP_LiveStreamerDescription_C_Set_Quest");
+static_assert(alignof(BP_LiveStreamerDescription_C_Set_Quest) == 0x000008, "Wrong alignment on BP_LiveStreamerDescription_C_Set_Quest");
+static_assert(sizeof(BP_LiveStreamerDescription_C_Set_Quest) == 0x000140, "Wrong size on BP_LiveStreamerDescription_C_Set_Quest");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Set_Quest, Quest_0) == 0x000000, "Member 'BP_LiveStreamerDescription_C_Set_Quest::Quest_0' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Set_Quest, Temp_bool_Variable) == 0x000008, "Member 'BP_LiveStreamerDescription_C_Set_Quest::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Set_Quest, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000010, "Member 'BP_LiveStreamerDescription_C_Set_Quest::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
@@ -97,8 +97,8 @@ static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, Temp_bool
 static_assert(offsetof(BP_LiveStreamerDescription_C_Update_Visibility, K2Node_Select_Default) == 0x000011, "Member 'BP_LiveStreamerDescription_C_Update_Visibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Is Viewer Quest
-// 0x6640F7C0 (0x6640F7C0 - 0x0000)
-struct alignas(0x6640F7C0) BP_LiveStreamerDescription_C_Is_Viewer_Quest final
+// 0x0006 (0x0006 - 0x0000)
+struct BP_LiveStreamerDescription_C_Is_Viewer_Quest final
 {
 public:
 	bool                                          ViewerQuest;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -108,8 +108,8 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_LiveStreamerDescription_C_Is_Viewer_Quest) == 0x6640F7C0, "Wrong alignment on BP_LiveStreamerDescription_C_Is_Viewer_Quest");
-static_assert(sizeof(BP_LiveStreamerDescription_C_Is_Viewer_Quest) == 0x6640F7C0, "Wrong size on BP_LiveStreamerDescription_C_Is_Viewer_Quest");
+static_assert(alignof(BP_LiveStreamerDescription_C_Is_Viewer_Quest) == 0x000001, "Wrong alignment on BP_LiveStreamerDescription_C_Is_Viewer_Quest");
+static_assert(sizeof(BP_LiveStreamerDescription_C_Is_Viewer_Quest) == 0x000006, "Wrong size on BP_LiveStreamerDescription_C_Is_Viewer_Quest");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Is_Viewer_Quest, ViewerQuest) == 0x000000, "Member 'BP_LiveStreamerDescription_C_Is_Viewer_Quest::ViewerQuest' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Is_Viewer_Quest, CallFunc_GetQuestType_ReturnValue) == 0x000001, "Member 'BP_LiveStreamerDescription_C_Is_Viewer_Quest::CallFunc_GetQuestType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_Is_Viewer_Quest, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'BP_LiveStreamerDescription_C_Is_Viewer_Quest::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
@@ -159,8 +159,8 @@ static_assert(sizeof(BP_LiveStreamerDescription_C_SetViewerQuestText) == 0x00001
 static_assert(offsetof(BP_LiveStreamerDescription_C_SetViewerQuestText, NewText) == 0x000000, "Member 'BP_LiveStreamerDescription_C_SetViewerQuestText::NewText' has a wrong offset!");
 
 // Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.GetBroadcasterName
-// 0x0098 (0x0098 - 0x0000)
-struct alignas(0x4C) BP_LiveStreamerDescription_C_GetBroadcasterName final
+// 0x0060 (0x0060 - 0x0000)
+struct BP_LiveStreamerDescription_C_GetBroadcasterName final
 {
 public:
 	class FText                                   BroadcasterName;                                   // 0x0000(0x0018)(Parm, OutParm)
@@ -170,8 +170,8 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0048(0x0018)()
 };
-static_assert(alignof(BP_LiveStreamerDescription_C_GetBroadcasterName) == 0x00004C, "Wrong alignment on BP_LiveStreamerDescription_C_GetBroadcasterName");
-static_assert(sizeof(BP_LiveStreamerDescription_C_GetBroadcasterName) == 0x000098, "Wrong size on BP_LiveStreamerDescription_C_GetBroadcasterName");
+static_assert(alignof(BP_LiveStreamerDescription_C_GetBroadcasterName) == 0x000008, "Wrong alignment on BP_LiveStreamerDescription_C_GetBroadcasterName");
+static_assert(sizeof(BP_LiveStreamerDescription_C_GetBroadcasterName) == 0x000060, "Wrong size on BP_LiveStreamerDescription_C_GetBroadcasterName");
 static_assert(offsetof(BP_LiveStreamerDescription_C_GetBroadcasterName, BroadcasterName) == 0x000000, "Member 'BP_LiveStreamerDescription_C_GetBroadcasterName::BroadcasterName' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_GetBroadcasterName, CallFunc_GetEmptyText_ReturnValue) == 0x000018, "Member 'BP_LiveStreamerDescription_C_GetBroadcasterName::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_LiveStreamerDescription_C_GetBroadcasterName, CallFunc_GetTwitchBroadcasterChannelId_ReturnValue) == 0x000030, "Member 'BP_LiveStreamerDescription_C_GetBroadcasterName::CallFunc_GetTwitchBroadcasterChannelId_ReturnValue' has a wrong offset!");

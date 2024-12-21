@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function TODM_A.TODM_A_C.ExecuteUbergraph_TODM_A
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct TODM_A_C_ExecuteUbergraph_TODM_A final
 {
 public:
@@ -43,7 +43,7 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x004F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0058(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0058(0x0008)(NoDestructor)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue4;         // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,12 +51,12 @@ public:
 	bool                                          K2Node_CustomEvent_Enable;                         // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetLightColor_ReturnValue;                // 0x0074(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetLightColor_ReturnValue;                // 0x0074(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_R;                             // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G;                             // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B;                             // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_A;                             // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0094(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_LinearColorLerp_ReturnValue;              // 0x0094(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue5;         // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_R2;                            // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G2;                            // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,40 +79,40 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue11;        // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameUserSettings*                      CallFunc_GetGameUserSettings_ReturnValue2;         // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0100(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0100(0x0030)(IsPlainOldData, NoDestructor)
 	int32                                         CallFunc_GetAntiAliasingQuality_ReturnValue;       // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_AddComponent_ReturnValue;                 // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x0148(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x0148(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue7;              // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue2;                      // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue8;              // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue2;                   // 0x0168(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue3;                   // 0x0178(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue2;                   // 0x0168(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue3;                   // 0x0178(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue3;                      // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue4;                      // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue9;              // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue10;             // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue4;                   // 0x0198(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue5;                   // 0x01A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue4;                   // 0x0198(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue5;                   // 0x01A8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue5;                      // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue11;             // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue6;                      // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue12;             // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue6;                   // 0x01C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue7;                   // 0x01D8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue6;                   // 0x01C8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue7;                   // 0x01D8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue7;                      // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue13;             // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue8;                      // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue14;             // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue8;                   // 0x01F8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue8;                   // 0x01F8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TODM_A_C_ExecuteUbergraph_TODM_A) == 0x11821D80, "Wrong alignment on TODM_A_C_ExecuteUbergraph_TODM_A");
-static_assert(sizeof(TODM_A_C_ExecuteUbergraph_TODM_A) == 0x11821D80, "Wrong size on TODM_A_C_ExecuteUbergraph_TODM_A");
+static_assert(alignof(TODM_A_C_ExecuteUbergraph_TODM_A) == 0x000010, "Wrong alignment on TODM_A_C_ExecuteUbergraph_TODM_A");
+static_assert(sizeof(TODM_A_C_ExecuteUbergraph_TODM_A) == 0x000210, "Wrong size on TODM_A_C_ExecuteUbergraph_TODM_A");
 static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, EntryPoint) == 0x000000, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FFloor_ReturnValue) == 0x000004, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FFloor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Conv_IntToBool_ReturnValue) == 0x000008, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
@@ -195,18 +195,18 @@ static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat
 static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue8) == 0x0001F8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue8' has a wrong offset!");
 
 // Function TODM_A.TODM_A_C.DisableLightAndFog
-// 0x460065 (0x460065 - 0x0000)
-struct alignas(0x460065) TODM_A_C_DisableLightAndFog final
+// 0x0001 (0x0001 - 0x0000)
+struct TODM_A_C_DisableLightAndFog final
 {
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TODM_A_C_DisableLightAndFog) == 0x460065, "Wrong alignment on TODM_A_C_DisableLightAndFog");
-static_assert(sizeof(TODM_A_C_DisableLightAndFog) == 0x460065, "Wrong size on TODM_A_C_DisableLightAndFog");
+static_assert(alignof(TODM_A_C_DisableLightAndFog) == 0x000001, "Wrong alignment on TODM_A_C_DisableLightAndFog");
+static_assert(sizeof(TODM_A_C_DisableLightAndFog) == 0x000001, "Wrong size on TODM_A_C_DisableLightAndFog");
 static_assert(offsetof(TODM_A_C_DisableLightAndFog, Enable) == 0x000000, "Member 'TODM_A_C_DisableLightAndFog::Enable' has a wrong offset!");
 
 // Function TODM_A.TODM_A_C.UserConstructionScript
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct TODM_A_C_UserConstructionScript final
 {
 public:
@@ -214,29 +214,29 @@ public:
 	float                                         CallFunc_FClamp_ReturnValue2;                      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue2;                   // 0x0020(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue2;                   // 0x0020(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue3;                      // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue4;                      // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue4;              // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue3;                   // 0x0040(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue4;                   // 0x0050(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue3;                   // 0x0040(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue4;                   // 0x0050(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue5;                      // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue5;              // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue6;                      // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue6;              // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue5;                   // 0x0070(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue6;                   // 0x0080(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue5;                   // 0x0070(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue6;                   // 0x0080(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue7;                      // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue7;              // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue8;                      // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue8;              // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue7;                   // 0x00A0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue8;                   // 0x00B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue7;                   // 0x00A0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue8;                   // 0x00B0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TODM_A_C_UserConstructionScript) == 0x11821300, "Wrong alignment on TODM_A_C_UserConstructionScript");
-static_assert(sizeof(TODM_A_C_UserConstructionScript) == 0x11821300, "Wrong size on TODM_A_C_UserConstructionScript");
+static_assert(alignof(TODM_A_C_UserConstructionScript) == 0x000004, "Wrong alignment on TODM_A_C_UserConstructionScript");
+static_assert(sizeof(TODM_A_C_UserConstructionScript) == 0x0000C0, "Wrong size on TODM_A_C_UserConstructionScript");
 static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue) == 0x000000, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue2) == 0x000004, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue) == 0x000008, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");

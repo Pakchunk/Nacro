@@ -19,20 +19,21 @@ namespace SDK::Params
 {
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ExecuteUbergraph_TheaterCamera_Blueprint
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0830 (0x0830 - 0x0000)
 struct TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0004(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X2;                           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y2;                           // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z2;                           // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0038(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0038(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -40,26 +41,26 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue2;         // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x00D8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x00D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue3;         // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue2;           // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue4;         // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable2;                    // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00FC(0x11821300)(IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetActorLocationAndRotation_SweepHitResult; // 0x0108(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00FC(0x000C)(IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetActorLocationAndRotation_SweepHitResult; // 0x0108(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocationAndRotation_ReturnValue; // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                K2Node_CustomEvent_HexWorldLoc;                    // 0x0194(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_HexWorldLoc;                    // 0x0194(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X3;                           // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y3;                           // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z3;                           // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class ABP_Hex_PARENT_C*>               CallFunc_GetAllActorsOfClass_OutActors;            // 0x01B0(0x0010)(ZeroConstructor, ReferenceParm)
-	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x01C0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x01C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Array_Get_Item;                           // 0x01D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Array_Get_Item;                           // 0x01D0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable2;                   // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,10 +69,10 @@ public:
 	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvas*                                CallFunc_BeginDrawCanvasToRenderTarget_Canvas;     // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size;       // 0x01F8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context;    // 0x0200(0x11821D80)(NoDestructor)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position; // 0x0210(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size; // 0x0218(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size;       // 0x01F8(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context;    // 0x0200(0x0010)(NoDestructor)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position; // 0x0210(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size; // 0x0218(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable3;                    // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue2;                // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue3;                // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,7 +86,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue7;                // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_249[0x3];                                      // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x024C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x024C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue8;                // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue9;                // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue6;         // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -94,46 +95,46 @@ public:
 	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_Hex_PARENT_C*                       CallFunc_Array_Get_Item2;                          // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_Hex_PARENT_C*                       CallFunc_Array_Get_Item3;                          // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x0280(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x028C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue2;         // 0x0280(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue3;         // 0x028C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_299[0x3];                                      // 0x0299(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x029C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue;              // 0x02A8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x02B4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x029C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue;              // 0x02A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x02B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue2;       // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2C1[0x3];                                      // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue;        // 0x02C4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue4;         // 0x02CC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue2;       // 0x02D8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue;        // 0x02C4(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue4;         // 0x02CC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue2;       // 0x02D8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue3;       // 0x02E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2E5[0x3];                                      // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue2;             // 0x02E8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue2;          // 0x02F4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue5;         // 0x0300(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue2;       // 0x030C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue3;       // 0x0314(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue3;             // 0x0320(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue3;          // 0x032C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue6;         // 0x0338(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue3;       // 0x0344(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue4;       // 0x034C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue4;             // 0x0358(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue4;          // 0x0364(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue4;       // 0x0370(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue2;             // 0x02E8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue2;          // 0x02F4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue5;         // 0x0300(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue2;       // 0x030C(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue3;       // 0x0314(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue3;             // 0x0320(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue3;          // 0x032C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue6;         // 0x0338(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue3;       // 0x0344(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue4;       // 0x034C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue4;             // 0x0358(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue4;          // 0x0364(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue4;       // 0x0370(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_37C[0x4];                                      // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(const class FString& TheaterId)> K2Node_CreateDelegate_OutputDelegate;              // 0x0380(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(const class FString& TheaterId)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0390(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3A1[0x3];                                      // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue5;       // 0x03A4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue5;       // 0x03A4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3B1[0x3];                                      // 0x03B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue5;             // 0x03B4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue5;          // 0x03C0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue5;             // 0x03B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue5;          // 0x03C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable6;                    // 0x03CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue5;       // 0x03D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue5;       // 0x03D0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_Hex_PARENT_C*                       CallFunc_Array_Get_Item4;                          // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetInputMouseDelta_DeltaX;                // 0x03E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -144,10 +145,10 @@ public:
 	uint8                                         Pad_3F9[0x3];                                      // 0x03F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue8;         // 0x0400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0404(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0404(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable7;                    // 0x0410(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_414[0x4];                                      // 0x0414(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult2;      // 0x0418(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult2;      // 0x0418(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue2;         // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A1[0x7];                                      // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_Hex_PARENT_C*                       CallFunc_Array_Get_Item5;                          // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -176,7 +177,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue7;                  // 0x050C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_Hex_PARENT_C*                       CallFunc_Array_Get_Item7;                          // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue7;         // 0x051C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue7;         // 0x051C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X4;                           // 0x0528(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y4;                           // 0x052C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z4;                           // 0x0530(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -187,7 +188,7 @@ public:
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0540(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_544[0x4];                                      // 0x0544(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortTheaterMapTile*                    K2Node_Event_TargetTile;                           // 0x0548(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorArrayAverageLocation_ReturnValue; // 0x0550(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorArrayAverageLocation_ReturnValue; // 0x0550(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable8;                    // 0x055C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_Hex_PARENT_C*                       CallFunc_Array_Get_Item8;                          // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable8;                   // 0x0568(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -216,16 +217,16 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5BC[0x4];                                      // 0x05BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvas*                                CallFunc_BeginDrawCanvasToRenderTarget_Canvas2;    // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size2;      // 0x05C8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context2;   // 0x05D0(0x11821D80)(NoDestructor)
+	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size2;      // 0x05C8(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context2;   // 0x05D0(0x0010)(NoDestructor)
 	int32                                         Temp_int_Loop_Counter_Variable10;                  // 0x05E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue10;                 // 0x05E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable9;                    // 0x05E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable10;                   // 0x05EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_Hex_PARENT_C*                       CallFunc_Array_Get_Item9;                          // 0x05F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Array_Get_Item10;                         // 0x05F8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position2; // 0x0600(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size2; // 0x0608(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Array_Get_Item10;                         // 0x05F8(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position2; // 0x0600(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size2; // 0x0608(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue11;               // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue8;                 // 0x0614(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_615[0x3];                                      // 0x0615(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -255,8 +256,8 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue6;                   // 0x06A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable13;                  // 0x06A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvas*                                CallFunc_BeginDrawCanvasToRenderTarget_Canvas3;    // 0x06A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size3;      // 0x06B0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context3;   // 0x06B8(0x11821D80)(NoDestructor)
+	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size3;      // 0x06B0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context3;   // 0x06B8(0x0010)(NoDestructor)
 	int32                                         CallFunc_Add_IntInt_ReturnValue13;                 // 0x06C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable13;                   // 0x06CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_Hex_PARENT_C*                       CallFunc_Array_Get_Item13;                         // 0x06D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -264,9 +265,9 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue10;                // 0x06DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6DD[0x3];                                      // 0x06DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x06E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Array_Get_Item14;                         // 0x06E4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position3; // 0x06EC(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size3; // 0x06F4(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Array_Get_Item14;                         // 0x06E4(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position3; // 0x06EC(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size3; // 0x06F4(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x06FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6FD[0x3];                                      // 0x06FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue14;                 // 0x0700(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -276,27 +277,27 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0710(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0718(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCanvas*                                CallFunc_BeginDrawCanvasToRenderTarget_Canvas4;    // 0x0720(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size4;      // 0x0728(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context4;   // 0x0730(0x11821D80)(NoDestructor)
+	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size4;      // 0x0728(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context4;   // 0x0730(0x0010)(NoDestructor)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0740(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_741[0x7];                                      // 0x0741(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_InputKeyEvent_Key;                          // 0x0748(0x11821D80)(HasGetValueTypeHash)
-	struct FKey                                   K2Node_InputKeyEvent_Key2;                         // 0x0760(0x11821D80)(HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Array_Get_Item15;                         // 0x0778(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_InputKeyEvent_Key;                          // 0x0748(0x0018)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_InputKeyEvent_Key2;                         // 0x0760(0x0018)(HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Array_Get_Item15;                         // 0x0778(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue14;               // 0x0780(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position4; // 0x0784(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size4; // 0x078C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position4; // 0x0784(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size4; // 0x078C(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue12;                // 0x0794(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_795[0x3];                                      // 0x0795(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   K2Node_InputKeyEvent_Key3;                         // 0x0798(0x11821D80)(HasGetValueTypeHash)
-	struct FKey                                   K2Node_InputKeyEvent_Key4;                         // 0x07B0(0x11821D80)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_InputKeyEvent_Key3;                         // 0x0798(0x0018)(HasGetValueTypeHash)
+	struct FKey                                   K2Node_InputKeyEvent_Key4;                         // 0x07B0(0x0018)(HasGetValueTypeHash)
 	class UCanvas*                                CallFunc_BeginDrawCanvasToRenderTarget_Canvas5;    // 0x07C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size5;      // 0x07D0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context5;   // 0x07D8(0x11821D80)(NoDestructor)
-	struct FVector2D                              CallFunc_Array_Get_Item16;                         // 0x07E8(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x07F0(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position5; // 0x0800(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size5; // 0x0808(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BeginDrawCanvasToRenderTarget_Size5;      // 0x07D0(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDrawToRenderTargetContext             CallFunc_BeginDrawCanvasToRenderTarget_Context5;   // 0x07D8(0x0010)(NoDestructor)
+	struct FVector2D                              CallFunc_Array_Get_Item16;                         // 0x07E8(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x07F0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Position5; // 0x0800(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Set_Canvas_Material_Scale_and_Position_Screen_Size5; // 0x0808(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue15;               // 0x0810(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue13;                // 0x0814(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_815[0x3];                                      // 0x0815(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -311,8 +312,8 @@ public:
 	uint8                                         Pad_827[0x1];                                      // 0x0827(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue7;                   // 0x0828(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint) == 0x11821D80, "Wrong alignment on TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint");
-static_assert(sizeof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint) == 0x11821D80, "Wrong size on TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint");
+static_assert(alignof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint");
+static_assert(sizeof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint) == 0x000830, "Wrong size on TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint");
 static_assert(offsetof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint, EntryPoint) == 0x000000, "Member 'TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint::EntryPoint' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint, CallFunc_BreakVector_X) == 0x000010, "Member 'TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint::CallFunc_BreakVector_X' has a wrong offset!");
@@ -565,14 +566,14 @@ static_assert(offsetof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_
 static_assert(offsetof(TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint, CallFunc_Array_Add_ReturnValue7) == 0x000828, "Member 'TheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint::CallFunc_Array_Add_ReturnValue7' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ForceTileFocus
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x000C (0x000C - 0x0000)
 struct TheaterCamera_Blueprint_C_ForceTileFocus final
 {
 public:
-	struct FVector                                HexWorldLoc;                                       // 0x0000(0x11821300)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HexWorldLoc;                                       // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_ForceTileFocus) == 0x11821300, "Wrong alignment on TheaterCamera_Blueprint_C_ForceTileFocus");
-static_assert(sizeof(TheaterCamera_Blueprint_C_ForceTileFocus) == 0x11821300, "Wrong size on TheaterCamera_Blueprint_C_ForceTileFocus");
+static_assert(alignof(TheaterCamera_Blueprint_C_ForceTileFocus) == 0x000004, "Wrong alignment on TheaterCamera_Blueprint_C_ForceTileFocus");
+static_assert(sizeof(TheaterCamera_Blueprint_C_ForceTileFocus) == 0x00000C, "Wrong size on TheaterCamera_Blueprint_C_ForceTileFocus");
 static_assert(offsetof(TheaterCamera_Blueprint_C_ForceTileFocus, HexWorldLoc) == 0x000000, "Member 'TheaterCamera_Blueprint_C_ForceTileFocus::HexWorldLoc' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ReceiveTick
@@ -587,68 +588,68 @@ static_assert(sizeof(TheaterCamera_Blueprint_C_ReceiveTick) == 0x000004, "Wrong 
 static_assert(offsetof(TheaterCamera_Blueprint_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'TheaterCamera_Blueprint_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.SetTileFocus
-// 0x004B (0x004B - 0x0000)
-struct alignas(0x4B) TheaterCamera_Blueprint_C_SetTileFocus final
+// 0x0008 (0x0008 - 0x0000)
+struct TheaterCamera_Blueprint_C_SetTileFocus final
 {
 public:
 	class AFortTheaterMapTile*                    TargetTile_0;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_SetTileFocus) == 0x00004B, "Wrong alignment on TheaterCamera_Blueprint_C_SetTileFocus");
-static_assert(sizeof(TheaterCamera_Blueprint_C_SetTileFocus) == 0x00004B, "Wrong size on TheaterCamera_Blueprint_C_SetTileFocus");
+static_assert(alignof(TheaterCamera_Blueprint_C_SetTileFocus) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_SetTileFocus");
+static_assert(sizeof(TheaterCamera_Blueprint_C_SetTileFocus) == 0x000008, "Wrong size on TheaterCamera_Blueprint_C_SetTileFocus");
 static_assert(offsetof(TheaterCamera_Blueprint_C_SetTileFocus, TargetTile_0) == 0x000000, "Member 'TheaterCamera_Blueprint_C_SetTileFocus::TargetTile_0' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4 final
 {
 public:
-	struct FKey                                   Key;                                               // 0x0000(0x11821D80)(Parm, HasGetValueTypeHash)
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4) == 0x11821D80, "Wrong alignment on TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4");
-static_assert(sizeof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4) == 0x11821D80, "Wrong size on TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4");
+static_assert(alignof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4");
+static_assert(sizeof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4) == 0x000018, "Wrong size on TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4");
 static_assert(offsetof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4, Key) == 0x000000, "Member 'TheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4::Key' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5 final
 {
 public:
-	struct FKey                                   Key;                                               // 0x0000(0x11821D80)(Parm, HasGetValueTypeHash)
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5) == 0x11821D80, "Wrong alignment on TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5");
-static_assert(sizeof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5) == 0x11821D80, "Wrong size on TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5");
+static_assert(alignof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5");
+static_assert(sizeof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5) == 0x000018, "Wrong size on TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5");
 static_assert(offsetof(TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5, Key) == 0x000000, "Member 'TheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5::Key' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6 final
 {
 public:
-	struct FKey                                   Key;                                               // 0x0000(0x11821D80)(Parm, HasGetValueTypeHash)
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6) == 0x11821D80, "Wrong alignment on TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6");
-static_assert(sizeof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6) == 0x11821D80, "Wrong size on TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6");
+static_assert(alignof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6");
+static_assert(sizeof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6) == 0x000018, "Wrong size on TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6");
 static_assert(offsetof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6, Key) == 0x000000, "Member 'TheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6::Key' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7 final
 {
 public:
-	struct FKey                                   Key;                                               // 0x0000(0x11821D80)(Parm, HasGetValueTypeHash)
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7) == 0x11821D80, "Wrong alignment on TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7");
-static_assert(sizeof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7) == 0x11821D80, "Wrong size on TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7");
+static_assert(alignof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7");
+static_assert(sizeof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7) == 0x000018, "Wrong size on TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7");
 static_assert(offsetof(TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7, Key) == 0x000000, "Member 'TheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7::Key' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ZoomCameraStep
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct TheaterCamera_Blueprint_C_ZoomCameraStep final
 {
 public:
 	bool                                          Forward;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ActorLocationPreZoom;                              // 0x0004(0x11821300)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ActorLocationPreZoom;                              // 0x0004(0x000C)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ZoomDirection;                                     // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable;                               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable2;                              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -667,7 +668,7 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0048(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -675,16 +676,16 @@ public:
 	float                                         CallFunc_BreakVector_Y2;                           // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z2;                           // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue3;              // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0070(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0070(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue3;                        // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0080(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0080(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x010C(0x11821300)(IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x010C(0x000C)(IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_ZoomCameraStep) == 0x11821D80, "Wrong alignment on TheaterCamera_Blueprint_C_ZoomCameraStep");
-static_assert(sizeof(TheaterCamera_Blueprint_C_ZoomCameraStep) == 0x11821D80, "Wrong size on TheaterCamera_Blueprint_C_ZoomCameraStep");
+static_assert(alignof(TheaterCamera_Blueprint_C_ZoomCameraStep) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_ZoomCameraStep");
+static_assert(sizeof(TheaterCamera_Blueprint_C_ZoomCameraStep) == 0x000120, "Wrong size on TheaterCamera_Blueprint_C_ZoomCameraStep");
 static_assert(offsetof(TheaterCamera_Blueprint_C_ZoomCameraStep, Forward) == 0x000000, "Member 'TheaterCamera_Blueprint_C_ZoomCameraStep::Forward' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_ZoomCameraStep, ActorLocationPreZoom) == 0x000004, "Member 'TheaterCamera_Blueprint_C_ZoomCameraStep::ActorLocationPreZoom' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_ZoomCameraStep, ZoomDirection) == 0x000010, "Member 'TheaterCamera_Blueprint_C_ZoomCameraStep::ZoomDirection' has a wrong offset!");
@@ -730,29 +731,29 @@ static_assert(sizeof(TheaterCamera_Blueprint_C_HandleTheaterSelected) == 0x00001
 static_assert(offsetof(TheaterCamera_Blueprint_C_HandleTheaterSelected, TheaterId) == 0x000000, "Member 'TheaterCamera_Blueprint_C_HandleTheaterSelected::TheaterId' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.PanCamera
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct TheaterCamera_Blueprint_C_PanCamera final
 {
 public:
 	float                                         DeltaX;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaY;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0008(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0008(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0028(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0028(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_X;                            // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue2;                      // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0048(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_LimitToTheater_ReturnValue;               // 0x0054(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0060(0x11827600)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_MakeVector_ReturnValue2;                  // 0x0048(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_LimitToTheater_ReturnValue;               // 0x0054(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0060(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_PanCamera) == 0x11821D80, "Wrong alignment on TheaterCamera_Blueprint_C_PanCamera");
-static_assert(sizeof(TheaterCamera_Blueprint_C_PanCamera) == 0x11821D80, "Wrong size on TheaterCamera_Blueprint_C_PanCamera");
+static_assert(alignof(TheaterCamera_Blueprint_C_PanCamera) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_PanCamera");
+static_assert(sizeof(TheaterCamera_Blueprint_C_PanCamera) == 0x0000F0, "Wrong size on TheaterCamera_Blueprint_C_PanCamera");
 static_assert(offsetof(TheaterCamera_Blueprint_C_PanCamera, DeltaX) == 0x000000, "Member 'TheaterCamera_Blueprint_C_PanCamera::DeltaX' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_PanCamera, DeltaY) == 0x000004, "Member 'TheaterCamera_Blueprint_C_PanCamera::DeltaY' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_PanCamera, CallFunc_MakeVector_ReturnValue) == 0x000008, "Member 'TheaterCamera_Blueprint_C_PanCamera::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
@@ -771,21 +772,21 @@ static_assert(offsetof(TheaterCamera_Blueprint_C_PanCamera, CallFunc_K2_SetActor
 static_assert(offsetof(TheaterCamera_Blueprint_C_PanCamera, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0000E8, "Member 'TheaterCamera_Blueprint_C_PanCamera::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.NewFunction_0
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct TheaterCamera_Blueprint_C_NewFunction_0 final
 {
 public:
 	class AActor*                                 Self2;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ReturnValue;                                       // 0x0008(0x11821300)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x001C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x001C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue;              // 0x002C(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x0038(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue;        // 0x0044(0x11821300)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorFloat_ReturnValue;              // 0x002C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Divide_VectorFloat_ReturnValue;           // 0x0038(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Conv_VectorToVector2D_ReturnValue;        // 0x0044(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TheaterCamera_Blueprint_C_NewFunction_0) == 0x11821300, "Wrong alignment on TheaterCamera_Blueprint_C_NewFunction_0");
-static_assert(sizeof(TheaterCamera_Blueprint_C_NewFunction_0) == 0x11821300, "Wrong size on TheaterCamera_Blueprint_C_NewFunction_0");
+static_assert(alignof(TheaterCamera_Blueprint_C_NewFunction_0) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_NewFunction_0");
+static_assert(sizeof(TheaterCamera_Blueprint_C_NewFunction_0) == 0x000050, "Wrong size on TheaterCamera_Blueprint_C_NewFunction_0");
 static_assert(offsetof(TheaterCamera_Blueprint_C_NewFunction_0, Self2) == 0x000000, "Member 'TheaterCamera_Blueprint_C_NewFunction_0::Self2' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_NewFunction_0, ReturnValue) == 0x000008, "Member 'TheaterCamera_Blueprint_C_NewFunction_0::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_NewFunction_0, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000010, "Member 'TheaterCamera_Blueprint_C_NewFunction_0::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");

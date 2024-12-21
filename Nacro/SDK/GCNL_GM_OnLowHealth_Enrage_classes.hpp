@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GCNL_GM_OnLowHealth_Enrage.GCNL_GM_OnLowHealth_Enrage_C
-// 0x0000 (0x11821D80 - 0x11821D80)
+// 0x0018 (0x0480 - 0x0468)
 class AGCNL_GM_OnLowHealth_Enrage_C final : public AFortGameplayCueNotify_Looping
 {
 public:
@@ -40,8 +40,8 @@ public:
 		return GetDefaultObjImpl<AGCNL_GM_OnLowHealth_Enrage_C>();
 	}
 };
-static_assert(alignof(AGCNL_GM_OnLowHealth_Enrage_C) == 0x11821D80, "Wrong alignment on AGCNL_GM_OnLowHealth_Enrage_C");
-static_assert(sizeof(AGCNL_GM_OnLowHealth_Enrage_C) == 0x11821D80, "Wrong size on AGCNL_GM_OnLowHealth_Enrage_C");
+static_assert(alignof(AGCNL_GM_OnLowHealth_Enrage_C) == 0x000008, "Wrong alignment on AGCNL_GM_OnLowHealth_Enrage_C");
+static_assert(sizeof(AGCNL_GM_OnLowHealth_Enrage_C) == 0x000480, "Wrong size on AGCNL_GM_OnLowHealth_Enrage_C");
 static_assert(offsetof(AGCNL_GM_OnLowHealth_Enrage_C, BodyMistFX) == 0x000468, "Member 'AGCNL_GM_OnLowHealth_Enrage_C::BodyMistFX' has a wrong offset!");
 static_assert(offsetof(AGCNL_GM_OnLowHealth_Enrage_C, Hand_Trail_L) == 0x000470, "Member 'AGCNL_GM_OnLowHealth_Enrage_C::Hand_Trail_L' has a wrong offset!");
 static_assert(offsetof(AGCNL_GM_OnLowHealth_Enrage_C, HandTrailR) == 0x000478, "Member 'AGCNL_GM_OnLowHealth_Enrage_C::HandTrailR' has a wrong offset!");

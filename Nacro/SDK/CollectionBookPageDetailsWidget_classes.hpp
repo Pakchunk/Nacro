@@ -20,11 +20,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass CollectionBookPageDetailsWidget.CollectionBookPageDetailsWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0018 (0x02B8 - 0x02A0)
 class UCollectionBookPageDetailsWidget_C final : public UFortCollectionBookPageDetailsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_0;                                           // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_2;                                           // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
@@ -42,8 +42,8 @@ public:
 		return GetDefaultObjImpl<UCollectionBookPageDetailsWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookPageDetailsWidget_C) == 0x322CBBB8, "Wrong alignment on UCollectionBookPageDetailsWidget_C");
-static_assert(sizeof(UCollectionBookPageDetailsWidget_C) == 0x322CBBB8, "Wrong size on UCollectionBookPageDetailsWidget_C");
+static_assert(alignof(UCollectionBookPageDetailsWidget_C) == 0x000008, "Wrong alignment on UCollectionBookPageDetailsWidget_C");
+static_assert(sizeof(UCollectionBookPageDetailsWidget_C) == 0x0002B8, "Wrong size on UCollectionBookPageDetailsWidget_C");
 static_assert(offsetof(UCollectionBookPageDetailsWidget_C, UberGraphFrame) == 0x0002A0, "Member 'UCollectionBookPageDetailsWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UCollectionBookPageDetailsWidget_C, Image_0) == 0x0002A8, "Member 'UCollectionBookPageDetailsWidget_C::Image_0' has a wrong offset!");
 static_assert(offsetof(UCollectionBookPageDetailsWidget_C, Image_2) == 0x0002B0, "Member 'UCollectionBookPageDetailsWidget_C::Image_2' has a wrong offset!");

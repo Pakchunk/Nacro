@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass DailyRewardsItem.DailyRewardsItem_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0078 (0x02C0 - 0x0248)
 class UDailyRewardsItem_C final : public UFortDailyRewardsItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 CheckCheckMark;                                    // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 CheckMarkShadow;                                   // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Day;                                               // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -55,8 +55,8 @@ public:
 		return GetDefaultObjImpl<UDailyRewardsItem_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsItem_C) == 0x322CBBB8, "Wrong alignment on UDailyRewardsItem_C");
-static_assert(sizeof(UDailyRewardsItem_C) == 0x322CBBB8, "Wrong size on UDailyRewardsItem_C");
+static_assert(alignof(UDailyRewardsItem_C) == 0x000008, "Wrong alignment on UDailyRewardsItem_C");
+static_assert(sizeof(UDailyRewardsItem_C) == 0x0002C0, "Wrong size on UDailyRewardsItem_C");
 static_assert(offsetof(UDailyRewardsItem_C, UberGraphFrame) == 0x000248, "Member 'UDailyRewardsItem_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsItem_C, CheckCheckMark) == 0x000250, "Member 'UDailyRewardsItem_C::CheckCheckMark' has a wrong offset!");
 static_assert(offsetof(UDailyRewardsItem_C, CheckMarkShadow) == 0x000258, "Member 'UDailyRewardsItem_C::CheckMarkShadow' has a wrong offset!");

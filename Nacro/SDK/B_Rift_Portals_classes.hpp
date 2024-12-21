@@ -20,12 +20,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass B_Rift_Portals.B_Rift_Portals_C
-// 0x0000 (0x1182A000 - 0x1182A000)
+// 0x01C8 (0x09A0 - 0x07D8)
 class AB_Rift_Portals_C final : public ABuildingRift
 {
 public:
 	uint8                                         Pad_7D8[0x8];                                      // 0x07D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x07E0(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x07E0(0x0008)(Transient, DuplicateTransient)
 	class UAudioComponent*                        Storm_Small_Vortex_Cue;                            // 0x07E8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               P_Rift_RandomLightning_01;                         // 0x07F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   RiftVortex;                                        // 0x07F8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -46,17 +46,18 @@ public:
 	class UParticleSystem*                        Plasma_Particles;                                  // 0x0850(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        Lightning_Strike_Particles;                        // 0x0858(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     Decal_Material;                                    // 0x0860(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ImpactLocation;                                    // 0x0868(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ImpactLocation;                                    // 0x0868(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_874[0x4];                                      // 0x0874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDecalComponent*                        Decal;                                             // 0x0878(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVectorFieldComponent*                  Impact_Vector_Field;                               // 0x0880(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortWindImpulseHandle                 Wind_Impulse;                                      // 0x0888(0x11821780)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FFortWindImpulseHandle                 Wind_Impulse;                                      // 0x0888(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         Wind_Impulse_Default_Strength;                     // 0x088C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Wind_location;                                     // 0x0890(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Wind_location;                                     // 0x0890(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Wind_Radius;                                       // 0x089C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Overlapping_Actors;                                // 0x08A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	TArray<class ACar_Copper_C*>                  ArrayOfNearbyCars;                                 // 0x08B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	struct FLinearColor                           Light_Color_Idle;                                  // 0x08C0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Light_Color_Active;                                // 0x08D0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Light_Color_Idle;                                  // 0x08C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Light_Color_Active;                                // 0x08D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Light_Intensity_Idle;                              // 0x08E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Light_Intensity_Active;                            // 0x08E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Light_Radius_Idle;                                 // 0x08E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,9 +71,9 @@ public:
 	uint8                                         Pad_905[0x3];                                      // 0x0905(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ManualDeactivateDelayBeforeDestory;                // 0x0908(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RiftLightningDuration;                             // 0x090C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                VortexSize;                                        // 0x0910(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                VortexSizeMin;                                     // 0x091C(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                VortexSizeMax;                                     // 0x0928(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                VortexSize;                                        // 0x0910(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                VortexSizeMin;                                     // 0x091C(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                VortexSizeMax;                                     // 0x0928(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Twist_Amount_Min;                                  // 0x0934(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Twist_Amount_Max;                                  // 0x0938(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Wiggle_Strength_Min;                               // 0x093C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -83,13 +84,13 @@ public:
 	float                                         Wiggle_Strength;                                   // 0x0954(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         WPO_Strength;                                      // 0x0958(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Model_Height;                                      // 0x095C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              UV_Tile_Multiplier_Min;                            // 0x0960(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              UV_Tile_Multiplier_Max;                            // 0x0968(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              UV_Tile_Multiplier_Min;                            // 0x0960(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              UV_Tile_Multiplier_Max;                            // 0x0968(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Wiggle_Frequency_Min;                              // 0x0970(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Wiggle_Frequency_Max;                              // 0x0974(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Wiggle_Speed_Min;                                  // 0x0978(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Wiggle_Speed_Max;                                  // 0x0980(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Lightning_Spawn_Loc;                               // 0x0988(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Wiggle_Speed_Min;                                  // 0x0978(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Wiggle_Speed_Max;                                  // 0x0980(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Lightning_Spawn_Loc;                               // 0x0988(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Lightning_Bloat;                                   // 0x0994(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RiftVortexFadeInTime;                              // 0x0998(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RiftVortexFadeOutTime;                             // 0x099C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -126,8 +127,8 @@ public:
 		return GetDefaultObjImpl<AB_Rift_Portals_C>();
 	}
 };
-static_assert(alignof(AB_Rift_Portals_C) == 0x1182A000, "Wrong alignment on AB_Rift_Portals_C");
-static_assert(sizeof(AB_Rift_Portals_C) == 0x1182A000, "Wrong size on AB_Rift_Portals_C");
+static_assert(alignof(AB_Rift_Portals_C) == 0x000008, "Wrong alignment on AB_Rift_Portals_C");
+static_assert(sizeof(AB_Rift_Portals_C) == 0x0009A0, "Wrong size on AB_Rift_Portals_C");
 static_assert(offsetof(AB_Rift_Portals_C, UberGraphFrame) == 0x0007E0, "Member 'AB_Rift_Portals_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AB_Rift_Portals_C, Storm_Small_Vortex_Cue) == 0x0007E8, "Member 'AB_Rift_Portals_C::Storm_Small_Vortex_Cue' has a wrong offset!");
 static_assert(offsetof(AB_Rift_Portals_C, P_Rift_RandomLightning_01) == 0x0007F0, "Member 'AB_Rift_Portals_C::P_Rift_RandomLightning_01' has a wrong offset!");

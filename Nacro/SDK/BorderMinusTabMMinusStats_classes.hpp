@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Border-TabM-Stats.Border-TabM-Stats_C
-// 0x0000 (0x11827900 - 0x11827900)
+// 0x0000 (0x00B8 - 0x00B8)
 class UBorderMinusTabMMinusStats_C final : public UBorderMinusTabM_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<UBorderMinusTabMMinusStats_C>();
 	}
 };
-static_assert(alignof(UBorderMinusTabMMinusStats_C) == 0x11827900, "Wrong alignment on UBorderMinusTabMMinusStats_C");
-static_assert(sizeof(UBorderMinusTabMMinusStats_C) == 0x11827900, "Wrong size on UBorderMinusTabMMinusStats_C");
+static_assert(alignof(UBorderMinusTabMMinusStats_C) == 0x000008, "Wrong alignment on UBorderMinusTabMMinusStats_C");
+static_assert(sizeof(UBorderMinusTabMMinusStats_C) == 0x0000B8, "Wrong size on UBorderMinusTabMMinusStats_C");
 
 }
 

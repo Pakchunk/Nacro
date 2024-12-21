@@ -81,19 +81,19 @@ static_assert(offsetof(AthenaQuickbarSecondary_C_OnQuickBarSlotFocusChanged_Bind
 static_assert(offsetof(AthenaQuickbarSecondary_C_OnQuickBarSlotFocusChanged_Bind, Slot_0) == 0x000004, "Member 'AthenaQuickbarSecondary_C_OnQuickBarSlotFocusChanged_Bind::Slot_0' has a wrong offset!");
 
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleInputMethodChanged_Bind
-// 0x001C (0x001C - 0x0000)
-struct alignas(0x1C) AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind final
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind final
 {
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind) == 0x00001C, "Wrong alignment on AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind");
-static_assert(sizeof(AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind) == 0x00001C, "Wrong size on AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind");
+static_assert(alignof(AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind) == 0x000001, "Wrong alignment on AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind");
+static_assert(sizeof(AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind) == 0x000001, "Wrong size on AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind");
 static_assert(offsetof(AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind, bUsingGamepad) == 0x000000, "Member 'AthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind::bUsingGamepad' has a wrong offset!");
 
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Show Secondary Quickbar Rail
-// 0x000A (0x000A - 0x0000)
-struct alignas(0x0A) AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail final
+// 0x0005 (0x0005 - 0x0000)
+struct AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail final
 {
 public:
 	bool                                          Show;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -102,8 +102,8 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail) == 0x00000A, "Wrong alignment on AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail");
-static_assert(sizeof(AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail) == 0x00000A, "Wrong size on AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail");
+static_assert(alignof(AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail) == 0x000001, "Wrong alignment on AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail");
+static_assert(sizeof(AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail) == 0x000005, "Wrong size on AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail");
 static_assert(offsetof(AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail, Show) == 0x000000, "Member 'AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail::Show' has a wrong offset!");
 static_assert(offsetof(AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail, Temp_bool_Variable) == 0x000001, "Member 'AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail, Temp_byte_Variable) == 0x000002, "Member 'AthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail::Temp_byte_Variable' has a wrong offset!");
@@ -283,7 +283,7 @@ static_assert(offsetof(AthenaQuickbarSecondary_C_HandleUpdateSlots, CallFunc_Les
 
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleMinimizeHiding
 // 0x0050 (0x0050 - 0x0000)
-struct alignas(0x14) AthenaQuickbarSecondary_C_HandleMinimizeHiding final
+struct AthenaQuickbarSecondary_C_HandleMinimizeHiding final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -301,7 +301,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaQuickbarSecondary_C_HandleMinimizeHiding) == 0x000014, "Wrong alignment on AthenaQuickbarSecondary_C_HandleMinimizeHiding");
+static_assert(alignof(AthenaQuickbarSecondary_C_HandleMinimizeHiding) == 0x000008, "Wrong alignment on AthenaQuickbarSecondary_C_HandleMinimizeHiding");
 static_assert(sizeof(AthenaQuickbarSecondary_C_HandleMinimizeHiding) == 0x000050, "Wrong size on AthenaQuickbarSecondary_C_HandleMinimizeHiding");
 static_assert(offsetof(AthenaQuickbarSecondary_C_HandleMinimizeHiding, Temp_int_Array_Index_Variable) == 0x000000, "Member 'AthenaQuickbarSecondary_C_HandleMinimizeHiding::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(AthenaQuickbarSecondary_C_HandleMinimizeHiding, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AthenaQuickbarSecondary_C_HandleMinimizeHiding::Temp_int_Loop_Counter_Variable' has a wrong offset!");

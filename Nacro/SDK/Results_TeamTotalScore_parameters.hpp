@@ -72,14 +72,14 @@ static_assert(offsetof(Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_Co
 static_assert(offsetof(Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature, HadCompleted) == 0x000008, "Member 'Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature::HadCompleted' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.PreConstruct
-// 0x2E0065 (0x2E0065 - 0x0000)
-struct alignas(0x2E0065) Results_TeamTotalScore_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct Results_TeamTotalScore_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamTotalScore_C_PreConstruct) == 0x2E0065, "Wrong alignment on Results_TeamTotalScore_C_PreConstruct");
-static_assert(sizeof(Results_TeamTotalScore_C_PreConstruct) == 0x2E0065, "Wrong size on Results_TeamTotalScore_C_PreConstruct");
+static_assert(alignof(Results_TeamTotalScore_C_PreConstruct) == 0x000001, "Wrong alignment on Results_TeamTotalScore_C_PreConstruct");
+static_assert(sizeof(Results_TeamTotalScore_C_PreConstruct) == 0x000001, "Wrong size on Results_TeamTotalScore_C_PreConstruct");
 static_assert(offsetof(Results_TeamTotalScore_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_TeamTotalScore_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.Initialize

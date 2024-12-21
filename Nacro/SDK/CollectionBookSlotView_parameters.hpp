@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function CollectionBookSlotView.CollectionBookSlotView_C.ExecuteUbergraph_CollectionBookSlotView
-// 0x1A6563C2 (0x1A6563C2 - 0x0000)
-struct alignas(0x1A6563C2) CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView final
+// 0x0004 (0x0004 - 0x0000)
+struct CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView) == 0x1A6563C2, "Wrong alignment on CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView");
-static_assert(sizeof(CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView) == 0x1A6563C2, "Wrong size on CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView");
+static_assert(alignof(CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView) == 0x000004, "Wrong alignment on CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView");
+static_assert(sizeof(CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView) == 0x000004, "Wrong size on CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView");
 static_assert(offsetof(CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView, EntryPoint) == 0x000000, "Member 'CollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView::EntryPoint' has a wrong offset!");
 
 }

@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Rewards_ItemCard.Rewards_ItemCard_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0140 (0x0378 - 0x0238)
 class URewards_ItemCard_C final : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       AnimPopInPrimary;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimPopIn;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPanelButton_C*                         ButtonInspect;                                     // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -39,14 +39,14 @@ public:
 	float                                         SlideStartTime;                                    // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OnSlideAnimationFinished;                          // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FVector2D                              SlideStartAlignment;                               // 0x02A0(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              SlideTargetAlignment;                              // 0x02A8(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           SlideAnimationHandle;                              // 0x02B0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FVector2D                              SlideStartAlignment;                               // 0x02A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              SlideTargetAlignment;                              // 0x02A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           SlideAnimationHandle;                              // 0x02B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         SlideAnimationDuration;                            // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SlideStartScale;                                   // 0x02BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SlideTargetScale;                                  // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               SlideStartAnchors;                                 // 0x02C4(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FAnchors                               SlideTargetAnchors;                                // 0x02D4(0x11827900)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FAnchors                               SlideStartAnchors;                                 // 0x02C4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FAnchors                               SlideTargetAnchors;                                // 0x02D4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         SlideStartOffset;                                  // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SlideTargetOffset;                                 // 0x02E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SlideStartAngle;                                   // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 	uint8                                         Pad_2F4[0x4];                                      // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OnInspectClicked;                                  // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnResizeAnimationFinished;                         // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FVector2D                              SlideStartTranslation;                             // 0x0318(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              SlideTargetTranslation;                            // 0x0320(0x11821300)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              SlideStartTranslation;                             // 0x0318(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              SlideTargetTranslation;                            // 0x0320(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   OnPopInAnimationFinished;                          // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UFortItem*                              ItemToRepresent;                                   // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMultiSizeItemCard*                 CurrentCard;                                       // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -64,7 +64,7 @@ public:
 	float                                         ResizeDuration;                                    // 0x034C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ResizeStartTime;                                   // 0x0350(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_354[0x4];                                      // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           ResizeHandle;                                      // 0x0358(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           ResizeHandle;                                      // 0x0358(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         ResizeTargetScale;                                 // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ResizeStartScale;                                  // 0x0364(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DropShadowTargetDepth;                             // 0x0368(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -119,8 +119,8 @@ public:
 		return GetDefaultObjImpl<URewards_ItemCard_C>();
 	}
 };
-static_assert(alignof(URewards_ItemCard_C) == 0x322CBBB8, "Wrong alignment on URewards_ItemCard_C");
-static_assert(sizeof(URewards_ItemCard_C) == 0x322CBBB8, "Wrong size on URewards_ItemCard_C");
+static_assert(alignof(URewards_ItemCard_C) == 0x000008, "Wrong alignment on URewards_ItemCard_C");
+static_assert(sizeof(URewards_ItemCard_C) == 0x000378, "Wrong size on URewards_ItemCard_C");
 static_assert(offsetof(URewards_ItemCard_C, UberGraphFrame) == 0x000238, "Member 'URewards_ItemCard_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(URewards_ItemCard_C, AnimPopInPrimary) == 0x000240, "Member 'URewards_ItemCard_C::AnimPopInPrimary' has a wrong offset!");
 static_assert(offsetof(URewards_ItemCard_C, AnimPopIn) == 0x000248, "Member 'URewards_ItemCard_C::AnimPopIn' has a wrong offset!");

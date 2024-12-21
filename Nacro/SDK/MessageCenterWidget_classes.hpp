@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MessageCenterWidget.MessageCenterWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0038 (0x0448 - 0x0410)
 class UMessageCenterWidget_C final : public UFortUIMessagesPageBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ClearButton;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      CloseButton;                                       // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       DescriptionText;                                   // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -54,8 +54,8 @@ public:
 		return GetDefaultObjImpl<UMessageCenterWidget_C>();
 	}
 };
-static_assert(alignof(UMessageCenterWidget_C) == 0x322CBBB8, "Wrong alignment on UMessageCenterWidget_C");
-static_assert(sizeof(UMessageCenterWidget_C) == 0x322CBBB8, "Wrong size on UMessageCenterWidget_C");
+static_assert(alignof(UMessageCenterWidget_C) == 0x000008, "Wrong alignment on UMessageCenterWidget_C");
+static_assert(sizeof(UMessageCenterWidget_C) == 0x000448, "Wrong size on UMessageCenterWidget_C");
 static_assert(offsetof(UMessageCenterWidget_C, UberGraphFrame) == 0x000410, "Member 'UMessageCenterWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMessageCenterWidget_C, ClearButton) == 0x000418, "Member 'UMessageCenterWidget_C::ClearButton' has a wrong offset!");
 static_assert(offsetof(UMessageCenterWidget_C, CloseButton) == 0x000420, "Member 'UMessageCenterWidget_C::CloseButton' has a wrong offset!");

@@ -18,41 +18,41 @@ namespace SDK::Params
 {
 
 // Function MediaAssets.MediaOverlays.GetCaptions
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct MediaOverlays_GetCaptions final
 {
 public:
 	TArray<struct FMediaPlayerOverlay>            OutCaptions;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FTimespan                              Time;                                              // 0x0010(0x11821300)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              Time;                                              // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MediaOverlays_GetCaptions) == 0x11821300, "Wrong alignment on MediaOverlays_GetCaptions");
-static_assert(sizeof(MediaOverlays_GetCaptions) == 0x11821300, "Wrong size on MediaOverlays_GetCaptions");
+static_assert(alignof(MediaOverlays_GetCaptions) == 0x000008, "Wrong alignment on MediaOverlays_GetCaptions");
+static_assert(sizeof(MediaOverlays_GetCaptions) == 0x000018, "Wrong size on MediaOverlays_GetCaptions");
 static_assert(offsetof(MediaOverlays_GetCaptions, OutCaptions) == 0x000000, "Member 'MediaOverlays_GetCaptions::OutCaptions' has a wrong offset!");
 static_assert(offsetof(MediaOverlays_GetCaptions, Time) == 0x000010, "Member 'MediaOverlays_GetCaptions::Time' has a wrong offset!");
 
 // Function MediaAssets.MediaOverlays.GetSubtitles
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct MediaOverlays_GetSubtitles final
 {
 public:
 	TArray<struct FMediaPlayerOverlay>            OutSubtitles;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FTimespan                              Time;                                              // 0x0010(0x11821300)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              Time;                                              // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MediaOverlays_GetSubtitles) == 0x11821300, "Wrong alignment on MediaOverlays_GetSubtitles");
-static_assert(sizeof(MediaOverlays_GetSubtitles) == 0x11821300, "Wrong size on MediaOverlays_GetSubtitles");
+static_assert(alignof(MediaOverlays_GetSubtitles) == 0x000008, "Wrong alignment on MediaOverlays_GetSubtitles");
+static_assert(sizeof(MediaOverlays_GetSubtitles) == 0x000018, "Wrong size on MediaOverlays_GetSubtitles");
 static_assert(offsetof(MediaOverlays_GetSubtitles, OutSubtitles) == 0x000000, "Member 'MediaOverlays_GetSubtitles::OutSubtitles' has a wrong offset!");
 static_assert(offsetof(MediaOverlays_GetSubtitles, Time) == 0x000010, "Member 'MediaOverlays_GetSubtitles::Time' has a wrong offset!");
 
 // Function MediaAssets.MediaOverlays.GetTexts
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct MediaOverlays_GetTexts final
 {
 public:
 	TArray<struct FMediaPlayerOverlay>            OutTexts;                                          // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FTimespan                              Time;                                              // 0x0010(0x11821300)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              Time;                                              // 0x0010(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MediaOverlays_GetTexts) == 0x11821300, "Wrong alignment on MediaOverlays_GetTexts");
-static_assert(sizeof(MediaOverlays_GetTexts) == 0x11821300, "Wrong size on MediaOverlays_GetTexts");
+static_assert(alignof(MediaOverlays_GetTexts) == 0x000008, "Wrong alignment on MediaOverlays_GetTexts");
+static_assert(sizeof(MediaOverlays_GetTexts) == 0x000018, "Wrong size on MediaOverlays_GetTexts");
 static_assert(offsetof(MediaOverlays_GetTexts, OutTexts) == 0x000000, "Member 'MediaOverlays_GetTexts::OutTexts' has a wrong offset!");
 static_assert(offsetof(MediaOverlays_GetTexts, Time) == 0x000010, "Member 'MediaOverlays_GetTexts::Time' has a wrong offset!");
 
@@ -85,30 +85,30 @@ static_assert(offsetof(MediaPlayer_CanPlayUrl, URL) == 0x000000, "Member 'MediaP
 static_assert(offsetof(MediaPlayer_CanPlayUrl, ReturnValue) == 0x000010, "Member 'MediaPlayer_CanPlayUrl::ReturnValue' has a wrong offset!");
 
 // Function MediaAssets.MediaPlayer.GetForwardRates
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct MediaPlayer_GetForwardRates final
 {
 public:
 	bool                                          Unthinned;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFloatRange                            ReturnValue;                                       // 0x0004(0x11821300)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFloatRange                            ReturnValue;                                       // 0x0004(0x0010)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MediaPlayer_GetForwardRates) == 0x11821300, "Wrong alignment on MediaPlayer_GetForwardRates");
-static_assert(sizeof(MediaPlayer_GetForwardRates) == 0x11821300, "Wrong size on MediaPlayer_GetForwardRates");
+static_assert(alignof(MediaPlayer_GetForwardRates) == 0x000004, "Wrong alignment on MediaPlayer_GetForwardRates");
+static_assert(sizeof(MediaPlayer_GetForwardRates) == 0x000014, "Wrong size on MediaPlayer_GetForwardRates");
 static_assert(offsetof(MediaPlayer_GetForwardRates, Unthinned) == 0x000000, "Member 'MediaPlayer_GetForwardRates::Unthinned' has a wrong offset!");
 static_assert(offsetof(MediaPlayer_GetForwardRates, ReturnValue) == 0x000004, "Member 'MediaPlayer_GetForwardRates::ReturnValue' has a wrong offset!");
 
 // Function MediaAssets.MediaPlayer.GetReverseRates
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct MediaPlayer_GetReverseRates final
 {
 public:
 	bool                                          Unthinned;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFloatRange                            ReturnValue;                                       // 0x0004(0x11821300)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFloatRange                            ReturnValue;                                       // 0x0004(0x0010)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MediaPlayer_GetReverseRates) == 0x11821300, "Wrong alignment on MediaPlayer_GetReverseRates");
-static_assert(sizeof(MediaPlayer_GetReverseRates) == 0x11821300, "Wrong size on MediaPlayer_GetReverseRates");
+static_assert(alignof(MediaPlayer_GetReverseRates) == 0x000004, "Wrong alignment on MediaPlayer_GetReverseRates");
+static_assert(sizeof(MediaPlayer_GetReverseRates) == 0x000014, "Wrong size on MediaPlayer_GetReverseRates");
 static_assert(offsetof(MediaPlayer_GetReverseRates, Unthinned) == 0x000000, "Member 'MediaPlayer_GetReverseRates::Unthinned' has a wrong offset!");
 static_assert(offsetof(MediaPlayer_GetReverseRates, ReturnValue) == 0x000004, "Member 'MediaPlayer_GetReverseRates::ReturnValue' has a wrong offset!");
 
@@ -251,16 +251,16 @@ static_assert(sizeof(MediaPlayer_Rewind) == 0x000001, "Wrong size on MediaPlayer
 static_assert(offsetof(MediaPlayer_Rewind, ReturnValue) == 0x000000, "Member 'MediaPlayer_Rewind::ReturnValue' has a wrong offset!");
 
 // Function MediaAssets.MediaPlayer.Seek
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct MediaPlayer_Seek final
 {
 public:
-	struct FTimespan                              Time;                                              // 0x0000(0x11821300)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              Time;                                              // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(MediaPlayer_Seek) == 0x11821300, "Wrong alignment on MediaPlayer_Seek");
-static_assert(sizeof(MediaPlayer_Seek) == 0x11821300, "Wrong size on MediaPlayer_Seek");
+static_assert(alignof(MediaPlayer_Seek) == 0x000008, "Wrong alignment on MediaPlayer_Seek");
+static_assert(sizeof(MediaPlayer_Seek) == 0x000010, "Wrong size on MediaPlayer_Seek");
 static_assert(offsetof(MediaPlayer_Seek, Time) == 0x000000, "Member 'MediaPlayer_Seek::Time' has a wrong offset!");
 static_assert(offsetof(MediaPlayer_Seek, ReturnValue) == 0x000008, "Member 'MediaPlayer_Seek::ReturnValue' has a wrong offset!");
 
@@ -375,14 +375,14 @@ static_assert(sizeof(MediaPlayer_GetDesiredPlayerName) == 0x000008, "Wrong size 
 static_assert(offsetof(MediaPlayer_GetDesiredPlayerName, ReturnValue) == 0x000000, "Member 'MediaPlayer_GetDesiredPlayerName::ReturnValue' has a wrong offset!");
 
 // Function MediaAssets.MediaPlayer.GetDuration
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct MediaPlayer_GetDuration final
 {
 public:
-	struct FTimespan                              ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MediaPlayer_GetDuration) == 0x11821300, "Wrong alignment on MediaPlayer_GetDuration");
-static_assert(sizeof(MediaPlayer_GetDuration) == 0x11821300, "Wrong size on MediaPlayer_GetDuration");
+static_assert(alignof(MediaPlayer_GetDuration) == 0x000008, "Wrong alignment on MediaPlayer_GetDuration");
+static_assert(sizeof(MediaPlayer_GetDuration) == 0x000008, "Wrong size on MediaPlayer_GetDuration");
 static_assert(offsetof(MediaPlayer_GetDuration, ReturnValue) == 0x000000, "Member 'MediaPlayer_GetDuration::ReturnValue' has a wrong offset!");
 
 // Function MediaAssets.MediaPlayer.GetNumTracks
@@ -436,14 +436,14 @@ static_assert(offsetof(MediaPlayer_GetSelectedTrack, TrackType) == 0x000000, "Me
 static_assert(offsetof(MediaPlayer_GetSelectedTrack, ReturnValue) == 0x000004, "Member 'MediaPlayer_GetSelectedTrack::ReturnValue' has a wrong offset!");
 
 // Function MediaAssets.MediaPlayer.GetTime
-// 0x11821300 (0x11821300 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct MediaPlayer_GetTime final
 {
 public:
-	struct FTimespan                              ReturnValue;                                       // 0x0000(0x11821300)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MediaPlayer_GetTime) == 0x11821300, "Wrong alignment on MediaPlayer_GetTime");
-static_assert(sizeof(MediaPlayer_GetTime) == 0x11821300, "Wrong size on MediaPlayer_GetTime");
+static_assert(alignof(MediaPlayer_GetTime) == 0x000008, "Wrong alignment on MediaPlayer_GetTime");
+static_assert(sizeof(MediaPlayer_GetTime) == 0x000008, "Wrong size on MediaPlayer_GetTime");
 static_assert(offsetof(MediaPlayer_GetTime, ReturnValue) == 0x000000, "Member 'MediaPlayer_GetTime::ReturnValue' has a wrong offset!");
 
 // Function MediaAssets.MediaPlayer.GetTrackDisplayName
@@ -730,14 +730,14 @@ static_assert(sizeof(MediaTexture_GetHeight) == 0x000004, "Wrong size on MediaTe
 static_assert(offsetof(MediaTexture_GetHeight, ReturnValue) == 0x000000, "Member 'MediaTexture_GetHeight::ReturnValue' has a wrong offset!");
 
 // Function MediaAssets.MediaTexture.GetWidth
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x20) MediaTexture_GetWidth final
+// 0x0004 (0x0004 - 0x0000)
+struct MediaTexture_GetWidth final
 {
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MediaTexture_GetWidth) == 0x000020, "Wrong alignment on MediaTexture_GetWidth");
-static_assert(sizeof(MediaTexture_GetWidth) == 0x000020, "Wrong size on MediaTexture_GetWidth");
+static_assert(alignof(MediaTexture_GetWidth) == 0x000004, "Wrong alignment on MediaTexture_GetWidth");
+static_assert(sizeof(MediaTexture_GetWidth) == 0x000004, "Wrong size on MediaTexture_GetWidth");
 static_assert(offsetof(MediaTexture_GetWidth, ReturnValue) == 0x000000, "Member 'MediaTexture_GetWidth::ReturnValue' has a wrong offset!");
 
 }

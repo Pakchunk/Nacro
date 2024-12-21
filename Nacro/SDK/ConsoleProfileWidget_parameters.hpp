@@ -15,14 +15,14 @@ namespace SDK::Params
 {
 
 // Function ConsoleProfileWidget.ConsoleProfileWidget_C.SetDisplayName
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) ConsoleProfileWidget_C_SetDisplayName final
+// 0x0018 (0x0018 - 0x0000)
+struct ConsoleProfileWidget_C_SetDisplayName final
 {
 public:
 	class FText                                   DisplayName_0;                                     // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(ConsoleProfileWidget_C_SetDisplayName) == 0x0000E4, "Wrong alignment on ConsoleProfileWidget_C_SetDisplayName");
-static_assert(sizeof(ConsoleProfileWidget_C_SetDisplayName) == 0x0000E4, "Wrong size on ConsoleProfileWidget_C_SetDisplayName");
+static_assert(alignof(ConsoleProfileWidget_C_SetDisplayName) == 0x000008, "Wrong alignment on ConsoleProfileWidget_C_SetDisplayName");
+static_assert(sizeof(ConsoleProfileWidget_C_SetDisplayName) == 0x000018, "Wrong size on ConsoleProfileWidget_C_SetDisplayName");
 static_assert(offsetof(ConsoleProfileWidget_C_SetDisplayName, DisplayName_0) == 0x000000, "Member 'ConsoleProfileWidget_C_SetDisplayName::DisplayName_0' has a wrong offset!");
 
 }

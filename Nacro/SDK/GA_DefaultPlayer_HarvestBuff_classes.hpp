@@ -20,13 +20,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass GA_DefaultPlayer_HarvestBuff.GA_DefaultPlayer_HarvestBuff_C
-// 0x0000 (0x1182EB00 - 0x1182EB00)
+// 0x00D0 (0x0B10 - 0x0A40)
 class UGA_DefaultPlayer_HarvestBuff_C final : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x11821D80)(Transient, DuplicateTransient)
-	struct FGameplayEventData                     EventData;                                         // 0x0A48(0x11822200)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FGameplayTag                           EventActivation;                                   // 0x0AF0(0x11821D80)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(Transient, DuplicateTransient)
+	struct FGameplayEventData                     EventData;                                         // 0x0A48(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FGameplayTag                           EventActivation;                                   // 0x0AF0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                         HitThreshold;                                      // 0x0AF8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AFC[0x4];                                      // 0x0AFC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 GE_HarvestBuffHit;                                 // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 		return GetDefaultObjImpl<UGA_DefaultPlayer_HarvestBuff_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_HarvestBuff_C) == 0x1182EB00, "Wrong alignment on UGA_DefaultPlayer_HarvestBuff_C");
-static_assert(sizeof(UGA_DefaultPlayer_HarvestBuff_C) == 0x1182EB00, "Wrong size on UGA_DefaultPlayer_HarvestBuff_C");
+static_assert(alignof(UGA_DefaultPlayer_HarvestBuff_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_HarvestBuff_C");
+static_assert(sizeof(UGA_DefaultPlayer_HarvestBuff_C) == 0x000B10, "Wrong size on UGA_DefaultPlayer_HarvestBuff_C");
 static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, UberGraphFrame) == 0x000A40, "Member 'UGA_DefaultPlayer_HarvestBuff_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, EventData) == 0x000A48, "Member 'UGA_DefaultPlayer_HarvestBuff_C::EventData' has a wrong offset!");
 static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, EventActivation) == 0x000AF0, "Member 'UGA_DefaultPlayer_HarvestBuff_C::EventActivation' has a wrong offset!");

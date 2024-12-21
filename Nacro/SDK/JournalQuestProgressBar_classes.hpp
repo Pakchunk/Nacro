@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass JournalQuestProgressBar.JournalQuestProgressBar_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x00E0 (0x0328 - 0x0248)
 class UJournalQuestProgressBar_C final : public UFortJournalQuestProgressBar
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(Transient, DuplicateTransient)
 	class UImage*                                 Image_61;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ObjectiveText;                                     // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          ParentBorder;                                      // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -33,7 +33,7 @@ public:
 	class UCommonTextBlock*                       TaskProgressText;                                  // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UClass*                                 FutureObjectiveTextSyle;                           // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 FutureObjectiveTaskProgressTextStyle;              // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                            FutureObjectProgressBarBrush;                      // 0x0298(0x322CBBB8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                            FutureObjectProgressBarBrush;                      // 0x0298(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_JournalQuestProgressBar(int32 EntryPoint);
@@ -52,8 +52,8 @@ public:
 		return GetDefaultObjImpl<UJournalQuestProgressBar_C>();
 	}
 };
-static_assert(alignof(UJournalQuestProgressBar_C) == 0x322CBBB8, "Wrong alignment on UJournalQuestProgressBar_C");
-static_assert(sizeof(UJournalQuestProgressBar_C) == 0x322CBBB8, "Wrong size on UJournalQuestProgressBar_C");
+static_assert(alignof(UJournalQuestProgressBar_C) == 0x000008, "Wrong alignment on UJournalQuestProgressBar_C");
+static_assert(sizeof(UJournalQuestProgressBar_C) == 0x000328, "Wrong size on UJournalQuestProgressBar_C");
 static_assert(offsetof(UJournalQuestProgressBar_C, UberGraphFrame) == 0x000248, "Member 'UJournalQuestProgressBar_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UJournalQuestProgressBar_C, Image_61) == 0x000250, "Member 'UJournalQuestProgressBar_C::Image_61' has a wrong offset!");
 static_assert(offsetof(UJournalQuestProgressBar_C, ObjectiveText) == 0x000258, "Member 'UJournalQuestProgressBar_C::ObjectiveText' has a wrong offset!");

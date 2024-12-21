@@ -53,22 +53,22 @@ static_assert(sizeof(ConfirmationWindow_C_PreConstruct) == 0x000001, "Wrong size
 static_assert(offsetof(ConfirmationWindow_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ConfirmationWindow_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.SetDescription
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0180 (0x0180 - 0x0000)
 struct ConfirmationWindow_C_SetDescription final
 {
 public:
-	struct FFortDialogDescription_NUI             NewDescription;                                    // 0x0000(0x1182E980)(Parm, ContainsInstancedReference)
+	struct FFortDialogDescription_NUI             NewDescription;                                    // 0x0000(0x0180)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(ConfirmationWindow_C_SetDescription) == 0x1182E980, "Wrong alignment on ConfirmationWindow_C_SetDescription");
-static_assert(sizeof(ConfirmationWindow_C_SetDescription) == 0x1182E980, "Wrong size on ConfirmationWindow_C_SetDescription");
+static_assert(alignof(ConfirmationWindow_C_SetDescription) == 0x000010, "Wrong alignment on ConfirmationWindow_C_SetDescription");
+static_assert(sizeof(ConfirmationWindow_C_SetDescription) == 0x000180, "Wrong size on ConfirmationWindow_C_SetDescription");
 static_assert(offsetof(ConfirmationWindow_C_SetDescription, NewDescription) == 0x000000, "Member 'ConfirmationWindow_C_SetDescription::NewDescription' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.AddConfirmButtons
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x01C8 (0x01C8 - 0x0000)
 struct ConfirmationWindow_C_AddConfirmButtons final
 {
 public:
-	struct FConfirmationDialogAction              LocalConfirmDialogAction;                          // 0x0000(0x1182E980)(Edit)
+	struct FConfirmationDialogAction              LocalConfirmDialogAction;                          // 0x0000(0x00D0)(Edit)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -78,11 +78,11 @@ public:
 	bool                                          CallFunc_IsSimpleConfirmAction_ReturnValue;        // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_EA[0x2];                                       // 0x00EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FConfirmationDialogAction              CallFunc_Array_Get_Item2;                          // 0x00F0(0x1182E980)()
+	struct FConfirmationDialogAction              CallFunc_Array_Get_Item2;                          // 0x00F0(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_AddConfirmButtons) == 0x1182E980, "Wrong alignment on ConfirmationWindow_C_AddConfirmButtons");
-static_assert(sizeof(ConfirmationWindow_C_AddConfirmButtons) == 0x1182E980, "Wrong size on ConfirmationWindow_C_AddConfirmButtons");
+static_assert(alignof(ConfirmationWindow_C_AddConfirmButtons) == 0x000008, "Wrong alignment on ConfirmationWindow_C_AddConfirmButtons");
+static_assert(sizeof(ConfirmationWindow_C_AddConfirmButtons) == 0x0001C8, "Wrong size on ConfirmationWindow_C_AddConfirmButtons");
 static_assert(offsetof(ConfirmationWindow_C_AddConfirmButtons, LocalConfirmDialogAction) == 0x000000, "Member 'ConfirmationWindow_C_AddConfirmButtons::LocalConfirmDialogAction' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddConfirmButtons, Temp_int_Array_Index_Variable) == 0x0000D0, "Member 'ConfirmationWindow_C_AddConfirmButtons::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddConfirmButtons, Temp_int_Loop_Counter_Variable) == 0x0000D4, "Member 'ConfirmationWindow_C_AddConfirmButtons::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -95,7 +95,7 @@ static_assert(offsetof(ConfirmationWindow_C_AddConfirmButtons, CallFunc_Array_Ge
 static_assert(offsetof(ConfirmationWindow_C_AddConfirmButtons, CallFunc_Less_IntInt_ReturnValue) == 0x0001C0, "Member 'ConfirmationWindow_C_AddConfirmButtons::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.AddDeclineButton
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct ConfirmationWindow_C_AddDeclineButton final
 {
 public:
@@ -108,10 +108,10 @@ public:
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0050(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0050(0x0010)(NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_AddDeclineButton) == 0x1182EB00, "Wrong alignment on ConfirmationWindow_C_AddDeclineButton");
-static_assert(sizeof(ConfirmationWindow_C_AddDeclineButton) == 0x1182EB00, "Wrong size on ConfirmationWindow_C_AddDeclineButton");
+static_assert(alignof(ConfirmationWindow_C_AddDeclineButton) == 0x000008, "Wrong alignment on ConfirmationWindow_C_AddDeclineButton");
+static_assert(sizeof(ConfirmationWindow_C_AddDeclineButton) == 0x000060, "Wrong size on ConfirmationWindow_C_AddDeclineButton");
 static_assert(offsetof(ConfirmationWindow_C_AddDeclineButton, CallFunc_Create_ReturnValue) == 0x000000, "Member 'ConfirmationWindow_C_AddDeclineButton::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddDeclineButton, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ConfirmationWindow_C_AddDeclineButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddDeclineButton, Temp_text_Variable) == 0x000010, "Member 'ConfirmationWindow_C_AddDeclineButton::Temp_text_Variable' has a wrong offset!");
@@ -122,16 +122,16 @@ static_assert(offsetof(ConfirmationWindow_C_AddDeclineButton, CallFunc_NotEqual_
 static_assert(offsetof(ConfirmationWindow_C_AddDeclineButton, K2Node_MakeStruct_DataTableRowHandle) == 0x000050, "Member 'ConfirmationWindow_C_AddDeclineButton::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.DeclineActionClicked
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct ConfirmationWindow_C_DeclineActionClicked final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDialogExternalLatentActionHandle  CallFunc_ProcessConfirmationResult_WaitingDialogHandle; // 0x0010(0x11821780)(NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  CallFunc_ProcessConfirmationResult_WaitingDialogHandle; // 0x0010(0x0004)(NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_DeclineActionClicked) == 0x11821780, "Wrong alignment on ConfirmationWindow_C_DeclineActionClicked");
-static_assert(sizeof(ConfirmationWindow_C_DeclineActionClicked) == 0x11821780, "Wrong size on ConfirmationWindow_C_DeclineActionClicked");
+static_assert(alignof(ConfirmationWindow_C_DeclineActionClicked) == 0x000008, "Wrong alignment on ConfirmationWindow_C_DeclineActionClicked");
+static_assert(sizeof(ConfirmationWindow_C_DeclineActionClicked) == 0x000018, "Wrong size on ConfirmationWindow_C_DeclineActionClicked");
 static_assert(offsetof(ConfirmationWindow_C_DeclineActionClicked, Button) == 0x000000, "Member 'ConfirmationWindow_C_DeclineActionClicked::Button' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_DeclineActionClicked, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ConfirmationWindow_C_DeclineActionClicked::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_DeclineActionClicked, CallFunc_ProcessConfirmationResult_WaitingDialogHandle) == 0x000010, "Member 'ConfirmationWindow_C_DeclineActionClicked::CallFunc_ProcessConfirmationResult_WaitingDialogHandle' has a wrong offset!");
@@ -150,7 +150,7 @@ static_assert(offsetof(ConfirmationWindow_C_IsSimpleConfirmAction, ReturnValue) 
 static_assert(offsetof(ConfirmationWindow_C_IsSimpleConfirmAction, CallFunc_Not_PreBool_ReturnValue) == 0x000001, "Member 'ConfirmationWindow_C_IsSimpleConfirmAction::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.ConfirmActionClicked
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct ConfirmationWindow_C_ConfirmActionClicked final
 {
 public:
@@ -163,10 +163,10 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_GetResultName_ResultName;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDialogExternalLatentActionHandle  CallFunc_ProcessConfirmationResult_WaitingDialogHandle; // 0x0038(0x11821780)(NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  CallFunc_ProcessConfirmationResult_WaitingDialogHandle; // 0x0038(0x0004)(NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_ConfirmActionClicked) == 0x11821780, "Wrong alignment on ConfirmationWindow_C_ConfirmActionClicked");
-static_assert(sizeof(ConfirmationWindow_C_ConfirmActionClicked) == 0x11821780, "Wrong size on ConfirmationWindow_C_ConfirmActionClicked");
+static_assert(alignof(ConfirmationWindow_C_ConfirmActionClicked) == 0x000008, "Wrong alignment on ConfirmationWindow_C_ConfirmActionClicked");
+static_assert(sizeof(ConfirmationWindow_C_ConfirmActionClicked) == 0x000040, "Wrong size on ConfirmationWindow_C_ConfirmActionClicked");
 static_assert(offsetof(ConfirmationWindow_C_ConfirmActionClicked, Button) == 0x000000, "Member 'ConfirmationWindow_C_ConfirmActionClicked::Button' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_ConfirmActionClicked, ResultName) == 0x000008, "Member 'ConfirmationWindow_C_ConfirmActionClicked::ResultName' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_ConfirmActionClicked, FoundIndex) == 0x000010, "Member 'ConfirmationWindow_C_ConfirmActionClicked::FoundIndex' has a wrong offset!");
@@ -193,24 +193,24 @@ static_assert(offsetof(ConfirmationWindow_C_HasAnyConfirmAction, CallFunc_Array_
 static_assert(offsetof(ConfirmationWindow_C_HasAnyConfirmAction, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'ConfirmationWindow_C_HasAnyConfirmAction::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.AddSingleConfirmButton
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0220 (0x0220 - 0x0000)
 struct ConfirmationWindow_C_AddSingleConfirmButton final
 {
 public:
-	struct FConfirmationDialogAction              ConfirmDialogAction;                               // 0x0000(0x1182E980)(Parm)
+	struct FConfirmationDialogAction              ConfirmDialogAction;                               // 0x0000(0x00D0)(Parm)
 	bool                                          UseInputAction;                                    // 0x00D0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UIconTextButton_C*                      AddedConfirmButton;                                // 0x00D8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          LocalUseInputAction;                               // 0x00E0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FConfirmationDialogAction              LocalConfirmDialogAction;                          // 0x00E8(0x1182E980)(Edit)
+	struct FConfirmationDialogAction              LocalConfirmDialogAction;                          // 0x00E8(0x00D0)(Edit)
 	TDelegate<void(class UCommonButton* Button)>  K2Node_CreateDelegate_OutputDelegate;              // 0x01B8(0x0010)(ZeroConstructor, NoDestructor)
 	class UIconTextButton_C*                      CallFunc_Create_ReturnValue;                       // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1E4[0x4];                                      // 0x01E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    CallFunc_GetInputAction_ReturnValue;               // 0x01E8(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    CallFunc_GetInputAction_ReturnValue;               // 0x01E8(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UCommonButton* Button)>  K2Node_CreateDelegate_OutputDelegate2;             // 0x0200(0x0010)(ZeroConstructor, NoDestructor)
@@ -218,8 +218,8 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetInputPriority_ReturnValue;             // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ConfirmationWindow_C_AddSingleConfirmButton) == 0x1182EB00, "Wrong alignment on ConfirmationWindow_C_AddSingleConfirmButton");
-static_assert(sizeof(ConfirmationWindow_C_AddSingleConfirmButton) == 0x1182EB00, "Wrong size on ConfirmationWindow_C_AddSingleConfirmButton");
+static_assert(alignof(ConfirmationWindow_C_AddSingleConfirmButton) == 0x000008, "Wrong alignment on ConfirmationWindow_C_AddSingleConfirmButton");
+static_assert(sizeof(ConfirmationWindow_C_AddSingleConfirmButton) == 0x000220, "Wrong size on ConfirmationWindow_C_AddSingleConfirmButton");
 static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, ConfirmDialogAction) == 0x000000, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::ConfirmDialogAction' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, UseInputAction) == 0x0000D0, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::UseInputAction' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, AddedConfirmButton) == 0x0000D8, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::AddedConfirmButton' has a wrong offset!");
@@ -238,22 +238,22 @@ static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, CallFunc_Arr
 static_assert(offsetof(ConfirmationWindow_C_AddSingleConfirmButton, CallFunc_GetInputPriority_ReturnValue) == 0x00021C, "Member 'ConfirmationWindow_C_AddSingleConfirmButton::CallFunc_GetInputPriority_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.GetInputAction
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct ConfirmationWindow_C_GetInputAction final
 {
 public:
 	class FName                                   RowName;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseInputAction;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    ReturnValue;                                       // 0x0010(0x1182EB00)(Parm, OutParm, ReturnParm, NoDestructor)
+	struct FDataTableRowHandle                    ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0028(0x1182EB00)(NoDestructor)
-	struct FDataTableRowHandle                    Temp_struct_Variable;                              // 0x0038(0x1182EB00)(NoDestructor)
-	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x0048(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0028(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    Temp_struct_Variable;                              // 0x0038(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x0048(0x0010)(NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_GetInputAction) == 0x1182EB00, "Wrong alignment on ConfirmationWindow_C_GetInputAction");
-static_assert(sizeof(ConfirmationWindow_C_GetInputAction) == 0x1182EB00, "Wrong size on ConfirmationWindow_C_GetInputAction");
+static_assert(alignof(ConfirmationWindow_C_GetInputAction) == 0x000008, "Wrong alignment on ConfirmationWindow_C_GetInputAction");
+static_assert(sizeof(ConfirmationWindow_C_GetInputAction) == 0x000058, "Wrong size on ConfirmationWindow_C_GetInputAction");
 static_assert(offsetof(ConfirmationWindow_C_GetInputAction, RowName) == 0x000000, "Member 'ConfirmationWindow_C_GetInputAction::RowName' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_GetInputAction, UseInputAction) == 0x000008, "Member 'ConfirmationWindow_C_GetInputAction::UseInputAction' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_GetInputAction, ReturnValue) == 0x000010, "Member 'ConfirmationWindow_C_GetInputAction::ReturnValue' has a wrong offset!");
@@ -263,8 +263,8 @@ static_assert(offsetof(ConfirmationWindow_C_GetInputAction, Temp_struct_Variable
 static_assert(offsetof(ConfirmationWindow_C_GetInputAction, K2Node_Select_Default) == 0x000048, "Member 'ConfirmationWindow_C_GetInputAction::K2Node_Select_Default' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.GetResultName
-// 0x2D004D (0x2D004D - 0x0000)
-struct alignas(0x2D004D) ConfirmationWindow_C_GetResultName final
+// 0x0030 (0x0030 - 0x0000)
+struct ConfirmationWindow_C_GetResultName final
 {
 public:
 	class UIconTextButton_C*                      ConfirmButton;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -278,8 +278,8 @@ public:
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_GetResultName) == 0x2D004D, "Wrong alignment on ConfirmationWindow_C_GetResultName");
-static_assert(sizeof(ConfirmationWindow_C_GetResultName) == 0x2D004D, "Wrong size on ConfirmationWindow_C_GetResultName");
+static_assert(alignof(ConfirmationWindow_C_GetResultName) == 0x000008, "Wrong alignment on ConfirmationWindow_C_GetResultName");
+static_assert(sizeof(ConfirmationWindow_C_GetResultName) == 0x000030, "Wrong size on ConfirmationWindow_C_GetResultName");
 static_assert(offsetof(ConfirmationWindow_C_GetResultName, ConfirmButton) == 0x000000, "Member 'ConfirmationWindow_C_GetResultName::ConfirmButton' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_GetResultName, ResultName) == 0x000008, "Member 'ConfirmationWindow_C_GetResultName::ResultName' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_GetResultName, FoundIndex) == 0x000010, "Member 'ConfirmationWindow_C_GetResultName::FoundIndex' has a wrong offset!");
@@ -290,15 +290,15 @@ static_assert(offsetof(ConfirmationWindow_C_GetResultName, CallFunc_Array_Find_R
 static_assert(offsetof(ConfirmationWindow_C_GetResultName, CallFunc_BooleanAND_ReturnValue) == 0x000028, "Member 'ConfirmationWindow_C_GetResultName::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.KillCurrentConfirmation
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct ConfirmationWindow_C_KillCurrentConfirmation final
 {
 public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortDialogExternalLatentActionHandle  CallFunc_ProcessConfirmationResult_WaitingDialogHandle; // 0x0008(0x11821780)(NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  CallFunc_ProcessConfirmationResult_WaitingDialogHandle; // 0x0008(0x0004)(NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_KillCurrentConfirmation) == 0x11821780, "Wrong alignment on ConfirmationWindow_C_KillCurrentConfirmation");
-static_assert(sizeof(ConfirmationWindow_C_KillCurrentConfirmation) == 0x11821780, "Wrong size on ConfirmationWindow_C_KillCurrentConfirmation");
+static_assert(alignof(ConfirmationWindow_C_KillCurrentConfirmation) == 0x000008, "Wrong alignment on ConfirmationWindow_C_KillCurrentConfirmation");
+static_assert(sizeof(ConfirmationWindow_C_KillCurrentConfirmation) == 0x000010, "Wrong size on ConfirmationWindow_C_KillCurrentConfirmation");
 static_assert(offsetof(ConfirmationWindow_C_KillCurrentConfirmation, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ConfirmationWindow_C_KillCurrentConfirmation::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ConfirmationWindow_C_KillCurrentConfirmation, CallFunc_ProcessConfirmationResult_WaitingDialogHandle) == 0x000008, "Member 'ConfirmationWindow_C_KillCurrentConfirmation::CallFunc_ProcessConfirmationResult_WaitingDialogHandle' has a wrong offset!");
 
@@ -367,25 +367,25 @@ static_assert(offsetof(ConfirmationWindow_C_Set_Hover_Description, CallFunc_Text
 static_assert(offsetof(ConfirmationWindow_C_Set_Hover_Description, K2Node_Select_Default) == 0x000041, "Member 'ConfirmationWindow_C_Set_Hover_Description::K2Node_Select_Default' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.GetLatentActionWaitHandle
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct ConfirmationWindow_C_GetLatentActionWaitHandle final
 {
 public:
-	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0000(0x11821780)(Parm, OutParm, NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0000(0x0004)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_GetLatentActionWaitHandle) == 0x11821780, "Wrong alignment on ConfirmationWindow_C_GetLatentActionWaitHandle");
-static_assert(sizeof(ConfirmationWindow_C_GetLatentActionWaitHandle) == 0x11821780, "Wrong size on ConfirmationWindow_C_GetLatentActionWaitHandle");
+static_assert(alignof(ConfirmationWindow_C_GetLatentActionWaitHandle) == 0x000004, "Wrong alignment on ConfirmationWindow_C_GetLatentActionWaitHandle");
+static_assert(sizeof(ConfirmationWindow_C_GetLatentActionWaitHandle) == 0x000004, "Wrong size on ConfirmationWindow_C_GetLatentActionWaitHandle");
 static_assert(offsetof(ConfirmationWindow_C_GetLatentActionWaitHandle, LatentActionHandle) == 0x000000, "Member 'ConfirmationWindow_C_GetLatentActionWaitHandle::LatentActionHandle' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.OnWaitForExternalLatentAction
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct ConfirmationWindow_C_OnWaitForExternalLatentAction final
 {
 public:
-	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0000(0x11821780)(Parm, NoDestructor)
+	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0000(0x0004)(Parm, NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_OnWaitForExternalLatentAction) == 0x11821780, "Wrong alignment on ConfirmationWindow_C_OnWaitForExternalLatentAction");
-static_assert(sizeof(ConfirmationWindow_C_OnWaitForExternalLatentAction) == 0x11821780, "Wrong size on ConfirmationWindow_C_OnWaitForExternalLatentAction");
+static_assert(alignof(ConfirmationWindow_C_OnWaitForExternalLatentAction) == 0x000004, "Wrong alignment on ConfirmationWindow_C_OnWaitForExternalLatentAction");
+static_assert(sizeof(ConfirmationWindow_C_OnWaitForExternalLatentAction) == 0x000004, "Wrong size on ConfirmationWindow_C_OnWaitForExternalLatentAction");
 static_assert(offsetof(ConfirmationWindow_C_OnWaitForExternalLatentAction, LatentActionHandle) == 0x000000, "Member 'ConfirmationWindow_C_OnWaitForExternalLatentAction::LatentActionHandle' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.ClickButtonIfBot

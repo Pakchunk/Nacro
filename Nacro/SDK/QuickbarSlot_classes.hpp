@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "ItemDisplayStyle_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "UMG_structs.hpp"
@@ -22,11 +22,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass QuickbarSlot.QuickbarSlot_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0140 (0x0378 - 0x0238)
 class UQuickbarSlot_C : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Selected;                                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimMaximize;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimMinimize;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -108,8 +108,8 @@ public:
 		return GetDefaultObjImpl<UQuickbarSlot_C>();
 	}
 };
-static_assert(alignof(UQuickbarSlot_C) == 0x322CBBB8, "Wrong alignment on UQuickbarSlot_C");
-static_assert(sizeof(UQuickbarSlot_C) == 0x322CBBB8, "Wrong size on UQuickbarSlot_C");
+static_assert(alignof(UQuickbarSlot_C) == 0x000008, "Wrong alignment on UQuickbarSlot_C");
+static_assert(sizeof(UQuickbarSlot_C) == 0x000378, "Wrong size on UQuickbarSlot_C");
 static_assert(offsetof(UQuickbarSlot_C, UberGraphFrame) == 0x000238, "Member 'UQuickbarSlot_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, Selected) == 0x000240, "Member 'UQuickbarSlot_C::Selected' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, AnimMaximize) == 0x000248, "Member 'UQuickbarSlot_C::AnimMaximize' has a wrong offset!");

@@ -19,11 +19,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass AccountLinkingWindow.AccountLinkingWindow_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x01E8 (0x0628 - 0x0440)
 class UAccountLinkingWindow_C final : public UFortAccountLinkingWindow
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ButtonLogIn;                                       // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ButtonLogInFromPurchase;                           // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      ButtonNoThanks;                                    // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -116,8 +116,8 @@ public:
 		return GetDefaultObjImpl<UAccountLinkingWindow_C>();
 	}
 };
-static_assert(alignof(UAccountLinkingWindow_C) == 0x322CBBB8, "Wrong alignment on UAccountLinkingWindow_C");
-static_assert(sizeof(UAccountLinkingWindow_C) == 0x322CBBB8, "Wrong size on UAccountLinkingWindow_C");
+static_assert(alignof(UAccountLinkingWindow_C) == 0x000008, "Wrong alignment on UAccountLinkingWindow_C");
+static_assert(sizeof(UAccountLinkingWindow_C) == 0x000628, "Wrong size on UAccountLinkingWindow_C");
 static_assert(offsetof(UAccountLinkingWindow_C, UberGraphFrame) == 0x000440, "Member 'UAccountLinkingWindow_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UAccountLinkingWindow_C, ButtonLogIn) == 0x000448, "Member 'UAccountLinkingWindow_C::ButtonLogIn' has a wrong offset!");
 static_assert(offsetof(UAccountLinkingWindow_C, ButtonLogInFromPurchase) == 0x000450, "Member 'UAccountLinkingWindow_C::ButtonLogInFromPurchase' has a wrong offset!");

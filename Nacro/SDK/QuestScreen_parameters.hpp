@@ -20,7 +20,7 @@ namespace SDK::Params
 {
 
 // Function QuestScreen.QuestScreen_C.ExecuteUbergraph_QuestScreen
-// 0x11821D80 (0x11821D80 - 0x0000)
+// 0x0360 (0x0360 - 0x0000)
 struct QuestScreen_C_ExecuteUbergraph_QuestScreen final
 {
 public:
@@ -48,7 +48,7 @@ public:
 	TDelegate<void(EMatchmakingCompleteResult Result)> K2Node_CreateDelegate_OutputDelegate5;             // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue2;                  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate6;             // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00D0(0x11821D80)(NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00D0(0x0008)(NoDestructor)
 	class UObject*                                CallFunc_GetItemAt_ReturnValue;                    // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            K2Node_ComponentBoundEvent_Widget;                 // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UObject*>                        CallFunc_OnGetChildrenForCategory_ReturnValue;     // 0x00E8(0x0010)(ZeroConstructor, ReferenceParm)
@@ -64,7 +64,7 @@ public:
 	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EFortPartyState PartyState)>   K2Node_CreateDelegate_OutputDelegate7;             // 0x0128(0x0010)(ZeroConstructor, NoDestructor)
-	struct FFortTeamMemberInfo                    K2Node_CustomEvent_PlayerInfo;                     // 0x0138(0x11827900)(ConstParm)
+	struct FFortTeamMemberInfo                    K2Node_CustomEvent_PlayerInfo;                     // 0x0138(0x0190)(ConstParm)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortPartyState                               K2Node_CustomEvent_PartyState;                     // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -93,8 +93,8 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue7;                  // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate9;             // 0x0350(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(QuestScreen_C_ExecuteUbergraph_QuestScreen) == 0x11821D80, "Wrong alignment on QuestScreen_C_ExecuteUbergraph_QuestScreen");
-static_assert(sizeof(QuestScreen_C_ExecuteUbergraph_QuestScreen) == 0x11821D80, "Wrong size on QuestScreen_C_ExecuteUbergraph_QuestScreen");
+static_assert(alignof(QuestScreen_C_ExecuteUbergraph_QuestScreen) == 0x000008, "Wrong alignment on QuestScreen_C_ExecuteUbergraph_QuestScreen");
+static_assert(sizeof(QuestScreen_C_ExecuteUbergraph_QuestScreen) == 0x000360, "Wrong size on QuestScreen_C_ExecuteUbergraph_QuestScreen");
 static_assert(offsetof(QuestScreen_C_ExecuteUbergraph_QuestScreen, EntryPoint) == 0x000000, "Member 'QuestScreen_C_ExecuteUbergraph_QuestScreen::EntryPoint' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_ExecuteUbergraph_QuestScreen, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuestScreen_C_ExecuteUbergraph_QuestScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_ExecuteUbergraph_QuestScreen, CallFunc_GetQuestManager_ReturnValue) == 0x000010, "Member 'QuestScreen_C_ExecuteUbergraph_QuestScreen::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
@@ -187,14 +187,14 @@ static_assert(sizeof(QuestScreen_C_OnClientPartyStateChanged) == 0x000001, "Wron
 static_assert(offsetof(QuestScreen_C_OnClientPartyStateChanged, PartyState) == 0x000000, "Member 'QuestScreen_C_OnClientPartyStateChanged::PartyState' has a wrong offset!");
 
 // Function QuestScreen.QuestScreen_C.PlayerPartyStateChanged
-// 0x11821780 (0x11821780 - 0x0000)
+// 0x0190 (0x0190 - 0x0000)
 struct QuestScreen_C_PlayerPartyStateChanged final
 {
 public:
-	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x11827900)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x0190)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(QuestScreen_C_PlayerPartyStateChanged) == 0x11821780, "Wrong alignment on QuestScreen_C_PlayerPartyStateChanged");
-static_assert(sizeof(QuestScreen_C_PlayerPartyStateChanged) == 0x11821780, "Wrong size on QuestScreen_C_PlayerPartyStateChanged");
+static_assert(alignof(QuestScreen_C_PlayerPartyStateChanged) == 0x000008, "Wrong alignment on QuestScreen_C_PlayerPartyStateChanged");
+static_assert(sizeof(QuestScreen_C_PlayerPartyStateChanged) == 0x000190, "Wrong size on QuestScreen_C_PlayerPartyStateChanged");
 static_assert(offsetof(QuestScreen_C_PlayerPartyStateChanged, PlayerInfo) == 0x000000, "Member 'QuestScreen_C_PlayerPartyStateChanged::PlayerInfo' has a wrong offset!");
 
 // Function QuestScreen.QuestScreen_C.BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_200_OnListViewItemWidgetDestroyed__DelegateSignature
@@ -210,12 +210,12 @@ static_assert(offsetof(QuestScreen_C_BndEvt__QuestsTreeView_K2Node_ComponentBoun
 
 // Function QuestScreen.QuestScreen_C.BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature final
+struct alignas(0x08) QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature final
 {
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature) == 0x000004, "Wrong alignment on QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature");
+static_assert(alignof(QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature) == 0x000008, "Wrong alignment on QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature");
 static_assert(sizeof(QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature) == 0x000008, "Wrong size on QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature");
 static_assert(offsetof(QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature, TabId) == 0x000000, "Member 'QuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature::TabId' has a wrong offset!");
 
@@ -263,16 +263,16 @@ static_assert(offsetof(QuestScreen_C_OnGetChildrenForCategory, K2Node_DynamicCas
 static_assert(offsetof(QuestScreen_C_OnGetChildrenForCategory, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'QuestScreen_C_OnGetChildrenForCategory::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function QuestScreen.QuestScreen_C.HandleBack
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) QuestScreen_C_HandleBack final
+// 0x0010 (0x0010 - 0x0000)
+struct QuestScreen_C_HandleBack final
 {
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestScreen_C_HandleBack) == 0x0000E4, "Wrong alignment on QuestScreen_C_HandleBack");
-static_assert(sizeof(QuestScreen_C_HandleBack) == 0x0000E4, "Wrong size on QuestScreen_C_HandleBack");
+static_assert(alignof(QuestScreen_C_HandleBack) == 0x000008, "Wrong alignment on QuestScreen_C_HandleBack");
+static_assert(sizeof(QuestScreen_C_HandleBack) == 0x000010, "Wrong size on QuestScreen_C_HandleBack");
 static_assert(offsetof(QuestScreen_C_HandleBack, PassThrough) == 0x000000, "Member 'QuestScreen_C_HandleBack::PassThrough' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_HandleBack, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuestScreen_C_HandleBack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
@@ -293,37 +293,37 @@ static_assert(offsetof(QuestScreen_C_PlayQuest, CallFunc_GetUINavigationManager_
 static_assert(offsetof(QuestScreen_C_PlayQuest, CallFunc_HandleBack_PassThrough) == 0x000010, "Member 'QuestScreen_C_PlayQuest::CallFunc_HandleBack_PassThrough' has a wrong offset!");
 
 // Function QuestScreen.QuestScreen_C.SetupInputHandlers
-// 0x1182EB00 (0x1182EB00 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct QuestScreen_C_SetupInputHandlers final
 {
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate3;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0048(0x1182EB00)(NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x0058(0x1182EB00)(NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle4;             // 0x0068(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0048(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x0058(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle4;             // 0x0068(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate4;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle5;             // 0x0088(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle5;             // 0x0088(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x0098(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle6;             // 0x00A8(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle6;             // 0x00A8(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate6;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle7;             // 0x00C8(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle7;             // 0x00C8(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate7;             // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle8;             // 0x00E8(0x1182EB00)(NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle9;             // 0x00F8(0x1182EB00)(NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle10;            // 0x0108(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle8;             // 0x00E8(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle9;             // 0x00F8(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle10;            // 0x0108(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate8;             // 0x0118(0x0010)(ZeroConstructor, NoDestructor)
-	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle11;            // 0x0128(0x1182EB00)(NoDestructor)
+	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle11;            // 0x0128(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate9;             // 0x0138(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate10;            // 0x0148(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate11;            // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(QuestScreen_C_SetupInputHandlers) == 0x1182EB00, "Wrong alignment on QuestScreen_C_SetupInputHandlers");
-static_assert(sizeof(QuestScreen_C_SetupInputHandlers) == 0x1182EB00, "Wrong size on QuestScreen_C_SetupInputHandlers");
+static_assert(alignof(QuestScreen_C_SetupInputHandlers) == 0x000008, "Wrong alignment on QuestScreen_C_SetupInputHandlers");
+static_assert(sizeof(QuestScreen_C_SetupInputHandlers) == 0x000168, "Wrong size on QuestScreen_C_SetupInputHandlers");
 static_assert(offsetof(QuestScreen_C_SetupInputHandlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'QuestScreen_C_SetupInputHandlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_SetupInputHandlers, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'QuestScreen_C_SetupInputHandlers::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_SetupInputHandlers, CallFunc_Not_PreBool_ReturnValue) == 0x000020, "Member 'QuestScreen_C_SetupInputHandlers::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
@@ -378,19 +378,19 @@ static_assert(offsetof(QuestScreen_C_AbandonQuest, PassThrough) == 0x000000, "Me
 static_assert(offsetof(QuestScreen_C_AbandonQuest, CallFunc_AbandonQuest_questAbandoned_) == 0x000001, "Member 'QuestScreen_C_AbandonQuest::CallFunc_AbandonQuest_questAbandoned_' has a wrong offset!");
 
 // Function QuestScreen.QuestScreen_C.SelectInitialQuest
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) QuestScreen_C_SelectInitialQuest final
+// 0x0008 (0x0008 - 0x0000)
+struct QuestScreen_C_SelectInitialQuest final
 {
 public:
 	class UObject*                                NewLocalVar_0;                                     // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestScreen_C_SelectInitialQuest) == 0x0000E4, "Wrong alignment on QuestScreen_C_SelectInitialQuest");
-static_assert(sizeof(QuestScreen_C_SelectInitialQuest) == 0x0000E4, "Wrong size on QuestScreen_C_SelectInitialQuest");
+static_assert(alignof(QuestScreen_C_SelectInitialQuest) == 0x000008, "Wrong alignment on QuestScreen_C_SelectInitialQuest");
+static_assert(sizeof(QuestScreen_C_SelectInitialQuest) == 0x000008, "Wrong size on QuestScreen_C_SelectInitialQuest");
 static_assert(offsetof(QuestScreen_C_SelectInitialQuest, NewLocalVar_0) == 0x000000, "Member 'QuestScreen_C_SelectInitialQuest::NewLocalVar_0' has a wrong offset!");
 
 // Function QuestScreen.QuestScreen_C.ClaimReward
-// 0x00E4 (0x00E4 - 0x0000)
-struct alignas(0xE4) QuestScreen_C_ClaimReward final
+// 0x0018 (0x0018 - 0x0000)
+struct QuestScreen_C_ClaimReward final
 {
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -398,8 +398,8 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestScreen_C_ClaimReward) == 0x0000E4, "Wrong alignment on QuestScreen_C_ClaimReward");
-static_assert(sizeof(QuestScreen_C_ClaimReward) == 0x0000E4, "Wrong size on QuestScreen_C_ClaimReward");
+static_assert(alignof(QuestScreen_C_ClaimReward) == 0x000008, "Wrong alignment on QuestScreen_C_ClaimReward");
+static_assert(sizeof(QuestScreen_C_ClaimReward) == 0x000018, "Wrong size on QuestScreen_C_ClaimReward");
 static_assert(offsetof(QuestScreen_C_ClaimReward, PassThrough) == 0x000000, "Member 'QuestScreen_C_ClaimReward::PassThrough' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_ClaimReward, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuestScreen_C_ClaimReward::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_ClaimReward, CallFunc_GetQuestManager_ReturnValue) == 0x000010, "Member 'QuestScreen_C_ClaimReward::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
@@ -566,21 +566,21 @@ static_assert(offsetof(QuestScreen_C_SelectQuest, CallFunc_GetQuestManager_Retur
 static_assert(offsetof(QuestScreen_C_SelectQuest, CallFunc_GetQuestCategory_ReturnValue) == 0x000018, "Member 'QuestScreen_C_SelectQuest::CallFunc_GetQuestCategory_ReturnValue' has a wrong offset!");
 
 // Function QuestScreen.QuestScreen_C.HandlePendingNavigationOp
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct QuestScreen_C_HandlePendingNavigationOp final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue2;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFortUINavigationOperation             CallFunc_TryGetPendingNavigationOp_NavigationOp;   // 0x0010(0x1182E980)(NoDestructor)
+	struct FFortUINavigationOperation             CallFunc_TryGetPendingNavigationOp_NavigationOp;   // 0x0010(0x0038)(NoDestructor)
 	bool                                          CallFunc_TryGetPendingNavigationOp_ReturnValue;    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasPendingNavigationOp_ReturnValue;       // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortQuestItem*                         K2Node_DynamicCast_AsFort_Quest_Item;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestScreen_C_HandlePendingNavigationOp) == 0x1182E980, "Wrong alignment on QuestScreen_C_HandlePendingNavigationOp");
-static_assert(sizeof(QuestScreen_C_HandlePendingNavigationOp) == 0x1182E980, "Wrong size on QuestScreen_C_HandlePendingNavigationOp");
+static_assert(alignof(QuestScreen_C_HandlePendingNavigationOp) == 0x000008, "Wrong alignment on QuestScreen_C_HandlePendingNavigationOp");
+static_assert(sizeof(QuestScreen_C_HandlePendingNavigationOp) == 0x000060, "Wrong size on QuestScreen_C_HandlePendingNavigationOp");
 static_assert(offsetof(QuestScreen_C_HandlePendingNavigationOp, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'QuestScreen_C_HandlePendingNavigationOp::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_HandlePendingNavigationOp, CallFunc_GetUINavigationManager_ReturnValue2) == 0x000008, "Member 'QuestScreen_C_HandlePendingNavigationOp::CallFunc_GetUINavigationManager_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(QuestScreen_C_HandlePendingNavigationOp, CallFunc_TryGetPendingNavigationOp_NavigationOp) == 0x000010, "Member 'QuestScreen_C_HandlePendingNavigationOp::CallFunc_TryGetPendingNavigationOp_NavigationOp' has a wrong offset!");

@@ -18,8 +18,8 @@ namespace SDK::Params
 {
 
 // Function ErrorEntry.ErrorEntry_C.ExecuteUbergraph_ErrorEntry
-// 0x650073 (0x650073 - 0x0000)
-struct alignas(0x650073) ErrorEntry_C_ExecuteUbergraph_ErrorEntry final
+// 0x0028 (0x0028 - 0x0000)
+struct ErrorEntry_C_ExecuteUbergraph_ErrorEntry final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -29,22 +29,22 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ErrorEntry_C_ExecuteUbergraph_ErrorEntry) == 0x650073, "Wrong alignment on ErrorEntry_C_ExecuteUbergraph_ErrorEntry");
-static_assert(sizeof(ErrorEntry_C_ExecuteUbergraph_ErrorEntry) == 0x650073, "Wrong size on ErrorEntry_C_ExecuteUbergraph_ErrorEntry");
+static_assert(alignof(ErrorEntry_C_ExecuteUbergraph_ErrorEntry) == 0x000008, "Wrong alignment on ErrorEntry_C_ExecuteUbergraph_ErrorEntry");
+static_assert(sizeof(ErrorEntry_C_ExecuteUbergraph_ErrorEntry) == 0x000028, "Wrong size on ErrorEntry_C_ExecuteUbergraph_ErrorEntry");
 static_assert(offsetof(ErrorEntry_C_ExecuteUbergraph_ErrorEntry, EntryPoint) == 0x000000, "Member 'ErrorEntry_C_ExecuteUbergraph_ErrorEntry::EntryPoint' has a wrong offset!");
 static_assert(offsetof(ErrorEntry_C_ExecuteUbergraph_ErrorEntry, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'ErrorEntry_C_ExecuteUbergraph_ErrorEntry::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 static_assert(offsetof(ErrorEntry_C_ExecuteUbergraph_ErrorEntry, CallFunc_GetButtonVisibility_NewParam) == 0x000010, "Member 'ErrorEntry_C_ExecuteUbergraph_ErrorEntry::CallFunc_GetButtonVisibility_NewParam' has a wrong offset!");
 static_assert(offsetof(ErrorEntry_C_ExecuteUbergraph_ErrorEntry, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'ErrorEntry_C_ExecuteUbergraph_ErrorEntry::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
 
 // Function ErrorEntry.ErrorEntry_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature
-// 0x01F8 (0x01F8 - 0x0000)
-struct alignas(0x1F8) ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature final
+// 0x0008 (0x0008 - 0x0000)
+struct ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature final
 {
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature) == 0x0001F8, "Wrong alignment on ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature) == 0x0001F8, "Wrong size on ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature");
+static_assert(alignof(ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature");
+static_assert(sizeof(ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature");
 static_assert(offsetof(ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ErrorEntry.ErrorEntry_C.GetButtonVisibility
@@ -59,19 +59,19 @@ static_assert(sizeof(ErrorEntry_C_GetButtonVisibility) == 0x000001, "Wrong size 
 static_assert(offsetof(ErrorEntry_C_GetButtonVisibility, NewParam) == 0x000000, "Member 'ErrorEntry_C_GetButtonVisibility::NewParam' has a wrong offset!");
 
 // Function ErrorEntry.ErrorEntry_C.SetErrorInfo
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct ErrorEntry_C_SetErrorInfo final
 {
 public:
-	struct FFortErrorInfo                         ErrorInfo_0;                                       // 0x0000(0x1182E980)(Parm)
+	struct FFortErrorInfo                         ErrorInfo_0;                                       // 0x0000(0x0080)(Parm)
 };
-static_assert(alignof(ErrorEntry_C_SetErrorInfo) == 0x1182E980, "Wrong alignment on ErrorEntry_C_SetErrorInfo");
-static_assert(sizeof(ErrorEntry_C_SetErrorInfo) == 0x1182E980, "Wrong size on ErrorEntry_C_SetErrorInfo");
+static_assert(alignof(ErrorEntry_C_SetErrorInfo) == 0x000010, "Wrong alignment on ErrorEntry_C_SetErrorInfo");
+static_assert(sizeof(ErrorEntry_C_SetErrorInfo) == 0x000080, "Wrong size on ErrorEntry_C_SetErrorInfo");
 static_assert(offsetof(ErrorEntry_C_SetErrorInfo, ErrorInfo_0) == 0x000000, "Member 'ErrorEntry_C_SetErrorInfo::ErrorInfo_0' has a wrong offset!");
 
-// Function ErrorEntry.ErrorEntry_C.Center on Widget
+// Function ErrorEntry.ErrorEntry_C.Center On Widget
 // 0x0018 (0x0018 - 0x0000)
-struct ErrorEntry_C_Center_on_Widget final
+struct ErrorEntry_C_Center_On_Widget final
 {
 public:
 	bool                                          Did_Center;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -80,12 +80,12 @@ public:
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ErrorEntry_C_Center_on_Widget) == 0x000008, "Wrong alignment on ErrorEntry_C_Center_on_Widget");
-static_assert(sizeof(ErrorEntry_C_Center_on_Widget) == 0x000018, "Wrong size on ErrorEntry_C_Center_on_Widget");
-static_assert(offsetof(ErrorEntry_C_Center_on_Widget, Did_Center) == 0x000000, "Member 'ErrorEntry_C_Center_on_Widget::Did_Center' has a wrong offset!");
-static_assert(offsetof(ErrorEntry_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'ErrorEntry_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorEntry_C_Center_on_Widget, CallFunc_Len_ReturnValue) == 0x000010, "Member 'ErrorEntry_C_Center_on_Widget::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorEntry_C_Center_on_Widget, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'ErrorEntry_C_Center_on_Widget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(alignof(ErrorEntry_C_Center_On_Widget) == 0x000008, "Wrong alignment on ErrorEntry_C_Center_On_Widget");
+static_assert(sizeof(ErrorEntry_C_Center_On_Widget) == 0x000018, "Wrong size on ErrorEntry_C_Center_On_Widget");
+static_assert(offsetof(ErrorEntry_C_Center_On_Widget, Did_Center) == 0x000000, "Member 'ErrorEntry_C_Center_On_Widget::Did_Center' has a wrong offset!");
+static_assert(offsetof(ErrorEntry_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'ErrorEntry_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErrorEntry_C_Center_On_Widget, CallFunc_Len_ReturnValue) == 0x000010, "Member 'ErrorEntry_C_Center_On_Widget::CallFunc_Len_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErrorEntry_C_Center_On_Widget, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'ErrorEntry_C_Center_On_Widget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

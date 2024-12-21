@@ -31,14 +31,14 @@ static_assert(offsetof(T2_Main_C_ExecuteUbergraph_T2_Main, K2Node_Event_IsDesign
 static_assert(offsetof(T2_Main_C_ExecuteUbergraph_T2_Main, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'T2_Main_C_ExecuteUbergraph_T2_Main::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function T2_Main.T2_Main_C.PreConstruct
-// 0x18243 (0x18243 - 0x0000)
-struct alignas(0x18243) T2_Main_C_PreConstruct final
+// 0x0001 (0x0001 - 0x0000)
+struct T2_Main_C_PreConstruct final
 {
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(T2_Main_C_PreConstruct) == 0x018243, "Wrong alignment on T2_Main_C_PreConstruct");
-static_assert(sizeof(T2_Main_C_PreConstruct) == 0x018243, "Wrong size on T2_Main_C_PreConstruct");
+static_assert(alignof(T2_Main_C_PreConstruct) == 0x000001, "Wrong alignment on T2_Main_C_PreConstruct");
+static_assert(sizeof(T2_Main_C_PreConstruct) == 0x000001, "Wrong size on T2_Main_C_PreConstruct");
 static_assert(offsetof(T2_Main_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'T2_Main_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }

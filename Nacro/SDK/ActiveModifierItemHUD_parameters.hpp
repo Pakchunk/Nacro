@@ -17,14 +17,14 @@ namespace SDK::Params
 {
 
 // Function ActiveModifierItemHUD.ActiveModifierItemHUD_C.AssignIcon
-// 0x11827900 (0x11827900 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct ActiveModifierItemHUD_C_AssignIcon final
 {
 public:
-	struct FSlateBrush                            InIconSlateBrush;                                  // 0x0000(0x322CBBB8)(Parm)
+	struct FSlateBrush                            InIconSlateBrush;                                  // 0x0000(0x0090)(Parm)
 };
-static_assert(alignof(ActiveModifierItemHUD_C_AssignIcon) == 0x11827900, "Wrong alignment on ActiveModifierItemHUD_C_AssignIcon");
-static_assert(sizeof(ActiveModifierItemHUD_C_AssignIcon) == 0x11827900, "Wrong size on ActiveModifierItemHUD_C_AssignIcon");
+static_assert(alignof(ActiveModifierItemHUD_C_AssignIcon) == 0x000008, "Wrong alignment on ActiveModifierItemHUD_C_AssignIcon");
+static_assert(sizeof(ActiveModifierItemHUD_C_AssignIcon) == 0x000090, "Wrong size on ActiveModifierItemHUD_C_AssignIcon");
 static_assert(offsetof(ActiveModifierItemHUD_C_AssignIcon, InIconSlateBrush) == 0x000000, "Member 'ActiveModifierItemHUD_C_AssignIcon::InIconSlateBrush' has a wrong offset!");
 
 }

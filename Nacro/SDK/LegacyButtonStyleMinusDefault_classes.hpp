@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass LegacyButtonStyle-Default.LegacyButtonStyle-Default_C
-// 0x0000 (0x1182E980 - 0x1182E980)
+// 0x0000 (0x1C08 - 0x1C08)
 class ULegacyButtonStyleMinusDefault_C : public ULegacyButtonStyleMinusBase_C
 {
 public:
@@ -30,8 +30,8 @@ public:
 		return GetDefaultObjImpl<ULegacyButtonStyleMinusDefault_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonStyleMinusDefault_C) == 0x1182E980, "Wrong alignment on ULegacyButtonStyleMinusDefault_C");
-static_assert(sizeof(ULegacyButtonStyleMinusDefault_C) == 0x1182E980, "Wrong size on ULegacyButtonStyleMinusDefault_C");
+static_assert(alignof(ULegacyButtonStyleMinusDefault_C) == 0x000008, "Wrong alignment on ULegacyButtonStyleMinusDefault_C");
+static_assert(sizeof(ULegacyButtonStyleMinusDefault_C) == 0x001C08, "Wrong size on ULegacyButtonStyleMinusDefault_C");
 
 }
 

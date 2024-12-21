@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass OptionsMenuSlider.OptionsMenuSlider_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0070 (0x02A0 - 0x0230)
 class UOptionsMenuSlider_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
 	class UButton*                                Button_0;                                          // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAnalogSlider*                          MenuSlider;                                        // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 SliderBackground;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -46,7 +46,7 @@ public:
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	void Construct();
 	void Update_Slider(const class FText& Slider_Text, float Slider_Value, const class FText& Hover_Text_0, class UCommonTextBlock* Tooltip_Text_Block);
-	void Center_on_Widget();
+	void Center_On_Widget();
 
 public:
 	static class UClass* StaticClass()
@@ -58,8 +58,8 @@ public:
 		return GetDefaultObjImpl<UOptionsMenuSlider_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuSlider_C) == 0x322CBBB8, "Wrong alignment on UOptionsMenuSlider_C");
-static_assert(sizeof(UOptionsMenuSlider_C) == 0x322CBBB8, "Wrong size on UOptionsMenuSlider_C");
+static_assert(alignof(UOptionsMenuSlider_C) == 0x000008, "Wrong alignment on UOptionsMenuSlider_C");
+static_assert(sizeof(UOptionsMenuSlider_C) == 0x0002A0, "Wrong size on UOptionsMenuSlider_C");
 static_assert(offsetof(UOptionsMenuSlider_C, UberGraphFrame) == 0x000230, "Member 'UOptionsMenuSlider_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuSlider_C, Button_0) == 0x000238, "Member 'UOptionsMenuSlider_C::Button_0' has a wrong offset!");
 static_assert(offsetof(UOptionsMenuSlider_C, MenuSlider) == 0x000240, "Member 'UOptionsMenuSlider_C::MenuSlider' has a wrong offset!");

@@ -101,7 +101,7 @@ static_assert(sizeof(ExpeditionSquadSlotButton_C_PreConstruct) == 0x000001, "Wro
 static_assert(offsetof(ExpeditionSquadSlotButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.Get Squad Data
-// 0x1182E980 (0x1182E980 - 0x0000)
+// 0x0128 (0x0128 - 0x0000)
 struct ExpeditionSquadSlotButton_C_Get_Squad_Data final
 {
 public:
@@ -114,13 +114,13 @@ public:
 	int32                                         CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x0038(0x11821D80)()
+	struct FHomebaseSquad                         CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad; // 0x0038(0x0088)()
 	bool                                          CallFunc_TryGetHomebaseSquadData_ReturnValue;      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHomebaseSquadSlot                     CallFunc_Array_Get_Item;                           // 0x00C8(0x1182E980)()
+	struct FHomebaseSquadSlot                     CallFunc_Array_Get_Item;                           // 0x00C8(0x0060)()
 };
-static_assert(alignof(ExpeditionSquadSlotButton_C_Get_Squad_Data) == 0x1182E980, "Wrong alignment on ExpeditionSquadSlotButton_C_Get_Squad_Data");
-static_assert(sizeof(ExpeditionSquadSlotButton_C_Get_Squad_Data) == 0x1182E980, "Wrong size on ExpeditionSquadSlotButton_C_Get_Squad_Data");
+static_assert(alignof(ExpeditionSquadSlotButton_C_Get_Squad_Data) == 0x000008, "Wrong alignment on ExpeditionSquadSlotButton_C_Get_Squad_Data");
+static_assert(sizeof(ExpeditionSquadSlotButton_C_Get_Squad_Data) == 0x000128, "Wrong size on ExpeditionSquadSlotButton_C_Get_Squad_Data");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, OutSquadId) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::OutSquadId' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, OutSquadSlotIndex) == 0x000008, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::OutSquadSlotIndex' has a wrong offset!");
 static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, ItemTypes) == 0x000010, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::ItemTypes' has a wrong offset!");

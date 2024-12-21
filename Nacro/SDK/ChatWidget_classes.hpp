@@ -21,20 +21,20 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass ChatWidget.ChatWidget_C
-// 0x0000 (0x322CBBB8 - 0x322CBBB8)
+// 0x0080 (0x0488 - 0x0408)
 class UChatWidget_C final : public UFortActivatablePanel
 {
 public:
 	uint8                                         Pad_408[0x8];                                      // 0x0408(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x11821D80)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)
 	class UIconTextButton_C*                      ConsoleChatShortcut;                               // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        CursorModeSwitcher;                                // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortChatWidget*                        FortChat;                                          // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HudContentHBox;                                    // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UKeybindWidget_C*                       KeybindWidget;                                     // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CloseUserListAction;                               // 0x0440(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    OpenUserListAction;                                // 0x0450(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CurrentUserListAction;                             // 0x0460(0x1182EB00)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CloseUserListAction;                               // 0x0440(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    OpenUserListAction;                                // 0x0450(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CurrentUserListAction;                             // 0x0460(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bEnteringChat;                                     // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_471[0x7];                                      // 0x0471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   AboutToEnterChat;                                  // 0x0478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -67,8 +67,8 @@ public:
 		return GetDefaultObjImpl<UChatWidget_C>();
 	}
 };
-static_assert(alignof(UChatWidget_C) == 0x322CBBB8, "Wrong alignment on UChatWidget_C");
-static_assert(sizeof(UChatWidget_C) == 0x322CBBB8, "Wrong size on UChatWidget_C");
+static_assert(alignof(UChatWidget_C) == 0x000008, "Wrong alignment on UChatWidget_C");
+static_assert(sizeof(UChatWidget_C) == 0x000488, "Wrong size on UChatWidget_C");
 static_assert(offsetof(UChatWidget_C, UberGraphFrame) == 0x000410, "Member 'UChatWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UChatWidget_C, ConsoleChatShortcut) == 0x000418, "Member 'UChatWidget_C::ConsoleChatShortcut' has a wrong offset!");
 static_assert(offsetof(UChatWidget_C, CursorModeSwitcher) == 0x000420, "Member 'UChatWidget_C::CursorModeSwitcher' has a wrong offset!");
