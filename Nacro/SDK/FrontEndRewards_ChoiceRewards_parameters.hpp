@@ -18,20 +18,6 @@
 namespace SDK::Params
 {
 
-// Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnRewardSelected__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              Item;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature) == 0x000008, "Wrong alignment on FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature");
-static_assert(sizeof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature) == 0x000010, "Wrong size on FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature");
-static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature, Index_0) == 0x000000, "Member 'FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature::Index_0' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature, Item) == 0x000008, "Member 'FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature::Item' has a wrong offset!");
-
 // Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.ExecuteUbergraph_FrontEndRewards_ChoiceRewards
 // 0x0068 (0x0068 - 0x0000)
 struct FrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards final

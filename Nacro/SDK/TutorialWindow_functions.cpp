@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function TutorialWindow.TutorialWindow_C.OnRequestRetry__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UTutorialWindow_C::OnRequestRetry__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialWindow_C", "OnRequestRetry__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function TutorialWindow.TutorialWindow_C.ExecuteUbergraph_TutorialWindow
 // ()
 // Parameters:

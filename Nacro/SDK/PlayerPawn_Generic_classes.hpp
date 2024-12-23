@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "FortniteGame_structs.hpp"
+#include "PlayerPawn_Generic_Parent_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PlayerPawn_Generic_Parent_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
@@ -30,7 +30,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Generic_C;               // 0x1740(0x0008)(Transient, DuplicateTransient)
 	class UParticleSystemComponent*               Effect_Player_Run_Land;                            // 0x1748(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Effect_Player_Walk_Land;                           // 0x1750(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PlayerPush_WindVector;                             // 0x1758(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               playerPush_WindVector;                             // 0x1758(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Effect_Player_Stand_Water;                         // 0x1760(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Effect_Player_Walk_Water;                          // 0x1768(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               Effect_Player_Run_Water;                           // 0x1770(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -106,7 +106,7 @@ public:
 	float                                         Tick_Delta_Seconds;                                // 0x1938(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Shield_Damage_Wave_Animation;                      // 0x193C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Overall_Shield_Damage_Wave_Animation_Length;       // 0x1940(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Size;                                              // 0x1944(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         size;                                              // 0x1944(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Dying;                                             // 0x1948(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CanRippleAgain;                                    // 0x1949(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_194A[0x6];                                     // 0x194A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -170,7 +170,7 @@ public:
 	bool                                          UseAnimTrailsNotifies;                             // 0x1AF0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1AF1[0x3];                                     // 0x1AF1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Time_when_you_ll_be_able_to_splash_again;          // 0x1AF4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class A_WaterMeshBlueprintMaster_C*           CurrentWaterMeshActor;                             // 0x1AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AmWaterMeshBlueprintMaster_C*           CurrentWaterMeshActor;                             // 0x1AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             WaterTraceHitLocation;                             // 0x1B00(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                StableVelocityVector;                              // 0x1B88(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B94[0x4];                                     // 0x1B94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -287,7 +287,7 @@ static_assert(sizeof(APlayerPawn_Generic_C) == 0x001C30, "Wrong size on APlayerP
 static_assert(offsetof(APlayerPawn_Generic_C, UberGraphFrame_PlayerPawn_Generic_C) == 0x001740, "Member 'APlayerPawn_Generic_C::UberGraphFrame_PlayerPawn_Generic_C' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Run_Land) == 0x001748, "Member 'APlayerPawn_Generic_C::Effect_Player_Run_Land' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Walk_Land) == 0x001750, "Member 'APlayerPawn_Generic_C::Effect_Player_Walk_Land' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, PlayerPush_WindVector) == 0x001758, "Member 'APlayerPawn_Generic_C::PlayerPush_WindVector' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Generic_C, playerPush_WindVector) == 0x001758, "Member 'APlayerPawn_Generic_C::playerPush_WindVector' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Stand_Water) == 0x001760, "Member 'APlayerPawn_Generic_C::Effect_Player_Stand_Water' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Walk_Water) == 0x001768, "Member 'APlayerPawn_Generic_C::Effect_Player_Walk_Water' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Run_Water) == 0x001770, "Member 'APlayerPawn_Generic_C::Effect_Player_Run_Water' has a wrong offset!");
@@ -354,7 +354,7 @@ static_assert(offsetof(APlayerPawn_Generic_C, WaterCounter) == 0x001934, "Member
 static_assert(offsetof(APlayerPawn_Generic_C, Tick_Delta_Seconds) == 0x001938, "Member 'APlayerPawn_Generic_C::Tick_Delta_Seconds' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Shield_Damage_Wave_Animation) == 0x00193C, "Member 'APlayerPawn_Generic_C::Shield_Damage_Wave_Animation' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Overall_Shield_Damage_Wave_Animation_Length) == 0x001940, "Member 'APlayerPawn_Generic_C::Overall_Shield_Damage_Wave_Animation_Length' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Size) == 0x001944, "Member 'APlayerPawn_Generic_C::Size' has a wrong offset!");
+static_assert(offsetof(APlayerPawn_Generic_C, size) == 0x001944, "Member 'APlayerPawn_Generic_C::size' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Dying) == 0x001948, "Member 'APlayerPawn_Generic_C::Dying' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, CanRippleAgain) == 0x001949, "Member 'APlayerPawn_Generic_C::CanRippleAgain' has a wrong offset!");
 static_assert(offsetof(APlayerPawn_Generic_C, Sound_Shield_Impact) == 0x001950, "Member 'APlayerPawn_Generic_C::Sound_Shield_Impact' has a wrong offset!");

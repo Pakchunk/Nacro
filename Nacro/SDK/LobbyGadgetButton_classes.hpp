@@ -33,8 +33,6 @@ public:
 	bool                                          bLocked;                                           // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnButtonClicked__DelegateSignature(class ULobbyGadgetButton_C* GadgetButton);
-	void OnButtonHovered__DelegateSignature(class ULobbyGadgetButton_C* GadgetButton);
 	void ExecuteUbergraph_LobbyGadgetButton(int32 EntryPoint);
 	void BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature(class UCommonButton* Button_0);
 	void BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature(class UCommonButton* Button_0);

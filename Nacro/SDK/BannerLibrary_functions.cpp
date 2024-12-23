@@ -25,9 +25,9 @@ namespace SDK
 // struct FLinearColor                     BG_PrimaryColor                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     BG_SecondaryColor                                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture*                         ShapeIcon                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Target, class UTexture* BannerIcon, const struct FLinearColor& BG_PrimaryColor, const struct FLinearColor& BG_SecondaryColor, class UTexture* ShapeIcon, class UObject* __WorldContext)
+void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Target, class UTexture* BannerIcon, const struct FLinearColor& BG_PrimaryColor, const struct FLinearColor& BG_SecondaryColor, class UTexture* ShapeIcon, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -41,7 +41,7 @@ void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Tar
 	Parms.BG_PrimaryColor = std::move(BG_PrimaryColor);
 	Parms.BG_SecondaryColor = std::move(BG_SecondaryColor);
 	Parms.ShapeIcon = ShapeIcon;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
@@ -53,9 +53,9 @@ void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Tar
 // class UMaterialInstanceDynamic*         Material                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     PrimaryBGColor                                         (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     SecondaryBGColor                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynamic* Material, const struct FLinearColor& PrimaryBGColor, const struct FLinearColor& SecondaryBGColor, class UObject* __WorldContext)
+void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynamic* Material, const struct FLinearColor& PrimaryBGColor, const struct FLinearColor& SecondaryBGColor, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67,7 +67,7 @@ void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynami
 	Parms.Material = Material;
 	Parms.PrimaryBGColor = std::move(PrimaryBGColor);
 	Parms.SecondaryBGColor = std::move(SecondaryBGColor);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
@@ -78,9 +78,9 @@ void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynami
 // Parameters:
 // class UMaterialInstanceDynamic*         Material                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture*                         Icon                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBannerLibrary_C::UpdateBannerIconOnMaterial(class UMaterialInstanceDynamic* Material, class UTexture* Icon, class UObject* __WorldContext)
+void UBannerLibrary_C::UpdateBannerIconOnMaterial(class UMaterialInstanceDynamic* Material, class UTexture* Icon, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -91,7 +91,7 @@ void UBannerLibrary_C::UpdateBannerIconOnMaterial(class UMaterialInstanceDynamic
 
 	Parms.Material = Material;
 	Parms.Icon = Icon;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
@@ -103,9 +103,9 @@ void UBannerLibrary_C::UpdateBannerIconOnMaterial(class UMaterialInstanceDynamic
 // class UMaterialInstanceDynamic*         Material_Instance_Dynamic                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    UseIconMask                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortPlayerState*                 InstigatorPlayerState                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBannerLibrary_C::UpdateBannerMeshMaterial_New(class UMaterialInstanceDynamic* Material_Instance_Dynamic, bool UseIconMask, class AFortPlayerState* InstigatorPlayerState, class UObject* __WorldContext)
+void UBannerLibrary_C::UpdateBannerMeshMaterial_New(class UMaterialInstanceDynamic* Material_Instance_Dynamic, bool UseIconMask, class AFortPlayerState* InstigatorPlayerState, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -117,7 +117,7 @@ void UBannerLibrary_C::UpdateBannerMeshMaterial_New(class UMaterialInstanceDynam
 	Parms.Material_Instance_Dynamic = Material_Instance_Dynamic;
 	Parms.UseIconMask = UseIconMask;
 	Parms.InstigatorPlayerState = InstigatorPlayerState;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
@@ -129,9 +129,9 @@ void UBannerLibrary_C::UpdateBannerMeshMaterial_New(class UMaterialInstanceDynam
 // class UImage*                           Banner_material                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortHomeBaseInfo                Image_info                                             (Parm)
 // bool                                    Is_Icon                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBannerLibrary_C::UpdateMaterial_New(class UImage* Banner_material, const struct FFortHomeBaseInfo& Image_info, bool Is_Icon, class UObject* __WorldContext)
+void UBannerLibrary_C::UpdateMaterial_New(class UImage* Banner_material, const struct FFortHomeBaseInfo& Image_info, bool Is_Icon, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -143,7 +143,7 @@ void UBannerLibrary_C::UpdateMaterial_New(class UImage* Banner_material, const s
 	Parms.Banner_material = Banner_material;
 	Parms.Image_info = std::move(Image_info);
 	Parms.Is_Icon = Is_Icon;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
@@ -154,12 +154,12 @@ void UBannerLibrary_C::UpdateMaterial_New(class UImage* Banner_material, const s
 // Parameters:
 // class FString                           BannerIconId                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
 // class FString                           BannerColorId                                          (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture2D*                       Icon                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     PrimaryColor                                           (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Secondary_Color                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBannerLibrary_C::Get_Icon_Texture_and_Colors(const class FString& BannerIconId, const class FString& BannerColorId, class UObject* __WorldContext, class UTexture2D** Icon, struct FLinearColor* PrimaryColor, struct FLinearColor* Secondary_Color)
+void UBannerLibrary_C::Get_Icon_Texture_and_Colors(const class FString& BannerIconId, const class FString& BannerColorId, class UObject* m_WorldContext, class UTexture2D** Icon, struct FLinearColor* PrimaryColor, struct FLinearColor* Secondary_Color)
 {
 	static class UFunction* Func = nullptr;
 
@@ -170,7 +170,7 @@ void UBannerLibrary_C::Get_Icon_Texture_and_Colors(const class FString& BannerIc
 
 	Parms.BannerIconId = std::move(BannerIconId);
 	Parms.BannerColorId = std::move(BannerColorId);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -191,9 +191,9 @@ void UBannerLibrary_C::Get_Icon_Texture_and_Colors(const class FString& BannerIc
 // class UMaterialInstanceDynamic*         Material_Instance_Dynamic                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    UseIconMask                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FUniqueNetIdRepl                 UniqueId                                               (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBannerLibrary_C::UpdateBannerMeshMaterialForUniqueId_New(class UMaterialInstanceDynamic* Material_Instance_Dynamic, bool UseIconMask, const struct FUniqueNetIdRepl& UniqueId, class UObject* __WorldContext)
+void UBannerLibrary_C::UpdateBannerMeshMaterialForUniqueId_New(class UMaterialInstanceDynamic* Material_Instance_Dynamic, bool UseIconMask, const struct FUniqueNetIdRepl& UniqueId, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -205,7 +205,7 @@ void UBannerLibrary_C::UpdateBannerMeshMaterialForUniqueId_New(class UMaterialIn
 	Parms.Material_Instance_Dynamic = Material_Instance_Dynamic;
 	Parms.UseIconMask = UseIconMask;
 	Parms.UniqueId = std::move(UniqueId);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }

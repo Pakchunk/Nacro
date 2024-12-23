@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Results_CommanderXP_Data_structs.hpp"
-#include "REsults_CommanderXP_MaterialData_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "REsults_CommanderXP_MaterialData_structs.hpp"
 #include "FortniteGame_structs.hpp"
 
 
@@ -41,8 +41,8 @@ public:
 	class UFortUIScoreReport*                     ScoreReport;                                       // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   LeveledUp;                                         // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   IntroFinished;                                     // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	float                                         CountTime;                                         // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CountTimeStart;                                    // 0x02C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         countTime;                                         // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         countTimeStart;                                    // 0x02C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSkippedToEnd;                                     // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bSkippingToEnd;                                    // 0x02C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2CA[0x6];                                      // 0x02CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -61,10 +61,6 @@ public:
 	TArray<struct FResults_CommanderXP_MaterialData> ProgressBarInfo;                                   // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
-	void CountFinished__DelegateSignature();
-	void LeveledUp__DelegateSignature(int32 NewLevel);
-	void IntroFinished__DelegateSignature();
-	void CountIncrement__DelegateSignature();
 	void ExecuteUbergraph_Results_CommanderXPBar(int32 EntryPoint);
 	void Construct();
 	void PreConstruct(bool IsDesignTime);
@@ -77,8 +73,8 @@ public:
 	void SetSkippingToEnd();
 	void SkipToFinalState();
 	void PlayAnimationCommon(class UWidgetAnimation* Animation);
-	void ClearXpBar();
-	void UpdateXpType();
+	void clearXpBar();
+	void updateXpType();
 	void RandomizeDesignView();
 	void UpdateProgressBarPercent(class FName ParameterName, float ProgressBarPercent);
 	void GetHoveredProgressBarSection(class FName* XpSectionName);
@@ -112,8 +108,8 @@ static_assert(offsetof(UResults_CommanderXPBar_C, MAT_progressBarNew) == 0x00029
 static_assert(offsetof(UResults_CommanderXPBar_C, ScoreReport) == 0x000298, "Member 'UResults_CommanderXPBar_C::ScoreReport' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXPBar_C, LeveledUp) == 0x0002A0, "Member 'UResults_CommanderXPBar_C::LeveledUp' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXPBar_C, IntroFinished) == 0x0002B0, "Member 'UResults_CommanderXPBar_C::IntroFinished' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CountTime) == 0x0002C0, "Member 'UResults_CommanderXPBar_C::CountTime' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXPBar_C, CountTimeStart) == 0x0002C4, "Member 'UResults_CommanderXPBar_C::CountTimeStart' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, countTime) == 0x0002C0, "Member 'UResults_CommanderXPBar_C::countTime' has a wrong offset!");
+static_assert(offsetof(UResults_CommanderXPBar_C, countTimeStart) == 0x0002C4, "Member 'UResults_CommanderXPBar_C::countTimeStart' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXPBar_C, bSkippedToEnd) == 0x0002C8, "Member 'UResults_CommanderXPBar_C::bSkippedToEnd' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXPBar_C, bSkippingToEnd) == 0x0002C9, "Member 'UResults_CommanderXPBar_C::bSkippingToEnd' has a wrong offset!");
 static_assert(offsetof(UResults_CommanderXPBar_C, GainXP) == 0x0002D0, "Member 'UResults_CommanderXPBar_C::GainXP' has a wrong offset!");

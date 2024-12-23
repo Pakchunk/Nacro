@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function ScoreMessageNumber.ScoreMessageNumber_C.OnScoreValueSet__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EStatCategory                           ChangedScoreCategory                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UScoreMessageNumber_C::OnScoreValueSet__DelegateSignature(EStatCategory ChangedScoreCategory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ScoreMessageNumber_C", "OnScoreValueSet__DelegateSignature");
-
-	Params::ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature Parms{};
-
-	Parms.ChangedScoreCategory = ChangedScoreCategory;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ScoreMessageNumber.ScoreMessageNumber_C.ExecuteUbergraph_ScoreMessageNumber
 // ()
 // Parameters:

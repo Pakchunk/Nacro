@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function ZoneScoreWidget.ZoneScoreWidget_C.OnEndOfDayRecapEnded__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UZoneScoreWidget_C::OnEndOfDayRecapEnded__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ZoneScoreWidget_C", "OnEndOfDayRecapEnded__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ZoneScoreWidget.ZoneScoreWidget_C.ExecuteUbergraph_ZoneScoreWidget
 // (HasDefaults)
 // Parameters:

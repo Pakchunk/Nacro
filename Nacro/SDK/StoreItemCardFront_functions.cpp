@@ -94,9 +94,9 @@ void UStoreItemCardFront_C::Construct()
 // Function StoreItemCardFront.StoreItemCardFront_C.Initialize_Card
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FCard                            InCard                                                 (Parm, NoDestructor)
+// struct FCard                            inCard                                                 (Parm, NoDestructor)
 
-void UStoreItemCardFront_C::Initialize_Card(const struct FCard& InCard)
+void UStoreItemCardFront_C::Initialize_Card(const struct FCard& inCard)
 {
 	static class UFunction* Func = nullptr;
 
@@ -105,7 +105,7 @@ void UStoreItemCardFront_C::Initialize_Card(const struct FCard& InCard)
 
 	Params::StoreItemCardFront_C_Initialize_Card Parms{};
 
-	Parms.InCard = std::move(InCard);
+	Parms.inCard = std::move(inCard);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

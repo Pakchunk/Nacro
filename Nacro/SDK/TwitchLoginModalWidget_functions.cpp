@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function TwitchLoginModalWidget.TwitchLoginModalWidget_C.OnCancelButtonClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UTwitchLoginModalWidget_C::OnCancelButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TwitchLoginModalWidget_C", "OnCancelButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function TwitchLoginModalWidget.TwitchLoginModalWidget_C.ExecuteUbergraph_TwitchLoginModalWidget
 // ()
 // Parameters:

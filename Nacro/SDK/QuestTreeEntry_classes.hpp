@@ -41,7 +41,7 @@ public:
 	class UImage*                                 QuestTreeIcon;                                     // 0x0918(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        WidgetSwitcherProgress;                            // 0x0920(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortQuestItem*                         CurrentQuest;                                      // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsPinned_;                                         // 0x0930(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          isPinned_;                                         // 0x0930(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_931[0x7];                                      // 0x0931(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortQuestCategory*                     CurrentQuestCategory;                              // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           TwitchIconColor;                                   // 0x0940(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -98,7 +98,7 @@ static_assert(offsetof(UQuestTreeEntry_C, QuestIconOverlay) == 0x000910, "Member
 static_assert(offsetof(UQuestTreeEntry_C, QuestTreeIcon) == 0x000918, "Member 'UQuestTreeEntry_C::QuestTreeIcon' has a wrong offset!");
 static_assert(offsetof(UQuestTreeEntry_C, WidgetSwitcherProgress) == 0x000920, "Member 'UQuestTreeEntry_C::WidgetSwitcherProgress' has a wrong offset!");
 static_assert(offsetof(UQuestTreeEntry_C, CurrentQuest) == 0x000928, "Member 'UQuestTreeEntry_C::CurrentQuest' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, IsPinned_) == 0x000930, "Member 'UQuestTreeEntry_C::IsPinned_' has a wrong offset!");
+static_assert(offsetof(UQuestTreeEntry_C, isPinned_) == 0x000930, "Member 'UQuestTreeEntry_C::isPinned_' has a wrong offset!");
 static_assert(offsetof(UQuestTreeEntry_C, CurrentQuestCategory) == 0x000938, "Member 'UQuestTreeEntry_C::CurrentQuestCategory' has a wrong offset!");
 static_assert(offsetof(UQuestTreeEntry_C, TwitchIconColor) == 0x000940, "Member 'UQuestTreeEntry_C::TwitchIconColor' has a wrong offset!");
 static_assert(offsetof(UQuestTreeEntry_C, DefaultIconColor) == 0x000950, "Member 'UQuestTreeEntry_C::DefaultIconColor' has a wrong offset!");

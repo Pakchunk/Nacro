@@ -17,54 +17,6 @@
 namespace SDK
 {
 
-// Function MtxOffer_2.MtxOffer_2_C.BuyItem__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           OfferId                                                (Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UMtxOffer_2_C::BuyItem__DelegateSignature(const class FString& OfferId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MtxOffer_2_C", "BuyItem__DelegateSignature");
-
-	Params::MtxOffer_2_C_BuyItem__DelegateSignature Parms{};
-
-	Parms.OfferId = std::move(OfferId);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MtxOffer_2.MtxOffer_2_C.MtxOfferMouseEnter_EventDispatcher__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UMtxOffer_2_C::MtxOfferMouseEnter_EventDispatcher__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MtxOffer_2_C", "MtxOfferMouseEnter_EventDispatcher__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MtxOffer_2.MtxOffer_2_C.MtxOfferMouseLeave_EventDispatcher__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UMtxOffer_2_C::MtxOfferMouseLeave_EventDispatcher__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MtxOffer_2_C", "MtxOfferMouseLeave_EventDispatcher__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function MtxOffer_2.MtxOffer_2_C.ExecuteUbergraph_MtxOffer_2
 // (HasDefaults)
 // Parameters:

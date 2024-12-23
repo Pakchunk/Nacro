@@ -244,7 +244,7 @@ enum class ELifetimeCondition : uint8
 struct FVector
 {
 public:
-	using UnderlayingType = float;                                                                   // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	using UnderlayingType = float;
 
 	float                                         X;                                                 // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Y;                                                 // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -255,14 +255,6 @@ public:
 	{
 		*this /= Magnitude();
 		return *this;
-	}
-	float SizeSquared() const
-	{
-		return X*X + Y*Y + Z*Z;
-	}
-	FORCEINLINE float operator|(const FVector& V) const
-	{
-		return X*V.X + Y*V.Y + Z*V.Z;
 	}
 	FVector& operator*=(const FVector& Other)
 	{
@@ -370,13 +362,13 @@ static_assert(offsetof(FVector, Z) == 0x000008, "Member 'FVector::Z' has a wrong
 struct FTwoVectors final
 {
 public:
-	struct FVector                                V1;                                                // 0x0000(0x000C)(Edit, BlueprintVisible, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                V2;                                                // 0x000C(0x000C)(Edit, BlueprintVisible, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                v1;                                                // 0x0000(0x000C)(Edit, BlueprintVisible, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                v2;                                                // 0x000C(0x000C)(Edit, BlueprintVisible, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FTwoVectors) == 0x000004, "Wrong alignment on FTwoVectors");
 static_assert(sizeof(FTwoVectors) == 0x000018, "Wrong size on FTwoVectors");
-static_assert(offsetof(FTwoVectors, V1) == 0x000000, "Member 'FTwoVectors::V1' has a wrong offset!");
-static_assert(offsetof(FTwoVectors, V2) == 0x00000C, "Member 'FTwoVectors::V2' has a wrong offset!");
+static_assert(offsetof(FTwoVectors, v1) == 0x000000, "Member 'FTwoVectors::v1' has a wrong offset!");
+static_assert(offsetof(FTwoVectors, v2) == 0x00000C, "Member 'FTwoVectors::v2' has a wrong offset!");
 
 // ScriptStruct CoreUObject.Vector4
 // 0x0010 (0x0010 - 0x0000)
@@ -498,23 +490,13 @@ static_assert(offsetof(FInterpCurveQuat, LoopKeyOffset) == 0x000014, "Member 'FI
 
 // ScriptStruct CoreUObject.Guid
 // 0x0010 (0x0010 - 0x0000)
-struct FGuid
+struct FGuid final
 {
 public:
 	int32                                         A;                                                 // 0x0000(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         B;                                                 // 0x0004(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         C;                                                 // 0x0008(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         D;                                                 // 0x000C(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	bool operator==(const FGuid& Other) const
-	{
-		return A == Other.A && B == Other.B && C == Other.C && D == Other.D;
-	}
-
-	bool operator!=(const FGuid& Other) const
-	{
-		return !(*this == Other);
-	}
 };
 static_assert(alignof(FGuid) == 0x000004, "Wrong alignment on FGuid");
 static_assert(sizeof(FGuid) == 0x000010, "Wrong size on FGuid");
@@ -678,81 +660,10 @@ static_assert(sizeof(FStringClassReference) == 0x000010, "Wrong size on FStringC
 // 0x000C (0x000C - 0x0000)
 struct FRotator final
 {
-private:
-    #define INV_PI			(0.31830988618f)
-    #define HALF_PI			(1.57079632679f)
-    #define PI 				(3.1415926535897932f)
-	
-	static FORCEINLINE void SinCos(float* ScalarSin, float* ScalarCos, float  Value)
-	{
-		// Map Value to y in [-pi,pi], x = 2*pi*quotient + remainder.
-		float quotient = (INV_PI * 0.5f) * Value;
-		if (Value >= 0.0f)
-		{
-			quotient = (float)((int)(quotient + 0.5f));
-		}
-		else
-		{
-			quotient = (float)((int)(quotient - 0.5f));
-		}
-		float y = Value - (2.0f * PI) * quotient;
-
-		// Map y to [-pi/2,pi/2] with sin(y) = sin(Value).
-		float sign;
-		if (y > HALF_PI)
-		{
-			y = PI - y;
-			sign = -1.0f;
-		}
-		else if (y < -HALF_PI)
-		{
-			y = -PI - y;
-			sign = -1.0f;
-		}
-		else
-		{
-			sign = +1.0f;
-		}
-
-		float y2 = y * y;
-
-		// 11-degree minimax approximation
-		*ScalarSin = (((((-2.3889859e-08f * y2 + 2.7525562e-06f) * y2 - 0.00019840874f) * y2 + 0.0083333310f) * y2 - 0.16666667f) * y2 + 1.0f) * y;
-
-		// 10-degree minimax approximation
-		float p = ((((-2.6051615e-07f * y2 + 2.4760495e-05f) * y2 - 0.0013888378f) * y2 + 0.041666638f) * y2 - 0.5f) * y2 + 1.0f;
-		*ScalarCos = sign * p;
-	}
 public:
 	float                                         Pitch;                                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Yaw;                                               // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Roll;                                              // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-	FVector Vector() const
-	{
-		// Remove winding and clamp to [-180, 180]
-		float CP, SP, CY, SY;
-		SinCos(&SP, &CP, Pitch * (PI / 180.0f));
-		SinCos(&SY, &CY, Yaw * (PI / 180.0f));
-		FVector V = FVector(CP * CY, CP * SY, SP);
-
-		return V;
-	}
-	
-	FQuat Quaternion()
-	{
-		float DEG_TO_RAD = 0.0174533;
-		float SP = sinf(Pitch * DEG_TO_RAD / 2), CP = cosf(Pitch * DEG_TO_RAD / 2);
-		float SY = sinf(Yaw * DEG_TO_RAD / 2), CY = cosf(Yaw * DEG_TO_RAD / 2);
-		float SR = sinf(Roll * DEG_TO_RAD / 2), CR = cosf(Roll * DEG_TO_RAD / 2);
-
-		return FQuat(
-			CR * SP * SY - SR * CP * CY,
-			-CR * SP * CY - SR * CP * SY,
-			CR * CP * SY - SR * SP * CY,
-			CR * CP * CY + SR * SP * SY
-		);
-	}
 };
 static_assert(alignof(FRotator) == 0x000004, "Wrong alignment on FRotator");
 static_assert(sizeof(FRotator) == 0x00000C, "Wrong size on FRotator");

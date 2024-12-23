@@ -80,12 +80,12 @@ static_assert(offsetof(StoreItemCardFront_C_OnFortStoreStateChanged, NewStoreSta
 struct StoreItemCardFront_C_Initialize_Card final
 {
 public:
-	struct FCard                                  InCard;                                            // 0x0000(0x0018)(Parm, NoDestructor)
+	struct FCard                                  inCard;                                            // 0x0000(0x0018)(Parm, NoDestructor)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(StoreItemCardFront_C_Initialize_Card) == 0x000008, "Wrong alignment on StoreItemCardFront_C_Initialize_Card");
 static_assert(sizeof(StoreItemCardFront_C_Initialize_Card) == 0x000020, "Wrong size on StoreItemCardFront_C_Initialize_Card");
-static_assert(offsetof(StoreItemCardFront_C_Initialize_Card, InCard) == 0x000000, "Member 'StoreItemCardFront_C_Initialize_Card::InCard' has a wrong offset!");
+static_assert(offsetof(StoreItemCardFront_C_Initialize_Card, inCard) == 0x000000, "Member 'StoreItemCardFront_C_Initialize_Card::inCard' has a wrong offset!");
 static_assert(offsetof(StoreItemCardFront_C_Initialize_Card, CallFunc_GetRarity_ReturnValue) == 0x000018, "Member 'StoreItemCardFront_C_Initialize_Card::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 
 // Function StoreItemCardFront.StoreItemCardFront_C.Draw_Card

@@ -30,7 +30,7 @@ public:
 	class UOutpostScreenCanEditRow_C*             OutpostScreenCanEditRow_1;                         // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOutpostScreenCanEditRow_C*             OutpostScreenCanEditRow_2;                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOutpostScreenCanEditRow_C*             OutpostScreenCanEditRow_3;                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           PlayerlistBox;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           playerlistBox;                                     // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AFortPlayerStateOutpost*                OutpostOwner;                                      // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerControllerOutpost*           FortPlayerControllerOutpostRef;                    // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -65,7 +65,7 @@ static_assert(offsetof(UOutpostScreenCanEditPanel_C, OutpostScreenCanEditRow_0) 
 static_assert(offsetof(UOutpostScreenCanEditPanel_C, OutpostScreenCanEditRow_1) == 0x000260, "Member 'UOutpostScreenCanEditPanel_C::OutpostScreenCanEditRow_1' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenCanEditPanel_C, OutpostScreenCanEditRow_2) == 0x000268, "Member 'UOutpostScreenCanEditPanel_C::OutpostScreenCanEditRow_2' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenCanEditPanel_C, OutpostScreenCanEditRow_3) == 0x000270, "Member 'UOutpostScreenCanEditPanel_C::OutpostScreenCanEditRow_3' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenCanEditPanel_C, PlayerlistBox) == 0x000278, "Member 'UOutpostScreenCanEditPanel_C::PlayerlistBox' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenCanEditPanel_C, playerlistBox) == 0x000278, "Member 'UOutpostScreenCanEditPanel_C::playerlistBox' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenCanEditPanel_C, OutpostOwner) == 0x000280, "Member 'UOutpostScreenCanEditPanel_C::OutpostOwner' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenCanEditPanel_C, FortPlayerControllerOutpostRef) == 0x000288, "Member 'UOutpostScreenCanEditPanel_C::FortPlayerControllerOutpostRef' has a wrong offset!");
 

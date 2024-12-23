@@ -25,9 +25,9 @@ class AVaultWeaponPlacementHelper_C final : public AActor
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
 	class UStaticMeshComponent*                   Cube;                                              // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSMinusNoPlayerMinusSparkle;                       // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSMinusNoPlayerMinusSwirl02;                       // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSMinusNoPlayerMinusSwirl01;                       // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PS_NoPlayer_Sparkle;                               // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PS_NoPlayer_Swirl02;                               // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PS_NoPlayer_Swirl01;                               // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CharacterPlacement;                                // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        Root;                                              // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	int32                                         PlayerID;                                          // 0x03C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,7 +38,6 @@ public:
 	UMulticastDelegateProperty_                   NewEventDispatcher_0;                              // 0x03D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void NewEventDispatcher_0__DelegateSignature();
 	void ExecuteUbergraph_VaultWeaponPlacementHelper(int32 EntryPoint);
 	void ItemRez();
 	void ReceiveBeginPlay();
@@ -69,9 +68,9 @@ static_assert(alignof(AVaultWeaponPlacementHelper_C) == 0x000008, "Wrong alignme
 static_assert(sizeof(AVaultWeaponPlacementHelper_C) == 0x0003E8, "Wrong size on AVaultWeaponPlacementHelper_C");
 static_assert(offsetof(AVaultWeaponPlacementHelper_C, UberGraphFrame) == 0x000388, "Member 'AVaultWeaponPlacementHelper_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(AVaultWeaponPlacementHelper_C, Cube) == 0x000390, "Member 'AVaultWeaponPlacementHelper_C::Cube' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PSMinusNoPlayerMinusSparkle) == 0x000398, "Member 'AVaultWeaponPlacementHelper_C::PSMinusNoPlayerMinusSparkle' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PSMinusNoPlayerMinusSwirl02) == 0x0003A0, "Member 'AVaultWeaponPlacementHelper_C::PSMinusNoPlayerMinusSwirl02' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PSMinusNoPlayerMinusSwirl01) == 0x0003A8, "Member 'AVaultWeaponPlacementHelper_C::PSMinusNoPlayerMinusSwirl01' has a wrong offset!");
+static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Sparkle) == 0x000398, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Sparkle' has a wrong offset!");
+static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Swirl02) == 0x0003A0, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Swirl02' has a wrong offset!");
+static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Swirl01) == 0x0003A8, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Swirl01' has a wrong offset!");
 static_assert(offsetof(AVaultWeaponPlacementHelper_C, CharacterPlacement) == 0x0003B0, "Member 'AVaultWeaponPlacementHelper_C::CharacterPlacement' has a wrong offset!");
 static_assert(offsetof(AVaultWeaponPlacementHelper_C, Root) == 0x0003B8, "Member 'AVaultWeaponPlacementHelper_C::Root' has a wrong offset!");
 static_assert(offsetof(AVaultWeaponPlacementHelper_C, PlayerID) == 0x0003C0, "Member 'AVaultWeaponPlacementHelper_C::PlayerID' has a wrong offset!");

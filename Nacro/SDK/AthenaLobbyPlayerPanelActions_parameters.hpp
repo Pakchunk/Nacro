@@ -245,7 +245,7 @@ static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsLocalPlayer, CallFunc_A
 struct AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost final
 {
 public:
-	bool                                          IsLocalPlayersOutpost;                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          isLocalPlayersOutpost;                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortMissionDetails                    CallFunc_GetActiveTileMissionDetails_MissionDetails; // 0x0010(0x0160)()
@@ -258,7 +258,7 @@ public:
 };
 static_assert(alignof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost");
 static_assert(sizeof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost) == 0x000188, "Wrong size on AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost");
-static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost, IsLocalPlayersOutpost) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost::IsLocalPlayersOutpost' has a wrong offset!");
+static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost, isLocalPlayersOutpost) == 0x000000, "Member 'AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost::isLocalPlayersOutpost' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost, CallFunc_GetActiveTileMissionDetails_MissionDetails) == 0x000010, "Member 'AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost::CallFunc_GetActiveTileMissionDetails_MissionDetails' has a wrong offset!");
 static_assert(offsetof(AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost, CallFunc_GetActiveTileMissionDetails_ReturnValue) == 0x000170, "Member 'AthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost::CallFunc_GetActiveTileMissionDetails_ReturnValue' has a wrong offset!");

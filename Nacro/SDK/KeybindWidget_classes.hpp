@@ -25,8 +25,8 @@ class UKeybindWidget_C final : public UFortKeybindWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 _Image__Keybind;                                   // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 _Image__Shadow;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Keybind;                                   // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Shadow;                                    // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderFrame;                                       // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               HoldOverlay;                                       // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               KeyTextOverlay;                                    // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -65,8 +65,8 @@ public:
 static_assert(alignof(UKeybindWidget_C) == 0x000008, "Wrong alignment on UKeybindWidget_C");
 static_assert(sizeof(UKeybindWidget_C) == 0x0008C0, "Wrong size on UKeybindWidget_C");
 static_assert(offsetof(UKeybindWidget_C, UberGraphFrame) == 0x000290, "Member 'UKeybindWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, _Image__Keybind) == 0x000298, "Member 'UKeybindWidget_C::_Image__Keybind' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, _Image__Shadow) == 0x0002A0, "Member 'UKeybindWidget_C::_Image__Shadow' has a wrong offset!");
+static_assert(offsetof(UKeybindWidget_C, mImage__Keybind) == 0x000298, "Member 'UKeybindWidget_C::mImage__Keybind' has a wrong offset!");
+static_assert(offsetof(UKeybindWidget_C, mImage__Shadow) == 0x0002A0, "Member 'UKeybindWidget_C::mImage__Shadow' has a wrong offset!");
 static_assert(offsetof(UKeybindWidget_C, BorderFrame) == 0x0002A8, "Member 'UKeybindWidget_C::BorderFrame' has a wrong offset!");
 static_assert(offsetof(UKeybindWidget_C, HoldOverlay) == 0x0002B0, "Member 'UKeybindWidget_C::HoldOverlay' has a wrong offset!");
 static_assert(offsetof(UKeybindWidget_C, KeyTextOverlay) == 0x0002B8, "Member 'UKeybindWidget_C::KeyTextOverlay' has a wrong offset!");

@@ -24,10 +24,10 @@ namespace SDK
 // class FText                             Body_Text                                              (Parm)
 // class FText                             Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Icon_Brush                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Player, const class FText& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* __WorldContext, class UUserWidget** Output)
+void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Player, const class FText& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* m_WorldContext, class UUserWidget** Output)
 {
 	static class UFunction* Func = nullptr;
 
@@ -40,7 +40,7 @@ void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Pla
 	Parms.Body_Text = std::move(Body_Text);
 	Parms.Header_Text = std::move(Header_Text);
 	Parms.Icon_Brush = Icon_Brush;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -56,10 +56,10 @@ void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Pla
 // class FText                             Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Icon_Brush                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UUserWidget* Widget, class UObject* __WorldContext, class UUserWidget** Output)
+void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UUserWidget* Widget, class UObject* m_WorldContext, class UUserWidget** Output)
 {
 	static class UFunction* Func = nullptr;
 
@@ -72,7 +72,7 @@ void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Pl
 	Parms.Header_Text = std::move(Header_Text);
 	Parms.Icon_Brush = Icon_Brush;
 	Parms.Widget = Widget;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -87,9 +87,9 @@ void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Pl
 // class UWidget*                          Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Enabled                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                             Tooltip_Text                                           (Parm)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool Enabled, const class FText& Tooltip_Text, class UObject* __WorldContext)
+void UTooltipLibrary_C::Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool Enabled, const class FText& Tooltip_Text, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -101,7 +101,7 @@ void UTooltipLibrary_C::Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool
 	Parms.Widget = Widget;
 	Parms.Enabled = Enabled;
 	Parms.Tooltip_Text = std::move(Tooltip_Text);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
@@ -115,10 +115,10 @@ void UTooltipLibrary_C::Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool
 // class USlateBrushAsset*                 Header_Icon                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   OverrideQuantity                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Item_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, int32 OverrideQuantity, class UObject* __WorldContext, class UWidget** Return_Value)
+void UTooltipLibrary_C::Create_Item_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, int32 OverrideQuantity, class UObject* m_WorldContext, class UWidget** Return_Value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -132,7 +132,7 @@ void UTooltipLibrary_C::Create_Item_Tooltip(class APlayerController* Owning_Play
 	Parms.Header_Icon = Header_Icon;
 	Parms.Item = Item;
 	Parms.OverrideQuantity = OverrideQuantity;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -149,10 +149,10 @@ void UTooltipLibrary_C::Create_Item_Tooltip(class APlayerController* Owning_Play
 // class USlateBrushAsset*                 Header_Icon                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        ComparedItem                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Compare_Item_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, class UFortItem* ComparedItem, class UObject* __WorldContext, class UWidget** Return_Value)
+void UTooltipLibrary_C::Create_Compare_Item_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, class UFortItem* ComparedItem, class UObject* m_WorldContext, class UWidget** Return_Value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -166,7 +166,7 @@ void UTooltipLibrary_C::Create_Compare_Item_Tooltip(class APlayerController* Own
 	Parms.Header_Icon = Header_Icon;
 	Parms.Item = Item;
 	Parms.ComparedItem = ComparedItem;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -182,10 +182,10 @@ void UTooltipLibrary_C::Create_Compare_Item_Tooltip(class APlayerController* Own
 // TArray<class FText>                     Body_Text                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class FText                             Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Icon_Brush                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Basic_Multi_Line_Tooltip(class APlayerController* Owning_Player, TArray<class FText>& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* __WorldContext, class UUserWidget** Output)
+void UTooltipLibrary_C::Create_Basic_Multi_Line_Tooltip(class APlayerController* Owning_Player, TArray<class FText>& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* m_WorldContext, class UUserWidget** Output)
 {
 	static class UFunction* Func = nullptr;
 
@@ -198,7 +198,7 @@ void UTooltipLibrary_C::Create_Basic_Multi_Line_Tooltip(class APlayerController*
 	Parms.Body_Text = std::move(Body_Text);
 	Parms.Header_Text = std::move(Header_Text);
 	Parms.Icon_Brush = Icon_Brush;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -215,10 +215,10 @@ void UTooltipLibrary_C::Create_Basic_Multi_Line_Tooltip(class APlayerController*
 // class APlayerController*                Owning_Player                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHeroCoreStat                    Data                                                   (Parm, HasGetValueTypeHash)
 // float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Core_Stat_Tooltip(class APlayerController* Owning_Player, const struct FHeroCoreStat& Data, float Value, class UObject* __WorldContext, class UUserWidget** Output)
+void UTooltipLibrary_C::Create_Core_Stat_Tooltip(class APlayerController* Owning_Player, const struct FHeroCoreStat& Data, float Value, class UObject* m_WorldContext, class UUserWidget** Output)
 {
 	static class UFunction* Func = nullptr;
 
@@ -230,7 +230,7 @@ void UTooltipLibrary_C::Create_Core_Stat_Tooltip(class APlayerController* Owning
 	Parms.Owning_Player = Owning_Player;
 	Parms.Data = std::move(Data);
 	Parms.Value = Value;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -248,10 +248,10 @@ void UTooltipLibrary_C::Create_Core_Stat_Tooltip(class APlayerController* Owning
 // class FText                             BoostXP                                                (Parm)
 // class FText                             RestXP                                                 (Parm)
 // class FText                             Body                                                   (Parm)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonUserWidget*                Out                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::CreateXPTooltip(class APlayerController* Owner, const class FText& Header, const class FText& CommanderXP, const class FText& BoostXP, const class FText& RestXP, const class FText& Body, class UObject* __WorldContext, class UCommonUserWidget** Out)
+void UTooltipLibrary_C::CreateXPTooltip(class APlayerController* Owner, const class FText& Header, const class FText& CommanderXP, const class FText& BoostXP, const class FText& RestXP, const class FText& Body, class UObject* m_WorldContext, class UCommonUserWidget** Out)
 {
 	static class UFunction* Func = nullptr;
 
@@ -266,7 +266,7 @@ void UTooltipLibrary_C::CreateXPTooltip(class APlayerController* Owner, const cl
 	Parms.BoostXP = std::move(BoostXP);
 	Parms.RestXP = std::move(RestXP);
 	Parms.Body = std::move(Body);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 

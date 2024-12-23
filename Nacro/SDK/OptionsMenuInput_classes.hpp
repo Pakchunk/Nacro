@@ -35,8 +35,6 @@ public:
 	UMulticastDelegateProperty_                   UnbindClicked;                                     // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Input_Clicked__DelegateSignature(int32 Number_in_List_0, bool Is_Primary_Button);
-	void UnbindClicked__DelegateSignature(int32 Number_in_List_0);
 	void ExecuteUbergraph_OptionsMenuInput(int32 EntryPoint);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
@@ -53,7 +51,7 @@ public:
 	void Private_OnExpanderArrowShiftClicked();
 	void OnReleaseToPool();
 	void OnAcquireFromPool();
-	void Center_On_Widget();
+	void Center_on_Widget();
 	void Change_Key(bool Primary_Key, const class FText& Key_To_Sets);
 
 	class UObject* GetData() const;

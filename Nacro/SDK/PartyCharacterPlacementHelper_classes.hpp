@@ -36,9 +36,9 @@ public:
 	class USpotLightComponent*                    RimSpotLight;                                      // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USpotLightComponent*                    TopSpotLight;                                      // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        LightsParent;                                      // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSMinusNoPlayerMinusSparkle;                       // 0x03E0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSMinusNoPlayerMinusSwirl02;                       // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSMinusNoPlayerMinusSwirl01;                       // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PS_NoPlayer_Sparkle;                               // 0x03E0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PS_NoPlayer_Swirl02;                               // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PS_NoPlayer_Swirl01;                               // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SM_Lobby_Character_Pad_Light_Ring;                 // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SM_Lobby_Character_Pad;                            // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   CharacterPlacement;                                // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -65,7 +65,6 @@ public:
 	class AFortPlayerPawn*                        LastAnimatedPlayerPawn;                            // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void NewEventDispatcher_0__DelegateSignature();
 	void ExecuteUbergraph_PartyCharacterPlacementHelper(int32 EntryPoint);
 	void HandleClientEvent_StoreTabSelected(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent);
 	void HandleClientEvent_StoreTabClosed(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent);
@@ -114,9 +113,9 @@ static_assert(offsetof(APartyCharacterPlacementHelper_C, UnderlightBlue01) == 0x
 static_assert(offsetof(APartyCharacterPlacementHelper_C, RimSpotLight) == 0x0003C8, "Member 'APartyCharacterPlacementHelper_C::RimSpotLight' has a wrong offset!");
 static_assert(offsetof(APartyCharacterPlacementHelper_C, TopSpotLight) == 0x0003D0, "Member 'APartyCharacterPlacementHelper_C::TopSpotLight' has a wrong offset!");
 static_assert(offsetof(APartyCharacterPlacementHelper_C, LightsParent) == 0x0003D8, "Member 'APartyCharacterPlacementHelper_C::LightsParent' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PSMinusNoPlayerMinusSparkle) == 0x0003E0, "Member 'APartyCharacterPlacementHelper_C::PSMinusNoPlayerMinusSparkle' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PSMinusNoPlayerMinusSwirl02) == 0x0003E8, "Member 'APartyCharacterPlacementHelper_C::PSMinusNoPlayerMinusSwirl02' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PSMinusNoPlayerMinusSwirl01) == 0x0003F0, "Member 'APartyCharacterPlacementHelper_C::PSMinusNoPlayerMinusSwirl01' has a wrong offset!");
+static_assert(offsetof(APartyCharacterPlacementHelper_C, PS_NoPlayer_Sparkle) == 0x0003E0, "Member 'APartyCharacterPlacementHelper_C::PS_NoPlayer_Sparkle' has a wrong offset!");
+static_assert(offsetof(APartyCharacterPlacementHelper_C, PS_NoPlayer_Swirl02) == 0x0003E8, "Member 'APartyCharacterPlacementHelper_C::PS_NoPlayer_Swirl02' has a wrong offset!");
+static_assert(offsetof(APartyCharacterPlacementHelper_C, PS_NoPlayer_Swirl01) == 0x0003F0, "Member 'APartyCharacterPlacementHelper_C::PS_NoPlayer_Swirl01' has a wrong offset!");
 static_assert(offsetof(APartyCharacterPlacementHelper_C, SM_Lobby_Character_Pad_Light_Ring) == 0x0003F8, "Member 'APartyCharacterPlacementHelper_C::SM_Lobby_Character_Pad_Light_Ring' has a wrong offset!");
 static_assert(offsetof(APartyCharacterPlacementHelper_C, SM_Lobby_Character_Pad) == 0x000400, "Member 'APartyCharacterPlacementHelper_C::SM_Lobby_Character_Pad' has a wrong offset!");
 static_assert(offsetof(APartyCharacterPlacementHelper_C, CharacterPlacement) == 0x000408, "Member 'APartyCharacterPlacementHelper_C::CharacterPlacement' has a wrong offset!");

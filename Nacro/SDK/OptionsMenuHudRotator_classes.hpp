@@ -34,7 +34,6 @@ public:
 	struct FGameplayTag                           Gameplay_Tag;                                      // 0x0288(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Selection_Changed__DelegateSignature(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag_0);
 	void ExecuteUbergraph_OptionsMenuHudRotator(int32 EntryPoint);
 	void SetData(class UObject* InData, class UCommonListView* OwningList);
 	void BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature(int32 Value);
@@ -51,7 +50,7 @@ public:
 	void OnReleaseToPool();
 	void OnAcquireFromPool();
 	void Update_Row_Selector(int32 Currently_Selected);
-	void Center_On_Widget();
+	void Center_on_Widget();
 	void Update_Options(TArray<class FText>& NewParam);
 	struct FEventReply OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent);
 

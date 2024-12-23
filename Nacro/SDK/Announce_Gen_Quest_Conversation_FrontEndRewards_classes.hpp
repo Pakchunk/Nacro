@@ -27,8 +27,6 @@ public:
 	UMulticastDelegateProperty_                   OnCurrentConversationFinished;                     // 0x0460(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnNewSentence__DelegateSignature(const struct FFortConversationSentence& Sentence);
-	void OnCurrentConversationFinished__DelegateSignature();
 	void ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards(int32 EntryPoint);
 	void OnSentenceStarted(const struct FFortConversationSentence& Sentence, int32 SentenceIndex);
 	void OnConversationFinished(const struct FFortConversationSentence& FinishingSentence, int32 FinishingSentenceSentenceIndex);

@@ -636,11 +636,11 @@ void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers)
 // Function MainTabsScreen.MainTabsScreen_C.CheckHighestPriorityOffer
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FCardPackOffer>           InOfferArray                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// struct FCardPackOffer                   OutPriorityOffer                                       (Parm, OutParm)
+// TArray<struct FCardPackOffer>           inOfferArray                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FCardPackOffer                   outPriorityOffer                                       (Parm, OutParm)
 // bool                                    FoundOffer                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& InOfferArray, struct FCardPackOffer* OutPriorityOffer, bool* FoundOffer)
+void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& inOfferArray, struct FCardPackOffer* outPriorityOffer, bool* FoundOffer)
 {
 	static class UFunction* Func = nullptr;
 
@@ -649,14 +649,14 @@ void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>&
 
 	Params::MainTabsScreen_C_CheckHighestPriorityOffer Parms{};
 
-	Parms.InOfferArray = std::move(InOfferArray);
+	Parms.inOfferArray = std::move(inOfferArray);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	InOfferArray = std::move(Parms.InOfferArray);
+	inOfferArray = std::move(Parms.inOfferArray);
 
-	if (OutPriorityOffer != nullptr)
-		*OutPriorityOffer = std::move(Parms.OutPriorityOffer);
+	if (outPriorityOffer != nullptr)
+		*outPriorityOffer = std::move(Parms.outPriorityOffer);
 
 	if (FoundOffer != nullptr)
 		*FoundOffer = Parms.FoundOffer;
@@ -718,14 +718,14 @@ void UMainTabsScreen_C::CheckDisplayCriteria(EStoreOfferCosts InCustomStoreOffer
 // Parameters:
 // bool                                    ShowBang                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::Determine_If_Any_nonMinusMTX_offers_are_purchasable(bool* ShowBang)
+void UMainTabsScreen_C::Determine_If_Any_non_MTX_offers_are_purchasable(bool* ShowBang)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("MainTabsScreen_C", "Determine If Any non-MTX offers are purchasable");
 
-	Params::MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable Parms{};
+	Params::MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

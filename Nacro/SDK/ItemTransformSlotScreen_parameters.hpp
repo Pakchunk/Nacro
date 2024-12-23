@@ -14,32 +14,6 @@
 namespace SDK::Params
 {
 
-// Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.OnTransformConfirmed__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature final
-{
-public:
-	TArray<class UFortItem*>                      ItemsToSacrifice;                                  // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	int32                                         SacrificePoints;                                   // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTier;                                       // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature");
-static_assert(sizeof(ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature) == 0x000018, "Wrong size on ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature");
-static_assert(offsetof(ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature, ItemsToSacrifice) == 0x000000, "Member 'ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature::ItemsToSacrifice' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature, SacrificePoints) == 0x000010, "Member 'ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature::SacrificePoints' has a wrong offset!");
-static_assert(offsetof(ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature, CurrentTier) == 0x000014, "Member 'ItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature::CurrentTier' has a wrong offset!");
-
-// Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.OnTransformButtonUpdated__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature final
-{
-public:
-	bool                                          TransformActive;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature) == 0x000001, "Wrong alignment on ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature");
-static_assert(sizeof(ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature) == 0x000001, "Wrong size on ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature");
-static_assert(offsetof(ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature, TransformActive) == 0x000000, "Member 'ItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature::TransformActive' has a wrong offset!");
-
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.ExecuteUbergraph_ItemTransformSlotScreen
 // 0x0028 (0x0028 - 0x0000)
 struct ItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen final

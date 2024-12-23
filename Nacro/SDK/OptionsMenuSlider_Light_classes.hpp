@@ -36,7 +36,6 @@ public:
 	class FText                                   Hover_Text;                                        // 0x0288(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void SliderChanged__DelegateSignature(float Slider_Value);
 	void ExecuteUbergraph_OptionsMenuSlider_Light(int32 EntryPoint);
 	void BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature(float Value);
 	void BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature(float Value);
@@ -46,7 +45,7 @@ public:
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	void Construct();
 	void Update_Slider(const class FText& Slider_Text, float Slider_Value, const class FText& Hover_Text_0, class UCommonTextBlock* Tooltip_Text_Block);
-	void Center_On_Widget();
+	void Center_on_Widget();
 
 public:
 	static class UClass* StaticClass()

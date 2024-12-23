@@ -35,9 +35,6 @@ public:
 	int32                                         RecipeIndexRepresented;                            // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnEvolutionChoiceHovered__DelegateSignature(class UFortItem* Item, int32 RecipeIndex);
-	void OnEvolutionChoiceUnhovered__DelegateSignature(class UFortItem* Item);
-	void OnEvolutionChoiceSelected__DelegateSignature(class UFortItem* Item, int32 RecipeIndex);
 	void ExecuteUbergraph_ItemInspectEvolutionChoiceEntry(int32 EntryPoint);
 	void BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void PreConstruct(bool IsDesignTime);

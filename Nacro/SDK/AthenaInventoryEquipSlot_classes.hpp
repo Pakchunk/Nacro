@@ -36,7 +36,6 @@ public:
 	UMulticastDelegateProperty_                   OnEquipRequested;                                  // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnEquipRequested__DelegateSignature(int32 SlotIndex_0);
 	void ExecuteUbergraph_AthenaInventoryEquipSlot(int32 EntryPoint);
 	void OnQuickbarContentsChanged_Event_0(EFortQuickBars QuickbarIndex);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);

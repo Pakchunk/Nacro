@@ -18,17 +18,6 @@
 namespace SDK::Params
 {
 
-// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnEquipRequested__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature final
-{
-public:
-	int32                                         SlotIndex_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature");
-static_assert(offsetof(AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature, SlotIndex_0) == 0x000000, "Member 'AthenaInventoryEquipSlot_C_OnEquipRequested__DelegateSignature::SlotIndex_0' has a wrong offset!");
-
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.ExecuteUbergraph_AthenaInventoryEquipSlot
 // 0x00A0 (0x00A0 - 0x0000)
 struct AthenaInventoryEquipSlot_C_ExecuteUbergraph_AthenaInventoryEquipSlot final

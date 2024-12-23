@@ -34,7 +34,6 @@ public:
 	int32                                         CurrentlySelectedSlot;                             // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnItemSelected__DelegateSignature(class UFortItem* SelectedItem);
 	void ExecuteUbergraph_ItemTransformItemPicker(int32 EntryPoint);
 	void BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature(class FName TabId);
 	void PreConstruct(bool IsDesignTime);

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Results_TeamTotalScore.Results_TeamTotalScore_C.Count Score Finished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_TeamTotalScore_C::Count_Score_Finished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_TeamTotalScore_C", "Count Score Finished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.ExecuteUbergraph_Results_TeamTotalScore
 // ()
 // Parameters:

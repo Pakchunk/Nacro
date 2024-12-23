@@ -17,20 +17,6 @@
 namespace SDK::Params
 {
 
-// Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.OnExpeditionCompleted__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature final
-{
-public:
-	bool                                          Succeeded;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFortItemInstanceQuantityPair>  Rewards;                                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-static_assert(alignof(FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature");
-static_assert(sizeof(FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature) == 0x000018, "Wrong size on FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature");
-static_assert(offsetof(FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature, Succeeded) == 0x000000, "Member 'FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature::Succeeded' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature, Rewards) == 0x000008, "Member 'FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature::Rewards' has a wrong offset!");
-
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.ExecuteUbergraph_FrontEndRewards_Expedition
 // 0x0040 (0x0040 - 0x0000)
 struct FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition final

@@ -38,7 +38,6 @@ public:
 	class UAudioComponent*                        VBucksCountSound;                                  // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PurchaseComplete__DelegateSignature(bool bSuccess);
 	void ExecuteUbergraph_MtxOffersList_2(int32 EntryPoint);
 	void CustomEvent_0_Copy();
 	void CustomEvent_0();

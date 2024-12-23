@@ -17,26 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BluGloRequestHandler.BluGloRequestHandler_C.OnBluGloQueryFinished__DelegateSignature
-// 0x0028 (0x0028 - 0x0000)
-struct BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature final
-{
-public:
-	class AActor*                                 ActorToSpawnFrom_0;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                LocationToSpawnFromIfActorInvalid;                 // 0x0008(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EEnvQueryStatus                               QueryStatus;                                       // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEnvQueryInstanceBlueprintWrapper*      QueryInstance;                                     // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NumBluGloToSpawn_0;                                // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature) == 0x000008, "Wrong alignment on BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature");
-static_assert(sizeof(BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature) == 0x000028, "Wrong size on BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature");
-static_assert(offsetof(BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature, ActorToSpawnFrom_0) == 0x000000, "Member 'BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature::ActorToSpawnFrom_0' has a wrong offset!");
-static_assert(offsetof(BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature, LocationToSpawnFromIfActorInvalid) == 0x000008, "Member 'BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature::LocationToSpawnFromIfActorInvalid' has a wrong offset!");
-static_assert(offsetof(BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature, QueryStatus) == 0x000014, "Member 'BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature::QueryStatus' has a wrong offset!");
-static_assert(offsetof(BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature, QueryInstance) == 0x000018, "Member 'BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature::QueryInstance' has a wrong offset!");
-static_assert(offsetof(BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature, NumBluGloToSpawn_0) == 0x000020, "Member 'BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature::NumBluGloToSpawn_0' has a wrong offset!");
-
 // Function BluGloRequestHandler.BluGloRequestHandler_C.ExecuteUbergraph_BluGloRequestHandler
 // 0x0048 (0x0048 - 0x0000)
 struct BluGloRequestHandler_C_ExecuteUbergraph_BluGloRequestHandler final

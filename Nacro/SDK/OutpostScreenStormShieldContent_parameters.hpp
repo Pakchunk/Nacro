@@ -182,10 +182,10 @@ static_assert(offsetof(OutpostScreenStormShieldContent_C_ResrouceProgress_Wood, 
 
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.isPlayerAlone
 // 0x0030 (0x0030 - 0x0000)
-struct OutpostScreenStormShieldContent_C_IsPlayerAlone final
+struct OutpostScreenStormShieldContent_C_isPlayerAlone final
 {
 public:
-	bool                                          IsAlone;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          isAlone;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -193,14 +193,14 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OutpostScreenStormShieldContent_C_IsPlayerAlone) == 0x000008, "Wrong alignment on OutpostScreenStormShieldContent_C_IsPlayerAlone");
-static_assert(sizeof(OutpostScreenStormShieldContent_C_IsPlayerAlone) == 0x000030, "Wrong size on OutpostScreenStormShieldContent_C_IsPlayerAlone");
-static_assert(offsetof(OutpostScreenStormShieldContent_C_IsPlayerAlone, IsAlone) == 0x000000, "Member 'OutpostScreenStormShieldContent_C_IsPlayerAlone::IsAlone' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldContent_C_IsPlayerAlone, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShieldContent_C_IsPlayerAlone::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldContent_C_IsPlayerAlone, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000010, "Member 'OutpostScreenStormShieldContent_C_IsPlayerAlone::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldContent_C_IsPlayerAlone, CallFunc_GetTeamMembers_TeamMembers) == 0x000018, "Member 'OutpostScreenStormShieldContent_C_IsPlayerAlone::CallFunc_GetTeamMembers_TeamMembers' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldContent_C_IsPlayerAlone, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'OutpostScreenStormShieldContent_C_IsPlayerAlone::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldContent_C_IsPlayerAlone, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'OutpostScreenStormShieldContent_C_IsPlayerAlone::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(alignof(OutpostScreenStormShieldContent_C_isPlayerAlone) == 0x000008, "Wrong alignment on OutpostScreenStormShieldContent_C_isPlayerAlone");
+static_assert(sizeof(OutpostScreenStormShieldContent_C_isPlayerAlone) == 0x000030, "Wrong size on OutpostScreenStormShieldContent_C_isPlayerAlone");
+static_assert(offsetof(OutpostScreenStormShieldContent_C_isPlayerAlone, isAlone) == 0x000000, "Member 'OutpostScreenStormShieldContent_C_isPlayerAlone::isAlone' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldContent_C_isPlayerAlone, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShieldContent_C_isPlayerAlone::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldContent_C_isPlayerAlone, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000010, "Member 'OutpostScreenStormShieldContent_C_isPlayerAlone::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldContent_C_isPlayerAlone, CallFunc_GetTeamMembers_TeamMembers) == 0x000018, "Member 'OutpostScreenStormShieldContent_C_isPlayerAlone::CallFunc_GetTeamMembers_TeamMembers' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldContent_C_isPlayerAlone, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'OutpostScreenStormShieldContent_C_isPlayerAlone::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldContent_C_isPlayerAlone, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'OutpostScreenStormShieldContent_C_isPlayerAlone::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.Update_Upgrade_ButtonEnabled
 // 0x0020 (0x0020 - 0x0000)
@@ -396,11 +396,11 @@ static_assert(offsetof(OutpostScreenStormShieldContent_C_Get_GetHelpButton_ToolT
 struct OutpostScreenStormShieldContent_C_SetButtonState final
 {
 public:
-	bool                                          Enabled_;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          enabled_;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(OutpostScreenStormShieldContent_C_SetButtonState) == 0x000001, "Wrong alignment on OutpostScreenStormShieldContent_C_SetButtonState");
 static_assert(sizeof(OutpostScreenStormShieldContent_C_SetButtonState) == 0x000001, "Wrong size on OutpostScreenStormShieldContent_C_SetButtonState");
-static_assert(offsetof(OutpostScreenStormShieldContent_C_SetButtonState, Enabled_) == 0x000000, "Member 'OutpostScreenStormShieldContent_C_SetButtonState::Enabled_' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldContent_C_SetButtonState, enabled_) == 0x000000, "Member 'OutpostScreenStormShieldContent_C_SetButtonState::enabled_' has a wrong offset!");
 
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.AddInputHandlers
 // 0x0020 (0x0020 - 0x0000)
@@ -456,14 +456,14 @@ static_assert(offsetof(OutpostScreenStormShieldContent_C_CenterActiveButton, Cal
 struct OutpostScreenStormShieldContent_C_EnablePowerBarChunk final
 {
 public:
-	class UImage*                                 InImage;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 inImage;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0018(0x0028)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0040(0x0090)()
 };
 static_assert(alignof(OutpostScreenStormShieldContent_C_EnablePowerBarChunk) == 0x000008, "Wrong alignment on OutpostScreenStormShieldContent_C_EnablePowerBarChunk");
 static_assert(sizeof(OutpostScreenStormShieldContent_C_EnablePowerBarChunk) == 0x0000D0, "Wrong size on OutpostScreenStormShieldContent_C_EnablePowerBarChunk");
-static_assert(offsetof(OutpostScreenStormShieldContent_C_EnablePowerBarChunk, InImage) == 0x000000, "Member 'OutpostScreenStormShieldContent_C_EnablePowerBarChunk::InImage' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldContent_C_EnablePowerBarChunk, inImage) == 0x000000, "Member 'OutpostScreenStormShieldContent_C_EnablePowerBarChunk::inImage' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldContent_C_EnablePowerBarChunk, K2Node_MakeStruct_LinearColor) == 0x000008, "Member 'OutpostScreenStormShieldContent_C_EnablePowerBarChunk::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldContent_C_EnablePowerBarChunk, K2Node_MakeStruct_SlateColor) == 0x000018, "Member 'OutpostScreenStormShieldContent_C_EnablePowerBarChunk::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 static_assert(offsetof(OutpostScreenStormShieldContent_C_EnablePowerBarChunk, K2Node_MakeStruct_SlateBrush) == 0x000040, "Member 'OutpostScreenStormShieldContent_C_EnablePowerBarChunk::K2Node_MakeStruct_SlateBrush' has a wrong offset!");

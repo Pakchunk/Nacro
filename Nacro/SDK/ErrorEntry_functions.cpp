@@ -112,19 +112,19 @@ void UErrorEntry_C::SetErrorInfo(const struct FFortErrorInfo& ErrorInfo_0)
 }
 
 
-// Function ErrorEntry.ErrorEntry_C.Center On Widget
+// Function ErrorEntry.ErrorEntry_C.Center on Widget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Did_Center                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UErrorEntry_C::Center_On_Widget(bool* Did_Center)
+void UErrorEntry_C::Center_on_Widget(bool* Did_Center)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ErrorEntry_C", "Center On Widget");
+		Func = Class->GetFunction("ErrorEntry_C", "Center on Widget");
 
-	Params::ErrorEntry_C_Center_On_Widget Parms{};
+	Params::ErrorEntry_C_Center_on_Widget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

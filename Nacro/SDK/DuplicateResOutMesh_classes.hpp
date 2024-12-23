@@ -44,7 +44,7 @@ public:
 	float                                         Head_Space;                                        // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Leg_Space;                                         // 0x03F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPointLightComponent*                   Spawn_Light;                                       // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Light_intensity;                                   // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         light_intensity;                                   // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Number_of_Base_skeletal_mesh_materials;            // 0x0404(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FirstPassComplete;                                 // 0x0408(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -74,7 +74,7 @@ public:
 	void CharacterSpawnInTimeline__UpdateFunc();
 	void CharacterSpawnInTimeline__FinishedFunc();
 	void UserConstructionScript();
-	void InitializeExternalSkeletalMeshArray();
+	void initializeExternalSkeletalMeshArray();
 	void Find_Bounds();
 	void Spawn__Light();
 	void Make_and_slave_internal_meshes();
@@ -109,7 +109,7 @@ static_assert(offsetof(ADuplicateResOutMesh_C, Current_MID) == 0x0003E8, "Member
 static_assert(offsetof(ADuplicateResOutMesh_C, Head_Space) == 0x0003F0, "Member 'ADuplicateResOutMesh_C::Head_Space' has a wrong offset!");
 static_assert(offsetof(ADuplicateResOutMesh_C, Leg_Space) == 0x0003F4, "Member 'ADuplicateResOutMesh_C::Leg_Space' has a wrong offset!");
 static_assert(offsetof(ADuplicateResOutMesh_C, Spawn_Light) == 0x0003F8, "Member 'ADuplicateResOutMesh_C::Spawn_Light' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Light_intensity) == 0x000400, "Member 'ADuplicateResOutMesh_C::Light_intensity' has a wrong offset!");
+static_assert(offsetof(ADuplicateResOutMesh_C, light_intensity) == 0x000400, "Member 'ADuplicateResOutMesh_C::light_intensity' has a wrong offset!");
 static_assert(offsetof(ADuplicateResOutMesh_C, Number_of_Base_skeletal_mesh_materials) == 0x000404, "Member 'ADuplicateResOutMesh_C::Number_of_Base_skeletal_mesh_materials' has a wrong offset!");
 static_assert(offsetof(ADuplicateResOutMesh_C, FirstPassComplete) == 0x000408, "Member 'ADuplicateResOutMesh_C::FirstPassComplete' has a wrong offset!");
 static_assert(offsetof(ADuplicateResOutMesh_C, ExternalSkeletalMeshComponent) == 0x000410, "Member 'ADuplicateResOutMesh_C::ExternalSkeletalMeshComponent' has a wrong offset!");

@@ -23,9 +23,9 @@ namespace SDK
 // struct FSkillTreePageColors             Page_Color                                             (Parm, HasGetValueTypeHash)
 // ESkillTreePages                         Pages                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*         Mid                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USkillTreeColorSetup_C::SkillTreeBGSetup(const struct FSkillTreePageColors& Page_Color, ESkillTreePages Pages, class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext)
+void USkillTreeColorSetup_C::SkillTreeBGSetup(const struct FSkillTreePageColors& Page_Color, ESkillTreePages Pages, class UMaterialInstanceDynamic* Mid, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -37,7 +37,7 @@ void USkillTreeColorSetup_C::SkillTreeBGSetup(const struct FSkillTreePageColors&
 	Parms.Page_Color = std::move(Page_Color);
 	Parms.Pages = Pages;
 	Parms.Mid = Mid;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }

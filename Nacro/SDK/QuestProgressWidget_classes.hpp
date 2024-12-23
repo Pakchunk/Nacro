@@ -22,7 +22,7 @@ namespace SDK
 class UQuestProgressWidget_C final : public UCommonUserWidget
 {
 public:
-	class UProgressBar*                           _ProgressBar__Quest_Progress;                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           mProgressBar__Quest_Progress;                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       ProgressValue;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
@@ -40,7 +40,7 @@ public:
 };
 static_assert(alignof(UQuestProgressWidget_C) == 0x000008, "Wrong alignment on UQuestProgressWidget_C");
 static_assert(sizeof(UQuestProgressWidget_C) == 0x000248, "Wrong size on UQuestProgressWidget_C");
-static_assert(offsetof(UQuestProgressWidget_C, _ProgressBar__Quest_Progress) == 0x000238, "Member 'UQuestProgressWidget_C::_ProgressBar__Quest_Progress' has a wrong offset!");
+static_assert(offsetof(UQuestProgressWidget_C, mProgressBar__Quest_Progress) == 0x000238, "Member 'UQuestProgressWidget_C::mProgressBar__Quest_Progress' has a wrong offset!");
 static_assert(offsetof(UQuestProgressWidget_C, ProgressValue) == 0x000240, "Member 'UQuestProgressWidget_C::ProgressValue' has a wrong offset!");
 
 }

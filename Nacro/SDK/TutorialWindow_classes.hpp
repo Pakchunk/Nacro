@@ -31,7 +31,6 @@ public:
 	UMulticastDelegateProperty_                   OnRequestRetry;                                    // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnRequestRetry__DelegateSignature();
 	void ExecuteUbergraph_TutorialWindow(int32 EntryPoint);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void SetDescription(const class FText& Description_0);

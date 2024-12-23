@@ -22,14 +22,14 @@ namespace SDK
 class UColorLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void Get_Buff_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color);
-	static void Get_Debuff_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color);
-	static void Get_Unique_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color);
-	static void Get_Fire_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color);
-	static void Get_Ice_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color);
-	static void Get_Bolt_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color);
-	static void Get_Base___Buff_Colors(EFortStatValueDisplayType Display_Type, EFortBuffState Buff_State, const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Base, struct FLinearColor* buff);
-	static void Get_HarvestWeakPoint_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* StyleSheetOut);
+	static void Get_Buff_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color);
+	static void Get_Debuff_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color);
+	static void Get_Unique_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color);
+	static void Get_Fire_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color);
+	static void Get_Ice_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color);
+	static void Get_Bolt_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color);
+	static void Get_Base___Buff_Colors(EFortStatValueDisplayType Display_Type, EFortBuffState Buff_State, const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Base, struct FLinearColor* buff);
+	static void Get_HarvestWeakPoint_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* StyleSheetOut);
 
 public:
 	static class UClass* StaticClass()

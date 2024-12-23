@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "ItemDisplayMode_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
-#include "ItemDisplayStyle_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params

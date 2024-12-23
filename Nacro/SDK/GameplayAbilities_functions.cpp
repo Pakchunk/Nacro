@@ -1435,40 +1435,6 @@ void UAbilityTask_ApplyRootMotionMoveToActorForce::OnRep_TargetLocation()
 }
 
 
-// DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityAbilityKey__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// int32                                   InputID                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAbilitySystemComponent::AbilityAbilityKey__DelegateSignature(int32 InputID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AbilitySystemComponent", "AbilityAbilityKey__DelegateSignature");
-
-	Params::AbilitySystemComponent_AbilityAbilityKey__DelegateSignature Parms{};
-
-	Parms.InputID = InputID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityConfirmOrCancel__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UAbilitySystemComponent::AbilityConfirmOrCancel__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AbilitySystemComponent", "AbilityConfirmOrCancel__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToSelf
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:

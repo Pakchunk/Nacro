@@ -46,8 +46,8 @@ public:
 	class UMaterialInstanceDynamic*               RadarWireMID;                                      // 0x07C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CloudHeightZ;                                      // 0x07C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7CC[0x4];                                      // 0x07CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               DMMinusCloud01;                                    // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               DMMinusCloud02;                                    // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DM_Cloud01;                                        // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DM_Cloud02;                                        // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CloudLightVector;                                  // 0x07E0(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -91,8 +91,8 @@ static_assert(offsetof(ABP_Hex_CriticalMission_C, Rotate) == 0x0007A8, "Member '
 static_assert(offsetof(ABP_Hex_CriticalMission_C, ActiveTilesArray) == 0x0007B0, "Member 'ABP_Hex_CriticalMission_C::ActiveTilesArray' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_CriticalMission_C, RadarWireMID) == 0x0007C0, "Member 'ABP_Hex_CriticalMission_C::RadarWireMID' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_CriticalMission_C, CloudHeightZ) == 0x0007C8, "Member 'ABP_Hex_CriticalMission_C::CloudHeightZ' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, DMMinusCloud01) == 0x0007D0, "Member 'ABP_Hex_CriticalMission_C::DMMinusCloud01' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, DMMinusCloud02) == 0x0007D8, "Member 'ABP_Hex_CriticalMission_C::DMMinusCloud02' has a wrong offset!");
+static_assert(offsetof(ABP_Hex_CriticalMission_C, DM_Cloud01) == 0x0007D0, "Member 'ABP_Hex_CriticalMission_C::DM_Cloud01' has a wrong offset!");
+static_assert(offsetof(ABP_Hex_CriticalMission_C, DM_Cloud02) == 0x0007D8, "Member 'ABP_Hex_CriticalMission_C::DM_Cloud02' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_CriticalMission_C, CloudLightVector) == 0x0007E0, "Member 'ABP_Hex_CriticalMission_C::CloudLightVector' has a wrong offset!");
 
 }

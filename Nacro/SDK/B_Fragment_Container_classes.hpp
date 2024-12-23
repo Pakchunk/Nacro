@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "GameplayAbilities_structs.hpp"
+#include "E_OutlanderFragmentTypes_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "E_OutlanderFragmentTypes_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

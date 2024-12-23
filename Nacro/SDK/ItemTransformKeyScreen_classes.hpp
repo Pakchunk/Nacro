@@ -35,8 +35,6 @@ public:
 	class FName                                   CurrentTab;                                        // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnKeySelected__DelegateSignature(class UFortItem* Key);
-	void OnKeyConfirmed__DelegateSignature();
 	void ExecuteUbergraph_ItemTransformKeyScreen(int32 EntryPoint);
 	void HandleHomebaseInventoryChanged();
 	void BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature(class FName TabId);

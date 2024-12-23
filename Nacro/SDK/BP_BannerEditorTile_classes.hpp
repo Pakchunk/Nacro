@@ -32,7 +32,6 @@ public:
 	UMulticastDelegateProperty_                   BannerTileBangUpdated;                             // 0x08E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BannerTileBangUpdated__DelegateSignature();
 	void ExecuteUbergraph_BP_BannerEditorTile(int32 EntryPoint);
 	void OnHovered();
 	void OnSelected();

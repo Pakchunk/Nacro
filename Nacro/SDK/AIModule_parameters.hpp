@@ -2248,20 +2248,6 @@ static_assert(offsetof(EnvQueryContext_BlueprintBase_ProvideSingleLocation, Quer
 static_assert(offsetof(EnvQueryContext_BlueprintBase_ProvideSingleLocation, QuerierActor) == 0x000008, "Member 'EnvQueryContext_BlueprintBase_ProvideSingleLocation::QuerierActor' has a wrong offset!");
 static_assert(offsetof(EnvQueryContext_BlueprintBase_ProvideSingleLocation, ResultingLocation) == 0x000010, "Member 'EnvQueryContext_BlueprintBase_ProvideSingleLocation::ResultingLocation' has a wrong offset!");
 
-// DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature final
-{
-public:
-	class UEnvQueryInstanceBlueprintWrapper*      QueryInstance;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EEnvQueryStatus                               QueryStatus;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature) == 0x000008, "Wrong alignment on EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature");
-static_assert(sizeof(EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature) == 0x000010, "Wrong size on EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature");
-static_assert(offsetof(EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature, QueryInstance) == 0x000000, "Member 'EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature::QueryInstance' has a wrong offset!");
-static_assert(offsetof(EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature, QueryStatus) == 0x000008, "Member 'EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature::QueryStatus' has a wrong offset!");
-
 // Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore
 // 0x0008 (0x0008 - 0x0000)
 struct EnvQueryInstanceBlueprintWrapper_GetItemScore final
@@ -2609,32 +2595,6 @@ static_assert(offsetof(PawnActionsComponent_K2_PushAction, NewAction) == 0x00000
 static_assert(offsetof(PawnActionsComponent_K2_PushAction, Priority) == 0x000008, "Member 'PawnActionsComponent_K2_PushAction::Priority' has a wrong offset!");
 static_assert(offsetof(PawnActionsComponent_K2_PushAction, Instigator) == 0x000010, "Member 'PawnActionsComponent_K2_PushAction::Instigator' has a wrong offset!");
 static_assert(offsetof(PawnActionsComponent_K2_PushAction, ReturnValue) == 0x000018, "Member 'PawnActionsComponent_K2_PushAction::ReturnValue' has a wrong offset!");
-
-// DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct PawnSensingComponent_HearNoiseDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Instigator;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Volume;                                            // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature) == 0x000008, "Wrong alignment on PawnSensingComponent_HearNoiseDelegate__DelegateSignature");
-static_assert(sizeof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature) == 0x000018, "Wrong size on PawnSensingComponent_HearNoiseDelegate__DelegateSignature");
-static_assert(offsetof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature, Instigator) == 0x000000, "Member 'PawnSensingComponent_HearNoiseDelegate__DelegateSignature::Instigator' has a wrong offset!");
-static_assert(offsetof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature, Location) == 0x000008, "Member 'PawnSensingComponent_HearNoiseDelegate__DelegateSignature::Location' has a wrong offset!");
-static_assert(offsetof(PawnSensingComponent_HearNoiseDelegate__DelegateSignature, Volume) == 0x000014, "Member 'PawnSensingComponent_HearNoiseDelegate__DelegateSignature::Volume' has a wrong offset!");
-
-// DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct PawnSensingComponent_SeePawnDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PawnSensingComponent_SeePawnDelegate__DelegateSignature) == 0x000008, "Wrong alignment on PawnSensingComponent_SeePawnDelegate__DelegateSignature");
-static_assert(sizeof(PawnSensingComponent_SeePawnDelegate__DelegateSignature) == 0x000008, "Wrong size on PawnSensingComponent_SeePawnDelegate__DelegateSignature");
-static_assert(offsetof(PawnSensingComponent_SeePawnDelegate__DelegateSignature, Pawn) == 0x000000, "Member 'PawnSensingComponent_SeePawnDelegate__DelegateSignature::Pawn' has a wrong offset!");
 
 // Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
 // 0x0004 (0x0004 - 0x0000)

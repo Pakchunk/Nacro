@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function ItemTransformItemPicker.ItemTransformItemPicker_C.OnItemSelected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortItem*                        SelectedItem                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UItemTransformItemPicker_C::OnItemSelected__DelegateSignature(class UFortItem* SelectedItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformItemPicker_C", "OnItemSelected__DelegateSignature");
-
-	Params::ItemTransformItemPicker_C_OnItemSelected__DelegateSignature Parms{};
-
-	Parms.SelectedItem = SelectedItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.ExecuteUbergraph_ItemTransformItemPicker
 // ()
 // Parameters:

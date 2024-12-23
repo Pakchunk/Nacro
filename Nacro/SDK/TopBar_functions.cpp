@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function TopBar.TopBar_C.MainMenuStateChanged__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Open                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UTopBar_C::MainMenuStateChanged__DelegateSignature(bool Open)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "MainMenuStateChanged__DelegateSignature");
-
-	Params::TopBar_C_MainMenuStateChanged__DelegateSignature Parms{};
-
-	Parms.Open = Open;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TopBar.TopBar_C.OpenAccountPicker__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UTopBar_C::OpenAccountPicker__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "OpenAccountPicker__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function TopBar.TopBar_C.ExecuteUbergraph_TopBar
 // (HasDefaults)
 // Parameters:

@@ -25,7 +25,7 @@ class UTabVideoOptions_C final : public UFortVideoOptions
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(Transient, DuplicateTransient)
 	class UOptionsMenuRowSelector_C*              ThreeDResolution;                                  // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOptionsMenuRowSelector_C*              AntiMinusAliasing;                                 // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOptionsMenuRowSelector_C*              Anti_Aliasing;                                     // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URotatorSelector_C*                     DisplayResolution;                                 // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOptionsMenuRowSelector_C*              Effects;                                           // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URotatorSelector_C*                     FrameRateLimit;                                    // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -45,8 +45,6 @@ public:
 	UMulticastDelegateProperty_                   Disable_Overlay;                                   // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Enable_Overlay__DelegateSignature(bool Accept_Input);
-	void Disable_Overlay__DelegateSignature();
 	void ExecuteUbergraph_TabVideoOptions(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void CustomEvent_1(int32 Selected_Index);
@@ -61,9 +59,9 @@ public:
 	void UpdateOptionsTab();
 	void Quality_Changed(int32 Tab_Id);
 	void Effects_Changed(int32 Tab_Id);
-	void PostMinusProcessing_Changed(int32 Tab_Id);
+	void Post_Processing_Changed(int32 Tab_Id);
 	void Textures_Changed(int32 Tab_Id);
-	void AntiMinusAliasing_Changed(int32 Tab_Id);
+	void Anti_Aliasing_Changed(int32 Tab_Id);
 	void Shadows_Changed(int32 Tab_Id);
 	void Discrete_Resolution_Changed(int32 Tab_Id);
 	void View_Distance_Changed(int32 Tab_Id);
@@ -85,7 +83,7 @@ static_assert(alignof(UTabVideoOptions_C) == 0x000008, "Wrong alignment on UTabV
 static_assert(sizeof(UTabVideoOptions_C) == 0x000358, "Wrong size on UTabVideoOptions_C");
 static_assert(offsetof(UTabVideoOptions_C, UberGraphFrame) == 0x0002A8, "Member 'UTabVideoOptions_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UTabVideoOptions_C, ThreeDResolution) == 0x0002B0, "Member 'UTabVideoOptions_C::ThreeDResolution' has a wrong offset!");
-static_assert(offsetof(UTabVideoOptions_C, AntiMinusAliasing) == 0x0002B8, "Member 'UTabVideoOptions_C::AntiMinusAliasing' has a wrong offset!");
+static_assert(offsetof(UTabVideoOptions_C, Anti_Aliasing) == 0x0002B8, "Member 'UTabVideoOptions_C::Anti_Aliasing' has a wrong offset!");
 static_assert(offsetof(UTabVideoOptions_C, DisplayResolution) == 0x0002C0, "Member 'UTabVideoOptions_C::DisplayResolution' has a wrong offset!");
 static_assert(offsetof(UTabVideoOptions_C, Effects) == 0x0002C8, "Member 'UTabVideoOptions_C::Effects' has a wrong offset!");
 static_assert(offsetof(UTabVideoOptions_C, FrameRateLimit) == 0x0002D0, "Member 'UTabVideoOptions_C::FrameRateLimit' has a wrong offset!");

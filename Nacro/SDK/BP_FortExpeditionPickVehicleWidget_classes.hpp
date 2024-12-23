@@ -31,7 +31,6 @@ public:
 	UMulticastDelegateProperty_                   OnVehicleSelected;                                 // 0x0430(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnVehicleSelected__DelegateSignature(class FName SquadId);
 	void ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget(int32 EntryPoint);
 	void HandleVehcileButtonUnhovered(class UCommonButton* Button);
 	void HandleVehicleButtonHovered(class UCommonButton* Button);

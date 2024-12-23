@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.OnRequestUpgrade__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UItemInspectUpgradeCallout_C::OnRequestUpgrade__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInspectUpgradeCallout_C", "OnRequestUpgrade__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.ExecuteUbergraph_ItemInspectUpgradeCallout
 // ()
 // Parameters:

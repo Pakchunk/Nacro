@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Results_NameplateWidget.Results_NameplateWidget_C.IntroComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_NameplateWidget_C::IntroComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_NameplateWidget_C", "IntroComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_NameplateWidget.Results_NameplateWidget_C.ExecuteUbergraph_Results_NameplateWidget
 // ()
 // Parameters:

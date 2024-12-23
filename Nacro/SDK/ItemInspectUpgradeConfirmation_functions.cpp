@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.OnUpgradeConfirm__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UItemInspectUpgradeConfirmation_C::OnUpgradeConfirm__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInspectUpgradeConfirmation_C", "OnUpgradeConfirm__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.OnUpgradeCancel__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UItemInspectUpgradeConfirmation_C::OnUpgradeCancel__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInspectUpgradeConfirmation_C", "OnUpgradeCancel__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.ExecuteUbergraph_ItemInspectUpgradeConfirmation
 // ()
 // Parameters:

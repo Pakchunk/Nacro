@@ -676,17 +676,6 @@ static_assert(offsetof(AbilityTask_ApplyRootMotionMoveToActorForce_ApplyRootMoti
 static_assert(offsetof(AbilityTask_ApplyRootMotionMoveToActorForce_ApplyRootMotionMoveToActorForce, bDisableDestinationReachedInterrupt_0) == 0x00006C, "Member 'AbilityTask_ApplyRootMotionMoveToActorForce_ApplyRootMotionMoveToActorForce::bDisableDestinationReachedInterrupt_0' has a wrong offset!");
 static_assert(offsetof(AbilityTask_ApplyRootMotionMoveToActorForce_ApplyRootMotionMoveToActorForce, ReturnValue) == 0x000070, "Member 'AbilityTask_ApplyRootMotionMoveToActorForce_ApplyRootMotionMoveToActorForce::ReturnValue' has a wrong offset!");
 
-// DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityAbilityKey__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct AbilitySystemComponent_AbilityAbilityKey__DelegateSignature final
-{
-public:
-	int32                                         InputID;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AbilitySystemComponent_AbilityAbilityKey__DelegateSignature) == 0x000004, "Wrong alignment on AbilitySystemComponent_AbilityAbilityKey__DelegateSignature");
-static_assert(sizeof(AbilitySystemComponent_AbilityAbilityKey__DelegateSignature) == 0x000004, "Wrong size on AbilitySystemComponent_AbilityAbilityKey__DelegateSignature");
-static_assert(offsetof(AbilitySystemComponent_AbilityAbilityKey__DelegateSignature, InputID) == 0x000000, "Member 'AbilitySystemComponent_AbilityAbilityKey__DelegateSignature::InputID' has a wrong offset!");
-
 // Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToSelf
 // 0x0020 (0x0020 - 0x0000)
 struct AbilitySystemComponent_BP_ApplyGameplayEffectSpecToSelf final

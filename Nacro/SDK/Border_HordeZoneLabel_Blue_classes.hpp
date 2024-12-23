@@ -10,7 +10,7 @@
 
 #include "Basic.hpp"
 
-#include "BorderMinusItemInfoHeader_classes.hpp"
+#include "Border_ItemInfoHeader_classes.hpp"
 
 
 namespace SDK
@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass Border_HordeZoneLabel_Blue.Border_HordeZoneLabel_Blue_C
 // 0x0000 (0x00B8 - 0x00B8)
-class UBorder_HordeZoneLabel_Blue_C final : public UBorderMinusItemInfoHeader_C
+class UBorder_HordeZoneLabel_Blue_C final : public UBorder_ItemInfoHeader_C
 {
 public:
 	static class UClass* StaticClass()

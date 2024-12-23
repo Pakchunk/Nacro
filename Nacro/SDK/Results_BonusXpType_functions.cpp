@@ -78,14 +78,14 @@ void UResults_BonusXpType_C::Construct()
 // class FText                             PlayerName                                             (Parm)
 // class FName                             InType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UResults_BonusXpType_C::SetInformation(int32 InXPAmount, const class FText& PlayerName, class FName InType)
+void UResults_BonusXpType_C::setInformation(int32 InXPAmount, const class FText& PlayerName, class FName InType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Results_BonusXpType_C", "setInformation");
 
-	Params::Results_BonusXpType_C_SetInformation Parms{};
+	Params::Results_BonusXpType_C_setInformation Parms{};
 
 	Parms.InXPAmount = InXPAmount;
 	Parms.PlayerName = std::move(PlayerName);

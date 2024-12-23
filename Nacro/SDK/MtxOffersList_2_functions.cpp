@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function MtxOffersList_2.MtxOffersList_2_C.PurchaseComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSuccess                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UMtxOffersList_2_C::PurchaseComplete__DelegateSignature(bool bSuccess)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MtxOffersList_2_C", "PurchaseComplete__DelegateSignature");
-
-	Params::MtxOffersList_2_C_PurchaseComplete__DelegateSignature Parms{};
-
-	Parms.bSuccess = bSuccess;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function MtxOffersList_2.MtxOffersList_2_C.ExecuteUbergraph_MtxOffersList_2
 // (HasDefaults)
 // Parameters:

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.NewEventDispatcher_0__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void AVaultWeaponPlacementHelper_C::NewEventDispatcher_0__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "NewEventDispatcher_0__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.ExecuteUbergraph_VaultWeaponPlacementHelper
 // ()
 // Parameters:

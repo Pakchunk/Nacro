@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function ChangeSubgameButton.ChangeSubgameButton_C.OnClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UChangeSubgameButton_C::OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChangeSubgameButton_C", "OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ChangeSubgameButton.ChangeSubgameButton_C.ExecuteUbergraph_ChangeSubgameButton
 // (HasDefaults)
 // Parameters:

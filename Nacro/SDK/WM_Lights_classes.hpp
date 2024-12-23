@@ -31,7 +31,7 @@ public:
 
 public:
 	void ExecuteUbergraph_WM_Lights(int32 EntryPoint);
-	void WMMinusLightcontrol(bool TurnOn);
+	void WM_Lightcontrol(bool TurnOn);
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 

@@ -377,7 +377,7 @@ static_assert(offsetof(BP_FortExpeditionDetailsWidget_C_Set_Remaining_Expiration
 struct BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State final
 {
 public:
-	class UFortExpeditionItem*                    Self2;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortExpeditionItem*                    self2;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsExpeditionInProgress_ReturnValue;       // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -387,7 +387,7 @@ public:
 };
 static_assert(alignof(BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State) == 0x000008, "Wrong alignment on BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State");
 static_assert(sizeof(BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State) == 0x000018, "Wrong size on BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State");
-static_assert(offsetof(BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State, Self2) == 0x000000, "Member 'BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State::Self2' has a wrong offset!");
+static_assert(offsetof(BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State, self2) == 0x000000, "Member 'BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State::self2' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State, Temp_bool_Variable) == 0x000008, "Member 'BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State, CallFunc_IsExpeditionInProgress_ReturnValue) == 0x000009, "Member 'BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State::CallFunc_IsExpeditionInProgress_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State, Temp_int_Variable) == 0x00000C, "Member 'BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State::Temp_int_Variable' has a wrong offset!");

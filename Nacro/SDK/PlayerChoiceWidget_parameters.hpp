@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function PlayerChoiceWidget.PlayerChoiceWidget_C.SurvivorStoryChoiceSelected__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct PlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature final
-{
-public:
-	int32                                         SelectedChoice_0;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature) == 0x000004, "Wrong alignment on PlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature");
-static_assert(sizeof(PlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature) == 0x000004, "Wrong size on PlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature");
-static_assert(offsetof(PlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature, SelectedChoice_0) == 0x000000, "Member 'PlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature::SelectedChoice_0' has a wrong offset!");
-
 // Function PlayerChoiceWidget.PlayerChoiceWidget_C.ExecuteUbergraph_PlayerChoiceWidget
 // 0x00D8 (0x00D8 - 0x0000)
 struct PlayerChoiceWidget_C_ExecuteUbergraph_PlayerChoiceWidget final

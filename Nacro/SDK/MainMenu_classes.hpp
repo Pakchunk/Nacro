@@ -65,7 +65,7 @@ public:
 	UMulticastDelegateProperty_                   OnRequestShowFeedbackWidget;                       // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class ULegalInfo_C*                           Legal_Widget;                                      // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestItemDefinition*               OnboardingQuest;                                   // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TutorialComplete_;                                 // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          tutorialComplete_;                                 // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UQuestScreen_C*                         QuestScreen;                                       // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCredits_C*                             CreditsWidget;                                     // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,14 +79,13 @@ public:
 	class FName                                   Public;                                            // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Friends;                                           // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Private;                                           // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsMatchmaking;                                     // 0x03E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          isMatchmaking;                                     // 0x03E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3E9[0x7];                                      // 0x03E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFriendCode>                    FriendCodes;                                       // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class UFortUITeamInfo*                        LocalTeam;                                         // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UChangeSubgameButton_C*                 ChangeSubgameButton_0;                             // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnRequestShowFeedbackWidget__DelegateSignature();
 	void ExecuteUbergraph_MainMenu(int32 EntryPoint);
 	void BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -236,7 +235,7 @@ static_assert(offsetof(UMainMenu_C, OptionsMenu) == 0x000350, "Member 'UMainMenu
 static_assert(offsetof(UMainMenu_C, OnRequestShowFeedbackWidget) == 0x000358, "Member 'UMainMenu_C::OnRequestShowFeedbackWidget' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, Legal_Widget) == 0x000368, "Member 'UMainMenu_C::Legal_Widget' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, OnboardingQuest) == 0x000370, "Member 'UMainMenu_C::OnboardingQuest' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, TutorialComplete_) == 0x000378, "Member 'UMainMenu_C::TutorialComplete_' has a wrong offset!");
+static_assert(offsetof(UMainMenu_C, tutorialComplete_) == 0x000378, "Member 'UMainMenu_C::tutorialComplete_' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, QuestScreen) == 0x000380, "Member 'UMainMenu_C::QuestScreen' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, CreditsWidget) == 0x000388, "Member 'UMainMenu_C::CreditsWidget' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, StormShieldPermissions) == 0x000390, "Member 'UMainMenu_C::StormShieldPermissions' has a wrong offset!");
@@ -249,7 +248,7 @@ static_assert(offsetof(UMainMenu_C, DeclineAction) == 0x0003C8, "Member 'UMainMe
 static_assert(offsetof(UMainMenu_C, Public) == 0x0003D0, "Member 'UMainMenu_C::Public' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, Friends) == 0x0003D8, "Member 'UMainMenu_C::Friends' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, Private) == 0x0003E0, "Member 'UMainMenu_C::Private' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, IsMatchmaking) == 0x0003E8, "Member 'UMainMenu_C::IsMatchmaking' has a wrong offset!");
+static_assert(offsetof(UMainMenu_C, isMatchmaking) == 0x0003E8, "Member 'UMainMenu_C::isMatchmaking' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, FriendCodes) == 0x0003F0, "Member 'UMainMenu_C::FriendCodes' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, LocalTeam) == 0x000400, "Member 'UMainMenu_C::LocalTeam' has a wrong offset!");
 static_assert(offsetof(UMainMenu_C, ChangeSubgameButton_0) == 0x000408, "Member 'UMainMenu_C::ChangeSubgameButton_0' has a wrong offset!");

@@ -30,13 +30,12 @@ public:
 	class UOutpostScreenStormShield_C*            ParentReference;                                   // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CloseOutpostScreen__DelegateSignature();
 	void ExecuteUbergraph_OutpostScreenStormShieldPermissions(int32 EntryPoint);
 	void OnActivated();
 	void UpdatePrivilagesEvent_1(int32 PlayerIndex);
 	void UpdatePrivilagesEvent_0(const struct FFortTeamMemberInfo& NewTeamMemberInfo);
 	void Construct();
-	void IsPlayerAlone(bool* IsAlone);
+	void isPlayerAlone(bool* isAlone);
 	void UpdatePrivilages();
 	bool IsOwningPlayerOutpostOwner();
 	void AddInputHandlers();

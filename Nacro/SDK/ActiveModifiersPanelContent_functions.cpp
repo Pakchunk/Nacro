@@ -54,9 +54,9 @@ void UActiveModifiersPanelContent_C::Construct()
 // Function ActiveModifiersPanelContent.ActiveModifiersPanelContent_C.Init
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>InModifiers                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortGameplayModifierItemDefinition*>inModifiers                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
-void UActiveModifiersPanelContent_C::Init(TArray<class UFortGameplayModifierItemDefinition*>& InModifiers)
+void UActiveModifiersPanelContent_C::Init(TArray<class UFortGameplayModifierItemDefinition*>& inModifiers)
 {
 	static class UFunction* Func = nullptr;
 
@@ -65,11 +65,11 @@ void UActiveModifiersPanelContent_C::Init(TArray<class UFortGameplayModifierItem
 
 	Params::ActiveModifiersPanelContent_C_Init Parms{};
 
-	Parms.InModifiers = std::move(InModifiers);
+	Parms.inModifiers = std::move(inModifiers);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	InModifiers = std::move(Parms.InModifiers);
+	inModifiers = std::move(Parms.inModifiers);
 }
 
 }

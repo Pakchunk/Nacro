@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function PartyFinderListItem.PartyFinderListItem_C.InviteJoinChanged__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UPartyFinderListItem_C::InviteJoinChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyFinderListItem_C", "InviteJoinChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function PartyFinderListItem.PartyFinderListItem_C.ExecuteUbergraph_PartyFinderListItem
 // ()
 // Parameters:

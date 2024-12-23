@@ -77,10 +77,10 @@ static_assert(offsetof(FrontEndRewards_CurrentReward_C_PlayOpenAnimation, CallFu
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.updateFade
 // 0x001C (0x001C - 0x0000)
-struct FrontEndRewards_CurrentReward_C_UpdateFade final
+struct FrontEndRewards_CurrentReward_C_updateFade final
 {
 public:
-	float                                         TimePassed;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         timePassed;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,15 +89,15 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FInterpEaseInOut_ReturnValue;             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_CurrentReward_C_UpdateFade) == 0x000004, "Wrong alignment on FrontEndRewards_CurrentReward_C_UpdateFade");
-static_assert(sizeof(FrontEndRewards_CurrentReward_C_UpdateFade) == 0x00001C, "Wrong size on FrontEndRewards_CurrentReward_C_UpdateFade");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, TimePassed) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_UpdateFade::TimePassed' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'FrontEndRewards_CurrentReward_C_UpdateFade::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'FrontEndRewards_CurrentReward_C_UpdateFade::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00000C, "Member 'FrontEndRewards_CurrentReward_C_UpdateFade::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, CallFunc_FClamp_ReturnValue) == 0x000010, "Member 'FrontEndRewards_CurrentReward_C_UpdateFade::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000014, "Member 'FrontEndRewards_CurrentReward_C_UpdateFade::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_CurrentReward_C_UpdateFade, CallFunc_FInterpEaseInOut_ReturnValue) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_UpdateFade::CallFunc_FInterpEaseInOut_ReturnValue' has a wrong offset!");
+static_assert(alignof(FrontEndRewards_CurrentReward_C_updateFade) == 0x000004, "Wrong alignment on FrontEndRewards_CurrentReward_C_updateFade");
+static_assert(sizeof(FrontEndRewards_CurrentReward_C_updateFade) == 0x00001C, "Wrong size on FrontEndRewards_CurrentReward_C_updateFade");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_updateFade, timePassed) == 0x000000, "Member 'FrontEndRewards_CurrentReward_C_updateFade::timePassed' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_updateFade, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'FrontEndRewards_CurrentReward_C_updateFade::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_updateFade, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'FrontEndRewards_CurrentReward_C_updateFade::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_updateFade, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00000C, "Member 'FrontEndRewards_CurrentReward_C_updateFade::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_updateFade, CallFunc_FClamp_ReturnValue) == 0x000010, "Member 'FrontEndRewards_CurrentReward_C_updateFade::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_updateFade, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000014, "Member 'FrontEndRewards_CurrentReward_C_updateFade::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_CurrentReward_C_updateFade, CallFunc_FInterpEaseInOut_ReturnValue) == 0x000018, "Member 'FrontEndRewards_CurrentReward_C_updateFade::CallFunc_FInterpEaseInOut_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.SkipOpenAnimation
 // 0x0014 (0x0014 - 0x0000)

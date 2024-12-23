@@ -28,7 +28,6 @@ public:
 	UMulticastDelegateProperty_                   Entry_Selected;                                    // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Entry_Selected__DelegateSignature(class UFortItemDefinition* Entry_Item_Definition);
 	void ExecuteUbergraph_InfoEntry(int32 EntryPoint);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

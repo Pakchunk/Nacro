@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function RotatorSelector.RotatorSelector_C.Selection Changed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void URotatorSelector_C::Selection_Changed__DelegateSignature(int32 Selected_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RotatorSelector_C", "Selection Changed__DelegateSignature");
-
-	Params::RotatorSelector_C_Selection_Changed__DelegateSignature Parms{};
-
-	Parms.Selected_Index = Selected_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function RotatorSelector.RotatorSelector_C.ExecuteUbergraph_RotatorSelector
 // (HasDefaults)
 // Parameters:
@@ -181,15 +161,15 @@ void URotatorSelector_C::Initialize(const class FText& Display_Text, TArray<clas
 }
 
 
-// Function RotatorSelector.RotatorSelector_C.Center On Widget
+// Function RotatorSelector.RotatorSelector_C.Center on Widget
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void URotatorSelector_C::Center_On_Widget()
+void URotatorSelector_C::Center_on_Widget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RotatorSelector_C", "Center On Widget");
+		Func = Class->GetFunction("RotatorSelector_C", "Center on Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

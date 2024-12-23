@@ -43,7 +43,7 @@ public:
 	void InitFromObject(class UObject* InitObject);
 	void OnFortStoreStateChanged(EFortStoreState NewStoreState);
 	void Construct();
-	void Initialize_Card(const struct FCard& InCard);
+	void Initialize_Card(const struct FCard& inCard);
 	void Draw_Card();
 	class FText Get_Card_Name_Text();
 	void Get_Type_Text(class FText* OutText);

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function DailyRewards.DailyRewards_C.OnDailyRewardsComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UDailyRewards_C::OnDailyRewardsComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DailyRewards_C", "OnDailyRewardsComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function DailyRewards.DailyRewards_C.ExecuteUbergraph_DailyRewards
 // (HasDefaults)
 // Parameters:

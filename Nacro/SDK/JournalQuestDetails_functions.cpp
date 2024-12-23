@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function JournalQuestDetails.JournalQuestDetails_C.OnSpokenDialogEnded__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UJournalQuestDetails_C::OnSpokenDialogEnded__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JournalQuestDetails_C", "OnSpokenDialogEnded__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function JournalQuestDetails.JournalQuestDetails_C.ExecuteUbergraph_JournalQuestDetails
 // ()
 // Parameters:
@@ -178,9 +164,9 @@ void UJournalQuestDetails_C::UpdatePanelInfo()
 // Function JournalQuestDetails.JournalQuestDetails_C.AbandonQuest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    QuestAbandoned_                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    questAbandoned_                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UJournalQuestDetails_C::AbandonQuest(bool* QuestAbandoned_)
+void UJournalQuestDetails_C::AbandonQuest(bool* questAbandoned_)
 {
 	static class UFunction* Func = nullptr;
 
@@ -191,8 +177,8 @@ void UJournalQuestDetails_C::AbandonQuest(bool* QuestAbandoned_)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (QuestAbandoned_ != nullptr)
-		*QuestAbandoned_ = Parms.QuestAbandoned_;
+	if (questAbandoned_ != nullptr)
+		*questAbandoned_ = Parms.questAbandoned_;
 }
 
 

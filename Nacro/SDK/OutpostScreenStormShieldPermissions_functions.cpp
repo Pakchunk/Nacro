@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.CloseOutpostScreen__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UOutpostScreenStormShieldPermissions_C::CloseOutpostScreen__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OutpostScreenStormShieldPermissions_C", "CloseOutpostScreen__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.ExecuteUbergraph_OutpostScreenStormShieldPermissions
 // (HasDefaults)
 // Parameters:
@@ -122,21 +108,21 @@ void UOutpostScreenStormShieldPermissions_C::Construct()
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.isPlayerAlone
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    IsAlone                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    isAlone                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOutpostScreenStormShieldPermissions_C::IsPlayerAlone(bool* IsAlone)
+void UOutpostScreenStormShieldPermissions_C::isPlayerAlone(bool* isAlone)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("OutpostScreenStormShieldPermissions_C", "isPlayerAlone");
 
-	Params::OutpostScreenStormShieldPermissions_C_IsPlayerAlone Parms{};
+	Params::OutpostScreenStormShieldPermissions_C_isPlayerAlone Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (IsAlone != nullptr)
-		*IsAlone = Parms.IsAlone;
+	if (isAlone != nullptr)
+		*isAlone = Parms.isAlone;
 }
 
 

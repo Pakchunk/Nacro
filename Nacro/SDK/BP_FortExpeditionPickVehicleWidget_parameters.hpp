@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.OnVehicleSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct alignas(0x08) BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature final
-{
-public:
-	class FName                                   SquadId;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature) == 0x000008, "Wrong alignment on BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature");
-static_assert(sizeof(BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature) == 0x000008, "Wrong size on BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature");
-static_assert(offsetof(BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature, SquadId) == 0x000000, "Member 'BP_FortExpeditionPickVehicleWidget_C_OnVehicleSelected__DelegateSignature::SquadId' has a wrong offset!");
-
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget
 // 0x00C8 (0x00C8 - 0x0000)
 struct BP_FortExpeditionPickVehicleWidget_C_ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget final

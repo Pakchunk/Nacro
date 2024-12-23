@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function NewsEntry.NewsEntry_C.HandleEntrySelected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             BodyText_0                                             (Parm)
-
-void UNewsEntry_C::HandleEntrySelected__DelegateSignature(const class FText& BodyText_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NewsEntry_C", "HandleEntrySelected__DelegateSignature");
-
-	Params::NewsEntry_C_HandleEntrySelected__DelegateSignature Parms{};
-
-	Parms.BodyText_0 = std::move(BodyText_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function NewsEntry.NewsEntry_C.ExecuteUbergraph_NewsEntry
 // ()
 // Parameters:

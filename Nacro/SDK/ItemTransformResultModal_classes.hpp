@@ -37,7 +37,6 @@ public:
 	TArray<struct FFortItemInstanceQuantityPair>  Recycle_Items;                                     // 0x0440(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
-	void OnContinue__DelegateSignature();
 	void ExecuteUbergraph_ItemTransformResultModal(int32 EntryPoint);
 	void OnActivated();
 	void BndEvt__InspectButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

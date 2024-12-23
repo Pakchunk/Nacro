@@ -29,7 +29,7 @@ public:
 public:
 	void ExecuteUbergraph_ActiveModifiersPanelContent(int32 EntryPoint);
 	void Construct();
-	void Init(TArray<class UFortGameplayModifierItemDefinition*>& InModifiers);
+	void Init(TArray<class UFortGameplayModifierItemDefinition*>& inModifiers);
 
 public:
 	static class UClass* StaticClass()

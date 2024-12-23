@@ -20,9 +20,9 @@ namespace SDK
 // Function ActiveModifierItemHUD.ActiveModifierItemHUD_C.AssignIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      InIconSlateBrush                                       (Parm)
+// struct FSlateBrush                      inIconSlateBrush                                       (Parm)
 
-void UActiveModifierItemHUD_C::AssignIcon(const struct FSlateBrush& InIconSlateBrush)
+void UActiveModifierItemHUD_C::AssignIcon(const struct FSlateBrush& inIconSlateBrush)
 {
 	static class UFunction* Func = nullptr;
 
@@ -31,7 +31,7 @@ void UActiveModifierItemHUD_C::AssignIcon(const struct FSlateBrush& InIconSlateB
 
 	Params::ActiveModifierItemHUD_C_AssignIcon Parms{};
 
-	Parms.InIconSlateBrush = std::move(InIconSlateBrush);
+	Parms.inIconSlateBrush = std::move(inIconSlateBrush);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -12,9 +12,9 @@
 
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
+#include "En_ShellTypes_01_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
-#include "En_ShellTypes_01_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -23,7 +23,7 @@ namespace SDK
 
 // BlueprintGeneratedClass B_Ranged_Generic.B_Ranged_Generic_C
 // 0x0148 (0x0DE8 - 0x0CA0)
-class AB_Ranged_Generic_C final : public AFortWeaponRanged
+class AB_Ranged_Generic_C : public AFortWeaponRanged
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0CA0(0x0008)(Transient, DuplicateTransient)
@@ -53,7 +53,7 @@ public:
 	class UParticleSystem*                        ShellsParticleSystemTemplate;                      // 0x0D20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   ReloadSocketName;                                  // 0x0D28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AFortAIPawn*>                    Array_Of_Active_Enemy_AI;                          // 0x0D30(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          Scope_Minus_Render_Enemies_To_Custom_Depth_Buffer; // 0x0D40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          Scope___Render_Enemies_To_Custom_Depth_Buffer;     // 0x0D40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_D41[0x7];                                      // 0x0D41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Shells_Socket_Name;                                // 0x0D48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	En_ShellTypes_01                              ShellTypeSelect;                                   // 0x0D50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -155,7 +155,7 @@ static_assert(offsetof(AB_Ranged_Generic_C, UseShellsOnPump_) == 0x000D1A, "Memb
 static_assert(offsetof(AB_Ranged_Generic_C, ShellsParticleSystemTemplate) == 0x000D20, "Member 'AB_Ranged_Generic_C::ShellsParticleSystemTemplate' has a wrong offset!");
 static_assert(offsetof(AB_Ranged_Generic_C, ReloadSocketName) == 0x000D28, "Member 'AB_Ranged_Generic_C::ReloadSocketName' has a wrong offset!");
 static_assert(offsetof(AB_Ranged_Generic_C, Array_Of_Active_Enemy_AI) == 0x000D30, "Member 'AB_Ranged_Generic_C::Array_Of_Active_Enemy_AI' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Scope_Minus_Render_Enemies_To_Custom_Depth_Buffer) == 0x000D40, "Member 'AB_Ranged_Generic_C::Scope_Minus_Render_Enemies_To_Custom_Depth_Buffer' has a wrong offset!");
+static_assert(offsetof(AB_Ranged_Generic_C, Scope___Render_Enemies_To_Custom_Depth_Buffer) == 0x000D40, "Member 'AB_Ranged_Generic_C::Scope___Render_Enemies_To_Custom_Depth_Buffer' has a wrong offset!");
 static_assert(offsetof(AB_Ranged_Generic_C, Shells_Socket_Name) == 0x000D48, "Member 'AB_Ranged_Generic_C::Shells_Socket_Name' has a wrong offset!");
 static_assert(offsetof(AB_Ranged_Generic_C, ShellTypeSelect) == 0x000D50, "Member 'AB_Ranged_Generic_C::ShellTypeSelect' has a wrong offset!");
 static_assert(offsetof(AB_Ranged_Generic_C, Shells_Spawn_Rate_Scale) == 0x000D54, "Member 'AB_Ranged_Generic_C::Shells_Spawn_Rate_Scale' has a wrong offset!");

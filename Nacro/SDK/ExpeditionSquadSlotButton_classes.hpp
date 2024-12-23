@@ -33,9 +33,6 @@ public:
 	EFortItemCardSize                             SlottedItemCardSize;                               // 0x0938(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
-	void OnSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex_0);
-	void OnSquadSlotUpdated__DelegateSignature(class UFortItem* Item);
-	void OnSquadSlotOpened__DelegateSignature();
 	void ExecuteUbergraph_ExpeditionSquadSlotButton(int32 EntryPoint);
 	void OnSelected();
 	void OnDoubleClicked();

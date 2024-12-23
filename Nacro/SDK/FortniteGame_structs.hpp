@@ -7630,7 +7630,7 @@ public:
 	TArray<class UFortAlterationItemDefinition*>  AlterationDefinitions;                             // 0x0028(0x0010)(ZeroConstructor, SaveGame, NativeAccessSpecifierPrivate)
 	class FString                                 ItemSource;                                        // 0x0038(0x0010)(ZeroConstructor, SaveGame, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FGuid                                  ItemGuid;                                          // 0x0048(0x0010)(SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          Inventory_overflow_date;                           // 0x0058(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          inventory_overflow_date;                           // 0x0058(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bIsReplicatedCopy;                                 // 0x0059(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bIsDirty;                                          // 0x005A(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_5B[0x5];                                       // 0x005B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
@@ -7650,7 +7650,7 @@ static_assert(offsetof(FFortItemEntry, LoadedAmmo) == 0x000020, "Member 'FFortIt
 static_assert(offsetof(FFortItemEntry, AlterationDefinitions) == 0x000028, "Member 'FFortItemEntry::AlterationDefinitions' has a wrong offset!");
 static_assert(offsetof(FFortItemEntry, ItemSource) == 0x000038, "Member 'FFortItemEntry::ItemSource' has a wrong offset!");
 static_assert(offsetof(FFortItemEntry, ItemGuid) == 0x000048, "Member 'FFortItemEntry::ItemGuid' has a wrong offset!");
-static_assert(offsetof(FFortItemEntry, Inventory_overflow_date) == 0x000058, "Member 'FFortItemEntry::Inventory_overflow_date' has a wrong offset!");
+static_assert(offsetof(FFortItemEntry, inventory_overflow_date) == 0x000058, "Member 'FFortItemEntry::inventory_overflow_date' has a wrong offset!");
 static_assert(offsetof(FFortItemEntry, bIsReplicatedCopy) == 0x000059, "Member 'FFortItemEntry::bIsReplicatedCopy' has a wrong offset!");
 static_assert(offsetof(FFortItemEntry, bIsDirty) == 0x00005A, "Member 'FFortItemEntry::bIsDirty' has a wrong offset!");
 static_assert(offsetof(FFortItemEntry, GiftingInfo) == 0x000060, "Member 'FFortItemEntry::GiftingInfo' has a wrong offset!");

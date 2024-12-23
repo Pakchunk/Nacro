@@ -992,7 +992,7 @@ static_assert(offsetof(Car_Copper_C_MaterialEditorSine, CallFunc_DegSin_ReturnVa
 struct Car_Copper_C_Set_Light_Brightness final
 {
 public:
-	float                                         ZeroMinus1_Intensity;                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Zero_1_Intensity;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Include_Second_Emissive_Channel;                   // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1024,7 +1024,7 @@ public:
 };
 static_assert(alignof(Car_Copper_C_Set_Light_Brightness) == 0x000008, "Wrong alignment on Car_Copper_C_Set_Light_Brightness");
 static_assert(sizeof(Car_Copper_C_Set_Light_Brightness) == 0x0000C0, "Wrong size on Car_Copper_C_Set_Light_Brightness");
-static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, ZeroMinus1_Intensity) == 0x000000, "Member 'Car_Copper_C_Set_Light_Brightness::ZeroMinus1_Intensity' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, Zero_1_Intensity) == 0x000000, "Member 'Car_Copper_C_Set_Light_Brightness::Zero_1_Intensity' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, Include_Second_Emissive_Channel) == 0x000004, "Member 'Car_Copper_C_Set_Light_Brightness::Include_Second_Emissive_Channel' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, Temp_bool_Variable) == 0x000005, "Member 'Car_Copper_C_Set_Light_Brightness::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(Car_Copper_C_Set_Light_Brightness, CallFunc_Array_LastIndex_ReturnValue) == 0x000008, "Member 'Car_Copper_C_Set_Light_Brightness::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
@@ -1073,7 +1073,7 @@ static_assert(offsetof(Car_Copper_C_Randomize_the_target_brightness_levels, Call
 
 // Function Car_Copper.Car_Copper_C.toggle light visibility
 // 0x0008 (0x0008 - 0x0000)
-struct Car_Copper_C_Toggle_light_visibility final
+struct Car_Copper_C_toggle_light_visibility final
 {
 public:
 	bool                                          bNewVisibility;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1085,16 +1085,16 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Car_Copper_C_Toggle_light_visibility) == 0x000001, "Wrong alignment on Car_Copper_C_Toggle_light_visibility");
-static_assert(sizeof(Car_Copper_C_Toggle_light_visibility) == 0x000008, "Wrong size on Car_Copper_C_Toggle_light_visibility");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, bNewVisibility) == 0x000000, "Member 'Car_Copper_C_Toggle_light_visibility::bNewVisibility' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue2) == 0x000002, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue3) == 0x000004, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_IsValid_ReturnValue4) == 0x000005, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_BooleanAND_ReturnValue2) == 0x000006, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Car_Copper_C_Toggle_light_visibility, CallFunc_BooleanAND_ReturnValue3) == 0x000007, "Member 'Car_Copper_C_Toggle_light_visibility::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
+static_assert(alignof(Car_Copper_C_toggle_light_visibility) == 0x000001, "Wrong alignment on Car_Copper_C_toggle_light_visibility");
+static_assert(sizeof(Car_Copper_C_toggle_light_visibility) == 0x000008, "Wrong size on Car_Copper_C_toggle_light_visibility");
+static_assert(offsetof(Car_Copper_C_toggle_light_visibility, bNewVisibility) == 0x000000, "Member 'Car_Copper_C_toggle_light_visibility::bNewVisibility' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_toggle_light_visibility, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'Car_Copper_C_toggle_light_visibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_toggle_light_visibility, CallFunc_IsValid_ReturnValue2) == 0x000002, "Member 'Car_Copper_C_toggle_light_visibility::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_toggle_light_visibility, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'Car_Copper_C_toggle_light_visibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_toggle_light_visibility, CallFunc_IsValid_ReturnValue3) == 0x000004, "Member 'Car_Copper_C_toggle_light_visibility::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_toggle_light_visibility, CallFunc_IsValid_ReturnValue4) == 0x000005, "Member 'Car_Copper_C_toggle_light_visibility::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_toggle_light_visibility, CallFunc_BooleanAND_ReturnValue2) == 0x000006, "Member 'Car_Copper_C_toggle_light_visibility::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(Car_Copper_C_toggle_light_visibility, CallFunc_BooleanAND_ReturnValue3) == 0x000007, "Member 'Car_Copper_C_toggle_light_visibility::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
 
 }
 

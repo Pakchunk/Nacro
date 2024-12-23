@@ -36,7 +36,7 @@ public:
 	void Construct();
 	void GetButtonVisibility(ESlateVisibility* NewParam);
 	void SetErrorInfo(const struct FFortErrorInfo& ErrorInfo_0);
-	void Center_On_Widget(bool* Did_Center);
+	void Center_on_Widget(bool* Did_Center);
 
 public:
 	static class UClass* StaticClass()

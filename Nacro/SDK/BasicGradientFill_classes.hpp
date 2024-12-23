@@ -33,7 +33,7 @@ public:
 public:
 	void ExecuteUbergraph_BasicGradientFill(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
-	void Set_Fill(const struct FLinearColor& Color_1_0, const struct FLinearColor& Color_2_0, float Rotation__0_Minus_1_);
+	void Set_Fill(const struct FLinearColor& Color_1_0, const struct FLinearColor& Color_2_0, float Rotation__0___1_);
 	void Set_Brush_Size(const struct FVector2D& Brush_Size_0);
 
 public:

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "ItemDisplayMode_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "ItemDisplayMode_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
 #include "ItemDisplayStyle_structs.hpp"
-#include "ItemTextureSet_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ItemTextureSet_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "GameplayTags_structs.hpp"
 

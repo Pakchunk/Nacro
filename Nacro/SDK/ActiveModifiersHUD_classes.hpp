@@ -31,7 +31,7 @@ public:
 	void ExecuteUbergraph_ActiveModifiersHUD(int32 EntryPoint);
 	void Construct();
 	void OnActiveGameplayModifiersChanged(const TArray<class UFortGameplayModifierItemDefinition*>& AppliedModifiers);
-	void PopulateModifiers(TArray<class UFortGameplayModifierItemDefinition*>& InModifiers);
+	void PopulateModifiers(TArray<class UFortGameplayModifierItemDefinition*>& inModifiers);
 
 public:
 	static class UClass* StaticClass()

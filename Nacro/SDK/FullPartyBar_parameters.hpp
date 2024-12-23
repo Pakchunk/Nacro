@@ -19,17 +19,6 @@
 namespace SDK::Params
 {
 
-// Function FullPartyBar.FullPartyBar_C.OnButtonHovered__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct FullPartyBar_C_OnButtonHovered__DelegateSignature final
-{
-public:
-	class FText                                   HelpText;                                          // 0x0000(0x0018)(Parm)
-};
-static_assert(alignof(FullPartyBar_C_OnButtonHovered__DelegateSignature) == 0x000008, "Wrong alignment on FullPartyBar_C_OnButtonHovered__DelegateSignature");
-static_assert(sizeof(FullPartyBar_C_OnButtonHovered__DelegateSignature) == 0x000018, "Wrong size on FullPartyBar_C_OnButtonHovered__DelegateSignature");
-static_assert(offsetof(FullPartyBar_C_OnButtonHovered__DelegateSignature, HelpText) == 0x000000, "Member 'FullPartyBar_C_OnButtonHovered__DelegateSignature::HelpText' has a wrong offset!");
-
 // Function FullPartyBar.FullPartyBar_C.ExecuteUbergraph_FullPartyBar
 // 0x0170 (0x0170 - 0x0000)
 struct FullPartyBar_C_ExecuteUbergraph_FullPartyBar final
@@ -300,10 +289,10 @@ static_assert(offsetof(FullPartyBar_C_OpenPartyPrivacy, CallFunc_GetUIManagerWid
 
 // Function FullPartyBar.FullPartyBar_C.isTeammateSlotPopulated
 // 0x0038 (0x0038 - 0x0000)
-struct FullPartyBar_C_IsTeammateSlotPopulated final
+struct FullPartyBar_C_isTeammateSlotPopulated final
 {
 public:
-	int32                                         InSlotNUmber;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         inSlotNUmber;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FUniqueNetIdRepl>               CallFunc_GetTeamMemberIDs_TeamMemberIDs;           // 0x0008(0x0010)(ZeroConstructor, ReferenceParm)
@@ -311,14 +300,14 @@ public:
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValidNetID_ReturnValue;                 // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyBar_C_IsTeammateSlotPopulated) == 0x000008, "Wrong alignment on FullPartyBar_C_IsTeammateSlotPopulated");
-static_assert(sizeof(FullPartyBar_C_IsTeammateSlotPopulated) == 0x000038, "Wrong size on FullPartyBar_C_IsTeammateSlotPopulated");
-static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, InSlotNUmber) == 0x000000, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::InSlotNUmber' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, ReturnValue) == 0x000004, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, CallFunc_GetTeamMemberIDs_TeamMemberIDs) == 0x000008, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::CallFunc_GetTeamMemberIDs_TeamMemberIDs' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, CallFunc_Array_Get_Item) == 0x000018, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000030, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyBar_C_IsTeammateSlotPopulated, CallFunc_IsValidNetID_ReturnValue) == 0x000031, "Member 'FullPartyBar_C_IsTeammateSlotPopulated::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
+static_assert(alignof(FullPartyBar_C_isTeammateSlotPopulated) == 0x000008, "Wrong alignment on FullPartyBar_C_isTeammateSlotPopulated");
+static_assert(sizeof(FullPartyBar_C_isTeammateSlotPopulated) == 0x000038, "Wrong size on FullPartyBar_C_isTeammateSlotPopulated");
+static_assert(offsetof(FullPartyBar_C_isTeammateSlotPopulated, inSlotNUmber) == 0x000000, "Member 'FullPartyBar_C_isTeammateSlotPopulated::inSlotNUmber' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_isTeammateSlotPopulated, ReturnValue) == 0x000004, "Member 'FullPartyBar_C_isTeammateSlotPopulated::ReturnValue' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_isTeammateSlotPopulated, CallFunc_GetTeamMemberIDs_TeamMemberIDs) == 0x000008, "Member 'FullPartyBar_C_isTeammateSlotPopulated::CallFunc_GetTeamMemberIDs_TeamMemberIDs' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_isTeammateSlotPopulated, CallFunc_Array_Get_Item) == 0x000018, "Member 'FullPartyBar_C_isTeammateSlotPopulated::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_isTeammateSlotPopulated, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000030, "Member 'FullPartyBar_C_isTeammateSlotPopulated::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(FullPartyBar_C_isTeammateSlotPopulated, CallFunc_IsValidNetID_ReturnValue) == 0x000031, "Member 'FullPartyBar_C_isTeammateSlotPopulated::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
 
 // Function FullPartyBar.FullPartyBar_C.GetTotalNumFriendCodes
 // 0x0020 (0x0020 - 0x0000)

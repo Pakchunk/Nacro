@@ -17,34 +17,6 @@
 namespace SDK::Params
 {
 
-// Function QuantitySelector.QuantitySelector_C.OnButtonClickedDispatcher__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature final
-{
-public:
-	int32                                         ChosenValue;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              FortItem;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature) == 0x000008, "Wrong alignment on QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature");
-static_assert(sizeof(QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature) == 0x000010, "Wrong size on QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature");
-static_assert(offsetof(QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature, ChosenValue) == 0x000000, "Member 'QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature::ChosenValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature, FortItem) == 0x000008, "Member 'QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature::FortItem' has a wrong offset!");
-
-// Function QuantitySelector.QuantitySelector_C.OnStackValueChangedDispatcher__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature final
-{
-public:
-	int32                                         NewValue;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortItem*                              FortItem;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature) == 0x000008, "Wrong alignment on QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature");
-static_assert(sizeof(QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature) == 0x000010, "Wrong size on QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature");
-static_assert(offsetof(QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature, NewValue) == 0x000000, "Member 'QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature::NewValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature, FortItem) == 0x000008, "Member 'QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature::FortItem' has a wrong offset!");
-
 // Function QuantitySelector.QuantitySelector_C.ExecuteUbergraph_QuantitySelector
 // 0x0070 (0x0070 - 0x0000)
 struct QuantitySelector_C_ExecuteUbergraph_QuantitySelector final

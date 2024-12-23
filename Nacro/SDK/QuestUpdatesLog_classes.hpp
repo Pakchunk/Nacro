@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "DynamicQuestUpdateInfo_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "DynamicQuestUpdateInfo_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK

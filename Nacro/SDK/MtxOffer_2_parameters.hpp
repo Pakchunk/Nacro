@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function MtxOffer_2.MtxOffer_2_C.BuyItem__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct MtxOffer_2_C_BuyItem__DelegateSignature final
-{
-public:
-	class FString                                 OfferId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(MtxOffer_2_C_BuyItem__DelegateSignature) == 0x000008, "Wrong alignment on MtxOffer_2_C_BuyItem__DelegateSignature");
-static_assert(sizeof(MtxOffer_2_C_BuyItem__DelegateSignature) == 0x000010, "Wrong size on MtxOffer_2_C_BuyItem__DelegateSignature");
-static_assert(offsetof(MtxOffer_2_C_BuyItem__DelegateSignature, OfferId) == 0x000000, "Member 'MtxOffer_2_C_BuyItem__DelegateSignature::OfferId' has a wrong offset!");
-
 // Function MtxOffer_2.MtxOffer_2_C.ExecuteUbergraph_MtxOffer_2
 // 0x0250 (0x0250 - 0x0000)
 struct MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2 final

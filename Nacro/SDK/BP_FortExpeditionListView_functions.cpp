@@ -17,46 +17,6 @@
 namespace SDK
 {
 
-// Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.OnItemClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_FortExpeditionListView_C::OnItemClicked__DelegateSignature(class UObject* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortExpeditionListView_C", "OnItemClicked__DelegateSignature");
-
-	Params::BP_FortExpeditionListView_C_OnItemClicked__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.OnItemHovered__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_FortExpeditionListView_C::OnItemHovered__DelegateSignature(class UObject* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortExpeditionListView_C", "OnItemHovered__DelegateSignature");
-
-	Params::BP_FortExpeditionListView_C_OnItemHovered__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.ExecuteUbergraph_BP_FortExpeditionListView
 // ()
 // Parameters:

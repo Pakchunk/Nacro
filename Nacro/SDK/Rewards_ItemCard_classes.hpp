@@ -72,10 +72,6 @@ public:
 	float                                         DropShadowPadding;                                 // 0x0370(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnSlideAnimationFinished__DelegateSignature(class URewards_ItemCard_C* RewardsItemCard);
-	void OnInspectClicked__DelegateSignature(class URewards_ItemCard_C* Card);
-	void OnResizeAnimationFinished__DelegateSignature(class URewards_ItemCard_C* RewardsItemCard);
-	void OnPopInAnimationFinished__DelegateSignature();
 	void ExecuteUbergraph_Rewards_ItemCard(int32 EntryPoint);
 	void Construct();
 	void BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

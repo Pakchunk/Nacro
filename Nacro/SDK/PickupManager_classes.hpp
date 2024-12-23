@@ -24,10 +24,10 @@ class UPickupManager_C final : public UFortHUDElementWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UPackResource_C*                        _Pack_Resource__Metal;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPackResource_C*                        _Pack_Resource__Stone;                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPackResource_C*                        _Pack_Resource__Wood;                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           _Vertical_Box__Pickup_Message_Stream;              // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPackResource_C*                        mPack_Resource__Metal;                             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPackResource_C*                        mPack_Resource__Stone;                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPackResource_C*                        mPack_Resource__Wood;                              // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           mVertical_Box__Pickup_Message_Stream;              // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BackpackImage;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBluGloInventory_C*                     BluGloInventory;                                   // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          CommonBorderSurvivorCount;                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -65,10 +65,10 @@ public:
 static_assert(alignof(UPickupManager_C) == 0x000008, "Wrong alignment on UPickupManager_C");
 static_assert(sizeof(UPickupManager_C) == 0x0002D8, "Wrong size on UPickupManager_C");
 static_assert(offsetof(UPickupManager_C, UberGraphFrame) == 0x000260, "Member 'UPickupManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, _Pack_Resource__Metal) == 0x000268, "Member 'UPickupManager_C::_Pack_Resource__Metal' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, _Pack_Resource__Stone) == 0x000270, "Member 'UPickupManager_C::_Pack_Resource__Stone' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, _Pack_Resource__Wood) == 0x000278, "Member 'UPickupManager_C::_Pack_Resource__Wood' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, _Vertical_Box__Pickup_Message_Stream) == 0x000280, "Member 'UPickupManager_C::_Vertical_Box__Pickup_Message_Stream' has a wrong offset!");
+static_assert(offsetof(UPickupManager_C, mPack_Resource__Metal) == 0x000268, "Member 'UPickupManager_C::mPack_Resource__Metal' has a wrong offset!");
+static_assert(offsetof(UPickupManager_C, mPack_Resource__Stone) == 0x000270, "Member 'UPickupManager_C::mPack_Resource__Stone' has a wrong offset!");
+static_assert(offsetof(UPickupManager_C, mPack_Resource__Wood) == 0x000278, "Member 'UPickupManager_C::mPack_Resource__Wood' has a wrong offset!");
+static_assert(offsetof(UPickupManager_C, mVertical_Box__Pickup_Message_Stream) == 0x000280, "Member 'UPickupManager_C::mVertical_Box__Pickup_Message_Stream' has a wrong offset!");
 static_assert(offsetof(UPickupManager_C, BackpackImage) == 0x000288, "Member 'UPickupManager_C::BackpackImage' has a wrong offset!");
 static_assert(offsetof(UPickupManager_C, BluGloInventory) == 0x000290, "Member 'UPickupManager_C::BluGloInventory' has a wrong offset!");
 static_assert(offsetof(UPickupManager_C, CommonBorderSurvivorCount) == 0x000298, "Member 'UPickupManager_C::CommonBorderSurvivorCount' has a wrong offset!");

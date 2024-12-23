@@ -36,7 +36,6 @@ public:
 	bool                                          SelectedResponse;                                  // 0x0460(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnEulaResponse__DelegateSignature(bool Accepted);
 	void ExecuteUbergraph_EulaWidget(int32 EntryPoint);
 	void Construct();
 	void Destruct();

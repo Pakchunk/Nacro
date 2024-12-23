@@ -22,7 +22,7 @@ namespace SDK
 class USkillTreeColorSetup_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void SkillTreeBGSetup(const struct FSkillTreePageColors& Page_Color, ESkillTreePages Pages, class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext);
+	static void SkillTreeBGSetup(const struct FSkillTreePageColors& Page_Color, ESkillTreePages Pages, class UMaterialInstanceDynamic* Mid, class UObject* m_WorldContext);
 
 public:
 	static class UClass* StaticClass()

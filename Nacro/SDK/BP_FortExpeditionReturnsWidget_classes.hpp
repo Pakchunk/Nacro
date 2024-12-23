@@ -33,7 +33,6 @@ public:
 	UMulticastDelegateProperty_                   OnExpeditionCompleted;                             // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnExpeditionCompleted__DelegateSignature(class UFortExpeditionItem* Item_0);
 	void ExecuteUbergraph_BP_FortExpeditionReturnsWidget(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void Construct();

@@ -63,10 +63,10 @@ public:
 	void HandleCardPackStore(class FName TabId);
 	bool Is_Transform_Feature_Unlocked();
 	void Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers);
-	void CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& InOfferArray, struct FCardPackOffer* OutPriorityOffer, bool* FoundOffer);
+	void CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& inOfferArray, struct FCardPackOffer* outPriorityOffer, bool* FoundOffer);
 	void GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, EStoreOfferCosts* OutCustomStoreOfferCost);
 	void CheckDisplayCriteria(EStoreOfferCosts InCustomStoreOfferCost, const struct FCardPackOffer& InCardPackOffer, bool* bPassedDisplayCriteria);
-	void Determine_If_Any_nonMinusMTX_offers_are_purchasable(bool* ShowBang);
+	void Determine_If_Any_non_MTX_offers_are_purchasable(bool* ShowBang);
 
 public:
 	static class UClass* StaticClass()

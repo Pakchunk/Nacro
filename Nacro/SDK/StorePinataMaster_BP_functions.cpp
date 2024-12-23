@@ -54,7 +54,7 @@ void AStorePinataMaster_BP_C::SpawnCandy()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.Stop-SwingingEyeAnim
 // (BlueprintCallable, BlueprintEvent)
 
-void AStorePinataMaster_BP_C::StopMinusSwingingEyeAnim()
+void AStorePinataMaster_BP_C::Stop_SwingingEyeAnim()
 {
 	static class UFunction* Func = nullptr;
 
@@ -68,7 +68,7 @@ void AStorePinataMaster_BP_C::StopMinusSwingingEyeAnim()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.Stop-DropEyeAnim
 // (BlueprintCallable, BlueprintEvent)
 
-void AStorePinataMaster_BP_C::StopMinusDropEyeAnim()
+void AStorePinataMaster_BP_C::Stop_DropEyeAnim()
 {
 	static class UFunction* Func = nullptr;
 
@@ -420,7 +420,7 @@ void AStorePinataMaster_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7(c
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade3__TasslesDropOff2__EventFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade3__TasslesDropOff2__EventFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade3__TasslesDropOff2__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -434,7 +434,7 @@ void AStorePinataMaster_BP_C::TLMinusUpgrade3__TasslesDropOff2__EventFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade3__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade3__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade3__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -448,7 +448,7 @@ void AStorePinataMaster_BP_C::TLMinusUpgrade3__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade3__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade3__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade3__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -462,7 +462,7 @@ void AStorePinataMaster_BP_C::TLMinusUpgrade3__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-DropEyeAnim__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusDropEyeAnim__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_DropEyeAnim__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -476,7 +476,7 @@ void AStorePinataMaster_BP_C::TLMinusDropEyeAnim__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-DropEyeAnim__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusDropEyeAnim__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_DropEyeAnim__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -490,7 +490,7 @@ void AStorePinataMaster_BP_C::TLMinusDropEyeAnim__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-PupilContracts__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusPupilContracts__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_PupilContracts__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -504,7 +504,7 @@ void AStorePinataMaster_BP_C::TLMinusPupilContracts__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-PupilContracts__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusPupilContracts__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_PupilContracts__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -518,7 +518,7 @@ void AStorePinataMaster_BP_C::TLMinusPupilContracts__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-SuspiciousEyes__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusSuspiciousEyes__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_SuspiciousEyes__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -532,7 +532,7 @@ void AStorePinataMaster_BP_C::TLMinusSuspiciousEyes__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-SuspiciousEyes__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusSuspiciousEyes__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_SuspiciousEyes__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -546,7 +546,7 @@ void AStorePinataMaster_BP_C::TLMinusSuspiciousEyes__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-EquipWeapon__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusEquipWeapon__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_EquipWeapon__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -560,7 +560,7 @@ void AStorePinataMaster_BP_C::TLMinusEquipWeapon__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-EquipWeapon__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusEquipWeapon__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_EquipWeapon__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -574,7 +574,7 @@ void AStorePinataMaster_BP_C::TLMinusEquipWeapon__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Attack__EventTrackHit__EventFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusAttack__EventTrackHit__EventFunc()
+void AStorePinataMaster_BP_C::TL_Attack__EventTrackHit__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -588,7 +588,7 @@ void AStorePinataMaster_BP_C::TLMinusAttack__EventTrackHit__EventFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Attack__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusAttack__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_Attack__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -602,7 +602,7 @@ void AStorePinataMaster_BP_C::TLMinusAttack__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Attack__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusAttack__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_Attack__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -658,7 +658,7 @@ void AStorePinataMaster_BP_C::TL_PushbroomAnim__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade1__TasslesDropOffEvent__EventFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade1__TasslesDropOffEvent__EventFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade1__TasslesDropOffEvent__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -672,7 +672,7 @@ void AStorePinataMaster_BP_C::TLMinusUpgrade1__TasslesDropOffEvent__EventFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade1__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade1__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade1__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -686,7 +686,7 @@ void AStorePinataMaster_BP_C::TLMinusUpgrade1__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade1__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade1__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade1__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -756,7 +756,7 @@ void AStorePinataMaster_BP_C::TL_CardCough__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-ChangeLighting__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusChangeLighting__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_ChangeLighting__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -770,7 +770,7 @@ void AStorePinataMaster_BP_C::TLMinusChangeLighting__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-ChangeLighting__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusChangeLighting__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_ChangeLighting__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -784,7 +784,7 @@ void AStorePinataMaster_BP_C::TLMinusChangeLighting__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-EyesFollowMouseAgain__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusEyesFollowMouseAgain__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_EyesFollowMouseAgain__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -798,7 +798,7 @@ void AStorePinataMaster_BP_C::TLMinusEyesFollowMouseAgain__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-EyesFollowMouseAgain__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusEyesFollowMouseAgain__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_EyesFollowMouseAgain__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -812,7 +812,7 @@ void AStorePinataMaster_BP_C::TLMinusEyesFollowMouseAgain__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-RegularEyes__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusRegularEyes__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_RegularEyes__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -826,7 +826,7 @@ void AStorePinataMaster_BP_C::TLMinusRegularEyes__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-RegularEyes__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusRegularEyes__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_RegularEyes__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -840,7 +840,7 @@ void AStorePinataMaster_BP_C::TLMinusRegularEyes__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-UndarkenBG__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUndarkenBG__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_UndarkenBG__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -854,7 +854,7 @@ void AStorePinataMaster_BP_C::TLMinusUndarkenBG__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-UndarkenBG__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUndarkenBG__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_UndarkenBG__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -868,7 +868,7 @@ void AStorePinataMaster_BP_C::TLMinusUndarkenBG__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-DarkenBG__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusDarkenBG__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_DarkenBG__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -882,7 +882,7 @@ void AStorePinataMaster_BP_C::TLMinusDarkenBG__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-DarkenBG__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusDarkenBG__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_DarkenBG__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -896,7 +896,7 @@ void AStorePinataMaster_BP_C::TLMinusDarkenBG__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade2__TasslesDropOff2__EventFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade2__TasslesDropOff2__EventFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade2__TasslesDropOff2__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -910,7 +910,7 @@ void AStorePinataMaster_BP_C::TLMinusUpgrade2__TasslesDropOff2__EventFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade2__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade2__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade2__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -924,7 +924,7 @@ void AStorePinataMaster_BP_C::TLMinusUpgrade2__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-Upgrade2__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusUpgrade2__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_Upgrade2__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -938,7 +938,7 @@ void AStorePinataMaster_BP_C::TLMinusUpgrade2__FinishedFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-WeaponCharge__UpdateFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusWeaponCharge__UpdateFunc()
+void AStorePinataMaster_BP_C::TL_WeaponCharge__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -952,7 +952,7 @@ void AStorePinataMaster_BP_C::TLMinusWeaponCharge__UpdateFunc()
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.TL-WeaponCharge__FinishedFunc
 // (BlueprintEvent)
 
-void AStorePinataMaster_BP_C::TLMinusWeaponCharge__FinishedFunc()
+void AStorePinataMaster_BP_C::TL_WeaponCharge__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 

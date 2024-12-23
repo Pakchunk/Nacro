@@ -23,9 +23,9 @@ class ATVPostProcessBP_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(Transient, DuplicateTransient)
-	class UPostProcessComponent*                  FullScreenTVPPMinusStoreFF;                        // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPostProcessComponent*                  FullScreenTVPP_StoreFF;                            // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UBillboardComponent*                    Billboard;                                         // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPostProcessComponent*                  FullScreenTVPPMinusOnlyMaterialModified;           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPostProcessComponent*                  FullScreenTVPP_OnlyMaterialModified;               // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UPostProcessComponent*                  FullScreenTVPP;                                    // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd02_A319E55147356F64E8D7AE9C824CC6C2; // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd_A319E55147356F64E8D7AE9C824CC6C2; // 0x03B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -96,7 +96,7 @@ public:
 	uint8                                         Pad_4CD[0x3];                                      // 0x04CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     StartScreen;                                       // 0x04D0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          GrabNewColorBool;                                  // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Increase_distortion_;                              // 0x04D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          increase_distortion_;                              // 0x04D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4DA[0x2];                                      // 0x04DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         AdditionalDistortionAmount;                        // 0x04DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Show_troll;                                        // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -110,7 +110,7 @@ public:
 	float                                         Ideal_display_scene_max_value;                     // 0x04F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SkipDos;                                           // 0x04F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DisableOnStartup;                                  // 0x04F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          FrontEndCameraSwitchMinusInProgress;               // 0x04FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	bool                                          FrontEndCameraSwitch_InProgress;                   // 0x04FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_4FB[0x1];                                      // 0x04FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PreviousSceneModulation;                           // 0x04FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          FFInProgress;                                      // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
@@ -174,9 +174,9 @@ public:
 static_assert(alignof(ATVPostProcessBP_C) == 0x000008, "Wrong alignment on ATVPostProcessBP_C");
 static_assert(sizeof(ATVPostProcessBP_C) == 0x000508, "Wrong size on ATVPostProcessBP_C");
 static_assert(offsetof(ATVPostProcessBP_C, UberGraphFrame) == 0x000388, "Member 'ATVPostProcessBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPPMinusStoreFF) == 0x000390, "Member 'ATVPostProcessBP_C::FullScreenTVPPMinusStoreFF' has a wrong offset!");
+static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPP_StoreFF) == 0x000390, "Member 'ATVPostProcessBP_C::FullScreenTVPP_StoreFF' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, Billboard) == 0x000398, "Member 'ATVPostProcessBP_C::Billboard' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPPMinusOnlyMaterialModified) == 0x0003A0, "Member 'ATVPostProcessBP_C::FullScreenTVPPMinusOnlyMaterialModified' has a wrong offset!");
+static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPP_OnlyMaterialModified) == 0x0003A0, "Member 'ATVPostProcessBP_C::FullScreenTVPP_OnlyMaterialModified' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPP) == 0x0003A8, "Member 'ATVPostProcessBP_C::FullScreenTVPP' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd02_A319E55147356F64E8D7AE9C824CC6C2) == 0x0003B0, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd02_A319E55147356F64E8D7AE9C824CC6C2' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd_A319E55147356F64E8D7AE9C824CC6C2) == 0x0003B4, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd_A319E55147356F64E8D7AE9C824CC6C2' has a wrong offset!");
@@ -238,7 +238,7 @@ static_assert(offsetof(ATVPostProcessBP_C, StartScreen_Screen_Modulation_676222D
 static_assert(offsetof(ATVPostProcessBP_C, StartScreen__Direction_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004CC, "Member 'ATVPostProcessBP_C::StartScreen__Direction_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, StartScreen) == 0x0004D0, "Member 'ATVPostProcessBP_C::StartScreen' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, GrabNewColorBool) == 0x0004D8, "Member 'ATVPostProcessBP_C::GrabNewColorBool' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Increase_distortion_) == 0x0004D9, "Member 'ATVPostProcessBP_C::Increase_distortion_' has a wrong offset!");
+static_assert(offsetof(ATVPostProcessBP_C, increase_distortion_) == 0x0004D9, "Member 'ATVPostProcessBP_C::increase_distortion_' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, AdditionalDistortionAmount) == 0x0004DC, "Member 'ATVPostProcessBP_C::AdditionalDistortionAmount' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, Show_troll) == 0x0004E0, "Member 'ATVPostProcessBP_C::Show_troll' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, Troll_counter) == 0x0004E4, "Member 'ATVPostProcessBP_C::Troll_counter' has a wrong offset!");
@@ -249,7 +249,7 @@ static_assert(offsetof(ATVPostProcessBP_C, Ideal_Display_scene_min_value) == 0x0
 static_assert(offsetof(ATVPostProcessBP_C, Ideal_display_scene_max_value) == 0x0004F4, "Member 'ATVPostProcessBP_C::Ideal_display_scene_max_value' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, SkipDos) == 0x0004F8, "Member 'ATVPostProcessBP_C::SkipDos' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, DisableOnStartup) == 0x0004F9, "Member 'ATVPostProcessBP_C::DisableOnStartup' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitchMinusInProgress) == 0x0004FA, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitchMinusInProgress' has a wrong offset!");
+static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitch_InProgress) == 0x0004FA, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitch_InProgress' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, PreviousSceneModulation) == 0x0004FC, "Member 'ATVPostProcessBP_C::PreviousSceneModulation' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, FFInProgress) == 0x000500, "Member 'ATVPostProcessBP_C::FFInProgress' has a wrong offset!");
 static_assert(offsetof(ATVPostProcessBP_C, RestartFrontEndCameraSwitch_) == 0x000501, "Member 'ATVPostProcessBP_C::RestartFrontEndCameraSwitch_' has a wrong offset!");

@@ -74,17 +74,17 @@ void UHelpWidget_C::BndEvt__ButtonClose_K2Node_ComponentBoundEvent_28_CommonButt
 // Function HelpWidget.HelpWidget_C.Init
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             InTitle                                                (Parm)
-// class FText                             InDescription                                          (Parm)
-// class FText                             InStep1_Text                                           (Parm)
-// class FText                             InStep2_Text                                           (Parm)
-// class FText                             InStep3_Text                                           (Parm)
-// class UTexture2D*                       InStep1_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       InStep2_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       InStep3_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   InNumOfSteps                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                             inTitle                                                (Parm)
+// class FText                             inDescription                                          (Parm)
+// class FText                             inStep1_Text                                           (Parm)
+// class FText                             inStep2_Text                                           (Parm)
+// class FText                             inStep3_Text                                           (Parm)
+// class UTexture2D*                       inStep1_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       inStep2_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       inStep3_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   inNumOfSteps                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UHelpWidget_C::Init(const class FText& InTitle, const class FText& InDescription, const class FText& InStep1_Text, const class FText& InStep2_Text, const class FText& InStep3_Text, class UTexture2D* InStep1_Picture, class UTexture2D* InStep2_Picture, class UTexture2D* InStep3_Picture, int32 InNumOfSteps)
+void UHelpWidget_C::Init(const class FText& inTitle, const class FText& inDescription, const class FText& inStep1_Text, const class FText& inStep2_Text, const class FText& inStep3_Text, class UTexture2D* inStep1_Picture, class UTexture2D* inStep2_Picture, class UTexture2D* inStep3_Picture, int32 inNumOfSteps)
 {
 	static class UFunction* Func = nullptr;
 
@@ -93,15 +93,15 @@ void UHelpWidget_C::Init(const class FText& InTitle, const class FText& InDescri
 
 	Params::HelpWidget_C_Init Parms{};
 
-	Parms.InTitle = std::move(InTitle);
-	Parms.InDescription = std::move(InDescription);
-	Parms.InStep1_Text = std::move(InStep1_Text);
-	Parms.InStep2_Text = std::move(InStep2_Text);
-	Parms.InStep3_Text = std::move(InStep3_Text);
-	Parms.InStep1_Picture = InStep1_Picture;
-	Parms.InStep2_Picture = InStep2_Picture;
-	Parms.InStep3_Picture = InStep3_Picture;
-	Parms.InNumOfSteps = InNumOfSteps;
+	Parms.inTitle = std::move(inTitle);
+	Parms.inDescription = std::move(inDescription);
+	Parms.inStep1_Text = std::move(inStep1_Text);
+	Parms.inStep2_Text = std::move(inStep2_Text);
+	Parms.inStep3_Text = std::move(inStep3_Text);
+	Parms.inStep1_Picture = inStep1_Picture;
+	Parms.inStep2_Picture = inStep2_Picture;
+	Parms.inStep3_Picture = inStep3_Picture;
+	Parms.inNumOfSteps = inNumOfSteps;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

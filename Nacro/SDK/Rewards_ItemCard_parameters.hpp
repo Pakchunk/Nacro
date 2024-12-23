@@ -21,39 +21,6 @@
 namespace SDK::Params
 {
 
-// Function Rewards_ItemCard.Rewards_ItemCard_C.OnSlideAnimationFinished__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct Rewards_ItemCard_C_OnSlideAnimationFinished__DelegateSignature final
-{
-public:
-	class URewards_ItemCard_C*                    RewardsItemCard;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Rewards_ItemCard_C_OnSlideAnimationFinished__DelegateSignature) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_OnSlideAnimationFinished__DelegateSignature");
-static_assert(sizeof(Rewards_ItemCard_C_OnSlideAnimationFinished__DelegateSignature) == 0x000008, "Wrong size on Rewards_ItemCard_C_OnSlideAnimationFinished__DelegateSignature");
-static_assert(offsetof(Rewards_ItemCard_C_OnSlideAnimationFinished__DelegateSignature, RewardsItemCard) == 0x000000, "Member 'Rewards_ItemCard_C_OnSlideAnimationFinished__DelegateSignature::RewardsItemCard' has a wrong offset!");
-
-// Function Rewards_ItemCard.Rewards_ItemCard_C.OnInspectClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct Rewards_ItemCard_C_OnInspectClicked__DelegateSignature final
-{
-public:
-	class URewards_ItemCard_C*                    Card;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Rewards_ItemCard_C_OnInspectClicked__DelegateSignature) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_OnInspectClicked__DelegateSignature");
-static_assert(sizeof(Rewards_ItemCard_C_OnInspectClicked__DelegateSignature) == 0x000008, "Wrong size on Rewards_ItemCard_C_OnInspectClicked__DelegateSignature");
-static_assert(offsetof(Rewards_ItemCard_C_OnInspectClicked__DelegateSignature, Card) == 0x000000, "Member 'Rewards_ItemCard_C_OnInspectClicked__DelegateSignature::Card' has a wrong offset!");
-
-// Function Rewards_ItemCard.Rewards_ItemCard_C.OnResizeAnimationFinished__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct Rewards_ItemCard_C_OnResizeAnimationFinished__DelegateSignature final
-{
-public:
-	class URewards_ItemCard_C*                    RewardsItemCard;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Rewards_ItemCard_C_OnResizeAnimationFinished__DelegateSignature) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_OnResizeAnimationFinished__DelegateSignature");
-static_assert(sizeof(Rewards_ItemCard_C_OnResizeAnimationFinished__DelegateSignature) == 0x000008, "Wrong size on Rewards_ItemCard_C_OnResizeAnimationFinished__DelegateSignature");
-static_assert(offsetof(Rewards_ItemCard_C_OnResizeAnimationFinished__DelegateSignature, RewardsItemCard) == 0x000000, "Member 'Rewards_ItemCard_C_OnResizeAnimationFinished__DelegateSignature::RewardsItemCard' has a wrong offset!");
-
 // Function Rewards_ItemCard.Rewards_ItemCard_C.ExecuteUbergraph_Rewards_ItemCard
 // 0x0028 (0x0028 - 0x0000)
 struct Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard final

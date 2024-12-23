@@ -22,14 +22,14 @@ namespace SDK
 // Parameters:
 // EIntTypes                               Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                           Variable_Name                                          (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
-// TArray<int32>                           Int                                                    (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FVector2D>                Int2                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FVector>                  Int3                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FLinearColor>             Int4                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<int32>                           int_0                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FVector2D>                int2                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FVector>                  int3                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FLinearColor>             int4                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                           String                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void URenderToTextureFunctionLibrary_C::Array_to_HLSL_Int_Array(EIntTypes Type, class FString& Variable_Name, TArray<int32>& Int, TArray<struct FVector2D>& Int2, TArray<struct FVector>& Int3, TArray<struct FLinearColor>& Int4, class UObject* __WorldContext, class FString* String)
+void URenderToTextureFunctionLibrary_C::Array_to_HLSL_Int_Array(EIntTypes Type, class FString& Variable_Name, TArray<int32>& int_0, TArray<struct FVector2D>& int2, TArray<struct FVector>& int3, TArray<struct FLinearColor>& int4, class UObject* m_WorldContext, class FString* String)
 {
 	static class UFunction* Func = nullptr;
 
@@ -40,19 +40,19 @@ void URenderToTextureFunctionLibrary_C::Array_to_HLSL_Int_Array(EIntTypes Type, 
 
 	Parms.Type = Type;
 	Parms.Variable_Name = std::move(Variable_Name);
-	Parms.Int = std::move(Int);
-	Parms.Int2 = std::move(Int2);
-	Parms.Int3 = std::move(Int3);
-	Parms.Int4 = std::move(Int4);
-	Parms.__WorldContext = __WorldContext;
+	Parms.int_0 = std::move(int_0);
+	Parms.int2 = std::move(int2);
+	Parms.int3 = std::move(int3);
+	Parms.int4 = std::move(int4);
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Variable_Name = std::move(Parms.Variable_Name);
-	Int = std::move(Parms.Int);
-	Int2 = std::move(Parms.Int2);
-	Int3 = std::move(Parms.Int3);
-	Int4 = std::move(Parms.Int4);
+	int_0 = std::move(Parms.int_0);
+	int2 = std::move(Parms.int2);
+	int3 = std::move(Parms.int3);
+	int4 = std::move(Parms.int4);
 
 	if (String != nullptr)
 		*String = std::move(Parms.String);
@@ -65,11 +65,11 @@ void URenderToTextureFunctionLibrary_C::Array_to_HLSL_Int_Array(EIntTypes Type, 
 // struct FVector2D                        Size                                                   (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                        Position                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Scale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                        Screen_Position                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                        Screen_Size                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URenderToTextureFunctionLibrary_C::Set_Canvas_Material_Scale_and_Position(const struct FVector2D& Size, const struct FVector2D& Position, float Scale, class UObject* __WorldContext, struct FVector2D* Screen_Position, struct FVector2D* Screen_Size)
+void URenderToTextureFunctionLibrary_C::Set_Canvas_Material_Scale_and_Position(const struct FVector2D& Size, const struct FVector2D& Position, float Scale, class UObject* m_WorldContext, struct FVector2D* Screen_Position, struct FVector2D* Screen_Size)
 {
 	static class UFunction* Func = nullptr;
 
@@ -81,7 +81,7 @@ void URenderToTextureFunctionLibrary_C::Set_Canvas_Material_Scale_and_Position(c
 	Parms.Size = std::move(Size);
 	Parms.Position = std::move(Position);
 	Parms.Scale = Scale;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 

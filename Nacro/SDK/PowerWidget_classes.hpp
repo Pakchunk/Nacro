@@ -37,8 +37,8 @@ public:
 	bool                                          ShowProgress;                                      // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CurrentRating;                                     // 0x02AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CParty;                                            // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CSolo;                                             // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           cParty;                                            // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           cSolo;                                             // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_LocalPlayerProfileModal_C*          LocalPlayerWidget;                                 // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   Power_Increased;                                   // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          Previously_Had_Teammates;                          // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -46,7 +46,6 @@ public:
 	class USoundBase*                             Power_Increased_Sound;                             // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Power_Increased__DelegateSignature();
 	void ExecuteUbergraph_PowerWidget(int32 EntryPoint);
 	void OnPlayerInfoChanged(const struct FFortTeamMemberInfo& NewInfo);
 	void Construct();
@@ -82,8 +81,8 @@ static_assert(offsetof(UPowerWidget_C, RatingValue) == 0x0002A0, "Member 'UPower
 static_assert(offsetof(UPowerWidget_C, InterpDuration) == 0x0002A4, "Member 'UPowerWidget_C::InterpDuration' has a wrong offset!");
 static_assert(offsetof(UPowerWidget_C, ShowProgress) == 0x0002A8, "Member 'UPowerWidget_C::ShowProgress' has a wrong offset!");
 static_assert(offsetof(UPowerWidget_C, CurrentRating) == 0x0002AC, "Member 'UPowerWidget_C::CurrentRating' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, CParty) == 0x0002B0, "Member 'UPowerWidget_C::CParty' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, CSolo) == 0x0002C0, "Member 'UPowerWidget_C::CSolo' has a wrong offset!");
+static_assert(offsetof(UPowerWidget_C, cParty) == 0x0002B0, "Member 'UPowerWidget_C::cParty' has a wrong offset!");
+static_assert(offsetof(UPowerWidget_C, cSolo) == 0x0002C0, "Member 'UPowerWidget_C::cSolo' has a wrong offset!");
 static_assert(offsetof(UPowerWidget_C, LocalPlayerWidget) == 0x0002D0, "Member 'UPowerWidget_C::LocalPlayerWidget' has a wrong offset!");
 static_assert(offsetof(UPowerWidget_C, Power_Increased) == 0x0002D8, "Member 'UPowerWidget_C::Power_Increased' has a wrong offset!");
 static_assert(offsetof(UPowerWidget_C, Previously_Had_Teammates) == 0x0002E8, "Member 'UPowerWidget_C::Previously_Had_Teammates' has a wrong offset!");

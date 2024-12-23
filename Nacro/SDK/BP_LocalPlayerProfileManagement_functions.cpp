@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.OpenBannerEditor__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UBP_LocalPlayerProfileManagement_C::OpenBannerEditor__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerProfileManagement_C", "OpenBannerEditor__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.CloseProfileModal__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UBP_LocalPlayerProfileManagement_C::CloseProfileModal__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerProfileManagement_C", "CloseProfileModal__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.ExecuteUbergraph_BP_LocalPlayerProfileManagement
 // (HasDefaults)
 // Parameters:

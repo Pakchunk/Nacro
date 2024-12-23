@@ -20,17 +20,6 @@
 namespace SDK::Params
 {
 
-// Function LegacyButtonIconText.LegacyButtonIconText_C.On Mouse Hovered Changed__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature final
-{
-public:
-	bool                                          Is_Hovered;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature) == 0x000001, "Wrong alignment on LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature");
-static_assert(sizeof(LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature) == 0x000001, "Wrong size on LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature");
-static_assert(offsetof(LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature, Is_Hovered) == 0x000000, "Member 'LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature::Is_Hovered' has a wrong offset!");
-
 // Function LegacyButtonIconText.LegacyButtonIconText_C.ExecuteUbergraph_LegacyButtonIconText
 // 0x0130 (0x0130 - 0x0000)
 struct LegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText final

@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Selector Button Selected__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature final
-{
-public:
-	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature) == 0x000004, "Wrong alignment on OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature");
-static_assert(sizeof(OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature) == 0x000004, "Wrong size on OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature");
-static_assert(offsetof(OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature, Tab_Id) == 0x000000, "Member 'OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature::Tab_Id' has a wrong offset!");
-
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.ExecuteUbergraph_OptionsMenuRowSelector
 // 0x00F8 (0x00F8 - 0x0000)
 struct OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector final

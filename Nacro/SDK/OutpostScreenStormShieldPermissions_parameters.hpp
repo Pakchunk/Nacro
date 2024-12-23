@@ -73,10 +73,10 @@ static_assert(offsetof(OutpostScreenStormShieldPermissions_C_UpdatePrivilagesEve
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.isPlayerAlone
 // 0x0030 (0x0030 - 0x0000)
-struct OutpostScreenStormShieldPermissions_C_IsPlayerAlone final
+struct OutpostScreenStormShieldPermissions_C_isPlayerAlone final
 {
 public:
-	bool                                          IsAlone;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          isAlone;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -84,14 +84,14 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_IsPlayerAlone");
-static_assert(sizeof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone) == 0x000030, "Wrong size on OutpostScreenStormShieldPermissions_C_IsPlayerAlone");
-static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone, IsAlone) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_IsPlayerAlone::IsAlone' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShieldPermissions_C_IsPlayerAlone::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000010, "Member 'OutpostScreenStormShieldPermissions_C_IsPlayerAlone::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone, CallFunc_GetTeamMembers_TeamMembers) == 0x000018, "Member 'OutpostScreenStormShieldPermissions_C_IsPlayerAlone::CallFunc_GetTeamMembers_TeamMembers' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'OutpostScreenStormShieldPermissions_C_IsPlayerAlone::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OutpostScreenStormShieldPermissions_C_IsPlayerAlone, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'OutpostScreenStormShieldPermissions_C_IsPlayerAlone::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(alignof(OutpostScreenStormShieldPermissions_C_isPlayerAlone) == 0x000008, "Wrong alignment on OutpostScreenStormShieldPermissions_C_isPlayerAlone");
+static_assert(sizeof(OutpostScreenStormShieldPermissions_C_isPlayerAlone) == 0x000030, "Wrong size on OutpostScreenStormShieldPermissions_C_isPlayerAlone");
+static_assert(offsetof(OutpostScreenStormShieldPermissions_C_isPlayerAlone, isAlone) == 0x000000, "Member 'OutpostScreenStormShieldPermissions_C_isPlayerAlone::isAlone' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldPermissions_C_isPlayerAlone, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OutpostScreenStormShieldPermissions_C_isPlayerAlone::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldPermissions_C_isPlayerAlone, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000010, "Member 'OutpostScreenStormShieldPermissions_C_isPlayerAlone::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldPermissions_C_isPlayerAlone, CallFunc_GetTeamMembers_TeamMembers) == 0x000018, "Member 'OutpostScreenStormShieldPermissions_C_isPlayerAlone::CallFunc_GetTeamMembers_TeamMembers' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldPermissions_C_isPlayerAlone, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'OutpostScreenStormShieldPermissions_C_isPlayerAlone::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(OutpostScreenStormShieldPermissions_C_isPlayerAlone, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'OutpostScreenStormShieldPermissions_C_isPlayerAlone::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.UpdatePrivilages
 // 0x0001 (0x0001 - 0x0000)

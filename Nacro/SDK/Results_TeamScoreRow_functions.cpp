@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function Results_TeamScoreRow.Results_TeamScoreRow_C.CountUpFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_TeamScoreRow_C::CountUpFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_TeamScoreRow_C", "CountUpFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Results_TeamScoreRow.Results_TeamScoreRow_C.CountDownFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_TeamScoreRow_C::CountDownFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_TeamScoreRow_C", "CountDownFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_TeamScoreRow.Results_TeamScoreRow_C.ExecuteUbergraph_Results_TeamScoreRow
 // ()
 // Parameters:

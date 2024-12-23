@@ -16,41 +16,6 @@
 namespace SDK::Params
 {
 
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionHovered__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct ItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature final
-{
-public:
-	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature, Item_0) == 0x000000, "Member 'ItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature::Item_0' has a wrong offset!");
-
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionUnhovered__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct ItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature final
-{
-public:
-	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature, Item_0) == 0x000000, "Member 'ItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature::Item_0' has a wrong offset!");
-
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionSelected__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature final
-{
-public:
-	class UFortItem*                              Item_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RecipeIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature) == 0x000010, "Wrong size on ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature, Item_0) == 0x000000, "Member 'ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature::Item_0' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature, RecipeIndex) == 0x000008, "Member 'ItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature::RecipeIndex' has a wrong offset!");
-
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.ExecuteUbergraph_ItemInspectEvolutionConfirmation
 // 0x0010 (0x0010 - 0x0000)
 struct ItemInspectEvolutionConfirmation_C_ExecuteUbergraph_ItemInspectEvolutionConfirmation final

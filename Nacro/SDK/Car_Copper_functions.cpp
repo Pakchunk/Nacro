@@ -434,7 +434,7 @@ void ACar_Copper_C::StopCarAlarmFromPlaying()
 // Function Car_Copper.Car_Copper_C.setcanmakebouncingnoisetrue
 // (BlueprintCallable, BlueprintEvent)
 
-void ACar_Copper_C::Setcanmakebouncingnoisetrue()
+void ACar_Copper_C::setcanmakebouncingnoisetrue()
 {
 	static class UFunction* Func = nullptr;
 
@@ -500,10 +500,10 @@ float ACar_Copper_C::MaterialEditorSine(float Look_up_value, float Period)
 // Function Car_Copper.Car_Copper_C.Set Light Brightness
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   ZeroMinus1_Intensity                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Zero_1_Intensity                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Include_Second_Emissive_Channel                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ACar_Copper_C::Set_Light_Brightness(float ZeroMinus1_Intensity, bool Include_Second_Emissive_Channel)
+void ACar_Copper_C::Set_Light_Brightness(float Zero_1_Intensity, bool Include_Second_Emissive_Channel)
 {
 	static class UFunction* Func = nullptr;
 
@@ -512,7 +512,7 @@ void ACar_Copper_C::Set_Light_Brightness(float ZeroMinus1_Intensity, bool Includ
 
 	Params::Car_Copper_C_Set_Light_Brightness Parms{};
 
-	Parms.ZeroMinus1_Intensity = ZeroMinus1_Intensity;
+	Parms.Zero_1_Intensity = Zero_1_Intensity;
 	Parms.Include_Second_Emissive_Channel = Include_Second_Emissive_Channel;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -538,14 +538,14 @@ void ACar_Copper_C::Randomize_the_target_brightness_levels()
 // Parameters:
 // bool                                    bNewVisibility                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ACar_Copper_C::Toggle_light_visibility(bool bNewVisibility)
+void ACar_Copper_C::toggle_light_visibility(bool bNewVisibility)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Car_Copper_C", "toggle light visibility");
 
-	Params::Car_Copper_C_Toggle_light_visibility Parms{};
+	Params::Car_Copper_C_toggle_light_visibility Parms{};
 
 	Parms.bNewVisibility = bNewVisibility;
 

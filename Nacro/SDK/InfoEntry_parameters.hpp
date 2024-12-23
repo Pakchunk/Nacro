@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// Function InfoEntry.InfoEntry_C.Entry Selected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct InfoEntry_C_Entry_Selected__DelegateSignature final
-{
-public:
-	class UFortItemDefinition*                    Entry_Item_Definition;                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(InfoEntry_C_Entry_Selected__DelegateSignature) == 0x000008, "Wrong alignment on InfoEntry_C_Entry_Selected__DelegateSignature");
-static_assert(sizeof(InfoEntry_C_Entry_Selected__DelegateSignature) == 0x000008, "Wrong size on InfoEntry_C_Entry_Selected__DelegateSignature");
-static_assert(offsetof(InfoEntry_C_Entry_Selected__DelegateSignature, Entry_Item_Definition) == 0x000000, "Member 'InfoEntry_C_Entry_Selected__DelegateSignature::Entry_Item_Definition' has a wrong offset!");
-
 // Function InfoEntry.InfoEntry_C.ExecuteUbergraph_InfoEntry
 // 0x0058 (0x0058 - 0x0000)
 struct InfoEntry_C_ExecuteUbergraph_InfoEntry final

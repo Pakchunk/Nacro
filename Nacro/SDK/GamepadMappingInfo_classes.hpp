@@ -62,7 +62,7 @@ public:
 	class UVerticalBox*                           VerticalBox_Xbox_LS_And_Dpad;                      // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Update_Displayed_Mapping(int32 Platform, int32 Mode, int32 Configuration);
+	void Update_Displayed_Mapping(int32 platform, int32 Mode, int32 Configuration);
 	void OnConfigChanged(int32 Mode, int32 Config);
 	void HandleConfigChanged_Athena(int32 Mode, int32 Config);
 	void HandleConfigChanged(int32 Mode, int32 Config);

@@ -17,60 +17,6 @@
 namespace SDK
 {
 
-// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSquadSlotSelected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SquadSlotIndex_0                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UExpeditionSquadSlotButton_C::OnSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExpeditionSquadSlotButton_C", "OnSquadSlotSelected__DelegateSignature");
-
-	Params::ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature Parms{};
-
-	Parms.SquadSlotIndex_0 = SquadSlotIndex_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSquadSlotUpdated__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UExpeditionSquadSlotButton_C::OnSquadSlotUpdated__DelegateSignature(class UFortItem* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExpeditionSquadSlotButton_C", "OnSquadSlotUpdated__DelegateSignature");
-
-	Params::ExpeditionSquadSlotButton_C_OnSquadSlotUpdated__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSquadSlotOpened__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UExpeditionSquadSlotButton_C::OnSquadSlotOpened__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExpeditionSquadSlotButton_C", "OnSquadSlotOpened__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.ExecuteUbergraph_ExpeditionSquadSlotButton
 // ()
 // Parameters:

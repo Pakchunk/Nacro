@@ -19,19 +19,6 @@
 namespace SDK::Params
 {
 
-// Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.CloseBannerEditor__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature final
-{
-public:
-	class FName                                   IconId;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ColorId;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature) == 0x000008, "Wrong alignment on BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature");
-static_assert(sizeof(BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature) == 0x000010, "Wrong size on BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature, IconId) == 0x000000, "Member 'BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature::IconId' has a wrong offset!");
-static_assert(offsetof(BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature, ColorId) == 0x000008, "Member 'BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature::ColorId' has a wrong offset!");
-
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.ExecuteUbergraph_BP_LocalPlayerBannerEditor
 // 0x0130 (0x0130 - 0x0000)
 struct BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor final

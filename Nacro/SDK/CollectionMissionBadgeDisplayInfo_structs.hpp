@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CollectionBounds_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "CollectionBounds_structs.hpp"
 
 
 namespace SDK

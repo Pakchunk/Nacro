@@ -35,7 +35,6 @@ public:
 	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0280(0x0190)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void OnGadgetsClicked__DelegateSignature();
 	void ExecuteUbergraph_AthenaLobbyPlayerPanelActions(int32 EntryPoint);
 	void BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -45,7 +44,7 @@ public:
 	void Initialize();
 	void Refresh();
 	void IsLocalPlayer(bool* bIsLocalPlayer);
-	void IsMissionLocalPlayersOutpost(bool* IsLocalPlayersOutpost);
+	void IsMissionLocalPlayersOutpost(bool* isLocalPlayersOutpost);
 	void CanFriend(bool* bCanFriend);
 	void CanInviteToParty(bool* bCanInviteToParty);
 	void IsInvitationPending(bool* bIsInvitationPending);

@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnRewardSelected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UFrontEndRewards_ChoiceRewards_C::OnRewardSelected__DelegateSignature(int32 Index_0, class UFortItem* Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_ChoiceRewards_C", "OnRewardSelected__DelegateSignature");
-
-	Params::FrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.ExecuteUbergraph_FrontEndRewards_ChoiceRewards
 // ()
 // Parameters:

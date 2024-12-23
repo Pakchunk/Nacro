@@ -33,7 +33,6 @@ public:
 	UMulticastDelegateProperty_                   OnMediaReadyToPlay;                                // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnMediaReadyToPlay__DelegateSignature();
 	void ExecuteUbergraph_MovieWidget(int32 EntryPoint);
 	void OnMediaLoaded();
 	void MediaDimensionsUpdated(float NewWidth, float NewHeight);

@@ -43,9 +43,6 @@ public:
 	class USoundBase*                             SoundCue_ScoreCountEnd;                            // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void IntroComplete__DelegateSignature();
-	void IncrementComplete__DelegateSignature();
-	void OutroComplete__DelegateSignature();
 	void ExecuteUbergraph_ZoneDayCompletion_ScoreBlock(int32 EntryPoint);
 	void BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_3546_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void BndEvt__Anim_OverfillOff_K2Node_ComponentBoundEvent_54_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();

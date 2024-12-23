@@ -17,50 +17,6 @@
 namespace SDK
 {
 
-// Function QuantitySelector.QuantitySelector_C.OnButtonClickedDispatcher__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ChosenValue                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortItem*                        FortItem                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UQuantitySelector_C::OnButtonClickedDispatcher__DelegateSignature(int32 ChosenValue, class UFortItem* FortItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuantitySelector_C", "OnButtonClickedDispatcher__DelegateSignature");
-
-	Params::QuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature Parms{};
-
-	Parms.ChosenValue = ChosenValue;
-	Parms.FortItem = FortItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function QuantitySelector.QuantitySelector_C.OnStackValueChangedDispatcher__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortItem*                        FortItem                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UQuantitySelector_C::OnStackValueChangedDispatcher__DelegateSignature(int32 NewValue, class UFortItem* FortItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuantitySelector_C", "OnStackValueChangedDispatcher__DelegateSignature");
-
-	Params::QuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature Parms{};
-
-	Parms.NewValue = NewValue;
-	Parms.FortItem = FortItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function QuantitySelector.QuantitySelector_C.ExecuteUbergraph_QuantitySelector
 // ()
 // Parameters:

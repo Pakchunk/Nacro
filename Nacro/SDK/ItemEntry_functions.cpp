@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function ItemEntry.ItemEntry_C.Entry Selected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortItemDefinition*              Items_Definition                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UItemEntry_C::Entry_Selected__DelegateSignature(class UFortItemDefinition* Items_Definition)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemEntry_C", "Entry Selected__DelegateSignature");
-
-	Params::ItemEntry_C_Entry_Selected__DelegateSignature Parms{};
-
-	Parms.Items_Definition = Items_Definition;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ItemEntry.ItemEntry_C.ExecuteUbergraph_ItemEntry
 // ()
 // Parameters:

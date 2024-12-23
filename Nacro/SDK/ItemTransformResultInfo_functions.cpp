@@ -17,48 +17,6 @@
 namespace SDK
 {
 
-// Function ItemTransformResultInfo.ItemTransformResultInfo_C.OnTransformConfirmed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SacrificePoints                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTier_0                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UItemTransformResultInfo_C::OnTransformConfirmed__DelegateSignature(int32 SacrificePoints, int32 CurrentTier_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformResultInfo_C", "OnTransformConfirmed__DelegateSignature");
-
-	Params::ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature Parms{};
-
-	Parms.SacrificePoints = SacrificePoints;
-	Parms.CurrentTier_0 = CurrentTier_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ItemTransformResultInfo.ItemTransformResultInfo_C.OnUpdateSacrificeInfo__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    TransformActive                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UItemTransformResultInfo_C::OnUpdateSacrificeInfo__DelegateSignature(bool TransformActive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformResultInfo_C", "OnUpdateSacrificeInfo__DelegateSignature");
-
-	Params::ItemTransformResultInfo_C_OnUpdateSacrificeInfo__DelegateSignature Parms{};
-
-	Parms.TransformActive = TransformActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.ExecuteUbergraph_ItemTransformResultInfo
 // ()
 // Parameters:

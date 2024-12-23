@@ -28,7 +28,6 @@ public:
 	UMulticastDelegateProperty_                   NewEventDispatcher_0;                              // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void NewEventDispatcher_0__DelegateSignature();
 	void ExecuteUbergraph_VaultCharacterPlacementHelper(int32 EntryPoint);
 	void ReceiveBeginPlay();
 	void UserConstructionScript();

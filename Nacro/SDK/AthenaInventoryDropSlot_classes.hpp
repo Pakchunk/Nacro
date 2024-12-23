@@ -34,7 +34,6 @@ public:
 	UMulticastDelegateProperty_                   OnEquipRequested;                                  // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnEquipRequested__DelegateSignature(int32 SlotIndex_0);
 	void ExecuteUbergraph_AthenaInventoryDropSlot(int32 EntryPoint);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	bool OnDrop(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);

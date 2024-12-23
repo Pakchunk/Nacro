@@ -16,30 +16,6 @@
 namespace SDK::Params
 {
 
-// Function ItemTransformResultInfo.ItemTransformResultInfo_C.OnTransformConfirmed__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature final
-{
-public:
-	int32                                         SacrificePoints;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTier_0;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature) == 0x000004, "Wrong alignment on ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature");
-static_assert(sizeof(ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature) == 0x000008, "Wrong size on ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature");
-static_assert(offsetof(ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature, SacrificePoints) == 0x000000, "Member 'ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature::SacrificePoints' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature, CurrentTier_0) == 0x000004, "Member 'ItemTransformResultInfo_C_OnTransformConfirmed__DelegateSignature::CurrentTier_0' has a wrong offset!");
-
-// Function ItemTransformResultInfo.ItemTransformResultInfo_C.OnUpdateSacrificeInfo__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct ItemTransformResultInfo_C_OnUpdateSacrificeInfo__DelegateSignature final
-{
-public:
-	bool                                          TransformActive;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ItemTransformResultInfo_C_OnUpdateSacrificeInfo__DelegateSignature) == 0x000001, "Wrong alignment on ItemTransformResultInfo_C_OnUpdateSacrificeInfo__DelegateSignature");
-static_assert(sizeof(ItemTransformResultInfo_C_OnUpdateSacrificeInfo__DelegateSignature) == 0x000001, "Wrong size on ItemTransformResultInfo_C_OnUpdateSacrificeInfo__DelegateSignature");
-static_assert(offsetof(ItemTransformResultInfo_C_OnUpdateSacrificeInfo__DelegateSignature, TransformActive) == 0x000000, "Member 'ItemTransformResultInfo_C_OnUpdateSacrificeInfo__DelegateSignature::TransformActive' has a wrong offset!");
-
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.ExecuteUbergraph_ItemTransformResultInfo
 // 0x0018 (0x0018 - 0x0000)
 struct ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo final

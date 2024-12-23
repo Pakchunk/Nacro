@@ -34,7 +34,6 @@ public:
 	int32                                         NormalFontSize;                                    // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void FinishedShowing__DelegateSignature();
 	void ExecuteUbergraph_PotentialResourceWidget(int32 EntryPoint);
 	void HandleTranslateAndFadeUpFinished();
 	void Construct();

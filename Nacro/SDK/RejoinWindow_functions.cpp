@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function RejoinWindow.RejoinWindow_C.OnRequestAbandon__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void URejoinWindow_C::OnRequestAbandon__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RejoinWindow_C", "OnRequestAbandon__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function RejoinWindow.RejoinWindow_C.OnRequestRejoinRetry__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void URejoinWindow_C::OnRequestRejoinRetry__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RejoinWindow_C", "OnRequestRejoinRetry__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function RejoinWindow.RejoinWindow_C.ExecuteUbergraph_RejoinWindow
 // ()
 // Parameters:

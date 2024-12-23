@@ -25,7 +25,7 @@ class UItemDetailsStackCounter_C final : public UCommonUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
-	class USizeBox*                               _SizeBox_;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               mSizeBox_;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderBase;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextCounter;                                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FFortMultiSizeBrush                    MultiSizeBase;                                     // 0x0258(0x0360)(Edit, BlueprintVisible)
@@ -58,7 +58,7 @@ public:
 static_assert(alignof(UItemDetailsStackCounter_C) == 0x000008, "Wrong alignment on UItemDetailsStackCounter_C");
 static_assert(sizeof(UItemDetailsStackCounter_C) == 0x000898, "Wrong size on UItemDetailsStackCounter_C");
 static_assert(offsetof(UItemDetailsStackCounter_C, UberGraphFrame) == 0x000238, "Member 'UItemDetailsStackCounter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDetailsStackCounter_C, _SizeBox_) == 0x000240, "Member 'UItemDetailsStackCounter_C::_SizeBox_' has a wrong offset!");
+static_assert(offsetof(UItemDetailsStackCounter_C, mSizeBox_) == 0x000240, "Member 'UItemDetailsStackCounter_C::mSizeBox_' has a wrong offset!");
 static_assert(offsetof(UItemDetailsStackCounter_C, BorderBase) == 0x000248, "Member 'UItemDetailsStackCounter_C::BorderBase' has a wrong offset!");
 static_assert(offsetof(UItemDetailsStackCounter_C, TextCounter) == 0x000250, "Member 'UItemDetailsStackCounter_C::TextCounter' has a wrong offset!");
 static_assert(offsetof(UItemDetailsStackCounter_C, MultiSizeBase) == 0x000258, "Member 'UItemDetailsStackCounter_C::MultiSizeBase' has a wrong offset!");

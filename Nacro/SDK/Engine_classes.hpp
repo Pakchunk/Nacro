@@ -291,9 +291,6 @@ public:
 	uint8                                         Pad_380[0x8];                                      // 0x0380(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class ULevel* GetLevel();
-	class UWorld* GetWorld();
-
 	class UActorComponent* AddComponent(class FName TemplateName, bool bManualAttachment, const struct FTransform& RelativeTransform, const class UObject* ComponentTemplateContext);
 	void AddTickPrerequisiteActor(class AActor* PrerequisiteActor);
 	void AddTickPrerequisiteComponent(class UActorComponent* PrerequisiteComponent);
@@ -5688,9 +5685,9 @@ public:
 	void DebugCapsuleSweepComplex(bool bTraceComplex);
 	void DebugCapsuleSweepPawn();
 	void DebugCapsuleSweepSize(float HalfHeight, float Radius);
-	void DestroyAll(TSubclassOf<class AActor> AClass);
+	void DestroyAll(TSubclassOf<class AActor> aClass);
 	void DestroyAllPawnsExceptTarget();
-	void DestroyPawns(TSubclassOf<class APawn> AClass);
+	void DestroyPawns(TSubclassOf<class APawn> aClass);
 	void DestroyServerStatReplicator();
 	void DestroyTarget();
 	void DisableDebugCamera();
@@ -7128,7 +7125,7 @@ static_assert(offsetof(AMatineeActor, OnPause) == 0x000418, "Member 'AMatineeAct
 
 // Class Engine.World
 // 0x0978 (0x09A0 - 0x0028)
-class UWorld : public UObject
+class UWorld final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8216,7 +8213,7 @@ static_assert(offsetof(ASkeletalMeshActor, ReplicatedMaterial1) == 0x0003B8, "Me
 
 // Class Engine.ActorChannel
 // 0x01C8 (0x0230 - 0x0068)
-class UActorChannel : public UChannel
+class UActorChannel final : public UChannel
 {
 public:
 	class AActor*                                 Actor;                                             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9950,7 +9947,7 @@ static_assert(offsetof(ULightmassPortalComponent, PreviewBox) == 0x000290, "Memb
 
 // Class Engine.Level
 // 0x02F8 (0x0320 - 0x0028)
-class ULevel : public UObject
+class ULevel final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x78];                                      // 0x0028(0x0078)(Fixing Size After Last Property [ Dumper-7 ])
@@ -11695,7 +11692,7 @@ static_assert(offsetof(AExponentialHeightFog, Component) == 0x000388, "Member 'A
 
 // Class Engine.GameNetworkManager
 // 0x0088 (0x0410 - 0x0388)
-class AGameNetworkManager : public AInfo
+class AGameNetworkManager final : public AInfo
 {
 public:
 	int32                                         AdjustedNetSpeed;                                  // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13394,9 +13391,6 @@ public:
 	UMulticastDelegateProperty_                   ApplicationWillTerminateDelegate;                  // 0x0130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
-	void ApplicationLifetimeDelegate__DelegateSignature();
-
-public:
 	static class UClass* StaticClass()
 	{
 		return StaticClassImpl<"ApplicationLifecycleComponent">();
@@ -13438,11 +13432,6 @@ public:
 
 public:
 	void FinaliseControlPoints();
-	void OnInterpToResetDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time);
-	void OnInterpToReverseDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time);
-	void OnInterpToStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time);
-	void OnInterpToWaitBeginDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time);
-	void OnInterpToWaitEndDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time);
 	void RestartMovement(float InitialDirection);
 	void StopSimulating(const struct FHitResult& HitResult);
 
@@ -13777,8 +13766,6 @@ public:
 	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult);
 	void SetVelocityInLocalSpace(const struct FVector& NewVelocity);
 	void StopSimulating(const struct FHitResult& HitResult);
 
@@ -14164,7 +14151,6 @@ public:
 public:
 	bool IsInLaptopMode();
 	bool IsInTabletMode();
-	void PlatformEventDelegate__DelegateSignature();
 	bool SupportsConvertibleLaptops();
 
 public:
@@ -14292,7 +14278,7 @@ public:
 	void Play(float StartTime);
 	void SetBoolParameter(class FName InName, bool InBool);
 	void SetFloatParameter(class FName InName, float InFloat);
-	void SetIntParameter(class FName InName, int32 InInt);
+	void SetIntParameter(class FName InName, int32 inInt);
 	void SetLowPassFilterEnabled(bool InLowPassFilterEnabled);
 	void SetLowPassFilterFrequency(float InLowPassFilterFrequency);
 	void SetPaused(bool bPause);
@@ -16912,15 +16898,6 @@ public:
 	uint8                                         Pad_198[0x8];                                      // 0x0198(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void PlatformDelegate__DelegateSignature();
-	void PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature(const class FString& InString);
-	void PlatformReceivedLocalNotificationDelegate__DelegateSignature(const class FString& InString, int32 InInt);
-	void PlatformReceivedRemoteNotificationDelegate__DelegateSignature(const class FString& InString);
-	void PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature(const TArray<uint8>& InArray);
-	void PlatformRegisteredForUserNotificationsDelegate__DelegateSignature(int32 InInt);
-	void PlatformScreenOrientationChangedDelegate__DelegateSignature(EScreenOrientation InScreenOrientation);
-
-public:
 	static class UClass* StaticClass()
 	{
 		return StaticClassImpl<"PlatformGameInstance">();
@@ -16953,7 +16930,7 @@ public:
 	static void ClearAllLocalNotifications();
 	static void GetLaunchNotification(bool* NotificationLaunchedApp, class FString* ActivationEvent, int32* FireDate);
 	static void ScheduleLocalNotificationAtTime(const struct FDateTime& FireDateTime, bool LocalTime, const class FText& Title, const class FText& Body, const class FText& Action, const class FString& ActivationEvent);
-	static void ScheduleLocalNotificationFromNow(int32 InSecondsFromNow, const class FText& Title, const class FText& Body, const class FText& Action, const class FString& ActivationEvent);
+	static void ScheduleLocalNotificationFromNow(int32 inSecondsFromNow, const class FText& Title, const class FText& Body, const class FText& Action, const class FString& ActivationEvent);
 
 public:
 	static class UClass* StaticClass()
@@ -17090,7 +17067,7 @@ static_assert(offsetof(UMaterialExpressionTime, Period) == 0x000064, "Member 'UM
 
 // Class Engine.KismetSystemLibrary
 // 0x0000 (0x0028 - 0x0028)
-class UKismetSystemLibrary : public UBlueprintFunctionLibrary
+class UKismetSystemLibrary final : public UBlueprintFunctionLibrary
 {
 public:
 	static struct FDebugFloatHistory AddFloatHistorySample(float Value, const struct FDebugFloatHistory& FloatHistory);
@@ -17220,9 +17197,9 @@ public:
 	static class FString MakeLiteralString(const class FString& Value);
 	static class FText MakeLiteralText(const class FText& Value);
 	static void MoveComponentTo(class USceneComponent* Component, const struct FVector& TargetRelativeLocation, const struct FRotator& TargetRelativeRotation, bool bEaseOut, bool bEaseIn, float OverTime, bool bForceShortestRotationPath, EMoveComponentAction MoveAction, const struct FLatentActionInfo& LatentInfo);
-	static void PrintString(class UObject* WorldContextObject, const class FString& InString, bool bPrintToScreen, bool bPrintToLog, const struct FLinearColor& TextColor, float Duration);
+	static void PrintString(class UObject* WorldContextObject, const class FString& inString, bool bPrintToScreen, bool bPrintToLog, const struct FLinearColor& TextColor, float Duration);
 	static void PrintText(class UObject* WorldContextObject, const class FText& InText, bool bPrintToScreen, bool bPrintToLog, const struct FLinearColor& TextColor, float Duration);
-	static void PrintWarning(const class FString& InString);
+	static void PrintWarning(const class FString& inString);
 	static void QuitGame(class UObject* WorldContextObject, class APlayerController* SpecificPlayer, EQuitPreference QuitPreference);
 	static void RegisterForRemoteNotifications();
 	static void ResetGamepadAssignments();
@@ -17261,9 +17238,6 @@ public:
 	static bool SphereTraceSingle(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, float Radius, ETraceTypeQuery TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, EDrawDebugTrace DrawDebugType, struct FHitResult* OutHit, bool bIgnoreSelf, const struct FLinearColor& TraceColor, const struct FLinearColor& TraceHitColor, float DrawTime);
 	static bool SphereTraceSingleForObjects(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, float Radius, const TArray<EObjectTypeQuery>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, EDrawDebugTrace DrawDebugType, struct FHitResult* OutHit, bool bIgnoreSelf, const struct FLinearColor& TraceColor, const struct FLinearColor& TraceHitColor, float DrawTime);
 	static void StackTrace();
-
-	void OnAssetLoaded__DelegateSignature(class UObject* Loaded);
-	void OnAssetClassLoaded__DelegateSignature(TSubclassOf<class UObject> Loaded);
 
 public:
 	static class UClass* StaticClass()
@@ -17470,7 +17444,7 @@ public:
 	static void BreakRandomStream(const struct FRandomStream& InRandomStream, int32* InitialSeed);
 	static void BreakRotator(const struct FRotator& InRot, float* Roll, float* Pitch, float* Yaw);
 	static void BreakRotIntoAxes(const struct FRotator& InRot, struct FVector* X, struct FVector* Y, struct FVector* Z);
-	static void BreakTimespan(const struct FTimespan& InTimespan, int32* Days, int32* Hours, int32* Minutes, int32* Seconds, int32* Milliseconds);
+	static void BreakTimespan(const struct FTimespan& InTimespan, int32* days, int32* Hours, int32* Minutes, int32* Seconds, int32* Milliseconds);
 	static void BreakTransform(const struct FTransform& InTransform, struct FVector* Location, struct FRotator* Rotation, struct FVector* Scale);
 	static void BreakVector(const struct FVector& InVec, float* X, float* Y, float* Z);
 	static void BreakVector2D(const struct FVector2D& InVec, float* X, float* Y);
@@ -17490,10 +17464,10 @@ public:
 	static struct FLinearColor Conv_ColorToLinearColor(const struct FColor& InColor);
 	static struct FLinearColor Conv_FloatToLinearColor(float InFloat);
 	static struct FVector Conv_FloatToVector(float InFloat);
-	static bool Conv_IntToBool(int32 InInt);
-	static uint8 Conv_IntToByte(int32 InInt);
-	static float Conv_IntToFloat(int32 InInt);
-	static struct FIntVector Conv_IntToIntVector(int32 InInt);
+	static bool Conv_IntToBool(int32 inInt);
+	static uint8 Conv_IntToByte(int32 inInt);
+	static float Conv_IntToFloat(int32 inInt);
+	static struct FIntVector Conv_IntToIntVector(int32 inInt);
 	static struct FVector Conv_IntVectorToVector(const struct FIntVector& InIntVector);
 	static struct FColor Conv_LinearColorToColor(const struct FLinearColor& InLinearColor);
 	static struct FVector Conv_LinearColorToVector(const struct FLinearColor& InLinearColor);
@@ -17562,7 +17536,7 @@ public:
 	static float FMin(float A, float B);
 	static int32 FMod(float Dividend, float Divisor, float* Remainder);
 	static float Fraction(float A);
-	static struct FTimespan FromDays(float Days);
+	static struct FTimespan FromDays(float days);
 	static struct FTimespan FromHours(float Hours);
 	static struct FTimespan FromMilliseconds(float Milliseconds);
 	static struct FTimespan FromMinutes(float Minutes);
@@ -17666,7 +17640,7 @@ public:
 	static struct FRotator MakeRotFromZ(const struct FVector& Z);
 	static struct FRotator MakeRotFromZX(const struct FVector& Z, const struct FVector& X);
 	static struct FRotator MakeRotFromZY(const struct FVector& Z, const struct FVector& Y);
-	static struct FTimespan MakeTimespan(int32 Days, int32 Hours, int32 Minutes, int32 Seconds, int32 Milliseconds);
+	static struct FTimespan MakeTimespan(int32 days, int32 Hours, int32 Minutes, int32 Seconds, int32 Milliseconds);
 	static struct FTransform MakeTransform(const struct FVector& Location, const struct FRotator& Rotation, const struct FVector& Scale);
 	static struct FVector MakeVector(float X, float Y, float Z);
 	static struct FVector2D MakeVector2D(float X, float Y);
@@ -17934,7 +17908,7 @@ public:
 	static class FString BuildString_Bool(const class FString& AppendTo, const class FString& Prefix, bool InBool, const class FString& Suffix);
 	static class FString BuildString_Color(const class FString& AppendTo, const class FString& Prefix, const struct FLinearColor& InColor, const class FString& Suffix);
 	static class FString BuildString_Float(const class FString& AppendTo, const class FString& Prefix, float InFloat, const class FString& Suffix);
-	static class FString BuildString_Int(const class FString& AppendTo, const class FString& Prefix, int32 InInt, const class FString& Suffix);
+	static class FString BuildString_Int(const class FString& AppendTo, const class FString& Prefix, int32 inInt, const class FString& Suffix);
 	static class FString BuildString_IntVector(const class FString& AppendTo, const class FString& Prefix, const struct FIntVector& InIntVector, const class FString& Suffix);
 	static class FString BuildString_Name(const class FString& AppendTo, const class FString& Prefix, class FName InName, const class FString& Suffix);
 	static class FString BuildString_Object(const class FString& AppendTo, const class FString& Prefix, class UObject* InObj, const class FString& Suffix);
@@ -17947,22 +17921,22 @@ public:
 	static class FString Conv_ByteToString(uint8 InByte);
 	static class FString Conv_ColorToString(const struct FLinearColor& InColor);
 	static class FString Conv_FloatToString(float InFloat);
-	static class FString Conv_IntToString(int32 InInt);
+	static class FString Conv_IntToString(int32 inInt);
 	static class FString Conv_IntVectorToString(const struct FIntVector& InIntVec);
 	static class FString Conv_NameToString(class FName InName);
 	static class FString Conv_ObjectToString(class UObject* InObj);
 	static class FString Conv_RotatorToString(const struct FRotator& InRot);
-	static void Conv_StringToColor(const class FString& InString, struct FLinearColor* OutConvertedColor, bool* OutIsValid);
-	static float Conv_StringToFloat(const class FString& InString);
-	static int32 Conv_StringToInt(const class FString& InString);
-	static class FName Conv_StringToName(const class FString& InString);
-	static void Conv_StringToRotator(const class FString& InString, struct FRotator* OutConvertedRotator, bool* OutIsValid);
-	static void Conv_StringToVector(const class FString& InString, struct FVector* OutConvertedVector, bool* OutIsValid);
-	static void Conv_StringToVector2D(const class FString& InString, struct FVector2D* OutConvertedVector2D, bool* OutIsValid);
+	static void Conv_StringToColor(const class FString& inString, struct FLinearColor* OutConvertedColor, bool* OutIsValid);
+	static float Conv_StringToFloat(const class FString& inString);
+	static int32 Conv_StringToInt(const class FString& inString);
+	static class FName Conv_StringToName(const class FString& inString);
+	static void Conv_StringToRotator(const class FString& inString, struct FRotator* OutConvertedRotator, bool* OutIsValid);
+	static void Conv_StringToVector(const class FString& inString, struct FVector* OutConvertedVector, bool* OutIsValid);
+	static void Conv_StringToVector2D(const class FString& inString, struct FVector2D* OutConvertedVector2D, bool* OutIsValid);
 	static class FString Conv_TransformToString(const struct FTransform& InTrans);
 	static class FString Conv_Vector2dToString(const struct FVector2D& InVec);
 	static class FString Conv_VectorToString(const struct FVector& InVec);
-	static int32 CullArray(const class FString& SourceString, TArray<class FString>* InArray);
+	static int32 CullArray(const class FString& SourceString, TArray<class FString>* inArray);
 	static bool EndsWith(const class FString& SourceString, const class FString& InSuffix, ESearchCase SearchCase);
 	static bool EqualEqual_StriStri(const class FString& A, const class FString& B);
 	static bool EqualEqual_StrStr(const class FString& A, const class FString& B);
@@ -18059,7 +18033,7 @@ public:
 	static class FText Conv_NameToText(class FName InName);
 	static class FText Conv_ObjectToText(class UObject* InObj);
 	static class FText Conv_RotatorToText(const struct FRotator& InRot);
-	static class FText Conv_StringToText(const class FString& InString);
+	static class FText Conv_StringToText(const class FString& inString);
 	static class FString Conv_TextToString(const class FText& InText);
 	static class FText Conv_TransformToText(const struct FTransform& InTrans);
 	static class FText Conv_Vector2dToText(const struct FVector2D& InVec);

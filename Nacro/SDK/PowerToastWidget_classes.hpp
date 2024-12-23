@@ -45,7 +45,6 @@ public:
 	bool                                          Show_Toast;                                        // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnFinishedToast__DelegateSignature();
 	void ExecuteUbergraph_PowerToastWidget(int32 EntryPoint);
 	void OnTeamMemberFinishedSynchronizing_Event_0(const struct FUniqueNetIdRepl& NewTeamMemberId);
 	void BndEvt__Outro_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();

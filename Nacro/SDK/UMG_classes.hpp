@@ -76,22 +76,7 @@ public:
 public:
 	void ForceLayoutPrepass();
 	void ForceVolatile(bool bForce);
-	class UWidget* GenerateWidgetForObject__DelegateSignature(class UObject* Item);
-	class UWidget* GenerateWidgetForString__DelegateSignature(const class FString& Item);
-	bool GetBool__DelegateSignature();
-	ECheckBoxState GetCheckBoxState__DelegateSignature();
-	float GetFloat__DelegateSignature();
-	int32 GetInt32__DelegateSignature();
-	struct FLinearColor GetLinearColor__DelegateSignature();
-	EMouseCursor GetMouseCursor__DelegateSignature();
-	struct FSlateBrush GetSlateBrush__DelegateSignature();
-	struct FSlateColor GetSlateColor__DelegateSignature();
-	ESlateVisibility GetSlateVisibility__DelegateSignature();
-	class FText GetText__DelegateSignature();
-	class UWidget* GetWidget__DelegateSignature();
 	void InvalidateLayoutAndVolatility();
-	struct FEventReply OnPointerEvent__DelegateSignature(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnReply__DelegateSignature();
 	void RemoveFromParent();
 	void ResetCursor();
 	void SetAllNavigationRules(EUINavigationRule Rule, class FName WidgetToFocus);
@@ -1663,8 +1648,6 @@ public:
 	void AddOption(const class FString& Option);
 	void ClearOptions();
 	void ClearSelection();
-	void OnOpeningEvent__DelegateSignature();
-	void OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
 	void RefreshOptions();
 	bool RemoveOption(const class FString& Option);
 	void SetSelectedOption(const class FString& Option);
@@ -1770,8 +1753,6 @@ public:
 	uint8                                         Pad_498[0x10];                                     // 0x0498(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void OnEditableTextChangedEvent__DelegateSignature(const class FText& Text_0);
-	void OnEditableTextCommittedEvent__DelegateSignature(const class FText& Text_0, ETextCommit CommitMethod);
 	void SetHintText(const class FText& InHintText);
 	void SetIsPassword(bool InbIsPassword);
 	void SetIsReadOnly(bool InbIsReadyOnly);
@@ -1851,8 +1832,6 @@ public:
 
 public:
 	void ClearError();
-	void OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text_0);
-	void OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text_0, ETextCommit CommitMethod);
 	void SetError(const class FText& InError);
 	void SetText(const class FText& InText);
 
@@ -2003,8 +1982,6 @@ public:
 	uint8                                         Pad_200[0x18];                                     // 0x0200(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void OnIsSelectingKeyChanged__DelegateSignature();
-	void OnKeySelected__DelegateSignature(const struct FInputChord& SelectedKey_0);
 	void SetAllowModifierKeys(bool bInAllowModifierKeys);
 	void SetKeySelectionText(const class FText& InKeySelectionText);
 	void SetSelectedKey(const struct FInputChord& InSelectedKey);
@@ -3010,9 +2987,6 @@ public:
 	void ClearMaxValue();
 	void ClearMinSliderValue();
 	void ClearMinValue();
-	void OnSpinBoxBeginSliderMovement__DelegateSignature();
-	void OnSpinBoxValueChangedEvent__DelegateSignature(float InValue);
-	void OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
 	void SetForegroundColor(const struct FSlateColor& InForegroundColor);
 	void SetMaxSliderValue(float NewValue);
 	void SetMaxValue(float NewValue);
@@ -3062,9 +3036,6 @@ static_assert(offsetof(USpinBox, MaxSliderValue) == 0x000538, "Member 'USpinBox:
 // 0x0000 (0x0118 - 0x0118)
 class UTableViewBase : public UWidget
 {
-public:
-	class UWidget* OnGenerateRowUObject__DelegateSignature(class UObject* Item);
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -3161,8 +3132,6 @@ public:
 	uint8                                         Pad_418[0x10];                                     // 0x0418(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void OnMultiLineEditableTextChangedEvent__DelegateSignature(const class FText& Text_0);
-	void OnMultiLineEditableTextCommittedEvent__DelegateSignature(const class FText& Text_0, ETextCommit CommitMethod);
 	void SetText(const class FText& InText);
 
 	class FText GetText() const;
@@ -3210,8 +3179,6 @@ public:
 	uint8                                         Pad_CC0[0x10];                                     // 0x0CC0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text_0);
-	void OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text_0, ETextCommit CommitMethod);
 	void SetError(const class FText& InError);
 	void SetText(const class FText& InText);
 
@@ -3412,7 +3379,7 @@ public:
 	static void DrawBox(struct FPaintContext& Context, const struct FVector2D& Position, const struct FVector2D& Size, class USlateBrushAsset* Brush, const struct FLinearColor& Tint);
 	static void DrawLine(struct FPaintContext& Context, const struct FVector2D& PositionA, const struct FVector2D& PositionB, const struct FLinearColor& Tint, bool bAntiAlias);
 	static void DrawLines(struct FPaintContext& Context, const TArray<struct FVector2D>& Points, const struct FLinearColor& Tint, bool bAntiAlias);
-	static void DrawText(struct FPaintContext& Context, const class FString& InString, const struct FVector2D& Position, const struct FLinearColor& Tint);
+	static void DrawText(struct FPaintContext& Context, const class FString& inString, const struct FVector2D& Position, const struct FLinearColor& Tint);
 	static void DrawTextFormatted(struct FPaintContext& Context, const class FText& Text, const struct FVector2D& Position, class UFont* Font, int32 FontSize, class FName FontTypeFace, const struct FLinearColor& Tint);
 	static struct FEventReply EndDragDrop(struct FEventReply& Reply);
 	static void GetAllWidgetsOfClass(class UObject* WorldContextObject, TArray<class UUserWidget*>* FoundWidgets, TSubclassOf<class UUserWidget> WidgetClass, bool TopLevelOnly);

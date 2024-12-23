@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function ItemTransformItemPicker.ItemTransformItemPicker_C.OnItemSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct ItemTransformItemPicker_C_OnItemSelected__DelegateSignature final
-{
-public:
-	class UFortItem*                              SelectedItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemTransformItemPicker_C_OnItemSelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformItemPicker_C_OnItemSelected__DelegateSignature");
-static_assert(sizeof(ItemTransformItemPicker_C_OnItemSelected__DelegateSignature) == 0x000008, "Wrong size on ItemTransformItemPicker_C_OnItemSelected__DelegateSignature");
-static_assert(offsetof(ItemTransformItemPicker_C_OnItemSelected__DelegateSignature, SelectedItem) == 0x000000, "Member 'ItemTransformItemPicker_C_OnItemSelected__DelegateSignature::SelectedItem' has a wrong offset!");
-
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.ExecuteUbergraph_ItemTransformItemPicker
 // 0x0010 (0x0010 - 0x0000)
 struct alignas(0x08) ItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker final

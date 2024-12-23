@@ -69,7 +69,7 @@ public:
 	void Open_Build_Expedition_Squad();
 	void Set_Requirements(class UFortExpeditionItemDefinition* ItemDef);
 	void Set_Remaining_Expiration_Time(class UFortExpeditionItem* Item_0);
-	void Set_In_Progress_State(class UFortExpeditionItem* Self2);
+	void Set_In_Progress_State(class UFortExpeditionItem* self2);
 	void Set_Expedition_Returns_Data(class UFortExpeditionItem* Item_0);
 	void Set_Bonus_Criteria(class UFortExpeditionItem* Item_0);
 	void Get_Bonus_Display_Name_and_Brush(const struct FGameplayTag& Tag, bool Condition, EFortRarity Rarity, struct FSlateBrush* OutBrush_Brush_M, class FText* OutDisplayName, struct FLinearColor* OutRarityColor);

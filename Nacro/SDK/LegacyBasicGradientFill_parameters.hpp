@@ -48,7 +48,7 @@ struct LegacyBasicGradientFill_C_Set_Fill final
 public:
 	struct FLinearColor                           Color_1_0;                                         // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color_2_0;                                         // 0x0010(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Rotation__0_Minus_1_;                              // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Rotation__0___1_;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -57,7 +57,7 @@ static_assert(alignof(LegacyBasicGradientFill_C_Set_Fill) == 0x000008, "Wrong al
 static_assert(sizeof(LegacyBasicGradientFill_C_Set_Fill) == 0x000038, "Wrong size on LegacyBasicGradientFill_C_Set_Fill");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, Color_1_0) == 0x000000, "Member 'LegacyBasicGradientFill_C_Set_Fill::Color_1_0' has a wrong offset!");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, Color_2_0) == 0x000010, "Member 'LegacyBasicGradientFill_C_Set_Fill::Color_2_0' has a wrong offset!");
-static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, Rotation__0_Minus_1_) == 0x000020, "Member 'LegacyBasicGradientFill_C_Set_Fill::Rotation__0_Minus_1_' has a wrong offset!");
+static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, Rotation__0___1_) == 0x000020, "Member 'LegacyBasicGradientFill_C_Set_Fill::Rotation__0___1_' has a wrong offset!");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, CallFunc_FClamp_ReturnValue) == 0x000024, "Member 'LegacyBasicGradientFill_C_Set_Fill::CallFunc_FClamp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'LegacyBasicGradientFill_C_Set_Fill::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(LegacyBasicGradientFill_C_Set_Fill, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'LegacyBasicGradientFill_C_Set_Fill::CallFunc_IsValid_ReturnValue' has a wrong offset!");

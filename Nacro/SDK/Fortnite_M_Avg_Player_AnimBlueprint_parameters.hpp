@@ -18,17 +18,6 @@
 namespace SDK::Params
 {
 
-// Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.MenuScreenDispatcher__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct Fortnite_M_Avg_Player_AnimBlueprint_C_MenuScreenDispatcher__DelegateSignature final
-{
-public:
-	class UFortPlayerAnimInstance*                CharPart;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_MenuScreenDispatcher__DelegateSignature) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_MenuScreenDispatcher__DelegateSignature");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_MenuScreenDispatcher__DelegateSignature) == 0x000008, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_MenuScreenDispatcher__DelegateSignature");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_MenuScreenDispatcher__DelegateSignature, CharPart) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_MenuScreenDispatcher__DelegateSignature::CharPart' has a wrong offset!");
-
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint
 // 0x1200 (0x1200 - 0x0000)
 struct Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint final

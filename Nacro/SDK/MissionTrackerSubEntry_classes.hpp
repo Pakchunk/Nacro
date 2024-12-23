@@ -43,7 +43,6 @@ public:
 	struct FSlateBrush                            DefaultNonHUDBulletBrush;                          // 0x0380(0x0090)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void WidgetVisibilityChanged__DelegateSignature();
 	void ExecuteUbergraph_MissionTrackerSubEntry(int32 EntryPoint);
 	void OnHiddenByHeightConstraintChanged();
 	void OnObjectiveSet();

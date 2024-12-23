@@ -33,7 +33,7 @@ public:
 	class UImage*                                 Image_3;                                           // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           ObjectiveProgressBarGroup;                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       QuestDescription;                                  // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 QuestIconMinusFill;                                // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 QuestIcon_Fill;                                    // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       QuestLocation;                                     // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       QuestTitle;                                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonListView*                        TaskList;                                          // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -47,10 +47,9 @@ public:
 	struct FFortClientEvent                       NewVar_0;                                          // 0x02D0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	UMulticastDelegateProperty_                   OnSpokenDialogEnded;                               // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UFortQuestItem*                         QuestItemRef;                                      // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsOutro;                                           // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          isOutro;                                           // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnSpokenDialogEnded__DelegateSignature();
 	void ExecuteUbergraph_JournalQuestDetails(int32 EntryPoint);
 	void HandleCurrentQuestChangedBP();
 	void Construct();
@@ -60,7 +59,7 @@ public:
 	void UpdateButtonStates();
 	void UpdatePlayButtonState();
 	void UpdatePanelInfo();
-	void AbandonQuest(bool* QuestAbandoned_);
+	void AbandonQuest(bool* questAbandoned_);
 	void StopConversation();
 	void StartConversation(class UFortConversation* Conversation_0, class UFortQuestItem* QuestItem, bool IsOutro_);
 	void IsQuestAudioPlaying(bool* IsQuestAudioPlaying_0);
@@ -90,7 +89,7 @@ static_assert(offsetof(UJournalQuestDetails_C, Image_0) == 0x000268, "Member 'UJ
 static_assert(offsetof(UJournalQuestDetails_C, Image_3) == 0x000270, "Member 'UJournalQuestDetails_C::Image_3' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, ObjectiveProgressBarGroup) == 0x000278, "Member 'UJournalQuestDetails_C::ObjectiveProgressBarGroup' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, QuestDescription) == 0x000280, "Member 'UJournalQuestDetails_C::QuestDescription' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, QuestIconMinusFill) == 0x000288, "Member 'UJournalQuestDetails_C::QuestIconMinusFill' has a wrong offset!");
+static_assert(offsetof(UJournalQuestDetails_C, QuestIcon_Fill) == 0x000288, "Member 'UJournalQuestDetails_C::QuestIcon_Fill' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, QuestLocation) == 0x000290, "Member 'UJournalQuestDetails_C::QuestLocation' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, QuestTitle) == 0x000298, "Member 'UJournalQuestDetails_C::QuestTitle' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, TaskList) == 0x0002A0, "Member 'UJournalQuestDetails_C::TaskList' has a wrong offset!");
@@ -102,7 +101,7 @@ static_assert(offsetof(UJournalQuestDetails_C, ConversationActor) == 0x0002C8, "
 static_assert(offsetof(UJournalQuestDetails_C, NewVar_0) == 0x0002D0, "Member 'UJournalQuestDetails_C::NewVar_0' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, OnSpokenDialogEnded) == 0x0002F0, "Member 'UJournalQuestDetails_C::OnSpokenDialogEnded' has a wrong offset!");
 static_assert(offsetof(UJournalQuestDetails_C, QuestItemRef) == 0x000300, "Member 'UJournalQuestDetails_C::QuestItemRef' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, IsOutro) == 0x000308, "Member 'UJournalQuestDetails_C::IsOutro' has a wrong offset!");
+static_assert(offsetof(UJournalQuestDetails_C, isOutro) == 0x000308, "Member 'UJournalQuestDetails_C::isOutro' has a wrong offset!");
 
 }
 

@@ -9217,22 +9217,22 @@ static_assert(offsetof(CheatManager_DebugCapsuleSweepSize, Radius) == 0x000004, 
 struct CheatManager_DestroyAll final
 {
 public:
-	TSubclassOf<class AActor>                     AClass;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class AActor>                     aClass;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CheatManager_DestroyAll) == 0x000008, "Wrong alignment on CheatManager_DestroyAll");
 static_assert(sizeof(CheatManager_DestroyAll) == 0x000008, "Wrong size on CheatManager_DestroyAll");
-static_assert(offsetof(CheatManager_DestroyAll, AClass) == 0x000000, "Member 'CheatManager_DestroyAll::AClass' has a wrong offset!");
+static_assert(offsetof(CheatManager_DestroyAll, aClass) == 0x000000, "Member 'CheatManager_DestroyAll::aClass' has a wrong offset!");
 
 // Function Engine.CheatManager.DestroyPawns
 // 0x0008 (0x0008 - 0x0000)
 struct CheatManager_DestroyPawns final
 {
 public:
-	TSubclassOf<class APawn>                      AClass;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class APawn>                      aClass;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CheatManager_DestroyPawns) == 0x000008, "Wrong alignment on CheatManager_DestroyPawns");
 static_assert(sizeof(CheatManager_DestroyPawns) == 0x000008, "Wrong size on CheatManager_DestroyPawns");
-static_assert(offsetof(CheatManager_DestroyPawns, AClass) == 0x000000, "Member 'CheatManager_DestroyPawns::AClass' has a wrong offset!");
+static_assert(offsetof(CheatManager_DestroyPawns, aClass) == 0x000000, "Member 'CheatManager_DestroyPawns::aClass' has a wrong offset!");
 
 // Function Engine.CheatManager.FreezeFrame
 // 0x0004 (0x0004 - 0x0000)
@@ -17402,76 +17402,6 @@ static_assert(alignof(SceneCaptureCube_OnInterpToggle) == 0x000001, "Wrong align
 static_assert(sizeof(SceneCaptureCube_OnInterpToggle) == 0x000001, "Wrong size on SceneCaptureCube_OnInterpToggle");
 static_assert(offsetof(SceneCaptureCube_OnInterpToggle, bEnable) == 0x000000, "Member 'SceneCaptureCube_OnInterpToggle::bEnable' has a wrong offset!");
 
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToResetDelegate__DelegateSignature
-// 0x0090 (0x0090 - 0x0000)
-struct InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x0088(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature) == 0x000008, "Wrong alignment on InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature");
-static_assert(sizeof(InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature) == 0x000090, "Wrong size on InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature, ImpactResult) == 0x000000, "Member 'InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature::ImpactResult' has a wrong offset!");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature, Time) == 0x000088, "Member 'InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature::Time' has a wrong offset!");
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToReverseDelegate__DelegateSignature
-// 0x0090 (0x0090 - 0x0000)
-struct InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x0088(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature) == 0x000008, "Wrong alignment on InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature");
-static_assert(sizeof(InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature) == 0x000090, "Wrong size on InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature, ImpactResult) == 0x000000, "Member 'InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature::ImpactResult' has a wrong offset!");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature, Time) == 0x000088, "Member 'InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature::Time' has a wrong offset!");
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToStopDelegate__DelegateSignature
-// 0x0090 (0x0090 - 0x0000)
-struct InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x0088(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature) == 0x000008, "Wrong alignment on InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature");
-static_assert(sizeof(InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature) == 0x000090, "Wrong size on InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature, ImpactResult) == 0x000000, "Member 'InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature::ImpactResult' has a wrong offset!");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature, Time) == 0x000088, "Member 'InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature::Time' has a wrong offset!");
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitBeginDelegate__DelegateSignature
-// 0x0090 (0x0090 - 0x0000)
-struct InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x0088(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature) == 0x000008, "Wrong alignment on InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature");
-static_assert(sizeof(InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature) == 0x000090, "Wrong size on InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature, ImpactResult) == 0x000000, "Member 'InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature::ImpactResult' has a wrong offset!");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature, Time) == 0x000088, "Member 'InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature::Time' has a wrong offset!");
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitEndDelegate__DelegateSignature
-// 0x0090 (0x0090 - 0x0000)
-struct InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x0088(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature) == 0x000008, "Wrong alignment on InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature");
-static_assert(sizeof(InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature) == 0x000090, "Wrong size on InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature, ImpactResult) == 0x000000, "Member 'InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature::ImpactResult' has a wrong offset!");
-static_assert(offsetof(InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature, Time) == 0x000088, "Member 'InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature::Time' has a wrong offset!");
-
 // Function Engine.InterpToMovementComponent.RestartMovement
 // 0x0004 (0x0004 - 0x0000)
 struct InterpToMovementComponent_RestartMovement final
@@ -17504,31 +17434,6 @@ public:
 static_assert(alignof(AnimSequenceBase_GetPlayLength) == 0x000004, "Wrong alignment on AnimSequenceBase_GetPlayLength");
 static_assert(sizeof(AnimSequenceBase_GetPlayLength) == 0x000004, "Wrong size on AnimSequenceBase_GetPlayLength");
 static_assert(offsetof(AnimSequenceBase_GetPlayLength, ReturnValue) == 0x000000, "Member 'AnimSequenceBase_GetPlayLength::ReturnValue' has a wrong offset!");
-
-// DelegateFunction Engine.ProjectileMovementComponent.OnProjectileBounceDelegate__DelegateSignature
-// 0x0098 (0x0098 - 0x0000)
-struct ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FVector                                ImpactVelocity;                                    // 0x0088(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature) == 0x000008, "Wrong alignment on ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature");
-static_assert(sizeof(ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature) == 0x000098, "Wrong size on ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature");
-static_assert(offsetof(ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature, ImpactResult) == 0x000000, "Member 'ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature::ImpactResult' has a wrong offset!");
-static_assert(offsetof(ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature, ImpactVelocity) == 0x000088, "Member 'ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature::ImpactVelocity' has a wrong offset!");
-
-// DelegateFunction Engine.ProjectileMovementComponent.OnProjectileStopDelegate__DelegateSignature
-// 0x0088 (0x0088 - 0x0000)
-struct ProjectileMovementComponent_OnProjectileStopDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(ProjectileMovementComponent_OnProjectileStopDelegate__DelegateSignature) == 0x000008, "Wrong alignment on ProjectileMovementComponent_OnProjectileStopDelegate__DelegateSignature");
-static_assert(sizeof(ProjectileMovementComponent_OnProjectileStopDelegate__DelegateSignature) == 0x000088, "Wrong size on ProjectileMovementComponent_OnProjectileStopDelegate__DelegateSignature");
-static_assert(offsetof(ProjectileMovementComponent_OnProjectileStopDelegate__DelegateSignature, ImpactResult) == 0x000000, "Member 'ProjectileMovementComponent_OnProjectileStopDelegate__DelegateSignature::ImpactResult' has a wrong offset!");
 
 // Function Engine.ProjectileMovementComponent.SetVelocityInLocalSpace
 // 0x000C (0x000C - 0x0000)
@@ -18048,13 +17953,13 @@ struct AudioComponent_SetIntParameter final
 {
 public:
 	class FName                                   InName;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InInt;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         inInt;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AudioComponent_SetIntParameter) == 0x000004, "Wrong alignment on AudioComponent_SetIntParameter");
 static_assert(sizeof(AudioComponent_SetIntParameter) == 0x000010, "Wrong size on AudioComponent_SetIntParameter");
 static_assert(offsetof(AudioComponent_SetIntParameter, InName) == 0x000000, "Member 'AudioComponent_SetIntParameter::InName' has a wrong offset!");
-static_assert(offsetof(AudioComponent_SetIntParameter, InInt) == 0x000008, "Member 'AudioComponent_SetIntParameter::InInt' has a wrong offset!");
+static_assert(offsetof(AudioComponent_SetIntParameter, inInt) == 0x000008, "Member 'AudioComponent_SetIntParameter::inInt' has a wrong offset!");
 
 // Function Engine.AudioComponent.SetLowPassFilterEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -20905,75 +20810,6 @@ static_assert(offsetof(AvoidanceManager_RegisterMovementComponent, MovementComp)
 static_assert(offsetof(AvoidanceManager_RegisterMovementComponent, AvoidanceWeight) == 0x000008, "Member 'AvoidanceManager_RegisterMovementComponent::AvoidanceWeight' has a wrong offset!");
 static_assert(offsetof(AvoidanceManager_RegisterMovementComponent, ReturnValue) == 0x00000C, "Member 'AvoidanceManager_RegisterMovementComponent::ReturnValue' has a wrong offset!");
 
-// DelegateFunction Engine.PlatformGameInstance.PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct PlatformGameInstance_PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature final
-{
-public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PlatformGameInstance_PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature) == 0x000008, "Wrong alignment on PlatformGameInstance_PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature");
-static_assert(sizeof(PlatformGameInstance_PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature) == 0x000010, "Wrong size on PlatformGameInstance_PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature");
-static_assert(offsetof(PlatformGameInstance_PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature, InString) == 0x000000, "Member 'PlatformGameInstance_PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature::InString' has a wrong offset!");
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformReceivedLocalNotificationDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature final
-{
-public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InInt;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature) == 0x000008, "Wrong alignment on PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature");
-static_assert(sizeof(PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature) == 0x000018, "Wrong size on PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature");
-static_assert(offsetof(PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature, InString) == 0x000000, "Member 'PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature::InString' has a wrong offset!");
-static_assert(offsetof(PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature, InInt) == 0x000010, "Member 'PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature::InInt' has a wrong offset!");
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformReceivedRemoteNotificationDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct PlatformGameInstance_PlatformReceivedRemoteNotificationDelegate__DelegateSignature final
-{
-public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PlatformGameInstance_PlatformReceivedRemoteNotificationDelegate__DelegateSignature) == 0x000008, "Wrong alignment on PlatformGameInstance_PlatformReceivedRemoteNotificationDelegate__DelegateSignature");
-static_assert(sizeof(PlatformGameInstance_PlatformReceivedRemoteNotificationDelegate__DelegateSignature) == 0x000010, "Wrong size on PlatformGameInstance_PlatformReceivedRemoteNotificationDelegate__DelegateSignature");
-static_assert(offsetof(PlatformGameInstance_PlatformReceivedRemoteNotificationDelegate__DelegateSignature, InString) == 0x000000, "Member 'PlatformGameInstance_PlatformReceivedRemoteNotificationDelegate__DelegateSignature::InString' has a wrong offset!");
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct PlatformGameInstance_PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature final
-{
-public:
-	TArray<uint8>                                 InArray;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PlatformGameInstance_PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature) == 0x000008, "Wrong alignment on PlatformGameInstance_PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature");
-static_assert(sizeof(PlatformGameInstance_PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature) == 0x000010, "Wrong size on PlatformGameInstance_PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature");
-static_assert(offsetof(PlatformGameInstance_PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature, InArray) == 0x000000, "Member 'PlatformGameInstance_PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature::InArray' has a wrong offset!");
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformRegisteredForUserNotificationsDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct PlatformGameInstance_PlatformRegisteredForUserNotificationsDelegate__DelegateSignature final
-{
-public:
-	int32                                         InInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PlatformGameInstance_PlatformRegisteredForUserNotificationsDelegate__DelegateSignature) == 0x000004, "Wrong alignment on PlatformGameInstance_PlatformRegisteredForUserNotificationsDelegate__DelegateSignature");
-static_assert(sizeof(PlatformGameInstance_PlatformRegisteredForUserNotificationsDelegate__DelegateSignature) == 0x000004, "Wrong size on PlatformGameInstance_PlatformRegisteredForUserNotificationsDelegate__DelegateSignature");
-static_assert(offsetof(PlatformGameInstance_PlatformRegisteredForUserNotificationsDelegate__DelegateSignature, InInt) == 0x000000, "Member 'PlatformGameInstance_PlatformRegisteredForUserNotificationsDelegate__DelegateSignature::InInt' has a wrong offset!");
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformScreenOrientationChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct PlatformGameInstance_PlatformScreenOrientationChangedDelegate__DelegateSignature final
-{
-public:
-	EScreenOrientation                            InScreenOrientation;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(PlatformGameInstance_PlatformScreenOrientationChangedDelegate__DelegateSignature) == 0x000001, "Wrong alignment on PlatformGameInstance_PlatformScreenOrientationChangedDelegate__DelegateSignature");
-static_assert(sizeof(PlatformGameInstance_PlatformScreenOrientationChangedDelegate__DelegateSignature) == 0x000001, "Wrong size on PlatformGameInstance_PlatformScreenOrientationChangedDelegate__DelegateSignature");
-static_assert(offsetof(PlatformGameInstance_PlatformScreenOrientationChangedDelegate__DelegateSignature, InScreenOrientation) == 0x000000, "Member 'PlatformGameInstance_PlatformScreenOrientationChangedDelegate__DelegateSignature::InScreenOrientation' has a wrong offset!");
-
 // Function Engine.BlueprintPlatformLibrary.CancelLocalNotification
 // 0x0010 (0x0010 - 0x0000)
 struct BlueprintPlatformLibrary_CancelLocalNotification final
@@ -21029,7 +20865,7 @@ static_assert(offsetof(BlueprintPlatformLibrary_ScheduleLocalNotificationAtTime,
 struct BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow final
 {
 public:
-	int32                                         InSecondsFromNow;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         inSecondsFromNow;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Title;                                             // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FText                                   Body;                                              // 0x0020(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
@@ -21038,7 +20874,7 @@ public:
 };
 static_assert(alignof(BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow) == 0x000008, "Wrong alignment on BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow");
 static_assert(sizeof(BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow) == 0x000060, "Wrong size on BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow");
-static_assert(offsetof(BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow, InSecondsFromNow) == 0x000000, "Member 'BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow::InSecondsFromNow' has a wrong offset!");
+static_assert(offsetof(BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow, inSecondsFromNow) == 0x000000, "Member 'BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow::inSecondsFromNow' has a wrong offset!");
 static_assert(offsetof(BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow, Title) == 0x000008, "Member 'BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow::Title' has a wrong offset!");
 static_assert(offsetof(BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow, Body) == 0x000020, "Member 'BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow::Body' has a wrong offset!");
 static_assert(offsetof(BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow, Action) == 0x000038, "Member 'BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow::Action' has a wrong offset!");
@@ -23525,7 +23361,7 @@ struct KismetSystemLibrary_PrintString final
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 InString;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPrintToScreen;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPrintToLog;                                       // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -23535,7 +23371,7 @@ public:
 static_assert(alignof(KismetSystemLibrary_PrintString) == 0x000008, "Wrong alignment on KismetSystemLibrary_PrintString");
 static_assert(sizeof(KismetSystemLibrary_PrintString) == 0x000030, "Wrong size on KismetSystemLibrary_PrintString");
 static_assert(offsetof(KismetSystemLibrary_PrintString, WorldContextObject) == 0x000000, "Member 'KismetSystemLibrary_PrintString::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(KismetSystemLibrary_PrintString, InString) == 0x000008, "Member 'KismetSystemLibrary_PrintString::InString' has a wrong offset!");
+static_assert(offsetof(KismetSystemLibrary_PrintString, inString) == 0x000008, "Member 'KismetSystemLibrary_PrintString::inString' has a wrong offset!");
 static_assert(offsetof(KismetSystemLibrary_PrintString, bPrintToScreen) == 0x000018, "Member 'KismetSystemLibrary_PrintString::bPrintToScreen' has a wrong offset!");
 static_assert(offsetof(KismetSystemLibrary_PrintString, bPrintToLog) == 0x000019, "Member 'KismetSystemLibrary_PrintString::bPrintToLog' has a wrong offset!");
 static_assert(offsetof(KismetSystemLibrary_PrintString, TextColor) == 0x00001C, "Member 'KismetSystemLibrary_PrintString::TextColor' has a wrong offset!");
@@ -23568,11 +23404,11 @@ static_assert(offsetof(KismetSystemLibrary_PrintText, Duration) == 0x000034, "Me
 struct KismetSystemLibrary_PrintWarning final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetSystemLibrary_PrintWarning) == 0x000008, "Wrong alignment on KismetSystemLibrary_PrintWarning");
 static_assert(sizeof(KismetSystemLibrary_PrintWarning) == 0x000010, "Wrong size on KismetSystemLibrary_PrintWarning");
-static_assert(offsetof(KismetSystemLibrary_PrintWarning, InString) == 0x000000, "Member 'KismetSystemLibrary_PrintWarning::InString' has a wrong offset!");
+static_assert(offsetof(KismetSystemLibrary_PrintWarning, inString) == 0x000000, "Member 'KismetSystemLibrary_PrintWarning::inString' has a wrong offset!");
 
 // Function Engine.KismetSystemLibrary.QuitGame
 // 0x0018 (0x0018 - 0x0000)
@@ -24194,28 +24030,6 @@ static_assert(offsetof(KismetSystemLibrary_SphereTraceSingleForObjects, TraceCol
 static_assert(offsetof(KismetSystemLibrary_SphereTraceSingleForObjects, TraceHitColor) == 0x0000F4, "Member 'KismetSystemLibrary_SphereTraceSingleForObjects::TraceHitColor' has a wrong offset!");
 static_assert(offsetof(KismetSystemLibrary_SphereTraceSingleForObjects, DrawTime) == 0x000104, "Member 'KismetSystemLibrary_SphereTraceSingleForObjects::DrawTime' has a wrong offset!");
 static_assert(offsetof(KismetSystemLibrary_SphereTraceSingleForObjects, ReturnValue) == 0x000108, "Member 'KismetSystemLibrary_SphereTraceSingleForObjects::ReturnValue' has a wrong offset!");
-
-// DelegateFunction Engine.KismetSystemLibrary.OnAssetLoaded__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct KismetSystemLibrary_OnAssetLoaded__DelegateSignature final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KismetSystemLibrary_OnAssetLoaded__DelegateSignature) == 0x000008, "Wrong alignment on KismetSystemLibrary_OnAssetLoaded__DelegateSignature");
-static_assert(sizeof(KismetSystemLibrary_OnAssetLoaded__DelegateSignature) == 0x000008, "Wrong size on KismetSystemLibrary_OnAssetLoaded__DelegateSignature");
-static_assert(offsetof(KismetSystemLibrary_OnAssetLoaded__DelegateSignature, Loaded) == 0x000000, "Member 'KismetSystemLibrary_OnAssetLoaded__DelegateSignature::Loaded' has a wrong offset!");
-
-// DelegateFunction Engine.KismetSystemLibrary.OnAssetClassLoaded__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct KismetSystemLibrary_OnAssetClassLoaded__DelegateSignature final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(KismetSystemLibrary_OnAssetClassLoaded__DelegateSignature) == 0x000008, "Wrong alignment on KismetSystemLibrary_OnAssetClassLoaded__DelegateSignature");
-static_assert(sizeof(KismetSystemLibrary_OnAssetClassLoaded__DelegateSignature) == 0x000008, "Wrong size on KismetSystemLibrary_OnAssetClassLoaded__DelegateSignature");
-static_assert(offsetof(KismetSystemLibrary_OnAssetClassLoaded__DelegateSignature, Loaded) == 0x000000, "Member 'KismetSystemLibrary_OnAssetClassLoaded__DelegateSignature::Loaded' has a wrong offset!");
 
 // Function Engine.HeadMountedDisplayFunctionLibrary.EnableHMD
 // 0x0002 (0x0002 - 0x0000)
@@ -25815,7 +25629,7 @@ struct KismetMathLibrary_BreakTimespan final
 {
 public:
 	struct FTimespan                              InTimespan;                                        // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Days;                                              // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         days;                                              // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Hours;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Minutes;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Seconds;                                           // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -25825,7 +25639,7 @@ public:
 static_assert(alignof(KismetMathLibrary_BreakTimespan) == 0x000008, "Wrong alignment on KismetMathLibrary_BreakTimespan");
 static_assert(sizeof(KismetMathLibrary_BreakTimespan) == 0x000020, "Wrong size on KismetMathLibrary_BreakTimespan");
 static_assert(offsetof(KismetMathLibrary_BreakTimespan, InTimespan) == 0x000000, "Member 'KismetMathLibrary_BreakTimespan::InTimespan' has a wrong offset!");
-static_assert(offsetof(KismetMathLibrary_BreakTimespan, Days) == 0x000008, "Member 'KismetMathLibrary_BreakTimespan::Days' has a wrong offset!");
+static_assert(offsetof(KismetMathLibrary_BreakTimespan, days) == 0x000008, "Member 'KismetMathLibrary_BreakTimespan::days' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_BreakTimespan, Hours) == 0x00000C, "Member 'KismetMathLibrary_BreakTimespan::Hours' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_BreakTimespan, Minutes) == 0x000010, "Member 'KismetMathLibrary_BreakTimespan::Minutes' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_BreakTimespan, Seconds) == 0x000014, "Member 'KismetMathLibrary_BreakTimespan::Seconds' has a wrong offset!");
@@ -26123,13 +25937,13 @@ static_assert(offsetof(KismetMathLibrary_Conv_FloatToVector, ReturnValue) == 0x0
 struct KismetMathLibrary_Conv_IntToBool final
 {
 public:
-	int32                                         InInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         inInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetMathLibrary_Conv_IntToBool) == 0x000004, "Wrong alignment on KismetMathLibrary_Conv_IntToBool");
 static_assert(sizeof(KismetMathLibrary_Conv_IntToBool) == 0x000008, "Wrong size on KismetMathLibrary_Conv_IntToBool");
-static_assert(offsetof(KismetMathLibrary_Conv_IntToBool, InInt) == 0x000000, "Member 'KismetMathLibrary_Conv_IntToBool::InInt' has a wrong offset!");
+static_assert(offsetof(KismetMathLibrary_Conv_IntToBool, inInt) == 0x000000, "Member 'KismetMathLibrary_Conv_IntToBool::inInt' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_Conv_IntToBool, ReturnValue) == 0x000004, "Member 'KismetMathLibrary_Conv_IntToBool::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetMathLibrary.Conv_IntToByte
@@ -26137,13 +25951,13 @@ static_assert(offsetof(KismetMathLibrary_Conv_IntToBool, ReturnValue) == 0x00000
 struct KismetMathLibrary_Conv_IntToByte final
 {
 public:
-	int32                                         InInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         inInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetMathLibrary_Conv_IntToByte) == 0x000004, "Wrong alignment on KismetMathLibrary_Conv_IntToByte");
 static_assert(sizeof(KismetMathLibrary_Conv_IntToByte) == 0x000008, "Wrong size on KismetMathLibrary_Conv_IntToByte");
-static_assert(offsetof(KismetMathLibrary_Conv_IntToByte, InInt) == 0x000000, "Member 'KismetMathLibrary_Conv_IntToByte::InInt' has a wrong offset!");
+static_assert(offsetof(KismetMathLibrary_Conv_IntToByte, inInt) == 0x000000, "Member 'KismetMathLibrary_Conv_IntToByte::inInt' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_Conv_IntToByte, ReturnValue) == 0x000004, "Member 'KismetMathLibrary_Conv_IntToByte::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetMathLibrary.Conv_IntToFloat
@@ -26151,12 +25965,12 @@ static_assert(offsetof(KismetMathLibrary_Conv_IntToByte, ReturnValue) == 0x00000
 struct KismetMathLibrary_Conv_IntToFloat final
 {
 public:
-	int32                                         InInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         inInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetMathLibrary_Conv_IntToFloat) == 0x000004, "Wrong alignment on KismetMathLibrary_Conv_IntToFloat");
 static_assert(sizeof(KismetMathLibrary_Conv_IntToFloat) == 0x000008, "Wrong size on KismetMathLibrary_Conv_IntToFloat");
-static_assert(offsetof(KismetMathLibrary_Conv_IntToFloat, InInt) == 0x000000, "Member 'KismetMathLibrary_Conv_IntToFloat::InInt' has a wrong offset!");
+static_assert(offsetof(KismetMathLibrary_Conv_IntToFloat, inInt) == 0x000000, "Member 'KismetMathLibrary_Conv_IntToFloat::inInt' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_Conv_IntToFloat, ReturnValue) == 0x000004, "Member 'KismetMathLibrary_Conv_IntToFloat::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetMathLibrary.Conv_IntToIntVector
@@ -26164,12 +25978,12 @@ static_assert(offsetof(KismetMathLibrary_Conv_IntToFloat, ReturnValue) == 0x0000
 struct KismetMathLibrary_Conv_IntToIntVector final
 {
 public:
-	int32                                         InInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         inInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FIntVector                             ReturnValue;                                       // 0x0004(0x000C)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetMathLibrary_Conv_IntToIntVector) == 0x000004, "Wrong alignment on KismetMathLibrary_Conv_IntToIntVector");
 static_assert(sizeof(KismetMathLibrary_Conv_IntToIntVector) == 0x000010, "Wrong size on KismetMathLibrary_Conv_IntToIntVector");
-static_assert(offsetof(KismetMathLibrary_Conv_IntToIntVector, InInt) == 0x000000, "Member 'KismetMathLibrary_Conv_IntToIntVector::InInt' has a wrong offset!");
+static_assert(offsetof(KismetMathLibrary_Conv_IntToIntVector, inInt) == 0x000000, "Member 'KismetMathLibrary_Conv_IntToIntVector::inInt' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_Conv_IntToIntVector, ReturnValue) == 0x000004, "Member 'KismetMathLibrary_Conv_IntToIntVector::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetMathLibrary.Conv_IntVectorToVector
@@ -27216,13 +27030,13 @@ static_assert(offsetof(KismetMathLibrary_Fraction, ReturnValue) == 0x000004, "Me
 struct KismetMathLibrary_FromDays final
 {
 public:
-	float                                         Days;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         days;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimespan                              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetMathLibrary_FromDays) == 0x000008, "Wrong alignment on KismetMathLibrary_FromDays");
 static_assert(sizeof(KismetMathLibrary_FromDays) == 0x000010, "Wrong size on KismetMathLibrary_FromDays");
-static_assert(offsetof(KismetMathLibrary_FromDays, Days) == 0x000000, "Member 'KismetMathLibrary_FromDays::Days' has a wrong offset!");
+static_assert(offsetof(KismetMathLibrary_FromDays, days) == 0x000000, "Member 'KismetMathLibrary_FromDays::days' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_FromDays, ReturnValue) == 0x000008, "Member 'KismetMathLibrary_FromDays::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetMathLibrary.FromHours
@@ -28795,7 +28609,7 @@ static_assert(offsetof(KismetMathLibrary_MakeRotFromZY, ReturnValue) == 0x000018
 struct KismetMathLibrary_MakeTimespan final
 {
 public:
-	int32                                         Days;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         days;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Hours;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Minutes;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Seconds;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -28805,7 +28619,7 @@ public:
 };
 static_assert(alignof(KismetMathLibrary_MakeTimespan) == 0x000008, "Wrong alignment on KismetMathLibrary_MakeTimespan");
 static_assert(sizeof(KismetMathLibrary_MakeTimespan) == 0x000020, "Wrong size on KismetMathLibrary_MakeTimespan");
-static_assert(offsetof(KismetMathLibrary_MakeTimespan, Days) == 0x000000, "Member 'KismetMathLibrary_MakeTimespan::Days' has a wrong offset!");
+static_assert(offsetof(KismetMathLibrary_MakeTimespan, days) == 0x000000, "Member 'KismetMathLibrary_MakeTimespan::days' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_MakeTimespan, Hours) == 0x000004, "Member 'KismetMathLibrary_MakeTimespan::Hours' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_MakeTimespan, Minutes) == 0x000008, "Member 'KismetMathLibrary_MakeTimespan::Minutes' has a wrong offset!");
 static_assert(offsetof(KismetMathLibrary_MakeTimespan, Seconds) == 0x00000C, "Member 'KismetMathLibrary_MakeTimespan::Seconds' has a wrong offset!");
@@ -31543,7 +31357,7 @@ struct KismetStringLibrary_BuildString_Int final
 public:
 	class FString                                 AppendTo;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Prefix;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InInt;                                             // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         inInt;                                             // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Suffix;                                            // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -31552,7 +31366,7 @@ static_assert(alignof(KismetStringLibrary_BuildString_Int) == 0x000008, "Wrong a
 static_assert(sizeof(KismetStringLibrary_BuildString_Int) == 0x000048, "Wrong size on KismetStringLibrary_BuildString_Int");
 static_assert(offsetof(KismetStringLibrary_BuildString_Int, AppendTo) == 0x000000, "Member 'KismetStringLibrary_BuildString_Int::AppendTo' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_BuildString_Int, Prefix) == 0x000010, "Member 'KismetStringLibrary_BuildString_Int::Prefix' has a wrong offset!");
-static_assert(offsetof(KismetStringLibrary_BuildString_Int, InInt) == 0x000020, "Member 'KismetStringLibrary_BuildString_Int::InInt' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_BuildString_Int, inInt) == 0x000020, "Member 'KismetStringLibrary_BuildString_Int::inInt' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_BuildString_Int, Suffix) == 0x000028, "Member 'KismetStringLibrary_BuildString_Int::Suffix' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_BuildString_Int, ReturnValue) == 0x000038, "Member 'KismetStringLibrary_BuildString_Int::ReturnValue' has a wrong offset!");
 
@@ -31768,13 +31582,13 @@ static_assert(offsetof(KismetStringLibrary_Conv_FloatToString, ReturnValue) == 0
 struct KismetStringLibrary_Conv_IntToString final
 {
 public:
-	int32                                         InInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         inInt;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetStringLibrary_Conv_IntToString) == 0x000008, "Wrong alignment on KismetStringLibrary_Conv_IntToString");
 static_assert(sizeof(KismetStringLibrary_Conv_IntToString) == 0x000018, "Wrong size on KismetStringLibrary_Conv_IntToString");
-static_assert(offsetof(KismetStringLibrary_Conv_IntToString, InInt) == 0x000000, "Member 'KismetStringLibrary_Conv_IntToString::InInt' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_Conv_IntToString, inInt) == 0x000000, "Member 'KismetStringLibrary_Conv_IntToString::inInt' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_IntToString, ReturnValue) == 0x000008, "Member 'KismetStringLibrary_Conv_IntToString::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetStringLibrary.Conv_IntVectorToString
@@ -31836,14 +31650,14 @@ static_assert(offsetof(KismetStringLibrary_Conv_RotatorToString, ReturnValue) ==
 struct KismetStringLibrary_Conv_StringToColor final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           OutConvertedColor;                                 // 0x0010(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          OutIsValid;                                        // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetStringLibrary_Conv_StringToColor) == 0x000008, "Wrong alignment on KismetStringLibrary_Conv_StringToColor");
 static_assert(sizeof(KismetStringLibrary_Conv_StringToColor) == 0x000028, "Wrong size on KismetStringLibrary_Conv_StringToColor");
-static_assert(offsetof(KismetStringLibrary_Conv_StringToColor, InString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToColor::InString' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_Conv_StringToColor, inString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToColor::inString' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToColor, OutConvertedColor) == 0x000010, "Member 'KismetStringLibrary_Conv_StringToColor::OutConvertedColor' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToColor, OutIsValid) == 0x000020, "Member 'KismetStringLibrary_Conv_StringToColor::OutIsValid' has a wrong offset!");
 
@@ -31852,13 +31666,13 @@ static_assert(offsetof(KismetStringLibrary_Conv_StringToColor, OutIsValid) == 0x
 struct KismetStringLibrary_Conv_StringToFloat final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetStringLibrary_Conv_StringToFloat) == 0x000008, "Wrong alignment on KismetStringLibrary_Conv_StringToFloat");
 static_assert(sizeof(KismetStringLibrary_Conv_StringToFloat) == 0x000018, "Wrong size on KismetStringLibrary_Conv_StringToFloat");
-static_assert(offsetof(KismetStringLibrary_Conv_StringToFloat, InString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToFloat::InString' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_Conv_StringToFloat, inString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToFloat::inString' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToFloat, ReturnValue) == 0x000010, "Member 'KismetStringLibrary_Conv_StringToFloat::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetStringLibrary.Conv_StringToInt
@@ -31866,13 +31680,13 @@ static_assert(offsetof(KismetStringLibrary_Conv_StringToFloat, ReturnValue) == 0
 struct KismetStringLibrary_Conv_StringToInt final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetStringLibrary_Conv_StringToInt) == 0x000008, "Wrong alignment on KismetStringLibrary_Conv_StringToInt");
 static_assert(sizeof(KismetStringLibrary_Conv_StringToInt) == 0x000018, "Wrong size on KismetStringLibrary_Conv_StringToInt");
-static_assert(offsetof(KismetStringLibrary_Conv_StringToInt, InString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToInt::InString' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_Conv_StringToInt, inString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToInt::inString' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToInt, ReturnValue) == 0x000010, "Member 'KismetStringLibrary_Conv_StringToInt::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetStringLibrary.Conv_StringToName
@@ -31880,12 +31694,12 @@ static_assert(offsetof(KismetStringLibrary_Conv_StringToInt, ReturnValue) == 0x0
 struct KismetStringLibrary_Conv_StringToName final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetStringLibrary_Conv_StringToName) == 0x000008, "Wrong alignment on KismetStringLibrary_Conv_StringToName");
 static_assert(sizeof(KismetStringLibrary_Conv_StringToName) == 0x000018, "Wrong size on KismetStringLibrary_Conv_StringToName");
-static_assert(offsetof(KismetStringLibrary_Conv_StringToName, InString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToName::InString' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_Conv_StringToName, inString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToName::inString' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToName, ReturnValue) == 0x000010, "Member 'KismetStringLibrary_Conv_StringToName::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetStringLibrary.Conv_StringToRotator
@@ -31893,14 +31707,14 @@ static_assert(offsetof(KismetStringLibrary_Conv_StringToName, ReturnValue) == 0x
 struct KismetStringLibrary_Conv_StringToRotator final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               OutConvertedRotator;                               // 0x0010(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          OutIsValid;                                        // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetStringLibrary_Conv_StringToRotator) == 0x000008, "Wrong alignment on KismetStringLibrary_Conv_StringToRotator");
 static_assert(sizeof(KismetStringLibrary_Conv_StringToRotator) == 0x000020, "Wrong size on KismetStringLibrary_Conv_StringToRotator");
-static_assert(offsetof(KismetStringLibrary_Conv_StringToRotator, InString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToRotator::InString' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_Conv_StringToRotator, inString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToRotator::inString' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToRotator, OutConvertedRotator) == 0x000010, "Member 'KismetStringLibrary_Conv_StringToRotator::OutConvertedRotator' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToRotator, OutIsValid) == 0x00001C, "Member 'KismetStringLibrary_Conv_StringToRotator::OutIsValid' has a wrong offset!");
 
@@ -31909,14 +31723,14 @@ static_assert(offsetof(KismetStringLibrary_Conv_StringToRotator, OutIsValid) == 
 struct KismetStringLibrary_Conv_StringToVector final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OutConvertedVector;                                // 0x0010(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          OutIsValid;                                        // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetStringLibrary_Conv_StringToVector) == 0x000008, "Wrong alignment on KismetStringLibrary_Conv_StringToVector");
 static_assert(sizeof(KismetStringLibrary_Conv_StringToVector) == 0x000020, "Wrong size on KismetStringLibrary_Conv_StringToVector");
-static_assert(offsetof(KismetStringLibrary_Conv_StringToVector, InString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToVector::InString' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_Conv_StringToVector, inString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToVector::inString' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToVector, OutConvertedVector) == 0x000010, "Member 'KismetStringLibrary_Conv_StringToVector::OutConvertedVector' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToVector, OutIsValid) == 0x00001C, "Member 'KismetStringLibrary_Conv_StringToVector::OutIsValid' has a wrong offset!");
 
@@ -31925,14 +31739,14 @@ static_assert(offsetof(KismetStringLibrary_Conv_StringToVector, OutIsValid) == 0
 struct KismetStringLibrary_Conv_StringToVector2D final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              OutConvertedVector2D;                              // 0x0010(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          OutIsValid;                                        // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetStringLibrary_Conv_StringToVector2D) == 0x000008, "Wrong alignment on KismetStringLibrary_Conv_StringToVector2D");
 static_assert(sizeof(KismetStringLibrary_Conv_StringToVector2D) == 0x000020, "Wrong size on KismetStringLibrary_Conv_StringToVector2D");
-static_assert(offsetof(KismetStringLibrary_Conv_StringToVector2D, InString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToVector2D::InString' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_Conv_StringToVector2D, inString) == 0x000000, "Member 'KismetStringLibrary_Conv_StringToVector2D::inString' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToVector2D, OutConvertedVector2D) == 0x000010, "Member 'KismetStringLibrary_Conv_StringToVector2D::OutConvertedVector2D' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_Conv_StringToVector2D, OutIsValid) == 0x000018, "Member 'KismetStringLibrary_Conv_StringToVector2D::OutIsValid' has a wrong offset!");
 
@@ -31982,14 +31796,14 @@ struct KismetStringLibrary_CullArray final
 {
 public:
 	class FString                                 SourceString;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         InArray;                                           // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         inArray;                                           // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetStringLibrary_CullArray) == 0x000008, "Wrong alignment on KismetStringLibrary_CullArray");
 static_assert(sizeof(KismetStringLibrary_CullArray) == 0x000028, "Wrong size on KismetStringLibrary_CullArray");
 static_assert(offsetof(KismetStringLibrary_CullArray, SourceString) == 0x000000, "Member 'KismetStringLibrary_CullArray::SourceString' has a wrong offset!");
-static_assert(offsetof(KismetStringLibrary_CullArray, InArray) == 0x000010, "Member 'KismetStringLibrary_CullArray::InArray' has a wrong offset!");
+static_assert(offsetof(KismetStringLibrary_CullArray, inArray) == 0x000010, "Member 'KismetStringLibrary_CullArray::inArray' has a wrong offset!");
 static_assert(offsetof(KismetStringLibrary_CullArray, ReturnValue) == 0x000020, "Member 'KismetStringLibrary_CullArray::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetStringLibrary.EndsWith
@@ -32936,12 +32750,12 @@ static_assert(offsetof(KismetTextLibrary_Conv_RotatorToText, ReturnValue) == 0x0
 struct KismetTextLibrary_Conv_StringToText final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetTextLibrary_Conv_StringToText) == 0x000008, "Wrong alignment on KismetTextLibrary_Conv_StringToText");
 static_assert(sizeof(KismetTextLibrary_Conv_StringToText) == 0x000028, "Wrong size on KismetTextLibrary_Conv_StringToText");
-static_assert(offsetof(KismetTextLibrary_Conv_StringToText, InString) == 0x000000, "Member 'KismetTextLibrary_Conv_StringToText::InString' has a wrong offset!");
+static_assert(offsetof(KismetTextLibrary_Conv_StringToText, inString) == 0x000000, "Member 'KismetTextLibrary_Conv_StringToText::inString' has a wrong offset!");
 static_assert(offsetof(KismetTextLibrary_Conv_StringToText, ReturnValue) == 0x000010, "Member 'KismetTextLibrary_Conv_StringToText::ReturnValue' has a wrong offset!");
 
 // Function Engine.KismetTextLibrary.Conv_TextToString

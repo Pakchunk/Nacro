@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.OnExpeditionCompleted__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortExpeditionItem*              Item_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_FortExpeditionReturnsWidget_C::OnExpeditionCompleted__DelegateSignature(class UFortExpeditionItem* Item_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortExpeditionReturnsWidget_C", "OnExpeditionCompleted__DelegateSignature");
-
-	Params::BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature Parms{};
-
-	Parms.Item_0 = Item_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.ExecuteUbergraph_BP_FortExpeditionReturnsWidget
 // (HasDefaults)
 // Parameters:

@@ -37,7 +37,6 @@ public:
 	TArray<class UTexture2D*>                     ChestIcons;                                        // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
-	void OnReturnClicked__DelegateSignature();
 	void ExecuteUbergraph_Results_Summary(int32 EntryPoint);
 	void BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void PreConstruct(bool IsDesignTime);

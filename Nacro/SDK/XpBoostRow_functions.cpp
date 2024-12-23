@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function XpBoostRow.XpBoostRow_C.Give Boost Clicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FUniqueNetIdRepl                 Player_To_Boost                                        (Parm, HasGetValueTypeHash)
-
-void UXpBoostRow_C::Give_Boost_Clicked__DelegateSignature(const struct FUniqueNetIdRepl& Player_To_Boost)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("XpBoostRow_C", "Give Boost Clicked__DelegateSignature");
-
-	Params::XpBoostRow_C_Give_Boost_Clicked__DelegateSignature Parms{};
-
-	Parms.Player_To_Boost = std::move(Player_To_Boost);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function XpBoostRow.XpBoostRow_C.ExecuteUbergraph_XpBoostRow
 // (HasDefaults)
 // Parameters:

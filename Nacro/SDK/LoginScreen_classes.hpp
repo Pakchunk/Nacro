@@ -50,7 +50,7 @@ public:
 	class FText                                   BenchmarkDialogMessage;                            // 0x04E8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UObject*                                LoginMenuWidget;                                   // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USplashScreenWidget_C*                  SplashScreenWindow;                                // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFort_Entry_Music_Controller_BP_C*      Test;                                              // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFort_Entry_Music_Controller_BP_C*      test;                                              // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ULoginAccountSelect_C*                  AccountSelectWindow;                               // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -143,7 +143,7 @@ static_assert(offsetof(ULoginScreen_C, BenchmarkDialogTitle) == 0x0004D0, "Membe
 static_assert(offsetof(ULoginScreen_C, BenchmarkDialogMessage) == 0x0004E8, "Member 'ULoginScreen_C::BenchmarkDialogMessage' has a wrong offset!");
 static_assert(offsetof(ULoginScreen_C, LoginMenuWidget) == 0x000500, "Member 'ULoginScreen_C::LoginMenuWidget' has a wrong offset!");
 static_assert(offsetof(ULoginScreen_C, SplashScreenWindow) == 0x000508, "Member 'ULoginScreen_C::SplashScreenWindow' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Test) == 0x000510, "Member 'ULoginScreen_C::Test' has a wrong offset!");
+static_assert(offsetof(ULoginScreen_C, test) == 0x000510, "Member 'ULoginScreen_C::test' has a wrong offset!");
 static_assert(offsetof(ULoginScreen_C, AccountSelectWindow) == 0x000518, "Member 'ULoginScreen_C::AccountSelectWindow' has a wrong offset!");
 
 }

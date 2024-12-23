@@ -1064,9 +1064,6 @@ public:
 	void HandlePreviewStateChanged(const bool IsSquadSlotAffectedByPreview, const bool IsBeingReplacedOrRelocated, const bool WouldHavePersonalitySynergy, const bool WouldHaveSetBonusMatch, const TMap<struct FGameplayAttribute, float>& PreviewAttributeBonusValues);
 	void HandleTraitStateChanged(const bool SetBonusMatchStateChanged);
 	void InitializeSlot(const class UFortItemGroupWidget* HostItemGroupWidget_0, const int32 SlotIndexInGroup_0);
-	void OnAttributeBonusValueChanged__DelegateSignature(class UFortItemGroupSlotWidget* ItemSlotWidget);
-	void OnItemSet__DelegateSignature(class UFortItemGroupSlotWidget* ItemSlotWidget);
-	void OnItemSlotLockedStateChanged__DelegateSignature(class UFortItemGroupSlotWidget* ItemSlotWidget);
 	void SetItem(const class UFortItem* ItemToSlot);
 	void SetSlottingPreviewItem(const class UFortItem* Item);
 
@@ -2078,7 +2075,6 @@ public:
 	bool DrillDownToNodePage();
 	void HandleNodeStateChanged();
 	void HandleNodeStateChangedInternal();
-	void OnNodeStateChanged__DelegateSignature(class UFortBaseCanvasNode* Node);
 	void Purchase();
 	void SelectedChanged(bool bEnabled);
 	bool SelectNode();
@@ -2170,9 +2166,6 @@ public:
 	bool IsDesktopPlatform();
 	bool IsHUDVisible();
 	void Logout();
-	void OnLoadingScreenVisibilityChangedDelegate__DelegateSignature(bool IsVisible);
-	void OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature(bool bConnected);
-	void OnQueryFortBackendVersionDelegate__DelegateSignature(const struct FFortBackendVersion& FortBackendVersion);
 	void ProcessConfirmationResult(EFortDialogResult InResult, class FName InResultName, const struct FFortDialogDescription_NUI& ConfirmationDescription, bool bWaitingForLatentAction, struct FFortDialogExternalLatentActionHandle* WaitingDialogHandle);
 	void ProcessNotificationResult(EFortDialogResult InResult, const struct FFortDialogDescription& NotificationDescription);
 	void QueryGameBackendVersion();
@@ -3316,7 +3309,6 @@ public:
 
 public:
 	void ClearRewards();
-	void OnDisplayedItemChangedEvent__DelegateSignature(class UFortItem* DisplayedItem);
 	void SetRewards(const struct FFortRewardInfo& Rewards);
 
 	bool HasRewards() const;
@@ -3421,8 +3413,6 @@ public:
 	void OnBackActionExecuted(bool* bPassThrough);
 	void OnInputMethodChanged(bool bUsingGamepad);
 	void OnInspectActionExecuted(bool* bPassThrough);
-	void OnItemAction__DelegateSignature(class UFortItem* SelectedItem);
-	void OnItemInspectAction__DelegateSignature(class UFortItem* SelectedItem, bool EnableItemActions, bool IsPlaceholderItem);
 	void OnLogAllowedItemsActionExecuted(bool* bPassThrough);
 	void OnOpenPickerActionExecuted(bool* bPassThrough);
 	void OnSectionChanged(const class UFortCollectionBookSection* Section);
@@ -3500,7 +3490,6 @@ public:
 	uint8                                         Pad_340[0x20];                                     // 0x0340(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void FortCollectionBookSlottedItemUpdatedDelegate__DelegateSignature();
 	void OnItemDestroyed();
 	void OnSlottedItemOperationComplete(const class UFortAccountItem* ItemSlotted, class FName SlotId);
 
@@ -4755,7 +4744,6 @@ public:
 	void HandleNodeSelectionChangedBP();
 	void HandleViewParametersChangedBP();
 	void NavigateTo(const class FName& SkillTreeNodeId, const bool ShouldSelectNode, const EFortAnimSpeed TransitionSpeed);
-	void OnNodeSelectionChanged__DelegateSignature();
 	void ShowPage(const class FName& SkillTreePageId, const EFortAnimSpeed TransitionSpeed);
 
 	bool CanBackOutOfSubPage() const;
@@ -5273,9 +5261,7 @@ public:
 	uint8                                         Pad_2B8[0x10];                                     // 0x02B8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UFortGridPickerGrid* CreateGridWidget__DelegateSignature();
 	void OnButtonClicked();
-	void OnIsGridPickerOpenChanged__DelegateSignature(bool IsOpen);
 	void SetIsOpen(const bool ShouldBeOpen);
 
 public:
@@ -5598,8 +5584,6 @@ public:
 	bool GetLocalPlayerHasHeroHeadAccessories();
 	bool GetShowHeroBackpackForLocalPlayer();
 	bool GetShowHeroHeadAccessoriesForLocalPlayer();
-	void OnNodesPurchased__DelegateSignature(class FName NodeID);
-	void OnSquadSlotChanged__DelegateSignature(class FName SquadName, int32 SlotIndex);
 	void SetShowHeroBackpackForLocalPlayer(bool bShow);
 	void SetShowHeroBackpackInClientSettingsRecord(bool bShow);
 	void SetShowHeroHeadAccessoriesForLocalPlayer(bool bShow);
@@ -6608,12 +6592,11 @@ public:
 	TMap<class UFortItemDefinition*, struct FFortItemQuantityPair> ResourceItemQuantitiesMap;                         // 0x02E0(0x0050)(ZeroConstructor, NativeAccessSpecifierPrivate)
 
 public:
-	void _BPOnContentUpdated();
+	void mBPOnContentUpdated();
 	void AddItemToRecycling(class UFortItem* Item);
 	void CommitRecycle();
 	void MarkSeenItemsInVault();
 	void MarkVisibleItemsSeen(const TArray<class UFortAccountItem*>& InVisibleItems);
-	void OnRecycleItemsChanged__DelegateSignature(EVaultItemChangedType ChangeType, const TArray<class UFortItem*>& ChangedItems, const TArray<struct FFortItemQuantityPair>& Resources, const TArray<class UFortItem*>& RecycleItems_0);
 	void RemoveAllItemsFromRecycling();
 	void RemoveItemFromRecycling(class UFortItem* Item);
 	void SetCachedSortType(const EInventoryContentSortType InSortType, const EFortInventoryFilter InContentSubType);
@@ -6906,7 +6889,6 @@ public:
 	class UFortItem* GetItemToCompare();
 	void OnFortItemDestroyed();
 	void OnFortItemUpdated(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged);
-	void OnGetItemToCompare__DelegateSignature(class UFortItem** ItemToCompare);
 	void SetCooldownMaterial(class UMaterialInstanceDynamic* NewCooldownMaterial);
 	void SetItem(const class UFortItem* InItem, int32 QuantityOverride_0);
 	void SetOnGetItemToCompareDelegate(TDelegate<void(class UFortItem** ItemToCompare)> InDelegate);
@@ -7131,8 +7113,6 @@ public:
 	void HandleButtonClicked(class UCommonButton* CommittedButton, int32 ButtonIndex);
 	void HandleHoveredButtonChanged(class UCommonButton* HoveredButton, int32 ButtonIndex);
 	void HandleSelectedButtonChanged(class UCommonButton* SelectedButton, int32 ButtonIndex);
-	void OnDifferentSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex);
-	void OnRequestOpenSquadSlot__DelegateSignature(int32 SquadSlotIndex);
 	void SelectSlot(int32 SquadSlotIndex);
 	void SetIdOfSquadToManageBP(const class FName& SquadId);
 	void SetInPreviewMode(const bool bPreview);
@@ -7902,7 +7882,6 @@ public:
 	void HandlePickerItemSelected(const class UObject* ObjectWhoseSelectionChanged, bool bIsSelected);
 	void HandlePickerTileCreated(class UUserWidget* Widget);
 	void HandlePickerTileDestroyed(class UUserWidget* Widget);
-	void OnItemSelectionEvent__DelegateSignature(class UFortItem* SelectedItem);
 	bool SetSelectedIndex(int32 Index_0);
 	void SetSelectedItem(const class UFortItem* ItemToSelect);
 	bool TryCommitSelectedItem();
@@ -7970,7 +7949,6 @@ public:
 	class UFortAccountItem*                       CurrentSlottedItem;                                // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
-	void OnSlotItemConfirmed__DelegateSignature(class UFortItem* ItemToSlot, class FName SlotId, const struct FFortDialogExternalLatentActionHandle& LatentActionHandle);
 	void SlotItemConfirmationComplete(class UFortItem* CommittedItem, const struct FFortDialogExternalLatentActionHandle& LatentActionHandle);
 
 	class UFortAccountItem* GetCurrentSlottedItem() const;
@@ -8742,10 +8720,7 @@ public:
 	void DisplayStateContent(bool bDisplay);
 	class UUserWidget* GetCachedWidget(class UClass* InClass);
 	void IncrementShouldBlockSubtitlePortrait();
-	void OnBeginSpokenDialog__DelegateSignature(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference);
 	void OnEndLatentWaitForConfirmationDialog(struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle);
-	void OnEndSpokenDialog__DelegateSignature();
-	void OnShouldBlockSubtitlePortraitChanged__DelegateSignature(bool bShouldBlockSubtitlePortrait);
 	void OnShowConfirmation(const struct FFortDialogDescription& Description);
 	void OnShowConfirmation_NUI(const struct FFortDialogDescription_NUI& Description);
 	void OnStateEnded();
@@ -8759,7 +8734,7 @@ public:
 	void UnregisterStateTrigger(class UFortUIStateTrigger* TriggerToRemove);
 	void UpdateStateWidgetContent(class UFortUIStateWidget_NUI* StateWidget);
 
-	EFortUIState _BPGetCurrentUIState() const;
+	EFortUIState mBPGetCurrentUIState() const;
 	class UFortUIStateWidget_NUI* GetCurrentUIStateWidget() const;
 	class UFortUINavigationManager* GetNavigationManager() const;
 	bool IsStateContentDisplayed() const;
@@ -8815,7 +8790,6 @@ public:
 	void CenterSelectedItemTileWidget();
 	void HandleItemWidgetCreated(class UUserWidget* Widget);
 	void HideNullItemTile();
-	void OnInventoryUpdated__DelegateSignature();
 	void RefreshFilterAndSort();
 	void RefreshSort();
 	void SetFilter(const struct FFortItemFilterDefinition& Filter_0);
@@ -11774,7 +11748,6 @@ public:
 	void EndUpgradePreview();
 	void HandleItemSet();
 	void HandleItemSetInternal(const class UFortItemGroupSlotWidget* ItemGroupSlotWidget);
-	void OnItemPickerSelectionChanged__DelegateSignature(class UFortItem* SelectedItem);
 	void SetSelection(const class UFortItem* SelectedItem);
 	void SignalSelectionCommitted(const class UFortItem* SelectedItem);
 
@@ -11911,7 +11884,6 @@ public:
 
 public:
 	void GetTokensNeededForNodePage(const class UFortNodeCanvasHost* Page, TArray<class UFortItemDefinition*>* OutTokens);
-	void OnPageShown__DelegateSignature(class UFortNodeCanvasHost* Page);
 	void SetBackgroundMaterial(class UMaterialInstanceDynamic* InBackgroundMaterial);
 	void ShowPage(const class FName NodePageId, const class FName SourceNodeId, const class FName DestinationNodeId, const bool bSelectNode, const bool bOnlyPanIfNew);
 
@@ -12141,8 +12113,6 @@ public:
 	class UFortUINotification* CreateNotification(TSubclassOf<class UFortUINotification> UINotificationClass);
 	void DisplayErrorDialog(const struct FFortErrorInfo& Info);
 	void DisplayStateContent(bool bDisplay);
-	void OnBeginSpokenDialog__DelegateSignature(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference);
-	void OnEndSpokenDialog__DelegateSignature();
 	void OnShowConfirmation(const struct FFortDialogDescription& Description);
 	void OnShowConfirmation_NUI(const struct FFortDialogDescription_NUI& Description);
 	void OnStateStarted();
@@ -12154,7 +12124,7 @@ public:
 	void UnregisterStateTrigger(class UFortUIStateTrigger* TriggerToRemove);
 	void UpdateStateWidgetContent(class UFortUIStateWidget* StateWidget);
 
-	EFortUIState _BPGetCurrentUIState() const;
+	EFortUIState mBPGetCurrentUIState() const;
 	class UFortUIStateWidget* GetCurrentUIStateWidget() const;
 	class UFortUINavigationManager* GetNavigationManager() const;
 	bool IsStateContentDisplayed() const;

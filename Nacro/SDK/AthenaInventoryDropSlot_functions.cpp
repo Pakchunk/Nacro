@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnEquipRequested__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SlotIndex_0                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaInventoryDropSlot_C::OnEquipRequested__DelegateSignature(int32 SlotIndex_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaInventoryDropSlot_C", "OnEquipRequested__DelegateSignature");
-
-	Params::AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature Parms{};
-
-	Parms.SlotIndex_0 = SlotIndex_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.ExecuteUbergraph_AthenaInventoryDropSlot
 // (HasDefaults)
 // Parameters:

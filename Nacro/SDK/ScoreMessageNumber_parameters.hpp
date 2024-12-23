@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function ScoreMessageNumber.ScoreMessageNumber_C.OnScoreValueSet__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature final
-{
-public:
-	EStatCategory                                 ChangedScoreCategory;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature) == 0x000001, "Wrong alignment on ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature");
-static_assert(sizeof(ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature) == 0x000001, "Wrong size on ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature");
-static_assert(offsetof(ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature, ChangedScoreCategory) == 0x000000, "Member 'ScoreMessageNumber_C_OnScoreValueSet__DelegateSignature::ChangedScoreCategory' has a wrong offset!");
-
 // Function ScoreMessageNumber.ScoreMessageNumber_C.ExecuteUbergraph_ScoreMessageNumber
 // 0x0004 (0x0004 - 0x0000)
 struct ScoreMessageNumber_C_ExecuteUbergraph_ScoreMessageNumber final

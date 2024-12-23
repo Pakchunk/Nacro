@@ -44,8 +44,6 @@ public:
 	UMulticastDelegateProperty_                   HandleMouseLeave;                                  // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void HandleMouseEnter__DelegateSignature();
-	void HandleMouseLeave__DelegateSignature();
 	void ExecuteUbergraph_SquadSlotGroup(int32 EntryPoint);
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);

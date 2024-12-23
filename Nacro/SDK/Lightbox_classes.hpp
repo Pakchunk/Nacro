@@ -32,8 +32,6 @@ public:
 	UMulticastDelegateProperty_                   OutroEnded;                                        // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void IntroEnded__DelegateSignature();
-	void OutroEnded__DelegateSignature();
 	void ExecuteUbergraph_Lightbox(int32 EntryPoint);
 	void BndEvt__FadeOut_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();

@@ -39,7 +39,6 @@ public:
 	bool                                          CompletedSuccessfully;                             // 0x02EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void SurvivorStoryChoiceSelected__DelegateSignature(int32 SelectedChoice_0);
 	void ExecuteUbergraph_PlayerChoiceWidget(int32 EntryPoint);
 	void Destruct();
 	void SetChoices(const struct FChoiceData& ChoiceItems);

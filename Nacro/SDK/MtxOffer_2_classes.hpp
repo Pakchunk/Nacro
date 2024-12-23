@@ -48,9 +48,6 @@ public:
 	struct FMtxPackage                            Package_0;                                         // 0x0398(0x00A0)(Edit, BlueprintVisible)
 
 public:
-	void BuyItem__DelegateSignature(const class FString& OfferId);
-	void MtxOfferMouseEnter_EventDispatcher__DelegateSignature();
-	void MtxOfferMouseLeave_EventDispatcher__DelegateSignature();
 	void ExecuteUbergraph_MtxOffer_2(int32 EntryPoint);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On_Mouse_Hovered_Changed__DelegateSignature(bool Is_Hovered);

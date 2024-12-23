@@ -30,11 +30,11 @@ static_assert(offsetof(ActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModi
 struct ActiveModifiersPanelContent_C_Init final
 {
 public:
-	TArray<class UFortGameplayModifierItemDefinition*> InModifiers;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UFortGameplayModifierItemDefinition*> inModifiers;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 static_assert(alignof(ActiveModifiersPanelContent_C_Init) == 0x000008, "Wrong alignment on ActiveModifiersPanelContent_C_Init");
 static_assert(sizeof(ActiveModifiersPanelContent_C_Init) == 0x000010, "Wrong size on ActiveModifiersPanelContent_C_Init");
-static_assert(offsetof(ActiveModifiersPanelContent_C_Init, InModifiers) == 0x000000, "Member 'ActiveModifiersPanelContent_C_Init::InModifiers' has a wrong offset!");
+static_assert(offsetof(ActiveModifiersPanelContent_C_Init, inModifiers) == 0x000000, "Member 'ActiveModifiersPanelContent_C_Init::inModifiers' has a wrong offset!");
 
 }
 

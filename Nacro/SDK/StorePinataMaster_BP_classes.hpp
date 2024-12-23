@@ -32,20 +32,20 @@ public:
 	class USceneComponent*                        MobileLightsParent;                                // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   MeshScreenshotRopeEraser;                          // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   PhysicsBroomCube;                                  // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UDirectionalLightComponent*             DirectionalLightMinusLightShafts;                  // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSCMinusPinataFallingDebris;                       // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSCMinusPinataExplode;                             // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*               PSCMinusPinataHit;                                 // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UDirectionalLightComponent*             DirectionalLight_LightShafts;                      // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PSC_PinataFallingDebris;                           // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PSC_PinataExplode;                                 // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*               PSC_PinataHit;                                     // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        FXRoot;                                            // 0x03E0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    SpotLightRim02MinusA;                              // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    SpotLightRim01MinusA;                              // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    SpotLightRim02_A;                                  // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    SpotLightRim01_A;                                  // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UArrowComponent*                        Arrow2;                                            // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UArrowComponent*                        Arrow1;                                            // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UDirectionalLightComponent*             DirectionalLightMinusA;                            // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UDirectionalLightComponent*             DirectionalLight_A;                                // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UArrowComponent*                        Arrow;                                             // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    SpotLightRimMinusB;                                // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UDirectionalLightComponent*             DirectionalLightMinusB;                            // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    SpotLightMainMinusB;                               // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    SpotLightRim_B;                                    // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UDirectionalLightComponent*             DirectionalLight_B;                                // 0x0420(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    SpotLightMain_B;                                   // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USkyLightComponent*                     SkyLightStore;                                     // 0x0430(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        LightsRoot;                                        // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   MeshScreenshotBG;                                  // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -86,23 +86,23 @@ public:
 	float                                         TL_Upgrade3_UpgradeWipe_B21C849A48AE2BB921CD949CA9B9A20F; // 0x0558(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_Upgrade3__Direction_B21C849A48AE2BB921CD949CA9B9A20F; // 0x055C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_55D[0x3];                                      // 0x055D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusUpgrade3;                                   // 0x0560(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_Upgrade3;                                       // 0x0560(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_DropEyeAnim_Blink_4A309648421EBB6E126EF69E3A1C19D6; // 0x0568(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_DropEyeAnim_LocLerp_4A309648421EBB6E126EF69E3A1C19D6; // 0x056C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_DropEyeAnim_SizeLerp_4A309648421EBB6E126EF69E3A1C19D6; // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_DropEyeAnim__Direction_4A309648421EBB6E126EF69E3A1C19D6; // 0x0574(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_575[0x3];                                      // 0x0575(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusDropEyeAnim;                                // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_DropEyeAnim;                                    // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_PupilContracts_ContractLerpLoc_FE4A75A84413E69729FBCD9FE414408A; // 0x0580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_PupilContracts_ContractLerpA_FE4A75A84413E69729FBCD9FE414408A; // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_PupilContracts__Direction_FE4A75A84413E69729FBCD9FE414408A; // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusPupilContracts;                             // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_PupilContracts;                                 // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_SuspiciousEyes_SuspiciousEyeLoc_D8D2FF1F436C6B879D28EFAA86F1BBC2; // 0x0598(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_SuspiciousEyes_SuspiciousEyelids_D8D2FF1F436C6B879D28EFAA86F1BBC2; // 0x059C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_SuspiciousEyes__Direction_D8D2FF1F436C6B879D28EFAA86F1BBC2; // 0x05A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5A1[0x7];                                      // 0x05A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusSuspiciousEyes;                             // 0x05A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_SuspiciousEyes;                                 // 0x05A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_WeaponCharge_AttackPlayRate_8CB70918473F7BE5EF5A2F827BB25ABF; // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_WeaponCharge_TimeHeld_8CB70918473F7BE5EF5A2F827BB25ABF; // 0x05B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_WeaponCharge_EyesLerpB_8CB70918473F7BE5EF5A2F827BB25ABF; // 0x05B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,7 +110,7 @@ public:
 	float                                         TL_WeaponCharge_WeaponChargeRotateLerp_8CB70918473F7BE5EF5A2F827BB25ABF; // 0x05C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_WeaponCharge__Direction_8CB70918473F7BE5EF5A2F827BB25ABF; // 0x05C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5C5[0x3];                                      // 0x05C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusWeaponCharge;                               // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_WeaponCharge;                                   // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_PushbroomAnim_LERP_5F6C90144EDBBEAF398302AB845E844F; // 0x05D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_PushbroomAnim_ParticleScaleOut_5F6C90144EDBBEAF398302AB845E844F; // 0x05D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_PushbroomAnim_NewTrack_2_5F6C90144EDBBEAF398302AB845E844F; // 0x05D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -123,7 +123,7 @@ public:
 	float                                         TL_ChangeLighting_Main_A488F4E44EB8E7A0F9886E8F7CA1BDC4; // 0x05F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_ChangeLighting__Direction_A488F4E44EB8E7A0F9886E8F7CA1BDC4; // 0x05F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5F9[0x7];                                      // 0x05F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusChangeLighting;                             // 0x0600(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_ChangeLighting;                                 // 0x0600(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_0_DirGround_7BEC5298479CA735A53B1CB25EC926EF; // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_0_rimGround_7BEC5298479CA735A53B1CB25EC926EF; // 0x060C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Timeline_0_MainGround_7BEC5298479CA735A53B1CB25EC926EF; // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -138,36 +138,36 @@ public:
 	float                                         TL_EyesFollowMouseAgain_NewTrack_3_1BE27C46490CB7E2A3B07CA8042DE768; // 0x0638(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_EyesFollowMouseAgain__Direction_1BE27C46490CB7E2A3B07CA8042DE768; // 0x063C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_63D[0x3];                                      // 0x063D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusEyesFollowMouseAgain;                       // 0x0640(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_EyesFollowMouseAgain;                           // 0x0640(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_Upgrade2_UpgradeWipe_3313188D45B89EDEAD5CC8BD30ABBAC3; // 0x0648(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_Upgrade2__Direction_3313188D45B89EDEAD5CC8BD30ABBAC3; // 0x064C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64D[0x3];                                      // 0x064D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusUpgrade2;                                   // 0x0650(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_Upgrade2;                                       // 0x0650(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_UndarkenBG_NewTrack_0_C60EED984B4A5117E9941E920611D748; // 0x0658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_UndarkenBG__Direction_C60EED984B4A5117E9941E920611D748; // 0x065C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_65D[0x3];                                      // 0x065D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusUndarkenBG;                                 // 0x0660(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_UndarkenBG;                                     // 0x0660(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_RegularEyes_DizzyEyes_2259ACD0444C6333BC4BD3BF1C9EE1E5; // 0x0668(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_RegularEyes_NewTrack_3_2259ACD0444C6333BC4BD3BF1C9EE1E5; // 0x066C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_RegularEyes__Direction_2259ACD0444C6333BC4BD3BF1C9EE1E5; // 0x0670(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_671[0x7];                                      // 0x0671(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusRegularEyes;                                // 0x0678(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_RegularEyes;                                    // 0x0678(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_DarkenBG_NewTrack_0_C89B3A6D43D94BAC2627F18DC7E2A1D1; // 0x0680(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_DarkenBG__Direction_C89B3A6D43D94BAC2627F18DC7E2A1D1; // 0x0684(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_685[0x3];                                      // 0x0685(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusDarkenBG;                                   // 0x0688(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_DarkenBG;                                       // 0x0688(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_Upgrade1_UpgradeWipe_DE6D0868440970D949F11B98CC0FC434; // 0x0690(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_Upgrade1__Direction_DE6D0868440970D949F11B98CC0FC434; // 0x0694(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_695[0x3];                                      // 0x0695(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusUpgrade1;                                   // 0x0698(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_Upgrade1;                                       // 0x0698(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_Attack_WeaponRotateAttack_9355DE8041B051639599A9A8EA98EA0D; // 0x06A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_Attack__Direction_9355DE8041B051639599A9A8EA98EA0D; // 0x06A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6A5[0x3];                                      // 0x06A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusAttack;                                     // 0x06A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_Attack;                                         // 0x06A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TL_EquipWeapon_NewTrack_2_443114684EA745E35026E98F24AA5387; // 0x06B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            TL_EquipWeapon__Direction_443114684EA745E35026E98F24AA5387; // 0x06B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6B5[0x3];                                      // 0x06B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     TLMinusEquipWeapon;                                // 0x06B8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     TL_EquipWeapon;                                    // 0x06B8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class USoundBase*>                     SoundWeaponGreetArray;                             // 0x06C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	float                                         Current_Delta;                                     // 0x06D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                WorldLocationForMaterial;                          // 0x06D4(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -179,14 +179,14 @@ public:
 	bool                                          HasAttacked3X;                                     // 0x06E5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          AbleToAttack;                                      // 0x06E6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          CanFastForward;                                    // 0x06E7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	class UMaterialInstanceDynamic*               MIDMinusPPTMinusIcon;                              // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_PPT_Icon;                                      // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DebugUpgradeLevels;                                // 0x06F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DebugLevel0_;                                      // 0x06F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DebugLevel1_;                                      // 0x06F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DebugLevel2_;                                      // 0x06F3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6F4[0x4];                                      // 0x06F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               MIDMinusPPTMinusBase;                              // 0x06F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MIDMinusPPTMinusTassles;                           // 0x0700(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_PPT_Base;                                      // 0x06F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_PPT_Tassles;                                   // 0x0700(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               CardPackIconTexture;                               // 0x0708(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CardPackIconColor;                                 // 0x0710(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        FallingDebris_Lvl_0;                               // 0x0720(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -199,9 +199,9 @@ public:
 	class UParticleSystem*                        Llama_Hit_Lvl_1;                                   // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Lvl1_Lightray_Color;                               // 0x0760(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Lvl2_Lightray_Color;                               // 0x0770(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstance*                      MaterialMinusPPTMinusConfetti;                     // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MIDMinusPinataEyeLeft;                             // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MIDMinusPinataEyeRight;                            // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstance*                      Material_PPT_Confetti;                             // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_PinataEyeLeft;                                 // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_PinataEyeRight;                                // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RandomWeaponNumber;                                // 0x0798(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_79C[0x4];                                      // 0x079C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             Sound_Llama_Appear;                                // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -227,7 +227,7 @@ public:
 	TArray<class USoundBase*>                     Dialog_Llama_Mob_Greet_Array;                      // 0x0848(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class USoundBase*>                     Dialog_Llama_Greet_Array_Current;                  // 0x0858(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class USoundBase*                             Sound_PinataSwing;                                 // 0x0868(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         VOMinusUpgradeMinusDelay;                          // 0x0870(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         VO_Upgrade_Delay;                                  // 0x0870(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_874[0x4];                                      // 0x0874(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFort_Entry_Music_Controller_BP_C*      Fort_Entry_Music_Controller;                       // 0x0878(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Dialog_Llama_PreHit_Current;                       // 0x0880(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -256,14 +256,14 @@ public:
 	class AStoreCardReveal_BP_C*                  StoreCardRevealInLevel;                            // 0x0930(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         AmountOfWeapons;                                   // 0x0938(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_93C[0x4];                                      // 0x093C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               MIDMinusPPTMinusFoil;                              // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_PPT_Foil;                                      // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DebugPinataScreenshot;                             // 0x0948(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_949[0x3];                                      // 0x0949(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DirLightAMinusBaseSetting;                         // 0x094C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RimLight01MinusAMinusBaseSetting;                  // 0x0950(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         SpotLightMainMinusBMinusBaseSetting;               // 0x0954(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RimLightMinusBMinusBaseSetting;                    // 0x0958(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         DirLightMinusBMinusBaseSetting;                    // 0x095C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DirLightA_BaseSetting;                             // 0x094C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RimLight01_A_BaseSetting;                          // 0x0950(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         SpotLightMain_B_BaseSetting;                       // 0x0954(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RimLight_B_BaseSetting;                            // 0x0958(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DirLight_B_BaseSetting;                            // 0x095C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         DebugUseThisWeaponNumber;                          // 0x0960(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DebugUseSpecificWeapon;                            // 0x0964(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_965[0x3];                                      // 0x0965(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -294,7 +294,7 @@ public:
 	class FName                                   BodyRootBoneName;                                  // 0x0B40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DebugCardRevealInLevel;                            // 0x0B48(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B49[0x3];                                      // 0x0B49(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RimLight02MinusAMinusBaseSetting;                  // 0x0B4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RimLight02_A_BaseSetting;                          // 0x0B4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          LetTickUpdateEyes;                                 // 0x0B50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          FirstCard;                                         // 0x0B51(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          DebugLevel3_;                                      // 0x0B52(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -322,14 +322,14 @@ public:
 	bool                                          DebugWeapons;                                      // 0x0BB6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_BB7[0x1];                                      // 0x0BB7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 NewVar_0;                                          // 0x0BB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     RegularMaterialMinusConfetti;                      // 0x0BC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     RegularMaterial_Confetti;                          // 0x0BC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseSpecificWeapon;                                 // 0x0BC8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_StorePinataMaster_BP(int32 EntryPoint);
 	void SpawnCandy();
-	void StopMinusSwingingEyeAnim();
-	void StopMinusDropEyeAnim();
+	void Stop_SwingingEyeAnim();
+	void Stop_DropEyeAnim();
 	void ReceiveTick(float DeltaSeconds);
 	void ExitCardPackStore();
 	void InitiatePinata();
@@ -350,45 +350,45 @@ public:
 	void InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_5(const struct FKey& Key);
 	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6(const struct FKey& Key);
 	void InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7(const struct FKey& Key);
-	void TLMinusUpgrade3__TasslesDropOff2__EventFunc();
-	void TLMinusUpgrade3__UpdateFunc();
-	void TLMinusUpgrade3__FinishedFunc();
-	void TLMinusDropEyeAnim__UpdateFunc();
-	void TLMinusDropEyeAnim__FinishedFunc();
-	void TLMinusPupilContracts__UpdateFunc();
-	void TLMinusPupilContracts__FinishedFunc();
-	void TLMinusSuspiciousEyes__UpdateFunc();
-	void TLMinusSuspiciousEyes__FinishedFunc();
-	void TLMinusEquipWeapon__UpdateFunc();
-	void TLMinusEquipWeapon__FinishedFunc();
-	void TLMinusAttack__EventTrackHit__EventFunc();
-	void TLMinusAttack__UpdateFunc();
-	void TLMinusAttack__FinishedFunc();
+	void TL_Upgrade3__TasslesDropOff2__EventFunc();
+	void TL_Upgrade3__UpdateFunc();
+	void TL_Upgrade3__FinishedFunc();
+	void TL_DropEyeAnim__UpdateFunc();
+	void TL_DropEyeAnim__FinishedFunc();
+	void TL_PupilContracts__UpdateFunc();
+	void TL_PupilContracts__FinishedFunc();
+	void TL_SuspiciousEyes__UpdateFunc();
+	void TL_SuspiciousEyes__FinishedFunc();
+	void TL_EquipWeapon__UpdateFunc();
+	void TL_EquipWeapon__FinishedFunc();
+	void TL_Attack__EventTrackHit__EventFunc();
+	void TL_Attack__UpdateFunc();
+	void TL_Attack__FinishedFunc();
 	void TL_PushbroomAnim__Trigger_Particles__EventFunc();
 	void TL_PushbroomAnim__UpdateFunc();
 	void TL_PushbroomAnim__FinishedFunc();
-	void TLMinusUpgrade1__TasslesDropOffEvent__EventFunc();
-	void TLMinusUpgrade1__UpdateFunc();
-	void TLMinusUpgrade1__FinishedFunc();
+	void TL_Upgrade1__TasslesDropOffEvent__EventFunc();
+	void TL_Upgrade1__UpdateFunc();
+	void TL_Upgrade1__FinishedFunc();
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
 	void TL_CardCough__UpdateFunc();
 	void TL_CardCough__FinishedFunc();
-	void TLMinusChangeLighting__UpdateFunc();
-	void TLMinusChangeLighting__FinishedFunc();
-	void TLMinusEyesFollowMouseAgain__UpdateFunc();
-	void TLMinusEyesFollowMouseAgain__FinishedFunc();
-	void TLMinusRegularEyes__UpdateFunc();
-	void TLMinusRegularEyes__FinishedFunc();
-	void TLMinusUndarkenBG__UpdateFunc();
-	void TLMinusUndarkenBG__FinishedFunc();
-	void TLMinusDarkenBG__UpdateFunc();
-	void TLMinusDarkenBG__FinishedFunc();
-	void TLMinusUpgrade2__TasslesDropOff2__EventFunc();
-	void TLMinusUpgrade2__UpdateFunc();
-	void TLMinusUpgrade2__FinishedFunc();
-	void TLMinusWeaponCharge__UpdateFunc();
-	void TLMinusWeaponCharge__FinishedFunc();
+	void TL_ChangeLighting__UpdateFunc();
+	void TL_ChangeLighting__FinishedFunc();
+	void TL_EyesFollowMouseAgain__UpdateFunc();
+	void TL_EyesFollowMouseAgain__FinishedFunc();
+	void TL_RegularEyes__UpdateFunc();
+	void TL_RegularEyes__FinishedFunc();
+	void TL_UndarkenBG__UpdateFunc();
+	void TL_UndarkenBG__FinishedFunc();
+	void TL_DarkenBG__UpdateFunc();
+	void TL_DarkenBG__FinishedFunc();
+	void TL_Upgrade2__TasslesDropOff2__EventFunc();
+	void TL_Upgrade2__UpdateFunc();
+	void TL_Upgrade2__FinishedFunc();
+	void TL_WeaponCharge__UpdateFunc();
+	void TL_WeaponCharge__FinishedFunc();
 	void UserConstructionScript();
 	void DefinePinataAssets();
 	void PackPersonalitySounds();
@@ -412,20 +412,20 @@ static_assert(offsetof(AStorePinataMaster_BP_C, MobileDirectionalLight) == 0x000
 static_assert(offsetof(AStorePinataMaster_BP_C, MobileLightsParent) == 0x0003A8, "Member 'AStorePinataMaster_BP_C::MobileLightsParent' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, MeshScreenshotRopeEraser) == 0x0003B0, "Member 'AStorePinataMaster_BP_C::MeshScreenshotRopeEraser' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, PhysicsBroomCube) == 0x0003B8, "Member 'AStorePinataMaster_BP_C::PhysicsBroomCube' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, DirectionalLightMinusLightShafts) == 0x0003C0, "Member 'AStorePinataMaster_BP_C::DirectionalLightMinusLightShafts' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, PSCMinusPinataFallingDebris) == 0x0003C8, "Member 'AStorePinataMaster_BP_C::PSCMinusPinataFallingDebris' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, PSCMinusPinataExplode) == 0x0003D0, "Member 'AStorePinataMaster_BP_C::PSCMinusPinataExplode' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, PSCMinusPinataHit) == 0x0003D8, "Member 'AStorePinataMaster_BP_C::PSCMinusPinataHit' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, DirectionalLight_LightShafts) == 0x0003C0, "Member 'AStorePinataMaster_BP_C::DirectionalLight_LightShafts' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, PSC_PinataFallingDebris) == 0x0003C8, "Member 'AStorePinataMaster_BP_C::PSC_PinataFallingDebris' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, PSC_PinataExplode) == 0x0003D0, "Member 'AStorePinataMaster_BP_C::PSC_PinataExplode' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, PSC_PinataHit) == 0x0003D8, "Member 'AStorePinataMaster_BP_C::PSC_PinataHit' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, FXRoot) == 0x0003E0, "Member 'AStorePinataMaster_BP_C::FXRoot' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightRim02MinusA) == 0x0003E8, "Member 'AStorePinataMaster_BP_C::SpotLightRim02MinusA' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightRim01MinusA) == 0x0003F0, "Member 'AStorePinataMaster_BP_C::SpotLightRim01MinusA' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightRim02_A) == 0x0003E8, "Member 'AStorePinataMaster_BP_C::SpotLightRim02_A' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightRim01_A) == 0x0003F0, "Member 'AStorePinataMaster_BP_C::SpotLightRim01_A' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Arrow2) == 0x0003F8, "Member 'AStorePinataMaster_BP_C::Arrow2' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Arrow1) == 0x000400, "Member 'AStorePinataMaster_BP_C::Arrow1' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, DirectionalLightMinusA) == 0x000408, "Member 'AStorePinataMaster_BP_C::DirectionalLightMinusA' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, DirectionalLight_A) == 0x000408, "Member 'AStorePinataMaster_BP_C::DirectionalLight_A' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Arrow) == 0x000410, "Member 'AStorePinataMaster_BP_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightRimMinusB) == 0x000418, "Member 'AStorePinataMaster_BP_C::SpotLightRimMinusB' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, DirectionalLightMinusB) == 0x000420, "Member 'AStorePinataMaster_BP_C::DirectionalLightMinusB' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightMainMinusB) == 0x000428, "Member 'AStorePinataMaster_BP_C::SpotLightMainMinusB' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightRim_B) == 0x000418, "Member 'AStorePinataMaster_BP_C::SpotLightRim_B' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, DirectionalLight_B) == 0x000420, "Member 'AStorePinataMaster_BP_C::DirectionalLight_B' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightMain_B) == 0x000428, "Member 'AStorePinataMaster_BP_C::SpotLightMain_B' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, SkyLightStore) == 0x000430, "Member 'AStorePinataMaster_BP_C::SkyLightStore' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, LightsRoot) == 0x000438, "Member 'AStorePinataMaster_BP_C::LightsRoot' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, MeshScreenshotBG) == 0x000440, "Member 'AStorePinataMaster_BP_C::MeshScreenshotBG' has a wrong offset!");
@@ -465,27 +465,27 @@ static_assert(offsetof(AStorePinataMaster_BP_C, WeaponRoot) == 0x000548, "Member
 static_assert(offsetof(AStorePinataMaster_BP_C, PinataSceneRoot) == 0x000550, "Member 'AStorePinataMaster_BP_C::PinataSceneRoot' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade3_UpgradeWipe_B21C849A48AE2BB921CD949CA9B9A20F) == 0x000558, "Member 'AStorePinataMaster_BP_C::TL_Upgrade3_UpgradeWipe_B21C849A48AE2BB921CD949CA9B9A20F' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade3__Direction_B21C849A48AE2BB921CD949CA9B9A20F) == 0x00055C, "Member 'AStorePinataMaster_BP_C::TL_Upgrade3__Direction_B21C849A48AE2BB921CD949CA9B9A20F' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusUpgrade3) == 0x000560, "Member 'AStorePinataMaster_BP_C::TLMinusUpgrade3' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade3) == 0x000560, "Member 'AStorePinataMaster_BP_C::TL_Upgrade3' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_DropEyeAnim_Blink_4A309648421EBB6E126EF69E3A1C19D6) == 0x000568, "Member 'AStorePinataMaster_BP_C::TL_DropEyeAnim_Blink_4A309648421EBB6E126EF69E3A1C19D6' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_DropEyeAnim_LocLerp_4A309648421EBB6E126EF69E3A1C19D6) == 0x00056C, "Member 'AStorePinataMaster_BP_C::TL_DropEyeAnim_LocLerp_4A309648421EBB6E126EF69E3A1C19D6' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_DropEyeAnim_SizeLerp_4A309648421EBB6E126EF69E3A1C19D6) == 0x000570, "Member 'AStorePinataMaster_BP_C::TL_DropEyeAnim_SizeLerp_4A309648421EBB6E126EF69E3A1C19D6' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_DropEyeAnim__Direction_4A309648421EBB6E126EF69E3A1C19D6) == 0x000574, "Member 'AStorePinataMaster_BP_C::TL_DropEyeAnim__Direction_4A309648421EBB6E126EF69E3A1C19D6' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusDropEyeAnim) == 0x000578, "Member 'AStorePinataMaster_BP_C::TLMinusDropEyeAnim' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_DropEyeAnim) == 0x000578, "Member 'AStorePinataMaster_BP_C::TL_DropEyeAnim' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_PupilContracts_ContractLerpLoc_FE4A75A84413E69729FBCD9FE414408A) == 0x000580, "Member 'AStorePinataMaster_BP_C::TL_PupilContracts_ContractLerpLoc_FE4A75A84413E69729FBCD9FE414408A' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_PupilContracts_ContractLerpA_FE4A75A84413E69729FBCD9FE414408A) == 0x000584, "Member 'AStorePinataMaster_BP_C::TL_PupilContracts_ContractLerpA_FE4A75A84413E69729FBCD9FE414408A' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_PupilContracts__Direction_FE4A75A84413E69729FBCD9FE414408A) == 0x000588, "Member 'AStorePinataMaster_BP_C::TL_PupilContracts__Direction_FE4A75A84413E69729FBCD9FE414408A' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusPupilContracts) == 0x000590, "Member 'AStorePinataMaster_BP_C::TLMinusPupilContracts' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_PupilContracts) == 0x000590, "Member 'AStorePinataMaster_BP_C::TL_PupilContracts' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_SuspiciousEyes_SuspiciousEyeLoc_D8D2FF1F436C6B879D28EFAA86F1BBC2) == 0x000598, "Member 'AStorePinataMaster_BP_C::TL_SuspiciousEyes_SuspiciousEyeLoc_D8D2FF1F436C6B879D28EFAA86F1BBC2' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_SuspiciousEyes_SuspiciousEyelids_D8D2FF1F436C6B879D28EFAA86F1BBC2) == 0x00059C, "Member 'AStorePinataMaster_BP_C::TL_SuspiciousEyes_SuspiciousEyelids_D8D2FF1F436C6B879D28EFAA86F1BBC2' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_SuspiciousEyes__Direction_D8D2FF1F436C6B879D28EFAA86F1BBC2) == 0x0005A0, "Member 'AStorePinataMaster_BP_C::TL_SuspiciousEyes__Direction_D8D2FF1F436C6B879D28EFAA86F1BBC2' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusSuspiciousEyes) == 0x0005A8, "Member 'AStorePinataMaster_BP_C::TLMinusSuspiciousEyes' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_SuspiciousEyes) == 0x0005A8, "Member 'AStorePinataMaster_BP_C::TL_SuspiciousEyes' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_WeaponCharge_AttackPlayRate_8CB70918473F7BE5EF5A2F827BB25ABF) == 0x0005B0, "Member 'AStorePinataMaster_BP_C::TL_WeaponCharge_AttackPlayRate_8CB70918473F7BE5EF5A2F827BB25ABF' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_WeaponCharge_TimeHeld_8CB70918473F7BE5EF5A2F827BB25ABF) == 0x0005B4, "Member 'AStorePinataMaster_BP_C::TL_WeaponCharge_TimeHeld_8CB70918473F7BE5EF5A2F827BB25ABF' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_WeaponCharge_EyesLerpB_8CB70918473F7BE5EF5A2F827BB25ABF) == 0x0005B8, "Member 'AStorePinataMaster_BP_C::TL_WeaponCharge_EyesLerpB_8CB70918473F7BE5EF5A2F827BB25ABF' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_WeaponCharge_EyesLerpA_8CB70918473F7BE5EF5A2F827BB25ABF) == 0x0005BC, "Member 'AStorePinataMaster_BP_C::TL_WeaponCharge_EyesLerpA_8CB70918473F7BE5EF5A2F827BB25ABF' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_WeaponCharge_WeaponChargeRotateLerp_8CB70918473F7BE5EF5A2F827BB25ABF) == 0x0005C0, "Member 'AStorePinataMaster_BP_C::TL_WeaponCharge_WeaponChargeRotateLerp_8CB70918473F7BE5EF5A2F827BB25ABF' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_WeaponCharge__Direction_8CB70918473F7BE5EF5A2F827BB25ABF) == 0x0005C4, "Member 'AStorePinataMaster_BP_C::TL_WeaponCharge__Direction_8CB70918473F7BE5EF5A2F827BB25ABF' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusWeaponCharge) == 0x0005C8, "Member 'AStorePinataMaster_BP_C::TLMinusWeaponCharge' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_WeaponCharge) == 0x0005C8, "Member 'AStorePinataMaster_BP_C::TL_WeaponCharge' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_PushbroomAnim_LERP_5F6C90144EDBBEAF398302AB845E844F) == 0x0005D0, "Member 'AStorePinataMaster_BP_C::TL_PushbroomAnim_LERP_5F6C90144EDBBEAF398302AB845E844F' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_PushbroomAnim_ParticleScaleOut_5F6C90144EDBBEAF398302AB845E844F) == 0x0005D4, "Member 'AStorePinataMaster_BP_C::TL_PushbroomAnim_ParticleScaleOut_5F6C90144EDBBEAF398302AB845E844F' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_PushbroomAnim_NewTrack_2_5F6C90144EDBBEAF398302AB845E844F) == 0x0005D8, "Member 'AStorePinataMaster_BP_C::TL_PushbroomAnim_NewTrack_2_5F6C90144EDBBEAF398302AB845E844F' has a wrong offset!");
@@ -496,7 +496,7 @@ static_assert(offsetof(AStorePinataMaster_BP_C, TL_ChangeLighting_rimGround_A488
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_ChangeLighting_Ground_A488F4E44EB8E7A0F9886E8F7CA1BDC4) == 0x0005F0, "Member 'AStorePinataMaster_BP_C::TL_ChangeLighting_Ground_A488F4E44EB8E7A0F9886E8F7CA1BDC4' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_ChangeLighting_Main_A488F4E44EB8E7A0F9886E8F7CA1BDC4) == 0x0005F4, "Member 'AStorePinataMaster_BP_C::TL_ChangeLighting_Main_A488F4E44EB8E7A0F9886E8F7CA1BDC4' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_ChangeLighting__Direction_A488F4E44EB8E7A0F9886E8F7CA1BDC4) == 0x0005F8, "Member 'AStorePinataMaster_BP_C::TL_ChangeLighting__Direction_A488F4E44EB8E7A0F9886E8F7CA1BDC4' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusChangeLighting) == 0x000600, "Member 'AStorePinataMaster_BP_C::TLMinusChangeLighting' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_ChangeLighting) == 0x000600, "Member 'AStorePinataMaster_BP_C::TL_ChangeLighting' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Timeline_0_DirGround_7BEC5298479CA735A53B1CB25EC926EF) == 0x000608, "Member 'AStorePinataMaster_BP_C::Timeline_0_DirGround_7BEC5298479CA735A53B1CB25EC926EF' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Timeline_0_rimGround_7BEC5298479CA735A53B1CB25EC926EF) == 0x00060C, "Member 'AStorePinataMaster_BP_C::Timeline_0_rimGround_7BEC5298479CA735A53B1CB25EC926EF' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Timeline_0_MainGround_7BEC5298479CA735A53B1CB25EC926EF) == 0x000610, "Member 'AStorePinataMaster_BP_C::Timeline_0_MainGround_7BEC5298479CA735A53B1CB25EC926EF' has a wrong offset!");
@@ -508,29 +508,29 @@ static_assert(offsetof(AStorePinataMaster_BP_C, TL_CardCough__Direction_DAEEB3A6
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_CardCough) == 0x000630, "Member 'AStorePinataMaster_BP_C::TL_CardCough' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_EyesFollowMouseAgain_NewTrack_3_1BE27C46490CB7E2A3B07CA8042DE768) == 0x000638, "Member 'AStorePinataMaster_BP_C::TL_EyesFollowMouseAgain_NewTrack_3_1BE27C46490CB7E2A3B07CA8042DE768' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_EyesFollowMouseAgain__Direction_1BE27C46490CB7E2A3B07CA8042DE768) == 0x00063C, "Member 'AStorePinataMaster_BP_C::TL_EyesFollowMouseAgain__Direction_1BE27C46490CB7E2A3B07CA8042DE768' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusEyesFollowMouseAgain) == 0x000640, "Member 'AStorePinataMaster_BP_C::TLMinusEyesFollowMouseAgain' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_EyesFollowMouseAgain) == 0x000640, "Member 'AStorePinataMaster_BP_C::TL_EyesFollowMouseAgain' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade2_UpgradeWipe_3313188D45B89EDEAD5CC8BD30ABBAC3) == 0x000648, "Member 'AStorePinataMaster_BP_C::TL_Upgrade2_UpgradeWipe_3313188D45B89EDEAD5CC8BD30ABBAC3' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade2__Direction_3313188D45B89EDEAD5CC8BD30ABBAC3) == 0x00064C, "Member 'AStorePinataMaster_BP_C::TL_Upgrade2__Direction_3313188D45B89EDEAD5CC8BD30ABBAC3' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusUpgrade2) == 0x000650, "Member 'AStorePinataMaster_BP_C::TLMinusUpgrade2' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade2) == 0x000650, "Member 'AStorePinataMaster_BP_C::TL_Upgrade2' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_UndarkenBG_NewTrack_0_C60EED984B4A5117E9941E920611D748) == 0x000658, "Member 'AStorePinataMaster_BP_C::TL_UndarkenBG_NewTrack_0_C60EED984B4A5117E9941E920611D748' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_UndarkenBG__Direction_C60EED984B4A5117E9941E920611D748) == 0x00065C, "Member 'AStorePinataMaster_BP_C::TL_UndarkenBG__Direction_C60EED984B4A5117E9941E920611D748' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusUndarkenBG) == 0x000660, "Member 'AStorePinataMaster_BP_C::TLMinusUndarkenBG' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_UndarkenBG) == 0x000660, "Member 'AStorePinataMaster_BP_C::TL_UndarkenBG' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_RegularEyes_DizzyEyes_2259ACD0444C6333BC4BD3BF1C9EE1E5) == 0x000668, "Member 'AStorePinataMaster_BP_C::TL_RegularEyes_DizzyEyes_2259ACD0444C6333BC4BD3BF1C9EE1E5' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_RegularEyes_NewTrack_3_2259ACD0444C6333BC4BD3BF1C9EE1E5) == 0x00066C, "Member 'AStorePinataMaster_BP_C::TL_RegularEyes_NewTrack_3_2259ACD0444C6333BC4BD3BF1C9EE1E5' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_RegularEyes__Direction_2259ACD0444C6333BC4BD3BF1C9EE1E5) == 0x000670, "Member 'AStorePinataMaster_BP_C::TL_RegularEyes__Direction_2259ACD0444C6333BC4BD3BF1C9EE1E5' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusRegularEyes) == 0x000678, "Member 'AStorePinataMaster_BP_C::TLMinusRegularEyes' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_RegularEyes) == 0x000678, "Member 'AStorePinataMaster_BP_C::TL_RegularEyes' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_DarkenBG_NewTrack_0_C89B3A6D43D94BAC2627F18DC7E2A1D1) == 0x000680, "Member 'AStorePinataMaster_BP_C::TL_DarkenBG_NewTrack_0_C89B3A6D43D94BAC2627F18DC7E2A1D1' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_DarkenBG__Direction_C89B3A6D43D94BAC2627F18DC7E2A1D1) == 0x000684, "Member 'AStorePinataMaster_BP_C::TL_DarkenBG__Direction_C89B3A6D43D94BAC2627F18DC7E2A1D1' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusDarkenBG) == 0x000688, "Member 'AStorePinataMaster_BP_C::TLMinusDarkenBG' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_DarkenBG) == 0x000688, "Member 'AStorePinataMaster_BP_C::TL_DarkenBG' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade1_UpgradeWipe_DE6D0868440970D949F11B98CC0FC434) == 0x000690, "Member 'AStorePinataMaster_BP_C::TL_Upgrade1_UpgradeWipe_DE6D0868440970D949F11B98CC0FC434' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade1__Direction_DE6D0868440970D949F11B98CC0FC434) == 0x000694, "Member 'AStorePinataMaster_BP_C::TL_Upgrade1__Direction_DE6D0868440970D949F11B98CC0FC434' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusUpgrade1) == 0x000698, "Member 'AStorePinataMaster_BP_C::TLMinusUpgrade1' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_Upgrade1) == 0x000698, "Member 'AStorePinataMaster_BP_C::TL_Upgrade1' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_Attack_WeaponRotateAttack_9355DE8041B051639599A9A8EA98EA0D) == 0x0006A0, "Member 'AStorePinataMaster_BP_C::TL_Attack_WeaponRotateAttack_9355DE8041B051639599A9A8EA98EA0D' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_Attack__Direction_9355DE8041B051639599A9A8EA98EA0D) == 0x0006A4, "Member 'AStorePinataMaster_BP_C::TL_Attack__Direction_9355DE8041B051639599A9A8EA98EA0D' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusAttack) == 0x0006A8, "Member 'AStorePinataMaster_BP_C::TLMinusAttack' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_Attack) == 0x0006A8, "Member 'AStorePinataMaster_BP_C::TL_Attack' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_EquipWeapon_NewTrack_2_443114684EA745E35026E98F24AA5387) == 0x0006B0, "Member 'AStorePinataMaster_BP_C::TL_EquipWeapon_NewTrack_2_443114684EA745E35026E98F24AA5387' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, TL_EquipWeapon__Direction_443114684EA745E35026E98F24AA5387) == 0x0006B4, "Member 'AStorePinataMaster_BP_C::TL_EquipWeapon__Direction_443114684EA745E35026E98F24AA5387' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, TLMinusEquipWeapon) == 0x0006B8, "Member 'AStorePinataMaster_BP_C::TLMinusEquipWeapon' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, TL_EquipWeapon) == 0x0006B8, "Member 'AStorePinataMaster_BP_C::TL_EquipWeapon' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, SoundWeaponGreetArray) == 0x0006C0, "Member 'AStorePinataMaster_BP_C::SoundWeaponGreetArray' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Current_Delta) == 0x0006D0, "Member 'AStorePinataMaster_BP_C::Current_Delta' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, WorldLocationForMaterial) == 0x0006D4, "Member 'AStorePinataMaster_BP_C::WorldLocationForMaterial' has a wrong offset!");
@@ -542,13 +542,13 @@ static_assert(offsetof(AStorePinataMaster_BP_C, HasAttacked2X) == 0x0006E4, "Mem
 static_assert(offsetof(AStorePinataMaster_BP_C, HasAttacked3X) == 0x0006E5, "Member 'AStorePinataMaster_BP_C::HasAttacked3X' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, AbleToAttack) == 0x0006E6, "Member 'AStorePinataMaster_BP_C::AbleToAttack' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, CanFastForward) == 0x0006E7, "Member 'AStorePinataMaster_BP_C::CanFastForward' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, MIDMinusPPTMinusIcon) == 0x0006E8, "Member 'AStorePinataMaster_BP_C::MIDMinusPPTMinusIcon' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, MID_PPT_Icon) == 0x0006E8, "Member 'AStorePinataMaster_BP_C::MID_PPT_Icon' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugUpgradeLevels) == 0x0006F0, "Member 'AStorePinataMaster_BP_C::DebugUpgradeLevels' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugLevel0_) == 0x0006F1, "Member 'AStorePinataMaster_BP_C::DebugLevel0_' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugLevel1_) == 0x0006F2, "Member 'AStorePinataMaster_BP_C::DebugLevel1_' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugLevel2_) == 0x0006F3, "Member 'AStorePinataMaster_BP_C::DebugLevel2_' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, MIDMinusPPTMinusBase) == 0x0006F8, "Member 'AStorePinataMaster_BP_C::MIDMinusPPTMinusBase' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, MIDMinusPPTMinusTassles) == 0x000700, "Member 'AStorePinataMaster_BP_C::MIDMinusPPTMinusTassles' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, MID_PPT_Base) == 0x0006F8, "Member 'AStorePinataMaster_BP_C::MID_PPT_Base' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, MID_PPT_Tassles) == 0x000700, "Member 'AStorePinataMaster_BP_C::MID_PPT_Tassles' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, CardPackIconTexture) == 0x000708, "Member 'AStorePinataMaster_BP_C::CardPackIconTexture' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, CardPackIconColor) == 0x000710, "Member 'AStorePinataMaster_BP_C::CardPackIconColor' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, FallingDebris_Lvl_0) == 0x000720, "Member 'AStorePinataMaster_BP_C::FallingDebris_Lvl_0' has a wrong offset!");
@@ -561,9 +561,9 @@ static_assert(offsetof(AStorePinataMaster_BP_C, Llama_Hit_Lvl_0) == 0x000750, "M
 static_assert(offsetof(AStorePinataMaster_BP_C, Llama_Hit_Lvl_1) == 0x000758, "Member 'AStorePinataMaster_BP_C::Llama_Hit_Lvl_1' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Lvl1_Lightray_Color) == 0x000760, "Member 'AStorePinataMaster_BP_C::Lvl1_Lightray_Color' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Lvl2_Lightray_Color) == 0x000770, "Member 'AStorePinataMaster_BP_C::Lvl2_Lightray_Color' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, MaterialMinusPPTMinusConfetti) == 0x000780, "Member 'AStorePinataMaster_BP_C::MaterialMinusPPTMinusConfetti' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, MIDMinusPinataEyeLeft) == 0x000788, "Member 'AStorePinataMaster_BP_C::MIDMinusPinataEyeLeft' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, MIDMinusPinataEyeRight) == 0x000790, "Member 'AStorePinataMaster_BP_C::MIDMinusPinataEyeRight' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, Material_PPT_Confetti) == 0x000780, "Member 'AStorePinataMaster_BP_C::Material_PPT_Confetti' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, MID_PinataEyeLeft) == 0x000788, "Member 'AStorePinataMaster_BP_C::MID_PinataEyeLeft' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, MID_PinataEyeRight) == 0x000790, "Member 'AStorePinataMaster_BP_C::MID_PinataEyeRight' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, RandomWeaponNumber) == 0x000798, "Member 'AStorePinataMaster_BP_C::RandomWeaponNumber' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Sound_Llama_Appear) == 0x0007A0, "Member 'AStorePinataMaster_BP_C::Sound_Llama_Appear' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Sound_CurrentWeaponReady) == 0x0007A8, "Member 'AStorePinataMaster_BP_C::Sound_CurrentWeaponReady' has a wrong offset!");
@@ -588,7 +588,7 @@ static_assert(offsetof(AStorePinataMaster_BP_C, Sound_SweepUp) == 0x000840, "Mem
 static_assert(offsetof(AStorePinataMaster_BP_C, Dialog_Llama_Mob_Greet_Array) == 0x000848, "Member 'AStorePinataMaster_BP_C::Dialog_Llama_Mob_Greet_Array' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Dialog_Llama_Greet_Array_Current) == 0x000858, "Member 'AStorePinataMaster_BP_C::Dialog_Llama_Greet_Array_Current' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Sound_PinataSwing) == 0x000868, "Member 'AStorePinataMaster_BP_C::Sound_PinataSwing' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, VOMinusUpgradeMinusDelay) == 0x000870, "Member 'AStorePinataMaster_BP_C::VOMinusUpgradeMinusDelay' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, VO_Upgrade_Delay) == 0x000870, "Member 'AStorePinataMaster_BP_C::VO_Upgrade_Delay' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Fort_Entry_Music_Controller) == 0x000878, "Member 'AStorePinataMaster_BP_C::Fort_Entry_Music_Controller' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Dialog_Llama_PreHit_Current) == 0x000880, "Member 'AStorePinataMaster_BP_C::Dialog_Llama_PreHit_Current' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, Sound_Music_Drop) == 0x000888, "Member 'AStorePinataMaster_BP_C::Sound_Music_Drop' has a wrong offset!");
@@ -613,13 +613,13 @@ static_assert(offsetof(AStorePinataMaster_BP_C, WeaponClass) == 0x000920, "Membe
 static_assert(offsetof(AStorePinataMaster_BP_C, AttackLeftMousePressed) == 0x000928, "Member 'AStorePinataMaster_BP_C::AttackLeftMousePressed' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, StoreCardRevealInLevel) == 0x000930, "Member 'AStorePinataMaster_BP_C::StoreCardRevealInLevel' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, AmountOfWeapons) == 0x000938, "Member 'AStorePinataMaster_BP_C::AmountOfWeapons' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, MIDMinusPPTMinusFoil) == 0x000940, "Member 'AStorePinataMaster_BP_C::MIDMinusPPTMinusFoil' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, MID_PPT_Foil) == 0x000940, "Member 'AStorePinataMaster_BP_C::MID_PPT_Foil' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugPinataScreenshot) == 0x000948, "Member 'AStorePinataMaster_BP_C::DebugPinataScreenshot' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, DirLightAMinusBaseSetting) == 0x00094C, "Member 'AStorePinataMaster_BP_C::DirLightAMinusBaseSetting' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, RimLight01MinusAMinusBaseSetting) == 0x000950, "Member 'AStorePinataMaster_BP_C::RimLight01MinusAMinusBaseSetting' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightMainMinusBMinusBaseSetting) == 0x000954, "Member 'AStorePinataMaster_BP_C::SpotLightMainMinusBMinusBaseSetting' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, RimLightMinusBMinusBaseSetting) == 0x000958, "Member 'AStorePinataMaster_BP_C::RimLightMinusBMinusBaseSetting' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, DirLightMinusBMinusBaseSetting) == 0x00095C, "Member 'AStorePinataMaster_BP_C::DirLightMinusBMinusBaseSetting' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, DirLightA_BaseSetting) == 0x00094C, "Member 'AStorePinataMaster_BP_C::DirLightA_BaseSetting' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, RimLight01_A_BaseSetting) == 0x000950, "Member 'AStorePinataMaster_BP_C::RimLight01_A_BaseSetting' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, SpotLightMain_B_BaseSetting) == 0x000954, "Member 'AStorePinataMaster_BP_C::SpotLightMain_B_BaseSetting' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, RimLight_B_BaseSetting) == 0x000958, "Member 'AStorePinataMaster_BP_C::RimLight_B_BaseSetting' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, DirLight_B_BaseSetting) == 0x00095C, "Member 'AStorePinataMaster_BP_C::DirLight_B_BaseSetting' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugUseThisWeaponNumber) == 0x000960, "Member 'AStorePinataMaster_BP_C::DebugUseThisWeaponNumber' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugUseSpecificWeapon) == 0x000964, "Member 'AStorePinataMaster_BP_C::DebugUseSpecificWeapon' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, CurrentPackPersonality) == 0x000968, "Member 'AStorePinataMaster_BP_C::CurrentPackPersonality' has a wrong offset!");
@@ -646,7 +646,7 @@ static_assert(offsetof(AStorePinataMaster_BP_C, RightEyeBoneName) == 0x000B30, "
 static_assert(offsetof(AStorePinataMaster_BP_C, LeftEyeBoneName) == 0x000B38, "Member 'AStorePinataMaster_BP_C::LeftEyeBoneName' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, BodyRootBoneName) == 0x000B40, "Member 'AStorePinataMaster_BP_C::BodyRootBoneName' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugCardRevealInLevel) == 0x000B48, "Member 'AStorePinataMaster_BP_C::DebugCardRevealInLevel' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, RimLight02MinusAMinusBaseSetting) == 0x000B4C, "Member 'AStorePinataMaster_BP_C::RimLight02MinusAMinusBaseSetting' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, RimLight02_A_BaseSetting) == 0x000B4C, "Member 'AStorePinataMaster_BP_C::RimLight02_A_BaseSetting' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, LetTickUpdateEyes) == 0x000B50, "Member 'AStorePinataMaster_BP_C::LetTickUpdateEyes' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, FirstCard) == 0x000B51, "Member 'AStorePinataMaster_BP_C::FirstCard' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugLevel3_) == 0x000B52, "Member 'AStorePinataMaster_BP_C::DebugLevel3_' has a wrong offset!");
@@ -671,7 +671,7 @@ static_assert(offsetof(AStorePinataMaster_BP_C, IsES2Limited) == 0x000BB4, "Memb
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugPinataMobile) == 0x000BB5, "Member 'AStorePinataMaster_BP_C::DebugPinataMobile' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, DebugWeapons) == 0x000BB6, "Member 'AStorePinataMaster_BP_C::DebugWeapons' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, NewVar_0) == 0x000BB8, "Member 'AStorePinataMaster_BP_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(AStorePinataMaster_BP_C, RegularMaterialMinusConfetti) == 0x000BC0, "Member 'AStorePinataMaster_BP_C::RegularMaterialMinusConfetti' has a wrong offset!");
+static_assert(offsetof(AStorePinataMaster_BP_C, RegularMaterial_Confetti) == 0x000BC0, "Member 'AStorePinataMaster_BP_C::RegularMaterial_Confetti' has a wrong offset!");
 static_assert(offsetof(AStorePinataMaster_BP_C, UseSpecificWeapon) == 0x000BC8, "Member 'AStorePinataMaster_BP_C::UseSpecificWeapon' has a wrong offset!");
 
 }

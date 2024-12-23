@@ -39,7 +39,6 @@ public:
 	bool                                          HasBeenSelected;                                   // 0x09E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void MenuScreenDispatcher__DelegateSignature();
 	void ExecuteUbergraph_MenuScreen_Commando(int32 EntryPoint);
 	void AnimNotify_LeftB();
 	void UserFocus();

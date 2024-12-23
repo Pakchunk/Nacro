@@ -54,7 +54,7 @@ public:
 	void HandleSelectedButtonChanged(class UCommonButton* InSelectedButton, int32 InSelectedButtonIndex);
 	void AddTilesToButtonGroup(class UVerticalBox* ButtonContainer);
 	void InitializeAbilityTiles();
-	void UpdateAbilityMovie(class UFortGadgetItemDefinition* InGadgetItemDef);
+	void UpdateAbilityMovie(class UFortGadgetItemDefinition* inGadgetItemDef);
 	void HandleInventory(bool* PassThrough);
 
 public:

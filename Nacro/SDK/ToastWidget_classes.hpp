@@ -38,7 +38,6 @@ public:
 	struct FTimerHandle                           AnimationDelayTimer;                               // 0x0298(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void OnFinishedToast__DelegateSignature();
 	void ExecuteUbergraph_ToastWidget(int32 EntryPoint);
 	void BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.NewEventDispatcher_0__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void APartyCharacterPlacementHelper_C::NewEventDispatcher_0__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyCharacterPlacementHelper_C", "NewEventDispatcher_0__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.ExecuteUbergraph_PartyCharacterPlacementHelper
 // (HasDefaults)
 // Parameters:

@@ -24,7 +24,7 @@ class USlateContentCalloutMenu_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
-	class UFortLegacySlateBridgeWidget*           _Slate_Widget__Menu_Content;                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortLegacySlateBridgeWidget*           mSlate_Widget__Menu_Content;                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBoxContent;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EFortLegacySlateWidget                        SlateWidgetType;                                   // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
@@ -46,7 +46,7 @@ public:
 static_assert(alignof(USlateContentCalloutMenu_C) == 0x000008, "Wrong alignment on USlateContentCalloutMenu_C");
 static_assert(sizeof(USlateContentCalloutMenu_C) == 0x000250, "Wrong size on USlateContentCalloutMenu_C");
 static_assert(offsetof(USlateContentCalloutMenu_C, UberGraphFrame) == 0x000230, "Member 'USlateContentCalloutMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USlateContentCalloutMenu_C, _Slate_Widget__Menu_Content) == 0x000238, "Member 'USlateContentCalloutMenu_C::_Slate_Widget__Menu_Content' has a wrong offset!");
+static_assert(offsetof(USlateContentCalloutMenu_C, mSlate_Widget__Menu_Content) == 0x000238, "Member 'USlateContentCalloutMenu_C::mSlate_Widget__Menu_Content' has a wrong offset!");
 static_assert(offsetof(USlateContentCalloutMenu_C, SizeBoxContent) == 0x000240, "Member 'USlateContentCalloutMenu_C::SizeBoxContent' has a wrong offset!");
 static_assert(offsetof(USlateContentCalloutMenu_C, SlateWidgetType) == 0x000248, "Member 'USlateContentCalloutMenu_C::SlateWidgetType' has a wrong offset!");
 

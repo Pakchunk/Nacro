@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "ECardinalDirection_structs.hpp"
 #include "PlayerAnimAssets_Struct_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Direction_structs.hpp"
-#include "ECardinalDirection_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
+#include "Direction_structs.hpp"
 
 
 namespace SDK
@@ -813,7 +813,6 @@ public:
 	float                                         DBNO_Shuffle_Threshold;                            // 0x13514(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void MenuScreenDispatcher__DelegateSignature(class UFortPlayerAnimInstance* CharPart);
 	void ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint(int32 EntryPoint);
 	void AnimNotify_SkyDiveLeanOut();
 	void AnimNotify_playFacialAnim();

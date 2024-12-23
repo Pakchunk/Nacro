@@ -55,7 +55,6 @@ public:
 	struct FTimerHandle                           UpdateBangTimerHandle;                             // 0x0348(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId);
 	void ExecuteUbergraph_BP_LocalPlayerBannerEditor(int32 EntryPoint);
 	void Handle_Bang_State_Changed();
 	void BannerTileBangUpdated_Event_0();

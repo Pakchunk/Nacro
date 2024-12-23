@@ -68,7 +68,7 @@ static_assert(offsetof(StatsListWidget_C_OnAddShownAttributeListItem, AttributeL
 struct StatsListWidget_C_ToggleClampedValueMessage final
 {
 public:
-	bool                                          InShow;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          inShow;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -76,7 +76,7 @@ public:
 };
 static_assert(alignof(StatsListWidget_C_ToggleClampedValueMessage) == 0x000001, "Wrong alignment on StatsListWidget_C_ToggleClampedValueMessage");
 static_assert(sizeof(StatsListWidget_C_ToggleClampedValueMessage) == 0x000005, "Wrong size on StatsListWidget_C_ToggleClampedValueMessage");
-static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, InShow) == 0x000000, "Member 'StatsListWidget_C_ToggleClampedValueMessage::InShow' has a wrong offset!");
+static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, inShow) == 0x000000, "Member 'StatsListWidget_C_ToggleClampedValueMessage::inShow' has a wrong offset!");
 static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, Temp_bool_Variable) == 0x000001, "Member 'StatsListWidget_C_ToggleClampedValueMessage::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, Temp_byte_Variable) == 0x000002, "Member 'StatsListWidget_C_ToggleClampedValueMessage::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(StatsListWidget_C_ToggleClampedValueMessage, Temp_byte_Variable2) == 0x000003, "Member 'StatsListWidget_C_ToggleClampedValueMessage::Temp_byte_Variable2' has a wrong offset!");

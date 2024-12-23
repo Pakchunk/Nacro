@@ -1041,8 +1041,6 @@ public:
 public:
 	static class UFortAsyncAction_MCPContextRecycleItems* RecycleItems(const class UFortMcpContext* MCPContext_0, const TArray<class UFortItem*>& ItemsToRecycle_0);
 
-	void OnMCPRequestComplete__DelegateSignature();
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -1318,8 +1316,8 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class UFortWorldItemDefinition** _CollectedItemDefinition, class AFortPlayerController** _CollectedBy, int32* _AmountCollected);
-	void SetParams(const class UFortWorldItemDefinition* _CollectedItemDefinition, class AFortPlayerController* _CollectedBy, int32 _AmountCollected, class UFortItemCollectedParams** ThisParam);
+	void BreakParams(class UFortWorldItemDefinition** mCollectedItemDefinition, class AFortPlayerController** mCollectedBy, int32* mAmountCollected);
+	void SetParams(const class UFortWorldItemDefinition* mCollectedItemDefinition, class AFortPlayerController* mCollectedBy, int32 mAmountCollected, class UFortItemCollectedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -1377,8 +1375,8 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class UFortWorldItemDefinition** _DroppedItemDefinition, class AFortPlayerController** _DroppedBy, int32* _AmountCollected);
-	void SetParams(const class UFortWorldItemDefinition* _DroppedItemDefinition, class AFortPlayerController* _DroppedBy, int32 _AmountCollected, class UFortItemDroppedParams** ThisParam);
+	void BreakParams(class UFortWorldItemDefinition** mDroppedItemDefinition, class AFortPlayerController** mDroppedBy, int32* mAmountCollected);
+	void SetParams(const class UFortWorldItemDefinition* mDroppedItemDefinition, class AFortPlayerController* mDroppedBy, int32 mAmountCollected, class UFortItemDroppedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -1408,8 +1406,8 @@ public:
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class UFortSchematicItemDefinition** _SchematicDefinition, class AFortPlayerController** _CraftedBy, int32* _AmountCrafted, bool* _bItemWasQuickCrafted);
-	void SetParams(const class UFortSchematicItemDefinition* _SchematicDefinition, class AFortPlayerController* _CraftedBy, int32 _AmountCrafted, bool _bItemWasQuickCrafted, class UFortItemCraftedParams** ThisParam);
+	void BreakParams(class UFortSchematicItemDefinition** mSchematicDefinition, class AFortPlayerController** mCraftedBy, int32* mAmountCrafted, bool* mbItemWasQuickCrafted);
+	void SetParams(const class UFortSchematicItemDefinition* mSchematicDefinition, class AFortPlayerController* mCraftedBy, int32 mAmountCrafted, bool mbItemWasQuickCrafted, class UFortItemCraftedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -1511,8 +1509,8 @@ public:
 	class AFortPlayerController*                  KilledBy;                                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortPawn** _KilledPawn, class AFortPlayerController** _KilledBy);
-	void SetParams(class AFortPawn* _KilledPawn, class AFortPlayerController* _KilledBy, class UFortEnemyKilledParams** ThisParam);
+	void BreakParams(class AFortPawn** mKilledPawn, class AFortPlayerController** mKilledBy);
+	void SetParams(class AFortPawn* mKilledPawn, class AFortPlayerController* mKilledBy, class UFortEnemyKilledParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -1540,8 +1538,8 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class AFortPawn** _DamagedPawn, class AFortPlayerController** _DamagedBy, float* _DamageAmount);
-	void SetParams(class AFortPawn* _DamagedPawn, class AFortPlayerController* _DamagedBy, float _DamageAmount, class UFortEnemyDamagedParams** ThisParam);
+	void BreakParams(class AFortPawn** mDamagedPawn, class AFortPlayerController** mDamagedBy, float* mDamageAmount);
+	void SetParams(class AFortPawn* mDamagedPawn, class AFortPlayerController* mDamagedBy, float mDamageAmount, class UFortEnemyDamagedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -1605,8 +1603,8 @@ public:
 	class AFortPlayerController*                  NewPlayerController;                               // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortPlayerController** _NewPlayerController);
-	void SetParams(class AFortPlayerController* _NewPlayerController, class UFortNewPlayerParams** ThisParam);
+	void BreakParams(class AFortPlayerController** mNewPlayerController);
+	void SetParams(class AFortPlayerController* mNewPlayerController, class UFortNewPlayerParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -1885,8 +1883,8 @@ public:
 	class AFortPlayerController*                  ExitingPlayerController;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortPlayerController** _ExitingPlayerController);
-	void SetParams(class AFortPlayerController* _ExitingPlayerController, class UFortPlayerExitParams** ThisParam);
+	void BreakParams(class AFortPlayerController** mExitingPlayerController);
+	void SetParams(class AFortPlayerController* mExitingPlayerController, class UFortPlayerExitParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -1910,8 +1908,8 @@ public:
 	class AFortPlayerController*                  SpawnedPlayerController;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortPlayerController** _SpawnedPlayerController);
-	void SetParams(class AFortPlayerController* _SpawnedPlayerController, class UFortPlayerSpawnedParams** ThisParam);
+	void BreakParams(class AFortPlayerController** mSpawnedPlayerController);
+	void SetParams(class AFortPlayerController* mSpawnedPlayerController, class UFortPlayerSpawnedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -1934,7 +1932,7 @@ class UFortMissionLibrary final : public UBlueprintFunctionLibrary
 public:
 	static void AddCompletionTagsToMission(class UObject* WorldContextObject, const struct FGuid& MissionGuid, const struct FGameplayTagContainer& NewCompletionTagContainer);
 	static void AddCompletionTagToMission(class UObject* WorldContextObject, const struct FGuid& MissionGuid, const struct FGameplayTag& NewCompletionTag);
-	static void AdjustWaveBasedGameDifficulty(class UObject* WorldContextObject, float FDifficultyAddMod);
+	static void AdjustWaveBasedGameDifficulty(class UObject* WorldContextObject, float fDifficultyAddMod);
 	static void CreateDynamicBuildingDeconstructor(class UObject* WorldContextObject, const struct FVector& Origin, const struct FVector& BoxExtent, bool bIgnoreMissionActors, bool bShrinkAndDestroy);
 	static struct FFortMissionEvent CreateMissionEvent(class UObject* WorldContextObject, class FName EventType, const struct FGuid& MissionGuid, const struct FGameplayTagContainer& ObjectiveHandle, class UFortMissionEventParams* Params_0, bool DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* EventFocus, class UDataAsset* EventContent, class AActor* EventInstigator, int32 GenericInt, float GenericFloat, const class FText& GenericText, const struct FGameplayTagContainer& GameplayTags);
 	static void ExecuteMissionEvent(class UObject* WorldContextObject, class FName EventType, const struct FGuid& MissionGuid, const struct FGameplayTagContainer& ObjectiveHandle, class UFortMissionEventParams* Params_0, bool DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* EventFocus, class UDataAsset* EventContent, class AActor* EventInstigator, int32 GenericInt, float GenericFloat, const class FText& GenericText, const struct FGameplayTagContainer& GameplayTags);
@@ -2059,8 +2057,8 @@ public:
 	class AController*                            KilledBy;                                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortPlayerPawn** _KilledPlayer, class AController** _KilledBy);
-	void SetParams(class AFortPlayerPawn* _KilledPlayer, class AController* _KilledBy, class UFortPlayerDiedParams** ThisParam);
+	void BreakParams(class AFortPlayerPawn** mKilledPlayer, class AController** mKilledBy);
+	void SetParams(class AFortPlayerPawn* mKilledPlayer, class AController* mKilledBy, class UFortPlayerDiedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -2086,8 +2084,8 @@ public:
 	class AController*                            KilledBy;                                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortPlayerPawn** _KilledPlayer, class AController** _KilledBy);
-	void SetParams(class AFortPlayerPawn* _KilledPlayer, class AController* _KilledBy, class UFortPlayerDBNOEnterParams** ThisParam);
+	void BreakParams(class AFortPlayerPawn** mKilledPlayer, class AController** mKilledBy);
+	void SetParams(class AFortPlayerPawn* mKilledPlayer, class AController* mKilledBy, class UFortPlayerDBNOEnterParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -2618,8 +2616,8 @@ public:
 	class AController*                            RevivedBy;                                         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortPlayerPawn** _RevivedPlayer, class AController** _RevivedBy);
-	void SetParams(class AFortPlayerPawn* _RevivedPlayer, class AController* _RevivedBy, class UFortPlayerDBNORevivedParams** ThisParam);
+	void BreakParams(class AFortPlayerPawn** mRevivedPlayer, class AController** mRevivedBy);
+	void SetParams(class AFortPlayerPawn* mRevivedPlayer, class AController* mRevivedBy, class UFortPlayerDBNORevivedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -2646,8 +2644,8 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class AFortTimeOfDayManager** _LightingAndFogManager, EFortDayPhase* _NewDayPhase);
-	void SetParams(class AFortTimeOfDayManager* _LightingAndFogManager, EFortDayPhase _NewDayPhase, class UFortDayPhaseChangeParams** ThisParam);
+	void BreakParams(class AFortTimeOfDayManager** mLightingAndFogManager, EFortDayPhase* mNewDayPhase);
+	void SetParams(class AFortTimeOfDayManager* mLightingAndFogManager, EFortDayPhase mNewDayPhase, class UFortDayPhaseChangeParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -2768,8 +2766,8 @@ public:
 	class AFortPlayerController*                  Builder;                                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class ABuildingActor** _Building, EFortBuildingType* _BuildingType, class AFortPlayerController** _Builder);
-	void SetParams(class ABuildingActor* _Building, EFortBuildingType _BuildingType, class AFortPlayerController* _Builder, class UFortPlayerBuiltParams** ThisParam);
+	void BreakParams(class ABuildingActor** mBuilding, EFortBuildingType* mBuildingType, class AFortPlayerController** mBuilder);
+	void SetParams(class ABuildingActor* mBuilding, EFortBuildingType mBuildingType, class AFortPlayerController* mBuilder, class UFortPlayerBuiltParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -2798,8 +2796,8 @@ public:
 	class AController*                            Destroyer;                                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class ABuildingActor** _Building, EFortBuildingType* _BuildingType, class AController** _Destroyer);
-	void SetParams(class ABuildingActor* _Building, EFortBuildingType _BuildingType, class AController* _Destroyer, class UFortBuildingDestroyedParams** ThisParam);
+	void BreakParams(class ABuildingActor** mBuilding, EFortBuildingType* mBuildingType, class AController** mDestroyer);
+	void SetParams(class ABuildingActor* mBuilding, EFortBuildingType mBuildingType, class AController* mDestroyer, class UFortBuildingDestroyedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -2871,8 +2869,8 @@ public:
 	class AFortPlayerController*                  Editor;                                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class ABuildingActor** _OriginalBuilding, class ABuildingActor** _NewBuilding, EFortBuildingType* _BuildingType, class AFortPlayerController** _Editor);
-	void SetParams(class ABuildingActor* _OriginalBuilding, class ABuildingActor* _NewBuilding, EFortBuildingType _BuildingType, class AFortPlayerController* _Editor, class UFortBuildingEditedParams** ThisParam);
+	void BreakParams(class ABuildingActor** mOriginalBuilding, class ABuildingActor** mNewBuilding, EFortBuildingType* mBuildingType, class AFortPlayerController** mEditor);
+	void SetParams(class ABuildingActor* mOriginalBuilding, class ABuildingActor* mNewBuilding, EFortBuildingType mBuildingType, class AFortPlayerController* mEditor, class UFortBuildingEditedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -2903,8 +2901,8 @@ public:
 	uint8                                         Pad_40[0x8];                                       // 0x0040(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class ABuildingActor** _Building, EFortBuildingType* _BuildingType, class AController** _DamagedBy, float* _DamageAmount);
-	void SetParams(class ABuildingActor* _Building, EFortBuildingType _BuildingType, class AController* _DamagedBy, float _DamageAmount, class UFortBuildingDamagedParams** ThisParam);
+	void BreakParams(class ABuildingActor** mBuilding, EFortBuildingType* mBuildingType, class AController** mDamagedBy, float* mDamageAmount);
+	void SetParams(class ABuildingActor* mBuilding, EFortBuildingType mBuildingType, class AController* mDamagedBy, float mDamageAmount, class UFortBuildingDamagedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3032,8 +3030,8 @@ public:
 	class AFortMission*                           SucceededMission;                                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortMission** _SucceededMission);
-	void SetParams(class AFortMission* _SucceededMission, class UFortMissionSucceededParams** ThisParam);
+	void BreakParams(class AFortMission** mSucceededMission);
+	void SetParams(class AFortMission* mSucceededMission, class UFortMissionSucceededParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3057,8 +3055,8 @@ public:
 	class AFortMission*                           FailedMission;                                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortMission** _FailedMission);
-	void SetParams(class AFortMission* _FailedMission, class UFortMissionFailedParams** ThisParam);
+	void BreakParams(class AFortMission** mFailedMission);
+	void SetParams(class AFortMission* mFailedMission, class UFortMissionFailedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3112,8 +3110,8 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(float* _FractionCompleted);
-	void SetParams(float _FractionCompleted, class UFortMissionForceSuccessParams** ThisParam);
+	void BreakParams(float* mFractionCompleted);
+	void SetParams(float mFractionCompleted, class UFortMissionForceSuccessParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3137,8 +3135,8 @@ public:
 	class AFortMission*                           NeutrallyCompletedMission;                         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortMission** _NeutrallyCompletedMission);
-	void SetParams(class AFortMission* _NeutrallyCompletedMission, class UFortMissionNeutralCompleteParams** ThisParam);
+	void BreakParams(class AFortMission** mNeutrallyCompletedMission);
+	void SetParams(class AFortMission* mNeutrallyCompletedMission, class UFortMissionNeutralCompleteParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3213,8 +3211,8 @@ public:
 	class AFortObjectiveBase*                     SucceededObjective;                                // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortObjectiveBase** _SucceededObjective);
-	void SetParams(class AFortObjectiveBase* _SucceededObjective, class UFortObjectiveSucceededParams** ThisParam);
+	void BreakParams(class AFortObjectiveBase** mSucceededObjective);
+	void SetParams(class AFortObjectiveBase* mSucceededObjective, class UFortObjectiveSucceededParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3238,8 +3236,8 @@ public:
 	class AFortObjectiveBase*                     FailedObjective;                                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortObjectiveBase** _FailedObjective);
-	void SetParams(class AFortObjectiveBase* _FailedObjective, class UFortObjectiveFailedParams** ThisParam);
+	void BreakParams(class AFortObjectiveBase** mFailedObjective);
+	void SetParams(class AFortObjectiveBase* mFailedObjective, class UFortObjectiveFailedParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3320,8 +3318,8 @@ public:
 	class AFortObjectiveBase*                     NeutrallyCompletedObjective;                       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortObjectiveBase** _NeutrallyCompletedObjective);
-	void SetParams(class AFortObjectiveBase* _NeutrallyCompletedObjective, class UFortObjectiveNeutralCompleteParams** ThisParam);
+	void BreakParams(class AFortObjectiveBase** mNeutrallyCompletedObjective);
+	void SetParams(class AFortObjectiveBase* mNeutrallyCompletedObjective, class UFortObjectiveNeutralCompleteParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3347,8 +3345,8 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class AFortPlayerController** _PlayerThatToggledCursorMode, bool* InCursorMode);
-	void SetParams(class AFortPlayerController* _PlayerThatToggledCursorMode, bool InCursorMode, class UFortToggledCursorModeParams** ThisParam);
+	void BreakParams(class AFortPlayerController** mPlayerThatToggledCursorMode, bool* InCursorMode);
+	void SetParams(class AFortPlayerController* mPlayerThatToggledCursorMode, bool InCursorMode, class UFortToggledCursorModeParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3470,8 +3468,8 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class AFortPlayerController** _PlayerThatToggledOptionsMenu, bool* Opened);
-	void SetParams(class AFortPlayerController* _PlayerThatToggledOptionsMenu, bool Opened, class UFortToggledOptionsMenuParams** ThisParam);
+	void BreakParams(class AFortPlayerController** mPlayerThatToggledOptionsMenu, bool* Opened);
+	void SetParams(class AFortPlayerController* mPlayerThatToggledOptionsMenu, bool Opened, class UFortToggledOptionsMenuParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3499,8 +3497,8 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void BreakParams(class AFortPlayerController** _PlayerThatToggledEditMode, class ABuildingSMActor** EditableActor_0, bool* InEditMode);
-	void SetParams(class AFortPlayerController* _PlayerThatToggledEditMode, class ABuildingSMActor* InEditableActor, bool InEditMode, class UFortToggledEditModeParams** ThisParam);
+	void BreakParams(class AFortPlayerController** mPlayerThatToggledEditMode, class ABuildingSMActor** EditableActor_0, bool* InEditMode);
+	void SetParams(class AFortPlayerController* mPlayerThatToggledEditMode, class ABuildingSMActor* InEditableActor, bool InEditMode, class UFortToggledEditModeParams** ThisParam);
 
 public:
 	static class UClass* StaticClass()
@@ -3672,7 +3670,7 @@ public:
 	class AFortPlayerPawn*                        PlayerRequestingLeaving;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void BreakParams(class AFortPlayerPawn** _PlayerRequestingLeaving);
+	void BreakParams(class AFortPlayerPawn** mPlayerRequestingLeaving);
 
 public:
 	static class UClass* StaticClass()
@@ -3906,7 +3904,6 @@ public:
 	struct FSlateBrush                            MiniMapIconBrush;                                  // 0x0420(0x0090)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 
 public:
-	void FortAthenaAircraftDelegate__DelegateSignature();
 	void OnRep_JumpFlashCount();
 	void PlayEffectsForPlayerJumped();
 
@@ -5974,11 +5971,11 @@ class alignas(0x08) UFortAccountItem : public UFortItem
 public:
 	int32                                         Level;                                             // 0x00D0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         Xp;                                                // 0x00D4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         Item_seen;                                         // 0x00D8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         Favorite;                                          // 0x00DC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         Max_level_bonus;                                   // 0x00E0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         item_seen;                                         // 0x00D8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         favorite;                                          // 0x00DC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         max_level_bonus;                                   // 0x00E0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Inventory_overflow_date;                           // 0x00E8(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FString                                 inventory_overflow_date;                           // 0x00E8(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UFortAccountItemDefinition*             ItemDefinition;                                    // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FString                                 InstanceId;                                        // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FString                                 TemplateId;                                        // 0x0110(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -6008,10 +6005,10 @@ static_assert(alignof(UFortAccountItem) == 0x000008, "Wrong alignment on UFortAc
 static_assert(sizeof(UFortAccountItem) == 0x000138, "Wrong size on UFortAccountItem");
 static_assert(offsetof(UFortAccountItem, Level) == 0x0000D0, "Member 'UFortAccountItem::Level' has a wrong offset!");
 static_assert(offsetof(UFortAccountItem, Xp) == 0x0000D4, "Member 'UFortAccountItem::Xp' has a wrong offset!");
-static_assert(offsetof(UFortAccountItem, Item_seen) == 0x0000D8, "Member 'UFortAccountItem::Item_seen' has a wrong offset!");
-static_assert(offsetof(UFortAccountItem, Favorite) == 0x0000DC, "Member 'UFortAccountItem::Favorite' has a wrong offset!");
-static_assert(offsetof(UFortAccountItem, Max_level_bonus) == 0x0000E0, "Member 'UFortAccountItem::Max_level_bonus' has a wrong offset!");
-static_assert(offsetof(UFortAccountItem, Inventory_overflow_date) == 0x0000E8, "Member 'UFortAccountItem::Inventory_overflow_date' has a wrong offset!");
+static_assert(offsetof(UFortAccountItem, item_seen) == 0x0000D8, "Member 'UFortAccountItem::item_seen' has a wrong offset!");
+static_assert(offsetof(UFortAccountItem, favorite) == 0x0000DC, "Member 'UFortAccountItem::favorite' has a wrong offset!");
+static_assert(offsetof(UFortAccountItem, max_level_bonus) == 0x0000E0, "Member 'UFortAccountItem::max_level_bonus' has a wrong offset!");
+static_assert(offsetof(UFortAccountItem, inventory_overflow_date) == 0x0000E8, "Member 'UFortAccountItem::inventory_overflow_date' has a wrong offset!");
 static_assert(offsetof(UFortAccountItem, ItemDefinition) == 0x0000F8, "Member 'UFortAccountItem::ItemDefinition' has a wrong offset!");
 static_assert(offsetof(UFortAccountItem, InstanceId) == 0x000100, "Member 'UFortAccountItem::InstanceId' has a wrong offset!");
 static_assert(offsetof(UFortAccountItem, TemplateId) == 0x000110, "Member 'UFortAccountItem::TemplateId' has a wrong offset!");
@@ -6025,18 +6022,18 @@ class UFortQuestItem final : public UFortAccountItem
 {
 public:
 	TArray<class UFortQuestObjectiveInfo*>        Objectives;                                        // 0x0138(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-	EFortQuestState                               Quest_state;                                       // 0x0148(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          Sent_new_notification;                             // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EFortQuestState                               quest_state;                                       // 0x0148(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          sent_new_notification;                             // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_14A[0x6];                                      // 0x014A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              Last_state_change_time;                            // 0x0150(0x0008)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FDateTime                              last_state_change_time;                            // 0x0150(0x0008)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TMap<class FName, int32>                      CompletionCounts;                                  // 0x0158(0x0050)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
 	bool                                          bSentCompleteNotification;                         // 0x01A8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bAllObjectivesComplete;                            // 0x01A9(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_1AA[0x6];                                      // 0x01AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Twitch_broadcaster_channel_id;                     // 0x01B0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FString                                 twitch_broadcaster_channel_id;                     // 0x01B0(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         CurrentStage;                                      // 0x01C0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_1C4[0x4];                                      // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              Expiry_time;                                       // 0x01C8(0x0008)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FDateTime                              expiry_time;                                       // 0x01C8(0x0008)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FFortMissionInstancedConfigData        InstancedConfigData;                               // 0x01D0(0x0010)(Transient, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -6079,15 +6076,15 @@ public:
 static_assert(alignof(UFortQuestItem) == 0x000008, "Wrong alignment on UFortQuestItem");
 static_assert(sizeof(UFortQuestItem) == 0x0001E0, "Wrong size on UFortQuestItem");
 static_assert(offsetof(UFortQuestItem, Objectives) == 0x000138, "Member 'UFortQuestItem::Objectives' has a wrong offset!");
-static_assert(offsetof(UFortQuestItem, Quest_state) == 0x000148, "Member 'UFortQuestItem::Quest_state' has a wrong offset!");
-static_assert(offsetof(UFortQuestItem, Sent_new_notification) == 0x000149, "Member 'UFortQuestItem::Sent_new_notification' has a wrong offset!");
-static_assert(offsetof(UFortQuestItem, Last_state_change_time) == 0x000150, "Member 'UFortQuestItem::Last_state_change_time' has a wrong offset!");
+static_assert(offsetof(UFortQuestItem, quest_state) == 0x000148, "Member 'UFortQuestItem::quest_state' has a wrong offset!");
+static_assert(offsetof(UFortQuestItem, sent_new_notification) == 0x000149, "Member 'UFortQuestItem::sent_new_notification' has a wrong offset!");
+static_assert(offsetof(UFortQuestItem, last_state_change_time) == 0x000150, "Member 'UFortQuestItem::last_state_change_time' has a wrong offset!");
 static_assert(offsetof(UFortQuestItem, CompletionCounts) == 0x000158, "Member 'UFortQuestItem::CompletionCounts' has a wrong offset!");
 static_assert(offsetof(UFortQuestItem, bSentCompleteNotification) == 0x0001A8, "Member 'UFortQuestItem::bSentCompleteNotification' has a wrong offset!");
 static_assert(offsetof(UFortQuestItem, bAllObjectivesComplete) == 0x0001A9, "Member 'UFortQuestItem::bAllObjectivesComplete' has a wrong offset!");
-static_assert(offsetof(UFortQuestItem, Twitch_broadcaster_channel_id) == 0x0001B0, "Member 'UFortQuestItem::Twitch_broadcaster_channel_id' has a wrong offset!");
+static_assert(offsetof(UFortQuestItem, twitch_broadcaster_channel_id) == 0x0001B0, "Member 'UFortQuestItem::twitch_broadcaster_channel_id' has a wrong offset!");
 static_assert(offsetof(UFortQuestItem, CurrentStage) == 0x0001C0, "Member 'UFortQuestItem::CurrentStage' has a wrong offset!");
-static_assert(offsetof(UFortQuestItem, Expiry_time) == 0x0001C8, "Member 'UFortQuestItem::Expiry_time' has a wrong offset!");
+static_assert(offsetof(UFortQuestItem, expiry_time) == 0x0001C8, "Member 'UFortQuestItem::expiry_time' has a wrong offset!");
 static_assert(offsetof(UFortQuestItem, InstancedConfigData) == 0x0001D0, "Member 'UFortQuestItem::InstancedConfigData' has a wrong offset!");
 
 // Class FortniteGame.FortAIHotSpotSlotGenerator_RampTrace
@@ -6304,7 +6301,7 @@ static_assert(offsetof(UFortMetadataItem, ItemDefinition) == 0x000100, "Member '
 class UFortCloudSaveItem : public UFortMetadataItem
 {
 public:
-	struct FFortCloudSaveInfo                     Cloud_save_info;                                   // 0x0108(0x0018)(Protected, NativeAccessSpecifierProtected)
+	struct FFortCloudSaveInfo                     cloud_save_info;                                   // 0x0108(0x0018)(Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -6318,7 +6315,7 @@ public:
 };
 static_assert(alignof(UFortCloudSaveItem) == 0x000008, "Wrong alignment on UFortCloudSaveItem");
 static_assert(sizeof(UFortCloudSaveItem) == 0x000120, "Wrong size on UFortCloudSaveItem");
-static_assert(offsetof(UFortCloudSaveItem, Cloud_save_info) == 0x000108, "Member 'UFortCloudSaveItem::Cloud_save_info' has a wrong offset!");
+static_assert(offsetof(UFortCloudSaveItem, cloud_save_info) == 0x000108, "Member 'UFortCloudSaveItem::cloud_save_info' has a wrong offset!");
 
 // Class FortniteGame.FortDamageSourceInterface
 // 0x0000 (0x0028 - 0x0028)
@@ -8332,7 +8329,7 @@ static_assert(sizeof(IFortInventoryOwnerInterface) == 0x000028, "Wrong size on I
 
 // Class FortniteGame.FortSafeZoneIndicator
 // 0x01F0 (0x0578 - 0x0388)
-class AFortSafeZoneIndicator : public AActor
+class AFortSafeZoneIndicator final : public AActor
 {
 public:
 	class UFortMiniMapComponent*                  MinimapComp;                                       // 0x0388(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -8613,7 +8610,7 @@ static_assert(offsetof(ADeployableBasePlot, BuildableAreasStructuralSupportBoxes
 
 // Class FortniteGame.FortAthenaSupplyDrop
 // 0x0010 (0x0850 - 0x0840)
-class AFortAthenaSupplyDrop : public ABuildingGameplayActor
+class AFortAthenaSupplyDrop final : public ABuildingGameplayActor
 {
 public:
 	struct FCollisionProfileName                  GroundCollsionProfile;                             // 0x0840(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
@@ -8953,7 +8950,7 @@ public:
 	void SetAIFocalPoint(class AActor* FocusTarget, const struct FVector& FocalPoint, bool bUseAttackingPriority);
 	bool SetupPreviewImageOverride();
 
-	struct FVector ApplyAccuracyToTargetLocation(const struct FVector& SourceLocation, const struct FVector& TargetLocation, float InDesiredThrowAngle) const;
+	struct FVector ApplyAccuracyToTargetLocation(const struct FVector& SourceLocation, const struct FVector& TargetLocation, float inDesiredThrowAngle) const;
 	bool DoesTargetHaveProhibitedTagsForAI(const class AActor* Target) const;
 	bool DoesTargetHaveTags(const class AActor* Target, const struct FGameplayTagContainer& Tags) const;
 	class UFortAbilitySystemComponent* GetActivatingAbilityComponent() const;
@@ -8966,7 +8963,7 @@ public:
 	class UFortTooltipDisplayStatsList* GetDisplayStats() const;
 	struct FVector GetFireLocation() const;
 	struct FRotator GetFireRotation(bool bApplyLeading, bool bApplyInaccuracy, bool bApplyClampedMaxYawAngleToFire) const;
-	void GetProjectileInitialValues(float* OutProjectileSpeed, struct FRotator* OutSpawnDirection, float* OutProjectileGravity, class AActor** HomingTarget, bool bApplyInaccuracy, bool bApplyClampedMaxYawAngleToFire, bool bApplyLeading) const;
+	void GetProjectileInitialValues(float* outProjectileSpeed, struct FRotator* outSpawnDirection, float* outProjectileGravity, class AActor** HomingTarget, bool bApplyInaccuracy, bool bApplyClampedMaxYawAngleToFire, bool bApplyLeading) const;
 	TSubclassOf<class UFortTooltip> GetTooltip() const;
 	bool IsTargetOutsideOfMaxYawRotation() const;
 	bool K2_ShouldUseDecoTool(const struct FGameplayAbilityActorInfo& ActorInfo) const;
@@ -9028,8 +9025,8 @@ static_assert(offsetof(UFortGameplayAbility, StatList) == 0x000A10, "Member 'UFo
 class alignas(0x08) UFortAlterableItem : public UFortAccountItem
 {
 public:
-	TArray<struct FFortAlterationSlots>           Alteration_slots;                                  // 0x0138(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class FString>                         Alterations;                                       // 0x0148(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FFortAlterationSlots>           alteration_slots;                                  // 0x0138(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class FString>                         alterations;                                       // 0x0148(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<class UFortAlterationItemDefinition*>  AlterationInstances;                               // 0x0158(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -9049,8 +9046,8 @@ public:
 #pragma pack(pop)
 static_assert(alignof(UFortAlterableItem) == 0x000008, "Wrong alignment on UFortAlterableItem");
 static_assert(sizeof(UFortAlterableItem) == 0x000168, "Wrong size on UFortAlterableItem");
-static_assert(offsetof(UFortAlterableItem, Alteration_slots) == 0x000138, "Member 'UFortAlterableItem::Alteration_slots' has a wrong offset!");
-static_assert(offsetof(UFortAlterableItem, Alterations) == 0x000148, "Member 'UFortAlterableItem::Alterations' has a wrong offset!");
+static_assert(offsetof(UFortAlterableItem, alteration_slots) == 0x000138, "Member 'UFortAlterableItem::alteration_slots' has a wrong offset!");
+static_assert(offsetof(UFortAlterableItem, alterations) == 0x000148, "Member 'UFortAlterableItem::alterations' has a wrong offset!");
 static_assert(offsetof(UFortAlterableItem, AlterationInstances) == 0x000158, "Member 'UFortAlterableItem::AlterationInstances' has a wrong offset!");
 
 // Class FortniteGame.FortSchematicItem
@@ -9906,7 +9903,7 @@ static_assert(offsetof(ABuildingContainer, CurrentInteractBounceNormalCurve) == 
 
 // Class FortniteGame.FortGameplayAbilityTooltip
 // 0x0088 (0x0118 - 0x0090)
-class UFortGameplayAbilityTooltip final : public UFortTooltip
+class UFortGameplayAbilityTooltip : public UFortTooltip
 {
 public:
 	struct FGameplayAbilitySpec                   CachedSpec;                                        // 0x0090(0x0078)(Transient, NativeAccessSpecifierPrivate)
@@ -14505,7 +14502,7 @@ static_assert(sizeof(IFortGameplayTagVolumeInterface) == 0x000028, "Wrong size o
 class UFortAccountBuffItem final : public UFortAccountItem
 {
 public:
-	struct FDateTime                              Expiration_date;                                   // 0x0138(0x0008)(BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              expiration_date;                                   // 0x0138(0x0008)(BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	bool IsActive() const;
@@ -14522,7 +14519,7 @@ public:
 };
 static_assert(alignof(UFortAccountBuffItem) == 0x000008, "Wrong alignment on UFortAccountBuffItem");
 static_assert(sizeof(UFortAccountBuffItem) == 0x000140, "Wrong size on UFortAccountBuffItem");
-static_assert(offsetof(UFortAccountBuffItem, Expiration_date) == 0x000138, "Member 'UFortAccountBuffItem::Expiration_date' has a wrong offset!");
+static_assert(offsetof(UFortAccountBuffItem, expiration_date) == 0x000138, "Member 'UFortAccountBuffItem::expiration_date' has a wrong offset!");
 
 // Class FortniteGame.FortAIRootAssignmentProviderInterface
 // 0x0000 (0x0028 - 0x0028)
@@ -14681,8 +14678,6 @@ public:
 
 public:
 	static class UFortAsyncAction_HomebaseContextPurchaseNode* PurchaseNode(const class UHomeBaseContext* HomeBaseContext_0, const class FName& IdOfNodeToPurchase_0);
-
-	void OnMCPRequestComplete__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -15945,8 +15940,8 @@ static_assert(offsetof(AWorldMapPinManager, CurrentPins) == 0x000398, "Member 'A
 class UFortCharacter : public UFortAccountItem
 {
 public:
-	class FString                                 Squad_id;                                          // 0x0138(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Squad_slot_idx;                                    // 0x0148(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 squad_id;                                          // 0x0138(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         squad_slot_idx;                                    // 0x0148(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -15961,8 +15956,8 @@ public:
 };
 static_assert(alignof(UFortCharacter) == 0x000008, "Wrong alignment on UFortCharacter");
 static_assert(sizeof(UFortCharacter) == 0x000150, "Wrong size on UFortCharacter");
-static_assert(offsetof(UFortCharacter, Squad_id) == 0x000138, "Member 'UFortCharacter::Squad_id' has a wrong offset!");
-static_assert(offsetof(UFortCharacter, Squad_slot_idx) == 0x000148, "Member 'UFortCharacter::Squad_slot_idx' has a wrong offset!");
+static_assert(offsetof(UFortCharacter, squad_id) == 0x000138, "Member 'UFortCharacter::squad_id' has a wrong offset!");
+static_assert(offsetof(UFortCharacter, squad_slot_idx) == 0x000148, "Member 'UFortCharacter::squad_slot_idx' has a wrong offset!");
 
 // Class FortniteGame.CustomCharacterAccessoryData
 // 0x00B0 (0x00D8 - 0x0028)
@@ -19812,11 +19807,11 @@ static_assert(offsetof(UFortHeroType, LegacyStatHandle) == 0x000438, "Member 'UF
 class alignas(0x08) UFortWorker : public UFortCharacter
 {
 public:
-	class FString                                 Slotted_building_id;                               // 0x0150(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 slotted_building_id;                               // 0x0150(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         building_slot_used;                                // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Gender;                                            // 0x0164(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Personality;                                       // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Set_bonus;                                         // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 personality;                                       // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 set_bonus;                                         // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Portrait;                                          // 0x0188(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTagContainer                  PersonalityTag;                                    // 0x0198(0x0020)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	struct FGameplayTagContainer                  SetBonusTag;                                       // 0x01B8(0x0020)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
@@ -19841,11 +19836,11 @@ public:
 #pragma pack(pop)
 static_assert(alignof(UFortWorker) == 0x000008, "Wrong alignment on UFortWorker");
 static_assert(sizeof(UFortWorker) == 0x000218, "Wrong size on UFortWorker");
-static_assert(offsetof(UFortWorker, Slotted_building_id) == 0x000150, "Member 'UFortWorker::Slotted_building_id' has a wrong offset!");
+static_assert(offsetof(UFortWorker, slotted_building_id) == 0x000150, "Member 'UFortWorker::slotted_building_id' has a wrong offset!");
 static_assert(offsetof(UFortWorker, building_slot_used) == 0x000160, "Member 'UFortWorker::building_slot_used' has a wrong offset!");
 static_assert(offsetof(UFortWorker, Gender) == 0x000164, "Member 'UFortWorker::Gender' has a wrong offset!");
-static_assert(offsetof(UFortWorker, Personality) == 0x000168, "Member 'UFortWorker::Personality' has a wrong offset!");
-static_assert(offsetof(UFortWorker, Set_bonus) == 0x000178, "Member 'UFortWorker::Set_bonus' has a wrong offset!");
+static_assert(offsetof(UFortWorker, personality) == 0x000168, "Member 'UFortWorker::personality' has a wrong offset!");
+static_assert(offsetof(UFortWorker, set_bonus) == 0x000178, "Member 'UFortWorker::set_bonus' has a wrong offset!");
 static_assert(offsetof(UFortWorker, Portrait) == 0x000188, "Member 'UFortWorker::Portrait' has a wrong offset!");
 static_assert(offsetof(UFortWorker, PersonalityTag) == 0x000198, "Member 'UFortWorker::PersonalityTag' has a wrong offset!");
 static_assert(offsetof(UFortWorker, SetBonusTag) == 0x0001B8, "Member 'UFortWorker::SetBonusTag' has a wrong offset!");
@@ -19904,9 +19899,9 @@ static_assert(offsetof(UMovementComp_Tracer, Speed) == 0x000138, "Member 'UMovem
 class UFortHero final : public UFortWorker
 {
 public:
-	class FString                                 Hero_name;                                         // 0x0218(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Equipped_cosmetics;                                // 0x0228(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FFortSavedModeLoadout>          Mode_loadouts;                                     // 0x0238(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	class FString                                 hero_name;                                         // 0x0218(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         equipped_cosmetics;                                // 0x0228(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FFortSavedModeLoadout>          mode_loadouts;                                     // 0x0238(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UFortHeroSpecialization*>        Specializations;                                   // 0x0248(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UFortAbilityKit*>                SpecializationAbilityKits;                         // 0x0258(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	class UFortCharacterCosmeticItem*             CosmeticItem;                                      // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -19931,9 +19926,9 @@ public:
 };
 static_assert(alignof(UFortHero) == 0x000008, "Wrong alignment on UFortHero");
 static_assert(sizeof(UFortHero) == 0x000290, "Wrong size on UFortHero");
-static_assert(offsetof(UFortHero, Hero_name) == 0x000218, "Member 'UFortHero::Hero_name' has a wrong offset!");
-static_assert(offsetof(UFortHero, Equipped_cosmetics) == 0x000228, "Member 'UFortHero::Equipped_cosmetics' has a wrong offset!");
-static_assert(offsetof(UFortHero, Mode_loadouts) == 0x000238, "Member 'UFortHero::Mode_loadouts' has a wrong offset!");
+static_assert(offsetof(UFortHero, hero_name) == 0x000218, "Member 'UFortHero::hero_name' has a wrong offset!");
+static_assert(offsetof(UFortHero, equipped_cosmetics) == 0x000228, "Member 'UFortHero::equipped_cosmetics' has a wrong offset!");
+static_assert(offsetof(UFortHero, mode_loadouts) == 0x000238, "Member 'UFortHero::mode_loadouts' has a wrong offset!");
 static_assert(offsetof(UFortHero, Specializations) == 0x000248, "Member 'UFortHero::Specializations' has a wrong offset!");
 static_assert(offsetof(UFortHero, SpecializationAbilityKits) == 0x000258, "Member 'UFortHero::SpecializationAbilityKits' has a wrong offset!");
 static_assert(offsetof(UFortHero, CosmeticItem) == 0x000268, "Member 'UFortHero::CosmeticItem' has a wrong offset!");
@@ -20449,7 +20444,7 @@ static_assert(offsetof(UFortAnimNotifyState_RootMotionInterrupt, MontageInterrup
 
 // Class FortniteGame.FortAssetManager
 // 0x01C0 (0x0570 - 0x03B0)
-class UFortAssetManager : public UAssetManager
+class UFortAssetManager final : public UAssetManager
 {
 public:
 	TMap<class UObject*, class FName>             GCPreventionPool;                                  // 0x03B0(0x0050)(ZeroConstructor, NativeAccessSpecifierPrivate)
@@ -22399,8 +22394,6 @@ public:
 public:
 	static class UFortAsyncAction_MCPContextUpgradeItem* UpgradeItem(const class UFortMcpContext* MCPContext_0, const class UFortItem* ItemToUpgrade_0);
 
-	void OnMCPRequestComplete__DelegateSignature();
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -22429,8 +22422,6 @@ public:
 
 public:
 	static class UFortAsyncAction_MCPContextConsumeItem* ConsumeItem(const class UFortMcpContext* MCPContext_0, const class UFortItem* ItemToConsume_0, const struct FUniqueNetIdRepl& TargetAccountId_0);
-
-	void OnMCPRequestComplete__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -22500,11 +22491,8 @@ public:
 	void GrantPendingMissionAlertRewards();
 	bool IsAllowedConversionIndex(const class UFortItem* ItemToConvert, int32 RecipeIndex);
 	void IssueFriendCode(const TDelegate<void(bool bSuccess, struct FFriendCode& FriendCode)>& OnCompleteDelegate);
-	void OnIssueFriendCodeComplete__DelegateSignature(bool bSuccess, const struct FFriendCode& FriendCode);
 	void ListMtxPackages(const TDelegate<void(TArray<struct FMtxPackage>& Offers)>& Callback, bool bIncludeCurrency);
 	void MarkItemSeen(class UFortAccountItem* ItemToMarkSeen);
-	void OnQueryUnredeemedFriendCodesComplete__DelegateSignature(bool bSuccess, const TArray<struct FFriendCode>& FriendCodes);
-	void OnSendFriendCodePlatformMessageComplete__DelegateSignature(bool bMessageSent);
 	void OpenMissionRewards();
 	void PurchaseRealMoneyCatalogEntry(const class FString& OfferId, const TDelegate<void(bool bSuccess)>& Callback);
 	void QueryUnredeemedFriendCodes(const TDelegate<void(bool bSuccess, TArray<struct FFriendCode>& FriendCodes)>& OnCompleteDelegate);
@@ -22705,12 +22693,6 @@ public:
 	void GetTeamHitPointFractions(TArray<float>* HealthFractions, TArray<float>* ShieldFractions);
 	void GetTeamMemberIDs(TArray<struct FUniqueNetIdRepl>* TeamMemberIDs);
 	void GetTeamMembers(TArray<struct FFortTeamMemberInfo>* TeamMembers);
-	void OnTeamHitPointFractionsChanged__DelegateSignature(const TArray<float>& HealthFractions, const TArray<float>& ShieldFractions);
-	void OnTeamMemberAddedDelegate__DelegateSignature(const struct FFortTeamMemberInfo& NewTeamMemberInfo);
-	void OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature(const struct FUniqueNetIdRepl& NewTeamMemberId);
-	void OnTeamMemberRemovedDelegate__DelegateSignature(int32 PlayerIndex);
-	void OnTeamMemberSimpleDelegate__DelegateSignature();
-	void OnTeamMemberStateChangedDelegate__DelegateSignature(const struct FFortTeamMemberInfo& TeamMemberInfo);
 
 public:
 	static class UClass* StaticClass()
@@ -22807,7 +22789,7 @@ static_assert(offsetof(UFortRegionInfo, RegionThemeIcon) == 0x0000E0, "Member 'U
 
 // Class FortniteGame.WorldMapPin
 // 0x0018 (0x03A0 - 0x0388)
-class AWorldMapPin final : public AActor
+class AWorldMapPin : public AActor
 {
 public:
 	class USceneComponent*                        SceneComponent;                                    // 0x0388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -23445,8 +23427,8 @@ public:
 	bool                                          bShouldRecordFPSCharts;                            // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFPSRecordingStarted;                              // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWatchingForCallStack;                             // 0x0093(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ISelectedTheater;                                  // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ISelectedTile;                                     // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         iSelectedTheater;                                  // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         iSelectedTile;                                     // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RandomZoneDifficultyMinimum;                       // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RandomZoneDifficultyMaximum;                       // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumSkillPurchasesAttempted;                        // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -23505,8 +23487,8 @@ static_assert(offsetof(UFortClientBotManager, bShouldPickRandomMap) == 0x000090,
 static_assert(offsetof(UFortClientBotManager, bShouldRecordFPSCharts) == 0x000091, "Member 'UFortClientBotManager::bShouldRecordFPSCharts' has a wrong offset!");
 static_assert(offsetof(UFortClientBotManager, bFPSRecordingStarted) == 0x000092, "Member 'UFortClientBotManager::bFPSRecordingStarted' has a wrong offset!");
 static_assert(offsetof(UFortClientBotManager, bWatchingForCallStack) == 0x000093, "Member 'UFortClientBotManager::bWatchingForCallStack' has a wrong offset!");
-static_assert(offsetof(UFortClientBotManager, ISelectedTheater) == 0x000094, "Member 'UFortClientBotManager::ISelectedTheater' has a wrong offset!");
-static_assert(offsetof(UFortClientBotManager, ISelectedTile) == 0x000098, "Member 'UFortClientBotManager::ISelectedTile' has a wrong offset!");
+static_assert(offsetof(UFortClientBotManager, iSelectedTheater) == 0x000094, "Member 'UFortClientBotManager::iSelectedTheater' has a wrong offset!");
+static_assert(offsetof(UFortClientBotManager, iSelectedTile) == 0x000098, "Member 'UFortClientBotManager::iSelectedTile' has a wrong offset!");
 static_assert(offsetof(UFortClientBotManager, RandomZoneDifficultyMinimum) == 0x00009C, "Member 'UFortClientBotManager::RandomZoneDifficultyMinimum' has a wrong offset!");
 static_assert(offsetof(UFortClientBotManager, RandomZoneDifficultyMaximum) == 0x0000A0, "Member 'UFortClientBotManager::RandomZoneDifficultyMaximum' has a wrong offset!");
 static_assert(offsetof(UFortClientBotManager, NumSkillPurchasesAttempted) == 0x0000A4, "Member 'UFortClientBotManager::NumSkillPurchasesAttempted' has a wrong offset!");
@@ -23876,7 +23858,7 @@ static_assert(sizeof(IFortPlacementActorDataProviderInterface) == 0x000028, "Wro
 
 // Class FortniteGame.FortAthenaMapInfo
 // 0x02C8 (0x0650 - 0x0388)
-class AFortAthenaMapInfo : public AActor
+class AFortAthenaMapInfo final : public AActor
 {
 public:
 	TSubclassOf<class ABuildingContainer>         TreasureChestClass;                                // 0x0388(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -24214,8 +24196,8 @@ public:
 	struct FFortGameplayAttributeData             MaxLevelBonus_Schematics_Traps;                    // 0x0270(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
 	struct FFortGameplayAttributeData             MaxLevelBonus_Personnel;                           // 0x0290(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
 	struct FFortGameplayAttributeData             MaxLevelBonus_Alterations;                         // 0x02B0(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
-	struct FFortGameplayAttributeData             Rate_per_second_collector_Token_collectionresource_nodegatetoken01; // 0x02D0(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
-	struct FFortGameplayAttributeData             Max_capacity_collector_Token_collectionresource_nodegatetoken01; // 0x02F0(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
+	struct FFortGameplayAttributeData             rate_per_second_collector_Token_collectionresource_nodegatetoken01; // 0x02D0(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
+	struct FFortGameplayAttributeData             max_capacity_collector_Token_collectionresource_nodegatetoken01; // 0x02F0(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
 	struct FFortGameplayAttributeData             SupplyDrop_Magnitude;                              // 0x0310(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
 	struct FFortGameplayAttributeData             SupplyDrop_Level;                                  // 0x0330(0x0020)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
 	struct FFortGameplayAttributeData             ExpeditionSquadOne_Power;                          // 0x0350(0x0020)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
@@ -24286,8 +24268,8 @@ static_assert(offsetof(UFortHomebaseSet, MaxLevelBonus_Schematics_Melee) == 0x00
 static_assert(offsetof(UFortHomebaseSet, MaxLevelBonus_Schematics_Traps) == 0x000270, "Member 'UFortHomebaseSet::MaxLevelBonus_Schematics_Traps' has a wrong offset!");
 static_assert(offsetof(UFortHomebaseSet, MaxLevelBonus_Personnel) == 0x000290, "Member 'UFortHomebaseSet::MaxLevelBonus_Personnel' has a wrong offset!");
 static_assert(offsetof(UFortHomebaseSet, MaxLevelBonus_Alterations) == 0x0002B0, "Member 'UFortHomebaseSet::MaxLevelBonus_Alterations' has a wrong offset!");
-static_assert(offsetof(UFortHomebaseSet, Rate_per_second_collector_Token_collectionresource_nodegatetoken01) == 0x0002D0, "Member 'UFortHomebaseSet::Rate_per_second_collector_Token_collectionresource_nodegatetoken01' has a wrong offset!");
-static_assert(offsetof(UFortHomebaseSet, Max_capacity_collector_Token_collectionresource_nodegatetoken01) == 0x0002F0, "Member 'UFortHomebaseSet::Max_capacity_collector_Token_collectionresource_nodegatetoken01' has a wrong offset!");
+static_assert(offsetof(UFortHomebaseSet, rate_per_second_collector_Token_collectionresource_nodegatetoken01) == 0x0002D0, "Member 'UFortHomebaseSet::rate_per_second_collector_Token_collectionresource_nodegatetoken01' has a wrong offset!");
+static_assert(offsetof(UFortHomebaseSet, max_capacity_collector_Token_collectionresource_nodegatetoken01) == 0x0002F0, "Member 'UFortHomebaseSet::max_capacity_collector_Token_collectionresource_nodegatetoken01' has a wrong offset!");
 static_assert(offsetof(UFortHomebaseSet, SupplyDrop_Magnitude) == 0x000310, "Member 'UFortHomebaseSet::SupplyDrop_Magnitude' has a wrong offset!");
 static_assert(offsetof(UFortHomebaseSet, SupplyDrop_Level) == 0x000330, "Member 'UFortHomebaseSet::SupplyDrop_Level' has a wrong offset!");
 static_assert(offsetof(UFortHomebaseSet, ExpeditionSquadOne_Power) == 0x000350, "Member 'UFortHomebaseSet::ExpeditionSquadOne_Power' has a wrong offset!");
@@ -24555,16 +24537,16 @@ static_assert(offsetof(UFortTieredCollectionLayout, LayoutGUID) == 0x0000F8, "Me
 class UFortExpeditionItem final : public UFortAccountItem
 {
 public:
-	int32                                         Expedition_max_target_power;                       // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Expedition_min_target_power;                       // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              Expedition_start_time;                             // 0x0140(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              Expedition_end_time;                               // 0x0148(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              Expedition_expiration_start_time;                  // 0x0150(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              Expedition_expiration_end_time;                    // 0x0158(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Expedition_squad_id;                               // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Expedition_slot_id;                                // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Expedition_criteria;                               // 0x0180(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	float                                         Expedition_success_chance;                         // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         expedition_max_target_power;                       // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         expedition_min_target_power;                       // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              expedition_start_time;                             // 0x0140(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              expedition_end_time;                               // 0x0148(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              expedition_expiration_start_time;                  // 0x0150(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              expedition_expiration_end_time;                    // 0x0158(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 expedition_squad_id;                               // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 expedition_slot_id;                                // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         expedition_criteria;                               // 0x0180(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         expedition_success_chance;                         // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_194[0xC];                                      // 0x0194(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -24592,16 +24574,16 @@ public:
 };
 static_assert(alignof(UFortExpeditionItem) == 0x000008, "Wrong alignment on UFortExpeditionItem");
 static_assert(sizeof(UFortExpeditionItem) == 0x0001A0, "Wrong size on UFortExpeditionItem");
-static_assert(offsetof(UFortExpeditionItem, Expedition_max_target_power) == 0x000138, "Member 'UFortExpeditionItem::Expedition_max_target_power' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_min_target_power) == 0x00013C, "Member 'UFortExpeditionItem::Expedition_min_target_power' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_start_time) == 0x000140, "Member 'UFortExpeditionItem::Expedition_start_time' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_end_time) == 0x000148, "Member 'UFortExpeditionItem::Expedition_end_time' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_expiration_start_time) == 0x000150, "Member 'UFortExpeditionItem::Expedition_expiration_start_time' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_expiration_end_time) == 0x000158, "Member 'UFortExpeditionItem::Expedition_expiration_end_time' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_squad_id) == 0x000160, "Member 'UFortExpeditionItem::Expedition_squad_id' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_slot_id) == 0x000170, "Member 'UFortExpeditionItem::Expedition_slot_id' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_criteria) == 0x000180, "Member 'UFortExpeditionItem::Expedition_criteria' has a wrong offset!");
-static_assert(offsetof(UFortExpeditionItem, Expedition_success_chance) == 0x000190, "Member 'UFortExpeditionItem::Expedition_success_chance' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_max_target_power) == 0x000138, "Member 'UFortExpeditionItem::expedition_max_target_power' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_min_target_power) == 0x00013C, "Member 'UFortExpeditionItem::expedition_min_target_power' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_start_time) == 0x000140, "Member 'UFortExpeditionItem::expedition_start_time' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_end_time) == 0x000148, "Member 'UFortExpeditionItem::expedition_end_time' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_expiration_start_time) == 0x000150, "Member 'UFortExpeditionItem::expedition_expiration_start_time' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_expiration_end_time) == 0x000158, "Member 'UFortExpeditionItem::expedition_expiration_end_time' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_squad_id) == 0x000160, "Member 'UFortExpeditionItem::expedition_squad_id' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_slot_id) == 0x000170, "Member 'UFortExpeditionItem::expedition_slot_id' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_criteria) == 0x000180, "Member 'UFortExpeditionItem::expedition_criteria' has a wrong offset!");
+static_assert(offsetof(UFortExpeditionItem, expedition_success_chance) == 0x000190, "Member 'UFortExpeditionItem::expedition_success_chance' has a wrong offset!");
 
 // Class FortniteGame.FortWorldManager
 // 0x06D8 (0x0A60 - 0x0388)
@@ -25485,7 +25467,7 @@ public:
 	void EndLiveStreamingWindow();
 	void EvolveHero();
 	void ExecuteNewMissionGeneration(float DifficultyLevel, const class FString& GeneratorName);
-	void ForceAILODs(EFortAILODLevel InForcedAILODValue);
+	void ForceAILODs(EFortAILODLevel inForcedAILODValue);
 	void ForceHeroType(const class FString& HeroPersistentName);
 	void ForceSaveMissionStateAndWorld(const class FString& SaveFilename);
 	void ForceServerShutdown(int32 ExitCode);
@@ -25538,7 +25520,7 @@ public:
 	void GrantHeroTacticalAbility(const class FString& SupportHeroName, int32 Level);
 	void HideGameplayCaptureUI();
 	void HideHUDElement(const struct FGameplayTag& HUDElementTag);
-	void KillPawns(TSubclassOf<class AFortPawn> AClass);
+	void KillPawns(TSubclassOf<class AFortPawn> aClass);
 	void ListActiveEncounters();
 	void ListAIUtilities();
 	void ListAmmo();
@@ -25553,7 +25535,7 @@ public:
 	void LoadMissionGenerator(const class FString& GeneratorName);
 	void MakeAIsGod();
 	void MakeBuildingActorsGod();
-	void MakeGods(TSubclassOf<class AFortPawn> AClass);
+	void MakeGods(TSubclassOf<class AFortPawn> aClass);
 	void McpApplyAlteration(const class FString& Schematic, const class FString& Alteration);
 	void McpApplyStash(const class FString& StashName);
 	void McpCheat();
@@ -25656,7 +25638,7 @@ public:
 	void SetSafeZoneLocationToPlayer();
 	void SetSafeZoneRadius(float NewRadius);
 	void SetWindPixelDebugExtent(float ExtentInUnrealUnits);
-	void SetWorldDaysElapsed(float Days);
+	void SetWorldDaysElapsed(float days);
 	void SetWorldLevel(float Level);
 	void ShowActiveGameplayModifiers();
 	void ShowAllMinimapIcons();
@@ -25758,7 +25740,7 @@ public:
 	void TutorialRemoveHidden(class FName Hidden);
 	void TutorialRemoveHighlight(class FName Highlight);
 	void UnforceAILODs();
-	void UnlockAllDefenders(bool InUnlockAllDefenders);
+	void UnlockAllDefenders(bool inUnlockAllDefenders);
 	void UnlockAllZones();
 	void ViewStuck();
 	void WannaGun();
@@ -25943,27 +25925,6 @@ public:
 	void KickPartyMember(const struct FUniqueNetIdRepl& PartyMemberId);
 	void LeaveParty();
 	void MutePartyMember(const struct FUniqueNetIdRepl& PartyMemberId);
-	void OnAthenaReadyStateChanged__DelegateSignature(const struct FUniqueNetIdRepl& UniqueId, bool bReady);
-	void OnClientPartyStateChanged__DelegateSignature(EFortPartyState PartyState);
-	void OnClientPlaylistChanged__DelegateSignature(EFortAthenaPlaylist PlaylistChanged);
-	void OnClientSquadFillChanged__DelegateSignature(bool bSquadFill);
-	void OnFriendPresenceUpdated__DelegateSignature(const struct FUniqueNetIdRepl& FriendId);
-	void OnFriendsChangedDelegate__DelegateSignature(const TArray<class UFortSocialItem*>& ActiveFriends);
-	void OnFriendsCountChangedDelegate__DelegateSignature(int32 ActiveFriendsCount);
-	void OnLeaderFriendsOnlyChanged__DelegateSignature(bool bLeaderFriendsOnly);
-	void OnLeaderInvitesOnlyChanged__DelegateSignature(bool bLeaderInviteOnly);
-	void OnPartyDataChanged__DelegateSignature(const struct FPartyState& PartyData);
-	void OnPartyInvitesCountUpdatedDelegate__DelegateSignature(int32 PartyInvitesCount);
-	void OnPartyInvitesUpdatedDelegate__DelegateSignature(const TArray<class UFortSocialItem*>& ActiveFriends);
-	void OnPartyJoinedDelegate__DelegateSignature();
-	void OnPartyLeftDelegate__DelegateSignature();
-	void OnPartyTransitionCompleteDelegate__DelegateSignature(EFortPartyTransition PartyTransition);
-	void OnPartyTransitionStartedDelegate__DelegateSignature(EFortPartyTransition PartyTransition);
-	void OnPartyTypeChanged__DelegateSignature(EPartyType PartyType);
-	void OnPlayerStateChangedDelegate__DelegateSignature(const struct FFortTeamMemberInfo& PlayerInfo);
-	void OnRejectInviteComplete__DelegateSignature();
-	void OnSendInviteCompleteDelegate__DelegateSignature();
-	void OnSocialListChangedDelegate__DelegateSignature(const TArray<class UFortSocialItem*>& SocialItems);
 	void PromotePartyMemberToLeader(const struct FUniqueNetIdRepl& PartyMemberId);
 	void RejectFriendRequest(const struct FUniqueNetIdRepl& PlayerID);
 	void RejectPartyInvite(class UFortSocialItem* PartyInvite);
@@ -27355,7 +27316,7 @@ static_assert(offsetof(AFortEmitterCameraLensEffectDirectional, RotationParamete
 
 // Class FortniteGame.FortEngine
 // 0x0000 (0x0CE0 - 0x0CE0)
-class UFortEngine : public UGameEngine
+class UFortEngine final : public UGameEngine
 {
 public:
 	static class UClass* StaticClass()
@@ -28113,7 +28074,7 @@ static_assert(offsetof(AFortPlayerControllerAthena, MovementCancellableActionLea
 
 // Class FortniteGame.FortGameModeAthena
 // 0x02E0 (0x0B70 - 0x0890)
-class AFortGameModeAthena : public AFortGamePvPBase
+class AFortGameModeAthena final : public AFortGamePvPBase
 {
 public:
 	uint8                                         Pad_890[0x8];                                      // 0x0890(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -28861,7 +28822,7 @@ static_assert(offsetof(AFortGameSession, DisconnectedReservationTimeout) == 0x00
 
 // Class FortniteGame.FortGameSessionDedicated
 // 0x02B0 (0x0740 - 0x0490)
-class AFortGameSessionDedicated : public AFortGameSession
+class AFortGameSessionDedicated final : public AFortGameSession
 {
 public:
 	uint8                                         Pad_490[0xC0];                                     // 0x0490(0x00C0)(Fixing Size After Last Property [ Dumper-7 ])
@@ -29885,7 +29846,7 @@ class UFortCardPackItem final : public UFortAccountItem
 {
 public:
 	TArray<struct FMcpLootEntry>                  Options;                                           // 0x0138(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	class FString                                 Pack_source;                                       // 0x0148(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 pack_source;                                       // 0x0148(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_158[0x8];                                      // 0x0158(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -29907,15 +29868,15 @@ public:
 static_assert(alignof(UFortCardPackItem) == 0x000008, "Wrong alignment on UFortCardPackItem");
 static_assert(sizeof(UFortCardPackItem) == 0x000160, "Wrong size on UFortCardPackItem");
 static_assert(offsetof(UFortCardPackItem, Options) == 0x000138, "Member 'UFortCardPackItem::Options' has a wrong offset!");
-static_assert(offsetof(UFortCardPackItem, Pack_source) == 0x000148, "Member 'UFortCardPackItem::Pack_source' has a wrong offset!");
+static_assert(offsetof(UFortCardPackItem, pack_source) == 0x000148, "Member 'UFortCardPackItem::pack_source' has a wrong offset!");
 
 // Class FortniteGame.FortDefenderItem
 // 0x0040 (0x0190 - 0x0150)
 class UFortDefenderItem final : public UFortCharacter
 {
 public:
-	TArray<struct FFortAlterationSlots>           Alteration_slots;                                  // 0x0150(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class FString>                         Alterations;                                       // 0x0160(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FFortAlterationSlots>           alteration_slots;                                  // 0x0150(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class FString>                         alterations;                                       // 0x0160(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<class UFortAlterationItemDefinition*>  AlterationInstances;                               // 0x0170(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_180[0x10];                                     // 0x0180(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -29931,8 +29892,8 @@ public:
 };
 static_assert(alignof(UFortDefenderItem) == 0x000008, "Wrong alignment on UFortDefenderItem");
 static_assert(sizeof(UFortDefenderItem) == 0x000190, "Wrong size on UFortDefenderItem");
-static_assert(offsetof(UFortDefenderItem, Alteration_slots) == 0x000150, "Member 'UFortDefenderItem::Alteration_slots' has a wrong offset!");
-static_assert(offsetof(UFortDefenderItem, Alterations) == 0x000160, "Member 'UFortDefenderItem::Alterations' has a wrong offset!");
+static_assert(offsetof(UFortDefenderItem, alteration_slots) == 0x000150, "Member 'UFortDefenderItem::alteration_slots' has a wrong offset!");
+static_assert(offsetof(UFortDefenderItem, alterations) == 0x000160, "Member 'UFortDefenderItem::alterations' has a wrong offset!");
 static_assert(offsetof(UFortDefenderItem, AlterationInstances) == 0x000170, "Member 'UFortDefenderItem::AlterationInstances' has a wrong offset!");
 
 // Class FortniteGame.FortCharacterCosmeticItemDefinition
@@ -29969,7 +29930,7 @@ static_assert(offsetof(UFortCharacterCosmeticItemDefinition, ColorAlteration) ==
 class UFortCharacterCosmeticItem final : public UFortAccountItem
 {
 public:
-	class FString                                 Equipped_character_id;                             // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 equipped_character_id;                             // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_148[0x8];                                      // 0x0148(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -29984,7 +29945,7 @@ public:
 };
 static_assert(alignof(UFortCharacterCosmeticItem) == 0x000008, "Wrong alignment on UFortCharacterCosmeticItem");
 static_assert(sizeof(UFortCharacterCosmeticItem) == 0x000150, "Wrong size on UFortCharacterCosmeticItem");
-static_assert(offsetof(UFortCharacterCosmeticItem, Equipped_character_id) == 0x000138, "Member 'UFortCharacterCosmeticItem::Equipped_character_id' has a wrong offset!");
+static_assert(offsetof(UFortCharacterCosmeticItem, equipped_character_id) == 0x000138, "Member 'UFortCharacterCosmeticItem::equipped_character_id' has a wrong offset!");
 
 // Class FortniteGame.FortCodeTokenItem
 // 0x0008 (0x0140 - 0x0138)
@@ -30011,8 +29972,8 @@ static_assert(sizeof(UFortCodeTokenItem) == 0x000140, "Wrong size on UFortCodeTo
 class UFortCollectedResourceItem final : public UFortAccountItem
 {
 public:
-	double                                        Stored_value;                                      // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Last_updated;                                      // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        stored_value;                                      // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 last_updated;                                      // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortItemDefinition*                    PayoutResource;                                    // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_158[0x8];                                      // 0x0158(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -30028,8 +29989,8 @@ public:
 };
 static_assert(alignof(UFortCollectedResourceItem) == 0x000008, "Wrong alignment on UFortCollectedResourceItem");
 static_assert(sizeof(UFortCollectedResourceItem) == 0x000160, "Wrong size on UFortCollectedResourceItem");
-static_assert(offsetof(UFortCollectedResourceItem, Stored_value) == 0x000138, "Member 'UFortCollectedResourceItem::Stored_value' has a wrong offset!");
-static_assert(offsetof(UFortCollectedResourceItem, Last_updated) == 0x000140, "Member 'UFortCollectedResourceItem::Last_updated' has a wrong offset!");
+static_assert(offsetof(UFortCollectedResourceItem, stored_value) == 0x000138, "Member 'UFortCollectedResourceItem::stored_value' has a wrong offset!");
+static_assert(offsetof(UFortCollectedResourceItem, last_updated) == 0x000140, "Member 'UFortCollectedResourceItem::last_updated' has a wrong offset!");
 static_assert(offsetof(UFortCollectedResourceItem, PayoutResource) == 0x000150, "Member 'UFortCollectedResourceItem::PayoutResource' has a wrong offset!");
 
 // Class FortniteGame.FortTheaterList
@@ -30174,12 +30135,12 @@ static_assert(offsetof(UFortQuotaItemDefinition, RechargeDelayMinutes) == 0x0002
 class UFortQuotaItem final : public UFortAccountItem
 {
 public:
-	float                                         Current_value;                                     // 0x0138(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         current_value;                                     // 0x0138(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Last_mod_time;                                     // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Units_per_minute_recharge;                         // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Max_quota;                                         // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Recharge_delay_minutes;                            // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 last_mod_time;                                     // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         units_per_minute_recharge;                         // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         max_quota;                                         // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         recharge_delay_minutes;                            // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15C[0x14];                                     // 0x015C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -30197,11 +30158,11 @@ public:
 };
 static_assert(alignof(UFortQuotaItem) == 0x000008, "Wrong alignment on UFortQuotaItem");
 static_assert(sizeof(UFortQuotaItem) == 0x000170, "Wrong size on UFortQuotaItem");
-static_assert(offsetof(UFortQuotaItem, Current_value) == 0x000138, "Member 'UFortQuotaItem::Current_value' has a wrong offset!");
-static_assert(offsetof(UFortQuotaItem, Last_mod_time) == 0x000140, "Member 'UFortQuotaItem::Last_mod_time' has a wrong offset!");
-static_assert(offsetof(UFortQuotaItem, Units_per_minute_recharge) == 0x000150, "Member 'UFortQuotaItem::Units_per_minute_recharge' has a wrong offset!");
-static_assert(offsetof(UFortQuotaItem, Max_quota) == 0x000154, "Member 'UFortQuotaItem::Max_quota' has a wrong offset!");
-static_assert(offsetof(UFortQuotaItem, Recharge_delay_minutes) == 0x000158, "Member 'UFortQuotaItem::Recharge_delay_minutes' has a wrong offset!");
+static_assert(offsetof(UFortQuotaItem, current_value) == 0x000138, "Member 'UFortQuotaItem::current_value' has a wrong offset!");
+static_assert(offsetof(UFortQuotaItem, last_mod_time) == 0x000140, "Member 'UFortQuotaItem::last_mod_time' has a wrong offset!");
+static_assert(offsetof(UFortQuotaItem, units_per_minute_recharge) == 0x000150, "Member 'UFortQuotaItem::units_per_minute_recharge' has a wrong offset!");
+static_assert(offsetof(UFortQuotaItem, max_quota) == 0x000154, "Member 'UFortQuotaItem::max_quota' has a wrong offset!");
+static_assert(offsetof(UFortQuotaItem, recharge_delay_minutes) == 0x000158, "Member 'UFortQuotaItem::recharge_delay_minutes' has a wrong offset!");
 
 // Class FortniteGame.FortQueryTest_HotspotSlotOrientation
 // 0x0038 (0x01F8 - 0x01C0)
@@ -30231,7 +30192,7 @@ static_assert(offsetof(UFortQueryTest_HotspotSlotOrientation, DotThreshold) == 0
 class UFortDeployableBaseCloudSaveItem final : public UFortCloudSaveItem
 {
 public:
-	struct FFortTierProgression                   Tier_progression;                                  // 0x0120(0x0010)(Protected, NativeAccessSpecifierProtected)
+	struct FFortTierProgression                   tier_progression;                                  // 0x0120(0x0010)(Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -30245,14 +30206,14 @@ public:
 };
 static_assert(alignof(UFortDeployableBaseCloudSaveItem) == 0x000008, "Wrong alignment on UFortDeployableBaseCloudSaveItem");
 static_assert(sizeof(UFortDeployableBaseCloudSaveItem) == 0x000130, "Wrong size on UFortDeployableBaseCloudSaveItem");
-static_assert(offsetof(UFortDeployableBaseCloudSaveItem, Tier_progression) == 0x000120, "Member 'UFortDeployableBaseCloudSaveItem::Tier_progression' has a wrong offset!");
+static_assert(offsetof(UFortDeployableBaseCloudSaveItem, tier_progression) == 0x000120, "Member 'UFortDeployableBaseCloudSaveItem::tier_progression' has a wrong offset!");
 
 // Class FortniteGame.FortOutpostItem
 // 0x0020 (0x0140 - 0x0120)
 class UFortOutpostItem final : public UFortCloudSaveItem
 {
 public:
-	struct FFortOutpostCoreInfo                   Outpost_core_info;                                 // 0x0120(0x0020)(Protected, NativeAccessSpecifierProtected)
+	struct FFortOutpostCoreInfo                   outpost_core_info;                                 // 0x0120(0x0020)(Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -30266,7 +30227,7 @@ public:
 };
 static_assert(alignof(UFortOutpostItem) == 0x000008, "Wrong alignment on UFortOutpostItem");
 static_assert(sizeof(UFortOutpostItem) == 0x000140, "Wrong size on UFortOutpostItem");
-static_assert(offsetof(UFortOutpostItem, Outpost_core_info) == 0x000120, "Member 'UFortOutpostItem::Outpost_core_info' has a wrong offset!");
+static_assert(offsetof(UFortOutpostItem, outpost_core_info) == 0x000120, "Member 'UFortOutpostItem::outpost_core_info' has a wrong offset!");
 
 // Class FortniteGame.FortWorldItem
 // 0x01E0 (0x02B0 - 0x00D0)
@@ -31208,7 +31169,7 @@ static_assert(sizeof(UFortKeepItemManager) == 0x000348, "Wrong size on UFortKeep
 
 // Class FortniteGame.FortKismetLibrary
 // 0x0000 (0x0028 - 0x0028)
-class UFortKismetLibrary : public UBlueprintFunctionLibrary
+class UFortKismetLibrary final : public UBlueprintFunctionLibrary
 {
 public:
 	static struct FFortEncounterSettings ApplyEncounterOptionOverridesFromWaveDataToEncounterSettings(const struct FTieredWaveSetData& WaveData, struct FFortEncounterSettings& EncounterSettings);
@@ -32225,8 +32186,8 @@ public:
 	void BatchUpdatePlayers(const TArray<struct FFortBatchUpdatePlayer_Update>& Updates, struct FDedicatedServerUrlContext* Context);
 	void BatchUpdatePlayers_DeployableBase(const TArray<struct FFortBatchUpdatePlayer_Update>& Updates, const TArray<struct FFortBatchUpdatePlayer_DeployableBaseUpdate>& DeployableBaseUpdates, struct FDedicatedServerUrlContext* Context);
 	void BatchUpdatePlayers_Outpost(const TArray<struct FFortBatchUpdatePlayer_Update>& Updates, const class FString& OutpostId, const struct FFortOutpostCoreInfo& OutpostInfo, const struct FFortCloudSaveInfo& CloudSaveInfo, struct FDedicatedServerUrlContext* Context);
-	void DepositPostResources(const TArray<class FString>& ItemsToDepositIds, const TArray<int32>& ItemCountsToDeposit, struct FDedicatedServerUrlContext* Context);
-	void DisintegrateItems(const TArray<class FString>& ItemsToDisintegrateIds, const TArray<int32>& ItemCountsToDisintegrate, struct FDedicatedServerUrlContext* Context);
+	void DepositPostResources(const TArray<class FString>& itemsToDepositIds, const TArray<int32>& itemCountsToDeposit, struct FDedicatedServerUrlContext* Context);
+	void DisintegrateItems(const TArray<class FString>& itemsToDisintegrateIds, const TArray<int32>& itemCountsToDisintegrate, struct FDedicatedServerUrlContext* Context);
 	void FabricateItem(const class FString& TemplateId, struct FDedicatedServerUrlContext* Context);
 	void InitializeTheater(const class FString& TheaterGuid, struct FDedicatedServerUrlContext* Context);
 	void LockProfiles(const class FString& Code, int32 Timeout, struct FDedicatedServerUrlContext* Context);
@@ -33579,7 +33540,6 @@ public:
 public:
 	void Accept();
 	void Decline();
-	void OnActionComplete__DelegateSignature();
 	void SetDialogDescription(const struct FFortDialogDescription& InDialogDescription);
 	void Timeout();
 
@@ -34877,8 +34837,6 @@ public:
 	uint8                                         Pad_38[0x30];                                      // 0x0038(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void OnPrototypingStatusChanged__DelegateSignature();
-
 	EFortPrototypingStatus GetPrototypingStatus() const;
 
 public:

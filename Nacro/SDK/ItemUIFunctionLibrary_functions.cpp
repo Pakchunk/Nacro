@@ -24,9 +24,9 @@ namespace SDK
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   PreviewLevel                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ShowInVaultDetails                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemUIFunctionLibrary_C::Add_Alteration_Widgets(class UVerticalBox* Host_Widget, class UFortItem* Item, int32 PreviewLevel, bool ShowInVaultDetails, class UObject* __WorldContext)
+void UItemUIFunctionLibrary_C::Add_Alteration_Widgets(class UVerticalBox* Host_Widget, class UFortItem* Item, int32 PreviewLevel, bool ShowInVaultDetails, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -39,7 +39,7 @@ void UItemUIFunctionLibrary_C::Add_Alteration_Widgets(class UVerticalBox* Host_W
 	Parms.Item = Item;
 	Parms.PreviewLevel = PreviewLevel;
 	Parms.ShowInVaultDetails = ShowInVaultDetails;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
@@ -48,11 +48,11 @@ void UItemUIFunctionLibrary_C::Add_Alteration_Widgets(class UVerticalBox* Host_W
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.ParseLevelRequiredFromString
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   OutInt                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   outInt                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString& InString, class UObject* __WorldContext, int32* OutInt)
+void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString& inString, class UObject* m_WorldContext, int32* outInt)
 {
 	static class UFunction* Func = nullptr;
 
@@ -61,13 +61,13 @@ void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString&
 
 	Params::ItemUIFunctionLibrary_C_ParseLevelRequiredFromString Parms{};
 
-	Parms.InString = std::move(InString);
-	Parms.__WorldContext = __WorldContext;
+	Parms.inString = std::move(inString);
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (OutInt != nullptr)
-		*OutInt = Parms.OutInt;
+	if (outInt != nullptr)
+		*outInt = Parms.outInt;
 }
 
 
@@ -75,10 +75,10 @@ void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString&
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // EFortItemTier                           Tier                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Numeric_Tier                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(EFortItemTier Tier, class UObject* __WorldContext, int32* Numeric_Tier)
+void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(EFortItemTier Tier, class UObject* m_WorldContext, int32* Numeric_Tier)
 {
 	static class UFunction* Func = nullptr;
 
@@ -88,7 +88,7 @@ void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(EFortItemTier Tier, class
 	Params::ItemUIFunctionLibrary_C_Convert_Tier_To_Integer Parms{};
 
 	Parms.Tier = Tier;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -103,10 +103,10 @@ void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(EFortItemTier Tier, class
 // int32                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Min_Fractional_Digits                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Max_Fractional_Digits                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             Formatted_Value                                        (Parm, OutParm)
 
-void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fractional_Digits, int32 Max_Fractional_Digits, class UObject* __WorldContext, class FText* Formatted_Value)
+void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fractional_Digits, int32 Max_Fractional_Digits, class UObject* m_WorldContext, class FText* Formatted_Value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -118,7 +118,7 @@ void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fra
 	Parms.Value = Value;
 	Parms.Min_Fractional_Digits = Min_Fractional_Digits;
 	Parms.Max_Fractional_Digits = Max_Fractional_Digits;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 

@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Selector Button Selected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Tab_Id                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuRowSelector_C::Selector_Button_Selected__DelegateSignature(int32 Tab_Id)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Selector Button Selected__DelegateSignature");
-
-	Params::OptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature Parms{};
-
-	Parms.Tab_Id = Tab_Id;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.ExecuteUbergraph_OptionsMenuRowSelector
 // (HasDefaults)
 // Parameters:

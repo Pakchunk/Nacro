@@ -51,8 +51,8 @@ public:
 	class UFortItemCategoryIndicator*             SecondaryItemCategoryIndicatorTop;                 // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               SelectedItemDetailsOverlay;                        // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       SupportBonusText;                                  // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortHeroSupportPerkWidgetMinusOverview_C* SupportPerk;                                       // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortHeroSupportPerkWidgetMinusOverview_C* TacticalPerk;                                      // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortHeroSupportPerkWidget_Overview_C*  SupportPerk;                                       // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortHeroSupportPerkWidget_Overview_C*  TacticalPerk;                                      // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCategoryIndicator*             TertiaryItemCategoryIndicatorBottomIcon;           // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCategoryIndicator*             TertiaryItemCategoryIndicatorBottomText;           // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItemCategoryIndicator*             TertiaryItemCategoryIndicatorTop;                  // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -66,7 +66,7 @@ public:
 	class UFortItemDefinition*                    TargetItemDef;                                     // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowFavoriteIndicator;                             // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShowOverflowIndicator;                             // 0x0391(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          IsInGame;                                          // 0x0392(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          isInGame;                                          // 0x0392(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_ItemHeaderWidget(int32 EntryPoint);
@@ -133,7 +133,7 @@ static_assert(offsetof(UItemHeaderWidget_C, bShowBottomCategoryIndicators) == 0x
 static_assert(offsetof(UItemHeaderWidget_C, TargetItemDef) == 0x000388, "Member 'UItemHeaderWidget_C::TargetItemDef' has a wrong offset!");
 static_assert(offsetof(UItemHeaderWidget_C, ShowFavoriteIndicator) == 0x000390, "Member 'UItemHeaderWidget_C::ShowFavoriteIndicator' has a wrong offset!");
 static_assert(offsetof(UItemHeaderWidget_C, ShowOverflowIndicator) == 0x000391, "Member 'UItemHeaderWidget_C::ShowOverflowIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, IsInGame) == 0x000392, "Member 'UItemHeaderWidget_C::IsInGame' has a wrong offset!");
+static_assert(offsetof(UItemHeaderWidget_C, isInGame) == 0x000392, "Member 'UItemHeaderWidget_C::isInGame' has a wrong offset!");
 
 }
 

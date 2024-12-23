@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SurvivorBadgeTypes_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "EnumEventWorldItemDrop_structs.hpp"
+#include "SurvivorBadgeTypes_structs.hpp"
 
 
 namespace SDK
@@ -24,32 +24,32 @@ namespace SDK
 class UMissionBlueprintFunctionLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void RegisterUI_UpdatesWithDamageEvents(class AActor* ActorToRegisterWith, class AFortMissionState* MissionState, class UObject* __WorldContext);
-	static void UnRegisterUI_UpdatesWithDamageEvents(class AActor* ActorToUnRegisterWith, class AFortMissionState* MissionState, class UObject* __WorldContext);
-	static void GetObjectiveBadgeIconBrush(class AFortObjectiveBase* Objective, const struct FGameplayTag& RewardTag, class UObject* __WorldContext, struct FSlateBrush* IconBrush);
-	static void DoesPlayerHaveQuest(class AFortPlayerController* PlayerController, const class UFortQuestItemDefinition* Quest_Item_Reference, class FName Quest_Item_Objective_Backend_Name, class UObject* __WorldContext, bool* QuestValid, class AFortPlayerController** PlayerControllerRef);
-	static void HighlightQuestActor(class AActor* ActorToHighlight, bool HighlightEnabled, class UObject* __WorldContext);
-	static void QuestObjectiveCountAchieved(class AFortPlayerController* PlayerControllerReference, class UFortQuestItemDefinition* Quest_Item_Reference, const struct FDataTableRowHandle& ObjectiveStatHandle, class UObject* __WorldContext, int32* Quest_Count_Achieved, int32* Quest_Count_Required, bool* SuccessfullyFoundCount);
-	static void DoesAnyoneRequireQuest(class UFortQuestItemDefinition* QuestReference, class FName Quest_Backend_Name, class UObject* __WorldContext, bool* SomePlayerNeedsTheQuest);
-	static void ListPlayersWhoNeedQuest(class UFortQuestItemDefinition* Quest_Reference, class FName Quest_Backend_Name, class UObject* __WorldContext, TArray<class AFortPlayerController*>* Player_Controllers_Who_Require_The_Quest, bool* DoesAnyoneRequireTheQuest);
-	static void NPC_DroneStartRescue(class AActor* Actor, class AActor* Instigator, class UObject* __WorldContext);
-	static void NPC_DroneStopRescue(class AActor* Actor, class AActor* Instigator, class UObject* __WorldContext);
-	static void FlashObjectiveUI(class AFortObjectiveBase* Objective_Reference, class UObject* __WorldContext);
-	static void AnyPlayerNearActor(float DistanceToCheck, class AActor* Actor, class UObject* __WorldContext, bool* IsPlayerNearActor, TArray<class AFortPlayerPawn*>* PlayersNearActor);
-	static void DropChance(float DropPercentChance, class UObject* __WorldContext, bool* DropResult);
-	static void GiveQuestUpdateToPlayers(class UFortQuestItemDefinition* Quest_Reference, class FName Quest_Objective_Backend_Name, const struct FDataTableRowHandle& ObjectiveStatEvent, TArray<class AFortPlayerController*>& PlayerControllersForUpdate, class UObject* __WorldContext);
-	static void AnyPawnNearActor(float DistanceToCheck, class AActor* Actor, class UObject* __WorldContext, bool* IsPawnNearActor, TArray<class AFortPawn*>* PawnsNearActor);
-	static void Random_360_VectorInRange(float MinDistance, float MaxDistance, class UObject* __WorldContext, struct FVector* Random_Vector_Result_);
-	static void GetBuildingRecommendation(class FName RowName, class UObject* __WorldContext, int32* BuildingCount, bool* RowFound);
-	static void GrantSurvivorBadge(int32 LootLevelIn, ESurvivorBadgeTypes BadgeType, class UObject* __WorldContext);
-	static void BasicBuildingItemDrop(EnumEventWorldItemDrop Item_Drop_Level, const struct FVector& LootDropLocation, class UObject* __WorldContext);
-	static void SeperatePlayersWhoNeedQuest(class UFortQuestItemDefinition* QuestItemReference, class FName QuestObjectiveBackendName, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayersWhoNeedQuest, TArray<class AFortPlayerController*>* PlayersWhoDoNotNeedQuest);
-	static void HasPlayerCompletedQuest(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* QuestReference, class FName QuestBackendName, class UObject* __WorldContext, class AFortPlayerController** PlayerControllerOut, bool* CompletedQuest);
-	static void DistanceBetweenTwoVectors(const struct FVector& Vector1, const struct FVector& Vector2, class UObject* __WorldContext, float* Distance);
-	static void ApplyDifficultyOffset(class FName RowName, float BaseDifficulty, class UObject* __WorldContext, bool* Success);
-	static void GetCurrentDifficulty(class UObject* __WorldContext, float* Difficulty, bool* Success);
-	static void PointLocationsBetweenTwoVectors(const struct FVector& Vector_1, const struct FVector& Vector_2, int32 HowManyPoints, class UObject* __WorldContext, TArray<struct FVector>* VectorPoints, bool* SuccessfullyFoundPoints);
-	static void GetContributingControllersNearActor(float Distance, class AActor* Actor, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayerControllersNearby, bool* SuccessfullyFoundPlayer);
+	static void RegisterUI_UpdatesWithDamageEvents(class AActor* ActorToRegisterWith, class AFortMissionState* MissionState, class UObject* m_WorldContext);
+	static void UnRegisterUI_UpdatesWithDamageEvents(class AActor* ActorToUnRegisterWith, class AFortMissionState* MissionState, class UObject* m_WorldContext);
+	static void GetObjectiveBadgeIconBrush(class AFortObjectiveBase* Objective, const struct FGameplayTag& RewardTag, class UObject* m_WorldContext, struct FSlateBrush* IconBrush);
+	static void DoesPlayerHaveQuest(class AFortPlayerController* PlayerController, const class UFortQuestItemDefinition* Quest_Item_Reference, class FName Quest_Item_Objective_Backend_Name, class UObject* m_WorldContext, bool* QuestValid, class AFortPlayerController** PlayerControllerRef);
+	static void HighlightQuestActor(class AActor* ActorToHighlight, bool HighlightEnabled, class UObject* m_WorldContext);
+	static void QuestObjectiveCountAchieved(class AFortPlayerController* PlayerControllerReference, class UFortQuestItemDefinition* Quest_Item_Reference, const struct FDataTableRowHandle& ObjectiveStatHandle, class UObject* m_WorldContext, int32* Quest_Count_Achieved, int32* Quest_Count_Required, bool* SuccessfullyFoundCount);
+	static void DoesAnyoneRequireQuest(class UFortQuestItemDefinition* QuestReference, class FName Quest_Backend_Name, class UObject* m_WorldContext, bool* SomePlayerNeedsTheQuest);
+	static void ListPlayersWhoNeedQuest(class UFortQuestItemDefinition* Quest_Reference, class FName Quest_Backend_Name, class UObject* m_WorldContext, TArray<class AFortPlayerController*>* Player_Controllers_Who_Require_The_Quest, bool* DoesAnyoneRequireTheQuest);
+	static void NPC_DroneStartRescue(class AActor* Actor, class AActor* Instigator, class UObject* m_WorldContext);
+	static void NPC_DroneStopRescue(class AActor* Actor, class AActor* Instigator, class UObject* m_WorldContext);
+	static void FlashObjectiveUI(class AFortObjectiveBase* Objective_Reference, class UObject* m_WorldContext);
+	static void AnyPlayerNearActor(float DistanceToCheck, class AActor* Actor, class UObject* m_WorldContext, bool* IsPlayerNearActor, TArray<class AFortPlayerPawn*>* PlayersNearActor);
+	static void DropChance(float DropPercentChance, class UObject* m_WorldContext, bool* DropResult);
+	static void GiveQuestUpdateToPlayers(class UFortQuestItemDefinition* Quest_Reference, class FName Quest_Objective_Backend_Name, const struct FDataTableRowHandle& ObjectiveStatEvent, TArray<class AFortPlayerController*>& PlayerControllersForUpdate, class UObject* m_WorldContext);
+	static void AnyPawnNearActor(float DistanceToCheck, class AActor* Actor, class UObject* m_WorldContext, bool* IsPawnNearActor, TArray<class AFortPawn*>* PawnsNearActor);
+	static void Random_360_VectorInRange(float MinDistance, float MaxDistance, class UObject* m_WorldContext, struct FVector* Random_Vector_Result_);
+	static void GetBuildingRecommendation(class FName RowName, class UObject* m_WorldContext, int32* BuildingCount, bool* RowFound);
+	static void GrantSurvivorBadge(int32 LootLevelIn, ESurvivorBadgeTypes BadgeType, class UObject* m_WorldContext);
+	static void BasicBuildingItemDrop(EnumEventWorldItemDrop Item_Drop_Level, const struct FVector& LootDropLocation, class UObject* m_WorldContext);
+	static void SeperatePlayersWhoNeedQuest(class UFortQuestItemDefinition* QuestItemReference, class FName QuestObjectiveBackendName, class UObject* m_WorldContext, TArray<class AFortPlayerController*>* PlayersWhoNeedQuest, TArray<class AFortPlayerController*>* PlayersWhoDoNotNeedQuest);
+	static void HasPlayerCompletedQuest(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* QuestReference, class FName QuestBackendName, class UObject* m_WorldContext, class AFortPlayerController** PlayerControllerOut, bool* CompletedQuest);
+	static void DistanceBetweenTwoVectors(const struct FVector& Vector1, const struct FVector& Vector2, class UObject* m_WorldContext, float* Distance);
+	static void ApplyDifficultyOffset(class FName RowName, float BaseDifficulty, class UObject* m_WorldContext, bool* Success);
+	static void GetCurrentDifficulty(class UObject* m_WorldContext, float* Difficulty, bool* Success);
+	static void PointLocationsBetweenTwoVectors(const struct FVector& Vector_1, const struct FVector& Vector_2, int32 HowManyPoints, class UObject* m_WorldContext, TArray<struct FVector>* VectorPoints, bool* SuccessfullyFoundPoints);
+	static void GetContributingControllersNearActor(float Distance, class AActor* Actor, class UObject* m_WorldContext, TArray<class AFortPlayerController*>* PlayerControllersNearby, bool* SuccessfullyFoundPlayer);
 
 public:
 	static class UClass* StaticClass()

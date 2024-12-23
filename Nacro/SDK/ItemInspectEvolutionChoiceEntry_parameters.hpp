@@ -14,43 +14,6 @@
 namespace SDK::Params
 {
 
-// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnEvolutionChoiceHovered__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature final
-{
-public:
-	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RecipeIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature) == 0x000010, "Wrong size on ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature, Item) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature::Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature, RecipeIndex) == 0x000008, "Member 'ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature::RecipeIndex' has a wrong offset!");
-
-// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnEvolutionChoiceUnhovered__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceUnhovered__DelegateSignature final
-{
-public:
-	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceUnhovered__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceUnhovered__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceUnhovered__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceUnhovered__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceUnhovered__DelegateSignature, Item) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceUnhovered__DelegateSignature::Item' has a wrong offset!");
-
-// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnEvolutionChoiceSelected__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature final
-{
-public:
-	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RecipeIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature) == 0x000010, "Wrong size on ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature, Item) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature::Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature, RecipeIndex) == 0x000008, "Member 'ItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature::RecipeIndex' has a wrong offset!");
-
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.ExecuteUbergraph_ItemInspectEvolutionChoiceEntry
 // 0x0030 (0x0030 - 0x0000)
 struct ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry final

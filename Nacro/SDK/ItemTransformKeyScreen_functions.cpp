@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.OnKeySelected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortItem*                        Key                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UItemTransformKeyScreen_C::OnKeySelected__DelegateSignature(class UFortItem* Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformKeyScreen_C", "OnKeySelected__DelegateSignature");
-
-	Params::ItemTransformKeyScreen_C_OnKeySelected__DelegateSignature Parms{};
-
-	Parms.Key = Key;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.OnKeyConfirmed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UItemTransformKeyScreen_C::OnKeyConfirmed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformKeyScreen_C", "OnKeyConfirmed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.ExecuteUbergraph_ItemTransformKeyScreen
 // ()
 // Parameters:

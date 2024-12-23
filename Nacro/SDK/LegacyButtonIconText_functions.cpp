@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function LegacyButtonIconText.LegacyButtonIconText_C.On Mouse Hovered Changed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Is_Hovered                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ULegacyButtonIconText_C::On_Mouse_Hovered_Changed__DelegateSignature(bool Is_Hovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LegacyButtonIconText_C", "On Mouse Hovered Changed__DelegateSignature");
-
-	Params::LegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature Parms{};
-
-	Parms.Is_Hovered = Is_Hovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function LegacyButtonIconText.LegacyButtonIconText_C.ExecuteUbergraph_LegacyButtonIconText
 // (HasDefaults)
 // Parameters:

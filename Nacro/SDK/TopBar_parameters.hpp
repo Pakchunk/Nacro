@@ -20,17 +20,6 @@
 namespace SDK::Params
 {
 
-// Function TopBar.TopBar_C.MainMenuStateChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct TopBar_C_MainMenuStateChanged__DelegateSignature final
-{
-public:
-	bool                                          Open;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(TopBar_C_MainMenuStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on TopBar_C_MainMenuStateChanged__DelegateSignature");
-static_assert(sizeof(TopBar_C_MainMenuStateChanged__DelegateSignature) == 0x000001, "Wrong size on TopBar_C_MainMenuStateChanged__DelegateSignature");
-static_assert(offsetof(TopBar_C_MainMenuStateChanged__DelegateSignature, Open) == 0x000000, "Member 'TopBar_C_MainMenuStateChanged__DelegateSignature::Open' has a wrong offset!");
-
 // Function TopBar.TopBar_C.ExecuteUbergraph_TopBar
 // 0x0130 (0x0130 - 0x0000)
 struct TopBar_C_ExecuteUbergraph_TopBar final

@@ -56,7 +56,6 @@ public:
 	bool                                          bIsActive;                                         // 0x0361(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void DetailedStatsClosed__DelegateSignature();
 	void ExecuteUbergraph_SquadStatsWidget(int32 EntryPoint);
 	void HandleSquadSlottingPreviewStateChanged();
 	void Destruct();
@@ -68,7 +67,7 @@ public:
 	void ToggleBetweenStats();
 	void UnbindDelegates();
 	void RefreshScroll();
-	void HighlightStat(int32 InStatIndex);
+	void HighlightStat(int32 inStatIndex);
 	void HandleAttributeChanged();
 	void HandleActivityChanged(bool IsActive);
 	void BindToAttributeChanges();

@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function RotatorSelector.RotatorSelector_C.Selection Changed__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct RotatorSelector_C_Selection_Changed__DelegateSignature final
-{
-public:
-	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(RotatorSelector_C_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on RotatorSelector_C_Selection_Changed__DelegateSignature");
-static_assert(sizeof(RotatorSelector_C_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on RotatorSelector_C_Selection_Changed__DelegateSignature");
-static_assert(offsetof(RotatorSelector_C_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'RotatorSelector_C_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
-
 // Function RotatorSelector.RotatorSelector_C.ExecuteUbergraph_RotatorSelector
 // 0x0130 (0x0130 - 0x0000)
 struct RotatorSelector_C_ExecuteUbergraph_RotatorSelector final
@@ -111,16 +100,16 @@ static_assert(offsetof(RotatorSelector_C_Initialize, Options) == 0x000018, "Memb
 static_assert(offsetof(RotatorSelector_C_Initialize, Hover_Text) == 0x000028, "Member 'RotatorSelector_C_Initialize::Hover_Text' has a wrong offset!");
 static_assert(offsetof(RotatorSelector_C_Initialize, Tab_Tooltip) == 0x000040, "Member 'RotatorSelector_C_Initialize::Tab_Tooltip' has a wrong offset!");
 
-// Function RotatorSelector.RotatorSelector_C.Center On Widget
+// Function RotatorSelector.RotatorSelector_C.Center on Widget
 // 0x0008 (0x0008 - 0x0000)
-struct RotatorSelector_C_Center_On_Widget final
+struct RotatorSelector_C_Center_on_Widget final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_Center_On_Widget) == 0x000008, "Wrong alignment on RotatorSelector_C_Center_On_Widget");
-static_assert(sizeof(RotatorSelector_C_Center_On_Widget) == 0x000008, "Wrong size on RotatorSelector_C_Center_On_Widget");
-static_assert(offsetof(RotatorSelector_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'RotatorSelector_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(alignof(RotatorSelector_C_Center_on_Widget) == 0x000008, "Wrong alignment on RotatorSelector_C_Center_on_Widget");
+static_assert(sizeof(RotatorSelector_C_Center_on_Widget) == 0x000008, "Wrong size on RotatorSelector_C_Center_on_Widget");
+static_assert(offsetof(RotatorSelector_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'RotatorSelector_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Update Options
 // 0x0010 (0x0010 - 0x0000)

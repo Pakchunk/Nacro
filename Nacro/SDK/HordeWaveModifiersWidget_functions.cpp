@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function HordeWaveModifiersWidget.HordeWaveModifiersWidget_C.OnAllModifiersPresented__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UHordeWaveModifiersWidget_C::OnAllModifiersPresented__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HordeWaveModifiersWidget_C", "OnAllModifiersPresented__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function HordeWaveModifiersWidget.HordeWaveModifiersWidget_C.OnModifiersAdded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

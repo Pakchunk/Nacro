@@ -27,19 +27,19 @@ class UHUD_C final : public UFortUIStateWidget_NUI
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
-	class UFortActorCanvas*                       _Actor_Canvas__Indicators;                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         _Horizontal_Box__Top_Right_Content;                // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               _Overlay__Camera_Mode_Content;                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               _Overlay__Cursor_Mode_Content;                     // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               _Overlay__Persistent_HUD_Content;                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               _Size_Box__Bottom_Right_Content;                   // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             _Slot__CursorModeContent;                          // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        _Switcher__CursorModeContent;                      // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortActorCanvas*                       mActor_Canvas__Indicators;                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         mHorizontal_Box__Top_Right_Content;                // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               mOverlay__Camera_Mode_Content;                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               mOverlay__Cursor_Mode_Content;                     // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               mOverlay__Persistent_HUD_Content;                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               mSize_Box__Bottom_Right_Content;                   // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             mSlot__CursorModeContent;                          // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        mSwitcher__CursorModeContent;                      // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        Radar;                                             // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        _Switcher__Mode_Content;                           // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           _Vertical_Box__Bottom_Left_Content;                // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           _Vertical_Box__Top_Left_Content;                   // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           _Vertical_Box__Top_Right_Content;                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        mSwitcher__Mode_Content;                           // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           mVertical_Box__Bottom_Left_Content;                // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           mVertical_Box__Top_Left_Content;                   // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           mVertical_Box__Top_Right_Content;                  // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UActiveModifiersHUD_C*                  ActiveModifiersHUD;                                // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAnnouncement_Layout_C*                 Announcement_Layout;                               // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBottomBarWidget_C*                     BottomBarWidget;                                   // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -160,19 +160,19 @@ public:
 static_assert(alignof(UHUD_C) == 0x000008, "Wrong alignment on UHUD_C");
 static_assert(sizeof(UHUD_C) == 0x000670, "Wrong size on UHUD_C");
 static_assert(offsetof(UHUD_C, UberGraphFrame) == 0x000400, "Member 'UHUD_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Actor_Canvas__Indicators) == 0x000408, "Member 'UHUD_C::_Actor_Canvas__Indicators' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Horizontal_Box__Top_Right_Content) == 0x000410, "Member 'UHUD_C::_Horizontal_Box__Top_Right_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Overlay__Camera_Mode_Content) == 0x000418, "Member 'UHUD_C::_Overlay__Camera_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Overlay__Cursor_Mode_Content) == 0x000420, "Member 'UHUD_C::_Overlay__Cursor_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Overlay__Persistent_HUD_Content) == 0x000428, "Member 'UHUD_C::_Overlay__Persistent_HUD_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Size_Box__Bottom_Right_Content) == 0x000430, "Member 'UHUD_C::_Size_Box__Bottom_Right_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Slot__CursorModeContent) == 0x000438, "Member 'UHUD_C::_Slot__CursorModeContent' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Switcher__CursorModeContent) == 0x000440, "Member 'UHUD_C::_Switcher__CursorModeContent' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mActor_Canvas__Indicators) == 0x000408, "Member 'UHUD_C::mActor_Canvas__Indicators' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mHorizontal_Box__Top_Right_Content) == 0x000410, "Member 'UHUD_C::mHorizontal_Box__Top_Right_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mOverlay__Camera_Mode_Content) == 0x000418, "Member 'UHUD_C::mOverlay__Camera_Mode_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mOverlay__Cursor_Mode_Content) == 0x000420, "Member 'UHUD_C::mOverlay__Cursor_Mode_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mOverlay__Persistent_HUD_Content) == 0x000428, "Member 'UHUD_C::mOverlay__Persistent_HUD_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mSize_Box__Bottom_Right_Content) == 0x000430, "Member 'UHUD_C::mSize_Box__Bottom_Right_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mSlot__CursorModeContent) == 0x000438, "Member 'UHUD_C::mSlot__CursorModeContent' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mSwitcher__CursorModeContent) == 0x000440, "Member 'UHUD_C::mSwitcher__CursorModeContent' has a wrong offset!");
 static_assert(offsetof(UHUD_C, Radar) == 0x000448, "Member 'UHUD_C::Radar' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Switcher__Mode_Content) == 0x000450, "Member 'UHUD_C::_Switcher__Mode_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Vertical_Box__Bottom_Left_Content) == 0x000458, "Member 'UHUD_C::_Vertical_Box__Bottom_Left_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Vertical_Box__Top_Left_Content) == 0x000460, "Member 'UHUD_C::_Vertical_Box__Top_Left_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Vertical_Box__Top_Right_Content) == 0x000468, "Member 'UHUD_C::_Vertical_Box__Top_Right_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mSwitcher__Mode_Content) == 0x000450, "Member 'UHUD_C::mSwitcher__Mode_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mVertical_Box__Bottom_Left_Content) == 0x000458, "Member 'UHUD_C::mVertical_Box__Bottom_Left_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mVertical_Box__Top_Left_Content) == 0x000460, "Member 'UHUD_C::mVertical_Box__Top_Left_Content' has a wrong offset!");
+static_assert(offsetof(UHUD_C, mVertical_Box__Top_Right_Content) == 0x000468, "Member 'UHUD_C::mVertical_Box__Top_Right_Content' has a wrong offset!");
 static_assert(offsetof(UHUD_C, ActiveModifiersHUD) == 0x000470, "Member 'UHUD_C::ActiveModifiersHUD' has a wrong offset!");
 static_assert(offsetof(UHUD_C, Announcement_Layout) == 0x000478, "Member 'UHUD_C::Announcement_Layout' has a wrong offset!");
 static_assert(offsetof(UHUD_C, BottomBarWidget) == 0x000480, "Member 'UHUD_C::BottomBarWidget' has a wrong offset!");

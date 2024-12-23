@@ -6,11 +6,11 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: V3_PlayerCameraModeMelee
+// Package: v3_PlayerCameraModeMelee
 
 #include "Basic.hpp"
 
-#include "V3_PlayerCameraModeBase_classes.hpp"
+#include "v3_PlayerCameraModeBase_classes.hpp"
 
 
 namespace SDK
@@ -18,20 +18,20 @@ namespace SDK
 
 // BlueprintGeneratedClass v3_PlayerCameraModeMelee.v3_PlayerCameraModeMelee_C
 // 0x0000 (0x0110 - 0x0110)
-class UV3_PlayerCameraModeMelee_C final : public UV3_PlayerCameraModeBase_C
+class Uv3_PlayerCameraModeMelee_C final : public Uv3_PlayerCameraModeBase_C
 {
 public:
 	static class UClass* StaticClass()
 	{
 		return StaticBPGeneratedClassImpl<"v3_PlayerCameraModeMelee_C">();
 	}
-	static class UV3_PlayerCameraModeMelee_C* GetDefaultObj()
+	static class Uv3_PlayerCameraModeMelee_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UV3_PlayerCameraModeMelee_C>();
+		return GetDefaultObjImpl<Uv3_PlayerCameraModeMelee_C>();
 	}
 };
-static_assert(alignof(UV3_PlayerCameraModeMelee_C) == 0x000008, "Wrong alignment on UV3_PlayerCameraModeMelee_C");
-static_assert(sizeof(UV3_PlayerCameraModeMelee_C) == 0x000110, "Wrong size on UV3_PlayerCameraModeMelee_C");
+static_assert(alignof(Uv3_PlayerCameraModeMelee_C) == 0x000008, "Wrong alignment on Uv3_PlayerCameraModeMelee_C");
+static_assert(sizeof(Uv3_PlayerCameraModeMelee_C) == 0x000110, "Wrong size on Uv3_PlayerCameraModeMelee_C");
 
 }
 

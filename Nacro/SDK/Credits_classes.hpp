@@ -23,7 +23,7 @@ class UCredits_C final : public UCommonActivatablePanel
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       FadeMaskMinusShow;                                 // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       FadeMask_Show;                                     // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortRichTextBlock*                     FortRichTextBlock_0;                               // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageMask;                                         // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_2;                                        // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -57,7 +57,7 @@ public:
 static_assert(alignof(UCredits_C) == 0x000008, "Wrong alignment on UCredits_C");
 static_assert(sizeof(UCredits_C) == 0x000420, "Wrong size on UCredits_C");
 static_assert(offsetof(UCredits_C, UberGraphFrame) == 0x0003E0, "Member 'UCredits_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCredits_C, FadeMaskMinusShow) == 0x0003E8, "Member 'UCredits_C::FadeMaskMinusShow' has a wrong offset!");
+static_assert(offsetof(UCredits_C, FadeMask_Show) == 0x0003E8, "Member 'UCredits_C::FadeMask_Show' has a wrong offset!");
 static_assert(offsetof(UCredits_C, FortRichTextBlock_0) == 0x0003F0, "Member 'UCredits_C::FortRichTextBlock_0' has a wrong offset!");
 static_assert(offsetof(UCredits_C, ImageMask) == 0x0003F8, "Member 'UCredits_C::ImageMask' has a wrong offset!");
 static_assert(offsetof(UCredits_C, SafeZone_2) == 0x000400, "Member 'UCredits_C::SafeZone_2' has a wrong offset!");

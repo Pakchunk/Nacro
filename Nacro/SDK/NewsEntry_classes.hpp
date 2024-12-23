@@ -30,7 +30,6 @@ public:
 	class FText                                   BodyText;                                          // 0x0278(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void HandleEntrySelected__DelegateSignature(const class FText& BodyText_0);
 	void ExecuteUbergraph_NewsEntry(int32 EntryPoint);
 	void BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void Construct();

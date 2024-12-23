@@ -65,9 +65,6 @@ public:
 	UMulticastDelegateProperty_                   HMDRemovedFromHeadDelegate;                        // 0x0160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
-	void VRNotificationsDelegate__DelegateSignature();
-
-public:
 	static class UClass* StaticClass()
 	{
 		return StaticClassImpl<"VRNotificationsComponent">();

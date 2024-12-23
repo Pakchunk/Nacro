@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.EventDispatcher_Go_Trigger__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UFrontEndRewardWrapperWidget_C::EventDispatcher_Go_Trigger__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewardWrapperWidget_C", "EventDispatcher_Go_Trigger__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.ExecuteUbergraph_FrontEndRewardWrapperWidget
 // ()
 // Parameters:

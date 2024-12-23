@@ -17,40 +17,48 @@
 namespace SDK
 {
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ExecuteUbergraph_PlayerPawn_Athena
-// (HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.InitAthenaFoleyAudio
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint)
+void APlayerPawn_Athena_C::InitAthenaFoleyAudio()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ExecuteUbergraph_PlayerPawn_Athena");
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "InitAthenaFoleyAudio");
 
-	Params::PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Player.BeingRevivedFromDBNO
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void APlayerPawn_Athena_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
 
-void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Player.BeingRevivedFromDBNO");
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
 
-	Params::PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO Parms{};
+	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = std::move(Parameters);
@@ -59,35 +67,185 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGamep
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ContrailCheck
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
 
-void APlayerPawn_Athena_C::ContrailCheck()
+void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ContrailCheck");
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+
+	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 Parms{};
+
+	Parms.EventType = EventType;
+	Parms.Parameters = std::move(Parameters);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceivePossessed
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AController*                      NewController                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::ReceivePossessed(class AController* NewController)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceivePossessed");
+
+	Params::PlayerPawn_Athena_C_ReceivePossessed Parms{};
+
+	Parms.NewController = NewController;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Commando.Shockwave
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+
+void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Commando_Shockwave(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Commando.Shockwave");
+
+	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave Parms{};
+
+	Parms.EventType = EventType;
+	Parms.Parameters = std::move(Parameters);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetMenuScreenClassName
+// (BlueprintCallable, BlueprintEvent)
+
+void APlayerPawn_Athena_C::SetMenuScreenClassName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetMenuScreenClassName");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void APlayerPawn_Athena_C::ReceiveTick(float DeltaSeconds)
+void APlayerPawn_Athena_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveTick");
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveBeginPlay");
 
-	Params::PlayerPawn_Athena_C_ReceiveTick Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DeltaSeconds = DeltaSeconds;
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SelectPawn
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UAnimInstance*                    AnimInst                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::SelectPawn(class UAnimInstance* AnimInst)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SelectPawn");
+
+	Params::PlayerPawn_Athena_C_SelectPawn Parms{};
+
+	Parms.AnimInst = AnimInst;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void APlayerPawn_Athena_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.OutsideSafeZone
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+
+void APlayerPawn_Athena_C::GameplayCue_Athena_OutsideSafeZone(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.OutsideSafeZone");
+
+	Params::PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone Parms{};
+
+	Parms.EventType = EventType;
+	Parms.Parameters = std::move(Parameters);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SafeZoneStatusChanged
+// (Event, Protected, BlueprintEvent)
+
+void APlayerPawn_Athena_C::SafeZoneStatusChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SafeZoneStatusChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Equipping
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+
+void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Equipping");
+
+	Params::PlayerPawn_Athena_C_GameplayCue_Athena_Equipping Parms{};
+
+	Parms.EventType = EventType;
+	Parms.Parameters = std::move(Parameters);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -125,182 +283,54 @@ void APlayerPawn_Athena_C::OnDeathPlayEffects(float Damage, const struct FGamepl
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Equipping
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
-
-void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Equipping");
-
-	Params::PlayerPawn_Athena_C_GameplayCue_Athena_Equipping Parms{};
-
-	Parms.EventType = EventType;
-	Parms.Parameters = std::move(Parameters);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SafeZoneStatusChanged
-// (Event, Protected, BlueprintEvent)
-
-void APlayerPawn_Athena_C::SafeZoneStatusChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SafeZoneStatusChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.OutsideSafeZone
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
-
-void APlayerPawn_Athena_C::GameplayCue_Athena_OutsideSafeZone(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.OutsideSafeZone");
-
-	Params::PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone Parms{};
-
-	Parms.EventType = EventType;
-	Parms.Parameters = std::move(Parameters);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void APlayerPawn_Athena_C::ReceiveDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SelectPawn
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UAnimInstance*                    AnimInst                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APlayerPawn_Athena_C::SelectPawn(class UAnimInstance* AnimInst)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SelectPawn");
-
-	Params::PlayerPawn_Athena_C_SelectPawn Parms{};
-
-	Parms.AnimInst = AnimInst;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APlayerPawn_Athena_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetMenuScreenClassName
-// (BlueprintCallable, BlueprintEvent)
-
-void APlayerPawn_Athena_C::SetMenuScreenClassName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetMenuScreenClassName");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Commando.Shockwave
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
-
-void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Commando_Shockwave(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Commando.Shockwave");
-
-	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave Parms{};
-
-	Parms.EventType = EventType;
-	Parms.Parameters = std::move(Parameters);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceivePossessed
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class AController*                      NewController                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_C::ReceivePossessed(class AController* NewController)
+void APlayerPawn_Athena_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceivePossessed");
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveTick");
 
-	Params::PlayerPawn_Athena_C_ReceivePossessed Parms{};
+	Params::PlayerPawn_Athena_C_ReceiveTick Parms{};
 
-	Parms.NewController = NewController;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ContrailCheck
+// (BlueprintCallable, BlueprintEvent)
+
+void APlayerPawn_Athena_C::ContrailCheck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ContrailCheck");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Player.BeingRevivedFromDBNO
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
 
-void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Player.BeingRevivedFromDBNO");
 
-	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 Parms{};
+	Params::PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = std::move(Parameters);
@@ -309,53 +339,23 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
-// (BlueprintCallable, BlueprintEvent)
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ExecuteUbergraph_PlayerPawn_Athena
+// (HasDefaults)
 // Parameters:
-// EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// int32                                   EntryPoint                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ExecuteUbergraph_PlayerPawn_Athena");
 
-	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 Parms{};
+	Params::PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena Parms{};
 
-	Parms.EventType = EventType;
-	Parms.Parameters = std::move(Parameters);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void APlayerPawn_Athena_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.InitAthenaFoleyAudio
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void APlayerPawn_Athena_C::InitAthenaFoleyAudio()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "InitAthenaFoleyAudio");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

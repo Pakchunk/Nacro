@@ -35,8 +35,6 @@ public:
 	class FText                                   ButtonTextOverride;                                // 0x0280(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void OnClicked__DelegateSignature();
-	void Update_Visibility__DelegateSignature(bool Visibility_0);
 	void ExecuteUbergraph_LeaveButton(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void Destruct();

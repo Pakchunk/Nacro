@@ -28,7 +28,7 @@ public:
 	class UOptionsMenuSlider_C*                   ControllerLookSensitivityX;                        // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOptionsMenuSlider_C*                   ControllerLookSensitivityY;                        // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URotatorSelector_C*                     EquipFirstBuildingPieceWhenSwappingQuickbars;      // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URotatorSelector_C*                     FirstMinusPersonCamera;                            // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URotatorSelector_C*                     First_PersonCamera;                                // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URotatorSelector_C*                     ForceFeedback;                                     // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URotatorSelector_C*                     InvertMouse;                                       // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URotatorSelector_C*                     Language;                                          // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -51,7 +51,7 @@ public:
 	void BndEvt__Region_K2Node_ComponentBoundEvent_105_Selection_Changed__DelegateSignature(int32 Selected_Index);
 	void BndEvt__EquipFirstBuildingPieceWhenSwappingQuickbars_K2Node_ComponentBoundEvent_136_Selection_Changed__DelegateSignature(int32 Selected_Index);
 	void BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121_Selection_Changed__DelegateSignature(int32 Selected_Index);
-	void BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature(int32 Selected_Index);
+	void BndEvt__First_PersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature(int32 Selected_Index);
 	void BndEvt__AutoEquipBetterItems_K2Node_ComponentBoundEvent_93_Selection_Changed__DelegateSignature(int32 Selected_Index);
 	void BndEvt__TapInteract_K2Node_ComponentBoundEvent_81_Selection_Changed__DelegateSignature(int32 Selected_Index);
 	void BndEvt__SprintCancelsReload_K2Node_ComponentBoundEvent_70_Selection_Changed__DelegateSignature(int32 Selected_Index);
@@ -89,7 +89,7 @@ static_assert(offsetof(UTabGameOptionsMain_C, AutoEquipBetterItems) == 0x0002B0,
 static_assert(offsetof(UTabGameOptionsMain_C, ControllerLookSensitivityX) == 0x0002B8, "Member 'UTabGameOptionsMain_C::ControllerLookSensitivityX' has a wrong offset!");
 static_assert(offsetof(UTabGameOptionsMain_C, ControllerLookSensitivityY) == 0x0002C0, "Member 'UTabGameOptionsMain_C::ControllerLookSensitivityY' has a wrong offset!");
 static_assert(offsetof(UTabGameOptionsMain_C, EquipFirstBuildingPieceWhenSwappingQuickbars) == 0x0002C8, "Member 'UTabGameOptionsMain_C::EquipFirstBuildingPieceWhenSwappingQuickbars' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, FirstMinusPersonCamera) == 0x0002D0, "Member 'UTabGameOptionsMain_C::FirstMinusPersonCamera' has a wrong offset!");
+static_assert(offsetof(UTabGameOptionsMain_C, First_PersonCamera) == 0x0002D0, "Member 'UTabGameOptionsMain_C::First_PersonCamera' has a wrong offset!");
 static_assert(offsetof(UTabGameOptionsMain_C, ForceFeedback) == 0x0002D8, "Member 'UTabGameOptionsMain_C::ForceFeedback' has a wrong offset!");
 static_assert(offsetof(UTabGameOptionsMain_C, InvertMouse) == 0x0002E0, "Member 'UTabGameOptionsMain_C::InvertMouse' has a wrong offset!");
 static_assert(offsetof(UTabGameOptionsMain_C, Language) == 0x0002E8, "Member 'UTabGameOptionsMain_C::Language' has a wrong offset!");

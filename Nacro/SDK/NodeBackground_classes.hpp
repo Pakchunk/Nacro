@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SkillTreeGroupColors_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SkillTreeGroups_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "SkillTreeGroupColors_structs.hpp"
+#include "SkillTreeGroups_structs.hpp"
 
 
 namespace SDK

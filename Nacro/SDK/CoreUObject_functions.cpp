@@ -40,7 +40,7 @@ class UObject* UObject::FindObjectFastImpl(const std::string& Name, EClassCastFl
 // Predefined Function
 // Finds a UObject in the global object array by full-name, optionally with ECastFlags to reduce heavy string comparison
 
-class UObject* UObject::FindObjectImpl(const std::string& FullName, EClassCastFlags RequiredType, bool bExact)
+class UObject* UObject::FindObjectImpl(const std::string& FullName, EClassCastFlags RequiredType)
 {
 	for (int i = 0; i < GObjects->Num(); ++i)
 	{
@@ -49,7 +49,7 @@ class UObject* UObject::FindObjectImpl(const std::string& FullName, EClassCastFl
 		if (!Object)
 			continue;
 		
-		if (Object->HasTypeFlag(RequiredType) && (bExact ? Object->GetFullName() == FullName : Object->GetFullName().find(FullName) != std::string::npos))
+		if (Object->HasTypeFlag(RequiredType) && Object->GetFullName() == FullName)
 			return Object;
 	}
 

@@ -26,7 +26,7 @@ public:
 	class UWidgetAnimation*                       Disappear;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       StackBump;                                         // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Appear;                                            // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               _Size_Box__Message_Size;                           // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               mSize_Box__Message_Size;                           // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemStackCounter_C*                    ItemStackCounter;                                  // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Label;                                             // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Base_Delta;                                        // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,7 +59,7 @@ static_assert(offsetof(UScoreBarsScoreMessageItem_C, UberGraphFrame) == 0x000280
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, Disappear) == 0x000288, "Member 'UScoreBarsScoreMessageItem_C::Disappear' has a wrong offset!");
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, StackBump) == 0x000290, "Member 'UScoreBarsScoreMessageItem_C::StackBump' has a wrong offset!");
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, Appear) == 0x000298, "Member 'UScoreBarsScoreMessageItem_C::Appear' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, _Size_Box__Message_Size) == 0x0002A0, "Member 'UScoreBarsScoreMessageItem_C::_Size_Box__Message_Size' has a wrong offset!");
+static_assert(offsetof(UScoreBarsScoreMessageItem_C, mSize_Box__Message_Size) == 0x0002A0, "Member 'UScoreBarsScoreMessageItem_C::mSize_Box__Message_Size' has a wrong offset!");
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, ItemStackCounter) == 0x0002A8, "Member 'UScoreBarsScoreMessageItem_C::ItemStackCounter' has a wrong offset!");
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, Label) == 0x0002B0, "Member 'UScoreBarsScoreMessageItem_C::Label' has a wrong offset!");
 static_assert(offsetof(UScoreBarsScoreMessageItem_C, Base_Delta) == 0x0002B8, "Member 'UScoreBarsScoreMessageItem_C::Base_Delta' has a wrong offset!");

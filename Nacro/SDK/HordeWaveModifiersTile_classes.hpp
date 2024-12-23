@@ -30,7 +30,6 @@ public:
 	UMulticastDelegateProperty_                   OnReadyForNextModifierPresentation;                // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnReadyForNextModifierPresentation__DelegateSignature();
 	void ExecuteUbergraph_HordeWaveModifiersTile(int32 EntryPoint);
 	void SetData(class UObject* InData);
 	void OnAnimReadyForNextModifier();

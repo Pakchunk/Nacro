@@ -29,14 +29,14 @@ static_assert(offsetof(WM_Lights_C_ExecuteUbergraph_WM_Lights, K2Node_CustomEven
 
 // Function WM_Lights.WM_Lights_C.WM-Lightcontrol
 // 0x0001 (0x0001 - 0x0000)
-struct WM_Lights_C_WMMinusLightcontrol final
+struct WM_Lights_C_WM_Lightcontrol final
 {
 public:
 	bool                                          TurnOn;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WM_Lights_C_WMMinusLightcontrol) == 0x000001, "Wrong alignment on WM_Lights_C_WMMinusLightcontrol");
-static_assert(sizeof(WM_Lights_C_WMMinusLightcontrol) == 0x000001, "Wrong size on WM_Lights_C_WMMinusLightcontrol");
-static_assert(offsetof(WM_Lights_C_WMMinusLightcontrol, TurnOn) == 0x000000, "Member 'WM_Lights_C_WMMinusLightcontrol::TurnOn' has a wrong offset!");
+static_assert(alignof(WM_Lights_C_WM_Lightcontrol) == 0x000001, "Wrong alignment on WM_Lights_C_WM_Lightcontrol");
+static_assert(sizeof(WM_Lights_C_WM_Lightcontrol) == 0x000001, "Wrong size on WM_Lights_C_WM_Lightcontrol");
+static_assert(offsetof(WM_Lights_C_WM_Lightcontrol, TurnOn) == 0x000000, "Member 'WM_Lights_C_WM_Lightcontrol::TurnOn' has a wrong offset!");
 
 }
 

@@ -17,32 +17,6 @@
 namespace SDK::Params
 {
 
-// Function Results_TeleportPad.Results_TeleportPad_C.OnAddFriendClicked__DelegateSignature
-// 0x0028 (0x0028 - 0x0000)
-struct Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature final
-{
-public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
-	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature");
-static_assert(offsetof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
-
-// Function Results_TeleportPad.Results_TeleportPad_C.OnUpVoteClicked__DelegateSignature
-// 0x0028 (0x0028 - 0x0000)
-struct Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature final
-{
-public:
-	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
-	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature");
-static_assert(offsetof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_TeleportPad_C_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
-
 // Function Results_TeleportPad.Results_TeleportPad_C.ExecuteUbergraph_Results_TeleportPad
 // 0x0228 (0x0228 - 0x0000)
 struct Results_TeleportPad_C_ExecuteUbergraph_Results_TeleportPad final

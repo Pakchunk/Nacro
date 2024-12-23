@@ -26,7 +26,7 @@ public:
 	class UExponentialHeightFogComponent*         ExponentialHeightFog_Volumetric;                   // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UExponentialHeightFogComponent*         ExponentialHeightFog;                              // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USkyLightComponent*                     SkyLight;                                          // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UDirectionalLightComponent*             DirectionalLightMinusMain;                         // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UDirectionalLightComponent*             DirectionalLight_Main;                             // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        LightsRoot;                                        // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UArrowComponent*                        Arrow;                                             // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -52,7 +52,7 @@ static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, UberGraphFrame) == 0x
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, ExponentialHeightFog_Volumetric) == 0x000390, "Member 'AHexmapLevelSettings_Temperate01_C::ExponentialHeightFog_Volumetric' has a wrong offset!");
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, ExponentialHeightFog) == 0x000398, "Member 'AHexmapLevelSettings_Temperate01_C::ExponentialHeightFog' has a wrong offset!");
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, SkyLight) == 0x0003A0, "Member 'AHexmapLevelSettings_Temperate01_C::SkyLight' has a wrong offset!");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, DirectionalLightMinusMain) == 0x0003A8, "Member 'AHexmapLevelSettings_Temperate01_C::DirectionalLightMinusMain' has a wrong offset!");
+static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, DirectionalLight_Main) == 0x0003A8, "Member 'AHexmapLevelSettings_Temperate01_C::DirectionalLight_Main' has a wrong offset!");
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, LightsRoot) == 0x0003B0, "Member 'AHexmapLevelSettings_Temperate01_C::LightsRoot' has a wrong offset!");
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, Arrow) == 0x0003B8, "Member 'AHexmapLevelSettings_Temperate01_C::Arrow' has a wrong offset!");
 static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, DefaultSceneRoot) == 0x0003C0, "Member 'AHexmapLevelSettings_Temperate01_C::DefaultSceneRoot' has a wrong offset!");

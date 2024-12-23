@@ -776,7 +776,7 @@ static_assert(offsetof(TheaterCamera_Blueprint_C_PanCamera, CallFunc_K2_SetActor
 struct TheaterCamera_Blueprint_C_NewFunction_0 final
 {
 public:
-	class AActor*                                 Self2;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 self2;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x001C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -787,7 +787,7 @@ public:
 };
 static_assert(alignof(TheaterCamera_Blueprint_C_NewFunction_0) == 0x000008, "Wrong alignment on TheaterCamera_Blueprint_C_NewFunction_0");
 static_assert(sizeof(TheaterCamera_Blueprint_C_NewFunction_0) == 0x000050, "Wrong size on TheaterCamera_Blueprint_C_NewFunction_0");
-static_assert(offsetof(TheaterCamera_Blueprint_C_NewFunction_0, Self2) == 0x000000, "Member 'TheaterCamera_Blueprint_C_NewFunction_0::Self2' has a wrong offset!");
+static_assert(offsetof(TheaterCamera_Blueprint_C_NewFunction_0, self2) == 0x000000, "Member 'TheaterCamera_Blueprint_C_NewFunction_0::self2' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_NewFunction_0, ReturnValue) == 0x000008, "Member 'TheaterCamera_Blueprint_C_NewFunction_0::ReturnValue' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_NewFunction_0, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000010, "Member 'TheaterCamera_Blueprint_C_NewFunction_0::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(TheaterCamera_Blueprint_C_NewFunction_0, CallFunc_Subtract_VectorVector_ReturnValue) == 0x00001C, "Member 'TheaterCamera_Blueprint_C_NewFunction_0::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");

@@ -431,43 +431,6 @@ static_assert(sizeof(CommonTabListWidget_HandleTabRemoved) == 0x000010, "Wrong s
 static_assert(offsetof(CommonTabListWidget_HandleTabRemoved, TabNameID) == 0x000000, "Member 'CommonTabListWidget_HandleTabRemoved::TabNameID' has a wrong offset!");
 static_assert(offsetof(CommonTabListWidget_HandleTabRemoved, TabButton) == 0x000008, "Member 'CommonTabListWidget_HandleTabRemoved::TabButton' has a wrong offset!");
 
-// DelegateFunction CommonUI.CommonTabListWidget.OnTabButtonCreated__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct CommonTabListWidget_OnTabButtonCreated__DelegateSignature final
-{
-public:
-	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonTabListWidget_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on CommonTabListWidget_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(CommonTabListWidget_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on CommonTabListWidget_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(CommonTabListWidget_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'CommonTabListWidget_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(CommonTabListWidget_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'CommonTabListWidget_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
-
-// DelegateFunction CommonUI.CommonTabListWidget.OnTabButtonRemoved__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct CommonTabListWidget_OnTabButtonRemoved__DelegateSignature final
-{
-public:
-	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonTabListWidget_OnTabButtonRemoved__DelegateSignature) == 0x000008, "Wrong alignment on CommonTabListWidget_OnTabButtonRemoved__DelegateSignature");
-static_assert(sizeof(CommonTabListWidget_OnTabButtonRemoved__DelegateSignature) == 0x000010, "Wrong size on CommonTabListWidget_OnTabButtonRemoved__DelegateSignature");
-static_assert(offsetof(CommonTabListWidget_OnTabButtonRemoved__DelegateSignature, TabId) == 0x000000, "Member 'CommonTabListWidget_OnTabButtonRemoved__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(CommonTabListWidget_OnTabButtonRemoved__DelegateSignature, TabButton) == 0x000008, "Member 'CommonTabListWidget_OnTabButtonRemoved__DelegateSignature::TabButton' has a wrong offset!");
-
-// DelegateFunction CommonUI.CommonTabListWidget.OnTabSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct CommonTabListWidget_OnTabSelected__DelegateSignature final
-{
-public:
-	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonTabListWidget_OnTabSelected__DelegateSignature) == 0x000004, "Wrong alignment on CommonTabListWidget_OnTabSelected__DelegateSignature");
-static_assert(sizeof(CommonTabListWidget_OnTabSelected__DelegateSignature) == 0x000008, "Wrong size on CommonTabListWidget_OnTabSelected__DelegateSignature");
-static_assert(offsetof(CommonTabListWidget_OnTabSelected__DelegateSignature, TabId) == 0x000000, "Member 'CommonTabListWidget_OnTabSelected__DelegateSignature::TabId' has a wrong offset!");
-
 // Function CommonUI.CommonTabListWidget.RegisterTab
 // 0x0020 (0x0020 - 0x0000)
 struct CommonTabListWidget_RegisterTab final
@@ -647,31 +610,6 @@ static_assert(offsetof(CommonNumericTextBlock_InterpolateToValue, TargetValue) =
 static_assert(offsetof(CommonNumericTextBlock_InterpolateToValue, MaximumInterpolationDuration) == 0x000004, "Member 'CommonNumericTextBlock_InterpolateToValue::MaximumInterpolationDuration' has a wrong offset!");
 static_assert(offsetof(CommonNumericTextBlock_InterpolateToValue, MinimumChangeRate) == 0x000008, "Member 'CommonNumericTextBlock_InterpolateToValue::MinimumChangeRate' has a wrong offset!");
 static_assert(offsetof(CommonNumericTextBlock_InterpolateToValue, OutroOffset) == 0x00000C, "Member 'CommonNumericTextBlock_InterpolateToValue::OutroOffset' has a wrong offset!");
-
-// DelegateFunction CommonUI.CommonNumericTextBlock.OnInterpolationEnded__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature final
-{
-public:
-	class UCommonNumericTextBlock*                NumericTextBlock;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          HadCompleted;                                      // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature) == 0x000008, "Wrong alignment on CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature");
-static_assert(sizeof(CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature) == 0x000010, "Wrong size on CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature");
-static_assert(offsetof(CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature, NumericTextBlock) == 0x000000, "Member 'CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature::NumericTextBlock' has a wrong offset!");
-static_assert(offsetof(CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature, HadCompleted) == 0x000008, "Member 'CommonNumericTextBlock_OnInterpolationEnded__DelegateSignature::HadCompleted' has a wrong offset!");
-
-// DelegateFunction CommonUI.CommonNumericTextBlock.OnOutro__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct CommonNumericTextBlock_OnOutro__DelegateSignature final
-{
-public:
-	class UCommonNumericTextBlock*                NumericTextBlock;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonNumericTextBlock_OnOutro__DelegateSignature) == 0x000008, "Wrong alignment on CommonNumericTextBlock_OnOutro__DelegateSignature");
-static_assert(sizeof(CommonNumericTextBlock_OnOutro__DelegateSignature) == 0x000008, "Wrong size on CommonNumericTextBlock_OnOutro__DelegateSignature");
-static_assert(offsetof(CommonNumericTextBlock_OnOutro__DelegateSignature, NumericTextBlock) == 0x000000, "Member 'CommonNumericTextBlock_OnOutro__DelegateSignature::NumericTextBlock' has a wrong offset!");
 
 // Function CommonUI.CommonNumericTextBlock.SetCurrentValue
 // 0x0004 (0x0004 - 0x0000)
@@ -1727,17 +1665,6 @@ static_assert(alignof(CommonTileView_SetItemWidth) == 0x000004, "Wrong alignment
 static_assert(sizeof(CommonTileView_SetItemWidth) == 0x000004, "Wrong size on CommonTileView_SetItemWidth");
 static_assert(offsetof(CommonTileView_SetItemWidth, NewWidth) == 0x000000, "Member 'CommonTileView_SetItemWidth::NewWidth' has a wrong offset!");
 
-// DelegateFunction CommonUI.CommonActionWidget.OnInputMethodChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct CommonActionWidget_OnInputMethodChanged__DelegateSignature final
-{
-public:
-	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonActionWidget_OnInputMethodChanged__DelegateSignature) == 0x000001, "Wrong alignment on CommonActionWidget_OnInputMethodChanged__DelegateSignature");
-static_assert(sizeof(CommonActionWidget_OnInputMethodChanged__DelegateSignature) == 0x000001, "Wrong size on CommonActionWidget_OnInputMethodChanged__DelegateSignature");
-static_assert(offsetof(CommonActionWidget_OnInputMethodChanged__DelegateSignature, bUsingGamepad) == 0x000000, "Member 'CommonActionWidget_OnInputMethodChanged__DelegateSignature::bUsingGamepad' has a wrong offset!");
-
 // Function CommonUI.CommonActionWidget.SetInputAction
 // 0x0010 (0x0010 - 0x0000)
 struct CommonActionWidget_SetInputAction final
@@ -1969,19 +1896,6 @@ static_assert(alignof(CommonButtonStyle_GetSelectedTextStyle) == 0x000008, "Wron
 static_assert(sizeof(CommonButtonStyle_GetSelectedTextStyle) == 0x000008, "Wrong size on CommonButtonStyle_GetSelectedTextStyle");
 static_assert(offsetof(CommonButtonStyle_GetSelectedTextStyle, ReturnValue) == 0x000000, "Member 'CommonButtonStyle_GetSelectedTextStyle::ReturnValue' has a wrong offset!");
 
-// DelegateFunction CommonUI.CommonCustomNavigation.OnCustomNavigationEvent__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature final
-{
-public:
-	EUINavigation                                 NavigationType;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature) == 0x000001, "Wrong alignment on CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature");
-static_assert(sizeof(CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature) == 0x000002, "Wrong size on CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature");
-static_assert(offsetof(CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature, NavigationType) == 0x000000, "Member 'CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature::NavigationType' has a wrong offset!");
-static_assert(offsetof(CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature, ReturnValue) == 0x000001, "Member 'CommonCustomNavigation_OnCustomNavigationEvent__DelegateSignature::ReturnValue' has a wrong offset!");
-
 // Function CommonUI.CommonInputManager.GetAvailableInputActions
 // 0x0018 (0x0018 - 0x0000)
 struct CommonInputManager_GetAvailableInputActions final
@@ -2119,17 +2033,6 @@ static_assert(sizeof(CommonLoadGuard_BP_GuardAndLoadAsset) == 0x000030, "Wrong s
 static_assert(offsetof(CommonLoadGuard_BP_GuardAndLoadAsset, InLazyAsset) == 0x000000, "Member 'CommonLoadGuard_BP_GuardAndLoadAsset::InLazyAsset' has a wrong offset!");
 static_assert(offsetof(CommonLoadGuard_BP_GuardAndLoadAsset, OnAssetLoaded) == 0x000020, "Member 'CommonLoadGuard_BP_GuardAndLoadAsset::OnAssetLoaded' has a wrong offset!");
 
-// DelegateFunction CommonUI.CommonLoadGuard.OnAssetLoaded__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct CommonLoadGuard_OnAssetLoaded__DelegateSignature final
-{
-public:
-	class UObject*                                Object;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonLoadGuard_OnAssetLoaded__DelegateSignature) == 0x000008, "Wrong alignment on CommonLoadGuard_OnAssetLoaded__DelegateSignature");
-static_assert(sizeof(CommonLoadGuard_OnAssetLoaded__DelegateSignature) == 0x000008, "Wrong size on CommonLoadGuard_OnAssetLoaded__DelegateSignature");
-static_assert(offsetof(CommonLoadGuard_OnAssetLoaded__DelegateSignature, Object) == 0x000000, "Member 'CommonLoadGuard_OnAssetLoaded__DelegateSignature::Object' has a wrong offset!");
-
 // Function CommonUI.CommonLoadGuard.SetIsLoading
 // 0x0001 (0x0001 - 0x0000)
 struct CommonLoadGuard_SetIsLoading final
@@ -2252,28 +2155,6 @@ public:
 static_assert(alignof(CommonTextStyle_GetShadowOffset) == 0x000004, "Wrong alignment on CommonTextStyle_GetShadowOffset");
 static_assert(sizeof(CommonTextStyle_GetShadowOffset) == 0x000008, "Wrong size on CommonTextStyle_GetShadowOffset");
 static_assert(offsetof(CommonTextStyle_GetShadowOffset, OutShadowOffset) == 0x000000, "Member 'CommonTextStyle_GetShadowOffset::OutShadowOffset' has a wrong offset!");
-
-// DelegateFunction CommonUI.CommonUIContext.InputMethodChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct CommonUIContext_InputMethodChangedDelegate__DelegateSignature final
-{
-public:
-	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonUIContext_InputMethodChangedDelegate__DelegateSignature) == 0x000001, "Wrong alignment on CommonUIContext_InputMethodChangedDelegate__DelegateSignature");
-static_assert(sizeof(CommonUIContext_InputMethodChangedDelegate__DelegateSignature) == 0x000001, "Wrong size on CommonUIContext_InputMethodChangedDelegate__DelegateSignature");
-static_assert(offsetof(CommonUIContext_InputMethodChangedDelegate__DelegateSignature, bUsingGamepad) == 0x000000, "Member 'CommonUIContext_InputMethodChangedDelegate__DelegateSignature::bUsingGamepad' has a wrong offset!");
-
-// DelegateFunction CommonUI.CommonUIContext.InputSuspensionChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct CommonUIContext_InputSuspensionChanged__DelegateSignature final
-{
-public:
-	bool                                          bInputSuspended;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(CommonUIContext_InputSuspensionChanged__DelegateSignature) == 0x000001, "Wrong alignment on CommonUIContext_InputSuspensionChanged__DelegateSignature");
-static_assert(sizeof(CommonUIContext_InputSuspensionChanged__DelegateSignature) == 0x000001, "Wrong size on CommonUIContext_InputSuspensionChanged__DelegateSignature");
-static_assert(offsetof(CommonUIContext_InputSuspensionChanged__DelegateSignature, bInputSuspended) == 0x000000, "Member 'CommonUIContext_InputSuspensionChanged__DelegateSignature::bInputSuspended' has a wrong offset!");
 
 // Function CommonUI.CommonUIContext.SetGamepadInputType
 // 0x0001 (0x0001 - 0x0000)

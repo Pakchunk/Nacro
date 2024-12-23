@@ -17,30 +17,6 @@
 namespace SDK::Params
 {
 
-// Function OptionsMenuInput.OptionsMenuInput_C.Input Clicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct OptionsMenuInput_C_Input_Clicked__DelegateSignature final
-{
-public:
-	int32                                         Number_in_List_0;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Is_Primary_Button;                                 // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(OptionsMenuInput_C_Input_Clicked__DelegateSignature) == 0x000004, "Wrong alignment on OptionsMenuInput_C_Input_Clicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuInput_C_Input_Clicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuInput_C_Input_Clicked__DelegateSignature");
-static_assert(offsetof(OptionsMenuInput_C_Input_Clicked__DelegateSignature, Number_in_List_0) == 0x000000, "Member 'OptionsMenuInput_C_Input_Clicked__DelegateSignature::Number_in_List_0' has a wrong offset!");
-static_assert(offsetof(OptionsMenuInput_C_Input_Clicked__DelegateSignature, Is_Primary_Button) == 0x000004, "Member 'OptionsMenuInput_C_Input_Clicked__DelegateSignature::Is_Primary_Button' has a wrong offset!");
-
-// Function OptionsMenuInput.OptionsMenuInput_C.UnbindClicked__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct OptionsMenuInput_C_UnbindClicked__DelegateSignature final
-{
-public:
-	int32                                         Number_in_List_0;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(OptionsMenuInput_C_UnbindClicked__DelegateSignature) == 0x000004, "Wrong alignment on OptionsMenuInput_C_UnbindClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuInput_C_UnbindClicked__DelegateSignature) == 0x000004, "Wrong size on OptionsMenuInput_C_UnbindClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenuInput_C_UnbindClicked__DelegateSignature, Number_in_List_0) == 0x000000, "Member 'OptionsMenuInput_C_UnbindClicked__DelegateSignature::Number_in_List_0' has a wrong offset!");
-
 // Function OptionsMenuInput.OptionsMenuInput_C.ExecuteUbergraph_OptionsMenuInput
 // 0x01F0 (0x01F0 - 0x0000)
 struct OptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput final
@@ -206,16 +182,16 @@ static_assert(alignof(OptionsMenuInput_C_RegisterOnClicked) == 0x000008, "Wrong 
 static_assert(sizeof(OptionsMenuInput_C_RegisterOnClicked) == 0x000010, "Wrong size on OptionsMenuInput_C_RegisterOnClicked");
 static_assert(offsetof(OptionsMenuInput_C_RegisterOnClicked, Callback) == 0x000000, "Member 'OptionsMenuInput_C_RegisterOnClicked::Callback' has a wrong offset!");
 
-// Function OptionsMenuInput.OptionsMenuInput_C.Center On Widget
+// Function OptionsMenuInput.OptionsMenuInput_C.Center on Widget
 // 0x0008 (0x0008 - 0x0000)
-struct OptionsMenuInput_C_Center_On_Widget final
+struct OptionsMenuInput_C_Center_on_Widget final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuInput_C_Center_On_Widget) == 0x000008, "Wrong alignment on OptionsMenuInput_C_Center_On_Widget");
-static_assert(sizeof(OptionsMenuInput_C_Center_On_Widget) == 0x000008, "Wrong size on OptionsMenuInput_C_Center_On_Widget");
-static_assert(offsetof(OptionsMenuInput_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuInput_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(alignof(OptionsMenuInput_C_Center_on_Widget) == 0x000008, "Wrong alignment on OptionsMenuInput_C_Center_on_Widget");
+static_assert(sizeof(OptionsMenuInput_C_Center_on_Widget) == 0x000008, "Wrong size on OptionsMenuInput_C_Center_on_Widget");
+static_assert(offsetof(OptionsMenuInput_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuInput_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuInput.OptionsMenuInput_C.Change Key
 // 0x0020 (0x0020 - 0x0000)

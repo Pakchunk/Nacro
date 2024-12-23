@@ -24,8 +24,8 @@ class UWeaponTooltipDPSWidget_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
-	class UTextBlock*                             _Text__Label;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             _Text__Value;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             mText__Label;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             mText__Value;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FFortDisplayAttribute                  Data;                                              // 0x0248(0x0070)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
@@ -45,8 +45,8 @@ public:
 static_assert(alignof(UWeaponTooltipDPSWidget_C) == 0x000008, "Wrong alignment on UWeaponTooltipDPSWidget_C");
 static_assert(sizeof(UWeaponTooltipDPSWidget_C) == 0x0002B8, "Wrong size on UWeaponTooltipDPSWidget_C");
 static_assert(offsetof(UWeaponTooltipDPSWidget_C, UberGraphFrame) == 0x000230, "Member 'UWeaponTooltipDPSWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWeaponTooltipDPSWidget_C, _Text__Label) == 0x000238, "Member 'UWeaponTooltipDPSWidget_C::_Text__Label' has a wrong offset!");
-static_assert(offsetof(UWeaponTooltipDPSWidget_C, _Text__Value) == 0x000240, "Member 'UWeaponTooltipDPSWidget_C::_Text__Value' has a wrong offset!");
+static_assert(offsetof(UWeaponTooltipDPSWidget_C, mText__Label) == 0x000238, "Member 'UWeaponTooltipDPSWidget_C::mText__Label' has a wrong offset!");
+static_assert(offsetof(UWeaponTooltipDPSWidget_C, mText__Value) == 0x000240, "Member 'UWeaponTooltipDPSWidget_C::mText__Value' has a wrong offset!");
 static_assert(offsetof(UWeaponTooltipDPSWidget_C, Data) == 0x000248, "Member 'UWeaponTooltipDPSWidget_C::Data' has a wrong offset!");
 
 }

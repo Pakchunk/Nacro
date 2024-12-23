@@ -43,7 +43,6 @@ public:
 	UMulticastDelegateProperty_                   On_Mouse_Hovered_Changed;                          // 0x0960(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void On_Mouse_Hovered_Changed__DelegateSignature(bool Is_Hovered);
 	void ExecuteUbergraph_LegacyButtonIconText(int32 EntryPoint);
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);

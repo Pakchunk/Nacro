@@ -12,9 +12,9 @@
 
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FortniteUI_classes.hpp"
 #include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "FortniteUI_classes.hpp"
 
 
 namespace SDK

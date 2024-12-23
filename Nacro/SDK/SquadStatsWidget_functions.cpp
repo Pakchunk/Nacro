@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function SquadStatsWidget.SquadStatsWidget_C.DetailedStatsClosed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void USquadStatsWidget_C::DetailedStatsClosed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadStatsWidget_C", "DetailedStatsClosed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SquadStatsWidget.SquadStatsWidget_C.ExecuteUbergraph_SquadStatsWidget
 // ()
 // Parameters:
@@ -206,9 +192,9 @@ void USquadStatsWidget_C::RefreshScroll()
 // Function SquadStatsWidget.SquadStatsWidget_C.HighlightStat
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   InStatIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   inStatIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USquadStatsWidget_C::HighlightStat(int32 InStatIndex)
+void USquadStatsWidget_C::HighlightStat(int32 inStatIndex)
 {
 	static class UFunction* Func = nullptr;
 
@@ -217,7 +203,7 @@ void USquadStatsWidget_C::HighlightStat(int32 InStatIndex)
 
 	Params::SquadStatsWidget_C_HighlightStat Parms{};
 
-	Parms.InStatIndex = InStatIndex;
+	Parms.inStatIndex = inStatIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

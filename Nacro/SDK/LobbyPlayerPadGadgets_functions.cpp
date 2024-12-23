@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnGadgetsMouseEntered__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void ULobbyPlayerPadGadgets_C::OnGadgetsMouseEntered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnGadgetsMouseEntered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnGadgetsMouseLeft__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void ULobbyPlayerPadGadgets_C::OnGadgetsMouseLeft__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnGadgetsMouseLeft__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.ExecuteUbergraph_LobbyPlayerPadGadgets
 // (HasDefaults)
 // Parameters:

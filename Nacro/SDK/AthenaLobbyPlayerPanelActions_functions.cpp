@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.OnGadgetsClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UAthenaLobbyPlayerPanelActions_C::OnGadgetsClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyPlayerPanelActions_C", "OnGadgetsClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.ExecuteUbergraph_AthenaLobbyPlayerPanelActions
 // (HasDefaults)
 // Parameters:
@@ -203,9 +189,9 @@ void UAthenaLobbyPlayerPanelActions_C::IsLocalPlayer(bool* bIsLocalPlayer)
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsMissionLocalPlayersOutpost
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    IsLocalPlayersOutpost                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    isLocalPlayersOutpost                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaLobbyPlayerPanelActions_C::IsMissionLocalPlayersOutpost(bool* IsLocalPlayersOutpost)
+void UAthenaLobbyPlayerPanelActions_C::IsMissionLocalPlayersOutpost(bool* isLocalPlayersOutpost)
 {
 	static class UFunction* Func = nullptr;
 
@@ -216,8 +202,8 @@ void UAthenaLobbyPlayerPanelActions_C::IsMissionLocalPlayersOutpost(bool* IsLoca
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (IsLocalPlayersOutpost != nullptr)
-		*IsLocalPlayersOutpost = Parms.IsLocalPlayersOutpost;
+	if (isLocalPlayersOutpost != nullptr)
+		*isLocalPlayersOutpost = Parms.isLocalPlayersOutpost;
 }
 
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ItemDisplayStyle_structs.hpp"
 #include "UMG_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteUI_classes.hpp"
 
 
@@ -37,7 +37,6 @@ public:
 	bool                                          ShowText;                                          // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
-	void EventDispatcher_Go_Trigger__DelegateSignature();
 	void ExecuteUbergraph_FrontEndRewardWrapperWidget(int32 EntryPoint);
 	void Go_Trigger();
 	void Construct();

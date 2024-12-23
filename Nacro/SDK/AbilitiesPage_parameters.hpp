@@ -339,12 +339,12 @@ static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_IsValid_
 struct AbilitiesPage_C_UpdateAbilityMovie final
 {
 public:
-	class UFortGadgetItemDefinition*              InGadgetItemDef;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGadgetItemDefinition*              inGadgetItemDef;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(AbilitiesPage_C_UpdateAbilityMovie) == 0x000008, "Wrong alignment on AbilitiesPage_C_UpdateAbilityMovie");
 static_assert(sizeof(AbilitiesPage_C_UpdateAbilityMovie) == 0x000010, "Wrong size on AbilitiesPage_C_UpdateAbilityMovie");
-static_assert(offsetof(AbilitiesPage_C_UpdateAbilityMovie, InGadgetItemDef) == 0x000000, "Member 'AbilitiesPage_C_UpdateAbilityMovie::InGadgetItemDef' has a wrong offset!");
+static_assert(offsetof(AbilitiesPage_C_UpdateAbilityMovie, inGadgetItemDef) == 0x000000, "Member 'AbilitiesPage_C_UpdateAbilityMovie::inGadgetItemDef' has a wrong offset!");
 static_assert(offsetof(AbilitiesPage_C_UpdateAbilityMovie, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'AbilitiesPage_C_UpdateAbilityMovie::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.HandleInventory

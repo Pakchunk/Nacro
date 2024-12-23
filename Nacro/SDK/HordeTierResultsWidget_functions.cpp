@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function HordeTierResultsWidget.HordeTierResultsWidget_C.OnTierResultsWidgetComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UHordeTierResultsWidget_C::OnTierResultsWidgetComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HordeTierResultsWidget_C", "OnTierResultsWidgetComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.InitializeMovie
 // (Protected, BlueprintCallable, BlueprintEvent)
 

@@ -66,9 +66,6 @@ public:
 	bool                                          IsPendingSafePop;                                  // 0x06B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnComplete__DelegateSignature();
-	void OnRewardsClaimed__DelegateSignature(class UFrontEndRewards_Widget_C* RewardsWidget);
-	void OnRewardsClaimError__DelegateSignature(class UFrontEndRewards_Widget_C* RewardsWidget);
 	void ExecuteUbergraph_FrontEndRewards_Widget(int32 EntryPoint);
 	void OnMatchmakingOrLobbyStarted();
 	void Destruct();

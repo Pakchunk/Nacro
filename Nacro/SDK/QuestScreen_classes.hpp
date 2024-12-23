@@ -31,18 +31,18 @@ public:
 	class UCommonTreeView*                        QuestsTreeView;                                    // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_2;                                        // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortQuestItem*                         ActiveQuestItem;                                   // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowNamePlay;                                       // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowNameAbandon;                                    // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowNameCollect;                                    // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowNameReplayIntro;                                // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowNameReplayOutro;                                // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowNamePinQuest;                                   // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RowNameStopConversation;                           // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   rowNamePlay;                                       // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   rowNameAbandon;                                    // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   rowNameCollect;                                    // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   rowNameReplayIntro;                                // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   rowNameReplayOutro;                                // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   rowNamePinQuest;                                   // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   rowNameStopConversation;                           // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          PreviousEntry;                                     // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFrontEnd_;                                       // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          isFrontEnd_;                                       // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_459[0x7];                                      // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   CloseJournal;                                      // 0x0460(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class FName                                   RowNameUnpinQuest;                                 // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   rowNameUnpinQuest;                                 // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UJournalQuestDetails_C*                 QuestDetailsWidgetReference;                       // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UJournalQuestRewardDetails_C*           RewardDetailsWidgetReference;                      // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestItem*                         InitialQuestToSelect;                              // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,7 +51,6 @@ public:
 	bool                                          bDisableClaimRewardButton;                         // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void CloseJournal__DelegateSignature();
 	void ExecuteUbergraph_QuestScreen(int32 EntryPoint);
 	void OnItemSelected(class UObject* Item, bool bIsSelected);
 	void Construct();
@@ -70,7 +69,7 @@ public:
 	TArray<class UObject*> OnGetChildrenForCategory(class UObject* Item);
 	void HandleBack(bool* PassThrough);
 	void PlayQuest(bool* PassThrough);
-	void PopulateDetailWidgets();
+	void populateDetailWidgets();
 	void SetupInputHandlers();
 	void ReplayIntroAudio(bool* PassThrough);
 	void AbandonQuest(bool* PassThrough);
@@ -110,17 +109,17 @@ static_assert(offsetof(UQuestScreen_C, QuestDetailsScrollbox) == 0x0003F8, "Memb
 static_assert(offsetof(UQuestScreen_C, QuestsTreeView) == 0x000400, "Member 'UQuestScreen_C::QuestsTreeView' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, SafeZone_2) == 0x000408, "Member 'UQuestScreen_C::SafeZone_2' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, ActiveQuestItem) == 0x000410, "Member 'UQuestScreen_C::ActiveQuestItem' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RowNamePlay) == 0x000418, "Member 'UQuestScreen_C::RowNamePlay' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RowNameAbandon) == 0x000420, "Member 'UQuestScreen_C::RowNameAbandon' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RowNameCollect) == 0x000428, "Member 'UQuestScreen_C::RowNameCollect' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RowNameReplayIntro) == 0x000430, "Member 'UQuestScreen_C::RowNameReplayIntro' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RowNameReplayOutro) == 0x000438, "Member 'UQuestScreen_C::RowNameReplayOutro' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RowNamePinQuest) == 0x000440, "Member 'UQuestScreen_C::RowNamePinQuest' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RowNameStopConversation) == 0x000448, "Member 'UQuestScreen_C::RowNameStopConversation' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, rowNamePlay) == 0x000418, "Member 'UQuestScreen_C::rowNamePlay' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, rowNameAbandon) == 0x000420, "Member 'UQuestScreen_C::rowNameAbandon' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, rowNameCollect) == 0x000428, "Member 'UQuestScreen_C::rowNameCollect' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, rowNameReplayIntro) == 0x000430, "Member 'UQuestScreen_C::rowNameReplayIntro' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, rowNameReplayOutro) == 0x000438, "Member 'UQuestScreen_C::rowNameReplayOutro' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, rowNamePinQuest) == 0x000440, "Member 'UQuestScreen_C::rowNamePinQuest' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, rowNameStopConversation) == 0x000448, "Member 'UQuestScreen_C::rowNameStopConversation' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, PreviousEntry) == 0x000450, "Member 'UQuestScreen_C::PreviousEntry' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, IsFrontEnd_) == 0x000458, "Member 'UQuestScreen_C::IsFrontEnd_' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, isFrontEnd_) == 0x000458, "Member 'UQuestScreen_C::isFrontEnd_' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, CloseJournal) == 0x000460, "Member 'UQuestScreen_C::CloseJournal' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RowNameUnpinQuest) == 0x000470, "Member 'UQuestScreen_C::RowNameUnpinQuest' has a wrong offset!");
+static_assert(offsetof(UQuestScreen_C, rowNameUnpinQuest) == 0x000470, "Member 'UQuestScreen_C::rowNameUnpinQuest' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, QuestDetailsWidgetReference) == 0x000478, "Member 'UQuestScreen_C::QuestDetailsWidgetReference' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, RewardDetailsWidgetReference) == 0x000480, "Member 'UQuestScreen_C::RewardDetailsWidgetReference' has a wrong offset!");
 static_assert(offsetof(UQuestScreen_C, InitialQuestToSelect) == 0x000488, "Member 'UQuestScreen_C::InitialQuestToSelect' has a wrong offset!");

@@ -33,8 +33,6 @@ public:
 	EFortItemCardSize                             Slot_Size;                                         // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void OnSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex);
-	void OnSquadSlotOpened__DelegateSignature();
 	void ExecuteUbergraph_BP_ExpeditionSquadSlotsView(int32 EntryPoint);
 	void HandleSquadSlotOpened();
 	void PreConstruct(bool IsDesignTime);

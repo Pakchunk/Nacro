@@ -34,7 +34,6 @@ public:
 	TArray<struct FVector>                        LocationsToSpawnTo;                                // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
-	void OnBluGloQueryFinished__DelegateSignature(class AActor* ActorToSpawnFrom_0, const struct FVector& LocationToSpawnFromIfActorInvalid, EEnvQueryStatus QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int32 NumBluGloToSpawn_0);
 	void ExecuteUbergraph_BluGloRequestHandler(int32 EntryPoint);
 	void InitializeBluGloRequestHandler(int32 NumBluGloToSpawn_0, class AActor* ActorToSpawnFrom_0, const struct FVector& LocationToSpawnFromIfActorInvalid);
 	void EQSQueryFinished(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, EEnvQueryStatus QueryStatus);

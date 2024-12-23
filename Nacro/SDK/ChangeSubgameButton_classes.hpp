@@ -32,7 +32,6 @@ public:
 	EFortBrushSize                                BrushSize;                                         // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnClicked__DelegateSignature();
 	void ExecuteUbergraph_ChangeSubgameButton(int32 EntryPoint);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void UpdateButtonState(bool bVisible);

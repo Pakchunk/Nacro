@@ -48,10 +48,6 @@ public:
 	class UFortItem*                              EvolutionItemSelected;                             // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnEvolutionConfirm__DelegateSignature();
-	void OnEvolutionOptionHovered__DelegateSignature(class UFortItem* Item_0);
-	void OnEvolutionOptionUnhovered__DelegateSignature(class UFortItem* Item_0);
-	void OnEvolutionOptionSelected__DelegateSignature(class UFortItem* Item_0, int32 RecipeIndex);
 	void ExecuteUbergraph_ItemInspectEvolutionConfirmation(int32 EntryPoint);
 	void BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void SetItemToRepresent(class UFortItem* Item_0);

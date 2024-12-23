@@ -31,7 +31,6 @@ public:
 	class UOutpostScreenStormShieldPermissions_C* PermissionsWidgetReference;                        // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CloseOutpostScreen__DelegateSignature();
 	void ExecuteUbergraph_OutpostScreenStormShield(int32 EntryPoint);
 	void BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
 	void BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature(class FName TabId);

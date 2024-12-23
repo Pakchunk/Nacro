@@ -232,9 +232,6 @@ public:
 	void HandleTabButtonSelected(class UCommonButton* SelectedTabButton, int32 ButtonIndex);
 	void HandleTabCreated(class FName TabNameID, class UCommonButton* TabButton);
 	void HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton);
-	void OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
-	void OnTabButtonRemoved__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
-	void OnTabSelected__DelegateSignature(class FName TabId);
 	bool RegisterTab(class FName TabNameID, TSubclassOf<class UCommonButton> ButtonWidgetType, class UWidget* ContentWidget);
 	void RemoveAllTabs();
 	bool RemoveTab(class FName TabNameID);
@@ -319,8 +316,6 @@ public:
 
 public:
 	void InterpolateToValue(const float TargetValue, float MaximumInterpolationDuration, float MinimumChangeRate, float OutroOffset);
-	void OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, const bool HadCompleted);
-	void OnOutro__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock);
 	void SetCurrentValue(const float NewValue);
 
 	float GetTargetValue() const;
@@ -827,7 +822,6 @@ public:
 	uint8                                         Pad_268[0xD8];                                     // 0x0268(0x00D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void OnInputMethodChanged__DelegateSignature(bool bUsingGamepad);
 	void SetInputAction(const struct FDataTableRowHandle& InputActionRow);
 
 	class FText GetDisplayText() const;
@@ -1063,9 +1057,6 @@ public:
 	TDelegate<void(EUINavigation NavigationType)> OnNavigationEvent;                                 // 0x0290(0x0010)(Edit, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
-	bool OnCustomNavigationEvent__DelegateSignature(EUINavigation NavigationType);
-
-public:
 	static class UClass* StaticClass()
 	{
 		return StaticClassImpl<"CommonCustomNavigation">();
@@ -1159,7 +1150,6 @@ public:
 
 public:
 	void BP_GuardAndLoadAsset(const TSoftObjectPtr<class UObject>& InLazyAsset, const TDelegate<void(class UObject* Object)>& OnAssetLoaded);
-	void OnAssetLoaded__DelegateSignature(class UObject* Object);
 	void SetIsLoading(bool bInIsLoading);
 	void SetLoadingText(const class FText& InLoadingText);
 
@@ -1313,8 +1303,6 @@ public:
 	uint8                                         Pad_DB[0x5];                                       // 0x00DB(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void InputMethodChangedDelegate__DelegateSignature(bool bUsingGamepad);
-	void InputSuspensionChanged__DelegateSignature(bool bInputSuspended);
 	void SetGamepadInputType(ECommonInputType InGamepadInputType);
 
 	ECommonInputType GetCurrentInputType() const;

@@ -44,8 +44,6 @@ public:
 	int32                                         UpgradeCost;                                       // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnUpgradeConfirm__DelegateSignature();
-	void OnUpgradeCancel__DelegateSignature();
 	void ExecuteUbergraph_ItemInspectUpgradeConfirmation(int32 EntryPoint);
 	void BndEvt__UpgradeCancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

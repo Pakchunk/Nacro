@@ -24,7 +24,7 @@ public:
 	class UImage*                                 ImageModifier;                                     // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AssignIcon(const struct FSlateBrush& InIconSlateBrush);
+	void AssignIcon(const struct FSlateBrush& inIconSlateBrush);
 
 public:
 	static class UClass* StaticClass()

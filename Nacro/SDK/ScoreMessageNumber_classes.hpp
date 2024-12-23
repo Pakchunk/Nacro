@@ -31,7 +31,6 @@ public:
 	EStatCategory                                 ScoreCategory;                                     // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void OnScoreValueSet__DelegateSignature(EStatCategory ChangedScoreCategory);
 	void ExecuteUbergraph_ScoreMessageNumber(int32 EntryPoint);
 	void Construct();
 	void UpdateScoreText();

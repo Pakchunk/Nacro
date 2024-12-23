@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function FortTwitchLogin.FortTwitchLogin_C.OnRequestToolTipChange__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct FortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature final
-{
-public:
-	class FText                                   NewTooltipText;                                    // 0x0000(0x0018)(Parm)
-};
-static_assert(alignof(FortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature) == 0x000008, "Wrong alignment on FortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature");
-static_assert(sizeof(FortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature) == 0x000018, "Wrong size on FortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature");
-static_assert(offsetof(FortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature, NewTooltipText) == 0x000000, "Member 'FortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature::NewTooltipText' has a wrong offset!");
-
 // Function FortTwitchLogin.FortTwitchLogin_C.ExecuteUbergraph_FortTwitchLogin
 // 0x0190 (0x0190 - 0x0000)
 struct FortTwitchLogin_C_ExecuteUbergraph_FortTwitchLogin final

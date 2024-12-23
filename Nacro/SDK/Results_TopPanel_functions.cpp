@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Results_TopPanel.Results_TopPanel_C.IntroComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_TopPanel_C::IntroComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_TopPanel_C", "IntroComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_TopPanel.Results_TopPanel_C.ExecuteUbergraph_Results_TopPanel
 // ()
 // Parameters:

@@ -57,14 +57,12 @@ public:
 	uint8                                         Pad_511[0x7];                                      // 0x0511(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   CloseOutpostScreen;                                // 0x0518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UOutpostScreenStormShield_C*            ParentReference;                                   // 0x0528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShouldUpdateButtons_;                              // 0x0530(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          shouldUpdateButtons_;                              // 0x0530(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_531[0x7];                                      // 0x0531(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OutpostIsDefined;                                  // 0x0538(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          ReadyToExpand_;                                    // 0x0548(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void CloseOutpostScreen__DelegateSignature();
-	void OutpostIsDefined__DelegateSignature();
 	void ExecuteUbergraph_OutpostScreenStormShieldContent(int32 EntryPoint);
 	void BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_243_CommonSelectedStateChanged__DelegateSignature(class UCommonButton* Button, bool Selected);
 	void OutpostIsDefined_Event();
@@ -75,7 +73,7 @@ public:
 	float GetPercent_1();
 	float GetPercent_2();
 	void ResrouceProgress_Wood(int32 NewParam, int32 NewParam1);
-	void IsPlayerAlone(bool* IsAlone);
+	void isPlayerAlone(bool* isAlone);
 	void Update_Upgrade_ButtonEnabled();
 	bool IsOwningPlayerOutpostOwner();
 	class UWidget* Get_LeaveOutpost_Button_ToolTipWidget();
@@ -85,11 +83,11 @@ public:
 	void SetExpandShieldText(const class FText& NewExpandText);
 	void UpdateGetHelpButton();
 	class UWidget* Get_GetHelpButton_ToolTipWidget_0();
-	void SetButtonState(bool Enabled_);
+	void SetButtonState(bool enabled_);
 	void AddInputHandlers();
 	void HandleBack(bool* PassThrough);
 	void CenterActiveButton();
-	void EnablePowerBarChunk(class UImage* InImage);
+	void EnablePowerBarChunk(class UImage* inImage);
 
 public:
 	static class UClass* StaticClass()
@@ -135,7 +133,7 @@ static_assert(offsetof(UOutpostScreenStormShieldContent_C, InstallShieldText) ==
 static_assert(offsetof(UOutpostScreenStormShieldContent_C, GetHelp) == 0x000510, "Member 'UOutpostScreenStormShieldContent_C::GetHelp' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenStormShieldContent_C, CloseOutpostScreen) == 0x000518, "Member 'UOutpostScreenStormShieldContent_C::CloseOutpostScreen' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenStormShieldContent_C, ParentReference) == 0x000528, "Member 'UOutpostScreenStormShieldContent_C::ParentReference' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, ShouldUpdateButtons_) == 0x000530, "Member 'UOutpostScreenStormShieldContent_C::ShouldUpdateButtons_' has a wrong offset!");
+static_assert(offsetof(UOutpostScreenStormShieldContent_C, shouldUpdateButtons_) == 0x000530, "Member 'UOutpostScreenStormShieldContent_C::shouldUpdateButtons_' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenStormShieldContent_C, OutpostIsDefined) == 0x000538, "Member 'UOutpostScreenStormShieldContent_C::OutpostIsDefined' has a wrong offset!");
 static_assert(offsetof(UOutpostScreenStormShieldContent_C, ReadyToExpand_) == 0x000548, "Member 'UOutpostScreenStormShieldContent_C::ReadyToExpand_' has a wrong offset!");
 

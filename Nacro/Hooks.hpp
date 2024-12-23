@@ -210,54 +210,38 @@ namespace Hooks
 
 	inline void CreateHooks()
 	{
-		std::cout << "createhooks begin\n";
 		if (Globals::bIsInLobby && !Globals::bIsInitialized)
 		{
-			std::cout << "attempting mh initialize\n";
 			std::cout << MH_Initialize() << "\n";
-			std::cout << "mh initialize OK\n";
 
-			std::cout << "attempting cheatscript hook\n";
 			CreateHook(Offsets::CheatScriptOffset, CheatScriptHook, NULL);
-			std::cout << "cheatscript hook OK\n";
 
 			UClass* CheatManagerClass = UCheatManager::StaticClass();
 			CheatManagerClass->GetFunction("CheatManager", "Ghost")->ExecFunction = GhostHook;
-			std::cout << "ghost exec swap OK\n";
 			CheatManagerClass->GetFunction("CheatManager", "Fly")->ExecFunction = FlyHook;
-			std::cout << "fly exec swap OK\n";
 			CheatManagerClass->GetFunction("CheatManager", "Walk")->ExecFunction = WalkHook;
-			std::cout << "walk exec swap OK\n";
 
 			void** FortPlayerControllerAthenaVTable = (void**)AFortPlayerControllerAthena::GetDefaultObj()->VTable;
 			Memory::SwapVTableEntry(FortPlayerControllerAthenaVTable, 0x22E, ServerReturnToMainMenuHook);
-			std::cout << "serverreturntomainmenu vtable swap OK\n";
 			ServerAttemptAircraftJumpOriginal = decltype(ServerAttemptAircraftJumpOriginal)(FortPlayerControllerAthenaVTable[0x30E]);
 			Memory::SwapVTableEntry(FortPlayerControllerAthenaVTable, 0x30E, ServerAttemptAircraftJumpHook);
-			std::cout << "serverattemptaircraftjump vtable swap OK\n";
 
 			void** FortPlayerPawnVTable = (void**)AFortPlayerPawn::GetDefaultObj()->VTable;
 			ServerHandlePickupOriginal = decltype(ServerHandlePickupOriginal)(FortPlayerPawnVTable[0x179]);
 			Memory::SwapVTableEntry(FortPlayerPawnVTable, 0x179, ServerHandlePickupHook);
-			std::cout << "serverhandlepickup vtable swap OK\n";
 
 			OnAircraftExitedDropZoneOriginal = Utils::Offset<void(AFortGameModeAthena*)>(Offsets::OnAircraftExitedDropZoneOffset);
 			CreateHook(Offsets::OnAircraftExitedDropZoneOffset, OnAircraftExitedDropZoneHook, NULL);
-			std::cout << "onaircraftexiteddropzone hook OK\n";
 
-			void** FortPlayerControllerVTable = (void**)AFortPlayerController::StaticClass()->VTable;
+			void** FortPlayerControllerVTable = (void**)AFortPlayerController::GetDefaultObj()->VTable;
 			ServerLoadingScreenDroppedOriginal = decltype(ServerLoadingScreenDroppedOriginal)(FortPlayerControllerVTable[0x234]);
 			Memory::SwapVTableEntry(FortPlayerControllerVTable, 0x234, ServerLoadingScreenDroppedHook);
-			std::cout << "serverloadingscreendropped vtable swap OK\n";
 
-			void** GameModeVTable = (void**)AGameMode::StaticClass()->VTable;
+			void** GameModeVTable = (void**)AGameMode::GetDefaultObj()->VTable;
 			ReadyToStartMatchOriginal = decltype(ReadyToStartMatchOriginal)(GameModeVTable[0xF7]);
 			Memory::SwapVTableEntry(GameModeVTable, 0xF7, ReadyToStartMatchHook);
-			std::cout << "readytostartmatch vtable swap OK\n";
 
 			CreateHook(Offsets::OnPlayButtonPressedOffset, OnPlayButtonPressedHook, NULL);
-			std::cout << "onplaybuttonpressed hook OK\n";
 		}
-		std::cout << "createhooks end\n";
 	}
 }

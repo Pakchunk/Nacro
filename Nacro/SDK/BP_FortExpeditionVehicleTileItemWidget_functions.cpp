@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnVehicleSelected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             SquadId_0                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_FortExpeditionVehicleTileItemWidget_C::OnVehicleSelected__DelegateSignature(class FName SquadId_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "OnVehicleSelected__DelegateSignature");
-
-	Params::BP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature Parms{};
-
-	Parms.SquadId_0 = SquadId_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget
 // ()
 // Parameters:

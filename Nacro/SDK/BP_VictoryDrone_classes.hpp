@@ -33,7 +33,6 @@ public:
 	class UMaterialInstanceDynamic*               StaticMeshMID;                                     // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SpawnOutAnimEndedDispatcher__DelegateSignature(class ABP_VictoryDrone_C* Drone);
 	void ExecuteUbergraph_BP_VictoryDrone(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
 	void OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool bInterrupted);

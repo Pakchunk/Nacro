@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SkillTreePages_structs.hpp"
 #include "Engine_structs.hpp"
-#include "SkillTreepAGEColors_structs.hpp"
+#include "SkillTreePages_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "SkillTreepAGEColors_structs.hpp"
 
 
 namespace SDK

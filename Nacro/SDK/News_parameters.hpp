@@ -50,7 +50,7 @@ static_assert(offsetof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_
 struct News_C_AddEntry final
 {
 public:
-	class FText                                   InEntryText;                                       // 0x0000(0x0018)(Parm)
+	class FText                                   inEntryText;                                       // 0x0000(0x0018)(Parm)
 	TDelegate<void(class FText BodyText)>         K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNewsEntry_C*                           CallFunc_Create_ReturnValue;                       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -58,7 +58,7 @@ public:
 };
 static_assert(alignof(News_C_AddEntry) == 0x000008, "Wrong alignment on News_C_AddEntry");
 static_assert(sizeof(News_C_AddEntry) == 0x000040, "Wrong size on News_C_AddEntry");
-static_assert(offsetof(News_C_AddEntry, InEntryText) == 0x000000, "Member 'News_C_AddEntry::InEntryText' has a wrong offset!");
+static_assert(offsetof(News_C_AddEntry, inEntryText) == 0x000000, "Member 'News_C_AddEntry::inEntryText' has a wrong offset!");
 static_assert(offsetof(News_C_AddEntry, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'News_C_AddEntry::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(News_C_AddEntry, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'News_C_AddEntry::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(News_C_AddEntry, CallFunc_Create_ReturnValue) == 0x000030, "Member 'News_C_AddEntry::CallFunc_Create_ReturnValue' has a wrong offset!");

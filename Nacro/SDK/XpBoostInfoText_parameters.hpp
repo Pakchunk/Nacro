@@ -65,7 +65,7 @@ static_assert(offsetof(XpBoostInfoText_C_HandleAccountUpdate, NewInfo) == 0x0000
 struct XpBoostInfoText_C_Update_Available_Boosts final
 {
 public:
-	class UFortItemDefinition*                    Xpboostitem;                                       // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItemDefinition*                    xpboostitem;                                       // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortTooltipContext*                    CallFunc_SpawnTooltipContextWithSource_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,7 +74,7 @@ public:
 };
 static_assert(alignof(XpBoostInfoText_C_Update_Available_Boosts) == 0x000008, "Wrong alignment on XpBoostInfoText_C_Update_Available_Boosts");
 static_assert(sizeof(XpBoostInfoText_C_Update_Available_Boosts) == 0x000040, "Wrong size on XpBoostInfoText_C_Update_Available_Boosts");
-static_assert(offsetof(XpBoostInfoText_C_Update_Available_Boosts, Xpboostitem) == 0x000000, "Member 'XpBoostInfoText_C_Update_Available_Boosts::Xpboostitem' has a wrong offset!");
+static_assert(offsetof(XpBoostInfoText_C_Update_Available_Boosts, xpboostitem) == 0x000000, "Member 'XpBoostInfoText_C_Update_Available_Boosts::xpboostitem' has a wrong offset!");
 static_assert(offsetof(XpBoostInfoText_C_Update_Available_Boosts, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'XpBoostInfoText_C_Update_Available_Boosts::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostInfoText_C_Update_Available_Boosts, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'XpBoostInfoText_C_Update_Available_Boosts::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(XpBoostInfoText_C_Update_Available_Boosts, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000018, "Member 'XpBoostInfoText_C_Update_Available_Boosts::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");

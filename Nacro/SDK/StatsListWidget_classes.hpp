@@ -35,7 +35,7 @@ public:
 	void OnRemoveShownAttributeListItem(class UFortAttributeListItem_NUI* AttributeListItemWidget, int32 AtIndex);
 	void OnAddShownAttributeListItem(class UFortAttributeListItem_NUI* AttributeListItemWidget);
 	void OnClearShownAttributes();
-	void ToggleClampedValueMessage(bool InShow);
+	void ToggleClampedValueMessage(bool inShow);
 	void AdjustClampCount(class UFortAttributeListItem_NUI* Widget, bool Add);
 
 public:

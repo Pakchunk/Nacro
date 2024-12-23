@@ -59,7 +59,6 @@ public:
 	TArray<struct FFriendCode>                    FriendCodes;                                       // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
-	void OnButtonHovered__DelegateSignature(const class FText& HelpText);
 	void ExecuteUbergraph_FullPartyBar(int32 EntryPoint);
 	void BndEvt__LocalPlayer_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__RemotePlayer2_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -78,7 +77,7 @@ public:
 	void Initialize();
 	void HandlePartybarUIFeatureChanged(EFortUIFeature Feature, EFortUIFeatureState FeatureState);
 	void OpenPartyPrivacy();
-	bool IsTeammateSlotPopulated(int32 InSlotNUmber);
+	bool isTeammateSlotPopulated(int32 inSlotNUmber);
 	void GetTotalNumFriendCodes(int32* Num_Codes);
 	class UWidget* Get_Fortitude_ToolTipWidget();
 	class UWidget* Get_Offense_ToolTipWidget();

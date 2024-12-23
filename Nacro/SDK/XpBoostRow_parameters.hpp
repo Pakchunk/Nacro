@@ -18,17 +18,6 @@
 namespace SDK::Params
 {
 
-// Function XpBoostRow.XpBoostRow_C.Give Boost Clicked__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct XpBoostRow_C_Give_Boost_Clicked__DelegateSignature final
-{
-public:
-	struct FUniqueNetIdRepl                       Player_To_Boost;                                   // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(XpBoostRow_C_Give_Boost_Clicked__DelegateSignature) == 0x000008, "Wrong alignment on XpBoostRow_C_Give_Boost_Clicked__DelegateSignature");
-static_assert(sizeof(XpBoostRow_C_Give_Boost_Clicked__DelegateSignature) == 0x000018, "Wrong size on XpBoostRow_C_Give_Boost_Clicked__DelegateSignature");
-static_assert(offsetof(XpBoostRow_C_Give_Boost_Clicked__DelegateSignature, Player_To_Boost) == 0x000000, "Member 'XpBoostRow_C_Give_Boost_Clicked__DelegateSignature::Player_To_Boost' has a wrong offset!");
-
 // Function XpBoostRow.XpBoostRow_C.ExecuteUbergraph_XpBoostRow
 // 0x0100 (0x0100 - 0x0000)
 struct XpBoostRow_C_ExecuteUbergraph_XpBoostRow final

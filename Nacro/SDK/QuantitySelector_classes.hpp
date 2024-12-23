@@ -47,8 +47,6 @@ public:
 	struct FSliderStyle                           SliderStyle_PS4;                                   // 0x0938(0x0250)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void OnButtonClickedDispatcher__DelegateSignature(int32 ChosenValue, class UFortItem* FortItem);
-	void OnStackValueChangedDispatcher__DelegateSignature(int32 NewValue, class UFortItem* FortItem);
 	void ExecuteUbergraph_QuantitySelector(int32 EntryPoint);
 	void HandleChangeInputMode(bool bUsingGamepad);
 	void Construct();

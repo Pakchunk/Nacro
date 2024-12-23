@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function QuestUpdateEntry.QuestUpdateEntry_C.AllQuestUpdatesFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UQuestUpdateEntry_C*              UpdateWidget                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UQuestUpdateEntry_C::AllQuestUpdatesFinished__DelegateSignature(class UQuestUpdateEntry_C* UpdateWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestUpdateEntry_C", "AllQuestUpdatesFinished__DelegateSignature");
-
-	Params::QuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature Parms{};
-
-	Parms.UpdateWidget = UpdateWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function QuestUpdateEntry.QuestUpdateEntry_C.ExecuteUbergraph_QuestUpdateEntry
 // (HasDefaults)
 // Parameters:

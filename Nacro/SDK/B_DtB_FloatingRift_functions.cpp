@@ -17,46 +17,6 @@
 namespace SDK
 {
 
-// Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.RiftLocated__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AFortPlayerPawn*                  FortPlayPawn                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AB_DtB_FloatingRift_C::RiftLocated__DelegateSignature(class AFortPlayerPawn* FortPlayPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_DtB_FloatingRift_C", "RiftLocated__DelegateSignature");
-
-	Params::B_DtB_FloatingRift_C_RiftLocated__DelegateSignature Parms{};
-
-	Parms.FortPlayPawn = FortPlayPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.CallOutVolumeOverlap__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AFortPlayerPawn*                  FortPlayerPawn                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AB_DtB_FloatingRift_C::CallOutVolumeOverlap__DelegateSignature(class AFortPlayerPawn* FortPlayerPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_DtB_FloatingRift_C", "CallOutVolumeOverlap__DelegateSignature");
-
-	Params::B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature Parms{};
-
-	Parms.FortPlayerPawn = FortPlayerPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.ExecuteUbergraph_B_DtB_FloatingRift
 // (HasDefaults)
 // Parameters:

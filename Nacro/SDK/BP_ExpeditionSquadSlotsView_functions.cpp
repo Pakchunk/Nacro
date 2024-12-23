@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.OnSquadSlotSelected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SquadSlotIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ExpeditionSquadSlotsView_C::OnSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExpeditionSquadSlotsView_C", "OnSquadSlotSelected__DelegateSignature");
-
-	Params::BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature Parms{};
-
-	Parms.SquadSlotIndex = SquadSlotIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.OnSquadSlotOpened__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UBP_ExpeditionSquadSlotsView_C::OnSquadSlotOpened__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExpeditionSquadSlotsView_C", "OnSquadSlotOpened__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.ExecuteUbergraph_BP_ExpeditionSquadSlotsView
 // ()
 // Parameters:

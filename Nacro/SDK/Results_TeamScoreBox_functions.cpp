@@ -17,48 +17,6 @@
 namespace SDK
 {
 
-// Function Results_TeamScoreBox.Results_TeamScoreBox_C.CountUpFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_TeamScoreBox_C::CountUpFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_TeamScoreBox_C", "CountUpFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Results_TeamScoreBox.Results_TeamScoreBox_C.CountDownFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_TeamScoreBox_C::CountDownFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_TeamScoreBox_C", "CountDownFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Results_TeamScoreBox.Results_TeamScoreBox_C.IntroFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_TeamScoreBox_C::IntroFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_TeamScoreBox_C", "IntroFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_TeamScoreBox.Results_TeamScoreBox_C.ExecuteUbergraph_Results_TeamScoreBox
 // ()
 // Parameters:

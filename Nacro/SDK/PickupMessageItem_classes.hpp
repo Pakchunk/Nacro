@@ -26,8 +26,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0280(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Disappear;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Appear;                                            // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               _Size_Box__Message_Size;                           // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemStackCounter_C*                    _Stack_Counter__Count;                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               mSize_Box__Message_Size;                           // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemStackCounter_C*                    mStack_Counter__Count;                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderBackground;                                  // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortMultiSizeItemCard*                 ItemIcon;                                          // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -58,8 +58,8 @@ static_assert(sizeof(UPickupMessageItem_C) == 0x0002D8, "Wrong size on UPickupMe
 static_assert(offsetof(UPickupMessageItem_C, UberGraphFrame) == 0x000280, "Member 'UPickupMessageItem_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UPickupMessageItem_C, Disappear) == 0x000288, "Member 'UPickupMessageItem_C::Disappear' has a wrong offset!");
 static_assert(offsetof(UPickupMessageItem_C, Appear) == 0x000290, "Member 'UPickupMessageItem_C::Appear' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, _Size_Box__Message_Size) == 0x000298, "Member 'UPickupMessageItem_C::_Size_Box__Message_Size' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, _Stack_Counter__Count) == 0x0002A0, "Member 'UPickupMessageItem_C::_Stack_Counter__Count' has a wrong offset!");
+static_assert(offsetof(UPickupMessageItem_C, mSize_Box__Message_Size) == 0x000298, "Member 'UPickupMessageItem_C::mSize_Box__Message_Size' has a wrong offset!");
+static_assert(offsetof(UPickupMessageItem_C, mStack_Counter__Count) == 0x0002A0, "Member 'UPickupMessageItem_C::mStack_Counter__Count' has a wrong offset!");
 static_assert(offsetof(UPickupMessageItem_C, BorderBackground) == 0x0002A8, "Member 'UPickupMessageItem_C::BorderBackground' has a wrong offset!");
 static_assert(offsetof(UPickupMessageItem_C, Image_0) == 0x0002B0, "Member 'UPickupMessageItem_C::Image_0' has a wrong offset!");
 static_assert(offsetof(UPickupMessageItem_C, ItemIcon) == 0x0002B8, "Member 'UPickupMessageItem_C::ItemIcon' has a wrong offset!");

@@ -37,7 +37,7 @@ public:
 	float                                         InitializeFX_TL_FadeInitFX_21BA8C434B0965A323799DA5570E46CF; // 0x08F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            InitializeFX_TL__Direction_21BA8C434B0965A323799DA5570E46CF; // 0x08FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8FD[0x3];                                      // 0x08FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     InitializeFXMinusTL;                               // 0x0900(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTimelineComponent*                     InitializeFX_TL;                                   // 0x0900(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DebugZoomTL_CameraRotLevelMax_41B63CEF445574B1F9D6F489004E4238; // 0x0908(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DebugZoomTL_CameraRotLevelZero_41B63CEF445574B1F9D6F489004E4238; // 0x090C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DebugZoomTL_CameraOffsetX___LevelMax_41B63CEF445574B1F9D6F489004E4238; // 0x0910(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -98,8 +98,8 @@ public:
 	struct FVector                                HexWorldLocFromBP_Hex_PARENT;                      // 0x0A24(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MaxCameraDistance;                                 // 0x0A30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CenterOfCameraBounds;                              // 0x0A34(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HighestXMinusValue;                                // 0x0A40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         HighestYMinusValue;                                // 0x0A44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HighestX_Value;                                    // 0x0A40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         HighestY_Value;                                    // 0x0A44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TotalWidthOfHexPlane;                              // 0x0A48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HexPlaneBufferSize;                                // 0x0A4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CenterLocOfAllHexes;                               // 0x0A50(0x000C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,9 +110,9 @@ public:
 	class AHexmapLevelSettings_Temperate01_C*     LightsBP;                                          // 0x0A80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HexPlaneLayersBufferSize;                          // 0x0A88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TotalWidthOfHexPlaneLayer;                         // 0x0A8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector2D>                      TileType0MinusLocs;                                // 0x0A90(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FVector2D>                      TileType1MinusLocs;                                // 0x0AA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FVector2D>                      TileType2MinusLocs;                                // 0x0AB0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FVector2D>                      TileType0_Locs;                                    // 0x0A90(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FVector2D>                      TileType1_Locs;                                    // 0x0AA0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FVector2D>                      TileType2_Locs;                                    // 0x0AB0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	float                                         TileTypeMaskScale;                                 // 0x0AC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSuspendInput;                                     // 0x0AC4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -136,8 +136,8 @@ public:
 	void InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7(const struct FKey& Key);
 	void DEBUGFOVA__UpdateFunc();
 	void DEBUGFOVA__FinishedFunc();
-	void InitializeFXMinusTL__UpdateFunc();
-	void InitializeFXMinusTL__FinishedFunc();
+	void InitializeFX_TL__UpdateFunc();
+	void InitializeFX_TL__FinishedFunc();
 	void DebugZoomTL__UpdateFunc();
 	void DebugZoomTL__FinishedFunc();
 	void FocusTimeline__UpdateFunc();
@@ -146,7 +146,7 @@ public:
 	void ZoomCameraStep(bool Forward);
 	void HandleTheaterSelected(const class FString& TheaterId);
 	void PanCamera(float DeltaX, float DeltaY);
-	struct FVector2D NewFunction_0(class AActor* Self2);
+	struct FVector2D NewFunction_0(class AActor* self2);
 	bool IsInputSuspended();
 
 public:
@@ -172,7 +172,7 @@ static_assert(offsetof(ATheaterCamera_Blueprint_C, DEBUGFOVA__Direction_69C3A05E
 static_assert(offsetof(ATheaterCamera_Blueprint_C, DEBUGFOVA) == 0x0008F0, "Member 'ATheaterCamera_Blueprint_C::DEBUGFOVA' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, InitializeFX_TL_FadeInitFX_21BA8C434B0965A323799DA5570E46CF) == 0x0008F8, "Member 'ATheaterCamera_Blueprint_C::InitializeFX_TL_FadeInitFX_21BA8C434B0965A323799DA5570E46CF' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, InitializeFX_TL__Direction_21BA8C434B0965A323799DA5570E46CF) == 0x0008FC, "Member 'ATheaterCamera_Blueprint_C::InitializeFX_TL__Direction_21BA8C434B0965A323799DA5570E46CF' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, InitializeFXMinusTL) == 0x000900, "Member 'ATheaterCamera_Blueprint_C::InitializeFXMinusTL' has a wrong offset!");
+static_assert(offsetof(ATheaterCamera_Blueprint_C, InitializeFX_TL) == 0x000900, "Member 'ATheaterCamera_Blueprint_C::InitializeFX_TL' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraRotLevelMax_41B63CEF445574B1F9D6F489004E4238) == 0x000908, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraRotLevelMax_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraRotLevelZero_41B63CEF445574B1F9D6F489004E4238) == 0x00090C, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraRotLevelZero_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraOffsetX___LevelMax_41B63CEF445574B1F9D6F489004E4238) == 0x000910, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraOffsetX___LevelMax_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
@@ -225,8 +225,8 @@ static_assert(offsetof(ATheaterCamera_Blueprint_C, WaitForPinned) == 0x000A20, "
 static_assert(offsetof(ATheaterCamera_Blueprint_C, HexWorldLocFromBP_Hex_PARENT) == 0x000A24, "Member 'ATheaterCamera_Blueprint_C::HexWorldLocFromBP_Hex_PARENT' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, MaxCameraDistance) == 0x000A30, "Member 'ATheaterCamera_Blueprint_C::MaxCameraDistance' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, CenterOfCameraBounds) == 0x000A34, "Member 'ATheaterCamera_Blueprint_C::CenterOfCameraBounds' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, HighestXMinusValue) == 0x000A40, "Member 'ATheaterCamera_Blueprint_C::HighestXMinusValue' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, HighestYMinusValue) == 0x000A44, "Member 'ATheaterCamera_Blueprint_C::HighestYMinusValue' has a wrong offset!");
+static_assert(offsetof(ATheaterCamera_Blueprint_C, HighestX_Value) == 0x000A40, "Member 'ATheaterCamera_Blueprint_C::HighestX_Value' has a wrong offset!");
+static_assert(offsetof(ATheaterCamera_Blueprint_C, HighestY_Value) == 0x000A44, "Member 'ATheaterCamera_Blueprint_C::HighestY_Value' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, TotalWidthOfHexPlane) == 0x000A48, "Member 'ATheaterCamera_Blueprint_C::TotalWidthOfHexPlane' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, HexPlaneBufferSize) == 0x000A4C, "Member 'ATheaterCamera_Blueprint_C::HexPlaneBufferSize' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, CenterLocOfAllHexes) == 0x000A50, "Member 'ATheaterCamera_Blueprint_C::CenterLocOfAllHexes' has a wrong offset!");
@@ -236,9 +236,9 @@ static_assert(offsetof(ATheaterCamera_Blueprint_C, LightsBPSet) == 0x000A78, "Me
 static_assert(offsetof(ATheaterCamera_Blueprint_C, LightsBP) == 0x000A80, "Member 'ATheaterCamera_Blueprint_C::LightsBP' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, HexPlaneLayersBufferSize) == 0x000A88, "Member 'ATheaterCamera_Blueprint_C::HexPlaneLayersBufferSize' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, TotalWidthOfHexPlaneLayer) == 0x000A8C, "Member 'ATheaterCamera_Blueprint_C::TotalWidthOfHexPlaneLayer' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType0MinusLocs) == 0x000A90, "Member 'ATheaterCamera_Blueprint_C::TileType0MinusLocs' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType1MinusLocs) == 0x000AA0, "Member 'ATheaterCamera_Blueprint_C::TileType1MinusLocs' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType2MinusLocs) == 0x000AB0, "Member 'ATheaterCamera_Blueprint_C::TileType2MinusLocs' has a wrong offset!");
+static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType0_Locs) == 0x000A90, "Member 'ATheaterCamera_Blueprint_C::TileType0_Locs' has a wrong offset!");
+static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType1_Locs) == 0x000AA0, "Member 'ATheaterCamera_Blueprint_C::TileType1_Locs' has a wrong offset!");
+static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType2_Locs) == 0x000AB0, "Member 'ATheaterCamera_Blueprint_C::TileType2_Locs' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, TileTypeMaskScale) == 0x000AC0, "Member 'ATheaterCamera_Blueprint_C::TileTypeMaskScale' has a wrong offset!");
 static_assert(offsetof(ATheaterCamera_Blueprint_C, bSuspendInput) == 0x000AC4, "Member 'ATheaterCamera_Blueprint_C::bSuspendInput' has a wrong offset!");
 

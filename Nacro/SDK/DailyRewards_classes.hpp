@@ -43,7 +43,6 @@ public:
 	bool                                          Trigger_Update_On_Complete;                        // 0x0469(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnDailyRewardsComplete__DelegateSignature();
 	void ExecuteUbergraph_DailyRewards(int32 EntryPoint);
 	void Destruct();
 	void OnDeactivated();

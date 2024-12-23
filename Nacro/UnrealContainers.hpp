@@ -38,12 +38,6 @@ namespace UC
 	template<typename KeyElementType, typename ValueElementType>
 	class TPair;
 
-	namespace FMemory
-	{
-		inline void* (*Realloc)(void* Block, uint64 NewSize, uint32 Alignment) = nullptr;
-		inline void (*Free)(void* Mem) = nullptr;
-	}
-	
 	namespace Iterators
 	{
 		class FSetBitIterator;
@@ -273,19 +267,15 @@ namespace UC
 
 	public:
 		/* Adds to the array if there is still space for one more element */
-		inline int Add(const ArrayElementType& Element)
+		inline bool Add(const ArrayElementType& Element)
 		{
 			if (GetSlack() <= 0)
-			{
-				// or just call Reserve here
-				Data = (ArrayElementType*)FMemory::Realloc(Data, (NumElements + 1) * ElementSize, ElementAlign);
-				MaxElements++;
-			}
+				return false;
 
 			Data[NumElements] = Element;
 			NumElements++;
 
-			return NumElements - 1;
+			return true;
 		}
 
 		inline bool Remove(int32 Index)
@@ -304,27 +294,12 @@ namespace UC
 			return true;
 		}
 
-		FORCEINLINE void Reset(int MinSizeAfterReset = 0)
-		{
-			/*
-			*MaxElements = MinSizeAfterReset;
-			NumElements = 0;
-
-			if (Data)
-				FMemory::Free(Data);*/
-		}
-
 		inline void Clear()
 		{
 			NumElements = 0;
 
 			if (!Data)
 				memset(Data, 0, NumElements * ElementSize);
-		}
-
-		inline void Reserve(const int NumElementsThis)
-		{
-			Data = GetSlack() >= NumElementsThis ? Data : (ArrayElementType*)FMemory::Realloc(Data, (MaxElements = NumElements + NumElementsThis) * sizeof(ArrayElementType), 0);
 		}
 
 	public:
@@ -560,7 +535,6 @@ namespace UC
 		inline bool IsValidIndex(int32 Index) const { return Elements.IsValidIndex(Index); }
 
 		inline bool IsValid() const { return Elements.IsValid(); }
-		FORCEINLINE bool Contains(SetElementType Key) const { return false; }
 
 	public:
 		const ContainerImpl::FBitArray& GetAllocationFlags() const { return Elements.GetAllocationFlags(); }

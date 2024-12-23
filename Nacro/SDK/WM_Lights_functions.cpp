@@ -42,14 +42,14 @@ void AWM_Lights_C::ExecuteUbergraph_WM_Lights(int32 EntryPoint)
 // Parameters:
 // bool                                    TurnOn                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AWM_Lights_C::WMMinusLightcontrol(bool TurnOn)
+void AWM_Lights_C::WM_Lightcontrol(bool TurnOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WM_Lights_C", "WM-Lightcontrol");
 
-	Params::WM_Lights_C_WMMinusLightcontrol Parms{};
+	Params::WM_Lights_C_WM_Lightcontrol Parms{};
 
 	Parms.TurnOn = TurnOn;
 

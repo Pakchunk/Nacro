@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function OptionsMenuSlider.OptionsMenuSlider_C.SliderChanged__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Slider_Value                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuSlider_C::SliderChanged__DelegateSignature(float Slider_Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSlider_C", "SliderChanged__DelegateSignature");
-
-	Params::OptionsMenuSlider_C_SliderChanged__DelegateSignature Parms{};
-
-	Parms.Slider_Value = Slider_Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function OptionsMenuSlider.OptionsMenuSlider_C.ExecuteUbergraph_OptionsMenuSlider
 // (HasDefaults)
 // Parameters:
@@ -207,15 +187,15 @@ void UOptionsMenuSlider_C::Update_Slider(const class FText& Slider_Text, float S
 }
 
 
-// Function OptionsMenuSlider.OptionsMenuSlider_C.Center On Widget
+// Function OptionsMenuSlider.OptionsMenuSlider_C.Center on Widget
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenuSlider_C::Center_On_Widget()
+void UOptionsMenuSlider_C::Center_on_Widget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSlider_C", "Center On Widget");
+		Func = Class->GetFunction("OptionsMenuSlider_C", "Center on Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

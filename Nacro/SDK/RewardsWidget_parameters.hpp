@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FortniteUI_structs.hpp"
 #include "RewardType_structs.hpp"
+#include "FortniteUI_structs.hpp"
 
 
 namespace SDK::Params

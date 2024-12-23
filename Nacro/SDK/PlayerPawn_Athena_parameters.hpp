@@ -19,6 +19,223 @@
 namespace SDK::Params
 {
 
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.InitAthenaFoleyAudio
+// 0x00E8 (0x00E8 - 0x0000)
+struct PlayerPawn_Athena_C_InitAthenaFoleyAudio final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable2;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable2;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable3;                               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable5;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable6;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable4;                               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable7;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable8;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable5;                               // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable9;                             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable10;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable6;                               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable11;                            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable12;                            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable7;                               // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             Temp_object_Variable13;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             Temp_object_Variable14;                            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USoundBase*                             K2Node_Select_Default;                             // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select2_Default;                            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select3_Default;                            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select4_Default;                            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select5_Default;                            // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select6_Default;                            // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USoundBase*                             K2Node_Select7_Default;                            // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_C_InitAthenaFoleyAudio) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_InitAthenaFoleyAudio");
+static_assert(sizeof(PlayerPawn_Athena_C_InitAthenaFoleyAudio) == 0x0000E8, "Wrong size on PlayerPawn_Athena_C_InitAthenaFoleyAudio");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable) == 0x000000, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable) == 0x000008, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable2) == 0x000010, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable2) == 0x000018, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable2' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable3) == 0x000020, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable4) == 0x000028, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable4' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable3) == 0x000030, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable3' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable5) == 0x000038, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable5' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable6) == 0x000040, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable6' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable4) == 0x000048, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable4' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable7) == 0x000050, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable7' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable8) == 0x000058, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable8' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable5) == 0x000060, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable5' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable9) == 0x000068, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable9' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable10) == 0x000070, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable10' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable6) == 0x000078, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable6' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable11) == 0x000080, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable11' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable12) == 0x000088, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable12' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable7) == 0x000090, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable7' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable13) == 0x000098, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable13' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable14) == 0x0000A0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable14' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, CallFunc_IsLocallyControlled_ReturnValue) == 0x0000A8, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select_Default) == 0x0000B0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select2_Default) == 0x0000B8, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select2_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select3_Default) == 0x0000C0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select3_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select4_Default) == 0x0000C8, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select4_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select5_Default) == 0x0000D0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select5_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select6_Default) == 0x0000D8, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select6_Default' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select7_Default) == 0x0000E0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select7_Default' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
+static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
+static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceivePossessed
+// 0x0008 (0x0008 - 0x0000)
+struct PlayerPawn_Athena_C_ReceivePossessed final
+{
+public:
+	class AController*                            NewController;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_C_ReceivePossessed) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_ReceivePossessed");
+static_assert(sizeof(PlayerPawn_Athena_C_ReceivePossessed) == 0x000008, "Wrong size on PlayerPawn_Athena_C_ReceivePossessed");
+static_assert(offsetof(PlayerPawn_Athena_C_ReceivePossessed, NewController) == 0x000000, "Member 'PlayerPawn_Athena_C_ReceivePossessed::NewController' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Commando.Shockwave
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave");
+static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SelectPawn
+// 0x0008 (0x0008 - 0x0000)
+struct PlayerPawn_Athena_C_SelectPawn final
+{
+public:
+	class UAnimInstance*                          AnimInst;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_C_SelectPawn) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_SelectPawn");
+static_assert(sizeof(PlayerPawn_Athena_C_SelectPawn) == 0x000008, "Wrong size on PlayerPawn_Athena_C_SelectPawn");
+static_assert(offsetof(PlayerPawn_Athena_C_SelectPawn, AnimInst) == 0x000000, "Member 'PlayerPawn_Athena_C_SelectPawn::AnimInst' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.OutsideSafeZone
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone");
+static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Equipping
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_C_GameplayCue_Athena_Equipping final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Athena_Equipping) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Athena_Equipping");
+static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Athena_Equipping) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Athena_Equipping");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_Equipping, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_Equipping::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_Equipping, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_Equipping::Parameters' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnDeathPlayEffects
+// 0x00E8 (0x00E8 - 0x0000)
+struct PlayerPawn_Athena_C_OnDeathPlayEffects final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
+	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
+};
+static_assert(alignof(PlayerPawn_Athena_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_OnDeathPlayEffects");
+static_assert(sizeof(PlayerPawn_Athena_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on PlayerPawn_Athena_C_OnDeathPlayEffects");
+static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::Damage' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, HitInfo) == 0x000038, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct PlayerPawn_Athena_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlayerPawn_Athena_C_ReceiveTick) == 0x000004, "Wrong alignment on PlayerPawn_Athena_C_ReceiveTick");
+static_assert(sizeof(PlayerPawn_Athena_C_ReceiveTick) == 0x000004, "Wrong size on PlayerPawn_Athena_C_ReceiveTick");
+static_assert(offsetof(PlayerPawn_Athena_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PlayerPawn_Athena_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Player.BeingRevivedFromDBNO
+// 0x00C0 (0x00C0 - 0x0000)
+struct PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO final
+{
+public:
+	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
+};
+static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO");
+static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO::EventType' has a wrong offset!");
+static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO::Parameters' has a wrong offset!");
+
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.ExecuteUbergraph_PlayerPawn_Athena
 // 0x0930 (0x0930 - 0x0000)
 struct PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena final
@@ -282,223 +499,6 @@ static_assert(offsetof(PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena, K
 static_assert(offsetof(PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena, CallFunc_PlayLocalAnimMontage_ReturnValue) == 0x000918, "Member 'PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena::CallFunc_PlayLocalAnimMontage_ReturnValue' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena, CallFunc_FinishSpawningActor_ReturnValue2) == 0x000920, "Member 'PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena::CallFunc_FinishSpawningActor_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena, CallFunc_IsLocallyControlled_ReturnValue8) == 0x000928, "Member 'PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena::CallFunc_IsLocallyControlled_ReturnValue8' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Player.BeingRevivedFromDBNO
-// 0x00C0 (0x00C0 - 0x0000)
-struct PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO");
-static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct PlayerPawn_Athena_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_C_ReceiveTick) == 0x000004, "Wrong alignment on PlayerPawn_Athena_C_ReceiveTick");
-static_assert(sizeof(PlayerPawn_Athena_C_ReceiveTick) == 0x000004, "Wrong size on PlayerPawn_Athena_C_ReceiveTick");
-static_assert(offsetof(PlayerPawn_Athena_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'PlayerPawn_Athena_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnDeathPlayEffects
-// 0x00E8 (0x00E8 - 0x0000)
-struct PlayerPawn_Athena_C_OnDeathPlayEffects final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  DamageTags;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                Momentum;                                          // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             HitInfo;                                           // 0x0038(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AFortPawn*                              InstigatedBy;                                      // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(Parm)
-};
-static_assert(alignof(PlayerPawn_Athena_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_OnDeathPlayEffects");
-static_assert(sizeof(PlayerPawn_Athena_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on PlayerPawn_Athena_C_OnDeathPlayEffects");
-static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, HitInfo) == 0x000038, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'PlayerPawn_Athena_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Equipping
-// 0x00C0 (0x00C0 - 0x0000)
-struct PlayerPawn_Athena_C_GameplayCue_Athena_Equipping final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Athena_Equipping) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Athena_Equipping");
-static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Athena_Equipping) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Athena_Equipping");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_Equipping, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_Equipping::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_Equipping, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_Equipping::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.OutsideSafeZone
-// 0x00C0 (0x00C0 - 0x0000)
-struct PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone");
-static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SelectPawn
-// 0x0008 (0x0008 - 0x0000)
-struct PlayerPawn_Athena_C_SelectPawn final
-{
-public:
-	class UAnimInstance*                          AnimInst;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_C_SelectPawn) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_SelectPawn");
-static_assert(sizeof(PlayerPawn_Athena_C_SelectPawn) == 0x000008, "Wrong size on PlayerPawn_Athena_C_SelectPawn");
-static_assert(offsetof(PlayerPawn_Athena_C_SelectPawn, AnimInst) == 0x000000, "Member 'PlayerPawn_Athena_C_SelectPawn::AnimInst' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Commando.Shockwave
-// 0x00C0 (0x00C0 - 0x0000)
-struct PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave");
-static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceivePossessed
-// 0x0008 (0x0008 - 0x0000)
-struct PlayerPawn_Athena_C_ReceivePossessed final
-{
-public:
-	class AController*                            NewController;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_C_ReceivePossessed) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_ReceivePossessed");
-static_assert(sizeof(PlayerPawn_Athena_C_ReceivePossessed) == 0x000008, "Wrong size on PlayerPawn_Athena_C_ReceivePossessed");
-static_assert(offsetof(PlayerPawn_Athena_C_ReceivePossessed, NewController) == 0x000000, "Member 'PlayerPawn_Athena_C_ReceivePossessed::NewController' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
-// 0x00C0 (0x00C0 - 0x0000)
-struct PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
-static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
-// 0x00C0 (0x00C0 - 0x0000)
-struct PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 final
-{
-public:
-	EGameplayCueEvent                             EventType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
-};
-static_assert(alignof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
-static_assert(sizeof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x0000C0, "Wrong size on PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, EventType) == 0x000000, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, Parameters) == 0x000008, "Member 'PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::Parameters' has a wrong offset!");
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.InitAthenaFoleyAudio
-// 0x00E8 (0x00E8 - 0x0000)
-struct PlayerPawn_Athena_C_InitAthenaFoleyAudio final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable2;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable2;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable3;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable4;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable3;                               // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable5;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable6;                             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable4;                               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable7;                             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable8;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable5;                               // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable9;                             // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable10;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable6;                               // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable11;                            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable12;                            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable7;                               // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             Temp_object_Variable13;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             Temp_object_Variable14;                            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USoundBase*                             K2Node_Select_Default;                             // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select2_Default;                            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select3_Default;                            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select4_Default;                            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select5_Default;                            // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select6_Default;                            // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USoundBase*                             K2Node_Select7_Default;                            // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlayerPawn_Athena_C_InitAthenaFoleyAudio) == 0x000008, "Wrong alignment on PlayerPawn_Athena_C_InitAthenaFoleyAudio");
-static_assert(sizeof(PlayerPawn_Athena_C_InitAthenaFoleyAudio) == 0x0000E8, "Wrong size on PlayerPawn_Athena_C_InitAthenaFoleyAudio");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable) == 0x000000, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable) == 0x000008, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable2) == 0x000010, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable2) == 0x000018, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable3) == 0x000020, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable4) == 0x000028, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable4' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable3) == 0x000030, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable5) == 0x000038, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable5' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable6) == 0x000040, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable6' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable4) == 0x000048, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable7) == 0x000050, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable7' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable8) == 0x000058, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable8' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable5) == 0x000060, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable9) == 0x000068, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable9' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable10) == 0x000070, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable10' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable6) == 0x000078, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable11) == 0x000080, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable11' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable12) == 0x000088, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable12' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_bool_Variable7) == 0x000090, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable13) == 0x000098, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable13' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, Temp_object_Variable14) == 0x0000A0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::Temp_object_Variable14' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, CallFunc_IsLocallyControlled_ReturnValue) == 0x0000A8, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select_Default) == 0x0000B0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select2_Default) == 0x0000B8, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select3_Default) == 0x0000C0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select4_Default) == 0x0000C8, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select5_Default) == 0x0000D0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select6_Default) == 0x0000D8, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Athena_C_InitAthenaFoleyAudio, K2Node_Select7_Default) == 0x0000E0, "Member 'PlayerPawn_Athena_C_InitAthenaFoleyAudio::K2Node_Select7_Default' has a wrong offset!");
 
 }
 

@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.CloseOutpostScreen__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UOutpostScreenStormShieldContent_C::CloseOutpostScreen__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OutpostScreenStormShieldContent_C", "CloseOutpostScreen__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.OutpostIsDefined__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UOutpostScreenStormShieldContent_C::OutpostIsDefined__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OutpostScreenStormShieldContent_C", "OutpostIsDefined__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.ExecuteUbergraph_OutpostScreenStormShieldContent
 // (HasDefaults)
 // Parameters:
@@ -234,21 +206,21 @@ void UOutpostScreenStormShieldContent_C::ResrouceProgress_Wood(int32 NewParam, i
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.isPlayerAlone
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    IsAlone                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    isAlone                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOutpostScreenStormShieldContent_C::IsPlayerAlone(bool* IsAlone)
+void UOutpostScreenStormShieldContent_C::isPlayerAlone(bool* isAlone)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("OutpostScreenStormShieldContent_C", "isPlayerAlone");
 
-	Params::OutpostScreenStormShieldContent_C_IsPlayerAlone Parms{};
+	Params::OutpostScreenStormShieldContent_C_isPlayerAlone Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (IsAlone != nullptr)
-		*IsAlone = Parms.IsAlone;
+	if (isAlone != nullptr)
+		*isAlone = Parms.isAlone;
 }
 
 
@@ -413,9 +385,9 @@ class UWidget* UOutpostScreenStormShieldContent_C::Get_GetHelpButton_ToolTipWidg
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.SetButtonState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Enabled_                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    enabled_                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOutpostScreenStormShieldContent_C::SetButtonState(bool Enabled_)
+void UOutpostScreenStormShieldContent_C::SetButtonState(bool enabled_)
 {
 	static class UFunction* Func = nullptr;
 
@@ -424,7 +396,7 @@ void UOutpostScreenStormShieldContent_C::SetButtonState(bool Enabled_)
 
 	Params::OutpostScreenStormShieldContent_C_SetButtonState Parms{};
 
-	Parms.Enabled_ = Enabled_;
+	Parms.enabled_ = enabled_;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -482,9 +454,9 @@ void UOutpostScreenStormShieldContent_C::CenterActiveButton()
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.EnablePowerBarChunk
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UImage*                           InImage                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UImage*                           inImage                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOutpostScreenStormShieldContent_C::EnablePowerBarChunk(class UImage* InImage)
+void UOutpostScreenStormShieldContent_C::EnablePowerBarChunk(class UImage* inImage)
 {
 	static class UFunction* Func = nullptr;
 
@@ -493,7 +465,7 @@ void UOutpostScreenStormShieldContent_C::EnablePowerBarChunk(class UImage* InIma
 
 	Params::OutpostScreenStormShieldContent_C_EnablePowerBarChunk Parms{};
 
-	Parms.InImage = InImage;
+	Parms.inImage = inImage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

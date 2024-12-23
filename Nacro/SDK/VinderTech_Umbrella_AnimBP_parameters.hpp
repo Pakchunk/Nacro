@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation");
+static_assert(sizeof(VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation");
+static_assert(offsetof(VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+
 // Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.ExecuteUbergraph_VinderTech_Umbrella_AnimBP
 // 0x0038 (0x0038 - 0x0000)
 struct VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP final
@@ -48,17 +59,6 @@ static_assert(offsetof(VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_
 static_assert(offsetof(VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP, CallFunc_GetRelevantAnimTimeRemaining_ReturnValue) == 0x00002C, "Member 'VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP::CallFunc_GetRelevantAnimTimeRemaining_ReturnValue' has a wrong offset!");
 static_assert(offsetof(VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP, K2Node_Event_DeltaTimeX) == 0x000030, "Member 'VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP::K2Node_Event_DeltaTimeX' has a wrong offset!");
 static_assert(offsetof(VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000034, "Member 'VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-
-// Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(sizeof(VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation");
-static_assert(offsetof(VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
 
 }
 

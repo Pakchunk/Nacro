@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.NewEventDispatcher_0__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void AVaultCharacterPlacementHelper_C::NewEventDispatcher_0__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "NewEventDispatcher_0__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.ExecuteUbergraph_VaultCharacterPlacementHelper
 // ()
 // Parameters:

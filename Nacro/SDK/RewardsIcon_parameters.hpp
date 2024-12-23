@@ -20,39 +20,6 @@
 namespace SDK::Params
 {
 
-// Function RewardsIcon.RewardsIcon_C.OnSlideAnimationFinished__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct RewardsIcon_C_OnSlideAnimationFinished__DelegateSignature final
-{
-public:
-	class URewardsIcon_C*                         Icon;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(RewardsIcon_C_OnSlideAnimationFinished__DelegateSignature) == 0x000008, "Wrong alignment on RewardsIcon_C_OnSlideAnimationFinished__DelegateSignature");
-static_assert(sizeof(RewardsIcon_C_OnSlideAnimationFinished__DelegateSignature) == 0x000008, "Wrong size on RewardsIcon_C_OnSlideAnimationFinished__DelegateSignature");
-static_assert(offsetof(RewardsIcon_C_OnSlideAnimationFinished__DelegateSignature, Icon) == 0x000000, "Member 'RewardsIcon_C_OnSlideAnimationFinished__DelegateSignature::Icon' has a wrong offset!");
-
-// Function RewardsIcon.RewardsIcon_C.OnDisperseAnimationFinished__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature final
-{
-public:
-	class URewardsIcon_C*                         Icon;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature) == 0x000008, "Wrong alignment on RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature");
-static_assert(sizeof(RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature) == 0x000008, "Wrong size on RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature");
-static_assert(offsetof(RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature, Icon) == 0x000000, "Member 'RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature::Icon' has a wrong offset!");
-
-// Function RewardsIcon.RewardsIcon_C.OnMaterializeAnimationFinished__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature final
-{
-public:
-	class URewardsIcon_C*                         Icon;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature) == 0x000008, "Wrong alignment on RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature");
-static_assert(sizeof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature) == 0x000008, "Wrong size on RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature");
-static_assert(offsetof(RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature, Icon) == 0x000000, "Member 'RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature::Icon' has a wrong offset!");
-
 // Function RewardsIcon.RewardsIcon_C.ExecuteUbergraph_RewardsIcon
 // 0x0040 (0x0040 - 0x0000)
 struct RewardsIcon_C_ExecuteUbergraph_RewardsIcon final
@@ -78,14 +45,14 @@ static_assert(offsetof(RewardsIcon_C_ExecuteUbergraph_RewardsIcon, K2Node_Custom
 
 // Function RewardsIcon.RewardsIcon_C.whiteFadeOut
 // 0x0004 (0x0004 - 0x0000)
-struct RewardsIcon_C_WhiteFadeOut final
+struct RewardsIcon_C_whiteFadeOut final
 {
 public:
 	float                                         Percent;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsIcon_C_WhiteFadeOut) == 0x000004, "Wrong alignment on RewardsIcon_C_WhiteFadeOut");
-static_assert(sizeof(RewardsIcon_C_WhiteFadeOut) == 0x000004, "Wrong size on RewardsIcon_C_WhiteFadeOut");
-static_assert(offsetof(RewardsIcon_C_WhiteFadeOut, Percent) == 0x000000, "Member 'RewardsIcon_C_WhiteFadeOut::Percent' has a wrong offset!");
+static_assert(alignof(RewardsIcon_C_whiteFadeOut) == 0x000004, "Wrong alignment on RewardsIcon_C_whiteFadeOut");
+static_assert(sizeof(RewardsIcon_C_whiteFadeOut) == 0x000004, "Wrong size on RewardsIcon_C_whiteFadeOut");
+static_assert(offsetof(RewardsIcon_C_whiteFadeOut, Percent) == 0x000000, "Member 'RewardsIcon_C_whiteFadeOut::Percent' has a wrong offset!");
 
 // Function RewardsIcon.RewardsIcon_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)

@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function FortTwitchLogin.FortTwitchLogin_C.OnRequestToolTipChange__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             NewTooltipText                                         (Parm)
-
-void UFortTwitchLogin_C::OnRequestToolTipChange__DelegateSignature(const class FText& NewTooltipText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortTwitchLogin_C", "OnRequestToolTipChange__DelegateSignature");
-
-	Params::FortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature Parms{};
-
-	Parms.NewTooltipText = std::move(NewTooltipText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortTwitchLogin.FortTwitchLogin_C.ExecuteUbergraph_FortTwitchLogin
 // (HasDefaults)
 // Parameters:

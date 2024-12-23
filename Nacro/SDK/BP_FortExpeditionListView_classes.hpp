@@ -27,8 +27,6 @@ public:
 	UMulticastDelegateProperty_                   OnItemHovered;                                     // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnItemClicked__DelegateSignature(class UObject* Item);
-	void OnItemHovered__DelegateSignature(class UObject* Item);
 	void ExecuteUbergraph_BP_FortExpeditionListView(int32 EntryPoint);
 	void BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature(class UObject* Item);
 	void BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_52_OnListViewItemClicked__DelegateSignature(class UObject* Item);

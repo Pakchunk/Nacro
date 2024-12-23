@@ -1074,33 +1074,33 @@ static_assert(offsetof(FortSaveFileBuildingInstructionsHandler_SaveBuildings, Re
 struct FortItemCollectedParams_BreakParams final
 {
 public:
-	class UFortWorldItemDefinition*               _CollectedItemDefinition;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _CollectedBy;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         _AmountCollected;                                  // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFortWorldItemDefinition*               mCollectedItemDefinition;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mCollectedBy;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         mAmountCollected;                                  // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortItemCollectedParams_BreakParams) == 0x000008, "Wrong alignment on FortItemCollectedParams_BreakParams");
 static_assert(sizeof(FortItemCollectedParams_BreakParams) == 0x000018, "Wrong size on FortItemCollectedParams_BreakParams");
-static_assert(offsetof(FortItemCollectedParams_BreakParams, _CollectedItemDefinition) == 0x000000, "Member 'FortItemCollectedParams_BreakParams::_CollectedItemDefinition' has a wrong offset!");
-static_assert(offsetof(FortItemCollectedParams_BreakParams, _CollectedBy) == 0x000008, "Member 'FortItemCollectedParams_BreakParams::_CollectedBy' has a wrong offset!");
-static_assert(offsetof(FortItemCollectedParams_BreakParams, _AmountCollected) == 0x000010, "Member 'FortItemCollectedParams_BreakParams::_AmountCollected' has a wrong offset!");
+static_assert(offsetof(FortItemCollectedParams_BreakParams, mCollectedItemDefinition) == 0x000000, "Member 'FortItemCollectedParams_BreakParams::mCollectedItemDefinition' has a wrong offset!");
+static_assert(offsetof(FortItemCollectedParams_BreakParams, mCollectedBy) == 0x000008, "Member 'FortItemCollectedParams_BreakParams::mCollectedBy' has a wrong offset!");
+static_assert(offsetof(FortItemCollectedParams_BreakParams, mAmountCollected) == 0x000010, "Member 'FortItemCollectedParams_BreakParams::mAmountCollected' has a wrong offset!");
 
 // Function FortniteGame.FortItemCollectedParams.SetParams
 // 0x0020 (0x0020 - 0x0000)
 struct FortItemCollectedParams_SetParams final
 {
 public:
-	const class UFortWorldItemDefinition*         _CollectedItemDefinition;                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _CollectedBy;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         _AmountCollected;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UFortWorldItemDefinition*         mCollectedItemDefinition;                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mCollectedBy;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         mAmountCollected;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemCollectedParams*               ThisParam;                                         // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortItemCollectedParams_SetParams) == 0x000008, "Wrong alignment on FortItemCollectedParams_SetParams");
 static_assert(sizeof(FortItemCollectedParams_SetParams) == 0x000020, "Wrong size on FortItemCollectedParams_SetParams");
-static_assert(offsetof(FortItemCollectedParams_SetParams, _CollectedItemDefinition) == 0x000000, "Member 'FortItemCollectedParams_SetParams::_CollectedItemDefinition' has a wrong offset!");
-static_assert(offsetof(FortItemCollectedParams_SetParams, _CollectedBy) == 0x000008, "Member 'FortItemCollectedParams_SetParams::_CollectedBy' has a wrong offset!");
-static_assert(offsetof(FortItemCollectedParams_SetParams, _AmountCollected) == 0x000010, "Member 'FortItemCollectedParams_SetParams::_AmountCollected' has a wrong offset!");
+static_assert(offsetof(FortItemCollectedParams_SetParams, mCollectedItemDefinition) == 0x000000, "Member 'FortItemCollectedParams_SetParams::mCollectedItemDefinition' has a wrong offset!");
+static_assert(offsetof(FortItemCollectedParams_SetParams, mCollectedBy) == 0x000008, "Member 'FortItemCollectedParams_SetParams::mCollectedBy' has a wrong offset!");
+static_assert(offsetof(FortItemCollectedParams_SetParams, mAmountCollected) == 0x000010, "Member 'FortItemCollectedParams_SetParams::mAmountCollected' has a wrong offset!");
 static_assert(offsetof(FortItemCollectedParams_SetParams, ThisParam) == 0x000018, "Member 'FortItemCollectedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortNotificationHandler.CreateWidget
@@ -1121,33 +1121,33 @@ static_assert(offsetof(FortNotificationHandler_CreateWidget, ReturnValue) == 0x0
 struct FortItemDroppedParams_BreakParams final
 {
 public:
-	class UFortWorldItemDefinition*               _DroppedItemDefinition;                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _DroppedBy;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         _AmountCollected;                                  // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFortWorldItemDefinition*               mDroppedItemDefinition;                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mDroppedBy;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         mAmountCollected;                                  // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortItemDroppedParams_BreakParams) == 0x000008, "Wrong alignment on FortItemDroppedParams_BreakParams");
 static_assert(sizeof(FortItemDroppedParams_BreakParams) == 0x000018, "Wrong size on FortItemDroppedParams_BreakParams");
-static_assert(offsetof(FortItemDroppedParams_BreakParams, _DroppedItemDefinition) == 0x000000, "Member 'FortItemDroppedParams_BreakParams::_DroppedItemDefinition' has a wrong offset!");
-static_assert(offsetof(FortItemDroppedParams_BreakParams, _DroppedBy) == 0x000008, "Member 'FortItemDroppedParams_BreakParams::_DroppedBy' has a wrong offset!");
-static_assert(offsetof(FortItemDroppedParams_BreakParams, _AmountCollected) == 0x000010, "Member 'FortItemDroppedParams_BreakParams::_AmountCollected' has a wrong offset!");
+static_assert(offsetof(FortItemDroppedParams_BreakParams, mDroppedItemDefinition) == 0x000000, "Member 'FortItemDroppedParams_BreakParams::mDroppedItemDefinition' has a wrong offset!");
+static_assert(offsetof(FortItemDroppedParams_BreakParams, mDroppedBy) == 0x000008, "Member 'FortItemDroppedParams_BreakParams::mDroppedBy' has a wrong offset!");
+static_assert(offsetof(FortItemDroppedParams_BreakParams, mAmountCollected) == 0x000010, "Member 'FortItemDroppedParams_BreakParams::mAmountCollected' has a wrong offset!");
 
 // Function FortniteGame.FortItemDroppedParams.SetParams
 // 0x0020 (0x0020 - 0x0000)
 struct FortItemDroppedParams_SetParams final
 {
 public:
-	const class UFortWorldItemDefinition*         _DroppedItemDefinition;                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _DroppedBy;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         _AmountCollected;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UFortWorldItemDefinition*         mDroppedItemDefinition;                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mDroppedBy;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         mAmountCollected;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDroppedParams*                 ThisParam;                                         // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortItemDroppedParams_SetParams) == 0x000008, "Wrong alignment on FortItemDroppedParams_SetParams");
 static_assert(sizeof(FortItemDroppedParams_SetParams) == 0x000020, "Wrong size on FortItemDroppedParams_SetParams");
-static_assert(offsetof(FortItemDroppedParams_SetParams, _DroppedItemDefinition) == 0x000000, "Member 'FortItemDroppedParams_SetParams::_DroppedItemDefinition' has a wrong offset!");
-static_assert(offsetof(FortItemDroppedParams_SetParams, _DroppedBy) == 0x000008, "Member 'FortItemDroppedParams_SetParams::_DroppedBy' has a wrong offset!");
-static_assert(offsetof(FortItemDroppedParams_SetParams, _AmountCollected) == 0x000010, "Member 'FortItemDroppedParams_SetParams::_AmountCollected' has a wrong offset!");
+static_assert(offsetof(FortItemDroppedParams_SetParams, mDroppedItemDefinition) == 0x000000, "Member 'FortItemDroppedParams_SetParams::mDroppedItemDefinition' has a wrong offset!");
+static_assert(offsetof(FortItemDroppedParams_SetParams, mDroppedBy) == 0x000008, "Member 'FortItemDroppedParams_SetParams::mDroppedBy' has a wrong offset!");
+static_assert(offsetof(FortItemDroppedParams_SetParams, mAmountCollected) == 0x000010, "Member 'FortItemDroppedParams_SetParams::mAmountCollected' has a wrong offset!");
 static_assert(offsetof(FortItemDroppedParams_SetParams, ThisParam) == 0x000018, "Member 'FortItemDroppedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortItemCraftedParams.BreakParams
@@ -1155,37 +1155,37 @@ static_assert(offsetof(FortItemDroppedParams_SetParams, ThisParam) == 0x000018, 
 struct FortItemCraftedParams_BreakParams final
 {
 public:
-	class UFortSchematicItemDefinition*           _SchematicDefinition;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _CraftedBy;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         _AmountCrafted;                                    // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          _bItemWasQuickCrafted;                             // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFortSchematicItemDefinition*           mSchematicDefinition;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mCraftedBy;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         mAmountCrafted;                                    // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          mbItemWasQuickCrafted;                             // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortItemCraftedParams_BreakParams) == 0x000008, "Wrong alignment on FortItemCraftedParams_BreakParams");
 static_assert(sizeof(FortItemCraftedParams_BreakParams) == 0x000018, "Wrong size on FortItemCraftedParams_BreakParams");
-static_assert(offsetof(FortItemCraftedParams_BreakParams, _SchematicDefinition) == 0x000000, "Member 'FortItemCraftedParams_BreakParams::_SchematicDefinition' has a wrong offset!");
-static_assert(offsetof(FortItemCraftedParams_BreakParams, _CraftedBy) == 0x000008, "Member 'FortItemCraftedParams_BreakParams::_CraftedBy' has a wrong offset!");
-static_assert(offsetof(FortItemCraftedParams_BreakParams, _AmountCrafted) == 0x000010, "Member 'FortItemCraftedParams_BreakParams::_AmountCrafted' has a wrong offset!");
-static_assert(offsetof(FortItemCraftedParams_BreakParams, _bItemWasQuickCrafted) == 0x000014, "Member 'FortItemCraftedParams_BreakParams::_bItemWasQuickCrafted' has a wrong offset!");
+static_assert(offsetof(FortItemCraftedParams_BreakParams, mSchematicDefinition) == 0x000000, "Member 'FortItemCraftedParams_BreakParams::mSchematicDefinition' has a wrong offset!");
+static_assert(offsetof(FortItemCraftedParams_BreakParams, mCraftedBy) == 0x000008, "Member 'FortItemCraftedParams_BreakParams::mCraftedBy' has a wrong offset!");
+static_assert(offsetof(FortItemCraftedParams_BreakParams, mAmountCrafted) == 0x000010, "Member 'FortItemCraftedParams_BreakParams::mAmountCrafted' has a wrong offset!");
+static_assert(offsetof(FortItemCraftedParams_BreakParams, mbItemWasQuickCrafted) == 0x000014, "Member 'FortItemCraftedParams_BreakParams::mbItemWasQuickCrafted' has a wrong offset!");
 
 // Function FortniteGame.FortItemCraftedParams.SetParams
 // 0x0020 (0x0020 - 0x0000)
 struct FortItemCraftedParams_SetParams final
 {
 public:
-	const class UFortSchematicItemDefinition*     _SchematicDefinition;                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _CraftedBy;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         _AmountCrafted;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          _bItemWasQuickCrafted;                             // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UFortSchematicItemDefinition*     mSchematicDefinition;                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mCraftedBy;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         mAmountCrafted;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          mbItemWasQuickCrafted;                             // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemCraftedParams*                 ThisParam;                                         // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortItemCraftedParams_SetParams) == 0x000008, "Wrong alignment on FortItemCraftedParams_SetParams");
 static_assert(sizeof(FortItemCraftedParams_SetParams) == 0x000020, "Wrong size on FortItemCraftedParams_SetParams");
-static_assert(offsetof(FortItemCraftedParams_SetParams, _SchematicDefinition) == 0x000000, "Member 'FortItemCraftedParams_SetParams::_SchematicDefinition' has a wrong offset!");
-static_assert(offsetof(FortItemCraftedParams_SetParams, _CraftedBy) == 0x000008, "Member 'FortItemCraftedParams_SetParams::_CraftedBy' has a wrong offset!");
-static_assert(offsetof(FortItemCraftedParams_SetParams, _AmountCrafted) == 0x000010, "Member 'FortItemCraftedParams_SetParams::_AmountCrafted' has a wrong offset!");
-static_assert(offsetof(FortItemCraftedParams_SetParams, _bItemWasQuickCrafted) == 0x000014, "Member 'FortItemCraftedParams_SetParams::_bItemWasQuickCrafted' has a wrong offset!");
+static_assert(offsetof(FortItemCraftedParams_SetParams, mSchematicDefinition) == 0x000000, "Member 'FortItemCraftedParams_SetParams::mSchematicDefinition' has a wrong offset!");
+static_assert(offsetof(FortItemCraftedParams_SetParams, mCraftedBy) == 0x000008, "Member 'FortItemCraftedParams_SetParams::mCraftedBy' has a wrong offset!");
+static_assert(offsetof(FortItemCraftedParams_SetParams, mAmountCrafted) == 0x000010, "Member 'FortItemCraftedParams_SetParams::mAmountCrafted' has a wrong offset!");
+static_assert(offsetof(FortItemCraftedParams_SetParams, mbItemWasQuickCrafted) == 0x000014, "Member 'FortItemCraftedParams_SetParams::mbItemWasQuickCrafted' has a wrong offset!");
 static_assert(offsetof(FortItemCraftedParams_SetParams, ThisParam) == 0x000018, "Member 'FortItemCraftedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortBotMissionLogic.MarkSingleLocator
@@ -1284,27 +1284,27 @@ static_assert(offsetof(FortBotMissionLogic_SpawnStructureBuilder, ReturnValue) =
 struct FortEnemyKilledParams_BreakParams final
 {
 public:
-	class AFortPawn*                              _KilledPawn;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _KilledBy;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPawn*                              mKilledPawn;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mKilledBy;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortEnemyKilledParams_BreakParams) == 0x000008, "Wrong alignment on FortEnemyKilledParams_BreakParams");
 static_assert(sizeof(FortEnemyKilledParams_BreakParams) == 0x000010, "Wrong size on FortEnemyKilledParams_BreakParams");
-static_assert(offsetof(FortEnemyKilledParams_BreakParams, _KilledPawn) == 0x000000, "Member 'FortEnemyKilledParams_BreakParams::_KilledPawn' has a wrong offset!");
-static_assert(offsetof(FortEnemyKilledParams_BreakParams, _KilledBy) == 0x000008, "Member 'FortEnemyKilledParams_BreakParams::_KilledBy' has a wrong offset!");
+static_assert(offsetof(FortEnemyKilledParams_BreakParams, mKilledPawn) == 0x000000, "Member 'FortEnemyKilledParams_BreakParams::mKilledPawn' has a wrong offset!");
+static_assert(offsetof(FortEnemyKilledParams_BreakParams, mKilledBy) == 0x000008, "Member 'FortEnemyKilledParams_BreakParams::mKilledBy' has a wrong offset!");
 
 // Function FortniteGame.FortEnemyKilledParams.SetParams
 // 0x0018 (0x0018 - 0x0000)
 struct FortEnemyKilledParams_SetParams final
 {
 public:
-	class AFortPawn*                              _KilledPawn;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _KilledBy;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPawn*                              mKilledPawn;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mKilledBy;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortEnemyKilledParams*                 ThisParam;                                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortEnemyKilledParams_SetParams) == 0x000008, "Wrong alignment on FortEnemyKilledParams_SetParams");
 static_assert(sizeof(FortEnemyKilledParams_SetParams) == 0x000018, "Wrong size on FortEnemyKilledParams_SetParams");
-static_assert(offsetof(FortEnemyKilledParams_SetParams, _KilledPawn) == 0x000000, "Member 'FortEnemyKilledParams_SetParams::_KilledPawn' has a wrong offset!");
-static_assert(offsetof(FortEnemyKilledParams_SetParams, _KilledBy) == 0x000008, "Member 'FortEnemyKilledParams_SetParams::_KilledBy' has a wrong offset!");
+static_assert(offsetof(FortEnemyKilledParams_SetParams, mKilledPawn) == 0x000000, "Member 'FortEnemyKilledParams_SetParams::mKilledPawn' has a wrong offset!");
+static_assert(offsetof(FortEnemyKilledParams_SetParams, mKilledBy) == 0x000008, "Member 'FortEnemyKilledParams_SetParams::mKilledBy' has a wrong offset!");
 static_assert(offsetof(FortEnemyKilledParams_SetParams, ThisParam) == 0x000010, "Member 'FortEnemyKilledParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortEnemyDamagedParams.BreakParams
@@ -1312,33 +1312,33 @@ static_assert(offsetof(FortEnemyKilledParams_SetParams, ThisParam) == 0x000010, 
 struct FortEnemyDamagedParams_BreakParams final
 {
 public:
-	class AFortPawn*                              _DamagedPawn;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _DamagedBy;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         _DamageAmount;                                     // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPawn*                              mDamagedPawn;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mDamagedBy;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         mDamageAmount;                                     // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortEnemyDamagedParams_BreakParams) == 0x000008, "Wrong alignment on FortEnemyDamagedParams_BreakParams");
 static_assert(sizeof(FortEnemyDamagedParams_BreakParams) == 0x000018, "Wrong size on FortEnemyDamagedParams_BreakParams");
-static_assert(offsetof(FortEnemyDamagedParams_BreakParams, _DamagedPawn) == 0x000000, "Member 'FortEnemyDamagedParams_BreakParams::_DamagedPawn' has a wrong offset!");
-static_assert(offsetof(FortEnemyDamagedParams_BreakParams, _DamagedBy) == 0x000008, "Member 'FortEnemyDamagedParams_BreakParams::_DamagedBy' has a wrong offset!");
-static_assert(offsetof(FortEnemyDamagedParams_BreakParams, _DamageAmount) == 0x000010, "Member 'FortEnemyDamagedParams_BreakParams::_DamageAmount' has a wrong offset!");
+static_assert(offsetof(FortEnemyDamagedParams_BreakParams, mDamagedPawn) == 0x000000, "Member 'FortEnemyDamagedParams_BreakParams::mDamagedPawn' has a wrong offset!");
+static_assert(offsetof(FortEnemyDamagedParams_BreakParams, mDamagedBy) == 0x000008, "Member 'FortEnemyDamagedParams_BreakParams::mDamagedBy' has a wrong offset!");
+static_assert(offsetof(FortEnemyDamagedParams_BreakParams, mDamageAmount) == 0x000010, "Member 'FortEnemyDamagedParams_BreakParams::mDamageAmount' has a wrong offset!");
 
 // Function FortniteGame.FortEnemyDamagedParams.SetParams
 // 0x0020 (0x0020 - 0x0000)
 struct FortEnemyDamagedParams_SetParams final
 {
 public:
-	class AFortPawn*                              _DamagedPawn;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AFortPlayerController*                  _DamagedBy;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         _DamageAmount;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPawn*                              mDamagedPawn;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mDamagedBy;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         mDamageAmount;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortEnemyDamagedParams*                ThisParam;                                         // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortEnemyDamagedParams_SetParams) == 0x000008, "Wrong alignment on FortEnemyDamagedParams_SetParams");
 static_assert(sizeof(FortEnemyDamagedParams_SetParams) == 0x000020, "Wrong size on FortEnemyDamagedParams_SetParams");
-static_assert(offsetof(FortEnemyDamagedParams_SetParams, _DamagedPawn) == 0x000000, "Member 'FortEnemyDamagedParams_SetParams::_DamagedPawn' has a wrong offset!");
-static_assert(offsetof(FortEnemyDamagedParams_SetParams, _DamagedBy) == 0x000008, "Member 'FortEnemyDamagedParams_SetParams::_DamagedBy' has a wrong offset!");
-static_assert(offsetof(FortEnemyDamagedParams_SetParams, _DamageAmount) == 0x000010, "Member 'FortEnemyDamagedParams_SetParams::_DamageAmount' has a wrong offset!");
+static_assert(offsetof(FortEnemyDamagedParams_SetParams, mDamagedPawn) == 0x000000, "Member 'FortEnemyDamagedParams_SetParams::mDamagedPawn' has a wrong offset!");
+static_assert(offsetof(FortEnemyDamagedParams_SetParams, mDamagedBy) == 0x000008, "Member 'FortEnemyDamagedParams_SetParams::mDamagedBy' has a wrong offset!");
+static_assert(offsetof(FortEnemyDamagedParams_SetParams, mDamageAmount) == 0x000010, "Member 'FortEnemyDamagedParams_SetParams::mDamageAmount' has a wrong offset!");
 static_assert(offsetof(FortEnemyDamagedParams_SetParams, ThisParam) == 0x000018, "Member 'FortEnemyDamagedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortNewPlayerParams.BreakParams
@@ -1346,23 +1346,23 @@ static_assert(offsetof(FortEnemyDamagedParams_SetParams, ThisParam) == 0x000018,
 struct FortNewPlayerParams_BreakParams final
 {
 public:
-	class AFortPlayerController*                  _NewPlayerController;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mNewPlayerController;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortNewPlayerParams_BreakParams) == 0x000008, "Wrong alignment on FortNewPlayerParams_BreakParams");
 static_assert(sizeof(FortNewPlayerParams_BreakParams) == 0x000008, "Wrong size on FortNewPlayerParams_BreakParams");
-static_assert(offsetof(FortNewPlayerParams_BreakParams, _NewPlayerController) == 0x000000, "Member 'FortNewPlayerParams_BreakParams::_NewPlayerController' has a wrong offset!");
+static_assert(offsetof(FortNewPlayerParams_BreakParams, mNewPlayerController) == 0x000000, "Member 'FortNewPlayerParams_BreakParams::mNewPlayerController' has a wrong offset!");
 
 // Function FortniteGame.FortNewPlayerParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortNewPlayerParams_SetParams final
 {
 public:
-	class AFortPlayerController*                  _NewPlayerController;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mNewPlayerController;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortNewPlayerParams*                   ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortNewPlayerParams_SetParams) == 0x000008, "Wrong alignment on FortNewPlayerParams_SetParams");
 static_assert(sizeof(FortNewPlayerParams_SetParams) == 0x000010, "Wrong size on FortNewPlayerParams_SetParams");
-static_assert(offsetof(FortNewPlayerParams_SetParams, _NewPlayerController) == 0x000000, "Member 'FortNewPlayerParams_SetParams::_NewPlayerController' has a wrong offset!");
+static_assert(offsetof(FortNewPlayerParams_SetParams, mNewPlayerController) == 0x000000, "Member 'FortNewPlayerParams_SetParams::mNewPlayerController' has a wrong offset!");
 static_assert(offsetof(FortNewPlayerParams_SetParams, ThisParam) == 0x000008, "Member 'FortNewPlayerParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerState.AreUniqueIDsIdentical
@@ -1488,23 +1488,23 @@ static_assert(offsetof(FortPlayerStateZone_GetNumOfAccumulatedItem, ReturnValue)
 struct FortPlayerExitParams_BreakParams final
 {
 public:
-	class AFortPlayerController*                  _ExitingPlayerController;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mExitingPlayerController;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerExitParams_BreakParams) == 0x000008, "Wrong alignment on FortPlayerExitParams_BreakParams");
 static_assert(sizeof(FortPlayerExitParams_BreakParams) == 0x000008, "Wrong size on FortPlayerExitParams_BreakParams");
-static_assert(offsetof(FortPlayerExitParams_BreakParams, _ExitingPlayerController) == 0x000000, "Member 'FortPlayerExitParams_BreakParams::_ExitingPlayerController' has a wrong offset!");
+static_assert(offsetof(FortPlayerExitParams_BreakParams, mExitingPlayerController) == 0x000000, "Member 'FortPlayerExitParams_BreakParams::mExitingPlayerController' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerExitParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortPlayerExitParams_SetParams final
 {
 public:
-	class AFortPlayerController*                  _ExitingPlayerController;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mExitingPlayerController;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortPlayerExitParams*                  ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerExitParams_SetParams) == 0x000008, "Wrong alignment on FortPlayerExitParams_SetParams");
 static_assert(sizeof(FortPlayerExitParams_SetParams) == 0x000010, "Wrong size on FortPlayerExitParams_SetParams");
-static_assert(offsetof(FortPlayerExitParams_SetParams, _ExitingPlayerController) == 0x000000, "Member 'FortPlayerExitParams_SetParams::_ExitingPlayerController' has a wrong offset!");
+static_assert(offsetof(FortPlayerExitParams_SetParams, mExitingPlayerController) == 0x000000, "Member 'FortPlayerExitParams_SetParams::mExitingPlayerController' has a wrong offset!");
 static_assert(offsetof(FortPlayerExitParams_SetParams, ThisParam) == 0x000008, "Member 'FortPlayerExitParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerSpawnedParams.BreakParams
@@ -1512,23 +1512,23 @@ static_assert(offsetof(FortPlayerExitParams_SetParams, ThisParam) == 0x000008, "
 struct FortPlayerSpawnedParams_BreakParams final
 {
 public:
-	class AFortPlayerController*                  _SpawnedPlayerController;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mSpawnedPlayerController;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerSpawnedParams_BreakParams) == 0x000008, "Wrong alignment on FortPlayerSpawnedParams_BreakParams");
 static_assert(sizeof(FortPlayerSpawnedParams_BreakParams) == 0x000008, "Wrong size on FortPlayerSpawnedParams_BreakParams");
-static_assert(offsetof(FortPlayerSpawnedParams_BreakParams, _SpawnedPlayerController) == 0x000000, "Member 'FortPlayerSpawnedParams_BreakParams::_SpawnedPlayerController' has a wrong offset!");
+static_assert(offsetof(FortPlayerSpawnedParams_BreakParams, mSpawnedPlayerController) == 0x000000, "Member 'FortPlayerSpawnedParams_BreakParams::mSpawnedPlayerController' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerSpawnedParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortPlayerSpawnedParams_SetParams final
 {
 public:
-	class AFortPlayerController*                  _SpawnedPlayerController;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mSpawnedPlayerController;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortPlayerSpawnedParams*               ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerSpawnedParams_SetParams) == 0x000008, "Wrong alignment on FortPlayerSpawnedParams_SetParams");
 static_assert(sizeof(FortPlayerSpawnedParams_SetParams) == 0x000010, "Wrong size on FortPlayerSpawnedParams_SetParams");
-static_assert(offsetof(FortPlayerSpawnedParams_SetParams, _SpawnedPlayerController) == 0x000000, "Member 'FortPlayerSpawnedParams_SetParams::_SpawnedPlayerController' has a wrong offset!");
+static_assert(offsetof(FortPlayerSpawnedParams_SetParams, mSpawnedPlayerController) == 0x000000, "Member 'FortPlayerSpawnedParams_SetParams::mSpawnedPlayerController' has a wrong offset!");
 static_assert(offsetof(FortPlayerSpawnedParams_SetParams, ThisParam) == 0x000008, "Member 'FortPlayerSpawnedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortMissionLibrary.AddCompletionTagsToMission
@@ -1567,13 +1567,13 @@ struct FortMissionLibrary_AdjustWaveBasedGameDifficulty final
 {
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FDifficultyAddMod;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         fDifficultyAddMod;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortMissionLibrary_AdjustWaveBasedGameDifficulty) == 0x000008, "Wrong alignment on FortMissionLibrary_AdjustWaveBasedGameDifficulty");
 static_assert(sizeof(FortMissionLibrary_AdjustWaveBasedGameDifficulty) == 0x000010, "Wrong size on FortMissionLibrary_AdjustWaveBasedGameDifficulty");
 static_assert(offsetof(FortMissionLibrary_AdjustWaveBasedGameDifficulty, WorldContextObject) == 0x000000, "Member 'FortMissionLibrary_AdjustWaveBasedGameDifficulty::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(FortMissionLibrary_AdjustWaveBasedGameDifficulty, FDifficultyAddMod) == 0x000008, "Member 'FortMissionLibrary_AdjustWaveBasedGameDifficulty::FDifficultyAddMod' has a wrong offset!");
+static_assert(offsetof(FortMissionLibrary_AdjustWaveBasedGameDifficulty, fDifficultyAddMod) == 0x000008, "Member 'FortMissionLibrary_AdjustWaveBasedGameDifficulty::fDifficultyAddMod' has a wrong offset!");
 
 // Function FortniteGame.FortMissionLibrary.CreateDynamicBuildingDeconstructor
 // 0x0028 (0x0028 - 0x0000)
@@ -2478,27 +2478,27 @@ static_assert(offsetof(FortBluGloManager_GetBluGloItemDefinition, ReturnValue) =
 struct FortPlayerDiedParams_BreakParams final
 {
 public:
-	class AFortPlayerPawn*                        _KilledPlayer;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AController*                            _KilledBy;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerPawn*                        mKilledPlayer;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mKilledBy;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerDiedParams_BreakParams) == 0x000008, "Wrong alignment on FortPlayerDiedParams_BreakParams");
 static_assert(sizeof(FortPlayerDiedParams_BreakParams) == 0x000010, "Wrong size on FortPlayerDiedParams_BreakParams");
-static_assert(offsetof(FortPlayerDiedParams_BreakParams, _KilledPlayer) == 0x000000, "Member 'FortPlayerDiedParams_BreakParams::_KilledPlayer' has a wrong offset!");
-static_assert(offsetof(FortPlayerDiedParams_BreakParams, _KilledBy) == 0x000008, "Member 'FortPlayerDiedParams_BreakParams::_KilledBy' has a wrong offset!");
+static_assert(offsetof(FortPlayerDiedParams_BreakParams, mKilledPlayer) == 0x000000, "Member 'FortPlayerDiedParams_BreakParams::mKilledPlayer' has a wrong offset!");
+static_assert(offsetof(FortPlayerDiedParams_BreakParams, mKilledBy) == 0x000008, "Member 'FortPlayerDiedParams_BreakParams::mKilledBy' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerDiedParams.SetParams
 // 0x0018 (0x0018 - 0x0000)
 struct FortPlayerDiedParams_SetParams final
 {
 public:
-	class AFortPlayerPawn*                        _KilledPlayer;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AController*                            _KilledBy;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerPawn*                        mKilledPlayer;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mKilledBy;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortPlayerDiedParams*                  ThisParam;                                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerDiedParams_SetParams) == 0x000008, "Wrong alignment on FortPlayerDiedParams_SetParams");
 static_assert(sizeof(FortPlayerDiedParams_SetParams) == 0x000018, "Wrong size on FortPlayerDiedParams_SetParams");
-static_assert(offsetof(FortPlayerDiedParams_SetParams, _KilledPlayer) == 0x000000, "Member 'FortPlayerDiedParams_SetParams::_KilledPlayer' has a wrong offset!");
-static_assert(offsetof(FortPlayerDiedParams_SetParams, _KilledBy) == 0x000008, "Member 'FortPlayerDiedParams_SetParams::_KilledBy' has a wrong offset!");
+static_assert(offsetof(FortPlayerDiedParams_SetParams, mKilledPlayer) == 0x000000, "Member 'FortPlayerDiedParams_SetParams::mKilledPlayer' has a wrong offset!");
+static_assert(offsetof(FortPlayerDiedParams_SetParams, mKilledBy) == 0x000008, "Member 'FortPlayerDiedParams_SetParams::mKilledBy' has a wrong offset!");
 static_assert(offsetof(FortPlayerDiedParams_SetParams, ThisParam) == 0x000010, "Member 'FortPlayerDiedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerDBNOEnterParams.BreakParams
@@ -2506,27 +2506,27 @@ static_assert(offsetof(FortPlayerDiedParams_SetParams, ThisParam) == 0x000010, "
 struct FortPlayerDBNOEnterParams_BreakParams final
 {
 public:
-	class AFortPlayerPawn*                        _KilledPlayer;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AController*                            _KilledBy;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerPawn*                        mKilledPlayer;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mKilledBy;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerDBNOEnterParams_BreakParams) == 0x000008, "Wrong alignment on FortPlayerDBNOEnterParams_BreakParams");
 static_assert(sizeof(FortPlayerDBNOEnterParams_BreakParams) == 0x000010, "Wrong size on FortPlayerDBNOEnterParams_BreakParams");
-static_assert(offsetof(FortPlayerDBNOEnterParams_BreakParams, _KilledPlayer) == 0x000000, "Member 'FortPlayerDBNOEnterParams_BreakParams::_KilledPlayer' has a wrong offset!");
-static_assert(offsetof(FortPlayerDBNOEnterParams_BreakParams, _KilledBy) == 0x000008, "Member 'FortPlayerDBNOEnterParams_BreakParams::_KilledBy' has a wrong offset!");
+static_assert(offsetof(FortPlayerDBNOEnterParams_BreakParams, mKilledPlayer) == 0x000000, "Member 'FortPlayerDBNOEnterParams_BreakParams::mKilledPlayer' has a wrong offset!");
+static_assert(offsetof(FortPlayerDBNOEnterParams_BreakParams, mKilledBy) == 0x000008, "Member 'FortPlayerDBNOEnterParams_BreakParams::mKilledBy' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerDBNOEnterParams.SetParams
 // 0x0018 (0x0018 - 0x0000)
 struct FortPlayerDBNOEnterParams_SetParams final
 {
 public:
-	class AFortPlayerPawn*                        _KilledPlayer;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AController*                            _KilledBy;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerPawn*                        mKilledPlayer;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mKilledBy;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortPlayerDBNOEnterParams*             ThisParam;                                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerDBNOEnterParams_SetParams) == 0x000008, "Wrong alignment on FortPlayerDBNOEnterParams_SetParams");
 static_assert(sizeof(FortPlayerDBNOEnterParams_SetParams) == 0x000018, "Wrong size on FortPlayerDBNOEnterParams_SetParams");
-static_assert(offsetof(FortPlayerDBNOEnterParams_SetParams, _KilledPlayer) == 0x000000, "Member 'FortPlayerDBNOEnterParams_SetParams::_KilledPlayer' has a wrong offset!");
-static_assert(offsetof(FortPlayerDBNOEnterParams_SetParams, _KilledBy) == 0x000008, "Member 'FortPlayerDBNOEnterParams_SetParams::_KilledBy' has a wrong offset!");
+static_assert(offsetof(FortPlayerDBNOEnterParams_SetParams, mKilledPlayer) == 0x000000, "Member 'FortPlayerDBNOEnterParams_SetParams::mKilledPlayer' has a wrong offset!");
+static_assert(offsetof(FortPlayerDBNOEnterParams_SetParams, mKilledBy) == 0x000008, "Member 'FortPlayerDBNOEnterParams_SetParams::mKilledBy' has a wrong offset!");
 static_assert(offsetof(FortPlayerDBNOEnterParams_SetParams, ThisParam) == 0x000010, "Member 'FortPlayerDBNOEnterParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortGameData.GetPersonalXpBoost
@@ -2556,27 +2556,27 @@ static_assert(offsetof(FortGameData_GetTeamXpBoost, ReturnValue) == 0x000000, "M
 struct FortPlayerDBNORevivedParams_BreakParams final
 {
 public:
-	class AFortPlayerPawn*                        _RevivedPlayer;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AController*                            _RevivedBy;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerPawn*                        mRevivedPlayer;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mRevivedBy;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerDBNORevivedParams_BreakParams) == 0x000008, "Wrong alignment on FortPlayerDBNORevivedParams_BreakParams");
 static_assert(sizeof(FortPlayerDBNORevivedParams_BreakParams) == 0x000010, "Wrong size on FortPlayerDBNORevivedParams_BreakParams");
-static_assert(offsetof(FortPlayerDBNORevivedParams_BreakParams, _RevivedPlayer) == 0x000000, "Member 'FortPlayerDBNORevivedParams_BreakParams::_RevivedPlayer' has a wrong offset!");
-static_assert(offsetof(FortPlayerDBNORevivedParams_BreakParams, _RevivedBy) == 0x000008, "Member 'FortPlayerDBNORevivedParams_BreakParams::_RevivedBy' has a wrong offset!");
+static_assert(offsetof(FortPlayerDBNORevivedParams_BreakParams, mRevivedPlayer) == 0x000000, "Member 'FortPlayerDBNORevivedParams_BreakParams::mRevivedPlayer' has a wrong offset!");
+static_assert(offsetof(FortPlayerDBNORevivedParams_BreakParams, mRevivedBy) == 0x000008, "Member 'FortPlayerDBNORevivedParams_BreakParams::mRevivedBy' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerDBNORevivedParams.SetParams
 // 0x0018 (0x0018 - 0x0000)
 struct FortPlayerDBNORevivedParams_SetParams final
 {
 public:
-	class AFortPlayerPawn*                        _RevivedPlayer;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AController*                            _RevivedBy;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerPawn*                        mRevivedPlayer;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mRevivedBy;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortPlayerDBNORevivedParams*           ThisParam;                                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerDBNORevivedParams_SetParams) == 0x000008, "Wrong alignment on FortPlayerDBNORevivedParams_SetParams");
 static_assert(sizeof(FortPlayerDBNORevivedParams_SetParams) == 0x000018, "Wrong size on FortPlayerDBNORevivedParams_SetParams");
-static_assert(offsetof(FortPlayerDBNORevivedParams_SetParams, _RevivedPlayer) == 0x000000, "Member 'FortPlayerDBNORevivedParams_SetParams::_RevivedPlayer' has a wrong offset!");
-static_assert(offsetof(FortPlayerDBNORevivedParams_SetParams, _RevivedBy) == 0x000008, "Member 'FortPlayerDBNORevivedParams_SetParams::_RevivedBy' has a wrong offset!");
+static_assert(offsetof(FortPlayerDBNORevivedParams_SetParams, mRevivedPlayer) == 0x000000, "Member 'FortPlayerDBNORevivedParams_SetParams::mRevivedPlayer' has a wrong offset!");
+static_assert(offsetof(FortPlayerDBNORevivedParams_SetParams, mRevivedBy) == 0x000008, "Member 'FortPlayerDBNORevivedParams_SetParams::mRevivedBy' has a wrong offset!");
 static_assert(offsetof(FortPlayerDBNORevivedParams_SetParams, ThisParam) == 0x000010, "Member 'FortPlayerDBNORevivedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortDayPhaseChangeParams.BreakParams
@@ -2584,29 +2584,29 @@ static_assert(offsetof(FortPlayerDBNORevivedParams_SetParams, ThisParam) == 0x00
 struct FortDayPhaseChangeParams_BreakParams final
 {
 public:
-	class AFortTimeOfDayManager*                  _LightingAndFogManager;                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortDayPhase                                 _NewDayPhase;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortTimeOfDayManager*                  mLightingAndFogManager;                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortDayPhase                                 mNewDayPhase;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortDayPhaseChangeParams_BreakParams) == 0x000008, "Wrong alignment on FortDayPhaseChangeParams_BreakParams");
 static_assert(sizeof(FortDayPhaseChangeParams_BreakParams) == 0x000010, "Wrong size on FortDayPhaseChangeParams_BreakParams");
-static_assert(offsetof(FortDayPhaseChangeParams_BreakParams, _LightingAndFogManager) == 0x000000, "Member 'FortDayPhaseChangeParams_BreakParams::_LightingAndFogManager' has a wrong offset!");
-static_assert(offsetof(FortDayPhaseChangeParams_BreakParams, _NewDayPhase) == 0x000008, "Member 'FortDayPhaseChangeParams_BreakParams::_NewDayPhase' has a wrong offset!");
+static_assert(offsetof(FortDayPhaseChangeParams_BreakParams, mLightingAndFogManager) == 0x000000, "Member 'FortDayPhaseChangeParams_BreakParams::mLightingAndFogManager' has a wrong offset!");
+static_assert(offsetof(FortDayPhaseChangeParams_BreakParams, mNewDayPhase) == 0x000008, "Member 'FortDayPhaseChangeParams_BreakParams::mNewDayPhase' has a wrong offset!");
 
 // Function FortniteGame.FortDayPhaseChangeParams.SetParams
 // 0x0018 (0x0018 - 0x0000)
 struct FortDayPhaseChangeParams_SetParams final
 {
 public:
-	class AFortTimeOfDayManager*                  _LightingAndFogManager;                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortDayPhase                                 _NewDayPhase;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortTimeOfDayManager*                  mLightingAndFogManager;                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortDayPhase                                 mNewDayPhase;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortDayPhaseChangeParams*              ThisParam;                                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortDayPhaseChangeParams_SetParams) == 0x000008, "Wrong alignment on FortDayPhaseChangeParams_SetParams");
 static_assert(sizeof(FortDayPhaseChangeParams_SetParams) == 0x000018, "Wrong size on FortDayPhaseChangeParams_SetParams");
-static_assert(offsetof(FortDayPhaseChangeParams_SetParams, _LightingAndFogManager) == 0x000000, "Member 'FortDayPhaseChangeParams_SetParams::_LightingAndFogManager' has a wrong offset!");
-static_assert(offsetof(FortDayPhaseChangeParams_SetParams, _NewDayPhase) == 0x000008, "Member 'FortDayPhaseChangeParams_SetParams::_NewDayPhase' has a wrong offset!");
+static_assert(offsetof(FortDayPhaseChangeParams_SetParams, mLightingAndFogManager) == 0x000000, "Member 'FortDayPhaseChangeParams_SetParams::mLightingAndFogManager' has a wrong offset!");
+static_assert(offsetof(FortDayPhaseChangeParams_SetParams, mNewDayPhase) == 0x000008, "Member 'FortDayPhaseChangeParams_SetParams::mNewDayPhase' has a wrong offset!");
 static_assert(offsetof(FortDayPhaseChangeParams_SetParams, ThisParam) == 0x000010, "Member 'FortDayPhaseChangeParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortGameplayMutator.IsMutatorActive
@@ -2625,33 +2625,33 @@ static_assert(offsetof(FortGameplayMutator_IsMutatorActive, ReturnValue) == 0x00
 struct FortPlayerBuiltParams_BreakParams final
 {
 public:
-	class ABuildingActor*                         _Building;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingType                             _BuildingType;                                     // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mBuilding;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingType                             mBuildingType;                                     // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerController*                  _Builder;                                          // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mBuilder;                                          // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerBuiltParams_BreakParams) == 0x000008, "Wrong alignment on FortPlayerBuiltParams_BreakParams");
 static_assert(sizeof(FortPlayerBuiltParams_BreakParams) == 0x000018, "Wrong size on FortPlayerBuiltParams_BreakParams");
-static_assert(offsetof(FortPlayerBuiltParams_BreakParams, _Building) == 0x000000, "Member 'FortPlayerBuiltParams_BreakParams::_Building' has a wrong offset!");
-static_assert(offsetof(FortPlayerBuiltParams_BreakParams, _BuildingType) == 0x000008, "Member 'FortPlayerBuiltParams_BreakParams::_BuildingType' has a wrong offset!");
-static_assert(offsetof(FortPlayerBuiltParams_BreakParams, _Builder) == 0x000010, "Member 'FortPlayerBuiltParams_BreakParams::_Builder' has a wrong offset!");
+static_assert(offsetof(FortPlayerBuiltParams_BreakParams, mBuilding) == 0x000000, "Member 'FortPlayerBuiltParams_BreakParams::mBuilding' has a wrong offset!");
+static_assert(offsetof(FortPlayerBuiltParams_BreakParams, mBuildingType) == 0x000008, "Member 'FortPlayerBuiltParams_BreakParams::mBuildingType' has a wrong offset!");
+static_assert(offsetof(FortPlayerBuiltParams_BreakParams, mBuilder) == 0x000010, "Member 'FortPlayerBuiltParams_BreakParams::mBuilder' has a wrong offset!");
 
 // Function FortniteGame.FortPlayerBuiltParams.SetParams
 // 0x0020 (0x0020 - 0x0000)
 struct FortPlayerBuiltParams_SetParams final
 {
 public:
-	class ABuildingActor*                         _Building;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingType                             _BuildingType;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mBuilding;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingType                             mBuildingType;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerController*                  _Builder;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mBuilder;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortPlayerBuiltParams*                 ThisParam;                                         // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortPlayerBuiltParams_SetParams) == 0x000008, "Wrong alignment on FortPlayerBuiltParams_SetParams");
 static_assert(sizeof(FortPlayerBuiltParams_SetParams) == 0x000020, "Wrong size on FortPlayerBuiltParams_SetParams");
-static_assert(offsetof(FortPlayerBuiltParams_SetParams, _Building) == 0x000000, "Member 'FortPlayerBuiltParams_SetParams::_Building' has a wrong offset!");
-static_assert(offsetof(FortPlayerBuiltParams_SetParams, _BuildingType) == 0x000008, "Member 'FortPlayerBuiltParams_SetParams::_BuildingType' has a wrong offset!");
-static_assert(offsetof(FortPlayerBuiltParams_SetParams, _Builder) == 0x000010, "Member 'FortPlayerBuiltParams_SetParams::_Builder' has a wrong offset!");
+static_assert(offsetof(FortPlayerBuiltParams_SetParams, mBuilding) == 0x000000, "Member 'FortPlayerBuiltParams_SetParams::mBuilding' has a wrong offset!");
+static_assert(offsetof(FortPlayerBuiltParams_SetParams, mBuildingType) == 0x000008, "Member 'FortPlayerBuiltParams_SetParams::mBuildingType' has a wrong offset!");
+static_assert(offsetof(FortPlayerBuiltParams_SetParams, mBuilder) == 0x000010, "Member 'FortPlayerBuiltParams_SetParams::mBuilder' has a wrong offset!");
 static_assert(offsetof(FortPlayerBuiltParams_SetParams, ThisParam) == 0x000018, "Member 'FortPlayerBuiltParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortBuildingDestroyedParams.BreakParams
@@ -2659,33 +2659,33 @@ static_assert(offsetof(FortPlayerBuiltParams_SetParams, ThisParam) == 0x000018, 
 struct FortBuildingDestroyedParams_BreakParams final
 {
 public:
-	class ABuildingActor*                         _Building;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingType                             _BuildingType;                                     // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mBuilding;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingType                             mBuildingType;                                     // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            _Destroyer;                                        // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mDestroyer;                                        // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortBuildingDestroyedParams_BreakParams) == 0x000008, "Wrong alignment on FortBuildingDestroyedParams_BreakParams");
 static_assert(sizeof(FortBuildingDestroyedParams_BreakParams) == 0x000018, "Wrong size on FortBuildingDestroyedParams_BreakParams");
-static_assert(offsetof(FortBuildingDestroyedParams_BreakParams, _Building) == 0x000000, "Member 'FortBuildingDestroyedParams_BreakParams::_Building' has a wrong offset!");
-static_assert(offsetof(FortBuildingDestroyedParams_BreakParams, _BuildingType) == 0x000008, "Member 'FortBuildingDestroyedParams_BreakParams::_BuildingType' has a wrong offset!");
-static_assert(offsetof(FortBuildingDestroyedParams_BreakParams, _Destroyer) == 0x000010, "Member 'FortBuildingDestroyedParams_BreakParams::_Destroyer' has a wrong offset!");
+static_assert(offsetof(FortBuildingDestroyedParams_BreakParams, mBuilding) == 0x000000, "Member 'FortBuildingDestroyedParams_BreakParams::mBuilding' has a wrong offset!");
+static_assert(offsetof(FortBuildingDestroyedParams_BreakParams, mBuildingType) == 0x000008, "Member 'FortBuildingDestroyedParams_BreakParams::mBuildingType' has a wrong offset!");
+static_assert(offsetof(FortBuildingDestroyedParams_BreakParams, mDestroyer) == 0x000010, "Member 'FortBuildingDestroyedParams_BreakParams::mDestroyer' has a wrong offset!");
 
 // Function FortniteGame.FortBuildingDestroyedParams.SetParams
 // 0x0020 (0x0020 - 0x0000)
 struct FortBuildingDestroyedParams_SetParams final
 {
 public:
-	class ABuildingActor*                         _Building;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingType                             _BuildingType;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mBuilding;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingType                             mBuildingType;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            _Destroyer;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mDestroyer;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortBuildingDestroyedParams*           ThisParam;                                         // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortBuildingDestroyedParams_SetParams) == 0x000008, "Wrong alignment on FortBuildingDestroyedParams_SetParams");
 static_assert(sizeof(FortBuildingDestroyedParams_SetParams) == 0x000020, "Wrong size on FortBuildingDestroyedParams_SetParams");
-static_assert(offsetof(FortBuildingDestroyedParams_SetParams, _Building) == 0x000000, "Member 'FortBuildingDestroyedParams_SetParams::_Building' has a wrong offset!");
-static_assert(offsetof(FortBuildingDestroyedParams_SetParams, _BuildingType) == 0x000008, "Member 'FortBuildingDestroyedParams_SetParams::_BuildingType' has a wrong offset!");
-static_assert(offsetof(FortBuildingDestroyedParams_SetParams, _Destroyer) == 0x000010, "Member 'FortBuildingDestroyedParams_SetParams::_Destroyer' has a wrong offset!");
+static_assert(offsetof(FortBuildingDestroyedParams_SetParams, mBuilding) == 0x000000, "Member 'FortBuildingDestroyedParams_SetParams::mBuilding' has a wrong offset!");
+static_assert(offsetof(FortBuildingDestroyedParams_SetParams, mBuildingType) == 0x000008, "Member 'FortBuildingDestroyedParams_SetParams::mBuildingType' has a wrong offset!");
+static_assert(offsetof(FortBuildingDestroyedParams_SetParams, mDestroyer) == 0x000010, "Member 'FortBuildingDestroyedParams_SetParams::mDestroyer' has a wrong offset!");
 static_assert(offsetof(FortBuildingDestroyedParams_SetParams, ThisParam) == 0x000018, "Member 'FortBuildingDestroyedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortUINotification.CreateWidget
@@ -2728,37 +2728,37 @@ static_assert(offsetof(FortUINotification_ShouldShowNotification, ReturnValue) =
 struct FortBuildingEditedParams_BreakParams final
 {
 public:
-	class ABuildingActor*                         _OriginalBuilding;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ABuildingActor*                         _NewBuilding;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingType                             _BuildingType;                                     // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mOriginalBuilding;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mNewBuilding;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingType                             mBuildingType;                                     // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerController*                  _Editor;                                           // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mEditor;                                           // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortBuildingEditedParams_BreakParams) == 0x000008, "Wrong alignment on FortBuildingEditedParams_BreakParams");
 static_assert(sizeof(FortBuildingEditedParams_BreakParams) == 0x000020, "Wrong size on FortBuildingEditedParams_BreakParams");
-static_assert(offsetof(FortBuildingEditedParams_BreakParams, _OriginalBuilding) == 0x000000, "Member 'FortBuildingEditedParams_BreakParams::_OriginalBuilding' has a wrong offset!");
-static_assert(offsetof(FortBuildingEditedParams_BreakParams, _NewBuilding) == 0x000008, "Member 'FortBuildingEditedParams_BreakParams::_NewBuilding' has a wrong offset!");
-static_assert(offsetof(FortBuildingEditedParams_BreakParams, _BuildingType) == 0x000010, "Member 'FortBuildingEditedParams_BreakParams::_BuildingType' has a wrong offset!");
-static_assert(offsetof(FortBuildingEditedParams_BreakParams, _Editor) == 0x000018, "Member 'FortBuildingEditedParams_BreakParams::_Editor' has a wrong offset!");
+static_assert(offsetof(FortBuildingEditedParams_BreakParams, mOriginalBuilding) == 0x000000, "Member 'FortBuildingEditedParams_BreakParams::mOriginalBuilding' has a wrong offset!");
+static_assert(offsetof(FortBuildingEditedParams_BreakParams, mNewBuilding) == 0x000008, "Member 'FortBuildingEditedParams_BreakParams::mNewBuilding' has a wrong offset!");
+static_assert(offsetof(FortBuildingEditedParams_BreakParams, mBuildingType) == 0x000010, "Member 'FortBuildingEditedParams_BreakParams::mBuildingType' has a wrong offset!");
+static_assert(offsetof(FortBuildingEditedParams_BreakParams, mEditor) == 0x000018, "Member 'FortBuildingEditedParams_BreakParams::mEditor' has a wrong offset!");
 
 // Function FortniteGame.FortBuildingEditedParams.SetParams
 // 0x0028 (0x0028 - 0x0000)
 struct FortBuildingEditedParams_SetParams final
 {
 public:
-	class ABuildingActor*                         _OriginalBuilding;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ABuildingActor*                         _NewBuilding;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingType                             _BuildingType;                                     // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mOriginalBuilding;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mNewBuilding;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingType                             mBuildingType;                                     // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AFortPlayerController*                  _Editor;                                           // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mEditor;                                           // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortBuildingEditedParams*              ThisParam;                                         // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortBuildingEditedParams_SetParams) == 0x000008, "Wrong alignment on FortBuildingEditedParams_SetParams");
 static_assert(sizeof(FortBuildingEditedParams_SetParams) == 0x000028, "Wrong size on FortBuildingEditedParams_SetParams");
-static_assert(offsetof(FortBuildingEditedParams_SetParams, _OriginalBuilding) == 0x000000, "Member 'FortBuildingEditedParams_SetParams::_OriginalBuilding' has a wrong offset!");
-static_assert(offsetof(FortBuildingEditedParams_SetParams, _NewBuilding) == 0x000008, "Member 'FortBuildingEditedParams_SetParams::_NewBuilding' has a wrong offset!");
-static_assert(offsetof(FortBuildingEditedParams_SetParams, _BuildingType) == 0x000010, "Member 'FortBuildingEditedParams_SetParams::_BuildingType' has a wrong offset!");
-static_assert(offsetof(FortBuildingEditedParams_SetParams, _Editor) == 0x000018, "Member 'FortBuildingEditedParams_SetParams::_Editor' has a wrong offset!");
+static_assert(offsetof(FortBuildingEditedParams_SetParams, mOriginalBuilding) == 0x000000, "Member 'FortBuildingEditedParams_SetParams::mOriginalBuilding' has a wrong offset!");
+static_assert(offsetof(FortBuildingEditedParams_SetParams, mNewBuilding) == 0x000008, "Member 'FortBuildingEditedParams_SetParams::mNewBuilding' has a wrong offset!");
+static_assert(offsetof(FortBuildingEditedParams_SetParams, mBuildingType) == 0x000010, "Member 'FortBuildingEditedParams_SetParams::mBuildingType' has a wrong offset!");
+static_assert(offsetof(FortBuildingEditedParams_SetParams, mEditor) == 0x000018, "Member 'FortBuildingEditedParams_SetParams::mEditor' has a wrong offset!");
 static_assert(offsetof(FortBuildingEditedParams_SetParams, ThisParam) == 0x000020, "Member 'FortBuildingEditedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortBuildingDamagedParams.BreakParams
@@ -2766,39 +2766,39 @@ static_assert(offsetof(FortBuildingEditedParams_SetParams, ThisParam) == 0x00002
 struct FortBuildingDamagedParams_BreakParams final
 {
 public:
-	class ABuildingActor*                         _Building;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingType                             _BuildingType;                                     // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mBuilding;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingType                             mBuildingType;                                     // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            _DamagedBy;                                        // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         _DamageAmount;                                     // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mDamagedBy;                                        // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         mDamageAmount;                                     // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortBuildingDamagedParams_BreakParams) == 0x000008, "Wrong alignment on FortBuildingDamagedParams_BreakParams");
 static_assert(sizeof(FortBuildingDamagedParams_BreakParams) == 0x000020, "Wrong size on FortBuildingDamagedParams_BreakParams");
-static_assert(offsetof(FortBuildingDamagedParams_BreakParams, _Building) == 0x000000, "Member 'FortBuildingDamagedParams_BreakParams::_Building' has a wrong offset!");
-static_assert(offsetof(FortBuildingDamagedParams_BreakParams, _BuildingType) == 0x000008, "Member 'FortBuildingDamagedParams_BreakParams::_BuildingType' has a wrong offset!");
-static_assert(offsetof(FortBuildingDamagedParams_BreakParams, _DamagedBy) == 0x000010, "Member 'FortBuildingDamagedParams_BreakParams::_DamagedBy' has a wrong offset!");
-static_assert(offsetof(FortBuildingDamagedParams_BreakParams, _DamageAmount) == 0x000018, "Member 'FortBuildingDamagedParams_BreakParams::_DamageAmount' has a wrong offset!");
+static_assert(offsetof(FortBuildingDamagedParams_BreakParams, mBuilding) == 0x000000, "Member 'FortBuildingDamagedParams_BreakParams::mBuilding' has a wrong offset!");
+static_assert(offsetof(FortBuildingDamagedParams_BreakParams, mBuildingType) == 0x000008, "Member 'FortBuildingDamagedParams_BreakParams::mBuildingType' has a wrong offset!");
+static_assert(offsetof(FortBuildingDamagedParams_BreakParams, mDamagedBy) == 0x000010, "Member 'FortBuildingDamagedParams_BreakParams::mDamagedBy' has a wrong offset!");
+static_assert(offsetof(FortBuildingDamagedParams_BreakParams, mDamageAmount) == 0x000018, "Member 'FortBuildingDamagedParams_BreakParams::mDamageAmount' has a wrong offset!");
 
 // Function FortniteGame.FortBuildingDamagedParams.SetParams
 // 0x0028 (0x0028 - 0x0000)
 struct FortBuildingDamagedParams_SetParams final
 {
 public:
-	class ABuildingActor*                         _Building;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EFortBuildingType                             _BuildingType;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ABuildingActor*                         mBuilding;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortBuildingType                             mBuildingType;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            _DamagedBy;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         _DamageAmount;                                     // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AController*                            mDamagedBy;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         mDamageAmount;                                     // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortBuildingDamagedParams*             ThisParam;                                         // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortBuildingDamagedParams_SetParams) == 0x000008, "Wrong alignment on FortBuildingDamagedParams_SetParams");
 static_assert(sizeof(FortBuildingDamagedParams_SetParams) == 0x000028, "Wrong size on FortBuildingDamagedParams_SetParams");
-static_assert(offsetof(FortBuildingDamagedParams_SetParams, _Building) == 0x000000, "Member 'FortBuildingDamagedParams_SetParams::_Building' has a wrong offset!");
-static_assert(offsetof(FortBuildingDamagedParams_SetParams, _BuildingType) == 0x000008, "Member 'FortBuildingDamagedParams_SetParams::_BuildingType' has a wrong offset!");
-static_assert(offsetof(FortBuildingDamagedParams_SetParams, _DamagedBy) == 0x000010, "Member 'FortBuildingDamagedParams_SetParams::_DamagedBy' has a wrong offset!");
-static_assert(offsetof(FortBuildingDamagedParams_SetParams, _DamageAmount) == 0x000018, "Member 'FortBuildingDamagedParams_SetParams::_DamageAmount' has a wrong offset!");
+static_assert(offsetof(FortBuildingDamagedParams_SetParams, mBuilding) == 0x000000, "Member 'FortBuildingDamagedParams_SetParams::mBuilding' has a wrong offset!");
+static_assert(offsetof(FortBuildingDamagedParams_SetParams, mBuildingType) == 0x000008, "Member 'FortBuildingDamagedParams_SetParams::mBuildingType' has a wrong offset!");
+static_assert(offsetof(FortBuildingDamagedParams_SetParams, mDamagedBy) == 0x000010, "Member 'FortBuildingDamagedParams_SetParams::mDamagedBy' has a wrong offset!");
+static_assert(offsetof(FortBuildingDamagedParams_SetParams, mDamageAmount) == 0x000018, "Member 'FortBuildingDamagedParams_SetParams::mDamageAmount' has a wrong offset!");
 static_assert(offsetof(FortBuildingDamagedParams_SetParams, ThisParam) == 0x000020, "Member 'FortBuildingDamagedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortClientAnnouncement.GetPriority
@@ -2817,23 +2817,23 @@ static_assert(offsetof(FortClientAnnouncement_GetPriority, ReturnValue) == 0x000
 struct FortMissionSucceededParams_BreakParams final
 {
 public:
-	class AFortMission*                           _SucceededMission;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortMission*                           mSucceededMission;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMissionSucceededParams_BreakParams) == 0x000008, "Wrong alignment on FortMissionSucceededParams_BreakParams");
 static_assert(sizeof(FortMissionSucceededParams_BreakParams) == 0x000008, "Wrong size on FortMissionSucceededParams_BreakParams");
-static_assert(offsetof(FortMissionSucceededParams_BreakParams, _SucceededMission) == 0x000000, "Member 'FortMissionSucceededParams_BreakParams::_SucceededMission' has a wrong offset!");
+static_assert(offsetof(FortMissionSucceededParams_BreakParams, mSucceededMission) == 0x000000, "Member 'FortMissionSucceededParams_BreakParams::mSucceededMission' has a wrong offset!");
 
 // Function FortniteGame.FortMissionSucceededParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortMissionSucceededParams_SetParams final
 {
 public:
-	class AFortMission*                           _SucceededMission;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortMission*                           mSucceededMission;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortMissionSucceededParams*            ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMissionSucceededParams_SetParams) == 0x000008, "Wrong alignment on FortMissionSucceededParams_SetParams");
 static_assert(sizeof(FortMissionSucceededParams_SetParams) == 0x000010, "Wrong size on FortMissionSucceededParams_SetParams");
-static_assert(offsetof(FortMissionSucceededParams_SetParams, _SucceededMission) == 0x000000, "Member 'FortMissionSucceededParams_SetParams::_SucceededMission' has a wrong offset!");
+static_assert(offsetof(FortMissionSucceededParams_SetParams, mSucceededMission) == 0x000000, "Member 'FortMissionSucceededParams_SetParams::mSucceededMission' has a wrong offset!");
 static_assert(offsetof(FortMissionSucceededParams_SetParams, ThisParam) == 0x000008, "Member 'FortMissionSucceededParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortMissionFailedParams.BreakParams
@@ -2841,23 +2841,23 @@ static_assert(offsetof(FortMissionSucceededParams_SetParams, ThisParam) == 0x000
 struct FortMissionFailedParams_BreakParams final
 {
 public:
-	class AFortMission*                           _FailedMission;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortMission*                           mFailedMission;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMissionFailedParams_BreakParams) == 0x000008, "Wrong alignment on FortMissionFailedParams_BreakParams");
 static_assert(sizeof(FortMissionFailedParams_BreakParams) == 0x000008, "Wrong size on FortMissionFailedParams_BreakParams");
-static_assert(offsetof(FortMissionFailedParams_BreakParams, _FailedMission) == 0x000000, "Member 'FortMissionFailedParams_BreakParams::_FailedMission' has a wrong offset!");
+static_assert(offsetof(FortMissionFailedParams_BreakParams, mFailedMission) == 0x000000, "Member 'FortMissionFailedParams_BreakParams::mFailedMission' has a wrong offset!");
 
 // Function FortniteGame.FortMissionFailedParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortMissionFailedParams_SetParams final
 {
 public:
-	class AFortMission*                           _FailedMission;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortMission*                           mFailedMission;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortMissionFailedParams*               ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMissionFailedParams_SetParams) == 0x000008, "Wrong alignment on FortMissionFailedParams_SetParams");
 static_assert(sizeof(FortMissionFailedParams_SetParams) == 0x000010, "Wrong size on FortMissionFailedParams_SetParams");
-static_assert(offsetof(FortMissionFailedParams_SetParams, _FailedMission) == 0x000000, "Member 'FortMissionFailedParams_SetParams::_FailedMission' has a wrong offset!");
+static_assert(offsetof(FortMissionFailedParams_SetParams, mFailedMission) == 0x000000, "Member 'FortMissionFailedParams_SetParams::mFailedMission' has a wrong offset!");
 static_assert(offsetof(FortMissionFailedParams_SetParams, ThisParam) == 0x000008, "Member 'FortMissionFailedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortMissionForceSuccessParams.BreakParams
@@ -2865,24 +2865,24 @@ static_assert(offsetof(FortMissionFailedParams_SetParams, ThisParam) == 0x000008
 struct FortMissionForceSuccessParams_BreakParams final
 {
 public:
-	float                                         _FractionCompleted;                                // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         mFractionCompleted;                                // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMissionForceSuccessParams_BreakParams) == 0x000004, "Wrong alignment on FortMissionForceSuccessParams_BreakParams");
 static_assert(sizeof(FortMissionForceSuccessParams_BreakParams) == 0x000004, "Wrong size on FortMissionForceSuccessParams_BreakParams");
-static_assert(offsetof(FortMissionForceSuccessParams_BreakParams, _FractionCompleted) == 0x000000, "Member 'FortMissionForceSuccessParams_BreakParams::_FractionCompleted' has a wrong offset!");
+static_assert(offsetof(FortMissionForceSuccessParams_BreakParams, mFractionCompleted) == 0x000000, "Member 'FortMissionForceSuccessParams_BreakParams::mFractionCompleted' has a wrong offset!");
 
 // Function FortniteGame.FortMissionForceSuccessParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortMissionForceSuccessParams_SetParams final
 {
 public:
-	float                                         _FractionCompleted;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         mFractionCompleted;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortMissionForceSuccessParams*         ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMissionForceSuccessParams_SetParams) == 0x000008, "Wrong alignment on FortMissionForceSuccessParams_SetParams");
 static_assert(sizeof(FortMissionForceSuccessParams_SetParams) == 0x000010, "Wrong size on FortMissionForceSuccessParams_SetParams");
-static_assert(offsetof(FortMissionForceSuccessParams_SetParams, _FractionCompleted) == 0x000000, "Member 'FortMissionForceSuccessParams_SetParams::_FractionCompleted' has a wrong offset!");
+static_assert(offsetof(FortMissionForceSuccessParams_SetParams, mFractionCompleted) == 0x000000, "Member 'FortMissionForceSuccessParams_SetParams::mFractionCompleted' has a wrong offset!");
 static_assert(offsetof(FortMissionForceSuccessParams_SetParams, ThisParam) == 0x000008, "Member 'FortMissionForceSuccessParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortMissionNeutralCompleteParams.BreakParams
@@ -2890,23 +2890,23 @@ static_assert(offsetof(FortMissionForceSuccessParams_SetParams, ThisParam) == 0x
 struct FortMissionNeutralCompleteParams_BreakParams final
 {
 public:
-	class AFortMission*                           _NeutrallyCompletedMission;                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortMission*                           mNeutrallyCompletedMission;                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMissionNeutralCompleteParams_BreakParams) == 0x000008, "Wrong alignment on FortMissionNeutralCompleteParams_BreakParams");
 static_assert(sizeof(FortMissionNeutralCompleteParams_BreakParams) == 0x000008, "Wrong size on FortMissionNeutralCompleteParams_BreakParams");
-static_assert(offsetof(FortMissionNeutralCompleteParams_BreakParams, _NeutrallyCompletedMission) == 0x000000, "Member 'FortMissionNeutralCompleteParams_BreakParams::_NeutrallyCompletedMission' has a wrong offset!");
+static_assert(offsetof(FortMissionNeutralCompleteParams_BreakParams, mNeutrallyCompletedMission) == 0x000000, "Member 'FortMissionNeutralCompleteParams_BreakParams::mNeutrallyCompletedMission' has a wrong offset!");
 
 // Function FortniteGame.FortMissionNeutralCompleteParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortMissionNeutralCompleteParams_SetParams final
 {
 public:
-	class AFortMission*                           _NeutrallyCompletedMission;                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortMission*                           mNeutrallyCompletedMission;                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortMissionNeutralCompleteParams*      ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMissionNeutralCompleteParams_SetParams) == 0x000008, "Wrong alignment on FortMissionNeutralCompleteParams_SetParams");
 static_assert(sizeof(FortMissionNeutralCompleteParams_SetParams) == 0x000010, "Wrong size on FortMissionNeutralCompleteParams_SetParams");
-static_assert(offsetof(FortMissionNeutralCompleteParams_SetParams, _NeutrallyCompletedMission) == 0x000000, "Member 'FortMissionNeutralCompleteParams_SetParams::_NeutrallyCompletedMission' has a wrong offset!");
+static_assert(offsetof(FortMissionNeutralCompleteParams_SetParams, mNeutrallyCompletedMission) == 0x000000, "Member 'FortMissionNeutralCompleteParams_SetParams::mNeutrallyCompletedMission' has a wrong offset!");
 static_assert(offsetof(FortMissionNeutralCompleteParams_SetParams, ThisParam) == 0x000008, "Member 'FortMissionNeutralCompleteParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortAsyncAction_OpenChoiceUI.OpenChoiceUI
@@ -2929,23 +2929,23 @@ static_assert(offsetof(FortAsyncAction_OpenChoiceUI_OpenChoiceUI, ReturnValue) =
 struct FortObjectiveSucceededParams_BreakParams final
 {
 public:
-	class AFortObjectiveBase*                     _SucceededObjective;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortObjectiveBase*                     mSucceededObjective;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortObjectiveSucceededParams_BreakParams) == 0x000008, "Wrong alignment on FortObjectiveSucceededParams_BreakParams");
 static_assert(sizeof(FortObjectiveSucceededParams_BreakParams) == 0x000008, "Wrong size on FortObjectiveSucceededParams_BreakParams");
-static_assert(offsetof(FortObjectiveSucceededParams_BreakParams, _SucceededObjective) == 0x000000, "Member 'FortObjectiveSucceededParams_BreakParams::_SucceededObjective' has a wrong offset!");
+static_assert(offsetof(FortObjectiveSucceededParams_BreakParams, mSucceededObjective) == 0x000000, "Member 'FortObjectiveSucceededParams_BreakParams::mSucceededObjective' has a wrong offset!");
 
 // Function FortniteGame.FortObjectiveSucceededParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortObjectiveSucceededParams_SetParams final
 {
 public:
-	class AFortObjectiveBase*                     _SucceededObjective;                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortObjectiveBase*                     mSucceededObjective;                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortObjectiveSucceededParams*          ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortObjectiveSucceededParams_SetParams) == 0x000008, "Wrong alignment on FortObjectiveSucceededParams_SetParams");
 static_assert(sizeof(FortObjectiveSucceededParams_SetParams) == 0x000010, "Wrong size on FortObjectiveSucceededParams_SetParams");
-static_assert(offsetof(FortObjectiveSucceededParams_SetParams, _SucceededObjective) == 0x000000, "Member 'FortObjectiveSucceededParams_SetParams::_SucceededObjective' has a wrong offset!");
+static_assert(offsetof(FortObjectiveSucceededParams_SetParams, mSucceededObjective) == 0x000000, "Member 'FortObjectiveSucceededParams_SetParams::mSucceededObjective' has a wrong offset!");
 static_assert(offsetof(FortObjectiveSucceededParams_SetParams, ThisParam) == 0x000008, "Member 'FortObjectiveSucceededParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortObjectiveFailedParams.BreakParams
@@ -2953,23 +2953,23 @@ static_assert(offsetof(FortObjectiveSucceededParams_SetParams, ThisParam) == 0x0
 struct FortObjectiveFailedParams_BreakParams final
 {
 public:
-	class AFortObjectiveBase*                     _FailedObjective;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortObjectiveBase*                     mFailedObjective;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortObjectiveFailedParams_BreakParams) == 0x000008, "Wrong alignment on FortObjectiveFailedParams_BreakParams");
 static_assert(sizeof(FortObjectiveFailedParams_BreakParams) == 0x000008, "Wrong size on FortObjectiveFailedParams_BreakParams");
-static_assert(offsetof(FortObjectiveFailedParams_BreakParams, _FailedObjective) == 0x000000, "Member 'FortObjectiveFailedParams_BreakParams::_FailedObjective' has a wrong offset!");
+static_assert(offsetof(FortObjectiveFailedParams_BreakParams, mFailedObjective) == 0x000000, "Member 'FortObjectiveFailedParams_BreakParams::mFailedObjective' has a wrong offset!");
 
 // Function FortniteGame.FortObjectiveFailedParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortObjectiveFailedParams_SetParams final
 {
 public:
-	class AFortObjectiveBase*                     _FailedObjective;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortObjectiveBase*                     mFailedObjective;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortObjectiveFailedParams*             ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortObjectiveFailedParams_SetParams) == 0x000008, "Wrong alignment on FortObjectiveFailedParams_SetParams");
 static_assert(sizeof(FortObjectiveFailedParams_SetParams) == 0x000010, "Wrong size on FortObjectiveFailedParams_SetParams");
-static_assert(offsetof(FortObjectiveFailedParams_SetParams, _FailedObjective) == 0x000000, "Member 'FortObjectiveFailedParams_SetParams::_FailedObjective' has a wrong offset!");
+static_assert(offsetof(FortObjectiveFailedParams_SetParams, mFailedObjective) == 0x000000, "Member 'FortObjectiveFailedParams_SetParams::mFailedObjective' has a wrong offset!");
 static_assert(offsetof(FortObjectiveFailedParams_SetParams, ThisParam) == 0x000008, "Member 'FortObjectiveFailedParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortObjectiveNeutralCompleteParams.BreakParams
@@ -2977,23 +2977,23 @@ static_assert(offsetof(FortObjectiveFailedParams_SetParams, ThisParam) == 0x0000
 struct FortObjectiveNeutralCompleteParams_BreakParams final
 {
 public:
-	class AFortObjectiveBase*                     _NeutrallyCompletedObjective;                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortObjectiveBase*                     mNeutrallyCompletedObjective;                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortObjectiveNeutralCompleteParams_BreakParams) == 0x000008, "Wrong alignment on FortObjectiveNeutralCompleteParams_BreakParams");
 static_assert(sizeof(FortObjectiveNeutralCompleteParams_BreakParams) == 0x000008, "Wrong size on FortObjectiveNeutralCompleteParams_BreakParams");
-static_assert(offsetof(FortObjectiveNeutralCompleteParams_BreakParams, _NeutrallyCompletedObjective) == 0x000000, "Member 'FortObjectiveNeutralCompleteParams_BreakParams::_NeutrallyCompletedObjective' has a wrong offset!");
+static_assert(offsetof(FortObjectiveNeutralCompleteParams_BreakParams, mNeutrallyCompletedObjective) == 0x000000, "Member 'FortObjectiveNeutralCompleteParams_BreakParams::mNeutrallyCompletedObjective' has a wrong offset!");
 
 // Function FortniteGame.FortObjectiveNeutralCompleteParams.SetParams
 // 0x0010 (0x0010 - 0x0000)
 struct FortObjectiveNeutralCompleteParams_SetParams final
 {
 public:
-	class AFortObjectiveBase*                     _NeutrallyCompletedObjective;                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortObjectiveBase*                     mNeutrallyCompletedObjective;                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortObjectiveNeutralCompleteParams*    ThisParam;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortObjectiveNeutralCompleteParams_SetParams) == 0x000008, "Wrong alignment on FortObjectiveNeutralCompleteParams_SetParams");
 static_assert(sizeof(FortObjectiveNeutralCompleteParams_SetParams) == 0x000010, "Wrong size on FortObjectiveNeutralCompleteParams_SetParams");
-static_assert(offsetof(FortObjectiveNeutralCompleteParams_SetParams, _NeutrallyCompletedObjective) == 0x000000, "Member 'FortObjectiveNeutralCompleteParams_SetParams::_NeutrallyCompletedObjective' has a wrong offset!");
+static_assert(offsetof(FortObjectiveNeutralCompleteParams_SetParams, mNeutrallyCompletedObjective) == 0x000000, "Member 'FortObjectiveNeutralCompleteParams_SetParams::mNeutrallyCompletedObjective' has a wrong offset!");
 static_assert(offsetof(FortObjectiveNeutralCompleteParams_SetParams, ThisParam) == 0x000008, "Member 'FortObjectiveNeutralCompleteParams_SetParams::ThisParam' has a wrong offset!");
 
 // Function FortniteGame.FortToggledCursorModeParams.BreakParams
@@ -3001,13 +3001,13 @@ static_assert(offsetof(FortObjectiveNeutralCompleteParams_SetParams, ThisParam) 
 struct FortToggledCursorModeParams_BreakParams final
 {
 public:
-	class AFortPlayerController*                  _PlayerThatToggledCursorMode;                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mPlayerThatToggledCursorMode;                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InCursorMode;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortToggledCursorModeParams_BreakParams) == 0x000008, "Wrong alignment on FortToggledCursorModeParams_BreakParams");
 static_assert(sizeof(FortToggledCursorModeParams_BreakParams) == 0x000010, "Wrong size on FortToggledCursorModeParams_BreakParams");
-static_assert(offsetof(FortToggledCursorModeParams_BreakParams, _PlayerThatToggledCursorMode) == 0x000000, "Member 'FortToggledCursorModeParams_BreakParams::_PlayerThatToggledCursorMode' has a wrong offset!");
+static_assert(offsetof(FortToggledCursorModeParams_BreakParams, mPlayerThatToggledCursorMode) == 0x000000, "Member 'FortToggledCursorModeParams_BreakParams::mPlayerThatToggledCursorMode' has a wrong offset!");
 static_assert(offsetof(FortToggledCursorModeParams_BreakParams, InCursorMode) == 0x000008, "Member 'FortToggledCursorModeParams_BreakParams::InCursorMode' has a wrong offset!");
 
 // Function FortniteGame.FortToggledCursorModeParams.SetParams
@@ -3015,14 +3015,14 @@ static_assert(offsetof(FortToggledCursorModeParams_BreakParams, InCursorMode) ==
 struct FortToggledCursorModeParams_SetParams final
 {
 public:
-	class AFortPlayerController*                  _PlayerThatToggledCursorMode;                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mPlayerThatToggledCursorMode;                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InCursorMode;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortToggledCursorModeParams*           ThisParam;                                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortToggledCursorModeParams_SetParams) == 0x000008, "Wrong alignment on FortToggledCursorModeParams_SetParams");
 static_assert(sizeof(FortToggledCursorModeParams_SetParams) == 0x000018, "Wrong size on FortToggledCursorModeParams_SetParams");
-static_assert(offsetof(FortToggledCursorModeParams_SetParams, _PlayerThatToggledCursorMode) == 0x000000, "Member 'FortToggledCursorModeParams_SetParams::_PlayerThatToggledCursorMode' has a wrong offset!");
+static_assert(offsetof(FortToggledCursorModeParams_SetParams, mPlayerThatToggledCursorMode) == 0x000000, "Member 'FortToggledCursorModeParams_SetParams::mPlayerThatToggledCursorMode' has a wrong offset!");
 static_assert(offsetof(FortToggledCursorModeParams_SetParams, InCursorMode) == 0x000008, "Member 'FortToggledCursorModeParams_SetParams::InCursorMode' has a wrong offset!");
 static_assert(offsetof(FortToggledCursorModeParams_SetParams, ThisParam) == 0x000010, "Member 'FortToggledCursorModeParams_SetParams::ThisParam' has a wrong offset!");
 
@@ -3231,13 +3231,13 @@ static_assert(offsetof(FortAsyncAction_TriggerNotification_TriggerNotification, 
 struct FortToggledOptionsMenuParams_BreakParams final
 {
 public:
-	class AFortPlayerController*                  _PlayerThatToggledOptionsMenu;                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mPlayerThatToggledOptionsMenu;                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Opened;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortToggledOptionsMenuParams_BreakParams) == 0x000008, "Wrong alignment on FortToggledOptionsMenuParams_BreakParams");
 static_assert(sizeof(FortToggledOptionsMenuParams_BreakParams) == 0x000010, "Wrong size on FortToggledOptionsMenuParams_BreakParams");
-static_assert(offsetof(FortToggledOptionsMenuParams_BreakParams, _PlayerThatToggledOptionsMenu) == 0x000000, "Member 'FortToggledOptionsMenuParams_BreakParams::_PlayerThatToggledOptionsMenu' has a wrong offset!");
+static_assert(offsetof(FortToggledOptionsMenuParams_BreakParams, mPlayerThatToggledOptionsMenu) == 0x000000, "Member 'FortToggledOptionsMenuParams_BreakParams::mPlayerThatToggledOptionsMenu' has a wrong offset!");
 static_assert(offsetof(FortToggledOptionsMenuParams_BreakParams, Opened) == 0x000008, "Member 'FortToggledOptionsMenuParams_BreakParams::Opened' has a wrong offset!");
 
 // Function FortniteGame.FortToggledOptionsMenuParams.SetParams
@@ -3245,14 +3245,14 @@ static_assert(offsetof(FortToggledOptionsMenuParams_BreakParams, Opened) == 0x00
 struct FortToggledOptionsMenuParams_SetParams final
 {
 public:
-	class AFortPlayerController*                  _PlayerThatToggledOptionsMenu;                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mPlayerThatToggledOptionsMenu;                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Opened;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortToggledOptionsMenuParams*          ThisParam;                                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortToggledOptionsMenuParams_SetParams) == 0x000008, "Wrong alignment on FortToggledOptionsMenuParams_SetParams");
 static_assert(sizeof(FortToggledOptionsMenuParams_SetParams) == 0x000018, "Wrong size on FortToggledOptionsMenuParams_SetParams");
-static_assert(offsetof(FortToggledOptionsMenuParams_SetParams, _PlayerThatToggledOptionsMenu) == 0x000000, "Member 'FortToggledOptionsMenuParams_SetParams::_PlayerThatToggledOptionsMenu' has a wrong offset!");
+static_assert(offsetof(FortToggledOptionsMenuParams_SetParams, mPlayerThatToggledOptionsMenu) == 0x000000, "Member 'FortToggledOptionsMenuParams_SetParams::mPlayerThatToggledOptionsMenu' has a wrong offset!");
 static_assert(offsetof(FortToggledOptionsMenuParams_SetParams, Opened) == 0x000008, "Member 'FortToggledOptionsMenuParams_SetParams::Opened' has a wrong offset!");
 static_assert(offsetof(FortToggledOptionsMenuParams_SetParams, ThisParam) == 0x000010, "Member 'FortToggledOptionsMenuParams_SetParams::ThisParam' has a wrong offset!");
 
@@ -3261,14 +3261,14 @@ static_assert(offsetof(FortToggledOptionsMenuParams_SetParams, ThisParam) == 0x0
 struct FortToggledEditModeParams_BreakParams final
 {
 public:
-	class AFortPlayerController*                  _PlayerThatToggledEditMode;                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mPlayerThatToggledEditMode;                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ABuildingSMActor*                       EditableActor_0;                                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InEditMode;                                        // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FortToggledEditModeParams_BreakParams) == 0x000008, "Wrong alignment on FortToggledEditModeParams_BreakParams");
 static_assert(sizeof(FortToggledEditModeParams_BreakParams) == 0x000018, "Wrong size on FortToggledEditModeParams_BreakParams");
-static_assert(offsetof(FortToggledEditModeParams_BreakParams, _PlayerThatToggledEditMode) == 0x000000, "Member 'FortToggledEditModeParams_BreakParams::_PlayerThatToggledEditMode' has a wrong offset!");
+static_assert(offsetof(FortToggledEditModeParams_BreakParams, mPlayerThatToggledEditMode) == 0x000000, "Member 'FortToggledEditModeParams_BreakParams::mPlayerThatToggledEditMode' has a wrong offset!");
 static_assert(offsetof(FortToggledEditModeParams_BreakParams, EditableActor_0) == 0x000008, "Member 'FortToggledEditModeParams_BreakParams::EditableActor_0' has a wrong offset!");
 static_assert(offsetof(FortToggledEditModeParams_BreakParams, InEditMode) == 0x000010, "Member 'FortToggledEditModeParams_BreakParams::InEditMode' has a wrong offset!");
 
@@ -3277,7 +3277,7 @@ static_assert(offsetof(FortToggledEditModeParams_BreakParams, InEditMode) == 0x0
 struct FortToggledEditModeParams_SetParams final
 {
 public:
-	class AFortPlayerController*                  _PlayerThatToggledEditMode;                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerController*                  mPlayerThatToggledEditMode;                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ABuildingSMActor*                       InEditableActor;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InEditMode;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -3285,7 +3285,7 @@ public:
 };
 static_assert(alignof(FortToggledEditModeParams_SetParams) == 0x000008, "Wrong alignment on FortToggledEditModeParams_SetParams");
 static_assert(sizeof(FortToggledEditModeParams_SetParams) == 0x000020, "Wrong size on FortToggledEditModeParams_SetParams");
-static_assert(offsetof(FortToggledEditModeParams_SetParams, _PlayerThatToggledEditMode) == 0x000000, "Member 'FortToggledEditModeParams_SetParams::_PlayerThatToggledEditMode' has a wrong offset!");
+static_assert(offsetof(FortToggledEditModeParams_SetParams, mPlayerThatToggledEditMode) == 0x000000, "Member 'FortToggledEditModeParams_SetParams::mPlayerThatToggledEditMode' has a wrong offset!");
 static_assert(offsetof(FortToggledEditModeParams_SetParams, InEditableActor) == 0x000008, "Member 'FortToggledEditModeParams_SetParams::InEditableActor' has a wrong offset!");
 static_assert(offsetof(FortToggledEditModeParams_SetParams, InEditMode) == 0x000010, "Member 'FortToggledEditModeParams_SetParams::InEditMode' has a wrong offset!");
 static_assert(offsetof(FortToggledEditModeParams_SetParams, ThisParam) == 0x000018, "Member 'FortToggledEditModeParams_SetParams::ThisParam' has a wrong offset!");
@@ -3295,11 +3295,11 @@ static_assert(offsetof(FortToggledEditModeParams_SetParams, ThisParam) == 0x0000
 struct FortStartLeavingZoneParams_BreakParams final
 {
 public:
-	class AFortPlayerPawn*                        _PlayerRequestingLeaving;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerPawn*                        mPlayerRequestingLeaving;                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortStartLeavingZoneParams_BreakParams) == 0x000008, "Wrong alignment on FortStartLeavingZoneParams_BreakParams");
 static_assert(sizeof(FortStartLeavingZoneParams_BreakParams) == 0x000008, "Wrong size on FortStartLeavingZoneParams_BreakParams");
-static_assert(offsetof(FortStartLeavingZoneParams_BreakParams, _PlayerRequestingLeaving) == 0x000000, "Member 'FortStartLeavingZoneParams_BreakParams::_PlayerRequestingLeaving' has a wrong offset!");
+static_assert(offsetof(FortStartLeavingZoneParams_BreakParams, mPlayerRequestingLeaving) == 0x000000, "Member 'FortStartLeavingZoneParams_BreakParams::mPlayerRequestingLeaving' has a wrong offset!");
 
 // Function FortniteGame.FortAsyncAction_RejoinSession.RejoinSession
 // 0x0010 (0x0010 - 0x0000)
@@ -10913,14 +10913,14 @@ struct FortGameplayAbility_ApplyAccuracyToTargetLocation final
 public:
 	struct FVector                                SourceLocation;                                    // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                TargetLocation;                                    // 0x000C(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InDesiredThrowAngle;                               // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         inDesiredThrowAngle;                               // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x001C(0x000C)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortGameplayAbility_ApplyAccuracyToTargetLocation) == 0x000004, "Wrong alignment on FortGameplayAbility_ApplyAccuracyToTargetLocation");
 static_assert(sizeof(FortGameplayAbility_ApplyAccuracyToTargetLocation) == 0x000028, "Wrong size on FortGameplayAbility_ApplyAccuracyToTargetLocation");
 static_assert(offsetof(FortGameplayAbility_ApplyAccuracyToTargetLocation, SourceLocation) == 0x000000, "Member 'FortGameplayAbility_ApplyAccuracyToTargetLocation::SourceLocation' has a wrong offset!");
 static_assert(offsetof(FortGameplayAbility_ApplyAccuracyToTargetLocation, TargetLocation) == 0x00000C, "Member 'FortGameplayAbility_ApplyAccuracyToTargetLocation::TargetLocation' has a wrong offset!");
-static_assert(offsetof(FortGameplayAbility_ApplyAccuracyToTargetLocation, InDesiredThrowAngle) == 0x000018, "Member 'FortGameplayAbility_ApplyAccuracyToTargetLocation::InDesiredThrowAngle' has a wrong offset!");
+static_assert(offsetof(FortGameplayAbility_ApplyAccuracyToTargetLocation, inDesiredThrowAngle) == 0x000018, "Member 'FortGameplayAbility_ApplyAccuracyToTargetLocation::inDesiredThrowAngle' has a wrong offset!");
 static_assert(offsetof(FortGameplayAbility_ApplyAccuracyToTargetLocation, ReturnValue) == 0x00001C, "Member 'FortGameplayAbility_ApplyAccuracyToTargetLocation::ReturnValue' has a wrong offset!");
 
 // Function FortniteGame.FortGameplayAbility.DoesTargetHaveProhibitedTagsForAI
@@ -11075,9 +11075,9 @@ static_assert(offsetof(FortGameplayAbility_GetFireRotation, ReturnValue) == 0x00
 struct FortGameplayAbility_GetProjectileInitialValues final
 {
 public:
-	float                                         OutProjectileSpeed;                                // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               OutSpawnDirection;                                 // 0x0004(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         OutProjectileGravity;                              // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         outProjectileSpeed;                                // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               outSpawnDirection;                                 // 0x0004(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         outProjectileGravity;                              // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 HomingTarget;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApplyInaccuracy;                                  // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11087,9 +11087,9 @@ public:
 };
 static_assert(alignof(FortGameplayAbility_GetProjectileInitialValues) == 0x000008, "Wrong alignment on FortGameplayAbility_GetProjectileInitialValues");
 static_assert(sizeof(FortGameplayAbility_GetProjectileInitialValues) == 0x000028, "Wrong size on FortGameplayAbility_GetProjectileInitialValues");
-static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, OutProjectileSpeed) == 0x000000, "Member 'FortGameplayAbility_GetProjectileInitialValues::OutProjectileSpeed' has a wrong offset!");
-static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, OutSpawnDirection) == 0x000004, "Member 'FortGameplayAbility_GetProjectileInitialValues::OutSpawnDirection' has a wrong offset!");
-static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, OutProjectileGravity) == 0x000010, "Member 'FortGameplayAbility_GetProjectileInitialValues::OutProjectileGravity' has a wrong offset!");
+static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, outProjectileSpeed) == 0x000000, "Member 'FortGameplayAbility_GetProjectileInitialValues::outProjectileSpeed' has a wrong offset!");
+static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, outSpawnDirection) == 0x000004, "Member 'FortGameplayAbility_GetProjectileInitialValues::outSpawnDirection' has a wrong offset!");
+static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, outProjectileGravity) == 0x000010, "Member 'FortGameplayAbility_GetProjectileInitialValues::outProjectileGravity' has a wrong offset!");
 static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, HomingTarget) == 0x000018, "Member 'FortGameplayAbility_GetProjectileInitialValues::HomingTarget' has a wrong offset!");
 static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, bApplyInaccuracy) == 0x000020, "Member 'FortGameplayAbility_GetProjectileInitialValues::bApplyInaccuracy' has a wrong offset!");
 static_assert(offsetof(FortGameplayAbility_GetProjectileInitialValues, bApplyClampedMaxYawAngleToFire) == 0x000021, "Member 'FortGameplayAbility_GetProjectileInitialValues::bApplyClampedMaxYawAngleToFire' has a wrong offset!");
@@ -23470,20 +23470,6 @@ static_assert(alignof(FortMcpContext_IssueFriendCode) == 0x000004, "Wrong alignm
 static_assert(sizeof(FortMcpContext_IssueFriendCode) == 0x000010, "Wrong size on FortMcpContext_IssueFriendCode");
 static_assert(offsetof(FortMcpContext_IssueFriendCode, OnCompleteDelegate) == 0x000000, "Member 'FortMcpContext_IssueFriendCode::OnCompleteDelegate' has a wrong offset!");
 
-// DelegateFunction FortniteGame.FortMcpContext.OnIssueFriendCodeComplete__DelegateSignature
-// 0x0028 (0x0028 - 0x0000)
-struct FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature final
-{
-public:
-	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFriendCode                            FriendCode;                                        // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature) == 0x000008, "Wrong alignment on FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature");
-static_assert(sizeof(FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature) == 0x000028, "Wrong size on FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature");
-static_assert(offsetof(FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature, bSuccess) == 0x000000, "Member 'FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature::bSuccess' has a wrong offset!");
-static_assert(offsetof(FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature, FriendCode) == 0x000008, "Member 'FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature::FriendCode' has a wrong offset!");
-
 // Function FortniteGame.FortMcpContext.ListMtxPackages
 // 0x0018 (0x0018 - 0x0000)
 struct FortMcpContext_ListMtxPackages final
@@ -23508,31 +23494,6 @@ public:
 static_assert(alignof(FortMcpContext_MarkItemSeen) == 0x000008, "Wrong alignment on FortMcpContext_MarkItemSeen");
 static_assert(sizeof(FortMcpContext_MarkItemSeen) == 0x000008, "Wrong size on FortMcpContext_MarkItemSeen");
 static_assert(offsetof(FortMcpContext_MarkItemSeen, ItemToMarkSeen) == 0x000000, "Member 'FortMcpContext_MarkItemSeen::ItemToMarkSeen' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortMcpContext.OnQueryUnredeemedFriendCodesComplete__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature final
-{
-public:
-	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFriendCode>                    FriendCodes;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature) == 0x000008, "Wrong alignment on FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature");
-static_assert(sizeof(FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature) == 0x000018, "Wrong size on FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature");
-static_assert(offsetof(FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature, bSuccess) == 0x000000, "Member 'FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature::bSuccess' has a wrong offset!");
-static_assert(offsetof(FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature, FriendCodes) == 0x000008, "Member 'FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature::FriendCodes' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortMcpContext.OnSendFriendCodePlatformMessageComplete__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortMcpContext_OnSendFriendCodePlatformMessageComplete__DelegateSignature final
-{
-public:
-	bool                                          bMessageSent;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortMcpContext_OnSendFriendCodePlatformMessageComplete__DelegateSignature) == 0x000001, "Wrong alignment on FortMcpContext_OnSendFriendCodePlatformMessageComplete__DelegateSignature");
-static_assert(sizeof(FortMcpContext_OnSendFriendCodePlatformMessageComplete__DelegateSignature) == 0x000001, "Wrong size on FortMcpContext_OnSendFriendCodePlatformMessageComplete__DelegateSignature");
-static_assert(offsetof(FortMcpContext_OnSendFriendCodePlatformMessageComplete__DelegateSignature, bMessageSent) == 0x000000, "Member 'FortMcpContext_OnSendFriendCodePlatformMessageComplete__DelegateSignature::bMessageSent' has a wrong offset!");
 
 // Function FortniteGame.FortMcpContext.PurchaseRealMoneyCatalogEntry
 // 0x0020 (0x0020 - 0x0000)
@@ -23991,63 +23952,6 @@ public:
 static_assert(alignof(FortUITeamInfo_GetTeamMembers) == 0x000008, "Wrong alignment on FortUITeamInfo_GetTeamMembers");
 static_assert(sizeof(FortUITeamInfo_GetTeamMembers) == 0x000010, "Wrong size on FortUITeamInfo_GetTeamMembers");
 static_assert(offsetof(FortUITeamInfo_GetTeamMembers, TeamMembers) == 0x000000, "Member 'FortUITeamInfo_GetTeamMembers::TeamMembers' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamHitPointFractionsChanged__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature final
-{
-public:
-	TArray<float>                                 HealthFractions;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<float>                                 ShieldFractions;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature) == 0x000008, "Wrong alignment on FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature");
-static_assert(sizeof(FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature) == 0x000020, "Wrong size on FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature");
-static_assert(offsetof(FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature, HealthFractions) == 0x000000, "Member 'FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature::HealthFractions' has a wrong offset!");
-static_assert(offsetof(FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature, ShieldFractions) == 0x000010, "Member 'FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature::ShieldFractions' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberAddedDelegate__DelegateSignature
-// 0x0190 (0x0190 - 0x0000)
-struct FortUITeamInfo_OnTeamMemberAddedDelegate__DelegateSignature final
-{
-public:
-	struct FFortTeamMemberInfo                    NewTeamMemberInfo;                                 // 0x0000(0x0190)(Parm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortUITeamInfo_OnTeamMemberAddedDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortUITeamInfo_OnTeamMemberAddedDelegate__DelegateSignature");
-static_assert(sizeof(FortUITeamInfo_OnTeamMemberAddedDelegate__DelegateSignature) == 0x000190, "Wrong size on FortUITeamInfo_OnTeamMemberAddedDelegate__DelegateSignature");
-static_assert(offsetof(FortUITeamInfo_OnTeamMemberAddedDelegate__DelegateSignature, NewTeamMemberInfo) == 0x000000, "Member 'FortUITeamInfo_OnTeamMemberAddedDelegate__DelegateSignature::NewTeamMemberInfo' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct FortUITeamInfo_OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature final
-{
-public:
-	struct FUniqueNetIdRepl                       NewTeamMemberId;                                   // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortUITeamInfo_OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortUITeamInfo_OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature");
-static_assert(sizeof(FortUITeamInfo_OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature) == 0x000018, "Wrong size on FortUITeamInfo_OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature");
-static_assert(offsetof(FortUITeamInfo_OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature, NewTeamMemberId) == 0x000000, "Member 'FortUITeamInfo_OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature::NewTeamMemberId' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberRemovedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct FortUITeamInfo_OnTeamMemberRemovedDelegate__DelegateSignature final
-{
-public:
-	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortUITeamInfo_OnTeamMemberRemovedDelegate__DelegateSignature) == 0x000004, "Wrong alignment on FortUITeamInfo_OnTeamMemberRemovedDelegate__DelegateSignature");
-static_assert(sizeof(FortUITeamInfo_OnTeamMemberRemovedDelegate__DelegateSignature) == 0x000004, "Wrong size on FortUITeamInfo_OnTeamMemberRemovedDelegate__DelegateSignature");
-static_assert(offsetof(FortUITeamInfo_OnTeamMemberRemovedDelegate__DelegateSignature, PlayerIndex) == 0x000000, "Member 'FortUITeamInfo_OnTeamMemberRemovedDelegate__DelegateSignature::PlayerIndex' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberStateChangedDelegate__DelegateSignature
-// 0x0190 (0x0190 - 0x0000)
-struct FortUITeamInfo_OnTeamMemberStateChangedDelegate__DelegateSignature final
-{
-public:
-	struct FFortTeamMemberInfo                    TeamMemberInfo;                                    // 0x0000(0x0190)(Parm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortUITeamInfo_OnTeamMemberStateChangedDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortUITeamInfo_OnTeamMemberStateChangedDelegate__DelegateSignature");
-static_assert(sizeof(FortUITeamInfo_OnTeamMemberStateChangedDelegate__DelegateSignature) == 0x000190, "Wrong size on FortUITeamInfo_OnTeamMemberStateChangedDelegate__DelegateSignature");
-static_assert(offsetof(FortUITeamInfo_OnTeamMemberStateChangedDelegate__DelegateSignature, TeamMemberInfo) == 0x000000, "Member 'FortUITeamInfo_OnTeamMemberStateChangedDelegate__DelegateSignature::TeamMemberInfo' has a wrong offset!");
 
 // Function FortniteGame.FortSocialItem.GetBasicInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -26142,11 +26046,11 @@ static_assert(offsetof(FortCheatManager_ExecuteNewMissionGeneration, GeneratorNa
 struct FortCheatManager_ForceAILODs final
 {
 public:
-	EFortAILODLevel                               InForcedAILODValue;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFortAILODLevel                               inForcedAILODValue;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortCheatManager_ForceAILODs) == 0x000001, "Wrong alignment on FortCheatManager_ForceAILODs");
 static_assert(sizeof(FortCheatManager_ForceAILODs) == 0x000001, "Wrong size on FortCheatManager_ForceAILODs");
-static_assert(offsetof(FortCheatManager_ForceAILODs, InForcedAILODValue) == 0x000000, "Member 'FortCheatManager_ForceAILODs::InForcedAILODValue' has a wrong offset!");
+static_assert(offsetof(FortCheatManager_ForceAILODs, inForcedAILODValue) == 0x000000, "Member 'FortCheatManager_ForceAILODs::inForcedAILODValue' has a wrong offset!");
 
 // Function FortniteGame.FortCheatManager.ForceHeroType
 // 0x0010 (0x0010 - 0x0000)
@@ -26524,11 +26428,11 @@ static_assert(offsetof(FortCheatManager_HideHUDElement, HUDElementTag) == 0x0000
 struct FortCheatManager_KillPawns final
 {
 public:
-	TSubclassOf<class AFortPawn>                  AClass;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class AFortPawn>                  aClass;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortCheatManager_KillPawns) == 0x000008, "Wrong alignment on FortCheatManager_KillPawns");
 static_assert(sizeof(FortCheatManager_KillPawns) == 0x000008, "Wrong size on FortCheatManager_KillPawns");
-static_assert(offsetof(FortCheatManager_KillPawns, AClass) == 0x000000, "Member 'FortCheatManager_KillPawns::AClass' has a wrong offset!");
+static_assert(offsetof(FortCheatManager_KillPawns, aClass) == 0x000000, "Member 'FortCheatManager_KillPawns::aClass' has a wrong offset!");
 
 // Function FortniteGame.FortCheatManager.LiveStreamingSelectedViewers
 // 0x0010 (0x0010 - 0x0000)
@@ -26568,11 +26472,11 @@ static_assert(offsetof(FortCheatManager_LoadMissionGenerator, GeneratorName) == 
 struct FortCheatManager_MakeGods final
 {
 public:
-	TSubclassOf<class AFortPawn>                  AClass;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class AFortPawn>                  aClass;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortCheatManager_MakeGods) == 0x000008, "Wrong alignment on FortCheatManager_MakeGods");
 static_assert(sizeof(FortCheatManager_MakeGods) == 0x000008, "Wrong size on FortCheatManager_MakeGods");
-static_assert(offsetof(FortCheatManager_MakeGods, AClass) == 0x000000, "Member 'FortCheatManager_MakeGods::AClass' has a wrong offset!");
+static_assert(offsetof(FortCheatManager_MakeGods, aClass) == 0x000000, "Member 'FortCheatManager_MakeGods::aClass' has a wrong offset!");
 
 // Function FortniteGame.FortCheatManager.McpApplyAlteration
 // 0x0020 (0x0020 - 0x0000)
@@ -27392,11 +27296,11 @@ static_assert(offsetof(FortCheatManager_SetWindPixelDebugExtent, ExtentInUnrealU
 struct FortCheatManager_SetWorldDaysElapsed final
 {
 public:
-	float                                         Days;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         days;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortCheatManager_SetWorldDaysElapsed) == 0x000004, "Wrong alignment on FortCheatManager_SetWorldDaysElapsed");
 static_assert(sizeof(FortCheatManager_SetWorldDaysElapsed) == 0x000004, "Wrong size on FortCheatManager_SetWorldDaysElapsed");
-static_assert(offsetof(FortCheatManager_SetWorldDaysElapsed, Days) == 0x000000, "Member 'FortCheatManager_SetWorldDaysElapsed::Days' has a wrong offset!");
+static_assert(offsetof(FortCheatManager_SetWorldDaysElapsed, days) == 0x000000, "Member 'FortCheatManager_SetWorldDaysElapsed::days' has a wrong offset!");
 
 // Function FortniteGame.FortCheatManager.SetWorldLevel
 // 0x0004 (0x0004 - 0x0000)
@@ -27687,11 +27591,11 @@ static_assert(offsetof(FortCheatManager_TutorialRemoveHighlight, Highlight) == 0
 struct FortCheatManager_UnlockAllDefenders final
 {
 public:
-	bool                                          InUnlockAllDefenders;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          inUnlockAllDefenders;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortCheatManager_UnlockAllDefenders) == 0x000001, "Wrong alignment on FortCheatManager_UnlockAllDefenders");
 static_assert(sizeof(FortCheatManager_UnlockAllDefenders) == 0x000001, "Wrong size on FortCheatManager_UnlockAllDefenders");
-static_assert(offsetof(FortCheatManager_UnlockAllDefenders, InUnlockAllDefenders) == 0x000000, "Member 'FortCheatManager_UnlockAllDefenders::InUnlockAllDefenders' has a wrong offset!");
+static_assert(offsetof(FortCheatManager_UnlockAllDefenders, inUnlockAllDefenders) == 0x000000, "Member 'FortCheatManager_UnlockAllDefenders::inUnlockAllDefenders' has a wrong offset!");
 
 // Function FortniteGame.FortCheatManager.ShouldUseNewItemCards
 // 0x0001 (0x0001 - 0x0000)
@@ -27893,196 +27797,6 @@ public:
 static_assert(alignof(FortPartyContext_MutePartyMember) == 0x000008, "Wrong alignment on FortPartyContext_MutePartyMember");
 static_assert(sizeof(FortPartyContext_MutePartyMember) == 0x000018, "Wrong size on FortPartyContext_MutePartyMember");
 static_assert(offsetof(FortPartyContext_MutePartyMember, PartyMemberId) == 0x000000, "Member 'FortPartyContext_MutePartyMember::PartyMemberId' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnAthenaReadyStateChanged__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature final
-{
-public:
-	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bReady;                                            // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature) == 0x000020, "Wrong size on FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature, UniqueId) == 0x000000, "Member 'FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature::UniqueId' has a wrong offset!");
-static_assert(offsetof(FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature, bReady) == 0x000018, "Member 'FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature::bReady' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnClientPartyStateChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortPartyContext_OnClientPartyStateChanged__DelegateSignature final
-{
-public:
-	EFortPartyState                               PartyState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnClientPartyStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on FortPartyContext_OnClientPartyStateChanged__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnClientPartyStateChanged__DelegateSignature) == 0x000001, "Wrong size on FortPartyContext_OnClientPartyStateChanged__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnClientPartyStateChanged__DelegateSignature, PartyState) == 0x000000, "Member 'FortPartyContext_OnClientPartyStateChanged__DelegateSignature::PartyState' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnClientPlaylistChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortPartyContext_OnClientPlaylistChanged__DelegateSignature final
-{
-public:
-	EFortAthenaPlaylist                           PlaylistChanged;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnClientPlaylistChanged__DelegateSignature) == 0x000001, "Wrong alignment on FortPartyContext_OnClientPlaylistChanged__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnClientPlaylistChanged__DelegateSignature) == 0x000001, "Wrong size on FortPartyContext_OnClientPlaylistChanged__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnClientPlaylistChanged__DelegateSignature, PlaylistChanged) == 0x000000, "Member 'FortPartyContext_OnClientPlaylistChanged__DelegateSignature::PlaylistChanged' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnClientSquadFillChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortPartyContext_OnClientSquadFillChanged__DelegateSignature final
-{
-public:
-	bool                                          bSquadFill;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnClientSquadFillChanged__DelegateSignature) == 0x000001, "Wrong alignment on FortPartyContext_OnClientSquadFillChanged__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnClientSquadFillChanged__DelegateSignature) == 0x000001, "Wrong size on FortPartyContext_OnClientSquadFillChanged__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnClientSquadFillChanged__DelegateSignature, bSquadFill) == 0x000000, "Member 'FortPartyContext_OnClientSquadFillChanged__DelegateSignature::bSquadFill' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnFriendPresenceUpdated__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct FortPartyContext_OnFriendPresenceUpdated__DelegateSignature final
-{
-public:
-	struct FUniqueNetIdRepl                       FriendId;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnFriendPresenceUpdated__DelegateSignature) == 0x000008, "Wrong alignment on FortPartyContext_OnFriendPresenceUpdated__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnFriendPresenceUpdated__DelegateSignature) == 0x000018, "Wrong size on FortPartyContext_OnFriendPresenceUpdated__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnFriendPresenceUpdated__DelegateSignature, FriendId) == 0x000000, "Member 'FortPartyContext_OnFriendPresenceUpdated__DelegateSignature::FriendId' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnFriendsChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct FortPartyContext_OnFriendsChangedDelegate__DelegateSignature final
-{
-public:
-	TArray<class UFortSocialItem*>                ActiveFriends;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnFriendsChangedDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortPartyContext_OnFriendsChangedDelegate__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnFriendsChangedDelegate__DelegateSignature) == 0x000010, "Wrong size on FortPartyContext_OnFriendsChangedDelegate__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnFriendsChangedDelegate__DelegateSignature, ActiveFriends) == 0x000000, "Member 'FortPartyContext_OnFriendsChangedDelegate__DelegateSignature::ActiveFriends' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnFriendsCountChangedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct FortPartyContext_OnFriendsCountChangedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ActiveFriendsCount;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnFriendsCountChangedDelegate__DelegateSignature) == 0x000004, "Wrong alignment on FortPartyContext_OnFriendsCountChangedDelegate__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnFriendsCountChangedDelegate__DelegateSignature) == 0x000004, "Wrong size on FortPartyContext_OnFriendsCountChangedDelegate__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnFriendsCountChangedDelegate__DelegateSignature, ActiveFriendsCount) == 0x000000, "Member 'FortPartyContext_OnFriendsCountChangedDelegate__DelegateSignature::ActiveFriendsCount' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnLeaderFriendsOnlyChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortPartyContext_OnLeaderFriendsOnlyChanged__DelegateSignature final
-{
-public:
-	bool                                          bLeaderFriendsOnly;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnLeaderFriendsOnlyChanged__DelegateSignature) == 0x000001, "Wrong alignment on FortPartyContext_OnLeaderFriendsOnlyChanged__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnLeaderFriendsOnlyChanged__DelegateSignature) == 0x000001, "Wrong size on FortPartyContext_OnLeaderFriendsOnlyChanged__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnLeaderFriendsOnlyChanged__DelegateSignature, bLeaderFriendsOnly) == 0x000000, "Member 'FortPartyContext_OnLeaderFriendsOnlyChanged__DelegateSignature::bLeaderFriendsOnly' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnLeaderInvitesOnlyChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortPartyContext_OnLeaderInvitesOnlyChanged__DelegateSignature final
-{
-public:
-	bool                                          bLeaderInviteOnly;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnLeaderInvitesOnlyChanged__DelegateSignature) == 0x000001, "Wrong alignment on FortPartyContext_OnLeaderInvitesOnlyChanged__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnLeaderInvitesOnlyChanged__DelegateSignature) == 0x000001, "Wrong size on FortPartyContext_OnLeaderInvitesOnlyChanged__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnLeaderInvitesOnlyChanged__DelegateSignature, bLeaderInviteOnly) == 0x000000, "Member 'FortPartyContext_OnLeaderInvitesOnlyChanged__DelegateSignature::bLeaderInviteOnly' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyDataChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct FortPartyContext_OnPartyDataChanged__DelegateSignature final
-{
-public:
-	struct FPartyState                            PartyData;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnPartyDataChanged__DelegateSignature) == 0x000008, "Wrong alignment on FortPartyContext_OnPartyDataChanged__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnPartyDataChanged__DelegateSignature) == 0x000010, "Wrong size on FortPartyContext_OnPartyDataChanged__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnPartyDataChanged__DelegateSignature, PartyData) == 0x000000, "Member 'FortPartyContext_OnPartyDataChanged__DelegateSignature::PartyData' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyInvitesCountUpdatedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct FortPartyContext_OnPartyInvitesCountUpdatedDelegate__DelegateSignature final
-{
-public:
-	int32                                         PartyInvitesCount;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnPartyInvitesCountUpdatedDelegate__DelegateSignature) == 0x000004, "Wrong alignment on FortPartyContext_OnPartyInvitesCountUpdatedDelegate__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnPartyInvitesCountUpdatedDelegate__DelegateSignature) == 0x000004, "Wrong size on FortPartyContext_OnPartyInvitesCountUpdatedDelegate__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnPartyInvitesCountUpdatedDelegate__DelegateSignature, PartyInvitesCount) == 0x000000, "Member 'FortPartyContext_OnPartyInvitesCountUpdatedDelegate__DelegateSignature::PartyInvitesCount' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyInvitesUpdatedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct FortPartyContext_OnPartyInvitesUpdatedDelegate__DelegateSignature final
-{
-public:
-	TArray<class UFortSocialItem*>                ActiveFriends;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnPartyInvitesUpdatedDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortPartyContext_OnPartyInvitesUpdatedDelegate__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnPartyInvitesUpdatedDelegate__DelegateSignature) == 0x000010, "Wrong size on FortPartyContext_OnPartyInvitesUpdatedDelegate__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnPartyInvitesUpdatedDelegate__DelegateSignature, ActiveFriends) == 0x000000, "Member 'FortPartyContext_OnPartyInvitesUpdatedDelegate__DelegateSignature::ActiveFriends' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyTransitionCompleteDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortPartyContext_OnPartyTransitionCompleteDelegate__DelegateSignature final
-{
-public:
-	EFortPartyTransition                          PartyTransition;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnPartyTransitionCompleteDelegate__DelegateSignature) == 0x000001, "Wrong alignment on FortPartyContext_OnPartyTransitionCompleteDelegate__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnPartyTransitionCompleteDelegate__DelegateSignature) == 0x000001, "Wrong size on FortPartyContext_OnPartyTransitionCompleteDelegate__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnPartyTransitionCompleteDelegate__DelegateSignature, PartyTransition) == 0x000000, "Member 'FortPartyContext_OnPartyTransitionCompleteDelegate__DelegateSignature::PartyTransition' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyTransitionStartedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortPartyContext_OnPartyTransitionStartedDelegate__DelegateSignature final
-{
-public:
-	EFortPartyTransition                          PartyTransition;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnPartyTransitionStartedDelegate__DelegateSignature) == 0x000001, "Wrong alignment on FortPartyContext_OnPartyTransitionStartedDelegate__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnPartyTransitionStartedDelegate__DelegateSignature) == 0x000001, "Wrong size on FortPartyContext_OnPartyTransitionStartedDelegate__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnPartyTransitionStartedDelegate__DelegateSignature, PartyTransition) == 0x000000, "Member 'FortPartyContext_OnPartyTransitionStartedDelegate__DelegateSignature::PartyTransition' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyTypeChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortPartyContext_OnPartyTypeChanged__DelegateSignature final
-{
-public:
-	EPartyType                                    PartyType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnPartyTypeChanged__DelegateSignature) == 0x000001, "Wrong alignment on FortPartyContext_OnPartyTypeChanged__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnPartyTypeChanged__DelegateSignature) == 0x000001, "Wrong size on FortPartyContext_OnPartyTypeChanged__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnPartyTypeChanged__DelegateSignature, PartyType) == 0x000000, "Member 'FortPartyContext_OnPartyTypeChanged__DelegateSignature::PartyType' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPlayerStateChangedDelegate__DelegateSignature
-// 0x0190 (0x0190 - 0x0000)
-struct FortPartyContext_OnPlayerStateChangedDelegate__DelegateSignature final
-{
-public:
-	struct FFortTeamMemberInfo                    PlayerInfo;                                        // 0x0000(0x0190)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnPlayerStateChangedDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortPartyContext_OnPlayerStateChangedDelegate__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnPlayerStateChangedDelegate__DelegateSignature) == 0x000190, "Wrong size on FortPartyContext_OnPlayerStateChangedDelegate__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnPlayerStateChangedDelegate__DelegateSignature, PlayerInfo) == 0x000000, "Member 'FortPartyContext_OnPlayerStateChangedDelegate__DelegateSignature::PlayerInfo' has a wrong offset!");
-
-// DelegateFunction FortniteGame.FortPartyContext.OnSocialListChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct FortPartyContext_OnSocialListChangedDelegate__DelegateSignature final
-{
-public:
-	TArray<class UFortSocialItem*>                SocialItems;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortPartyContext_OnSocialListChangedDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortPartyContext_OnSocialListChangedDelegate__DelegateSignature");
-static_assert(sizeof(FortPartyContext_OnSocialListChangedDelegate__DelegateSignature) == 0x000010, "Wrong size on FortPartyContext_OnSocialListChangedDelegate__DelegateSignature");
-static_assert(offsetof(FortPartyContext_OnSocialListChangedDelegate__DelegateSignature, SocialItems) == 0x000000, "Member 'FortPartyContext_OnSocialListChangedDelegate__DelegateSignature::SocialItems' has a wrong offset!");
 
 // Function FortniteGame.FortPartyContext.PromotePartyMemberToLeader
 // 0x0018 (0x0018 - 0x0000)
@@ -35096,14 +34810,14 @@ static_assert(offsetof(FortMcpProfileWorld_BatchUpdatePlayers_Outpost, Context) 
 struct FortMcpProfileWorld_DepositPostResources final
 {
 public:
-	TArray<class FString>                         ItemsToDepositIds;                                 // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ItemCountsToDeposit;                               // 0x0010(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<class FString>                         itemsToDepositIds;                                 // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<int32>                                 itemCountsToDeposit;                               // 0x0010(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FDedicatedServerUrlContext             Context;                                           // 0x0020(0x0070)(Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMcpProfileWorld_DepositPostResources) == 0x000010, "Wrong alignment on FortMcpProfileWorld_DepositPostResources");
 static_assert(sizeof(FortMcpProfileWorld_DepositPostResources) == 0x000090, "Wrong size on FortMcpProfileWorld_DepositPostResources");
-static_assert(offsetof(FortMcpProfileWorld_DepositPostResources, ItemsToDepositIds) == 0x000000, "Member 'FortMcpProfileWorld_DepositPostResources::ItemsToDepositIds' has a wrong offset!");
-static_assert(offsetof(FortMcpProfileWorld_DepositPostResources, ItemCountsToDeposit) == 0x000010, "Member 'FortMcpProfileWorld_DepositPostResources::ItemCountsToDeposit' has a wrong offset!");
+static_assert(offsetof(FortMcpProfileWorld_DepositPostResources, itemsToDepositIds) == 0x000000, "Member 'FortMcpProfileWorld_DepositPostResources::itemsToDepositIds' has a wrong offset!");
+static_assert(offsetof(FortMcpProfileWorld_DepositPostResources, itemCountsToDeposit) == 0x000010, "Member 'FortMcpProfileWorld_DepositPostResources::itemCountsToDeposit' has a wrong offset!");
 static_assert(offsetof(FortMcpProfileWorld_DepositPostResources, Context) == 0x000020, "Member 'FortMcpProfileWorld_DepositPostResources::Context' has a wrong offset!");
 
 // Function FortniteGame.FortMcpProfileWorld.DisintegrateItems
@@ -35111,14 +34825,14 @@ static_assert(offsetof(FortMcpProfileWorld_DepositPostResources, Context) == 0x0
 struct FortMcpProfileWorld_DisintegrateItems final
 {
 public:
-	TArray<class FString>                         ItemsToDisintegrateIds;                            // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<int32>                                 ItemCountsToDisintegrate;                          // 0x0010(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<class FString>                         itemsToDisintegrateIds;                            // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<int32>                                 itemCountsToDisintegrate;                          // 0x0010(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FDedicatedServerUrlContext             Context;                                           // 0x0020(0x0070)(Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FortMcpProfileWorld_DisintegrateItems) == 0x000010, "Wrong alignment on FortMcpProfileWorld_DisintegrateItems");
 static_assert(sizeof(FortMcpProfileWorld_DisintegrateItems) == 0x000090, "Wrong size on FortMcpProfileWorld_DisintegrateItems");
-static_assert(offsetof(FortMcpProfileWorld_DisintegrateItems, ItemsToDisintegrateIds) == 0x000000, "Member 'FortMcpProfileWorld_DisintegrateItems::ItemsToDisintegrateIds' has a wrong offset!");
-static_assert(offsetof(FortMcpProfileWorld_DisintegrateItems, ItemCountsToDisintegrate) == 0x000010, "Member 'FortMcpProfileWorld_DisintegrateItems::ItemCountsToDisintegrate' has a wrong offset!");
+static_assert(offsetof(FortMcpProfileWorld_DisintegrateItems, itemsToDisintegrateIds) == 0x000000, "Member 'FortMcpProfileWorld_DisintegrateItems::itemsToDisintegrateIds' has a wrong offset!");
+static_assert(offsetof(FortMcpProfileWorld_DisintegrateItems, itemCountsToDisintegrate) == 0x000010, "Member 'FortMcpProfileWorld_DisintegrateItems::itemCountsToDisintegrate' has a wrong offset!");
 static_assert(offsetof(FortMcpProfileWorld_DisintegrateItems, Context) == 0x000020, "Member 'FortMcpProfileWorld_DisintegrateItems::Context' has a wrong offset!");
 
 // Function FortniteGame.FortMcpProfileWorld.FabricateItem

@@ -156,7 +156,7 @@ struct Results_TeamScoreBox_C_UpdateFlashTextType final
 {
 public:
 	struct FLinearColor                           ColorWhite;                                        // 0x0000(0x0010)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TimePassed;                                        // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         timePassed;                                        // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -169,7 +169,7 @@ public:
 static_assert(alignof(Results_TeamScoreBox_C_UpdateFlashTextType) == 0x000008, "Wrong alignment on Results_TeamScoreBox_C_UpdateFlashTextType");
 static_assert(sizeof(Results_TeamScoreBox_C_UpdateFlashTextType) == 0x000060, "Wrong size on Results_TeamScoreBox_C_UpdateFlashTextType");
 static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, ColorWhite) == 0x000000, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::ColorWhite' has a wrong offset!");
-static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, TimePassed) == 0x000010, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::TimePassed' has a wrong offset!");
+static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, timePassed) == 0x000010, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::timePassed' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000014, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000018, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_TeamScoreBox_C_UpdateFlashTextType, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00001C, "Member 'Results_TeamScoreBox_C_UpdateFlashTextType::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");

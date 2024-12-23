@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.OnKeySelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct ItemTransformKeyScreen_C_OnKeySelected__DelegateSignature final
-{
-public:
-	class UFortItem*                              Key;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ItemTransformKeyScreen_C_OnKeySelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformKeyScreen_C_OnKeySelected__DelegateSignature");
-static_assert(sizeof(ItemTransformKeyScreen_C_OnKeySelected__DelegateSignature) == 0x000008, "Wrong size on ItemTransformKeyScreen_C_OnKeySelected__DelegateSignature");
-static_assert(offsetof(ItemTransformKeyScreen_C_OnKeySelected__DelegateSignature, Key) == 0x000000, "Member 'ItemTransformKeyScreen_C_OnKeySelected__DelegateSignature::Key' has a wrong offset!");
-
 // Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.ExecuteUbergraph_ItemTransformKeyScreen
 // 0x0038 (0x0038 - 0x0000)
 struct ItemTransformKeyScreen_C_ExecuteUbergraph_ItemTransformKeyScreen final

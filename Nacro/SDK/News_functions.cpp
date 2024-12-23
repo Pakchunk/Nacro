@@ -74,9 +74,9 @@ void UNews_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClic
 // Function News.News_C.AddEntry
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             InEntryText                                            (Parm)
+// class FText                             inEntryText                                            (Parm)
 
-void UNews_C::AddEntry(const class FText& InEntryText)
+void UNews_C::AddEntry(const class FText& inEntryText)
 {
 	static class UFunction* Func = nullptr;
 
@@ -85,7 +85,7 @@ void UNews_C::AddEntry(const class FText& InEntryText)
 
 	Params::News_C_AddEntry Parms{};
 
-	Parms.InEntryText = std::move(InEntryText);
+	Parms.inEntryText = std::move(inEntryText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

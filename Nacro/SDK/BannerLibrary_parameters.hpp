@@ -28,7 +28,7 @@ public:
 	struct FLinearColor                           BG_PrimaryColor;                                   // 0x0010(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           BG_SecondaryColor;                                 // 0x0020(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               ShapeIcon;                                         // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0038(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0038(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BannerLibrary_C_GenericUpdateMaterial) == 0x000008, "Wrong alignment on BannerLibrary_C_GenericUpdateMaterial");
 static_assert(sizeof(BannerLibrary_C_GenericUpdateMaterial) == 0x000040, "Wrong size on BannerLibrary_C_GenericUpdateMaterial");
@@ -37,7 +37,7 @@ static_assert(offsetof(BannerLibrary_C_GenericUpdateMaterial, BannerIcon) == 0x0
 static_assert(offsetof(BannerLibrary_C_GenericUpdateMaterial, BG_PrimaryColor) == 0x000010, "Member 'BannerLibrary_C_GenericUpdateMaterial::BG_PrimaryColor' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_GenericUpdateMaterial, BG_SecondaryColor) == 0x000020, "Member 'BannerLibrary_C_GenericUpdateMaterial::BG_SecondaryColor' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_GenericUpdateMaterial, ShapeIcon) == 0x000030, "Member 'BannerLibrary_C_GenericUpdateMaterial::ShapeIcon' has a wrong offset!");
-static_assert(offsetof(BannerLibrary_C_GenericUpdateMaterial, __WorldContext) == 0x000038, "Member 'BannerLibrary_C_GenericUpdateMaterial::__WorldContext' has a wrong offset!");
+static_assert(offsetof(BannerLibrary_C_GenericUpdateMaterial, m_WorldContext) == 0x000038, "Member 'BannerLibrary_C_GenericUpdateMaterial::m_WorldContext' has a wrong offset!");
 
 // Function BannerLibrary.BannerLibrary_C.UpdateBannerColorOnMaterial
 // 0x0030 (0x0030 - 0x0000)
@@ -47,14 +47,14 @@ public:
 	class UMaterialInstanceDynamic*               Material;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           PrimaryBGColor;                                    // 0x0008(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           SecondaryBGColor;                                  // 0x0018(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BannerLibrary_C_UpdateBannerColorOnMaterial) == 0x000008, "Wrong alignment on BannerLibrary_C_UpdateBannerColorOnMaterial");
 static_assert(sizeof(BannerLibrary_C_UpdateBannerColorOnMaterial) == 0x000030, "Wrong size on BannerLibrary_C_UpdateBannerColorOnMaterial");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerColorOnMaterial, Material) == 0x000000, "Member 'BannerLibrary_C_UpdateBannerColorOnMaterial::Material' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerColorOnMaterial, PrimaryBGColor) == 0x000008, "Member 'BannerLibrary_C_UpdateBannerColorOnMaterial::PrimaryBGColor' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerColorOnMaterial, SecondaryBGColor) == 0x000018, "Member 'BannerLibrary_C_UpdateBannerColorOnMaterial::SecondaryBGColor' has a wrong offset!");
-static_assert(offsetof(BannerLibrary_C_UpdateBannerColorOnMaterial, __WorldContext) == 0x000028, "Member 'BannerLibrary_C_UpdateBannerColorOnMaterial::__WorldContext' has a wrong offset!");
+static_assert(offsetof(BannerLibrary_C_UpdateBannerColorOnMaterial, m_WorldContext) == 0x000028, "Member 'BannerLibrary_C_UpdateBannerColorOnMaterial::m_WorldContext' has a wrong offset!");
 
 // Function BannerLibrary.BannerLibrary_C.UpdateBannerIconOnMaterial
 // 0x0018 (0x0018 - 0x0000)
@@ -63,13 +63,13 @@ struct BannerLibrary_C_UpdateBannerIconOnMaterial final
 public:
 	class UMaterialInstanceDynamic*               Material;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               Icon;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BannerLibrary_C_UpdateBannerIconOnMaterial) == 0x000008, "Wrong alignment on BannerLibrary_C_UpdateBannerIconOnMaterial");
 static_assert(sizeof(BannerLibrary_C_UpdateBannerIconOnMaterial) == 0x000018, "Wrong size on BannerLibrary_C_UpdateBannerIconOnMaterial");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerIconOnMaterial, Material) == 0x000000, "Member 'BannerLibrary_C_UpdateBannerIconOnMaterial::Material' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerIconOnMaterial, Icon) == 0x000008, "Member 'BannerLibrary_C_UpdateBannerIconOnMaterial::Icon' has a wrong offset!");
-static_assert(offsetof(BannerLibrary_C_UpdateBannerIconOnMaterial, __WorldContext) == 0x000010, "Member 'BannerLibrary_C_UpdateBannerIconOnMaterial::__WorldContext' has a wrong offset!");
+static_assert(offsetof(BannerLibrary_C_UpdateBannerIconOnMaterial, m_WorldContext) == 0x000010, "Member 'BannerLibrary_C_UpdateBannerIconOnMaterial::m_WorldContext' has a wrong offset!");
 
 // Function BannerLibrary.BannerLibrary_C.UpdateBannerMeshMaterial_New
 // 0x00D0 (0x00D0 - 0x0000)
@@ -80,7 +80,7 @@ public:
 	bool                                          UseIconMask;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPlayerState*                       InstigatorPlayerState;                             // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               Temp_object_Variable;                              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -100,7 +100,7 @@ static_assert(sizeof(BannerLibrary_C_UpdateBannerMeshMaterial_New) == 0x0000D0, 
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterial_New, Material_Instance_Dynamic) == 0x000000, "Member 'BannerLibrary_C_UpdateBannerMeshMaterial_New::Material_Instance_Dynamic' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterial_New, UseIconMask) == 0x000008, "Member 'BannerLibrary_C_UpdateBannerMeshMaterial_New::UseIconMask' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterial_New, InstigatorPlayerState) == 0x000010, "Member 'BannerLibrary_C_UpdateBannerMeshMaterial_New::InstigatorPlayerState' has a wrong offset!");
-static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterial_New, __WorldContext) == 0x000018, "Member 'BannerLibrary_C_UpdateBannerMeshMaterial_New::__WorldContext' has a wrong offset!");
+static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterial_New, m_WorldContext) == 0x000018, "Member 'BannerLibrary_C_UpdateBannerMeshMaterial_New::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterial_New, Temp_object_Variable) == 0x000020, "Member 'BannerLibrary_C_UpdateBannerMeshMaterial_New::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterial_New, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'BannerLibrary_C_UpdateBannerMeshMaterial_New::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterial_New, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'BannerLibrary_C_UpdateBannerMeshMaterial_New::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -122,7 +122,7 @@ public:
 	struct FFortHomeBaseInfo                      Image_info;                                        // 0x0008(0x0040)(Parm)
 	bool                                          Is_Icon;                                           // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0050(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0050(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               Temp_object_Variable;                              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             CallFunc_Get_Icon_Texture_and_Colors_Icon;         // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -138,7 +138,7 @@ static_assert(sizeof(BannerLibrary_C_UpdateMaterial_New) == 0x0000A8, "Wrong siz
 static_assert(offsetof(BannerLibrary_C_UpdateMaterial_New, Banner_material) == 0x000000, "Member 'BannerLibrary_C_UpdateMaterial_New::Banner_material' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateMaterial_New, Image_info) == 0x000008, "Member 'BannerLibrary_C_UpdateMaterial_New::Image_info' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateMaterial_New, Is_Icon) == 0x000048, "Member 'BannerLibrary_C_UpdateMaterial_New::Is_Icon' has a wrong offset!");
-static_assert(offsetof(BannerLibrary_C_UpdateMaterial_New, __WorldContext) == 0x000050, "Member 'BannerLibrary_C_UpdateMaterial_New::__WorldContext' has a wrong offset!");
+static_assert(offsetof(BannerLibrary_C_UpdateMaterial_New, m_WorldContext) == 0x000050, "Member 'BannerLibrary_C_UpdateMaterial_New::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateMaterial_New, Temp_object_Variable) == 0x000058, "Member 'BannerLibrary_C_UpdateMaterial_New::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateMaterial_New, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000060, "Member 'BannerLibrary_C_UpdateMaterial_New::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateMaterial_New, CallFunc_Get_Icon_Texture_and_Colors_Icon) == 0x000068, "Member 'BannerLibrary_C_UpdateMaterial_New::CallFunc_Get_Icon_Texture_and_Colors_Icon' has a wrong offset!");
@@ -155,7 +155,7 @@ struct BannerLibrary_C_Get_Icon_Texture_and_Colors final
 public:
 	class FString                                 BannerIconId;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 BannerColorId;                                     // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Icon;                                              // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           PrimaryColor;                                      // 0x0030(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Secondary_Color;                                   // 0x0040(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -169,7 +169,7 @@ static_assert(alignof(BannerLibrary_C_Get_Icon_Texture_and_Colors) == 0x000008, 
 static_assert(sizeof(BannerLibrary_C_Get_Icon_Texture_and_Colors) == 0x000088, "Wrong size on BannerLibrary_C_Get_Icon_Texture_and_Colors");
 static_assert(offsetof(BannerLibrary_C_Get_Icon_Texture_and_Colors, BannerIconId) == 0x000000, "Member 'BannerLibrary_C_Get_Icon_Texture_and_Colors::BannerIconId' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_Get_Icon_Texture_and_Colors, BannerColorId) == 0x000010, "Member 'BannerLibrary_C_Get_Icon_Texture_and_Colors::BannerColorId' has a wrong offset!");
-static_assert(offsetof(BannerLibrary_C_Get_Icon_Texture_and_Colors, __WorldContext) == 0x000020, "Member 'BannerLibrary_C_Get_Icon_Texture_and_Colors::__WorldContext' has a wrong offset!");
+static_assert(offsetof(BannerLibrary_C_Get_Icon_Texture_and_Colors, m_WorldContext) == 0x000020, "Member 'BannerLibrary_C_Get_Icon_Texture_and_Colors::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_Get_Icon_Texture_and_Colors, Icon) == 0x000028, "Member 'BannerLibrary_C_Get_Icon_Texture_and_Colors::Icon' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_Get_Icon_Texture_and_Colors, PrimaryColor) == 0x000030, "Member 'BannerLibrary_C_Get_Icon_Texture_and_Colors::PrimaryColor' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_Get_Icon_Texture_and_Colors, Secondary_Color) == 0x000040, "Member 'BannerLibrary_C_Get_Icon_Texture_and_Colors::Secondary_Color' has a wrong offset!");
@@ -188,7 +188,7 @@ public:
 	bool                                          UseIconMask;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUniqueNetIdRepl                       UniqueId;                                          // 0x0010(0x0018)(Parm, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture*                               Temp_object_Variable;                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -207,7 +207,7 @@ static_assert(sizeof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New) ==
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New, Material_Instance_Dynamic) == 0x000000, "Member 'BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New::Material_Instance_Dynamic' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New, UseIconMask) == 0x000008, "Member 'BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New::UseIconMask' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New, UniqueId) == 0x000010, "Member 'BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New::UniqueId' has a wrong offset!");
-static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New, __WorldContext) == 0x000028, "Member 'BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New::__WorldContext' has a wrong offset!");
+static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New, m_WorldContext) == 0x000028, "Member 'BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New, Temp_object_Variable) == 0x000030, "Member 'BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'BannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New::CallFunc_IsValid_ReturnValue' has a wrong offset!");

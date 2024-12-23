@@ -30,7 +30,7 @@ public:
 	int32                                         PreviewLevel;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowInVaultDetails;                                // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          FormatForVaultDetails;                             // 0x0020(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShowPreview;                                       // 0x0021(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -93,7 +93,7 @@ static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Host_Widg
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Item) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Item' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, PreviewLevel) == 0x000010, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::PreviewLevel' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, ShowInVaultDetails) == 0x000014, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::ShowInVaultDetails' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, __WorldContext) == 0x000018, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::__WorldContext' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, m_WorldContext) == 0x000018, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, FormatForVaultDetails) == 0x000020, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::FormatForVaultDetails' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, ShowPreview) == 0x000021, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::ShowPreview' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Color) == 0x000024, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Color' has a wrong offset!");
@@ -147,9 +147,9 @@ static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_
 struct ItemUIFunctionLibrary_C_ParseLevelRequiredFromString final
 {
 public:
-	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         OutInt;                                            // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         outInt;                                            // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FindSubstring_ReturnValue;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FindSubstring_ReturnValue2;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -162,9 +162,9 @@ public:
 };
 static_assert(alignof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_ParseLevelRequiredFromString");
 static_assert(sizeof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString) == 0x000050, "Wrong size on ItemUIFunctionLibrary_C_ParseLevelRequiredFromString");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, InString) == 0x000000, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::InString' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, __WorldContext) == 0x000010, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, OutInt) == 0x000018, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::OutInt' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, inString) == 0x000000, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::inString' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, m_WorldContext) == 0x000010, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::m_WorldContext' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, outInt) == 0x000018, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::outInt' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_FindSubstring_ReturnValue) == 0x00001C, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_FindSubstring_ReturnValue2) == 0x000020, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_FindSubstring_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -181,7 +181,7 @@ struct ItemUIFunctionLibrary_C_Convert_Tier_To_Integer final
 public:
 	EFortItemTier                                 Tier;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Numeric_Tier;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemTier                                 Temp_byte_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -201,7 +201,7 @@ public:
 static_assert(alignof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_Convert_Tier_To_Integer");
 static_assert(sizeof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer) == 0x000048, "Wrong size on ItemUIFunctionLibrary_C_Convert_Tier_To_Integer");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Tier) == 0x000000, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Tier' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, __WorldContext) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::__WorldContext' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, m_WorldContext) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Numeric_Tier) == 0x000010, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Numeric_Tier' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_byte_Variable) == 0x000014, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable) == 0x000018, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable' has a wrong offset!");
@@ -226,7 +226,7 @@ public:
 	int32                                         Min_Fractional_Digits;                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Max_Fractional_Digits;                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Formatted_Value;                                   // 0x0018(0x0018)(Parm, OutParm)
 	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -273,7 +273,7 @@ static_assert(sizeof(ItemUIFunctionLibrary_C_Truncate_Integer_Value) == 0x0001E8
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Value) == 0x000000, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Value' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Min_Fractional_Digits) == 0x000004, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Min_Fractional_Digits' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Max_Fractional_Digits) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Max_Fractional_Digits' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, __WorldContext) == 0x000010, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::__WorldContext' has a wrong offset!");
+static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, m_WorldContext) == 0x000010, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Formatted_Value) == 0x000018, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Formatted_Value' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable) == 0x000030, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000034, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");

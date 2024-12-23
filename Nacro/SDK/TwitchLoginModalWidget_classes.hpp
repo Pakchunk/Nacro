@@ -30,7 +30,6 @@ public:
 	UMulticastDelegateProperty_                   OnCancelButtonClicked;                             // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnCancelButtonClicked__DelegateSignature();
 	void ExecuteUbergraph_TwitchLoginModalWidget(int32 EntryPoint);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_72_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 

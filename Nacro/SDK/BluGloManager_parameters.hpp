@@ -256,11 +256,11 @@ static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, NumBluGloToSpawn) 
 struct BluGloManager_C_StopSpawnFX final
 {
 public:
-	bool                                          Off;                                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          off;                                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BluGloManager_C_StopSpawnFX) == 0x000001, "Wrong alignment on BluGloManager_C_StopSpawnFX");
 static_assert(sizeof(BluGloManager_C_StopSpawnFX) == 0x000001, "Wrong size on BluGloManager_C_StopSpawnFX");
-static_assert(offsetof(BluGloManager_C_StopSpawnFX, Off) == 0x000000, "Member 'BluGloManager_C_StopSpawnFX::Off' has a wrong offset!");
+static_assert(offsetof(BluGloManager_C_StopSpawnFX, off) == 0x000000, "Member 'BluGloManager_C_StopSpawnFX::off' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseActor
 // 0x0130 (0x0130 - 0x0000)

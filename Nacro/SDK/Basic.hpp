@@ -187,38 +187,44 @@ static_assert(alignof(FUObjectItem) == 0x000008, "Wrong alignment on FUObjectIte
 static_assert(sizeof(FUObjectItem) == 0x000018, "Wrong size on FUObjectItem");
 static_assert(offsetof(FUObjectItem, Object) == 0x000000, "Member 'FUObjectItem::Object' has a wrong offset!");
 
-class TUObjectArray
+// Predefined struct TUObjectArray
+// 0x0010 (0x0010 - 0x0000)
+class TUObjectArray final
 {
-private:
-	static inline auto DecryptPtr = [](void* ObjPtr) -> uint8*
+public:
+	static constexpr auto DecryptPtr = [](void* ObjPtr) -> uint8*
 	{
 		return reinterpret_cast<uint8*>(ObjPtr);
 	};
 
-public:
-	FUObjectItem* Objects;
-	int32 MaxElements;
-	int32 NumElements;
+	struct FUObjectItem*                          Objects;                                           // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         MaxElements;                                       // 0x0008(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         NumElements;                                       // 0x000C(0x0004)(NOT AUTO-GENERATED PROPERTY)
 
 public:
-	inline int Num() const
+	inline int32 Num() const
 	{
 		return NumElements;
 	}
-
-	inline FUObjectItem* GetDecrytedObjPtr() const
+	
+	FUObjectItem* GetDecrytedObjPtr() const
 	{
 		return reinterpret_cast<FUObjectItem*>(DecryptPtr(Objects));
 	}
-
+	
 	inline class UObject* GetByIndex(const int32 Index) const
 	{
 		if (Index < 0 || Index > NumElements)
 			return nullptr;
-
+	
 		return GetDecrytedObjPtr()[Index].Object;
 	}
 };
+static_assert(alignof(TUObjectArray) == 0x000008, "Wrong alignment on TUObjectArray");
+static_assert(sizeof(TUObjectArray) == 0x000010, "Wrong size on TUObjectArray");
+static_assert(offsetof(TUObjectArray, Objects) == 0x000000, "Member 'TUObjectArray::Objects' has a wrong offset!");
+static_assert(offsetof(TUObjectArray, MaxElements) == 0x000008, "Member 'TUObjectArray::MaxElements' has a wrong offset!");
+static_assert(offsetof(TUObjectArray, NumElements) == 0x00000C, "Member 'TUObjectArray::NumElements' has a wrong offset!");
 
 class TUObjectArrayWrapper
 {
@@ -256,6 +262,11 @@ public:
 			InitGObjects();
 
 		return reinterpret_cast<class TUObjectArray*>(GObjectsAddress);
+	}
+
+	inline TUObjectArray& operator*() const
+	{
+		return *reinterpret_cast<class TUObjectArray*>(GObjectsAddress);
 	}
 
 	inline operator const void* ()
@@ -464,10 +475,6 @@ template<typename UEType>
 class TWeakObjectPtr : public FWeakObjectPtr
 {
 public:
-	explicit TWeakObjectPtr(UEType*)
-	{
-	}
-	
 	UEType* Get() const
 	{
 		return static_cast<UEType*>(FWeakObjectPtr::Get());
@@ -477,11 +484,6 @@ public:
 	{
 		return static_cast<UEType*>(FWeakObjectPtr::Get());
 	}
-
-	TWeakObjectPtr() = default;
-	TWeakObjectPtr(const TWeakObjectPtr&) = default;
-	TWeakObjectPtr& operator=(const TWeakObjectPtr&) = default;
-	~TWeakObjectPtr() = default;
 };
 
 // Predefined struct FUniqueObjectGuid
@@ -554,19 +556,6 @@ static_assert(offsetof(FSoftObjectPath, AssetLongPathname) == 0x000000, "Member 
 
 class FSoftObjectPtr : public TPersistentObjectPtr<FakeSoftObjectPtr::FSoftObjectPath>
 {
-public:
-	UObject* LoadAsync()
-	{
-		typedef UObject* (__fastcall* tLoadAsync)(void*);
-		static tLoadAsync LoadAsync = nullptr;
-
-		if (!LoadAsync)
-		{
-			LoadAsync = (tLoadAsync)reinterpret_cast<void*>(InSDKUtils::GetImageBase() + 0x35CC50);
-		}
-
-		return LoadAsync((void*)this);
-	}
 };
 
 template<typename UEType>
@@ -606,16 +595,6 @@ public:
 	void*                                         InterfacePointer;                                  // 0x0008(0x0008)(NOT AUTO-GENERATED PROPERTY)
 
 public:
-	void SetInterface(void* Interface)
-	{
-		InterfacePointer = Interface;
-	}
-
-	void SetObject(class UObject* InObject)
-	{
-		ObjectPointer = InObject;
-	}
-	
 	class UObject* GetObjectRef() const
 	{
 		return ObjectPointer;
@@ -639,6 +618,19 @@ class TScriptInterface final : public FScriptInterface
 {
 };
 
+// Predefined struct FScriptDelegate
+// 0x0010 (0x0010 - 0x0000)
+struct FScriptDelegate
+{
+public:
+	FWeakObjectPtr                                Object;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	FName                                         FunctionName;                                      // 0x0008(0x0008)(NOT AUTO-GENERATED PROPERTY)
+};
+static_assert(alignof(FScriptDelegate) == 0x000004, "Wrong alignment on FScriptDelegate");
+static_assert(sizeof(FScriptDelegate) == 0x000010, "Wrong size on FScriptDelegate");
+static_assert(offsetof(FScriptDelegate, Object) == 0x000000, "Member 'FScriptDelegate::Object' has a wrong offset!");
+static_assert(offsetof(FScriptDelegate, FunctionName) == 0x000008, "Member 'FScriptDelegate::FunctionName' has a wrong offset!");
+
 // Predefined struct TDelegate
 // 0x0010 (0x0010 - 0x0000)
 template<typename FunctionSignature>
@@ -655,8 +647,25 @@ template<typename Ret, typename... Args>
 class TDelegate<Ret(Args...)>
 {
 public:
-	FWeakObjectPtr                                Object;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
-	FName                                         FunctionName;                                      // 0x0008(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	FScriptDelegate                               BoundFunction;                                     // 0x0000(0x0010)(NOT AUTO-GENERATED PROPERTY)
+};
+
+// Predefined struct TMulticastInlineDelegate
+// 0x0010 (0x0010 - 0x0000)
+template<typename FunctionSignature>
+class TMulticastInlineDelegate
+{
+public:
+	struct InvalidUseOfTMulticastInlineDelegate   TemplateParamIsNotAFunctionSignature;              // 0x0000(0x0010)(NOT AUTO-GENERATED PROPERTY)
+};
+
+// Predefined struct TMulticastInlineDelegate<Ret(Args...)>
+// 0x0000 (0x0000 - 0x0000)
+template<typename Ret, typename... Args>
+class TMulticastInlineDelegate<Ret(Args...)>
+{
+public:
+	TArray<FScriptDelegate>                       InvocationList;                                    // 0x0000(0x0010)(NOT AUTO-GENERATED PROPERTY)
 };
 
 #define UE_ENUM_OPERATORS(EEnumClass)																																	\
@@ -842,7 +851,7 @@ enum class EClassCastFlags : uint64
 	SetProperty							= 0x0000800000000000,
 	EnumProperty						= 0x0001000000000000,
 	USparseDelegateFunction				= 0x0002000000000000,
-	FMulticastInlineDelegateProperty	= 0x0004000000000000,
+	FMulticasTMulticastInlineDelegateProperty	= 0x0004000000000000,
 	FMulticastSparseDelegateProperty	= 0x0008000000000000,
 	FFieldPathProperty					= 0x0010000000000000,
 	FLargeWorldCoordinatesRealProperty	= 0x0080000000000000,

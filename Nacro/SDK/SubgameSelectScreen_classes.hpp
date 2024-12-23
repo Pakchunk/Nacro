@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteUI_classes.hpp"
 #include "SubGameSelectRotatorItems_structs.hpp"
+#include "FortniteUI_classes.hpp"
 #include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 
@@ -26,9 +26,9 @@ class USubgameSelectScreen_C final : public UFortSubGameSelectBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E0(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       PanMinusP1P2;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       PanMinusP1;                                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetAnimation*                       PanMinusP2;                                        // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Pan_P1P2;                                          // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Pan_P1;                                            // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Pan_P2;                                            // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       ContractSeperator;                                 // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       ToggleCycle;                                       // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       SwitchTextures;                                    // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -54,7 +54,7 @@ public:
 	bool                                          WasLastPlayForward;                                // 0x04B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4B1[0x7];                                      // 0x04B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UProgressModalWidget_C*                 LeavingMatchmakingDialog;                          // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MIDMinusKeyart;                                    // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_Keyart;                                        // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CycleTimer;                                        // 0x04C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	int32                                         PveRotatorIndex;                                   // 0x04D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D4[0x4];                                      // 0x04D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -104,9 +104,9 @@ public:
 static_assert(alignof(USubgameSelectScreen_C) == 0x000008, "Wrong alignment on USubgameSelectScreen_C");
 static_assert(sizeof(USubgameSelectScreen_C) == 0x0004E8, "Wrong size on USubgameSelectScreen_C");
 static_assert(offsetof(USubgameSelectScreen_C, UberGraphFrame) == 0x0003E0, "Member 'USubgameSelectScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, PanMinusP1P2) == 0x0003E8, "Member 'USubgameSelectScreen_C::PanMinusP1P2' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, PanMinusP1) == 0x0003F0, "Member 'USubgameSelectScreen_C::PanMinusP1' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, PanMinusP2) == 0x0003F8, "Member 'USubgameSelectScreen_C::PanMinusP2' has a wrong offset!");
+static_assert(offsetof(USubgameSelectScreen_C, Pan_P1P2) == 0x0003E8, "Member 'USubgameSelectScreen_C::Pan_P1P2' has a wrong offset!");
+static_assert(offsetof(USubgameSelectScreen_C, Pan_P1) == 0x0003F0, "Member 'USubgameSelectScreen_C::Pan_P1' has a wrong offset!");
+static_assert(offsetof(USubgameSelectScreen_C, Pan_P2) == 0x0003F8, "Member 'USubgameSelectScreen_C::Pan_P2' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, ContractSeperator) == 0x000400, "Member 'USubgameSelectScreen_C::ContractSeperator' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, ToggleCycle) == 0x000408, "Member 'USubgameSelectScreen_C::ToggleCycle' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, SwitchTextures) == 0x000410, "Member 'USubgameSelectScreen_C::SwitchTextures' has a wrong offset!");
@@ -131,7 +131,7 @@ static_assert(offsetof(USubgameSelectScreen_C, SwitcherMenu) == 0x0004A0, "Membe
 static_assert(offsetof(USubgameSelectScreen_C, TitleImage) == 0x0004A8, "Member 'USubgameSelectScreen_C::TitleImage' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, WasLastPlayForward) == 0x0004B0, "Member 'USubgameSelectScreen_C::WasLastPlayForward' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, LeavingMatchmakingDialog) == 0x0004B8, "Member 'USubgameSelectScreen_C::LeavingMatchmakingDialog' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, MIDMinusKeyart) == 0x0004C0, "Member 'USubgameSelectScreen_C::MIDMinusKeyart' has a wrong offset!");
+static_assert(offsetof(USubgameSelectScreen_C, MID_Keyart) == 0x0004C0, "Member 'USubgameSelectScreen_C::MID_Keyart' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, CycleTimer) == 0x0004C8, "Member 'USubgameSelectScreen_C::CycleTimer' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, PveRotatorIndex) == 0x0004D0, "Member 'USubgameSelectScreen_C::PveRotatorIndex' has a wrong offset!");
 static_assert(offsetof(USubgameSelectScreen_C, Items) == 0x0004D8, "Member 'USubgameSelectScreen_C::Items' has a wrong offset!");

@@ -41,12 +41,8 @@ public:
 	UMulticastDelegateProperty_                   OnImageClicked;                                    // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnSlideAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon);
-	void OnDisperseAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon);
-	void OnMaterializeAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon);
-	void OnImageClicked__DelegateSignature();
 	void ExecuteUbergraph_RewardsIcon(int32 EntryPoint);
-	void WhiteFadeOut(float Percent);
+	void whiteFadeOut(float Percent);
 	void PreConstruct(bool IsDesignTime);
 	void Construct();
 	void PlayHideAnimation();

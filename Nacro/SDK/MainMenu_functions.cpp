@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function MainMenu.MainMenu_C.OnRequestShowFeedbackWidget__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UMainMenu_C::OnRequestShowFeedbackWidget__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "OnRequestShowFeedbackWidget__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
 // (HasDefaults)
 // Parameters:

@@ -1054,39 +1054,6 @@ static_assert(sizeof(FortItemGroupSlotWidget_InitializeSlot) == 0x000010, "Wrong
 static_assert(offsetof(FortItemGroupSlotWidget_InitializeSlot, HostItemGroupWidget_0) == 0x000000, "Member 'FortItemGroupSlotWidget_InitializeSlot::HostItemGroupWidget_0' has a wrong offset!");
 static_assert(offsetof(FortItemGroupSlotWidget_InitializeSlot, SlotIndexInGroup_0) == 0x000008, "Member 'FortItemGroupSlotWidget_InitializeSlot::SlotIndexInGroup_0' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortItemGroupSlotWidget.OnAttributeBonusValueChanged__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortItemGroupSlotWidget_OnAttributeBonusValueChanged__DelegateSignature final
-{
-public:
-	class UFortItemGroupSlotWidget*               ItemSlotWidget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortItemGroupSlotWidget_OnAttributeBonusValueChanged__DelegateSignature) == 0x000008, "Wrong alignment on FortItemGroupSlotWidget_OnAttributeBonusValueChanged__DelegateSignature");
-static_assert(sizeof(FortItemGroupSlotWidget_OnAttributeBonusValueChanged__DelegateSignature) == 0x000008, "Wrong size on FortItemGroupSlotWidget_OnAttributeBonusValueChanged__DelegateSignature");
-static_assert(offsetof(FortItemGroupSlotWidget_OnAttributeBonusValueChanged__DelegateSignature, ItemSlotWidget) == 0x000000, "Member 'FortItemGroupSlotWidget_OnAttributeBonusValueChanged__DelegateSignature::ItemSlotWidget' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortItemGroupSlotWidget.OnItemSet__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortItemGroupSlotWidget_OnItemSet__DelegateSignature final
-{
-public:
-	class UFortItemGroupSlotWidget*               ItemSlotWidget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortItemGroupSlotWidget_OnItemSet__DelegateSignature) == 0x000008, "Wrong alignment on FortItemGroupSlotWidget_OnItemSet__DelegateSignature");
-static_assert(sizeof(FortItemGroupSlotWidget_OnItemSet__DelegateSignature) == 0x000008, "Wrong size on FortItemGroupSlotWidget_OnItemSet__DelegateSignature");
-static_assert(offsetof(FortItemGroupSlotWidget_OnItemSet__DelegateSignature, ItemSlotWidget) == 0x000000, "Member 'FortItemGroupSlotWidget_OnItemSet__DelegateSignature::ItemSlotWidget' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortItemGroupSlotWidget.OnItemSlotLockedStateChanged__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortItemGroupSlotWidget_OnItemSlotLockedStateChanged__DelegateSignature final
-{
-public:
-	class UFortItemGroupSlotWidget*               ItemSlotWidget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortItemGroupSlotWidget_OnItemSlotLockedStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on FortItemGroupSlotWidget_OnItemSlotLockedStateChanged__DelegateSignature");
-static_assert(sizeof(FortItemGroupSlotWidget_OnItemSlotLockedStateChanged__DelegateSignature) == 0x000008, "Wrong size on FortItemGroupSlotWidget_OnItemSlotLockedStateChanged__DelegateSignature");
-static_assert(offsetof(FortItemGroupSlotWidget_OnItemSlotLockedStateChanged__DelegateSignature, ItemSlotWidget) == 0x000000, "Member 'FortItemGroupSlotWidget_OnItemSlotLockedStateChanged__DelegateSignature::ItemSlotWidget' has a wrong offset!");
-
 // Function FortniteUI.FortItemGroupSlotWidget.SetItem
 // 0x0008 (0x0008 - 0x0000)
 struct FortItemGroupSlotWidget_SetItem final
@@ -2231,17 +2198,6 @@ static_assert(alignof(FortBaseCanvasNode_DrillDownToNodePage) == 0x000001, "Wron
 static_assert(sizeof(FortBaseCanvasNode_DrillDownToNodePage) == 0x000001, "Wrong size on FortBaseCanvasNode_DrillDownToNodePage");
 static_assert(offsetof(FortBaseCanvasNode_DrillDownToNodePage, ReturnValue) == 0x000000, "Member 'FortBaseCanvasNode_DrillDownToNodePage::ReturnValue' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortBaseCanvasNode.OnNodeStateChanged__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortBaseCanvasNode_OnNodeStateChanged__DelegateSignature final
-{
-public:
-	class UFortBaseCanvasNode*                    Node;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortBaseCanvasNode_OnNodeStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on FortBaseCanvasNode_OnNodeStateChanged__DelegateSignature");
-static_assert(sizeof(FortBaseCanvasNode_OnNodeStateChanged__DelegateSignature) == 0x000008, "Wrong size on FortBaseCanvasNode_OnNodeStateChanged__DelegateSignature");
-static_assert(offsetof(FortBaseCanvasNode_OnNodeStateChanged__DelegateSignature, Node) == 0x000000, "Member 'FortBaseCanvasNode_OnNodeStateChanged__DelegateSignature::Node' has a wrong offset!");
-
 // Function FortniteUI.FortBaseCanvasNode.SelectedChanged
 // 0x0001 (0x0001 - 0x0000)
 struct FortBaseCanvasNode_SelectedChanged final
@@ -2661,39 +2617,6 @@ public:
 static_assert(alignof(FortGlobalUIContext_IsHUDVisible) == 0x000001, "Wrong alignment on FortGlobalUIContext_IsHUDVisible");
 static_assert(sizeof(FortGlobalUIContext_IsHUDVisible) == 0x000001, "Wrong size on FortGlobalUIContext_IsHUDVisible");
 static_assert(offsetof(FortGlobalUIContext_IsHUDVisible, ReturnValue) == 0x000000, "Member 'FortGlobalUIContext_IsHUDVisible::ReturnValue' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortGlobalUIContext.OnLoadingScreenVisibilityChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortGlobalUIContext_OnLoadingScreenVisibilityChangedDelegate__DelegateSignature final
-{
-public:
-	bool                                          IsVisible;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortGlobalUIContext_OnLoadingScreenVisibilityChangedDelegate__DelegateSignature) == 0x000001, "Wrong alignment on FortGlobalUIContext_OnLoadingScreenVisibilityChangedDelegate__DelegateSignature");
-static_assert(sizeof(FortGlobalUIContext_OnLoadingScreenVisibilityChangedDelegate__DelegateSignature) == 0x000001, "Wrong size on FortGlobalUIContext_OnLoadingScreenVisibilityChangedDelegate__DelegateSignature");
-static_assert(offsetof(FortGlobalUIContext_OnLoadingScreenVisibilityChangedDelegate__DelegateSignature, IsVisible) == 0x000000, "Member 'FortGlobalUIContext_OnLoadingScreenVisibilityChangedDelegate__DelegateSignature::IsVisible' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortGlobalUIContext.OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature final
-{
-public:
-	bool                                          bConnected;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature) == 0x000001, "Wrong alignment on FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature");
-static_assert(sizeof(FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature) == 0x000001, "Wrong size on FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature");
-static_assert(offsetof(FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature, bConnected) == 0x000000, "Member 'FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature::bConnected' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortGlobalUIContext.OnQueryFortBackendVersionDelegate__DelegateSignature
-// 0x0098 (0x0098 - 0x0000)
-struct FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature final
-{
-public:
-	struct FFortBackendVersion                    FortBackendVersion;                                // 0x0000(0x0098)(Parm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature) == 0x000008, "Wrong alignment on FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature");
-static_assert(sizeof(FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature) == 0x000098, "Wrong size on FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature");
-static_assert(offsetof(FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature, FortBackendVersion) == 0x000000, "Member 'FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature::FortBackendVersion' has a wrong offset!");
 
 // Function FortniteUI.FortGlobalUIContext.ProcessConfirmationResult
 // 0x01A0 (0x01A0 - 0x0000)
@@ -4579,17 +4502,6 @@ static_assert(alignof(FortCollectionBookRecycleSlotResultsWidget_SetCurrentItemT
 static_assert(sizeof(FortCollectionBookRecycleSlotResultsWidget_SetCurrentItemToRecycle) == 0x000008, "Wrong size on FortCollectionBookRecycleSlotResultsWidget_SetCurrentItemToRecycle");
 static_assert(offsetof(FortCollectionBookRecycleSlotResultsWidget_SetCurrentItemToRecycle, InItemToRecycle) == 0x000000, "Member 'FortCollectionBookRecycleSlotResultsWidget_SetCurrentItemToRecycle::InItemToRecycle' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortCollectionBookRewardCardWidget.OnDisplayedItemChangedEvent__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature final
-{
-public:
-	class UFortItem*                              DisplayedItem;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature");
-static_assert(sizeof(FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature) == 0x000008, "Wrong size on FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature");
-static_assert(offsetof(FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature, DisplayedItem) == 0x000000, "Member 'FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature::DisplayedItem' has a wrong offset!");
-
 // Function FortniteUI.FortCollectionBookRewardCardWidget.SetRewards
 // 0x0030 (0x0030 - 0x0000)
 struct FortCollectionBookRewardCardWidget_SetRewards final
@@ -4691,33 +4603,6 @@ public:
 static_assert(alignof(FortCollectionBookSectionPanel_OnInspectActionExecuted) == 0x000001, "Wrong alignment on FortCollectionBookSectionPanel_OnInspectActionExecuted");
 static_assert(sizeof(FortCollectionBookSectionPanel_OnInspectActionExecuted) == 0x000001, "Wrong size on FortCollectionBookSectionPanel_OnInspectActionExecuted");
 static_assert(offsetof(FortCollectionBookSectionPanel_OnInspectActionExecuted, bPassThrough) == 0x000000, "Member 'FortCollectionBookSectionPanel_OnInspectActionExecuted::bPassThrough' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortCollectionBookSectionPanel.OnItemAction__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortCollectionBookSectionPanel_OnItemAction__DelegateSignature final
-{
-public:
-	class UFortItem*                              SelectedItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortCollectionBookSectionPanel_OnItemAction__DelegateSignature) == 0x000008, "Wrong alignment on FortCollectionBookSectionPanel_OnItemAction__DelegateSignature");
-static_assert(sizeof(FortCollectionBookSectionPanel_OnItemAction__DelegateSignature) == 0x000008, "Wrong size on FortCollectionBookSectionPanel_OnItemAction__DelegateSignature");
-static_assert(offsetof(FortCollectionBookSectionPanel_OnItemAction__DelegateSignature, SelectedItem) == 0x000000, "Member 'FortCollectionBookSectionPanel_OnItemAction__DelegateSignature::SelectedItem' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortCollectionBookSectionPanel.OnItemInspectAction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature final
-{
-public:
-	class UFortItem*                              SelectedItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          EnableItemActions;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsPlaceholderItem;                                 // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature) == 0x000008, "Wrong alignment on FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature");
-static_assert(sizeof(FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature) == 0x000010, "Wrong size on FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature");
-static_assert(offsetof(FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature, SelectedItem) == 0x000000, "Member 'FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature::SelectedItem' has a wrong offset!");
-static_assert(offsetof(FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature, EnableItemActions) == 0x000008, "Member 'FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature::EnableItemActions' has a wrong offset!");
-static_assert(offsetof(FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature, IsPlaceholderItem) == 0x000009, "Member 'FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature::IsPlaceholderItem' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookSectionPanel.OnLogAllowedItemsActionExecuted
 // 0x0001 (0x0001 - 0x0000)
@@ -7201,28 +7086,6 @@ static_assert(alignof(FortGridWidgetBase_SetTileWidth) == 0x000004, "Wrong align
 static_assert(sizeof(FortGridWidgetBase_SetTileWidth) == 0x000004, "Wrong size on FortGridWidgetBase_SetTileWidth");
 static_assert(offsetof(FortGridWidgetBase_SetTileWidth, Width) == 0x000000, "Member 'FortGridWidgetBase_SetTileWidth::Width' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortGridPickerButton.CreateGridWidget__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortGridPickerButton_CreateGridWidget__DelegateSignature final
-{
-public:
-	class UFortGridPickerGrid*                    ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortGridPickerButton_CreateGridWidget__DelegateSignature) == 0x000008, "Wrong alignment on FortGridPickerButton_CreateGridWidget__DelegateSignature");
-static_assert(sizeof(FortGridPickerButton_CreateGridWidget__DelegateSignature) == 0x000008, "Wrong size on FortGridPickerButton_CreateGridWidget__DelegateSignature");
-static_assert(offsetof(FortGridPickerButton_CreateGridWidget__DelegateSignature, ReturnValue) == 0x000000, "Member 'FortGridPickerButton_CreateGridWidget__DelegateSignature::ReturnValue' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortGridPickerButton.OnIsGridPickerOpenChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortGridPickerButton_OnIsGridPickerOpenChanged__DelegateSignature final
-{
-public:
-	bool                                          IsOpen;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortGridPickerButton_OnIsGridPickerOpenChanged__DelegateSignature) == 0x000001, "Wrong alignment on FortGridPickerButton_OnIsGridPickerOpenChanged__DelegateSignature");
-static_assert(sizeof(FortGridPickerButton_OnIsGridPickerOpenChanged__DelegateSignature) == 0x000001, "Wrong size on FortGridPickerButton_OnIsGridPickerOpenChanged__DelegateSignature");
-static_assert(offsetof(FortGridPickerButton_OnIsGridPickerOpenChanged__DelegateSignature, IsOpen) == 0x000000, "Member 'FortGridPickerButton_OnIsGridPickerOpenChanged__DelegateSignature::IsOpen' has a wrong offset!");
-
 // Function FortniteUI.FortGridPickerButton.SetIsOpen
 // 0x0001 (0x0001 - 0x0000)
 struct FortGridPickerButton_SetIsOpen final
@@ -8257,31 +8120,6 @@ public:
 static_assert(alignof(FortHomebaseUIContext_GetShowHeroHeadAccessoriesForLocalPlayer) == 0x000001, "Wrong alignment on FortHomebaseUIContext_GetShowHeroHeadAccessoriesForLocalPlayer");
 static_assert(sizeof(FortHomebaseUIContext_GetShowHeroHeadAccessoriesForLocalPlayer) == 0x000001, "Wrong size on FortHomebaseUIContext_GetShowHeroHeadAccessoriesForLocalPlayer");
 static_assert(offsetof(FortHomebaseUIContext_GetShowHeroHeadAccessoriesForLocalPlayer, ReturnValue) == 0x000000, "Member 'FortHomebaseUIContext_GetShowHeroHeadAccessoriesForLocalPlayer::ReturnValue' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortHomebaseUIContext.OnNodesPurchased__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortHomebaseUIContext_OnNodesPurchased__DelegateSignature final
-{
-public:
-	class FName                                   NodeID;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortHomebaseUIContext_OnNodesPurchased__DelegateSignature) == 0x000004, "Wrong alignment on FortHomebaseUIContext_OnNodesPurchased__DelegateSignature");
-static_assert(sizeof(FortHomebaseUIContext_OnNodesPurchased__DelegateSignature) == 0x000008, "Wrong size on FortHomebaseUIContext_OnNodesPurchased__DelegateSignature");
-static_assert(offsetof(FortHomebaseUIContext_OnNodesPurchased__DelegateSignature, NodeID) == 0x000000, "Member 'FortHomebaseUIContext_OnNodesPurchased__DelegateSignature::NodeID' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortHomebaseUIContext.OnSquadSlotChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature final
-{
-public:
-	class FName                                   SquadName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SlotIndex;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature) == 0x000004, "Wrong alignment on FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature");
-static_assert(sizeof(FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature) == 0x000010, "Wrong size on FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature");
-static_assert(offsetof(FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature, SquadName) == 0x000000, "Member 'FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature::SquadName' has a wrong offset!");
-static_assert(offsetof(FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature, SlotIndex) == 0x000008, "Member 'FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature::SlotIndex' has a wrong offset!");
 
 // Function FortniteUI.FortHomebaseUIContext.SetShowHeroBackpackForLocalPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -9421,24 +9259,6 @@ public:
 static_assert(alignof(FortVaultWidget_MarkVisibleItemsSeen) == 0x000008, "Wrong alignment on FortVaultWidget_MarkVisibleItemsSeen");
 static_assert(sizeof(FortVaultWidget_MarkVisibleItemsSeen) == 0x000010, "Wrong size on FortVaultWidget_MarkVisibleItemsSeen");
 static_assert(offsetof(FortVaultWidget_MarkVisibleItemsSeen, InVisibleItems) == 0x000000, "Member 'FortVaultWidget_MarkVisibleItemsSeen::InVisibleItems' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortVaultWidget.OnRecycleItemsChanged__DelegateSignature
-// 0x0038 (0x0038 - 0x0000)
-struct FortVaultWidget_OnRecycleItemsChanged__DelegateSignature final
-{
-public:
-	EVaultItemChangedType                         ChangeType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UFortItem*>                      ChangedItems;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<struct FFortItemQuantityPair>          Resources;                                         // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<class UFortItem*>                      RecycleItems_0;                                    // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortVaultWidget_OnRecycleItemsChanged__DelegateSignature) == 0x000008, "Wrong alignment on FortVaultWidget_OnRecycleItemsChanged__DelegateSignature");
-static_assert(sizeof(FortVaultWidget_OnRecycleItemsChanged__DelegateSignature) == 0x000038, "Wrong size on FortVaultWidget_OnRecycleItemsChanged__DelegateSignature");
-static_assert(offsetof(FortVaultWidget_OnRecycleItemsChanged__DelegateSignature, ChangeType) == 0x000000, "Member 'FortVaultWidget_OnRecycleItemsChanged__DelegateSignature::ChangeType' has a wrong offset!");
-static_assert(offsetof(FortVaultWidget_OnRecycleItemsChanged__DelegateSignature, ChangedItems) == 0x000008, "Member 'FortVaultWidget_OnRecycleItemsChanged__DelegateSignature::ChangedItems' has a wrong offset!");
-static_assert(offsetof(FortVaultWidget_OnRecycleItemsChanged__DelegateSignature, Resources) == 0x000018, "Member 'FortVaultWidget_OnRecycleItemsChanged__DelegateSignature::Resources' has a wrong offset!");
-static_assert(offsetof(FortVaultWidget_OnRecycleItemsChanged__DelegateSignature, RecycleItems_0) == 0x000028, "Member 'FortVaultWidget_OnRecycleItemsChanged__DelegateSignature::RecycleItems_0' has a wrong offset!");
 
 // Function FortniteUI.FortVaultWidget.RemoveItemFromRecycling
 // 0x0008 (0x0008 - 0x0000)
@@ -10836,17 +10656,6 @@ static_assert(offsetof(FortItemWidget_OnFortItemUpdated, bItemChanged) == 0x0000
 static_assert(offsetof(FortItemWidget_OnFortItemUpdated, bAmmoChanged) == 0x000001, "Member 'FortItemWidget_OnFortItemUpdated::bAmmoChanged' has a wrong offset!");
 static_assert(offsetof(FortItemWidget_OnFortItemUpdated, bIngredientsChanged) == 0x000002, "Member 'FortItemWidget_OnFortItemUpdated::bIngredientsChanged' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortItemWidget.OnGetItemToCompare__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortItemWidget_OnGetItemToCompare__DelegateSignature final
-{
-public:
-	class UFortItem*                              ItemToCompare;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortItemWidget_OnGetItemToCompare__DelegateSignature) == 0x000008, "Wrong alignment on FortItemWidget_OnGetItemToCompare__DelegateSignature");
-static_assert(sizeof(FortItemWidget_OnGetItemToCompare__DelegateSignature) == 0x000008, "Wrong size on FortItemWidget_OnGetItemToCompare__DelegateSignature");
-static_assert(offsetof(FortItemWidget_OnGetItemToCompare__DelegateSignature, ItemToCompare) == 0x000000, "Member 'FortItemWidget_OnGetItemToCompare__DelegateSignature::ItemToCompare' has a wrong offset!");
-
 // Function FortniteUI.FortItemWidget.SetCooldownMaterial
 // 0x0008 (0x0008 - 0x0000)
 struct FortItemWidget_SetCooldownMaterial final
@@ -11292,28 +11101,6 @@ static_assert(alignof(FortSquadSlotsView_HandleSelectedButtonChanged) == 0x00000
 static_assert(sizeof(FortSquadSlotsView_HandleSelectedButtonChanged) == 0x000010, "Wrong size on FortSquadSlotsView_HandleSelectedButtonChanged");
 static_assert(offsetof(FortSquadSlotsView_HandleSelectedButtonChanged, SelectedButton) == 0x000000, "Member 'FortSquadSlotsView_HandleSelectedButtonChanged::SelectedButton' has a wrong offset!");
 static_assert(offsetof(FortSquadSlotsView_HandleSelectedButtonChanged, ButtonIndex) == 0x000008, "Member 'FortSquadSlotsView_HandleSelectedButtonChanged::ButtonIndex' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortSquadSlotsView.OnDifferentSquadSlotSelected__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct FortSquadSlotsView_OnDifferentSquadSlotSelected__DelegateSignature final
-{
-public:
-	int32                                         SquadSlotIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortSquadSlotsView_OnDifferentSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong alignment on FortSquadSlotsView_OnDifferentSquadSlotSelected__DelegateSignature");
-static_assert(sizeof(FortSquadSlotsView_OnDifferentSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong size on FortSquadSlotsView_OnDifferentSquadSlotSelected__DelegateSignature");
-static_assert(offsetof(FortSquadSlotsView_OnDifferentSquadSlotSelected__DelegateSignature, SquadSlotIndex) == 0x000000, "Member 'FortSquadSlotsView_OnDifferentSquadSlotSelected__DelegateSignature::SquadSlotIndex' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortSquadSlotsView.OnRequestOpenSquadSlot__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct FortSquadSlotsView_OnRequestOpenSquadSlot__DelegateSignature final
-{
-public:
-	int32                                         SquadSlotIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortSquadSlotsView_OnRequestOpenSquadSlot__DelegateSignature) == 0x000004, "Wrong alignment on FortSquadSlotsView_OnRequestOpenSquadSlot__DelegateSignature");
-static_assert(sizeof(FortSquadSlotsView_OnRequestOpenSquadSlot__DelegateSignature) == 0x000004, "Wrong size on FortSquadSlotsView_OnRequestOpenSquadSlot__DelegateSignature");
-static_assert(offsetof(FortSquadSlotsView_OnRequestOpenSquadSlot__DelegateSignature, SquadSlotIndex) == 0x000000, "Member 'FortSquadSlotsView_OnRequestOpenSquadSlot__DelegateSignature::SquadSlotIndex' has a wrong offset!");
 
 // Function FortniteUI.FortSquadSlotsView.SelectSlot
 // 0x0004 (0x0004 - 0x0000)
@@ -12199,17 +11986,6 @@ static_assert(alignof(FortItemPickerBase_HandlePickerTileDestroyed) == 0x000008,
 static_assert(sizeof(FortItemPickerBase_HandlePickerTileDestroyed) == 0x000008, "Wrong size on FortItemPickerBase_HandlePickerTileDestroyed");
 static_assert(offsetof(FortItemPickerBase_HandlePickerTileDestroyed, Widget) == 0x000000, "Member 'FortItemPickerBase_HandlePickerTileDestroyed::Widget' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortItemPickerBase.OnItemSelectionEvent__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortItemPickerBase_OnItemSelectionEvent__DelegateSignature final
-{
-public:
-	class UFortItem*                              SelectedItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortItemPickerBase_OnItemSelectionEvent__DelegateSignature) == 0x000008, "Wrong alignment on FortItemPickerBase_OnItemSelectionEvent__DelegateSignature");
-static_assert(sizeof(FortItemPickerBase_OnItemSelectionEvent__DelegateSignature) == 0x000008, "Wrong size on FortItemPickerBase_OnItemSelectionEvent__DelegateSignature");
-static_assert(offsetof(FortItemPickerBase_OnItemSelectionEvent__DelegateSignature, SelectedItem) == 0x000000, "Member 'FortItemPickerBase_OnItemSelectionEvent__DelegateSignature::SelectedItem' has a wrong offset!");
-
 // Function FortniteUI.FortItemPickerBase.SetSelectedIndex
 // 0x0008 (0x0008 - 0x0000)
 struct FortItemPickerBase_SetSelectedIndex final
@@ -12281,22 +12057,6 @@ public:
 static_assert(alignof(FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation) == 0x000008, "Wrong alignment on FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation");
 static_assert(sizeof(FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation) == 0x000030, "Wrong size on FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation");
 static_assert(offsetof(FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation, Accumulation) == 0x000000, "Member 'FortSurvivorSquadSummaryStatItem_SetAttributeModifierAccumulation::Accumulation' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortCollectionBookPicker.OnSlotItemConfirmed__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature final
-{
-public:
-	class UFortItem*                              ItemToSlot;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SlotId;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFortDialogExternalLatentActionHandle  LatentActionHandle;                                // 0x0010(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature) == 0x000008, "Wrong alignment on FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature");
-static_assert(sizeof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature) == 0x000018, "Wrong size on FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature");
-static_assert(offsetof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature, ItemToSlot) == 0x000000, "Member 'FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature::ItemToSlot' has a wrong offset!");
-static_assert(offsetof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature, SlotId) == 0x000008, "Member 'FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature::SlotId' has a wrong offset!");
-static_assert(offsetof(FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature, LatentActionHandle) == 0x000010, "Member 'FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature::LatentActionHandle' has a wrong offset!");
 
 // Function FortniteUI.FortCollectionBookPicker.SlotItemConfirmationComplete
 // 0x0010 (0x0010 - 0x0000)
@@ -13763,24 +13523,6 @@ static_assert(sizeof(FortUIManagerWidget_NUI_GetCachedWidget) == 0x000010, "Wron
 static_assert(offsetof(FortUIManagerWidget_NUI_GetCachedWidget, InClass) == 0x000000, "Member 'FortUIManagerWidget_NUI_GetCachedWidget::InClass' has a wrong offset!");
 static_assert(offsetof(FortUIManagerWidget_NUI_GetCachedWidget, ReturnValue) == 0x000008, "Member 'FortUIManagerWidget_NUI_GetCachedWidget::ReturnValue' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortUIManagerWidget_NUI.OnBeginSpokenDialog__DelegateSignature
-// 0x0040 (0x0040 - 0x0000)
-struct FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature final
-{
-public:
-	class UTexture2D*                             Image;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Title;                                             // 0x0008(0x0018)(Parm, NativeAccessSpecifierPublic)
-	class FText                                   Subtitle;                                          // 0x0020(0x0018)(Parm, NativeAccessSpecifierPublic)
-	EFortAnnouncementDisplayPreference            DisplayPreference;                                 // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature) == 0x000008, "Wrong alignment on FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature");
-static_assert(sizeof(FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature) == 0x000040, "Wrong size on FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature");
-static_assert(offsetof(FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature, Image) == 0x000000, "Member 'FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature::Image' has a wrong offset!");
-static_assert(offsetof(FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature, Title) == 0x000008, "Member 'FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature::Title' has a wrong offset!");
-static_assert(offsetof(FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature, Subtitle) == 0x000020, "Member 'FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature::Subtitle' has a wrong offset!");
-static_assert(offsetof(FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature, DisplayPreference) == 0x000038, "Member 'FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature::DisplayPreference' has a wrong offset!");
-
 // Function FortniteUI.FortUIManagerWidget_NUI.OnEndLatentWaitForConfirmationDialog
 // 0x0004 (0x0004 - 0x0000)
 struct FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog final
@@ -13791,17 +13533,6 @@ public:
 static_assert(alignof(FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog) == 0x000004, "Wrong alignment on FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog");
 static_assert(sizeof(FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog) == 0x000004, "Wrong size on FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog");
 static_assert(offsetof(FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog, WaitingDialogHandle) == 0x000000, "Member 'FortUIManagerWidget_NUI_OnEndLatentWaitForConfirmationDialog::WaitingDialogHandle' has a wrong offset!");
-
-// DelegateFunction FortniteUI.FortUIManagerWidget_NUI.OnShouldBlockSubtitlePortraitChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature final
-{
-public:
-	bool                                          bShouldBlockSubtitlePortrait;                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature) == 0x000001, "Wrong alignment on FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature");
-static_assert(sizeof(FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature) == 0x000001, "Wrong size on FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature");
-static_assert(offsetof(FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature, bShouldBlockSubtitlePortrait) == 0x000000, "Member 'FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature::bShouldBlockSubtitlePortrait' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.OnShowConfirmation
 // 0x0170 (0x0170 - 0x0000)
@@ -13920,14 +13651,14 @@ static_assert(offsetof(FortUIManagerWidget_NUI_UpdateStateWidgetContent, StateWi
 
 // Function FortniteUI.FortUIManagerWidget_NUI._BPGetCurrentUIState
 // 0x0001 (0x0001 - 0x0000)
-struct FortUIManagerWidget_NUI__BPGetCurrentUIState final
+struct FortUIManagerWidget_NUI_mBPGetCurrentUIState final
 {
 public:
 	EFortUIState                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget_NUI__BPGetCurrentUIState) == 0x000001, "Wrong alignment on FortUIManagerWidget_NUI__BPGetCurrentUIState");
-static_assert(sizeof(FortUIManagerWidget_NUI__BPGetCurrentUIState) == 0x000001, "Wrong size on FortUIManagerWidget_NUI__BPGetCurrentUIState");
-static_assert(offsetof(FortUIManagerWidget_NUI__BPGetCurrentUIState, ReturnValue) == 0x000000, "Member 'FortUIManagerWidget_NUI__BPGetCurrentUIState::ReturnValue' has a wrong offset!");
+static_assert(alignof(FortUIManagerWidget_NUI_mBPGetCurrentUIState) == 0x000001, "Wrong alignment on FortUIManagerWidget_NUI_mBPGetCurrentUIState");
+static_assert(sizeof(FortUIManagerWidget_NUI_mBPGetCurrentUIState) == 0x000001, "Wrong size on FortUIManagerWidget_NUI_mBPGetCurrentUIState");
+static_assert(offsetof(FortUIManagerWidget_NUI_mBPGetCurrentUIState, ReturnValue) == 0x000000, "Member 'FortUIManagerWidget_NUI_mBPGetCurrentUIState::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget_NUI.GetCurrentUIStateWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -18099,17 +17830,6 @@ static_assert(alignof(FortItemGroupSlotPicker_HandleItemSetInternal) == 0x000008
 static_assert(sizeof(FortItemGroupSlotPicker_HandleItemSetInternal) == 0x000008, "Wrong size on FortItemGroupSlotPicker_HandleItemSetInternal");
 static_assert(offsetof(FortItemGroupSlotPicker_HandleItemSetInternal, ItemGroupSlotWidget) == 0x000000, "Member 'FortItemGroupSlotPicker_HandleItemSetInternal::ItemGroupSlotWidget' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortItemGroupSlotPicker.OnItemPickerSelectionChanged__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortItemGroupSlotPicker_OnItemPickerSelectionChanged__DelegateSignature final
-{
-public:
-	class UFortItem*                              SelectedItem;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortItemGroupSlotPicker_OnItemPickerSelectionChanged__DelegateSignature) == 0x000008, "Wrong alignment on FortItemGroupSlotPicker_OnItemPickerSelectionChanged__DelegateSignature");
-static_assert(sizeof(FortItemGroupSlotPicker_OnItemPickerSelectionChanged__DelegateSignature) == 0x000008, "Wrong size on FortItemGroupSlotPicker_OnItemPickerSelectionChanged__DelegateSignature");
-static_assert(offsetof(FortItemGroupSlotPicker_OnItemPickerSelectionChanged__DelegateSignature, SelectedItem) == 0x000000, "Member 'FortItemGroupSlotPicker_OnItemPickerSelectionChanged__DelegateSignature::SelectedItem' has a wrong offset!");
-
 // Function FortniteUI.FortItemGroupSlotPicker.SetSelection
 // 0x0008 (0x0008 - 0x0000)
 struct FortItemGroupSlotPicker_SetSelection final
@@ -18379,17 +18099,6 @@ static_assert(sizeof(FortNodeGraphHost_GetTokensNeededForNodePage) == 0x000018, 
 static_assert(offsetof(FortNodeGraphHost_GetTokensNeededForNodePage, Page) == 0x000000, "Member 'FortNodeGraphHost_GetTokensNeededForNodePage::Page' has a wrong offset!");
 static_assert(offsetof(FortNodeGraphHost_GetTokensNeededForNodePage, OutTokens) == 0x000008, "Member 'FortNodeGraphHost_GetTokensNeededForNodePage::OutTokens' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortNodeGraphHost.OnPageShown__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FortNodeGraphHost_OnPageShown__DelegateSignature final
-{
-public:
-	class UFortNodeCanvasHost*                    Page;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FortNodeGraphHost_OnPageShown__DelegateSignature) == 0x000008, "Wrong alignment on FortNodeGraphHost_OnPageShown__DelegateSignature");
-static_assert(sizeof(FortNodeGraphHost_OnPageShown__DelegateSignature) == 0x000008, "Wrong size on FortNodeGraphHost_OnPageShown__DelegateSignature");
-static_assert(offsetof(FortNodeGraphHost_OnPageShown__DelegateSignature, Page) == 0x000000, "Member 'FortNodeGraphHost_OnPageShown__DelegateSignature::Page' has a wrong offset!");
-
 // Function FortniteUI.FortNodeGraphHost.SetBackgroundMaterial
 // 0x0008 (0x0008 - 0x0000)
 struct FortNodeGraphHost_SetBackgroundMaterial final
@@ -18657,24 +18366,6 @@ static_assert(alignof(FortUIManagerWidget_DisplayStateContent) == 0x000001, "Wro
 static_assert(sizeof(FortUIManagerWidget_DisplayStateContent) == 0x000001, "Wrong size on FortUIManagerWidget_DisplayStateContent");
 static_assert(offsetof(FortUIManagerWidget_DisplayStateContent, bDisplay) == 0x000000, "Member 'FortUIManagerWidget_DisplayStateContent::bDisplay' has a wrong offset!");
 
-// DelegateFunction FortniteUI.FortUIManagerWidget.OnBeginSpokenDialog__DelegateSignature
-// 0x0040 (0x0040 - 0x0000)
-struct FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature final
-{
-public:
-	class UTexture2D*                             Image;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Title;                                             // 0x0008(0x0018)(Parm, NativeAccessSpecifierPublic)
-	class FText                                   Subtitle;                                          // 0x0020(0x0018)(Parm, NativeAccessSpecifierPublic)
-	EFortAnnouncementDisplayPreference            DisplayPreference;                                 // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature) == 0x000008, "Wrong alignment on FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature");
-static_assert(sizeof(FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature) == 0x000040, "Wrong size on FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature");
-static_assert(offsetof(FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature, Image) == 0x000000, "Member 'FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature::Image' has a wrong offset!");
-static_assert(offsetof(FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature, Title) == 0x000008, "Member 'FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature::Title' has a wrong offset!");
-static_assert(offsetof(FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature, Subtitle) == 0x000020, "Member 'FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature::Subtitle' has a wrong offset!");
-static_assert(offsetof(FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature, DisplayPreference) == 0x000038, "Member 'FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature::DisplayPreference' has a wrong offset!");
-
 // Function FortniteUI.FortUIManagerWidget.OnShowConfirmation
 // 0x0170 (0x0170 - 0x0000)
 struct FortUIManagerWidget_OnShowConfirmation final
@@ -18781,14 +18472,14 @@ static_assert(offsetof(FortUIManagerWidget_UpdateStateWidgetContent, StateWidget
 
 // Function FortniteUI.FortUIManagerWidget._BPGetCurrentUIState
 // 0x0001 (0x0001 - 0x0000)
-struct FortUIManagerWidget__BPGetCurrentUIState final
+struct FortUIManagerWidget_mBPGetCurrentUIState final
 {
 public:
 	EFortUIState                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortUIManagerWidget__BPGetCurrentUIState) == 0x000001, "Wrong alignment on FortUIManagerWidget__BPGetCurrentUIState");
-static_assert(sizeof(FortUIManagerWidget__BPGetCurrentUIState) == 0x000001, "Wrong size on FortUIManagerWidget__BPGetCurrentUIState");
-static_assert(offsetof(FortUIManagerWidget__BPGetCurrentUIState, ReturnValue) == 0x000000, "Member 'FortUIManagerWidget__BPGetCurrentUIState::ReturnValue' has a wrong offset!");
+static_assert(alignof(FortUIManagerWidget_mBPGetCurrentUIState) == 0x000001, "Wrong alignment on FortUIManagerWidget_mBPGetCurrentUIState");
+static_assert(sizeof(FortUIManagerWidget_mBPGetCurrentUIState) == 0x000001, "Wrong size on FortUIManagerWidget_mBPGetCurrentUIState");
+static_assert(offsetof(FortUIManagerWidget_mBPGetCurrentUIState, ReturnValue) == 0x000000, "Member 'FortUIManagerWidget_mBPGetCurrentUIState::ReturnValue' has a wrong offset!");
 
 // Function FortniteUI.FortUIManagerWidget.GetCurrentUIStateWidget
 // 0x0008 (0x0008 - 0x0000)

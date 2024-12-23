@@ -22,10 +22,10 @@ namespace SDK
 class UItemUIFunctionLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void Add_Alteration_Widgets(class UVerticalBox* Host_Widget, class UFortItem* Item, int32 PreviewLevel, bool ShowInVaultDetails, class UObject* __WorldContext);
-	static void ParseLevelRequiredFromString(const class FString& InString, class UObject* __WorldContext, int32* OutInt);
-	static void Convert_Tier_To_Integer(EFortItemTier Tier, class UObject* __WorldContext, int32* Numeric_Tier);
-	static void Truncate_Integer_Value(int32 Value, int32 Min_Fractional_Digits, int32 Max_Fractional_Digits, class UObject* __WorldContext, class FText* Formatted_Value);
+	static void Add_Alteration_Widgets(class UVerticalBox* Host_Widget, class UFortItem* Item, int32 PreviewLevel, bool ShowInVaultDetails, class UObject* m_WorldContext);
+	static void ParseLevelRequiredFromString(const class FString& inString, class UObject* m_WorldContext, int32* outInt);
+	static void Convert_Tier_To_Integer(EFortItemTier Tier, class UObject* m_WorldContext, int32* Numeric_Tier);
+	static void Truncate_Integer_Value(int32 Value, int32 Min_Fractional_Digits, int32 Max_Fractional_Digits, class UObject* m_WorldContext, class FText* Formatted_Value);
 
 public:
 	static class UClass* StaticClass()

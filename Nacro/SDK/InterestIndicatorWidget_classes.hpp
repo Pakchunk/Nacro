@@ -29,8 +29,8 @@ public:
 	class UImage*                                 backgroundpulse;                                   // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Center;                                            // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       DecriptionText;                                    // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Largespinring;                                     // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Smallspinring;                                     // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 largespinring;                                     // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 smallspinring;                                     // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_InterestIndicatorWidget(int32 EntryPoint);
@@ -59,8 +59,8 @@ static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_1) == 0x0002A8, 
 static_assert(offsetof(UInterestIndicatorWidget_C, backgroundpulse) == 0x0002B0, "Member 'UInterestIndicatorWidget_C::backgroundpulse' has a wrong offset!");
 static_assert(offsetof(UInterestIndicatorWidget_C, Center) == 0x0002B8, "Member 'UInterestIndicatorWidget_C::Center' has a wrong offset!");
 static_assert(offsetof(UInterestIndicatorWidget_C, DecriptionText) == 0x0002C0, "Member 'UInterestIndicatorWidget_C::DecriptionText' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, Largespinring) == 0x0002C8, "Member 'UInterestIndicatorWidget_C::Largespinring' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, Smallspinring) == 0x0002D0, "Member 'UInterestIndicatorWidget_C::Smallspinring' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, largespinring) == 0x0002C8, "Member 'UInterestIndicatorWidget_C::largespinring' has a wrong offset!");
+static_assert(offsetof(UInterestIndicatorWidget_C, smallspinring) == 0x0002D0, "Member 'UInterestIndicatorWidget_C::smallspinring' has a wrong offset!");
 
 }
 

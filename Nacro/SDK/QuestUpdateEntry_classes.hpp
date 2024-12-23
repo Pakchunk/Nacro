@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "DynamicQuestUpdateInfo_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUI_classes.hpp"
-#include "DynamicQuestUpdateInfo_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -40,7 +40,6 @@ public:
 	bool                                          bConfigureAsAnnouncement;                          // 0x02A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
-	void AllQuestUpdatesFinished__DelegateSignature(class UQuestUpdateEntry_C* UpdateWidget);
 	void ExecuteUbergraph_QuestUpdateEntry(int32 EntryPoint);
 	void Construct();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
 #include "ProgressBarType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FortniteUI_structs.hpp"
 
 
 namespace SDK::Params

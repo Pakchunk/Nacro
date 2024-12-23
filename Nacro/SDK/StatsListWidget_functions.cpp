@@ -96,9 +96,9 @@ void UStatsListWidget_C::OnClearShownAttributes()
 // Function StatsListWidget.StatsListWidget_C.ToggleClampedValueMessage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InShow                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    inShow                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UStatsListWidget_C::ToggleClampedValueMessage(bool InShow)
+void UStatsListWidget_C::ToggleClampedValueMessage(bool inShow)
 {
 	static class UFunction* Func = nullptr;
 
@@ -107,7 +107,7 @@ void UStatsListWidget_C::ToggleClampedValueMessage(bool InShow)
 
 	Params::StatsListWidget_C_ToggleClampedValueMessage Parms{};
 
-	Parms.InShow = InShow;
+	Parms.inShow = inShow;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

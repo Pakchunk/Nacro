@@ -6,7 +6,7 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: V1_PlayerCameraModeBase
+// Package: v1_PlayerCameraModeBase
 
 #include "Basic.hpp"
 
@@ -18,20 +18,20 @@ namespace SDK
 
 // BlueprintGeneratedClass v1_PlayerCameraModeBase.v1_PlayerCameraModeBase_C
 // 0x0000 (0x0110 - 0x0110)
-class UV1_PlayerCameraModeBase_C : public UFortCameraMode_ThirdPerson
+class Uv1_PlayerCameraModeBase_C : public UFortCameraMode_ThirdPerson
 {
 public:
 	static class UClass* StaticClass()
 	{
 		return StaticBPGeneratedClassImpl<"v1_PlayerCameraModeBase_C">();
 	}
-	static class UV1_PlayerCameraModeBase_C* GetDefaultObj()
+	static class Uv1_PlayerCameraModeBase_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UV1_PlayerCameraModeBase_C>();
+		return GetDefaultObjImpl<Uv1_PlayerCameraModeBase_C>();
 	}
 };
-static_assert(alignof(UV1_PlayerCameraModeBase_C) == 0x000008, "Wrong alignment on UV1_PlayerCameraModeBase_C");
-static_assert(sizeof(UV1_PlayerCameraModeBase_C) == 0x000110, "Wrong size on UV1_PlayerCameraModeBase_C");
+static_assert(alignof(Uv1_PlayerCameraModeBase_C) == 0x000008, "Wrong alignment on Uv1_PlayerCameraModeBase_C");
+static_assert(sizeof(Uv1_PlayerCameraModeBase_C) == 0x000110, "Wrong size on Uv1_PlayerCameraModeBase_C");
 
 }
 

@@ -32,8 +32,6 @@ public:
 	UMulticastDelegateProperty_                   OnSlotSelected;                                    // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnSlotChosen__DelegateSignature();
-	void OnSlotSelected__DelegateSignature();
 	void ExecuteUbergraph_ItemTransformSlotEntry(int32 EntryPoint);
 	void BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature(class UCommonButton* Button, bool Selected);
 	void BndEvt__PanelButton_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

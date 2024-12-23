@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnNewSentence__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FFortConversationSentence        Sentence                                               (Parm)
-
-void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnNewSentence__DelegateSignature(const struct FFortConversationSentence& Sentence)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Announce_Gen_Quest_Conversation_FrontEndRewards_C", "OnNewSentence__DelegateSignature");
-
-	Params::Announce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature Parms{};
-
-	Parms.Sentence = std::move(Sentence);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnCurrentConversationFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnCurrentConversationFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Announce_Gen_Quest_Conversation_FrontEndRewards_C", "OnCurrentConversationFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards
 // (HasDefaults)
 // Parameters:

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function OutpostScreenStormShield.OutpostScreenStormShield_C.CloseOutpostScreen__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UOutpostScreenStormShield_C::CloseOutpostScreen__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OutpostScreenStormShield_C", "CloseOutpostScreen__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function OutpostScreenStormShield.OutpostScreenStormShield_C.ExecuteUbergraph_OutpostScreenStormShield
 // ()
 // Parameters:

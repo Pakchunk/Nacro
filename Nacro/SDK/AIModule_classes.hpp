@@ -3492,7 +3492,6 @@ public:
 	UMulticastDelegateProperty_                   OnQueryFinishedEvent;                              // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 
 public:
-	void EQSQueryDoneSignature__DelegateSignature(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, EEnvQueryStatus QueryStatus);
 	float GetItemScore(int32 ItemIndex);
 	TArray<class AActor*> GetResultsAsActors();
 	TArray<struct FVector> GetResultsAsLocations();
@@ -4256,8 +4255,6 @@ public:
 	float                                         PeripheralVisionCosine;                            // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
-	void HearNoiseDelegate__DelegateSignature(class APawn* Instigator, const struct FVector& Location, float Volume);
-	void SeePawnDelegate__DelegateSignature(class APawn* Pawn);
 	void SetPeripheralVisionAngle(const float NewPeripheralVisionAngle);
 	void SetSensingInterval(const float NewSensingInterval);
 	void SetSensingUpdatesEnabled(const bool bEnabled);

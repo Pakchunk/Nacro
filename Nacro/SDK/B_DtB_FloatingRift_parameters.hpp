@@ -19,28 +19,6 @@
 namespace SDK::Params
 {
 
-// Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.RiftLocated__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct B_DtB_FloatingRift_C_RiftLocated__DelegateSignature final
-{
-public:
-	class AFortPlayerPawn*                        FortPlayPawn;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(B_DtB_FloatingRift_C_RiftLocated__DelegateSignature) == 0x000008, "Wrong alignment on B_DtB_FloatingRift_C_RiftLocated__DelegateSignature");
-static_assert(sizeof(B_DtB_FloatingRift_C_RiftLocated__DelegateSignature) == 0x000008, "Wrong size on B_DtB_FloatingRift_C_RiftLocated__DelegateSignature");
-static_assert(offsetof(B_DtB_FloatingRift_C_RiftLocated__DelegateSignature, FortPlayPawn) == 0x000000, "Member 'B_DtB_FloatingRift_C_RiftLocated__DelegateSignature::FortPlayPawn' has a wrong offset!");
-
-// Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.CallOutVolumeOverlap__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature final
-{
-public:
-	class AFortPlayerPawn*                        FortPlayerPawn;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature) == 0x000008, "Wrong alignment on B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature");
-static_assert(sizeof(B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature) == 0x000008, "Wrong size on B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature");
-static_assert(offsetof(B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature, FortPlayerPawn) == 0x000000, "Member 'B_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature::FortPlayerPawn' has a wrong offset!");
-
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.ExecuteUbergraph_B_DtB_FloatingRift
 // 0x03D0 (0x03D0 - 0x0000)
 struct B_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift final

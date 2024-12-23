@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function PotentialResourceWidget.PotentialResourceWidget_C.FinishedShowing__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UPotentialResourceWidget_C::FinishedShowing__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PotentialResourceWidget_C", "FinishedShowing__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function PotentialResourceWidget.PotentialResourceWidget_C.ExecuteUbergraph_PotentialResourceWidget
 // ()
 // Parameters:

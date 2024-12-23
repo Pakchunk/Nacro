@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function EulaWidget.EulaWidget_C.OnEulaResponse__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Accepted                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UEulaWidget_C::OnEulaResponse__DelegateSignature(bool Accepted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EulaWidget_C", "OnEulaResponse__DelegateSignature");
-
-	Params::EulaWidget_C_OnEulaResponse__DelegateSignature Parms{};
-
-	Parms.Accepted = Accepted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function EulaWidget.EulaWidget_C.ExecuteUbergraph_EulaWidget
 // ()
 // Parameters:

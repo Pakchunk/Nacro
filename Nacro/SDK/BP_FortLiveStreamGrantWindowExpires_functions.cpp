@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.StreamTimerExpired__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UBP_FortLiveStreamGrantWindowExpires_C::StreamTimerExpired__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortLiveStreamGrantWindowExpires_C", "StreamTimerExpired__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.StreamTimerStarted__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UBP_FortLiveStreamGrantWindowExpires_C::StreamTimerStarted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortLiveStreamGrantWindowExpires_C", "StreamTimerStarted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires
 // (HasDefaults)
 // Parameters:

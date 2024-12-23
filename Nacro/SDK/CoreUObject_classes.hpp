@@ -30,7 +30,7 @@ public:
 
 public:
 	static class UObject* FindObjectFastImpl(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None);
-	static class UObject* FindObjectImpl(const std::string& FullName, EClassCastFlags RequiredType = EClassCastFlags::None, bool bExact = true);
+	static class UObject* FindObjectImpl(const std::string& FullName, EClassCastFlags RequiredType = EClassCastFlags::None);
 
 	std::string GetFullName() const;
 	std::string GetName() const;
@@ -52,9 +52,9 @@ public:
 	}
 	
 	template<typename UEType = UObject>
-	static UEType* FindObject(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None, bool bExact = true)
+	static UEType* FindObject(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None)
 	{
-		return static_cast<UEType*>(FindObjectImpl(Name, RequiredType, bExact));
+		return static_cast<UEType*>(FindObjectImpl(Name, RequiredType));
 	}
 	template<typename UEType = UObject>
 	static UEType* FindObjectFast(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None)
@@ -65,19 +65,6 @@ public:
 	void ProcessEvent(class UFunction* Function, void* Parms) const
 	{
 		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(const UObject*, class UFunction*, void*)>(this, Offsets::ProcessEventIdx), this, Function, Parms);
-	}
-
-	void* GetInterfaceAddress(UObject* OuterClass)
-	{
-		typedef void* (__fastcall* tGetInterfaceAddress)(UObject*, UObject*);
-		static tGetInterfaceAddress GetInterfaceAddress = nullptr;
-
-		if (!GetInterfaceAddress)
-		{
-			GetInterfaceAddress = (tGetInterfaceAddress)reinterpret_cast<void*>(InSDKUtils::GetImageBase() + 0xDFC510);
-		}
-
-		return GetInterfaceAddress(this, OuterClass);
 	}
 };
 static_assert(alignof(UObject) == 0x000008, "Wrong alignment on UObject");
@@ -118,11 +105,6 @@ public:
 	uint8                                         Pad_28[0xB8];                                      // 0x0028(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	/*bool WriteObject(FArchive* Ar, UObject* InOuter, FNetworkGUID NetGUID, FString ObjName)
-	{
-		typedef bool(__fastcall* tWriteObject)(UPackageMap*, void*, UObject*, FNetworkGUID, FString);
-		return reinterpret_cast<tWriteObject>(static_cast<bool**>(this->VTable)[0x47])(this, Ar, InOuter, NetGUID, ObjName);
-	}*/
 	static class UClass* StaticClass()
 	{
 		return StaticClassImpl<"PackageMap">();
@@ -342,87 +324,21 @@ static_assert(sizeof(UClass) == 0x000250, "Wrong size on UClass");
 static_assert(offsetof(UClass, CastFlags) == 0x0000B8, "Member 'UClass::CastFlags' has a wrong offset!");
 static_assert(offsetof(UClass, DefaultObject) == 0x000100, "Member 'UClass::DefaultObject' has a wrong offset!");
 
-struct FOutParmRec
-{
-	UProperty* Property;
-	uint8* PropAddr;
-	FOutParmRec* NextOutParm;
-};
-
 struct FFrame
 {
-	char PadOne[0x10];
-	UFunction* Node;
+	char pad[0x10];
+	class UFunction* Node;
 	UObject* Object;
 	uint8* Code; // 0x20
 	uint8* Locals; // 0x28
-
-	UProperty* MostRecentProperty; // 0x30
-	uint8* MostRecentPropertyAddress; // 0x38
-	
-	char PadTwo[0x30];
-	//void* FlowStack; // TAllocatedSizeArray did not exist in 4.16. At all.
-	
-	FFrame* PreviousFrame;
-
-	FOutParmRec* OutParms;
-
-	UField* PropertyChainForCompiledIn;
-
-	UFunction* CurrentNativeFunction;
-
-	bool bArrayContextFailed;
-private:
-	void Step(UObject* Context, void* const Z_Param__Result)
-	{
-		typedef void(__fastcall* tStep)(FFrame*, UObject*, void*);
-		static tStep Step = nullptr;
-
-		if (!Step)
-		{
-			Step = (tStep)(uintptr_t(GetModuleHandleA(0)) + 0x13E0650);
-		}
-
-		return Step(this, Context, Z_Param__Result);
-	}
-
-	void StepExplicitProperty(void* const Result, UProperty* Property)
-	{
-		typedef void(__fastcall* tStepExplicitProperty)(FFrame*, void*, UProperty*);
-		static tStepExplicitProperty StepExplicitProperty = nullptr;
-
-		if (!StepExplicitProperty)
-		{
-			StepExplicitProperty = (tStepExplicitProperty)(uintptr_t(GetModuleHandleA(0)) + 0x13E0680);
-		}
-
-		return StepExplicitProperty(this, Result, Property);
-	}
-
-public:
-	template<class TProperty>
-	void StepCompiledIn(void* const Result)
-	{
-		if (Code)
-		{
-			Step(Object, Result);
-		}
-		else
-		{
-			TProperty* Property = (TProperty*)PropertyChainForCompiledIn;
-			PropertyChainForCompiledIn = Property->Next;
-
-			StepExplicitProperty(Result, Property);
-		}
-	}
 };
-	
+
 // Class CoreUObject.Function
 // 0x0030 (0x00B8 - 0x0088)
 class UFunction : public UStruct
 {
 public:
-	using FNativeFuncPtr = void (*)(UObject* Context, FFrame& TheStack, void* Result);                    // 0x0000(0x0000)(NOT AUTO-GENERATED PROPERTY)
+	using FNativeFuncPtr = void (*)(UObject* Context, FFrame& TheStack, void* Result);
 
 	uint32                                        FunctionFlags;                                     // 0x0088(0x0008)(NOT AUTO-GENERATED PROPERTY)
 	uint8                                         Pad_90[0x20];                                      // 0x0090(0x0020)(Fixing Size After Last Property [ Dumper-7 ])

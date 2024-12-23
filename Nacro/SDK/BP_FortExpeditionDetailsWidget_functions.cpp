@@ -380,9 +380,9 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Remaining_Expiration_Time(class UFor
 // Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set In Progress State
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortExpeditionItem*              Self2                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItem*              self2                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionDetailsWidget_C::Set_In_Progress_State(class UFortExpeditionItem* Self2)
+void UBP_FortExpeditionDetailsWidget_C::Set_In_Progress_State(class UFortExpeditionItem* self2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -391,7 +391,7 @@ void UBP_FortExpeditionDetailsWidget_C::Set_In_Progress_State(class UFortExpedit
 
 	Params::BP_FortExpeditionDetailsWidget_C_Set_In_Progress_State Parms{};
 
-	Parms.Self2 = Self2;
+	Parms.self2 = self2;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

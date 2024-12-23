@@ -41,7 +41,6 @@ public:
 	bool                                          bIgnoreBuildExpeditionAction;                      // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnCollectCompletedExpedition__DelegateSignature();
 	void ExecuteUbergraph_BP_FortExpeditionOverviewWidget(int32 EntryPoint);
 	void BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_38_OnItemHovered__DelegateSignature(class UObject* Item);
 	void BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_12_OnItemClicked__DelegateSignature(class UObject* Item);

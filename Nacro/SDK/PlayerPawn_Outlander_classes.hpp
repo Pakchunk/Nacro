@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "E_Outlander_FragmentTypes_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
-#include "PlayerPawn_Generic_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_Outlander_FragmentTypes_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "PlayerPawn_Generic_classes.hpp"
 
 
 namespace SDK

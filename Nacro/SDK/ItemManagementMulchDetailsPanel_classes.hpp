@@ -34,7 +34,6 @@ public:
 	UMulticastDelegateProperty_                   MulchListChanged;                                  // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void MulchListChanged__DelegateSignature();
 	void ExecuteUbergraph_ItemManagementMulchDetailsPanel(int32 EntryPoint);
 	void BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void HandleSetOfItemsToMulchChangedBP();

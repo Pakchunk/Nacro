@@ -17,68 +17,6 @@
 namespace SDK
 {
 
-// Function Results_CommanderXPBar.Results_CommanderXPBar_C.CountFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_CommanderXPBar_C::CountFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_CommanderXPBar_C", "CountFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Results_CommanderXPBar.Results_CommanderXPBar_C.LeveledUp__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewLevel                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UResults_CommanderXPBar_C::LeveledUp__DelegateSignature(int32 NewLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_CommanderXPBar_C", "LeveledUp__DelegateSignature");
-
-	Params::Results_CommanderXPBar_C_LeveledUp__DelegateSignature Parms{};
-
-	Parms.NewLevel = NewLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Results_CommanderXPBar.Results_CommanderXPBar_C.IntroFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_CommanderXPBar_C::IntroFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_CommanderXPBar_C", "IntroFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Results_CommanderXPBar.Results_CommanderXPBar_C.CountIncrement__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_CommanderXPBar_C::CountIncrement__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_CommanderXPBar_C", "CountIncrement__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.ExecuteUbergraph_Results_CommanderXPBar
 // (HasDefaults)
 // Parameters:
@@ -276,7 +214,7 @@ void UResults_CommanderXPBar_C::PlayAnimationCommon(class UWidgetAnimation* Anim
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.clearXpBar
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UResults_CommanderXPBar_C::ClearXpBar()
+void UResults_CommanderXPBar_C::clearXpBar()
 {
 	static class UFunction* Func = nullptr;
 
@@ -290,7 +228,7 @@ void UResults_CommanderXPBar_C::ClearXpBar()
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.updateXpType
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UResults_CommanderXPBar_C::UpdateXpType()
+void UResults_CommanderXPBar_C::updateXpType()
 {
 	static class UFunction* Func = nullptr;
 

@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function Lightbox.Lightbox_C.IntroEnded__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void ULightbox_C::IntroEnded__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "IntroEnded__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Lightbox.Lightbox_C.OutroEnded__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void ULightbox_C::OutroEnded__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "OutroEnded__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Lightbox.Lightbox_C.ExecuteUbergraph_Lightbox
 // ()
 // Parameters:

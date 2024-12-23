@@ -142,14 +142,14 @@ void UTabGameOptionsMain_C::BndEvt__ForceFeedback_K2Node_ComponentBoundEvent_121
 // Parameters:
 // int32                                   Selected_Index                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabGameOptionsMain_C::BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature(int32 Selected_Index)
+void UTabGameOptionsMain_C::BndEvt__First_PersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature(int32 Selected_Index)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("TabGameOptionsMain_C", "BndEvt__First-PersonCamera_K2Node_ComponentBoundEvent_106_Selection Changed__DelegateSignature");
 
-	Params::TabGameOptionsMain_C_BndEvt__FirstMinusPersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature Parms{};
+	Params::TabGameOptionsMain_C_BndEvt__First_PersonCamera_K2Node_ComponentBoundEvent_106_Selection_Changed__DelegateSignature Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 

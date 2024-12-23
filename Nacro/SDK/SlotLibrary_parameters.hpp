@@ -27,7 +27,7 @@ struct SlotLibrary_C_InitItemWidget final
 public:
 	class UFortItemWidget*                        Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              Item;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_Create_Item_Tooltip_Return_Value;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -35,7 +35,7 @@ static_assert(alignof(SlotLibrary_C_InitItemWidget) == 0x000008, "Wrong alignmen
 static_assert(sizeof(SlotLibrary_C_InitItemWidget) == 0x000028, "Wrong size on SlotLibrary_C_InitItemWidget");
 static_assert(offsetof(SlotLibrary_C_InitItemWidget, Widget) == 0x000000, "Member 'SlotLibrary_C_InitItemWidget::Widget' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_InitItemWidget, Item) == 0x000008, "Member 'SlotLibrary_C_InitItemWidget::Item' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_InitItemWidget, __WorldContext) == 0x000010, "Member 'SlotLibrary_C_InitItemWidget::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SlotLibrary_C_InitItemWidget, m_WorldContext) == 0x000010, "Member 'SlotLibrary_C_InitItemWidget::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_InitItemWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'SlotLibrary_C_InitItemWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_InitItemWidget, CallFunc_Create_Item_Tooltip_Return_Value) == 0x000020, "Member 'SlotLibrary_C_InitItemWidget::CallFunc_Create_Item_Tooltip_Return_Value' has a wrong offset!");
 
@@ -44,8 +44,8 @@ static_assert(offsetof(SlotLibrary_C_InitItemWidget, CallFunc_Create_Item_Toolti
 struct SlotLibrary_C_EnsureIconBrush final
 {
 public:
-	struct FFortMultiSizeBrush                    MultiMinussize_Brush;                              // 0x0000(0x0360)(Parm)
-	class UObject*                                __WorldContext;                                    // 0x0360(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortMultiSizeBrush                    Multi_size_Brush;                                  // 0x0000(0x0360)(Parm)
+	class UObject*                                m_WorldContext;                                    // 0x0360(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            Brush;                                             // 0x0368(0x0090)(Parm, OutParm)
 	bool                                          Temp_bool_Variable;                                // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3F9[0x7];                                      // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -56,8 +56,8 @@ public:
 };
 static_assert(alignof(SlotLibrary_C_EnsureIconBrush) == 0x000008, "Wrong alignment on SlotLibrary_C_EnsureIconBrush");
 static_assert(sizeof(SlotLibrary_C_EnsureIconBrush) == 0x000528, "Wrong size on SlotLibrary_C_EnsureIconBrush");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, MultiMinussize_Brush) == 0x000000, "Member 'SlotLibrary_C_EnsureIconBrush::MultiMinussize_Brush' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, __WorldContext) == 0x000360, "Member 'SlotLibrary_C_EnsureIconBrush::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, Multi_size_Brush) == 0x000000, "Member 'SlotLibrary_C_EnsureIconBrush::Multi_size_Brush' has a wrong offset!");
+static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, m_WorldContext) == 0x000360, "Member 'SlotLibrary_C_EnsureIconBrush::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, Brush) == 0x000368, "Member 'SlotLibrary_C_EnsureIconBrush::Brush' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, Temp_bool_Variable) == 0x0003F8, "Member 'SlotLibrary_C_EnsureIconBrush::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, K2Node_MakeStruct_SlateBrush) == 0x000400, "Member 'SlotLibrary_C_EnsureIconBrush::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
@@ -71,7 +71,7 @@ struct SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color final
 public:
 	struct FLinearColor                           Base_Color;                                        // 0x0000(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Hightlight_Color;                                  // 0x0010(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Current_Color;                                     // 0x0028(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RGBToHSV_H;                               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RGBToHSV_S;                               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -90,7 +90,7 @@ static_assert(alignof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color) =
 static_assert(sizeof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color) == 0x000080, "Wrong size on SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color");
 static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, Base_Color) == 0x000000, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::Base_Color' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, Hightlight_Color) == 0x000010, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::Hightlight_Color' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, __WorldContext) == 0x000020, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, m_WorldContext) == 0x000020, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, Current_Color) == 0x000028, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::Current_Color' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_RGBToHSV_H) == 0x000038, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_RGBToHSV_H' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_RGBToHSV_S) == 0x00003C, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_RGBToHSV_S' has a wrong offset!");
@@ -111,7 +111,7 @@ struct SlotLibrary_C_Get_Traits_Of_Workers final
 {
 public:
 	TArray<class UFortWorker*>                    Workers;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                  Chief_Personality;                                 // 0x0018(0x0020)(Parm, OutParm)
 	struct FGameplayTagContainer                  Crew_Personalities;                                // 0x0038(0x0020)(Parm, OutParm)
 	struct FGameplayTagContainer                  Crew_Set_Bonuses;                                  // 0x0058(0x0020)(Parm, OutParm)
@@ -143,7 +143,7 @@ public:
 static_assert(alignof(SlotLibrary_C_Get_Traits_Of_Workers) == 0x000008, "Wrong alignment on SlotLibrary_C_Get_Traits_Of_Workers");
 static_assert(sizeof(SlotLibrary_C_Get_Traits_Of_Workers) == 0x000178, "Wrong size on SlotLibrary_C_Get_Traits_Of_Workers");
 static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Workers) == 0x000000, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Workers' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, __WorldContext) == 0x000010, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, m_WorldContext) == 0x000010, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Chief_Personality) == 0x000018, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Chief_Personality' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Crew_Personalities) == 0x000038, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Crew_Personalities' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Crew_Set_Bonuses) == 0x000058, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Crew_Set_Bonuses' has a wrong offset!");
@@ -179,7 +179,7 @@ public:
 	struct FGameplayTagContainer                  Required_Gameplay_Tags;                            // 0x0080(0x0020)(Parm)
 	class FText                                   Required_Gameplay_Tags_Description;                // 0x00A0(0x0018)(Parm)
 	class FText                                   Modifier_Source;                                   // 0x00B8(0x0018)(Parm)
-	class UObject*                                __WorldContext;                                    // 0x00D0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x00D0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                Result;                                            // 0x00D8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Temp_text_Variable;                                // 0x00E0(0x0018)()
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -214,7 +214,7 @@ static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Attribu
 static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Required_Gameplay_Tags) == 0x000080, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Required_Gameplay_Tags' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Required_Gameplay_Tags_Description) == 0x0000A0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Required_Gameplay_Tags_Description' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Modifier_Source) == 0x0000B8, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Modifier_Source' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, __WorldContext) == 0x0000D0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, m_WorldContext) == 0x0000D0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Result) == 0x0000D8, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Result' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Temp_text_Variable) == 0x0000E0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_GetContext_ReturnValue) == 0x0000F8, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_GetContext_ReturnValue' has a wrong offset!");
@@ -245,7 +245,7 @@ public:
 	struct FFortAttributeInfo                     Attribute_Info;                                    // 0x0000(0x0078)(Parm)
 	struct FGameplayTagContainer                  Required_Tags;                                     // 0x0078(0x0020)(Parm)
 	class FText                                   Required_Gameplay_Tags_Description;                // 0x0098(0x0018)(Parm)
-	class UObject*                                __WorldContext;                                    // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   ReturnValue;                                       // 0x00B8(0x0018)(Parm, OutParm, ReturnParm)
 	bool                                          Temp_bool_Variable;                                // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -271,7 +271,7 @@ static_assert(sizeof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text) == 0x0001
 static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Attribute_Info) == 0x000000, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Attribute_Info' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Required_Tags) == 0x000078, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Required_Tags' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Required_Gameplay_Tags_Description) == 0x000098, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Required_Gameplay_Tags_Description' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, __WorldContext) == 0x0000B0, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, m_WorldContext) == 0x0000B0, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, ReturnValue) == 0x0000B8, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::ReturnValue' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Temp_bool_Variable) == 0x0000D0, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, CallFunc_GetContext_ReturnValue) == 0x0000D8, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::CallFunc_GetContext_ReturnValue' has a wrong offset!");

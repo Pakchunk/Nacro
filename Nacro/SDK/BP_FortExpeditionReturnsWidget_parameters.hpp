@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.OnExpeditionCompleted__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature final
-{
-public:
-	class UFortExpeditionItem*                    Item_0;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature) == 0x000008, "Wrong alignment on BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature");
-static_assert(sizeof(BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature) == 0x000008, "Wrong size on BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature");
-static_assert(offsetof(BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature, Item_0) == 0x000000, "Member 'BP_FortExpeditionReturnsWidget_C_OnExpeditionCompleted__DelegateSignature::Item_0' has a wrong offset!");
-
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.ExecuteUbergraph_BP_FortExpeditionReturnsWidget
 // 0x0020 (0x0020 - 0x0000)
 struct BP_FortExpeditionReturnsWidget_C_ExecuteUbergraph_BP_FortExpeditionReturnsWidget final

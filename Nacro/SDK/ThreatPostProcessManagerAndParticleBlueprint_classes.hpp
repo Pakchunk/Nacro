@@ -44,12 +44,12 @@ public:
 	bool                                          IsAliveJustChanged;                                // 0x0429(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsAlivePrevious;                                   // 0x042A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_42B[0x1];                                      // 0x042B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Number_Of_ticks_before_checking_for_the_nearest_cloud_again_Minus_when_alive; // 0x042C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_alive; // 0x042C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CurrentCloudMesh;                                  // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_431[0x3];                                      // 0x0431(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Number_Of_ticks_before_checking_for_the_nearest_cloud_again_Minus_when_dead; // 0x0434(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_dead; // 0x0434(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APostProcessVolume*                     Materialpost;                                      // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Post_process_volume_falloff__around_the_threat_volume; // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         post_process_volume_falloff__around_the_threat_volume; // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowRainEffect;                                    // 0x0444(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_445[0x3];                                      // 0x0445(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         FourClosestClouds;                                 // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate)
@@ -62,7 +62,7 @@ public:
 	bool                                          SoundWasPreviouslyActive;                          // 0x046D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_46E[0x2];                                      // 0x046E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             PlayerTransform;                                   // 0x0470(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Is_On;                                             // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          is_On;                                             // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A1[0x7];                                      // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APostProcessVolume*                     MaterialEffectsPostProcess;                        // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FLinearColor                           ThreatFogPostProcessColor_Morning;                 // 0x04B0(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -88,8 +88,6 @@ public:
 	bool                                          IsAthenaWorld;                                     // 0x0545(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void NewEventDispatcher__DelegateSignature();
-	void NewEventDispatcher0__DelegateSignature();
 	void ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint(int32 EntryPoint);
 	void ForceUpdateLensEffect();
 	void StartTraceTimer();
@@ -132,11 +130,11 @@ static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Recalcul
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Is_Alive) == 0x000428, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Is_Alive' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, IsAliveJustChanged) == 0x000429, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::IsAliveJustChanged' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, IsAlivePrevious) == 0x00042A, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::IsAlivePrevious' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Number_Of_ticks_before_checking_for_the_nearest_cloud_again_Minus_when_alive) == 0x00042C, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Number_Of_ticks_before_checking_for_the_nearest_cloud_again_Minus_when_alive' has a wrong offset!");
+static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_alive) == 0x00042C, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_alive' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, CurrentCloudMesh) == 0x000430, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::CurrentCloudMesh' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Number_Of_ticks_before_checking_for_the_nearest_cloud_again_Minus_when_dead) == 0x000434, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Number_Of_ticks_before_checking_for_the_nearest_cloud_again_Minus_when_dead' has a wrong offset!");
+static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_dead) == 0x000434, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_dead' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Materialpost) == 0x000438, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Materialpost' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Post_process_volume_falloff__around_the_threat_volume) == 0x000440, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Post_process_volume_falloff__around_the_threat_volume' has a wrong offset!");
+static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, post_process_volume_falloff__around_the_threat_volume) == 0x000440, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::post_process_volume_falloff__around_the_threat_volume' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ShowRainEffect) == 0x000444, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ShowRainEffect' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, FourClosestClouds) == 0x000448, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::FourClosestClouds' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Number_Of_Volumes_to_check) == 0x000458, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Number_Of_Volumes_to_check' has a wrong offset!");
@@ -147,7 +145,7 @@ static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Post_Pro
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, SoundIsActive) == 0x00046C, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::SoundIsActive' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, SoundWasPreviouslyActive) == 0x00046D, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::SoundWasPreviouslyActive' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, PlayerTransform) == 0x000470, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::PlayerTransform' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Is_On) == 0x0004A0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Is_On' has a wrong offset!");
+static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, is_On) == 0x0004A0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::is_On' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, MaterialEffectsPostProcess) == 0x0004A8, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::MaterialEffectsPostProcess' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ThreatFogPostProcessColor_Morning) == 0x0004B0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ThreatFogPostProcessColor_Morning' has a wrong offset!");
 static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ThreatFogPostProcessColor_Day) == 0x0004C0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ThreatFogPostProcessColor_Day' has a wrong offset!");

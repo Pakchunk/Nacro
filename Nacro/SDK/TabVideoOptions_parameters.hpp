@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function TabVideoOptions.TabVideoOptions_C.Enable Overlay__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct TabVideoOptions_C_Enable_Overlay__DelegateSignature final
-{
-public:
-	bool                                          Accept_Input;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(TabVideoOptions_C_Enable_Overlay__DelegateSignature) == 0x000001, "Wrong alignment on TabVideoOptions_C_Enable_Overlay__DelegateSignature");
-static_assert(sizeof(TabVideoOptions_C_Enable_Overlay__DelegateSignature) == 0x000001, "Wrong size on TabVideoOptions_C_Enable_Overlay__DelegateSignature");
-static_assert(offsetof(TabVideoOptions_C_Enable_Overlay__DelegateSignature, Accept_Input) == 0x000000, "Member 'TabVideoOptions_C_Enable_Overlay__DelegateSignature::Accept_Input' has a wrong offset!");
-
 // Function TabVideoOptions.TabVideoOptions_C.ExecuteUbergraph_TabVideoOptions
 // 0x0190 (0x0190 - 0x0000)
 struct TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions final
@@ -251,14 +240,14 @@ static_assert(offsetof(TabVideoOptions_C_Effects_Changed, Tab_Id) == 0x000000, "
 
 // Function TabVideoOptions.TabVideoOptions_C.Post-Processing Changed
 // 0x0004 (0x0004 - 0x0000)
-struct TabVideoOptions_C_PostMinusProcessing_Changed final
+struct TabVideoOptions_C_Post_Processing_Changed final
 {
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_PostMinusProcessing_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_PostMinusProcessing_Changed");
-static_assert(sizeof(TabVideoOptions_C_PostMinusProcessing_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_PostMinusProcessing_Changed");
-static_assert(offsetof(TabVideoOptions_C_PostMinusProcessing_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_PostMinusProcessing_Changed::Tab_Id' has a wrong offset!");
+static_assert(alignof(TabVideoOptions_C_Post_Processing_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Post_Processing_Changed");
+static_assert(sizeof(TabVideoOptions_C_Post_Processing_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Post_Processing_Changed");
+static_assert(offsetof(TabVideoOptions_C_Post_Processing_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Post_Processing_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Textures Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -273,14 +262,14 @@ static_assert(offsetof(TabVideoOptions_C_Textures_Changed, Tab_Id) == 0x000000, 
 
 // Function TabVideoOptions.TabVideoOptions_C.Anti-Aliasing Changed
 // 0x0004 (0x0004 - 0x0000)
-struct TabVideoOptions_C_AntiMinusAliasing_Changed final
+struct TabVideoOptions_C_Anti_Aliasing_Changed final
 {
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_AntiMinusAliasing_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_AntiMinusAliasing_Changed");
-static_assert(sizeof(TabVideoOptions_C_AntiMinusAliasing_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_AntiMinusAliasing_Changed");
-static_assert(offsetof(TabVideoOptions_C_AntiMinusAliasing_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_AntiMinusAliasing_Changed::Tab_Id' has a wrong offset!");
+static_assert(alignof(TabVideoOptions_C_Anti_Aliasing_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Anti_Aliasing_Changed");
+static_assert(sizeof(TabVideoOptions_C_Anti_Aliasing_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Anti_Aliasing_Changed");
+static_assert(offsetof(TabVideoOptions_C_Anti_Aliasing_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Anti_Aliasing_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Shadows Changed
 // 0x0004 (0x0004 - 0x0000)

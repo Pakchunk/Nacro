@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WaveModifiersTile.WaveModifiersTile_C.OnReadyForNextModifierPresentation__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWaveModifiersTile_C::OnReadyForNextModifierPresentation__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaveModifiersTile_C", "OnReadyForNextModifierPresentation__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WaveModifiersTile.WaveModifiersTile_C.ExecuteUbergraph_WaveModifiersTile
 // (HasDefaults)
 // Parameters:

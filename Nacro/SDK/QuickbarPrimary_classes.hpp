@@ -25,7 +25,7 @@ class UQuickbarPrimary_C final : public UQuickbarBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_QuickbarPrimary_C;                  // 0x0288(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 _Image__Separator;                                 // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Separator;                                 // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UQuickbarSlot_C*                        Quickbar_Slot_1;                                   // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UQuickbarSlot_C*                        Quickbar_Slot_2;                                   // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UQuickbarSlot_C*                        Quickbar_Slot_3;                                   // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -69,7 +69,7 @@ public:
 static_assert(alignof(UQuickbarPrimary_C) == 0x000008, "Wrong alignment on UQuickbarPrimary_C");
 static_assert(sizeof(UQuickbarPrimary_C) == 0x000330, "Wrong size on UQuickbarPrimary_C");
 static_assert(offsetof(UQuickbarPrimary_C, UberGraphFrame_QuickbarPrimary_C) == 0x000288, "Member 'UQuickbarPrimary_C::UberGraphFrame_QuickbarPrimary_C' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, _Image__Separator) == 0x000290, "Member 'UQuickbarPrimary_C::_Image__Separator' has a wrong offset!");
+static_assert(offsetof(UQuickbarPrimary_C, mImage__Separator) == 0x000290, "Member 'UQuickbarPrimary_C::mImage__Separator' has a wrong offset!");
 static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_1) == 0x000298, "Member 'UQuickbarPrimary_C::Quickbar_Slot_1' has a wrong offset!");
 static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_2) == 0x0002A0, "Member 'UQuickbarPrimary_C::Quickbar_Slot_2' has a wrong offset!");
 static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_3) == 0x0002A8, "Member 'UQuickbarPrimary_C::Quickbar_Slot_3' has a wrong offset!");

@@ -22,7 +22,7 @@ namespace SDK::Params
 struct GamepadMappingInfo_C_Update_Displayed_Mapping final
 {
 public:
-	int32                                         Platform;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         platform;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Mode;                                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Configuration;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -58,7 +58,7 @@ public:
 };
 static_assert(alignof(GamepadMappingInfo_C_Update_Displayed_Mapping) == 0x000008, "Wrong alignment on GamepadMappingInfo_C_Update_Displayed_Mapping");
 static_assert(sizeof(GamepadMappingInfo_C_Update_Displayed_Mapping) == 0x0000D0, "Wrong size on GamepadMappingInfo_C_Update_Displayed_Mapping");
-static_assert(offsetof(GamepadMappingInfo_C_Update_Displayed_Mapping, Platform) == 0x000000, "Member 'GamepadMappingInfo_C_Update_Displayed_Mapping::Platform' has a wrong offset!");
+static_assert(offsetof(GamepadMappingInfo_C_Update_Displayed_Mapping, platform) == 0x000000, "Member 'GamepadMappingInfo_C_Update_Displayed_Mapping::platform' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_Update_Displayed_Mapping, Mode) == 0x000004, "Member 'GamepadMappingInfo_C_Update_Displayed_Mapping::Mode' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_Update_Displayed_Mapping, Configuration) == 0x000008, "Member 'GamepadMappingInfo_C_Update_Displayed_Mapping::Configuration' has a wrong offset!");
 static_assert(offsetof(GamepadMappingInfo_C_Update_Displayed_Mapping, T_Mode_Combat) == 0x000010, "Member 'GamepadMappingInfo_C_Update_Displayed_Mapping::T_Mode_Combat' has a wrong offset!");

@@ -43,7 +43,6 @@ public:
 	UMulticastDelegateProperty_                   AboutToShowDetails;                                // 0x09C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AboutToShowDetails__DelegateSignature();
 	void ExecuteUbergraph_StoreMain_MTXOffer(int32 EntryPoint);
 	void OnUnhovered();
 	void OnHovered();

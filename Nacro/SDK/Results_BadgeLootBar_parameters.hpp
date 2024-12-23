@@ -78,7 +78,7 @@ struct Results_BadgeLootBar_C_UpdateAddBadgePoints final
 {
 public:
 	float                                         CurrentPointsFloat;                                // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TimePassed;                                        // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         timePassed;                                        // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TargetFillPercentage;                              // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNextLootLevelPoints_NextLootLevelPoints; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -103,7 +103,7 @@ public:
 static_assert(alignof(Results_BadgeLootBar_C_UpdateAddBadgePoints) == 0x000004, "Wrong alignment on Results_BadgeLootBar_C_UpdateAddBadgePoints");
 static_assert(sizeof(Results_BadgeLootBar_C_UpdateAddBadgePoints) == 0x000050, "Wrong size on Results_BadgeLootBar_C_UpdateAddBadgePoints");
 static_assert(offsetof(Results_BadgeLootBar_C_UpdateAddBadgePoints, CurrentPointsFloat) == 0x000000, "Member 'Results_BadgeLootBar_C_UpdateAddBadgePoints::CurrentPointsFloat' has a wrong offset!");
-static_assert(offsetof(Results_BadgeLootBar_C_UpdateAddBadgePoints, TimePassed) == 0x000004, "Member 'Results_BadgeLootBar_C_UpdateAddBadgePoints::TimePassed' has a wrong offset!");
+static_assert(offsetof(Results_BadgeLootBar_C_UpdateAddBadgePoints, timePassed) == 0x000004, "Member 'Results_BadgeLootBar_C_UpdateAddBadgePoints::timePassed' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLootBar_C_UpdateAddBadgePoints, TargetFillPercentage) == 0x000008, "Member 'Results_BadgeLootBar_C_UpdateAddBadgePoints::TargetFillPercentage' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLootBar_C_UpdateAddBadgePoints, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00000C, "Member 'Results_BadgeLootBar_C_UpdateAddBadgePoints::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Results_BadgeLootBar_C_UpdateAddBadgePoints, CallFunc_GetNextLootLevelPoints_NextLootLevelPoints) == 0x000010, "Member 'Results_BadgeLootBar_C_UpdateAddBadgePoints::CallFunc_GetNextLootLevelPoints_NextLootLevelPoints' has a wrong offset!");

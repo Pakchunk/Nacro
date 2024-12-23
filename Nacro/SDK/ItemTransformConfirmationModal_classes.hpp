@@ -39,8 +39,6 @@ public:
 	UMulticastDelegateProperty_                   OnConfirm;                                         // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnCancel__DelegateSignature();
-	void OnConfirm__DelegateSignature();
 	void ExecuteUbergraph_ItemTransformConfirmationModal(int32 EntryPoint);
 	void OnActivated();
 	void BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

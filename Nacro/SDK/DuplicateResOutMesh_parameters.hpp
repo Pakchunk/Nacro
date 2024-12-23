@@ -167,7 +167,7 @@ static_assert(offsetof(DuplicateResOutMesh_C_UserConstructionScript, NewLocalVar
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.initializeExternalSkeletalMeshArray
 // 0x0040 (0x0040 - 0x0000)
-struct DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray final
+struct DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray final
 {
 public:
 	class APlayerPawn_Generic_C*                  K2Node_DynamicCast_AsPlayer_Pawn_Generic;          // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -181,15 +181,15 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class USkeletalMeshComponent*>         K2Node_MakeArray_Array;                            // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray) == 0x000008, "Wrong alignment on DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray");
-static_assert(sizeof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray) == 0x000040, "Wrong size on DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray");
-static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray, K2Node_DynamicCast_AsPlayer_Pawn_Generic) == 0x000000, "Member 'DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray::K2Node_DynamicCast_AsPlayer_Pawn_Generic' has a wrong offset!");
-static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray, K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic_Parent) == 0x000010, "Member 'DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray::K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic_Parent' has a wrong offset!");
-static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray, K2Node_DynamicCast_bSuccess2) == 0x000018, "Member 'DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray, K2Node_DynamicCast_AsFort_AIPawn) == 0x000020, "Member 'DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray::K2Node_DynamicCast_AsFort_AIPawn' has a wrong offset!");
-static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray, K2Node_DynamicCast_bSuccess3) == 0x000028, "Member 'DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray, K2Node_MakeArray_Array) == 0x000030, "Member 'DuplicateResOutMesh_C_InitializeExternalSkeletalMeshArray::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(alignof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray) == 0x000008, "Wrong alignment on DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray");
+static_assert(sizeof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray) == 0x000040, "Wrong size on DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray");
+static_assert(offsetof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray, K2Node_DynamicCast_AsPlayer_Pawn_Generic) == 0x000000, "Member 'DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray::K2Node_DynamicCast_AsPlayer_Pawn_Generic' has a wrong offset!");
+static_assert(offsetof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray, K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic_Parent) == 0x000010, "Member 'DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray::K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic_Parent' has a wrong offset!");
+static_assert(offsetof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray, K2Node_DynamicCast_bSuccess2) == 0x000018, "Member 'DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
+static_assert(offsetof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray, K2Node_DynamicCast_AsFort_AIPawn) == 0x000020, "Member 'DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray::K2Node_DynamicCast_AsFort_AIPawn' has a wrong offset!");
+static_assert(offsetof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray, K2Node_DynamicCast_bSuccess3) == 0x000028, "Member 'DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
+static_assert(offsetof(DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray, K2Node_MakeArray_Array) == 0x000030, "Member 'DuplicateResOutMesh_C_initializeExternalSkeletalMeshArray::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.Find Bounds
 // 0x01D0 (0x01D0 - 0x0000)

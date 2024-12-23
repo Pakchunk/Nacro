@@ -44,7 +44,7 @@ public:
 	void ExecuteUbergraph_ImpactNumbers(int32 EntryPoint);
 	void OnNewDamageNumber(const struct FFortDamageNumberInfo& NewDamageNumberInfo);
 	void UserConstructionScript();
-	void Init_a_new_number_set(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, struct FTransform* OutCameraTransform, struct FVector* OutNumberLocation);
+	void init_a_new_number_set(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, struct FTransform* OutCameraTransform, struct FVector* OutNumberLocation);
 	void Set_Material_Pararmeters(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, const struct FTransform& CameraTransform, const struct FVector& NumberLocation);
 
 public:

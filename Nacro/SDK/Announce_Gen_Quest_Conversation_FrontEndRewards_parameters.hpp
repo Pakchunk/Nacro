@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnNewSentence__DelegateSignature
-// 0x00B0 (0x00B0 - 0x0000)
-struct Announce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature final
-{
-public:
-	struct FFortConversationSentence              Sentence;                                          // 0x0000(0x00B0)(Parm)
-};
-static_assert(alignof(Announce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature) == 0x000008, "Wrong alignment on Announce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature");
-static_assert(sizeof(Announce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature) == 0x0000B0, "Wrong size on Announce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature");
-static_assert(offsetof(Announce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature, Sentence) == 0x000000, "Member 'Announce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature::Sentence' has a wrong offset!");
-
 // Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards
 // 0x0178 (0x0178 - 0x0000)
 struct Announce_Gen_Quest_Conversation_FrontEndRewards_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards final

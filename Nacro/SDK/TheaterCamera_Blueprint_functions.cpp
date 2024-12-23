@@ -334,7 +334,7 @@ void ATheaterCamera_Blueprint_C::DEBUGFOVA__FinishedFunc()
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InitializeFX-TL__UpdateFunc
 // (BlueprintEvent)
 
-void ATheaterCamera_Blueprint_C::InitializeFXMinusTL__UpdateFunc()
+void ATheaterCamera_Blueprint_C::InitializeFX_TL__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -348,7 +348,7 @@ void ATheaterCamera_Blueprint_C::InitializeFXMinusTL__UpdateFunc()
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InitializeFX-TL__FinishedFunc
 // (BlueprintEvent)
 
-void ATheaterCamera_Blueprint_C::InitializeFXMinusTL__FinishedFunc()
+void ATheaterCamera_Blueprint_C::InitializeFX_TL__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -494,10 +494,10 @@ void ATheaterCamera_Blueprint_C::PanCamera(float DeltaX, float DeltaY)
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.NewFunction_0
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           Self2                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           self2                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                        ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FVector2D ATheaterCamera_Blueprint_C::NewFunction_0(class AActor* Self2)
+struct FVector2D ATheaterCamera_Blueprint_C::NewFunction_0(class AActor* self2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -506,7 +506,7 @@ struct FVector2D ATheaterCamera_Blueprint_C::NewFunction_0(class AActor* Self2)
 
 	Params::TheaterCamera_Blueprint_C_NewFunction_0 Parms{};
 
-	Parms.Self2 = Self2;
+	Parms.self2 = self2;
 
 	UObject::ProcessEvent(Func, &Parms);
 

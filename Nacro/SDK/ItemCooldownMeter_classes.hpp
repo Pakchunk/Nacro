@@ -23,10 +23,10 @@ namespace SDK
 class UItemCooldownMeter_C final : public UUserWidget
 {
 public:
-	class UImage*                                 _Image__Backfill;                                  // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 _Image__Overfill;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               _SizeBox_;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             _Text__Clock;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Backfill;                                  // 0x0230(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Overfill;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               mSizeBox_;                                         // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             mText__Clock;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FFortMultiSizeFont                     MultiSizeFont;                                     // 0x0250(0x0270)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FFortMultiSizeMargin                   MultiSizeMargin;                                   // 0x04C0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
@@ -48,10 +48,10 @@ public:
 };
 static_assert(alignof(UItemCooldownMeter_C) == 0x000008, "Wrong alignment on UItemCooldownMeter_C");
 static_assert(sizeof(UItemCooldownMeter_C) == 0x000520, "Wrong size on UItemCooldownMeter_C");
-static_assert(offsetof(UItemCooldownMeter_C, _Image__Backfill) == 0x000230, "Member 'UItemCooldownMeter_C::_Image__Backfill' has a wrong offset!");
-static_assert(offsetof(UItemCooldownMeter_C, _Image__Overfill) == 0x000238, "Member 'UItemCooldownMeter_C::_Image__Overfill' has a wrong offset!");
-static_assert(offsetof(UItemCooldownMeter_C, _SizeBox_) == 0x000240, "Member 'UItemCooldownMeter_C::_SizeBox_' has a wrong offset!");
-static_assert(offsetof(UItemCooldownMeter_C, _Text__Clock) == 0x000248, "Member 'UItemCooldownMeter_C::_Text__Clock' has a wrong offset!");
+static_assert(offsetof(UItemCooldownMeter_C, mImage__Backfill) == 0x000230, "Member 'UItemCooldownMeter_C::mImage__Backfill' has a wrong offset!");
+static_assert(offsetof(UItemCooldownMeter_C, mImage__Overfill) == 0x000238, "Member 'UItemCooldownMeter_C::mImage__Overfill' has a wrong offset!");
+static_assert(offsetof(UItemCooldownMeter_C, mSizeBox_) == 0x000240, "Member 'UItemCooldownMeter_C::mSizeBox_' has a wrong offset!");
+static_assert(offsetof(UItemCooldownMeter_C, mText__Clock) == 0x000248, "Member 'UItemCooldownMeter_C::mText__Clock' has a wrong offset!");
 static_assert(offsetof(UItemCooldownMeter_C, MultiSizeFont) == 0x000250, "Member 'UItemCooldownMeter_C::MultiSizeFont' has a wrong offset!");
 static_assert(offsetof(UItemCooldownMeter_C, MultiSizeMargin) == 0x0004C0, "Member 'UItemCooldownMeter_C::MultiSizeMargin' has a wrong offset!");
 

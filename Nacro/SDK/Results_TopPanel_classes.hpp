@@ -36,7 +36,6 @@ public:
 	float                                         PlayRate;                                          // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void IntroComplete__DelegateSignature();
 	void ExecuteUbergraph_Results_TopPanel(int32 EntryPoint);
 	void Intro_Sequence();
 	void BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_56_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();

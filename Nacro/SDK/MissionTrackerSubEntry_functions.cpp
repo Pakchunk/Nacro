@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function MissionTrackerSubEntry.MissionTrackerSubEntry_C.WidgetVisibilityChanged__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UMissionTrackerSubEntry_C::WidgetVisibilityChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionTrackerSubEntry_C", "WidgetVisibilityChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function MissionTrackerSubEntry.MissionTrackerSubEntry_C.ExecuteUbergraph_MissionTrackerSubEntry
 // ()
 // Parameters:

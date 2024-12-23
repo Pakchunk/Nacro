@@ -24,11 +24,11 @@ class UEquippedItemWidget_C final : public UFortHUDElementWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 _Image__AmmoIcon;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 _Image__ResourceIcon;                              // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 _Image__Separator;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__AmmoIcon;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__ResourceIcon;                              // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Separator;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          CommonBorderDivider;                               // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UEquippedItemMinusBandolier_C*          EquippedItemMinusBandolier;                        // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UEquippedItem_Bandolier_C*              EquippedItem_Bandolier;                            // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_0;                                           // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UKeybindWidget_C*                       KeybindWidget;                                     // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  SwitcherContent;                                   // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -71,11 +71,11 @@ public:
 static_assert(alignof(UEquippedItemWidget_C) == 0x000008, "Wrong alignment on UEquippedItemWidget_C");
 static_assert(sizeof(UEquippedItemWidget_C) == 0x0002D0, "Wrong size on UEquippedItemWidget_C");
 static_assert(offsetof(UEquippedItemWidget_C, UberGraphFrame) == 0x000260, "Member 'UEquippedItemWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, _Image__AmmoIcon) == 0x000268, "Member 'UEquippedItemWidget_C::_Image__AmmoIcon' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, _Image__ResourceIcon) == 0x000270, "Member 'UEquippedItemWidget_C::_Image__ResourceIcon' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, _Image__Separator) == 0x000278, "Member 'UEquippedItemWidget_C::_Image__Separator' has a wrong offset!");
+static_assert(offsetof(UEquippedItemWidget_C, mImage__AmmoIcon) == 0x000268, "Member 'UEquippedItemWidget_C::mImage__AmmoIcon' has a wrong offset!");
+static_assert(offsetof(UEquippedItemWidget_C, mImage__ResourceIcon) == 0x000270, "Member 'UEquippedItemWidget_C::mImage__ResourceIcon' has a wrong offset!");
+static_assert(offsetof(UEquippedItemWidget_C, mImage__Separator) == 0x000278, "Member 'UEquippedItemWidget_C::mImage__Separator' has a wrong offset!");
 static_assert(offsetof(UEquippedItemWidget_C, CommonBorderDivider) == 0x000280, "Member 'UEquippedItemWidget_C::CommonBorderDivider' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, EquippedItemMinusBandolier) == 0x000288, "Member 'UEquippedItemWidget_C::EquippedItemMinusBandolier' has a wrong offset!");
+static_assert(offsetof(UEquippedItemWidget_C, EquippedItem_Bandolier) == 0x000288, "Member 'UEquippedItemWidget_C::EquippedItem_Bandolier' has a wrong offset!");
 static_assert(offsetof(UEquippedItemWidget_C, Image_0) == 0x000290, "Member 'UEquippedItemWidget_C::Image_0' has a wrong offset!");
 static_assert(offsetof(UEquippedItemWidget_C, KeybindWidget) == 0x000298, "Member 'UEquippedItemWidget_C::KeybindWidget' has a wrong offset!");
 static_assert(offsetof(UEquippedItemWidget_C, SwitcherContent) == 0x0002A0, "Member 'UEquippedItemWidget_C::SwitcherContent' has a wrong offset!");

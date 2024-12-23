@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+#include "TooltipStat_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "TooltipStat_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,8 +32,8 @@ public:
 	class UImage*                                 Upgrade_Image;                                     // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ShowAsPreview;                                     // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTooltipStat                           InTooltipData;                                     // 0x0268(0x0038)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          InHoverEnabled;                                    // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FTooltipStat                           inTooltipData;                                     // 0x0268(0x0038)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                          inHoverEnabled;                                    // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_TooltipStatWrapper(int32 EntryPoint);
@@ -59,8 +59,8 @@ static_assert(offsetof(UTooltipStatWrapper_C, Stat_Widget) == 0x000248, "Member 
 static_assert(offsetof(UTooltipStatWrapper_C, Upgrade_Border) == 0x000250, "Member 'UTooltipStatWrapper_C::Upgrade_Border' has a wrong offset!");
 static_assert(offsetof(UTooltipStatWrapper_C, Upgrade_Image) == 0x000258, "Member 'UTooltipStatWrapper_C::Upgrade_Image' has a wrong offset!");
 static_assert(offsetof(UTooltipStatWrapper_C, ShowAsPreview) == 0x000260, "Member 'UTooltipStatWrapper_C::ShowAsPreview' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, InTooltipData) == 0x000268, "Member 'UTooltipStatWrapper_C::InTooltipData' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, InHoverEnabled) == 0x0002A0, "Member 'UTooltipStatWrapper_C::InHoverEnabled' has a wrong offset!");
+static_assert(offsetof(UTooltipStatWrapper_C, inTooltipData) == 0x000268, "Member 'UTooltipStatWrapper_C::inTooltipData' has a wrong offset!");
+static_assert(offsetof(UTooltipStatWrapper_C, inHoverEnabled) == 0x0002A0, "Member 'UTooltipStatWrapper_C::inHoverEnabled' has a wrong offset!");
 
 }
 

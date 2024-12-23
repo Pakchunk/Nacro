@@ -143,12 +143,12 @@ static_assert(offsetof(SquadStatsWidget_C_RefreshScroll, K2Node_Select_Default) 
 struct SquadStatsWidget_C_HighlightStat final
 {
 public:
-	int32                                         InStatIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         inStatIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(SquadStatsWidget_C_HighlightStat) == 0x000004, "Wrong alignment on SquadStatsWidget_C_HighlightStat");
 static_assert(sizeof(SquadStatsWidget_C_HighlightStat) == 0x000008, "Wrong size on SquadStatsWidget_C_HighlightStat");
-static_assert(offsetof(SquadStatsWidget_C_HighlightStat, InStatIndex) == 0x000000, "Member 'SquadStatsWidget_C_HighlightStat::InStatIndex' has a wrong offset!");
+static_assert(offsetof(SquadStatsWidget_C_HighlightStat, inStatIndex) == 0x000000, "Member 'SquadStatsWidget_C_HighlightStat::inStatIndex' has a wrong offset!");
 static_assert(offsetof(SquadStatsWidget_C_HighlightStat, K2Node_SwitchInteger_CmpSuccess) == 0x000004, "Member 'SquadStatsWidget_C_HighlightStat::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 // Function SquadStatsWidget.SquadStatsWidget_C.HandleActivityChanged

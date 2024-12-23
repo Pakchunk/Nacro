@@ -17,21 +17,6 @@
 namespace SDK
 {
 
-ULevel* AActor::GetLevel()
-{
-	return (ULevel*)Outer;
-}
-
-UWorld* AActor::GetWorld()
-{
-	if (class ULevel* Level = GetLevel())
-	{
-		return Level->OwningWorld;
-	}
-
-	return nullptr;
-}
-
 // Function Engine.AnimNotifyState.GetNotifyName
 // (Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
@@ -20337,9 +20322,9 @@ void UCheatManager::DebugCapsuleSweepSize(float HalfHeight, float Radius)
 // Function Engine.CheatManager.DestroyAll
 // (Exec, Native, Public)
 // Parameters:
-// TSubclassOf<class AActor>               AClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSubclassOf<class AActor>               aClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCheatManager::DestroyAll(TSubclassOf<class AActor> AClass)
+void UCheatManager::DestroyAll(TSubclassOf<class AActor> aClass)
 {
 	static class UFunction* Func = nullptr;
 
@@ -20348,7 +20333,7 @@ void UCheatManager::DestroyAll(TSubclassOf<class AActor> AClass)
 
 	Params::CheatManager_DestroyAll Parms{};
 
-	Parms.AClass = AClass;
+	Parms.aClass = aClass;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -20381,9 +20366,9 @@ void UCheatManager::DestroyAllPawnsExceptTarget()
 // Function Engine.CheatManager.DestroyPawns
 // (Exec, Native, Public)
 // Parameters:
-// TSubclassOf<class APawn>                AClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSubclassOf<class APawn>                aClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCheatManager::DestroyPawns(TSubclassOf<class APawn> AClass)
+void UCheatManager::DestroyPawns(TSubclassOf<class APawn> aClass)
 {
 	static class UFunction* Func = nullptr;
 
@@ -20392,7 +20377,7 @@ void UCheatManager::DestroyPawns(TSubclassOf<class APawn> AClass)
 
 	Params::CheatManager_DestroyPawns Parms{};
 
-	Parms.AClass = AClass;
+	Parms.aClass = aClass;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -38430,20 +38415,6 @@ void ASceneCaptureCube::OnInterpToggle(bool bEnable)
 }
 
 
-// DelegateFunction Engine.ApplicationLifecycleComponent.ApplicationLifetimeDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UApplicationLifecycleComponent::ApplicationLifetimeDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ApplicationLifecycleComponent", "ApplicationLifetimeDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Engine.InterpToMovementComponent.FinaliseControlPoints
 // (Final, Native, Public, BlueprintCallable)
 
@@ -38460,116 +38431,6 @@ void UInterpToMovementComponent::FinaliseControlPoints()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToResetDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FHitResult                       ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UInterpToMovementComponent::OnInterpToResetDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InterpToMovementComponent", "OnInterpToResetDelegate__DelegateSignature");
-
-	Params::InterpToMovementComponent_OnInterpToResetDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.Time = Time;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToReverseDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FHitResult                       ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UInterpToMovementComponent::OnInterpToReverseDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InterpToMovementComponent", "OnInterpToReverseDelegate__DelegateSignature");
-
-	Params::InterpToMovementComponent_OnInterpToReverseDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.Time = Time;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToStopDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FHitResult                       ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UInterpToMovementComponent::OnInterpToStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InterpToMovementComponent", "OnInterpToStopDelegate__DelegateSignature");
-
-	Params::InterpToMovementComponent_OnInterpToStopDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.Time = Time;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitBeginDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FHitResult                       ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UInterpToMovementComponent::OnInterpToWaitBeginDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InterpToMovementComponent", "OnInterpToWaitBeginDelegate__DelegateSignature");
-
-	Params::InterpToMovementComponent_OnInterpToWaitBeginDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.Time = Time;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.InterpToMovementComponent.OnInterpToWaitEndDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FHitResult                       ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// float                                   Time                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UInterpToMovementComponent::OnInterpToWaitEndDelegate__DelegateSignature(const struct FHitResult& ImpactResult, float Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InterpToMovementComponent", "OnInterpToWaitEndDelegate__DelegateSignature");
-
-	Params::InterpToMovementComponent_OnInterpToWaitEndDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.Time = Time;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -38645,48 +38506,6 @@ float UAnimSequenceBase::GetPlayLength()
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// DelegateFunction Engine.ProjectileMovementComponent.OnProjectileBounceDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams, HasDefaults)
-// Parameters:
-// struct FHitResult                       ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-// struct FVector                          ImpactVelocity                                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UProjectileMovementComponent::OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProjectileMovementComponent", "OnProjectileBounceDelegate__DelegateSignature");
-
-	Params::ProjectileMovementComponent_OnProjectileBounceDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.ProjectileMovementComponent.OnProjectileStopDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FHitResult                       ImpactResult                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void UProjectileMovementComponent::OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProjectileMovementComponent", "OnProjectileStopDelegate__DelegateSignature");
-
-	Params::ProjectileMovementComponent_OnProjectileStopDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -39542,20 +39361,6 @@ bool UPlatformEventsComponent::IsInTabletMode()
 }
 
 
-// DelegateFunction Engine.PlatformEventsComponent.PlatformEventDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UPlatformEventsComponent::PlatformEventDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlatformEventsComponent", "PlatformEventDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Engine.PlatformEventsComponent.SupportsConvertibleLaptops
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -39801,9 +39606,9 @@ void UAudioComponent::SetFloatParameter(class FName InName, float InFloat)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class FName                             InName                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   inInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAudioComponent::SetIntParameter(class FName InName, int32 InInt)
+void UAudioComponent::SetIntParameter(class FName InName, int32 inInt)
 {
 	static class UFunction* Func = nullptr;
 
@@ -39813,7 +39618,7 @@ void UAudioComponent::SetIntParameter(class FName InName, int32 InInt)
 	Params::AudioComponent_SetIntParameter Parms{};
 
 	Parms.InName = InName;
-	Parms.InInt = InInt;
+	Parms.inInt = inInt;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -46000,142 +45805,6 @@ bool UAvoidanceManager::RegisterMovementComponent(class UMovementComponent* Move
 }
 
 
-// DelegateFunction Engine.PlatformGameInstance.PlatformDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UPlatformGameInstance::PlatformDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlatformGameInstance", "PlatformDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPlatformGameInstance::PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature(const class FString& InString)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlatformGameInstance", "PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature");
-
-	Params::PlatformGameInstance_PlatformFailedToRegisterForRemoteNotificationsDelegate__DelegateSignature Parms{};
-
-	Parms.InString = std::move(InString);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformReceivedLocalNotificationDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPlatformGameInstance::PlatformReceivedLocalNotificationDelegate__DelegateSignature(const class FString& InString, int32 InInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlatformGameInstance", "PlatformReceivedLocalNotificationDelegate__DelegateSignature");
-
-	Params::PlatformGameInstance_PlatformReceivedLocalNotificationDelegate__DelegateSignature Parms{};
-
-	Parms.InString = std::move(InString);
-	Parms.InInt = InInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformReceivedRemoteNotificationDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPlatformGameInstance::PlatformReceivedRemoteNotificationDelegate__DelegateSignature(const class FString& InString)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlatformGameInstance", "PlatformReceivedRemoteNotificationDelegate__DelegateSignature");
-
-	Params::PlatformGameInstance_PlatformReceivedRemoteNotificationDelegate__DelegateSignature Parms{};
-
-	Parms.InString = std::move(InString);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// TArray<uint8>                           InArray                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UPlatformGameInstance::PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature(const TArray<uint8>& InArray)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlatformGameInstance", "PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature");
-
-	Params::PlatformGameInstance_PlatformRegisteredForRemoteNotificationsDelegate__DelegateSignature Parms{};
-
-	Parms.InArray = std::move(InArray);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformRegisteredForUserNotificationsDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPlatformGameInstance::PlatformRegisteredForUserNotificationsDelegate__DelegateSignature(int32 InInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlatformGameInstance", "PlatformRegisteredForUserNotificationsDelegate__DelegateSignature");
-
-	Params::PlatformGameInstance_PlatformRegisteredForUserNotificationsDelegate__DelegateSignature Parms{};
-
-	Parms.InInt = InInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.PlatformGameInstance.PlatformScreenOrientationChangedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// EScreenOrientation                      InScreenOrientation                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPlatformGameInstance::PlatformScreenOrientationChangedDelegate__DelegateSignature(EScreenOrientation InScreenOrientation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlatformGameInstance", "PlatformScreenOrientationChangedDelegate__DelegateSignature");
-
-	Params::PlatformGameInstance_PlatformScreenOrientationChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InScreenOrientation = InScreenOrientation;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function Engine.BlueprintPlatformLibrary.CancelLocalNotification
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -46252,13 +45921,13 @@ void UBlueprintPlatformLibrary::ScheduleLocalNotificationAtTime(const struct FDa
 // Function Engine.BlueprintPlatformLibrary.ScheduleLocalNotificationFromNow
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// int32                                   InSecondsFromNow                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   inSecondsFromNow                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FText                             Title                                                  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 // class FText                             Body                                                   (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 // class FText                             Action                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 // class FString                           ActivationEvent                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UBlueprintPlatformLibrary::ScheduleLocalNotificationFromNow(int32 InSecondsFromNow, const class FText& Title, const class FText& Body, const class FText& Action, const class FString& ActivationEvent)
+void UBlueprintPlatformLibrary::ScheduleLocalNotificationFromNow(int32 inSecondsFromNow, const class FText& Title, const class FText& Body, const class FText& Action, const class FString& ActivationEvent)
 {
 	static class UFunction* Func = nullptr;
 
@@ -46267,7 +45936,7 @@ void UBlueprintPlatformLibrary::ScheduleLocalNotificationFromNow(int32 InSeconds
 
 	Params::BlueprintPlatformLibrary_ScheduleLocalNotificationFromNow Parms{};
 
-	Parms.InSecondsFromNow = InSecondsFromNow;
+	Parms.inSecondsFromNow = inSecondsFromNow;
 	Parms.Title = std::move(Title);
 	Parms.Body = std::move(Body);
 	Parms.Action = std::move(Action);
@@ -50774,13 +50443,13 @@ void UKismetSystemLibrary::MoveComponentTo(class USceneComponent* Component, con
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bPrintToScreen                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bPrintToLog                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FLinearColor                     TextColor                                              (Parm, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Duration                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UKismetSystemLibrary::PrintString(class UObject* WorldContextObject, const class FString& InString, bool bPrintToScreen, bool bPrintToLog, const struct FLinearColor& TextColor, float Duration)
+void UKismetSystemLibrary::PrintString(class UObject* WorldContextObject, const class FString& inString, bool bPrintToScreen, bool bPrintToLog, const struct FLinearColor& TextColor, float Duration)
 {
 	static class UFunction* Func = nullptr;
 
@@ -50790,7 +50459,7 @@ void UKismetSystemLibrary::PrintString(class UObject* WorldContextObject, const 
 	Params::KismetSystemLibrary_PrintString Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 	Parms.bPrintToScreen = bPrintToScreen;
 	Parms.bPrintToLog = bPrintToLog;
 	Parms.TextColor = std::move(TextColor);
@@ -50843,9 +50512,9 @@ void UKismetSystemLibrary::PrintText(class UObject* WorldContextObject, const cl
 // Function Engine.KismetSystemLibrary.PrintWarning
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UKismetSystemLibrary::PrintWarning(const class FString& InString)
+void UKismetSystemLibrary::PrintWarning(const class FString& inString)
 {
 	static class UFunction* Func = nullptr;
 
@@ -50854,7 +50523,7 @@ void UKismetSystemLibrary::PrintWarning(const class FString& InString)
 
 	Params::KismetSystemLibrary_PrintWarning Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -52022,46 +51691,6 @@ void UKismetSystemLibrary::StackTrace()
 	GetDefaultObj()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction Engine.KismetSystemLibrary.OnAssetLoaded__DelegateSignature
-// (Public, Delegate)
-// Parameters:
-// class UObject*                          Loaded                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UKismetSystemLibrary::OnAssetLoaded__DelegateSignature(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KismetSystemLibrary", "OnAssetLoaded__DelegateSignature");
-
-	Params::KismetSystemLibrary_OnAssetLoaded__DelegateSignature Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction Engine.KismetSystemLibrary.OnAssetClassLoaded__DelegateSignature
-// (Public, Delegate)
-// Parameters:
-// TSubclassOf<class UObject>              Loaded                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UKismetSystemLibrary::OnAssetClassLoaded__DelegateSignature(TSubclassOf<class UObject> Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KismetSystemLibrary", "OnAssetClassLoaded__DelegateSignature");
-
-	Params::KismetSystemLibrary_OnAssetClassLoaded__DelegateSignature Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -55329,13 +54958,13 @@ void UKismetMathLibrary::BreakRotIntoAxes(const struct FRotator& InRot, struct F
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
 // struct FTimespan                        InTimespan                                             (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Days                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   days                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Hours                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Minutes                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Seconds                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Milliseconds                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UKismetMathLibrary::BreakTimespan(const struct FTimespan& InTimespan, int32* Days, int32* Hours, int32* Minutes, int32* Seconds, int32* Milliseconds)
+void UKismetMathLibrary::BreakTimespan(const struct FTimespan& InTimespan, int32* days, int32* Hours, int32* Minutes, int32* Seconds, int32* Milliseconds)
 {
 	static class UFunction* Func = nullptr;
 
@@ -55353,8 +54982,8 @@ void UKismetMathLibrary::BreakTimespan(const struct FTimespan& InTimespan, int32
 
 	Func->FunctionFlags = Flgs;
 
-	if (Days != nullptr)
-		*Days = Parms.Days;
+	if (days != nullptr)
+		*days = Parms.days;
 
 	if (Hours != nullptr)
 		*Hours = Parms.Hours;
@@ -55952,10 +55581,10 @@ struct FVector UKismetMathLibrary::Conv_FloatToVector(float InFloat)
 // Function Engine.KismetMathLibrary.Conv_IntToBool
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   inInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UKismetMathLibrary::Conv_IntToBool(int32 InInt)
+bool UKismetMathLibrary::Conv_IntToBool(int32 inInt)
 {
 	static class UFunction* Func = nullptr;
 
@@ -55964,7 +55593,7 @@ bool UKismetMathLibrary::Conv_IntToBool(int32 InInt)
 
 	Params::KismetMathLibrary_Conv_IntToBool Parms{};
 
-	Parms.InInt = InInt;
+	Parms.inInt = inInt;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -55980,10 +55609,10 @@ bool UKismetMathLibrary::Conv_IntToBool(int32 InInt)
 // Function Engine.KismetMathLibrary.Conv_IntToByte
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   inInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // uint8                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-uint8 UKismetMathLibrary::Conv_IntToByte(int32 InInt)
+uint8 UKismetMathLibrary::Conv_IntToByte(int32 inInt)
 {
 	static class UFunction* Func = nullptr;
 
@@ -55992,7 +55621,7 @@ uint8 UKismetMathLibrary::Conv_IntToByte(int32 InInt)
 
 	Params::KismetMathLibrary_Conv_IntToByte Parms{};
 
-	Parms.InInt = InInt;
+	Parms.inInt = inInt;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -56008,10 +55637,10 @@ uint8 UKismetMathLibrary::Conv_IntToByte(int32 InInt)
 // Function Engine.KismetMathLibrary.Conv_IntToFloat
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   inInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-float UKismetMathLibrary::Conv_IntToFloat(int32 InInt)
+float UKismetMathLibrary::Conv_IntToFloat(int32 inInt)
 {
 	static class UFunction* Func = nullptr;
 
@@ -56020,7 +55649,7 @@ float UKismetMathLibrary::Conv_IntToFloat(int32 InInt)
 
 	Params::KismetMathLibrary_Conv_IntToFloat Parms{};
 
-	Parms.InInt = InInt;
+	Parms.inInt = inInt;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -56036,10 +55665,10 @@ float UKismetMathLibrary::Conv_IntToFloat(int32 InInt)
 // Function Engine.KismetMathLibrary.Conv_IntToIntVector
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   inInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FIntVector                       ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FIntVector UKismetMathLibrary::Conv_IntToIntVector(int32 InInt)
+struct FIntVector UKismetMathLibrary::Conv_IntToIntVector(int32 inInt)
 {
 	static class UFunction* Func = nullptr;
 
@@ -56048,7 +55677,7 @@ struct FIntVector UKismetMathLibrary::Conv_IntToIntVector(int32 InInt)
 
 	Params::KismetMathLibrary_Conv_IntToIntVector Parms{};
 
-	Parms.InInt = InInt;
+	Parms.inInt = inInt;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -58117,10 +57746,10 @@ float UKismetMathLibrary::Fraction(float A)
 // Function Engine.KismetMathLibrary.FromDays
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// float                                   Days                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   days                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FTimespan                        ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FTimespan UKismetMathLibrary::FromDays(float Days)
+struct FTimespan UKismetMathLibrary::FromDays(float days)
 {
 	static class UFunction* Func = nullptr;
 
@@ -58129,7 +57758,7 @@ struct FTimespan UKismetMathLibrary::FromDays(float Days)
 
 	Params::KismetMathLibrary_FromDays Parms{};
 
-	Parms.Days = Days;
+	Parms.days = days;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -61216,14 +60845,14 @@ struct FRotator UKismetMathLibrary::MakeRotFromZY(const struct FVector& Z, const
 // Function Engine.KismetMathLibrary.MakeTimespan
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   Days                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   days                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Hours                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Minutes                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Seconds                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Milliseconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FTimespan                        ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FTimespan UKismetMathLibrary::MakeTimespan(int32 Days, int32 Hours, int32 Minutes, int32 Seconds, int32 Milliseconds)
+struct FTimespan UKismetMathLibrary::MakeTimespan(int32 days, int32 Hours, int32 Minutes, int32 Seconds, int32 Milliseconds)
 {
 	static class UFunction* Func = nullptr;
 
@@ -61232,7 +60861,7 @@ struct FTimespan UKismetMathLibrary::MakeTimespan(int32 Days, int32 Hours, int32
 
 	Params::KismetMathLibrary_MakeTimespan Parms{};
 
-	Parms.Days = Days;
+	Parms.days = days;
 	Parms.Hours = Hours;
 	Parms.Minutes = Minutes;
 	Parms.Seconds = Seconds;
@@ -66546,11 +66175,11 @@ class FString UKismetStringLibrary::BuildString_Float(const class FString& Appen
 // Parameters:
 // class FString                           AppendTo                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FString                           Prefix                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   inInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FString                           Suffix                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UKismetStringLibrary::BuildString_Int(const class FString& AppendTo, const class FString& Prefix, int32 InInt, const class FString& Suffix)
+class FString UKismetStringLibrary::BuildString_Int(const class FString& AppendTo, const class FString& Prefix, int32 inInt, const class FString& Suffix)
 {
 	static class UFunction* Func = nullptr;
 
@@ -66561,7 +66190,7 @@ class FString UKismetStringLibrary::BuildString_Int(const class FString& AppendT
 
 	Parms.AppendTo = std::move(AppendTo);
 	Parms.Prefix = std::move(Prefix);
-	Parms.InInt = InInt;
+	Parms.inInt = inInt;
 	Parms.Suffix = std::move(Suffix);
 
 	auto Flgs = Func->FunctionFlags;
@@ -66958,10 +66587,10 @@ class FString UKismetStringLibrary::Conv_FloatToString(float InFloat)
 // Function Engine.KismetStringLibrary.Conv_IntToString
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   InInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   inInt                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FString UKismetStringLibrary::Conv_IntToString(int32 InInt)
+class FString UKismetStringLibrary::Conv_IntToString(int32 inInt)
 {
 	static class UFunction* Func = nullptr;
 
@@ -66970,7 +66599,7 @@ class FString UKismetStringLibrary::Conv_IntToString(int32 InInt)
 
 	Params::KismetStringLibrary_Conv_IntToString Parms{};
 
-	Parms.InInt = InInt;
+	Parms.inInt = inInt;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67098,11 +66727,11 @@ class FString UKismetStringLibrary::Conv_RotatorToString(const struct FRotator& 
 // Function Engine.KismetStringLibrary.Conv_StringToColor
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FLinearColor                     OutConvertedColor                                      (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    OutIsValid                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UKismetStringLibrary::Conv_StringToColor(const class FString& InString, struct FLinearColor* OutConvertedColor, bool* OutIsValid)
+void UKismetStringLibrary::Conv_StringToColor(const class FString& inString, struct FLinearColor* OutConvertedColor, bool* OutIsValid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67111,7 +66740,7 @@ void UKismetStringLibrary::Conv_StringToColor(const class FString& InString, str
 
 	Params::KismetStringLibrary_Conv_StringToColor Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67131,10 +66760,10 @@ void UKismetStringLibrary::Conv_StringToColor(const class FString& InString, str
 // Function Engine.KismetStringLibrary.Conv_StringToFloat
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-float UKismetStringLibrary::Conv_StringToFloat(const class FString& InString)
+float UKismetStringLibrary::Conv_StringToFloat(const class FString& inString)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67143,7 +66772,7 @@ float UKismetStringLibrary::Conv_StringToFloat(const class FString& InString)
 
 	Params::KismetStringLibrary_Conv_StringToFloat Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67159,10 +66788,10 @@ float UKismetStringLibrary::Conv_StringToFloat(const class FString& InString)
 // Function Engine.KismetStringLibrary.Conv_StringToInt
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UKismetStringLibrary::Conv_StringToInt(const class FString& InString)
+int32 UKismetStringLibrary::Conv_StringToInt(const class FString& inString)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67171,7 +66800,7 @@ int32 UKismetStringLibrary::Conv_StringToInt(const class FString& InString)
 
 	Params::KismetStringLibrary_Conv_StringToInt Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67187,10 +66816,10 @@ int32 UKismetStringLibrary::Conv_StringToInt(const class FString& InString)
 // Function Engine.KismetStringLibrary.Conv_StringToName
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class FName UKismetStringLibrary::Conv_StringToName(const class FString& InString)
+class FName UKismetStringLibrary::Conv_StringToName(const class FString& inString)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67199,7 +66828,7 @@ class FName UKismetStringLibrary::Conv_StringToName(const class FString& InStrin
 
 	Params::KismetStringLibrary_Conv_StringToName Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67215,11 +66844,11 @@ class FName UKismetStringLibrary::Conv_StringToName(const class FString& InStrin
 // Function Engine.KismetStringLibrary.Conv_StringToRotator
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FRotator                         OutConvertedRotator                                    (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    OutIsValid                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UKismetStringLibrary::Conv_StringToRotator(const class FString& InString, struct FRotator* OutConvertedRotator, bool* OutIsValid)
+void UKismetStringLibrary::Conv_StringToRotator(const class FString& inString, struct FRotator* OutConvertedRotator, bool* OutIsValid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67228,7 +66857,7 @@ void UKismetStringLibrary::Conv_StringToRotator(const class FString& InString, s
 
 	Params::KismetStringLibrary_Conv_StringToRotator Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67248,11 +66877,11 @@ void UKismetStringLibrary::Conv_StringToRotator(const class FString& InString, s
 // Function Engine.KismetStringLibrary.Conv_StringToVector
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FVector                          OutConvertedVector                                     (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    OutIsValid                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UKismetStringLibrary::Conv_StringToVector(const class FString& InString, struct FVector* OutConvertedVector, bool* OutIsValid)
+void UKismetStringLibrary::Conv_StringToVector(const class FString& inString, struct FVector* OutConvertedVector, bool* OutIsValid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67261,7 +66890,7 @@ void UKismetStringLibrary::Conv_StringToVector(const class FString& InString, st
 
 	Params::KismetStringLibrary_Conv_StringToVector Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67281,11 +66910,11 @@ void UKismetStringLibrary::Conv_StringToVector(const class FString& InString, st
 // Function Engine.KismetStringLibrary.Conv_StringToVector2D
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FVector2D                        OutConvertedVector2D                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    OutIsValid                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UKismetStringLibrary::Conv_StringToVector2D(const class FString& InString, struct FVector2D* OutConvertedVector2D, bool* OutIsValid)
+void UKismetStringLibrary::Conv_StringToVector2D(const class FString& inString, struct FVector2D* OutConvertedVector2D, bool* OutIsValid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67294,7 +66923,7 @@ void UKismetStringLibrary::Conv_StringToVector2D(const class FString& InString, 
 
 	Params::KismetStringLibrary_Conv_StringToVector2D Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67399,10 +67028,10 @@ class FString UKismetStringLibrary::Conv_VectorToString(const struct FVector& In
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
 // class FString                           SourceString                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class FString>                   InArray                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<class FString>                   inArray                                                (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UKismetStringLibrary::CullArray(const class FString& SourceString, TArray<class FString>* InArray)
+int32 UKismetStringLibrary::CullArray(const class FString& SourceString, TArray<class FString>* inArray)
 {
 	static class UFunction* Func = nullptr;
 
@@ -67420,8 +67049,8 @@ int32 UKismetStringLibrary::CullArray(const class FString& SourceString, TArray<
 
 	Func->FunctionFlags = Flgs;
 
-	if (InArray != nullptr)
-		*InArray = std::move(Parms.InArray);
+	if (inArray != nullptr)
+		*inArray = std::move(Parms.inArray);
 
 	return Parms.ReturnValue;
 }
@@ -69211,10 +68840,10 @@ class FText UKismetTextLibrary::Conv_RotatorToText(const struct FRotator& InRot)
 // Function Engine.KismetTextLibrary.Conv_StringToText
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class FString                           InString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 
-class FText UKismetTextLibrary::Conv_StringToText(const class FString& InString)
+class FText UKismetTextLibrary::Conv_StringToText(const class FString& inString)
 {
 	static class UFunction* Func = nullptr;
 
@@ -69223,7 +68852,7 @@ class FText UKismetTextLibrary::Conv_StringToText(const class FString& InString)
 
 	Params::KismetTextLibrary_Conv_StringToText Parms{};
 
-	Parms.InString = std::move(InString);
+	Parms.inString = std::move(inString);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

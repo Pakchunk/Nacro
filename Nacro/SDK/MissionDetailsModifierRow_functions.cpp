@@ -58,10 +58,10 @@ void UMissionDetailsModifierRow_C::Construct()
 // class FText                             ModifierDescription                                    (Parm)
 // class UTexture2D*                       ModifierIcon                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                           TextStyle                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ShowMinusDescription                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Show_Description                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    UseSmallIcon                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMissionDetailsModifierRow_C::Init(const class FText& ModifierName, const class FText& ModifierDescription, class UTexture2D* ModifierIcon, class UClass* TextStyle, bool ShowMinusDescription, bool UseSmallIcon)
+void UMissionDetailsModifierRow_C::Init(const class FText& ModifierName, const class FText& ModifierDescription, class UTexture2D* ModifierIcon, class UClass* TextStyle, bool Show_Description, bool UseSmallIcon)
 {
 	static class UFunction* Func = nullptr;
 
@@ -74,7 +74,7 @@ void UMissionDetailsModifierRow_C::Init(const class FText& ModifierName, const c
 	Parms.ModifierDescription = std::move(ModifierDescription);
 	Parms.ModifierIcon = ModifierIcon;
 	Parms.TextStyle = TextStyle;
-	Parms.ShowMinusDescription = ShowMinusDescription;
+	Parms.Show_Description = Show_Description;
 	Parms.UseSmallIcon = UseSmallIcon;
 
 	UObject::ProcessEvent(Func, &Parms);

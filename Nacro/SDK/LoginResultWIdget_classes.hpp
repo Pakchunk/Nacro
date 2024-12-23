@@ -30,7 +30,6 @@ public:
 	UMulticastDelegateProperty_                   OnResultConfirmed;                                 // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnResultConfirmed__DelegateSignature();
 	void ExecuteUbergraph_LoginResultWIdget(int32 EntryPoint);
 	void Construct();
 	void BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

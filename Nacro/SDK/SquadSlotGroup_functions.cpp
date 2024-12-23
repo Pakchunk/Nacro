@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function SquadSlotGroup.SquadSlotGroup_C.HandleMouseEnter__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void USquadSlotGroup_C::HandleMouseEnter__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadSlotGroup_C", "HandleMouseEnter__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SquadSlotGroup.SquadSlotGroup_C.HandleMouseLeave__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void USquadSlotGroup_C::HandleMouseLeave__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadSlotGroup_C", "HandleMouseLeave__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SquadSlotGroup.SquadSlotGroup_C.ExecuteUbergraph_SquadSlotGroup
 // (HasDefaults)
 // Parameters:

@@ -53,7 +53,7 @@ public:
 	void ExecuteUbergraph_HelpWidget(int32 EntryPoint);
 	void Construct();
 	void BndEvt__ButtonClose_K2Node_ComponentBoundEvent_28_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void Init(const class FText& InTitle, const class FText& InDescription, const class FText& InStep1_Text, const class FText& InStep2_Text, const class FText& InStep3_Text, class UTexture2D* InStep1_Picture, class UTexture2D* InStep2_Picture, class UTexture2D* InStep3_Picture, int32 InNumOfSteps);
+	void Init(const class FText& inTitle, const class FText& inDescription, const class FText& inStep1_Text, const class FText& inStep2_Text, const class FText& inStep3_Text, class UTexture2D* inStep1_Picture, class UTexture2D* inStep2_Picture, class UTexture2D* inStep3_Picture, int32 inNumOfSteps);
 
 public:
 	static class UClass* StaticClass()

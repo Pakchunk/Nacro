@@ -1099,31 +1099,31 @@ static_assert(offsetof(StoreCardReveal_BP_C_InpAxisEvt_MoveRight_K2Node_InputAxi
 
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.BndEvt__S-ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature final
+struct StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature final
 {
 public:
 	ETouchIndex                                   FingerIndex;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    TouchedComponent;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature) == 0x000008, "Wrong alignment on StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature");
-static_assert(sizeof(StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature) == 0x000010, "Wrong size on StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature");
-static_assert(offsetof(StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature, FingerIndex) == 0x000000, "Member 'StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature::FingerIndex' has a wrong offset!");
-static_assert(offsetof(StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature, TouchedComponent) == 0x000008, "Member 'StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature::TouchedComponent' has a wrong offset!");
+static_assert(alignof(StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature) == 0x000008, "Wrong alignment on StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature");
+static_assert(sizeof(StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature) == 0x000010, "Wrong size on StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature");
+static_assert(offsetof(StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature, FingerIndex) == 0x000000, "Member 'StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature::FingerIndex' has a wrong offset!");
+static_assert(offsetof(StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature, TouchedComponent) == 0x000008, "Member 'StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature::TouchedComponent' has a wrong offset!");
 
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.BndEvt__S-ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature final
+struct StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature final
 {
 public:
 	ETouchIndex                                   FingerIndex;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    TouchedComponent;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature) == 0x000008, "Wrong alignment on StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature");
-static_assert(sizeof(StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature) == 0x000010, "Wrong size on StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature");
-static_assert(offsetof(StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature, FingerIndex) == 0x000000, "Member 'StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature::FingerIndex' has a wrong offset!");
-static_assert(offsetof(StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature, TouchedComponent) == 0x000008, "Member 'StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature::TouchedComponent' has a wrong offset!");
+static_assert(alignof(StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature) == 0x000008, "Wrong alignment on StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature");
+static_assert(sizeof(StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature) == 0x000010, "Wrong size on StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature");
+static_assert(offsetof(StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature, FingerIndex) == 0x000000, "Member 'StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature::FingerIndex' has a wrong offset!");
+static_assert(offsetof(StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature, TouchedComponent) == 0x000008, "Member 'StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature::TouchedComponent' has a wrong offset!");
 
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.Handle Input Mode Changed
 // 0x0001 (0x0001 - 0x0000)

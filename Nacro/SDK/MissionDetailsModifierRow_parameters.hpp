@@ -37,7 +37,7 @@ public:
 	class FText                                   ModifierDescription;                               // 0x0018(0x0018)(Parm)
 	class UTexture2D*                             ModifierIcon;                                      // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 TextStyle;                                         // 0x0038(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShowMinusDescription;                              // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Show_Description;                                  // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          UseSmallIcon;                                      // 0x0041(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              NormalSize;                                        // 0x0044(0x0008)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,7 +62,7 @@ static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierName) == 0x0000
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierDescription) == 0x000018, "Member 'MissionDetailsModifierRow_C_Init::ModifierDescription' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierIcon) == 0x000030, "Member 'MissionDetailsModifierRow_C_Init::ModifierIcon' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, TextStyle) == 0x000038, "Member 'MissionDetailsModifierRow_C_Init::TextStyle' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, ShowMinusDescription) == 0x000040, "Member 'MissionDetailsModifierRow_C_Init::ShowMinusDescription' has a wrong offset!");
+static_assert(offsetof(MissionDetailsModifierRow_C_Init, Show_Description) == 0x000040, "Member 'MissionDetailsModifierRow_C_Init::Show_Description' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, UseSmallIcon) == 0x000041, "Member 'MissionDetailsModifierRow_C_Init::UseSmallIcon' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, NormalSize) == 0x000044, "Member 'MissionDetailsModifierRow_C_Init::NormalSize' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierRow_C_Init, SmallSize) == 0x00004C, "Member 'MissionDetailsModifierRow_C_Init::SmallSize' has a wrong offset!");

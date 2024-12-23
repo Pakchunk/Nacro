@@ -30,7 +30,6 @@ public:
 
 public:
 	void EndTask();
-	void GenericGameplayTaskDelegate__DelegateSignature();
 	void ReadyForActivation();
 
 public:
@@ -190,8 +189,6 @@ public:
 
 public:
 	static class UGameplayTask_WaitDelay* TaskWaitDelay(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, float Time, const uint8 Priority);
-
-	void TaskDelayDelegate__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

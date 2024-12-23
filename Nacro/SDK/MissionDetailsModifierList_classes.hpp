@@ -28,7 +28,7 @@ public:
 	TArray<class UFortGameplayModifierItemDefinition*> DebugMods;                                         // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
-	void PopulateModifiers(bool UseTrunctatedList, class UClass* NameTextStyle, class UClass* DescriptionTextStyle, bool ShowMinusDescriptions, TArray<class UFortGameplayModifierItemDefinition*>& ModifierItems, bool UseSmallIcons);
+	void PopulateModifiers(bool UseTrunctatedList, class UClass* NameTextStyle, class UClass* DescriptionTextStyle, bool Show_Descriptions, TArray<class UFortGameplayModifierItemDefinition*>& ModifierItems, bool UseSmallIcons);
 	void CreateDebugModifiers(TArray<class UFortGameplayModifierItemDefinition*>* Modifiers);
 
 public:

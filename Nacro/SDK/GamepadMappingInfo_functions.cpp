@@ -20,11 +20,11 @@ namespace SDK
 // Function GamepadMappingInfo.GamepadMappingInfo_C.Update Displayed Mapping
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Platform                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   platform                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Mode                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Configuration                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGamepadMappingInfo_C::Update_Displayed_Mapping(int32 Platform, int32 Mode, int32 Configuration)
+void UGamepadMappingInfo_C::Update_Displayed_Mapping(int32 platform, int32 Mode, int32 Configuration)
 {
 	static class UFunction* Func = nullptr;
 
@@ -33,7 +33,7 @@ void UGamepadMappingInfo_C::Update_Displayed_Mapping(int32 Platform, int32 Mode,
 
 	Params::GamepadMappingInfo_C_Update_Displayed_Mapping Parms{};
 
-	Parms.Platform = Platform;
+	Parms.platform = platform;
 	Parms.Mode = Mode;
 	Parms.Configuration = Configuration;
 

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Results_BadgeLoot.Results_BadgeLoot_C.Finished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_BadgeLoot_C::Finished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_BadgeLoot_C", "Finished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_BadgeLoot.Results_BadgeLoot_C.ExecuteUbergraph_Results_BadgeLoot
 // (HasDefaults)
 // Parameters:

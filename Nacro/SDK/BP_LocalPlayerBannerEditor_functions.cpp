@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.CloseBannerEditor__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             IconId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ColorId                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_LocalPlayerBannerEditor_C::CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "CloseBannerEditor__DelegateSignature");
-
-	Params::BP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature Parms{};
-
-	Parms.IconId = IconId;
-	Parms.ColorId = ColorId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.ExecuteUbergraph_BP_LocalPlayerBannerEditor
 // (HasDefaults)
 // Parameters:

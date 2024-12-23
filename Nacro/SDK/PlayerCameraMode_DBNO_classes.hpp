@@ -10,7 +10,7 @@
 
 #include "Basic.hpp"
 
-#include "V3_PlayerCameraModeBase_classes.hpp"
+#include "v3_PlayerCameraModeBase_classes.hpp"
 
 
 namespace SDK
@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass PlayerCameraMode_DBNO.PlayerCameraMode_DBNO_C
 // 0x0000 (0x0110 - 0x0110)
-class UPlayerCameraMode_DBNO_C final : public UV3_PlayerCameraModeBase_C
+class UPlayerCameraMode_DBNO_C final : public Uv3_PlayerCameraModeBase_C
 {
 public:
 	static class UClass* StaticClass()

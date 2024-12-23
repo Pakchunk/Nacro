@@ -27,14 +27,13 @@ public:
 	class UWidgetAnimation*                       Anim_Outro;                                        // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Anim_Intro;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextZoneCompletion;                                // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	float                                         PostMinusIntro_Delay;                              // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Post_Intro_Delay;                                  // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   IntroComplete;                                     // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class USoundBase*                             SoundCue_InitialMusic;                             // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Skipped;                                           // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void IntroComplete__DelegateSignature();
 	void ExecuteUbergraph_Results_NameplateWidget(int32 EntryPoint);
 	void Construct();
 	void BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_121_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
@@ -59,7 +58,7 @@ static_assert(offsetof(UResults_NameplateWidget_C, UberGraphFrame) == 0x000240, 
 static_assert(offsetof(UResults_NameplateWidget_C, Anim_Outro) == 0x000248, "Member 'UResults_NameplateWidget_C::Anim_Outro' has a wrong offset!");
 static_assert(offsetof(UResults_NameplateWidget_C, Anim_Intro) == 0x000250, "Member 'UResults_NameplateWidget_C::Anim_Intro' has a wrong offset!");
 static_assert(offsetof(UResults_NameplateWidget_C, TextZoneCompletion) == 0x000258, "Member 'UResults_NameplateWidget_C::TextZoneCompletion' has a wrong offset!");
-static_assert(offsetof(UResults_NameplateWidget_C, PostMinusIntro_Delay) == 0x000260, "Member 'UResults_NameplateWidget_C::PostMinusIntro_Delay' has a wrong offset!");
+static_assert(offsetof(UResults_NameplateWidget_C, Post_Intro_Delay) == 0x000260, "Member 'UResults_NameplateWidget_C::Post_Intro_Delay' has a wrong offset!");
 static_assert(offsetof(UResults_NameplateWidget_C, IntroComplete) == 0x000268, "Member 'UResults_NameplateWidget_C::IntroComplete' has a wrong offset!");
 static_assert(offsetof(UResults_NameplateWidget_C, SoundCue_InitialMusic) == 0x000278, "Member 'UResults_NameplateWidget_C::SoundCue_InitialMusic' has a wrong offset!");
 static_assert(offsetof(UResults_NameplateWidget_C, Skipped) == 0x000280, "Member 'UResults_NameplateWidget_C::Skipped' has a wrong offset!");

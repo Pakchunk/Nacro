@@ -6,11 +6,11 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: V1_PlayerCameraModeRanged
+// Package: v1_PlayerCameraModeRanged
 
 #include "Basic.hpp"
 
-#include "V1_PlayerCameraModeBase_classes.hpp"
+#include "v1_PlayerCameraModeBase_classes.hpp"
 
 
 namespace SDK
@@ -18,20 +18,20 @@ namespace SDK
 
 // BlueprintGeneratedClass v1_PlayerCameraModeRanged.v1_PlayerCameraModeRanged_C
 // 0x0000 (0x0110 - 0x0110)
-class UV1_PlayerCameraModeRanged_C final : public UV1_PlayerCameraModeBase_C
+class Uv1_PlayerCameraModeRanged_C final : public Uv1_PlayerCameraModeBase_C
 {
 public:
 	static class UClass* StaticClass()
 	{
 		return StaticBPGeneratedClassImpl<"v1_PlayerCameraModeRanged_C">();
 	}
-	static class UV1_PlayerCameraModeRanged_C* GetDefaultObj()
+	static class Uv1_PlayerCameraModeRanged_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UV1_PlayerCameraModeRanged_C>();
+		return GetDefaultObjImpl<Uv1_PlayerCameraModeRanged_C>();
 	}
 };
-static_assert(alignof(UV1_PlayerCameraModeRanged_C) == 0x000008, "Wrong alignment on UV1_PlayerCameraModeRanged_C");
-static_assert(sizeof(UV1_PlayerCameraModeRanged_C) == 0x000110, "Wrong size on UV1_PlayerCameraModeRanged_C");
+static_assert(alignof(Uv1_PlayerCameraModeRanged_C) == 0x000008, "Wrong alignment on Uv1_PlayerCameraModeRanged_C");
+static_assert(sizeof(Uv1_PlayerCameraModeRanged_C) == 0x000110, "Wrong size on Uv1_PlayerCameraModeRanged_C");
 
 }
 

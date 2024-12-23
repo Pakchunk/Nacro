@@ -48,15 +48,15 @@ static_assert(offsetof(HelpWidget_C_BndEvt__ButtonClose_K2Node_ComponentBoundEve
 struct HelpWidget_C_Init final
 {
 public:
-	class FText                                   InTitle;                                           // 0x0000(0x0018)(Parm)
-	class FText                                   InDescription;                                     // 0x0018(0x0018)(Parm)
-	class FText                                   InStep1_Text;                                      // 0x0030(0x0018)(Parm)
-	class FText                                   InStep2_Text;                                      // 0x0048(0x0018)(Parm)
-	class FText                                   InStep3_Text;                                      // 0x0060(0x0018)(Parm)
-	class UTexture2D*                             InStep1_Picture;                                   // 0x0078(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             InStep2_Picture;                                   // 0x0080(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             InStep3_Picture;                                   // 0x0088(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         InNumOfSteps;                                      // 0x0090(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   inTitle;                                           // 0x0000(0x0018)(Parm)
+	class FText                                   inDescription;                                     // 0x0018(0x0018)(Parm)
+	class FText                                   inStep1_Text;                                      // 0x0030(0x0018)(Parm)
+	class FText                                   inStep2_Text;                                      // 0x0048(0x0018)(Parm)
+	class FText                                   inStep3_Text;                                      // 0x0060(0x0018)(Parm)
+	class UTexture2D*                             inStep1_Picture;                                   // 0x0078(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             inStep2_Picture;                                   // 0x0080(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             inStep3_Picture;                                   // 0x0088(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         inNumOfSteps;                                      // 0x0090(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -70,15 +70,15 @@ public:
 };
 static_assert(alignof(HelpWidget_C_Init) == 0x000008, "Wrong alignment on HelpWidget_C_Init");
 static_assert(sizeof(HelpWidget_C_Init) == 0x0000A0, "Wrong size on HelpWidget_C_Init");
-static_assert(offsetof(HelpWidget_C_Init, InTitle) == 0x000000, "Member 'HelpWidget_C_Init::InTitle' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, InDescription) == 0x000018, "Member 'HelpWidget_C_Init::InDescription' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, InStep1_Text) == 0x000030, "Member 'HelpWidget_C_Init::InStep1_Text' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, InStep2_Text) == 0x000048, "Member 'HelpWidget_C_Init::InStep2_Text' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, InStep3_Text) == 0x000060, "Member 'HelpWidget_C_Init::InStep3_Text' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, InStep1_Picture) == 0x000078, "Member 'HelpWidget_C_Init::InStep1_Picture' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, InStep2_Picture) == 0x000080, "Member 'HelpWidget_C_Init::InStep2_Picture' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, InStep3_Picture) == 0x000088, "Member 'HelpWidget_C_Init::InStep3_Picture' has a wrong offset!");
-static_assert(offsetof(HelpWidget_C_Init, InNumOfSteps) == 0x000090, "Member 'HelpWidget_C_Init::InNumOfSteps' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inTitle) == 0x000000, "Member 'HelpWidget_C_Init::inTitle' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inDescription) == 0x000018, "Member 'HelpWidget_C_Init::inDescription' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inStep1_Text) == 0x000030, "Member 'HelpWidget_C_Init::inStep1_Text' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inStep2_Text) == 0x000048, "Member 'HelpWidget_C_Init::inStep2_Text' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inStep3_Text) == 0x000060, "Member 'HelpWidget_C_Init::inStep3_Text' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inStep1_Picture) == 0x000078, "Member 'HelpWidget_C_Init::inStep1_Picture' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inStep2_Picture) == 0x000080, "Member 'HelpWidget_C_Init::inStep2_Picture' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inStep3_Picture) == 0x000088, "Member 'HelpWidget_C_Init::inStep3_Picture' has a wrong offset!");
+static_assert(offsetof(HelpWidget_C_Init, inNumOfSteps) == 0x000090, "Member 'HelpWidget_C_Init::inNumOfSteps' has a wrong offset!");
 static_assert(offsetof(HelpWidget_C_Init, Temp_bool_Variable) == 0x000094, "Member 'HelpWidget_C_Init::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(HelpWidget_C_Init, Temp_byte_Variable) == 0x000095, "Member 'HelpWidget_C_Init::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(HelpWidget_C_Init, Temp_byte_Variable2) == 0x000096, "Member 'HelpWidget_C_Init::Temp_byte_Variable2' has a wrong offset!");

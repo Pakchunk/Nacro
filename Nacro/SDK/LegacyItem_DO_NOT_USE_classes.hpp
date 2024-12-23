@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "ItemDisplayMode_structs.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "ItemTextureSet_structs.hpp"
-#include "ItemDisplayStyle_structs.hpp"
-#include "ItemTextureStylesheet_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "ItemTextureSet_structs.hpp"
+#include "ItemDisplayMode_structs.hpp"
+#include "FortniteGame_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
+#include "ItemTextureStylesheet_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 

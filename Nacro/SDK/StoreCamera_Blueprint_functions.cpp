@@ -40,7 +40,7 @@ void AStoreCamera_Blueprint_C::ExecuteUbergraph_StoreCamera_Blueprint(int32 Entr
 // Function StoreCamera_Blueprint.StoreCamera_Blueprint_C.ChoicePackFOV-In
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCamera_Blueprint_C::ChoicePackFOVMinusIn()
+void AStoreCamera_Blueprint_C::ChoicePackFOV_In()
 {
 	static class UFunction* Func = nullptr;
 
@@ -54,7 +54,7 @@ void AStoreCamera_Blueprint_C::ChoicePackFOVMinusIn()
 // Function StoreCamera_Blueprint.StoreCamera_Blueprint_C.ChoicePackFOV-Out
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCamera_Blueprint_C::ChoicePackFOVMinusOut()
+void AStoreCamera_Blueprint_C::ChoicePackFOV_Out()
 {
 	static class UFunction* Func = nullptr;
 

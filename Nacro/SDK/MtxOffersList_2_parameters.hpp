@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function MtxOffersList_2.MtxOffersList_2_C.PurchaseComplete__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct MtxOffersList_2_C_PurchaseComplete__DelegateSignature final
-{
-public:
-	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(MtxOffersList_2_C_PurchaseComplete__DelegateSignature) == 0x000001, "Wrong alignment on MtxOffersList_2_C_PurchaseComplete__DelegateSignature");
-static_assert(sizeof(MtxOffersList_2_C_PurchaseComplete__DelegateSignature) == 0x000001, "Wrong size on MtxOffersList_2_C_PurchaseComplete__DelegateSignature");
-static_assert(offsetof(MtxOffersList_2_C_PurchaseComplete__DelegateSignature, bSuccess) == 0x000000, "Member 'MtxOffersList_2_C_PurchaseComplete__DelegateSignature::bSuccess' has a wrong offset!");
-
 // Function MtxOffersList_2.MtxOffersList_2_C.ExecuteUbergraph_MtxOffersList_2
 // 0x0198 (0x0198 - 0x0000)
 struct MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2 final

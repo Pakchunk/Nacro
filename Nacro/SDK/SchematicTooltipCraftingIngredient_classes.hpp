@@ -32,7 +32,7 @@ public:
 	class UTextBlock*                             TextAmount_A;                                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextAmount_B;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBox_831;                                   // 0x0280(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSchematicRequirement                  Ingredient;                                        // 0x0288(0x0010)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
+	struct FSchematicRequirement                  ingredient;                                        // 0x0288(0x0010)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
 	bool                                          PanelMode;                                         // 0x0298(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
@@ -62,7 +62,7 @@ static_assert(offsetof(USchematicTooltipCraftingIngredient_C, Switcher) == 0x000
 static_assert(offsetof(USchematicTooltipCraftingIngredient_C, TextAmount_A) == 0x000270, "Member 'USchematicTooltipCraftingIngredient_C::TextAmount_A' has a wrong offset!");
 static_assert(offsetof(USchematicTooltipCraftingIngredient_C, TextAmount_B) == 0x000278, "Member 'USchematicTooltipCraftingIngredient_C::TextAmount_B' has a wrong offset!");
 static_assert(offsetof(USchematicTooltipCraftingIngredient_C, VerticalBox_831) == 0x000280, "Member 'USchematicTooltipCraftingIngredient_C::VerticalBox_831' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, Ingredient) == 0x000288, "Member 'USchematicTooltipCraftingIngredient_C::Ingredient' has a wrong offset!");
+static_assert(offsetof(USchematicTooltipCraftingIngredient_C, ingredient) == 0x000288, "Member 'USchematicTooltipCraftingIngredient_C::ingredient' has a wrong offset!");
 static_assert(offsetof(USchematicTooltipCraftingIngredient_C, PanelMode) == 0x000298, "Member 'USchematicTooltipCraftingIngredient_C::PanelMode' has a wrong offset!");
 
 }

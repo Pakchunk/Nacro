@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function MovieWidget.MovieWidget_C.OnMediaReadyToPlay__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UMovieWidget_C::OnMediaReadyToPlay__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "OnMediaReadyToPlay__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function MovieWidget.MovieWidget_C.ExecuteUbergraph_MovieWidget
 // (HasDefaults)
 // Parameters:

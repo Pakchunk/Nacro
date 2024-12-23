@@ -43,7 +43,7 @@ public:
 public:
 	void ExecuteUbergraph_MissionDetailsModifierRow(int32 EntryPoint);
 	void Construct();
-	void Init(const class FText& ModifierName, const class FText& ModifierDescription, class UTexture2D* ModifierIcon, class UClass* TextStyle, bool ShowMinusDescription, bool UseSmallIcon);
+	void Init(const class FText& ModifierName, const class FText& ModifierDescription, class UTexture2D* ModifierIcon, class UClass* TextStyle, bool Show_Description, bool UseSmallIcon);
 	void PlayIntroAnimation();
 
 public:

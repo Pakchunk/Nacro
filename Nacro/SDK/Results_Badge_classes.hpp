@@ -40,7 +40,6 @@ public:
 	class USoundBase*                             BadgeWhooshToChest;                                // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ConvertFinished__DelegateSignature();
 	void ExecuteUbergraph_Results_Badge(int32 EntryPoint);
 	void Reset_Sequence();
 	void PreConstruct(bool IsDesignTime);

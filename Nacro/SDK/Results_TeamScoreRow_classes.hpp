@@ -47,8 +47,6 @@ public:
 	TArray<class UCommonNumericTextBlock*>        ResidualScoreTexts;                                // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
-	void CountUpFinished__DelegateSignature();
-	void CountDownFinished__DelegateSignature();
 	void ExecuteUbergraph_Results_TeamScoreRow(int32 EntryPoint);
 	void Stop_Count_Down_Absorption();
 	void BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_1_IntroFinished__DelegateSignature();

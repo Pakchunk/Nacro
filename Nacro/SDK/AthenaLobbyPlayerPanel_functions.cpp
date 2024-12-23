@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnGadgetsClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UAthenaLobbyPlayerPanel_C::OnGadgetsClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnGadgetsClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnClosed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UAthenaLobbyPlayerPanel_C::OnClosed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnClosed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 

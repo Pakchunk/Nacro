@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function MenuScreen_Commando.MenuScreen_Commando_C.MenuScreenDispatcher__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UMenuScreen_Commando_C::MenuScreenDispatcher__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Commando_C", "MenuScreenDispatcher__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function MenuScreen_Commando.MenuScreen_Commando_C.ExecuteUbergraph_MenuScreen_Commando
 // ()
 // Parameters:

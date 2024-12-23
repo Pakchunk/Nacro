@@ -17,62 +17,6 @@
 namespace SDK
 {
 
-// Function TabInputOptions.TabInputOptions_C.Enable Overlay__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Accept_Input                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Overlay_Text                                           (Parm)
-
-void UTabInputOptions_C::Enable_Overlay__DelegateSignature(bool Accept_Input, const class FText& Overlay_Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabInputOptions_C", "Enable Overlay__DelegateSignature");
-
-	Params::TabInputOptions_C_Enable_Overlay__DelegateSignature Parms{};
-
-	Parms.Accept_Input = Accept_Input;
-	Parms.Overlay_Text = std::move(Overlay_Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabInputOptions.TabInputOptions_C.Disable Overlay__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UTabInputOptions_C::Disable_Overlay__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabInputOptions_C", "Disable Overlay__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TabInputOptions.TabInputOptions_C.Gamepad Changed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Gamepad_Enabled                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UTabInputOptions_C::Gamepad_Changed__DelegateSignature(bool Gamepad_Enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabInputOptions_C", "Gamepad Changed__DelegateSignature");
-
-	Params::TabInputOptions_C_Gamepad_Changed__DelegateSignature Parms{};
-
-	Parms.Gamepad_Enabled = Gamepad_Enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function TabInputOptions.TabInputOptions_C.ExecuteUbergraph_TabInputOptions
 // (HasDefaults)
 // Parameters:

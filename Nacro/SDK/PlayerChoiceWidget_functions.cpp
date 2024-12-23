@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function PlayerChoiceWidget.PlayerChoiceWidget_C.SurvivorStoryChoiceSelected__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SelectedChoice_0                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPlayerChoiceWidget_C::SurvivorStoryChoiceSelected__DelegateSignature(int32 SelectedChoice_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerChoiceWidget_C", "SurvivorStoryChoiceSelected__DelegateSignature");
-
-	Params::PlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature Parms{};
-
-	Parms.SelectedChoice_0 = SelectedChoice_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function PlayerChoiceWidget.PlayerChoiceWidget_C.ExecuteUbergraph_PlayerChoiceWidget
 // (HasDefaults)
 // Parameters:

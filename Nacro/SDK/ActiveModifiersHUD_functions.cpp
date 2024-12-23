@@ -74,9 +74,9 @@ void UActiveModifiersHUD_C::OnActiveGameplayModifiersChanged(const TArray<class 
 // Function ActiveModifiersHUD.ActiveModifiersHUD_C.PopulateModifiers
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>InModifiers                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortGameplayModifierItemDefinition*>inModifiers                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
-void UActiveModifiersHUD_C::PopulateModifiers(TArray<class UFortGameplayModifierItemDefinition*>& InModifiers)
+void UActiveModifiersHUD_C::PopulateModifiers(TArray<class UFortGameplayModifierItemDefinition*>& inModifiers)
 {
 	static class UFunction* Func = nullptr;
 
@@ -85,11 +85,11 @@ void UActiveModifiersHUD_C::PopulateModifiers(TArray<class UFortGameplayModifier
 
 	Params::ActiveModifiersHUD_C_PopulateModifiers Parms{};
 
-	Parms.InModifiers = std::move(InModifiers);
+	Parms.inModifiers = std::move(inModifiers);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	InModifiers = std::move(Parms.InModifiers);
+	inModifiers = std::move(Parms.inModifiers);
 }
 
 }

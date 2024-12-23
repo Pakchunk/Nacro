@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function PowerWidget.PowerWidget_C.Power Increased__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UPowerWidget_C::Power_Increased__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerWidget_C", "Power Increased__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function PowerWidget.PowerWidget_C.ExecuteUbergraph_PowerWidget
 // (HasDefaults)
 // Parameters:

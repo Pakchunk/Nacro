@@ -29,7 +29,7 @@ public:
 	struct FHomebaseNode                          NodeData;                                          // 0x0010(0x00C0)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FFortSkillTreeNodeDisplayData          DisplayData;                                       // 0x00D0(0x0368)(Parm)
 	class UCommonButton*                          Button;                                            // 0x0438(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0440(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0440(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable;                               // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBrushSize                                CallFunc_GetSkillTreeNodeIconSizeByMagnitude_Icon_Size; // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0451(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -51,7 +51,7 @@ static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticDa
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, NodeData) == 0x000010, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::NodeData' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, DisplayData) == 0x0000D0, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::DisplayData' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, Button) == 0x000438, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::Button' has a wrong offset!");
-static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, __WorldContext) == 0x000440, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, m_WorldContext) == 0x000440, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, Temp_class_Variable) == 0x000448, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::Temp_class_Variable' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, CallFunc_GetSkillTreeNodeIconSizeByMagnitude_Icon_Size) == 0x000450, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::CallFunc_GetSkillTreeNodeIconSizeByMagnitude_Icon_Size' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData, K2Node_SwitchEnum_CmpSuccess) == 0x000451, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
@@ -70,7 +70,7 @@ struct SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint final
 {
 public:
 	struct FHomebaseNode                          HomebaseNode;                                      // 0x0000(0x00C0)(ConstParm, Parm, OutParm, ReferenceParm)
-	class UObject*                                __WorldContext;                                    // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x00C0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           NodeTintColour;                                    // 0x00C8(0x0010)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortHomebaseUIContext*                 CallFunc_GetContext_ReturnValue2;                  // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -88,7 +88,7 @@ public:
 static_assert(alignof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint) == 0x000008, "Wrong alignment on SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint");
 static_assert(sizeof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint) == 0x000160, "Wrong size on SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, HomebaseNode) == 0x000000, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::HomebaseNode' has a wrong offset!");
-static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, __WorldContext) == 0x0000C0, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, m_WorldContext) == 0x0000C0, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, NodeTintColour) == 0x0000C8, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::NodeTintColour' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, CallFunc_GetContext_ReturnValue) == 0x0000D8, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint, CallFunc_GetContext_ReturnValue2) == 0x0000E0, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeCostTint::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
@@ -109,7 +109,7 @@ public:
 	class UObject*                                World_Context;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               Material;                                          // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHomebaseNodeState                     NodeState;                                         // 0x0010(0x0008)(Parm, NoDestructor)
-	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue2;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -121,7 +121,7 @@ static_assert(sizeof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicDat
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, World_Context) == 0x000000, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::World_Context' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, Material) == 0x000008, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::Material' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, NodeState) == 0x000010, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::NodeState' has a wrong offset!");
-static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, __WorldContext) == 0x000018, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, m_WorldContext) == 0x000018, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000020, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, CallFunc_Conv_BoolToFloat_ReturnValue2) == 0x000024, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::CallFunc_Conv_BoolToFloat_ReturnValue2' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData, CallFunc_BooleanAND_ReturnValue) == 0x000028, "Member 'SkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
@@ -136,7 +136,7 @@ public:
 	EFortHomebaseNodeDisplayType                  Display_Type;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                World_Context;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Size;                                              // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetSkillTreeNodeShapeByDisplayType_IsSquare; // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -157,7 +157,7 @@ static_assert(sizeof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude) == 0x
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude, Node_Magnitude) == 0x000000, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude::Node_Magnitude' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude, Display_Type) == 0x000001, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude::Display_Type' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude, World_Context) == 0x000008, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude::World_Context' has a wrong offset!");
-static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude, __WorldContext) == 0x000010, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude, m_WorldContext) == 0x000010, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude, Size) == 0x000018, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude::Size' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude, Temp_bool_Variable) == 0x00001C, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude, CallFunc_GetSkillTreeNodeShapeByDisplayType_IsSquare) == 0x00001D, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude::CallFunc_GetSkillTreeNodeShapeByDisplayType_IsSquare' has a wrong offset!");
@@ -178,7 +178,7 @@ struct SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType final
 public:
 	EFortHomebaseNodeDisplayType                  Display_Type;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSquare;                                          // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IsExitNode;                                        // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortHomebaseNodeDisplayType                  Temp_byte_Variable;                                // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -203,7 +203,7 @@ public:
 static_assert(alignof(SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType) == 0x000008, "Wrong alignment on SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType");
 static_assert(sizeof(SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType) == 0x000028, "Wrong size on SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType, Display_Type) == 0x000000, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType::Display_Type' has a wrong offset!");
-static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType, __WorldContext) == 0x000008, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType, m_WorldContext) == 0x000008, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType, IsSquare) == 0x000010, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType::IsSquare' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType, IsExitNode) == 0x000011, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType::IsExitNode' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType, Temp_byte_Variable) == 0x000012, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType::Temp_byte_Variable' has a wrong offset!");
@@ -232,7 +232,7 @@ struct SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude final
 public:
 	EFortHomebaseNodeMagnitude                    Node_Magnitude;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortBrushSize                                Icon_Size;                                         // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortHomebaseNodeMagnitude                    Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortBrushSize                                Temp_byte_Variable2;                               // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -244,7 +244,7 @@ public:
 static_assert(alignof(SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude) == 0x000008, "Wrong alignment on SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude");
 static_assert(sizeof(SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude) == 0x000018, "Wrong size on SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude, Node_Magnitude) == 0x000000, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude::Node_Magnitude' has a wrong offset!");
-static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude, __WorldContext) == 0x000008, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude, m_WorldContext) == 0x000008, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude, Icon_Size) == 0x000010, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude::Icon_Size' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude, Temp_byte_Variable) == 0x000011, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude, Temp_byte_Variable2) == 0x000012, "Member 'SkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude::Temp_byte_Variable2' has a wrong offset!");

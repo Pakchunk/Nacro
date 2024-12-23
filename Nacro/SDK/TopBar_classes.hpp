@@ -54,15 +54,13 @@ public:
 	struct FTimerHandle                           DisableHeroSquadPulseTimer;                        // 0x04D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	UMulticastDelegateProperty_                   MainMenuStateChanged;                              // 0x04E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UFortGameFeedbackBase*                  FeedbackWidget;                                    // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         FEdgePower;                                        // 0x04F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         fEdgePower;                                        // 0x04F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4FC[0x4];                                      // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OpenAccountPicker;                                 // 0x0500(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          UseAnimation;                                      // 0x0510(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsMainMenuOpen;                                    // 0x0511(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void MainMenuStateChanged__DelegateSignature(bool Open);
-	void OpenAccountPicker__DelegateSignature();
 	void ExecuteUbergraph_TopBar(int32 EntryPoint);
 	void BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void On_Power_Increased();
@@ -145,7 +143,7 @@ static_assert(offsetof(UTopBar_C, HeroSquadPulseTimer) == 0x0004D0, "Member 'UTo
 static_assert(offsetof(UTopBar_C, DisableHeroSquadPulseTimer) == 0x0004D8, "Member 'UTopBar_C::DisableHeroSquadPulseTimer' has a wrong offset!");
 static_assert(offsetof(UTopBar_C, MainMenuStateChanged) == 0x0004E0, "Member 'UTopBar_C::MainMenuStateChanged' has a wrong offset!");
 static_assert(offsetof(UTopBar_C, FeedbackWidget) == 0x0004F0, "Member 'UTopBar_C::FeedbackWidget' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, FEdgePower) == 0x0004F8, "Member 'UTopBar_C::FEdgePower' has a wrong offset!");
+static_assert(offsetof(UTopBar_C, fEdgePower) == 0x0004F8, "Member 'UTopBar_C::fEdgePower' has a wrong offset!");
 static_assert(offsetof(UTopBar_C, OpenAccountPicker) == 0x000500, "Member 'UTopBar_C::OpenAccountPicker' has a wrong offset!");
 static_assert(offsetof(UTopBar_C, UseAnimation) == 0x000510, "Member 'UTopBar_C::UseAnimation' has a wrong offset!");
 static_assert(offsetof(UTopBar_C, IsMainMenuOpen) == 0x000511, "Member 'UTopBar_C::IsMainMenuOpen' has a wrong offset!");

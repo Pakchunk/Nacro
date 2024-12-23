@@ -2559,66 +2559,6 @@ void UFortItemGroupSlotWidget::InitializeSlot(const class UFortItemGroupWidget* 
 }
 
 
-// DelegateFunction FortniteUI.FortItemGroupSlotWidget.OnAttributeBonusValueChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItemGroupSlotWidget*         ItemSlotWidget                                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortItemGroupSlotWidget::OnAttributeBonusValueChanged__DelegateSignature(class UFortItemGroupSlotWidget* ItemSlotWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemGroupSlotWidget", "OnAttributeBonusValueChanged__DelegateSignature");
-
-	Params::FortItemGroupSlotWidget_OnAttributeBonusValueChanged__DelegateSignature Parms{};
-
-	Parms.ItemSlotWidget = ItemSlotWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteUI.FortItemGroupSlotWidget.OnItemSet__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItemGroupSlotWidget*         ItemSlotWidget                                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortItemGroupSlotWidget::OnItemSet__DelegateSignature(class UFortItemGroupSlotWidget* ItemSlotWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemGroupSlotWidget", "OnItemSet__DelegateSignature");
-
-	Params::FortItemGroupSlotWidget_OnItemSet__DelegateSignature Parms{};
-
-	Parms.ItemSlotWidget = ItemSlotWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteUI.FortItemGroupSlotWidget.OnItemSlotLockedStateChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItemGroupSlotWidget*         ItemSlotWidget                                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortItemGroupSlotWidget::OnItemSlotLockedStateChanged__DelegateSignature(class UFortItemGroupSlotWidget* ItemSlotWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemGroupSlotWidget", "OnItemSlotLockedStateChanged__DelegateSignature");
-
-	Params::FortItemGroupSlotWidget_OnItemSlotLockedStateChanged__DelegateSignature Parms{};
-
-	Parms.ItemSlotWidget = ItemSlotWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortniteUI.FortItemGroupSlotWidget.SetItem
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -5411,26 +5351,6 @@ void UFortBaseCanvasNode::HandleNodeStateChangedInternal()
 }
 
 
-// DelegateFunction FortniteUI.FortBaseCanvasNode.OnNodeStateChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortBaseCanvasNode*              Node                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortBaseCanvasNode::OnNodeStateChanged__DelegateSignature(class UFortBaseCanvasNode* Node)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortBaseCanvasNode", "OnNodeStateChanged__DelegateSignature");
-
-	Params::FortBaseCanvasNode_OnNodeStateChanged__DelegateSignature Parms{};
-
-	Parms.Node = Node;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortniteUI.FortBaseCanvasNode.Purchase
 // (Final, Native, Public, BlueprintCallable)
 
@@ -6421,66 +6341,6 @@ void UFortGlobalUIContext::Logout()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteUI.FortGlobalUIContext.OnLoadingScreenVisibilityChangedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// bool                                    IsVisible                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortGlobalUIContext::OnLoadingScreenVisibilityChangedDelegate__DelegateSignature(bool IsVisible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGlobalUIContext", "OnLoadingScreenVisibilityChangedDelegate__DelegateSignature");
-
-	Params::FortGlobalUIContext_OnLoadingScreenVisibilityChangedDelegate__DelegateSignature Parms{};
-
-	Parms.IsVisible = IsVisible;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteUI.FortGlobalUIContext.OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// bool                                    bConnected                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortGlobalUIContext::OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature(bool bConnected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGlobalUIContext", "OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature");
-
-	Params::FortGlobalUIContext_OnLocalPlayerControllerConnectionChangedDelegate__DelegateSignature Parms{};
-
-	Parms.bConnected = bConnected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteUI.FortGlobalUIContext.OnQueryFortBackendVersionDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// struct FFortBackendVersion              FortBackendVersion                                     (Parm, NativeAccessSpecifierPublic)
-
-void UFortGlobalUIContext::OnQueryFortBackendVersionDelegate__DelegateSignature(const struct FFortBackendVersion& FortBackendVersion)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGlobalUIContext", "OnQueryFortBackendVersionDelegate__DelegateSignature");
-
-	Params::FortGlobalUIContext_OnQueryFortBackendVersionDelegate__DelegateSignature Parms{};
-
-	Parms.FortBackendVersion = std::move(FortBackendVersion);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -11095,26 +10955,6 @@ void UFortCollectionBookRewardCardWidget::ClearRewards()
 }
 
 
-// DelegateFunction FortniteUI.FortCollectionBookRewardCardWidget.OnDisplayedItemChangedEvent__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItem*                        DisplayedItem                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortCollectionBookRewardCardWidget::OnDisplayedItemChangedEvent__DelegateSignature(class UFortItem* DisplayedItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCollectionBookRewardCardWidget", "OnDisplayedItemChangedEvent__DelegateSignature");
-
-	Params::FortCollectionBookRewardCardWidget_OnDisplayedItemChangedEvent__DelegateSignature Parms{};
-
-	Parms.DisplayedItem = DisplayedItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortniteUI.FortCollectionBookRewardCardWidget.SetRewards
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -11379,50 +11219,6 @@ void UFortCollectionBookSectionPanel::OnInspectActionExecuted(bool* bPassThrough
 
 	if (bPassThrough != nullptr)
 		*bPassThrough = Parms.bPassThrough;
-}
-
-
-// DelegateFunction FortniteUI.FortCollectionBookSectionPanel.OnItemAction__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItem*                        SelectedItem                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortCollectionBookSectionPanel::OnItemAction__DelegateSignature(class UFortItem* SelectedItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCollectionBookSectionPanel", "OnItemAction__DelegateSignature");
-
-	Params::FortCollectionBookSectionPanel_OnItemAction__DelegateSignature Parms{};
-
-	Parms.SelectedItem = SelectedItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteUI.FortCollectionBookSectionPanel.OnItemInspectAction__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItem*                        SelectedItem                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    EnableItemActions                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    IsPlaceholderItem                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortCollectionBookSectionPanel::OnItemInspectAction__DelegateSignature(class UFortItem* SelectedItem, bool EnableItemActions, bool IsPlaceholderItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCollectionBookSectionPanel", "OnItemInspectAction__DelegateSignature");
-
-	Params::FortCollectionBookSectionPanel_OnItemInspectAction__DelegateSignature Parms{};
-
-	Parms.SelectedItem = SelectedItem;
-	Parms.EnableItemActions = EnableItemActions;
-	Parms.IsPlaceholderItem = IsPlaceholderItem;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -11709,20 +11505,6 @@ void UFortCollectionBookSectionPanel::OnSlottedItemOperationComplete(const class
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteUI.FortCollectionBookSlotWidget.FortCollectionBookSlottedItemUpdatedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortCollectionBookSlotWidget::FortCollectionBookSlottedItemUpdatedDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCollectionBookSlotWidget", "FortCollectionBookSlottedItemUpdatedDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -15323,20 +15105,6 @@ void UFortSkillTreeViewer::NavigateTo(const class FName& SkillTreeNodeId, const 
 }
 
 
-// DelegateFunction FortniteUI.FortSkillTreeViewer.OnNodeSelectionChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortSkillTreeViewer::OnNodeSelectionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortSkillTreeViewer", "OnNodeSelectionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function FortniteUI.FortSkillTreeViewer.ShowPage
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -17681,26 +17449,6 @@ void UFortGridWidgetBase::SetTileWidth(float Width)
 }
 
 
-// DelegateFunction FortniteUI.FortGridPickerButton.CreateGridWidget__DelegateSignature
-// (Public, Delegate)
-// Parameters:
-// class UFortGridPickerGrid*              ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UFortGridPickerGrid* UFortGridPickerButton::CreateGridWidget__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGridPickerButton", "CreateGridWidget__DelegateSignature");
-
-	Params::FortGridPickerButton_CreateGridWidget__DelegateSignature Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
 // Function FortniteUI.FortGridPickerButton.OnButtonClicked
 // (Final, Native, Public, BlueprintCallable)
 
@@ -17717,26 +17465,6 @@ void UFortGridPickerButton::OnButtonClicked()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteUI.FortGridPickerButton.OnIsGridPickerOpenChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// bool                                    IsOpen                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortGridPickerButton::OnIsGridPickerOpenChanged__DelegateSignature(bool IsOpen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGridPickerButton", "OnIsGridPickerOpenChanged__DelegateSignature");
-
-	Params::FortGridPickerButton_OnIsGridPickerOpenChanged__DelegateSignature Parms{};
-
-	Parms.IsOpen = IsOpen;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -19933,48 +19661,6 @@ bool UFortHomebaseUIContext::GetShowHeroHeadAccessoriesForLocalPlayer()
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// DelegateFunction FortniteUI.FortHomebaseUIContext.OnNodesPurchased__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class FName                             NodeID                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortHomebaseUIContext::OnNodesPurchased__DelegateSignature(class FName NodeID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortHomebaseUIContext", "OnNodesPurchased__DelegateSignature");
-
-	Params::FortHomebaseUIContext_OnNodesPurchased__DelegateSignature Parms{};
-
-	Parms.NodeID = NodeID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteUI.FortHomebaseUIContext.OnSquadSlotChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class FName                             SquadName                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   SlotIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortHomebaseUIContext::OnSquadSlotChanged__DelegateSignature(class FName SquadName, int32 SlotIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortHomebaseUIContext", "OnSquadSlotChanged__DelegateSignature");
-
-	Params::FortHomebaseUIContext_OnSquadSlotChanged__DelegateSignature Parms{};
-
-	Parms.SquadName = SquadName;
-	Parms.SlotIndex = SlotIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -23117,7 +22803,7 @@ void UFortActionHandlerPanel::SetOnPanelDeactivated(const TDelegate<void()>& OnD
 // Function FortniteUI.FortVaultWidget._BPOnContentUpdated
 // (Event, Protected, BlueprintEvent)
 
-void UFortVaultWidget::_BPOnContentUpdated()
+void UFortVaultWidget::mBPOnContentUpdated()
 {
 	static class UFunction* Func = nullptr;
 
@@ -23213,32 +22899,6 @@ void UFortVaultWidget::MarkVisibleItemsSeen(const TArray<class UFortAccountItem*
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteUI.FortVaultWidget.OnRecycleItemsChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// EVaultItemChangedType                   ChangeType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class UFortItem*>                ChangedItems                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TArray<struct FFortItemQuantityPair>    Resources                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TArray<class UFortItem*>                RecycleItems_0                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortVaultWidget::OnRecycleItemsChanged__DelegateSignature(EVaultItemChangedType ChangeType, const TArray<class UFortItem*>& ChangedItems, const TArray<struct FFortItemQuantityPair>& Resources, const TArray<class UFortItem*>& RecycleItems_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVaultWidget", "OnRecycleItemsChanged__DelegateSignature");
-
-	Params::FortVaultWidget_OnRecycleItemsChanged__DelegateSignature Parms{};
-
-	Parms.ChangeType = ChangeType;
-	Parms.ChangedItems = std::move(ChangedItems);
-	Parms.Resources = std::move(Resources);
-	Parms.RecycleItems_0 = std::move(RecycleItems_0);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -26221,27 +25881,6 @@ void UFortItemWidget::OnFortItemUpdated(bool bItemChanged, bool bAmmoChanged, bo
 }
 
 
-// DelegateFunction FortniteUI.FortItemWidget.OnGetItemToCompare__DelegateSignature
-// (Public, Delegate, HasOutParams)
-// Parameters:
-// class UFortItem*                        ItemToCompare                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortItemWidget::OnGetItemToCompare__DelegateSignature(class UFortItem** ItemToCompare)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemWidget", "OnGetItemToCompare__DelegateSignature");
-
-	Params::FortItemWidget_OnGetItemToCompare__DelegateSignature Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ItemToCompare != nullptr)
-		*ItemToCompare = Parms.ItemToCompare;
-}
-
-
 // Function FortniteUI.FortItemWidget.SetCooldownMaterial
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -27289,46 +26928,6 @@ void UFortSquadSlotsView::HandleSelectedButtonChanged(class UCommonButton* Selec
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteUI.FortSquadSlotsView.OnDifferentSquadSlotSelected__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// int32                                   SquadSlotIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortSquadSlotsView::OnDifferentSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortSquadSlotsView", "OnDifferentSquadSlotSelected__DelegateSignature");
-
-	Params::FortSquadSlotsView_OnDifferentSquadSlotSelected__DelegateSignature Parms{};
-
-	Parms.SquadSlotIndex = SquadSlotIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteUI.FortSquadSlotsView.OnRequestOpenSquadSlot__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// int32                                   SquadSlotIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortSquadSlotsView::OnRequestOpenSquadSlot__DelegateSignature(int32 SquadSlotIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortSquadSlotsView", "OnRequestOpenSquadSlot__DelegateSignature");
-
-	Params::FortSquadSlotsView_OnRequestOpenSquadSlot__DelegateSignature Parms{};
-
-	Parms.SquadSlotIndex = SquadSlotIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -29778,26 +29377,6 @@ void UFortItemPickerBase::HandlePickerTileDestroyed(class UUserWidget* Widget)
 }
 
 
-// DelegateFunction FortniteUI.FortItemPickerBase.OnItemSelectionEvent__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItem*                        SelectedItem                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortItemPickerBase::OnItemSelectionEvent__DelegateSignature(class UFortItem* SelectedItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemPickerBase", "OnItemSelectionEvent__DelegateSignature");
-
-	Params::FortItemPickerBase_OnItemSelectionEvent__DelegateSignature Parms{};
-
-	Parms.SelectedItem = SelectedItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortniteUI.FortItemPickerBase.SetSelectedIndex
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -29951,30 +29530,6 @@ void UFortSurvivorSquadSummaryStatItem::SetAttributeModifierAccumulation(const s
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteUI.FortCollectionBookPicker.OnSlotItemConfirmed__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItem*                        ItemToSlot                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             SlotId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FFortDialogExternalLatentActionHandleLatentActionHandle                                     (Parm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UFortCollectionBookPicker::OnSlotItemConfirmed__DelegateSignature(class UFortItem* ItemToSlot, class FName SlotId, const struct FFortDialogExternalLatentActionHandle& LatentActionHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCollectionBookPicker", "OnSlotItemConfirmed__DelegateSignature");
-
-	Params::FortCollectionBookPicker_OnSlotItemConfirmed__DelegateSignature Parms{};
-
-	Parms.ItemToSlot = ItemToSlot;
-	Parms.SlotId = SlotId;
-	Parms.LatentActionHandle = std::move(LatentActionHandle);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -33595,32 +33150,6 @@ void UFortUIManagerWidget_NUI::IncrementShouldBlockSubtitlePortrait()
 }
 
 
-// DelegateFunction FortniteUI.FortUIManagerWidget_NUI.OnBeginSpokenDialog__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UTexture2D*                       Image                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FText                             Title                                                  (Parm, NativeAccessSpecifierPublic)
-// class FText                             Subtitle                                               (Parm, NativeAccessSpecifierPublic)
-// EFortAnnouncementDisplayPreference      DisplayPreference                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortUIManagerWidget_NUI::OnBeginSpokenDialog__DelegateSignature(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUIManagerWidget_NUI", "OnBeginSpokenDialog__DelegateSignature");
-
-	Params::FortUIManagerWidget_NUI_OnBeginSpokenDialog__DelegateSignature Parms{};
-
-	Parms.Image = Image;
-	Parms.Title = std::move(Title);
-	Parms.Subtitle = std::move(Subtitle);
-	Parms.DisplayPreference = DisplayPreference;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortniteUI.FortUIManagerWidget_NUI.OnEndLatentWaitForConfirmationDialog
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -33640,40 +33169,6 @@ void UFortUIManagerWidget_NUI::OnEndLatentWaitForConfirmationDialog(struct FFort
 	UObject::ProcessEvent(Func, &Parms);
 
 	WaitingDialogHandle = std::move(Parms.WaitingDialogHandle);
-}
-
-
-// DelegateFunction FortniteUI.FortUIManagerWidget_NUI.OnEndSpokenDialog__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortUIManagerWidget_NUI::OnEndSpokenDialog__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUIManagerWidget_NUI", "OnEndSpokenDialog__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// DelegateFunction FortniteUI.FortUIManagerWidget_NUI.OnShouldBlockSubtitlePortraitChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// bool                                    bShouldBlockSubtitlePortrait                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortUIManagerWidget_NUI::OnShouldBlockSubtitlePortraitChanged__DelegateSignature(bool bShouldBlockSubtitlePortrait)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUIManagerWidget_NUI", "OnShouldBlockSubtitlePortraitChanged__DelegateSignature");
-
-	Params::FortUIManagerWidget_NUI_OnShouldBlockSubtitlePortraitChanged__DelegateSignature Parms{};
-
-	Parms.bShouldBlockSubtitlePortrait = bShouldBlockSubtitlePortrait;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -33934,14 +33429,14 @@ void UFortUIManagerWidget_NUI::UpdateStateWidgetContent(class UFortUIStateWidget
 // Parameters:
 // EFortUIState                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EFortUIState UFortUIManagerWidget_NUI::_BPGetCurrentUIState() const
+EFortUIState UFortUIManagerWidget_NUI::mBPGetCurrentUIState() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("FortUIManagerWidget_NUI", "_BPGetCurrentUIState");
 
-	Params::FortUIManagerWidget_NUI__BPGetCurrentUIState Parms{};
+	Params::FortUIManagerWidget_NUI_mBPGetCurrentUIState Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -34189,20 +33684,6 @@ void UFortItemTileView::HideNullItemTile()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteUI.FortItemTileView.OnInventoryUpdated__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortItemTileView::OnInventoryUpdated__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemTileView", "OnInventoryUpdated__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -44376,26 +43857,6 @@ void UFortItemGroupSlotPicker::HandleItemSetInternal(const class UFortItemGroupS
 }
 
 
-// DelegateFunction FortniteUI.FortItemGroupSlotPicker.OnItemPickerSelectionChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortItem*                        SelectedItem                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortItemGroupSlotPicker::OnItemPickerSelectionChanged__DelegateSignature(class UFortItem* SelectedItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemGroupSlotPicker", "OnItemPickerSelectionChanged__DelegateSignature");
-
-	Params::FortItemGroupSlotPicker_OnItemPickerSelectionChanged__DelegateSignature Parms{};
-
-	Parms.SelectedItem = SelectedItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortniteUI.FortItemGroupSlotPicker.SetSelection
 // (Final, Native, Protected, BlueprintCallable)
 // Parameters:
@@ -45021,26 +44482,6 @@ void UFortNodeGraphHost::GetTokensNeededForNodePage(const class UFortNodeCanvasH
 }
 
 
-// DelegateFunction FortniteUI.FortNodeGraphHost.OnPageShown__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UFortNodeCanvasHost*              Page                                                   (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortNodeGraphHost::OnPageShown__DelegateSignature(class UFortNodeCanvasHost* Page)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortNodeGraphHost", "OnPageShown__DelegateSignature");
-
-	Params::FortNodeGraphHost_OnPageShown__DelegateSignature Parms{};
-
-	Parms.Page = Page;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortniteUI.FortNodeGraphHost.SetBackgroundMaterial
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -45613,46 +45054,6 @@ void UFortUIManagerWidget::DisplayStateContent(bool bDisplay)
 }
 
 
-// DelegateFunction FortniteUI.FortUIManagerWidget.OnBeginSpokenDialog__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// class UTexture2D*                       Image                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FText                             Title                                                  (Parm, NativeAccessSpecifierPublic)
-// class FText                             Subtitle                                               (Parm, NativeAccessSpecifierPublic)
-// EFortAnnouncementDisplayPreference      DisplayPreference                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortUIManagerWidget::OnBeginSpokenDialog__DelegateSignature(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUIManagerWidget", "OnBeginSpokenDialog__DelegateSignature");
-
-	Params::FortUIManagerWidget_OnBeginSpokenDialog__DelegateSignature Parms{};
-
-	Parms.Image = Image;
-	Parms.Title = std::move(Title);
-	Parms.Subtitle = std::move(Subtitle);
-	Parms.DisplayPreference = DisplayPreference;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteUI.FortUIManagerWidget.OnEndSpokenDialog__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortUIManagerWidget::OnEndSpokenDialog__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUIManagerWidget", "OnEndSpokenDialog__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function FortniteUI.FortUIManagerWidget.OnShowConfirmation
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -45876,14 +45277,14 @@ void UFortUIManagerWidget::UpdateStateWidgetContent(class UFortUIStateWidget* St
 // Parameters:
 // EFortUIState                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EFortUIState UFortUIManagerWidget::_BPGetCurrentUIState() const
+EFortUIState UFortUIManagerWidget::mBPGetCurrentUIState() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("FortUIManagerWidget", "_BPGetCurrentUIState");
 
-	Params::FortUIManagerWidget__BPGetCurrentUIState Parms{};
+	Params::FortUIManagerWidget_mBPGetCurrentUIState Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

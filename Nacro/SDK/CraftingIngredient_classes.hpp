@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "EFortUITheme_structs.hpp"
+#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "UMG_structs.hpp"
@@ -31,7 +31,7 @@ public:
 	class USizeBox*                               SizeBox_Divider;                                   // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TotalText;                                         // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBox_831;                                   // 0x0288(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSchematicRequirement                  Ingredient;                                        // 0x0290(0x0010)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
+	struct FSchematicRequirement                  ingredient;                                        // 0x0290(0x0010)(Edit, BlueprintVisible, NoDestructor, ExposeOnSpawn)
 
 public:
 	void ExecuteUbergraph_CraftingIngredient(int32 EntryPoint);
@@ -58,7 +58,7 @@ static_assert(offsetof(UCraftingIngredient_C, InventoryText) == 0x000270, "Membe
 static_assert(offsetof(UCraftingIngredient_C, SizeBox_Divider) == 0x000278, "Member 'UCraftingIngredient_C::SizeBox_Divider' has a wrong offset!");
 static_assert(offsetof(UCraftingIngredient_C, TotalText) == 0x000280, "Member 'UCraftingIngredient_C::TotalText' has a wrong offset!");
 static_assert(offsetof(UCraftingIngredient_C, VerticalBox_831) == 0x000288, "Member 'UCraftingIngredient_C::VerticalBox_831' has a wrong offset!");
-static_assert(offsetof(UCraftingIngredient_C, Ingredient) == 0x000290, "Member 'UCraftingIngredient_C::Ingredient' has a wrong offset!");
+static_assert(offsetof(UCraftingIngredient_C, ingredient) == 0x000290, "Member 'UCraftingIngredient_C::ingredient' has a wrong offset!");
 
 }
 

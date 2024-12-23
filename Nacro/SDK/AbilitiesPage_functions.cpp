@@ -199,9 +199,9 @@ void UAbilitiesPage_C::InitializeAbilityTiles()
 // Function AbilitiesPage.AbilitiesPage_C.UpdateAbilityMovie
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortGadgetItemDefinition*        InGadgetItemDef                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortGadgetItemDefinition*        inGadgetItemDef                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAbilitiesPage_C::UpdateAbilityMovie(class UFortGadgetItemDefinition* InGadgetItemDef)
+void UAbilitiesPage_C::UpdateAbilityMovie(class UFortGadgetItemDefinition* inGadgetItemDef)
 {
 	static class UFunction* Func = nullptr;
 
@@ -210,7 +210,7 @@ void UAbilitiesPage_C::UpdateAbilityMovie(class UFortGadgetItemDefinition* InGad
 
 	Params::AbilitiesPage_C_UpdateAbilityMovie Parms{};
 
-	Parms.InGadgetItemDef = InGadgetItemDef;
+	Parms.inGadgetItemDef = inGadgetItemDef;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -443,8 +443,6 @@ public:
 	struct FReplicatedPredictionKeyMap            ReplicatedPredictionKeyMap;                        // 0x1520(0x00C0)(Net, NativeAccessSpecifierPublic)
 
 public:
-	void AbilityAbilityKey__DelegateSignature(int32 InputID);
-	void AbilityConfirmOrCancel__DelegateSignature();
 	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToSelf(struct FGameplayEffectSpecHandle& SpecHandle);
 	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToTarget(struct FGameplayEffectSpecHandle& SpecHandle, class UAbilitySystemComponent* Target);
 	struct FActiveGameplayEffectHandle BP_ApplyGameplayEffectToSelf(TSubclassOf<class UGameplayEffect> GameplayEffectClass, float Level, const struct FGameplayEffectContextHandle& EffectContext);

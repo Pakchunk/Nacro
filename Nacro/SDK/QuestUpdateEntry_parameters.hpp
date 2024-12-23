@@ -19,17 +19,6 @@
 namespace SDK::Params
 {
 
-// Function QuestUpdateEntry.QuestUpdateEntry_C.AllQuestUpdatesFinished__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct QuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature final
-{
-public:
-	class UQuestUpdateEntry_C*                    UpdateWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(QuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature) == 0x000008, "Wrong alignment on QuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature");
-static_assert(sizeof(QuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature) == 0x000008, "Wrong size on QuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature");
-static_assert(offsetof(QuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature, UpdateWidget) == 0x000000, "Member 'QuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature::UpdateWidget' has a wrong offset!");
-
 // Function QuestUpdateEntry.QuestUpdateEntry_C.ExecuteUbergraph_QuestUpdateEntry
 // 0x0100 (0x0100 - 0x0000)
 struct QuestUpdateEntry_C_ExecuteUbergraph_QuestUpdateEntry final

@@ -59,7 +59,7 @@ static_assert(offsetof(ActiveModifiersHUD_C_OnActiveGameplayModifiersChanged, Ap
 struct ActiveModifiersHUD_C_PopulateModifiers final
 {
 public:
-	TArray<class UFortGameplayModifierItemDefinition*> InModifiers;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UFortGameplayModifierItemDefinition*> inModifiers;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	float                                         AnimationDuration;                                 // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 DescriptionTextStyle;                              // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,7 +79,7 @@ public:
 };
 static_assert(alignof(ActiveModifiersHUD_C_PopulateModifiers) == 0x000008, "Wrong alignment on ActiveModifiersHUD_C_PopulateModifiers");
 static_assert(sizeof(ActiveModifiersHUD_C_PopulateModifiers) == 0x000100, "Wrong size on ActiveModifiersHUD_C_PopulateModifiers");
-static_assert(offsetof(ActiveModifiersHUD_C_PopulateModifiers, InModifiers) == 0x000000, "Member 'ActiveModifiersHUD_C_PopulateModifiers::InModifiers' has a wrong offset!");
+static_assert(offsetof(ActiveModifiersHUD_C_PopulateModifiers, inModifiers) == 0x000000, "Member 'ActiveModifiersHUD_C_PopulateModifiers::inModifiers' has a wrong offset!");
 static_assert(offsetof(ActiveModifiersHUD_C_PopulateModifiers, AnimationDuration) == 0x000010, "Member 'ActiveModifiersHUD_C_PopulateModifiers::AnimationDuration' has a wrong offset!");
 static_assert(offsetof(ActiveModifiersHUD_C_PopulateModifiers, DescriptionTextStyle) == 0x000018, "Member 'ActiveModifiersHUD_C_PopulateModifiers::DescriptionTextStyle' has a wrong offset!");
 static_assert(offsetof(ActiveModifiersHUD_C_PopulateModifiers, NameTextStyle) == 0x000020, "Member 'ActiveModifiersHUD_C_PopulateModifiers::NameTextStyle' has a wrong offset!");

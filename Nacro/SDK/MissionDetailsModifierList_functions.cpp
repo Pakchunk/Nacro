@@ -23,11 +23,11 @@ namespace SDK
 // bool                                    UseTrunctatedList                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UClass*                           NameTextStyle                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                           DescriptionTextStyle                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ShowMinusDescriptions                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Show_Descriptions                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<class UFortGameplayModifierItemDefinition*>ModifierItems                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                                    UseSmallIcons                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMissionDetailsModifierList_C::PopulateModifiers(bool UseTrunctatedList, class UClass* NameTextStyle, class UClass* DescriptionTextStyle, bool ShowMinusDescriptions, TArray<class UFortGameplayModifierItemDefinition*>& ModifierItems, bool UseSmallIcons)
+void UMissionDetailsModifierList_C::PopulateModifiers(bool UseTrunctatedList, class UClass* NameTextStyle, class UClass* DescriptionTextStyle, bool Show_Descriptions, TArray<class UFortGameplayModifierItemDefinition*>& ModifierItems, bool UseSmallIcons)
 {
 	static class UFunction* Func = nullptr;
 
@@ -39,7 +39,7 @@ void UMissionDetailsModifierList_C::PopulateModifiers(bool UseTrunctatedList, cl
 	Parms.UseTrunctatedList = UseTrunctatedList;
 	Parms.NameTextStyle = NameTextStyle;
 	Parms.DescriptionTextStyle = DescriptionTextStyle;
-	Parms.ShowMinusDescriptions = ShowMinusDescriptions;
+	Parms.Show_Descriptions = Show_Descriptions;
 	Parms.ModifierItems = std::move(ModifierItems);
 	Parms.UseSmallIcons = UseSmallIcons;
 

@@ -36,7 +36,7 @@ public:
 	void ExecuteUbergraph_News(int32 EntryPoint);
 	void Construct();
 	void BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void AddEntry(const class FText& InEntryText);
+	void AddEntry(const class FText& inEntryText);
 	void PopulateEntries(bool* IsEmpty);
 	void Init();
 	void UpdateInfoPanel(const class FText& BodyText);

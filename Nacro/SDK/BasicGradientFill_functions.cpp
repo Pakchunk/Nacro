@@ -62,9 +62,9 @@ void UBasicGradientFill_C::PreConstruct(bool IsDesignTime)
 // Parameters:
 // struct FLinearColor                     Color_1_0                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Color_2_0                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Rotation__0_Minus_1_                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Rotation__0___1_                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1_0, const struct FLinearColor& Color_2_0, float Rotation__0_Minus_1_)
+void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1_0, const struct FLinearColor& Color_2_0, float Rotation__0___1_)
 {
 	static class UFunction* Func = nullptr;
 
@@ -75,7 +75,7 @@ void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1_0, const 
 
 	Parms.Color_1_0 = std::move(Color_1_0);
 	Parms.Color_2_0 = std::move(Color_2_0);
-	Parms.Rotation__0_Minus_1_ = Rotation__0_Minus_1_;
+	Parms.Rotation__0___1_ = Rotation__0___1_;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

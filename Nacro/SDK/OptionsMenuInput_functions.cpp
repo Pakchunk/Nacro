@@ -17,48 +17,6 @@
 namespace SDK
 {
 
-// Function OptionsMenuInput.OptionsMenuInput_C.Input Clicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Number_in_List_0                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Is_Primary_Button                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UOptionsMenuInput_C::Input_Clicked__DelegateSignature(int32 Number_in_List_0, bool Is_Primary_Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuInput_C", "Input Clicked__DelegateSignature");
-
-	Params::OptionsMenuInput_C_Input_Clicked__DelegateSignature Parms{};
-
-	Parms.Number_in_List_0 = Number_in_List_0;
-	Parms.Is_Primary_Button = Is_Primary_Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.UnbindClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Number_in_List_0                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuInput_C::UnbindClicked__DelegateSignature(int32 Number_in_List_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuInput_C", "UnbindClicked__DelegateSignature");
-
-	Params::OptionsMenuInput_C_UnbindClicked__DelegateSignature Parms{};
-
-	Parms.Number_in_List_0 = Number_in_List_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function OptionsMenuInput.OptionsMenuInput_C.ExecuteUbergraph_OptionsMenuInput
 // (HasDefaults)
 // Parameters:
@@ -353,15 +311,15 @@ void UOptionsMenuInput_C::OnAcquireFromPool()
 }
 
 
-// Function OptionsMenuInput.OptionsMenuInput_C.Center On Widget
+// Function OptionsMenuInput.OptionsMenuInput_C.Center on Widget
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenuInput_C::Center_On_Widget()
+void UOptionsMenuInput_C::Center_on_Widget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuInput_C", "Center On Widget");
+		Func = Class->GetFunction("OptionsMenuInput_C", "Center on Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

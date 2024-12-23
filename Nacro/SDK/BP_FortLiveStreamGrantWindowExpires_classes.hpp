@@ -41,8 +41,6 @@ public:
 	float                                         SecondsToDisplayName;                              // 0x0340(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void StreamTimerExpired__DelegateSignature();
-	void StreamTimerStarted__DelegateSignature();
 	void ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires(int32 EntryPoint);
 	void TextFadedOut();
 	void Handle_Wait_Between_Names();

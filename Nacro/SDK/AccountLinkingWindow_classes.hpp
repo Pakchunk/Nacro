@@ -64,13 +64,6 @@ public:
 	class FText                                   OpeningCodeRedemption;                             // 0x0610(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void OnRequestAutoLogin__DelegateSignature();
-	void OnAccountLinkingComplete__DelegateSignature();
-	void OnRequestSignIn__DelegateSignature();
-	void OnAccountLinkingFailed__DelegateSignature(const class FText& FailReason);
-	void OnPushStatus__DelegateSignature(const class FText& StatusText);
-	void OnPopStatus__DelegateSignature();
-	void OnViewEula__DelegateSignature();
 	void ExecuteUbergraph_AccountLinkingWindow(int32 EntryPoint);
 	void BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEvent_175_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void HandleNewPurchaseReceipt();

@@ -17,30 +17,6 @@
 namespace SDK
 {
 
-// Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.OnExpeditionCompleted__DelegateSignature
-// (Public, Delegate, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Succeeded                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
-
-void UFrontEndRewards_Expedition_C::OnExpeditionCompleted__DelegateSignature(bool Succeeded, TArray<struct FFortItemInstanceQuantityPair>& Rewards)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_Expedition_C", "OnExpeditionCompleted__DelegateSignature");
-
-	Params::FrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature Parms{};
-
-	Parms.Succeeded = Succeeded;
-	Parms.Rewards = std::move(Rewards);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Rewards = std::move(Parms.Rewards);
-}
-
-
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.ExecuteUbergraph_FrontEndRewards_Expedition
 // ()
 // Parameters:

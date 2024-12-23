@@ -23,13 +23,13 @@ class UHUD_TeamInfo_C final : public UFortHUDElementWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UVerticalBox*                           _Vertical_Box__Team_Members;                       // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           mVertical_Box__Team_Members;                       // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderFrame;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       InvalidationBox_1;                                 // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       InvalidationBox_2;                                 // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UInvalidationBox*                       InvalidationBox_3;                                 // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UHUDMinusTeamMemberInfo_C*>      TeamMembers;                                       // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class UHUD_TeamMemberInfo_C*>          TeamMembers;                                       // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                          NewVar_0;                                          // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -56,7 +56,7 @@ public:
 static_assert(alignof(UHUD_TeamInfo_C) == 0x000008, "Wrong alignment on UHUD_TeamInfo_C");
 static_assert(sizeof(UHUD_TeamInfo_C) == 0x0002B0, "Wrong size on UHUD_TeamInfo_C");
 static_assert(offsetof(UHUD_TeamInfo_C, UberGraphFrame) == 0x000260, "Member 'UHUD_TeamInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, _Vertical_Box__Team_Members) == 0x000268, "Member 'UHUD_TeamInfo_C::_Vertical_Box__Team_Members' has a wrong offset!");
+static_assert(offsetof(UHUD_TeamInfo_C, mVertical_Box__Team_Members) == 0x000268, "Member 'UHUD_TeamInfo_C::mVertical_Box__Team_Members' has a wrong offset!");
 static_assert(offsetof(UHUD_TeamInfo_C, BorderFrame) == 0x000270, "Member 'UHUD_TeamInfo_C::BorderFrame' has a wrong offset!");
 static_assert(offsetof(UHUD_TeamInfo_C, InvalidationBox_0) == 0x000278, "Member 'UHUD_TeamInfo_C::InvalidationBox_0' has a wrong offset!");
 static_assert(offsetof(UHUD_TeamInfo_C, InvalidationBox_1) == 0x000280, "Member 'UHUD_TeamInfo_C::InvalidationBox_1' has a wrong offset!");

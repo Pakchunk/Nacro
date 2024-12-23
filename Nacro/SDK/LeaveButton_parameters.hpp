@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function LeaveButton.LeaveButton_C.Update Visibility__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct LeaveButton_C_Update_Visibility__DelegateSignature final
-{
-public:
-	bool                                          Visibility_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(LeaveButton_C_Update_Visibility__DelegateSignature) == 0x000001, "Wrong alignment on LeaveButton_C_Update_Visibility__DelegateSignature");
-static_assert(sizeof(LeaveButton_C_Update_Visibility__DelegateSignature) == 0x000001, "Wrong size on LeaveButton_C_Update_Visibility__DelegateSignature");
-static_assert(offsetof(LeaveButton_C_Update_Visibility__DelegateSignature, Visibility_0) == 0x000000, "Member 'LeaveButton_C_Update_Visibility__DelegateSignature::Visibility_0' has a wrong offset!");
-
 // Function LeaveButton.LeaveButton_C.ExecuteUbergraph_LeaveButton
 // 0x05A0 (0x05A0 - 0x0000)
 struct LeaveButton_C_ExecuteUbergraph_LeaveButton final

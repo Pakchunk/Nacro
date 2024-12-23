@@ -35,9 +35,6 @@ public:
 	UMulticastDelegateProperty_                   Gamepad_Changed;                                   // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Enable_Overlay__DelegateSignature(bool Accept_Input, const class FText& Overlay_Text);
-	void Disable_Overlay__DelegateSignature();
-	void Gamepad_Changed__DelegateSignature(bool Gamepad_Enabled);
 	void ExecuteUbergraph_TabInputOptions(int32 EntryPoint);
 	void UnbindClicked(int32 Number_in_List);
 	void HandleUsingGamepadChanged(bool bUsingGamepad);

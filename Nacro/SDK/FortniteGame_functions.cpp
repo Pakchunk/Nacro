@@ -2532,20 +2532,6 @@ class UFortAsyncAction_MCPContextRecycleItems* UFortAsyncAction_MCPContextRecycl
 }
 
 
-// DelegateFunction FortniteGame.FortAsyncAction_MCPContextRecycleItems.OnMCPRequestComplete__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortAsyncAction_MCPContextRecycleItems::OnMCPRequestComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAsyncAction_MCPContextRecycleItems", "OnMCPRequestComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function FortniteGame.FortMcpProfileCollectionBook.ClaimCollectionBookPageRewards
 // (Net, NetReliable, NetRequest, Native, Event, Public, HasOutParams)
 // Parameters:
@@ -2745,11 +2731,11 @@ bool AFortSaveFileBuildingInstructionsHandler::SaveBuildings(class AFortPlayerCo
 // Function FortniteGame.FortItemCollectedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UFortWorldItemDefinition*         _CollectedItemDefinition                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _CollectedBy                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   _AmountCollected                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UFortWorldItemDefinition*         mCollectedItemDefinition                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mCollectedBy                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   mAmountCollected                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortItemCollectedParams::BreakParams(class UFortWorldItemDefinition** _CollectedItemDefinition, class AFortPlayerController** _CollectedBy, int32* _AmountCollected)
+void UFortItemCollectedParams::BreakParams(class UFortWorldItemDefinition** mCollectedItemDefinition, class AFortPlayerController** mCollectedBy, int32* mAmountCollected)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2765,26 +2751,26 @@ void UFortItemCollectedParams::BreakParams(class UFortWorldItemDefinition** _Col
 
 	Func->FunctionFlags = Flgs;
 
-	if (_CollectedItemDefinition != nullptr)
-		*_CollectedItemDefinition = Parms._CollectedItemDefinition;
+	if (mCollectedItemDefinition != nullptr)
+		*mCollectedItemDefinition = Parms.mCollectedItemDefinition;
 
-	if (_CollectedBy != nullptr)
-		*_CollectedBy = Parms._CollectedBy;
+	if (mCollectedBy != nullptr)
+		*mCollectedBy = Parms.mCollectedBy;
 
-	if (_AmountCollected != nullptr)
-		*_AmountCollected = Parms._AmountCollected;
+	if (mAmountCollected != nullptr)
+		*mAmountCollected = Parms.mAmountCollected;
 }
 
 
 // Function FortniteGame.FortItemCollectedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class UFortWorldItemDefinition*         _CollectedItemDefinition                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _CollectedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   _AmountCollected                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UFortWorldItemDefinition*         mCollectedItemDefinition                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mCollectedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   mAmountCollected                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortItemCollectedParams*         ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortItemCollectedParams::SetParams(const class UFortWorldItemDefinition* _CollectedItemDefinition, class AFortPlayerController* _CollectedBy, int32 _AmountCollected, class UFortItemCollectedParams** ThisParam)
+void UFortItemCollectedParams::SetParams(const class UFortWorldItemDefinition* mCollectedItemDefinition, class AFortPlayerController* mCollectedBy, int32 mAmountCollected, class UFortItemCollectedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2793,9 +2779,9 @@ void UFortItemCollectedParams::SetParams(const class UFortWorldItemDefinition* _
 
 	Params::FortItemCollectedParams_SetParams Parms{};
 
-	Parms._CollectedItemDefinition = _CollectedItemDefinition;
-	Parms._CollectedBy = _CollectedBy;
-	Parms._AmountCollected = _AmountCollected;
+	Parms.mCollectedItemDefinition = mCollectedItemDefinition;
+	Parms.mCollectedBy = mCollectedBy;
+	Parms.mAmountCollected = mAmountCollected;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2873,11 +2859,11 @@ void UFortNotificationHandler::NotificationShown()
 // Function FortniteGame.FortItemDroppedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UFortWorldItemDefinition*         _DroppedItemDefinition                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _DroppedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   _AmountCollected                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UFortWorldItemDefinition*         mDroppedItemDefinition                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mDroppedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   mAmountCollected                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortItemDroppedParams::BreakParams(class UFortWorldItemDefinition** _DroppedItemDefinition, class AFortPlayerController** _DroppedBy, int32* _AmountCollected)
+void UFortItemDroppedParams::BreakParams(class UFortWorldItemDefinition** mDroppedItemDefinition, class AFortPlayerController** mDroppedBy, int32* mAmountCollected)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2893,26 +2879,26 @@ void UFortItemDroppedParams::BreakParams(class UFortWorldItemDefinition** _Dropp
 
 	Func->FunctionFlags = Flgs;
 
-	if (_DroppedItemDefinition != nullptr)
-		*_DroppedItemDefinition = Parms._DroppedItemDefinition;
+	if (mDroppedItemDefinition != nullptr)
+		*mDroppedItemDefinition = Parms.mDroppedItemDefinition;
 
-	if (_DroppedBy != nullptr)
-		*_DroppedBy = Parms._DroppedBy;
+	if (mDroppedBy != nullptr)
+		*mDroppedBy = Parms.mDroppedBy;
 
-	if (_AmountCollected != nullptr)
-		*_AmountCollected = Parms._AmountCollected;
+	if (mAmountCollected != nullptr)
+		*mAmountCollected = Parms.mAmountCollected;
 }
 
 
 // Function FortniteGame.FortItemDroppedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class UFortWorldItemDefinition*         _DroppedItemDefinition                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _DroppedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   _AmountCollected                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UFortWorldItemDefinition*         mDroppedItemDefinition                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mDroppedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   mAmountCollected                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortItemDroppedParams*           ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortItemDroppedParams::SetParams(const class UFortWorldItemDefinition* _DroppedItemDefinition, class AFortPlayerController* _DroppedBy, int32 _AmountCollected, class UFortItemDroppedParams** ThisParam)
+void UFortItemDroppedParams::SetParams(const class UFortWorldItemDefinition* mDroppedItemDefinition, class AFortPlayerController* mDroppedBy, int32 mAmountCollected, class UFortItemDroppedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2921,9 +2907,9 @@ void UFortItemDroppedParams::SetParams(const class UFortWorldItemDefinition* _Dr
 
 	Params::FortItemDroppedParams_SetParams Parms{};
 
-	Parms._DroppedItemDefinition = _DroppedItemDefinition;
-	Parms._DroppedBy = _DroppedBy;
-	Parms._AmountCollected = _AmountCollected;
+	Parms.mDroppedItemDefinition = mDroppedItemDefinition;
+	Parms.mDroppedBy = mDroppedBy;
+	Parms.mAmountCollected = mAmountCollected;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2940,12 +2926,12 @@ void UFortItemDroppedParams::SetParams(const class UFortWorldItemDefinition* _Dr
 // Function FortniteGame.FortItemCraftedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UFortSchematicItemDefinition*     _SchematicDefinition                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _CraftedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   _AmountCrafted                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    _bItemWasQuickCrafted                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UFortSchematicItemDefinition*     mSchematicDefinition                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mCraftedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   mAmountCrafted                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    mbItemWasQuickCrafted                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortItemCraftedParams::BreakParams(class UFortSchematicItemDefinition** _SchematicDefinition, class AFortPlayerController** _CraftedBy, int32* _AmountCrafted, bool* _bItemWasQuickCrafted)
+void UFortItemCraftedParams::BreakParams(class UFortSchematicItemDefinition** mSchematicDefinition, class AFortPlayerController** mCraftedBy, int32* mAmountCrafted, bool* mbItemWasQuickCrafted)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2961,30 +2947,30 @@ void UFortItemCraftedParams::BreakParams(class UFortSchematicItemDefinition** _S
 
 	Func->FunctionFlags = Flgs;
 
-	if (_SchematicDefinition != nullptr)
-		*_SchematicDefinition = Parms._SchematicDefinition;
+	if (mSchematicDefinition != nullptr)
+		*mSchematicDefinition = Parms.mSchematicDefinition;
 
-	if (_CraftedBy != nullptr)
-		*_CraftedBy = Parms._CraftedBy;
+	if (mCraftedBy != nullptr)
+		*mCraftedBy = Parms.mCraftedBy;
 
-	if (_AmountCrafted != nullptr)
-		*_AmountCrafted = Parms._AmountCrafted;
+	if (mAmountCrafted != nullptr)
+		*mAmountCrafted = Parms.mAmountCrafted;
 
-	if (_bItemWasQuickCrafted != nullptr)
-		*_bItemWasQuickCrafted = Parms._bItemWasQuickCrafted;
+	if (mbItemWasQuickCrafted != nullptr)
+		*mbItemWasQuickCrafted = Parms.mbItemWasQuickCrafted;
 }
 
 
 // Function FortniteGame.FortItemCraftedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class UFortSchematicItemDefinition*     _SchematicDefinition                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _CraftedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   _AmountCrafted                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    _bItemWasQuickCrafted                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UFortSchematicItemDefinition*     mSchematicDefinition                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mCraftedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   mAmountCrafted                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    mbItemWasQuickCrafted                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortItemCraftedParams*           ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortItemCraftedParams::SetParams(const class UFortSchematicItemDefinition* _SchematicDefinition, class AFortPlayerController* _CraftedBy, int32 _AmountCrafted, bool _bItemWasQuickCrafted, class UFortItemCraftedParams** ThisParam)
+void UFortItemCraftedParams::SetParams(const class UFortSchematicItemDefinition* mSchematicDefinition, class AFortPlayerController* mCraftedBy, int32 mAmountCrafted, bool mbItemWasQuickCrafted, class UFortItemCraftedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2993,10 +2979,10 @@ void UFortItemCraftedParams::SetParams(const class UFortSchematicItemDefinition*
 
 	Params::FortItemCraftedParams_SetParams Parms{};
 
-	Parms._SchematicDefinition = _SchematicDefinition;
-	Parms._CraftedBy = _CraftedBy;
-	Parms._AmountCrafted = _AmountCrafted;
-	Parms._bItemWasQuickCrafted = _bItemWasQuickCrafted;
+	Parms.mSchematicDefinition = mSchematicDefinition;
+	Parms.mCraftedBy = mCraftedBy;
+	Parms.mAmountCrafted = mAmountCrafted;
+	Parms.mbItemWasQuickCrafted = mbItemWasQuickCrafted;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3287,10 +3273,10 @@ class AFortBotStructureBuilder* UFortBotMissionLogic::SpawnStructureBuilder(clas
 // Function FortniteGame.FortEnemyKilledParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPawn*                        _KilledPawn                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _KilledBy                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPawn*                        mKilledPawn                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mKilledBy                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortEnemyKilledParams::BreakParams(class AFortPawn** _KilledPawn, class AFortPlayerController** _KilledBy)
+void UFortEnemyKilledParams::BreakParams(class AFortPawn** mKilledPawn, class AFortPlayerController** mKilledBy)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3306,22 +3292,22 @@ void UFortEnemyKilledParams::BreakParams(class AFortPawn** _KilledPawn, class AF
 
 	Func->FunctionFlags = Flgs;
 
-	if (_KilledPawn != nullptr)
-		*_KilledPawn = Parms._KilledPawn;
+	if (mKilledPawn != nullptr)
+		*mKilledPawn = Parms.mKilledPawn;
 
-	if (_KilledBy != nullptr)
-		*_KilledBy = Parms._KilledBy;
+	if (mKilledBy != nullptr)
+		*mKilledBy = Parms.mKilledBy;
 }
 
 
 // Function FortniteGame.FortEnemyKilledParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPawn*                        _KilledPawn                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _KilledBy                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPawn*                        mKilledPawn                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mKilledBy                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortEnemyKilledParams*           ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortEnemyKilledParams::SetParams(class AFortPawn* _KilledPawn, class AFortPlayerController* _KilledBy, class UFortEnemyKilledParams** ThisParam)
+void UFortEnemyKilledParams::SetParams(class AFortPawn* mKilledPawn, class AFortPlayerController* mKilledBy, class UFortEnemyKilledParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3330,8 +3316,8 @@ void UFortEnemyKilledParams::SetParams(class AFortPawn* _KilledPawn, class AFort
 
 	Params::FortEnemyKilledParams_SetParams Parms{};
 
-	Parms._KilledPawn = _KilledPawn;
-	Parms._KilledBy = _KilledBy;
+	Parms.mKilledPawn = mKilledPawn;
+	Parms.mKilledBy = mKilledBy;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3348,11 +3334,11 @@ void UFortEnemyKilledParams::SetParams(class AFortPawn* _KilledPawn, class AFort
 // Function FortniteGame.FortEnemyDamagedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPawn*                        _DamagedPawn                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _DamagedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   _DamageAmount                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPawn*                        mDamagedPawn                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mDamagedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   mDamageAmount                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortEnemyDamagedParams::BreakParams(class AFortPawn** _DamagedPawn, class AFortPlayerController** _DamagedBy, float* _DamageAmount)
+void UFortEnemyDamagedParams::BreakParams(class AFortPawn** mDamagedPawn, class AFortPlayerController** mDamagedBy, float* mDamageAmount)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3368,26 +3354,26 @@ void UFortEnemyDamagedParams::BreakParams(class AFortPawn** _DamagedPawn, class 
 
 	Func->FunctionFlags = Flgs;
 
-	if (_DamagedPawn != nullptr)
-		*_DamagedPawn = Parms._DamagedPawn;
+	if (mDamagedPawn != nullptr)
+		*mDamagedPawn = Parms.mDamagedPawn;
 
-	if (_DamagedBy != nullptr)
-		*_DamagedBy = Parms._DamagedBy;
+	if (mDamagedBy != nullptr)
+		*mDamagedBy = Parms.mDamagedBy;
 
-	if (_DamageAmount != nullptr)
-		*_DamageAmount = Parms._DamageAmount;
+	if (mDamageAmount != nullptr)
+		*mDamageAmount = Parms.mDamageAmount;
 }
 
 
 // Function FortniteGame.FortEnemyDamagedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPawn*                        _DamagedPawn                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _DamagedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   _DamageAmount                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPawn*                        mDamagedPawn                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mDamagedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   mDamageAmount                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortEnemyDamagedParams*          ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortEnemyDamagedParams::SetParams(class AFortPawn* _DamagedPawn, class AFortPlayerController* _DamagedBy, float _DamageAmount, class UFortEnemyDamagedParams** ThisParam)
+void UFortEnemyDamagedParams::SetParams(class AFortPawn* mDamagedPawn, class AFortPlayerController* mDamagedBy, float mDamageAmount, class UFortEnemyDamagedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3396,9 +3382,9 @@ void UFortEnemyDamagedParams::SetParams(class AFortPawn* _DamagedPawn, class AFo
 
 	Params::FortEnemyDamagedParams_SetParams Parms{};
 
-	Parms._DamagedPawn = _DamagedPawn;
-	Parms._DamagedBy = _DamagedBy;
-	Parms._DamageAmount = _DamageAmount;
+	Parms.mDamagedPawn = mDamagedPawn;
+	Parms.mDamagedBy = mDamagedBy;
+	Parms.mDamageAmount = mDamageAmount;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3415,9 +3401,9 @@ void UFortEnemyDamagedParams::SetParams(class AFortPawn* _DamagedPawn, class AFo
 // Function FortniteGame.FortNewPlayerParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            _NewPlayerController                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mNewPlayerController                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortNewPlayerParams::BreakParams(class AFortPlayerController** _NewPlayerController)
+void UFortNewPlayerParams::BreakParams(class AFortPlayerController** mNewPlayerController)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3433,18 +3419,18 @@ void UFortNewPlayerParams::BreakParams(class AFortPlayerController** _NewPlayerC
 
 	Func->FunctionFlags = Flgs;
 
-	if (_NewPlayerController != nullptr)
-		*_NewPlayerController = Parms._NewPlayerController;
+	if (mNewPlayerController != nullptr)
+		*mNewPlayerController = Parms.mNewPlayerController;
 }
 
 
 // Function FortniteGame.FortNewPlayerParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerController*            _NewPlayerController                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mNewPlayerController                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortNewPlayerParams*             ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortNewPlayerParams::SetParams(class AFortPlayerController* _NewPlayerController, class UFortNewPlayerParams** ThisParam)
+void UFortNewPlayerParams::SetParams(class AFortPlayerController* mNewPlayerController, class UFortNewPlayerParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3453,7 +3439,7 @@ void UFortNewPlayerParams::SetParams(class AFortPlayerController* _NewPlayerCont
 
 	Params::FortNewPlayerParams_SetParams Parms{};
 
-	Parms._NewPlayerController = _NewPlayerController;
+	Parms.mNewPlayerController = mNewPlayerController;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4070,9 +4056,9 @@ int32 AFortPlayerStateZone::GetNumOfAccumulatedItem(const class UFortWorldItemDe
 // Function FortniteGame.FortPlayerExitParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            _ExitingPlayerController                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mExitingPlayerController                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerExitParams::BreakParams(class AFortPlayerController** _ExitingPlayerController)
+void UFortPlayerExitParams::BreakParams(class AFortPlayerController** mExitingPlayerController)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4088,18 +4074,18 @@ void UFortPlayerExitParams::BreakParams(class AFortPlayerController** _ExitingPl
 
 	Func->FunctionFlags = Flgs;
 
-	if (_ExitingPlayerController != nullptr)
-		*_ExitingPlayerController = Parms._ExitingPlayerController;
+	if (mExitingPlayerController != nullptr)
+		*mExitingPlayerController = Parms.mExitingPlayerController;
 }
 
 
 // Function FortniteGame.FortPlayerExitParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerController*            _ExitingPlayerController                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mExitingPlayerController                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortPlayerExitParams*            ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerExitParams::SetParams(class AFortPlayerController* _ExitingPlayerController, class UFortPlayerExitParams** ThisParam)
+void UFortPlayerExitParams::SetParams(class AFortPlayerController* mExitingPlayerController, class UFortPlayerExitParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4108,7 +4094,7 @@ void UFortPlayerExitParams::SetParams(class AFortPlayerController* _ExitingPlaye
 
 	Params::FortPlayerExitParams_SetParams Parms{};
 
-	Parms._ExitingPlayerController = _ExitingPlayerController;
+	Parms.mExitingPlayerController = mExitingPlayerController;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4125,9 +4111,9 @@ void UFortPlayerExitParams::SetParams(class AFortPlayerController* _ExitingPlaye
 // Function FortniteGame.FortPlayerSpawnedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            _SpawnedPlayerController                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mSpawnedPlayerController                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerSpawnedParams::BreakParams(class AFortPlayerController** _SpawnedPlayerController)
+void UFortPlayerSpawnedParams::BreakParams(class AFortPlayerController** mSpawnedPlayerController)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4143,18 +4129,18 @@ void UFortPlayerSpawnedParams::BreakParams(class AFortPlayerController** _Spawne
 
 	Func->FunctionFlags = Flgs;
 
-	if (_SpawnedPlayerController != nullptr)
-		*_SpawnedPlayerController = Parms._SpawnedPlayerController;
+	if (mSpawnedPlayerController != nullptr)
+		*mSpawnedPlayerController = Parms.mSpawnedPlayerController;
 }
 
 
 // Function FortniteGame.FortPlayerSpawnedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerController*            _SpawnedPlayerController                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mSpawnedPlayerController                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortPlayerSpawnedParams*         ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerSpawnedParams::SetParams(class AFortPlayerController* _SpawnedPlayerController, class UFortPlayerSpawnedParams** ThisParam)
+void UFortPlayerSpawnedParams::SetParams(class AFortPlayerController* mSpawnedPlayerController, class UFortPlayerSpawnedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4163,7 +4149,7 @@ void UFortPlayerSpawnedParams::SetParams(class AFortPlayerController* _SpawnedPl
 
 	Params::FortPlayerSpawnedParams_SetParams Parms{};
 
-	Parms._SpawnedPlayerController = _SpawnedPlayerController;
+	Parms.mSpawnedPlayerController = mSpawnedPlayerController;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4239,9 +4225,9 @@ void UFortMissionLibrary::AddCompletionTagToMission(class UObject* WorldContextO
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   FDifficultyAddMod                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   fDifficultyAddMod                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionLibrary::AdjustWaveBasedGameDifficulty(class UObject* WorldContextObject, float FDifficultyAddMod)
+void UFortMissionLibrary::AdjustWaveBasedGameDifficulty(class UObject* WorldContextObject, float fDifficultyAddMod)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4251,7 +4237,7 @@ void UFortMissionLibrary::AdjustWaveBasedGameDifficulty(class UObject* WorldCont
 	Params::FortMissionLibrary_AdjustWaveBasedGameDifficulty Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
-	Parms.FDifficultyAddMod = FDifficultyAddMod;
+	Parms.fDifficultyAddMod = fDifficultyAddMod;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5846,10 +5832,10 @@ class UFortItemDefinition* AFortBluGloManager::GetBluGloItemDefinition() const
 // Function FortniteGame.FortPlayerDiedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerPawn*                  _KilledPlayer                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _KilledBy                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerPawn*                  mKilledPlayer                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mKilledBy                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerDiedParams::BreakParams(class AFortPlayerPawn** _KilledPlayer, class AController** _KilledBy)
+void UFortPlayerDiedParams::BreakParams(class AFortPlayerPawn** mKilledPlayer, class AController** mKilledBy)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5865,22 +5851,22 @@ void UFortPlayerDiedParams::BreakParams(class AFortPlayerPawn** _KilledPlayer, c
 
 	Func->FunctionFlags = Flgs;
 
-	if (_KilledPlayer != nullptr)
-		*_KilledPlayer = Parms._KilledPlayer;
+	if (mKilledPlayer != nullptr)
+		*mKilledPlayer = Parms.mKilledPlayer;
 
-	if (_KilledBy != nullptr)
-		*_KilledBy = Parms._KilledBy;
+	if (mKilledBy != nullptr)
+		*mKilledBy = Parms.mKilledBy;
 }
 
 
 // Function FortniteGame.FortPlayerDiedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerPawn*                  _KilledPlayer                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _KilledBy                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerPawn*                  mKilledPlayer                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mKilledBy                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortPlayerDiedParams*            ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerDiedParams::SetParams(class AFortPlayerPawn* _KilledPlayer, class AController* _KilledBy, class UFortPlayerDiedParams** ThisParam)
+void UFortPlayerDiedParams::SetParams(class AFortPlayerPawn* mKilledPlayer, class AController* mKilledBy, class UFortPlayerDiedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5889,8 +5875,8 @@ void UFortPlayerDiedParams::SetParams(class AFortPlayerPawn* _KilledPlayer, clas
 
 	Params::FortPlayerDiedParams_SetParams Parms{};
 
-	Parms._KilledPlayer = _KilledPlayer;
-	Parms._KilledBy = _KilledBy;
+	Parms.mKilledPlayer = mKilledPlayer;
+	Parms.mKilledBy = mKilledBy;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5907,10 +5893,10 @@ void UFortPlayerDiedParams::SetParams(class AFortPlayerPawn* _KilledPlayer, clas
 // Function FortniteGame.FortPlayerDBNOEnterParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerPawn*                  _KilledPlayer                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _KilledBy                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerPawn*                  mKilledPlayer                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mKilledBy                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerDBNOEnterParams::BreakParams(class AFortPlayerPawn** _KilledPlayer, class AController** _KilledBy)
+void UFortPlayerDBNOEnterParams::BreakParams(class AFortPlayerPawn** mKilledPlayer, class AController** mKilledBy)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5926,22 +5912,22 @@ void UFortPlayerDBNOEnterParams::BreakParams(class AFortPlayerPawn** _KilledPlay
 
 	Func->FunctionFlags = Flgs;
 
-	if (_KilledPlayer != nullptr)
-		*_KilledPlayer = Parms._KilledPlayer;
+	if (mKilledPlayer != nullptr)
+		*mKilledPlayer = Parms.mKilledPlayer;
 
-	if (_KilledBy != nullptr)
-		*_KilledBy = Parms._KilledBy;
+	if (mKilledBy != nullptr)
+		*mKilledBy = Parms.mKilledBy;
 }
 
 
 // Function FortniteGame.FortPlayerDBNOEnterParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerPawn*                  _KilledPlayer                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _KilledBy                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerPawn*                  mKilledPlayer                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mKilledBy                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortPlayerDBNOEnterParams*       ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerDBNOEnterParams::SetParams(class AFortPlayerPawn* _KilledPlayer, class AController* _KilledBy, class UFortPlayerDBNOEnterParams** ThisParam)
+void UFortPlayerDBNOEnterParams::SetParams(class AFortPlayerPawn* mKilledPlayer, class AController* mKilledBy, class UFortPlayerDBNOEnterParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5950,8 +5936,8 @@ void UFortPlayerDBNOEnterParams::SetParams(class AFortPlayerPawn* _KilledPlayer,
 
 	Params::FortPlayerDBNOEnterParams_SetParams Parms{};
 
-	Parms._KilledPlayer = _KilledPlayer;
-	Parms._KilledBy = _KilledBy;
+	Parms.mKilledPlayer = mKilledPlayer;
+	Parms.mKilledBy = mKilledBy;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6018,10 +6004,10 @@ float UFortGameData::GetTeamXpBoost()
 // Function FortniteGame.FortPlayerDBNORevivedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerPawn*                  _RevivedPlayer                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _RevivedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerPawn*                  mRevivedPlayer                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mRevivedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerDBNORevivedParams::BreakParams(class AFortPlayerPawn** _RevivedPlayer, class AController** _RevivedBy)
+void UFortPlayerDBNORevivedParams::BreakParams(class AFortPlayerPawn** mRevivedPlayer, class AController** mRevivedBy)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6037,22 +6023,22 @@ void UFortPlayerDBNORevivedParams::BreakParams(class AFortPlayerPawn** _RevivedP
 
 	Func->FunctionFlags = Flgs;
 
-	if (_RevivedPlayer != nullptr)
-		*_RevivedPlayer = Parms._RevivedPlayer;
+	if (mRevivedPlayer != nullptr)
+		*mRevivedPlayer = Parms.mRevivedPlayer;
 
-	if (_RevivedBy != nullptr)
-		*_RevivedBy = Parms._RevivedBy;
+	if (mRevivedBy != nullptr)
+		*mRevivedBy = Parms.mRevivedBy;
 }
 
 
 // Function FortniteGame.FortPlayerDBNORevivedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerPawn*                  _RevivedPlayer                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _RevivedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerPawn*                  mRevivedPlayer                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mRevivedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortPlayerDBNORevivedParams*     ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerDBNORevivedParams::SetParams(class AFortPlayerPawn* _RevivedPlayer, class AController* _RevivedBy, class UFortPlayerDBNORevivedParams** ThisParam)
+void UFortPlayerDBNORevivedParams::SetParams(class AFortPlayerPawn* mRevivedPlayer, class AController* mRevivedBy, class UFortPlayerDBNORevivedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6061,8 +6047,8 @@ void UFortPlayerDBNORevivedParams::SetParams(class AFortPlayerPawn* _RevivedPlay
 
 	Params::FortPlayerDBNORevivedParams_SetParams Parms{};
 
-	Parms._RevivedPlayer = _RevivedPlayer;
-	Parms._RevivedBy = _RevivedBy;
+	Parms.mRevivedPlayer = mRevivedPlayer;
+	Parms.mRevivedBy = mRevivedBy;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6079,10 +6065,10 @@ void UFortPlayerDBNORevivedParams::SetParams(class AFortPlayerPawn* _RevivedPlay
 // Function FortniteGame.FortDayPhaseChangeParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortTimeOfDayManager*            _LightingAndFogManager                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortDayPhase                           _NewDayPhase                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortTimeOfDayManager*            mLightingAndFogManager                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortDayPhase                           mNewDayPhase                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortDayPhaseChangeParams::BreakParams(class AFortTimeOfDayManager** _LightingAndFogManager, EFortDayPhase* _NewDayPhase)
+void UFortDayPhaseChangeParams::BreakParams(class AFortTimeOfDayManager** mLightingAndFogManager, EFortDayPhase* mNewDayPhase)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6098,22 +6084,22 @@ void UFortDayPhaseChangeParams::BreakParams(class AFortTimeOfDayManager** _Light
 
 	Func->FunctionFlags = Flgs;
 
-	if (_LightingAndFogManager != nullptr)
-		*_LightingAndFogManager = Parms._LightingAndFogManager;
+	if (mLightingAndFogManager != nullptr)
+		*mLightingAndFogManager = Parms.mLightingAndFogManager;
 
-	if (_NewDayPhase != nullptr)
-		*_NewDayPhase = Parms._NewDayPhase;
+	if (mNewDayPhase != nullptr)
+		*mNewDayPhase = Parms.mNewDayPhase;
 }
 
 
 // Function FortniteGame.FortDayPhaseChangeParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortTimeOfDayManager*            _LightingAndFogManager                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortDayPhase                           _NewDayPhase                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortTimeOfDayManager*            mLightingAndFogManager                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortDayPhase                           mNewDayPhase                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortDayPhaseChangeParams*        ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortDayPhaseChangeParams::SetParams(class AFortTimeOfDayManager* _LightingAndFogManager, EFortDayPhase _NewDayPhase, class UFortDayPhaseChangeParams** ThisParam)
+void UFortDayPhaseChangeParams::SetParams(class AFortTimeOfDayManager* mLightingAndFogManager, EFortDayPhase mNewDayPhase, class UFortDayPhaseChangeParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6122,8 +6108,8 @@ void UFortDayPhaseChangeParams::SetParams(class AFortTimeOfDayManager* _Lighting
 
 	Params::FortDayPhaseChangeParams_SetParams Parms{};
 
-	Parms._LightingAndFogManager = _LightingAndFogManager;
-	Parms._NewDayPhase = _NewDayPhase;
+	Parms.mLightingAndFogManager = mLightingAndFogManager;
+	Parms.mNewDayPhase = mNewDayPhase;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6165,11 +6151,11 @@ bool AFortGameplayMutator::IsMutatorActive() const
 // Function FortniteGame.FortPlayerBuiltParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class ABuildingActor*                   _Building                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortBuildingType                       _BuildingType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _Builder                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mBuilding                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortBuildingType                       mBuildingType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mBuilder                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerBuiltParams::BreakParams(class ABuildingActor** _Building, EFortBuildingType* _BuildingType, class AFortPlayerController** _Builder)
+void UFortPlayerBuiltParams::BreakParams(class ABuildingActor** mBuilding, EFortBuildingType* mBuildingType, class AFortPlayerController** mBuilder)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6185,26 +6171,26 @@ void UFortPlayerBuiltParams::BreakParams(class ABuildingActor** _Building, EFort
 
 	Func->FunctionFlags = Flgs;
 
-	if (_Building != nullptr)
-		*_Building = Parms._Building;
+	if (mBuilding != nullptr)
+		*mBuilding = Parms.mBuilding;
 
-	if (_BuildingType != nullptr)
-		*_BuildingType = Parms._BuildingType;
+	if (mBuildingType != nullptr)
+		*mBuildingType = Parms.mBuildingType;
 
-	if (_Builder != nullptr)
-		*_Builder = Parms._Builder;
+	if (mBuilder != nullptr)
+		*mBuilder = Parms.mBuilder;
 }
 
 
 // Function FortniteGame.FortPlayerBuiltParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class ABuildingActor*                   _Building                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortBuildingType                       _BuildingType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _Builder                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mBuilding                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortBuildingType                       mBuildingType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mBuilder                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortPlayerBuiltParams*           ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortPlayerBuiltParams::SetParams(class ABuildingActor* _Building, EFortBuildingType _BuildingType, class AFortPlayerController* _Builder, class UFortPlayerBuiltParams** ThisParam)
+void UFortPlayerBuiltParams::SetParams(class ABuildingActor* mBuilding, EFortBuildingType mBuildingType, class AFortPlayerController* mBuilder, class UFortPlayerBuiltParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6213,9 +6199,9 @@ void UFortPlayerBuiltParams::SetParams(class ABuildingActor* _Building, EFortBui
 
 	Params::FortPlayerBuiltParams_SetParams Parms{};
 
-	Parms._Building = _Building;
-	Parms._BuildingType = _BuildingType;
-	Parms._Builder = _Builder;
+	Parms.mBuilding = mBuilding;
+	Parms.mBuildingType = mBuildingType;
+	Parms.mBuilder = mBuilder;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6232,11 +6218,11 @@ void UFortPlayerBuiltParams::SetParams(class ABuildingActor* _Building, EFortBui
 // Function FortniteGame.FortBuildingDestroyedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class ABuildingActor*                   _Building                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortBuildingType                       _BuildingType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _Destroyer                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mBuilding                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortBuildingType                       mBuildingType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mDestroyer                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortBuildingDestroyedParams::BreakParams(class ABuildingActor** _Building, EFortBuildingType* _BuildingType, class AController** _Destroyer)
+void UFortBuildingDestroyedParams::BreakParams(class ABuildingActor** mBuilding, EFortBuildingType* mBuildingType, class AController** mDestroyer)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6252,26 +6238,26 @@ void UFortBuildingDestroyedParams::BreakParams(class ABuildingActor** _Building,
 
 	Func->FunctionFlags = Flgs;
 
-	if (_Building != nullptr)
-		*_Building = Parms._Building;
+	if (mBuilding != nullptr)
+		*mBuilding = Parms.mBuilding;
 
-	if (_BuildingType != nullptr)
-		*_BuildingType = Parms._BuildingType;
+	if (mBuildingType != nullptr)
+		*mBuildingType = Parms.mBuildingType;
 
-	if (_Destroyer != nullptr)
-		*_Destroyer = Parms._Destroyer;
+	if (mDestroyer != nullptr)
+		*mDestroyer = Parms.mDestroyer;
 }
 
 
 // Function FortniteGame.FortBuildingDestroyedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class ABuildingActor*                   _Building                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortBuildingType                       _BuildingType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _Destroyer                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mBuilding                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortBuildingType                       mBuildingType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mDestroyer                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortBuildingDestroyedParams*     ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortBuildingDestroyedParams::SetParams(class ABuildingActor* _Building, EFortBuildingType _BuildingType, class AController* _Destroyer, class UFortBuildingDestroyedParams** ThisParam)
+void UFortBuildingDestroyedParams::SetParams(class ABuildingActor* mBuilding, EFortBuildingType mBuildingType, class AController* mDestroyer, class UFortBuildingDestroyedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6280,9 +6266,9 @@ void UFortBuildingDestroyedParams::SetParams(class ABuildingActor* _Building, EF
 
 	Params::FortBuildingDestroyedParams_SetParams Parms{};
 
-	Parms._Building = _Building;
-	Parms._BuildingType = _BuildingType;
-	Parms._Destroyer = _Destroyer;
+	Parms.mBuilding = mBuilding;
+	Parms.mBuildingType = mBuildingType;
+	Parms.mDestroyer = mDestroyer;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6429,12 +6415,12 @@ bool UFortUINotification::ShouldShowNotification() const
 // Function FortniteGame.FortBuildingEditedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class ABuildingActor*                   _OriginalBuilding                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class ABuildingActor*                   _NewBuilding                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortBuildingType                       _BuildingType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _Editor                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mOriginalBuilding                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mNewBuilding                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortBuildingType                       mBuildingType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mEditor                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortBuildingEditedParams::BreakParams(class ABuildingActor** _OriginalBuilding, class ABuildingActor** _NewBuilding, EFortBuildingType* _BuildingType, class AFortPlayerController** _Editor)
+void UFortBuildingEditedParams::BreakParams(class ABuildingActor** mOriginalBuilding, class ABuildingActor** mNewBuilding, EFortBuildingType* mBuildingType, class AFortPlayerController** mEditor)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6450,30 +6436,30 @@ void UFortBuildingEditedParams::BreakParams(class ABuildingActor** _OriginalBuil
 
 	Func->FunctionFlags = Flgs;
 
-	if (_OriginalBuilding != nullptr)
-		*_OriginalBuilding = Parms._OriginalBuilding;
+	if (mOriginalBuilding != nullptr)
+		*mOriginalBuilding = Parms.mOriginalBuilding;
 
-	if (_NewBuilding != nullptr)
-		*_NewBuilding = Parms._NewBuilding;
+	if (mNewBuilding != nullptr)
+		*mNewBuilding = Parms.mNewBuilding;
 
-	if (_BuildingType != nullptr)
-		*_BuildingType = Parms._BuildingType;
+	if (mBuildingType != nullptr)
+		*mBuildingType = Parms.mBuildingType;
 
-	if (_Editor != nullptr)
-		*_Editor = Parms._Editor;
+	if (mEditor != nullptr)
+		*mEditor = Parms.mEditor;
 }
 
 
 // Function FortniteGame.FortBuildingEditedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class ABuildingActor*                   _OriginalBuilding                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class ABuildingActor*                   _NewBuilding                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortBuildingType                       _BuildingType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AFortPlayerController*            _Editor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mOriginalBuilding                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mNewBuilding                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortBuildingType                       mBuildingType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mEditor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortBuildingEditedParams*        ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortBuildingEditedParams::SetParams(class ABuildingActor* _OriginalBuilding, class ABuildingActor* _NewBuilding, EFortBuildingType _BuildingType, class AFortPlayerController* _Editor, class UFortBuildingEditedParams** ThisParam)
+void UFortBuildingEditedParams::SetParams(class ABuildingActor* mOriginalBuilding, class ABuildingActor* mNewBuilding, EFortBuildingType mBuildingType, class AFortPlayerController* mEditor, class UFortBuildingEditedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6482,10 +6468,10 @@ void UFortBuildingEditedParams::SetParams(class ABuildingActor* _OriginalBuildin
 
 	Params::FortBuildingEditedParams_SetParams Parms{};
 
-	Parms._OriginalBuilding = _OriginalBuilding;
-	Parms._NewBuilding = _NewBuilding;
-	Parms._BuildingType = _BuildingType;
-	Parms._Editor = _Editor;
+	Parms.mOriginalBuilding = mOriginalBuilding;
+	Parms.mNewBuilding = mNewBuilding;
+	Parms.mBuildingType = mBuildingType;
+	Parms.mEditor = mEditor;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6502,12 +6488,12 @@ void UFortBuildingEditedParams::SetParams(class ABuildingActor* _OriginalBuildin
 // Function FortniteGame.FortBuildingDamagedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class ABuildingActor*                   _Building                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortBuildingType                       _BuildingType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _DamagedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   _DamageAmount                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mBuilding                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortBuildingType                       mBuildingType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mDamagedBy                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   mDamageAmount                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortBuildingDamagedParams::BreakParams(class ABuildingActor** _Building, EFortBuildingType* _BuildingType, class AController** _DamagedBy, float* _DamageAmount)
+void UFortBuildingDamagedParams::BreakParams(class ABuildingActor** mBuilding, EFortBuildingType* mBuildingType, class AController** mDamagedBy, float* mDamageAmount)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6523,30 +6509,30 @@ void UFortBuildingDamagedParams::BreakParams(class ABuildingActor** _Building, E
 
 	Func->FunctionFlags = Flgs;
 
-	if (_Building != nullptr)
-		*_Building = Parms._Building;
+	if (mBuilding != nullptr)
+		*mBuilding = Parms.mBuilding;
 
-	if (_BuildingType != nullptr)
-		*_BuildingType = Parms._BuildingType;
+	if (mBuildingType != nullptr)
+		*mBuildingType = Parms.mBuildingType;
 
-	if (_DamagedBy != nullptr)
-		*_DamagedBy = Parms._DamagedBy;
+	if (mDamagedBy != nullptr)
+		*mDamagedBy = Parms.mDamagedBy;
 
-	if (_DamageAmount != nullptr)
-		*_DamageAmount = Parms._DamageAmount;
+	if (mDamageAmount != nullptr)
+		*mDamageAmount = Parms.mDamageAmount;
 }
 
 
 // Function FortniteGame.FortBuildingDamagedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class ABuildingActor*                   _Building                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EFortBuildingType                       _BuildingType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AController*                      _DamagedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   _DamageAmount                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ABuildingActor*                   mBuilding                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortBuildingType                       mBuildingType                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AController*                      mDamagedBy                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   mDamageAmount                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortBuildingDamagedParams*       ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortBuildingDamagedParams::SetParams(class ABuildingActor* _Building, EFortBuildingType _BuildingType, class AController* _DamagedBy, float _DamageAmount, class UFortBuildingDamagedParams** ThisParam)
+void UFortBuildingDamagedParams::SetParams(class ABuildingActor* mBuilding, EFortBuildingType mBuildingType, class AController* mDamagedBy, float mDamageAmount, class UFortBuildingDamagedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6555,10 +6541,10 @@ void UFortBuildingDamagedParams::SetParams(class ABuildingActor* _Building, EFor
 
 	Params::FortBuildingDamagedParams_SetParams Parms{};
 
-	Parms._Building = _Building;
-	Parms._BuildingType = _BuildingType;
-	Parms._DamagedBy = _DamagedBy;
-	Parms._DamageAmount = _DamageAmount;
+	Parms.mBuilding = mBuilding;
+	Parms.mBuildingType = mBuildingType;
+	Parms.mDamagedBy = mDamagedBy;
+	Parms.mDamageAmount = mDamageAmount;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6666,9 +6652,9 @@ void AFortClientAnnouncement::StopClientAnnouncement()
 // Function FortniteGame.FortMissionSucceededParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortMission*                     _SucceededMission                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortMission*                     mSucceededMission                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionSucceededParams::BreakParams(class AFortMission** _SucceededMission)
+void UFortMissionSucceededParams::BreakParams(class AFortMission** mSucceededMission)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6684,18 +6670,18 @@ void UFortMissionSucceededParams::BreakParams(class AFortMission** _SucceededMis
 
 	Func->FunctionFlags = Flgs;
 
-	if (_SucceededMission != nullptr)
-		*_SucceededMission = Parms._SucceededMission;
+	if (mSucceededMission != nullptr)
+		*mSucceededMission = Parms.mSucceededMission;
 }
 
 
 // Function FortniteGame.FortMissionSucceededParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortMission*                     _SucceededMission                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortMission*                     mSucceededMission                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortMissionSucceededParams*      ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionSucceededParams::SetParams(class AFortMission* _SucceededMission, class UFortMissionSucceededParams** ThisParam)
+void UFortMissionSucceededParams::SetParams(class AFortMission* mSucceededMission, class UFortMissionSucceededParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6704,7 +6690,7 @@ void UFortMissionSucceededParams::SetParams(class AFortMission* _SucceededMissio
 
 	Params::FortMissionSucceededParams_SetParams Parms{};
 
-	Parms._SucceededMission = _SucceededMission;
+	Parms.mSucceededMission = mSucceededMission;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6721,9 +6707,9 @@ void UFortMissionSucceededParams::SetParams(class AFortMission* _SucceededMissio
 // Function FortniteGame.FortMissionFailedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortMission*                     _FailedMission                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortMission*                     mFailedMission                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionFailedParams::BreakParams(class AFortMission** _FailedMission)
+void UFortMissionFailedParams::BreakParams(class AFortMission** mFailedMission)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6739,18 +6725,18 @@ void UFortMissionFailedParams::BreakParams(class AFortMission** _FailedMission)
 
 	Func->FunctionFlags = Flgs;
 
-	if (_FailedMission != nullptr)
-		*_FailedMission = Parms._FailedMission;
+	if (mFailedMission != nullptr)
+		*mFailedMission = Parms.mFailedMission;
 }
 
 
 // Function FortniteGame.FortMissionFailedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortMission*                     _FailedMission                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortMission*                     mFailedMission                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortMissionFailedParams*         ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionFailedParams::SetParams(class AFortMission* _FailedMission, class UFortMissionFailedParams** ThisParam)
+void UFortMissionFailedParams::SetParams(class AFortMission* mFailedMission, class UFortMissionFailedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6759,7 +6745,7 @@ void UFortMissionFailedParams::SetParams(class AFortMission* _FailedMission, cla
 
 	Params::FortMissionFailedParams_SetParams Parms{};
 
-	Parms._FailedMission = _FailedMission;
+	Parms.mFailedMission = mFailedMission;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6776,9 +6762,9 @@ void UFortMissionFailedParams::SetParams(class AFortMission* _FailedMission, cla
 // Function FortniteGame.FortMissionForceSuccessParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// float                                   _FractionCompleted                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   mFractionCompleted                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionForceSuccessParams::BreakParams(float* _FractionCompleted)
+void UFortMissionForceSuccessParams::BreakParams(float* mFractionCompleted)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6794,18 +6780,18 @@ void UFortMissionForceSuccessParams::BreakParams(float* _FractionCompleted)
 
 	Func->FunctionFlags = Flgs;
 
-	if (_FractionCompleted != nullptr)
-		*_FractionCompleted = Parms._FractionCompleted;
+	if (mFractionCompleted != nullptr)
+		*mFractionCompleted = Parms.mFractionCompleted;
 }
 
 
 // Function FortniteGame.FortMissionForceSuccessParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// float                                   _FractionCompleted                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   mFractionCompleted                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortMissionForceSuccessParams*   ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionForceSuccessParams::SetParams(float _FractionCompleted, class UFortMissionForceSuccessParams** ThisParam)
+void UFortMissionForceSuccessParams::SetParams(float mFractionCompleted, class UFortMissionForceSuccessParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6814,7 +6800,7 @@ void UFortMissionForceSuccessParams::SetParams(float _FractionCompleted, class U
 
 	Params::FortMissionForceSuccessParams_SetParams Parms{};
 
-	Parms._FractionCompleted = _FractionCompleted;
+	Parms.mFractionCompleted = mFractionCompleted;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6831,9 +6817,9 @@ void UFortMissionForceSuccessParams::SetParams(float _FractionCompleted, class U
 // Function FortniteGame.FortMissionNeutralCompleteParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortMission*                     _NeutrallyCompletedMission                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortMission*                     mNeutrallyCompletedMission                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionNeutralCompleteParams::BreakParams(class AFortMission** _NeutrallyCompletedMission)
+void UFortMissionNeutralCompleteParams::BreakParams(class AFortMission** mNeutrallyCompletedMission)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6849,18 +6835,18 @@ void UFortMissionNeutralCompleteParams::BreakParams(class AFortMission** _Neutra
 
 	Func->FunctionFlags = Flgs;
 
-	if (_NeutrallyCompletedMission != nullptr)
-		*_NeutrallyCompletedMission = Parms._NeutrallyCompletedMission;
+	if (mNeutrallyCompletedMission != nullptr)
+		*mNeutrallyCompletedMission = Parms.mNeutrallyCompletedMission;
 }
 
 
 // Function FortniteGame.FortMissionNeutralCompleteParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortMission*                     _NeutrallyCompletedMission                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortMission*                     mNeutrallyCompletedMission                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortMissionNeutralCompleteParams*ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortMissionNeutralCompleteParams::SetParams(class AFortMission* _NeutrallyCompletedMission, class UFortMissionNeutralCompleteParams** ThisParam)
+void UFortMissionNeutralCompleteParams::SetParams(class AFortMission* mNeutrallyCompletedMission, class UFortMissionNeutralCompleteParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6869,7 +6855,7 @@ void UFortMissionNeutralCompleteParams::SetParams(class AFortMission* _Neutrally
 
 	Params::FortMissionNeutralCompleteParams_SetParams Parms{};
 
-	Parms._NeutrallyCompletedMission = _NeutrallyCompletedMission;
+	Parms.mNeutrallyCompletedMission = mNeutrallyCompletedMission;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6916,9 +6902,9 @@ class UFortAsyncAction_OpenChoiceUI* UFortAsyncAction_OpenChoiceUI::OpenChoiceUI
 // Function FortniteGame.FortObjectiveSucceededParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortObjectiveBase*               _SucceededObjective                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortObjectiveBase*               mSucceededObjective                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortObjectiveSucceededParams::BreakParams(class AFortObjectiveBase** _SucceededObjective)
+void UFortObjectiveSucceededParams::BreakParams(class AFortObjectiveBase** mSucceededObjective)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6934,18 +6920,18 @@ void UFortObjectiveSucceededParams::BreakParams(class AFortObjectiveBase** _Succ
 
 	Func->FunctionFlags = Flgs;
 
-	if (_SucceededObjective != nullptr)
-		*_SucceededObjective = Parms._SucceededObjective;
+	if (mSucceededObjective != nullptr)
+		*mSucceededObjective = Parms.mSucceededObjective;
 }
 
 
 // Function FortniteGame.FortObjectiveSucceededParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortObjectiveBase*               _SucceededObjective                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortObjectiveBase*               mSucceededObjective                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortObjectiveSucceededParams*    ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortObjectiveSucceededParams::SetParams(class AFortObjectiveBase* _SucceededObjective, class UFortObjectiveSucceededParams** ThisParam)
+void UFortObjectiveSucceededParams::SetParams(class AFortObjectiveBase* mSucceededObjective, class UFortObjectiveSucceededParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6954,7 +6940,7 @@ void UFortObjectiveSucceededParams::SetParams(class AFortObjectiveBase* _Succeed
 
 	Params::FortObjectiveSucceededParams_SetParams Parms{};
 
-	Parms._SucceededObjective = _SucceededObjective;
+	Parms.mSucceededObjective = mSucceededObjective;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6971,9 +6957,9 @@ void UFortObjectiveSucceededParams::SetParams(class AFortObjectiveBase* _Succeed
 // Function FortniteGame.FortObjectiveFailedParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortObjectiveBase*               _FailedObjective                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortObjectiveBase*               mFailedObjective                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortObjectiveFailedParams::BreakParams(class AFortObjectiveBase** _FailedObjective)
+void UFortObjectiveFailedParams::BreakParams(class AFortObjectiveBase** mFailedObjective)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6989,18 +6975,18 @@ void UFortObjectiveFailedParams::BreakParams(class AFortObjectiveBase** _FailedO
 
 	Func->FunctionFlags = Flgs;
 
-	if (_FailedObjective != nullptr)
-		*_FailedObjective = Parms._FailedObjective;
+	if (mFailedObjective != nullptr)
+		*mFailedObjective = Parms.mFailedObjective;
 }
 
 
 // Function FortniteGame.FortObjectiveFailedParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortObjectiveBase*               _FailedObjective                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortObjectiveBase*               mFailedObjective                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortObjectiveFailedParams*       ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortObjectiveFailedParams::SetParams(class AFortObjectiveBase* _FailedObjective, class UFortObjectiveFailedParams** ThisParam)
+void UFortObjectiveFailedParams::SetParams(class AFortObjectiveBase* mFailedObjective, class UFortObjectiveFailedParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7009,7 +6995,7 @@ void UFortObjectiveFailedParams::SetParams(class AFortObjectiveBase* _FailedObje
 
 	Params::FortObjectiveFailedParams_SetParams Parms{};
 
-	Parms._FailedObjective = _FailedObjective;
+	Parms.mFailedObjective = mFailedObjective;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -7026,9 +7012,9 @@ void UFortObjectiveFailedParams::SetParams(class AFortObjectiveBase* _FailedObje
 // Function FortniteGame.FortObjectiveNeutralCompleteParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortObjectiveBase*               _NeutrallyCompletedObjective                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortObjectiveBase*               mNeutrallyCompletedObjective                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortObjectiveNeutralCompleteParams::BreakParams(class AFortObjectiveBase** _NeutrallyCompletedObjective)
+void UFortObjectiveNeutralCompleteParams::BreakParams(class AFortObjectiveBase** mNeutrallyCompletedObjective)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7044,18 +7030,18 @@ void UFortObjectiveNeutralCompleteParams::BreakParams(class AFortObjectiveBase**
 
 	Func->FunctionFlags = Flgs;
 
-	if (_NeutrallyCompletedObjective != nullptr)
-		*_NeutrallyCompletedObjective = Parms._NeutrallyCompletedObjective;
+	if (mNeutrallyCompletedObjective != nullptr)
+		*mNeutrallyCompletedObjective = Parms.mNeutrallyCompletedObjective;
 }
 
 
 // Function FortniteGame.FortObjectiveNeutralCompleteParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortObjectiveBase*               _NeutrallyCompletedObjective                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortObjectiveBase*               mNeutrallyCompletedObjective                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortObjectiveNeutralCompleteParams*ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortObjectiveNeutralCompleteParams::SetParams(class AFortObjectiveBase* _NeutrallyCompletedObjective, class UFortObjectiveNeutralCompleteParams** ThisParam)
+void UFortObjectiveNeutralCompleteParams::SetParams(class AFortObjectiveBase* mNeutrallyCompletedObjective, class UFortObjectiveNeutralCompleteParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7064,7 +7050,7 @@ void UFortObjectiveNeutralCompleteParams::SetParams(class AFortObjectiveBase* _N
 
 	Params::FortObjectiveNeutralCompleteParams_SetParams Parms{};
 
-	Parms._NeutrallyCompletedObjective = _NeutrallyCompletedObjective;
+	Parms.mNeutrallyCompletedObjective = mNeutrallyCompletedObjective;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -7081,10 +7067,10 @@ void UFortObjectiveNeutralCompleteParams::SetParams(class AFortObjectiveBase* _N
 // Function FortniteGame.FortToggledCursorModeParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            _PlayerThatToggledCursorMode                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mPlayerThatToggledCursorMode                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    InCursorMode                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortToggledCursorModeParams::BreakParams(class AFortPlayerController** _PlayerThatToggledCursorMode, bool* InCursorMode)
+void UFortToggledCursorModeParams::BreakParams(class AFortPlayerController** mPlayerThatToggledCursorMode, bool* InCursorMode)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7100,8 +7086,8 @@ void UFortToggledCursorModeParams::BreakParams(class AFortPlayerController** _Pl
 
 	Func->FunctionFlags = Flgs;
 
-	if (_PlayerThatToggledCursorMode != nullptr)
-		*_PlayerThatToggledCursorMode = Parms._PlayerThatToggledCursorMode;
+	if (mPlayerThatToggledCursorMode != nullptr)
+		*mPlayerThatToggledCursorMode = Parms.mPlayerThatToggledCursorMode;
 
 	if (InCursorMode != nullptr)
 		*InCursorMode = Parms.InCursorMode;
@@ -7111,11 +7097,11 @@ void UFortToggledCursorModeParams::BreakParams(class AFortPlayerController** _Pl
 // Function FortniteGame.FortToggledCursorModeParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerController*            _PlayerThatToggledCursorMode                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mPlayerThatToggledCursorMode                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    InCursorMode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortToggledCursorModeParams*     ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortToggledCursorModeParams::SetParams(class AFortPlayerController* _PlayerThatToggledCursorMode, bool InCursorMode, class UFortToggledCursorModeParams** ThisParam)
+void UFortToggledCursorModeParams::SetParams(class AFortPlayerController* mPlayerThatToggledCursorMode, bool InCursorMode, class UFortToggledCursorModeParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7124,7 +7110,7 @@ void UFortToggledCursorModeParams::SetParams(class AFortPlayerController* _Playe
 
 	Params::FortToggledCursorModeParams_SetParams Parms{};
 
-	Parms._PlayerThatToggledCursorMode = _PlayerThatToggledCursorMode;
+	Parms.mPlayerThatToggledCursorMode = mPlayerThatToggledCursorMode;
 	Parms.InCursorMode = InCursorMode;
 
 	auto Flgs = Func->FunctionFlags;
@@ -7584,10 +7570,10 @@ class UFortAsyncAction_TriggerNotification* UFortAsyncAction_TriggerNotification
 // Function FortniteGame.FortToggledOptionsMenuParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            _PlayerThatToggledOptionsMenu                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mPlayerThatToggledOptionsMenu                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    Opened                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortToggledOptionsMenuParams::BreakParams(class AFortPlayerController** _PlayerThatToggledOptionsMenu, bool* Opened)
+void UFortToggledOptionsMenuParams::BreakParams(class AFortPlayerController** mPlayerThatToggledOptionsMenu, bool* Opened)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7603,8 +7589,8 @@ void UFortToggledOptionsMenuParams::BreakParams(class AFortPlayerController** _P
 
 	Func->FunctionFlags = Flgs;
 
-	if (_PlayerThatToggledOptionsMenu != nullptr)
-		*_PlayerThatToggledOptionsMenu = Parms._PlayerThatToggledOptionsMenu;
+	if (mPlayerThatToggledOptionsMenu != nullptr)
+		*mPlayerThatToggledOptionsMenu = Parms.mPlayerThatToggledOptionsMenu;
 
 	if (Opened != nullptr)
 		*Opened = Parms.Opened;
@@ -7614,11 +7600,11 @@ void UFortToggledOptionsMenuParams::BreakParams(class AFortPlayerController** _P
 // Function FortniteGame.FortToggledOptionsMenuParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerController*            _PlayerThatToggledOptionsMenu                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mPlayerThatToggledOptionsMenu                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    Opened                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortToggledOptionsMenuParams*    ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortToggledOptionsMenuParams::SetParams(class AFortPlayerController* _PlayerThatToggledOptionsMenu, bool Opened, class UFortToggledOptionsMenuParams** ThisParam)
+void UFortToggledOptionsMenuParams::SetParams(class AFortPlayerController* mPlayerThatToggledOptionsMenu, bool Opened, class UFortToggledOptionsMenuParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7627,7 +7613,7 @@ void UFortToggledOptionsMenuParams::SetParams(class AFortPlayerController* _Play
 
 	Params::FortToggledOptionsMenuParams_SetParams Parms{};
 
-	Parms._PlayerThatToggledOptionsMenu = _PlayerThatToggledOptionsMenu;
+	Parms.mPlayerThatToggledOptionsMenu = mPlayerThatToggledOptionsMenu;
 	Parms.Opened = Opened;
 
 	auto Flgs = Func->FunctionFlags;
@@ -7645,11 +7631,11 @@ void UFortToggledOptionsMenuParams::SetParams(class AFortPlayerController* _Play
 // Function FortniteGame.FortToggledEditModeParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            _PlayerThatToggledEditMode                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mPlayerThatToggledEditMode                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class ABuildingSMActor*                 EditableActor_0                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    InEditMode                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortToggledEditModeParams::BreakParams(class AFortPlayerController** _PlayerThatToggledEditMode, class ABuildingSMActor** EditableActor_0, bool* InEditMode)
+void UFortToggledEditModeParams::BreakParams(class AFortPlayerController** mPlayerThatToggledEditMode, class ABuildingSMActor** EditableActor_0, bool* InEditMode)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7665,8 +7651,8 @@ void UFortToggledEditModeParams::BreakParams(class AFortPlayerController** _Play
 
 	Func->FunctionFlags = Flgs;
 
-	if (_PlayerThatToggledEditMode != nullptr)
-		*_PlayerThatToggledEditMode = Parms._PlayerThatToggledEditMode;
+	if (mPlayerThatToggledEditMode != nullptr)
+		*mPlayerThatToggledEditMode = Parms.mPlayerThatToggledEditMode;
 
 	if (EditableActor_0 != nullptr)
 		*EditableActor_0 = Parms.EditableActor_0;
@@ -7679,12 +7665,12 @@ void UFortToggledEditModeParams::BreakParams(class AFortPlayerController** _Play
 // Function FortniteGame.FortToggledEditModeParams.SetParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AFortPlayerController*            _PlayerThatToggledEditMode                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerController*            mPlayerThatToggledEditMode                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class ABuildingSMActor*                 InEditableActor                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    InEditMode                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UFortToggledEditModeParams*       ThisParam                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortToggledEditModeParams::SetParams(class AFortPlayerController* _PlayerThatToggledEditMode, class ABuildingSMActor* InEditableActor, bool InEditMode, class UFortToggledEditModeParams** ThisParam)
+void UFortToggledEditModeParams::SetParams(class AFortPlayerController* mPlayerThatToggledEditMode, class ABuildingSMActor* InEditableActor, bool InEditMode, class UFortToggledEditModeParams** ThisParam)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7693,7 +7679,7 @@ void UFortToggledEditModeParams::SetParams(class AFortPlayerController* _PlayerT
 
 	Params::FortToggledEditModeParams_SetParams Parms{};
 
-	Parms._PlayerThatToggledEditMode = _PlayerThatToggledEditMode;
+	Parms.mPlayerThatToggledEditMode = mPlayerThatToggledEditMode;
 	Parms.InEditableActor = InEditableActor;
 	Parms.InEditMode = InEditMode;
 
@@ -7712,9 +7698,9 @@ void UFortToggledEditModeParams::SetParams(class AFortPlayerController* _PlayerT
 // Function FortniteGame.FortStartLeavingZoneParams.BreakParams
 // (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class AFortPlayerPawn*                  _PlayerRequestingLeaving                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AFortPlayerPawn*                  mPlayerRequestingLeaving                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortStartLeavingZoneParams::BreakParams(class AFortPlayerPawn** _PlayerRequestingLeaving)
+void UFortStartLeavingZoneParams::BreakParams(class AFortPlayerPawn** mPlayerRequestingLeaving)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7730,8 +7716,8 @@ void UFortStartLeavingZoneParams::BreakParams(class AFortPlayerPawn** _PlayerReq
 
 	Func->FunctionFlags = Flgs;
 
-	if (_PlayerRequestingLeaving != nullptr)
-		*_PlayerRequestingLeaving = Parms._PlayerRequestingLeaving;
+	if (mPlayerRequestingLeaving != nullptr)
+		*mPlayerRequestingLeaving = Parms.mPlayerRequestingLeaving;
 }
 
 
@@ -7900,20 +7886,6 @@ void IFortInitializationInterface::WorldReady()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteGame.FortAthenaAircraft.FortAthenaAircraftDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void AFortAthenaAircraft::FortAthenaAircraftDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaAircraft", "FortAthenaAircraftDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -26260,10 +26232,10 @@ bool UFortGameplayAbility::SetupPreviewImageOverride()
 // Parameters:
 // struct FVector                          SourceLocation                                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FVector                          TargetLocation                                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   InDesiredThrowAngle                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   inDesiredThrowAngle                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FVector                          ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FVector UFortGameplayAbility::ApplyAccuracyToTargetLocation(const struct FVector& SourceLocation, const struct FVector& TargetLocation, float InDesiredThrowAngle) const
+struct FVector UFortGameplayAbility::ApplyAccuracyToTargetLocation(const struct FVector& SourceLocation, const struct FVector& TargetLocation, float inDesiredThrowAngle) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -26274,7 +26246,7 @@ struct FVector UFortGameplayAbility::ApplyAccuracyToTargetLocation(const struct 
 
 	Parms.SourceLocation = std::move(SourceLocation);
 	Parms.TargetLocation = std::move(TargetLocation);
-	Parms.InDesiredThrowAngle = InDesiredThrowAngle;
+	Parms.inDesiredThrowAngle = inDesiredThrowAngle;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -26601,15 +26573,15 @@ struct FRotator UFortGameplayAbility::GetFireRotation(bool bApplyLeading, bool b
 // Function FortniteGame.FortGameplayAbility.GetProjectileInitialValues
 // (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                                   OutProjectileSpeed                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FRotator                         OutSpawnDirection                                      (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// float                                   OutProjectileGravity                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   outProjectileSpeed                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FRotator                         outSpawnDirection                                      (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// float                                   outProjectileGravity                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class AActor*                           HomingTarget                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bApplyInaccuracy                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bApplyClampedMaxYawAngleToFire                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bApplyLeading                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortGameplayAbility::GetProjectileInitialValues(float* OutProjectileSpeed, struct FRotator* OutSpawnDirection, float* OutProjectileGravity, class AActor** HomingTarget, bool bApplyInaccuracy, bool bApplyClampedMaxYawAngleToFire, bool bApplyLeading) const
+void UFortGameplayAbility::GetProjectileInitialValues(float* outProjectileSpeed, struct FRotator* outSpawnDirection, float* outProjectileGravity, class AActor** HomingTarget, bool bApplyInaccuracy, bool bApplyClampedMaxYawAngleToFire, bool bApplyLeading) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -26629,14 +26601,14 @@ void UFortGameplayAbility::GetProjectileInitialValues(float* OutProjectileSpeed,
 
 	Func->FunctionFlags = Flgs;
 
-	if (OutProjectileSpeed != nullptr)
-		*OutProjectileSpeed = Parms.OutProjectileSpeed;
+	if (outProjectileSpeed != nullptr)
+		*outProjectileSpeed = Parms.outProjectileSpeed;
 
-	if (OutSpawnDirection != nullptr)
-		*OutSpawnDirection = std::move(Parms.OutSpawnDirection);
+	if (outSpawnDirection != nullptr)
+		*outSpawnDirection = std::move(Parms.outSpawnDirection);
 
-	if (OutProjectileGravity != nullptr)
-		*OutProjectileGravity = Parms.OutProjectileGravity;
+	if (outProjectileGravity != nullptr)
+		*outProjectileGravity = Parms.outProjectileGravity;
 
 	if (HomingTarget != nullptr)
 		*HomingTarget = Parms.HomingTarget;
@@ -43339,20 +43311,6 @@ class UFortAsyncAction_HomebaseContextPurchaseNode* UFortAsyncAction_HomebaseCon
 }
 
 
-// DelegateFunction FortniteGame.FortAsyncAction_HomebaseContextPurchaseNode.OnMCPRequestComplete__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortAsyncAction_HomebaseContextPurchaseNode::OnMCPRequestComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAsyncAction_HomebaseContextPurchaseNode", "OnMCPRequestComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function FortniteGame.BuildingConnectivityComponent.CONNECT
 // (Final, BlueprintAuthorityOnly, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -56806,20 +56764,6 @@ class UFortAsyncAction_MCPContextUpgradeItem* UFortAsyncAction_MCPContextUpgrade
 }
 
 
-// DelegateFunction FortniteGame.FortAsyncAction_MCPContextUpgradeItem.OnMCPRequestComplete__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortAsyncAction_MCPContextUpgradeItem::OnMCPRequestComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAsyncAction_MCPContextUpgradeItem", "OnMCPRequestComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function FortniteGame.FortAsyncAction_MCPContextConsumeItem.ConsumeItem
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -56849,20 +56793,6 @@ class UFortAsyncAction_MCPContextConsumeItem* UFortAsyncAction_MCPContextConsume
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// DelegateFunction FortniteGame.FortAsyncAction_MCPContextConsumeItem.OnMCPRequestComplete__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortAsyncAction_MCPContextConsumeItem::OnMCPRequestComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAsyncAction_MCPContextConsumeItem", "OnMCPRequestComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57239,28 +57169,6 @@ void UFortMcpContext::IssueFriendCode(const TDelegate<void(bool bSuccess, struct
 }
 
 
-// DelegateFunction FortniteGame.FortMcpContext.OnIssueFriendCodeComplete__DelegateSignature
-// (Public, Delegate, HasOutParams)
-// Parameters:
-// bool                                    bSuccess                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FFriendCode                      FriendCode                                             (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortMcpContext::OnIssueFriendCodeComplete__DelegateSignature(bool bSuccess, const struct FFriendCode& FriendCode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMcpContext", "OnIssueFriendCodeComplete__DelegateSignature");
-
-	Params::FortMcpContext_OnIssueFriendCodeComplete__DelegateSignature Parms{};
-
-	Parms.bSuccess = bSuccess;
-	Parms.FriendCode = std::move(FriendCode);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FortniteGame.FortMcpContext.ListMtxPackages
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -57310,48 +57218,6 @@ void UFortMcpContext::MarkItemSeen(class UFortAccountItem* ItemToMarkSeen)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteGame.FortMcpContext.OnQueryUnredeemedFriendCodesComplete__DelegateSignature
-// (Public, Delegate, HasOutParams)
-// Parameters:
-// bool                                    bSuccess                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FFriendCode>              FriendCodes                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortMcpContext::OnQueryUnredeemedFriendCodesComplete__DelegateSignature(bool bSuccess, const TArray<struct FFriendCode>& FriendCodes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMcpContext", "OnQueryUnredeemedFriendCodesComplete__DelegateSignature");
-
-	Params::FortMcpContext_OnQueryUnredeemedFriendCodesComplete__DelegateSignature Parms{};
-
-	Parms.bSuccess = bSuccess;
-	Parms.FriendCodes = std::move(FriendCodes);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortMcpContext.OnSendFriendCodePlatformMessageComplete__DelegateSignature
-// (Public, Delegate)
-// Parameters:
-// bool                                    bMessageSent                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortMcpContext::OnSendFriendCodePlatformMessageComplete__DelegateSignature(bool bMessageSent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMcpContext", "OnSendFriendCodePlatformMessageComplete__DelegateSignature");
-
-	Params::FortMcpContext_OnSendFriendCodePlatformMessageComplete__DelegateSignature Parms{};
-
-	Parms.bMessageSent = bMessageSent;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -58396,122 +58262,6 @@ void UFortUITeamInfo::GetTeamMembers(TArray<struct FFortTeamMemberInfo>* TeamMem
 
 	if (TeamMembers != nullptr)
 		*TeamMembers = std::move(Parms.TeamMembers);
-}
-
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamHitPointFractionsChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// TArray<float>                           HealthFractions                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TArray<float>                           ShieldFractions                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortUITeamInfo::OnTeamHitPointFractionsChanged__DelegateSignature(const TArray<float>& HealthFractions, const TArray<float>& ShieldFractions)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUITeamInfo", "OnTeamHitPointFractionsChanged__DelegateSignature");
-
-	Params::FortUITeamInfo_OnTeamHitPointFractionsChanged__DelegateSignature Parms{};
-
-	Parms.HealthFractions = std::move(HealthFractions);
-	Parms.ShieldFractions = std::move(ShieldFractions);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberAddedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// struct FFortTeamMemberInfo              NewTeamMemberInfo                                      (Parm, NativeAccessSpecifierPublic)
-
-void UFortUITeamInfo::OnTeamMemberAddedDelegate__DelegateSignature(const struct FFortTeamMemberInfo& NewTeamMemberInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUITeamInfo", "OnTeamMemberAddedDelegate__DelegateSignature");
-
-	Params::FortUITeamInfo_OnTeamMemberAddedDelegate__DelegateSignature Parms{};
-
-	Parms.NewTeamMemberInfo = std::move(NewTeamMemberInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// struct FUniqueNetIdRepl                 NewTeamMemberId                                        (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortUITeamInfo::OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature(const struct FUniqueNetIdRepl& NewTeamMemberId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUITeamInfo", "OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature");
-
-	Params::FortUITeamInfo_OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature Parms{};
-
-	Parms.NewTeamMemberId = std::move(NewTeamMemberId);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberRemovedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortUITeamInfo::OnTeamMemberRemovedDelegate__DelegateSignature(int32 PlayerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUITeamInfo", "OnTeamMemberRemovedDelegate__DelegateSignature");
-
-	Params::FortUITeamInfo_OnTeamMemberRemovedDelegate__DelegateSignature Parms{};
-
-	Parms.PlayerIndex = PlayerIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberSimpleDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortUITeamInfo::OnTeamMemberSimpleDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUITeamInfo", "OnTeamMemberSimpleDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// DelegateFunction FortniteGame.FortUITeamInfo.OnTeamMemberStateChangedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm, NativeAccessSpecifierPublic)
-
-void UFortUITeamInfo::OnTeamMemberStateChangedDelegate__DelegateSignature(const struct FFortTeamMemberInfo& TeamMemberInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortUITeamInfo", "OnTeamMemberStateChangedDelegate__DelegateSignature");
-
-	Params::FortUITeamInfo_OnTeamMemberStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.TeamMemberInfo = std::move(TeamMemberInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -65022,9 +64772,9 @@ void UFortCheatManager::ExecuteNewMissionGeneration(float DifficultyLevel, const
 // Function FortniteGame.FortCheatManager.ForceAILODs
 // (Final, Exec, Native, Public)
 // Parameters:
-// EFortAILODLevel                         InForcedAILODValue                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EFortAILODLevel                         inForcedAILODValue                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortCheatManager::ForceAILODs(EFortAILODLevel InForcedAILODValue)
+void UFortCheatManager::ForceAILODs(EFortAILODLevel inForcedAILODValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -65033,7 +64783,7 @@ void UFortCheatManager::ForceAILODs(EFortAILODLevel InForcedAILODValue)
 
 	Params::FortCheatManager_ForceAILODs Parms{};
 
-	Parms.InForcedAILODValue = InForcedAILODValue;
+	Parms.inForcedAILODValue = inForcedAILODValue;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -66247,9 +65997,9 @@ void UFortCheatManager::HideHUDElement(const struct FGameplayTag& HUDElementTag)
 // Function FortniteGame.FortCheatManager.KillPawns
 // (Exec, Native, Public)
 // Parameters:
-// TSubclassOf<class AFortPawn>            AClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSubclassOf<class AFortPawn>            aClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortCheatManager::KillPawns(TSubclassOf<class AFortPawn> AClass)
+void UFortCheatManager::KillPawns(TSubclassOf<class AFortPawn> aClass)
 {
 	static class UFunction* Func = nullptr;
 
@@ -66258,7 +66008,7 @@ void UFortCheatManager::KillPawns(TSubclassOf<class AFortPawn> AClass)
 
 	Params::FortCheatManager_KillPawns Parms{};
 
-	Parms.AClass = AClass;
+	Parms.aClass = aClass;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -66556,9 +66306,9 @@ void UFortCheatManager::MakeBuildingActorsGod()
 // Function FortniteGame.FortCheatManager.MakeGods
 // (Final, Exec, Native, Public)
 // Parameters:
-// TSubclassOf<class AFortPawn>            AClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSubclassOf<class AFortPawn>            aClass                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortCheatManager::MakeGods(TSubclassOf<class AFortPawn> AClass)
+void UFortCheatManager::MakeGods(TSubclassOf<class AFortPawn> aClass)
 {
 	static class UFunction* Func = nullptr;
 
@@ -66567,7 +66317,7 @@ void UFortCheatManager::MakeGods(TSubclassOf<class AFortPawn> AClass)
 
 	Params::FortCheatManager_MakeGods Parms{};
 
-	Parms.AClass = AClass;
+	Parms.aClass = aClass;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -68985,9 +68735,9 @@ void UFortCheatManager::SetWindPixelDebugExtent(float ExtentInUnrealUnits)
 // Function FortniteGame.FortCheatManager.SetWorldDaysElapsed
 // (Final, Exec, Native, Public)
 // Parameters:
-// float                                   Days                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   days                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortCheatManager::SetWorldDaysElapsed(float Days)
+void UFortCheatManager::SetWorldDaysElapsed(float days)
 {
 	static class UFunction* Func = nullptr;
 
@@ -68996,7 +68746,7 @@ void UFortCheatManager::SetWorldDaysElapsed(float Days)
 
 	Params::FortCheatManager_SetWorldDaysElapsed Parms{};
 
-	Parms.Days = Days;
+	Parms.days = days;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -71094,9 +70844,9 @@ void UFortCheatManager::UnforceAILODs()
 // Function FortniteGame.FortCheatManager.UnlockAllDefenders
 // (Final, Exec, Native, Public)
 // Parameters:
-// bool                                    InUnlockAllDefenders                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    inUnlockAllDefenders                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UFortCheatManager::UnlockAllDefenders(bool InUnlockAllDefenders)
+void UFortCheatManager::UnlockAllDefenders(bool inUnlockAllDefenders)
 {
 	static class UFunction* Func = nullptr;
 
@@ -71105,7 +70855,7 @@ void UFortCheatManager::UnlockAllDefenders(bool InUnlockAllDefenders)
 
 	Params::FortCheatManager_UnlockAllDefenders Parms{};
 
-	Parms.InUnlockAllDefenders = InUnlockAllDefenders;
+	Parms.inUnlockAllDefenders = inUnlockAllDefenders;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -71780,404 +71530,6 @@ void UFortPartyContext::MutePartyMember(const struct FUniqueNetIdRepl& PartyMemb
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnAthenaReadyStateChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FUniqueNetIdRepl                 UniqueId                                               (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bReady                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnAthenaReadyStateChanged__DelegateSignature(const struct FUniqueNetIdRepl& UniqueId, bool bReady)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnAthenaReadyStateChanged__DelegateSignature");
-
-	Params::FortPartyContext_OnAthenaReadyStateChanged__DelegateSignature Parms{};
-
-	Parms.UniqueId = std::move(UniqueId);
-	Parms.bReady = bReady;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnClientPartyStateChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// EFortPartyState                         PartyState                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnClientPartyStateChanged__DelegateSignature(EFortPartyState PartyState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnClientPartyStateChanged__DelegateSignature");
-
-	Params::FortPartyContext_OnClientPartyStateChanged__DelegateSignature Parms{};
-
-	Parms.PartyState = PartyState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnClientPlaylistChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// EFortAthenaPlaylist                     PlaylistChanged                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnClientPlaylistChanged__DelegateSignature(EFortAthenaPlaylist PlaylistChanged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnClientPlaylistChanged__DelegateSignature");
-
-	Params::FortPartyContext_OnClientPlaylistChanged__DelegateSignature Parms{};
-
-	Parms.PlaylistChanged = PlaylistChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnClientSquadFillChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// bool                                    bSquadFill                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnClientSquadFillChanged__DelegateSignature(bool bSquadFill)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnClientSquadFillChanged__DelegateSignature");
-
-	Params::FortPartyContext_OnClientSquadFillChanged__DelegateSignature Parms{};
-
-	Parms.bSquadFill = bSquadFill;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnFriendPresenceUpdated__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FUniqueNetIdRepl                 FriendId                                               (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnFriendPresenceUpdated__DelegateSignature(const struct FUniqueNetIdRepl& FriendId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnFriendPresenceUpdated__DelegateSignature");
-
-	Params::FortPartyContext_OnFriendPresenceUpdated__DelegateSignature Parms{};
-
-	Parms.FriendId = std::move(FriendId);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnFriendsChangedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// TArray<class UFortSocialItem*>          ActiveFriends                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnFriendsChangedDelegate__DelegateSignature(const TArray<class UFortSocialItem*>& ActiveFriends)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnFriendsChangedDelegate__DelegateSignature");
-
-	Params::FortPartyContext_OnFriendsChangedDelegate__DelegateSignature Parms{};
-
-	Parms.ActiveFriends = std::move(ActiveFriends);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnFriendsCountChangedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// int32                                   ActiveFriendsCount                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnFriendsCountChangedDelegate__DelegateSignature(int32 ActiveFriendsCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnFriendsCountChangedDelegate__DelegateSignature");
-
-	Params::FortPartyContext_OnFriendsCountChangedDelegate__DelegateSignature Parms{};
-
-	Parms.ActiveFriendsCount = ActiveFriendsCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnLeaderFriendsOnlyChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// bool                                    bLeaderFriendsOnly                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnLeaderFriendsOnlyChanged__DelegateSignature(bool bLeaderFriendsOnly)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnLeaderFriendsOnlyChanged__DelegateSignature");
-
-	Params::FortPartyContext_OnLeaderFriendsOnlyChanged__DelegateSignature Parms{};
-
-	Parms.bLeaderFriendsOnly = bLeaderFriendsOnly;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnLeaderInvitesOnlyChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// bool                                    bLeaderInviteOnly                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnLeaderInvitesOnlyChanged__DelegateSignature(bool bLeaderInviteOnly)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnLeaderInvitesOnlyChanged__DelegateSignature");
-
-	Params::FortPartyContext_OnLeaderInvitesOnlyChanged__DelegateSignature Parms{};
-
-	Parms.bLeaderInviteOnly = bLeaderInviteOnly;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyDataChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FPartyState                      PartyData                                              (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnPartyDataChanged__DelegateSignature(const struct FPartyState& PartyData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPartyDataChanged__DelegateSignature");
-
-	Params::FortPartyContext_OnPartyDataChanged__DelegateSignature Parms{};
-
-	Parms.PartyData = std::move(PartyData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyInvitesCountUpdatedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// int32                                   PartyInvitesCount                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnPartyInvitesCountUpdatedDelegate__DelegateSignature(int32 PartyInvitesCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPartyInvitesCountUpdatedDelegate__DelegateSignature");
-
-	Params::FortPartyContext_OnPartyInvitesCountUpdatedDelegate__DelegateSignature Parms{};
-
-	Parms.PartyInvitesCount = PartyInvitesCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyInvitesUpdatedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// TArray<class UFortSocialItem*>          ActiveFriends                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnPartyInvitesUpdatedDelegate__DelegateSignature(const TArray<class UFortSocialItem*>& ActiveFriends)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPartyInvitesUpdatedDelegate__DelegateSignature");
-
-	Params::FortPartyContext_OnPartyInvitesUpdatedDelegate__DelegateSignature Parms{};
-
-	Parms.ActiveFriends = std::move(ActiveFriends);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyJoinedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortPartyContext::OnPartyJoinedDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPartyJoinedDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyLeftDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortPartyContext::OnPartyLeftDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPartyLeftDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyTransitionCompleteDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// EFortPartyTransition                    PartyTransition                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnPartyTransitionCompleteDelegate__DelegateSignature(EFortPartyTransition PartyTransition)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPartyTransitionCompleteDelegate__DelegateSignature");
-
-	Params::FortPartyContext_OnPartyTransitionCompleteDelegate__DelegateSignature Parms{};
-
-	Parms.PartyTransition = PartyTransition;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyTransitionStartedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// EFortPartyTransition                    PartyTransition                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnPartyTransitionStartedDelegate__DelegateSignature(EFortPartyTransition PartyTransition)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPartyTransitionStartedDelegate__DelegateSignature");
-
-	Params::FortPartyContext_OnPartyTransitionStartedDelegate__DelegateSignature Parms{};
-
-	Parms.PartyTransition = PartyTransition;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPartyTypeChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-// Parameters:
-// EPartyType                              PartyType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnPartyTypeChanged__DelegateSignature(EPartyType PartyType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPartyTypeChanged__DelegateSignature");
-
-	Params::FortPartyContext_OnPartyTypeChanged__DelegateSignature Parms{};
-
-	Parms.PartyType = PartyType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnPlayerStateChangedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// struct FFortTeamMemberInfo              PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnPlayerStateChangedDelegate__DelegateSignature(const struct FFortTeamMemberInfo& PlayerInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnPlayerStateChangedDelegate__DelegateSignature");
-
-	Params::FortPartyContext_OnPlayerStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.PlayerInfo = std::move(PlayerInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnRejectInviteComplete__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortPartyContext::OnRejectInviteComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnRejectInviteComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnSendInviteCompleteDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortPartyContext::OnSendInviteCompleteDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnSendInviteCompleteDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// DelegateFunction FortniteGame.FortPartyContext.OnSocialListChangedDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParams)
-// Parameters:
-// TArray<class UFortSocialItem*>          SocialItems                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UFortPartyContext::OnSocialListChangedDelegate__DelegateSignature(const TArray<class UFortSocialItem*>& SocialItems)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPartyContext", "OnSocialListChangedDelegate__DelegateSignature");
-
-	Params::FortPartyContext_OnSocialListChangedDelegate__DelegateSignature Parms{};
-
-	Parms.SocialItems = std::move(SocialItems);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -87589,11 +86941,11 @@ void UFortMcpProfileWorld::BatchUpdatePlayers_Outpost(const TArray<struct FFortB
 // Function FortniteGame.FortMcpProfileWorld.DepositPostResources
 // (Net, NetReliable, NetRequest, Native, Event, Public, HasOutParams)
 // Parameters:
-// TArray<class FString>                   ItemsToDepositIds                                      (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TArray<int32>                           ItemCountsToDeposit                                    (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<class FString>                   itemsToDepositIds                                      (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<int32>                           itemCountsToDeposit                                    (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 // struct FDedicatedServerUrlContext       Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 
-void UFortMcpProfileWorld::DepositPostResources(const TArray<class FString>& ItemsToDepositIds, const TArray<int32>& ItemCountsToDeposit, struct FDedicatedServerUrlContext* Context)
+void UFortMcpProfileWorld::DepositPostResources(const TArray<class FString>& itemsToDepositIds, const TArray<int32>& itemCountsToDeposit, struct FDedicatedServerUrlContext* Context)
 {
 	static class UFunction* Func = nullptr;
 
@@ -87602,8 +86954,8 @@ void UFortMcpProfileWorld::DepositPostResources(const TArray<class FString>& Ite
 
 	Params::FortMcpProfileWorld_DepositPostResources Parms{};
 
-	Parms.ItemsToDepositIds = std::move(ItemsToDepositIds);
-	Parms.ItemCountsToDeposit = std::move(ItemCountsToDeposit);
+	Parms.itemsToDepositIds = std::move(itemsToDepositIds);
+	Parms.itemCountsToDeposit = std::move(itemCountsToDeposit);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -87620,11 +86972,11 @@ void UFortMcpProfileWorld::DepositPostResources(const TArray<class FString>& Ite
 // Function FortniteGame.FortMcpProfileWorld.DisintegrateItems
 // (Net, NetReliable, NetRequest, Native, Event, Public, HasOutParams)
 // Parameters:
-// TArray<class FString>                   ItemsToDisintegrateIds                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// TArray<int32>                           ItemCountsToDisintegrate                               (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<class FString>                   itemsToDisintegrateIds                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<int32>                           itemCountsToDisintegrate                               (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 // struct FDedicatedServerUrlContext       Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 
-void UFortMcpProfileWorld::DisintegrateItems(const TArray<class FString>& ItemsToDisintegrateIds, const TArray<int32>& ItemCountsToDisintegrate, struct FDedicatedServerUrlContext* Context)
+void UFortMcpProfileWorld::DisintegrateItems(const TArray<class FString>& itemsToDisintegrateIds, const TArray<int32>& itemCountsToDisintegrate, struct FDedicatedServerUrlContext* Context)
 {
 	static class UFunction* Func = nullptr;
 
@@ -87633,8 +86985,8 @@ void UFortMcpProfileWorld::DisintegrateItems(const TArray<class FString>& ItemsT
 
 	Params::FortMcpProfileWorld_DisintegrateItems Parms{};
 
-	Parms.ItemsToDisintegrateIds = std::move(ItemsToDisintegrateIds);
-	Parms.ItemCountsToDisintegrate = std::move(ItemCountsToDisintegrate);
+	Parms.itemsToDisintegrateIds = std::move(itemsToDisintegrateIds);
+	Parms.itemCountsToDisintegrate = std::move(itemCountsToDisintegrate);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -89637,20 +88989,6 @@ void UFortDialogNotificationHandler::Decline()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction FortniteGame.FortDialogNotificationHandler.OnActionComplete__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortDialogNotificationHandler::OnActionComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDialogNotificationHandler", "OnActionComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -92479,20 +91817,6 @@ bool AFortPlayerStateOutpost::IsOutpostOwner() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// DelegateFunction FortniteGame.FortPrototypingContext.OnPrototypingStatusChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UFortPrototypingContext::OnPrototypingStatusChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortPrototypingContext", "OnPrototypingStatusChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

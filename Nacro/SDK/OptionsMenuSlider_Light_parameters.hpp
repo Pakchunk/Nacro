@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.SliderChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature final
-{
-public:
-	float                                         Slider_Value;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature");
-static_assert(sizeof(OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature");
-static_assert(offsetof(OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'OptionsMenuSlider_Light_C_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
-
 // Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.ExecuteUbergraph_OptionsMenuSlider_Light
 // 0x0188 (0x0188 - 0x0000)
 struct OptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light final
@@ -135,16 +124,16 @@ static_assert(offsetof(OptionsMenuSlider_Light_C_Update_Slider, Tooltip_Text_Blo
 static_assert(offsetof(OptionsMenuSlider_Light_C_Update_Slider, CallFunc_MakeLiteralName_ReturnValue) == 0x000040, "Member 'OptionsMenuSlider_Light_C_Update_Slider::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(OptionsMenuSlider_Light_C_Update_Slider, CallFunc_Conv_FloatToText_ReturnValue) == 0x000048, "Member 'OptionsMenuSlider_Light_C_Update_Slider::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 
-// Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Center On Widget
+// Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Center on Widget
 // 0x0008 (0x0008 - 0x0000)
-struct OptionsMenuSlider_Light_C_Center_On_Widget final
+struct OptionsMenuSlider_Light_C_Center_on_Widget final
 {
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuSlider_Light_C_Center_On_Widget) == 0x000008, "Wrong alignment on OptionsMenuSlider_Light_C_Center_On_Widget");
-static_assert(sizeof(OptionsMenuSlider_Light_C_Center_On_Widget) == 0x000008, "Wrong size on OptionsMenuSlider_Light_C_Center_On_Widget");
-static_assert(offsetof(OptionsMenuSlider_Light_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuSlider_Light_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(alignof(OptionsMenuSlider_Light_C_Center_on_Widget) == 0x000008, "Wrong alignment on OptionsMenuSlider_Light_C_Center_on_Widget");
+static_assert(sizeof(OptionsMenuSlider_Light_C_Center_on_Widget) == 0x000008, "Wrong size on OptionsMenuSlider_Light_C_Center_on_Widget");
+static_assert(offsetof(OptionsMenuSlider_Light_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'OptionsMenuSlider_Light_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 }
 

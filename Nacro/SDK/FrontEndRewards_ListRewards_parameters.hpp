@@ -177,8 +177,8 @@ public:
 	float                                         Angle;                                             // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Translation;                                       // 0x002C(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DropShadowDepth;                                   // 0x0034(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CardQueueOffset;                                   // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CardWidth;                                         // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         cardQueueOffset;                                   // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         cardWidth;                                         // 0x003C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0040(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0048(0x0010)(NoDestructor)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue2;                // 0x0058(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -206,8 +206,8 @@ static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, Offset) =
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, Angle) == 0x000028, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::Angle' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, Translation) == 0x00002C, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::Translation' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, DropShadowDepth) == 0x000034, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::DropShadowDepth' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, CardQueueOffset) == 0x000038, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::CardQueueOffset' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, CardWidth) == 0x00003C, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::CardWidth' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, cardQueueOffset) == 0x000038, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::cardQueueOffset' has a wrong offset!");
+static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, cardWidth) == 0x00003C, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::cardWidth' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, CallFunc_MakeVector2D_ReturnValue) == 0x000040, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, K2Node_MakeStruct_Anchors) == 0x000048, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::K2Node_MakeStruct_Anchors' has a wrong offset!");
 static_assert(offsetof(FrontEndRewards_ListRewards_C_GetCardAlignment, CallFunc_MakeVector2D_ReturnValue2) == 0x000058, "Member 'FrontEndRewards_ListRewards_C_GetCardAlignment::CallFunc_MakeVector2D_ReturnValue2' has a wrong offset!");

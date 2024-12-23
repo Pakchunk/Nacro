@@ -54,7 +54,6 @@ public:
 	bool                                          bCardSelectionDisabled;                            // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnRewardSelected__DelegateSignature(int32 Index_0, class UFortItem* Item);
 	void ExecuteUbergraph_FrontEndRewards_ChoiceRewards(int32 EntryPoint);
 	void OnPrimaryAction();
 	void CustomEvent_1();

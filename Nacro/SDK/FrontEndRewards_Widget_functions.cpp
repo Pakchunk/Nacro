@@ -17,60 +17,6 @@
 namespace SDK
 {
 
-// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnComplete__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UFrontEndRewards_Widget_C::OnComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_Widget_C", "OnComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnRewardsClaimed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFrontEndRewards_Widget_C*        RewardsWidget                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UFrontEndRewards_Widget_C::OnRewardsClaimed__DelegateSignature(class UFrontEndRewards_Widget_C* RewardsWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_Widget_C", "OnRewardsClaimed__DelegateSignature");
-
-	Params::FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature Parms{};
-
-	Parms.RewardsWidget = RewardsWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnRewardsClaimError__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFrontEndRewards_Widget_C*        RewardsWidget                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UFrontEndRewards_Widget_C::OnRewardsClaimError__DelegateSignature(class UFrontEndRewards_Widget_C* RewardsWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_Widget_C", "OnRewardsClaimError__DelegateSignature");
-
-	Params::FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature Parms{};
-
-	Parms.RewardsWidget = RewardsWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.ExecuteUbergraph_FrontEndRewards_Widget
 // (HasDefaults)
 // Parameters:

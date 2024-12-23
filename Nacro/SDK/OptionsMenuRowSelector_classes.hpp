@@ -33,7 +33,6 @@ public:
 	class UClass*                                 ButtonStyle;                                       // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Selector_Button_Selected__DelegateSignature(int32 Tab_Id);
 	void ExecuteUbergraph_OptionsMenuRowSelector(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void Destruct();

@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_VictoryDrone.BP_VictoryDrone_C.SpawnOutAnimEndedDispatcher__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ABP_VictoryDrone_C*               Drone                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_VictoryDrone_C::SpawnOutAnimEndedDispatcher__DelegateSignature(class ABP_VictoryDrone_C* Drone)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "SpawnOutAnimEndedDispatcher__DelegateSignature");
-
-	Params::BP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature Parms{};
-
-	Parms.Drone = Drone;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_VictoryDrone.BP_VictoryDrone_C.ExecuteUbergraph_BP_VictoryDrone
 // ()
 // Parameters:

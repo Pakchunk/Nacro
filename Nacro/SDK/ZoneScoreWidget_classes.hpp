@@ -46,7 +46,6 @@ public:
 	class USoundBase*                             EndOfDay_Recap_Appear_Sound;                       // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnEndOfDayRecapEnded__DelegateSignature();
 	void ExecuteUbergraph_ZoneScoreWidget(int32 EntryPoint);
 	void OnEndOfDayRecap(const struct FEndOfDayRecap& EndOfDayRecap);
 	void Construct();

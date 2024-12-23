@@ -35,8 +35,6 @@ public:
 	bool                                          InitialScreen;                                     // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnRequestAbandon__DelegateSignature();
-	void OnRequestRejoinRetry__DelegateSignature();
 	void ExecuteUbergraph_RejoinWindow(int32 EntryPoint);
 	void OnTimeoutTimeReached();
 	void Construct();

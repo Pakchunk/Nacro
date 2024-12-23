@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function ItemTransformResultModal.ItemTransformResultModal_C.OnContinue__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UItemTransformResultModal_C::OnContinue__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemTransformResultModal_C", "OnContinue__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ItemTransformResultModal.ItemTransformResultModal_C.ExecuteUbergraph_ItemTransformResultModal
 // ()
 // Parameters:

@@ -40,10 +40,9 @@ public:
 	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	UMulticastDelegateProperty_                   OnRequestUpgrade;                                  // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FLinearColor                           UpgradeColor;                                      // 0x02B8(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsMaxLevel;                                        // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          isMaxLevel;                                        // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnRequestUpgrade__DelegateSignature();
 	void ExecuteUbergraph_ItemInspectUpgradeCallout(int32 EntryPoint);
 	void BndEvt__EvolveButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__IconTextButton_K2Node_ComponentBoundEvent_257_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -85,7 +84,7 @@ static_assert(offsetof(UItemInspectUpgradeCallout_C, Item) == 0x000298, "Member 
 static_assert(offsetof(UItemInspectUpgradeCallout_C, UpgradeCost) == 0x0002A0, "Member 'UItemInspectUpgradeCallout_C::UpgradeCost' has a wrong offset!");
 static_assert(offsetof(UItemInspectUpgradeCallout_C, OnRequestUpgrade) == 0x0002A8, "Member 'UItemInspectUpgradeCallout_C::OnRequestUpgrade' has a wrong offset!");
 static_assert(offsetof(UItemInspectUpgradeCallout_C, UpgradeColor) == 0x0002B8, "Member 'UItemInspectUpgradeCallout_C::UpgradeColor' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, IsMaxLevel) == 0x0002C8, "Member 'UItemInspectUpgradeCallout_C::IsMaxLevel' has a wrong offset!");
+static_assert(offsetof(UItemInspectUpgradeCallout_C, isMaxLevel) == 0x0002C8, "Member 'UItemInspectUpgradeCallout_C::isMaxLevel' has a wrong offset!");
 
 }
 

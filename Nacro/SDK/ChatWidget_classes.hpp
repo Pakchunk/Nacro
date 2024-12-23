@@ -40,7 +40,6 @@ public:
 	UMulticastDelegateProperty_                   AboutToEnterChat;                                  // 0x0478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AboutToEnterChat__DelegateSignature();
 	void ExecuteUbergraph_ChatWidget(int32 EntryPoint);
 	void Destruct();
 	void HandleInputMethodChanged(bool bUsingGamepad);

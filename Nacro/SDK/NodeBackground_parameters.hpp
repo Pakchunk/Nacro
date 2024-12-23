@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SkillTreeGroups_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SkillTreeGroups_structs.hpp"
 
 
 namespace SDK::Params

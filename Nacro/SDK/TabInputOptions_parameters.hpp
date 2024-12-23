@@ -17,31 +17,6 @@
 namespace SDK::Params
 {
 
-// Function TabInputOptions.TabInputOptions_C.Enable Overlay__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct TabInputOptions_C_Enable_Overlay__DelegateSignature final
-{
-public:
-	bool                                          Accept_Input;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Overlay_Text;                                      // 0x0008(0x0018)(Parm)
-};
-static_assert(alignof(TabInputOptions_C_Enable_Overlay__DelegateSignature) == 0x000008, "Wrong alignment on TabInputOptions_C_Enable_Overlay__DelegateSignature");
-static_assert(sizeof(TabInputOptions_C_Enable_Overlay__DelegateSignature) == 0x000020, "Wrong size on TabInputOptions_C_Enable_Overlay__DelegateSignature");
-static_assert(offsetof(TabInputOptions_C_Enable_Overlay__DelegateSignature, Accept_Input) == 0x000000, "Member 'TabInputOptions_C_Enable_Overlay__DelegateSignature::Accept_Input' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Enable_Overlay__DelegateSignature, Overlay_Text) == 0x000008, "Member 'TabInputOptions_C_Enable_Overlay__DelegateSignature::Overlay_Text' has a wrong offset!");
-
-// Function TabInputOptions.TabInputOptions_C.Gamepad Changed__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct TabInputOptions_C_Gamepad_Changed__DelegateSignature final
-{
-public:
-	bool                                          Gamepad_Enabled;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(TabInputOptions_C_Gamepad_Changed__DelegateSignature) == 0x000001, "Wrong alignment on TabInputOptions_C_Gamepad_Changed__DelegateSignature");
-static_assert(sizeof(TabInputOptions_C_Gamepad_Changed__DelegateSignature) == 0x000001, "Wrong size on TabInputOptions_C_Gamepad_Changed__DelegateSignature");
-static_assert(offsetof(TabInputOptions_C_Gamepad_Changed__DelegateSignature, Gamepad_Enabled) == 0x000000, "Member 'TabInputOptions_C_Gamepad_Changed__DelegateSignature::Gamepad_Enabled' has a wrong offset!");
-
 // Function TabInputOptions.TabInputOptions_C.ExecuteUbergraph_TabInputOptions
 // 0x00C8 (0x00C8 - 0x0000)
 struct TabInputOptions_C_ExecuteUbergraph_TabInputOptions final

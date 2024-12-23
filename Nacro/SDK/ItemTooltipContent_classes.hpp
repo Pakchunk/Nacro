@@ -27,21 +27,21 @@ class UItemTooltipContent_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                       _Anim__Intro;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetAnimation*                       mAnim__Intro;                                      // 0x0238(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderSecondaryType_B;                             // 0x0240(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderSecondaryTypeFrame_A;                        // 0x0248(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderTertiaryType_B;                              // 0x0250(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BorderTertiaryTypeFrame_A;                         // 0x0258(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HorizontalBoxRarityPlusPrimary_A;                  // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HorizontalBoxRarityPlusPrimary_B;                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HorizontalBoxRarity_Primary_A;                     // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HorizontalBoxRarity_Primary_B;                     // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HorizontalBoxSecondaryType_A;                      // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HorizontalBoxSecondaryType_B;                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HorizontalBoxTertiaryType_A;                       // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HorizontalBoxTertiaryType_B;                       // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HorizontalBoxTier_A;                               // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         HorizontalBoxTier_B;                               // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageDivMinusTop_A;                                // 0x02A0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 ImageDivMinusTop_B;                                // 0x02A8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageDiv_Top_A;                                    // 0x02A0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 ImageDiv_Top_B;                                    // 0x02A8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageSecondaryType_A;                              // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageSecondaryType_B;                              // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageTertiaryType_A;                               // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -66,8 +66,8 @@ public:
 	class UTextBlock*                             TextSecondaryType_B;                               // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextTertiaryType_A;                                // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             TextTertiaryType_B;                                // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTooltipMinusDescriptionText_C*         TooltipMinusDescriptionText_1;                     // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTooltipMinusDescriptionText_C*         TooltipMinusDescriptionText_2;                     // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTooltip_DescriptionText_C*             Tooltip_DescriptionText_1;                         // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTooltip_DescriptionText_C*             Tooltip_DescriptionText_2;                         // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBoxContent_A;                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBoxContent_B;                              // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBoxDescription_A;                          // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -145,21 +145,21 @@ public:
 static_assert(alignof(UItemTooltipContent_C) == 0x000008, "Wrong alignment on UItemTooltipContent_C");
 static_assert(sizeof(UItemTooltipContent_C) == 0x0004E0, "Wrong size on UItemTooltipContent_C");
 static_assert(offsetof(UItemTooltipContent_C, UberGraphFrame) == 0x000230, "Member 'UItemTooltipContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, _Anim__Intro) == 0x000238, "Member 'UItemTooltipContent_C::_Anim__Intro' has a wrong offset!");
+static_assert(offsetof(UItemTooltipContent_C, mAnim__Intro) == 0x000238, "Member 'UItemTooltipContent_C::mAnim__Intro' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, BorderSecondaryType_B) == 0x000240, "Member 'UItemTooltipContent_C::BorderSecondaryType_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, BorderSecondaryTypeFrame_A) == 0x000248, "Member 'UItemTooltipContent_C::BorderSecondaryTypeFrame_A' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, BorderTertiaryType_B) == 0x000250, "Member 'UItemTooltipContent_C::BorderTertiaryType_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, BorderTertiaryTypeFrame_A) == 0x000258, "Member 'UItemTooltipContent_C::BorderTertiaryTypeFrame_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxRarityPlusPrimary_A) == 0x000260, "Member 'UItemTooltipContent_C::HorizontalBoxRarityPlusPrimary_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxRarityPlusPrimary_B) == 0x000268, "Member 'UItemTooltipContent_C::HorizontalBoxRarityPlusPrimary_B' has a wrong offset!");
+static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxRarity_Primary_A) == 0x000260, "Member 'UItemTooltipContent_C::HorizontalBoxRarity_Primary_A' has a wrong offset!");
+static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxRarity_Primary_B) == 0x000268, "Member 'UItemTooltipContent_C::HorizontalBoxRarity_Primary_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxSecondaryType_A) == 0x000270, "Member 'UItemTooltipContent_C::HorizontalBoxSecondaryType_A' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxSecondaryType_B) == 0x000278, "Member 'UItemTooltipContent_C::HorizontalBoxSecondaryType_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxTertiaryType_A) == 0x000280, "Member 'UItemTooltipContent_C::HorizontalBoxTertiaryType_A' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxTertiaryType_B) == 0x000288, "Member 'UItemTooltipContent_C::HorizontalBoxTertiaryType_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxTier_A) == 0x000290, "Member 'UItemTooltipContent_C::HorizontalBoxTier_A' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxTier_B) == 0x000298, "Member 'UItemTooltipContent_C::HorizontalBoxTier_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ImageDivMinusTop_A) == 0x0002A0, "Member 'UItemTooltipContent_C::ImageDivMinusTop_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ImageDivMinusTop_B) == 0x0002A8, "Member 'UItemTooltipContent_C::ImageDivMinusTop_B' has a wrong offset!");
+static_assert(offsetof(UItemTooltipContent_C, ImageDiv_Top_A) == 0x0002A0, "Member 'UItemTooltipContent_C::ImageDiv_Top_A' has a wrong offset!");
+static_assert(offsetof(UItemTooltipContent_C, ImageDiv_Top_B) == 0x0002A8, "Member 'UItemTooltipContent_C::ImageDiv_Top_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, ImageSecondaryType_A) == 0x0002B0, "Member 'UItemTooltipContent_C::ImageSecondaryType_A' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, ImageSecondaryType_B) == 0x0002B8, "Member 'UItemTooltipContent_C::ImageSecondaryType_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, ImageTertiaryType_A) == 0x0002C0, "Member 'UItemTooltipContent_C::ImageTertiaryType_A' has a wrong offset!");
@@ -184,8 +184,8 @@ static_assert(offsetof(UItemTooltipContent_C, TextSecondaryType_A) == 0x000350, 
 static_assert(offsetof(UItemTooltipContent_C, TextSecondaryType_B) == 0x000358, "Member 'UItemTooltipContent_C::TextSecondaryType_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, TextTertiaryType_A) == 0x000360, "Member 'UItemTooltipContent_C::TextTertiaryType_A' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, TextTertiaryType_B) == 0x000368, "Member 'UItemTooltipContent_C::TextTertiaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TooltipMinusDescriptionText_1) == 0x000370, "Member 'UItemTooltipContent_C::TooltipMinusDescriptionText_1' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TooltipMinusDescriptionText_2) == 0x000378, "Member 'UItemTooltipContent_C::TooltipMinusDescriptionText_2' has a wrong offset!");
+static_assert(offsetof(UItemTooltipContent_C, Tooltip_DescriptionText_1) == 0x000370, "Member 'UItemTooltipContent_C::Tooltip_DescriptionText_1' has a wrong offset!");
+static_assert(offsetof(UItemTooltipContent_C, Tooltip_DescriptionText_2) == 0x000378, "Member 'UItemTooltipContent_C::Tooltip_DescriptionText_2' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, VerticalBoxContent_A) == 0x000380, "Member 'UItemTooltipContent_C::VerticalBoxContent_A' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, VerticalBoxContent_B) == 0x000388, "Member 'UItemTooltipContent_C::VerticalBoxContent_B' has a wrong offset!");
 static_assert(offsetof(UItemTooltipContent_C, VerticalBoxDescription_A) == 0x000390, "Member 'UItemTooltipContent_C::VerticalBoxDescription_A' has a wrong offset!");

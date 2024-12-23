@@ -69,9 +69,9 @@ static_assert(alignof(ErrorEntry_C_SetErrorInfo) == 0x000010, "Wrong alignment o
 static_assert(sizeof(ErrorEntry_C_SetErrorInfo) == 0x000080, "Wrong size on ErrorEntry_C_SetErrorInfo");
 static_assert(offsetof(ErrorEntry_C_SetErrorInfo, ErrorInfo_0) == 0x000000, "Member 'ErrorEntry_C_SetErrorInfo::ErrorInfo_0' has a wrong offset!");
 
-// Function ErrorEntry.ErrorEntry_C.Center On Widget
+// Function ErrorEntry.ErrorEntry_C.Center on Widget
 // 0x0018 (0x0018 - 0x0000)
-struct ErrorEntry_C_Center_On_Widget final
+struct ErrorEntry_C_Center_on_Widget final
 {
 public:
 	bool                                          Did_Center;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -80,12 +80,12 @@ public:
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ErrorEntry_C_Center_On_Widget) == 0x000008, "Wrong alignment on ErrorEntry_C_Center_On_Widget");
-static_assert(sizeof(ErrorEntry_C_Center_On_Widget) == 0x000018, "Wrong size on ErrorEntry_C_Center_On_Widget");
-static_assert(offsetof(ErrorEntry_C_Center_On_Widget, Did_Center) == 0x000000, "Member 'ErrorEntry_C_Center_On_Widget::Did_Center' has a wrong offset!");
-static_assert(offsetof(ErrorEntry_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'ErrorEntry_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorEntry_C_Center_On_Widget, CallFunc_Len_ReturnValue) == 0x000010, "Member 'ErrorEntry_C_Center_On_Widget::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorEntry_C_Center_On_Widget, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'ErrorEntry_C_Center_On_Widget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(alignof(ErrorEntry_C_Center_on_Widget) == 0x000008, "Wrong alignment on ErrorEntry_C_Center_on_Widget");
+static_assert(sizeof(ErrorEntry_C_Center_on_Widget) == 0x000018, "Wrong size on ErrorEntry_C_Center_on_Widget");
+static_assert(offsetof(ErrorEntry_C_Center_on_Widget, Did_Center) == 0x000000, "Member 'ErrorEntry_C_Center_on_Widget::Did_Center' has a wrong offset!");
+static_assert(offsetof(ErrorEntry_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'ErrorEntry_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErrorEntry_C_Center_on_Widget, CallFunc_Len_ReturnValue) == 0x000010, "Member 'ErrorEntry_C_Center_on_Widget::CallFunc_Len_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ErrorEntry_C_Center_on_Widget, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'ErrorEntry_C_Center_on_Widget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

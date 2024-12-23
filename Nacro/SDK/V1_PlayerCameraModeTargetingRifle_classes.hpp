@@ -6,11 +6,11 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: V1_PlayerCameraModeTargetingRifle
+// Package: v1_PlayerCameraModeTargetingRifle
 
 #include "Basic.hpp"
 
-#include "V1_PlayerCameraModeBase_classes.hpp"
+#include "v1_PlayerCameraModeBase_classes.hpp"
 
 
 namespace SDK
@@ -18,20 +18,20 @@ namespace SDK
 
 // BlueprintGeneratedClass v1_PlayerCameraModeTargetingRifle.v1_PlayerCameraModeTargetingRifle_C
 // 0x0000 (0x0110 - 0x0110)
-class UV1_PlayerCameraModeTargetingRifle_C final : public UV1_PlayerCameraModeBase_C
+class Uv1_PlayerCameraModeTargetingRifle_C final : public Uv1_PlayerCameraModeBase_C
 {
 public:
 	static class UClass* StaticClass()
 	{
 		return StaticBPGeneratedClassImpl<"v1_PlayerCameraModeTargetingRifle_C">();
 	}
-	static class UV1_PlayerCameraModeTargetingRifle_C* GetDefaultObj()
+	static class Uv1_PlayerCameraModeTargetingRifle_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UV1_PlayerCameraModeTargetingRifle_C>();
+		return GetDefaultObjImpl<Uv1_PlayerCameraModeTargetingRifle_C>();
 	}
 };
-static_assert(alignof(UV1_PlayerCameraModeTargetingRifle_C) == 0x000008, "Wrong alignment on UV1_PlayerCameraModeTargetingRifle_C");
-static_assert(sizeof(UV1_PlayerCameraModeTargetingRifle_C) == 0x000110, "Wrong size on UV1_PlayerCameraModeTargetingRifle_C");
+static_assert(alignof(Uv1_PlayerCameraModeTargetingRifle_C) == 0x000008, "Wrong alignment on Uv1_PlayerCameraModeTargetingRifle_C");
+static_assert(sizeof(Uv1_PlayerCameraModeTargetingRifle_C) == 0x000110, "Wrong size on Uv1_PlayerCameraModeTargetingRifle_C");
 
 }
 

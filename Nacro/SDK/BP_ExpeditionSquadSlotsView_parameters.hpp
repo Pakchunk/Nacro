@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.OnSquadSlotSelected__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature final
-{
-public:
-	int32                                         SquadSlotIndex;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong alignment on BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature");
-static_assert(sizeof(BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong size on BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature");
-static_assert(offsetof(BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature, SquadSlotIndex) == 0x000000, "Member 'BP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature::SquadSlotIndex' has a wrong offset!");
-
 // Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.ExecuteUbergraph_BP_ExpeditionSquadSlotsView
 // 0x000C (0x000C - 0x0000)
 struct BP_ExpeditionSquadSlotsView_C_ExecuteUbergraph_BP_ExpeditionSquadSlotsView final

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.AboutToShowDetails__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UStoreMain_MTXOffer_C::AboutToShowDetails__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "AboutToShowDetails__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.ExecuteUbergraph_StoreMain_MTXOffer
 // ()
 // Parameters:

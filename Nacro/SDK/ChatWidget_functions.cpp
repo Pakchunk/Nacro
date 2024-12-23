@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function ChatWidget.ChatWidget_C.AboutToEnterChat__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UChatWidget_C::AboutToEnterChat__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatWidget_C", "AboutToEnterChat__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ChatWidget.ChatWidget_C.ExecuteUbergraph_ChatWidget
 // ()
 // Parameters:

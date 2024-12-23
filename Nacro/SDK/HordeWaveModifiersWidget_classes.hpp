@@ -28,7 +28,6 @@ public:
 	UMulticastDelegateProperty_                   OnAllModifiersPresented;                           // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnAllModifiersPresented__DelegateSignature();
 	void OnModifiersAdded(TArray<class UFortGameplayModifierItemDefinition*>& Modifiers, bool StartPresentationImmediately);
 	void PresentNextModifier();
 

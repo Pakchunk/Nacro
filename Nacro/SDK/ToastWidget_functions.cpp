@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function ToastWidget.ToastWidget_C.OnFinishedToast__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UToastWidget_C::OnFinishedToast__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_C", "OnFinishedToast__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ToastWidget.ToastWidget_C.ExecuteUbergraph_ToastWidget
 // (HasDefaults)
 // Parameters:

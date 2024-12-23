@@ -17,46 +17,6 @@
 namespace SDK
 {
 
-// Function LobbyGadgetButton.LobbyGadgetButton_C.OnButtonClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ULobbyGadgetButton_C*             GadgetButton                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULobbyGadgetButton_C::OnButtonClicked__DelegateSignature(class ULobbyGadgetButton_C* GadgetButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyGadgetButton_C", "OnButtonClicked__DelegateSignature");
-
-	Params::LobbyGadgetButton_C_OnButtonClicked__DelegateSignature Parms{};
-
-	Parms.GadgetButton = GadgetButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LobbyGadgetButton.LobbyGadgetButton_C.OnButtonHovered__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ULobbyGadgetButton_C*             GadgetButton                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ULobbyGadgetButton_C::OnButtonHovered__DelegateSignature(class ULobbyGadgetButton_C* GadgetButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyGadgetButton_C", "OnButtonHovered__DelegateSignature");
-
-	Params::LobbyGadgetButton_C_OnButtonHovered__DelegateSignature Parms{};
-
-	Parms.GadgetButton = GadgetButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function LobbyGadgetButton.LobbyGadgetButton_C.ExecuteUbergraph_LobbyGadgetButton
 // ()
 // Parameters:

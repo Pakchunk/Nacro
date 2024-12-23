@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Results_Badge.Results_Badge_C.ConvertFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_Badge_C::ConvertFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_Badge_C", "ConvertFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_Badge.Results_Badge_C.ExecuteUbergraph_Results_Badge
 // ()
 // Parameters:

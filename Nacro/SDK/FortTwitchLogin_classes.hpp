@@ -35,7 +35,6 @@ public:
 	bool                                          bShowingError;                                     // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnRequestToolTipChange__DelegateSignature(const class FText& NewTooltipText);
 	void ExecuteUbergraph_FortTwitchLogin(int32 EntryPoint);
 	void OnShowLoginError(const class FText& ErrorTitle, const class FText& ErrorMessage);
 	void BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

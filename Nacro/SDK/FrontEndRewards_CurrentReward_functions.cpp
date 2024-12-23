@@ -17,62 +17,6 @@
 namespace SDK
 {
 
-// Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.OnDropAnimationFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UFrontEndRewards_CurrentReward_C::OnDropAnimationFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "OnDropAnimationFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.OnPopAnimationFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UFrontEndRewards_CurrentReward_C::OnPopAnimationFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "OnPopAnimationFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.OnOpenAnimationStarted__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UFrontEndRewards_CurrentReward_C::OnOpenAnimationStarted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "OnOpenAnimationStarted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.OnOpenAnimationFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UFrontEndRewards_CurrentReward_C::OnOpenAnimationFinished__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "OnOpenAnimationFinished__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.ExecuteUbergraph_FrontEndRewards_CurrentReward
 // (HasDefaults)
 // Parameters:
@@ -96,7 +40,7 @@ void UFrontEndRewards_CurrentReward_C::ExecuteUbergraph_FrontEndRewards_CurrentR
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.fadeIconToWhite
 // (BlueprintCallable, BlueprintEvent)
 
-void UFrontEndRewards_CurrentReward_C::FadeIconToWhite()
+void UFrontEndRewards_CurrentReward_C::fadeIconToWhite()
 {
 	static class UFunction* Func = nullptr;
 
@@ -208,7 +152,7 @@ void UFrontEndRewards_CurrentReward_C::HandleOpenAnimationFinished()
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.updateFade
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UFrontEndRewards_CurrentReward_C::UpdateFade()
+void UFrontEndRewards_CurrentReward_C::updateFade()
 {
 	static class UFunction* Func = nullptr;
 

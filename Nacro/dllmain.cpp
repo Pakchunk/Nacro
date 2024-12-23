@@ -9,8 +9,6 @@ void* EngineVersion;
 
 DWORD MainThread(LPVOID)
 {
-	std::cout << "mainthread begin\n";
-
 	auto Pattern = reinterpret_cast<DWORD_PTR>(Memory::FindPattern("\x40\x53\x48\x83\xEC\x20\x48\x8B\xD9\xE8\x00\x00\x00\x00\x48\x8B\xC8\x41\xB8\x04\x00\x00\x00\x48\x8B\xD3", "xxxxxxxxxx????xxxxxxxxxxxx"));
 	if (!Pattern)
 		Utils::ThrowErrorExit("Please make sure you have injected into the FortniteClient-Win64-Shipping process.");
@@ -23,8 +21,6 @@ DWORD MainThread(LPVOID)
 
 	static_cast<AFortGameModeFrontEnd*>(Globals::GEngine->GameViewport->World->AuthorityGameMode)->Say
 	(L"Welcome to Nacro!\nCreated by ozne, Fischsalat, and absoluteSpacehead.");
-
-	std::cout << "mainthread end\n";
 
 	return NULL;
 }

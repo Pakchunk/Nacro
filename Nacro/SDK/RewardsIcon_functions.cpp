@@ -17,80 +17,6 @@
 namespace SDK
 {
 
-// Function RewardsIcon.RewardsIcon_C.OnSlideAnimationFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class URewardsIcon_C*                   Icon                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void URewardsIcon_C::OnSlideAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RewardsIcon_C", "OnSlideAnimationFinished__DelegateSignature");
-
-	Params::RewardsIcon_C_OnSlideAnimationFinished__DelegateSignature Parms{};
-
-	Parms.Icon = Icon;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function RewardsIcon.RewardsIcon_C.OnDisperseAnimationFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class URewardsIcon_C*                   Icon                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void URewardsIcon_C::OnDisperseAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RewardsIcon_C", "OnDisperseAnimationFinished__DelegateSignature");
-
-	Params::RewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature Parms{};
-
-	Parms.Icon = Icon;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function RewardsIcon.RewardsIcon_C.OnMaterializeAnimationFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class URewardsIcon_C*                   Icon                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void URewardsIcon_C::OnMaterializeAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RewardsIcon_C", "OnMaterializeAnimationFinished__DelegateSignature");
-
-	Params::RewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature Parms{};
-
-	Parms.Icon = Icon;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function RewardsIcon.RewardsIcon_C.OnImageClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void URewardsIcon_C::OnImageClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RewardsIcon_C", "OnImageClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function RewardsIcon.RewardsIcon_C.ExecuteUbergraph_RewardsIcon
 // ()
 // Parameters:
@@ -116,14 +42,14 @@ void URewardsIcon_C::ExecuteUbergraph_RewardsIcon(int32 EntryPoint)
 // Parameters:
 // float                                   Percent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewardsIcon_C::WhiteFadeOut(float Percent)
+void URewardsIcon_C::whiteFadeOut(float Percent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("RewardsIcon_C", "whiteFadeOut");
 
-	Params::RewardsIcon_C_WhiteFadeOut Parms{};
+	Params::RewardsIcon_C_whiteFadeOut Parms{};
 
 	Parms.Percent = Percent;
 

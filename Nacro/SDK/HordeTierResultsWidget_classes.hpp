@@ -36,7 +36,6 @@ public:
 	class FString                                 NameplateIntroFunctionName;                        // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void OnTierResultsWidgetComplete__DelegateSignature();
 	void InitializeMovie();
 	void Initialize(EFortCompletionResult Result);
 	void ChooseMediaToUse(class UMediaSource** MediaToUse);

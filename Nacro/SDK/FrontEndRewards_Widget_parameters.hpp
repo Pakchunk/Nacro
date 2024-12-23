@@ -20,28 +20,6 @@
 namespace SDK::Params
 {
 
-// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnRewardsClaimed__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature final
-{
-public:
-	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature");
-static_assert(sizeof(FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature) == 0x000008, "Wrong size on FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature");
-static_assert(offsetof(FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature, RewardsWidget) == 0x000000, "Member 'FrontEndRewards_Widget_C_OnRewardsClaimed__DelegateSignature::RewardsWidget' has a wrong offset!");
-
-// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnRewardsClaimError__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature final
-{
-public:
-	class UFrontEndRewards_Widget_C*              RewardsWidget;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature) == 0x000008, "Wrong alignment on FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature");
-static_assert(sizeof(FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature) == 0x000008, "Wrong size on FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature");
-static_assert(offsetof(FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature, RewardsWidget) == 0x000000, "Member 'FrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature::RewardsWidget' has a wrong offset!");
-
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.ExecuteUbergraph_FrontEndRewards_Widget
 // 0x00A0 (0x00A0 - 0x0000)
 struct FrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget final

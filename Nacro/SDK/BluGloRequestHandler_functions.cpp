@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BluGloRequestHandler.BluGloRequestHandler_C.OnBluGloQueryFinished__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           ActorToSpawnFrom_0                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EEnvQueryStatus                         QueryStatus                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UEnvQueryInstanceBlueprintWrapper*QueryInstance                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NumBluGloToSpawn_0                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBluGloRequestHandler_C::OnBluGloQueryFinished__DelegateSignature(class AActor* ActorToSpawnFrom_0, const struct FVector& LocationToSpawnFromIfActorInvalid, EEnvQueryStatus QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int32 NumBluGloToSpawn_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BluGloRequestHandler_C", "OnBluGloQueryFinished__DelegateSignature");
-
-	Params::BluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature Parms{};
-
-	Parms.ActorToSpawnFrom_0 = ActorToSpawnFrom_0;
-	Parms.LocationToSpawnFromIfActorInvalid = std::move(LocationToSpawnFromIfActorInvalid);
-	Parms.QueryStatus = QueryStatus;
-	Parms.QueryInstance = QueryInstance;
-	Parms.NumBluGloToSpawn_0 = NumBluGloToSpawn_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BluGloRequestHandler.BluGloRequestHandler_C.ExecuteUbergraph_BluGloRequestHandler
 // (HasDefaults)
 // Parameters:

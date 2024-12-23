@@ -36,7 +36,6 @@ public:
 	UMulticastDelegateProperty_                   OnExpeditionCompleted;                             // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnExpeditionCompleted__DelegateSignature(bool Succeeded, TArray<struct FFortItemInstanceQuantityPair>& Rewards);
 	void ExecuteUbergraph_FrontEndRewards_Expedition(int32 EntryPoint);
 	void Construct();
 	void OnPrimaryAction();

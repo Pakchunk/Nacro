@@ -14,28 +14,6 @@
 namespace SDK::Params
 {
 
-// Function LobbyGadgetButton.LobbyGadgetButton_C.OnButtonClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct LobbyGadgetButton_C_OnButtonClicked__DelegateSignature final
-{
-public:
-	class ULobbyGadgetButton_C*                   GadgetButton;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(LobbyGadgetButton_C_OnButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on LobbyGadgetButton_C_OnButtonClicked__DelegateSignature");
-static_assert(sizeof(LobbyGadgetButton_C_OnButtonClicked__DelegateSignature) == 0x000008, "Wrong size on LobbyGadgetButton_C_OnButtonClicked__DelegateSignature");
-static_assert(offsetof(LobbyGadgetButton_C_OnButtonClicked__DelegateSignature, GadgetButton) == 0x000000, "Member 'LobbyGadgetButton_C_OnButtonClicked__DelegateSignature::GadgetButton' has a wrong offset!");
-
-// Function LobbyGadgetButton.LobbyGadgetButton_C.OnButtonHovered__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct LobbyGadgetButton_C_OnButtonHovered__DelegateSignature final
-{
-public:
-	class ULobbyGadgetButton_C*                   GadgetButton;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(LobbyGadgetButton_C_OnButtonHovered__DelegateSignature) == 0x000008, "Wrong alignment on LobbyGadgetButton_C_OnButtonHovered__DelegateSignature");
-static_assert(sizeof(LobbyGadgetButton_C_OnButtonHovered__DelegateSignature) == 0x000008, "Wrong size on LobbyGadgetButton_C_OnButtonHovered__DelegateSignature");
-static_assert(offsetof(LobbyGadgetButton_C_OnButtonHovered__DelegateSignature, GadgetButton) == 0x000000, "Member 'LobbyGadgetButton_C_OnButtonHovered__DelegateSignature::GadgetButton' has a wrong offset!");
-
 // Function LobbyGadgetButton.LobbyGadgetButton_C.ExecuteUbergraph_LobbyGadgetButton
 // 0x0038 (0x0038 - 0x0000)
 struct LobbyGadgetButton_C_ExecuteUbergraph_LobbyGadgetButton final

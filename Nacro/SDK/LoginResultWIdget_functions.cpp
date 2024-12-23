@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function LoginResultWIdget.LoginResultWIdget_C.OnResultConfirmed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void ULoginResultWIdget_C::OnResultConfirmed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoginResultWIdget_C", "OnResultConfirmed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function LoginResultWIdget.LoginResultWIdget_C.ExecuteUbergraph_LoginResultWIdget
 // ()
 // Parameters:

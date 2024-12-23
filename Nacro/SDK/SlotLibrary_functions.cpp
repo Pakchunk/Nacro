@@ -22,9 +22,9 @@ namespace SDK
 // Parameters:
 // class UFortItemWidget*                  Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USlotLibrary_C::InitItemWidget(class UFortItemWidget* Widget, class UFortItem* Item, class UObject* __WorldContext)
+void USlotLibrary_C::InitItemWidget(class UFortItemWidget* Widget, class UFortItem* Item, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -35,7 +35,7 @@ void USlotLibrary_C::InitItemWidget(class UFortItemWidget* Widget, class UFortIt
 
 	Parms.Widget = Widget;
 	Parms.Item = Item;
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
@@ -44,11 +44,11 @@ void USlotLibrary_C::InitItemWidget(class UFortItemWidget* Widget, class UFortIt
 // Function SlotLibrary.SlotLibrary_C.EnsureIconBrush
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortMultiSizeBrush              MultiMinussize_Brush                                   (Parm)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFortMultiSizeBrush              Multi_size_Brush                                       (Parm)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                      Brush                                                  (Parm, OutParm)
 
-void USlotLibrary_C::EnsureIconBrush(const struct FFortMultiSizeBrush& MultiMinussize_Brush, class UObject* __WorldContext, struct FSlateBrush* Brush)
+void USlotLibrary_C::EnsureIconBrush(const struct FFortMultiSizeBrush& Multi_size_Brush, class UObject* m_WorldContext, struct FSlateBrush* Brush)
 {
 	static class UFunction* Func = nullptr;
 
@@ -57,8 +57,8 @@ void USlotLibrary_C::EnsureIconBrush(const struct FFortMultiSizeBrush& MultiMinu
 
 	Params::SlotLibrary_C_EnsureIconBrush Parms{};
 
-	Parms.MultiMinussize_Brush = std::move(MultiMinussize_Brush);
-	Parms.__WorldContext = __WorldContext;
+	Parms.Multi_size_Brush = std::move(Multi_size_Brush);
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -72,10 +72,10 @@ void USlotLibrary_C::EnsureIconBrush(const struct FFortMultiSizeBrush& MultiMinu
 // Parameters:
 // struct FLinearColor                     Base_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Hightlight_Color                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Current_Color                                          (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USlotLibrary_C::Calculate_Current_Pulsing_Highlight_Color(const struct FLinearColor& Base_Color, const struct FLinearColor& Hightlight_Color, class UObject* __WorldContext, struct FLinearColor* Current_Color)
+void USlotLibrary_C::Calculate_Current_Pulsing_Highlight_Color(const struct FLinearColor& Base_Color, const struct FLinearColor& Hightlight_Color, class UObject* m_WorldContext, struct FLinearColor* Current_Color)
 {
 	static class UFunction* Func = nullptr;
 
@@ -86,7 +86,7 @@ void USlotLibrary_C::Calculate_Current_Pulsing_Highlight_Color(const struct FLin
 
 	Parms.Base_Color = std::move(Base_Color);
 	Parms.Hightlight_Color = std::move(Hightlight_Color);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -99,12 +99,12 @@ void USlotLibrary_C::Calculate_Current_Pulsing_Highlight_Color(const struct FLin
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // TArray<class UFortWorker*>              Workers                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTagContainer            Chief_Personality                                      (Parm, OutParm)
 // struct FGameplayTagContainer            Crew_Personalities                                     (Parm, OutParm)
 // struct FGameplayTagContainer            Crew_Set_Bonuses                                       (Parm, OutParm)
 
-void USlotLibrary_C::Get_Traits_Of_Workers(TArray<class UFortWorker*>& Workers, class UObject* __WorldContext, struct FGameplayTagContainer* Chief_Personality, struct FGameplayTagContainer* Crew_Personalities, struct FGameplayTagContainer* Crew_Set_Bonuses)
+void USlotLibrary_C::Get_Traits_Of_Workers(TArray<class UFortWorker*>& Workers, class UObject* m_WorldContext, struct FGameplayTagContainer* Chief_Personality, struct FGameplayTagContainer* Crew_Personalities, struct FGameplayTagContainer* Crew_Set_Bonuses)
 {
 	static class UFunction* Func = nullptr;
 
@@ -114,7 +114,7 @@ void USlotLibrary_C::Get_Traits_Of_Workers(TArray<class UFortWorker*>& Workers, 
 	Params::SlotLibrary_C_Get_Traits_Of_Workers Parms{};
 
 	Parms.Workers = std::move(Workers);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -139,10 +139,10 @@ void USlotLibrary_C::Get_Traits_Of_Workers(TArray<class UFortWorker*>& Workers, 
 // struct FGameplayTagContainer            Required_Gameplay_Tags                                 (Parm)
 // class FText                             Required_Gameplay_Tags_Description                     (Parm)
 // class FText                             Modifier_Source                                        (Parm)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USlotLibrary_C::Create_Attribute_Modifier_Tool_Tip(class APlayerController* Owning_Player, const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Gameplay_Tags, const class FText& Required_Gameplay_Tags_Description, const class FText& Modifier_Source, class UObject* __WorldContext, class UWidget** Result)
+void USlotLibrary_C::Create_Attribute_Modifier_Tool_Tip(class APlayerController* Owning_Player, const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Gameplay_Tags, const class FText& Required_Gameplay_Tags_Description, const class FText& Modifier_Source, class UObject* m_WorldContext, class UWidget** Result)
 {
 	static class UFunction* Func = nullptr;
 
@@ -156,7 +156,7 @@ void USlotLibrary_C::Create_Attribute_Modifier_Tool_Tip(class APlayerController*
 	Parms.Required_Gameplay_Tags = std::move(Required_Gameplay_Tags);
 	Parms.Required_Gameplay_Tags_Description = std::move(Required_Gameplay_Tags_Description);
 	Parms.Modifier_Source = std::move(Modifier_Source);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -171,10 +171,10 @@ void USlotLibrary_C::Create_Attribute_Modifier_Tool_Tip(class APlayerController*
 // struct FFortAttributeInfo               Attribute_Info                                         (Parm)
 // struct FGameplayTagContainer            Required_Tags                                          (Parm)
 // class FText                             Required_Gameplay_Tags_Description                     (Parm)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-class FText USlotLibrary_C::Get_Attribute_Modifier_Header_Text(const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Tags, const class FText& Required_Gameplay_Tags_Description, class UObject* __WorldContext)
+class FText USlotLibrary_C::Get_Attribute_Modifier_Header_Text(const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Tags, const class FText& Required_Gameplay_Tags_Description, class UObject* m_WorldContext)
 {
 	static class UFunction* Func = nullptr;
 
@@ -186,7 +186,7 @@ class FText USlotLibrary_C::Get_Attribute_Modifier_Header_Text(const struct FFor
 	Parms.Attribute_Info = std::move(Attribute_Info);
 	Parms.Required_Tags = std::move(Required_Tags);
 	Parms.Required_Gameplay_Tags_Description = std::move(Required_Gameplay_Tags_Description);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 

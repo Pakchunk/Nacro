@@ -31,8 +31,6 @@ public:
 	UMulticastDelegateProperty_                   OnGadgetsMouseLeft;                                // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnGadgetsMouseEntered__DelegateSignature();
-	void OnGadgetsMouseLeft__DelegateSignature();
 	void ExecuteUbergraph_LobbyPlayerPadGadgets(int32 EntryPoint);
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);

@@ -14,28 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.OnItemClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FortExpeditionListView_C_OnItemClicked__DelegateSignature final
-{
-public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_FortExpeditionListView_C_OnItemClicked__DelegateSignature) == 0x000008, "Wrong alignment on BP_FortExpeditionListView_C_OnItemClicked__DelegateSignature");
-static_assert(sizeof(BP_FortExpeditionListView_C_OnItemClicked__DelegateSignature) == 0x000008, "Wrong size on BP_FortExpeditionListView_C_OnItemClicked__DelegateSignature");
-static_assert(offsetof(BP_FortExpeditionListView_C_OnItemClicked__DelegateSignature, Item) == 0x000000, "Member 'BP_FortExpeditionListView_C_OnItemClicked__DelegateSignature::Item' has a wrong offset!");
-
-// Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.OnItemHovered__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FortExpeditionListView_C_OnItemHovered__DelegateSignature final
-{
-public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_FortExpeditionListView_C_OnItemHovered__DelegateSignature) == 0x000008, "Wrong alignment on BP_FortExpeditionListView_C_OnItemHovered__DelegateSignature");
-static_assert(sizeof(BP_FortExpeditionListView_C_OnItemHovered__DelegateSignature) == 0x000008, "Wrong size on BP_FortExpeditionListView_C_OnItemHovered__DelegateSignature");
-static_assert(offsetof(BP_FortExpeditionListView_C_OnItemHovered__DelegateSignature, Item) == 0x000000, "Member 'BP_FortExpeditionListView_C_OnItemHovered__DelegateSignature::Item' has a wrong offset!");
-
 // Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.ExecuteUbergraph_BP_FortExpeditionListView
 // 0x0050 (0x0050 - 0x0000)
 struct BP_FortExpeditionListView_C_ExecuteUbergraph_BP_FortExpeditionListView final

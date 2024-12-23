@@ -27,7 +27,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 NameTextStyle;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 DescriptionTextStyle;                              // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShowMinusDescriptions;                             // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Show_Descriptions;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UFortGameplayModifierItemDefinition*> ModifierItems;                                     // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                          UseSmallIcons;                                     // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -84,7 +84,7 @@ static_assert(sizeof(MissionDetailsModifierList_C_PopulateModifiers) == 0x000210
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, UseTrunctatedList) == 0x000000, "Member 'MissionDetailsModifierList_C_PopulateModifiers::UseTrunctatedList' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, NameTextStyle) == 0x000008, "Member 'MissionDetailsModifierList_C_PopulateModifiers::NameTextStyle' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, DescriptionTextStyle) == 0x000010, "Member 'MissionDetailsModifierList_C_PopulateModifiers::DescriptionTextStyle' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, ShowMinusDescriptions) == 0x000018, "Member 'MissionDetailsModifierList_C_PopulateModifiers::ShowMinusDescriptions' has a wrong offset!");
+static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, Show_Descriptions) == 0x000018, "Member 'MissionDetailsModifierList_C_PopulateModifiers::Show_Descriptions' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, ModifierItems) == 0x000020, "Member 'MissionDetailsModifierList_C_PopulateModifiers::ModifierItems' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, UseSmallIcons) == 0x000030, "Member 'MissionDetailsModifierList_C_PopulateModifiers::UseSmallIcons' has a wrong offset!");
 static_assert(offsetof(MissionDetailsModifierList_C_PopulateModifiers, DisplayMoreThreshold) == 0x000034, "Member 'MissionDetailsModifierList_C_PopulateModifiers::DisplayMoreThreshold' has a wrong offset!");

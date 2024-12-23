@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WaveModifiersWidget.WaveModifiersWidget_C.OnAllModifiersPresented__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWaveModifiersWidget_C::OnAllModifiersPresented__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaveModifiersWidget_C", "OnAllModifiersPresented__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WaveModifiersWidget.WaveModifiersWidget_C.OnModifiersAdded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

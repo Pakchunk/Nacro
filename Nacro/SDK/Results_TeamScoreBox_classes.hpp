@@ -56,9 +56,6 @@ public:
 	bool                                          bSkippingToEnd;                                    // 0x030D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void CountUpFinished__DelegateSignature();
-	void CountDownFinished__DelegateSignature();
-	void IntroFinished__DelegateSignature();
 	void ExecuteUbergraph_Results_TeamScoreBox(int32 EntryPoint);
 	void BndEvt__TextScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, const bool HadCompleted);
 	void Stop_Count_Down_Absorption();

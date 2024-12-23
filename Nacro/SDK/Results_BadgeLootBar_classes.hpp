@@ -51,9 +51,6 @@ public:
 	class UMaterialInstanceDynamic*               MAT_XPBar;                                         // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void IntroComplete__DelegateSignature();
-	void FinishedAddingBadgePoints__DelegateSignature();
-	void LeveledUp__DelegateSignature();
 	void ExecuteUbergraph_Results_BadgeLootBar(int32 EntryPoint);
 	void Construct();
 	void On_Leveled_Up();

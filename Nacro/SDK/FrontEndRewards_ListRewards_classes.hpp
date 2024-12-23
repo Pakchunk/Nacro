@@ -26,10 +26,10 @@ public:
 	class UWidgetAnimation*                       ShowHideDescription;                               // 0x0268(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimOutro;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       RibbonExpand;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Arrow_left;                                        // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Arrow_right;                                       // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 arrow_left;                                        // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 arrow_right;                                       // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCanvasPanel*                           CanvasCardQueue;                                   // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Dots_margin;                                       // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 dots_margin;                                       // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               OverlayMain;                                       // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             ScrollBoxDescription;                              // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               SizeBoxDescription;                                // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -41,7 +41,7 @@ public:
 	float                                         CardSlideStaggerDelay;                             // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsBusy;                                            // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2E9[0x3];                                      // 0x02E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CardOffset;                                        // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         cardOffset;                                        // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDataTableRowHandle                    ScrollAction;                                      // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FDataTableRowHandle                    CollectAllAction;                                  // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FDataTableRowHandle                    InspectAction;                                     // 0x0310(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
@@ -110,10 +110,10 @@ static_assert(offsetof(UFrontEndRewards_ListRewards_C, UberGraphFrame) == 0x0002
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, ShowHideDescription) == 0x000268, "Member 'UFrontEndRewards_ListRewards_C::ShowHideDescription' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, AnimOutro) == 0x000270, "Member 'UFrontEndRewards_ListRewards_C::AnimOutro' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, RibbonExpand) == 0x000278, "Member 'UFrontEndRewards_ListRewards_C::RibbonExpand' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, Arrow_left) == 0x000280, "Member 'UFrontEndRewards_ListRewards_C::Arrow_left' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, Arrow_right) == 0x000288, "Member 'UFrontEndRewards_ListRewards_C::Arrow_right' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_ListRewards_C, arrow_left) == 0x000280, "Member 'UFrontEndRewards_ListRewards_C::arrow_left' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_ListRewards_C, arrow_right) == 0x000288, "Member 'UFrontEndRewards_ListRewards_C::arrow_right' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, CanvasCardQueue) == 0x000290, "Member 'UFrontEndRewards_ListRewards_C::CanvasCardQueue' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, Dots_margin) == 0x000298, "Member 'UFrontEndRewards_ListRewards_C::Dots_margin' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_ListRewards_C, dots_margin) == 0x000298, "Member 'UFrontEndRewards_ListRewards_C::dots_margin' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, OverlayMain) == 0x0002A0, "Member 'UFrontEndRewards_ListRewards_C::OverlayMain' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, ScrollBoxDescription) == 0x0002A8, "Member 'UFrontEndRewards_ListRewards_C::ScrollBoxDescription' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, SizeBoxDescription) == 0x0002B0, "Member 'UFrontEndRewards_ListRewards_C::SizeBoxDescription' has a wrong offset!");
@@ -124,7 +124,7 @@ static_assert(offsetof(UFrontEndRewards_ListRewards_C, CardList) == 0x0002D0, "M
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, CurrentSelectionIndex) == 0x0002E0, "Member 'UFrontEndRewards_ListRewards_C::CurrentSelectionIndex' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, CardSlideStaggerDelay) == 0x0002E4, "Member 'UFrontEndRewards_ListRewards_C::CardSlideStaggerDelay' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, IsBusy) == 0x0002E8, "Member 'UFrontEndRewards_ListRewards_C::IsBusy' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, CardOffset) == 0x0002EC, "Member 'UFrontEndRewards_ListRewards_C::CardOffset' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_ListRewards_C, cardOffset) == 0x0002EC, "Member 'UFrontEndRewards_ListRewards_C::cardOffset' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, ScrollAction) == 0x0002F0, "Member 'UFrontEndRewards_ListRewards_C::ScrollAction' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, CollectAllAction) == 0x000300, "Member 'UFrontEndRewards_ListRewards_C::CollectAllAction' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_ListRewards_C, InspectAction) == 0x000310, "Member 'UFrontEndRewards_ListRewards_C::InspectAction' has a wrong offset!");

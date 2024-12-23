@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnEquipRequested__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature final
-{
-public:
-	int32                                         SlotIndex_0;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature");
-static_assert(offsetof(AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature, SlotIndex_0) == 0x000000, "Member 'AthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature::SlotIndex_0' has a wrong offset!");
-
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.ExecuteUbergraph_AthenaInventoryDropSlot
 // 0x0068 (0x0068 - 0x0000)
 struct AthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot final

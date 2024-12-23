@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "CommonUI_classes.hpp"
 #include "ItemDisplayStyle_structs.hpp"
 #include "FortniteUI_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -30,7 +30,7 @@ public:
 	class UWidgetAnimation*                       Selected;                                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimMaximize;                                      // 0x0248(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetAnimation*                       AnimMinimize;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               _SizeBox__Item;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               mSizeBox__Item;                                    // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       BottomHoldText;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BottomLeftArrowImage;                              // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BottomLeftArrowImage2;                             // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -114,7 +114,7 @@ static_assert(offsetof(UQuickbarSlot_C, UberGraphFrame) == 0x000238, "Member 'UQ
 static_assert(offsetof(UQuickbarSlot_C, Selected) == 0x000240, "Member 'UQuickbarSlot_C::Selected' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, AnimMaximize) == 0x000248, "Member 'UQuickbarSlot_C::AnimMaximize' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, AnimMinimize) == 0x000250, "Member 'UQuickbarSlot_C::AnimMinimize' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, _SizeBox__Item) == 0x000258, "Member 'UQuickbarSlot_C::_SizeBox__Item' has a wrong offset!");
+static_assert(offsetof(UQuickbarSlot_C, mSizeBox__Item) == 0x000258, "Member 'UQuickbarSlot_C::mSizeBox__Item' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, BottomHoldText) == 0x000260, "Member 'UQuickbarSlot_C::BottomHoldText' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, BottomLeftArrowImage) == 0x000268, "Member 'UQuickbarSlot_C::BottomLeftArrowImage' has a wrong offset!");
 static_assert(offsetof(UQuickbarSlot_C, BottomLeftArrowImage2) == 0x000270, "Member 'UQuickbarSlot_C::BottomLeftArrowImage2' has a wrong offset!");

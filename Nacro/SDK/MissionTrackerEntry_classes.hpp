@@ -26,7 +26,6 @@ public:
 	UMulticastDelegateProperty_                   WidgetVisibilityChanged;                           // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void WidgetVisibilityChanged__DelegateSignature();
 	void ExecuteUbergraph_MissionTrackerEntry(int32 EntryPoint);
 	void OnMissionSet();
 	void Construct();

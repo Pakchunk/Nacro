@@ -17,28 +17,6 @@
 namespace SDK::Params
 {
 
-// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSquadSlotSelected__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature final
-{
-public:
-	int32                                         SquadSlotIndex_0;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong alignment on ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature");
-static_assert(sizeof(ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature) == 0x000004, "Wrong size on ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature, SquadSlotIndex_0) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_OnSquadSlotSelected__DelegateSignature::SquadSlotIndex_0' has a wrong offset!");
-
-// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSquadSlotUpdated__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct ExpeditionSquadSlotButton_C_OnSquadSlotUpdated__DelegateSignature final
-{
-public:
-	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ExpeditionSquadSlotButton_C_OnSquadSlotUpdated__DelegateSignature) == 0x000008, "Wrong alignment on ExpeditionSquadSlotButton_C_OnSquadSlotUpdated__DelegateSignature");
-static_assert(sizeof(ExpeditionSquadSlotButton_C_OnSquadSlotUpdated__DelegateSignature) == 0x000008, "Wrong size on ExpeditionSquadSlotButton_C_OnSquadSlotUpdated__DelegateSignature");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_OnSquadSlotUpdated__DelegateSignature, Item) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_OnSquadSlotUpdated__DelegateSignature::Item' has a wrong offset!");
-
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.ExecuteUbergraph_ExpeditionSquadSlotButton
 // 0x0088 (0x0088 - 0x0000)
 struct ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton final

@@ -940,8 +940,8 @@ static_assert(offsetof(MainTabsScreen_C_Get_Valid_Offers, CallFunc_Less_IntInt_R
 struct MainTabsScreen_C_CheckHighestPriorityOffer final
 {
 public:
-	TArray<struct FCardPackOffer>                 InOfferArray;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FCardPackOffer                         OutPriorityOffer;                                  // 0x0010(0x0090)(Parm, OutParm)
+	TArray<struct FCardPackOffer>                 inOfferArray;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FCardPackOffer                         outPriorityOffer;                                  // 0x0010(0x0090)(Parm, OutParm)
 	bool                                          FoundOffer;                                        // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          OfferFound;                                        // 0x00A1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -962,8 +962,8 @@ public:
 };
 static_assert(alignof(MainTabsScreen_C_CheckHighestPriorityOffer) == 0x000008, "Wrong alignment on MainTabsScreen_C_CheckHighestPriorityOffer");
 static_assert(sizeof(MainTabsScreen_C_CheckHighestPriorityOffer) == 0x0001F0, "Wrong size on MainTabsScreen_C_CheckHighestPriorityOffer");
-static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, InOfferArray) == 0x000000, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::InOfferArray' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, OutPriorityOffer) == 0x000010, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::OutPriorityOffer' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, inOfferArray) == 0x000000, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::inOfferArray' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, outPriorityOffer) == 0x000010, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::outPriorityOffer' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, FoundOffer) == 0x0000A0, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::FoundOffer' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, OfferFound) == 0x0000A1, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::OfferFound' has a wrong offset!");
 static_assert(offsetof(MainTabsScreen_C_CheckHighestPriorityOffer, PriorityOffer) == 0x0000A8, "Member 'MainTabsScreen_C_CheckHighestPriorityOffer::PriorityOffer' has a wrong offset!");
@@ -1044,7 +1044,7 @@ static_assert(offsetof(MainTabsScreen_C_CheckDisplayCriteria, CallFunc_GetNumInS
 
 // Function MainTabsScreen.MainTabsScreen_C.Determine If Any non-MTX offers are purchasable
 // 0x00D8 (0x00D8 - 0x0000)
-struct MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable final
+struct MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable final
 {
 public:
 	bool                                          ShowBang;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1070,27 +1070,27 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable) == 0x000008, "Wrong alignment on MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable");
-static_assert(sizeof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable) == 0x0000D8, "Wrong size on MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, ShowBang) == 0x000000, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::ShowBang' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, bShowBang) == 0x000001, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::bShowBang' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, Temp_int_Array_Index_Variable) == 0x000004, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_Get_Valid_Offers_Offers) == 0x000020, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_Get_Valid_Offers_Offers' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_Array_Get_Item) == 0x000030, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_Array_Length_ReturnValue) == 0x0000C0, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_Less_IntInt_ReturnValue) == 0x0000C4, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_GetTotalItemQuantityByDefinition_ReturnValue) == 0x0000C8, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_GetTotalItemQuantityByDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_BooleanAND_ReturnValue) == 0x0000CC, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000CD, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0000CE, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_Greater_IntInt_ReturnValue) == 0x0000CF, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_Not_PreBool_ReturnValue2) == 0x0000D0, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable, CallFunc_BooleanAND_ReturnValue2) == 0x0000D1, "Member 'MainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
+static_assert(alignof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable) == 0x000008, "Wrong alignment on MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable");
+static_assert(sizeof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable) == 0x0000D8, "Wrong size on MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, ShowBang) == 0x000000, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::ShowBang' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, bShowBang) == 0x000001, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::bShowBang' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, Temp_int_Array_Index_Variable) == 0x000004, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_GetContext_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_Get_Valid_Offers_Offers) == 0x000020, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_Get_Valid_Offers_Offers' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_Array_Get_Item) == 0x000030, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_Array_Length_ReturnValue) == 0x0000C0, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_Less_IntInt_ReturnValue) == 0x0000C4, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_GetTotalItemQuantityByDefinition_ReturnValue) == 0x0000C8, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_GetTotalItemQuantityByDefinition_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_BooleanAND_ReturnValue) == 0x0000CC, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000CD, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0000CE, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_Greater_IntInt_ReturnValue) == 0x0000CF, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_Not_PreBool_ReturnValue2) == 0x0000D0, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
+static_assert(offsetof(MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable, CallFunc_BooleanAND_ReturnValue2) == 0x0000D1, "Member 'MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 
 }
 

@@ -144,7 +144,7 @@ static_assert(offsetof(JournalQuestDetails_C_UpdatePanelInfo, K2Node_Select_Defa
 struct JournalQuestDetails_C_AbandonQuest final
 {
 public:
-	bool                                          QuestAbandoned_;                                   // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          questAbandoned_;                                   // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -161,7 +161,7 @@ public:
 };
 static_assert(alignof(JournalQuestDetails_C_AbandonQuest) == 0x000008, "Wrong alignment on JournalQuestDetails_C_AbandonQuest");
 static_assert(sizeof(JournalQuestDetails_C_AbandonQuest) == 0x000030, "Wrong size on JournalQuestDetails_C_AbandonQuest");
-static_assert(offsetof(JournalQuestDetails_C_AbandonQuest, QuestAbandoned_) == 0x000000, "Member 'JournalQuestDetails_C_AbandonQuest::QuestAbandoned_' has a wrong offset!");
+static_assert(offsetof(JournalQuestDetails_C_AbandonQuest, questAbandoned_) == 0x000000, "Member 'JournalQuestDetails_C_AbandonQuest::questAbandoned_' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_AbandonQuest, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'JournalQuestDetails_C_AbandonQuest::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_AbandonQuest, CallFunc_GetQuestManager_ReturnValue) == 0x000010, "Member 'JournalQuestDetails_C_AbandonQuest::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JournalQuestDetails_C_AbandonQuest, CallFunc_GetQuestState_ReturnValue) == 0x000018, "Member 'JournalQuestDetails_C_AbandonQuest::CallFunc_GetQuestState_ReturnValue' has a wrong offset!");

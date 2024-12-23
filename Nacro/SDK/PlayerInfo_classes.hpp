@@ -24,7 +24,7 @@ class UPlayerInfo_C final : public UFortHUDElementWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         _Horizontal_Box__Player_Info;                      // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         mHorizontal_Box__Player_Info;                      // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 LeaderImage;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URatingWidget_NUI_C*                    RatingWidget;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextPlayerName;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -49,7 +49,7 @@ public:
 static_assert(alignof(UPlayerInfo_C) == 0x000008, "Wrong alignment on UPlayerInfo_C");
 static_assert(sizeof(UPlayerInfo_C) == 0x000288, "Wrong size on UPlayerInfo_C");
 static_assert(offsetof(UPlayerInfo_C, UberGraphFrame) == 0x000260, "Member 'UPlayerInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerInfo_C, _Horizontal_Box__Player_Info) == 0x000268, "Member 'UPlayerInfo_C::_Horizontal_Box__Player_Info' has a wrong offset!");
+static_assert(offsetof(UPlayerInfo_C, mHorizontal_Box__Player_Info) == 0x000268, "Member 'UPlayerInfo_C::mHorizontal_Box__Player_Info' has a wrong offset!");
 static_assert(offsetof(UPlayerInfo_C, LeaderImage) == 0x000270, "Member 'UPlayerInfo_C::LeaderImage' has a wrong offset!");
 static_assert(offsetof(UPlayerInfo_C, RatingWidget) == 0x000278, "Member 'UPlayerInfo_C::RatingWidget' has a wrong offset!");
 static_assert(offsetof(UPlayerInfo_C, TextPlayerName) == 0x000280, "Member 'UPlayerInfo_C::TextPlayerName' has a wrong offset!");

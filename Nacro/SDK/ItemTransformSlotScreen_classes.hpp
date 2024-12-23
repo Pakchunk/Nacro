@@ -43,10 +43,6 @@ public:
 	UMulticastDelegateProperty_                   OnItemPickerOpened;                                // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnTransformConfirmed__DelegateSignature(TArray<class UFortItem*>& ItemsToSacrifice, int32 SacrificePoints, int32 CurrentTier);
-	void OnTransformButtonUpdated__DelegateSignature(bool TransformActive);
-	void OnItemPickerClosed__DelegateSignature();
-	void OnItemPickerOpened__DelegateSignature();
 	void ExecuteUbergraph_ItemTransformSlotScreen(int32 EntryPoint);
 	void BndEvt__Slot5_K2Node_ComponentBoundEvent_820_OnSlotSelected__DelegateSignature();
 	void BndEvt__Slot4_K2Node_ComponentBoundEvent_807_OnSlotSelected__DelegateSignature();

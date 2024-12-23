@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Results_Summary.Results_Summary_C.OnReturnClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UResults_Summary_C::OnReturnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Results_Summary_C", "OnReturnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Results_Summary.Results_Summary_C.ExecuteUbergraph_Results_Summary
 // ()
 // Parameters:

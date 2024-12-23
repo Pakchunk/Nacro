@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function TabVideoOptions.TabVideoOptions_C.Enable Overlay__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Accept_Input                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UTabVideoOptions_C::Enable_Overlay__DelegateSignature(bool Accept_Input)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabVideoOptions_C", "Enable Overlay__DelegateSignature");
-
-	Params::TabVideoOptions_C_Enable_Overlay__DelegateSignature Parms{};
-
-	Parms.Accept_Input = Accept_Input;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function TabVideoOptions.TabVideoOptions_C.Disable Overlay__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UTabVideoOptions_C::Disable_Overlay__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabVideoOptions_C", "Disable Overlay__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function TabVideoOptions.TabVideoOptions_C.ExecuteUbergraph_TabVideoOptions
 // (HasDefaults)
 // Parameters:
@@ -318,14 +284,14 @@ void UTabVideoOptions_C::Effects_Changed(int32 Tab_Id)
 // Parameters:
 // int32                                   Tab_Id                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabVideoOptions_C::PostMinusProcessing_Changed(int32 Tab_Id)
+void UTabVideoOptions_C::Post_Processing_Changed(int32 Tab_Id)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("TabVideoOptions_C", "Post-Processing Changed");
 
-	Params::TabVideoOptions_C_PostMinusProcessing_Changed Parms{};
+	Params::TabVideoOptions_C_Post_Processing_Changed Parms{};
 
 	Parms.Tab_Id = Tab_Id;
 
@@ -358,14 +324,14 @@ void UTabVideoOptions_C::Textures_Changed(int32 Tab_Id)
 // Parameters:
 // int32                                   Tab_Id                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabVideoOptions_C::AntiMinusAliasing_Changed(int32 Tab_Id)
+void UTabVideoOptions_C::Anti_Aliasing_Changed(int32 Tab_Id)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("TabVideoOptions_C", "Anti-Aliasing Changed");
 
-	Params::TabVideoOptions_C_AntiMinusAliasing_Changed Parms{};
+	Params::TabVideoOptions_C_Anti_Aliasing_Changed Parms{};
 
 	Parms.Tab_Id = Tab_Id;
 

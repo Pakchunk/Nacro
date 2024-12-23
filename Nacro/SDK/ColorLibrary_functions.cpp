@@ -21,10 +21,10 @@ namespace SDK
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FColorStylesheet                 Stylesheet                                             (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UColorLibrary_C::Get_Buff_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
+void UColorLibrary_C::Get_Buff_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color)
 {
 	static class UFunction* Func = nullptr;
 
@@ -34,7 +34,7 @@ void UColorLibrary_C::Get_Buff_Color(const struct FColorStylesheet& Stylesheet, 
 	Params::ColorLibrary_C_Get_Buff_Color Parms{};
 
 	Parms.Stylesheet = std::move(Stylesheet);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -47,10 +47,10 @@ void UColorLibrary_C::Get_Buff_Color(const struct FColorStylesheet& Stylesheet, 
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FColorStylesheet                 Stylesheet                                             (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
+void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color)
 {
 	static class UFunction* Func = nullptr;
 
@@ -60,7 +60,7 @@ void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& Stylesheet
 	Params::ColorLibrary_C_Get_Debuff_Color Parms{};
 
 	Parms.Stylesheet = std::move(Stylesheet);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -73,10 +73,10 @@ void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& Stylesheet
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FColorStylesheet                 Stylesheet                                             (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
+void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color)
 {
 	static class UFunction* Func = nullptr;
 
@@ -86,7 +86,7 @@ void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& Stylesheet
 	Params::ColorLibrary_C_Get_Unique_Color Parms{};
 
 	Parms.Stylesheet = std::move(Stylesheet);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -99,10 +99,10 @@ void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& Stylesheet
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FColorStylesheet                 Stylesheet                                             (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
+void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color)
 {
 	static class UFunction* Func = nullptr;
 
@@ -112,7 +112,7 @@ void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& St
 	Params::ColorLibrary_C_Get_Fire_Elemental_Color Parms{};
 
 	Parms.Stylesheet = std::move(Stylesheet);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -125,10 +125,10 @@ void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& St
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FColorStylesheet                 Stylesheet                                             (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
+void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color)
 {
 	static class UFunction* Func = nullptr;
 
@@ -138,7 +138,7 @@ void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& Sty
 	Params::ColorLibrary_C_Get_Ice_Elemental_Color Parms{};
 
 	Parms.Stylesheet = std::move(Stylesheet);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -151,10 +151,10 @@ void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& Sty
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FColorStylesheet                 Stylesheet                                             (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
+void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Color)
 {
 	static class UFunction* Func = nullptr;
 
@@ -164,7 +164,7 @@ void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& St
 	Params::ColorLibrary_C_Get_Bolt_Elemental_Color Parms{};
 
 	Parms.Stylesheet = std::move(Stylesheet);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -179,11 +179,11 @@ void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& St
 // EFortStatValueDisplayType               Display_Type                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // EFortBuffState                          Buff_State                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FColorStylesheet                 Stylesheet                                             (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     Base                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     buff                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UColorLibrary_C::Get_Base___Buff_Colors(EFortStatValueDisplayType Display_Type, EFortBuffState Buff_State, const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Base, struct FLinearColor* buff)
+void UColorLibrary_C::Get_Base___Buff_Colors(EFortStatValueDisplayType Display_Type, EFortBuffState Buff_State, const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* Base, struct FLinearColor* buff)
 {
 	static class UFunction* Func = nullptr;
 
@@ -195,7 +195,7 @@ void UColorLibrary_C::Get_Base___Buff_Colors(EFortStatValueDisplayType Display_T
 	Parms.Display_Type = Display_Type;
 	Parms.Buff_State = Buff_State;
 	Parms.Stylesheet = std::move(Stylesheet);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
@@ -211,10 +211,10 @@ void UColorLibrary_C::Get_Base___Buff_Colors(EFortStatValueDisplayType Display_T
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FColorStylesheet                 Stylesheet                                             (Parm, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          m_WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     StyleSheetOut                                          (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UColorLibrary_C::Get_HarvestWeakPoint_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* StyleSheetOut)
+void UColorLibrary_C::Get_HarvestWeakPoint_Color(const struct FColorStylesheet& Stylesheet, class UObject* m_WorldContext, struct FLinearColor* StyleSheetOut)
 {
 	static class UFunction* Func = nullptr;
 
@@ -224,7 +224,7 @@ void UColorLibrary_C::Get_HarvestWeakPoint_Color(const struct FColorStylesheet& 
 	Params::ColorLibrary_C_Get_HarvestWeakPoint_Color Parms{};
 
 	Parms.Stylesheet = std::move(Stylesheet);
-	Parms.__WorldContext = __WorldContext;
+	Parms.m_WorldContext = m_WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 

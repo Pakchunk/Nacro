@@ -25,13 +25,13 @@ public:
 	EIntTypes                                     Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Variable_Name;                                     // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
-	TArray<int32>                                 Int;                                               // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TArray<struct FVector2D>                      Int2;                                              // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TArray<struct FVector>                        Int3;                                              // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TArray<struct FLinearColor>                   Int4;                                              // 0x0048(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
-	class UObject*                                __WorldContext;                                    // 0x0058(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<int32>                                 int_0;                                             // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FVector2D>                      int2;                                              // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FVector>                        int3;                                              // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FLinearColor>                   int4;                                              // 0x0048(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	class UObject*                                m_WorldContext;                                    // 0x0058(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 String;                                            // 0x0060(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 Curstring;                                         // 0x0070(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 curstring;                                         // 0x0070(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -163,13 +163,13 @@ static_assert(alignof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array) 
 static_assert(sizeof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array) == 0x000598, "Wrong size on RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Type) == 0x000000, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Type' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Variable_Name) == 0x000008, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Variable_Name' has a wrong offset!");
-static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Int) == 0x000018, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Int' has a wrong offset!");
-static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Int2) == 0x000028, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Int2' has a wrong offset!");
-static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Int3) == 0x000038, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Int3' has a wrong offset!");
-static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Int4) == 0x000048, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Int4' has a wrong offset!");
-static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, __WorldContext) == 0x000058, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::__WorldContext' has a wrong offset!");
+static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, int_0) == 0x000018, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::int_0' has a wrong offset!");
+static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, int2) == 0x000028, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::int2' has a wrong offset!");
+static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, int3) == 0x000038, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::int3' has a wrong offset!");
+static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, int4) == 0x000048, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::int4' has a wrong offset!");
+static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, m_WorldContext) == 0x000058, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, String) == 0x000060, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::String' has a wrong offset!");
-static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Curstring) == 0x000070, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Curstring' has a wrong offset!");
+static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, curstring) == 0x000070, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::curstring' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, Temp_int_Loop_Counter_Variable) == 0x000080, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, CallFunc_Array_Length_ReturnValue) == 0x000084, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array, CallFunc_Add_IntInt_ReturnValue) == 0x000088, "Member 'RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -292,7 +292,7 @@ public:
 	struct FVector2D                              Position;                                          // 0x0008(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Scale;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Screen_Position;                                   // 0x0020(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Screen_Size;                                       // 0x0028(0x0008)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -311,7 +311,7 @@ static_assert(sizeof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, Size) == 0x000000, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::Size' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, Position) == 0x000008, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::Position' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, Scale) == 0x000010, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::Scale' has a wrong offset!");
-static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, __WorldContext) == 0x000018, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::__WorldContext' has a wrong offset!");
+static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, m_WorldContext) == 0x000018, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, Screen_Position) == 0x000020, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::Screen_Position' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, Screen_Size) == 0x000028, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::Screen_Size' has a wrong offset!");
 static_assert(offsetof(RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position, CallFunc_Conv_Vector2DToVector_ReturnValue) == 0x000030, "Member 'RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position::CallFunc_Conv_Vector2DToVector_ReturnValue' has a wrong offset!");

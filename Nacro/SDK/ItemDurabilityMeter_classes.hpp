@@ -25,8 +25,8 @@ class UItemDurabilityMeter_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(Transient, DuplicateTransient)
-	class UImage*                                 _Image__Backfill;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 _Image__Overfill;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Backfill;                                  // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Overfill;                                  // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               Size_Box;                                          // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                         DefaultPadding;                                    // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MinimumFillHeight;                                 // 0x0254(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,8 +52,8 @@ public:
 static_assert(alignof(UItemDurabilityMeter_C) == 0x000008, "Wrong alignment on UItemDurabilityMeter_C");
 static_assert(sizeof(UItemDurabilityMeter_C) == 0x000268, "Wrong size on UItemDurabilityMeter_C");
 static_assert(offsetof(UItemDurabilityMeter_C, UberGraphFrame) == 0x000230, "Member 'UItemDurabilityMeter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDurabilityMeter_C, _Image__Backfill) == 0x000238, "Member 'UItemDurabilityMeter_C::_Image__Backfill' has a wrong offset!");
-static_assert(offsetof(UItemDurabilityMeter_C, _Image__Overfill) == 0x000240, "Member 'UItemDurabilityMeter_C::_Image__Overfill' has a wrong offset!");
+static_assert(offsetof(UItemDurabilityMeter_C, mImage__Backfill) == 0x000238, "Member 'UItemDurabilityMeter_C::mImage__Backfill' has a wrong offset!");
+static_assert(offsetof(UItemDurabilityMeter_C, mImage__Overfill) == 0x000240, "Member 'UItemDurabilityMeter_C::mImage__Overfill' has a wrong offset!");
 static_assert(offsetof(UItemDurabilityMeter_C, Size_Box) == 0x000248, "Member 'UItemDurabilityMeter_C::Size_Box' has a wrong offset!");
 static_assert(offsetof(UItemDurabilityMeter_C, DefaultPadding) == 0x000250, "Member 'UItemDurabilityMeter_C::DefaultPadding' has a wrong offset!");
 static_assert(offsetof(UItemDurabilityMeter_C, MinimumFillHeight) == 0x000254, "Member 'UItemDurabilityMeter_C::MinimumFillHeight' has a wrong offset!");

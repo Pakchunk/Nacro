@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function FullPartyBar.FullPartyBar_C.OnButtonHovered__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             HelpText                                               (Parm)
-
-void UFullPartyBar_C::OnButtonHovered__DelegateSignature(const class FText& HelpText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FullPartyBar_C", "OnButtonHovered__DelegateSignature");
-
-	Params::FullPartyBar_C_OnButtonHovered__DelegateSignature Parms{};
-
-	Parms.HelpText = std::move(HelpText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function FullPartyBar.FullPartyBar_C.ExecuteUbergraph_FullPartyBar
 // (HasDefaults)
 // Parameters:
@@ -372,19 +352,19 @@ void UFullPartyBar_C::OpenPartyPrivacy()
 // Function FullPartyBar.FullPartyBar_C.isTeammateSlotPopulated
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   InSlotNUmber                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   inSlotNUmber                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
-bool UFullPartyBar_C::IsTeammateSlotPopulated(int32 InSlotNUmber)
+bool UFullPartyBar_C::isTeammateSlotPopulated(int32 inSlotNUmber)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("FullPartyBar_C", "isTeammateSlotPopulated");
 
-	Params::FullPartyBar_C_IsTeammateSlotPopulated Parms{};
+	Params::FullPartyBar_C_isTeammateSlotPopulated Parms{};
 
-	Parms.InSlotNUmber = InSlotNUmber;
+	Parms.inSlotNUmber = inSlotNUmber;
 
 	UObject::ProcessEvent(Func, &Parms);
 

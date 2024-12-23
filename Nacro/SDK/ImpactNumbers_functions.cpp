@@ -78,14 +78,14 @@ void AImpactNumbers_C::UserConstructionScript()
 // struct FTransform                       OutCameraTransform                                     (Parm, OutParm, IsPlainOldData, NoDestructor)
 // struct FVector                          OutNumberLocation                                      (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AImpactNumbers_C::Init_a_new_number_set(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, struct FTransform* OutCameraTransform, struct FVector* OutNumberLocation)
+void AImpactNumbers_C::init_a_new_number_set(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, struct FTransform* OutCameraTransform, struct FVector* OutNumberLocation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("ImpactNumbers_C", "init a new number set");
 
-	Params::ImpactNumbers_C_Init_a_new_number_set Parms{};
+	Params::ImpactNumbers_C_init_a_new_number_set Parms{};
 
 	Parms.NewDamageHitInfoStruct = std::move(NewDamageHitInfoStruct);
 

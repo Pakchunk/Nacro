@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "PlayerPawn_Athena_Generic_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "PlayerPawn_Athena_Generic_classes.hpp"
 
 
 namespace SDK
@@ -62,24 +62,24 @@ public:
 	class UParticleSystemComponent*               Vapor_Effect;                                      // 0x21D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint);
-	void GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void ContrailCheck();
-	void ReceiveTick(float DeltaSeconds);
-	void OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext);
-	void GameplayCue_Athena_Equipping(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void SafeZoneStatusChanged();
-	void GameplayCue_Athena_OutsideSafeZone(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void ReceiveDestroyed();
-	void SelectPawn(class UAnimInstance* AnimInst);
-	void ReceiveBeginPlay();
-	void SetMenuScreenClassName();
-	void GameplayCue_Abilities_Activation_Commando_Shockwave(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void ReceivePossessed(class AController* NewController);
-	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
-	void UserConstructionScript();
 	void InitAthenaFoleyAudio();
+	void UserConstructionScript();
+	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void ReceivePossessed(class AController* NewController);
+	void GameplayCue_Abilities_Activation_Commando_Shockwave(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void SetMenuScreenClassName();
+	void ReceiveBeginPlay();
+	void SelectPawn(class UAnimInstance* AnimInst);
+	void ReceiveDestroyed();
+	void GameplayCue_Athena_OutsideSafeZone(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void SafeZoneStatusChanged();
+	void GameplayCue_Athena_Equipping(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext);
+	void ReceiveTick(float DeltaSeconds);
+	void ContrailCheck();
+	void GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
+	void ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

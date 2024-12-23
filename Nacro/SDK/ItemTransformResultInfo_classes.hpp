@@ -50,8 +50,6 @@ public:
 	UMulticastDelegateProperty_                   OnUpdateSacrificeInfo;                             // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnTransformConfirmed__DelegateSignature(int32 SacrificePoints, int32 CurrentTier_0);
-	void OnUpdateSacrificeInfo__DelegateSignature(bool TransformActive);
 	void ExecuteUbergraph_ItemTransformResultInfo(int32 EntryPoint);
 	void Construct();
 	void BndEvt__TransformButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

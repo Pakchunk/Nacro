@@ -27,17 +27,17 @@ class UAthenaHUD_C final : public UAthenaHUDBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(Transient, DuplicateTransient)
-	class UFortActorCanvas*                       _Actor_Canvas__Indicators;                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         _Horizontal_Box__Top_Right_Content;                // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               _Overlay__Camera_Mode_Content;                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               _Overlay__Cursor_Mode_Content;                     // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               _Overlay__Persistent_HUD_Content;                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UNamedSlot*                             _Slot__CursorModeContent;                          // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        _Switcher__CursorModeContent;                      // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        _Switcher__Mode_Content;                           // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           _Vertical_Box__Bottom_Left_Content;                // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           _Vertical_Box__Top_Left_Content;                   // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           _Vertical_Box__Top_Right_Content;                  // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortActorCanvas*                       mActor_Canvas__Indicators;                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         mHorizontal_Box__Top_Right_Content;                // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               mOverlay__Camera_Mode_Content;                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               mOverlay__Cursor_Mode_Content;                     // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               mOverlay__Persistent_HUD_Content;                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             mSlot__CursorModeContent;                          // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        mSwitcher__CursorModeContent;                      // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        mSwitcher__Mode_Content;                           // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           mVertical_Box__Bottom_Left_Content;                // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           mVertical_Box__Top_Left_Content;                   // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           mVertical_Box__Top_Right_Content;                  // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaAerialFeedback_C*                AthenaAerialFeedback;                              // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaCompass_C*                       AthenaCompass;                                     // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaEquippedItemWidget_C*            AthenaEquippedItemWidget;                          // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -142,17 +142,17 @@ public:
 static_assert(alignof(UAthenaHUD_C) == 0x000008, "Wrong alignment on UAthenaHUD_C");
 static_assert(sizeof(UAthenaHUD_C) == 0x0005F0, "Wrong size on UAthenaHUD_C");
 static_assert(offsetof(UAthenaHUD_C, UberGraphFrame) == 0x000400, "Member 'UAthenaHUD_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Actor_Canvas__Indicators) == 0x000408, "Member 'UAthenaHUD_C::_Actor_Canvas__Indicators' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Horizontal_Box__Top_Right_Content) == 0x000410, "Member 'UAthenaHUD_C::_Horizontal_Box__Top_Right_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Overlay__Camera_Mode_Content) == 0x000418, "Member 'UAthenaHUD_C::_Overlay__Camera_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Overlay__Cursor_Mode_Content) == 0x000420, "Member 'UAthenaHUD_C::_Overlay__Cursor_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Overlay__Persistent_HUD_Content) == 0x000428, "Member 'UAthenaHUD_C::_Overlay__Persistent_HUD_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Slot__CursorModeContent) == 0x000430, "Member 'UAthenaHUD_C::_Slot__CursorModeContent' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Switcher__CursorModeContent) == 0x000438, "Member 'UAthenaHUD_C::_Switcher__CursorModeContent' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Switcher__Mode_Content) == 0x000440, "Member 'UAthenaHUD_C::_Switcher__Mode_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Vertical_Box__Bottom_Left_Content) == 0x000448, "Member 'UAthenaHUD_C::_Vertical_Box__Bottom_Left_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Vertical_Box__Top_Left_Content) == 0x000450, "Member 'UAthenaHUD_C::_Vertical_Box__Top_Left_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Vertical_Box__Top_Right_Content) == 0x000458, "Member 'UAthenaHUD_C::_Vertical_Box__Top_Right_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mActor_Canvas__Indicators) == 0x000408, "Member 'UAthenaHUD_C::mActor_Canvas__Indicators' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mHorizontal_Box__Top_Right_Content) == 0x000410, "Member 'UAthenaHUD_C::mHorizontal_Box__Top_Right_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mOverlay__Camera_Mode_Content) == 0x000418, "Member 'UAthenaHUD_C::mOverlay__Camera_Mode_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mOverlay__Cursor_Mode_Content) == 0x000420, "Member 'UAthenaHUD_C::mOverlay__Cursor_Mode_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mOverlay__Persistent_HUD_Content) == 0x000428, "Member 'UAthenaHUD_C::mOverlay__Persistent_HUD_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mSlot__CursorModeContent) == 0x000430, "Member 'UAthenaHUD_C::mSlot__CursorModeContent' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mSwitcher__CursorModeContent) == 0x000438, "Member 'UAthenaHUD_C::mSwitcher__CursorModeContent' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mSwitcher__Mode_Content) == 0x000440, "Member 'UAthenaHUD_C::mSwitcher__Mode_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mVertical_Box__Bottom_Left_Content) == 0x000448, "Member 'UAthenaHUD_C::mVertical_Box__Bottom_Left_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mVertical_Box__Top_Left_Content) == 0x000450, "Member 'UAthenaHUD_C::mVertical_Box__Top_Left_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaHUD_C, mVertical_Box__Top_Right_Content) == 0x000458, "Member 'UAthenaHUD_C::mVertical_Box__Top_Right_Content' has a wrong offset!");
 static_assert(offsetof(UAthenaHUD_C, AthenaAerialFeedback) == 0x000460, "Member 'UAthenaHUD_C::AthenaAerialFeedback' has a wrong offset!");
 static_assert(offsetof(UAthenaHUD_C, AthenaCompass) == 0x000468, "Member 'UAthenaHUD_C::AthenaCompass' has a wrong offset!");
 static_assert(offsetof(UAthenaHUD_C, AthenaEquippedItemWidget) == 0x000470, "Member 'UAthenaHUD_C::AthenaEquippedItemWidget' has a wrong offset!");

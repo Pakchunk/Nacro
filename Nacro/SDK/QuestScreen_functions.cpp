@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function QuestScreen.QuestScreen_C.CloseJournal__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UQuestScreen_C::CloseJournal__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestScreen_C", "CloseJournal__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function QuestScreen.QuestScreen_C.ExecuteUbergraph_QuestScreen
 // (HasDefaults)
 // Parameters:
@@ -367,7 +353,7 @@ void UQuestScreen_C::PlayQuest(bool* PassThrough)
 // Function QuestScreen.QuestScreen_C.populateDetailWidgets
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UQuestScreen_C::PopulateDetailWidgets()
+void UQuestScreen_C::populateDetailWidgets()
 {
 	static class UFunction* Func = nullptr;
 

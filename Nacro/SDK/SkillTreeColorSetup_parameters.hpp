@@ -27,7 +27,7 @@ public:
 	ESkillTreePages                               Pages;                                             // 0x00C0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               Mid;                                               // 0x00C8(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                __WorldContext;                                    // 0x00D0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                m_WorldContext;                                    // 0x00D0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESkillTreePages                               Temp_byte_Variable;                                // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESkillTreePages                               Temp_byte_Variable2;                               // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -42,7 +42,7 @@ static_assert(sizeof(SkillTreeColorSetup_C_SkillTreeBGSetup) == 0x000110, "Wrong
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Page_Color) == 0x000000, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::Page_Color' has a wrong offset!");
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Pages) == 0x0000C0, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::Pages' has a wrong offset!");
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Mid) == 0x0000C8, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::Mid' has a wrong offset!");
-static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, __WorldContext) == 0x0000D0, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::__WorldContext' has a wrong offset!");
+static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, m_WorldContext) == 0x0000D0, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::m_WorldContext' has a wrong offset!");
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Temp_byte_Variable) == 0x0000D8, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, Temp_byte_Variable2) == 0x0000D9, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::Temp_byte_Variable2' has a wrong offset!");
 static_assert(offsetof(SkillTreeColorSetup_C_SkillTreeBGSetup, K2Node_Select_Default) == 0x0000DC, "Member 'SkillTreeColorSetup_C_SkillTreeBGSetup::K2Node_Select_Default' has a wrong offset!");

@@ -147,14 +147,14 @@ void AStoreCardReveal_BP_C::ResetGamepadInput()
 // ETouchIndex                             FingerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              TouchedComponent                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AStoreCardReveal_BP_C::BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature(ETouchIndex FingerIndex, class UPrimitiveComponent* TouchedComponent)
+void AStoreCardReveal_BP_C::BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature(ETouchIndex FingerIndex, class UPrimitiveComponent* TouchedComponent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("StoreCardReveal_BP_C", "BndEvt__S-ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature");
 
-	Params::StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature Parms{};
+	Params::StoreCardReveal_BP_C_BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnInputTouchEndSignature__DelegateSignature Parms{};
 
 	Parms.FingerIndex = FingerIndex;
 	Parms.TouchedComponent = TouchedComponent;
@@ -169,14 +169,14 @@ void AStoreCardReveal_BP_C::BndEvt__SMinusChoiceCardB_K2Node_ComponentBoundEvent
 // ETouchIndex                             FingerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              TouchedComponent                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AStoreCardReveal_BP_C::BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature(ETouchIndex FingerIndex, class UPrimitiveComponent* TouchedComponent)
+void AStoreCardReveal_BP_C::BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature(ETouchIndex FingerIndex, class UPrimitiveComponent* TouchedComponent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("StoreCardReveal_BP_C", "BndEvt__S-ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature");
 
-	Params::StoreCardReveal_BP_C_BndEvt__SMinusChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature Parms{};
+	Params::StoreCardReveal_BP_C_BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnInputTouchEndSignature__DelegateSignature Parms{};
 
 	Parms.FingerIndex = FingerIndex;
 	Parms.TouchedComponent = TouchedComponent;
@@ -312,7 +312,7 @@ void AStoreCardReveal_BP_C::EnableOpenAllPacks()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.RestartCCB-AmbientAnim
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::RestartCCBMinusAmbientAnim()
+void AStoreCardReveal_BP_C::RestartCCB_AmbientAnim()
 {
 	static class UFunction* Func = nullptr;
 
@@ -326,7 +326,7 @@ void AStoreCardReveal_BP_C::RestartCCBMinusAmbientAnim()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.StopCCB-AmbientAnim
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::StopCCBMinusAmbientAnim()
+void AStoreCardReveal_BP_C::StopCCB_AmbientAnim()
 {
 	static class UFunction* Func = nullptr;
 
@@ -340,7 +340,7 @@ void AStoreCardReveal_BP_C::StopCCBMinusAmbientAnim()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.RestartCCA-AmbientAnim
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::RestartCCAMinusAmbientAnim()
+void AStoreCardReveal_BP_C::RestartCCA_AmbientAnim()
 {
 	static class UFunction* Func = nullptr;
 
@@ -368,7 +368,7 @@ void AStoreCardReveal_BP_C::CheckHoverStatus()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.HoverEnd-CC-B
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::HoverEndMinusCCMinusB()
+void AStoreCardReveal_BP_C::HoverEnd_CC_B()
 {
 	static class UFunction* Func = nullptr;
 
@@ -382,7 +382,7 @@ void AStoreCardReveal_BP_C::HoverEndMinusCCMinusB()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.HoverStart-CC-B
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::HoverStartMinusCCMinusB()
+void AStoreCardReveal_BP_C::HoverStart_CC_B()
 {
 	static class UFunction* Func = nullptr;
 
@@ -436,7 +436,7 @@ void AStoreCardReveal_BP_C::OnBeginCursorOver_ChoiceCardB(class UPrimitiveCompon
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.HoverEnd-CC-A
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::HoverEndMinusCCMinusA()
+void AStoreCardReveal_BP_C::HoverEnd_CC_A()
 {
 	static class UFunction* Func = nullptr;
 
@@ -450,7 +450,7 @@ void AStoreCardReveal_BP_C::HoverEndMinusCCMinusA()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.HoverStart-CC-A
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::HoverStartMinusCCMinusA()
+void AStoreCardReveal_BP_C::HoverStart_CC_A()
 {
 	static class UFunction* Func = nullptr;
 
@@ -504,7 +504,7 @@ void AStoreCardReveal_BP_C::OnBeginCursorOver_ChoiceCardA(class UPrimitiveCompon
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.Stop-CC-HoverAnims
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::StopMinusCCMinusHoverAnims()
+void AStoreCardReveal_BP_C::Stop_CC_HoverAnims()
 {
 	static class UFunction* Func = nullptr;
 
@@ -532,7 +532,7 @@ void AStoreCardReveal_BP_C::GetReadyToShowCards()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.StopCCA-AmbientAnim
 // (BlueprintCallable, BlueprintEvent)
 
-void AStoreCardReveal_BP_C::StopCCAMinusAmbientAnim()
+void AStoreCardReveal_BP_C::StopCCA_AmbientAnim()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1080,7 +1080,7 @@ void AStoreCardReveal_BP_C::OnLoaded_EFC62B084995CBCCD64787B5C4EF30E6(class UObj
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardMoveToScreen__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardMoveToScreen__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CardMoveToScreen__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1094,7 +1094,7 @@ void AStoreCardReveal_BP_C::TLMinusCardMoveToScreen__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardMoveToScreen__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardMoveToScreen__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CardMoveToScreen__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1108,7 +1108,7 @@ void AStoreCardReveal_BP_C::TLMinusCardMoveToScreen__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CC-DataDiskBurns__ChangeTexture__EventFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCMinusDataDiskBurns__ChangeTexture__EventFunc()
+void AStoreCardReveal_BP_C::TL_CC_DataDiskBurns__ChangeTexture__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1122,7 +1122,7 @@ void AStoreCardReveal_BP_C::TLMinusCCMinusDataDiskBurns__ChangeTexture__EventFun
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CC-DataDiskBurns__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCMinusDataDiskBurns__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CC_DataDiskBurns__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1136,7 +1136,7 @@ void AStoreCardReveal_BP_C::TLMinusCCMinusDataDiskBurns__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CC-DataDiskBurns__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCMinusDataDiskBurns__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CC_DataDiskBurns__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1150,7 +1150,7 @@ void AStoreCardReveal_BP_C::TLMinusCCMinusDataDiskBurns__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CCB-AmbientAnim__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCBMinusAmbientAnim__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CCB_AmbientAnim__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1164,7 +1164,7 @@ void AStoreCardReveal_BP_C::TLMinusCCBMinusAmbientAnim__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CCB-AmbientAnim__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCBMinusAmbientAnim__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CCB_AmbientAnim__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1178,7 +1178,7 @@ void AStoreCardReveal_BP_C::TLMinusCCBMinusAmbientAnim__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CCA-AmbientAnim__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCAMinusAmbientAnim__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CCA_AmbientAnim__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1192,7 +1192,7 @@ void AStoreCardReveal_BP_C::TLMinusCCAMinusAmbientAnim__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CCA-AmbientAnim__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCAMinusAmbientAnim__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CCA_AmbientAnim__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1206,7 +1206,7 @@ void AStoreCardReveal_BP_C::TLMinusCCAMinusAmbientAnim__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CC-QuestionMarkAnim__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCMinusQuestionMarkAnim__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CC_QuestionMarkAnim__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1220,7 +1220,7 @@ void AStoreCardReveal_BP_C::TLMinusCCMinusQuestionMarkAnim__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CC-QuestionMarkAnim__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCMinusQuestionMarkAnim__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CC_QuestionMarkAnim__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1234,7 +1234,7 @@ void AStoreCardReveal_BP_C::TLMinusCCMinusQuestionMarkAnim__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CCB-Reveal__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCBMinusReveal__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CCB_Reveal__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1248,7 +1248,7 @@ void AStoreCardReveal_BP_C::TLMinusCCBMinusReveal__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CCB-Reveal__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCBMinusReveal__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CCB_Reveal__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1262,7 +1262,7 @@ void AStoreCardReveal_BP_C::TLMinusCCBMinusReveal__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CCA-Reveal__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCAMinusReveal__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CCA_Reveal__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1276,7 +1276,7 @@ void AStoreCardReveal_BP_C::TLMinusCCAMinusReveal__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CCA-Reveal__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCAMinusReveal__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CCA_Reveal__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1290,7 +1290,7 @@ void AStoreCardReveal_BP_C::TLMinusCCAMinusReveal__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-MouseoverCC-B-End__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusBMinusEnd__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_MouseoverCC_B_End__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1304,7 +1304,7 @@ void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusBMinusEnd__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-MouseoverCC-B-End__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusBMinusEnd__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_MouseoverCC_B_End__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1318,7 +1318,7 @@ void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusBMinusEnd__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-MouseoverCC-B__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusB__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_MouseoverCC_B__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1332,7 +1332,7 @@ void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusB__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-MouseoverCC-B__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusB__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_MouseoverCC_B__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1346,7 +1346,7 @@ void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusB__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-MouseoverCC-A-End__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusAMinusEnd__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_MouseoverCC_A_End__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1360,7 +1360,7 @@ void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusAMinusEnd__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-MouseoverCC-A-End__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusAMinusEnd__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_MouseoverCC_A_End__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1374,7 +1374,7 @@ void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusAMinusEnd__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-MouseoverCC-A__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusA__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_MouseoverCC_A__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1388,7 +1388,7 @@ void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusA__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-MouseoverCC-A__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusA__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_MouseoverCC_A__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1402,7 +1402,7 @@ void AStoreCardReveal_BP_C::TLMinusMouseoverCCMinusA__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-SelectedChoiceCardAnims__CC-Phase2__EventFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__CCMinusPhase2__EventFunc()
+void AStoreCardReveal_BP_C::TL_SelectedChoiceCardAnims__CC_Phase2__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1416,7 +1416,7 @@ void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__CCMinusPhase2__Event
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-SelectedChoiceCardAnims__CC-Phase2-Hide__EventFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__CCMinusPhase2MinusHide__EventFunc()
+void AStoreCardReveal_BP_C::TL_SelectedChoiceCardAnims__CC_Phase2_Hide__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1430,7 +1430,7 @@ void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__CCMinusPhase2MinusHi
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-SelectedChoiceCardAnims__CameraFOV__EventFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__CameraFOV__EventFunc()
+void AStoreCardReveal_BP_C::TL_SelectedChoiceCardAnims__CameraFOV__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1444,7 +1444,7 @@ void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__CameraFOV__EventFunc
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-SelectedChoiceCardAnims__SpeedTimeBackUp__EventFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__SpeedTimeBackUp__EventFunc()
+void AStoreCardReveal_BP_C::TL_SelectedChoiceCardAnims__SpeedTimeBackUp__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1458,7 +1458,7 @@ void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__SpeedTimeBackUp__Eve
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-SelectedChoiceCardAnims__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_SelectedChoiceCardAnims__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1472,7 +1472,7 @@ void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-SelectedChoiceCardAnims__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_SelectedChoiceCardAnims__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1486,7 +1486,7 @@ void AStoreCardReveal_BP_C::TLMinusSelectedChoiceCardAnims__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CC-FlareFX__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCMinusFlareFX__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CC_FlareFX__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1500,7 +1500,7 @@ void AStoreCardReveal_BP_C::TLMinusCCMinusFlareFX__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CC-FlareFX__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCCMinusFlareFX__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CC_FlareFX__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1514,7 +1514,7 @@ void AStoreCardReveal_BP_C::TLMinusCCMinusFlareFX__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-ClearPostProcessDOFSettings__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusClearPostProcessDOFSettings__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_ClearPostProcessDOFSettings__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1528,7 +1528,7 @@ void AStoreCardReveal_BP_C::TLMinusClearPostProcessDOFSettings__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-ClearPostProcessDOFSettings__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusClearPostProcessDOFSettings__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_ClearPostProcessDOFSettings__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1542,7 +1542,7 @@ void AStoreCardReveal_BP_C::TLMinusClearPostProcessDOFSettings__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-Reveal-CC-Choices__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusRevealMinusCCMinusChoices__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_Reveal_CC_Choices__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1556,7 +1556,7 @@ void AStoreCardReveal_BP_C::TLMinusRevealMinusCCMinusChoices__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-Reveal-CC-Choices__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusRevealMinusCCMinusChoices__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_Reveal_CC_Choices__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1570,7 +1570,7 @@ void AStoreCardReveal_BP_C::TLMinusRevealMinusCCMinusChoices__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardUpgradeFast__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardUpgradeFast__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CardUpgradeFast__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1584,7 +1584,7 @@ void AStoreCardReveal_BP_C::TLMinusCardUpgradeFast__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardUpgradeFast__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardUpgradeFast__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CardUpgradeFast__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1598,7 +1598,7 @@ void AStoreCardReveal_BP_C::TLMinusCardUpgradeFast__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardFlipToFront__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardFlipToFront__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CardFlipToFront__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1612,7 +1612,7 @@ void AStoreCardReveal_BP_C::TLMinusCardFlipToFront__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardFlipToFront__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardFlipToFront__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CardFlipToFront__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1626,7 +1626,7 @@ void AStoreCardReveal_BP_C::TLMinusCardFlipToFront__FinishedFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardExit__Proceed__EventFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardExit__Proceed__EventFunc()
+void AStoreCardReveal_BP_C::TL_CardExit__Proceed__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1640,7 +1640,7 @@ void AStoreCardReveal_BP_C::TLMinusCardExit__Proceed__EventFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardExit__UpdateFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardExit__UpdateFunc()
+void AStoreCardReveal_BP_C::TL_CardExit__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -1654,7 +1654,7 @@ void AStoreCardReveal_BP_C::TLMinusCardExit__UpdateFunc()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.TL-CardExit__FinishedFunc
 // (BlueprintEvent)
 
-void AStoreCardReveal_BP_C::TLMinusCardExit__FinishedFunc()
+void AStoreCardReveal_BP_C::TL_CardExit__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 

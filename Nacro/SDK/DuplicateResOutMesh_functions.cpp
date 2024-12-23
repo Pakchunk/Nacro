@@ -138,7 +138,7 @@ void ADuplicateResOutMesh_C::UserConstructionScript()
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.initializeExternalSkeletalMeshArray
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ADuplicateResOutMesh_C::InitializeExternalSkeletalMeshArray()
+void ADuplicateResOutMesh_C::initializeExternalSkeletalMeshArray()
 {
 	static class UFunction* Func = nullptr;
 

@@ -37,8 +37,6 @@ public:
 	UMulticastDelegateProperty_                   CloseProfileModal;                                 // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OpenBannerEditor__DelegateSignature();
-	void CloseProfileModal__DelegateSignature();
 	void ExecuteUbergraph_BP_LocalPlayerProfileManagement(int32 EntryPoint);
 	void BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_126_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__LeavePartyButton_K2Node_ComponentBoundEvent_100_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);

@@ -36,7 +36,6 @@ public:
 	UMulticastDelegateProperty_                   InviteJoinChanged;                                 // 0x0908(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void InviteJoinChanged__DelegateSignature();
 	void ExecuteUbergraph_PartyFinderListItem(int32 EntryPoint);
 	void Destruct();
 	void Construct();

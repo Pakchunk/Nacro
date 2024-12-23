@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function HordeWaveModifiersTile.HordeWaveModifiersTile_C.OnReadyForNextModifierPresentation__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UHordeWaveModifiersTile_C::OnReadyForNextModifierPresentation__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HordeWaveModifiersTile_C", "OnReadyForNextModifierPresentation__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function HordeWaveModifiersTile.HordeWaveModifiersTile_C.ExecuteUbergraph_HordeWaveModifiersTile
 // (HasDefaults)
 // Parameters:

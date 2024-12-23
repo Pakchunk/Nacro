@@ -54,10 +54,9 @@ public:
 	float                                         ConvertScorePlayRate;                              // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             CountUpLoop;                                       // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             CountUpEnd;                                        // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        LoopedCountUpSound;                                // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        loopedCountUpSound;                                // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Count_Score_Finished__DelegateSignature();
 	void ExecuteUbergraph_Results_TeamTotalScore(int32 EntryPoint);
 	void BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, const bool HadCompleted);
 	void Teleport_Pad_Intro_Sequence();
@@ -118,7 +117,7 @@ static_assert(offsetof(UResults_TeamTotalScore_C, bSkippingToConvertScoreEnd) ==
 static_assert(offsetof(UResults_TeamTotalScore_C, ConvertScorePlayRate) == 0x0002E4, "Member 'UResults_TeamTotalScore_C::ConvertScorePlayRate' has a wrong offset!");
 static_assert(offsetof(UResults_TeamTotalScore_C, CountUpLoop) == 0x0002E8, "Member 'UResults_TeamTotalScore_C::CountUpLoop' has a wrong offset!");
 static_assert(offsetof(UResults_TeamTotalScore_C, CountUpEnd) == 0x0002F0, "Member 'UResults_TeamTotalScore_C::CountUpEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, LoopedCountUpSound) == 0x0002F8, "Member 'UResults_TeamTotalScore_C::LoopedCountUpSound' has a wrong offset!");
+static_assert(offsetof(UResults_TeamTotalScore_C, loopedCountUpSound) == 0x0002F8, "Member 'UResults_TeamTotalScore_C::loopedCountUpSound' has a wrong offset!");
 
 }
 

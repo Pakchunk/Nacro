@@ -170,9 +170,9 @@ void ABluGloManager_C::OnBluGloQueryFinished(class AActor* ActorToSpawnFrom, con
 // Function BluGloManager.BluGloManager_C.StopSpawnFX
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Off                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    off                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABluGloManager_C::StopSpawnFX(bool Off)
+void ABluGloManager_C::StopSpawnFX(bool off)
 {
 	static class UFunction* Func = nullptr;
 
@@ -181,7 +181,7 @@ void ABluGloManager_C::StopSpawnFX(bool Off)
 
 	Params::BluGloManager_C_StopSpawnFX Parms{};
 
-	Parms.Off = Off;
+	Parms.off = off;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function LeaveButton.LeaveButton_C.OnClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void ULeaveButton_C::OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeaveButton_C", "OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LeaveButton.LeaveButton_C.Update Visibility__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Visibility_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ULeaveButton_C::Update_Visibility__DelegateSignature(bool Visibility_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeaveButton_C", "Update Visibility__DelegateSignature");
-
-	Params::LeaveButton_C_Update_Visibility__DelegateSignature Parms{};
-
-	Parms.Visibility_0 = Visibility_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function LeaveButton.LeaveButton_C.ExecuteUbergraph_LeaveButton
 // (HasDefaults)
 // Parameters:

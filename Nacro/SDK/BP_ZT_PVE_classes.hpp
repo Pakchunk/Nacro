@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_ZT_PVE.BP_ZT_PVE_C
 // 0x0000 (0x0270 - 0x0270)
-class UBP_ZT_PVE_C final : public UFortZoneTheme
+class UBP_ZT_PVE_C : public UFortZoneTheme
 {
 public:
 	static class UClass* StaticClass()

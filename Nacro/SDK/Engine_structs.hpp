@@ -17,54 +17,7 @@
 
 namespace SDK
 {
-	
-// Enum Engine.EChannelCloseReason
-// NumValues: 0x0006
-enum class EChannelCloseReason : uint8
-{
-	Destroyed,
-	Dormancy,
-	LevelUnloaded,
-	Relevancy,
-	TearOff,
-	/* reserved */
-	MAX	= 15	// this value is used for serialization, modifying it may require a network version change
-};
-	
-// Enum Engine.EForceInit
-// NumValues: 0x0002
 
-enum EForceInit
-{
-	ForceInit,
-	ForceInitToZero
-};
-	
-// Enum Engine.EConnectionState
-// NumValues: 0x0004
-enum EConnectionState
-{
-	USOCK_Invalid   = 0, // Connection is invalid, possibly uninitialized.
-	USOCK_Closed    = 1, // Connection permanently closed.
-	USOCK_Pending	= 2, // Connection is awaiting connection.
-	USOCK_Open      = 3, // Connection is open.
-};
-	
-// Enum Engine.EChannelType
-// NumValues: 0x0006
-enum EChannelType
-{
-	CHTYPE_None			= 0,  // Invalid type.
-	CHTYPE_Control		= 1,  // Connection control.
-	CHTYPE_Actor  		= 2,  // Actor-update channel.
-
-	// @todo: Remove and reassign number to CHTYPE_Voice (breaks net compatibility)
-	CHTYPE_File         = 3,  // Binary file transfer.
-
-	CHTYPE_Voice		= 4,  // VoIP data channel
-	CHTYPE_MAX          = 8,  // Maximum.
-};
-	
 // Enum Engine.ETextGender
 // NumValues: 0x0004
 enum class ETextGender : uint8
@@ -5445,49 +5398,6 @@ public:
 static_assert(alignof(FFastArraySerializer) == 0x000008, "Wrong alignment on FFastArraySerializer");
 static_assert(sizeof(FFastArraySerializer) == 0x0000B0, "Wrong size on FFastArraySerializer");
 
-struct FFAstArraySerializer
-{
-	public:
-	TMap<int32, int32>                            ItemMap;                                      // 0x0000(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
-	int32										  IDCounter;
-	int32                                         ArrayReplicationKey;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         GuidReferencesMap[0x50];
-	int32				                          CachedNumItems;
-	int32				                          CachedNumItemsToConsiderForWriting;
-	
-	void MarkItemDirty(FFastArraySerializerItem* Item)
-	{
-		if (Item->ReplicationID == -1)
-		{
-			Item->ReplicationID = ++IDCounter;
-			if (IDCounter == -1)
-				IDCounter++;
-		}
-
-		Item->ReplicationKey++;
-		MarkArrayDirty();
-	}
-
-	void MarkArrayDirty()
-	{
-		//ItemMap.Reset();        // This allows to clients to add predictive elements to arrays without affecting replication.
-
-		IncrementArrayReplicationKey();
-
-		// Invalidate the cached item counts so that they're recomputed during the next write
-		CachedNumItems = -1;
-		CachedNumItemsToConsiderForWriting = -1;
-	}
-
-	void IncrementArrayReplicationKey()
-	{
-		ArrayReplicationKey++;
-
-		if (ArrayReplicationKey == -1)
-			ArrayReplicationKey++;
-	}
-};
-	
 // ScriptStruct Engine.CollisionProfileName
 // 0x0008 (0x0008 - 0x0000)
 struct alignas(0x08) FCollisionProfileName final
@@ -9297,16 +9207,6 @@ public:
 	class AActor*                                 ViewTarget;                                        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ViewLocation;                                      // 0x0018(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ViewDir;                                           // 0x0024(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FNetViewer()
-			: Connection(nullptr)
-			, InViewer(nullptr)
-			, ViewTarget(nullptr)
-			, ViewLocation()
-			, ViewDir()
-	{
-	}
-
-	FNetViewer(UNetConnection* InConnection, float DeltaSeconds);
 };
 static_assert(alignof(FNetViewer) == 0x000008, "Wrong alignment on FNetViewer");
 static_assert(sizeof(FNetViewer) == 0x000030, "Wrong size on FNetViewer");
@@ -11101,7 +11001,7 @@ public:
 	struct FRuntimeFloatCurve                     CustomAttenuationCurve;                            // 0x0010(0x0078)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	EAttenuationShape                             AttenuationShape;                                  // 0x0088(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DBAttenuationAtMax;                                // 0x008C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         dBAttenuationAtMax;                                // 0x008C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                AttenuationShapeExtents;                           // 0x0090(0x000C)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ConeOffset;                                        // 0x009C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FalloffDistance;                                   // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11112,7 +11012,7 @@ static_assert(sizeof(FBaseAttenuationSettings) == 0x0000A8, "Wrong size on FBase
 static_assert(offsetof(FBaseAttenuationSettings, DistanceAlgorithm) == 0x000008, "Member 'FBaseAttenuationSettings::DistanceAlgorithm' has a wrong offset!");
 static_assert(offsetof(FBaseAttenuationSettings, CustomAttenuationCurve) == 0x000010, "Member 'FBaseAttenuationSettings::CustomAttenuationCurve' has a wrong offset!");
 static_assert(offsetof(FBaseAttenuationSettings, AttenuationShape) == 0x000088, "Member 'FBaseAttenuationSettings::AttenuationShape' has a wrong offset!");
-static_assert(offsetof(FBaseAttenuationSettings, DBAttenuationAtMax) == 0x00008C, "Member 'FBaseAttenuationSettings::DBAttenuationAtMax' has a wrong offset!");
+static_assert(offsetof(FBaseAttenuationSettings, dBAttenuationAtMax) == 0x00008C, "Member 'FBaseAttenuationSettings::dBAttenuationAtMax' has a wrong offset!");
 static_assert(offsetof(FBaseAttenuationSettings, AttenuationShapeExtents) == 0x000090, "Member 'FBaseAttenuationSettings::AttenuationShapeExtents' has a wrong offset!");
 static_assert(offsetof(FBaseAttenuationSettings, ConeOffset) == 0x00009C, "Member 'FBaseAttenuationSettings::ConeOffset' has a wrong offset!");
 static_assert(offsetof(FBaseAttenuationSettings, FalloffDistance) == 0x0000A0, "Member 'FBaseAttenuationSettings::FalloffDistance' has a wrong offset!");

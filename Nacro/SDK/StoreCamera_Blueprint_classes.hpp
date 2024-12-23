@@ -24,7 +24,7 @@ class AStoreCamera_Blueprint_C final : public AFortCameraBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08C0(0x0008)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   MeshMinusDarkenBG;                                 // 0x08C8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh_DarkenBG;                                     // 0x08C8(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UCameraComponent*                       CameraPlaceholderGround;                           // 0x08D0(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         ChoicePack_NewTrack_0_ACA3841D4D5084BE3482FA8EBB7CE9C0; // 0x08D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            ChoicePack__Direction_ACA3841D4D5084BE3482FA8EBB7CE9C0; // 0x08DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -46,8 +46,8 @@ public:
 
 public:
 	void ExecuteUbergraph_StoreCamera_Blueprint(int32 EntryPoint);
-	void ChoicePackFOVMinusIn();
-	void ChoicePackFOVMinusOut();
+	void ChoicePackFOV_In();
+	void ChoicePackFOV_Out();
 	void DarkenBGVisibility(bool Enable);
 	void ResetCamera();
 	void OpeningCameraTransition();
@@ -72,7 +72,7 @@ public:
 static_assert(alignof(AStoreCamera_Blueprint_C) == 0x000010, "Wrong alignment on AStoreCamera_Blueprint_C");
 static_assert(sizeof(AStoreCamera_Blueprint_C) == 0x000940, "Wrong size on AStoreCamera_Blueprint_C");
 static_assert(offsetof(AStoreCamera_Blueprint_C, UberGraphFrame) == 0x0008C0, "Member 'AStoreCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, MeshMinusDarkenBG) == 0x0008C8, "Member 'AStoreCamera_Blueprint_C::MeshMinusDarkenBG' has a wrong offset!");
+static_assert(offsetof(AStoreCamera_Blueprint_C, Mesh_DarkenBG) == 0x0008C8, "Member 'AStoreCamera_Blueprint_C::Mesh_DarkenBG' has a wrong offset!");
 static_assert(offsetof(AStoreCamera_Blueprint_C, CameraPlaceholderGround) == 0x0008D0, "Member 'AStoreCamera_Blueprint_C::CameraPlaceholderGround' has a wrong offset!");
 static_assert(offsetof(AStoreCamera_Blueprint_C, ChoicePack_NewTrack_0_ACA3841D4D5084BE3482FA8EBB7CE9C0) == 0x0008D8, "Member 'AStoreCamera_Blueprint_C::ChoicePack_NewTrack_0_ACA3841D4D5084BE3482FA8EBB7CE9C0' has a wrong offset!");
 static_assert(offsetof(AStoreCamera_Blueprint_C, ChoicePack__Direction_ACA3841D4D5084BE3482FA8EBB7CE9C0) == 0x0008DC, "Member 'AStoreCamera_Blueprint_C::ChoicePack__Direction_ACA3841D4D5084BE3482FA8EBB7CE9C0' has a wrong offset!");

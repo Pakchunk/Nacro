@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass TracerGeneric.TracerGeneric_C
 // 0x0068 (0x0478 - 0x0410)
-class ATracerGeneric_C final : public AFortTracerBase
+class ATracerGeneric_C : public AFortTracerBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(Transient, DuplicateTransient)

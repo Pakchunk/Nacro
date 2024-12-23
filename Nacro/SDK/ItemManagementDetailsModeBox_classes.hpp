@@ -26,11 +26,11 @@ class UItemManagementDetailsModeBox_C final : public UFortItemDetailsModeActivat
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(Transient, DuplicateTransient)
 	class UCommonWidgetSwitcher*                  DetailPanelOverrideSwitcher;                       // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalTabList_C*                   DetailPanelTabListMinusMB;                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalTabList_C*                   DetailPanelTabListMinusMS;                         // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalTabList_C*                   DetailPanelTabListMinusMSB;                        // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalTabList_C*                   DetailPanelTabListMinusMSC;                        // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemManagementItemDetailsPanelMinusOverviewOnly_C* ItemManagementItemDetailsPanelMinusOverviewOnly;   // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalTabList_C*                   DetailPanelTabList_MB;                             // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalTabList_C*                   DetailPanelTabList_MS;                             // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalTabList_C*                   DetailPanelTabList_MSB;                            // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalTabList_C*                   DetailPanelTabList_MSC;                            // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemManagementItemDetailsPanel_OverviewOnly_C* ItemManagementItemDetailsPanel_OverviewOnly;       // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               ItemSelected;                                      // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           NoSelectionDetailsBox;                             // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       NoSelectionText;                                   // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -42,12 +42,12 @@ public:
 
 public:
 	void ExecuteUbergraph_ItemManagementDetailsModeBox(int32 EntryPoint);
-	void BndEvt__DetailPanelTabListMinusMSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
+	void BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
 	void Construct();
 	void HandleConsumeItemProgressChangedBP();
-	void BndEvt__DetailPanelTabListMinusOI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
-	void BndEvt__DetailPanelTabListMinusOP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
-	void BndEvt__DetailPanelTabListMinusOPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
+	void BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
+	void BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
+	void BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton);
 	void OnActivated();
 	void HandleDifferentItemToDetailSetBP();
 	void BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex);
@@ -110,11 +110,11 @@ static_assert(alignof(UItemManagementDetailsModeBox_C) == 0x000008, "Wrong align
 static_assert(sizeof(UItemManagementDetailsModeBox_C) == 0x0004A8, "Wrong size on UItemManagementDetailsModeBox_C");
 static_assert(offsetof(UItemManagementDetailsModeBox_C, UberGraphFrame) == 0x000430, "Member 'UItemManagementDetailsModeBox_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelOverrideSwitcher) == 0x000438, "Member 'UItemManagementDetailsModeBox_C::DetailPanelOverrideSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabListMinusMB) == 0x000440, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabListMinusMB' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabListMinusMS) == 0x000448, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabListMinusMS' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabListMinusMSB) == 0x000450, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabListMinusMSB' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabListMinusMSC) == 0x000458, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabListMinusMSC' has a wrong offset!");
-static_assert(offsetof(UItemManagementDetailsModeBox_C, ItemManagementItemDetailsPanelMinusOverviewOnly) == 0x000460, "Member 'UItemManagementDetailsModeBox_C::ItemManagementItemDetailsPanelMinusOverviewOnly' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabList_MB) == 0x000440, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabList_MB' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabList_MS) == 0x000448, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabList_MS' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabList_MSB) == 0x000450, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabList_MSB' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, DetailPanelTabList_MSC) == 0x000458, "Member 'UItemManagementDetailsModeBox_C::DetailPanelTabList_MSC' has a wrong offset!");
+static_assert(offsetof(UItemManagementDetailsModeBox_C, ItemManagementItemDetailsPanel_OverviewOnly) == 0x000460, "Member 'UItemManagementDetailsModeBox_C::ItemManagementItemDetailsPanel_OverviewOnly' has a wrong offset!");
 static_assert(offsetof(UItemManagementDetailsModeBox_C, ItemSelected) == 0x000468, "Member 'UItemManagementDetailsModeBox_C::ItemSelected' has a wrong offset!");
 static_assert(offsetof(UItemManagementDetailsModeBox_C, NoSelectionDetailsBox) == 0x000470, "Member 'UItemManagementDetailsModeBox_C::NoSelectionDetailsBox' has a wrong offset!");
 static_assert(offsetof(UItemManagementDetailsModeBox_C, NoSelectionText) == 0x000478, "Member 'UItemManagementDetailsModeBox_C::NoSelectionText' has a wrong offset!");

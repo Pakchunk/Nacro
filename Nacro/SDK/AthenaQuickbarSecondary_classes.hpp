@@ -25,9 +25,9 @@ class UAthenaQuickbarSecondary_C final : public UQuickbarBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_AthenaQuickbarSecondary_C;          // 0x0288(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         _Horizontal_Box__Camera_Mode_Content;              // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 _Image__Separator;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 _Image__Switch_Action;                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         mHorizontal_Box__Camera_Mode_Content;              // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Separator;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__Switch_Action;                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UKeybindWidget_C*                       KeybindSwitchBinding;                              // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UQuickbarSlot_C*                        Quickbar_Slot_F1;                                  // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UQuickbarSlot_C*                        Quickbar_Slot_F2;                                  // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -71,9 +71,9 @@ public:
 static_assert(alignof(UAthenaQuickbarSecondary_C) == 0x000008, "Wrong alignment on UAthenaQuickbarSecondary_C");
 static_assert(sizeof(UAthenaQuickbarSecondary_C) == 0x000310, "Wrong size on UAthenaQuickbarSecondary_C");
 static_assert(offsetof(UAthenaQuickbarSecondary_C, UberGraphFrame_AthenaQuickbarSecondary_C) == 0x000288, "Member 'UAthenaQuickbarSecondary_C::UberGraphFrame_AthenaQuickbarSecondary_C' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, _Horizontal_Box__Camera_Mode_Content) == 0x000290, "Member 'UAthenaQuickbarSecondary_C::_Horizontal_Box__Camera_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, _Image__Separator) == 0x000298, "Member 'UAthenaQuickbarSecondary_C::_Image__Separator' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, _Image__Switch_Action) == 0x0002A0, "Member 'UAthenaQuickbarSecondary_C::_Image__Switch_Action' has a wrong offset!");
+static_assert(offsetof(UAthenaQuickbarSecondary_C, mHorizontal_Box__Camera_Mode_Content) == 0x000290, "Member 'UAthenaQuickbarSecondary_C::mHorizontal_Box__Camera_Mode_Content' has a wrong offset!");
+static_assert(offsetof(UAthenaQuickbarSecondary_C, mImage__Separator) == 0x000298, "Member 'UAthenaQuickbarSecondary_C::mImage__Separator' has a wrong offset!");
+static_assert(offsetof(UAthenaQuickbarSecondary_C, mImage__Switch_Action) == 0x0002A0, "Member 'UAthenaQuickbarSecondary_C::mImage__Switch_Action' has a wrong offset!");
 static_assert(offsetof(UAthenaQuickbarSecondary_C, KeybindSwitchBinding) == 0x0002A8, "Member 'UAthenaQuickbarSecondary_C::KeybindSwitchBinding' has a wrong offset!");
 static_assert(offsetof(UAthenaQuickbarSecondary_C, Quickbar_Slot_F1) == 0x0002B0, "Member 'UAthenaQuickbarSecondary_C::Quickbar_Slot_F1' has a wrong offset!");
 static_assert(offsetof(UAthenaQuickbarSecondary_C, Quickbar_Slot_F2) == 0x0002B8, "Member 'UAthenaQuickbarSecondary_C::Quickbar_Slot_F2' has a wrong offset!");

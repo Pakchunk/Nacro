@@ -21,12 +21,12 @@ namespace SDK
 class USlotLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void InitItemWidget(class UFortItemWidget* Widget, class UFortItem* Item, class UObject* __WorldContext);
-	static void EnsureIconBrush(const struct FFortMultiSizeBrush& MultiMinussize_Brush, class UObject* __WorldContext, struct FSlateBrush* Brush);
-	static void Calculate_Current_Pulsing_Highlight_Color(const struct FLinearColor& Base_Color, const struct FLinearColor& Hightlight_Color, class UObject* __WorldContext, struct FLinearColor* Current_Color);
-	static void Get_Traits_Of_Workers(TArray<class UFortWorker*>& Workers, class UObject* __WorldContext, struct FGameplayTagContainer* Chief_Personality, struct FGameplayTagContainer* Crew_Personalities, struct FGameplayTagContainer* Crew_Set_Bonuses);
-	static void Create_Attribute_Modifier_Tool_Tip(class APlayerController* Owning_Player, const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Gameplay_Tags, const class FText& Required_Gameplay_Tags_Description, const class FText& Modifier_Source, class UObject* __WorldContext, class UWidget** Result);
-	static class FText Get_Attribute_Modifier_Header_Text(const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Tags, const class FText& Required_Gameplay_Tags_Description, class UObject* __WorldContext);
+	static void InitItemWidget(class UFortItemWidget* Widget, class UFortItem* Item, class UObject* m_WorldContext);
+	static void EnsureIconBrush(const struct FFortMultiSizeBrush& Multi_size_Brush, class UObject* m_WorldContext, struct FSlateBrush* Brush);
+	static void Calculate_Current_Pulsing_Highlight_Color(const struct FLinearColor& Base_Color, const struct FLinearColor& Hightlight_Color, class UObject* m_WorldContext, struct FLinearColor* Current_Color);
+	static void Get_Traits_Of_Workers(TArray<class UFortWorker*>& Workers, class UObject* m_WorldContext, struct FGameplayTagContainer* Chief_Personality, struct FGameplayTagContainer* Crew_Personalities, struct FGameplayTagContainer* Crew_Set_Bonuses);
+	static void Create_Attribute_Modifier_Tool_Tip(class APlayerController* Owning_Player, const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Gameplay_Tags, const class FText& Required_Gameplay_Tags_Description, const class FText& Modifier_Source, class UObject* m_WorldContext, class UWidget** Result);
+	static class FText Get_Attribute_Modifier_Header_Text(const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Tags, const class FText& Required_Gameplay_Tags_Description, class UObject* m_WorldContext);
 
 public:
 	static class UClass* StaticClass()

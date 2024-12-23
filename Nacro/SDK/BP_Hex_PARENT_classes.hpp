@@ -63,9 +63,9 @@ public:
 	bool                                          TileIsVaildMission;                                // 0x06AD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6AE[0x2];                                      // 0x06AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               MIDMissionIcon;                                    // 0x06B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               MIDMinusSelected;                                  // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_Selected;                                      // 0x06B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UStaticMesh*>                    Hex_Deco_Meshes;                                   // 0x06C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
-	class UMaterialInstanceDynamic*               MIDMinusMouseover;                                 // 0x06D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               MID_Mouseover;                                     // 0x06D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RenderHexWithClouds;                               // 0x06D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6D9[0x7];                                      // 0x06D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               MIDMissionPinnedIcon;                              // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -169,9 +169,9 @@ static_assert(offsetof(ABP_Hex_PARENT_C, TileIsLocked) == 0x0006AB, "Member 'ABP
 static_assert(offsetof(ABP_Hex_PARENT_C, TileIsHidden) == 0x0006AC, "Member 'ABP_Hex_PARENT_C::TileIsHidden' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_PARENT_C, TileIsVaildMission) == 0x0006AD, "Member 'ABP_Hex_PARENT_C::TileIsVaildMission' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_PARENT_C, MIDMissionIcon) == 0x0006B0, "Member 'ABP_Hex_PARENT_C::MIDMissionIcon' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MIDMinusSelected) == 0x0006B8, "Member 'ABP_Hex_PARENT_C::MIDMinusSelected' has a wrong offset!");
+static_assert(offsetof(ABP_Hex_PARENT_C, MID_Selected) == 0x0006B8, "Member 'ABP_Hex_PARENT_C::MID_Selected' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_PARENT_C, Hex_Deco_Meshes) == 0x0006C0, "Member 'ABP_Hex_PARENT_C::Hex_Deco_Meshes' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MIDMinusMouseover) == 0x0006D0, "Member 'ABP_Hex_PARENT_C::MIDMinusMouseover' has a wrong offset!");
+static_assert(offsetof(ABP_Hex_PARENT_C, MID_Mouseover) == 0x0006D0, "Member 'ABP_Hex_PARENT_C::MID_Mouseover' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_PARENT_C, RenderHexWithClouds) == 0x0006D8, "Member 'ABP_Hex_PARENT_C::RenderHexWithClouds' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_PARENT_C, MIDMissionPinnedIcon) == 0x0006E0, "Member 'ABP_Hex_PARENT_C::MIDMissionPinnedIcon' has a wrong offset!");
 static_assert(offsetof(ABP_Hex_PARENT_C, DifficultyColor) == 0x0006E8, "Member 'ABP_Hex_PARENT_C::DifficultyColor' has a wrong offset!");

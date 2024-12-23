@@ -32,7 +32,6 @@ public:
 	class UCommonTextBlock*                       Tab_Tooltip_Text;                                  // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Selection_Changed__DelegateSignature(int32 Selected_Index);
 	void ExecuteUbergraph_RotatorSelector(int32 EntryPoint);
 	void BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature(int32 Value);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
@@ -40,7 +39,7 @@ public:
 	void Construct();
 	void Update_Row_Selector(int32 Currently_Selected);
 	void Initialize(const class FText& Display_Text, TArray<class FText>& Options, const class FText& Hover_Text, class UCommonTextBlock* Tab_Tooltip);
-	void Center_On_Widget();
+	void Center_on_Widget();
 	void Update_Options(TArray<class FText>& NewParam);
 
 public:

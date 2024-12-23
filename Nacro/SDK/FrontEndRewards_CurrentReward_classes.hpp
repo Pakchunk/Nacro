@@ -37,8 +37,8 @@ public:
 	UMulticastDelegateProperty_                   OnPopAnimationFinished;                            // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnOpenAnimationStarted;                            // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnOpenAnimationFinished;                           // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	float                                         CountTimeStart;                                    // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	float                                         CountTime;                                         // 0x02B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
+	float                                         countTimeStart;                                    // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
+	float                                         countTime;                                         // 0x02B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CountTimer;                                        // 0x02B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                         FadeDuration;                                      // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsFadingOut;                                       // 0x02C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -48,12 +48,8 @@ public:
 	struct FAnchors                               FinalAnchors;                                      // 0x02D4(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void OnDropAnimationFinished__DelegateSignature();
-	void OnPopAnimationFinished__DelegateSignature();
-	void OnOpenAnimationStarted__DelegateSignature();
-	void OnOpenAnimationFinished__DelegateSignature();
 	void ExecuteUbergraph_FrontEndRewards_CurrentReward(int32 EntryPoint);
-	void FadeIconToWhite();
+	void fadeIconToWhite();
 	void Construct();
 	void PlayDropAnimation();
 	void PlayPopAnimation();
@@ -61,7 +57,7 @@ public:
 	void HandlePopAnimationFinished();
 	void HandleDropAnimationFinished();
 	void HandleOpenAnimationFinished();
-	void UpdateFade();
+	void updateFade();
 	void SkipOpenAnimation();
 	void PlayFadeOutAnimation();
 	void StopBounceAnimation();
@@ -96,8 +92,8 @@ static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnDropAnimationFinished
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnPopAnimationFinished) == 0x000280, "Member 'UFrontEndRewards_CurrentReward_C::OnPopAnimationFinished' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnOpenAnimationStarted) == 0x000290, "Member 'UFrontEndRewards_CurrentReward_C::OnOpenAnimationStarted' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnOpenAnimationFinished) == 0x0002A0, "Member 'UFrontEndRewards_CurrentReward_C::OnOpenAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTimeStart) == 0x0002B0, "Member 'UFrontEndRewards_CurrentReward_C::CountTimeStart' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTime) == 0x0002B4, "Member 'UFrontEndRewards_CurrentReward_C::CountTime' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, countTimeStart) == 0x0002B0, "Member 'UFrontEndRewards_CurrentReward_C::countTimeStart' has a wrong offset!");
+static_assert(offsetof(UFrontEndRewards_CurrentReward_C, countTime) == 0x0002B4, "Member 'UFrontEndRewards_CurrentReward_C::countTime' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTimer) == 0x0002B8, "Member 'UFrontEndRewards_CurrentReward_C::CountTimer' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FadeDuration) == 0x0002C0, "Member 'UFrontEndRewards_CurrentReward_C::FadeDuration' has a wrong offset!");
 static_assert(offsetof(UFrontEndRewards_CurrentReward_C, IsFadingOut) == 0x0002C4, "Member 'UFrontEndRewards_CurrentReward_C::IsFadingOut' has a wrong offset!");

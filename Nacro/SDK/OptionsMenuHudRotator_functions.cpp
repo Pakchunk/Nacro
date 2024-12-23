@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Selection Changed__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selected_Index                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                     Gameplay_Tag_0                                         (Parm, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuHudRotator_C::Selection_Changed__DelegateSignature(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHudRotator_C", "Selection Changed__DelegateSignature");
-
-	Params::OptionsMenuHudRotator_C_Selection_Changed__DelegateSignature Parms{};
-
-	Parms.Selected_Index = Selected_Index;
-	Parms.Gameplay_Tag_0 = std::move(Gameplay_Tag_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.ExecuteUbergraph_OptionsMenuHudRotator
 // (HasDefaults)
 // Parameters:
@@ -327,15 +305,15 @@ void UOptionsMenuHudRotator_C::Update_Row_Selector(int32 Currently_Selected)
 }
 
 
-// Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Center On Widget
+// Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Center on Widget
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UOptionsMenuHudRotator_C::Center_On_Widget()
+void UOptionsMenuHudRotator_C::Center_on_Widget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHudRotator_C", "Center On Widget");
+		Func = Class->GetFunction("OptionsMenuHudRotator_C", "Center on Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

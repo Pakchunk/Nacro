@@ -26,13 +26,13 @@ class UBuildingBar_C final : public UCommonUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0238(0x0008)(Transient, DuplicateTransient)
-	class UHorizontalBox*                         _Horizontal_Box__Health_Stat_Text;                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 _Image__HP_Baseplate;                              // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               _Overlay__HP_Bar_Artwork;                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           _ProgressBar__HP_Delta;                            // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           _ProgressBar__HP_Fill;                             // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               _Size_Box__HP_Bar;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               _Size_Box__HP_Bevel;                               // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         mHorizontal_Box__Health_Stat_Text;                 // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 mImage__HP_Baseplate;                              // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               mOverlay__HP_Bar_Artwork;                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           mProgressBar__HP_Delta;                            // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           mProgressBar__HP_Fill;                             // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               mSize_Box__HP_Bar;                                 // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               mSize_Box__HP_Bevel;                               // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ImageHPBevel;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  SwitcherHPText;                                    // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextBuildModeHPText;                               // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -94,13 +94,13 @@ public:
 static_assert(alignof(UBuildingBar_C) == 0x000008, "Wrong alignment on UBuildingBar_C");
 static_assert(sizeof(UBuildingBar_C) == 0x000378, "Wrong size on UBuildingBar_C");
 static_assert(offsetof(UBuildingBar_C, UberGraphFrame) == 0x000238, "Member 'UBuildingBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Horizontal_Box__Health_Stat_Text) == 0x000240, "Member 'UBuildingBar_C::_Horizontal_Box__Health_Stat_Text' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Image__HP_Baseplate) == 0x000248, "Member 'UBuildingBar_C::_Image__HP_Baseplate' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Overlay__HP_Bar_Artwork) == 0x000250, "Member 'UBuildingBar_C::_Overlay__HP_Bar_Artwork' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _ProgressBar__HP_Delta) == 0x000258, "Member 'UBuildingBar_C::_ProgressBar__HP_Delta' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _ProgressBar__HP_Fill) == 0x000260, "Member 'UBuildingBar_C::_ProgressBar__HP_Fill' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Size_Box__HP_Bar) == 0x000268, "Member 'UBuildingBar_C::_Size_Box__HP_Bar' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Size_Box__HP_Bevel) == 0x000270, "Member 'UBuildingBar_C::_Size_Box__HP_Bevel' has a wrong offset!");
+static_assert(offsetof(UBuildingBar_C, mHorizontal_Box__Health_Stat_Text) == 0x000240, "Member 'UBuildingBar_C::mHorizontal_Box__Health_Stat_Text' has a wrong offset!");
+static_assert(offsetof(UBuildingBar_C, mImage__HP_Baseplate) == 0x000248, "Member 'UBuildingBar_C::mImage__HP_Baseplate' has a wrong offset!");
+static_assert(offsetof(UBuildingBar_C, mOverlay__HP_Bar_Artwork) == 0x000250, "Member 'UBuildingBar_C::mOverlay__HP_Bar_Artwork' has a wrong offset!");
+static_assert(offsetof(UBuildingBar_C, mProgressBar__HP_Delta) == 0x000258, "Member 'UBuildingBar_C::mProgressBar__HP_Delta' has a wrong offset!");
+static_assert(offsetof(UBuildingBar_C, mProgressBar__HP_Fill) == 0x000260, "Member 'UBuildingBar_C::mProgressBar__HP_Fill' has a wrong offset!");
+static_assert(offsetof(UBuildingBar_C, mSize_Box__HP_Bar) == 0x000268, "Member 'UBuildingBar_C::mSize_Box__HP_Bar' has a wrong offset!");
+static_assert(offsetof(UBuildingBar_C, mSize_Box__HP_Bevel) == 0x000270, "Member 'UBuildingBar_C::mSize_Box__HP_Bevel' has a wrong offset!");
 static_assert(offsetof(UBuildingBar_C, ImageHPBevel) == 0x000278, "Member 'UBuildingBar_C::ImageHPBevel' has a wrong offset!");
 static_assert(offsetof(UBuildingBar_C, SwitcherHPText) == 0x000280, "Member 'UBuildingBar_C::SwitcherHPText' has a wrong offset!");
 static_assert(offsetof(UBuildingBar_C, TextBuildModeHPText) == 0x000288, "Member 'UBuildingBar_C::TextBuildModeHPText' has a wrong offset!");

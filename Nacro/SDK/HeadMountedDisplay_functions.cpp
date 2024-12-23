@@ -41,19 +41,5 @@ bool UMotionControllerComponent::IsTracked() const
 	return Parms.ReturnValue;
 }
 
-
-// DelegateFunction HeadMountedDisplay.VRNotificationsComponent.VRNotificationsDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UVRNotificationsComponent::VRNotificationsDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VRNotificationsComponent", "VRNotificationsDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
 }
 

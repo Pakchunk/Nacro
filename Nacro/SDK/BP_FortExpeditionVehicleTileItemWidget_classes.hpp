@@ -30,7 +30,6 @@ public:
 	UMulticastDelegateProperty_                   OnVehicleSelected;                                 // 0x08D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnVehicleSelected__DelegateSignature(class FName SquadId_0);
 	void ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget(int32 EntryPoint);
 	void OnClicked();
 	void SetData(class UObject* InData, class UCommonListView* OwningList);

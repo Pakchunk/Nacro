@@ -12,8 +12,8 @@
 
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "FortniteGame_structs.hpp"
 #include "ItemDisplayMode_structs.hpp"
+#include "FortniteGame_structs.hpp"
 #include "ItemDisplayStyle_structs.hpp"
 
 

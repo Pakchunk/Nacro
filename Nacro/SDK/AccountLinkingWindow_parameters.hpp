@@ -17,28 +17,6 @@
 namespace SDK::Params
 {
 
-// Function AccountLinkingWindow.AccountLinkingWindow_C.OnAccountLinkingFailed__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct AccountLinkingWindow_C_OnAccountLinkingFailed__DelegateSignature final
-{
-public:
-	class FText                                   FailReason;                                        // 0x0000(0x0018)(Parm)
-};
-static_assert(alignof(AccountLinkingWindow_C_OnAccountLinkingFailed__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_OnAccountLinkingFailed__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_OnAccountLinkingFailed__DelegateSignature) == 0x000018, "Wrong size on AccountLinkingWindow_C_OnAccountLinkingFailed__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_OnAccountLinkingFailed__DelegateSignature, FailReason) == 0x000000, "Member 'AccountLinkingWindow_C_OnAccountLinkingFailed__DelegateSignature::FailReason' has a wrong offset!");
-
-// Function AccountLinkingWindow.AccountLinkingWindow_C.OnPushStatus__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct AccountLinkingWindow_C_OnPushStatus__DelegateSignature final
-{
-public:
-	class FText                                   StatusText;                                        // 0x0000(0x0018)(Parm)
-};
-static_assert(alignof(AccountLinkingWindow_C_OnPushStatus__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_OnPushStatus__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_OnPushStatus__DelegateSignature) == 0x000018, "Wrong size on AccountLinkingWindow_C_OnPushStatus__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_OnPushStatus__DelegateSignature, StatusText) == 0x000000, "Member 'AccountLinkingWindow_C_OnPushStatus__DelegateSignature::StatusText' has a wrong offset!");
-
 // Function AccountLinkingWindow.AccountLinkingWindow_C.ExecuteUbergraph_AccountLinkingWindow
 // 0x01C8 (0x01C8 - 0x0000)
 struct AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow final
